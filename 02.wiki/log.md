@@ -229,3 +229,11 @@ updated: 2026-06-05
 - `AGENTS.md` 신규 추가: Hermes 및 기타 agent가 세션 시작 시 `CLAUDE.md` → `02.wiki/index.md` → `02.wiki/log.md` 순서로 orient 하도록 명시.
 - `README.md` 빠른 시작에 Hermes Agent 사용 및 기본 경로 안내 추가.
 - 영향 페이지/파일: `AGENTS.md`, `README.md`, `02.wiki/log.md`.
+
+## [2026-06-05] meta | Mnemosyne LLM-WIKI Steward Agent 추가
+- 전담 Agent 이름을 **Mnemosyne**로 확정: 그리스 신화의 기억의 여신/티탄, Second Brain steward 역할에 맞춤.
+- 신규 agent spec: `.agents/mnemosyne.md`.
+- 운영 정책: 우선 단일 Steward Agent 체계 유지. ingest 규모·페이지 수·lint 부담·동시 작업 필요성이 커질 때만 specialist agent 추가.
+- 미래 specialist 후보명 예약: Hermes(source ingest), Athena(research synthesis), Apollo(wiki librarian), Clio(reading/TIL), Themis(QA/lint).
+- 로컬 Hermes profile scaffold 추가: `/opt/data/.hermes/profiles/mnemosyne/` (`WIKI_PATH=/opt/data/wiki`, role metadata). 현재 환경에는 `hermes` CLI binary가 없어 profile scaffold로 구성.
+- 갱신: `AGENTS.md`에 Mnemosyne을 primary steward로 등록.

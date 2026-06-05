@@ -10,8 +10,18 @@ This repository is chris's LLM-WIKI knowledge base. It is maintained collaborati
 4. Read the recent tail of `02.wiki/log.md` before creating or updating pages.
 5. If the task is topic-specific, search existing pages before creating new ones to avoid duplicates.
 
+## Steward Agent
+
+Primary steward: **Mnemosyne** (`.agents/mnemosyne.md`).
+
+- Mnemosyne is the single accountable LLM-WIKI Steward Agent.
+- Keep one steward until multi-agent thresholds are met.
+- If multi-agent expansion becomes necessary, Mnemosyne becomes Orchestrator/Editor-in-Chief and keeps final write authority.
+- Future specialist names are reserved in `.agents/mnemosyne.md`.
+
 ## Repository layout
 
+- `.agents/`: agent specifications and expansion policy.
 - `00.notes/`: human + LLM collaboration space.
 - `01.raw/`: immutable source material. Read only. Do not edit existing raw files.
 - `02.wiki/`: agent-owned generated wiki, indexes, logs, reading notes, TIL, sources.
