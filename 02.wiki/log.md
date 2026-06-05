@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-03
+updated: 2026-06-05
 ---
 
 # Log
@@ -222,3 +222,10 @@ updated: 2026-06-03
 - 영향 페이지 수: 갱신 5 (index·log·overview + source 2) + log 엔트리
 - 결과: 위키 건강 양호. 본 lint는 housekeeping pass(구조 깨짐 0).
 - lint-report-2026-06-03.md 삭제
+
+## [2026-06-05] meta | Hermes Agent 공동관리 설정
+- 로컬 경로 `/opt/data/wiki`에 GitHub repository `atlas-han/wiki` clone 완료.
+- 활성 Hermes profile 환경에 `WIKI_PATH=/opt/data/wiki` 설정.
+- `AGENTS.md` 신규 추가: Hermes 및 기타 agent가 세션 시작 시 `CLAUDE.md` → `02.wiki/index.md` → `02.wiki/log.md` 순서로 orient 하도록 명시.
+- `README.md` 빠른 시작에 Hermes Agent 사용 및 기본 경로 안내 추가.
+- 영향 페이지/파일: `AGENTS.md`, `README.md`, `02.wiki/log.md`.
