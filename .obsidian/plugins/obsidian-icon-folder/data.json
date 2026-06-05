@@ -46,10 +46,6 @@
   "01.raw/articles/2026-05-25_The Twelve-Factor App.md": "LiListChecks",
   "01.raw/assets": "LiImage",
   "01.raw/books": "LiBook",
-  "01.raw/books/2026-05-25_경험의 멸종  크리스틴 로젠 - 교보문고.md": "LiBook",
-  "01.raw/books/2026-05-25_우리는 어떻게 마음을 움직이는가  크리스 보스 - 교보문고.md": "LiBook",
-  "01.raw/books/2026-05-25_프로젝트 헤일메리  앤디 위어 - 교보문고.md": "LiBook",
-  "01.raw/books/2026-05-25_하룻밤에 읽는 오디세이아  - 교보문고.md": "LiBook",
   "01.raw/papers": "LiFileText",
   "02.wiki": "LiLibrary",
   "02.wiki/index.md": "LiListTree",
@@ -113,7 +109,6 @@
   "02.wiki/til/index.md": "LiListTree",
   "CLAUDE.md": "LiBot",
   "README.md": "LiBookMarked",
-  "01.raw/books/2026-05-25_안우경 - 교보문고.md": "LiBook",
   "01.raw/articles/2026-05-25_claude-md-behavioral-guidelines.md": "LiNewspaper",
   "01.raw/articles/2026-05-25_Extend Claude with skills.md": "LiNewspaper",
   "02.wiki/concepts/llm-coding-guidelines.md": "LiPuzzle",
@@ -141,5 +136,11 @@
   "02.wiki/concepts/harness-engineering.md": "LiCog",
   "02.wiki/entities/geoff-huntley.md": "LiUser",
   "02.wiki/entities/archon.md": "LiWrench",
-  "02.wiki/entities/tech-bridge.md": "LiBuilding"
+  "02.wiki/entities/tech-bridge.md": "LiBuilding",
+  "01.raw/books/2026-05-25_씽킹 101.md": "LiBook",
+  "01.raw/books/2026-05-25_경험의 멸종  크리스틴 로젠.md": "LiBook",
+  "01.raw/books/2026-05-25_우리는 어떻게 마음을 움직이는가  크리스 보스.md": "LiBook",
+  "01.raw/books/2026-05-25_프로젝트 헤일메리  앤디 위어.md": "LiBook",
+  "01.raw/books/2026-05-25_하룻밤에 읽는 오디세이아.md": "LiBook",
+  "01.raw/books/2026-06-06_바다에서 온 소년.md": "LiBook"
 }
