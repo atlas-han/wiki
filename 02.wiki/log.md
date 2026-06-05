@@ -1,0 +1,224 @@
+---
+title: Log
+type: overview
+tags: [meta]
+created: 2026-05-25
+updated: 2026-06-03
+---
+
+# Log
+
+위키에 대한 모든 작업의 시간순 기록 (append-only). 각 항목은 `## [YYYY-MM-DD] <op> | <description>` 형식.
+
+지원 op: `ingest`, `query`, `lint`, `meta` (스키마·구조 변경)
+
+## [2026-05-25] meta | LLM-WIKI 초기화
+- Karpathy의 [LLM Wiki 패턴 gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)를 참조하여 구조 생성
+- 디렉토리 레이어 확립: `raw/`, `wiki/`, `CLAUDE.md`
+- 카테고리 정의: entities, concepts, sources
+- 인덱스·로그·overview 초기 페이지 작성
+- 도메인 초기 설정: LLM·AI 생태계 (사용 시작 시 사용자와 협의해 조정)
+
+## [2026-05-25] ingest | Karpathy — LLM Wiki (Gist)
+- 소스 페이지: [[karpathy-llm-wiki-gist]]
+- 신규 개념: [[llm-wiki-pattern]]
+- 영향 받은 페이지: index, overview, log
+- 비고: 위키의 첫 시범 ingest. 패턴을 위키 자체에 self-document하는 의미.
+
+## [2026-05-25] meta | 도메인 확정 + Welcome.md 정리
+- 도메인을 **LLM 생태계**로 확정 (CLAUDE.md §8 갱신)
+- 다루는/다루지 않는 범위 명시
+- overview.md의 placeholder 질문을 실제 LLM 생태계 질문으로 교체 (모델·학습·추론·평가·생태계 5개 카테고리)
+- Obsidian 기본 Welcome.md 삭제
+
+## [2026-05-25] meta | 소프트웨어 엔지니어 맞춤 구조 확장
+- 새 영역 추가: `wiki/engineering/` (SE 개념: systems, patterns, tools)
+- 새 영역 추가: `wiki/reading/` (독서 관리: to-read, reading, completed, dnf)
+- 새 영역 추가: `wiki/til/` (Today I Learned 빠른 메모)
+- `raw/` 하위 분류 추가: `papers/`, `articles/`, `books/`
+- CLAUDE.md 전면 개정: reading frontmatter 스키마, reading/til 작업 정의 추가
+- README.md 업데이트: 커맨드 예시 테이블 추가
+- `wiki/index.md` 업데이트: Engineering, Reading, TIL 섹션 추가
+
+## [2026-05-25] ingest | Anthropic — Project Glasswing: An Initial Update
+- 소스 페이지: [[anthropic-project-glasswing-update-2026-05]]
+- 원문 캡처: `raw/articles/anthropic-project-glasswing-update-2026-05-22.md` (WebFetch가 저작권으로 verbatim 거부, 구조화 추출)
+- 신규 entities: [[anthropic]], [[project-glasswing]], [[claude-mythos-preview]], [[claude-opus-4-7]], [[claude-opus-4-6]], [[cloudflare]], [[mozilla]], [[uk-aisi]] (총 8개)
+- 신규 concepts: [[ai-vulnerability-discovery]], [[coordinated-vulnerability-disclosure]] (총 2개)
+- 갱신: index, overview, log
+- 영향 페이지 수: 14
+- 핵심 시그널:
+  - AI 취약점 발견의 산업 규모 실증 (10,000+ high/critical, 90.6% true positive)
+  - frontier 모델 capability 비교축 정착 (Mythos Preview vs Opus 4.7 vs Opus 4.6, 약 10배 격차)
+  - dual-use 정책: Mythos-class 일반 공개 보류 (Anthropic 입장)
+- stub 보류: Oracle, Microsoft, Palo Alto Networks, Cisco, wolfSSL, XBOW, OSSF, NIST, UK NCSC, ExploitBench, ExploitGym (향후 관련 ingest 시 페이지화 고려)
+
+## [2026-05-25] ingest | Anthropic — Claude Code auto mode: a safer way to skip permissions
+- 소스 페이지: [[anthropic-claude-code-auto-mode]]
+- 신규 entities: [[claude-code]], [[claude-sonnet-4-6]]
+- 신규 concepts: [[transcript-classifier]], [[prompt-injection]], [[agentic-misbehavior]], [[deny-and-continue]]
+- 신규 concepts (이번 배치 공통, 허브): [[agent-harness-design]]
+- 갱신 entities: [[anthropic]] (auto mode 라인 추가), [[claude-opus-4-6]] (system card 인용 추가)
+- 핵심 시그널:
+  - Manual prompt vs sandbox vs `--dangerously-skip-permissions` 사이의 4번째 옵션
+  - Classifier가 reasoning-blind by design — agent의 prose를 strip하여 정당화 방어
+  - Real overeager FNR 17% ("honest number"), real traffic FPR 0.4%
+- 영향 페이지 수 (이번 배치 공통 계산은 아래 묶음 ingest 참조)
+
+## [2026-05-25] ingest | Anthropic — Harness design for long-running application development
+- 소스 페이지: [[anthropic-harness-design-long-running-apps]]
+- 신규 entities: [[claude-agent-sdk]], [[playwright-mcp]], [[claude-opus-4-5]], [[claude-sonnet-4-5]]
+- 신규 concepts: [[generator-evaluator-pattern]], [[sprint-contract]], [[context-anxiety]], [[context-resets-and-compaction]]
+- 갱신 concepts: [[agent-harness-design]] (frontend + 풀스택 사례 흡수)
+- 갱신 entities: [[claude-opus-4-6]] (sprint construct·context reset 제거 사례 추가)
+- 핵심 시그널:
+  - GAN-스타일 generator/evaluator가 subjective 영역(디자인)에 작동
+  - Sprint contract = high-level spec과 testable 구현 사이의 다리
+  - Opus 4.6 도착 후 sprint construct·context reset이 dead weight화 → harness simplification
+- 비고: Karpathy 글의 *"knowledge base harness"* 시각과 동일 사상
+
+## [2026-05-25] ingest | Anthropic — Scaling Managed Agents: Decoupling the brain from the hands
+- 소스 페이지: [[anthropic-managed-agents]]
+- 신규 entities: [[managed-agents]]
+- 신규 concepts: [[brain-hands-decoupling]], [[context-engineering]]
+- 신규 engineering: [[pets-vs-cattle]]
+- 갱신: [[agent-harness-design]] (meta-harness 시각), [[context-resets-and-compaction]] (session 외부화 third-way 추가)
+- 핵심 시그널:
+  - OS-style 가상화: session / harness / sandbox 세 추상
+  - Brain을 컨테이너에서 빼서 p50 TTFT ~60%↓, p95 90%+↓
+  - Token이 sandbox에 절대 안 들어감 — vault + MCP proxy / Git wire-in 패턴
+- 영향 페이지 수 (배치 합산): 본 3편 배치로 신규 21개 페이지 + 기존 4개 갱신 = 25개
+
+## [2026-05-25] ingest | Karpathy gist 보완 갱신
+- 기존 [[karpathy-llm-wiki-gist]]의 "stub" 항목들이 이번 배치 ingest로 entity 페이지화됨
+- 신규 entities: [[andrej-karpathy]], [[obsidian]]
+- 갱신: [[llm-wiki-pattern]] ([[andrej-karpathy]], [[obsidian]], [[claude-code]] 위키링크 + [[agent-harness-design]] 관련성 추가)
+
+## [2026-05-25] lint | 1차 건강 점검 (43 → 48 페이지)
+- 점검 범위: 전체 페이지 43, 모든 frontmatter·위키링크·index 동기화·모순·파일명·reading 상태
+- ✅ 통과: 고아 0, 모순 0, frontmatter 결손 0, index 동기화 OK, kebab-case 100%
+- ⚠️ 발견: 깨진 위키링크 2건 + 누락 개체 4종
+- 자동 수정: `engineering/index.md`의 `[[concepts/]]` → `[[02.wiki/index#Concepts (LLM/AI)|위키 Concepts 섹션]]`
+- 누락 개체 페이지화 (사용자 결정에 따라 충실히 작성):
+  - [[sutton-bitter-lesson]] (concept/theory) — Rich Sutton 2019 에세이, agent-harness-design 철학의 사상적 뿌리
+  - [[vannevar-bush]] (entity/person) + [[memex]] (concept/theory) — llm-wiki-pattern의 1945년 조상
+  - [[model-context-protocol]] (concept/pattern) — Anthropic 주도 오픈 표준, brain-hands-decoupling의 hands 측 구체 구현체
+  - [[ralph-wiggum-method]] (concept/pattern) — Geoff Huntley의 `while :; do cat PROMPT.md | claude-code ; done` 자율 루프
+- Cross-link 승격: karpathy-llm-wiki-gist·andrej-karpathy·llm-wiki-pattern·playwright-mcp·agent-harness-design·brain-hands-decoupling에서 평문 멘션을 위키링크로
+- index.md·overview.md 갱신, lint-report-2026-05-25.md 삭제
+- 영향 페이지 수: 신규 5 + 갱신 약 10 = 15
+
+## [2026-05-25] query | llm-wiki 패턴이 뭐야?
+- 참조 페이지: [[llm-wiki-pattern]], [[karpathy-llm-wiki-gist]], [[memex]], [[andrej-karpathy]]
+- 답변: 3-레이어 아키텍처(raw/wiki/schema) + 3작업(ingest/query/lint) + Memex 계보 + bookkeeping 비용 0 논거 정리
+- Archive 없음: 기존 [[llm-wiki-pattern]] 페이지에 이미 모두 담긴 내용의 재구성
+
+## [2026-05-25] ingest | multica-ai — andrej-karpathy-skills · CLAUDE.md
+- 소스 페이지: [[multica-karpathy-skills-claude-md]]
+- 원문 캡처: `01.raw/articles/2026-05-25_claude-md-behavioral-guidelines.md` (GitHub raw)
+- 신규 entities: [[multica-ai]] (org)
+- 신규 concepts: [[llm-coding-guidelines]] (hub), [[surgical-edits]], [[verifiable-goals]]
+- 갱신 entities: [[andrej-karpathy]] (repo 이름 차용 사실 추가), [[claude-code]] (system prompt 가이드라인 layer 추가)
+- 갱신 concepts (related 링크): [[sprint-contract]] (← verifiable-goals), [[ralph-wiggum-method]] (← verifiable-goals, llm-coding-guidelines)
+- 갱신: index, overview, log
+- 영향 페이지 수: 신규 5 + 갱신 5 = 10
+- 핵심 시그널:
+  - LLM 코딩 어시스턴트의 행동 규약 4원칙 (Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution)
+  - 트레이드오프 명시: caution > speed bias
+  - 효과 측정: diff 내 불필요 변경 감소, overcomplication 재작성 감소, 사전 질문 비중 증가
+  - [[anthropic-claude-code-auto-mode|auto mode]] (권한 게이트)와 보완 layer — 본 가이드라인은 *선의의 과잉 행동* 차단
+- 미해결: multica-ai 조직 정체성·운영자, Karpathy 본인 endorsement 여부, repo 내 다른 skill 파일
+
+## [2026-05-30] ingest | Anthropic — Introducing dynamic workflows in Claude Code
+- 소스 페이지: [[anthropic-dynamic-workflows]]
+- 원문: `01.raw/articles/2026-05-30_Introducing dynamic workflows.md` (claude.com 블로그)
+- 신규 entities: [[jarred-sumner]] (person), [[bun]] (tool)
+- 신규 concepts: [[dynamic-workflows]] (허브), [[ultracode]]
+- 갱신 entities: [[claude-code]] (dynamic workflows·ultracode 라인 추가), [[anthropic]] (agent 인프라 라인), [[managed-agents]] (coordination 외부화 cross-link)
+- 갱신 concepts: [[agent-harness-design]] (self-writing orchestration 진화 단계 + related), [[generator-evaluator-pattern]] (오케스트레이션 차원 확장 + related)
+- 갱신: index, overview, log
+- 영향 페이지 수: 신규 5 + 갱신 7 = 12
+- 핵심 시그널:
+  - Claude가 오케스트레이션 스크립트를 *동적 작성* → 한 세션에서 10s~100s parallel subagent
+  - adversarial 수렴(independent angle + refute until converge)이 단일 패스 초과 결과의 핵심
+  - coordination이 대화 바깥 + resumable checkpoint (long-running 시간~일)
+  - Bun Zig→Rust 포팅: 99.8% 테스트 통과, ~75만 줄 Rust, 11일 ([[jarred-sumner]])
+  - 진입: 직접 요청 또는 `ultracode`(effort=xhigh + workflow 자동 판단), auto mode 권장
+  - research preview, Max/Team/Enterprise + API/Bedrock/Vertex/Foundry, 토큰 소모 大
+- 모순 처리: raw frontmatter `published: 2001-05-28` → 오타로 판단, 2026-05-28로 기록
+- 미해결: Jarred Sumner/Bun 기본 프로필, dynamic workflows 내부 스케줄링·비용 모델 상세 (후속 글 예정)
+
+## [2026-05-30] ingest | Lum1104/Understand-Anything — README
+- 소스 페이지: [[lum1104-understand-anything]]
+- 원문: `01.raw/articles/2026-05-30_Lum1104Understand-Anything ...md` (GitHub README)
+- 신규 entities: [[understand-anything]] (tool), [[lum1104]] (person), [[tree-sitter]] (tool)
+- 신규 concepts: [[code-knowledge-graph]] (pattern)
+- 신규 engineering: [[tree-sitter-llm-hybrid]] (pattern)
+- 갱신 concepts: [[llm-wiki-pattern]] (/understand-knowledge 그래프화 섹션 + related: code-knowledge-graph)
+- 갱신 entities: [[claude-code]] (플러그인 생태계 라인 + sources)
+- 갱신: [[02.wiki/engineering/index]], index, overview, log
+- 영향 페이지 수: 신규 6 + 갱신 5 = 11
+- 핵심 시그널:
+  - 코드·문서 → 인터랙티브 [[code-knowledge-graph|지식 그래프]] (파일·함수·클래스·의존성=노드). *"Graphs that teach > graphs that impress."*
+  - [[tree-sitter-llm-hybrid|Tree-sitter+LLM 하이브리드]]: 구조=결정론(reproducible·fingerprint 증분), 의미=LLM(요약·레이어·도메인·투어)
+  - 멀티 에이전트 (5+2): project-scanner / file-analyzer(병렬) / architecture-analyzer / tour-builder / graph-reviewer + domain-analyzer · article-analyzer → [[generator-evaluator-pattern]] 계열
+  - **이 위키와 직접 연결**: `/understand-knowledge`가 [[llm-wiki-pattern|Karpathy-pattern wiki]]를 force-directed 그래프+clustering으로 분석 (index.md wikilink 결정론적 파싱 후 LLM이 암묵 관계 발굴). 이 vault가 입력이 될 수 있음
+  - 그래프=커밋 가능 JSON → 팀원 파이프라인 스킵 (온보딩·PR 리뷰·docs-as-code), 15종 플랫폼 지원
+  - 이 환경에 `understand-anything` 플러그인 실제 설치됨 (/understand, /understand-knowledge 사용 가능)
+- 강조점: 사용자 협의로 4관점 모두 반영 (위키 연결·아키텍처·도구 카탈로그·에이전트 패턴)
+- 미해결: Lum1104 본명·소속, graph JSON 스키마 상세
+
+## [2026-06-01] ingest | James AI Explorer — Understand-Anything 한국어 가이드 (2026-05-28)
+- 소스 페이지: [[james-ai-explorer-understand-anything]]
+- 원문 캡처: `01.raw/articles/2026-05-28_understand-anything-1hour-to-5min.md` (fornewchallenge.tistory.com, 의미 정리 형태)
+- 신규 entities/concepts: 없음 (도구·인물·개념은 모두 2026-05-30 ingest 에서 페이지화 완료)
+- 갱신: [[understand-anything]], [[lum1104]], [[tree-sitter]], [[code-knowledge-graph]], [[tree-sitter-llm-hybrid]] 의 sources 필드 + 본문 (2차 소스 시각 섹션 추가)
+- 갱신: index (Sources 섹션 + 통계), overview (진화 로그 한 줄), log
+- 영향 페이지 수: 신규 2 (raw + source) + 갱신 8 = 10
+- 위치: Understand-Anything 의 **첫 2차 소스** — 동일 도구의 사용자 평가/번역
+- 핵심 시그널:
+  - 메시지 전달성: *"Graphs that teach > graphs that impress"* → *"1시간 → 5분"* 시간 절감 프레임으로 재서술. [[tree-sitter-llm-hybrid|핵심 분업]] 추상이 한국어 블로그에서도 큰 손실 없이 전달됨
+  - 신규 정보: IDE 기본 기능·Sourcegraph 와의 포지셔닝 비교표 (README 부재 정보)
+  - 한국어 사용자 진입 시그널: `--language ko` + MIT 무료 → [[lum1104]] 의 다국어 README 정책 효과 확인
+  - 누락 (블로그가 다루지 않은 부분): `/understand-knowledge` LLM wiki 분석 기능, graph JSON 커밋 워크플로, 증분 업데이트
+- 사용자 선호 기록: ingest 작업에서 가중치 묻는 AskUserQuestion 단계 생략 동의 → 메모리에 feedback 저장 (`feedback-skip-emphasis-question.md`)
+- 모순 처리: 없음 (1차 소스와 일치)
+
+## [2026-06-01] lint | 2차 건강 점검 (65 페이지)
+- 점검 범위: `02.wiki/` 전체 65 페이지 — frontmatter / wikilink / index 동기화 / 파일명 / reading 상태 / frontmatter related-slug / mtime drift / 모순
+- ✅ 통과: 고아 0, 모순 0, frontmatter 필수 필드 결손 0, index 동기화 100%, kebab-case 100%, reading 상태 일치 (페이지 없음)
+- ⚠️ 발견: frontmatter dangling slug 1건 + mtime drift 1건 + scanner false-positive 5건(인라인 코드 안 `[[slug]]` placeholder, 실제 렌더링은 정상)
+- 자동 수정 (2건):
+  - [[managed-agents]] frontmatter: `sources` 에 `anthropic-dynamic-workflows` 추가, `updated` 2026-05-25 → 2026-06-01 (dynamic-workflows ingest 시 본문은 cross-link 추가됐으나 메타 누락이었음)
+  - [[generator-evaluator-pattern]] frontmatter `related` 에서 dangling slug `self-evaluation-bias` 제거 (사용자 결정: option B — 1차 소스에 명시 인용 없는 placeholder 슬러그, 향후 명시 출처 등장 시 페이지화)
+- False positive 확인: `02.wiki/{index,reading/index,engineering/index,til/index}.md` 의 `[[slug]]` / `[[YYYY-MM-DD-topic]]` 5건은 모두 `> 형식:` 안내 인라인 코드 (백틱 안에 위치) → Obsidian 렌더링상 wikilink 아님, 수정 불필요. 스캐너 휴리스틱 한계.
+- 영향 페이지 수: 갱신 2 + log 갱신
+- 결과: 위키 건강 매우 양호. 본질적 구조 깨짐 0, 본 lint 는 housekeeping pass.
+- lint-report-2026-06-01.md 삭제
+
+## [2026-06-03] ingest | Tech Bridge — 하네스 엔지니어링 (지금 최고의 에이전틱 엔지니어를 가르는 것)
+- 소스: [[tech-bridge-harness-engineering]] (YouTube, https://youtu.be/-pqyzBxddyg, ~17분, source-type: **video** — 위키 첫 영상 소스)
+- 원문 캡처: `01.raw/articles/2026-06-03_하네스 엔지니어링 - 지금 최고의 에이전틱 엔지니어를 가르는 것은 무엇일까요?.md` (`youtube-transcript` 스킬로 en-orig 자동자막 다운로드 → 사용자가 한국어 기술문서로 재구성)
+- 사용자 협의: 개념 구조 = "신규 페이지 + 허브 연결", entity 범위 = "핵심만"(geoff-huntley·archon·tech-bridge) 선택
+- 신규 (5): source [[tech-bridge-harness-engineering]] · concept [[harness-engineering]] · entity [[geoff-huntley]]·[[archon]]·[[tech-bridge]]
+- 갱신 (6): [[agent-harness-design]](허브↔신규 상호참조 + 강조 대비) · [[context-engineering]](2026 진화 프레이밍 섹션) · [[ralph-wiggum-method]]("Ralph Loop" 프레이밍 + Geoff/Archon 링크) · overview(현재상태 + 진화로그) · index(persons/orgs/tools/patterns/sources + 통계) · log
+- 영향 페이지 수: 신규 5 + 갱신 6 (+raw 1) = 12
+- 핵심 합성:
+  - [[harness-engineering]]은 [[agent-harness-design]]과 **동일 영역의 두 프레이밍** — Anthropic 관점(모델↑→가정 제거=단순화) vs 커뮤니티 관점(실패→가정 추가=강화). 같은 진화 루프의 양면으로 명시 연결.
+  - [[context-engineering]] → harness engineering 진화의 차별점 = **control**(오케스트레이션·sub-agent) + **mindset**(*every mistake becomes a rule*).
+  - 다중 세션 오케스트레이션(PIV + [[ralph-wiggum-method|Ralph Loop]])이 기존 [[dynamic-workflows]](모델이 오케스트레이션 동적 작성)와 대비 — 고정 자동화 vs 자기작성 자동화.
+- 모순 처리: ⚠️ 인물명 "Jeffrey Huntley"(영상) → [[geoff-huntley|Geoff Huntley]](위키 표준, ghuntley.com)로 통일. source·concept·entity 3곳에 contradiction 표기.
+- 범위 메모: Codex·Google Cloud Agent CLI·Cole Medin(발표자 추정)은 사용자 선택("핵심만")에 따라 entity 페이지 미생성, 인라인 언급으로만 처리.
+
+## [2026-06-03] lint | 3차 건강 점검 (70 페이지)
+- 점검 범위: `02.wiki/` 전체 70 페이지(67 unique slug) — 모순 / 고아 / dangling / 누락개체 / frontmatter / reading 상태 / index 동기화 / 파일명
+- ✅ 통과: 고아 0, dangling 링크 0, index 양방향 동기화 0 불일치, kebab-case 100%, reading 상태(페이지 0), slug 충돌은 index 4개(정상)
+- 모순: Huntley 이름(영상 "Jeffrey" ↔ 위키 "Geoff") 1건이 유일 — 직전 ingest에서 3곳(`sources/tech-bridge-harness-engineering`·`entities/geoff-huntley`·`concepts/ralph-wiggum-method`)에 `⚠️ Contradiction`으로 일관 문서화·해결됨. **미해결 모순 0.**
+- 자동 수정 (사용자 동의):
+  - **A. updated drift 3건**: [[index]]·[[log]]·[[overview]] frontmatter `updated` 2026-06-01 → 2026-06-03 (직전 ingest 때 본문만 수정, 메타 누락분 정정)
+  - **B. source-type enum 정규화 2건**: [[anthropic-project-glasswing-update-2026-05]] `blog`→`article`, [[karpathy-llm-wiki-gist]] `gist`→`article` (CLAUDE.md §2.2 enum 일치, updated도 2026-06-03로 bump)
+- 사용자 판단 — 보류 유지 (C): Cole Medin·Google Cloud Agent CLI·Codex는 entity 페이지화하지 않고 인라인 언급 유지 (향후 관련 소스 ingest 시 페이지화)
+- false positive 확인: til/index `> 형식:` 안 `[[YYYY-MM-DD-topic]]`은 백틱 인라인 코드 → wikilink 아님(수정 불필요), 스캐너 휴리스틱 한계 (이전 lint와 동일)
+- 영향 페이지 수: 갱신 5 (index·log·overview + source 2) + log 엔트리
+- 결과: 위키 건강 양호. 본 lint는 housekeeping pass(구조 깨짐 0).
+- lint-report-2026-06-03.md 삭제

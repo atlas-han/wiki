@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Read(./**)",
+      "Edit(./02.wiki/**)",
+      "Write(./02.wiki/**)",
+      "Edit(./00.notes/**)",
+      "Write(./00.notes/**)",
+      "Edit(./01.raw/books/**)",
+      "Write(./01.raw/books/**)",
+      "Edit(./CLAUDE.md)",
+      "Edit(./README.md)"
+    ],
+    "ask": [
+      "Edit(./01.raw/articles/**)",
+      "Write(./01.raw/articles/**)",
+      "Edit(./01.raw/papers/**)",
+      "Write(./01.raw/papers/**)",
+      "Edit(./01.raw/assets/**)",
+      "Write(./01.raw/assets/**)"
+    ],
+    "deny": [
+      "Edit(./.obsidian/**)",
+      "Write(./.obsidian/**)",
+      "Edit(./.smart-env/**)",
+      "Write(./.smart-env/**)",
+      "Edit(./.playwright-mcp/**)",
+      "Write(./.playwright-mcp/**)",
+      "Edit(./.claude/settings.json)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)"
+    ]
+  },
+  "env": {
+    "LLM_WIKI_ROOT": "."
+  }
+}

@@ -1,0 +1,93 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Book (chapter / page)",
+	"behavior": "create",
+	"noteContentFormat": "## 기본정보\n\n![cover]({{image}})\n\n\n## 출판사 서평\n\n{{description}}\n\n## 페이지 내용\n\n{{content}}",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "type",
+			"value": "book",
+			"type": "text"
+		},
+		{
+			"name": "status",
+			"value": "to-read",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "site",
+			"value": "{{domain}}",
+			"type": "text"
+		},
+		{
+			"name": "authors",
+			"value": "{{author|split:\", \"|wikilink|join}}",
+			"type": "multitext"
+		},
+		{
+			"name": "publisher",
+			"value": "{{publisher}}",
+			"type": "text"
+		},
+		{
+			"name": "published",
+			"value": "{{published|date:\"YYYY-MM-DD\"}}",
+			"type": "date"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "isbn",
+			"value": "{{meta:books:isbn}}",
+			"type": "text"
+		},
+		{
+			"name": "cover",
+			"value": "{{image}}",
+			"type": "text"
+		},
+		{
+			"name": "rating",
+			"value": "{{meta:books:rating:value}}",
+			"type": "text"
+		},
+		{
+			"name": "genre",
+			"value": "{{meta:eg:category2_name}}",
+			"type": "text"
+		},
+		{
+			"name": "chapter",
+			"value": "",
+			"type": "text"
+		},
+		{
+			"name": "description",
+			"value": "{{description}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings/book",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://product.kyobobook.co.kr/detail/*"
+	],
+	"noteNameFormat": "{{date|date:\"YYYY-MM-DD\"}}_{{title|safe_name}}",
+	"path": "01.raw/books"
+}
