@@ -5,10 +5,11 @@ This repository is chris's LLM-WIKI knowledge base. It is maintained collaborati
 ## First step in every session
 
 1. Treat `/opt/data/wiki` as the repository root.
-2. Read `CLAUDE.md` first. It is the canonical schema and operating contract.
-3. Read `02.wiki/index.md` to understand existing pages.
-4. Read the recent tail of `02.wiki/log.md` before creating or updating pages.
-5. If the task is topic-specific, search existing pages before creating new ones to avoid duplicates.
+2. Before editing any repository file, sync with the remote repository: `git pull --rebase --autostash`. Resolve or report conflicts before continuing.
+3. Read `CLAUDE.md` first. It is the canonical schema and operating contract.
+4. Read `02.wiki/index.md` to understand existing pages.
+5. Read the recent tail of `02.wiki/log.md` before creating or updating pages.
+6. If the task is topic-specific, search existing pages before creating new ones to avoid duplicates.
 
 ## Steward Agent
 
@@ -39,6 +40,7 @@ Primary steward: **Mnemosyne** (`.agents/mnemosyne.md`).
 
 ## Editing policy
 
+- Always rebase from the remote before starting edits: `git pull --rebase --autostash`. Do this even for small documentation changes so local edits start from the latest `origin/main`.
 - Never silently overwrite conflicting information. Record contradictions explicitly.
 - Do not create pages for passing mentions; follow the page thresholds in `CLAUDE.md`.
 - Keep changes small and logically scoped.

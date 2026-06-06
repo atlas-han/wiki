@@ -120,6 +120,19 @@ sources: []
 
 ## 3. 주요 작업 (Operations)
 
+### 3.0 공통 시작 절차 — Remote Rebase First
+
+작업자가 wiki 문서를 편집하기 전에는 반드시 원격 저장소의 최신 변경사항을 먼저 반영한다.
+
+```bash
+cd /opt/data/wiki
+git pull --rebase --autostash
+```
+
+- 이 절차는 작은 문서 수정, ingest, TIL, reading 상태 변경, lint 수정 등 모든 편집 작업에 적용한다.
+- rebase conflict가 발생하면 충돌 파일을 보고하고, 해결 없이 stale state 위에서 편집을 계속하지 않는다.
+- rebase 이후에 `CLAUDE.md`, `02.wiki/index.md`, 최근 `02.wiki/log.md`를 읽고 작업을 시작한다.
+
 ### 3.1 Ingest — 새 소스 흡수
 `raw/`에 파일이 추가되거나 URL이 주어지면:
 

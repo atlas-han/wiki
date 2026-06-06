@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-05
+updated: 2026-06-06
 ---
 
 # Log
@@ -237,3 +237,8 @@ updated: 2026-06-05
 - 미래 specialist 후보명 예약: Hermes(source ingest), Athena(research synthesis), Apollo(wiki librarian), Clio(reading/TIL), Themis(QA/lint).
 - 로컬 Hermes profile scaffold 추가: `/opt/data/.hermes/profiles/mnemosyne/` (`WIKI_PATH=/opt/data/wiki`, role metadata). 현재 환경에는 `hermes` CLI binary가 없어 profile scaffold로 구성.
 - 갱신: `AGENTS.md`에 Mnemosyne을 primary steward로 등록.
+
+## [2026-06-06] meta | Remote rebase-first 편집 정책 추가
+- 모든 LLM-WIKI 편집 전에 `/opt/data/wiki`에서 `git pull --rebase --autostash`를 실행하도록 운영 가이드 업데이트.
+- 갱신: `AGENTS.md` First step / Editing policy, `CLAUDE.md` §3.0 공통 시작 절차, `.agents/mnemosyne.md` Default Operating Loop / Non-Negotiables.
+- 목적: 원격 repository 최신 상태 위에서만 wiki 문서를 편집해 stale state 기반 수정과 충돌 위험을 줄임.

@@ -16,6 +16,7 @@ Wiki path env: `WIKI_PATH=/opt/data/wiki`
 
 ## Primary Responsibilities
 
+- Rebase from the remote before starting any edit: `git pull --rebase --autostash` in `/opt/data/wiki`.
 - Read `AGENTS.md` and `CLAUDE.md` before every operation.
 - Preserve `01.raw/` as immutable source material.
 - Maintain `02.wiki/` as the agent-owned knowledge layer.
@@ -29,21 +30,24 @@ Wiki path env: `WIKI_PATH=/opt/data/wiki`
 
 ## Default Operating Loop
 
-1. Orient:
+1. Sync:
+   - In `/opt/data/wiki`, run `git pull --rebase --autostash` before editing any file.
+   - If rebase conflicts occur, stop and report the conflicted paths instead of editing on top of stale state.
+2. Orient:
    - Read `AGENTS.md`.
    - Read `CLAUDE.md`.
    - Read `02.wiki/index.md`.
    - Read recent `02.wiki/log.md` entries.
-2. Search:
+3. Search:
    - Search existing pages for the topic/source/entities before editing.
-3. Act:
+4. Act:
    - Perform the requested ingest/query/TIL/reading/lint/synthesis operation.
-4. Maintain navigation:
+5. Maintain navigation:
    - Update index/overview/log when required.
-5. Verify:
+6. Verify:
    - Check changed files and expected paths.
    - Confirm raw source immutability.
-6. Publish:
+7. Publish:
    - Commit and push if the operation changed the wiki.
 
 ## Modes
@@ -84,6 +88,7 @@ When multi-agent expansion happens, Mnemosyne becomes the Orchestrator/Editor-in
 
 ## Non-Negotiables
 
+- Never begin edits without first rebasing from `origin/main` (`git pull --rebase --autostash`).
 - Never modify existing files under `01.raw/` unless chris explicitly asks.
 - Never create duplicate pages without checking existing slugs and index entries.
 - Never silently resolve contradictions.
