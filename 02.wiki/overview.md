@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-06-03
+updated: 2026-06-06
 sources: []
 ---
 
@@ -64,6 +64,7 @@ sources: []
 - *2026-05-30*: Claude Code [[dynamic-workflows]] 발표 ingest ([[anthropic-dynamic-workflows]]). [[agent-harness-design]] 허브에 *"self-writing orchestration"* 진화 단계 추가 — 사람이 짠 고정 multi-agent가 아니라 Claude가 오케스트레이션 스크립트를 *동적 작성*해 10s~100s parallel subagent를 adversarial 수렴시킴. [[generator-evaluator-pattern]]의 오케스트레이션판 + [[managed-agents]] coordination-외부화의 제품 표면 구현. 신규 개체 [[jarred-sumner]]·[[bun]] (Zig→Rust 75만 줄 11일 사례).
 - *2026-05-30*: [[lum1104-understand-anything|Understand-Anything]] ingest ([[lum1104]] 제작 [[claude-code]] 플러그인). 코드·문서를 [[code-knowledge-graph|지식 그래프]]로 변환 — [[tree-sitter-llm-hybrid|Tree-sitter+LLM 하이브리드]](구조=결정론·reproducible, 의미=LLM) + 멀티 에이전트 파이프라인(scanner/analyzer/reviewer, [[generator-evaluator-pattern]] 계열). **결정적 연결**: `/understand-knowledge`가 이 vault 같은 [[llm-wiki-pattern|Karpathy-pattern wiki]]를 직접 그래프화 — LLM Wiki(코드→마크다운)와 Code Knowledge Graph(코드→그래프)가 *"LLM이 유지하는 누적 인공물"* 사상으로 합류. 이 위키 자체가 그 도구의 입력이 될 수 있음.
 - *2026-06-01*: [[james-ai-explorer-understand-anything|James AI Explorer 한국어 가이드(2026-05-28)]] ingest. Understand-Anything 의 **2차 소스** 첫 사례 — README 의 *"Graphs that teach"* 가 사용자 측에서 *"1시간 → 5분"* 시간 절감 프레임으로 재서술됨. 신규 정보: IDE/Sourcegraph 와의 포지셔닝 비교, 한국어 사용자 진입(`--language ko` + MIT 무료). 2차 소스에서 [[tree-sitter-llm-hybrid|핵심 분업 메시지]] 가 큰 손실 없이 도착 — 추상의 견고함 시그널.
+- *2026-06-06*: [[actix-web-official-docs|actix-web 공식 문서]] 전체(33p) ingest — 위키 첫 **`docs` 소스타입** + 첫 본격 **SE 프레임워크 클러스터**. [[actix-web]] 허브 아래 [[actix-web-extractors|extractor]]·[[actix-web-http-server|HttpServer 워커 모델]]·[[actix-web-middleware|미들웨어]]·[[actix-web-routing|라우팅]]·[[actix-web-error-handling|에러]]·[[actix-web-testing|테스트]]·[[actix-web-databases|DB]] + [[actix-actor-model|actix actor 모델]](5p)을 `engineering/{patterns,systems}`에 구축. 핵심: actix-web은 [[tokio]] 위 async 프레임워크로 actor와 분리됨(*"largely unrelated"*), 시그니처는 타입 안전 extractor + `Responder` + `web::Data` 워커 공유 3축. LLM 도메인과 별개의 **보조 도메인(소프트웨어 엔지니어링)** 본격 확장 시작.
 - *2026-06-03*: [[tech-bridge-harness-engineering|Tech Bridge 하네스 엔지니어링 영상]] ingest (첫 **영상 소스** + `youtube-transcript` 스킬 산출물). [[agent-harness-design]] 허브에 **커뮤니티 대중화 프레이밍** [[harness-engineering]] 신설 — context engineering의 2026 진화로서 ① 3계층(Base LLM→Tool Harness→AI Layer), ② AI Layer 6요소(rules/skills·MCP/codebase search/hooks/sub-agents/context docs), ③ *"every mistake becomes a rule"* System Evolution 마인드셋, ④ PIV + [[ralph-wiggum-method|Ralph Loop]] 다중 세션 오케스트레이션. **강조 대비 발견**: Anthropic 관점(agent-harness-design)은 *모델 발전 → 가정 제거*(단순화), 커뮤니티 관점(harness-engineering)은 *실패 → 가정 추가*(강화) — 같은 진화 루프의 양면. 신규 개체 [[geoff-huntley]](Ralph 제작자)·[[archon]](하네스 빌더)·[[tech-bridge]](채널). 인물명 모순(Jeffrey→Geoff Huntley) 통일.
 
 ---

@@ -249,3 +249,23 @@ updated: 2026-06-06
 - 신규 CLI wrapper: `/opt/data/bin/mnemosyne-query` — Hermes CLI가 있으면 `llm-wiki-query` profile로 graphified prompt를 전달하고, 없으면 현재 세션이 사용할 prompt/context 출력.
 - 신규 profile scaffold: `/opt/data/.hermes/profiles/llm-wiki-query/`.
 - 운영 원칙: 모든 LLM-WIKI query는 graphify를 먼저 실행하고, 근거 없는 주제는 “위키에 없음”으로 명시.
+
+## [2026-06-06] ingest | Actix Web 공식 문서 (actix.rs/docs)
+- 소스: [[actix-web-official-docs]] (source-type: **docs** — 위키 첫 docs 소스, actix.rs/docs 33p)
+- 원문 캡처: `01.raw/docs/actix-web/` (33 파일 + 00-index.md; 렌더 페이지 pandoc 변환, 다이어그램은 mermaid `.mmd` 소스 보존; 캡처 단계에서 병렬 페치 + iconize 처리)
+- 사용자 협의(AskUserQuestion): granularity=**Consolidated**, actor 깊이=**개별 페이지**, 강조점=**실무 패턴 중심**
+- 신규 entities (4): [[actix-web]](허브)·[[actix-actor-framework]]·[[tokio]]·[[serde]]
+- 신규 engineering/patterns (12): [[actix-web-extractors]]·[[actix-web-handlers-responders]]·[[actix-web-application-state]]·[[actix-web-routing]]·[[actix-web-middleware]]·[[actix-web-error-handling]]·[[actix-web-databases]]·[[actix-web-testing]]·[[actix-web-websockets]]·[[actix-actor-model]]·[[actix-actor-address]]·[[actix-actor-context]]
+- 신규 engineering/systems (4): [[actix-web-http-server]]·[[actix-web-connection-lifecycle]]·[[actix-arbiter]]·[[actix-sync-arbiter]]
+- 신규 source (1): [[actix-web-official-docs]]
+- 갱신: [[02.wiki/index|index]]·[[02.wiki/engineering/index|engineering/index]]·[[overview]]·log
+- 영향 페이지 수: 신규 21 + 갱신 4 = 25
+- 작성 방식: 연결 축(source + entity 5)은 steward가 직접, concept 16개는 **6개 병렬 서브에이전트**가 각 raw 문서 정독 후 통일 템플릿(frontmatter·크로스링크 어휘·실무 강조)으로 Bash 작성. 검증: 21/21 존재, frontmatter·코드펜스 정상, dangling 위키링크 0.
+- 핵심 합성:
+  - actix-web은 [[tokio]] 기반 async 프레임워크로 actor와 분리됨 (whatis: *"largely unrelated to the actor framework"*). actor는 WebSocket 등에서만 선택적 → [[actix-web-websockets]]는 actor 없는 `actix-ws` 권장.
+  - 시그니처 3축: [[actix-web-extractors|extractor(FromRequest)]] + [[actix-web-handlers-responders|Responder]] + [[actix-web-application-state|web::Data 워커 공유]].
+  - ⚠️ 핵심 함정 2종 문서화: ① `web::Data`를 `HttpServer::new()` 클로저 **밖**에서 생성해야 워커 동기화([[actix-web-application-state]]), ② `NormalizePath` redirect의 POST→GET 데이터 손실([[actix-web-routing]]).
+  - 핸들러 블로킹 금지 → [[actix-web-databases|web::block]] 스레드풀 오프로딩으로 tokio 이벤트 루프 보호.
+- 모순/정정: ⚠️ 공식 문서는 개발용 자동 재시작 도구로 `watchexec`(`watchexec -e rs -r cargo run`)를 권장 — 초안의 `cargo-watch` 표기를 [[actix-web]] 허브에서 정정.
+- 범위 메모: actor framework WIP 스텁 5종(sec-7 Stream/sec-8 IO Helpers/sec-9 Supervisor/sec-10 Registry/sec-11 Helper Actors)은 본문이 `**WIP**`뿐이라 페이지화하지 않음 (raw에는 보존).
+- 후속: 사용자 요청으로 `/graphify` 지식 그래프 생성 + iconize 아이콘 부여 진행.

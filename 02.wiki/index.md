@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-03
+updated: 2026-06-06
 ---
 
 # Index
@@ -56,6 +56,10 @@ updated: 2026-06-03
 - [[obsidian]] — 본 위키의 사용자 측 뷰어
 - [[understand-anything]] — 코드·wiki를 지식 그래프로 만드는 [[claude-code]] 플러그인 (멀티 에이전트, sources: 2)
 - [[tree-sitter]] — 소스를 concrete syntax tree로 파싱하는 결정론적 incremental 파서
+- [[actix-web]] — Rust 비동기 웹 프레임워크 (extractor·미들웨어·멀티스레드 HttpServer), actix-web 문서 허브 (sources: 1)
+- [[actix-actor-framework]] — actix actor 모델 런타임, [[actix-web]]의 역사적 기반 (현재는 분리)
+- [[tokio]] — Rust 표준 async 런타임, [[actix-web]]·[[actix-actor-framework]]가 그 위에서 동작
+- [[serde]] — Rust 직렬화 프레임워크, [[actix-web-extractors|actix-web extractor]]가 의존
 
 ---
 
@@ -101,11 +105,26 @@ updated: 2026-06-03
 → 전체 목록은 [[02.wiki/engineering/index]] 참조
 
 ### Systems
-*(아직 없음)*
+- [[actix-web-http-server]] — actix-web `HttpServer` 워커 모델·TLS/HTTP2·graceful shutdown·정적 파일
+- [[actix-web-connection-lifecycle]] — actix-web Accept/Worker/Dispatcher 루프 (내부 동작 다이어그램)
+- [[actix-arbiter]] — actix actor의 단일 스레드 이벤트 루프(`System`)
+- [[actix-sync-arbiter]] — CPU-bound 작업용 동기 actor 스레드 풀
 
 ### Patterns
 - [[pets-vs-cattle]] — 인프라 일반 원칙, [[brain-hands-decoupling]]의 사상적 출처
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter) + LLM 분업의 코드 분석 패턴
+- [[actix-web-extractors]] — actix-web `FromRequest` 타입 안전 요청 추출 (Path/Query/Json/Form/Data)
+- [[actix-web-handlers-responders]] — actix-web 핸들러 시그니처·`Responder` trait·스트리밍 응답
+- [[actix-web-application-state]] — actix-web `web::Data` 공유 상태 + 워커 클로저 함정
+- [[actix-web-routing]] — actix-web URL dispatch·scope·guard·URL 생성
+- [[actix-web-middleware]] — actix-web `Transform`+`Service` 미들웨어·CORS·세션
+- [[actix-web-error-handling]] — actix-web `ResponseError` 커스텀 에러 응답
+- [[actix-web-databases]] — actix-web `web::block`(동기 Diesel)·async ORM·r2d2 풀
+- [[actix-web-testing]] — actix-web `TestRequest`·`init_service` 통합 테스트
+- [[actix-web-websockets]] — actix-web `actix-ws` WebSocket 처리
+- [[actix-actor-model]] — actix `Actor` trait·lifecycle·`Handler`/`Message`
+- [[actix-actor-address]] — actix `Addr`/`Recipient`·send/do_send/try_send
+- [[actix-actor-context]] — actix `Context`·mailbox 용량
 
 ### Tools
 → [[tree-sitter]] · [[understand-anything]] (entities/에 위치)
@@ -144,12 +163,13 @@ updated: 2026-06-03
 - [[lum1104-understand-anything]] — Understand-Anything README: 코드를 지식 그래프로 (GitHub, 2026)
 - [[james-ai-explorer-understand-anything]] — Understand-Anything 한국어 사용자 가이드 (제임스의 AI 실전 노트, 2026-05-28)
 - [[tech-bridge-harness-engineering]] — 하네스 엔지니어링 강연 영상, 한국어 자막 ([[tech-bridge|Tech Bridge]], 2026-06-03)
+- [[actix-web-official-docs]] — actix-web 공식 문서 전체 (actix.rs/docs, docs 33p, 2026-06-06)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 70 (index, log, overview + 27 entities + 25 concepts + 2 engineering patterns + 10 sources + reading/index + engineering/index + til/index)
-- 마지막 ingest: 2026-06-03 ([[tech-bridge-harness-engineering|Tech Bridge 하네스 엔지니어링 영상]] — 첫 영상 소스; 신규 [[harness-engineering]] + [[geoff-huntley]]·[[archon]]·[[tech-bridge]])
+- 총 페이지 수: 91 (index, log, overview + 31 entities + 25 concepts + 14 engineering patterns + 4 engineering systems + 11 sources + reading/index + engineering/index + til/index)
+- 마지막 ingest: 2026-06-06 ([[actix-web-official-docs|Actix Web 공식 문서]] — actix-web 4.x 33p docs 소스; 신규 [[actix-web]] 허브 + 16 engineering 페이지 + [[actix-actor-framework]]·[[tokio]]·[[serde]])
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
-- 마지막 갱신: 2026-06-03
+- 마지막 갱신: 2026-06-06
