@@ -242,3 +242,10 @@ updated: 2026-06-06
 - 모든 LLM-WIKI 편집 전에 `/opt/data/wiki`에서 `git pull --rebase --autostash`를 실행하도록 운영 가이드 업데이트.
 - 갱신: `AGENTS.md` First step / Editing policy, `CLAUDE.md` §3.0 공통 시작 절차, `.agents/mnemosyne.md` Default Operating Loop / Non-Negotiables.
 - 목적: 원격 repository 최신 상태 위에서만 wiki 문서를 편집해 stale state 기반 수정과 충돌 위험을 줄임.
+
+## [2026-06-06] meta | Mnemosyne Query Agent 추가
+- 신규 query 전용 agent spec: `.agents/mnemosyne-query.md`.
+- 신규 graphify helper: `scripts/wiki_graphify_query.py` — `02.wiki/`의 wikilink graph를 구성하고 query seed node + neighbor context를 생성.
+- 신규 CLI wrapper: `/opt/data/bin/mnemosyne-query` — Hermes CLI가 있으면 `llm-wiki-query` profile로 graphified prompt를 전달하고, 없으면 현재 세션이 사용할 prompt/context 출력.
+- 신규 profile scaffold: `/opt/data/.hermes/profiles/llm-wiki-query/`.
+- 운영 원칙: 모든 LLM-WIKI query는 graphify를 먼저 실행하고, 근거 없는 주제는 “위키에 없음”으로 명시.
