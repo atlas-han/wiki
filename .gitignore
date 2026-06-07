@@ -11,8 +11,10 @@ Icon?
 # === Playwright MCP artifacts (logs, browser profile) ===
 .playwright-mcp/
 
-# === graphify 생성물 (지식 그래프 출력, 재생성 가능) ===
-graphify-out/
+# === graphify 캐시 (지식 그래프 재생성 가능 산출물, 추적 제외) ===
+graphify-out/cache/
+graphify-out/.graphify_python
+graphify-out/.graphify_root
 
 # === Claude Code ===
 # 공유 설정·skills·commands는 추적, 로컬 전용 설정과 런타임 산출물은 무시

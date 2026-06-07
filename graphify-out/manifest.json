@@ -1,0 +1,598 @@
+{
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/scripts/wiki_graphify_query.py": {
+    "mtime": 1780733526.0242603,
+    "hash": "b7f7dc5e0003ed502b5b4b78c1ebd6d7"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/README.md": {
+    "mtime": 1780673998.8101888,
+    "hash": "d7b0e94c629ee6f36e26811fefb5d755"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/AGENTS.md": {
+    "mtime": 1780733526.023595,
+    "hash": "68e99da41912aa540e5153797402f4a2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/CLAUDE.md": {
+    "mtime": 1780733526.023946,
+    "hash": "5c7ede286434f897a5e6a74dfb5d1821"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/overview.md": {
+    "mtime": 1780733526.0495808,
+    "hash": "f68ca0aa721559833722e1edefdbfd06"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/log.md": {
+    "mtime": 1780733540.8927789,
+    "hash": "d4f6c5a92b45355e18c740bd773e8c5d"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/index.md": {
+    "mtime": 1780733526.0488067,
+    "hash": "fe60084db5263357d8a496e131665971"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/reading/index.md": {
+    "mtime": 1779679792.415843,
+    "hash": "3ad11df261c7d90993e537ead11ca4a4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/til/index.md": {
+    "mtime": 1779679806.8098679,
+    "hash": "20786133a4686d8a55c9cc878f28529b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/agentic-misbehavior.md": {
+    "mtime": 1779704633.3171086,
+    "hash": "ba50ff4583df01a3847330343617554e"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/harness-engineering.md": {
+    "mtime": 1780495681.5652819,
+    "hash": "4a975322ce96fba8988a55b9e2091afe"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/deny-and-continue.md": {
+    "mtime": 1779704772.395918,
+    "hash": "517a643f8b718e32eda7f369bd4f99fd"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/ultracode.md": {
+    "mtime": 1780125004.7081125,
+    "hash": "0a9e9c3f3afa3e0c3b61a72dde6aee3f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/context-resets-and-compaction.md": {
+    "mtime": 1779704677.7436056,
+    "hash": "632f3265b308621a7a3298a1783915c9"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/sutton-bitter-lesson.md": {
+    "mtime": 1779707321.7054923,
+    "hash": "7e912e1e23153707e87542431d2affa9"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/llm-wiki-pattern.md": {
+    "mtime": 1780125166.1842914,
+    "hash": "3404cd2082252b538b9a2a56e157d572"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/context-anxiety.md": {
+    "mtime": 1779704654.9125235,
+    "hash": "1dcf2214ade6ef20227eed82d760e6f4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/sprint-contract.md": {
+    "mtime": 1779716281.4236622,
+    "hash": "3c0b286de153416d5b359ff47b1b83ec"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/dynamic-workflows.md": {
+    "mtime": 1780124989.0209858,
+    "hash": "cdc4aa0201bf60187518a4d8c77342e1"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/ai-vulnerability-discovery.md": {
+    "mtime": 1779679963.3184648,
+    "hash": "a6edb7dff0b584934c181052cdef3f8d"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/ralph-wiggum-method.md": {
+    "mtime": 1780495759.071044,
+    "hash": "c6a4bc2cd66eeced8bbeee04e007f756"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/code-knowledge-graph.md": {
+    "mtime": 1780278714.0,
+    "hash": "18cc9187500371cb39753838e9f8c189"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/agent-harness-design.md": {
+    "mtime": 1780495711.3337746,
+    "hash": "c9a0ac61475b196a0b9ba6d394080641"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/generator-evaluator-pattern.md": {
+    "mtime": 1780279569.0,
+    "hash": "0f53f814b6cd83dbd14f07bb47fe1c9e"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/llm-coding-guidelines.md": {
+    "mtime": 1779716127.7613046,
+    "hash": "b85cee15ad95912239e281ab75433b4c"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/prompt-injection.md": {
+    "mtime": 1779704607.7592077,
+    "hash": "6ac9ad497a450f1f380c405577d21009"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/brain-hands-decoupling.md": {
+    "mtime": 1779707472.7224376,
+    "hash": "de1c801ef8859836644546ea2d938dcb"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/model-context-protocol.md": {
+    "mtime": 1779707386.9006524,
+    "hash": "9972a1302db34939d511901ee1580ba1"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/coordinated-vulnerability-disclosure.md": {
+    "mtime": 1779679989.9847453,
+    "hash": "563324ef59673939babbf41c10bfde3d"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/memex.md": {
+    "mtime": 1779707362.138135,
+    "hash": "852376598d5c849f5b47dfdbd203d22e"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/surgical-edits.md": {
+    "mtime": 1779716163.0551472,
+    "hash": "17721fe3a119e53ffa1f2e193cd7bba0"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/transcript-classifier.md": {
+    "mtime": 1779704584.4432697,
+    "hash": "94d6d3291091dce91965409f6a10663a"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/verifiable-goals.md": {
+    "mtime": 1779716194.5803092,
+    "hash": "6a9f735c2b55a1ca6cd7dbeb265b5f54"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/context-engineering.md": {
+    "mtime": 1780495726.5763361,
+    "hash": "0a875796a68dbc50621b20108bcc9e40"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/tech-bridge-harness-engineering.md": {
+    "mtime": 1780496009.3416102,
+    "hash": "36b2b3ccd97cdddc23a8f2d27026dac3"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/multica-karpathy-skills-claude-md.md": {
+    "mtime": 1779716085.4140399,
+    "hash": "a432cbe089be358de153e0cfc3b91986"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/james-ai-explorer-understand-anything.md": {
+    "mtime": 1780278660.0,
+    "hash": "1366781b4e8daeeb6f513ed99f07a972"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/actix-web-official-docs.md": {
+    "mtime": 1780733526.0498002,
+    "hash": "6318cce3335ebabbbb676f8c248cd222"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/anthropic-project-glasswing-update-2026-05.md": {
+    "mtime": 1780496406.2253373,
+    "hash": "a26b8441b72323aeebd99d476ea4f94b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/anthropic-managed-agents.md": {
+    "mtime": 1779704284.9638205,
+    "hash": "1b155abbd2b22560b10d070862545697"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/anthropic-claude-code-auto-mode.md": {
+    "mtime": 1779704178.6774542,
+    "hash": "8ec595e11c1ea20291960421397b5f61"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/lum1104-understand-anything.md": {
+    "mtime": 1780125044.4788654,
+    "hash": "4e6d159a7e200a4aa9b221306712d5f9"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/anthropic-harness-design-long-running-apps.md": {
+    "mtime": 1779704235.3859103,
+    "hash": "e4d5fa75fd98b99238d5597b947816e9"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/anthropic-dynamic-workflows.md": {
+    "mtime": 1780124950.4220078,
+    "hash": "0cb95a3042ad943f9f7b779b87065014"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/karpathy-llm-wiki-gist.md": {
+    "mtime": 1780496408.0159178,
+    "hash": "82d9814de3a9bd48ba09424a436e48d0"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/index.md": {
+    "mtime": 1780733526.0427852,
+    "hash": "e0a6f1b77290aaf495e279ec12290592"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-testing.md": {
+    "mtime": 1780733526.046334,
+    "hash": "6ab80253f9507b2bda7c3226a4b5bf25"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-handlers-responders.md": {
+    "mtime": 1780733526.0454886,
+    "hash": "a2646ffaddb1931e3a7c971d244d0ba3"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/pets-vs-cattle.md": {
+    "mtime": 1779704821.2088068,
+    "hash": "ec9223fdd24d64617755dc8223460090"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-middleware.md": {
+    "mtime": 1780733526.045746,
+    "hash": "e66f685a1ce7499b9595c1ac2776d154"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-databases.md": {
+    "mtime": 1780733526.044506,
+    "hash": "acdebfd364f8c03edab7d3a668e17df2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-actor-context.md": {
+    "mtime": 1780733526.0434883,
+    "hash": "4f808d02a8b06f71e0c024c6f473af66"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-error-handling.md": {
+    "mtime": 1780733526.044856,
+    "hash": "dbdfc833b412d02664edc9b7560a09c1"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-routing.md": {
+    "mtime": 1780733526.0460021,
+    "hash": "30ce21737e8511595ae2569061db8840"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-application-state.md": {
+    "mtime": 1780733526.0441778,
+    "hash": "1abf6a34ea71582e6273d0c0c1928afd"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-actor-model.md": {
+    "mtime": 1780733526.043838,
+    "hash": "44b8c03962239afd1dfc9798a599af84"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/tree-sitter-llm-hybrid.md": {
+    "mtime": 1780278727.0,
+    "hash": "cdf7c94ee82dc4243c199e52dc527db8"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-websockets.md": {
+    "mtime": 1780733526.0466685,
+    "hash": "10194e0065fc9438b3a3a12bea364e54"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-web-extractors.md": {
+    "mtime": 1780733526.0451345,
+    "hash": "6d215d48bc25d43913a369499cbc1dcb"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/patterns/actix-actor-address.md": {
+    "mtime": 1780733526.0431428,
+    "hash": "fe5f5603e39ca04ab27ba077843395a2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/systems/actix-web-http-server.md": {
+    "mtime": 1780733526.047932,
+    "hash": "013b3da64e8833c75fb25f27a56f93a2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/systems/actix-sync-arbiter.md": {
+    "mtime": 1780733526.047252,
+    "hash": "fbd4180d77e291d6d19968f519cc646a"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/systems/actix-arbiter.md": {
+    "mtime": 1780733526.047078,
+    "hash": "b37da944ce0fa683ade77c015c052c5a"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/systems/actix-web-connection-lifecycle.md": {
+    "mtime": 1780733526.0475864,
+    "hash": "2c1c8a823fe71acb269bf3bbb5838bdb"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-agent-sdk.md": {
+    "mtime": 1779704337.5719743,
+    "hash": "f1ae97405dc01abac5443cc345a6792b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/bun.md": {
+    "mtime": 1780125028.5904994,
+    "hash": "ecd4412c299771247286069db772a3c2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/anthropic.md": {
+    "mtime": 1780125070.964095,
+    "hash": "6bdcf90ae6e6db8adb242270ab9d01ab"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-opus-4-5.md": {
+    "mtime": 1779704420.4199967,
+    "hash": "badc0b997fbe35a0ada5c5b5c09fba24"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-code.md": {
+    "mtime": 1780125205.027622,
+    "hash": "6da57085112fff703d990c60933a96d4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/tech-bridge.md": {
+    "mtime": 1780495663.4852135,
+    "hash": "60d2e5e844fb91203ae7aece752b0f6e"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/managed-agents.md": {
+    "mtime": 1780279611.0,
+    "hash": "37b5130a253bef44c5b065fd1196dc8f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/playwright-mcp.md": {
+    "mtime": 1779707453.377997,
+    "hash": "023d791eb86e8a694531c99164ca9c08"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/tokio.md": {
+    "mtime": 1780733526.0485034,
+    "hash": "2dc50c9c7a0cd5d607db1e4f8b68fe93"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-sonnet-4-5.md": {
+    "mtime": 1779704398.025768,
+    "hash": "cdf896315b5d83de93c8ac00b0174b94"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/multica-ai.md": {
+    "mtime": 1779716220.2802477,
+    "hash": "74c10297af7b119b97138dd9c5e2ac10"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/jarred-sumner.md": {
+    "mtime": 1780125017.540885,
+    "hash": "a7c491977f15f93698b8bee9f83377ce"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/obsidian.md": {
+    "mtime": 1779704383.424651,
+    "hash": "ad9b613276c766521641dbe5d9a97184"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/uk-aisi.md": {
+    "mtime": 1779679933.5952563,
+    "hash": "15657f5425dbc0ec81c650a7c242a6f7"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/geoff-huntley.md": {
+    "mtime": 1780495648.7980509,
+    "hash": "4d07f376bac7fff14ead81bd6ec1ed58"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-sonnet-4-6.md": {
+    "mtime": 1779704408.3756714,
+    "hash": "b51608b89ca1e52d7c5f9f7114cbbdfe"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/vannevar-bush.md": {
+    "mtime": 1779707337.9465926,
+    "hash": "fa82eda75ed145eb7f124397cd6d8d64"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-opus-4-6.md": {
+    "mtime": 1779704443.028545,
+    "hash": "746b24ad1f3726e1369f5bfea1828bda"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/cloudflare.md": {
+    "mtime": 1779679909.6677935,
+    "hash": "48d5b64175162e6c0024f8ffdf99ded8"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/mozilla.md": {
+    "mtime": 1779679920.5209334,
+    "hash": "02e739a66c28f6f5b7f6b28676d91898"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/understand-anything.md": {
+    "mtime": 1780278672.0,
+    "hash": "ab1c63fb9ea8a7f0e2ec370acfd13f86"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/tree-sitter.md": {
+    "mtime": 1780278699.0,
+    "hash": "f1e0e52cb1d78c2fd99eb45ff4dcd662"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/archon.md": {
+    "mtime": 1780495656.2905989,
+    "hash": "a84001ab9d22dbbb0378ad16c670b1a8"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/actix-web.md": {
+    "mtime": 1780733526.04823,
+    "hash": "e0d0acb2466a9a3ffaea367ebf70bd68"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-mythos-preview.md": {
+    "mtime": 1779679831.3512018,
+    "hash": "06bcc57814d39b7a8144b65de43a71eb"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/project-glasswing.md": {
+    "mtime": 1779679897.6274028,
+    "hash": "105b922d91dee3411018c073446368d4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/lum1104.md": {
+    "mtime": 1780278689.0,
+    "hash": "90af7307315876ca0c342c895ff0ca7a"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/actix-actor-framework.md": {
+    "mtime": 1780733526.0480862,
+    "hash": "373986328649c5914ff0662982f54db4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-opus-4-7.md": {
+    "mtime": 1779679875.2879572,
+    "hash": "4c4a094ce9e245db9dede4097c08dfc2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/serde.md": {
+    "mtime": 1780733526.0483618,
+    "hash": "c499689e9ea00473f0c45dddb4a28636"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/andrej-karpathy.md": {
+    "mtime": 1779716248.3931258,
+    "hash": "62645685412b496ea02d66509c0cbcc0"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/00.notes/index.md": {
+    "mtime": 1779680840.4469707,
+    "hash": "633ca1c654828056db963e6855c0fe90"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_The Twelve-Factor App.md": {
+    "mtime": 1779704543.3949404,
+    "hash": "b331ca52c1e0aa80a0c2d036e633d1dd"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-30_Introducing dynamic workflows.md": {
+    "mtime": 1780124664.1068332,
+    "hash": "d74630fadc4d52a12ed9fb0851e483f8"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-28_understand-anything-1hour-to-5min.md": {
+    "mtime": 1780278612.0,
+    "hash": "dbdacec000e9650ca71969825e67dd43"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-22_anthropic-project-glasswing-update.md": {
+    "mtime": 1779679709.4800436,
+    "hash": "95b845328add473a1fa22248b6444da0"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_Claude Code auto mode a safer way to skip permissions.md": {
+    "mtime": 1779686305.0414672,
+    "hash": "04c220a76bdfea0fb72da6c8fa5de2a4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-06-03_\ud558\ub124\uc2a4 \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1 - \uc9c0\uae08 \ucd5c\uace0\uc758 \uc5d0\uc774\uc804\ud2f1 \uc5d4\uc9c0\ub2c8\uc5b4\ub97c \uac00\ub974\ub294 \uac83\uc740 \ubb34\uc5c7\uc77c\uae4c\uc694?.md": {
+    "mtime": 1780495520.088051,
+    "hash": "ad61a6b48bf13ebcdaa0592a1da96f5b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-30_Lum1104Understand-Anything Graphs that teach  graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and mor.md": {
+    "mtime": 1780124210.7032723,
+    "hash": "92f3b1ff44faec7e189ae7d9b01f43cd"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_Harness design for long-running application development.md": {
+    "mtime": 1779686223.4289653,
+    "hash": "bdb62646869e8c39d5214541d79717b7"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_claude-md-behavioral-guidelines.md": {
+    "mtime": 1779715489.6488006,
+    "hash": "fd2bd26efcf1ad0284815664269dc97c"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_llm-wiki.md": {
+    "mtime": 1779687002.9090269,
+    "hash": "4f288d478c74e169d3c4d91ef25cb46b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_Extend Claude with skills.md": {
+    "mtime": 1779716179.8706238,
+    "hash": "290e71435901815ae6912a1e219cac13"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_Scaling Managed Agents Decoupling the brain from the hands.md": {
+    "mtime": 1779686172.912322,
+    "hash": "5614d4f2d13aefc315b3e9a4ba7b7eab"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-06-06_\ubc14\ub2e4\uc5d0\uc11c \uc628 \uc18c\ub144.md": {
+    "mtime": 1780674569.3593633,
+    "hash": "6d64a764bdbbd08360bac6d6236c2509"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-05-25_\uc53d\ud0b9 101.md": {
+    "mtime": 1780674495.0655124,
+    "hash": "d8149d0e537952c8864e8eb88684d498"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-05-25_\ud504\ub85c\uc81d\ud2b8 \ud5e4\uc77c\uba54\ub9ac  \uc564\ub514 \uc704\uc5b4.md": {
+    "mtime": 1780674541.1577864,
+    "hash": "3d9905f769a3ed2b25a7fc9ead5efe6b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-05-25_\uacbd\ud5d8\uc758 \uba78\uc885  \ud06c\ub9ac\uc2a4\ud2f4 \ub85c\uc820.md": {
+    "mtime": 1780674508.2348187,
+    "hash": "1ed0ea6dcebe2432639c2737be9b7116"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-05-25_\uc6b0\ub9ac\ub294 \uc5b4\ub5bb\uac8c \ub9c8\uc74c\uc744 \uc6c0\uc9c1\uc774\ub294\uac00  \ud06c\ub9ac\uc2a4 \ubcf4\uc2a4.md": {
+    "mtime": 1780674524.1140478,
+    "hash": "61c6f6c702539d514f4e2235969cd343"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-05-25_\ud558\ub8fb\ubc24\uc5d0 \uc77d\ub294 \uc624\ub514\uc138\uc774\uc544.md": {
+    "mtime": 1780674554.253591,
+    "hash": "fdb4840af7fdfd88893645a3353f18ce"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/application.md": {
+    "mtime": 1780733526.0371935,
+    "hash": "b3c49447a91b9abff642627f1ac85420"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/whatis.md": {
+    "mtime": 1780733526.0425246,
+    "hash": "24d834b13f2057926ffbeaea8d8f8624"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/conn_lifecycle.md": {
+    "mtime": 1780733526.0376773,
+    "hash": "ade6b420f1d521c4b71cfaadee55f277"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/static-files.md": {
+    "mtime": 1780733526.0412257,
+    "hash": "eff3d050ed5a0286889366735dfedb0c"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/middleware.md": {
+    "mtime": 1780733526.0398653,
+    "hash": "2288274c747cc751a8d17cb160133f82"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/autoreload.md": {
+    "mtime": 1780733526.0373313,
+    "hash": "65251e9db423de1ee954f5e8b7a66ea5"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/welcome.md": {
+    "mtime": 1780733526.0423462,
+    "hash": "04f906db72229f8ae6a6bb6bf3ff922f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/errors.md": {
+    "mtime": 1780733526.03855,
+    "hash": "c727e7ab51f51219184279be8b35a62c"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/testing.md": {
+    "mtime": 1780733526.0415912,
+    "hash": "74cef539cbc2eccbc66fc84c5a5b9fbf"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/getting-started.md": {
+    "mtime": 1780733526.0388649,
+    "hash": "82492a59a8faa48f7013c758aba3d015"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/cors.md": {
+    "mtime": 1780733526.0379474,
+    "hash": "e9aa1d1f96ade7d9f137b1f4ac58d78d"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/extractors.md": {
+    "mtime": 1780733526.0387168,
+    "hash": "3da311aa7c78152dd450cf7858cb1eac"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/server.md": {
+    "mtime": 1780733526.0408604,
+    "hash": "bea9194d09ae797a89e1d9247647cd4d"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/databases.md": {
+    "mtime": 1780733526.0382988,
+    "hash": "fec7d650b9233b9caf277a1099e0a27f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/response.md": {
+    "mtime": 1780733526.0405803,
+    "hash": "8e3d3b607693e64030a6420f95955457"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/http_server_init.md": {
+    "mtime": 1780733526.0395725,
+    "hash": "8544f5e8c3fc8e152226d39f44fad077"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/url-dispatch.md": {
+    "mtime": 1780733526.041958,
+    "hash": "93934e1d308a02e8bafa97c39af0fb53"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/http2.md": {
+    "mtime": 1780733526.0394115,
+    "hash": "2cac7464ecaea0d9a8984d695ee25d2a"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/handlers.md": {
+    "mtime": 1780733526.039223,
+    "hash": "c7c1eb08128245b70e7f4b88b97e77a8"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/request.md": {
+    "mtime": 1780733526.0402188,
+    "hash": "cf2b79b5e14f4febc2b3be879cfe764f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/00-index.md": {
+    "mtime": 1780733526.0343838,
+    "hash": "7b17ef58c68c9c81b66b8cc776908625"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/websockets.md": {
+    "mtime": 1780733526.04217,
+    "hash": "40f1569f02f9d74874fa8602476d8f4e"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/actix.md": {
+    "mtime": 1780733526.0346253,
+    "hash": "7c281a166cf28e1215d2c487fc548035"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/arbiter.md": {
+    "mtime": 1780733526.0356731,
+    "hash": "93e6ffa6d8da91c2d906ae7d9c7ff663"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/context.md": {
+    "mtime": 1780733526.0358474,
+    "hash": "e67525f02e2e431ce2e3c30c3fc25b05"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/sec-11-helper-actors.md": {
+    "mtime": 1780733526.0363128,
+    "hash": "f9fa1de9d0e7696886be8aa5a57be366"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/actor.md": {
+    "mtime": 1780733526.034984,
+    "hash": "c068751ef4cb454d0e7374f18b1f1058"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/getting-started.md": {
+    "mtime": 1780733526.0360126,
+    "hash": "f1e19fa7aef39820aa1bfc207749609b"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/sec-8-io-helpers.md": {
+    "mtime": 1780733526.0366151,
+    "hash": "dd3c8eedb8d3e7e0056ff01feb5aeaf2"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/sync-arbiter.md": {
+    "mtime": 1780733526.0369387,
+    "hash": "813790fa2a29b3ae274d68269cdffca9"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/address.md": {
+    "mtime": 1780733526.0353258,
+    "hash": "e67617b79865515e100b525257fcbd75"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/sec-9-supervisor.md": {
+    "mtime": 1780733526.036793,
+    "hash": "64444a9e70b0606c4ef0d972a1113420"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/sec-7-stream.md": {
+    "mtime": 1780733526.0364625,
+    "hash": "065cbe11af9ba1c1320a6aa53a8be198"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/docs/actix-web/actor-framework/sec-10-registry.md": {
+    "mtime": 1780733526.0361726,
+    "hash": "2da46e948f37a4ebcce944bd1ed9037a"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/graphify-out/memory/query_20260603_143819_why_is_claude_code_a_cross_community_bridge_node.md": {
+    "mtime": 1780497499.9739146,
+    "hash": "20638c2f5ccda7e9dd5f8be9478d8416"
+  }
+}

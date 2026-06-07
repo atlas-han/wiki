@@ -200,5 +200,18 @@
   "02.wiki/entities/actix-web.md": "LiServer",
   "02.wiki/entities/serde.md": "LiCode",
   "02.wiki/entities/tokio.md": "LiCog",
-  "02.wiki/sources/actix-web-official-docs.md": "LiBookOpen"
+  "02.wiki/sources/actix-web-official-docs.md": "LiBookOpen",
+  "99.meta": "LiSettings",
+  "99.meta/prd-template.md": "LiFileSignature",
+  "graphify-out": "LiGitBranch",
+  "graphify-out/GRAPH_REPORT.md": "LiFileText",
+  "graphify-out/cache": "LiDatabase",
+  "graphify-out/cache/ast": "LiCode",
+  "graphify-out/cache/semantic": "LiBrain",
+  "graphify-out/memory": "LiBrainCircuit",
+  "graphify-out/memory/query_20260603_143819_why_is_claude_code_a_cross_community_bridge_node.md": "LiSearch",
+  "graphify-out/memory/query_20260606_082042_why_is_02_wiki_log_md_a_cross_community_bridge__be.md": "LiSearch",
+  "graphify-out/memory/query_20260606_082305_why_is_engineering_index_a_cross_community_bridge.md": "LiSearch",
+  "graphify-out/memory/query_20260606_082600_why_is_the_actix_web_entity_node_a_bridge_between.md": "LiSearch",
+  "graphify-out/memory/query_20260606_082853_why_is_claude_code_a_cross_community_hub_spanning.md": "LiSearch"
 }
