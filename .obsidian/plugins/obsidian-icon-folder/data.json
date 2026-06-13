@@ -214,5 +214,8 @@
   "graphify-out/memory/query_20260606_082305_why_is_engineering_index_a_cross_community_bridge.md": "LiSearch",
   "graphify-out/memory/query_20260606_082600_why_is_the_actix_web_entity_node_a_bridge_between.md": "LiSearch",
   "graphify-out/memory/query_20260606_082853_why_is_claude_code_a_cross_community_hub_spanning.md": "LiSearch",
-  "01.raw/books/2026-06-13_마션(스페셜 에디션)  앤디 위어.md": "LiBook"
+  "01.raw/books/2026-06-13_마션(스페셜 에디션)  앤디 위어.md": "LiBook",
+  "01.raw/articles/2026-06-10_How engineers at Nextdoor use Codex to build without limits.md": "LiBot",
+  "01.raw/articles/2026-06-13_LLM 에이전트가 스스로 진화하는 방법 Self-Harness 개념과 실험 결과 정리.md": "LiRefreshCw",
+  "01.raw/articles/2026-06-13_Self-Harness Harnesses That Improve Themselves.md": "LiRefreshCw"
 }
