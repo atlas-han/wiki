@@ -3,7 +3,7 @@ title: Reading
 type: overview
 tags: [meta, reading]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-13
 ---
 
 # Reading
@@ -32,7 +32,7 @@ updated: 2026-05-25
 
 ### 기타
 
-*(아직 없음)*
+- [[martian-special-edition]] — 마션(스페셜 에디션) (앤디 위어, 2021)
 
 ---
 
@@ -53,8 +53,8 @@ updated: 2026-05-25
 | 상태 | 수 |
 |------|----|
 | Currently Reading | 0 |
-| To Read | 0 |
+| To Read | 1 |
 | Completed | 0 |
 | DNF | 0 |
 
-마지막 갱신: 2026-05-25
+마지막 갱신: 2026-06-13

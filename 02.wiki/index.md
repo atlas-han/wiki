@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-06
+updated: 2026-06-13
 ---
 
 # Index
@@ -138,6 +138,9 @@ updated: 2026-06-06
 ### Currently Reading
 *(아직 없음)*
 
+### To Read
+- [[martian-special-edition]] — 앤디 위어의 화성 조난 하드 SF 소설, 영화 〈마션〉 원작 (to-read)
+
 ### Completed
 *(아직 없음)*
 
@@ -164,12 +167,13 @@ updated: 2026-06-06
 - [[james-ai-explorer-understand-anything]] — Understand-Anything 한국어 사용자 가이드 (제임스의 AI 실전 노트, 2026-05-28)
 - [[tech-bridge-harness-engineering]] — 하네스 엔지니어링 강연 영상, 한국어 자막 ([[tech-bridge|Tech Bridge]], 2026-06-03)
 - [[actix-web-official-docs]] — actix-web 공식 문서 전체 (actix.rs/docs, docs 33p, 2026-06-06)
+- [[kyobo-martian-special-edition]] — 교보문고 《마션(스페셜 에디션)》 상품 정보와 공개 소개 요약 (2021)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 91 (index, log, overview + 31 entities + 25 concepts + 14 engineering patterns + 4 engineering systems + 11 sources + reading/index + engineering/index + til/index)
-- 마지막 ingest: 2026-06-06 ([[actix-web-official-docs|Actix Web 공식 문서]] — actix-web 4.x 33p docs 소스; 신규 [[actix-web]] 허브 + 16 engineering 페이지 + [[actix-actor-framework]]·[[tokio]]·[[serde]])
+- 총 페이지 수: 93 (index, log, overview + 31 entities + 25 concepts + 14 engineering patterns + 4 engineering systems + 12 sources + 1 reading book + reading/index + engineering/index + til/index)
+- 마지막 ingest: 2026-06-13 ([[kyobo-martian-special-edition|교보문고 《마션(스페셜 에디션)》]] — 공개 상품 메타데이터 기반 source + [[martian-special-edition]] to-read 독서 노트)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
-- 마지막 갱신: 2026-06-06
+- 마지막 갱신: 2026-06-13

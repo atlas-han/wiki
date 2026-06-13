@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-06
+updated: 2026-06-13
 ---
 
 # Log
@@ -269,3 +269,12 @@ updated: 2026-06-06
 - 모순/정정: ⚠️ 공식 문서는 개발용 자동 재시작 도구로 `watchexec`(`watchexec -e rs -r cargo run`)를 권장 — 초안의 `cargo-watch` 표기를 [[actix-web]] 허브에서 정정.
 - 범위 메모: actor framework WIP 스텁 5종(sec-7 Stream/sec-8 IO Helpers/sec-9 Supervisor/sec-10 Registry/sec-11 Helper Actors)은 본문이 `**WIP**`뿐이라 페이지화하지 않음 (raw에는 보존).
 - 후속: 사용자 요청으로 `/graphify` 지식 그래프 생성 + iconize 아이콘 부여 진행.
+
+## [2026-06-13] reading | add to-read | 마션(스페셜 에디션)
+- 요청 링크: https://product.kyobobook.co.kr/detail/S000000479326
+- 원문 캡처: `01.raw/books/2026-06-13_마션-스페셜-에디션-교보문고.md` (교보문고 public product API 메타데이터·소개 요약; 장문 본문 미리보기/책 속 문장은 보존하지 않음)
+- 신규 source: [[kyobo-martian-special-edition]]
+- 신규 reading: [[martian-special-edition]] — status `to-read`
+- 갱신: [[02.wiki/index|index]], [[02.wiki/reading/index|reading/index]], log
+- 범위 메모: LLM/SE 핵심 도메인 밖의 SF 소설이므로 별도 entity/concept 페이지는 만들지 않고 독서 관리와 source 요약만 추가. 실제 독서 후 독서 노트 확장 예정.
+
