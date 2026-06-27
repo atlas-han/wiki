@@ -16,20 +16,24 @@
     "hash": "5c7ede286434f897a5e6a74dfb5d1821"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/overview.md": {
-    "mtime": 1780733526.0495808,
-    "hash": "f68ca0aa721559833722e1edefdbfd06"
+    "mtime": 1781364145.8183777,
+    "hash": "ba336fda94f3b14ed59fe021ffa99d1c"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/log.md": {
-    "mtime": 1780733540.8927789,
-    "hash": "d4f6c5a92b45355e18c740bd773e8c5d"
+    "mtime": 1781364234.9947906,
+    "hash": "4b966c07fd974506cffea3a320d9fbd8"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/index.md": {
-    "mtime": 1780733526.0488067,
-    "hash": "fe60084db5263357d8a496e131665971"
+    "mtime": 1781364204.9864974,
+    "hash": "1be2bed89152084aebb307a0d080416a"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/reading/index.md": {
-    "mtime": 1779679792.415843,
-    "hash": "3ad11df261c7d90993e537ead11ca4a4"
+    "mtime": 1781350222.4691703,
+    "hash": "fc3236da12f583657ae89ddcf683a0ee"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/reading/books/martian-special-edition.md": {
+    "mtime": 1781350222.4686165,
+    "hash": "5d5457c06889181123449cd3c4afa1e1"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/til/index.md": {
     "mtime": 1779679806.8098679,
@@ -40,8 +44,8 @@
     "hash": "ba50ff4583df01a3847330343617554e"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/harness-engineering.md": {
-    "mtime": 1780495681.5652819,
-    "hash": "4a975322ce96fba8988a55b9e2091afe"
+    "mtime": 1781364092.703916,
+    "hash": "1c1f9d3a999487c7bf923e77624666b0"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/deny-and-continue.md": {
     "mtime": 1779704772.395918,
@@ -50,6 +54,10 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/ultracode.md": {
     "mtime": 1780125004.7081125,
     "hash": "0a9e9c3f3afa3e0c3b61a72dde6aee3f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/self-harness.md": {
+    "mtime": 1781363864.6388772,
+    "hash": "0a616d2a3d1d566fc164d1a24f62a1b5"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/context-resets-and-compaction.md": {
     "mtime": 1779704677.7436056,
@@ -88,12 +96,12 @@
     "hash": "18cc9187500371cb39753838e9f8c189"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/agent-harness-design.md": {
-    "mtime": 1780495711.3337746,
-    "hash": "c9a0ac61475b196a0b9ba6d394080641"
+    "mtime": 1781364066.533303,
+    "hash": "02e486ec9a10c1eb8664a304635610fa"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/generator-evaluator-pattern.md": {
-    "mtime": 1780279569.0,
-    "hash": "0f53f814b6cd83dbd14f07bb47fe1c9e"
+    "mtime": 1781364112.8756964,
+    "hash": "6f451135cc8f647c8b5144b8e696f737"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/concepts/llm-coding-guidelines.md": {
     "mtime": 1779716127.7613046,
@@ -163,6 +171,14 @@
     "mtime": 1779704178.6774542,
     "hash": "8ec595e11c1ea20291960421397b5f61"
   },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/papanuvo-self-harness.md": {
+    "mtime": 1781363928.5511093,
+    "hash": "78c75732214a61655a6ea3147c8e14e4"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/self-harness-paper.md": {
+    "mtime": 1781363904.5196576,
+    "hash": "24aa053f2c574be78e229c7f5a8ac9f7"
+  },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/lum1104-understand-anything.md": {
     "mtime": 1780125044.4788654,
     "hash": "4e6d159a7e200a4aa9b221306712d5f9"
@@ -178,6 +194,10 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/karpathy-llm-wiki-gist.md": {
     "mtime": 1780496408.0159178,
     "hash": "82d9814de3a9bd48ba09424a436e48d0"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/sources/kyobo-martian-special-edition.md": {
+    "mtime": 1781350222.4695036,
+    "hash": "19dd4d7b365d266f8f149738c5f25295"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/engineering/index.md": {
     "mtime": 1780733526.0427852,
@@ -263,6 +283,14 @@
     "mtime": 1780125028.5904994,
     "hash": "ecd4412c299771247286069db772a3c2"
   },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/glm-5.md": {
+    "mtime": 1781363995.7073905,
+    "hash": "a63b4b7ae59434f8f8e2d8f24fc86e43"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/minimax-m2-5.md": {
+    "mtime": 1781363966.580634,
+    "hash": "a4d980f1634f93527e778c4d451d6c0c"
+  },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/anthropic.md": {
     "mtime": 1780125070.964095,
     "hash": "6bdcf90ae6e6db8adb242270ab9d01ab"
@@ -287,6 +315,10 @@
     "mtime": 1779707453.377997,
     "hash": "023d791eb86e8a694531c99164ca9c08"
   },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/terminal-bench.md": {
+    "mtime": 1781364011.071703,
+    "hash": "398f9545401bf8ba657ff8c84b6ebe57"
+  },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/tokio.md": {
     "mtime": 1780733526.0485034,
     "hash": "2dc50c9c7a0cd5d607db1e4f8b68fe93"
@@ -294,6 +326,10 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/claude-sonnet-4-5.md": {
     "mtime": 1779704398.025768,
     "hash": "cdf896315b5d83de93c8ac00b0174b94"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/qwen3-5.md": {
+    "mtime": 1781363981.467164,
+    "hash": "3e16cf5f5dd9b6fca07d7975ea80bbcb"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/multica-ai.md": {
     "mtime": 1779716220.2802477,
@@ -306,6 +342,14 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/obsidian.md": {
     "mtime": 1779704383.424651,
     "hash": "ad9b613276c766521641dbe5d9a97184"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/deepagents.md": {
+    "mtime": 1781364032.0386152,
+    "hash": "0dfd7753d66515be56797b7c15803f6f"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/shanghai-ai-lab.md": {
+    "mtime": 1781363950.8384745,
+    "hash": "c0d2ba4582fb4f5ee17f93cf7625f587"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/02.wiki/entities/uk-aisi.md": {
     "mtime": 1779679933.5952563,
@@ -383,6 +427,10 @@
     "mtime": 1779680840.4469707,
     "hash": "633ca1c654828056db963e6855c0fe90"
   },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/99.meta/prd-template.md": {
+    "mtime": 1780812699.061287,
+    "hash": "8b0dfa63d9a8264d7e77598d065536d8"
+  },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_The Twelve-Factor App.md": {
     "mtime": 1779704543.3949404,
     "hash": "b331ca52c1e0aa80a0c2d036e633d1dd"
@@ -394,6 +442,10 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-28_understand-anything-1hour-to-5min.md": {
     "mtime": 1780278612.0,
     "hash": "dbdacec000e9650ca71969825e67dd43"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-06-10_How engineers at Nextdoor use Codex to build without limits.md": {
+    "mtime": 1781086160.0,
+    "hash": "d5f88a616249e2d8a866aaa996a03181"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-22_anthropic-project-glasswing-update.md": {
     "mtime": 1779679709.4800436,
@@ -427,6 +479,10 @@
     "mtime": 1779716179.8706238,
     "hash": "290e71435901815ae6912a1e219cac13"
   },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-06-13_LLM \uc5d0\uc774\uc804\ud2b8\uac00 \uc2a4\uc2a4\ub85c \uc9c4\ud654\ud558\ub294 \ubc29\ubc95 Self-Harness \uac1c\ub150\uacfc \uc2e4\ud5d8 \uacb0\uacfc \uc815\ub9ac.md": {
+    "mtime": 1781362475.963805,
+    "hash": "7069b82f7bdabc1019609676e856d193"
+  },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-05-25_Scaling Managed Agents Decoupling the brain from the hands.md": {
     "mtime": 1779686172.912322,
     "hash": "5614d4f2d13aefc315b3e9a4ba7b7eab"
@@ -434,6 +490,10 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-06-06_\ubc14\ub2e4\uc5d0\uc11c \uc628 \uc18c\ub144.md": {
     "mtime": 1780674569.3593633,
     "hash": "6d64a764bdbbd08360bac6d6236c2509"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-06-13_\ub9c8\uc158(\uc2a4\ud398\uc15c \uc5d0\ub514\uc158)  \uc564\ub514 \uc704\uc5b4.md": {
+    "mtime": 1781350515.8230665,
+    "hash": "827dda4f371d5b209bdd503f3e447ded"
   },
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/books/2026-05-25_\uc53d\ud0b9 101.md": {
     "mtime": 1780674495.0655124,
@@ -594,5 +654,25 @@
   "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/graphify-out/memory/query_20260603_143819_why_is_claude_code_a_cross_community_bridge_node.md": {
     "mtime": 1780497499.9739146,
     "hash": "20638c2f5ccda7e9dd5f8be9478d8416"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/graphify-out/memory/query_20260606_082042_why_is_02_wiki_log_md_a_cross_community_bridge__be.md": {
+    "mtime": 1780734042.0111291,
+    "hash": "dba67c2833853886f8415b5de1732641"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/graphify-out/memory/query_20260606_082853_why_is_claude_code_a_cross_community_hub_spanning.md": {
+    "mtime": 1780734533.2617457,
+    "hash": "e013aad39a0a451af3f197681f23ddfc"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/graphify-out/memory/query_20260606_082305_why_is_engineering_index_a_cross_community_bridge.md": {
+    "mtime": 1780734185.271193,
+    "hash": "addf114f113d46b1ca1644b5d934762c"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/graphify-out/memory/query_20260606_082600_why_is_the_actix_web_entity_node_a_bridge_between.md": {
+    "mtime": 1780734360.8126862,
+    "hash": "54c75d68cf7542b7d826f0cbde0d94c9"
+  },
+  "/Users/hannamil/Library/Mobile Documents/iCloud~md~obsidian/Documents/LLM-WIKI/01.raw/articles/2026-06-13_Self-Harness Harnesses That Improve Themselves.md": {
+    "mtime": 1781363331.423641,
+    "hash": "069ff25a704202ad4f639c7c0bd85f04"
   }
 }

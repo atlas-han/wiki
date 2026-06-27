@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
-related: [agent-harness-design, sprint-contract, dynamic-workflows]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness]
 first-seen: anthropic-harness-design-long-running-apps
 sources: [anthropic-harness-design-long-running-apps]
 created: 2026-05-25
-updated: 2026-06-01
+updated: 2026-06-14
 ---
 
 # Generator–Evaluator Pattern
@@ -69,7 +69,16 @@ Design quality와 originality를 더 무겁게 weight → 모델이 aesthetic ri
 
 [[dynamic-workflows|Dynamic workflows]]는 이 generator/evaluator 사상을 *수십~수백 agent의 오케스트레이션*으로 확장한다: agent들이 독립 각도로 답을 내고, *다른 agent가 그 결과를 refute(반박)* 하려 시도하며, **수렴할 때까지 iterate**. 1:1 generator–evaluator 루프가 fan-out된 adversarial 군집으로 일반화된 형태.
 
+## 자기-개선 하니스로의 변형 (Self-Harness 시각)
+
+[[self-harness|Self-Harness]]([[self-harness-paper]])는 이 패턴을 *하니스 그 자체를 개선하는 루프*로 옮기되 두 가지를 비튼다:
+
+- **생성자=평가대상=같은 모델**. proposer(하니스 edit 생성)도, 그 edit이 적용된 후 평가받는 에이전트도 **동일한 고정 모델**. 본 패턴의 *self-evaluation bias* 우려를 회피하는 방식이 다르다 — 평가자를 회의적으로 *튜닝*하는 대신, 평가를 **결정론적 verifier + non-regressive 채택 규칙**([[terminal-bench|Terminal-Bench-2.0]] held-in/held-out)에 위임. "회의적 평가자"의 역할을 **regression gate**가 대신한다.
+- **산출물이 응답이 아니라 하니스**. generator가 매 cycle *refine/pivot* 을 고르듯, Self-Harness는 diverse yet minimal 후보를 병렬 생성해 회귀 게이트를 통과한 것만 병합한다.
+
+즉 generator–evaluator의 *피드백 루프*를 모델 응답이 아니라 **모델을 감싸는 스캐폴딩의 계보(lineage)** 에 적용한 형태. → [[self-harness]] 참조.
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
-- 관련: [[agent-harness-design]], [[sprint-contract]], [[dynamic-workflows]]
+- 관련: [[agent-harness-design]], [[sprint-contract]], [[dynamic-workflows]], [[self-harness]]

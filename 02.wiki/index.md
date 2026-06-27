@@ -34,6 +34,7 @@ updated: 2026-06-27
 - [[mozilla]] — Firefox 개발 오픈소스 비영리, [[project-glasswing]] 파트너
 - [[multica-ai]] — GitHub org, `andrej-karpathy-skills` repo로 [[claude-code]] CLAUDE.md 4원칙 공개
 - [[uk-aisi]] — UK AI Security Institute, frontier 모델 보안 평가 정부 기관
+- [[shanghai-ai-lab]] — 상하이 AI 연구소, [[self-harness]] 논문 발표 (본 위키 첫 중국 lab)
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -42,6 +43,9 @@ updated: 2026-06-27
 - [[claude-opus-4-5]] — Opus 4.6 직전 세대, harness 실험의 메인 모델
 - [[claude-sonnet-4-6]] — Sonnet 4.6, [[transcript-classifier]] 백본
 - [[claude-sonnet-4-5]] — Sonnet 4.5, [[context-anxiety]] 두드러진 모델
+- [[minimax-m2-5]] — MiniMax M2.5, [[self-harness]] 실험 base 모델 (held-out 40.5→61.9%)
+- [[qwen3-5]] — Qwen3.5-35B-A3B (MoE), [[self-harness]] 실험서 최대 상대 개선 (held-in +138%)
+- [[glm-5]] — GLM-5, [[self-harness]] 실험 base 모델 (held-out 42.9→57.1%)
 
 ### Products
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
@@ -60,6 +64,8 @@ updated: 2026-06-27
 - [[actix-actor-framework]] — actix actor 모델 런타임, [[actix-web]]의 역사적 기반 (현재는 분리)
 - [[tokio]] — Rust 표준 async 런타임, [[actix-web]]·[[actix-actor-framework]]가 그 위에서 동작
 - [[serde]] — Rust 직렬화 프레임워크, [[actix-web-extractors|actix-web extractor]]가 의존
+- [[terminal-bench]] — 컨테이너 터미널 agentic 벤치마크 (결정론적 verifier), [[self-harness]] 평가대
+- [[deepagents]] — LangChain 에이전트 SDK, [[self-harness]]의 최소 초기 하니스 토대
 
 ---
 
@@ -82,6 +88,7 @@ updated: 2026-06-27
 ### Patterns
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
 - [[harness-engineering]] — 모델 wrapper 전체 설계 (3계층·AI Layer 6요소·System Evolution·오케스트레이션), context engineering의 2026 진화 (커뮤니티 프레이밍, sources: 1)
+- [[self-harness]] — 고정 모델이 자기 하니스를 propose→validate→accept로 스스로 개선 (Shanghai AI Lab, Terminal-Bench-2.0, sources: 2)
 - [[dynamic-workflows]] — Claude가 오케스트레이션 스크립트를 동적 작성, 10s~100s parallel subagent 수렴 (Claude Code, sources: 1)
 - [[ultracode]] — effort=xhigh + workflow 자동 판단을 묶은 Claude Code 세팅
 - [[generator-evaluator-pattern]] — GAN-스타일 생성기·평가기 분리 다중 에이전트
@@ -168,13 +175,15 @@ updated: 2026-06-27
 - [[tech-bridge-harness-engineering]] — 하네스 엔지니어링 강연 영상, 한국어 자막 ([[tech-bridge|Tech Bridge]], 2026-06-03)
 - [[actix-web-official-docs]] — actix-web 공식 문서 전체 (actix.rs/docs, docs 33p, 2026-06-06)
 - [[kyobo-martian-special-edition]] — 교보문고 《마션(스페셜 에디션)》 상품 정보와 공개 소개 요약 (2021)
+- [[self-harness-paper]] — "Self-Harness: Harnesses That Improve Themselves" (Shanghai AI Lab, arXiv 2606.09498, 2026)
+- [[papanuvo-self-harness]] — Self-Harness 한국어 해설 (파파누보, tistory, 2026-06-12)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 94 (index, log, overview + 31 entities + 25 concepts + 14 engineering patterns + 4 engineering systems + 12 sources + 1 reading book + 1 TIL + reading/index + engineering/index + til/index)
+- 총 페이지 수: 103 (index, log, overview + 37 entities + 26 concepts + 14 engineering patterns + 4 engineering systems + 14 sources + 1 reading book + 1 TIL + reading/index + engineering/index + til/index)
 - 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
-- 마지막 ingest: 2026-06-13 ([[kyobo-martian-special-edition|교보문고 《마션(스페셜 에디션)》]] — 공개 상품 메타데이터 기반 source + [[martian-special-edition]] to-read 독서 노트)
+- 마지막 ingest: 2026-06-14 ([[self-harness-paper|Self-Harness 논문]] + [[papanuvo-self-harness|한국어 해설]] — concept [[self-harness]] 허브 + entity 6종([[shanghai-ai-lab]]·[[minimax-m2-5]]·[[qwen3-5]]·[[glm-5]]·[[terminal-bench]]·[[deepagents]]) + 기존 harness 클러스터 3종 갱신)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
 - 마지막 갱신: 2026-06-27

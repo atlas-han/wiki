@@ -270,6 +270,27 @@ updated: 2026-06-27
 - 범위 메모: actor framework WIP 스텁 5종(sec-7 Stream/sec-8 IO Helpers/sec-9 Supervisor/sec-10 Registry/sec-11 Helper Actors)은 본문이 `**WIP**`뿐이라 페이지화하지 않음 (raw에는 보존).
 - 후속: 사용자 요청으로 `/graphify` 지식 그래프 생성 + iconize 아이콘 부여 진행.
 
+## [2026-06-14] ingest | Self-Harness: Harnesses That Improve Themselves
+- 소스 (2): [[self-harness-paper]] (1차, arXiv 2606.09498, source-type: **paper** — 위키 첫 paper 소스) + [[papanuvo-self-harness]] (2차, 한국어 해설, tistory)
+- 원문 캡처: `01.raw/articles/2026-06-13_Self-Harness Harnesses That Improve Themselves.md` (arXiv HTML) + `01.raw/articles/2026-06-13_LLM 에이전트가 스스로 진화하는 방법 ...md` (파파누보 tistory)
+- 사용자 협의(AskUserQuestion): 강조·범위 = **패턴 중심 + 엔티티 풀세트**
+- 신규 concept (1): [[self-harness]] (허브)
+- 신규 entities (6): org [[shanghai-ai-lab]] · model [[minimax-m2-5]]·[[qwen3-5]]·[[glm-5]] · tool [[terminal-bench]]·[[deepagents]]
+- 갱신 concepts (3): [[agent-harness-design]](*자기-개선 하니스* 절 + 세 패러다임 표 + related/sources) · [[harness-engineering]](System Evolution 자동화 = Self-Harness 인용 + related/sources) · [[generator-evaluator-pattern]](propose/validate의 하니스-계보 변형 절 + related)
+- 갱신: [[02.wiki/index|index]](Models +3·Orgs +1·Tools +2·Patterns +1·Sources +2·통계) · [[overview]](현재상태 harness hub + 진화로그) · log
+- 영향 페이지 수: 신규 9 + 갱신 6 = 15
+- 핵심 합성:
+  - **세 번째 하니스 개선 패러다임** 확립: Human Harness Engineering / Meta-Harness / **Self-Harness**(고정 동일 모델이 자기 트레이스로 자기 하니스 개선). 본 위키 harness 허브의 *"누가 하니스를 고치는가"* 축을 완성.
+  - 기존 두 허브와 정밀 연결: [[harness-engineering]]의 *"every mistake becomes a rule"* System Evolution을 **사람 손 떼고 자동화** + [[agent-harness-design]]의 *가정 제거(단순화)* 와 반대 방향(*실패→가정 추가=강화*)의 같은 진화 루프 + [[generator-evaluator-pattern]] propose/validate를 *하니스 계보*에 적용(평가자 튜닝 대신 결정론적 verifier + non-regressive gate).
+  - 3단계 루프: Weakness Mining(verifier-grounded failure signature φ=(cause,causal-status,mechanism) 클러스터링) → Harness Proposal(diverse yet minimal K개 병렬 후보) → Proposal Validation(held-in/held-out non-regressive 채택).
+  - 정량: Terminal-Bench-2.0 3개 모델 held-out +최대 21.4%p(상대 +138%), held-out 개선 = 과적합 아님, *모델마다 다른* edit 채택 → *"harness는 inherently model-specific"* 입증.
+  - 본 위키 첫 **중국 lab**([[shanghai-ai-lab]]) + 첫 **비-Anthropic 모델군**([[minimax-m2-5]]·[[qwen3-5]]·[[glm-5]]) + 첫 **paper 소스타입**.
+- 2차 소스 신뢰도: 한국어 해설이 핵심 수치·3단계 구조를 손실 없이 전달 — [[james-ai-explorer-understand-anything]]에서 본 *"추상이 한국어 2차 소스에서도 견고"* 패턴 재확인. 모순 0.
+- 범위 메모:
+  - 파파누보(블로그 저자)는 [[james-ai-explorer-understand-anything|James AI Explorer]] 선례에 따라 person entity 미생성, source author 필드로만 크레딧.
+  - 논문이지만 `reading/papers/` 노트는 미생성 — 기존 ingest 선례(actix docs·Understand-Anything)대로 source 흡수만. 사용자가 독서 추적을 원하면 reading-add로 추가 가능.
+  - 인라인 언급만 처리한 선행연구(ReAct·Reflexion·STOP·Darwin Gödel Machine·AlphaEvolve 등)·Harbor 실행환경·LangChain org는 entity 미생성 (향후 관련 ingest 시 페이지화 고려).
+
 ## [2026-06-13] reading | add to-read | 마션(스페셜 에디션)
 - 요청 링크: https://product.kyobobook.co.kr/detail/S000000479326
 - 원문 캡처: `01.raw/books/2026-06-13_마션-스페셜-에디션-교보문고.md` (교보문고 public product API 메타데이터·소개 요약; 장문 본문 미리보기/책 속 문장은 보존하지 않음)

@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-06-06
+updated: 2026-06-14
 sources: []
 ---
 
@@ -19,7 +19,7 @@ sources: []
 
 [[anthropic|Anthropic]] 도메인이 큰 축으로 자리 잡는 중. 두 개의 큰 hub가 형성됨:
 1. **사이버보안·dual-use** — [[project-glasswing]], [[ai-vulnerability-discovery]], [[coordinated-vulnerability-disclosure]] 라인.
-2. **Agent harness 설계** — [[agent-harness-design]]을 허브로, Anthropic Engineering Blog 3편 연작([[anthropic-claude-code-auto-mode]], [[anthropic-harness-design-long-running-apps]], [[anthropic-managed-agents]])이 동시 ingest. 핵심 메시지: *"harnesses encode assumptions about what the model can't do — those assumptions go stale."* Sonnet 4.5 → Opus 4.5 → Opus 4.6 진화에 따라 컴포넌트(context reset, sprint construct)가 dead weight가 된 구체적 사례 확보. 같은 영역의 **커뮤니티 대중화 프레이밍**으로 [[harness-engineering]]([[tech-bridge-harness-engineering]])이 합류 — AI Layer 6요소 + *"every mistake becomes a rule"* + [[ralph-wiggum-method|Ralph Loop]] 다중 세션 오케스트레이션.
+2. **Agent harness 설계** — [[agent-harness-design]]을 허브로, Anthropic Engineering Blog 3편 연작([[anthropic-claude-code-auto-mode]], [[anthropic-harness-design-long-running-apps]], [[anthropic-managed-agents]])이 동시 ingest. 핵심 메시지: *"harnesses encode assumptions about what the model can't do — those assumptions go stale."* Sonnet 4.5 → Opus 4.5 → Opus 4.6 진화에 따라 컴포넌트(context reset, sprint construct)가 dead weight가 된 구체적 사례 확보. 같은 영역의 **커뮤니티 대중화 프레이밍**으로 [[harness-engineering]]([[tech-bridge-harness-engineering]])이 합류 — AI Layer 6요소 + *"every mistake becomes a rule"* + [[ralph-wiggum-method|Ralph Loop]] 다중 세션 오케스트레이션. 이제 그 진화 루프를 **모델 스스로 자동화**하는 [[self-harness|Self-Harness]]([[self-harness-paper]], [[shanghai-ai-lab|Shanghai AI Lab]])가 합류 — 고정 모델이 자기 트레이스로 자기 하니스를 propose→validate→accept. 본 위키 첫 **중국 lab + 비-Anthropic 모델군**([[minimax-m2-5]]·[[qwen3-5]]·[[glm-5]]) 진입.
 
 [[andrej-karpathy|Karpathy]]의 [[llm-wiki-pattern]] 글이 이 vault 자체의 헌장. 두 흐름이 *"knowledge base 형태의 harness"* 라는 시각으로 연결됨.
 
@@ -65,6 +65,7 @@ sources: []
 - *2026-05-30*: [[lum1104-understand-anything|Understand-Anything]] ingest ([[lum1104]] 제작 [[claude-code]] 플러그인). 코드·문서를 [[code-knowledge-graph|지식 그래프]]로 변환 — [[tree-sitter-llm-hybrid|Tree-sitter+LLM 하이브리드]](구조=결정론·reproducible, 의미=LLM) + 멀티 에이전트 파이프라인(scanner/analyzer/reviewer, [[generator-evaluator-pattern]] 계열). **결정적 연결**: `/understand-knowledge`가 이 vault 같은 [[llm-wiki-pattern|Karpathy-pattern wiki]]를 직접 그래프화 — LLM Wiki(코드→마크다운)와 Code Knowledge Graph(코드→그래프)가 *"LLM이 유지하는 누적 인공물"* 사상으로 합류. 이 위키 자체가 그 도구의 입력이 될 수 있음.
 - *2026-06-01*: [[james-ai-explorer-understand-anything|James AI Explorer 한국어 가이드(2026-05-28)]] ingest. Understand-Anything 의 **2차 소스** 첫 사례 — README 의 *"Graphs that teach"* 가 사용자 측에서 *"1시간 → 5분"* 시간 절감 프레임으로 재서술됨. 신규 정보: IDE/Sourcegraph 와의 포지셔닝 비교, 한국어 사용자 진입(`--language ko` + MIT 무료). 2차 소스에서 [[tree-sitter-llm-hybrid|핵심 분업 메시지]] 가 큰 손실 없이 도착 — 추상의 견고함 시그널.
 - *2026-06-06*: [[actix-web-official-docs|actix-web 공식 문서]] 전체(33p) ingest — 위키 첫 **`docs` 소스타입** + 첫 본격 **SE 프레임워크 클러스터**. [[actix-web]] 허브 아래 [[actix-web-extractors|extractor]]·[[actix-web-http-server|HttpServer 워커 모델]]·[[actix-web-middleware|미들웨어]]·[[actix-web-routing|라우팅]]·[[actix-web-error-handling|에러]]·[[actix-web-testing|테스트]]·[[actix-web-databases|DB]] + [[actix-actor-model|actix actor 모델]](5p)을 `engineering/{patterns,systems}`에 구축. 핵심: actix-web은 [[tokio]] 위 async 프레임워크로 actor와 분리됨(*"largely unrelated"*), 시그니처는 타입 안전 extractor + `Responder` + `web::Data` 워커 공유 3축. LLM 도메인과 별개의 **보조 도메인(소프트웨어 엔지니어링)** 본격 확장 시작.
+- *2026-06-14*: [[self-harness-paper|Self-Harness 논문]](arXiv 2606.09498, [[shanghai-ai-lab|Shanghai AI Lab]]) + 한국어 해설([[papanuvo-self-harness]]) ingest. [[agent-harness-design]]·[[harness-engineering]] 허브에 **세 번째 하니스 개선 패러다임** [[self-harness|Self-Harness]] 신설 — Human Engineering / Meta-Harness 대비, *고정 동일 모델이 자기 실행 트레이스로 자기 하니스를 propose→validate→accept*. **핵심 합성**: harness-engineering의 *"every mistake becomes a rule"* System Evolution을 사람 손 떼고 자동화한 형태 + agent-harness-design의 *"가정 제거(단순화)"* 와 반대 방향(*실패→가정 추가=강화*)의 같은 진화 루프 + [[generator-evaluator-pattern]]의 propose/validate를 *하니스 계보*에 적용(평가자 튜닝 대신 결정론적 verifier+non-regressive gate). [[terminal-bench|Terminal-Bench-2.0]]에서 3개 모델 held-out +최대 21.4%p, *모델마다 다른* edit 채택으로 *"harness는 inherently model-specific"* 정량 입증. 본 위키 첫 **중국 lab + 비-Anthropic 모델군** 진입 ([[minimax-m2-5]]·[[qwen3-5]]·[[glm-5]]·[[terminal-bench]]·[[deepagents]]).
 - *2026-06-03*: [[tech-bridge-harness-engineering|Tech Bridge 하네스 엔지니어링 영상]] ingest (첫 **영상 소스** + `youtube-transcript` 스킬 산출물). [[agent-harness-design]] 허브에 **커뮤니티 대중화 프레이밍** [[harness-engineering]] 신설 — context engineering의 2026 진화로서 ① 3계층(Base LLM→Tool Harness→AI Layer), ② AI Layer 6요소(rules/skills·MCP/codebase search/hooks/sub-agents/context docs), ③ *"every mistake becomes a rule"* System Evolution 마인드셋, ④ PIV + [[ralph-wiggum-method|Ralph Loop]] 다중 세션 오케스트레이션. **강조 대비 발견**: Anthropic 관점(agent-harness-design)은 *모델 발전 → 가정 제거*(단순화), 커뮤니티 관점(harness-engineering)은 *실패 → 가정 추가*(강화) — 같은 진화 루프의 양면. 신규 개체 [[geoff-huntley]](Ralph 제작자)·[[archon]](하네스 빌더)·[[tech-bridge]](채널). 인물명 모순(Jeffrey→Geoff Huntley) 통일.
 
 ---

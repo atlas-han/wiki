@@ -35,5 +35,8 @@
   },
   "env": {
     "LLM_WIKI_ROOT": "."
+  },
+  "worktree": {
+    "bgIsolation": "none"
   }
 }

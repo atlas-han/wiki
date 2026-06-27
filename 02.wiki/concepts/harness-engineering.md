@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering]
+sources: [tech-bridge-harness-engineering, self-harness-paper]
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-14
 ---
 
 # Harness Engineering
@@ -69,6 +69,8 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 
 이 사상은 [[ralph-wiggum-method|Ralph]]의 *"실패를 거부하지 말고 튜닝 신호로"* 철학, [[agent-harness-design]]의 *"harness는 모델이 못하는 것에 대한 가정의 다발"* 과 정확히 맞물린다. 단, 강조점이 다르다 — agent-harness-design은 *모델이 좋아지면 가정을 제거*(harness 단순화)에, harness engineering은 *실패에서 가정을 추가*(harness 강화)에 무게. 두 방향은 같은 진화 루프의 양면.
 
+> **자동화된 System Evolution = [[self-harness|Self-Harness]].** *"every mistake becomes a rule"* 에서 사람이 `agents.md`에 규칙을 적는 손을 떼고, **에이전트가 자기 실행 트레이스에서 직접 규칙을 합성**하면 그것이 [[self-harness|Self-Harness]](Shanghai AI Lab, [[self-harness-paper]])다. Weakness Mining(실패 클러스터링) → Proposal(diverse yet minimal edit) → Validation(회귀 게이트)의 3단계 루프로, [[terminal-bench|Terminal-Bench-2.0]] 3개 모델에서 *모델마다 다른* 하니스 진화를 정량 입증했다. *skill issue 안티패턴*(모델 탓하며 다음 버전 대기)의 정확한 반례.
+
 ## 4. 다중 세션 오케스트레이션 (최종 진화)
 
 거대한 task/PRD를 단일 세션에 몰아넣으면 토큰 비효율 + 모델 과부하로 *"fall flat on its face"* — AI Layer 품질과 무관하게 실패. 해법은 역할이 분리된 세션에 **focused task**를 주고 아티팩트로 핸드오프하는 것.
@@ -90,6 +92,7 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 ## References
 
 - [[tech-bridge-harness-engineering]] (1차, 영상)
+- [[self-harness-paper]] — System Evolution 마인드셋의 자동화 사례
 - [[agent-harness-design]] — Anthropic 관점 허브
 - [[context-engineering]] — 진화의 출발점
-- [[ralph-wiggum-method]] · [[dynamic-workflows]] — 오케스트레이션 두 갈래
+- [[self-harness]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] — 자기개선·오케스트레이션 갈래
