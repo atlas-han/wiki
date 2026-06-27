@@ -304,3 +304,12 @@ updated: 2026-06-27
 - 원자료: 사용자가 제공한 이미지 텍스트 정리본(Discord paste).
 - 갱신: [[02.wiki/til/index|til/index]], [[02.wiki/index|index]], log.
 
+
+## [2026-06-27] ingest | Refactoring.Guru 한국어 디자인 패턴
+- 요청 링크: https://refactoring.guru/ko/design-patterns
+- 원문 캡처: `01.raw/articles/2026-06-27_refactoring-guru-ko-design-patterns.md` (저작권 보호 본문 전문 대신 URL inventory + 각 패턴 의도 요약 보존)
+- 신규 source: [[refactoring-guru-ko-design-patterns]]
+- 신규 engineering hub: [[design-patterns]]
+- 신규 engineering patterns (22): [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] · [[design-pattern-adapter]] · [[design-pattern-bridge]] · [[design-pattern-composite]] · [[design-pattern-decorator]] · [[design-pattern-facade]] · [[design-pattern-flyweight]] · [[design-pattern-proxy]] · [[design-pattern-chain-of-responsibility]] · [[design-pattern-command]] · [[design-pattern-iterator]] · [[design-pattern-mediator]] · [[design-pattern-memento]] · [[design-pattern-observer]] · [[design-pattern-state]] · [[design-pattern-strategy]] · [[design-pattern-template-method]] · [[design-pattern-visitor]]
+- 갱신: [[02.wiki/index|index]], [[02.wiki/engineering/index|engineering/index]], [[overview]], log
+- 범위 메모: Refactoring.Guru 카탈로그가 다루는 GoF 패턴 22개 기준(Interpreter 제외). 각 페이지는 원문 구조(의도/문제/해결책/구조/장단점/관계)를 위키용 요약으로 재작성하고, 전문 복제는 피함.

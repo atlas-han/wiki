@@ -120,6 +120,10 @@ updated: 2026-06-27
 ### Patterns
 - [[pets-vs-cattle]] — 인프라 일반 원칙, [[brain-hands-decoupling]]의 사상적 출처
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter) + LLM 분업의 코드 분석 패턴
+- [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브.
+- [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] — 생성 패턴.
+- [[design-pattern-adapter]] · [[design-pattern-bridge]] · [[design-pattern-composite]] · [[design-pattern-decorator]] · [[design-pattern-facade]] · [[design-pattern-flyweight]] · [[design-pattern-proxy]] — 구조 패턴.
+- [[design-pattern-chain-of-responsibility]] · [[design-pattern-command]] · [[design-pattern-iterator]] · [[design-pattern-mediator]] · [[design-pattern-memento]] · [[design-pattern-observer]] · [[design-pattern-state]] · [[design-pattern-strategy]] · [[design-pattern-template-method]] · [[design-pattern-visitor]] — 행동 패턴.
 - [[actix-web-extractors]] — actix-web `FromRequest` 타입 안전 요청 추출 (Path/Query/Json/Form/Data)
 - [[actix-web-handlers-responders]] — actix-web 핸들러 시그니처·`Responder` trait·스트리밍 응답
 - [[actix-web-application-state]] — actix-web `web::Data` 공유 상태 + 워커 클로저 함정
@@ -177,13 +181,14 @@ updated: 2026-06-27
 - [[kyobo-martian-special-edition]] — 교보문고 《마션(스페셜 에디션)》 상품 정보와 공개 소개 요약 (2021)
 - [[self-harness-paper]] — "Self-Harness: Harnesses That Improve Themselves" (Shanghai AI Lab, arXiv 2606.09498, 2026)
 - [[papanuvo-self-harness]] — Self-Harness 한국어 해설 (파파누보, tistory, 2026-06-12)
+- [[refactoring-guru-ko-design-patterns]] — Refactoring.Guru 한국어 Design Patterns 카탈로그(GoF 22개 패턴, 2026-06-27 ingest)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 103 (index, log, overview + 37 entities + 26 concepts + 14 engineering patterns + 4 engineering systems + 14 sources + 1 reading book + 1 TIL + reading/index + engineering/index + til/index)
+- 총 페이지 수: 127 (log 포함; Refactoring.Guru 디자인 패턴 ingest로 source 1 + engineering pattern 23 추가)
 - 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
-- 마지막 ingest: 2026-06-14 ([[self-harness-paper|Self-Harness 논문]] + [[papanuvo-self-harness|한국어 해설]] — concept [[self-harness]] 허브 + entity 6종([[shanghai-ai-lab]]·[[minimax-m2-5]]·[[qwen3-5]]·[[glm-5]]·[[terminal-bench]]·[[deepagents]]) + 기존 harness 클러스터 3종 갱신)
+- 마지막 ingest: 2026-06-27 ([[refactoring-guru-ko-design-patterns|Refactoring.Guru 디자인 패턴]] — [[design-patterns]] 허브 + GoF 패턴 22개 engineering pages)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
 - 마지막 갱신: 2026-06-27

@@ -3,7 +3,7 @@ title: Engineering
 type: overview
 tags: [meta, engineering]
 created: 2026-05-25
-updated: 2026-06-06
+updated: 2026-06-27
 ---
 
 # Engineering
@@ -29,6 +29,12 @@ updated: 2026-06-06
 
 - [[pets-vs-cattle]] — 인프라 운영의 mental model. LLM-에이전트 인프라([[brain-hands-decoupling]])에 적용된 사례 있음.
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter)와 LLM을 각자 잘하는 일로 분업하는 코드 분석 패턴.
+- [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브(생성·구조·행동).
+
+**GoF 디자인 패턴 (Refactoring.Guru KO)**
+- [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] — 생성 패턴.
+- [[design-pattern-adapter]] · [[design-pattern-bridge]] · [[design-pattern-composite]] · [[design-pattern-decorator]] · [[design-pattern-facade]] · [[design-pattern-flyweight]] · [[design-pattern-proxy]] — 구조 패턴.
+- [[design-pattern-chain-of-responsibility]] · [[design-pattern-command]] · [[design-pattern-iterator]] · [[design-pattern-mediator]] · [[design-pattern-memento]] · [[design-pattern-observer]] · [[design-pattern-state]] · [[design-pattern-strategy]] · [[design-pattern-template-method]] · [[design-pattern-visitor]] — 행동 패턴.
 
 **[[actix-web]] (Rust 웹 프레임워크)**
 - [[actix-web-extractors]] — `FromRequest` 타입 안전 요청 추출 (Path/Query/Json/Form/Data).

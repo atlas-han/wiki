@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-06-14
+updated: 2026-06-27
 sources: []
 ---
 
@@ -56,6 +56,7 @@ sources: []
 
 새 소스마다 한 줄씩 누적:
 
+- *2026-06-27*: [[refactoring-guru-ko-design-patterns|Refactoring.Guru 한국어 디자인 패턴]] ingest — 보조 도메인(소프트웨어 엔지니어링)에 [[design-patterns]] 허브와 GoF 패턴 22개 개별 페이지 추가. 생성/구조/행동 분류를 통해 객체 생성 책임, 객체 조합, 협력 흐름의 변경 축을 정리.
 - *2026-05-25*: 위키 초기화 + Karpathy의 LLM Wiki gist를 첫 소스로 ingest, 패턴을 self-document.
 - *2026-05-25*: Anthropic Project Glasswing 첫 업데이트 ingest. AI 취약점 발견의 산업 규모 실증, frontier 모델 capability 비교 baseline 형성.
 - *2026-05-25*: Anthropic Engineering Blog 3편 ingest (auto mode / harness design / managed agents). [[agent-harness-design]] 허브 형성, Sonnet 4.5 → Opus 4.6 진화에 따른 harness 컴포넌트 stale화의 구체적 사례 축적.
