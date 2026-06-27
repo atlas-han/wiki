@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-13
+updated: 2026-06-27
 ---
 
 # Index
@@ -150,7 +150,7 @@ updated: 2026-06-13
 
 → 전체 목록은 [[02.wiki/til/index]] 참조
 
-*(아직 없음)*
+- [[2026-06-27-conversation-positioning]] — 대화에서 주도권을 잃지 않는 표현과 반응형 표현의 차이
 
 ---
 
@@ -173,7 +173,8 @@ updated: 2026-06-13
 
 ## 통계
 
-- 총 페이지 수: 93 (index, log, overview + 31 entities + 25 concepts + 14 engineering patterns + 4 engineering systems + 12 sources + 1 reading book + reading/index + engineering/index + til/index)
+- 총 페이지 수: 94 (index, log, overview + 31 entities + 25 concepts + 14 engineering patterns + 4 engineering systems + 12 sources + 1 reading book + 1 TIL + reading/index + engineering/index + til/index)
+- 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
 - 마지막 ingest: 2026-06-13 ([[kyobo-martian-special-edition|교보문고 《마션(스페셜 에디션)》]] — 공개 상품 메타데이터 기반 source + [[martian-special-edition]] to-read 독서 노트)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
-- 마지막 갱신: 2026-06-13
+- 마지막 갱신: 2026-06-27

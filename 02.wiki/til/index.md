@@ -3,7 +3,7 @@ title: TIL (Today I Learned)
 type: overview
 tags: [meta, til]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-27
 ---
 
 # TIL — Today I Learned
@@ -18,7 +18,7 @@ updated: 2026-05-25
 
 ## 2026
 
-*(아직 없음)*
+- [[2026-06-27-conversation-positioning]] — 대화에서 주도권을 잃지 않는 표현과 반응형 표현의 차이 (2026-06-27)
 
 ---
 

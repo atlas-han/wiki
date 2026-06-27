@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-13
+updated: 2026-06-27
 ---
 
 # Log
@@ -277,4 +277,9 @@ updated: 2026-06-13
 - 신규 reading: [[martian-special-edition]] — status `to-read`
 - 갱신: [[02.wiki/index|index]], [[02.wiki/reading/index|reading/index]], log
 - 범위 메모: LLM/SE 핵심 도메인 밖의 SF 소설이므로 별도 entity/concept 페이지는 만들지 않고 독서 관리와 source 요약만 추가. 실제 독서 후 독서 노트 확장 예정.
+
+## [2026-06-27] til | 안 만만한 사람 vs 만만한 사람
+- 신규 TIL: [[2026-06-27-conversation-positioning]] — 대화에서 주도권을 잃지 않는 표현과 반응형 표현의 차이.
+- 원자료: 사용자가 제공한 이미지 텍스트 정리본(Discord paste).
+- 갱신: [[02.wiki/til/index|til/index]], [[02.wiki/index|index]], log.
 
