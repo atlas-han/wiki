@@ -121,6 +121,10 @@ updated: 2026-06-27
 - [[pets-vs-cattle]] — 인프라 일반 원칙, [[brain-hands-decoupling]]의 사상적 출처
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter) + LLM 분업의 코드 분석 패턴
 - [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브.
+- [[refactoring]] — behavior를 유지하면서 내부 구조를 개선하는 작은 변경들의 연속.
+- [[technical-debt]] — 빠른 delivery를 위해 미룬 구조 개선이 이후 변경 비용의 이자로 돌아오는 상태.
+- [[code-smells]] — 리팩터링 후보를 찾는 진단 vocabulary(23개 smell).
+- [[refactoring-techniques]] — behavior-preserving 구조 변경 technique family 허브(6개 family, 66+ technique).
 - [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] — 생성 패턴.
 - [[design-pattern-adapter]] · [[design-pattern-bridge]] · [[design-pattern-composite]] · [[design-pattern-decorator]] · [[design-pattern-facade]] · [[design-pattern-flyweight]] · [[design-pattern-proxy]] — 구조 패턴.
 - [[design-pattern-chain-of-responsibility]] · [[design-pattern-command]] · [[design-pattern-iterator]] · [[design-pattern-mediator]] · [[design-pattern-memento]] · [[design-pattern-observer]] · [[design-pattern-state]] · [[design-pattern-strategy]] · [[design-pattern-template-method]] · [[design-pattern-visitor]] — 행동 패턴.
@@ -182,13 +186,14 @@ updated: 2026-06-27
 - [[self-harness-paper]] — "Self-Harness: Harnesses That Improve Themselves" (Shanghai AI Lab, arXiv 2606.09498, 2026)
 - [[papanuvo-self-harness]] — Self-Harness 한국어 해설 (파파누보, tistory, 2026-06-12)
 - [[refactoring-guru-ko-design-patterns]] — Refactoring.Guru 한국어 Design Patterns 카탈로그(GoF 22개 패턴, 2026-06-27 ingest)
+- [[refactoring-guru-refactoring]] — Refactoring.Guru Refactoring 카탈로그(code smells 23개 + technique families 6개, 2026-06-27 ingest)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 127 (log 포함; Refactoring.Guru 디자인 패턴 ingest로 source 1 + engineering pattern 23 추가)
+- 총 페이지 수: 161 (log 포함; Refactoring.Guru refactoring ingest로 source 1 + engineering pages 33 추가)
 - 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
-- 마지막 ingest: 2026-06-27 ([[refactoring-guru-ko-design-patterns|Refactoring.Guru 디자인 패턴]] — [[design-patterns]] 허브 + GoF 패턴 22개 engineering pages)
+- 마지막 ingest: 2026-06-27 ([[refactoring-guru-refactoring|Refactoring.Guru Refactoring]] — [[refactoring]] 허브 + [[code-smells]] 23개 + [[refactoring-techniques]] family 6개)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
 - 마지막 갱신: 2026-06-27

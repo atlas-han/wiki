@@ -313,3 +313,13 @@ updated: 2026-06-27
 - 신규 engineering patterns (22): [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] · [[design-pattern-adapter]] · [[design-pattern-bridge]] · [[design-pattern-composite]] · [[design-pattern-decorator]] · [[design-pattern-facade]] · [[design-pattern-flyweight]] · [[design-pattern-proxy]] · [[design-pattern-chain-of-responsibility]] · [[design-pattern-command]] · [[design-pattern-iterator]] · [[design-pattern-mediator]] · [[design-pattern-memento]] · [[design-pattern-observer]] · [[design-pattern-state]] · [[design-pattern-strategy]] · [[design-pattern-template-method]] · [[design-pattern-visitor]]
 - 갱신: [[02.wiki/index|index]], [[02.wiki/engineering/index|engineering/index]], [[overview]], log
 - 범위 메모: Refactoring.Guru 카탈로그가 다루는 GoF 패턴 22개 기준(Interpreter 제외). 각 페이지는 원문 구조(의도/문제/해결책/구조/장단점/관계)를 위키용 요약으로 재작성하고, 전문 복제는 피함.
+
+## [2026-06-27] ingest | Refactoring.Guru Refactoring
+- 요청 링크: https://refactoring.guru/refactoring
+- 원문 inventory: `01.raw/docs/refactoring-guru-refactoring/00-inventory.md` (저작권 보호 본문 전문 대신 URL inventory + 짧은 의도 요약 보존, sha256 포함)
+- 신규 source: [[refactoring-guru-refactoring]]
+- 신규 engineering hubs: [[refactoring]] · [[technical-debt]] · [[code-smells]] · [[refactoring-techniques]]
+- 신규 code smell pages (23): [[long-method]] · [[large-class]] · [[primitive-obsession]] · [[long-parameter-list]] · [[data-clumps]] · [[alternative-classes-with-different-interfaces]] · [[refused-bequest]] · [[switch-statements]] · [[temporary-field]] · [[divergent-change]] · [[parallel-inheritance-hierarchies]] · [[shotgun-surgery]] · [[comments]] · [[duplicate-code]] · [[data-class]] · [[dead-code]] · [[lazy-class]] · [[speculative-generality]] · [[feature-envy]] · [[inappropriate-intimacy]] · [[incomplete-library-class]] · [[message-chains]] · [[middle-man]]
+- 신규 technique family pages (6): [[refactoring-techniques-composing-methods]] · [[refactoring-techniques-moving-features-between-objects]] · [[refactoring-techniques-organizing-data]] · [[refactoring-techniques-simplifying-conditional-expressions]] · [[refactoring-techniques-simplifying-method-calls]] · [[refactoring-techniques-dealing-with-generalization]]
+- 갱신: [[02.wiki/index|index]], [[02.wiki/engineering/index|engineering/index]], [[overview]], log
+- 범위 메모: individual refactoring technique 70여 개는 저작권 본문을 복제하지 않고 family page 표의 URL inventory + 짧은 요약으로 보존. 향후 자주 쓰는 technique만 개별 페이지 승격.

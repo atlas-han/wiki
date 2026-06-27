@@ -56,6 +56,7 @@ sources: []
 
 새 소스마다 한 줄씩 누적:
 
+- *2026-06-27*: [[refactoring-guru-refactoring|Refactoring.Guru Refactoring]] ingest — 보조 도메인에 [[refactoring]] 허브를 추가하고 [[technical-debt]]·[[code-smells]]·[[refactoring-techniques]]를 연결. Code smell 23개를 개별 진단 페이지로, refactoring technique 6개 family를 카탈로그 페이지로 정리해 설계 리뷰 vocabulary를 확장.
 - *2026-06-27*: [[refactoring-guru-ko-design-patterns|Refactoring.Guru 한국어 디자인 패턴]] ingest — 보조 도메인(소프트웨어 엔지니어링)에 [[design-patterns]] 허브와 GoF 패턴 22개 개별 페이지 추가. 생성/구조/행동 분류를 통해 객체 생성 책임, 객체 조합, 협력 흐름의 변경 축을 정리.
 - *2026-05-25*: 위키 초기화 + Karpathy의 LLM Wiki gist를 첫 소스로 ingest, 패턴을 self-document.
 - *2026-05-25*: Anthropic Project Glasswing 첫 업데이트 ingest. AI 취약점 발견의 산업 규모 실증, frontier 모델 capability 비교 baseline 형성.
