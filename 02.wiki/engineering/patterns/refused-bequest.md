@@ -12,26 +12,27 @@ sources: [refactoring-guru-refactoring]
 
 # Refused Bequest
 
-Refused Bequest는 [[code-smells]] 중 하나로, 하위 클래스가 상위 클래스의 일부 상속만 실제로 필요로 하는 어긋난 상속 구조.
+서브클래스가 부모로부터 물려받은 메서드·필드 중 일부만 실제로 쓰고 나머지는 거부(미사용하거나 예외로 재정의)하는 어긋난 상속 구조다. [[code-smells]] 중 **객체지향 남용** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 서브클래스가 상속받은 메서드와 속성의 일부만 사용한다.
+- 불필요하게 물려받은 멤버가 그냥 방치되거나, 재정의되어 예외를 던지도록 막혀 있다.
+- 상속 관계가 "is-a"로 자연스럽게 읽히지 않는다(예: Dog가 Chair를 상속).
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+공통 동작이 실제로 닮아서가 아니라, 단지 상위 클래스의 코드를 재사용하려는 목적만으로 상속을 만들었기 때문이다. 실제로는 두 클래스가 서로 다른 것이다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Replace Inheritance with Delegation` — 상속이 부적절하면 위임으로 바꿔, 필요한 부분만 골라 호출한다.
+- `Extract Superclass` (계층 재구성) — 상속이 타당하다면, 거부되는 멤버를 걷어내고 두 클래스가 진짜 공유하는 부분만 새 상위 클래스로 추출해 양쪽이 그것을 상속하게 한다.
 
-- 후보 technique: `Push Down Method`, `Push Down Field`, `Replace Inheritance with Delegation`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 상속 관계가 의미상 일관되어 코드가 자연스럽게 읽힌다.
+- 거부되던 멤버가 사라져 클래스가 불필요한 짐을 지지 않는다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+거부되는 양이 적고 상속이 주는 이점이 더 클 때는 굳이 바꾸지 않아도 된다. (원문에는 별도 절로 명시되어 있지 않다.)
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/refused-bequest
+- [[refactoring-guru-refactoring]] — Refused Bequest 원문: https://refactoring.guru/smells/refused-bequest
+- [[code-smells]]

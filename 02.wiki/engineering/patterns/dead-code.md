@@ -12,26 +12,30 @@ sources: [refactoring-guru-refactoring]
 
 # Dead Code
 
-Dead Code는 [[code-smells]] 중 하나로, 더 이상 사용되지 않는 변수·필드·메서드·클래스가 남아 있는 상태.
+변수·매개변수·필드·메서드·클래스가 더 이상 사용되지 않는 상태(대개 더 이상 쓸모없어졌기 때문). [[code-smells]] 중 **Dispensables(불필요한 것)** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 어디서도 호출·참조되지 않는 변수·필드·메서드·클래스가 남아 있다.
+- 절대 참이 될 수 없는 조건 분기 등 도달 불가능한(unreachable) 코드가 있다.
+- 코드를 읽을 때 실제로 쓰이는지 일일이 확인해야 한다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+- 요구사항이 바뀌거나 버그를 고친 뒤 더 이상 필요 없어진 코드를 정리하지 않고 남겨둔다.
+- 복잡한 조건문이 누적되면서 도달할 수 없는 분기가 생긴다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+좋은 IDE를 활용하면 사용되지 않는 코드를 빠르게 찾을 수 있다.
+- 사용되지 않는 코드와 파일은 그냥 삭제한다.
+- `Inline Class` / `Collapse Hierarchy` — 거의 쓰이지 않는 클래스·서브클래스는 인라인하거나 계층을 합친다.
+- `Remove Parameter` — 더 이상 쓰이지 않는 매개변수를 제거한다.
 
-- 후보 technique: `Remove dead declarations after tests prove no use`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 코드 크기가 줄어든다.
+- 유지보수 시 살펴야 할 코드가 줄어 복잡도가 낮아진다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+라이브러리·프레임워크처럼 외부 사용자가 호출할 수 있어 내부에서는 직접 쓰이지 않는 공개 API는 함부로 지우면 안 된다. 단위 테스트에서만 쓰이는 요소도 삭제 전에 확인해야 한다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/dead-code
+- [[refactoring-guru-refactoring]] — Dead Code 원문: https://refactoring.guru/smells/dead-code
+- [[code-smells]]

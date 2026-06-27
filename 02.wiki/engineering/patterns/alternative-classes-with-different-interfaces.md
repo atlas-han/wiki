@@ -10,28 +10,30 @@ first-seen: refactoring-guru-refactoring
 sources: [refactoring-guru-refactoring]
 ---
 
-# Alternative Classes With Different Interfaces
+# Alternative Classes with Different Interfaces
 
-Alternative Classes With Different Interfaces는 [[code-smells]] 중 하나로, 같은 역할의 클래스들이 서로 다른 메서드 이름·인터페이스를 노출하는 상태.
+같은 일을 하는 두 클래스가 서로 다른 메서드 이름·인터페이스를 노출하는 상태다. [[code-smells]] 중 **객체지향 남용** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 두 클래스가 기능적으로 같은 역할을 하지만 메서드 이름과 시그니처가 서로 다르다.
+- 서로 교체해 쓸 수 있을 것 같은데, 인터페이스가 어긋나 직접 바꿔 끼울 수 없다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+한 클래스를 만든 사람이 이미 동등한 기능의 클래스가 존재한다는 사실을 몰랐을 가능성이 크다. 그 결과 무의식적으로 중복 구현([[duplicate-code]])이 생긴다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Rename Methods` — 두 클래스의 메서드 이름을 같은 규약으로 통일한다.
+- `Move Method` / `Add Parameter` / `Parameterize Method` — 메서드 시그니처와 동작을 서로 맞춰 인터페이스를 일치시킨다.
+- `Extract Superclass` — 일부 기능이 겹치면 공통 부분을 상위 클래스로 추출한다.
+- 인터페이스가 동일해진 뒤에는 한쪽 클래스가 불필요해지므로 중복 클래스를 제거한다.
 
-- 후보 technique: `Rename Method`, `Move Method`, `Extract Superclass`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 불필요한 중복 코드가 사라져 코드가 간결해진다.
+- 통일된 인터페이스로 두 구현을 서로 바꿔 쓸 수 있어 가독성과 재사용성이 높아진다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+서로 다른 외부 라이브러리의 클래스처럼 통합이 사실상 불가능한 경우에는 적용하지 않는다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/alternative-classes-with-different-interfaces
+- [[refactoring-guru-refactoring]] — Alternative Classes with Different Interfaces 원문: https://refactoring.guru/smells/alternative-classes-with-different-interfaces
+- [[code-smells]]

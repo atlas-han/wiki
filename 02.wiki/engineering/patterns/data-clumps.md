@@ -12,26 +12,29 @@ sources: [refactoring-guru-refactoring]
 
 # Data Clumps
 
-Data Clumps는 [[code-smells]] 중 하나로, 여러 위치에서 항상 함께 움직이는 변수 묶음이 반복되는 상태.
+여러 위치에서 늘 함께 몰려다니는 변수 묶음(예: 데이터베이스 연결 파라미터)이 반복적으로 나타나는 상태다. [[code-smells]] 중 **Bloaters(비대화)** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 서로 다른 코드 곳곳에서 동일한 변수 그룹이 반복해 등장한다(예: 데이터베이스 연결 파라미터).
+- 여러 메서드의 파라미터 목록에 같은 값들이 같은 순서로 거듭 나타난다.
+- 판별법: 값 하나를 빼봤을 때 나머지 값들이 의미를 잃는다면, 그 묶음은 객체로 합쳐야 한다는 신호다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+이런 데이터 묶음은 보통 빈약한 프로그램 구조 설계나 코드 복사-붙여넣기로 생긴다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Extract Class` — 반복되는 필드들이 한 클래스 안에 있다면 그것들을 자체 클래스로 옮긴다.
+- `Introduce Parameter Object` — 같은 데이터 묶음이 메서드 파라미터로 전달되면 하나의 객체로 묶는다.
+- `Preserve Whole Object` — 일부 데이터가 다른 메서드로 넘어간다면 개별 필드 대신 전체 객체를 넘긴다.
+- 이 필드들을 쓰는 코드를 살펴 [[data-class]]로 옮길 가치가 있는지 판단한다.
 
-- 후보 technique: `Extract Class`, `Introduce Parameter Object`, `Preserve Whole Object`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 코드 전역에 흩어져 있던 특정 데이터에 대한 작업이 한곳으로 모여 이해도와 조직화가 좋아진다.
+- 전체 코드 크기가 줄어든다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+파라미터로 개별 원시 값 대신 객체 전체를 넘기면 두 클래스 사이에 불필요한 의존성이 생길 수 있다. 그런 경우라면 그대로 두는 편이 낫다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/data-clumps
+- [[refactoring-guru-refactoring]] — Data Clumps 원문: https://refactoring.guru/smells/data-clumps
+- [[code-smells]]

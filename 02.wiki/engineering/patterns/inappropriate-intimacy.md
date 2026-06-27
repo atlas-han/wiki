@@ -12,26 +12,30 @@ sources: [refactoring-guru-refactoring]
 
 # Inappropriate Intimacy
 
-Inappropriate Intimacy는 [[code-smells]] 중 하나로, 한 클래스가 다른 클래스의 내부 세부사항에 과하게 접근·의존하는 상태.
+한 클래스가 다른 클래스의 내부 필드와 메서드에 과도하게 접근·의존하는 상태. [[code-smells]] 중 **Couplers(결합도 관련)** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 한 클래스가 다른 클래스의 private에 가까운 내부 세부사항을 직접 들여다보고 사용한다.
+- 두 클래스가 서로의 내부를 너무 잘 알아 상호 의존(양방향 결합)이 생긴다.
+- 한쪽을 바꾸면 다른 쪽도 함께 고쳐야 해 유지보수와 재사용이 어렵다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+- 좋은 클래스 설계는 서로에 대한 지식을 최소화해야 하는데, 두 클래스가 지나치게 많은 시간을 "함께 보내며" 서로의 내부에 손을 뻗을 때 발생한다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Move Method` / `Move Field` — 한 클래스가 정말 필요로 하는 부분을 그 클래스 쪽으로 옮겨 결합을 끊는다.
+- `Extract Class` — 두 클래스에 공통으로 얽힌 부분을 별도 클래스로 분리한다.
+- `Hide Delegate` — 직접 접근 대신 위임 메서드를 두어 관계를 명확하게 한다.
+- `Change Bidirectional Association to Unidirectional` — 상호 의존이 있으면 한 방향으로 줄인다.
+- `Replace Delegation with Inheritance` — 부모-자식처럼 밀접하고 위임이 과한 관계라면 상속으로 전환을 고려한다.
 
-- 후보 technique: `Move Method`, `Move Field`, `Hide Delegate`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 코드 구조가 개선되고 결합도가 낮아진다.
+- 유지보수와 재사용이 쉬워진다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+일부 결합은 불가피하며 받아들일 수 있다. 긴밀한 협력이 도메인상 본질적이거나 분리 비용이 이득보다 큰 경우, [[message-chains]]·[[middle-man]]처럼 과교정으로 다른 냄새를 만들지 않도록 균형을 본다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/inappropriate-intimacy
+- [[refactoring-guru-refactoring]] — Inappropriate Intimacy 원문: https://refactoring.guru/smells/inappropriate-intimacy
+- [[code-smells]]

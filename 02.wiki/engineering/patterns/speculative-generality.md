@@ -12,26 +12,30 @@ sources: [refactoring-guru-refactoring]
 
 # Speculative Generality
 
-Speculative Generality는 [[code-smells]] 중 하나로, 미래에 필요할 것이라는 추측만으로 만들어진 추상화·파라미터·클래스.
+"언젠가 필요할지 모른다(just in case)"는 추측만으로 만들어졌지만 실제로는 쓰이지 않는 클래스·메서드·필드·매개변수. [[code-smells]] 중 **Dispensables(불필요한 것)** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 사용되지 않는 클래스·메서드·필드·매개변수가 존재한다.
+- 실제 요구가 없는데도 "확장성"을 위해 미리 만든 추상 클래스나 위임 계층이 있다.
+- 실제로 한 가지 경우만 처리하는데 일반화된 파라미터를 받는다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+실제로 구현되지 않은 미래 기능에 대비해 "혹시 모르니까(just in case)" 코드를 미리 일반화해 두면, 그 추상화가 오히려 이해와 유지보수를 어렵게 만든다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Collapse Hierarchy` — 쓰이지 않는 추상 클래스를 상위/하위 클래스와 합친다.
+- `Inline Class` — 불필요한 위임만 하는 클래스를 인라인한다.
+- `Inline Method` — 쓰이지 않는 메서드를 호출부로 합쳐 제거한다.
+- `Remove Parameter` — 사용되지 않는 매개변수를 제거한다.
+- 사용되지 않는 필드는 직접 삭제한다.
 
-- 후보 technique: `Collapse Hierarchy`, `Inline Class`, `Remove Parameter`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 코드가 더 간결해진다.
+- 유지보수가 쉬워진다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+프레임워크를 개발할 때는, 프레임워크 자체에서는 쓰이지 않더라도 사용자에게 필요한 기능이라면 일반화된 코드를 둘 수 있다. 또한 단위 테스트에서 쓰이는 요소는 삭제 전에 확인해야 한다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/speculative-generality
+- [[refactoring-guru-refactoring]] — Speculative Generality 원문: https://refactoring.guru/smells/speculative-generality
+- [[code-smells]]

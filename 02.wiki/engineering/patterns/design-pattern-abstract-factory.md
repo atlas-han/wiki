@@ -12,31 +12,37 @@ sources: [refactoring-guru-ko-design-patterns]
 
 # 추상 팩토리 (Abstract Factory)
 
-관련 객체들의 구상 클래스에 의존하지 않고, 서로 호환되는 제품군을 생성한다. [[design-patterns]]의 생성 패턴에 속하며, 원문 기준 URL은 `https://refactoring.guru/ko/design-patterns/abstract-factory`이다.
+관련 객체들의 구상 클래스를 지정하지 않고도 서로 호환되는 객체들의 모음(제품군)을 생성하게 해 주는 패턴이다. [[design-patterns]]의 생성 패턴에 속한다.
 
-## 문제 신호
+## 문제
+서로 어울려야 하는 객체들이 여러 변형(variant)으로 존재할 때, 잘못 조합하면 일관성이 깨진다. 예컨대 스타일이 제각각인 가구가 섞여 배송되면 고객이 불만족한다. 스타일이 맞지 않는 제품 조합을 막으면서도, 새 제품이나 새 스타일을 추가할 때 기존 코드 변경을 최소화해야 한다.
 
-UI 위젯, DB 드라이버, 플랫폼별 객체처럼 “함께 써야 하는” 객체 집합이 여러 variant로 존재할 때.
+## 해결책
+각 제품 유형마다 추상 인터페이스(예: `Chair`, `Sofa`, `CoffeeTable`)를 선언하고, 변형(스타일)별로 이 제품들을 함께 만드는 구상 팩토리 클래스를 둔다. AbstractFactory가 제품별 생성 메서드를 선언하고 ConcreteFactory가 한 제품군 전체를 생성한다. 클라이언트는 추상 팩토리·추상 제품 인터페이스만 다루므로, 변형을 바꿀 때는 팩토리 선택 로직만 수정하면 된다.
 
-## 구조
+## 실세계 비유
+가구 판매장을 위한 프로그램을 떠올려 보자. `Chair`(의자), `Sofa`(소파), `CoffeeTable`(커피 테이블) 같은 제품들이 각각 Modern, Victorian, ArtDeco 같은 스타일로 제공된다. 고객은 한 스타일로 통일된 가구 세트를 받기를 원하므로, 같은 스타일의 제품들을 묶어서 생산하는 팩토리가 필요하다.
 
-AbstractFactory가 제품별 생성 메서드를 제공하고 ConcreteFactory가 한 제품군 전체를 만든다. 클라이언트는 AbstractProduct 인터페이스만 본다.
-
-## 적용 메모
-
-- 클라이언트가 구상 타입이나 구체 협력자를 직접 알아야 하는 지점을 줄이는 데 초점을 둔다.
-- 패턴명보다 중요한 것은 변경 축이다. 변경 축이 없거나 단순하면 일반 함수/클래스/언어 기능으로 충분할 수 있다.
-- 테스트에서는 패턴이 만든 seam을 활용해 구상 구현 대신 fake/mock을 주입할 수 있는지 확인한다.
+## 적용 가능성
+- 코드가 서로 관련된 여러 제품군(family)과 작동해야 하지만, 그 제품들의 구상 클래스에 의존하고 싶지 않을 때
+- 향후 새로운 제품군 추가를 통한 확장을 허용하고 싶을 때
+- 한 클래스에 여러 factory method가 모여 있어 그 클래스의 주된 책임이 흐려질 때(생성 책임을 분리하고 싶을 때)
 
 ## 장단점
+**장점**
+- 한 팩토리에서 만들어지는 제품들이 서로 호환됨을 보장한다.
+- 구상 제품과 클라이언트 코드 사이의 결합을 피한다.
+- 생성 코드를 한곳으로 모아 단일 책임 원칙(SRP)을 따른다.
+- 기존 코드를 깨지 않고 새 변형을 추가할 수 있어 개방/폐쇄 원칙(OCP)을 따른다.
 
-제품군 일관성을 강제하고 구상 클래스 의존을 제거한다. 새 제품군 추가는 쉽지만, 제품 종류를 추가하면 모든 factory 인터페이스를 바꿔야 한다.
+**단점**
+- 새로운 인터페이스와 클래스가 많이 늘어나 코드가 복잡해질 수 있다.
 
-## 관련 패턴
-
-[[design-pattern-factory-method]]를 여러 개 모아 구현하는 경우가 많고, factory 자체는 [[design-pattern-singleton]]으로 관리되기도 한다.
+## 다른 패턴과의 관계
+- 흔히 [[design-pattern-factory-method]]로 시작했다가 복잡도가 커지면서 추상 팩토리로 발전한다. 추상 팩토리는 종종 factory method의 집합으로 구현되거나 [[design-pattern-prototype]]으로 구현되기도 한다.
+- [[design-pattern-builder]]가 복잡한 객체를 단계별로 만드는 데 집중한다면, 추상 팩토리는 제품군을 한 번에 만드는 데 집중한다.
+- [[design-pattern-facade]] 대신 쓰여 서브시스템 객체 생성을 감출 수 있고, [[design-pattern-bridge]]와 함께 쓰이기도 하며, 팩토리 자체를 [[design-pattern-singleton]]으로 관리하기도 한다.
 
 ## References
-
 - [[refactoring-guru-ko-design-patterns]] — 추상 팩토리 원문: https://refactoring.guru/ko/design-patterns/abstract-factory
 - [[design-patterns]]

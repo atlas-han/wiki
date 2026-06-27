@@ -12,26 +12,32 @@ sources: [refactoring-guru-refactoring]
 
 # Switch Statements
 
-Switch Statements는 [[code-smells]] 중 하나로, 타입·상태별 분기가 여러 곳에 반복되어 새 변형 추가가 여러 수정으로 번지는 상태.
+복잡한 `switch` 문이나 `if` 연쇄가 타입·상태별로 분기하며 프로그램 곳곳에 흩어져 있는 상태다. [[code-smells]] 중 **객체지향 남용** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 복잡한 `switch` 연산자 또는 긴 `if`/`else if` 연쇄가 존재한다.
+- 같은 분기 로직(같은 타입 코드에 대한 `case` 묶음)이 프로그램 여러 위치에 중복되어 나타난다.
+- 새로운 조건(타입·변형)을 추가할 때 흩어진 모든 `switch`를 찾아 함께 고쳐야 한다 ([[shotgun-surgery]]로 번지기 쉽다).
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+객체지향 코드에서는 `switch`/`case`가 상대적으로 드물어야 한다. 다형성으로 풀 수 있는 분기를 절차적으로 작성하면 동일한 조건 분기가 곳곳에 복제된다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Extract Method` + `Move Method` — `switch` 블록을 떼어내 책임이 맞는 클래스로 옮긴다.
+- `Replace Type Code with Subclasses` — 타입 코드가 객체 행동을 가른다면 서브클래스로 치환한다.
+- `Replace Type Code with State/Strategy` — 타입 코드가 런타임에 바뀌거나 다른 이유로 서브클래싱이 어렵다면 상태/전략 객체로 치환한다. [[design-pattern-state]]·[[design-pattern-strategy]]와 연결된다.
+- `Replace Conditional with Polymorphism` — 위로 클래스 계층이 갖춰지면 조건 분기를 다형 메서드 호출로 대체해 `switch`를 제거한다.
+- `Replace Parameter with Explicit Methods` — 매개변수 값으로 동작이 갈리면 명시적 메서드들로 분리한다.
+- `Introduce Null Object` — `null` 여부를 검사하는 분기를 널 객체로 대체한다.
 
-- 후보 technique: `Replace Conditional with Polymorphism`, `Replace Type Code with State/Strategy`, `Extract Method`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 분기가 한 곳(다형 계층)으로 모여 새 변형 추가 시 클래스 하나만 더하면 된다.
+- 조건 검사 중복이 사라져 코드가 짧고 의도가 드러난다.
+- 개방-폐쇄 원칙(OCP)에 가까워진다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+`switch`가 단순한 작업만 수행하거나, `Factory Method`·`Abstract Factory`처럼 어떤 클래스를 생성할지 고르는 자리에서 쓰일 때는 그대로 두는 편이 낫다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/switch-statements
+- [[refactoring-guru-refactoring]] — Switch Statements 원문: https://refactoring.guru/smells/switch-statements
+- [[code-smells]]

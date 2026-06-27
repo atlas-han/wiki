@@ -18,14 +18,14 @@ sources: [refactoring-guru-refactoring]
 
 | Technique | URL | 요약 |
 |---|---|---|
-| `Decompose Conditional` | https://refactoring.guru/decompose-conditional | Problem: You have a complex conditional (if-then/else or switch). Solution: Decompose the complicated parts of the conditional into separate methods: the condition, then and else. |
-| `Consolidate Conditional Expression` | https://refactoring.guru/consolidate-conditional-expression | Problem: You have multiple conditionals that lead to the same result or action. Solution: Consolidate all these conditionals in a single expression. |
-| `Consolidate Duplicate Conditional Fragments` | https://refactoring.guru/consolidate-duplicate-conditional-fragments | Problem: Identical code can be found in all branches of a conditional. Solution: Move the code outside of the conditional. |
-| `Remove Control Flag` | https://refactoring.guru/remove-control-flag | Problem: You have a boolean variable that acts as a control flag for multiple boolean expressions. Solution: Instead of the variable, use break, continue and return. |
-| `Replace Nested Conditional with Guard Clauses` | https://refactoring.guru/replace-nested-conditional-with-guard-clauses | Problem: You have a group of nested conditionals and it’s hard to determine the normal flow of code execution. Solution: Isolate all special checks and edge cases into separate cla |
-| `Replace Conditional with Polymorphism` | https://refactoring.guru/replace-conditional-with-polymorphism | Problem: You have a conditional that performs various actions depending on object type or properties. Solution: Create subclasses matching the branches of the conditional. In them, |
-| `Introduce Null Object` | https://refactoring.guru/introduce-null-object | Problem: Since some methods return null instead of real objects, you have many checks for null in your code. Solution: Instead of null, return a null object that exhibits the defau |
-| `Introduce Assertion` | https://refactoring.guru/introduce-assertion | Problem: For a portion of code to work correctly, certain conditions or values must be true. Solution: Replace these assumptions with specific assertion checks. |
+| `Decompose Conditional` | https://refactoring.guru/decompose-conditional | 복잡한 조건·then·else 부분을 의미가 드러나는 별도 메서드로 분해한다. |
+| `Consolidate Conditional Expression` | https://refactoring.guru/consolidate-conditional-expression | 같은 결과로 이어지는 여러 조건을 하나의 표현식으로 합치고 메서드로 추출한다. |
+| `Consolidate Duplicate Conditional Fragments` | https://refactoring.guru/consolidate-duplicate-conditional-fragments | 모든 분기에 중복된 코드를 조건문 밖으로 빼낸다. |
+| `Remove Control Flag` | https://refactoring.guru/remove-control-flag | 흐름을 제어하는 불린 플래그 변수를 break·continue·return으로 대체한다. |
+| `Replace Nested Conditional with Guard Clauses` | https://refactoring.guru/replace-nested-conditional-with-guard-clauses | 특수·예외 케이스를 guard clause로 먼저 처리해 중첩 조건을 평탄하게 만든다. |
+| `Replace Conditional with Polymorphism` | https://refactoring.guru/replace-conditional-with-polymorphism | 타입·속성에 따라 분기하는 조건문을 서브클래스의 다형 메서드 호출로 대체한다. |
+| `Introduce Null Object` | https://refactoring.guru/introduce-null-object | null 대신 기본 동작을 수행하는 null 객체를 반환해 곳곳의 null 체크를 없앤다. |
+| `Introduce Assertion` | https://refactoring.guru/introduce-assertion | 코드가 암묵적으로 가정하는 전제 조건을 명시적인 assertion으로 드러낸다. |
 
 ## 적용 메모
 

@@ -18,20 +18,20 @@ sources: [refactoring-guru-refactoring]
 
 | Technique | URL | 요약 |
 |---|---|---|
-| `Rename Method` | https://refactoring.guru/rename-method | Problem: The name of a method doesn’t explain what the method does. Solution: Rename the method. |
-| `Add Parameter` | https://refactoring.guru/add-parameter | Problem: A method doesn’t have enough data to perform certain actions. Solution: Create a new parameter to pass the necessary data. |
-| `Remove Parameter` | https://refactoring.guru/remove-parameter | Problem: A parameter isn’t used in the body of a method. Solution: Remove the unused parameter. |
-| `Separate Query from Modifier` | https://refactoring.guru/separate-query-from-modifier | Problem: Do you have a method that returns a value but also changes something inside an object? Solution: Split the method into two separate methods. As you would expect, one of th |
-| `Parameterize Method` | https://refactoring.guru/parameterize-method | Problem: Multiple methods perform similar actions that are different only in their internal values, numbers or operations. Solution: Combine these methods by using a parameter that |
-| `Replace Parameter with Explicit Methods` | https://refactoring.guru/replace-parameter-with-explicit-methods | Problem: A method is split into parts, each of which is run depending on the value of a parameter. Solution: Extract the individual parts of the method into their own methods and c |
-| `Preserve Whole Object` | https://refactoring.guru/preserve-whole-object | Problem: You get several values from an object and then pass them as parameters to a method. Solution: Instead, try passing the whole object. |
-| `Replace Parameter with Method Call` | https://refactoring.guru/replace-parameter-with-method-call | Problem: Calling a query method and passing its results as the parameters of another method, while that method could call the query directly. Solution: Instead of passing the value |
-| `Introduce Parameter Object` | https://refactoring.guru/introduce-parameter-object | Problem: Your methods contain a repeating group of parameters. Solution: Replace these parameters with an object. |
-| `Remove Setting Method` | https://refactoring.guru/remove-setting-method | Problem: The value of a field should be set only when it’s created, and not change at any time after that. Solution: So remove methods that set the field’s value. |
-| `Hide Method` | https://refactoring.guru/hide-method | Problem: A method isn’t used by other classes or is used only inside its own class hierarchy. Solution: Make the method private or protected. |
-| `Replace Constructor with Factory Method` | https://refactoring.guru/replace-constructor-with-factory-method | Problem: You have a complex constructor that does something more than just setting parameter values in object fields. Solution: Create a factory method and use it to replace constr |
-| `Replace Error Code with Exception` | https://refactoring.guru/replace-error-code-with-exception | Problem: A method returns a special value that indicates an error? Solution: Throw an exception instead. |
-| `Replace Exception with Test` | https://refactoring.guru/replace-exception-with-test | Problem: You throw an exception in a place where a simple test would do the job? Solution: Replace the exception with a condition test. |
+| `Rename Method` | https://refactoring.guru/rename-method | 동작을 제대로 설명하지 못하는 메서드 이름을 의미가 드러나게 바꾼다. |
+| `Add Parameter` | https://refactoring.guru/add-parameter | 메서드에 필요한 데이터가 부족하면 이를 전달할 매개변수를 추가한다. |
+| `Remove Parameter` | https://refactoring.guru/remove-parameter | 본문에서 더 이상 쓰이지 않는 매개변수를 제거한다. |
+| `Separate Query from Modifier` | https://refactoring.guru/separate-query-from-modifier | 값 반환과 상태 변경을 함께 하는 메서드를 조회용과 변경용 두 개로 분리한다. |
+| `Parameterize Method` | https://refactoring.guru/parameterize-method | 내부 값만 다른 유사 메서드들을 그 값을 받는 하나의 매개변수화된 메서드로 합친다. |
+| `Replace Parameter with Explicit Methods` | https://refactoring.guru/replace-parameter-with-explicit-methods | 매개변수 값에 따라 동작이 갈리는 메서드를 값마다 별도의 명시적 메서드로 나눈다. |
+| `Preserve Whole Object` | https://refactoring.guru/preserve-whole-object | 객체에서 여러 값을 꺼내 넘기는 대신 객체 자체를 통째로 전달한다. |
+| `Replace Parameter with Method Call` | https://refactoring.guru/replace-parameter-with-method-call | 쿼리 결과를 인수로 넘기는 대신 메서드가 직접 그 쿼리를 호출하게 한다. |
+| `Introduce Parameter Object` | https://refactoring.guru/introduce-parameter-object | 여러 메서드에 반복되는 매개변수 묶음을 하나의 매개변수 객체로 대체한다. |
+| `Remove Setting Method` | https://refactoring.guru/remove-setting-method | 생성 시에만 설정되고 이후 바뀌면 안 되는 필드의 setter를 제거한다. |
+| `Hide Method` | https://refactoring.guru/hide-method | 외부에서 쓰이지 않는 메서드를 private·protected로 낮춰 공개 API를 줄인다. |
+| `Replace Constructor with Factory Method` | https://refactoring.guru/replace-constructor-with-factory-method | 단순 필드 설정 이상을 하는 복잡한 생성자를 팩토리 메서드로 대체한다. |
+| `Replace Error Code with Exception` | https://refactoring.guru/replace-error-code-with-exception | 오류를 나타내는 특수 반환값 대신 예외를 던진다. |
+| `Replace Exception with Test` | https://refactoring.guru/replace-exception-with-test | 사전 조건 검사로 충분한 곳에서는 예외 대신 조건 테스트를 쓴다. |
 
 ## 적용 메모
 

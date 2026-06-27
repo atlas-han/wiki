@@ -323,3 +323,21 @@ updated: 2026-06-27
 - 신규 technique family pages (6): [[refactoring-techniques-composing-methods]] · [[refactoring-techniques-moving-features-between-objects]] · [[refactoring-techniques-organizing-data]] · [[refactoring-techniques-simplifying-conditional-expressions]] · [[refactoring-techniques-simplifying-method-calls]] · [[refactoring-techniques-dealing-with-generalization]]
 - 갱신: [[02.wiki/index|index]], [[02.wiki/engineering/index|engineering/index]], [[overview]], log
 - 범위 메모: individual refactoring technique 70여 개는 저작권 본문을 복제하지 않고 family page 표의 URL inventory + 짧은 요약으로 보존. 향후 자주 쓰는 technique만 개별 페이지 승격.
+
+## [2026-06-27] meta | 디자인 패턴 22개 페이지 본문 보완
+- 기준: https://refactoring.guru/ko/design-patterns — 각 패턴 페이지를 라이브로 재확인(WebFetch)해 위키용으로 재요약.
+- 문제: 22개 [[design-pattern-*]] 페이지가 모두 동일한 "적용 메모" boilerplate 3줄("클라이언트가 구상 타입이나..." / "패턴명보다 중요한 것은..." / "테스트에서는 패턴이 만든 seam을...")만 가진 사실상 스텁이었음.
+- 변경: 22개 전부 패턴별 본문으로 재작성. 통일 섹션 구조 → 문제 / 해결책 / 실세계 비유(원문에 없으면 예시) / 적용 가능성 / 장단점(장점·단점 목록) / 다른 패턴과의 관계 / References.
+- 핵심 보완: 패턴별 실세계 비유·적용 가능성 bullet·장단점 목록·관계를 원문 구조에 맞춰 추가(예: Strategy=내비게이션/공항, Builder=주택 건설, Proxy=신용카드, Facade=전화 주문 교환원, Decorator=옷 겹쳐 입기, Mediator=관제탑, Flyweight=숲/나무 렌더링 예시).
+- 보존·검증: 각 페이지 frontmatter 100% 그대로 유지, GoF cross-link 22개 전부 파일 resolve 확인, boilerplate 잔존 0건, 7개 섹션 전 파일 정확히 1회씩 존재 확인. 페이지 길이 42줄(균일 스텁) → 46~65줄.
+- 미변경: [[design-patterns]] 허브·[[02.wiki/index|index]]·[[02.wiki/engineering/index|engineering/index]]는 이미 22개를 정확히 카탈로그하므로 수정 불필요. [[refactoring-guru-ko-design-patterns]] source도 그대로.
+
+## [2026-06-27] meta | 리팩터링 문서(코드 스멜 23 + technique family 6) 본문 보완
+- 기준: https://refactoring.guru/refactoring — code smell 페이지(/smells/*)와 technique family 페이지를 라이브로 재확인(WebFetch)해 위키용으로 재요약.
+- 문제 1: 23개 code smell 페이지가 모두 동일한 "문제 신호" boilerplate 3줄("코드를 읽는 사람이 실제 의도보다 구조적 noise..." 등) + 동일한 "대표 대응" 미사여구만 가진 스텁이었음.
+- 문제 2: 6개 technique family 페이지의 technique 표 "요약" 칼럼이 영어 원문 그대로였고 문장 중간에서 잘려 있었음(예: "the expression itse", "so that th").
+- 변경 1: 23개 smell 전부 원문 구조로 재작성 → 신호와 증상 / 원인 / 해결 방법(Treatment, 권장 refactoring을 backtick로) / 이득(Payoff) / 무시해도 될 때 / References. 5개 계열(Bloaters/객체지향 남용/변경 방지자/Dispensables/Couplers) 라벨 명시.
+- 변경 2: 6개 family 표의 "요약" 칼럼을 한국어 "문제→해결" 한 줄로 완역·복원(잘림 제거). 표 technique 행 수는 원문과 일치(추가/삭제 0): composing 9 · moving 8 · organizing 15 · conditionals 8 · method-calls 14 · generalization 12 = 66개.
+- 변경 3: [[refactoring]] 허브에 "언제 리팩터링하나"(삼진 규칙 + 기능 추가/버그 수정/코드 리뷰 시점) 섹션 추가.
+- 검증: smell boilerplate 잔존 0건, 23개 전부 5개 섹션 존재, technique 표 영어 "Problem:/Solution:" 잔존 0건, 23 smell + 6 technique 파일의 [[wiki-link]] 전부 resolve, frontmatter 보존.
+- 미변경: [[code-smells]]·[[refactoring-techniques]]·[[technical-debt]] 허브는 이미 분류·링크가 충실해 그대로. [[refactoring-guru-refactoring]] source도 그대로.

@@ -12,26 +12,28 @@ sources: [refactoring-guru-refactoring]
 
 # Lazy Class
 
-Lazy Class는 [[code-smells]] 중 하나로, 존재 비용에 비해 책임이 너무 적어 독립 클래스로 둘 이유가 약한 상태.
+이해하고 유지보수하는 데 드는 시간·비용에 비해 하는 일이 너무 적어, 독립 클래스로 둘 이유가 약한 클래스. [[code-smells]] 중 **Dispensables(불필요한 것)** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 클래스가 자신의 존재 비용(이해·유지보수)을 정당화할 만큼 충분한 일을 하지 않는다.
+- 거의 빈 껍데기이거나, 다른 클래스로 단순히 위임만 하는 클래스가 있다.
+- 기능이 거의 없는 서브클래스가 계층에 매달려 있다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+- 리팩토링 과정에서 클래스의 책임이 다른 곳으로 옮겨가 클래스가 불필요하게 작아졌다.
+- 미래 개발을 염두에 두고 클래스를 만들었으나 실제 개발이 진행되지 않았다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Inline Class` — 거의 쓸모없는 컴포넌트를, 그 기능을 사용하는 다른 클래스 안으로 흡수한다.
+- `Collapse Hierarchy` — 기능이 거의 없는 서브클래스를 상위 클래스와 합친다.
 
-- 후보 technique: `Inline Class`, `Collapse Hierarchy`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 코드 크기가 줄어든다.
+- 유지보수가 쉬워진다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+미래 개발 의도를 명확히 드러내기 위해 의도적으로 만든 Lazy Class도 있다. 명확성과 단순성 사이의 균형을 고려해 판단한다. (지나치면 [[speculative-generality]]가 된다.)
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/lazy-class
+- [[refactoring-guru-refactoring]] — Lazy Class 원문: https://refactoring.guru/smells/lazy-class
+- [[code-smells]]

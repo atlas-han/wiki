@@ -18,14 +18,14 @@ sources: [refactoring-guru-refactoring]
 
 | Technique | URL | 요약 |
 |---|---|---|
-| `Move Method` | https://refactoring.guru/move-method | Problem: A method is used more in another class than in its own class. Solution: Create a new method in the class that uses the method the most, then move code from the old method  |
-| `Move Field` | https://refactoring.guru/move-field | Problem: A field is used more in another class than in its own class. Solution: Create a field in a new class and redirect all users of the old field to it. |
-| `Extract Class` | https://refactoring.guru/extract-class | Problem: When one class does the work of two, awkwardness results. Solution: Instead, create a new class and place the fields and methods responsible for the relevant functionality |
-| `Inline Class` | https://refactoring.guru/inline-class | Problem: A class does almost nothing and isn’t responsible for anything, and no additional responsibilities are planned for it. Solution: Move all features from the class to anothe |
-| `Hide Delegate` | https://refactoring.guru/hide-delegate | Problem: The client gets object B from a field or method of object А. Then the client calls a method of object B. Solution: Create a new method in class A that delegates the call t |
-| `Remove Middle Man` | https://refactoring.guru/remove-middle-man | Problem: A class has too many methods that simply delegate to other objects. Solution: Delete these methods and force the client to call the end methods directly. |
-| `Introduce Foreign Method` | https://refactoring.guru/introduce-foreign-method | Problem: A utility class doesn’t contain the method that you need and you can’t add the method to the class. Solution: Add the method to a client class and pass an object of the ut |
-| `Introduce Local Extension` | https://refactoring.guru/introduce-local-extension | Problem: A utility class doesn’t contain some methods that you need. But you can’t add these methods to the class. Solution: Create a new class containing the methods and make it e |
+| `Move Method` | https://refactoring.guru/move-method | 자기 클래스보다 다른 클래스에서 더 많이 쓰이는 메서드를 그 클래스로 옮기고 호출을 위임·대체한다. |
+| `Move Field` | https://refactoring.guru/move-field | 자기 클래스보다 다른 클래스에서 더 많이 쓰이는 필드를 그 클래스로 옮기고 사용처를 그쪽으로 돌린다. |
+| `Extract Class` | https://refactoring.guru/extract-class | 한 클래스가 두 역할을 맡고 있으면 관련 필드·메서드를 새 클래스로 분리한다. |
+| `Inline Class` | https://refactoring.guru/inline-class | 책임이 거의 없는 클래스의 기능을 다른 클래스로 합치고 그 클래스를 제거한다. |
+| `Hide Delegate` | https://refactoring.guru/hide-delegate | 클라이언트가 위임 객체를 직접 거치지 않도록 위임 메서드를 만들어 의존을 감춘다. |
+| `Remove Middle Man` | https://refactoring.guru/remove-middle-man | 단순 위임만 하는 메서드가 너무 많으면 제거하고 클라이언트가 실제 객체를 직접 호출하게 한다. |
+| `Introduce Foreign Method` | https://refactoring.guru/introduce-foreign-method | 수정할 수 없는 유틸리티 클래스에 필요한 메서드를, 그 객체를 인수로 받는 클라이언트 측 메서드로 추가한다. |
+| `Introduce Local Extension` | https://refactoring.guru/introduce-local-extension | 수정할 수 없는 유틸리티 클래스에 여러 메서드가 필요하면 서브클래스나 래퍼로 확장 클래스를 만든다. |
 
 ## 적용 메모
 

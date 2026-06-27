@@ -18,18 +18,18 @@ sources: [refactoring-guru-refactoring]
 
 | Technique | URL | 요약 |
 |---|---|---|
-| `Pull Up Field` | https://refactoring.guru/pull-up-field | Problem: Two classes have the same field. Solution: Remove the field from subclasses and move it to the superclass. |
-| `Pull Up Method` | https://refactoring.guru/pull-up-method | Problem: Your subclasses have methods that perform similar work. Solution: Make the methods identical and then move them to the relevant superclass. |
-| `Pull Up Constructor Body` | https://refactoring.guru/pull-up-constructor-body | Problem: Your subclasses have constructors with code that’s mostly identical. Solution: Create a superclass constructor and move the code that’s the same in the subclasses to it. C |
-| `Push Down Method` | https://refactoring.guru/push-down-method | Problem: Is behavior implemented in a superclass used by only one (or a few) subclasses? Solution: Move this behavior to the subclasses. |
-| `Push Down Field` | https://refactoring.guru/push-down-field | Problem: Is a field used only in a few subclasses? Solution: Move the field to these subclasses. |
-| `Extract Subclass` | https://refactoring.guru/extract-subclass | Problem: A class has features that are used only in certain cases. Solution: Create a subclass and use it in these cases. |
-| `Extract Superclass` | https://refactoring.guru/extract-superclass | Problem: You have two classes with common fields and methods. Solution: Create a shared superclass for them and move all the identical fields and methods to it. |
-| `Extract Interface` | https://refactoring.guru/extract-interface | Problem: Multiple clients are using the same part of a class interface. Another case: part of the interface in two classes is the same. Solution: Move this identical portion to its |
-| `Collapse Hierarchy` | https://refactoring.guru/collapse-hierarchy | Problem: You have a class hierarchy in which a subclass is practically the same as its superclass. Solution: Merge the subclass and superclass. |
-| `Form Template Method` | https://refactoring.guru/form-template-method | Problem: Your subclasses implement algorithms that contain similar steps in the same order. Solution: Move the algorithm structure and identical steps to a superclass, and leave im |
-| `Replace Inheritance with Delegation` | https://refactoring.guru/replace-inheritance-with-delegation | Problem: You have a subclass that uses only a portion of the methods of its superclass (or it’s not possible to inherit superclass data). Solution: Create a field and put a supercl |
-| `Replace Delegation with Inheritance` | https://refactoring.guru/replace-delegation-with-inheritance | Problem: A class contains many simple methods that delegate to all methods of another class. Solution: Make the class a delegate inheritor, which makes the delegating methods unnec |
+| `Pull Up Field` | https://refactoring.guru/pull-up-field | 여러 서브클래스에 중복된 동일 필드를 상위 클래스로 끌어올린다. |
+| `Pull Up Method` | https://refactoring.guru/pull-up-method | 서브클래스마다 같은 일을 하는 메서드를 동일하게 만든 뒤 상위 클래스로 끌어올린다. |
+| `Pull Up Constructor Body` | https://refactoring.guru/pull-up-constructor-body | 서브클래스 생성자에 공통된 코드를 상위 클래스 생성자로 올려 호출하게 한다. |
+| `Push Down Method` | https://refactoring.guru/push-down-method | 일부 서브클래스만 쓰는 상위 클래스의 동작을 해당 서브클래스로 내린다. |
+| `Push Down Field` | https://refactoring.guru/push-down-field | 일부 서브클래스에서만 쓰이는 필드를 해당 서브클래스로 내린다. |
+| `Extract Subclass` | https://refactoring.guru/extract-subclass | 특정 경우에만 쓰이는 기능을 새 서브클래스로 분리한다. |
+| `Extract Superclass` | https://refactoring.guru/extract-superclass | 공통 필드·메서드를 가진 두 클래스의 공통부를 새 상위 클래스로 추출한다. |
+| `Extract Interface` | https://refactoring.guru/extract-interface | 여러 클라이언트가 공유하는 인터페이스 부분을 별도 인터페이스로 분리한다. |
+| `Collapse Hierarchy` | https://refactoring.guru/collapse-hierarchy | 상위·하위 클래스가 거의 같아졌으면 둘을 하나로 병합한다. |
+| `Form Template Method` | https://refactoring.guru/form-template-method | 순서는 같고 일부 단계만 다른 서브클래스 알고리즘에서 공통 골격을 상위 클래스의 템플릿 메서드로 추출한다. |
+| `Replace Inheritance with Delegation` | https://refactoring.guru/replace-inheritance-with-delegation | 상위 클래스 일부만 쓰는 상속을 필드 위임 관계로 바꿔 결합을 낮춘다. |
+| `Replace Delegation with Inheritance` | https://refactoring.guru/replace-delegation-with-inheritance | 모든 메서드를 그대로 위임하는 단순 위임을 상속으로 바꿔 위임 보일러플레이트를 없앤다. |
 
 ## 적용 메모
 

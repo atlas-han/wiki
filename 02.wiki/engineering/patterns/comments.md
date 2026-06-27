@@ -12,26 +12,30 @@ sources: [refactoring-guru-refactoring]
 
 # Comments
 
-Comments는 [[code-smells]] 중 하나로, 코드 자체가 설명하지 못하는 의도·절차를 주석이 대신 떠받치는 상태.
+메서드가 설명적 주석으로 가득 차, 주석이 직관적이지 않은 코드의 문제를 가리는 데오도란트(deodorant) 역할을 하는 상태. [[code-smells]] 중 **Dispensables(불필요한 것)** 계열이다.
 
-## 문제 신호
+## 신호와 증상
+- 메서드 안이 "이 부분은 무엇을 한다"는 설명 주석으로 빽빽하다.
+- 주석을 먼저 읽어야 코드가 이해되며, 주석을 지우면 의도를 알 수 없다.
+- 주석이 복잡한 표현식·코드 블록의 의미를 대신 설명하고 있다.
 
-- 코드를 읽는 사람이 실제 의도보다 구조적 noise를 먼저 이해해야 한다.
-- 같은 변경을 반복하거나, 변경 위치를 예측하기 어려워진다.
-- 테스트 없이 고치면 behavior drift가 생기기 쉽다.
+## 원인
+- 작성자가 코드가 직관적이지 않다고 느낄 때 주석을 덧붙인다.
+- 주석은 개선이 필요한 나쁜 코드의 냄새를 덮는 향수처럼 쓰인다. 가장 좋은 주석은 메서드·클래스의 좋은 이름 그 자체다.
 
-## 대표 대응
+## 해결 방법 (Treatment)
+- `Extract Variable` — 복잡한 표현식을 이해하기 쉬운 이름의 부분 표현식으로 쪼개 주석을 대체한다.
+- `Extract Method` — 주석으로 구분하던 코드 블록을 별도 메서드로 추출하고, 주석 내용을 메서드 이름으로 옮긴다.
+- `Rename Method` — 메서드가 하는 일을 설명하던 주석을 자명한 이름으로 흡수한다.
+- `Introduce Assertion` — "여기서는 이 상태여야 한다"는 설명 주석을 코드로 강제되는 단언으로 바꾼다.
 
-- 후보 technique: `Extract Method`, `Rename Method`, `Introduce Assertion`
-- 먼저 현재 feature와 관련된 최소 범위를 정하고, [[refactoring]] 원칙대로 behavior-preserving step으로 쪼갠다.
-- smell 제거가 더 큰 API churn을 만들면 [[technical-debt]]로 명시하고 상환 시점을 따로 잡는다.
+## 이득 (Payoff)
+- 코드가 더 직관적이고 명확해진다.
+- 이름과 구조가 의도를 드러내므로 주석을 따로 유지·동기화할 필요가 줄어든다.
 
-## 관련
-
-- [[code-smells]]
-- [[refactoring-techniques]]
-- [[technical-debt]]
+## 무시해도 될 때
+특정 구현을 왜 그렇게 했는지(WHY)를 설명하는 주석, 또는 다른 모든 단순화 시도가 실패한 복잡한 알고리즘을 설명하는 주석은 남겨두는 것이 좋다.
 
 ## References
-
-- [[refactoring-guru-refactoring]] — https://refactoring.guru/smells/comments
+- [[refactoring-guru-refactoring]] — Comments 원문: https://refactoring.guru/smells/comments
+- [[code-smells]]
