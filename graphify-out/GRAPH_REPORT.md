@@ -1,148 +1,89 @@
-# Graph Report - .  (2026-06-14)
+# Graph Report - 02.wiki  (2026-06-28)
 
 ## Corpus Check
-- 27 files · ~0 words
+- 172 files · ~61,419 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 266 nodes · 881 edges · 28 communities (13 shown, 15 thin omitted)
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 70 edges (avg confidence: 0.86)
-- Token cost: 178,000 input · 16,500 output
+- 176 nodes · 1156 edges · 7 communities
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.81)
+- Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Anthropic Security & Models|Anthropic Security & Models]]
-- [[_COMMUNITY_Harness Engineering & Self-Harness|Harness Engineering & Self-Harness]]
-- [[_COMMUNITY_Claude Code Auto Mode & Dynamic Workflows|Claude Code Auto Mode & Dynamic Workflows]]
-- [[_COMMUNITY_Actix Web Server & Middleware|Actix Web Server & Middleware]]
+- [[_COMMUNITY_Agent Harness & Workflows|Agent Harness & Workflows]]
+- [[_COMMUNITY_Refactoring & Code Quality|Refactoring & Code Quality]]
+- [[_COMMUNITY_Anthropic Models & Security|Anthropic Models & Security]]
+- [[_COMMUNITY_GoF Design Patterns|GoF Design Patterns]]
+- [[_COMMUNITY_Actix  Rust Web|Actix / Rust Web]]
 - [[_COMMUNITY_LLM Wiki & Knowledge Graphs|LLM Wiki & Knowledge Graphs]]
-- [[_COMMUNITY_Actix Web RequestResponse|Actix Web Request/Response]]
-- [[_COMMUNITY_Wiki Graphify Query Script|Wiki Graphify Query Script]]
-- [[_COMMUNITY_Actix Actor Framework|Actix Actor Framework]]
-- [[_COMMUNITY_Actix Web Patterns (wiki)|Actix Web Patterns (wiki)]]
-- [[_COMMUNITY_Coding Guidelines & 12-Factor|Coding Guidelines & 12-Factor]]
-- [[_COMMUNITY_The Martian (Reading)|The Martian (Reading)]]
-- [[_COMMUNITY_Nextdoor Codex (OpenAI)|Nextdoor Codex (OpenAI)]]
-- [[_COMMUNITY_Wiki Operating Contracts|Wiki Operating Contracts]]
-- [[_COMMUNITY_바다에서 온 소년 (book)|바다에서 온 소년 (book)]]
-- [[_COMMUNITY_씽킹 101 (book)|씽킹 101 (book)]]
-- [[_COMMUNITY_Project Hail Mary (book)|Project Hail Mary (book)]]
-- [[_COMMUNITY_경험의 멸종 (book)|경험의 멸종 (book)]]
-- [[_COMMUNITY_Never Split the Difference (book)|Never Split the Difference (book)]]
-- [[_COMMUNITY_오디세이아 (book)|오디세이아 (book)]]
-- [[_COMMUNITY_TIL Index|TIL Index]]
-- [[_COMMUNITY_Actix Helper Actors (stub)|Actix Helper Actors (stub)]]
-- [[_COMMUNITY_Actix IO Helpers (stub)|Actix IO Helpers (stub)]]
-- [[_COMMUNITY_Actix Supervisor (stub)|Actix Supervisor (stub)]]
-- [[_COMMUNITY_Actix Stream (stub)|Actix Stream (stub)]]
-- [[_COMMUNITY_Actix Registry (stub)|Actix Registry (stub)]]
-- [[_COMMUNITY_PRD Template|PRD Template]]
-- [[_COMMUNITY_Query Memory Engineering Index|Query Memory: Engineering Index]]
-- [[_COMMUNITY_Query Memory Actix Bridge|Query Memory: Actix Bridge]]
+- [[_COMMUNITY_Reading The Martian|Reading: The Martian]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Agent Harness Design` - 48 edges
-2. `Claude Code` - 33 edges
-3. `Index` - 31 edges
-4. `Harness Engineering` - 30 edges
-5. `Actix Web` - 29 edges
-6. `Anthropic` - 26 edges
-7. `02.wiki/log.md (chronological work log)` - 26 edges
-8. `Engineering Index` - 24 edges
-9. `Dynamic Workflows` - 23 edges
-10. `Actix Web Documentation Index (docs)` - 23 edges
+1. `Log` - 168 edges
+2. `Index` - 139 edges
+3. `Overview` - 79 edges
+4. `Agent Harness Design` - 38 edges
+5. `Refactoring Techniques` - 38 edges
+6. `Refactoring.Guru Refactoring` - 37 edges
+7. `Code Smells` - 37 edges
+8. `Claude Code` - 32 edges
+9. `Technical Debt` - 31 edges
+10. `디자인 패턴` - 29 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Code Knowledge Graph` --conceptually_related_to--> `scripts/wiki_graphify_query.py (graphify query helper)`  [INFERRED]
-  02.wiki/concepts/code-knowledge-graph.md → scripts/wiki_graphify_query.py
-- `Verifiable Goals` --semantically_similar_to--> `Outcome Engineering`  [INFERRED] [semantically similar]
-  02.wiki/concepts/self-harness.md → 01.raw/articles/2026-06-10_How engineers at Nextdoor use Codex to build without limits.md
-- `Understand-Anything` --conceptually_related_to--> `scripts/wiki_graphify_query.py (graphify query helper)`  [INFERRED]
-  02.wiki/sources/lum1104-understand-anything.md → scripts/wiki_graphify_query.py
-- `Transcript Classifier` --semantically_similar_to--> `Generator-Evaluator Architecture`  [INFERRED] [semantically similar]
-  02.wiki/concepts/transcript-classifier.md → 01.raw/articles/2026-05-25_Harness design for long-running application development.md
-- `Actix Web` --references--> `Auto-Reloading (docs)`  [INFERRED]
-  02.wiki/entities/actix-web.md → 01.raw/docs/actix-web/autoreload.md
+- `Managed Agents` --semantically_similar_to--> `Dynamic Workflows`  [INFERRED] [semantically similar]
+  02.wiki/entities/managed-agents.md → 02.wiki/concepts/dynamic-workflows.md
+- `마션(스페셜 에디션)` --references--> `The Martian`  [INFERRED]
+  02.wiki/reading/books/martian-special-edition.md → 02.wiki/sources/kyobo-martian-special-edition.md
+- `교보문고 — 마션(스페셜 에디션)` --references--> `앤디 위어 (Andy Weir)`  [INFERRED]
+  02.wiki/sources/kyobo-martian-special-edition.md → 02.wiki/reading/books/martian-special-edition.md
+- `Deny-and-Continue` --semantically_similar_to--> `Agentic Misbehavior (Threat Model)`  [INFERRED] [semantically similar]
+  02.wiki/concepts/deny-and-continue.md → 02.wiki/concepts/agentic-misbehavior.md
+- `Harness Engineering` --semantically_similar_to--> `Agent Harness Design`  [INFERRED] [semantically similar]
+  02.wiki/concepts/harness-engineering.md → 02.wiki/concepts/agent-harness-design.md
 
-## Hyperedges (group relationships)
-- **Self-Harness 3-Stage Optimization Loop** — weakness_mining, harness_proposal, proposal_validation, self_harness [EXTRACTED 1.00]
-- **Terminal-Bench-2.0 Self-Harness Evaluation** — minimax_m2_5, qwen3_5, glm_5, terminal_bench [EXTRACTED 1.00]
-- **Three Paradigms of Harness Improvement** — harness_engineering, meta_harness, self_harness [EXTRACTED 1.00]
-- **** — nextdoor, codex, gpt_5_5, outcome_engineering [EXTRACTED 1.00]
-- **** — martian_special_edition, andy_weir, the_martian, kyobo_martian_special_edition [EXTRACTED 1.00]
+## Communities (7 total, 0 thin omitted)
 
-## Communities (28 total, 15 thin omitted)
-
-### Community 0 - "Anthropic Security & Models"
-Cohesion: 0.19
-Nodes (35): Project Glasswing: Initial Update (article), Scaling Managed Agents (article), AI Cybersecurity / Vulnerability Discovery, AI Vulnerability Discovery, Anthropic, Anthropic — Harness Design for Long-Running Apps, Anthropic — Scaling Managed Agents, Anthropic — Project Glasswing Update (2026-05) (+27 more)
-
-### Community 1 - "Harness Engineering & Self-Harness"
-Cohesion: 0.31
-Nodes (30): Harness design for long-running application development (article), 하네스 엔지니어링 (video), Agent Harness Design, DeepAgents, Frontend Design Skill, Generator-Evaluator Pattern, GLM-5, Harness Engineering (+22 more)
-
-### Community 2 - "Claude Code Auto Mode & Dynamic Workflows"
-Cohesion: 0.17
-Nodes (27): Claude Code auto mode (article), Introducing dynamic workflows (article), Agent Permissions / Approval Delegation, Agentic Misbehavior (Threat Model), Anthropic — Claude Code Auto Mode, Anthropic — Dynamic Workflows, Bun, Bun Zig-to-Rust Rewrite (+19 more)
-
-### Community 3 - "Actix Web Server & Middleware"
-Cohesion: 0.13
-Nodes (27): Actix Web Documentation Index (docs), App, Application (docs), Auto-Reloading (docs), Connection Lifecycle (docs), CORS (docs), Cors (actix-cors), Databases (docs) (+19 more)
-
-### Community 4 - "LLM Wiki & Knowledge Graphs"
+### Community 0 - "Agent Harness & Workflows"
 Cohesion: 0.22
-Nodes (24): LLM Wiki (article), Understand-Anything 1시간→5분 가이드 (article), Lum1104/Understand-Anything (GitHub README), Andrej Karpathy, Code Knowledge Graph, Code Understanding, James AI Explorer — Understand-Anything Korean Guide, Karpathy — LLM Wiki Gist (+16 more)
+Nodes (40): Agent Harness Design, Anthropic — Dynamic Workflows, Archon, Bun, Claude Code, Codex, Cory Dolphin, DeepAgents (+32 more)
 
-### Community 5 - "Actix Web Request/Response"
-Cohesion: 0.16
-Nodes (22): actix_web::error::Error, actix-ws, Either extractor, Errors (docs), Extractors (docs), FromRequest trait, Handlers (docs), HttpRequest (+14 more)
-
-### Community 6 - "Wiki Graphify Query Script"
-Cohesion: 0.22
-Nodes (17): body_without_frontmatter(), build_graph(), expand(), first_summary(), load_pages(), main(), make_result(), normalize_link() (+9 more)
-
-### Community 7 - "Actix Actor Framework"
+### Community 1 - "Refactoring & Code Quality"
 Cohesion: 0.26
-Nodes (15): Actix Quick Start (docs), Actix — Address (Addr & Recipient), Actix — Context, Actix (Actor Framework), Actix — Actor Model, Actix — Arbiter & System, Actix — SyncArbiter, Actix Actor (docs) (+7 more)
+Nodes (40): The Twelve-Factor App, Adam Wiggins, Alternative Classes With Different Interfaces, Code Smells, Comments, Data Class, Data Clumps, Dead Code (+32 more)
 
-### Community 8 - "Actix Web Patterns (wiki)"
-Cohesion: 0.67
-Nodes (15): Actix Web, Actix Web — Application State (web::Data), Actix Web — Connection Lifecycle, Actix Web — Databases (web::block & async ORM), Actix Web — Error Handling (ResponseError), Actix Web — Extractors (FromRequest), Actix Web — Handlers & Responder, Actix Web — HttpServer & Worker Model (+7 more)
+### Community 2 - "Anthropic Models & Security"
+Cohesion: 0.25
+Nodes (31): Agentic Misbehavior (Threat Model), AI Vulnerability Discovery, Anthropic, Anthropic — Claude Code Auto Mode, Anthropic — Harness Design for Long-Running Apps, Anthropic — Scaling Managed Agents, Anthropic — Project Glasswing Update (2026-05), Brain-Hands Decoupling (+23 more)
 
-### Community 9 - "Coding Guidelines & 12-Factor"
-Cohesion: 0.19
-Nodes (14): CLAUDE.md Behavioral Guidelines (article), Extend Claude with skills (article), The Twelve-Factor App (article), Adam Wiggins, AI Layer (Harness), LLM Coding Behavioral Guidelines, CLAUDE.md, Claude Skills (SKILL.md) (+6 more)
+### Community 3 - "GoF Design Patterns"
+Cohesion: 0.45
+Nodes (24): 추상 팩토리 (Abstract Factory), 어댑터 (Adapter), 브리지 (Bridge), 빌더 (Builder), 책임 연쇄 (Chain of Responsibility), 커맨드 (Command), 복합체 (Composite), 데코레이터 (Decorator) (+16 more)
 
-### Community 10 - "The Martian (Reading)"
-Cohesion: 0.5
-Nodes (8): 앤디 위어 (Andy Weir), 교보문고 — 마션(스페셜 에디션), 마크 와트니 (Mark Watney), 마션(스페셜 에디션), 마션(스페셜 에디션) | 앤디 위어 - 교보문고 (raw), Reading Index, 리들리 스콧 (Ridley Scott), The Martian
+### Community 4 - "Actix / Rust Web"
+Cohesion: 0.45
+Nodes (23): 안 만만한 사람 vs 만만한 사람의 대화 위치, Actix — Address (Addr & Recipient), Actix — Context, Actix (Actor Framework), Actix — Actor Model, Actix — Arbiter & System, Actix — SyncArbiter, Actix Web (+15 more)
 
-### Community 11 - "Nextdoor Codex (OpenAI)"
-Cohesion: 0.52
-Nodes (7): Codex, Cory Dolphin, GPT-5.5, Nextdoor, How engineers at Nextdoor use Codex to build without limits, OpenAI, Outcome Engineering
+### Community 5 - "LLM Wiki & Knowledge Graphs"
+Cohesion: 0.47
+Nodes (13): Andrej Karpathy, Code Knowledge Graph, James AI Explorer — Understand-Anything Korean Guide, Karpathy — LLM Wiki Gist, LLM Wiki Pattern, Lum1104, Lum1104 — Understand-Anything README, Memex (+5 more)
 
-### Community 12 - "Wiki Operating Contracts"
-Cohesion: 0.67
-Nodes (3): AGENTS.md (agent operating contract), CLAUDE.md (LLM-WIKI schema & operating contract), Remote Rebase-First Editing Policy
+### Community 6 - "Reading: The Martian"
+Cohesion: 0.6
+Nodes (5): 앤디 위어 (Andy Weir), 교보문고 — 마션(스페셜 에디션), 마션(스페셜 에디션), Reading Index, The Martian
 
 ## Knowledge Gaps
-- **57 isolated node(s):** `TIL Index`, `Notes 인덱스`, `Heroku`, `Software-as-a-Service (SaaS)`, `Parallel Subagents` (+52 more)
+- **4 isolated node(s):** `Weakness Mining`, `Harness Proposal`, `Meta-Harness`, `The Martian`
   These have ≤1 connection - possible missing edges or undocumented components.
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `02.wiki/log.md (chronological work log)` connect `LLM Wiki & Knowledge Graphs` to `Anthropic Security & Models`, `Harness Engineering & Self-Harness`, `Claude Code Auto Mode & Dynamic Workflows`, `Actix Web Request/Response`, `Actix Web Patterns (wiki)`?**
-  _High betweenness centrality (0.162) - this node is a cross-community bridge._
-- **Why does `Index` connect `Harness Engineering & Self-Harness` to `Anthropic Security & Models`, `Claude Code Auto Mode & Dynamic Workflows`, `Actix Web Request/Response`, `Actix Actor Framework`, `Actix Web Patterns (wiki)`, `The Martian (Reading)`?**
-  _High betweenness centrality (0.124) - this node is a cross-community bridge._
-- **Why does `Agent Harness Design` connect `Harness Engineering & Self-Harness` to `Anthropic Security & Models`, `Claude Code Auto Mode & Dynamic Workflows`, `LLM Wiki & Knowledge Graphs`?**
-  _High betweenness centrality (0.105) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `Agent Harness Design` (e.g. with `Harness Engineering` and `Harness design for long-running application development (article)`) actually correct?**
-  _`Agent Harness Design` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 3 inferred relationships involving `Harness Engineering` (e.g. with `Agent Harness Design` and `Context Resets vs. Compaction`) actually correct?**
-  _`Harness Engineering` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `TIL Index`, `Notes 인덱스`, `Heroku` to the rest of the system?**
-  _57 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Actix Web Server & Middleware` be split into smaller, more focused modules?**
-  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+- **Why does `Log` connect `Refactoring & Code Quality` to `Agent Harness & Workflows`, `Anthropic Models & Security`, `GoF Design Patterns`, `Actix / Rust Web`, `LLM Wiki & Knowledge Graphs`, `Reading: The Martian`?**
+  _High betweenness centrality (0.526) - this node is a cross-community bridge._
+- **Why does `Index` connect `Actix / Rust Web` to `Agent Harness & Workflows`, `Refactoring & Code Quality`, `Anthropic Models & Security`, `GoF Design Patterns`, `LLM Wiki & Knowledge Graphs`, `Reading: The Martian`?**
+  _High betweenness centrality (0.261) - this node is a cross-community bridge._
+- **Why does `Overview` connect `Agent Harness & Workflows` to `Refactoring & Code Quality`, `Anthropic Models & Security`, `GoF Design Patterns`, `Actix / Rust Web`, `LLM Wiki & Knowledge Graphs`?**
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
+- **What connects `Weakness Mining`, `Harness Proposal`, `Meta-Harness` to the rest of the system?**
+  _4 weakly-connected nodes found - possible documentation gaps or missing edges._
