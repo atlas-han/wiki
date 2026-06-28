@@ -5,7 +5,7 @@ tags: [engineering, design-patterns, gof, structural]
 created: 2026-06-27
 updated: 2026-06-27
 category: pattern
-related: [design-patterns, design-pattern-adapter, design-pattern-bridge, design-pattern-composite]
+related: [design-patterns, design-pattern-adapter, design-pattern-bridge, design-pattern-composite, actix-web-middleware]
 first-seen: refactoring-guru-ko-design-patterns
 sources: [refactoring-guru-ko-design-patterns]
 ---
@@ -56,3 +56,4 @@ sources: [refactoring-guru-ko-design-patterns]
 
 - [[refactoring-guru-ko-design-patterns]] — 데코레이터 원문: https://refactoring.guru/ko/design-patterns/decorator
 - [[design-patterns]]
+- 실무 예: [[actix-web-middleware]] — `Transform`+`Service` 미들웨어가 내부 service를 감싸 전·후처리 추가

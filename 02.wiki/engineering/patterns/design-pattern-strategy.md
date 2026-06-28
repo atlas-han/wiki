@@ -5,7 +5,7 @@ tags: [engineering, design-patterns, gof, behavioral]
 created: 2026-06-27
 updated: 2026-06-27
 category: pattern
-related: [design-patterns, design-pattern-chain-of-responsibility, design-pattern-command, design-pattern-iterator]
+related: [design-patterns, design-pattern-chain-of-responsibility, design-pattern-command, design-pattern-iterator, actix-web-handlers-responders, actix-web-extractors]
 first-seen: refactoring-guru-ko-design-patterns
 sources: [refactoring-guru-ko-design-patterns]
 ---
@@ -49,3 +49,4 @@ sources: [refactoring-guru-ko-design-patterns]
 ## References
 - [[refactoring-guru-ko-design-patterns]] — 전략 (Strategy) 원문: https://refactoring.guru/ko/design-patterns/strategy
 - [[design-patterns]]
+- 실무 예: [[actix-web-handlers-responders]] (`Responder.respond_to` 다형성) · [[actix-web-extractors]] (`FromRequest` 타입별 추출)

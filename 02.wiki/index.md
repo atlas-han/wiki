@@ -21,14 +21,19 @@ updated: 2026-06-27
 ## Entities
 
 ### Persons
+- [[adam-wiggins]] — [[heroku|Heroku]] 공동창업자, [[twelve-factor-app]] 방법론 저자
 - [[andrej-karpathy]] — AI 연구자·교육자, [[llm-wiki-pattern]] 원안 저자
 - [[geoff-huntley]] — [[ralph-wiggum-method|Ralph]] 자율 루프 패턴 명명·정리 (ghuntley.com)
 - [[jarred-sumner]] — [[bun|Bun]] 제작자, [[dynamic-workflows]]로 Zig→Rust 포팅 사례
+- [[cory-dolphin]] — [[nextdoor|Nextdoor]] Head of Engineering, [[outcome-engineering]] 프레이밍 제시
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
+- [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
 - [[vannevar-bush]] — 1945년 [[memex]] 비전 제시 (As We May Think)
 
 ### Organizations
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
+- [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입
+- [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널
 - [[cloudflare]] — 클라우드 인프라·보안 회사, [[project-glasswing]] 파트너
 - [[mozilla]] — Firefox 개발 오픈소스 비영리, [[project-glasswing]] 파트너
@@ -51,6 +56,8 @@ updated: 2026-06-27
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
 - [[managed-agents]] — Claude Platform의 호스티드 meta-harness
 - [[project-glasswing]] — Anthropic ~50개 파트너 협업 사이버보안 이니셔티브
+- [[heroku]] — 초기 PaaS 플랫폼, [[twelve-factor-app]] 방법론의 관찰 기반
+- [[codex]] — [[openai|OpenAI]] coding agent (GPT‑5.4/5.5, Fast Mode), [[claude-code]] 대응 제품
 
 ### Tools
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
@@ -104,6 +111,7 @@ updated: 2026-06-27
 - [[llm-coding-guidelines]] — LLM 코딩 어시스턴트용 CLAUDE.md 4원칙 (Think / Simplicity / Surgical / Goal-Driven)
 - [[surgical-edits]] — *"Every changed line should trace directly to the user's request"* — 외과 수술적 코드 수정 원칙
 - [[verifiable-goals]] — 모호한 task를 *test → pass* 형식의 검증 가능한 goal로 변환
+- [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 1)
 
 ---
 
@@ -119,6 +127,7 @@ updated: 2026-06-27
 
 ### Patterns
 - [[pets-vs-cattle]] — 인프라 일반 원칙, [[brain-hands-decoupling]]의 사상적 출처
+- [[twelve-factor-app]] — SaaS 앱 12원칙(config-in-env·stateless·dev/prod parity), cloud-native 토대 (sources: 1)
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter) + LLM 분업의 코드 분석 패턴
 - [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브.
 - [[refactoring]] — behavior를 유지하면서 내부 구조를 개선하는 작은 변경들의 연속.
@@ -187,13 +196,15 @@ updated: 2026-06-27
 - [[papanuvo-self-harness]] — Self-Harness 한국어 해설 (파파누보, tistory, 2026-06-12)
 - [[refactoring-guru-ko-design-patterns]] — Refactoring.Guru 한국어 Design Patterns 카탈로그(GoF 22개 패턴, 2026-06-27 ingest)
 - [[refactoring-guru-refactoring]] — Refactoring.Guru Refactoring 카탈로그(code smells 23개 + technique families 6개, 2026-06-27 ingest)
+- [[12factor-net]] — The Twelve-Factor App, SaaS 앱 12원칙 방법론 (12factor.net, Adam Wiggins/Heroku, 2026-06-27 ingest)
+- [[openai-nextdoor-codex]] — Nextdoor의 Codex(GPT‑5.4/5.5) 도입 케이스 스터디, [[outcome-engineering]] 출처 (openai.com, 2026-06-27 ingest)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 161 (log 포함; Refactoring.Guru refactoring ingest로 source 1 + engineering pages 33 추가)
+- 총 페이지 수: 172 (log 포함; Nextdoor/Codex ingest로 source 1 + concept 1 + entity 4 추가)
 - 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
-- 마지막 ingest: 2026-06-27 ([[refactoring-guru-refactoring|Refactoring.Guru Refactoring]] — [[refactoring]] 허브 + [[code-smells]] 23개 + [[refactoring-techniques]] family 6개)
+- 마지막 ingest: 2026-06-27 ([[openai-nextdoor-codex|How engineers at Nextdoor use Codex]] — [[outcome-engineering]] 개념 + [[openai]]·[[codex]]·[[nextdoor]]·[[cory-dolphin]], 위키 첫 OpenAI 생태계 진입)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
 - 마지막 갱신: 2026-06-27

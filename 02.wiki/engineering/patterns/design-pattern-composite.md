@@ -5,7 +5,7 @@ tags: [engineering, design-patterns, gof, structural]
 created: 2026-06-27
 updated: 2026-06-27
 category: pattern
-related: [design-patterns, design-pattern-adapter, design-pattern-bridge, design-pattern-decorator]
+related: [design-patterns, design-pattern-adapter, design-pattern-bridge, design-pattern-decorator, actix-web-routing]
 first-seen: refactoring-guru-ko-design-patterns
 sources: [refactoring-guru-ko-design-patterns]
 ---
@@ -53,3 +53,4 @@ sources: [refactoring-guru-ko-design-patterns]
 
 - [[refactoring-guru-ko-design-patterns]] — 복합체 원문: https://refactoring.guru/ko/design-patterns/composite
 - [[design-patterns]]
+- 실무 예: [[actix-web-routing]] — 중첩 `web::scope`가 resource·하위 scope를 자식으로 담는 트리

@@ -5,7 +5,7 @@ tags: [engineering, design-patterns, gof, structural]
 created: 2026-06-27
 updated: 2026-06-27
 category: pattern
-related: [design-patterns, design-pattern-bridge, design-pattern-composite, design-pattern-decorator]
+related: [design-patterns, design-pattern-bridge, design-pattern-composite, design-pattern-decorator, actix-web-extractors]
 first-seen: refactoring-guru-ko-design-patterns
 sources: [refactoring-guru-ko-design-patterns]
 ---
@@ -53,3 +53,4 @@ sources: [refactoring-guru-ko-design-patterns]
 
 - [[refactoring-guru-ko-design-patterns]] — 어댑터 원문: https://refactoring.guru/ko/design-patterns/adapter
 - [[design-patterns]]
+- 실무 예: [[actix-web-extractors]] — `FromRequest`가 raw 요청을 타입 안전 값(`Path`/`Json`/`Query`)으로 변환

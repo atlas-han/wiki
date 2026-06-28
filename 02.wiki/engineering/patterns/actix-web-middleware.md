@@ -4,8 +4,8 @@ type: engineering
 category: pattern
 tags: [actix-web, rust, middleware, cors]
 created: 2026-06-06
-updated: 2026-06-06
-related: [actix-web-error-handling, actix-web-handlers-responders, actix-web-application-state]
+updated: 2026-06-27
+related: [actix-web-error-handling, actix-web-handlers-responders, actix-web-application-state, design-pattern-decorator]
 first-seen: actix-web-official-docs
 sources: [actix-web-official-docs]
 ---
@@ -309,6 +309,12 @@ let cors = Cors::default()
 - **공통 횡단 관심사**(logging, 압축, 헤더, 인증, 세션, CORS)는 핸들러가 아니라 미들웨어로.
 - 짧은 로직이면 `wrap_fn` / `from_fn`, 상태를 들고 재사용할 미들웨어면 `Transform` + `Service` 직접 구현.
 - 에러 응답 본문/헤더를 후처리하려면 `ErrorHandlers` → [[actix-web-error-handling]].
+
+## 디자인 패턴 관점
+
+미들웨어의 `Transform`+`Service` 2단계 구조는 **[[design-pattern-decorator|데코레이터]]** 패턴이다. `SayHiMiddleware<S>`가 내부 `service: S`를 감싸 *동일한* `Service` 인터페이스를 구현하고, `self.service.call(req)`의 전후에 자기 동작을 더한다 — 원본을 훼손하지 않고 런타임에 행동을 덧씌우는 데코레이터의 정의 그대로다. 여러 `wrap()`을 스택처럼 중첩하는 것도 데코레이터 래퍼 체인에 대응한다.
+
+> 요청을 도중에 멈출 수 있는 [[design-pattern-chain-of-responsibility|책임 연쇄]]와 달리 일반 미들웨어는 항상 다음으로 흐름을 이어간다(데코레이터). 단락(short-circuit) 분기는 `ErrorHandlers`나 [[actix-web-routing|guard]] 쪽 책임이다.
 
 ## References
 - [[actix-web-official-docs]] — `01.raw/docs/actix-web/middleware.md`, `cors.md`

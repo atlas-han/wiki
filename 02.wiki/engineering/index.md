@@ -28,6 +28,7 @@ updated: 2026-06-27
 디자인 패턴, 아키텍처 패턴 (Clean Architecture, DDD, CQRS, Event Sourcing 등).
 
 - [[pets-vs-cattle]] — 인프라 운영의 mental model. LLM-에이전트 인프라([[brain-hands-decoupling]])에 적용된 사례 있음.
+- [[twelve-factor-app]] — SaaS 앱 12원칙(config-in-env·stateless·dev/prod parity), cloud-native의 사상적 토대 (sources: 1).
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter)와 LLM을 각자 잘하는 일로 분업하는 코드 분석 패턴.
 - [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브(생성·구조·행동).
 - [[refactoring]] — behavior를 유지하면서 내부 구조를 개선하는 작은 변경들의 연속.

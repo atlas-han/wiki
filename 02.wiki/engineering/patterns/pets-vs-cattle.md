@@ -3,11 +3,11 @@ title: Pets vs. Cattle
 type: engineering
 category: pattern
 tags: [infrastructure, operations, cloud, reliability]
-related: [brain-hands-decoupling, agent-harness-design]
+related: [brain-hands-decoupling, agent-harness-design, twelve-factor-app]
 first-seen: anthropic-managed-agents
 sources: [anthropic-managed-agents]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-27
 ---
 
 # Pets vs. Cattle
@@ -42,7 +42,12 @@ updated: 2026-05-25
 
 > In our case, the server became that pet; if a container failed, the session was lost. If a container was unresponsive, we had to nurse it back to health.
 
+## 앱 레벨 버전
+
+같은 사상을 애플리케이션 설계 원칙으로 옮긴 것이 [[twelve-factor-app|12-Factor App]]의 **VI. Processes(무상태)**·**IX. Disposability(빠른 기동·graceful shutdown)**다. 인프라 운영(pets vs cattle)이 *인스턴스*에 이름·state를 묶지 말라면, 12-factor는 *프로세스*에 state를 묶지 말라고 한다 — 같은 원칙의 두 레이어.
+
 ## References
 
 - [[anthropic-managed-agents]]
+- [[twelve-factor-app]] — 무상태·disposability의 앱 설계 원칙판
 - 외부: [Pets vs Cattle, Cloudscaling (2012)](https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)

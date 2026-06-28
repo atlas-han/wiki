@@ -5,7 +5,7 @@ tags: [engineering, design-patterns, gof, behavioral]
 created: 2026-06-27
 updated: 2026-06-27
 category: pattern
-related: [design-patterns, design-pattern-command, design-pattern-iterator, design-pattern-mediator]
+related: [design-patterns, design-pattern-command, design-pattern-iterator, design-pattern-mediator, actix-web-routing]
 first-seen: refactoring-guru-ko-design-patterns
 sources: [refactoring-guru-ko-design-patterns]
 ---
@@ -52,3 +52,4 @@ sources: [refactoring-guru-ko-design-patterns]
 
 - [[refactoring-guru-ko-design-patterns]] — 책임 연쇄 원문: https://refactoring.guru/ko/design-patterns/chain-of-responsibility
 - [[design-patterns]]
+- 실무 예: [[actix-web-routing]] — 등록순 route/`Guard` 매칭(첫 매칭 처리, false면 다음으로)

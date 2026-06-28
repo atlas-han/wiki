@@ -5,7 +5,7 @@ tags: [engineering, design-patterns, gof, creational]
 created: 2026-06-27
 updated: 2026-06-27
 category: pattern
-related: [design-patterns, design-pattern-factory-method, design-pattern-abstract-factory, design-pattern-prototype]
+related: [design-patterns, design-pattern-factory-method, design-pattern-abstract-factory, design-pattern-prototype, actix-web-handlers-responders]
 first-seen: refactoring-guru-ko-design-patterns
 sources: [refactoring-guru-ko-design-patterns]
 ---
@@ -45,3 +45,4 @@ sources: [refactoring-guru-ko-design-patterns]
 ## References
 - [[refactoring-guru-ko-design-patterns]] — 빌더 원문: https://refactoring.guru/ko/design-patterns/builder
 - [[design-patterns]]
+- 실무 예: [[actix-web-handlers-responders]] — `HttpResponse::Ok().content_type(..).body(..)` 빌더 체인

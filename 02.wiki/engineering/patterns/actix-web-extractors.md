@@ -4,8 +4,8 @@ type: engineering
 category: pattern
 tags: [actix-web, rust, extractors, from-request, serde, web]
 created: 2026-06-06
-updated: 2026-06-06
-related: [actix-web-handlers-responders, actix-web-application-state, actix-web-routing, actix-web-error-handling, serde]
+updated: 2026-06-27
+related: [actix-web-handlers-responders, actix-web-application-state, actix-web-routing, actix-web-error-handling, serde, design-pattern-adapter, design-pattern-strategy]
 first-seen: actix-web-official-docs
 sources: [actix-web-official-docs]
 ---
@@ -195,9 +195,16 @@ async fn index(mut body: web::Payload) -> Result<HttpResponse, Error> {
 | `web::Data<T>` | DB 풀·설정 등 공유 상태 → [[actix-web-application-state]] |
 | `web::Bytes` / `web::Payload` | raw body·스트리밍·커스텀 추출기 |
 
+## 디자인 패턴 관점
+
+`FromRequest`는 **[[design-pattern-adapter|어댑터]]** 패턴이다 — 호환되지 않는 인터페이스(raw `HttpRequest`/바이트 스트림/path params)를 핸들러가 기대하는 타입(`Path<T>`·`Json<T>`·`Query<T>`)으로 변환한다. 어댑터가 Adaptee를 감싸 Target 인터페이스로 노출하듯, 추출기는 요청을 감싸 타입 안전한 값으로 노출한다.
+
+동시에 추출기 *종류 선택*은 **[[design-pattern-strategy|전략]]** 으로도 볼 수 있다 — 같은 "요청에서 값 꺼내기"를 `Path`/`Query`/`Json`/`Form`이 각자 다른 알고리즘으로 구현하고, 핸들러 인자에 선언한 타입이 곧 런타임에 선택된 전략이다.
+
 ## References
 
 - [[actix-web]] — 프레임워크 허브
+- [[design-pattern-adapter]] · [[design-pattern-strategy]] — `FromRequest`의 디자인 패턴 대응
 - [[actix-web-handlers-responders]] — 핸들러가 추출기를 받고 응답을 반환하는 짝
 - [[actix-web-application-state]] — `web::Data` 등록·공유 패턴
 - [[actix-web-routing]] — 동적 세그먼트 패턴 정의

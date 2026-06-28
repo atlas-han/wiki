@@ -47,3 +47,4 @@ Refactoring.Guru가 정리하는 대표적 시점:
 ## References
 
 - [[refactoring-guru-refactoring]]
+- [[martin-fowler]] — *Refactoring: Improving the Design of Existing Code* 저자, 이 카탈로그의 사상적 기반

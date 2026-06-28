@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering]
 first-seen: multica-karpathy-skills-claude-md
 sources: [multica-karpathy-skills-claude-md]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-06-27
 ---
 
 # Verifiable Goals
@@ -45,6 +45,7 @@ updated: 2026-05-25
 - [[sprint-contract]] — 다중 에이전트 코딩에서 generator·evaluator가 **sprint 시작 전** 합의하는 "done의 정의". 본 원칙의 multi-agent 변형.
 - [[generator-evaluator-pattern]] — 검증을 별도 agent로 분리. verifiable goal을 evaluator가 들고 있는 형태.
 - [[ralph-wiggum-method]] — `while :; do cat PROMPT.md | claude-code ; done` 무한 루프. PROMPT.md 안에 verifiable goal이 있어야 발산하지 않음.
+- [[outcome-engineering]] — Nextdoor/Codex 사례의 조직 관점 framing. *"원하는 결과를 정의한다"*가 곧 verifier(테스트·스크린샷·성능 기준)를 먼저 정의하는 것 — 같은 원리의 외부(비-Anthropic) 서술.
 
 ## 왜 작동하는가
 

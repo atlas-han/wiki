@@ -341,3 +341,30 @@ updated: 2026-06-27
 - 변경 3: [[refactoring]] 허브에 "언제 리팩터링하나"(삼진 규칙 + 기능 추가/버그 수정/코드 리뷰 시점) 섹션 추가.
 - 검증: smell boilerplate 잔존 0건, 23개 전부 5개 섹션 존재, technique 표 영어 "Problem:/Solution:" 잔존 0건, 23 smell + 6 technique 파일의 [[wiki-link]] 전부 resolve, frontmatter 보존.
 - 미변경: [[code-smells]]·[[refactoring-techniques]]·[[technical-debt]] 허브는 이미 분류·링크가 충실해 그대로. [[refactoring-guru-refactoring]] source도 그대로.
+
+## [2026-06-27] ingest | The Twelve-Factor App
+- 소스: https://12factor.net/ ([[adam-wiggins|Adam Wiggins]]/[[heroku|Heroku]], 2011), source-type docs. raw: `01.raw/articles/2026-05-25_The Twelve-Factor App.md`.
+- 협의: 사용자가 "12요소 레퍼런스 중심" 관점 선택. raw 클리핑이 인트로(Introduction/Background/Who should read)만 캡처돼 12요소 본문은 표준(canonical) 지식으로 보완하기로 합의.
+- 신규 source: [[12factor-net]] (요약·핵심 인용·등장 개체; raw 범위 한계 ⚠️ 명시).
+- 신규 engineering/pattern: [[twelve-factor-app|Twelve-Factor App 레퍼런스]] — 12 factor 각각 *원칙→핵심→안티패턴* + 분류 표 + 현대 인프라(컨테이너/K8s) 연결 + 한계(stateless 전제).
+- 신규 entity 3: [[adam-wiggins]](person)·[[heroku]](product, PaaS)·[[martin-fowler]](person, *Refactoring*·*PoEAA* 저자).
+- 연결: [[pets-vs-cattle]]에 "앱 레벨 버전"(VI 무상태·IX disposability) 섹션 + related/References cross-link, updated 갱신. [[refactoring]] References에 [[martin-fowler]] 추가 → refactoring과 12-factor를 Fowler "공유 vocabulary" 사상으로 묶음.
+- 인덱스: [[02.wiki/index]] Persons(adam-wiggins·martin-fowler)·Products(heroku)·Patterns·Sources·통계(161→166), [[02.wiki/engineering/index]] Patterns, [[overview]] 진화 로그 1줄.
+- 미변경: raw/ 원본(수정 금지). 12factor 본문은 raw에 없어 표준 지식 보완임을 source·overview에 ⚠️ 표기.
+
+## [2026-06-27] ingest | How engineers at Nextdoor use Codex
+- 소스: https://openai.com/index/nextdoor/ (OpenAI 고객 케이스 스터디, 2026-06-09), source-type article. raw: `01.raw/articles/2026-06-10_How engineers at Nextdoor use Codex to build without limits.md`.
+- 협의: 사용자가 "Outcome engineering 개념 중심" 관점 선택 (엔티티 최소화). 벤더 마케팅 출처임을 source·concept에 ⚠️ 명시.
+- 신규 source: [[openai-nextdoor-codex]] (요약·핵심 인용·등장 개체; 성격=마케팅 ⚠️).
+- 신규 concept(pattern): [[outcome-engineering]] — Cory Dolphin coinage. how 프롬프팅→결과 정의 전환 + "스택 위로 이동" 조직 귀결 + 한계(벤더 주장). [[verifiable-goals]](result=verifier)·[[sprint-contract]]·[[harness-engineering]]·[[agent-harness-design]]와 교차.
+- 신규 entity 4 (위키 첫 OpenAI 생태계): [[openai]](org)·[[codex]](product, GPT‑5.4/5.5·Fast Mode)·[[nextdoor]](org)·[[cory-dolphin]](person). GPT 모델은 별도 페이지 없이 codex/openai 내 인라인(컷오프 이후 스펙 날조 금지).
+- 연결: [[verifiable-goals]] related+자매개념에 [[outcome-engineering]] 상호링크, updated 갱신.
+- 인덱스: [[02.wiki/index]] Persons(cory-dolphin)·Organizations(openai·nextdoor)·Products(codex)·Concepts(outcome-engineering)·Sources·통계(166→172), [[overview]] 진화 로그 1줄(첫 OpenAI 축 진입).
+- 미변경: raw/ 원본(수정 금지).
+
+## [2026-06-27] meta | 디자인 패턴 ↔ actix-web cross-link (graphify gap 메우기)
+- 계기: `/graphify`(02.wiki, 176노드·7커뮤니티) 그래프 추적에서 GoF 디자인 패턴 클러스터(C3)가 Refactoring(C1)을 통해서만 본체에 붙고, `Actix / Rust Web`(C4) 코드와는 의미 엣지 0개인 문서화 갭을 발견.
+- 추가한 패턴 매핑(방어 가능한 것만, 억지 매핑 배제): 미들웨어(`Transform`+`Service`)→[[design-pattern-decorator|데코레이터]]; 추출기(`FromRequest`)→[[design-pattern-adapter|어댑터]](+[[design-pattern-strategy|전략]]); `Responder`→[[design-pattern-strategy|전략]] + `HttpResponseBuilder`→[[design-pattern-builder|빌더]]; 라우팅(등록순 guard 매칭)→[[design-pattern-chain-of-responsibility|책임 연쇄]] + 중첩 scope→[[design-pattern-composite|복합체]].
+- 편집 10개: actix 4개([[actix-web-middleware]]·[[actix-web-extractors]]·[[actix-web-handlers-responders]]·[[actix-web-routing]])에 "디자인 패턴 관점" 섹션 + related/updated; GoF 6개(decorator·adapter·strategy·builder·chain-of-responsibility·composite)에 "실무 예" 백링크 + related. 전부 양방향.
+- 검증: design-pattern↔actix 엣지 0→8개(전부 EXTRACTED, 1-hop). graph.json/GRAPH_REPORT.md/graph.html 재빌드(176노드·1156엣지·7커뮤니티). C3·C4는 분리 유지하되 8개 다리로 연결.
+- 정직성 메모: 미들웨어는 항상 다음으로 흐름을 이어가므로 책임 연쇄(단락 가능)가 아닌 데코레이터로 매핑(데코레이터 페이지의 구분 그대로). 단락 분기는 guard/ErrorHandlers로 명시.

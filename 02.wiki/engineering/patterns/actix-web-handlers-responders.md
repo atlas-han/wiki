@@ -4,8 +4,8 @@ type: engineering
 category: pattern
 tags: [actix-web, rust, handlers, responder, http-response, serde]
 created: 2026-06-06
-updated: 2026-06-06
-related: [actix-web-extractors, actix-web-error-handling, actix-web-middleware, serde]
+updated: 2026-06-27
+related: [actix-web-extractors, actix-web-error-handling, actix-web-middleware, serde, design-pattern-strategy, design-pattern-builder]
 first-seen: actix-web-official-docs
 sources: [actix-web-official-docs]
 ---
@@ -178,9 +178,16 @@ async fn main() -> std::io::Result<()> {
 | `Either<L, R>` | 분기마다 응답 타입이 다를 때 |
 | `.streaming()` | 대용량·실시간 본문 |
 
+## 디자인 패턴 관점
+
+`Responder` trait은 **[[design-pattern-strategy|전략]]** 패턴이다 — `respond_to(self, &HttpRequest) -> HttpResponse`라는 공통 인터페이스를 `&str`·`String`·`web::Json<T>`·커스텀 타입이 *각자 다른 알고리즘*으로 구현하고, 프레임워크(Context)는 반환 타입이 무엇인지 모른 채 균일하게 `respond_to()`만 호출한다. 핸들러의 반환 타입을 바꾸는 것이 곧 응답 변환 전략을 교체하는 것이다.
+
+응답 자체를 조립하는 `HttpResponse::Ok().content_type(...).insert_header(...).body(...)` 체인은 이 페이지가 이미 "빌더 패턴"이라 부른 그대로 **[[design-pattern-builder|빌더]]** 다 — 복잡한 `HttpResponse`를 단계별 메서드로 구성하고 `.body()`/`.finish()`로 마무리한다(한 번만 finalize).
+
 ## References
 
 - [[actix-web]] — 프레임워크 허브
+- [[design-pattern-strategy]] (`Responder`) · [[design-pattern-builder]] (`HttpResponseBuilder`) — 디자인 패턴 대응
 - [[actix-web-extractors]] — 핸들러가 받는 추출기 (`FromRequest`)
 - [[actix-web-error-handling]] — `respond_to`가 반환하는 `Error` 처리
 - [[actix-web-middleware]] — `Compress` 등 미들웨어

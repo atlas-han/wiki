@@ -4,8 +4,8 @@ type: engineering
 category: pattern
 tags: [actix-web, rust, routing, url-dispatch, guards]
 created: 2026-06-06
-updated: 2026-06-06
-related: [actix-web-extractors, actix-web-application-state, actix-web-handlers-responders]
+updated: 2026-06-27
+related: [actix-web-extractors, actix-web-application-state, actix-web-handlers-responders, design-pattern-chain-of-responsibility, design-pattern-composite]
 first-seen: actix-web-official-docs
 sources: [actix-web-official-docs]
 ---
@@ -215,9 +215,16 @@ async fn main() -> std::io::Result<()> {
 
 매칭되는 resource/route가 없으면 default resource가 쓰이며 기본은 *NOT FOUND*. `App::default_service()`로 이를 덮어쓸 수 있다(예: GET 외 method에 `MethodNotAllowed` 반환).
 
+## 디자인 패턴 관점
+
+route 매칭은 **[[design-pattern-chain-of-responsibility|책임 연쇄]]** 다 — 요청이 들어오면 등록 순서대로 각 resource/route를 검사하고, route의 모든 `Guard`가 `true`면 그 핸들러가 처리(체인 종료), 하나라도 `false`면 건너뛰고 다음으로 넘긴다. "처리하거나 다음으로 넘긴다 · 첫 매칭에서 멈춘다 · 순서가 중요하다"는 책임 연쇄의 정의 그대로다(그래서 *더 구체적인 패턴을 먼저* 등록해야 한다).
+
+중첩 `web::scope("/users")` 구조는 **[[design-pattern-composite|복합체]]** 다 — scope가 resource와 하위 scope를 자식으로 담아 prefix를 합성하는 트리를 이루고, `url_for`/매칭이 그 트리를 재귀적으로 순회한다. 단일 resource든 중첩 scope든 `App::service()`로 균일하게 등록한다.
+
 ## References
 
 - [[actix-web-official-docs]] — URL Dispatch (Resource configuration, Route matching, Pattern syntax, Scoping, Guards, `url_for`, NormalizePath, default_service)
+- [[design-pattern-chain-of-responsibility]] (route/guard 매칭) · [[design-pattern-composite]] (중첩 scope 트리) — 디자인 패턴 대응
 - 추출기: [[actix-web-extractors]]
 - 핸들러·응답: [[actix-web-handlers-responders]]
 - 스코프 상태: [[actix-web-application-state]]

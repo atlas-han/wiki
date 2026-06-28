@@ -56,6 +56,8 @@ sources: []
 
 새 소스마다 한 줄씩 누적:
 
+- *2026-06-27*: [[openai-nextdoor-codex|How engineers at Nextdoor use Codex]] ingest (openai.com 케이스 스터디) — 위키 **첫 [[openai|OpenAI]]/[[codex|Codex]]/GPT 생태계** 진입(self-harness의 첫 중국 lab에 이은 두 번째 비-Anthropic 축). 핵심 개념 [[outcome-engineering]] 신설 — [[cory-dolphin|Cory Dolphin]]의 *"how 반복 프롬프팅 → 원하는 결과 정의·engineer"* 프레이밍을 [[verifiable-goals]](result=verifier)·[[sprint-contract]]·[[harness-engineering]]("harness for investigation")와 교차. Anthropic 계열 framing과 외부 관점이 *같은 원리의 다른 서술*로 합류. ⚠️ 벤더 마케팅 출처라 정량 근거 없는 조직·생산성 주장임을 명시, GPT‑5.4/5.5 스펙은 컷오프 이후로 소스 범위만 기록.
+- *2026-06-27*: [[twelve-factor-app|The Twelve-Factor App]] ingest (12factor.net, [[adam-wiggins|Adam Wiggins]]/[[heroku|Heroku]]) — 보조 도메인에 cloud-native 방법론 레퍼런스 추가. config-in-env·stateless process·dev/prod parity 등 12원칙을 정리하고, [[pets-vs-cattle]]의 *무상태·disposability*를 **앱 설계 레이어**로 연결(인프라 운영 ↔ 프로세스 설계의 같은 원칙). [[martin-fowler|Fowler]] 엔티티를 신설해 [[refactoring]](저서 *Refactoring*)과 12-factor(*PoEAA*·*Refactoring* 형식 차용)를 *"문제에 이름을 붙이는 공유 vocabulary"* 사상으로 묶음. ⚠️ raw 클리핑은 인트로만 캡처돼 12요소 본문은 표준 지식으로 보완.
 - *2026-06-27*: [[refactoring-guru-refactoring|Refactoring.Guru Refactoring]] ingest — 보조 도메인에 [[refactoring]] 허브를 추가하고 [[technical-debt]]·[[code-smells]]·[[refactoring-techniques]]를 연결. Code smell 23개를 개별 진단 페이지로, refactoring technique 6개 family를 카탈로그 페이지로 정리해 설계 리뷰 vocabulary를 확장.
 - *2026-06-27*: [[refactoring-guru-ko-design-patterns|Refactoring.Guru 한국어 디자인 패턴]] ingest — 보조 도메인(소프트웨어 엔지니어링)에 [[design-patterns]] 허브와 GoF 패턴 22개 개별 페이지 추가. 생성/구조/행동 분류를 통해 객체 생성 책임, 객체 조합, 협력 흐름의 변경 축을 정리.
 - *2026-05-25*: 위키 초기화 + Karpathy의 LLM Wiki gist를 첫 소스로 ingest, 패턴을 self-document.
