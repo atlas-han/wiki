@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-07-07
+updated: 2026-07-08
 ---
 
 # Index
@@ -175,6 +175,7 @@ updated: 2026-07-07
 
 → 전체 목록은 [[02.wiki/til/index]] 참조
 
+- [[2026-07-08-obsidian-cli]] — Obsidian 공식 CLI로 vault를 terminal-first로 다루기 (설치·핵심 command·agent 통합·한계)
 - [[2026-06-27-conversation-positioning]] — 대화에서 주도권을 잃지 않는 표현과 반응형 표현의 차이
 
 ---
@@ -205,8 +206,8 @@ updated: 2026-07-07
 
 ## 통계
 
-- 총 페이지 수: 174 (log 포함; XDA/Obsidian CLI ingest로 source 1 + engineering/tool 1 추가)
-- 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
+- 총 페이지 수: 175 (log 포함; Obsidian CLI TIL 1 추가)
+- 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
 - 마지막 ingest: 2026-07-07 ([[xda-obsidian-cli-terminal-workflow|Obsidian CLI terminal workflow]] — [[obsidian-cli-workflow]] 개념 추가, [[obsidian]]·[[llm-wiki-pattern]] 갱신)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
-- 마지막 갱신: 2026-07-07
+- 마지막 갱신: 2026-07-08

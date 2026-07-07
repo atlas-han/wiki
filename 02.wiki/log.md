@@ -376,3 +376,8 @@ updated: 2026-07-07
 - 신규 engineering/tool: [[obsidian-cli-workflow]] — Obsidian 공식 CLI를 daily append·search·read/create·move file 중심 terminal workflow로 정리
 - 갱신: [[obsidian]] (CLI command surface 추가), [[llm-wiki-pattern]] (Obsidian을 viewer뿐 아니라 app-aware command API로 연결), [[02.wiki/index|index]], [[02.wiki/engineering/index|engineering/index]], [[overview]], log
 - 핵심 합성: Obsidian CLI는 LLM-WIKI에서 사람의 quick capture friction을 낮추고, [[claude-code|Claude Code]] 같은 agent가 vault를 읽고 검색하고 변경 기록을 남기는 command channel이 될 수 있다. 단 desktop app 실행 의존성과 plugin command 노출 한계를 명시.
+
+## [2026-07-08] til | Obsidian 공식 CLI로 vault를 terminal-first로 다루기
+- 신규 TIL: [[2026-07-08-obsidian-cli]] — 설치(토글 하나)·핵심 command(`daily:append`·`search:context`·`create`·`read`·`move file`)·[[claude-code]] agent 통합·"앱 실행 필수" 한계.
+- 근거 소스: [[xda-obsidian-cli-terminal-workflow]], 상세 개념: [[obsidian-cli-workflow]].
+- 갱신: [[02.wiki/til/index|til/index]](항목 1 + updated), [[02.wiki/index|index]](TIL 섹션·마지막 TIL·통계).

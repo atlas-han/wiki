@@ -301,5 +301,9 @@
   "02.wiki/entities/openai.md": "LiBuilding",
   "02.wiki/entities/codex.md": "LiTerminal",
   "02.wiki/entities/nextdoor.md": "LiBuilding",
-  "02.wiki/entities/cory-dolphin.md": "LiUser"
+  "02.wiki/entities/cory-dolphin.md": "LiUser",
+  "01.raw/articles/2026-07-08_Obsidian's CLI turned my terminal into a note-taking machine, and I stopped opening the app.md": "LiTerminal",
+  "02.wiki/sources/xda-obsidian-cli-terminal-workflow.md": "LiNewspaper",
+  "02.wiki/engineering/tools/obsidian-cli-workflow.md": "LiTerminal",
+  "02.wiki/til/2026-07-08-obsidian-cli.md": "LiSparkles"
 }
