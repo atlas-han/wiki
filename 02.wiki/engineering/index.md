@@ -3,7 +3,7 @@ title: Engineering
 type: overview
 tags: [meta, engineering]
 created: 2026-05-25
-updated: 2026-06-27
+updated: 2026-07-07
 ---
 
 # Engineering
@@ -63,6 +63,7 @@ updated: 2026-06-27
 
 - [[tree-sitter]] — 소스를 concrete syntax tree로 파싱하는 결정론적 incremental 파서 (entities/).
 - [[understand-anything]] — 코드·wiki를 지식 그래프로 만드는 [[claude-code]] 플러그인 (entities/).
+- [[obsidian-cli-workflow]] — Obsidian 공식 CLI를 quick capture·search·daily note append·agent automation의 terminal command surface로 쓰는 workflow.
 - [[actix-web]] — Rust 비동기 웹 프레임워크 (entities/, 위 패턴·시스템 페이지의 허브).
 - [[actix-actor-framework]] · [[tokio]] · [[serde]] — actix 생태계·런타임·직렬화 (entities/).
 

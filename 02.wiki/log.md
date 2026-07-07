@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-27
+updated: 2026-07-07
 ---
 
 # Log
@@ -368,3 +368,11 @@ updated: 2026-06-27
 - 편집 10개: actix 4개([[actix-web-middleware]]·[[actix-web-extractors]]·[[actix-web-handlers-responders]]·[[actix-web-routing]])에 "디자인 패턴 관점" 섹션 + related/updated; GoF 6개(decorator·adapter·strategy·builder·chain-of-responsibility·composite)에 "실무 예" 백링크 + related. 전부 양방향.
 - 검증: design-pattern↔actix 엣지 0→8개(전부 EXTRACTED, 1-hop). graph.json/GRAPH_REPORT.md/graph.html 재빌드(176노드·1156엣지·7커뮤니티). C3·C4는 분리 유지하되 8개 다리로 연결.
 - 정직성 메모: 미들웨어는 항상 다음으로 흐름을 이어가므로 책임 연쇄(단락 가능)가 아닌 데코레이터로 매핑(데코레이터 페이지의 구분 그대로). 단락 분기는 guard/ErrorHandlers로 명시.
+
+## [2026-07-07] ingest | XDA — Obsidian CLI terminal workflow
+- 요청 링크: https://www.xda-developers.com/obsidian-cli-terminal-workflow/
+- 원문 캡처: `01.raw/articles/2026-07-01_Obsidian CLI terminal workflow.md` (저작권 보호 본문 전문 대신 구조화 추출 + command inventory + workflow claims, sha256 포함)
+- 신규 source: [[xda-obsidian-cli-terminal-workflow]]
+- 신규 engineering/tool: [[obsidian-cli-workflow]] — Obsidian 공식 CLI를 daily append·search·read/create·move file 중심 terminal workflow로 정리
+- 갱신: [[obsidian]] (CLI command surface 추가), [[llm-wiki-pattern]] (Obsidian을 viewer뿐 아니라 app-aware command API로 연결), [[02.wiki/index|index]], [[02.wiki/engineering/index|engineering/index]], [[overview]], log
+- 핵심 합성: Obsidian CLI는 LLM-WIKI에서 사람의 quick capture friction을 낮추고, [[claude-code|Claude Code]] 같은 agent가 vault를 읽고 검색하고 변경 기록을 남기는 command channel이 될 수 있다. 단 desktop app 실행 의존성과 plugin command 노출 한계를 명시.

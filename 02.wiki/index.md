@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-06-27
+updated: 2026-07-07
 ---
 
 # Index
@@ -64,7 +64,7 @@ updated: 2026-06-27
 - [[claude-agent-sdk]] — Anthropic 에이전트 빌딩 SDK
 - [[bun]] — JS/TS 런타임·툴킷, [[dynamic-workflows]]로 Zig→Rust 재작성 (99.8% 테스트 통과, 11일)
 - [[playwright-mcp]] — 브라우저 자동화 MCP 서버, evaluator agent의 QA 채널
-- [[obsidian]] — 본 위키의 사용자 측 뷰어
+- [[obsidian]] — 본 위키의 사용자 측 뷰어 + [[obsidian-cli-workflow|CLI terminal workflow]] command surface
 - [[understand-anything]] — 코드·wiki를 지식 그래프로 만드는 [[claude-code]] 플러그인 (멀티 에이전트, sources: 2)
 - [[tree-sitter]] — 소스를 concrete syntax tree로 파싱하는 결정론적 incremental 파서
 - [[actix-web]] — Rust 비동기 웹 프레임워크 (extractor·미들웨어·멀티스레드 HttpServer), actix-web 문서 허브 (sources: 1)
@@ -151,6 +151,7 @@ updated: 2026-06-27
 - [[actix-actor-context]] — actix `Context`·mailbox 용량
 
 ### Tools
+- [[obsidian-cli-workflow]] — Obsidian 공식 CLI로 daily append·search·read/create를 terminal-first workflow와 agent automation에 연결.
 → [[tree-sitter]] · [[understand-anything]] (entities/에 위치)
 
 ---
@@ -198,13 +199,14 @@ updated: 2026-06-27
 - [[refactoring-guru-refactoring]] — Refactoring.Guru Refactoring 카탈로그(code smells 23개 + technique families 6개, 2026-06-27 ingest)
 - [[12factor-net]] — The Twelve-Factor App, SaaS 앱 12원칙 방법론 (12factor.net, Adam Wiggins/Heroku, 2026-06-27 ingest)
 - [[openai-nextdoor-codex]] — Nextdoor의 Codex(GPT‑5.4/5.5) 도입 케이스 스터디, [[outcome-engineering]] 출처 (openai.com, 2026-06-27 ingest)
+- [[xda-obsidian-cli-terminal-workflow]] — XDA의 Obsidian 공식 CLI terminal workflow 사용기, [[obsidian-cli-workflow]] 출처 (2026-07-07 ingest)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 172 (log 포함; Nextdoor/Codex ingest로 source 1 + concept 1 + entity 4 추가)
+- 총 페이지 수: 174 (log 포함; XDA/Obsidian CLI ingest로 source 1 + engineering/tool 1 추가)
 - 마지막 TIL: 2026-06-27 ([[2026-06-27-conversation-positioning|대화 위치]])
-- 마지막 ingest: 2026-06-27 ([[openai-nextdoor-codex|How engineers at Nextdoor use Codex]] — [[outcome-engineering]] 개념 + [[openai]]·[[codex]]·[[nextdoor]]·[[cory-dolphin]], 위키 첫 OpenAI 생태계 진입)
+- 마지막 ingest: 2026-07-07 ([[xda-obsidian-cli-terminal-workflow|Obsidian CLI terminal workflow]] — [[obsidian-cli-workflow]] 개념 추가, [[obsidian]]·[[llm-wiki-pattern]] 갱신)
 - 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
-- 마지막 갱신: 2026-06-27
+- 마지막 갱신: 2026-07-07

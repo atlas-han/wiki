@@ -2,13 +2,13 @@
 title: Obsidian
 type: entity
 category: tool
-tags: [knowledge-base, markdown, viewer, wiki]
+tags: [knowledge-base, markdown, viewer, wiki, cli]
 aliases: [옵시디언]
-sources: [karpathy-llm-wiki-gist]
+sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow]
 links:
   - https://obsidian.md
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-07-07
 ---
 
 # Obsidian
@@ -24,6 +24,7 @@ updated: 2026-05-25
   - **Attachment 다운로드** 핫키 — 이미지를 `raw/assets/` 등에 로컬 저장
   - **Dataview** 플러그인 — frontmatter 기반 동적 테이블
   - **Marp** 플러그인 — 마크다운으로 슬라이드 생성
+- [[xda-obsidian-cli-terminal-workflow]] 이후 추가 관점: Obsidian 1.12 계열의 공식 CLI는 vault를 GUI viewer뿐 아니라 terminal command surface로 만든다. `obsidian daily:append`, `search:context`, `read`, `create`, `move file` 같은 명령은 quick capture·검색·agent automation의 context switch를 줄인다. 단, desktop app이 실행 중이어야 하며 plugin workflow는 plugin이 command를 노출해야 한다. → [[obsidian-cli-workflow]]
 
 ## Karpathy의 비유
 
