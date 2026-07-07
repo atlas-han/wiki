@@ -3,7 +3,7 @@ title: Engineering
 type: overview
 tags: [meta, engineering]
 created: 2026-05-25
-updated: 2026-07-07
+updated: 2026-07-08
 ---
 
 # Engineering
@@ -34,7 +34,14 @@ updated: 2026-07-07
 - [[refactoring]] — behavior를 유지하면서 내부 구조를 개선하는 작은 변경들의 연속.
 - [[technical-debt]] — 빠른 delivery를 위해 미룬 구조 개선이 이후 변경 비용의 이자로 돌아오는 상태.
 - [[code-smells]] — 리팩터링 후보를 찾는 진단 vocabulary(23개 smell).
+  - *Bloaters*: [[long-method]] · [[large-class]] · [[primitive-obsession]] · [[long-parameter-list]] · [[data-clumps]]
+  - *OO Abusers*: [[alternative-classes-with-different-interfaces]] · [[refused-bequest]] · [[switch-statements]] · [[temporary-field]]
+  - *Change Preventers*: [[divergent-change]] · [[parallel-inheritance-hierarchies]] · [[shotgun-surgery]]
+  - *Dispensables*: [[comments]] · [[duplicate-code]] · [[data-class]] · [[dead-code]] · [[lazy-class]] · [[speculative-generality]]
+  - *Couplers*: [[feature-envy]] · [[inappropriate-intimacy]] · [[message-chains]] · [[middle-man]]
+  - *Other*: [[incomplete-library-class]]
 - [[refactoring-techniques]] — behavior-preserving 구조 변경 technique family 허브(6개 family, 66+ technique).
+  - [[refactoring-techniques-composing-methods]] · [[refactoring-techniques-moving-features-between-objects]] · [[refactoring-techniques-organizing-data]] · [[refactoring-techniques-simplifying-conditional-expressions]] · [[refactoring-techniques-simplifying-method-calls]] · [[refactoring-techniques-dealing-with-generalization]]
 
 **GoF 디자인 패턴 (Refactoring.Guru KO)**
 - [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] — 생성 패턴.

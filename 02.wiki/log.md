@@ -381,3 +381,13 @@ updated: 2026-07-07
 - 신규 TIL: [[2026-07-08-obsidian-cli]] — 설치(토글 하나)·핵심 command(`daily:append`·`search:context`·`create`·`read`·`move file`)·[[claude-code]] agent 통합·"앱 실행 필수" 한계.
 - 근거 소스: [[xda-obsidian-cli-terminal-workflow]], 상세 개념: [[obsidian-cli-workflow]].
 - 갱신: [[02.wiki/til/index|til/index]](항목 1 + updated), [[02.wiki/index|index]](TIL 섹션·마지막 TIL·통계).
+
+## [2026-07-08] lint | 175 페이지 건강 점검 — 자동수정 대상 결함 0
+- 점검 범위: 02.wiki/ 전체 175개 .md (concepts 27·engineering 76·entity 44·source 19·overview 6·til 2·reading 1). 링크 2366개 스캔.
+- 링크 그래프: 고아 0 · dangling 0(9건 감지 전부 거짓양성: 이스케이프 파이프 `[[glm-5\|GLM-5]]`류 3, 루트 `../CLAUDE.md` 교차참조 1, 백틱 코드 템플릿/log 메타 5) · 메인·reading·til index 100% 동기화, stale 0.
+- engineering/index: code-smell 23 + refactoring-technique family 6(=29 leaf)이 개별 등재 없이 hub(`code-smells`·`refactoring-techniques`)로 위임 링크됨 — by-design(고아 아님), 결함 처리 안 함.
+- frontmatter: 175개 전부 유효·필수 필드 완비 · 파일명 kebab-case 100%(TIL 날짜형식 2/2) · reading 상태 일관성 위반 0.
+- `updated` vs git 날짜 69건 drift는 전부 거짓양성(초기 일괄 커밋 3d92320 57건 + Self-Harness 저작-커밋 13일 지연 12건) — stale 아님.
+- 소프트 이슈 2건(사용자 승인으로 처리): ① [[lum1104-understand-anything]] `date-published` 공백 → GitHub repo 생성일 **2026-03-15**로 채움(조회 중 repo가 `Lum1104`→`Egonex-AI/Understand-Anything`로 이전된 것 확인; source-url·entity는 현행 유지). ② `engineering/index`를 **전량 등재**로 확장 — code-smell 23개 + refactoring-technique family 6개를 hub(`code-smells`·`refactoring-techniques`) 아래 개별 wikilink로 명시(기존 hub 위임에서 exhaustive로).
+- 조치: 결함 자동수정 0건 + 사용자 승인 개선 2건 반영(lum1104 발행일·engineering/index 확장). index 통계 "마지막 lint" 갱신. lint-report 임시 파일은 추적할 미해결 이슈가 없어 생성 생략.
+- 후속 관찰(비조치): Understand-Anything repo가 `Egonex-AI`로 이전됨 — 향후 소스 재방문 시 source-url 업데이트 검토 여지.

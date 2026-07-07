@@ -209,5 +209,5 @@ updated: 2026-07-08
 - 총 페이지 수: 175 (log 포함; Obsidian CLI TIL 1 추가)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
 - 마지막 ingest: 2026-07-07 ([[xda-obsidian-cli-terminal-workflow|Obsidian CLI terminal workflow]] — [[obsidian-cli-workflow]] 개념 추가, [[obsidian]]·[[llm-wiki-pattern]] 갱신)
-- 마지막 lint: 2026-06-03 (70 페이지 점검: 미해결 모순 0·고아 0·dangling 0·index 동기화 100%·kebab-case 100%; updated drift 3건 + source-type enum 2건 정규화)
+- 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
 - 마지막 갱신: 2026-07-08

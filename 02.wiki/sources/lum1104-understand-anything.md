@@ -4,10 +4,10 @@ type: source
 tags: [knowledge-graph, code-understanding, multi-agent, claude-code-plugin, tooling]
 source-url: https://github.com/Lum1104/Understand-Anything
 source-type: docs
-date-published:
+date-published: 2026-03-15
 ingested: 2026-05-30
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-07-08
 ---
 
 # Lum1104/Understand-Anything — README
