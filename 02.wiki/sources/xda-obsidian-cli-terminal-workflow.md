@@ -40,4 +40,4 @@ XDA의 [[obsidian|Obsidian]] CLI 사용기. 핵심은 Obsidian 1.12 계열에서
 ## References
 
 - 원문: <https://www.xda-developers.com/obsidian-cli-terminal-workflow/>
-- raw: `01.raw/articles/2026-07-01_Obsidian CLI terminal workflow.md`
+- raw: `01.raw/articles/2026-07-08_Obsidian's CLI turned my terminal into a note-taking machine, and I stopped opening the app.md`
