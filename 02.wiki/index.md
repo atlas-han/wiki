@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-07-08
+updated: 2026-07-21
 ---
 
 # Index
@@ -201,13 +201,14 @@ updated: 2026-07-08
 - [[12factor-net]] — The Twelve-Factor App, SaaS 앱 12원칙 방법론 (12factor.net, Adam Wiggins/Heroku, 2026-06-27 ingest)
 - [[openai-nextdoor-codex]] — Nextdoor의 Codex(GPT‑5.4/5.5) 도입 케이스 스터디, [[outcome-engineering]] 출처 (openai.com, 2026-06-27 ingest)
 - [[xda-obsidian-cli-terminal-workflow]] — XDA의 Obsidian 공식 CLI terminal workflow 사용기, [[obsidian-cli-workflow]] 출처 (2026-07-07 ingest)
+- [[charlychoi-claude-code-best-practices]] — Anthropic 공식 Claude Code best practices의 한국어 학습용 재구성: 목표·맥락·verifier·permission·독립 review를 task contract로 통합 (2026-07-21 ingest)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 175 (log 포함; Obsidian CLI TIL 1 추가)
+- 총 페이지 수: 176 (log 포함; Claude Code best practices source 1 추가)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-07-07 ([[xda-obsidian-cli-terminal-workflow|Obsidian CLI terminal workflow]] — [[obsidian-cli-workflow]] 개념 추가, [[obsidian]]·[[llm-wiki-pattern]] 갱신)
+- 마지막 ingest: 2026-07-21 ([[charlychoi-claude-code-best-practices|Claude Code 공식 모범 사례 쉽게 이해하기]] — [[claude-code]]·[[verifiable-goals]]·[[llm-coding-guidelines]] 갱신)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-07-08
+- 마지막 갱신: 2026-07-21

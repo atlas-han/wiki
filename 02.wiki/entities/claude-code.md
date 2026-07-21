@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-05-30
+updated: 2026-07-21
 ---
 
 # Claude Code
@@ -30,6 +30,15 @@ updated: 2026-05-30
 - **[[dynamic-workflows|Dynamic workflows]]** (2026 신규, research preview): Claude가 오케스트레이션 스크립트를 동적으로 작성해 한 세션에서 10s~100s parallel subagent를 돌리고 검증 후 수렴. 진입은 직접 요청 또는 **[[ultracode]]** 세팅(effort=xhigh + workflow 자동 판단). 토큰 소모 大, 최초 1회 확인. 사례: [[bun|Bun]] Zig→Rust 포팅 ([[jarred-sumner|Jarred Sumner]], [[anthropic-dynamic-workflows]])
 - **플러그인 생태계**: 마켓플레이스로 서드파티 플러그인 설치 (`/plugin marketplace add <repo>` → `/plugin install`). 사례: [[understand-anything|Understand-Anything]] ([[lum1104-understand-anything]]) — 코드베이스를 [[code-knowledge-graph|지식 그래프]]로 만드는 멀티 에이전트 플러그인. Claude Code는 이런 도구들의 네이티브 호스트.
 
+## 실무 운영 계약
+
+[[charlychoi-claude-code-best-practices]]는 공식 best practices를 **목표 + 맥락 + verifier + permission + review**의 task contract로 재구성한다.
+
+1. 복잡한 작업은 Explore → Plan → Implement → Verify → Review로 분리한다.
+2. 완료는 설명이 아니라 test·build·typecheck·screenshot 같은 executable evidence로 판정한다 ([[verifiable-goals]]).
+3. 항상 필요한 짧은 project rule은 `CLAUDE.md`, 특정 업무는 Skills, 강제 규칙은 Hooks, 외부 연결은 CLI/MCP에 둔다 ([[harness-engineering]]).
+4. unrelated task는 `/clear`, 조사·review는 subagent, 대량 변경은 소수 pilot 후 fan-out해 context와 blast radius를 관리한다.
+
 ## Internal incident log 예시 (Anthropic 공개)
 
 - 원격 git 브랜치 삭제 (오해된 지시)
@@ -46,3 +55,4 @@ updated: 2026-05-30
 - [[anthropic-dynamic-workflows]]
 - [[multica-karpathy-skills-claude-md]]
 - [[lum1104-understand-anything]]
+- [[charlychoi-claude-code-best-practices]]

@@ -391,3 +391,11 @@ updated: 2026-07-07
 - 소프트 이슈 2건(사용자 승인으로 처리): ① [[lum1104-understand-anything]] `date-published` 공백 → GitHub repo 생성일 **2026-03-15**로 채움(조회 중 repo가 `Lum1104`→`Egonex-AI/Understand-Anything`로 이전된 것 확인; source-url·entity는 현행 유지). ② `engineering/index`를 **전량 등재**로 확장 — code-smell 23개 + refactoring-technique family 6개를 hub(`code-smells`·`refactoring-techniques`) 아래 개별 wikilink로 명시(기존 hub 위임에서 exhaustive로).
 - 조치: 결함 자동수정 0건 + 사용자 승인 개선 2건 반영(lum1104 발행일·engineering/index 확장). index 통계 "마지막 lint" 갱신. lint-report 임시 파일은 추적할 미해결 이슈가 없어 생성 생략.
 - 후속 관찰(비조치): Understand-Anything repo가 `Egonex-AI`로 이전됨 — 향후 소스 재방문 시 source-url 업데이트 검토 여지.
+
+## [2026-07-21] ingest | Claude Code 공식 모범 사례 쉽게 이해하기
+- 요청 링크: https://charlychoi.blogspot.com/2026/07/claude-code.html
+- 원문 캡처: `01.raw/articles/2026-07-20_Claude Code 공식 모범 사례 쉽게 이해하기.md` (저작권 보호 본문 전문 대신 구조화 추출; sha256 포함)
+- 신규 source: [[charlychoi-claude-code-best-practices]] — Anthropic 공식 best practices를 Charly Choi가 한국어 학습용으로 재구성한 2차 해설이며, 변동 가능한 제품 command는 공식 문서 재확인 필요.
+- 갱신: [[claude-code]]에 실무 운영 계약, [[verifiable-goals]]에 task별 verifier, [[llm-coding-guidelines]]에 `CLAUDE.md`/Skills/Hooks/CLI·MCP 배치 기준 추가.
+- 갱신: [[02.wiki/index|index]], [[overview]], log.
+- 핵심 합성: 좋은 prompt의 본질은 길이가 아니라 **목표 + 맥락 + executable verifier + permission boundary + 독립 review**를 가진 task contract다.

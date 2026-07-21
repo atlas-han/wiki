@@ -3,11 +3,11 @@ title: LLM Coding Guidelines (4원칙)
 type: concept
 category: pattern
 tags: [llm-coding, claude-code, system-prompt, anti-pattern]
-related: [surgical-edits, verifiable-goals, sprint-contract, ralph-wiggum-method, context-engineering]
+related: [surgical-edits, verifiable-goals, sprint-contract, ralph-wiggum-method, context-engineering, harness-engineering, claude-code]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-07-21
 ---
 
 # LLM Coding Guidelines (4원칙)
@@ -79,6 +79,19 @@ LLM 코딩 어시스턴트의 흔한 실패 모드를 줄이기 위한 **CLAUDE.
 
 → 강한 success criteria가 **independent loop**를 가능케 함. 약하면 매번 clarification 필요.
 
+## 규칙을 어디에 둘 것인가
+
+[[charlychoi-claude-code-best-practices]]의 실무 구분은 긴 `CLAUDE.md`에 모든 것을 넣는 anti-pattern을 피하게 한다.
+
+| Rule 성격 | 위치 |
+|---|---|
+| 모든 session에 필요한 project-specific 규칙 | 짧은 `CLAUDE.md` |
+| 특정 반복 업무·domain convention | Skills |
+| 반드시 실행되어야 하는 lint·test·secret/protected-path guard | Hooks |
+| GitHub·cloud·monitoring·design system 연결 | CLI / MCP |
+
+판단 질문은 **“이 줄을 지우면 agent가 실제로 더 자주 실수하는가?”**다. 아니라면 global context에서 제거하고, 강제해야 한다면 자연어 지침보다 결정론적 Hook으로 승격한다. 이는 [[harness-engineering]]의 AI Layer를 context cost와 enforcement strength로 배치하는 방식이다.
+
 ## 효과 측정 지표
 
 가이드라인이 작동 중이라는 신호:
@@ -99,4 +112,5 @@ LLM 코딩 어시스턴트의 흔한 실패 모드를 줄이기 위한 **CLAUDE.
 ## References
 
 - [[multica-karpathy-skills-claude-md]]
+- [[charlychoi-claude-code-best-practices]]
 - 관련: [[surgical-edits]], [[verifiable-goals]]

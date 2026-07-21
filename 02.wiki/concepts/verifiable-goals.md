@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices]
 created: 2026-05-25
-updated: 2026-06-27
+updated: 2026-07-21
 ---
 
 # Verifiable Goals
@@ -29,6 +29,21 @@ updated: 2026-06-27
 | "Refactor X" | "Ensure tests pass before and after" |
 
 공통 패턴: **(1) verifier를 먼저 만들고 (2) verifier를 통과시키는 코드를 작성**. 테스트 = goal의 인코딩.
+
+## Task별 verifier 선택
+
+[[charlychoi-claude-code-best-practices]]는 verifier를 단위 테스트보다 넓게 실무 task별로 매핑한다.
+
+| Task | Verifier |
+|---|---|
+| 함수·API | unit/integration test, status code, sample response |
+| UI | desktop/mobile screenshot, clickability, console error 없음 |
+| Build·type issue | 실제 build·typecheck command 성공 |
+| Refactoring | 변경 전후 regression test 통과 |
+| 문서 | 필수 section·실제 command·link 유효성 |
+| 데이터 처리 | 고정 input/output 비교 |
+
+즉 goal은 “무엇을 만들 것인가”만이 아니라 **어떤 외부 evidence가 통과하면 멈출 것인가**까지 포함해야 한다.
 
 ## 멀티스텝 plan 형식
 
@@ -70,4 +85,5 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## References
 
 - [[multica-karpathy-skills-claude-md]]
+- [[charlychoi-claude-code-best-practices]]
 - 관련: [[llm-coding-guidelines]] (상위 hub), [[surgical-edits]], [[sprint-contract]], [[ralph-wiggum-method]]

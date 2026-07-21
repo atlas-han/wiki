@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-07-07
+updated: 2026-07-21
 sources: []
 ---
 
@@ -56,6 +56,7 @@ sources: []
 
 새 소스마다 한 줄씩 누적:
 
+- *2026-07-21*: [[charlychoi-claude-code-best-practices|Claude Code 공식 모범 사례 쉽게 이해하기]] ingest — Anthropic 공식 best practices의 한국어 2차 해설을 구조화해, [[verifiable-goals]]·[[llm-coding-guidelines]]·[[harness-engineering]]을 **목표 + 맥락 + verifier + permission + 독립 review**의 task contract로 합성. `CLAUDE.md`/Skills/Hooks/CLI·MCP를 context cost와 enforcement strength에 따라 배치하고, 복잡한 작업은 Explore→Plan→Implement→Verify→Review로 운영한다는 실무 checklist를 [[claude-code]]에 추가. ⚠️ 제품 command는 변동 가능하므로 공식 문서 재확인 필요.
 - *2026-07-07*: [[xda-obsidian-cli-terminal-workflow|XDA Obsidian CLI workflow]] ingest — [[obsidian|Obsidian]]이 본 위키의 viewer를 넘어 terminal command surface로 확장되는 관점 추가. [[obsidian-cli-workflow]] 신설: `daily:append`·`search:context`·`read/create`가 quick capture, vault-aware search, [[claude-code|Claude Code]]류 agent automation의 마찰을 줄임. 단 desktop app 실행 의존성과 plugin command 노출 한계를 함께 기록.
 
 - *2026-06-27*: [[openai-nextdoor-codex|How engineers at Nextdoor use Codex]] ingest (openai.com 케이스 스터디) — 위키 **첫 [[openai|OpenAI]]/[[codex|Codex]]/GPT 생태계** 진입(self-harness의 첫 중국 lab에 이은 두 번째 비-Anthropic 축). 핵심 개념 [[outcome-engineering]] 신설 — [[cory-dolphin|Cory Dolphin]]의 *"how 반복 프롬프팅 → 원하는 결과 정의·engineer"* 프레이밍을 [[verifiable-goals]](result=verifier)·[[sprint-contract]]·[[harness-engineering]]("harness for investigation")와 교차. Anthropic 계열 framing과 외부 관점이 *같은 원리의 다른 서술*로 합류. ⚠️ 벤더 마케팅 출처라 정량 근거 없는 조직·생산성 주장임을 명시, GPT‑5.4/5.5 스펙은 컷오프 이후로 소스 범위만 기록.
