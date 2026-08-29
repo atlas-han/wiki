@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-07-21
+updated: 2026-08-29
 sources: []
 ---
 
@@ -55,6 +55,8 @@ sources: []
 ## 진화 로그 (요약)
 
 새 소스마다 한 줄씩 누적:
+
+- *2026-08-29*: [[tech-bridge]] `@TechBridge-KR` 당일 롱폼 3편 ingest. (1) [[tech-bridge-spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 두는 [[spec-driven-development]] + [[github-spec-kit]]. [[verifiable-goals]]·[[sprint-contract]]·[[harness-engineering]]의 저장소 계약판. ⚠️ 자막 429, 채널 설명+공식 문서 교차. (2) [[tech-bridge-figma-coding-agents]] — [[eyal-blum]]/[[figma]]의 [[agent-org-adoption]]: 3막 곡선, 검증 우선, 기획, 회의론자 로드맵, 출처 표기. 인간 주의력을 하니스 제약으로. ⚠️ 자막 429, 채널 챕터+2차 기록. (3) [[tech-bridge-bill-gates-ai-warning]] — [[bill-gates]] Radio Atlantic. 코딩 capability 임계점이 위험 임계값을 연 바깥 세계 비용. 산업 자율 규제 부정, 자발 리뷰는 기준 없음. 트랜스크립트 확보.
 
 - *2026-07-21*: [[charlychoi-claude-code-best-practices|Claude Code 공식 모범 사례 쉽게 이해하기]] ingest — Anthropic 공식 best practices의 한국어 2차 해설을 구조화해, [[verifiable-goals]]·[[llm-coding-guidelines]]·[[harness-engineering]]을 **목표 + 맥락 + verifier + permission + 독립 review**의 task contract로 합성. `CLAUDE.md`/Skills/Hooks/CLI·MCP를 context cost와 enforcement strength에 따라 배치하고, 복잡한 작업은 Explore→Plan→Implement→Verify→Review로 운영한다는 실무 checklist를 [[claude-code]]에 추가. ⚠️ 제품 command는 변동 가능하므로 공식 문서 재확인 필요.
 - *2026-07-07*: [[xda-obsidian-cli-terminal-workflow|XDA Obsidian CLI workflow]] ingest — [[obsidian|Obsidian]]이 본 위키의 viewer를 넘어 terminal command surface로 확장되는 관점 추가. [[obsidian-cli-workflow]] 신설: `daily:append`·`search:context`·`read/create`가 quick capture, vault-aware search, [[claude-code|Claude Code]]류 agent automation의 마찰을 줄임. 단 desktop app 실행 의존성과 plugin command 노출 한계를 함께 기록.

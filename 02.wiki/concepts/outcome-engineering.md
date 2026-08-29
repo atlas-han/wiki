@@ -3,11 +3,11 @@ title: Outcome Engineering
 type: concept
 category: pattern
 tags: [agent, workflow, llm-coding, productivity, codex]
-related: [verifiable-goals, sprint-contract, harness-engineering, agent-harness-design, context-engineering]
+related: [verifiable-goals, sprint-contract, harness-engineering, agent-harness-design, context-engineering, spec-driven-development, agent-org-adoption]
 first-seen: openai-nextdoor-codex
-sources: [openai-nextdoor-codex]
+sources: [openai-nextdoor-codex, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development]
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-08-29
 ---
 
 # Outcome Engineering
@@ -38,6 +38,7 @@ updated: 2026-06-27
 
 - [[verifiable-goals]] — *"원하는 결과를 정의한다"* 는 곧 **verifier를 먼저 정의**하는 것. outcome engineering의 *result*(스크린샷/테스트 통과)는 verifiable-goals의 *verifier* 와 같은 자리에 있다. 두 framing이 사실상 같은 원리를 조직 관점(Nextdoor) vs 코딩 원칙 관점(multica CLAUDE.md)에서 서술.
 - [[sprint-contract]] — 코드 작성 *전에* "done의 정의"를 못 박는 다중 에이전트 인공물. outcome을 계약으로 형식화한 형태.
+- [[spec-driven-development]] · [[agent-org-adoption]] — 프롬프팅 대신 spec/plan을 쓰는 제품화(Spec Kit)와 조직 운영(Figma). 같은 *how → what* 전환의 2026-08 교차.
 - [[harness-engineering]] — 원문은 Nextdoor가 에이전트에 *"clean environment and harness for investigation"* 를 제공한다고 언급. outcome을 향한 작업도 결국 harness 위에서 일어난다.
 - [[agent-harness-design]] — outcome engineering은 *모델이 더 잘하게 되면서* 사람의 역할이 how→what으로 올라가는 사례. "harness가 인코딩한 가정이 stale된다"는 일반 원리의 인적(human-role) 버전.
 

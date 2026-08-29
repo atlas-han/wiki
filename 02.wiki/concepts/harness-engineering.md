@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents]
 created: 2026-06-03
-updated: 2026-06-14
+updated: 2026-08-29
 ---
 
 # Harness Engineering
@@ -89,10 +89,18 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 
 이 vault의 [[CLAUDE]] 스키마 + skills(ingest/query/lint/graphify 등) 자체가 AI Layer의 한 구현 — Global Rules(CLAUDE.md) + Skills + Hooks로 LLM에 일관된 워크플로를 인코딩. [[agent-harness-design]]의 *"knowledge base harness"* 시각과 동일.
 
+## 2026-08 교차: 스펙 아티팩트와 조직 도입
+
+[[tech-bridge-spec-driven-development]]의 [[spec-driven-development]]는 AI Layer의 Global Rules / Context Docs를 **저장소 계약**(constitution → spec → plan → task)으로 제품화한 형태. 프롬프트 대신 스펙을 메인 아티팩트로 두면 PIV의 Plan이 휘발되지 않는다.
+
+[[tech-bridge-figma-coding-agents]]의 [[agent-org-adoption]]은 System Evolution을 *조직*에 적용한다. 유용한 에이전트 발견을 즉시 결정론적 체크로 코드화하는 것은 "every mistake becomes a rule"의 팀 운영판. 다만 규칙은 훅만이 아니라 PR 출처 표기·회의론자 로드맵이기도 하다.
+
 ## References
 
 - [[tech-bridge-harness-engineering]] (1차, 영상)
 - [[self-harness-paper]] — System Evolution 마인드셋의 자동화 사례
+- [[tech-bridge-spec-driven-development]] · [[spec-driven-development]] — 스펙을 하니스 아티팩트로
+- [[tech-bridge-figma-coding-agents]] · [[agent-org-adoption]] — 조직면
 - [[agent-harness-design]] — Anthropic 관점 허브
 - [[context-engineering]] — 진화의 출발점
 - [[self-harness]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] — 자기개선·오케스트레이션 갈래

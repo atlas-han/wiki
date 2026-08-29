@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-07-07
+updated: 2026-08-29
 ---
 
 # Log
@@ -399,3 +399,35 @@ updated: 2026-07-07
 - 갱신: [[claude-code]]에 실무 운영 계약, [[verifiable-goals]]에 task별 verifier, [[llm-coding-guidelines]]에 `CLAUDE.md`/Skills/Hooks/CLI·MCP 배치 기준 추가.
 - 갱신: [[02.wiki/index|index]], [[overview]], log.
 - 핵심 합성: 좋은 prompt의 본질은 길이가 아니라 **목표 + 맥락 + executable verifier + permission boundary + 독립 review**를 가진 task contract다.
+
+## [2026-08-29] ingest | Tech Bridge — Spec-driven development
+- 소스: https://www.youtube.com/watch?v=F_smvU3oqbU ([[tech-bridge]], 22:07), source-type video.
+- raw: `01.raw/articles/2026-08-29_프롬프트 작성은 그만두세요. 이제 명세(Spec)를 작성할 때입니다.md`
+- ⚠️ YouTube timedtext HTTP 429 — 자막 전문 미확보. 채널 설명(1차) + Spec Kit 공식 문서(complementary). MCP 데모·엔터프라이즈 3원칙 세부는 미기록.
+- 신규 source: [[tech-bridge-spec-driven-development]]
+- 신규 concept: [[spec-driven-development]]
+- 신규 entity: [[github-spec-kit]] (tool)
+- 갱신: [[tech-bridge]], [[harness-engineering]], [[verifiable-goals]], [[sprint-contract]], [[outcome-engineering]], index, overview, log
+
+## [2026-08-29] ingest | Tech Bridge — Figma 코딩 에이전트 조직 도입
+- 소스: https://www.youtube.com/watch?v=OSd69LTMi3w ([[tech-bridge]], 17:13), 발표자 [[eyal-blum]].
+- raw: `01.raw/articles/2026-08-29_품질 저하 없이 조직에 코딩 에이전트를 성공적으로 도입하는 방법 Figma.md`
+- ⚠️ 자막 429. 채널 설명 챕터(1차) + 동일 강연 2차 기록(BigGo/AI Engineer) complementary.
+- 신규 source: [[tech-bridge-figma-coding-agents]]
+- 신규 concept: [[agent-org-adoption]]
+- 신규 entity: [[figma]] (org) · [[eyal-blum]] (person)
+- 갱신: [[tech-bridge]], [[harness-engineering]], [[verifiable-goals]], [[sprint-contract]], [[outcome-engineering]], index, overview, log
+
+## [2026-08-29] ingest | Tech Bridge — 빌 게이츠 AI 경고 (Radio Atlantic)
+- 소스: https://www.youtube.com/watch?v=u1iQob0v-5k ([[tech-bridge]], 31:47). 원본 Radio Atlantic / Hanna Rosin.
+- raw: `01.raw/articles/2026-08-29_AI에 대해 생각이 바뀐 빌 게이츠의 경고.md` (en-orig 자막 + Atlantic 공식 트랜스크립트 교차)
+- 신규 source: [[tech-bridge-bill-gates-ai-warning]]
+- 신규 entity: [[bill-gates]] (person)
+- 페이지화하지 않음: Hanna Rosin, 엡스타인 에피소드 세부(소스에만 요약)
+- 갱신: [[tech-bridge]], index, overview, log
+- 핵심 합성: 코딩 에이전트 capability 임계점이 바이오테러·사이버·노동 위험 임계값을 연 *바깥 세계 비용*. 자발 리뷰는 [[verifiable-goals]]의 반대말(criteria 없음).
+
+## [2026-08-29] meta | TechBridge-KR 일일 ingest 시작
+- wiki 채널 요청: `@TechBridge-KR` 신규 롱폼을 매일 1회 ingest 후 `origin/main` push.
+- 당일 신규 3편 처리(위 ingest 3건). Shorts 제외.
+- 상태: 이후 실행은 기존 `source-url` / raw 파일의 video id로 중복 건너뜀.

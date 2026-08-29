@@ -305,5 +305,17 @@
   "01.raw/articles/2026-07-08_Obsidian's CLI turned my terminal into a note-taking machine, and I stopped opening the app.md": "LiTerminal",
   "02.wiki/sources/xda-obsidian-cli-terminal-workflow.md": "LiNewspaper",
   "02.wiki/engineering/tools/obsidian-cli-workflow.md": "LiTerminal",
-  "02.wiki/til/2026-07-08-obsidian-cli.md": "LiSparkles"
+  "02.wiki/til/2026-07-08-obsidian-cli.md": "LiSparkles",
+  "01.raw/articles/2026-08-29_프롬프트 작성은 그만두세요. 이제 명세(Spec)를 작성할 때입니다.md": "LiVideo",
+  "01.raw/articles/2026-08-29_품질 저하 없이 조직에 코딩 에이전트를 성공적으로 도입하는 방법 Figma.md": "LiVideo",
+  "01.raw/articles/2026-08-29_AI에 대해 생각이 바뀐 빌 게이츠의 경고.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-spec-driven-development.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-figma-coding-agents.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-bill-gates-ai-warning.md": "LiVideo",
+  "02.wiki/concepts/spec-driven-development.md": "LiFileSignature",
+  "02.wiki/concepts/agent-org-adoption.md": "LiUsers",
+  "02.wiki/entities/github-spec-kit.md": "LiWrench",
+  "02.wiki/entities/figma.md": "LiBuilding",
+  "02.wiki/entities/eyal-blum.md": "LiUser",
+  "02.wiki/entities/bill-gates.md": "LiUser"
 }

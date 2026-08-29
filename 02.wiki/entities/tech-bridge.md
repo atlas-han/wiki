@@ -4,23 +4,32 @@ type: entity
 category: org
 tags: [youtube, korean, ai-engineering, content]
 links:
-  - https://youtu.be/-pqyzBxddyg
-sources: [tech-bridge-harness-engineering]
+  - https://www.youtube.com/@TechBridge-KR
+sources:
+  - tech-bridge-harness-engineering
+  - tech-bridge-spec-driven-development
+  - tech-bridge-figma-coding-agents
+  - tech-bridge-bill-gates-ai-warning
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-08-29
 ---
 
 # Tech Bridge
 
-영어권 AI 엔지니어링 영상에 **한국어 자막**을 입혀 재배포하는 YouTube 채널. 본 위키에는 [[tech-bridge-harness-engineering|하네스 엔지니어링 영상]]의 게시자로 등장.
+영어권 테크·AI 영상에 **한국어(또는 한영) 자막**을 입혀 재배포하는 YouTube 채널 (`@TechBridge-KR`). 원 발표자가 아니라 **번역/자막 재배포** 역할.
 
 ## 위키에서 알려진 사실
 
-- [[harness-engineering]]을 다룬 ~17분 영상([[tech-bridge-harness-engineering]])을 한국어 자막과 함께 게시 (제목 접두사 `[한글자막]`).
-- 해당 영상의 **원 발표자는 Tech Bridge 본인이 아니라** 영상 내 "Cole"(자신을 [[archon|Archon]] 제작자로 소개 → Cole Medin 추정)로 보임 — Tech Bridge는 번역/자막 재배포 역할.
+- 제목 접두사 `[한글자막]` / `[한영자막]`.
+- 2026-06-03: [[harness-engineering]] 강연([[tech-bridge-harness-engineering]], 발표자 추정 Cole Medin).
+- 2026-08-29 일일 ingest 3편:
+  - [[tech-bridge-spec-driven-development]] — [[spec-driven-development]] / [[github-spec-kit]]
+  - [[tech-bridge-figma-coding-agents]] — [[eyal-blum]] / [[figma]] / [[agent-org-adoption]]
+  - [[tech-bridge-bill-gates-ai-warning]] — Radio Atlantic, [[bill-gates]]
 
-> 미해결: 채널 운영 주체·다른 콘텐츠·원본 출처 표기 방식은 단일 영상만으로는 미확인. 추가 영상 ingest 시 보완.
+> 채널 운영 주체는 여전히 미확인. 원본 표기는 영상마다 설명란·워터마크로 다를 수 있음.
 
 ## References
 
-- [[tech-bridge-harness-engineering]] (게시 영상)
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]]
+- 채널: <https://www.youtube.com/@TechBridge-KR>

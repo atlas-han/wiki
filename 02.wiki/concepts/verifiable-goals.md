@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development]
 created: 2026-05-25
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
 # Verifiable Goals
@@ -61,6 +61,8 @@ updated: 2026-07-21
 - [[generator-evaluator-pattern]] — 검증을 별도 agent로 분리. verifiable goal을 evaluator가 들고 있는 형태.
 - [[ralph-wiggum-method]] — `while :; do cat PROMPT.md | claude-code ; done` 무한 루프. PROMPT.md 안에 verifiable goal이 있어야 발산하지 않음.
 - [[outcome-engineering]] — Nextdoor/Codex 사례의 조직 관점 framing. *"원하는 결과를 정의한다"*가 곧 verifier(테스트·스크린샷·성능 기준)를 먼저 정의하는 것 — 같은 원리의 외부(비-Anthropic) 서술.
+- [[spec-driven-development]] — spec 자체가 저장되는 verifier. 프롬프트 대신 constitution/spec/plan/task 아티팩트.
+- [[agent-org-adoption]] — Figma: 테스트를 코드보다 먼저(red-green), 검증 피라미드의 아래를 결정론적으로. 조직 도입에서 verifier 투자가 generation보다 높은 레버리지.
 
 ## 왜 작동하는가
 
@@ -86,4 +88,5 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 
 - [[multica-karpathy-skills-claude-md]]
 - [[charlychoi-claude-code-best-practices]]
+- [[tech-bridge-figma-coding-agents]] · [[tech-bridge-spec-driven-development]]
 - 관련: [[llm-coding-guidelines]] (상위 hub), [[surgical-edits]], [[sprint-contract]], [[ralph-wiggum-method]]

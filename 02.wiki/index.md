@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
 # Index
@@ -26,6 +26,8 @@ updated: 2026-07-21
 - [[geoff-huntley]] — [[ralph-wiggum-method|Ralph]] 자율 루프 패턴 명명·정리 (ghuntley.com)
 - [[jarred-sumner]] — [[bun|Bun]] 제작자, [[dynamic-workflows]]로 Zig→Rust 포팅 사례
 - [[cory-dolphin]] — [[nextdoor|Nextdoor]] Head of Engineering, [[outcome-engineering]] 프레이밍 제시
+- [[eyal-blum]] — [[figma|Figma]] 엔지니어, [[agent-org-adoption]] 프레이밍 제시
+- [[bill-gates]] — Microsoft 공동창업자, 2026-08 AI 위험 경고 ([[tech-bridge-bill-gates-ai-warning]])
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
 - [[vannevar-bush]] — 1945년 [[memex]] 비전 제시 (As We May Think)
@@ -34,7 +36,8 @@ updated: 2026-07-21
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
 - [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
-- [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널
+- [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
+- [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
 - [[cloudflare]] — 클라우드 인프라·보안 회사, [[project-glasswing]] 파트너
 - [[mozilla]] — Firefox 개발 오픈소스 비영리, [[project-glasswing]] 파트너
 - [[multica-ai]] — GitHub org, `andrej-karpathy-skills` repo로 [[claude-code]] CLAUDE.md 4원칙 공개
@@ -73,6 +76,7 @@ updated: 2026-07-21
 - [[serde]] — Rust 직렬화 프레임워크, [[actix-web-extractors|actix-web extractor]]가 의존
 - [[terminal-bench]] — 컨테이너 터미널 agentic 벤치마크 (결정론적 verifier), [[self-harness]] 평가대
 - [[deepagents]] — LangChain 에이전트 SDK, [[self-harness]]의 최소 초기 하니스 토대
+- [[github-spec-kit]] — GitHub Spec Kit (`specify` CLI), [[spec-driven-development]] 하니스
 
 ---
 
@@ -111,7 +115,9 @@ updated: 2026-07-21
 - [[llm-coding-guidelines]] — LLM 코딩 어시스턴트용 CLAUDE.md 4원칙 (Think / Simplicity / Surgical / Goal-Driven)
 - [[surgical-edits]] — *"Every changed line should trace directly to the user's request"* — 외과 수술적 코드 수정 원칙
 - [[verifiable-goals]] — 모호한 task를 *test → pass* 형식의 검증 가능한 goal로 변환
-- [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 1)
+- [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 3)
+- [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit, sources: 1)
+- [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 1)
 
 ---
 
@@ -202,13 +208,16 @@ updated: 2026-07-21
 - [[openai-nextdoor-codex]] — Nextdoor의 Codex(GPT‑5.4/5.5) 도입 케이스 스터디, [[outcome-engineering]] 출처 (openai.com, 2026-06-27 ingest)
 - [[xda-obsidian-cli-terminal-workflow]] — XDA의 Obsidian 공식 CLI terminal workflow 사용기, [[obsidian-cli-workflow]] 출처 (2026-07-07 ingest)
 - [[charlychoi-claude-code-best-practices]] — Anthropic 공식 Claude Code best practices의 한국어 학습용 재구성: 목표·맥락·verifier·permission·독립 review를 task contract로 통합 (2026-07-21 ingest)
+- [[tech-bridge-spec-driven-development]] — Spec-driven development / GitHub Spec Kit 영상, 한국어 자막 ([[tech-bridge]], 2026-08-29)
+- [[tech-bridge-figma-coding-agents]] — Figma 코딩 에이전트 조직 도입 강연, [[eyal-blum]] ([[tech-bridge]], 2026-08-29)
+- [[tech-bridge-bill-gates-ai-warning]] — Radio Atlantic 빌 게이츠 AI 위험 인터뷰, 한국어 자막 ([[tech-bridge]], 2026-08-29)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 176 (log 포함; Claude Code best practices source 1 추가)
+- 총 페이지 수: 185 (log 포함; Tech Bridge 2026-08-29 영상 3편 — source 3 + entity 4 + concept 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-07-21 ([[charlychoi-claude-code-best-practices|Claude Code 공식 모범 사례 쉽게 이해하기]] — [[claude-code]]·[[verifiable-goals]]·[[llm-coding-guidelines]] 갱신)
+- 마지막 ingest: 2026-08-29 ([[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]])
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-07-21
+- 마지막 갱신: 2026-08-29

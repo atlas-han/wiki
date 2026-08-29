@@ -3,11 +3,11 @@ title: Sprint Contract
 type: concept
 category: pattern
 tags: [agent, multi-agent, planning, verification]
-related: [generator-evaluator-pattern, agent-harness-design, verifiable-goals]
+related: [generator-evaluator-pattern, agent-harness-design, verifiable-goals, spec-driven-development, agent-org-adoption]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-08-29
 ---
 
 # Sprint Contract
@@ -43,6 +43,11 @@ Sprint construct는 **work decomposition의 가정**을 인코딩 — "모델이
 
 → [[agent-harness-design]]의 일반 원리: 컴포넌트는 stale될 가정의 인코딩이다.
 
+## 저장되는 계약으로서의 spec / plan
+
+[[spec-driven-development]]는 sprint contract를 **저장소 파일**(constitution/spec/plan/task)로 승격한다. [[agent-org-adoption]]의 "에이전트가 완결할 수 있는 계획서"(상단 why, 한 자리 리뷰 크기, 단계별 acceptance)는 같은 계약을 인간이 먼저 쓰고 에이전트가 실행하는 조직 운영판.
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
+- [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]]
