@@ -17,9 +17,10 @@ GitHub이 공개한 **스펙 주도 개발 하니스**. `specify` CLI로 저장�
 
 ## 위키에서 알려진 사실
 
-- 코어 파이프라인: Constitution → Spec → Plan → Task (채널 설명과 공식 퀵스타트가 일치).
-- 산출물은 마크다운 아티팩트. 다음 단계의 입력이 되어 프롬프트 대신 **저장되는 계약**으로 에이전트를 묶는다 ([[spec-driven-development]]).
-- [[tech-bridge-spec-driven-development]] 영상은 Copilot 연동과 Microsoft Build 세션 플래너 MCP 데모를 포함한다고 설명. 데모 세부는 자막 미확보.
+- 코어: Constitution → Spec → Plan → Task → Implement. 공식은 그 위에 clarify / checklist / analyze / converge.
+- `specify init`이 에이전트별 인스트럭션을 심는다 (데모는 Copilot + Windows PowerShell). 발표자: 마법이 아니라 마크다운과 스크립트.
+- 산출물은 Git history의 일부. 다음 기능은 같은 베이스 위에 새 spec.
+- [[tech-bridge-spec-driven-development]] 라이브 데모: Build 2026 세션 플래너 MCP 서버를 빈 레포에서 만들어 MCP Inspector로 `search session`까지 실행.
 
 > ⚠️ 제품 커맨드·에이전트 목록은 변동 가능. 구현 세부는 공식 문서를 재확인할 것.
 

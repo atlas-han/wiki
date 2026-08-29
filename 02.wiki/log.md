@@ -431,3 +431,10 @@ updated: 2026-08-29
 - wiki 채널 요청: `@TechBridge-KR` 신규 롱폼을 매일 1회 ingest 후 `origin/main` push.
 - 당일 신규 3편 처리(위 ingest 3건). Shorts 제외.
 - 상태: 이후 실행은 기존 `source-url` / raw 파일의 video id로 중복 건너뜀.
+
+## [2026-08-29] ingest | Tech Bridge 3편 본문 보강 (자막 확보)
+- 계기: 첫 ingest가 채널 설명 수준이라 "동영상 없이 파악 불가" 피드백.
+- Chrome 쿠키로 en-orig 자막 재시도 성공 (`F_smvU3oqbU`, `OSd69LTMi3w`). Gates는 기존 Atlantic 공식 트랜스크립트 + en-orig.
+- 세 source 페이지를 강연 논증 순서(챕터·데모 단계·인용)로 재작성. 개념 [[spec-driven-development]]·[[agent-org-adoption]]·[[github-spec-kit]] 운영 세부 보강.
+- raw 3편은 불완전 캡처(429)를 자막 기반 구조화 재구성으로 교체 — 원문이 없었던 자리의 보정이지 기존 완전 소스 덮어쓰기가 아님.
+- 발표자 ASR "Luna Diva"는 본명 미확인 → 엔티티 페이지 없음.
