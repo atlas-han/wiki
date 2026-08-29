@@ -412,7 +412,7 @@ updated: 2026-08-29
 ## [2026-08-29] ingest | Tech Bridge — Figma 코딩 에이전트 조직 도입
 - 소스: https://www.youtube.com/watch?v=OSd69LTMi3w ([[tech-bridge]], 17:13), 발표자 [[eyal-blum]].
 - raw: `01.raw/articles/2026-08-29_품질 저하 없이 조직에 코딩 에이전트를 성공적으로 도입하는 방법 Figma.md`
-- ⚠️ 자막 429. 채널 설명 챕터(1차) + 동일 강연 2차 기록(BigGo/AI Engineer) complementary.
+- 이후 같은 날 자막 재수신 + 상세 재작성 (아래 항목).
 - 신규 source: [[tech-bridge-figma-coding-agents]]
 - 신규 concept: [[agent-org-adoption]]
 - 신규 entity: [[figma]] (org) · [[eyal-blum]] (person)
@@ -431,6 +431,11 @@ updated: 2026-08-29
 - wiki 채널 요청: `@TechBridge-KR` 신규 롱폼을 매일 1회 ingest 후 `origin/main` push.
 - 당일 신규 3편 처리(위 ingest 3건). Shorts 제외.
 - 상태: 이후 실행은 기존 `source-url` / raw 파일의 video id로 중복 건너뜀.
+
+## [2026-08-29] ingest | Figma 코딩 에이전트 강연 상세 재작성
+- 요청: wiki 채널에서 동일 영상(`OSd69LTMi3w`)을 "최대한 상세히". 이미 [[tech-bridge-figma-coding-agents]]가 있어 **중복 페이지 없이** 본문 확장.
+- en-orig + ko 자막 재수신. 채널 공식 12개 챕터 순서로 논증·수치·인용·운영 체크리스트를 source에 재구성. [[agent-org-adoption]]에 현장 규칙 섹션 추가. raw는 챕터 재구성으로 교체.
+- 페이지 수 변화 없음.
 
 ## [2026-08-29] ingest | Tech Bridge 3편 본문 보강 (자막 확보)
 - 계기: 첫 ingest가 채널 설명 수준이라 "동영상 없이 파악 불가" 피드백.
