@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-08-29
+updated: 2026-08-30
 sources: []
 ---
 
@@ -55,6 +55,8 @@ sources: []
 ## 진화 로그 (요약)
 
 새 소스마다 한 줄씩 누적:
+
+- *2026-08-30*: [[tech-bridge-frontier-engineering]] — [[clare-liguori|Clare Liguori]](AWS)가 Amazon 사내 세 실험(Bedrock Mantle 6명/76일, Prime Video 10일 스프린트, Stores 50팀 배포 속도)으로 [[frontier-engineering]]을 정의. 도구([[kiro|Kiro]])가 아니라 5습관(컨텍스트·감속·먹이·의도 문서·로컬 mock)이 3x 미만 vs 4.5x를 가름. 2026 과제는 50→2,000팀, 새 병목은 의사결정. [[agent-org-adoption]](Figma)의 Amazon 자매 관측.
 
 - *2026-08-29*: [[tech-bridge]] `@TechBridge-KR` 당일 롱폼 3편 ingest, 이후 en-orig 자막으로 본문 보강. (1) [[tech-bridge-spec-driven-development]] — 프롬프트를 메인 아티팩트에서 내리고 constitution/spec/plan/task를 Git history로. Build 2026 세션 플래너 MCP를 빈 레포에서 Spec Kit+Copilot으로 만드는 데모. (2) [[tech-bridge-figma-coding-agents]] — [[eyal-blum]]/[[figma]] 3막 곡선, 검증 피라미드, 계획 5x, 회의론자 로드맵, PR provenance. (3) [[tech-bridge-bill-gates-ai-warning]] — 코딩 임계점 이후 자율 규제 부정, 2년/4년 노동, human-reserved 직군.
 

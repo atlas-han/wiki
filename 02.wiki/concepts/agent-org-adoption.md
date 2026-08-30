@@ -3,11 +3,11 @@ title: Agent Org Adoption
 type: concept
 category: pattern
 tags: [agent, organization, verification, culture, figma]
-related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering]
+related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering]
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Agent Org Adoption
@@ -47,7 +47,10 @@ updated: 2026-08-29
 
 Anthropic 쪽 [[agent-harness-design]]은 *모델이 못하는 것에 대한 가정*을 하네스에 인코딩한다. 이 페이지는 *조직이 에이전트를 넣을 때 깨지는 것*(리뷰 부하, 시니어 맥락, 주의력)을 인코딩한다. 같은 루프의 조직면: 실패를 규칙으로 ([[harness-engineering]] "every mistake becomes a rule") — 다만 규칙은 훅/테스트만이 아니라 **소통 예절과 로드맵 소유권**이기도 하다.
 
+Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은 같은 "도구를 뿌리면 안 된다"를 **배포 속도**로 측정한다. Stores 50팀에서 90%가 [[kiro|Kiro]]를 썼는데 절반만 4.5x(중앙값). Figma가 시니어 저항·provenance를 강조한다면 Amazon은 루프에서 사람 제거, 2개월 감속 승인, 결정 병목, 주니어의 AI 리뷰 근육을 강조한다.
+
 ## References
 
 - [[tech-bridge-figma-coding-agents]]
+- [[tech-bridge-frontier-engineering]] · [[frontier-engineering]]
 - [[eyal-blum]] · [[figma]]

@@ -317,5 +317,11 @@
   "02.wiki/entities/github-spec-kit.md": "LiWrench",
   "02.wiki/entities/figma.md": "LiBuilding",
   "02.wiki/entities/eyal-blum.md": "LiUser",
-  "02.wiki/entities/bill-gates.md": "LiUser"
+  "02.wiki/entities/bill-gates.md": "LiUser",
+  "01.raw/articles/2026-08-29_AI 보조를 넘어 AI 네이티브로.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-frontier-engineering.md": "LiVideo",
+  "02.wiki/concepts/frontier-engineering.md": "LiPuzzle",
+  "02.wiki/entities/clare-liguori.md": "LiUser",
+  "02.wiki/entities/kiro.md": "LiBoxes",
+  "02.wiki/entities/amazon.md": "LiBuilding"
 }

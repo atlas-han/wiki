@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering]
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Spec-Driven Development
@@ -37,6 +37,8 @@ updated: 2026-08-29
 - AI가 뱉은 constitution/spec/plan을 팀이 읽고 동의할 것.
 - Spec Kit는 마법이 아니라 마크다운 + 스크립트 + 에이전트별 슬래시 커맨드.
 - 워크플로 전체를 내일 바꾸지 말고, 작고 의미 있는 실제 기능 하나에 spec-first + 규칙 2–5개 + 전 문서 리뷰.
+
+Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven이 [[kiro|Kiro]]에 들어가 있어 채택이 자연스럽다. vibe coding은 높은 수준 프롬프트 후 "그게 아니야"로 코드를 고친다. **의도가 틀린 코드**를 왕복하는 것보다 스펙 문서를 왕복하는 편이 싸다. 모델이 스펙 초안을 써도 된다.
 
 ## 위키 내 자매 개념
 

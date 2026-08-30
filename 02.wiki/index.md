@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Index
@@ -27,6 +27,7 @@ updated: 2026-08-29
 - [[jarred-sumner]] — [[bun|Bun]] 제작자, [[dynamic-workflows]]로 Zig→Rust 포팅 사례
 - [[cory-dolphin]] — [[nextdoor|Nextdoor]] Head of Engineering, [[outcome-engineering]] 프레이밍 제시
 - [[eyal-blum]] — [[figma|Figma]] 엔지니어, [[agent-org-adoption]] 프레이밍 제시
+- [[clare-liguori]] — AWS senior principal engineer, [[frontier-engineering]] / [[kiro|Kiro]] 강연 ([[tech-bridge-frontier-engineering]])
 - [[bill-gates]] — Microsoft 공동창업자, 2026-08 AI 위험 경고 ([[tech-bridge-bill-gates-ai-warning]])
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
@@ -38,6 +39,7 @@ updated: 2026-08-29
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
 - [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
+- [[amazon]] — 사내 코딩 에이전트 파일럿(Bedrock Mantle · Prime Video · Stores 50팀) 무대 ([[tech-bridge-frontier-engineering]])
 - [[cloudflare]] — 클라우드 인프라·보안 회사, [[project-glasswing]] 파트너
 - [[mozilla]] — Firefox 개발 오픈소스 비영리, [[project-glasswing]] 파트너
 - [[multica-ai]] — GitHub org, `andrej-karpathy-skills` repo로 [[claude-code]] CLAUDE.md 4원칙 공개
@@ -61,6 +63,7 @@ updated: 2026-08-29
 - [[project-glasswing]] — Anthropic ~50개 파트너 협업 사이버보안 이니셔티브
 - [[heroku]] — 초기 PaaS 플랫폼, [[twelve-factor-app]] 방법론의 관찰 기반
 - [[codex]] — [[openai|OpenAI]] coding agent (GPT‑5.4/5.5, Fast Mode), [[claude-code]] 대응 제품
+- [[kiro]] — Amazon/AWS agentic 코딩 어시스턴트, [[frontier-engineering]] 파일럿 도구 ([[tech-bridge-frontier-engineering]])
 
 ### Tools
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
@@ -116,8 +119,9 @@ updated: 2026-08-29
 - [[surgical-edits]] — *"Every changed line should trace directly to the user's request"* — 외과 수술적 코드 수정 원칙
 - [[verifiable-goals]] — 모호한 task를 *test → pass* 형식의 검증 가능한 goal로 변환
 - [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 3)
-- [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit, sources: 1)
-- [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 1)
+- [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit · Amazon/Kiro, sources: 2)
+- [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 2)
+- [[frontier-engineering]] — 에이전트가 코드 대부분을 쓰고 사람은 루프 밖. Amazon 3행동·5습관 ([[tech-bridge-frontier-engineering]])
 
 ---
 
@@ -211,13 +215,14 @@ updated: 2026-08-29
 - [[tech-bridge-spec-driven-development]] — Spec-driven development / GitHub Spec Kit 영상, 한국어 자막 ([[tech-bridge]], 2026-08-29)
 - [[tech-bridge-figma-coding-agents]] — Figma 코딩 에이전트 조직 도입 강연, [[eyal-blum]] ([[tech-bridge]], 2026-08-29)
 - [[tech-bridge-bill-gates-ai-warning]] — Radio Atlantic 빌 게이츠 AI 위험 인터뷰, 한국어 자막 ([[tech-bridge]], 2026-08-29)
+- [[tech-bridge-frontier-engineering]] — Clare Liguori / Amazon frontier development 5습관 ([[tech-bridge]], 2026-08-29)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 185 (log 포함; Tech Bridge 2026-08-29 영상 3편 — source 3 + entity 4 + concept 2)
+- 총 페이지 수: 190 (log 포함; + frontier-engineering ingest: source 1 + entity 3 + concept 1)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-08-29 ([[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]])
+- 마지막 ingest: 2026-08-30 ([[tech-bridge-frontier-engineering]])
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-08-29
+- 마지막 갱신: 2026-08-30

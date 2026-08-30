@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering]
 created: 2026-05-25
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Verifiable Goals
@@ -63,6 +63,7 @@ updated: 2026-08-29
 - [[outcome-engineering]] — Nextdoor/Codex 사례의 조직 관점 framing. *"원하는 결과를 정의한다"*가 곧 verifier(테스트·스크린샷·성능 기준)를 먼저 정의하는 것 — 같은 원리의 외부(비-Anthropic) 서술.
 - [[spec-driven-development]] — spec 자체가 저장되는 verifier. 프롬프트 대신 constitution/spec/plan/task 아티팩트.
 - [[agent-org-adoption]] — Figma: 테스트를 코드보다 먼저(red-green), 검증 피라미드의 아래를 결정론적으로. 조직 도입에서 verifier 투자가 generation보다 높은 레버리지.
+- [[frontier-engineering]] — Amazon/Kiro: 에이전트에게 할 일 + 자가 검증을 넘기고 컴파일·테스트·커버리지 바에만 복귀. 수 시간 루프의 조건은 **로컬 결정론적 mock**으로 피드백을 빠르게.
 
 ## 왜 작동하는가
 

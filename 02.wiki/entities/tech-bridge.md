@@ -10,8 +10,9 @@ sources:
   - tech-bridge-spec-driven-development
   - tech-bridge-figma-coding-agents
   - tech-bridge-bill-gates-ai-warning
+  - tech-bridge-frontier-engineering
 created: 2026-06-03
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Tech Bridge
@@ -26,10 +27,11 @@ updated: 2026-08-29
   - [[tech-bridge-spec-driven-development]] — [[spec-driven-development]] / [[github-spec-kit]]
   - [[tech-bridge-figma-coding-agents]] — [[eyal-blum]] / [[figma]] / [[agent-org-adoption]]
   - [[tech-bridge-bill-gates-ai-warning]] — Radio Atlantic, [[bill-gates]]
+- 2026-08-30: 같은 날 늦게 올라온 4편째 [[tech-bridge-frontier-engineering]] — [[clare-liguori]] / [[kiro]] / [[frontier-engineering]] (Amazon Stores 50팀, 5습관)
 
 > 채널 운영 주체는 여전히 미확인. 원본 표기는 영상마다 설명란·워터마크로 다를 수 있음.
 
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

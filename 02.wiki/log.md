@@ -443,3 +443,14 @@ updated: 2026-08-29
 - 세 source 페이지를 강연 논증 순서(챕터·데모 단계·인용)로 재작성. 개념 [[spec-driven-development]]·[[agent-org-adoption]]·[[github-spec-kit]] 운영 세부 보강.
 - raw 3편은 불완전 캡처(429)를 자막 기반 구조화 재구성으로 교체 — 원문이 없었던 자리의 보정이지 기존 완전 소스 덮어쓰기가 아님.
 - 발표자 ASR "Luna Diva"는 본명 미확인 → 엔티티 페이지 없음.
+
+## [2026-08-30] ingest | Tech Bridge — Clare Liguori frontier engineering
+- 소스: https://www.youtube.com/watch?v=Ry0WHNxDbYA ([[tech-bridge]], 20:29). 업로드 2026-08-29, 전날 일일 ingest 이후 신규 롱폼 1편. 발표자 [[clare-liguori]].
+- raw: `01.raw/articles/2026-08-29_AI 보조를 넘어 AI 네이티브로.md` (en-orig 자막. ko timedtext 429).
+- 신규 source: [[tech-bridge-frontier-engineering]]
+- 신규 concept: [[frontier-engineering]]
+- 신규 entity: [[clare-liguori]] (person) · [[kiro]] (product) · [[amazon]] (org)
+- 페이지화하지 않음: Bedrock Mantle, Prime Video, Amazon Stores, distinguished engineer 개인
+- 갱신: [[tech-bridge]], [[agent-org-adoption]], [[harness-engineering]], [[spec-driven-development]], [[verifiable-goals]], index, overview, log
+- 핵심 합성: 같은 도구(90% Kiro)로 Stores 50팀이 <3x vs 4.5x(중앙값)로 갈림. 차이는 5습관. 2026 과제 50→2,000팀. 새 병목은 의사결정.
+- 트리거: Buzz cron `0 0 * * *`가 00:00 UTC 핑을 안 보냄. chris 질문으로 수동 실행.

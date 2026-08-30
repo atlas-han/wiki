@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering]
 created: 2026-06-03
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Harness Engineering
@@ -68,6 +68,8 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
   - → 다음 세션에서 같은 문제 재발 확률을 낮춤. 인간이 *steering*하는 feed-forward 시스템.
 
 이 사상은 [[ralph-wiggum-method|Ralph]]의 *"실패를 거부하지 말고 튜닝 신호로"* 철학, [[agent-harness-design]]의 *"harness는 모델이 못하는 것에 대한 가정의 다발"* 과 정확히 맞물린다. 단, 강조점이 다르다 — agent-harness-design은 *모델이 좋아지면 가정을 제거*(harness 단순화)에, harness engineering은 *실패에서 가정을 추가*(harness 강화)에 무게. 두 방향은 같은 진화 루프의 양면.
+
+[[tech-bridge-frontier-engineering]]의 습관 1이 이 양면을 **매일의 steering 파일 루프**로 서술한다. 에이전트 실수 → skills/steering에 뭐가 빠졌나(추가). Sonnet 3.7 quirk용 do-not은 Opus 4.5 이후 **지울 것**(제거). "아직 필요한가, 아니면 컨텍스트 팽창인가."
 
 > **자동화된 System Evolution = [[self-harness|Self-Harness]].** *"every mistake becomes a rule"* 에서 사람이 `agents.md`에 규칙을 적는 손을 떼고, **에이전트가 자기 실행 트레이스에서 직접 규칙을 합성**하면 그것이 [[self-harness|Self-Harness]](Shanghai AI Lab, [[self-harness-paper]])다. Weakness Mining(실패 클러스터링) → Proposal(diverse yet minimal edit) → Validation(회귀 게이트)의 3단계 루프로, [[terminal-bench|Terminal-Bench-2.0]] 3개 모델에서 *모델마다 다른* 하니스 진화를 정량 입증했다. *skill issue 안티패턴*(모델 탓하며 다음 버전 대기)의 정확한 반례.
 
