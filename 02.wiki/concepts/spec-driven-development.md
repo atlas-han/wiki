@@ -5,9 +5,9 @@ category: pattern
 tags: [spec, planning, agent, github, workflow]
 related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills]
 created: 2026-08-29
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # Spec-Driven Development
@@ -39,6 +39,8 @@ updated: 2026-08-30
 - 워크플로 전체를 내일 바꾸지 말고, 작고 의미 있는 실제 기능 하나에 spec-first + 규칙 2–5개 + 전 문서 리뷰.
 
 Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven이 [[kiro|Kiro]]에 들어가 있어 채택이 자연스럽다. vibe coding은 높은 수준 프롬프트 후 "그게 아니야"로 코드를 고친다. **의도가 틀린 코드**를 왕복하는 것보다 스펙 문서를 왕복하는 편이 싸다. 모델이 스펙 초안을 써도 된다.
+
+[[tech-bridge-ai-native-skills]]([[imad-touil]]): Specify→Plan→Tasks→Implement는 기업 SDLC에서 **product increment 한 칸**일 뿐. 앞뒤로 전략·디스커버리·데이터·플랫폼·런치가 깔린다. 스펙 파이프라인을 전사 "무엇이든 만드는 단일 워크플로"로 오해하지 말 것. 조직 know-how의 실행 단위는 [[agent-skills]].
 
 ## 위키 내 자매 개념
 

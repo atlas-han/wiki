@@ -454,3 +454,12 @@ updated: 2026-08-29
 - 갱신: [[tech-bridge]], [[agent-org-adoption]], [[harness-engineering]], [[spec-driven-development]], [[verifiable-goals]], index, overview, log
 - 핵심 합성: 같은 도구(90% Kiro)로 Stores 50팀이 <3x vs 4.5x(중앙값)로 갈림. 차이는 5습관. 2026 과제 50→2,000팀. 새 병목은 의사결정.
 - 트리거: Buzz cron `0 0 * * *`가 00:00 UTC 핑을 안 보냄. chris 질문으로 수동 실행.
+
+## [2026-08-31] ingest | Tech Bridge 08-30 롱폼 3편 (Ng · DHH · Touil)
+- 트리거: wiki 채널에서 스케줄러 미동작 수정 요청. Buzz cron `0 0 * * *`가 08-30·08-31 00:00 UTC 모두 핑 없음 (#4904). 워크플로를 `interval: 24h`로 바꾸고 세션 1d 스케줄을 건 뒤, 놓친 오늘분을 이 턴에서 실행.
+- 업로드 2026-08-30 롱폼 3편 (Shorts 제외). ko+en-orig 자막 Chrome 쿠키로 확보.
+- 1) https://www.youtube.com/watch?v=5bELrUqxX4U (36:15, Silicon Valley Girl × [[andrew-ng]]) → [[tech-bridge-andrew-ng-ai-opportunity]]. 신규 [[andrew-ng]] · [[coursera]] · [[learnvector]] · [[regulatory-capture]] · [[cognitive-offloading]]. 갱신 [[bill-gates]](대조) · [[openai]](AGI 선언 인센티브).
+- 2) https://www.youtube.com/watch?v=sXCppYzX-0g (9:15, Lex × [[dhh]]) → [[tech-bridge-dhh-agent-productivity]]. 신규 [[dhh]] · [[omarchy]]. ASR Amachi→Omarchy. 갱신 [[agent-org-adoption]] · [[frontier-engineering]].
+- 3) https://www.youtube.com/watch?v=0qySk1fcf6k (20:01, [[imad-touil]]) → [[tech-bridge-ai-native-skills]]. 신규 [[imad-touil]] · [[agent-skills]]. 갱신 [[harness-engineering]] · [[spec-driven-development]] (spec–plan–task = product increment 한 칸).
+- 페이지화하지 않음: Silicon Valley Girl, QuantumBlack, 37signals, DeepLearning.AI, Lex Fridman.
+- raw: `01.raw/articles/2026-08-30_*.md` 3편. 갱신 index, overview, log, [[tech-bridge]].

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
 related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills]
 created: 2026-06-03
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # Harness Engineering
@@ -46,7 +46,7 @@ updated: 2026-08-30
 | 구성 요소 | 역할 | 본 위키 |
 |---|---|---|
 | **Global Rules** | 코딩 표준·제약·패턴 (예: CLAUDE.md / agents.md) | [[llm-coding-guidelines]] |
-| **Skills & MCP** | 워크플로·외부 기능 부여 | [[model-context-protocol|MCP]] |
+| **Skills & MCP** | 워크플로·외부 기능 부여 | [[model-context-protocol|MCP]] · [[agent-skills]] (조직 거버넌스 면: inner harness vs outer workflow, registry) |
 | **Codebase Search** | LSP·지식 그래프로 코드 컨텍스트 파악 | [[code-knowledge-graph]] |
 | **Hooks** | 이벤트 트리거 — 보안 차단·품질 검증 | (아래) |
 | **Sub-agents** | 세부 태스크 위임 (병렬/순차) | [[generator-evaluator-pattern]] |

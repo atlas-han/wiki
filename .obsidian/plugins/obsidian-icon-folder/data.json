@@ -323,5 +323,20 @@
   "02.wiki/concepts/frontier-engineering.md": "LiPuzzle",
   "02.wiki/entities/clare-liguori.md": "LiUser",
   "02.wiki/entities/kiro.md": "LiBoxes",
-  "02.wiki/entities/amazon.md": "LiBuilding"
+  "02.wiki/entities/amazon.md": "LiBuilding",
+  "01.raw/articles/2026-08-30_앤드류 응이 밝힌 AI의 진짜 기회.md": "LiNewspaper",
+  "01.raw/articles/2026-08-30_AI 에이전트로 생산성 10배 높이는 비결.md": "LiNewspaper",
+  "01.raw/articles/2026-08-30_AI 네이티브 조직은 스킬로 움직입니다.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-andrew-ng-ai-opportunity.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-dhh-agent-productivity.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-ai-native-skills.md": "LiVideo",
+  "02.wiki/entities/andrew-ng.md": "LiUser",
+  "02.wiki/entities/coursera.md": "LiBuilding",
+  "02.wiki/entities/learnvector.md": "LiBoxes",
+  "02.wiki/entities/dhh.md": "LiUser",
+  "02.wiki/entities/omarchy.md": "LiBoxes",
+  "02.wiki/entities/imad-touil.md": "LiUser",
+  "02.wiki/concepts/regulatory-capture.md": "LiBookText",
+  "02.wiki/concepts/cognitive-offloading.md": "LiBrain",
+  "02.wiki/concepts/agent-skills.md": "LiPuzzle"
 }

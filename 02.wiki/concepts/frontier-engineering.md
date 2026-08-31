@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, kiro, amazon, habits]
 related: [agent-org-adoption, harness-engineering, spec-driven-development, verifiable-goals, agent-harness-design]
 first-seen: tech-bridge-frontier-engineering
-sources: [tech-bridge-frontier-engineering]
+sources: [tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-andrew-ng-ai-opportunity]
 created: 2026-08-30
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # Frontier Engineering
@@ -50,8 +50,13 @@ updated: 2026-08-30
 
 [[agent-org-adoption]]은 Figma 현장의 3막·검증 피라미드·시니어 저항. 이 페이지는 Amazon 현장의 **3행동 + 5습관 + 결정 병목**. 둘 다 "도구를 뿌리면 안 된다"가 공통. 차이는 입구: Figma는 주의력·provenance, Amazon은 루프에서 사람 제거와 배포 속도.
 
+DHH 클립([[tech-bridge-dhh-agent-productivity]])은 "사람은 루프 밖"을 조직 허가가 아니라 **중개자 제거(직결)** 로 읽고, 경로는 그린필드·개인 재작성([[omarchy]]). Ng([[tech-bridge-andrew-ng-ai-opportunity]])는 같은 "코딩이 싸진 뒤의 병목"을 product management / taste로 부른다. Touil([[tech-bridge-ai-native-skills]])은 개인 steering 파일을 **전사 skills registry**로 올리는 조직면을 단다.
+
 ## References
 
 - [[tech-bridge-frontier-engineering]]
 - [[clare-liguori]] · [[kiro]] · [[amazon]]
 - [[agent-org-adoption]] · [[spec-driven-development]] · [[verifiable-goals]] · [[harness-engineering]]
+- [[tech-bridge-dhh-agent-productivity]] · [[dhh]] · [[omarchy]]
+- [[tech-bridge-ai-native-skills]] · [[agent-skills]]
+- [[tech-bridge-andrew-ng-ai-opportunity]] · [[andrew-ng]]

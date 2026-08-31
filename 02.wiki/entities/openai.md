@@ -6,7 +6,7 @@ tags: [ai-lab, gpt, codex, frontier-lab]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-08-31
 ---
 
 # OpenAI
@@ -17,10 +17,11 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 
 - [[codex]](GPT‑5.4/5.5 기반 coding agent)의 제공사. [[claude-code|Claude Code]]에 대응하는 OpenAI 측 에이전트 제품 라인.
 - [[outcome-engineering]] 프레이밍이 OpenAI 고객 사례에서 나옴 — Anthropic 계열 framing([[verifiable-goals]]·[[harness-engineering]])과 비교 가능한 외부 관점.
+- [[tech-bridge-andrew-ng-ai-opportunity]]: [[andrew-ng]]가 OpenAI–Microsoft AGI 관련 합의(이후 재협상으로 소멸)가 AGI를 **일찍 선언할 경제적 유인**이었다고 언급 — 정의 낮추면 "이미/30년 전 AGI"도 가능하다고 비판.
 
 > ⚠️ GPT‑5.4/5.5 등 2026 모델의 구체 스펙은 본 위키 지식 컷오프 이후라, 소스에 명시된 범위로만 기록한다.
 
 ## References
 
-- [[openai-nextdoor-codex]] · [[codex]]
+- [[openai-nextdoor-codex]] · [[codex]] · [[tech-bridge-andrew-ng-ai-opportunity]]
 - 외부: <https://openai.com/>

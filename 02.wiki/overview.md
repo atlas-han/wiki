@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-08-30
+updated: 2026-08-31
 sources: []
 ---
 
@@ -55,6 +55,8 @@ sources: []
 ## 진화 로그 (요약)
 
 새 소스마다 한 줄씩 누적:
+
+- *2026-08-31*: [[tech-bridge]] `@TechBridge-KR` 08-30 업로드 롱폼 3편. (1) [[tech-bridge-andrew-ng-ai-opportunity]] — [[andrew-ng]]가 공포를 [[regulatory-capture]]로, 노동을 30–40%/60% complement로, 통상의 LLM을 [[cognitive-offloading]]으로 읽고 [[learnvector]]로 1:1 학습을 짠다. Gates편과 같은 채널의 반대 입구. (2) [[tech-bridge-dhh-agent-productivity]] — [[dhh]] 직결 테제. 승인 계층이 10x를 죽이고, 경로는 [[omarchy]]처럼 자기 5%. Figma/Amazon의 세 번째 현장. (3) [[tech-bridge-ai-native-skills]] — [[imad-touil]]이 know-how를 [[agent-skills]]에 두고 거버넌스 없는 스킬을 새 기술부채로. spec–plan–task는 SDLC의 한 increment.
 
 - *2026-08-30*: [[tech-bridge-frontier-engineering]] — [[clare-liguori|Clare Liguori]](AWS)가 Amazon 사내 세 실험(Bedrock Mantle 6명/76일, Prime Video 10일 스프린트, Stores 50팀 배포 속도)으로 [[frontier-engineering]]을 정의. 도구([[kiro|Kiro]])가 아니라 5습관(컨텍스트·감속·먹이·의도 문서·로컬 mock)이 3x 미만 vs 4.5x를 가름. 2026 과제는 50→2,000팀, 새 병목은 의사결정. [[agent-org-adoption]](Figma)의 Amazon 자매 관측.
 

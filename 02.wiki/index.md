@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # Index
@@ -28,6 +28,9 @@ updated: 2026-08-30
 - [[cory-dolphin]] — [[nextdoor|Nextdoor]] Head of Engineering, [[outcome-engineering]] 프레이밍 제시
 - [[eyal-blum]] — [[figma|Figma]] 엔지니어, [[agent-org-adoption]] 프레이밍 제시
 - [[clare-liguori]] — AWS senior principal engineer, [[frontier-engineering]] / [[kiro|Kiro]] 강연 ([[tech-bridge-frontier-engineering]])
+- [[andrew-ng]] — Coursera 공동창업, AI 기회·[[regulatory-capture]]·[[cognitive-offloading]] ([[tech-bridge-andrew-ng-ai-opportunity]])
+- [[dhh]] — Rails 창시자, 에이전트 직결·[[omarchy]] ([[tech-bridge-dhh-agent-productivity]])
+- [[imad-touil]] — QuantumBlack, [[agent-skills]] 거버넌스 ([[tech-bridge-ai-native-skills]])
 - [[bill-gates]] — Microsoft 공동창업자, 2026-08 AI 위험 경고 ([[tech-bridge-bill-gates-ai-warning]])
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
@@ -38,6 +41,7 @@ updated: 2026-08-30
 - [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
+- [[coursera]] — 온라인 학습 플랫폼, [[andrew-ng]] 공동창업 · [[learnvector]] $100M 투자자
 - [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
 - [[amazon]] — 사내 코딩 에이전트 파일럿(Bedrock Mantle · Prime Video · Stores 50팀) 무대 ([[tech-bridge-frontier-engineering]])
 - [[cloudflare]] — 클라우드 인프라·보안 회사, [[project-glasswing]] 파트너
@@ -64,6 +68,8 @@ updated: 2026-08-30
 - [[heroku]] — 초기 PaaS 플랫폼, [[twelve-factor-app]] 방법론의 관찰 기반
 - [[codex]] — [[openai|OpenAI]] coding agent (GPT‑5.4/5.5, Fast Mode), [[claude-code]] 대응 제품
 - [[kiro]] — Amazon/AWS agentic 코딩 어시스턴트, [[frontier-engineering]] 파일럿 도구 ([[tech-bridge-frontier-engineering]])
+- [[omarchy]] — DHH의 Linux 데스크톱/앱 스택, 에이전트 직결 실증 ([[tech-bridge-dhh-agent-productivity]])
+- [[learnvector]] — Ng의 1:1 학습 조직, Coursera $100M ([[tech-bridge-andrew-ng-ai-opportunity]])
 
 ### Tools
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
@@ -89,12 +95,14 @@ updated: 2026-08-30
 - [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어
 - [[context-resets-and-compaction]] — 장기 task에서 context window 한계를 다루는 두 전략 + Managed Agents의 third way
 - [[context-engineering]] — context window를 무엇을·어떻게 채우는가의 설계 영역
+- [[cognitive-offloading]] — 인지 작업을 LLM에 넘겨 당장은 성과↑, 장기 retention↓ (Ng)
 
 ### Architectures
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
 
 ### Theories
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
+- [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. Ng는 AI 공포 마케팅을 이 프레임으로 읽음
 - [[memex]] — Vannevar Bush 1945년 비전, [[llm-wiki-pattern]]의 사상적 조상
 - [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned)
 - [[context-anxiety]] — context limit이 가까워졌다고 *느끼면* 조기 마무리하는 모델 행동
@@ -118,6 +126,7 @@ updated: 2026-08-30
 - [[llm-coding-guidelines]] — LLM 코딩 어시스턴트용 CLAUDE.md 4원칙 (Think / Simplicity / Surgical / Goal-Driven)
 - [[surgical-edits]] — *"Every changed line should trace directly to the user's request"* — 외과 수술적 코드 수정 원칙
 - [[verifiable-goals]] — 모호한 task를 *test → pass* 형식의 검증 가능한 goal로 변환
+- [[agent-skills]] — 조직 know-how를 실행 가능한 스킬 단위로. 거버넌스 없으면 새 기술부채 ([[tech-bridge-ai-native-skills]])
 - [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 3)
 - [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit · Amazon/Kiro, sources: 2)
 - [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 2)
@@ -216,13 +225,16 @@ updated: 2026-08-30
 - [[tech-bridge-figma-coding-agents]] — Figma 코딩 에이전트 조직 도입 강연, [[eyal-blum]] ([[tech-bridge]], 2026-08-29)
 - [[tech-bridge-bill-gates-ai-warning]] — Radio Atlantic 빌 게이츠 AI 위험 인터뷰, 한국어 자막 ([[tech-bridge]], 2026-08-29)
 - [[tech-bridge-frontier-engineering]] — Clare Liguori / Amazon frontier development 5습관 ([[tech-bridge]], 2026-08-29)
+- [[tech-bridge-andrew-ng-ai-opportunity]] — Andrew Ng 인터뷰: regulatory capture, 30/40–60 노동, cognitive offloading, LearnVector ([[tech-bridge]], 2026-08-30)
+- [[tech-bridge-dhh-agent-productivity]] — DHH/Lex 클립: 에이전트 직결, taste 병목, 자기 5% ([[tech-bridge]], 2026-08-30)
+- [[tech-bridge-ai-native-skills]] — Imad Touil: 스킬 거버넌스·registry·progressive disclosure ([[tech-bridge]], 2026-08-30)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 190 (log 포함; + frontier-engineering ingest: source 1 + entity 3 + concept 1)
+- 총 페이지 수: 202 (log 포함; + 2026-08-31 Tech Bridge 3편: source 3 + entity 6 + concept 3)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-08-30 ([[tech-bridge-frontier-engineering]])
+- 마지막 ingest: 2026-08-31 ([[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]])
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-08-30
+- 마지막 갱신: 2026-08-31

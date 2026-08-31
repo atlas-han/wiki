@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, verification, culture, figma]
 related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills]
 created: 2026-08-29
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # Agent Org Adoption
@@ -49,8 +49,14 @@ Anthropic 쪽 [[agent-harness-design]]은 *모델이 못하는 것에 대한 가
 
 Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은 같은 "도구를 뿌리면 안 된다"를 **배포 속도**로 측정한다. Stores 50팀에서 90%가 [[kiro|Kiro]]를 썼는데 절반만 4.5x(중앙값). Figma가 시니어 저항·provenance를 강조한다면 Amazon은 루프에서 사람 제거, 2개월 감속 승인, 결정 병목, 주니어의 AI 리뷰 근육을 강조한다.
 
+세 번째 현장([[tech-bridge-dhh-agent-productivity]], [[dhh]]): 창업자/개인이 에이전트와 **직결**. 사람 승인 계층이 10x를 죽인다. 대기업은 innovator's dilemma 슈퍼탱커 → 밖에서 자기 5%를 다시 쓴다([[omarchy]]). Figma·Amazon이 조직 안 습관을 바꾼다면 DHH는 중개자를 제거한다.
+
+[[tech-bridge-ai-native-skills]]는 같은 "방식이 가른다"를 **스킬 카탈로그/거버넌스**로 구체화한다. 거버넌스 없는 스킬 = 새 기술부채. 15팀 시뮬에서 도구는 같아도 가시성·품질이 분산.
+
 ## References
 
 - [[tech-bridge-figma-coding-agents]]
 - [[tech-bridge-frontier-engineering]] · [[frontier-engineering]]
+- [[tech-bridge-dhh-agent-productivity]] · [[dhh]] · [[omarchy]]
+- [[tech-bridge-ai-native-skills]] · [[agent-skills]]
 - [[eyal-blum]] · [[figma]]
