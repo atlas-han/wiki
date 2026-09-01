@@ -463,3 +463,29 @@ updated: 2026-08-29
 - 3) https://www.youtube.com/watch?v=0qySk1fcf6k (20:01, [[imad-touil]]) → [[tech-bridge-ai-native-skills]]. 신규 [[imad-touil]] · [[agent-skills]]. 갱신 [[harness-engineering]] · [[spec-driven-development]] (spec–plan–task = product increment 한 칸).
 - 페이지화하지 않음: Silicon Valley Girl, QuantumBlack, 37signals, DeepLearning.AI, Lex Fridman.
 - raw: `01.raw/articles/2026-08-30_*.md` 3편. 갱신 index, overview, log, [[tech-bridge]].
+
+## [2026-09-01] ingest | Tech Bridge 08-31 롱폼 2편 (Adobe agentic sites · Cursor GrokBot)
+- 트리거: wiki 채널에서 chris가 "Workflow가 오늘도 실행되지 않았어" — 원인 분석 요청. 스케줄러 진단 결과를 별도 기록(아래 meta)하고 놓친 오늘분을 이 턴에서 실행.
+- 업로드 2026-08-31 롱폼 2편 (Shorts 없음). ko + en-orig 자막 Chrome 쿠키로 확보, 429 없음. 수치는 en-orig 교차 확인.
+- 1) https://www.youtube.com/watch?v=PXHUHNX7nbI (20:13, [[carlos-sanchez]] / [[adobe]]) → [[tech-bridge-agentic-sites]]. 신규 concept [[agentic-sites]]. 신규 entity [[carlos-sanchez]] · [[adobe]] · [[cerebras]] · [[gemma-4]]. 갱신 [[cloudflare]] 참조.
+  - 핵심: 페이지가 아니라 **블록** 단위 개인화 + **자기 사이트를 RAG 코퍼스로**. 브랜드 가이드라인이 환각 예산. promptfoo 상시 평가(사이트마다 결과가 다름). 정확성과 **속도(1~2초)** 가 동급 지표.
+  - 수치: Cerebras+Gemma 4 페이지 생성 평균 **1.1초**, 2위 구성 4.6초. LLM 왕복 1초, 2,200–2,300 tok/s.
+  - ⚠️ 디버그 화면의 "Total time 164 seconds"는 ko·en-orig 자막이 일치하지만 같은 화면 수치와 모순 — 단위 불명으로 **인용하지 않음**을 raw·source 양쪽에 명시.
+  - ⚠️ 16:33 "Off One Labs"는 두 자막 모두 불분명해 원 표기 미기록.
+- 2) https://www.youtube.com/watch?v=cVFc9f6M0U0 (26:39, MTS 인터뷰 · [[lauren-tan]] · [[roshan-sadanani]] / [[cursor]]) → [[tech-bridge-grokbot-agent-teams]]. 신규 concept [[persistent-agent-teams]]. 신규 entity [[lauren-tan]] · [[roshan-sadanani]] · [[cursor]] · [[grokbot]] · [[grok-4-6]]. 갱신 [[agent-org-adoption]].
+  - 핵심: 정체성 + 자체 컴퓨터 + 코디네이터(비서실장) 봇 + 메시징 UI. 엔지니어 역할이 **에이전트 매니저**(위)와 **코드베이스 관리인**(아래)으로 분화 — 규칙을 린트·CI 실패로 인코딩([[verifiable-goals]] 재확인).
+  - 대중화 병목을 모델이 아니라 **UX**로 특정. 채택 경로는 내부 PMF → 외부 출시([[agent-org-adoption]]와 동형)이나 확산이 엔지니어링 밖까지 간 것이 신규.
+  - 수치: Cursor Bench 3.2 — Grok 4.6 xhigh **70.8% @ $2.81/task** vs Fable 5 Max **70.5% @ $17.32** (동점대 ~6배). 가격이 곧 병렬성.
+  - ⚠️ Contradiction: 소스가 Grok 4.6을 **Cursor + SpaceX 공동 발표**로, 벤치마크를 **Cursor Bench 3.2**로 서술. 채널 밖 독립 확인 없이 소스 서술 그대로 기록 (source·[[grok-4-6]]·[[cursor]] 3곳에 단서 명시).
+  - ASR 보정: GrokBot(그록봇/Graphbot/그랩봇/Grubbot/락봇), Grok 4.6(Rock/그래프), "GRT 4.6 ICS"→xhigh, IMAX "70인치"→70mm. "Saul" 모델명은 불확실로 표시.
+- 페이지화하지 않음: MTS 채널, Benny(개별 봇), promptfoo, AEM Edge Delivery(제품 계층은 [[adobe]] 안에), SpaceX.
+- raw: `01.raw/articles/2026-08-31_*.md` 2편. 갱신 index(202→215), overview, log, [[tech-bridge]], [[agent-org-adoption]].
+- 핵심 합성: 이 위키가 하루 만에 코딩 에이전트 밖으로 두 걸음 — **생성형 소비자 UI**([[agentic-sites]])와 **비개발자용 지속형 에이전트**([[persistent-agent-teams]]). 두 소스 모두 병목을 모델 능력이 아닌 곳(지연 예산 / UX)에 두고, 둘 다 작은·싼 모델이 그 병목을 푸는 열쇠라고 말한다.
+
+## [2026-09-01] meta | 일일 ingest 스케줄러 미실행 원인 규명
+- 증상: 08-30·08-31·09-01 모두 자동 실행 없음. 08-31에 cron→`interval: 24h` 변경 + 세션 1d 스케줄 추가로 고쳤다고 보고했으나 09-01에도 실행 안 됨.
+- **원인 1 (확정)**: 백업으로 걸었던 세션 스케줄러 `01a0554049f77543907c862eefc846aa`가 조회 시 존재하지 않음(`No scheduled jobs`). 스케줄러의 `durable` 옵션은 **실제로 효과가 없고** 잡이 세션 메모리에만 산다 — 세션 종료와 함께 소멸. 08-31 보고의 "durable 백업"은 틀린 진술이었음.
+- **원인 2 (확정, 실험으로 증명)**: `buzz workflows trigger`로 수동 실행하니 ping 메시지가 정상 게시됨 → **워크플로 엔진과 YAML은 정상**. 그런데 그 메시지의 작성자는 `12f6870117eff1a6318bd38c82a65d51dd19879b7489f57247114d0ee8a96de3` (`buzz:workflow` 태그) — 릴레이의 **워크플로 러너 키**이고 채널 멤버도 아니다. 이 에이전트 하니스는 `BUZZ_ACP_RESPOND_TO=owner-only`(owner = chris `991570ec…`)로 게이트되므로 **그 ping은 턴을 시작시키지 못한다.** 즉 스케줄이 정상 발화해도 에이전트는 절대 깨어나지 않는 구조였다.
+- **원인 3 (증거 기반 추정)**: 08-30·08-31 채널에 `12f68701…` 발신 메시지가 전혀 없음 → 릴레이 스케줄 자체도 발화하지 않았음. 업스트림 [block/buzz#4904](https://github.com/block/buzz/issues/4904)와 일치. `buzz workflows runs`는 항상 `[]`(CLI가 DB run history를 읽지 않음)이라 채널 메시지 유무가 유일한 신호.
+- 조치: `buzz agents draft-update --respond-to anyone` 초안을 owner 검토로 전송(저장 전까지 무효). 채널 멤버가 chris와 Clip Scribe 둘뿐이고 self-authored 이벤트는 별도로 무시되므로 이 채널에서의 노출 범위는 제한적.
+- 미해결: #4904가 고쳐지기 전까지 릴레이 발화는 여전히 불확실. respond-to가 열리기 전에는 **어떤 자동 경로도** 에이전트를 깨울 수 없으므로 사람 멘션이 유일한 확실한 트리거.

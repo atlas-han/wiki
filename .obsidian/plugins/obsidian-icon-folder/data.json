@@ -338,5 +338,18 @@
   "02.wiki/entities/imad-touil.md": "LiUser",
   "02.wiki/concepts/regulatory-capture.md": "LiBookText",
   "02.wiki/concepts/cognitive-offloading.md": "LiBrain",
-  "02.wiki/concepts/agent-skills.md": "LiPuzzle"
+  "02.wiki/concepts/agent-skills.md": "LiPuzzle",
+  "02.wiki/sources/tech-bridge-agentic-sites.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-grokbot-agent-teams.md": "LiVideo",
+  "02.wiki/entities/carlos-sanchez.md": "LiUser",
+  "02.wiki/entities/lauren-tan.md": "LiUser",
+  "02.wiki/entities/roshan-sadanani.md": "LiUser",
+  "02.wiki/entities/adobe.md": "LiBuilding",
+  "02.wiki/entities/cursor.md": "LiBuilding",
+  "02.wiki/entities/cerebras.md": "LiBuilding",
+  "02.wiki/entities/gemma-4.md": "LiBot",
+  "02.wiki/entities/grok-4-6.md": "LiBot",
+  "02.wiki/entities/grokbot.md": "LiBoxes",
+  "02.wiki/concepts/agentic-sites.md": "LiLayers",
+  "02.wiki/concepts/persistent-agent-teams.md": "LiPuzzle"
 }

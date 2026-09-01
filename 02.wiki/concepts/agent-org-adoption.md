@@ -3,11 +3,11 @@ title: Agent Org Adoption
 type: concept
 category: pattern
 tags: [agent, organization, verification, culture, figma]
-related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering]
+related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams]
 created: 2026-08-29
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 # Agent Org Adoption
@@ -53,10 +53,15 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 
 [[tech-bridge-ai-native-skills]]는 같은 "방식이 가른다"를 **스킬 카탈로그/거버넌스**로 구체화한다. 거버넌스 없는 스킬 = 새 기술부채. 15팀 시뮬에서 도구는 같아도 가시성·품질이 분산.
 
+[[tech-bridge-grokbot-agent-teams]]([[cursor]], [[persistent-agent-teams]])는 **채택 경로 자체**를 같은 문법으로 반복한다 — 작은 팀 프로토타입 → 사내 배포 → *내부 PMF를 외부 출시 신호로* 사용. 이 위키에서 새로운 것은 두 가지다. ① 확산이 **엔지니어링 밖**(시장 진출·운영·제품)까지 갔고, 그 이유로 지목된 것이 모델 성능이 아니라 **역할 무관 접근성과 기존 도구 연동**이다. ② 대중 채택의 병목을 **UX**로 특정한다 — *"일상적인 작업에 에이전트를 활용하기 위한 UX가 형편없기 때문에 여전히 대부분 코딩 기반"*. Figma가 시니어 저항을, Amazon이 배포 속도를, DHH가 승인 계층을 병목으로 봤다면, 여기서는 **인터페이스**가 병목이다.
+
+엔지니어 역할에 대한 처방은 오히려 수렴한다: 규칙을 **린트 규칙과 CI 실패로 인코딩**하고 에이전트가 성공하도록 코드베이스를 리팩토링하라 — [[verifiable-goals]]와 [[frontier-engineering]] 5습관의 재확인.
+
 ## References
 
 - [[tech-bridge-figma-coding-agents]]
 - [[tech-bridge-frontier-engineering]] · [[frontier-engineering]]
 - [[tech-bridge-dhh-agent-productivity]] · [[dhh]] · [[omarchy]]
 - [[tech-bridge-ai-native-skills]] · [[agent-skills]]
+- [[tech-bridge-grokbot-agent-teams]] · [[persistent-agent-teams]] · [[cursor]]
 - [[eyal-blum]] · [[figma]]

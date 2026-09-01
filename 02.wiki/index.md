@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 # Index
@@ -32,6 +32,9 @@ updated: 2026-08-31
 - [[dhh]] — Rails 창시자, 에이전트 직결·[[omarchy]] ([[tech-bridge-dhh-agent-productivity]])
 - [[imad-touil]] — QuantumBlack, [[agent-skills]] 거버넌스 ([[tech-bridge-ai-native-skills]])
 - [[bill-gates]] — Microsoft 공동창업자, 2026-08 AI 위험 경고 ([[tech-bridge-bill-gates-ai-warning]])
+- [[carlos-sanchez]] — [[adobe|Adobe]] AEM 수석 과학자, [[agentic-sites]] 설계 ([[tech-bridge-agentic-sites]])
+- [[lauren-tan]] — [[cursor|Cursor]] 엔지니어, [[grokbot|GrokBot]] 기원(Benny)·엔지니어=에이전트 매니저 ([[tech-bridge-grokbot-agent-teams]])
+- [[roshan-sadanani]] — [[cursor|Cursor]], GrokBot 제품·내부 PMF 경로 ([[tech-bridge-grokbot-agent-teams]])
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
 - [[vannevar-bush]] — 1945년 [[memex]] 비전 제시 (As We May Think)
@@ -44,6 +47,9 @@ updated: 2026-08-31
 - [[coursera]] — 온라인 학습 플랫폼, [[andrew-ng]] 공동창업 · [[learnvector]] $100M 투자자
 - [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
 - [[amazon]] — 사내 코딩 에이전트 파일럿(Bedrock Mantle · Prime Video · Stores 50팀) 무대 ([[tech-bridge-frontier-engineering]])
+- [[adobe]] — Experience Manager(AEM) 보유, [[agentic-sites]] 구축 주체 ([[tech-bridge-agentic-sites]])
+- [[cursor]] — AI 코딩 도구 회사, [[grokbot|GrokBot]]·Cursor Bench 3.2 ([[tech-bridge-grokbot-agent-teams]])
+- [[cerebras]] — 초고속 추론 칩·서비스, [[agentic-sites]] 1.1초 지연 예산의 근거
 - [[cloudflare]] — 클라우드 인프라·보안 회사, [[project-glasswing]] 파트너
 - [[mozilla]] — Firefox 개발 오픈소스 비영리, [[project-glasswing]] 파트너
 - [[multica-ai]] — GitHub org, `andrej-karpathy-skills` repo로 [[claude-code]] CLAUDE.md 4원칙 공개
@@ -60,6 +66,8 @@ updated: 2026-08-31
 - [[minimax-m2-5]] — MiniMax M2.5, [[self-harness]] 실험 base 모델 (held-out 40.5→61.9%)
 - [[qwen3-5]] — Qwen3.5-35B-A3B (MoE), [[self-harness]] 실험서 최대 상대 개선 (held-in +138%)
 - [[glm-5]] — GLM-5, [[self-harness]] 실험 base 모델 (held-out 42.9→57.1%)
+- [[gemma-4]] — Google Gemma 4, [[cerebras]] 위에서 [[agentic-sites]] 페이지 생성 평균 1.1초
+- [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
 
 ### Products
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
@@ -70,6 +78,7 @@ updated: 2026-08-31
 - [[kiro]] — Amazon/AWS agentic 코딩 어시스턴트, [[frontier-engineering]] 파일럿 도구 ([[tech-bridge-frontier-engineering]])
 - [[omarchy]] — DHH의 Linux 데스크톱/앱 스택, 에이전트 직결 실증 ([[tech-bridge-dhh-agent-productivity]])
 - [[learnvector]] — Ng의 1:1 학습 조직, Coursera $100M ([[tech-bridge-andrew-ng-ai-opportunity]])
+- [[grokbot]] — [[cursor|Cursor]]의 지속형 개인 봇 팀(정체성·자체 컴퓨터·코디네이터·메시징 UI) ([[tech-bridge-grokbot-agent-teams]])
 
 ### Tools
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
@@ -99,6 +108,7 @@ updated: 2026-08-31
 
 ### Architectures
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
+- [[agentic-sites]] — 방문자 의도에 맞춰 블록만 재조립하는 웹 아키텍처 (자기 사이트 RAG · 1~2초 예산 · 작은 모델, sources: 1)
 
 ### Theories
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
@@ -129,7 +139,8 @@ updated: 2026-08-31
 - [[agent-skills]] — 조직 know-how를 실행 가능한 스킬 단위로. 거버넌스 없으면 새 기술부채 ([[tech-bridge-ai-native-skills]])
 - [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 3)
 - [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit · Amazon/Kiro, sources: 2)
-- [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 2)
+- [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 5)
+- [[persistent-agent-teams]] — 정체성·자체 컴퓨터·코디네이터 봇·메시징 UI를 가진 상시 개인 봇 팀, 엔지니어=매니저+환경 관리인 (Cursor/GrokBot, sources: 1)
 - [[frontier-engineering]] — 에이전트가 코드 대부분을 쓰고 사람은 루프 밖. Amazon 3행동·5습관 ([[tech-bridge-frontier-engineering]])
 
 ---
@@ -228,13 +239,15 @@ updated: 2026-08-31
 - [[tech-bridge-andrew-ng-ai-opportunity]] — Andrew Ng 인터뷰: regulatory capture, 30/40–60 노동, cognitive offloading, LearnVector ([[tech-bridge]], 2026-08-30)
 - [[tech-bridge-dhh-agent-productivity]] — DHH/Lex 클립: 에이전트 직결, taste 병목, 자기 5% ([[tech-bridge]], 2026-08-30)
 - [[tech-bridge-ai-native-skills]] — Imad Touil: 스킬 거버넌스·registry·progressive disclosure ([[tech-bridge]], 2026-08-30)
+- [[tech-bridge-agentic-sites]] — Carlos Sanchez/Adobe: 블록 단위 개인화, 자기 사이트 RAG, Cerebras+Gemma 4 1.1초 ([[tech-bridge]], 2026-08-31)
+- [[tech-bridge-grokbot-agent-teams]] — Cursor Lauren Tan·Roshan Sadanani: GrokBot 봇 팀, Grok 4.6 효율성 ([[tech-bridge]], 2026-08-31)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 202 (log 포함; + 2026-08-31 Tech Bridge 3편: source 3 + entity 6 + concept 3)
+- 총 페이지 수: 215 (log 포함; + 2026-09-01 Tech Bridge 2편: source 2 + entity 9 + concept 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-08-31 ([[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]])
+- 마지막 ingest: 2026-09-01 ([[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]])
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-08-31
+- 마지막 갱신: 2026-09-01

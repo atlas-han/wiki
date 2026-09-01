@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-08-31
+updated: 2026-09-01
 sources: []
 ---
 
@@ -55,6 +55,8 @@ sources: []
 ## 진화 로그 (요약)
 
 새 소스마다 한 줄씩 누적:
+
+- *2026-09-01*: [[tech-bridge]] `@TechBridge-KR` 08-31 업로드 롱폼 2편 — 위키가 **코딩 에이전트 밖**으로 두 걸음 나간 날. (1) [[tech-bridge-agentic-sites]] — [[carlos-sanchez]]/[[adobe]]가 [[agentic-sites]]를 신설. 사이트 전체를 재생성하는 대신 **사이트 전체를 RAG 코퍼스로** 써서 **블록만** 1~2초 안에 재조립한다. 브랜드 가이드라인이 환각 예산을 정하고, promptfoo 평가가 사이트별로 상주한다. 가장 이식성 높은 주장은 *"거대한 LLM이 필요하지 않습니다"* — 작업이 생성이 아니라 **블록 선택**이라 [[cerebras]]+[[gemma-4]]로 평균 1.1초(2위 4.6초). 문제를 좁혀 모델 요구를 낮춘 사례라 [[sutton-bitter-lesson]]의 제품 측 대비로 읽힌다. 위키 첫 **소비자 대면 생성 UI** 축. (2) [[tech-bridge-grokbot-agent-teams]] — [[cursor]]의 [[lauren-tan]]·[[roshan-sadanani]]가 [[persistent-agent-teams]]를 신설. 세션형 코딩 하니스와 달리 **정체성 + 자체 컴퓨터 + 코디네이터 봇 + 메시징 UI**를 가진 상시 봇 팀이고, 엔지니어의 일이 둘로 갈라진다 — 위로는 **에이전트 매니저**, 아래로는 규칙을 **린트·CI 실패로 인코딩**하는 **환경 관리인**([[verifiable-goals]] 재확인). 대중화 병목을 모델이 아니라 **UX**로 특정한 것이 [[agent-org-adoption]]의 네 번째 현장. 경제적 전제는 [[grok-4-6]]의 70.8% @ $2.81 vs Fable 5 Max 70.5% @ $17.32 — **가격이 곧 병렬성**이라 1인 봇 팀은 작업당 한 자릿수 달러에서만 성립한다. ⚠️ 두 소스 모두 벤더 발표이고, 후자의 Grok/Cursor/SpaceX 귀속은 소스 서술 그대로 기록했다.
 
 - *2026-08-31*: [[tech-bridge]] `@TechBridge-KR` 08-30 업로드 롱폼 3편. (1) [[tech-bridge-andrew-ng-ai-opportunity]] — [[andrew-ng]]가 공포를 [[regulatory-capture]]로, 노동을 30–40%/60% complement로, 통상의 LLM을 [[cognitive-offloading]]으로 읽고 [[learnvector]]로 1:1 학습을 짠다. Gates편과 같은 채널의 반대 입구. (2) [[tech-bridge-dhh-agent-productivity]] — [[dhh]] 직결 테제. 승인 계층이 10x를 죽이고, 경로는 [[omarchy]]처럼 자기 5%. Figma/Amazon의 세 번째 현장. (3) [[tech-bridge-ai-native-skills]] — [[imad-touil]]이 know-how를 [[agent-skills]]에 두고 거버넌스 없는 스킬을 새 기술부채로. spec–plan–task는 SDLC의 한 increment.
 
