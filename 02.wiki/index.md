@@ -38,6 +38,7 @@ updated: 2026-09-02
 - [[salman-munaf]] — [[tiktok|TikTok]] 엔지니어, [[agent-distributed-systems]] 관점 ([[tech-bridge-agents-as-distributed-systems]])
 - [[mingsheng-hong]] — [[ironclad|Ironclad]] VP of Engineering(AI), [[trusted-throughput]] 프레이밍 ([[tech-bridge-trusted-throughput]])
 - [[lena-hall]] — 엔지니어·창업자·GTM, [[signal-layer]] 프레이밍 ([[tech-bridge-signal-layer]])
+- [[ivanna-kacevica]] — [[flutter|Flutter]] & Dart GDE, [[agent-skills]] 실무자 관점 · 스킬 파일 [[prompt-injection]] · 추천 스킬 5개 ([[tech-bridge-flutter-ai-workflow]])
 - [[angela-jiang]] — [[anthropic|Anthropic]] Claude Platform 제품, [[token-roles]]·하네스 정의 ([[tech-bridge-claude-platform-agent-era]])
 - [[katelyn-lesse]] — [[anthropic|Anthropic]] Claude Platform, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]])
 - [[richard-hamming]] — "중요한 문제" 연구. 공략 가능성이 문제를 중요하게 만든다 ([[signal-layer]]에서 재해석)
@@ -103,13 +104,14 @@ updated: 2026-09-02
 - [[terminal-bench]] — 컨테이너 터미널 agentic 벤치마크 (결정론적 verifier), [[self-harness]] 평가대
 - [[deepagents]] — LangChain 에이전트 SDK, [[self-harness]]의 최소 초기 하니스 토대
 - [[github-spec-kit]] — GitHub Spec Kit (`specify` CLI), [[spec-driven-development]] 하니스
+- [[flutter]] — Google 크로스플랫폼 UI 프레임워크(Dart), 학습 데이터 격차 · 1코드베이스 4플랫폼 · 공식 스킬 ([[tech-bridge-flutter-ai-workflow]])
 
 ---
 
 ## Concepts (LLM/AI)
 
 ### Techniques
-- [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어
+- [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어 + 스킬 파일 공급망 벡터 (sources: 3)
 - [[context-resets-and-compaction]] — 장기 task에서 context window 한계를 다루는 두 전략 + Managed Agents의 third way
 - [[context-engineering]] — context window를 무엇을·어떻게 채우는가의 설계 영역
 - [[cognitive-offloading]] — 인지 작업을 LLM에 넘겨 당장은 성과↑, 장기 retention↓ (Ng)
@@ -144,7 +146,7 @@ updated: 2026-09-02
 - [[llm-coding-guidelines]] — LLM 코딩 어시스턴트용 CLAUDE.md 4원칙 (Think / Simplicity / Surgical / Goal-Driven)
 - [[surgical-edits]] — *"Every changed line should trace directly to the user's request"* — 외과 수술적 코드 수정 원칙
 - [[verifiable-goals]] — 모호한 task를 *test → pass* 형식의 검증 가능한 goal로 변환
-- [[agent-skills]] — 조직 know-how를 실행 가능한 스킬 단위로. 거버넌스 없으면 새 기술부채 ([[tech-bridge-ai-native-skills]])
+- [[agent-skills]] — 조직 know-how를 실행 가능한 스킬 단위로. 거버넌스 없으면 새 기술부채; 실무자 관점(두 트리거·description 트리거·MD 파일 보안) (sources: 2)
 - [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 3)
 - [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit · Amazon/Kiro, sources: 2)
 - [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 5)
@@ -257,13 +259,14 @@ updated: 2026-09-02
 - [[tech-bridge-trusted-throughput]] — Ironclad Mingsheng Hong: 토큰=LOC, 대시보드는 연기 감지기, 병목은 리뷰·CI ([[tech-bridge]], 2026-09-01)
 - [[tech-bridge-signal-layer]] — Lena Hall: 수렴 기계, 채점기 경계선, 왜곡 3종, 신뢰 ([[tech-bridge]], 2026-09-01)
 - [[tech-bridge-agents-as-distributed-systems]] — TikTok Salman Munaf: 타임아웃=상태 불명, 멱등성, 메모리=캐시, 보상 작업 ([[tech-bridge]], 2026-09-02)
+- [[tech-bridge-flutter-ai-workflow]] — Flutter GDE Ivanna Kaceviča 인터뷰: 프롬프트→규칙→스킬, MD 파일은 무해하지 않다, 추천 스킬 5개, Claude·Codex·Antigravity 3대 병렬 ([[tech-bridge]], 2026-09-02)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 231 (log 포함; + 2026-09-02 Tech Bridge 4편: source 4 + entity 8 + concept 3 + engineering 1)
+- 총 페이지 수: 234 (log 포함; + 2026-09-02 Tech Bridge Flutter 인터뷰: source 1 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-02 ([[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]])
+- 마지막 ingest: 2026-09-02 ([[tech-bridge-flutter-ai-workflow]]; 같은 날 앞서 [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]])
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
 - 마지막 갱신: 2026-09-02

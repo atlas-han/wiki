@@ -3,9 +3,9 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow]
 created: 2026-05-25
 updated: 2026-09-02
 ---
@@ -94,9 +94,30 @@ Design quality와 originality를 더 무겁게 weight → 모델이 aesthetic ri
 
 같은 소스가 리뷰 파이프라인에도 이 패턴을 쓴다: **AI가 1차 방어선**(스타일·커버리지)이고 사람은 아키텍처·보안 같은 주관적 심층 판단을 맡는다. 즉 evaluator를 조직 프로세스의 한 단계로 배치한 형태.
 
+## 개인 실무에서의 두 변형 (2026-09-02)
+
+[[ivanna-kacevica|Ivanna Kaceviča]]([[tech-bridge-flutter-ai-workflow]])가 이 패턴을 [[agent-skills|스킬]] 두 개로 자기 워크플로에 심는다.
+
+**1. 두 evaluator의 교차 확인.** 자기 코드 리뷰 스킬과 Kevin Moore의 PR triage 스킬을 **서로 다른 두 에이전트**에게 주고,
+
+> 한 명은 코드 리뷰를 하고, 다른 한 명은 PR 분류를 담당한 다음 **서로의 보고서를 확인**하는데, 덕분에 정말 좋은 결과를 얻고 있습니다.
+
+generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평가자를 튜닝하는 대신 *관점이 다른* 평가자 둘을 붙여 서로를 반박하게 한 것 — [[dynamic-workflows]]의 refute 군집을 2개로 줄인 형태.
+
+남은 한계도 짚는다: *"코드가 좋은지는 평가할 수 있지만 그 코드가 필요한지는 항상 판단할 수 없다."* 위 "한계·튜닝 비용"의 *보이지 않는 도메인*이 여기서는 **맥락과 기억**이다.
+
+**2. 스크린샷을 보는 QA 에이전트.** 웹에서 앱을 띄워 실제 스크린샷(애니메이션 webp 포함)을 찍는 스킬을 만들고, 그것을 **다른 에이전트**가 본다.
+
+> 다른 에이전트는 코드를 검사하고 테스트가 통과되었는지 확인하는 것뿐만 아니라 **UI의 결함을 시각적으로 검사**할 수 있습니다.
+
+위 풀스택 사례의 [[playwright-mcp|Playwright MCP]] evaluator를 개인이 재현한 것이되, 실시간 조작 대신 **정적 스크린샷 워크스루**를 택했다(iPhone 시뮬레이터 로딩을 기다리지 않아도 됨). 골든 테스트는 **회귀**용으로 남기고 QA는 실제 화면으로 — [[verifiable-goals]]의 UI verifier를 에이전트가 닫는다.
+
+> ⚠️ 두 변형 모두 일화이며 측정치가 없다.
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
 - [[tech-bridge-claude-platform-agent-era]] — `outcomes` (grader 프로비저닝)
 - [[tech-bridge-trusted-throughput]] — 지표 계측·리뷰 파이프라인 적용
+- [[tech-bridge-flutter-ai-workflow]] — evaluator 교차 확인 · 스크린샷 QA 에이전트
 - 관련: [[agent-harness-design]], [[sprint-contract]], [[dynamic-workflows]], [[self-harness]]

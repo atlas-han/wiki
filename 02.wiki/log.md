@@ -525,3 +525,19 @@ updated: 2026-08-29
 - 페이지화하지 않음: Kleiner Perkins(진행사), Josh Coyne·Leigh-Marie Braswell(진행자), Stripe·Stripe Connect(경력 배경), Sarah Guo(1회 인용), Paul Graham·Twitch(1회 예시), Replit·Air Canada(사고 사례), Amazon·Meta 리더보드 일화.
 - raw: `01.raw/articles/2026-09-01_*.md` 3편 + `2026-09-02_*.md` 1편. 갱신: index(215→231), overview, log, engineering/index, [[tech-bridge]], [[anthropic]], [[managed-agents]], [[agent-harness-design]], [[generator-evaluator-pattern]], [[verifiable-goals]], [[sutton-bitter-lesson]], [[agent-org-adoption]], [[self-harness]], [[dhh]].
 - **핵심 합성**: 서로를 모르는 세 소스가 같은 결론에 수렴했다. ① 구매자([[ironclad]])와 공급자([[anthropic]])가 모두 **"토큰 단가는 잘못된 최적화 대상"** — 각자의 인센티브가 그 결론과 정렬돼 있다는 점은 감안 필요. ② [[signal-layer]]와 Claude Platform 팀이 모두 실행이 싸지면 남는 일을 **문제 선택과 정렬**로 지목. ③ [[agent-distributed-systems]] → [[token-roles]] 사이에 **순서 의존성**이 있다 — 기본 루프의 신뢰성이 풀려야 전략 계층이 열린다(*"가장 기본적인 내용들이 어느 정도 이해 가능해졌기 때문"*).
+
+## [2026-09-02] ingest | Tech Bridge 09-02 인터뷰 1편 (Flutter GDE Ivanna Kaceviča — AI 스킬 워크플로)
+- 트리거: **launchd 잡 `com.atlas.techbridge-ingest`가 이번엔 인증을 통과해 실제로 돌았다** (09:01 UTC / 18:01 KST, `runs=3`; 스케줄 시각 09:10 KST가 아니므로 `launchctl kickstart` 추정). 이 세션의 부모 프로세스가 `run-ingest.sh`(pid 57028)임을 확인. 같은 날 09:10 KST 발화분은 OAuth 만료로 실패했었다. **신규 영상이 있는 첫 launchd 실행.**
+- 신규 롱폼 1편 (Shorts 없음). 최근 15편 중 14편은 기존 ingest, 08-28 Exa 영상은 첫 ingest 이전이라 대상 밖. ko + en-orig 자막 Chrome 쿠키로 확보, **429 없음**. 수치·인용은 en-orig로 교차 확인.
+- https://www.youtube.com/watch?v=4hfmNiQDt1g (15:28, [[ivanna-kacevica]] / [[flutter]], Fluttercon 현장 인터뷰 추정) → [[tech-bridge-flutter-ai-workflow]]. 신규 entity [[ivanna-kacevica]] · [[flutter]] (위키 첫 모바일/크로스플랫폼 프레임워크). 신규 concept 없음 — 내용이 모두 기존 개념의 **실무자 관점 확장**이라 6개 concept에 절을 추가했다.
+  - [[agent-skills]] (두 번째 소스): 프롬프트→규칙→스킬 세 층위(읽히는 시점 기준), 스킬을 쓸 두 신호(**반복** · **일회성 자동화 — 쓰고 지우는 스킬**), description="use when"이 트리거, skill creator + *"카피라이터가 아니라 관리자"*, 유지보수 비용(공식 스킬 = 저장소 하나, 커뮤니티 목록 2주 점검), 추천 5개 스킬 표.
+  - [[prompt-injection]]: **세 번째 벡터 — 스킬 파일 공급망**. 런타임 입력 방어(probe·classifier)가 닿지 않는 이유를 표로(진입 시점·신뢰 상태·probe 적용·페이로드 형태). *"숨겨진 Unicode 지시"*. 처방은 공식 출처·내용 읽기 + Managed Agents식 토큰 격리.
+  - [[generator-evaluator-pattern]]: **evaluator–evaluator 교차 확인**(코드 리뷰 + Kevin Moore PR triage) · **스크린샷을 보는 QA 에이전트**(골든 테스트는 회귀, 스크린샷은 QA). 남은 한계 *"좋은지는 알지만 필요한지는 모른다"* = 맥락·기억.
+  - [[sutton-bitter-lesson]]: 반례 표에 4번째 축 **학습 데이터 격차**(Flutter ≪ Python·JS → 강한 모델도 Row·Column 대신 컨테이너+패딩). 앞의 세 반례와 달리 데이터가 쌓이면 사라지는 종류임을 명시.
+  - [[trusted-throughput]]: Amazon 리더보드의 **개인 수준 대응물** — *"토큰을 다 써버리는 걸 좋아해요"* / "게임화된 거예요". 발표자는 문제로 보지 않는다는 차이.
+  - [[persistent-agent-teams]]: **코디네이터 없는 1인 버전** — Claude·Codex·Antigravity 기계 3대, 인계는 사람. 네 구성 요소 중 자체 컴퓨터만 갖춘 상태.
+  - ASR 보정: "PR tryer"/"PR 시도" → PR triage, "anti-gravity"/"반중력" → Antigravity(Google 에이전틱 IDE 추정), "ship aton by revenue cat" → RevenueCat Shipaton, "secret uni code" → Unicode, "Flare"/"flatter" → Flutter, "Ludomaniac" → 도박 중독자(자기 농담).
+  - ⚠️ 발표자 표기는 자막("이바나") 대신 설명란 **Ivanna Kaceviča**를 따랐고, 본인 링크·스킬 저장소 URL이 소스에 없어 `links: []`. ⚠️ 진행자 무명 — Flutter 팀 측은 **추정**. ⚠️ 03:16 "Jasper"는 Dart 웹 프레임워크 Jaspr일 가능성만 기록, 확정 안 함. ⚠️ 효과 진술("1년 넘게 잘 됐다")은 전부 일화.
+- 페이지화하지 않음: Kevin Moore(PR triage 스킬 저자, 1회), Antigravity(1회), RevenueCat Shipaton(1회), Midjourney(회고 1회), Fluttercon(장소), Google(공식 스킬 저장소 주체 1회), Jaspr(불확실).
+- raw: `01.raw/articles/2026-09-02_Flutter 개발자 인터뷰 플러터 개발자의 AI 워크플로우.md`. 갱신: index(231→234), overview, log, [[tech-bridge]] (같은 날 ingest 1편→2편).
+- **핵심 합성**: 이틀 사이 스킬을 다룬 두 소스가 정확히 반대 끝에서 만난다 — Touil([[tech-bridge-ai-native-skills]])은 *조직*이 스킬을 카탈로그·거버넌스해야 부채가 안 생긴다고 했고, Kaceviča는 *개인*이 인터넷에서 받은 MD 파일 하나가 이미 공급망 위험이라고 한다. 둘 다 처방이 **출처·내용 검사**라는 점에서 일치하고, 이것이 [[prompt-injection]]을 런타임 문제에서 **설치 시점 문제**로 확장한다. 부수적으로 이 소스는 [[signal-layer]]의 채점기 경계선("좋은가"는 채점 가능, "필요한가"는 아님)이 코드 리뷰라는 가장 자동화된 영역 **안에서도** 유효함을 보여준다.

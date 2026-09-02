@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow]
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -72,6 +72,22 @@ updated: 2026-09-01
 - ⚠️ 벤더 인터뷰라 생산성·벤치마크 주장에 독립 검증이 없다.
 - 봇이 사용자의 모든 도구에 로그인한 채 상주하는 모델의 권한·감사 경계를 소스는 다루지 않는다. [[prompt-injection]]이 걸리는 자리이지만 언급되지 않았다.
 - 코디네이터 봇이 배분한 일의 실패가 어디서 잡히는지 — PR 리뷰가 유일한 게이트로 보인다.
+
+## 코디네이터 없는 1인 버전 (2026-09-02)
+
+[[ivanna-kacevica|Ivanna Kaceviča]]([[tech-bridge-flutter-ai-workflow]])의 워크플로는 이 패턴의 **개인 개발자판**이다.
+
+> 저는 세 대의 병렬 기계를 사용합니다. 한 대는 Claude를 실행하고, 한 대는 Codex를 실행하고, 한 대는 Antigravity를 실행합니다. 그리고 그들은 **서로에게 업무를 인계**합니다.
+
+| 구성 요소 | GrokBot | Kaceviča |
+|---|---|---|
+| 정체성 | 이름·아바타 | 없음 (도구 셋) |
+| 자체 컴퓨터 | 봇마다 | **기계 세 대** — 있음 |
+| 코디네이터 | 비서실장 봇 | **사람** — 인계를 직접 한다 |
+| 인터페이스 | 메시징 | 각 도구의 세션 |
+| 목적 | 역할 무관 대중화 | 저녁·주말 사이드 프로젝트(RevenueCat Shipaton) |
+
+즉 네 구성 요소 중 **자체 컴퓨터**만 갖춘 상태다. 그래도 *"풀타임 본업 뒤에 에이전트 팀을 운영한다"*는 서술은 이 패턴이 제품 없이도 파워 유저에게서 먼저 자생한다는 신호이고, 위 "대중화의 장벽은 UX" 진단과 맞는다 — 코디네이터를 사람이 하는 한 이 형태는 파워 유저 밖으로 나가지 못한다.
 
 ## References
 

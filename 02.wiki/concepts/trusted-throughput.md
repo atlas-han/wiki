@@ -5,7 +5,7 @@ category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
 related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow]
 created: 2026-09-02
 updated: 2026-09-02
 ---
@@ -128,6 +128,16 @@ CI 과부하에 대한 자연스러운 대응이 오히려 위험하다.
 - [[generator-evaluator-pattern]] — 지표 산출과 리뷰 파이프라인 양쪽에 적용
 - [[token-roles]] — 같은 문제("토큰 단가가 답이 아니다")에 대한 공급자 쪽 처방
 - [[outcome-engineering]] — 결과를 정의하고 에이전트와 함께 만든다는 인접 프레이밍
+
+## 개인 수준의 대응물: 게임화된 토큰 (2026-09-02)
+
+Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacevica|Ivanna Kaceviča]]([[tech-bridge-flutter-ai-workflow]])는 같은 현상을 **개인 안에서** 솔직하게 보고한다.
+
+> 룰렛 게임은 별로 안 좋아해요. 저는 **토큰을 다 써버리는 걸** 좋아해요. (…) 세 대의 기계 모두에서 제 한계를 모두 소진할 때까지 작업을 계속합니다.
+
+> 토큰이 다 떨어지기 전에 아직 남아 있다는 이 느낌은, 제 생각엔 일종의 심리적인 현상인 것 같아요. — 진행자: "게임화된 거예요."
+
+차이는 발표자가 이것을 **문제로 규정하지 않는다**는 점이다 — *"지나치게 생산적인 사람이 된 것 같아서 속도를 좀 줄여야 할 것 같아요"*라는 농담으로 처리한다. 이 페이지의 처방(대시보드는 연기 감지기, 조사 신호는 *안 쓰는 쪽*)이 개인 수준에서는 아직 없다. 두 소스를 나란히 두면 **한도(limit)가 곧 목표가 되는** 구조는 조직이든 개인이든 같고, 다른 것은 그것을 문제로 볼 인센티브뿐이다.
 
 ## References
 
