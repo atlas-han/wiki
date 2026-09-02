@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
-related: [agent-harness-design, brain-hands-decoupling]
+related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-02
 ---
 
 # The Bitter Lesson
@@ -52,6 +52,28 @@ Rich Sutton의 2019년 3월 13일 에세이. 70년 AI 연구사의 **메타 패�
 > — [[anthropic-managed-agents]]
 
 [[claude-sonnet-4-5|Sonnet 4.5]]를 위해 추가한 [[context-resets-and-compaction|context reset]]이 [[claude-opus-4-5|Opus 4.5]]에서 dead weight가 된 것이 구체적 사례. [[agent-harness-design]]의 일반 원리와 정합.
+
+## 범위 한정: 채점기가 있는 곳에서만 (2026-09-01)
+
+[[signal-layer]]가 이 위키에서 가장 정밀한 유효 범위 한정을 제시한다. "스케일이 이긴다"를 부정하지 않고, **어디서** 이기는지를 자른다.
+
+> **컴파일러는 무료 채점 도구입니다. 테스트 스위트는 무료 채점 도구입니다.** (…) 작업이 스스로 점수를 매길 수 있게 되는 순간, 모델을 그 점수에 맞춰 계속 개선해 나가면 **결국에는 이기게 되는 거죠.**
+
+따름정리 — **코드 자동화가 가장 먼저 온 것은 우연이 아니라 검증 용이성 때문**이다. 그리고 자동 채점기가 없는 영역(문제 선택·신뢰)은 스케일이 접수하지 못한다.
+
+> 모델은 사용자가 **가리키는 대상을 생성**하지만, **어디를 가리켜야 하는지에 대해서는 아무런 정보도 제공하지 않습니다.**
+
+## 다른 형태의 반례들
+
+같은 주에 들어온 소스들이 서로 다른 축에서 스케일의 한계를 지적한다. 셋을 나란히 두면 반례의 **종류**가 구별된다.
+
+| 소스 | 축 | 논증 |
+|---|---|---|
+| [[agentic-sites]] | 지연 예산 | 작업을 **선택**으로 좁히면 작은 모델로 충분해진다 — 문제 정의를 줄여 스케일 요구를 낮춤 |
+| [[signal-layer]] | 검증 가능성 | 자동 채점기가 **없는** 영역에는 스케일이 도달하지 않는다 |
+| [[agent-distributed-systems]] | 환경 불확실성 | 모델 개선은 **에이전트의 오류율**을 낮추지만 네트워크 오류·stale 데이터·악의적 입력은 제거하지 못한다 |
+
+세 번째가 특히 구조적이다 — 실패 원인이 모델 안이 아니라 **환경 안**에 있으므로, 모델을 아무리 키워도 남는다.
 
 ## References
 

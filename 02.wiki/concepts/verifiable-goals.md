@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput]
 created: 2026-05-25
-updated: 2026-08-30
+updated: 2026-09-02
 ---
 
 # Verifiable Goals
@@ -85,9 +85,29 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 
 [[surgical-edits|surgical-edits]]가 *what 외에는 손대지 말 것*을 못 박는다면, verifiable-goals는 *what이 달성되었는지*를 못 박는다. 두 원칙이 묶이면 **"검증 가능한 최소 변경"** 이라는 단일 작업 단위가 정의된다.
 
+## 경계: verifier를 만들 수 없는 곳 (2026-09-01)
+
+[[signal-layer]]가 이 개념의 **정확한 이면**을 제시한다. 여기가 "verifier를 만들어라"라면 그쪽은 "**verifier를 만들 수 없는 곳이 어디인지 알아라**"이고, 두 페이지는 같은 축의 양 끝이다.
+
+> 측정할 수 있는 것은 무엇이든 훈련에 활용할 수 있죠. **컴파일러는 무료 채점 도구입니다. 테스트 스위트는 무료 채점 도구입니다.**
+
+> 작업이 스스로 점수를 매길 수 있게 되는 순간, 모델을 그 점수에 맞춰 계속 개선해 나가면 **결국에는 이기게 되는 거죠.**
+
+여기서 나오는 따름정리가 실무적으로 중요하다 — **코드 자동화가 먼저 온 이유는 그것이 가장 검증하기 쉬웠기 때문**이고, 자동 채점기가 없는 영역(문제 선택·신뢰·메시지)은 자동화되지 않은 채 남는다. 그래서 [[signal-layer]]는 그런 영역에 **사람 verifier**를 심으라고 처방한다: 프로젝트를 본 적 없는 SRE에게 README를 주고 설명하게 한 뒤 **의도와의 차이**를 재는 식.
+
+## Goodhart 확장: 토큰 지출 (2026-09-01)
+
+[[trusted-throughput]]이 이 개념의 경고를 토큰 경제에 그대로 옮긴다.
+
+> LOC는 중요한 지표이지만, 직접적으로 최적화해야 할 대상은 아닙니다. **토큰 사용량과 지출도 마찬가지입니다.**
+
+실제 사고 사례까지 붙는다 — 전사 토큰 대시보드가 리더보드로 작동하자 엔지니어들이 **사용량 극대화를 경쟁**하기 시작했다. 처방은 단일 지표가 아니라 **객관적 검사 + 인간 판단 + 고객 반응**의 3중 검증이다.
+
 ## References
 
 - [[multica-karpathy-skills-claude-md]]
 - [[charlychoi-claude-code-best-practices]]
 - [[tech-bridge-figma-coding-agents]] · [[tech-bridge-spec-driven-development]]
+- [[tech-bridge-signal-layer]] — 채점기 경계선 (verifier가 없는 영역)
+- [[tech-bridge-trusted-throughput]] — 토큰 지출로의 Goodhart 확장
 - 관련: [[llm-coding-guidelines]] (상위 hub), [[surgical-edits]], [[sprint-contract]], [[ralph-wiggum-method]]

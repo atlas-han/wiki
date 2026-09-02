@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Index
@@ -35,6 +35,12 @@ updated: 2026-09-01
 - [[carlos-sanchez]] — [[adobe|Adobe]] AEM 수석 과학자, [[agentic-sites]] 설계 ([[tech-bridge-agentic-sites]])
 - [[lauren-tan]] — [[cursor|Cursor]] 엔지니어, [[grokbot|GrokBot]] 기원(Benny)·엔지니어=에이전트 매니저 ([[tech-bridge-grokbot-agent-teams]])
 - [[roshan-sadanani]] — [[cursor|Cursor]], GrokBot 제품·내부 PMF 경로 ([[tech-bridge-grokbot-agent-teams]])
+- [[salman-munaf]] — [[tiktok|TikTok]] 엔지니어, [[agent-distributed-systems]] 관점 ([[tech-bridge-agents-as-distributed-systems]])
+- [[mingsheng-hong]] — [[ironclad|Ironclad]] VP of Engineering(AI), [[trusted-throughput]] 프레이밍 ([[tech-bridge-trusted-throughput]])
+- [[lena-hall]] — 엔지니어·창업자·GTM, [[signal-layer]] 프레이밍 ([[tech-bridge-signal-layer]])
+- [[angela-jiang]] — [[anthropic|Anthropic]] Claude Platform 제품, [[token-roles]]·하네스 정의 ([[tech-bridge-claude-platform-agent-era]])
+- [[katelyn-lesse]] — [[anthropic|Anthropic]] Claude Platform, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]])
+- [[richard-hamming]] — "중요한 문제" 연구. 공략 가능성이 문제를 중요하게 만든다 ([[signal-layer]]에서 재해석)
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
 - [[vannevar-bush]] — 1945년 [[memex]] 비전 제시 (As We May Think)
@@ -49,6 +55,8 @@ updated: 2026-09-01
 - [[amazon]] — 사내 코딩 에이전트 파일럿(Bedrock Mantle · Prime Video · Stores 50팀) 무대 ([[tech-bridge-frontier-engineering]])
 - [[adobe]] — Experience Manager(AEM) 보유, [[agentic-sites]] 구축 주체 ([[tech-bridge-agentic-sites]])
 - [[cursor]] — AI 코딩 도구 회사, [[grokbot|GrokBot]]·Cursor Bench 3.2 ([[tech-bridge-grokbot-agent-teams]])
+- [[tiktok]] — 숏폼 비디오 플랫폼, [[agent-distributed-systems]] 강연 발표자 소속 ([[tech-bridge-agents-as-distributed-systems]])
+- [[ironclad]] — 법률 계약 AI 회사, 신뢰가 제품 제약 · [[trusted-throughput]] 운영 주체 ([[tech-bridge-trusted-throughput]])
 - [[cerebras]] — 초고속 추론 칩·서비스, [[agentic-sites]] 1.1초 지연 예산의 근거
 - [[cloudflare]] — 클라우드 인프라·보안 회사, [[project-glasswing]] 파트너
 - [[mozilla]] — Firefox 개발 오픈소스 비영리, [[project-glasswing]] 파트너
@@ -142,6 +150,9 @@ updated: 2026-09-01
 - [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 5)
 - [[persistent-agent-teams]] — 정체성·자체 컴퓨터·코디네이터 봇·메시징 UI를 가진 상시 개인 봇 팀, 엔지니어=매니저+환경 관리인 (Cursor/GrokBot, sources: 1)
 - [[frontier-engineering]] — 에이전트가 코드 대부분을 쓰고 사람은 루프 밖. Amazon 3행동·5습관 ([[tech-bridge-frontier-engineering]])
+- [[trusted-throughput]] — 토큰·LOC가 아니라 *신뢰받는 결과물의 처리량*을 최적화. 병목은 리뷰·CI (Ironclad, sources: 2)
+- [[signal-layer]] — 구현이 무료가 된 세계에서 신호를 정의하고 source/org/machine 왜곡에서 지키는 층 (Lena Hall, sources: 1)
+- [[token-roles]] — 토큰에 실행 말고 advising·grading·dreaming 역할을 줘 intelligence per dollar를 올린다 (Anthropic, sources: 1)
 
 ---
 
@@ -150,6 +161,7 @@ updated: 2026-09-01
 → 전체 목록은 [[02.wiki/engineering/index]] 참조
 
 ### Systems
+- [[agent-distributed-systems]] — 에이전트가 부작용을 내면 분산 시스템 문제가 된다. 타임아웃=불명·멱등성·메모리=캐시·보상·scoped 권한 (sources: 2)
 - [[actix-web-http-server]] — actix-web `HttpServer` 워커 모델·TLS/HTTP2·graceful shutdown·정적 파일
 - [[actix-web-connection-lifecycle]] — actix-web Accept/Worker/Dispatcher 루프 (내부 동작 다이어그램)
 - [[actix-arbiter]] — actix actor의 단일 스레드 이벤트 루프(`System`)
@@ -241,13 +253,17 @@ updated: 2026-09-01
 - [[tech-bridge-ai-native-skills]] — Imad Touil: 스킬 거버넌스·registry·progressive disclosure ([[tech-bridge]], 2026-08-30)
 - [[tech-bridge-agentic-sites]] — Carlos Sanchez/Adobe: 블록 단위 개인화, 자기 사이트 RAG, Cerebras+Gemma 4 1.1초 ([[tech-bridge]], 2026-08-31)
 - [[tech-bridge-grokbot-agent-teams]] — Cursor Lauren Tan·Roshan Sadanani: GrokBot 봇 팀, Grok 4.6 효율성 ([[tech-bridge]], 2026-08-31)
+- [[tech-bridge-claude-platform-agent-era]] — Anthropic Angela Jiang·Katelyn Lesse (KP Builders S2): 하네스=while 루프, 내구성 서버+일회성 샌드박스, token roles, 200명 팀 ([[tech-bridge]], 2026-09-01)
+- [[tech-bridge-trusted-throughput]] — Ironclad Mingsheng Hong: 토큰=LOC, 대시보드는 연기 감지기, 병목은 리뷰·CI ([[tech-bridge]], 2026-09-01)
+- [[tech-bridge-signal-layer]] — Lena Hall: 수렴 기계, 채점기 경계선, 왜곡 3종, 신뢰 ([[tech-bridge]], 2026-09-01)
+- [[tech-bridge-agents-as-distributed-systems]] — TikTok Salman Munaf: 타임아웃=상태 불명, 멱등성, 메모리=캐시, 보상 작업 ([[tech-bridge]], 2026-09-02)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 215 (log 포함; + 2026-09-01 Tech Bridge 2편: source 2 + entity 9 + concept 2)
+- 총 페이지 수: 231 (log 포함; + 2026-09-02 Tech Bridge 4편: source 4 + entity 8 + concept 3 + engineering 1)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-01 ([[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]])
+- 마지막 ingest: 2026-09-02 ([[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]])
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-01
+- 마지막 갱신: 2026-09-02

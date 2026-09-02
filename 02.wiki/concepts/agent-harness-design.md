@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
 related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era]
 created: 2026-05-25
-updated: 2026-06-14
+updated: 2026-09-02
 ---
 
 # Agent Harness Design
@@ -94,9 +94,42 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 
 이 vault의 [[CLAUDE]]도 harness의 일종 — 일관된 ingest/query/lint 워크플로를 LLM에 인코딩하는 schema. [[llm-wiki-pattern]] 자체가 *"knowledge base harness"* 로 해석 가능.
 
+## 정의 확정 — "하네스는 루프다" (2026-09-01)
+
+[[tech-bridge-claude-platform-agent-era]]에서 [[anthropic|Anthropic]] Claude Platform 팀이 이 위키가 여러 소스에서 조립해 온 정의를 **1차 진술로 확정**했다.
+
+> 하네스는 **루프**인데 (…) 가장 기본적인 형태는 말 그대로 **while 루프**와 같아요. 사용자의 입력을 받고, 모델에게 의견을 묻고, 특정 도구를 호출하는 과정을 계속해서 반복하는 거죠.
+
+핵심 주변에 붙는 구성 요소는 셋으로 정리된다.
+
+| 구성 요소 | 왜 필요한가 |
+|---|---|
+| 안전한 **실행 환경** | 도구를 실제로 돌려야 하므로 |
+| **상태 저장소** | 대화를 중단했다 이어가려면 |
+| **자격 증명 주입기** | 에이전트가 자격 증명을 **직접 보지 못하도록** 특정 시점에 주입 |
+
+용어 인플레이션에 대한 자기 인식도 함께 기록해 둘 만하다.
+
+> 여기서 '하네스'라는 단어는 현재 **애플리케이션에 이르기까지 거의 모든 것을 의미하는 데** 사용되고 있습니다.
+
+### 메타 하네스 / 전략 계층
+
+> 어떤 사람들은 이를 **메타 하네스**라고 부르기도 합니다. 우리는 **'전략(strategy)'**과 같은 단어를 사용했습니다.
+
+그 계층에서 하는 일 — 에이전트들을 다르게 조율하고, 서로 소통하게 하고, 서로의 루프에 피드백되게 한다 ([[token-roles]]).
+
+이 계층이 **지금** 열린 이유가 명시되는데, 이것이 이 위키에 새로운 인과 관계다.
+
+> 요즘에는 그런 영역에서 알파 버전이 더 많이 만들어지고 있는데, **가장 기본적인 내용들이 어느 정도 이해 가능해졌기 때문**이죠. 오류를 처리하고, 반복문이 제대로 실행되도록 하고, 실행 시간이 길도록 해야 합니다.
+
+즉 [[agent-distributed-systems]]의 신뢰성 문제가 먼저 풀려야 전략 계층이 열린다 — **순서가 있는 의존성**이다.
+
+> 문제 영역·도메인에 따라 **전략을 어떻게 조합하느냐가 상당히 다른 성능 결과**를 낳는다는 관찰도 함께 제시된다.
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
+- [[tech-bridge-claude-platform-agent-era]] — 하네스=while 루프 / 메타 하네스=전략 (팀 1차 진술)
 - [[anthropic-managed-agents]]
 - [[anthropic-claude-code-auto-mode]]
 - [[anthropic-dynamic-workflows]]

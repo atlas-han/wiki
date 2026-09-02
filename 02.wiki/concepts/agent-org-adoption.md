@@ -3,11 +3,11 @@ title: Agent Org Adoption
 type: concept
 category: pattern
 tags: [agent, organization, verification, culture, figma]
-related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams]
+related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams, trusted-throughput, token-roles]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput]
 created: 2026-08-29
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Agent Org Adoption
@@ -57,9 +57,39 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 
 엔지니어 역할에 대한 처방은 오히려 수렴한다: 규칙을 **린트 규칙과 CI 실패로 인코딩**하고 에이전트가 성공하도록 코드베이스를 리팩토링하라 — [[verifiable-goals]]와 [[frontier-engineering]] 5습관의 재확인.
 
+## 에이전트 우선 재설계 — 가장 흔한 실수 (2026-09-01)
+
+[[tech-bridge-claude-platform-agent-era]]에서 [[anthropic|Anthropic]] Claude Platform 팀이 도입 실패의 **형태**를 지목한다. 이 위키가 지금까지 다룬 *습관 변화*보다 한 단계 더 아래, **프로세스 설계**의 문제다.
+
+먼저 규모의 실수:
+
+> "좋아, 멋지다. 엄청난 과제를 하나 내서 우리 대형 은행의 **KYC 프로세스 전체를 자동화**해야겠다"
+
+그러나 근본 오류는 크기가 아니라 형태다.
+
+> 이미 여러 정책과 절차를 거쳐 작동하는 **복잡한 인간 중심의 프로세스를 가져와서, 인간의 비효율적인 부분에만 에이전트를 투입**하려는 데 있습니다. (…) 에이전트를 **기존 인간이 하던 방식에 맞춰야** 하기 때문입니다.
+
+처방은 **과감한 세분화 + 에이전트 우선(agent-first) 재창조** — 가장 기본적인 것부터 "신입 사원이 하듯" 생각하고 그 과정을 다시 만든다.
+
+> **기존 프로세스를 간소화하고 처음부터 다시 설계할수록 더 큰 성공을 거둘 수 있습니다.**
+
+여기에 이 위키에 유용한 경고가 하나 더 붙는다 — **도메인 전문가의 직관이 틀린다.** 물어보면 "에이전트가 하고 나에게 피드백을 요청하며 주고받는 게 좋다"고 답하지만 **실제로는 그 방식이 효과적이지 않다.** 요구사항 인터뷰만으로 워크플로를 설계하면 안 되는 이유다.
+
+이는 [[tech-bridge-grokbot-agent-teams]]의 "에이전트가 UI에 맞추는 게 아니라 UI가 에이전트에 맞춘다"와 같은 방향이고, [[frontier-engineering]]의 습관 변화보다 **한 층 아래의 재설계**를 요구한다.
+
+## 도입 이후의 계측 (2026-09-01)
+
+[[trusted-throughput]]이 이 개념의 **다음 단계**를 채운다 — 도입의 고비를 넘긴 조직이 무엇을 재야 하는가. 특히 이 개념과 직접 맞물리는 관찰:
+
+> 사용량 대시보드를 **연기 감지기**와 같은 것으로 생각합니다.
+
+조사할 신호가 **거의 안 쓰는 국소적 집단**(도입 격차)이라는 방향은 [[frontier-engineering]]이 관찰한 **팀 간 50배 편차**와 같은 자리에 있다. 단, 팀마다 AI 활용 방식이 다르므로 맥락을 고려한 비교여야 한다.
+
 ## References
 
 - [[tech-bridge-figma-coding-agents]]
+- [[tech-bridge-claude-platform-agent-era]] — 에이전트 우선 재설계 · 전문가 직관의 실패
+- [[tech-bridge-trusted-throughput]] · [[trusted-throughput]] — 도입 이후의 계측
 - [[tech-bridge-frontier-engineering]] · [[frontier-engineering]]
 - [[tech-bridge-dhh-agent-productivity]] · [[dhh]] · [[omarchy]]
 - [[tech-bridge-ai-native-skills]] · [[agent-skills]]

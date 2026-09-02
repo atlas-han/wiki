@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput]
 created: 2026-05-25
-updated: 2026-06-14
+updated: 2026-09-02
 ---
 
 # Generator–Evaluator Pattern
@@ -78,7 +78,25 @@ Design quality와 originality를 더 무겁게 weight → 모델이 aesthetic ri
 
 즉 generator–evaluator의 *피드백 루프*를 모델 응답이 아니라 **모델을 감싸는 스캐폴딩의 계보(lineage)** 에 적용한 형태. → [[self-harness]] 참조.
 
+## 플랫폼 기능으로의 승격 (2026-09-01)
+
+[[managed-agents]]의 **`outcomes`**가 이 패턴을 제품 기능으로 만들었다 ([[tech-bridge-claude-platform-agent-era]]).
+
+> 예를 들어 "좋은 결과는 이렇습니다"와 같은 **루브릭**을 제시하면 그 기준을 충족하는 **두 번째 에이전트를 제공**합니다.
+
+> 첫 번째 담당자가 시도해보고 (…) '아직 충분하지 않네. 다시 해보자'라고 하는 거죠. (…) **채점자와 실행자가 함께** 일을 처리하기 때문이죠.
+
+달라진 점은 **누가 evaluator를 만드느냐**다. 지금까지 이 패턴은 하니스 설계자가 직접 짜는 것이었는데, 여기서는 사용자가 **루브릭만 쓰면 플랫폼이 프로비저닝**한다. [[verifiable-goals]]가 요구한 verifier의 진입 장벽을 낮춘 형태.
+
+## 지표 계측으로의 전용 (2026-09-01)
+
+[[trusted-throughput]]은 같은 패턴을 코드 산출물이 아니라 **생산성 지표 자체**에 적용한다 — 병합된 PR의 복잡도를 **LLM 1~2개에 프롬프트를 넣어 티셔츠 사이즈로 채점**해서 가중치를 얻는다.
+
+같은 소스가 리뷰 파이프라인에도 이 패턴을 쓴다: **AI가 1차 방어선**(스타일·커버리지)이고 사람은 아키텍처·보안 같은 주관적 심층 판단을 맡는다. 즉 evaluator를 조직 프로세스의 한 단계로 배치한 형태.
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
+- [[tech-bridge-claude-platform-agent-era]] — `outcomes` (grader 프로비저닝)
+- [[tech-bridge-trusted-throughput]] — 지표 계측·리뷰 파이프라인 적용
 - 관련: [[agent-harness-design]], [[sprint-contract]], [[dynamic-workflows]], [[self-harness]]

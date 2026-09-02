@@ -3,7 +3,7 @@ title: Engineering
 type: overview
 tags: [meta, engineering]
 created: 2026-05-25
-updated: 2026-07-08
+updated: 2026-09-02
 ---
 
 # Engineering
@@ -18,6 +18,7 @@ updated: 2026-07-08
 
 분산 시스템, 데이터베이스, 네트워킹, 인프라 관련 개념.
 
+- [[agent-distributed-systems]] — 에이전트가 외부 부작용을 내는 순간 분산 시스템 문제가 된다. 타임아웃=상태 불명, 멱등성 키, 메모리=캐시, 보상 작업, scoped credentials, 승인 바인딩, 관측 가능성.
 - [[actix-web-http-server]] — [[actix-web]] `HttpServer` 워커 모델(코어당 1 워커)·TLS/HTTP2·graceful shutdown·정적 파일.
 - [[actix-web-connection-lifecycle]] — actix-web 내부 Accept/Worker/Dispatcher 루프 (mermaid 다이어그램).
 - [[actix-arbiter]] — [[actix-actor-framework|actix]] actor의 단일 스레드 이벤트 루프 + `System`.

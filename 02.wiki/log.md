@@ -489,3 +489,39 @@ updated: 2026-08-29
 - **원인 3 (증거 기반 추정)**: 08-30·08-31 채널에 `12f68701…` 발신 메시지가 전혀 없음 → 릴레이 스케줄 자체도 발화하지 않았음. 업스트림 [block/buzz#4904](https://github.com/block/buzz/issues/4904)와 일치. `buzz workflows runs`는 항상 `[]`(CLI가 DB run history를 읽지 않음)이라 채널 메시지 유무가 유일한 신호.
 - 조치: `buzz agents draft-update --respond-to anyone` 초안을 owner 검토로 전송(저장 전까지 무효). 채널 멤버가 chris와 Clip Scribe 둘뿐이고 self-authored 이벤트는 별도로 무시되므로 이 채널에서의 노출 범위는 제한적.
 - 미해결: #4904가 고쳐지기 전까지 릴레이 발화는 여전히 불확실. respond-to가 열리기 전에는 **어떤 자동 경로도** 에이전트를 깨울 수 없으므로 사람 멘션이 유일한 확실한 트리거.
+
+## [2026-09-02] ingest | Tech Bridge 09-01·09-02 롱폼 4편 (Anthropic 플랫폼 · Ironclad · Lena Hall · TikTok)
+- 트리거: wiki 채널에서 chris가 일일 ingest 실행 지시. **launchd 잡은 09:10 KST에 발화했으나 즉시 실패** — `WORK_LOGS/techbridge-daily-2026-09-02.log`에 `Failed to authenticate: OAuth session expired and could not be refreshed`, exit=1. 자동 경로가 또 막혀 이 턴에서 수동 실행.
+- 신규 롱폼 4편 (Shorts 없음, 전부 19분 이상). ko + en-orig 자막 Chrome 쿠키로 전부 확보, **429 없음**. 수치·인용은 en-orig로 교차 확인.
+- 1) https://www.youtube.com/watch?v=XV6WcGliCGM (19:19, [[salman-munaf]] / [[tiktok]]) → [[tech-bridge-agents-as-distributed-systems]]. 신규 engineering [[agent-distributed-systems]] (첫 `engineering/systems` 비-actix 페이지). 신규 entity [[salman-munaf]] · [[tiktok]].
+  - 핵심: 에이전트가 **부작용**을 내는 순간 분산 시스템 문제. 처방은 전부 기존 도구(멱등성·서킷 브레이커·saga 보상·최소 권한)이고 새로운 것은 **호출자가 비결정론적**이라는 점뿐.
+  - 가장 이식성 높은 두 줄: **"타임아웃은 실패가 아니라 알 수 없음"**, **"행동에 영향을 주는 맥락은 상태"**(→ 메모리를 무효화 가능한 캐시로).
+  - 승인 설계: 승인은 **동작·타임스탬프·행위자·만료**에 묶여야 하고 30달러 승인이 300달러로 재사용되면 안 된다.
+  - 모델 개선의 한계를 명시 — 오류율은 낮추지만 **네트워크 오류·stale 데이터·악의적 입력**은 못 없앤다. [[sutton-bitter-lesson]]에 **환경 불확실성** 축의 반례로 추가.
+  - ⚠️ Replit·Air Canada 사고는 발표자의 **사후 해석**이고 독립 조사가 아님을 source·entity 양쪽에 명시.
+- 2) https://www.youtube.com/watch?v=TQqa0B_pNGE (43:59, [[angela-jiang]] · [[katelyn-lesse]] / [[anthropic]], Kleiner Perkins *Builders* S2) → [[tech-bridge-claude-platform-agent-era]]. 신규 concept [[token-roles]]. 신규 entity [[angela-jiang]] · [[katelyn-lesse]].
+  - **채널 첫 43분대 장편이자 첫 공식 챕터 없는 영상.** 소제목은 자막 흐름으로 붙이고 타임스탬프는 실제 발화 시각만 사용 — raw 헤더에 임의 소제목임을 명시.
+  - [[agent-harness-design]] 정의 확정: **"하네스는 while 루프"**, 그 위가 **메타 하네스 / '전략'**. 용어가 애플리케이션까지 부풀었다는 자기 인식도 함께.
+  - [[managed-agents]] 3분할의 **이유**를 처음 1차 진술로 확보 — 샌드박스 기술이 애초에 *일시적* 용도라 **수명 주기가 다른 것을 분리**했다. 하네스=내구성 서버, 샌드박스=작업 시점 생성·삭제.
+  - [[token-roles]] 3종: **advising**(Sonnet 실행 + Opus 조언) · **grading**(`outcomes` — 루브릭 주면 채점 에이전트 프로비저닝) · **dreaming**(과거 세션 → 메모리·스킬 작성).
+  - 새 병목 관찰: 실행이 빨라져 **정렬(alignment)이 병목** — "이틀 만에 끝났는데 모두를 같은 생각으로 만들 시간이 없다". 팀 200명.
+  - 도입 실수 진단: 인간 중심 프로세스의 비효율 지점에만 에이전트를 끼워 넣는 것 → **에이전트 우선 재설계**. 부가로 **전문가 직관이 틀린다**(물어보면 "주고받는 게 좋다"지만 실제로는 비효과적).
+  - ⚠️ "sonnet + opus advising이 sonnet 단독보다 싸다"는 **내부 eval**로 벤치마크·수치 미공개. "12년 → 3개월"은 발표자가 *"call it like 3 months"*로 어림한 값 — 측정치로 인용 금지. 양쪽 다 source·concept에 명시.
+  - ⚠️ 29:02 "cloud tag"는 ko·en-orig 모두 불분명 — Slack에 사는 Claude 제품인 것은 맥락상 분명하나 **제품명 미확정으로 원 표기 미기록**.
+- 3) https://www.youtube.com/watch?v=fOsLTMhjyMM (22:21, [[mingsheng-hong]] / [[ironclad]]) → [[tech-bridge-trusted-throughput]]. 신규 concept [[trusted-throughput]]. 신규 entity [[mingsheng-hong]] · [[ironclad]].
+  - 논증 축은 **토큰 = LOC**: 추적하되 최적화 대상으로 삼지 마라. 대시보드는 리더보드가 아니라 **연기 감지기**이고 조사 신호는 *안 쓰는 쪽*(도입 격차).
+  - 지표 진화 경로를 실패 단계까지 공개: LOC → 열린 PR → 병합 PR → **복잡도 가중 병합 PR**(LLM 1~2개로 티셔츠 사이즈 채점). [[generator-evaluator-pattern]]을 *생산성 계측 자체*에 적용한 첫 사례.
+  - 병목 이동을 **리뷰·CI**로 특정. 새 인과: flaky 테스트 → 수동 재실행 또는 AI 반복 재시도 → **토큰 낭비의 원인이 CI 품질**.
+  - 안티패턴 경고: CI 과부하 때문에 **PR 분할 중단**(1시간 회귀 × 10 PR = 10시간) → 사람 검토 부담·주의 분산으로 품질 하락.
+  - ⚠️ **발표자 이름이 소스 안에서 갈린다** — 제목 "Mingsheng Hong", 설명란 "Mingshan Hong", ASR "Minshan". LinkedIn 슬러그가 `mingshenghong`이라 제목 표기를 따르되 **해소하지 않고 기록**(raw·source·entity 3곳).
+  - ⚠️ Amazon·Meta 리더보드 일화와 "한 달 5억 달러"는 발표자가 언론 보도로 소개했을 뿐 **출처 미명시**.
+- 4) https://www.youtube.com/watch?v=3tDoLkFcEKg (19:15, [[lena-hall]]) → [[tech-bridge-signal-layer]]. 신규 concept [[signal-layer]]. 신규 entity [[lena-hall]] · [[richard-hamming]].
+  - **채점기 경계선**이 이 위키에서 [[sutton-bitter-lesson]]의 가장 정밀한 범위 한정 — *"컴파일러는 무료 채점 도구, 테스트 스위트는 무료 채점 도구"* → 코드가 먼저 자동화된 것은 **가장 검증하기 쉬웠기 때문**.
+  - [[verifiable-goals]]의 **정확한 이면**으로 배치: 그쪽이 "verifier를 만들어라"면 이쪽은 "verifier를 만들 수 없는 곳을 알아라".
+  - **[[dhh]] taste 논의 정면 반박** — "취향은 피드백을 통한 선호도일 뿐이라 학습 가능"하고, 남는 것은 *아직 일어나지 않은 일*에 대한 판단과 *모델이 관찰할 수 없는 관계*. 두 소스가 서로를 참조하지 않으므로 [[dhh]] 페이지에 **해소하지 않은 대비**로 기록.
+  - 왜곡 3종(source/org/machine)과 처방. org distortion의 원인을 무능이 아니라 **결과에 대한 노출**로 지목 — 더 나은 AI로 해결되지 않는다는 함의.
+  - [[richard-hamming]] 재해석: 공략 가능성이 문제를 중요하게 만드는데 AI가 공략 권한을 모두에게 줬으므로 **희소성이 도구에서 문제 선택으로 이동**.
+  - ⚠️ 벤치마크 이름·YC 회사·모니터링 제품 사례가 모두 **익명/비특정** — 검증 가능한 형태가 아님을 source·entity에 명시.
+- 페이지화하지 않음: Kleiner Perkins(진행사), Josh Coyne·Leigh-Marie Braswell(진행자), Stripe·Stripe Connect(경력 배경), Sarah Guo(1회 인용), Paul Graham·Twitch(1회 예시), Replit·Air Canada(사고 사례), Amazon·Meta 리더보드 일화.
+- raw: `01.raw/articles/2026-09-01_*.md` 3편 + `2026-09-02_*.md` 1편. 갱신: index(215→231), overview, log, engineering/index, [[tech-bridge]], [[anthropic]], [[managed-agents]], [[agent-harness-design]], [[generator-evaluator-pattern]], [[verifiable-goals]], [[sutton-bitter-lesson]], [[agent-org-adoption]], [[self-harness]], [[dhh]].
+- **핵심 합성**: 서로를 모르는 세 소스가 같은 결론에 수렴했다. ① 구매자([[ironclad]])와 공급자([[anthropic]])가 모두 **"토큰 단가는 잘못된 최적화 대상"** — 각자의 인센티브가 그 결론과 정렬돼 있다는 점은 감안 필요. ② [[signal-layer]]와 Claude Platform 팀이 모두 실행이 싸지면 남는 일을 **문제 선택과 정렬**로 지목. ③ [[agent-distributed-systems]] → [[token-roles]] 사이에 **순서 의존성**이 있다 — 기본 루프의 신뢰성이 풀려야 전략 계층이 열린다(*"가장 기본적인 내용들이 어느 정도 이해 가능해졌기 때문"*).

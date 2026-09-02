@@ -3,11 +3,11 @@ title: Self-Harness
 type: concept
 category: pattern
 tags: [agent, harness, self-improvement, harness-engineering, terminal-bench, llm-engineering]
-related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows]
+related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills]
 first-seen: self-harness-paper
-sources: [self-harness-paper, papanuvo-self-harness]
+sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era]
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-09-02
 ---
 
 # Self-Harness
@@ -108,9 +108,22 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 - 프로토콜이 **verifier 결과·trace 품질에 의존**. pass-rate non-regression만으로는 고위험 하니스 변경엔 부족 — 더 강한 acceptance gate 필요.
 - 핵심 요구는 동일: 자기개선은 *proposer의 그럴듯한 근거가 아니라 행동 증거(behavioral evidence)에 grounded* 되어야 한다.
 
+## 제품 기능으로서의 "dreaming" (2026-09-01)
+
+[[tech-bridge-claude-platform-agent-era]]에서 [[anthropic|Anthropic]] Claude Platform 팀이 같은 구조를 제품 전략으로 부르는 이름이 확인됐다.
+
+> 과거 세션을 되돌아보고 **메모리에 쓰고 개선해야 할 스킬을 작성**하는 또 다른 방법입니다.
+
+논문의 self-harness가 **하니스 계보를 진화**시킨다면, dreaming은 **메모리와 스킬**([[agent-skills]])을 산출물로 삼는다. 즉 자기개선의 대상이 스캐폴딩 코드가 아니라 **축적된 지침**이다.
+
+같은 대담에 수동 버전도 나온다 — 결과가 틀리면 *"그것이 잘못된 일이었다는 것을 기억하세요. **메모리에 저장해 둬**"*라고 지시하고 저장된 내용을 확인하는 식. 자동화 이전 단계의 같은 루프다.
+
+[[token-roles]]에서 이것은 advising·grading과 나란히 **토큰에 부여하는 세 번째 역할**로 분류된다.
+
 ## References
 
 - [[self-harness-paper]] (1차, arXiv 2606.09498)
+- [[tech-bridge-claude-platform-agent-era]] — "dreaming" (제품 전략으로서의 자기개선 루프)
 - [[papanuvo-self-harness]] (2차, 한국어 해설)
 - 허브: [[agent-harness-design]] · [[harness-engineering]]
 - 관련 패턴: [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] · [[sutton-bitter-lesson]]
