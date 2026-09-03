@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-08-29
+updated: 2026-09-03
 ---
 
 # Log
@@ -541,3 +541,23 @@ updated: 2026-08-29
 - 페이지화하지 않음: Kevin Moore(PR triage 스킬 저자, 1회), Antigravity(1회), RevenueCat Shipaton(1회), Midjourney(회고 1회), Fluttercon(장소), Google(공식 스킬 저장소 주체 1회), Jaspr(불확실).
 - raw: `01.raw/articles/2026-09-02_Flutter 개발자 인터뷰 플러터 개발자의 AI 워크플로우.md`. 갱신: index(231→234), overview, log, [[tech-bridge]] (같은 날 ingest 1편→2편).
 - **핵심 합성**: 이틀 사이 스킬을 다룬 두 소스가 정확히 반대 끝에서 만난다 — Touil([[tech-bridge-ai-native-skills]])은 *조직*이 스킬을 카탈로그·거버넌스해야 부채가 안 생긴다고 했고, Kaceviča는 *개인*이 인터넷에서 받은 MD 파일 하나가 이미 공급망 위험이라고 한다. 둘 다 처방이 **출처·내용 검사**라는 점에서 일치하고, 이것이 [[prompt-injection]]을 런타임 문제에서 **설치 시점 문제**로 확장한다. 부수적으로 이 소스는 [[signal-layer]]의 채점기 경계선("좋은가"는 채점 가능, "필요한가"는 아님)이 코드 리뷰라는 가장 자동화된 영역 **안에서도** 유효함을 보여준다.
+
+## [2026-09-03] ingest | Tech Bridge — 안드레 카파시 스탠포드 트랜스포머 강의
+
+- https://www.youtube.com/watch?v=y2p8Va_zu00 (61:24, [[andrej-karpathy]] / Stanford CS25) → [[tech-bridge-karpathy-transformers-stanford]]. 채널 최근 15편 중 **신규는 이 1편뿐**이었고 나머지 14편은 이미 ingest돼 있었다. Shorts 없음. 자막 429 없음 — ko·en-orig 모두 확보.
+- ⚠️ **채널 첫 아카이브 재배포**: 업로드는 2026-09-02지만 **강연 자체는 ~2023년**이다. 설명란에 촬영 시점 표기가 없어 내부 증거로 판정했다 — 발표자가 청중에게 *"entering this area in roughly 2023"*, 2017년 구조를 *"five years ago"*, [[nanogpt]]를 *"지난 며칠 동안 작업했다"*(공개 2023-01), Q&A에서 ChatGPT를 갓 나온 제품처럼 취급. → **이 채널의 업로드 날짜를 발화 날짜로 가정하지 말 것**을 [[tech-bridge]]에 경고로 남겼다. 기존 소스 15편은 전부 동시대 강연이라 이 전제가 처음 깨졌다.
+- 신규 concept 3개 — 위키가 지금까지 **어휘로만 쓰던 것들의 정의 페이지**다. 기존 [[tech-bridge]] 소스 15편이 전부 에이전트 실무 층위였고 아키텍처 층위는 비어 있었다.
+  - [[transformer]]: 세 속성 **동시** 최적화(표현력·최적화 가능성·**GPU 효율성**)로 이겼다는 프레임. 3번이 가장 저평가됐다는 것이 발표자 주장 — *"현재 하드웨어에서 효율적이면 더 크게 만들 수 있습니다."* RNN 대비(길고 가는 그래프 vs 얕고 넓은 그래프)가 세 속성을 한 번에 보여준다. 세 변종(encoder/decoder-only/encoder-decoder)이 마스킹 줄 하나·cross-attention 줄 하나 차이라는 표.
+  - [[attention-mechanism]]: **방향 그래프 위의 데이터 의존적 메시지 전달**. query=찾는 것, key=가진 것, value=전달할 것. *"Heads는 병렬 복사 붙여넣기, Layers는 직렬 복사 붙여넣기."* self/cross는 **key·value의 출처만** 다르고 연산은 동일. ⚠️ 이 프레이밍은 발표자가 Q&A에서 *"어제 생각해냈다"*고 농담한 **개인적 재해석**임을 페이지에 명시했다.
+  - [[in-context-learning]]: **outer loop**(SGD·가중치) vs **inner loop**(시퀀스 읽기·activation). [[context-engineering]]·[[token-roles]]·[[agent-skills]]가 실무 층위에서 쓰던 것의 메커니즘 이름.
+- 신규 entity 2개 — [[nanogpt]](300줄, 8-GPU 38시간으로 GPT-2 재현; **에이전트 도구가 아니라 학습용 레퍼런스**임을 명시), [[dzmitry-bahdanau]](어텐션 원저자; 중학교 번역 연습의 시선 이동에서 착상, 원래 이름 RNNsearch, *attention*은 Yoshua Bengio가 명명).
+- 기존 페이지 보강 4건:
+  - [[sutton-bitter-lesson]]: 2012년 이전 비전 파이프라인의 **1인칭 증언**(*"여기저기서 코드를 모아서 실행했는데, 정말 악몽 같았어요"* / *"게다가 그것도 효과가 없었어요"*) — 에세이의 요약 표에 비용의 질감을 채운다. 그리고 **스케일 조건부 단서**: *"데이터가 무한하면 점점 더 적게 인코딩하고 싶어지고, 데이터가 아주 적으면 오히려 편향을 인코딩하고 싶어집니다."* 이것이 어제 추가한 [[flutter]] 반례(학습 데이터 격차)가 **사라지는 종류**라는 판정을 뒷받침한다. 부수 발견 — inductive bias는 코어가 아니라 **연결성·positional encoding**으로 factor out돼 있다.
+  - [[context-resets-and-compaction]]: **scratch pad 계보(2023)** 절 추가. 컨텍스트 확장 논문 200편 대신 *"컨텍스트 길이는 고정해 두되 네트워크가 scratch pad를 쓰게 하자"*. durable session log·structured handoff와의 대응표. ⚠️ 당시 scratch pad는 **디코딩 시 특수 토큰을 가로채는 harness 로직**을 전제하므로 오늘날 tool use와 같은 것으로 취급하지 말라는 경고를 달았다.
+  - [[llm-wiki-pattern]] / [[memex]]: 같은 계보의 다른 쪽. scratch pad는 *한 세션 안*의 컨텍스트 한계를, LLM wiki는 *세션들 사이*의 망각을 우회하는 **같은 처방**(외부 마크다운 + 모델이 읽고 쓴다)이고 시간 축만 다르다. memex 계보표에 2023 항목 삽입 — Bush 계보에서 LLM은 유지보수자로만이 아니라 **memex를 필요로 하는 또 하나의 유한한 기억 장치**로도 합류한다.
+  - [[andrej-karpathy]]: 오래된 공백(*"경력 일대기, nanoGPT 등 작업 — 별도 소스 ingest 필요"*) 해소. 2012년 진입·컴퓨터 비전 전공·nanoGPT·Tesla 사례·Bahdanau 이메일. 밝힌 선호(autoregressive 불호, diffusion 선호)도 기록.
+- ASR 보정(ko 자막 오역이 이례적으로 많다): "변압기"→transformer, "주의력"/"구금"/"차단"→attention, "염기서열 분석 논문"→sequence-to-sequence, "레조넌스"→ResNet, "보락스(Borax)"→4x, "바이런 에스테이트"→BiRNN states, "알렉스 카치브스키"→Alex Krizhevsky, "HGPU 노드 하나"→8-GPU 노드 하나, "nn.bedding"→`nn.Embedding`, "231번"→CS231n, "bits"→ViT.
+- ⚠️ 확정하지 않은 것 3건: ① 47:09의 **"raw operator"** — 인컨텍스트 러닝을 뒷받침한다고 인용된 논문·연산자 이름이 ko·en-orig 모두 불분명해 논문 특정 불가. ② GPT-3 논문 제목이 en-orig에서 *"twoshot learners"*로 오인식됨(실제 *Few-Shot Learners*). ③ 32:36 컨텍스트 길이 "124/248 tokens"는 문맥상 1024/2048의 자릿수 누락으로 보이나 확정하지 않음.
+- 페이지화하지 않음: Stanford CS25(장소·강좌), Alex Krizhevsky(1회 언급), Yoshua Bengio(명명 일화 1회), Tesla(멀티모달 사례로만 언급 — 재직 기간·역할 미확인), Whisper·ViT·AlphaFold·Decision Transformer(확장 사례 나열), S4(질문만 있고 답변이 자막에 없음).
+- raw: `01.raw/articles/2026-09-02_안드레 카파시의 스탠포드 1시간 강의.md`. 갱신: index(234→240), overview, log, [[tech-bridge]].
+- **핵심 합성**: 이 위키가 매일 다루는 어휘 — 컨텍스트, 프롬프트, 토큰, 스킬 — 이 **모델 안에서 물리적으로 무엇인지**를 처음으로 설명하는 소스다. 세 가지가 위에서 아래로 이어진다. ① *"GPT는 런타임에 재구성되어 자연어 프로그램을 실행하는 범용 컴퓨터"* 가 [[context-engineering]]·[[token-roles]]의 프롬프트 설계가 왜 **프로그래밍처럼** 느껴지는지 설명한다. ② [[in-context-learning]]의 inner loop가 [[agent-skills]]가 파인튜닝 없이 행동을 바꾸는 **메커니즘**이다 — progressive disclosure는 "inner loop에 무엇을 언제 올릴지"의 문제로 다시 읽힌다. ③ 그리고 2023년의 scratch pad가 2026년의 [[llm-wiki-pattern]]로, 즉 **이 vault 자체**로 이어진다. 저자가 같다는 점이 우연이 아니라 같은 문제(유한한 기억)의 3년 간격 두 답안임을 보여준다.

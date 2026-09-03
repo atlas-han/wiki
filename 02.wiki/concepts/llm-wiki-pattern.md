@@ -5,9 +5,9 @@ category: pattern
 tags: [knowledge-base, workflow, llm-tooling]
 related: [agent-harness-design, memex, code-knowledge-graph, obsidian-cli-workflow]
 first-seen: karpathy-llm-wiki-gist
-sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow]
+sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford]
 created: 2026-05-25
-updated: 2026-07-07
+updated: 2026-09-03
 ---
 
 # LLM Wiki Pattern
@@ -57,6 +57,16 @@ LLM이 점진적으로 유지·확장하는 마크다운 기반 개인 지식 �
 ## 그래프화: /understand-knowledge
 
 [[understand-anything|Understand-Anything]]의 `/understand-knowledge` 명령은 **Karpathy-pattern wiki를 직접 입력으로 받아** force-directed [[code-knowledge-graph|지식 그래프]] + community clustering을 생성한다. `index.md`에서 wikilink·카테고리를 결정론적으로 파싱한 뒤, LLM(`article-analyzer`)이 암묵 관계·엔티티·claim을 발굴 — [[tree-sitter-llm-hybrid|결정론+의미 하이브리드]]를 wiki에 적용한 형태. 즉 이 LLM-WIKI는 그 도구의 입력이 될 수 있고, `index.md`의 위키링크 밀도가 그래프 품질의 1차 신호가 된다.
+
+## 전사 — 같은 저자의 2023년 scratch pad
+
+[[andrej-karpathy|Karpathy]]가 이 패턴의 gist를 쓴 것은 2026년이지만, [[tech-bridge-karpathy-transformers-stanford]](~2023년 강연)에서 그는 이미 같은 발상을 **아키텍처 문제의 해법**으로 말하고 있었다.
+
+> 머릿속에 담아두는 게 [[transformer|트랜스포머]]의 컨텍스트 길이라면, **어쩌면 우리는 그냥 노트를 주고 거기서 읽고 쓰게 하면 됩니다.**
+
+당시의 프레이밍은 "컨텍스트 길이를 늘리는 200편의 논문 대신 모델에게 노트를 주자"였다. 3년 뒤 [[karpathy-llm-wiki-gist]]는 같은 구조를 **지식 축적**의 문제로 다시 제기한다 — 이번에는 노트가 단발성 메모가 아니라 *누적되는 인공물*이고, 유지보수자가 LLM이다.
+
+두 진술을 나란히 두면 이 패턴이 무엇의 해법인지 선명해진다. scratch pad는 **한 세션 안의** 컨텍스트 한계를 우회하고, LLM wiki는 **세션들 사이의** 망각을 우회한다. 같은 처방(외부 마크다운 + 모델이 읽고 쓴다)이 시간 축만 늘어난 것이다. → [[context-resets-and-compaction]], [[memex]]
 
 ## References
 

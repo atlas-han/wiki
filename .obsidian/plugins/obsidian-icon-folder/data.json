@@ -1,39 +1,4 @@
 {
-  "settings": {
-    "migrated": 6,
-    "iconPacksPath": ".obsidian/icons",
-    "fontSize": 16,
-    "emojiStyle": "native",
-    "iconColor": null,
-    "recentlyUsedIcons": [
-      "LiBook",
-      "LiLibrary",
-      "LiInbox",
-      "LiStickyNote",
-      "LiBookOpen"
-    ],
-    "recentlyUsedIconsSize": 5,
-    "rules": [],
-    "extraMargin": {
-      "top": 0,
-      "right": 4,
-      "bottom": 0,
-      "left": 0
-    },
-    "iconInTabsEnabled": true,
-    "iconInTitleEnabled": true,
-    "iconInTitlePosition": "above",
-    "iconInFrontmatterEnabled": false,
-    "iconInFrontmatterFieldName": "icon",
-    "iconColorInFrontmatterFieldName": "iconColor",
-    "iconsBackgroundCheckEnabled": false,
-    "iconsInNotesEnabled": true,
-    "iconsInLinksEnabled": true,
-    "iconIdentifier": ":",
-    "lucideIconPackType": "native",
-    "debugMode": false,
-    "useInternalPlugins": false
-  },
   "00.notes": "LiStickyNote",
   "00.notes/index.md": "LiListTree",
   "01.raw": "LiInbox",
@@ -374,5 +339,47 @@
   "02.wiki/entities/katelyn-lesse.md": "LiUser",
   "02.wiki/sources/tech-bridge-flutter-ai-workflow.md": "LiVideo",
   "02.wiki/entities/ivanna-kacevica.md": "LiUser",
-  "02.wiki/entities/flutter.md": "LiWrench"
+  "02.wiki/entities/flutter.md": "LiWrench",
+  "02.wiki/concepts/transformer.md": "LiLayers",
+  "02.wiki/concepts/attention-mechanism.md": "LiLayers",
+  "02.wiki/concepts/in-context-learning.md": "LiBookText",
+  "02.wiki/entities/nanogpt.md": "LiWrench",
+  "02.wiki/entities/dzmitry-bahdanau.md": "LiUser",
+  "02.wiki/sources/tech-bridge-karpathy-transformers-stanford.md": "LiVideo",
+  "02.wiki/sources/charlychoi-claude-code-best-practices.md": "LiNewspaper",
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiBook",
+      "LiLibrary",
+      "LiInbox",
+      "LiStickyNote",
+      "LiBookOpen"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  }
 }

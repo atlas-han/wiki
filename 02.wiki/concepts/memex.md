@@ -5,9 +5,9 @@ category: theory
 tags: [hypertext-precursor, knowledge-base, history-of-computing, associative-trails]
 related: [llm-wiki-pattern]
 first-seen: karpathy-llm-wiki-gist
-sources: [karpathy-llm-wiki-gist]
+sources: [karpathy-llm-wiki-gist, tech-bridge-karpathy-transformers-stanford]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-03
 ---
 
 # Memex
@@ -35,6 +35,7 @@ updated: 2026-05-25
 | **Ted Nelson** (1965) | "hypertext" 용어 명명, 직접적으로 Bush 인용 |
 | **Tim Berners-Lee** (1989) | World Wide Web — trail은 hyperlink가 됨 |
 | **DARPA Memex Program** (2014) | 다크웹 범죄 수사를 위한 검색 도구 (이름 차용) |
+| **Transformer scratch pad** (~2023) | 모델에게 외부 노트를 주는 발상 — [[tech-bridge-karpathy-transformers-stanford]] |
 | **[[llm-wiki-pattern]]** (2026) | LLM이 trail의 유지보수자, [[karpathy-llm-wiki-gist|Karpathy 명시 인용]] |
 
 ## Bush가 풀지 못한 것 — 유지보수자
@@ -45,6 +46,14 @@ Bush의 비전은 *trail을 만들고 유지하는 사람의 시간*을 가정�
 > — [[andrej-karpathy|Karpathy]] ([[karpathy-llm-wiki-gist]])
 
 본 vault 자체가 그 가설의 instantiation.
+
+## 왜 기계가 노트를 쓰는가 — 아키텍처 쪽 동기
+
+Bush의 memex는 **인간의 기억 한계**에서 출발했다. [[tech-bridge-karpathy-transformers-stanford]]는 같은 처방이 **모델의 기억 한계**에서도 독립적으로 도출됨을 보여준다. [[transformer]]의 컨텍스트 길이는 유한하고, [[andrej-karpathy|Karpathy]]는 그것을 늘리는 대신 노트를 주자고 제안하며 **사람의 노트 습관을 직접 비유로 든다.**
+
+> 그건 사람이 노트를 쓰는 법을 배우는 것과 똑같습니다. 머릿속에 다 넣어둘 필요가 없죠.
+
+즉 Bush의 계보에서 LLM은 단지 **유지보수자**로 합류한 것이 아니라, 애초에 memex를 필요로 하는 **또 하나의 유한한 기억 장치**로도 합류한다. 이 vault는 두 역할을 동시에 수행한다 — 사람의 associative trail이자 모델의 scratch pad.
 
 ## References
 

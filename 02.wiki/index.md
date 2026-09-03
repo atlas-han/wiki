@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # Index
@@ -22,7 +22,8 @@ updated: 2026-09-02
 
 ### Persons
 - [[adam-wiggins]] — [[heroku|Heroku]] 공동창업자, [[twelve-factor-app]] 방법론 저자
-- [[andrej-karpathy]] — AI 연구자·교육자, [[llm-wiki-pattern]] 원안 저자
+- [[andrej-karpathy]] — AI 연구자·교육자, [[llm-wiki-pattern]] 원안 저자 · [[transformer]] 강연·[[nanogpt]] 저자 ([[tech-bridge-karpathy-transformers-stanford]], sources: 3)
+- [[dzmitry-bahdanau]] — [[attention-mechanism|어텐션]] 원저자(2014), 번역 수업의 시선 이동에서 착상 ([[tech-bridge-karpathy-transformers-stanford]])
 - [[geoff-huntley]] — [[ralph-wiggum-method|Ralph]] 자율 루프 패턴 명명·정리 (ghuntley.com)
 - [[jarred-sumner]] — [[bun|Bun]] 제작자, [[dynamic-workflows]]로 Zig→Rust 포팅 사례
 - [[cory-dolphin]] — [[nextdoor|Nextdoor]] Head of Engineering, [[outcome-engineering]] 프레이밍 제시
@@ -105,6 +106,7 @@ updated: 2026-09-02
 - [[deepagents]] — LangChain 에이전트 SDK, [[self-harness]]의 최소 초기 하니스 토대
 - [[github-spec-kit]] — GitHub Spec Kit (`specify` CLI), [[spec-driven-development]] 하니스
 - [[flutter]] — Google 크로스플랫폼 UI 프레임워크(Dart), 학습 데이터 격차 · 1코드베이스 4플랫폼 · 공식 스킬 ([[tech-bridge-flutter-ai-workflow]])
+- [[nanogpt]] — [[andrej-karpathy|Karpathy]]의 300줄 GPT 구현, 8-GPU·38시간으로 GPT-2 재현 (학습용 레퍼런스)
 
 ---
 
@@ -119,9 +121,12 @@ updated: 2026-09-02
 ### Architectures
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
 - [[agentic-sites]] — 방문자 의도에 맞춰 블록만 재조립하는 웹 아키텍처 (자기 사이트 RAG · 1~2초 예산 · 작은 모델, sources: 1)
+- [[transformer]] — 표현력·최적화 가능성·**GPU 효율성**을 동시에 만족해서 이긴 아키텍처. *"런타임에 재구성되는 범용 컴퓨터"* (sources: 1)
+- [[attention-mechanism]] — 방향 그래프 위의 데이터 의존적 메시지 전달. query=찾는 것·key=가진 것·value=전달할 것 (sources: 1)
 
 ### Theories
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
+- [[in-context-learning]] — 가중치를 안 바꾸고 activation 안에서 학습. outer loop(SGD) vs **inner loop**(시퀀스 읽기) (sources: 1)
 - [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. Ng는 AI 공포 마케팅을 이 프레임으로 읽음
 - [[memex]] — Vannevar Bush 1945년 비전, [[llm-wiki-pattern]]의 사상적 조상
 - [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned)
@@ -260,13 +265,14 @@ updated: 2026-09-02
 - [[tech-bridge-signal-layer]] — Lena Hall: 수렴 기계, 채점기 경계선, 왜곡 3종, 신뢰 ([[tech-bridge]], 2026-09-01)
 - [[tech-bridge-agents-as-distributed-systems]] — TikTok Salman Munaf: 타임아웃=상태 불명, 멱등성, 메모리=캐시, 보상 작업 ([[tech-bridge]], 2026-09-02)
 - [[tech-bridge-flutter-ai-workflow]] — Flutter GDE Ivanna Kaceviča 인터뷰: 프롬프트→규칙→스킬, MD 파일은 무해하지 않다, 추천 스킬 5개, Claude·Codex·Antigravity 3대 병렬 ([[tech-bridge]], 2026-09-02)
+- [[tech-bridge-karpathy-transformers-stanford]] — Karpathy Stanford CS25 트랜스포머 강연: 두 번의 수렴, Bahdanau 이메일, 어텐션=그래프 메시지 전달, nanoGPT 300줄, 세 가지 이유, 범용 컴퓨터, scratch pad ([[tech-bridge]], 업로드 2026-09-02 / **강연 ~2023**)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 234 (log 포함; + 2026-09-02 Tech Bridge Flutter 인터뷰: source 1 + entity 2)
+- 총 페이지 수: 240 (log 포함; + 2026-09-03 Tech Bridge Karpathy 강연: source 1 + concept 3 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-02 ([[tech-bridge-flutter-ai-workflow]]; 같은 날 앞서 [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]])
+- 마지막 ingest: 2026-09-03 ([[tech-bridge-karpathy-transformers-stanford]] — 위키 첫 **아키텍처 층위** 소스이자 채널 첫 아카이브 재배포)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-02
+- 마지막 갱신: 2026-09-03
