@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # Log
@@ -561,3 +561,24 @@ updated: 2026-09-03
 - 페이지화하지 않음: Stanford CS25(장소·강좌), Alex Krizhevsky(1회 언급), Yoshua Bengio(명명 일화 1회), Tesla(멀티모달 사례로만 언급 — 재직 기간·역할 미확인), Whisper·ViT·AlphaFold·Decision Transformer(확장 사례 나열), S4(질문만 있고 답변이 자막에 없음).
 - raw: `01.raw/articles/2026-09-02_안드레 카파시의 스탠포드 1시간 강의.md`. 갱신: index(234→240), overview, log, [[tech-bridge]].
 - **핵심 합성**: 이 위키가 매일 다루는 어휘 — 컨텍스트, 프롬프트, 토큰, 스킬 — 이 **모델 안에서 물리적으로 무엇인지**를 처음으로 설명하는 소스다. 세 가지가 위에서 아래로 이어진다. ① *"GPT는 런타임에 재구성되어 자연어 프로그램을 실행하는 범용 컴퓨터"* 가 [[context-engineering]]·[[token-roles]]의 프롬프트 설계가 왜 **프로그래밍처럼** 느껴지는지 설명한다. ② [[in-context-learning]]의 inner loop가 [[agent-skills]]가 파인튜닝 없이 행동을 바꾸는 **메커니즘**이다 — progressive disclosure는 "inner loop에 무엇을 언제 올릴지"의 문제로 다시 읽힌다. ③ 그리고 2023년의 scratch pad가 2026년의 [[llm-wiki-pattern]]로, 즉 **이 vault 자체**로 이어진다. 저자가 같다는 점이 우연이 아니라 같은 문제(유한한 기억)의 3년 간격 두 답안임을 보여준다.
+
+## [2026-09-04] ingest | Tech Bridge — 차세대 커머스를 위한 멀티모달 협업 에이전트 설계법
+
+- https://www.youtube.com/watch?v=UoU8_gkaXI4 (20:37, [[nidhi-kaushik-vyas]] / [[google-deepmind]]) → [[tech-bridge-multimodal-commerce-agent]]. `--playlist-end 15`로 조회했으나 채널이 반환한 최근 업로드는 **13편**이었고, 그중 **신규는 이 1편뿐**, 나머지 12편은 이미 ingest돼 있었다. Shorts 없음. 자막 429 없음 — ko·en-orig 모두 확보.
+- **위키 첫 소비자 대면 에이전트 소스.** 기존 [[tech-bridge]] 16편은 전부 개발자·조직 내부용 에이전트(코딩·리뷰·워크플로·조직 도입)였다. 여기서 처음으로 상대가 엔지니어가 아니라 **자기가 뭘 원하는지 모르는 일반 사용자**다. 이 전제 차이가 중요한 이유는 [[verifiable-goals]]·[[outcome-engineering]]·[[spec-driven-development]]가 전부 *"목표를 검증 가능하게 써라"* 를 요구하는데, 소비자 대면에서는 **명세를 쓰게 하는 게 아니라 함께 만들어내는 것**이 에이전트의 일이 되기 때문이다.
+- 신규 concept 3개 — 강연의 3단계 루프(탐색→조사→응답)에 1:1 대응한다.
+  - [[fuzzy-intent-discovery]]: **articulation gap** — *"많은 에이전트는 검색창을 감싸는 역할만 합니다"* vs *"쇼핑을 하고 싶다는 막연한 느낌이나 예감(vibe)만 가지고 있는 경우가 대부분"*. **working state**를 hard constraint / soft constraint + **confidence score** / real-time variable로 쪼갠다(각각 갱신 주기와 신뢰 성격이 다르다). soft constraint는 **참조 이미지에서 추출**하고 자기 확신도를 함께 저장 — 그래서 "신뢰도를 올리는 것" 자체가 질문의 목표가 될 수 있다. 다음 질문은 **information gain 최대**인 미지 변수 하나로 고르되, 판정 기준이 엔트로피가 아니라 **결과 뒤집힘**이다(*"추천하는 제품이 방에 맞지 않으면 아무 의미가 없다 — 대화의 방향을 의미 있게 바꿀 수 있는 변수"*).
+  - [[multimodal-elicitation]]: **보여주고 묻기.** 형식 판정이 명시적이다 — *쉽게 확정되는 것*(방 너비)은 텍스트, *주관적·모호한 것*(스타일)은 **시각적 선호 보드**. 보드는 질문이자 **계측기**다: *"마우스 커서가 특정 방향으로 이동하거나 클릭이 발생하는 등의 **미세한 신호**를 감지하여 (…) 신뢰도 모델을 업데이트"*. 먼저 제약을 판매자 **온톨로지에 임시로·거의 실시간으로** 매핑하는 **bridge**를 놓아야 검색이 가능해진다.
+  - [[adaptive-response-format]]: *"많은 시스템이 이 부분에서 실패하는데, **텍스트 위주의 응답만 제공하기 때문**"*. 정책·리뷰→요약, 비교→**트레이드오프 표**(축은 working state에서), 영감→**무드보드**. 테제는 *"모델 응답 구조를 갖는 방식 또한 **지능의 중요한 부분**"* — 형식은 후처리가 아니라 판단이므로 틀릴 수 있고 채점된다.
+- 신규 entity 2개 — [[nidhi-kaushik-vyas]](Google DeepMind 제품 담당), [[google-deepmind]](**위키 첫 Google 조직 페이지**. 그동안 Google은 [[gemma-4]]·[[flutter]]처럼 제품으로만 스쳤다. frontier lab 축에서 [[anthropic]]·[[openai]]·[[shanghai-ai-lab]]에 이은 네 번째).
+- 기존 페이지 보강 4건:
+  - [[generator-evaluator-pattern]]: **루프의 모든 단계를 채점하기.** 지금까지 이 위키 사례(frontend 4-criteria, 풀스택 3-agent, [[managed-agents]] `outcomes`)는 전부 *최종 산출물*을 채점했는데, 여기서는 working state·협업 전략·elicitation·응답 네 지점에 **auto-rater 12종**이 걸린다 — **중간 상태와 행동 선택**까지 채점 대상이 된다. 새 기법 3개: ① **counterfactual sensitivity를 양방향으로** 재기(관련 없는 제약은 그대로 남아야 한다 — 한쪽만 재면 과민한 추출기가 통과한다), ② **over-asking을 결함으로 계수**(정확도만 재면 계속 물어보는 쪽으로 몰린다), ③ **사용자 시뮬레이터**로 정답을 심어 채점기를 얻기. 그리고 채점기 수명에 대한 답 — *"거의 진화하는 시스템과 같습니다. 처음에는 아주 간단하게 시작하지만 (…) 시스템과 함께 점진적으로 성장해야 합니다."*
+  - [[signal-layer]]: **채점기 경계선을 다시 긋기.** 이 소스는 주관 영역인 **스타일 선호에 실제로 채점기를 만든** 반례성 증거다. 그런데 채점되는 것은 *"어떤 취향이 좋은가"* 가 아니라 **"그 취향을 몇 턴 만에 알아냈는가"** 이고, 가능한 이유는 **시뮬레이터에 정답을 심어두기 때문**이다. → 경계선은 *주관적인 영역*이 아니라 **정답을 아는 주체가 없는 영역**에 그어진다. 이 개념이 마지막까지 채점 불가라 지목한 **신뢰**에는 그 자리에 세울 사람이 없다.
+  - [[model-context-protocol]]: 에이전트↔에이전트 상거래의 인터페이스로 MCP가 지목된다(*"MCP가 이 둘 사이의 인터페이스 역할을 확실히 할 거라고 예상"*). 기존 사례가 전부 *에이전트→도구* 방향이었던 것과 다르다. 단 **기대이지 구현이 아니다** — 같은 답변이 아직 그 단계가 아니라고 명시한다.
+  - [[context-engineering]]: working state를 **신뢰 등급별 슬롯**으로 읽는 절 추가. 추론된 항목에 **자기 확신도가 함께 저장**되고, **믿으면 안 되는 필드**(실시간 변수)가 명시적으로 구분된다. [[agent-distributed-systems]]의 *"메모리는 무효화 가능한 캐시"* 와 같은 문제를 상태 스키마 층위에서 다룬 형태 — *"무엇을 넣을까"* 가 아니라 **"각 항목을 얼마나 믿을까"**.
+- ASR·번역 보정: ko 자막이 **agent를 일관되게 "상담원"으로 오역**한다("담당자", 09:49 **"부동산 중개인"**, 19:37 **"요원"**). "자동 생성기"/"자동화 도구"/"운영자" → **auto-rater**(en-orig의 *"autoators"/"operators"* 도 같은 단어의 오인식). "협업 신뢰도" → **confidence calibration**(en-orig *"confidence collaboration"* 이 오인식이고 챕터 제목 "신뢰도 보정"이 확인해준다). "회전율" → **turn efficiency**. "사용자 편의성" → **user actionability**. "분위기가 깨질" → **moot point**(en-orig *"mood point"* 도 오인식).
+- ⚠️ 확정하지 않은 것 4건: ① **촬영 시점** — [[tech-bridge]]에 아카이브 재배포 전례가 있어 내부 단서를 확인했으나, 과거 강연이라는 증거도 시점을 확정할 근거도 없다. 유일한 앵커는 *"최근 출시한 UCP"* 뿐. ② **행사명**이 소스 어디에도 없다(오프닝이 *"good morning folks"* 인 컨퍼런스 오전 세션이라는 것만 안다). ③ **UCP의 뜻** — en-orig는 약어만 말하는데 **ko 자막이 "Unified Communications Platform"으로 풀어 썼다.** 원문에 없는 자막의 창작이고 문맥(커머스)과 맞지 않아 채택하지 않았다. ④ **발표자 표기** — 자막에는 *"니디"* 뿐이고 전체 이름·소속은 **설명란**에서 왔다. 직책은 본인 표현 *"product person"* 뿐.
+- ⚠️ en-orig 자체 오류 1건: 15:40의 *"prepared to accept **wives**"* 는 **vibes**의 오인식인데 **ko 자막이 이를 "아내를 받아들일 준비"로 직역했다.** 실제 교훈은 *"모호한 의도를 받아들일 준비가 된 제품을 설계하라"* 다.
+- 페이지화하지 않음: UCP(약어 뜻 미확정, Q&A 1회), 거실 리모델링 예시(작동 예시), 사용자 시뮬레이터(기법으로 [[multimodal-elicitation]]·[[generator-evaluator-pattern]]에 기술), merchant/판매자(일반 개념).
+- raw: `01.raw/articles/2026-09-03_차세대 커머스를 위한 멀티모달 협업 에이전트 설계법.md`. 갱신: index(240→246), overview, log, [[tech-bridge]](sources 16→17, References에 누락돼 있던 flutter·karpathy 2건도 함께 backfill).
+- **핵심 합성**: 이 위키의 에이전트 논의가 지금까지 **한쪽 끝**만 보고 있었다는 것을 드러내는 소스다. [[verifiable-goals]]부터 [[trusted-throughput]]까지의 축은 전부 *"목표를 명확히 하고 verifier를 붙여라"* 였고, 그 전제는 **요구자가 명세를 쓸 수 있다**는 것이었다. 여기서는 요구자가 명세를 못 쓴다 — 그래서 에이전트의 첫 일이 실행이 아니라 **명세 공동 작성**이 되고, [[fuzzy-intent-discovery]]의 information gain 질문 선택이 그 공동 작성을 **최적화 문제로** 바꾼다. 그리고 이것이 [[signal-layer]]의 채점기 경계선을 한 칸 더 정확하게 만든다: 취향처럼 *주관적이지만 본인은 정답을 아는* 영역은 시뮬레이터로 채점 가능하고, 신뢰처럼 *정답을 아는 주체가 없는* 영역만 남는다. 부수적으로 플랫폼 전략도 읽힌다 — 판매자는 [[multimodal-elicitation]]의 **온톨로지를 제공**하지만 [[adaptive-response-format]]의 **형식 결정권은 갖지 못한다**(*"수평적 공통 층"*). 웹에서 판매자가 자기 페이지 레이아웃을 통제하던 것과의 단절이고, [[agentic-sites]]와는 재조립 주체가 정반대다.

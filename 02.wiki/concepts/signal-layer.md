@@ -5,9 +5,9 @@ category: pattern
 tags: [differentiation, taste, judgment, trust, gtm, product, convergence]
 related: [sutton-bitter-lesson, verifiable-goals, cognitive-offloading, trusted-throughput, agentic-sites, outcome-engineering]
 first-seen: tech-bridge-signal-layer
-sources: [tech-bridge-signal-layer]
+sources: [tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent]
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-04
 ---
 
 # Signal Layer
@@ -116,6 +116,16 @@ Machine distortion에 대한 처방이 가장 구체적이다. 모니터링 도�
 > 평균적인 것을 만들어내는 데는 대가가 따른다. 실제로는 **토큰, 인프라, 유능한 직원들의 급여 시간**으로 비용을 지불하게 되는데, 고객은 (…) 다시는 돌아오지 않습니다.
 
 > 결국 모든 뻔한 게시물은 **당신의 이름이 클릭할 가치가 없다는 것을 사람들에게 가르쳐주는** 셈입니다.
+
+## 채점기 경계선을 다시 긋기 (2026-09-04)
+
+[[tech-bridge-multimodal-commerce-agent]]은 위 "채점기 경계선"을 정면으로 밀어본 사례라 나란히 읽을 가치가 있다. [[google-deepmind|Google DeepMind]]는 **스타일 선호라는 전형적인 주관 영역**에 turn efficiency·format selection accuracy·hidden preference 발견 효율 같은 채점기를 실제로 만들었다 ([[multimodal-elicitation]]).
+
+그런데 무엇을 채점하는지 보면 경계선이 무너진 게 아니라 **위치가 더 정확해진다.** 채점되는 것은 *"어떤 취향이 좋은가"* 가 아니라 **"그 사람의 취향을 몇 턴 만에 알아냈는가"** 다. 그리고 이것이 채점 가능한 이유는 **사용자 시뮬레이터에 정답 선호를 미리 심어두기 때문**이다.
+
+→ 따라서 경계선은 *주관적인 영역*에 그어지는 게 아니라 **정답을 아는 주체가 존재하지 않는 영역**에 그어진다. 취향은 본인이 정답을 알고 있으므로(말로 못 할 뿐) 시뮬레이터를 세울 수 있다. 이 개념이 마지막까지 채점 불가라고 지목한 **신뢰**에는 그 자리에 세울 사람이 없다 — *"이를 위한 기준점도 없고, 보상 신호도 없습니다."*
+
+부수적으로 같은 소스는 이 개념의 *"틀렸을 때의 비용은 음수"* 와 충돌할 수 있는 지표를 하나 들여온다. [[adaptive-response-format]]의 **user actionability**(사용자가 구매로 넘어갔는가)는 **판매자의 목표이기도 해서**, 사용자 이익과 어긋날 수 있다. 소스는 이 긴장을 다루지 않는다.
 
 ## 관련
 

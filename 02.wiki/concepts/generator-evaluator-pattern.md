@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent]
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-04
 ---
 
 # Generator–Evaluator Pattern
@@ -113,6 +113,31 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 위 풀스택 사례의 [[playwright-mcp|Playwright MCP]] evaluator를 개인이 재현한 것이되, 실시간 조작 대신 **정적 스크린샷 워크스루**를 택했다(iPhone 시뮬레이터 로딩을 기다리지 않아도 됨). 골든 테스트는 **회귀**용으로 남기고 QA는 실제 화면으로 — [[verifiable-goals]]의 UI verifier를 에이전트가 닫는다.
 
 > ⚠️ 두 변형 모두 일화이며 측정치가 없다.
+
+## 루프의 모든 단계를 채점하기 (2026-09-04)
+
+[[tech-bridge-multimodal-commerce-agent]]([[nidhi-kaushik-vyas]] / [[google-deepmind]])은 이 패턴을 **산출물 하나가 아니라 루프의 모든 단계**에 건다. 강연의 네 번째 교훈이 그대로 이것이다 — *"루프를 제대로 채점했는지 확인하세요. **모든 단계에** 적합한 auto-rater가 설치되어 있습니다."*
+
+| 단계 | auto-rater |
+|---|---|
+| working state ([[fuzzy-intent-discovery]]) | fact retention · **confidence calibration** · **counterfactual sensitivity** |
+| 협업 전략 (다음 질문 선택) | blocker 식별 · **over-asking** · question utility |
+| elicitation ([[multimodal-elicitation]]) | hidden preference 효율 · **turn efficiency** · format selection accuracy |
+| 응답 ([[adaptive-response-format]]) | format accuracy · data fidelity · **user actionability** |
+
+지금까지 이 위키의 사례(frontend 4-criteria, 풀스택 3-agent, [[managed-agents]]의 `outcomes`)는 전부 **최종 산출물**을 채점했다. 여기서 달라지는 것은 **중간 상태와 행동 선택**도 채점 대상이 된다는 점이다 — 답이 좋은지가 아니라 *"지금 이 질문을 하는 게 맞는가"*, *"이 상태에 사실이 빠지지 않았는가"* 를 잰다.
+
+새로 얻은 채점 기법 세 가지:
+
+- **counterfactual sensitivity — 양방향으로 잰다.** *"쿼리를 뒤집어서 (…) 제약 조건도 함께 변경되도록 하고, **관련성이 없는 제약 조건은 그대로 유지**되도록 합니다."* 한쪽만 재면 아무 입력에나 반응하는 과민한 추출기가 통과한다. 두 번째 방향이 **가짜 상관을 잡는 장치**다.
+- **over-asking을 결함으로 센다.** 정확도만 재면 에이전트는 계속 물어보는 쪽으로 몰린다. 질문 횟수 자체에 페널티를 걸어 이를 막는다.
+- **사용자 시뮬레이터.** 제약을 **정답으로 심어둔** 가짜 사용자를 만들어 elicitation을 채점 가능한 문제로 바꾼다. evaluator를 회의적으로 *튜닝*하는 대신 **환경 쪽을 통제**해 채점기를 얻는다 — [[self-harness]]가 결정론적 verifier에 위임한 것과 같은 계열의 우회.
+
+그리고 채점기의 수명에 대한 단서. 위 "한계·튜닝 비용"이 *초기 evaluator는 거의 쓸모없다*고 했던 것에 대한 대응이다.
+
+> 이런 auto-rater를 개발하는 것은 거의 **진화하는 시스템과 같습니다.** 처음에는 **아주 간단하게 시작**하지만, 시스템이 발전함에 따라 **채점기도 시스템과 함께 점진적으로 성장**해야 합니다.
+
+> ⚠️ 12종의 rater 목록은 얻었지만 **구현·임계값·측정 결과는 소스에 없다.**
 
 ## References
 

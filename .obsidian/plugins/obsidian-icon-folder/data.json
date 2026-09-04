@@ -347,6 +347,12 @@
   "02.wiki/entities/dzmitry-bahdanau.md": "LiUser",
   "02.wiki/sources/tech-bridge-karpathy-transformers-stanford.md": "LiVideo",
   "02.wiki/sources/charlychoi-claude-code-best-practices.md": "LiNewspaper",
+  "02.wiki/concepts/fuzzy-intent-discovery.md": "LiPuzzle",
+  "02.wiki/concepts/multimodal-elicitation.md": "LiPuzzle",
+  "02.wiki/concepts/adaptive-response-format.md": "LiPuzzle",
+  "02.wiki/sources/tech-bridge-multimodal-commerce-agent.md": "LiVideo",
+  "02.wiki/entities/nidhi-kaushik-vyas.md": "LiUser",
+  "02.wiki/entities/google-deepmind.md": "LiBuilding",
   "settings": {
     "migrated": 6,
     "iconPacksPath": ".obsidian/icons",

@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # Index
@@ -42,6 +42,7 @@ updated: 2026-09-03
 - [[ivanna-kacevica]] — [[flutter|Flutter]] & Dart GDE, [[agent-skills]] 실무자 관점 · 스킬 파일 [[prompt-injection]] · 추천 스킬 5개 ([[tech-bridge-flutter-ai-workflow]])
 - [[angela-jiang]] — [[anthropic|Anthropic]] Claude Platform 제품, [[token-roles]]·하네스 정의 ([[tech-bridge-claude-platform-agent-era]])
 - [[katelyn-lesse]] — [[anthropic|Anthropic]] Claude Platform, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]])
+- [[nidhi-kaushik-vyas]] — [[google-deepmind|Google DeepMind]] 제품, 멀티모달 협업 커머스 에이전트 3단계 루프·단계별 auto-rater ([[tech-bridge-multimodal-commerce-agent]])
 - [[richard-hamming]] — "중요한 문제" 연구. 공략 가능성이 문제를 중요하게 만든다 ([[signal-layer]]에서 재해석)
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
@@ -65,6 +66,7 @@ updated: 2026-09-03
 - [[multica-ai]] — GitHub org, `andrej-karpathy-skills` repo로 [[claude-code]] CLAUDE.md 4원칙 공개
 - [[uk-aisi]] — UK AI Security Institute, frontier 모델 보안 평가 정부 기관
 - [[shanghai-ai-lab]] — 상하이 AI 연구소, [[self-harness]] 논문 발표 (본 위키 첫 중국 lab)
+- [[google-deepmind]] — Google의 AI 연구·제품 조직. 위키 첫 Google 조직 페이지 · 소비자 대면 커머스 에이전트 ([[tech-bridge-multimodal-commerce-agent]])
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -160,6 +162,9 @@ updated: 2026-09-03
 - [[trusted-throughput]] — 토큰·LOC가 아니라 *신뢰받는 결과물의 처리량*을 최적화. 병목은 리뷰·CI (Ironclad, sources: 2)
 - [[signal-layer]] — 구현이 무료가 된 세계에서 신호를 정의하고 source/org/machine 왜곡에서 지키는 층 (Lena Hall, sources: 1)
 - [[token-roles]] — 토큰에 실행 말고 advising·grading·dreaming 역할을 줘 intelligence per dollar를 올린다 (Anthropic, sources: 1)
+- [[fuzzy-intent-discovery]] — 사용자는 키워드가 아니라 vibe를 갖고 온다. working state(hard/soft/confidence/real-time) + information gain으로 질문 하나 고르기 (Google DeepMind, sources: 1)
+- [[multimodal-elicitation]] — 텍스트로 묻지 말고 **보여주고 묻기**. 시각적 선호 보드 + hover·click micro signal로 신뢰도 갱신 (sources: 1)
+- [[adaptive-response-format]] — 응답 형식 선택 자체가 모델의 판단. 요약/비교표/무드보드 + user actionability 채점 (sources: 1)
 
 ---
 
@@ -266,13 +271,14 @@ updated: 2026-09-03
 - [[tech-bridge-agents-as-distributed-systems]] — TikTok Salman Munaf: 타임아웃=상태 불명, 멱등성, 메모리=캐시, 보상 작업 ([[tech-bridge]], 2026-09-02)
 - [[tech-bridge-flutter-ai-workflow]] — Flutter GDE Ivanna Kaceviča 인터뷰: 프롬프트→규칙→스킬, MD 파일은 무해하지 않다, 추천 스킬 5개, Claude·Codex·Antigravity 3대 병렬 ([[tech-bridge]], 2026-09-02)
 - [[tech-bridge-karpathy-transformers-stanford]] — Karpathy Stanford CS25 트랜스포머 강연: 두 번의 수렴, Bahdanau 이메일, 어텐션=그래프 메시지 전달, nanoGPT 300줄, 세 가지 이유, 범용 컴퓨터, scratch pad ([[tech-bridge]], 업로드 2026-09-02 / **강연 ~2023**)
+- [[tech-bridge-multimodal-commerce-agent]] — Google DeepMind Nidhi Kaushik Vyas: articulation gap, 탐색→조사→응답 3단계 루프, working state, information gain 질문 선택, 시각적 선호 보드·micro signal, 단계별 auto-rater 12종 ([[tech-bridge]], 2026-09-03)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 240 (log 포함; + 2026-09-03 Tech Bridge Karpathy 강연: source 1 + concept 3 + entity 2)
+- 총 페이지 수: 246 (log 포함; + 2026-09-04 Tech Bridge 멀티모달 커머스 에이전트: source 1 + concept 3 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-03 ([[tech-bridge-karpathy-transformers-stanford]] — 위키 첫 **아키텍처 층위** 소스이자 채널 첫 아카이브 재배포)
+- 마지막 ingest: 2026-09-04 ([[tech-bridge-multimodal-commerce-agent]] — 위키 첫 **소비자 대면 에이전트** 소스이자 첫 [[google-deepmind|Google DeepMind]] 조직 페이지)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-03
+- 마지막 갱신: 2026-09-04
