@@ -4,12 +4,12 @@ type: entity
 category: person
 tags: [researcher, educator, llm, transformer, computer-vision]
 aliases: [카파시, Karpathy, 안드레 카파시]
-sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford]
+sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills]
 links:
   - https://karpathy.ai
   - https://github.com/karpathy
 created: 2026-05-25
-updated: 2026-09-03
+updated: 2026-09-05
 ---
 
 # Andrej Karpathy
@@ -55,7 +55,13 @@ AI 연구자·교육자. 본 위키에 두 갈래로 등장한다 — **위키 �
 - "Zero to Hero" 시리즈 등 다른 강의 미반영
 - 2023년 강연 이후 ~2026년 사이의 활동 공백 — [[karpathy-llm-wiki-gist]](2026)와 위 강연(~2023) 사이를 잇는 소스가 없다
 
-## References
+## 이름이 붙은 코딩 규칙의 재유통 (2026-09-05 · [[tech-bridge-six-agent-skills]])
+
+[[ai-labs]]의 스킬 카탈로그에 *"[[andrej-karpathy|Karpathy]]의 조언을 네 가지 규칙으로 바꾼"* 스킬이 포함됐다. 실체는 [[multica-ai]]의 `andrej-karpathy-skills` repo이고 이 위키가 [[multica-karpathy-skills-claude-md]]로 이미 갖고 있던 것이다.
+
+⚠️ **이 위키에 Karpathy 본인이 그 규칙을 썼거나 승인했다는 근거는 없다.** repo 이름과 영상의 표현 모두 *"Karpathy의 조언에서 온"* 정도이고, 두 소스 어디에도 본인의 직접 인용이나 endorsement가 없다. 이름이 **규칙 집합의 브랜드로 유통되고 있다**는 사실 자체는 기록해 둘 만하다.
+
+## References## References
 
 - [[karpathy-llm-wiki-gist]]
 - [[multica-karpathy-skills-claude-md]]

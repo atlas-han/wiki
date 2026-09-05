@@ -46,6 +46,24 @@ updated: 2026-09-02
 - **제품 개발 방식**: 불확실성이 커서 집중된 베팅이 아니라 **포트폴리오**를 빠르게 구축한다 — *"어쩌면 투자와 조금 더 비슷하다"*.
 - 관련 개념: [[token-roles]] · [[managed-agents]] · [[agent-distributed-systems]]
 
+## Claude Code 팀의 일하는 방식 (2026-09-05 ingest · [[tech-bridge-claude-code-team-workflow]])
+
+같은 회사의 다른 팀에 대한 1인칭 증언이 들어왔다. 위 [[tech-bridge-claude-platform-agent-era]]가 플랫폼 설계 관점이었다면 이쪽은 **자기 하네스를 직접 쓰는 사용자 관점**이다.
+
+- 업무의 **70~80%가 [[claude-tag|Claude Tag]]**(Slack 네이티브 에이전트)에서 일어난다. → [[goal-level-delegation]]
+- **하네스 기능을 지운다.** *"이러한 기능들을 하네스에 내장하는 것은 **현재 모델이 가지고 있는 오류 모드를 보완하기 위한 것**"* 이므로, 모델이 좋아지면 없앤다. todo 리스트와 AskUserQuestion이 사례다. → [[harness-pruning]]
+- 기반 기술이 **2개월마다** 근본적으로 바뀌고 *"시간이 흐를수록 그 변화가 압축"* 된다. 그래서 *"권한 시스템을 재작성하고 결과물을 만드는 작업을 **동시에 진행할 수 있는 소규모 팀**"* 을 둔다.
+- **workflows의 기원은 코드 리뷰**다 — fan-out으로 버그를 찾고, 각 버그를 **3관점 적대적 검토**로 거른 뒤 합친다. *"이것이 바로 우리가 **test-time compute**라고 부르는 것."* → [[dynamic-workflows]]
+- fan-out의 병목은 map이 아니라 **reduce**라고 짚는다 — *"**마치 map-reduce 문제와 같아요.** (…) 전체 출력값을 다 읽어버리면 미쳐버릴 것 같거든요."*
+- *"**Claude는 자기만의 하네스를 만드는 데 정말 능숙**하죠"* — 토폴로지와 배선을 스스로 정한다. → [[self-harness]]
+- 화자: [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] (⚠️ 발언별 화자 특정 불가)
+
+## AI-Native SDLC Playbook (2026-09-05 · 제3자 해설로만 유입)
+
+Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bridge-ai-native-sdlc]]의 **해설을 통해서만** 그 내용을 안다. 핵심은 [[intent-md|intent.md]] → `spec.md` → `plan.md`로 이어지는 **아티팩트 체인**과, 유지보수에서 Claude가 스스로 intent를 만들어 **루프를 닫는** 구조다. → [[ai-native-sdlc]]
+
+> ⚠️ **원문서(<https://claude.com/blog/the-ai-native-sdlc-playbook>)는 아직 직접 ingest하지 않았다.** 해설에 나온 *"우리는 두 배 더 빠릅니다"* 같은 수치는 근거가 확인되지 않았다.
+
 ## 미해결 사항 (위키가 채워갈 부분)
 
 - 창립·자금조달·인력 구조 등 회사 기본 프로필 (별도 소스 ingest 필요)
@@ -60,3 +78,5 @@ updated: 2026-09-02
 - [[anthropic-managed-agents]]
 - [[anthropic-dynamic-workflows]]
 - [[tech-bridge-claude-platform-agent-era]]
+- [[tech-bridge-claude-code-team-workflow]]
+- [[tech-bridge-ai-native-sdlc]]

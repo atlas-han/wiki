@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, orchestration, parallel-agents, claude-code, long-running]
 related: [agent-harness-design, generator-evaluator-pattern, managed-agents, ultracode, verifiable-goals, ralph-wiggum-method, context-resets-and-compaction]
 first-seen: anthropic-dynamic-workflows
-sources: [anthropic-dynamic-workflows]
+sources: [anthropic-dynamic-workflows, tech-bridge-claude-code-team-workflow]
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-09-05
 ---
 
 # Dynamic Workflows
@@ -76,6 +76,38 @@ updated: 2026-05-30
 - [[generator-evaluator-pattern]] — refute/converge가 evaluator 사상의 오케스트레이션판.
 - [[ralph-wiggum-method]] — 사람이 짠 고정 루프 vs. Claude가 *동적으로 작성*하는 워크플로의 대비.
 - [[verifiable-goals]] — build·test가 clean해질 때까지의 fix loop = 검증 가능한 goal로의 수렴.
+
+## 만든 팀의 증언 — 기원과 병목 (2026-09-05 · [[tech-bridge-claude-code-team-workflow]])
+
+[[anthropic|Anthropic]] Claude Code 팀이 workflows가 **어디서 나왔는지** 밝혔다. 기능 발표문에는 없던 계보다.
+
+> **코드 리뷰가 우리가 이렇게 큰 규모로 의견을 퍼뜨린 첫 번째 사례**였던 것 같아요. 우리는 *"어떻게 하면 모든 버그를 찾아낼 수 있을까?"* 라고 생각했죠. (…) 이렇게 **크게 펼쳐놓은 다음, 그것들을 하나로 합칩니다.** 이것이 바로 우리가 **test-time compute**라고 부르는 것이죠.
+
+구조가 3층이다 — fan-out으로 버그 후보 생성 → **각 버그를 3가지 다른 관점에서 보는 적대적 검토**(→ [[generator-evaluator-pattern]]) → 살아남은 것만 합침. 목적이 찾는 것이 아니라 **거르는 것**이라는 점이 중요하다.
+
+> 이 기능은 마치 **모든 버그를 걸러내고 사용자의 주의가 필요한 가장 중요한 버그만 남겨주는** 것과 같습니다.
+
+### 병목은 map이 아니라 reduce다
+
+이 페이지와 [[ultracode]]·[[managed-agents]]가 지금껏 다룬 것은 전부 **펼치는 쪽**이었다. 팀이 짚는 실제 어려움은 반대편이다.
+
+> 문제는 **정보가 부채처럼 퍼져나가면서, 그 방대한 정보를 다시 걸러내야 한다**는 점입니다. **마치 map-reduce 문제와 같아요.** 그래서 사람이 이해하기 쉽도록 필터링해야 합니다. 그렇지 않으면 **전체 출력값을 다 읽어버리면 미쳐버릴 것 같거든요.**
+
+그리고 신뢰의 출처를 명시한다 — *"**자신감을 키우는 방법은 바로 test-time compute를 문제에 투입하는 것**입니다."* 즉 fan-out은 속도가 아니라 **확신을 사는 수단**으로 쓰인다.
+
+### 에이전트가 토폴로지를 정한다
+
+> **Claude는 사실 자기만의 하네스를 만드는 데 정말 능숙하죠.** Claude가 이 **fan-out 구조가 어떤 모습이어야 하는지, 토폴로지가 어떻게 되어야 하는지, 한 에이전트의 출력을 다음 레벨로 어떻게 연결해야 하는지**를 파악하고 (…)
+
+→ [[self-harness]]
+
+여행 계획 예시로 3층이 그려진다 — 10개 검색 fan-out → 선별 에이전트 → **검증 에이전트** → 최종. 코드 리뷰 밖으로도 일반화된다(*"성능 버그"*, *"일반적인 심층 연구"*).
+
+### 신뢰의 근거가 뜻밖에 고전적이다
+
+> 이것은 **결정론적인 코드 정의 동작과 에이전트 방식의 LLM 동작이 멋지게 혼합**된 것입니다. (…) 이 항목들을 순회하는 **for 루프**를 작성할 때 (…) **'아, 맞다. for 루프는 항목 중 하나라도 건너뛰지 않겠구나'** 라고 생각했다. 저는 그게 제 **신뢰도를 정말 크게 높여준다**고 생각해요.
+
+에이전트가 오케스트레이션을 **코드로 물화**하는 순간 그 층에는 결정론적 보증이 생긴다. [[ai-native-sdlc]]가 lint를 *"예 또는 아니오, 이분법적"* 이라 부르며 결정론 층을 따로 세운 것과 같은 감각이다.
 
 ## References
 

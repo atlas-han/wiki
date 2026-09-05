@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills]
 created: 2026-08-31
-updated: 2026-09-02
+updated: 2026-09-05
 ---
 
 # Agent Skills
@@ -101,6 +101,34 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 리뷰 스킬의 남은 한계가 정확하다 — *"코드가 좋은지는 평가할 수 있지만 그 코드가 필요한지는 항상 판단할 수 없다."* [[signal-layer]]의 채점기 경계선이 코드 리뷰 안에도 있다.
 
 > ⚠️ 효과 진술은 모두 일화("1년 넘게 잘 됐다")이고 측정치가 없다.
+
+## 스킬이 담는 지식의 범위가 넓어진다 (2026-09-05 · [[tech-bridge-six-agent-skills]])
+
+지금까지 이 페이지의 소스들([[tech-bridge-ai-native-skills]]·[[tech-bridge-flutter-ai-workflow]])은 전부 **기술 지식**을 스킬에 담았다 — 프레임워크 사용법, 라이브러리 버전, 코딩 규약. [[ai-labs]]의 6종 카탈로그는 그 범위를 두 방향으로 넓힌다.
+
+### ① 스킬이 자기를 고친다
+
+`task-observer`는 작업 중 실패를 관찰해 스킬 개선안을 로그에 쌓되 **반영은 사람이 결정한다.** → [[skill-self-improvement]]
+
+> **가장 큰 문제는 스킬을 만드는 것 자체가 아닙니다. 최신 상태로 유지하는 것입니다.**
+
+### ② 제품·시장 지식이 스킬에 들어간다
+
+[[corey-haines]]의 마케팅 스킬 48종 중 **온보딩 · 페이월 · churn** 3종이 앱에 직접 박힌다. 왜 스킬이어야 하는지에 대한 논거가 명확하다.
+
+> 이런 패턴은 다른 앱에서도 많이 보셨을 겁니다. 하지만 **에이전트에게 페이월 추가를 요청하면, 일반적으로 이런 선택을 하지 않습니다. 그 원칙이 내재되어 있지 않기 때문입니다.**
+
+에이전트는 *동작하는* 페이월은 만들지만 *전환되는* 페이월은 만들지 않는다. 스킬이 메우는 것이 API 지식이 아니라 **도메인 판단**인 사례다.
+
+[[sahil-lavingia]]의 미니멀리스트 엔트러프러너 10종은 한 걸음 더 나가 **착수 자체를 막는다** — 코드를 쓰기 전에 *"이름을 밝힐 수 있는 실제 인물 10명"* 과 *"최소 3명의 유료 의사"* 를 요구한다.
+
+### 스킬 컬렉션이라는 유통 형태
+
+이 소스가 소개하는 6종 중 셋이 **모음집**이다(마케팅 48종 · 미니멀리스트 10종 · OpenCLI 스킬 세트). [[tech-bridge-ai-native-skills]]의 **registry** 논의가 조직 내부 배포였다면, 여기서는 **공개 GitHub repo가 사실상의 레지스트리** 역할을 한다. ⚠️ 그만큼 [[prompt-injection]]과 [[tech-bridge-flutter-ai-workflow]]가 경고한 *"MD 파일은 무해하지 않다"* 가 그대로 적용된다 — 소스는 이 위험을 다루지 않는다.
+
+### 설치 스코프
+
+`task-observer`는 **프로젝트별 설치를 권장**한다 — *"각 프로젝트의 교훈이 분리되어 관리하기가 더 쉬워집니다."* 반대로 [[llm-coding-guidelines|Karpathy 4원칙]]은 스킬로 설치하지 않고 **상위 폴더 `CLAUDE.md`** 로 상속시킨다. 같은 소스 안에서 **스킬로 둘 것과 규칙으로 둘 것이 갈린다**는 점이 실무적으로 유용하다 — 프로젝트마다 다른 것은 스킬, 전부에 걸리는 것은 계층적 `CLAUDE.md`.
 
 ## References
 

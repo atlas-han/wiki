@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc]
 created: 2026-05-25
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Generator–Evaluator Pattern
@@ -138,6 +138,30 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 > 이런 auto-rater를 개발하는 것은 거의 **진화하는 시스템과 같습니다.** 처음에는 **아주 간단하게 시작**하지만, 시스템이 발전함에 따라 **채점기도 시스템과 함께 점진적으로 성장**해야 합니다.
 
 > ⚠️ 12종의 rater 목록은 얻었지만 **구현·임계값·측정 결과는 소스에 없다.**
+
+## 두 가지 확장 (2026-09-05)
+
+### ① 3관점 적대적 검토 — 채점기를 복수로 ([[tech-bridge-claude-code-team-workflow]])
+
+[[anthropic|Anthropic]] Claude Code 팀의 코드 리뷰 workflow는 채점기를 **하나가 아니라 셋** 둔다.
+
+> 각 버그에 대해, **세 가지 다른 관점이나 시각에서 버그를 살펴보고 실제로 버그가 존재하는지 확인하는 적대적 검토(adversarial review)** 를 수행할 수 있습니다.
+
+목적이 생성이 아니라 **제거**라는 점이 위의 사례들과 다르다 — *"**모든 버그를 걸러내고 사용자의 주의가 필요한 가장 중요한 버그만 남겨주는** 것."* generator가 과잉 생성하고 evaluator가 대량 기각하는 비대칭 구성이다.
+
+그리고 채점의 경제학이 명시된다 — *"**자신감을 키우는 방법은 바로 test-time compute를 문제에 투입하는 것**입니다."* 채점기는 품질 장치이자 **확신을 사는 지출**이다.
+
+⚠️ 팀이 짚는 병목은 채점 자체가 아니라 **되접기**다 — *"마치 map-reduce 문제와 같아요. (…) 전체 출력값을 다 읽어버리면 미쳐버릴 것 같거든요."*
+
+### ② Continuous evals — 하네스 자체의 회귀 테스트 ([[tech-bridge-ai-native-sdlc]])
+
+위 "루프의 모든 단계를 채점하기"가 *산출물의 각 단계*에 채점기를 붙인 것이라면, [[ai-native-sdlc]]는 채점 대상을 **파이프라인 자신**으로 돌린다.
+
+> **모든 스킬 변경이나 모델 업그레이드에 평가를 적용** (…) **지속적 통합 과정에서 지속적인 평가.**
+
+형태가 소박하다 — 해결한 문제 **20개 정도**와 예상 결과 세트를 모아 두고, **새 모델·새 스킬·업무 방식의 근본적 변화**마다 돌려 **퇴보**를 확인한다.
+
+이는 [[harness-pruning]]과 짝을 이룬다. 하네스 기능을 지우려면 지워도 되는지 확인할 장치가 필요하고, continuous evals가 그 역할이다. ⚠️ 다만 두 소스는 서로를 언급하지 않는다 — 이 연결은 이 위키의 정리다.
 
 ## References
 

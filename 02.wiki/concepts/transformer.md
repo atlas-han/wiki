@@ -6,9 +6,9 @@ tags: [architecture, deep-learning, attention, gpu, scaling]
 aliases: [트랜스포머, Transformer 아키텍처]
 related: [attention-mechanism, in-context-learning, sutton-bitter-lesson, nanogpt, context-resets-and-compaction]
 first-seen: tech-bridge-karpathy-transformers-stanford
-sources: [tech-bridge-karpathy-transformers-stanford]
+sources: [tech-bridge-karpathy-transformers-stanford, tech-bridge-uncertainty-mathematics]
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-05
 ---
 
 # Transformer
@@ -117,6 +117,26 @@ Tesla 경험에서 나온 실무 관찰. ConvNet에 radar·지도·차종을 넣
 - **유한한 컨텍스트 길이** — block size를 넘으면 crop. 순진한 구현에서는 아키텍처가 아니라 학습 조건이 상한을 정한다. → [[context-resets-and-compaction]], scratch pad 논의
 - **autoregressive 커밋** — *"토큰을 샘플링하고 거기에 커밋해 버리는 게 이상하다"*. 발표자는 diffusion 하이브리드를 선호한다고 밝힌다
 - **full attention의 비효율** — 국소/전역 통신 레이어를 교대 배치하는 트릭들이 쓰인다
+
+## 앞선 층 — 1980년대 신경망 혁명 (2026-09-05 · [[tech-bridge-uncertainty-mathematics]])
+
+[[zoubin-ghahramani|Zoubin Ghahramani]]가 이 페이지의 계보에 **한 층 앞을** 붙인다. 그는 트랜스포머 혁명이라는 프레이밍 자체에 유보를 단다.
+
+> 우리는 **트랜스포머 혁명** 같은 이야기를 많이 하지만, 사실 **1980년대 중반에 일어난 일은 진정한 혁명**이었고, 인지과학·컴퓨터과학·심리학·신경과학·경제학 분야의 사람들을 끌어들였습니다.
+
+기준점은 **1986년**이다 — *Parallel Distributed Processing* 두 권과 역전파 논문이 같은 해에 나왔고, 당시 지배 패러다임이던 **전문가 시스템**의 규칙 기반 접근은 *"상당히 취약"* 했다. 신경망이 이긴 이유는 *"**데이터로부터 학습**"* 이었다.
+
+그의 1989년 학부 논문은 신경망 자연어 처리였다.
+
+> 만약 발표했더라면 **아주 초기의 언어 모델 논문**이 되었을 겁니다. 우리 모델이 아주 작으니까, **작은 언어 모델(small language model)** 이라고 부르자.
+
+하드웨어는 **Connection Machine**(65,000 프로세서)이었고, 훗날 *"제 주머니의 **픽셀 폰보다 실제로 느립니다**"* 라고 비교한다.
+
+### 현대 AI의 두 도구, 그리고 그 다음
+
+> 현대 인공지능의 두 가지 핵심 도구는 **트랜스포머 모델과 확산 모델**입니다. 그것들은 훌륭하지만, **매우 희소한(sparse) 신경망**을 포함하는 **새로운 하드웨어 아키텍처**와 같이 **소프트웨어와 하드웨어의 완전히 다른 공진화** 양상이 있을 수도 있습니다.
+
+위 "아키텍처의 내구성" 절이 트랜스포머가 오래 버틴 이유를 다뤘다면, 이 소스는 **무엇이 그것을 대체할 수 있는지**에 대한 후보를 제시한다. ⚠️ 방향 제시일 뿐 구체적 결과는 없다. → [[continual-learning]] · [[sutton-bitter-lesson]]
 
 ## References
 

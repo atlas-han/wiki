@@ -47,6 +47,23 @@ updated: 2026-07-21
 
 이런 사례들이 [[agentic-misbehavior]] 분류와 auto mode 설계 motivation의 근거.
 
+## 만드는 팀의 사용기 (2026-09-05 ingest · [[tech-bridge-claude-code-team-workflow]])
+
+Claude Code 팀 엔지니어 3인이 자기 도구를 어떻게 쓰는지 증언했다.
+
+- **[[claude-tag|Claude Tag]]** — Slack 네이티브 에이전트. 팀 업무의 **70~80%** 가 여기서 일어난다. Slack을 고른 이유는 UI가 아니라 **맥락**이다 — 팀이 제품에 대해 내린 *"모든 결정들"* 이 이미 거기 있다.
+- **routine** — 클라우드 컨테이너에서 도는 정기 작업. 예: *"매일 우리가 받는 **모든 피드백을 살펴보고 중요도에 따라 분류**한 다음, 실제로 해결할 가능성이 높은 문제부터 해결."*
+- **workflows** — 에이전트가 서브에이전트 오케스트레이션 코드를 직접 쓴다. 신뢰의 근거가 고전적이다 — *"이 항목들을 순회하는 **for 루프**를 작성할 때 (…) '아, 맞다. **for 루프는 항목 중 하나라도 건너뛰지 않겠구나**'."*
+- **기능은 지워진다** — todo 리스트는 Sonnet 3.5의 장기 시야 부족을 메우려 만들었고 1년 뒤 *"마치 사라진 것처럼"* 됐다. AskUserQuestion은 HTML 아티팩트에 밀렸다. → [[harness-pruning]]
+- 지난 1년의 추가분을 팀이 이렇게 요약한다 — *"Claude Code로 시작해서 **자동 모드, 메모리, workflow** 같은 기본적인 기능들을 추가해 나간 것."*
+- ⚠️ 자막에 미해소 토큰 **"2E"** 가 나온다(*"open up the 2E or the desktop app"*). Claude Tag 바깥의 직접 조작 표면을 가리키지만 확장형은 확정하지 않는다.
+
+## 계층적 CLAUDE.md 상속 (2026-09-05 · [[tech-bridge-six-agent-skills]])
+
+> Claude Code는 프로젝트 내의 `CLAUDE.md`와 **그 상위 폴더에 있는 모든 `CLAUDE.md`를 읽습니다.**
+
+[[ai-labs]]가 이 성질로 **중간 스코프**를 만든다 — 모든 프로젝트를 담는 "개발자 폴더" 하나에 `CLAUDE.md`를 두어 공통 규칙을 상속시키되, *"컴퓨터의 **다른 부분에서 실행되는 관련 없는 세션에는 적용되지 않도록**"* 한다. 전역(`~/.claude`)과 프로젝트별 사이의 빈자리를 디렉터리 계층으로 메운 것이다. → [[llm-coding-guidelines]]
+
 ## References
 
 - [[anthropic-claude-code-auto-mode]]
@@ -56,3 +73,6 @@ updated: 2026-07-21
 - [[multica-karpathy-skills-claude-md]]
 - [[lum1104-understand-anything]]
 - [[charlychoi-claude-code-best-practices]]
+- [[tech-bridge-claude-code-team-workflow]]
+- [[tech-bridge-six-agent-skills]]
+- [[tech-bridge-ai-native-sdlc]]

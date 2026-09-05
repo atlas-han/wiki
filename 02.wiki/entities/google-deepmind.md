@@ -5,9 +5,9 @@ category: org
 tags: [frontier-lab, google, commerce, multimodal, agent]
 links:
   - https://deepmind.google/
-sources: [tech-bridge-multimodal-commerce-agent]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics]
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Google DeepMind
@@ -31,9 +31,20 @@ Google의 AI 연구·제품 조직. 본 위키에 **Google 계열 조직 페이�
 - 에이전트↔에이전트 상거래는 **아직 도달하지 않았다**고 밝힌다. 인터페이스로는 [[model-context-protocol|MCP]]를 예상.
 - 사용자 연구에서 얻은 관찰: **upper funnel은 사용자가 직접, lower funnel은 에이전트**.
 
+## 연구 축 (2026-09-05 ingest · [[tech-bridge-uncertainty-mathematics]])
+
+커머스 에이전트에 이어 **연구 조직으로서의 면**이 처음 들어왔다. 출처는 **Google DeepMind 공식 팟캐스트**이고 화자는 [[zoubin-ghahramani|Zoubin Ghahramani]]다.
+
+- **자체 팟캐스트를 운영한다.** 진행자는 "Hannah"(⚠️ 성은 소스에 없다).
+- **GenCast** — 기상 예측 모델. **15일 이상** 예측을, *"거대한 슈퍼컴퓨터에서 몇 시간씩 걸리는 작업"* 을 **8분**에. 핵심 장치는 **diffusion model**로 만드는 **예측 앙상블**이고, 새 관측이 오면 앙상블을 갱신한다 — *"이것이 바로 **Bayesian update**의 기본 개념을 이러한 문제에 적용하는 것."* 허리케인 진로 예측이 사례로, *"도시를 대피시킬지, 긴급 구조대에 연락할지"* 가 걸린 결정이다. → [[bayesian-inference]]
+- **AlphaFold** — 예측한 단백질 접힘 구조를 **모델의 확신도에 따라 색으로** 칠하고, 분자 위치의 불확실성을 **구름(cloud)** 으로 표현한다.
+- **불확실성이 조직의 연구 축 중 하나다.** 두 제품 모두 불확실성을 산출물에 명시적으로 담고, Ghahramani는 이를 *"인공지능에 있어 매우 중요한 통찰"* 이라 부른다 — **불확실성을 넣으면 정확도가 올라간다.**
+- AGI 노선에 대해 **조직 내부에 이견이 있다는 것이 드러난다.** Ghahramani는 *"새로운 아키텍처가 필요하다"* 진영이고, *"그 분야에 종사하는 **많은 사람들**"* 이 스케일링만으로 충분하다고 본다고 말한다. → ⚠️ [[sutton-bitter-lesson]]
+
 > 규모·조직 구조·모델 라인업(Gemini 등)에 대한 정보는 이 위키에 **아직 없다.** 별도 소스 ingest 필요.
 
 ## References
 
 - [[tech-bridge-multimodal-commerce-agent]] — [[nidhi-kaushik-vyas]], 2026-09-03
+- [[tech-bridge-uncertainty-mathematics]] — [[zoubin-ghahramani]], 2026-09-03
 - <https://deepmind.google/>

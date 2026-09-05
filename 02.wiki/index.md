@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Index
@@ -43,6 +43,10 @@ updated: 2026-09-04
 - [[angela-jiang]] — [[anthropic|Anthropic]] Claude Platform 제품, [[token-roles]]·하네스 정의 ([[tech-bridge-claude-platform-agent-era]])
 - [[katelyn-lesse]] — [[anthropic|Anthropic]] Claude Platform, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]])
 - [[nidhi-kaushik-vyas]] — [[google-deepmind|Google DeepMind]] 제품, 멀티모달 협업 커머스 에이전트 3단계 루프·단계별 auto-rater ([[tech-bridge-multimodal-commerce-agent]])
+- [[zoubin-ghahramani]] — 케임브리지 교수 · [[google-deepmind|Google DeepMind]], 불확실성의 수학으로 본 지능. [[bayesian-inference]]·[[continual-learning]] ([[tech-bridge-uncertainty-mathematics]])
+- [[corey-haines]] — 마케팅 [[agent-skills|스킬]] 48종 저자, 온보딩·페이월·churn ([[tech-bridge-six-agent-skills]])
+- [[sahil-lavingia]] — Gumroad 창업, *The Minimalist Entrepreneur* 스킬 10종 · 실명 10명·유료 3명 검증 게이트 ([[tech-bridge-six-agent-skills]])
+- [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] — [[anthropic|Anthropic]] [[claude-code|Claude Code]] 팀 ([[tech-bridge-claude-code-team-workflow]], ⚠️ 발언별 화자 특정 불가)
 - [[richard-hamming]] — "중요한 문제" 연구. 공략 가능성이 문제를 중요하게 만든다 ([[signal-layer]]에서 재해석)
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
@@ -53,6 +57,8 @@ updated: 2026-09-04
 - [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
+- [[ai-labs]] — 에이전트 스킬·AI 코딩 워크플로 영상 제작 주체이자 소프트웨어 회사 ([[tech-bridge-six-agent-skills]] 원 제작자)
+- [[switch-dimension]] — AI SDLC 교육·콘텐츠 주체, 자체 discovery 스킬 운영 ([[tech-bridge-ai-native-sdlc]] 해설자)
 - [[coursera]] — 온라인 학습 플랫폼, [[andrew-ng]] 공동창업 · [[learnvector]] $100M 투자자
 - [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
 - [[amazon]] — 사내 코딩 에이전트 파일럿(Bedrock Mantle · Prime Video · Stores 50팀) 무대 ([[tech-bridge-frontier-engineering]])
@@ -82,6 +88,7 @@ updated: 2026-09-04
 - [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
 
 ### Products
+- [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]])
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
 - [[managed-agents]] — Claude Platform의 호스티드 meta-harness
 - [[project-glasswing]] — Anthropic ~50개 파트너 협업 사이버보안 이니셔티브
@@ -128,6 +135,9 @@ updated: 2026-09-04
 
 ### Theories
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
+- [[bayesian-inference]] — prior×likelihood→posterior의 재귀 갱신. 지각·학습·의사결정을 한 틀로. calibration·GenCast 앙상블 (⚠️ [[sutton-bitter-lesson]]과 대립, sources: 1)
+- [[aleatoric-epistemic-uncertainty]] — 세계의 무작위성 vs 겪어본 적 없음. 구분이 중요한 이유는 **행동이 갈리기 때문** (sources: 1)
+- [[continual-learning]] — 배포 이후에도 계속 갱신되는 학습. Bayesian update의 근사이자 catastrophic forgetting 문제 (sources: 1)
 - [[in-context-learning]] — 가중치를 안 바꾸고 activation 안에서 학습. outer loop(SGD) vs **inner loop**(시퀀스 읽기) (sources: 1)
 - [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. Ng는 AI 공포 마케팅을 이 프레임으로 읽음
 - [[memex]] — Vannevar Bush 1945년 비전, [[llm-wiki-pattern]]의 사상적 조상
@@ -165,6 +175,11 @@ updated: 2026-09-04
 - [[fuzzy-intent-discovery]] — 사용자는 키워드가 아니라 vibe를 갖고 온다. working state(hard/soft/confidence/real-time) + information gain으로 질문 하나 고르기 (Google DeepMind, sources: 1)
 - [[multimodal-elicitation]] — 텍스트로 묻지 말고 **보여주고 묻기**. 시각적 선호 보드 + hover·click micro signal로 신뢰도 갱신 (sources: 1)
 - [[adaptive-response-format]] — 응답 형식 선택 자체가 모델의 판단. 요약/비교표/무드보드 + user actionability 채점 (sources: 1)
+- [[harness-pruning]] — 모델이 좋아지면 하네스 기능을 **지운다**. todo 리스트·AskUserQuestion 사례 ([[self-harness]]와 반대 방향, sources: 1)
+- [[goal-level-delegation]] — 도구 호출·녹취록 감시 대신 목표를 통째로 위임. 감시를 없앤 자리를 산출물 검증이 메운다 (sources: 1)
+- [[skill-self-improvement]] — 실제 실패에서 스킬 개선안을 쌓되 **승격은 사람이**. 관찰은 자동, 반영은 수동 (sources: 1)
+- [[ai-native-sdlc]] — intent→spec→plan→test→deploy→maintain 아티팩트 체인. 유지보수가 intent를 만들어 루프를 닫는다 (sources: 1)
+- [[intent-md]] — 에이전트가 사람을 인터뷰해 만드는 요구사항 이전 아티팩트. 백로그·인계를 대체 (sources: 1)
 
 ---
 
@@ -272,13 +287,17 @@ updated: 2026-09-04
 - [[tech-bridge-flutter-ai-workflow]] — Flutter GDE Ivanna Kaceviča 인터뷰: 프롬프트→규칙→스킬, MD 파일은 무해하지 않다, 추천 스킬 5개, Claude·Codex·Antigravity 3대 병렬 ([[tech-bridge]], 2026-09-02)
 - [[tech-bridge-karpathy-transformers-stanford]] — Karpathy Stanford CS25 트랜스포머 강연: 두 번의 수렴, Bahdanau 이메일, 어텐션=그래프 메시지 전달, nanoGPT 300줄, 세 가지 이유, 범용 컴퓨터, scratch pad ([[tech-bridge]], 업로드 2026-09-02 / **강연 ~2023**)
 - [[tech-bridge-multimodal-commerce-agent]] — Google DeepMind Nidhi Kaushik Vyas: articulation gap, 탐색→조사→응답 3단계 루프, working state, information gain 질문 선택, 시각적 선호 보드·micro signal, 단계별 auto-rater 12종 ([[tech-bridge]], 2026-09-03)
+- [[tech-bridge-uncertainty-mathematics]] — Zoubin Ghahramani (Google DeepMind Podcast): 지능→의사결정→불확실성, 두 종류의 불확실성, 정확도≠확신도, 베이즈 규칙, semantic entropy의 한계, GenCast·AlphaFold, 스케일 vs 아키텍처, continual learning ([[tech-bridge]], 2026-09-03, **44:41**)
+- [[tech-bridge-claude-code-team-workflow]] — Anthropic Claude Code 팀 3인: Claude Tag 70~80%, 하네스 pruning, AskUserQuestion→아티팩트, routine, 코드 리뷰에서 태어난 workflows, fan-out의 reduce 병목 ([[tech-bridge]], 2026-09-03)
+- [[tech-bridge-six-agent-skills]] — AI Labs: task-observer 자기개선, Corey Haines 마케팅 3종(온보딩·페이월·churn), Karpathy 4원칙 상위폴더 CLAUDE.md 상속, OpenCLI, Variate, Sahil Lavingia 검증 게이트 ([[tech-bridge]], 2026-09-04)
+- [[tech-bridge-ai-native-sdlc]] — Switch Dimension 해설 / Anthropic 원문서: intent.md 아티팩트 체인, 거버넌스·버전, subagent·worktree, continuous evals, 비동기 PR 리뷰, 자율 유지보수 ([[tech-bridge]], 2026-09-04)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 246 (log 포함; + 2026-09-04 Tech Bridge 멀티모달 커머스 에이전트: source 1 + concept 3 + entity 2)
+- 총 페이지 수: 263 (log 포함; + 2026-09-05 Tech Bridge 4편 일괄: source 4 + concept 8 + entity 9)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-04 ([[tech-bridge-multimodal-commerce-agent]] — 위키 첫 **소비자 대면 에이전트** 소스이자 첫 [[google-deepmind|Google DeepMind]] 조직 페이지)
+- 마지막 ingest: 2026-09-05 (Tech Bridge **4편 일괄** — 하루 최다. [[tech-bridge-uncertainty-mathematics]]가 위키 첫 **이론·기초연구** 소스이자 [[sutton-bitter-lesson]]에 대한 첫 **정면 반대 입장**을 들여왔고, [[tech-bridge-claude-code-team-workflow]]가 [[harness-pruning]]으로 하네스 논의에 **시간 축**을 붙였다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-04
+- 마지막 갱신: 2026-09-05

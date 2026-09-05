@@ -582,3 +582,96 @@ updated: 2026-09-04
 - 페이지화하지 않음: UCP(약어 뜻 미확정, Q&A 1회), 거실 리모델링 예시(작동 예시), 사용자 시뮬레이터(기법으로 [[multimodal-elicitation]]·[[generator-evaluator-pattern]]에 기술), merchant/판매자(일반 개념).
 - raw: `01.raw/articles/2026-09-03_차세대 커머스를 위한 멀티모달 협업 에이전트 설계법.md`. 갱신: index(240→246), overview, log, [[tech-bridge]](sources 16→17, References에 누락돼 있던 flutter·karpathy 2건도 함께 backfill).
 - **핵심 합성**: 이 위키의 에이전트 논의가 지금까지 **한쪽 끝**만 보고 있었다는 것을 드러내는 소스다. [[verifiable-goals]]부터 [[trusted-throughput]]까지의 축은 전부 *"목표를 명확히 하고 verifier를 붙여라"* 였고, 그 전제는 **요구자가 명세를 쓸 수 있다**는 것이었다. 여기서는 요구자가 명세를 못 쓴다 — 그래서 에이전트의 첫 일이 실행이 아니라 **명세 공동 작성**이 되고, [[fuzzy-intent-discovery]]의 information gain 질문 선택이 그 공동 작성을 **최적화 문제로** 바꾼다. 그리고 이것이 [[signal-layer]]의 채점기 경계선을 한 칸 더 정확하게 만든다: 취향처럼 *주관적이지만 본인은 정답을 아는* 영역은 시뮬레이터로 채점 가능하고, 신뢰처럼 *정답을 아는 주체가 없는* 영역만 남는다. 부수적으로 플랫폼 전략도 읽힌다 — 판매자는 [[multimodal-elicitation]]의 **온톨로지를 제공**하지만 [[adaptive-response-format]]의 **형식 결정권은 갖지 못한다**(*"수평적 공통 층"*). 웹에서 판매자가 자기 페이지 레이아웃을 통제하던 것과의 단절이고, [[agentic-sites]]와는 재조립 주체가 정반대다.
+
+## [2026-09-05] ingest | Tech Bridge — 4편 일괄 (불확실성의 수학 · Claude Code 팀 · 스킬 6종 · AI-Native SDLC)
+
+- `--playlist-end 15`가 15편을 반환했고 전부 롱폼(최단 555초)이라 **Shorts 스킵 0건**. 그중 **신규 4편**, 나머지 11편은 이미 ingest돼 있었다. **하루 최다 ingest**(이전 최다는 2026-09-02의 4편이나 그날은 2회로 나뉘었다). 자막 **429 없음** — 4편 모두 ko·en-orig 확보.
+- 이 실행은 **launchd 09:10 KST 정시 발화분**이다. 부모 체인 `launchd → run-ingest.sh(pid 41739) → claude`로 확인했고 `runs=6`. 게이트 D(OAuth)·E(모델 쿼터) 모두 통과 — **정시 발화 종단 성공 2일 연속**이다.
+
+### 1. [[tech-bridge-uncertainty-mathematics]] — Zoubin Ghahramani, 44:41
+
+- https://www.youtube.com/watch?v=afgyS-bblpw ([[zoubin-ghahramani]] / Google DeepMind Podcast, 진행 "Hannah"). 채널 **두 번째 최장편**([[tech-bridge-karpathy-transformers-stanford]] 61:24 다음).
+- **위키 첫 이론·기초연구 소스.** 기존 [[tech-bridge]] 18편은 전부 에이전트 엔지니어링이었고, 유일한 예외인 Karpathy 강연도 *아키텍처가 어떻게 작동하는가*였다. 이 소스는 **"지능이 무엇을 갖춰야 하는가"** 를 묻고 답으로 확률론을 제시한다.
+- 신규 concept 3개:
+  - [[bayesian-inference]]: 논증이 인식론이 아니라 **의사결정**에서 출발한다 — *"의사 결정을 내리지 못하는 지능형 시스템은 존재할 수 없으니까요."* prior×likelihood→정규화→posterior가 **재귀**하고, 같은 틀이 지각·학습·의사결정을 덮는다. **calibration**이 좋은 확률의 기준이고(70%라 한 날의 70%에 비가 와야 한다), 반복 불가능한 사건에도 확률을 쓰는 것이 *"완벽하게 타당하고 실제로 옳은 방법"*. **핵심 구별** — LLM은 확률 모델이지만 *"베이즈 규칙을 계산하는 것이 아니"* 다. 토큰 분포의 확률과 명제에 대한 믿음의 확률은 다르고, 원인은 훈련 목표에 있다(*"데이터를 모델링하는 데 뛰어나도록"*). semantic entropy에 대해 **본인이 곧바로 반박하는** 대목이 백미다 — *"데이터에 의존하는 것이기 때문에 일종의 속임수 (…) **계산기를 속이고 싶지는 않겠죠.**"*
+  - [[aleatoric-epistemic-uncertainty]]: 구분이 중요한 이유가 **행동이 갈리기 때문**이다. 무작위성이면 *"예측을 포기하는 것이 나을 수도"*, 미경험이면 **정보를 모으거나 속도를 줄인다**. ⚠️ 소스는 라틴어 용어를 쓰지 않는다 — 페이지 제목의 괄호는 위키의 정리다.
+  - [[continual-learning]]: *"우리는 끊임없이 학습합니다"* vs *"몇 달 후에 또 다른 거대한 모델"*. 기술적 핵심은 **Bayesian update가 이론상 catastrophic forgetting을 겪지 않고, 대규모 신경망의 continual learning 기법들은 그 근사에 불과**하다는 진술이다.
+- 신규 entity 1개 — [[zoubin-ghahramani]]. 진행자 **Hannah는 성이 소스에 없어 페이지를 만들지 않았다.**
+- 기존 페이지 보강 3건:
+  - [[sutton-bitter-lesson]]: **위키 첫 정면 반대 입장.** Ghahramani가 넣자는 구조는 **명시적 확률 표현**이고, bitter lesson 관점에서 이는 전형적인 지식 주입이다. **해소하지 않았다** — 그가 대립을 인정하며 상대를 깎지 않기 때문이다(*"그들의 생각이 완전히 틀린 건 아니에요. 저도 완전히 맞는 건 아니고요"*). 대신 그가 긋는 선을 기록했다: **판돈에 따라 답이 갈린다**(챗봇은 괜찮고 자율주행·의료는 아니다). 이는 기존 "어느 스케일에 있느냐"(데이터 양) 단서와 **같은 형태의 조건부**(오류 비용)이고, 둘을 합치면 bitter lesson은 *데이터가 충분하고 실패 비용이 낮은 국면에서* 참으로 좁혀진다 — ⚠️ 이 합성은 위키의 정리이지 어느 소스의 주장도 아니다.
+  - [[google-deepmind]]: 커머스 에이전트뿐이던 페이지에 **연구 축**이 붙었다 — 자체 팟캐스트, **GenCast**(diffusion 앙상블, 15일+ 예보를 8분에, 새 관측으로 앙상블 갱신 = Bayesian update), **AlphaFold**(확신도 착색·위치를 구름으로). 그리고 **조직 내부에 AGI 노선 이견이 있다**는 것이 드러난다.
+  - [[transformer]]: 계보에 **앞선 층**이 붙었다 — *"트랜스포머 혁명 같은 이야기를 많이 하지만, **1980년대 중반에 일어난 일은 진정한 혁명**"*(1986년 PDP 두 권 + 역전파, 전문가 시스템의 취약성 대비). 1989년 학부 논문을 *"작은 언어 모델"* 이라 부르는 대목과, **트랜스포머·확산이 현대 AI의 두 도구**이며 다음은 *"매우 희소한 신경망 + 하드웨어 공진화"* 일 수 있다는 전망을 추가.
+- ASR·번역 보정: **"베이징 방식"/"베이징식 사고방식"/"비자이안식" → Bayesian**(도시가 아니다). **"기초 업데이트"/"유역 업데이트"/"기저 함수 업데이트" → Bayesian update**. "B 규칙"/"베이즈 룰(Baze Rule)" → Bayes' rule. **"MPMPlete 또는 MP 난이도" → NP-complete / NP-hard**(en-orig도 같은 오인식). **"순열에서 접힌 구조로" → sequence(서열)→fold**. "올리브 세계" → *"all the world"*. "연결 장치" → **Connection Machine**. "아빈 주시"/"Arvin Jooshi" → **Aravind Joshi**.
+- ⚠️ **ko 자막이 `[Music]` 태그를 본문에 녹여 유령 단어를 만든다.** 이 소스 최대 결함이다 — *"인간의 근본적인 **음악적** 특성"*, *"한 **음악** 연구자"*, *"**음악 활동**을 바쳐왔습니다"*. 결론부 *"이는 **음악을** 현실에 기반을 두게 하여"* 는 en-orig *"**It** grounds **it** in reality"* 로 바로잡았다 — **기반을 얻는 것은 AI다.** ko에 "음악"이 나오는 자리는 전부 이 오염을 의심할 것.
+- ⚠️ **ko 자막에 힌디어(데바나가리)가 섞인다** — *"네, बिल्कुल 그렇습니다"* 가 4회 이상. en-orig의 *"absolutely"* 자리다. 자막 파이프라인의 언어 혼입.
+- ⚠️ 확정하지 않은 것 4건: ① **화자 직함이 소스 안에서 불일치** — 내레이션 *"co-lead of frontier AI"* vs 설명란 *"Research VP"*. 케임브리지 교수만 일치한다. ② **진행자 성이 없다**(43:57 *"Thank you, Hannah"* 가 유일). ③ **"David Spiegel"(34:08) 성이 잘렸다** — 서술은 케임브리지의 위험 소통 연구자와 일치하나 소스가 성을 온전히 말하지 않아 확정하지 않았다. ④ **촬영 시점** — 앵커는 2015년 논문을 *"10년 전"* 이라 부른 것과 허리케인 Melissa·GenCast 언급뿐.
+- 페이지화하지 않음: Geoff Hinton·Aravind Joshi·David Spiegel(전기적 언급), Connection Machine·PDP·GenCast·AlphaFold(각각 [[zoubin-ghahramani]]·[[google-deepmind]]에 기술), semantic entropy(기법으로 [[bayesian-inference]]에 기술), 스타트렉 데이터·재규어·추리소설(설명 비유).
+
+### 2. [[tech-bridge-claude-code-team-workflow]] — Anthropic Claude Code 팀, 22:23
+
+- https://www.youtube.com/watch?v=Bo2ImHzgOwc ([[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] / [[anthropic]]).
+- [[tech-bridge-claude-platform-agent-era]]와 짝이지만 한 층 다르다 — 그쪽이 *"하네스는 while 루프"* 라는 설계 관점이라면 여기는 **그 하네스를 만드는 사람들의 1인칭 사용기**다.
+- 신규 concept 2개:
+  - [[harness-pruning]]: **이 소스 최대 기여.** 전제가 되는 하네스관이 명시적이다 — *"이러한 기능들을 하네스에 내장하는 것은 **현재 모델이 가지고 있는 오류 모드를 보완하기 위한 것**"*. 그러면 결함이 사라질 때 보완물도 사라져야 한다. 사례 둘: **todo 리스트**(Sonnet 3.5는 *"다섯 가지 일을 시키면 세 가지만 하고는 그냥 포기"* → 1년 뒤 *"마치 사라진 것처럼"*), **AskUserQuestion**(설계에 *"정말 오랜 시간이 걸렸"* 는데 HTML 아티팩트가 스스로 질문하기 시작하며 밀림 — [[adaptive-response-format]]이 예측한 방향의 실측). 그리고 **pruning은 축소가 아니라 재배치**다 — *"작업 범위가 바뀌면서 필요한 도구들이 다르게 보이기 시작"*.
+  - [[goal-level-delegation]]: 도구 호출·녹취록 감시에서 목표 위임으로. **70~80%** 라는 수치가 붙고, 포기하는 것(*"내면의 독백은 Slack에서 보이지 않습니다"*)과 얻는 것(*"Claude가 언제, 무슨 말을 할지 스스로 선택한다는 점에서 정말 자유로워진"*)이 함께 기록된다. **감시를 없앤 자리를 산출물 검증이 메운다**는 것이 실제 구조다 — 스크린샷·for 루프의 결정론·test-time compute·Slack의 맥락 근접성.
+- 신규 entity 4개 — [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] · [[claude-tag]].
+- 기존 페이지 보강 5건:
+  - [[dynamic-workflows]]: **기원이 밝혀졌다** — *"코드 리뷰가 우리가 이렇게 큰 규모로 의견을 퍼뜨린 첫 번째 사례"*. 3층 구조(fan-out → **3관점 적대적 검토** → 병합)이고 목적은 찾기가 아니라 **거르기**다. 그리고 **병목이 map이 아니라 reduce**라는 지적이 새롭다 — *"마치 map-reduce 문제와 같아요. (…) 전체 출력값을 다 읽어버리면 미쳐버릴 것 같거든요."* 이 위키의 [[ultracode]]·[[managed-agents]]가 전부 펼치는 쪽만 다뤘다.
+  - [[agent-harness-design]]: **시간 축**이 처음 붙었다(위 [[harness-pruning]]). ⚠️ 언제 지워도 되는지의 기준·절차는 소스에 없고 전부 사후 회고다.
+  - [[self-harness]]: *"Claude는 자기만의 하네스를 만드는 데 정말 능숙하죠"* 로 전제가 실무 확인됐다. ⚠️ 동시에 **정확히 반대 방향의 압력**([[harness-pruning]])이 같은 소스에 있다 — 자기개선은 하네스를 키우고 모델 향상은 줄인다. 어느 쪽이 우세한지 판정할 근거는 아직 없다.
+  - [[generator-evaluator-pattern]]: **채점기를 셋 두는** 적대적 검토, 그리고 채점의 경제학(*"자신감을 키우는 방법은 test-time compute를 문제에 투입하는 것"*).
+  - [[claude-code]] / [[anthropic]]: Claude Tag·routine·workflows·auto mode의 사용기, 2개월 주기와 그에 따른 소규모 팀 구조.
+- ASR·번역 보정: **"벌레" → bug**, **"선풍기를 틀어주는 것" → fan-out**(ko가 *fan*을 선풍기로), "시험용 컴퓨터"/"테스트 타임 컴퓨팅" → **test-time compute**, "맵리듀스" → map-reduce, "맥 OS 10.4 아쿠아" → Mac OS X 10.4 Aqua. *"클로드에게 요리하게 해 줄래요"* 는 오역이 아니다(en-orig *"let Claude cook"*).
+- ⚠️ **en-orig 오인식을 ko가 그대로 직역한 연쇄 오류 1건**: *"it's like an HTML and has **tie grams** and mock-ups"* → ko *"HTML처럼 생겼고, **넥타이 이미지**나 목업"*. 문맥상 **diagrams**다. 한쪽만 봐서는 잡히지 않는다 — 09-04에 이어 두 번째 사례다.
+- ⚠️ 확정하지 않은 것 4건: ① **발언별 화자 특정 불가** — 이름은 전부 설명란에서 왔고 자막에는 14:06의 *"로버트"* 외에 없다. ② **"2E"** — en-orig·ko 양쪽의 미해소 ASR 토큰. 01:28에서는 Claude Tag 밖의 직접 조작 표면, 18:15~20에서는 UI 녹화 수단을 가리키는데 **두 자리의 지시 대상이 같은지도 불분명**하다. 확장형을 추정해 적지 않았다. ③ **"data stack"(12:30)** — 11:06에서 *"this led to **workflows**"* 라 명시했으므로 문맥상 가리키는 것은 workflows지만, 그 자리의 단어 자체는 원 발화를 확정할 수 없다. ④ **촬영 시점** — *"합류한 지 거의 1년"* 과 Sonnet 3.5 회고가 앵커의 전부.
+- ⚠️ 근거 없는 수치 2건: *"생산성이 10배는 늘어난 것 같아요"*(개인 체감), *"2개월마다 근본적으로 바뀌는"*(측정 없음).
+- 페이지화하지 않음: routine·loops(제품 기능으로 [[claude-code]]에 기술), Boris(1회 언급, 이름만), map-reduce·test-time compute(기존 개념), Mac OS X Aqua·파워포인트 일화(회고 예시).
+
+### 3. [[tech-bridge-six-agent-skills]] — AI Labs, 13:08
+
+- https://www.youtube.com/watch?v=ss4lbO8M8wk ([[ai-labs]] 원 제작). **채널 첫 스킬 카탈로그형 영상.**
+- 신규 concept 1개 — [[skill-self-improvement]]: 진단이 이식성 높다(*"가장 큰 문제는 스킬을 만드는 것이 아니라 **최신 상태로 유지하는 것**"*, *"한 번 앉아서 에이전트가 저지를 모든 실수를 예측할 수는 없습니다"*). **핵심은 자동화가 아니라 자동화를 멈춘 지점**이다 — 관찰은 자동이되 **승격은 사람**이 한다. *"하나의 잘못된 결과가 에이전트가 영원히 따르는 규칙으로 자동 설정되는 것을 방지."* 교훈이 **금지**와 **대체** 두 종류로 나오는 것도 기록했다(금지만 쌓이면 스킬이 방어적이 된다).
+- 신규 entity 3개 — [[ai-labs]], [[corey-haines]], [[sahil-lavingia]].
+- 기존 페이지 보강 4건:
+  - [[agent-skills]]: **스킬이 담는 지식의 범위가 기술→제품·시장으로 넓어진다.** 논거가 명확하다 — *"에이전트에게 페이월 추가를 요청하면, 일반적으로 이런 선택을 하지 않습니다. **그 원칙이 내재되어 있지 않기 때문**입니다."* 즉 에이전트는 *동작하는* 페이월은 만들어도 *전환되는* 페이월은 못 만든다. 그리고 **스킬로 둘 것과 규칙으로 둘 것이 같은 소스 안에서 갈린다** — 프로젝트마다 다른 것은 스킬(프로젝트별 설치 권장), 전부에 걸리는 것은 계층적 `CLAUDE.md`. ⚠️ 공개 repo가 사실상 레지스트리가 되면서 [[prompt-injection]]과 *"MD 파일은 무해하지 않다"* 가 그대로 적용되는데 소스는 이를 다루지 않는다.
+  - [[llm-coding-guidelines]] / [[multica-ai]] / [[andrej-karpathy]]: **위키에서 서로 다른 소스 두 개가 같은 아티팩트에 도달한 첫 사례.** 같은 repo(`multica-ai/andrej-karpathy-skills`)를 4개월 만에 재발견했고 4원칙이 그대로 일치한다. **새로운 것은 배포 방법** — 스킬로 설치하지 않고 **개발자 폴더의 `CLAUDE.md`** 에 넣어 그 아래 전 프로젝트에 상속시킨다. 요점은 범위다(전역은 무관한 세션을 오염시키고 프로젝트별은 갱신이 흩어진다). ⚠️ Karpathy 본인의 endorsement 근거는 두 소스 어디에도 없다 — **이름이 규칙 집합의 브랜드로 유통되고 있다.**
+  - [[claude-code]]: 계층적 `CLAUDE.md` 상속 절 추가.
+- **[[sahil-lavingia]]의 검증 게이트가 위키 첫 "만들기 전 게이트"다.** 기존 게이트([[verifiable-goals]]·[[generator-evaluator-pattern]]·[[trusted-throughput]])는 전부 *만든 것*을 검증했다. 여기서는 코드를 쓰기 전에 **이름을 밝힐 수 있는 실제 인물 10명 + 최소 3명의 유료 의사**를 요구한다.
+- ASR·번역 보정: ko가 skill을 일관되게 **"기술"** 로 옮겨 문맥이 흐려진다. "상담원"/"담당자" → agent. "claw.md"/"claud" → **CLAUDE.md**(en-orig도 02:04에서만 맞다). "Superbase" → **Supabase**(설명란 확정). "주인공 섹션" → **hero section**. "앙드레 카르파티" → Andrej Karpathy. "검로드" → Gumroad.
+- ⚠️ 확정하지 않은 것 3건: ① **발표자 개인 이름이 없다** — 영상 내내 1인칭 복수("we")로만 말하고 *"this is AI labs"* 가 유일한 자기 식별이다. ② **"Hallmark 디자인 스킬"의 정식 표기**(en-orig 10:28의 언급뿐). ③ **온보딩·페이월 결정의 근거 데이터** — *"수년간의 테스트"* 라고만 한다.
+- ⚠️ 소스가 다루지 않은 논점 1건: OpenCLI의 **로그인 세션 재사용**은 서비스 약관·계정 보안 판단이 필요한 영역인데 영상은 이를 언급하지 않는다. 발표자 본인의 경계는 *"판매하는 앱의 공식 도구를 대체하려는 것이 아니다"* 까지다.
+- 페이지화하지 않음: task-observer·OpenCLI·Variate·Logo Hub(도구 — [[skill-self-improvement]]·[[tech-bridge-six-agent-skills]]에 기술), Gumroad(1회, [[sahil-lavingia]]에 기술), Supabase·Next.js(데모 스택), Nutlope(repo 소유자로만 언급).
+
+### 4. [[tech-bridge-ai-native-sdlc]] — Switch Dimension 해설 / Anthropic 원문서, 15:11
+
+- https://www.youtube.com/watch?v=rGaSkBWjoHA. **채널 첫 "문서 해설" 형식** — 강연·인터뷰·팟캐스트에 이은 네 번째 포맷이다.
+- 신규 concept 2개:
+  - [[ai-native-sdlc]]: 전제가 *"**코드가 더 이상 병목이 아닙니다. 당신의 프로세스가 병목입니다.**"* 아티팩트 체인 6단계이고 **6단계의 출력이 1단계의 입력**이 되어 닫힌다. **거버넌스**(아티팩트마다 버전·수정자, 목적은 DORA 지표 검증)와 **continuous evals**(문제 20개 + 예상 결과를 새 모델·새 스킬마다 회귀 테스트)가 이 위키에 새로 들어오는 축이다. **결정론 층과 에이전트 층을 계속 구분해 쓰는 것**도 특징이다 — lint는 *"예 또는 아니오, 이분법적인 답변"* 이고 hook이 경계를 강제한다.
+  - [[intent-md]]: *"**사람이 읽을 수 있고 기계가 처리할 수 있는**"* 파일. 백로그와 **인계(handoff)** 를 대체하고, **creator는 전문가가 아니어도 된다**(버그 제보 고객·PM·개발자). 대신 사람이 되읽는 절차가 붙는다.
+- 신규 entity 1개 — [[switch-dimension]].
+- 기존 페이지 보강 4건:
+  - [[spec-driven-development]]: 체인이 **앞뒤로 늘어난다.** spec은 이제 사람이 쓰는 첫 문서가 아니라 intent에서 **hook으로 자동 생성되는 파생물**이다. **문서가 필요한 이유에 대한 새 논거가 특히 강하다** — 품질이 아니라 **컨텍스트 윈도**다: *"모든 단계를 한 에이전트가 수행할 수는 없습니다. **컨텍스트 창이 나타날 것**입니다."* 그래서 `plan.md`의 합격 기준이 *"의도·사양을 참조하지 않고도 구현 가능한가"* 가 된다. 아티팩트는 품질 장치이자 **에이전트 간 인계 프로토콜**이다.
+  - [[generator-evaluator-pattern]]: continuous evals = **하네스 자체의 회귀 테스트**. [[harness-pruning]]과 짝을 이룬다(지우려면 지워도 되는지 확인할 장치가 필요하다). ⚠️ 두 소스는 서로를 언급하지 않는다 — 이 연결은 위키의 정리다.
+  - [[anthropic]] / [[claude-code]]: 플레이북 요약과 미ingest 표시.
+- ASR·번역 보정: "엔트로픽"/"앤트로픽"/"트로픽" → **Anthropic**. 10:11의 **"인류학적 모델"** 은 *anthropic* 을 "인류학적"으로 직역한 오류. "Claw Code" → Claude Code. "intent.mmd"/"skills.mmd" → **intent.md / skills.md**. **"선형 알고리즘"(04:20) → Linear**(이슈 트래커 — en-orig *"captured in notion or linear"*). "Workree" → git worktree. "Playright" → Playwright. "MPM 패키지" → npm. **"문명 공학"은 오역이 아니다**(en-orig *"civilization engineering"*).
+- ⚠️ 확정하지 않은 것 4건: ① **해설자 본인의 이름이 없다**(설명란에도 없다). ② **언급된 Claude Code 창시자 이름이 소스 안에서 두 갈래로 갈린다** — 00:00 *"Vis journey"*, 00:30 *"Baris"*. 둘 다 ASR 오류이고 설명란에도 없어 확정하지 않았다. 확실한 것은 *"Claude Code를 만든 사람이며 이 플레이북을 낸 팀에 속한다"* 는 서술뿐. ③ **"Matt PCO"** 의 정체(en-orig·ko 동일 형태). ④ **촬영 시점**.
+- ⚠️ 근거 없는 수치 1건: *"우리는 **두 배 더 빠릅니다**"* — 빌드 단계 단축 주장의 출처·측정 방법이 영상에 없다. **원문서를 직접 ingest하기 전에는 위키에서 근거로 쓰지 않는다.**
+- ⚠️ **원문서 미ingest**: <https://claude.com/blog/the-ai-native-sdlc-playbook> 를 이 위키는 직접 읽지 않았다. [[ai-native-sdlc]]·[[intent-md]]의 내용은 전부 제3자 해설을 통한 것이다.
+- 페이지화하지 않음: spec.md·plan.md(체인 요소로 [[ai-native-sdlc]]에 기술), Linear·Notion·TestSprite·BMAD·SuperPowers(도구 나열), DORA 지표(외부 표준, 1회 언급), molten-os-core(링크만).
+
+### 갱신
+
+- raw 4건: `01.raw/articles/2026-09-04_바이브 코딩 생산성을 10배 끌어올리는 역대급 Claude 스킬 6가지입니다.md` · `2026-09-04_Claude Code 팀이 새로 공개한 INTENT.MD의 정체와 AI-Native 개발 방식.md` · `2026-09-03_AI는 왜 틀릴 때도 당당할까요 불확실성의 수학.md` · `2026-09-03_Claude Code 개발팀이 Claude Code를 쓰는 방법.md`
+- index(246→263), overview, log, [[tech-bridge]](sources 17→21).
+
+### 핵심 합성
+
+이 위키가 지금까지 **한 층에서만** 자라고 있었다는 것이 오늘 드러난다. 18편의 [[tech-bridge]] 소스는 전부 *에이전트를 어떻게 부릴 것인가*였다. 오늘 들어온 네 편이 그 위아래를 동시에 친다.
+
+**아래로** — [[tech-bridge-uncertainty-mathematics]]가 *"그 에이전트가 애초에 무엇을 갖춰야 하는가"* 를 묻는다. 그리고 답이 이 위키의 실무 어휘와 정확히 맞물린다: [[fuzzy-intent-discovery]]의 **information gain 질문 선택**은 [[bayesian-inference]]의 비트 정의 위에 서 있었고, [[generator-evaluator-pattern]]이 채점하는 **confidence calibration**은 여기서 *"70%라 한 날의 70%에 비가 와야 한다"* 는 정식 정의를 얻는다. 어제까지 기법이던 것들이 오늘 이론적 자리를 찾았다.
+
+**위로** — [[tech-bridge-ai-native-sdlc]]가 에이전트를 **조직 프로세스 전체**에 배치하고, [[tech-bridge-claude-code-team-workflow]]가 그렇게 사는 팀의 실제 하루를 보여준다.
+
+그리고 **두 소스가 같은 문제의 반대 해법을 제시한다는 점이 오늘 가장 값진 관찰이다.** 컨텍스트가 한 에이전트에 담기지 않는다는 문제에 대해, [[ai-native-sdlc]]는 *"맥락을 파일로 새로 만들어 넘긴다"*([[intent-md]])고 답하고, [[claude-tag]]는 *"맥락이 이미 쌓인 곳(Slack)으로 에이전트를 옮긴다"* 고 답한다. 전자는 **인계 프로토콜**을, 후자는 **인계 자체의 제거**를 택한다. 둘 다 [[context-resets-and-compaction]]이 압축으로 풀던 문제를 압축 없이 푸는 방법이고, 어느 쪽이 나은지는 조직에 맥락이 이미 어디에 쌓여 있느냐에 달렸다.
+
+마지막으로 [[harness-pruning]]이 이 위키의 하네스 축 전체를 다시 읽게 만든다. [[harness-engineering]]의 *"every mistake becomes a rule"* 과 [[self-harness]]의 자동 진화는 둘 다 **하네스가 자란다**고 전제했다. 오늘 그 반대 힘이 처음 기록됐다 — *"이 모든 기능들은 더 이상 필요하지 않네요. **없애버릴 수 있겠어요.**"* 두 힘이 동시에 작용한다면 하네스의 정상 상태는 성장도 축소도 아니라 **모델 능력선을 따라 위로 이동하는 것**이고, 오늘의 [[goal-level-delegation]](70~80%)이 그 이동의 현재 위치를 알려주는 눈금이다.

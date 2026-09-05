@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, self-improvement, harness-engineering, terminal-bench, llm-engineering]
 related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills]
 first-seen: self-harness-paper
-sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era]
+sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow]
 created: 2026-06-14
-updated: 2026-09-02
+updated: 2026-09-05
 ---
 
 # Self-Harness
@@ -119,6 +119,16 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 같은 대담에 수동 버전도 나온다 — 결과가 틀리면 *"그것이 잘못된 일이었다는 것을 기억하세요. **메모리에 저장해 둬**"*라고 지시하고 저장된 내용을 확인하는 식. 자동화 이전 단계의 같은 루프다.
 
 [[token-roles]]에서 이것은 advising·grading과 나란히 **토큰에 부여하는 세 번째 역할**로 분류된다.
+
+## 실무 확인과 반대 방향의 압력 (2026-09-05 · [[tech-bridge-claude-code-team-workflow]])
+
+[[anthropic|Anthropic]] Claude Code 팀이 이 논문의 전제를 실무 관찰로 확인한다.
+
+> **Claude는 사실 자기만의 하네스를 만드는 데 정말 능숙하죠.** Claude가 이 **fan-out 구조가 어떤 모습이어야 하는지, 토폴로지가 어떻게 되어야 하는지, 한 에이전트의 출력을 다음 레벨로 어떻게 연결해야 하는지**를 파악하고 (…)
+
+논문의 Algorithm 1이 벤치마크 점수를 목표로 하네스를 진화시켰다면, 여기서는 **사용자 요청마다 즉석에서** 하네스를 짠다 → [[dynamic-workflows]]. 그리고 사람이 그것을 신뢰하는 근거가 **결정론적 코드**라는 점이 흥미롭다 — 에이전트가 짠 for 루프는 *"항목 중 하나라도 건너뛰지 않"* 는다.
+
+> ⚠️ **같은 소스가 반대 방향의 압력도 보여준다.** [[harness-pruning]] — 모델이 좋아지면 하네스 기능이 **지워진다**. 자기-개선이 하네스를 키우는 힘이라면 모델 향상은 줄이는 힘이고, 둘은 동시에 작용한다. 이 위키는 어느 쪽이 우세한지 판정할 근거를 아직 갖고 있지 않다.
 
 ## References
 

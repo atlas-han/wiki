@@ -5,9 +5,9 @@ category: pattern
 tags: [spec, planning, agent, github, workflow]
 related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc]
 created: 2026-08-29
-updated: 2026-08-31
+updated: 2026-09-05
 ---
 
 # Spec-Driven Development
@@ -49,6 +49,32 @@ Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven
 - [[outcome-engineering]] — how 프롬프팅 → 결과 정의. spec-driven은 그 결과를 마크다운 파이프라인으로 형식화.
 - [[harness-engineering]] — Global Rules + Context Docs가 constitution/spec의 자리. Spec Kit는 그 층을 CLI·슬래시 커맨드로 제품화한 하니스.
 - [[agent-org-adoption]] — Figma 쪽은 같은 원리를 *조직*에서 "프롬프팅 대신 기획"으로 서술.
+
+## 체인이 앞뒤로 늘어난다 — AI-Native SDLC (2026-09-05 · [[tech-bridge-ai-native-sdlc]])
+
+[[anthropic|Anthropic]]의 *AI-Native SDLC Playbook*은 spec을 **체인의 한 고리**로 재배치한다.
+
+**앞** — spec 이전에 [[intent-md|`intent.md`]]가 붙는다. 에이전트가 사람을 **인터뷰**해서 만들고, 승인되면 **hook으로 `spec.md`가 자동 생성**된다. spec은 이제 사람이 쓰는 첫 문서가 아니라 **파생물**이다.
+
+**뒤** — `spec.md` → `plan.md` → 빌드 → 테스트 → 배포 → 유지보수로 이어지고, 유지보수에서 Claude가 로그·티켓을 근거로 **스스로 intent를 만들어 1단계로 되돌린다.** 체인이 닫힌 고리가 된다.
+
+### 왜 문서가 필요한가에 대한 새 근거
+
+이 페이지의 기존 논거는 "명세가 있으면 산출물이 정확해진다"였다. 여기서는 다른 이유가 나오고, 더 강하다.
+
+> **소프트웨어 개발 수명주기의 모든 단계를 한 에이전트가 모두 수행할 수는 없습니다. 컨텍스트 창이 나타날 것입니다.** (…) 담당자는 **이전 대화 내용을 이해하지 못한 채 처음부터 다시 시작**할 수 있습니다.
+
+즉 아티팩트는 품질 장치이자 **에이전트 간 인계 프로토콜**이다. `plan.md`의 합격 기준도 여기서 나온다 — 받은 사람이 *"설계 의도나 사양 문서를 참조하지 않고도"* 구현할 수 있어야 한다.
+
+### 추가되는 것
+
+- **거버넌스** — 아티팩트마다 **버전과 수정자**를 남긴다. 목적은 DORA 지표 검증. ⚠️ *"제가 함께 일해 본 회사들은 **이 부분을 특히 어려워**합니다."*
+- **Continuous evals** — 해결한 문제 20개와 예상 결과를 모아 두고 **새 모델·새 스킬마다** 돌려 퇴보를 본다.
+- **결정론 층의 분리** — lint는 *"예 또는 아니오, 이분법적인 답변"* 이고, hook이 그 경계를 강제한다.
+
+→ [[ai-native-sdlc]]
+
+⚠️ 이 위키는 **원문서를 직접 ingest하지 않았다.** 위 내용은 [[switch-dimension]] 해설을 통한 것이고, 해설에 나온 *"두 배 더 빠릅니다"* 는 근거가 확인되지 않았다.
 
 ## References
 

@@ -104,9 +104,34 @@ Rich Sutton의 2019년 3월 13일 에세이. 70년 AI 연구사의 **메타 패�
 
 실무적으로 더 쓸모 있는 부분은 **어디에 넣느냐**다. [[transformer]]에서 inductive bias는 코어에 박히지 않고 두 군데로 factor out되어 있다 — **노드의 연결성**(어텐션 마스크)과 **positional encoding**. 즉 아키텍처가 "지식 주입을 나중에 뺄 수 있는 자리"를 따로 마련해 둔 셈이고, 이는 Bitter Lesson을 아는 설계자가 취할 만한 형태다.
 
+## ⚠️ 정면 반대 입장 — Ghahramani (2026-09-05 ingest)
+
+[[tech-bridge-uncertainty-mathematics]]에서 [[zoubin-ghahramani|Zoubin Ghahramani]]([[google-deepmind]])가 **이 에세이와 정면으로 갈리는 입장**을 편다. 대립 구도를 그가 직접 명시한다.
+
+> AGI 구축에 관해서는 크게 두 가지 입장이 있는데, 하나는 **규모만 키우면 된다**는 것 (…) 다른 하나는 **현재 우리가 할 수 없는 일들을 더 잘 수행할 수 있는 새로운 아키텍처가 필요**하다는 것입니다.
+
+그가 넣자고 하는 구조는 **명시적 확률 표현**이다 → [[bayesian-inference]]. Bitter Lesson의 관점에서 이것은 전형적인 "인간의 구조적 통찰 주입"이고, 따라서 계산량 증가에 밀릴 후보다.
+
+**해소하지 않는다.** 둘 다 소스가 있고, Ghahramani 본인이 대립을 인정하면서 상대를 깎지 않는다.
+
+> 첫 번째 캠프에서는 **많은 진전을 이뤘다**고 생각합니다. (…) 그들의 생각이 **완전히 틀린 건 아니에요. 저도 완전히 맞는 건 아니고요.**
+
+**다만 그가 긋는 선이 이 위키에 유용하다 — 판돈에 따라 답이 갈린다는 것이다.**
+
+> 문제는 **특이한 사례들을 길게 늘어뜨리다 보면(long tail) 몇 가지 허점이 드러날 수 있다**는 점입니다. (…) **챗봇**과 상호작용하는 경우라면, 그 결정들이 그렇게 중대한 결과를 가져오지는 않을 겁니다. 하지만 **신뢰할 수 있는 자율주행 자동차나 진단 결정을 돕는 의료 AI**를 만들려고 한다면, **확률을 정확하게 계산하는 것이 매우 중요**합니다.
+
+이는 위의 "어느 스케일에 있느냐" 단서와 **같은 형태의 조건부**다. 그쪽이 *데이터 양*으로 조건을 걸었다면, 이쪽은 *오류의 비용*으로 건다. 두 조건부를 합치면 Bitter Lesson은 "언제나 참"이 아니라 **데이터가 충분하고 실패 비용이 낮은 국면에서 참**이라는 형태로 좁혀진다.
+
+⚠️ 이것은 이 위키의 정리이지 어느 소스의 주장도 아니다.
+
+그리고 Ghahramani 쪽 반론의 근거는 계산량이 변했다는 것이다 — 학부 시절 최첨단이던 **Connection Machine**이 *"제 주머니의 픽셀 폰보다 실제로 느립니다."* 진행자가 여기에 날린 반박도 함께 기록해 둘 만하다.
+
+> **80년대에도 신경망에 대해 그런 말이 나왔었죠. 당신은 그 실수를 두 번 다시 반복하지 않을 거예요.**
+
 ## References
 
 - [원문 (incompleteideas.net, self-signed cert)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 - 미러: [cs.utexas.edu PDF](https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf)
 - [Wikipedia: Bitter lesson](https://en.wikipedia.org/wiki/Bitter_lesson)
 - 본 위키 내 적용: [[agent-harness-design]], [[brain-hands-decoupling]], [[anthropic-managed-agents]]
+- ⚠️ 반대 입장: [[tech-bridge-uncertainty-mathematics]] · [[bayesian-inference]] · [[zoubin-ghahramani]]

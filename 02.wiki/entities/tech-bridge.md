@@ -23,8 +23,12 @@ sources:
   - tech-bridge-flutter-ai-workflow
   - tech-bridge-karpathy-transformers-stanford
   - tech-bridge-multimodal-commerce-agent
+  - tech-bridge-uncertainty-mathematics
+  - tech-bridge-claude-code-team-workflow
+  - tech-bridge-six-agent-skills
+  - tech-bridge-ai-native-sdlc
 created: 2026-06-03
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Tech Bridge
@@ -58,6 +62,12 @@ updated: 2026-09-04
   - [[tech-bridge-karpathy-transformers-stanford]] — [[andrej-karpathy]] / Stanford CS25 ([[transformer]], [[attention-mechanism]], [[in-context-learning]], [[nanogpt]]) — 채널 **최초의 아카이브 재배포**이자 최장 영상(61:24)
 - 2026-09-03 업로드 / 2026-09-04 ingest 1편:
   - [[tech-bridge-multimodal-commerce-agent]] — [[nidhi-kaushik-vyas]] / [[google-deepmind]] ([[fuzzy-intent-discovery]], [[multimodal-elicitation]], [[adaptive-response-format]]) — 채널 첫 **Google DeepMind 발표자**이자 첫 **소비자 대면 에이전트** 소스(20:37). 기존 16편이 전부 개발자·조직 내부용이었던 축을 처음 벗어난다
+- 2026-09-03 업로드 / 2026-09-05 ingest 2편:
+  - [[tech-bridge-uncertainty-mathematics]] — [[zoubin-ghahramani]] / Google DeepMind 팟캐스트 ([[bayesian-inference]], [[aleatoric-epistemic-uncertainty]], [[continual-learning]]) — **44:41, 채널 두 번째 최장편**이자 **첫 이론·기초연구 소스**. 기존 18편이 전부 에이전트 엔지니어링이었던 축을 벗어난다
+  - [[tech-bridge-claude-code-team-workflow]] — [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] / [[anthropic]] ([[harness-pruning]], [[goal-level-delegation]], [[claude-tag]]) — 업무의 70~80%가 Slack 에이전트에서 · 모델이 좋아지면 하네스를 **지운다**
+- 2026-09-04 업로드 / 2026-09-05 ingest 2편:
+  - [[tech-bridge-six-agent-skills]] — [[ai-labs]] ([[skill-self-improvement]], [[corey-haines]]·[[sahil-lavingia]] 스킬 모음) — **채널 첫 스킬 카탈로그형 영상**이자, 이 위키가 이미 가진 [[multica-karpathy-skills-claude-md]]에 **4개월 만에 도달한 두 번째 소스**
+  - [[tech-bridge-ai-native-sdlc]] — [[switch-dimension]] 해설 / 원문서 [[anthropic]] ([[ai-native-sdlc]], [[intent-md]]) — **채널 첫 "문서 해설" 형식**. 강연·인터뷰·팟캐스트에 이어 네 번째 포맷이다
 - ⚠️ **아카이브 재배포의 등장 (2026-09-03 확인)**: 위 Karpathy 강연은 업로드가 2026-09-02지만 **강연 자체는 ~2023년**이다. 채널 설명란에 촬영 시점 표기가 없어 내부 증거로만 판정된다(발표자가 "roughly 2023"이라 말하고, 2017년 구조를 "five years ago"라 부르고, nanoGPT를 갓 만들었다고 소개). → **이 채널의 업로드 날짜를 발화 날짜로 가정하면 안 된다.** 기존 소스 15편은 전부 동시대 강연이었으나 이 전제가 깨졌다. 앞으로 ingest할 때 내부 시점 단서를 확인할 것. **(2026-09-04 적용 결과: [[tech-bridge-multimodal-commerce-agent]]는 확인했으나 과거 강연이라는 증거도, 촬영 시점을 확정할 근거도 없었다. 유일한 앵커는 "최근 출시한 UCP" 뿐이고 행사명도 소스에 없다 — 미확정으로 남겼다.)**
 - 재배포 범위가 컨퍼런스 강연을 넘어 **인터뷰 채널 재배포**(MTS)까지 확장됨 — 2026-08-31 두 번째 편이 첫 사례. 2026-09-01에는 **VC 팟캐스트**(Kleiner Perkins *Builders* 시즌 2) 재배포가 추가됐고, 이것이 채널에서 처음 보는 **43분대 장편**이자 **공식 챕터가 없는** 영상이다.
 
@@ -65,5 +75,5 @@ updated: 2026-09-04
 
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

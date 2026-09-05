@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
 related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow]
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-05
 ---
 
 # Agent Harness Design
@@ -125,6 +125,35 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 즉 [[agent-distributed-systems]]의 신뢰성 문제가 먼저 풀려야 전략 계층이 열린다 — **순서가 있는 의존성**이다.
 
 > 문제 영역·도메인에 따라 **전략을 어떻게 조합하느냐가 상당히 다른 성능 결과**를 낳는다는 관찰도 함께 제시된다.
+
+## 하네스에 시간 축이 붙는다 — pruning (2026-09-05 · [[tech-bridge-claude-code-team-workflow]])
+
+이 페이지는 지금까지 **무엇을 만들 것인가**만 다뤘다. [[anthropic|Anthropic]] Claude Code 팀의 증언이 **무엇을 언제 지울 것인가**를 채운다. → [[harness-pruning]]
+
+전제가 되는 하네스관이 명시적이다.
+
+> 이러한 기능들을 하네스에 내장하는 것은 **현재 모델이 가지고 있는 몇 가지 오류 모드를 보완하기 위한 것**입니다.
+
+이 정의를 받아들이면 결론이 따라 나온다 — **결함이 사라지면 보완물도 사라져야 한다.**
+
+> 모델이 더 좋아짐에 따라, 이제 우리는 **"이 모든 기능들은 더 이상 필요하지 않네요. 없애버릴 수 있겠어요."** 라고 말할 수 있는 **자유가 생겼습니다.**
+
+사례 둘이 구체적이다.
+
+| 기능 | 왜 만들었나 | 왜 사라졌나 |
+|---|---|---|
+| **todo 리스트** | Sonnet 3.5는 *"다섯 가지 일을 시키면 세 가지만 하고는 그냥 포기"* | *"좀 더 **복잡한 메모리 상태** 같은 게 있고, 그런 것들을 믿고 의지할 수 있다"* |
+| **AskUserQuestion** | Claude가 상호작용적으로 질문하게 하려고 | HTML **아티팩트가 스스로 질문**하기 시작 — *"이 도구는 전에는 겨우 하던 일을 이제는 할 수 있게 됐네"* |
+
+**pruning은 축소가 아니라 재배치다.**
+
+> 이제 우리는 (…) **훨씬 더 크고 어려운 작업**을 하고 있다는 점입니다. 그리고 **작업 범위가 바뀌면서 우리가 필요로 하는 도구들이 다르게 보이기 시작**하는 것과 같습니다.
+
+즉 하네스가 얇아지는 게 아니라 **붙는 층이 위로 올라간다.** 토큰 수준 교정이 사라진 자리에 목표 수준 위임([[goal-level-delegation]])과 오케스트레이션([[dynamic-workflows]])이 들어온다.
+
+> 위 "자기-개선 하니스" 절의 [[self-harness]]와 **방향이 반대**라는 점을 기록해 둔다. 그쪽은 하네스가 스스로 자라고, 여기서는 **외부(모델)의 향상이 하네스를 줄인다.** 둘은 모순이 아니라 서로 다른 압력이며, 어느 쪽이 이기는지는 모델 개선 속도에 달려 있다.
+
+⚠️ 언제 지워도 되는지 판단하는 **기준·절차는 소스에 없다.** 전부 사후 회고로만 이야기된다. 그리고 이 팀은 모델 개발자와 같은 조직에 있어 변화를 가장 먼저 안다 — *"대부분의 제품들이 이렇게 유통기한이 짧지는 않을 것 같아요."*
 
 ## References
 
