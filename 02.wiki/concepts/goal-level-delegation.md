@@ -3,11 +3,11 @@ title: Goal-Level Delegation
 type: concept
 category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
-related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles]
+related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # Goal-Level Delegation
@@ -73,7 +73,22 @@ updated: 2026-09-05
 
 ⚠️ 전제 조건이 있다 — 맥락이 이미 쌓인 표면(Slack)과 강한 검증 문화. *"특히 저희 팀은 **검증에 많은 신경을 써왔거든요.**"* 이 둘 없이 위임 단위만 키우면 신뢰의 대체물이 없다.
 
+## 소비자판 — "게으른 사용자" (2026-09-06 · [[tech-bridge-altman-astra-hardware]])
+
+이 패턴이 팀 안에서 측정된 것(70~80%)이었다면, [[sam-altman|Sam Altman]]은 같은 것을 **소비자 요구 사양**으로 말한다.
+
+> 저는 **굉장히 게으른 사용자**라서 *'사용자 컴퓨터 연결'* 같은 걸 클릭하고 싶지 않아요. 설정을 복잡하게 하거나 **커넥터를 여러 개 연결하는 것도 싫어요.** 그냥 내 컴퓨터를 써서 그 일을 해.
+
+> 모델에게 원하는 작업을 지시하고 **아이들과 놀다가 30분 후에 돌아오면 모든 게 준비되어** 있더라고요.
+
+Claude Code 팀이 *녹취록을 안 본다*고 했다면 여기서는 *모드·탭도 안 고른다* — *"지금 어떤 탭에 있는지 생각할 필요도 없고, 어떤 모드인지 생각하고 싶지도 않아요. AI가 새로운 수학을 발견할 만큼 똑똑하다면, 스스로 직관적으로 무엇을 해야 하는지 알 수 있을 거예요."* [[adaptive-response-format]]이 응답 형식을, 이 페이지가 보고 타이밍을 모델에 넘겼다면, 이제 **작업 표면의 선택**까지 넘어간다.
+
+위임 단위의 또 다른 척도가 **세션 길이**다 — [[tech-bridge-altman-agi-superintelligence]]: *"ChatGPT 작업 세션을 34시간 동안 돌리고 논문 2,000편"*, *"많은 사람들이 하루 이상 작동하도록 만들 수 있습니다."* 그리고 반대쪽 끝의 **20분짜리 승리**(우체국 양식을 [[codex|Codex]]에 맡기기). 위임 단위가 커지는 것과 작은 위임이 흔해지는 것이 동시에 일어난다.
+
+**전제 조건이 같다.** 이 페이지는 *모델 품질*을 전환 조건으로 두었고, Altman도 컴퓨터 사용이 [[openai-astra|Astra]]에서 *"인간 수준에 도달한 것 같은"* 뒤에야 이렇게 됐다고 한다 — *"항상 너무 느리거나 제대로 작동하지 않았어요."* ⚠️ 체감 진술. 그리고 이 페이지의 *"녹취록 감시를 없앤 자리를 산출물 검증이 메운다"* 에 해당하는 것이 소비자 쪽에는 **없다** — Altman은 무엇이 신뢰를 대신하는지 말하지 않는다. [[intent-alignment]]에서 그가 *"의도를 이해하고 안정적으로 실행하는 능력이 병목"* 이라 한 것이 그 빈칸의 이름이다.
+
 ## References
 
 - [[tech-bridge-claude-code-team-workflow]] — first-seen
 - 관련: [[claude-tag]] · [[harness-pruning]] · [[dynamic-workflows]] · [[adaptive-response-format]] · [[token-roles]]
+- [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]] — 소비자판 (Sam Altman, 2026-09-06)

@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi]
 created: 2026-05-25
-updated: 2026-09-04
+updated: 2026-09-06
 ---
 
 # Context Engineering
@@ -50,9 +50,20 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 
 [[agent-distributed-systems]]가 *"에이전트 메모리는 무효화 가능한 캐시"* 라고 한 것과 같은 문제를 **상태 스키마 층위**에서 다룬 형태다. 컨텍스트를 "무엇을 넣을까"가 아니라 **"각 항목을 얼마나 믿을까"** 로 묻는다.
 
+## 조직 규모의 맥락 — 온보딩 비유 (2026-09-06 · [[tech-bridge-jensen-huang-g20-agi]])
+
+이 페이지는 지금까지 **한 세션의 context window**를 다뤘다. [[jensen-huang|Jensen Huang]]은 같은 문제를 **회사 규모**에서 말한다.
+
+> 이러한 아이들이 우리 회사에 들어오게 될 때, 우리는 **여전히 그들에게 적절한 맥락(context)을 제공하는 데 상당한 투자**를 해야 합니다. (…) 당신은 MIT 박사 학위를 가진 신입 졸업생을 온보딩하는 데 쏟는 에너지처럼, 그들에게 **맥락, 목적, 관련성, 접근성** 등 모든 것을 제공하는 데 모든 에너지를 쏟을 것입니다.
+
+넷 중 둘(맥락·접근성)은 이 페이지의 어휘로 곧장 번역된다 — *무엇을 넣을 것인가*와 *어디에 접근할 수 있는가*([[model-context-protocol]]·[[brain-hands-decoupling]]의 자격 증명 주입). 나머지 둘(**목적·관련성**)은 이 위키에서 [[intent-md]]·[[agent-skills]]·[[agent-org-adoption]]이 다루는 층이다. Huang의 주장은 이 넷이 **AGI 이후에도 남는 일**이라는 것이고, 그래서 이 페이지의 *"harness ↔ SDK/플랫폼 경계가 이동한다"* 는 관찰에 한 단서가 붙는다 — 세션 층의 맥락 관리는 플랫폼으로 내려가도, **조직 층의 맥락 제공**은 내려갈 곳이 없다.
+
+⚠️ 인프라 판매자의 발언이며, "남는다"는 주장의 근거는 온보딩 비유 하나다.
+
 ## References
 
 - [[anthropic-managed-agents]]
 - [[anthropic-harness-design-long-running-apps]]
 - [[tech-bridge-harness-engineering]]
 - [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [[tech-bridge-jensen-huang-g20-agi]] — 온보딩 비유 (Jensen Huang, 2026-09-06)

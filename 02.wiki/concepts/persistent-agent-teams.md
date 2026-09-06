@@ -3,11 +3,11 @@ title: Persistent Agent Teams (지속형 에이전트 팀)
 type: concept
 category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
-related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering]
+related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware]
 created: 2026-09-01
-updated: 2026-09-02
+updated: 2026-09-06
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -89,7 +89,27 @@ updated: 2026-09-02
 
 즉 네 구성 요소 중 **자체 컴퓨터**만 갖춘 상태다. 그래도 *"풀타임 본업 뒤에 에이전트 팀을 운영한다"*는 서술은 이 패턴이 제품 없이도 파워 유저에게서 먼저 자생한다는 신호이고, 위 "대중화의 장벽은 UX" 진단과 맞는다 — 코디네이터를 사람이 하는 한 이 형태는 파워 유저 밖으로 나가지 못한다.
 
+## 제품 기본값으로서의 상시 실행 — "능동적 컴퓨터" (2026-09-06 · [[tech-bridge-altman-astra-hardware]])
+
+이 패턴이 파워 유저([[grokbot]]·[[ivanna-kacevica]])에게서 관찰된 것이었다면, [[sam-altman|Sam Altman]]은 같은 것을 **기본 제품의 형태**로 서술한다.
+
+> 사람들이 채팅이든, Codex든, 업무든 상관없이 (…) 사용하는 **범용 AI 구독 서비스**가 생길 것 같아요. 심지어 요청하지 않아도 알아서 처리해 줄 거예요. 훨씬 더 **능동적(proactive)** 으로 작동하고, **끊임없이 실행되면서** 유용한 작업을 수행하려고 노력할 겁니다.
+
+> 가장 큰 변화는 **능동적인 컴퓨터(proactive computer)** 라는 개념에 익숙해지는 것.
+
+| 이 페이지의 네 구성 요소 | Altman의 서술 |
+|---|---|
+| 정체성 | 없음 — 단일 구독 |
+| 자체 컴퓨터 | **사용자의 컴퓨터를 직접 씀**(컴퓨터 사용) + 탁상·주머니·착용형 기기 |
+| 코디네이터 | 없음 — 모드·탭 선택을 모델이 흡수 |
+| 메시징 UI | 하나의 인터페이스 |
+
+즉 "봇 팀"이 아니라 **하나의 상시 에이전트**이고, 이 페이지가 *"대중화의 장벽은 UX"* 라 진단한 것에 대한 답이 *팀을 없애고 하나로 합치기*다.
+
+이 페이지가 유보했던 것 — *"봇이 사용자의 모든 도구에 로그인한 채 상주하는 모델의 권한·감사 경계"* — 에 대해 Altman 본인이 *"개인 정보 보호 감시라는 악몽"* 이라는 질문을 받고 **AI 특권법**을 제안한다 → [[ai-privilege]]. 즉 상시 에이전트의 데이터 문제가 기술 유보에서 **법 제안**으로 옮겨갔다. ⚠️ 제안이지 제도가 아니다.
+
 ## References
 
 - [[tech-bridge-grokbot-agent-teams]] (first-seen) · [[grokbot]] · [[cursor]] · [[lauren-tan]] · [[roshan-sadanani]] · [[grok-4-6]]
 - 대비: [[agent-org-adoption]] · [[frontier-engineering]] · [[self-harness]] · [[harness-engineering]]
+- [[tech-bridge-altman-astra-hardware]] — 능동적 컴퓨터·범용 구독 (Sam Altman, 2026-09-06)

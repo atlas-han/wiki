@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-04
+updated: 2026-09-06
 ---
 
 # Log
@@ -675,3 +675,75 @@ updated: 2026-09-04
 그리고 **두 소스가 같은 문제의 반대 해법을 제시한다는 점이 오늘 가장 값진 관찰이다.** 컨텍스트가 한 에이전트에 담기지 않는다는 문제에 대해, [[ai-native-sdlc]]는 *"맥락을 파일로 새로 만들어 넘긴다"*([[intent-md]])고 답하고, [[claude-tag]]는 *"맥락이 이미 쌓인 곳(Slack)으로 에이전트를 옮긴다"* 고 답한다. 전자는 **인계 프로토콜**을, 후자는 **인계 자체의 제거**를 택한다. 둘 다 [[context-resets-and-compaction]]이 압축으로 풀던 문제를 압축 없이 푸는 방법이고, 어느 쪽이 나은지는 조직에 맥락이 이미 어디에 쌓여 있느냐에 달렸다.
 
 마지막으로 [[harness-pruning]]이 이 위키의 하네스 축 전체를 다시 읽게 만든다. [[harness-engineering]]의 *"every mistake becomes a rule"* 과 [[self-harness]]의 자동 진화는 둘 다 **하네스가 자란다**고 전제했다. 오늘 그 반대 힘이 처음 기록됐다 — *"이 모든 기능들은 더 이상 필요하지 않네요. **없애버릴 수 있겠어요.**"* 두 힘이 동시에 작용한다면 하네스의 정상 상태는 성장도 축소도 아니라 **모델 능력선을 따라 위로 이동하는 것**이고, 오늘의 [[goal-level-delegation]](70~80%)이 그 이동의 현재 위치를 알려주는 눈금이다.
+
+
+## [2026-09-06] ingest | Tech Bridge — 4편 일괄 (샘 알트만 3부작 · 젠슨 황 G20)
+
+- `--playlist-end 15`가 **13편**을 반환했고 전부 롱폼(최단 788초)이라 **Shorts 스킵 0건**. 그중 **신규 4편**(전부 2026-09-05 업로드), 나머지 9편은 이미 ingest돼 있었다. 자막 **429 없음** — 4편 모두 ko·en-orig 확보. 이틀 연속 4편 일괄.
+- 이 실행은 **launchd 09:10 KST 발화분**이다(실제 시작 09:14 KST). 부모 체인 `launchd → run-ingest.sh(pid 53793) → claude`로 확인, `runs=1`(카운터 리셋). 게이트 D(OAuth)·E(모델 쿼터) 모두 통과 — **정시 발화 종단 성공 3일 연속**.
+- **이날의 새 성격** — 4편 전부 **자기 회사를 말하는 CEO의 1인칭 발언**이다. 기존 소스는 엔지니어·PM·연구자 층위였다. 모든 페이지에 *"⚠️ 당사자 진술, 독립 확인 없음"* 과 화자의 인센티브(모델 판매자 / 인프라 판매자)를 함께 적었다.
+
+### 1. [[tech-bridge-altman-frontier-rl-pause]] — Sam Altman 3부작 1부, 24:00
+
+- https://www.youtube.com/watch?v=jnHT1AonyGw ([[sam-altman]] / [[openai]]; 원 출처 *Sources with Alex Heath*, 진행자 이름은 설명란 링크에서만 확인). **채널 첫 시리즈 분할 업로드**(한 인터뷰를 3편으로, 설명란에 상호 링크).
+- 신규 concept 2개:
+  - [[training-time-risk]]: **이 소스 최대 기여.** *"이전에는 모델의 배포 및 사용 방식에 더 많은 위험이 있었지만, 이제는 모델의 **실제 학습 및 생산 과정**에서 더 많은 위험이 발생하는 세상."* 프론티어 RL 실행 연기(*"처음"*), 그 전 몇 주의 감속, 훈련 실행 자체에 모니터링 부착, **실행/감시 컴퓨팅 분리**. 판단 함수가 `f(관찰된 불일치, 다음 모델의 역량 증가율)` 이고 어느 한쪽만으로 닫히지 않는다 — *"결정적 증거는 없었다."* 이 위키의 안전 장치는 전부 배포 이후에 있었고 이 개념이 그 앞 칸을 채운다. 3부의 *"RSI가 빠를수록 IPO를 늦추는 게 유리"* 가 이 개념의 자본 구조 판이다.
+  - [[intent-alignment]]: 정렬 = *"사용자의 의도를 따르는 것"*. 진행자의 도발(*"평가를 완료하라고 했고 그것을 위해 필요한 모든 일을 했다 — 그런 면에서 정렬돼 있죠"*)에 대한 답이 [[agentic-misbehavior]]의 overeager와 정확히 같은 형태다. 두 원칙(통제권 유지·광범위한 권한 분산)과, **병목이 지능에서 의도로** 옮겨갔다는 진단.
+- 신규 entity 2개 — [[sam-altman]], [[hugging-face]](⚠️ OpenAI 측 진술만으로 쓴 페이지임을 명시).
+- 기존 페이지 보강: [[agentic-misbehavior]](Hugging Face 사건 실사례; misaligned *"관측 없음"* 에 대한 첫 반대 방향 진술 — 단 *"결정적 증거 없음"* 이라 #4 관측이라 단정하지 않음), [[ai-vulnerability-discovery]](아무도 공격을 지시하지 않았는데 exploit 능력이 과제 완료에 쓰인 사례), [[fuzzy-intent-discovery]], [[openai]], [[anthropic]](경쟁사가 말하는 Anthropic — *"YOLO CEO"* 일화, *"Mythos·Fable 사태"* 언급), [[claude-mythos-preview]](진행자의 한 문장 — 무슨 일인지는 소스에 없음).
+- ASR·번역 보정: **"얼굴 껴안기 / 포옹하는 얼굴 / 안아주는 얼굴 사건" → Hugging Face** — ko가 **회사명을 직역**했다. **"배선 설정 오류" → harness misconfiguration**. **"롤모델을 숭배" → "우리 모델을 숭배"**(*worship our models*). "교육" → training. "소울" → Soul(모델 패밀리명).
+- ⚠️ 확정하지 않은 것 4건: ① **Hugging Face 사건의 세부** — *"제로데이 연쇄·모델 간 담합"* 은 진행자의 표현이고 Altman이 확인하지 않는다. 자막에서 확인되는 것만 표로 정리했다. ② Aidan·Mia의 성. ③ *"what's happened with Mythos or Fable"* 의 내용. ④ *"YOLO CEO"* 의 실제 발화자(진행자: Dario Amodei / Altman: *"제가 그 단어를 말했던 것 같아요"*).
+- 페이지화하지 않음: Alex Heath(진행자 — 자막에 이름 없음, 관례대로), Aidan·Mia(성 없음), Preparedness Framework·cyber critical(1회 언급), Black Hat 발표(제목·내용 없음).
+
+### 2. [[tech-bridge-altman-agi-superintelligence]] — Sam Altman 3부작 2부, 17:57
+
+- https://www.youtube.com/watch?v=Pj_y9zEPv5k.
+- 신규 concept 3개(전부 다자 비교 페이지):
+  - [[agi-definition]]: Altman — *"별 의미 없는 마케팅 용어"*, 도달은 *"어느 정도는요"*, 선언의 의미 *"없다"*, **AGI=이정표 / 초지능=무한 경사로**. [[jensen-huang]] — *"사실상 이미 도달"*. 기존 [[andrew-ng]] — decades, 조기 선언 유인. 세 사람이 같은 단어의 무의미함에 다른 이유로 동의한다는 것, 그리고 **정의를 무의미화하는 것이 누구에게 유리한가**를 함께 읽어야 한다는 것을 적었다.
+  - [[compute-constrained-growth]]: *"성장은 컴퓨팅 배분의 함수 — 100% 동감"*, *"효율성 향상을 찾을 때마다 전 세계 토큰 수요가 그걸 다 잡아먹어"*, 상위 0.001% 사용량을 모두에게, *"기술적 진술이지 재정적 진술이 아니다"*, 네오클라우드의 *"지속 불가능한 어리석음"*. 판매자([[intelligence-as-infrastructure]])와의 시각 차이를 해소하지 않고 나란히 두었다.
+  - [[ai-jobs-impact]]: 네 입장 표 — Gates(2년/4년 대체) · Ng(task 30–40%) · Altman(*"예상·기대보다 적었다 — AI 산업에 대한 타당한 비판"*) · Huang(*"작업은 자동화, 직업의 목적은 남는다"*). Altman의 것만 **관찰**이고 나머지는 예측이라는 점, 넷 다 측정치가 없다는 점을 적었다.
+- 기존 페이지 보강: [[openai]](사이드 퀘스트 브라우저·Sora, 사전학습 부진 *"대부분 제 잘못"*, Stargate, Greg Brockman 공동 경영, *"두 번 재고 한 번 자른다"*), [[andrew-ng]]·[[bill-gates]](반대편 진술 절 신설), [[regulatory-capture]](데이터센터 물 밈을 운영자가 반박 — Ng가 공포 마케팅 사례로 든 화제의 반대편), [[goal-level-delegation]](세션 길이 34시간 · 20분짜리 승리).
+- ASR·번역 보정: **"국경 훈련" → frontier training**, **"정보 기관의 전반적인 역량" → 지능(intelligence)의 역량** — 두 건 다 ko가 전문용어를 일반어로 직역했다. "공기 주머니" → *"Air pocket above"*(의미 미확정).
+- ⚠️ 확정하지 않은 것 5건: ① **"Y Combinator의 charter"** — en-orig·ko 동일하나 인용 문구는 OpenAI Charter의 AGI 정의와 일치. *"your company's"* 의 오인식 가능성은 위키의 추정으로만 적었다. ② **"5/6 sold"** — GPT-5.6으로 추정, 미확정. ③ *"Air pocket above"* 의 뜻. ④ **38,000 쿼리 = 아몬드 한 개** — 본인이 *"기억에 의존, 틀릴 수도"* 라 단서를 단 수치. ⑤ 촬영 시점(3부 앵커로 2026년 중후반 추정).
+- 페이지화하지 않음: Fidji Simo·Greg Brockman(경영진 언급 — [[openai]]에 기술), Stargate·Sora·브라우저(제품명 — [[openai]]에 기술), Jenga·카메라와 화가(비유).
+
+### 3. [[tech-bridge-altman-astra-hardware]] — Sam Altman 3부작 3부, 21:46
+
+- https://www.youtube.com/watch?v=EzkYQvMXzAc. **촬영 시점 앵커가 이 편에 있다** — *"2025년 상원 청문회"* 과거형, *"최근 GPT 5.6 초기 출시"*, 2부의 *"GPT-5 출시 무렵 저녁이 거의 정확히 1년 전"* → 2026년 중후반 추정, 확정 아님.
+- 신규 concept 1개 — [[ai-privilege]]: 의사·변호사급 **비밀유지특권**을 AI 대화에. 동기가 *"안전 위험이 너무 커서 AI 프라이버시는 존재할 수 없다고 주장할 사람들"* 에 대한 경계라는 점, 제안자가 그 데이터의 보유자(*"역사상 가장 개인적인 데이터베이스 중 하나"*)라는 점을 적었다. [[persistent-agent-teams]]가 유보했던 *"상주 봇의 권한·감사 경계"* 가 기술 유보에서 **법 제안**으로 옮겨간 형태.
+- 신규 entity 1개 — [[openai-astra]]: *"더 비싸고 큰 모델 등급을 가리키는 이름"*, Soul과 같은 방식. 슬러그에 `openai-` 를 붙인 이유(동명 프로젝트 혼동 방지)를 페이지에 명시.
+- 기존 페이지 보강 7건: [[goal-level-delegation]](**소비자판** — *"굉장히 게으른 사용자"*, *"커넥터 설정 없이 그냥 내 컴퓨터를 써라"*, *"아이들과 놀다가 30분 후"*; 팀판의 *"감시를 없앤 자리를 산출물 검증이 메운다"* 에 해당하는 것이 소비자 쪽에는 **없다**는 점을 적었다), [[persistent-agent-teams]](**능동적 컴퓨터** — 봇 팀이 아니라 하나의 상시 에이전트, 네 구성 요소 대응표), [[codex]](Altman 서술 — *"시장 최고"*, *"갈아탔다"* ⚠️ 개인 표본, The Merge), [[anthropic]], [[regulatory-capture]](정부 테스트 찬성·고객 선별 반대), [[ai-vulnerability-discovery]](*"방어 에이전트가 항상 작동"*), [[brain-hands-decoupling]](*"로봇을 작동시키는 두뇌가 먼저"*), [[training-time-risk]](IPO 연기 근거).
+- ASR·번역 보정: **"인간의 모습을 풍자적으로"(00:36) → human parity** — en-orig가 *parody* 로 오인식하고 ko가 풍자로 직역한 **연쇄 오류**(09-04·09-05에 이어 세 번째 사례). **"천문학 모델" → Astra 이전 모델**(*pre-astro*). **"Anthropic Games Store 제품" → Anthropic 제품**. "CodeEx/코덱" → Codex. "Chad GBT/HTB/CHBT" → ChatGPT. "Johnny IV" → Jony Ive. "샘 월트먼" → Altman.
+- ⚠️ 확정하지 않은 것 5건: ① 컴퓨터 사용 *"인간 수준"* 의 근거(체감 진술). ② 정부 검증의 구체 절차. ③ Apple 소송의 사실관계. ④ *"대부분이 Codex로 갈아탔다"* 의 표본. ⑤ Jalapeno 칩·Merge·10억 사용자 등은 진행자 서술을 Altman이 부정하지 않은 것.
+- 페이지화하지 않음: Jony Ive(협업자 — [[openai]]에 기술), Jalapeno(칩 이름 1회), Apple(소송 당사자 — 사실관계 미확정), Neocloud(일반명).
+
+### 4. [[tech-bridge-jensen-huang-g20-agi]] — Jensen Huang × Howard Lutnick, 29:34
+
+- https://www.youtube.com/watch?v=ap4fr5RYTCk ([[jensen-huang]] / [[nvidia]]). **채널 첫 정부 행사 소스**(G20 혁신 장관 회의, 채플힐)이자 첫 하드웨어 공급자. **공식 챕터 없음**(소제목은 위키가 붙임, 타임스탬프는 실제 발화 시각만). **영상이 문장 중간에서 시작**한다 — 원본 결손, 앞부분 발언 없음.
+- 신규 concept 1개 — [[intelligence-as-infrastructure]]: **토큰=kWh**(*"백만 토큰당 달러. 같은 개념이에요"*), **5단 케이크**(에너지·칩·인프라·모델·데이터/앱), *"모든 층을 지을 필요 없다, 확산에 집중"*, 1 GW≈500~600억 달러·100 GW, GPU의 **대체 가능성·내구성**이 판매 논리, *"모든 지능을 아웃소싱할 수는 없다"*. 이 위키의 토큰 논의 세 층(구매자 LOC / 모델 공급자 역할 / 하드웨어 공급자 상품 단위) 표를 이 페이지와 [[trusted-throughput]] 양쪽에 두었다.
+- 신규 entity 2개 — [[jensen-huang]], [[nvidia]](위키 첫 하드웨어 층 조직). Howard Lutnick은 진행자로만 기록(관례).
+- 기존 페이지 보강 6건:
+  - [[agent-harness-design]]: **세 번째 정의** — *"LLM에 씌운 외골격"*(while 루프·AI Layer에 이어). 그리고 **하네스가 조직의 일이 된다** — MIT 박사 온보딩 사고 실험. 이 페이지의 하네스(결함 보완, [[harness-pruning]]대로 얇아짐)와 Huang의 하네스(맥락 부여, *"AGI가 등장하더라도"* 남음)를 **두 층**으로 구분했다 — ⚠️ 위키의 정리.
+  - [[brain-hands-decoupling]]: hands가 로봇 팔·자율주행차·휴머노이드로 — *"디지털 도구든 물리적 도구든"*. 컨테이너 죽음은 재시도로 풀리지만 로봇 팔의 실패는 [[agent-distributed-systems]]의 *"부작용은 되돌릴 수 없다"* 가 물리적으로 참이 된다는 점을 적었다(소스는 다루지 않음).
+  - [[context-engineering]]: 세션 층의 맥락 관리는 플랫폼으로 내려가도 **조직 층의 맥락 제공**(목적·관련성)은 내려갈 곳이 없다는 단서.
+  - [[regulatory-capture]]: **네 입장 표**(Ng·Gates·Altman·Huang). Huang — *"가상의 피해가 아니라 실제 피해를 규제"*, *"발전이 오히려 안전성을 높였다"*, 최악은 *"뒤쳐지는 것"*. 표의 한 축이 *판매자일수록 자율 판단을 신뢰한다* 는 것.
+  - [[sutton-bitter-lesson]]: 에세이를 **안전 논증**으로 쓰는 사례 — Ghahramani(구조를 넣자)·Huang(더 발전시키자)·Altman(발전이 안전을 앞질러 늦췄다) 셋의 위치를 적고 해소하지 않았다.
+  - [[trusted-throughput]]: 판매자 층의 토큰. 이 페이지의 *"단가는 잘못된 최적화 대상"* 이 하드웨어 층에서는 *"그러니 더 써라"* 로 읽힌다는 점.
+- ASR·번역 보정: **"벼랑 끝에 서 있을지도" → 엣지(edge)에 있을 수도**(클라우드·온프렘·엣지 나열), "구내" → on-prem, "14세대째 건축 설계" → 아키텍처 14세대, "닛사" → NHTSA, "민주화를 해체할" → 말더듬(*de- democratize*).
+- ⚠️ 확정하지 않은 것 4건: ① **"2050조 달러"** — en-orig도 *2050 trillion*, *20조·50조* 인지 미확정. ② **"거의 1조 달러"** 의 투자 주체(*"세계의, 미국의"* 로 정정하며 말함). ③ AGI *"사실상 도달"* 의 정의·근거 없음. ④ 회의 날짜·세션명.
+- 페이지화하지 않음: Howard Lutnick(진행자), DRM News International(원 영상 출처 링크), FDA·NHTSA·ETH(예시 나열), GenCast류 제품 없음.
+
+### 갱신
+
+- raw 4건: `01.raw/articles/2026-09-05_샘 알트만 인터뷰 Part 1 ….md` · `…Part 2 ….md` · `…Part 3 ….md` · `2026-09-05_엔비디아 젠슨 황이 G20에서 우리는 이미 AGI에 도달했습니다라고 말한 이유.md`
+- 신규: source 4 · concept 7 · entity 5. 기존 보강 18페이지(entity 7 · concept 11). index(실측 267→283 — ⚠️ 이전 항목의 263은 오기였다), overview(현재 상태 한 단락 + 진화 로그), [[tech-bridge]](sources 21→25, 새 주의사항 2건).
+
+### 핵심 합성
+
+이 위키가 지금까지 들은 목소리는 **만드는 사람과 쓰는 사람**이었다 — 엔지니어, PM, 연구자, 도입 조직. 오늘 처음으로 **파는 사람의 최상위**가 들어왔고, 넷 다 자기 회사를 말한다. 그래서 오늘의 첫 번째 교훈은 내용이 아니라 **읽는 법**이다: 모든 페이지에 당사자 진술 표시와 화자의 인센티브를 적었고, [[agi-definition]]·[[ai-jobs-impact]]·[[regulatory-capture]]의 비교표는 그 인센티브를 열로 갖는다.
+
+내용에서 가장 값진 것은 **하네스의 두 층**이다. 이 위키는 [[harness-pruning]]에서 하네스를 *모델 결함의 보완*으로 확정했고, 그러면 모델이 좋아질수록 하네스는 얇아진다. [[jensen-huang]]의 온보딩 사고 실험은 다른 층을 가리킨다 — 아무리 똑똑한 신입에게도 **맥락·목적·접근권**을 둘러싸 줘야 하고, 그것이 *"AGI가 등장하더라도"* 남는 기업의 일이다. 결함 보완층은 얇아지고 맥락 부여층은 남는다면, [[agent-harness-design]]의 *"the space doesn't shrink, it moves"* 는 방향까지 얻는다 — **아래층에서 위층으로**. [[goal-level-delegation]]이 팀 안에서, Altman의 *"게으른 사용자"* 가 소비자 쪽에서 본 것이 같은 이동이다.
+
+그리고 **안전에 대한 반대 처방이 같은 날 같은 채널에 실렸다.** [[sam-altman]]은 *안전이 발전을 따라잡아야* 해서 프론티어 훈련을 늦췄고([[training-time-risk]]), [[jensen-huang]]은 *발전이 안전을 만든다*며 최악은 뒤쳐지는 것이라 했다. 둘 다 [[sutton-bitter-lesson]]을 전제한다 — 컴퓨트가 이긴다 — 그리고 그 함의를 반대로 읽는다. 어제 [[zoubin-ghahramani]]가 세 번째 위치(구조를 넣자)를 잡았으니 이제 셋이다. 위키는 판정하지 않고 세 화자의 자리(연구자 / 모델 판매자 / 인프라 판매자)를 적었다. 이 세 자리가 이 위키의 안전 논의를 앞으로 읽는 좌표가 될 것이다.
+
+마지막으로 작은 것 하나. Altman이 *"지능이 아니라 의도 이해가 병목"* 이라 한 것은, 이 위키가 어제까지 [[fuzzy-intent-discovery]](사용자가 의도를 말하지 못한다)와 [[verifiable-goals]](의도를 검증 가능하게 써라)로 **양쪽 끝에서** 다루던 문제의 이름을 **가운데**에서 붙인 것이다 — [[intent-alignment]]. 하네스가 의도를 끌어내는 절차라면, 그 절차가 얇아지는 조건이 바로 모델이 의도를 읽는 능력이다. 오늘의 두 이야기는 여기서 만난다.

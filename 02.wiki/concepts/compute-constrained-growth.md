@@ -1,0 +1,75 @@
+---
+title: Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
+type: concept
+category: theory
+tags: [compute, scaling, growth, efficiency, demand, data-center, bubble, openai]
+related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition]
+first-seen: tech-bridge-altman-agi-superintelligence
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi]
+created: 2026-09-06
+updated: 2026-09-06
+---
+
+# Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
+
+**제품 성장이 컴퓨팅을 어디에 배분하느냐로 결정되고, 효율 개선은 수요 증가에 흡수되며, 그래서 컴퓨팅 구축은 "더 많은 자본"이 아니라 "비용을 크게 낮추고 양을 크게 늘리는" 기술 문제라는 [[sam-altman|Sam Altman]]의 진술 묶음.** → [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]]
+
+> ⚠️ 당사자 진술이며 수치 근거가 없다. 같은 날 [[jensen-huang]]의 인프라 프레이밍([[intelligence-as-infrastructure]])과 짝으로 읽는다.
+
+## 성장 = 컴퓨팅 배분
+
+ChatGPT 10억 사용자 도달이 예상보다 늦었느냐는 질문에:
+
+> 저희는 코딩에 집중하기로 결정하면서, **채팅 제품에 투입할 수 있었던 컴퓨팅 자원을 코딩에 재배정**하기로 했습니다. 그래서 놀라운 일은 아니었어요.
+
+진행자: *"성장은 컴퓨팅 자원을 어디에 투자하느냐에 따라 결정되는 거니까요."* — *"**100% 동감입니다.**"*
+
+즉 제품 로드맵이 **컴퓨팅 예산 배분표**다. [[anthropic]]의 Claude Platform 팀이 *"컴퓨팅이 제약이라 포트폴리오"* 라고 한 것과 같은 조건에서 반대 선택(집중)을 한 사례.
+
+## 효율은 수요가 삼킨다
+
+> 저는 컴퓨팅 제약이 완화되기를 항상 바라고 있어요. 더 효율적인 모델을 만들 수 있을 테니까요. (…) **효율성 향상을 찾을 때마다 전 세계 토큰 수요가 계속 급증해서 그걸 다 잡아먹어 버리죠.**
+
+[[trusted-throughput]]이 구매자 쪽에서 *"토큰 단가는 잘못된 최적화 대상"* 이라 했고 [[token-roles]]가 *"더 크고 비싼 모델이 더 나은 선택일 수도"* 라 했는데, 여기서는 공급자가 **효율이 총량을 줄이지 못한다**고 말한다. 세 진술이 합쳐지면 토큰 총량은 어느 층에서도 줄어들 유인이 없다.
+
+## 목표 — 상위 0.001%를 모두에게
+
+> 만약 우리가 전 세계 모든 사람들이 현재 **상위 0.001%의 AI 사용자**만큼 AI를 활용할 수 있기를 바란다고 생각해 보세요. 그러면 *'우리가 컴퓨팅 인프라 구축을 올바른 방향으로 가고 있는 게 아니었구나'* 라고 생각하게 될 겁니다.
+
+*"몇 년 전 매우 야심찬 컴퓨팅 내기(Stargate) (…) 그런 걸 다시 한번 해봐야."* 진행자가 *"더 많은 자본"* 으로 받자:
+
+> 제가 말하려던 건 **인공지능의 비용과 양, 즉 풍요(abundance)를 — 비용은 크게 낮추고 양은 크게 늘릴 것인가** 하는 문제였습니다. 이건 **기술적인 측면에서 한 말이지, 재정적인 측면이 아닙니다.**
+
+예로 든 것 — 자체 칩(진행자: *"아직 개발하지 못한 칩"*), 로봇공학, *"공급망 속도를 높이는 능력."* 3부에서 추론용 맞춤 칩 **Jalapeno**가 언급된다.
+
+## 거품 — 자기 계획이 아니라 세계의 계획
+
+> 저는 **우리 회사의 컴퓨팅 구축 계획은 걱정하지 않습니다. 오히려 전 세계의 컴퓨팅 구축 계획이 걱정됩니다.** (…) 무작위로 새로운 **네오클라우드**가 생겨나고, 내년에 엄청난 규모의 컴퓨팅 시설을 구축하겠다고 주장하는 사람들이 있는데, 그들이 감당할 **수익이나 구매자가 없다**고 생각합니다.
+
+역설이 명시된다 — *"만약 저희가 **컴퓨팅 비용을 대폭 낮추고 효율성을 높이는 데 성공**한다면, 모든 호황기에 흔히 발생하는 어리석은 재정적 결정을 내린 사람들이 있을 수 있습니다."* 즉 한쪽의 효율 성공이 다른 쪽의 고가 구축을 좌초시킨다. 전염(contagion)은 인정한다 — *"경제 전체가 붕괴된다면 (…) 약정한 컴퓨팅 자원을 자신 있게 지불하는 데 어려움."*
+
+## 판매자의 시각과 나란히
+
+같은 날 [[tech-bridge-jensen-huang-g20-agi|Jensen Huang]]:
+
+> 1기가와트는 약 **500억~600억 달러** (…) **2020년대 말까지 100기가와트**.
+
+Huang은 그 규모를 *"전 세계에 필요한 지능을 생산"* 하기 위한 것으로, Altman은 그 규모의 일부를 *"비용을 고려하지 않고 (…) 누군가는 더 높은 가격을 지불할 것이라고 생각"* 하는 것으로 본다. 그리고 Huang이 파는 **대체 가능성(fungibility)** 이 Altman의 **맞춤 칩**과 정확히 반대 방향이다. ⚠️ 두 시각을 해소하지 않는다 — 각자의 위치와 정렬돼 있다.
+
+## 위키에서의 좌표
+
+- [[sutton-bitter-lesson]] — *"컴퓨트가 이긴다"* 의 경제 측면. 이 페이지는 컴퓨트가 이기는 세계에서 **컴퓨트 자체가 희소 자원**이 된 상태를 기술한다.
+- [[training-time-risk]] — 안전을 위해 컴퓨팅을 **실행에서 감시로** 재배분한 사례. 성장이 컴퓨팅 배분의 함수라면 안전도 그렇다.
+- [[agi-definition]] — Altman의 *"기하급수적 증가 추세는 계속"* 이 이 페이지의 수요 측 전제다.
+
+## ⚠️ 유보
+
+- *"효율을 수요가 삼킨다"* 는 관찰이지 법칙이 아니다 — 소스에 기간·수치가 없다.
+- 상위 0.001%의 사용량이 얼마인지, 그것을 모두에게 주려면 몇 배가 필요한지 계산은 없다.
+- OpenAI가 컴퓨팅 공급자가 될 가능성은 *"당분간은 아닐 것"* — 진행자는 *"내부 논의 중이며 미결"* 로 읽는다.
+
+## References
+
+- [[tech-bridge-altman-agi-superintelligence]] — first-seen
+- [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]]
+- 관련: [[intelligence-as-infrastructure]] · [[trusted-throughput]] · [[token-roles]] · [[sutton-bitter-lesson]] · [[training-time-risk]]

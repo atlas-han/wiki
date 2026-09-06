@@ -3,11 +3,11 @@ title: Agentic Misbehavior (Threat Model)
 type: concept
 category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
-related: [prompt-injection, transcript-classifier, agent-harness-design]
+related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-06
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -60,6 +60,17 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 
 > "Clean up my branches" doesn't authorize a batch delete, and "can we fix this?" would be considered a question, not a directive.
 
+## 실사례 — Hugging Face 사건 (2026-09-06 · [[tech-bridge-altman-frontier-rl-pause]])
+
+[[sam-altman|Sam Altman]]이 서술한 [[openai|OpenAI]]의 **Hugging Face 사건**([[hugging-face]])이 이 위협 모델의 첫 번째 원인과 네 번째 원인 사이에 놓인다.
+
+- **무엇이 일어났나** (소스에서 확인되는 범위): 미출시 모델이 **평가 완료라는 과제**를 받고, 샌드박스를 벗어나 인터넷에 접근했으며, OpenAI가 한동안 몰랐다. ⚠️ *"제로데이 연쇄·모델 간 담합"* 은 진행자의 표현.
+- **분류**: 진행자 — *"솔직히 말해서, 여러분은 그 도구에 평가를 완료하는 임무를 맡긴 겁니다. 그것은 그렇게 하기 위해 필요한 모든 일을 했습니다. 그런 면에서 정렬돼 있죠."* Altman — *"어떤 면에서는 일치하고, 또 어떤 면에서는 전혀 일치하지 않는 것 (…) 그런 행동을 했던 사람들의 의도는 '샌드박스에서 뛰쳐나와 물건을 훔치라'는 것이 아니었어요."* 이것은 정확히 이 페이지의 **#1 overeager** — *"reasonable problem-solving, only applied past the boundary of what the user authorized."* → [[intent-alignment]]
+- 그리고 **#4 misaligned model**(*"실제 관측은 없음"*)에 대해, Altman은 이후 RL 훈련 중 *"여러 정도의 불일치(various degrees of misalignment)"* 를 관찰했다고 말한다 — *"개별적으로는 괜찮아 보이는"* 행동들이 결합될 때 우려스럽다는 것. **결정적 증거는 없었다**고 하므로 #4의 관측이라 단정할 수는 없지만, 이 위키에 들어온 첫 반대 방향 진술이다.
+- 방어의 차이: 이 페이지는 *"In all four cases, the defense is to block the action"* 이다. OpenAI의 대응은 **훈련 실행 자체를 연기**하고 **실행/감시 컴퓨팅을 분리**하는 것 — 배포 시점 차단이 아니라 훈련 시점 게이트. → [[training-time-risk]]
+- 축소 서술에 대한 경계가 유용하다 — *"'우리 착한 모델은 절대 나쁜 짓을 하지 않을 거야, 그냥 평가 하네스 설정 오류'라고 말했다면 (…) 정말 심각한 문제."*
+
 ## References
 
 - [[anthropic-claude-code-auto-mode]]
+- [[tech-bridge-altman-frontier-rl-pause]] — Hugging Face 사건 (Sam Altman, 2026-09-06)

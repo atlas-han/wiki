@@ -3,11 +3,11 @@ title: Fuzzy Intent Discovery
 type: concept
 category: pattern
 tags: [agent, intent, elicitation, state, information-gain, consumer]
-related: [multimodal-elicitation, adaptive-response-format, context-engineering, generator-evaluator-pattern, verifiable-goals, outcome-engineering, signal-layer]
+related: [multimodal-elicitation, adaptive-response-format, context-engineering, generator-evaluator-pattern, verifiable-goals, outcome-engineering, signal-layer, intent-alignment]
 first-seen: tech-bridge-multimodal-commerce-agent
-sources: [tech-bridge-multimodal-commerce-agent]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause]
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-06
 ---
 
 # Fuzzy Intent Discovery
@@ -98,8 +98,19 @@ counterfactual sensitivity를 **양방향**으로 재는 것이 정교한 지점
 
 > ⚠️ 한 강연에서 제시된 **사내 프레임워크**이고, 효과에 대한 수치·벤치마크는 제시되지 않았다.
 
+## 공급자 측 진술 — 의도 이해가 병목 (2026-09-06 · [[tech-bridge-altman-frontier-rl-pause]])
+
+이 페이지가 소비자 대면 에이전트의 설계 문제로 다룬 **articulation gap**을, [[sam-altman|Sam Altman]]은 모델 공급자의 **현재 병목**으로 말한다.
+
+> 사람들이 **1년 전처럼 모델의 지능에 의해 제한받는다고 느끼지는 않지만**, **모델이 사용자의 의도를 이해하고 안정적으로 실행하는 능력에 의해 점점 더 제한받고 있다**고 생각합니다.
+
+그리고 그것을 **정렬**의 정의로 삼는다 — *"우리가 정렬에 대해 이야기할 때, 의도를 따르는 것에 대해 이야기하잖아요. 사용자의 의도요."* → [[intent-alignment]]
+
+이 페이지의 처방(working state · information gain 질문 하나)이 *에이전트가 의도를 끌어내는 절차*라면, Altman의 진술은 *모델이 그 절차 없이도 의도를 읽어야 한다*는 요구다. 같은 문제의 두 층 — 하네스 층과 모델 층 — 이고, [[harness-pruning]]대로라면 전자는 후자가 좋아질수록 얇아진다. ⚠️ 그가 근거로 드는 것은 기업 고객의 체감뿐이며 측정치는 없다.
+
 ## References
 
 - [[tech-bridge-multimodal-commerce-agent]] — [[nidhi-kaushik-vyas]] / [[google-deepmind]]
 - 다음 단계: [[multimodal-elicitation]] → [[adaptive-response-format]]
 - 관련: [[context-engineering]] · [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[outcome-engineering]]
+- [[tech-bridge-altman-frontier-rl-pause]] — 의도 이해가 병목 (Sam Altman, 2026-09-06)

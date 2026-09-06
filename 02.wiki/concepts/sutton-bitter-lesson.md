@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
-related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning]
+related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi]
 created: 2026-05-25
-updated: 2026-09-03
+updated: 2026-09-06
 ---
 
 # The Bitter Lesson
@@ -128,6 +128,15 @@ Rich Sutton의 2019년 3월 13일 에세이. 70년 AI 연구사의 **메타 패�
 
 > **80년대에도 신경망에 대해 그런 말이 나왔었죠. 당신은 그 실수를 두 번 다시 반복하지 않을 거예요.**
 
+## 경제·정책 측 진술 (2026-09-06)
+
+에세이의 논리를 **파는 쪽**의 두 진술이 같은 날 들어왔다. 연구 주장이 아니라 사업·정책 발언이라는 점에서 위의 반례들과 층이 다르다.
+
+- [[sam-altman]] ([[tech-bridge-altman-agi-superintelligence]]): *"우리가 **역량과 잠재력이 기하급수적으로 증가하는 추세**에 있다는 점이며, 이러한 추세는 앞으로도 계속될 것."* 둔화 기미가 없느냐는 질문에 *"Air pocket above"*(⚠️ 의미 미확정). 그리고 컴퓨트가 이기는 세계의 결과 — *"효율성 향상을 찾을 때마다 전 세계 토큰 수요가 계속 급증해서 그걸 다 잡아먹어 버리죠."* → [[compute-constrained-growth]]
+- [[jensen-huang]] ([[tech-bridge-jensen-huang-g20-agi]]): 에세이를 **안전 논증**으로 쓴다 — *"3년 전 기술 발전 속도를 늦춰야 한다는 생각이 막 형성되던 시기를 떠올려보면, 사실 그러한 **발전이 오히려 안전성을 높였습니다.** 이러한 발전은 그것이 환각을 일으키지 않고 실제 진실에 기반을 두도록 만들었습니다."* 즉 스케일이 정확도만이 아니라 **안전도 가져온다**는 주장.
+
+Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확률이 필요"*)와 정면으로 갈린다 — 한쪽은 안전을 위해 구조를 넣자 하고, 다른 쪽은 안전을 위해 더 발전시키자 한다. 그리고 같은 날 Altman은 발전 속도가 안전을 앞질렀다며 **훈련을 늦췄다**([[training-time-risk]]). ⚠️ 셋 다 해소하지 않는다. 다만 화자의 위치를 적어 둔다 — Ghahramani는 연구자, Huang은 인프라 판매자, Altman은 모델 판매자다.
+
 ## References
 
 - [원문 (incompleteideas.net, self-signed cert)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
@@ -135,3 +144,4 @@ Rich Sutton의 2019년 3월 13일 에세이. 70년 AI 연구사의 **메타 패�
 - [Wikipedia: Bitter lesson](https://en.wikipedia.org/wiki/Bitter_lesson)
 - 본 위키 내 적용: [[agent-harness-design]], [[brain-hands-decoupling]], [[anthropic-managed-agents]]
 - ⚠️ 반대 입장: [[tech-bridge-uncertainty-mathematics]] · [[bayesian-inference]] · [[zoubin-ghahramani]]
+- 경제·정책 측: [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-jensen-huang-g20-agi]] (2026-09-06)

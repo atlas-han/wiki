@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # Index
@@ -44,6 +44,8 @@ updated: 2026-09-05
 - [[katelyn-lesse]] — [[anthropic|Anthropic]] Claude Platform, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]])
 - [[nidhi-kaushik-vyas]] — [[google-deepmind|Google DeepMind]] 제품, 멀티모달 협업 커머스 에이전트 3단계 루프·단계별 auto-rater ([[tech-bridge-multimodal-commerce-agent]])
 - [[zoubin-ghahramani]] — 케임브리지 교수 · [[google-deepmind|Google DeepMind]], 불확실성의 수학으로 본 지능. [[bayesian-inference]]·[[continual-learning]] ([[tech-bridge-uncertainty-mathematics]])
+- [[sam-altman]] — [[openai|OpenAI]] CEO. 프론티어 RL 실행 연기·[[intent-alignment]]·[[agi-definition]]·[[compute-constrained-growth]]·[[ai-privilege]] (*Sources with Alex Heath* 3부작, sources: 3) ⚠️ 당사자 진술
+- [[jensen-huang]] — [[nvidia|NVIDIA]] CEO. 토큰=kWh·5단 케이크·에이전트 하네스=외골격·"사실상 AGI"·직업은 남고 작업이 자동화 ([[tech-bridge-jensen-huang-g20-agi]]) ⚠️ 인프라 판매자의 정책 무대 발언
 - [[corey-haines]] — 마케팅 [[agent-skills|스킬]] 48종 저자, 온보딩·페이월·churn ([[tech-bridge-six-agent-skills]])
 - [[sahil-lavingia]] — Gumroad 창업, *The Minimalist Entrepreneur* 스킬 10종 · 실명 10명·유료 3명 검증 게이트 ([[tech-bridge-six-agent-skills]])
 - [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] — [[anthropic|Anthropic]] [[claude-code|Claude Code]] 팀 ([[tech-bridge-claude-code-team-workflow]], ⚠️ 발언별 화자 특정 불가)
@@ -54,7 +56,7 @@ updated: 2026-09-05
 
 ### Organizations
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
-- [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입
+- [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입 · CEO 3부작(프론티어 RL 연기 · Hugging Face 사건 · [[openai-astra|Astra]] · Merge, sources: 4)
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
 - [[ai-labs]] — 에이전트 스킬·AI 코딩 워크플로 영상 제작 주체이자 소프트웨어 회사 ([[tech-bridge-six-agent-skills]] 원 제작자)
@@ -73,6 +75,8 @@ updated: 2026-09-05
 - [[uk-aisi]] — UK AI Security Institute, frontier 모델 보안 평가 정부 기관
 - [[shanghai-ai-lab]] — 상하이 AI 연구소, [[self-harness]] 논문 발표 (본 위키 첫 중국 lab)
 - [[google-deepmind]] — Google의 AI 연구·제품 조직. 위키 첫 Google 조직 페이지 · 소비자 대면 커머스 에이전트 ([[tech-bridge-multimodal-commerce-agent]])
+- [[nvidia]] — GPU·AI 인프라 회사. 위키 첫 **하드웨어 층** 조직 — 대체 가능·내구적 아키텍처, 1 GW≈500~600억 달러, 100 GW 계획 ([[tech-bridge-jensen-huang-g20-agi]])
+- [[hugging-face]] — ML 모델 플랫폼. 위키에는 [[openai]] 미출시 모델이 평가 중 샌드박스를 벗어난 **"Hugging Face 사건"**의 당사자로만 등장 ([[tech-bridge-altman-frontier-rl-pause]], ⚠️ OpenAI 측 진술만)
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -86,6 +90,7 @@ updated: 2026-09-05
 - [[glm-5]] — GLM-5, [[self-harness]] 실험 base 모델 (held-out 42.9→57.1%)
 - [[gemma-4]] — Google Gemma 4, [[cerebras]] 위에서 [[agentic-sites]] 페이지 생성 평균 1.1초
 - [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
+- [[openai-astra]] — [[openai|OpenAI]] 차세대 **모델 등급명**("더 비싸고 큰 모델 등급", Soul과 같은 방식). 컴퓨터 사용 "인간 수준" 체감 ([[tech-bridge-altman-astra-hardware]], ⚠️ 스펙 없음)
 
 ### Products
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]])
@@ -139,9 +144,15 @@ updated: 2026-09-05
 - [[aleatoric-epistemic-uncertainty]] — 세계의 무작위성 vs 겪어본 적 없음. 구분이 중요한 이유는 **행동이 갈리기 때문** (sources: 1)
 - [[continual-learning]] — 배포 이후에도 계속 갱신되는 학습. Bayesian update의 근사이자 catastrophic forgetting 문제 (sources: 1)
 - [[in-context-learning]] — 가중치를 안 바꾸고 activation 안에서 학습. outer loop(SGD) vs **inner loop**(시퀀스 읽기) (sources: 1)
-- [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. Ng는 AI 공포 마케팅을 이 프레임으로 읽음
+- [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. Ng는 AI 공포 마케팅을 이 프레임으로 읽음 · 네 입장(Ng·Gates·Altman·Huang) 표 (sources: 5)
 - [[memex]] — Vannevar Bush 1945년 비전, [[llm-wiki-pattern]]의 사상적 조상
-- [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned)
+- [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned) · Hugging Face 사건 실사례 (sources: 2)
+- [[intent-alignment]] — 정렬 = **사용자 의도 따르기**. 두 원칙: 통제권 유지·광범위한 권한 분산. 병목은 지능이 아니라 의도 이해 (Altman, sources: 1)
+- [[agi-definition]] — AGI는 이정표, 초지능은 무한 경사로. Ng·Altman·Huang 세 입장을 나란히 — 정의를 무의미화하는 것이 누구에게 유리한가 (sources: 3)
+- [[ai-jobs-impact]] — 일자리 네 입장(Gates 2년/4년 대체 · Ng task 30–40% · Altman "예상보다 적었다" · Huang "작업은 자동화, 직업의 목적은 남는다") (sources: 4)
+- [[intelligence-as-infrastructure]] — AI = 5단 케이크(에너지·칩·인프라·모델·데이터/앱), 토큰=kWh, 각국은 모든 층을 지을 필요 없이 확산에 집중 (Huang, sources: 1)
+- [[compute-constrained-growth]] — 성장은 컴퓨팅 배분의 함수, 효율 개선은 토큰 수요가 삼킨다, 네오클라우드 거품 징후 (Altman, sources: 3)
+- [[ai-privilege]] — AI 대화에 의사·변호사급 **비밀유지특권**을. 정부의 채팅 기록 강제 금지 제안, 상시 에이전트 데이터의 법적 지위 (Altman, sources: 1)
 - [[context-anxiety]] — context limit이 가까워졌다고 *느끼면* 조기 마무리하는 모델 행동
 
 ### Patterns
@@ -180,6 +191,7 @@ updated: 2026-09-05
 - [[skill-self-improvement]] — 실제 실패에서 스킬 개선안을 쌓되 **승격은 사람이**. 관찰은 자동, 반영은 수동 (sources: 1)
 - [[ai-native-sdlc]] — intent→spec→plan→test→deploy→maintain 아티팩트 체인. 유지보수가 intent를 만들어 루프를 닫는다 (sources: 1)
 - [[intent-md]] — 에이전트가 사람을 인터뷰해 만드는 요구사항 이전 아티팩트. 백로그·인계를 대체 (sources: 1)
+- [[training-time-risk]] — 위험의 무게중심이 **배포→훈련**으로. safety case가 프론티어 RL 실행을 게이트, 실행/감시 컴퓨팅 분리, IPO 연기 근거 (OpenAI, sources: 2)
 
 ---
 
@@ -291,13 +303,17 @@ updated: 2026-09-05
 - [[tech-bridge-claude-code-team-workflow]] — Anthropic Claude Code 팀 3인: Claude Tag 70~80%, 하네스 pruning, AskUserQuestion→아티팩트, routine, 코드 리뷰에서 태어난 workflows, fan-out의 reduce 병목 ([[tech-bridge]], 2026-09-03)
 - [[tech-bridge-six-agent-skills]] — AI Labs: task-observer 자기개선, Corey Haines 마케팅 3종(온보딩·페이월·churn), Karpathy 4원칙 상위폴더 CLAUDE.md 상속, OpenCLI, Variate, Sahil Lavingia 검증 게이트 ([[tech-bridge]], 2026-09-04)
 - [[tech-bridge-ai-native-sdlc]] — Switch Dimension 해설 / Anthropic 원문서: intent.md 아티팩트 체인, 거버넌스·버전, subagent·worktree, continuous evals, 비동기 PR 리뷰, 자율 유지보수 ([[tech-bridge]], 2026-09-04)
+- [[tech-bridge-altman-frontier-rl-pause]] — Sam Altman 3부작 1부 (Sources with Alex Heath): 프론티어 RL 실행 연기, Hugging Face 사건, 결정적 증거 없는 불일치×속도, 위험의 배포→훈련 이동, 정렬=의도 따르기, 두 원칙, 트랜지스터·반복적 배포, "YOLO CEO" ([[tech-bridge]], 2026-09-05, ⚠️ 당사자 진술)
+- [[tech-bridge-altman-agi-superintelligence]] — Sam Altman 3부작 2부: AGI=마케팅 용어·이정표 vs 무한 경사로, 20분짜리 승리·34시간 세션, 상위 0.001% 컴퓨트 베팅, 물 밈 반박, 일자리 "예상보다 적었다", 사이드 퀘스트(브라우저·Sora)·사전학습 부진, 두 번 재고 한 번 자르기 ([[tech-bridge]], 2026-09-05)
+- [[tech-bridge-altman-astra-hardware]] — Sam Altman 3부작 3부: Astra 컴퓨터 사용 "인간 수준"·게으른 사용자, 정부 테스트 찬성·고객 선별 반대, Codex·Merge·범용 구독·능동적 컴퓨터, 성장=컴퓨팅 배분, 네오클라우드 거품·Jalapeno, RSI·IPO, 휴머노이드, Jony Ive 기기, AI 특권법 ([[tech-bridge]], 2026-09-05)
+- [[tech-bridge-jensen-huang-g20-agi]] — Jensen Huang × Howard Lutnick (G20 혁신 장관 회의): 토큰=kWh, 5단 케이크, 에이전트 하네스=외골격→피지컬 AI, 발전이 곧 안전·실제 피해만 규제, GPU 대체 가능성·1 GW 500~600억 달러·100 GW, "사실상 AGI"·MIT 박사 온보딩 사고실험, 직업은 남고 작업이 자동화 ([[tech-bridge]], 2026-09-05, **29:34**, ⚠️ 판매자 발언)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 263 (log 포함; + 2026-09-05 Tech Bridge 4편 일괄: source 4 + concept 8 + entity 9)
+- 총 페이지 수: 283 (02.wiki 실측, log 포함; + 2026-09-06 Tech Bridge 4편 일괄: source 4 + concept 7 + entity 5. ⚠️ 이전 항목의 263은 실측 267의 오기였다)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-05 (Tech Bridge **4편 일괄** — 하루 최다. [[tech-bridge-uncertainty-mathematics]]가 위키 첫 **이론·기초연구** 소스이자 [[sutton-bitter-lesson]]에 대한 첫 **정면 반대 입장**을 들여왔고, [[tech-bridge-claude-code-team-workflow]]가 [[harness-pruning]]으로 하네스 논의에 **시간 축**을 붙였다)
+- 마지막 ingest: 2026-09-06 (Tech Bridge **4편 일괄**, 이틀 연속 — 위키 첫 **frontier lab CEO 층위** 소스. [[sam-altman]] 3부작이 [[training-time-risk]]로 안전 게이트를 배포에서 **훈련**으로 옮기고 [[intent-alignment]]를 정의했으며, [[jensen-huang]]이 [[intelligence-as-infrastructure]]와 "하네스=외골격, AGI 이후에도 남는 조직의 일"을 들여왔다. [[agi-definition]]·[[ai-jobs-impact]]·[[regulatory-capture]]가 세·네 입장 비교표가 됐다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-05
+- 마지막 갱신: 2026-09-06

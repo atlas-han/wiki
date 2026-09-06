@@ -3,11 +3,11 @@ title: Trusted Throughput
 type: concept
 category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
-related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction]
+related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware]
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-06
 ---
 
 # Trusted Throughput
@@ -139,7 +139,24 @@ Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacev
 
 차이는 발표자가 이것을 **문제로 규정하지 않는다**는 점이다 — *"지나치게 생산적인 사람이 된 것 같아서 속도를 좀 줄여야 할 것 같아요"*라는 농담으로 처리한다. 이 페이지의 처방(대시보드는 연기 감지기, 조사 신호는 *안 쓰는 쪽*)이 개인 수준에서는 아직 없다. 두 소스를 나란히 두면 **한도(limit)가 곧 목표가 되는** 구조는 조직이든 개인이든 같고, 다른 것은 그것을 문제로 볼 인센티브뿐이다.
 
+## 판매자 층의 토큰 — kWh 비유 (2026-09-06)
+
+이 페이지(구매자: 토큰=LOC)와 [[token-roles]](모델 공급자: 토큰=역할)에 세 번째 층이 붙었다. [[jensen-huang|Jensen Huang]]([[tech-bridge-jensen-huang-g20-agi]]):
+
+> 세계는 **에너지**라는 새로운 개념을 발견하고 그것을 **킬로와트시당 달러**로 환산하여 화폐 가치를 매겼습니다. 오늘날에는 **백만 토큰당 달러**로 계산됩니다. **같은 개념이에요.**
+
+| 층 | 토큰의 정의 | 최적화 방향 |
+|---|---|---|
+| 구매자 (이 페이지) | LOC — 연기 감지기 | 총량이 아니라 **ROI** |
+| 모델 공급자 ([[token-roles]]) | 역할 — advising·grading·dreaming | 단가가 아니라 **정확한 토큰** |
+| 하드웨어 공급자 ([[intelligence-as-infrastructure]]) | 상품 단위 — kWh의 후계 | **더 많이** |
+
+그리고 [[sam-altman]]([[tech-bridge-altman-astra-hardware]])이 총량의 추세를 준다 — *"효율성 향상을 찾을 때마다 전 세계 토큰 수요가 계속 급증해서 그걸 다 잡아먹어 버리죠."* → [[compute-constrained-growth]]
+
+이 페이지의 처방(*"토큰 단가는 잘못된 최적화 대상"*)은 세 층 어디서도 부정되지 않는다. 다만 하드웨어 층에서는 그것이 *"그러니 더 써라"* 로 읽힌다는 점을 기록해 둔다 — Amazon 리더보드 일화가 경고한 바로 그 방향이다.
+
 ## References
 
 - [[tech-bridge-trusted-throughput]] — [[mingsheng-hong]] ([[ironclad]]), 2026-09-01
 - [[tech-bridge-claude-platform-agent-era]] — Anthropic Claude Platform 팀, 2026-09-01
+- [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-altman-astra-hardware]] — 판매자 층의 토큰 (2026-09-06)

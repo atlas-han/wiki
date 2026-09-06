@@ -3,11 +3,11 @@ title: Agent Harness Design
 type: concept
 category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
-related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows]
+related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi]
 created: 2026-05-25
-updated: 2026-09-05
+updated: 2026-09-06
 ---
 
 # Agent Harness Design
@@ -155,6 +155,30 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 
 ⚠️ 언제 지워도 되는지 판단하는 **기준·절차는 소스에 없다.** 전부 사후 회고로만 이야기된다. 그리고 이 팀은 모델 개발자와 같은 조직에 있어 변화를 가장 먼저 안다 — *"대부분의 제품들이 이렇게 유통기한이 짧지는 않을 것 같아요."*
 
+## 세 번째 정의 — 외골격, 그리고 온보딩 (2026-09-06 · [[tech-bridge-jensen-huang-g20-agi]])
+
+[[jensen-huang|Jensen Huang]]이 G20 장관들 앞에서 하네스를 한 문장으로 정의했다.
+
+> **AI를 유용하게 만든 것은 LLM에 외골격(exoskeleton)을 씌운 것**과 같습니다. 그 외골격은 **에이전트 하네스**라고 불리는 것입니다. 본질적으로 뇌에 **지식을 검색하고, 작업 기억을 갖고, 도구를 사용하고, 협업하고, 문제를 해결**하는 데 필요한 부분을 제공하는 것입니다.
+
+| 정의 | 출처 | 강조 |
+|---|---|---|
+| **while 루프** | [[anthropic]] Claude Platform 팀 | 구조 — 입력→모델→도구 반복 |
+| **AI Layer 6요소** | [[harness-engineering]] 커뮤니티 | 구성 — 규칙·스킬·MCP·훅·서브에이전트·문서 |
+| **외골격** | Huang | 기능 — 뇌에 없는 것(검색·기억·도구·협업)을 보탬 |
+
+셋 다 *모델 밖에서 모델이 못 하는 것을 보태는 것*이고, 이 페이지의 핵심 원리(*"가정의 다발"*)와 정합한다. Huang의 것이 가장 짧고, **물리 세계로 그대로 옮겨진다** — *"이 에이전트는 물리적인 몸체 안에 구현되어 갑자기 로봇이 되는 것"*. → [[brain-hands-decoupling]]
+
+### 하네스가 조직의 일이 된다
+
+같은 소스의 두 번째 정의가 이 페이지에 더 새롭다. AGI 도달을 말한 직후:
+
+> 당신은 MIT 박사 학위를 가진 신입 졸업생을 온보딩하는 데 쏟는 에너지처럼, 그들에게 **맥락, 목적, 관련성, 접근성** 등 모든 것을 제공하는 데 모든 에너지를 쏟을 것입니다. 이는 본질적으로 **AI를 둘러싼 하네스, AI를 둘러싼 환경**을 마련해서 AI가 생산적인 작업을 수행할 수 있도록 하는 것과 같습니다. 그 모든 하네싱, 그 모든 환경 조성이 바로 **기업이 하는 일이고, 리더가 하는 일**입니다.
+
+이 정의는 이 페이지의 하네스관과 **한 지점에서 갈린다.** 여기서 하네스는 *"현재 모델의 오류 모드를 보완하는 것"*([[harness-pruning]])이라 모델이 좋아지면 줄어든다. Huang의 하네스는 **결함 보완이 아니라 맥락 부여**라서 모델이 아무리 좋아져도 — *"AGI가 등장하더라도"* — 사라지지 않는다. 둘은 모순이 아니라 **하네스의 두 층**이다: 결함 보완층은 [[harness-pruning]]대로 얇아지고, 맥락 부여층([[context-engineering]]·[[agent-skills]]·[[agent-org-adoption]])은 남는다. ⚠️ 이 층 구분은 위키의 정리다.
+
+> ⚠️ 인프라 판매자의 정책 무대 발언이다. "하네스는 남는다"는 주장은 "그러니 각국·각사가 자체 지능에 투자하라"는 처방과 짝이다 → [[intelligence-as-infrastructure]].
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
@@ -164,3 +188,4 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 - [[anthropic-dynamic-workflows]]
 - [[self-harness-paper]] — Self-Harness (Shanghai AI Lab), 자기개선 하니스 시각
 - 관련 개념: [[self-harness]] · [[harness-engineering]]
+- [[tech-bridge-jensen-huang-g20-agi]] — 외골격 정의 · 온보딩=하네스 (Jensen Huang, 2026-09-06)

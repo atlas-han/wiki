@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-06
 ---
 
 # Anthropic
@@ -63,6 +63,16 @@ updated: 2026-09-02
 Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bridge-ai-native-sdlc]]의 **해설을 통해서만** 그 내용을 안다. 핵심은 [[intent-md|intent.md]] → `spec.md` → `plan.md`로 이어지는 **아티팩트 체인**과, 유지보수에서 Claude가 스스로 intent를 만들어 **루프를 닫는** 구조다. → [[ai-native-sdlc]]
 
 > ⚠️ **원문서(<https://claude.com/blog/the-ai-native-sdlc-playbook>)는 아직 직접 ingest하지 않았다.** 해설에 나온 *"우리는 두 배 더 빠릅니다"* 같은 수치는 근거가 확인되지 않았다.
+
+## 경쟁사가 말하는 Anthropic (2026-09-06 · Sam Altman 인터뷰)
+
+[[sam-altman|Sam Altman]]의 3부작([[tech-bridge-altman-frontier-rl-pause]]·[[tech-bridge-altman-astra-hardware]])에 Anthropic이 **경쟁 상대**로 등장한다. 이 페이지에 처음 들어온 **외부(경쟁사) 시각**이며 전부 Altman·진행자의 발언이다.
+
+- 진행자: *"Anthropic은 코딩에 대한 단일 초점으로 지금의 위치에 올랐다"*, *"ARR도 높고 IPO도 먼저"*. Altman: *"우리가 못 본 게 아니라 소비자 증가세 때문에 **우선순위에서 밀려났다**"*, *"기존에 Anthropic 제품을 고집하던 사람들까지도 [[codex|Codex]]로 갈아탔다"*(⚠️ 개인 표본), *"저는 자리를 바꾸고 싶지 않습니다."*
+- 진행자가 인용한 *"YOLO CEO"* 발언을 **Dario Amodei**의 것이라 하고, 1년 전 컴퓨팅 구축을 *"yoloing"* 이라 비판했다고 서술. Altman: *"제가 그 단어를 말했던 것 같아요."*
+- 진행자가 *"Hugging Face 사건이나 **Mythos·Fable** 사태, 다른 연구소 책임자들이 이 문제에 대해 이야기하는 방식"* 을 종말론적 여론의 원인으로 나열한다 — ⚠️ 무엇이 있었는지는 말하지 않는다. → [[claude-mythos-preview]]
+- 진행자: 경쟁사들이 안전 문제를 *"매우 하향식(top-down)"* 으로 프레이밍한다. Altman의 대비는 *"세상은 반드시 힘을 얻어야 한다"*(분산) — [[intent-alignment]].
+- 제로섬 여부: *"현재로서는 모두가 성장"*.
 
 ## 미해결 사항 (위키가 채워갈 부분)
 

@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, frontier-model, unreleased, cybersecurity]
 aliases: [Mythos Preview, Mythos-class]
-sources: [anthropic-project-glasswing-update-2026-05]
+sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause]
 links: []
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-06
 ---
 
 # Claude Mythos Preview
@@ -34,6 +34,12 @@ updated: 2026-05-25
 - 공개된 플래그십: [[claude-opus-4-7]] (엔터프라이즈 패치 등에 활용)
 - 직전 세대: [[claude-opus-4-6]]
 - Mythos Preview: 비공개 frontier capability
+
+## 외부 언급 (2026-09-06 · [[tech-bridge-altman-frontier-rl-pause]])
+
+*Sources with Alex Heath* 진행자가 [[sam-altman|Sam Altman]]에게 종말론적 여론의 원인을 나열하며 *"Hugging Face 사건이나 **Mythos·Fable** 사태(what's happened with Mythos or Fable), 다른 연구소 책임자들이 이 문제에 대해 이야기하는 방식"* 이라고 말한다. ko 자막은 *"미소스, 페이블 사태"*.
+
+> ⚠️ **무슨 일이 있었는지는 소스에 없다.** 진행자의 한 문장뿐이고 Altman은 그 부분을 받지 않는다. 이 위키는 이 모델이 [[project-glasswing]]에서 공개된 사이버 capability 외에 어떤 "사태"와 연결되는지 알지 못한다. *Fable* 이라는 이름도 이 언급이 위키 첫 등장이며 페이지를 만들지 않았다.
 
 ## 미해결 사항
 
