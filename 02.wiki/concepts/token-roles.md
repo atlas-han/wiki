@@ -3,11 +3,11 @@ title: Token Roles
 type: concept
 category: pattern
 tags: [agent, token-economics, model-routing, evaluation, memory, anthropic]
-related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals]
+related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-claude-platform-agent-era]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi]
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-07
 ---
 
 # Token Roles
@@ -94,6 +94,19 @@ Angela 본인의 수동 버전도 대담에 나온다 — 마음에 안 드는 �
 - [[agent-harness-design]] — 하네스 / 메타 하네스 계층 구분
 - [[trusted-throughput]] — 구매자 쪽에서 만나는 같은 결론
 - [[agent-distributed-systems]] — 이 계층이 열리기 위한 선행 조건
+
+## 공급자가 단위를 부정한다 (2026-09-07 · [[tech-bridge-altman-g20-economic-boom]])
+
+같은 G20 회의에서 토큰을 두고 두 판매자가 정반대로 말한다.
+
+| 화자 | 토큰은 무엇인가 |
+|---|---|
+| [[jensen-huang]] | **상품 단위** — *"백만 토큰당 달러. kWh와 **같은 개념이에요.**"* → [[intelligence-as-infrastructure]] |
+| [[sam-altman]] | **버려야 할 단위** — *"저는 여기서 토큰이라는 단위를 정말 싫어합니다. **어리석은 단위이고 아무도 신경 쓰지 않아야** 하지만, 그냥 **지능 수준을 나타내는 약어**로 생각해 보자면"* |
+
+이 페이지는 토큰을 **역할**(advising·grading·dreaming)로 봤고 [[trusted-throughput]]은 **연기 감지기**로 봤다. Altman의 진술은 그 둘과 같은 방향이다 — **토큰 자체는 의미가 없고 대용치일 뿐**이라는 것. 다만 그가 곧바로 그 단위로 6년 반 외삽을 한다는 점에서, *부정하면서 쓰는* 형태다. → [[compute-constrained-growth]]
+
+⚠️ 두 입장을 해소하지 않는다. 토큰을 **파는 층**과 토큰을 **소모하는 층**의 차이로 읽는다.
 
 ## References
 

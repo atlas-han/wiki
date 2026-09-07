@@ -32,7 +32,7 @@ sources:
   - tech-bridge-altman-astra-hardware
   - tech-bridge-jensen-huang-g20-agi
 created: 2026-06-03
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Tech Bridge
@@ -81,6 +81,22 @@ updated: 2026-09-06
 - 재배포 범위가 컨퍼런스 강연을 넘어 **인터뷰 채널 재배포**(MTS)까지 확장됨 — 2026-08-31 두 번째 편이 첫 사례. 2026-09-01에는 **VC 팟캐스트**(Kleiner Perkins *Builders* 시즌 2) 재배포가 추가됐고, 이것이 채널에서 처음 보는 **43분대 장편**이자 **공식 챕터가 없는** 영상이다.
 
 > 채널 운영 주체는 여전히 미확인. 원본 표기는 영상마다 설명란·워터마크로 다를 수 있음.
+
+## G20 시리즈 (2026-09-07 ingest)
+
+2026-09-05·09-06 업로드분으로 **같은 행사(G20 혁신 장관급 회의, Chapel Hill)의 세 세션**이 이 위키에 모였다. 채널이 하나의 행사를 **여러 편으로 나눠 올린 두 번째 사례**다(첫 번째는 Sam Altman 3부작, 09-05).
+
+| 편 | 화자 | 길이 | 소스 |
+|---|---|---|---|
+| — | [[jensen-huang]] (NVIDIA) | 29:34 | [[tech-bridge-jensen-huang-g20-agi]] |
+| **첫 순서** | [[elon-musk]] (Tesla·SpaceX, 화상) | 13:17 | [[tech-bridge-elon-musk-g20-ai-future]] |
+| — | [[sam-altman]] (OpenAI) | 31:32 | [[tech-bridge-altman-g20-economic-boom]] |
+
+편 사이의 순서는 Musk 편의 *"우리의 **첫 번째 연사**"* 로만 확정된다. 나머지 둘의 상대 순서는 소스에 없다.
+
+**시리즈를 묶어 읽을 때 드러나는 것** — 세 화자가 각국에 **서로 다른 층**을 권한다(칩·확산 / 모델 사용 / 발전소). → [[intelligence-as-infrastructure]]
+
+> ⚠️ **채널 특성 관찰**: 이 세 편과 09-05의 Altman 3부작 모두 **당사자 진술**(자기 회사·자기 상품을 말하는 CEO)이다. 채널이 최근 **원 저작자 인터뷰·행사 영상의 한영자막 재배포**로 기울어 있으며, 설명란은 원 출처를 밝히되 **진행자 정보가 편마다 들쭉날쭉하다**(Huang·Altman 편은 설명란에 진행자 표기, Musk 편은 없음; Altman 편은 설명란과 자막이 서로 다른 이름을 가리킨다).
 
 ## References
 

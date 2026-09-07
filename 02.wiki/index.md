@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Index
@@ -46,6 +46,7 @@ updated: 2026-09-06
 - [[zoubin-ghahramani]] — 케임브리지 교수 · [[google-deepmind|Google DeepMind]], 불확실성의 수학으로 본 지능. [[bayesian-inference]]·[[continual-learning]] ([[tech-bridge-uncertainty-mathematics]])
 - [[sam-altman]] — [[openai|OpenAI]] CEO. 프론티어 RL 실행 연기·[[intent-alignment]]·[[agi-definition]]·[[compute-constrained-growth]]·[[ai-privilege]] (*Sources with Alex Heath* 3부작, sources: 3) ⚠️ 당사자 진술
 - [[jensen-huang]] — [[nvidia|NVIDIA]] CEO. 토큰=kWh·5단 케이크·에이전트 하네스=외골격·"사실상 AGI"·직업은 남고 작업이 자동화 ([[tech-bridge-jensen-huang-g20-agi]]) ⚠️ 인프라 판매자의 정책 무대 발언
+- [[elon-musk]] — [[tesla|Tesla]]·[[spacex|SpaceX]] CEO. G20 첫 연사 — default legal 규제론, 스톡피시 수준 12~18개월, 로봇 10억 대, 2027년 15 GW 전력 부족 ([[tech-bridge-elon-musk-g20-ai-future]], ⚠️ 당사자 진술)
 - [[corey-haines]] — 마케팅 [[agent-skills|스킬]] 48종 저자, 온보딩·페이월·churn ([[tech-bridge-six-agent-skills]])
 - [[sahil-lavingia]] — Gumroad 창업, *The Minimalist Entrepreneur* 스킬 10종 · 실명 10명·유료 3명 검증 게이트 ([[tech-bridge-six-agent-skills]])
 - [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] — [[anthropic|Anthropic]] [[claude-code|Claude Code]] 팀 ([[tech-bridge-claude-code-team-workflow]], ⚠️ 발언별 화자 특정 불가)
@@ -76,6 +77,8 @@ updated: 2026-09-06
 - [[shanghai-ai-lab]] — 상하이 AI 연구소, [[self-harness]] 논문 발표 (본 위키 첫 중국 lab)
 - [[google-deepmind]] — Google의 AI 연구·제품 조직. 위키 첫 Google 조직 페이지 · 소비자 대면 커머스 에이전트 ([[tech-bridge-multimodal-commerce-agent]])
 - [[nvidia]] — GPU·AI 인프라 회사. 위키 첫 **하드웨어 층** 조직 — 대체 가능·내구적 아키텍처, 1 GW≈500~600억 달러, 100 GW 계획 ([[tech-bridge-jensen-huang-g20-agi]])
+- [[tesla]] — 전기차·자율주행·휴머노이드 로봇. 위키 조직 축의 첫 **물리 제조업** ([[tech-bridge-elon-musk-g20-ai-future]], sources: 1)
+- [[spacex]] — 항공우주. Musk 진술상 자체 발전소를 지어 Google·Anthropic에 컴퓨팅 임대 ([[tech-bridge-elon-musk-g20-ai-future]], ⚠️ 전부 자기 진술)
 - [[hugging-face]] — ML 모델 플랫폼. 위키에는 [[openai]] 미출시 모델이 평가 중 샌드박스를 벗어난 **"Hugging Face 사건"**의 당사자로만 등장 ([[tech-bridge-altman-frontier-rl-pause]], ⚠️ OpenAI 측 진술만)
 
 ### Models
@@ -144,16 +147,21 @@ updated: 2026-09-06
 - [[aleatoric-epistemic-uncertainty]] — 세계의 무작위성 vs 겪어본 적 없음. 구분이 중요한 이유는 **행동이 갈리기 때문** (sources: 1)
 - [[continual-learning]] — 배포 이후에도 계속 갱신되는 학습. Bayesian update의 근사이자 catastrophic forgetting 문제 (sources: 1)
 - [[in-context-learning]] — 가중치를 안 바꾸고 activation 안에서 학습. outer loop(SGD) vs **inner loop**(시퀀스 읽기) (sources: 1)
-- [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. Ng는 AI 공포 마케팅을 이 프레임으로 읽음 · 네 입장(Ng·Gates·Altman·Huang) 표 (sources: 5)
+- [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. **다섯 입장**(Ng·Gates·Altman·Huang·Musk) 표 · 포획의 *경로*(대기업만 지도부에 접근) 명시 · 가격이 포획이 되는 길 (sources: 7)
 - [[memex]] — Vannevar Bush 1945년 비전, [[llm-wiki-pattern]]의 사상적 조상
 - [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned) · Hugging Face 사건 실사례 (sources: 2)
 - [[intent-alignment]] — 정렬 = **사용자 의도 따르기**. 두 원칙: 통제권 유지·광범위한 권한 분산. 병목은 지능이 아니라 의도 이해 (Altman, sources: 1)
-- [[agi-definition]] — AGI는 이정표, 초지능은 무한 경사로. Ng·Altman·Huang 세 입장을 나란히 — 정의를 무의미화하는 것이 누구에게 유리한가 (sources: 3)
-- [[ai-jobs-impact]] — 일자리 네 입장(Gates 2년/4년 대체 · Ng task 30–40% · Altman "예상보다 적었다" · Huang "작업은 자동화, 직업의 목적은 남는다") (sources: 4)
-- [[intelligence-as-infrastructure]] — AI = 5단 케이크(에너지·칩·인프라·모델·데이터/앱), 토큰=kWh, 각국은 모든 층을 지을 필요 없이 확산에 집중 (Huang, sources: 1)
-- [[compute-constrained-growth]] — 성장은 컴퓨팅 배분의 함수, 효율 개선은 토큰 수요가 삼킨다, 네오클라우드 거품 징후 (Altman, sources: 3)
+- [[agi-definition]] — AGI는 이정표, 초지능은 무한 경사로. Ng·Altman·Huang 세 입장 — 정의를 무의미화하는 것이 누구에게 유리한가 · **도착점 없는 곡선**이라는 네 번째 형식 (sources: 4)
+- [[ai-jobs-impact]] — 일자리 **다섯 입장**(Gates 2년/4년 · Ng task 30–40% · Altman "예상보다 적었다"+창업 붐 · Huang "작업은 자동화" · **Musk 12~18개월 경쟁 불가·로봇 10억 대**) (sources: 6)
+- [[intelligence-as-infrastructure]] — AI = 5단 케이크(에너지·칩·인프라·모델·데이터/앱), 토큰=kWh, 확산에 집중. **G20 세 판매자가 서로 다른 층을 권한다**(칩/모델 사용/발전소) (sources: 3)
+- [[compute-constrained-growth]] — 성장은 컴퓨팅 배분의 함수, 효율 개선은 토큰 수요가 삼킨다, 네오클라우드 거품 징후 · **토큰 외삽**과 **전력이라는 물리적 상한** (sources: 5)
 - [[ai-privilege]] — AI 대화에 의사·변호사급 **비밀유지특권**을. 정부의 채팅 기록 강제 금지 제안, 상시 에이전트 데이터의 법적 지위 (Altman, sources: 1)
 - [[context-anxiety]] — context limit이 가까워졌다고 *느끼면* 조기 마무리하는 모델 행동
+- [[default-legal-regulation]] — 규제 논의를 대상 목록이 아니라 **기본값**으로 옮긴다. *"새로운 것은 default legal이어야"*. 큰 나무 vs 어린 묘목 (Musk, sources: 1)
+- [[power-shortfall]] — 전력이 컴퓨팅의 상한. AI 칩 생산 연 40~50% vs 중국 외 전력 연 10~20% → 2027년 15 GW 결손 (Musk, sources: 3)
+- [[intelligence-abundance]] — 지능의 풍요는 효율이 아니라 **형평** 문제. 밤에 한 시간 불 = 임금 5시간이던 전기의 역사 (Altman, sources: 1)
+- [[one-continuous-exponential]] — 농업·산업·컴퓨터 혁명은 하나의 지수 곡선. *"이것이 마지막 혁명"* 이라는 유혹을 거부 (Altman, sources: 1)
+- [[humanoid-robot-scaling]] — 범용 로봇 유용성 = AI 소프트웨어 × AI 칩 × 손의 정밀도, 그리고 로봇이 로봇을 만드는 재귀 (Musk, sources: 1)
 
 ### Patterns
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
@@ -307,13 +315,15 @@ updated: 2026-09-06
 - [[tech-bridge-altman-agi-superintelligence]] — Sam Altman 3부작 2부: AGI=마케팅 용어·이정표 vs 무한 경사로, 20분짜리 승리·34시간 세션, 상위 0.001% 컴퓨트 베팅, 물 밈 반박, 일자리 "예상보다 적었다", 사이드 퀘스트(브라우저·Sora)·사전학습 부진, 두 번 재고 한 번 자르기 ([[tech-bridge]], 2026-09-05)
 - [[tech-bridge-altman-astra-hardware]] — Sam Altman 3부작 3부: Astra 컴퓨터 사용 "인간 수준"·게으른 사용자, 정부 테스트 찬성·고객 선별 반대, Codex·Merge·범용 구독·능동적 컴퓨터, 성장=컴퓨팅 배분, 네오클라우드 거품·Jalapeno, RSI·IPO, 휴머노이드, Jony Ive 기기, AI 특권법 ([[tech-bridge]], 2026-09-05)
 - [[tech-bridge-jensen-huang-g20-agi]] — Jensen Huang × Howard Lutnick (G20 혁신 장관 회의): 토큰=kWh, 5단 케이크, 에이전트 하네스=외골격→피지컬 AI, 발전이 곧 안전·실제 피해만 규제, GPU 대체 가능성·1 GW 500~600억 달러·100 GW, "사실상 AGI"·MIT 박사 온보딩 사고실험, 직업은 남고 작업이 자동화 ([[tech-bridge]], 2026-09-05, **29:34**, ⚠️ 판매자 발언)
+- [[tech-bridge-elon-musk-g20-ai-future]] — Elon Musk (G20, 화상·첫 연사): default legal vs default illegal·EU 반례, 큰 나무 vs 어린 묘목과 지도부 접근권, 세계 경제 +20~30%(연 20~30조 달러), 스톡피시 수준 12~18개월, 로봇 유용성=소프트웨어×칩×손 정밀도·재귀 제조·10년 10억 대, 2027년 15 GW 전력 부족·중국 GPU 수출 금지 ([[tech-bridge]], 2026-09-06, **13:17**, ⚠️ 당사자 진술 · ko 자막 의미 반전 1건)
+- [[tech-bridge-altman-g20-economic-boom]] — Sam Altman (G20): 2012년 분수령·"왜 안 되겠어?"·GPT-4를 8개월 보유, 사상 최대 창업 붐·세탁소 주인·Codex 3개월→17분, 도입은 "협상 불가능"=100년 전 전기, 맥락은 판매자가 못 준다, 하나의 연속된 지수 곡선, 5년 위험(사이버·생물보안·권력 집중), 토큰 외삽·"어리석은 단위", 밤에 한 시간 불=임금 5시간, 걱정이 곧 해결 기제 ([[tech-bridge]], 2026-09-06, **31:32**, ⚠️ 당사자 진술)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 283 (02.wiki 실측, log 포함; + 2026-09-06 Tech Bridge 4편 일괄: source 4 + concept 7 + entity 5. ⚠️ 이전 항목의 263은 실측 267의 오기였다)
+- 총 페이지 수: 293 (02.wiki 실측, log 포함; + 2026-09-07 Tech Bridge 2편: source 2 + concept 5 + entity 3)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-06 (Tech Bridge **4편 일괄**, 이틀 연속 — 위키 첫 **frontier lab CEO 층위** 소스. [[sam-altman]] 3부작이 [[training-time-risk]]로 안전 게이트를 배포에서 **훈련**으로 옮기고 [[intent-alignment]]를 정의했으며, [[jensen-huang]]이 [[intelligence-as-infrastructure]]와 "하네스=외골격, AGI 이후에도 남는 조직의 일"을 들여왔다. [[agi-definition]]·[[ai-jobs-impact]]·[[regulatory-capture]]가 세·네 입장 비교표가 됐다)
+- 마지막 ingest: 2026-09-07 (Tech Bridge **2편**, 나흘 연속 — 둘 다 **G20 혁신 장관급 회의**(Chapel Hill)이며 09-05 ingest한 [[tech-bridge-jensen-huang-g20-agi|Jensen Huang 편]]과 **같은 행사**다. [[elon-musk]]·[[tesla]]·[[spacex]]가 위키에 처음 들어왔고, 이로써 같은 자리에서 세 판매자가 각국에 서로 다른 인프라 층을 권하는 구도가 [[intelligence-as-infrastructure]]에 정리됐다. [[regulatory-capture]]·[[ai-jobs-impact]]가 다섯 입장 표가 됐다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-06
+- 마지막 갱신: 2026-09-07

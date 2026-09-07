@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom]
 created: 2026-09-01
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -107,6 +107,20 @@ updated: 2026-09-06
 즉 "봇 팀"이 아니라 **하나의 상시 에이전트**이고, 이 페이지가 *"대중화의 장벽은 UX"* 라 진단한 것에 대한 답이 *팀을 없애고 하나로 합치기*다.
 
 이 페이지가 유보했던 것 — *"봇이 사용자의 모든 도구에 로그인한 채 상주하는 모델의 권한·감사 경계"* — 에 대해 Altman 본인이 *"개인 정보 보호 감시라는 악몽"* 이라는 질문을 받고 **AI 특권법**을 제안한다 → [[ai-privilege]]. 즉 상시 에이전트의 데이터 문제가 기술 유보에서 **법 제안**으로 옮겨갔다. ⚠️ 제안이지 제도가 아니다.
+
+## 공급자가 그린 3단계 (2026-09-07 · [[tech-bridge-altman-g20-economic-boom]])
+
+G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
+
+| 단계 | 시점 | 내용 |
+|---|---|---|
+| 1 | 2023 | **손으로 쓰는 ChatGPT** — 세탁소 주인이 마케팅·법률 계약·공급업체 관리에 씀 |
+| 2 | 2025 | **코딩 에이전트와 사무직 에이전트** — *"이러한 추세가 실제로 가속화"* |
+| 3 | *"조만간"* | *"마치 실제 **가상 협력자**처럼 지속적으로 도움을 주는 **장기적이고 안정적인 에이전트**"* |
+
+3단계의 서술이 이 페이지의 정의와 거의 겹친다 — **장기 실행 + 안정성 + 동료 은유**. 이 위키의 기존 증언들([[tech-bridge-grokbot-agent-teams]]·[[tech-bridge-flutter-ai-workflow]])이 **현장에서 이미 하고 있는 것**을 보고했다면, 여기서는 공급자가 그것을 **아직 오지 않은 단계**로 둔다.
+
+⚠️ 시점이 *"조만간"* 뿐이고 무엇이 부족한지(안정성? 비용? 신뢰?)를 말하지 않는다. 현장 증언과의 이 시차를 해소하지 않는다.
 
 ## References
 

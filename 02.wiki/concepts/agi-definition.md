@@ -3,11 +3,11 @@ title: AGI 정의 논쟁 (AGI vs Superintelligence)
 type: concept
 category: theory
 tags: [agi, superintelligence, definition, milestone, openai, nvidia, andrew-ng]
-related: [ai-jobs-impact, intelligence-as-infrastructure, compute-constrained-growth, agent-harness-design, sutton-bitter-lesson, regulatory-capture]
+related: [ai-jobs-impact, intelligence-as-infrastructure, compute-constrained-growth, agent-harness-design, sutton-bitter-lesson, regulatory-capture, one-continuous-exponential]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # AGI 정의 논쟁 (AGI vs Superintelligence)
@@ -55,6 +55,14 @@ Huang의 답은 정의가 아니라 **온보딩 사고 실험**이다.
 - 셋 다 **소스가 인터뷰·연설**이고 측정 가능한 정의를 제시하지 않는다.
 - Altman의 *"최신 내부 모델"* 에 대한 서술은 검증 불가.
 - 이 페이지는 위키가 세 입장을 **나란히 둔 것**이지, 어느 하나를 채택한 것이 아니다.
+
+## 도착점 없는 곡선 (2026-09-07 · [[tech-bridge-altman-g20-economic-boom]])
+
+이 페이지의 정의들은 모두 **도착점을 어떻게 규정할 것인가**를 다뤘다. G20에서 [[sam-altman]]이 제시한 역사관은 **도착이라는 사건 형식 자체와 어긋난다** — 농업·산업·컴퓨터 혁명을 *"하나의 혁명, 하나의 기하급수적인 기술 발전"* 으로 보고, *"이것이 마지막 혁명이다"* 라는 서술을 명시적으로 거부한다. 연속 지수에는 문턱이 없다. → [[one-continuous-exponential]]
+
+같은 회의에서 [[jensen-huang]]이 *"사실상 이미 도달했다"* 고 한 것과 대비된다 — 한쪽은 문턱을 이미 지났다 하고, 다른 쪽은 문턱이라는 개념을 쓰지 않는다.
+
+> ⚠️ **이 소스에서 Altman은 AGI라는 단어를 쓰지 않는다.** 위 대조는 프레임 수준이며, 그가 3부작([[tech-bridge-altman-agi-superintelligence]])의 AGI/초지능 구분을 철회했다는 뜻이 **아니다.** 두 소스를 합쳐 하나의 입장으로 만들지 않는다.
 
 ## References
 

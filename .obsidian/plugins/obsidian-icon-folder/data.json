@@ -438,5 +438,17 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "01.raw/articles/2026-09-06_샘 올트먼이 밝힌 AI 대전환 사상 최대의 경제적 붐이 찾아오는 이유입니다.md": "LiVideo",
+  "01.raw/articles/2026-09-06_일론 머스크가 G20에서 밝힌 AI의 미래 생각보다 훨씬 빨리 옵니다.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-altman-g20-economic-boom.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-elon-musk-g20-ai-future.md": "LiVideo",
+  "02.wiki/entities/elon-musk.md": "LiUser",
+  "02.wiki/entities/tesla.md": "LiBuilding",
+  "02.wiki/entities/spacex.md": "LiBuilding",
+  "02.wiki/concepts/default-legal-regulation.md": "LiBookText",
+  "02.wiki/concepts/humanoid-robot-scaling.md": "LiBot",
+  "02.wiki/concepts/power-shortfall.md": "LiBookText",
+  "02.wiki/concepts/intelligence-abundance.md": "LiBookText",
+  "02.wiki/concepts/one-continuous-exponential.md": "LiBookText"
 }

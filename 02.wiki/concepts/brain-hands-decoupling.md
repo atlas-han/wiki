@@ -3,11 +3,11 @@ title: Brain–Hands Decoupling
 type: concept
 category: architecture
 tags: [agent-infrastructure, decoupling, sandbox, harness]
-related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure]
+related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure, humanoid-robot-scaling]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware]
+sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future]
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Brain–Hands Decoupling
@@ -86,6 +86,19 @@ Token이 sandbox 안에 들어가지 않음:
 **같은 분리 원칙의 물리 세계 확장**이고, 두 사람 모두 우선순위를 **brain**에 둔다. 다른 점은 hands의 실패 모드다 — 컨테이너가 죽으면 tool-call error로 변환해 재시도하면 되지만, 로봇 팔의 실패는 [[agent-distributed-systems]]가 말한 *"부작용은 되돌릴 수 없다"* 가 물리적으로 참이 된다. 소스는 이 문제를 다루지 않는다.
 
 ⚠️ 둘 다 제품 발표에 가까운 진술이고 아키텍처 세부는 없다.
+
+## 분리되지만 곱해진다 (2026-09-07 · [[tech-bridge-elon-musk-g20-ai-future]])
+
+[[elon-musk]]가 범용 로봇의 유용성을 **세 항의 곱**으로 둔다.
+
+> 범용 로봇의 유용성 = **AI 소프트웨어** × **로봇에 탑재된 AI 칩** × **손의 전기기계적 정밀도**
+> 지금 그 세 가지 모두 **기하급수적으로 개선**되고 있습니다.
+
+이 페이지의 논지(brain과 hands는 **분리 가능**하다 — 하네스는 샌드박스가 무엇인지 모른다)와 **모순되지 않고 그 다음 칸이다**: 인터페이스는 분리되지만 **성능은 분리되지 않는다.** 아무리 좋은 brain도 hands가 무디면 유용성이 곱으로 깎인다.
+
+[[jensen-huang]]이 *"에이전트를 물리적 몸체에 넣으면 로봇"* 이라며 hands의 **범위**를 물리 세계로 넓혔다면, Musk는 hands의 **품질이 상한을 만든다**고 말한다. 소프트웨어 층에서는 hands(도구·샌드박스)의 품질이 병목으로 논의된 적이 거의 없는데, 물리 층에서는 그것이 세 항 중 하나로 명시된다. → [[humanoid-robot-scaling]]
+
+⚠️ 세 항이 *"기하급수적으로 개선 중"* 이라는 주장에 측정치가 없다 — 특히 손의 정밀도는 벤치마크가 제시되지 않는다.
 
 ## References
 

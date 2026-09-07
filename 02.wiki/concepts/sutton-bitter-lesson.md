@@ -6,9 +6,9 @@ tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
 related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom]
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # The Bitter Lesson
@@ -136,6 +136,20 @@ Rich Sutton의 2019년 3월 13일 에세이. 70년 AI 연구사의 **메타 패�
 - [[jensen-huang]] ([[tech-bridge-jensen-huang-g20-agi]]): 에세이를 **안전 논증**으로 쓴다 — *"3년 전 기술 발전 속도를 늦춰야 한다는 생각이 막 형성되던 시기를 떠올려보면, 사실 그러한 **발전이 오히려 안전성을 높였습니다.** 이러한 발전은 그것이 환각을 일으키지 않고 실제 진실에 기반을 두도록 만들었습니다."* 즉 스케일이 정확도만이 아니라 **안전도 가져온다**는 주장.
 
 Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확률이 필요"*)와 정면으로 갈린다 — 한쪽은 안전을 위해 구조를 넣자 하고, 다른 쪽은 안전을 위해 더 발전시키자 한다. 그리고 같은 날 Altman은 발전 속도가 안전을 앞질렀다며 **훈련을 늦췄다**([[training-time-risk]]). ⚠️ 셋 다 해소하지 않는다. 다만 화자의 위치를 적어 둔다 — Ghahramani는 연구자, Huang은 인프라 판매자, Altman은 모델 판매자다.
+
+## 설립 결정으로서의 스케일링 (2026-09-07 · [[tech-bridge-altman-g20-economic-boom]])
+
+이 페이지의 진술들은 대부분 *관찰* 이거나 *사후 해석* 이었다. G20에서 [[sam-altman]]이 같은 교훈을 **2016년의 베팅**으로 말한다.
+
+> 우리는 **컴퓨팅 능력을 문제에 적용하고 학습할 수 있다**는 것을 알고 있었습니다. 그리고 **컴퓨팅 자원을 더 많이 사용할수록 시스템이 더 똑똑해지고 성능이 향상된다**는 것을 알고 있었습니다. **우리는 그 외에는 아는 게 없었어요.**
+
+*"언어 모델이라는 개념이 등장하기 훨씬 이전"* 이라는 단서가 이 진술의 무게다 — 아키텍처를 모르는 상태에서 **스케일 하나만 믿었다**는 것이고, 그것이 이 페이지가 말하는 쓴 교훈의 가장 순수한 형태다.
+
+> 확장성의 법칙 (…) 만약 우리가 이 아이디어에 **수조 달러에 달하는 컴퓨팅 자원**을 투입할 수 있다면 정말 놀라운 일이 일어날 것 (…) 사람들은 *"수조 달러 규모의 컴퓨팅 자원을 투입할 수는 없으니 상관없다"* 고 말했고, **우리는 "왜 안 되겠어?"라고 반문했습니다.**
+
+2012년을 분수령으로 지목한다 — *"딥러닝이 갑자기 제대로 작동하기 시작했고 **컴퓨팅 자원이 많아질수록 성능이 향상되는** 진정한 전환점."* [[andrej-karpathy]]의 강의([[tech-bridge-karpathy-transformers-stanford]])가 서술한 같은 시기를 **베팅한 쪽에서** 되짚은 형태다.
+
+⚠️ 회고 진술이다. 당시 문서가 아니라 10년 뒤 정책 무대에서의 서술이며, 실패한 방향들(루빅 큐브 로봇 손·비디오 게임)은 *"우리는 그 외에는 아는 게 없었어요"* 한 문장으로 압축된다.
 
 ## References
 

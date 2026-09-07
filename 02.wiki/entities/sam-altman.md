@@ -5,9 +5,9 @@ category: person
 tags: [openai, ceo, ai-safety, agi, compute]
 links:
   - https://openai.com/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Sam Altman
@@ -57,6 +57,22 @@ updated: 2026-09-06
 - *"YOLO CEO"* 발언의 실제 발화자(진행자: Dario Amodei / Altman: *"제가 그 단어를 말했던 것 같아요"*).
 - 관찰된 *"불일치"* 의 내용, safety case의 기준.
 - 이 위키에 OpenAI Charter·회사 구조에 대한 1차 소스가 없다.
+
+## G20 혁신 장관급 회의 (2026-09-07 ingest · [[tech-bridge-altman-g20-economic-boom]])
+
+3부작([[tech-bridge-altman-frontier-rl-pause]] 외)이 기자 인터뷰였다면 이것은 **각국 장관 앞의 정책 발언**이다. 같은 회의에 [[jensen-huang]]·[[elon-musk]]도 나왔다. 본인이 이해관계를 두 번 밝힌다 — *"저는 편견이 있습니다"*, *"신모델에 대해 정말 기대가 커서 (…) 과하게 열정적으로 말하더라도 양해."*
+
+- **OpenAI 이전** — *"항상 AI 덕후"*, 학교에서 공부했으나 *"당시에는 아무것도 제대로 되지 않아서 포기"*, 창업으로 우회. **2012년** 딥러닝 분수령, **2015년** 결심, 발표 2015년 말, **첫 업무일 2016년 1월**.
+- **스케일링만 알고 시작했다** — *"우리는 그 외에는 아는 게 없었어요."* *"수조 달러를 넣을 수는 없다"* 는 반론에 *"**왜 안 되겠어?**"* → [[sutton-bitter-lesson]]
+- 연표 — 2018 GPT-1, 2020 GPT-3(*"활용성 기준치를 넘어선 최초"*), **2023년 3월경 GPT-4**(출시 전 **8개월** 보유, *"회의적이었던 내부 사람들조차"* 설득된 순간).
+- **스타트업 액셀러레이터 운영 경력** — *"기업가 정신이 자본주의 전체에서 가장 중요한 혁신적인 원동력일지도."* *"스타트업이 3개월에 하던 일이 이제 [[codex|Codex]]로 **17분**"* (⚠️ 기준 없음).
+- **"도입은 협상 불가능"** — *"100여 년 전에 전기를 도입하지 않겠다고 말하는 것만큼이나 어리석은"*. → [[intelligence-as-infrastructure]]
+- **맥락은 우리 일이 아니다** — *"저희는 이 엔진을 제공할 것입니다"*, *"설령 그렇다 하더라도 우리가 잘 해낼 거라고는 생각하지 않지만."* → [[context-engineering]]
+- **하나의 연속된 지수 곡선** — *"이것이 마지막 혁명이다"* 라는 유혹을 스스로 물리친다. → [[one-continuous-exponential]]
+- **5년의 위험 셋** — 사이버 보안(*"시급히 조치를 취하지 않으면"*), 생물보안, **권력 집중**. → [[intelligence-abundance]]
+- **토큰 외삽** — 2020년 초 최다 사용자 월 10만 → 2026년 중반 월 수천억. *"토큰은 어리석은 단위"* 라면서도 그 단위로 외삽한다. → [[compute-constrained-growth]] · [[token-roles]]
+- **걱정이 곧 해결 기제** — 불 → 도시 화재 → 화재 안전 수칙. *"완벽하진 않아요. 사고가 발생했습니다."* → [[regulatory-capture]]
+- 주권 — *"저 역시 사람들이 전기를 사용하는 모든 방식이 마음에 드는 것은 아니며, 그럼에도 **모든 사람이 전기를 사용할 권리**가 있다."* 그리고 *"우리는 **유일한 회사가 되고 싶지 않습니다.** 모든 가치를 독차지하고 싶지 않아요."*
 
 ## References
 

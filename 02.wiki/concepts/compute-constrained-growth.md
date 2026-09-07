@@ -3,11 +3,11 @@ title: Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
 type: concept
 category: theory
 tags: [compute, scaling, growth, efficiency, demand, data-center, bubble, openai]
-related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition]
+related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition, power-shortfall, intelligence-abundance]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
@@ -61,6 +61,30 @@ Huang은 그 규모를 *"전 세계에 필요한 지능을 생산"* 하기 위�
 - [[sutton-bitter-lesson]] — *"컴퓨트가 이긴다"* 의 경제 측면. 이 페이지는 컴퓨트가 이기는 세계에서 **컴퓨트 자체가 희소 자원**이 된 상태를 기술한다.
 - [[training-time-risk]] — 안전을 위해 컴퓨팅을 **실행에서 감시로** 재배분한 사례. 성장이 컴퓨팅 배분의 함수라면 안전도 그렇다.
 - [[agi-definition]] — Altman의 *"기하급수적 증가 추세는 계속"* 이 이 페이지의 수요 측 전제다.
+
+## 수요의 크기 — 토큰 외삽 (2026-09-07 추가)
+
+G20에서 Altman이 *"효율은 수요가 삼킨다"* 에 **숫자를 붙였다.** → [[tech-bridge-altman-g20-economic-boom]]
+
+| 시점 | 최다 사용자 | 평균적인 사람 |
+|---|---|---|
+| 2020년 초 | OpenAI 직원, **월 10만 토큰** | 사실상 0 |
+| 2026년 중반 | **월 수천억 토큰** | **월 10만 토큰** |
+| +6년 반 (외삽) | ⚠️ 미확정 | **월 1,000억 토큰** |
+
+> **6년 반 만에 수백만 배 증가**한 거죠.
+
+> **효율성 면에서 큰 성과를 거두더라도 훨씬 더 많은 인프라를 구축해야 할 것입니다.** 우리가 이것이 매우 비싼 상품이 되는 것을 원하지 않는 한 말이죠.
+
+즉 이 페이지의 *"효율은 수요가 삼킨다"* 가 **관찰에서 계획 전제로** 바뀐다. ⚠️ 단 외삽 방식이 *"순진하게(naively) 다시 예측"* 이라고 본인이 말한 그대로이고, **최다 사용자 수치는 발화 중 세 번 바뀌어 채택하지 않는다.**
+
+그리고 Altman이 그 단위를 스스로 부정한다 — *"**저는 여기서 토큰이라는 단위를 정말 싫어합니다. 어리석은 단위이고 아무도 신경 쓰지 않아야 하지만**, 그냥 지능 수준을 나타내는 약어로."* [[intelligence-as-infrastructure]]에서 [[jensen-huang]]이 같은 회의에서 토큰을 *상품 단위*로 굳히는 것과 나란히 둔다. → [[token-roles]]
+
+## 물리적 상한 — 전력 (2026-09-07 추가)
+
+이 페이지는 컴퓨팅을 **배분의 문제**로 다뤄 왔다. [[elon-musk]]가 그 정의역에 물리적 천장을 놓는다 — AI 칩 생산 연 **40~50%** vs 중국 외 가용 전력 연 **10~20%**, *"2027년 최소 15 GW 부족"*.
+
+세 진술이 하나의 그림이 된다: **수요는 효율로 줄지 않고**(Altman) · **공급은 GW당 수백억 달러가 들며**(Huang) · **그래서 결손이 남는다**(Musk). → [[power-shortfall]]
 
 ## ⚠️ 유보
 

@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # OpenAI
@@ -52,6 +52,16 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 
 ### 일자리
 - *"실질적 영향이 있을 것"* 이나 *"예상·기대보다 적었다"* — *"AI 산업에 대한 타당한 비판."* → [[ai-jobs-impact]]
+
+## G20 발언에서 드러난 자기 서술 (2026-09-07 · [[tech-bridge-altman-g20-economic-boom]])
+
+- **설립 연표** — 2015년 말 발표, **2016년 1월 첫 업무일**. 초기 시도는 *"로봇 손이 루빅 큐브"*·*"비디오 게임"* 이었고 *"언어 모델이라는 개념이 등장하기 훨씬 이전"*.
+- **GPT-4를 출시 전 약 8개월 보유**했다는 진술 — 내부 파악 기간. 이 위키에 처음 나오는 수치다.
+- *"곧 새로운 모델을 출시할 예정"* — ⚠️ **모델명이 소스에 없다.** 3부작의 *아스트라*([[openai-astra]])와 같은 것인지 소스가 말하지 않는다. **연결하지 않는다.**
+- **자기 규정 — "실용주의자들의 이익"**: *"맹목적인 낙관주의의 함정에 빠지고 싶지 않다. 비관주의의 함정에 빠지고 싶지 않다."*
+- **역할 경계** — *"저희는 이 엔진을 제공할 것"* 이고 맥락은 고객의 몫. → [[context-engineering]]
+- **시장 지위에 대한 진술** — *"우리는 **유일한 회사가 되고 싶지 않습니다.** 우리는 **모든 가치를 독차지하고 싶지 않아요.** 우리는 그것이 **세계 안정에 좋다고 생각하지 않으며** (…)"* ⚠️ 자기 진술이며 행동으로 확인되지 않는다.
+- **[[codex|Codex]]** 가 창업 생산성의 사례로 인용된다 — *"3개월 → 17분"*.
 
 ## References
 

@@ -3,11 +3,11 @@ title: Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
 type: concept
 category: theory
 tags: [infrastructure, tokens, energy, compute, data-center, sovereignty, nvidia, policy]
-related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture]
+related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation]
 first-seen: tech-bridge-jensen-huang-g20-agi
-sources: [tech-bridge-jensen-huang-g20-agi]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
@@ -66,6 +66,36 @@ updated: 2026-09-06
 
 *"평등화 장치(great equalizer)"* — 교육의 디지털 버전이라는 [[agi-definition]]의 사고 실험과 같은 선이다.
 
+## 같은 회의의 세 판매자 (2026-09-07 추가)
+
+이 프레이밍은 [[jensen-huang|Huang]] 한 사람의 것이었는데, **같은 G20 회의의 다른 두 세션이 들어오면서 세 판매자가 각국에 서로 다른 층을 권하는 구도**가 됐다.
+
+| 화자 | 권하는 층 | 처방 |
+|---|---|---|
+| [[jensen-huang]] | 층 2·전체 | *"어떤 층에 투자할지 스스로 결정 (…) **확산(diffusion)** 에 집중"* |
+| [[sam-altman]] ([[tech-bridge-altman-g20-economic-boom]]) | 층 4·5 (사용) | *"짓든 임대하든 **그 모든 게 괜찮다**"* — 소유 형태는 무관 |
+| [[elon-musk]] ([[tech-bridge-elon-musk-g20-ai-future]]) | **층 1 (에너지)** | *"많은 전력을 생산할 수 있는 시설을 구축하고 AI 기업에 제공"* → [[power-shortfall]] |
+
+세 처방이 각자의 상품과 정확히 정렬돼 있다. ⚠️ 이 수렴(**셋 다 도입을 늘리라고 한다**) 자체가 데이터다.
+
+### Altman — "협상 불가능"과 전기 비유
+
+Huang이 *인프라이므로 지어야 한다*고 했다면, Altman은 같은 결론에 **거부의 비용**으로 도착한다.
+
+> 각국은 인공지능을 규제하는 방식, 도입하는 방식, 활용하는 방식에 있어 매우 다양한 접근법을 취할 것입니다. 하지만 **그것을 반드시 사용해야 한다는 점은 협상 불가능한 사항**이라고 생각합니다.
+
+> 우리나라에 인공지능을 도입하지 않겠다고 말하는 것은 **100여 년 전에 우리나라에 전기를 도입하지 않겠다고 말하는 것만큼이나 어리석은 생각**일 겁니다.
+
+전기 유비가 **Huang의 kWh 유비와 다른 일을 한다** — Huang은 토큰을 *상품 단위*로 만들려고 전기를 불렀고, Altman은 *거부 불가능성*을 말하려고 부른다. 그리고 Altman은 그 유비를 **보이지 않게 되는 것**까지 밀고 간다:
+
+> 요즘 우리는 전기에 대해 거의 생각하지 않잖아요. (…) **우리는 휴대폰을 소중히 여깁니다. 우리는 그것들을 작동시키기 위해 생산되는 전기에 대해서는 그다지 생각하지 않습니다.** (…) **제 예측으로는 10년 후에는 인공지능에 대해 지금처럼 많이 이야기하지 않을 겁니다.**
+
+⚠️ Altman 본인이 이 비유 직전에 이해관계를 밝힌다 — *"저는 편견이 있습니다. 저는 여기서 제 이해관계에 유리한 말을 하지 않으려고 노력하고 있어요."*
+
+### 전력이라는 층 1의 상한
+
+Musk가 이 케이크의 **맨 아래 층에 결손**이 있다고 말한다 — *"2027년에는 AI 칩에 필요한 전력이 최소 15 GW 부족"*. Huang의 *"1 GW ≈ 500~600억 달러, 100 GW 구축"* 이 **비용**을 말했다면 Musk는 같은 단위로 **부족분**을 말한다. → [[power-shortfall]]
+
 ## ⚠️ 유보
 
 - **판매자의 발언**이라는 점을 반복한다. 특히 *"발전이 곧 안전"*·*"최악은 뒤쳐지는 것"* 은 이 프레이밍의 규제 측 함의이며 [[regulatory-capture]]에서 다른 입장들과 나란히 둔다.
@@ -75,4 +105,5 @@ updated: 2026-09-06
 ## References
 
 - [[tech-bridge-jensen-huang-g20-agi]] — first-seen
+- 2026-09-07 추가: [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[power-shortfall]] · [[intelligence-abundance]]
 - 관련: [[compute-constrained-growth]] · [[trusted-throughput]] · [[token-roles]] · [[agi-definition]] · [[nvidia]]

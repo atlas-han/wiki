@@ -5,9 +5,9 @@ category: technique
 tags: [llm, context-window, agent, prompting]
 related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom]
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # Context Engineering
@@ -59,6 +59,26 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 넷 중 둘(맥락·접근성)은 이 페이지의 어휘로 곧장 번역된다 — *무엇을 넣을 것인가*와 *어디에 접근할 수 있는가*([[model-context-protocol]]·[[brain-hands-decoupling]]의 자격 증명 주입). 나머지 둘(**목적·관련성**)은 이 위키에서 [[intent-md]]·[[agent-skills]]·[[agent-org-adoption]]이 다루는 층이다. Huang의 주장은 이 넷이 **AGI 이후에도 남는 일**이라는 것이고, 그래서 이 페이지의 *"harness ↔ SDK/플랫폼 경계가 이동한다"* 는 관찰에 한 단서가 붙는다 — 세션 층의 맥락 관리는 플랫폼으로 내려가도, **조직 층의 맥락 제공**은 내려갈 곳이 없다.
 
 ⚠️ 인프라 판매자의 발언이며, "남는다"는 주장의 근거는 온보딩 비유 하나다.
+
+## 공급 경계 — 맥락은 판매자가 줄 수 없다 (2026-09-07 · [[tech-bridge-altman-g20-economic-boom]])
+
+이 페이지는 맥락을 **세션 안의 문제**로 다뤘고, [[jensen-huang]]이 그것을 **조직의 온보딩 문제**로 키웠다. G20에서 [[sam-altman]]이 세 번째 위치를 놓는다 — **모델 제공자가 할 수 없는 일**이라는 선언이다.
+
+> **세계에서 가장 똑똑한 사람들이 우리 동네로 이사 와서 저를 위해 일하겠다고 해도, 서로 모른다면** — 세상에서 가장 똑똑한 사람들이 모여 저녁 식사를 하는데 제대로 대화를 나눌 수 없다면 그다지 즐거운 저녁 식사가 아니잖아요. **그렇다면 우리는 맥락에 대해 어떻게 생각해야 할까요?**
+
+> 그건 **우리 쪽에서 나올 일도 아니고, 나와서도 안 된다**고 생각합니다. **저희는 이 엔진을 제공할 것입니다.** (…) 설령 그렇다 하더라도 **우리가 잘 해낼 거라고는 생각하지 않지만** (…)
+
+세 소스가 같은 층을 세 위치에서 가리킨다:
+
+| 층위 | 소스 | 맥락은 누구의 일인가 |
+|---|---|---|
+| 세션 | 이 페이지의 기존 논의 | 하네스 설계자 |
+| 조직 | [[tech-bridge-jensen-huang-g20-agi]] | *"기업이 하는 일이고, 리더가 하는 일"* |
+| **공급 경계** | [[tech-bridge-altman-g20-economic-boom]] | **고객 쪽 — 판매자는 못 한다** |
+
+[[agent-org-adoption]]·[[agent-skills]]가 다뤄온 *"조직 지식을 에이전트에 넣는 일"* 이 왜 고객에게 남는지에 대한 **공급자 본인의 답**이다.
+
+⚠️ 이 선 긋기는 책임의 배분이기도 하다 — 결과가 나쁠 때 맥락 부족은 고객의 몫이 된다. 소스는 그 함의를 다루지 않는다.
 
 ## References
 
