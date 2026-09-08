@@ -8,7 +8,7 @@ sources: [self-harness-paper]
 links:
   - https://www.minimax.io/news/minimax-m25
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-09-08
 ---
 
 # MiniMax M2.5
@@ -33,6 +33,22 @@ MiniMax가 *"real-world productivity"* 를 표방하며 공개한 에이전트�
 
 - 아키텍처·파라미터·학습 세부 (별도 소스 필요)
 
+
+## 만든 회사와 다음 세대 (2026-09-08)
+
+2026-09-08 ingest로 **[[minimax|MiniMax]] 조직 페이지**와 **[[minimax-m3|M3]]** 가 이 위키에 생겼다. 이 페이지가 오래 *"아키텍처·파라미터·학습 세부 (별도 소스 필요)"* 로 비워둔 자리가 **M2.5에 대해서는 여전히 비어 있지만**, 같은 회사의 다음 모델에 대해서는 당사자 설명이 들어왔다.
+
+| 모델 | 이 위키의 근거 |
+|---|---|
+| MiniMax-01 · M1 | [[tech-bridge-minimax-m3-long-context]] — **1천만 토큰** 컨텍스트, 비에이전트 |
+| **M2.5 (이 페이지)** | [[self-harness-paper]] — 2026-02 모델 리포트, Terminal-Bench 실험 base |
+| [[minimax-m3\|M3]] | [[tech-bridge-minimax-m3-long-context]] — 100만 토큰 + [[sparse-attention\|MSA]] + [[native-multimodal-pretraining\|native multimodality]] |
+
+⚠️ **새 소스는 M2.5를 언급하지 않는다.** M1 → M3로 건너뛴다. 따라서 이 페이지와 [[minimax-m3]] 사이의 관계(계보상 어디에 놓이는지, 아키텍처가 이어지는지)는 **여전히 미확인**이다.
+
+이 위키가 M2.5를 통해 본 것이 **바깥에서의 하니스 실험**이었다면, [[minimax]]는 이제 **자체 research harness로 자기 모델을 개선한다**고 말한다 — *"M3가 M3.1을 만들고 있습니다"*. → [[self-harness]]
+
 ## References
 
 - [[self-harness-paper]]
+- [[tech-bridge-minimax-m3-long-context]] · [[minimax]] · [[minimax-m3]] (2026-09-08)

@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [attention, architecture, deep-learning, graph, message-passing]
 aliases: [어텐션, Attention, self-attention, 셀프 어텐션]
-related: [transformer, in-context-learning, nanogpt, dzmitry-bahdanau]
+related: [transformer, in-context-learning, nanogpt, dzmitry-bahdanau, sparse-attention, long-context-agents]
 first-seen: tech-bridge-karpathy-transformers-stanford
-sources: [tech-bridge-karpathy-transformers-stanford]
+sources: [tech-bridge-karpathy-transformers-stanford, tech-bridge-minimax-m3-long-context]
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-08
 ---
 
 # Attention Mechanism
@@ -108,6 +108,26 @@ y   = att @ v                                    # affinity 가중합
 
 > 저는 **연결성이 데이터의 함수로 동적으로 바뀌는 예를 단 하나도 본 적이 없습니다.**
 
+
+## 효율화의 진자 운동 (2026-09-08 · [[tech-bridge-minimax-m3-long-context]])
+
+이 페이지는 어텐션을 **무엇인가**(방향 그래프 위의 메시지 전달)로 설명해 왔다. [[thomas-wolf]]가 [[olive-song]]에게 [[sparse-attention|MSA]]를 물으며 놓는 프레이밍은 **어텐션 효율화의 역사**다.
+
+> 어텐션에 대한 연구가 많이 이루어졌고 — 이 **n제곱** 문제 말이죠 — **linear attention**에 대한 연구도 많았습니다. 그러다가 **flash attention이 등장하면서 그 모든 것들이 어느 순간 사라져 버렸죠.** 우리는 **더 효율적인 [커널]** 이 필요할 뿐이라는 것을 알게 되었습니다. 자, 이제 우리가 다시 **제1원리로 돌아가서 어텐션이란 무엇이고 어떻게 하면 더 효율적으로 만들 수 있을지** 생각해 보는 게 좋네요.
+
+세 국면이다:
+
+1. **구조로 푼다** — n² 비용에 linear attention 등 아키텍처 변형이 쏟아진다.
+2. **커널로 풀린다** — flash attention이 등장하자 그 변형들이 대부분 필요 없어진다.
+3. **다시 구조로** — 길이가 100만 규모로 가면서 구조 문제가 돌아온다 → [[sparse-attention]].
+
+**같은 문제가 두 층(아키텍처 / 커널) 사이를 오간다**는 관찰이다. [[transformer]] 페이지가 *"표현력·최적화 가능성·GPU 효율성을 동시에 만족해서 이겼다"* 로 정리한 세 항 중 **세 번째가 구현으로 해결되자 앞의 둘을 다시 건드릴 여지가 생겼다**는 이야기이기도 하다.
+
+[[sparse-attention|MSA]]가 이 페이지의 어휘에 더하는 것은 **선택 층**이다 — query/key/value 위에 *어디를 볼지 고르는* 인덱스 브랜치가 하나 더 붙는다. 이 페이지가 [[andrej-karpathy|Karpathy]]를 따라 어텐션을 *"정적 연결성 위의 데이터 의존적 메시지 전달"* 로 정리했는데, MSA는 **연결성 자체를 데이터에 따라 줄인다**. ⚠️ 다만 Karpathy가 *"연결성이 데이터의 함수로 동적으로 바뀌는 예를 단 하나도 본 적이 없다"* 고 한 것과 같은 층위인지는 **두 소스 어느 쪽도 다루지 않는다** — 위키는 판정하지 않는다.
+
+⚠️ *"더 효율적인 [커널]"* 은 en-orig가 *"camera"* 로 오인식한 자리이고 **소스가 단어를 확정하지 않는다.** ⚠️ MSA의 정량적 근거도 소스에 없다.
+
 ## References
 
 - [[tech-bridge-karpathy-transformers-stanford]]
+- [[tech-bridge-minimax-m3-long-context]] — 효율화의 진자 운동 · [[sparse-attention]] (2026-09-08)

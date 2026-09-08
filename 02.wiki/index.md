@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # Index
@@ -49,6 +49,8 @@ updated: 2026-09-07
 - [[elon-musk]] — [[tesla|Tesla]]·[[spacex|SpaceX]] CEO. G20 첫 연사 — default legal 규제론, 스톡피시 수준 12~18개월, 로봇 10억 대, 2027년 15 GW 전력 부족 ([[tech-bridge-elon-musk-g20-ai-future]], ⚠️ 당사자 진술)
 - [[corey-haines]] — 마케팅 [[agent-skills|스킬]] 48종 저자, 온보딩·페이월·churn ([[tech-bridge-six-agent-skills]])
 - [[sahil-lavingia]] — Gumroad 창업, *The Minimalist Entrepreneur* 스킬 10종 · 실명 10명·유료 3명 검증 게이트 ([[tech-bridge-six-agent-skills]])
+- [[thomas-wolf]] — [[hugging-face|Hugging Face]] 공동창업자·CSO. [[minimax-m3|M3]] 대담 진행 — 어텐션 효율화의 진자 운동(구조→커널→다시 구조) ([[tech-bridge-minimax-m3-long-context]]) ⚠️ 이름은 설명란 단독
+- [[olive-song]] — [[minimax|MiniMax]] RL 리드. 100만 토큰=에이전트 요구·[[sparse-attention|MSA]] 2단 구조·[[native-multimodal-pretraining|native multimodality]] ([[tech-bridge-minimax-m3-long-context]]) ⚠️ 자막은 "Olivia", 설명란은 "Olive Song"
 - [[thariq-shihipar]] · [[sid-bidasaria]] · [[robert-boyce]] — [[anthropic|Anthropic]] [[claude-code|Claude Code]] 팀 ([[tech-bridge-claude-code-team-workflow]], ⚠️ 발언별 화자 특정 불가)
 - [[richard-hamming]] — "중요한 문제" 연구. 공략 가능성이 문제를 중요하게 만든다 ([[signal-layer]]에서 재해석)
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
@@ -81,6 +83,9 @@ updated: 2026-09-07
 - [[spacex]] — 항공우주. Musk 진술상 자체 발전소를 지어 Google·Anthropic에 컴퓨팅 임대 ([[tech-bridge-elon-musk-g20-ai-future]], ⚠️ 전부 자기 진술)
 - [[hugging-face]] — ML 모델 플랫폼. 위키에는 [[openai]] 미출시 모델이 평가 중 샌드박스를 벗어난 **"Hugging Face 사건"**의 당사자로만 등장 ([[tech-bridge-altman-frontier-rl-pause]], ⚠️ OpenAI 측 진술만)
 
+- [[minimax]] — 중국 AI 랩("AI 드래곤" 중 하나). 위키 **첫 중국 AI 랩 당사자 소스** — 모델 우선·앱은 나중, 누구나 제안하는 연구 문화(MSA를 인턴이 설계), 200개국 3억 명 (sources: 2) ⚠️ 당사자 진술
+- [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 화이트보드 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 (sources: 1) ⚠️ 발표자 무명
+
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
 - [[claude-opus-4-7]] — Anthropic 현 공개 플래그십
@@ -94,6 +99,8 @@ updated: 2026-09-07
 - [[gemma-4]] — Google Gemma 4, [[cerebras]] 위에서 [[agentic-sites]] 페이지 생성 평균 1.1초
 - [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
 - [[openai-astra]] — [[openai|OpenAI]] 차세대 **모델 등급명**("더 비싸고 큰 모델 등급", Soul과 같은 방식). 컴퓨터 사용 "인간 수준" 체감 ([[tech-bridge-altman-astra-hardware]], ⚠️ 스펙 없음)
+
+- [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]])
@@ -135,11 +142,17 @@ updated: 2026-09-07
 - [[context-engineering]] — context window를 무엇을·어떻게 채우는가의 설계 영역
 - [[cognitive-offloading]] — 인지 작업을 LLM에 넘겨 당장은 성과↑, 장기 retention↓ (Ng)
 
+- [[retrieval-augmented-generation]] — 미리 넣지 않고 **필요할 때 외부 소스에서 관련 조각만**. [[agent-memory|메모리]]와 가르는 축은 검색 기술이 아니라 **출처**(사람이 넣었나) (sources: 3)
+- [[native-multimodal-pretraining]] — 어댑터를 나중에 붙이지 않고 **첫 스텝부터** 텍스트+비전. 기각 근거가 성능이 아니라 **작은 실험이 큰 모델로 안 옮겨간다**는 것 (sources: 1)
+
 ### Architectures
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
 - [[agentic-sites]] — 방문자 의도에 맞춰 블록만 재조립하는 웹 아키텍처 (자기 사이트 RAG · 1~2초 예산 · 작은 모델, sources: 1)
 - [[transformer]] — 표현력·최적화 가능성·**GPU 효율성**을 동시에 만족해서 이긴 아키텍처. *"런타임에 재구성되는 범용 컴퓨터"* (sources: 1)
 - [[attention-mechanism]] — 방향 그래프 위의 데이터 의존적 메시지 전달. query=찾는 것·key=가진 것·value=전달할 것 (sources: 1)
+
+- [[sparse-attention]] — **인덱스 브랜치**(무엇이 중요한지 선택) + **스파스 어텐션 브랜치**(선택된 블록만 계산). 어텐션 효율화가 구조↔커널을 오간 끝의 재귀 (sources: 1) ⚠️ 정량 근거 전무
+- [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
@@ -202,6 +215,9 @@ updated: 2026-09-07
 - [[training-time-risk]] — 위험의 무게중심이 **배포→훈련**으로. safety case가 프론티어 RL 실행을 게이트, 실행/감시 컴퓨팅 분리, IPO 연기 근거 (OpenAI, sources: 2)
 
 ---
+
+- [[agent-knowledge-sourcing]] — 학습 데이터 밖 지식을 **어느 경로로 줄 것인가**의 4갈래 라우팅(적어둔 것=RAG / 겪은 것=메모리 / 절차=스킬 / 바깥 조회=MCP). 위키 첫 **설계 시점** 결정표 (sources: 1)
+- [[agent-memory]] — 에이전트가 **스스로 겪고 저장한** 경험. RAG와 달리 **읽고 쓴다**. 값진 순간은 **문서가 틀렸을 때** (sources: 3) ⚠️ 무효화·틀린 기억 처리 없음
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -318,12 +334,14 @@ updated: 2026-09-07
 - [[tech-bridge-elon-musk-g20-ai-future]] — Elon Musk (G20, 화상·첫 연사): default legal vs default illegal·EU 반례, 큰 나무 vs 어린 묘목과 지도부 접근권, 세계 경제 +20~30%(연 20~30조 달러), 스톡피시 수준 12~18개월, 로봇 유용성=소프트웨어×칩×손 정밀도·재귀 제조·10년 10억 대, 2027년 15 GW 전력 부족·중국 GPU 수출 금지 ([[tech-bridge]], 2026-09-06, **13:17**, ⚠️ 당사자 진술 · ko 자막 의미 반전 1건)
 - [[tech-bridge-altman-g20-economic-boom]] — Sam Altman (G20): 2012년 분수령·"왜 안 되겠어?"·GPT-4를 8개월 보유, 사상 최대 창업 붐·세탁소 주인·Codex 3개월→17분, 도입은 "협상 불가능"=100년 전 전기, 맥락은 판매자가 못 준다, 하나의 연속된 지수 곡선, 5년 위험(사이버·생물보안·권력 집중), 토큰 외삽·"어리석은 단위", 밤에 한 시간 불=임금 5시간, 걱정이 곧 해결 기제 ([[tech-bridge]], 2026-09-06, **31:32**, ⚠️ 당사자 진술)
 
+- [[tech-bridge-agent-knowledge-four-ways]] — IBM Technology (발표자 무명): 500 에러 하나로 스킬·MCP·RAG·메모리를 가른다, 쏟아붓기의 세 실패(길 잃음·막다른 길·**일반론 후퇴**), 스킬은 절차+판단이고 "이야기는 거기서 끝난다", RAG↔메모리는 **출처**로 갈린다, 4갈래 라우팅 규칙 ([[tech-bridge]], 2026-09-07, **8:58**, ⚠️ 촬영 시점 미확정 · ko가 "that's rag"를 "쓸모없는 쓰레기"로)
+- [[tech-bridge-minimax-m3-long-context]] — Thomas Wolf × Olive Song (MiniMax, AI Engineer 계열 무대 추정): 100만 토큰은 에이전트 요구(M1의 1천만은 비에이전트), MSA=인덱스+스파스 2단, **인턴이 아키텍처 설계**, native multimodality의 기각 근거는 확장 가능성, 누구나 제안하는 연구 문화, 200개국 3억 명, **M3가 M3.1을 만든다** ([[tech-bridge]], 업로드 2026-09-07 / **대담 6월**(연도 추정), **19:52**, ⚠️ 당사자 진술 · 파라미터 3중 불일치 · 벤치마크 전무)
 ---
 
 ## 통계
 
-- 총 페이지 수: 293 (02.wiki 실측, log 포함; + 2026-09-07 Tech Bridge 2편: source 2 + concept 5 + entity 3)
+- 총 페이지 수: 306 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 293 → 306, + 2026-09-08 Tech Bridge 2편: source 2 + concept 6 + entity 5)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-07 (Tech Bridge **2편**, 나흘 연속 — 둘 다 **G20 혁신 장관급 회의**(Chapel Hill)이며 09-05 ingest한 [[tech-bridge-jensen-huang-g20-agi|Jensen Huang 편]]과 **같은 행사**다. [[elon-musk]]·[[tesla]]·[[spacex]]가 위키에 처음 들어왔고, 이로써 같은 자리에서 세 판매자가 각국에 서로 다른 인프라 층을 권하는 구도가 [[intelligence-as-infrastructure]]에 정리됐다. [[regulatory-capture]]·[[ai-jobs-impact]]가 다섯 입장 표가 됐다)
+- 마지막 ingest: 2026-09-08 (Tech Bridge **2편**, 닷새 연속 — **같은 날 올라온 두 편의 성격이 정반대다.** 하나는 [[ibm|IBM]]의 제품 없는 개념 해설로, 이 위키가 다섯 페이지에서 **언급만 하고 페이지가 없던** [[retrieval-augmented-generation|RAG]]를 [[agent-memory|메모리]]와 나란히 세우고 [[agent-knowledge-sourcing|4갈래 라우팅]]을 준다. 다른 하나는 위키 **첫 중국 AI 랩·첫 아키텍처 설계 결정 인터뷰**로 [[minimax]]·[[minimax-m3]]·[[sparse-attention]]·[[long-context-agents]]·[[native-multimodal-pretraining]]을 들여온다. 후자는 [[context-engineering]]이 모아온 *줄이기* 처방들 옆에 **늘리기**를 놓는다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-07
+- 마지막 갱신: 2026-09-08

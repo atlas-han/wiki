@@ -450,5 +450,18 @@
   "02.wiki/concepts/humanoid-robot-scaling.md": "LiBot",
   "02.wiki/concepts/power-shortfall.md": "LiBookText",
   "02.wiki/concepts/intelligence-abundance.md": "LiBookText",
-  "02.wiki/concepts/one-continuous-exponential.md": "LiBookText"
+  "02.wiki/concepts/one-continuous-exponential.md": "LiBookText",
+  "02.wiki/sources/tech-bridge-agent-knowledge-four-ways.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-minimax-m3-long-context.md": "LiVideo",
+  "02.wiki/concepts/retrieval-augmented-generation.md": "LiDatabase",
+  "02.wiki/concepts/agent-memory.md": "LiDatabase",
+  "02.wiki/concepts/agent-knowledge-sourcing.md": "LiPuzzle",
+  "02.wiki/concepts/long-context-agents.md": "LiLayers",
+  "02.wiki/concepts/sparse-attention.md": "LiLayers",
+  "02.wiki/concepts/native-multimodal-pretraining.md": "LiSettings",
+  "02.wiki/entities/ibm.md": "LiBuilding",
+  "02.wiki/entities/minimax.md": "LiBuilding",
+  "02.wiki/entities/minimax-m3.md": "LiBot",
+  "02.wiki/entities/thomas-wolf.md": "LiUser",
+  "02.wiki/entities/olive-song.md": "LiUser"
 }

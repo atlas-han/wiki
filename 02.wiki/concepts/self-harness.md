@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, self-improvement, harness-engineering, terminal-bench, llm-engineering]
 related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills]
 first-seen: self-harness-paper
-sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow]
+sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context]
 created: 2026-06-14
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # Self-Harness
@@ -130,6 +130,25 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 
 > ⚠️ **같은 소스가 반대 방향의 압력도 보여준다.** [[harness-pruning]] — 모델이 좋아지면 하네스 기능이 **지워진다**. 자기-개선이 하네스를 키우는 힘이라면 모델 향상은 줄이는 힘이고, 둘은 동시에 작용한다. 이 위키는 어느 쪽이 우세한지 판정할 근거를 아직 갖고 있지 않다.
 
+
+## 랩 층위 — M3가 M3.1을 만든다 (2026-09-08 · [[tech-bridge-minimax-m3-long-context]])
+
+이 페이지의 사례는 지금까지 **한 실행 안**의 것이었다 — 모델이 자기 하니스를 고치고([[self-harness-paper]]), 제품이 그 루프를 내장한다([[tech-bridge-claude-platform-agent-era]]). [[minimax|MiniMax]]의 [[olive-song]]이 말하는 것은 **한 층 위**다: 랩이 자기 모델로 다음 모델을 만든다.
+
+> 저희는 **자체 research harness를 보유하고 있습니다.** 저희는 **연구 워크플로를 자동화하는 자체 research harness를 만듭니다.** **저희 업무 흐름의 상당 부분이 자동화되어 있다**고 말씀드릴 수 있겠습니다.
+
+> 최신 프론티어 모델들이 **커널 최적화** 같은 기능을 추구하는 것을 볼 수 있습니다 — **모델이 다른 모델을 [post-]train하게 하고**, **모델이 데이터를 만들게 하는** 것 말이죠. (…) **M3도 그렇습니다** — 저희는 실제로 **긴 호라이즌과 커널 최적화**에서 매우 좋았습니다.
+
+그리고 진행자의 마지막 확인이 **범위를 정직하게 좁힌다.**
+
+> **[진행자] M3가 벌써 M4를 만들고 있나요?** — **음, M3.1을 만들고 있습니다.**
+
+**"M4"가 아니라 "M3.1"** 이라는 답이 이 위키에 값지다. 자기 개선의 실제 도달점이 **세대 도약이 아니라 점진 개선**으로 진술된다. 이 페이지가 열어둔 질문 — *자기-개선이 하네스를 키우는 힘과 [[harness-pruning|모델 향상이 줄이는 힘]] 중 어느 쪽이 우세한가* — 에 대한 답은 아니지만, **개선의 보폭에 대한 첫 당사자 증언**이다.
+
+[[self-harness-paper]]가 [[minimax-m2-5|M2.5]]를 세 base 모델 중 하나로 썼으므로, 이 위키는 이제 **같은 회사의 모델을 바깥(하니스 실험)과 안(자체 연구 자동화) 양쪽에서** 보고 있다.
+
+> ⚠️ **당사자 진술이고 실체가 없다** — research harness가 무엇으로 만들어졌는지, 어느 워크플로가 자동화됐는지, *"만든다"* 가 어느 범위까지인지 소스에 전혀 없다. ⚠️ ko 자막이 *harness* 를 **"연구용 장비"** 로 옮겼다.
+
 ## References
 
 - [[self-harness-paper]] (1차, arXiv 2606.09498)
@@ -137,3 +156,4 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 - [[papanuvo-self-harness]] (2차, 한국어 해설)
 - 허브: [[agent-harness-design]] · [[harness-engineering]]
 - 관련 패턴: [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] · [[sutton-bitter-lesson]]
+- [[tech-bridge-minimax-m3-long-context]] — 랩 층위의 자기 개선 (M3 → M3.1), [[minimax]] (2026-09-08)

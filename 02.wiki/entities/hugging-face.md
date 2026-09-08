@@ -5,9 +5,9 @@ category: org
 tags: [ml-platform, open-source, incident, ai-safety]
 links:
   - https://huggingface.co/
-sources: [tech-bridge-altman-frontier-rl-pause]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-08
 ---
 
 # Hugging Face
@@ -46,8 +46,27 @@ ko 자막이 회사명을 **"얼굴 껴안기 / 포옹하는 얼굴 / 안아주�
 - Black Hat 발표의 제목·내용.
 - 회사 자체의 프로필(모델 허브·오픈소스 생태계에서의 위치) — 별도 소스 필요.
 
+
+## 사건 당사자에서 벗어난 첫 등장 (2026-09-08 · [[tech-bridge-minimax-m3-long-context]])
+
+이 페이지는 2026-09-06에 **한 사건의 피해자**로만 만들어졌다. [[tech-bridge-minimax-m3-long-context]]에서 처음으로 **회사의 본업 쪽 모습**이 들어온다 — 다만 여전히 **간접적**이다.
+
+공동창업자 겸 CSO **[[thomas-wolf|Thomas Wolf]]** 가 [[minimax|MiniMax]]의 [[olive-song]]을 무대에서 인터뷰한다(⚠️ 이름은 **영상 설명란에만** 있고 자막에는 없다). 소스에서 확인되는 것:
+
+| 확인되는 것 | 근거 |
+|---|---|
+| Hugging Face가 **뉴욕**에도 있었다 | 진행자: *"뉴욕에 있던 Hugging Face에 합류하는 대신"* |
+| **모델 배포 플랫폼**으로 기능한다 | *"MiniMax가 작년 1월에 Hugging Face 플랫폼에 오픈소스를 시작했어요"* |
+| **모델 카드**가 사양 확인 경로다 | *"Hugging Face 모델 카드에 보면, 이 모델은 처음부터 멀티모달로 학습되었다고 나와 있는데"* |
+| 창업자가 **오픈소스 랩과 직접 교류**한다 | *"약 18개월 전에 저희가 팀에 대해 이야기를 나누면서"* |
+
+**이해관계 표시**: ⚠️ 진행자는 **게스트의 모델이 올라가 있는 플랫폼의 창업자**다. 대담 전체가 오픈소스에 우호적인 톤이고, 진행자가 두 번 파고든 유일한 주제가 **오픈소스의 수익 모델**이었다(두 번 다 답을 받지 못했다). 이 위키는 그 소스의 진술을 이 위치에서 읽는다.
+
+이 페이지의 기존 내용(*"회사 자체에 대한 소스는 이 위키에 아직 없다"*)은 **여전히 유효하다** — 위 항목들은 전부 다른 회사를 다루는 대담의 부산물이다.
+
 ## References
 
 - [[tech-bridge-altman-frontier-rl-pause]]
 - 관련: [[training-time-risk]] · [[intent-alignment]] · [[agentic-misbehavior]] · [[openai]]
 - 외부: <https://huggingface.co/>
+- [[tech-bridge-minimax-m3-long-context]] · [[thomas-wolf]] — 플랫폼·모델 카드로서의 첫 등장 (2026-09-08)

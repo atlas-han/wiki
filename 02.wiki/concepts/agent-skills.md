@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways]
 created: 2026-08-31
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # Agent Skills
@@ -130,7 +130,29 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 
 `task-observer`는 **프로젝트별 설치를 권장**한다 — *"각 프로젝트의 교훈이 분리되어 관리하기가 더 쉬워집니다."* 반대로 [[llm-coding-guidelines|Karpathy 4원칙]]은 스킬로 설치하지 않고 **상위 폴더 `CLAUDE.md`** 로 상속시킨다. 같은 소스 안에서 **스킬로 둘 것과 규칙으로 둘 것이 갈린다**는 점이 실무적으로 유용하다 — 프로젝트마다 다른 것은 스킬, 전부에 걸리는 것은 계층적 `CLAUDE.md`.
 
+
+## 스킬이 멈추는 자리 (2026-09-08 · [[tech-bridge-agent-knowledge-four-ways]])
+
+이 페이지는 스킬을 **조직 지식·거버넌스** 축으로 키워 왔다([[tech-bridge-ai-native-skills]]의 registry, [[tech-bridge-six-agent-skills]]의 도메인 판단). [[tech-bridge-agent-knowledge-four-ways]]는 반대로 **스킬의 경계**를 긋는다 — 스킬이 무엇을 주고, **어디서 멈추는지**.
+
+정의부터 두 항으로 나눈다.
+
+> 에이전트 스킬은 특정 작업을 수행하기 위해 에이전트에게 전달할 수 있는 **일련의 지침**입니다. (…) 그것은 **따라야 할 단계와 같은 절차**를 나열하고, **언제 그 단계를 따라야 하는지에 대한 판단**을 포함할 수도 있습니다.
+
+**절차 + 판단.** 그리고 판단의 예가 구체적이다 — *"에이전트가 자체적으로 탐색하는 것을 멈추고 (…) 실제 담당자에게 에스컬레이션해야 할 때"*. 이 위키가 [[verifiable-goals]]·[[skill-self-improvement]]에서 다룬 판단이 *산출물이 됐는가*였다면, 여기서는 **언제 손을 떼는가**다.
+
+그리고 곧바로 경계를 긋는다.
+
+> 그러니까 스킬은 에이전트에게 명확한 절차를 제공하고, 그 절차를 어떻게 실행할지에 대한 약간의 판단력도 부여합니다. **하지만 이야기는 거기서 끝납니다.** 해당 스킬은 에이전트에게 오류율을 확인하라고 지시할 수 있지만, **에이전트가 실제로 대시보드에 접속하여 오류율을 확인할 수 있는 것은 아닙니다.**
+
+**이 문장이 [[model-context-protocol|MCP]]와의 분업을 한 줄로 준다** — 스킬은 *무엇을 할지* 알고, MCP는 *그것을 할 수 있게* 한다. 두 페이지는 지금까지 서로를 `related`로만 걸고 있었고 왜 함께 있어야 하는지는 어느 소스도 말하지 않았다. → [[agent-knowledge-sourcing]]
+
+같은 소스가 스킬을 [[retrieval-augmented-generation|RAG]]·[[agent-memory|메모리]]와도 가른다 — **따라야 할 절차·반복 가능한 일**이면 스킬이고, 적어둔 지식이면 RAG, 겪은 지식이면 메모리다. 스킬을 *지식 조달 수단 중 하나*로 상대화한 첫 소스다.
+
+> ⚠️ progressive disclosure(*"작업에 실제로 필요할 때만 해당 스킬을 활용"*)를 이미 확립된 것으로 전제하고 설명한다. 발표자·촬영 시점은 미상이다.
+
 ## References
 
 - [[tech-bridge-ai-native-skills]] · [[imad-touil]] · [[harness-engineering]] · [[tech-bridge-frontier-engineering]]
 - [[tech-bridge-flutter-ai-workflow]] · [[ivanna-kacevica]] — 실무자 관점 (두 가지 트리거 · description 트리거 · 보안 · 5개 스킬)
+- [[tech-bridge-agent-knowledge-four-ways]] · [[ibm]] — 스킬의 경계(절차+판단, 그리고 멈추는 자리) · [[agent-knowledge-sourcing]]

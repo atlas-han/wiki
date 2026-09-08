@@ -8,7 +8,7 @@ sources: [self-harness-paper]
 links:
   - https://arxiv.org/abs/2602.15763
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-09-08
 ---
 
 # GLM-5
@@ -32,6 +32,18 @@ GLM 팀의 *"from vibe coding to agentic engineering"* 를 표방한 모델 (GLM
 
 - 아키텍처·파라미터·coding/agentic 벤치마크 전반 (별도 소스 필요)
 
+
+## 오픈소스 리더보드에서의 언급 (2026-09-08 · [[tech-bridge-minimax-m3-long-context]])
+
+[[thomas-wolf]]가 [[minimax-m3|M3]] 대담을 열며 GLM을 **당시 Artificial Analysis 표의 2위**로 언급한다.
+
+> 방금 **Artificial Analysis 표에서 현재 2위**를 차지하고 있는 **GLM**을 보았기 때문입니다. **아무도 사용할 수 없어서 Fable을 빼버렸고**, 이제 네 번째 항목이 생겼습니다. 그러니까 기본적으로 여러분은 **최고의 오픈 소스 모델들을 연달아** 만나게 될 겁니다.
+
+⚠️ **기준 시점은 대담 시점(6월, 연도 추정 2026)** 이고 업로드 날짜가 아니다. ⚠️ **어느 GLM 버전인지 소스가 명시하지 않는다** — 이 페이지의 GLM-5인지 확인되지 않는다. ⚠️ 같은 문장이 GLM의 제작사를 Moonshot으로 읽히게 하지만 구조가 모호하고 소스가 정정하지 않아 **위키는 그 귀속을 사용하지 않는다.**
+
+[[self-harness-paper]]에서 이 위키가 GLM·[[minimax-m2-5|MiniMax]]·[[qwen3-5|Qwen]]을 **하니스 실험의 base 모델**로 나란히 본 것과 달리, 여기서는 같은 이름들이 **오픈소스 순위 경쟁**의 맥락에서 나온다. ⚠️ ko 자막이 *Artificial Analysis* 를 **"인공 분석 표"** 로 직역했다.
+
 ## References
 
 - [[self-harness-paper]]
+- [[tech-bridge-minimax-m3-long-context]] — 오픈소스 리더보드 언급 (2026-09-08)

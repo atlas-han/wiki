@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context]
 created: 2026-05-25
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # Context Engineering
@@ -80,6 +80,37 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 
 ⚠️ 이 선 긋기는 책임의 배분이기도 하다 — 결과가 나쁠 때 맥락 부족은 고객의 몫이 된다. 소스는 그 함의를 다루지 않는다.
 
+
+## 쏟아붓기의 세 가지 실패 양상 (2026-09-08 · [[tech-bridge-agent-knowledge-four-ways]])
+
+이 페이지는 *무엇을 넣을까*와 *어떻게 줄일까*를 다뤄 왔다. [[tech-bridge-agent-knowledge-four-ways]]는 **다 넣으면 왜 안 되는지**를 세 갈래로 나눈다.
+
+> 이 컨텍스트 창에 **여러 개의 런북**을 저장할 수도 있고, **대시보드**도 여러 개 전달할 수 있으며, **고객 이력**도 조금 넣어둘 수 있습니다. (…) 하지만 (…) **상당히 비효율적**일 수 있습니다. 왜냐하면 AI 에이전트가 **길을 잃거나 막다른 길로 들어서거나**, **특정 결제 페이지의 실제 작동 방식을 제대로 반영하지 못하는 일반적인 방식으로 동작할 가능성**이 크기 때문입니다.
+
+| 실패 | 이 위키가 다뤄온 자리 |
+|---|---|
+| **길을 잃는다** | [[harness-pruning]] · [[self-harness]] — 하니스 문제 |
+| **막다른 길** | 같음 (탐색 budget 과소비 → [[glm-5]]·[[minimax-m2-5]]의 하니스 edit 사례) |
+| **일반론으로 후퇴한다** | **지식 조달 문제 — 이 소스가 새로 여는 축** |
+
+세 번째가 새롭다. 일반론으로 후퇴하는 것은 컨텍스트가 *모자라서*가 아니라 **이 시스템에만 해당하는 지식이 아예 조달되지 않아서**다. 그래서 처방이 *더 넣기*나 *줄이기*가 아니라 **경로를 나누기**가 된다 → [[agent-knowledge-sourcing]] ([[agent-skills]] / [[model-context-protocol]] / [[retrieval-augmented-generation]] / [[agent-memory]]).
+
+⚠️ *"비효율적"* 이라는 판단에 **측정이 붙어 있지 않다.** 이 위키의 정량 근거는 다른 소스에 있다 — [[trusted-throughput]](토큰=LOC), [[agentic-sites]](1~2초 예산).
+
+## 늘리는 쪽의 처방 (2026-09-08 · [[tech-bridge-minimax-m3-long-context]])
+
+지금까지 이 페이지가 모은 답은 전부 **줄이는** 쪽이었다 — compaction · trimming · reset · 외부 객체화. [[tech-bridge-minimax-m3-long-context]]는 같은 압력에 **모델 층에서 늘리는** 답을 낸다: 100만 토큰 + [[sparse-attention|MSA]].
+
+논거가 이 페이지의 전제와 같다 — **에이전트의 컨텍스트 소비는 사람의 것과 종류가 다르다.**
+
+> 이제 **에이전트가 전체 환경과 상호 작용하고 모든 도구 응답을 받고 여러 라운드를 거치는 상황**에서는 **짧은 컨텍스트로는 복잡한 작업을 수행하기에 충분하지 않습니다.**
+
+같은 관찰에서 네 갈래가 나온 셈이다 — **줄인다**(이 페이지) · **믿을 것만 믿는다**(위 신뢰 등급 슬롯) · **캐시로 본다**([[agent-distributed-systems]]) · **늘린다**([[long-context-agents]]).
+
+이 페이지가 *"harness ↔ SDK/플랫폼 경계가 이동한다"* 고 적어 둔 것에 층이 하나 더 붙는다 — **그 아래 모델 자체.** 컨텍스트가 충분히 길면 하니스의 compaction 층이 얇아지고, 이는 [[harness-pruning]]의 *"모델이 좋아지면 하네스를 지운다"* 가 컨텍스트 축에서 실현되는 형태다.
+
+⚠️ **소스는 compaction 계열을 언급조차 하지 않는다.** 이 대비는 위키가 놓는 것이고, 소스에는 **길이의 비용에 대한 논의도 없다.**
+
 ## References
 
 - [[anthropic-managed-agents]]
@@ -87,3 +118,5 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 - [[tech-bridge-harness-engineering]]
 - [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
 - [[tech-bridge-jensen-huang-g20-agi]] — 온보딩 비유 (Jensen Huang, 2026-09-06)
+- [[tech-bridge-agent-knowledge-four-ways]] — 쏟아붓기의 세 실패 양상 (2026-09-08)
+- [[tech-bridge-minimax-m3-long-context]] — 늘리는 쪽의 처방 · [[long-context-agents]] (2026-09-08)

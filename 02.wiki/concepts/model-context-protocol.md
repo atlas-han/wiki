@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
-related: [agent-harness-design, brain-hands-decoupling]
+related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways]
 created: 2026-05-25
-updated: 2026-09-04
+updated: 2026-09-08
 ---
 
 # Model Context Protocol (MCP)
@@ -57,9 +57,31 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 
 같은 소스가 판매자–에이전트 공통 언어로 **UCP**를 별도로 언급하는데, MCP와의 관계는 소스에 설명돼 있지 않고 약어의 뜻도 확정할 수 없다 ([[google-deepmind]] 참조).
 
+
+## 스킬과의 분업 (2026-09-08 · [[tech-bridge-agent-knowledge-four-ways]])
+
+이 페이지는 MCP를 **연결 표준**으로 설명해 왔고, [[agent-skills]]는 **조직 지식**으로 자라 왔다. 두 페이지가 서로를 `related`로만 걸고 있었는데 [[tech-bridge-agent-knowledge-four-ways]]가 **왜 둘이 함께 있어야 하는지**를 하나의 사고 위에서 보인다.
+
+500 에러를 고치는 예제에서, [[agent-skills|스킬]]이 *"우선 오류율을 살펴봐야 합니다"* 라는 절차를 준 직후:
+
+> **하지만 이야기는 거기서 끝납니다.** 해당 스킬은 에이전트에게 오류율을 확인하라고 지시할 수 있지만, **에이전트가 실제로 대시보드에 접속하여 오류율을 확인할 수 있는 것은 아닙니다.** 그래서 (…) **MCP**를 사용하는 것입니다.
+
+> MCP를 사용하면 에이전트가 **MCP 호출을 통해 모든 로그 정보**를 얻을 수 있으므로 (…) 같은 방식으로 **지표**도 얻을 수 있으며, **실제 오류율을 확인**할 수 있습니다.
+
+**스킬은 무엇을 할지 알고, MCP는 그것을 할 수 있게 한다.** [[brain-hands-decoupling]]의 뇌/손 분리를 **지식 조달 층**에서 다시 그린 형태이고, 이 페이지가 이미 적어 둔 *"MCP는 hands 쪽 구체적 구현체"* 라는 관찰과 정확히 맞물린다.
+
+소스는 호스트/서버 관계도 간단히 정리한다 — *"에이전트 자체, 즉 **MCP 호스트**와 해당 에이전트가 통신하려는 **각 시스템(MCP 서버 뒤에 위치함)**"*. 그리고 MCP가 메우는 것이 **모델의 무지**임을 명시한다.
+
+> 이 **모델 자체는 특정 로깅 스택의 백엔드를 쿼리하는 방법을 알지 못할 수도 있지만**, 해당 로깅 스택의 **MCP 서버는 연결 방법을 알고 있으며** 에이전트가 호출할 수 있도록 해당 연결을 제공합니다.
+
+같은 소스의 라우팅 규칙에서 MCP는 *"바깥에서 실제로 조회해야 하는 것"* 에 배정된다. → [[agent-knowledge-sourcing]]
+
+> ⚠️ 규칙의 한정어 *"without using proprietary code"* 가 무엇을 가리키는지 **소스가 부연하지 않는다.**
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
 - [[anthropic-managed-agents]]
 - [[playwright-mcp]]
 - [공식 사이트 modelcontextprotocol.io](https://modelcontextprotocol.io/introduction)
+- [[tech-bridge-agent-knowledge-four-ways]] — 스킬과의 분업 · [[agent-knowledge-sourcing]]

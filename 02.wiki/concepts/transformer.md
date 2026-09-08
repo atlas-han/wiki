@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [architecture, deep-learning, attention, gpu, scaling]
 aliases: [트랜스포머, Transformer 아키텍처]
-related: [attention-mechanism, in-context-learning, sutton-bitter-lesson, nanogpt, context-resets-and-compaction]
+related: [attention-mechanism, in-context-learning, sutton-bitter-lesson, nanogpt, context-resets-and-compaction, sparse-attention, native-multimodal-pretraining]
 first-seen: tech-bridge-karpathy-transformers-stanford
-sources: [tech-bridge-karpathy-transformers-stanford, tech-bridge-uncertainty-mathematics]
+sources: [tech-bridge-karpathy-transformers-stanford, tech-bridge-uncertainty-mathematics, tech-bridge-minimax-m3-long-context]
 created: 2026-09-03
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # Transformer
@@ -138,6 +138,22 @@ Tesla 경험에서 나온 실무 관찰. ConvNet에 radar·지도·차종을 넣
 
 위 "아키텍처의 내구성" 절이 트랜스포머가 오래 버틴 이유를 다뤘다면, 이 소스는 **무엇이 그것을 대체할 수 있는지**에 대한 후보를 제시한다. ⚠️ 방향 제시일 뿐 구체적 결과는 없다. → [[continual-learning]] · [[sutton-bitter-lesson]]
 
+
+## GPU 효율성 항이 커널로 풀린 뒤 (2026-09-08 · [[tech-bridge-minimax-m3-long-context]])
+
+이 페이지는 트랜스포머가 이긴 이유를 **표현력 · 최적화 가능성 · GPU 효율성**의 동시 충족으로 정리했다. [[thomas-wolf]]의 서술은 그 위에 **시간 축**을 얹는다.
+
+> **linear attention**에 대한 연구도 많았습니다. 그러다가 **flash attention이 등장하면서 그 모든 것들이 어느 순간 사라져 버렸죠.** 우리는 **더 효율적인 [커널]** 이 필요할 뿐이라는 것을 알게 되었습니다.
+
+**세 번째 항(GPU 효율성)이 아키텍처가 아니라 커널로 해결됐다**는 것이고, 그래서 그 시기에 나온 구조 변형들이 도태됐다. 그리고 길이가 100만 규모로 커지자 구조 문제가 되돌아온다 → [[sparse-attention]].
+
+이 페이지가 적은 *"아키텍처의 내구성"* 에 한 단서가 붙는다 — 트랜스포머가 버틴 이유 중 일부는 **그것을 대체하려던 시도들이 구현 층 개선에 흡수됐기 때문**이기도 하다. 그렇다면 다음 대체 시도가 유효할 조건은 **커널로 흡수되지 않는 축**을 건드리는 것이고, [[sparse-attention|MSA]]는 그 축을 *길이 × 모델 크기의 동시 확장*으로 잡는다.
+
+같은 소스가 트랜스포머 학습 레시피 쪽에서도 한 가지를 더한다 — **비전과 텍스트를 첫 스텝부터 함께** 사전학습하는 것이 가능하다는 주장(→ [[native-multimodal-pretraining]]), 그리고 그 반대 방식(어댑터·continued pre-training)을 기각한 근거가 성능이 아니라 **작은 실험이 큰 모델로 옮겨가지 않는다**는 것이라는 점. [[sutton-bitter-lesson]]이 실험 방법론 축에서 쓰인 사례다.
+
+⚠️ 이 소스에는 **수치가 하나도 없다.**
+
 ## References
 
 - [[tech-bridge-karpathy-transformers-stanford]]
+- [[tech-bridge-minimax-m3-long-context]] — 커널로 흡수된 구조 변형들 · [[sparse-attention]] · [[native-multimodal-pretraining]] (2026-09-08)
