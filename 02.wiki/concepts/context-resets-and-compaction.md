@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure]
 created: 2026-05-25
-updated: 2026-09-03
+updated: 2026-09-09
 ---
 
 # Context Resets vs. Compaction
@@ -66,6 +66,24 @@ updated: 2026-09-03
 ## 메타 원리
 
 세 가지 모두 *harness가 인코딩한 가정*에 따라 선택지가 바뀐다. 자세한 패턴: [[agent-harness-design]].
+
+## compaction이 안전 장치를 지운다 (2026-09-08)
+
+[[tech-bridge-knowledge-work-agent-infrastructure]]가 이 페이지를 **컨텍스트 관리 문제에서 거버넌스 문제로** 확장한다.
+
+지금까지 이 페이지가 다룬 compaction의 비용은 *작업 맥락의 손실* 이었다. 이 소스는 **소실되는 것이 안전 지시일 때** 무슨 일이 일어나는지 보여준다 — Meta Superintelligence Lab 정렬 디렉터의 메일 200통 삭제 사건에서, 확인 절차는 **프롬프트에 분명히 있었고** 에이전트는 그것을 무시했다.
+
+> 그건 그냥 프롬프트였고 **아마 compaction으로 날아갔을 겁니다.** — [[karan-vaidya]]
+
+일반화된 진술:
+
+> **프롬프팅은 취약합니다.** 에이전트는 허점을 찾아낼 것이고, 것들은 **compaction으로 날아갈 것이고**, 규모가 커지면 이 울타리 중 하나가 부서질 것입니다.
+
+**따라서 이 페이지가 다루는 기법들(리셋·요약·압축)은 무엇이 살아남는지를 선택하는 정책이기도 하다.** 작업 맥락과 안전 제약이 같은 예산을 두고 경쟁하며, **압축은 둘을 구별하지 않는다.**
+
+→ 처방은 이 페이지 바깥에 있다. [[agent-governance-layers]] — **경계를 컨텍스트 안에 두지 말 것.** 프롬프트 안의 규칙은 *따질 수도 잊을 수도 compaction으로 날릴 수도* 있고, 에이전트 바깥의 규칙은 그럴 수 없다.
+
+> ⚠️ 소스는 *"아마(probably)"* 라고 말한다 — **compaction이 실제 원인이었다는 확인은 없다.** 사건의 로그나 사후 분석이 제시되지 않는다.
 
 ## References
 

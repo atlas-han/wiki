@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
 related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring]
 created: 2026-06-03
-updated: 2026-08-31
+updated: 2026-09-09
 ---
 
 # Harness Engineering
@@ -96,6 +96,25 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 [[tech-bridge-spec-driven-development]]의 [[spec-driven-development]]는 AI Layer의 Global Rules / Context Docs를 **저장소 계약**(constitution → spec → plan → task)으로 제품화한 형태. 프롬프트 대신 스펙을 메인 아티팩트로 두면 PIV의 Plan이 휘발되지 않는다.
 
 [[tech-bridge-figma-coding-agents]]의 [[agent-org-adoption]]은 System Evolution을 *조직*에 적용한다. 유용한 에이전트 발견을 즉시 결정론적 체크로 코드화하는 것은 "every mistake becomes a rule"의 팀 운영판. 다만 규칙은 훅만이 아니라 PR 출처 표기·회의론자 로드맵이기도 하다.
+
+## cursor harness — 네 구성요소 (2026-09-08)
+
+[[tech-bridge-cursor-legacy-refactoring]]에서 [[cursor|Cursor]]가 자기 하네스를 명시적으로 정의한다. 이 위키가 모아온 하네스 정의에 하나가 더 붙는다.
+
+> **플랫폼과 모델 사이에 있는 것을 cursor harness라고 부릅니다.** 플랫폼은 Cursor를 쓸 수 있는 모든 표면이고, 모델은 Cursor가 활용하거나 위임할 수 있는 LLM들입니다. 그 사이에 있는 것이 **도구 실행(tool execution) · 캐시 관리(cache management) · 동적 컨텍스트 관리(dynamic context management) · 컨텍스트 조립(context assembly)** 입니다.
+
+| 소스 | 하네스를 무엇으로 정의하는가 |
+|---|---|
+| [[angela-jiang]] ([[tech-bridge-claude-platform-agent-era]]) | 모델 바깥에서 에이전트를 성립시키는 것 (토큰 역할·도구·루프) |
+| **[[cursor]] (이 소스)** | **플랫폼과 모델 사이의 층** — 도구 실행·캐시·동적 컨텍스트·컨텍스트 조립 |
+
+**Cursor 정의의 특징은 캐시 관리와 컨텍스트 조립을 1급 구성요소로 든다는 것**이다. 이 위키의 [[context-engineering]]·[[harness-pruning]]이 다뤄온 것들이 하네스의 **내부 부품으로 명시된** 첫 사례다.
+
+그리고 하네스가 왜 필요한지가 **모델 교체 가능성**으로 설명된다 — 하네스가 그 층을 맡기 때문에 계획과 실행에 서로 다른 모델을 끼울 수 있다 → [[model-mixing-economics]].
+
+> 모델과 플랫폼만 있는 게 아니라 **그 위에 우리가 제공하는 하네스도 있습니다.**
+
+> ⚠️ **당사자 진술.** 하네스를 파는 회사가 하네스가 중요하다고 말하는 구조다. 4월에 쓰였다는 기술 블로그가 언급되나 소스에 링크가 없다.
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [agent, knowledge, routing, decision, skills, mcp, rag, memory]
 aliases: [에이전트 지식 조달, 지식 라우팅]
 related: [agent-skills, model-context-protocol, retrieval-augmented-generation, agent-memory, context-engineering]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure]
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Agent Knowledge Sourcing
@@ -60,6 +60,22 @@ updated: 2026-09-08
 - **비용·지연 비교가 없다.** 쏟아붓기가 *"비효율적"* 이라는 판단에 측정이 붙어 있지 않다.
 - **조합을 다루지 않는다.** 소스는 *"또는 이 모든 것"* 이라고 열어두고 넘어간다. 실제로는 네 가지가 동시에 붙고, 그때 **RAG의 문서와 [[agent-memory|메모리]]의 경험이 어긋나는 경우**가 생긴다 — 소스의 예제 자체가 그런 사례인데(런북에 없던 진짜 원인) 판정 규칙이 없다.
 - **네 갈래가 배타적이지 않다.** 반복 절차이면서 외부 조회가 필요한 일은 스킬과 MCP 둘 다다. 표는 그것을 인정하지만 우선순위는 주지 않는다.
+
+## 직교하는 축 — 누구의 범위로 집계하는가 (2026-09-08)
+
+[[tech-bridge-knowledge-work-agent-infrastructure]]가 이 페이지의 4갈래 라우팅과 **직교하는 축**을 하나 놓는다.
+
+이 페이지는 *지식이 어디서 왔는가* 로 가른다 — 사람이 적어둔 것([[retrieval-augmented-generation|RAG]])인가 에이전트가 겪은 것([[agent-memory|메모리]])인가. Composio 편은 **겪은 것을 누구의 범위로 집계하는가**를 가른다:
+
+1. **도구가 일반적으로 어떻게 작동하는가** — 모든 사람에게 적용
+2. **회사가 일을 어떻게 하는가** — 조직 범위
+3. **당신이 어떻게 하기를 선호하는가** — 개인 범위
+
+> 그것은 **당신 회사가 어떻게 작동하는지의 그림**입니다. — [[karan-vaidya]]
+
+그리고 이 소스는 그 집계가 충분히 쌓이면 **[[agent-skills|스킬]]로 증류된다**고 말한다 — *"어떤 접근이 되고 어떤 게 안 되는지, 과거에 무엇이 실패로 이어졌는지."* 즉 **메모리 → 스킬의 승격 경로**를 제안하는 셈인데, 이 위키의 [[agent-knowledge-sourcing]] 라우팅은 둘을 **다른 상자**로 놓았다.
+
+> ⚠️ Contradiction: [[tech-bridge-agent-knowledge-four-ways|IBM 편]]은 스킬을 *사람이 적어둔 절차* 로, 메모리를 *에이전트가 겪은 것* 으로 갈랐다. Composio 편은 **겪은 것이 쌓여 스킬이 된다**고 말한다. 두 소스는 서로를 언급하지 않으며 **위키는 어느 쪽도 채택하지 않고 두 서술을 나란히 둔다.** 승격의 메커니즘(무엇이 로그를 스킬로 만드는가)은 Composio 편이 설명하지 않는다.
 
 ## References
 

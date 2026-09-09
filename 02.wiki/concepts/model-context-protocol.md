@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring]
 created: 2026-05-25
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Model Context Protocol (MCP)
@@ -77,6 +77,20 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 같은 소스의 라우팅 규칙에서 MCP는 *"바깥에서 실제로 조회해야 하는 것"* 에 배정된다. → [[agent-knowledge-sourcing]]
 
 > ⚠️ 규칙의 한정어 *"without using proprietary code"* 가 무엇을 가리키는지 **소스가 부연하지 않는다.**
+
+## 플러그인 — MCP와 스킬이 한 패키지로 (2026-09-08)
+
+[[tech-bridge-cursor-legacy-refactoring]]에서 [[cursor|Cursor]]는 MCP를 **"플러그인"** 이라는 상위 단위로 감싸 배포한다. 그리고 그 단위에는 **MCP와 [[agent-skills|스킬]]이 함께** 들어간다.
+
+> Atlassian 플러그인에는 **MCP도 있지만** Atlassian 팀이 퍼블리시한 **스킬들도 있습니다.**
+
+이 위키는 [[tech-bridge-agent-knowledge-four-ways|IBM 편]]에서 둘의 분업을 *스킬 = 따라야 할 절차, MCP = 그 절차를 수행할 외부 접근* 으로 정리했다. 이 소스는 그 분업이 **유통 단위에서는 합쳐진다**는 것을 보여준다 — 도구를 주는 쪽이 *그 도구를 쓰는 법* 도 함께 준다.
+
+목록에 오른 것: **Atlassian · Datadog · Figma · Google(Drive · Calendar · Gmail) · granola · PagerDuty · Sentry.**
+
+**클라우드 승계** — [[cursor-cloud|cursor cloud]]의 원격 에이전트도 **로컬에서 쓰던 MCP를 그대로 연결**할 수 있다. 자체적으로 **cursor cloud MCP**가 있어 실패한 실행과 환경을 진단하는 데 쓴다.
+
+> ⚠️ 시연 중 **Statsig MCP 연결에 실패**해 Datadog으로 대체했다. 플러그인 목록에 있다고 항상 연결되는 것은 아니다.
 
 ## References
 

@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-09-09
 ---
 
 # Anthropic
@@ -79,6 +79,18 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 - 창립·자금조달·인력 구조 등 회사 기본 프로필 (별도 소스 ingest 필요)
 - 모델 release timeline 전체
 - 안전·alignment 연구 출판물
+
+## 가격 때문에 회피된다는 진술 (2026-09-08)
+
+[[tech-bridge-cursor-legacy-refactoring]]에서 [[cursor|Cursor]] 필드 엔지니어가 [[cursor-cloud|cloud agent]] 모델 선택을 설명하며 말한다:
+
+> 저는 여기서 보통 **Anthropic 모델은 피합니다. 비싸질 수 있어서요.**
+
+맥락은 **대량 병렬·장시간 실행**이다 — cloud agent는 스크린샷·비디오를 반환하느라 토큰을 더 쓰므로 *더 싸고 빠른 모델* 을 권한다는 논지 안에서 나온 말이다. 같은 소스는 SQLite 재구축 케이스 스터디에서도 **Fable 단독보다 모델 조합이 저렴했다**고 주장한다. → [[model-mixing-economics]]
+
+> ⚠️ **경쟁사 직원의 진술이며 수치가 제시되지 않는다.** 이 위키는 소스 서술 그대로 기록하며 독립 확인하지 않는다. 같은 회사([[cursor]])가 발표한 [[grok-4-6]] 벤치마크도 자사 벤치마크(Cursor Bench 3.2)다.
+>
+> 이 위키에 [[anthropic|Anthropic]] 모델의 가격·성능에 대한 **Anthropic 자신의 소스**는 [[tech-bridge-claude-platform-agent-era]]뿐이며, 그 소스는 가격을 다루지 않는다.
 
 ## References
 

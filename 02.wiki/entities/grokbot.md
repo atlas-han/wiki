@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring]
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-09
 ---
 
 # GrokBot
@@ -30,6 +30,17 @@ updated: 2026-09-01
 - 로드맵 언급: **iMessage 지원**(봇에게 문자 보내기)이 흔한 요청. 아직 확정 아님.
 - 초기 실사용 사례로 Odyssey IMAX 70mm 티켓 예매, 식료품 구매.
 - 남은 과제로 자잘한 버그가 인정됐다.
+
+## 두 번째 언급 (2026-09-08 편)
+
+[[tech-bridge-cursor-legacy-refactoring]]의 마지막 답변에서 GrokBot이 다시 나온다. 질문은 *"스케줄로 도는 cloud agent가 **로컬 머신의** 무언가에 접근해야 하면?"* 이었고, 답은 레포에 커밋된 것(스킬·계획·파일)은 되지만 머신에 있는 것은 프라이빗 커넥티비티가 필요하다는 것이었다. 그 다음에:
+
+> **`GrokBot`이라는 정말 멋진 도구가 있습니다. 일반 지식 제품이지만 코딩에도 쓸 수 있습니다.** 그것이 **클라우드와 로컬을 함께 써서 당신 머신에서 여러 가지를 작업하는 정말 좋은 해법**을 갖고 있습니다. **다음 주 목요일에 그걸로 워크샵을 합니다.**
+
+→ 이 위키가 [[tech-bridge-grokbot-agent-teams]]에서 *지속형 개인 에이전트* 로 기록한 GrokBot이, **로컬 머신 접근이라는 [[cursor-cloud|Cursor Cloud]]의 구조적 한계를 메우는 자리**에 놓인다. 두 제품 축이 연결되는 두 번째 지점이다.
+
+> ⚠️ *"일반 지식 제품(general knowledge product)"* 이라는 표현은 이 소스가 처음 쓴다. GrokBot이 코딩 특화가 아니라는 [[cursor]] 페이지의 서술과 일치한다.
+> **"다음 주 목요일"** 은 이 소스의 촬영 시점 추정(2026-09-01 무렵)과 맞물리는 단서이며 날짜를 확정하지 않는다.
 
 ## References
 

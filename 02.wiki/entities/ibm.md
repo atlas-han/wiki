@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality]
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # IBM
@@ -41,6 +41,24 @@ updated: 2026-09-08
 - IBM의 AI 제품·모델(Granite 등)과 이 위키의 관계 — **소스 없음.**
 - 발표자 신원, 촬영 시점.
 - IBM Technology 채널의 다른 콘텐츠가 이 위키에 더 들어올지.
+
+## 두 번째 소스 (2026-09-08)
+
+[[tech-bridge-ai-era-code-quality]]가 들어오면서 IBM은 이 위키에 **소스 두 편을 가진 조직**이 됐다. 두 편의 공통점이 뚜렷하다:
+
+| | [[tech-bridge-agent-knowledge-four-ways]] (09-07) | [[tech-bridge-ai-era-code-quality]] (09-08) |
+|---|---|---|
+| 형식 | 1인 화이트보드 해설, 8:58 | 1인 슬라이드 해설, 13:42 |
+| 발표자 | **무명** | **무명** |
+| 촬영 시점 | **미확정** | **미확정** |
+| 자사 제품 | **한 번도 안 나옴** | **한 번도 안 나옴** |
+| 판정 근거 | `#IBMTechnology` + `ibm.biz` 링크 | `#IBM` + `ibm.biz` 링크 |
+
+> **관찰**: IBM 편은 두 번 다 **자사 제품이 등장하지 않는 개념 해설**이다. 이 위키에 들어온 다른 기업 소스들([[cursor]]·[[composio]]·[[openai]]·[[nvidia]])이 전부 자사 제품·주장을 파는 것과 대비된다. 당사자 진술 경고는 붙이되 **판매 대상이 특정되지 않는다**는 점을 함께 적는다.
+>
+> ⚠️ **발표자가 두 번 연속 무명이고 촬영 시점이 두 번 연속 미확정이다.** 2026-09-03에 세운 촬영 시점 확인 절차를 IBM 편에 적용한 결과는 두 번 다 *양쪽 다 주장하지 않음* 이었다.
+
+09-08 편이 더한 것: [[decision-quality]] · [[system-level-quality]] · [[behavior-validated-trust]] · [[executable-standards]].
 
 ## References
 

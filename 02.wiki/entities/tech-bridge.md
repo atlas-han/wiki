@@ -36,7 +36,7 @@ sources:
   - tech-bridge-agent-knowledge-four-ways
   - tech-bridge-minimax-m3-long-context
 created: 2026-06-03
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Tech Bridge
@@ -108,7 +108,30 @@ updated: 2026-09-08
 
 > ⚠️ **채널 특성 관찰**: 이 세 편과 09-05의 Altman 3부작 모두 **당사자 진술**(자기 회사·자기 상품을 말하는 CEO)이다. 채널이 최근 **원 저작자 인터뷰·행사 영상의 한영자막 재배포**로 기울어 있으며, 설명란은 원 출처를 밝히되 **진행자 정보가 편마다 들쭉날쭉하다**(Huang·Altman 편은 설명란에 진행자 표기, Musk 편은 없음; Altman 편은 설명란과 자막이 서로 다른 이름을 가리킨다).
 
+## 2026-09-08 업로드 3편 — 채널 최장편과 세 갈래 (2026-09-09 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-knowledge-work-agent-infrastructure]] ([[composio]]) | 20:12 | 컨퍼런스 단독 발표 · 당사자(인프라 판매자) |
+| [[tech-bridge-ai-era-code-quality]] ([[ibm]]) | 13:42 | 1인 슬라이드 해설 · **자사 제품 없음** |
+| [[tech-bridge-cursor-legacy-refactoring]] ([[cursor]]) | **55:17** | **실시간 워크샵** · 당사자(플랫폼 판매자) |
+
+**55:17은 이 채널이 올린 실시간 형식으로는 최장편**이다(전체 최장은 61:24 [[tech-bridge-karpathy-transformers-stanford|Karpathy 강연]]이나 그것은 아카이브 재배포였다). → **채널이 짧은 해설과 한 시간짜리 실무 워크샵을 같은 날 함께 올린다.**
+
+**세 편이 우연히 한 축을 이룬다** — 셋 다 *에이전트가 코딩에서 잘 되는 이유와 그 조건* 을 다루되 서 있는 자리가 다르다. Composio는 **코딩 밖에는 그 조건이 없다**고 하고, IBM은 **코딩 안에서도 판정은 사람 몫**이라 하며, Cursor는 **그 조건을 갖춘 코딩 안에서 실제로 어디까지 되는지** 보여준다(그리고 라이브 시연은 끝나지 않았다).
+
+**새 주의사항**
+
+- **ko 자막이 서술문을 청유문으로 바꿀 수 있다.** IBM 편에서 en-orig *"Maybe leave some comments"*(PR 리뷰 절차 **서술**)가 ko에서 **"댓글을 남겨주시면 감사하겠습니다"**(시청자에게 하는 **요청**)가 됐다. 지금까지 기록한 유형(고유명사 직역·약어 창작·부호 뒤집기·단위 창작)과 다른 **화행(speech act) 변형**이고, **문장 자체가 자연스러워 자막만 보면 오류로 보이지 않는다.**
+- **en-orig가 `.md`를 `.mmd`로 적는 표기 습관이 있다.** Composio 편 `bugbot.mmd`, Cursor 편 `agents.mmd`·`memories.mmd` — **한 날 두 소스에서 세 번**이다. 개별 오인식이 아니라 생성기의 습관으로 보이며 **파일 확장자는 이 패턴을 알고 읽어야 한다.**
+- **촬영 시점을 다른 위키 소스와의 교차 참조로 좁힐 수 있다.** Cursor 편이 [[grok-4-6|Grok 4.6]]을 *"어제 출시"* 라 했고, 이 위키의 [[tech-bridge-grokbot-agent-teams]](2026-08-31)가 그것을 **당일 발표**로 기록하고 있었다. → 촬영 **2026-09-01 무렵**, 업로드 09-08. **업로드 ≠ 촬영의 네 번째 사례이자 내부 증거가 아닌 위키 교차 참조로 좁힌 첫 사례다.**
+- **발표자 이름을 확정할 근거가 아예 없는 경우가 있다.** Cursor 편은 진행자가 **Amita / Amriita** 로 두 번 다르게 부르고 **설명란에 이름이 없다.** 2026-09-02·09-08의 불일치는 설명란이라는 판정 근거가 있었으나 이번엔 없다 → **어느 표기도 채택하지 않고 인물 페이지를 만들지 않았다.**
+- **자막이 끝에서 잘릴 수 있다.** IBM 편 en-orig 마지막 줄이 문장 중간에서 끝난다(13:18, 영상은 13:42). 2026-09-06 Jensen Huang 편이 **시작**의 결손이었다면 이번은 **끝**의 결손이다. **보충하지 않았다.**
+- **IBM 편은 두 번 연속 발표자 무명·촬영 시점 미확정이다.** 그리고 두 번 다 **자사 제품이 등장하지 않는다** → [[ibm]] 참조.
+
+> ⚠️ **당사자 진술 비중이 계속 높다.** 3편 중 2편이 자기 회사 제품을 파는 발표다(09-05·09-06의 CEO 시리즈에 이어). 각 페이지에 **화자의 인센티브**를 함께 적었다 — 인프라 판매자([[composio]]) · 코딩 에이전트 플랫폼 판매자([[cursor]]).
+
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

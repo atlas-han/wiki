@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring]
 created: 2026-09-01
-updated: 2026-09-07
+updated: 2026-09-09
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -121,6 +121,24 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 3단계의 서술이 이 페이지의 정의와 거의 겹친다 — **장기 실행 + 안정성 + 동료 은유**. 이 위키의 기존 증언들([[tech-bridge-grokbot-agent-teams]]·[[tech-bridge-flutter-ai-workflow]])이 **현장에서 이미 하고 있는 것**을 보고했다면, 여기서는 공급자가 그것을 **아직 오지 않은 단계**로 둔다.
 
 ⚠️ 시점이 *"조만간"* 뿐이고 무엇이 부족한지(안정성? 비용? 신뢰?)를 말하지 않는다. 현장 증언과의 이 시차를 해소하지 않는다.
+
+## 세 번째 형태 — 유지보수 잡 (2026-09-08)
+
+[[tech-bridge-cursor-legacy-refactoring]]이 *항상 켜져 있는 에이전트* 의 세 번째 형태를 보여준다.
+
+| 형태 | 성격 | 소스 |
+|---|---|---|
+| **동료 같은 봇** | 정체성·아바타·메시징 UI·비서실장 코디네이터 | [[grokbot]] ([[tech-bridge-grokbot-agent-teams]]) |
+| **위임받은 작업자** | 티켓을 받아 PR을 낸다. 사람이 시작시킨다 | [[cloud-agent-delegation]] |
+| **유지보수 잡** | **사람이 요청하지 않아도 스케줄·이벤트로 돈다** | [[scheduled-agent-automations]] |
+
+세 번째가 앞의 둘과 다른 점은 **트리거가 사람이 아니라는 것**이다 — 시간, PR 이벤트, Slack 메시지, Jira 웹훅. 그리고 목적이 산출이 아니라 **예방**이다:
+
+> **레거시 코드베이스를 리팩터링할 때 우리는 "어쩌다 이 상태가 됐지?"라고 묻습니다.** 많은 경우 그냥 **충분히 선제적이지 않았기 때문**입니다.
+
+**조직 운영 형태도 하나 더 기록된다** — 금요일에 백로그를 통째로 돌려놓고 월요일에 PR을 리뷰하는 방식, 그리고 **유럽 팀과 아시아 팀이 cloud agent를 통해 비동기로 인계**하는 방식. 이 위키가 [[agent-org-adoption]]에서 모아온 채택 패턴에 **시차를 자원으로 쓰는** 사례가 붙는다.
+
+> ⚠️ **automation이 잘못 돌 때의 폭발 반경이 논의되지 않는다.** 매주 자동으로 PR을 올리고 플래그를 지우는 잡의 실패 모드는 [[action-reversibility]]가 제기한 문제와 정확히 같은데, 소스는 두 가지를 연결하지 않는다.
 
 ## References
 

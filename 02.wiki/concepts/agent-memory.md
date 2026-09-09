@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring]
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Agent Memory
@@ -62,6 +62,30 @@ updated: 2026-09-08
 - **무효화** — [[agent-distributed-systems]]가 제기했고 [[tech-bridge-agent-knowledge-four-ways]]는 침묵한다.
 - **RAG와 충돌할 때의 우선순위** → [[retrieval-augmented-generation]]의 같은 항목.
 - 저장 형식·범위(세션/프로젝트/조직)와 여러 에이전트 간 공유.
+
+## 조직 규모와 잡 규모 — 두 가지 새 형태 (2026-09-08)
+
+이날 들어온 두 소스가 이 페이지에 서로 다른 크기의 메모리를 하나씩 더한다.
+
+**① 조직 규모 — 행동 기록** ([[tech-bridge-knowledge-work-agent-infrastructure]])
+
+모든 앱에 걸친 에이전트 행동을 한곳에 로깅하면 그 로그가 곧 메모리가 된다.
+
+> 이를 통해 첫째, **에이전트가 기억을 얻습니다.** 비슷한 작업이 전에 어떻게 되었는지, 무엇이 성공적이었는지 되돌아보고 다시 재현할 수 있습니다.
+
+지식 노동에서 이것이 없을 때의 상태가 명시된다 — *"에이전트에게는 기억이 없습니다. 거의 매번 백지 상태에서 시작합니다."* → [[agent-action-record]]. 여기서 메모리는 **개인이 아니라 조직 단위로 집계되고 세 층위**(도구 일반 / 회사 / 개인)를 갖는다.
+
+**② 잡 규모 — `memories.md`** ([[tech-bridge-cursor-legacy-refactoring]])
+
+[[cursor-cloud|Cursor]]의 automation은 각각 **`memories.md` 파일**을 갖는다.
+
+> 이것이 automation이 **실행할 때마다 더 나아지는 방법**입니다. 무언가를 놓쳤거나 *"Slack에 이렇게 표현한 게 마음에 안 들었어"* 라고 후속으로 말해야 했다면 **그 피드백에서 배우고 다음 실행마다 더 나아집니다.**
+
+이 위키가 본 메모리 구현 중 **반복 실행되는 잡에 귀속된 것은 처음**이다 — 사용자에게도 세션에도 아니고 *스케줄된 작업* 에 붙는다. → [[scheduled-agent-automations]] · [[skill-self-improvement]]
+
+같은 소스가 팀 학습용 **`continual learning` 플러그인**도 언급한다 — `AGENTS.md`에 작업·글쓰기·코딩 스타일을 축적하며 **팀 플러그인 또는 개인 플러그인**으로 범위를 고를 수 있다.
+
+> ⚠️ 어느 쪽도 **잘못 학습했을 때의 정정 경로**를 제시하지 않는다. 무효화·망각 정책은 이 위키의 어떤 소스에서도 아직 다뤄지지 않았다.
 
 ## References
 

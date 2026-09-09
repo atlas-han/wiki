@@ -5,9 +5,9 @@ category: pattern
 tags: [sdlc, artifact-chain, governance, evals, anthropic]
 related: [intent-md, spec-driven-development, verifiable-goals, generator-evaluator-pattern, context-engineering]
 first-seen: tech-bridge-ai-native-sdlc
-sources: [tech-bridge-ai-native-sdlc]
+sources: [tech-bridge-ai-native-sdlc, tech-bridge-ai-era-code-quality, tech-bridge-cursor-legacy-refactoring]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-09
 ---
 
 # AI-Native SDLC
@@ -99,6 +99,27 @@ PR 리뷰는 **비동기**이고 작성자와 리뷰어를 분리한다 — *"**
 
 - *"우리는 **두 배 더 빠릅니다**"* — 빌드 단계 단축에 대한 이 주장의 **출처·측정 방법이 소스에 없다.**
 - 이 위키는 **Anthropic 원문서를 직접 ingest하지 않았다.** 전부 제3자 해설을 통한 것이다.
+
+## 품질 판정과 마이그레이션 워크플로 (2026-09-08)
+
+이날 두 소스가 이 페이지에 서로 맞물리는 조각을 하나씩 더한다.
+
+**① 품질 판정이 어디로 가는가** ([[tech-bridge-ai-era-code-quality]])
+
+AI-native SDLC에서 **평가의 무게중심이 구현에서 결정으로** 옮겨간다 → [[decision-quality]]. 그리고 파생되는 세 이동 — 파일 단위 리뷰에서 [[system-level-quality|시스템 단위 평가]]로, 작성자 신뢰에서 [[behavior-validated-trust|행동 검증]]으로, 문서 표준에서 [[executable-standards|실행 가능한 가드레일]]로. 품질은 **릴리스 직전 체크포인트가 아니라 계획→배포→운영 전체에 짜인 지속적 실천**이 된다.
+
+**② 실제 워크플로는 어떻게 생겼는가** ([[tech-bridge-cursor-legacy-refactoring]])
+
+레거시 마이그레이션의 네 단계가 실물로 시연된다:
+
+1. **감사·전략** — `/canvas`로 커버리지 감사, **plan mode**로 코드 없이 계획서만 ([[plan-to-ticket-pipeline]])
+2. **분할** — 플러그인으로 Jira 티켓화 (목표·범위·수락 기준·테스트·의존성)
+3. **위임** — [[cloud-agent-delegation|cloud agent]]가 **티켓당 별도 PR** + 자기 검증 비디오
+4. **예방** — [[scheduled-agent-automations|automations]]로 방치된 플래그·의존성을 미리 정리
+
+**두 소스를 겹쳐 읽으면 SDLC의 앞뒤가 채워진다** — IBM 편은 *무엇을 품질로 볼 것인가* 를, Cursor 편은 *그 판정을 어떤 절차에 끼울 것인가* 를 말한다. 특히 ②의 3단계가 ①의 *행동 검증* 을, ④가 ①의 *지속적 실천* 을 각각 구현하는 형태다.
+
+> ⚠️ 두 소스는 서로를 언급하지 않으며 이 대응은 위키가 놓는 것이다. 그리고 Cursor 편의 라이브 시연은 **시간 안에 끝나지 않았다.**
 
 ## References
 

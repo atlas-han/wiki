@@ -5,9 +5,9 @@ category: theory
 tags: [learning, memory, catastrophic-forgetting, bayesian, agi]
 related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-09
 ---
 
 # Continual Learning
@@ -64,6 +64,22 @@ Ghahramani가 continual learning과 나란히 놓는 것이 둘 더 있다.
 즉 이 개념은 나머지 넷이 **우회하고 있는 문제의 본체**다. 에이전트 엔지니어링이 컨텍스트·파일·메모리 상태로 메우는 자리를, 학습 이론 쪽에서 정면으로 다루면 이 이름이 된다.
 
 ⚠️ 다만 소스는 **연구 방향으로만** 제시한다. 구체적 기법·성과·타임라인은 나오지 않고, Ghahramani 본인도 새 아이디어에 대해 *"아직 완벽하게 구체화된 것은 아닙니다"* 라고 말한다.
+
+## 같은 이름의 제품이 나왔다 (2026-09-08)
+
+[[tech-bridge-cursor-legacy-refactoring]]에서 [[cursor|Cursor]]가 **`continual learning`이라는 이름의 플러그인**을 언급한다 — 이 페이지의 제목과 정확히 겹친다.
+
+질문은 *"Cursor가 팀의 협업을 학습해서 미래 계획을 더 잘 세울 수 있나?"* 였고 답이 그 플러그인이었다:
+
+> 이 플러그인을 추가하면 **`AGENTS.md` 파일에 당신이 어떻게 일하는지, 글쓰기 스타일과 코딩 스타일에 대한 정보와 데이터를 더하고 즉시 학습을 시작합니다.** **팀 플러그인**으로 만들어 팀 전체가 쓰게 하거나 **개인 플러그인**으로 둘 수 있습니다.
+
+> ⚠️ **이것은 이 페이지가 다루는 학문적 의미의 continual learning과 같은 것이 아니다.** 모델 가중치가 갱신되는 것이 아니라 **컨텍스트 파일에 스타일 정보가 축적되는** 것이다. 이름만 같고 메커니즘이 다르므로 **혼동하지 말 것.**
+
+같은 소스에서 Cursor는 메모리 문제의 현재 상태를 이렇게 말한다:
+
+> Cursor는 **메모리 관리를 작업 중**이고, **모든 랩과 모든 AI 도구가 작업 중인 아주 중요한 문제**라고 생각합니다.
+
+그리고 이미 배송된 형태로 automation의 **`memories.md`** 를 든다 → [[agent-memory]] · [[scheduled-agent-automations]].
 
 ## References
 

@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring]
 created: 2026-08-31
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Agent Skills
@@ -150,6 +150,26 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 같은 소스가 스킬을 [[retrieval-augmented-generation|RAG]]·[[agent-memory|메모리]]와도 가른다 — **따라야 할 절차·반복 가능한 일**이면 스킬이고, 적어둔 지식이면 RAG, 겪은 지식이면 메모리다. 스킬을 *지식 조달 수단 중 하나*로 상대화한 첫 소스다.
 
 > ⚠️ progressive disclosure(*"작업에 실제로 필요할 때만 해당 스킬을 활용"*)를 이미 확립된 것으로 전제하고 설명한다. 발표자·촬영 시점은 미상이다.
+
+## 플러그인이 스킬의 유통 경로가 된다 (2026-09-08)
+
+[[tech-bridge-cursor-legacy-refactoring]]이 이 페이지에 **배포 채널**이라는 축을 더한다. 지금까지 이 위키가 본 스킬은 대개 *개인이나 팀이 자기 저장소에 쓰는 것* 이었다.
+
+> **Atlassian 플러그인에는 MCP도 있지만 Atlassian 팀이 퍼블리시한 스킬들도 있습니다.** 플러그인을 쓰면 **MCP만이 아니라 그들의 스킬도 함께 얻습니다.**
+
+즉 **도구 제공자가 자기 도구를 쓰는 법을 스킬로 함께 배포한다.** Figma도 같다. → [[model-context-protocol]]과의 분업이 *한 패키지 안에서* 이루어지는 첫 사례다.
+
+**세 층위의 스킬**이 한 소스에 나온다:
+
+| 출처 | 예 |
+|---|---|
+| **제품 내장** | `/canvas` — *"내장 스킬이라 여러분 모두 갖고 계실 겁니다"* |
+| **벤더 배포** | Atlassian · Figma 플러그인에 딸려 오는 스킬 |
+| **자작** | 발표자의 **`/onboard`** — 새 레포의 기술 스택·버전·백엔드/프런트엔드 위치를 파악 |
+
+그리고 [[cursor|Cursor]]는 **사내에서 쓰는 스킬 전체를 `superpowers` 플러그인으로 오픈소스 공개**했다고 말한다. Cursor 안에 **`create skill` 기능**이 있고 발표자의 권고는 *"솔직히 직접 스킬을 만드는 것"* 이다.
+
+> ⚠️ 스킬의 품질·충돌·버전 관리가 다뤄지지 않는다. 벤더가 배포한 스킬과 자작 스킬이 충돌할 때의 우선순위도 소스에 없다. [[imad-touil]]([[tech-bridge-ai-native-skills]])이 제기한 **스킬 거버넌스** 문제가 유통 경로가 넓어지면서 커지는데 이 소스는 언급하지 않는다.
 
 ## References
 

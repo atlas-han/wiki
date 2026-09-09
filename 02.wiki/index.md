@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Index
@@ -56,6 +56,7 @@ updated: 2026-09-08
 - [[lum1104]] — [[understand-anything|Understand-Anything]] 제작자
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
 - [[vannevar-bush]] — 1945년 [[memex]] 비전 제시 (As We May Think)
+- [[karan-vaidya]] — [[composio|Composio]] 공동창업자·CTO, [[knowledge-work-agent-gap|여섯 primitive]] 프레이밍 · 자기 채용 메일 사고를 논증의 축으로 ([[tech-bridge-knowledge-work-agent-infrastructure]])
 
 ### Organizations
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
@@ -85,6 +86,7 @@ updated: 2026-09-08
 
 - [[minimax]] — 중국 AI 랩("AI 드래곤" 중 하나). 위키 **첫 중국 AI 랩 당사자 소스** — 모델 우선·앱은 나중, 누구나 제안하는 연구 문화(MSA를 인턴이 설계), 200개국 3억 명 (sources: 2) ⚠️ 당사자 진술
 - [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 화이트보드 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 (sources: 1) ⚠️ 발표자 무명
+- [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -113,6 +115,7 @@ updated: 2026-09-08
 - [[omarchy]] — DHH의 Linux 데스크톱/앱 스택, 에이전트 직결 실증 ([[tech-bridge-dhh-agent-productivity]])
 - [[learnvector]] — Ng의 1:1 학습 조직, Coursera $100M ([[tech-bridge-andrew-ng-ai-opportunity]])
 - [[grokbot]] — [[cursor|Cursor]]의 지속형 개인 봇 팀(정체성·자체 컴퓨터·코디네이터·메시징 UI) ([[tech-bridge-grokbot-agent-teams]])
+- [[cursor-cloud]] — [[cursor|Cursor]]의 원격 자율 에이전트 실행 환경(Linux VM·멀티 레포·자기 검증 비디오·automations·`memories.md`) ([[tech-bridge-cursor-legacy-refactoring]])
 
 ### Tools
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
@@ -175,6 +178,11 @@ updated: 2026-09-08
 - [[intelligence-abundance]] — 지능의 풍요는 효율이 아니라 **형평** 문제. 밤에 한 시간 불 = 임금 5시간이던 전기의 역사 (Altman, sources: 1)
 - [[one-continuous-exponential]] — 농업·산업·컴퓨터 혁명은 하나의 지수 곡선. *"이것이 마지막 혁명"* 이라는 유혹을 거부 (Altman, sources: 1)
 - [[humanoid-robot-scaling]] — 범용 로봇 유용성 = AI 소프트웨어 × AI 칩 × 손의 정밀도, 그리고 로봇이 로봇을 만드는 재귀 (Musk, sources: 1)
+- [[knowledge-work-agent-gap]] — 코딩만 앞서간 이유는 모델이 아니라 **주변 인프라**. 코딩은 여섯 primitive를 다 갖고 지식 노동은 하나도 없다 (Composio, sources: 1) ⚠️ 당사자 진술
+- [[action-reversibility]] — **되돌릴 수 있는지가 신뢰의 *시점* 을 정한다.** 코드는 사후 신뢰, 지식 노동은 사전 신뢰. 샌드박스가 undo의 대체물 (sources: 1)
+- [[decision-quality]] — 구현 품질은 쉬워지고 **결정 품질**이 차별화 요소가 된다. AI가 못 하는 것은 경쟁 아키텍처 평가 (IBM, sources: 1) ⚠️ 측정 방법 없음
+- [[behavior-validated-trust]] — 신뢰의 근거가 **작성자(authorship)에서 검증된 행동(evidence)으로.** 테스팅이 모범 사례에서 **일차적 증거**로 (sources: 2)
+- [[model-mixing-economics]] — 한 작업 안에서 **계획용 무거운 모델 + 실행용 싼 모델**로 갈아 끼우기. 가격이 곧 병렬성의 연장 (Cursor, sources: 2) ⚠️ 수치 없음
 
 ### Patterns
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
@@ -213,6 +221,13 @@ updated: 2026-09-08
 - [[ai-native-sdlc]] — intent→spec→plan→test→deploy→maintain 아티팩트 체인. 유지보수가 intent를 만들어 루프를 닫는다 (sources: 1)
 - [[intent-md]] — 에이전트가 사람을 인터뷰해 만드는 요구사항 이전 아티팩트. 백로그·인계를 대체 (sources: 1)
 - [[training-time-risk]] — 위험의 무게중심이 **배포→훈련**으로. safety case가 프론티어 RL 실행을 게이트, 실행/감시 컴퓨팅 분리, IPO 연기 근거 (OpenAI, sources: 2)
+- [[agent-action-record]] — 모든 앱의 에이전트 행동을 한 곳에 로깅하면 **기억·신뢰·스킬**이 동시에 나온다. 세 층위(도구/회사/개인) (sources: 1)
+- [[agent-governance-layers]] — 경계를 **에이전트 바깥**에 둔다. ①결정론적 접근 제어 ②자연어 정책. 프롬프트는 **compaction으로 날아간다** (sources: 1) ⚠️ 정책 해석기의 취약성 미논의
+- [[system-level-quality]] — 리뷰 단위가 파일에서 **시스템**으로. *"이 함수가 올바른가"* 대신 *"플랫폼 전체에 어떤 영향인가"* (IBM, sources: 1)
+- [[executable-standards]] — 표준은 **문서가 아니라 개발 프로세스에** 산다. 올바른 길이 가장 쉬운 길이 되게 (IBM, sources: 1)
+- [[cloud-agent-delegation]] — 원격 VM의 자율 에이전트. **티켓당 별도 PR** + 자기 마우스로 UI를 조작한 **검증 비디오** (Cursor, sources: 1) ⚠️ 작성자=검증자
+- [[plan-to-ticket-pipeline]] — **코드를 쓰지 않는 plan mode** → 티켓 분할 → 위임. 계획 전에 되묻는 `ask question` 도구 (Cursor, sources: 1)
+- [[scheduled-agent-automations]] — 예약·이벤트로 도는 클라우드 에이전트. 목적은 산출이 아니라 **레거시화 예방**. automation마다 `memories.md` (Cursor, sources: 1)
 
 ---
 
@@ -336,12 +351,16 @@ updated: 2026-09-08
 
 - [[tech-bridge-agent-knowledge-four-ways]] — IBM Technology (발표자 무명): 500 에러 하나로 스킬·MCP·RAG·메모리를 가른다, 쏟아붓기의 세 실패(길 잃음·막다른 길·**일반론 후퇴**), 스킬은 절차+판단이고 "이야기는 거기서 끝난다", RAG↔메모리는 **출처**로 갈린다, 4갈래 라우팅 규칙 ([[tech-bridge]], 2026-09-07, **8:58**, ⚠️ 촬영 시점 미확정 · ko가 "that's rag"를 "쓸모없는 쓰레기"로)
 - [[tech-bridge-minimax-m3-long-context]] — Thomas Wolf × Olive Song (MiniMax, AI Engineer 계열 무대 추정): 100만 토큰은 에이전트 요구(M1의 1천만은 비에이전트), MSA=인덱스+스파스 2단, **인턴이 아키텍처 설계**, native multimodality의 기각 근거는 확장 가능성, 누구나 제안하는 연구 문화, 200개국 3억 명, **M3가 M3.1을 만든다** ([[tech-bridge]], 업로드 2026-09-07 / **대담 6월**(연도 추정), **19:52**, ⚠️ 당사자 진술 · 파라미터 3중 불일치 · 벤치마크 전무)
+
+- [[tech-bridge-knowledge-work-agent-infrastructure]] — Karan Vaidya (Composio): 코딩만 앞선 이유는 모델이 아니라 **인프라**, 여섯 primitive(중앙화·히스토리·맥락·검증·거버넌스·가역성)를 지식 노동과 대조, **프롬프트는 compaction으로 날아가 거버넌스가 될 수 없다**(Meta 정렬 디렉터 메일 200통), 벽은 에이전트 바깥 두 층, **undo 없으면 신뢰의 시점이 앞으로**, 샌드박스가 undo의 대체물, 병목은 모델→인프라 ([[tech-bridge]], 2026-09-08, **20:12**, ⚠️ 당사자 진술=인프라 판매자 · 촬영 시점 미확정)
+- [[tech-bridge-ai-era-code-quality]] — IBM (발표자 무명): 기존 기준은 폐기 안 됐고 **평가의 자리가 옮겨갔다** — 구현 품질↓ **결정 품질↑**, 알림 기능 예제로 코드 질문 vs 엔지니어링 결정, 파일→**시스템 단위**, **작성자 신뢰→행동 검증**(evidence not authorship), 문서 표준→**실행 가능한 가드레일**, 체크포인트→지속적 실천, 답은 **판단** ([[tech-bridge]], 2026-09-08, **13:42**, ⚠️ 발표자 무명 · 촬영 시점 미확정 · **자막이 끝에서 잘림** · 근거 연구 출처 없음)
+- [[tech-bridge-cursor-legacy-refactoring]] — Cursor 필드 엔지니어(⚠️ 이름 Amita/Amriita 불일치): WordPress PHP→React 레거시 마이그레이션 **실시간 워크샵**. 네 단계(canvas 감사 → **코드 안 쓰는 plan mode** → 플러그인으로 Jira 티켓 → **cloud agent 위임** → automations 예방), **cursor harness** 4요소, 계획/실행 모델 갈아 끼우기, 에이전트가 **자기 마우스로 UI를 조작한 검증 비디오**, 플러그인이 MCP+스킬을 함께 배포 ([[tech-bridge]], 업로드 2026-09-08 / **촬영 09-01 무렵 추정**, **55:17 — 채널 실시간 최장편**, ⚠️ 당사자 진술 · **라이브 시연 미완**)
 ---
 
 ## 통계
 
-- 총 페이지 수: 306 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 293 → 306, + 2026-09-08 Tech Bridge 2편: source 2 + concept 6 + entity 5)
+- 총 페이지 수: 324 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 306 → 324, + 2026-09-09 Tech Bridge 3편: source 3 + concept 12 + entity 3)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-08 (Tech Bridge **2편**, 닷새 연속 — **같은 날 올라온 두 편의 성격이 정반대다.** 하나는 [[ibm|IBM]]의 제품 없는 개념 해설로, 이 위키가 다섯 페이지에서 **언급만 하고 페이지가 없던** [[retrieval-augmented-generation|RAG]]를 [[agent-memory|메모리]]와 나란히 세우고 [[agent-knowledge-sourcing|4갈래 라우팅]]을 준다. 다른 하나는 위키 **첫 중국 AI 랩·첫 아키텍처 설계 결정 인터뷰**로 [[minimax]]·[[minimax-m3]]·[[sparse-attention]]·[[long-context-agents]]·[[native-multimodal-pretraining]]을 들여온다. 후자는 [[context-engineering]]이 모아온 *줄이기* 처방들 옆에 **늘리기**를 놓는다)
+- 마지막 ingest: 2026-09-09 (Tech Bridge **3편**, 엿새 연속 — 09-08 업로드분. **셋이 우연히 한 축을 이룬다**: [[tech-bridge-knowledge-work-agent-infrastructure|Composio]]는 *코딩 밖에는 에이전트가 딛을 인프라가 없다*고 하고([[knowledge-work-agent-gap|여섯 primitive]]), [[tech-bridge-ai-era-code-quality|IBM]]은 *코딩 안에서도 판정은 사람 몫*이라 하며([[decision-quality]]), [[tech-bridge-cursor-legacy-refactoring|Cursor]]는 *그 조건을 갖춘 코딩에서 실제로 어디까지 되는지* **55:17 실시간 워크샵**으로 보여준다(그리고 라이브 시연은 끝나지 않았다). 가장 이식성 높은 것은 **프롬프트는 거버넌스가 될 수 없다**는 논증 — 안전 지시가 [[context-resets-and-compaction|compaction]]으로 날아가 메일 200통이 사라졌고, 그래서 벽은 [[agent-governance-layers|에이전트 바깥]]에 있어야 한다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-08
+- 마지막 갱신: 2026-09-09

@@ -5,9 +5,9 @@ category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
 related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure]
 created: 2026-09-02
-updated: 2026-09-06
+updated: 2026-09-09
 ---
 
 # Trusted Throughput
@@ -154,6 +154,28 @@ Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacev
 그리고 [[sam-altman]]([[tech-bridge-altman-astra-hardware]])이 총량의 추세를 준다 — *"효율성 향상을 찾을 때마다 전 세계 토큰 수요가 계속 급증해서 그걸 다 잡아먹어 버리죠."* → [[compute-constrained-growth]]
 
 이 페이지의 처방(*"토큰 단가는 잘못된 최적화 대상"*)은 세 층 어디서도 부정되지 않는다. 다만 하드웨어 층에서는 그것이 *"그러니 더 써라"* 로 읽힌다는 점을 기록해 둔다 — Amazon 리더보드 일화가 경고한 바로 그 방향이다.
+
+## 같은 구조가 두 자리에서 반복된다 (2026-09-08)
+
+이날 두 소스가 이 페이지의 핵심 구조 — **가드레일은 속도를 늦추는 것이 아니라 안전한 확장을 가능하게 한다** — 를 각기 다른 층위에서 반복한다.
+
+**개발 프로세스에서** ([[tech-bridge-ai-era-code-quality]]):
+
+> 이러한 자동 가드레일은 일관성을 높이는 것 이상의 일을 합니다. **보안, 컴플라이언스, 엔지니어링 표준이 팀 전체에 걸쳐 일관되게 강제되도록 보장함으로써 조직이 AI 도입을 안전하게 확장하도록 돕습니다. 거버넌스가 사후 고려가 아니라 워크플로의 일부가 됩니다.**
+
+→ [[executable-standards]]
+
+**에이전트 런타임에서** ([[tech-bridge-knowledge-work-agent-infrastructure]]):
+
+> 거버넌스는 **하나의 게이트가 아니라 여러 개이고, 각각은 노출되는 폭발 반경에 따라 크기가 다릅니다. 안전한 부분에서는 아무것도 에이전트를 느리게 하지 않습니다.**
+
+> **그 선이 촘촘할수록 에이전트를 더 믿고 마음껏 풀어놓을 수 있습니다.**
+
+→ [[agent-governance-layers]]
+
+**세 소스가 같은 형태의 주장을 한다는 것이 이 페이지의 논지를 강화한다** — [[mingsheng-hong]]이 조직 운영에서, IBM이 개발 프로세스에서, [[karan-vaidya]]가 에이전트 런타임에서. 셋 다 *신뢰를 만드는 장치가 처리량의 조건* 이라고 말하고, 셋 다 **그 장치가 균일한 게이트가 아니라 위험에 비례한 게이트여야 한다**고 말한다.
+
+> ⚠️ 세 소스 모두 **가드레일 자체의 비용을 정량화하지 않는다.** 모든 커밋 검증·상시 정적 분석·모든 파괴적 행동의 샌드박스 경유가 무엇을 얼마나 느리게 하는지 어느 쪽도 답하지 않는다.
 
 ## References
 

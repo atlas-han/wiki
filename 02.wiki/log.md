@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 # Log
@@ -846,3 +846,62 @@ MiniMax 편의 논증은 **자기 회사의 이전 모델이 반례**라는 점�
 - launchd 정시 발화분(09:10 KST)이며 부모 체인 `launchd → run-ingest.sh(pid 87948) → claude --print` 로 자기 확인했다. **게이트 D(OAuth)·E(모델 쿼터) 모두 통과 — 닷새 연속.**
 - `launchctl print` 의 `runs` 는 3이었다(09-06 리셋 이후 값). 누적 지표로 쓰지 않는다.
 - **게이트 B(릴레이 스케줄 자동 발화)는 이번에도 확인하지 않았다.** launchd가 우회하고 있으므로 일일 잡 자체는 성립한다.
+
+## [2026-09-09] ingest | Tech Bridge 3편 — 지식 노동 인프라(Composio) · AI 시대 코드 품질(IBM) · Cursor 레거시 리팩터링
+
+2026-09-08 업로드분. `--playlist-end 15`가 **15편 반환**, 신규 3편, 나머지 12편은 기존. 롱폼만(최단 538초), Shorts 없음. ko·en-orig 전부 확보, **429 없음.**
+
+| 소스 | 길이 | 화자 | 성격 |
+|---|---|---|---|
+| [[tech-bridge-knowledge-work-agent-infrastructure]] | 20:12 | [[karan-vaidya]] ([[composio]]) | 컨퍼런스 단독 발표 ⚠️ 인프라 판매자 |
+| [[tech-bridge-ai-era-code-quality]] | 13:42 | 무명 ([[ibm]]) | 1인 슬라이드 해설 · 자사 제품 없음 |
+| [[tech-bridge-cursor-legacy-refactoring]] | **55:17** | Cursor 필드 엔지니어 ⚠️ 이름 불일치 | **실시간 워크샵 — 채널 최장편** |
+
+### 신규 (18페이지)
+
+- **source 3** — 위 표.
+- **concept 12** — [[knowledge-work-agent-gap]] · [[agent-action-record]] · [[agent-governance-layers]] · [[action-reversibility]] (Composio) / [[decision-quality]] · [[system-level-quality]] · [[behavior-validated-trust]] · [[executable-standards]] (IBM) / [[cloud-agent-delegation]] · [[plan-to-ticket-pipeline]] · [[scheduled-agent-automations]] · [[model-mixing-economics]] (Cursor).
+- **entity 3** — [[composio]] · [[karan-vaidya]] · [[cursor-cloud]].
+
+### 기존 보강 (15페이지)
+
+[[cursor]](네 표면·harness·플러그인·모델 라인업 — 이 위키 최대 보강) · [[grok-4-6]](촬영 시점 앵커) · [[grokbot]](로컬 접근 한계를 메우는 자리) · [[ibm]](두 번째 소스, 두 편의 공통 패턴 표) · [[anthropic]](경쟁사가 가격으로 회피한다는 진술) · [[tech-bridge]](sources 29→32, 새 주의사항 6건) · [[agentic-misbehavior]](메일 200통) · [[context-resets-and-compaction]](compaction이 안전 장치를 지운다) · [[agent-memory]](조직 규모·잡 규모) · [[agent-knowledge-sourcing]](직교하는 축) · [[agent-skills]](플러그인이 유통 경로) · [[model-context-protocol]](MCP+스킬 한 패키지) · [[continual-learning]](동명 제품 주의) · [[harness-engineering]](cursor harness 4요소) · [[llm-coding-guidelines]](문서 표준 반론) · [[generator-evaluator-pattern]](검증자=작성자) · [[trusted-throughput]](세 층위 반복) · [[persistent-agent-teams]](세 번째 형태) · [[ai-native-sdlc]](품질 판정 + 워크플로).
+
+`index.md`(실측 **306→324**), `overview.md`, `log.md`.
+
+### 핵심 합성
+
+**세 편이 우연히 한 축을 이룬다.** 셋 다 *에이전트가 코딩에서만 잘 되는 이유와 그 조건*을 다루되 서 있는 자리가 다르다 — Composio는 **코딩 밖에는 딛을 바닥이 없다**고 하고, IBM은 **코딩 안에서도 판정은 사람 몫**이라 하며, Cursor는 **그 조건을 갖춘 코딩에서 실제로 어디까지 되는지** 보여준다(그리고 라이브 시연은 끝나지 않았다).
+
+**가장 이식성 높은 것은 [[agent-governance-layers|"프롬프트는 거버넌스가 될 수 없다"]]는 논증이다.** Meta 정렬 디렉터는 *미리 프롬프트에 확인 절차를 넣어두었는데도* 메일 200통을 잃었고, 이유는 그 지시가 **compaction으로 날아갔기** 때문이다. 이로써 [[context-resets-and-compaction]]이 이 위키에서 처음으로 **컨텍스트 관리 문제가 아니라 안전 문제**가 됐다 — 작업 맥락과 안전 제약이 같은 예산을 두고 경쟁하는데 **압축은 둘을 구별하지 않는다.**
+
+**세 소스가 [[behavior-validated-trust]]에서 만난다** — IBM은 *작성자가 아니라 검증된 행동을 신뢰하라*, Composio는 *에이전트 말 대신 앱에 가서 확인하라*([[agent-action-record]]), Cursor는 **그 검증을 작성자인 에이전트가 직접 수행해 비디오로 제출한다.** ⚠️ 그리고 세 번째가 첫 번째의 전제를 깬다 — **작성자와 검증자가 같다.** 어느 소스도 묻지 않아 [[generator-evaluator-pattern]]에 빈자리로 기록했다.
+
+**같은 형태의 논증이 세 층위에서 따로 나왔다** — *규칙은 사람이 기억할 곳이 아니라 시스템에 두어야 한다*: 개발 프로세스([[executable-standards]]) · 에이전트 런타임([[agent-governance-layers]]) · 도구 설정(Confluence 템플릿·플러그인·automation).
+
+### 촬영 시점 — 위키 교차 참조로 좁힌 첫 사례
+
+Cursor 편이 [[grok-4-6|Grok 4.6]]을 *"어제 출시됐다고 말하고 싶네요"*라 하고, 이 위키의 [[tech-bridge-grokbot-agent-teams]](2026-08-31)가 그것을 **당일 발표**로 기록하고 있었다. → 촬영 **2026-09-01 무렵**, 업로드 09-08. **업로드 ≠ 촬영의 네 번째 사례이자, 내부 증거가 아니라 다른 위키 소스와의 대조로 좁힌 첫 사례다.** ⚠️ 화자 자신의 유보(*"I want to say"*)가 붙어 있어 확정하지 않았다.
+
+### 새 주의사항
+
+- **ko가 서술문을 청유문으로 바꿀 수 있다.** IBM 편 en-orig *"Maybe leave some comments"*(PR 리뷰 절차 **서술**)가 ko에서 **"댓글을 남겨주시면 감사하겠습니다"**(시청자 **요청**)가 됐다. 지금까지의 유형(고유명사 직역·약어 창작·부호 뒤집기·단위 창작)과 다른 **화행(speech act) 변형**이고, **문장이 자연스러워 자막만 보면 오류로 보이지 않는다** — 지금까지 기록한 ko 오류 중 **탐지가 가장 어려운 유형**이다.
+- **en-orig가 `.md`를 `.mmd`로 적는 표기 습관이 있다.** Composio 편 `bugbot.mmd`, Cursor 편 `agents.mmd`·`memories.mmd` — **하루에 두 소스에서 세 번.** 개별 오인식이 아니라 생성기의 습관이다.
+- **발표자 이름을 확정할 근거가 아예 없는 경우가 있다.** Cursor 편은 진행자가 **Amita / Amriita**로 두 번 다르게 부르고 **설명란에 이름이 없다.** 09-02·09-08의 불일치는 설명란이라는 판정 근거가 있었으나 이번엔 없다 → **어느 표기도 채택하지 않고 인물 페이지를 만들지 않았다.**
+- **자막이 끝에서 잘릴 수 있다.** IBM 편 en-orig 마지막 줄이 13:18에 문장 중간에서 끝난다(영상 13:42). 09-06 Jensen Huang 편이 **시작**의 결손이었다면 이번은 **끝**의 결손이다. **보충하지 않았다.**
+- **위키에 이미 있는 개체명이 ASR 해독의 근거가 된다.** *"Grock 46"*·*"Grockbot"*·*"Fable"*을 [[grok-4-6]]·[[grokbot]] 페이지가 이미 있어 확정할 수 있었다. **ingest 전에 기존 엔티티 목록을 훑는 것이 자막 보정에 직접 쓸모가 있다.**
+- **동명이인/동명제품 주의.** Cursor의 `continual learning` 플러그인은 이 위키 [[continual-learning]] 페이지의 학문적 의미와 **이름만 같고 메커니즘이 다르다**(가중치 갱신이 아니라 `AGENTS.md` 축적). 해당 페이지에 경고를 달았다.
+
+### 해소하지 않고 표시만 한 것
+
+- **Composio 편**: *"open claw"*의 정체 미확정, Meta 정렬 디렉터 **이름·날짜·출처 링크 없음**, 자사 규모 수치(10억+/월 3억 도구 호출) 출처 없음, 여섯 primitive의 **우선순위·상호작용 미논의**, 샌드박스 충실도 문제 미논의, 그리고 **자연어 정책을 무엇이 해석·강제하는가에 답이 없다**(논증 구조상 가장 큰 빈자리).
+- **IBM 편**: 발표자 무명·촬영 시점 미확정(두 번 연속), 자막 말미 결손, **근거 연구의 출처 전무**, 수치 전무, **결정 품질의 측정 방법 없음**, AI가 아키텍처 평가를 못 한다는 주장의 근거 없음.
+- **Cursor 편**: 발표자 이름 불일치, 행사명·주최 없음, **라이브 마이그레이션 미완**, **자기 검증의 독립성 미제기**, SQLite 케이스 스터디 **수치 없음**, *"마이그레이션 전체에 3~4달러"*의 조건 없음, 모델 표기 불확정(*"GPT56 Soul"*·*"DeepSeek V4 Flasher Pro"*), **`/vtw` 해독 불가**(양쪽 트랙 동일 표기), 쿡북 문서 부재, **cloud agent 크래시 시 컨텍스트 복구 여부에 답 없음**, WordPress 예제가 공개 레포라 사내 레거시의 전형적 어려움 미포함.
+- **위키 차원의 모순 하나** — Composio 편은 *"소프트웨어 엔지니어링은 100% 자율적"*을 전제하고, IBM 편은 *결정은 사람 몫*이라 하며, Cursor 편의 라이브 시연은 끝나지 않았다. **어느 쪽도 채택하지 않고 셋을 나란히 두었다.**
+
+### 실행 환경
+
+- launchd 정시 발화분(09:10 KST, 실제 시작 09:18 KST)이며 부모 체인 `launchd → run-ingest.sh(pid 9836) → claude --print`로 자기 확인했다. **게이트 D(OAuth)·E(모델 쿼터) 모두 통과 — 엿새 연속.**
+- `launchctl print`의 `runs`는 4였다(09-06 리셋 이후 값). 누적 지표로 쓰지 않는다.
+- **게이트 B(릴레이 스케줄 자동 발화)는 이번에도 확인하지 않았다.** launchd가 우회하고 있으므로 일일 잡 자체는 성립한다.
+- yt-dlp 목록 조회와 자막 다운로드가 각각 300s·480s를 넘겨 백그라운드로 넘어갔다 — **쿠키 추출 경합으로 보이며 실패는 아니다.** 재시도 없이 완료됐다.

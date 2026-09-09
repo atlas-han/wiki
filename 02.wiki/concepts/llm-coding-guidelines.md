@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, claude-code, system-prompt, anti-pattern]
 related: [surgical-edits, verifiable-goals, sprint-contract, ralph-wiggum-method, context-engineering, harness-engineering, claude-code]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-six-agent-skills]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-six-agent-skills, tech-bridge-ai-era-code-quality]
 created: 2026-05-25
-updated: 2026-09-05
+updated: 2026-09-09
 ---
 
 # LLM Coding Guidelines (4원칙)
@@ -141,6 +141,22 @@ LLM 코딩 어시스턴트의 흔한 실패 모드를 줄이기 위한 **CLAUDE.
 | **개발자 폴더의 `CLAUDE.md`** | **한 곳에서 관리 + 그 폴더 밖에는 무영향** |
 
 소스가 이 의도를 명시한다 — *"컴퓨터의 **다른 부분에서 실행되는 관련 없는 세션에는 해당 규칙이 적용되지 않습니다.**"*
+
+## 문서로 된 표준은 즉시 낡는다 — 반론 (2026-09-08)
+
+[[tech-bridge-ai-era-code-quality]]가 이 페이지의 전제에 정면으로 반론을 놓는다.
+
+> 과거에 표준은 종종 **문서의 형태**였습니다. 명명 규칙 위키 페이지, 보안 체크리스트, **모두가 읽겠다고 약속한 코딩 표준 문서.** 하지만 **이러한 문서 대부분은 거의 즉시 낡아버렸습니다.**
+
+> **AI 지원 워크플로에서 표준은 그냥 문서로 존재할 수 없습니다. 개발 프로세스 그 자체 안에 존재해야 합니다.**
+
+→ [[executable-standards]]. 처방은 **자동 강제되는 보안 요구사항, 템플릿·툴링에 인코딩된 아키텍처 가드레일, 모든 PR의 테스팅 기대치, 상시 정적 분석, 실행 가능한 정책.**
+
+> ⚠️ **두 주장이 완전히 배타적이지는 않다.** 이 페이지가 다루는 `AGENTS.md`·`CLAUDE.md`류는 **문서이면서 동시에 도구가 읽는 것**이라 소스의 이분법에서 어느 쪽인지 애매하다. **소스가 이 경계를 다루지 않는다.** 실제로 같은 날 [[tech-bridge-cursor-legacy-refactoring|Cursor 편]]은 계획 템플릿을 **Confluence 문서**에 두고 그것을 스킬이 읽게 하는 방식을 쓴다 — *문서에 두되 도구가 강제로 읽게 하는* 중간 형태다.
+
+같은 소스가 목표를 이렇게 정리한다:
+
+> 목표는 **개발자에게 표준을 따르라고 상기시키는 것이 아니라, 올바른 길이 그들이 따르기 가장 쉬운 길이 되게 만드는 것입니다.**
 
 ## References
 

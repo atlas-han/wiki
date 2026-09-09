@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure]
 created: 2026-05-25
-updated: 2026-09-05
+updated: 2026-09-09
 ---
 
 # Generator–Evaluator Pattern
@@ -162,6 +162,30 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 형태가 소박하다 — 해결한 문제 **20개 정도**와 예상 결과 세트를 모아 두고, **새 모델·새 스킬·업무 방식의 근본적 변화**마다 돌려 **퇴보**를 확인한다.
 
 이는 [[harness-pruning]]과 짝을 이룬다. 하네스 기능을 지우려면 지워도 되는지 확인할 장치가 필요하고, continuous evals가 그 역할이다. ⚠️ 다만 두 소스는 서로를 언급하지 않는다 — 이 연결은 이 위키의 정리다.
+
+## 검증자가 작성자일 때 — 그리고 검증할 신호가 없을 때 (2026-09-08)
+
+이날 두 소스가 이 패턴의 양쪽 끝을 건드린다.
+
+**① 작성자가 자기 증거를 제출한다** ([[tech-bridge-cursor-legacy-refactoring]])
+
+[[cursor-cloud|Cursor cloud agent]]는 원격 Linux VM에서 돌기 때문에 **자기 마우스와 컴퓨터로 UI를 조작**하고 그 비디오를 증거로 낸다.
+
+> **Cursor가 자기 마우스, 자기 컴퓨터를 써서 저를 위해 무언가를 테스트하는 것입니다. 저는 아무것도 조종하지 않습니다.**
+
+> ⚠️ **작성자와 검증자가 같은 에이전트다.** 이 패턴이 전제하는 *생성과 평가의 분리* 가 성립하지 않는데 **소스는 이 문제를 제기하지 않는다.** 비디오와 스크린샷은 사람이 볼 수 있는 증거이므로 *최종 평가자가 사람* 이라고 볼 수도 있으나, 그렇다면 **에이전트가 무엇을 녹화할지 스스로 고른다**는 선택 편향이 남는다. 위키는 이 빈자리를 표시만 한다.
+
+**② 검증할 신호 자체가 없다** ([[tech-bridge-knowledge-work-agent-infrastructure]])
+
+이 패턴은 *평가 신호가 존재한다* 는 것을 전제한다. Composio 편은 **지식 노동에 그 전제가 없다**고 말한다.
+
+> **앞 슬라이드의 모든 검사는 통과했을 것입니다.** 메일은 유효했고, 주소는 진짜였고, 실제 사람들에게 갔습니다. **정말 중요한 것을 물을 테스트는 세상에 없었습니다 — "이게 애초에 나갔어야 했는가?"**
+
+> 코드에서는 테스트가 무엇이 맞고 틀린지 말해줍니다. **여기서는 인터넷이 제가 틀렸다고 말해줬습니다.**
+
+제안된 대체 신호는 두 가지다 — **과거 산출물과의 스타일 대조**(전에 보낸 초안 메일과 맞는가)와 **샌드박스**(현실 대신 모의 환경을 때리게 하고 사람이 검토) → [[action-reversibility]].
+
+**두 소스를 합치면 이 패턴의 적용 조건이 분명해진다** — 평가자가 독립적이어야 하고, 평가 신호가 존재해야 한다. 코딩은 둘 다 갖고 있고, 지식 노동은 둘째가 없으며, 자기 검증 cloud agent는 첫째가 약하다.
 
 ## References
 
