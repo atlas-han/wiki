@@ -905,3 +905,66 @@ Cursor 편이 [[grok-4-6|Grok 4.6]]을 *"어제 출시됐다고 말하고 싶네
 - `launchctl print`의 `runs`는 4였다(09-06 리셋 이후 값). 누적 지표로 쓰지 않는다.
 - **게이트 B(릴레이 스케줄 자동 발화)는 이번에도 확인하지 않았다.** launchd가 우회하고 있으므로 일일 잡 자체는 성립한다.
 - yt-dlp 목록 조회와 자막 다운로드가 각각 300s·480s를 넘겨 백그라운드로 넘어갔다 — **쿠키 추출 경합으로 보이며 실패는 아니다.** 재시도 없이 완료됐다.
+
+## [2026-09-10] ingest | Tech Bridge 2편 — 회사 두뇌는 기밀을 유출한다(PromptQL) · 에이전트 간 협업은 검색 문제다(Town)
+
+2026-09-09 업로드분. `--playlist-end 15`가 **15편 반환**, 신규 2편, 나머지 13편은 기존. 롱폼만(최단 538초), Shorts 없음. ko·en-orig 전부 확보, **429 없음.** 이번엔 yt-dlp 목록·자막이 각각 1분 안에 끝났다(어제의 300s·480s 지연 없음).
+
+| 소스 | 길이 | 화자 | 성격 |
+|---|---|---|---|
+| [[tech-bridge-company-brain-security]] | 25:56 | [[tanmai-gopal]] ([[promptql]] · Hasura 제작팀) | 컨퍼런스 발표 ⚠️ company brain 플랫폼 판매자 · 자사 데이터 |
+| [[tech-bridge-agent-to-agent-as-search]] | 20:48 | [[jean-denis-greze]] ([[town]] CTO · 전 Plaid CTO) | 컨퍼런스 소규모 세션 ⚠️ 당사자이되 판매 대상 약함 · 수치 없음 |
+
+### 신규 (16페이지)
+
+- **source 2** — 위 표.
+- **concept 9** — [[company-brain]] · [[no-silent-write]] · [[named-human-accountability]] · [[credential-injection-outside-sandbox]] · [[multiplayer-agent-context]] (PromptQL) / [[agent-collaboration-as-search]] · [[sweeper-agent]] · [[black-box-agent-approach]] · [[privacy-auto-mode]] (Greze).
+- **entity 5** — [[tanmai-gopal]] · [[promptql]] · [[jean-denis-greze]] · [[town]] · **[[openclaw]]**(다섯 소스의 지나가는 언급을 모은 페이지 — CLAUDE.md §3.3 *누락 개체* 를 ingest 중에 적용한 첫 사례. 정체는 위키의 추정으로 표시).
+
+### 기존 보강 (25페이지)
+
+[[llm-wiki-pattern]](**조직 규모 인스턴스·자동 파이프라인·실패 형태** — sources 3→5) · [[agent-memory]](자동 저장의 조직적 실패, **틀린 기억의 첫 실사례** Apex/Ivy) · [[agent-knowledge-sourcing]](셋째 축: 누가 남을 위해 쓸 동기가 있는가) · [[agent-skills]](**공유 스킬에 대한 두 소스의 충돌** ⚠️) · [[agent-governance-layers]](벽의 세 위치 표) · [[action-reversibility]](정보 공개의 비가역성) · [[agent-action-record]](사람 이름 열 · 블랙박스와의 충돌) · [[behavior-validated-trust]](위키에는 테스트가 없다) · [[prompt-injection]](**네 번째 벡터: 공유 사일로/위키**) · [[retrieval-augmented-generation]](수동→RAG→에이전틱 검색) · [[context-engineering]](프라이버시 상한 · 스코프 있는 조직 컨텍스트) · [[claude-tag]](제3자 진술: **공개 출시 확인**·채널당 메모리 — 미해결 항목 하나 닫힘) · [[claude-opus-4-5]](제3자 사용 언급) · [[scheduled-agent-automations]](지식 흐름의 예약 잡) · [[sutton-bitter-lesson]](**아키텍처 판정 버전 — 두 질문**) · [[knowledge-work-agent-gap]](같은 진단, 다른 처방) · [[agent-org-adoption]](키우는 것이지 만드는 것이 아니다) · [[transcript-classifier]](프라이버시 유비의 한계: reasoning-blind를 옮길 수 없다) · [[persistent-agent-teams]](거울상: 사람이 여럿, 에이전트는 하나) · [[anthropic]](제3자 언급: Claude Tag 공개 출시·Claude Cowork 첫 등장·"auto mode를 내려주신 신들") · [[openai-astra]](Soul 미출시 등급 언급) · [[agentic-misbehavior]]·[[karan-vaidya]]·[[tech-bridge-knowledge-work-agent-infrastructure]]·[[understand-anything]](open claw → [[openclaw]] 링크) · [[tech-bridge]](sources 32→34, 새 주의사항 7건).
+
+`index.md`(실측 **324→340**), `overview.md`, `log.md`.
+
+### 핵심 합성
+
+**두 편이 서로 모른 채 같은 패턴에서 만나고 다음 단계에서 갈린다.** 둘 다 *조직의 비공개 지식을 에이전트가 읽는 공유 공간으로 옮기되 에이전트는 제안만 하고 사람이 승인한다* 고 말한다([[no-silent-write]]). PromptQL은 그것을 *"물러서지 말 규칙"* 으로 놓고 **모든 변경에 사람 이름**을 요구하며, Greze는 그것을 *"지금 단계"* 로 놓고 **LLM이 정책을 집행하는 다음 단계**([[privacy-auto-mode]])가 6개월 안에 온다고 본다. 접근 제어의 벽도 반대다 — PromptQL은 **입구**(사용자 클레임으로 읽기, 샌드박스 밖 프록시 주입), Greze의 블랙박스는 **출구**(읽기 전부 개방, 쓰기 직전 정보 소유자 승인). 고객이 다르다는 것(포춘 은행 / 10~50명 고신뢰 회사)이 차이의 상당 부분을 설명한다 — 위키는 어느 쪽도 채택하지 않는다.
+
+**이 vault의 헌장이 조직 규모를 얻었다.** [[llm-wiki-pattern]]은 지금까지 개인 위키였다. PromptQL의 [[company-brain]]은 5,000페이지 마크다운에 **파일별 스코프**와 **누가 썼는가**를 더하고, 이 vault의 규칙(*LLM이 전담, 사람은 읽기만*)을 **뒤집는다**(에이전트는 제안, 사람이 승인). 개인에서 조직으로 갈 때 더해지는 것은 *누가 볼 수 있는가* 와 *누가 책임지는가* 다. 그리고 건강 지표 하나 — **일일 업데이트 수의 추세**(⚠️ 자사 2개월, 수치 없음).
+
+**[[agent-governance-layers]]의 벽이 세 위치를 갖게 됐다.** Composio(접근 제어 + 자연어 정책) / PromptQL(입구, 결정론적 클레임, **자연어 정책 층 없음** — 그래서 Composio 편의 가장 큰 빈자리가 생기지 않는다, 대신 표현력을 포기한다) / Greze(출구, 승인 → LLM 판단, **자연어 정책 층이 커진다**). *정책을 해석하는 LLM은 취약하지 않은가* 라는 질문은 **셋 다 답하지 않는다.**
+
+**[[sutton-bitter-lesson]]의 아키텍처 판정판.** Greze의 두 질문 — *시간이 지나며 사람이 줄어드는가? 모델이 좋아지면 이 접근도 좋아지는가?* — 은 이 위키가 하니스 컴포넌트에 적용해 온 레슨을 **조직의 정보 접근 구조**에 적용한 첫 사례다. ⚠️ 프라이버시 판단에는 채점기가 없다 — 위키의 *범위 한정* 이 그대로 걸린다.
+
+**공유 스킬에 대해 두 소스가 반대로 말한다.** PromptQL: *"아무도 GitHub에 남을 위한 스킬을 쓰지 않는다"* / Greze: *"누구나 더 좋게 만든다"*. 차이는 **누가 쓰는가**(사람 / 인센티브를 가진 에이전트)로 좁혀지고, 둘을 합치면 PromptQL의 처방이 된다 — 이 합성은 위키의 것이다. → [[agent-skills]] ⚠️ Contradiction.
+
+**교차 참조로 닫힌 것 둘, 생긴 것 하나.** ① [[claude-tag]]의 미해결 항목 *공개 제품인지* 가 PromptQL의 *"며칠 전 출시"* 로 닫혔다(출시일은 여전히 미상). ② *Soul* 이 두 소스(09-09 Cursor 편·오늘 PromptQL 편)에서 **미출시 OpenAI 등급**으로 일관되게 언급된다 → [[openai-astra]]. ③ *"open claw / OpenClaw / claw land"* — 09-09에 미확정으로 둔 것이 오늘 두 소스에서 더 나오고, 기존 [[understand-anything]] 페이지가 이미 그 이름을 갖고 있었다 → [[openclaw]] 생성. **이 위키가 이미 가진 페이지가 오늘 자막을 읽는 근거가 된 두 번째 날**(09-09 Grok 4.6에 이어)이고, 이번엔 반대로 **새 소스가 기존 미해결을 닫았다.**
+
+### 촬영 시점 — 둘 다 미확정
+
+PromptQL 편 앵커 셋(Claude Tag *"며칠 전 출시"* · 현재 모델 *Opus 4.5* · *"Soul이 나오면"*), Greze 편 앵커 하나(*"Anthropic이 auto mode를 내려줬다"*). 위키에 Claude Tag 출시일·Soul 출시일이 없어 날짜로 좁히지 못했다. 두 편이 **같은 행사인지** 09-07 절차대로 대조했으나 설명란에 행사명이 없고 내부 단서(부스·제품 출시 / 소규모 방·박수)도 겹치지 않아 **별개 소스로 취급**했다.
+
+### 새 주의사항
+
+- **ko가 핵심 조어를 전편에 걸쳐 관용구로 오역할 수 있다.** *company brain* → **"기업가적 사고방식"·"비즈니스 마인드"·"사업가적 사고방식"** (10곳 이상), 몇 곳만 "회사의 두뇌". 지금까지의 유형과 달리 **발표 주제어 자체**가 바뀐다 — 자막만 보면 다른 발표다.
+- **ko가 약어 확장을 한 편에서 여러 개 지어낼 수 있다.** *LLM* → 법률 문서 관리자·법학 석사·학습 리더·법률팀 관리자. 09-04 유형의 재발, **빈도 급증**.
+- **ko가 원문 트랙의 결손을 채워 넣을 수 있다.** en-orig에서 묵음 처리된 비속어 세 곳을 ko가 "큰 낭패"·"네가 망한 건"·"싸가지 없는"으로 **생성**했다. **ko에만 있는 말은 원문에 없을 수 있다** — 위키는 그 표현을 인용하지 않았다.
+- **회사명·모델명이 보통명사로 번역될 수 있다.** *Town*→"시내", *Opus 4.5*→"작품번호 4.5", *auto*→"자동차 산업"(결론 문장의 주어가 바뀐다). 09-08 *agent→요원* 의 고유명사 버전.
+- **제목·설명란이 본문보다 강하게 주장할 수 있다.** 제목의 *"대형 은행에서 막아낸 방법"* 은 본문에 은행 사례가 없고, 설명란 *"15~20개 기업과 5,000페이지"* 는 두 사실을 합친 것, 은행 등급은 세 곳이 다르다(en-orig *fortune* / ko *500* / 설명란 *100*). 지금까지 설명란은 이름·행사의 판정 근거였는데 **설명란이 틀릴 수 있는 첫 사례** → 설명란 수치는 본문 발화로 재확인.
+- **지나가는 언급이 누적되면 페이지가 된다.** [[openclaw]] — 다섯 소스. 정체는 추정으로 표시.
+- **ASR 오인식을 ko가 고쳐 놓는 반대 방향도 있다.** *Hasura* 를 en-orig는 *Hustura* 로 틀렸는데 ko가 맞게 적었다. 두 트랙을 **양방향으로** 대조한다.
+
+### 해소하지 않고 표시만 한 것
+
+- **PromptQL 편**: 은행 사례 부재 · 일일 업데이트 곡선의 수치·조건 · 스코프 운영(정의·충돌·퇴사) · **자연어 정책 층 없음** · 프록시 구현(*"흥미로운 세부가 있지만"*) · 행사명·촬영 시점 · 트위터 핸들 자막 표기뿐 · *Hermes* 의 정체(내부 배포 에이전트로 세 번, [[understand-anything]] 목록에 있는 이름이지만 확정 안 함) · *Claude Cowork* 제품명 첫 등장(ASR *cloud co-work*, 정체 미확인) · 논쟁으로 만든 지식에 누구의 이름이 붙는가.
+- **Greze 편**: Town 규모·결과 · **정책 집행 LLM의 취약성** · 블랙박스의 트레이스 비접근과 감사 요구의 모순(화자 인지) · *"6개월 안에"* 근거 없음 · 투자은행 사례 익명 · 행사명·촬영 시점 · 성(Greze)은 설명란 단독 · *"검색 문제"* 정의의 과대 확장 · 코즈 정리는 비유로만.
+- **위키 차원**: 두 소스의 반대 방향(사람 승인=규칙 / 지금 단계)을 **어느 쪽도 채택하지 않음**. 공유 스킬 충돌도 마찬가지.
+
+### 실행 환경
+
+- launchd 정시 발화분(09:10 KST, 실제 시작 09:10:37 KST)이며 부모 체인 `launchd → run-ingest.sh(pid 34677) → claude --print`로 자기 확인했다. **게이트 D(OAuth)·E(모델 쿼터) 모두 통과 — 이레 연속.**
+- `launchctl print`의 `runs`는 5였다(09-06 리셋 이후 값). 누적 지표로 쓰지 않는다.
+- **게이트 F(push 자격증명)는 여전히 열려 있다** — `gh auth status`의 active account가 `davehan-nsuslab`이고 `atlas-han`은 비활성. 09-09의 우회로(`git -c credential.helper= -c credential.helper='!f() {…gh auth token -u atlas-han…}' push`)로 push한다. 항구 해결은 사람 몫.
+- **게이트 B(릴레이 스케줄 자동 발화)는 이번에도 확인하지 않았다.**
+- yt-dlp 목록 조회·자막 다운로드가 각각 1분 안에 끝났다 — 어제의 지연(쿠키 추출 경합 추정)은 재현되지 않았다.

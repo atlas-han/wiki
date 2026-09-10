@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
-related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition]
+related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search]
 created: 2026-05-25
-updated: 2026-09-07
+updated: 2026-09-10
 ---
 
 # The Bitter Lesson
@@ -151,6 +151,16 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 
 ⚠️ 회고 진술이다. 당시 문서가 아니라 10년 뒤 정책 무대에서의 서술이며, 실패한 방향들(루빅 큐브 로봇 손·비디오 게임)은 *"우리는 그 외에는 아는 게 없었어요"* 한 문장으로 압축된다.
 
+## 아키텍처 판정 버전 — 두 질문 (2026-09-10 · [[tech-bridge-agent-to-agent-as-search]])
+
+[[jean-denis-greze]]가 이 레슨을 **설계 선택의 판정 기준**으로 쓴다. 다섯 전략을 놓고:
+
+> 제가 아침에 일어나면 사실상 유일하게 생각하는 것인데 — **시간이 지나면서 시스템이 자연히 더 적은 사람을 필요로 하는가? 모델이 좋아질수록 이 접근도 좋아지는가?** 이 접근의 문제는 **둘 다 답이 '아니오'** 라는 겁니다.
+
+그리고 결론에서 같은 기준을 처방으로 뒤집는다 — *"auto의 멋진 점은, 시스템을 그렇게 설계하면 **모델 용량과 함께 확장된다**는 겁니다. (…) LLM이 판단해도 괜찮은 민감도 낮은 영역을 정의하고 그것을 받아들이세요. 그러면 시간이 지나며 마법처럼 그 영역이 커집니다."* → [[privacy-auto-mode]]
+
+이 위키가 이 레슨을 적용해 온 자리([[agent-harness-design]]의 *하니스 컴포넌트가 dead weight가 된다*, [[brain-hands-decoupling]])는 모두 **모델 주변의 코드**였다. Greze는 그것을 **조직의 정보 접근 구조**(사람이 생각해 만든 신뢰 경계·커스텀 도구는 모델이 좋아져도 좋아지지 않는다)에 적용한 첫 사례다. ⚠️ 위 범위 한정(*채점기가 있는 곳에서만*)이 여기에도 걸린다 — 프라이버시 판단에는 채점기가 없고, 화자 자신도 *"그 미래를 신뢰하는가? 잘 모르겠다"* 고 유보한다. → [[agent-collaboration-as-search]]
+
 ## References
 
 - [원문 (incompleteideas.net, self-signed cert)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
@@ -159,3 +169,4 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 - 본 위키 내 적용: [[agent-harness-design]], [[brain-hands-decoupling]], [[anthropic-managed-agents]]
 - ⚠️ 반대 입장: [[tech-bridge-uncertainty-mathematics]] · [[bayesian-inference]] · [[zoubin-ghahramani]]
 - 경제·정책 측: [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-jensen-huang-g20-agi]] (2026-09-06)
+- 아키텍처 판정 버전: [[tech-bridge-agent-to-agent-as-search]] · [[agent-collaboration-as-search]] · [[privacy-auto-mode]] (2026-09-10)

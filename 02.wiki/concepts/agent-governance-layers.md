@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
-related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap]
+related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 에이전트 거버넌스 두 층
@@ -56,6 +56,24 @@ updated: 2026-09-09
 
 또한 Meta 정렬 디렉터의 **이름·날짜·출처 링크가 소스에 없다.**
 
+## 벽의 구체적 자리 — 그리고 벽을 출구로 옮긴 소스 (2026-09-10)
+
+2026-09-09 업로드 두 소스가 이 개념의 ①층(결정론적 접근 제어)을 **서로 반대 방향**으로 구현한다.
+
+**[[tech-bridge-company-brain-security]] — 벽은 HTTP/SQL 프록시에.** *"샌드박스에 자격증명을 절대 저장하지 마세요. 대신 HTTP 계층에서, SQL 계층에서 사용자의 자격증명을 주입해 AI가 그 사람으로서 행동하게 합니다."* 읽기(위키)도 쓰기(도구)도 **그 사용자의 클레임**으로. → [[credential-injection-outside-sandbox]]. 이 소스에는 ②층(자연어 정책)이 **없다** — 접근 제어가 전부 결정론적이라, Composio 편의 가장 큰 빈자리(*자연어 정책을 무엇이 해석하는가*)가 **생기지 않는다.** 대신 표현력을 포기한다: *"10통 넘게 삭제하지 마라"* 같은 규칙은 이 소스의 스코프로는 쓸 수 없다.
+
+**[[tech-bridge-agent-to-agent-as-search]] — 벽은 출구에.** [[black-box-agent-approach|블랙박스]]는 **읽기 접근을 전부 풀고 쓰기·공유 시점에서만** 정보 소유자의 승인을 건다. 그리고 [[privacy-auto-mode]]는 그 승인 자체를 점점 LLM의 위험 판단으로 옮기자고 한다 — 즉 **②층을 키우고 ①층을 줄이는** 방향이다. 이 개념이 던진 질문(*정책을 해석하는 LLM은 취약하지 않은가*)은 이 소스에 **그대로 남는다** — 화자는 *"안전한 정책을 인코딩하는 데 더 능숙해질 것"* 이라고만 한다.
+
+| | 읽기 | 쓰기 | ②층 |
+|---|---|---|---|
+| Composio (이 개념의 원본) | 결정론적 | 결정론적 + 자연어 정책 | 있음, 해석기 미상 |
+| PromptQL | **사용자 단위** 결정론적 | 사용자 단위 결정론적 | **없음** |
+| Greze 블랙박스 / auto | **전부 개방** | 소유자 승인 → LLM 판단 | **커진다**, 해석기 미상 |
+
+세 소스는 서로를 언급하지 않는다. 고객이 다르다는 것(PromptQL: 포춘 은행 / Greze: 10~50명 고신뢰 회사)이 차이의 상당 부분을 설명한다.
+
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[agentic-misbehavior]] · [[context-resets-and-compaction]] · [[composio]]
+- [[tech-bridge-company-brain-security]] — 벽의 자리 = HTTP/SQL 프록시, ②층 없음 · [[credential-injection-outside-sandbox]] (2026-09-10)
+- [[tech-bridge-agent-to-agent-as-search]] — 벽을 출구로, ②층을 LLM으로 · [[black-box-agent-approach]] · [[privacy-auto-mode]] (2026-09-10)

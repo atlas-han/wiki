@@ -3,11 +3,11 @@ title: Transcript Classifier
 type: concept
 category: pattern
 tags: [agent-safety, classifier, claude-code, llm-as-judge]
-related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue]
+related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-10
 ---
 
 # Transcript Classifier
@@ -68,6 +68,11 @@ Stage 2는 stage 1과 거의 동일한 prompt를 받으므로 **prompt cache hit
 - Subagent handoff inbound: history 검토 후 **경고만** prepend (결과 폐기 안 함)
 - Block 시 [[deny-and-continue]] — session을 끊지 않고 agent에게 안전한 path를 권유
 
+## 같은 구조를 정보 공개에 — 그리고 빠진 것 (2026-09-10)
+
+[[tech-bridge-agent-to-agent-as-search]]가 auto mode를 **유비의 원본**으로 쓴다 — *"코딩에서 우리는 모든 걸 승인하다가, YOLO가 됐다가, 이제 Anthropic이 auto mode를 내려줬다. 사일로를 가로지르는 A2A도 같을 것."* → [[privacy-auto-mode]]. 다만 이 분류기의 핵심 설계(**reasoning-blind** — 도구 결과를 보지 않아 인젝션에 직접 속지 않는다)에 대응하는 것이 프라이버시 쪽 제안에는 **없다.** 정보 공개의 위험을 판정하는 LLM은 그 정보 자체를 봐야 하므로 이 구조를 그대로 옮길 수 없다. 소스는 이 차이를 다루지 않는다.
+
 ## References
 
 - [[anthropic-claude-code-auto-mode]]
+- [[tech-bridge-agent-to-agent-as-search]] — 프라이버시로의 유비와 그 한계 (2026-09-10)

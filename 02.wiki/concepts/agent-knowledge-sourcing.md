@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent, knowledge, routing, decision, skills, mcp, rag, memory]
 aliases: [에이전트 지식 조달, 지식 라우팅]
-related: [agent-skills, model-context-protocol, retrieval-augmented-generation, agent-memory, context-engineering]
+related: [agent-skills, model-context-protocol, retrieval-augmented-generation, agent-memory, context-engineering, company-brain, no-silent-write]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security]
 created: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Agent Knowledge Sourcing
@@ -77,7 +77,22 @@ updated: 2026-09-09
 
 > ⚠️ Contradiction: [[tech-bridge-agent-knowledge-four-ways|IBM 편]]은 스킬을 *사람이 적어둔 절차* 로, 메모리를 *에이전트가 겪은 것* 으로 갈랐다. Composio 편은 **겪은 것이 쌓여 스킬이 된다**고 말한다. 두 소스는 서로를 언급하지 않으며 **위키는 어느 쪽도 채택하지 않고 두 서술을 나란히 둔다.** 승격의 메커니즘(무엇이 로그를 스킬로 만드는가)은 Composio 편이 설명하지 않는다.
 
+## 조직 유통의 관점 — 스킬은 안 쓰고 메모리는 갇힌다 (2026-09-10)
+
+[[tech-bridge-company-brain-security]]가 이 페이지의 4갈래 중 [[agent-skills|스킬]]과 [[agent-memory|메모리]]를 **조직 안에서 어떻게 흐르는가**로 다시 본다. 보안 질문서 예제 — *다른 사람이 답한 지식이 내 에이전트에 어떻게 오는가* — 로 셋을 비교한다.
+
+| 경로 | 이 페이지의 상자 | 왜 안 되는가 |
+|---|---|---|
+| 모두가 GitHub에 공유 스킬을 쓴다 | 스킬 | *"**아무도 GitHub에 다른 사람을 위한 스킬을 쓰지 않는다.**"* — 동기 부재 |
+| 팀 에이전트가 메모리를 자동 저장 | 메모리 | *"**사일로가 하나 더**"* — 그 팀·채널에 갇힌다 |
+| **전사 단일 위키** + 스코프 + 사람 승인 | (RAG에 가장 가깝다 — *사람이 승인한 것*) | 채택 → [[company-brain]] |
+
+즉 IBM의 표가 *지식이 어디서 왔는가* 로, Composio 편이 *누구의 범위로 집계하는가* 로 갈랐다면, 이 소스는 **누가 그것을 남에게 쓸 동기가 있는가**로 가른다. 셋째 축이다. 그리고 결론이 흥미롭다 — 조직에서 실제로 흐르는 것은 스킬도 메모리도 아니고 **사람이 승인한 위키 항목**, 즉 이 표의 첫 줄(사람이 적어 놓은 것)이다. 다만 *적는* 주체가 에이전트이고 사람은 *승인* 만 한다([[no-silent-write]]). IBM의 RAG 정의(*사람이 글로 적어 놓은*)가 여기서 **에이전트가 적고 사람이 서명한 것**으로 넓어진다.
+
+> ⚠️ 같은 날 [[tech-bridge-agent-to-agent-as-search|Greze 편]]은 공유 스킬을 *"누구나 더 좋게 만든다"* 고 긍정적으로 말한다 → [[agent-skills]]의 충돌 표시 참조.
+
 ## References
 
 - [[tech-bridge-agent-knowledge-four-ways]]
 - 관련: [[agent-skills]] · [[model-context-protocol]] · [[retrieval-augmented-generation]] · [[agent-memory]] · [[context-engineering]] · [[brain-hands-decoupling]]
+- [[tech-bridge-company-brain-security]] — 조직 유통 관점: 스킬 동기 부재·메모리 사일로·위키 채택 (2026-09-10)

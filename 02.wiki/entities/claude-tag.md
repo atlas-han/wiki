@@ -3,9 +3,9 @@ title: Claude Tag
 type: entity
 category: product
 tags: [anthropic, claude-code, slack, agent, delegation]
-sources: [tech-bridge-claude-code-team-workflow]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-company-brain-security]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-10
 ---
 
 # Claude Tag
@@ -41,11 +41,22 @@ updated: 2026-09-05
 
 ## 미해결 사항
 
-- 공개 제품인지 Anthropic 내부 도구인지 소스에서 확정되지 않는다.
+- ~~공개 제품인지 Anthropic 내부 도구인지 소스에서 확정되지 않는다.~~ → 2026-09-10 [[tech-bridge-company-brain-security]]가 *"며칠 전 출시"* 라고 말해 **공개 제품**으로 확인. 출시일은 여전히 미상.
 - [[claude-code]]·routine·workflows와의 정확한 제품 경계 미확인.
 - 권한 모델, Slack 워크스페이스 범위 등 운영 세부 미확인.
+
+## 제3자 진술 (2026-09-10 · [[tech-bridge-company-brain-security]])
+
+[[tanmai-gopal]]([[promptql]])이 경쟁 제품을 만드는 입장에서 세 가지를 말한다.
+
+- **공개 출시** — *"Claude Tag가 **며칠 전 출시**하면서 가졌던 큰 기회 — 회사 두뇌가 될 예정이었는데, 다들 '음, 회사 두뇌가 될 것 같지는 않은데'라고 했죠."* 위 미해결 항목(공개 제품 여부)이 이것으로 닫힌다. 출시일은 이 위키에 없어 그 발표의 촬영 시점 앵커로만 남는다.
+- **채널당 메모리** — *"Claude Tag는 채널당 메모리가 있어요. 채널마다 저장되지만 이제 그 한 채널의 또 다른 사일로입니다."* 이 위키가 이 제품에 대해 아는 첫 **메모리 구조** 사실이며, 동시에 그것에 대한 **비판**이다 → [[agent-memory]] · [[no-silent-write]].
+- **멀티플레이어의 원형** — 발표자가 자기 둘째 사용 사례를 *"Claude Tag와 비슷한 멀티플레이어 아이디어"* 라고 소개한다 → [[multiplayer-agent-context]]. 그리고 자사의 *"prompt tag"* 를 *"Claude에 묶이지 않는"* 대응물로 예고한다.
+
+> ⚠️ 경쟁사 발표자의 진술이다. *"회사 두뇌가 될 것 같지 않다"* 는 시장 반응은 출처 없는 일반화다.
 
 ## References
 
 - [[tech-bridge-claude-code-team-workflow]] · [[anthropic]] · [[claude-code]]
 - 관련: [[goal-level-delegation]] · [[harness-pruning]] · [[dynamic-workflows]]
+- [[tech-bridge-company-brain-security]] — 제3자 진술: 공개 출시·채널당 메모리·멀티플레이어 원형 (2026-09-10)

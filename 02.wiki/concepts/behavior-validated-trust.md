@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [testing, trust, evidence, observability, authorship]
 aliases: [행동 검증, 작성자 신뢰, evidence not authorship]
-related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals]
+related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 행동 검증 기반 신뢰
@@ -46,6 +46,11 @@ updated: 2026-09-09
 
 그리고 [[tech-bridge-knowledge-work-agent-infrastructure|Composio 편]]은 반대 방향의 한계를 보여준다 — **모든 검사가 통과해도 *"이게 애초에 나갔어야 했는가"* 는 물어지지 않는다.** 즉 행동 검증은 *올바르게 했는가* 를 답하지 검증하지 *올바른 것을 했는가* 를 답하지 않는다. 그 자리는 [[decision-quality]]가 맡는다.
 
+## 그리고 위키에는 테스트가 없다 (2026-09-10)
+
+[[tech-bridge-company-brain-security]]가 이 개념과 **정면으로 마주 보는** 규칙을 놓는다 — *"모든 변경이 사람의 이름으로 뒷받침되게 하라. 'Claude가 추가했다'는 허용되지 않는다."* → [[named-human-accountability]]. 그런데 묻는 것이 다르다: 이 개념은 *믿어도 되는가*(머지 전), 저 규칙은 *문제였을 때 누구에게 가는가*(사고 후). 둘은 양립하며 어느 소스도 그 구분을 짓지 않는다. 그리고 그 규칙이 드러내는 전제 하나 — **공유 지식에는 테스트가 없다.** 사실의 정확성은 코드처럼 실행해 검증할 수 없으므로, 코드에서는 evidence가 authorship을 대체해도 위키에서는 사람 이름이 마지막 보루로 남는다. 이 개념의 적용 범위가 *검증 가능한 산출물* 에 한정된다는 것이 이 대비로 보인다.
+
 ## References
 
 - [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[ibm]]
+- [[tech-bridge-company-brain-security]] — 사람 이름 규칙과의 대비 · [[named-human-accountability]] (2026-09-10)

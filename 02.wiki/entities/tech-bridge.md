@@ -35,8 +35,10 @@ sources:
   - tech-bridge-altman-g20-economic-boom
   - tech-bridge-agent-knowledge-four-ways
   - tech-bridge-minimax-m3-long-context
+  - tech-bridge-company-brain-security
+  - tech-bridge-agent-to-agent-as-search
 created: 2026-06-03
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Tech Bridge
@@ -131,7 +133,28 @@ updated: 2026-09-09
 
 > ⚠️ **당사자 진술 비중이 계속 높다.** 3편 중 2편이 자기 회사 제품을 파는 발표다(09-05·09-06의 CEO 시리즈에 이어). 각 페이지에 **화자의 인센티브**를 함께 적었다 — 인프라 판매자([[composio]]) · 코딩 에이전트 플랫폼 판매자([[cursor]]).
 
+## 2026-09-09 업로드 2편 — 조직 지식과 에이전트 간 협업 (2026-09-10 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-company-brain-security]] ([[promptql]]) | 25:56 | 컨퍼런스 발표 · 당사자(company brain 플랫폼 판매자) · 자사 데이터 |
+| [[tech-bridge-agent-to-agent-as-search]] ([[town]]) | 20:48 | 컨퍼런스 소규모 세션 · 당사자이되 판매 대상 약함 · 수치 거의 없음 |
+
+**두 편이 서로 모른 채 같은 패턴에서 만나고 다음 단계에서 갈린다.** 둘 다 *조직의 비공개 지식을 에이전트가 읽는 공유 공간으로 옮기되 에이전트는 제안만 하고 사람이 승인한다* 고 말한다([[no-silent-write]]). 그런데 PromptQL은 그것을 *물러서지 말 규칙* 으로, Greze는 *지금 단계* 로 놓고 LLM이 정책을 집행하는 다음 단계([[privacy-auto-mode]])를 예고한다. 접근 제어의 벽도 반대다 — PromptQL은 **입구**(사용자 클레임으로 읽기, [[credential-injection-outside-sandbox]]), Greze의 블랙박스는 **출구**(읽기 전부 개방, 쓰기에서 승인, [[black-box-agent-approach]]). 고객이 다르다(포춘 은행 / 10~50명 고신뢰 회사). **같은 행사인지 확인할 근거는 없었다** — 두 설명란 모두 행사명이 없고 내부 단서도 겹치지 않는다. 2026-09-07의 절차대로 대조했고 **별개 소스로 취급**했다.
+
+**새 주의사항**
+
+- **ko가 핵심 조어를 전편에 걸쳐 관용구로 오역할 수 있다.** PromptQL 편의 *company brain* 이 ko에서 **"기업가적 사고방식"·"비즈니스 마인드"·"사업가적 사고방식"** 이 됐다(10곳 이상). 몇 곳은 "회사의 두뇌"로 맞게 나와 **같은 편 안에서 갈린다.** 지금까지의 유형(고유명사 직역·약어 창작·부호 뒤집기·단위 창작·화행 변형)과 달리 **발표 주제어 자체**가 바뀌는 첫 사례 — 자막만 보면 다른 발표다.
+- **ko가 약어 확장을 한 편에서 여러 개 지어낼 수 있다.** Greze 편의 *LLM* 이 **법률 문서 관리자·법학 석사·학습 리더·법률팀 관리자** 네 가지로. 2026-09-04에 기록한 유형(*UCP* 확장)의 재발이되 **빈도가 훨씬 높다** → 약어 뒤 괄호는 예외 없이 의심.
+- **ko가 원문 트랙의 결손을 채워 넣을 수 있다.** Greze 편 05:40~05:50의 비속어가 en-orig에서는 **묵음 처리로 비어 있는데** ko는 "큰 낭패"·"네가 망한 건"·"싸가지 없는"으로 **빈자리를 생성**했다. 2026-09-06·09-09의 *결손은 보충하지 않는다* 원칙이 자막 생성기 쪽에서 깨진 사례 — **ko에만 있는 말은 원문에 없을 수 있다.**
+- **회사명·모델명이 보통명사로 번역될 수 있다.** *Town* → "시내", *Opus 4.5* → "작품번호 4.5", *auto* → "자동차 산업". 2026-09-08의 *agent→요원* 의 고유명사 버전. **위키 엔티티 목록에 있는 이름이 자막에서 안 보이면 보통명사로 찾는다.**
+- **제목·설명란이 본문보다 강하게 주장할 수 있다.** PromptQL 편 제목 *"대형 은행에서 막아낸 방법"* 은 본문에 **은행 사례가 없고**, 설명란의 *"15~20개 기업과 5,000페이지"* 는 본문의 두 사실(15~20 파트너 / 자사 5,000페이지)을 **합친 것**이다. 은행 등급도 세 곳이 다르다(en-orig *fortune* / ko *500* / 설명란 *100*). → **설명란의 수치는 본문 발화로 재확인한다.** 지금까지 설명란은 이름·행사의 판정 근거였는데, **설명란이 틀릴 수 있는 첫 사례**다.
+- **지나가는 언급이 누적되면 페이지가 된다.** *"open claw / OpenClaw / claw land"* 가 다섯 소스에 걸쳐 나왔고 기존 [[understand-anything]] 페이지가 이미 그 이름을 갖고 있었다 → [[openclaw]] 생성. CLAUDE.md §3.3의 *누락 개체* 를 ingest 중에 적용한 첫 사례. **정체는 여전히 위키의 추정**이며 페이지에 그렇게 적었다.
+- **ASR이 만든 오인식을 ko가 고쳐 놓는 드문 방향도 있다.** PromptQL 편의 *Hasura* 는 en-orig가 *Hustura/Hustra* 로 틀렸는데 ko가 "Hasura"로 맞게 적었다. 두 트랙을 **양방향으로** 대조해야 한다.
+
+> ⚠️ **당사자 진술 비중은 계속 높다.** 두 편 다 자기 회사가 하는 일의 전제를 말한다. PromptQL 편은 명시적 판매자(제품 출시 예고), Greze 편은 판매 대상이 약하다. 각 페이지에 인센티브를 적었다.
+
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

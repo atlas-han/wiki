@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Index
@@ -57,6 +57,8 @@ updated: 2026-09-09
 - [[martin-fowler]] — *Refactoring*·*PoEAA* 저자, [[refactoring]]·[[twelve-factor-app]]의 사상적 기반
 - [[vannevar-bush]] — 1945년 [[memex]] 비전 제시 (As We May Think)
 - [[karan-vaidya]] — [[composio|Composio]] 공동창업자·CTO, [[knowledge-work-agent-gap|여섯 primitive]] 프레이밍 · 자기 채용 메일 사고를 논증의 축으로 ([[tech-bridge-knowledge-work-agent-infrastructure]])
+- [[tanmai-gopal]] — [[promptql|PromptQL]] 공동창업자·Hasura GraphQL 엔진 제작팀. [[company-brain|회사 두뇌]] 정의, 일일 업데이트 수 우상향=건강, [[no-silent-write|자동 쓰기 금지]]·[[named-human-accountability|사람 이름 규칙]]·[[credential-injection-outside-sandbox|샌드박스 밖 자격증명]] ([[tech-bridge-company-brain-security]]) ⚠️ 당사자(플랫폼 판매자)
+- [[jean-denis-greze]] — [[town|Town]] CTO · 전 Plaid CTO 7년 · 전 Dropbox. A2A는 [[agent-collaboration-as-search|검색 문제]], 다섯 전략, [[sweeper-agent|청소부 AI]]·[[black-box-agent-approach|블랙박스]]·[[privacy-auto-mode|프라이버시 auto mode]] ([[tech-bridge-agent-to-agent-as-search]]) ⚠️ 당사자, 수치 없음
 
 ### Organizations
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
@@ -87,6 +89,8 @@ updated: 2026-09-09
 - [[minimax]] — 중국 AI 랩("AI 드래곤" 중 하나). 위키 **첫 중국 AI 랩 당사자 소스** — 모델 우선·앱은 나중, 누구나 제안하는 연구 문화(MSA를 인턴이 설계), 200개국 3억 명 (sources: 2) ⚠️ 당사자 진술
 - [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 화이트보드 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 (sources: 1) ⚠️ 발표자 무명
 - [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술
+- [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
+- [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -105,7 +109,7 @@ updated: 2026-09-09
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
-- [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]])
+- [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]]) · 제3자: **공개 출시**·채널당 메모리=사일로 ([[tech-bridge-company-brain-security]])
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
 - [[managed-agents]] — Claude Platform의 호스티드 meta-harness
 - [[project-glasswing]] — Anthropic ~50개 파트너 협업 사이버보안 이니셔티브
@@ -116,6 +120,7 @@ updated: 2026-09-09
 - [[learnvector]] — Ng의 1:1 학습 조직, Coursera $100M ([[tech-bridge-andrew-ng-ai-opportunity]])
 - [[grokbot]] — [[cursor|Cursor]]의 지속형 개인 봇 팀(정체성·자체 컴퓨터·코디네이터·메시징 UI) ([[tech-bridge-grokbot-agent-teams]])
 - [[cursor-cloud]] — [[cursor|Cursor]]의 원격 자율 에이전트 실행 환경(Linux VM·멀티 레포·자기 검증 비디오·automations·`memories.md`) ([[tech-bridge-cursor-legacy-refactoring]])
+- [[openclaw]] — 다섯 소스에 지나가듯 언급되는 **에이전트 플랫폼**(개인 배포·개인 위키·"claw land"). 어느 소스도 설명하지 않아 언급을 모은 페이지 (sources: 5) ⚠️ 정체는 위키의 추정
 
 ### Tools
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
@@ -140,12 +145,12 @@ updated: 2026-09-09
 ## Concepts (LLM/AI)
 
 ### Techniques
-- [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어 + 스킬 파일 공급망 벡터 (sources: 3)
+- [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어 + 스킬 파일 공급망 벡터 + 공유 사일로/위키 벡터 (sources: 4)
 - [[context-resets-and-compaction]] — 장기 task에서 context window 한계를 다루는 두 전략 + Managed Agents의 third way
 - [[context-engineering]] — context window를 무엇을·어떻게 채우는가의 설계 영역
 - [[cognitive-offloading]] — 인지 작업을 LLM에 넘겨 당장은 성과↑, 장기 retention↓ (Ng)
 
-- [[retrieval-augmented-generation]] — 미리 넣지 않고 **필요할 때 외부 소스에서 관련 조각만**. [[agent-memory|메모리]]와 가르는 축은 검색 기술이 아니라 **출처**(사람이 넣었나) (sources: 3)
+- [[retrieval-augmented-generation]] — 미리 넣지 않고 **필요할 때 외부 소스에서 관련 조각만**. [[agent-memory|메모리]]와 가르는 축은 검색 기술이 아니라 **출처**(사람이 넣었나) (sources: 4)
 - [[native-multimodal-pretraining]] — 어댑터를 나중에 붙이지 않고 **첫 스텝부터** 텍스트+비전. 기각 근거가 성능이 아니라 **작은 실험이 큰 모델로 안 옮겨간다**는 것 (sources: 1)
 
 ### Architectures
@@ -183,6 +188,7 @@ updated: 2026-09-09
 - [[decision-quality]] — 구현 품질은 쉬워지고 **결정 품질**이 차별화 요소가 된다. AI가 못 하는 것은 경쟁 아키텍처 평가 (IBM, sources: 1) ⚠️ 측정 방법 없음
 - [[behavior-validated-trust]] — 신뢰의 근거가 **작성자(authorship)에서 검증된 행동(evidence)으로.** 테스팅이 모범 사례에서 **일차적 증거**로 (sources: 2)
 - [[model-mixing-economics]] — 한 작업 안에서 **계획용 무거운 모델 + 실행용 싼 모델**로 갈아 끼우기. 가격이 곧 병렬성의 연장 (Cursor, sources: 2) ⚠️ 수치 없음
+- [[agent-collaboration-as-search]] — **에이전트 대 에이전트는 검색 문제다.** 이상은 세상 모든 정보를 보는 단일 에이전트, 막는 것은 프라이버시(코즈 정리). 멀티 에이전트의 시험=그 근사. 다섯 전략과 판정 기준 두 질문(사람이 줄어드는가/모델이 좋아지면 좋아지는가) (sources: 1)
 
 ### Patterns
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
@@ -196,7 +202,7 @@ updated: 2026-09-09
 - [[deny-and-continue]] — 권한 차단 시 세션을 끊지 않는 UX 패턴
 - [[ralph-wiggum-method]] — `while :; do cat PROMPT.md | claude-code ; done` 자율 루프 (Geoff Huntley)
 - [[model-context-protocol]] — AI 앱이 외부 시스템에 붙는 오픈 표준 ("USB-C for AI")
-- [[llm-wiki-pattern]] — LLM이 점진적으로 유지하는 마크다운 지식 베이스 패턴 (sources: 1)
+- [[llm-wiki-pattern]] — LLM이 점진적으로 유지하는 마크다운 지식 베이스 패턴. 조직판=[[company-brain]], 자동 파이프라인=[[sweeper-agent]], 실패=영구 오염 (sources: 5)
 - [[code-knowledge-graph]] — 코드·문서를 노드·엣지 그래프로 만들어 *보며* 이해하는 패턴 (sources: 2)
 - [[ai-vulnerability-discovery]] — LLM으로 코드베이스에서 보안 취약점을 발견·exploit 검증하는 패턴 (sources: 1)
 - [[coordinated-vulnerability-disclosure]] — 90/45일 윈도우 기반 표준 취약점 공개 프로세스 (sources: 1)
@@ -233,6 +239,14 @@ updated: 2026-09-09
 
 - [[agent-knowledge-sourcing]] — 학습 데이터 밖 지식을 **어느 경로로 줄 것인가**의 4갈래 라우팅(적어둔 것=RAG / 겪은 것=메모리 / 절차=스킬 / 바깥 조회=MCP). 위키 첫 **설계 시점** 결정표 (sources: 1)
 - [[agent-memory]] — 에이전트가 **스스로 겪고 저장한** 경험. RAG와 달리 **읽고 쓴다**. 값진 순간은 **문서가 틀렸을 때** (sources: 3) ⚠️ 무효화·틀린 기억 처리 없음
+- [[company-brain]] — 조직의 공유 컨텍스트를 **서로 링크하는 마크다운 + 접근 제어**로 **코딩 에이전트**에게. 만들지 말고 **키워라**, 건강 지표=**일일 업데이트 수**. [[llm-wiki-pattern]]의 조직판(스코프·사람 이름) (sources: 2) ⚠️ 당사자
+- [[no-silent-write]] — 에이전트는 **스코프와 함께 제안**만, 사람이 수락·거부. GitHub PR과 YOLO 자동 메모리 사이의 스위트 스폿. 두 소스가 독립적으로 같은 패턴 — 그리고 다음 단계(LLM 정책 집행)에서 갈린다 (sources: 2)
+- [[named-human-accountability]] — **모든 변경에 사람 이름**, *"Claude가 추가했다"* 금지. 신뢰가 아니라 **사고 뒤 귀속**. 위키에는 테스트가 없어 [[behavior-validated-trust]]가 닿지 않는 자리 (sources: 1)
+- [[credential-injection-outside-sandbox]] — 샌드박스에 자격증명 없음, **HTTP/SQL 프록시에서 사용자 자격증명 주입**. 읽기도 쓰기도 그 사람으로. [[anthropic-managed-agents]]와 같은 처방, 이유는 **권한 상승** (sources: 2)
+- [[multiplayer-agent-context]] — 여러 사람이 **한 에이전트**를 공유 컨텍스트로, 서로 다른 권한으로. **지식은 논쟁에서 나온다**(SRE 사례). 대가는 권한 상승. [[persistent-agent-teams]]의 거울상 (sources: 1)
+- [[sweeper-agent]] — 각 비공개 사일로 안의 AI가 정책에 따라 **하루의 끝에** 공유 공간으로 옮긴다. *"AI가 자동으로 만드는 위키"* = 즉각적 ROI 베팅. 실패: 인젝션 전파·영구 오염 (sources: 1)
+- [[black-box-agent-approach]] — 트레이스 비접근 LLM이 **모든 사일로를 읽고**, **쓰기 직전에 정보 소유자에게만** 승인. 벽을 입구→출구로. 진짜 블랙박스일 수 없다(감사) (sources: 1)
+- [[privacy-auto-mode]] — 정보 공개 판단을 사람 승인→LLM으로, **민감도 낮은 영역부터**, 모델 용량과 함께 확장. [[anthropic-claude-code-auto-mode]]의 유비. 정책 해석기의 취약성 미해결 (sources: 2)
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -355,12 +369,15 @@ updated: 2026-09-09
 - [[tech-bridge-knowledge-work-agent-infrastructure]] — Karan Vaidya (Composio): 코딩만 앞선 이유는 모델이 아니라 **인프라**, 여섯 primitive(중앙화·히스토리·맥락·검증·거버넌스·가역성)를 지식 노동과 대조, **프롬프트는 compaction으로 날아가 거버넌스가 될 수 없다**(Meta 정렬 디렉터 메일 200통), 벽은 에이전트 바깥 두 층, **undo 없으면 신뢰의 시점이 앞으로**, 샌드박스가 undo의 대체물, 병목은 모델→인프라 ([[tech-bridge]], 2026-09-08, **20:12**, ⚠️ 당사자 진술=인프라 판매자 · 촬영 시점 미확정)
 - [[tech-bridge-ai-era-code-quality]] — IBM (발표자 무명): 기존 기준은 폐기 안 됐고 **평가의 자리가 옮겨갔다** — 구현 품질↓ **결정 품질↑**, 알림 기능 예제로 코드 질문 vs 엔지니어링 결정, 파일→**시스템 단위**, **작성자 신뢰→행동 검증**(evidence not authorship), 문서 표준→**실행 가능한 가드레일**, 체크포인트→지속적 실천, 답은 **판단** ([[tech-bridge]], 2026-09-08, **13:42**, ⚠️ 발표자 무명 · 촬영 시점 미확정 · **자막이 끝에서 잘림** · 근거 연구 출처 없음)
 - [[tech-bridge-cursor-legacy-refactoring]] — Cursor 필드 엔지니어(⚠️ 이름 Amita/Amriita 불일치): WordPress PHP→React 레거시 마이그레이션 **실시간 워크샵**. 네 단계(canvas 감사 → **코드 안 쓰는 plan mode** → 플러그인으로 Jira 티켓 → **cloud agent 위임** → automations 예방), **cursor harness** 4요소, 계획/실행 모델 갈아 끼우기, 에이전트가 **자기 마우스로 UI를 조작한 검증 비디오**, 플러그인이 MCP+스킬을 함께 배포 ([[tech-bridge]], 업로드 2026-09-08 / **촬영 09-01 무렵 추정**, **55:17 — 채널 실시간 최장편**, ⚠️ 당사자 진술 · **라이브 시연 미완**)
+
+- [[tech-bridge-company-brain-security]] — Tanmai Gopal (PromptQL/Hasura): 회사 두뇌=**마크다운 공유 컨텍스트+접근 제어→코딩 에이전트**, 만들지 말고 **키워라**, 건강=**일일 업데이트 수 우상향**(자사 2개월), 세 선택지(GitHub 스킬은 아무도 안 씀·팀 메모리는 사일로·**전사 단일 위키**), **자동 추가 금지·사람 이름**, 지식은 **논쟁**에서, **샌드박스에 자격증명 없음·프록시 주입** ([[tech-bridge]], 2026-09-09, **25:56**, ⚠️ 당사자 · 제목의 은행 사례 본문에 없음 · ko가 *company brain*을 "기업가적 사고방식"으로)
+- [[tech-bridge-agent-to-agent-as-search]] — Jean-Denis Greze (Town, 전 Plaid CTO): A2A는 **검색 문제**, 이상=단일 전지 에이전트·코즈 정리, 다섯 전략(신뢰 경계·커스텀 도구·**공유 사일로+청소부 AI**·사람 통로·**블랙박스**), 판정 기준 두 질문, 실패(인젝션·**영구 오염** Apex/Ivy·오공개·감사), **프런티어는 auto**·민감도 낮은 영역부터, 투자은행 간 확장 ([[tech-bridge]], 2026-09-09, **20:48**, ⚠️ 당사자 · 수치 없음 · ko가 LLM 약어 확장 4종 창작)
 ---
 
 ## 통계
 
-- 총 페이지 수: 324 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 306 → 324, + 2026-09-09 Tech Bridge 3편: source 3 + concept 12 + entity 3)
+- 총 페이지 수: 340 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 324 → 340, + 2026-09-10 Tech Bridge 2편: source 2 + concept 9 + entity 5)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-09 (Tech Bridge **3편**, 엿새 연속 — 09-08 업로드분. **셋이 우연히 한 축을 이룬다**: [[tech-bridge-knowledge-work-agent-infrastructure|Composio]]는 *코딩 밖에는 에이전트가 딛을 인프라가 없다*고 하고([[knowledge-work-agent-gap|여섯 primitive]]), [[tech-bridge-ai-era-code-quality|IBM]]은 *코딩 안에서도 판정은 사람 몫*이라 하며([[decision-quality]]), [[tech-bridge-cursor-legacy-refactoring|Cursor]]는 *그 조건을 갖춘 코딩에서 실제로 어디까지 되는지* **55:17 실시간 워크샵**으로 보여준다(그리고 라이브 시연은 끝나지 않았다). 가장 이식성 높은 것은 **프롬프트는 거버넌스가 될 수 없다**는 논증 — 안전 지시가 [[context-resets-and-compaction|compaction]]으로 날아가 메일 200통이 사라졌고, 그래서 벽은 [[agent-governance-layers|에이전트 바깥]]에 있어야 한다)
+- 마지막 ingest: 2026-09-10 (Tech Bridge **2편**, 이레 연속 — 09-09 업로드분. **두 편이 서로 모른 채 같은 패턴에서 만나고 다음 단계에서 갈린다**: [[tech-bridge-company-brain-security|PromptQL]]과 [[tech-bridge-agent-to-agent-as-search|Greze]] 둘 다 *조직의 비공개 지식을 공유 공간으로 옮기되 에이전트는 제안만 하고 사람이 승인* 한다([[no-silent-write]]) — 그런데 한쪽은 그것을 물러서지 말 규칙으로, 다른 쪽은 지금 단계로 놓고 LLM이 정책을 집행하는 [[privacy-auto-mode|다음 단계]]를 예고한다. 접근 제어의 벽도 반대 — 입구([[credential-injection-outside-sandbox]]) vs 출구([[black-box-agent-approach]]). 이 위키의 [[llm-wiki-pattern]]이 처음으로 **조직 규모 인스턴스**([[company-brain]], 5,000페이지·스코프·사람 이름)와 **실패 형태**(영구 오염)를 얻었다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-09
+- 마지막 갱신: 2026-09-10

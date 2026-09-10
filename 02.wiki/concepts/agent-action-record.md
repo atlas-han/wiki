@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [logging, memory, trust, observability, skills]
 aliases: [행동 기록, the record]
-related: [agent-memory, agent-knowledge-sourcing, knowledge-work-agent-gap, behavior-validated-trust, skill-self-improvement]
+related: [agent-memory, agent-knowledge-sourcing, knowledge-work-agent-gap, behavior-validated-trust, skill-self-improvement, named-human-accountability, black-box-agent-approach]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 에이전트 행동 기록
@@ -53,6 +53,13 @@ updated: 2026-09-09
 - **기록의 프라이버시 문제 미논의** — 모든 앱의 모든 행동을 한곳에 모으는 것의 위험이 언급되지 않는다.
 - **"패턴이 보이기 시작한다"의 메커니즘이 없다** — 무엇이 로그를 스킬로 증류하는지 설명되지 않는다.
 
+## 감사 로그의 둘째 열 — 그리고 로그가 없는 설계 (2026-09-10)
+
+[[tech-bridge-company-brain-security]]의 [[named-human-accountability]]는 이 개념의 로그에 **둘째 열**을 더한다 — Composio가 *에이전트가 무엇을 했는가* 를 기록한다면, PromptQL은 *어느 사람이 승인했는가* 를 기록한다(*"Claude가 추가했다"* 는 허용되지 않는다).
+
+반대로 [[tech-bridge-agent-to-agent-as-search]]의 [[black-box-agent-approach|블랙박스]]는 **트레이스에 아무도 접근할 수 없다**는 것을 전제로 삼는다 — 이 개념의 처방과 정면 충돌한다. 화자 자신이 그것을 인정한다: *"진짜 블랙박스일 수는 없습니다. CISO 조직 어딘가에 모든 데이터에 접근하는 사람이 있어야 합니다."* 즉 이 개념이 말하는 기록은 블랙박스에서도 **누군가에게는** 있어야 하고, 그 순간 블랙박스가 아니다. 이 개념의 미해결 항목 *기록의 프라이버시 문제* 가 반대편에서 다시 나타난 것이다.
+
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]]
+- [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 사람 이름 열 · 블랙박스와의 충돌 (2026-09-10)

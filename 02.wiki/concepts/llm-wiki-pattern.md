@@ -3,11 +3,11 @@ title: LLM Wiki Pattern
 type: concept
 category: pattern
 tags: [knowledge-base, workflow, llm-tooling]
-related: [agent-harness-design, memex, code-knowledge-graph, obsidian-cli-workflow]
+related: [agent-harness-design, memex, code-knowledge-graph, obsidian-cli-workflow, company-brain, sweeper-agent, no-silent-write]
 first-seen: karpathy-llm-wiki-gist
-sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford]
+sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
 created: 2026-05-25
-updated: 2026-09-03
+updated: 2026-09-10
 ---
 
 # LLM Wiki Pattern
@@ -68,7 +68,21 @@ LLM이 점진적으로 유지·확장하는 마크다운 기반 개인 지식 �
 
 두 진술을 나란히 두면 이 패턴이 무엇의 해법인지 선명해진다. scratch pad는 **한 세션 안의** 컨텍스트 한계를 우회하고, LLM wiki는 **세션들 사이의** 망각을 우회한다. 같은 처방(외부 마크다운 + 모델이 읽고 쓴다)이 시간 축만 늘어난 것이다. → [[context-resets-and-compaction]], [[memex]]
 
+## 조직 규모 인스턴스와 자동 파이프라인 (2026-09-10)
+
+2026-09-09 업로드 두 소스가 이 패턴을 **개인 밖으로** 가져간다.
+
+**① [[company-brain|회사 두뇌]]** ([[tech-bridge-company-brain-security]]) — [[promptql|PromptQL]]의 자사 위키가 **5,000페이지, 서로 링크하는 마크다운**이다. Karpathy 패턴에 없던 두 층이 붙는다: **파일별 읽기/쓰기 스코프**(에이전트는 사용자 클레임으로 읽는다), 그리고 **모든 변경에 사람 이름**([[named-human-accountability]]). 그리고 이 vault의 규칙(*LLM이 위키를 전담, 사람은 읽기만*)이 **뒤집힌다** — 에이전트는 제안만 하고 사람이 승인한다([[no-silent-write]]). 이유는 조직에서는 *누가 볼 수 있는가* 와 *누가 책임지는가* 가 생기기 때문이다.
+
+건강 지표도 하나 들어왔다 — **일일 업데이트 수의 추세**. 이 vault의 lint(모순·고아)가 *상태* 를 재는 것이라면 그것은 *성장* 을 잰다. ⚠️ 자사 2개월 데이터, 수치 없음.
+
+**② [[sweeper-agent|청소부 에이전트]]** ([[tech-bridge-agent-to-agent-as-search]]) — 각 비공개 사일로 안의 에이전트가 정책에 따라 **하루의 끝에** 공유해도 되는 정보를 공유 위키로 옮긴다. 발표자 [[jean-denis-greze]]는 *"AI가 자동으로 만드는 위키"* 가 오픈소스 개인 에이전트 세계와 작은 회사 양쪽에서 **즉각적 ROI**를 낼 것이라 본다. 즉 이 패턴의 ingest 단계를 **사일로 경계를 넘는 자동 파이프라인**으로 만든 것이다.
+
+같은 소스가 이 패턴의 **실패 형태**도 준다 — *"LLM이 실수해서 정보 하나가 틀리면 영원히 오염된다."* 에이전트 이름을 Apex→Ivy로 바꿨는데 개인 위키가 한 달째 Apex를 기억한다. 이 vault의 lint 항목 중 *모순* 이 잡을 수 있는 종류이나, **정정이 왜 안 되는가**(메모리 뱅크 어딘가에 남는다)는 lint 밖의 문제다. → [[agent-memory]]
+
 ## References
 
 - [[karpathy-llm-wiki-gist]]
 - [[understand-anything]] · [[code-knowledge-graph]] (LLM Wiki의 그래프 대응물)
+- [[tech-bridge-company-brain-security]] — 조직 규모 인스턴스(5,000페이지·스코프·사람 승인) · [[company-brain]]
+- [[tech-bridge-agent-to-agent-as-search]] — 청소부 에이전트·영구 오염 · [[sweeper-agent]]

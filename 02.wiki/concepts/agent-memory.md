@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
-related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement]
+related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
 created: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Agent Memory
@@ -87,9 +87,31 @@ updated: 2026-09-09
 
 > ⚠️ 어느 쪽도 **잘못 학습했을 때의 정정 경로**를 제시하지 않는다. 무효화·망각 정책은 이 위키의 어떤 소스에서도 아직 다뤄지지 않았다.
 
+## 자동 저장의 조직적 실패와 첫 정정 실패 사례 (2026-09-10)
+
+2026-09-09 업로드 두 소스가 이 페이지의 미해결 항목 둘에 각각 답과 사례를 준다.
+
+**"무엇을 저장할지 누가 정하는가"** — [[tech-bridge-company-brain-security]]가 답을 놓는다: **에이전트가 제안, 사람이 이름을 걸고 결정.** 그 근거는 자동 저장이 조직에서 두 가지로 실패한다는 관찰이다.
+
+> [팀 에이전트가 메모리를 자동 저장하면] 여전히 격리돼 있어서 회사 두뇌가 아니라는 겁니다. **사일로가 하나 더** 생긴 거죠. 예를 들어 Claude Tag는 **채널당 메모리**가 있어요. (…) 이제 그 한 채널의 또 다른 사일로입니다.
+
+> 자동 추가하게 두면 **무슨 일이 있었는지 전혀 알 수 없습니다.** (…) **그 에이전트의 메모리 안에 있으면 운이 좋은** 세계.
+
+→ [[no-silent-write]]. 이 페이지가 [[skill-self-improvement]]와 대비해 *자동 축적의 위험을 한쪽만 설계로 다룬다* 고 적은 자리에, **조직 규모에서는 자동 축적 자체를 금지**하는 소스가 들어왔다. 그리고 [[claude-tag]]의 채널당 메모리는 이 위키가 그 제품에 대해 아는 첫 **메모리 구조** 사실이다.
+
+**"틀린 기억의 처리"** — [[tech-bridge-agent-to-agent-as-search]]가 **첫 실사례**를 준다.
+
+> 제 개인 위키는 제 에이전트 이름을 지금 **Apex**로 알고 있는데, 한 달 전에 **Ivy**로 바꿨어요. 제 설정의 메모리 뱅크 어딘가에 Apex가 살아 있어서 **없앨 수가 없습니다.** Apex야 괜찮고 웃긴 얘기지만, **사업에 대한 정말 틀린 정보라면 훨씬 어렵습니다.**
+
+*"영원히 오염된다"* 는 표현이 붙는다. 이 페이지가 미해결로 둔 무효화·정정이 **왜 어려운지**의 구체 — 어디에 남았는지 모른다 — 가 처음 기록됐다. ⚠️ 여전히 해법은 어느 소스에도 없다.
+
+같은 소스의 [[sweeper-agent|청소부 에이전트]]는 이 페이지의 *여러 에이전트 간 공유* 항목에 대한 첫 구체적 답이다 — 개인 사일로의 메모리를 정책에 따라 조직 공유 지식으로 **승격**한다.
+
 ## References
 
 - [[tech-bridge-agent-knowledge-four-ways]] — 메모리를 RAG와 출처로 가른 첫 소스
 - [[tech-bridge-agents-as-distributed-systems]] — 메모리=무효화 가능한 캐시
 - [[anthropic-managed-agents]] — memory tool
 - 관련: [[agent-knowledge-sourcing]] · [[retrieval-augmented-generation]] · [[context-engineering]] · [[skill-self-improvement]] · [[agent-distributed-systems]]
+- [[tech-bridge-company-brain-security]] — 자동 저장 금지, 제안→사람 승인 (2026-09-10)
+- [[tech-bridge-agent-to-agent-as-search]] — Apex/Ivy 영구 오염 사례, 청소부 에이전트 (2026-09-10)

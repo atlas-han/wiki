@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경]
-related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue]
+related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 행동 가역성
@@ -49,6 +49,11 @@ updated: 2026-09-09
 
 **샌드박스의 충실도 문제가 다뤄지지 않는다** — 모의 환경과 실제 환경의 차이에서 오는 오검증 위험이 논의되지 않는다. 어떤 행동이 되돌릴 수 있는지의 분류를 *수십억 건의 행동에서 배우고 있다* 고만 말하고 그 분류 기준은 제시되지 않는다.
 
+## 정보 공개는 되돌릴 수 없다 (2026-09-10)
+
+[[tech-bridge-agent-to-agent-as-search]]가 이 개념을 코드·앱 행동에서 **정보 공개**로 옮긴다. *"누가 무엇을 승인하고, 무엇이 로깅되고, 무엇이 되돌릴 수 있는가?"* — 그리고 오공개의 결과: *"누군가 해고되기도, 고객이 고소하기도."* [[black-box-agent-approach|블랙박스]]가 승인을 **쓰기 직전**에 두는 것은 이 개념의 논리(되돌릴 수 없는 행동 앞에 신뢰를 세운다)와 같다. ⚠️ 그런데 같은 소스의 악몽 시나리오(*질문 자체가 이직 면접 중임을 드러낸다*)는 **읽기에서 추론된 것이 답에 새면 읽기도 되돌릴 수 없는 행동**이 된다는 것을 보여준다 — 소스는 이 함의를 짚지 않는다. 같은 날 [[tech-bridge-company-brain-security]]의 [[no-silent-write]]는 공유 지식에의 쓰기를 되돌리기 어려운 행동으로 보고 승인을 **앞**에 둔다.
+
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]] · [[karan-vaidya]]
+- [[tech-bridge-agent-to-agent-as-search]] — 정보 공개의 비가역성 (2026-09-10)

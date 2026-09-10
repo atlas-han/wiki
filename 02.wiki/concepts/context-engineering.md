@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security]
 created: 2026-05-25
-updated: 2026-09-08
+updated: 2026-09-10
 ---
 
 # Context Engineering
@@ -111,6 +111,12 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 
 ⚠️ **소스는 compaction 계열을 언급조차 하지 않는다.** 이 대비는 위키가 놓는 것이고, 소스에는 **길이의 비용에 대한 논의도 없다.**
 
+## 채울 수 없는 것 — 프라이버시라는 상한 (2026-09-10 · [[tech-bridge-agent-to-agent-as-search]])
+
+이 페이지는 *무엇을 어떻게 채우는가* 를 다뤄 왔다. [[jean-denis-greze]]는 정의를 한 문장으로 압축한 뒤 — *"도구 호출 직전에 컨텍스트 창이 올바른 정보를 갖고 있게 하는 것. 여기에는 사람이 없다. 중요한 그 한 번의 LLM 호출이 올바른 컨텍스트를 갖는 것뿐."* — **채울 수 없는 것이 왜 있는가**를 문제로 세운다: *"무한한 컨텍스트 창이 있더라도, 프라이버시와 보안 때문에"* 세상의 모든 컨텍스트를 줄 수 없다. 위 [[tech-bridge-minimax-m3-long-context|늘리는 쪽의 처방]]이 닿지 않는 상한이다. → [[agent-collaboration-as-search]]
+
+같은 날 [[tech-bridge-company-brain-security]]는 그 상한 아래에서의 조직 컨텍스트 형태를 준다 — **마크다운 파일 + 파일별 스코프**, 에이전트는 사용자 클레임으로 읽는다. 위 [[tech-bridge-jensen-huang-g20-agi|온보딩 비유]]가 *조직 맥락을 에이전트에게 준다* 고 했다면, 이것은 *누구에게 어느 부분을 주는가* 다. → [[company-brain]]
+
 ## References
 
 - [[anthropic-managed-agents]]
@@ -120,3 +126,5 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 - [[tech-bridge-jensen-huang-g20-agi]] — 온보딩 비유 (Jensen Huang, 2026-09-06)
 - [[tech-bridge-agent-knowledge-four-ways]] — 쏟아붓기의 세 실패 양상 (2026-09-08)
 - [[tech-bridge-minimax-m3-long-context]] — 늘리는 쪽의 처방 · [[long-context-agents]] (2026-09-08)
+- [[tech-bridge-agent-to-agent-as-search]] — 프라이버시 상한 · [[agent-collaboration-as-search]] (2026-09-10)
+- [[tech-bridge-company-brain-security]] — 스코프 있는 조직 컨텍스트 · [[company-brain]] (2026-09-10)

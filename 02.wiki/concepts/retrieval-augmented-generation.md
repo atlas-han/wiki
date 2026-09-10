@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
-related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph]
+related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search]
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-10
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -59,8 +59,13 @@ updated: 2026-09-08
 - 청킹·임베딩·재랭킹 등 구현 층위는 이 위키의 어느 소스도 다루지 않았다.
 - 비용·지연 특성 (첫 소스에 수치가 없다).
 
+## 세 단계 역사 속의 자리 (2026-09-10)
+
+[[tech-bridge-agent-to-agent-as-search]]가 RAG를 **중간 단계**로 놓는다 — *"4년 전에는 사람이 컨텍스트 창을 수동으로 채웠다. 몇 년 전에는 대부분이 RAG를 했다 — '여러 시스템을 훑어 데이터를 가져오는 검색 도구를 두자.' 그러자 '그건 확장이 잘 안 되고 문제가 있어.' 그리고 지금은 다들 에이전틱 검색이다."* 그리고 셋을 한 문장으로 묶는다: *"대부분의 LLM 시스템은 그냥 검색 문제다."* → [[agent-collaboration-as-search]]. 이 페이지가 RAG를 *출처* 로 정의한 것과 충돌하지 않는다 — Greze의 분류는 *메커니즘의 세대* 이고 IBM의 분류는 *지식의 출처* 다. ⚠️ *"확장이 잘 안 된다"* 의 근거는 소스에 없다.
+
 ## References
 
 - [[tech-bridge-agent-knowledge-four-ways]] — RAG를 [[agent-skills]]·[[model-context-protocol]]·[[agent-memory]]와 나란히 정의한 첫 소스
 - [[tech-bridge-agentic-sites]] · [[karpathy-llm-wiki-gist]]
 - 관련: [[agent-knowledge-sourcing]] · [[agent-memory]] · [[context-engineering]] · [[agentic-sites]] · [[llm-wiki-pattern]] · [[code-knowledge-graph]]
+- [[tech-bridge-agent-to-agent-as-search]] — 수동→RAG→에이전틱 검색의 세 단계 (2026-09-10)

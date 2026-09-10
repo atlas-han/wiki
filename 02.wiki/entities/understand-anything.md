@@ -8,7 +8,7 @@ links:
   - https://understand-anything.com/
 sources: [lum1104-understand-anything, james-ai-explorer-understand-anything]
 created: 2026-05-30
-updated: 2026-06-01
+updated: 2026-09-10
 ---
 
 # Understand-Anything
@@ -34,7 +34,7 @@ updated: 2026-06-01
 
 ## 멀티 플랫폼
 
-[[claude-code|Claude Code]] 네이티브 + Cursor·VS Code+Copilot(auto-discovery), Copilot CLI, Codex·OpenCode·OpenClaw·Antigravity·Gemini CLI·Pi·Vibe·Hermes·Cline·KIMI·Trae (총 15종). `--language`로 en/zh/zh-TW/ja/ko/ru 출력.
+[[claude-code|Claude Code]] 네이티브 + Cursor·VS Code+Copilot(auto-discovery), Copilot CLI, Codex·OpenCode·[[openclaw|OpenClaw]]·Antigravity·Gemini CLI·Pi·Vibe·Hermes·Cline·KIMI·Trae (총 15종). `--language`로 en/zh/zh-TW/ja/ko/ru 출력.
 
 ## 설치 (Claude Code)
 

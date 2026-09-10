@@ -3,11 +3,11 @@ title: Persistent Agent Teams (지속형 에이전트 팀)
 type: concept
 category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
-related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation]
+related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security]
 created: 2026-09-01
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -140,8 +140,13 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 
 > ⚠️ **automation이 잘못 돌 때의 폭발 반경이 논의되지 않는다.** 매주 자동으로 PR을 올리고 플래그를 지우는 잡의 실패 모드는 [[action-reversibility]]가 제기한 문제와 정확히 같은데, 소스는 두 가지를 연결하지 않는다.
 
+## 정반대 형태 — 사람이 여럿, 에이전트는 하나 (2026-09-10)
+
+[[tech-bridge-company-brain-security]]의 [[multiplayer-agent-context]]는 이 개념의 **거울상**이다. 이 개념은 *에이전트가 여럿이고 사람이 매니저* 인데, 저쪽은 *사람이 여럿이고 에이전트는 하나* 다(협업 인시던트 관리 — 여러 사람이 한 에이전트로 로그 조회·PR·배포). 문제도 거울상이다 — 이 개념의 병목이 **코디네이터**(에이전트 간 조정)라면 저쪽의 병목은 **권한 상승**(사람 간 권한 혼합). 그리고 저쪽이 *"회사 두뇌 지식이 가장 많이 만들어지는 상호작용"* 이라 주장하는 것(사람들의 논쟁이 지식을 만든다)은 이 개념의 봇 팀에는 없는 요소다 — 봇들은 서로 논쟁하지 않는다.
+
 ## References
 
 - [[tech-bridge-grokbot-agent-teams]] (first-seen) · [[grokbot]] · [[cursor]] · [[lauren-tan]] · [[roshan-sadanani]] · [[grok-4-6]]
 - 대비: [[agent-org-adoption]] · [[frontier-engineering]] · [[self-harness]] · [[harness-engineering]]
 - [[tech-bridge-altman-astra-hardware]] — 능동적 컴퓨터·범용 구독 (Sam Altman, 2026-09-06)
+- [[tech-bridge-company-brain-security]] — 거울상: 멀티플레이어 · [[multiplayer-agent-context]] (2026-09-10)

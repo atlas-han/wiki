@@ -3,11 +3,11 @@ title: Prompt Injection
 type: concept
 category: technique
 tags: [agent-safety, attack, llm-security]
-related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills]
+related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search]
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-10
 ---
 
 # Prompt Injection
@@ -60,8 +60,23 @@ updated: 2026-09-02
 
 [[anthropic-managed-agents]]의 토큰 격리(자격증명을 샌드박스 밖에)는 이 벡터에도 유효하다 — 스킬이 키를 훔치려 해도 잡을 게 없어야 한다. 즉 **읽기 전 검사**(출처·내용)와 **성공해도 무해**(격리)가 양쪽에서 필요하다.
 
+## 네 번째 벡터: 공유 사일로·위키 (2026-09-10)
+
+[[tech-bridge-agent-to-agent-as-search]]가 위 세 벡터에 넷째를 더한다 — **에이전트들이 함께 읽는 공유 저장소**.
+
+> **사일로 안의 프롬프트 인젝션**은 당연히 진짜 문제일 수 있죠 — 더 열린 사일로에 누가 나쁜 걸 넣고, **에이전틱 검색의 일부로 그걸 꺼내면** 나쁜 일이 생깁니다.
+
+| | 런타임 입력 | 스킬 파일 | **공유 사일로/위키** |
+|---|---|---|---|
+| 진입 | 작업 도중 외부 콘텐츠 | 사용자가 설치 | **동료(또는 동료의 에이전트)가 기여** |
+| 신뢰 상태 | 의심 대상 | 지시로 채택 | **조직 내부 지식으로 신뢰됨** |
+| 전파 | 그 세션 | 그 설치 | **[[sweeper-agent\|청소부]]가 공유 공간으로 옮기면 모든 에이전트로** |
+
+같은 날 [[tech-bridge-company-brain-security]]의 [[company-brain|회사 두뇌]]는 이 벡터에 대한 부분 방어를 갖는다 — **모든 항목에 사람 이름**([[named-human-accountability]])과 **사람 승인**([[no-silent-write]]). 인젝션이 성공해도 *누가 넣었는가* 가 남는다. 다만 승인자가 페이로드를 못 알아보면(Flutter 편의 *숨겨진 Unicode 지시* 처럼) 승인은 방어가 아니다. 그리고 [[credential-injection-outside-sandbox]]는 [[anthropic-managed-agents]]와 같은 처방(*샌드박스에 자격증명 없음*)이라 **성공해도 무해** 쪽 방어를 이 벡터에도 제공한다.
+
 ## References
 
 - [[anthropic-claude-code-auto-mode]]
 - [[anthropic-managed-agents]]
 - [[tech-bridge-flutter-ai-workflow]] — 스킬 파일 공급망 벡터
+- [[tech-bridge-agent-to-agent-as-search]] — 공유 사일로/위키 벡터 (2026-09-10)

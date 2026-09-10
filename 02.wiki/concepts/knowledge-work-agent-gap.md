@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [knowledge-work, agent-infrastructure, primitives, bottleneck]
 aliases: [지식 노동 격차, six primitives]
-related: [agent-action-record, agent-governance-layers, action-reversibility, agent-org-adoption, trusted-throughput, generator-evaluator-pattern]
+related: [agent-action-record, agent-governance-layers, action-reversibility, agent-org-adoption, trusted-throughput, generator-evaluator-pattern, company-brain]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 지식 노동 에이전트 격차
@@ -44,6 +44,11 @@ updated: 2026-09-09
 - **여섯의 우선순위·상호작용이 논의되지 않는다.** 무엇부터 세워야 하는지, 하나만 있으면 어떤지 소스가 답하지 않는다.
 - **"소프트웨어 엔지니어링은 100% 자율적"** 이라는 전제 자체가 이 위키의 다른 소스들과 충돌한다 — [[tech-bridge-ai-era-code-quality|IBM 편]]은 같은 날 *결정은 여전히 사람 몫* 이라고 말하고, [[tech-bridge-cursor-legacy-refactoring|Cursor 편]]의 라이브 마이그레이션은 시간 안에 끝나지 않았다. > ⚠️ Contradiction: 위키는 어느 쪽도 채택하지 않고 셋을 나란히 둔다.
 
+## 같은 진단, 다른 처방 — 회사 두뇌 (2026-09-10)
+
+[[tech-bridge-company-brain-security]]가 이 개념의 출발점(*코딩 에이전트는 코딩 주변 인프라 덕에 된다*)을 공유하되 **반대 방향의 처방**을 낸다. Composio는 코딩 밖에 여섯 primitive를 새로 짓자 하고, [[tanmai-gopal]]은 **코딩 에이전트를 그대로 두고 회사 지식을 그것이 읽을 마크다운으로** 만들자 한다 — *"Claude Code가 모든 것에 쓰인다. Claude Cowork도, Codex 앱도 같은 아키텍처. 저희는 그것을 위한 두뇌를 만든다."* → [[company-brain]]. 여섯 primitive로 보면 회사 두뇌는 **중앙화·맥락·거버넌스** 셋을 마크다운+스코프로 덮고 히스토리·검증·가역성은 다루지 않는다. 두 소스는 서로를 모른다(이틀 연속 이 채널에 올라왔다). 그리고 이 개념의 전제 *"소프트웨어 엔지니어링은 100% 자율적"* 에 PromptQL 편은 반례를 하나 더한다 — 자사 SRE 사례에서 에이전트는 *"스킬이 없어서 형편없이 실패"* 했고 사람 둘의 논쟁이 원인을 찾았다([[multiplayer-agent-context]]).
+
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]] · [[karan-vaidya]]
+- [[tech-bridge-company-brain-security]] — 같은 진단, 다른 처방 · [[company-brain]] (2026-09-10)

@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
 created: 2026-08-31
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Agent Skills
@@ -171,8 +171,23 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 
 > ⚠️ 스킬의 품질·충돌·버전 관리가 다뤄지지 않는다. 벤더가 배포한 스킬과 자작 스킬이 충돌할 때의 우선순위도 소스에 없다. [[imad-touil]]([[tech-bridge-ai-native-skills]])이 제기한 **스킬 거버넌스** 문제가 유통 경로가 넓어지면서 커지는데 이 소스는 언급하지 않는다.
 
+## 공유 스킬은 누가 쓰는가 — 두 소스의 충돌 (2026-09-10)
+
+2026-09-09 업로드 두 편이 **같은 날, 서로 모른 채** 공유 스킬 저장소에 대해 반대로 말한다.
+
+| | [[tech-bridge-company-brain-security]] ([[tanmai-gopal]]) | [[tech-bridge-agent-to-agent-as-search]] ([[jean-denis-greze]]) |
+|---|---|---|
+| 진술 | *"**아무도 GitHub에 다른 사람을 위한 스킬을 쓰지 않을 겁니다.** 그건 우리에게 자연스러운 일이 아니에요. (…) 제 메모리 큐레이션도 겨우 하는데 다른 사람을 위해 적어 둘 시간은 없습니다."* | *"저장소에 공유 스킬이 있고 **누구나 더 좋게 만들 수 있죠.** (…) 다음에 누가 '쿼리가 너무 느려' 하면 프로파일링 스킬을 쓰고 **모두가 더 나은 엔지니어**가 됩니다."* |
+| 조건 | (없음 — 인간 본성) | *"에이전트가 그 도구와 공유 사일로에 데이터를 넣고 빼게 하는 **궤적 인센티브**를 갖는 한"* |
+| 처방 | 스킬 대신 **위키 + 에이전트 제안 + 사람 승인** → [[no-silent-write]] | 스킬을 포함한 공유 사일로 + [[sweeper-agent\|청소부 에이전트]] |
+
+> ⚠️ Contradiction: 위키는 어느 쪽도 채택하지 않는다. 다만 둘의 차이는 **누가 쓰는가**로 좁혀진다 — Gopal의 반론은 *사람이* 남을 위해 쓰지 않는다는 것이고, Greze의 긍정은 *에이전트가* 인센티브를 갖고 쓴다는 조건부다. 둘을 합치면 *"사람은 안 쓰니 에이전트가 쓰게 하되 사람이 승인하라"* 가 되고, 그것이 정확히 Gopal의 처방이다. 이 합성은 위키의 것이며 어느 소스도 말하지 않았다.
+
+이 페이지의 실무자 관점([[ivanna-kacevica]])이 *스킬은 반복·자동화하고 싶은 워크플로에* 라고 했던 것과 대비하면, 두 소스가 다투는 것은 스킬의 **가치**가 아니라 **조직 안의 유통**이다. → [[agent-knowledge-sourcing]]
+
 ## References
 
 - [[tech-bridge-ai-native-skills]] · [[imad-touil]] · [[harness-engineering]] · [[tech-bridge-frontier-engineering]]
 - [[tech-bridge-flutter-ai-workflow]] · [[ivanna-kacevica]] — 실무자 관점 (두 가지 트리거 · description 트리거 · 보안 · 5개 스킬)
 - [[tech-bridge-agent-knowledge-four-ways]] · [[ibm]] — 스킬의 경계(절차+판단, 그리고 멈추는 자리) · [[agent-knowledge-sourcing]]
+- [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 공유 스킬의 유통에 대한 반대 진술 (2026-09-10)

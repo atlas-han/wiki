@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
-related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot]
+related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # 예약형 에이전트 자동화
@@ -60,6 +60,11 @@ updated: 2026-09-09
 - **`memories.md`가 잘못 학습했을 때의 정정 경로가 없다.**
 - 발표자가 시연 중 **Statsig MCP 연결에 실패**해 Datadog으로 대체했다.
 
+## 지식의 흐름을 유지보수하는 예약 잡 (2026-09-10)
+
+[[tech-bridge-agent-to-agent-as-search]]의 [[sweeper-agent|청소부 에이전트]]는 형태상 이 개념이다 — *"**하루의 끝에** 사일로의 새 정보를 보고 공개 공간에 넣는다."* 차이는 대상이다: [[cursor-cloud|Cursor]]의 automation이 **코드베이스**를 유지보수한다면(feature flag 청소), 청소부는 **조직 지식의 흐름**을 유지보수한다(비공개 사일로 → 공유 위키). 이 개념의 논지 *"리팩터링을 하지 않아도 되게 만든다"* 를 지식에 옮기면 *"사람이 남을 위해 문서를 쓰지 않아도 되게 만든다"* 가 되고, 그것이 정확히 같은 날 [[tech-bridge-company-brain-security]]가 *"아무도 남을 위해 스킬을 쓰지 않는다"* 고 진단한 문제다. ⚠️ `memories.md`와 마찬가지로 청소부가 **잘못 옮겼을 때의 정정 경로**는 없다 — 오히려 Greze는 *"영원히 오염된다"* 고 한다.
+
 ## References
 
 - [[tech-bridge-cursor-legacy-refactoring]] · [[cursor]] · [[cursor-cloud]]
+- [[tech-bridge-agent-to-agent-as-search]] — 청소부 에이전트 = 지식 흐름의 예약 잡 (2026-09-10)

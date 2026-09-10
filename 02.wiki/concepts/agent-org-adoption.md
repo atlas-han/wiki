@@ -3,11 +3,11 @@ title: Agent Org Adoption
 type: concept
 category: pattern
 tags: [agent, organization, verification, culture, figma]
-related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams, trusted-throughput, token-roles]
+related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams, trusted-throughput, token-roles, company-brain]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security]
 created: 2026-08-29
-updated: 2026-09-02
+updated: 2026-09-10
 ---
 
 # Agent Org Adoption
@@ -85,6 +85,10 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 
 조사할 신호가 **거의 안 쓰는 국소적 집단**(도입 격차)이라는 방향은 [[frontier-engineering]]이 관찰한 **팀 간 50배 편차**와 같은 자리에 있다. 단, 팀마다 AI 활용 방식이 다르므로 맥락을 고려한 비교여야 한다.
 
+## 키우는 것이지 만드는 것이 아니다 (2026-09-10 · [[tech-bridge-company-brain-security]])
+
+이 페이지의 *"에이전트 우선 재설계는 가장 흔한 실수"* 와 같은 결의 진술이 **지식 베이스 도입**에 대해 나왔다. [[tanmai-gopal]]: *"100년 된 조직의 회사 두뇌는 만들 수 없어요. 자기 가족 것도 겨우 만들까 말까인데. (…) 회사에서 일의 일부를 하는 각 사람이 회사 두뇌의 자기 몫을 소유하고 만드는 것입니다. **만드는(build) 게 아니라 키우는(grow)** 겁니다."* 2년짜리 프로젝트 대신 **셀프 서비스 누적** — 그리고 그 누적이 실제로 일어나는지의 지표로 **일일 업데이트 수**를 제안한다 → [[company-brain]]. 이 페이지의 3막 곡선으로 보면, 그 지표가 우상향하는 것이 3막(정착)의 신호다. ⚠️ 자사 2개월 데이터뿐.
+
 ## References
 
 - [[tech-bridge-figma-coding-agents]]
@@ -95,3 +99,4 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 - [[tech-bridge-ai-native-skills]] · [[agent-skills]]
 - [[tech-bridge-grokbot-agent-teams]] · [[persistent-agent-teams]] · [[cursor]]
 - [[eyal-blum]] · [[figma]]
+- [[tech-bridge-company-brain-security]] — 키우는 것이지 만드는 것이 아니다 · [[company-brain]] (2026-09-10)

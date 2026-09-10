@@ -7,7 +7,7 @@ related: [prompt-injection, transcript-classifier, agent-harness-design, intent-
 first-seen: anthropic-claude-code-auto-mode
 sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -92,7 +92,7 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 
 **같은 소스의 두 번째 사례**: 발표자 본인이 자신의 *"open claw"* 를 채용 아웃리치 대량 메일에 겨냥해 사고를 냈다. 이쪽은 **지시대로 정확히 동작한 경우**이며 *"모든 검사가 통과했을 것"* 인데도 재앙이었다 — 물어지지 않은 질문은 **"이게 애초에 나갔어야 했는가"** 였다.
 
-> ⚠️ **정렬 디렉터의 이름·날짜·출처 링크가 소스에 없다.** 위키는 인물 페이지를 만들지 않고 사건으로만 기록한다. *"open claw"* 의 정체도 소스가 설명하지 않는다.
+> ⚠️ **정렬 디렉터의 이름·날짜·출처 링크가 소스에 없다.** 위키는 인물 페이지를 만들지 않고 사건으로만 기록한다. *"open claw"* 의 정체는 이 소스가 설명하지 않으나, 2026-09-10에 다른 소스들의 언급과 합쳐 [[openclaw]] 페이지로 모았다(에이전트 플랫폼으로 추정).
 
 ## References
 

@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # Anthropic
@@ -92,6 +92,13 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 >
 > 이 위키에 [[anthropic|Anthropic]] 모델의 가격·성능에 대한 **Anthropic 자신의 소스**는 [[tech-bridge-claude-platform-agent-era]]뿐이며, 그 소스는 가격을 다루지 않는다.
 
+## 제3자 언급 — Claude Tag 공개 출시, "auto mode를 내려주신 신들" (2026-09-10)
+
+2026-09-09 업로드 두 소스가 Anthropic을 각각 한 번씩 **바깥에서** 말한다.
+
+- [[tech-bridge-company-brain-security]] ([[tanmai-gopal]], 경쟁 제품 창업자): [[claude-tag|Claude Tag]]가 *"며칠 전 출시"* — 이 위키가 그 제품을 **공개 제품**으로 확인하는 첫 진술. 그리고 *"회사 두뇌가 될 줄 알았는데 아니더라"* 는 시장 반응(출처 없음). 또 *"Claude Code가 모든 것에 쓰인다, Claude Cowork도 같은 아키텍처"* — **Claude Cowork**라는 제품명이 이 위키에 처음 등장한다(⚠️ en-orig ASR *cloud co-work*, 정체 미확인). 자사 *"prompt tag"* 는 *"Claude에 묶이지 않는"* 대응물.
+- [[tech-bridge-agent-to-agent-as-search]] ([[jean-denis-greze]]): *"**Anthropic의 신들이 auto mode를 내려주셨다.**"* [[anthropic-claude-code-auto-mode]]를 프라이버시 거버넌스의 **유비 원본**으로 쓴다 → [[privacy-auto-mode]]. ko 자막은 *"엔트로픽"*.
+
 ## References
 
 - [[anthropic-project-glasswing-update-2026-05]]
@@ -102,3 +109,4 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 - [[tech-bridge-claude-platform-agent-era]]
 - [[tech-bridge-claude-code-team-workflow]]
 - [[tech-bridge-ai-native-sdlc]]
+- [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 제3자 언급 (2026-09-10)

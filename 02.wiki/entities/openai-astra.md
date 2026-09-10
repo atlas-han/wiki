@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security]
 links: []
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-10
 ---
 
 # Astra (OpenAI)
@@ -33,7 +33,7 @@ updated: 2026-09-06
 ## 미해결 사항
 
 - 아키텍처·크기·훈련 방법·출시 시기 — 없음.
-- *Soul* 등급의 위치.
+- *Soul* 등급의 위치. (2026-09-10) 제3자 언급 하나 — [[tech-bridge-company-brain-security]]의 [[tanmai-gopal]]이 자사 제품이 *"GPT를 쓸 수 있고, 그리고 **Soul이 나오면**"* 그것도 쓴다고 해 **미출시 등급**으로 취급한다. 같은 날 [[tech-bridge-cursor-legacy-refactoring]]의 *"GPT-5.6 Soul"* 표기와 합치면 Soul은 여러 소스가 아는 이름이지만 어느 소스도 출시를 말하지 않는다.
 - "인간 수준" 주장의 측정 근거.
 
 ## References
