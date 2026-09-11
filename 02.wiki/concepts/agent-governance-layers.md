@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
-related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode]
+related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # 에이전트 거버넌스 두 층
@@ -69,11 +69,21 @@ updated: 2026-09-10
 | Composio (이 개념의 원본) | 결정론적 | 결정론적 + 자연어 정책 | 있음, 해석기 미상 |
 | PromptQL | **사용자 단위** 결정론적 | 사용자 단위 결정론적 | **없음** |
 | Greze 블랙박스 / auto | **전부 개방** | 소유자 승인 → LLM 판단 | **커진다**, 해석기 미상 |
+| **Google Cloud Toolbox** (2026-09-11) | 소스·허용 데이터셋·출력 크기·**드라이버 수준 읽기 전용** | **고정 SQL만** + 쓰기 도구는 사용자 확인 | **없음** |
 
 세 소스는 서로를 언급하지 않는다. 고객이 다르다는 것(PromptQL: 포춘 은행 / Greze: 10~50명 고신뢰 회사)이 차이의 상당 부분을 설명한다.
+
+## 벽의 네 번째 자리 — 도구 정의 (2026-09-11)
+
+[[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])는 벽을 **MCP 서버의 도구 정의(YAML)** 에 둔다. [[secure-tool-evolution]]의 각 단계 — 연결 정보를 에이전트 밖으로, 쓰기를 **드라이버 수준**까지 제거, 허용 데이터셋, 출력 크기, **SQL 생성 자체를 제거**(고정 SQL + prepared statement), 사용자 신원을 **바인딩**([[bound-parameters]]) — 이 전부 ①층이다. 화자의 표현으로 *"에이전트가 나쁜 손에 들어가도"* 폭발 반경이 줄어드는 구조.
+
+이 소스도 PromptQL처럼 **②층(자연어 정책)이 없다.** 그리고 *"프롬프트로는 안 된다"* 는 이 개념의 출발점을 다른 근거로 재확인한다 — *"데이터베이스는 에이전트만큼만 안전하고, 에이전트는 속이기 쉽다"* ([[confused-deputy-attack]]). 즉 프롬프트가 compaction으로 **사라지지 않아도** 속일 수 있으니 벽은 바깥에 있어야 한다.
+
+이 개념의 원본(Composio)이 *코딩 밖에는 거버넌스 primitive가 없다* 고 한 것에 대해, 이 소스는 **데이터베이스라는 한 영역에서 그 primitive를 세운 형태**다 — 도구가 무엇을 할 수 있는지가 설정에 살고, 게이트는 여러 층(도구 목록 → 드라이버 → 데이터셋 → 출력 → 신원)이며, 각 층의 크기가 폭발 반경에 따라 다르다. 네 소스는 서로를 언급하지 않는다.
 
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[agentic-misbehavior]] · [[context-resets-and-compaction]] · [[composio]]
 - [[tech-bridge-company-brain-security]] — 벽의 자리 = HTTP/SQL 프록시, ②층 없음 · [[credential-injection-outside-sandbox]] (2026-09-10)
 - [[tech-bridge-agent-to-agent-as-search]] — 벽을 출구로, ②층을 LLM으로 · [[black-box-agent-approach]] · [[privacy-auto-mode]] (2026-09-10)
+- [[tech-bridge-build-time-vs-runtime-tools]] — 벽의 네 번째 자리 = 도구 정의 YAML, ②층 없음 · [[secure-tool-evolution]] · [[bound-parameters]] (2026-09-11)

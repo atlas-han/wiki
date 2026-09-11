@@ -37,8 +37,9 @@ sources:
   - tech-bridge-minimax-m3-long-context
   - tech-bridge-company-brain-security
   - tech-bridge-agent-to-agent-as-search
+  - tech-bridge-build-time-vs-runtime-tools
 created: 2026-06-03
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # Tech Bridge
@@ -154,7 +155,29 @@ updated: 2026-09-10
 
 > ⚠️ **당사자 진술 비중은 계속 높다.** 두 편 다 자기 회사가 하는 일의 전제를 말한다. PromptQL 편은 명시적 판매자(제품 출시 예고), Greze 편은 판매 대상이 약하다. 각 페이지에 인센티브를 적었다.
 
+## 2026-09-10 업로드 1편 — 데이터베이스 앞의 에이전트 (2026-09-11 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-build-time-vs-runtime-tools]] ([[google-cloud]]) | 19:57 | 컨퍼런스 2인 발표 · 당사자(플랫폼 판매자) · **데모 미실행** |
+
+**채널 첫 Google Cloud 소스**이자 첫 **데이터베이스·보안** 축. [[averi-kitsch]]·[[prerna-kakkar]]가 교대로 발표하며, 후반의 보안 논증([[confused-deputy-attack]]·[[lethal-trifecta]]·[[agent-identity-separation]]·[[secure-tool-evolution]]·[[bound-parameters]])이 이 위키의 [[agent-governance-layers]]에 **네 번째 벽의 자리**(도구 정의 YAML)를, [[credential-injection-outside-sandbox]]에 **세 번째 소스**(도구 파라미터 바인딩)를 준다. 09-09 업로드 두 편과 같은 행사인지 판단할 근거는 없다 — 설명란에 행사명이 없고 내부 단서도 없다. **별개로 취급.**
+
+**새 주의사항**
+
+- **원본에서 데모가 재생되지 않을 수 있다.** 06:11에 데모 영상을 틀려다 실패했고, 화자가 말로 대신 설명한 뒤 약 30초 무음, 슬라이드만으로 재개. 09-06(시작 결손)·09-09(끝 결손)와 다른 **중간의 결손**이고, 결손된 것이 자막이 아니라 **시연 자체**다. → *"에이전트가 속지 않는다"* 는 예고를 **결과로 취급하지 않았다.**
+- **설명란이 본문보다 강하게 주장하는 두 번째 사례.** 설명란 *"실제 사고 사례"* vs 화자 *"예시 또는 데모 중 하나"*. 09-10 PromptQL 편(제목의 은행 사례)에 이어 **설명란의 사실 주장은 본문 발화로 재확인**한다는 규칙이 재확인됐다.
+- **ko가 문장의 주어를 바꿔 요점을 뒤집을 수 있다.** en-orig *"It [the agent] actually never sees that user identity"* 를 ko가 **"시스템은 해당 사용자의 신원을 전혀 인식하지 못합니다"** 로 — 시스템은 알고 에이전트만 모르게 하는 것이 요점인데 주어가 바뀌어 반대가 됐다. 09-07의 *부호 뒤집기* 와 다른 **주어 치환** 유형. 문장이 자연스러워 자막만 보면 잡히지 않는다.
+- **동음 오인식이 한 문장 안에서 두 방향으로 갈릴 수 있다.** en-orig가 *write* 를 *right* 로 세 번 오인식(13:30·13:36)했고, ko는 그것을 **"오른쪽으로 가기 권한"**(방향)과 **"적절한 도구"**(옳음)로 각각 옮겼다. 같은 오인식이 같은 문장에서 두 뜻으로 — 어느 쪽도 원문이 아니다.
+- **ko가 전문 용어를 다른 분야 용어로 옮긴다.** *triage*→"환자 분류"(의료), JWT *claims*→"청구 내역"(회계, 같은 편 18:32는 "클레임"으로 맞음), *tool quality*→"공구 품질", *complex maps*→"복잡한 지도", *sweet*→"너무 달콤해". 09-06 유형의 재발이되 **분야가 옮겨가는** 형태(의료·회계·지리)가 눈에 띈다.
+- **약어 확장 창작 재발** — *LLM*→"LLM(법률 전문가)"(08:38). 09-04·09-10에 이어 세 번째.
+- **ASR 오인식 연쇄** — *LangChain*→*land chain*→"토지 사슬", *IDEs*→*IDs*→"ID", *DBA*→*DBN*. 그리고 **데모 앱의 고유명사가 일반어로 오인식**(*similar*)돼 ko에서 "비슷한 서비스"가 되어 이름이 사라졌다 — 고유명사 소실의 새 경로.
+- **양 트랙이 같은데도 판정 불가한 고유명사** — *"Cloud Code"* (02:18). Google 제품(Cloud Code)과 [[claude-code|Claude Code]] 둘 다 문맥에 맞아 **어느 쪽도 채택하지 않았다.** 09-09의 *발표자 이름 확정 근거 없음* 과 같은 처리.
+- **첫 2인 교대 발표.** 09-05 Claude Code 팀 3인은 *발언별 화자 특정 불가* 였으나 이번엔 en-orig의 화자 전환 표시(`>>`)와 인계 발언(*"thank you, Avery"*)으로 **구간별 화자를 확정**할 수 있었다 — 전반 Prerna, 후반 Averi.
+
+> ⚠️ **당사자 진술 비중은 계속 높다.** 발표의 처방이 곧 자사 제품([[mcp-toolbox-for-databases]]) 기능이다. 다만 보안 논증은 제품 독립적이라 개념으로 올리고 제품 서술은 엔티티에 뒀다.
+
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

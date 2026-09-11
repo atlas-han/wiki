@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [credentials, sandbox, proxy, access-control, privilege-escalation, security, multiplayer]
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
-related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach]
+related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # 샌드박스 밖 자격증명 주입
@@ -57,8 +57,22 @@ updated: 2026-09-10
 - 도구를 추가한 사용자가 접근을 통제한다 — 그 사용자가 퇴사하면?
 - 당사자 진술.
 
+## 같은 원칙, 셋째 자리 — 도구 파라미터 바인딩 (2026-09-11)
+
+[[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])의 [[bound-parameters|바운드·인증 파라미터]]가 같은 원칙을 **도구 정의** 자리에서 구현한다 — 애플리케이션이 인증한 사용자 ID(또는 검증된 OpenID JWT의 클레임)를 도구에 직접 묶고, *"에이전트는 그 사용자 신원을 실제로 전혀 보지 못한다."*
+
+| | [[anthropic-managed-agents]] | 이 개념 (PromptQL) | [[bound-parameters]] (Google Cloud) |
+|---|---|---|---|
+| 벽의 자리 | vault + MCP 프록시 | HTTP/SQL 프록시 | **도구 파라미터** |
+| 격리하는 것 | 토큰 | 사용자 자격증명 | **사용자 신원(PII)** |
+| 위협 | 인젝션이 토큰을 훔침 | 정당한 사용자의 권한 상승 | [[confused-deputy-attack\|혼동된 대리인]] · PII 노출 |
+| 에이전트는 | 토큰 없이 프록시 호출 | 그 사람 *으로서* 행동 | 그 사람의 *데이터만* 받음 |
+
+세 소스는 서로를 모르며 **세 위협에 같은 벽**이 답한다. 차이는 Google Cloud가 신원을 프록시가 아니라 **도구 시그니처에서 아예 지운다**는 점이다 — 항공편 조회 도구는 날짜만 받는다. 그래서 [[lethal-trifecta]]의 첫째 요소(비공개 데이터)에 닿는 주체가 사용자로 고정되고, 에이전트 컨텍스트에 PII가 흐르지 않는다. 이 개념의 미해결(*프록시 구현·위임·토큰 수명*)은 그쪽에도 그대로 남는다.
+
 ## References
 
 - [[tech-bridge-company-brain-security]] (first-seen) · [[tanmai-gopal]]
 - [[anthropic-managed-agents]] — 같은 처방의 선행 사례
 - 관련: [[agent-governance-layers]] · [[prompt-injection]] · [[multiplayer-agent-context]] · [[black-box-agent-approach]]
+- [[tech-bridge-build-time-vs-runtime-tools]] — 셋째 자리: 도구 파라미터 바인딩 · [[bound-parameters]] (2026-09-11)

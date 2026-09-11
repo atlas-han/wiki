@@ -504,5 +504,18 @@
   "02.wiki/entities/promptql.md": "LiBuilding",
   "02.wiki/entities/openclaw.md": "LiBoxes",
   "02.wiki/entities/town.md": "LiBuilding",
-  "02.wiki/entities/jean-denis-greze.md": "LiUser"
+  "02.wiki/entities/jean-denis-greze.md": "LiUser",
+  "01.raw/articles/2026-09-10_개발용 AI 도구가 왜 실제 환경에선 실패할까요 빌드타임과 런타임의 결정적 차이 Google 엔지니어.md": "LiNewspaper",
+  "02.wiki/concepts/agent-identity-separation.md": "LiShield",
+  "02.wiki/concepts/agent-tool-design-practices.md": "LiPuzzle",
+  "02.wiki/concepts/build-time-vs-runtime-tools.md": "LiPuzzle",
+  "02.wiki/concepts/secure-tool-evolution.md": "LiShield",
+  "02.wiki/concepts/bound-parameters.md": "LiSettings",
+  "02.wiki/concepts/confused-deputy-attack.md": "LiShield",
+  "02.wiki/concepts/lethal-trifecta.md": "LiShield",
+  "02.wiki/sources/tech-bridge-build-time-vs-runtime-tools.md": "LiVideo",
+  "02.wiki/entities/google-cloud.md": "LiBuilding",
+  "02.wiki/entities/averi-kitsch.md": "LiUser",
+  "02.wiki/entities/prerna-kakkar.md": "LiUser",
+  "02.wiki/entities/mcp-toolbox-for-databases.md": "LiWrench"
 }

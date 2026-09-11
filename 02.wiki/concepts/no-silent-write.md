@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [memory, approval, human-in-the-loop, wiki, governance, scopes]
 aliases: [silent write 금지, 제안-승인 메모리, suggest-not-write]
-related: [agent-memory, company-brain, named-human-accountability, sweeper-agent, privacy-auto-mode, skill-self-improvement, agent-governance-layers, action-reversibility]
+related: [agent-memory, company-brain, named-human-accountability, sweeper-agent, privacy-auto-mode, skill-self-improvement, agent-governance-layers, action-reversibility, agent-tool-design-practices]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # 자동 쓰기 금지
@@ -58,7 +58,12 @@ updated: 2026-09-10
 - **승인된 사실이 나중에 틀리면** — 정정 경로는 여전히 없다.
 - 승인자가 곧 스코프 결정자다 — 잘못된 스코프로 승인하면 유출은 그대로 일어난다. Gopal은 그래서 이름이 필요하다고 한다(사후 책임), 유출 자체를 막지는 못한다.
 
+## 같은 게이트, 도구 층에서 (2026-09-11)
+
+[[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])의 [[agent-tool-design-practices|도구 설계 규칙]] 셋째가 이 패턴을 **데이터베이스 도구**에서 반복한다 — *"읽기 도구와 쓰기 도구를 분리하라. 그러면 **읽기는 자동 승인**하고 **쓰기는 사용자에게 확인**을 보낼 수 있다."* 이 개념이 *공유 지식에의 쓰기* 에 사람 승인을 둔 것과 같은 축이고, 승인 판정이 **도구 이름만으로** 가능해지는 구현이다. 다만 그 소스도 *승인 피로* 는 다루지 않는다.
+
 ## References
 
 - [[tech-bridge-company-brain-security]] (first-seen) · [[tech-bridge-agent-to-agent-as-search]]
 - 관련: [[agent-memory]] · [[company-brain]] · [[sweeper-agent]] · [[named-human-accountability]] · [[privacy-auto-mode]]
+- [[tech-bridge-build-time-vs-runtime-tools]] — 도구 층의 읽기/쓰기 분리 (2026-09-11)

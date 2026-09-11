@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-11
 ---
 
 # Log
@@ -968,3 +968,42 @@ PromptQL 편 앵커 셋(Claude Tag *"며칠 전 출시"* · 현재 모델 *Opus 
 - **게이트 F(push 자격증명)는 여전히 열려 있다** — `gh auth status`의 active account가 `davehan-nsuslab`이고 `atlas-han`은 비활성. 09-09의 우회로(`git -c credential.helper= -c credential.helper='!f() {…gh auth token -u atlas-han…}' push`)로 push한다. 항구 해결은 사람 몫.
 - **게이트 B(릴레이 스케줄 자동 발화)는 이번에도 확인하지 않았다.**
 - yt-dlp 목록 조회·자막 다운로드가 각각 1분 안에 끝났다 — 어제의 지연(쿠키 추출 경합 추정)은 재현되지 않았다.
+
+## [2026-09-11] ingest | Tech Bridge 1편 — 빌드타임 vs 런타임 도구: 개발용 AI 도구가 프로덕션에서 실패하는 이유 (Google Cloud · MCP Toolbox)
+
+2026-09-10 업로드분. `--playlist-end 15`가 **15편 반환**, 신규 1편, 나머지 14편은 기존. 롱폼만(최단 538초), Shorts 없음. ko·en-orig 전부 확보, **429 없음.** yt-dlp 목록·자막 모두 1분 안에 완료. launchd 정시 발화(09:10 KST), `run-ingest.sh`(pid 59785) 자식 세션.
+
+| 소스 | 길이 | 화자 | 성격 |
+|---|---|---|---|
+| [[tech-bridge-build-time-vs-runtime-tools]] | 19:57 | [[averi-kitsch]] · [[prerna-kakkar]] ([[google-cloud]] 데이터베이스 · [[mcp-toolbox-for-databases]]) | 컨퍼런스 2인 발표 ⚠️ 당사자(플랫폼 판매자) · **데모 미실행** · 행사·촬영 시점 미확정 |
+
+### 신규 (12페이지)
+
+- **source 1** — 위 표.
+- **concept 7** — [[build-time-vs-runtime-tools]] · [[confused-deputy-attack]] · [[lethal-trifecta]] · [[agent-identity-separation]] · [[secure-tool-evolution]] · [[bound-parameters]] · [[agent-tool-design-practices]].
+- **entity 4** — [[averi-kitsch]] · [[prerna-kakkar]] · [[google-cloud]](위키 두 번째 Google 조직 · 첫 클라우드 플랫폼 벤더) · [[mcp-toolbox-for-databases]].
+
+### 기존 보강 (11페이지)
+
+[[prompt-injection]](**성립 조건: 치명적 3요소** · 다섯째 벡터: 신뢰된 내부 시스템 — 노출 경로=진입 경로) · [[agentic-misbehavior]](테이블 삭제 — 처방이 분류기가 아니라 **도구 자체**) · [[agent-governance-layers]](벽의 **네 번째 자리: 도구 정의 YAML**, ②층 없음, 표에 행 추가) · [[credential-injection-outside-sandbox]](**셋째 자리: 도구 파라미터** — 세 소스·세 위협·같은 벽 표) · [[model-context-protocol]](MCP 서버가 **가드레일의 자리**가 된 첫 사례 · Google managed MCP · "Cloud Code" 판정 불가) · [[action-reversibility]](세 번째 처방: 되돌릴 수 없는 행동을 **도구에서 뺀다** · 가역성=도구 분류 기준) · [[no-silent-write]](도구 층의 읽기/쓰기 분리) · [[knowledge-work-agent-gap]](한 영역에서 세워진 거버넌스 primitive) · [[agent-distributed-systems]](최소 권한의 구체적 형태=세 신원 · 조치 가능한 오류) · [[google-deepmind]]([[google-cloud]]와 구분) · [[tech-bridge]](sources 34→35, 새 주의사항 9건).
+
+`index.md`(실측 **340→352**), `overview.md`(현재 상태 문단 + 진화 로그), `log.md`.
+
+### 핵심 합성
+
+**이 위키의 보안 축이 처음으로 데이터베이스에 닿았고, 프롬프트 인젝션에 성립 조건이 생겼다.** [[prompt-injection]]은 넉 달 동안 *콘텐츠가 어디로 들어오는가*(벡터 넷)만 모았는데, Simon Willison의 [[lethal-trifecta]](비공개 데이터 + 신뢰 불가 콘텐츠 + 외부 노출 능력)가 들어오면서 이 위키가 따로따로 모아 온 방어들 — probe·토큰 격리·외부화 차단·읽기 전용·신원 바인딩 — 이 **세 요소 중 어디를 빼는가**로 정렬됐다. 그리고 [[agent-governance-layers]]의 *벽은 에이전트 바깥에* 가 네 번째 자리(도구 정의 YAML)를 얻었고, [[anthropic-managed-agents]]·[[promptql]]·Google Cloud 세 소스가 서로 모른 채 **에이전트 손에 신원·자격증명을 두지 않는다**는 같은 원칙에 닿았다는 것이 확인됐다 — 벽의 자리만 다르다(vault+프록시 / 프록시 / 도구 파라미터). 위키는 어느 자리도 채택하지 않는다.
+
+### 새 주의사항 (상세는 [[tech-bridge]])
+
+- 원본에서 **데모가 재생되지 않을 수 있다** — 09-06(시작)·09-09(끝)와 다른 **중간의 결손**이고 결손된 것은 자막이 아니라 **시연 자체**. 예고를 결과로 취급하지 않았다.
+- **설명란이 본문보다 강하게 주장**하는 두 번째 사례("실제 사고 사례" vs "예시 또는 데모 중 하나").
+- **ko가 주어를 치환해 요점을 뒤집음**(18:07, 에이전트→시스템). 09-07 부호 뒤집기와 다른 새 유형 — 문장이 자연스러워 자막만 보면 안 잡힌다.
+- **동음 오인식(write→right)이 한 문장에서 두 방향으로** 번역됨("오른쪽으로 가기 권한" / "적절한 도구").
+- 전문 용어의 **분야 이동 오역**(triage→환자 분류, JWT claims→청구 내역, tool→공구, maps→지도).
+- 약어 확장 창작 재발(LLM→법률 전문가, 세 번째), ASR 연쇄(LangChain→토지 사슬), **고유명사가 일반어로 오인식되어 소실**(데모 앱 이름 similar→"비슷한 서비스").
+- **양 트랙이 같아도 판정 불가한 고유명사**("Cloud Code" — Google Cloud Code / Claude Code) — 채택하지 않음.
+- 첫 **2인 교대 발표** — en-orig `>>` 표시와 인계 발언으로 구간별 화자 확정(전반 Prerna, 후반 Averi).
+
+### 해소하지 않고 표시만 한 것
+
+테이블 삭제의 실체(실제/데모, 일시, 규모) · 데모 동작(속지 않는다는 예고만) · eval bench 내용(페이지 미생성) · "Cloud Code" · 데모 앱 이름(*Cymbal* 추정) · "fully modeled control tool"(*model-controlled* 로 읽음, 추정) · 프레임워크 이름("by denting AI" → Pydantic AI 추정) · 비용·지연 수치 · JWT 발급·수명·위임 · 대안 부재(자사 도구 없는 세계 vs 있는 세계) · Willison 원문 미확보(전언).

@@ -7,7 +7,7 @@ links:
   - https://deepmind.google/
 sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics]
 created: 2026-09-04
-updated: 2026-09-05
+updated: 2026-09-11
 ---
 
 # Google DeepMind
@@ -42,6 +42,10 @@ Google의 AI 연구·제품 조직. 본 위키에 **Google 계열 조직 페이�
 - AGI 노선에 대해 **조직 내부에 이견이 있다는 것이 드러난다.** Ghahramani는 *"새로운 아키텍처가 필요하다"* 진영이고, *"그 분야에 종사하는 **많은 사람들**"* 이 스케일링만으로 충분하다고 본다고 말한다. → ⚠️ [[sutton-bitter-lesson]]
 
 > 규모·조직 구조·모델 라인업(Gemini 등)에 대한 정보는 이 위키에 **아직 없다.** 별도 소스 ingest 필요.
+
+## Google의 다른 조직 (2026-09-11)
+
+[[google-cloud|Google Cloud]] 페이지가 생기면서 이 페이지는 더 이상 유일한 Google 조직 페이지가 아니다. 두 조직의 축이 다르다 — DeepMind는 **연구·소비자 에이전트**([[fuzzy-intent-discovery]]·[[bayesian-inference]]), Google Cloud는 **인프라·플랫폼**([[mcp-toolbox-for-databases]]·[[secure-tool-evolution]]). 이 위키에 Google 모회사 페이지는 없다.
 
 ## References
 

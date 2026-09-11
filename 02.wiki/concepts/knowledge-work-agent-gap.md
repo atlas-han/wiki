@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [knowledge-work, agent-infrastructure, primitives, bottleneck]
 aliases: [지식 노동 격차, six primitives]
-related: [agent-action-record, agent-governance-layers, action-reversibility, agent-org-adoption, trusted-throughput, generator-evaluator-pattern, company-brain]
+related: [agent-action-record, agent-governance-layers, action-reversibility, agent-org-adoption, trusted-throughput, generator-evaluator-pattern, company-brain, secure-tool-evolution]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # 지식 노동 에이전트 격차
@@ -48,7 +48,12 @@ updated: 2026-09-10
 
 [[tech-bridge-company-brain-security]]가 이 개념의 출발점(*코딩 에이전트는 코딩 주변 인프라 덕에 된다*)을 공유하되 **반대 방향의 처방**을 낸다. Composio는 코딩 밖에 여섯 primitive를 새로 짓자 하고, [[tanmai-gopal]]은 **코딩 에이전트를 그대로 두고 회사 지식을 그것이 읽을 마크다운으로** 만들자 한다 — *"Claude Code가 모든 것에 쓰인다. Claude Cowork도, Codex 앱도 같은 아키텍처. 저희는 그것을 위한 두뇌를 만든다."* → [[company-brain]]. 여섯 primitive로 보면 회사 두뇌는 **중앙화·맥락·거버넌스** 셋을 마크다운+스코프로 덮고 히스토리·검증·가역성은 다루지 않는다. 두 소스는 서로를 모른다(이틀 연속 이 채널에 올라왔다). 그리고 이 개념의 전제 *"소프트웨어 엔지니어링은 100% 자율적"* 에 PromptQL 편은 반례를 하나 더한다 — 자사 SRE 사례에서 에이전트는 *"스킬이 없어서 형편없이 실패"* 했고 사람 둘의 논쟁이 원인을 찾았다([[multiplayer-agent-context]]).
 
+## 한 영역에서 세워진 거버넌스 primitive (2026-09-11)
+
+여섯 primitive 중 **거버넌스**가 지식 노동에서 실패하는 방식은 *"권한이 흩어져 결국 프롬프팅으로"* 였다. [[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])는 **데이터베이스 접근**이라는 한 영역에서 그 primitive가 세워진 형태를 보여준다 — 도구가 무엇을 할 수 있는지가 **서버 설정(YAML)** 에 살고([[secure-tool-evolution]]), 게이트는 여러 층(도구 목록 → 드라이버 → 데이터셋 → 출력 → 신원 바인딩), 프롬프팅은 어디에도 없다. 그리고 [[action-reversibility|가역성]] primitive에 대한 세 번째 처방 — *되돌릴 수 없는 행동을 도구에서 뺀다*. 이 소스는 Composio 편을 모르며, 거버넌스가 코딩 밖에서 **영역마다 따로** 세워지는 것(데이터베이스는 Google, 회사 지식은 [[promptql]])이 Composio의 *"빠져 있는 중심"* 주장과 맞는지 어긋나는지는 위키가 판정하지 않는다.
+
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]] · [[karan-vaidya]]
 - [[tech-bridge-company-brain-security]] — 같은 진단, 다른 처방 · [[company-brain]] (2026-09-10)
+- [[tech-bridge-build-time-vs-runtime-tools]] — 한 영역(데이터베이스)에서 세워진 거버넌스 primitive · [[secure-tool-evolution]] (2026-09-11)

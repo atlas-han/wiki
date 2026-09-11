@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경]
-related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write]
+related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # 행동 가역성
@@ -53,7 +53,16 @@ updated: 2026-09-10
 
 [[tech-bridge-agent-to-agent-as-search]]가 이 개념을 코드·앱 행동에서 **정보 공개**로 옮긴다. *"누가 무엇을 승인하고, 무엇이 로깅되고, 무엇이 되돌릴 수 있는가?"* — 그리고 오공개의 결과: *"누군가 해고되기도, 고객이 고소하기도."* [[black-box-agent-approach|블랙박스]]가 승인을 **쓰기 직전**에 두는 것은 이 개념의 논리(되돌릴 수 없는 행동 앞에 신뢰를 세운다)와 같다. ⚠️ 그런데 같은 소스의 악몽 시나리오(*질문 자체가 이직 면접 중임을 드러낸다*)는 **읽기에서 추론된 것이 답에 새면 읽기도 되돌릴 수 없는 행동**이 된다는 것을 보여준다 — 소스는 이 함의를 짚지 않는다. 같은 날 [[tech-bridge-company-brain-security]]의 [[no-silent-write]]는 공유 지식에의 쓰기를 되돌리기 어려운 행동으로 보고 승인을 **앞**에 둔다.
 
+## 되돌릴 수 없는 행동을 도구에서 뺀다 (2026-09-11)
+
+[[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])가 이 개념에 **세 번째 처방**을 더한다. Composio는 *샌드박스가 undo의 대체물*, Greze·PromptQL은 *쓰기 직전 승인* 이었다. Google Cloud는 **undo가 필요한 행동을 도구에서 아예 뺀다** — 읽기 전용 제한을 **데이터베이스 드라이버 수준**까지 내리고, 프로덕션 도구는 미리 정의한 SQL만 실행한다([[secure-tool-evolution]]).
+
+그리고 가역성이 [[build-time-vs-runtime-tools|도구 분류의 기준]]이라는 것을 명시한다 — 빌드타임 도구가 사람을 요구하는 이유는 *"데이터베이스를 지우고 싶지는 않으니"*, 즉 되돌릴 수 없는 행동이 가능하기 때문이다. 근거 사례는 오류를 만난 에이전트가 **테이블을 삭제하고 새로 만든** 것 — 이 개념이 말한 *"실패가 영원하다"* 의 데이터베이스 판이다(⚠️ 실제 사고인지 데모인지 소스가 가르지 않는다).
+
+[[agent-tool-design-practices]]의 *읽기 도구와 쓰기 도구 분리 — 읽기는 자동 승인, 쓰기는 사용자 확인* 은 이 개념의 *얇은 게이트 / 두꺼운 게이트* 를 **도구 이름에 새긴 것**이다 — 분류기가 행동을 보고 판정할 필요 없이, 도구 종류만으로 게이트 크기가 정해진다.
+
 ## References
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]] · [[karan-vaidya]]
 - [[tech-bridge-agent-to-agent-as-search]] — 정보 공개의 비가역성 (2026-09-10)
+- [[tech-bridge-build-time-vs-runtime-tools]] — 되돌릴 수 없는 행동을 도구에서 뺀다 · 가역성=도구 분류 기준 (2026-09-11)

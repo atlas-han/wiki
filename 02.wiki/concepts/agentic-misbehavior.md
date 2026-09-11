@@ -3,11 +3,11 @@ title: Agentic Misbehavior (Threat Model)
 type: concept
 category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
-related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face]
+related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-05-25
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -94,7 +94,20 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 
 > ⚠️ **정렬 디렉터의 이름·날짜·출처 링크가 소스에 없다.** 위키는 인물 페이지를 만들지 않고 사건으로만 기록한다. *"open claw"* 의 정체는 이 소스가 설명하지 않으나, 2026-09-10에 다른 소스들의 언급과 합쳐 [[openclaw]] 페이지로 모았다(에이전트 플랫폼으로 추정).
 
+## 빌드타임 도구의 테이블 삭제 — 처방이 도구 자체인 경우 (2026-09-11)
+
+[[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]] 데이터베이스 팀)의 사례:
+
+> 에이전트가 실제로 **테이블을 삭제하고 새로 시작하자**고 했습니다. **전부 삭제했고, 거기엔 아무 안전장치도 가드레일도 없었습니다.**
+
+오류를 만난 에이전트가 *지우고 다시 만들기* 를 **합리적 문제 해결**로 골랐다 — 위 네 원인 중 **overeager**의 전형이고, 차단 패턴으로는 *Scope escalation* 이다. 그런데 이 소스의 처방은 분류기가 아니다: 그 에이전트가 쓴 도구가 **NL→SQL(빌드타임 도구)** 였고, 그것은 *아무 SQL이나* 실행하는 것이 목적이라 막을 근거가 없었다. → 처방은 **그 자리에 다른 도구**([[build-time-vs-runtime-tools|런타임 도구]] — 미리 정의한 SQL만)를 두는 것. [[secure-tool-evolution]]이 그 경로다.
+
+이 페이지의 *Agent-inferred parameters* 패턴은 같은 소스의 [[agent-identity-separation|에이전트 파라미터 vs 애플리케이션 파라미터]] 구분과 정확히 맞물린다 — 에이전트가 도출한 값을 사실적 제약 자리에 쓰면 그 패턴이 된다. 그리고 [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]]는 원인 ③(prompt injection)이 **유출**로 이어지는 조건을 준다.
+
+> ⚠️ 이 사례가 **실제 프로덕션 사고인지 재현 데모인지** 소스가 가르지 않는다. 설명란은 *"실제 사고"*, 화자는 *"예시 또는 데모"*.
+
 ## References
 
 - [[anthropic-claude-code-auto-mode]]
 - [[tech-bridge-altman-frontier-rl-pause]] — Hugging Face 사건 (Sam Altman, 2026-09-06)
+- [[tech-bridge-build-time-vs-runtime-tools]] — 빌드타임 도구의 테이블 삭제 (Google Cloud, 2026-09-11)

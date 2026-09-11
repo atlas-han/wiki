@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-10
+updated: 2026-09-11
 ---
 
 # Index
@@ -59,6 +59,8 @@ updated: 2026-09-10
 - [[karan-vaidya]] — [[composio|Composio]] 공동창업자·CTO, [[knowledge-work-agent-gap|여섯 primitive]] 프레이밍 · 자기 채용 메일 사고를 논증의 축으로 ([[tech-bridge-knowledge-work-agent-infrastructure]])
 - [[tanmai-gopal]] — [[promptql|PromptQL]] 공동창업자·Hasura GraphQL 엔진 제작팀. [[company-brain|회사 두뇌]] 정의, 일일 업데이트 수 우상향=건강, [[no-silent-write|자동 쓰기 금지]]·[[named-human-accountability|사람 이름 규칙]]·[[credential-injection-outside-sandbox|샌드박스 밖 자격증명]] ([[tech-bridge-company-brain-security]]) ⚠️ 당사자(플랫폼 판매자)
 - [[jean-denis-greze]] — [[town|Town]] CTO · 전 Plaid CTO 7년 · 전 Dropbox. A2A는 [[agent-collaboration-as-search|검색 문제]], 다섯 전략, [[sweeper-agent|청소부 AI]]·[[black-box-agent-approach|블랙박스]]·[[privacy-auto-mode|프라이버시 auto mode]] ([[tech-bridge-agent-to-agent-as-search]]) ⚠️ 당사자, 수치 없음
+- [[averi-kitsch]] — [[google-cloud|Google Cloud]] 데이터베이스 staff 엔지니어 · [[mcp-toolbox-for-databases|MCP Toolbox for Databases]] 기술 리드. *데이터베이스는 에이전트만큼만 안전하다* — [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]]·[[agent-identity-separation|세 신원]]·[[secure-tool-evolution|도구 진화]]·[[bound-parameters|바운드 파라미터]] ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 당사자(플랫폼 판매자)
+- [[prerna-kakkar]] — Google 시니어 엔지니어 · eval bench(에이전트·MCP·스킬 평가) 기술 리드. [[build-time-vs-runtime-tools|빌드타임 vs 런타임]] 구분, 테이블 삭제 사례, 미실행 데모 해설 ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 성은 설명란 단독
 
 ### Organizations
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
@@ -80,7 +82,7 @@ updated: 2026-09-10
 - [[multica-ai]] — GitHub org, `andrej-karpathy-skills` repo로 [[claude-code]] CLAUDE.md 4원칙 공개
 - [[uk-aisi]] — UK AI Security Institute, frontier 모델 보안 평가 정부 기관
 - [[shanghai-ai-lab]] — 상하이 AI 연구소, [[self-harness]] 논문 발표 (본 위키 첫 중국 lab)
-- [[google-deepmind]] — Google의 AI 연구·제품 조직. 위키 첫 Google 조직 페이지 · 소비자 대면 커머스 에이전트 ([[tech-bridge-multimodal-commerce-agent]])
+- [[google-deepmind]] — Google의 AI 연구·제품 조직. 위키 첫 Google 조직 페이지 · 소비자 대면 커머스 에이전트 ([[tech-bridge-multimodal-commerce-agent]]) · 인프라 축은 [[google-cloud]]
 - [[nvidia]] — GPU·AI 인프라 회사. 위키 첫 **하드웨어 층** 조직 — 대체 가능·내구적 아키텍처, 1 GW≈500~600억 달러, 100 GW 계획 ([[tech-bridge-jensen-huang-g20-agi]])
 - [[tesla]] — 전기차·자율주행·휴머노이드 로봇. 위키 조직 축의 첫 **물리 제조업** ([[tech-bridge-elon-musk-g20-ai-future]], sources: 1)
 - [[spacex]] — 항공우주. Musk 진술상 자체 발전소를 지어 Google·Anthropic에 컴퓨팅 임대 ([[tech-bridge-elon-musk-g20-ai-future]], ⚠️ 전부 자기 진술)
@@ -91,6 +93,7 @@ updated: 2026-09-10
 - [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술
 - [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
 - [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
+- [[google-cloud]] — Google 클라우드 플랫폼. 위키 두 번째 Google 조직 페이지 · 첫 **클라우드 플랫폼 벤더** — [[mcp-toolbox-for-databases|MCP Toolbox]]·Google managed MCP·Model Armor, 월 도구 호출 2천만(자기 진술) (sources: 1) ⚠️ 당사자
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -139,19 +142,21 @@ updated: 2026-09-10
 - [[github-spec-kit]] — GitHub Spec Kit (`specify` CLI), [[spec-driven-development]] 하니스
 - [[flutter]] — Google 크로스플랫폼 UI 프레임워크(Dart), 학습 데이터 격차 · 1코드베이스 4플랫폼 · 공식 스킬 ([[tech-bridge-flutter-ai-workflow]])
 - [[nanogpt]] — [[andrej-karpathy|Karpathy]]의 300줄 GPT 구현, 8-GPU·38시간으로 GPT-2 재현 (학습용 레퍼런스)
+- [[mcp-toolbox-for-databases]] — [[google-cloud|Google Cloud]]의 오픈소스 데이터베이스 MCP 서버(별 15.7k·DB 40+, 자기 진술). **가드레일이 YAML 설정에 산다** — source·읽기 전용 드라이버·허용 데이터셋·출력 크기·고정 SQL·바운드/인증 파라미터 ([[tech-bridge-build-time-vs-runtime-tools]])
 
 ---
 
 ## Concepts (LLM/AI)
 
 ### Techniques
-- [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어 + 스킬 파일 공급망 벡터 + 공유 사일로/위키 벡터 (sources: 4)
+- [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어 + 스킬 파일 공급망 벡터 + 공유 사일로/위키 벡터 + 신뢰된 내부 시스템 벡터 · 성립 조건=[[lethal-trifecta|치명적 3요소]] (sources: 5)
 - [[context-resets-and-compaction]] — 장기 task에서 context window 한계를 다루는 두 전략 + Managed Agents의 third way
 - [[context-engineering]] — context window를 무엇을·어떻게 채우는가의 설계 영역
 - [[cognitive-offloading]] — 인지 작업을 LLM에 넘겨 당장은 성과↑, 장기 retention↓ (Ng)
 
 - [[retrieval-augmented-generation]] — 미리 넣지 않고 **필요할 때 외부 소스에서 관련 조각만**. [[agent-memory|메모리]]와 가르는 축은 검색 기술이 아니라 **출처**(사람이 넣었나) (sources: 4)
 - [[native-multimodal-pretraining]] — 어댑터를 나중에 붙이지 않고 **첫 스텝부터** 텍스트+비전. 기각 근거가 성능이 아니라 **작은 실험이 큰 모델로 안 옮겨간다**는 것 (sources: 1)
+- [[bound-parameters]] — 사용자 신원(PII)을 에이전트가 채우지 않고 **앱 인증값 / 검증된 JWT 클레임을 도구에 직접 바인딩**. 에이전트는 신원을 보지 못한다 — 도구 시그니처에서 신원이 사라진다. [[credential-injection-outside-sandbox]]와 같은 벽, 다른 자리 (sources: 1)
 
 ### Architectures
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
@@ -170,7 +175,7 @@ updated: 2026-09-10
 - [[in-context-learning]] — 가중치를 안 바꾸고 activation 안에서 학습. outer loop(SGD) vs **inner loop**(시퀀스 읽기) (sources: 1)
 - [[regulatory-capture]] — 규제 설계가 기존 사업자 이익에 기울음. **다섯 입장**(Ng·Gates·Altman·Huang·Musk) 표 · 포획의 *경로*(대기업만 지도부에 접근) 명시 · 가격이 포획이 되는 길 (sources: 7)
 - [[memex]] — Vannevar Bush 1945년 비전, [[llm-wiki-pattern]]의 사상적 조상
-- [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned) · Hugging Face 사건 실사례 (sources: 2)
+- [[agentic-misbehavior]] — 에이전트가 위험 action을 취하는 4가지 원인 (overeager / honest mistake / prompt injection / misaligned) · Hugging Face 사건·메일 200통·**빌드타임 도구의 테이블 삭제** 실사례 (sources: 4)
 - [[intent-alignment]] — 정렬 = **사용자 의도 따르기**. 두 원칙: 통제권 유지·광범위한 권한 분산. 병목은 지능이 아니라 의도 이해 (Altman, sources: 1)
 - [[agi-definition]] — AGI는 이정표, 초지능은 무한 경사로. Ng·Altman·Huang 세 입장 — 정의를 무의미화하는 것이 누구에게 유리한가 · **도착점 없는 곡선**이라는 네 번째 형식 (sources: 4)
 - [[ai-jobs-impact]] — 일자리 **다섯 입장**(Gates 2년/4년 · Ng task 30–40% · Altman "예상보다 적었다"+창업 붐 · Huang "작업은 자동화" · **Musk 12~18개월 경쟁 불가·로봇 10억 대**) (sources: 6)
@@ -183,12 +188,14 @@ updated: 2026-09-10
 - [[intelligence-abundance]] — 지능의 풍요는 효율이 아니라 **형평** 문제. 밤에 한 시간 불 = 임금 5시간이던 전기의 역사 (Altman, sources: 1)
 - [[one-continuous-exponential]] — 농업·산업·컴퓨터 혁명은 하나의 지수 곡선. *"이것이 마지막 혁명"* 이라는 유혹을 거부 (Altman, sources: 1)
 - [[humanoid-robot-scaling]] — 범용 로봇 유용성 = AI 소프트웨어 × AI 칩 × 손의 정밀도, 그리고 로봇이 로봇을 만드는 재귀 (Musk, sources: 1)
-- [[knowledge-work-agent-gap]] — 코딩만 앞서간 이유는 모델이 아니라 **주변 인프라**. 코딩은 여섯 primitive를 다 갖고 지식 노동은 하나도 없다 (Composio, sources: 1) ⚠️ 당사자 진술
-- [[action-reversibility]] — **되돌릴 수 있는지가 신뢰의 *시점* 을 정한다.** 코드는 사후 신뢰, 지식 노동은 사전 신뢰. 샌드박스가 undo의 대체물 (sources: 1)
+- [[knowledge-work-agent-gap]] — 코딩만 앞서간 이유는 모델이 아니라 **주변 인프라**. 코딩은 여섯 primitive를 다 갖고 지식 노동은 하나도 없다 (Composio, sources: 3 — 한 영역에서 세워진 거버넌스 primitive: Google Cloud DB) ⚠️ 당사자 진술
+- [[action-reversibility]] — **되돌릴 수 있는지가 신뢰의 *시점* 을 정한다.** 코드는 사후 신뢰, 지식 노동은 사전 신뢰. 샌드박스가 undo의 대체물 · 되돌릴 수 없는 행동을 **도구에서 뺀다**(Google Cloud) (sources: 3)
 - [[decision-quality]] — 구현 품질은 쉬워지고 **결정 품질**이 차별화 요소가 된다. AI가 못 하는 것은 경쟁 아키텍처 평가 (IBM, sources: 1) ⚠️ 측정 방법 없음
 - [[behavior-validated-trust]] — 신뢰의 근거가 **작성자(authorship)에서 검증된 행동(evidence)으로.** 테스팅이 모범 사례에서 **일차적 증거**로 (sources: 2)
 - [[model-mixing-economics]] — 한 작업 안에서 **계획용 무거운 모델 + 실행용 싼 모델**로 갈아 끼우기. 가격이 곧 병렬성의 연장 (Cursor, sources: 2) ⚠️ 수치 없음
 - [[agent-collaboration-as-search]] — **에이전트 대 에이전트는 검색 문제다.** 이상은 세상 모든 정보를 보는 단일 에이전트, 막는 것은 프라이버시(코즈 정리). 멀티 에이전트의 시험=그 근사. 다섯 전략과 판정 기준 두 질문(사람이 줄어드는가/모델이 좋아지면 좋아지는가) (sources: 1)
+- [[confused-deputy-attack]] — 권한 낮은 요청자가 **에이전트의 권한**을 빌려 못 볼 데이터를 얻는다. 트리아지 에이전트 + 티켓 속 급여 DB 지시. *"데이터베이스는 에이전트만큼만 안전"* — 전통 앱은 행동이 고정돼 넓은 권한이 안전했다 (sources: 1)
+- [[lethal-trifecta]] — Simon Willison: **비공개 데이터 + 신뢰 불가 콘텐츠 + 외부 노출 능력**이 동시에 있으면 유출 성립. [[prompt-injection]]의 벡터 목록에 **성립 조건**을 더한다 — 이 위키의 방어들을 세 요소로 정렬 (sources: 1) ⚠️ 원문 미확보, 전언
 
 ### Patterns
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
@@ -201,7 +208,7 @@ updated: 2026-09-10
 - [[transcript-classifier]] — Claude Code auto mode의 LLM-기반 권한 게이트
 - [[deny-and-continue]] — 권한 차단 시 세션을 끊지 않는 UX 패턴
 - [[ralph-wiggum-method]] — `while :; do cat PROMPT.md | claude-code ; done` 자율 루프 (Geoff Huntley)
-- [[model-context-protocol]] — AI 앱이 외부 시스템에 붙는 오픈 표준 ("USB-C for AI")
+- [[model-context-protocol]] — AI 앱이 외부 시스템에 붙는 오픈 표준 ("USB-C for AI") · 서버가 **가드레일의 자리**가 된 첫 사례 [[mcp-toolbox-for-databases]] (sources: 6)
 - [[llm-wiki-pattern]] — LLM이 점진적으로 유지하는 마크다운 지식 베이스 패턴. 조직판=[[company-brain]], 자동 파이프라인=[[sweeper-agent]], 실패=영구 오염 (sources: 5)
 - [[code-knowledge-graph]] — 코드·문서를 노드·엣지 그래프로 만들어 *보며* 이해하는 패턴 (sources: 2)
 - [[ai-vulnerability-discovery]] — LLM으로 코드베이스에서 보안 취약점을 발견·exploit 검증하는 패턴 (sources: 1)
@@ -228,7 +235,7 @@ updated: 2026-09-10
 - [[intent-md]] — 에이전트가 사람을 인터뷰해 만드는 요구사항 이전 아티팩트. 백로그·인계를 대체 (sources: 1)
 - [[training-time-risk]] — 위험의 무게중심이 **배포→훈련**으로. safety case가 프론티어 RL 실행을 게이트, 실행/감시 컴퓨팅 분리, IPO 연기 근거 (OpenAI, sources: 2)
 - [[agent-action-record]] — 모든 앱의 에이전트 행동을 한 곳에 로깅하면 **기억·신뢰·스킬**이 동시에 나온다. 세 층위(도구/회사/개인) (sources: 1)
-- [[agent-governance-layers]] — 경계를 **에이전트 바깥**에 둔다. ①결정론적 접근 제어 ②자연어 정책. 프롬프트는 **compaction으로 날아간다** (sources: 1) ⚠️ 정책 해석기의 취약성 미논의
+- [[agent-governance-layers]] — 경계를 **에이전트 바깥**에 둔다. ①결정론적 접근 제어 ②자연어 정책. 프롬프트는 **compaction으로 날아간다**. 벽의 **네 자리**(Composio 접근+정책 / PromptQL 프록시 / Greze 출구 / **Google Cloud 도구 정의 YAML**) (sources: 4) ⚠️ 정책 해석기의 취약성 미논의
 - [[system-level-quality]] — 리뷰 단위가 파일에서 **시스템**으로. *"이 함수가 올바른가"* 대신 *"플랫폼 전체에 어떤 영향인가"* (IBM, sources: 1)
 - [[executable-standards]] — 표준은 **문서가 아니라 개발 프로세스에** 산다. 올바른 길이 가장 쉬운 길이 되게 (IBM, sources: 1)
 - [[cloud-agent-delegation]] — 원격 VM의 자율 에이전트. **티켓당 별도 PR** + 자기 마우스로 UI를 조작한 **검증 비디오** (Cursor, sources: 1) ⚠️ 작성자=검증자
@@ -240,13 +247,17 @@ updated: 2026-09-10
 - [[agent-knowledge-sourcing]] — 학습 데이터 밖 지식을 **어느 경로로 줄 것인가**의 4갈래 라우팅(적어둔 것=RAG / 겪은 것=메모리 / 절차=스킬 / 바깥 조회=MCP). 위키 첫 **설계 시점** 결정표 (sources: 1)
 - [[agent-memory]] — 에이전트가 **스스로 겪고 저장한** 경험. RAG와 달리 **읽고 쓴다**. 값진 순간은 **문서가 틀렸을 때** (sources: 3) ⚠️ 무효화·틀린 기억 처리 없음
 - [[company-brain]] — 조직의 공유 컨텍스트를 **서로 링크하는 마크다운 + 접근 제어**로 **코딩 에이전트**에게. 만들지 말고 **키워라**, 건강 지표=**일일 업데이트 수**. [[llm-wiki-pattern]]의 조직판(스코프·사람 이름) (sources: 2) ⚠️ 당사자
-- [[no-silent-write]] — 에이전트는 **스코프와 함께 제안**만, 사람이 수락·거부. GitHub PR과 YOLO 자동 메모리 사이의 스위트 스폿. 두 소스가 독립적으로 같은 패턴 — 그리고 다음 단계(LLM 정책 집행)에서 갈린다 (sources: 2)
+- [[no-silent-write]] — 에이전트는 **스코프와 함께 제안**만, 사람이 수락·거부. GitHub PR과 YOLO 자동 메모리 사이의 스위트 스폿. 두 소스가 독립적으로 같은 패턴 — 그리고 다음 단계(LLM 정책 집행)에서 갈린다 · 도구 층의 읽기/쓰기 분리 (sources: 3)
 - [[named-human-accountability]] — **모든 변경에 사람 이름**, *"Claude가 추가했다"* 금지. 신뢰가 아니라 **사고 뒤 귀속**. 위키에는 테스트가 없어 [[behavior-validated-trust]]가 닿지 않는 자리 (sources: 1)
-- [[credential-injection-outside-sandbox]] — 샌드박스에 자격증명 없음, **HTTP/SQL 프록시에서 사용자 자격증명 주입**. 읽기도 쓰기도 그 사람으로. [[anthropic-managed-agents]]와 같은 처방, 이유는 **권한 상승** (sources: 2)
+- [[credential-injection-outside-sandbox]] — 샌드박스에 자격증명 없음, **HTTP/SQL 프록시에서 사용자 자격증명 주입**. 읽기도 쓰기도 그 사람으로. [[anthropic-managed-agents]]와 같은 처방, 이유는 **권한 상승**. 셋째 자리=도구 파라미터 [[bound-parameters]] (sources: 3)
 - [[multiplayer-agent-context]] — 여러 사람이 **한 에이전트**를 공유 컨텍스트로, 서로 다른 권한으로. **지식은 논쟁에서 나온다**(SRE 사례). 대가는 권한 상승. [[persistent-agent-teams]]의 거울상 (sources: 1)
 - [[sweeper-agent]] — 각 비공개 사일로 안의 AI가 정책에 따라 **하루의 끝에** 공유 공간으로 옮긴다. *"AI가 자동으로 만드는 위키"* = 즉각적 ROI 베팅. 실패: 인젝션 전파·영구 오염 (sources: 1)
 - [[black-box-agent-approach]] — 트레이스 비접근 LLM이 **모든 사일로를 읽고**, **쓰기 직전에 정보 소유자에게만** 승인. 벽을 입구→출구로. 진짜 블랙박스일 수 없다(감사) (sources: 1)
 - [[privacy-auto-mode]] — 정보 공개 판단을 사람 승인→LLM으로, **민감도 낮은 영역부터**, 모델 용량과 함께 확장. [[anthropic-claude-code-auto-mode]]의 유비. 정책 해석기의 취약성 미해결 (sources: 2)
+- [[build-time-vs-runtime-tools]] — 개발자 보조 도구(제어 평면·NL→SQL, **사람 필수**)와 최종 사용자 앱 도구(미리 정의한 SQL)는 다르다. 전자를 프로덕션에 두면 **오류 만난 에이전트가 테이블을 지우고 새로 만든다** (Google Cloud, sources: 1) ⚠️ 실제 사고인지 데모인지 미확정
+- [[agent-identity-separation]] — 사용자·애플리케이션(워크로드)·**에이전트** 세 신원, 에이전트는 최종 사용자가 필요한 데이터에만. 도구 입력은 **에이전트 파라미터(신뢰 불가) vs 애플리케이션 파라미터(사실적 제약)** (sources: 1)
+- [[secure-tool-evolution]] — 에이전트가 슈퍼유저인 도구에서 **한 단계마다 통제 범위를 뺀다**: source 프리미티브→읽기 전용(드라이버까지)→허용 데이터셋→출력 크기→고정 SQL(prepared statement)→신원 바인딩 → 날짜 하나만 받는 도구. 벽이 **YAML**에 산다 (sources: 1)
+- [[agent-tool-design-practices]] — 결과 중심(원자적 REST 아님)·설명은 안내·**읽기/쓰기 분리**(읽기 자동 승인, 쓰기 확인)·**조치 가능한 오류**(404 대신 재시도 가능)·평면 입력 (Google Cloud, sources: 1) ⚠️ 측정치 없음
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -372,12 +383,14 @@ updated: 2026-09-10
 
 - [[tech-bridge-company-brain-security]] — Tanmai Gopal (PromptQL/Hasura): 회사 두뇌=**마크다운 공유 컨텍스트+접근 제어→코딩 에이전트**, 만들지 말고 **키워라**, 건강=**일일 업데이트 수 우상향**(자사 2개월), 세 선택지(GitHub 스킬은 아무도 안 씀·팀 메모리는 사일로·**전사 단일 위키**), **자동 추가 금지·사람 이름**, 지식은 **논쟁**에서, **샌드박스에 자격증명 없음·프록시 주입** ([[tech-bridge]], 2026-09-09, **25:56**, ⚠️ 당사자 · 제목의 은행 사례 본문에 없음 · ko가 *company brain*을 "기업가적 사고방식"으로)
 - [[tech-bridge-agent-to-agent-as-search]] — Jean-Denis Greze (Town, 전 Plaid CTO): A2A는 **검색 문제**, 이상=단일 전지 에이전트·코즈 정리, 다섯 전략(신뢰 경계·커스텀 도구·**공유 사일로+청소부 AI**·사람 통로·**블랙박스**), 판정 기준 두 질문, 실패(인젝션·**영구 오염** Apex/Ivy·오공개·감사), **프런티어는 auto**·민감도 낮은 영역부터, 투자은행 간 확장 ([[tech-bridge]], 2026-09-09, **20:48**, ⚠️ 당사자 · 수치 없음 · ko가 LLM 약어 확장 4종 창작)
+
+- [[tech-bridge-build-time-vs-runtime-tools]] — Averi Kitsch · Prerna Kakkar (Google Cloud 데이터베이스): **빌드타임**(제어 평면·NL→SQL, 사람 필수) vs **런타임**(고정 SQL) 도구, 테이블 삭제 사례, *"DB는 에이전트만큼만 안전"*, [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]], 세 신원, 슈퍼유저→제로 트러스트 사다리, 바운드/인증 파라미터(JWT 클레임), 도구 설계 5규칙 ([[tech-bridge]], 2026-09-10, **19:57**, ⚠️ 당사자 · **데모 미실행** · 설명란이 본문보다 강함 · ko 주어 치환 1건)
 ---
 
 ## 통계
 
-- 총 페이지 수: 340 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 324 → 340, + 2026-09-10 Tech Bridge 2편: source 2 + concept 9 + entity 5)
+- 총 페이지 수: 352 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 340 → 352, + 2026-09-11 Tech Bridge 1편: source 1 + concept 7 + entity 4)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-10 (Tech Bridge **2편**, 이레 연속 — 09-09 업로드분. **두 편이 서로 모른 채 같은 패턴에서 만나고 다음 단계에서 갈린다**: [[tech-bridge-company-brain-security|PromptQL]]과 [[tech-bridge-agent-to-agent-as-search|Greze]] 둘 다 *조직의 비공개 지식을 공유 공간으로 옮기되 에이전트는 제안만 하고 사람이 승인* 한다([[no-silent-write]]) — 그런데 한쪽은 그것을 물러서지 말 규칙으로, 다른 쪽은 지금 단계로 놓고 LLM이 정책을 집행하는 [[privacy-auto-mode|다음 단계]]를 예고한다. 접근 제어의 벽도 반대 — 입구([[credential-injection-outside-sandbox]]) vs 출구([[black-box-agent-approach]]). 이 위키의 [[llm-wiki-pattern]]이 처음으로 **조직 규모 인스턴스**([[company-brain]], 5,000페이지·스코프·사람 이름)와 **실패 형태**(영구 오염)를 얻었다)
+- 마지막 ingest: 2026-09-11 (Tech Bridge **1편**, 여드레 연속 — 09-10 업로드분. **위키의 보안 축이 처음으로 데이터베이스에 닿았다**: [[tech-bridge-build-time-vs-runtime-tools|Google Cloud 편]]이 [[prompt-injection]]에 **성립 조건**([[lethal-trifecta]])과 [[confused-deputy-attack|혼동된 대리인]]을, [[agent-governance-layers]]에 **네 번째 벽의 자리**(도구 정의 YAML — [[secure-tool-evolution]]), [[credential-injection-outside-sandbox]]에 **세 번째 소스**(도구 파라미터 바인딩 — [[bound-parameters]])를 줬다. 도구를 **누가 어느 단계에서 쓰는가**로 가르는 [[build-time-vs-runtime-tools]]가 새 축. ⚠️ 데모 미실행·설명란이 본문보다 강함·ko 주어 치환)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-10
+- 마지막 갱신: 2026-09-11

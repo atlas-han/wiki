@@ -4,10 +4,10 @@ type: engineering
 category: system
 tags: [agent, distributed-systems, reliability, idempotency, observability, safety]
 created: 2026-09-02
-updated: 2026-09-02
-related: [agent-harness-design, verifiable-goals, context-engineering, agentic-misbehavior, managed-agents, token-roles]
+updated: 2026-09-11
+related: [agent-harness-design, verifiable-goals, context-engineering, agentic-misbehavior, managed-agents, token-roles, agent-identity-separation]
 first-seen: tech-bridge-agents-as-distributed-systems
-sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform-agent-era]
+sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform-agent-era, tech-bridge-build-time-vs-runtime-tools]
 ---
 
 # Agent Distributed Systems
@@ -131,7 +131,12 @@ sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform
 - [[context-engineering]] · [[context-resets-and-compaction]] — 컨텍스트를 크기로 볼 때 / 상태로 볼 때
 - [[prompt-injection]] — "악의적인 입력"이 제거되지 않는 이유의 한 갈래
 
+## 최소 권한의 구체적 형태 — 세 신원 (2026-09-11)
+
+이 페이지가 *scoped 권한·최소 권한* 으로 언급한 것을 [[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])가 **사용자·애플리케이션·에이전트 세 신원**으로 구체화한다 — *"애플리케이션은 무슨 행동을 할지 정확히 알았으니 넓은 권한이 괜찮았지만, 에이전트는 그렇지 않다"*. 이 페이지의 *호출자가 비결정론적* 이라는 진단의 보안 판이다. → [[agent-identity-separation]] · [[confused-deputy-attack]]. 그리고 *조치 가능한 오류*([[agent-tool-design-practices]])는 이 페이지의 *"타임아웃은 실패가 아니라 알 수 없음"* 과 같은 요구다 — 에이전트가 오류의 **종류**를 구분해야 재시도·보상·중단을 고른다.
+
 ## References
 
 - [[tech-bridge-agents-as-distributed-systems]] — [[salman-munaf]] ([[tiktok]]), 2026-09-02
 - [[tech-bridge-claude-platform-agent-era]] — Anthropic Claude Platform 팀, 2026-09-01
+- [[tech-bridge-build-time-vs-runtime-tools]] — 세 신원 = 최소 권한의 구체적 형태 (2026-09-11)

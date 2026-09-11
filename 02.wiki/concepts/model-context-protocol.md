@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
-related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills]
+related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-11
 ---
 
 # Model Context Protocol (MCP)
@@ -92,6 +92,16 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 
 > ⚠️ 시연 중 **Statsig MCP 연결에 실패**해 Datadog으로 대체했다. 플러그인 목록에 있다고 항상 연결되는 것은 아니다.
 
+## MCP 서버가 가드레일의 자리 — MCP Toolbox for Databases (2026-09-11)
+
+[[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])는 이 페이지가 지금까지 *연결 표준* 으로 다룬 MCP를 **보안 경계가 사는 자리**로 쓴다. [[mcp-toolbox-for-databases|MCP Toolbox for Databases]](오픈소스 데이터베이스 MCP 서버, 자기 진술로 별 15.7k·DB 40+)의 **YAML 설정**에 [[secure-tool-evolution|안전한 도구의 진화]] 전부가 들어간다 — 연결 정보(source), 읽기 전용(드라이버 수준), 허용 데이터셋, 출력 크기, 고정 SQL(prepared statement), 사용자 신원 바인딩([[bound-parameters]]).
+
+[[anthropic-managed-agents]]의 *MCP + vault + 프록시* 가 **토큰**을 서버 쪽에 격리했다면, Toolbox는 **연결·SQL·신원**을 격리한다. 두 사례 모두 *"에이전트가 무엇을 믿든 서버 설정이 허용하는 것만 된다"* 는 형태이고, [[agent-governance-layers]]의 벽이 MCP 서버에 놓인 것이다.
+
+같은 소스에서 나온 사실 몇 가지: 호스팅 버전 **Google managed MCP**(관리형 MCP + Toolbox 합산 **월 도구 호출 2천만 건**, 자기 진술) · 연결 대상으로 *"에이전트·IDE·**하네스**"* — Gemini CLI, Antigravity, *"Cloud Code"*(Google Cloud Code인지 [[claude-code|Claude Code]]인지 **판정 불가**) · 그리고 도구 설명·읽기/쓰기 분리·조치 가능한 오류 등 [[agent-tool-design-practices|도구 설계 다섯 규칙]].
+
+[[tech-bridge-agent-knowledge-four-ways|IBM 편]]이 MCP를 *"바깥에서 실제로 조회해야 하는 것"* 에 배정했는데, 이 소스는 그 조회가 **어떻게 안전해지는가**를 데이터베이스에서 보여준다. 그리고 *하네스* 라는 말이 Google 엔지니어의 입에서 에이전트·IDE와 나란히 쓰이는 것은 [[agent-harness-design]]이 적어 둔 용어 확산의 한 관측이다.
+
 ## References
 
 - [[anthropic-harness-design-long-running-apps]]
@@ -99,3 +109,4 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 - [[playwright-mcp]]
 - [공식 사이트 modelcontextprotocol.io](https://modelcontextprotocol.io/introduction)
 - [[tech-bridge-agent-knowledge-four-ways]] — 스킬과의 분업 · [[agent-knowledge-sourcing]]
+- [[tech-bridge-build-time-vs-runtime-tools]] — MCP 서버가 가드레일의 자리 · [[mcp-toolbox-for-databases]] (2026-09-11)
