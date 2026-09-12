@@ -8,9 +8,9 @@ links:
   - https://x.com/dhh
   - https://world.hey.com/dhh
   - https://omarchy.org
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-08-31
-updated: 2026-09-02
+updated: 2026-09-12
 ---
 
 # DHH
@@ -35,6 +35,15 @@ ASR "Amachi"/"Amacha"는 Omarchy로 통일.
 그쪽이 남는다고 본 것은 더 좁은 두 가지다 — **아직 일어나지 않은 일**에 대한 판단(데이터가 없음)과 **모델이 관찰할 수 없는 관계**에 내재된 판단.
 
 > ⚠️ 두 소스는 서로를 참조하지 않는다. 이 위키가 나란히 놓은 것이고, 어느 쪽이 옳은지는 해소되지 않은 채 둔다. 다만 대비가 유용하다 — DHH는 taste를 *희소한 인간 능력*으로, Hall은 *학습 가능한 선호도*로 놓고, 실제 차이는 "taste"라는 말이 가리키는 범위(넓은 심미안 vs 좁은 상황 판단)에 있을 수 있다. → [[signal-layer]]
+
+### 네 입장이 됐다 (2026-09-12)
+
+2026-09-11 업로드 두 편이 이 논쟁에 두 입장을 더했다 → [[taste-vs-judgment]].
+
+- [[thais-castello-branco]]([[tech-bridge-taste-labs-measuring-slop]]): *"'취향'이라는 말은 쓰고 싶지도 않다 — **판단**이다."* Hall과 같은 단어 선택. 단 팔레트·대비·정렬처럼 **분해하면 결정론적인 조각**은 모델에 훈련한다.
+- [[paul-bakaus]]([[tech-bridge-impeccable-design-steering]]): 취향은 **증폭될 수 있지만 배양될 수 없다** — *"맥락적, 문화적, 희소. 모두가 복제하면 취향이 아니다."* DHH의 *희소한 인간 능력* 에 가장 가깝되, 희소성을 **취향의 정의**에 넣는다.
+
+넷이 수렴하는 지점 — 추론 시점에 **사람의 결정이 남는다.** 이름만 다르다(취향/판단/판단/조향).
 
 ## References
 

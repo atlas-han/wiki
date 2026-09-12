@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-07-21
+updated: 2026-09-12
 ---
 
 # Claude Code
@@ -63,6 +63,11 @@ Claude Code 팀 엔지니어 3인이 자기 도구를 어떻게 쓰는지 증언
 > Claude Code는 프로젝트 내의 `CLAUDE.md`와 **그 상위 폴더에 있는 모든 `CLAUDE.md`를 읽습니다.**
 
 [[ai-labs]]가 이 성질로 **중간 스코프**를 만든다 — 모든 프로젝트를 담는 "개발자 폴더" 하나에 `CLAUDE.md`를 두어 공통 규칙을 상속시키되, *"컴퓨터의 **다른 부분에서 실행되는 관련 없는 세션에는 적용되지 않도록**"* 한다. 전역(`~/.claude`)과 프로젝트별 사이의 빈자리를 디렉터리 계층으로 메운 것이다. → [[llm-coding-guidelines]]
+
+## 디자인 스킬의 호스트, 그리고 "Claude 베이지" (2026-09-12 · [[tech-bridge-impeccable-design-steering]])
+
+- [[impeccable|Impeccable]](디자인 스킬)이 *"모든 하네스에서 동작"* 하는 목록의 첫 자리 — Claude Code, GitHub Copilot, [[cursor]], [[codex]]. ASR은 *"cloud code"* 였으나 하네스 목록 문맥이라 **Claude Code로 확정**(09-11 Google Cloud 편의 *"Cloud Code"* 판정 불가와 다른 처리).
+- [[paul-bakaus]]가 지금의 [[ai-slop|슬롭]]을 **"Claude 베이지"**(Instrument Serif·이탤릭)라 부른다 — *"꼭 나쁜 디자인은 아니다, 그냥 전부 그렇게 생겼을 뿐."* 그리고 섹션 번호를 *"GPT가 아주 좋아하고 Claude도 좋아하는"* 흔적으로 든다. ⚠️ 이 관찰의 대상은 *"Claw Design"*(Claude Design 추정)의 기본 출력이며 Claude Code 자체의 평가는 아니다.
 
 ## References
 

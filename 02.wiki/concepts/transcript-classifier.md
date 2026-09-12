@@ -3,11 +3,11 @@ title: Transcript Classifier
 type: concept
 category: pattern
 tags: [agent-safety, classifier, claude-code, llm-as-judge]
-related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode]
+related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode, slop-probes]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop]
 created: 2026-05-25
-updated: 2026-09-10
+updated: 2026-09-12
 ---
 
 # Transcript Classifier
@@ -71,6 +71,18 @@ Stage 2는 stage 1과 거의 동일한 prompt를 받으므로 **prompt cache hit
 ## 같은 구조를 정보 공개에 — 그리고 빠진 것 (2026-09-10)
 
 [[tech-bridge-agent-to-agent-as-search]]가 auto mode를 **유비의 원본**으로 쓴다 — *"코딩에서 우리는 모든 걸 승인하다가, YOLO가 됐다가, 이제 Anthropic이 auto mode를 내려줬다. 사일로를 가로지르는 A2A도 같을 것."* → [[privacy-auto-mode]]. 다만 이 분류기의 핵심 설계(**reasoning-blind** — 도구 결과를 보지 않아 인젝션에 직접 속지 않는다)에 대응하는 것이 프라이버시 쪽 제안에는 **없다.** 정보 공개의 위험을 판정하는 LLM은 그 정보 자체를 봐야 하므로 이 구조를 그대로 옮길 수 없다. 소스는 이 차이를 다루지 않는다.
+
+## 산출물 품질 게이트로서의 소형 분류기 — 대비 (2026-09-12)
+
+[[tech-bridge-taste-labs-measuring-slop]]의 [[slop-probes|프로브]]는 이 분류기와 **같은 위치**(출시 전 게이트)에 **다른 대상**으로 선다.
+
+| | 이 분류기 | 프로브 |
+|---|---|---|
+| 막는 것 | 행동의 **위험** ([[agentic-misbehavior]]) | 산출물의 **슬롭** ([[ai-slop]]) |
+| 판정기 | **LLM** (Sonnet 4.6), 2단계 | **소형 단일 특징 분류기 앙상블** — *"LLM-as-a-judge보다 낫다"* (⚠️ 수치 없음) |
+| 입력 | 사용자 메시지 + tool call (reasoning-blind) | 산출물의 특징 (색·타이포·레이아웃·대상) |
+
+프로브가 LLM을 쓰지 않는 이유는 소스에 없다. 다만 reasoning-blind가 인젝션을 구조적으로 피하듯, **비-LLM 분류기는 산출물 안의 텍스트에 설득되지 않는다**는 이점이 있을 수 있다 — ⚠️ 위키의 추정이며 소스는 말하지 않는다.
 
 ## References
 

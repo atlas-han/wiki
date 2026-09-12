@@ -517,5 +517,21 @@
   "02.wiki/entities/google-cloud.md": "LiBuilding",
   "02.wiki/entities/averi-kitsch.md": "LiUser",
   "02.wiki/entities/prerna-kakkar.md": "LiUser",
-  "02.wiki/entities/mcp-toolbox-for-databases.md": "LiWrench"
+  "02.wiki/entities/mcp-toolbox-for-databases.md": "LiWrench",
+  "01.raw/articles/2026-09-11_AI에게 디자인 안목을 훈련시키는 방법입니다.md": "LiNewspaper",
+  "01.raw/articles/2026-09-11_왜 AI 디자인은 원샷으로 안 될까요.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-taste-labs-measuring-slop.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-impeccable-design-steering.md": "LiVideo",
+  "02.wiki/concepts/ai-slop.md": "LiAlertTriangle",
+  "02.wiki/concepts/slop-probes.md": "LiSearch",
+  "02.wiki/concepts/taste-vs-judgment.md": "LiBrain",
+  "02.wiki/concepts/intentional-out-of-distribution.md": "LiLightbulb",
+  "02.wiki/concepts/structured-brand-context.md": "LiTag",
+  "02.wiki/concepts/adjective-verb-steering.md": "LiPuzzle",
+  "02.wiki/concepts/steering-altitude.md": "LiLayers",
+  "02.wiki/concepts/no-one-shot-design.md": "LiRepeat",
+  "02.wiki/entities/thais-castello-branco.md": "LiUser",
+  "02.wiki/entities/paul-bakaus.md": "LiUser",
+  "02.wiki/entities/taste-labs.md": "LiBuilding",
+  "02.wiki/entities/impeccable.md": "LiWrench"
 }

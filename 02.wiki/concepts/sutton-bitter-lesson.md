@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
-related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode]
+related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode, ai-slop, taste-vs-judgment]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-05-25
-updated: 2026-09-10
+updated: 2026-09-12
 ---
 
 # The Bitter Lesson
@@ -160,6 +160,17 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 그리고 결론에서 같은 기준을 처방으로 뒤집는다 — *"auto의 멋진 점은, 시스템을 그렇게 설계하면 **모델 용량과 함께 확장된다**는 겁니다. (…) LLM이 판단해도 괜찮은 민감도 낮은 영역을 정의하고 그것을 받아들이세요. 그러면 시간이 지나며 마법처럼 그 영역이 커집니다."* → [[privacy-auto-mode]]
 
 이 위키가 이 레슨을 적용해 온 자리([[agent-harness-design]]의 *하니스 컴포넌트가 dead weight가 된다*, [[brain-hands-decoupling]])는 모두 **모델 주변의 코드**였다. Greze는 그것을 **조직의 정보 접근 구조**(사람이 생각해 만든 신뢰 경계·커스텀 도구는 모델이 좋아져도 좋아지지 않는다)에 적용한 첫 사례다. ⚠️ 위 범위 한정(*채점기가 있는 곳에서만*)이 여기에도 걸린다 — 프라이버시 판단에는 채점기가 없고, 화자 자신도 *"그 미래를 신뢰하는가? 잘 모르겠다"* 고 유보한다. → [[agent-collaboration-as-search]]
+
+## 추론 시점의 상호작용 — 다섯 번째 축 (2026-09-12)
+
+2026-09-11 업로드 두 편이 위 "다른 형태의 반례들" 표에 한 축을 더한다.
+
+| 소스 | 축 | 논증 |
+|---|---|---|
+| [[tech-bridge-taste-labs-measuring-slop]] ([[taste-labs]]) | **추론 시점의 사용자 상호작용** | *"모델 층에서 슬롭과 싸우는 것은 반드시 풀어야 한다. 하지만 **추론 시간의 문제가 똑같이, 어쩌면 더 중요**하다 — 그때가 최종 사용자와 상호작용하는 순간이고 맥락과 의도의 주고받음이 거기서 일어난다. **모델만 더 좋게 만들고 이걸 무시하면 슬롭은 계속 존재할 것.**"* |
+| [[tech-bridge-impeccable-design-steering]] ([[paul-bakaus]]) | **희소성의 정의** | 취향은 *"맥락적·문화적·희소 — 모두가 같은 것을 복제하면 더 이상 취향이 아니다."* 스케일이 선호를 배울 수 있어도 **배우는 순간 그것은 차별화가 아니게 된다** — 학습 가능 여부와 무관한 반례 |
+
+첫 번째는 **범위 한정**이지 반례가 아니다 — 화자가 모델 층 개선을 인정한다. [[signal-layer]]의 *채점기가 없는 곳* 과 같은 계열이되, 위치가 *검증 가능성* 이 아니라 **상호작용 시점**이다. 두 번째는 [[signal-layer]]의 *"넓은 취향은 차별화 요소가 아니다"* 를 뒤집어 같은 곳에 닿는다. → [[taste-vs-judgment]] · [[ai-slop]]
 
 ## References
 

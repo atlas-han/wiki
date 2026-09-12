@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-11
+updated: 2026-09-12
 ---
 
 # Log
@@ -1007,3 +1007,48 @@ PromptQL 편 앵커 셋(Claude Tag *"며칠 전 출시"* · 현재 모델 *Opus 
 ### 해소하지 않고 표시만 한 것
 
 테이블 삭제의 실체(실제/데모, 일시, 규모) · 데모 동작(속지 않는다는 예고만) · eval bench 내용(페이지 미생성) · "Cloud Code" · 데모 앱 이름(*Cymbal* 추정) · "fully modeled control tool"(*model-controlled* 로 읽음, 추정) · 프레임워크 이름("by denting AI" → Pydantic AI 추정) · 비용·지연 수치 · JWT 발급·수명·위임 · 대안 부재(자사 도구 없는 세계 vs 있는 세계) · Willison 원문 미확보(전언).
+
+## [2026-09-12] ingest | Tech Bridge 2편 — AI 슬롭을 측정하다(Taste Labs) · 디자인은 원샷할 수 없다(Impeccable)
+
+2026-09-11 업로드분. `--playlist-end 15`가 **15편 반환**, 신규 2편, 나머지 13편은 기존. 롱폼만(최단 538초), Shorts 없음. ko·en-orig 전부 확보, **429 없음.** yt-dlp 목록·자막 모두 1분 안에 완료. launchd 정시 발화(09:10 KST, 실제 시작 09:10:27), `run-ingest.sh`(pid 97843) 자식 세션. `runs=2`.
+
+| 소스 | 길이 | 화자 | 성격 |
+|---|---|---|---|
+| [[tech-bridge-taste-labs-measuring-slop]] | 14:34 | [[thais-castello-branco]] ([[taste-labs]] 창업자) | 컨퍼런스 단독 발표 ⚠️ 당사자(평가·데이터 공급자, Brand API 판매자) · **수치 전무** · 행사·촬영 시점 미확정 |
+| [[tech-bridge-impeccable-design-steering]] | 15:30 | [[paul-bakaus]] ([[impeccable]] 제작자) | 컨퍼런스 단독 발표 ⚠️ 당사자(도구 제작자) · 슬라이드 시연 · **촬영 2026년 화자 발화로 확정** · 행사 미확정 |
+
+**채널 첫 디자인·취향 축.** 같은 행사·앞뒤 순서일 가능성(Paul의 *"다음 발표자들"* 예고)이 있으나 두 설명란 모두 행사명이 없어 09-07 절차대로 **별개로 취급**, [[taste-vs-judgment]]에 나란히 뒀다.
+
+### 신규 (14페이지)
+
+- **source 2** — 위 표.
+- **concept 8** — [[ai-slop]] · [[slop-probes]] · [[taste-vs-judgment]] · [[intentional-out-of-distribution]] · [[structured-brand-context]] · [[adjective-verb-steering]] · [[steering-altitude]] · [[no-one-shot-design]].
+- **entity 4** — [[thais-castello-branco]] · [[taste-labs]] · [[paul-bakaus]] · [[impeccable]].
+
+### 기존 보강 (15페이지)
+
+[[signal-layer]](수렴 기계의 측정 · 취향/판단 같은 단어 선택 · 채점기 경계선 **세 번째 이동**(프로브) · **경계선이 위임 고도를 정한다**) · [[generator-evaluator-pattern]](**LLM이 아닌 평가자** · **기준이 낡는다**(purple gradients → Claude 베이지) · 평가 기준을 생성자 안에 넣은 경우 · 사람-에이전트 멀티샷) · [[agent-skills]](**어휘를 담는 스킬** · portable 실증 · 자동화를 거부하는 첫 스킬) · [[multimodal-elicitation]](공통 언어의 두 공급 방식 표) · [[fuzzy-intent-discovery]](디자인의 articulation gap — 낮은 의도 · 네 질문) · [[decision-quality]](디자인 판 — *"아무도 결정하지 않았다"* · 측정 방법 부재 반복) · [[transcript-classifier]](산출물 품질 게이트와의 대비 표) · [[verifiable-goals]](주관 영역에 verifier — 분해 / 사람 verifier 문장) · [[agentic-sites]](브랜드 준수의 다른 형태 — 코퍼스 vs 구조) · [[dhh]](네 입장) · [[sutton-bitter-lesson]](다섯 번째 축 — 추론 시점 상호작용 · 희소성의 정의) · [[skill-self-improvement]](승격 게이트가 커뮤니티일 때) · [[figma]](디자인 도구로서의 Figma — 고도가 너무 낮음) · [[claude-code]](디자인 스킬 호스트 · *Claude 베이지* · ASR "cloud code" 확정) · [[tech-bridge]](frontmatter sources 32→37 — 신규 2 + **09-09 3편이 frontmatter에 빠져 있던 것 보충**(References에는 있었음), 새 주의사항 11건).
+
+`index.md`(실측 **352→366**), `overview.md`(현재 상태 문단 + 진화 로그), `log.md`.
+
+### 핵심 합성
+
+**두 소스는 서로 모르고 취향에 대해 반대 방향인데 같은 두 지점에서 만난다.** Taste Labs는 *안목을 모델에 훈련시키는* 회사이고 Paul은 *"취향은 실험실에서 배양될 수 없다"* 고 하지만 — ① 둘 다 슬롭을 *품질이 낮은 것* 이 아니라 **의도·결정의 부재**로 정의하고(Thais의 *낮은 의도* = Paul의 *"아무도 아무것도 결정하지 않았다"*), ② 둘 다 **추론 시점에 사람의 판단·조향이 남는다**고 한다(Thais: *"모델만 좋아져도 슬롭은 남는다"* / Paul: *"auto는 없다"*). 그래서 [[dhh]]·[[lena-hall]]·Thais·Paul 네 입장은 취향의 **학습 가능성**에서 갈리되 **사람의 자리**에서 수렴한다 — 그리고 갈림의 실체는 *taste* 라는 말의 **범위**(분해 가능한 조각 / 넓은 선호 / 미학 / 아직 없는 일 / 희소성 자체)다. 위키가 두 소스를 합쳐 얻은 정리 하나: [[signal-layer]]의 **채점기 경계선이 위임 고도를 정한다** — 코드는 산출물 검증이 있어 [[goal-level-delegation|목표 수준]]으로 올라갔고, 디자인은 *"사용자도 의견이 있다"* 라서 사람이 [[steering-altitude|형용사의 고도]]에 남는다. 어느 소스도 이 연결을 말하지 않는다.
+
+### 새 주의사항 (상세는 [[tech-bridge]])
+
+- **발표 주제어가 ko에서 여섯 갈래** — *slop* → 오류·허술·음식·음압·기울기·부실. en-orig도 SOP·soop·soft. 주제어는 두 트랙 모두 여러 표기로 grep.
+- **통계 용어 → 물류 용어** — *out of distribution* → "유통". 핵심 처방(창의성 API)이 자막에서 사라짐.
+- **약어 확장 창작 네 번째** — *LLM-as-a-judge* → "법학 석사 심사".
+- **결론 슬라이드 오역 재발** — *"There is no auto"* → "자동차는 없고"(09-10 *auto*→자동차 산업과 같은 단어).
+- **하네스가 사라짐** — *coding harness* → "코딩 실력"(09-06 "배선"과 다른 방향).
+- **외국어 용어 이중 오인식** — *Leitwort* → "light wart" → "가벼운 사마귀". 화자가 언어를 명시하면 그 언어로 검색.
+- **화자의 자기 정정이 ko에서 소실** — *cannot* → *can be amplified*. 핵심 문장 직후 "uh so"는 정정 신호.
+- **제품명이 형용사로** — *Impeccable* → "흠잡을 데 없는", 한 문장 뜻이 바뀜.
+- **촬영 연도가 화자 발화로 확정된 첫 사례** — *"2026년 버전의 AI 슬롭"*.
+- **"Claw Design" 하루 두 소스** — Claude Design 추정, 확정 안 함. 세 번째 소스에서 누락 개체 판단.
+- **ko가 없던 의미 부여** — *extra high* → "고화질 설정".
+
+### 해소하지 않고 표시만 한 것
+
+Taste Labs 편 — 200만 사이트·프로브·LLM-as-a-judge 비교의 **모든 수치**, 프로브 갱신 주기, Brand API 출력 형식·검증 주체, 창의성 API 실체, "Claw Design"·"General Intelligence Compute of New York" 표기, *"두 가지가 흥미로웠다"* 며 하나만 말한 대목, 행사·촬영 시점. Impeccable 편 — 효과의 정량 근거, *"같은 모델 다른 언어"* 관찰의 표본, 어휘 전체 목록, 자기 점검 문장의 효과(자기 평가 편향), 워크플로 맵 상세, "algorithmic unilo"·"radian shaders", 라이선스, 예고된 Q&A 부재, *"어쩌면 영원히"* 와 *"지금은 좋지 않다"* 의 모호함(원리적 거부인지 능력 판단인지). 두 편의 **같은 행사 여부**.

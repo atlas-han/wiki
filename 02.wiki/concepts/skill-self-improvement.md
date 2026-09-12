@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-12
 ---
 
 # Skill Self-Improvement
@@ -61,6 +61,18 @@ updated: 2026-09-05
 | [[generator-evaluator-pattern]] | 채점기 → **산출물** | 루프 내 |
 
 [[tech-bridge-ai-native-skills]]의 스킬 거버넌스가 *"스킬을 어떻게 승인·배포할 것인가"* 였다면, 이 패턴은 *"승인된 스킬이 어떻게 낡아가고 어떻게 갱신되는가"* 를 다룬다. 둘은 같은 수명주기의 앞뒤다.
+
+## 승격 게이트가 커뮤니티일 때 (2026-09-12)
+
+[[tech-bridge-impeccable-design-steering]]의 [[paul-bakaus]]가 [[impeccable]]의 명령을 이렇게 다듬는다 — *"가끔 확신 없는 명령을 만들어서 **커뮤니티로 테스트**하고, **정착하면** 더 많은 사람이 즐거움을 얻는구나 깨닫는다."* `overdrive`가 그 사례(반농담 → 열광).
+
+위 표에 한 행이 더해진다:
+
+| 패턴 | 무엇이 무엇을 고치는가 | 승격 게이트 |
+|---|---|---|
+| Impeccable 명령 | 제작자 실험 → **스킬의 어휘** | **커뮤니티 반응** |
+
+이 페이지의 *승격은 사람이* 와 같은 원칙이되, 그 사람이 **제작자 한 명이 아니라 사용자들**이고 신호가 *실패 관찰* 이 아니라 *즐거움* 이다. ⚠️ 정착의 기준·기간은 없다.
 
 ## References
 

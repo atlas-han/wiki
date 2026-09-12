@@ -3,11 +3,11 @@ title: Fuzzy Intent Discovery
 type: concept
 category: pattern
 tags: [agent, intent, elicitation, state, information-gain, consumer]
-related: [multimodal-elicitation, adaptive-response-format, context-engineering, generator-evaluator-pattern, verifiable-goals, outcome-engineering, signal-layer, intent-alignment]
+related: [multimodal-elicitation, adaptive-response-format, context-engineering, generator-evaluator-pattern, verifiable-goals, outcome-engineering, signal-layer, intent-alignment, no-one-shot-design, ai-slop]
 first-seen: tech-bridge-multimodal-commerce-agent
-sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-09-04
-updated: 2026-09-06
+updated: 2026-09-12
 ---
 
 # Fuzzy Intent Discovery
@@ -107,6 +107,15 @@ counterfactual sensitivity를 **양방향**으로 재는 것이 정교한 지점
 그리고 그것을 **정렬**의 정의로 삼는다 — *"우리가 정렬에 대해 이야기할 때, 의도를 따르는 것에 대해 이야기하잖아요. 사용자의 의도요."* → [[intent-alignment]]
 
 이 페이지의 처방(working state · information gain 질문 하나)이 *에이전트가 의도를 끌어내는 절차*라면, Altman의 진술은 *모델이 그 절차 없이도 의도를 읽어야 한다*는 요구다. 같은 문제의 두 층 — 하네스 층과 모델 층 — 이고, [[harness-pruning]]대로라면 전자는 후자가 좋아질수록 얇아진다. ⚠️ 그가 근거로 드는 것은 기업 고객의 체감뿐이며 측정치는 없다.
+
+## 디자인에서의 articulation gap (2026-09-12)
+
+2026-09-11 업로드 두 편이 이 개념의 진단을 **디자인**에서 독립적으로 반복한다.
+
+- [[tech-bridge-taste-labs-measuring-slop]] — [[ai-slop|슬롭]]의 세 번째 특징 **낮은 의도(low intent)**: *"많은 사람이 아주 빠르게 프롬프트하며 그냥 원샷하고 싶어 하는 것도 있겠지만, 우리가 만드는 시스템에 **의도 해석(intent interpretation)** 조각이 빠져 있다. 사용자가 자기가 가진 의도를 더 잘 이해하도록 어떻게 도울 것인가."* 이 페이지의 *proactive elicitation* 과 같은 자리.
+- [[tech-bridge-impeccable-design-steering]] — [[paul-bakaus]]의 네 질문: **감정적 영역은? 절대 이래선 안 되는 것은? 레퍼런스는? 대상은?** *"디자인 디렉터가 고개만 끄덕이고 걸어가 버리면 말이 안 된다."* 디자인 의뢰의 discovery 단계이고, 두 번째 질문은 **부정형 제약**(hard constraint의 배제형)이다. → [[no-one-shot-design]]
+
+둘 다 결론이 같다 — 원샷은 *"아무도 아무것도 결정하지 않은"* 산출물을 낳는다. 이 개념이 소비자 상거래에서 세운 *명세를 함께 만들어내는 것이 에이전트의 일* 이 디자인에도 그대로 걸린다.
 
 ## References
 

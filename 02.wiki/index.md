@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-11
+updated: 2026-09-12
 ---
 
 # Index
@@ -61,6 +61,8 @@ updated: 2026-09-11
 - [[jean-denis-greze]] — [[town|Town]] CTO · 전 Plaid CTO 7년 · 전 Dropbox. A2A는 [[agent-collaboration-as-search|검색 문제]], 다섯 전략, [[sweeper-agent|청소부 AI]]·[[black-box-agent-approach|블랙박스]]·[[privacy-auto-mode|프라이버시 auto mode]] ([[tech-bridge-agent-to-agent-as-search]]) ⚠️ 당사자, 수치 없음
 - [[averi-kitsch]] — [[google-cloud|Google Cloud]] 데이터베이스 staff 엔지니어 · [[mcp-toolbox-for-databases|MCP Toolbox for Databases]] 기술 리드. *데이터베이스는 에이전트만큼만 안전하다* — [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]]·[[agent-identity-separation|세 신원]]·[[secure-tool-evolution|도구 진화]]·[[bound-parameters|바운드 파라미터]] ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 당사자(플랫폼 판매자)
 - [[prerna-kakkar]] — Google 시니어 엔지니어 · eval bench(에이전트·MCP·스킬 평가) 기술 리드. [[build-time-vs-runtime-tools|빌드타임 vs 런타임]] 구분, 테이블 삭제 사례, 미실행 데모 해설 ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 성은 설명란 단독
+- [[thais-castello-branco]] — [[taste-labs|Taste Labs]] 창업자. *"훌륭함은 정의하기 어렵지만 슬롭은 쉽다"* · [[ai-slop|슬롭]] 세 특징(반복·적합성 부족·낮은 의도) · [[slop-probes|프로브]] · *"취향이 아니라 판단"* · [[intentional-out-of-distribution|온도가 아니라 규칙 위반]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 당사자 · 수치 없음
+- [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
@@ -94,6 +96,7 @@ updated: 2026-09-11
 - [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
 - [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
 - [[google-cloud]] — Google 클라우드 플랫폼. 위키 두 번째 Google 조직 페이지 · 첫 **클라우드 플랫폼 벤더** — [[mcp-toolbox-for-databases|MCP Toolbox]]·Google managed MCP·Model Armor, 월 도구 호출 2천만(자기 진술) (sources: 1) ⚠️ 당사자
+- [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 
 ### Models
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
@@ -145,6 +148,7 @@ updated: 2026-09-11
 - [[mcp-toolbox-for-databases]] — [[google-cloud|Google Cloud]]의 오픈소스 데이터베이스 MCP 서버(별 15.7k·DB 40+, 자기 진술). **가드레일이 YAML 설정에 산다** — source·읽기 전용 드라이버·허용 데이터셋·출력 크기·고정 SQL·바운드/인증 파라미터 ([[tech-bridge-build-time-vs-runtime-tools]])
 
 ---
+- [[impeccable]] — 코딩 하네스(Claude Code·Copilot·Cursor·Codex)용 **디자인 스킬**. bolder·quieter·distill·polish·denser·harden·overdrive — **단어의 뜻을 스킬이 정의**(bolder=위계·스케일·타이포, 그라데이션 아님), *"믿으면 실패"* 자기 점검, 워크플로 주입 지점, **auto 없음·PR 닫음** ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ## Concepts (LLM/AI)
 
@@ -157,6 +161,8 @@ updated: 2026-09-11
 - [[retrieval-augmented-generation]] — 미리 넣지 않고 **필요할 때 외부 소스에서 관련 조각만**. [[agent-memory|메모리]]와 가르는 축은 검색 기술이 아니라 **출처**(사람이 넣었나) (sources: 4)
 - [[native-multimodal-pretraining]] — 어댑터를 나중에 붙이지 않고 **첫 스텝부터** 텍스트+비전. 기각 근거가 성능이 아니라 **작은 실험이 큰 모델로 안 옮겨간다**는 것 (sources: 1)
 - [[bound-parameters]] — 사용자 신원(PII)을 에이전트가 채우지 않고 **앱 인증값 / 검증된 JWT 클레임을 도구에 직접 바인딩**. 에이전트는 신원을 보지 못한다 — 도구 시그니처에서 신원이 사라진다. [[credential-injection-outside-sandbox]]와 같은 벽, 다른 자리 (sources: 1)
+- [[slop-probes]] — 디자인을 객관화 가능한 특징(색·타이포·레이아웃·대상)으로 마이닝 → **단일 특징 소형 분류기** → 동시 출현 빈도로 슬롭 예측. *LLM-as-a-judge보다 낫다*, 에이전트 출시 전 **게이트** (Taste Labs, sources: 1) ⚠️ 수치 없음
+- [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
@@ -196,6 +202,8 @@ updated: 2026-09-11
 - [[agent-collaboration-as-search]] — **에이전트 대 에이전트는 검색 문제다.** 이상은 세상 모든 정보를 보는 단일 에이전트, 막는 것은 프라이버시(코즈 정리). 멀티 에이전트의 시험=그 근사. 다섯 전략과 판정 기준 두 질문(사람이 줄어드는가/모델이 좋아지면 좋아지는가) (sources: 1)
 - [[confused-deputy-attack]] — 권한 낮은 요청자가 **에이전트의 권한**을 빌려 못 볼 데이터를 얻는다. 트리아지 에이전트 + 티켓 속 급여 DB 지시. *"데이터베이스는 에이전트만큼만 안전"* — 전통 앱은 행동이 고정돼 넓은 권한이 안전했다 (sources: 1)
 - [[lethal-trifecta]] — Simon Willison: **비공개 데이터 + 신뢰 불가 콘텐츠 + 외부 노출 능력**이 동시에 있으면 유출 성립. [[prompt-injection]]의 벡터 목록에 **성립 조건**을 더한다 — 이 위키의 방어들을 세 요소로 정렬 (sources: 1) ⚠️ 원문 미확보, 전언
+- [[ai-slop]] — **반복 · 적합성 부족 · 낮은 의도.** 훌륭함은 정의하기 어렵지만 슬롭은 쉽다(모두가 동의). AI 이전부터의 동질화를 AI가 가속. **움직이는 표적**(보라색 그라데이션 → *Claude 베이지*) · *"아무도 아무것도 결정하지 않은"* (sources: 2) ⚠️ 측정치 없음
+- [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
@@ -258,6 +266,10 @@ updated: 2026-09-11
 - [[agent-identity-separation]] — 사용자·애플리케이션(워크로드)·**에이전트** 세 신원, 에이전트는 최종 사용자가 필요한 데이터에만. 도구 입력은 **에이전트 파라미터(신뢰 불가) vs 애플리케이션 파라미터(사실적 제약)** (sources: 1)
 - [[secure-tool-evolution]] — 에이전트가 슈퍼유저인 도구에서 **한 단계마다 통제 범위를 뺀다**: source 프리미티브→읽기 전용(드라이버까지)→허용 데이터셋→출력 크기→고정 SQL(prepared statement)→신원 바인딩 → 날짜 하나만 받는 도구. 벽이 **YAML**에 산다 (sources: 1)
 - [[agent-tool-design-practices]] — 결과 중심(원자적 REST 아님)·설명은 안내·**읽기/쓰기 분리**(읽기 자동 승인, 쓰기 확인)·**조치 가능한 오류**(404 대신 재시도 가능)·평면 입력 (Google Cloud, sources: 1) ⚠️ 측정치 없음
+- [[structured-brand-context]] — 모호한 브랜드를 **에이전트가 따르고 사람이 대조해 판단할** 구성 요소로 추출(Brand API). 브랜드 없는 사용자에겐 **생성 대신 검색**(브랜드 인덱스). [[agentic-sites]]의 *코퍼스* 와 다른 *구조* 형태 (sources: 2) ⚠️ 당사자·형식 미상
+- [[adjective-verb-steering]] — bolder·quieter·distill·polish·denser·harden으로 조향하되 **단어의 뜻을 스킬이 정의.** *"형용사는 Leitwort — 뒤에 아무것도 없으면 그냥 더 나은 프롬프트"*. 같은 모델·같은 하네스, 언어만 달라도 결과가 다름. *"믿으면 실패"* 자기 점검 (Impeccable, sources: 1) ⚠️ 평가 기준이 생성자 안에
+- [[steering-altitude]] — 픽셀 직접 조작(**너무 낮음** — *"Opus로 div 가운데 정렬"*)과 완전 자율(**슬롭**) 사이의 통제 수준. 고도는 옮겨 다니고 양 끝(탐색·마지막 5~20% 폴리시)은 남는다. **채점기가 없는 영역은 위임 고도가 오르지 않는다**(위키 정리) (sources: 1)
+- [[no-one-shot-design]] — 맥락·반복·다수의 의견 → 원샷 불가. 먼저 물을 네 질문(감정적 영역·절대 아닌 것·레퍼런스·대상). **auto는 없고 앞으로도 없다** — 이유는 능력이 아니라 *결정하는 것이 디자인*. [[privacy-auto-mode]]와 반대 방향 (sources: 2)
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -385,12 +397,15 @@ updated: 2026-09-11
 - [[tech-bridge-agent-to-agent-as-search]] — Jean-Denis Greze (Town, 전 Plaid CTO): A2A는 **검색 문제**, 이상=단일 전지 에이전트·코즈 정리, 다섯 전략(신뢰 경계·커스텀 도구·**공유 사일로+청소부 AI**·사람 통로·**블랙박스**), 판정 기준 두 질문, 실패(인젝션·**영구 오염** Apex/Ivy·오공개·감사), **프런티어는 auto**·민감도 낮은 영역부터, 투자은행 간 확장 ([[tech-bridge]], 2026-09-09, **20:48**, ⚠️ 당사자 · 수치 없음 · ko가 LLM 약어 확장 4종 창작)
 
 - [[tech-bridge-build-time-vs-runtime-tools]] — Averi Kitsch · Prerna Kakkar (Google Cloud 데이터베이스): **빌드타임**(제어 평면·NL→SQL, 사람 필수) vs **런타임**(고정 SQL) 도구, 테이블 삭제 사례, *"DB는 에이전트만큼만 안전"*, [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]], 세 신원, 슈퍼유저→제로 트러스트 사다리, 바운드/인증 파라미터(JWT 클레임), 도구 설계 5규칙 ([[tech-bridge]], 2026-09-10, **19:57**, ⚠️ 당사자 · **데모 미실행** · 설명란이 본문보다 강함 · ko 주어 치환 1건)
+- [[tech-bridge-taste-labs-measuring-slop]] — Thais Castello Branco (Taste Labs 창업자): *"AI 슬롭은 내 개인적인 적"*, 훌륭함/슬롭 정의 비대칭, [[ai-slop|세 특징]], 10년치 웹사이트 200만 개 + 합성 사이트 → AI 이전 동질화·이후 맥락 무관 반복, [[slop-probes|프로브]](*LLM-as-a-judge보다 낫다*), *"취향이 아니라 판단"*, 모델 층 vs **추론 시점**, [[intentional-out-of-distribution|창의성 API]], [[structured-brand-context|Brand API]]·브랜드 인덱스, *"기준이 바닥에 있다"* ([[tech-bridge]], 2026-09-11, **14:34**, ⚠️ 당사자 · **수치 전무** · ko가 *slop*을 여섯 갈래로 · *distribution*→"유통")
+- [[tech-bridge-impeccable-design-steering]] — Paul Bakaus (Impeccable 제작자): 전후 비교(GPT-5.5 extra high), 역할 경계 붕괴·핸드오프 깨짐, [[steering-altitude|직접 조작 vs 완전 자율 사이의 고도]], 슬롭은 **움직이는 표적**(보라색 그라데이션→*Claude 베이지*), [[no-one-shot-design|원샷 불가]]·네 질문·*"아무도 결정하지 않은"*, [[adjective-verb-steering|형용사·동사 조향]]·*Leitwort*·bolder 정의·*"믿으면 실패"*, 워크플로 주입 지점·`overdrive`, **auto 없음**, 취향은 **증폭되되 배양 안 됨** ([[tech-bridge]], 2026-09-11, **15:30**, **촬영 2026 확정**, ⚠️ 당사자 · *auto*→"자동차" · *harness*→"실력" · 자기 정정 소실)
+
 ---
 
 ## 통계
 
-- 총 페이지 수: 352 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 340 → 352, + 2026-09-11 Tech Bridge 1편: source 1 + concept 7 + entity 4)
+- 총 페이지 수: 366 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 352 → 366, + 2026-09-12 Tech Bridge 2편: source 2 + concept 8 + entity 4)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-11 (Tech Bridge **1편**, 여드레 연속 — 09-10 업로드분. **위키의 보안 축이 처음으로 데이터베이스에 닿았다**: [[tech-bridge-build-time-vs-runtime-tools|Google Cloud 편]]이 [[prompt-injection]]에 **성립 조건**([[lethal-trifecta]])과 [[confused-deputy-attack|혼동된 대리인]]을, [[agent-governance-layers]]에 **네 번째 벽의 자리**(도구 정의 YAML — [[secure-tool-evolution]]), [[credential-injection-outside-sandbox]]에 **세 번째 소스**(도구 파라미터 바인딩 — [[bound-parameters]])를 줬다. 도구를 **누가 어느 단계에서 쓰는가**로 가르는 [[build-time-vs-runtime-tools]]가 새 축. ⚠️ 데모 미실행·설명란이 본문보다 강함·ko 주어 치환)
+- 마지막 ingest: 2026-09-12 (Tech Bridge **2편**, 아흐레 연속 — 09-11 업로드분. **채널 첫 디자인·취향 축.** [[tech-bridge-taste-labs-measuring-slop|Taste Labs]]와 [[tech-bridge-impeccable-design-steering|Impeccable]]이 같은 날 같은 적([[ai-slop]])을 반대 처방(안목을 모델에 훈련 / *"취향은 배양될 수 없다"*)으로 겨냥했고, [[dhh]]·[[lena-hall]]에서 둘이던 취향 논쟁이 [[taste-vs-judgment]]의 **네 입장**이 됐다 — 넷 다 추론 시점에 사람의 결정이 남는다고 본다. [[signal-layer]]의 채점기 경계선이 [[slop-probes]]로 세 번째 이동, [[generator-evaluator-pattern]]에 **LLM이 아닌 평가자**와 **낡는 기준**(*purple gradients* → *Claude 베이지*)이 들어왔고, [[steering-altitude]]가 *auto의 확장* 흐름에 첫 반대 방향의 제품 결정을 놓았다. ⚠️ 두 편 다 당사자·수치 없음)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-11
+- 마지막 갱신: 2026-09-12

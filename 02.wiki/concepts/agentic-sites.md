@@ -3,11 +3,11 @@ title: Agentic Sites (에이전틱 사이트)
 type: concept
 category: architecture
 tags: [personalization, rag, inference-latency, generative-ui, web]
-related: [verifiable-goals, sutton-bitter-lesson, model-context-protocol]
+related: [verifiable-goals, sutton-bitter-lesson, model-context-protocol, structured-brand-context]
 first-seen: tech-bridge-agentic-sites
-sources: [tech-bridge-agentic-sites]
+sources: [tech-bridge-agentic-sites, tech-bridge-taste-labs-measuring-slop]
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-12
 ---
 
 # Agentic Sites (에이전틱 사이트)
@@ -68,6 +68,18 @@ RAG의 코퍼스가 외부 지식이 아니라 **사이트 전체**다. 그래�
 - ⚠️ 벤더(Adobe) 자사 데모라 정확도 수치와 "임의 URL을 1시간 내 변환" 주장에 독립 검증이 없다.
 - 사이트마다 모델 평가가 달라진다는 발견은 **운영 비용**이 개념의 실제 진입 장벽임을 시사한다. 상시 평가 파이프라인이 없으면 성립하지 않는다.
 - 페이지가 방문자마다 달라지면 캐싱·SEO·재현성·감사(audit)가 어떻게 되는지는 소스가 다루지 않는다.
+
+## 브랜드 준수의 다른 형태 (2026-09-12)
+
+이 개념의 첫 제약(*"브랜드 가이드라인이 환각 예산을 정한다"*)에 대응하는 다른 접근이 [[tech-bridge-taste-labs-measuring-slop]]에서 나왔다. [[taste-labs|Taste Labs]]의 Brand API는 사이트를 RAG 코퍼스로 쓰는 대신 **브랜드 URL에서 에이전트가 따를 구성 요소를 추출**하고, 같은 구조를 **검증 루브릭**으로 쓴다(*"에이전트가 실제로 궤도에 있는가, 어디서 실패하는가"*). → [[structured-brand-context]]
+
+| | 이 개념 ([[adobe]]) | Brand API ([[taste-labs]]) |
+|---|---|---|
+| 브랜드는 | **코퍼스** — 사이트 전체 | **추출된 구조** |
+| 생성물이 브랜드에 근거하는 방식 | 정의상 (블록 선택) | 구성 요소 준수 + 사후 판단 |
+| 검증 | promptfoo 상시 평가 | 같은 구조로 대조 (방법 미상) |
+
+두 소스는 서로를 모른다. 이 개념의 *"거대한 LLM이 필요하지 않다"* 도 Brand API의 *"생성 대신 미리 설계된 브랜드 시스템을 검색"* 과 같은 계열이다 — 문제를 생성에서 선택·검색으로 좁힌다.
 
 ## References
 

@@ -35,11 +35,16 @@ sources:
   - tech-bridge-altman-g20-economic-boom
   - tech-bridge-agent-knowledge-four-ways
   - tech-bridge-minimax-m3-long-context
+  - tech-bridge-knowledge-work-agent-infrastructure
+  - tech-bridge-ai-era-code-quality
+  - tech-bridge-cursor-legacy-refactoring
   - tech-bridge-company-brain-security
   - tech-bridge-agent-to-agent-as-search
   - tech-bridge-build-time-vs-runtime-tools
+  - tech-bridge-taste-labs-measuring-slop
+  - tech-bridge-impeccable-design-steering
 created: 2026-06-03
-updated: 2026-09-11
+updated: 2026-09-12
 ---
 
 # Tech Bridge
@@ -177,7 +182,34 @@ updated: 2026-09-11
 
 > ⚠️ **당사자 진술 비중은 계속 높다.** 발표의 처방이 곧 자사 제품([[mcp-toolbox-for-databases]]) 기능이다. 다만 보안 논증은 제품 독립적이라 개념으로 올리고 제품 서술은 엔티티에 뒀다.
 
+## 2026-09-11 업로드 2편 — 디자인과 취향 (2026-09-12 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-taste-labs-measuring-slop]] ([[taste-labs]]) | 14:34 | 컨퍼런스 단독 발표 · 당사자(평가·데이터 공급자, Brand API 판매자) · 수치 전무 |
+| [[tech-bridge-impeccable-design-steering]] ([[impeccable]]) | 15:30 | 컨퍼런스 단독 발표 · 당사자(도구 제작자) · 슬라이드 시연 · **촬영 2026년 확정** |
+
+**채널 첫 디자인·취향 축.** 지금까지 35편이 전부 에이전트 엔지니어링·모델·경제·정책이었고, 디자인은 [[tech-bridge-figma-coding-agents]]의 *조직 도입* 과 [[tech-bridge-multimodal-commerce-agent]]의 *스타일 선호 발견* 으로만 스쳤다. 두 편이 [[ai-slop]]에 처음으로 정의를 주고, [[dhh]]·[[lena-hall]]에서 둘이던 취향 논쟁을 [[taste-vs-judgment]]의 **네 입장**으로 만들었다.
+
+**같은 날, 같은 적, 반대 처방.** 둘 다 슬롭을 겨냥하되 Taste Labs는 *안목을 모델에 훈련시키고* Impeccable은 *"취향은 배양될 수 없다 — 내 도구로 취향을 풀려는 게 아니다"* 라 한다. Paul이 *"다음 발표자들 중 일부에게는 어색하겠지만"*(14:34)이라 예고하므로 **같은 행사·앞뒤 순서일 가능성**이 있으나 — 09-07 절차대로 설명란을 대조한 결과 **두 편 모두 행사명이 없고 서로를 언급하지 않아 확정하지 않았다.** 별개로 취급하되 [[taste-vs-judgment]]에 나란히 뒀다.
+
+**새 주의사항**
+
+- **발표 주제어가 ko에서 여섯 갈래로 갈라질 수 있다.** *slop* 이 한 편 안에서 **오류·허술·음식·음압·기울기·부실**로. 09-10의 *company brain*(3종)보다 심하고, en-orig 자체도 *SOP·soop·soft* 로 오인식했다. **주제어는 두 트랙 모두에서 여러 표기로 grep해야 한다.**
+- **통계 용어가 물류 용어로.** *out of distribution* 의 *distribution* → **"유통"**(두 곳). 09-11의 *분야 이동 오역* 유형이되 이번엔 **발표의 핵심 처방**(창의성 API)이 자막에서 사라졌다.
+- **약어 확장 창작 네 번째** — *LLM-as-a-judge* → **"법학 석사 심사 방식"**.
+- **결론 슬라이드의 오역 재발** — *"There is no auto"* → **"자동차는 없고"**. 09-10 Greze 편의 *auto*→"자동차 산업"과 같은 단어, 이번엔 **발표의 결론 문장**이다.
+- **하네스가 자막에서 사라진다** — *coding harness* → **"코딩 실력"**. 09-06의 *harness*→"배선"과 다른 방향(추상화). 이 위키의 핵심 개념어가 ko에서 사라지는 두 번째 형태.
+- **외국어 용어의 이중 오인식** — 독일어 *Leitwort* → en-orig *"light wart"* → ko **"가벼운 사마귀"**. 화자가 *"such a German term"* 이라고 부연하는데도 두 트랙 다 놓쳤다. **화자가 언어를 명시하는 단어는 그 언어로 검색한다.**
+- **화자의 자기 정정이 ko에서 사라진다.** Paul이 *"cannot be amplified"* → 곧바로 *"can be amplified"* 로 고쳤는데 ko는 두 문장을 그대로 옮겨(취향은 증폭될 수 없다 → 미각은 증폭될 수 있다) 정정 구조가 보이지 않는다. **핵심 주장 문장 직후의 "uh so"는 정정 신호로 본다.**
+- **제품명이 형용사로 번역된다** — *Impeccable* → "흠잡을 데 없는". 09-10의 *Town*→"시내"의 형용사 판이고, 한 문장(*"Impeccable gives me a shared language"*)의 뜻이 바뀌었다.
+- **촬영 연도가 화자 발화로 확정된 첫 사례** — *"2026년 버전의 AI 슬롭"*. 09-03 이후 내부 증거·위키 교차 참조로 *추정* 만 해 왔는데 이번엔 확정이다.
+- **"Claw Design"이 하루 두 소스에서** — 양쪽 다 기본 생성 도구로 부른다. **Claude Design 추정, 확정하지 않음.** 위키에 해당 제품 페이지 없음 — 세 번째 소스가 나오면 [[openclaw]]처럼 누락 개체로 판단할 것.
+- **ko가 없던 의미를 붙임** — *extra high*(추론 노력) → "고화질 설정". 09-08의 *단위 창작* 과 같은 계열.
+
+> ⚠️ **당사자 진술 비중은 계속 높다.** 두 편 다 자기 회사·자기 도구. 이번엔 **수치가 한 편에도 없다** — Taste Labs의 *200만 사이트·LLM-as-a-judge보다 낫다* 는 값이 없고, Impeccable의 전후 비교는 슬라이드다.
+
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

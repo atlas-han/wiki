@@ -3,11 +3,11 @@ title: Multimodal Elicitation
 type: concept
 category: pattern
 tags: [agent, multimodal, elicitation, preference, ontology, evaluation, ux]
-related: [fuzzy-intent-discovery, adaptive-response-format, generator-evaluator-pattern, signal-layer, agentic-sites, context-engineering]
+related: [fuzzy-intent-discovery, adaptive-response-format, generator-evaluator-pattern, signal-layer, agentic-sites, context-engineering, structured-brand-context, adjective-verb-steering]
 first-seen: tech-bridge-multimodal-commerce-agent
-sources: [tech-bridge-multimodal-commerce-agent]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-12
 ---
 
 # Multimodal Elicitation
@@ -76,6 +76,18 @@ updated: 2026-09-04
 다만 무엇을 채점하는지 보면 경계선이 완전히 무너지진 않는다 — 채점되는 것은 *"어떤 취향이 좋은가"* 가 아니라 **"그 사람의 취향을 몇 턴 만에 알아냈는가"** 다. 즉 **취향 자체가 아니라 발견 과정의 효율**이 채점된다. 선호는 시뮬레이터가 **정답으로 주입**했기 때문에 채점이 가능해진다.
 
 → 정리하면 채점기 경계선은 *주관적 영역*이 아니라 **정답을 아는 주체가 존재하지 않는 영역**에서 그어진다. [[signal-layer]]가 마지막까지 채점 불가라고 한 **신뢰**에는 시뮬레이터를 놓을 자리가 없다.
+
+## 공통 언어의 두 공급 방식 (2026-09-12)
+
+이 개념의 전제는 *사용자가 어휘를 갖고 있지 않아도 이미지에 마우스를 올릴 수는 있다* 였다. 2026-09-11 업로드 두 편이 같은 목표(**공통 언어**)를 다른 쪽에서 채운다.
+
+| | 이 개념 ([[google-deepmind]]) | [[structured-brand-context\|브랜드 인덱스]] ([[taste-labs]]) | [[adjective-verb-steering\|형용사 조향]] ([[impeccable]]) |
+|---|---|---|---|
+| 사용자는 | 어휘가 없다 | 브랜드가 없다 | 어휘가 없다 |
+| 처방 | **보여주고** 반응을 읽는다 | 감성 키워드(*"몽환적인"*) 하나로 **응집된 브랜드 시스템을 검색**해 준다 | **어휘를 준다** — *"모두가 소통할 수 있는 디자인의 공유 언어"* |
+| 방향 | 사용자 → 에이전트 (선호 발견) | 공급 측 (생성 대신 검색) | 사용자 → 에이전트 (조향) |
+
+Taste Labs의 *"그 순간 생성적 접근으로 만들었다가 슬롭에 빠지는 대신 이미 응집력 있게 설계된 것을 검색"* 은 이 개념의 시각적 보드가 **무엇을 올릴지**에 대한 답이기도 하다. 세 소스는 서로를 모른다.
 
 ## References
 

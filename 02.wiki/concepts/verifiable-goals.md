@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-12
 ---
 
 # Verifiable Goals
@@ -102,6 +102,14 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 > LOC는 중요한 지표이지만, 직접적으로 최적화해야 할 대상은 아닙니다. **토큰 사용량과 지출도 마찬가지입니다.**
 
 실제 사고 사례까지 붙는다 — 전사 토큰 대시보드가 리더보드로 작동하자 엔지니어들이 **사용량 극대화를 경쟁**하기 시작했다. 처방은 단일 지표가 아니라 **객관적 검사 + 인간 판단 + 고객 반응**의 3중 검증이다.
+
+## 주관 영역에 verifier를 세우기 (2026-09-12)
+
+> 저는 무언가를 고치려면 **먼저 측정하고 먼저 이해해야** 한다고 굳게 믿습니다. 그래서 이 영역들을 **더 검증 가능한 것으로 바꿔 측정치를 붙이는 것**에 집중합니다. — [[thais-castello-branco]] ([[tech-bridge-taste-labs-measuring-slop]])
+
+위 "경계: verifier를 만들 수 없는 곳"이 *주관 영역* 을 그 밖에 뒀다면, [[taste-labs|Taste Labs]]는 그 안에 verifier를 세우려 한다 — 디자인을 *거의 결정론적인 조각*(팔레트·대비·정렬)으로 **분해**하고 조각마다 [[slop-probes|소형 분류기]]를 훈련한다. 경계선은 사라지지 않고 **분해되지 않는 것**(전문가가 갈리는 미학)으로 옮겨간다. ⚠️ 수치 없음.
+
+같은 날 [[tech-bridge-impeccable-design-steering]]은 반대편 — 디자인에는 자동 verifier가 없다고 보고(*"사용자도 의견이 있다"*) **사람 verifier**를 문장으로 심는다: *"누군가에게 보여주고 'AI가 했다'고 말하라. 믿으면 실패."* [[signal-layer]]의 *SRE에게 README를 주고 설명하게 하라* 와 같은 형태다. → [[adjective-verb-steering]] · [[steering-altitude]]
 
 ## References
 

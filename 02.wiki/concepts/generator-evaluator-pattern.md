@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-12
 ---
 
 # Generator–Evaluator Pattern
@@ -186,6 +186,18 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 제안된 대체 신호는 두 가지다 — **과거 산출물과의 스타일 대조**(전에 보낸 초안 메일과 맞는가)와 **샌드박스**(현실 대신 모의 환경을 때리게 하고 사람이 검토) → [[action-reversibility]].
 
 **두 소스를 합치면 이 패턴의 적용 조건이 분명해진다** — 평가자가 독립적이어야 하고, 평가 신호가 존재해야 한다. 코딩은 둘 다 갖고 있고, 지식 노동은 둘째가 없으며, 자기 검증 cloud agent는 첫째가 약하다.
+
+## 평가자가 LLM이 아닐 때, 그리고 기준이 낡을 때 (2026-09-12)
+
+2026-09-11 업로드 두 편([[tech-bridge-taste-labs-measuring-slop]]·[[tech-bridge-impeccable-design-steering]])이 이 패턴의 **평가자**에 대해 세 가지를 더한다.
+
+**① LLM이 아닌 평가자.** 이 페이지의 평가자는 지금까지 전부 LLM이었다(회의적 evaluator · `outcomes` · auto-rater 12종). [[taste-labs|Taste Labs]]의 [[slop-probes|프로브]]는 **소형 단일 특징 분류기의 앙상블**로 슬롭을 판정하고, *"LLM에게 훌륭한 인간 품질인지 AI 슬롭인지 판단하게 하는 대부분의 LLM-as-a-judge 방식보다 더 잘 수행됐다"* 고 주장한다. 그리고 *"슬롭의 게이트로 써서 에이전트가 슬롭을 출시하지 못하게"* — 평가자가 루프 안의 비평자가 아니라 **출시 전 게이트**가 된다. 차이의 핵심: LLM evaluator는 기준을 **프롬프트에 쓰고**, 프로브는 기준을 **데이터에서 마이닝**한다. ⚠️ 비교 수치·설정 없음.
+
+**② 기준이 낡는다.** 위 "사례: Frontend"의 Originality 기준이 페널티로 든 *"purple gradients over white cards"* 에 대해 [[paul-bakaus]]: *"대부분의 프론티어 모델에는 더 이상 보라색 그라데이션이 없다. 지금은 'Claude 베이지' — Instrument Serif, 이탤릭. 이것도 슬롭이다. 움직이는 표적일 뿐."* → **채점 기준에 시간 축이 있다.** [[harness-pruning]]이 하네스 기능에 대해 말한 *가정이 낡는다* 가 평가 루브릭에도 적용된다 — 그리고 ①의 *데이터에서 마이닝* 이 그 처방일 수 있으나 갱신 주기는 어느 소스에도 없다. → [[ai-slop]]
+
+**③ 평가 기준을 생성자 안에 넣은 경우.** [[impeccable]]의 *bolder* 파일에는 *"누군가에게 보여주고 'AI가 더 bolder하게 만들었다'고 말하라. 그들이 믿으면 실패한 것이다"* 라는 문장이 있고 *"에이전트가 종종 돌아본다"* 고 한다. 이 페이지의 근거(*"생성자를 비판적으로 만드는 것보다 별도 평가자를 회의적으로 튜닝하는 게 훨씬 tractable"*)와 **반대 방향**이다. 소스는 자기 평가 편향을 다루지 않으며 효과는 일화다. → [[adjective-verb-steering]]
+
+부수: Paul의 *"디자인은 원샷할 수 없다 — 멀티샷이어야"* 는 이 페이지의 5~15회 반복과 같은 진단이되, 반복을 돌리는 것이 **에이전트-에이전트가 아니라 사람-에이전트**다. → [[no-one-shot-design]]
 
 ## References
 

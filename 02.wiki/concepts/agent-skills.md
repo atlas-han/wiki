@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering]
 created: 2026-08-31
-updated: 2026-09-10
+updated: 2026-09-12
 ---
 
 # Agent Skills
@@ -184,6 +184,24 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 > ⚠️ Contradiction: 위키는 어느 쪽도 채택하지 않는다. 다만 둘의 차이는 **누가 쓰는가**로 좁혀진다 — Gopal의 반론은 *사람이* 남을 위해 쓰지 않는다는 것이고, Greze의 긍정은 *에이전트가* 인센티브를 갖고 쓴다는 조건부다. 둘을 합치면 *"사람은 안 쓰니 에이전트가 쓰게 하되 사람이 승인하라"* 가 되고, 그것이 정확히 Gopal의 처방이다. 이 합성은 위키의 것이며 어느 소스도 말하지 않았다.
 
 이 페이지의 실무자 관점([[ivanna-kacevica]])이 *스킬은 반복·자동화하고 싶은 워크플로에* 라고 했던 것과 대비하면, 두 소스가 다투는 것은 스킬의 **가치**가 아니라 **조직 안의 유통**이다. → [[agent-knowledge-sourcing]]
+
+## 어휘를 담는 스킬 — 그리고 자동화를 거부하는 스킬 (2026-09-12 · [[tech-bridge-impeccable-design-steering]])
+
+[[paul-bakaus]]의 [[impeccable]]은 이 페이지에 **새 종류의 스킬**을 더한다. 지금까지 스킬이 담은 것은 절차([[ibm]]: 절차+판단), 프레임워크 지식([[flutter]]), 도메인 판단(페이월)이었다. Impeccable이 담는 것은 **단어의 뜻**이다 — *"bolder라고 하면 로드되는 파일"* 에 *bolder* = **그라데이션·글래스·네온이 아니라 위계·스케일·결정적 타이포** 라고 쓰여 있다.
+
+> 두 사람이 정확히 같은 과제를 시도하는 걸 봤는데 (…) **같은 모델, 같은 하네스**를 써도 **쓰는 언어에 따라** 결과에 확연한 차이가 있습니다. 그래서 그 언어를 **스킬로, 시스템으로 압축**했습니다.
+
+**왜 프롬프트가 아니라 스킬인가** — *"뒤에 아무것도 없는 형용사는 그냥 좀 더 나은 프롬프트일 뿐."* 단어는 모델 안에서 다의적이라 뜻을 고정해야 조향이 되고, 그 고정이 스킬이다. 그리고 *"bolder라고 하면 로드"* 는 위 실무자 절의 progressive disclosure 그대로다. → [[adjective-verb-steering]]
+
+세 가지가 이 페이지의 기존 항목과 맞물린다:
+
+| 항목 | Impeccable |
+|---|---|
+| **portable across harnesses** ([[imad-touil]]) | *"모든 하네스에서 동작 — Claude Code, GitHub Copilot, Cursor, Codex"* — 원칙의 실증 |
+| **승격 게이트** ([[skill-self-improvement]]) | 확신 없는 명령(`overdrive`)을 **커뮤니티로 테스트**하고 *"정착하면"* 남긴다 — 사람 대신 커뮤니티 반응 |
+| **자동화** | *"auto는 없고 앞으로도 없다"* — 자동 모드 PR을 닫는다. **스킬이 명시적으로 자동화를 거부하는 첫 사례.** 이유는 능력이 아니라 *"결정하는 것이 요점"* → [[no-one-shot-design]] |
+
+⚠️ 효과는 슬라이드 시연과 관찰 진술뿐. 스킬의 전체 구조·명령 수·라이선스는 소스에 없다.
 
 ## References
 

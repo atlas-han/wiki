@@ -3,11 +3,11 @@ title: Signal Layer
 type: concept
 category: pattern
 tags: [differentiation, taste, judgment, trust, gtm, product, convergence]
-related: [sutton-bitter-lesson, verifiable-goals, cognitive-offloading, trusted-throughput, agentic-sites, outcome-engineering]
+related: [sutton-bitter-lesson, verifiable-goals, cognitive-offloading, trusted-throughput, agentic-sites, outcome-engineering, taste-vs-judgment, ai-slop, slop-probes, steering-altitude]
 first-seen: tech-bridge-signal-layer
-sources: [tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent]
+sources: [tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-09-02
-updated: 2026-09-04
+updated: 2026-09-12
 ---
 
 # Signal Layer
@@ -134,6 +134,18 @@ Machine distortion에 대한 처방이 가장 구체적이다. 모니터링 도�
 - [[dhh]] — "taste가 병목"에 대한 정면 수정
 - [[cognitive-offloading]] — [[andrew-ng]]이 개인의 사고 위임을 걱정했다면 여기서는 **조직·시장 수준의 수렴**
 - [[trusted-throughput]] · [[tech-bridge-claude-platform-agent-era]] — 실행이 싸지면 남는 일이 **문제 선택과 정렬**이라는 결론에 같은 주 세 소스가 독립적으로 도달했다
+
+## 수렴의 측정과 경계선의 세 번째 이동 (2026-09-12)
+
+2026-09-11 업로드 두 편이 이 개념의 두 축(수렴 기계 · 취향 vs 판단)에 각각 들어온다.
+
+**① 수렴 기계를 쟀다고 주장한다.** [[tech-bridge-taste-labs-measuring-slop]]의 [[thais-castello-branco]]는 10년치 웹사이트 200만 개에서 *"AI 이전에도 이미 인터넷의 붕괴(collapse)"* 를, AI 이후에는 *"맥락과 무관한 반복"* 을 봤다고 말한다. 이 페이지의 *"그대로 두면 모든 게 똑같아진다"* 의 데이터 판이되 **수치는 없다.** 그리고 원인의 층이 다르다 — Hall은 *질문의 동일성*, Thais는 *기성 모델이 평균으로 무너지는 경향*. → [[ai-slop]]
+
+**② "취향이 아니라 판단" — 같은 단어 선택.** Thais: *"여기서 '취향'이라는 말은 쓰고 싶지도 않아요. 판단입니다."* Hall과 독립적으로 같은 결론이다. 그런데 같은 날 [[paul-bakaus]]([[tech-bridge-impeccable-design-steering]])는 *"취향은 증폭될 수 있지만 실험실에서 배양될 수 없다 — 맥락적·문화적·희소"* 라 한다. 이 페이지의 *"넓은 취향은 차별화 요소가 아니다"* 와 **결론이 같고 이유가 반대**다(Hall: 배울 수 있어서 / Paul: 배우면 모두가 가져 사라지므로). 네 입장의 표는 → [[taste-vs-judgment]].
+
+**③ 채점기 경계선이 또 안쪽으로.** 위 "다시 긋기"(09-04)가 *발견 과정의 효율* 을 채점했다면, [[slop-probes]]는 **산출물의 미학적 특징 자체**를 소형 분류기로 채점하고 LLM-as-a-judge보다 낫다고 주장한다. 방법은 *"디자인을 거의 결정론적인 조각(팔레트·대비·정렬)으로 분해"* 하는 것이라, 경계선은 이제 **분해되지 않는 것**(전문가가 갈리는 미학 — 화자도 *"데이터에 기대야"* 한다고 인정)에 남는다. ⚠️ 수치 없음.
+
+**④ 경계선이 위임 고도를 정한다.** Paul은 디자인에서 *"사용자도 의견이 있다"* 며 완전 위임을 거부하고 사람을 중간 고도에 남긴다([[steering-altitude]]). 코드에서 [[goal-level-delegation]]이 가능했던 이유가 *산출물 검증* 이었으므로 — **자동 채점기가 있는 영역은 위임 고도가 올라가고, 없는 영역은 사람이 남는다.** ⚠️ 위키의 정리.
 
 ## References
 
