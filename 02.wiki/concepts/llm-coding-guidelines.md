@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, claude-code, system-prompt, anti-pattern]
 related: [surgical-edits, verifiable-goals, sprint-contract, ralph-wiggum-method, context-engineering, harness-engineering, claude-code]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-six-agent-skills, tech-bridge-ai-era-code-quality]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-six-agent-skills, tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # LLM Coding Guidelines (4원칙)

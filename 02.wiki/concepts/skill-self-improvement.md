@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-05
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Skill Self-Improvement

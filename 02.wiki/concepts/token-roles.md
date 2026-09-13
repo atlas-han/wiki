@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, token-economics, model-routing, evaluation, memory, anthropic]
 related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents]
 created: 2026-09-02
-updated: 2026-09-07
+updated: 2026-09-13
 ---
 
 # Token Roles
@@ -107,6 +107,14 @@ Angela 본인의 수동 버전도 대담에 나온다 — 마음에 안 드는 �
 이 페이지는 토큰을 **역할**(advising·grading·dreaming)로 봤고 [[trusted-throughput]]은 **연기 감지기**로 봤다. Altman의 진술은 그 둘과 같은 방향이다 — **토큰 자체는 의미가 없고 대용치일 뿐**이라는 것. 다만 그가 곧바로 그 단위로 6년 반 외삽을 한다는 점에서, *부정하면서 쓰는* 형태다. → [[compute-constrained-growth]]
 
 ⚠️ 두 입장을 해소하지 않는다. 토큰을 **파는 층**과 토큰을 **소모하는 층**의 차이로 읽는다.
+
+## 토큰은 산출물이지 결과가 아니다 (2026-09-12 마우스파워 편)
+
+[[tech-bridge-mousepower-measuring-agents]]가 토큰의 지위를 한 줄로 정리한다.
+
+> 토큰은 **내부 시스템의 측정값으로는 유용**하지만 **결국 산출물일 뿐**이고, 따라서 **토큰은 결과로 아주 깨끗하게 추적**돼야 합니다. **우리가 산 토큰으로 버그를 몇 개 잡았나? 지원 요청을 몇 개 닫았나?**
+
+지표로 삼았을 때의 병리도 사례로 나온다 — **토큰 리더보드**, 그리고 *"1년 치 토큰 예산을 한 분기에 다 태우는"* 조직. → [[overspending-underusing-loop]] · [[trusted-throughput]]
 
 ## References
 

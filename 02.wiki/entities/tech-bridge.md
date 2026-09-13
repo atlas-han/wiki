@@ -43,8 +43,11 @@ sources:
   - tech-bridge-build-time-vs-runtime-tools
   - tech-bridge-taste-labs-measuring-slop
   - tech-bridge-impeccable-design-steering
+  - tech-bridge-acp-universal-remote
+  - tech-bridge-mousepower-measuring-agents
+  - tech-bridge-lauren-tan-trusting-agents
 created: 2026-06-03
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Tech Bridge
@@ -209,7 +212,29 @@ updated: 2026-09-12
 
 > ⚠️ **당사자 진술 비중은 계속 높다.** 두 편 다 자기 회사·자기 도구. 이번엔 **수치가 한 편에도 없다** — Taste Labs의 *200만 사이트·LLM-as-a-judge보다 낫다* 는 값이 없고, Impeccable의 전후 비교는 슬라이드다.
 
+## 2026-09-12 업로드 3편 — 프로토콜·측정·신뢰
+
+같은 날 올라온 세 편이 **서로 다른 층**을 다루면서 **검증**에서 만난다.
+
+| 소스 | 층 | 형식 |
+|---|---|---|
+| [[tech-bridge-acp-universal-remote]] | **프로토콜** — 클라이언트가 하네스를 어떻게 조종하는가 | 컨퍼런스 단독 발표 10:32 |
+| [[tech-bridge-mousepower-measuring-agents]] | **경제** — 에이전트의 가치를 어떻게 전달하는가 | *World's Fair* 단독 발표 20:25 |
+| [[tech-bridge-lauren-tan-trusting-agents]] | **실천** — 어떻게 에이전트를 신뢰하게 되는가 | 온라인 워크숍 **59:41** |
+
+**채널 기록 세 가지가 갱신됐다** — ① **최장편 59:41**(직전 55:17), ② **두 번째 무챕터 소스**(2026-09-02 이후), ③ **첫 온라인 워크숍 형식**(Zoom 화면 공유·채팅·시청자 질문이 그대로 들어 있다).
+
+**뒤의 두 편은 서로를 언급하지 않으면서 같은 진단에 도달한다** — *병목은 생성이 아니라 검증이다*. 답은 반대다: Piras는 **검증이 비싼 작업을 고르지 말라**(작업 선택), Lauren Tan은 **검증을 스킬로 만들어 에이전트에게 넘겨라**(역량 구축). → [[verification-bottleneck]] · [[verification-cost-asymmetry]]
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **설명란이 자막에 없는 사실을 주장한 세 번째 사례** — Lauren Tan 편의 제목·설명란이 *"xAI GrokBot 워크숍"* 이라 부르는데 **자막에 "xAI"가 한 번도 나오지 않는다**(나오는 것은 *SpaceX AI*). 09-10·09-11에 이어 → **설명란의 사실 주장은 본문 발화로 재확인한다.**
+- **반대로 설명란이 자막보다 정확한 첫 사례** — 마우스파워 편에서 ko 자막이 *horse gin* 을 **"마차"** 로 옮겼는데 **설명란은 "말 방아"** 로 맞게 적었다.
+- **나중 소스가 앞선 소스의 시점 추정을 무너뜨린 첫 사례** — Lauren Tan 편이 [[tech-bridge-grokbot-agent-teams]]·[[grok-4-6]]·[[tech-bridge-cursor-legacy-refactoring]]의 날짜 추정에 반증을 준다. 그 추정들은 **업로드 날짜를 촬영 날짜로 쓴** 것이었다.
+
+> ⚠️ **당사자 진술 비중은 여전히 높다.** 세 편 다 자기 프로젝트·자기 회사다. 다만 **마우스파워 편은 화자가 자기 판매자 위치를 먼저 밝힌 첫 사례**이고(*"우리 모두가 직간접적으로 토큰을 팔고 있다"*), Lauren Tan 편은 **무제한 토큰을 인정**한 뒤 답한다.
+
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]] · [[tech-bridge-acp-universal-remote]] · [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

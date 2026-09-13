@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # AI 슬롭
@@ -77,6 +77,18 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 - **측정치 없음** — 200만 사이트 분석의 수치, 프로브 정확도, Impeccable 전후 비교 모두 없다.
 - 두 소스 모두 **당사자**(평가·데이터 판매자 / 도구 제작자)이고 서로를 모른다.
 - *슬롭* 이라는 말 자체의 범위 — Thais는 디자인·글쓰기, Paul은 웹 디자인. 코드의 슬롭은 어느 소스도 다루지 않는다.
+
+## "AI 슬롭 이전에 인간 슬롭이 있었다" (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 슬롭을 **AI 고유 현상이 아니라 가드레일 부재의 함수**로 재정의한다.
+
+> **Meta에는 정말 훌륭한 엔지니어가 많지만 — 놀라실 텐데 코드 품질이 그렇게 좋지는 않습니다.** 그래서 저는 자주 농담합니다 — **AI 슬롭 이전에 인간 슬롭이 있었다**고요.
+
+09-12에 세운 *슬롭 = 결정의 부재* 와 **같은 결론에 다른 경로**로 도달한다. 대기업 인프라가 *가장 능력이 부족한 엔지니어* 를 위해 지어졌다는 관찰이 이어지고, 그래서 **그 인프라가 이미 에이전트 친화적**이라는 뒤집기가 나온다. → [[greenfield-vs-brownfield-agent-risk]]
+
+코드베이스 전체가 슬롭이 된 상태에는 이름이 붙는다 — [[organic-architecture]](*"가드레일이 전혀 없어서 에이전트가 가장 편리한 방법으로 풀어 버리고, 시간이 지나면 여러분이 이해하지 못하는 코드베이스가 통제 불능으로 번져 나갑니다"*).
+
+> **ASR 주의**: 이 소스의 en-orig는 *slop* 을 **"sloth"**(나태)로 잘못 듣고 ko가 **"게으름"** 으로 직역한다. 09-12에 기록한 *slop* 의 여섯 갈래에 **일곱 번째**가 추가된다(*"slop artist"* → *"엉성한 사람"* 도 같은 편에 있다).
 
 ## References
 

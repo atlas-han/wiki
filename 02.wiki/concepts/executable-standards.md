@@ -6,9 +6,9 @@ tags: [guardrails, governance, standards, automation, tribal-knowledge]
 aliases: [실행 가능한 가드레일, 문서로서의 표준, executable policy]
 related: [decision-quality, behavior-validated-trust, agent-governance-layers, llm-coding-guidelines, trusted-throughput, intent-md, scheduled-agent-automations]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # 실행 가능한 표준
@@ -67,6 +67,20 @@ updated: 2026-09-09
 
 - **가드레일의 비용 미논의** — 모든 커밋 검증·상시 정적 분석의 지연과 비용이 다뤄지지 않는다.
 - **표준이 틀렸을 때의 갱신 경로가 없다** — 인코딩된 규칙은 문서보다 고치기 어려울 수 있는데 그 트레이드오프가 언급되지 않는다.
+
+## 개인 실천의 규칙으로 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 이 개념을 **일상 판정 기준**으로 내린다.
+
+> **최악의 자리는 코드 리뷰 랜드에 갇혀서, 코드베이스의 모든 불변식을 문자 그대로 사람이 코드를 읽으며 "이건 하면 안 됩니다"라고 말해서 강제하는 것**입니다.
+
+> **그걸 해야 할 때마다 코드 스멜, 안티패턴으로 여기고** 이렇게 말해야 합니다 — ***"PR에 댓글을 다는 대신, 이걸 어떻게 하드 규칙으로 바꾸지? 린트 규칙으로? CI 실패로? 아니면 이 문제를 아예 범주적으로 없애 버릴 수는 없나?"***
+
+그리고 이 페이지에 **없던 경고**가 붙는다 — **문서로 심는 것만으로는 여전히 부족하다.** 규칙·스킬·bugbot은 *소프트* 라 에이전트가 잊는다:
+
+> **규칙과 bugbot과 스킬과 스타일 가이드만 있으면, 코드베이스가 완전히 쓰레기처럼 보이는 건 시간문제**입니다.
+
+→ [[hard-vs-soft-enforcement]]
 
 ## References
 

@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-08-31
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Agent Skills
@@ -202,6 +202,22 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 | **자동화** | *"auto는 없고 앞으로도 없다"* — 자동 모드 PR을 닫는다. **스킬이 명시적으로 자동화를 거부하는 첫 사례.** 이유는 능력이 아니라 *"결정하는 것이 요점"* → [[no-one-shot-design]] |
 
 ⚠️ 효과는 슬라이드 시연과 관찰 진술뿐. 스킬의 전체 구조·명령 수·라이선스는 소스에 없다.
+
+## 스킬은 실패 모드에서 자란다 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 스킬의 **생성 경로**를 구체적으로 보여 준다 — 설계가 아니라 관찰이다.
+
+> 저는 **[[pstack|Pstack]]을 만들려고 시작한 적이 전혀 없습니다.** 그냥 스킬 몇 개로 시작한 거죠. (…) **에이전트의 온갖 실패 모드를 정말로 관찰**하는 것에서 시작해서, **볼 때마다 "이건 스킬로 만들자"** 했습니다.
+
+스킬의 성격에 대한 진술도 명확하다:
+
+> 스킬은 **그냥 마크다운**이지만 **정보와 지시를 많이 인코딩**합니다. **고품질 토큰을 앞에 주면** (…) **에이전트에게서 많은 지능을 끌어낼 수 있습니다.**
+
+트위터식 표현이 붙는다 — *"에이전트를 다른 잠재 공간(latent space)으로 끌어당긴다"*.
+
+> ⚠️ **그러나 스킬은 소프트 강제다.** 같은 소스가 경고한다 — *"규칙과 bugbot과 스킬과 스타일 가이드만 있으면, 코드베이스가 완전히 쓰레기처럼 보이는 건 시간문제."* → [[hard-vs-soft-enforcement]]
+
+스킬을 고칠 때마다 검증하는 절차는 [[skill-evals]]에 있다.
 
 ## References
 

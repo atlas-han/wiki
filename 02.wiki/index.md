@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-09-12
 ## Entities
 
 ### Persons
+- [[alex-hancock]] — Block 소프트웨어 엔지니어, [[goose]] 메인테이너·MCP Rust SDK·[[agent-client-protocol|ACP]] 작업
+- [[maximillian-piras]] — [[yutori]] 창립 디자이너, [[mousepower]]·[[task-entropy-matrix]] 제안
+- [[james-watt]] — 18세기 증기기관 제작자. 위키 첫 역사적 인물 — **마력**은 정확해서가 아니라 *시도하게 만들어서* 통했다
 - [[adam-wiggins]] — [[heroku|Heroku]] 공동창업자, [[twelve-factor-app]] 방법론 저자
 - [[andrej-karpathy]] — AI 연구자·교육자, [[llm-wiki-pattern]] 원안 저자 · [[transformer]] 강연·[[nanogpt]] 저자 ([[tech-bridge-karpathy-transformers-stanford]], sources: 3)
 - [[dzmitry-bahdanau]] — [[attention-mechanism|어텐션]] 원저자(2014), 번역 수업의 시선 이동에서 착상 ([[tech-bridge-karpathy-transformers-stanford]])
@@ -65,6 +68,9 @@ updated: 2026-09-12
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[block]] — Cash App·Square의 모회사. [[goose]]의 출발지, 위키 첫 핀테크 조직
+- [[yutori]] — 컴퓨터 사용 모델. *API·MCP로 안 될 때의 최후 수단* 으로 자기 위치를 규정
+- [[poolside-ai]] — [[agent-client-protocol|ACP]] 터미널 클라이언트 제작사(소스에 한 번 등장)
 - [[anthropic]] — Claude 모델 패밀리 개발사, AI 안전 연구 lab
 - [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입 · CEO 3부작(프론티어 RL 연기 · Hugging Face 사건 · [[openai-astra|Astra]] · Merge, sources: 4)
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
@@ -115,6 +121,7 @@ updated: 2026-09-12
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[zed]] — 텍스트 에디터, JetBrains와 함께 [[agent-client-protocol|ACP]] 공동 제안
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]]) · 제3자: **공개 출시**·채널당 메모리=사일로 ([[tech-bridge-company-brain-security]])
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
 - [[managed-agents]] — Claude Platform의 호스티드 meta-harness
@@ -129,6 +136,9 @@ updated: 2026-09-12
 - [[openclaw]] — 다섯 소스에 지나가듯 언급되는 **에이전트 플랫폼**(개인 배포·개인 위키·"claw land"). 어느 소스도 설명하지 않아 언급을 모은 페이지 (sources: 5) ⚠️ 정체는 위키의 추정
 
 ### Tools
+- [[goose]] — [[block|Block]]발 오픈소스 하네스, Linux Foundation 기증. [[agent-client-protocol|ACP]] 원격 전송을 명세
+- [[pstack]] — [[lauren-tan]]의 Cursor 플러그인(potato stack). 검증 스킬 생성·유지 + [[skill-evals|eval playbook]]
+- [[dune-architecture]] — [[grokbot|GrokBot]] 아키텍처 코드명. *"Electron 앱을 위한 Next.js"*, 에이전트가 쓰라고 설계됨
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
 - [[claude-agent-sdk]] — Anthropic 에이전트 빌딩 SDK
 - [[bun]] — JS/TS 런타임·툴킷, [[dynamic-workflows]]로 Zig→Rust 재작성 (99.8% 테스트 통과, 11일)
@@ -153,6 +163,9 @@ updated: 2026-09-12
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[agent-verification-skill]] — 에이전트가 앱을 실제로 띄우고 트레이스·시뮬레이터로 **직접 확인**하게 하는 스킬. *올바름은 주되 좋음은 아니다*
+- [[feature-map]] — 앱의 기능과 **도달 경로**(단축키·DOM 속성 포함)를 적은 파일. *"???"* 만 적힌 스크린샷 제보도 작업이 된다
+- [[skill-evals]] — 스킬용 유닛 테스트. **서브에이전트가 평가받는 줄 모르게 디렉터리를 눈가림**하고 다른 모델로 판정·`/loop`로 언덕 오르기
 - [[prompt-injection]] — 외부 콘텐츠가 에이전트를 hijack하는 공격, Anthropic의 2-layer 방어 + 스킬 파일 공급망 벡터 + 공유 사일로/위키 벡터 + 신뢰된 내부 시스템 벡터 · 성립 조건=[[lethal-trifecta|치명적 3요소]] (sources: 5)
 - [[context-resets-and-compaction]] — 장기 task에서 context window 한계를 다루는 두 전략 + Managed Agents의 third way
 - [[context-engineering]] — context window를 무엇을·어떻게 채우는가의 설계 영역
@@ -165,6 +178,8 @@ updated: 2026-09-12
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[agent-client-protocol]] — **클라이언트 → 에이전트** 방향의 개방형 표준(ACP). JSON-RPC·권한 요청·`_` 커스텀 메서드로 *사용이 표준을 형성*
+- [[agentic-stack-decomposition]] — **클라이언트 · 하네스 · 도구(MCP) · 모델** 네 구성 요소를 각각 독립 배치
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
 - [[agentic-sites]] — 방문자 의도에 맞춰 블록만 재조립하는 웹 아키텍처 (자기 사이트 RAG · 1~2초 예산 · 작은 모델, sources: 1)
 - [[transformer]] — 표현력·최적화 가능성·**GPU 효율성**을 동시에 만족해서 이긴 아키텍처. *"런타임에 재구성되는 범용 컴퓨터"* (sources: 1)
@@ -174,6 +189,8 @@ updated: 2026-09-12
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[standards-as-market-makers]] — 표준의 가치는 규격이 아니라 **보편 채택**에 있다. *"MCP의 힘은 모두가 쓴다는 것"*
+- [[verification-cost-asymmetry]] — 에이전트가 성립하는 작업은 **검증이 실행보다 싼** 작업(NP형)
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
 - [[bayesian-inference]] — prior×likelihood→posterior의 재귀 갱신. 지각·학습·의사결정을 한 틀로. calibration·GenCast 앙상블 (⚠️ [[sutton-bitter-lesson]]과 대립, sources: 1)
 - [[aleatoric-epistemic-uncertainty]] — 세계의 무작위성 vs 겪어본 적 없음. 구분이 중요한 이유는 **행동이 갈리기 때문** (sources: 1)
@@ -206,6 +223,17 @@ updated: 2026-09-12
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[agent-trust-curve]] — **병렬성은 모델이 아니라 신뢰의 함수**. 지름길이 없고 개인적이다
+- [[agent-manager-analogy]] — 매니저·헤드셰프·뒷좌석 운전자. 에이전트를 다루는 일은 **환경을 설계하는 일**
+- [[verification-bottleneck]] — 생성이 싸지며 병목이 **검증**으로 이동. 두 답: *작업을 고른다* vs *역량을 짓는다*
+- [[hard-vs-soft-enforcement]] — 코드베이스·정적 분석은 **하드**(CI 빨강), 규칙·스킬·bugbot은 **소프트**. *"PR 댓글은 코드 스멜"*
+- [[shortest-path-architecture]] — 에이전트는 지름길을 택한다 → **지름길을 정답으로** 만든다. *가장 멍청한 에이전트를 위한 설계*
+- [[organic-architecture]] — 가드레일 없는 바이브 코딩 코드베이스가 **편의에 최적화되며 통제 불능으로** 자라는 상태
+- [[greenfield-vs-brownfield-agent-risk]] — 대기업 인프라는 이미 *가장 능력이 부족한 엔지니어* 를 위한 가드레일 → **그린필드가 더 위험**
+- [[task-entropy-matrix]] — *작업 단계의 불확실성* × *수용 기준의 불확실성* 으로 에이전트에게 맡길 일을 고른다
+- [[mousepower]] — 마력의 유비. **지표가 아니라 의무** — 에이전트를 팔면 검증 루브릭도 함께 판다
+- [[agent-roi-measurement]] — 에이전트의 **측정 문제**: 얼리어답터 편향 · 토큰은 투입량 · 척도는 고객의 멘탈 모델에 맞아야
+- [[overspending-underusing-loop]] — 토큰 맥싱 → 긴축 → FOMO → 재시도의 둠 루프(용어는 Ramp)
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
 - [[harness-engineering]] — 모델 wrapper 전체 설계 (3계층·AI Layer 6요소·System Evolution·오케스트레이션), context engineering의 2026 진화 (커뮤니티 프레이밍, sources: 1)
 - [[self-harness]] — 고정 모델이 자기 하니스를 propose→validate→accept로 스스로 개선 (Shanghai AI Lab, Terminal-Bench-2.0, sources: 2)
@@ -399,13 +427,16 @@ updated: 2026-09-12
 - [[tech-bridge-build-time-vs-runtime-tools]] — Averi Kitsch · Prerna Kakkar (Google Cloud 데이터베이스): **빌드타임**(제어 평면·NL→SQL, 사람 필수) vs **런타임**(고정 SQL) 도구, 테이블 삭제 사례, *"DB는 에이전트만큼만 안전"*, [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]], 세 신원, 슈퍼유저→제로 트러스트 사다리, 바운드/인증 파라미터(JWT 클레임), 도구 설계 5규칙 ([[tech-bridge]], 2026-09-10, **19:57**, ⚠️ 당사자 · **데모 미실행** · 설명란이 본문보다 강함 · ko 주어 치환 1건)
 - [[tech-bridge-taste-labs-measuring-slop]] — Thais Castello Branco (Taste Labs 창업자): *"AI 슬롭은 내 개인적인 적"*, 훌륭함/슬롭 정의 비대칭, [[ai-slop|세 특징]], 10년치 웹사이트 200만 개 + 합성 사이트 → AI 이전 동질화·이후 맥락 무관 반복, [[slop-probes|프로브]](*LLM-as-a-judge보다 낫다*), *"취향이 아니라 판단"*, 모델 층 vs **추론 시점**, [[intentional-out-of-distribution|창의성 API]], [[structured-brand-context|Brand API]]·브랜드 인덱스, *"기준이 바닥에 있다"* ([[tech-bridge]], 2026-09-11, **14:34**, ⚠️ 당사자 · **수치 전무** · ko가 *slop*을 여섯 갈래로 · *distribution*→"유통")
 - [[tech-bridge-impeccable-design-steering]] — Paul Bakaus (Impeccable 제작자): 전후 비교(GPT-5.5 extra high), 역할 경계 붕괴·핸드오프 깨짐, [[steering-altitude|직접 조작 vs 완전 자율 사이의 고도]], 슬롭은 **움직이는 표적**(보라색 그라데이션→*Claude 베이지*), [[no-one-shot-design|원샷 불가]]·네 질문·*"아무도 결정하지 않은"*, [[adjective-verb-steering|형용사·동사 조향]]·*Leitwort*·bolder 정의·*"믿으면 실패"*, 워크플로 주입 지점·`overdrive`, **auto 없음**, 취향은 **증폭되되 배양 안 됨** ([[tech-bridge]], 2026-09-11, **15:30**, **촬영 2026 확정**, ⚠️ 당사자 · *auto*→"자동차" · *harness*→"실력" · 자기 정정 소실)
+- [[tech-bridge-acp-universal-remote]] — Alex Hancock (Block · Goose·MCP Rust SDK 메인테이너): 하네스마다 제각각인 인터페이스(*"클라이언트 앱이 단 하나뿐"*), 웹 비유, **표준이 생태계와 시장을 만든다**·*"MCP의 힘은 모두가 쓴다는 것"*, MCP는 에이전트→도구 / [[agent-client-protocol|ACP]]는 **클라이언트→에이전트**, Zed·JetBrains 출신, JSON-RPC·세션·도구 호출 알림·**권한 요청**·`_` 커스텀 메서드(**사용이 표준을 형성**), 데모 3건(Zed·Poolside AI·**어젯밤 바이브 코딩한 클라이언트**), HTTP/WebSocket 원격, [[agentic-stack-decomposition|네 구성 요소 독립 배치]], 클라이언트 UX 경쟁 ([[tech-bridge]], 2026-09-12, **10:32**, ⚠️ 당사자 · **대안·수치·보안 모델 전무** · 행사·시점 미확정 · ko가 *IP*→"IP 주소"·*Goose*→"거위"·결론의 *client*→"고객")
+- [[tech-bridge-mousepower-measuring-agents]] — Maximillian Piras (Yutori 창립 디자이너, **World's Fair**): **에이전트에겐 측정 문제가 있다**, *"우리 모두가 직간접적으로 토큰을 팔고 있다"*(자기 인센티브 선고지), [[james-watt|제임스 와트]]와 **말 방아** → **마력은 정확해서가 아니라 시도하게 만들어서 통했다**, [[overspending-underusing-loop|과지출·저활용 둠 루프]](Ramp)·Coinbase 차트, **토큰은 투입량**·결과로 추적, [[verification-bottleneck|병목은 코드 리뷰로]](*"Anthropic도 리뷰는 못 풀었다"*), [[mousepower]]는 **지표가 아니라 의무**(루브릭을 함께 팔라), [[task-entropy-matrix|엔트로피 매트릭스]]·[[verification-cost-asymmetry|NP형]] ([[tech-bridge]], 2026-09-12, **20:25**, **행사 확정·연도 미확정**, ⚠️ 당사자(자인) · **수치 전무** · ko가 *agent*를 **다섯 갈래**로·결론 부호 뒤집기)
+- [[tech-bridge-lauren-tan-trusting-agents]] — Lauren Tan (Cursor, 전 Meta React Compiler) × 진행 Colin: **채널 최장편 59:41·무챕터·첫 워크숍 형식.** [[agent-trust-curve|신뢰 곡선]](in-loop → **PR 자동 병합 + main 사후 리뷰**, 지난달 1,000건·이번 달 12일에 800건), ① [[agent-verification-skill|검증 스킬]]+[[feature-map|기능 지도]](*"???"* 스크린샷도 작업으로)·[[pstack|Pstack]]·[[skill-evals|눈가림 서브에이전트 eval]], ② [[dune-architecture|Dune]](*"Electron용 Next.js"*, `useEffect`·**코드 주석 금지**, import CI)·[[shortest-path-architecture|가장 짧은 경로 = 가장 좋은 경로]], ③ [[hard-vs-soft-enforcement|하드/소프트 강제]](*"PR 댓글은 코드 스멜"*), [[greenfield-vs-brownfield-agent-risk|그린필드가 더 위험]]·*"AI 슬롭 전에 인간 슬롭"*·[[organic-architecture]], *"무제한 토큰이 있는 AI 랩"* ([[tech-bridge]], 2026-09-12, **59:41**, **연도 2026·그달 12일 확정, 달 미확정 — 기존 GrokBot/Grok 4.6 시점 추정의 반증**, ⚠️ 당사자 · 수치 전부 자기 보고 · **설명란의 "xAI"는 자막에 없음(SpaceX AI)** · ko가 *PR*→"개인 최고 기록"·Gary **Tan**→"게리 스택")
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 366 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 352 → 366, + 2026-09-12 Tech Bridge 2편: source 2 + concept 8 + entity 4)
+- 총 페이지 수: 397 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 366 → 397, + 2026-09-12 Tech Bridge 3편: source 3 + concept 18 + entity 10)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-12 (Tech Bridge **2편**, 아흐레 연속 — 09-11 업로드분. **채널 첫 디자인·취향 축.** [[tech-bridge-taste-labs-measuring-slop|Taste Labs]]와 [[tech-bridge-impeccable-design-steering|Impeccable]]이 같은 날 같은 적([[ai-slop]])을 반대 처방(안목을 모델에 훈련 / *"취향은 배양될 수 없다"*)으로 겨냥했고, [[dhh]]·[[lena-hall]]에서 둘이던 취향 논쟁이 [[taste-vs-judgment]]의 **네 입장**이 됐다 — 넷 다 추론 시점에 사람의 결정이 남는다고 본다. [[signal-layer]]의 채점기 경계선이 [[slop-probes]]로 세 번째 이동, [[generator-evaluator-pattern]]에 **LLM이 아닌 평가자**와 **낡는 기준**(*purple gradients* → *Claude 베이지*)이 들어왔고, [[steering-altitude]]가 *auto의 확장* 흐름에 첫 반대 방향의 제품 결정을 놓았다. ⚠️ 두 편 다 당사자·수치 없음)
+- 마지막 ingest: 2026-09-13 (Tech Bridge **3편**, 열흘 연속 — 09-12 업로드분. 프로토콜·경제·실천 세 층이 **검증**에서 만났다. [[tech-bridge-acp-universal-remote|ACP]]가 [[model-context-protocol|MCP]]의 반대 방향(클라이언트→에이전트)을 채우며 [[agentic-stack-decomposition|스택을 네 칸으로]] 분해했고, [[tech-bridge-mousepower-measuring-agents|마우스파워]]와 [[tech-bridge-lauren-tan-trusting-agents|Lauren Tan 워크숍]]이 **서로를 언급하지 않으면서** 같은 진단([[verification-bottleneck]])에 도달해 반대 답을 냈다 — *검증이 비싼 작업은 고르지 마라* vs *검증을 스킬로 만들어 넘겨라*. [[james-watt]]가 위키 첫 역사적 인물로, [[trusted-throughput]]이 *긴축* 이라는 같은 단어에서 [[overspending-underusing-loop]]과 만났다. **채널 최장편 59:41·두 번째 무챕터·첫 워크숍 형식.** ⚠️ Lauren Tan 편이 [[grokbot]]·[[grok-4-6]]·[[tech-bridge-cursor-legacy-refactoring]]의 **업로드 날짜 기반 시점 추정에 반증**을 줬다 — 어느 날짜도 채택하지 않고 표시만 했다)
 - 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-12
+- 마지막 갱신: 2026-09-13

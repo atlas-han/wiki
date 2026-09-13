@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-01
-updated: 2026-09-10
+updated: 2026-09-13
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -143,6 +143,22 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 ## 정반대 형태 — 사람이 여럿, 에이전트는 하나 (2026-09-10)
 
 [[tech-bridge-company-brain-security]]의 [[multiplayer-agent-context]]는 이 개념의 **거울상**이다. 이 개념은 *에이전트가 여럿이고 사람이 매니저* 인데, 저쪽은 *사람이 여럿이고 에이전트는 하나* 다(협업 인시던트 관리 — 여러 사람이 한 에이전트로 로그 조회·PR·배포). 문제도 거울상이다 — 이 개념의 병목이 **코디네이터**(에이전트 간 조정)라면 저쪽의 병목은 **권한 상승**(사람 간 권한 혼합). 그리고 저쪽이 *"회사 두뇌 지식이 가장 많이 만들어지는 상호작용"* 이라 주장하는 것(사람들의 논쟁이 지식을 만든다)은 이 개념의 봇 팀에는 없는 요소다 — 봇들은 서로 논쟁하지 않는다.
+
+## 팀을 굴리기까지의 경로 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]는 이 페이지가 그린 **도착점의 앞 구간**을 채운다. 봇 팀을 가진 상태는 **결과**이고, 거기 가는 것은 [[agent-trust-curve|신뢰 곡선]]을 오르는 일이다.
+
+> **하나의 출력조차 못 믿는데 100개를 띄울 수는 없습니다.**
+
+오른쪽 끝의 상태가 수치로 서술된다 — **에이전트가 PR을 자동 병합하고 사람은 main에서 사후 리뷰**(*"오늘 일어나 보니 PR 20개가 이미 랜딩돼 있었고 좋았습니다"*).
+
+**비엔지니어의 기여**가 이 그림의 새 부분이다 — PM·디자이너가 [[grokbot|GrokBot]]으로 직접 코드를 내보내고 화자는 리뷰만 한다. 화자는 그것을 **아키텍처가 버틴다는 증거**로 읽는다:
+
+> **아주 엄격한 제약이 엔지니어링 전문가가 아닌 사람도 높은 수준으로 기여하게** 해 줍니다.
+
+→ [[dune-architecture]] · [[hard-vs-soft-enforcement]] · [[agent-org-adoption]]
+
+> ⚠️ 이 소스의 유비는 **일방향**이다([[agent-manager-analogy]]) — 이 페이지가 기록한 *정체성을 가진 팀원* 과 달리, 에이전트가 되묻거나 거절하는 경로가 서술되지 않는다. 그리고 **자동 병합의 안전망**(회귀 사례·롤백 빈도)이 없다.
 
 ## References
 

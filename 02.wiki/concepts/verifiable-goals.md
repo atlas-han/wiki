@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
 related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-05-25
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Verifiable Goals
@@ -110,6 +110,22 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 위 "경계: verifier를 만들 수 없는 곳"이 *주관 영역* 을 그 밖에 뒀다면, [[taste-labs|Taste Labs]]는 그 안에 verifier를 세우려 한다 — 디자인을 *거의 결정론적인 조각*(팔레트·대비·정렬)으로 **분해**하고 조각마다 [[slop-probes|소형 분류기]]를 훈련한다. 경계선은 사라지지 않고 **분해되지 않는 것**(전문가가 갈리는 미학)으로 옮겨간다. ⚠️ 수치 없음.
 
 같은 날 [[tech-bridge-impeccable-design-steering]]은 반대편 — 디자인에는 자동 verifier가 없다고 보고(*"사용자도 의견이 있다"*) **사람 verifier**를 문장으로 심는다: *"누군가에게 보여주고 'AI가 했다'고 말하라. 믿으면 실패."* [[signal-layer]]의 *SRE에게 README를 주고 설명하게 하라* 와 같은 형태다. → [[adjective-verb-steering]] · [[steering-altitude]]
+
+## 한 단계 앞의 결정 — 애초에 검증 가능한 작업을 고르라 (2026-09-12 마우스파워 편)
+
+[[tech-bridge-mousepower-measuring-agents]]의 [[task-entropy-matrix|엔트로피 매트릭스]]가 이 개념보다 **한 단계 앞**에 선다. 이 페이지가 *작업을 검증 가능하게 만들라* 였다면, 그쪽은 **그렇게 만들 수 없는 작업은 고르지 말라**고 한다.
+
+> **수용 기준의 불확실성이 높으면 검증이 실행과 구분되지 않는 지점**에 옵니다. **사람이 그 일을 다시 해야 한다면, 그 일에 왜 에이전트를 만듭니까.**
+
+그리고 성공 기준을 **파는 쪽의 의무**로 돌린다 — *"에이전트를 팔 거라면 그것이 일을 잘하는지 검증하는 루브릭도 함께 줘야 한다."* → [[mousepower]]
+
+## 목표를 CI 실패로 바꾸기 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]는 검증 가능화의 **가장 강한 형태**를 제시한다 — 사람이 말로 강제하던 기준을 **하드 제약**으로 옮기는 것.
+
+> ***"PR에 댓글을 다는 대신, 이걸 어떻게 하드 규칙으로 바꾸지? 린트 규칙으로? CI 실패로? 아니면 이 문제를 아예 범주적으로 없애 버릴 수는 없나?"***
+
+→ [[hard-vs-soft-enforcement]] · [[executable-standards]]
 
 ## References
 

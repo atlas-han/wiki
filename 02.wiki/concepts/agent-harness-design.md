@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
 related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote]
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-09-13
 ---
 
 # Agent Harness Design
@@ -178,6 +178,20 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 이 정의는 이 페이지의 하네스관과 **한 지점에서 갈린다.** 여기서 하네스는 *"현재 모델의 오류 모드를 보완하는 것"*([[harness-pruning]])이라 모델이 좋아지면 줄어든다. Huang의 하네스는 **결함 보완이 아니라 맥락 부여**라서 모델이 아무리 좋아져도 — *"AGI가 등장하더라도"* — 사라지지 않는다. 둘은 모순이 아니라 **하네스의 두 층**이다: 결함 보완층은 [[harness-pruning]]대로 얇아지고, 맥락 부여층([[context-engineering]]·[[agent-skills]]·[[agent-org-adoption]])은 남는다. ⚠️ 이 층 구분은 위키의 정리다.
 
 > ⚠️ 인프라 판매자의 정책 무대 발언이다. "하네스는 남는다"는 주장은 "그러니 각국·각사가 자체 지능에 투자하라"는 처방과 짝이다 → [[intelligence-as-infrastructure]].
+
+## 하네스의 한 줄 정의와 배포 단위화 (2026-09-12 편)
+
+[[tech-bridge-acp-universal-remote]]가 하네스를 **한 줄로 정의**한다:
+
+> **하네스**는 **도구 호출 루프를 구현하는 프로그램**입니다.
+
+그리고 새 문제를 제기한다 — **하네스는 많은데 그것을 조종하는 인터페이스가 제각각**이다.
+
+> 최악의 경우, 어떤 하네스는 **그것을 제어할 수 있는 클라이언트 애플리케이션이 문자 그대로 하나뿐**일 수도 있죠.
+
+[[agent-client-protocol|ACP]]는 이 축 — **클라이언트가 하네스를 제어하는 표준** — 을 다룬다. 결과적으로 하네스는 [[agentic-stack-decomposition|네 구성 요소]] 중 하나로서 **교체·이전 가능한 배포 단위**가 된다.
+
+> 이 위키가 하네스를 *프롬프트·컨텍스트·도구를 조립하는 층* 으로 다뤄 왔다면, 이 소스는 **그 층을 바깥에서 어떻게 조종하는가**를 새 축으로 붙인다.
 
 ## References
 

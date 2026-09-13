@@ -5,9 +5,9 @@ category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
 related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-02
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # Trusted Throughput
@@ -176,6 +176,28 @@ Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacev
 **세 소스가 같은 형태의 주장을 한다는 것이 이 페이지의 논지를 강화한다** — [[mingsheng-hong]]이 조직 운영에서, IBM이 개발 프로세스에서, [[karan-vaidya]]가 에이전트 런타임에서. 셋 다 *신뢰를 만드는 장치가 처리량의 조건* 이라고 말하고, 셋 다 **그 장치가 균일한 게이트가 아니라 위험에 비례한 게이트여야 한다**고 말한다.
 
 > ⚠️ 세 소스 모두 **가드레일 자체의 비용을 정량화하지 않는다.** 모든 커밋 검증·상시 정적 분석·모든 파괴적 행동의 샌드박스 경유가 무엇을 얼마나 느리게 하는지 어느 쪽도 답하지 않는다.
+
+## 같은 단어, 다른 층 — 마우스파워 편 (2026-09-12)
+
+[[tech-bridge-mousepower-measuring-agents]]가 이 페이지와 **같은 단어에서 만난다.** 이 페이지의 원 소스([[ironclad|Ironclad]])는 *"'긴축(austerity)'에 관한 것이 아니라 토큰 사용에 대한 ROI를 향상시키는 것"* 이라고 했는데, [[maximillian-piras]]는 **긴축을 악순환의 한 국면**으로 그린다:
+
+> **토큰 맥싱으로 스스로를 긴축(austerity)으로 몰아넣고, 그러다 루프에서 이탈했다가, FOMO가 다시 차오르면 재시도**하는 악순환이죠.
+
+→ [[overspending-underusing-loop]]
+
+토큰에 대한 처방도 같다:
+
+> 토큰은 **내부 시스템의 측정값으로는 유용**하지만 **결국 산출물일 뿐**이고 (…) **우리가 산 토큰으로 버그를 몇 개 잡았나? 지원 요청을 몇 개 닫았나?**
+
+**차이는 청중이다.** 이 페이지의 지표는 **조직이 스스로에게** 쓰는 것이고, 마우스파워 편은 **판매자가 고객에게 가치를 전달하는 문제**를 다룬다. 그래서 한 조건이 추가된다 — ***"측정은 그것을 쓰는 고객의 멘탈 모델에 맞아야 한다."*** → [[agent-roi-measurement]] · [[mousepower]]
+
+**토큰 리더보드**가 이 페이지의 Goodhart 경고에 붙는 구체적 사례로 등장한다.
+
+## ⚠️ Goodhart의 실례 — PR 수 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]의 자기 보고 수치(**지난달 PR 1,000건 · 이번 달 12일 시점 800건 · 하룻밤 20건 자동 병합**)는 **이 페이지가 경고한 지표의 모양 그 자체**다. 화자도 먼저 인정한다 — *"이 코드 중 실제로 좋은 게 얼마나 되냐고 물으실 겁니다. 충분히 물을 만한 질문입니다."*
+
+다만 그쪽의 답은 **처리량이 아니라 신뢰**다 → [[agent-trust-curve]]. 그리고 **평균 PR 크기는 본인이 모른다**고 답했다 — 분모가 없는 분자다.
 
 ## References
 

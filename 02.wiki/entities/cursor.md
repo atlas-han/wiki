@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-01
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # Cursor
@@ -42,6 +42,20 @@ AI 코딩 도구·에이전트 회사. 본 위키 첫 등장은 [[tech-bridge-gr
 **사내 활용**: 문서-구현 동기화를 검사하고 PR을 여는 **Slack 봇**, 금요일 백로그 일괄 실행 → 월요일 PR 리뷰, **유럽/아시아 팀 비동기 인계**, 온콜 인시던트 초기 조사 automation.
 
 > ⚠️ 전부 **당사자 진술**이며 독립 확인이 없다. 발표자 이름은 소스 안에서 **Amita / Amriita** 로 갈리고 설명란에 없어 **위키가 어느 표기도 채택하지 않았다.**
+
+## 내부 실천 — 검증·아키텍처·강제 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 Cursor 내부의 작업 방식을 여럿 드러낸다.
+
+- **agents window의 사내 코드명은 `glass`** 다. [[lauren-tan]]이 만든 첫 스킬 중 하나가 `control glass`.
+- **agents window는 React 애플리케이션**이고, 화자는 원래 **cloud agents 팀**에 합류할 예정이었다가 React 경험 때문에 이쪽을 맡았다. 당시 **출시까지 일주일**이었다.
+- **성능 문제가 상존한다** — *"머지되는 pull request가 너무 많아 그중 어느 하나가 성능·안정성·신뢰성을 회귀시킬 수 있다."* 원인의 하나는 **Electron 렌더러/메인 스레드 격리가 부실**한 것(60fps = 프레임당 16ms).
+- **agents window에는 아직 [[dune-architecture|Dune]] 아키텍처가 없다.** 화자가 옮길 계획이라고 말한다.
+- **bugbot** — *"CI에서 도는 Cursor의 코드 리뷰 도구"*. [[hard-vs-soft-enforcement|강제의 층]]에서는 **소프트**로 분류된다.
+- **`/loop`** — eval을 *"전부 10점 만점이 될 때까지"* 반복시키는 데 쓴다. → [[skill-evals]]
+- **내부 피드백 채널** — 슬랙에 agents window·GrokBot 피드백이 모이는데 *"제보 품질이 아주 나쁠 때가 많다"*. → [[feature-map]]
+- **모델 다양성이 eval의 자산**이다 — *"Cursor의 좋은 점 하나는 아주 많은 모델을 지원한다는 것"* 이라 스킬을 모델 행렬에 걸쳐 평가할 수 있다.
+- 화자가 Cursor를 **"AI 랩"** 이라 부르고 **무제한 토큰**을 인정한다.
 
 ## References
 

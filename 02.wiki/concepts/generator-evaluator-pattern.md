@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-05-25
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # Generator–Evaluator Pattern
@@ -198,6 +198,24 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 **③ 평가 기준을 생성자 안에 넣은 경우.** [[impeccable]]의 *bolder* 파일에는 *"누군가에게 보여주고 'AI가 더 bolder하게 만들었다'고 말하라. 그들이 믿으면 실패한 것이다"* 라는 문장이 있고 *"에이전트가 종종 돌아본다"* 고 한다. 이 페이지의 근거(*"생성자를 비판적으로 만드는 것보다 별도 평가자를 회의적으로 튜닝하는 게 훨씬 tractable"*)와 **반대 방향**이다. 소스는 자기 평가 편향을 다루지 않으며 효과는 일화다. → [[adjective-verb-steering]]
 
 부수: Paul의 *"디자인은 원샷할 수 없다 — 멀티샷이어야"* 는 이 페이지의 5~15회 반복과 같은 진단이되, 반복을 돌리는 것이 **에이전트-에이전트가 아니라 사람-에이전트**다. → [[no-one-shot-design]]
+
+## 이 패턴이 성립하는 조건 (2026-09-12 마우스파워 편)
+
+[[tech-bridge-mousepower-measuring-agents]]가 이 패턴의 **경제적 정당화**를 제공한다.
+
+> **검증의 반복 가능한 패턴을 찾아낼 수 있다면 그 문제에도 에이전트를 던져 넣을 수 있습니다.** 그러니 **에이전트만 만드는 게 아니라, 그 에이전트의 작업을 검증하는 에이전트도 만드는** 거죠.
+
+전제는 **검증이 실행보다 싸다**는 것이다(*"NP형 문제의 모양"*). 그 조건이 깨지면 패턴 자체가 무의미해진다:
+
+> **수용 기준의 불확실성이 높으면 검증이 실행과 구분되지 않는 지점**에 옵니다. **사람이 그 일을 다시 해야 한다면, 그 일에 왜 에이전트를 만듭니까.**
+
+→ [[verification-cost-asymmetry]] · [[task-entropy-matrix]]
+
+## 판정자의 편향을 다루는 실무 절차 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]의 [[skill-evals|eval playbook]]이 이 패턴을 스킬 개발에 적용한다 — **다른 모델의 판정 에이전트로 교차 참조**하고, **서브에이전트가 평가받는 중임을 모르도록 디렉터리 이름을 눈가림**한다.
+
+> ⚠️ 그래도 **루브릭을 만드는 것은 여전히 코디네이터 에이전트**다. 작성자=검증자 문제는 2026-09-09 이래 **세 번째로 열린 채 남는다.**
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [creativity, ai-slop, design, generation, temperature, rules]
 aliases: [creativity API, 창의성 API, purposely out of distribution]
 related: [ai-slop, generator-evaluator-pattern, signal-layer, structured-brand-context, adjective-verb-steering, impeccable]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # 의도적 분포 이탈
@@ -47,6 +47,22 @@ updated: 2026-09-12
 - "몇 가지"를 **누가 어떻게 고르는가** — 사람인지 시스템인지, 무엇을 근거로. 없음.
 - 도메인 규칙의 출처 — 마이닝인지 사람이 쓴 것인지 없음.
 - 이탈의 정도를 재는 방법 — [[slop-probes|프로브]]가 반복을 재듯 *이탈의 성공* 을 재는 장치는 없다.
+
+## ⚠️ 같은 용어, 반대 방향 (2026-09-12 마우스파워 편)
+
+[[tech-bridge-mousepower-measuring-agents]]는 *out of distribution* 을 **회피 기준**으로 쓴다 — 이 페이지가 그것을 **처방**으로 쓰는 것과 정반대다.
+
+> **단계의 불확실성이 아주 높으면** 정보가 아주 예측 불가능해서 **사전학습에서 분포 밖(out of distribution)일 위험이 크고 강화학습의 보상도 아주 희소**합니다. **그 데이터를 어떻게 모델링할지 알아내기가 훨씬 어려우니 에이전트에게 좋은 작업이 아닐 수 있습니다.**
+
+**모순이 아니라 층이 다르다.**
+
+| | 이 페이지 (Taste Labs) | 마우스파워 편 |
+|---|---|---|
+| 대상 | **출력** — 생성물이 분포 밖으로 나가야 슬롭을 벗는다 | **작업** — 작업이 분포 밖이면 에이전트가 못 한다 |
+| 통제 | 규칙을 알고 **몇 가지만 의도적으로** 어긴다 | 통제 불가 — 작업 자체의 성질 |
+| 판정 | 창의성 | 학습 가능성 |
+
+→ [[task-entropy-matrix]]
 
 ## References
 

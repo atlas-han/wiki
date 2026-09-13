@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 # 취향과 판단
@@ -58,6 +58,19 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 
 - 넷 다 **측정치가 없다.** DHH·Hall은 관찰, Thais·Paul은 당사자.
 - [[cognitive-offloading]]([[andrew-ng]])의 질문 — *판단을 기를 동기가 사라지면* — 은 어느 소스도 다루지 않는다. Thais의 *"평균적인 사람도 훌륭한 것을 만들게"* 는 판단을 **대신하는** 것인지 **기르는** 것인지 모호하다.
+
+## 다섯 번째 입장 — 판단은 "에이전트를 신뢰할지 정하는 일" (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 이 페이지의 네 입장(DHH · Hall · Thais · Paul)에 **다섯 번째**를 더한다. [[lauren-tan]]에게 취향과 판단은 **미학이 아니라 위임 결정**에 쓰인다.
+
+> [신뢰를 쌓는 데는] **취향과 판단이 많이 듭니다.**
+
+두 자리에서 구체화된다:
+
+- **곡선을 오르는 판정** — 어디까지 자동화할지는 *"여러분 개인의 에이전트 신뢰 수준"* 이고 **지름길이 없다.** → [[agent-trust-curve]]
+- **스킬을 유지하는 관찰** — *"스킬을 유지하는 건 꽤 어렵습니다. **취향과 관찰이 많이 필요**합니다. **뒷좌석 운전자 노릇을 아주 잘해야** 해요."* → [[skill-evals]] · [[agent-manager-analogy]]
+
+그리고 **취향이 닿지 않는 곳의 경계**를 긋는다 — 검증은 *올바름* 까지이고 *좋음* 은 사람이 남는다(→ [[agent-verification-skill]]). 이는 09-12 두 편이 도달한 *"추론 시점에 사람이 남는다"* 와 같은 자리다.
 
 ## References
 

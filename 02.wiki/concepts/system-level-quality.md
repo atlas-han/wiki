@@ -6,9 +6,9 @@ tags: [code-review, distributed-systems, ripple-effect, architecture]
 aliases: [시스템 단위 평가, 파일 단위 리뷰]
 related: [decision-quality, behavior-validated-trust, agent-distributed-systems, surgical-edits, code-knowledge-graph]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # 시스템 단위 품질 평가

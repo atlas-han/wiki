@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-01
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # GrokBot
@@ -41,6 +41,22 @@ updated: 2026-09-09
 
 > ⚠️ *"일반 지식 제품(general knowledge product)"* 이라는 표현은 이 소스가 처음 쓴다. GrokBot이 코딩 특화가 아니라는 [[cursor]] 페이지의 서술과 일치한다.
 > **"다음 주 목요일"** 은 이 소스의 촬영 시점 추정(2026-09-01 무렵)과 맞물리는 단서이며 날짜를 확정하지 않는다.
+
+## 두 번째 소스 — 만들어진 방식과 재작성 (2026-09-12 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 GrokBot의 **코드베이스 쪽 이야기**를 준다.
+
+- **바이브 코딩된 그린필드로 시작했다** — *"아주 빠르게 바이브 코딩됐습니다. **사람은 코드를 전혀 읽지 않았습니다.**"* → [[organic-architecture]]
+- **전체를 다시 짰다** — **PR 600건 이상**을 들여 [[dune-architecture|Dune]] 아키텍처로 리팩터링(자기 보고).
+- 프레임워크의 명사가 GrokBot의 개념이다 — `feature` · `entry point` · **`transcript card`**(채팅에 보이는 카드).
+- **가상화(virtualization)** 가 *"누군가 만든 새 라이브러리"* 로 돌아간다 — **이름은 자막에서 확정 불가.**
+- **[[grokbot|Benny]]의 동작이 구체화됐다** — 버그 리포트를 받아 **클라우드에서 자기 데스크톱을 열고 Cursor를 돌려** control 스킬로 재현한다. 소스의 예에서 Benny는 **버그를 재현했으나 이미 main에서 고쳐져 있음을 확인**해 주었다.
+- **비엔지니어의 기여 경로** — PM·디자이너가 직접 기능을 내보내고 엔지니어는 리뷰만 한다. 화자는 이를 *"Dune 아키텍처가 버티고 있다는 증거"* 로 읽는다.
+- **위치 규정** — Cursor의 기존 표면(agents window·CLI·IDE)은 **파워 유저 도구**였고 GrokBot은 *"기술 분야가 아닌 사람들에게 결정적 순간"*, *"iMessage처럼 보인다"*.
+
+> ⚠️ **출시일 기록을 정정할 근거가 생겼다(확정은 하지 않는다).** 위 *"인터뷰 전날 베타 출시(즉 2026-08-30 전후)"* 는 **[[tech-bridge-grokbot-agent-teams]]의 Tech Bridge 업로드 날짜(08-31)에서 끌어온 추정**이다. 그런데 같은 날 열린 이 워크숍에서 화자는 **GrokBot이 "어제" 출시됐고 [[grok-4-6|Grok 4.6]]이 "오늘" 발표됐으며 "이번 달은 아직 12일밖에 안 됐다"** 고 말한다(양 트랙 일치). **08-30·08-31은 12일이 아니다.**
+>
+> 이 위키는 2026-09-03에 **"업로드 날짜 ≠ 촬영 날짜"** 를 원칙으로 세웠는데 이 페이지에는 적용되지 않았다. **달을 확정할 근거가 없으므로 어느 쪽도 채택하지 않고 반증 증거만 표시한다.** 자세한 것은 [[tech-bridge-lauren-tan-trusting-agents]]의 시점 절.
 
 ## References
 

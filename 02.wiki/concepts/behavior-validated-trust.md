@@ -6,9 +6,9 @@ tags: [testing, trust, evidence, observability, authorship]
 aliases: [행동 검증, 작성자 신뢰, evidence not authorship]
 related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-13
 ---
 
 # 행동 검증 기반 신뢰
@@ -49,6 +49,22 @@ updated: 2026-09-10
 ## 그리고 위키에는 테스트가 없다 (2026-09-10)
 
 [[tech-bridge-company-brain-security]]가 이 개념과 **정면으로 마주 보는** 규칙을 놓는다 — *"모든 변경이 사람의 이름으로 뒷받침되게 하라. 'Claude가 추가했다'는 허용되지 않는다."* → [[named-human-accountability]]. 그런데 묻는 것이 다르다: 이 개념은 *믿어도 되는가*(머지 전), 저 규칙은 *문제였을 때 누구에게 가는가*(사고 후). 둘은 양립하며 어느 소스도 그 구분을 짓지 않는다. 그리고 그 규칙이 드러내는 전제 하나 — **공유 지식에는 테스트가 없다.** 사실의 정확성은 코드처럼 실행해 검증할 수 없으므로, 코드에서는 evidence가 authorship을 대체해도 위키에서는 사람 이름이 마지막 보루로 남는다. 이 개념의 적용 범위가 *검증 가능한 산출물* 에 한정된다는 것이 이 대비로 보인다.
+
+## 검증이 보증하는 범위의 경계 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]가 이 개념의 **경계를 정확히 긋는다.**
+
+> [검증은] **에이전트가 좋은 코드를 쓴다는 보장은 아닙니다.** 하지만 **적어도 올바른(correct) 코드**를 쓰게 해 줍니다. **에이전트를 신뢰할 수 있게 되는 데 아주 큰 진전**이죠.
+
+**증거가 보증하는 것은 동작의 올바름까지이고 설계의 좋음은 아니다.** 좋음은 여전히 [[taste-vs-judgment|판단]]의 영역으로 남는다 — 화자도 곡선을 오르는 데 필요한 것을 *"취향과 판단"* 이라고 부른다.
+
+검증의 형태도 구체화된다 — **에이전트가 앱을 실제로 띄우고 CPU 트레이스·힙 스냅샷·시뮬레이터로 직접 확인**하는 것. → [[agent-verification-skill]]
+
+그리고 정적 분석·컴파일러가 같은 신뢰를 준다:
+
+> [Rust의 컴파일러는] **인간 엔지니어가 더 이상 직접 확인하러 갈 필요가 없다는 신뢰와 확신**을 줍니다.
+
+→ [[hard-vs-soft-enforcement]] · [[verification-bottleneck]]
 
 ## References
 

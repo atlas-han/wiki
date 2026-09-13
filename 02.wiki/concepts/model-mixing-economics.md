@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-13
 ---
 
 # 모델 혼합의 경제학
@@ -51,6 +51,18 @@ updated: 2026-09-09
 그리고 이것을 가능하게 하는 것이 [[harness-engineering|하네스]]다 — Cursor는 플랫폼과 모델 사이의 층(도구 실행·캐시 관리·동적 컨텍스트 관리·컨텍스트 조립)을 **cursor harness**라 부르고, 모델 교체가 그 층 위에서 일어난다.
 
 > ⚠️ **당사자 진술.** 모델 유연성을 파는 회사가 모델 유연성이 중요하다고 말하는 구조다. 경쟁 모델의 가격·성능 비교도 판매자 진술이며 독립 확인이 없다.
+
+## 두 개의 새 사례 (2026-09-12)
+
+**Coinbase** — [[tech-bridge-mousepower-measuring-agents]]가 드는 반례. CEO가 X에 올린 차트로, **내부적으로 어떤 모델로 시작할지 기본값을 바꾸고 프런티어 모델을 가장 어려운 작업에만 남겼더니 AI 지출이 토큰 사용량에서 갈라지기 시작**했다. 다만 평가는 유보적이다 — *"좋은 출발이지만 문제는 여전히 토큰에 너무 집중돼 있다"*(→ [[overspending-underusing-loop]]). **수치는 자막에 없다.**
+
+**"Fable 급이 아닌 에이전트"** — [[tech-bridge-lauren-tan-trusting-agents]]가 믹스의 **다른 방향**을 제시한다. 모델을 고르는 대신 **코드베이스를 고쳐서 작은 모델이 통하게** 만든다:
+
+> **토큰을 써서 가장 순진하고 가장 멍청한 에이전트조차 일을 잘하도록 코드베이스를 세팅할 것인가.** 그 지점에 도달하면 **Fable 급이 아닌 에이전트조차 코드를 아주 훌륭하게 씁니다.**
+
+→ [[shortest-path-architecture]] · [[dune-architecture]]
+
+그리고 [[grok-4-6|Grok 4.6]]에 대한 방향 진술이 반복된다 — *"가장 큰 모델을 만들고 싶은 게 아닙니다. 돌리는 데 극도로 비싸니까요. 거대할 필요 없이 아주 똑똑하면서 추론 비용이 크지 않은 스위트 스팟."* ⚠️ 가격 진술(*"토큰당 비용이 4.5와 같다"*)에는 **화자 본인의 유보**가 붙어 있다.
 
 ## References
 

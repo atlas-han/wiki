@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote]
 created: 2026-05-25
-updated: 2026-09-11
+updated: 2026-09-13
 ---
 
 # Model Context Protocol (MCP)
@@ -101,6 +101,24 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 같은 소스에서 나온 사실 몇 가지: 호스팅 버전 **Google managed MCP**(관리형 MCP + Toolbox 합산 **월 도구 호출 2천만 건**, 자기 진술) · 연결 대상으로 *"에이전트·IDE·**하네스**"* — Gemini CLI, Antigravity, *"Cloud Code"*(Google Cloud Code인지 [[claude-code|Claude Code]]인지 **판정 불가**) · 그리고 도구 설명·읽기/쓰기 분리·조치 가능한 오류 등 [[agent-tool-design-practices|도구 설계 다섯 규칙]].
 
 [[tech-bridge-agent-knowledge-four-ways|IBM 편]]이 MCP를 *"바깥에서 실제로 조회해야 하는 것"* 에 배정했는데, 이 소스는 그 조회가 **어떻게 안전해지는가**를 데이터베이스에서 보여준다. 그리고 *하네스* 라는 말이 Google 엔지니어의 입에서 에이전트·IDE와 나란히 쓰이는 것은 [[agent-harness-design]]이 적어 둔 용어 확산의 한 관측이다.
+
+## 반대 방향의 표준 — ACP (2026-09-12 편)
+
+[[tech-bridge-acp-universal-remote]]가 MCP의 위치를 **방향으로** 정의한다. MCP는 **에이전트 → 도구** 이고, **클라이언트 → 에이전트** 방향에는 표준이 없었다 — 그 자리를 [[agent-client-protocol|ACP]]가 맡는다.
+
+그리고 MCP의 성공 요인에 대한 진술이 하나 더 붙는다:
+
+> **MCP의 가장 강력한 점은 MCP 자체의 무엇이 아니라, 모두가 MCP를 쓴다는 것**입니다. 그래서 전 세계에 **수천~수만 개의 서버**가 있고, 모든 에이전트가 거기 연결해 다른 시스템에서 일을 할 수 있습니다.
+
+**규격이 아니라 보편 채택을 가치의 근거로 든다** → [[standards-as-market-makers]]. 화자([[alex-hancock]])는 MCP 메인테이너이자 **Rust SDK** 담당이다.
+
+[[agentic-stack-decomposition]]에서 MCP는 네 칸 중 **도구** 칸을 맡고, 이미 **원격 전송을 가진 층**으로 분류된다.
+
+> ⚠️ 오프닝에서 **MCP의 tasks 기능**이 언급되지만(앞 발표자가 다룬 주제) 설명되지 않는다. 위키가 아직 모르는 기능이다.
+
+## 최후의 수단으로서의 컴퓨터 사용 (2026-09-12 편)
+
+[[tech-bridge-mousepower-measuring-agents]]는 MCP를 **선호 경로**로 놓는다 — [[yutori|Yutori]]의 컴퓨터 사용 모델은 *"API나 MCP에서 정보를 얻을 수 없을 때"* 쓰는 것이고 *"당연히 API·MCP보다는 비효율적"* 이다.
 
 ## References
 

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, verification, culture, figma]
 related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams, trusted-throughput, token-roles, company-brain]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
 created: 2026-08-29
-updated: 2026-09-10
+updated: 2026-09-13
 ---
 
 # Agent Org Adoption
@@ -88,6 +88,26 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 ## 키우는 것이지 만드는 것이 아니다 (2026-09-10 · [[tech-bridge-company-brain-security]])
 
 이 페이지의 *"에이전트 우선 재설계는 가장 흔한 실수"* 와 같은 결의 진술이 **지식 베이스 도입**에 대해 나왔다. [[tanmai-gopal]]: *"100년 된 조직의 회사 두뇌는 만들 수 없어요. 자기 가족 것도 겨우 만들까 말까인데. (…) 회사에서 일의 일부를 하는 각 사람이 회사 두뇌의 자기 몫을 소유하고 만드는 것입니다. **만드는(build) 게 아니라 키우는(grow)** 겁니다."* 2년짜리 프로젝트 대신 **셀프 서비스 누적** — 그리고 그 누적이 실제로 일어나는지의 지표로 **일일 업데이트 수**를 제안한다 → [[company-brain]]. 이 페이지의 3막 곡선으로 보면, 그 지표가 우상향하는 것이 3막(정착)의 신호다. ⚠️ 자사 2개월 데이터뿐.
+
+## "우리는 표본이 아니다" (2026-09-12 마우스파워 편)
+
+[[tech-bridge-mousepower-measuring-agents]]가 도입 논의에 **표본 문제**를 들여온다.
+
+> **이 방의 모두가 아주 편향돼 있고, 우리는 얼리어답터**입니다. (…) **결국 우리가 이 기술을 도입하도록 도우려는 사람들을 우리가 대표하지는 않습니다.** 어떤 사람들은 **여전히 ChatGPT에 복붙**하고 있습니다.
+
+> 우리 모두가 어떤 식으로든, **직간접적으로 토큰을 팔고 있다**는 걸 스스로 되새기는 게 중요하다고 생각합니다.
+
+역사적 모델은 [[james-watt]]다 — 도입의 장벽이 성능이 아니라 **인지 부조화**이고, 처방은 **상대의 멘탈 모델 위에 지표를 세우는 것**이다. → [[mousepower]] · [[agent-roi-measurement]]
+
+## 도입 준비도를 인프라로 재기 (2026-09-12 Lauren Tan 편)
+
+[[tech-bridge-lauren-tan-trusting-agents]]는 준비도를 *조직의 AI 성숙도* 가 아니라 **기존 엔지니어링 인프라의 엄격함**으로 잰다.
+
+> Meta나 Google 같은 큰 회사의 인프라는 — 말하기 안 좋지만 — **팀에서 가장 능력이 부족한 엔지니어를 기준으로** 설계돼 있습니다. (…) **그 수준의 인프라가 이미 있으면 여러분의 에이전트는 이미 꽤 견실하게 일할 수 있습니다.**
+
+→ [[greenfield-vs-brownfield-agent-risk]]
+
+그리고 **비엔지니어의 기여**가 도입의 지표로 제시된다 — PM·디자이너가 [[grokbot|GrokBot]]으로 직접 기능을 내보내고 엔지니어는 리뷰만 한다. 화자는 [[grokbot|GrokBot]]을 *"기술 분야가 아닌 사람들에게 결정적 순간"* 이라 부르고, 근거는 **인터페이스**다(*"iMessage처럼 보입니다"*).
 
 ## References
 
