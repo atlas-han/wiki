@@ -46,8 +46,11 @@ sources:
   - tech-bridge-acp-universal-remote
   - tech-bridge-mousepower-measuring-agents
   - tech-bridge-lauren-tan-trusting-agents
+  - tech-bridge-ambitious-software-agent-era
+  - tech-bridge-pstack-third-party-review
+  - tech-bridge-zuckerberg-muse-personal-agent
 created: 2026-06-03
-updated: 2026-09-13
+updated: 2026-09-14
 ---
 
 # Tech Bridge
@@ -234,7 +237,38 @@ updated: 2026-09-13
 
 > ⚠️ **당사자 진술 비중은 여전히 높다.** 세 편 다 자기 프로젝트·자기 회사다. 다만 **마우스파워 편은 화자가 자기 판매자 위치를 먼저 밝힌 첫 사례**이고(*"우리 모두가 직간접적으로 토큰을 팔고 있다"*), Lauren Tan 편은 **무제한 토큰을 인정**한 뒤 답한다.
 
+## 2026-09-13 업로드 3편 — 만드는 쪽, 쓰는 쪽, 파는 쪽 (2026-09-14 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-ambitious-software-agent-era]] ([[jonathan-kelley]]/[[dioxus]]) | 18:45 | 컨퍼런스 단독 발표 · 당사자(프로젝트 창시자·인수사 채용 공고로 끝남) · **촬영 2026 확정, 행사명 없음** |
+| [[tech-bridge-pstack-third-party-review]] (**화자 미상**) | 11:34 | **제3자 리뷰** · 화면 녹화 해설 · 리뷰어도 이해관계 있음(자기 제품·자기 강의) |
+| [[tech-bridge-zuckerberg-muse-personal-agent]] ([[mark-zuckerberg]]/[[meta]]) | **65:19** | 팟캐스트 대담 · 당사자(CEO·출시 제품) · 촬영 시점 미확정 |
+
+**채널 기록 두 가지가 갱신됐다** — ① **최장편 65:19**(직전 59:41, 그전 55:17 — **사흘 만에 두 번**), ② **[[tech-bridge-harness-engineering]] 이래 처음으로 "제3자가 남의 도구를 리뷰하는" 형식**.
+
+**세 편이 에이전트를 서로 다른 자리에서 본다.** 지금까지 이 채널의 소스는 대부분 *자기 제품을 말하는 사람*이었는데, 이날은 자리가 갈린다 — **만드는 쪽**(오픈소스 프레임워크 메인테이너), **쓰는 쪽**(남의 스택을 시험하는 리뷰어), **파는 쪽**(출시 제품의 CEO).
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **⚠️ ko 자막이 화자와 대상을 뒤바꿀 수 있다 (첫 사례, 가장 중요).** Pstack 편 첫 문장 *"So this is Lauren Tan, Ninja engineer. **She's** worked at Netflix"* → ko **"안녕하세요, 저는 닌자 엔지니어 로렌 탄입니다."** **3인칭 소개가 1인칭 자기소개로 바뀌어, ko만 읽으면 리뷰어가 [[lauren-tan|Lauren Tan]] 본인이 된다.** → **화자 정체는 en-orig 대명사로 확인한다.**
+- **⚠️ ko가 경쟁 제품 열거를 통째로 삭제했다.** Zuckerberg 편 22:50~22:57의 *"[[grokbot|GrokBot]]이든 [[town|Town]]이든 Instinct든"* 이 **ko에 아예 없다.** 지금까지 기록한 소실은 단어·구 단위였는데 **이번엔 문장 하나가 사라졌고**, 하필 **위키가 이미 페이지를 가진 두 제품을 경쟁사 CEO가 같은 범주로 묶은 진술**이다.
+- **⚠️ ko가 자막 구멍과 잘림을 매끄러운 문장으로 덮는다 (첫 사례, 하루에 두 건).** Dioxus 편 05:02~05:08에서 en-orig가 끊기는데 ko는 *"작지만 질 높은 노력의 결과"* 로 이었고, Pstack 편은 **en-orig 마지막 문장이 11:32에서 잘리는데 ko가 완결형으로 마무리한다.** → **ko만 보면 결손이 보이지 않는다. 길이·끝 문장을 두 트랙에서 대조한다.**
+- **⚠️ 약어 확장 창작 여섯 번째, 그리고 처음으로 위키의 핵심 용어다** — *"check your MCPs"* → ko **"MCP(Master Career Program)"**. 09-10(LLM 4종)·09-12(*LLM-as-a-judge*→"법학 석사 심사 방식")·09-13(*PR*→"개인 최고 기록")에 이은 여섯 번째.
+- **⚠️ *PR* 오역이 이틀 연속, 매번 다른 오역** — 09-13은 *"개인 최고 기록"*, 이번엔 **"보도자료"**(press release, Dioxus 편 3회).
+- **⚠️ 보안 용어가 일반어로 뭉개진다** — *prompt injection* → **"무단으로 접근하려는 시도"**. 09-12의 *harness → "코딩 실력"* 과 같은 **추상화 방향의 소실**이고, 이번엔 [[prompt-injection]]이다.
+- **⚠️ 제품명이 양 트랙 모두에서 네 갈래 (최다 기록)** — *Dioxus* → **Diosis · Dioxis · Daxis · DAX**. 09-12의 *Goose* 3표기를 넘었고, **이번엔 en-orig부터 틀렸다.**
+- **⚠️ 조직·제품명이 보통명사로** — *Cognition* → **"인지 컴퓨팅"**(다음 문장에서는 ko도 "Cognition"으로 복귀), *prompt engineering* → **"신속한 엔지니어링"**, *discretion* → **"재량권"**, *FAIR* → **소실**, *Artificial Analysis* → **"아티팩트 애널리시스"**, *SemiAnalysis* → **"시몬스 분석"**.
+- **⚠️ 관용구 직역이 방향까지 뒤집는다** — *"Lauren has also **baked in** some great disciplines"* → ko **"로렌은 이곳에서 훌륭한 제빵 기술들을 많이 익혔습니다."** 심었다 ↔ 익혔다.
+- **⚠️ *Claude Code* 가 하루 두 소스에서 같은 방식으로 깨진다** — *"claw codeex"* · *"clawed code"* → ko **"클로 코덱스"·"클로 코드"**. 09-11 기록의 재발.
+- **✅ 설명란이 자막을 고쳐 주는 두 번째 사례** — Dioxus 편의 ***slop cannon***. ko 자막은 *"엉망진창 요리"* 로 지웠는데 **설명란은 '슬롭 캐논(Slop Cannon)'이라고 정확히 적는다.** 09-12 *말 방아* 에 이어.
+- **⚠️ 설명란이 자막에 없는 수치를 준다 (네 번째 사례)** — Pstack 편 제목·챕터의 **"21가지 원칙"** 이 **자막에 없다**(이름 붙은 것은 일곱 개). `/poteto-mode` 라는 슬래시 명령 표기도 설명란 단독이다.
+- **✅ 같은 고유명사의 처리가 개선된 첫 관측** — *Hugging Face*. 09-06에 ko가 **"얼굴 껴안기 / 포옹하는 얼굴"** 로 직역한 것을 기록했는데 **이번 영상에서는 음차로 정확히 옮겼다.**
+- **화자 발화로 연도가 확정된 두 번째 사례** — Dioxus 편 *"2026년 현재"*(09-11 Impeccable 편에 이어). **행사명은 여전히 없다.**
+
+> ⚠️ **당사자 진술 비중은 여전히 높지만 성격이 갈린다.** Zuckerberg 편은 *"아무도 안 하고 있다"* 가 **세 번** 나오는데 **비교 대상도 근거도 없다.** Dioxus 편은 **자기 팀의 실패를 먼저 말하고**([[slop-cannon]]) 채용 공고로 끝난다. Pstack 편은 **제3자이지만 자기 제품·강의를 같은 영상에서 판다.** → **세 편 다 이해관계를 표시했다.**
+
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]] · [[tech-bridge-acp-universal-remote]] · [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]] · [[tech-bridge-acp-universal-remote]] · [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-ambitious-software-agent-era]] · [[tech-bridge-pstack-third-party-review]] · [[tech-bridge-zuckerberg-muse-personal-agent]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>

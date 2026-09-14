@@ -36,8 +36,18 @@ updated: 2026-09-10
 - *Soul* 등급의 위치. (2026-09-10) 제3자 언급 하나 — [[tech-bridge-company-brain-security]]의 [[tanmai-gopal]]이 자사 제품이 *"GPT를 쓸 수 있고, 그리고 **Soul이 나오면**"* 그것도 쓴다고 해 **미출시 등급**으로 취급한다. 같은 날 [[tech-bridge-cursor-legacy-refactoring]]의 *"GPT-5.6 Soul"* 표기와 합치면 Soul은 여러 소스가 아는 이름이지만 어느 소스도 출시를 말하지 않는다.
 - "인간 수준" 주장의 측정 근거.
 
+## 제3자가 부른 첫 사례 (2026-09-14 추가)
+
+[[tech-bridge-pstack-third-party-review]]의 리뷰어가 **OpenAI와 무관한 맥락에서** 이 이름을 **프론티어 등급의 대표**로 쓴다:
+
+> 솔직히 **[[fable-5-1|Fable]]이나 Astra 같은 모델**이라면 이런 걸 자연스럽게 고려하고 내장하기 시작하길 바라겠지만, 검증 단계에 관해서는 이런 규율을 사후에 적용해도 나쁠 게 없습니다. (09:57~10:11)
+
+**값은 두 가지다.** ① 지금까지 이 페이지는 **[[sam-altman]] 한 사람의 진술**로만 쓰여 있었는데, **이름이 바깥에서 통용된다는 관측**이 붙었다. ② *"이건 모델이 흡수할 층인가, 하네스에 남을 층인가"* 라는 질문의 **모델 쪽 이름**으로 쓰인다 → [[harness-pruning]].
+
+⚠️ **스펙·출시·성능에 대해서는 아무것도 더해 주지 않는다.** 지나가는 언급이다.
+
 ## References
 
-- [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]]
+- [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-pstack-third-party-review]]
 - [[openai]] · [[sam-altman]]
-- 관련: [[training-time-risk]] · [[goal-level-delegation]]
+- 관련: [[training-time-risk]] · [[goal-level-delegation]] · [[fable-5-1]] · [[harness-pruning]]

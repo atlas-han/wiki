@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era]
 created: 2026-09-12
-updated: 2026-09-13
+updated: 2026-09-14
 ---
 
 # AI 슬롭
@@ -95,3 +95,22 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 - [[tech-bridge-taste-labs-measuring-slop]] (first-seen) · [[thais-castello-branco]] · [[taste-labs]]
 - [[tech-bridge-impeccable-design-steering]] · [[paul-bakaus]] · [[impeccable]]
 - 관련: [[signal-layer]] · [[generator-evaluator-pattern]] · [[decision-quality]] · [[taste-vs-judgment]]
+
+
+## 세 번째 정의 — 생산자가 자기 산출물을 부르는 이름 (2026-09-14 추가)
+
+[[tech-bridge-ambitious-software-agent-era]]에서 [[jonathan-kelley|Jonathan Kelley]]가 **자기 팀의 실패**에 이름을 붙인다 — **[[slop-cannon|슬롭 캐논(slop cannon)]]**.
+
+> 팀은 **구독 한도를 소진했고, 수만 줄의 Rust를 쏟아냈고** (…) **"이걸 머지해도 되나"라는 우리 품질 기준을 통과한 코드는 거의 없었습니다.** (…) **우리가 말하는 "슬롭 캐논"이 되기가 너무 쉬웠습니다.**
+
+| 소스 | 슬롭은 무엇인가 | 말하는 자리 |
+|---|---|---|
+| [[tech-bridge-taste-labs-measuring-slop]] (09-11) | **측정 대상** — 동질화·맥락 무관 반복 | 재는 쪽 |
+| [[tech-bridge-lauren-tan-trusting-agents]] (09-12) | **가드레일 부재의 함수** — *"AI 슬롭 이전에 인간 슬롭이 있었다"* | 막는 쪽 |
+| [[slop-cannon\|슬롭 캐논]] (09-13) | **숙련 팀이 도구를 잘못 다뤄 만든 자기 산출물** | **만든 쪽** |
+
+**세 번째가 앞의 둘에 더하는 것**: 슬롭은 **실력이나 기준의 부재에서만 오지 않는다.** 이 팀은 *"cracked Rust 엔지니어들"* 이고 5년간 모든 줄을 손으로 썼으며 기준도 명확했다. **그래서 실패의 형태도 다르다** — 나쁜 것이 머지되는 것이 아니라 **아무것도 머지되지 않는다.**
+
+⚠️ **ko 자막이 이 이름을 통째로 지웠다**(*"엉망진창 요리"*). 영상 **설명란은 '슬롭 캐논(Slop Cannon)'이라고 정확히 적는다** — 09-12 *말 방아* 에 이어 **설명란이 자막을 고쳐 주는 두 번째 사례**.
+
+→ [[slop-cannon]] · [[code-is-the-product]] · [[architecture-as-remaining-art]]

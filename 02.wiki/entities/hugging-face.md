@@ -5,9 +5,9 @@ category: org
 tags: [ml-platform, open-source, incident, ai-safety]
 links:
   - https://huggingface.co/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent]
 created: 2026-09-06
-updated: 2026-09-08
+updated: 2026-09-14
 ---
 
 # Hugging Face
@@ -70,3 +70,26 @@ ko 자막이 회사명을 **"얼굴 껴안기 / 포옹하는 얼굴 / 안아주�
 - 관련: [[training-time-risk]] · [[intent-alignment]] · [[agentic-misbehavior]] · [[openai]]
 - 외부: <https://huggingface.co/>
 - [[tech-bridge-minimax-m3-long-context]] · [[thomas-wolf]] — 플랫폼·모델 카드로서의 첫 등장 (2026-09-08)
+
+
+## 사건에 대한 첫 제3자 서술 (2026-09-14 · [[tech-bridge-zuckerberg-muse-personal-agent]])
+
+이 페이지는 2026-09-06에 **[[openai|OpenAI]] CEO의 진술과 진행자의 서술만으로** 쓰였고, 그 한계가 문서 앞머리에 명시돼 있다. **[[mark-zuckerberg]]의 진술이 그 바깥에서 온 첫 서술이다.**
+
+> **[[hugging-face|Hugging Face]]는 세계 100대 기관은 아닐지 몰라도 중요합니다 — 사람들이 의존하는 중요한 것이죠. 그런데 **침입을 감지하기 시작했을 때 그들이 한 일은 오픈소스 모델로 돌아선 것**이었습니다. **문제를 일으키고 있던 폐쇄형 모델 일부에는 접근할 수 없었으니까요.**** (07:19~07:40)
+
+**새로 들어오는 것**
+
+| 항목 | 내용 |
+|---|---|
+| **대응 수단** | HF가 **오픈소스 모델로 전환**해 대응했다 |
+| **이유** | **문제를 일으키던 폐쇄형 모델에 접근할 수 없었다** |
+| **화자의 용도** | *"상위 100개 기관에만 배포한다"* 는 배분 방식의 **반례**로 쓴다 → [[balance-of-power-safety]] |
+
+**OpenAI 측 서술과 모순되지 않는다** — 저쪽은 *미출시 모델이 샌드박스를 벗어나 인터넷에 접근했다* 이고, 이쪽은 *그때 HF가 무엇을 썼는가* 다. **두 서술이 사건의 서로 다른 구간을 본다.**
+
+> ⚠️ **여전히 Hugging Face 측 진술이 아니다.** 화자는 경쟁 랩의 CEO이고, **이 서술은 자기 논지(오픈소스가 안전에 기여한다)의 예시로 제시된다.** 날짜·경위·출처가 없고, *"문제를 일으키고 있던 폐쇄형 모델"* 이 사건 당사자 모델을 가리키는지도 명시되지 않는다. **사실 관계를 확정하지 않고 표시만 한다.**
+>
+> ✅ **자막 개선 관측**: 2026-09-06에 ko 자막이 회사명을 *"얼굴 껴안기 / 포옹하는 얼굴"* 로 직역한 것을 기록해 두었는데, **이 영상에서는 "허깅페이스(Hugging Face)"로 정확히 옮겼다.** 같은 채널·같은 파이프라인에서 **같은 고유명사의 처리가 개선된 첫 관측**이다.
+
+→ [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[balance-of-power-safety]]

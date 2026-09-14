@@ -1,0 +1,74 @@
+---
+title: 개인 초지능 (Personal Superintelligence)
+type: concept
+category: theory
+tags: [meta, agents, empowerment, product-thesis, long-tail]
+aliases: [personal super intelligence, 개인용 초지능]
+related: [balance-of-power-safety, intelligence-abundance, agent-org-adoption, goal-level-delegation, discretion-capability, agi-definition]
+first-seen: tech-bridge-zuckerberg-muse-personal-agent
+sources: [tech-bridge-zuckerberg-muse-personal-agent]
+created: 2026-09-14
+updated: 2026-09-14
+---
+
+# 개인 초지능
+
+**초지능이 무엇에 쓰일지를 소수의 전문가가 배분하는 대신, 각자가 자기 삶에서 중요한 쪽으로 방향을 잡게 한다는 입장.** [[mark-zuckerberg]]의 테제이고 [[muse|Muse]]의 제품 논리다.
+
+> **초지능을 만들 때 무엇에 집중할지를 누가 정하느냐**는 질문이 있습니다. **사람들이 자기 삶에서 중요한 쪽으로 방향을 잡을 수 있어야 합니다. 소수의 랩에 앉은 이른바 전문가들이 정해서는 안 됩니다.** — [[tech-bridge-zuckerberg-muse-personal-agent]] (17:00~17:19)
+
+> **"소수의 전문가가 AI가 어떤 큰 문제에 쓰일지 배분해야 한다"는 말을 들으면 일종의 **알레르기**가 있습니다.** (16:11~16:21)
+
+## 근거 — 집계가 곧 중요도다
+
+> **사람들에게는 자기가 신경 쓰는 것들의 균형이 있습니다.** 건강도, 더 나은 삶도 신경 쓰지만 **인간관계도, 친구와 가족을 위해 나타나는 것도, 문화도** 신경 씁니다. **과학자나 엔지니어가 보기에 가장 큰 문제가 아닐 수도 있는 것들**에 신경 씁니다. **수십억 명에게 무엇을 신경 쓰는지 물어보면, 그 총합이 곧 일해야 할 가장 중요한 것들입니다.** (16:26~16:56)
+
+## 롱테일 논증
+
+가장 구체적인 사례가 의료다.
+
+> **오늘날 제약·바이오 산업이 대체로 우선하는 건 가장 흔한 것들**인데 **희귀 질환과 증상의 아주 긴 꼬리가 있습니다. 희귀 질환이 있다면 당신의 개인 AI가 **그것에** 집중하기를 바랄 겁니다 — 단지 가장 흔하다는 이유로 다른 것에 집중하는 게 아니라.** (17:51~18:11)
+
+**중앙 배분의 실패를 "평균을 향한 최적화"로 규정한다.** 개인 에이전트는 **각자의 꼬리**를 맡는다.
+
+⚠️ 화자는 자기 재단(Biohub)의 희귀 질환 투자가 *"이 견해에 부분적으로 정보를 줬다"* 고 밝힌다.
+
+## 무엇이 실제로 중요한가 — 화자 본인의 용례
+
+**큰 사회 문제가 아니다.**
+
+> **저에게 많은 부분은 사람들이 큰 사회 문제라고 부를 것들이 아닙니다. Muse 에이전트를 쓸 때 저는 **더 나은 아버지, 더 나은 남편이 되고, 친구들에게 더 잘 나타나고, 사람들과 연결되도록** 도와주기를 바랍니다.** (18:30~18:52)
+
+그리고 이것이 회사의 연속성 주장으로 이어진다 — *"우리가 지금까지 해 온 일과 이것 사이의 연결선"*, *"사람들이 주변 사람과 연결되도록 돕는 데 **사회적 가치**가 있다고 믿는 회사."*
+
+## 이 위키의 지능 담론에서의 위치
+
+| 개념 | 초지능이 무엇을 하는가 |
+|---|---|
+| [[agi-definition]] ([[sam-altman]]) | **이정표 vs 무한 경사로** — 정의 자체가 논점 |
+| [[intelligence-abundance]] | **풍부해진 지능**이 경제를 바꾼다 |
+| [[intelligence-as-infrastructure]] ([[jensen-huang]]) | **인프라 층**으로서의 지능 |
+| **개인 초지능** | **누가 방향을 정하는가** — 배분의 정치 |
+
+**넷 중 유일하게 "능력"이 아니라 "방향 결정권"을 묻는다.**
+
+## 제품이 되는 지점
+
+이 테제가 제품에서 부딪히는 문제를 소스가 스스로 짚는다 — **사람들은 자기 AI로 뭘 해야 할지 모른다.**
+
+> **AI의 큰 문제 하나는 많은 사람이 그걸로 뭘 해야 할지 모른다는 것입니다. 에이전트 스스로가 도움이 될 만한 걸 제안해 줄 수 있다면 그 문제의 큰 부분이 풀립니다.** (27:46~28:04)
+
+→ [[agent-fleet-learning]] · [[agent-org-adoption]]
+
+**"각자가 정한다"는 테제와 "에이전트가 제안한다"는 처방 사이에 긴장이 있다.** 제안의 분포가 곧 방향의 분포가 된다면 **배분 주체가 전문가에서 함대 집계로 옮겨간 것뿐**일 수 있는데, **소스는 이 긴장을 다루지 않는다.**
+
+## 연혁 (소스에서 확인되는 것)
+
+- **1년 전**, 짧은 *personal super intelligence* 에세이 — *"Wall Street Journal에 실었다"*.
+- **최근**, **15페이지 선언문**.
+- ⚠️ **두 글의 제목·날짜가 소스에 정확히 나오지 않는다.** 위키는 추정하지 않는다.
+
+## References
+
+- [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[meta]] · [[muse]]
+- 관련: [[balance-of-power-safety]] · [[intelligence-abundance]] · [[agi-definition]] · [[agent-fleet-learning]] · [[agent-org-adoption]] · [[discretion-capability]] · [[goal-level-delegation]]

@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-14
 ---
 
 # 검증 병목
@@ -56,3 +56,30 @@ Lauren Tan 쪽의 답은 그 적응의 구체적 형태다 — **사람이 PR �
 ## References
 
 - [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[verification-cost-asymmetry]] · [[agent-verification-skill]] · [[behavior-validated-trust]] · [[trusted-throughput]] · [[hard-vs-soft-enforcement]]
+
+
+## 세 번째 답 — 일을 쪼갠다 (2026-09-14 추가)
+
+[[tech-bridge-ambitious-software-agent-era]]가 **검증 작업 자체를 둘로 가른다** → [[test-harness-vs-test-authoring]].
+
+| 답 | 소스 | 처방 |
+|---|---|---|
+| **작업을 고른다** | [[tech-bridge-mousepower-measuring-agents]] (09-12) | 검증이 비싼 작업은 에이전트에게 주지 마라 |
+| **역량을 짓는다** | [[tech-bridge-lauren-tan-trusting-agents]] (09-12) | 검증을 스킬로 만들어 에이전트에게 넘겨라 |
+| **일을 쪼갠다** | [[tech-bridge-ambitious-software-agent-era]] (09-13) | **무엇을 검증할지는 사람이, 검증 장치(퍼징 하네스)는 에이전트가** |
+
+> **어떤 API에 대해서든 테스트를 쉽게 쓸 수 있지만, **인간과 마찬가지로 올바른 테스트를 쓰는 데는 실패**합니다.** (…) **코딩 에이전트는 이런 [퍼징] 하네스를 만드는 데 탁월합니다.**
+
+**세 번째가 고유한 점**: 에이전트에게 넘기는 것이 **판정이 아니라 도구**다. 2026-09-09 이래 이 위키가 반복 표시해 온 **평가자의 독립성 문제**(작성자=검증자)를 **구조적으로 피한다** — 퍼징 하네스는 의견을 내지 않고 **크래시를 낼 뿐**이다.
+
+⚠️ **대가가 있다.** 같은 소스가 **엔드투엔드 테스트에서는 에이전트도 고전한다**고 인정하고(*"zed를 열어 보지 않고서는"*), [[agent-verification-skill]](에이전트가 앱을 실제로 띄운다)과 **긴장 관계**에 있다. **두 접근을 비교한 소스는 아직 없다.**
+
+## 검증이 실제로 무엇을 잡았는가 (2026-09-14 추가)
+
+[[tech-bridge-pstack-third-party-review]]에 **관측된 사례**가 하나 있다.
+
+> **E 단계에서 검증 테스트를 전부 하고 감사로 마무리합니다. 바로 이래서 검증이 중요합니다 — **에이전트가 세부 일부를 환각했다는 걸 스스로 깨달았습니다. 시스템이 허위 주장 세 건을 잡아 고칠 수 있었습니다.**** (07:49~08:03)
+
+**이 위키가 기록한 검증 사례 중 "무엇이 몇 건 잡혔는지"가 나온 첫 사례**다. ⚠️ 다만 **세 건의 내용이 없고, 놓친 것이 있었는지도 알 수 없다.**
+
+→ [[test-harness-vs-test-authoring]] · [[agent-arena]] · [[agent-swarm]] · [[minimizing-reader-load]]

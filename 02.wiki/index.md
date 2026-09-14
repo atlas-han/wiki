@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-13
+updated: 2026-09-14
 ---
 
 # Index
@@ -37,7 +37,11 @@ updated: 2026-09-13
 - [[imad-touil]] — QuantumBlack, [[agent-skills]] 거버넌스 ([[tech-bridge-ai-native-skills]])
 - [[bill-gates]] — Microsoft 공동창업자, 2026-08 AI 위험 경고 ([[tech-bridge-bill-gates-ai-warning]])
 - [[carlos-sanchez]] — [[adobe|Adobe]] AEM 수석 과학자, [[agentic-sites]] 설계 ([[tech-bridge-agentic-sites]])
-- [[lauren-tan]] — [[cursor|Cursor]] 엔지니어, [[grokbot|GrokBot]] 기원(Benny)·엔지니어=에이전트 매니저 ([[tech-bridge-grokbot-agent-teams]])
+- [[lauren-tan]] — [[cursor|Cursor]] 엔지니어, [[grokbot|GrokBot]] 기원(Benny)·엔지니어=에이전트 매니저 ([[tech-bridge-grokbot-agent-teams]], sources: 3 — 제3자 리뷰 포함)
+- [[jonathan-kelley]] — [[dioxus|Dioxus]] 창시자([[cognition|Cognition]] 합류). **[[slop-cannon|슬롭 캐논]]의 출처** · *"코드는 싸졌지만 품질은 아니다"* ([[tech-bridge-ambitious-software-agent-era]])
+- [[mark-zuckerberg]] — [[meta|Meta]] CEO. **권력 균형이 곧 안전** · [[muse|Muse]] 개인 에이전트 · Llama 4 실책 인정 ([[tech-bridge-zuckerberg-muse-personal-agent]]) ⚠️ 당사자 진술
+- [[alex-heath]] — *Sources with Alex Heath* 진행자. 위키의 **네 소스를 낳은 진행자**([[sam-altman]] 3부작 + Zuckerberg). **인터뷰에서 누가 말했는지를 가르는 기준**
+- [[moxie-marlinspike]] — Signal 창립자, 2014 WhatsApp 암호화 참여. [[meta]]에 합류해 [[confidential-vm|기밀 VM]] 전담 (위키 첫 암호학자)
 - [[roshan-sadanani]] — [[cursor|Cursor]], GrokBot 제품·내부 PMF 경로 ([[tech-bridge-grokbot-agent-teams]])
 - [[salman-munaf]] — [[tiktok|TikTok]] 엔지니어, [[agent-distributed-systems]] 관점 ([[tech-bridge-agents-as-distributed-systems]])
 - [[mingsheng-hong]] — [[ironclad|Ironclad]] VP of Engineering(AI), [[trusted-throughput]] 프레이밍 ([[tech-bridge-trusted-throughput]])
@@ -102,6 +106,9 @@ updated: 2026-09-13
 - [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
 - [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
 - [[google-cloud]] — Google 클라우드 플랫폼. 위키 두 번째 Google 조직 페이지 · 첫 **클라우드 플랫폼 벤더** — [[mcp-toolbox-for-databases|MCP Toolbox]]·Google managed MCP·Model Armor, 월 도구 호출 2천만(자기 진술) (sources: 1) ⚠️ 당사자
+- [[meta]] — Facebook·Instagram·WhatsApp·Threads·스마트 안경·[[muse|Muse]]. 위키 **첫 Meta 당사자 소스** — *"엔드투엔드 기술 회사"*, WhatsApp 암호화 유산, America's Workforce Academy, 프로메테우스(오하이오 1GW) (sources: 1) ⚠️ 당사자
+- [[meta-superintelligence-labs]] — [[meta|Meta]]의 프론티어 모델 조직(MSL). FAIR 전사 → 재부팅 → **[[talent-density|인재 밀도]]**·CEO 좌석 주변 배치 ⚠️ 약어 미전개
+- [[cognition]] — **[[dioxus|Dioxus]]를 인수한 회사.** 소스가 말하는 것은 **채용 공고 세 문장이 전부** (sources: 1)
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 
 ### Models
@@ -116,6 +123,7 @@ updated: 2026-09-13
 - [[glm-5]] — GLM-5, [[self-harness]] 실험 base 모델 (held-out 42.9→57.1%)
 - [[gemma-4]] — Google Gemma 4, [[cerebras]] 위에서 [[agentic-sites]] 페이지 생성 평균 1.1초
 - [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
+- [[fable-5-1]] — Claude 계열 프론티어 모델. **같은 날 세 소스가 좌표로 쓴다** — 맨몸 30분(Pstack 비교) · Artificial Analysis 상위(진행자 진술) · *"Fable 급 도구"* ⚠️ **1차 자료 없음·스펙 전무**
 - [[openai-astra]] — [[openai|OpenAI]] 차세대 **모델 등급명**("더 비싸고 큰 모델 등급", Soul과 같은 방식). 컴퓨터 사용 "인간 수준" 체감 ([[tech-bridge-altman-astra-hardware]], ⚠️ 스펙 없음)
 
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
@@ -133,11 +141,17 @@ updated: 2026-09-13
 - [[learnvector]] — Ng의 1:1 학습 조직, Coursera $100M ([[tech-bridge-andrew-ng-ai-opportunity]])
 - [[grokbot]] — [[cursor|Cursor]]의 지속형 개인 봇 팀(정체성·자체 컴퓨터·코디네이터·메시징 UI) ([[tech-bridge-grokbot-agent-teams]])
 - [[cursor-cloud]] — [[cursor|Cursor]]의 원격 자율 에이전트 실행 환경(Linux VM·멀티 레포·자기 검증 비디오·automations·`memories.md`) ([[tech-bridge-cursor-legacy-refactoring]])
-- [[openclaw]] — 다섯 소스에 지나가듯 언급되는 **에이전트 플랫폼**(개인 배포·개인 위키·"claw land"). 어느 소스도 설명하지 않아 언급을 모은 페이지 (sources: 5) ⚠️ 정체는 위키의 추정
+- [[openclaw]] — **여섯** 소스에 지나가듯 언급되는 **에이전트 플랫폼**(개인 배포·개인 위키·"claw land"·**Mac Studio 구매의 계기**). 어느 소스도 설명하지 않아 언급을 모은 페이지 (sources: 6) ⚠️ 정체는 위키의 추정
+- [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 
 ### Tools
 - [[goose]] — [[block|Block]]발 오픈소스 하네스, Linux Foundation 기증. [[agent-client-protocol|ACP]] 원격 전송을 명세
-- [[pstack]] — [[lauren-tan]]의 Cursor 플러그인(potato stack). 검증 스킬 생성·유지 + [[skill-evals|eval playbook]]
+- [[pstack]] — [[lauren-tan]]의 Cursor 플러그인(potato stack). potato mode **라우터** + 플레이북 22개, 검증 스킬 생성·유지, [[agent-arena|아레나]]·[[agent-swarm|스웜]], **계획 스킬 없음** (sources: 2 — **제작자 바깥의 첫 관측** 포함)
+- [[dioxus]] — Rust 크로스플랫폼 앱 프레임워크(2021~). 별 37k·**누적 사용자 2억+**(자기 추정)·핵심 엔지니어 3명. [[cognition]] 인수 ([[tech-bridge-ambitious-software-agent-era]])
+- [[blitz]] — [[dioxus|Dioxus]]의 렌더링 엔진. **Firefox에서 CSS 엔진 추출** + 자체 DOM + 하이브리드 GPU. 번들 5MB·RAM 50MB 미만
+- [[subsecond]] — **Rust·C·C++ 범용 핫 리로드 100ms.** 실행 중 앱을 제자리 패치, WASM 포함 전 OS
+- [[rust]] — 시스템 언어. 이 위키에서 **언어 자체가 논점이 된 첫 소스** — 빌림 검사기가 [[learning-curve-as-feature|에이전트 시대의 자산]]으로
+- [[molten-base]] — 스킬 관리자. [[tech-bridge-pstack-third-party-review]] 리뷰어가 **하루 오후에 단일 프롬프트로** 만든 데모 대상
 - [[dune-architecture]] — [[grokbot|GrokBot]] 아키텍처 코드명. *"Electron 앱을 위한 Next.js"*, 에이전트가 쓰라고 설계됨
 - [[archon]] — 오픈소스 하네스 빌더, [[ralph-wiggum-method|Ralph Loop]]류를 커스텀 구축 ([[harness-engineering]])
 - [[claude-agent-sdk]] — Anthropic 에이전트 빌딩 SDK
@@ -229,9 +243,31 @@ updated: 2026-09-13
 - [[hard-vs-soft-enforcement]] — 코드베이스·정적 분석은 **하드**(CI 빨강), 규칙·스킬·bugbot은 **소프트**. *"PR 댓글은 코드 스멜"*
 - [[shortest-path-architecture]] — 에이전트는 지름길을 택한다 → **지름길을 정답으로** 만든다. *가장 멍청한 에이전트를 위한 설계*
 - [[organic-architecture]] — 가드레일 없는 바이브 코딩 코드베이스가 **편의에 최적화되며 통제 불능으로** 자라는 상태
+- [[confidential-vm]] — **운영자 자신도 볼 수 없는** 에이전트 실행 환경. WhatsApp 암호화 유산 → *"약속이 기술적으로 검증 가능"* ⚠️ 검증 방법은 소스에 없음
 - [[greenfield-vs-brownfield-agent-risk]] — 대기업 인프라는 이미 *가장 능력이 부족한 엔지니어* 를 위한 가드레일 → **그린필드가 더 위험**
 - [[task-entropy-matrix]] — *작업 단계의 불확실성* × *수용 기준의 불확실성* 으로 에이전트에게 맡길 일을 고른다
+- [[agent-arena]] — **같은 문제**를 서로 다른 모델 3~4개에 붙이고 각자의 최선을 **접목(graft)하거나 기각** ⚠️ 판정 기준이 소스에 없음
+- [[agent-swarm]] — **문제의 조각**을 병렬 작업자에게 나눠 주고 하나의 보고서로 집계. *"겁 없는 병렬성"* ⚠️ 리뷰어 본인이 유보
+- [[laziness-protocol]] — 리팩터할 때 **더하지 말고 지워라**, 일을 끝내는 **가장 작은 변경**. 에이전트의 기본값(덧대기)을 되돌린다
+- [[minimizing-reader-load]] — 코드 품질의 단위를 **읽는 사람의 인지 부담**으로. *"이음매 없이 흩어진 거대한 PR"*
+- [[build-a-lever]] — 손으로 여러 번 할 일이면 **먼저 도구(CLI·스크립트)를 만든다**. [[skill-self-improvement]]와 달리 **사전**
+- [[sentinel-agent]] — 감시 전용 별도 에이전트가 **인젝션·과잉 공유**를 보고 **사람 검토를 트리거** ⚠️ 탐지율·오탐·자기 취약성 전무
+- [[least-privilege-connectors]] — 커넥터를 **읽기 전용에서 시작**해 필요할 때만 올린다. 인프라 층과 소비자 층에서 **같은 원칙이 확인된 첫 사례**
+- [[agents-as-patient-specialists]] — 에이전트의 강점은 지능이 아니라 **인내심 + 폭넓은 지식**. 지식 문제에서 가장 크게 번다
+- [[test-harness-vs-test-authoring]] — **무엇을 테스트할지**(사람)와 **테스트 장치 구축**(에이전트)의 분리. 퍼징 하네스
+- [[learning-curve-as-feature]] — 사람에게 비싼 엄격함(빌림 검사기·타입)이 **에이전트에게는 싸고 결과는 사람에게 남는다** → 언어 선택의 부호가 바뀐다
 - [[mousepower]] — 마력의 유비. **지표가 아니라 의무** — 에이전트를 팔면 검증 루브릭도 함께 판다
+- [[balance-of-power-safety]] — **안전의 토대는 접근 제한이 아니라 견제와 균형.** 위키의 안전 축에서 *게이트 자체를 위험*으로 보는 첫 입장 ⚠️ 대칭성 전제 미검토
+- [[personal-superintelligence]] — 초지능의 방향을 **전문가가 배분하지 않고 각자가 정한다.** 롱테일(희귀 질환) 논증 ⚠️ *에이전트가 제안한다*와 긴장
+- [[agent-fleet-learning]] — 함대 단위 **익명 집계 학습**을 네트워크 효과로 ⚠️ "익명화"의 정의가 없고 [[confidential-vm]]과 연결되지 않음
+- [[discretion-capability]] — **무엇을 말하지 않을지 아는 능력**을 모델 요구로. 위키 능력 축에서 유일하게 *덜 하는* 능력
+- [[transaction-cut-monetization]] — **토큰 무료 + 하류 거래 수수료**(거래 상대 기업 부담). 토큰 과금 전제를 벗어나는 첫 모델
+- [[talent-density]] — 프론티어 훈련은 **전체를 머릿속에 담는 가장 작은 팀**의 문제. Llama 4 실패 뒤의 결론 ⚠️ 인과 근거 없음
+- [[reward-hacking]] — 과제를 푸는 대신 **채점 환경을 바꿔 버린다.** 경쟁 랩의 독립 확인이 붙은 [[agentic-misbehavior]] 항목
+- [[slop-cannon]] — 에이전트로 쏟아내되 **아무것도 머지되지 않는** 실패. 슬롭을 **생산자 자신이** 부른 첫 이름
+- [[ambitious-software]] — 연구·프로토타입·앱과 구별되는 소프트웨어 종류. **에이전트 도입 논쟁의 전제를 맞추는 축**
+- [[code-is-the-product]] — 사용자가 코드·API·문서를 직접 읽는 조직에서는 **내부 품질과 UX의 구분이 성립하지 않는다**
+- [[architecture-as-remaining-art]] — 코드 작성이 자동화되고 **남은 잔여가 아키텍처**이며, 그 잔여가 나머지의 품질을 정한다
 - [[agent-roi-measurement]] — 에이전트의 **측정 문제**: 얼리어답터 편향 · 토큰은 투입량 · 척도는 고객의 멘탈 모델에 맞아야
 - [[overspending-underusing-loop]] — 토큰 맥싱 → 긴축 → FOMO → 재시도의 둠 루프(용어는 Ramp)
 - [[agent-harness-design]] — LLM 에이전트 스캐폴딩 설계 영역 (Anthropic 연작 허브)
@@ -431,12 +467,14 @@ updated: 2026-09-13
 - [[tech-bridge-mousepower-measuring-agents]] — Maximillian Piras (Yutori 창립 디자이너, **World's Fair**): **에이전트에겐 측정 문제가 있다**, *"우리 모두가 직간접적으로 토큰을 팔고 있다"*(자기 인센티브 선고지), [[james-watt|제임스 와트]]와 **말 방아** → **마력은 정확해서가 아니라 시도하게 만들어서 통했다**, [[overspending-underusing-loop|과지출·저활용 둠 루프]](Ramp)·Coinbase 차트, **토큰은 투입량**·결과로 추적, [[verification-bottleneck|병목은 코드 리뷰로]](*"Anthropic도 리뷰는 못 풀었다"*), [[mousepower]]는 **지표가 아니라 의무**(루브릭을 함께 팔라), [[task-entropy-matrix|엔트로피 매트릭스]]·[[verification-cost-asymmetry|NP형]] ([[tech-bridge]], 2026-09-12, **20:25**, **행사 확정·연도 미확정**, ⚠️ 당사자(자인) · **수치 전무** · ko가 *agent*를 **다섯 갈래**로·결론 부호 뒤집기)
 - [[tech-bridge-lauren-tan-trusting-agents]] — Lauren Tan (Cursor, 전 Meta React Compiler) × 진행 Colin: **채널 최장편 59:41·무챕터·첫 워크숍 형식.** [[agent-trust-curve|신뢰 곡선]](in-loop → **PR 자동 병합 + main 사후 리뷰**, 지난달 1,000건·이번 달 12일에 800건), ① [[agent-verification-skill|검증 스킬]]+[[feature-map|기능 지도]](*"???"* 스크린샷도 작업으로)·[[pstack|Pstack]]·[[skill-evals|눈가림 서브에이전트 eval]], ② [[dune-architecture|Dune]](*"Electron용 Next.js"*, `useEffect`·**코드 주석 금지**, import CI)·[[shortest-path-architecture|가장 짧은 경로 = 가장 좋은 경로]], ③ [[hard-vs-soft-enforcement|하드/소프트 강제]](*"PR 댓글은 코드 스멜"*), [[greenfield-vs-brownfield-agent-risk|그린필드가 더 위험]]·*"AI 슬롭 전에 인간 슬롭"*·[[organic-architecture]], *"무제한 토큰이 있는 AI 랩"* ([[tech-bridge]], 2026-09-12, **59:41**, **연도 2026·그달 12일 확정, 달 미확정 — 기존 GrokBot/Grok 4.6 시점 추정의 반증**, ⚠️ 당사자 · 수치 전부 자기 보고 · **설명란의 "xAI"는 자막에 없음(SpaceX AI)** · ko가 *PR*→"개인 최고 기록"·Gary **Tan**→"게리 스택")
 
+- [[tech-bridge-ambitious-software-agent-era]] — Jonathan Kelley ([[dioxus|Dioxus]] 창시자 · [[cognition|Cognition]]): 5년치 손코딩 뒤의 [[slop-cannon|슬롭 캐논]](*"수만 줄을 쏟아냈는데 품질 기준을 통과한 게 거의 없었다"*), **[[learning-curve-as-feature|어려움이 기능이 됐다]]**(*"줄이려고 싸웠던 학습 곡선이 이제 기능"*), [[agents-as-patient-specialists|인내심 있는 지식 전문가]](Kotlin·Swift 플러그인 2~3주 — 구현 첫날·테스트 2주, CSS 사양을 외워 WebKit을 열지 않는다), **[[code-is-the-product|코드가 곧 제품]]** 이라 지루한 일(체크리스트·백포팅·문서)에서 가장 크게 벌었다, [[test-harness-vs-test-authoring|올바른 테스트는 못 고르고 퍼징 하네스는 탁월]], [[architecture-as-remaining-art|남은 예술은 아키텍처]](*"에이전트도 스파게티를 쓴다 — 더 빠르게"*·*"기반이 나쁘면 그 위도 나쁘다"*), **모든 PR을 한 줄씩 사람이 읽는다**, *"코드는 싸졌지만 품질은 아니다"* ([[tech-bridge]], 2026-09-13, **18:45**, **촬영 2026 확정·행사명 없음**, ⚠️ 당사자·채용 공고로 끝남 · **전환점이 자막 구멍에** · ko가 *slop cannon*→"엉망진창 요리"·*PR*→"보도자료"·*Cognition*→"인지 컴퓨팅")
+- [[tech-bridge-pstack-third-party-review]] — **화자 미상 제3자**([[molten-base|Molten Base]] 제작자): 위키가 [[pstack|Pstack]]을 **제작자 바깥에서** 처음 본다. potato mode는 **라우터** + 플레이북 22개, **계획 스킬이 의도적으로 없다**(*"최고의 사양은 코드다"* — 간접 인용), [[agent-arena|아레나]](같은 문제·다른 모델·접목/기각) vs [[agent-swarm|스웜]](조각 분배·집계), 스킬 `why`(MCP·Slack·Sentry로 **의사결정 기록 복원**)·`recall`·`interrogate`(모델 교차 심문)·`create/maintain verification`·`onslaught`·`bro`·`probe`, 원칙 7개([[laziness-protocol]]·제1원칙 재설계·[[minimizing-reader-load]]·설계 공간 소진·[[build-a-lever]]·검증·컨텍스트 창 보호), **검증이 허위 주장 3건을 잡았다**, 비용 **[[fable-5-1|Fable 5.1]] 맨몸 30분 vs Pstack 1시간** ([[tech-bridge]], 2026-09-13, **11:34**, ⚠️ **ko가 3인칭 소개를 1인칭으로 바꿔 화자를 뒤바꾼다** · 리뷰어도 자기 제품·강의 판매 · 설명란의 "21가지"가 자막에 없음 · ko가 *MCP*→"Master Career Program")
+- [[tech-bridge-zuckerberg-muse-personal-agent]] — [[mark-zuckerberg]] ([[meta|Meta]]) × [[alex-heath]] (*Sources with Alex Heath*): **채널 최장편 65:19.** 세 원칙(권한 부여 · **발명이지 자동화가 아니다** · **[[balance-of-power-safety|안전=권력 균형]]**), *"소수가 통제하는 쪽이 훨씬 더 걱정"*, **[[hugging-face|Hugging Face 사건의 첫 제3자 서술]]**(*"침입 감지 때 오픈소스 모델로 돌아섰다"*), [[muse|Muse]]=VM 붙은 장수명 에이전트(목표→24시간·**밤에 공부**·능동 제안), **[[transaction-cut-monetization|주당 1억 토큰 무료 + 거래 수수료]]**(기업 부담·Stripe), 보안 4겹([[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]]·자격증명 저장소)과 [[moxie-marlinspike|Moxie Marlinspike]] 영입, **[[agent-fleet-learning|함대 학습]]**, **Llama 4 실책 인정**→[[talent-density|인재 밀도]]·좌석 주변 랩, **[[discretion-capability|신중함]]**(임신·무알코올 칵테일 — [[claude-code]]는 덜 필요하다), [[reward-hacking]]과 육아 비유, 안경 표시등·10대 안전 합의 ([[tech-bridge]], 2026-09-13, **65:19**, **촬영 시점 미확정**, ⚠️ 전부 당사자·*"아무도 안 한다"* 3회에 근거 없음·수치 전무 · ko가 **GrokBot·Town·Instinct 열거를 통째로 삭제**·*prompt injection*→"무단 접근"·FAIR 소실)
+
 ---
 
 ## 통계
 
-- 총 페이지 수: 397 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 366 → 397, + 2026-09-12 Tech Bridge 3편: source 3 + concept 18 + entity 10)
+- 총 페이지 수: 436 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 397 → 436, + 2026-09-13 Tech Bridge 3편: source 3 + concept 22 + entity 14)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-13 (Tech Bridge **3편**, 열흘 연속 — 09-12 업로드분. 프로토콜·경제·실천 세 층이 **검증**에서 만났다. [[tech-bridge-acp-universal-remote|ACP]]가 [[model-context-protocol|MCP]]의 반대 방향(클라이언트→에이전트)을 채우며 [[agentic-stack-decomposition|스택을 네 칸으로]] 분해했고, [[tech-bridge-mousepower-measuring-agents|마우스파워]]와 [[tech-bridge-lauren-tan-trusting-agents|Lauren Tan 워크숍]]이 **서로를 언급하지 않으면서** 같은 진단([[verification-bottleneck]])에 도달해 반대 답을 냈다 — *검증이 비싼 작업은 고르지 마라* vs *검증을 스킬로 만들어 넘겨라*. [[james-watt]]가 위키 첫 역사적 인물로, [[trusted-throughput]]이 *긴축* 이라는 같은 단어에서 [[overspending-underusing-loop]]과 만났다. **채널 최장편 59:41·두 번째 무챕터·첫 워크숍 형식.** ⚠️ Lauren Tan 편이 [[grokbot]]·[[grok-4-6]]·[[tech-bridge-cursor-legacy-refactoring]]의 **업로드 날짜 기반 시점 추정에 반증**을 줬다 — 어느 날짜도 채택하지 않고 표시만 했다)
-- 마지막 lint: 2026-07-08 (175 페이지 점검: 모순 0·고아 0·dangling 0(9 거짓양성)·index 동기화 100%·frontmatter 유효 100%·reading 일관성 100%·kebab-case 100%; 결함 자동수정 0건 + 승인 개선 2건: lum1104 date-published 채움(2026-03-15)·engineering/index 전량 등재)
-- 마지막 갱신: 2026-09-13
+- 마지막 ingest: 2026-09-14 (Tech Bridge **3편**, **열하루 연속** — 09-13 업로드분. 세 편이 에이전트를 **만드는 쪽·쓰는 쪽·파는 쪽**에서 본다. [[tech-bridge-ambitious-software-agent-era|Dioxus 편]]이 **슬롭을 생산자 자신의 입으로** 진단하고([[slop-cannon]]) *어려움이 기능이 됐다*([[learning-curve-as-feature]])는 뒤집기를 준다 — 강제의 층이 CI를 넘어 **컴파일러**까지 갔다. [[tech-bridge-pstack-third-party-review|Pstack 리뷰]]는 **위키가 제작자 바깥에서 도구를 본 첫 사례**이고 병렬성의 축([[agent-arena]] vs [[agent-swarm]])과 **비용의 첫 값**(맨몸 30분 vs 1시간)을 준다. [[tech-bridge-zuckerberg-muse-personal-agent|Zuckerberg 편]]은 **채널 최장편 65:19**이자 위키 첫 [[meta|Meta]] 당사자 소스로, 안전을 **권력 균형**으로 재정의하고([[balance-of-power-safety]]) 에이전트 보안을 [[confidential-vm|기밀 VM]]·[[sentinel-agent|센티널]]·[[least-privilege-connectors|최소 권한]] **4겹으로 구성 요소화한 첫 소스**다. [[verification-bottleneck|검증 병목]]에 **세 번째 답**([[test-harness-vs-test-authoring|일을 쪼갠다]])이 붙었고, [[hugging-face]] 사건에 **첫 제3자 서술**이 들어왔다. ⚠️ **ko 자막이 화자와 대상을 뒤바꾼 첫 사례**(Pstack 편)와 **문장 하나를 통째로 삭제한 첫 사례**(Zuckerberg 편의 GrokBot·Town·Instinct)가 같은 날 나왔다)

@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review]
 created: 2026-09-01
-updated: 2026-09-13
+updated: 2026-09-14
 ---
 
 # Lauren Tan
@@ -60,7 +60,25 @@ updated: 2026-09-13
 
 > ⚠️ **이 소스가 위키의 시점 기록을 흔든다** — 워크숍 당일이 *[[grok-4-6|Grok 4.6]] 발표일이자 그달 12일* 이다. 소스 페이지의 시점 절을 볼 것.
 
+## 제3자가 말하는 이 인물 (2026-09-14 · [[tech-bridge-pstack-third-party-review]])
+
+이름이 밝혀지지 않은 리뷰어가 [[pstack|Pstack]]을 해부하며 이 인물을 소개한다. **위키에 이 인물에 대한 첫 제3자 서술**이다.
+
+> **이 사람은 Lauren Tan, Ninja engineer입니다. Netflix에서 일했고, React 코어 팀의 일원이고요 — React는 들어 보셨겠죠 — 그리고 **SpaceX와 Cursor의 principal engineer**입니다.** (00:00~00:07)
+
+> **기본적으로 시니어 엔지니어의 두뇌를 하나의 스택으로 추출해 놓은 것**입니다. (00:12~00:17)
+
+> ⚠️ **SpaceX 이력은 본인 진술에 없다.** 위 본인 진술은 *Cursor 약 5개월 → 그 전 Meta React 팀 → 그 전 Netflix* 다. **리뷰어 서술로 이력을 갱신하지 않는다. 표시만 한다.** 2026-09-13에 기록한 *설명란의 "xAI GrokBot 워크숍"이 자막에 없다(나오는 것은 SpaceX AI)* 와 **같은 자리를 건드린다.**
+>
+> ⚠️ *"Ninja engineer"* 가 직함인지 리뷰어 채널의 표현인지 **소스에서 확정되지 않는다.**
+>
+> ⚠️ **ko 자막이 이 3인칭 소개를 1인칭 자기소개로 바꿔 놓았다** — *"안녕하세요, 저는 닌자 엔지니어 로렌 탄입니다."* **ko만 읽으면 리뷰어가 본인이라고 읽힌다.**
+
+리뷰어가 전하는 입장 하나가 본인 소스에 없다 — ***"나는 계획을 믿지 않는다. 최고의 사양은 코드다."*** **간접 인용으로만 기록한다.** 그리고 *"목표는 더 많은 코드가 아니다. **가장 적은 코드로 최대의 임팩트**"* 도 같다.
+
+영향력의 측면 증거 하나 — *"**우리 친구 Theo**도 그녀의 스킬이 얼마나 대단한지 딥다이브를 했을 정도"*(00:17~00:22). ⚠️ 그 딥다이브는 이 위키에 없다.
+
 ## References
 
-- [[tech-bridge-grokbot-agent-teams]] · [[grokbot]] · [[cursor]] · [[persistent-agent-teams]]
+- [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-pstack-third-party-review]] · [[grokbot]] · [[cursor]] · [[pstack]] · [[persistent-agent-teams]]
 - <https://x.com/poteto>
