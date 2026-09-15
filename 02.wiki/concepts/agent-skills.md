@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph]
 created: 2026-08-31
-updated: 2026-09-13
+updated: 2026-09-15
 ---
 
 # Agent Skills
@@ -218,6 +218,16 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 > ⚠️ **그러나 스킬은 소프트 강제다.** 같은 소스가 경고한다 — *"규칙과 bugbot과 스킬과 스타일 가이드만 있으면, 코드베이스가 완전히 쓰레기처럼 보이는 건 시간문제."* → [[hard-vs-soft-enforcement]]
 
 스킬을 고칠 때마다 검증하는 절차는 [[skill-evals]]에 있다.
+
+
+## 2026-09-15 — 스킬과 훅의 경계
+
+[[tech-bridge-graft-code-knowledge-graph]]에서 [[graft]]의 `init`은 **스킬 하나와 훅 셋을 함께** 설치한다. 둘의 역할이 갈린다.
+
+- **스킬**은 컨텍스트에 놓이는 **지시**다 — 에이전트가 무시할 수 있고, 컨텍스트가 길어지면 잊는다([[context-resets-and-compaction]]).
+- **훅**은 하네스가 실행하는 **코드**다 — 화자의 표현으로 *"에이전트가 워크플로를 따르도록 **강제**한다"*.
+
+즉 **스킬은 능력을 주고 훅은 선택지를 없앤다.** [[hard-vs-soft-enforcement]]가 정책 층에서 세운 구분이 하네스 층에서 반복된다 → [[hook-enforced-workflow]].
 
 ## References
 

@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # Index
@@ -22,6 +22,8 @@ updated: 2026-09-14
 
 ### Persons
 - [[alex-hancock]] — Block 소프트웨어 엔지니어, [[goose]] 메인테이너·MCP Rust SDK·[[agent-client-protocol|ACP]] 작업
+- [[vincent-wendy]] — [[ai-engineer|AI Engineer]] 시니어 크리에이티브 디자이너. **12~15명 조직의 유일한 디자이너**로 7,000명 행사의 결과물을 만든다. *"진짜 일은 예외 처리다"*
+- [[simon-willison]] — [[lethal-trifecta|치명적 3요소]]의 제안자이자 **"자전거를 탄 펠리컨" SVG 테스트**의 출처. ⚠️ 두 언급 모두 **전언, 원문 미확보**
 - [[maximillian-piras]] — [[yutori]] 창립 디자이너, [[mousepower]]·[[task-entropy-matrix]] 제안
 - [[james-watt]] — 18세기 증기기관 제작자. 위키 첫 역사적 인물 — **마력**은 정확해서가 아니라 *시도하게 만들어서* 통했다
 - [[adam-wiggins]] — [[heroku|Heroku]] 공동창업자, [[twelve-factor-app]] 방법론 저자
@@ -79,7 +81,8 @@ updated: 2026-09-14
 - [[openai]] — GPT·[[codex|Codex]] 개발 frontier lab, 위키 첫 비-Anthropic 에이전트 생태계 진입 · CEO 3부작(프론티어 RL 연기 · Hugging Face 사건 · [[openai-astra|Astra]] · Merge, sources: 4)
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
-- [[ai-labs]] — 에이전트 스킬·AI 코딩 워크플로 영상 제작 주체이자 소프트웨어 회사 ([[tech-bridge-six-agent-skills]] 원 제작자)
+- [[ai-labs]] — 에이전트 스킬·AI 코딩 워크플로 영상 제작 주체이자 소프트웨어 회사 ([[tech-bridge-six-agent-skills]] · [[tech-bridge-graft-code-knowledge-graph]] 원 제작자). ⚠️ 발표자 이름이 **두 소스 모두에 없다**
+- [[ai-engineer]] — 이 위키의 여러 소스가 올라온 **컨퍼런스를 운영하는 조직**. **12~15명이 참석자 7,000명·스폰서 140곳·발표자 300명·세션 600개를 치른다** (sources: 1) ⚠️ 정식 조직명·행사 브랜드 관계 미확정
 - [[switch-dimension]] — AI SDLC 교육·콘텐츠 주체, 자체 discovery 스킬 운영 ([[tech-bridge-ai-native-sdlc]] 해설자)
 - [[coursera]] — 온라인 학습 플랫폼, [[andrew-ng]] 공동창업 · [[learnvector]] $100M 투자자
 - [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
@@ -129,6 +132,7 @@ updated: 2026-09-14
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[devin]] — **Slack 안에 사는 코딩 에이전트.** 디자인 조직에서 일정표 생성·픽셀 퍼펙트 구현·**로고 누락 검수**·1회용 기능 추가에 쓰인다 ([[tech-bridge-one-designer-plus-ai]]) ⚠️ **제작사가 소스에 없다**
 - [[zed]] — 텍스트 에디터, JetBrains와 함께 [[agent-client-protocol|ACP]] 공동 제안
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]]) · 제3자: **공개 출시**·채널당 메모리=사일로 ([[tech-bridge-company-brain-security]])
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
@@ -145,6 +149,7 @@ updated: 2026-09-14
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 
 ### Tools
+- [[graft]] — 코딩 에이전트의 파일 탐색을 [[code-knowledge-graph|지식 그래프]] 조회로 바꾸는 무료 오픈소스 CLI + MCP. **모델을 쓰지 않는다** · 훅 셋으로 워크플로 강제 · 자체 벤치마크 162회에 토큰 −42%·비용 −32% ([[tech-bridge-graft-code-knowledge-graph]]) ⚠️ 수치 전부 자체 보고 · **코드만 매핑한다**
 - [[goose]] — [[block|Block]]발 오픈소스 하네스, Linux Foundation 기증. [[agent-client-protocol|ACP]] 원격 전송을 명세
 - [[pstack]] — [[lauren-tan]]의 Cursor 플러그인(potato stack). potato mode **라우터** + 플레이북 22개, 검증 스킬 생성·유지, [[agent-arena|아레나]]·[[agent-swarm|스웜]], **계획 스킬 없음** (sources: 2 — **제작자 바깥의 첫 관측** 포함)
 - [[dioxus]] — Rust 크로스플랫폼 앱 프레임워크(2021~). 별 37k·**누적 사용자 2억+**(자기 추정)·핵심 엔지니어 3명. [[cognition]] 인수 ([[tech-bridge-ambitious-software-agent-era]])
@@ -177,6 +182,8 @@ updated: 2026-09-14
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[reference-graph-vs-vector-search]] — **코드에서 반대말이 가장 비슷하게 생긴다.** *계정 생성*과 *계정 삭제*는 유사도가 높지만 정반대 일 → 유사도가 아니라 **참조 관계**로 인덱싱한다 (sources: 1) ⚠️ 당사자 진술, 하이브리드 논의 없음
+- [[agent-visual-qa]] — 에이전트에게 **최종 산출물을 보게 해서 빠진 것을 찾는** 검증. 140곳 로고 누락 검수·사진↔인물 매칭. **열거 검사는 사람이 가장 약한 일** (sources: 1) ⚠️ *"정확도 100%"* 는 자기 보고 · 작성자=검증자
 - [[agent-verification-skill]] — 에이전트가 앱을 실제로 띄우고 트레이스·시뮬레이터로 **직접 확인**하게 하는 스킬. *올바름은 주되 좋음은 아니다*
 - [[feature-map]] — 앱의 기능과 **도달 경로**(단축키·DOM 속성 포함)를 적은 파일. *"???"* 만 적힌 스크린샷 제보도 작업이 된다
 - [[skill-evals]] — 스킬용 유닛 테스트. **서브에이전트가 평가받는 줄 모르게 디렉터리를 눈가림**하고 다른 모델로 판정·`/loop`로 언덕 오르기
@@ -203,6 +210,8 @@ updated: 2026-09-14
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[file-discovery-tax]] — **에이전트가 비싼 이유는 코드를 고쳐서가 아니라 고칠 자리를 *찾아서*다.** 턴 수 × 누적 컨텍스트로 곱해지고 결과는 **한도 도달 + 품질 저하** 둘. [[verification-bottleneck|검증 병목]]과 **작업의 앞뒤를 각각** 차지한다 (sources: 1)
+- [[code-only-index-blind-spot]] — **코드만 인덱싱하면 에이전트가 읽는 것의 절반만 덮는다.** PRD·`learnings.md`·계획 파일은 그대로 남고, 산문은 참조 그래프로 만들 수 없다 (sources: 1) — 화자 본인이 말한 한계
 - [[standards-as-market-makers]] — 표준의 가치는 규격이 아니라 **보편 채택**에 있다. *"MCP의 힘은 모두가 쓴다는 것"*
 - [[verification-cost-asymmetry]] — 에이전트가 성립하는 작업은 **검증이 실행보다 싼** 작업(NP형)
 - [[sutton-bitter-lesson]] — *"general methods that leverage computation"* 이 결국 이긴다 (Sutton, 2019)
@@ -237,6 +246,15 @@ updated: 2026-09-14
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[atomic-design]] — 가장 작은 부분을 만들어 **레고처럼 합친다.** 에이전트 시대에 값이 달라졌다 — 재사용을 위한 방법에서 **위임을 위한 인터페이스**로 (sources: 1)
+- [[design-system-as-agent-context]] — **디자인 시스템은 모델의 출력 공간을 좁히는 장치다.** *"정의해 두지 않으면 그냥 [[ai-slop|슬롭]]을 내놓는다"* — [[structured-brand-context]]와 달리 **원래 하던 일의 산출물이 그대로 컨텍스트** (sources: 1)
+- [[design-handoff-friction]] — 디자이너↔개발자 왕복이 진짜 병목이었다. 에이전트가 한쪽 끝을 대체하자 **불가능하던 일이 가능해진다.** *레이어 이름은 안 지어도 되고 치수는 명시해야 한다* · **워크플로가 도구의 거처를 따라간다**(Devin은 Slack에 산다) (sources: 1)
+- [[exception-handling-as-the-job]] — *"진짜 일은 예외 처리다."* 자동화의 값은 정상 경로가 빨라지는 데 있지 않고 **1회용 기능의 한계비용이 무너지는 데** 있다 (sources: 1) ⚠️ 즉석 기능의 검토·롤백 논의 없음
+- [[capability-detour]] — **모델이 못 하는 일은 기다리지 말고 그 능력이 필요 없는 경로로 돌아간다.** 펠리컨 SVG가 안 되면 PNG 생성 후 벡터화. 벤치마크 결과는 인정하되 **결론만 다르게** (sources: 1)
+- [[self-serve-asset-generation]] — 디자이너 한 명이 300명을 감당하는 법은 **더 빨리 만드는 게 아니라 만드는 일을 넘기는 것.** 위임되는 것은 실행이고 **결정은 남는다** (sources: 1)
+- [[hook-enforced-workflow]] — **스킬은 능력을 주고 훅은 선택지를 없앤다.** 세션 시작·프롬프트·편집 후 세 훅이 워크플로를 강제한다 — [[hard-vs-soft-enforcement]]가 하네스 층에서 반복됨 (sources: 1) ⚠️ 틀린 주입의 처리·[[prompt-injection]] 표면 논의 없음
+- [[push-vs-pull-context-retrieval]] — 같은 지식을 주는 두 방식, 차이는 **누가 조회를 시작하는가.** 밀어 넣기(훅)는 **낭비를 감수하고 빠르고**, 물어보기([[model-context-protocol|MCP]])는 **턴을 하나 쓰고 정확하다** — 같은 도구가 둘 다 배포하고 스스로 비교 (sources: 1)
+- [[incremental-index-freshness]] — 인덱스의 고질병은 **낡는 것.** 증분 갱신 + **조회 직전 변경 검사** 두 겹, 갱신에 **모델을 쓰지 않는다** (sources: 1)
 - [[agent-trust-curve]] — **병렬성은 모델이 아니라 신뢰의 함수**. 지름길이 없고 개인적이다
 - [[agent-manager-analogy]] — 매니저·헤드셰프·뒷좌석 운전자. 에이전트를 다루는 일은 **환경을 설계하는 일**
 - [[verification-bottleneck]] — 생성이 싸지며 병목이 **검증**으로 이동. 두 답: *작업을 고른다* vs *역량을 짓는다*
@@ -470,11 +488,13 @@ updated: 2026-09-14
 - [[tech-bridge-ambitious-software-agent-era]] — Jonathan Kelley ([[dioxus|Dioxus]] 창시자 · [[cognition|Cognition]]): 5년치 손코딩 뒤의 [[slop-cannon|슬롭 캐논]](*"수만 줄을 쏟아냈는데 품질 기준을 통과한 게 거의 없었다"*), **[[learning-curve-as-feature|어려움이 기능이 됐다]]**(*"줄이려고 싸웠던 학습 곡선이 이제 기능"*), [[agents-as-patient-specialists|인내심 있는 지식 전문가]](Kotlin·Swift 플러그인 2~3주 — 구현 첫날·테스트 2주, CSS 사양을 외워 WebKit을 열지 않는다), **[[code-is-the-product|코드가 곧 제품]]** 이라 지루한 일(체크리스트·백포팅·문서)에서 가장 크게 벌었다, [[test-harness-vs-test-authoring|올바른 테스트는 못 고르고 퍼징 하네스는 탁월]], [[architecture-as-remaining-art|남은 예술은 아키텍처]](*"에이전트도 스파게티를 쓴다 — 더 빠르게"*·*"기반이 나쁘면 그 위도 나쁘다"*), **모든 PR을 한 줄씩 사람이 읽는다**, *"코드는 싸졌지만 품질은 아니다"* ([[tech-bridge]], 2026-09-13, **18:45**, **촬영 2026 확정·행사명 없음**, ⚠️ 당사자·채용 공고로 끝남 · **전환점이 자막 구멍에** · ko가 *slop cannon*→"엉망진창 요리"·*PR*→"보도자료"·*Cognition*→"인지 컴퓨팅")
 - [[tech-bridge-pstack-third-party-review]] — **화자 미상 제3자**([[molten-base|Molten Base]] 제작자): 위키가 [[pstack|Pstack]]을 **제작자 바깥에서** 처음 본다. potato mode는 **라우터** + 플레이북 22개, **계획 스킬이 의도적으로 없다**(*"최고의 사양은 코드다"* — 간접 인용), [[agent-arena|아레나]](같은 문제·다른 모델·접목/기각) vs [[agent-swarm|스웜]](조각 분배·집계), 스킬 `why`(MCP·Slack·Sentry로 **의사결정 기록 복원**)·`recall`·`interrogate`(모델 교차 심문)·`create/maintain verification`·`onslaught`·`bro`·`probe`, 원칙 7개([[laziness-protocol]]·제1원칙 재설계·[[minimizing-reader-load]]·설계 공간 소진·[[build-a-lever]]·검증·컨텍스트 창 보호), **검증이 허위 주장 3건을 잡았다**, 비용 **[[fable-5-1|Fable 5.1]] 맨몸 30분 vs Pstack 1시간** ([[tech-bridge]], 2026-09-13, **11:34**, ⚠️ **ko가 3인칭 소개를 1인칭으로 바꿔 화자를 뒤바꾼다** · 리뷰어도 자기 제품·강의 판매 · 설명란의 "21가지"가 자막에 없음 · ko가 *MCP*→"Master Career Program")
 - [[tech-bridge-zuckerberg-muse-personal-agent]] — [[mark-zuckerberg]] ([[meta|Meta]]) × [[alex-heath]] (*Sources with Alex Heath*): **채널 최장편 65:19.** 세 원칙(권한 부여 · **발명이지 자동화가 아니다** · **[[balance-of-power-safety|안전=권력 균형]]**), *"소수가 통제하는 쪽이 훨씬 더 걱정"*, **[[hugging-face|Hugging Face 사건의 첫 제3자 서술]]**(*"침입 감지 때 오픈소스 모델로 돌아섰다"*), [[muse|Muse]]=VM 붙은 장수명 에이전트(목표→24시간·**밤에 공부**·능동 제안), **[[transaction-cut-monetization|주당 1억 토큰 무료 + 거래 수수료]]**(기업 부담·Stripe), 보안 4겹([[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]]·자격증명 저장소)과 [[moxie-marlinspike|Moxie Marlinspike]] 영입, **[[agent-fleet-learning|함대 학습]]**, **Llama 4 실책 인정**→[[talent-density|인재 밀도]]·좌석 주변 랩, **[[discretion-capability|신중함]]**(임신·무알코올 칵테일 — [[claude-code]]는 덜 필요하다), [[reward-hacking]]과 육아 비유, 안경 표시등·10대 안전 합의 ([[tech-bridge]], 2026-09-13, **65:19**, **촬영 시점 미확정**, ⚠️ 전부 당사자·*"아무도 안 한다"* 3회에 근거 없음·수치 전무 · ko가 **GrokBot·Town·Instinct 열거를 통째로 삭제**·*prompt injection*→"무단 접근"·FAIR 소실)
+- [[tech-bridge-graft-code-knowledge-graph]] — [[ai-labs|AI Labs]]가 소개하는 [[graft|Graft]]: **비용은 편집이 아니라 탐색에서 나온다**([[file-discovery-tax]]). 프로젝트를 **노드/엣지 [[code-knowledge-graph|지식 그래프]]**(로컬 JSON, 모델 미사용)로 만들고 **훅 셋으로 워크플로를 강제**([[hook-enforced-workflow]]), 벡터 검색과의 차이를 *계정 생성 vs 삭제*로 못 박는다([[reference-graph-vs-vector-search]]), **CLI(밀어 넣기, 빠름) vs MCP(물어보기, 정확)** 트레이드오프를 스스로 측정([[push-vs-pull-context-retrieval]]), 증분 갱신 + 조회 직전 검사([[incremental-index-freshness]]), 162회 벤치마크 **시간−60%·도구−46%·토큰−42%·비용−32%**, 시연 39분/31% vs 47분/35% ([[tech-bridge]], 2026-09-14, **11:27**, ⚠️ **수치 전부 자체 보고·조건 비공개** · **코드만 매핑**([[code-only-index-blind-spot]]) · 제목의 *"GitHub 1위"* 가 자막에 없음 · 도구 이름이 *Graph/graft/접목* 세 표기 · 발표자 무명 2회 연속)
+- [[tech-bridge-one-designer-plus-ai]] — [[vincent-wendy|Vincent Wendy]] ([[ai-engineer|AI Engineer]]): **위키가 컨퍼런스를 안쪽에서 보는 첫 소스.** 12~15명·디자이너 1명이 **7,000명·스폰서 140곳·발표자 300명·세션 600개**를 감당한다. *"세부 사항 1,000개는 실패 방법도 1,000가지"* · 다섯 처방(기초·재사용·자동화·검증·마찰 제거) · [[atomic-design]] · [[design-system-as-agent-context|정의해 두지 않으면 슬롭]] · [[design-handoff-friction|Devin이 Slack에 살아서 워크플로가 바뀐다]] · [[self-serve-asset-generation|300명이 자기 그래픽을 직접]] · [[agent-visual-qa|로고 누락 검수 "100%"]] · [[capability-detour|펠리컨 SVG가 안 되면 PNG→벡터화]] · **[[exception-handling-as-the-job|"진짜 일은 예외 처리다"]]** ([[tech-bridge]], 2026-09-14, **16:18**, ⚠️ 행사명·연도 미확정 · **비용 이야기가 한 마디도 없다** · 수치·정확도 전부 자기 보고 · **ko가 "다섯 가지"라 하고 넷만 열거** · ko가 *speaker*를 음향기기로 읽어 한 절 파괴)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 436 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 397 → 436, + 2026-09-13 Tech Bridge 3편: source 3 + concept 22 + entity 14)
+- 총 페이지 수: 456 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 436 → 456, + 2026-09-14 Tech Bridge 2편: source 2 + concept 13 + entity 5)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-14 (Tech Bridge **3편**, **열하루 연속** — 09-13 업로드분. 세 편이 에이전트를 **만드는 쪽·쓰는 쪽·파는 쪽**에서 본다. [[tech-bridge-ambitious-software-agent-era|Dioxus 편]]이 **슬롭을 생산자 자신의 입으로** 진단하고([[slop-cannon]]) *어려움이 기능이 됐다*([[learning-curve-as-feature]])는 뒤집기를 준다 — 강제의 층이 CI를 넘어 **컴파일러**까지 갔다. [[tech-bridge-pstack-third-party-review|Pstack 리뷰]]는 **위키가 제작자 바깥에서 도구를 본 첫 사례**이고 병렬성의 축([[agent-arena]] vs [[agent-swarm]])과 **비용의 첫 값**(맨몸 30분 vs 1시간)을 준다. [[tech-bridge-zuckerberg-muse-personal-agent|Zuckerberg 편]]은 **채널 최장편 65:19**이자 위키 첫 [[meta|Meta]] 당사자 소스로, 안전을 **권력 균형**으로 재정의하고([[balance-of-power-safety]]) 에이전트 보안을 [[confidential-vm|기밀 VM]]·[[sentinel-agent|센티널]]·[[least-privilege-connectors|최소 권한]] **4겹으로 구성 요소화한 첫 소스**다. [[verification-bottleneck|검증 병목]]에 **세 번째 답**([[test-harness-vs-test-authoring|일을 쪼갠다]])이 붙었고, [[hugging-face]] 사건에 **첫 제3자 서술**이 들어왔다. ⚠️ **ko 자막이 화자와 대상을 뒤바꾼 첫 사례**(Pstack 편)와 **문장 하나를 통째로 삭제한 첫 사례**(Zuckerberg 편의 GrokBot·Town·Instinct)가 같은 날 나왔다)
+- 마지막 ingest: 2026-09-15 (Tech Bridge **2편**, **열이틀 연속** — 09-14 업로드분. 두 편이 *에이전트가 무엇을 덜어 주는가*에 정반대 답을 준다. [[tech-bridge-graft-code-knowledge-graph|Graft 편]]은 **기계가 기계에게** 주는 쪽 — 비용이 편집이 아니라 **탐색**에서 나온다는 진단([[file-discovery-tax]])과 함께 [[code-knowledge-graph]]의 **첫 에이전트용 런타임 구현**이 들어왔고, **밀어 넣기 vs 물어보기**([[push-vs-pull-context-retrieval]])라는 조달 축과 **훅이 스킬과 달리 강제한다**는 구분([[hook-enforced-workflow]])이 붙었다. [[tech-bridge-one-designer-plus-ai|Vincent Wendy 편]]은 **사람에게서 덜어 내는** 쪽이고 **위키가 컨퍼런스를 안쪽에서 보는 첫 소스**다([[ai-engineer]]) — [[ai-slop|슬롭]] 논의에 **예방**이라는 세 번째 축이, [[taste-vs-judgment|취향 논쟁]]에 **취향을 굳혀 두는** 다섯 번째 입장이, [[verification-bottleneck|검증 병목]]에 **디자인 조직 사례**가 붙었다. ⚠️ **챕터 제목이 자막을 고쳐 준 첫 사례**(설명란이 아니라 챕터)와 **ko가 열거 항목을 빠뜨린 첫 사례**("다섯 가지"라 하고 넷만)가 같은 편에서 나왔다)

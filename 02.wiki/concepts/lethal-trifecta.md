@@ -6,9 +6,9 @@ tags: [security, data-exfiltration, prompt-injection, agent-safety, llm-security
 aliases: [lethal trifecta, 치명적 삼중주, 치명적 3요소]
 related: [confused-deputy-attack, prompt-injection, agentic-misbehavior, agent-identity-separation, secure-tool-evolution, sweeper-agent, black-box-agent-approach]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-one-designer-plus-ai]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-15
 ---
 
 # 치명적 3요소

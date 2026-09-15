@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai]
 created: 2026-09-12
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # AI 슬롭
@@ -89,6 +89,25 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 코드베이스 전체가 슬롭이 된 상태에는 이름이 붙는다 — [[organic-architecture]](*"가드레일이 전혀 없어서 에이전트가 가장 편리한 방법으로 풀어 버리고, 시간이 지나면 여러분이 이해하지 못하는 코드베이스가 통제 불능으로 번져 나갑니다"*).
 
 > **ASR 주의**: 이 소스의 en-orig는 *slop* 을 **"sloth"**(나태)로 잘못 듣고 ko가 **"게으름"** 으로 직역한다. 09-12에 기록한 *slop* 의 여섯 갈래에 **일곱 번째**가 추가된다(*"slop artist"* → *"엉성한 사람"* 도 같은 편에 있다).
+
+
+## 2026-09-15 — 세 번째 축: 예방
+
+[[tech-bridge-one-designer-plus-ai]]의 [[vincent-wendy|Vincent Wendy]]가 슬롭을 **정의의 부재**로 놓는다.
+
+> **Claude든 다른 어떤 LLM이든 아무 폰트 크기나 던지기를 좋아합니다. 우리가 정의해 두지 않으면 그냥 슬롭을 내놓습니다.**
+
+이로써 이 위키의 슬롭 논의가 셋이 된다.
+
+| 소스 | 처방 | 시점 |
+|---|---|---|
+| [[taste-labs]] | **측정한다** ([[slop-probes]]) | 사후 |
+| [[impeccable]] | **조향한다** ([[adjective-verb-steering]]) | 생성 중 |
+| [[vincent-wendy]] | **예방한다** ([[design-system-as-agent-context]]) | 생성 전 |
+
+셋은 경쟁하지 않고 **정의 → 조향 → 측정** 순서로 붙는다. Thais의 *"슬롭 = 결정의 부재"* 와 Vincent의 *"정의해 두지 않은 자리에서 슬롭이 나온다"* 는 **같은 명제의 진단과 처방**이다.
+
+> ⚠️ 이 소스의 ko 자막에서 *slop* 이 또 **"기울기"** 로 옮겨졌다 — 2026-09-12에 기록한 여섯 갈래 중 하나가 **다른 소스에서 재발**했다.
 
 ## References
 

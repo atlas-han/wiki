@@ -6,9 +6,9 @@ tags: [architecture, code-quality, coding-agents, design, substrate]
 aliases: [코드는 싸고 품질은 비싸다, 기반이 나쁘면 기여도 나쁘다]
 related: [organic-architecture, shortest-path-architecture, decision-quality, ambitious-software, code-is-the-product, learning-curve-as-feature]
 first-seen: tech-bridge-ambitious-software-agent-era
-sources: [tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # 남은 예술로서의 아키텍처

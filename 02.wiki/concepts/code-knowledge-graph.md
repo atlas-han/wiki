@@ -5,9 +5,9 @@ category: pattern
 tags: [knowledge-graph, code-understanding, onboarding, developer-tooling]
 related: [llm-wiki-pattern, tree-sitter-llm-hybrid, generator-evaluator-pattern, agent-harness-design]
 first-seen: lum1104-understand-anything
-sources: [lum1104-understand-anything, james-ai-explorer-understand-anything]
+sources: [lum1104-understand-anything, james-ai-explorer-understand-anything, tech-bridge-graft-code-knowledge-graph]
 created: 2026-05-30
-updated: 2026-06-01
+updated: 2026-09-15
 ---
 
 # Code Knowledge Graph
@@ -52,6 +52,23 @@ updated: 2026-06-01
 ## 사용자 시각의 가치 제안
 
 [[james-ai-explorer-understand-anything|한국어 블로그(2026-05-28)]] 는 같은 패턴을 *"새 프로젝트 코드 이해 1시간 → 5분"* 시간 절감 프레임으로 재서술한다. 그래프 자체의 형식적 우월성보다 **온보딩·레거시·diff 영향분석** 같은 *시나리오* 가 채택을 견인. IDE 기본 기능·Sourcegraph 와 대비해 *비즈니스 도메인 매핑·가이드 투어* 가 차별점으로 강조됨.
+
+
+## 2026-09-15 — 사람이 보는 그래프에서 에이전트가 조회하는 인덱스로
+
+[[tech-bridge-graft-code-knowledge-graph]]([[graft|Graft]])가 이 패턴의 **첫 코딩 에이전트용 런타임 구현**을 보여 준다. 같은 자료구조인데 **소비자가 바뀌었다.**
+
+| | [[understand-anything]] (2026-05) | [[graft]] (2026-09) |
+|---|---|---|
+| 그래프를 **보는 쪽** | **사람** — 신규 합류자·리뷰어 | **에이전트** — 편집 전 위치 조회 |
+| 노드의 값 | **평문 요약**(무엇을 하는가) | **위치**(어디에 있는가) — 평문 설명은 *선택이고 "꼭 필요하지 않다"* |
+| 왜 만드나 | 코드베이스 **이해** | [[file-discovery-tax\|탐색 턴 제거]] |
+| 성공 판정 | *"조용히 가르치는가"* | **턴 수·토큰·시간** |
+| 신선도 | 대체로 다루지 않음 | **증분 갱신 + 조회 직전 검사** → [[incremental-index-freshness]] |
+
+**에이전트가 소비자가 되면 설명이 덜 중요해지고 신선도가 훨씬 중요해진다** — 사람은 낡은 그래프를 보고도 알아차리지만 에이전트는 그 위에서 그냥 일한다.
+
+같은 소스가 **벡터 검색과의 차이**를 코드 도메인에서 구체화한다 → [[reference-graph-vs-vector-search]]. 한계도 명시된다 — **코드만 매핑한다** → [[code-only-index-blind-spot]].
 
 ## References
 

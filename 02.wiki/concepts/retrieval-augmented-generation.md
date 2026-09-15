@@ -6,9 +6,9 @@ tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
 related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph]
 created: 2026-09-08
-updated: 2026-09-10
+updated: 2026-09-15
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -62,6 +62,19 @@ updated: 2026-09-10
 ## 세 단계 역사 속의 자리 (2026-09-10)
 
 [[tech-bridge-agent-to-agent-as-search]]가 RAG를 **중간 단계**로 놓는다 — *"4년 전에는 사람이 컨텍스트 창을 수동으로 채웠다. 몇 년 전에는 대부분이 RAG를 했다 — '여러 시스템을 훑어 데이터를 가져오는 검색 도구를 두자.' 그러자 '그건 확장이 잘 안 되고 문제가 있어.' 그리고 지금은 다들 에이전틱 검색이다."* 그리고 셋을 한 문장으로 묶는다: *"대부분의 LLM 시스템은 그냥 검색 문제다."* → [[agent-collaboration-as-search]]. 이 페이지가 RAG를 *출처* 로 정의한 것과 충돌하지 않는다 — Greze의 분류는 *메커니즘의 세대* 이고 IBM의 분류는 *지식의 출처* 다. ⚠️ *"확장이 잘 안 된다"* 의 근거는 소스에 없다.
+
+
+## 2026-09-15 — 코드 도메인에서 벡터 경로가 약한 이유
+
+[[tech-bridge-graft-code-knowledge-graph]]가 기존 벡터 기반 코드 검색을 명시적으로 기각한다.
+
+> **계정을 만드는 코드와 계정을 지우는 코드는 둘 다 "계정" 질문에 걸리지만 정반대 일을 합니다. 잘못 고르면 대가가 큽니다.**
+
+자연어 문서에서는 유사도가 대체로 관련성이지만 **코드에서는 반대말이 가장 비슷하게 생긴다.** 그리고 편집 작업이 정말 알아야 하는 것은 *"이걸 바꾸면 무엇이 깨지는가"* 인데 **그건 유사도가 아니라 의존 관계**다. 소스는 이것을 채택률로 뒷받침한다 — *"대부분의 코딩 에이전트는 아예 쓰지 않습니다."*
+
+2026-09-08 IBM 편이 *"컨텍스트에 다 쏟아붓지 말고 경로를 나눠라"* 로 이 페이지를 세웠다면, 이 소스는 **그 경로 중 하나의 적용 범위를 좁힌다** → [[reference-graph-vs-vector-search]].
+
+> ⚠️ **당사자 진술이다** — 대안([[graft]])을 파는 쪽의 말이고, 하이브리드 논의는 하지 않는다. 벡터 검색 쪽 반론은 이 위키에 아직 없다.
 
 ## References
 

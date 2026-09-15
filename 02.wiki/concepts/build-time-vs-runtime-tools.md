@@ -6,9 +6,9 @@ tags: [tool-design, database, production, human-in-the-loop, mcp, agent-tooling]
 aliases: [빌드타임 vs 런타임, 개발자 보조 도구 vs 최종 사용자 도구]
 related: [secure-tool-evolution, agent-tool-design-practices, action-reversibility, agentic-misbehavior, agent-governance-layers, model-context-protocol, agent-knowledge-sourcing]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-graft-code-knowledge-graph]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-15
 ---
 
 # 빌드타임 도구 vs 런타임 도구
@@ -53,6 +53,13 @@ updated: 2026-09-11
 - **경계가 애매한 도구** — 분석 에이전트가 프로덕션 데이터를 읽기 전용으로 탐색하는 경우는 어느 쪽인가? 소스는 *읽기 전용 제한* 을 별도 단계로만 다룬다.
 - 빌드타임 도구를 프로덕션에서 **안전하게** 쓰는 길(샌드박스 등)은 논의되지 않는다. [[action-reversibility]]의 *샌드박스가 undo의 대체물* 과 결합할 여지.
 - 당사자 진술 — 런타임 도구의 처방이 곧 자사 제품([[mcp-toolbox-for-databases]])의 기능이다.
+
+
+## 2026-09-15 — 빌드타임 산출물의 신선도 문제
+
+[[tech-bridge-graft-code-knowledge-graph]]의 인덱스는 **빌드타임에 만들어 런타임에 조회되는 물건**이라 이 페이지가 세운 구분에 정확히 놓인다. 소스가 그 사이를 잇는 장치를 두 겹으로 둔다 — **편집 후 훅의 증분 갱신**과 **조회 직전 변경 검사**, 그리고 **갱신에 모델을 쓰지 않는다** → [[incremental-index-freshness]].
+
+**빌드타임에 만든 것은 반드시 언제 무효가 되는지와 누가 그것을 알아차리는지를 함께 정해야 한다** — 이 페이지의 원 명제에 신선도 축이 붙는다.
 
 ## References
 

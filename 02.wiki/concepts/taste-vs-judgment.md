@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai]
 created: 2026-09-12
-updated: 2026-09-13
+updated: 2026-09-15
 ---
 
 # 취향과 판단
@@ -71,6 +71,21 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 - **스킬을 유지하는 관찰** — *"스킬을 유지하는 건 꽤 어렵습니다. **취향과 관찰이 많이 필요**합니다. **뒷좌석 운전자 노릇을 아주 잘해야** 해요."* → [[skill-evals]] · [[agent-manager-analogy]]
 
 그리고 **취향이 닿지 않는 곳의 경계**를 긋는다 — 검증은 *올바름* 까지이고 *좋음* 은 사람이 남는다(→ [[agent-verification-skill]]). 이는 09-12 두 편이 도달한 *"추론 시점에 사람이 남는다"* 와 같은 자리다.
+
+
+## 2026-09-15 — 다섯 번째 입장: 취향을 논하지 않고 굳혀 둔다
+
+[[tech-bridge-one-designer-plus-ai]]의 [[vincent-wendy|Vincent Wendy]]는 **취향이 무엇인지 묻지 않는다.** 대신 이미 가진 취향을 **디자인 시스템으로 못 박아** 모델과 다른 팀이 그 안에서만 움직이게 한다([[design-system-as-agent-context]]).
+
+| 입장 | 취향을 어떻게 다루나 |
+|---|---|
+| [[dhh]] | 취향은 사람의 것이고 위임되지 않는다 |
+| [[lena-hall]] | 판단이 남는 층이 따로 있다 |
+| [[thais-castello-branco]] | *"취향이 아니라 판단"* — 측정 가능한 것으로 바꾼다 |
+| [[paul-bakaus]] | 조향의 고도를 사람이 정한다 |
+| **[[vincent-wendy]]** | **자산으로 굳혀 두고 실행을 위임한다** |
+
+다섯 번째가 앞의 넷과 다른 점은 **논쟁을 피한다**는 것이다 — 취향의 소재를 따지는 대신 **취향이 이미 박혀 있는 산출물(디자인 시스템)을 컨텍스트로 넘긴다.** [[self-serve-asset-generation]]에서 위임되는 것이 실행뿐이고 결정은 디자이너에게 남는 구조가 이 입장의 귀결이다.
 
 ## References
 

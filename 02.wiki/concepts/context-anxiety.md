@@ -5,9 +5,9 @@ category: theory
 tags: [llm-behavior, context-window, agent]
 related: [context-resets-and-compaction, context-engineering, agent-harness-design]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-graft-code-knowledge-graph]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-15
 ---
 
 # Context Anxiety

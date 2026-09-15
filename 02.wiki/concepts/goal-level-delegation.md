@@ -5,9 +5,9 @@ category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
 related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai]
 created: 2026-09-05
-updated: 2026-09-06
+updated: 2026-09-15
 ---
 
 # Goal-Level Delegation

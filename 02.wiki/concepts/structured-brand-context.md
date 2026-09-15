@@ -6,9 +6,9 @@ tags: [brand, context, design, retrieval, adherence, agent, ai-slop]
 aliases: [Brand API, brand adherence, 브랜드 준수, 브랜드 API]
 related: [ai-slop, agentic-sites, context-engineering, agent-knowledge-sourcing, retrieval-augmented-generation, multimodal-elicitation, slop-probes, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-one-designer-plus-ai]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-15
 ---
 
 # 구조화된 브랜드 컨텍스트
@@ -54,6 +54,19 @@ updated: 2026-09-12
 - **검증의 주체** — 사람이 보는지 [[slop-probes|프로브]]가 재는지 없음.
 - **베타** — 디자인 파트너 수·결과 없음. 당사자 진술.
 - 브랜드 인덱스의 **저작권·출처** — 미리 설계된 시스템을 누가 만들었는지 없음.
+
+
+## 2026-09-15 — 새로 만들 것인가, 이미 있는 것을 넘길 것인가
+
+[[tech-bridge-one-designer-plus-ai]]가 같은 문제에 **다른 조달 경로**를 보여 준다.
+
+| | [[taste-labs]]의 Brand API (2026-09-12) | [[vincent-wendy]]의 디자인 시스템 (2026-09-15) |
+|---|---|---|
+| 무엇을 넘기나 | **브랜드를 기계용으로 새로 구조화** | **원래 있던 디자인 시스템 그대로** |
+| 누가 만드나 | 별도 제품 | **디자이너가 하던 일의 산출물** |
+| 적용 대상 | 생성 모델 | **모델 + 다른 팀 사람들** |
+
+두 번째가 싸다 — **새 산출물이 아니라 부산물**이기 때문이다. 대신 덮는 범위가 좁다(타이포그래피·색상·컴포넌트·간격). → [[design-system-as-agent-context]]
 
 ## References
 

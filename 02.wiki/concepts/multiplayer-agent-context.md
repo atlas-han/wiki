@@ -6,9 +6,9 @@ tags: [multiplayer, shared-agent, slack, knowledge-creation, privilege, incident
 aliases: [공유 AI, 멀티플레이어 에이전트]
 related: [company-brain, credential-injection-outside-sandbox, claude-tag, goal-level-delegation, persistent-agent-teams, no-silent-write, agent-org-adoption]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security]
+sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-15
 ---
 
 # 멀티플레이어 에이전트 컨텍스트
@@ -54,6 +54,15 @@ updated: 2026-09-10
 - 동시에 여러 사람이 지시할 때의 **충돌 해소** — 없다.
 - *"가장 많이 만들어진다"* 의 근거 — 사례 하나.
 - 당사자 진술.
+
+
+## 2026-09-15 — 에이전트의 거처가 워크플로를 정한다 (디자인 사례)
+
+[[tech-bridge-one-designer-plus-ai]]에서 [[vincent-wendy|Vincent Wendy]]의 작업 경로는 **Slack → [[figma|Figma]] → 다시 Slack**이고, 그 이유가 아키텍처가 아니라 **거처**다.
+
+> ***"[[devin|Devin]]이 Slack 안에 살기 때문"***
+
+그래서 *"리서치 → 제품 → 피드백 루프"* 라는 디자인 씽킹이 *"저한테는 그냥 낡았다"* 가 된다. **도구가 어디에 있느냐가 프로세스를 다시 쓴다** → [[design-handoff-friction]].
 
 ## References
 

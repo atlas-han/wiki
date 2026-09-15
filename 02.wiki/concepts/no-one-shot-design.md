@@ -6,9 +6,9 @@ tags: [design, iteration, elicitation, human-in-the-loop, auto-mode, intent]
 aliases: [multi-shot design, no auto mode, 원샷 불가, 멀티샷 디자인]
 related: [steering-altitude, adjective-verb-steering, fuzzy-intent-discovery, intent-md, decision-quality, ai-slop, generator-evaluator-pattern, privacy-auto-mode, anthropic-claude-code-auto-mode, no-silent-write]
 first-seen: tech-bridge-impeccable-design-steering
-sources: [tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop]
+sources: [tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-one-designer-plus-ai]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-15
 ---
 
 # 디자인은 원샷할 수 없다
@@ -67,6 +67,15 @@ updated: 2026-09-12
 ## [[generator-evaluator-pattern]]과의 관계
 
 [[anthropic-harness-design-long-running-apps]]도 *멀티샷* 이다 — 5~15회 반복 후 plateau, 10번째에 창발적 도약. 그러나 그쪽의 반복은 **에이전트-에이전트**(생성기·평가기)이고 사람은 루프 밖이다. 이 개념의 반복은 **사람-에이전트**이고 사람이 매 회 형용사를 고른다. 같은 *"원샷은 안 된다"* 에서 **누가 반복을 돌리는가**가 갈린다 — 그리고 그 갈림이 [[steering-altitude]]다.
+
+
+## 2026-09-15 — 조향 대신 우회라는 세 번째 선택지
+
+[[tech-bridge-one-designer-plus-ai]]의 [[vincent-wendy|Vincent Wendy]]는 [[simon-willison|Simon Willison]]의 펠리컨 SVG 테스트를 **직접 다시 돌려 보고** 같은 판정에 도달한다 — *"기본 모델들은 여전히 이 모양이고 디자이너한테는 쓸 수 없다."*
+
+그런데 처방이 다르다. [[paul-bakaus]]는 **같은 능력 위에서 반복하고 조향**하고, Vincent는 **그 능력을 경로에서 뺀다** — GPT로 PNG를 만들고 [[figma|Figma]]에서 벡터화한다.
+
+> **원샷이 안 된다는 진단은 같고, 원샷을 포기한 뒤에 무엇을 하느냐가 갈린다.** → [[capability-detour]]
 
 ## References
 

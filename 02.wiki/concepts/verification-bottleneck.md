@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph]
 created: 2026-09-13
-updated: 2026-09-14
+updated: 2026-09-15
 ---
 
 # 검증 병목
@@ -52,6 +52,16 @@ Lauren Tan 쪽의 답은 그 적응의 구체적 형태다 — **사람이 PR �
 - **[[trusted-throughput]]** — 그 지표가 *신뢰하는 결과물* 을 세는데, **신뢰를 붙이는 단계가 바로 이 병목**이다.
 - **[[tech-bridge-knowledge-work-agent-infrastructure]]**(Composio) — *"코딩 에이전트만 폭발한 이유는 검증 인프라가 있었기 때문"* 이라는 주장과 정확히 이어진다. 그 인프라조차 **리뷰 단계에서는 아직 부족하다**는 것이 이 페이지의 내용이다.
 - **[[tech-bridge-ai-era-code-quality]]**(IBM) — *"완벽한 코드로도 부족하다"* 와 같은 자리. 시스템 수준 품질은 리뷰로 확인되는데 리뷰가 확장되지 않는다.
+
+
+## 2026-09-15 — 검증 앞에 있는 다른 병목, 그리고 디자인으로의 확장
+
+이날 들어온 두 소스가 이 페이지의 양쪽을 건드린다.
+
+- [[tech-bridge-graft-code-knowledge-graph]]는 **변경 *전*의 병목**을 가리킨다 — [[file-discovery-tax|탐색세]]. 이 페이지가 말하는 병목(변경 *후*의 검증)과 **경쟁하지 않고 작업의 앞뒤를 각각** 차지한다.
+- [[tech-bridge-one-designer-plus-ai]]는 검증 병목이 **디자인 조직에서도 성립**함을 보여 준다 — 140곳 스폰서 배너의 **누락 검사**를 에이전트에게 넘긴다 → [[agent-visual-qa]].
+
+두 번째는 **작성자 = 검증자** 구도의 네 번째 사례이기도 하다(배너를 만든 사람이 검수도 시킨다).
 
 ## References
 

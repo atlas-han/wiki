@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph]
 created: 2026-05-25
-updated: 2026-09-13
+updated: 2026-09-15
 ---
 
 # Model Context Protocol (MCP)
@@ -119,6 +119,19 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 ## 최후의 수단으로서의 컴퓨터 사용 (2026-09-12 편)
 
 [[tech-bridge-mousepower-measuring-agents]]는 MCP를 **선호 경로**로 놓는다 — [[yutori|Yutori]]의 컴퓨터 사용 모델은 *"API나 MCP에서 정보를 얻을 수 없을 때"* 쓰는 것이고 *"당연히 API·MCP보다는 비효율적"* 이다.
+
+
+## 2026-09-15 — MCP의 값이 기능이 아니라 타이밍의 주도권인 경우
+
+[[tech-bridge-graft-code-knowledge-graph]]는 **같은 인덱스를 CLI(훅)와 MCP 두 방식으로 배포하고 스스로 비교한다.** 이 위키에서 MCP가 *"에이전트에게 도구를 주는 규약"* 이 아니라 **동일한 데이터에 대한 두 조달 방식 중 하나**로 놓인 첫 사례다.
+
+| | CLI(훅) | MCP |
+|---|---|---|
+| 조회 시작 | **도구가 프롬프트를 보고 추측** | **에이전트가 필요할 때 질의** |
+| 첨부 | 매 메시지에 최대 3개 위치(*"필요로 했든 아니든"*) | 없음 |
+| 자체 테스트 | **더 빠름** | **정답 몇 개 더 맞힘** |
+
+**밀어 넣기는 낭비를 감수하고 지연을 없애고, 물어보기는 턴을 하나 쓰고 적합성을 얻는다** → [[push-vs-pull-context-retrieval]].
 
 ## References
 
