@@ -5,9 +5,9 @@ category: person
 tags: [microsoft, ai-risk, philanthropy, regulation]
 links:
   - https://www.gatesnotes.com/
-sources: [tech-bridge-bill-gates-ai-warning, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-frontier-rl-pause]
+sources: [tech-bridge-bill-gates-ai-warning, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-frontier-rl-pause, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-08-29
-updated: 2026-09-06
+updated: 2026-09-16
 ---
 
 # Bill Gates
@@ -36,3 +36,9 @@ Microsoft 공동창업자, Gates Foundation. 본 위키에는 2026-08 Radio Atla
 - Atlantic: <https://www.theatlantic.com/podcasts/2026/08/bill-gates-dangers-ai/688418/>
 - Gates Notes: <https://www.gatesnotes.com/home/home-page-topic/reader/a-turbulent-ai-era-and-critical-choices-to-make>
 - 반대편: [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-altman-frontier-rl-pause]] · [[regulatory-capture]] · [[ai-jobs-impact]]
+
+## 업계 쪽에서 온 가장 가까운 응답 — 그리고 중국 논증의 반대편 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+Gates가 *"자발적 리뷰는 기준과 시정이 없어 공허하다. 외부 중재자·라이선스가 필요"* 라고 한 것에 대해 [[dario-amodei|Dario Amodei]]의 [[embedded-external-evaluators|상주 외부 평가자]]가 **업계 쪽에서 온 가장 가까운 응답**이다 — 제3자(비영리 → 정부)가 랩 안에서 **회사가 공개한 약속의 이행**을 검사한다. 기준 = 공개한 약속, 시정 = 검사관. 그리고 Gates가 *"우려를 공개한 사람"* 으로 Amodei를 든 것이 이 소스로 확인된다.
+
+**반대편도 있다.** Gates: *"'중국에 진다'는 빈 자발 기준을 들고 가는 한 성립하지 않는다"*. Amodei: *"이것이 **가장 어려운 딜레마** — 그런 상황이 아니었다면 훨씬 더 많은 시간을 쓸 수 있었다"* → [[slowdown-within-lead-margin]]. 두 사람 다 규제를 원하지만 **중국이 감속을 제약하는 무게가 정반대**다. ⚠️ 해소하지 않는다. → [[regulatory-capture]]

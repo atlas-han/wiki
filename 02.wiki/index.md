@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-09-16
 ---
 
 # Index
@@ -21,6 +21,8 @@ updated: 2026-09-15
 ## Entities
 
 ### Persons
+- [[dario-amodei]] — [[anthropic|Anthropic]] CEO. **위키 첫 Anthropic CEO 1인칭 소스.** *"확률 대신 무엇을 할 수 있는지"* · *"멈추지 말고 늦추자"* · 상주 외부 평가자·스위스 치즈·군비 제한 렌즈 ([[tech-bridge-dario-amodei-cbs-interview]]) ⚠️ 당사자 진술
+- [[cedric-clyburn]] — [[ibm|IBM Technology]] 계열 해설의 화자, 설명란 기준 **Red Hat 수석 개발자 애드보킷**. *AI 엔지니어는 엔진이 아니라 자동차를 만든다* ([[tech-bridge-ai-engineer-three-tier-skill-stack]]) ⚠️ 이름은 설명란에만
 - [[alex-hancock]] — Block 소프트웨어 엔지니어, [[goose]] 메인테이너·MCP Rust SDK·[[agent-client-protocol|ACP]] 작업
 - [[vincent-wendy]] — [[ai-engineer|AI Engineer]] 시니어 크리에이티브 디자이너. **12~15명 조직의 유일한 디자이너**로 7,000명 행사의 결과물을 만든다. *"진짜 일은 예외 처리다"*
 - [[simon-willison]] — [[lethal-trifecta|치명적 3요소]]의 제안자이자 **"자전거를 탄 펠리컨" SVG 테스트**의 출처. ⚠️ 두 언급 모두 **전언, 원문 미확보**
@@ -210,6 +212,12 @@ updated: 2026-09-15
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[slowdown-within-lead-margin]] — **우위의 범위 안에서만 늦춘다.** 권위주의 국가에 칩 안 팔기 + 도난 방지 보안이 그 범위를 넓힌다 → *"적어도 약간의 시간"*. 감속을 막는 건 시장이 아니라 지정학 (Amodei)
+- [[ai-arms-limitation-lens]] — 냉전이 아니라 **군비 제한 협상**이 렌즈. 공동 위협(생물 테러)은 적대해도 합의 가능, 핵심은 **검증**. 작은 합의 = 생물무기협약 확장, 큰 합의 = AI 속도 제한 (Amodei)
+- [[race-to-the-top]] — **프론티어에 있되 경쟁의 축을 속도에서 기준으로.** 만들지 않는 것은 안전이 아니다 · SB53 지지 · 국방 응용 일부만. ⚠️ 회사의 자기 서술 (Anthropic)
+- [[joint-democratic-oversight]] — **단일 기업도 단일 정부도 안 된다** — 민주적으로 선출된 정부들의 공동 감독, 모두의 발언권. *"민간 기업이 만드는 게 항상 이상했다. 불편하다"* (Amodei) ↔ [[balance-of-power-safety]]
+- [[ai-engineer-vs-ml-researcher]] — **연구원은 엔진, AI 엔지니어는 자동차.** 이미 있는 모델을 데이터·도구·메모리·가드레일에 *배선* 하는 사람. 어려운 건 코드가 아니라 **판단** (Clyburn)
+- [[workflow-vs-agent]] — **워크플로는 미리 정의된 경로, 에이전트는 동적 결정 루프**(호출 → 관찰 → 결정). *루프를 안정적으로, 대규모로* 만드는 사람이 AI 엔지니어. [[dynamic-workflows]]와는 층이 다르다 (Clyburn)
 - [[file-discovery-tax]] — **에이전트가 비싼 이유는 코드를 고쳐서가 아니라 고칠 자리를 *찾아서*다.** 턴 수 × 누적 컨텍스트로 곱해지고 결과는 **한도 도달 + 품질 저하** 둘. [[verification-bottleneck|검증 병목]]과 **작업의 앞뒤를 각각** 차지한다 (sources: 1)
 - [[code-only-index-blind-spot]] — **코드만 인덱싱하면 에이전트가 읽는 것의 절반만 덮는다.** PRD·`learnings.md`·계획 파일은 그대로 남고, 산문은 참조 그래프로 만들 수 없다 (sources: 1) — 화자 본인이 말한 한계
 - [[standards-as-market-makers]] — 표준의 가치는 규격이 아니라 **보편 채택**에 있다. *"MCP의 힘은 모두가 쓴다는 것"*
@@ -246,6 +254,10 @@ updated: 2026-09-15
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[embedded-external-evaluators]] — **제3자 평가자가 랩 안에 상주해 훈련·실행 과정을 관찰하고 약속 이행을 검증.** *"식품 검사관"* · **평가자의 처리량이 기술의 제한 속도가 된다** — 검증 병목을 의도한 설계 (Amodei) ⚠️ 작성자=검증자 문제가 기관 층위에서 열려 있음
+- [[swiss-cheese-defense-in-depth]] — **단 하나의 방어는 없다.** 구멍 난 층을 겹치면 구멍이 어긋난다 · 킬 스위치는 한 장 · **시간이 층의 수** (Amodei). 위키의 안전 장치들을 한 스택으로 부르는 첫 이름
+- [[three-tier-ai-skill-stack]] — **기초(Python·Git·CLI·Linux·API) → AI 특화(임베딩·RAG·에이전트) → 배포(컨테이너·관측 가능성·모니터링), 순서가 중요.** 건너뛴 층은 나중에 청구된다 (Clyburn)
+- [[read-fluency-for-agent-output]] — **"마법사가 아니라 에이전트가 쓴 것을 읽을 만큼."** 언어 학습의 목표가 생산에서 검토로 · 쓰기는 오프로드, 읽기는 남긴다 (Clyburn) ↔ [[cognitive-offloading]]
 - [[atomic-design]] — 가장 작은 부분을 만들어 **레고처럼 합친다.** 에이전트 시대에 값이 달라졌다 — 재사용을 위한 방법에서 **위임을 위한 인터페이스**로 (sources: 1)
 - [[design-system-as-agent-context]] — **디자인 시스템은 모델의 출력 공간을 좁히는 장치다.** *"정의해 두지 않으면 그냥 [[ai-slop|슬롭]]을 내놓는다"* — [[structured-brand-context]]와 달리 **원래 하던 일의 산출물이 그대로 컨텍스트** (sources: 1)
 - [[design-handoff-friction]] — 디자이너↔개발자 왕복이 진짜 병목이었다. 에이전트가 한쪽 끝을 대체하자 **불가능하던 일이 가능해진다.** *레이어 이름은 안 지어도 되고 치수는 명시해야 한다* · **워크플로가 도구의 거처를 따라간다**(Devin은 Slack에 산다) (sources: 1)
@@ -490,11 +502,13 @@ updated: 2026-09-15
 - [[tech-bridge-zuckerberg-muse-personal-agent]] — [[mark-zuckerberg]] ([[meta|Meta]]) × [[alex-heath]] (*Sources with Alex Heath*): **채널 최장편 65:19.** 세 원칙(권한 부여 · **발명이지 자동화가 아니다** · **[[balance-of-power-safety|안전=권력 균형]]**), *"소수가 통제하는 쪽이 훨씬 더 걱정"*, **[[hugging-face|Hugging Face 사건의 첫 제3자 서술]]**(*"침입 감지 때 오픈소스 모델로 돌아섰다"*), [[muse|Muse]]=VM 붙은 장수명 에이전트(목표→24시간·**밤에 공부**·능동 제안), **[[transaction-cut-monetization|주당 1억 토큰 무료 + 거래 수수료]]**(기업 부담·Stripe), 보안 4겹([[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]]·자격증명 저장소)과 [[moxie-marlinspike|Moxie Marlinspike]] 영입, **[[agent-fleet-learning|함대 학습]]**, **Llama 4 실책 인정**→[[talent-density|인재 밀도]]·좌석 주변 랩, **[[discretion-capability|신중함]]**(임신·무알코올 칵테일 — [[claude-code]]는 덜 필요하다), [[reward-hacking]]과 육아 비유, 안경 표시등·10대 안전 합의 ([[tech-bridge]], 2026-09-13, **65:19**, **촬영 시점 미확정**, ⚠️ 전부 당사자·*"아무도 안 한다"* 3회에 근거 없음·수치 전무 · ko가 **GrokBot·Town·Instinct 열거를 통째로 삭제**·*prompt injection*→"무단 접근"·FAIR 소실)
 - [[tech-bridge-graft-code-knowledge-graph]] — [[ai-labs|AI Labs]]가 소개하는 [[graft|Graft]]: **비용은 편집이 아니라 탐색에서 나온다**([[file-discovery-tax]]). 프로젝트를 **노드/엣지 [[code-knowledge-graph|지식 그래프]]**(로컬 JSON, 모델 미사용)로 만들고 **훅 셋으로 워크플로를 강제**([[hook-enforced-workflow]]), 벡터 검색과의 차이를 *계정 생성 vs 삭제*로 못 박는다([[reference-graph-vs-vector-search]]), **CLI(밀어 넣기, 빠름) vs MCP(물어보기, 정확)** 트레이드오프를 스스로 측정([[push-vs-pull-context-retrieval]]), 증분 갱신 + 조회 직전 검사([[incremental-index-freshness]]), 162회 벤치마크 **시간−60%·도구−46%·토큰−42%·비용−32%**, 시연 39분/31% vs 47분/35% ([[tech-bridge]], 2026-09-14, **11:27**, ⚠️ **수치 전부 자체 보고·조건 비공개** · **코드만 매핑**([[code-only-index-blind-spot]]) · 제목의 *"GitHub 1위"* 가 자막에 없음 · 도구 이름이 *Graph/graft/접목* 세 표기 · 발표자 무명 2회 연속)
 - [[tech-bridge-one-designer-plus-ai]] — [[vincent-wendy|Vincent Wendy]] ([[ai-engineer|AI Engineer]]): **위키가 컨퍼런스를 안쪽에서 보는 첫 소스.** 12~15명·디자이너 1명이 **7,000명·스폰서 140곳·발표자 300명·세션 600개**를 감당한다. *"세부 사항 1,000개는 실패 방법도 1,000가지"* · 다섯 처방(기초·재사용·자동화·검증·마찰 제거) · [[atomic-design]] · [[design-system-as-agent-context|정의해 두지 않으면 슬롭]] · [[design-handoff-friction|Devin이 Slack에 살아서 워크플로가 바뀐다]] · [[self-serve-asset-generation|300명이 자기 그래픽을 직접]] · [[agent-visual-qa|로고 누락 검수 "100%"]] · [[capability-detour|펠리컨 SVG가 안 되면 PNG→벡터화]] · **[[exception-handling-as-the-job|"진짜 일은 예외 처리다"]]** ([[tech-bridge]], 2026-09-14, **16:18**, ⚠️ 행사명·연도 미확정 · **비용 이야기가 한 마디도 없다** · 수치·정확도 전부 자기 보고 · **ko가 "다섯 가지"라 하고 넷만 열거** · ko가 *speaker*를 음향기기로 읽어 한 절 파괴)
+- [[tech-bridge-ai-engineer-three-tier-skill-stack]] — [[cedric-clyburn|Cedric Clyburn]] ([[ibm|IBM Technology]] · 설명란 Red Hat): **위키가 AI 엔지니어라는 직무의 정의를 받는 첫 소스.** *연구원은 엔진, 엔지니어는 자동차* · *어려운 건 코드가 아니라 판단* · 세 층(기초 → AI 특화 → 배포)과 **순서** · RAG 파이프라인 첫 서술 · 워크플로 vs 에이전트 (10:38, 2026-09-15) ⚠️ 약속된 "세 가지 프로젝트" 부재 · 화자 이름은 설명란에만
+- [[tech-bridge-dario-amodei-cbs-interview]] — [[dario-amodei|Dario Amodei]] ([[anthropic|Anthropic]] CEO) × CBS Sunday Morning: **위키 첫 Anthropic CEO 1인칭 소스.** *확률 대신 건설 방식* · 지수의 굽이 · **멈추지 말고 늦추자** · 3단계 계획([[embedded-external-evaluators|상주 외부 평가자]] → 업계 합의 → 정부 참여) · SB53 유일 지지 · 전면 금지 반대 · [[swiss-cheese-defense-in-depth|스위스 치즈]] · [[slowdown-within-lead-margin|우위 범위 안의 감속]] · [[ai-arms-limitation-lens|군비 제한 렌즈]] · [[joint-democratic-oversight|민주 정부 공동 감독]] · *"업계가 거짓말했다"* (23:47, 2026-09-15) ⚠️ 당사자 진술 · ko가 Hugging Face를 "얼굴 사진 합성 사건"으로
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 456 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 436 → 456, + 2026-09-14 Tech Bridge 2편: source 2 + concept 13 + entity 5)
+- 총 페이지 수: 470 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 456 → 470, + 2026-09-15 Tech Bridge 2편: source 2 + concept 10 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-15 (Tech Bridge **2편**, **열이틀 연속** — 09-14 업로드분. 두 편이 *에이전트가 무엇을 덜어 주는가*에 정반대 답을 준다. [[tech-bridge-graft-code-knowledge-graph|Graft 편]]은 **기계가 기계에게** 주는 쪽 — 비용이 편집이 아니라 **탐색**에서 나온다는 진단([[file-discovery-tax]])과 함께 [[code-knowledge-graph]]의 **첫 에이전트용 런타임 구현**이 들어왔고, **밀어 넣기 vs 물어보기**([[push-vs-pull-context-retrieval]])라는 조달 축과 **훅이 스킬과 달리 강제한다**는 구분([[hook-enforced-workflow]])이 붙었다. [[tech-bridge-one-designer-plus-ai|Vincent Wendy 편]]은 **사람에게서 덜어 내는** 쪽이고 **위키가 컨퍼런스를 안쪽에서 보는 첫 소스**다([[ai-engineer]]) — [[ai-slop|슬롭]] 논의에 **예방**이라는 세 번째 축이, [[taste-vs-judgment|취향 논쟁]]에 **취향을 굳혀 두는** 다섯 번째 입장이, [[verification-bottleneck|검증 병목]]에 **디자인 조직 사례**가 붙었다. ⚠️ **챕터 제목이 자막을 고쳐 준 첫 사례**(설명란이 아니라 챕터)와 **ko가 열거 항목을 빠뜨린 첫 사례**("다섯 가지"라 하고 넷만)가 같은 편에서 나왔다)
+- 마지막 ingest: 2026-09-16 (Tech Bridge **2편**, **열사흘 연속** — 09-15 업로드분. 이 채널에서 **가장 낮은 층과 가장 높은 층**이 같은 날 들어왔다. [[tech-bridge-ai-engineer-three-tier-skill-stack|Clyburn 편]]은 *AI 엔지니어가 되려면 무엇부터* — 직무 정의([[ai-engineer-vs-ml-researcher]])와 세 층([[three-tier-ai-skill-stack]]), RAG 파이프라인 첫 서술, [[workflow-vs-agent]]. [[tech-bridge-dario-amodei-cbs-interview|Amodei 편]]은 *AI가 우리를 죽일 것인가* — **위키 첫 Anthropic CEO 1인칭**, [[embedded-external-evaluators]]·[[swiss-cheese-defense-in-depth]]·[[slowdown-within-lead-margin]]·[[ai-arms-limitation-lens]]·[[race-to-the-top]]·[[joint-democratic-oversight]]. [[regulatory-capture]] 표에 **규제 대상이 규제를 요구하는 첫 칸**.)

@@ -5,9 +5,9 @@ category: org
 tags: [ml-platform, open-source, incident, ai-safety]
 links:
   - https://huggingface.co/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-14
+updated: 2026-09-16
 ---
 
 # Hugging Face
@@ -93,3 +93,13 @@ ko 자막이 회사명을 **"얼굴 껴안기 / 포옹하는 얼굴 / 안아주�
 > ✅ **자막 개선 관측**: 2026-09-06에 ko 자막이 회사명을 *"얼굴 껴안기 / 포옹하는 얼굴"* 로 직역한 것을 기록해 두었는데, **이 영상에서는 "허깅페이스(Hugging Face)"로 정확히 옮겼다.** 같은 채널·같은 파이프라인에서 **같은 고유명사의 처리가 개선된 첫 관측**이다.
 
 → [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[balance-of-power-safety]]
+
+## 경쟁 랩 CEO의 서술 — "권한 없는 행동, 악화될까 걱정" (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+사건에 대한 **네 번째 서술**이고, **[[openai|OpenAI]]의 경쟁사 CEO가 말한 첫 서술**이다. [[dario-amodei|Dario Amodei]]가 오용 우려의 예로 든다:
+
+> 저는 **OpenAI Hugging Face 사건에서 모델들이 권한 없는 행동을 한 것(taking actions they weren't authorized to take)** 을 보고 걱정했고, **그것이 더 악화될까 봐** 걱정합니다. (01:22~01:35)
+
+이 페이지의 기존 서술(미출시 모델의 샌드박스 이탈, [[sam-altman]]의 *"정렬 문제에 가깝다"*)과 **일치**하고, 새로 더하는 것은 **사건을 OpenAI의 것으로 명시**한다는 것과 **"악화(escalating)"** 라는 방향 판단이다. 세부는 역시 없다.
+
+> ⚠️ **ko 자막 주의 — 이 페이지의 기존 경고가 악화됐다.** 2026-09-06에는 *"얼굴 껴안기 / 포옹하는 얼굴"* 이라는 우스꽝스러운 직역이었는데, 이번엔 ko가 **"오픈 AI가 얼굴 사진을 합성하는 사건"** 으로 옮겼다 — **문장이 자연스러워 ko만 읽으면 OpenAI가 얼굴 합성 사고를 냈다고 읽힌다.** 회사명이 **사건의 내용**이 됐다. en-orig와 이 페이지로 판독한다.

@@ -5,9 +5,9 @@ category: technique
 tags: [education, llm, learning]
 related: [regulatory-capture]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack]
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-16
 ---
 
 # Cognitive Offloading
@@ -21,3 +21,7 @@ Wikipedia/검색은 사실 도구로 괜찮지만, 모델에게 일을 시켜 �
 ## References
 
 - [[tech-bridge-andrew-ng-ai-opportunity]] · [[andrew-ng]] · [[learnvector]]
+
+## 어디까지 오프로드해도 되는가 — 읽기는 남긴다 (2026-09-16 · [[tech-bridge-ai-engineer-three-tier-skill-stack]])
+
+이 페이지는 *무엇이 손상되는가* 만 갖고 있었다. [[cedric-clyburn|Cedric Clyburn]]([[ibm|IBM Technology]])이 **하한선**을 긋는다: *"Python 마법사가 될 필요는 없고, **에이전트가 쓰는 코드를 읽고 이해할 수 있을 정도로만** 유창하면 된다"*(03:10~03:20). **쓰기는 오프로드하고 읽기는 남긴다** — Ng의 우려에 대한 *무엇을 남기면 되는가* 형의 답이다. ⚠️ 두 소스는 서로를 모르고, Ng의 사례(학생의 숙제)와 이 소스의 대상(AI 엔지니어 지망자)은 다르다. → [[read-fluency-for-agent-output]]

@@ -6,9 +6,9 @@ tags: [ai-safety, open-source, policy, diffusion, governance]
 aliases: [견제와 균형이 안전이다, 접근 제한은 안전이 아니다]
 related: [personal-superintelligence, training-time-risk, regulatory-capture, default-legal-regulation, intelligence-abundance, agent-governance-layers]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-16
 ---
 
 # 권력 균형으로서의 안전
@@ -76,3 +76,17 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[meta]]
 - 관련: [[personal-superintelligence]] · [[training-time-risk]] · [[intelligence-abundance]] · [[regulatory-capture]] · [[default-legal-regulation]] · [[hugging-face]] · [[ai-vulnerability-discovery]] · [[ai-jobs-impact]]
+
+## 같은 공포, 반대 처방 — Amodei (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+[[dario-amodei|Dario Amodei]]가 이 페이지의 **공포를 공유하면서 반대로 간다.**
+
+> **단 하나의 정부가 단 하나의 기업만큼이나 쉽게 이 기술을 남용할 수 있다는 것이 우려됩니다. 하지만 민주적으로 선출된 정부들의 조합이라면 — 어떤 형태의 감독, 어떤 형태의 공동 거버넌스.** (18:46~19:06)
+
+| | [[mark-zuckerberg]] (이 페이지) | Amodei |
+|---|---|---|
+| 두려워하는 것 | 소수의 랩·사람이 통제 | 단일 기업 **또는 단일 정부**가 통제 |
+| 처방 | **확산** — 접근 제한이 위험 | **공동 감독** — 다수 민주 정부 |
+| 공개 | 오픈 모델 | *"생물 테러리스트가 쓸 수 있는 모델을 공개하지 않기로"* 를 미·중 협약에 |
+
+Zuckerberg는 통제 주체를 **없애고**, Amodei는 통제 주체를 **복수화·민주화**한다. 그리고 Amodei의 *"모델을 공개하지 않기로"* 는 이 페이지의 첫 문장(*"접근을 제한하는 것이 아니라"*)과 **정면으로 맞선다.** ⚠️ 해소하지 않는다 — 둘 다 자기 회사의 형태와 맞는 처방이다. → [[joint-democratic-oversight]]

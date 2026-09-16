@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack]
 created: 2026-09-12
-updated: 2026-09-15
+updated: 2026-09-16
 ---
 
 # 취향과 판단
@@ -92,3 +92,11 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 - [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-signal-layer]] · [[tech-bridge-multimodal-commerce-agent]]
 - [[tech-bridge-taste-labs-measuring-slop]] (first-seen) · [[tech-bridge-impeccable-design-steering]]
 - 관련: [[signal-layer]] · [[ai-slop]] · [[decision-quality]] · [[multimodal-elicitation]] · [[dhh]] · [[lena-hall]]
+
+## 2026-09-16 — 진입 전의 사람에게: "어려운 건 코드가 아니라 판단, 만들어 보며 배운다"
+
+[[tech-bridge-ai-engineer-three-tier-skill-stack]]([[cedric-clyburn|Cedric Clyburn]], [[ibm|IBM Technology]])이 같은 말을 **아직 AI 엔지니어가 아닌 사람**에게 한다 — 이 페이지의 입장들이 전부 *이미 일하는 사람* 의 것이었던 것과 다른 자리다.
+
+> **AI 코딩 도구 덕분에 코드 생성이 쉬워졌으므로, 이제 어려운 부분은 코드 자체가 아니라 판단력입니다.** (…) **수업에서 항상 배울 수 있는 건 아니지만, 직접 만들어 보면서 확실히 배울 수 있습니다.** (00:36~01:07)
+
+*판단* 의 내용은 **구조화·무엇을 만들지·왜 이 접근인지**이고, 처방은 **건설**이다 — 신호 정의(Hall)·슬롭 측정(Castello Branco)·조향(Bakaus)과 달리 **학습 경로**를 말한다. 그리고 그 판단이 서기 위한 최소 조건을 같은 소스가 정한다 — [[read-fluency-for-agent-output|에이전트가 쓴 것을 읽을 만큼]]. ⚠️ 취향(taste)이라는 말은 이 소스에 없다. → [[ai-engineer-vs-ml-researcher]]

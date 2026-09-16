@@ -6,9 +6,9 @@ tags: [logging, memory, trust, observability, skills]
 aliases: [행동 기록, the record]
 related: [agent-memory, agent-knowledge-sourcing, knowledge-work-agent-gap, behavior-validated-trust, skill-self-improvement, named-human-accountability, black-box-agent-approach]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-ai-engineer-three-tier-skill-stack]
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-16
 ---
 
 # 에이전트 행동 기록
@@ -63,3 +63,11 @@ updated: 2026-09-10
 
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]]
 - [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 사람 이름 열 · 블랙박스와의 충돌 (2026-09-10)
+
+## 운영 층의 요건으로 — 관측 가능성 (2026-09-16 · [[tech-bridge-ai-engineer-three-tier-skill-stack]])
+
+이 페이지의 *신뢰* 산출(*"에이전트의 말을 믿는 대신 무엇을 했는지 볼 수 있다"*)을 [[cedric-clyburn|Cedric Clyburn]]([[ibm|IBM Technology]])이 **배포·운영 층의 기술 요건**으로 다시 말한다 — 3층 스택([[three-tier-ai-skill-stack]])의 3층 둘째 항목:
+
+> 에이전트가 여러 데이터베이스를 오가며 데이터를 모으는 경우, **우리는 그 에이전트가 왜 그 최종 결정을 내렸는지 이해해야 합니다.** 그 모든 기능을 관찰할 수 있다는 것은 **AI에 대한 투명성과 신뢰**에 매우 중요합니다. (08:26~08:46)
+
+이 페이지의 기록이 *무엇을 했는가* 였다면 이 진술은 **왜 그렇게 결정했는가**까지를 요구한다 — 행동 로그와 **결정 근거**는 다른 것인데 소스는 둘을 구분하지 않는다. 모니터링 항목은 **토큰 비용·보안** 둘. ⚠️ 어떤 도구·방법으로 관찰하는지는 없다. ko는 여기서 *agent* 를 **"상담원"** 으로 옮겼다.

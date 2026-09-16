@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-13
+updated: 2026-09-16
 ---
 
 # Anthropic
@@ -118,3 +118,27 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 - [[tech-bridge-claude-code-team-workflow]]
 - [[tech-bridge-ai-native-sdlc]]
 - [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 제3자 언급 (2026-09-10)
+
+## CEO 1인칭 첫 소스 — "멈추지 말고 늦추자" (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+이 페이지의 Anthropic은 지금까지 **블로그·플랫폼 팀·Claude Code 팀·경쟁사 CEO의 서술**로만 있었다. [[dario-amodei|Dario Amodei]]의 CBS 인터뷰가 **CEO 본인의 정책 진술**을 처음 들여온다. ⚠️ 당사자 진술 — 자기 에세이를 설명하는 자리.
+
+소스에서 확인되는 회사 사실:
+
+| 항목 | 진술 |
+|---|---|
+| 규모 | *"매주 수억 명이 우리 기술을 쓴다"*(21:58) ⚠️ 자기 보고 |
+| 과학 | *"지난주 저희 모델로 단백질 결합을 개선하는 작업"*, *"앞으로 몇 달 동안 생물학의 기초 발견에 대해 말할 것"* |
+| 위협 대응 | *"이틀 전 생물학 무기 제조를 위한 모델 오용 보고서"*, *"매일 아침 위협 보고서"* |
+| 안전장치 비용 | *"생물학 안전장치가 너무 강하다고 거의 매일 놀림받는다 — 생물학 학생들이 모델을 못 쓴다고"* — 기존 항목(*dual-use 모델 공개 보류*)의 **사용자 쪽 비용** |
+| 입법 | **SB53**(2025, 안전 테스트 계획 공개) — *"업계 전체가 반대하거나 침묵했고 Anthropic만 열렬히 지지"* |
+| 정부 | *"상무부·재무부·정보 커뮤니티 관계자들과 매일 대화"* |
+| 국방 | *"국방 응용에 기대가 있다고 말했지만 모든 국방 응용은 아니다"* — 이 위키가 듣는 **첫 국방 관련 입장** |
+| 철학 | [[race-to-the-top|최고를 향한 경쟁]] — *"건설자여야 하지만 기준을 올려야"* |
+| 존재 형태 | *"민간 기업이 이걸 만드는 게 항상 이상했다. 나도 동의한다. 불편하다"* → [[joint-democratic-oversight]] |
+
+정책 제안(3단계 — [[embedded-external-evaluators|상주 외부 평가자]] → 업계 합의 → 정부 참여 하의 출시 기준), 지정학([[slowdown-within-lead-margin]] · [[ai-arms-limitation-lens]]), 방어([[swiss-cheese-defense-in-depth]])는 각 페이지 참조.
+
+**기존 항목과의 관계**: 위 *"경쟁사가 말하는 Anthropic"* 절에서 진행자가 인용한 *"YOLO CEO"* 는 이 소스에서 **다뤄지지 않는다.** [[claude-mythos-preview]]의 *"Mythos·Fable 사태"* 도 언급 없음. Hugging Face 사건은 *"OpenAI Hugging Face 사건 — 모델들이 권한 없는 행동"* 으로 한 번 언급된다 → [[hugging-face]].
+
+> ⚠️ ko 자막이 회사명을 **여섯 표기**(앤트로픽·엔트로픽·엔트로피·인류학 연구·인류학 연구소·인류학파)로 옮겼다. 검색 시 참고.

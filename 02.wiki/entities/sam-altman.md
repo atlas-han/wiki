@@ -5,9 +5,9 @@ category: person
 tags: [openai, ceo, ai-safety, agi, compute]
 links:
   - https://openai.com/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-07
+updated: 2026-09-16
 ---
 
 # Sam Altman
@@ -79,3 +79,7 @@ updated: 2026-09-07
 - [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]]
 - [[openai]] · [[openai-astra]] · [[codex]] · [[hugging-face]]
 - 관련: [[training-time-risk]] · [[intent-alignment]] · [[agi-definition]] · [[compute-constrained-growth]] · [[ai-privilege]] · [[ai-jobs-impact]]
+
+## Amodei의 계획에 동의했다 — 진행자 서술 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+CBS 진행자: *"Elon Musk가 당신에게 동의한다고 했고, **Sam Altman**도 동의한다고 했습니다."*(05:29~05:31, ko *"샘 올먼"*, en-orig ASR *"Sam Olman"*). [[dario-amodei|Dario Amodei]]는 *"경쟁사를 포함한 업계 리더들"* 로 받는다. ⚠️ **Altman이 무엇에 어떻게 동의했는지 이 위키에 소스가 없다.** 이 페이지의 3부작에서 Altman이 *"정부의 모델 테스트·공유 표준 찬성"* 이라 한 것과 Amodei의 [[embedded-external-evaluators|상주 외부 평가자]]는 **방향이 같으나 깊이가 다르다**(출시 전 시험 vs 훈련 과정 관찰). 미해결 항목 *"YOLO CEO"* 는 Amodei 소스에서도 다뤄지지 않는다. 그리고 [[training-time-risk]]의 **일방적 연기**(*"남들에게 전화하지 않았다"*)와 Amodei의 **다자 계획**(*"업계 참여자들이 합의, 정부가 방에"*)은 **같은 진단, 다른 조율 방식**이다.

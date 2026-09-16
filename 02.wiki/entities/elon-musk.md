@@ -6,9 +6,9 @@ tags: [tesla, spacex, x, ceo, humanoid-robots, regulation, g20, power-grid]
 links:
   - https://www.tesla.com/
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-16
 ---
 
 # Elon Musk
@@ -42,3 +42,7 @@ updated: 2026-09-07
 - [[tesla]] · [[spacex]] · [[tech-bridge]]
 - 같은 회의: [[jensen-huang]] · [[sam-altman]]
 - 관련: [[default-legal-regulation]] · [[humanoid-robot-scaling]] · [[power-shortfall]] · [[regulatory-capture]] · [[ai-jobs-impact]]
+
+## Amodei의 계획에 동의했다 — 진행자 서술 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+CBS 진행자: *"**Elon Musk**가 당신에게 동의한다고 했습니다."*(05:29). [[dario-amodei|Dario Amodei]]는 *"경쟁사를 포함한 업계 리더들"* 로 받는다. ⚠️ **무엇에 동의했는지 이 위키에 소스가 없다.** 이 페이지의 [[default-legal-regulation|default legal]] 입장(규제 완화 쪽)과 Amodei의 [[embedded-external-evaluators|상주 외부 평가자]](모든 모델 제작자에게 검사관)는 **표면상 반대 방향**이라 동의의 내용이 무엇인지 더 궁금해지지만, 위키는 추정하지 않는다. 또 Amodei의 [[slowdown-within-lead-margin]]은 **칩**을 시간을 사는 정책 지렛대로 보는데, 이 페이지의 [[power-shortfall]]은 칩을 **전력 공급 문제**로 본다 — 같은 물건, 다른 축.

@@ -5,9 +5,9 @@ category: theory
 tags: [regulation, ai-policy, competition]
 related: [cognitive-offloading, intent-alignment, ai-privilege, training-time-risk, agi-definition, default-legal-regulation, intelligence-abundance]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-08-31
-updated: 2026-09-07
+updated: 2026-09-16
 ---
 
 # Regulatory Capture
@@ -70,3 +70,25 @@ Huang의 *"실제 피해"* 처방은 Ng의 *"구체 해악만"* 과 같은 형�
 - [[tech-bridge-andrew-ng-ai-opportunity]] · [[andrew-ng]] · [[tech-bridge-bill-gates-ai-warning]]
 - 2026-09-06 추가: [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-jensen-huang-g20-agi]] · [[ai-privilege]]
 - 2026-09-07 추가: [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[default-legal-regulation]] · [[intelligence-abundance]] · [[elon-musk]]
+
+## 여섯 번째 칸 — 규제 대상이 규제를 요구한다 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+[[dario-amodei|Dario Amodei]]([[anthropic|Anthropic]] CEO)가 들어오면서 이 표에 **처음으로 규제 대상 기업이 규제(공개 의무·외부 평가)를 스스로 요구하는 칸**이 생긴다.
+
+| 화자 | 규제에 대한 입장 | 자율 판단 | 공포에 대한 태도 |
+|---|---|---|---|
+| [[dario-amodei]] ([[tech-bridge-dario-amodei-cbs-interview]]) | **[[embedded-external-evaluators\|상주 외부 평가자]]**(제3자 비영리 → 정부, *"누군가 AI 모델을 만들 때마다"*) → 업계 합의 → **정부가 방에 있는** 출시 기준. **SB53(공개 의무) 지지**, 킬 스위치 *"좋은 생각일 수 있다"*, **전면 금지 반대** | **불신 — 자기 자신조차.** *"저 혼자의 책임도 Anthropic만의 책임도 아니어야"*, *"민간 기업이 만드는 게 이상하다"* → [[joint-democratic-oversight]] | **정당 — 그리고 업계가 숨겼다.** *"너무 오랫동안 업계는 위험이 없다고 거짓말했다"* |
+
+### Ng와의 정면 충돌
+
+[[andrew-ng]]: **공포는 기존 사업자의 마케팅**이다 — 규제로 오픈웨이트를 누르려는. Amodei: **위험을 숨긴 것이 업계의 거짓말**이다. 둘 다 *누군가 대중을 속인다* 고 하면서 **방향이 반대**다. ⚠️ 해소하지 않는다.
+
+### Ng의 규칙을 이 칸에 적용하면
+
+*"누군가 AI 모델을 만들 때마다 제3자 평가자가"* — **프론티어 랩이 모든 진입자에게 같은 문턱을 요구하는 형태**다. [[race-to-the-top|기준을 올리는 경쟁]]은 **이미 기준을 맞출 수 있는 자에게 유리**하고, [[slowdown-within-lead-margin|우위 범위 안의 감속]]은 **앞선 자에게만 열린 선택지**다. 소스는 이 관점을 다루지 않는다. 이 표의 규칙(누가 규제를 원하는가는 누구에게 유리한가로 읽어라)은 **규제를 요구하는 쪽에도** 적용된다 — Musk 칸에서 *완화를 원하는 쪽에도* 적용했던 것의 대칭. ⚠️ 표시만 한다.
+
+### Gates와의 거리
+
+[[bill-gates]]의 *"외부 중재자·라이선스"* 에 가장 가까운 업계 응답이다. 단 Gates가 *"중국 논증은 빈 기준을 들고 가는 한 성립하지 않는다"* 고 한 반면 Amodei에게 중국은 *"가장 어려운 딜레마"* 다.
+
+여섯 입장을 해소하지 않는다.

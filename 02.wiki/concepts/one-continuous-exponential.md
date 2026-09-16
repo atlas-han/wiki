@@ -5,9 +5,9 @@ category: theory
 tags: [history-of-technology, scaffolding, exponential, epistemics, agi, openai]
 related: [agi-definition, sutton-bitter-lesson, intelligence-abundance, compute-constrained-growth, memex]
 first-seen: tech-bridge-altman-g20-economic-boom
-sources: [tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-16
 ---
 
 # One Continuous Exponential (하나의 연속된 지수 곡선)
@@ -67,3 +67,11 @@ updated: 2026-09-07
 - [[tech-bridge-altman-g20-economic-boom]] — first-seen
 - [[sam-altman]] · [[openai]]
 - 관련: [[agi-definition]] · [[sutton-bitter-lesson]] · [[memex]] · [[intelligence-abundance]] · [[agent-org-adoption]]
+
+## 같은 곡선, 반대 결론 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+[[dario-amodei|Dario Amodei]]도 지수를 말한다 — *"1, 2, 4, 8, 16, 32"*, *"가팔라지기 시작하는 굽이에 있다"*(02:35~02:56). 그런데 이 페이지의 [[sam-altman]]이 *"이번엔 다르다고 말하고 싶은 유혹에 저항하라"* 로 **최종성 서사를 물린** 반면, Amodei는 *"**인류 역사상 가장 중요한 기술적 사건 중 하나**"*(23:36)로 맺는다. 그리고 곡선을 **말로 알던 것과 겪는 것의 차이**를 인정한다:
+
+> **스스로 그렇게 말하면서도, 진행이 실제로 이만큼 빠를 때 그것이 어떤 것일지 완전히 이해하지는 못했던 것 같습니다.** (02:42~02:49)
+
+이것은 [[bill-gates]]의 *"이번은 다르다"* 쪽에 가깝다 — 단 Gates가 그것으로 **규제**를 정당화했다면 Amodei는 **감속**([[slowdown-within-lead-margin]])을 정당화한다. 이 페이지의 유보(*"연속성이 참이어도 속도가 같다는 뜻은 아니다"*)가 정확히 두 사람이 갈리는 자리다 — Altman은 연속성을, Amodei는 속도를 말한다. ⚠️ 해소하지 않는다.

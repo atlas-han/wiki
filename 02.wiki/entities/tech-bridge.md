@@ -51,8 +51,10 @@ sources:
   - tech-bridge-zuckerberg-muse-personal-agent
   - tech-bridge-graft-code-knowledge-graph
   - tech-bridge-one-designer-plus-ai
+  - tech-bridge-ai-engineer-three-tier-skill-stack
+  - tech-bridge-dario-amodei-cbs-interview
 created: 2026-06-03
-updated: 2026-09-15
+updated: 2026-09-16
 ---
 
 # Tech Bridge
@@ -298,6 +300,35 @@ updated: 2026-09-15
 - **행사·촬영 시점 미확정이 두 편 모두** — Graft 편은 컨퍼런스가 아니고, Vincent 편은 *"AI Engineer, 이 컨퍼런스"* 까지다. **2026-09-13에 배운 대로 업로드 날짜를 앵커로 쓰지 않았다.** 09-07 절차대로 [[tech-bridge-mousepower-measuring-agents|World's Fair 편]]과 대조했으나 **겹치는 단서가 없어 별개로 취급**했다.
 
 > ⚠️ **이해관계 표시.** Graft 편은 **AI Labs가 남의 도구를 소개하면서 자기 수정판을 자사 커뮤니티에 올린다** — 소개와 유입이 한 영상에 있다. 그리고 **수치가 전부 개발팀 자체 벤치마크**(162회, 조건 비공개)와 **AI Labs의 1회 시연**이다. Vincent 편은 당사자성이 약하지만 **"정확도 100%"가 자기 보고이고 작성자 = 검증자**다.
+
+## 2026-09-15 업로드 2편 — 직무의 입문서와 CEO의 정책 인터뷰 (2026-09-16 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-ai-engineer-three-tier-skill-stack]] ([[cedric-clyburn]] / [[ibm\|IBM Technology]]) | 10:38 | **1인 해설** · 자사 제품 없음(IBM 편 3회 연속) · 행사 아님 · **화자 이름이 설명란에만** · 촬영 시점 미확정 |
+| [[tech-bridge-dario-amodei-cbs-interview]] ([[dario-amodei]] / [[anthropic]] · CBS Sunday Morning) | 23:47 | **방송 인터뷰** · **CEO 1인칭** · 진행자 무명 · **연도 확정(2026), 날짜 미확정** |
+
+**두 편이 이 채널에서 가장 낮은 층과 가장 높은 층이다.** 하나는 *AI 엔지니어가 되려면 무엇부터* — 이 위키가 **직무 자체의 정의**를 받는 첫 소스([[ai-engineer-vs-ml-researcher]] · [[three-tier-ai-skill-stack]]). 다른 하나는 *AI가 우리를 죽일 것인가* — 이 위키가 **[[anthropic|Anthropic]] CEO의 정책 진술을 직접 듣는 첫 소스**([[embedded-external-evaluators]] · [[slowdown-within-lead-margin]] · [[ai-arms-limitation-lens]] · [[swiss-cheese-defense-in-depth]] · [[race-to-the-top]] · [[joint-democratic-oversight]]). 둘 사이에 이 위키의 나머지 전부가 있다.
+
+**채널 첫 기록 둘** — ① **Anthropic CEO의 1인칭 소스**. 지금까지 Anthropic은 블로그·팀·경쟁사 CEO의 서술로만 있었고, 이 채널의 CEO 인터뷰([[sam-altman]] 3부작·[[mark-zuckerberg]]·[[elon-musk]]·[[jensen-huang]])에 **처음으로 Anthropic 쪽이 들어왔다.** ② **IBM 편에서 화자 이름이 처음 나왔다** — 단 설명란에만.
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **⚠️ ko가 사건 하나를 지어냈다 — 이 채널에서 가장 심한 유형.** *"the OpenAI Hugging Face incident"* → **"오픈 AI가 얼굴 사진을 합성하는 사건"**. 09-06에 [[hugging-face]] 페이지가 기록한 *"얼굴 껴안기"* 직역의 **재발이자 악화** — 그때는 우스꽝스러워 바로 보였지만 **이번엔 문장이 자연스러워 ko만 읽으면 OpenAI가 얼굴 합성 사고를 냈다고 읽힌다.** 회사명 → 사건 내용.
+- **⚠️ 회사명이 한 영상에서 여섯 표기, 그중 셋이 학문·물리 용어.** Anthropic → 앤트로픽·엔트로픽·**엔트로피**·**인류학 연구**·**인류학 연구소**·**인류학파**. 09-10의 *"엔트로픽"* 의 확장이고, **회사명이 학문 분야(anthropology)가 된 첫 사례**. *"인류학파가 처음부터 고수해 온 철학"* 은 ko만으로는 뜻이 통하지 않는다.
+- **⚠️ 부호 뒤집기 세 번째, 세 번 다 결론 문장.** *"I won't lie that the stakes aren't high"*(판이 크다) → ko **"중요성이 크지 않다는 건 부정할 수 없어요"**. 09-07·09-13에 이어. **ko 안에서 바로 다음 문장(*"인류 역사상 가장 중요한 기술적 사건"*)과 모순**된다.
+- **⚠️ 화자의 자기 정정을 ko가 붙여 사실관계를 뒤집었다.** *"업계 전체가 반대했다 — 아니, 침묵했고 — Anthropic만 열렬히 지지"* → ko **"엔트로픽은 아무 말도 하지 않았지만, 열정적으로 지지한 유일한 회사"**. **침묵의 주어가 업계에서 Anthropic으로.** 09-13 *"Gary Tan → 게리 스택"* 계열.
+- **⚠️ 핵심어가 한 번은 맞고 한 번은 틀린 유형이 두 편 모두에서.** Amodei 편: *restraint*(절제) → 16:12 **"규제"** / 21:27 "절제"(옳음). Clyburn 편: *retrieval augmented generation* → 05:42 "검색 증강 생성"(옳음) / 07:00 **"증강 현실 생성"**. 09-15 *remove friction* 의 재발. → **같은 용어의 모든 출현을 대조할 것.**
+- **⚠️ en-orig 오인식의 ko 직역 연쇄 재발** — *pay grade* → en-orig *"prayer grade"* → ko **"기도 능력"**(15:44). 같은 관용구가 17:59에서는 옳다. *Claude* → *"clawed"* → **"발톱"**(20:31). *the model too* → *"model 2"* → **"모델 2"**(08:15, 없던 버전 번호).
+- **⚠️ ko가 잘린 말을 완결 문장으로 창작한 네 번째 사례** — *"I've never— I know"* → **"저는 그런 경험이 없어요"**(21:11). 09-15의 세 번째에 이어.
+- **⚠️ 자막이 스스로 약속한 것을 안 지킨다 (첫 사례).** Clyburn 편 도입부가 *"고용주에게 보여 줄 세 가지 프로젝트"* 를 예고하는데 **끝까지 나오지 않는다**(en-orig도 같다). 지금까지의 결손은 *설명란·제목이 자막에 없는 것을 주장* 하는 형태였는데(09-10~09-15), **이번엔 자막 안에서 예고와 본문이 어긋난다.** 편집인지 원본인지 알 수 없다.
+- **✅ 제목·설명란이 성 표기를 고쳐 준 사례** — 양 트랙이 *"Dario Amade / 아마데"* 로 흔드는데 제목·설명란이 *"다리오 아모데이(Dario Amodei)"* 를 준다. 09-12·09-13(설명란)·09-15(챕터)에 이어 **메타데이터가 자막을 고치는 네 번째**.
+- **⚠️ 진행자 이름이 없는 인터뷰** — 이 채널의 인터뷰 소스 중 진행자가 무명인 것은 처음이다(Altman 3부작·Zuckerberg는 [[alex-heath]], Gates는 Hanna Rosin). 설명란도 매체(CBS Sunday Morning)만 준다.
+- **⚠️ 인명 셋을 채택하지 않았다** — *Jacob Coxin*(전 Anthropic 직원, ASR), *Ted Leo*(하원의원, ASR), 그리고 진행자. 09-15 *Jason Leu* 와 같은 처리.
+- *agent* → **"상담원"** 재발(Clyburn 편 08:30·08:36), *shipped* → **"물품을 배송"**, *defense in depth* → **"수비와 깊이"**, *get through* → **"먹는"**, *handing over* → **"정권 이양"**, *ChatGPT* → **"GPT 채팅"**.
+- **촬영 시점**: Amodei 편은 화자가 *"1년 전, 2025년"* 이라 하므로 **연도 2026 확정** — 이 채널 소스에서 연도가 화자 발화로 확정된 드문 경우. 날짜는 *"몇 시간 전 에세이"*, *"이틀 전 보고서"*, *"곧 트럼프–시진핑 회담"* 까지. Clyburn 편은 **미확정**(IBM 편 3회 연속). **업로드 날짜를 앵커로 쓰지 않았다.**
+
+> ⚠️ **이해관계 표시.** Amodei 편은 **규제 대상 기업의 CEO가 자기 에세이를 설명하는** 방송이고, *"누군가 AI 모델을 만들 때마다 제3자 평가자"* 는 **프론티어 랩이 모든 진입자에게 같은 문턱을 요구하는 형태**다([[regulatory-capture]]). Clyburn 편은 **자사 제품이 없는 개념 해설**이지만 3층(배포)의 Kubernetes·컨테이너·하이브리드 클라우드는 **화자 소속 벤더들이 파는 것과 같은 자리**다. 둘 다 소스는 그 연결을 하지 않고 위키는 표시만 한다.
 
 ## References
 

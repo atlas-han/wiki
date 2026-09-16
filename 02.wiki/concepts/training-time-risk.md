@@ -5,9 +5,9 @@ category: pattern
 tags: [ai-safety, alignment, frontier-lab, rl, safety-case, monitoring, openai]
 related: [agentic-misbehavior, intent-alignment, ai-vulnerability-discovery, transcript-classifier, agent-harness-design]
 first-seen: tech-bridge-altman-frontier-rl-pause
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-dario-amodei-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-16
 ---
 
 # Training-Time Risk (훈련 시점 위험)
@@ -84,3 +84,20 @@ Hugging Face 사건([[hugging-face]]) 이후의 구조 변화가 이 패턴의 �
 - [[tech-bridge-altman-frontier-rl-pause]] — first-seen
 - [[tech-bridge-altman-astra-hardware]] — IPO 연기와의 연결
 - 관련: [[agentic-misbehavior]] · [[intent-alignment]] · [[hugging-face]] · [[transcript-classifier]] · [[ai-vulnerability-discovery]]
+
+## 다른 랩의 CEO가 원칙으로 말한다 — 일방 vs 다자 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+이 페이지는 [[sam-altman]]의 **한 회사의 한 결정**(프론티어 RL 연기)으로 섰다. [[dario-amodei|Dario Amodei]]가 **같은 진단을 원칙 차원에서** 말한다:
+
+> **지금까지는 안전장치를 빠르게 만드는 것으로 따라잡으려 했지만, 적어도 어느 정도는 기술이 지어지는 속도를 조금 조절해야 하는 지점에 도달했습니다.** (03:31~03:45)
+
+Altman의 *"안전 사례를 만들 수 없어서 훈련을 미뤘다"* 와 **같은 형태**(안전장치의 속도 < 기술의 속도)다. 차이는 **조율 방식**이다:
+
+| | Altman (이 페이지의 first-seen) | Amodei |
+|---|---|---|
+| 감속의 주체 | **한 회사** — *"남들에게 전화하지 않았다"* | **업계 + 정부** — *"업계 참여자들이 합의", "정부가 방에"* |
+| 게이트의 관찰자 | 회사 내부 | **[[embedded-external-evaluators\|상주 외부 평가자]]** — 훈련·실행 과정을 제3자가 관찰 |
+| 출시 | 모델 출시는 계속 | *"출시를 멈추는 게 아니라 모든 세대가 제대로 테스트되도록"* |
+| 감속의 한도 | 명시 없음 | **[[slowdown-within-lead-margin\|우위 범위 안]]** — 지정학이 한도 |
+
+Amodei가 훈련 과정을 외부 관찰 대상으로 명시한 것은 **이 페이지가 게이트를 훈련 시점으로 앞당긴 것과 일치**한다. ⚠️ Altman이 Amodei의 계획에 동의했다는 것은 **진행자 서술**이다.

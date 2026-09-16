@@ -6,9 +6,9 @@ tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
 related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack]
 created: 2026-09-08
-updated: 2026-09-15
+updated: 2026-09-16
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -82,3 +82,21 @@ updated: 2026-09-15
 - [[tech-bridge-agentic-sites]] · [[karpathy-llm-wiki-gist]]
 - 관련: [[agent-knowledge-sourcing]] · [[agent-memory]] · [[context-engineering]] · [[agentic-sites]] · [[llm-wiki-pattern]] · [[code-knowledge-graph]]
 - [[tech-bridge-agent-to-agent-as-search]] — 수동→RAG→에이전틱 검색의 세 단계 (2026-09-10)
+
+## 2026-09-16 — 파이프라인 서술이 처음 들어왔다
+
+이 페이지의 미해결 항목 *"청킹·임베딩·재랭킹 등 구현 층위는 이 위키의 어느 소스도 다루지 않았다"* 를 [[tech-bridge-ai-engineer-three-tier-skill-stack]]([[cedric-clyburn|Cedric Clyburn]], [[ibm|IBM Technology]])이 **부분적으로** 채운다.
+
+> 문서들이 파이프라인으로 들어옵니다. **우리가 쓸 데이터 소스에 맞도록 고정된 크기로 청킹**됩니다. **벡터, 즉 수치 표현으로 임베딩되어 데이터베이스에 저장되고 검색**됩니다. 질문이 오면 **그 질문에 데이터베이스나 벡터 소스에서 검색한 관련 정보를 더하고, 관련 정보와 질문을 둘 다 대규모 언어 모델의 컨텍스트 창에** 넣습니다. **사실 정보에 근거하면서도 자연어로 된** 결과를 얻습니다. (05:58~06:48)
+
+| 단계 | 소스의 말 |
+|---|---|
+| 청킹 | **고정 크기** — 데이터 소스에 맞춰 |
+| 임베딩 | 수치 벡터 — *"키워드 일치가 아니라 의미"* (*Kubernetes ↔ 컨테이너·오케스트레이션*) |
+| 저장·검색 | 데이터베이스, **유사도** |
+| 증강 | 질문 + 검색 결과 → 컨텍스트 창 |
+| 생성 | 근거 있는 자연어 |
+
+**재랭킹·청크 크기 결정·평가는 여전히 없다.** 정당화는 **환각 방지**(*"학습되지 않은 회사 정책·법률 문서를 지어내는 대신"*)이고, 채택률 주장이 붙는다 — *"AI를 실험하는 거의 모든 회사는 어떤 형태로든 RAG를 원한다, 임베딩을 쓰지 않더라도"*(⚠️ 근거 없음). 09-07 IBM 편([[tech-bridge-agent-knowledge-four-ways]])의 정의와 **일치**한다 — 같은 채널, 같은 설명.
+
+2026-09-15 [[tech-bridge-graft-code-knowledge-graph|Graft 편]]이 *"코드에서는 유사도가 방향을 모른다"* 고 한 것과 나란히 두면, **이 소스의 예시는 전부 자연어 문서**(회사 정책·법률 문서·PDF·HR·병원)다. 모순이 아니라 **도메인이 다르다.** ⚠️ ko가 07:00에서 *retrieval augmented generation* 을 **"증강 현실 생성"** 으로 옮겼다.

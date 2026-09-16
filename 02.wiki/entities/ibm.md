@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack]
 created: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-16
 ---
 
 # IBM
@@ -65,3 +65,19 @@ updated: 2026-09-09
 - [[tech-bridge-agent-knowledge-four-ways]]
 - 관련: [[agent-knowledge-sourcing]] · [[tech-bridge]]
 - 외부: <https://www.youtube.com/@IBMTechnology>
+
+## 세 번째 소스 — 화자 이름이 처음 나왔다, 단 설명란에만 (2026-09-16)
+
+[[tech-bridge-ai-engineer-three-tier-skill-stack]]으로 IBM은 **소스 세 편**을 가진 조직이 됐다. 판정 근거는 같다 — 설명란 링크 둘이 전부 `ibm.biz`(*"AI 에이전트 자세히 알아보기"*, *"IBM AI 업데이트 뉴스레터"*). 자막의 자기 언급은 *"저희 채널"*(07:05).
+
+| | 09-07 | 09-08 | **09-15 (이번)** |
+|---|---|---|---|
+| 형식 | 화이트보드 8:58 | 슬라이드 13:42 | 1인 해설 **10:38** |
+| 발표자 | 무명 | 무명 | **[[cedric-clyburn\|Cedric Clyburn]]** — ⚠️ **설명란에만**, *"Red Hat 수석 개발자 애드보킷"* |
+| 촬영 시점 | 미확정 | 미확정 | **미확정** |
+| 자사 제품 | 없음 | 없음 | **없음** — 단 Kubernetes·컨테이너·하이브리드 클라우드가 3층의 핵심 |
+| 주제 | 에이전트 지식 네 갈래 | AI 시대 코드 품질 | **AI 엔지니어의 세 층** |
+
+> **관찰 유지**: 세 편 모두 **자사 제품이 등장하지 않는 개념 해설**이다. 이번엔 설명란이 **Red Hat**을 소속으로 주는데 **Red Hat과 IBM의 관계를 소스가 말하지 않는다** — 위키도 연결하지 않는다. 그리고 3층(배포)의 항목들이 **엔터프라이즈 인프라 벤더가 파는 것과 같은 자리**라는 점은 이 페이지의 기존 경고(*"중립적이라는 뜻은 아니다"*)에 해당한다.
+
+09-15 편이 더한 것: [[ai-engineer-vs-ml-researcher]] · [[three-tier-ai-skill-stack]] · [[workflow-vs-agent]] · [[read-fluency-for-agent-output]], 그리고 [[retrieval-augmented-generation]]의 파이프라인 서술. ⚠️ 도입부가 약속한 *"세 가지 프로젝트"* 가 영상에 없다 — IBM 편의 **자막 끝 잘림**(09-08)과 다른 유형의 결손.

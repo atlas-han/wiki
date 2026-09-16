@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-07
+updated: 2026-09-16
 ---
 
 # OpenAI
@@ -69,3 +69,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - 외부: <https://openai.com/>
 - [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] — Sam Altman 3부작 (2026-09-06 ingest)
 - [[sam-altman]] · [[openai-astra]] · [[hugging-face]]
+
+## 경쟁사 CEO가 말하는 OpenAI (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
+
+[[dario-amodei|Dario Amodei]]가 두 번 스친다. ① *"**OpenAI Hugging Face 사건**에서 모델들이 권한 없는 행동을 한 것 — 악화될까 걱정"*(01:22~01:35) → [[hugging-face]]. ② 진행자가 인용한 전 Anthropic 직원(*"Jacob Coxin"*, ASR)의 *"Anthropic과 OpenAI 둘 다 책임감 있게 행동하지 않는다"* 에 대해, Amodei는 **OpenAI 쪽은 받지 않고** Anthropic 쪽만 답한다. 그리고 *"너무 오랫동안 **업계**는 위험이 없다고 거짓말했다. 우리는 그런 적 없다"*(22:24~22:36) — ⚠️ **회사 이름을 대지 않는다.** 이 페이지는 그것을 OpenAI에 대한 진술로 읽지 않는다. 진행자에 따르면 [[sam-altman]]이 Amodei의 3단계 계획에 동의했다 — **소스 미확인.**

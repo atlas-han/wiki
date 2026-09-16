@@ -631,5 +631,21 @@
   "02.wiki/concepts/agent-visual-qa.md": "LiScanEye",
   "02.wiki/concepts/exception-handling-as-the-job.md": "LiAlertTriangle",
   "02.wiki/concepts/capability-detour.md": "LiSplit",
-  "02.wiki/concepts/self-serve-asset-generation.md": "LiFactory"
+  "02.wiki/concepts/self-serve-asset-generation.md": "LiFactory",
+  "01.raw/articles/2026-09-15_AI 엔지니어가 되려면 무엇부터 배워야 할까요 (필수 기술 3단계 총정리).md": "LiVideo",
+  "01.raw/articles/2026-09-15_앤트로픽 CEO 다리오 아모데이 인터뷰.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-ai-engineer-three-tier-skill-stack.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-dario-amodei-cbs-interview.md": "LiVideo",
+  "02.wiki/entities/dario-amodei.md": "LiUser",
+  "02.wiki/entities/cedric-clyburn.md": "LiUser",
+  "02.wiki/concepts/embedded-external-evaluators.md": "LiPuzzle",
+  "02.wiki/concepts/swiss-cheese-defense-in-depth.md": "LiPuzzle",
+  "02.wiki/concepts/three-tier-ai-skill-stack.md": "LiPuzzle",
+  "02.wiki/concepts/read-fluency-for-agent-output.md": "LiPuzzle",
+  "02.wiki/concepts/slowdown-within-lead-margin.md": "LiBookText",
+  "02.wiki/concepts/ai-arms-limitation-lens.md": "LiBookText",
+  "02.wiki/concepts/race-to-the-top.md": "LiBookText",
+  "02.wiki/concepts/joint-democratic-oversight.md": "LiBookText",
+  "02.wiki/concepts/ai-engineer-vs-ml-researcher.md": "LiBookText",
+  "02.wiki/concepts/workflow-vs-agent.md": "LiBookText"
 }
