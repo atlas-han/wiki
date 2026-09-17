@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-08
-updated: 2026-09-10
+updated: 2026-09-17
 ---
 
 # Agent Memory
@@ -115,3 +115,17 @@ updated: 2026-09-10
 - 관련: [[agent-knowledge-sourcing]] · [[retrieval-augmented-generation]] · [[context-engineering]] · [[skill-self-improvement]] · [[agent-distributed-systems]]
 - [[tech-bridge-company-brain-security]] — 자동 저장 금지, 제안→사람 승인 (2026-09-10)
 - [[tech-bridge-agent-to-agent-as-search]] — Apex/Ivy 영구 오염 사례, 청소부 에이전트 (2026-09-10)
+
+## 주기적 압축 — 하루 경계에서 도는 정리 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 [[muse|Muse]]의 메모리 쓰기 경로를 **시각과 함께** 준다.
+
+> **매일 저녁 그날 한 모든 것을 살펴보고 그것을 메모리로 압축(compact)합니다. 그리고 이건 사람이 잘 때 생각하고 압축하는 방식과 비슷합니다.**
+
+이 페이지가 [[tech-bridge-agent-knowledge-four-ways]]에서 받은 정의(*에이전트가 스스로 겪고 저장한 경험*)에 **언제 쓰는가**가 붙는다 — 500 에러 예제는 **사건이 끝나는 순간** 기록했고, 여기서는 **하루가 끝나는 시각에 일괄**한다.
+
+저장소가 갈린다 — *"자격증명 같은 건 Muse 에이전트의 데이터베이스나 메모리가 아니라 안전한 자격증명 저장소에 둡니다."* **메모리는 민감 정보의 자리가 아니다.**
+
+무엇을 남길지는 **모델이 정하고**(*"대체로는 그것이 스스로 정합니다"*), 그 판정 품질이 **모델 개선의 지표**가 된다 — *"맞는 것을 기억하고 무관한 것은 기억하지 않는 데 더 효율적이 될 겁니다"*([[muse-spark|Muse Spark 1.3]]).
+
+→ [[nightly-memory-consolidation]] ⚠️ 사용자 가시성·되돌리기·판정 검증은 소스에 없다.

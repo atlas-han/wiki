@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code]
 created: 2026-09-13
-updated: 2026-09-15
+updated: 2026-09-17
 ---
 
 # 검증 병목
@@ -93,3 +93,21 @@ Lauren Tan 쪽의 답은 그 적응의 구체적 형태다 — **사람이 PR �
 **이 위키가 기록한 검증 사례 중 "무엇이 몇 건 잡혔는지"가 나온 첫 사례**다. ⚠️ 다만 **세 건의 내용이 없고, 놓친 것이 있었는지도 알 수 없다.**
 
 → [[test-harness-vs-test-authoring]] · [[agent-arena]] · [[agent-swarm]] · [[minimizing-reader-load]]
+
+## 보안 쪽에서 나타난 같은 병목 (2026-09-17)
+
+[[tech-bridge-shift-left-security-ai-code]]가 사후 보안 검토의 실패를 **이 페이지와 같은 구조**로 진단한다.
+
+> 보안이 프로세스 마지막 단계에서 **사후적으로 추가(retrofit)** 되는 방식으로만 이루어진다면 **품질이 저하되고 전체 프로세스가 완전히 멈춰 섭니다.**
+
+> **코드 생성이 몇 초 만에 이루어질 수 있는 상황에서, 마지막까지 기다리는 것은 병목을 만들고 위험을 키웁니다.**
+
+**두 방향으로 깨진다** — 검토가 형식이 되거나(품질 저하), 검토가 처리량을 못 따라간다(정체). 그리고 양이 늘면 상황이 나빠진다:
+
+> **코드가 많을수록 기능이 많아지고 복잡성도 커집니다. 그리고 복잡성은 보안의 적입니다.** / **속도만으로는 가치를 만들어내지 못합니다. 신뢰가 만듭니다.**
+
+[[trusted-throughput]]과 짝을 이루되 방향이 반대다 — 그쪽은 *처리량의 값은 신뢰에서 온다*, 이쪽은 **처리량 자체가 검증 표면을 키운다.**
+
+⚠️ 소스가 내놓는 해법은 **자동화**(프론티어 모델을 쓴 취약점 탐지)인데, **AI가 만든 코드를 AI가 검증하는 구성의 독립성을 논의하지 않는다** — 이 위키가 [[embedded-external-evaluators]]·[[skill-evals]]에서 반복해 기록한 *작성자=검증자* 문제가 여기서도 열린 채로 남는다.
+
+→ [[shift-left-security]] · [[continuous-security-validation]]

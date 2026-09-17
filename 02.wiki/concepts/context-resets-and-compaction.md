@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-05-25
-updated: 2026-09-09
+updated: 2026-09-17
 ---
 
 # Context Resets vs. Compaction
@@ -90,3 +90,15 @@ updated: 2026-09-09
 - [[anthropic-harness-design-long-running-apps]]
 - [[anthropic-managed-agents]]
 - [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+
+## compaction이 기능으로 놓이는 자리 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]에서 compaction은 **손실이 아니라 설계된 정리**다.
+
+> **매일 저녁 그날 한 모든 것을 살펴보고 그것을 메모리로 압축(compact)합니다. 그리고 이건 사람이 잘 때 생각하고 압축하는 방식과 비슷합니다.**
+
+차이는 **주체와 시점**이다 — 이 페이지가 다루는 compaction은 **컨텍스트 윈도가 차서 불가피하게** 일어나는 절삭이고, 저쪽은 **하루 경계에서 의도적으로** 도는 정리다. *어쩔 수 없이 버리는 것*과 *골라서 남기는 것*.
+
+⚠️ **그러나 [[agent-governance-layers]]가 기록한 위험은 그대로다** — 무엇을 *"무관한 것"* 으로 볼지가 모델에 달려 있다면, **사용자가 중요하다고 여긴 것이 밤새 사라질 수 있다.** 소스는 이 가능성을 다루지 않고, 압축 결과를 사용자가 보거나 되돌릴 수 있는지도 말하지 않는다.
+
+→ [[nightly-memory-consolidation]]

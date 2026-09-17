@@ -3,9 +3,9 @@ title: Mark Zuckerberg
 type: entity
 category: person
 tags: [meta, ceo, open-source, personal-superintelligence, policy]
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # Mark Zuckerberg
@@ -57,3 +57,32 @@ updated: 2026-09-14
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[meta]] · [[muse]] · [[alex-heath]] · [[meta-superintelligence-labs]]
 - 개념: [[balance-of-power-safety]] · [[personal-superintelligence]] · [[talent-density]] · [[discretion-capability]] · [[reward-hacking]]
 - 비교: [[sam-altman]] · [[jensen-huang]] · [[elon-musk]]
+
+## 두 번째 소스 — 다른 진행자, 같은 이야기 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]로 이 위키의 Zuckerberg 소스가 **둘**이 됐다. ⚠️ **같은 인터뷰가 아니다** — 진행자가 다르고(무명, 자막에 *"Tiff"* 한 번), 길이가 25:09이며, 첫 인사가 *"지난번에 마주 앉았던 건 **거의 정확히 2년 전 Meta Connect**"* 다. [[alex-heath|Alex Heath]] 편의 *"안경 너머로 전화했었잖아요"* 와 다른 관계를 가리킨다.
+
+**이 위키가 같은 인물의 같은 주제에 대한 두 인터뷰를 나란히 갖는 것은 처음이다.** 그래서 대조가 가능해졌다.
+
+### 두 번 다 같은 말을 하는 것
+
+베이킹·등산 허가·MMA 카메라·문명 웹사이트(위 *개인 사용* 절과 같은 넷), 주당 1억 토큰, [[confidential-vm|기밀 VM]]·[[sentinel-agent|센티널]]·[[least-privilege-connectors|최소 권한]]·자격증명 저장소, [[rare-disease-long-tail|희귀 질환의 긴 꼬리]], [[personal-superintelligence|개인 초지능]] 테제.
+
+### 두 번째에서 달라진 것
+
+| | 앞 편 | 이번 편 |
+|---|---|---|
+| [[confidential-vm\|기밀 VM]]의 핵심 주장 | *"그 약속은 **기술적으로 검증 가능**하다"* | *"**견줄 데 없다**" · "다른 누구도 갖고 있지 않다"* (비교 주장) |
+| [[transaction-cut-monetization\|수수료]]의 부담 주체 | *"개인이 아니라 **기업**"*, **Stripe** | **말하지 않음**. 대신 *"커머스든 **절약**이든"* |
+| [[personal-superintelligence\|개인 초지능]]의 논거 | *"소수의 전문가가 **용도를 배분**하는 것에 알레르기"* | *"소수의 랩이 **최고 모델을 자기들만** 갖는 것"* |
+| 오픈소스 | 길게 논의, *"Muse가 오픈소스보다 더 중요할 수 있다"* | **한 번도 언급 없음** |
+| [[agent-fleet-learning\|함대 학습]] | 있음 | **언급 없음** |
+| [[prompt-injection\|프롬프트 인젝션]] | 센티널 설명에 명시 | **언급 없음** |
+
+> **같은 사람이 같은 제품을 말하면서 검증 가능성 주장과 부담 주체, 오픈소스가 빠졌다.** 모순이라 단정할 근거는 없다(짧은 자리다). 다만 **어느 쪽이 남고 어느 쪽이 사라지는지**는 기록해 둘 만하다.
+
+### 새로 나오는 개인 정보
+
+**딸 Aurelia**(세 살, 베이킹) · **로봇 만드는 다른 딸** · **Oura 링** · 에이전트 이름 **Agrippa**(로마 장군, 곰인형 아바타 — [[agent-persona-naming]]) · **Priscilla와 함께 시작한 [[biohub|Biohub]]** (⚠️ Priscilla의 성은 소스에 없어 표기를 채택하지 않았다) · *"최근 **월스트리트 저널** 기고"*(⚠️ 제목·날짜 없음).
+
+새 주장 둘: **[[business-in-a-box|비즈니스 인 어 박스]]**(⚠️ *"모든 Meta 서비스 연결"* 과 *"광고 운영"* 이 한 문장에 있는데 **화자가 자기 광고 이해관계를 연결하지 않는다**)와 **[[rare-disease-long-tail|개인 맞춤 치료 설계]]**(⚠️ 검증·규제·책임 서술 없음).

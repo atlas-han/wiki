@@ -6,9 +6,9 @@ tags: [tool-design, security, blast-radius, database, mcp, zero-trust, sql-injec
 aliases: [도구 진화 6단계, 슈퍼유저에서 통제된 도구로, 폭발 반경 사다리]
 related: [build-time-vs-runtime-tools, bound-parameters, agent-identity-separation, lethal-trifecta, agent-governance-layers, credential-injection-outside-sandbox, action-reversibility, model-context-protocol, agent-tool-design-practices]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-17
 ---
 
 # 안전한 도구의 진화
@@ -76,3 +76,11 @@ updated: 2026-09-11
 
 - [[tech-bridge-build-time-vs-runtime-tools]] (first-seen) · [[averi-kitsch]] · [[mcp-toolbox-for-databases]]
 - 관련: [[bound-parameters]] · [[build-time-vs-runtime-tools]] · [[agent-governance-layers]] · [[lethal-trifecta]] · [[credential-injection-outside-sandbox]]
+
+## 공급망 쪽의 이웃 (2026-09-17)
+
+[[generated-dependency-scrutiny]]가 이 페이지와 같은 불안을 **빌드 시점**에서 다룬다 — 이쪽은 *쓰기로 한 도구가 나중에 다른 것이 되어 있을 수 있다*이고, 저쪽은 **AI가 들여온 의존성이 애초에 무엇인지 아무도 안 봤다**는 것이다.
+
+> **AI는 단순히 코드만 생성하는 것이 아니라 의존성(dependencies)도 들여옵니다.** / **보안 사고는 애플리케이션 로직 자체보다 소프트웨어 공급망에서 비롯됩니다.** — [[tech-bridge-shift-left-security-ai-code]]
+
+→ [[generated-dependency-scrutiny]] · [[shift-left-security]]

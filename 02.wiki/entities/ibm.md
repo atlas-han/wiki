@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code]
 created: 2026-09-08
-updated: 2026-09-16
+updated: 2026-09-17
 ---
 
 # IBM
@@ -81,3 +81,23 @@ updated: 2026-09-16
 > **관찰 유지**: 세 편 모두 **자사 제품이 등장하지 않는 개념 해설**이다. 이번엔 설명란이 **Red Hat**을 소속으로 주는데 **Red Hat과 IBM의 관계를 소스가 말하지 않는다** — 위키도 연결하지 않는다. 그리고 3층(배포)의 항목들이 **엔터프라이즈 인프라 벤더가 파는 것과 같은 자리**라는 점은 이 페이지의 기존 경고(*"중립적이라는 뜻은 아니다"*)에 해당한다.
 
 09-15 편이 더한 것: [[ai-engineer-vs-ml-researcher]] · [[three-tier-ai-skill-stack]] · [[workflow-vs-agent]] · [[read-fluency-for-agent-output]], 그리고 [[retrieval-augmented-generation]]의 파이프라인 서술. ⚠️ 도입부가 약속한 *"세 가지 프로젝트"* 가 영상에 없다 — IBM 편의 **자막 끝 잘림**(09-08)과 다른 유형의 결손.
+
+## 네 번째 소스 — 처음으로 보안을 정면으로 (2026-09-17)
+
+[[tech-bridge-shift-left-security-ai-code]]로 IBM은 **소스 네 편**을 가진 조직이 됐다. 판정 근거는 같다 — 관련 링크 둘이 전부 `ibm.biz`, 해시태그 `#IBM`.
+
+| | 09-07 | 09-08 | 09-15 | **09-16 (이번)** |
+|---|---|---|---|---|
+| 형식 | 화이트보드 8:58 | 슬라이드 13:42 | 1인 해설 10:38 | 1인 해설 **11:18** |
+| 발표자 | 무명 | 무명 | [[cedric-clyburn\|Cedric Clyburn]] (설명란) | **[[jeff-crume\|Jeff Crume]] 박사** — ⚠️ **설명란에만** |
+| 촬영 시점 | 미확정 | 미확정 | 미확정 | **미확정** |
+| 자사 제품 | 없음 | 없음 | 없음 | **없음** |
+| 주제 | 에이전트 지식 네 갈래 | AI 시대 코드 품질 | AI 엔지니어의 세 층 | **AI 생성 코드의 보안** |
+
+> **관찰 유지, 네 번째** — 네 편 모두 **자사 제품이 등장하지 않는 개념 해설**이고, **촬영 시점이 네 번 연속 미확정**이다. 화자 이름이 나온 것은 09-15에 이어 두 번째인데 **두 번 다 설명란에만** 있다.
+
+이번 편이 처음인 것: **IBM 편이 보안을 정면으로 다룬다.** 그리고 이 편은 09-08 편([[tech-bridge-ai-era-code-quality]])의 명제를 **보안 어휘로 되풀이한다** — *"사람이 썼기 때문에 → 행동을 검증했기 때문에"* 가 *"결과를 믿어라, 생성만이 아니라"* 가 된다([[behavior-validated-trust]]). **같은 벤더가 같은 원리를 두 번 말한 첫 사례다.**
+
+09-16 편이 더한 것: [[shift-left-security]] · [[generated-dependency-scrutiny]](이 위키에 **소프트웨어 공급망이 처음 들어온 자리**) · [[continuous-security-validation]], 그리고 [[intent-alignment]]·[[agent-governance-layers]]·[[verification-bottleneck]] 보강.
+
+⚠️ **이 편의 기존 경고에 해당하는 것**: 정적 분석·비밀키 스캔·의존성 모니터링·취약점 탐지는 **엔터프라이즈 보안 벤더가 파는 것과 같은 자리**다. 소스는 그 연결을 하지 않고 위키도 근거 없이 주장하지 않는다 — 다만 **도구 이름이 하나도 없다는 점**과 함께 표시해 둔다.

@@ -6,9 +6,9 @@ tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
 related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # 최소 권한 커넥터
@@ -52,3 +52,22 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[muse]] · [[meta]]
 - 관련: [[secure-tool-evolution]] · [[confused-deputy-attack]] · [[bound-parameters]] · [[credential-injection-outside-sandbox]] · [[sentinel-agent]] · [[confidential-vm]] · [[build-time-vs-runtime-tools]] · [[lethal-trifecta]]
+
+## 두 번째 서술과 두 방향의 최소 노출 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 같은 원칙을 같은 예로 반복한다.
+
+> **새 시스템에 연결할 때 — 이메일이든 뭐든 — 가능한 한 최소 권한(least privilege)으로 기본 설정됩니다.** 뭔가에 연결하고 싶다고 해서 **콘텐츠를 편집할 쓰기 권한까지 꼭 줄 필요는 없습니다.** (19:49~20:01)
+
+> **근본 아키텍처와 설계가 기본적으로 가능한 한 최소의 권한을 주고, 하려는 일을 완료하는 데 필요한 최소의 정보만 노출하는 것입니다.** (20:08~20:21)
+
+이번 편이 더하는 것은 **원칙이 두 방향으로 적용된다**는 점이다:
+
+| 방향 | 장치 | 무엇을 감추나 |
+|---|---|---|
+| **에이전트를 향해** | 자격증명 저장소 | 카드 번호·비밀번호를 **에이전트가 모른다** |
+| **거래 상대를 향해** | [[one-time-virtual-card\|일회용 가상 카드]] | 실제 카드 번호를 **판매자가 못 본다** |
+
+같은 문단이 근거까지 준다 — *"이게 에이전트를 갖는 것의 가치 중 하나입니다 — **에이전트는 그 추가 수고를 마다하지 않습니다.**"* **최소 권한이 지켜지지 않는 이유가 기술이 아니라 마찰이었다면, 에이전트는 그 마찰을 치른다.**
+
+⚠️ ko 자막이 *"right access"*(en-orig ASR of **write access**)를 쓰기 권한으로 명시하지 못했다.

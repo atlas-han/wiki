@@ -6,9 +6,9 @@ tags: [testing, trust, evidence, observability, authorship]
 aliases: [행동 검증, 작성자 신뢰, evidence not authorship]
 related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code]
 created: 2026-09-09
-updated: 2026-09-13
+updated: 2026-09-17
 ---
 
 # 행동 검증 기반 신뢰
@@ -70,3 +70,23 @@ updated: 2026-09-13
 
 - [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[ibm]]
 - [[tech-bridge-company-brain-security]] — 사람 이름 규칙과의 대비 · [[named-human-accountability]] (2026-09-10)
+
+## 같은 벤더가 보안 쪽에서 다시 말한다 (2026-09-17)
+
+[[tech-bridge-shift-left-security-ai-code]]의 **첫 번째 원칙**이 이 페이지의 명제를 **보안 어휘로** 반복한다. 두 소스 모두 [[ibm]]에서 왔다.
+
+| | [[tech-bridge-ai-era-code-quality]] (09-08) | [[tech-bridge-shift-left-security-ai-code]] (09-17) |
+|---|---|---|
+| 문장 | *"사람이 썼기 때문에 → **행동을 검증했기 때문에**"* | *"**결과를 믿어라, 생성만이 아니라**"* |
+| 무엇이 신뢰를 속이는가 | **우아해 보이는 코드**(외형) | **컴파일되고 테스트를 통과하는 코드**(통과 이력) |
+| 증거로 삼을 것 | 테스트·보안 검증·런타임 모니터링 | **실제 조건에서의 결과** — 권한·데이터 유출·실패 모드 |
+
+보안판이 더하는 것은 **통과 이력도 외형이 될 수 있다**는 지적이다:
+
+> **컴파일도 되고, 실행도 되고, 모든 보안 테스트도 통과합니다. 그래서 우리는 이것이 괜찮다고 생각하지만, 눈에 보이지 않는 아래쪽에 보안 위험이 여전히 남아 있을 수 있습니다.**
+
+그래서 검증 질문이 한 칸 더 내려간다 — *테스트를 통과했는가*가 아니라 **"실제 환경에서 예상되는 결과를 내고 안전하게 동작하는가"**. 실패 모드가 그 예다:
+
+> **시스템이 안전하게 고장나는가(fail safe), 아니면 위험하게 열린 채로 고장나는가(fail open)?**
+
+→ [[shift-left-security]] · [[continuous-security-validation]]

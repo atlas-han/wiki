@@ -6,9 +6,9 @@ tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
 related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code]
 created: 2026-09-09
-updated: 2026-09-11
+updated: 2026-09-17
 ---
 
 # 에이전트 거버넌스 두 층
@@ -87,3 +87,24 @@ updated: 2026-09-11
 - [[tech-bridge-company-brain-security]] — 벽의 자리 = HTTP/SQL 프록시, ②층 없음 · [[credential-injection-outside-sandbox]] (2026-09-10)
 - [[tech-bridge-agent-to-agent-as-search]] — 벽을 출구로, ②층을 LLM으로 · [[black-box-agent-approach]] · [[privacy-auto-mode]] (2026-09-10)
 - [[tech-bridge-build-time-vs-runtime-tools]] — 벽의 네 번째 자리 = 도구 정의 YAML, ②층 없음 · [[secure-tool-evolution]] · [[bound-parameters]] (2026-09-11)
+
+## 개발 공정 쪽에서 같은 넷을 요구한다 (2026-09-17)
+
+[[tech-bridge-shift-left-security-ai-code]]의 맺음이 **에이전트에 필요한 통제 넷**을 든다. 이 페이지가 *운영·거버넌스* 쪽에서 세운 것과 같은 목록인데, **출처가 보안 해설이고 맥락이 개발 공정**이다.
+
+| 요구 | 화자의 말 | 이 위키 |
+|---|---|---|
+| **가드레일** | *"무엇을 할 수 있고 무엇을 할 수 없는지, 무엇이 적절하고 무엇이 아닌지"* | 이 페이지 · [[hard-vs-soft-enforcement]] |
+| **신원** | *"**책임을 물을 수 있도록**, 그리고 **누가 왜 이런 일을 했는지 볼 수 있도록**"* | [[agent-identity-separation]] · [[agent-action-record]] · [[named-human-accountability]] |
+| **접근 제어** | *"우리가 의도하지 않은 것을 바꾸지 못하도록"* | [[least-privilege-connectors]] · [[bound-parameters]] |
+| **모니터링 + 사람 개입** | *"monitoring and human in the loop oversight"* | [[sentinel-agent]] · [[no-silent-write]] |
+
+없을 때의 결과를 한 문장으로 말한다:
+
+> **적절한 감독과 집행이 없다면, 에이전트는 제멋대로 날뛰며 생산성 도구가 아니라 위험 증폭기(risk amplifiers)로 행동할 수 있습니다.**
+
+검토 단위에 대한 지적이 이 페이지의 *경계는 에이전트 바깥에 있어야 한다*와 맞물린다:
+
+> **개별 파일을 검토하는 것만으로는 충분하지 않습니다. 보안은 워크플로 전체를 이해하는 데 달려 있습니다. 가장 어려운 보안 문제는 단 하나의 함수에 숨어 있지 않습니다 — 연결된 시스템들 전반에 걸친 의도치 않은 결과로 나타납니다.**
+
+→ [[continuous-security-validation]] · [[shift-left-security]]

@@ -6,9 +6,9 @@ tags: [business-model, pricing, tokens, commerce, agents]
 aliases: [토큰 무료 + 거래 수수료, transaction cut]
 related: [agent-roi-measurement, overspending-underusing-loop, trusted-throughput, mousepower, model-mixing-economics, intelligence-abundance]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # 거래 수수료형 에이전트 과금
@@ -65,3 +65,22 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[muse]] · [[meta]] · [[mark-zuckerberg]]
 - 관련: [[agent-roi-measurement]] · [[overspending-underusing-loop]] · [[mousepower]] · [[trusted-throughput]] · [[model-mixing-economics]] · [[personal-superintelligence]] · [[balance-of-power-safety]] · [[intelligence-abundance]]
+
+## 두 번째 서술 — 범주가 넓어졌고 부담 주체가 사라졌다 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 같은 모델을 다시 말하는데 **서술이 다르다.**
+
+> **진짜 장기 모델은 커머스 모델이 될 겁니다 — 시간이 지나면서 우리가 만들어내는 가치에서, 커머스든 **돈을 아껴 준 것**이든, 아주 작은 몫을 뗍니다. 그게 이것의 비용을 대는 방식이 될 겁니다.** (09:37~09:50)
+
+| | 앞 편 ([[tech-bridge-zuckerberg-muse-personal-agent]], 24:52~25:25) | 이번 편 (09:37~09:50) |
+|---|---|---|
+| 몫의 대상 | **거래** | **우리가 만들어내는 가치** — 거래 **또는 절약** |
+| 누가 내나 | *"결제하는 개인이 아니라 **그들이 거래하는 기업들**"* | **말하지 않음** |
+| 결제 파트너 | **Stripe** | **언급 없음** |
+| 무료 한도 | 주당 1억 토큰 + VM | 주당 1억 토큰 (VM 언급 없음) |
+
+> **모순이라고 단정할 근거는 없다** — 뒤가 더 넓은 서술일 수 있다. 다만 두 가지를 표시해 둔다:
+> - **"아껴 준 돈에서 몫을 뗀다"는 앞 편에 없던 범주**다. 중복 구독 해지([[proactive-idea-feed|아이디어 피드]])가 그 예가 될 텐데, **절약분을 어떻게 측정해 과금하는지 어느 편에도 없다.**
+> - **부담 주체가 이번 편에서 사라졌다.** 앞 편의 *"개인이 아니라 기업"* 이 이 소스만 읽으면 성립하지 않는다.
+
+그리고 [[business-in-a-box]]가 이 모델의 **공급 측면**이다 — 에이전트가 사업을 세워 주면 거래가 생기고, 수수료는 거기서 나온다. ⚠️ **소스는 이 연결을 하지 않는다.**

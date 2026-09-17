@@ -5,9 +5,9 @@ category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
 related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-05
-updated: 2026-09-15
+updated: 2026-09-17
 ---
 
 # Goal-Level Delegation
@@ -92,3 +92,17 @@ Claude Code 팀이 *녹취록을 안 본다*고 했다면 여기서는 *모드·
 - [[tech-bridge-claude-code-team-workflow]] — first-seen
 - 관련: [[claude-tag]] · [[harness-pruning]] · [[dynamic-workflows]] · [[adaptive-response-format]] · [[token-roles]]
 - [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]] — 소비자판 (Sam Altman, 2026-09-06)
+
+## 개인 생활에서의 형태 — 준비 완료 상태를 맡긴다 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 같은 위임 수준을 **업무가 아니라 생활**에서 보여 준다. 네 사례(베이킹·로봇·등산 허가·MMA 코칭)의 공통 구조는 이렇다:
+
+**목표 → 조사 → 외부 서비스에서 실물 조달 → 사람이 할 순간에 준비 완료.**
+
+> 저는 그저 **그게 다 배송돼 있어서, 딸과 베이킹하러 앉을 때 모든 게 준비돼 있기를** 바랄 뿐입니다. (03:26~03:34)
+
+앞 편([[tech-bridge-zuckerberg-muse-personal-agent]])이 같은 사례를 **지시문**으로 재현한 것(*"매 주말마다 …세팅해 줘"*)과 대비하면 차이가 보인다 — **이 편은 산출물이 아니라 상태를 위임의 단위로 말한다.** [[outcome-engineering]]과 같은 방향이되 대상이 코드가 아니다.
+
+MMA 사례가 한 칸 더 간다 — *"카메라를 지켜보다가 **라운드 사이에** 피드백을 달라"* 는 **트리거 시점까지 맡긴 것**이고, 화자는 결과를 통제하지 않는다(*"좀 더 동기 부여가 되는 장면을 골라 줄 순 없었어?"*).
+
+⚠️ **실패 사례가 없어 위임의 경계가 어디서 깨지는지 알 수 없다.**

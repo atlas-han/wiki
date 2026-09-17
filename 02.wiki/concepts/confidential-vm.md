@@ -6,9 +6,9 @@ tags: [security, privacy, confidential-computing, agents, trust-boundary]
 aliases: [confidential VM, 운영자도 볼 수 없는 실행 환경]
 related: [sentinel-agent, least-privilege-connectors, credential-injection-outside-sandbox, lethal-trifecta, named-human-accountability, privacy-auto-mode]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # 기밀 VM
@@ -65,3 +65,23 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[muse]] · [[meta]] · [[moxie-marlinspike]] · [[openclaw]]
 - 관련: [[sentinel-agent]] · [[least-privilege-connectors]] · [[credential-injection-outside-sandbox]] · [[lethal-trifecta]] · [[named-human-accountability]] · [[privacy-auto-mode]] · [[black-box-agent-approach]]
+
+## 두 번째 서술 — 검증 주장이 비교 주장으로 바뀌었다 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 같은 논증(WhatsApp 선례 → 기밀 VM)을 반복하는데 **결론 문장이 다르다.**
+
+> **WhatsApp을 종단간 암호화되게 설계해서, 당신이 메시지를 보낼 때 Meta가 그 메시지를 볼 수 없게 했습니다 — 우리가 원한다 해도요.** **그 원칙을 가져와서 여기서는 기밀 VM이라고 부르는 아키텍처를 설계하려 했습니다.** (14:48~15:14)
+
+> **아주 참신합니다. 제가 아는 한 다른 누구도 이런 걸 갖고 있지 않습니다.** (…) **업계에서 견줄 데 없는 수준의 보안·프라이버시·신뢰를 만든다**고 생각합니다. (15:16~15:39)
+
+| | 앞 편 (31:47~32:04) | 이번 편 |
+|---|---|---|
+| 핵심 주장 | *"그 약속은 **기술적으로 검증 가능합니다**"* | *"**견줄 데 없는** 수준"* · *"**다른 누구도 갖고 있지 않다**"* |
+| 성격 | **검증 가능성** 주장 | **비교 우위** 주장 |
+| [[moxie-marlinspike\|Moxie Marlinspike]] | 전담으로 명시 | **언급 없음** |
+
+> ⚠️ **검증 가능성이 이번 편에서 사라지고 비교 주장만 남았다.** 그리고 **비교 근거가 없다** — 어떤 제품과 비교했는지, *"다른 누구도 없다"* 를 무엇으로 확인했는지 말하지 않는다. 이 소스만 읽으면 **기밀 VM의 약속을 무엇으로 확인하는지 알 수 없다.**
+
+진행자가 사용자 쪽에서 본 것을 덧붙인다 — *"제 Muse의 VM, 즉 개인 컴퓨터를 처음 봤을 때 (…) **메모리나 데이터 같은 것들이 거기 다 저장돼 있고, 오직 우리 에이전트만을 위한 것**이더군요"*(17:12~17:32). **사용자가 VM 내부를 들여다볼 수 있다**는 서술은 이번 편이 처음이다.
+
+⚠️ [[nightly-memory-consolidation|메모리 압축]]이 이 VM 안에서 도는지 소스가 연결하지 않는다.

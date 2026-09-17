@@ -3,9 +3,9 @@ title: Meta Superintelligence Labs (MSL)
 type: entity
 category: org
 tags: [meta, research-lab, llama, talent-density]
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # Meta Superintelligence Labs (MSL)
@@ -42,3 +42,11 @@ updated: 2026-09-14
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[meta]] · [[mark-zuckerberg]]
 - 개념: [[talent-density]] · [[compute-constrained-growth]]
 - 비교: [[minimax]] · [[anthropic]] · [[openai]]
+
+## 두 번째 언급 — "한 1년쯤" (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]에서 [[muse|Muse]]의 기원으로 다시 나온다.
+
+> **[[meta-superintelligence-labs|Meta Super Intelligence Labs]]를 시작한 이래 한 1년쯤 여기에 집중해 왔고, 세상 모든 사람에게 개인 초지능을 전달한다는 비전을 가지고 있었습니다. 이게 바로 우리가 염두에 뒀던 것입니다.** (01:12~01:27)
+
+⚠️ *"한 1년쯤"* 은 **상대 앵커**이고 이 소스의 촬영 시점이 미확정이므로 **절대 시점을 계산하지 않는다.** 그리고 [[muse-spark|Muse Spark]]가 이 랩의 산물인지 소스가 말하지 않는다.

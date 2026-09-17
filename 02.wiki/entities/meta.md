@@ -3,9 +3,9 @@ title: Meta
 type: entity
 category: org
 tags: [frontier-lab, social, open-source, infrastructure, llama, glasses]
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # Meta
@@ -73,3 +73,16 @@ Facebook·Instagram·WhatsApp·Threads·스마트 안경·[[muse|Muse]]를 만�
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[muse]] · [[meta-superintelligence-labs]] · [[moxie-marlinspike]]
 - 개념: [[balance-of-power-safety]] · [[confidential-vm]] · [[sentinel-agent]] · [[least-privilege-connectors]] · [[agent-fleet-learning]] · [[transaction-cut-monetization]] · [[talent-density]] · [[discretion-capability]]
 - 비교: [[openai]] · [[anthropic]] · [[nvidia]] · [[google-deepmind]] · [[minimax]]
+
+## 두 번째 [[muse|Muse]] 소스 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 들어오면서 Meta는 이 위키에 **소스 두 편을 가진 조직**이 됐고, 두 편 다 [[mark-zuckerberg]]의 1인칭이다. ⚠️ **별개의 인터뷰**이고 내용이 크게 겹친다.
+
+이 편이 Meta 쪽에 더하는 것:
+
+- **[[muse-spark|Muse Spark 1.3]]** — 이 위키에 Meta의 **모델 이름이 처음** 나온다. *"매달 새 모델을 출하한다."*
+- **[[one-time-virtual-card|일회용 가상 카드]]** — 결제 층. ⚠️ 발급 주체(Meta인지 카드사인지)를 말하지 않는다.
+- **[[business-in-a-box|비즈니스 인 어 박스]]** — *"제작 · 온라인 존재 · **모든 Meta 서비스 연결** · **광고 운영** · 백엔드"*. ⚠️ **이 문장이 곧 Meta 광고 수요를 늘리는 경로인데 화자가 그 연결을 하지 않는다.** 2026-09-06에 세운 원칙대로 **화자가 광고 플랫폼 소유자**라는 점을 표시한다.
+- **[[biohub|Biohub]]** — *"Meta 바깥에서 제 주된 자선 활동"*. ⚠️ 규모·시점·자금 없음.
+
+⚠️ **[[confidential-vm|기밀 VM]]의 *"기술적으로 검증 가능"* 이라는 앞 편의 주장이 이번 편에서는 *"업계에서 견줄 데 없다"* 라는 비교 주장으로 바뀐다** — 비교 근거는 없다.

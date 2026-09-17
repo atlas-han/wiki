@@ -6,9 +6,9 @@ tags: [security, prompt-injection, human-in-the-loop, monitoring, agents]
 aliases: [감시 에이전트, sentinel]
 related: [prompt-injection, generator-evaluator-pattern, deny-and-continue, no-silent-write, named-human-accountability, lethal-trifecta, confidential-vm]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # 센티널 에이전트
@@ -53,3 +53,28 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[muse]] · [[meta]]
 - 관련: [[prompt-injection]] · [[confidential-vm]] · [[least-privilege-connectors]] · [[generator-evaluator-pattern]] · [[deny-and-continue]] · [[no-silent-write]] · [[named-human-accountability]] · [[lethal-trifecta]] · [[discretion-capability]]
+
+## 두 번째 서술 — 범위가 좁아지고 인젝션이 빠졌다 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 센티널을 다시 설명하는데 **감시 방향이 한쪽만 남는다.**
+
+> **센티널(sentinel)이라고 부르는 두 번째 에이전트를 두어서, 당신의 메인 에이전트가 무엇을 하는지 감시하고, 당신이 루프 안에 있고 싶어 할 만한 게 감지될 때마다 표시해 줍니다.** (16:28~16:44)
+
+> **센티널 에이전트가 당신의 가상 머신에서 **나가는 데이터**를 감시합니다. 민감한 게 있다고 알아채면 **행동을 취하기 전에** 당신이 검토하도록 표시해 줍니다.** (18:03~18:20)
+
+| | 앞 편 (34:33~35:14) | 이번 편 |
+|---|---|---|
+| 감시 방향 | **들어오고 나가는** 트래픽·데이터 | **나가는 데이터**만 |
+| [[prompt-injection\|프롬프트 인젝션]] | **명시** — *"누군가 인젝션 같은 걸 하려는지 본다"* | **언급 없음** |
+| 과잉 공유 | 명시 | *"민감한 게 있다"* |
+| 권한 | *"사람 검토를 **트리거할 권한**"* | *"행동을 취하기 전에 표시"* |
+
+이번 편이 더하는 것은 **권한의 소재**를 못 박는 문장이다:
+
+> **에이전트 자신이 자기가 무엇을 할 수 있는지 스스로 정하지 못합니다.** (17:57~18:03)
+
+> **Muse 시스템의 일부로 여러 에이전트를 갖게 되는 겁니다. 당신을 위해 일을 하는 시스템이 있고, 오직 당신의 데이터가 안전한지와 당신이 검토해야 할 것이 검토되는지에만 집중하는 시스템이 따로 있습니다.** (18:20~18:37)
+
+역할 분리가 [[generator-evaluator-pattern]]과 같은 형태인데 **평가자가 품질이 아니라 유출을 본다.** 그리고 첫 접촉의 게이트가 명시된다 — *"새 서비스에 접근하거나 거래를 하려 할 때는 — **처음이라면** — 당신의 허락을 받아야 합니다."*
+
+⚠️ **탐지율·오탐·센티널 자신의 인젝션 내성은 두 편 모두 없다.** 이번 편은 인젝션을 언급조차 하지 않는다.

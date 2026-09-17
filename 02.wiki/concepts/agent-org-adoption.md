@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, verification, culture, figma]
 related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams, trusted-throughput, token-roles, company-brain]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-08-29
-updated: 2026-09-13
+updated: 2026-09-17
 ---
 
 # Agent Org Adoption
@@ -120,3 +120,17 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 - [[tech-bridge-grokbot-agent-teams]] · [[persistent-agent-teams]] · [[cursor]]
 - [[eyal-blum]] · [[figma]]
 - [[tech-bridge-company-brain-security]] — 키우는 것이지 만드는 것이 아니다 · [[company-brain]] (2026-09-10)
+
+## 도입 문제의 세 갈래 — Muse의 답 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 *"사람들이 AI로 뭘 해야 할지 모른다"* 를 **명시적인 문제 진술로** 올리고, [[muse|Muse]]가 거기에 내놓는 답을 정리하게 해 준다.
+
+> **많은 사람이 AI에 대해 갖는 큰 문제 하나는 그걸로 뭘 해야 할지, 어떻게 최대한 끌어내야 할지 잘 모른다는 것입니다.**
+
+| 갈래 | 방식 | 페이지 | 어느 소스 |
+|---|---|---|---|
+| **먼저 제안한다** | 아이디어 피드 | [[proactive-idea-feed]] | **두 편 모두** — 앞 편은 [[agent-fleet-learning\|함대 학습]] 질문의 답으로, 이번 편은 **도입 문제의 답**으로 |
+| **친근하게 만든다** | 이름·아바타·일하는 모습 | [[agent-persona-naming]] | **이번 편 신규** |
+| **남의 쓰임을 빌려 온다** | 익명화된 통찰 | [[agent-fleet-learning]] | 앞 편만 (⚠️ **이번 편엔 언급 없음**) |
+
+이 위키의 기존 도입 서술이 대체로 **조직**(팀·회사)을 단위로 삼았다면, 이 셋은 **개인**을 단위로 삼는다. 진행자가 든 값이 특히 조직 쪽 지표와 다르다 — *"시간 측면이 있고, 저에게는 **영감(inspiration)** 측면도 있었습니다"*. **하지 않았을 일이 생긴 것**이 값이다.

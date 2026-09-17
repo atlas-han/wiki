@@ -647,5 +647,21 @@
   "02.wiki/concepts/race-to-the-top.md": "LiBookText",
   "02.wiki/concepts/joint-democratic-oversight.md": "LiBookText",
   "02.wiki/concepts/ai-engineer-vs-ml-researcher.md": "LiBookText",
-  "02.wiki/concepts/workflow-vs-agent.md": "LiBookText"
+  "02.wiki/concepts/workflow-vs-agent.md": "LiBookText",
+  "01.raw/articles/2026-09-16_개발자는 AI가 생성한 코드를 어떻게 지킬까요 꼭 알아야 할 5가지 보안 원칙.md": "LiVideo",
+  "01.raw/articles/2026-09-16_당신을 위해 24시간 일하는 메타의 개인용 AI 뮤즈, 마크 저커버그가 직접 밝힙니다.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-shift-left-security-ai-code.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-zuckerberg-muse-in-daily-use.md": "LiVideo",
+  "02.wiki/entities/jeff-crume.md": "LiUser",
+  "02.wiki/entities/biohub.md": "LiBuilding",
+  "02.wiki/entities/muse-spark.md": "LiBot",
+  "02.wiki/concepts/shift-left-security.md": "LiShield",
+  "02.wiki/concepts/generated-dependency-scrutiny.md": "LiShield",
+  "02.wiki/concepts/continuous-security-validation.md": "LiShield",
+  "02.wiki/concepts/one-time-virtual-card.md": "LiShield",
+  "02.wiki/concepts/agent-persona-naming.md": "LiBot",
+  "02.wiki/concepts/proactive-idea-feed.md": "LiLightbulb",
+  "02.wiki/concepts/nightly-memory-consolidation.md": "LiDatabase",
+  "02.wiki/concepts/business-in-a-box.md": "LiBookText",
+  "02.wiki/concepts/rare-disease-long-tail.md": "LiBookText"
 }

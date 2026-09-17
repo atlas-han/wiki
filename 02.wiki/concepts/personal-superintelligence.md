@@ -6,9 +6,9 @@ tags: [meta, agents, empowerment, product-thesis, long-tail]
 aliases: [personal super intelligence, 개인용 초지능]
 related: [balance-of-power-safety, intelligence-abundance, agent-org-adoption, goal-level-delegation, discretion-capability, agi-definition]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # 개인 초지능
@@ -72,3 +72,22 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[meta]] · [[muse]]
 - 관련: [[balance-of-power-safety]] · [[intelligence-abundance]] · [[agi-definition]] · [[agent-fleet-learning]] · [[agent-org-adoption]] · [[discretion-capability]] · [[goal-level-delegation]]
+
+## 같은 테제, 다른 근거 (2026-09-17)
+
+[[tech-bridge-zuckerberg-muse-in-daily-use]]가 같은 테제를 다시 펴는데 **논거가 바뀐다.**
+
+> **긍정적인 미래를 가지려면 모두가 AI의 혜택과 기회를 폭넓게 얻도록 해야 하고, 그것이 소수의 랩에 집중돼서는 안 됩니다 — 그 랩들이 최고의 모델을 자기들만 갖고 계속 커지는 동안 다른 모두는 같은 수준의 지능에 접근하지 못하는** 상황이요. (08:00~08:20)
+
+| | 앞 편 (16:11~17:19) | 이번 편 |
+|---|---|---|
+| 반대하는 것 | *"소수의 전문가가 **AI를 무엇에 쓸지 배분**하는 것"* — **알레르기** | *"소수의 랩이 **최고의 모델을 자기들만** 갖는 것"* |
+| 축 | **용도 결정 권한** | **모델 접근 격차** |
+| 처방 | 각자가 자기 삶에서 방향을 잡게 | *"**해독제**는 좋은 기술을 만들어 그 힘을 사람들 손에 쥐여 주는 것"* |
+| 선례 | — | **소셜 미디어** — *"모두에게 목소리를 주는 것"* |
+
+⚠️ **이번 편에서는 오픈소스가 한 번도 언급되지 않는다.** 앞 편은 오픈소스를 목적이 아니라 수단으로 놓고 *"Muse가 오픈소스보다 더 중요할 수 있다"* 고까지 말했는데, 이 편의 *"사람들 손에"* 는 **제품 배포만** 가리킨다.
+
+경제적 형태가 [[business-in-a-box]]이고 의료적 형태가 [[rare-disease-long-tail]]이다 — 둘 다 이번 편에서 처음 나온다.
+
+⚠️ **소셜 미디어 선례를 성공 사례로 드는 데 대한 유보가 소스에 없다.**

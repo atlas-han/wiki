@@ -21,6 +21,7 @@ updated: 2026-09-16
 ## Entities
 
 ### Persons
+- [[jeff-crume]] — [[ibm|IBM]] 보안 해설자(경력 40년). **[[shift-left-security|시프트 레프트 보안]] 다섯 원칙** — *결과를 믿어라, 생성만이 아니라* · *생성된 의존성도 같은 검토를* · *구현이 아니라 의도를* ([[tech-bridge-shift-left-security-ai-code]]) ⚠️ 이름은 설명란에만
 - [[dario-amodei]] — [[anthropic|Anthropic]] CEO. **위키 첫 Anthropic CEO 1인칭 소스.** *"확률 대신 무엇을 할 수 있는지"* · *"멈추지 말고 늦추자"* · 상주 외부 평가자·스위스 치즈·군비 제한 렌즈 ([[tech-bridge-dario-amodei-cbs-interview]]) ⚠️ 당사자 진술
 - [[cedric-clyburn]] — [[ibm|IBM Technology]] 계열 해설의 화자, 설명란 기준 **Red Hat 수석 개발자 애드보킷**. *AI 엔지니어는 엔진이 아니라 자동차를 만든다* ([[tech-bridge-ai-engineer-three-tier-skill-stack]]) ⚠️ 이름은 설명란에만
 - [[alex-hancock]] — Block 소프트웨어 엔지니어, [[goose]] 메인테이너·MCP Rust SDK·[[agent-client-protocol|ACP]] 작업
@@ -76,6 +77,7 @@ updated: 2026-09-16
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[biohub]] — [[mark-zuckerberg]]가 Priscilla와 시작한 자선 활동. [[rare-disease-long-tail|희귀 질환 롱테일]] 관찰의 출처 ⚠️ **소스가 주는 것은 한 문장뿐** — 규모·시점·자금 없음
 - [[block]] — Cash App·Square의 모회사. [[goose]]의 출발지, 위키 첫 핀테크 조직
 - [[yutori]] — 컴퓨터 사용 모델. *API·MCP로 안 될 때의 최후 수단* 으로 자기 위치를 규정
 - [[poolside-ai]] — [[agent-client-protocol|ACP]] 터미널 클라이언트 제작사(소스에 한 번 등장)
@@ -117,6 +119,7 @@ updated: 2026-09-16
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 
 ### Models
+- [[muse-spark]] — [[muse|Muse]]를 구동하는 [[meta|Meta]] 모델. **1.3**, *"매달 새 모델 출하"*. 위키에 Muse의 모델 이름이 처음 ⚠️ 벤치마크·버전 체계 없음
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
 - [[claude-opus-4-7]] — Anthropic 현 공개 플래그십
 - [[claude-opus-4-6]] — Anthropic 이전 세대 플래그십, harness 단순화·classifier 가능케 한 모델
@@ -364,6 +367,15 @@ updated: 2026-09-16
 - [[adjective-verb-steering]] — bolder·quieter·distill·polish·denser·harden으로 조향하되 **단어의 뜻을 스킬이 정의.** *"형용사는 Leitwort — 뒤에 아무것도 없으면 그냥 더 나은 프롬프트"*. 같은 모델·같은 하네스, 언어만 달라도 결과가 다름. *"믿으면 실패"* 자기 점검 (Impeccable, sources: 1) ⚠️ 평가 기준이 생성자 안에
 - [[steering-altitude]] — 픽셀 직접 조작(**너무 낮음** — *"Opus로 div 가운데 정렬"*)과 완전 자율(**슬롭**) 사이의 통제 수준. 고도는 옮겨 다니고 양 끝(탐색·마지막 5~20% 폴리시)은 남는다. **채점기가 없는 영역은 위임 고도가 오르지 않는다**(위키 정리) (sources: 1)
 - [[no-one-shot-design]] — 맥락·반복·다수의 의견 → 원샷 불가. 먼저 물을 네 질문(감정적 영역·절대 아닌 것·레퍼런스·대상). **auto는 없고 앞으로도 없다** — 이유는 능력이 아니라 *결정하는 것이 디자인*. [[privacy-auto-mode]]와 반대 방향 (sources: 2)
+- [[shift-left-security]] — 보안 검증을 **코드 생성 순간으로**, 그리고 **전 구간으로**. 다섯 원칙(결과·개발 중·의존성·의도·지속). *"사후 체크박스는 애초에 작동한 적이 없다"* · *"복잡성은 보안의 적"* ([[ibm]], sources: 1) ⚠️ 도구 이름 0개·수치 0개
+- [[generated-dependency-scrutiny]] — **AI는 코드만이 아니라 의존성을 들여온다.** *"모든 의존성은 능력을 더하고 위험도 더한다"* — 평판·취약점·라이선스·출처 무결성·조직 표준. **위키에 소프트웨어 공급망이 처음 들어온 자리** (sources: 1)
+- [[continuous-security-validation]] — *"한 번 통과했는가가 아니라 **계속 통과하는가**"*. [[shift-left-security|시프트 레프트]]를 **구간 이동이 아니라 확장**으로 만든다. 27년 묵은 제로데이 = **검증의 유효기간** (sources: 1) ⚠️ 출처 미상
+- [[agent-persona-naming]] — 에이전트에 **이름과 아바타**(Agrippa / Pip). *"친구가 타이핑하는 걸 보게 됩니다."* **양쪽 다 이름 짓기가 가장 어려웠다고 말한다** ([[muse]], sources: 1) ⚠️ 의인화의 비용은 논의 없음
+- [[proactive-idea-feed]] — *"사람들이 AI로 뭘 해야 할지 모른다"* 에 대한 제품적 답. 일반형(중복 구독 해지)과 개인화형(문명 전략 웹사이트), **자기 산출물 위에 쌓는 두 번째 제안** ([[muse]], sources: 2) ⚠️ 사례가 둘뿐
+- [[one-time-virtual-card]] — 결제마다 발급, **판매자는 실제 번호를 못 본다.** 논거가 날카롭다 — *"나도 귀찮아서 평소 카드를 쓴다. **에이전트는 그 추가 수고를 마다하지 않는다**"* (sources: 1) ⚠️ 발급 주체·환불·분쟁 없음
+- [[nightly-memory-consolidation]] — *"**매일 저녁** 그날 한 모든 것을 보고 메모리로 압축한다. 사람이 잘 때 생각하고 압축하는 것과 비슷하다."* 자격증명 제외, **남길 것은 모델이 정한다.** **위키에서 compaction이 실패가 아니라 기능으로 놓이는 자리** (sources: 2) ⚠️ 가시성·되돌리기 없음
+- [[business-in-a-box]] — *"아이디어만 있으면"* 제작·온라인 존재·**모든 Meta 서비스 연결**·**광고 운영**·백엔드까지 ([[muse]], sources: 1) ⚠️ 작동 사례 0건 · **화자가 자기 광고 이해관계를 연결하지 않는다**
+- [[rare-disease-long-tail]] — **시장이 없어 치료가 개발되지 않는 긴 꼬리**, 그리고 개인 맞춤 치료 설계. 위키에 **시장 실패 논증이 처음** ([[biohub]], sources: 2) ⚠️ **검증·임상·규제·책임이 한 마디도 없다**
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -504,11 +516,13 @@ updated: 2026-09-16
 - [[tech-bridge-one-designer-plus-ai]] — [[vincent-wendy|Vincent Wendy]] ([[ai-engineer|AI Engineer]]): **위키가 컨퍼런스를 안쪽에서 보는 첫 소스.** 12~15명·디자이너 1명이 **7,000명·스폰서 140곳·발표자 300명·세션 600개**를 감당한다. *"세부 사항 1,000개는 실패 방법도 1,000가지"* · 다섯 처방(기초·재사용·자동화·검증·마찰 제거) · [[atomic-design]] · [[design-system-as-agent-context|정의해 두지 않으면 슬롭]] · [[design-handoff-friction|Devin이 Slack에 살아서 워크플로가 바뀐다]] · [[self-serve-asset-generation|300명이 자기 그래픽을 직접]] · [[agent-visual-qa|로고 누락 검수 "100%"]] · [[capability-detour|펠리컨 SVG가 안 되면 PNG→벡터화]] · **[[exception-handling-as-the-job|"진짜 일은 예외 처리다"]]** ([[tech-bridge]], 2026-09-14, **16:18**, ⚠️ 행사명·연도 미확정 · **비용 이야기가 한 마디도 없다** · 수치·정확도 전부 자기 보고 · **ko가 "다섯 가지"라 하고 넷만 열거** · ko가 *speaker*를 음향기기로 읽어 한 절 파괴)
 - [[tech-bridge-ai-engineer-three-tier-skill-stack]] — [[cedric-clyburn|Cedric Clyburn]] ([[ibm|IBM Technology]] · 설명란 Red Hat): **위키가 AI 엔지니어라는 직무의 정의를 받는 첫 소스.** *연구원은 엔진, 엔지니어는 자동차* · *어려운 건 코드가 아니라 판단* · 세 층(기초 → AI 특화 → 배포)과 **순서** · RAG 파이프라인 첫 서술 · 워크플로 vs 에이전트 (10:38, 2026-09-15) ⚠️ 약속된 "세 가지 프로젝트" 부재 · 화자 이름은 설명란에만
 - [[tech-bridge-dario-amodei-cbs-interview]] — [[dario-amodei|Dario Amodei]] ([[anthropic|Anthropic]] CEO) × CBS Sunday Morning: **위키 첫 Anthropic CEO 1인칭 소스.** *확률 대신 건설 방식* · 지수의 굽이 · **멈추지 말고 늦추자** · 3단계 계획([[embedded-external-evaluators|상주 외부 평가자]] → 업계 합의 → 정부 참여) · SB53 유일 지지 · 전면 금지 반대 · [[swiss-cheese-defense-in-depth|스위스 치즈]] · [[slowdown-within-lead-margin|우위 범위 안의 감속]] · [[ai-arms-limitation-lens|군비 제한 렌즈]] · [[joint-democratic-oversight|민주 정부 공동 감독]] · *"업계가 거짓말했다"* (23:47, 2026-09-15) ⚠️ 당사자 진술 · ko가 Hugging Face를 "얼굴 사진 합성 사건"으로
+- [[tech-bridge-shift-left-security-ai-code]] — [[jeff-crume|Jeff Crume]] ([[ibm|IBM]] · ⚠️ 이름은 설명란에만): **위키가 보안을 개발 공정의 축으로 묶어 보는 첫 소스.** [[shift-left-security|시프트 레프트]] 다섯 원칙 — *결과를 믿어라 생성만이 아니라* · *사후 체크박스는 애초에 작동한 적이 없다* · **[[generated-dependency-scrutiny|생성된 의존성]]** · *코딩 문제가 아니라 의도 문제*(미다스) · **[[continuous-security-validation|계속 통과하는가]]**. 맺음은 에이전트 통제 넷(가드레일·신원·접근 제어·사람 개입)과 *"복잡성은 보안의 적"* (11:18, 2026-09-16) ⚠️ 도구 이름 0개 · 수치 1개(27년 제로데이)인데 출처 미상 · ko가 원칙 이름을 "세대"로
+- [[tech-bridge-zuckerberg-muse-in-daily-use]] — [[mark-zuckerberg|Mark Zuckerberg]] × 진행자 무명(자막에 *"Tiff"* 한 번): **이 채널이 같은 인물의 같은 주제 인터뷰를 두 편 올린 첫 사례**([[tech-bridge-zuckerberg-muse-personal-agent|65:19 Alex Heath 편]]과 **별개의 자리**, 내용이 크게 겹친다). 앞 편에 없던 여섯 — **[[agent-persona-naming|이름·아바타]]**(Agrippa/Pip) · **[[one-time-virtual-card|일회용 가상 카드]]** · **[[muse-spark|Muse Spark 1.3]]** · **[[business-in-a-box|비즈니스 인 어 박스]]** · **[[biohub|Biohub]]와 [[rare-disease-long-tail|개인 맞춤 치료]]** · **[[nightly-memory-consolidation|매일 저녁의 메모리 압축]]**. 그리고 앞 편의 *"기술적으로 검증 가능"*·부담 주체·오픈소스·함대 학습이 **사라졌다** (25:09, 2026-09-16) ⚠️ 당사자 진술 · ko가 제품명 Muse를 세 갈래로 파괴
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 470 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 456 → 470, + 2026-09-15 Tech Bridge 2편: source 2 + concept 10 + entity 2)
+- 총 페이지 수: 484 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 470 → 484, + 2026-09-16 Tech Bridge 2편: source 2 + concept 9 + entity 3)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-16 (Tech Bridge **2편**, **열사흘 연속** — 09-15 업로드분. 이 채널에서 **가장 낮은 층과 가장 높은 층**이 같은 날 들어왔다. [[tech-bridge-ai-engineer-three-tier-skill-stack|Clyburn 편]]은 *AI 엔지니어가 되려면 무엇부터* — 직무 정의([[ai-engineer-vs-ml-researcher]])와 세 층([[three-tier-ai-skill-stack]]), RAG 파이프라인 첫 서술, [[workflow-vs-agent]]. [[tech-bridge-dario-amodei-cbs-interview|Amodei 편]]은 *AI가 우리를 죽일 것인가* — **위키 첫 Anthropic CEO 1인칭**, [[embedded-external-evaluators]]·[[swiss-cheese-defense-in-depth]]·[[slowdown-within-lead-margin]]·[[ai-arms-limitation-lens]]·[[race-to-the-top]]·[[joint-democratic-oversight]]. [[regulatory-capture]] 표에 **규제 대상이 규제를 요구하는 첫 칸**.)
+- 마지막 ingest: 2026-09-17 (Tech Bridge **2편**, **열나흘 연속** — 09-16 업로드분. [[tech-bridge-shift-left-security-ai-code|Crume 편]]은 *AI가 생성한 코드를 어떻게 지키나* — **위키가 보안을 개발 공정의 축으로 묶어 보는 첫 소스**([[shift-left-security]]·[[generated-dependency-scrutiny]]·[[continuous-security-validation]]), [[ibm]] 네 번째이자 **처음으로 보안을 정면으로**. [[tech-bridge-zuckerberg-muse-in-daily-use|Zuckerberg 편]]은 **이 채널이 같은 인물의 같은 주제를 두 번째로 올린 첫 사례** — 내용이 크게 겹치고, 새로 나오는 것은 [[agent-persona-naming]]·[[one-time-virtual-card]]·[[muse-spark]]·[[business-in-a-box]]·[[biohub]]·[[nightly-memory-consolidation]] 여섯. **앞 편의 *기술적으로 검증 가능*·수수료 부담 주체·오픈소스·함대 학습은 사라졌다.**)

@@ -5,9 +5,9 @@ category: theory
 tags: [alignment, intent, ai-safety, control, distribution-of-power, openai]
 related: [agentic-misbehavior, fuzzy-intent-discovery, goal-level-delegation, verifiable-goals, training-time-risk, regulatory-capture]
 first-seen: tech-bridge-altman-frontier-rl-pause
-sources: [tech-bridge-altman-frontier-rl-pause]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-shift-left-security-ai-code]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-17
 ---
 
 # Intent Alignment (의도 정렬)
@@ -69,3 +69,23 @@ updated: 2026-09-06
 
 - [[tech-bridge-altman-frontier-rl-pause]] — first-seen
 - 관련: [[agentic-misbehavior]] · [[fuzzy-intent-discovery]] · [[goal-level-delegation]] · [[verifiable-goals]] · [[training-time-risk]]
+
+## 리뷰어 쪽에서 본 의도 — 잘못된 가정 (2026-09-17)
+
+[[tech-bridge-shift-left-security-ai-code]]의 네 번째 원칙이 같은 축을 **다른 층에서** 든다. [[sam-altman|Altman]]의 정의가 *모델이 사용자 의도를 따르는가* 였다면, 여기서는 **코드 리뷰어가 무엇을 봐야 하는가**다.
+
+> **많은 심각한 보안 문제는 나쁜 코딩 관행 때문이 아닙니다. 잘못된 가정(incorrect assumptions)에서 옵니다.**
+
+> **AI 모델은 기술적으로 우아하고 개발 모범 사례를 따르는 코드를 생성할 수 있습니다. 하지만 요구 사항을 잘못 이해했다면 그 솔루션은 여전히 보안 정책을 위반할 수 있습니다.**
+
+결정적인 예 — **명세를 정확히 이행하면서 동시에 정책을 위반한다**:
+
+> **생성된 워크플로가 재무 데이터를 올바르게 처리하면서, 동시에 그 정보를 애초에 봐서는 안 되는 사용자에게 노출시킬 수도 있습니다. 그건 코딩 문제라기보다 의도 문제입니다.**
+
+비유가 미다스 왕이다 — *"만지는 모든 것이 금이 되기를 빌었고, 소원을 이뤄 거의 굶어 죽을 뻔했다."* 이 형태는 이 위키의 [[reward-hacking]]·[[agentic-misbehavior]]와 같은 계열이되, **모델의 일탈이 아니라 사람의 명세 부족**에서 온다.
+
+물어야 할 넷: **누가 데이터에 접근해야 하는가 · 어떤 행동이 허용되는가 · 어떤 비즈니스 규칙이 적용되는가 · 어떤 정보가 보호돼야 하는가.**
+
+> 우리는 더 이상 **코드 품질만 검토하는 것이 아닙니다. AI가 올바른 문제를 올바른 방식으로 풀었는지를 검토하고 있습니다.**
+
+→ [[shift-left-security]] · [[decision-quality]] · [[verifiable-goals]]
