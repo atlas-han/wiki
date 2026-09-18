@@ -33,6 +33,9 @@ graphify-out/.graphify_root
 .obsidian/cache
 .trash/
 
+# === graft MCP 캐시 (세션별 재생성 산출물, 추적 제외) ===
+graft/.cache/
+
 # === 기타 ===
 *.tmp
 *.log
