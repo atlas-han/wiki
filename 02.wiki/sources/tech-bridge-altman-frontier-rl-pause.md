@@ -8,12 +8,12 @@ author: Tech Bridge (한영자막 재배포) · 원 출처 Sources with Alex Hea
 date-published: 2026-09-05
 ingested: 2026-09-06
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-18
 ---
 
 # Tech Bridge — 샘 알트만 인터뷰 Part 1: OpenAI 차세대 모델 훈련 중단의 진짜 이유
 
-[[tech-bridge|Tech Bridge]]가 한영자막을 입힌 24:00 인터뷰. 팟캐스트 *Sources with Alex Heath* 3부작의 1부이고 화자는 [[sam-altman|Sam Altman]]([[openai|OpenAI]] CEO). → [[2026-09-05_샘 알트만 인터뷰 Part 1 샘 알트만이 직접 밝힌 OpenAI 차세대 모델 훈련 중단의 진짜 이유|raw 캡처]] · 2부 [[tech-bridge-altman-agi-superintelligence]] · 3부 [[tech-bridge-altman-astra-hardware]]
+[[tech-bridge|Tech Bridge]]가 한영자막을 입힌 24:00 인터뷰. 팟캐스트 *Sources with Alex Heath* 3부작의 1부이고 화자는 [[sam-altman|Sam Altman]]([[openai|OpenAI]] CEO). → [[2026-09-05_샘 알트만 인터뷰 Part 1 OpenAI 차세대 모델 훈련 중단의 진짜 이유|raw 캡처]] · 2부 [[tech-bridge-altman-agi-superintelligence]] · 3부 [[tech-bridge-altman-astra-hardware]]
 
 > ⚠️ **촬영 시점 미확정.** 내부 앵커(*"OpenAI 운영 10년, 거의 11년"*, 3부의 *"GPT-5 출시 무렵 저녁이 거의 정확히 1년 전"*)는 2026년과 모순되지 않으나 날짜를 주지 않는다. 그리고 이 소스는 **당사자의 1인칭 진술**이다 — 아래 사실 서술은 전부 Altman의 주장이며 이 위키에 독립 확인 소스가 없다.
 
@@ -106,7 +106,7 @@ updated: 2026-09-06
 ## References
 
 - 원본: <https://www.youtube.com/watch?v=jnHT1AonyGw> (24:00)
-- raw: [[2026-09-05_샘 알트만 인터뷰 Part 1 샘 알트만이 직접 밝힌 OpenAI 차세대 모델 훈련 중단의 진짜 이유]]
+- raw: [[2026-09-05_샘 알트만 인터뷰 Part 1 OpenAI 차세대 모델 훈련 중단의 진짜 이유]]
 - 시리즈: [[tech-bridge-altman-agi-superintelligence]] (2부) · [[tech-bridge-altman-astra-hardware]] (3부)
 - [[sam-altman]] · [[openai]] · [[hugging-face]] · [[openai-astra]] · [[tech-bridge]]
 - 관련: [[training-time-risk]] · [[intent-alignment]] · [[agentic-misbehavior]] · [[ai-vulnerability-discovery]] · [[goal-level-delegation]]

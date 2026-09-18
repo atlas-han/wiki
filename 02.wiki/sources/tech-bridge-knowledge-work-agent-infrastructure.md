@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · 발표 [[karan-vaidya]] ([[compo
 date-published: 2026-09-08
 ingested: 2026-09-09
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-18
 ---
 
 # Tech Bridge — 코딩 에이전트만 폭발한 이유
@@ -17,7 +17,7 @@ updated: 2026-09-10
 
 > **코딩 에이전트가 앞서간 것은 모델이 좋아서가 아니라, 코딩 주변에만 에이전트가 쓸 수 있는 인프라가 이미 깔려 있었기 때문이다.** 그 인프라는 여섯 개이고, 지식 노동에는 그중 하나도 없다.
 
-ASR 보정: *open claw*(ko "벌어진 발톱"), *linters*(ko "인터럽트"), *agent*가 ko에서 상담원·인재·직원으로 갈림, `bugbot.mmd`→`bugbot.md`. 수치·고유명사는 en-orig로 교차 확인했다. 전체는 `01.raw/articles/2026-09-08_코딩 에이전트만 폭발적으로 발전했던 진짜 이유 (지식 업무 에이전트의 비밀).md`.
+ASR 보정: *open claw*(ko "벌어진 발톱"), *linters*(ko "인터럽트"), *agent*가 ko에서 상담원·인재·직원으로 갈림, `bugbot.mmd`→`bugbot.md`. 수치·고유명사는 en-orig로 교차 확인했다. 전체는 `01.raw/articles/2026-09-08_코딩 에이전트만 폭발적으로 발전했던 진짜 이유.md`.
 
 > ⚠️ **당사자 진술, 독립 확인 없음.** 발표자는 이 여섯 primitive를 파는 회사의 창업자다. **화자의 인센티브는 인프라 판매자**다 — "병목이 모델이 아니라 인프라"라는 결론은 그가 파는 것이 인프라라는 사실과 분리해 읽을 수 없다. 발표 후반부의 "우리가 만든 것"은 전부 자사 제품 서술이다.
 >
@@ -112,5 +112,5 @@ Meta Superintelligence Lab 정렬 디렉터 사건이 근거다 — 에이전트
 ## References
 
 - 원본: <https://www.youtube.com/watch?v=16z2oh_m5cI>
-- raw: `01.raw/articles/2026-09-08_코딩 에이전트만 폭발적으로 발전했던 진짜 이유 (지식 업무 에이전트의 비밀).md`
+- raw: `01.raw/articles/2026-09-08_코딩 에이전트만 폭발적으로 발전했던 진짜 이유.md`
 - 관련: [[knowledge-work-agent-gap]] · [[agent-governance-layers]] · [[action-reversibility]] · [[agent-action-record]] · [[composio]] · [[karan-vaidya]] · [[agentic-misbehavior]] · [[context-resets-and-compaction]] · [[agent-memory]] · [[trusted-throughput]]

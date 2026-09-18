@@ -8,12 +8,12 @@ author: Tech Bridge (한영자막 재배포) · 원 출처 Sources with Alex Hea
 date-published: 2026-09-05
 ingested: 2026-09-06
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-18
 ---
 
 # Tech Bridge — 샘 알트만 인터뷰 Part 3: 차세대 모델 '아스트라' & 새로운 하드웨어 비전
 
-[[tech-bridge|Tech Bridge]]가 한영자막을 입힌 21:46 인터뷰. *Sources with Alex Heath* 3부작의 3부, 화자 [[sam-altman|Sam Altman]]. → [[2026-09-05_샘 알트만 인터뷰 Part 3 샘 알트만이 밝힌 OpenAI 차세대 모델 아스트라 새로운 하드웨어 비전|raw 캡처]] · 1부 [[tech-bridge-altman-frontier-rl-pause]] · 2부 [[tech-bridge-altman-agi-superintelligence]]
+[[tech-bridge|Tech Bridge]]가 한영자막을 입힌 21:46 인터뷰. *Sources with Alex Heath* 3부작의 3부, 화자 [[sam-altman|Sam Altman]]. → [[2026-09-05_샘 알트만 인터뷰 Part 3 차세대 모델 아스트라와 하드웨어 비전|raw 캡처]] · 1부 [[tech-bridge-altman-frontier-rl-pause]] · 2부 [[tech-bridge-altman-agi-superintelligence]]
 
 > ⚠️ 이 편에 촬영 시점 앵커가 있다 — *"2025년 상원 청문회"* 를 과거로, *"최근 GPT 5.6 초기 출시"*, 2부의 *"GPT-5 출시 무렵 저녁이 거의 정확히 1년 전"*. **2026년 중후반 추정**, 확정 아님. 당사자 진술이라는 유보는 1부와 같다.
 
@@ -112,7 +112,7 @@ Apple 소송(영업 비밀·인력)은 *"근거 없다"*, 조사 결과 *"잘못
 ## References
 
 - 원본: <https://www.youtube.com/watch?v=EzkYQvMXzAc> (21:46)
-- raw: [[2026-09-05_샘 알트만 인터뷰 Part 3 샘 알트만이 밝힌 OpenAI 차세대 모델 아스트라 새로운 하드웨어 비전]]
+- raw: [[2026-09-05_샘 알트만 인터뷰 Part 3 차세대 모델 아스트라와 하드웨어 비전]]
 - 시리즈: [[tech-bridge-altman-frontier-rl-pause]] (1부) · [[tech-bridge-altman-agi-superintelligence]] (2부)
 - [[sam-altman]] · [[openai]] · [[openai-astra]] · [[codex]] · [[anthropic]] · [[tech-bridge]]
 - 관련: [[ai-privilege]] · [[compute-constrained-growth]] · [[goal-level-delegation]] · [[persistent-agent-teams]] · [[regulatory-capture]] · [[tech-bridge-jensen-huang-g20-agi]]

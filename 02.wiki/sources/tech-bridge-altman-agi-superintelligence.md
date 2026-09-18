@@ -8,12 +8,12 @@ author: Tech Bridge (한영자막 재배포) · 원 출처 Sources with Alex Hea
 date-published: 2026-09-05
 ingested: 2026-09-06
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-18
 ---
 
 # Tech Bridge — 샘 알트만 인터뷰 Part 2: AGI와 초지능의 차이 & OpenAI의 지난 1년간의 실수
 
-[[tech-bridge|Tech Bridge]]가 한영자막을 입힌 17:57 인터뷰. *Sources with Alex Heath* 3부작의 2부, 화자 [[sam-altman|Sam Altman]]. → [[2026-09-05_샘 알트만 인터뷰 Part 2 샘 알트만이 말하는 AGI와 초지능의 차이 OpenAI의 지난 1년간의 실수|raw 캡처]] · 1부 [[tech-bridge-altman-frontier-rl-pause]] · 3부 [[tech-bridge-altman-astra-hardware]]
+[[tech-bridge|Tech Bridge]]가 한영자막을 입힌 17:57 인터뷰. *Sources with Alex Heath* 3부작의 2부, 화자 [[sam-altman|Sam Altman]]. → [[2026-09-05_샘 알트만 인터뷰 Part 2 AGI와 초지능의 차이 OpenAI의 실수|raw 캡처]] · 1부 [[tech-bridge-altman-frontier-rl-pause]] · 3부 [[tech-bridge-altman-astra-hardware]]
 
 > ⚠️ 촬영 시점·당사자 진술이라는 유보는 1부와 같다. 이 편에는 **본인이 단서를 단 수치**가 하나 있다 — 38,000 쿼리 = 아몬드 한 개(*"기억에 의존해서, 틀릴 수도 있지만"*).
 
@@ -88,7 +88,7 @@ CEO를 계속할 것인가 — *"저는 이 일을 오랫동안 할 계획입니
 ## References
 
 - 원본: <https://www.youtube.com/watch?v=Pj_y9zEPv5k> (17:57)
-- raw: [[2026-09-05_샘 알트만 인터뷰 Part 2 샘 알트만이 말하는 AGI와 초지능의 차이 OpenAI의 지난 1년간의 실수]]
+- raw: [[2026-09-05_샘 알트만 인터뷰 Part 2 AGI와 초지능의 차이 OpenAI의 실수]]
 - 시리즈: [[tech-bridge-altman-frontier-rl-pause]] (1부) · [[tech-bridge-altman-astra-hardware]] (3부)
 - [[sam-altman]] · [[openai]] · [[tech-bridge]]
 - 관련: [[agi-definition]] · [[compute-constrained-growth]] · [[ai-jobs-impact]] · [[andrew-ng]] · [[bill-gates]] · [[tech-bridge-jensen-huang-g20-agi]]

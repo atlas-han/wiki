@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · 발표 [[averi-kitsch]] · [[pre
 date-published: 2026-09-10
 ingested: 2026-09-11
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-18
 ---
 
 # Tech Bridge — 빌드타임 vs 런타임 도구
@@ -17,7 +17,7 @@ updated: 2026-09-11
 
 > **개발 중에 잘 되던 에이전트 도구는 프로덕션에 그대로 두면 실패한다 — 도구에는 빌드타임용과 런타임용이 따로 있고, 데이터베이스는 그 앞의 에이전트만큼만 안전하다.**
 
-ASR 보정: *write*→*right*(ko "오른쪽으로 가기 권한"), *triage*→ko "환자 분류", *LangChain*→*land chain*→ko "토지 사슬", *LLM*→ko "LLM(법률 전문가)", JWT *claims*→ko "청구 내역", 그리고 **ko가 18:07의 주어를 에이전트→시스템으로 바꿔 요점을 뒤집은 문장** 1건. 수치·고유명사는 en-orig로 교차 확인했다. 전체는 `01.raw/articles/2026-09-10_개발용 AI 도구가 왜 실제 환경에선 실패할까요 빌드타임과 런타임의 결정적 차이 Google 엔지니어.md`.
+ASR 보정: *write*→*right*(ko "오른쪽으로 가기 권한"), *triage*→ko "환자 분류", *LangChain*→*land chain*→ko "토지 사슬", *LLM*→ko "LLM(법률 전문가)", JWT *claims*→ko "청구 내역", 그리고 **ko가 18:07의 주어를 에이전트→시스템으로 바꿔 요점을 뒤집은 문장** 1건. 수치·고유명사는 en-orig로 교차 확인했다. 전체는 `01.raw/articles/2026-09-10_개발용 AI 도구가 실제 환경에선 실패하는 이유 빌드타임과 런타임.md`.
 
 > ⚠️ **당사자 진술, 독립 확인 없음.** 두 발표자는 이 발표가 도달하는 제품(MCP Toolbox for Databases · Google managed MCP)을 만드는 사람들이다. **화자의 인센티브는 플랫폼 판매자**(Google Cloud). 다만 보안 논증(혼동된 대리인·치명적 3요소·세 신원·바운드 파라미터)은 제품과 독립적이라 개념으로 올렸고, 제품 서술은 [[mcp-toolbox-for-databases]]에 뒀다.
 >
@@ -105,5 +105,5 @@ ASR 보정: *write*→*right*(ko "오른쪽으로 가기 권한"), *triage*→ko
 ## References
 
 - 원본: <https://www.youtube.com/watch?v=vZ-Empnyug0>
-- raw: `01.raw/articles/2026-09-10_개발용 AI 도구가 왜 실제 환경에선 실패할까요 빌드타임과 런타임의 결정적 차이 Google 엔지니어.md`
+- raw: `01.raw/articles/2026-09-10_개발용 AI 도구가 실제 환경에선 실패하는 이유 빌드타임과 런타임.md`
 - 관련: [[build-time-vs-runtime-tools]] · [[confused-deputy-attack]] · [[lethal-trifecta]] · [[agent-identity-separation]] · [[secure-tool-evolution]] · [[bound-parameters]] · [[agent-tool-design-practices]] · [[mcp-toolbox-for-databases]] · [[google-cloud]] · [[averi-kitsch]] · [[prerna-kakkar]] · [[prompt-injection]] · [[agent-governance-layers]] · [[credential-injection-outside-sandbox]] · [[model-context-protocol]]
