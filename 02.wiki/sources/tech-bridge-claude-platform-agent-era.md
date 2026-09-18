@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · Kleiner Perkins "Builders" S2 ·
 date-published: 2026-09-01
 ingested: 2026-09-02
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-18
 ---
 
 # Tech Bridge — Anthropic Claude Platform 팀이 말하는 에이전트의 시대
@@ -251,3 +251,13 @@ Angela는 PM 직무가 **가장 순수한 형태로 압축**된다고 말한다.
 - 게스트: [[katelyn-lesse]] — <https://x.com/katelyn_lesse> · <https://www.linkedin.com/in/katelynlesse/>
 - 진행: Josh Coyne · Leigh-Marie Braswell (Kleiner Perkins) — <https://www.kleinerperkins.com/>
 - 관련: [[token-roles]] · [[managed-agents]] · [[anthropic]] · [[agent-harness-design]] · [[generator-evaluator-pattern]] · [[self-harness]] · [[trusted-throughput]] · [[signal-layer]]
+
+## 재방문 — 같은 두 화자의 AI Engineer 발표 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[angela-jiang]]·[[katelyn-lesse]]가 [[ai-engineer|AI Engineer]] 무대에서 이 대담의 **토큰에 역할 부여하기(21:20)** 절만 떼어 12:45짜리 발표로 만들었고, **수치를 붙였다**(one-shot 15%/39k → 고정 60만에서 76 vs 89 → 100% 합격률 42% vs 최대 75% → 진짜 비용 180만). 09-17에 세운 재방문 절차로 대조한 결과:
+
+- **겹치는 것**: 세 전략의 정의 · *"메타 하네스 / 전략"* 이라는 층 · `outcomes` = grading.
+- **새로운 것**: 벤치 수치 · [[fixed-budget-alpha|예산 고정]] · [[all-or-nothing-accuracy|100%/실패 채점]] · [[true-cost-to-perfect-answer|진짜 비용]] · 처방(효율 → 조언 / 신뢰성 → 채점·회고) · [[strategy-primitives|프리미티브 조합과 동적 구성]].
+- **사라진 것**: 이 페이지의 *"Sonnet 실행 + Opus 조언이 Sonnet 단독보다 싸다"* — **되풀이되지 않았다.** 모델 이름이 역할에 붙지 않는다. *"12년 → 3개월"* · *200명* · *얻어맞을 준비* 도 없다(주제가 좁아졌으니 당연하다).
+
+이 페이지의 *"⚠️ Sonnet+Opus advisor 평가 (…) 독립 검증이 없다"* 경고는 유지된다 — 새 발표가 그 주장을 **검증하지도 철회하지도 않았다.**

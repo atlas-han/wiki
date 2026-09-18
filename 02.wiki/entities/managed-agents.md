@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent-infrastructure, meta-harness, claude-platform]
 aliases: [Claude Managed Agents]
-sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era]
+sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
 links:
   - https://platform.claude.com/docs/en/managed-agents/overview
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-09-18
 ---
 
 # Managed Agents
@@ -64,3 +64,21 @@ updated: 2026-09-02
 - [[anthropic-dynamic-workflows]]
 - [[tech-bridge-claude-platform-agent-era]] — 설계 이유·`outcomes`에 대한 팀 1차 진술
 - [공식 문서](https://platform.claude.com/docs/en/managed-agents/overview)
+
+## 메타 하네스 층 — 회고와 `outcomes`가 기본 제공 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[angela-jiang]]이 [[ai-engineer|AI Engineer]] 발표에서 이 제품의 **층 구조**를 준다.
+
+> 저희는 **개별 에이전트를 위한 정말 훌륭한 하네스**를 만들기 위해 많은 노력을 기울였습니다. (…) 이것이 바로 저희가 **Claude Managed Agents**에 사용한 아키텍처입니다. (10:35~10:48)
+
+> 그리고 우리는 이 위에 더 나아가 **메타 하네스 수준, 즉 다중 에이전트 오케스트레이션 및 실행 수준**으로 진입하여 (…) **회고(dreaming)와 `outcomes`는 Claude Managed Agents에서 기본적으로 제공**됩니다. (10:52~11:12)
+
+| 층 | 이 페이지의 기존 항목 | 이번에 더해진 것 |
+|---|---|---|
+| 하네스 (개별 에이전트) | session / harness / sandbox, `execute`/`provision`/`emitEvent` | *"개별 에이전트를 위한 하네스"* 로 확인 |
+| **메타 하네스** (역할 간 조정) | 09-01의 *"어떤 사람들은 메타 하네스라 부른다"* (말) | **제품 층** — 실행자·조언자·채점자·드리머 조정 |
+| 기본 제공 전략 | `outcomes` (= grading, 09-01) | **+ 회고(dreaming)** |
+
+→ [[strategy-primitives]]. *"이러한 것들 중 **일부**"* 라고 하므로 **조언(advising)이 기본 제공인지는 소스가 말하지 않는다.** ⚠️ 화면의 아키텍처 그림은 자막에 없다. ⚠️ ko가 *Claude Managed Agents* 를 **"클라우드 관리형 에이전트"** 로, *outcomes* 를 **"결과"** 로 옮겼다 — 설명란(*"Claude Managed Agents 아키텍처"*)으로 판독.
+
+장기 목표도 이 제품에 걸린다 — *"여러분이 업무를 수행하는 동안 이러한 전략을 동적으로 구성할 수 있도록 모델과 플랫폼을 더욱 개선"*(12:16~12:23). [[dynamic-workflows]]·[[self-harness]]와 같은 방향의 **선언**이고 실체는 없다.

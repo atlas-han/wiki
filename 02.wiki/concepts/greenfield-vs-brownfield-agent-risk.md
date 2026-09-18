@@ -6,9 +6,9 @@ tags: [legacy, refactoring, guardrails, big-tech, risk, agents]
 aliases: [브라운필드가 안전하다, 대기업 문제가 모두의 문제]
 related: [organic-architecture, shortest-path-architecture, hard-vs-soft-enforcement, ai-slop, dune-architecture, agent-org-adoption, system-level-quality]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-legacy-code-modernization-ai]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-18
 ---
 
 # 그린필드가 브라운필드보다 위험하다
@@ -53,3 +53,20 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[organic-architecture]] · [[shortest-path-architecture]] · [[dune-architecture]] · [[ai-slop]] · [[tech-bridge-cursor-legacy-refactoring]] · [[lauren-tan]]
+
+## 조건의 반대편 — 가드레일이 없는 브라운필드 (2026-09-18 · [[tech-bridge-legacy-code-modernization-ai]])
+
+이 페이지의 전제(*"이미 잘 세팅돼 있다면"*)의 **반대편**이 들어왔다. [[anna-gutowska|Anna Gutowska]]([[ibm|IBM]])가 정의하는 레거시:
+
+> **자동화된 테스트가 부족**하고, **문서가 거의 또는 전혀 없는** (…) **문서화되지 않아 아무도 완전히 이해하지 못하는 중요한 도메인별 논리** (…) **변경할 때마다 위험 부담이 느껴지기 때문에 아무도 손대고 싶어하지 않습니다.** (01:10~01:34)
+
+그리고 그것을 *"기술 분야에서 가장 큰 숨겨진 위험 요소 중 하나"*(00:42~00:47)라 부른다.
+
+| | [[lauren-tan]] (Cursor, 09-13) | [[anna-gutowska]] (IBM, 09-18) |
+|---|---|---|
+| 브라운필드는 | **안전하다** — *가드레일이 이미 있으면* | **위험하다** — *테스트·문서·이해가 없으면* |
+| 조건 | 대기업 인프라(프레임워크·컨벤션·제한된 자격증명) | 옛 언어·지원 끊긴 인프라·**테스트 없음·문서 없음** |
+
+**모순이 아니다.** 두 소스는 서로를 언급하지 않지만 **같은 변수(가드레일의 유무)의 양 끝**을 말한다 — 옛 코드가 에이전트에게 안전한지는 **나이가 아니라 가드레일**이 정한다는 결론에 양쪽이 각자 도달한다. 이 페이지의 제목(*그린필드가 더 위험*)은 **가드레일 있는 브라운필드**에 한해 성립하고, IBM 편의 레거시는 그 조건 밖이다.
+
+→ [[legacy-code-modernization]]. IBM 편의 처방(현대화의 세 축 중 **개발 프로세스** — 자동 테스트·지속 배포)은 사실상 *브라운필드를 Lauren Tan의 조건 쪽으로 옮기는 일* 이다 — ⚠️ 이 연결은 위키가 놓는 것이다.

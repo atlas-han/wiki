@@ -6,9 +6,9 @@ tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
 related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-18
 ---
 
 # 검증 비용의 비대칭
@@ -51,3 +51,19 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[task-entropy-matrix]] · [[generator-evaluator-pattern]] · [[verification-bottleneck]] · [[agent-verification-skill]]
+
+## 판매자가 같은 결론을 채점 방식으로 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[angela-jiang]]([[anthropic]])이 재무 분석 벤치의 채점을 바꾸는 이유로 **①과 같은 문장**을 말한다.
+
+> 만약 벤치에서 **80%의 정확도**를 보였다면 훌륭해 보일 수 있지만, 실제로는 **전문가가 직접 손익계산서를 다시 계산하거나 수정하거나, 아니면 재실행을 해야 한다** (…) **100% 정확하지 않으면 사실상 쓸모가 없기 때문**입니다. (06:51~07:09)
+
+| | [[maximillian-piras]] (Yutori, 09-13) | [[angela-jiang]] (Anthropic, 09-18) |
+|---|---|---|
+| 문장 | *사람이 다시 해야 하면 왜 에이전트를 만드나* | *전문가가 다시 계산해야 하면 80%는 쓸모없다* |
+| 쓰임 | **작업 선택** 기준 | **채점 방식** — 100% 아니면 실패 |
+| 위치 | 판매자가 자기 위치를 밝히고 | **판매자**(플랫폼) |
+
+→ [[all-or-nothing-accuracy]]. 세 소스가 서로를 언급하지 않는다. 그리고 이 렌즈가 성립하려면 **수용 기준이 확정된 작업**이어야 한다(P&L) — [[task-entropy-matrix]]의 낮은 엔트로피 칸이다.
+
+> ⚠️ 검증자의 독립성 빈자리가 **네 번째로** 반복된다 — 이번 소스도 *누가 100%를 판정하는가* 를 말하지 않는다.

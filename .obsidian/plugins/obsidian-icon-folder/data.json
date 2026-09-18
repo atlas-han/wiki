@@ -663,5 +663,18 @@
   "02.wiki/concepts/proactive-idea-feed.md": "LiLightbulb",
   "02.wiki/concepts/nightly-memory-consolidation.md": "LiDatabase",
   "02.wiki/concepts/business-in-a-box.md": "LiBookText",
-  "02.wiki/concepts/rare-disease-long-tail.md": "LiBookText"
+  "02.wiki/concepts/rare-disease-long-tail.md": "LiBookText",
+  "01.raw/articles/2026-09-17_레거시 코드란 무엇이며, AI는 어떻게 낡은 시스템을 바꿀까요.md": "LiVideo",
+  "01.raw/articles/2026-09-17_토큰에게도 각자의 역할이 필요합니다 - Anthropic의 에이전트 설계법.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-legacy-code-modernization-ai.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-tokens-should-have-jobs.md": "LiVideo",
+  "02.wiki/entities/anna-gutowska.md": "LiUser",
+  "02.wiki/engineering/patterns/legacy-code-modernization.md": "LiRefreshCw",
+  "02.wiki/concepts/legacy-skills-gap.md": "LiUsers",
+  "02.wiki/concepts/syntactically-correct-behaviorally-wrong.md": "LiAlertTriangle",
+  "02.wiki/concepts/risk-proportional-human-review.md": "LiListChecks",
+  "02.wiki/concepts/fixed-budget-alpha.md": "LiSettings",
+  "02.wiki/concepts/all-or-nothing-accuracy.md": "LiListChecks",
+  "02.wiki/concepts/true-cost-to-perfect-answer.md": "LiBookText",
+  "02.wiki/concepts/strategy-primitives.md": "LiPuzzle"
 }

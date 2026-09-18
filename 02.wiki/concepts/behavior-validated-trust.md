@@ -6,9 +6,9 @@ tags: [testing, trust, evidence, observability, authorship]
 aliases: [행동 검증, 작성자 신뢰, evidence not authorship]
 related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai]
 created: 2026-09-09
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # 행동 검증 기반 신뢰
@@ -90,3 +90,16 @@ updated: 2026-09-17
 > **시스템이 안전하게 고장나는가(fail safe), 아니면 위험하게 열린 채로 고장나는가(fail open)?**
 
 → [[shift-left-security]] · [[continuous-security-validation]]
+
+## 같은 벤더가 마이그레이션 쪽에서 세 번째로 (2026-09-18 · [[tech-bridge-legacy-code-modernization-ai]])
+
+[[ibm|IBM]]의 세 번째 진술. [[anna-gutowska|Anna Gutowska]]:
+
+> AI 모델은 (…) **문법적으로는 올바르지만 동작상으로는 잘못된 번역**을 생성할 수도 있습니다. (07:45~07:51)
+
+| | 09-08 품질 | 09-17 보안 | **09-18 마이그레이션** |
+|---|---|---|---|
+| 무엇이 신뢰를 속이는가 | 우아해 보이는 코드 | 컴파일되고 테스트를 통과하는 코드 | **문법적으로 옳은 번역** |
+| 검증 질문 | 행동이 맞는가 | 실제 조건에서 안전한가 | **원본과 같은가** |
+
+세 번째가 다른 점은 **비교 대상이 있다**는 것 — 검증이 기능 검증이 아니라 **동등성 검증**이 된다. 그리고 레거시의 정의(*아무도 완전히 이해하지 못하는 도메인 로직*, 테스트 없음)가 **동등성을 판정할 기준 자체가 없는 상태**를 말하므로, 이 소스의 처방은 테스트 스택이 아니라 *"테스트, 사람 검토 및 검증을 통합하는 잘 설계된 워크플로"*(08:14~08:23)와 [[risk-proportional-human-review|위험한 결정 곁의 사람]]이다. → [[syntactically-correct-behaviorally-wrong]]

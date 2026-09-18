@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs]
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-09-18
 ---
 
 # Generator–Evaluator Pattern
@@ -224,3 +224,24 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 - [[tech-bridge-trusted-throughput]] — 지표 계측·리뷰 파이프라인 적용
 - [[tech-bridge-flutter-ai-workflow]] — evaluator 교차 확인 · 스크린샷 QA 에이전트
 - 관련: [[agent-harness-design]], [[sprint-contract]], [[dynamic-workflows]], [[self-harness]]
+
+## grading에 처음 붙은 합격률 — 그리고 신뢰성 최적화의 처방 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+*플랫폼 기능으로의 승격*(2026-09-01) 절의 `outcomes`에 **수치**가 붙었다. [[katelyn-lesse]]·[[angela-jiang]]의 [[ai-engineer|AI Engineer]] 발표.
+
+> **루브릭**에 이를 정의한 다음, 실행자가 해당 결과를 달성하려고 시도할 때마다 **루브릭을 참조하여 실행자의 수행을 채점하는 채점자를 마련**할 수 있습니다. (…) 결과가 만족스럽지 않다면, **좋은 결과가 나올 때까지 반복**할 수 있습니다. (02:36~02:56)
+
+| 렌즈 (고정 예산 600k) | 실행만 | 조언·채점 등 |
+|---|---|---|
+| 정확도 | 76 | 조언 89, 조언·채점 *"60대 → 90 근처"* |
+| **100% 합격률** | **42%** | **최대 75%** (어느 전략인지 불명) |
+
+그리고 이 패턴이 **언제 선택되는가**가 처음으로 명시된다:
+
+> 토큰 효율성보다는 **답변의 신뢰성**이 더 중요하다 (…) **완벽한 답변을 얻는 실행 비율을 극대화** (…) 아마 **채점이나 회고** 쪽에 (09:51~10:06)
+
+즉 evaluator는 **비용을 줄이는 장치가 아니라 합격률을 올리는 장치**다 — 효율을 원하면 조언(advising)이고, 이 패턴은 *신뢰성 최적화* 의 처방이다. → [[true-cost-to-perfect-answer]] · [[all-or-nothing-accuracy]]
+
+그리고 루프의 **자리**가 정해진다 — *실행 → 조언 → 채점 → 회고* 에서 채점은 **회고로 넘기기 전의 관문**이다(*"만약 통과된다면 (…) 회고에 보내서"*, 11:44~11:49) → [[strategy-primitives]].
+
+> ⚠️ **채점 전략 단독의 합격률·진짜 비용은 자막에 없다**(*"복잡한 전략 최대 75%"* 가 전부). ⚠️ **채점자의 독립성**(같은 모델인가, 루브릭은 누가 쓰는가)이 이번에도 다뤄지지 않는다 — 09-09 이래 **네 번째로 열린 채**이고, 이번엔 **판매자 자신의 발표**다. ⚠️ ko가 *grading* 을 **"성적 평가"·"성적"** 으로, *grader*(en-orig ASR *greater*)를 **"더 상위 단계"** 로 옮겨 ko만 읽으면 채점자가 사라진다.

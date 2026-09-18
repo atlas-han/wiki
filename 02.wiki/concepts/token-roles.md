@@ -3,11 +3,11 @@ title: Token Roles
 type: concept
 category: pattern
 tags: [agent, token-economics, model-routing, evaluation, memory, anthropic]
-related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth]
+related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth, fixed-budget-alpha, all-or-nothing-accuracy, true-cost-to-perfect-answer, strategy-primitives]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-02
-updated: 2026-09-13
+updated: 2026-09-18
 ---
 
 # Token Roles
@@ -119,3 +119,44 @@ Angela 본인의 수동 버전도 대담에 나온다 — 마음에 안 드는 �
 ## References
 
 - [[tech-bridge-claude-platform-agent-era]] — [[angela-jiang]] · [[katelyn-lesse]] (Anthropic), 2026-09-01
+
+## 두 번째 소스 — 처음으로 수치가 붙었다 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+같은 두 화자([[katelyn-lesse]]·[[angela-jiang]])가 [[ai-engineer|AI Engineer]] 무대에서 **같은 세 전략에 벤치 수치를 붙였다.** 09-01의 세 전략이 *말* 이었다면 이번엔 *실험* 이다 — 단, 내부 벤치이고 절반의 수치는 자막에 없다.
+
+전제가 **가설의 형태**로 다시 세워진다:
+
+> 예산을 사용하는 이러한 가정의 기저에는 **모든 토큰이 기본적으로 대체 가능하다(fungible)는 암묵적인 관점**이 깔려 있습니다. (…) 이 토큰들은 모두 실제로 대체 가능한가요? 그리고 이를 검증하기 위해, **토큰에 역할을 부여하면 어떨까** (00:42~00:57)
+
+> 실행 중인 토큰과 다른 작업을 수행하는 토큰을 각각 구분해서, **이를 전략(strategy)이라고 부릅니다.** (01:46~01:54)
+
+### 수치
+
+| 실험 | 실행 | 조언 | 채점 | 회고 |
+|---|---|---|---|---|
+| one-shot (자율 지출) | **15%** · 39k | — | — | *"정말 잘했다"* · **600k** |
+| 고정 예산 600k, 정확도 | **76** | **89** | *"60대 → 90 근처"*(조언과 묶어) | — |
+| 고정 예산, **100% 합격률** | **42%** | *"복잡한 전략 최대 75%"* | ← | ← |
+| **진짜 비용**(600k × 기대 횟수) | **1.8M** | *"상당히 효율적"* | *"상당히 효율적"* | *"약간의 차이"* |
+
+→ [[fixed-budget-alpha]](왜 예산을 고정하는가) · [[all-or-nothing-accuracy]](왜 100%/실패로 채점하는가) · [[true-cost-to-perfect-answer]](왜 분모가 합격률인가)
+
+### 처방 — 최적화 대상에 따라
+
+| 원하는 것 | 전략 |
+|---|---|
+| 토큰 효율 | **조언** |
+| 신뢰성(완벽한 답의 비율) | **채점 · 회고** |
+
+### 09-01과 대조 — 사라진 것
+
+**Sonnet 실행 + Opus 조언이 Sonnet 단독보다 싸다** 는 이 페이지의 가장 강한 주장이 **이 발표에 없다.** 모델 이름이 역할에 붙지 않고(*Fable* 한 번, 문맥 불명), 비교는 **같은 예산**에서 이뤄진다. 모순은 아니지만 **비용 역전은 되풀이되지 않았다.** *intelligence per dollar* 라는 표현도 **alpha** 와 **진짜 비용**으로 바뀌었다.
+
+### 더해진 것
+
+- 세 **사용 사례**(영업 후속 조치 / 환불 루브릭 / 채용 피드백) — 전부 가상.
+- 회고의 정의에 **역할 분리** — 드리머가 실행자의 기록을 읽고 메모리에 쓴다 → [[agent-memory]].
+- **메타 하네스가 제품 층**이 됐고 회고·`outcomes`가 기본 제공 → [[strategy-primitives]] · [[managed-agents]].
+- 장기 목표: **모델·플랫폼이 전략을 동적으로 구성** → [[self-harness]] · [[dynamic-workflows]]와 같은 방향.
+
+> ⚠️ 이 페이지의 이름 경고는 유지된다 — 발표 제목이 *"tokens should have jobs"* 이지 *token roles* 가 아니다. ⚠️ 벤치의 과제 수·모델·평가자 없음, 채점·회고 수치 없음, 화자 스스로 *"미미한 차이"*. ⚠️ ko가 *executor* 를 **"유언집행자"** 로, *600,000 tokens* 를 **"60만 달러"** 로, *outcomes* 를 **"결과"** 로 옮겼다 — raw 헤더 참조.

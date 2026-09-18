@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-16
+updated: 2026-09-18
 ---
 
 # Anthropic
@@ -142,3 +142,20 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 **기존 항목과의 관계**: 위 *"경쟁사가 말하는 Anthropic"* 절에서 진행자가 인용한 *"YOLO CEO"* 는 이 소스에서 **다뤄지지 않는다.** [[claude-mythos-preview]]의 *"Mythos·Fable 사태"* 도 언급 없음. Hugging Face 사건은 *"OpenAI Hugging Face 사건 — 모델들이 권한 없는 행동"* 으로 한 번 언급된다 → [[hugging-face]].
 
 > ⚠️ ko 자막이 회사명을 **여섯 표기**(앤트로픽·엔트로픽·엔트로피·인류학 연구·인류학 연구소·인류학파)로 옮겼다. 검색 시 참고.
+
+## 플랫폼 팀 재방문 — 토큰 역할에 수치가 붙다 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[katelyn-lesse]]·[[angela-jiang]]이 [[ai-engineer|AI Engineer]] 무대에서 09-01 대담의 [[token-roles]] 세 전략에 **재무 분석 벤치 수치**를 붙였다 — one-shot 실행 15%(39k) → 고정 60만에서 실행 76 vs 조언 89 → 100% 합격률로 재면 42% vs 최대 75% → 진짜 비용은 실행 180만 토큰. 직함이 확정된다 — Katelyn **플랫폼 엔지니어링 리드**, Angela **플랫폼 제품 리드**.
+
+이 페이지에 새로 들어온 회사 사실:
+
+| 항목 | 진술 |
+|---|---|
+| 제품 층 | [[managed-agents]] = 개별 에이전트 하네스, 그 위에 **메타 하네스**(오케스트레이션) 층 |
+| 기본 제공 | **회고(dreaming)와 `outcomes`** — 09-01의 `outcomes`에 하나 더 |
+| 장기 목표 | *"업무를 수행하는 동안 전략을 **동적으로 구성**할 수 있도록 모델과 플랫폼을 개선"* |
+| 내부 벤치 | **재무 분석 과제**로 전문가 재현 — ⚠️ 과제 수·모델·평가자 없음 |
+
+→ [[fixed-budget-alpha]] · [[all-or-nothing-accuracy]] · [[true-cost-to-perfect-answer]] · [[strategy-primitives]]
+
+⚠️ **당사자 진술.** 그리고 09-01의 *"Sonnet 실행 + Opus 조언이 Sonnet 단독보다 싸다"* 는 **이번 발표에서 되풀이되지 않았다.** ⚠️ ko 자막이 제품명을 **"클라우드 관리형 에이전트"** 로 옮겼다. ⚠️ 11:33의 *"Fable이 다시 온라인"* 은 양 트랙 불분명 — [[claude-mythos-preview]]의 *"Mythos·Fable 사태"* 와 **연결하지 않는다.**

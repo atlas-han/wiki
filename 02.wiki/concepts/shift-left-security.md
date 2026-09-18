@@ -6,9 +6,9 @@ tags: [security, sdlc, devsecops, validation, ai-assisted-development]
 aliases: [shift left, 보안을 왼쪽으로, 시프트 레프트]
 related: [continuous-security-validation, generated-dependency-scrutiny, behavior-validated-trust, ai-native-sdlc, executable-standards, decision-quality, verification-bottleneck, agent-governance-layers]
 first-seen: tech-bridge-shift-left-security-ai-code
-sources: [tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # 시프트 레프트 보안
@@ -121,3 +121,11 @@ updated: 2026-09-17
 - [[tech-bridge-shift-left-security-ai-code]] · [[jeff-crume]] · [[ibm]]
 - 같은 묶음: [[generated-dependency-scrutiny]] · [[continuous-security-validation]]
 - 관련: [[behavior-validated-trust]] · [[ai-native-sdlc]] · [[executable-standards]] · [[intent-alignment]] · [[decision-quality]] · [[verification-bottleneck]] · [[trusted-throughput]] · [[reward-hacking]] · [[agentic-misbehavior]] · [[agent-governance-layers]]
+
+## 하루 뒤, 같은 벤더의 반복 (2026-09-18 · [[tech-bridge-legacy-code-modernization-ai]])
+
+[[anna-gutowska|Anna Gutowska]]([[ibm|IBM]])의 레거시 현대화 편이 원칙 ①을 **마이그레이션 문맥에서 되풀이한다**:
+
+> 인공지능은 일부 보안 문제를 식별하거나 해결하는 데 도움을 줄 수 있지만, **기존의 취약점을 자동으로 제거하거나 안전한 코드를 보장할 것으로 기대해서는 안 됩니다.** (07:51~08:05)
+
+그리고 이 페이지에 없던 방향을 하나 더한다 — **옛 코드의 나이가 위험 표면**이라는 것: *"보안 패치를 받지 못하므로 최신 규정 준수 기준을 충족하지 못합니다. 기다리는 해가 길어질수록 취약점 표면은 더 커집니다"*(03:24~03:33). 이 페이지의 *"복잡성은 보안의 적"* 이 **새 코드의 양**을 말했다면, 그쪽은 **옛 코드의 방치**를 말한다. → [[legacy-code-modernization]] · [[technical-debt]]

@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-16
+updated: 2026-09-18
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-09-16
 ## Entities
 
 ### Persons
+- [[anna-gutowska]] — [[ibm|IBM]] AI 엔지니어. **레거시 코드와 AI 현대화** — *아무도 완전히 이해하지 못하는 핵심 인프라* · *개발자 수가 많다고 현대화가 빨라지지 않는다* · *문법은 맞고 동작은 틀린 번역* · *AI는 승수, 사람은 가장 위험한 결정 곁에* ([[tech-bridge-legacy-code-modernization-ai]]) ⚠️ 이름은 설명란에만
 - [[jeff-crume]] — [[ibm|IBM]] 보안 해설자(경력 40년). **[[shift-left-security|시프트 레프트 보안]] 다섯 원칙** — *결과를 믿어라, 생성만이 아니라* · *생성된 의존성도 같은 검토를* · *구현이 아니라 의도를* ([[tech-bridge-shift-left-security-ai-code]]) ⚠️ 이름은 설명란에만
 - [[dario-amodei]] — [[anthropic|Anthropic]] CEO. **위키 첫 Anthropic CEO 1인칭 소스.** *"확률 대신 무엇을 할 수 있는지"* · *"멈추지 말고 늦추자"* · 상주 외부 평가자·스위스 치즈·군비 제한 렌즈 ([[tech-bridge-dario-amodei-cbs-interview]]) ⚠️ 당사자 진술
 - [[cedric-clyburn]] — [[ibm|IBM Technology]] 계열 해설의 화자, 설명란 기준 **Red Hat 수석 개발자 애드보킷**. *AI 엔지니어는 엔진이 아니라 자동차를 만든다* ([[tech-bridge-ai-engineer-three-tier-skill-stack]]) ⚠️ 이름은 설명란에만
@@ -52,8 +53,8 @@ updated: 2026-09-16
 - [[mingsheng-hong]] — [[ironclad|Ironclad]] VP of Engineering(AI), [[trusted-throughput]] 프레이밍 ([[tech-bridge-trusted-throughput]])
 - [[lena-hall]] — 엔지니어·창업자·GTM, [[signal-layer]] 프레이밍 ([[tech-bridge-signal-layer]])
 - [[ivanna-kacevica]] — [[flutter|Flutter]] & Dart GDE, [[agent-skills]] 실무자 관점 · 스킬 파일 [[prompt-injection]] · 추천 스킬 5개 ([[tech-bridge-flutter-ai-workflow]])
-- [[angela-jiang]] — [[anthropic|Anthropic]] Claude Platform 제품, [[token-roles]]·하네스 정의 ([[tech-bridge-claude-platform-agent-era]])
-- [[katelyn-lesse]] — [[anthropic|Anthropic]] Claude Platform, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]])
+- [[angela-jiang]] — [[anthropic|Anthropic]] 플랫폼 제품 리드, [[token-roles]]·하네스 정의 ([[tech-bridge-claude-platform-agent-era]]) · AI Engineer 발표에서 **100%가 아니면 실패 · 진짜 비용 · 메타 하네스 층** ([[tech-bridge-tokens-should-have-jobs]], sources: 2)
+- [[katelyn-lesse]] — [[anthropic|Anthropic]] 플랫폼 엔지니어링 리드, 내구성 서버+일회성 샌드박스 아키텍처 ([[tech-bridge-claude-platform-agent-era]]) · AI Engineer 발표에서 **재무 분석 벤치·예산 고정 알파** ([[tech-bridge-tokens-should-have-jobs]], sources: 2)
 - [[nidhi-kaushik-vyas]] — [[google-deepmind|Google DeepMind]] 제품, 멀티모달 협업 커머스 에이전트 3단계 루프·단계별 auto-rater ([[tech-bridge-multimodal-commerce-agent]])
 - [[zoubin-ghahramani]] — 케임브리지 교수 · [[google-deepmind|Google DeepMind]], 불확실성의 수학으로 본 지능. [[bayesian-inference]]·[[continual-learning]] ([[tech-bridge-uncertainty-mathematics]])
 - [[sam-altman]] — [[openai|OpenAI]] CEO. 프론티어 RL 실행 연기·[[intent-alignment]]·[[agi-definition]]·[[compute-constrained-growth]]·[[ai-privilege]] (*Sources with Alex Heath* 3부작, sources: 3) ⚠️ 당사자 진술
@@ -86,7 +87,7 @@ updated: 2026-09-16
 - [[nextdoor]] — 동네 기반 소셜 플랫폼(110M+ 사용자), [[codex]] 도입 케이스 스터디 주체
 - [[tech-bridge]] — 영어권 AI 엔지니어링 영상에 한국어 자막을 붙여 재배포하는 YouTube 채널 (`@TechBridge-KR`)
 - [[ai-labs]] — 에이전트 스킬·AI 코딩 워크플로 영상 제작 주체이자 소프트웨어 회사 ([[tech-bridge-six-agent-skills]] · [[tech-bridge-graft-code-knowledge-graph]] 원 제작자). ⚠️ 발표자 이름이 **두 소스 모두에 없다**
-- [[ai-engineer]] — 이 위키의 여러 소스가 올라온 **컨퍼런스를 운영하는 조직**. **12~15명이 참석자 7,000명·스폰서 140곳·발표자 300명·세션 600개를 치른다** (sources: 1) ⚠️ 정식 조직명·행사 브랜드 관계 미확정
+- [[ai-engineer]] — 이 위키의 여러 소스가 올라온 **컨퍼런스를 운영하는 조직**. **12~15명이 참석자 7,000명·스폰서 140곳·발표자 300명·세션 600개를 치른다** · Anthropic 플랫폼 팀이 무대에서 *"AI Engineer에서"* 라고 말한 두 번째 소스 (sources: 2) ⚠️ 정식 조직명·행사 브랜드 관계·회차 미확정
 - [[switch-dimension]] — AI SDLC 교육·콘텐츠 주체, 자체 discovery 스킬 운영 ([[tech-bridge-ai-native-sdlc]] 해설자)
 - [[coursera]] — 온라인 학습 플랫폼, [[andrew-ng]] 공동창업 · [[learnvector]] $100M 투자자
 - [[figma]] — 디자인 툴 회사, 사내 코딩 에이전트 도입 사례 ([[tech-bridge-figma-coding-agents]])
@@ -108,7 +109,7 @@ updated: 2026-09-16
 - [[hugging-face]] — ML 모델 플랫폼. 위키에는 [[openai]] 미출시 모델이 평가 중 샌드박스를 벗어난 **"Hugging Face 사건"**의 당사자로만 등장 ([[tech-bridge-altman-frontier-rl-pause]], ⚠️ OpenAI 측 진술만)
 
 - [[minimax]] — 중국 AI 랩("AI 드래곤" 중 하나). 위키 **첫 중국 AI 랩 당사자 소스** — 모델 우선·앱은 나중, 누구나 제안하는 연구 문화(MSA를 인턴이 설계), 200개국 3억 명 (sources: 2) ⚠️ 당사자 진술
-- [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 화이트보드 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 (sources: 1) ⚠️ 발표자 무명
+- [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 — 다섯 편 연속(지식 조달·코드 품질·AI 엔지니어 세 층·시프트 레프트 보안·**레거시 현대화**), 같은 원리([[behavior-validated-trust]])를 품질·보안·마이그레이션으로 세 번 (sources: 5) ⚠️ 촬영 시점 5회 연속 미확정 · 화자 이름은 설명란에만
 - [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술
 - [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
 - [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
@@ -141,7 +142,7 @@ updated: 2026-09-16
 - [[zed]] — 텍스트 에디터, JetBrains와 함께 [[agent-client-protocol|ACP]] 공동 제안
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]]) · 제3자: **공개 출시**·채널당 메모리=사일로 ([[tech-bridge-company-brain-security]])
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
-- [[managed-agents]] — Claude Platform의 호스티드 meta-harness
+- [[managed-agents]] — Claude Platform의 호스티드 meta-harness. session/harness/sandbox 분할 + `outcomes`(채점) · AI Engineer 발표에서 **하네스 위 메타 하네스 층, 회고·`outcomes` 기본 제공** ([[tech-bridge-tokens-should-have-jobs]], sources: 4)
 - [[project-glasswing]] — Anthropic ~50개 파트너 협업 사이버보안 이니셔티브
 - [[heroku]] — 초기 PaaS 플랫폼, [[twelve-factor-app]] 방법론의 관찰 기반
 - [[codex]] — [[openai|OpenAI]] coding agent (GPT‑5.4/5.5, Fast Mode), [[claude-code]] 대응 제품
@@ -187,6 +188,7 @@ updated: 2026-09-16
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[fixed-budget-alpha]] — **전략 비교는 토큰 예산을 고정하고 한다.** one-shot은 전략이 지출을 스스로 정해(15%/39k vs 회고 600k) 비교가 안 된다 → 60만 고정: 실행 76 vs 조언 89. *"테스트 타임 컴퓨트가 전부라면 넷이 같아야"* — 에이전트 eval에서 **토큰 지출이 교란 변수**임을 명시한 첫 소스 (Anthropic, sources: 1) ⚠️ 화자 스스로 *"미미한 차이"*
 - [[reference-graph-vs-vector-search]] — **코드에서 반대말이 가장 비슷하게 생긴다.** *계정 생성*과 *계정 삭제*는 유사도가 높지만 정반대 일 → 유사도가 아니라 **참조 관계**로 인덱싱한다 (sources: 1) ⚠️ 당사자 진술, 하이브리드 논의 없음
 - [[agent-visual-qa]] — 에이전트에게 **최종 산출물을 보게 해서 빠진 것을 찾는** 검증. 140곳 로고 누락 검수·사진↔인물 매칭. **열거 검사는 사람이 가장 약한 일** (sources: 1) ⚠️ *"정확도 100%"* 는 자기 보고 · 작성자=검증자
 - [[agent-verification-skill]] — 에이전트가 앱을 실제로 띄우고 트레이스·시뮬레이터로 **직접 확인**하게 하는 스킬. *올바름은 주되 좋음은 아니다*
@@ -215,6 +217,7 @@ updated: 2026-09-16
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[true-cost-to-perfect-answer]] — **비용 = 실행당 예산 × 기대 실행 횟수(1/합격률).** 실행 42% → 3회 → 600k×3 = **180만 토큰**. 정확도의 작은 차이가 비용의 큰 차이로 · 효율 → 조언 / 신뢰성 → 채점·회고 · *토큰은 결과가 아니다* 를 판매자가 계산식으로 (Anthropic, sources: 1) ⚠️ 조언·채점·회고 수치 없음 · 재시도 독립 가정
 - [[slowdown-within-lead-margin]] — **우위의 범위 안에서만 늦춘다.** 권위주의 국가에 칩 안 팔기 + 도난 방지 보안이 그 범위를 넓힌다 → *"적어도 약간의 시간"*. 감속을 막는 건 시장이 아니라 지정학 (Amodei)
 - [[ai-arms-limitation-lens]] — 냉전이 아니라 **군비 제한 협상**이 렌즈. 공동 위협(생물 테러)은 적대해도 합의 가능, 핵심은 **검증**. 작은 합의 = 생물무기협약 확장, 큰 합의 = AI 속도 제한 (Amodei)
 - [[race-to-the-top]] — **프론티어에 있되 경쟁의 축을 속도에서 기준으로.** 만들지 않는 것은 안전이 아니다 · SB53 지지 · 국방 응용 일부만. ⚠️ 회사의 자기 서술 (Anthropic)
@@ -376,6 +379,11 @@ updated: 2026-09-16
 - [[nightly-memory-consolidation]] — *"**매일 저녁** 그날 한 모든 것을 보고 메모리로 압축한다. 사람이 잘 때 생각하고 압축하는 것과 비슷하다."* 자격증명 제외, **남길 것은 모델이 정한다.** **위키에서 compaction이 실패가 아니라 기능으로 놓이는 자리** (sources: 2) ⚠️ 가시성·되돌리기 없음
 - [[business-in-a-box]] — *"아이디어만 있으면"* 제작·온라인 존재·**모든 Meta 서비스 연결**·**광고 운영**·백엔드까지 ([[muse]], sources: 1) ⚠️ 작동 사례 0건 · **화자가 자기 광고 이해관계를 연결하지 않는다**
 - [[rare-disease-long-tail]] — **시장이 없어 치료가 개발되지 않는 긴 꼬리**, 그리고 개인 맞춤 치료 설계. 위키에 **시장 실패 논증이 처음** ([[biohub]], sources: 2) ⚠️ **검증·임상·규제·책임이 한 마디도 없다**
+- [[all-or-nothing-accuracy]] — **100%가 아니면 0.** *"전문가가 P&L을 다시 계산해야 하면 80%는 쓸모없다"* → 만점만 합격: 실행 42% vs 복잡한 전략 최대 75%. [[verification-cost-asymmetry]]의 결론을 **판매자가 채점 방식으로** (Anthropic, sources: 1) ⚠️ 누가 100%를 판정하는지 없음
+- [[strategy-primitives]] — 개별 에이전트 하네스 위 **메타 하네스 층**, 실행자·조언자·채점자·드리머를 조합 가능한 프리미티브로 · 회고·`outcomes` 기본 제공 · *실행→조언→채점→회고* 한 루프 · *"새 역할을 발명"* · 장기 목표 **모델이 전략을 동적으로 구성** ([[managed-agents]], sources: 1) ⚠️ 선언뿐, 그림은 자막에 없음
+- [[legacy-skills-gap]] — *"개발자 수가 많다고 현대화가 빨라지지 않는다"* — COBOL·메인프레임 세대는 은퇴하고 신입은 Python·클라우드. 병목은 인원이 아니라 **사라지는 숙련** ([[ibm]], sources: 1) ⚠️ 격차가 가장 큰 자리(얽힌 도메인 로직)에서 AI가 가장 약하다는 긴장 미처리
+- [[syntactically-correct-behaviorally-wrong]] — *"문법적으로는 올바르지만 동작상으로는 잘못된 번역"*. [[behavior-validated-trust]]의 마이그레이션판 — 검증이 *옳은가* 가 아니라 **원본과 같은가**(동등성), 그런데 레거시는 그 기준(문서·테스트)이 없다 ([[ibm]] 세 번째, sources: 1)
+- [[risk-proportional-human-review]] — **AI는 승수, 사람은 가장 큰 위험을 수반하는 결정 곁에.** 사람의 자리를 시간·책임·추상 수준이 아니라 **결정의 위험도**로 정하는 기준 · *"더 빠를 뿐 아니라 더 철저하게"* — 병목을 없애지 않고 가장 값진 자리로 옮긴다 ([[ibm]], sources: 1) ⚠️ 위험한 결정의 예시 없음 · ko *force multiplier* → "시너지 효과"
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -394,7 +402,8 @@ updated: 2026-09-16
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter) + LLM 분업의 코드 분석 패턴
 - [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브.
 - [[refactoring]] — behavior를 유지하면서 내부 구조를 개선하는 작은 변경들의 연속.
-- [[technical-debt]] — 빠른 delivery를 위해 미룬 구조 개선이 이후 변경 비용의 이자로 돌아오는 상태.
+- [[technical-debt]] — 빠른 delivery를 위해 미룬 구조 개선이 이후 변경 비용의 이자로 돌아오는 상태. 09-18: **보안 이자**(패치·규정 준수 불가)와 **인력 이자**(갚을 사람의 은퇴)가 붙었다 (sources: 2)
+- [[legacy-code-modernization]] — **레거시 = 돌아가지만 아무도 완전히 이해 못 하는 핵심 인프라**(테스트·문서 없음). AI는 발견(몇 달→몇 주)과 번역(COBOL→Java)을 배속하지만 현대화는 번역이 아니라 **세 축**(아키텍처·기술·프로세스)의 점진적 과정 · Lauren Tan의 *"잘 세팅돼 있다면"* 의 반대편 ([[ibm]], sources: 1) ⚠️ 수치·도구·사례 0
 - [[code-smells]] — 리팩터링 후보를 찾는 진단 vocabulary(23개 smell).
 - [[refactoring-techniques]] — behavior-preserving 구조 변경 technique family 허브(6개 family, 66+ technique).
 - [[design-pattern-factory-method]] · [[design-pattern-abstract-factory]] · [[design-pattern-builder]] · [[design-pattern-prototype]] · [[design-pattern-singleton]] — 생성 패턴.
@@ -474,7 +483,7 @@ updated: 2026-09-16
 - [[tech-bridge-ai-native-skills]] — Imad Touil: 스킬 거버넌스·registry·progressive disclosure ([[tech-bridge]], 2026-08-30)
 - [[tech-bridge-agentic-sites]] — Carlos Sanchez/Adobe: 블록 단위 개인화, 자기 사이트 RAG, Cerebras+Gemma 4 1.1초 ([[tech-bridge]], 2026-08-31)
 - [[tech-bridge-grokbot-agent-teams]] — Cursor Lauren Tan·Roshan Sadanani: GrokBot 봇 팀, Grok 4.6 효율성 ([[tech-bridge]], 2026-08-31)
-- [[tech-bridge-claude-platform-agent-era]] — Anthropic Angela Jiang·Katelyn Lesse (KP Builders S2): 하네스=while 루프, 내구성 서버+일회성 샌드박스, token roles, 200명 팀 ([[tech-bridge]], 2026-09-01)
+- [[tech-bridge-claude-platform-agent-era]] — Anthropic Angela Jiang·Katelyn Lesse (KP Builders S2): 하네스=while 루프, 내구성 서버+일회성 샌드박스, token roles, 200명 팀 ([[tech-bridge]], 2026-09-01) · 재방문: [[tech-bridge-tokens-should-have-jobs]](09-17, 수치 추가 · Sonnet+Opus 비용 역전은 되풀이되지 않음)
 - [[tech-bridge-trusted-throughput]] — Ironclad Mingsheng Hong: 토큰=LOC, 대시보드는 연기 감지기, 병목은 리뷰·CI ([[tech-bridge]], 2026-09-01)
 - [[tech-bridge-signal-layer]] — Lena Hall: 수렴 기계, 채점기 경계선, 왜곡 3종, 신뢰 ([[tech-bridge]], 2026-09-01)
 - [[tech-bridge-agents-as-distributed-systems]] — TikTok Salman Munaf: 타임아웃=상태 불명, 멱등성, 메모리=캐시, 보상 작업 ([[tech-bridge]], 2026-09-02)
@@ -518,11 +527,13 @@ updated: 2026-09-16
 - [[tech-bridge-dario-amodei-cbs-interview]] — [[dario-amodei|Dario Amodei]] ([[anthropic|Anthropic]] CEO) × CBS Sunday Morning: **위키 첫 Anthropic CEO 1인칭 소스.** *확률 대신 건설 방식* · 지수의 굽이 · **멈추지 말고 늦추자** · 3단계 계획([[embedded-external-evaluators|상주 외부 평가자]] → 업계 합의 → 정부 참여) · SB53 유일 지지 · 전면 금지 반대 · [[swiss-cheese-defense-in-depth|스위스 치즈]] · [[slowdown-within-lead-margin|우위 범위 안의 감속]] · [[ai-arms-limitation-lens|군비 제한 렌즈]] · [[joint-democratic-oversight|민주 정부 공동 감독]] · *"업계가 거짓말했다"* (23:47, 2026-09-15) ⚠️ 당사자 진술 · ko가 Hugging Face를 "얼굴 사진 합성 사건"으로
 - [[tech-bridge-shift-left-security-ai-code]] — [[jeff-crume|Jeff Crume]] ([[ibm|IBM]] · ⚠️ 이름은 설명란에만): **위키가 보안을 개발 공정의 축으로 묶어 보는 첫 소스.** [[shift-left-security|시프트 레프트]] 다섯 원칙 — *결과를 믿어라 생성만이 아니라* · *사후 체크박스는 애초에 작동한 적이 없다* · **[[generated-dependency-scrutiny|생성된 의존성]]** · *코딩 문제가 아니라 의도 문제*(미다스) · **[[continuous-security-validation|계속 통과하는가]]**. 맺음은 에이전트 통제 넷(가드레일·신원·접근 제어·사람 개입)과 *"복잡성은 보안의 적"* (11:18, 2026-09-16) ⚠️ 도구 이름 0개 · 수치 1개(27년 제로데이)인데 출처 미상 · ko가 원칙 이름을 "세대"로
 - [[tech-bridge-zuckerberg-muse-in-daily-use]] — [[mark-zuckerberg|Mark Zuckerberg]] × 진행자 무명(자막에 *"Tiff"* 한 번): **이 채널이 같은 인물의 같은 주제 인터뷰를 두 편 올린 첫 사례**([[tech-bridge-zuckerberg-muse-personal-agent|65:19 Alex Heath 편]]과 **별개의 자리**, 내용이 크게 겹친다). 앞 편에 없던 여섯 — **[[agent-persona-naming|이름·아바타]]**(Agrippa/Pip) · **[[one-time-virtual-card|일회용 가상 카드]]** · **[[muse-spark|Muse Spark 1.3]]** · **[[business-in-a-box|비즈니스 인 어 박스]]** · **[[biohub|Biohub]]와 [[rare-disease-long-tail|개인 맞춤 치료]]** · **[[nightly-memory-consolidation|매일 저녁의 메모리 압축]]**. 그리고 앞 편의 *"기술적으로 검증 가능"*·부담 주체·오픈소스·함대 학습이 **사라졌다** (25:09, 2026-09-16) ⚠️ 당사자 진술 · ko가 제품명 Muse를 세 갈래로 파괴
+- [[tech-bridge-legacy-code-modernization-ai]] — [[anna-gutowska|Anna Gutowska]] ([[ibm|IBM]] · ⚠️ 이름은 설명란에만): **위키가 레거시 코드의 정의와 현대화의 구조를 받는 첫 소스.** *돌아가지만 아무도 완전히 이해 못 하는 핵심 인프라* · [[legacy-skills-gap|개발자 수 ≠ 현대화 속도]] · [[technical-debt]]에 보안·인력 이자 · AI는 발견·번역·에이전트를 배속 · [[legacy-code-modernization|세 축]](아키텍처·기술·프로세스, 점진적) · [[syntactically-correct-behaviorally-wrong|문법은 맞고 동작은 틀린 번역]] · [[risk-proportional-human-review|승수로서의 AI, 위험한 결정 곁의 사람]] (8:51, 2026-09-17) ⚠️ 수치·도구·사례 0 · IBM 5회 연속 자사 제품 없음·촬영 시점 미확정
+- [[tech-bridge-tokens-should-have-jobs]] — [[katelyn-lesse|Katelyn Lesse]]·[[angela-jiang|Angela Jiang]] ([[anthropic|Anthropic]] · [[ai-engineer|AI Engineer]] 발표): **09-01 대담의 재방문 — [[token-roles|토큰 역할]]에 처음 붙은 수치.** one-shot 15%/39k → [[fixed-budget-alpha|고정 60만]] 76 vs 89 → [[all-or-nothing-accuracy|100% 합격률]] 42% vs 최대 75% → [[true-cost-to-perfect-answer|진짜 비용]] 180만 · 효율 → 조언 / 신뢰성 → 채점·회고 · [[strategy-primitives|메타 하네스 층·회고·`outcomes` 기본 제공·동적 구성]] (12:45, 공식 챕터 8, 2026-09-17) ⚠️ 내부 벤치 · 채점·회고 수치 없음 · **Sonnet+Opus 비용 역전은 되풀이되지 않음** · ko *executor* → "유언집행자"
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 484 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 470 → 484, + 2026-09-16 Tech Bridge 2편: source 2 + concept 9 + entity 3)
+- 총 페이지 수: 495 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 484 → 495, + 2026-09-17 Tech Bridge 2편: source 2 + concept 8 + entity 1)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-17 (Tech Bridge **2편**, **열나흘 연속** — 09-16 업로드분. [[tech-bridge-shift-left-security-ai-code|Crume 편]]은 *AI가 생성한 코드를 어떻게 지키나* — **위키가 보안을 개발 공정의 축으로 묶어 보는 첫 소스**([[shift-left-security]]·[[generated-dependency-scrutiny]]·[[continuous-security-validation]]), [[ibm]] 네 번째이자 **처음으로 보안을 정면으로**. [[tech-bridge-zuckerberg-muse-in-daily-use|Zuckerberg 편]]은 **이 채널이 같은 인물의 같은 주제를 두 번째로 올린 첫 사례** — 내용이 크게 겹치고, 새로 나오는 것은 [[agent-persona-naming]]·[[one-time-virtual-card]]·[[muse-spark]]·[[business-in-a-box]]·[[biohub]]·[[nightly-memory-consolidation]] 여섯. **앞 편의 *기술적으로 검증 가능*·수수료 부담 주체·오픈소스·함대 학습은 사라졌다.**)
+- 마지막 ingest: 2026-09-18 (Tech Bridge **2편**, **보름 연속** — 09-17 업로드분. [[tech-bridge-legacy-code-modernization-ai|Gutowska 편]]은 *레거시 코드란 무엇인가* — **위키가 레거시의 정의와 현대화의 구조를 받는 첫 소스**([[legacy-code-modernization]]·[[legacy-skills-gap]]·[[syntactically-correct-behaviorally-wrong]]·[[risk-proportional-human-review]]), [[ibm]] 다섯 번째이자 **같은 원리([[behavior-validated-trust]])를 세 번째로**. [[tech-bridge-tokens-should-have-jobs|Lesse·Jiang 편]]은 **09-01 대담의 재방문** — [[token-roles]]에 **처음으로 수치**([[fixed-budget-alpha]]·[[all-or-nothing-accuracy]]·[[true-cost-to-perfect-answer]])와 **제품 층**([[strategy-primitives]] — 메타 하네스, 회고·`outcomes` 기본 제공). **09-01의 Sonnet+Opus 비용 역전은 되풀이되지 않았다.**)

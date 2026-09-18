@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-08
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # Agent Memory
@@ -129,3 +129,21 @@ updated: 2026-09-17
 무엇을 남길지는 **모델이 정하고**(*"대체로는 그것이 스스로 정합니다"*), 그 판정 품질이 **모델 개선의 지표**가 된다 — *"맞는 것을 기억하고 무관한 것은 기억하지 않는 데 더 효율적이 될 겁니다"*([[muse-spark|Muse Spark 1.3]]).
 
 → [[nightly-memory-consolidation]] ⚠️ 사용자 가시성·되돌리기·판정 검증은 소스에 없다.
+
+## 역할로 분리된 쓰기 — 드리머 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[token-roles]]의 회고(dreaming)에 **정의**가 붙는다.
+
+> 여기에는 자연스럽게 실행을 담당하는 실행자가 있고, 그리고 **드리머(dreamer)** 가 있습니다. 드리머는 **실제로 실행자의 작업과 기록(transcript)을 검토**할 수 있으며, 그 과정에서 **발견한 내용을 메모리에 저장**할 수 있습니다. **이 메모리는 다음 라운드에서 실행자에 의해 다시 활용됩니다.** (03:31~03:46)
+
+이 페이지의 쓰기 경로들과 나란히:
+
+| 소스 | 누가 쓰는가 | 언제 |
+|---|---|---|
+| [[tech-bridge-agent-knowledge-four-ways]] | 실행한 에이전트 자신 | 사건이 끝나는 순간 |
+| [[nightly-memory-consolidation\|Muse]] (09-17) | 같은 에이전트 | 하루 끝, 일괄 |
+| **드리머** (09-18) | **별도 역할** — 실행자의 기록을 읽는 다른 토큰 | 라운드 사이 |
+
+**쓰는 주체가 실행자와 분리**된 첫 서술이다 — [[generator-evaluator-pattern]]이 *평가* 를 분리한 것과 같은 논리를 *기억* 에 적용한 셈이다. 사용 사례는 채용 에이전트(*"지원자가 적합한지 여부와 양측 간의 적합성에 대한 피드백"*, 03:52~03:57). 그리고 이 역할이 [[managed-agents|Claude Managed Agents]]에 **기본 제공**된다(11:08~11:12).
+
+> ⚠️ 무엇을 남길지의 판정, 무효화, 틀린 기억 처리 — 이 페이지의 기존 빈자리가 그대로다. ⚠️ ko가 *dreamer* 를 **"몽상가"**, *writing learnings to memory* 를 *"기억해 두어"* 로 옮겼다.

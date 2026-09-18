@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-18
 ---
 
 # AI Engineer
@@ -48,3 +48,17 @@ updated: 2026-09-15
 ## References
 
 - [[tech-bridge-one-designer-plus-ai]] · [[vincent-wendy]] · [[tech-bridge]]
+
+## 두 번째 소스 — 무대 위의 Anthropic 플랫폼 팀 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[katelyn-lesse]]·[[angela-jiang]]([[anthropic]])의 발표가 *"저희는 **AI Engineer**에서 여러분 모두와 함께하게 되어 정말 기쁩니다"*(00:00~00:02)로 시작한다. **화자가 행사명을 직접 말한 두 번째 소스**([[tech-bridge-one-designer-plus-ai]]의 *"AI Engineer, 이 컨퍼런스"* 에 이어)이고, 이번엔 **운영 조직 내부자가 아니라 발표자**다.
+
+| | [[tech-bridge-one-designer-plus-ai]] (09-15) | **이 소스** (09-18) |
+|---|---|---|
+| 화자의 자리 | 조직 내부(디자이너) | **무대 위 발표자**(Anthropic) |
+| 행사명 | *"AI Engineer, 이 컨퍼런스"* | *"AI Engineer에서"* |
+| 회차·연도 | 미확정 | **미확정** |
+
+> ⚠️ **같은 회차라는 근거가 없다.** 09-07 절차대로 별개로 취급한다. World's Fair([[tech-bridge-mousepower-measuring-agents]])와의 관계도 여전히 미확정. 이 소스는 조직에 대한 사실(규모·운영)을 **하나도 더하지 않는다** — 행사명 확인뿐이다.
+
+발표 형식 관찰: **2인 공동 발표, 12:45, 공식 챕터 8개** — 이 채널의 AI Engineer 계열 소스 중 **두 사람이 번갈아 말하는 첫 무대 발표**다(09-01 대담은 인터뷰였다).

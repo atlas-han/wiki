@@ -6,9 +6,9 @@ tags: [anthropic, claude-platform, infrastructure, developer-platform]
 links:
   - https://x.com/katelyn_lesse
   - https://www.linkedin.com/in/katelynlesse/
-sources: [tech-bridge-claude-platform-agent-era]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-18
 ---
 
 # Katelyn Lesse
@@ -31,3 +31,15 @@ updated: 2026-09-02
 ## References
 
 - [[tech-bridge-claude-platform-agent-era]] — 43:59, 2026-09-01
+
+## 두 번째 소스 — AI Engineer 발표 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[angela-jiang|Angela Jiang]]과 함께 [[ai-engineer|AI Engineer]] 무대에서 발표했다. 자기소개가 직함을 준다 — *"저는 케이틀린이고 앤트로픽에서 **플랫폼 엔지니어링을 담당**하고 있습니다"*(00:05~00:07). 설명란은 *"플랫폼 엔지니어링 리드"*. 09-01 대담의 *"Claude Platform 팀"* 이 **역할까지 확정**됐다.
+
+이 발표에서 그의 몫으로 읽히는 부분(⚠️ 발언별 화자는 부분 판독 — Angela가 *"케이틀린이 언급했듯이"* 라고 두 번 가리키는 대목으로 역산):
+
+- **재무 분석 벤치의 설계와 첫 두 실험**(04:09~06:22) — 실행만 하는 컨트롤, one-shot(15% · 39k), 그리고 **예산을 60만으로 고정**해 알파를 찾는 방법 → [[fixed-budget-alpha]]
+- *"만약 테스트 타임 컴퓨트만이 중요한 요소라면 실행·조언·채점·회고가 같은 수준이어야 한다"* 는 **귀무가설**을 세운 쪽.
+- 실행의 **진짜 비용 180만 토큰** 계산도 Angela가 *"케이틀린이 언급했듯이"* 로 돌린다(09:12) → [[true-cost-to-perfect-answer]]
+
+09-01에서 *"이것은 분산 시스템 문제"* 라며 **인프라**를 말했던 화자가, 이번엔 **측정 방법**을 말한다. ⚠️ en-orig ASR은 *Caitlyn/Caitlin*, ko는 *케이틀린* — 설명란의 *Katelyn Lesse* 철자를 채택했다(09-01과 같은 처리).

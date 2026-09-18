@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai]
 created: 2026-09-08
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # IBM
@@ -101,3 +101,25 @@ updated: 2026-09-17
 09-16 편이 더한 것: [[shift-left-security]] · [[generated-dependency-scrutiny]](이 위키에 **소프트웨어 공급망이 처음 들어온 자리**) · [[continuous-security-validation]], 그리고 [[intent-alignment]]·[[agent-governance-layers]]·[[verification-bottleneck]] 보강.
 
 ⚠️ **이 편의 기존 경고에 해당하는 것**: 정적 분석·비밀키 스캔·의존성 모니터링·취약점 탐지는 **엔터프라이즈 보안 벤더가 파는 것과 같은 자리**다. 소스는 그 연결을 하지 않고 위키도 근거 없이 주장하지 않는다 — 다만 **도구 이름이 하나도 없다는 점**과 함께 표시해 둔다.
+
+## 다섯 번째 소스 — 레거시와 현대화, 세 번째로 같은 원리 (2026-09-18)
+
+[[tech-bridge-legacy-code-modernization-ai]]로 IBM은 **소스 다섯 편**을 가진 조직이 됐다. 판정 근거는 같다 — 관련 링크 둘이 전부 `ibm.biz`, 해시태그 `#IBMTechnology`.
+
+| | 09-07 | 09-08 | 09-15 | 09-16 | **09-17 (이번)** |
+|---|---|---|---|---|---|
+| 형식 | 화이트보드 8:58 | 슬라이드 13:42 | 1인 해설 10:38 | 1인 해설 11:18 | 1인 해설 **8:51** |
+| 발표자 | 무명 | 무명 | [[cedric-clyburn\|Clyburn]] (설명란) | [[jeff-crume\|Crume]] (설명란) | **[[anna-gutowska\|Anna Gutowska]]** — ⚠️ **설명란에만** |
+| 촬영 시점 | 미확정 | 미확정 | 미확정 | 미확정 | **미확정** |
+| 자사 제품 | 없음 | 없음 | 없음 | 없음 | **없음** |
+| 주제 | 에이전트 지식 네 갈래 | AI 시대 코드 품질 | AI 엔지니어의 세 층 | AI 생성 코드의 보안 | **레거시 코드와 AI 현대화** |
+
+> **관찰 유지, 다섯 번째** — 다섯 편 모두 **자사 제품이 등장하지 않는 개념 해설**이고, **촬영 시점이 다섯 번 연속 미확정**, 화자 이름은 **세 번 연속 설명란에만**. 이번 편은 **수치조차 거의 없다**(근거 없는 *몇 달 → 몇 주* · *시간의 절반* 뿐).
+
+**같은 원리를 세 번째로 말했다.** 09-08(*작성자가 아니라 검증된 행동을*) → 09-17(*결과를 믿어라, 생성만이 아니라*) → 이번(*문법적으로는 올바르지만 동작상으로는 잘못된 번역*). [[behavior-validated-trust]]가 품질 → 보안 → **마이그레이션**으로 세 번 나온 셈이고, 이번엔 검증이 *옳은가* 가 아니라 **원본과 같은가**(동등성)다 → [[syntactically-correct-behaviorally-wrong]]. 그리고 *"취약점을 자동으로 제거하거나 안전한 코드를 보장한다고 기대하지 말라"*(07:57~08:05)는 **하루 전 Crume 편 ①의 반복**이다.
+
+09-17 편이 더한 것: [[legacy-code-modernization]] · [[legacy-skills-gap]](*"개발자 수가 많다고 현대화가 빨라지지 않는다"*) · [[syntactically-correct-behaviorally-wrong]] · [[risk-proportional-human-review]](*"가장 큰 위험을 수반하는 결정에 경험 많은 엔지니어들이 가까이"*), 그리고 [[technical-debt]]에 **보안 이자**와 **인력 이자**가 붙는다.
+
+**IBM 편 다섯 편의 자리가 보인다** — 09-15(직무 입문) · 09-16(보안) · 09-17(레거시)이 **AI 엔지니어의 세 층**([[three-tier-ai-skill-stack]])과 나란히 읽힌다: *무엇을 배우나 → 무엇을 지키나 → 무엇을 옮기나*. 소스들은 서로를 언급하지 않는다.
+
+⚠️ **이 편의 기존 경고에 해당하는 것**: 레거시 현대화·메인프레임·COBOL 번역은 **엔터프라이즈 벤더가 파는 것과 정확히 같은 자리**다(IBM이 메인프레임 벤더라는 사실은 **위키의 배경 지식**이지 소스에 없다). 소스는 그 연결을 하지 않고 **도구 이름을 하나도 부르지 않는다.** 위키는 근거 없이 주장하지 않되, 다섯 편 중 **판매 대상과 가장 가까운 주제**라는 점을 표시해 둔다.

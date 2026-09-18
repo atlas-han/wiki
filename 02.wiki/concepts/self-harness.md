@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, self-improvement, harness-engineering, terminal-bench, llm-engineering]
 related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills]
 first-seen: self-harness-paper
-sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context]
+sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context, tech-bridge-tokens-should-have-jobs]
 created: 2026-06-14
-updated: 2026-09-08
+updated: 2026-09-18
 ---
 
 # Self-Harness
@@ -157,3 +157,9 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 - 허브: [[agent-harness-design]] · [[harness-engineering]]
 - 관련 패턴: [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] · [[sutton-bitter-lesson]]
 - [[tech-bridge-minimax-m3-long-context]] — 랩 층위의 자기 개선 (M3 → M3.1), [[minimax]] (2026-09-08)
+
+## dreaming이 루프의 마지막 칸이 되다 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+09-01에 *"dreaming"* 으로 이 페이지에 들어온 제품 전략이 [[ai-engineer|AI Engineer]] 발표에서 **루프의 자리**를 얻는다 — *실행 → 조언 → 채점 → 회고*, 채점을 통과한 것만 회고로 보낸다(*"만약 통과된다면 (…) 그 모든 자료를 회고에 보내서 다음 시도가 그 어느 때보다 더 나아지도록"*, 11:46~11:51). 이 페이지의 non-regressive 채택 규칙(회귀 게이트를 통과한 것만 병합)과 **같은 순서**다 — 다만 여기서 개선되는 것은 하니스가 아니라 **메모리**다.
+
+그리고 화자의 장기 목표가 이 페이지의 방향과 같다 — *"여러분이 업무를 수행하는 동안 이러한 전략을 **동적으로 구성**할 수 있도록 모델과 플랫폼을 더욱 개선"*(12:16~12:23). 09-05 Claude Code 팀의 *"Claude는 자기만의 하네스를 만드는 데 능숙"* 이 **플랫폼의 목표 선언**으로 되풀이된 셈이다. → [[strategy-primitives]] ⚠️ 선언뿐, 실체 없음.

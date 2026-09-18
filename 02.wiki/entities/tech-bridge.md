@@ -55,8 +55,10 @@ sources:
   - tech-bridge-dario-amodei-cbs-interview
   - tech-bridge-shift-left-security-ai-code
   - tech-bridge-zuckerberg-muse-in-daily-use
+  - tech-bridge-legacy-code-modernization-ai
+  - tech-bridge-tokens-should-have-jobs
 created: 2026-06-03
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # Tech Bridge
@@ -334,7 +336,7 @@ updated: 2026-09-17
 
 ## References
 
-- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]] · [[tech-bridge-acp-universal-remote]] · [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-ambitious-software-agent-era]] · [[tech-bridge-pstack-third-party-review]] · [[tech-bridge-zuckerberg-muse-personal-agent]] · [[tech-bridge-shift-left-security-ai-code]] · [[tech-bridge-zuckerberg-muse-in-daily-use]]
+- [[tech-bridge-harness-engineering]] · [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-frontier-engineering]] · [[tech-bridge-andrew-ng-ai-opportunity]] · [[tech-bridge-dhh-agent-productivity]] · [[tech-bridge-ai-native-skills]] · [[tech-bridge-agentic-sites]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-claude-platform-agent-era]] · [[tech-bridge-trusted-throughput]] · [[tech-bridge-signal-layer]] · [[tech-bridge-agents-as-distributed-systems]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-karpathy-transformers-stanford]] · [[tech-bridge-multimodal-commerce-agent]] · [[tech-bridge-uncertainty-mathematics]] · [[tech-bridge-claude-code-team-workflow]] · [[tech-bridge-six-agent-skills]] · [[tech-bridge-ai-native-sdlc]] · [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-minimax-m3-long-context]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-ai-era-code-quality]] · [[tech-bridge-cursor-legacy-refactoring]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-build-time-vs-runtime-tools]] · [[tech-bridge-taste-labs-measuring-slop]] · [[tech-bridge-impeccable-design-steering]] · [[tech-bridge-acp-universal-remote]] · [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-ambitious-software-agent-era]] · [[tech-bridge-pstack-third-party-review]] · [[tech-bridge-zuckerberg-muse-personal-agent]] · [[tech-bridge-shift-left-security-ai-code]] · [[tech-bridge-zuckerberg-muse-in-daily-use]] · [[tech-bridge-legacy-code-modernization-ai]] · [[tech-bridge-tokens-should-have-jobs]]
 - 채널: <https://www.youtube.com/@TechBridge-KR>
 
 ## 2026-09-17 ingest (09-16 업로드 2편) — 자막 관찰
@@ -358,3 +360,37 @@ updated: 2026-09-17
 - **무챕터 1편 / 22챕터 1편** — Crume 편은 챕터가 없어 소제목을 **정리자가 다섯 원칙 구획을 따라** 붙였고(원칙 ③④는 **자막에 번호가 없어** 설명란 근거임을 표시), Zuckerberg 편은 **공식 챕터 22개**를 따랐다.
 
 > ⚠️ **이해관계 표시.** Zuckerberg 편은 **자기 제품을 파는 CEO**이고, *"모든 Meta 서비스에 연결 + 광고 운영"*([[business-in-a-box]])은 **화자가 소유한 광고 플랫폼의 수요를 늘리는 경로**인데 소스가 그 연결을 하지 않는다. Crume 편은 **자사 제품이 없는 개념 해설**이지만 다섯 원칙이 요구하는 것(정적 분석·비밀키 스캔·의존성 모니터링·정책 시행)은 **엔터프라이즈 보안 벤더가 파는 것과 같은 자리**다. 둘 다 소스는 연결하지 않고 위키는 표시만 한다.
+
+## 2026-09-17 업로드 2편 — 옛 코드의 정의와 토큰 역할의 수치 (2026-09-18 ingest)
+
+| 소스 | 길이 | 성격 |
+|---|---|---|
+| [[tech-bridge-legacy-code-modernization-ai]] ([[anna-gutowska]] / [[ibm\|IBM Technology]]) | 8:51 | **1인 해설** · 자사 제품 없음(IBM 편 **5회 연속**) · 무챕터 · **화자 이름이 설명란에만**(IBM 편 3회 연속, 채널 4회 연속) · 촬영 시점 미확정(**5회 연속**) · **수치·도구·사례 0** |
+| [[tech-bridge-tokens-should-have-jobs]] ([[katelyn-lesse]]·[[angela-jiang]] / [[anthropic]] · [[ai-engineer\|AI Engineer]]) | 12:45 | **2인 무대 발표** · 공식 챕터 8개 · **09-01 대담과 같은 두 화자의 재방문**(09-17 Zuckerberg에 이어 두 번째) · 행사명 확정, 회차 미확정 |
+
+**두 편이 이 위키에 준 것이 대칭이다.** IBM 편은 **정의**를 준다 — 레거시란 무엇이고 현대화는 어디로 가는가([[legacy-code-modernization]]) — 그리고 수치가 없다. Anthropic 편은 **수치**를 준다 — 09-01에 말로만 있던 [[token-roles]]에 벤치 결과([[fixed-budget-alpha]]·[[all-or-nothing-accuracy]]·[[true-cost-to-perfect-answer]]) — 그리고 정의는 이미 있었다.
+
+**채널 기록 하나** — **같은 화자의 재방문 두 번째**. 09-17의 Zuckerberg 재방문이 *같은 인물·같은 제품·다른 자리* 였다면, 이번은 *같은 두 인물·같은 개념·다른 형식*(인터뷰 → 무대 발표)이다. 09-17에 세운 절차(기존 raw를 grep해 겹침을 확인)를 두 번째로 적용했고, 이번엔 **겹침보다 추가가 컸다** — 앞 편이 넓고 얕았고 뒤 편이 좁고 깊다(Zuckerberg 편은 반대였다).
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **⚠️ ko가 발표의 핵심 명사를 상속법 용어로 옮겼다 — 이 채널에서 가장 심한 유형 중 하나.** *executor*(실행자) → **"유언집행자"**(6회) · "집행자"(3회) · "실행기" · "실행자" — **한 영상에서 네 표기**, 그중 하나가 **다른 분야의 전문 용어**다. *"다른 유언집행자들이 했던 일을 되돌아보고"* 처럼 **문장이 자연스러워 ko만 읽으면 뜻이 통하지 않는다.** 09-16 *"인류학파"* 계열(고유·전문 용어가 다른 분야의 용어로).
+- **⚠️ ko가 토큰 예산에 통화 단위를 붙였다** — *"that 600,000 or so"* → **"약 60만 달러"**. 원문에 단위가 없는 자리에 **없던 단위**(09-08 *"1조 달러"* 계열). 같은 수치가 세 다른 자리에서는 *"60만 개의 토큰"* 으로 옳다 → **같은 수치의 네 출현 중 하나만 틀렸고, 틀린 자리가 고정 예산을 선언하는 문장**이다.
+- **⚠️ 전략 이름 셋이 일상어로 흩어졌고, 챕터 제목이 고쳐 줬다** — *grading* → "성적 평가"·"성적", *dreaming/dreamer* → "꿈"·"몽상가"·**"Drain"**(en-orig ASR을 번역 없이). 처방 문장이 *"**성적이나 꿈** 중 어느 쪽"* 이 됐다. **채널 공식 챕터가 "조언(Advising), 평가(Grading), 회고(Dreaming)"를 준다** — 09-15에 세운 *챕터 제목도 양방향 대조 대상* 원칙의 **세 번째 적용**이고, 이 위키는 챕터의 **회고**를 채택했다.
+- **⚠️ 제품 기능명이 보통명사가 됐다** — *"dreaming and **outcomes** … out of the box"* → **"꿈과 **결과**는 … 기본 제공"**. `outcomes`는 [[managed-agents]]의 기능 이름이라(09-01에서 확인) **ko로는 무엇이 기본 제공되는지 알 수 없다.** 09-14 *MCP → Master Career Program* 계열의 반대 방향(약어 창작이 아니라 고유명 소실).
+- **⚠️ `Claude` → `cloud` 연쇄가 제품명 안에서** — en-orig ASR *"cloud managed agents"* → ko **"클라우드 관리형 에이전트"**(3회). 설명란의 *"Claude Managed Agents"* 로 판독. 09-01 raw가 같은 화자에게서 같은 보정을 기록했었다.
+- **⚠️ en-orig `greater`(→ grader) 오인식이 같은 화자에게서 재발, 이번엔 ko가 뜻을 잃었다** — 09-01에는 ko가 *채점자* 로 옳게 읽었는데 이번엔 **"더 상위 단계로 보내"**. **같은 화자·같은 ASR 오류·다른 결과** — 채널의 ko 품질이 영상마다 다르다는 첫 직접 증거.
+- **⚠️ `jobs`가 세 갈래** — 테제 *"tokens should have jobs"* → **"일자리"**(고용) · **"직업"** · "작업". **채널 제목이 "각자의 역할"로 바르게 옮겼다** — 제목이 자막을 고치는 사례(09-16 *아모데이* 에 이어).
+- **⚠️ ko가 `architecture`를 건물로** — IBM 편 *"First up is the architecture"* → **"우선 건축부터"**. 세 축의 **첫 축 이름표**이고, 같은 단어가 02:34에서는 *"메인프레임 아키텍처"* 로 옳다. 09-17 *generation → 세대* 와 같은 유형(이름표 자리에서만 틀림).
+- **⚠️ `force multiplier` → "시너지 효과"** — IBM 편 처방의 핵심어. *한 사람의 효과를 배로* 가 *상승 작용* 이 되면서 **기계적 일은 AI, 위험한 결정은 사람**이라는 구도가 흐려진다.
+- **⚠️ `test-time compute` → "테스트에 더 많은 컴퓨팅 자원"** — 이 위키의 용어([[tech-bridge-claude-code-team-workflow]])가 *시험용 자원* 이 됐다. 09-12 *harness → 코딩 실력* 계열(위키 핵심 용어의 추상화 소실). 같은 편에서 *harness* 도 **"시스템"** 이 됐다.
+- **⚠️ `trivial`이 한 번은 맞고 한 번은 틀렸다** — "비교적 간단"(옳음) / *"Again, very trivy"* → **"아주 사소한 일"**(쉽다 → 중요하지 않다). 09-16 주의사항 ⑤의 **다섯 번째 확인**.
+- **✅ ko가 ASR 오류를 문맥으로 고쳐 읽은 드문 경우** — IBM 편 en-orig *"identifying or **mediating**"* → ko *"식별하거나 **해결하는**"*(remediating). 지금까지의 기록은 거의 전부 *ko가 ASR을 직역* 한 것이었다.
+- **⚠️ *Fable*(11:33)** — *"fable is back online"* 이 양 트랙 모두 불분명. **이 발표에서 모델 이름이 역할에 붙는 유일한 자리**인데 무엇인지 판독 불가. 시점 앵커로도 쓰지 않았다.
+- *executing* → **"작전을 수행"**, *individual agents* → **"개별 요원들"**(09-16 상담원 · 09-17 요원에 이어 **세 번 연속**), *customer service agent* → *"담당자"*(사람), *alpha* → **"알파 수익률"**, *advised type* → *"전략 유형"*(**조언** 소실 — 처방의 절반), *vulnerability surface grows* → *"취약점은 더욱 드러납니다"*, *more thorough* → *"더 완벽하게"*, *skills gap* → *"기술 격차"*(technology/skill 중의).
+- **화자 표기**: Anthropic 편은 자막이 두 사람을 자기소개하되 en-orig *Caitlyn/Caitlin*·ko *케이틀린* — **설명란의 *Katelyn Lesse* 로 채택**(09-01과 같은 처리). IBM 편은 **설명란에만**([[anna-gutowska]]) — IBM 편 세 번 연속, 채널 네 번 연속(09-15 Vincent Wendy · 09-16 Clyburn · 09-17 Crume · 이번).
+- **발언별 화자 특정**: Anthropic 편은 `>>` 표지가 두 개뿐이고, *"케이틀린이 언급했듯이"* 로 역산해 **벤치 설명은 Katelyn, 렌즈·비용·아키텍처는 Angela**로 읽히나 raw에서는 인용에 화자를 붙이지 않았다(09-05 Claude Code 팀 편과 같은 처리).
+- **행사·촬영 시점**: IBM 편 **미확정, 다섯 번째 연속**(개인 앵커조차 없다 — Crume 편의 *"40년 전"* 도 없다). Anthropic 편은 **행사명 AI Engineer 확정**(화자 발화), 회차·연도 미확정 — [[ai-engineer]] 페이지의 다른 소스들과 같은 회차라는 근거 없음. **업로드 날짜를 앵커로 쓰지 않았다.**
+- **무챕터 1편 / 8챕터 1편** — IBM 편은 정리자가 화자의 구획(정의 → 추세 → AI 자리 → 세 축 → 한계 → 처방)을 따라 소제목을 붙였고, Anthropic 편은 공식 챕터 8개를 따랐다.
+
+> ⚠️ **이해관계 표시.** Anthropic 편은 **자사 플랫폼([[managed-agents]])의 기능(회고·`outcomes`)을 정당화하는 자사 벤치**이고, 채점·회고의 수치는 자막에 없다. IBM 편은 **자사 제품이 없는 개념 해설**이지만 주제(메인프레임·COBOL 현대화)가 **다섯 편 중 IBM이 파는 것과 가장 가까운 자리**다 — 소스는 도구 이름을 하나도 부르지 않는다. 둘 다 소스는 연결하지 않고 위키는 표시만 한다.

@@ -6,9 +6,9 @@ tags: [anthropic, claude-platform, product, api]
 links:
   - https://x.com/angjiang
   - https://www.linkedin.com/in/angelajiang/
-sources: [tech-bridge-claude-platform-agent-era]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-18
 ---
 
 # Angela Jiang
@@ -29,3 +29,16 @@ updated: 2026-09-02
 ## References
 
 - [[tech-bridge-claude-platform-agent-era]] — 43:59, 2026-09-01
+
+## 두 번째 소스 — AI Engineer 발표 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
+
+[[katelyn-lesse|Katelyn Lesse]]와 함께 [[ai-engineer|AI Engineer]] 무대에서 발표했다. 자기소개 — *"저는 안젤라입니다. Anthropic에서 **플랫폼 제품을 총괄**하고 있습니다"*(00:07~00:09). 설명란은 *"플랫폼 프로덕트 리드"*.
+
+이 발표에서 그의 몫으로 읽히는 부분(⚠️ *"케이틀린이 언급했듯이"* · *"케이틀린과 제가"* 를 말하는 쪽으로 판독):
+
+- **렌즈 교체** — *"80%의 정확도 (…) 전문가가 직접 손익계산서를 다시 계산해야 한다 (…) 100% 정확하지 않으면 사실상 쓸모가 없다"*(06:51~07:14) → [[all-or-nothing-accuracy]]
+- **진짜 비용의 일반화와 처방** — *"이것이 바로 해당 에이전트가 (…) 유용하게 사용되기 위해 실제로 발생한 비용"*, 효율 → 조언 / 신뢰성 → 채점·회고 → [[true-cost-to-perfect-answer]]
+- **아키텍처** — 하네스 위 **메타 하네스**, 회고·`outcomes` 기본 제공, 프리미티브 조합, *"완전히 새로운 역할들을 만들어낼 수도"*, 장기 목표는 **동적 전략 구성** → [[strategy-primitives]]
+- 맺음 — *"토큰은 대체 가능하지 않다"*(10:12)
+
+09-01에서 [[token-roles]] 세 전략과 *"하네스는 루프, 그 위가 메타 하네스/전략"* 을 **말로** 제시했던 화자가, 이번엔 그것을 **제품 층과 수치**로 다시 말한다. ⚠️ 09-01의 *Sonnet + Opus가 Sonnet 단독보다 싸다* 는 주장은 이번 발표에서 **되풀이하지 않았다.**

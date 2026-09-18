@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · [[cursor|Cursor]] 필드 엔지�
 date-published: 2026-09-08
 ingested: 2026-09-09
 created: 2026-09-09
-updated: 2026-09-13
+updated: 2026-09-18
 ---
 
 # Tech Bridge — Cursor로 레거시 코드베이스 리팩터링
@@ -159,3 +159,18 @@ Cursor는 **자사가 쓰는 스킬 전체를 `superpowers` 플러그인으로 �
 - 원본: <https://www.youtube.com/watch?v=A7xJz1A74B8>
 - raw: `01.raw/articles/2026-09-08_Cursor 엔지니어의 AI를 이용한 레거시 코드 리팩터링 시연 영상.md`
 - 관련: [[cloud-agent-delegation]] · [[plan-to-ticket-pipeline]] · [[scheduled-agent-automations]] · [[model-mixing-economics]] · [[cursor]] · [[cursor-cloud]] · [[grok-4-6]] · [[grokbot]] · [[harness-engineering]] · [[agent-skills]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-ai-era-code-quality]]
+
+## 같은 주제의 세 번째 각도 — 정의와 구조 (2026-09-18 · [[tech-bridge-legacy-code-modernization-ai]])
+
+[[ibm|IBM]]의 [[anna-gutowska|Anna Gutowska]] 편이 이 소스가 **시연**한 것을 **제품 없이 일반 서술**한다.
+
+| 이 소스의 단계 | IBM 편의 서술 |
+|---|---|
+| ① `/canvas` 감사 | *"전체 레거시 코드베이스를 분석하여 모듈 기능·데이터 흐름·도메인 로직 위치를 요약 — 몇 달 → 몇 주"* |
+| ② plan mode | *"현대화 계획을 수립하고"* |
+| ③ cloud agent 위임 | *"실제로 코드를 번역하고, 테스트를 작성하고, 문서화 — 최소한의 사람 개입으로 순차적으로"* |
+| ④ automations 예방 | 세 축 중 **개발 프로세스**(자동 테스트·지속 배포) |
+
+IBM 편이 더하는 것은 이 소스에 없던 둘이다 — **왜 옮기는가**(아무도 이해 못 하는 핵심 인프라 · [[legacy-skills-gap|COBOL 세대의 은퇴]] · 보안 이자)와 **어디로 가는가**(아키텍처·기술·프로세스 세 축). 그리고 이 소스가 제기하지 않은 한계를 명시한다 — *"문법적으로는 올바르지만 동작상으로는 잘못된 번역"* → [[syntactically-correct-behaviorally-wrong]]. **이 소스의 WordPress 예제가 다루지 않은 것**(문서 없음·원저자 부재)이 IBM 편의 **정의 그 자체**다.
+
+→ [[legacy-code-modernization]] · [[risk-proportional-human-review]]. 세 소스(Cursor 09-09 · Lauren Tan 09-13 · IBM 09-18)는 서로를 언급하지 않는다.
