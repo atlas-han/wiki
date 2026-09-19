@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, intent, elicitation, state, information-gain, consumer]
 related: [multimodal-elicitation, adaptive-response-format, context-engineering, generator-evaluator-pattern, verifiable-goals, outcome-engineering, signal-layer, intent-alignment, no-one-shot-design, ai-slop]
 first-seen: tech-bridge-multimodal-commerce-agent
-sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-voice-agent-failure-modes]
 created: 2026-09-04
-updated: 2026-09-12
+updated: 2026-09-19
 ---
 
 # Fuzzy Intent Discovery
@@ -116,6 +116,25 @@ counterfactual sensitivity를 **양방향**으로 재는 것이 정교한 지점
 - [[tech-bridge-impeccable-design-steering]] — [[paul-bakaus]]의 네 질문: **감정적 영역은? 절대 이래선 안 되는 것은? 레퍼런스는? 대상은?** *"디자인 디렉터가 고개만 끄덕이고 걸어가 버리면 말이 안 된다."* 디자인 의뢰의 discovery 단계이고, 두 번째 질문은 **부정형 제약**(hard constraint의 배제형)이다. → [[no-one-shot-design]]
 
 둘 다 결론이 같다 — 원샷은 *"아무도 아무것도 결정하지 않은"* 산출물을 낳는다. 이 개념이 소비자 상거래에서 세운 *명세를 함께 만들어내는 것이 에이전트의 일* 이 디자인에도 그대로 걸린다.
+
+## 반대 각도 — 모양을 먼저 못 박는다 (2026-09-19)
+
+[[tech-bridge-voice-agent-failure-modes]]가 **정반대 전제**에서 출발한다. 이 페이지가 *의도는 흐릿하고 그것을 끌어내는 것이 일* 이라고 본다면, [[plivo|Plivo]]는 보이스 에이전트에서 **묻기 전에 받을 값의 모양을 먼저 정하라**고 한다.
+
+> **질문하기 전에 원하는 모양(shape)을 먼저 정하는 거죠?** 예를 들어, **열린 결말(open-ended)을 두는 대신, 제한적인(constrained) 틀을 둘 수 있을까요?** (18:34~18:40)
+
+→ [[typed-field-collection]] (주장된 효과: 데이터 수집 정확도 30% → 95%)
+
+**두 소스는 서로를 모르고, 둘 다 자기 도메인에서 옳을 수 있다:**
+
+| | **fuzzy-intent-discovery** | [[typed-field-collection]] |
+|---|---|---|
+| 전제 | 사용자도 자기가 뭘 원하는지 모른다 | **받을 값은 정해져 있다** |
+| 설계 | 끌어내고 좁혀 간다 | **먼저 못 박고 검증한다** |
+| 잘 맞는 자리 | 탐색적 커머스·추천 | 예약·주문·본인 확인 |
+| 제약 | — | **실시간**([[voice-latency-thinking-tradeoff]]) — 되물을 시간이 적다 |
+
+마지막 행이 갈림의 이유일 수 있다. 음성 통화에는 **탐색에 쓸 턴이 많지 않고**, 틀린 값이 통과하면 되돌리기 어렵다. ⚠️ 다만 Plivo 편은 **모양이 미리 정해지지 않는 대화**(열린 상담·불만 접수)를 어떻게 다룰지 **말하지 않는다** — 이 페이지가 다루는 자리가 그쪽에서는 비어 있다.
 
 ## References
 

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-09-05
-updated: 2026-09-13
+updated: 2026-09-19
 ---
 
 # Skill Self-Improvement
@@ -73,6 +73,21 @@ updated: 2026-09-13
 | Impeccable 명령 | 제작자 실험 → **스킬의 어휘** | **커뮤니티 반응** |
 
 이 페이지의 *승격은 사람이* 와 같은 원칙이되, 그 사람이 **제작자 한 명이 아니라 사용자들**이고 신호가 *실패 관찰* 이 아니라 *즐거움* 이다. ⚠️ 정착의 기준·기간은 없다.
+
+## 거울상 — 성공한 질의에서, 게이트 없이 (2026-09-19)
+
+[[tech-bridge-vercel-eve-filesystem-agent]]의 [[query-to-skill-distillation]]이 이 패턴의 **정확한 거울상**이다. [[vercel|Vercel]]은 하루 수천 건의 **실제 질의**를 주기적으로 모아 반복되는 형태를 스킬로 압축한다(현재 약 100개).
+
+| | **skill-self-improvement** (09-05) | [[query-to-skill-distillation]] (09-19) |
+|---|---|---|
+| 원천 | **실패 관찰** | **성공한 실제 질의** |
+| 방향 | 금지·대체 규칙을 **더한다** | 반복 형태를 **압축한다** |
+| 승격 게이트 | **사람의 검토** | **없음 — 주기적 잡이 자동 증류** |
+| 빈도 | 작업 중 상시 | 주기적 배치 |
+
+두 패턴을 나란히 놓으면 **스킬의 수명주기에 입력이 둘**이라는 것이 보인다 — *무엇이 잘 되는가*(수요)와 *무엇이 안 되는가*(실패). Vercel 편은 앞쪽만 자동화했다.
+
+> ⚠️ **이 페이지가 명시적으로 막으려 한 것이 그쪽에서는 열려 있다.** 여기서 *"하나의 잘못된 결과가 에이전트가 영원히 따르는 규칙으로 자동 설정되는 것을 방지"* 가 설계의 핵심이었는데, Vercel 편에는 그 게이트가 없고 **누가 증류된 스킬을 검토하는지 소스가 말하지 않는다.** 09-10 [[tech-bridge-agent-to-agent-as-search|Greze]]의 경고(*"한 번 오염되면 영원히 오염된다"*)가 그대로 적용되는 자리다.
 
 ## References
 

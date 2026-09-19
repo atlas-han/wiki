@@ -6,9 +6,9 @@ tags: [tool-design, mcp, agent-tooling, errors, read-write, api-design]
 aliases: [도구 품질 모범 사례, 결과 중심 도구, 조치 가능한 오류]
 related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-19
 ---
 
 # 에이전트용 도구 설계 모범 사례 다섯
@@ -64,6 +64,23 @@ REST의 자원 단위(GET /orders, DELETE /orders/1)가 아니라 **의도 단�
 - **측정치 없음** — 다섯 규칙 모두 *"신뢰성이 크게 올라간다"* 류의 서술이고 수치가 없다. Prerna의 eval bench가 그것을 재는 도구로 언급되지만 결과는 소스에 없다.
 - 규칙 1(결과 중심 = 굵은 도구)과 규칙 5(단순 입력)의 **긴장** — 결과 단위가 커질수록 입력이 복잡해지기 쉽다. 소스는 다루지 않는다.
 - 당사자 진술.
+
+## 파일 시스템 에이전트라는 반대 각도 (2026-09-19)
+
+[[tech-bridge-vercel-eve-filesystem-agent]]가 **정반대 방향의 처방**을 낸다 — 도구를 좁히지 말고 **모델이 이미 잘 훈련된 범용 도구**(list·read·bash·grep)를 주고 **바닥을 넓혀라.** → [[file-system-agent]]
+
+> **[Claude Code]에 매우 구체적인 도구 세트를 제공하지 않았습니다.** 마치 **자유롭게 탐색하고 새로운 행동(emergent behavior)을 발견하도록 내버려 둔 것**과 같았습니다. (08:11~08:28)
+
+**모순이 아니라 층이 다르다:**
+
+| | 이 페이지 ([[google-cloud\|Google Cloud]], 09-11) | [[file-system-agent]] ([[vercel\|Vercel]], 09-19) |
+|---|---|---|
+| 도구 | **좁히고 결과 중심으로** | **넓히고 범용으로** |
+| 앞에 있는 사람 | **프로덕션 최종 사용자** | **사내 신뢰 사용자** |
+| 시간대 | 런타임 ([[build-time-vs-runtime-tools]]) | 탐색·분석 |
+| 위험 | 유출·권한 오용 | ⚠️ **소스가 다루지 않음** |
+
+이 페이지가 세운 [[build-time-vs-runtime-tools]] 축이 정확히 적용된다 — *빌드타임 도구를 프로덕션에 두지 마라* 의 반대편에서 *탐색용 도구는 좁히지 마라* 가 나온 셈이다. **두 소스는 서로를 모른다.** ⚠️ Vercel 편은 보안·권한을 한 번도 다루지 않으므로, 이 페이지의 규칙이 그쪽에서 반박된 것이 아니라 **그쪽 범위 밖**이다.
 
 ## References
 

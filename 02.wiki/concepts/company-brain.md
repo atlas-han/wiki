@@ -6,9 +6,9 @@ tags: [company-brain, wiki, shared-context, access-control, knowledge-base, codi
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
 related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-19
 ---
 
 # 회사 두뇌
@@ -77,6 +77,25 @@ updated: 2026-09-10
 - 5,000페이지에서의 **검색·lint** — 언급 없음. (SRE 사례의 *"페이지 이름 접두사가 조회 문제를 일으킨다"* 가 유일한 운영 힌트다.)
 - **틀린 항목의 정정** — 사람이 승인한 사실이 나중에 틀리면? Greze 편의 Apex/Ivy가 그 실패 형태다.
 - 당사자 진술 — 발표자는 이것을 파는 회사의 창업자다.
+
+## 같은 방향, 다른 형식 — 에이전트가 grep하는 회사 지식 (2026-09-19)
+
+[[tech-bridge-vercel-eve-filesystem-agent]]가 이 페이지와 **서로를 모른 채 같은 결론**에 닿는다 — 조직에서 에이전트를 쓸모 있게 만드는 것은 모델이 아니라 **조직이 쌓은 맥락**이다. [[vercel|Vercel]]은 기성 수직 에이전트 스타트업들을 테스트한 뒤 이렇게 결론짓는다:
+
+> **우리 에이전트를 진정으로 돋보이게 하는 것은 매우 구체적인 회사 지식을 활용하는 것**이라는 사실을 알게 되었습니다. … **어떤 데이터를 언제 쿼리해야 하는지, 어떤 요소들이 서로 어떻게 연결되는지** … (15:02~15:37)
+
+→ [[company-knowledge-moat]]
+
+**형식이 다르다:**
+
+| | **company-brain** ([[promptql\|PromptQL]], 09-10) | [[company-knowledge-moat]] ([[vercel\|Vercel]], 09-19) |
+|---|---|---|
+| 지식의 형태 | **사람이 읽는 위키** (5,000페이지) | **에이전트가 grep하는 시맨틱 레이어** |
+| 갱신 | 에이전트 제안 → **사람 승인**([[named-human-accountability]]) | 질의 증류([[query-to-skill-distillation]]) |
+| 접근 제어 | 파일별 스코프 | ⚠️ **없음 — 소스가 다루지 않는다** |
+| 목적 | 조직의 기억 | 에이전트의 성능 |
+
+세 번째 행이 이 대조의 핵심이다. 이 페이지가 개인 위키에서 조직 위키로 갈 때 더해지는 것으로 꼽은 두 가지(*누가 볼 수 있는가* · *누가 책임지는가*)가 **Vercel 편에는 둘 다 없다** — 시맨틱 레이어 전체를 샌드박스에 붓고 [[no-silent-write]]에 해당하는 게이트도 두지 않는다.
 
 ## References
 

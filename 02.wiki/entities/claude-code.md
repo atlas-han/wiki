@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-09-19
 ---
 
 # Claude Code
@@ -68,6 +68,24 @@ Claude Code 팀 엔지니어 3인이 자기 도구를 어떻게 쓰는지 증언
 
 - [[impeccable|Impeccable]](디자인 스킬)이 *"모든 하네스에서 동작"* 하는 목록의 첫 자리 — Claude Code, GitHub Copilot, [[cursor]], [[codex]]. ASR은 *"cloud code"* 였으나 하네스 목록 문맥이라 **Claude Code로 확정**(09-11 Google Cloud 편의 *"Cloud Code"* 판정 불가와 다른 처리).
 - [[paul-bakaus]]가 지금의 [[ai-slop|슬롭]]을 **"Claude 베이지"**(Instrument Serif·이탤릭)라 부른다 — *"꼭 나쁜 디자인은 아니다, 그냥 전부 그렇게 생겼을 뿐."* 그리고 섹션 번호를 *"GPT가 아주 좋아하고 Claude도 좋아하는"* 흔적으로 든다. ⚠️ 이 관찰의 대상은 *"Claw Design"*(Claude Design 추정)의 기본 출력이며 Claude Code 자체의 평가는 아니다.
+
+## 외부 증언 — 파일 시스템 에이전트의 원형으로 (2026-09-19 · [[tech-bridge-vercel-eve-filesystem-agent]])
+
+[[vercel|Vercel]]의 [[andrew-qu|Andrew Qu]]가 **자사 에이전트를 세 번 실패한 뒤** Claude Code를 보고 무엇을 바꿨는지 공개했다. **이 위키가 받은 Claude Code에 대한 가장 구체적인 제3자 증언**이다 — 그동안의 서술은 대부분 [[anthropic|Anthropic]] 자신의 것이었다.
+
+> 우리는 옆에서 **"와, [Claude Code]와 [[claude-opus-4-5|Opus 4.5]]는 우리가 이전에 가지고 있던 것과 비교하면 거의 인공 일반 지능(AGI)이나 다름없네."** 라고 생각했습니다. 우리가 직접 개발한 에이전트와는 달리, **이 에이전트는 거의 모든 질문에 막힘없이 답해줬습니다.** (07:38~07:53)
+
+그가 **무엇이 달랐는지** 로 지목한 것:
+
+> **핵심은 바로 파일 시스템이었다** … **최소한의 도구 세트, 즉 파일 목록 보기, 파일 읽기, bash 실행 정도만** … 하지만 가장 중요한 것은 **에이전트가 잘 훈련된 도구를 활용할 수 있었고 필요한 곳에 스스로 탐색하고 작업을 작성할 수 있었다**는 점입니다. **[Claude Code]에 매우 구체적인 도구 세트를 제공하지 않았습니다.** 마치 **자유롭게 탐색하고 새로운 행동(emergent behavior)을 발견하도록 내버려 둔 것**과 같았습니다. (07:53~08:28)
+
+→ [[file-system-agent]]
+
+그리고 **도약을 두 단계로 센다** — 단일 에이전트 → **[[claude-agent-sdk|Claude Code SDK]]** → 자기 용례에 맞춰 바닥을 다시 깐 파일 시스템 에이전트(09:04~09:09). 즉 SDK를 그대로 쓰는 것과 **원리를 가져와 자기 바닥을 까는 것**을 구분한다. 결과는 *"eval 점수 두 배"*(⚠️ 실체 없음).
+
+Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베타 고객 Aura가 *"기성품 Claude 코드를 쓰는 것과 달리"* [[eve-framework|Eve]]로 처음부터 구축했다는 대목(14:15~14:26, ⚠️ 수치 없음).
+
+⚠️ en-orig가 *Claude Code* 를 **"Cod code"** 로 반복 오인식했고 ko가 일부 자리에서 *Claude* 를 떨어뜨렸다 — raw 헤더 참조.
 
 ## References
 

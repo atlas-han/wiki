@@ -6,9 +6,9 @@ tags: [parameters, identity, pii, jwt, oidc, zero-trust, security, tool-design]
 aliases: [bounded parameters, authenticated parameters, 바운드 파라미터, 인증된 파라미터]
 related: [agent-identity-separation, secure-tool-evolution, credential-injection-outside-sandbox, confused-deputy-attack, lethal-trifecta, agent-governance-layers, multiplayer-agent-context]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-voice-agent-failure-modes]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-19
 ---
 
 # 바운드 파라미터와 인증 파라미터
@@ -63,6 +63,20 @@ updated: 2026-09-11
 - **위임** — 관리자가 다른 사용자를 대신해 조회하는 경우는 바인딩으로 표현되지 않는다.
 - **데모 미실행** — *"속지 않는다"* 는 예고이지 시연 결과가 아니다.
 - 당사자 진술 — 두 방식 모두 자사 제품 기능명이다.
+
+## 같은 기법, 다른 이유 — 정확도를 위한 묶기 (2026-09-19)
+
+[[tech-bridge-voice-agent-failure-modes]]가 **보안이 아니라 정확도를 위해** 같은 결론에 닿는다. 보이스 에이전트에서 정보를 받을 때 전사를 해석하게 하지 말고 **받을 값의 타입·제약·허용값을 먼저 못 박으라**는 처방이다. → [[typed-field-collection]]
+
+> **질문하기 전에 원하는 모양(shape)을 먼저 정하는 거죠?** … **그렇다면 전화번호는 '전화번호 유형 필드'일 수 있나요? 그렇게 하는 순간, 필요한 자릿수가 몇 개인지 바로 알 수 있죠.** (18:34~18:54)
+
+| | 이 페이지 ([[google-cloud\|Google Cloud]], 09-11) | [[typed-field-collection]] ([[plivo\|Plivo]], 09-19) |
+|---|---|---|
+| 왜 묶는가 | **보안** — 에이전트가 신원·권한을 지어내지 못하게 | **정확도** — 전사 오류를 즉시 잡으려고 |
+| 막는 것 | [[confused-deputy-attack\|혼동된 대리인]]·유출 | 잘못된 값의 통과 |
+| 공통 | **에이전트에게 자유 형식을 주지 않는다** | 〃 |
+
+**두 소스는 서로를 모른다.** 같은 기법이 두 개의 독립적인 이유로 도출됐다는 것이 이 항목의 값이고, 이 위키의 [[verifiable-goals]]가 출력 쪽에서 말한 것(*검증 가능한 형태로 두라*)이 **입력 쪽에서 재현**된 것이기도 하다.
 
 ## References
 

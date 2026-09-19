@@ -6,9 +6,9 @@ tags: [agents, workflow, loop, tool-use, definition]
 aliases: [워크플로와 에이전트의 구분, 에이전트 루프, 동적 결정]
 related: [dynamic-workflows, agent-harness-design, three-tier-ai-skill-stack, ai-engineer-vs-ml-researcher, agent-distributed-systems, ralph-wiggum-method]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-19
 ---
 
 # 워크플로 vs 에이전트
@@ -40,6 +40,20 @@ updated: 2026-09-16
 - **"안정적으로, 대규모로"의 기준**이 없다 — 무엇이 불안정한 루프인지(무한 루프·도구 오류·컨텍스트 소진)를 소스가 열거하지 않는다.
 - 이 위키의 [[verification-cost-asymmetry]]가 말하는 *루프의 종료 조건(검증)* 이 이 정의에는 빠져 있다 — *결과를 관찰* 까지만 있다.
 - 입문용 정의라 **하이브리드**(워크플로 안의 에이전트, 에이전트가 만드는 워크플로)를 다루지 않는다.
+
+## 축을 실제로 건너간 기록 (2026-09-19)
+
+[[tech-bridge-vercel-eve-filesystem-agent]]가 이 정의의 **양쪽을 차례로 만들어 본 팀의 기록**을 준다. [[vercel|Vercel]]의 D0는 **역할별 체인**(쿼리 → 계획 → 실행 → 보고, 각자 전용 프롬프트와 그 기능만의 도구)에서 **자기 상태를 관리하는 단일 에이전트**로 옮겼다. → [[agent-architecture-progression]]
+
+**건너간 이유가 조율이 아니라 컨텍스트 손실이다:**
+
+> 이전 모델에서는 **다음 에이전트가 이전 에이전트가 수행한 작업의 요약과 간단한 내용만 받는다**는 것을 알 수 있었습니다. (06:02~06:18)
+
+> 가장 큰 장점은 **실행이나 결합 중에 오류가 발생하더라도 되돌아가서 더 자세히 살펴보거나 더 많은 정보를 읽어 무엇이 잘못되었는지 파악할 수 있다**는 것입니다. (06:36~06:44)
+
+즉 **미리 정의된 경로의 대가는 단계 경계에서 잃는 정보**다. 요약으로 넘기면 뒤 단계가 *왜 그렇게 판단했는지* 를 잃고, 그래서 **오류를 되짚을 수 없다.** 이 위키의 [[dynamic-workflows]]가 기록한 *fan-out의 병목은 reduce* 와 같은 진단이 **직렬 체인에서** 나온 셈이다.
+
+⚠️ **생존 편향에 주의** — 이것은 도착한 팀의 회고이고, 소스는 체인이 **원리상** 안 되는지 **그들의 체인이** 안 됐는지 가르지 않는다.
 
 ## References
 

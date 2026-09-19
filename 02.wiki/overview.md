@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-09-18
+updated: 2026-09-19
 sources: []
 ---
 
@@ -32,6 +32,10 @@ sources: []
 2026-09-11에 이 위키의 보안 축이 **데이터베이스**에 닿았다 — [[google-cloud|Google Cloud]]의 [[tech-bridge-build-time-vs-runtime-tools]]. 지금까지 [[prompt-injection]]은 *콘텐츠가 어디로 들어오는가*(벡터 넷)를 모았는데, 이제 *무엇이 갖춰지면 유출이 되는가*([[lethal-trifecta]] — 비공개 데이터·신뢰 불가 콘텐츠·외부 노출 능력)와 *누가 누구의 권한을 빌리는가*([[confused-deputy-attack]])가 붙었다. 그리고 [[agent-governance-layers]]의 벽은 네 자리(Composio의 접근+정책 / PromptQL의 프록시 / Greze의 출구 / **Google Cloud의 도구 정의 YAML**)를 갖게 됐고, 그중 셋([[anthropic-managed-agents]]·[[promptql]]·Google Cloud)이 서로를 모른 채 **에이전트 손에 신원·자격증명을 두지 않는다**는 같은 원칙에 닿았다([[bound-parameters]]·[[credential-injection-outside-sandbox]]). 도구를 **누가 어느 단계에서 쓰는가**로 가르는 [[build-time-vs-runtime-tools]]는 이 위키가 도구를 *능력* 으로만 봐 온 것에 다른 축을 준다 — 그리고 [[model-context-protocol|MCP]] 서버가 연결 통로가 아니라 가드레일의 자리로 나온 첫 소스다([[mcp-toolbox-for-databases]]).
 
 2026-09-12에 이 위키에 **디자인과 취향의 축**이 처음 섰다 — 같은 날 올라온 [[tech-bridge-taste-labs-measuring-slop|Taste Labs]]와 [[tech-bridge-impeccable-design-steering|Impeccable]]. 두 소스가 처음으로 [[ai-slop|슬롭]]에 정의를 줬다(**반복·적합성 부족·낮은 의도**, 그리고 *"아무도 아무것도 결정하지 않은"*) — 그리고 슬롭은 *품질이 낮은 것* 이 아니라 **의도가 없는 것**이며, 보라색 그라데이션에서 *Claude 베이지* 로 옮겨 가는 **움직이는 표적**이라서 [[generator-evaluator-pattern]]의 고정된 슬롭 페널티는 낡는다. 취향 논쟁은 [[dhh]]·[[lena-hall]] 둘에서 [[taste-vs-judgment]]의 **네 입장**이 됐고, 넷은 취향의 학습 가능성에서 갈리되(Thais: 분해 가능한 조각은 훈련 / Paul: 배우면 희소성이 사라져 취향이 아니다) **추론 시점에 사람의 결정이 남는다**는 데서 수렴한다. [[signal-layer]]의 채점기 경계선은 [[slop-probes]](LLM이 아닌 소형 분류기 앙상블)로 세 번째로 안쪽으로 밀렸고 — 남는 것은 *분해되지 않는 미학* 이다 — 그 경계선이 **위임 고도를 정한다**는 정리가 붙었다: 코드는 [[goal-level-delegation|목표 수준]]으로 올라갔지만 디자인은 [[steering-altitude|형용사의 고도]]에 사람이 남고, 그래서 [[no-one-shot-design|auto는 없다]]. 이 위키가 [[privacy-auto-mode]]까지 *auto의 확장* 으로만 봐 온 흐름에 **첫 반대 방향의 제품 결정**이다. ⚠️ 두 소스 다 당사자이고 수치가 없다.
+
+2026-09-19에 이 위키에 **실시간이라는 제약**이 처음 들어왔고, 그것이 위키가 깔고 있던 전제 하나를 깼다 — [[plivo|Plivo]]의 [[tech-bridge-voice-agent-failure-modes]]. 지금까지 이 위키의 에이전트는 전부 텍스트였고, 지연은 비용의 대리 변수였다([[model-mixing-economics]]). 음성이 들어오면서 지연이 **UX의 절벽**이 된다([[time-to-first-audio]] — 1.2초를 넘으면 사람이 전화를 끊고, 평균이 아니라 **꼬리**가 제품을 정한다). 그리고 그 절벽이 위로 올라가 **thinking을 금지한다**([[voice-latency-thinking-tradeoff]]) — [[fixed-budget-alpha]]·[[true-cost-to-perfect-answer]]·[[token-roles]]·[[generator-evaluator-pattern]]이 전부 *테스트 타임 컴퓨트를 더 쓸 수 있다* 를 전제했는데, **이 도메인은 그 레버 자체를 금지한다.** 그래서 처방이 모델 바깥으로 나간다 — [[voice-agent-pipeline]]의 다섯 실패 모드 중 넷이 LLM 밖이고([[transcription-brittleness]]·[[typed-field-collection]]·[[field-level-unit-test-evals]]·[[tts-normalization-layer]]), **모델을 더 생각하게 만들 수 없으니 주변을 고친다.** 부수적으로 이 위키의 익숙한 논리들이 다른 층에서 독립적으로 재발견됐다 — [[context-engineering]]이 STT 키워드 부스팅으로([[dynamic-keyword-boosting]]), [[bound-parameters]]가 **보안이 아니라 정확도**의 이유로([[typed-field-collection]]), [[skill-evals]]가 *어느 단위로 재는가* 라는 해상도의 축으로. 그리고 토큰이 예산이 아니라 **시간의 단위**가 되는 자리가 생겼다([[token-fertility]]).
+
+같은 날 [[vercel|Vercel]]의 [[tech-bridge-vercel-eve-filesystem-agent]]가 반대 층에서 들어왔다 — **[[file-system-agent]]** 가 이 위키에 서는데, 세운 것이 만든 쪽([[anthropic|Anthropic]])이 아니라 **써 보고 자기 것을 세 번 버린 제3자**다. [[agent-architecture-progression]]은 이 위키가 [[workflow-vs-agent]] 축을 **실제로 건너간 첫 기록**이고(건너간 이유가 조율이 아니라 **컨텍스트 손실**), [[query-to-skill-distillation]]은 [[skill-self-improvement]]의 **거울상**이다(실패가 아니라 **성공한 질의**에서, 그리고 ⚠️ **사람 게이트 없이**). [[company-knowledge-moat]]는 [[company-brain]]과 **서로를 모른 채 같은 결론**에 닿되 형식이 다르다 — 사람이 읽는 위키 대 에이전트가 grep하는 시맨틱 레이어, 그리고 후자에는 **접근 제어도 승인 게이트도 없다.** ⚠️ 이 소스는 보안·권한을 한 번도 다루지 않는다 — 09-10·09-11이 세운 논점([[prompt-injection]]·[[lethal-trifecta]]·[[agent-identity-separation]])이 통째로 비어 있다. 두 소스를 겹치면 **컨텍스트 조달의 세 태도**가 보인다: 고른다([[context-engineering]]) / 쪼갠다([[typed-field-collection]]) / **펼쳐 놓고 찾게 한다**([[file-system-agent]]).
 
 ## 핵심 질문 (열린 채로 두기)
 

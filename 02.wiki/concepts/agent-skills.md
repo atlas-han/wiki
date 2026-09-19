@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-08-31
-updated: 2026-09-15
+updated: 2026-09-19
 ---
 
 # Agent Skills
@@ -228,6 +228,18 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 - **훅**은 하네스가 실행하는 **코드**다 — 화자의 표현으로 *"에이전트가 워크플로를 따르도록 **강제**한다"*.
 
 즉 **스킬은 능력을 주고 훅은 선택지를 없앤다.** [[hard-vs-soft-enforcement]]가 정책 층에서 세운 구분이 하네스 층에서 반복된다 → [[hook-enforced-workflow]].
+
+## 스킬의 새 원천 — 실제 질의의 증류 (2026-09-19)
+
+[[tech-bridge-vercel-eve-filesystem-agent]]가 스킬이 **어디서 오는가**에 갈래를 하나 더한다. 지금까지 이 위키의 스킬은 사람이 쓰거나([[tech-bridge-six-agent-skills]]) 실패 관찰로 고쳐졌는데([[skill-self-improvement]]), [[vercel|Vercel]]은 **하루 수천 건의 실제 질의를 주기적으로 압축**한다.
+
+> **가장 최근의 쿼리를 가져와서** 처리하는 **반복 작업**을 만들었습니다. 이러한 기능들을 **하나의 스킬로 압축(distill)** 하려고 합니다. 현재 저희는 … **약 100개의 스킬**을 보유하고 있습니다. (10:19~10:30)
+
+논거는 **매 실행이 빈손에서 시작한다**는 것이다 — 스킬은 [[file-system-agent]]가 매번 다시 하는 탐색의 **결과물을 고정**한다. → [[query-to-skill-distillation]]
+
+그리고 스킬의 **유통**에도 한 줄이 붙는다: Vercel은 `skills.sh`를 만들어 *"에이전트 스킬을 찾고 직접 실행하는 가장 인기 있는 방법"* 이라고 주장한다(⚠️ 근거 없음). [[eve-framework|Eve]]에서는 스킬이 **`skills/` 폴더라는 컨벤션**이 된다 → [[framework-defined-agent-infrastructure]].
+
+⚠️ **승격 게이트가 없다** — 증류를 누가 검토하는지, 100개가 서로 충돌하지 않는지, 낡은 스킬이 어떻게 폐기되는지 소스가 말하지 않는다.
 
 ## References
 

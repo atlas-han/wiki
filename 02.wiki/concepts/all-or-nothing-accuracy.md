@@ -6,9 +6,9 @@ tags: [evaluation, accuracy, pass-fail, expert-work, finance, verification, toke
 aliases: [80%는 쓸모없다, 완벽 합격 채점, 합격률 렌즈]
 related: [verification-cost-asymmetry, true-cost-to-perfect-answer, fixed-budget-alpha, task-entropy-matrix, trusted-throughput, verification-bottleneck, generator-evaluator-pattern, token-roles]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-voice-agent-failure-modes]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 # 100%가 아니면 0
@@ -49,6 +49,18 @@ updated: 2026-09-18
 ## 표시해 둔 것
 
 > ⚠️ **누가 100%를 판정하는가**(사람? 채점 모델? 정답 대조?)가 없다. **"최대 75%"가 어느 전략인지** 없다. 그리고 이 렌즈는 **정답이 하나로 확정되는 작업**에만 적용된다 — 소스는 그 조건을 명시하지 않는다.
+
+## 왜 80%인지 알려면 해상도가 필요하다 (2026-09-19)
+
+[[tech-bridge-voice-agent-failure-modes]]가 이 페이지의 결론에 **진단 가능성**을 더한다. *100%가 아니면 0* 이라는 기준은 **무엇이 부족한지 알려주지 않는다** — 통화 한 건이 실패했을 때 어느 필드가 깨졌는지 E2E 테스트는 말해 주지 않는다.
+
+> **단지 하나의 필드 수집에 문제가 있다는 것을 알아내기 위해 수백 건의 엔드 투 엔드 에이전트 테스트 케이스를 실행하지는 않잖아요. 필드 수준 평가와 유닛 테스트 수준에서 평가를 진행합니다.** (20:52~21:12)
+
+→ [[field-level-unit-test-evals]]
+
+두 페이지가 같은 문제의 앞뒤다 — **합격 기준은 엄격하게**(이 페이지), **측정 단위는 잘게**(저 페이지). 그리고 [[plivo|Plivo]] 편에서 그 잘게 쪼갠 단위를 만들어 주는 것이 [[typed-field-collection|타입 지정 필드]]다: 필드에 타입이 있으면 **그것이 곧 테스트 단위**가 된다.
+
+⚠️ 필드가 전부 통과해도 **대화 흐름과 필드 간 상호작용**은 잡히지 않는다. 소스는 이 한계를 다루지 않는다.
 
 ## References
 

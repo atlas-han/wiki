@@ -6,9 +6,9 @@ tags: [agent, knowledge, routing, decision, skills, mcp, rag, memory]
 aliases: [에이전트 지식 조달, 지식 라우팅]
 related: [agent-skills, model-context-protocol, retrieval-augmented-generation, agent-memory, context-engineering, company-brain, no-silent-write]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-09-08
-updated: 2026-09-10
+updated: 2026-09-19
 ---
 
 # Agent Knowledge Sourcing
@@ -90,6 +90,22 @@ updated: 2026-09-10
 즉 IBM의 표가 *지식이 어디서 왔는가* 로, Composio 편이 *누구의 범위로 집계하는가* 로 갈랐다면, 이 소스는 **누가 그것을 남에게 쓸 동기가 있는가**로 가른다. 셋째 축이다. 그리고 결론이 흥미롭다 — 조직에서 실제로 흐르는 것은 스킬도 메모리도 아니고 **사람이 승인한 위키 항목**, 즉 이 표의 첫 줄(사람이 적어 놓은 것)이다. 다만 *적는* 주체가 에이전트이고 사람은 *승인* 만 한다([[no-silent-write]]). IBM의 RAG 정의(*사람이 글로 적어 놓은*)가 여기서 **에이전트가 적고 사람이 서명한 것**으로 넓어진다.
 
 > ⚠️ 같은 날 [[tech-bridge-agent-to-agent-as-search|Greze 편]]은 공유 스킬을 *"누구나 더 좋게 만든다"* 고 긍정적으로 말한다 → [[agent-skills]]의 충돌 표시 참조.
+
+## 다섯 번째 갈래 — 파일 시스템 탐색 (2026-09-19)
+
+[[tech-bridge-vercel-eve-filesystem-agent]]가 표에 한 줄을 더한다. [[vercel|Vercel]]은 회사의 **시맨틱 레이어 전체를 샌드박스 파일 시스템에 부어 놓고** 에이전트가 grep·bash로 **필요할 때 스스로 찾게** 한다. → [[file-system-agent]]
+
+| 갈래 | 지식이 어디 있나 | 누가 고르나 |
+|---|---|---|
+| RAG | 인덱스 | 검색기 |
+| 스킬 | 스킬 파일 | 하네스(관련성 판정) |
+| 메모리 | 누적 저장소 | 에이전트/시스템 |
+| MCP·도구 | 원천 시스템 | 도구 정의 |
+| **파일 시스템 탐색** | **평범한 파일로 펼쳐 놓은 원본** | **에이전트가 실행 중에** |
+
+앞 네 갈래는 전부 **누군가 미리 고른다**는 공통점이 있다. 다섯 번째는 그 선택을 **실행 시점으로 미룬다** — 그래서 *예상하지 못한 질문* 에 강하고([[agent-architecture-progression]]의 v3가 막힌 자리), 대신 **매 실행이 빈손에서 시작**한다. 그 대가를 [[query-to-skill-distillation]]이 갚는다: 반복되는 탐색 결과를 스킬로 굳혀 다시 두 번째 갈래로 보낸다.
+
+즉 **다섯 번째와 두 번째가 루프를 이룬다** — 탐색이 스킬을 낳고, 스킬이 다음 탐색의 출발점을 올린다. ⚠️ 이 위키의 다른 소스들과 달리 Vercel 편은 **승격 게이트가 없다**(사람 검토 없음).
 
 ## References
 

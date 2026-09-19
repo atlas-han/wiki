@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes]
 created: 2026-09-09
-updated: 2026-09-13
+updated: 2026-09-19
 ---
 
 # 모델 혼합의 경제학
@@ -63,6 +63,24 @@ updated: 2026-09-13
 → [[shortest-path-architecture]] · [[dune-architecture]]
 
 그리고 [[grok-4-6|Grok 4.6]]에 대한 방향 진술이 반복된다 — *"가장 큰 모델을 만들고 싶은 게 아닙니다. 돌리는 데 극도로 비싸니까요. 거대할 필요 없이 아주 똑똑하면서 추론 비용이 크지 않은 스위트 스팟."* ⚠️ 가격 진술(*"토큰당 비용이 4.5와 같다"*)에는 **화자 본인의 유보**가 붙어 있다.
+
+## 세 번째 분할 축 — 대화 vs 도구 호출, 그리고 기준이 지연일 때 (2026-09-19)
+
+[[tech-bridge-voice-agent-failure-modes]]가 모델을 가르는 **세 번째 축**을 준다. 지금까지는 *계획/실행*(Cursor)과 *스웜 내 역할*(Grok)이었는데, 보이스 에이전트에서는 **대화 / 도구 호출**로 가른다.
+
+> 사람들은 **여러 모델을 혼합해서 에이전트를 구축**합니다. **대화 부분에서는 훨씬 더 작은 규모의 대화형 모델**을 사용하고, 어쩌면 **[3B] 모델**도 사용하는 반면, **도구 호출 부분에서는 훨씬 더 큰 규모의 모델을 사용하여 도구 호출 성공률을 향상**시키는 것입니다. (12:53~13:18)
+
+**그런데 이 도메인에서는 가르는 기준이 예산이 아니라 지연이다.** 대화는 사용자가 기다리는 앞단이라 작아야 하고, 도구 호출은 뒤에서 도는 부분이라 클 수 있다. → [[time-to-first-audio]]
+
+그리고 이 페이지가 전제해 온 *더 비싼 모델을 어디에 쓸까* 라는 선택 자체가 **좁아진다**:
+
+> **음성 [에이전트]의 아이러니는 … 사고(thinking) 기능을 꺼야 한다는 점이죠. 그러니까 지난 1년 동안 LLM [계층]에서 이루어진 모든 발전은 이제 여기에는 전혀 적용되지 않는다는 거죠?** (06:53~07:11)
+
+→ [[voice-latency-thinking-tradeoff]]
+
+**조달의 벽도 다르다.** 프런티어 API의 문제는 가격이 아니라 **꼬리 지연**(P50 450~500ms인데 P90·P95가 1.2~1.3초)이고, [[cerebras]]·[[groq]]의 전용 용량은 *"12개월 선예약"* 이라 **모델 수명보다 계약이 길어진다.** 그래서 이 소스의 결론은 **오픈소스 소형 모델 자체 호스팅**([[qwen3-5|Qwen 3.5]]·[[gemma-4|Gemma 4]])이고, 선택 기준에 **[[token-fertility|토크나이저]]** 가 들어온다 — 다국어에서는 단어당 토큰 수가 곧 지연이다.
+
+⚠️ **비용이 한 번도 계산되지 않는다.** *비용·지능·지연* 삼각형을 내세우면서 자체 GPU 호스팅이 프런티어 API 대비 얼마인지 수치가 없다 — 이 페이지의 주제인 축이 정작 비어 있다.
 
 ## References
 

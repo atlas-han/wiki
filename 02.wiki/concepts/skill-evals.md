@@ -6,9 +6,9 @@ tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
 related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-19
 ---
 
 # 스킬 eval
@@ -51,6 +51,26 @@ eval이 점수를 내놓기 때문에 루프를 돌릴 수 있다. 이는 [[veri
 > ⚠️ **작성자=검증자 문제가 닫히지 않는다.** 판정 에이전트는 다른 모델이지만 **루브릭을 만드는 것은 여전히 코디네이터 에이전트**다. 2026-09-09 Cursor 편에서 처음 표시한 빈자리의 **세 번째 반복**이다.
 >
 > ⚠️ **10점 만점이 무엇을 뜻하는지**(루브릭의 항목·가중치)가 소스에 없다.
+
+## 해상도의 축 — 어느 단위로 재는가 (2026-09-19)
+
+[[tech-bridge-voice-agent-failure-modes]]가 eval에 **세 번째 질문**을 붙인다.
+
+| 질문 | 다루는 페이지 |
+|---|---|
+| **무엇을 재는가** (합격 기준) | [[all-or-nothing-accuracy]] |
+| **어떻게 세는가** (진짜 비용) | [[true-cost-to-perfect-answer]] |
+| **어느 단위로 재는가** | **[[field-level-unit-test-evals]]** ← 새로 |
+
+> **여러분의 모든 평가(eval) 도구는 이러한 필드들을 단위 테스트처럼 취급해야 합니다.** … **단지 하나의 필드 수집에 문제가 있다는 것을 알아내기 위해 수백 건의 엔드 투 엔드 에이전트 테스트 케이스를 실행하지는 않잖아요.** (20:32~21:12)
+
+E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[all-or-nothing-accuracy]]가 *80%는 쓸모없다* 고 했는데, **80%가 왜 80%인지** 를 알려면 이 해상도가 필요하다.
+
+그리고 처방이 프롬프트도 파인튜닝도 아니다:
+
+> 이런 사고방식이 **모든 것을 더 체계적으로 만들어준다**고 생각해요. **프롬프트를 잔뜩 넣고 매번 몇 글자씩 바꿔가면서 … LLM이 마법처럼 … 따르기 시작할 거라고 기대하는 대신에요.** (21:12~21:30)
+
+**같은 날 ingest한 [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]이 eval의 다른 실패를 보여준다** — 점수가 아니라 **분포**다. eval 30%를 통과하던 에이전트가 첫 배포에서 *"끔찍하다"* 는 반응을 받았고, 이유는 *예상치 못한 질문* 이었다. 두 소스를 겹치면: **eval은 어느 단위로 재는가(해상도)와 무엇을 재는가(분포) 양쪽에서 실패할 수 있다.** 서로를 모르는 두 소스다.
 
 ## References
 

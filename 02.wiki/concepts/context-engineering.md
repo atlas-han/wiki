@@ -5,9 +5,9 @@ category: technique
 tags: [llm, context-window, agent, prompting]
 related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent]
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-09-19
 ---
 
 # Context Engineering
@@ -116,6 +116,27 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 이 페이지는 *무엇을 어떻게 채우는가* 를 다뤄 왔다. [[jean-denis-greze]]는 정의를 한 문장으로 압축한 뒤 — *"도구 호출 직전에 컨텍스트 창이 올바른 정보를 갖고 있게 하는 것. 여기에는 사람이 없다. 중요한 그 한 번의 LLM 호출이 올바른 컨텍스트를 갖는 것뿐."* — **채울 수 없는 것이 왜 있는가**를 문제로 세운다: *"무한한 컨텍스트 창이 있더라도, 프라이버시와 보안 때문에"* 세상의 모든 컨텍스트를 줄 수 없다. 위 [[tech-bridge-minimax-m3-long-context|늘리는 쪽의 처방]]이 닿지 않는 상한이다. → [[agent-collaboration-as-search]]
 
 같은 날 [[tech-bridge-company-brain-security]]는 그 상한 아래에서의 조직 컨텍스트 형태를 준다 — **마크다운 파일 + 파일별 스코프**, 에이전트는 사용자 클레임으로 읽는다. 위 [[tech-bridge-jensen-huang-g20-agi|온보딩 비유]]가 *조직 맥락을 에이전트에게 준다* 고 했다면, 이것은 *누구에게 어느 부분을 주는가* 다. → [[company-brain]]
+
+## LLM 바깥에서 재현되다 — STT의 키워드 부스팅 (2026-09-19)
+
+[[tech-bridge-voice-agent-failure-modes]]에서 이 페이지의 논리가 **다른 종류의 모델에서 독립적으로 재발견**된다. 전사(STT) 엔진에도 컨텍스트가 있고, 다 밀어 넣으면 성능이 떨어진다.
+
+> **통화가 진행되는 동안 [전체 상태에] 키워드를 계속 유지하지 말라는 뜻입니다. 정확도를 높이려면 해당 답변이 필요하다고 생각될 때 동적으로 추가하기만 하면 됩니다.** … 왜냐하면 **전사 엔진의 컨텍스트에 키워드를 너무 많이 넣으면 엔진이 다시 [환각]을 일으키기 시작하거든요.** (16:04~16:41)
+
+| | LLM 컨텍스트 | **STT 키워드 부스팅** |
+|---|---|---|
+| 다 넣으면 | 성능 저하·[[context-anxiety\|불안]] | **환각** |
+| 해법 | 지금 필요한 것만 | **통화 상태별로** |
+
+→ [[dynamic-keyword-boosting]]. 여기서는 *지금 하는 일* 이 명확하다 — 에이전트가 방금 전화번호를 물었으면 숫자를, 이름을 물었으면 명부를 부스팅한다. [[push-vs-pull-context-retrieval]]의 축이 **상태 기계가 push하는 형태**로 나타난다.
+
+같은 소스가 **반대 방향의 처방**도 낸다. 프롬프트를 조정하는 대신 **작업을 쪼개라**는 것이다:
+
+> **프롬프트를 잔뜩 넣고 매번 몇 글자씩 바꿔가면서 … LLM이 마법처럼 … 따르기 시작할 거라고 기대하는 대신에요.** … **그 비결은 기본적으로 에이전트가 특정 시점에 수행하는 작업의 맥락을 에이전트가 겪고 있는 구체적인 상태로 나누는 데 있습니다.** (21:12~21:54)
+
+→ [[typed-field-collection]] · [[field-level-unit-test-evals]]
+
+**같은 날 [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]은 세 번째 방향으로 간다** — 컨텍스트를 고르지도 쪼개지도 않고 **파일 시스템에 통째로 부어 놓고 에이전트가 찾게** 한다([[file-system-agent]]). 셋을 나란히 두면 컨텍스트 조달의 세 태도가 된다: **고른다 / 쪼갠다 / 펼쳐 놓고 찾게 한다.**
 
 ## References
 
