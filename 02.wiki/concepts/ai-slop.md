@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-12
-updated: 2026-09-15
+updated: 2026-09-20
 ---
 
 # AI 슬롭
@@ -133,3 +133,19 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 ⚠️ **ko 자막이 이 이름을 통째로 지웠다**(*"엉망진창 요리"*). 영상 **설명란은 '슬롭 캐논(Slop Cannon)'이라고 정확히 적는다** — 09-12 *말 방아* 에 이어 **설명란이 자막을 고쳐 주는 두 번째 사례**.
 
 → [[slop-cannon]] · [[code-is-the-product]] · [[architecture-as-remaining-art]]
+
+## 제작사가 평가 어휘로 쓴 첫 사례 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 위키에서 *슬롭* 은 09-12 [[taste-labs]]의 **측정 대상**이거나 09-14 [[jonathan-kelley|Kelley]]의 **불만**이었다 — 즉 **쓰는 쪽의 말**이었다. [[greg-brockman|Greg Brockman]]이 자사 모델의 한계를 설명하며 같은 말을 쓴다:
+
+> 예를 들어 **글쓰기가 그렇습니다. 꽤 괜찮은 글입니다. [슬롭(slop)]이 아닌 건 이번이 처음이에요.** — **하지만 훌륭한 글은 아닙니다.** (38:47~39:00)
+
+**두 가지가 들어온다.** ① **제작사 쪽이 이 단어를 품질 축의 눈금으로 쓴다.** ② *"이번이 처음"* 이라는 표현이 **이전 세대 모델의 글쓰기에 대한 제작사의 자기 평가**다 — 이 위키가 밖에서 관측해 온 것을 안쪽에서 확인해 준 셈이다.
+
+그리고 눈금이 **세 칸**으로 드러난다: **슬롭 → 꽤 괜찮음 → 훌륭함.** 화자는 [[openai-astra|Astra]]를 가운데 칸에 둔다. → [[jagged-capability-frontier]]
+
+> ⚠️ **ko 자막이 이 문장을 파괴한다** — *"경사가 없는 건 이번이 처음이에요"*. en-orig의 *"not sloping"* 자체가 *slop* 의 오인식이고 ko가 그것을 기울기로 읽었다. **한쪽만 읽으면 이 평가가 통째로 사라진다.**
+>
+> ⚠️ 측정은 없다. 화자 개인의 판단이다.
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[openai-astra]] · [[jagged-capability-frontier]]

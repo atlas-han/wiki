@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window]
 links: []
 created: 2026-09-06
-updated: 2026-09-10
+updated: 2026-09-20
 ---
 
 # Astra (OpenAI)
@@ -51,3 +51,41 @@ updated: 2026-09-10
 - [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-pstack-third-party-review]]
 - [[openai]] · [[sam-altman]]
 - 관련: [[training-time-risk]] · [[goal-level-delegation]] · [[fable-5-1]] · [[harness-pruning]]
+
+## 두 번째 1인칭 출처 — 그리고 처음으로 지목된 한계 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 페이지는 2026-09-06부터 **[[sam-altman]] 한 사람의 진술**로만 쓰여 있었다(09-14에 제3자 언급 하나가 붙었을 뿐이다). **[[greg-brockman|Greg Brockman]]의 대담이 두 번째 1인칭 출처**이고, 이 위키가 이 모델에 대해 받은 **가장 구체적인 서술**이다.
+
+### 새로 들어오는 것
+
+| 항목 | 인용 |
+|---|---|
+| **AGI라 부를 만하다는 판정** | *"Astra는 정말 뭔가에 닿았고, 저는 '좋아, 이걸 AGI라고 불러도 꽤 합리적이겠다' 싶습니다"* (38:26~38:45) |
+| ⭐ **24시간 일관 실행** | *"24시간 동안 일관성 있게(coherently) 돌면서 꽤 놀랍다고 생각되는 과제들을, 아주 다양한 도메인에 걸쳐 해내는 것을 봤습니다"* (00:00~00:13, 38:42~38:47) |
+| **계단 함수** | *"[Astra]는 정말 그렇게 많은 축에서 계단 함수(step function)"* — *"수년간 해 온 여러 연구 베팅의 합"* (20:37~21:10) |
+| ⭐ **버전 번호와의 관계** | *"우리는 [GPT-6]이 그 이름에 값하기를 원해 왔다 … 늘 '저건 [5.6]이고 이젠 [5.7]이어야지'가 되죠. 그런데 이번 건은 … 거의 불연속적인 계단을 처음으로 갖게 된 경우"* (21:10~21:41) |
+| **헤드라인 역량** | **컴퓨터 사용** — *"에이전트적 활용 사례에서는 결국 도구로 귀결되기 때문"* (21:41~21:58) |
+| ⭐ **훈련 장소** | *"[Astra]를 실제로 훈련시킨 데이터센터인 [Abilene]"* — 폐쇄 루프 물 순환, *"쓰는 물의 양은 사무실 건물 정도"* (34:49~35:05) |
+| ⭐ **보안에 실제로 쓰였다** | 자사 시스템에 겨눠 **P0를 포화될 때까지** 찾아냈다 → [[defense-factory]] (13:59~14:16) |
+| **부수 언급** | *"[Astra]는 투자 [메모]를 아주 잘 씁니다"* — 진행자 (27:17~27:37) |
+
+**⭐ 버전 번호 항목이 이 페이지의 기존 서술을 보강한다.** 09-06에 [[sam-altman]]은 Astra를 *"더 비싸고 큰 모델 등급을 가리키는 이름"* 이라 했고, 이 페이지는 *"GPT-5.6 다음 단계"* 로 위치시켜 두었다. **Brockman의 서술은 그것과 일치하면서 이유를 준다** — GPT-6이라는 이름을 아껴 왔고, Astra가 **처음으로 불연속적인 계단**이라는 것이다. ⚠️ 단, **Astra와 GPT-6의 관계는 여전히 명시되지 않는다.**
+
+### ⭐ 처음으로 지목된 한계
+
+> 이제, 그것은 여전히 **들쭉날쭉합니다.** 예를 들어 **글쓰기가 그렇습니다. 꽤 괜찮은 글입니다. [슬롭(slop)]이 아닌 건 이번이 처음이에요.** — **하지만 훌륭한 글은 아닙니다.** (38:47~39:00)
+
+→ [[jagged-capability-frontier]] · [[ai-slop]]
+
+**이 페이지의 "미해결 사항"에 있던 *"인간 수준 주장의 측정 근거"* 가 여전히 채워지지 않은 채, 대신 약점 하나가 이름을 얻었다.** 그리고 *슬롭이 아닌 건 이번이 처음* 이라는 표현은 **이전 세대 모델의 글쓰기에 대한 제작사 측의 자기 평가**이기도 하다.
+
+> ⚠️ **ko 자막이 이 문장을 파괴한다** — *"경사가 없는 건 이번이 처음이에요"*. en-orig의 *"not sloping"* 자체가 *slop* 의 오인식이다.
+
+### 여전히 없는 것
+
+- 아키텍처·파라미터·훈련 방법·출시일 — **이 소스도 주지 않는다.**
+- *Soul* 등급과의 관계 — **언급 없음.**
+- *"24시간 일관성"*·*"P0 포화"*·*"계단 함수"* 의 **측정 조건** — 전부 자기 보고.
+- Astra ↔ GPT-6 명명 관계.
+
+→ [[greg-brockman]] · [[tech-bridge-brockman-agi-era-defender-window]] · [[jagged-capability-frontier]] · [[defense-factory]]

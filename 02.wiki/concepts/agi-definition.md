@@ -5,9 +5,9 @@ category: theory
 tags: [agi, superintelligence, definition, milestone, openai, nvidia, andrew-ng]
 related: [ai-jobs-impact, intelligence-as-infrastructure, compute-constrained-growth, agent-harness-design, sutton-bitter-lesson, regulatory-capture, one-continuous-exponential]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-06
-updated: 2026-09-07
+updated: 2026-09-20
 ---
 
 # AGI 정의 논쟁 (AGI vs Superintelligence)
@@ -69,3 +69,33 @@ Huang의 답은 정의가 아니라 **온보딩 사고 실험**이다.
 - [[tech-bridge-altman-agi-superintelligence]] — first-seen
 - [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-andrew-ng-ai-opportunity]]
 - 관련: [[ai-jobs-impact]] · [[intelligence-as-infrastructure]] · [[compute-constrained-growth]] · [[agent-harness-design]]
+
+## 네 번째 입장 — 선언하되 모델을 가리키지 않는다 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+위 표의 세 입장은 전부 **"AGI"라는 단어의 무의미함**으로 수렴했다. [[greg-brockman|Greg Brockman]]은 **그 무의미함에 동의하면서 선언을 한다** — 그리고 선언이 가리키는 것이 **모델의 속성이 아니다.**
+
+| 화자 | 정의에 대한 태도 | 도달 여부 | 선언의 의미 |
+|---|---|---|---|
+| [[greg-brockman]] ([[tech-bridge-brockman-agi-era-defender-window]]) | *"시점(point in time)이라기보다 흐릿한 스펙트럼(fuzzy spectrum)으로 드러났다"* | *"[[openai-astra\|Astra]]를 AGI라고 불러도 꽤 합리적"* | **어느 모델인지는 상관없다** — 선언이 바꾸는 것은 **회사가 따라야 할 공정** |
+
+> **그것이 이 모델인지, 이전 모델인지, 다음 모델인지는 논쟁할 수 있습니다. 상관없습니다. 요점은 우리가 새로운 국면에 있다는 것이고, 거기서는 안전·보안·정렬을 배포 시점만이 아니라 개발 시점과 평가까지 거슬러 올라가 정말로 생각해야 한다는 것입니다.** (47:48~48:02)
+
+**이것이 이 표의 다른 세 칸과 종류가 다르다.** Ng·Altman·Huang은 전부 *정의가 무엇을 뜻하는가* 를 다뤘고, 그래서 세 사람 모두 **선언을 하지 않거나 무의미하다고 했다.** Brockman은 **정의를 포기하면서 선언을 유지하고, 선언의 지시 대상을 모델에서 공정으로 옮긴다.** → [[pacing-the-frontier]]
+
+**[[sam-altman]]과 같은 회사에서 나온 진술인데 용도가 다르다는 점이 중요하다.** Altman의 *"별 의미 없는 마케팅 용어"* 는 **기대를 낮추는** 쪽이었고, Brockman의 *"우리는 AGI 시대에 있다"* 는 **내부 기준을 올리는** 쪽이다. 두 진술은 모순이 아니라 **같은 용어의 두 용도**다.
+
+### 근거 쪽 — 왜 시점이 없는가
+
+> 이제, 그것은 여전히 **들쭉날쭉합니다.** … **우리가 정말 있어야 할 곳은 전 범위에 걸쳐 훨씬 더 고른 상태**입니다. (38:47~39:16)
+
+→ **[[jagged-capability-frontier]]** — **"들쭉날쭉하다"는 것이 곧 "단일한 문턱이 성립하지 않는다"** 는 것이다. 이 표의 위 세 입장이 *정의를 어떻게 잡을 것인가* 로 다퉜다면, 여기서는 **경계의 모양 자체**가 논거가 된다.
+
+그리고 체감의 단위가 하나 제시된다 — **24시간 일관 실행**(*"24시간 동안 일관성 있게 돌면서 … 아주 다양한 도메인에 걸쳐"*, 38:42~38:47). ⚠️ **측정 조건은 없다.**
+
+### [[jensen-huang|Huang]]과의 관계
+
+Huang의 *"AGI가 등장하더라도 모든 기업의 문제가 해결되는 것은 아니다"* 와 **같은 구조인데 남는 일의 종류가 다르다** — Huang은 **맥락 부여**(하네싱)가 남는다고 했고, Brockman은 **안전·보안·정렬의 운영**이 남는다고 한다. **둘 다 임계값 이후를 말하지만, 한쪽은 기업의 일이고 다른 쪽은 랩의 일이다.**
+
+> ⚠️ **당사자 진술이고 강제력이 없다.** *"기준"* 이 무엇인지, 누가 판정하는지, 못 맞추면 무엇이 멈추는지 소스에 없다. 그리고 **정부·외부 검증이 대담 전체에서 한 번도 언급되지 않는다** — [[dario-amodei]]의 3단계 계획과 갈리는 지점이다.
+
+→ [[greg-brockman]] · [[pacing-the-frontier]] · [[jagged-capability-frontier]] · [[openai-astra]]

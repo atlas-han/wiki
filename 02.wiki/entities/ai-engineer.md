@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation]
 created: 2026-09-15
-updated: 2026-09-18
+updated: 2026-09-20
 ---
 
 # AI Engineer
@@ -62,3 +62,13 @@ updated: 2026-09-18
 > ⚠️ **같은 회차라는 근거가 없다.** 09-07 절차대로 별개로 취급한다. World's Fair([[tech-bridge-mousepower-measuring-agents]])와의 관계도 여전히 미확정. 이 소스는 조직에 대한 사실(규모·운영)을 **하나도 더하지 않는다** — 행사명 확인뿐이다.
 
 발표 형식 관찰: **2인 공동 발표, 12:45, 공식 챕터 8개** — 이 채널의 AI Engineer 계열 소스 중 **두 사람이 번갈아 말하는 첫 무대 발표**다(09-01 대담은 인터뷰였다).
+
+## RLHF 공동 저자의 발표 (2026-09-20 · [[tech-bridge-rlhf-assistance-vs-automation]])
+
+이 행사에서 나온 이 위키의 **다섯 번째** 소스이자, **모델 학습 절차 자체를 다룬 첫 발표**다 — 지금까지 이 행사의 소스는 전부 **적용 층**(에이전트 설계·디자인·토큰 전략)이었다.
+
+[[diogo-almeida|Diogo Almeida]](GPT-4·ChatGPT·InstructGPT 공동 저자)가 *"[[rlhf|RLHF]] 다음은 무엇인가"* 를 발표한다. 형식도 이 행사의 다른 소스와 다르다 — **슬라이드를 빠르게 넘기고 청중의 반론을 유도하며**(*"동의하지 않는 부분이 있으면 마음껏 소리쳐 주세요"*, 00:00~00:14), Q&A가 발표의 3분의 1을 차지한다.
+
+⚠️ 운영 조건이 소스 안에서 보인다 — *"질의응답은 나중에 하라는 지시를 받았어요"*(04:13), *"빨간색 경고등이 울리는 걸 보니 초과 시간"*(16:58). **세션 시간이 짧고 엄격하다.**
+
+→ [[tech-bridge-rlhf-assistance-vs-automation]] · [[diogo-almeida]] · [[typesafe-ai]]

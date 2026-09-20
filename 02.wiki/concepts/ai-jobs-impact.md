@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-06
-updated: 2026-09-07
+updated: 2026-09-20
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -86,3 +86,31 @@ G20 발언은 3부작의 *"두 마음"* 과 **다른 축**이다. 고용 영향�
 - [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-bill-gates-ai-warning]] · [[tech-bridge-andrew-ng-ai-opportunity]]
 - 2026-09-07 추가: [[tech-bridge-elon-musk-g20-ai-future]] · [[tech-bridge-altman-g20-economic-boom]] · [[elon-musk]] · [[humanoid-robot-scaling]]
 - 관련: [[agi-definition]] · [[cognitive-offloading]] · [[frontier-engineering]] · [[regulatory-capture]]
+
+## "사람은 과제를 할 수 있어서 가치 있는 게 아니다" (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 페이지의 기존 입장들은 대체로 **일의 양과 종류**를 다뤘다. [[greg-brockman|Greg Brockman]]의 답은 **가치의 근거**를 옮긴다.
+
+> 거의 모든 직업에 대해, **그 분야가 얼마나 깊은지, 관계를 쌓는 정교함이 얼마나 되는지 제대로 인정해 주지 않기 쉽습니다. 책임(accountability)이 좋은 예입니다 — 사람들이 목표를 세우고 결과에 책임을 지는 것 … 우리가 장기적으로 실제로 보존해야 할 것처럼 느껴집니다.** (25:30~25:44)
+
+> **그건 깊이 인간적인 것처럼 느껴집니다 — 사람은 과제를 할 수 있어서 가치 있는 게 아닙니다. 우리는 우리가 사람이기 때문에 가치 있습니다.** (25:44~26:12)
+
+⭐ **[[named-human-accountability]]가 이 위키에서 09월 내내 *운영상의 안전장치* 였다** — 누가 책임지는지 이름을 적어 두라는 통제 수단. **여기서 같은 개념이 *보존해야 할 인간의 자리* 로 뒤집힌다.** 통제 수단에서 가치 근거로 옮겨간 첫 자리다.
+
+프레임은 **예측 불가능성**이다:
+
+> 저는 **AI가 놀랍다(surprising)는 근본적인 믿음**을 가지고 있습니다. **2015년 OpenAI 출범 글에도 이걸 넣었던 것 같은데, 지금까지의 역사는 어쩐지 당신이 생각하는 방식대로 전개되지 않는다는 것입니다 — 논리적 결론상 어떤 식이어야 할 때조차도요.** (25:14~25:30)
+
+그리고 [[intelligence-abundance]]와 창업 쪽으로 간다 — *"야망의 천장이 그 어느 때보다 높은 세상"*, 진입 장벽이 낮아진 **창업 르네상스**(26:12~26:41), 젊은 사람들이 **허드렛일(grunt work)을 AI에 넘기고 더 빨리 성장**(26:41~27:17).
+
+> ⚠️ 다만 화자 스스로 유보를 단다 — *"모든 게 장밋빛이고 다 쉬울 거라고 그리면 안 됩니다. 어려울 겁니다."*(27:37~27:48)
+
+### ⚠️ 가장 강한 수치 주장은 화자가 아니라 진행자의 것이다
+
+> **적어도 지금까지 수치로는, AI가 좋아질수록 고용은 낮아지는 게 아니라 높아집니다.** (24:56~25:14) — **진행자([[ben-horowitz]] 측)**
+
+**어떤 수치인지 제시되지 않는다.** 그리고 발화자가 **[[a16z]]**, 즉 이 분야에 투자하는 벤처 캐피털이다. 이 위키는 그 위치를 표시한다 — 이 페이지가 [[andrew-ng]]·[[sam-altman]]·[[jensen-huang]]의 낙관을 각자의 판매물과 함께 읽어 온 것과 같은 방식이다.
+
+데이터센터 일자리 주장(*"[Switch] 한 곳이 노조 계약으로 4만 5천 명"*, 33:31~33:50)도 같은 쪽에서 나오고 출처가 없다.
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ben-horowitz]] · [[a16z]] · [[named-human-accountability]] · [[intelligence-abundance]]

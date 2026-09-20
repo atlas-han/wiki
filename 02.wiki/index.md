@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-19
+updated: 2026-09-20
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-09-19
 ## Entities
 
 ### Persons
+- [[greg-brockman]] — [[openai|OpenAI]] 공동창업자·사장. **위키의 OpenAI 1인칭 소스를 [[sam-altman|Altman]] 한 사람에서 둘로 늘린 화자.** *"우리는 AGI 시대에 있다"* 인데 **어느 모델인지는 상관없다**([[agi-definition]] 네 번째 입장) · [[pacing-the-frontier|프론티어 속도 조절]] · [[defenders-window|방어자의 창]]·[[defense-factory|방어 공장]]·[[ai-formal-verification|Lean 형식화]] · 자기 사이트 [[codex|Codex]] 펜테스트 **15분 13건 / 45분 수정** · *"사람은 과제를 할 수 있어서 가치 있는 게 아니다"* ([[tech-bridge-brockman-agi-era-defender-window]]) ⚠️ 당사자 · 수치 전부 자기 보고
+- [[diogo-almeida]] — GPT-4·ChatGPT·InstructGPT([[rlhf|RLHF]]) 공동 저자, [[typesafe-ai|TypeSafe]]. **위키 첫 "설계자의 사후 비평".** *"우리가 말 그대로 그들을 루프에 집어넣었다"* · [[assistance-vs-automation|보조 vs 자동화]] · [[preference-reward-asymmetry|과대약속은 버그가 아니라 특징]] · [[smarter-software-vs-cheaper-software|더 똑똑한 소프트웨어]] · [[post-training-northstars|제3의 북극성=보정된 의사결정]] ([[tech-bridge-rlhf-assistance-vs-automation]]) ⚠️ 당사자 · eval 0건 · **이름은 설명란에만**
+- [[ben-horowitz]] — [[a16z]] 공동창업자, Brockman 대담의 진행자 측. **가장 강한 반론**(50년치 레거시·중앙집중 허니팟·탈중앙화 소비자 아키텍처)을 내고 **끝내 답을 받지 못한다.** ⚠️ *"AI가 좋아질수록 고용이 높아진다"* 등 낙관 주장의 출처가 없고 **화자 귀속도 자막으로는 확정 불가** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[andrew-qu]] — [[vercel|Vercel]] 소프트웨어 총괄. **세 번 실패하고 [[file-system-agent|파일 시스템]]에 닿은 연대기** — *도구를 깎지 말고 바닥을 줘라* · [[eve-framework|Eve]]·[[query-to-skill-distillation]]의 제안자 ([[tech-bridge-vercel-eve-filesystem-agent]]) ⚠️ 당사자 진술 · 성은 설명란에만
 - [[venky-b]] — [[plivo|Plivo]] 창업자·CEO. **위키에 음성 에이전트 층을 세운 사람** — *실시간 제약이 [[voice-latency-thinking-tradeoff|thinking을 금지한다]]* · [[typed-field-collection]]·[[field-level-unit-test-evals]] ([[tech-bridge-voice-agent-failure-modes]]) ⚠️ 당사자 진술 · 이름 표기 세 갈래
 - [[anna-gutowska]] — [[ibm|IBM]] AI 엔지니어. **레거시 코드와 AI 현대화** — *아무도 완전히 이해하지 못하는 핵심 인프라* · *개발자 수가 많다고 현대화가 빨라지지 않는다* · *문법은 맞고 동작은 틀린 번역* · *AI는 승수, 사람은 가장 위험한 결정 곁에* ([[tech-bridge-legacy-code-modernization-ai]]) ⚠️ 이름은 설명란에만
@@ -80,6 +83,9 @@ updated: 2026-09-19
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[a16z]] — 벤처 캐피털. 위키에는 **팟캐스트 제작 주체**로 첫 등장 — 이 채널이 재배포한 소스 중 **투자자가 만든 매체는 처음**이다. ⚠️ 데이터센터 규제 완화·AI 낙관·고용 증가를 화자보다 강하게 주장하면서 **이해관계를 한 번도 표시하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
+- [[typesafe-ai]] — [[diogo-almeida]]가 속한 **스텔스 스타트업**. *"AI 스택을 신뢰성과 자동화를 위해 재설계한다면?"* · [[post-training-northstars|보정된 의사결정]] 최적화. ⚠️ **확인 가능한 사실이 거의 없다** — 제목이 약속한 모델 'Jev'가 **자막에 한 번도 없다** ([[tech-bridge-rlhf-assistance-vs-automation]])
+- [[crowdstrike]] — 사이버 보안 기업. [[openai|OpenAI]] **10억 달러 프론티어 방어자 약정의 파트너**로 첫 등장 — [[defenders-window]]의 **조달** 쪽 ⚠️ *"할인된 접근"* 한 문장이 전부 ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[vercel]] — [[nextjs|Next.js]]를 만든 웹 플랫폼. *페이지 → 에이전트* 전환을 서사 축으로 두고 [[eve-framework|Eve]]·AI SDK·샌드박스를 판다. **위키 첫 Vercel 소스** ([[tech-bridge-vercel-eve-filesystem-agent]])
 - [[plivo]] — 2011년 음성·SMS API로 시작한 텔레포니 기업(월 10억 건 이상 통화 주장). **SIP 트렁킹·캐리어 계층을 직접 보유**하고 그 위에 보이스 AI 에이전트 플랫폼을 얹는다. **위키 첫 음성 도메인 조직** ([[tech-bridge-voice-agent-failure-modes]])
 - [[groq]] — 고속 추론 기업. 위키에는 [[cerebras|Cerebras]]와 한 묶음으로 — **속도는 되지만 조달이 막히는** 선택지(전용 용량·12개월 선예약·모델 수명) ([[tech-bridge-voice-agent-failure-modes]])
@@ -195,6 +201,9 @@ updated: 2026-09-19
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[rlhf]] — 인간 선호를 수집하고 최적화하는 post-training 절차. **위키에 2026-09-20까지 페이지가 없었고, 그 자리를 채운 것이 만든 사람의 비판이다.** *"우리가 말 그대로 그들을 루프에 집어넣었다"* · 기원은 2017년 ([[tech-bridge-rlhf-assistance-vs-automation]]·[[tech-bridge-brockman-agi-era-defender-window]])
+- [[post-training-northstars]] — post-training을 알고리즘이 아니라 **북극성**으로 구분: RLHF(인간 선호) / RLVR(정확성의 로그 오류율) / 제3(보정된 의사결정). *"API의 모양조차 다르다"* · 위계는 **올바른 작업 > 데이터 > 컴퓨트** ⚠️ 제3은 미출시 ([[tech-bridge-rlhf-assistance-vs-automation]])
+- [[ai-formal-verification]] — *"형식 검증이 안 뜬 건 틀려서가 아니라 사람에게 다루기 어려워서"* — 나비에-스토크스를 **Lean으로 형식화**한 것이 근거 ⚠️ *"AI가 검증 가능한 코드를 쓸 수 있다"* 는 한 마디뿐, **명세를 누가 쓰는가가 빠져 있다** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[time-to-first-audio]] — 사용자가 말을 멈춘 뒤 에이전트가 말하기까지. 광고 550ms / 실제 750~1200ms / **1.2초 넘으면 끊는다.** 위키에서 지연이 비용이 아니라 **UX의 절벽**으로 다뤄진 첫 자리 — 그리고 평균이 아니라 **꼬리(P90·P95)가 제품을 정한다**
 - [[token-fertility]] — 그 언어에서 단어 하나를 만드는 데 드는 토큰 수. **토큰이 예산이 아니라 시간의 단위**가 되는 자리이자 다국어 모델 선택의 기준(Gemma 4가 Qwen 3.5보다 2.5~3배 낫다는 주장)
 - [[fixed-budget-alpha]] — **전략 비교는 토큰 예산을 고정하고 한다.** one-shot은 전략이 지출을 스스로 정해(15%/39k vs 회고 600k) 비교가 안 된다 → 60만 고정: 실행 76 vs 조언 89. *"테스트 타임 컴퓨트가 전부라면 넷이 같아야"* — 에이전트 eval에서 **토큰 지출이 교란 변수**임을 명시한 첫 소스 (Anthropic, sources: 1) ⚠️ 화자 스스로 *"미미한 차이"*
@@ -226,6 +235,12 @@ updated: 2026-09-19
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[assistance-vs-automation]] — **난이도가 아니라 목적함수가 가른다.** 왼쪽 과제의 목표는 *루프 안의 사람을 만족시키는 것*, 오른쪽은 *사람을 루프에서 없애는 것*. [[workflow-vs-agent]]와 **축이 다르다** — 루프가 동적이어도 사람을 만족시키면 여전히 보조 ([[tech-bridge-rlhf-assistance-vs-automation]])
+- [[preference-reward-asymmetry]] — **과대약속·환각은 버그가 아니라 설계상의 결과.** *확신 없음* 은 알아보기 쉽고 *틀림* 은 어려워서 **불확실성 표현만 일관되게 벌받는다.** 위키가 받은 환각의 첫 구조적 설명 ⚠️ 형식 논증 없음 · 같은 날 [[tech-bridge-brockman-agi-era-defender-window|Brockman 편]]과 정면 충돌 ([[tech-bridge-rlhf-assistance-vs-automation]])
+- [[smarter-software-vs-cheaper-software]] — *"SaaS는 2019년 이후 챗봇이 옆에 붙은 것 말고 변한 게 없다"* · **우리가 자동화한 것은 소프트웨어를 쓰는 과정뿐이고 접근성은 그대로다.** [[ambitious-software]]와 **같은 불만, 다른 처방**(규모 vs 종류) ([[tech-bridge-rlhf-assistance-vs-automation]])
+- [[defenders-window]] — 공격 역량이 확산되기 전의 **한시적 구간.** 비대칭의 근거가 *"방어자가 전장을 통제한다"* 이고, 격차는 **접근**(신뢰 접근 프로그램)에서 난다 ⚠️ **50년치 레거시라는 반론에 답하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
+- [[pacing-the-frontier]] — 역량 진전을 **안전·보안·정렬 기준이 따라오는 속도에 묶는다.** *"컴퓨트보다 오히려 그 제약들"* · [[dario-amodei|Amodei]]의 *멈추지 말고 늦추자* 와 **같은 명제, 다른 거버넌스**(정부·외부 검증 부재) ([[tech-bridge-brockman-agi-era-defender-window]])
+- [[jagged-capability-frontier]] — 역량이 도메인마다 고르지 않다 → **단일한 문턱이 성립하지 않는다.** [[agi-definition]]의 *흐릿한 스펙트럼* 에 메커니즘을 준다. [[all-or-nothing-accuracy]]가 과제 **안**이라면 이쪽은 과제 **사이** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[company-knowledge-moat]] — 기성 수직 에이전트와 사내 에이전트를 가르는 것은 모델이 아니라 **회사 고유의 맥락 지식**. [[company-brain]]과 같은 방향, 다른 형식(사람이 읽는 위키 vs 에이전트가 grep하는 시맨틱 레이어) ⚠️ 판매자의 인센티브를 보라
 - [[voice-latency-thinking-tradeoff]] — 지난 1년 LLM 발전의 대부분이 thinking에서 왔는데 **실시간 음성은 그 thinking을 꺼야 한다.** 이 위키가 전제해 온 *테스트 타임 컴퓨트를 쓴다* 가 **금지되는 도메인**
 - [[true-cost-to-perfect-answer]] — **비용 = 실행당 예산 × 기대 실행 횟수(1/합격률).** 실행 42% → 3회 → 600k×3 = **180만 토큰**. 정확도의 작은 차이가 비용의 큰 차이로 · 효율 → 조언 / 신뢰성 → 채점·회고 · *토큰은 결과가 아니다* 를 판매자가 계산식으로 (Anthropic, sources: 1) ⚠️ 조언·채점·회고 수치 없음 · 재시도 독립 가정
@@ -271,6 +286,8 @@ updated: 2026-09-19
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[defense-factory]] — 취약점 **발견→분류→교정→배포→검증**을 기계 속도로 도는 상시 파이프라인. 트리거가 사건이 아니라 **모델 릴리스**이고 완료 기준이 **"포화"**(이 모델이 더는 찾지 못하는 상태) ⚠️ **자동 교정·배포의 안전장치가 한 마디도 없다** ([[tech-bridge-brockman-agi-era-defender-window]])
+- [[capability-discovery-burden]] — *"사람들이 AI로부터 무엇을 할 수 있는지 추출해 내야 해서는 안 된다"* · **써봤다가 떠난 15억 명.** [[learning-curve-as-feature]]가 곡선을 기능이라 불렀다면 이쪽은 **곡선을 오르지 않은 사람들** ⚠️ 수치 근거 없음 ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[file-system-agent]] — 전용 도구를 깎는 대신 **모델이 이미 훈련된 범용 도구**(list·read·bash·grep)를 주고 지식을 파일로 펼쳐 에이전트가 탐색하게 한다. [[vercel|Vercel]]이 [[claude-code|Claude Code]]에서 배웠다고 말하는 설계 ⚠️ 보안이 통째로 비어 있다
 - [[agent-architecture-progression]] — 한 팀이 같은 문제에 네 아키텍처를 차례로 만들고 각각 왜 막혔는지 남긴 기록(메가 프롬프트 → 역할별 체인 → 단일 상태 → 파일 시스템). **체인의 병목은 조율이 아니라 컨텍스트 손실**
 - [[query-to-skill-distillation]] — 실제로 들어온 질의를 주기적으로 모아 반복 형태를 스킬로 압축한다(Vercel 약 100개). [[skill-self-improvement]]의 **거울상** — 실패가 아니라 성공에서, ⚠️ **승격 게이트 없이**
@@ -552,11 +569,13 @@ updated: 2026-09-19
 - [[tech-bridge-zuckerberg-muse-in-daily-use]] — [[mark-zuckerberg|Mark Zuckerberg]] × 진행자 무명(자막에 *"Tiff"* 한 번): **이 채널이 같은 인물의 같은 주제 인터뷰를 두 편 올린 첫 사례**([[tech-bridge-zuckerberg-muse-personal-agent|65:19 Alex Heath 편]]과 **별개의 자리**, 내용이 크게 겹친다). 앞 편에 없던 여섯 — **[[agent-persona-naming|이름·아바타]]**(Agrippa/Pip) · **[[one-time-virtual-card|일회용 가상 카드]]** · **[[muse-spark|Muse Spark 1.3]]** · **[[business-in-a-box|비즈니스 인 어 박스]]** · **[[biohub|Biohub]]와 [[rare-disease-long-tail|개인 맞춤 치료]]** · **[[nightly-memory-consolidation|매일 저녁의 메모리 압축]]**. 그리고 앞 편의 *"기술적으로 검증 가능"*·부담 주체·오픈소스·함대 학습이 **사라졌다** (25:09, 2026-09-16) ⚠️ 당사자 진술 · ko가 제품명 Muse를 세 갈래로 파괴
 - [[tech-bridge-legacy-code-modernization-ai]] — [[anna-gutowska|Anna Gutowska]] ([[ibm|IBM]] · ⚠️ 이름은 설명란에만): **위키가 레거시 코드의 정의와 현대화의 구조를 받는 첫 소스.** *돌아가지만 아무도 완전히 이해 못 하는 핵심 인프라* · [[legacy-skills-gap|개발자 수 ≠ 현대화 속도]] · [[technical-debt]]에 보안·인력 이자 · AI는 발견·번역·에이전트를 배속 · [[legacy-code-modernization|세 축]](아키텍처·기술·프로세스, 점진적) · [[syntactically-correct-behaviorally-wrong|문법은 맞고 동작은 틀린 번역]] · [[risk-proportional-human-review|승수로서의 AI, 위험한 결정 곁의 사람]] (8:51, 2026-09-17) ⚠️ 수치·도구·사례 0 · IBM 5회 연속 자사 제품 없음·촬영 시점 미확정
 - [[tech-bridge-tokens-should-have-jobs]] — [[katelyn-lesse|Katelyn Lesse]]·[[angela-jiang|Angela Jiang]] ([[anthropic|Anthropic]] · [[ai-engineer|AI Engineer]] 발표): **09-01 대담의 재방문 — [[token-roles|토큰 역할]]에 처음 붙은 수치.** one-shot 15%/39k → [[fixed-budget-alpha|고정 60만]] 76 vs 89 → [[all-or-nothing-accuracy|100% 합격률]] 42% vs 최대 75% → [[true-cost-to-perfect-answer|진짜 비용]] 180만 · 효율 → 조언 / 신뢰성 → 채점·회고 · [[strategy-primitives|메타 하네스 층·회고·`outcomes` 기본 제공·동적 구성]] (12:45, 공식 챕터 8, 2026-09-17) ⚠️ 내부 벤치 · 채점·회고 수치 없음 · **Sonnet+Opus 비용 역전은 되풀이되지 않음** · ko *executor* → "유언집행자"
+- [[tech-bridge-brockman-agi-era-defender-window]] — [[greg-brockman|Greg Brockman]] ([[openai|OpenAI]] 공동창업자·사장) × [[ben-horowitz|Ben Horowitz]]·Erik Torenberg ([[a16z]] 팟캐스트): **위키의 OpenAI 1인칭 소스가 둘이 된 날**이자 **보안이 회사 전략의 축으로 서는 첫 소스.** *"우리는 AGI 시대에 있다"* 인데 **어느 모델인지는 상관없고**([[agi-definition]] 네 번째 입장) 선언의 내용은 **안전·보안·정렬을 개발·평가 시점까지 끌어올리는 공정**이다([[pacing-the-frontier]]). 대담의 절반이 보안 — **[[defenders-window|방어자의 창]]**(*"방어자는 전장을 통제한다"*, 격차는 **접근**에서 난다) · **[[defense-factory|방어 공장]]**(발견→분류→교정→배포→검증, **완료 기준이 "포화"**) · **프로덕션 엔지니어 25%를 보안으로** · **1만 에이전트로 나비에-스토크스 → Lean 형식화**([[agent-swarm]]·[[ai-formal-verification]]) · **10억 달러 프론티어 방어자 약정**([[crowdstrike]]) · 개인 펜테스트 **15분 13건 / 45분 수정**([[codex]]·[[cloudflare]]). **[[hugging-face]] 사건의 다섯 번째 서술**에서 ⭐ *HF가 로그 분석에 쓴 프론티어 모델이 **거부했다*** 가 새로 들어온다([[deny-and-continue]]). [[openai-astra|Astra]]는 **24시간 일관 실행**이되 **[[jagged-capability-frontier|들쭉날쭉]]**(*"[[ai-slop|슬롭]]이 아닌 건 처음이지만 훌륭한 글은 아니다"*), 제품 비판은 *"약속받았던 AI는 텍스트 상자가 아니었다"*([[capability-discovery-burden]], **이탈 15억 명**), 경영은 **집중**(Sora 취소 · ChatGPT Work 통합) ([[tech-bridge]], 2026-09-19, **49:21**, 공식 챕터 10, **촬영 연도 2026 자막 내부 확인**, ⚠️ 당사자 + **진행자가 VC인데 이해관계 미표시** · 반대 심문 거의 없음 · **탈중앙화 반론에 끝내 무응답** · **컴퓨터 사용의 보안 모델 전무** · 수치 전부 자기 보고 · ko가 *the business is ripping*→**"완전히 망해가고 있다"**·*the planet*→**"지구 전체 면적"**·*frontline defenders*→**"최전선 수비수"**)
+- [[tech-bridge-rlhf-assistance-vs-automation]] — [[diogo-almeida|Diogo Almeida]] (GPT-4·ChatGPT·InstructGPT 공동 저자 · [[typesafe-ai|TypeSafe]] · [[ai-engineer|AI Engineer]]): **위키가 [[rlhf|RLHF]]를 만든 쪽의 목소리로 RLHF의 한계를 듣는 첫 소스** — 그리고 **이 위키에 RLHF 페이지가 없었다는 사실이 이 소스로 드러났다.** 테제는 *미해결 수학 문제는 풀면서 고객 서비스는 못 하는 이유가 난이도가 아니라 목적함수* — **[[assistance-vs-automation|보조 vs 자동화]]**(*"왼쪽 과제의 목표는 루프 안의 사람을 만족시키는 것"*), **[[preference-reward-asymmetry|과대약속은 버그가 아니라 특징]]**(*확신 없음* 만 벌받는다 → 환각의 첫 구조적 설명), **[[smarter-software-vs-cheaper-software|SaaS는 2019년 이후 변한 게 없다]]**(*"우리가 자동화한 건 소프트웨어를 쓰는 과정뿐"*), **[[post-training-northstars|제3의 북극성=보정된 의사결정]]**. [[claude-code|Claude Code]]에 대한 **위키의 가장 이론적인 비판**(*"여전히 보조의 시대"* — ⚠️ 단 화자는 *"좋아하고 계속 쓴다"* 고도 말한다) ([[tech-bridge]], 2026-09-19, **17:36**, 공식 챕터 11, ⚠️ 당사자 · **eval·벤치마크 0건** · **제목의 'Jev'가 자막에 한 번도 없다** · [[sutton-bitter-lesson|Bitter Lesson]]을 **반대 방향으로 인용**(판독 안 함) · ko가 *our chef*→RLHF 직역·LLM을 **세 갈래**로·*assistance*→**"의료 보조"**)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 518 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 495 → 518, + 2026-09-18 Tech Bridge 2편: source 2 + concept 14 + entity 7)
+- 총 페이지 수: 537 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 518 → 537, + 2026-09-19 Tech Bridge 2편: source 2 + concept 11 + entity 6)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-19 (Tech Bridge **2편**, **열엿새 연속** — 09-18 업로드분. [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]은 **세 번 실패하고 [[file-system-agent|파일 시스템]]에 닿은 연대기** — [[agent-architecture-progression]]로 이 위키가 [[workflow-vs-agent]] 축을 **실제로 건너간 기록**을 얻었고, [[query-to-skill-distillation]]은 [[skill-self-improvement]]의 **거울상**(성공 질의에서, ⚠️ 게이트 없이), [[company-knowledge-moat]]는 [[company-brain]]과 **서로를 모른 채 같은 결론**. **위키 첫 [[vercel]]·[[nextjs]]·[[eve-framework]]**. [[tech-bridge-voice-agent-failure-modes|Plivo 편]]은 **위키에 음성 에이전트라는 층을 처음 세웠다** — [[voice-agent-pipeline]] 허브 아래 [[time-to-first-audio]]·[[transcription-brittleness]]·[[typed-field-collection]]·[[field-level-unit-test-evals]]·[[tts-normalization-layer]], 그리고 **[[voice-latency-thinking-tradeoff]]가 이 위키의 암묵적 전제를 깼다** — 테스트 타임 컴퓨트를 *쓸 수 있다* 가 금지되는 도메인이 생겼다. **위키 첫 [[plivo]]·[[groq]]**.)
+- 마지막 ingest: 2026-09-20 (Tech Bridge **2편**, **열이레 연속** — 09-19 업로드분. **같은 회사의 안과 밖이 하루에 들어온 날이다.** [[tech-bridge-brockman-agi-era-defender-window|Brockman 편]]은 위키의 [[openai]] 1인칭 소스를 둘로 늘리고 **보안을 회사 전략의 축으로 처음 세웠다** — [[defenders-window]] 아래 [[defense-factory]]·[[ai-formal-verification]], 그리고 [[agi-definition]]에 **네 번째 입장**(선언하되 모델을 가리키지 않는다 → [[pacing-the-frontier]])과 [[jagged-capability-frontier]]가 붙었다. [[hugging-face]] 사건의 **다섯 번째 서술**에서 *프론티어 모델이 거부했다* 가 새로 들어왔고, [[openai-astra]]가 **두 번째 1인칭 출처**와 **처음 지목된 한계**를 받았다. **위키 첫 [[greg-brockman]]·[[ben-horowitz]]·[[a16z]]·[[crowdstrike]]**. [[tech-bridge-rlhf-assistance-vs-automation|Almeida 편]]은 **RLHF를 만든 쪽의 사후 비평**이고, 그 덕에 **이 위키에 [[rlhf]] 페이지가 없었다는 사실이 드러났다** — [[assistance-vs-automation]]이 [[workflow-vs-agent]] 위에 목적함수라는 층을 놓고, [[preference-reward-asymmetry]]가 환각의 **첫 구조적 설명**을 준다. **두 편이 환각에 대해 정반대를 말하는데 어느 쪽도 측정을 제시하지 않아 대조만 기록했다.** **위키 첫 [[diogo-almeida]]·[[typesafe-ai]]**.)

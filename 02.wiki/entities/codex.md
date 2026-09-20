@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window]
 links:
   - https://openai.com/index/nextdoor/
 created: 2026-06-27
-updated: 2026-09-06
+updated: 2026-09-20
 ---
 
 # Codex
@@ -37,3 +37,23 @@ updated: 2026-09-06
 - [[openai-nextdoor-codex]] · [[openai]]
 - 외부: <https://openai.com/index/nextdoor/>
 - [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-altman-agi-superintelligence]] — Sam Altman의 서술 (2026-09-06)
+
+## 보안 도구로 쓰인 첫 1인칭 기록, 그리고 대학생 크레딧 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+[[greg-brockman|Greg Brockman]]이 **자기 개인 웹사이트를 이 도구로 펜테스트한 일화**를 든다. 이 위키가 이 도구의 구체적 실행 기록을 받는 첫 자리다.
+
+| 단계 | 내용 |
+|---|---|
+| 지시 | *"[gregbrockman.com]을 확인해서 취약점이 있는지 말해줘"* |
+| **발견** | **13건, 15분** — SPF 레코드, HTTPS 미강제 등 |
+| **수정** | **45분** — [[cloudflare\|Cloudflare]] 제어판을 직접 클릭해 헤더 설정, **Cloudflare Pages로 마이그레이션**, [DMARC] 절차 개시 |
+| **후속** | **48시간 뒤 DMARC 완료를 위한 자동화를 스스로 예약** → [[scheduled-agent-automations]] |
+| 자체 확인 | *"이건 고쳐진 걸 확인했습니다"* 를 **요청 없이 자동으로** 수행 (20:10~20:22) |
+
+**컴퓨터 사용 역량이 실제 업무로 이어진 이 위키의 가장 구체적인 서술**이고, [[ai-vulnerability-discovery]]에 **개인 규모 사례**가 붙는다. **발견보다 수정이 세 배 걸렸다**는 것이 [[verification-bottleneck]] 옆에 **교정 병목**을 놓는다.
+
+부수 사실 하나 — **모든 대학생에게 Codex 접근 크레딧을 제공한다고 발표했다**(35:05~35:26).
+
+> ⚠️ **개인 사이트 하나의 일화**다. 통제군·오탐·심각도 분포가 없다. 그리고 **당사자 진술**이다.
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ai-vulnerability-discovery]] · [[defense-factory]]

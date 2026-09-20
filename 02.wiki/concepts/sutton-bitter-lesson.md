@@ -6,9 +6,9 @@ tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
 related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode, ai-slop, taste-vs-judgment]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-rlhf-assistance-vs-automation]
 created: 2026-05-25
-updated: 2026-09-12
+updated: 2026-09-20
 ---
 
 # The Bitter Lesson
@@ -181,3 +181,29 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 - ⚠️ 반대 입장: [[tech-bridge-uncertainty-mathematics]] · [[bayesian-inference]] · [[zoubin-ghahramani]]
 - 경제·정책 측: [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-jensen-huang-g20-agi]] (2026-09-06)
 - 아키텍처 판정 버전: [[tech-bridge-agent-to-agent-as-search]] · [[agent-collaboration-as-search]] · [[privacy-auto-mode]] (2026-09-10)
+
+## ⚠️ 반대 방향으로 인용된 첫 사례, 그리고 세 층의 위계 (2026-09-20 · [[tech-bridge-rlhf-assistance-vs-automation]])
+
+[[diogo-almeida|Diogo Almeida]]가 Q&A 말미에 이 교훈을 요약하는데, **이 위키가 이 페이지에 기록해 온 방향과 반대다.**
+
+> 제 생각에 **[Sutton]의 쓴 교훈은 알고리즘이 연산 능력보다 더 중요하다는 것입니다. 이건 게임에서는 맞는 말이지만 현실에서는 그렇지 않습니다.** (15:38~15:49)
+
+> ⚠️ **ko·en-orig 양 트랙이 일치한다.** 자막 오류로 보기 어렵고, **화자의 진술인지 ASR이 문장을 뒤집은 것인지 판정할 근거가 없다.** 이 위키는 **판독하지 않고 표시만 한다.** 채널의 자막이 부호를 뒤집은 전례는 있다(09-07·09-19).
+
+**다만 바로 이어지는 문장은 그것과 무관하게 이 소스의 독립적인 주장이고, 발표 전체의 논지와 일관된다:**
+
+> **제 생각에 풀스택은 데이터가 연산 능력보다 더 중요하고, 올바른 작업(the right task)을 하는 것이 데이터보다 훨씬 더 중요하다는 것입니다.** (15:49~15:56)
+
+| 층 | 화자의 위계 |
+|---|---|
+| **올바른 작업 (the right task)** | 가장 중요 — *"데이터보다 훨씬 더"* |
+| **데이터** | 그다음 |
+| **컴퓨트** | 가장 낮음 |
+
+**이 위계가 [[post-training-northstars]]의 근거다** — *무엇을 최적화할지 고르는 것* 이 데이터와 컴퓨트보다 앞선다는 주장이고, 그래서 [[assistance-vs-automation]]의 구분(목적함수가 난이도보다 먼저다)이 이 위계의 적용 사례가 된다.
+
+**이 페이지에 기록된 다른 입장들과의 관계**: 이 위키가 그동안 받은 Bitter Lesson 인용은 대체로 *스케일이 이긴다* 의 근거로 쓰였다. **여기서는 그 위에 한 층이 더 놓인다** — 스케일을 어디에 쓸지 정하는 층. 두 주장이 직접 충돌하지는 않지만, **이 소스는 명시적으로 *"게임에서는 맞지만 현실에서는 아니다"* 라며 적용 범위를 제한한다.**
+
+> ⚠️ **화자는 그 "제3의 목표"를 파는 스텔스 회사 소속**이고, 위계를 뒷받침하는 측정은 제시하지 않는다.
+
+→ [[tech-bridge-rlhf-assistance-vs-automation]] · [[diogo-almeida]] · [[post-training-northstars]] · [[assistance-vs-automation]]

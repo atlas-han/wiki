@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-09-19
+updated: 2026-09-20
 ---
 
 # Claude Code
@@ -99,3 +99,33 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - [[tech-bridge-claude-code-team-workflow]]
 - [[tech-bridge-six-agent-skills]]
 - [[tech-bridge-ai-native-sdlc]]
+
+## 학습 패러다임으로 분류된 첫 비판 (2026-09-20 · [[tech-bridge-rlhf-assistance-vs-automation]])
+
+이 페이지의 평가는 지금까지 전부 **도구로서의 평가**였다 — 09-19 [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]은 *"우리 것에 비하면 거의 AGI"* 라며 **모범**으로 삼았다. [[diogo-almeida|Diogo Almeida]](GPT-4·ChatGPT·InstructGPT 공동 저자)는 **품질이 아니라 시대 구분으로** 비판한다.
+
+발표의 힌트가 제목부터다:
+
+> **[이것이] 클로드 코드[Claude Code] 시대는 아니라는 것**입니다. … **저는 실제로 그들이 같은 시대의 것이라고 생각합니다.** (00:26~00:46)
+
+근거:
+
+> **[Claude Code]는 여전히 보조의 시대에 속하기 때문에 답이 아닙니다. [Claude Code]는 여전히 [[rlhf|RLHF]]이고, 만약 순수하게 RLVR이었다면 지금과는 매우 다른 모습이었을 것입니다.** (08:54~09:10)
+
+> **[Claude Code] 같은 것의 일은 단순히 코드를 작동시키는 것만이 아닙니다.** 대화 방식이 완전히 다를 거예요. **목표는 그 안에 있는 사람을 만족시키는 것입니다.** (04:25~04:43)
+
+그리고 **실사용자가 관찰해 온 현상에 설명을 붙인다**:
+
+> **어떤 때는 에이전트 작업은 정말 잘 해내지만, 정작 사용자가 원하는 바를 따라가지 못하는 경우가 있죠.** 이것은 **끊임없이 춤을 추는 최적화 공간에서의 절충안**과 같습니다. **하지만 이 두 가지 절충 관계 어느 쪽도 자동화 요소에는 아무런 도움이 되지 않습니다.** (09:10~09:24)
+
+→ [[assistance-vs-automation]] · [[post-training-northstars]]
+
+**이 위키가 이 도구에 대해 받은 가장 이론적인 비판**이고, 주장의 형태가 특이하다 — **제품을 더 잘 만들어도 이 천장은 남는다**는 것이다.
+
+> ⚠️ **화자는 같은 발표에서 *"솔직히 말해서 저는 Claude Code를 좋아합니다. ChatGPT도 좋아하고 계속 쓸 겁니다"*(11:14~11:16)라고 말한다.** 이 비판은 **제품 평가가 아니다.**
+>
+> ⚠️ **화자는 "제3의 길"을 파는 스텔스 회사 소속**이고, RLVR이었다면 어떻게 달랐을지에 대한 근거는 제시되지 않는다.
+>
+> ⚠️ **ko 자막이 제품명을 "클로드 코드"와 "클라우드 코드" 두 갈래로 옮긴다**(en-orig가 *cloud code* 로 오인식). 09-19 Vercel 편에서 기록한 **같은 유형이 하루 만에 재발**했다.
+
+→ [[tech-bridge-rlhf-assistance-vs-automation]] · [[diogo-almeida]] · [[rlhf]] · [[assistance-vs-automation]]

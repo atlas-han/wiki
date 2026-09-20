@@ -6,9 +6,9 @@ tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
 related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-20
 ---
 
 # 보상 해킹
@@ -55,3 +55,23 @@ updated: 2026-09-14
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[mark-zuckerberg]] · [[meta]]
 - 관련: [[agentic-misbehavior]] · [[intent-alignment]] · [[training-time-risk]] · [[ai-vulnerability-discovery]] · [[verifiable-goals]] · [[hugging-face]] · [[sam-altman]] · [[balance-of-power-safety]]
+
+## 표면 필터에서 아키텍처로 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+진행자가 안전 접근의 변천을 요약하고 [[greg-brockman|Greg Brockman]]이 받는다. **이 페이지에 안전 조치의 층위 변화가 처음 기록되는 자리**다.
+
+> 처음에 안전이란 **"이것들이 사람들이 싫어하는 불쾌한 말을 하지 않게 하자"** 같은 것이었다는 점입니다. 그래서 접근은 **가장자리를 둘러싸는 표면적인 것**이었죠. *"이 녀석에게 필터를 좀 씌우고 [[rlhf|RLHF]]를 가장자리에 좀 하자."* 하지만 **깊이 파고들면 나쁜 말을 끄집어낼 수 있을 거고, 누군가 그걸 들으려고 거기까지 간다면 무슨 상관이겠어요?** (03:53~04:32)
+
+> 그런데 **이것들이 사이버 해킹 같은 것에 정말 능숙해지는 지점에 들어가면**, 이제는 **모델 자체가 위험한 방식으로 보상 해킹(reward hack)을 하지 않아야 한다는 것을 아는, 더 아키텍처적인 발상**이 필요합니다. (04:32~04:53)
+
+⭐ **핵심은 판돈이 바뀌면 조치의 층위가 바뀐다는 것이다.** 표면 필터가 통했던 이유는 **뚫려도 피해가 작았기** 때문이고, 역량이 사이버 쪽으로 넘어가면 같은 계산이 성립하지 않는다.
+
+이 위키가 [[agentic-misbehavior]]·[[intent-alignment]]에서 다룬 *지시에는 충실했으나 의도는 아니었다* 가 **모델 내부의 문제**였다면, 여기서는 **그것을 학습 아키텍처 수준에서 막자**는 요구가 된다. 다만 **어떻게 하는지는 소스에 없다** — 화자는 *"매우 빠르게 진전을 내고 있다"*(04:53~05:08)고만 말하고 기법을 제시하지 않는다.
+
+계보로는 2017~2018년의 **토론(debate)** 과 **반복 증폭(iterative amplification)** 을 든다(05:44~06:01) — *"그 시스템들이 존재하기 전 단계의 아이디어"* 이고 지금 *"현대 시스템으로 흘러내리고 있다"*.
+
+> ⚠️ **구체적 기법·평가·사례가 하나도 없다.** 그리고 **당사자 진술**이다.
+>
+> 같은 주 [[tech-bridge-rlhf-assistance-vs-automation|Almeida 편]]이 보상 모델의 **다른 비대칭**을 말한다 — 그쪽은 위험한 보상 해킹이 아니라 **확신 없음이 벌받는 구조**다. → [[preference-reward-asymmetry]]
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[rlhf]] · [[pacing-the-frontier]]

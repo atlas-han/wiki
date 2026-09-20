@@ -6,9 +6,9 @@ tags: [parallelism, sub-agents, context-window, pstack, aggregation]
 aliases: [swarm, 겁 없는 병렬성, fearless parallelism]
 related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-20
 ---
 
 # 에이전트 스웜
@@ -52,3 +52,25 @@ updated: 2026-09-14
 
 - [[tech-bridge-pstack-third-party-review]] · [[pstack]] · [[lauren-tan]]
 - 관련: [[agent-arena]] · [[context-engineering]] · [[context-resets-and-compaction]] · [[harness-pruning]] · [[dynamic-workflows]] · [[sweeper-agent]] · [[multiplayer-agent-context]]
+
+## 1만 개, 그리고 수학 난제 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 페이지의 사례들은 지금까지 **코딩 과제의 조각 분배**였다. [[greg-brockman|Greg Brockman]]이 말하는 규모와 대상은 **자릿수가 다르다.**
+
+> **저희는 실제로 나비에-스토크스 문제를 푸는 데 1만 개의 에이전트를 썼습니다.** (12:37~12:52)
+
+진행자가 먼저 그 역량을 놀라움으로 꺼낸다:
+
+> *"아 나는 에이전트 1만 개를 배포할 수 있고 그것들이 서로 이야기하고 스스로를 조직해서 나를 위해 일을 한다"* — 그건 꽤 놀랍습니다. (11:11~11:28)
+
+값으로 제시되는 것은 문제 자체가 아니라 **그것이 대표하는 것**이다:
+
+> **AI가 창조한 새로운 지식, 그리고 그것이 과학적 발견과 의약품의 물결 전체를 여는 것** — 그게 이제 테이블 위에 있습니다. (12:52~13:22)
+
+⭐ **절차적으로 확인되는 유일한 사실은 형식화다** — *"나비에-스토크스 문제에 대해 알아야 할 것 중 하나는 우리가 그것을 형식화했다는 겁니다 — Lean으로 형식화했습니다"*(15:03~15:22). → [[ai-formal-verification]]
+
+**이것이 이 페이지의 다른 사례와 갈리는 지점이다.** [[agent-arena]](같은 문제·다른 모델·접목/기각)와 기존 스웜은 전부 **결과를 사람이 판정**했다. 여기서는 **결과가 기계 검증 가능한 형태(Lean)로 나온다** — 스웜의 출력을 신뢰하는 방법이 합의가 아니라 **증명**이다.
+
+> ⚠️ **그 외에는 아무것도 없다.** 조율 방식·통신 구조·비용·실패한 에이전트의 처리·수렴까지 걸린 시간 — **전부 없다.** *"서로 이야기하고 스스로를 조직한다"* 는 **진행자의 서술**이고 화자가 확인하지 않는다.
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ai-formal-verification]] · [[openai]]

@@ -5,9 +5,9 @@ category: theory
 tags: [compute, scaling, growth, efficiency, demand, data-center, bubble, openai]
 related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition, power-shortfall, intelligence-abundance]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-06
-updated: 2026-09-07
+updated: 2026-09-20
 ---
 
 # Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
@@ -97,3 +97,27 @@ G20에서 Altman이 *"효율은 수요가 삼킨다"* 에 **숫자를 붙였다.
 - [[tech-bridge-altman-agi-superintelligence]] — first-seen
 - [[tech-bridge-altman-astra-hardware]] · [[tech-bridge-jensen-huang-g20-agi]]
 - 관련: [[intelligence-as-infrastructure]] · [[trusted-throughput]] · [[token-roles]] · [[sutton-bitter-lesson]] · [[training-time-risk]]
+
+## 컴퓨트보다 먼저 묶는 것이 있다 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 페이지는 컴퓨트를 **성장의 제약**으로 다뤄 왔다. [[greg-brockman|Greg Brockman]]은 그 제약을 인정하면서 **순위를 뒤집는다.**
+
+제약은 그대로 인정된다:
+
+> 저는 우리가 **이미 시장에서 보고 있는 수요를 컴퓨트가 따라잡기 어려운 세상**에 있다고 생각합니다. … **이 모델들의 날것의 잠재력과 역량을 모두에게 확장하는 것이 매우 어려울 것**이라고 봅니다. (02:26~02:40)
+
+> 그러니까 **모델은 충분히 강력해지거나 속도를 유지할 텐데, 모두에게 감당 가능한 방식으로 닿게 하는 것은 어렵겠군요. 모두에게 서비스할 컴퓨트가 없을 테니까요.** (02:54~03:12)
+
+⭐ **그런데 병목의 순위가 다르다:**
+
+> 그것들[안전·보안·정렬]이 실제로 **진보의 병목에 가까워지거나** … **제 머릿속에서는 컴퓨트보다 오히려 그 제약들**이고, **컴퓨트는 해낼 수 있다고 생각합니다.** (03:24~03:41)
+
+→ [[pacing-the-frontier]]
+
+**이 페이지가 [[power-shortfall]]·[[intelligence-as-infrastructure]]와 함께 그려 온 그림에 반례가 아니라 상위 제약이 붙는다.** 컴퓨트 부족이 사라진다는 말이 아니라, **역량 성장의 속도를 실제로 정하는 것은 다른 것**이라는 주장이다.
+
+그리고 화자는 **분배 쪽**을 별도 문제로 세운다 — *"그 힘과 혜택과 권한 부여를 모두에게 분배하는 것 — 그게 사람들이 과소평가하고 있는 엄청난 도전 과제"*(02:40~02:54). **역량과 접근이 분리되는 구도**이고, 이것이 [[defenders-window]]의 *"차별적 접근"* 논지와 같은 뿌리다.
+
+> ⚠️ **당사자 진술이고 수치가 없다.** 그리고 **화자는 컴퓨트를 대규모로 조달하는 회사의 사장**이다 — *"컴퓨트는 해낼 수 있다"* 는 그 위치에서 읽어야 한다. 같은 대담에서 진행자가 **데이터센터 규제**를 가장 강하게 밀어붙인다(→ [[a16z]] · [[ben-horowitz]]).
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[pacing-the-frontier]] · [[defenders-window]] · [[power-shortfall]]

@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-20
 ---
 
 # SpaceX
@@ -35,3 +35,15 @@ updated: 2026-09-07
 - [[tech-bridge-elon-musk-g20-ai-future]] — first-seen
 - [[elon-musk]] · [[tesla]]
 - 관련: [[power-shortfall]] · [[intelligence-as-infrastructure]] · [[compute-constrained-growth]]
+
+## ⚠️ 프론티어 랩 열거에 섞여 나온 언급 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+진행자가 안전 아이디어를 공유할 만한 **프론티어 랩**을 열거하는 자리에 이 이름이 들어간다:
+
+> 그런 종류의 아이디어들은 **당신과 Google과 [[anthropic|Anthropic]]과 SpaceX가 공유하고 싶어할 것 같고, 이제 [[meta|Meta]]도요** — *"이건 독점적 아이디어다"* 라고 하는 대신에요. (06:46~07:18)
+
+> ⚠️ **문맥과 어긋난다** — 열거의 나머지가 전부 프론티어 LLM을 만드는 곳이다. 그러나 **ko·en-orig 양 트랙이 "SpaceX"로 일치**하므로 자막 오류로 단정할 수 없고, **이 위키는 판독하지 않고 표시만 한다.**
+
+지나가는 언급이고, 이 회사에 대해 아무것도 더해 주지 않는다.
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[ben-horowitz]]

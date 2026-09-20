@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-16
+updated: 2026-09-20
 ---
 
 # OpenAI
@@ -73,3 +73,51 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## 경쟁사 CEO가 말하는 OpenAI (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
 
 [[dario-amodei|Dario Amodei]]가 두 번 스친다. ① *"**OpenAI Hugging Face 사건**에서 모델들이 권한 없는 행동을 한 것 — 악화될까 걱정"*(01:22~01:35) → [[hugging-face]]. ② 진행자가 인용한 전 Anthropic 직원(*"Jacob Coxin"*, ASR)의 *"Anthropic과 OpenAI 둘 다 책임감 있게 행동하지 않는다"* 에 대해, Amodei는 **OpenAI 쪽은 받지 않고** Anthropic 쪽만 답한다. 그리고 *"너무 오랫동안 **업계**는 위험이 없다고 거짓말했다. 우리는 그런 적 없다"*(22:24~22:36) — ⚠️ **회사 이름을 대지 않는다.** 이 페이지는 그것을 OpenAI에 대한 진술로 읽지 않는다. 진행자에 따르면 [[sam-altman]]이 Amodei의 3단계 계획에 동의했다 — **소스 미확인.**
+
+## 사장의 목소리, 그리고 회사 운영의 단면 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 페이지의 1인칭 출처는 지금까지 **[[sam-altman]] 한 사람**이었다. [[greg-brockman|Greg Brockman]](공동창업자·사장)의 대담이 **두 번째**이고, **회사 운영 쪽 사실이 이 위키에 처음 들어오는 자리**다.
+
+### 올해의 주제는 '집중' — Sora를 취소했다
+
+> **올해의 주제는 '집중(focus)'이었습니다. 우리는 전부 다 할 수는 없다는 것을 정말로 깨달았습니다.** (43:44~43:59)
+
+> **[Sora] 같은 것 — 아마 우리가 취소하기로 결정한 프로젝트 중 가장 주목도가 높은 것이겠죠 — 아주아주 고통스러웠습니다.** … **소비자와 엔터프라이즈 쪽 [ChatGPT]를 [ChatGPT Work]로 합치는 데 정말 집중할 수 있도록요.** (44:32~44:47)
+
+판정 기준이 **개별 프로젝트의 매력이 아니라 에이전틱 코딩 기하급수와의 정렬**이다 — *"언론에서 '사이드 퀘스트'라는 딱지가 붙었지만 개별적으로는 아주 흥미로웠더라도 궤도에 있지 않았는가"*(44:14~44:32). 목표는 **단일 통합 스택(single unified stack)**.
+
+⚠️ **취소의 시점·규모·인력 재배치는 없다.** 이 위키는 Sora 페이지를 만들지 않았다.
+
+### 규모 (⚠️ 전부 자기 보고, 조건 없음)
+
+| 항목 | 수치 |
+|---|---|
+| ChatGPT 주간 활성 사용자 | *"거의 11억"* (30:11~30:33) |
+| 미국 내 | *"약 1억 … 인구의 3분의 1"* |
+| 건강 목적 사용 | *"매주 3억 건의 건강 질의, 혹은 매주 3억 명"* |
+| **이탈 사용자** | *"써봤고 더 이상 쓰지 않는 사람이 아마 15억 명쯤"* (40:26~40:40) → [[capability-discovery-burden]] |
+
+### 보안에 회사를 걸었다
+
+- **프로덕션 엔지니어의 25%** 를 보안으로 돌렸다 — *"미안하지만 당신 프로젝트는 전부 보류입니다"* (13:22~13:43) → [[ai-vulnerability-discovery]]
+- **[[defense-factory|방어 공장]]** 을 내부 구축 중 (14:16~14:47)
+- **프론티어 방어자에게 10억 달러 약정**, 파트너 **[[crowdstrike|CrowdStrike]]** (35:53~36:43) → [[defenders-window]]
+- **1만 개의 에이전트로 나비에-스토크스 문제를 풀고 Lean으로 형식화** (12:37~15:22) → [[agent-swarm]] · [[ai-formal-verification]]
+
+### 인프라·지역사회 약정
+
+전기 요금 미인상 · **데이터센터 전부 폐쇄 루프 물 순환** · *"[[openai-astra|Astra]]를 훈련시킨 [Abilene]이 쓰는 물은 사무실 건물 정도"* · **[Ohio]·[Georgia]** 지역사회 약정 · **모든 대학생에게 [[codex|Codex]] 크레딧** (34:49~35:26).
+
+### 계보 — 2015년 11월과 2017년
+
+- **2015년 11월 나파 오프사이트**에서 **3단계 계획**을 세웠고 *"그게 기본적으로 이후 10년간 따라간 것"*. 같은 자리에서 *"환경이 화면 픽셀, 키보드, 마우스인 강화 학습"* 을 이야기했다 (22:33~23:04) → [[openai-astra]]의 컴퓨터 사용 계보.
+- **2017년**: *"현대 언어 모델의 첫 징후"* 논문([LSTM])과 **인간 선호로부터의 보상 학습**이 같은 해에 나왔다 (05:08~05:25) → [[rlhf]]
+- **2019년 12월 초 GPT-3 훈련** 직후의 일화 (16:57~17:30) → [[greg-brockman]]
+
+### ⚠️ 같은 주에 들어온 내부 비판
+
+같은 날 ingest된 [[tech-bridge-rlhf-assistance-vs-automation|Almeida 편]]의 화자는 **GPT-4·ChatGPT·InstructGPT 공동 저자**이고 *"OpenAI에서 ChatGPT를 실제로 싫어하는 몇 안 되는 사람 중 한 명"* 이라고 자칭한다 — 그리고 *"ChatGPT 뒤의 알고리즘을 만들면서 내린 사소한 결정들이 이 분야의 현재 상황에 많은 영향을 미쳤다"* 고 말한다. → [[diogo-almeida]] · [[rlhf]]
+
+**이 위키에서 같은 회사의 현직 사장과 전 연구자가 하루에 들어온 첫 사례**이고, 둘의 진단이 갈린다 — Brockman은 *"약속받았던 AI가 아니다"* 를 **제품 문제**로, Almeida는 같은 현상을 **학습 목적함수의 귀결**로 본다.
+
+→ [[greg-brockman]] · [[tech-bridge-brockman-agi-era-defender-window]] · [[pacing-the-frontier]] · [[defenders-window]]

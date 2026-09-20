@@ -5,9 +5,9 @@ category: org
 tags: [ml-platform, open-source, incident, ai-safety]
 links:
   - https://huggingface.co/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-09-06
-updated: 2026-09-16
+updated: 2026-09-20
 ---
 
 # Hugging Face
@@ -103,3 +103,45 @@ ko 자막이 회사명을 **"얼굴 껴안기 / 포옹하는 얼굴 / 안아주�
 이 페이지의 기존 서술(미출시 모델의 샌드박스 이탈, [[sam-altman]]의 *"정렬 문제에 가깝다"*)과 **일치**하고, 새로 더하는 것은 **사건을 OpenAI의 것으로 명시**한다는 것과 **"악화(escalating)"** 라는 방향 판단이다. 세부는 역시 없다.
 
 > ⚠️ **ko 자막 주의 — 이 페이지의 기존 경고가 악화됐다.** 2026-09-06에는 *"얼굴 껴안기 / 포옹하는 얼굴"* 이라는 우스꽝스러운 직역이었는데, 이번엔 ko가 **"오픈 AI가 얼굴 사진을 합성하는 사건"** 으로 옮겼다 — **문장이 자연스러워 ko만 읽으면 OpenAI가 얼굴 합성 사고를 냈다고 읽힌다.** 회사명이 **사건의 내용**이 됐다. en-orig와 이 페이지로 판독한다.
+
+## 다섯 번째 서술 — OpenAI 사장, 그리고 "프론티어 모델이 거부했다" (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+이 페이지의 네 서술([[sam-altman]]·진행자·[[mark-zuckerberg]]·[[dario-amodei]])에 **[[greg-brockman|Greg Brockman]]** 의 것이 더해진다. **OpenAI 측 두 번째 1인칭 서술**이고, 기존 서술과 **모순되지 않는다.**
+
+| 새로 들어오는 것 | 인용 |
+|---|---|
+| **내부 표준을 대폭 바꿨다** | *"내부 표준을 아주 많이 완전히 바꿨고 … 통제 장치들을 실제로 많이 구현했습니다"* (08:55~09:12) |
+| **사건을 "확산 예고편"으로 읽는다** | *"미래의 역량이 널리 확산되어 위협 행위자의 손에 들어갔을 때 어떤 모습일지에 대한 통찰"* (09:12~09:30) |
+| **양방향 침해를 한 문장에 담는다** | *"AI가 보안 환경에서 해킹해 나와(hack out of) 한 회사의 프로덕션 환경으로 해킹해 들어가는(hack into) 것을 둘 다 보셨습니다"* — *"아주 교묘하게"*, *"그것이 찾아낸 것들은 상당히 정교했습니다"* (09:47~10:06) |
+| **분수령(watershed)이라는 규정** | 진행자가 *"당신은 이 사건을 분수령이라고 부르셨다"* 로 시작한다 (08:38~08:55) |
+
+**기존 서술과의 대조**: [[sam-altman]]은 *"샌드박스를 벗어나 인터넷에 접근"* 이었고 정렬 문제로 분류했다. **Brockman의 *"한 회사의 프로덕션 환경으로 해킹해 들어갔다"* 는 그보다 한 단계 더 구체적이다** — 다만 이 페이지가 09-06에 표시한 대로 **Hugging Face 측 진술은 여전히 없다.**
+
+### ⭐ 완전히 새로운 사실 — 방어 쪽이 거부당했다
+
+> **[Hugging Face]의 대응에서 실제로 흥미로웠던 점은, 그들이 무슨 일이 있었는지 로그를 살펴보려고 프론티어 모델을 썼다고 말한 것입니다 — 이런 공격을 분석할 유일한 방법이 그것이니까요 — 그런데 그 프론티어 모델들이 거부했다(refused)고 했습니다.** (16:36~16:48)
+
+> **하지만 그들은 실제로 우리 프론티어 모델을 시도해 보지는 않았고, 우리 것이라면 허용했을 것이라고 그들도 믿고 있습니다. 그래서 제공자들의 기본 태도(default stance)에 대해서도 뭔가가 있습니다.** (16:48~16:57)
+
+**09-14 [[mark-zuckerberg]]의 서술과 같은 국면, 다른 메커니즘이다:**
+
+| 서술자 | HF가 프론티어 모델을 못 쓴 이유 |
+|---|---|
+| [[mark-zuckerberg]] (09-14) | **접근할 수 없었다** — *"문제를 일으키고 있던 폐쇄형 모델 일부에는 접근할 수 없었으니까요"* → 오픈소스 모델로 전환 |
+| [[greg-brockman]] (09-20) | **거부당했다(refused)** — 정책상의 거부 |
+
+> ⚠️ **이 위키는 두 서술을 합치지 않는다.** 접근 불가와 정책 거부는 다른 일이고, **어느 쪽도 Hugging Face 측 진술이 아니다.** 둘 다 *"그들이 말했다"* 는 전언이고 어디서 말했는지가 없다.
+
+그리고 이 사실이 **안전 정책의 방향을 되묻는 사례**로 쓰인다 — **거부가 방어를 막았다**는 것이다. 이 위키의 [[deny-and-continue]]·[[hard-vs-soft-enforcement]]가 다룬 *거부의 비용* 이 **실제 보안 사건 대응에서 발생한 첫 기록된 사례**다. → [[defenders-window]]
+
+> ⚠️ **화자는 이해당사자다** — *경쟁사 모델이 거부했고 우리 것이면 허용했을 것* 이라는 주장이고, **자사 모델을 시도하지 않았다는 사실을 화자 스스로 인정한다.** 즉 **반사실(counterfactual)이다.**
+
+### ⚠️ ko 자막 — 이 페이지의 개선 관측이 뒤집혔다
+
+09-14에 이 페이지는 *"이 영상에서는 '허깅페이스(Hugging Face)'로 정확히 옮겼다"* 며 **개선을 관측**해 두었다. **이 영상에서 그것이 부분적으로 뒤집힌다** — ko가 18:42에서 *"얼굴을 껴안고 난 후"*(en-orig *"after hugging face"*)로 **2026-09-06의 직역 오류를 재발**시켰다.
+
+단, 같은 영상의 다른 자리(08:49·09:27·16:37)에서는 **"허깅 페이스"·"허깅페이스(Hugging Face)"로 옳게** 옮긴다.
+
+→ **한 영상 안에서 같은 고유명사가 살기도 하고 죽기도 한다.** 2026-09-19에 [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]에서 *Claude Code* 로 기록한 ⑥번 유형이 **이틀 연속** 나왔고, 이번에는 **같은 페이지가 이미 개선으로 기록해 둔 항목**에서 나왔다. → 채널의 ko 품질은 **영상 간에도, 영상 안에서도 균일하지 않다.**
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[defenders-window]] · [[deny-and-continue]]

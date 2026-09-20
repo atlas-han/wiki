@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window]
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-09-20
 ---
 
 # Model Context Protocol (MCP)
@@ -141,3 +141,31 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 - [공식 사이트 modelcontextprotocol.io](https://modelcontextprotocol.io/introduction)
 - [[tech-bridge-agent-knowledge-four-ways]] — 스킬과의 분업 · [[agent-knowledge-sourcing]]
 - [[tech-bridge-build-time-vs-runtime-tools]] — MCP 서버가 가드레일의 자리 · [[mcp-toolbox-for-databases]] (2026-09-11)
+
+## "세상을 다시 도구화하고 있다" — 도구 층을 임시방편으로 보는 시각 (2026-09-20 · [[tech-bridge-brockman-agi-era-defender-window]])
+
+[[greg-brockman|Greg Brockman]]이 컴퓨터 사용을 설명하면서 이 프로토콜이 속한 층 전체를 **과도기로** 규정한다.
+
+> 사람들이 이 **MCP 서버들과 CLI들을 만들어 왔고, 소프트웨어의 세계를 가져다가 사람을 위한 것이 아닌 거의 뻣뻣한(stilted) 방식으로 접근 가능하게 만들어 왔습니다** — 말하자면 **세상을 다시 도구화(retooling)하고 있는 거죠.** (21:58~22:13)
+
+> *"API를 만들자, 소프트웨어니까"* 같은 건데, **만약 그것이 정말 사람처럼 행동한다면? 그냥 컴퓨터를 쓰면 안 되나?** (22:13~22:33)
+
+> **그것들은 늘 아주 이상하고 준최적으로 느껴졌습니다.** (22:33~22:49)
+
+논거는 2015년으로 거슬러 간다 — *"환경이 화면 픽셀, 키보드, 마우스인 강화 학습 … 그러면 갑자기 컴퓨터로 할 수 있는 어떤 과제든 분포 안에(in distribution) 있게 되는 거죠"*(22:49~23:04).
+
+### 이 위키가 이 방향을 세 번째로 받는다
+
+| 소스 | 어디까지 갔나 |
+|---|---|
+| [[graft\|Graft]] 편 (09-15) | **CLI vs MCP** 를 측정해 트레이드오프를 잰다 → [[push-vs-pull-context-retrieval]] |
+| [[tech-bridge-vercel-eve-filesystem-agent\|Vercel]] 편 (09-19) | **도구를 깎지 말고 파일 시스템을 줘라** → [[file-system-agent]] |
+| **이 소스** (09-20) | **도구 층 자체가 임시방편**이고 사람용 인터페이스가 목적지다 |
+
+**세 소스가 같은 방향을 서로 다른 거리에서 가리킨다.** 이 페이지가 [[model-context-protocol|MCP]]를 *표준화된 접근 경로* 로 다뤄 온 것에 대해, **가장 먼 지점에서 온 반론**이다.
+
+> ⚠️ **진행자가 즉시 지적한다** — *"그 다른 레이어를 만든 결과로 이제 또 다른 보안 과제 레이어가 생기는 거죠"*(22:13~22:33). **화자는 *"정확합니다"* 로만 받고, 컴퓨터 사용의 보안 모델은 대담 전체에서 한 번도 다뤄지지 않는다.** 보안을 40분간 이야기한 대담에서 [[prompt-injection]]·[[lethal-trifecta]]·[[agent-identity-separation]]이 통째로 비어 있다.
+>
+> ⚠️ 그리고 **MCP를 대체할 무엇이 실제로 무엇인지** — 권한·감사·재현성을 어떻게 다루는지 — 가 없다. 주장은 방향뿐이다.
+
+→ [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[openai-astra]] · [[file-system-agent]] · [[push-vs-pull-context-retrieval]]
