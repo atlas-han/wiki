@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-21
 ---
 
 # Harness Pruning
@@ -78,6 +78,24 @@ pruning은 축소가 아니라 **재배치**다.
 
 - *"과장된 시간의 방"* 이라는 자기 규정처럼, 이 팀은 **모델 개발자와 같은 조직**에 있어 모델 변화를 가장 먼저 안다. *"대부분의 제품들이 이렇게 유통기한이 짧지는 않을 것 같아요."*
 - 언제 지워도 되는지 판단하는 **기준·절차는 소스에 없다.** 사후 회고로만 이야기된다.
+
+## ⭐ 2026-09-20 — 같은 사실의 반대면
+
+[[tech-bridge-bm25-agentic-search]]의 [[jo-bergum|Bergum]]이 **이 페이지가 비용으로 본 것을 레버로 쓴다.**
+
+> **모든 최첨단 LLM 기업들이 코딩, Bash, 도구 사용에 맞춰 모델을 최적화하고 있기 때문입니다. 그러니까 여러분이 처음부터 끝까지 수행하는 작업을 그런 방향으로 진행시키면, 새로운 모델이 나올 때마다 그 모델이 더 나은 성능을 보여줄 거라는 걸 알 수 있잖아요?** (14:06~14:22)
+
+→ [[ride-the-optimization-trajectory]]
+
+| | **이 페이지** | [[ride-the-optimization-trajectory]] |
+|---|---|---|
+| 모델 진화는 | 하니스를 **dead weight로 만든다** | 시스템을 **공짜로 개선한다** |
+| 대응 | 주기적으로 **덜어낸다** | 처음부터 **궤적 위에 얹는다** |
+| 위험 | 덜어내지 않으면 짐이 된다 | **궤적이 바뀌면 통째로 틀린다** |
+
+**같은 전제 위에 서 있다** — *모델은 계속 좋아지고 하니스의 가정은 낡는다*. 결론이 갈리는 지점은 **가정을 어느 방향에 거느냐**다: 모델이 **못 하는 것**에 걸면 낡고, 모델이 **점점 잘하게 될 것**에 걸면 자동으로 개선된다.
+
+⚠️ 화자 스스로 이것을 **"편법(hack)"** 이라 부르고 한시적임을 명시한다 — *"AGI가 등장하면 그들은 그냥 브라우저를 쓸 수도 있겠죠"*(14:24~14:28).
 
 ## References
 

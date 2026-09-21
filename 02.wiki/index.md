@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-20
+updated: 2026-09-21
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-09-20
 ## Entities
 
 ### Persons
+- [[jo-bergum]] — [[hornet|Hornet]] CEO, 검색 경력 20년+. **위키에 들어온 첫 정보 검색(IR) 전공자.** *"BM25는 변하지 않았다, 사용자가 바뀌었다"* · [[retrieval-not-reasoning-bottleneck|추론은 병목이 아니다]] · [[context-window-as-floppy-disk|플로피 디스크]](검색이 AGI보다 오래 산다) · [[which-bm25-problem|어떤 BM25인가]] · [[corpus-as-filesystem-workspace|파일 시스템 워크스페이스]] · [[ir-evaluation-obsolescence|nDCG의 종말]] ([[tech-bridge-bm25-agentic-search]]) ⚠️ 자사 벤치마크는 익명 상대·축 정정 · **이름은 설명란에만**
+- [[benjamin-clavie]] — [[mixedbread|Mixedbread]]. **에이전트 아키텍처의 근거를 제도사에서 끌어온 첫 화자** — 알렉산드리아·로펌·병원. [[knowledge-agents-vs-coding-agents|코딩은 특수 사례]] · [[code-as-atypical-knowledge|'30일'이 네 가지를 뜻할 때]] · [[tool-organization-loop|도구-조직 루프]] · [[orchestrator-searcher-split|파트너/어시스턴트 분업]] · [[oracle-gap|오라클 갭]] ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 당사자 · 수치 측정 조건 없음 · **이름은 설명란에만**
+- [[jimmy-lin]] — 워털루 IR 연구 그룹. **이 위키에서 학계 IR 연구가 직접 인용된 첫 자리** — *"동적 작업 공간 확장"* 논문이 [[corpus-as-filesystem-workspace]]를 세운다 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 제3자 인용 · 저자·연도·게재처 없음
 - [[greg-brockman]] — [[openai|OpenAI]] 공동창업자·사장. **위키의 OpenAI 1인칭 소스를 [[sam-altman|Altman]] 한 사람에서 둘로 늘린 화자.** *"우리는 AGI 시대에 있다"* 인데 **어느 모델인지는 상관없다**([[agi-definition]] 네 번째 입장) · [[pacing-the-frontier|프론티어 속도 조절]] · [[defenders-window|방어자의 창]]·[[defense-factory|방어 공장]]·[[ai-formal-verification|Lean 형식화]] · 자기 사이트 [[codex|Codex]] 펜테스트 **15분 13건 / 45분 수정** · *"사람은 과제를 할 수 있어서 가치 있는 게 아니다"* ([[tech-bridge-brockman-agi-era-defender-window]]) ⚠️ 당사자 · 수치 전부 자기 보고
 - [[diogo-almeida]] — GPT-4·ChatGPT·InstructGPT([[rlhf|RLHF]]) 공동 저자, [[typesafe-ai|TypeSafe]]. **위키 첫 "설계자의 사후 비평".** *"우리가 말 그대로 그들을 루프에 집어넣었다"* · [[assistance-vs-automation|보조 vs 자동화]] · [[preference-reward-asymmetry|과대약속은 버그가 아니라 특징]] · [[smarter-software-vs-cheaper-software|더 똑똑한 소프트웨어]] · [[post-training-northstars|제3의 북극성=보정된 의사결정]] ([[tech-bridge-rlhf-assistance-vs-automation]]) ⚠️ 당사자 · eval 0건 · **이름은 설명란에만**
 - [[ben-horowitz]] — [[a16z]] 공동창업자, Brockman 대담의 진행자 측. **가장 강한 반론**(50년치 레거시·중앙집중 허니팟·탈중앙화 소비자 아키텍처)을 내고 **끝내 답을 받지 못한다.** ⚠️ *"AI가 좋아질수록 고용이 높아진다"* 등 낙관 주장의 출처가 없고 **화자 귀속도 자막으로는 확정 불가** ([[tech-bridge-brockman-agi-era-defender-window]])
@@ -83,6 +86,8 @@ updated: 2026-09-20
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[hornet]] — 에이전트를 위한 **어휘 검색 엔진**. BM25를 핵심 프리미티브로 놓고 top-K 가속에 투자 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 유일한 수치가 **익명 상대와의 비교**이고 **Y축을 정정한다**
+- [[mixedbread]] — **멀티모달 검색 + 검색 에이전트**. PDF를 OCR 없이 비전으로 읽고, 오케스트레이터/서처 분업으로 [[oracle-gap|오라클 갭]]을 10→6포인트로 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 전부 자기 보고 · ✅ **자기 한계를 먼저 말한다**
 - [[a16z]] — 벤처 캐피털. 위키에는 **팟캐스트 제작 주체**로 첫 등장 — 이 채널이 재배포한 소스 중 **투자자가 만든 매체는 처음**이다. ⚠️ 데이터센터 규제 완화·AI 낙관·고용 증가를 화자보다 강하게 주장하면서 **이해관계를 한 번도 표시하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[typesafe-ai]] — [[diogo-almeida]]가 속한 **스텔스 스타트업**. *"AI 스택을 신뢰성과 자동화를 위해 재설계한다면?"* · [[post-training-northstars|보정된 의사결정]] 최적화. ⚠️ **확인 가능한 사실이 거의 없다** — 제목이 약속한 모델 'Jev'가 **자막에 한 번도 없다** ([[tech-bridge-rlhf-assistance-vs-automation]])
 - [[crowdstrike]] — 사이버 보안 기업. [[openai|OpenAI]] **10억 달러 프론티어 방어자 약정의 파트너**로 첫 등장 — [[defenders-window]]의 **조달** 쪽 ⚠️ *"할인된 접근"* 한 문장이 전부 ([[tech-bridge-brockman-agi-era-defender-window]])
@@ -166,6 +171,7 @@ updated: 2026-09-20
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 
 ### Tools
+- [[browsecomp-plus]] — **830문항 심층 연구 벤치마크.** 도구는 `search` 하나, 골든 정답과 종단 일치로 채점. **검색 품질을 최종 정답률로 환산해 주는 첫 벤치마크** ([[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ **코퍼스 크기가 세 갈래**(10만5천 / 20만 / 10만) · 논문·저자 없음
 - [[eve-framework]] — [[vercel|Vercel]]의 에이전트 프레임워크. 자칭 *"에이전트를 위한 [[nextjs|Next.js]]"* — `skills/`·`tools/`·`channels/` 컨벤션으로 선언하면 런타임(내구성·격리·모델·연결)을 프레임워크가 배치한다 ⚠️ 수치·보안 모델 없음
 - [[nextjs]] — [[vercel|Vercel]]의 웹 프레임워크. 위키에는 [[framework-defined-agent-infrastructure|프레임워크 정의 인프라]]의 **원형**으로 — *선언이 곧 배치*
 - [[graft]] — 코딩 에이전트의 파일 탐색을 [[code-knowledge-graph|지식 그래프]] 조회로 바꾸는 무료 오픈소스 CLI + MCP. **모델을 쓰지 않는다** · 훅 셋으로 워크플로 강제 · 자체 벤치마크 162회에 토큰 −42%·비용 −32% ([[tech-bridge-graft-code-knowledge-graph]]) ⚠️ 수치 전부 자체 보고 · **코드만 매핑한다**
@@ -201,6 +207,8 @@ updated: 2026-09-20
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[bm25]] — **Best Match 25.** 30년 된 어휘 점수 함수. **위키에 페이지가 없었다.** 정확 일치·저비용·**모델이 결과를 설명 가능**(다음 쿼리 재구성에 쓴다)이 세 이유 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 텍스트에서는 프리미티브, **스캔 PDF에서는 천장**
+- [[oracle-gap]] — **완벽한 문서와 내 검색 시스템의 차이.** 정확도 절대값보다 덜 속이고 **무엇을 고칠지 알려 준다.** [[ir-evaluation-obsolescence]]가 남긴 *책임 소재* 공백을 메운다 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 오라클의 정의가 자막에서 구분되지 않음
 - [[rlhf]] — 인간 선호를 수집하고 최적화하는 post-training 절차. **위키에 2026-09-20까지 페이지가 없었고, 그 자리를 채운 것이 만든 사람의 비판이다.** *"우리가 말 그대로 그들을 루프에 집어넣었다"* · 기원은 2017년 ([[tech-bridge-rlhf-assistance-vs-automation]]·[[tech-bridge-brockman-agi-era-defender-window]])
 - [[post-training-northstars]] — post-training을 알고리즘이 아니라 **북극성**으로 구분: RLHF(인간 선호) / RLVR(정확성의 로그 오류율) / 제3(보정된 의사결정). *"API의 모양조차 다르다"* · 위계는 **올바른 작업 > 데이터 > 컴퓨트** ⚠️ 제3은 미출시 ([[tech-bridge-rlhf-assistance-vs-automation]])
 - [[ai-formal-verification]] — *"형식 검증이 안 뜬 건 틀려서가 아니라 사람에게 다루기 어려워서"* — 나비에-스토크스를 **Lean으로 형식화**한 것이 근거 ⚠️ *"AI가 검증 가능한 코드를 쓸 수 있다"* 는 한 마디뿐, **명세를 누가 쓰는가가 빠져 있다** ([[tech-bridge-brockman-agi-era-defender-window]])
@@ -224,6 +232,9 @@ updated: 2026-09-20
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[agentic-search]] — **에이전트 루프 *안에서* 일어나는 검색.** 세 부품(유능한 모델·하네스·검색 엔진)으로 쪼개면 **실패의 책임이 분리 가능해진다.** 검색이 한 번이 아니라 **궤적**이 된다 ([[tech-bridge-bm25-agentic-search]])
+- [[corpus-as-filesystem-workspace]] — 검색 결과를 컨텍스트에 밀지 말고 **파일 시스템에 펼쳐 놓고 `grep`으로 파게 한다.** [[file-system-agent]]의 **동적 판**이고 출처가 **제품이 아니라 논문** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 보안 언급 0
+- [[orchestrator-searcher-split]] — 로펌의 **파트너/어시스턴트**. 메인은 쪼개고 서처가 조사해 **메모**를 올린다. **분업을 이득으로 셈한 첫 소스** ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 검증·승인 게이트 없음
 - [[agent-client-protocol]] — **클라이언트 → 에이전트** 방향의 개방형 표준(ACP). JSON-RPC·권한 요청·`_` 커스텀 메서드로 *사용이 표준을 형성*
 - [[agentic-stack-decomposition]] — **클라이언트 · 하네스 · 도구(MCP) · 모델** 네 구성 요소를 각각 독립 배치
 - [[brain-hands-decoupling]] — Claude+harness와 sandbox/tool을 좁은 인터페이스로 분리하는 설계 원칙
@@ -235,6 +246,15 @@ updated: 2026-09-20
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[retrieval-not-reasoning-bottleneck]] — **증거를 쥐여 주면 모델은 답한다.** 못 답하는 건 못 찾아서다. 이 위키의 *더 생각하게 하라* 처방들([[true-cost-to-perfect-answer]]·[[token-roles]]) **앞에 오는 질문** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 수치 0
+- [[context-window-as-floppy-disk]] — **검색이 AGI보다 오래 산다.** *"완벽한 모델을 얻어도 컨텍스트는 플로피 한 장"* — 위키에서 **"모델이 좋아져도 남는다"로 분류된 몇 안 되는 문제** ([[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 35만 토큰은 **화자 의견**
+- [[knowledge-agents-vs-coding-agents]] — **코딩은 지식 노동의 특수 사례다.** [[knowledge-work-agent-gap]]과 **같은 현상 다른 진단** — 인프라가 아니라 **도메인과 과제 형태**, 그리고 **사람이 이미 쪼개 준다** ([[tech-bridge-knowledge-agents-not-coding-agents]])
+- [[code-as-atypical-knowledge]] — **'30일'이 마감·유예·보존규칙으로 갈릴 때.** *"지식 노동에는 함수 정의가 없습니다"* — [[reference-graph-vs-vector-search]]·[[code-only-index-blind-spot]]과 **세 각도에서 같은 선** ([[tech-bridge-knowledge-agents-not-coding-agents]])
+- [[tool-organization-loop]] — 도구와 조직은 **하나의 자기 최적화 루프**. 피나케스→검색엔진, 박식가→관료제. **에이전트 설계의 근거를 제도사에서** ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ **분업의 비용 항이 없다**
+- [[tools-are-not-neutral]] — 도구가 정하는 건 **가능한가가 아니라 할 만한가**. *"25번이면 아무도 안 쓰고 8번이면 도입한다"* — 정확도가 같은데 **채택이 갈린다** ([[tech-bridge-knowledge-agents-not-coding-agents]])
+- [[which-bm25-problem]] — **기준선이 약하면 개선폭은 기준선의 약함을 잰 것이다.** ⭐ **서로 다른 회사의 두 발표자가 같은 날 독립적으로, 각자 자기에게 불리한 방향으로 같은 지적** ([[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]])
+- [[ir-evaluation-obsolescence]] — nDCG·단일 쿼리 평가는 **끝났다.** 위키의 평가 축이 세 번 *더 잘게* 밀려 온 뒤 **처음으로 방향이 뒤집힌다** — 더 크게 묶어서 재라 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 대안 프로토콜 없음
+- [[llm-as-search-user]] — **함수가 아니라 사용자가 바뀌었다.** AOL 로그의 몇 단어 vs 긴 쿼리·구문 연산자·재구성. **낡은 도구를 되살리는 역전** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 궤적 분석 수치는 블로그로 넘긴다
 - [[assistance-vs-automation]] — **난이도가 아니라 목적함수가 가른다.** 왼쪽 과제의 목표는 *루프 안의 사람을 만족시키는 것*, 오른쪽은 *사람을 루프에서 없애는 것*. [[workflow-vs-agent]]와 **축이 다르다** — 루프가 동적이어도 사람을 만족시키면 여전히 보조 ([[tech-bridge-rlhf-assistance-vs-automation]])
 - [[preference-reward-asymmetry]] — **과대약속·환각은 버그가 아니라 설계상의 결과.** *확신 없음* 은 알아보기 쉽고 *틀림* 은 어려워서 **불확실성 표현만 일관되게 벌받는다.** 위키가 받은 환각의 첫 구조적 설명 ⚠️ 형식 논증 없음 · 같은 날 [[tech-bridge-brockman-agi-era-defender-window|Brockman 편]]과 정면 충돌 ([[tech-bridge-rlhf-assistance-vs-automation]])
 - [[smarter-software-vs-cheaper-software]] — *"SaaS는 2019년 이후 챗봇이 옆에 붙은 것 말고 변한 게 없다"* · **우리가 자동화한 것은 소프트웨어를 쓰는 과정뿐이고 접근성은 그대로다.** [[ambitious-software]]와 **같은 불만, 다른 처방**(규모 vs 종류) ([[tech-bridge-rlhf-assistance-vs-automation]])
@@ -286,6 +306,8 @@ updated: 2026-09-20
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[ride-the-optimization-trajectory]] — **랩들이 최적화 중인 방향에 얹으면 모델 교체가 공짜 업그레이드가 된다.** 화자 스스로 *"편법(hack)"*. [[harness-pruning]]의 **반대면** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 명시적으로 **한시적 베팅**
+- [[retrieval-primitive-repertoire]] — `grep`·BM25·시맨틱은 **프리미티브**이고 모델이 전부를 알아야 한다. ⚠️ **학습 데이터가 도구 선택을 편향시킨다** — 위키가 처음 받는 도구 실패 모드. [[ride-the-optimization-trajectory]]의 **청구서** ([[tech-bridge-knowledge-agents-not-coding-agents]])
 - [[defense-factory]] — 취약점 **발견→분류→교정→배포→검증**을 기계 속도로 도는 상시 파이프라인. 트리거가 사건이 아니라 **모델 릴리스**이고 완료 기준이 **"포화"**(이 모델이 더는 찾지 못하는 상태) ⚠️ **자동 교정·배포의 안전장치가 한 마디도 없다** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[capability-discovery-burden]] — *"사람들이 AI로부터 무엇을 할 수 있는지 추출해 내야 해서는 안 된다"* · **써봤다가 떠난 15억 명.** [[learning-curve-as-feature]]가 곡선을 기능이라 불렀다면 이쪽은 **곡선을 오르지 않은 사람들** ⚠️ 수치 근거 없음 ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[file-system-agent]] — 전용 도구를 깎는 대신 **모델이 이미 훈련된 범용 도구**(list·read·bash·grep)를 주고 지식을 파일로 펼쳐 에이전트가 탐색하게 한다. [[vercel|Vercel]]이 [[claude-code|Claude Code]]에서 배웠다고 말하는 설계 ⚠️ 보안이 통째로 비어 있다
@@ -491,6 +513,8 @@ updated: 2026-09-20
 ---
 
 ## Sources
+- [[tech-bridge-bm25-agentic-search]] — BM25는 왜 에이전트 검색에서 비정상적으로 효과적인가 ([[jo-bergum|Jo Kristian Bergum]] / [[hornet|Hornet]], 18:00). **위키 첫 IR 전공자 소스** — 병목은 추론이 아니라 검색, 컨텍스트는 플로피 한 장, 그리고 *"어떤 BM25인가"*
+- [[tech-bridge-knowledge-agents-not-coding-agents]] — 코딩 에이전트가 아니라 지식 에이전트로 설계하라 ([[benjamin-clavie|Benjamin Clavié]] / [[mixedbread|Mixedbread]], 17:26). **근거를 제도사에서** — 코드는 예외적 지식이고, 사람이 이미 문제를 쪼개 준다
 - [[tech-bridge-vercel-eve-filesystem-agent]] — 세 번 실패하고 파일 시스템에 닿다: Vercel의 D0와 Eve ([[andrew-qu|Andrew Qu]], 17:06, 2026-09-18 업로드)
 - [[tech-bridge-voice-agent-failure-modes]] — 보이스 에이전트가 프로덕션 첫 주에 무너지는 다섯 자리 ([[venky-b|Venky B]] / [[plivo|Plivo]], 26:18, 2026-09-18 업로드)
 
@@ -576,6 +600,6 @@ updated: 2026-09-20
 
 ## 통계
 
-- 총 페이지 수: 537 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 518 → 537, + 2026-09-19 Tech Bridge 2편: source 2 + concept 11 + entity 6)
+- 총 페이지 수: 561 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 537 → 561, + 2026-09-20 Tech Bridge 2편: source 2 + concept 16 + entity 6)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-20 (Tech Bridge **2편**, **열이레 연속** — 09-19 업로드분. **같은 회사의 안과 밖이 하루에 들어온 날이다.** [[tech-bridge-brockman-agi-era-defender-window|Brockman 편]]은 위키의 [[openai]] 1인칭 소스를 둘로 늘리고 **보안을 회사 전략의 축으로 처음 세웠다** — [[defenders-window]] 아래 [[defense-factory]]·[[ai-formal-verification]], 그리고 [[agi-definition]]에 **네 번째 입장**(선언하되 모델을 가리키지 않는다 → [[pacing-the-frontier]])과 [[jagged-capability-frontier]]가 붙었다. [[hugging-face]] 사건의 **다섯 번째 서술**에서 *프론티어 모델이 거부했다* 가 새로 들어왔고, [[openai-astra]]가 **두 번째 1인칭 출처**와 **처음 지목된 한계**를 받았다. **위키 첫 [[greg-brockman]]·[[ben-horowitz]]·[[a16z]]·[[crowdstrike]]**. [[tech-bridge-rlhf-assistance-vs-automation|Almeida 편]]은 **RLHF를 만든 쪽의 사후 비평**이고, 그 덕에 **이 위키에 [[rlhf]] 페이지가 없었다는 사실이 드러났다** — [[assistance-vs-automation]]이 [[workflow-vs-agent]] 위에 목적함수라는 층을 놓고, [[preference-reward-asymmetry]]가 환각의 **첫 구조적 설명**을 준다. **두 편이 환각에 대해 정반대를 말하는데 어느 쪽도 측정을 제시하지 않아 대조만 기록했다.** **위키 첫 [[diogo-almeida]]·[[typesafe-ai]]**.)
+- 마지막 ingest: 2026-09-21 (Tech Bridge **2편**, **열여드레 연속** — 09-20 업로드분. **검색이 이 위키의 주제가 된 날이다.** 지금까지 검색은 늘 무언가의 부품이었고([[retrieval-augmented-generation|RAG]]는 지식 조달의 한 갈래, [[reference-graph-vs-vector-search]]는 코드 인덱싱의 방법론), **[[bm25|BM25]] 페이지조차 없었다.** [[tech-bridge-bm25-agentic-search|Bergum 편]]이 **위키 첫 IR 전공자 소스**로 [[agentic-search]]를 세 부품으로 쪼개고, [[retrieval-not-reasoning-bottleneck|증거를 쥐여 주면 모델은 답한다]]는 분리 실험으로 **이 위키의 *더 생각하게 하라* 처방들 앞에 오는 질문**을 만든다. [[context-window-as-floppy-disk|플로피 디스크]]는 **검색을 "모델이 좋아져도 남는다"로 분류**해 [[harness-pruning]]의 소멸 경로에서 빼내고, [[ride-the-optimization-trajectory]]는 이 위키가 [[file-system-agent]]에서 관측만 하던 것에 **이유**를 붙인다(화자 스스로 *"편법"*). [[tech-bridge-knowledge-agents-not-coding-agents|Clavié 편]]은 [[knowledge-work-agent-gap]]과 **같은 현상에 두 번째 진단**을 댄다 — 인프라가 아니라 **도메인과 과제 형태**, 그리고 ⭐ **사람이 이미 문제를 쪼개 준다**([[goal-level-delegation]]의 "목표"조차 분해의 산출물이다). **⭐ 두 영상이 자막 안에서 서로를 지목하는 채널 첫 사례**이고, 세 자리에서 독립 수렴한다 — [[which-bm25-problem]](**둘 다 자기에게 불리한 방향으로**) · [[oracle-gap]](같은 양을 정성/정량으로) · 컨텍스트를 늘려도 안 된다. **한 자리에서는 정면으로 갈린다** — 모델이 `grep`에 익숙하다는 같은 사실이 [[ride-the-optimization-trajectory|레버]]이자 [[retrieval-primitive-repertoire|편향]]이고, **갈리는 조건(도메인)을 두 소스 다 명시하지 않는다.** **위키 첫 [[jo-bergum]]·[[hornet]]·[[benjamin-clavie]]·[[mixedbread]]·[[browsecomp-plus]]·[[jimmy-lin]]**. ⚠️ **두 편 다 보안·프롬프트 인젝션을 한 번도 다루지 않는다.**)

@@ -5,9 +5,9 @@ category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
 related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents]
 created: 2026-09-05
-updated: 2026-09-17
+updated: 2026-09-21
 ---
 
 # Goal-Level Delegation
@@ -86,6 +86,18 @@ Claude Code 팀이 *녹취록을 안 본다*고 했다면 여기서는 *모드·
 위임 단위의 또 다른 척도가 **세션 길이**다 — [[tech-bridge-altman-agi-superintelligence]]: *"ChatGPT 작업 세션을 34시간 동안 돌리고 논문 2,000편"*, *"많은 사람들이 하루 이상 작동하도록 만들 수 있습니다."* 그리고 반대쪽 끝의 **20분짜리 승리**(우체국 양식을 [[codex|Codex]]에 맡기기). 위임 단위가 커지는 것과 작은 위임이 흔해지는 것이 동시에 일어난다.
 
 **전제 조건이 같다.** 이 페이지는 *모델 품질*을 전환 조건으로 두었고, Altman도 컴퓨터 사용이 [[openai-astra|Astra]]에서 *"인간 수준에 도달한 것 같은"* 뒤에야 이렇게 됐다고 한다 — *"항상 너무 느리거나 제대로 작동하지 않았어요."* ⚠️ 체감 진술. 그리고 이 페이지의 *"녹취록 감시를 없앤 자리를 산출물 검증이 메운다"* 에 해당하는 것이 소비자 쪽에는 **없다** — Altman은 무엇이 신뢰를 대신하는지 말하지 않는다. [[intent-alignment]]에서 그가 *"의도를 이해하고 안정적으로 실행하는 능력이 병목"* 이라 한 것이 그 빈칸의 이름이다.
+
+## ⭐ 2026-09-20 — "목표"조차 사람이 한 번 쪼갠 결과다
+
+[[benjamin-clavie|Benjamin Clavié]]가 [[tech-bridge-knowledge-agents-not-coding-agents]]에서 이 페이지가 세운 사다리 밑에 **한 칸을 더 그린다.**
+
+> 우리가 인지하지 못하는 사이에 **코딩 에이전트와 상호작용할 때, 에이전트에게 매우 [좁은] 작업만 부여하기 때문입니다.** (…) **모든 것이 항상 특정 티켓의 기능이나 당면 과제에 관한 것입니다.** (04:24~04:41)
+
+> **코드에서는, [Claude Code]를 사용할 때 여러분이 그 작업을 직접 하고 있습니다. 여러분은 이미 쿼리를 쪼개 놓았고, 무엇을 하고 싶은지 알고 있으며, [Linear] 티켓 같은 걸 가지고 있죠.** (12:06~12:19)
+
+**즉 "목표 수준 위임"의 목표는 이미 분해의 산출물이다.** [[plan-to-ticket-pipeline]]·[[sprint-contract]]·[[intent-md]]가 전부 **사람이 하는 그 분해 노동의 형태**이고, 이 위키는 그것을 *에이전트에게 잘 건네는 법*으로만 읽어 왔다.
+
+**그리고 개방형 문제에는 그 산출물이 없다** — *"현실에서는 아주 개방적인 문제를 가진 고객이 있고, 여러분이 직접 그것을 쪼개야 하고, 여러분의 에이전트도 스스로 그것을 쪼개야 합니다"*(12:19~12:28). → [[orchestrator-searcher-split]]이 그 분해를 **에이전트 안으로 옮기는** 처방이고, [[knowledge-agents-vs-coding-agents]]가 왜 코딩에서만 그것이 불필요했는지를 설명한다.
 
 ## References
 

@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search]
 created: 2026-08-31
-updated: 2026-09-19
+updated: 2026-09-21
 ---
 
 # Agent Skills
@@ -240,6 +240,18 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 그리고 스킬의 **유통**에도 한 줄이 붙는다: Vercel은 `skills.sh`를 만들어 *"에이전트 스킬을 찾고 직접 실행하는 가장 인기 있는 방법"* 이라고 주장한다(⚠️ 근거 없음). [[eve-framework|Eve]]에서는 스킬이 **`skills/` 폴더라는 컨벤션**이 된다 → [[framework-defined-agent-infrastructure]].
 
 ⚠️ **승격 게이트가 없다** — 증류를 누가 검토하는지, 100개가 서로 충돌하지 않는지, 낡은 스킬이 어떻게 폐기되는지 소스가 말하지 않는다.
+
+## 2026-09-20 — progressive disclosure가 검색 결과에 적용됐다
+
+[[jo-bergum|Bergum]]이 [[tech-bridge-bm25-agentic-search]]에서 **스킬의 점진적 정보 공개를 검색된 문서에 그대로 옮긴다.**
+
+> 이 작업 공간을 **파일 시스템처럼 구성하면 [스킬]에서 사용하는 것과 같은 방식으로 활용할 수 있습니다. 점진적 정보 공개(progressive disclosure) 방식을 이용할 수 있습니다.** 문서 제목과 문서의 일부 내용만 가져와서 모델에 노출할 수 있기 때문입니다. **그러면 모델은 '아, 문서를 더 읽어봐야겠군'이라고 판단할 수도 있습니다.** (13:09~13:31)
+
+→ [[corpus-as-filesystem-workspace]]
+
+**이 위키는 progressive disclosure를 *사람이 쓴 문서의 계층화*로만 봐 왔다** — 스킬 파일의 앞머리, [[three-tier-ai-skill-stack]]의 층, [[minimizing-reader-load]]. 여기서는 **검색 결과에 자동으로 붙는다**: 제목 + 스니펫이 1층이고, 본문이 2층이며, **무엇을 펼칠지는 모델이 정한다.**
+
+즉 **스킬에서 나온 규율이 스킬 밖의 임의 코퍼스에 적용 가능한 패턴이었다**는 것이 이번에 드러난 것이다.
 
 ## References
 

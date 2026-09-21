@@ -5,9 +5,9 @@ category: theory
 tags: [indexing, context-engineering, documentation, limits]
 related: [file-discovery-tax, code-knowledge-graph, llm-coding-guidelines, agent-memory, context-engineering]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-21
 ---
 
 # Code-Only Index Blind Spot
@@ -35,6 +35,14 @@ updated: 2026-09-15
 **셋을 하나로 잇는 소스는 아직 이 위키에 없다.**
 
 > [[ai-labs]]는 이 빈자리를 **자체 수정판**으로 메웠다고 말하고 그것을 자사 커뮤니티에 올려 두었다고 한다 — **어떻게 고쳤는지는 소스에 없다.**
+
+## 2026-09-20 — 세 번째 각도
+
+[[code-as-atypical-knowledge]]([[benjamin-clavie|Clavié]])가 같은 경계선을 **도구가 아니라 지식의 성질** 쪽에서 긋는다 — 코드에는 **견고한 단서와 함수 정의**가 있고 산문에는 없다.
+
+**이 페이지의 표에 한 줄이 더 붙는 셈이다**: 코드 밖의 파일들이 남는 이유는 *도구가 아직 안 다뤄서*가 아니라 **참조로 그래프를 만들 수 있는 구조가 애초에 없어서**다. 그래서 이 위키가 적어 둔 *"같은 방법이 통하지 않는다"* 는 **도구의 한계가 아니라 도메인의 성질**로 다시 읽힌다.
+
+⚠️ 그리고 [[benjamin-clavie|Clavié]]의 처방은 이 페이지가 기다리던 *셋을 하나로 잇는 소스*가 **아니다** — 그는 **다른 프리미티브를 더하고**([[retrieval-primitive-repertoire]]) **조직으로 푼다**([[orchestrator-searcher-split]]). **인덱스를 확장하지 않는다.**
 
 ## References
 

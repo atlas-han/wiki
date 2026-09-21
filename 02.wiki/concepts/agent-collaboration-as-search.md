@@ -6,9 +6,9 @@ tags: [agent-to-agent, multi-agent, search, retrieval, privacy, coase-theorem, c
 aliases: [A2A as search, 에이전트 대 에이전트, 단일 전지 에이전트]
 related: [context-engineering, retrieval-augmented-generation, long-context-agents, agent-distributed-systems, persistent-agent-teams, sweeper-agent, black-box-agent-approach, privacy-auto-mode, sutton-bitter-lesson]
 first-seen: tech-bridge-agent-to-agent-as-search
-sources: [tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-agent-to-agent-as-search, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-21
 ---
 
 # 에이전트 간 협업은 검색 문제다
@@ -65,6 +65,22 @@ updated: 2026-09-10
 - 코즈 정리는 **비유**로만 쓰인다 — 거래 비용의 크기나 내부화 방법은 없다.
 - 수치 없음. 당사자 진술(에이전트 간 협업이 자기 사업의 전제).
 - 화자의 마지막 유보 — *"에이전트가 프라이버시 결정을 전부 내리는 미래를 신뢰하는가? 잘 모르겠다."*
+
+## ⭐ 2026-09-20 — 같은 문장이 비유가 아니라 직업이 되었다
+
+이 페이지의 출발 문장(*"대부분의 LLM 시스템은 그냥 검색 문제"*)은 [[jean-denis-greze|Greze]]가 **멀티 에이전트를 설명하기 위해** 쓴 재해석이었다. [[tech-bridge-bm25-agentic-search]]에서 **검색을 20년 해 온 사람이 같은 자리에 선다** — 그리고 문장에서 멈추지 않고 **모델·하네스·엔진으로 쪼갠 뒤 어디가 병목인지 실험으로 가른다**([[retrieval-not-reasoning-bottleneck]]). → [[agentic-search]]
+
+**분업의 값에 대해서는 이 페이지와 [[orchestrator-searcher-split]]이 정반대로 셈한다.**
+
+| | **이 페이지** ([[jean-denis-greze\|Greze]]) | [[orchestrator-searcher-split]] ([[benjamin-clavie\|Clavié]]) |
+|---|---|---|
+| 이상 | **단일 전지 에이전트** | **분업 구조** — 파트너/어시스턴트 |
+| 멀티 에이전트는 | 이상의 **근사**(손실) | **유일한 길**(이득) |
+| 제약의 출처 | **프라이버시**라는 거래 비용 | **컨텍스트 용량**과 **문제의 개방성** |
+
+⚠️ **모순은 아니다.** 이 페이지의 이상적 단일 에이전트는 *모든 정보를 볼 수 있다*고 가정하는데, 저쪽은 **볼 수 있어도 컨텍스트에 안 들어간다**고 말한다 — *"1억 토큰도 한 개 주 법전의 절반 미만"*. **프라이버시 제약이 사라져도 용량 제약은 남는다.**
+
+그리고 이 페이지가 기록한 실패 형태 — *"LLM이 실수해서 정보 하나가 틀리면 영원히 오염된다"* — 는 **서처가 올리는 메모에 그대로 적용되는데 [[benjamin-clavie|Clavié]]는 그것을 다루지 않는다.**
 
 ## References
 

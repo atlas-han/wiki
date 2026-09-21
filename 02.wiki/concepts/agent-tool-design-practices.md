@@ -6,9 +6,9 @@ tags: [tool-design, mcp, agent-tooling, errors, read-write, api-design]
 aliases: [도구 품질 모범 사례, 결과 중심 도구, 조치 가능한 오류]
 related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents]
 created: 2026-09-11
-updated: 2026-09-19
+updated: 2026-09-21
 ---
 
 # 에이전트용 도구 설계 모범 사례 다섯
@@ -81,6 +81,21 @@ REST의 자원 단위(GET /orders, DELETE /orders/1)가 아니라 **의도 단�
 | 위험 | 유출·권한 오용 | ⚠️ **소스가 다루지 않음** |
 
 이 페이지가 세운 [[build-time-vs-runtime-tools]] 축이 정확히 적용된다 — *빌드타임 도구를 프로덕션에 두지 마라* 의 반대편에서 *탐색용 도구는 좁히지 마라* 가 나온 셈이다. **두 소스는 서로를 모른다.** ⚠️ Vercel 편은 보안·권한을 한 번도 다루지 않으므로, 이 페이지의 규칙이 그쪽에서 반박된 것이 아니라 **그쪽 범위 밖**이다.
+
+## 2026-09-20 — 네 번째 실패 모드: 학습 데이터가 선택을 편향시킨다
+
+[[benjamin-clavie|Clavié]]가 [[tech-bridge-knowledge-agents-not-coding-agents]]에서 **이 위키가 아직 갖고 있지 않던 형태의 도구 실패**를 지목한다.
+
+> 자주 보게 되는 한 가지는 **에이전트가 [`grep`] 쿼리를 쓰려고 한다는 것입니다. [`grep`]은 학습 데이터 어디에나 있고 BM25도 데이터 어디에나 있으니까요. 그리고 그게 항상 필요한 것은 아닙니다.** (…) **PDF는 [`grep`] 할 수 없습니다.** (16:06~16:23)
+
+| 실패 모드 | 원인 |
+|---|---|
+| 도구를 못 찾는다 | 발견 비용 → [[capability-discovery-burden]] |
+| 도구가 너무 많다 | 선택 과부하 → **이 페이지** |
+| 설명이 나쁘다 | 인터페이스 → [[build-a-lever]] |
+| **도구가 있는데 익숙한 쪽으로 간다** | **학습 데이터 분포** → [[retrieval-primitive-repertoire]] |
+
+**네 번째는 도구 설계로 고쳐지지 않는다** — 소스의 처방은 **공동 설계(co-design)** 이고, 모델이 그 도구에 훈련돼 있을 것을 요구한다. ⚠️ **그런데 그것은 도구 제작자가 통제할 수 없는 변수이고, 소스는 그 비대칭을 지적하지 않는다.**
 
 ## References
 

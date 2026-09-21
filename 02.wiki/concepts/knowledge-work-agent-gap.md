@@ -6,9 +6,9 @@ tags: [knowledge-work, agent-infrastructure, primitives, bottleneck]
 aliases: [지식 노동 격차, six primitives]
 related: [agent-action-record, agent-governance-layers, action-reversibility, agent-org-adoption, trusted-throughput, generator-evaluator-pattern, company-brain, secure-tool-evolution]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-build-time-vs-runtime-tools, tech-bridge-knowledge-agents-not-coding-agents]
 created: 2026-09-09
-updated: 2026-09-11
+updated: 2026-09-21
 ---
 
 # 지식 노동 에이전트 격차
@@ -29,6 +29,24 @@ updated: 2026-09-11
 | **검증** | 테스트·타입·컴파일러·linter가 사람 없이 루프를 닫음 | *"이게 애초에 나갔어야 했는가"* 를 물을 검사가 없음 |
 | **거버넌스** | 브랜치·리뷰어·code owner·배포 분리 | 권한이 흩어져 결국 프롬프팅으로 처리 |
 | **가역성** | `revert`·`bisect` | 발송·송금·hard delete에 undo 없음 |
+
+## ⭐ 2026-09-20 — 같은 현상에 두 번째 진단이 붙었다
+
+[[benjamin-clavie|Benjamin Clavié]]([[mixedbread|Mixedbread]])가 [[tech-bridge-knowledge-agents-not-coding-agents]]에서 **같은 관측에서 출발해 다른 원인을 댄다.**
+
+| | **이 페이지** ([[karan-vaidya\|Vaidya]], 09-09) | [[knowledge-agents-vs-coding-agents]] ([[benjamin-clavie\|Clavié]], 09-20) |
+|---|---|---|
+| 왜 코딩만 되나 | **인프라**가 코딩 주변에만 있다 — 여섯 primitive | **도메인과 과제 형태**가 다르다 |
+| 코드의 무엇이 다른가 | (다루지 않음) | **견고한 단서**·**`grep` 가능성** → [[code-as-atypical-knowledge]] |
+| 결정적 차이 | — | ⭐ **사람이 이미 문제를 쪼개 준다** — *"[Claude Code]를 쓸 때 여러분이 그 작업을 직접 하고 있습니다"* |
+| 처방 | 없는 primitive를 **짓는다** | **조직을 짓는다** → [[orchestrator-searcher-split]] |
+| 배우는 곳 | 소프트웨어 엔지니어링 인프라 | **인류의 지식 노동사** → [[tool-organization-loop]] |
+
+**배타적이지 않고 층이 다르다.** Vaidya는 *에이전트가 손댈 수 있는 세계가 없다*, Clavié는 *손댈 수 있어도 문제를 쪼개 주지 않으면 못 한다*. **겹쳐 읽으면 코딩 에이전트의 성공에는 세 겹의 보조바퀴가 있었다** — 인프라 · 도메인의 명시성 · **사람의 사전 분해.**
+
+세 번째가 이 위키에서 가장 새롭고, **[[goal-level-delegation]]이 기록한 "목표 수준으로 올라갔다"조차 사람이 이미 한 번 쪼갠 결과**임을 지목한다.
+
+> ⚠️ **두 화자 다 당사자다** — 한쪽은 인프라를, 다른 쪽은 검색·에이전트를 판다.
 
 ## 왜 이 프레이밍이 유용한가
 

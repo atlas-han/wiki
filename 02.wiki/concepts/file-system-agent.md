@@ -6,9 +6,9 @@ tags: [agents, tools, context, sandbox, claude-code, emergent-behavior]
 aliases: [파일 시스템 에이전트, file-system agent, 최소 도구 세트]
 related: [agent-tool-design-practices, agent-knowledge-sourcing, context-engineering, agent-harness-design, claude-code, build-time-vs-runtime-tools]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-21
 ---
 
 # 파일 시스템 에이전트
@@ -65,6 +65,23 @@ updated: 2026-09-19
 - **"잘 훈련된 도구"의 범위**가 정의되지 않는다 — 어떤 도구가 모델에게 친숙한지 판정하는 기준이 없다.
 - **파일 시스템에 무엇을 어떻게 놓을지**가 없다. 시맨틱 레이어를 *"통째로 부었다"* 뿐이고, 구조·크기·갱신 주기가 없다.
 - 이 패턴이 **탐색적 질의 이외의 작업**(쓰기·트랜잭션·되돌릴 수 없는 조치)에도 통하는지 소스가 말하지 않는다. → [[action-reversibility]]
+
+## ⭐ 2026-09-20 — 이틀 만에 같은 구조가 검색 도메인에서, 이번엔 논문으로
+
+[[tech-bridge-bm25-agentic-search]]가 [[jimmy-lin|워털루 지미 린 그룹]]의 논문 *"동적 작업 공간 확장을 통한 직접적인 코퍼스 상호 작용 확장"* 을 인용한다. **검색 결과를 컨텍스트에 밀어 넣는 대신 파일 시스템 워크스페이스에 펼쳐 놓고 `grep`·`ripgrep`·`sed`·`awk`로 파고들게 한다.** → [[corpus-as-filesystem-workspace]]
+
+| | **이 페이지** ([[vercel\|Vercel]], 09-19) | [[corpus-as-filesystem-workspace]] (09-20) |
+|---|---|---|
+| 출처 | **제품** — 세 번 실패하고 도달 | **논문** |
+| 무엇이 놓이나 | 회사의 **지식·컨텍스트** | **검색 결과** |
+| 언제 채워지나 | 미리 | **쿼리마다** — *동적* 확장 |
+| 도구 | `grep`·bash | **같다** |
+
+**핵심 차이는 워크스페이스가 정적이냐 동적이냐다.**
+
+그리고 [[jo-bergum|Bergum]]이 **이 위키가 관측만 하고 이유를 대지 못했던 것에 설명을 붙인다** — 파일 시스템이 본질적으로 우월해서가 아니라, *"모든 최첨단 LLM 기업들이 코딩, Bash, 도구 사용에 맞춰 모델을 최적화하고 있기 때문"* 이고 그래서 *"새로운 모델이 나올 때마다 더 나은 성능을 보여줄 거라는 걸 알 수 있다"*(14:01~14:22). **화자 스스로 이것을 "편법(hack)"이라 부른다.** → [[ride-the-optimization-trajectory]]
+
+⚠️ **그리고 이 페이지에서 기록한 보안 공백이 그대로 재발한다.** 저쪽은 **신뢰할 수 없는 웹 문서**를 작업 공간에 놓고 bash를 붙이는 구조인데 [[prompt-injection]]·[[lethal-trifecta]]를 **한 번도 언급하지 않는다.** 이틀 연속 같은 공백이다.
 
 ## References
 

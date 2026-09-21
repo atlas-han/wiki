@@ -6,9 +6,9 @@ tags: [long-context, agent, tool-calls, context-window, minimax]
 aliases: [긴 컨텍스트, 100만 토큰 컨텍스트]
 related: [context-engineering, context-resets-and-compaction, sparse-attention, agent-distributed-systems, attention-mechanism]
 first-seen: tech-bridge-minimax-m3-long-context
-sources: [tech-bridge-minimax-m3-long-context]
+sources: [tech-bridge-minimax-m3-long-context, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-21
 ---
 
 # Long-Context for Agents
@@ -62,6 +62,22 @@ updated: 2026-09-08
 - **1천만 → 100만**의 이유.
 - **길이가 늘면 정말 compaction이 필요 없어지는가** — 소스가 다루지 않는다. 비용 축(긴 컨텍스트는 싸지 않다)도 없다.
 - *"functional한 100만"* 의 기준 — 무엇을 통과해야 실효 길이로 치는지 벤치마크가 제시되지 않는다.
+
+## ⭐ 2026-09-20 — 정면으로 만나는 두 반론
+
+같은 날 같은 무대의 두 발표가 **"컨텍스트를 늘리면 해결된다"를 각자 다른 근거로 부정한다.**
+
+| | [[jo-bergum\|Bergum]] ([[tech-bridge-bm25-agentic-search]]) | [[benjamin-clavie\|Clavié]] ([[tech-bridge-knowledge-agents-not-coding-agents]]) |
+|---|---|---|
+| 한계의 근거 | **품질 저하** — *"품질 저하가 시작되기 전까지 약 35만 개의 토큰"*(06:19) | **비용 + 절대 규모** — *"1억 토큰 컨텍스트가 나와도 (a) 돈이 아주 많이 들고 (b) 한 개 주 법전의 절반도 못 담는다"*(16:47~17:03) |
+| 비유 | **플로피 디스크 한 장** | **한 개 주의 법전** |
+| 결론 | 검색이 필요하다 | **오케스트레이션이 필요하다** → [[orchestrator-searcher-split]] |
+
+→ [[context-window-as-floppy-disk]]
+
+**모순은 아니고 축이 다르다.** 이 페이지가 묻는 것은 *루프를 돌리려면 얼마나 들어가야 하나*이고 채우는 것은 **실행이 만들어낸 것**(도구 응답)이다. 저쪽이 묻는 것은 *들어갈 수 있는 것보다 코퍼스가 크면 어떻게 하나*이고 채우는 것은 **밖에서 가져온 것**(문서)이다.
+
+> ⚠️ **세 소스 다 자기 주장에 유리한 쪽 수치만 든다.** 이 페이지가 이미 적었듯 [[minimax|MiniMax]]는 *왜 1천만에서 100만으로 줄었는지* 말하지 않았고, [[jo-bergum|Bergum]]의 *35만 토큰* 은 화자가 **스스로 *"제 의견으로는"* 이라고 명시**한 값이며, [[benjamin-clavie|Clavié]]의 *1억 토큰* 은 가상의 숫자다. **이 위키는 어느 쪽 숫자도 채택하지 않는다.**
 
 ## References
 

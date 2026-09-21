@@ -6,9 +6,9 @@ tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
 related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search]
 created: 2026-09-08
-updated: 2026-09-16
+updated: 2026-09-21
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -75,6 +75,18 @@ updated: 2026-09-16
 2026-09-08 IBM 편이 *"컨텍스트에 다 쏟아붓지 말고 경로를 나눠라"* 로 이 페이지를 세웠다면, 이 소스는 **그 경로 중 하나의 적용 범위를 좁힌다** → [[reference-graph-vs-vector-search]].
 
 > ⚠️ **당사자 진술이다** — 대안([[graft]])을 파는 쪽의 말이고, 하이브리드 논의는 하지 않는다. 벡터 검색 쪽 반론은 이 위키에 아직 없다.
+
+## ⭐ 2026-09-20 — 이 위키가 깔고 있던 기본값이 드러났다
+
+[[tech-bridge-bm25-agentic-search]]가 들어오면서 **이 페이지(와 [[reference-graph-vs-vector-search]]·[[agent-collaboration-as-search]])가 전부 *벡터/임베딩*을 기본값으로 깔고 논의해 왔다는 사실**이 보인다. 이 위키에는 **[[bm25|BM25]] 페이지조차 없었다** — [[llm-wiki-pattern]]에 한 번 언급된 것이 전부였다.
+
+이 페이지의 「동작」 절이 3단계를 **의미 검색(semantic search)** 으로 못 박고 저장소를 **벡터 데이터베이스**로 적은 것이 그 기본값의 자국이다.
+
+[[jo-bergum|Bergum]]은 그 자리에 **어휘 검색**을 놓고 세 가지 이유를 댄다 — **정확 일치**(이름·개체·우편번호·SKU는 고정 어휘 임베딩으로 표현하기 어렵다) · **비용**(임베딩 추론이 없다, *"일부 임베딩 모델은 매개변수가 80억 개"*) · **설명 가능성**(모델이 왜 그 결과가 나왔는지 보고 **쿼리를 재구성**할 수 있다). → [[bm25]]
+
+**RAG의 정의는 바뀌지 않는다.** 이 페이지가 세운 경계(*지식이 어디에서 오는가*)는 검색 기술과 무관하고, 그것이 이 페이지의 핵심 주장이었다. **바뀌는 것은 3단계에 무엇이 들어갈 수 있는가**이고, 이제 이 위키의 선택지는 넷이다 — 어휘([[bm25]]) · 시맨틱(이 페이지) · 참조 그래프([[reference-graph-vs-vector-search]]) · `grep`. → [[retrieval-primitive-repertoire]]
+
+그리고 [[agentic-search]]가 **RAG가 다루지 않던 축**을 더한다: RAG는 *한 번 가져와 생성에 쓴다*를 전제하는데, 에이전트 루프에서는 **검색이 궤적**이 된다 — 읽고, 재구성하고, 다시 던진다.
 
 ## References
 
