@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-01
-updated: 2026-09-13
+updated: 2026-09-22
 ---
 
 # Cursor
@@ -57,6 +57,15 @@ AI 코딩 도구·에이전트 회사. 본 위키 첫 등장은 [[tech-bridge-gr
 - **모델 다양성이 eval의 자산**이다 — *"Cursor의 좋은 점 하나는 아주 많은 모델을 지원한다는 것"* 이라 스킬을 모델 행렬에 걸쳐 평가할 수 있다.
 - 화자가 Cursor를 **"AI 랩"** 이라 부르고 **무제한 토큰**을 인정한다.
 
+
+## 검색을 외부에 맡긴다 (2026-09-22 추가)
+
+> 커서 에이전트가 **최신 기술 문서나 뉴스를 검색하기로 결정할 때 내부적으로 [[exa|Exa]]를 이용하게 될 겁니다.** — [[will-bryk]] ([[exa|Exa]] 창업자), [[tech-bridge-exa-perfect-search-for-agents]] (01:12~01:22)
+
+**이 위키에서 코딩 에이전트의 검색 부품이 외부 벤더로 지목된 첫 자리다.** [[agentic-search]]의 삼분할(모델·하네스·엔진) 중 **엔진을 사 온다**는 뜻이고, [[reference-graph-vs-vector-search]]가 다룬 **코드 인덱싱**과는 다른 축이다 — 이쪽은 **저장소 바깥의 웹**이다.
+
+⚠️ **[[will-bryk|Bryk]] 쪽의 진술이고 Cursor의 확인이 아니다.** 계약 범위·기간·비중은 전혀 없다.
+
 ## References
 
-- [[tech-bridge-grokbot-agent-teams]] · [[grokbot]] · [[grok-4-6]] · [[lauren-tan]] · [[roshan-sadanani]]
+- [[tech-bridge-grokbot-agent-teams]] · [[grokbot]] · [[grok-4-6]] · [[lauren-tan]] · [[roshan-sadanani]] · [[tech-bridge-exa-perfect-search-for-agents]]

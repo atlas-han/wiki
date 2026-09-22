@@ -6,9 +6,9 @@ tags: [retrieval, filesystem, progressive-disclosure, grep, workspace, agentic-s
 aliases: [dynamic workspace expansion, 동적 작업 공간 확장, 에이전트용 SERP]
 related: [file-system-agent, agent-skills, agentic-search, bm25, context-window-as-floppy-disk, push-vs-pull-context-retrieval, ride-the-optimization-trajectory]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # 코퍼스를 파일 시스템 워크스페이스로
@@ -64,9 +64,28 @@ updated: 2026-09-21
 - **워크스페이스의 수명·크기·정리 정책**이 없다 — 쿼리마다 쌓이면 무엇이 지워지는가.
 - ⚠️ **보안이 한 번도 언급되지 않는다.** 검색된 **신뢰할 수 없는 웹 문서**를 에이전트의 작업 공간에 놓고 bash를 붙이는 구조인데, [[prompt-injection]]·[[lethal-trifecta]]가 **정확히 이 형태**(비공개 데이터 + 신뢰 불가 콘텐츠 + 외부 노출 능력)를 경고한다. **소스는 이 조합을 장점으로만 제시한다.** 09-19 [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]에서 기록한 **같은 공백의 재발**이다.
 
+
+## ⭐ 같은 문제에 세 번째 처방, 그리고 정반대 (2026-09-22 추가)
+
+이 페이지의 처방은 **전부 줘라**다 — 결과를 파일 시스템에 펼쳐 놓고 에이전트가 `grep`·`sed`로 직접 판다. 하루 뒤 [[exa|Exa]]가 **정반대**를 내놓는다.
+
+> **10개의 문서를 제공하고, 그중에서 가장 중요한 100개 정도의 토큰만 뽑아서 드립니다. 이렇게 하면 후속 LLM 비용을 크게 절감할 수 있습니다.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (11:51~12:00)
+
+→ **[[retrieval-side-context-compression]]**
+
+| 처방 | 소스 | 에이전트가 받는 것 |
+|---|---|---|
+| **전부 줘라** | 이 페이지 (09-21) | 워크스페이스에 펼쳐진 **결과 전체** |
+| **왜 나왔는지 알려 줘라** | [[bm25]] ③ (09-21) | 결과 + **설명 가능성** |
+| **골라서 줄여 줘라** | [[retrieval-side-context-compression]] (09-22) | **100 토큰** |
+
+⚠️ **세 번째는 앞의 둘과 양립하기 어렵다** — 버린 것을 에이전트가 모르면 **점진적 정보 공개가 성립하지 않는다.** 이 페이지의 구조는 *모델이 스스로 깊이를 정한다*는 전제 위에 있는데, 검색 쪽 압축은 **그 깊이를 미리 고정한다.**
+
+✅ **반대 방향의 한 가지**: 이 페이지의 근거 중 하나는 **비용**이었는데([[ride-the-optimization-trajectory]]는 아니고, 워크스페이스가 컨텍스트를 아낀다는 것), [[retrieval-side-context-compression]]은 **버릴 토큰의 값을 처음부터 치르지 않는다**는 점에서 더 싸다. **두 처방은 비용 축에서는 같은 방향이고 검사 가능성 축에서만 갈린다.**
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[jimmy-lin]]
+- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[jimmy-lin]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 개념: [[file-system-agent]] · [[agent-skills]] · [[agentic-search]] · [[bm25]] · [[ride-the-optimization-trajectory]] · [[context-window-as-floppy-disk]]
 - ⚠️ 비어 있는 쪽: [[prompt-injection]] · [[lethal-trifecta]]
 - 관련: [[push-vs-pull-context-retrieval]] · [[three-tier-ai-skill-stack]] · [[orchestrator-searcher-split]]

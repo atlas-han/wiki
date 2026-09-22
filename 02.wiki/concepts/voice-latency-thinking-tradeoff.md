@@ -6,9 +6,9 @@ tags: [voice-agents, latency, reasoning, test-time-compute, model-selection, con
 aliases: [음성 에이전트의 아이러니, thinking을 끄는 제약]
 related: [time-to-first-audio, voice-agent-pipeline, model-mixing-economics, fixed-budget-alpha, true-cost-to-perfect-answer]
 first-seen: tech-bridge-voice-agent-failure-modes
-sources: [tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-voice-agent-failure-modes, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-22
 ---
 
 # 지연 제약이 thinking을 금지한다
@@ -57,8 +57,21 @@ updated: 2026-09-19
 - *"지난 1년의 발전 대부분이 thinking에서 왔다"* 는 **화자의 요약**이고 근거가 없다.
 - 이 제약이 **다른 실시간 도메인**(음성 이외의 인터랙티브 UI)에도 같은 정도로 걸리는지 소스의 범위 밖이다.
 
+
+## 공급자 쪽에서 온 짝 (2026-09-22 추가)
+
+이 페이지는 **실시간 제약이 thinking을 금지하므로 모델 바깥을 고칠 수밖에 없다**고 말하고, 이 위키는 그때 질문 하나를 세웠다 — ***이 기법은 몇 초를 쓰는가, 그 도메인은 몇 초를 허용하는가.***
+
+**그 "모델 바깥"의 부품 하나가 자기 수치를 들고 들어왔다.**
+
+> **200밀리초 검색 엔드포인트**입니다. (…) **인간에게는 너무 빠르죠. 하지만 우리는 인간을 위해 봉사하는 것이 아닙니다.** (…) [음성 에이전트]가 내부적으로 검색을 수행해야 하는 경우 **매 밀리초가 중요합니다.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (11:08~11:27)
+
+→ **[[search-latency-tiers]]**
+
+**[[venky-b|Venky B]]가 제약을 말했다면 [[will-bryk|Bryk]]은 그 제약 아래 팔리는 부품을 말한다.** ⚠️ **다만 벤더 자기 보고이고 퍼센타일·코퍼스·설정이 없다.** 그리고 ⚠️ **음성 에이전트의 전체 지연 예산에서 검색이 차지하는 몫은 두 소스 어느 쪽에도 없다** — 09-19에 세운 질문은 **아직 답을 받지 못했다.**
+
 ## References
 
-- [[tech-bridge-voice-agent-failure-modes]] — first-seen
+- [[tech-bridge-voice-agent-failure-modes]] — first-seen · [[tech-bridge-exa-perfect-search-for-agents]]
 - [[venky-b]] · [[plivo]]
 - 관련: [[time-to-first-audio]] · [[voice-agent-pipeline]] · [[token-fertility]] · [[model-mixing-economics]] · [[fixed-budget-alpha]] · [[true-cost-to-perfect-answer]] · [[token-roles]] · [[generator-evaluator-pattern]]

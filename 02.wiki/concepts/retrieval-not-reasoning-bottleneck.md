@@ -6,9 +6,9 @@ tags: [retrieval, reasoning, bottleneck, evaluation, agentic-search]
 aliases: [추론은 병목이 아니다, retrieval bottleneck]
 related: [agentic-search, browsecomp-plus, context-window-as-floppy-disk, llm-as-search-user, agent-harness-design, true-cost-to-perfect-answer, oracle-gap]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # 병목은 추론이 아니라 검색이다
@@ -61,8 +61,23 @@ updated: 2026-09-21
 
 [[benjamin-clavie|Clavié]]의 [[oracle-gap|오라클 갭]]이 **바로 이 차이에 이름과 숫자를 붙인 것**이다 — *완벽한 문서와 내 검색 시스템 사이의 거리*. **두 발표가 같은 양을 서로 모른 채 두 방식으로 말한다**: 한쪽은 *병목이 어디인가*(정성), 다른 쪽은 *그 병목이 몇 포인트인가*(⚠️ 자기 보고).
 
+
+## ⚠️ 비슷해 보이지만 같은 주장이 아닌 것 (2026-09-22 추가)
+
+하루 뒤 [[will-bryk|Bryk]]([[exa|Exa]])이 **표면적으로 이 페이지를 지지하는 듯한 사고 실험**을 낸다 — 쿼리와 문서 쌍마다 LLM을 돌리면 거의 완벽한 검색이 된다는 것(→ [[perfect-search-as-cost-problem]]).
+
+**이 페이지의 실험과 겹쳐 읽고 싶어지지만, 같은 주장이 아니다.**
+
+| | 이 페이지 ([[jo-bergum\|Bergum]]) | [[perfect-search-as-cost-problem]] ([[will-bryk\|Bryk]]) |
+|---|---|---|
+| 무엇을 보였나 | **증거 문서를 창에 넣으면** 정확도가 높다 | (주장) **쌍마다 판정하면** 거의 완벽하다 |
+| 전제 | 후보가 **이미 찾아져 있다** | **1조 개 전부**를 판정한다 |
+| 근거 | 실험(BrowseComp-Plus) | ⚠️ **없음 — 사고 실험** |
+
+**차이가 중요한 이유**: 이 페이지는 *찾기만 하면 모델은 답한다* 를 보였지, *모든 쌍에 대한 판정이 정확하다* 를 보이지 않았다. **1조 개 판정에서 오탐이 0.01%만 나도 1억 건**이고, **Bryk의 소스는 그 문제를 다루지 않는다.** 이 위키는 두 주장을 **합치지 않는다.**
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[browsecomp-plus]]
+- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[browsecomp-plus]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 개념: [[agentic-search]] · [[context-window-as-floppy-disk]] · [[llm-as-search-user]] · [[oracle-gap]] · [[ir-evaluation-obsolescence]]
 - 전제를 건드리는 곳: [[true-cost-to-perfect-answer]] · [[fixed-budget-alpha]] · [[token-roles]] · [[generator-evaluator-pattern]] · [[voice-latency-thinking-tradeoff]]

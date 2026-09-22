@@ -6,9 +6,9 @@ tags: [agent, knowledge, routing, decision, skills, mcp, rag, memory]
 aliases: [에이전트 지식 조달, 지식 라우팅]
 related: [agent-skills, model-context-protocol, retrieval-augmented-generation, agent-memory, context-engineering, company-brain, no-silent-write]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-08
-updated: 2026-09-19
+updated: 2026-09-22
 ---
 
 # Agent Knowledge Sourcing
@@ -107,8 +107,19 @@ updated: 2026-09-19
 
 즉 **다섯 번째와 두 번째가 루프를 이룬다** — 탐색이 스킬을 낳고, 스킬이 다음 탐색의 출발점을 올린다. ⚠️ 이 위키의 다른 소스들과 달리 Vercel 편은 **승격 게이트가 없다**(사람 검토 없음).
 
+
+## 조달에는 값이 붙는다 (2026-09-22 추가)
+
+이 페이지의 4갈래는 전부 ***어떻게 가져오는가*** 였다. [[exa|Exa]]가 **누가 값을 받는가**를 들여온다.
+
+> **가치 있는 데이터를 가지고 있다면, 그 데이터에 접근하기를 원하는 모든 개발자들로부터 돈을 받을 수 있는 거죠.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (13:37~13:56)
+
+→ **[[agent-data-marketplace]]**
+
+**조달 경로에 *비공개·유료* 라는 다섯 번째 갈래가 생기고, 그것은 기술이 아니라 계약으로 열린다.** ⚠️ 가격·라이선스·출처 표기·감사가 전부 비어 있고, ⚠️ *"에이전트는 출처를 신경 쓰지 않는다"* 는 이 소스의 전제가 [[lethal-trifecta]]·[[prompt-injection]]과 정면으로 부딪친다.
+
 ## References
 
-- [[tech-bridge-agent-knowledge-four-ways]]
+- [[tech-bridge-agent-knowledge-four-ways]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 관련: [[agent-skills]] · [[model-context-protocol]] · [[retrieval-augmented-generation]] · [[agent-memory]] · [[context-engineering]] · [[brain-hands-decoupling]]
 - [[tech-bridge-company-brain-security]] — 조직 유통 관점: 스킬 동기 부재·메모리 사일로·위키 채택 (2026-09-10)

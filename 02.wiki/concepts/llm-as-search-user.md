@@ -6,9 +6,9 @@ tags: [retrieval, query-formulation, bm25, agentic-search, workload]
 aliases: [새로운 사용자, new user, 쿼리 구성]
 related: [agentic-search, bm25, retrieval-not-reasoning-bottleneck, ir-evaluation-obsolescence, retrieval-primitive-repertoire, code-as-atypical-knowledge]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # LLM이라는 새로운 검색 사용자
@@ -67,8 +67,21 @@ updated: 2026-09-21
 
 → [[ir-evaluation-obsolescence]]
 
+
+## ⭐ "사용자가 바뀌었다"의 두 번째 읽기 (2026-09-22 추가)
+
+이 페이지는 **AOL 쿼리 로그 대조**(사람은 예나 지금이나 몇 단어를 친다) 위에 서 있고, 결론은 **사용자가 더 강력해졌다**는 것이다. **하루 뒤 들어온 소스가 같은 관측에 다른 해석을 붙인다.**
+
+> *"싱가포르에서 AI 검색을 연구하는 모든 사람과 그들이 쓴 블로그 글이나 논문을 찾아 줘."* — **장담컨대 여러분은 이런 걸 구글에 쳐 본 적이 없을 겁니다. 안 될 걸 아니까요.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (03:05~03:16)
+
+→ **[[suppressed-query-demand]]**
+
+**사람이 짧게 치는 것은 그것이 사람의 자연스러운 크기여서가 아니라, 긴 쿼리가 안 통하는 걸 학습했기 때문일 수 있다.** 그렇다면 *사용자가 바뀌었다* 는 **제약이 풀렸다** 로도 읽힌다.
+
+⚠️ **두 읽기는 배타적이지 않고 어느 쪽도 증거가 없다** — [[jo-bergum|Bergum]]은 로그를 갖고 있지만 **왜 짧은지**를 묻지 않았고, [[will-bryk|Bryk]]은 *"장담컨대"* 가 전부다. **구분이 중요한 이유는 사람용 검색의 수요 추정치가 전부 하한이 되기 때문이다.**
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[hornet]]
+- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[hornet]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 개념: [[agentic-search]] · [[bm25]] · [[ir-evaluation-obsolescence]] · [[ride-the-optimization-trajectory]] · [[corpus-as-filesystem-workspace]] · [[retrieval-primitive-repertoire]]
 - 방향이 반대인 곳: [[agent-tool-design-practices]] · [[build-a-lever]] · [[adaptive-response-format]]

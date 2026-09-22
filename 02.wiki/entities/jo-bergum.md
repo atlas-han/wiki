@@ -7,9 +7,9 @@ aliases: [Jo Bergum, 조 베르굼, 조 크리스티안 베르굼]
 links:
   - https://x.com/jobergum
   - https://www.linkedin.com/in/jo-bergum
-sources: [tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # Jo Kristian Bergum
@@ -41,8 +41,17 @@ updated: 2026-09-21
 - **[[hornet|Hornet]]의 규모·자금·창업 시점** — 한 마디도 없다.
 - ⚠️ **자막 양 트랙이 성을 *"Bergum"* 이 아니라 *"Joe Bergum"* 으로 적는다.** 설명란의 **Jo Kristian Bergum** 을 따랐다.
 
+
+## 하루 뒤의 반대 진영 (2026-09-22 추가)
+
+[[will-bryk|Will Bryk]]([[exa|Exa]])이 **같은 질문에 반대로 답하는 발표**로 들어왔다 — 키워드는 간단한 쿼리까지이고 복잡한 쿼리는 임베딩이 필요하다는 것. 전체 대조는 [[tech-bridge-exa-perfect-search-for-agents]] 참조.
+
+⚠️ **Bryk은 이 화자의 세 근거(정확 일치·비용·설명 가능성)에 하나도 답하지 않는다** — 반박이 아니라 **닿지 않는다.** 그리고 **두 사람 다 정확도 수치를 한 개도 제시하지 않는다.**
+
+✅ **한 가지는 Bryk이 더 멀리 간다** — 이 화자는 *사용자가 바뀌었다* 에서 멈췄는데, Bryk은 **왜 기존 엔진이 그 사용자에게 맞지 않는지**를 목적함수로 설명한다([[search-as-recommendation-engine]]). 그리고 *사람이 짧게 치는 이유* 에 대한 두 번째 읽기를 연다 → [[suppressed-query-demand]].
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[hornet]] · [[tech-bridge]]
+- [[tech-bridge-bm25-agentic-search]] · [[hornet]] · [[tech-bridge]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 개념: [[agentic-search]] · [[bm25]] · [[which-bm25-problem]] · [[llm-as-search-user]] · [[retrieval-not-reasoning-bottleneck]] · [[context-window-as-floppy-disk]] · [[corpus-as-filesystem-workspace]] · [[ir-evaluation-obsolescence]] · [[ride-the-optimization-trajectory]]
 - 같은 무대: [[benjamin-clavie]]

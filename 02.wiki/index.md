@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-09-21
 ## Entities
 
 ### Persons
+- [[will-bryk]] — [[exa|Exa]] 창업자. **검색 엔진의 *목적함수* 를 문제 삼은 첫 화자** — *"구글은 데이터베이스가 아니라 추천 엔진이다"*([[search-as-recommendation-engine]]) · ⭐ [[suppressed-query-demand|안 될 걸 알아서 아예 묻지 않는다]] · [[perfect-search-as-cost-problem|1천만 달러 사고 실험]](품질을 비용으로 재정의) · [[per-customer-search-engine|고객마다 다른 엔진]] · [[agent-data-marketplace|데이터 마켓플레이스]] ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 당사자 · **정확도 수치 0개** · **이름이 자막에 아예 없다**(설명란만)
 - [[jo-bergum]] — [[hornet|Hornet]] CEO, 검색 경력 20년+. **위키에 들어온 첫 정보 검색(IR) 전공자.** *"BM25는 변하지 않았다, 사용자가 바뀌었다"* · [[retrieval-not-reasoning-bottleneck|추론은 병목이 아니다]] · [[context-window-as-floppy-disk|플로피 디스크]](검색이 AGI보다 오래 산다) · [[which-bm25-problem|어떤 BM25인가]] · [[corpus-as-filesystem-workspace|파일 시스템 워크스페이스]] · [[ir-evaluation-obsolescence|nDCG의 종말]] ([[tech-bridge-bm25-agentic-search]]) ⚠️ 자사 벤치마크는 익명 상대·축 정정 · **이름은 설명란에만**
 - [[benjamin-clavie]] — [[mixedbread|Mixedbread]]. **에이전트 아키텍처의 근거를 제도사에서 끌어온 첫 화자** — 알렉산드리아·로펌·병원. [[knowledge-agents-vs-coding-agents|코딩은 특수 사례]] · [[code-as-atypical-knowledge|'30일'이 네 가지를 뜻할 때]] · [[tool-organization-loop|도구-조직 루프]] · [[orchestrator-searcher-split|파트너/어시스턴트 분업]] · [[oracle-gap|오라클 갭]] ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 당사자 · 수치 측정 조건 없음 · **이름은 설명란에만**
 - [[jimmy-lin]] — 워털루 IR 연구 그룹. **이 위키에서 학계 IR 연구가 직접 인용된 첫 자리** — *"동적 작업 공간 확장"* 논문이 [[corpus-as-filesystem-workspace]]를 세운다 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 제3자 인용 · 저자·연도·게재처 없음
@@ -86,6 +87,7 @@ updated: 2026-09-21
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[exa]] — **AI 에이전트를 위한 검색 엔진**(2021 창업, 옛 이름 Metaphor). 임베딩에 걸고 200ms와 분 단위 두 티어를 함께 판다. [[cursor|Cursor]]의 웹 검색이 여기로 간다 ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ **정확도 수치 0개** · *"구글보다 낫다"* 에 벤치마크 없음 · ⚠️ **자막이 회사 이름을 네 갈래로 깨뜨린다**
 - [[hornet]] — 에이전트를 위한 **어휘 검색 엔진**. BM25를 핵심 프리미티브로 놓고 top-K 가속에 투자 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 유일한 수치가 **익명 상대와의 비교**이고 **Y축을 정정한다**
 - [[mixedbread]] — **멀티모달 검색 + 검색 에이전트**. PDF를 OCR 없이 비전으로 읽고, 오케스트레이터/서처 분업으로 [[oracle-gap|오라클 갭]]을 10→6포인트로 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 전부 자기 보고 · ✅ **자기 한계를 먼저 말한다**
 - [[a16z]] — 벤처 캐피털. 위키에는 **팟캐스트 제작 주체**로 첫 등장 — 이 채널이 재배포한 소스 중 **투자자가 만든 매체는 처음**이다. ⚠️ 데이터센터 규제 완화·AI 낙관·고용 증가를 화자보다 강하게 주장하면서 **이해관계를 한 번도 표시하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
@@ -207,6 +209,7 @@ updated: 2026-09-21
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[retrieval-side-context-compression]] — 문서 10개에서 **가장 중요한 100 토큰만** 넘겨 후속 LLM 비용을 줄인다. **압축을 검색 엔진이 대신 하는 첫 형태** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 버린 것을 에이전트가 모른다 — [[corpus-as-filesystem-workspace]]·[[bm25]]와 **정반대 처방**
 - [[bm25]] — **Best Match 25.** 30년 된 어휘 점수 함수. **위키에 페이지가 없었다.** 정확 일치·저비용·**모델이 결과를 설명 가능**(다음 쿼리 재구성에 쓴다)이 세 이유 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 텍스트에서는 프리미티브, **스캔 PDF에서는 천장**
 - [[oracle-gap]] — **완벽한 문서와 내 검색 시스템의 차이.** 정확도 절대값보다 덜 속이고 **무엇을 고칠지 알려 준다.** [[ir-evaluation-obsolescence]]가 남긴 *책임 소재* 공백을 메운다 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 오라클의 정의가 자막에서 구분되지 않음
 - [[rlhf]] — 인간 선호를 수집하고 최적화하는 post-training 절차. **위키에 2026-09-20까지 페이지가 없었고, 그 자리를 채운 것이 만든 사람의 비판이다.** *"우리가 말 그대로 그들을 루프에 집어넣었다"* · 기원은 2017년 ([[tech-bridge-rlhf-assistance-vs-automation]]·[[tech-bridge-brockman-agi-era-defender-window]])
@@ -232,6 +235,9 @@ updated: 2026-09-21
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[agent-data-marketplace]] — 데이터 보유자와 에이전트 개발자를 검색 엔진이 **중개**하고 공개 웹과 유료 비공개 데이터가 한 쿼리에서 섞인다. **위키에 데이터 유통·정산이 들어온 첫 자리** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 가격·라이선스·출처 표기·감사 전무 · ⚠️ *"에이전트는 출처를 신경 쓰지 않는다"* 가 [[lethal-trifecta]]와 정면 충돌
+- [[per-customer-search-engine]] — *"고객 5,000곳에 각각 다른 엔진"* — 완벽한 검색의 정의를 고객에게 넘긴다. ⚠️ [[which-bm25-problem]]이 **제품 형태로 재발**하고, 그 결과 *"구글보다 낫다"* 가 **원리적으로 검증 불가능**해진다 ([[tech-bridge-exa-perfect-search-for-agents]])
+- [[search-latency-tiers]] — 200ms와 "몇 분"이 같은 제품 안에. *"인간에게는 너무 빠르다 — 우리는 인간을 위해 봉사하지 않는다"*. 09-19 [[voice-latency-thinking-tradeoff]]에 **공급자 쪽 짝** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 퍼센타일·코퍼스 없음
 - [[agentic-search]] — **에이전트 루프 *안에서* 일어나는 검색.** 세 부품(유능한 모델·하네스·검색 엔진)으로 쪼개면 **실패의 책임이 분리 가능해진다.** 검색이 한 번이 아니라 **궤적**이 된다 ([[tech-bridge-bm25-agentic-search]])
 - [[corpus-as-filesystem-workspace]] — 검색 결과를 컨텍스트에 밀지 말고 **파일 시스템에 펼쳐 놓고 `grep`으로 파게 한다.** [[file-system-agent]]의 **동적 판**이고 출처가 **제품이 아니라 논문** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 보안 언급 0
 - [[orchestrator-searcher-split]] — 로펌의 **파트너/어시스턴트**. 메인은 쪼개고 서처가 조사해 **메모**를 올린다. **분업을 이득으로 셈한 첫 소스** ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 검증·승인 게이트 없음
@@ -246,6 +252,9 @@ updated: 2026-09-21
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[perfect-search-as-cost-problem]] — 이상적 해(쌍마다 LLM)는 이미 알려져 있고 **검색당 1천만 달러**다. 따라서 검색 공학은 **그 비용을 10억~1조 배 줄이는 최적화 문제** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 전제가 검증되지 않고 [[context-window-as-floppy-disk]]와 **정면으로 만난다**
+- [[suppressed-query-demand]] — **안 될 걸 알아서 아예 묻지 않는다.** 그래서 그 수요는 로그에 남지 않는다. ⭐ [[llm-as-search-user|*사용자가 바뀌었다*]]의 **두 번째 읽기**(제약이 풀린 것) ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 증거는 화자의 *"장담컨대"* 뿐
+- [[search-as-recommendation-engine]] — **검색이 원하는 것을 못 주는 이유는 성능이 아니라 목적함수다.** *줄무늬 없는 셔츠*를 치면 줄무늬 셔츠가 나온다. [[preference-reward-asymmetry]]와 **같은 모양의 논증**이 랭킹에 적용된 자리 ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 비유에서 멈추고 메커니즘·증거 없음
 - [[retrieval-not-reasoning-bottleneck]] — **증거를 쥐여 주면 모델은 답한다.** 못 답하는 건 못 찾아서다. 이 위키의 *더 생각하게 하라* 처방들([[true-cost-to-perfect-answer]]·[[token-roles]]) **앞에 오는 질문** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 수치 0
 - [[context-window-as-floppy-disk]] — **검색이 AGI보다 오래 산다.** *"완벽한 모델을 얻어도 컨텍스트는 플로피 한 장"* — 위키에서 **"모델이 좋아져도 남는다"로 분류된 몇 안 되는 문제** ([[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 35만 토큰은 **화자 의견**
 - [[knowledge-agents-vs-coding-agents]] — **코딩은 지식 노동의 특수 사례다.** [[knowledge-work-agent-gap]]과 **같은 현상 다른 진단** — 인프라가 아니라 **도메인과 과제 형태**, 그리고 **사람이 이미 쪼개 준다** ([[tech-bridge-knowledge-agents-not-coding-agents]])
@@ -513,6 +522,7 @@ updated: 2026-09-21
 ---
 
 ## Sources
+- [[tech-bridge-exa-perfect-search-for-agents]] — AI 에이전트를 위한 완벽한 검색 ([[will-bryk|Will Bryk]] / [[exa|Exa]], 17:13, 2026-09-21 업로드). **하루 만에 들어온 검색 벤더 반대편** — 구글은 추천 엔진이고, 완벽한 검색은 비용 문제이며, 에이전트는 진실만 원한다
 - [[tech-bridge-bm25-agentic-search]] — BM25는 왜 에이전트 검색에서 비정상적으로 효과적인가 ([[jo-bergum|Jo Kristian Bergum]] / [[hornet|Hornet]], 18:00). **위키 첫 IR 전공자 소스** — 병목은 추론이 아니라 검색, 컨텍스트는 플로피 한 장, 그리고 *"어떤 BM25인가"*
 - [[tech-bridge-knowledge-agents-not-coding-agents]] — 코딩 에이전트가 아니라 지식 에이전트로 설계하라 ([[benjamin-clavie|Benjamin Clavié]] / [[mixedbread|Mixedbread]], 17:26). **근거를 제도사에서** — 코드는 예외적 지식이고, 사람이 이미 문제를 쪼개 준다
 - [[tech-bridge-vercel-eve-filesystem-agent]] — 세 번 실패하고 파일 시스템에 닿다: Vercel의 D0와 Eve ([[andrew-qu|Andrew Qu]], 17:06, 2026-09-18 업로드)
@@ -600,6 +610,6 @@ updated: 2026-09-21
 
 ## 통계
 
-- 총 페이지 수: 561 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 537 → 561, + 2026-09-20 Tech Bridge 2편: source 2 + concept 16 + entity 6)
+- 총 페이지 수: 571 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 561 → 571, + 2026-09-21 Tech Bridge 1편: source 1 + concept 7 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-21 (Tech Bridge **2편**, **열여드레 연속** — 09-20 업로드분. **검색이 이 위키의 주제가 된 날이다.** 지금까지 검색은 늘 무언가의 부품이었고([[retrieval-augmented-generation|RAG]]는 지식 조달의 한 갈래, [[reference-graph-vs-vector-search]]는 코드 인덱싱의 방법론), **[[bm25|BM25]] 페이지조차 없었다.** [[tech-bridge-bm25-agentic-search|Bergum 편]]이 **위키 첫 IR 전공자 소스**로 [[agentic-search]]를 세 부품으로 쪼개고, [[retrieval-not-reasoning-bottleneck|증거를 쥐여 주면 모델은 답한다]]는 분리 실험으로 **이 위키의 *더 생각하게 하라* 처방들 앞에 오는 질문**을 만든다. [[context-window-as-floppy-disk|플로피 디스크]]는 **검색을 "모델이 좋아져도 남는다"로 분류**해 [[harness-pruning]]의 소멸 경로에서 빼내고, [[ride-the-optimization-trajectory]]는 이 위키가 [[file-system-agent]]에서 관측만 하던 것에 **이유**를 붙인다(화자 스스로 *"편법"*). [[tech-bridge-knowledge-agents-not-coding-agents|Clavié 편]]은 [[knowledge-work-agent-gap]]과 **같은 현상에 두 번째 진단**을 댄다 — 인프라가 아니라 **도메인과 과제 형태**, 그리고 ⭐ **사람이 이미 문제를 쪼개 준다**([[goal-level-delegation]]의 "목표"조차 분해의 산출물이다). **⭐ 두 영상이 자막 안에서 서로를 지목하는 채널 첫 사례**이고, 세 자리에서 독립 수렴한다 — [[which-bm25-problem]](**둘 다 자기에게 불리한 방향으로**) · [[oracle-gap]](같은 양을 정성/정량으로) · 컨텍스트를 늘려도 안 된다. **한 자리에서는 정면으로 갈린다** — 모델이 `grep`에 익숙하다는 같은 사실이 [[ride-the-optimization-trajectory|레버]]이자 [[retrieval-primitive-repertoire|편향]]이고, **갈리는 조건(도메인)을 두 소스 다 명시하지 않는다.** **위키 첫 [[jo-bergum]]·[[hornet]]·[[benjamin-clavie]]·[[mixedbread]]·[[browsecomp-plus]]·[[jimmy-lin]]**. ⚠️ **두 편 다 보안·프롬프트 인젝션을 한 번도 다루지 않는다.**)
+- 마지막 ingest: 2026-09-22 (Tech Bridge **1편**, **열아흐레 연속** — 09-21 업로드분. **검색 벤더의 반대편이 하루 만에 들어온 날이다.** [[tech-bridge-exa-perfect-search-for-agents|Bryk 편]]([[will-bryk]] / [[exa|Exa]])은 전날 [[jo-bergum|Bergum]]([[hornet|Hornet]])이 세운 *BM25는 변하지 않았다, 사용자가 바뀌었다* 에 **정반대로 답한다** — 키워드는 간단한 쿼리까지이고 복잡한 쿼리는 임베딩이다. **둘 다 정확도 수치가 0개**이고, **둘 다 하이브리드가 필요하다는 것을 한 줄씩 인정하고 아무도 설명하지 않는다**(세 번째 벤더 → [[bm25]]). 이 소스가 새로 들여온 것은 **목적함수**다 — [[search-as-recommendation-engine|구글은 데이터베이스가 아니라 추천 엔진]]이라는 진단은 [[preference-reward-asymmetry]]와 **같은 모양의 논증**이 랭킹에 적용된 자리이고, ⭐ [[suppressed-query-demand|안 될 걸 알아서 아예 묻지 않는다]]는 [[llm-as-search-user]]에 **두 번째 읽기**를 연다(*사용자가 바뀌었다* = *제약이 풀렸다*). [[perfect-search-as-cost-problem|1천만 달러 사고 실험]]은 품질을 비용으로 재정의해 [[context-window-as-floppy-disk]]와 **정면으로 만나고**, [[retrieval-side-context-compression|100 토큰만 넘기기]]는 [[corpus-as-filesystem-workspace|전부 줘라]]·[[bm25|왜 나왔는지 알려 줘라]]와 **같은 문제의 세 번째·정반대 처방**이다. [[agent-data-marketplace]]로 **데이터 유통·정산이 위키에 처음** 들어왔다. **위키 첫 [[will-bryk]]·[[exa]]**. ⚠️ **보안·프롬프트 인젝션이 17분 동안 한 번도 나오지 않는다 — 검색 소스 연속 세 번째.** ⭐ **멤버 전용 영상이 두 편이 됐다**(`XZuws4hFG4o`, 젠슨 황 46:18) — 패턴은 *유명 인물 대담 · 긴 롱폼*.)

@@ -6,9 +6,9 @@ tags: [benchmark, baseline, evaluation, methodology, bm25, reproducibility]
 aliases: [기준선 최적화, unoptimized baseline, which BM25]
 related: [bm25, browsecomp-plus, ir-evaluation-obsolescence, agentic-search, skill-evals, all-or-nothing-accuracy]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # 어떤 BM25를 말하는가
@@ -49,9 +49,26 @@ updated: 2026-09-21
 
 → **이 위키는 두 소스의 자사 수치를 인용하지 않고, 이 방법론적 지적만 개념으로 올린다.**
 
+
+## 같은 문제가 제품 형태로 재발한다 (2026-09-22 추가)
+
+이 페이지는 *"어떤 BM25를 말하는가"* 를 **방법론적 결함**으로 세웠다. 하루 뒤 [[exa|Exa]]가 **같은 가변성을 제품의 미덕으로** 내놓는다.
+
+> **완벽한 검색이란 한 가지로 정의될 수 있는 것이 아닙니다. 사실 저희는 고객 5,000곳 각각에 [하나씩] 5,000개의 검색 엔진을 보유하고 있는 셈이죠.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (12:26~12:36)
+
+→ **[[per-customer-search-engine]]**
+
+| | 이 페이지 (09-21) | [[per-customer-search-engine]] (09-22) |
+|---|---|---|
+| 가변성의 위치 | **하이퍼파라미터** | **고객 설정 전체** |
+| 어떻게 다뤄지나 | **결함** | **기능** |
+| 귀결 | 벤치마크가 **틀린다** | ⚠️ 벤치마크가 **성립하지 않는다** |
+
+⚠️ **그래서 같은 발표의 *"인간을 위해 만들어진 구글보다 낫다"*(13:14~13:18)는 원리적으로 검증할 수 없다** — 어떤 설정의 Exa가 나은지 말할 수 없기 때문이다. **이 페이지가 제기한 질문의 가장 강한 사례이고, 그것을 내놓은 쪽은 그것을 문제로 보지 않는다.**
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]
+- [[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 인물: [[jo-bergum]] · [[benjamin-clavie]]
 - 개념: [[bm25]] · [[browsecomp-plus]] · [[ir-evaluation-obsolescence]] · [[agentic-search]]
 - 각주가 붙는 곳: [[reference-graph-vs-vector-search]] · [[self-harness]] · [[skill-evals]] · [[generator-evaluator-pattern]]

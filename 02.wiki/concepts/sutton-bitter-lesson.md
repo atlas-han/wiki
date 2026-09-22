@@ -8,7 +8,7 @@ related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-si
 first-seen: anthropic-managed-agents
 sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-rlhf-assistance-vs-automation]
 created: 2026-05-25
-updated: 2026-09-20
+updated: 2026-09-22
 ---
 
 # The Bitter Lesson
@@ -172,9 +172,18 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 
 첫 번째는 **범위 한정**이지 반례가 아니다 — 화자가 모델 층 개선을 인정한다. [[signal-layer]]의 *채점기가 없는 곳* 과 같은 계열이되, 위치가 *검증 가능성* 이 아니라 **상호작용 시점**이다. 두 번째는 [[signal-layer]]의 *"넓은 취향은 차별화 요소가 아니다"* 를 뒤집어 같은 곳에 닿는다. → [[taste-vs-judgment]] · [[ai-slop]]
 
+
+## [[exa|Exa]]가 창업 원리로 인용한다 (2026-09-22 추가)
+
+> [임베딩으로 사전 처리한다는 것을] 다른 말로 하면, **그냥 층을 더 쌓는다(stack more layers)** 는 뜻이에요. 정말 **쓰디쓴 교훈(bitter lesson)** 이네요. **이것은 우리가 아주 초기에 겪었던 쓰라린 교훈입니다.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (07:08~07:14)
+
+**이 위키에서 Bitter Lesson이 *제품 카테고리 선택의 근거* 로 인용된 자리다** — 모델 설계가 아니라 **검색 엔진을 어느 프리미티브 위에 지을 것인가**에 적용된다. 논리는 *임베딩이 더 좋다* 가 아니라 **이상적 해(쌍마다 LLM)의 값싼 근사가 임베딩이고, 계산이 싸지면 그 근사가 이상적 해로 수렴한다**는 것이다. → [[perfect-search-as-cost-problem]]
+
+⚠️ **반대편이 같은 시기에 있다.** [[jo-bergum|Bergum]]([[hornet|Hornet]], 09-21)은 **30년 된 어휘 함수가 지금 다시 강하다**고 말한다 — 계산을 더 쌓아서가 아니라 **사용자가 바뀌어서**([[llm-as-search-user]]). 그리고 [[ride-the-optimization-trajectory]]는 **모두가 최적화하는 방향에 얹으라**고 하는데, 그 페이지가 지목한 방향은 임베딩이 아니라 **코딩·bash·도구 사용**이다. **세 소스가 Bitter Lesson 계열의 직관을 서로 다른 축에 적용한다.**
+
 ## References
 
-- [원문 (incompleteideas.net, self-signed cert)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
+- [원문 (incompleteideas.net, self-signed cert)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) · [[tech-bridge-exa-perfect-search-for-agents]]
 - 미러: [cs.utexas.edu PDF](https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf)
 - [Wikipedia: Bitter lesson](https://en.wikipedia.org/wiki/Bitter_lesson)
 - 본 위키 내 적용: [[agent-harness-design]], [[brain-hands-decoupling]], [[anthropic-managed-agents]]

@@ -6,9 +6,9 @@ tags: [retrieval, search-engine, bm25, agent-infrastructure, startup]
 aliases: [Hornet.dev, Hornet Dev, 호넷]
 links:
   - https://hornet.dev/
-sources: [tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # Hornet
@@ -51,7 +51,23 @@ updated: 2026-09-21
 - **BM25 외에 무엇을 지원하는가**(벡터·하이브리드) — 말하지 않는다.
 - **가격** 언급 없음.
 
+
+## 하루 뒤에 들어온 반대편 (2026-09-22 추가)
+
+[[exa|Exa]]([[will-bryk|Will Bryk]])가 **같은 시장에 다른 프리미티브로** 들어왔다 — Hornet은 [[bm25]]에, Exa는 임베딩에 건다.
+
+| | **Hornet** | [[exa\|Exa]] |
+|---|---|---|
+| 프리미티브 | **BM25 + top-K 가속** | **임베딩**(+키워드 혼용 인정) |
+| 파는 것 | 에이전트가 반복해 두드리는 **인프라** | **완성된 검색 결과·API** |
+| 규모 자기 보고 | 없음 | 5,000 기업 · 40만 개발자 |
+| 정확도 수치 | **0개** | **0개** |
+
+**⭐ 둘 다 하이브리드가 필요하다는 것을 한 줄씩 인정하고 아무도 설명하지 않는다.** → [[bm25]]
+
+⚠️ **두 회사는 서로를 언급하지 않는다.** 이 대비는 이 위키가 겹쳐서 읽은 것이다.
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]]
+- [[tech-bridge-bm25-agentic-search]] · [[jo-bergum]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 개념: [[bm25]] · [[agentic-search]] · [[which-bm25-problem]] · [[ir-evaluation-obsolescence]]

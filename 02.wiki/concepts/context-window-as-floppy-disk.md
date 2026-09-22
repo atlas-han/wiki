@@ -6,9 +6,9 @@ tags: [context-window, retrieval, limits, agi, long-context]
 aliases: [플로피 디스크 비유, floppy disk analogy]
 related: [long-context-agents, context-engineering, retrieval-not-reasoning-bottleneck, agentic-search, context-resets-and-compaction, orchestrator-searcher-split]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # 컨텍스트 창은 플로피 디스크다
@@ -68,9 +68,24 @@ updated: 2026-09-21
 | **펼쳐 놓고 찾게 한다** | 파일 시스템에 두고 프리미티브로 탐색 | [[file-system-agent]] · [[corpus-as-filesystem-workspace]] |
 | **쪼갠다** | 서브 에이전트에 나눠 담는다 | [[orchestrator-searcher-split]] |
 
+
+## ⚠️ 고르는 문제를 비용으로 지우려는 반대편 (2026-09-22 추가)
+
+이 페이지의 결론은 **고르는 일은 사라지지 않는다**는 것이다 — *완벽한 모델을 얻더라도 컨텍스트 창은 플로피 디스크 크기로 제한되므로 무엇이 들어갈지 결정해야 한다.*
+
+**하루 뒤 들어온 소스는 그 결정을 최적화 문제로 환원한다.**
+
+> 복잡한 쿼리와 문서를 가져와서 [GPT-3]를 실행하고 "이것이 일치하는가?"라고 묻는 것 (…) **1조 개 문서를 처리한다고 가정하면 거의 완벽한 검색 엔진을 얻을 수 있습니다. 문제는 검색 한 건당 1천만 달러가 든다는 겁니다.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (05:50~06:11)
+
+→ **[[perfect-search-as-cost-problem]]**
+
+**충분히 싸지면 전부 판정하면 되므로 고를 필요가 없다는 것이다.**
+
+> ⚠️ **두 소스는 서로를 모르고, 이 위키는 어느 쪽도 채택하지 않는다. 다만 축이 다르다** — [[jo-bergum|Bergum]]은 *모델에 무엇을 **넣을** 것인가*, [[will-bryk|Bryk]]은 *무엇을 **후보로 판정**할 것인가* 다. **완벽한 검색이 후보를 1조 개에서 10개로 줄여 줘도, 그 10개를 플로피 디스크에 넣는 문제는 그대로 남는다.** 이 페이지의 주장은 비용으로 지워지지 않는다.
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]
+- [[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 인물: [[jo-bergum]] · [[benjamin-clavie]]
 - 개념: [[agentic-search]] · [[retrieval-not-reasoning-bottleneck]] · [[corpus-as-filesystem-workspace]] · [[orchestrator-searcher-split]]
 - 정면으로 만나는 곳: [[long-context-agents]] · [[harness-pruning]] · [[agent-harness-design]]

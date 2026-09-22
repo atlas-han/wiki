@@ -5,9 +5,9 @@ category: theory
 tags: [rlhf, hallucination, reward-model, overpromising, calibration, gan]
 related: [rlhf, assistance-vs-automation, reward-hacking, decision-quality, aleatoric-epistemic-uncertainty, verification-cost-asymmetry]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-22
 ---
 
 # 선호 보상 모델의 비대칭성
@@ -51,9 +51,27 @@ Q&A에서 한 번 더 구체화된다:
 >
 > **어느 쪽도 측정을 제시하지 않는다. 이 위키는 대조만 기록하고 판정하지 않는다.**
 
+
+## 같은 모양의 논증이 검색 랭킹에 (2026-09-22 추가)
+
+이 페이지의 핵심은 **결함이 버그가 아니라 목적함수의 정확한 귀결**이라는 것이다. 이틀 뒤 들어온 소스가 **같은 모양의 논증을 다른 시스템에** 적용한다.
+
+> **[구글은] 세상의 정보를 담은 데이터베이스가 되어 원하는 것을 정확히 주려는 게 아니기 때문입니다. 그건 일종의 추천 엔진이에요.** — [[will-bryk]], [[tech-bridge-exa-perfect-search-for-agents]] (02:58~03:05)
+
+→ **[[search-as-recommendation-engine]]**
+
+| | 이 페이지 (09-20) | [[search-as-recommendation-engine]] (09-22) |
+|---|---|---|
+| 시스템 | [[rlhf\|RLHF]]로 학습한 모델 | 웹 검색 랭킹 |
+| 최적화 대상 | **인간 선호** | **참여·광고** |
+| 귀결 | 환각·과대약속 | **추천이지 답이 아님** |
+| 처방 | 목적함수를 바꿔라 ([[post-training-northstars]]) | **다른 소비자를 위한 다른 엔진** |
+
+⚠️ **두 소스는 서로를 모르고, 강도가 다르다** — [[diogo-almeida|Almeida]]는 **메커니즘을 명시**했지만(틀림은 알아보기 어렵고 확신 없음은 알아보기 쉽다), [[will-bryk|Bryk]]은 **"추천 엔진"이라는 비유에서 멈춘다.** 광고 수익이 랭킹을 어떻게 왜곡하는지에 대한 증거도 형식화도 없다.
+
 ## References
 
-- [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen
+- [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen · [[tech-bridge-exa-perfect-search-for-agents]]
 - [[diogo-almeida]]
 - 관련: [[rlhf]] · [[assistance-vs-automation]] · [[post-training-northstars]] · [[reward-hacking]] · [[decision-quality]] · [[aleatoric-epistemic-uncertainty]] · [[verification-cost-asymmetry]]
 - 대조: [[tech-bridge-brockman-agi-era-defender-window]]

@@ -753,5 +753,16 @@
   "02.wiki/concepts/tools-are-not-neutral.md": "LiHammer",
   "02.wiki/concepts/orchestrator-searcher-split.md": "LiNetwork",
   "02.wiki/concepts/oracle-gap.md": "LiGauge",
-  "02.wiki/concepts/retrieval-primitive-repertoire.md": "LiBlocks"
+  "02.wiki/concepts/retrieval-primitive-repertoire.md": "LiBlocks",
+  "01.raw/articles/2026-09-21_AI 에이전트 시대를 위한 검색 엔진, 왜 기존 검색과 완전히 다를까요.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-exa-perfect-search-for-agents.md": "LiVideo",
+  "02.wiki/entities/exa.md": "LiBuilding",
+  "02.wiki/entities/will-bryk.md": "LiUser",
+  "02.wiki/concepts/search-as-recommendation-engine.md": "LiSearch",
+  "02.wiki/concepts/suppressed-query-demand.md": "LiSearch",
+  "02.wiki/concepts/perfect-search-as-cost-problem.md": "LiSearch",
+  "02.wiki/concepts/retrieval-side-context-compression.md": "LiSettings",
+  "02.wiki/concepts/per-customer-search-engine.md": "LiSearch",
+  "02.wiki/concepts/search-latency-tiers.md": "LiSearch",
+  "02.wiki/concepts/agent-data-marketplace.md": "LiLayers"
 }

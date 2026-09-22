@@ -6,9 +6,9 @@ tags: [retrieval, search, agent-loop, harness, bm25]
 aliases: [agentic search, agentic retrieval, 에이전트 검색, 에이전트 기반 검색]
 related: [retrieval-augmented-generation, agent-collaboration-as-search, agent-knowledge-sourcing, context-engineering, bm25, llm-as-search-user, corpus-as-filesystem-workspace, ir-evaluation-obsolescence]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # 에이전트 검색 (Agentic Search)
@@ -52,9 +52,30 @@ updated: 2026-09-21
 
 같은 날 [[benjamin-clavie|Clavié]]는 **반대 방향**에서 온다 — 검색 품질이 아니라 **검색의 조직**이 병목이라고 본다([[orchestrator-searcher-split]]). **두 소스를 겹치면 에이전트 검색의 실패가 세 곳에서 날 수 있다**: 엔진이 나쁘거나(품질), 쿼리를 못 쓰거나(하네스), **문제를 안 쪼갰거나**(조직).
 
+
+## 사람용 엔진이 에이전트에게도 최적일 리 없다 (2026-09-22 추가)
+
+[[will-bryk|Bryk]]([[exa|Exa]])이 같은 결론에 **다른 근거**로 온다 — 정의가 아니라 **워크로드의 모양**이다.
+
+> 이게 사람들이 검색할 때의 모습이에요. **간단한 쿼리**를 검색합니다. **이것이야말로 구글이 만들어진 이유죠.** (…) **하지만 AI 시스템은 완전히 다르잖아요?** 마치 **정보를 게걸스럽게 먹어대는 미친 생물**처럼 보이는데, **인간에게 최적화된 검색 엔진이 AI 시스템에도 최적이라면 정말 말도 안 되는 일일 거예요.** — [[tech-bridge-exa-perfect-search-for-agents]] (09:12~09:30)
+
+그리고 **왜** 다른지에 대해 [[jo-bergum|Bergum]]이 주지 않은 답을 준다 — **목적함수가 다르다.** *"AI 시스템은 SEO를 원하지 않습니다. 광고를 원하지 않아요"*(09:46~10:00). → [[search-as-recommendation-engine]]
+
+### ⚠️ 그런데 이 소스에는 궤적이 없다
+
+**위 표의 핵심 행(*단위 = 궤적*)이 이 소스에는 한 번도 나오지 않는다.** 검색은 **한 방에 끝나는 호출**로 그려지고, 에이전트는 결과를 읽고 재구성하는 주체가 아니라 **답을 받아 가는 소비자**다.
+
+| | [[jo-bergum\|Bergum]] (09-21) | [[will-bryk\|Bryk]] (09-22) |
+|---|---|---|
+| 에이전트가 하는 일 | 쿼리 → 읽기 → **재구성** → 반복 | **한 번 묻고 받는다** |
+| 엔진이 주는 것 | 검사 가능한 결과 | **100 토큰** → [[retrieval-side-context-compression]] |
+| 실패의 소재 | 모델·하네스·엔진으로 **분리** | **엔진 품질** |
+
+**이 차이는 제품 모양의 차이로 보인다** — 한쪽은 에이전트가 반복해서 두드리는 **프리미티브**를, 한쪽은 한 번에 답을 주는 **완성된 결과**를 판다. ⚠️ **두 소스 어느 쪽도 이 구분을 말하지 않는다.**
+
 ## References
 
-- [[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]
+- [[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]] · [[tech-bridge-exa-perfect-search-for-agents]]
 - 인물·조직: [[jo-bergum]] · [[hornet]] · [[benjamin-clavie]]
 - 하위: [[bm25]] · [[llm-as-search-user]] · [[retrieval-not-reasoning-bottleneck]] · [[context-window-as-floppy-disk]] · [[corpus-as-filesystem-workspace]] · [[ir-evaluation-obsolescence]] · [[which-bm25-problem]]
 - 관련: [[retrieval-augmented-generation]] · [[agent-collaboration-as-search]] · [[agent-knowledge-sourcing]] · [[agent-harness-design]] · [[reference-graph-vs-vector-search]]
