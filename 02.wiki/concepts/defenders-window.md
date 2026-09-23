@@ -5,9 +5,9 @@ category: theory
 tags: [security, cybersecurity, dual-use, diffusion, threat-actors, openai]
 related: [defense-factory, ai-vulnerability-discovery, shift-left-security, continuous-security-validation, balance-of-power-safety, pacing-the-frontier]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # 방어자의 창 (Defender's Window)
@@ -74,3 +74,11 @@ updated: 2026-09-20
 - [[tech-bridge-brockman-agi-era-defender-window]] — first-seen
 - [[greg-brockman]] · [[openai]] · [[crowdstrike]] · [[hugging-face]]
 - 관련: [[defense-factory]] · [[ai-vulnerability-discovery]] · [[shift-left-security]] · [[continuous-security-validation]] · [[balance-of-power-safety]] · [[pacing-the-frontier]] · [[legacy-code-modernization]]
+
+## CEO도 같은 틀을 쓴다 — "이 짧은 유리한 시기" (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+09-20 [[greg-brockman|Brockman]]에 이어 [[sam-altman|Altman]]이 같은 논지를 **청중(직원 천 명 미만 기업)에게 직접** 말한다:
+
+> 앞으로 엄청난 사이버 위협이 닥쳐올 것입니다. 그러니 **이 짧은 유리한 시기에는 부디 자신을 방어할 수 있는 수단을 사용하시기 바랍니다.** (20:03~20:12)
+
+**처방이 제품 이름을 얻는다** — [[openai-daybreak|Daybreak]]. 그리고 **창을 여는 조건이 "접근"이라는 이 페이지의 논지에 실례가 붙는다**: [[hugging-face|HF]]는 경쟁사 보안 모델을 **얻지 못해** 중국산 오픈소스 모델로 방어했다(17:20~17:44). ⚠️ 화자는 *"저희 제품을 구매하시든 경쟁사 제품을 구매하시든, 아니면 오픈소스 모델을 사용하시든"*(19:48~19:52)이라고 벤더 중립을 말하면서 **같은 자리에서 자사 서비스를 판다.**

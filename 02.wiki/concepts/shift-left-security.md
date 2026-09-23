@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [security, sdlc, devsecops, validation, ai-assisted-development]
 aliases: [shift left, 보안을 왼쪽으로, 시프트 레프트]
-related: [continuous-security-validation, generated-dependency-scrutiny, behavior-validated-trust, ai-native-sdlc, executable-standards, decision-quality, verification-bottleneck, agent-governance-layers]
+related: [continuous-security-validation, generated-dependency-scrutiny, behavior-validated-trust, ai-native-sdlc, executable-standards, decision-quality, verification-bottleneck, agent-governance-layers, shift-left-interventions]
 first-seen: tech-bridge-shift-left-security-ai-code
 sources: [tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai]
 created: 2026-09-17
-updated: 2026-09-18
+updated: 2026-09-23
 ---
 
 # 시프트 레프트 보안
@@ -129,3 +129,7 @@ updated: 2026-09-18
 > 인공지능은 일부 보안 문제를 식별하거나 해결하는 데 도움을 줄 수 있지만, **기존의 취약점을 자동으로 제거하거나 안전한 코드를 보장할 것으로 기대해서는 안 됩니다.** (07:51~08:05)
 
 그리고 이 페이지에 없던 방향을 하나 더한다 — **옛 코드의 나이가 위험 표면**이라는 것: *"보안 패치를 받지 못하므로 최신 규정 준수 기준을 충족하지 못합니다. 기다리는 해가 길어질수록 취약점 표면은 더 커집니다"*(03:24~03:33). 이 페이지의 *"복잡성은 보안의 적"* 이 **새 코드의 양**을 말했다면, 그쪽은 **옛 코드의 방치**를 말한다. → [[legacy-code-modernization]] · [[technical-debt]]
+
+## 같은 이름, 다른 대상 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+[[ryan-lopopolo|Ryan Lopopolo]]가 **에이전트 교정**에 같은 이름을 쓴다 — 프롬프트에 텍스트를 붙이는 것이 *"가장 [오른쪽 끝]"*, 문서 → AGENTS.md → 정적 검증기·테스트 → eval로 갈수록 왼쪽(06:24~06:46). → [[shift-left-interventions]]. **구조는 이 페이지와 같다**(늦고 수동이고 한 번뿐인 것 → 이르고 자동이고 반복되는 것). ⚠️ 두 소스는 서로를 모르고, **Lopopolo 쪽은 보안을 한 번도 말하지 않는다.** (ko는 그 정의 문장을 *"극우적인 방향 / 좌파적인 접근"* 으로 옮겼다.)

@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness]
 links:
   - https://openai.com/index/nextdoor/
 created: 2026-06-27
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # Codex
@@ -57,3 +57,8 @@ updated: 2026-09-20
 > ⚠️ **개인 사이트 하나의 일화**다. 통제군·오탐·심각도 분포가 없다. 그리고 **당사자 진술**이다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ai-vulnerability-discovery]] · [[defense-factory]]
+
+## 하네스 무관 스킬의 대상으로, 그리고 에세이 제목으로 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+- [[ryan-lopopolo|Ryan Lopopolo]]의 2026년 2월 에세이가 *"에이전트 우선 환경에서 [Codex] 활용"* 으로 언급된다(02:56; en-orig *codecs*, ko **"코덱"**). ⚠️ 에세이의 게재처는 자막에 없다.
+- [[google-skills|Google Skills]]가 호환 하네스로 **Claude Code · Codex · Antigravity** 를 든다(29:39~29:48; en-orig *codeex*, ko *"CodeEx"*).

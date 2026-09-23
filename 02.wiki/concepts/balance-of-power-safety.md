@@ -6,9 +6,9 @@ tags: [ai-safety, open-source, policy, diffusion, governance]
 aliases: [견제와 균형이 안전이다, 접근 제한은 안전이 아니다]
 related: [personal-superintelligence, training-time-risk, regulatory-capture, default-legal-regulation, intelligence-abundance, agent-governance-layers]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce]
 created: 2026-09-14
-updated: 2026-09-16
+updated: 2026-09-23
 ---
 
 # 권력 균형으로서의 안전
@@ -90,3 +90,9 @@ updated: 2026-09-16
 | 공개 | 오픈 모델 | *"생물 테러리스트가 쓸 수 있는 모델을 공개하지 않기로"* 를 미·중 협약에 |
 
 Zuckerberg는 통제 주체를 **없애고**, Amodei는 통제 주체를 **복수화·민주화**한다. 그리고 Amodei의 *"모델을 공개하지 않기로"* 는 이 페이지의 첫 문장(*"접근을 제한하는 것이 아니라"*)과 **정면으로 맞선다.** ⚠️ 해소하지 않는다 — 둘 다 자기 회사의 형태와 맞는 처방이다. → [[joint-democratic-oversight]]
+
+## 프론티어 랩 CEO가 권력 집중을 위험으로 명시 (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[sam-altman|Altman]]이 두 큰 과제 중 하나로 **권력 집중**을 든다 — *"통제력 상실로 인한 사고"* 와 *"권력이 지나치게 집중될 가능성"*(03:54~04:04). *"저는 세상이 이것을 두려워하는 것이 당연하다고 생각합니다"*(03:52~03:54), *"이러한 모델을 개발하는 소수의 기업들이 전 세계가 내려야 할 결정을 좌우하게 되는 것은 결코 용납될 수 없습니다"*(24:09~24:12).
+
+그리고 [[hugging-face|HF]]의 방어 서술이 이 페이지의 09-14 사례에 **세부 하나**를 더한다 — HF가 쓴 것은 **중국산 오픈소스 모델**이었다(17:44~17:49). Altman은 *"오픈 소스 모델의 발전을 막아서는 안 됩니다"*(20:00~20:03)라면서도 **처방은 확산이 아니라 [[openai-daybreak|자사 방어 서비스의 개방]]**이다(*"독점해서 기업들이 사용하지 못하게 하고 싶지는 않습니다"*). **같은 사례, [[mark-zuckerberg|Zuckerberg]]와 다른 결론.**

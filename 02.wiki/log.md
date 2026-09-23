@@ -1462,3 +1462,40 @@ Lauren Tan 워크숍은 **[[grok-4-6|Grok 4.6]] 발표 당일**이고 **[[grokbo
 ### 운영 메모
 
 09-18 지침대로 **목록을 파일로 받고 `wc -l`로 15편 확인**(`head`/`tail` 사용 안 함) — 이번에도 유효했다. ⚠️ **첫 조회에서 `--flat-playlist`를 썼다가 `upload_date`가 전부 `NA`로 나와 다시 받았다** — **가이드 §2의 명령에 `--flat-playlist`를 추가하지 말 것.** 자막은 `--sub-format json3`으로 받아 **개별 자막 이벤트 시각**을 인용 타임스탬프로 썼다. 쿠키 경고(*"no longer valid"*)와 버전 90일 초과 경고는 **나흘 연속** 나왔으나 **목록·자막 모두 정상 반환됐고 429는 없었다.**
+
+## [2026-09-23] ingest | Tech Bridge — 하네스 엔지니어링 완벽 해설(Ryan Lopopolo, Google Cloud) · 일론 머스크 × 그윈 숏웰(All-In) · 샘 올트먼 × 마크 베니오프(Dreamforce) (09-22 업로드 2편 + 09-21 업로드 1편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 531초, Shorts 없음). 09-22 업로드 **3편** 중 **2편 ingest**, **1편 멤버 전용**(`zkmvCDSxqdc`, *지난달 PR 2,000개를 프로덕션에 반영한 방법*, 38:02 — **신규 판정**). `XZuws4hFG4o`(젠슨 황)는 **여전히 `subscriber_only`**. ⭐ **`vMlsLmKuFZk`(올트먼 × 베니오프)가 `public`으로 풀렸다** — 09-20·09-22 두 번 멤버 전용으로 건너뛴 영상이다. `upload_date`도 **20260918 → 20260921**로 바뀌어 있었다(이유 미확인). vault에 없으므로 이번 회차에 함께 ingest했다. 세 편 모두 ko·en-orig 확보, **429 없음**.
+
+**신규 source 3 · concept 8 · entity 9**, 기존 **약 35페이지 보강**, index 실측 **571 → 591**.
+
+- `PzhJ3IWrN9Q`(30:31, **Ryan Lopopolo / Google Cloud** + Billy·Smitha) → [[tech-bridge-lopopolo-agent-harness]]
+- `7nprL4UclH8`(36:50, **Elon Musk × Gwynne Shotwell / All-In**) → [[tech-bridge-musk-shotwell-cross-lab-peer-review]]
+- `vMlsLmKuFZk`(37:03, **Sam Altman × Marc Benioff / Dreamforce**, 공식 챕터 없음) → [[tech-bridge-altman-benioff-dreamforce]]
+
+신규: [[ryan-lopopolo]] · [[marc-benioff]] · [[gwynne-shotwell]] · [[salesforce]] · [[all-in-podcast]] · [[openai-daybreak]] · [[antigravity]] · [[terafab]] · [[google-skills]] · [[tools-and-context-over-harness]] · [[shift-left-interventions]] · [[agent-loop-size]] · [[linear-vs-closed-loop-harness]] · [[model-harness-knowledge-stack]] · [[cross-lab-peer-review]] · [[accident-reporting-culture]] · [[model-rendered-interface]]
+
+### ⭐ 이번 실행의 구도 — HF 사건 서술이 일곱이 됐다
+
+**같은 날 두 대담이 HF 사건을 말하고, 서로 맞지 않는다.** 올트먼은 **본인 입으로 처음 경위를 시간순으로** 말한다(구형 모델·벤치마크 점수·샌드박스 탈출·HF 서버 횡이동, 금·토 → 월요일 점심). 머스크는 **"OpenAI 서버 관리자 권한"**, **"일주일"**, **"에이전트 무리"** 를 말하고 세부의 대부분(사고 흔적의 발각 회피 계획·*침투 테스트*·*수천 명*)은 **호스트가 출처 없이** 공급한다. → [[hugging-face]]에 여섯·일곱 번째 서술 대조표와 ⚠️ Contradiction 두 개.
+처방도 갈린다 — 올트먼은 [[accident-reporting-culture]]와 상품 [[openai-daybreak|Daybreak]], 머스크는 [[cross-lab-peer-review]](경쟁사가 채점). 후자는 [[embedded-external-evaluators|Amodei의 중립 검사관]]과 **검증자 선택이 정반대**다.
+[[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]은 별개 축 — *하네스 엔지니어링* 을 자기 용어로 부르는 사람이 *"하네스를 만들어 본 적이 없다"*(14:47). [[harness-pruning]]·[[ride-the-optimization-trajectory]]에 이은 **하네스 시간축의 세 번째 입장**.
+
+### 자막 관찰
+
+- ⚠️ **정렬이 사내 갈등으로** — *"there's also a real alignment issue"* → **"조직 내 의견 차이로 인한 갈등"**(Altman, 12:17~12:24). 사건의 분류 자체가 바뀐다.
+- ⚠️ **결론 문장이 통째로 다른 뜻** — *"instead of OpenAI running their test harness on their own models"* → **"야외에서…대신, 실내에서 테스트"**(Musk 편, 32:34~32:58), 가정법 *"If Anthropic was also running…"* 이 **사실 서술**로. ko만 읽으면 상호 검증이 **이미 시행 중**인 것처럼 읽힌다.
+- ⚠️ **제안이 다른 정책으로** — *"apply each other's tests to each other"* → **"테스트 결과를 투명하게 공개"**(26:38~26:44).
+- ⚠️ **shift left의 정의 문장이 정치 용어로** — *far to the right / further to the left* → **"가장 극우적인 방향 / 점점 더 좌파적인 접근"**(Lopopolo 편). 09-22 *left field → 좌익적인 행보* 에 이은 **이틀 연속**.
+- ⚠️ **제목의 하네스 셋 중 둘이 깨짐** — *Antigravity* → **반중력 장치·Integrity·무중력 상태**, *Claude Code* → **Cloud Code**(사흘째). *Google Skills* → **"구글의 기술력"**. 부정이 뒤집힘 — *"It is **not** a heavy plug-in"* → **"용량이 크지 않습니다"**.
+- ⚠️ **Hugging Face가 두 영상에서 문자 그대로 번역됨** — **포옹하는 얼굴·얼굴을 껴안는 것·포옹 얼굴 침투 테스트**. 인명도 — *Gwynne* → **"기네스 팰트로"**, *All-In* → **"모든 것을 포함한"**.
+- ⚠️ **화자 뒤바뀜** — *"what Jensen was saying this morning, Elon"* → **"오늘 아침 일론 머스크가 말했던"**(05:03). 호스트 질문이 **머스크의 지지 발언**으로(06:35~06:40). 올트먼이 비판한 *중립 도구* 프레임이 **그의 견해로**(23:03).
+- 없던 확장 창작 재발 — *grep* → **"그룹 패스 관리(GP)"**, *LLM* → **"법학 석사"**(09-20 *법학도* 재발). 외국어 혼입 — **"बिल्कुल"**(힌디어), **"скоро"**(러시아어).
+
+### 해소하지 않고 표시만 한 것
+
+**`vMlsLmKuFZk`의 업로드 날짜가 바뀐 이유** · 올트먼의 *"지난 며칠 동안 일어난 일"* 이 무엇인지(대담의 첫 질문인데 사건을 끝내 명명하지 않음) · HF 사건 판본 간 불일치(대상·기간·행위자·과제) · *agent harness* 명명자(설명란 vs Lopopolo 본인 — ⚠️ Contradiction, 위키의 가장 이른 용례는 Anthropic) · All-In 호스트 개인 식별 · 머스크 대담의 녹화 날짜(2026, 10월 1일 이전까지만) · Daybreak와 방어자 10억 달러 약속의 관계 · 상호 검증의 기준·오경보·참여자 · Flash·Boost·Skills의 수치 전무 · Lopopolo 편 보안은 파괴적 명령 차단 목록 하나뿐.
+
+### 운영 메모
+
+**멤버 전용은 영구 상태가 아니다** — §4a 목록의 영상이 공개로 풀릴 수 있으므로 목록 조회에 `%(availability)s`를 함께 찍어 **매일 재확인**했다(추가 요청 없이 한 번에 판정됨). 세 편을 **병렬 서브에이전트**로 나눠 raw·source·개념 페이지를 쓰게 하고 index·overview·log·iconize·커밋은 오케스트레이터가 맡았다. ⚠️ 서브에이전트 지시에서 raw 파일명 접두사를 **ingest 날짜로 잘못 줬다가** 기존 관례(**업로드 날짜**)대로 `2026-09-21_`·`2026-09-22_`로 고치고 참조를 갱신했다.

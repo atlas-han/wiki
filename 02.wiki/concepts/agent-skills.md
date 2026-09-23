@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness]
 created: 2026-08-31
-updated: 2026-09-21
+updated: 2026-09-23
 ---
 
 # Agent Skills
@@ -259,3 +259,15 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 - [[tech-bridge-flutter-ai-workflow]] · [[ivanna-kacevica]] — 실무자 관점 (두 가지 트리거 · description 트리거 · 보안 · 5개 스킬)
 - [[tech-bridge-agent-knowledge-four-ways]] · [[ibm]] — 스킬의 경계(절차+판단, 그리고 멈추는 자리) · [[agent-knowledge-sourcing]]
 - [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 공유 스킬의 유통에 대한 반대 진술 (2026-09-10)
+
+## 벤더가 자사 플랫폼 지식을 스킬로 유통한다 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+[[google-skills|Google Skills]] — Google Cloud·Firebase·Flutter·Maps 등 **100+ 스킬**, 명령 하나로 설치, **하네스 무관**(Claude Code·Codex·Antigravity). 그리고 스킬·MCP·플러그인의 경계를 **벤더가 직접 긋는다**:
+
+> **스킬은 코딩 에이전트가 필요에 따라 불러오는, 엄선된 도메인 지식입니다.** 그러니까 **이건 단순한 MCP 서버가 아니라는 거죠. [무거운 플러그인도 아닙니다.]** (29:04~29:14)
+
+(⚠️ ko는 뒤 문장을 *"이 플러그인은 용량이 크지 않습니다"* 로 **뒤집었다**.)
+
+같은 에피소드의 [[ryan-lopopolo|Lopopolo]]는 스킬의 **발동 조건**을 자율성의 핵심으로 든다 — *"에이전트가 수행할 작업을 분류하고, 이를 바탕으로 필요한 컨텍스트를 동적으로 파악하는 것이 높은 자율성의 핵심 요소"*(12:58~13:30). 이 페이지의 progressive disclosure와 같은 자리다. → [[agent-loop-size]] · [[tools-and-context-over-harness]]
+
+⚠️ **09-10에 기록한 *공유 스킬은 누가 쓰는가* 의 문제가 벤더 규모로 커졌다** — *명령 하나로 100+ 외부 스킬*(29:34~29:39)을 권하면서 **검토·버전 고정·[[prompt-injection|인젝션]] 표면**을 말하지 않는다. 품질 근거는 **GitHub 별 19,000개**뿐이다.

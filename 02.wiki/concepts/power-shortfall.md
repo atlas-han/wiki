@@ -5,9 +5,9 @@ category: theory
 tags: [power-grid, electricity, data-center, compute, gpu, export-controls, infrastructure]
 related: [compute-constrained-growth, intelligence-as-infrastructure, humanoid-robot-scaling, trusted-throughput]
 first-seen: tech-bridge-elon-musk-g20-ai-future
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-23
 ---
 
 # Power Shortfall (전력이 컴퓨팅의 상한이다)
@@ -68,3 +68,7 @@ updated: 2026-09-07
 - [[elon-musk]] · [[spacex]]
 - 같은 병목의 다른 층: [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-altman-g20-economic-boom]]
 - 관련: [[compute-constrained-growth]] · [[intelligence-as-infrastructure]]
+
+## 같은 화자, 병목이 칩으로 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+2주 뒤 같은 [[elon-musk|Musk]]가 **칩 공급**을 병목으로 세운다 — *"기존 반도체 공장의 용량이 부족 (…) 이 모든 공장들이 최대 생산 능력으로 가동"*(20:02~20:14), *"테라팹을 구축하든지, 아니면 확장성에 실패하든지"*(20:47~20:50) → [[terafab]]. **모순이 아니라 층이 다르다**([[intelligence-as-infrastructure]]의 에너지 층 → 칩 층). 이 페이지의 *"칩 생산 연 40~50% vs 전력 연 10~20%"* 는 칩이 전력보다 빨리 는다는 전제였는데, 이번엔 **칩 쪽도 상한에 닿았다**고 말한다. ⚠️ 두 진술 모두 수치 근거가 없다.

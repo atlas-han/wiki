@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review]
 created: 2026-09-07
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # SpaceX
@@ -47,3 +47,11 @@ updated: 2026-09-20
 지나가는 언급이고, 이 회사에 대해 아무것도 더해 주지 않는다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[ben-horowitz]]
+
+## ⚠️ 소유주 본인이 "AI 테스트 하네스를 돌리는 쪽"에 넣었다 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+[[elon-musk|Musk]]가 [[cross-lab-peer-review|랩 간 상호 검증]]의 참여자를 열거하며: en-orig *"Anthropic was also running the test harness on [OpenAI] models and you know **SpaceX is running its test harness** and uh Google and Meta were doing that"*(32:41~32:53). ⚠️ ko는 가정문을 **사실 보고**로 옮겼다(*"스페이스X도 테스트 장비를 사용하고 있었고"*).
+
+**위 09-20 절이 "문맥과 어긋난다"고 표시만 했던 열거**(Brockman 편 진행자)와 [[tech-bridge-lauren-tan-trusting-agents|Lauren Tan 편]]의 *"SpaceX AI"*([[grok-4-6]])에 이어, **이번엔 소유주 본인이** SpaceX를 AI 모델 평가 주체로 부른다. **세 소스가 독립적으로 같은 방향을 가리킨다.** ⚠️ 조직 구조를 설명하는 소스는 여전히 없다 — **추정하지 않는다.**
+
+같은 대담: 사장 겸 COO [[gwynne-shotwell]] · Tesla와의 공동 R&D 팹 [[terafab]] · Starship **2027년 완전 재사용** 목표(*"가능성이 매우 높다"*, 18:17~18:27).

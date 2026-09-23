@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness]
 created: 2026-09-01
-updated: 2026-09-22
+updated: 2026-09-23
 ---
 
 # Cursor
@@ -69,3 +69,7 @@ AI 코딩 도구·에이전트 회사. 본 위키 첫 등장은 [[tech-bridge-gr
 ## References
 
 - [[tech-bridge-grokbot-agent-teams]] · [[grokbot]] · [[grok-4-6]] · [[lauren-tan]] · [[roshan-sadanani]] · [[tech-bridge-exa-perfect-search-for-agents]]
+
+## 경쟁사 에피소드가 부른 하네스 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+Google 측 에피소드가 [[antigravity|Antigravity]]·[[claude-code|Claude Code]]와 함께 Cursor를 *"현재 가장 인기 있는 에이전트 하네스"*(24:24~24:28)로 든다. *"어떤 용도에 가장 적합한 것일까요?"*(24:30~24:37)를 묻고 **답하지 않는다.** 위 09-08의 **cursor harness 정의**(도구 실행·캐시·동적 컨텍스트·컨텍스트 조립)와 이 에피소드의 [[ryan-lopopolo|Lopopolo]]가 말한 *"작업을 분류하고 필요한 컨텍스트를 동적으로 파악"*(12:58~13:30)이 같은 자리다.

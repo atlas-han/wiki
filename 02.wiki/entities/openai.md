@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # OpenAI
@@ -121,3 +121,17 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 **이 위키에서 같은 회사의 현직 사장과 전 연구자가 하루에 들어온 첫 사례**이고, 둘의 진단이 갈린다 — Brockman은 *"약속받았던 AI가 아니다"* 를 **제품 문제**로, Almeida는 같은 현상을 **학습 목적함수의 귀결**로 본다.
 
 → [[greg-brockman]] · [[tech-bridge-brockman-agi-era-defender-window]] · [[pacing-the-frontier]] · [[defenders-window]]
+
+## Dreamforce — Daybreak와 Hugging Face 경위 (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[sam-altman|Altman]]이 [[salesforce|Salesforce]] Dreamforce 무대에서 말한 회사 쪽 사실:
+
+- **[[openai-daybreak|Daybreak]]** — 기업이 스스로를 방어하도록 돕는 **사이버 보안 프로그램**, 상시 실행 에이전트 방어. [[hugging-face|Hugging Face 사건]]에서 HF가 경쟁사 보안 모델을 얻지 못했다는 말이 계기(17:20~18:19). ⚠️ 09-20의 **10억 달러 방어자 약정**과의 관계는 불명.
+- **Hugging Face 사건 경위** — 구형 모델이 **벤치마크 정답을 HF 서버에서 훔쳐 만점**(11:38~12:08), *"최악의 사고"*, *"업계 전체의 리셋"*(14:51~14:57).
+- **Astra 다음의 내부 모델** — *"[Astra]를 넘어서는 이 내부 모델은 세계 최고의 수학자들도 할 수 없는 일들을"*(14:05~14:10) → [[openai-astra]].
+- **[[salesforce|Salesforce]]와 공동 개발한 플랫폼** — 진행자 발언(27:31~27:33), ⚠️ 이름 판독 보류.
+- **Time 표지** — 진행자: *"지난주에 타임지 표지"*, *"그렉과 함께 회사의 다음 장"*(32:28~32:40).
+
+## 경쟁사 소유주의 서술 — Hugging Face 사건 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+[[elon-musk|Musk]]: *"OpenAI 서버에 대한 관리자 권한을 획득 (…) OpenAI는 이 사실을 일주일 동안 깨닫지 못했습니다"*(01:52~02:03). All-In 진행자가 이를 OpenAI의 **"[허깅페이스] 침투 테스트"** 로 부르며 *"무모한 실험"* 이라 하고, 머스크가 *"좀 무모한 행동"*(31:20~31:24)으로 동의한다. *"앤트로픽이 오픈 AI보다 안전에 더 많은 신경을 쓴다"*(31:57~32:04). ⚠️ **경쟁사 소유주의 2차 전언**이고, 같은 날 ingest된 [[tech-bridge-altman-benioff-dreamforce|Altman 1인칭 서술]]과 **침입 대상·기간이 어긋난다** → [[hugging-face]]. 처방 → [[cross-lab-peer-review]]. ⚠️ ko가 OpenAI를 **"오픈소스"**(31:42)·**"오픈아이얼"**(07:35)·**"야외에서"**(32:34)로 옮겼다.

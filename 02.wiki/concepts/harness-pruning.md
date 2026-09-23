@@ -3,11 +3,11 @@ title: Harness Pruning
 type: concept
 category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
-related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement]
+related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness]
 created: 2026-09-05
-updated: 2026-09-21
+updated: 2026-09-23
 ---
 
 # Harness Pruning
@@ -101,3 +101,11 @@ pruning은 축소가 아니라 **재배치**다.
 
 - [[tech-bridge-claude-code-team-workflow]] — first-seen
 - 관련: [[agent-harness-design]] · [[harness-engineering]] · [[self-harness]] · [[goal-level-delegation]] · [[adaptive-response-format]]
+
+## 2026-09-23 — 지울 것을 애초에 만들지 않는다
+
+[[tech-bridge-lopopolo-agent-harness]]의 [[ryan-lopopolo|Lopopolo]]가 **같은 전제에서 더 앞선 처방**을 낸다.
+
+> **주변에 지나치게 많은 지원 체계를 구축하면, 실력이 향상될수록 불필요하게 그들의 발전을 제약하게 됩니다.** 그리고 이런 물건들을 버리기 싫다는 생각 때문에 **일종의 매몰 비용 오류**에 빠지게 됩니다. (16:26~16:36)
+
+→ [[tools-and-context-over-harness]]. 이 페이지가 *"무엇을 언제 지울 것인가"* 라면, Lopopolo는 **지워야 할 것(모델 결함 보완)을 하네스에 넣지 말고, 낡지 않는 것(도구·문서)만 쌓으라**고 한다. 그리고 이 페이지의 ⚠️ 유보 — *지울 권한이 한곳에 있어야 한다*(Anthropic 팀은 하네스를 소유한다) — 에 대한 **사용자 쪽 답**이기도 하다: 하네스를 소유하지 않는 사람은 지울 수 없으니 **처음부터 거기에 걸지 않는다.** ⚠️ 매몰 비용이라는 **심리적** 원인을 처음 명시한 소스다.

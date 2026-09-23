@@ -5,9 +5,9 @@ category: technique
 tags: [formal-verification, lean, proof, security, navier-stokes, verifiable-code]
 related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # AI가 여는 형식 검증
@@ -49,3 +49,7 @@ updated: 2026-09-20
 - [[tech-bridge-brockman-agi-era-defender-window]] — first-seen
 - [[greg-brockman]] · [[openai]]
 - 관련: [[executable-standards]] · [[verifiable-goals]] · [[defense-factory]] · [[agent-swarm]] · [[verification-bottleneck]] · [[embedded-external-evaluators]] · [[ai-vulnerability-discovery]]
+
+## CEO의 서술 — "7대 난제 중 하나" (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[sam-altman|Altman]]: *"올여름, 저희는 수학에서 가장 풀리지 않은 7대 난제 중 하나를 증명할 수 있는 모델을 개발했습니다"*(13:38~13:47), 그리고 서두에서 *"밀레니엄 프라이즈 문제까지 증명할 수 있는 모델"*(02:30). **나비에-스토크스(밀레니엄 문제 중 하나)에 대한 09-20 [[greg-brockman|Brockman]]의 서술과 같은 사건으로 보인다** — ⚠️ Altman은 **어느 문제인지 말하지 않고 Lean 형식화도 언급하지 않는다.** 이 위키는 같은 사건으로 **추정만** 한다.

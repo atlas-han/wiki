@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
 links: []
 created: 2026-09-06
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # Astra (OpenAI)
@@ -89,3 +89,13 @@ updated: 2026-09-20
 - Astra ↔ GPT-6 명명 관계.
 
 → [[greg-brockman]] · [[tech-bridge-brockman-agi-era-defender-window]] · [[jagged-capability-frontier]] · [[defense-factory]]
+
+## Astra 다음 — "내부 모델" (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[sam-altman|Altman]]이 수학 역량의 사다리로 Astra를 **중간 칸**에 놓는다:
+
+> 누군가가 제시한 기준은 [5.5]면 평균적인 수학 교수 수준 (…) [5.6]은 아마도 상위 1~2% (…) **[Astra]는 그것보다는 조금 더 나았다. 그리고 [Astra]를 넘어서는 이 내부 모델은 세계 최고의 수학자들도 할 수 없는 일들을 해낼 수 있습니다.** (13:52~14:10)
+
+- ⭐ **Astra를 넘어서는 내부 모델이 있다** — 이름·출시 여부 없음. ⚠️ Astra와 GPT-6의 관계처럼 **이 모델의 이름도 명시되지 않는다.**
+- ⚠️ **"누군가가 제시한 기준"** 이고 측정 조건이 없다. *5.5·5.6* 은 모델 번호로 읽히나 *GPT-* 접두어가 없다.
+- ⚠️ **ko 자막이 "아스트라 우주망원경"을 창작했다**(14:05).

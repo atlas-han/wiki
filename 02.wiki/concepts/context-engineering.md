@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness]
 created: 2026-05-25
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # Context Engineering
@@ -149,3 +149,11 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 - [[tech-bridge-minimax-m3-long-context]] — 늘리는 쪽의 처방 · [[long-context-agents]] (2026-09-08)
 - [[tech-bridge-agent-to-agent-as-search]] — 프라이버시 상한 · [[agent-collaboration-as-search]] (2026-09-10)
 - [[tech-bridge-company-brain-security]] — 스코프 있는 조직 컨텍스트 · [[company-brain]] (2026-09-10)
+
+## 밀어 넣기에서 발견하게 하기로 — 게으른 프롬프터 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+> 나는 **엄청나게 게으른 프롬프터가 되고 싶다.** 왜냐하면 제가 **모델이 스스로 기반을 다지는 데 필요한 도구와 맥락을 제공하는 작업을 완료했다면, 프롬프트에 그 내용을 미리 입력할 필요가 없기 때문입니다.** — [[ryan-lopopolo]] (04:24~04:38)
+
+**컨텍스트를 프롬프트에 앞세워 넣는 것(frontload)을 스펙트럼의 가장 오른쪽**에 두고, 모델이 **문서 코퍼스를 도구로 탐색해 스스로 발견**하게 하는 쪽을 왼쪽에 둔다(06:24~06:46). → [[shift-left-interventions]]. 그리고 **에이전트가 읽을 문서의 형식**까지 설계한다 — 링크를 문단 끝 앵커로 빼 *"컨텍스트를 효율적으로"* 유지하고, 그 위치를 테스트로 강제(08:10~08:49; 진행자가 lost-in-the-middle과 연결).
+
+⭐ 맺음의 한 줄이 이 페이지의 존재 이유를 요약한다 — *"[에이전트]들은 고객이 생각하는 '좋은 것'에 맞춰 **마지막 단계까지 적응하기 위해 항상 맥락을 필요로 합니다**"*(18:44~18:50). 모델이 좋아져도 **내가 원하는 것**은 모델이 알 수 없다(03:47~03:56). → [[tools-and-context-over-harness]]

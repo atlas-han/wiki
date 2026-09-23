@@ -6,9 +6,9 @@ tags: [ai-safety, geopolitics, china, chips, export, security, pace]
 aliases: [여유 안의 감속, 멈추지 말고 늦추자, envelope]
 related: [ai-arms-limitation-lens, training-time-risk, swiss-cheese-defense-in-depth, embedded-external-evaluators, power-shortfall, regulatory-capture, race-to-the-top]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-23
 ---
 
 # 우위 범위 안의 감속
@@ -52,3 +52,15 @@ updated: 2026-09-16
 - [[tech-bridge-dario-amodei-cbs-interview]] — first-seen
 - [[dario-amodei]] · [[anthropic]]
 - 관련: [[ai-arms-limitation-lens]] · [[training-time-risk]] · [[power-shortfall]] · [[bill-gates]]
+
+## ⚠️ 반대 입장 — "단서를 붙이지 마라" (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[sam-altman|Altman]]이 **조건부 감속**을 대중 불신의 원인으로 지목한다:
+
+> 반면에 어떤 회사들은 **"다른 회사들이 책임감을 보일 때만 속도를 늦추겠다"거나 "다른 회사들이 책임감을 보일 때만 책임감을 보이겠다"**라고 말하기도 합니다. (…) **그 점에 대해서는 어떤 단서도 붙어서는 안 됩니다.** (03:16~03:33)
+
+> ⚠️ **Contradiction:** 이 페이지의 전략(*우위 범위 안에서만 늦춘다*)은 정의상 **조건부**다. Altman은 **회사 이름을 대지 않고**, 이 위키는 대상이 [[dario-amodei|Amodei]]·[[anthropic|Anthropic]]이라고 **단정하지 않는다.** 다만 같은 대담에서 Altman도 *"상업적 압력이나 경쟁 때문에 어떤 기업이나 국가가 옳은 일을 하지 않을 수도 있다는 암시"*(05:28~05:40)가 두려움을 만든다고 해 — **국가 간 경쟁이라는 이 페이지의 전제 자체는 부정하지 않는다.** 경계선은 그어지지 않는다.
+
+## 기업 간에는 여유가 없다 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+[[elon-musk|Musk]]: 선두 두 회사(Anthropic·OpenAI)의 모델이 *"기능 면에서 상당히 유사"*(31:38~31:46)하므로 **어느 쪽도 상대에게 선두를 넘기지 않고는 속도를 늦추기 어렵다**(en-orig 31:46~31:53; ⚠️ ko는 *"속도가 많이 느려진다"* 로 오역). 이 페이지의 여유는 **미·중 사이**의 우위였다. **미국 선두 기업 사이에는 그 여유가 없다**는 진술이고, 모순이 아니라 **다른 축의 격차**다 — 그러나 둘을 겹치면 감속은 **기업 간 합의 없이는 일어나지 않는다**(→ [[race-to-the-top]]). 머스크는 중국에 대해서도 **감속 요청이 아닌** 안을 낸다 — *"중국에 잠시 중단을 요청 (…) 중국은 이미 그럴 의사가 없다고 밝혔습니다"*(27:27~27:34, 진행자 측) → [[cross-lab-peer-review]]. ⚠️ 이 위키가 겹쳐 읽은 것이다.

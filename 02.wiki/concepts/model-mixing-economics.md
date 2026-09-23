@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
-related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering]
+related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness]
 created: 2026-09-09
-updated: 2026-09-19
+updated: 2026-09-23
 ---
 
 # 모델 혼합의 경제학
@@ -85,3 +85,11 @@ updated: 2026-09-19
 ## References
 
 - [[tech-bridge-cursor-legacy-refactoring]] · [[cursor]] · [[grok-4-6]] · [[tech-bridge-grokbot-agent-teams]]
+
+## 루프 횟수가 곱하는 비용 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+지금까지 이 페이지의 축은 **단계 배분**(계획은 비싼 모델, 실행은 싼 모델)이었다. 스미타가 **루프 횟수**라는 축을 더한다.
+
+> 에이전트는 디렉터리를 검사하고, 함수를 업데이트하고, 단위 테스트를 실행한 다음, **하나의 작업을 완료하기 위해 해당 시퀀스를 20번, 40번 또는 심지어 60번 반복**할 수 있습니다. 따라서 **연속적인 홉을 많이 사용하는 경우 속도와 비용이 급격히 증가합니다.** 따라서 **빠르고 비용 효율적인 모델은 결코 성능 저하를 의미하지 않습니다.** (26:29~26:50)
+
+→ [[model-harness-knowledge-stack]]. ⚠️ **당사자 발표(Gemini 3.8 Flash 소개)이고 수치가 없다.** 그리고 **약한 모델이 홉 수 자체를 늘릴 가능성**(비용 = 홉 수 × 단가)을 다루지 않는다. 같은 에피소드에서 하네스 쪽은 **Antigravity `/boost`를 "아껴 쓰라"** 고 한다 — 모드 선택도 예산 문제라는 암시지만 말하지 않는다.

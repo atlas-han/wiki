@@ -6,9 +6,9 @@ tags: [tesla, spacex, x, ceo, humanoid-robots, regulation, g20, power-grid]
 links:
   - https://www.tesla.com/
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review]
 created: 2026-09-07
-updated: 2026-09-16
+updated: 2026-09-23
 ---
 
 # Elon Musk
@@ -46,3 +46,16 @@ updated: 2026-09-16
 ## Amodei의 계획에 동의했다 — 진행자 서술 (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
 
 CBS 진행자: *"**Elon Musk**가 당신에게 동의한다고 했습니다."*(05:29). [[dario-amodei|Dario Amodei]]는 *"경쟁사를 포함한 업계 리더들"* 로 받는다. ⚠️ **무엇에 동의했는지 이 위키에 소스가 없다.** 이 페이지의 [[default-legal-regulation|default legal]] 입장(규제 완화 쪽)과 Amodei의 [[embedded-external-evaluators|상주 외부 평가자]](모든 모델 제작자에게 검사관)는 **표면상 반대 방향**이라 동의의 내용이 무엇인지 더 궁금해지지만, 위키는 추정하지 않는다. 또 Amodei의 [[slowdown-within-lead-margin]]은 **칩**을 시간을 사는 정책 지렛대로 보는데, 이 페이지의 [[power-shortfall]]은 칩을 **전력 공급 문제**로 본다 — 같은 물건, 다른 축.
+
+## All-In 현장 대담 — Hugging Face 사건, 랩 간 상호 검증, Terafab (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+멤피스 *"에어스트림 트레일러"* 에서 화상 출연(10:04~10:11), [[gwynne-shotwell|Gwynne Shotwell]]과 함께. 이 위키에 들어온 것:
+
+- **[[hugging-face|Hugging Face]] 사건** — *"광신적인 AI 에이전트 무리가 일주일 내내"*(01:45~01:49), *"OpenAI 서버에 대한 관리자 권한"*(01:52~01:55), *"OpenAI는 일주일 동안 깨닫지 못했다"*(02:00~02:03). ⚠️ **2차 자료 전언**이고 [[tech-bridge-altman-benioff-dreamforce|Altman]]의 1인칭 서술(HF 서버 침입, 며칠)과 어긋난다 → [[hugging-face]].
+- ⭐ **처방: [[cross-lab-peer-review]]** — *"숙제를 직접 채점하는 대신에, 적어도 경쟁자들이 숙제를 채점"*(02:43~02:46), 출시 전 API 접근, 강제력은 *"여론 재판"* 과 제조물 책임, **중국이 받아들일 수 있어야** 의미가 있다.
+- **"다리오가 옳다"의 해명** — *"제가 '그가 옳다'라고 말한 의미는 인공지능의 위험성이 현재 매우 심각하다는 것"*(06:57~07:03). 진행자가 *피해냐 규제 해법이냐* 를 물었고 **위험의 크기로만** 답했다. 위 09-16 절의 *"무엇에 동의했는지 소스가 없다"* 에 대한 **본인 해명**이다(⚠️ 같은 일인지는 확정 불가).
+- **규제관** — *"규제 감독의 강도를 높이는 것은 언제든 가능하지만, 줄이는 것은 매우 어렵습니다"*(34:28~34:36). [[default-legal-regulation]]과 일관된다.
+- *"연구소라는 용어가 재밌다 — 실제로는 영리 기업"*(31:28~31:34); **Anthropic이 OpenAI보다 안전에 더 신경 쓴다**(31:57~32:04).
+- **[[terafab]]** — *"테라팹을 구축하든지, 아니면 확장성에 실패하든지"*(20:47~20:50). G20 편의 병목이 **전력**이었다면 여기서는 **칩**이다 → [[power-shortfall]].
+
+> ⚠️ **경쟁 AI 회사의 소유주**로서 [[openai|OpenAI]]의 사고와 처방을 말한다. 자기 회사(SpaceX)를 하네스를 돌리는 쪽에 넣는다(32:47).

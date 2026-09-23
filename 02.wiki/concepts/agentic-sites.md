@@ -5,9 +5,9 @@ category: architecture
 tags: [personalization, rag, inference-latency, generative-ui, web]
 related: [verifiable-goals, sutton-bitter-lesson, model-context-protocol, structured-brand-context]
 first-seen: tech-bridge-agentic-sites
-sources: [tech-bridge-agentic-sites, tech-bridge-taste-labs-measuring-slop]
+sources: [tech-bridge-agentic-sites, tech-bridge-taste-labs-measuring-slop, tech-bridge-altman-benioff-dreamforce]
 created: 2026-09-01
-updated: 2026-09-12
+updated: 2026-09-23
 ---
 
 # Agentic Sites (에이전틱 사이트)
@@ -85,3 +85,7 @@ RAG의 코퍼스가 외부 지식이 아니라 **사이트 전체**다. 그래�
 
 - [[tech-bridge-agentic-sites]] (first-seen) · [[carlos-sanchez]] · [[adobe]] · [[cerebras]] · [[gemma-4]]
 - 대비: [[sutton-bitter-lesson]] · 동형: [[verifiable-goals]]
+
+## 반대편 끝 — 인터페이스 전체를 새로 쓴다 (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[model-rendered-interface]]가 이 페이지와 **같은 스펙트럼의 반대쪽 끝**에 선다. 이 페이지는 **블록 재조립**이고 *"사이트 전체를 새로 생성하는 것을 원하지 않는다"* 였는데, [[sam-altman|Altman]]은 사내용 동적 인터페이스를 *"1만 줄이든 그 이상이든 필요한 코드를 직접 작성하여"*(28:27~28:30) 그리는 것을 장점으로 말한다. **차이는 사용자(외부 방문자 vs 사내 결정자)와 제약(브랜드 가이드라인 vs 없음)에서 온다.** ⚠️ 그쪽 소스는 지연·환각 예산을 말하지 않는다.

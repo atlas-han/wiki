@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-18
+updated: 2026-09-23
 ---
 
 # Anthropic
@@ -159,3 +159,7 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 → [[fixed-budget-alpha]] · [[all-or-nothing-accuracy]] · [[true-cost-to-perfect-answer]] · [[strategy-primitives]]
 
 ⚠️ **당사자 진술.** 그리고 09-01의 *"Sonnet 실행 + Opus 조언이 Sonnet 단독보다 싸다"* 는 **이번 발표에서 되풀이되지 않았다.** ⚠️ ko 자막이 제품명을 **"클라우드 관리형 에이전트"** 로 옮겼다. ⚠️ 11:33의 *"Fable이 다시 온라인"* 은 양 트랙 불분명 — [[claude-mythos-preview]]의 *"Mythos·Fable 사태"* 와 **연결하지 않는다.**
+
+## 경쟁사 소유주의 평가 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+[[elon-musk|Musk]]: *"종합적으로 봤을 때 저는 앤트로픽이 오픈 AI보다 안전에 더 많은 신경을 쓴다고 생각합니다. 하지만 (…) 앤트로픽조차도 자신들의 모델에 대해 우려하고 있다는 점을 인정"*(31:57~32:10). 그리고 *"앤트로픽스(Anthropics)도 자체적으로 몇 가지 보안 문제를 보고했습니다"*(02:05~02:08) — ⚠️ **무엇인지 말하지 않는다.** [[claude-mythos-preview]]의 사태와 **연결하지 않는다.** 선두 두 회사(Anthropic·OpenAI)의 모델이 *"기능 면에서 상당히 유사"* 해 어느 쪽도 선두를 넘기지 않고는 늦추기 어렵다(31:38~31:53) → [[slowdown-within-lead-margin]] · [[cross-lab-peer-review]].

@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness]
 created: 2026-06-03
-updated: 2026-09-09
+updated: 2026-09-23
 ---
 
 # Harness Engineering
@@ -125,3 +125,17 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 - [[agent-harness-design]] — Anthropic 관점 허브
 - [[context-engineering]] — 진화의 출발점
 - [[self-harness]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] — 자기개선·오케스트레이션 갈래
+
+## "하네스는 만들지 않는다"는 하네스 엔지니어 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+[[ryan-lopopolo|Ryan Lopopolo]](Google Cloud)가 **이 용어를 자기 것으로 부르는 사람**으로 나온다 — *"제가 '하네스 엔지니어링'이라고 부르는 것"*(14:50~14:52). 그의 정의는 이 페이지의 System Evolution과 같은 루프를 **"기본 상태로 되돌리기"** 로 요약한다.
+
+> **기본적으로 하네스 엔지니어링의 모든 것은 에이전트를 기본 상태로 되돌리기 위한 점점 더 정교해지는 일련의 기법입니다.** (10:40~10:47)
+
+그런데 그는 *"저는 하네스를 만들어 본 적이 없습니다"*(14:47)라고 한다 — Tool Harness(Antigravity 같은 것)는 **고정**하고 **도구와 컨텍스트**만 만진다. 위 3계층으로 옮기면 **Tool Harness는 고르고 AI Layer만 만진다**는 것과 같은 분업이다. → [[tools-and-context-over-harness]] · 개입의 순서는 [[shift-left-interventions]] · 긴 지평은 [[agent-loop-size]]
+
+| 소스 | 하네스를 무엇으로 정의하는가 |
+|---|---|
+| **Google 에피소드 진행자 ([[tech-bridge-lopopolo-agent-harness]])** | **LLM이 아닌 모든 것** — *"하네스는 LLM을 제외한 AI 에이전트의 모든 구성 요소"*(00:47~00:49). 빌리: *"의도를 행동으로 연결"*(20:36~20:38) |
+
+> ⚠️ Contradiction: 에피소드의 설명란·내레이션은 Lopopolo를 **"'에이전트 하네스'라는 용어를 만든"** 사람으로 소개한다(02:14~02:22). 본인이 명명을 주장하는 대상은 **harness engineering**이고, 이 위키의 [[agent-harness-design]]은 [[anthropic|Anthropic]] 블로그의 *harness* 용법에서 출발했다. **판정하지 않는다** — 양쪽 게재일이 위키에 월 단위로 없다. 이 페이지의 first-seen(06-03 Cole Medin 편)이 *"2026년 들어 대중화"* 라고 한 것과, Lopopolo의 **2026년 2월** 글(02:43~02:48)은 시간상 정합한다.

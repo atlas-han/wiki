@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [learning, python, code-review, cognitive-offloading, judgment, career]
 aliases: [마법사가 아니라 읽을 수 있을 만큼, 읽기 유창성, 검토 가능한 최소 역량]
-related: [cognitive-offloading, taste-vs-judgment, three-tier-ai-skill-stack, ai-engineer-vs-ml-researcher, behavior-validated-trust, agent-trust-curve]
+related: [cognitive-offloading, taste-vs-judgment, three-tier-ai-skill-stack, ai-engineer-vs-ml-researcher, behavior-validated-trust, agent-trust-curve, ryan-lopopolo]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-lopopolo-agent-harness]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-23
 ---
 
 # 에이전트 출력을 읽을 만큼의 유창성
@@ -44,3 +44,11 @@ updated: 2026-09-16
 - [[tech-bridge-ai-engineer-three-tier-skill-stack]] — first-seen
 - [[cedric-clyburn]] · [[ibm]]
 - 관련: [[cognitive-offloading]] · [[taste-vs-judgment]] · [[three-tier-ai-skill-stack]] · [[behavior-validated-trust]]
+
+## 가장 극단적인 사례 — 1년 넘게 에디터를 열지 않은 사람 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+> **작년 5월 이후로는 에디터를 아예 열어본 적도 없는 것 같아요.** (03:09~03:15)
+
+> **제가 코드를 직접 작성하는 건 아니기 때문에 코드가 상당히 읽기 쉬워야 합니다.** (…) 만약 그게 합리적이지 않다면, **왜 그런지 이유를 설명하면서 빠져나올 방법이 필요**하잖아요 (09:03~09:30)
+
+[[ryan-lopopolo|Ryan Lopopolo]]. **쓰기 능력은 쓰지 않고, 읽기와 역추적 경로만 남았다.** 이 페이지의 기준(*"에이전트가 쓴 것을 읽고 이해할 수 있을 만큼"*)이 **요구사항이 에이전트에게 넘어간다** — 사람이 읽을 수 있게 **쓰라고 에이전트에게 강제**한다(문서도 *"사람이 읽기 쉬운 형태"*, 08:45~08:49). ⚠️ 진행자의 *"운영 환경에 배포할 코드를 읽지 않는다는 게 조금 두렵긴 하지만"*(03:22~03:26)은 답을 받지 못한다.

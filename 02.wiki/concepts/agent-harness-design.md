@@ -3,11 +3,11 @@ title: Agent Harness Design
 type: concept
 category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
-related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition]
+related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition, tools-and-context-over-harness, linear-vs-closed-loop-harness]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness]
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-09-23
 ---
 
 # Agent Harness Design
@@ -203,3 +203,12 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 - [[self-harness-paper]] — Self-Harness (Shanghai AI Lab), 자기개선 하니스 시각
 - 관련 개념: [[self-harness]] · [[harness-engineering]]
 - [[tech-bridge-jensen-huang-g20-agi]] — 외골격 정의 · 온보딩=하네스 (Jensen Huang, 2026-09-06)
+
+## 2026-09-23 — 가장 넓은 정의, 그리고 하네스를 만들지 않는 입장
+
+[[tech-bridge-lopopolo-agent-harness]]가 하네스를 **"LLM을 제외한 AI 에이전트의 모든 구성 요소"**(00:47~00:49)로 정의한다 — 이 위키에서 가장 넓다. 같은 에피소드 안에서 두 입장이 나란히 놓인다:
+
+- [[ryan-lopopolo|Lopopolo]] — **하네스는 고정**, 도구·컨텍스트에 투자. 과잉 스캐폴딩은 *"실력이 향상될수록 불필요하게 그들의 발전을 제약"* 하고 **매몰 비용**이 된다(16:26~16:36). 이 페이지의 핵심 원리(*가정은 모델이 좋아지면 낡는다*)를 **"그러니 가정을 하네스에 넣지 말라"** 로 끌고 간 것. → [[tools-and-context-over-harness]]
+- 빌리 — **직접 짜 봐야 이해한다.** 루핑·도구·메모리 세 결정으로 선형/폐루프/가드레일 하네스를 코드로 보인다. → [[linear-vs-closed-loop-harness]]
+
+> ⚠️ Contradiction: 에피소드는 Lopopolo를 *"'에이전트 하네스'라는 용어를 만든"* 사람으로 소개한다(02:14~02:22). 이 페이지의 출발점은 [[anthropic|Anthropic]] 블로그의 *harness* 용법이다. 본인은 **"하네스 엔지니어링"** 을 자기 용어로 부른다(14:50~14:52). **이 위키는 판정하지 않는다.**

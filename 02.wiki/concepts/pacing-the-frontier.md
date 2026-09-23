@@ -5,9 +5,9 @@ category: theory
 tags: [ai-safety, governance, openai, deployment, alignment, bottleneck]
 related: [training-time-risk, slowdown-within-lead-margin, agi-definition, compute-constrained-growth, embedded-external-evaluators, joint-democratic-oversight]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # 프론티어의 속도 조절 (Pacing the Frontier)
@@ -52,3 +52,11 @@ updated: 2026-09-20
 - [[tech-bridge-brockman-agi-era-defender-window]] — first-seen
 - [[greg-brockman]] · [[openai]]
 - 관련: [[training-time-risk]] · [[slowdown-within-lead-margin]] · [[agi-definition]] · [[compute-constrained-growth]] · [[embedded-external-evaluators]] · [[joint-democratic-oversight]] · [[race-to-the-top]]
+
+## CEO가 같은 원칙을 말한다 (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+[[greg-brockman|Brockman]]이 이름 붙인 원칙을 [[sam-altman|Altman]]이 **[[hugging-face|Hugging Face 사건]]의 교훈으로** 반복한다:
+
+> 우리는 **역량 개발 속도를 조절하여 정렬, 안전 및 모니터링이 항상 역량 개발보다 앞서 나가도록** 해야 합니다. (14:40~14:51)
+
+근거는 **수학 사다리**(초등 수학 → 밀레니엄 난제, 3년)의 *"누구의 기준으로 봐도 확실히 빠른 이륙"*(14:19~14:24)이다. ⚠️ **같은 대담에서 Altman은 조건부 감속을 비판한다**(*"어떤 단서도 붙어서는 안 됩니다"*, 03:33) → [[slowdown-within-lead-margin]]. **"무조건 조절"이 실제로 무엇을 멈추는지는 말하지 않는다.**

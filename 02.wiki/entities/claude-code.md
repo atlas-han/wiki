@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # Claude Code
@@ -129,3 +129,7 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 > ⚠️ **ko 자막이 제품명을 "클로드 코드"와 "클라우드 코드" 두 갈래로 옮긴다**(en-orig가 *cloud code* 로 오인식). 09-19 Vercel 편에서 기록한 **같은 유형이 하루 만에 재발**했다.
 
 → [[tech-bridge-rlhf-assistance-vs-automation]] · [[diogo-almeida]] · [[rlhf]] · [[assistance-vs-automation]]
+
+## Google 에피소드가 부른 "가장 인기 있는 하네스" (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+빌리가 *"현재 가장 인기 있는 에이전트 하네스는 Google [Antigravity], [Claude Code], Cursor"*(24:24~24:28)라 하고, *"매끄러운 느낌을 주는 이유는 모델 자체 때문이 아닙니다 (…) 모델들을 둘러싼 하네스 엔지니어링"*(24:56~25:03)이라 한다. [[google-skills|Google Skills]]도 호환 하네스로 Claude Code를 든다(29:39~29:48). ⚠️ **이름이 양 트랙에서 또 깨졌다** — en-orig *cloud code* → ko **"Cloud Code"·"클라우드 코드"**(24:28·29:43). 09-20·09-21에 이어 **세 번째**. 영상 **제목에는 Claude Code가 옳게** 있다.

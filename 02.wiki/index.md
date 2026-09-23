@@ -21,6 +21,9 @@ updated: 2026-09-22
 ## Entities
 
 ### Persons
+- [[ryan-lopopolo]] — Google Cloud에서 클라우드를 운영하는 에이전트를 만드는 엔지니어. *하네스 엔지니어링* 을 자기 용어로 부르며 *"저는 하네스를 만들어 본 적이 없습니다"* — 하네스는 고정하고 도구·컨텍스트에 투자하라 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ *agent harness* 명명자 여부는 설명란과 본인 발언이 어긋난다
+- [[marc-benioff]] — [[salesforce|Salesforce]] CEO·회장, Dreamforce 진행자. 기술 중립론을 폈다가 [[sam-altman|Altman]]에게 *"그건 중립적인 기술이 아니다"* 로 반박당함 ([[tech-bridge-altman-benioff-dreamforce]])
+- [[gwynne-shotwell]] — [[spacex|SpaceX]] 사장 겸 COO. [[terafab|Terafab]]의 crawl-walk-run 단계론의 출처. **AI에 대해서는 말하지 않는다** ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 - [[will-bryk]] — [[exa|Exa]] 창업자. **검색 엔진의 *목적함수* 를 문제 삼은 첫 화자** — *"구글은 데이터베이스가 아니라 추천 엔진이다"*([[search-as-recommendation-engine]]) · ⭐ [[suppressed-query-demand|안 될 걸 알아서 아예 묻지 않는다]] · [[perfect-search-as-cost-problem|1천만 달러 사고 실험]](품질을 비용으로 재정의) · [[per-customer-search-engine|고객마다 다른 엔진]] · [[agent-data-marketplace|데이터 마켓플레이스]] ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 당사자 · **정확도 수치 0개** · **이름이 자막에 아예 없다**(설명란만)
 - [[jo-bergum]] — [[hornet|Hornet]] CEO, 검색 경력 20년+. **위키에 들어온 첫 정보 검색(IR) 전공자.** *"BM25는 변하지 않았다, 사용자가 바뀌었다"* · [[retrieval-not-reasoning-bottleneck|추론은 병목이 아니다]] · [[context-window-as-floppy-disk|플로피 디스크]](검색이 AGI보다 오래 산다) · [[which-bm25-problem|어떤 BM25인가]] · [[corpus-as-filesystem-workspace|파일 시스템 워크스페이스]] · [[ir-evaluation-obsolescence|nDCG의 종말]] ([[tech-bridge-bm25-agentic-search]]) ⚠️ 자사 벤치마크는 익명 상대·축 정정 · **이름은 설명란에만**
 - [[benjamin-clavie]] — [[mixedbread|Mixedbread]]. **에이전트 아키텍처의 근거를 제도사에서 끌어온 첫 화자** — 알렉산드리아·로펌·병원. [[knowledge-agents-vs-coding-agents|코딩은 특수 사례]] · [[code-as-atypical-knowledge|'30일'이 네 가지를 뜻할 때]] · [[tool-organization-loop|도구-조직 루프]] · [[orchestrator-searcher-split|파트너/어시스턴트 분업]] · [[oracle-gap|오라클 갭]] ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 당사자 · 수치 측정 조건 없음 · **이름은 설명란에만**
@@ -87,6 +90,8 @@ updated: 2026-09-22
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[salesforce]] — Dreamforce 주최사. [[openai|OpenAI]]와 공동 개발 플랫폼(Agentforce로 보이나 판독 보류) ([[tech-bridge-altman-benioff-dreamforce]])
+- [[all-in-podcast]] — 청중 앞 라이브 녹화 팟캐스트. ⚠️ 호스트 개인은 자막에서 식별되지 않는데 **HF 사건의 세부는 대부분 호스트가 공급했다** ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 - [[exa]] — **AI 에이전트를 위한 검색 엔진**(2021 창업, 옛 이름 Metaphor). 임베딩에 걸고 200ms와 분 단위 두 티어를 함께 판다. [[cursor|Cursor]]의 웹 검색이 여기로 간다 ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ **정확도 수치 0개** · *"구글보다 낫다"* 에 벤치마크 없음 · ⚠️ **자막이 회사 이름을 네 갈래로 깨뜨린다**
 - [[hornet]] — 에이전트를 위한 **어휘 검색 엔진**. BM25를 핵심 프리미티브로 놓고 top-K 가속에 투자 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 유일한 수치가 **익명 상대와의 비교**이고 **Y축을 정정한다**
 - [[mixedbread]] — **멀티모달 검색 + 검색 에이전트**. PDF를 OCR 없이 비전으로 읽고, 오케스트레이터/서처 분업으로 [[oracle-gap|오라클 갭]]을 10→6포인트로 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 전부 자기 보고 · ✅ **자기 한계를 먼저 말한다**
@@ -156,6 +161,9 @@ updated: 2026-09-22
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[openai-daybreak]] — HF 사건 뒤 나온 [[openai|OpenAI]]의 기업용 사이버 방어 프로그램(상시 가동 에이전트 방어). 판매자 진술뿐, 가격·범위 없음 ([[tech-bridge-altman-benioff-dreamforce]])
+- [[antigravity]] — Google의 코딩 에이전트 하네스. `/boost` = 오케스트레이터 + 병렬 하위 에이전트 + 독립 검증 패스, *복잡한 작업에만* ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 수치 없음
+- [[terafab]] — Tesla×SpaceX 공동 R&D 칩 팹(Giga Texas). *"테라팹을 짓거나, 확장에 실패하거나"* — 머스크의 병목이 전력에서 **칩으로** 옮겨 갔다 ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 - [[devin]] — **Slack 안에 사는 코딩 에이전트.** 디자인 조직에서 일정표 생성·픽셀 퍼펙트 구현·**로고 누락 검수**·1회용 기능 추가에 쓰인다 ([[tech-bridge-one-designer-plus-ai]]) ⚠️ **제작사가 소스에 없다**
 - [[zed]] — 텍스트 에디터, JetBrains와 함께 [[agent-client-protocol|ACP]] 공동 제안
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]]) · 제3자: **공개 출시**·채널당 메모리=사일로 ([[tech-bridge-company-brain-security]])
@@ -173,6 +181,7 @@ updated: 2026-09-22
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 
 ### Tools
+- [[google-skills]] — Google Cloud·Firebase·Flutter·Maps 스킬 100개+, 하네스 무관. *"MCP 서버도 무거운 플러그인도 아니다"* ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 품질 근거는 GitHub 별 수뿐
 - [[browsecomp-plus]] — **830문항 심층 연구 벤치마크.** 도구는 `search` 하나, 골든 정답과 종단 일치로 채점. **검색 품질을 최종 정답률로 환산해 주는 첫 벤치마크** ([[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ **코퍼스 크기가 세 갈래**(10만5천 / 20만 / 10만) · 논문·저자 없음
 - [[eve-framework]] — [[vercel|Vercel]]의 에이전트 프레임워크. 자칭 *"에이전트를 위한 [[nextjs|Next.js]]"* — `skills/`·`tools/`·`channels/` 컨벤션으로 선언하면 런타임(내구성·격리·모델·연결)을 프레임워크가 배치한다 ⚠️ 수치·보안 모델 없음
 - [[nextjs]] — [[vercel|Vercel]]의 웹 프레임워크. 위키에는 [[framework-defined-agent-infrastructure|프레임워크 정의 인프라]]의 **원형**으로 — *선언이 곧 배치*
@@ -235,6 +244,7 @@ updated: 2026-09-22
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[model-harness-knowledge-stack]] — 모델(Gemini 3.8 Flash) · 하네스(Boost) · 지식(Skills) 3계층. 루프 횟수가 비용을 곱한다는 논거 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 벤더 소개, 수치 없음
 - [[agent-data-marketplace]] — 데이터 보유자와 에이전트 개발자를 검색 엔진이 **중개**하고 공개 웹과 유료 비공개 데이터가 한 쿼리에서 섞인다. **위키에 데이터 유통·정산이 들어온 첫 자리** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 가격·라이선스·출처 표기·감사 전무 · ⚠️ *"에이전트는 출처를 신경 쓰지 않는다"* 가 [[lethal-trifecta]]와 정면 충돌
 - [[per-customer-search-engine]] — *"고객 5,000곳에 각각 다른 엔진"* — 완벽한 검색의 정의를 고객에게 넘긴다. ⚠️ [[which-bm25-problem]]이 **제품 형태로 재발**하고, 그 결과 *"구글보다 낫다"* 가 **원리적으로 검증 불가능**해진다 ([[tech-bridge-exa-perfect-search-for-agents]])
 - [[search-latency-tiers]] — 200ms와 "몇 분"이 같은 제품 안에. *"인간에게는 너무 빠르다 — 우리는 인간을 위해 봉사하지 않는다"*. 09-19 [[voice-latency-thinking-tradeoff]]에 **공급자 쪽 짝** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 퍼센타일·코퍼스 없음
@@ -252,6 +262,7 @@ updated: 2026-09-22
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[accident-reporting-culture]] — 신기술 사고는 불가피하니 **FAA·NTSB식 투명 보고와 학습 문화**를 만들자는 [[sam-altman|Altman]]의 처방. HF 사건의 사후 틀 ([[tech-bridge-altman-benioff-dreamforce]])
 - [[perfect-search-as-cost-problem]] — 이상적 해(쌍마다 LLM)는 이미 알려져 있고 **검색당 1천만 달러**다. 따라서 검색 공학은 **그 비용을 10억~1조 배 줄이는 최적화 문제** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 전제가 검증되지 않고 [[context-window-as-floppy-disk]]와 **정면으로 만난다**
 - [[suppressed-query-demand]] — **안 될 걸 알아서 아예 묻지 않는다.** 그래서 그 수요는 로그에 남지 않는다. ⭐ [[llm-as-search-user|*사용자가 바뀌었다*]]의 **두 번째 읽기**(제약이 풀린 것) ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 증거는 화자의 *"장담컨대"* 뿐
 - [[search-as-recommendation-engine]] — **검색이 원하는 것을 못 주는 이유는 성능이 아니라 목적함수다.** *줄무늬 없는 셔츠*를 치면 줄무늬 셔츠가 나온다. [[preference-reward-asymmetry]]와 **같은 모양의 논증**이 랭킹에 적용된 자리 ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 비유에서 멈추고 메커니즘·증거 없음
@@ -315,6 +326,12 @@ updated: 2026-09-22
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[cross-lab-peer-review]] — AI 기업들이 **출시 전 서로의 모델을 자기 하네스로 시험**한다. 문제는 제작사 먼저, 다음은 공개 경고, 강제력은 여론+제조물 책임. ⭐ [[embedded-external-evaluators|Amodei의 중립 검사관]]과 **검증자 선택이 정반대** — 경쟁사가 채점한다 ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+- [[model-rendered-interface]] — 모델이 사내 데이터를 모아 **인터페이스 코드를 새로 써서** 화면을 그린다. [[agentic-sites]](블록 재조립)의 반대쪽 끝 ([[tech-bridge-altman-benioff-dreamforce]]) ⚠️ ko가 권한 단서(*where it's allowed to look*)를 지웠다
+- [[tools-and-context-over-harness]] — 하네스는 고정하고 최신 모델을 즉시 채택, 노력은 **도구·컨텍스트에만**. [[harness-pruning]]·[[ride-the-optimization-trajectory]]에 이은 **하네스 시간축의 세 번째 입장** ([[tech-bridge-lopopolo-agent-harness]])
+- [[shift-left-interventions]] — 개입의 스펙트럼: 프롬프트 → 문서 → AGENTS.md → 정적 검증기·테스트 → eval. *게으른 프롬프터가 되라* ([[tech-bridge-lopopolo-agent-harness]])
+- [[agent-loop-size]] — 긴 지평의 일관성은 세션을 늘려서가 아니라 **작은 PR → 에이전트 리뷰 → 상태 공간 축소**로 얻는다 ([[tech-bridge-lopopolo-agent-harness]])
+- [[linear-vs-closed-loop-harness]] — 선형·폐루프·ADK 가드레일 세 하네스. 결정은 루핑·도구·메모리 셋 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 안전장치가 파괴적 명령 차단 목록 하나뿐
 - [[ride-the-optimization-trajectory]] — **랩들이 최적화 중인 방향에 얹으면 모델 교체가 공짜 업그레이드가 된다.** 화자 스스로 *"편법(hack)"*. [[harness-pruning]]의 **반대면** ([[tech-bridge-bm25-agentic-search]]) ⚠️ 명시적으로 **한시적 베팅**
 - [[retrieval-primitive-repertoire]] — `grep`·BM25·시맨틱은 **프리미티브**이고 모델이 전부를 알아야 한다. ⚠️ **학습 데이터가 도구 선택을 편향시킨다** — 위키가 처음 받는 도구 실패 모드. [[ride-the-optimization-trajectory]]의 **청구서** ([[tech-bridge-knowledge-agents-not-coding-agents]])
 - [[defense-factory]] — 취약점 **발견→분류→교정→배포→검증**을 기계 속도로 도는 상시 파이프라인. 트리거가 사건이 아니라 **모델 릴리스**이고 완료 기준이 **"포화"**(이 모델이 더는 찾지 못하는 상태) ⚠️ **자동 교정·배포의 안전장치가 한 마디도 없다** ([[tech-bridge-brockman-agi-era-defender-window]])
@@ -522,6 +539,9 @@ updated: 2026-09-22
 ---
 
 ## Sources
+- [[tech-bridge-altman-benioff-dreamforce]] — 샘 올트먼 × 마크 베니오프 Dreamforce 대담 ([[sam-altman|Sam Altman]] / [[marc-benioff|Marc Benioff]], 37:03, 2026-09-21 업로드 · **멤버 전용 → 09-23 공개 전환**). **HF 사건의 경위를 올트먼 본인이 처음 시간순으로 말한다** — *"보안 문제로 주로 다뤄졌지만 진짜 정렬 문제이기도 하다"*, 그 귀결이 [[openai-daybreak|Daybreak]]. [[accident-reporting-culture]] · [[model-rendered-interface]] ⚠️ Contradiction: HF가 경쟁사 보안 모델에 *접근 못 했다* vs Brockman의 *거절당했다*
+- [[tech-bridge-musk-shotwell-cross-lab-peer-review]] — 일론 머스크 × 그윈 숏웰 All-In 대담 ([[elon-musk|Elon Musk]] / [[gwynne-shotwell|Gwynne Shotwell]], 36:50, 2026-09-22 업로드). **경쟁사 오너가 같은 HF 사건을 증거로 [[cross-lab-peer-review|AI 기업 간 출시 전 상호 검증]]을 제안** + [[terafab]] ⚠️ Contradiction: 침입 대상(*OpenAI 서버 관리자 권한*)·기간(*일주일*)·행위자(*에이전트 무리*)가 올트먼 판본과 전부 어긋난다
+- [[tech-bridge-lopopolo-agent-harness]] — 하네스 엔지니어링 완벽 해설 ([[ryan-lopopolo|Ryan Lopopolo]] / [[google-cloud|Google Cloud]], 30:31, 2026-09-22 업로드). *"하네스는 만들지 않는다"* — [[tools-and-context-over-harness]] · [[shift-left-interventions]] · [[agent-loop-size]] · [[linear-vs-closed-loop-harness]] · [[model-harness-knowledge-stack]] ⚠️ 3부는 수치 없는 벤더 소개, 보안은 차단 목록 하나
 - [[tech-bridge-exa-perfect-search-for-agents]] — AI 에이전트를 위한 완벽한 검색 ([[will-bryk|Will Bryk]] / [[exa|Exa]], 17:13, 2026-09-21 업로드). **하루 만에 들어온 검색 벤더 반대편** — 구글은 추천 엔진이고, 완벽한 검색은 비용 문제이며, 에이전트는 진실만 원한다
 - [[tech-bridge-bm25-agentic-search]] — BM25는 왜 에이전트 검색에서 비정상적으로 효과적인가 ([[jo-bergum|Jo Kristian Bergum]] / [[hornet|Hornet]], 18:00). **위키 첫 IR 전공자 소스** — 병목은 추론이 아니라 검색, 컨텍스트는 플로피 한 장, 그리고 *"어떤 BM25인가"*
 - [[tech-bridge-knowledge-agents-not-coding-agents]] — 코딩 에이전트가 아니라 지식 에이전트로 설계하라 ([[benjamin-clavie|Benjamin Clavié]] / [[mixedbread|Mixedbread]], 17:26). **근거를 제도사에서** — 코드는 예외적 지식이고, 사람이 이미 문제를 쪼개 준다
@@ -610,6 +630,6 @@ updated: 2026-09-22
 
 ## 통계
 
-- 총 페이지 수: 571 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 561 → 571, + 2026-09-21 Tech Bridge 1편: source 1 + concept 7 + entity 2)
+- 총 페이지 수: 591 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 571 → 591, + 2026-09-21·09-22 Tech Bridge 3편: source 3 + concept 8 + entity 9)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-22 (Tech Bridge **1편**, **열아흐레 연속** — 09-21 업로드분. **검색 벤더의 반대편이 하루 만에 들어온 날이다.** [[tech-bridge-exa-perfect-search-for-agents|Bryk 편]]([[will-bryk]] / [[exa|Exa]])은 전날 [[jo-bergum|Bergum]]([[hornet|Hornet]])이 세운 *BM25는 변하지 않았다, 사용자가 바뀌었다* 에 **정반대로 답한다** — 키워드는 간단한 쿼리까지이고 복잡한 쿼리는 임베딩이다. **둘 다 정확도 수치가 0개**이고, **둘 다 하이브리드가 필요하다는 것을 한 줄씩 인정하고 아무도 설명하지 않는다**(세 번째 벤더 → [[bm25]]). 이 소스가 새로 들여온 것은 **목적함수**다 — [[search-as-recommendation-engine|구글은 데이터베이스가 아니라 추천 엔진]]이라는 진단은 [[preference-reward-asymmetry]]와 **같은 모양의 논증**이 랭킹에 적용된 자리이고, ⭐ [[suppressed-query-demand|안 될 걸 알아서 아예 묻지 않는다]]는 [[llm-as-search-user]]에 **두 번째 읽기**를 연다(*사용자가 바뀌었다* = *제약이 풀렸다*). [[perfect-search-as-cost-problem|1천만 달러 사고 실험]]은 품질을 비용으로 재정의해 [[context-window-as-floppy-disk]]와 **정면으로 만나고**, [[retrieval-side-context-compression|100 토큰만 넘기기]]는 [[corpus-as-filesystem-workspace|전부 줘라]]·[[bm25|왜 나왔는지 알려 줘라]]와 **같은 문제의 세 번째·정반대 처방**이다. [[agent-data-marketplace]]로 **데이터 유통·정산이 위키에 처음** 들어왔다. **위키 첫 [[will-bryk]]·[[exa]]**. ⚠️ **보안·프롬프트 인젝션이 17분 동안 한 번도 나오지 않는다 — 검색 소스 연속 세 번째.** ⭐ **멤버 전용 영상이 두 편이 됐다**(`XZuws4hFG4o`, 젠슨 황 46:18) — 패턴은 *유명 인물 대담 · 긴 롱폼*.)
+- 마지막 ingest: 2026-09-23 (Tech Bridge **3편**, **스무날 연속** — 09-22 업로드 2편 + **멤버 전용에서 공개로 풀린 09-21 업로드 1편**. **HF 사건의 여섯·일곱 번째 서술이 하루에 들어온 날이다.** [[tech-bridge-altman-benioff-dreamforce|Altman × Benioff 편]]과 [[tech-bridge-musk-shotwell-cross-lab-peer-review|Musk × Shotwell 편]]이 09-20 [[tech-bridge-brockman-agi-era-defender-window|Brockman 편]] 등 앞선 서술들과 **HF 사건**을 서로 다르게 말한다 — 침입 대상·기간·행위자·과제가 판본마다 어긋나고 처방도 갈린다(Daybreak 판매 / [[cross-lab-peer-review|경쟁사 상호 검증]]). [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]은 *하네스는 만들지 않는다* 로 하네스 시간축의 세 번째 입장을 세웠다.)

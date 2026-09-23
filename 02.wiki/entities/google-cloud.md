@@ -6,9 +6,9 @@ tags: [google, cloud, database, mcp, platform, security]
 aliases: [GCP, Google Cloud 데이터베이스]
 links:
   - https://cloud.google.com/
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-lopopolo-agent-harness]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-23
 ---
 
 # Google Cloud
@@ -38,3 +38,13 @@ Google의 클라우드 플랫폼 조직. 이 위키에는 [[tech-bridge-build-ti
 
 - [[tech-bridge-build-time-vs-runtime-tools]] · [[mcp-toolbox-for-databases]] · [[averi-kitsch]] · [[prerna-kakkar]]
 - 관련: [[google-deepmind]] · [[model-context-protocol]]
+
+## 에이전트에게 줄 "큰 컴퓨터" (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
+
+[[ryan-lopopolo|Ryan Lopopolo]]가 **Google Cloud에서 클라우드를 운영하는 에이전트**를 만든다고 밝힌다.
+
+> 구글 클라우드는 **매우 복잡한 시스템들이 밀집된, 아주 넓고 깊은 공간**이라고 생각합니다. 본질적으로 그것은 **매우 큰 컴퓨터**입니다. 그리고 **[에이전트]가 성공하려면 컴퓨터를 줘야 한다는 것도 중요한 부분이죠.** (17:30~17:46)
+
+같은 에피소드가 Google 쪽 에이전트 스택을 한꺼번에 소개한다 — 하네스 [[antigravity|Antigravity]](`/boost`), 지식 [[google-skills|Google Skills]](Google Cloud 스킬 포함), 모델 Gemini 3.8 Flash, 프레임워크 **ADK**(Agent Development Kit, 빌리의 데모). → [[model-harness-knowledge-stack]]. 위 09-11의 *"Antigravity CLI"* 언급은 이제 [[antigravity]] 페이지로 이어진다.
+
+⚠️ **당사자 진술이고 수치 없음.** 그리고 **클라우드 전체를 에이전트에게 맡기는 목표에 권한·폭발 반경·감사 이야기가 없다** — 위 09-11 데이터베이스 팀 발표가 *빌드 타임 vs 런타임 도구* 를 구분했던 것과 대조된다.

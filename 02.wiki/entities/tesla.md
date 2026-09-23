@@ -5,9 +5,9 @@ category: org
 tags: [automotive, self-driving, humanoid-robots, physical-ai, manufacturing]
 links:
   - https://www.tesla.com/
-sources: [tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-musk-shotwell-cross-lab-peer-review]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-23
 ---
 
 # Tesla
@@ -32,3 +32,7 @@ updated: 2026-09-07
 - [[tech-bridge-elon-musk-g20-ai-future]] — first-seen
 - [[elon-musk]] · [[spacex]]
 - 관련: [[humanoid-robot-scaling]] · [[brain-hands-decoupling]]
+
+## Terafab — SpaceX와의 공동 R&D 팹 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+[[elon-musk|Musk]]: *"오스틴에 연구 개발용 공장을 짓고 있어요. 어, 그건 테슬라와 스페이스X의 협력입니다"*(21:26~21:32), Giga Texas 캠퍼스. 이유는 대만 칩 리스크와 *"휴머노이드 로봇과 자동차를 위한 엣지 컴퓨팅"* 까지의 AI 확장에 **기존 팹 용량이 부족**하다는 것 → [[terafab]]. 진행자가 **10월 1일** 공개물(*날면서 땅에서도 달리는 물체* — 가정형 질문)과 **"왜 아직도 두 개의 회사를 따로"** 를 묻는다. 답은 *"스포일러는 없습니다"*(23:38)와 *"몇몇 핵심 직책은 업무가 겹칩니다"*(25:10~25:12). ⚠️ 제품·합병 모두 **확인된 것 없음.**

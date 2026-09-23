@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce]
 created: 2026-09-01
-updated: 2026-09-13
+updated: 2026-09-23
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -166,3 +166,11 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 - 대비: [[agent-org-adoption]] · [[frontier-engineering]] · [[self-harness]] · [[harness-engineering]]
 - [[tech-bridge-altman-astra-hardware]] — 능동적 컴퓨터·범용 구독 (Sam Altman, 2026-09-06)
 - [[tech-bridge-company-brain-security]] — 거울상: 멀티플레이어 · [[multiplayer-agent-context]] (2026-09-10)
+
+## "세 번째 단계" — 시대 구분 속의 상시 실행 (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
+
+09-06 [[sam-altman|Altman]]의 *"능동적 컴퓨터"* 가 **AI 시대 구분의 세 번째 칸**으로 놓인다:
+
+> **챗봇**이 있었고, 그 다음에는 **코딩/컴퓨터 활용 에이전트가 올해 등장했죠.** (29:34~29:36) (…) **AI가 항상 사용자를 위해 작동하고, 사용자의 업무를 이해하고, 성공에 필요한 것이 무엇인지 파악하고, 새로운 코드를 생성하고, 슬랙이나 이메일을 능동적으로 확인하는 단계** (…) 저는 **우리가 세 번째 단계의 문턱에 서 있다**고 생각합니다. (30:15~30:34)
+
+같은 대담에 **방어 쪽 상시 실행**([[openai-daybreak|Daybreak]])과 **화면 생성**([[model-rendered-interface]])이 함께 나온다. ⚠️ 관성 유보 — *"그 변화가 완전히 자리잡는 데는 몇 년이 걸릴 거예요"*(32:01~32:10). ⚠️ 상시 실행 에이전트의 권한·감사는 언급되지 않는다.

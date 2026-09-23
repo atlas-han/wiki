@@ -6,9 +6,9 @@ tags: [anthropic, ceo, ai-safety, regulation, geopolitics]
 aliases: [다리오 아모데이]
 links:
   - https://www.anthropic.com
-sources: [tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-23
 ---
 
 # Dario Amodei
@@ -71,3 +71,11 @@ updated: 2026-09-16
 - 지나가는 언급: [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-bill-gates-ai-warning]]
 - [[anthropic]] · [[tech-bridge]]
 - 관련 개념: [[embedded-external-evaluators]] · [[race-to-the-top]] · [[swiss-cheese-defense-in-depth]] · [[slowdown-within-lead-margin]] · [[ai-arms-limitation-lens]] · [[joint-democratic-oversight]] · [[regulatory-capture]] · [[training-time-risk]] · [[balance-of-power-safety]] · [[one-continuous-exponential]]
+
+## "다리오가 옳다" — Musk 본인의 해명 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
+
+위 09-16 절에서 [[elon-musk|Musk]]의 동의는 **진행자 서술**뿐이었다. All-In 진행자가 *"이번 주말에 다리오가 옳다고 하셨잖아요 — 피해 묘사가 옳다는 건가, 규제 해법이 옳다는 건가"* 를 묻자:
+
+> 제가 **'그가 옳다'라고 말한 의미는 인공지능의 위험성이 현재 매우 심각하다는 것**입니다. (06:57~07:03)
+
+**진단(위험의 크기)에 대한 동의**로 답하고, 처방은 같은 대담에서 **다른 안**([[cross-lab-peer-review]] — 중립 기관이 아닌 **경쟁사**가 검사)을 낸다 → [[embedded-external-evaluators]]와 대비. ⚠️ CBS 편의 "동의"와 이 "이번 주말"이 같은 일인지 확정할 수 없다. ⚠️ ko가 진행자의 질문 후반을 **"그는 규제가 (…) 모두를 해결한다는 점을 정확하게 설명했습니다"** 라는 단정문으로 옮겨 **규제 해법 지지로 읽히게** 만들었다.
