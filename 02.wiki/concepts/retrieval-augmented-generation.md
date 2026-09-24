@@ -6,9 +6,9 @@ tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
 related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-08
-updated: 2026-09-21
+updated: 2026-09-24
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -112,3 +112,13 @@ updated: 2026-09-21
 **재랭킹·청크 크기 결정·평가는 여전히 없다.** 정당화는 **환각 방지**(*"학습되지 않은 회사 정책·법률 문서를 지어내는 대신"*)이고, 채택률 주장이 붙는다 — *"AI를 실험하는 거의 모든 회사는 어떤 형태로든 RAG를 원한다, 임베딩을 쓰지 않더라도"*(⚠️ 근거 없음). 09-07 IBM 편([[tech-bridge-agent-knowledge-four-ways]])의 정의와 **일치**한다 — 같은 채널, 같은 설명.
 
 2026-09-15 [[tech-bridge-graft-code-knowledge-graph|Graft 편]]이 *"코드에서는 유사도가 방향을 모른다"* 고 한 것과 나란히 두면, **이 소스의 예시는 전부 자연어 문서**(회사 정책·법률 문서·PDF·HR·병원)다. 모순이 아니라 **도메인이 다르다.** ⚠️ ko가 07:00에서 *retrieval augmented generation* 을 **"증강 현실 생성"** 으로 옮겼다.
+
+## 2026-09-24 — 파이프라인의 대가는 파편화라는 벤더의 진단
+
+[[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])가 09-16에 들어온 파이프라인 서술에 **두 단계 검색**과 **운영 비용**을 더한다.
+
+- **검색**: 바이인코더(임베딩) → 벡터 스토어 → 질의 임베딩과 비교 → **크로스인코더 리랭커**가 질문+결과를 함께 본다(19:11~19:55). (en-orig *"benccoder"* = bi-encoder, ko *"'벤코더'"*.)
+- **적재**: 토큰화 → 임베딩 → 중복 제거·정규화·**PII 가리기** → 텍스트 · JSON 메타데이터 · 32비트 dense 벡터(20:09~20:39).
+- **진단**: 데이터 형마다 **다른 DB**를 쓰게 돼 *"매우 높은 데이터 동기화 [로직 오버헤드]"*(21:01~21:05) — 유지보수와 엔지니어링 노력.
+
+⚠️ **처방은 자사 제품이다** — *"시장에서 유일한 컨버지드 데이터베이스"*(21:31~21:37), in-database embeddings(*제3자 임베딩 서비스를 호출하지 않는다*, 18:41~18:58). 측정 없음. 이 페이지가 09-20에 기록한 *벡터 경로가 기본값이 아닐 수 있다*(BM25·에이전트 검색)는 논점은 **등장하지 않는다** — 이 소스에서 벡터 검색은 전제다.

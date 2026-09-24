@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness]
 created: 2026-05-25
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # Context Engineering
@@ -157,3 +157,22 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 **컨텍스트를 프롬프트에 앞세워 넣는 것(frontload)을 스펙트럼의 가장 오른쪽**에 두고, 모델이 **문서 코퍼스를 도구로 탐색해 스스로 발견**하게 하는 쪽을 왼쪽에 둔다(06:24~06:46). → [[shift-left-interventions]]. 그리고 **에이전트가 읽을 문서의 형식**까지 설계한다 — 링크를 문단 끝 앵커로 빼 *"컨텍스트를 효율적으로"* 유지하고, 그 위치를 테스트로 강제(08:10~08:49; 진행자가 lost-in-the-middle과 연결).
 
 ⭐ 맺음의 한 줄이 이 페이지의 존재 이유를 요약한다 — *"[에이전트]들은 고객이 생각하는 '좋은 것'에 맞춰 **마지막 단계까지 적응하기 위해 항상 맥락을 필요로 합니다**"*(18:44~18:50). 모델이 좋아져도 **내가 원하는 것**은 모델이 알 수 없다(03:47~03:56). → [[tools-and-context-over-harness]]
+
+## 잘라내기의 실패 — 토큰 최소화 (2026-09-24 · [[tech-bridge-tokenmaxxing-to-valuemaxxing]])
+
+이 페이지는 *줄이는* 기법(compaction·trimming·reset)을 모아 왔고, IBM 편([[tech-bridge-agent-knowledge-four-ways]])은 *다 쏟아붓기* 의 실패를 세 갈래로 나눴다. 같은 IBM 계열 해설이 이번엔 **비용 때문에 잘라내기**의 실패를 말한다:
+
+> 하지만 그들은 계속해서 [잘라내며] **작업 설명, 도메인 [제약], [아키텍처] 컨텍스트** 같은 중요한 정보를 삭제하기 시작합니다. (03:42~03:52)
+
+빼도 되는 것(**[지나치게 큰] 도구 카탈로그 · 시대에 뒤떨어진 맥락**)과 빼면 안 되는 것의 구분이 요점이다 → [[token-minimization-trap]]. 그리고 개발자 역량의 첫 항목이 **"좋은 [컨텍스트] 위생"**(06:30~06:31), 시스템 효과성의 첫 항목이 **컨텍스트 관리**(05:32~05:36)다 — 이 페이지의 주제가 **비용 규율의 언어**로 번역된 자리. ⚠️ 소스는 compaction처럼 **정보를 보존하며 줄이는** 기법과 **삭제**를 구분하지 않는다.
+
+## 매 반복마다 조립한다 — 툴박스와 context rot (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])는 컨텍스트 엔지니어링을 **하네스 7계층의 마지막 층**(34:10~34:14)으로 두고, 목표를 한 문장으로 준다 — *"컨텍스트 창을 가능한 한 최소화해서 풀고 있는 과제가 관련성을 유지하도록"*(11:49~11:59, en-orig 대조; ⚠️ ko는 *"가능한 한 많은 맥락을 제공하십시오"* 로 **정반대**).
+
+두 가지를 이 페이지에 더한다.
+
+- **왜 작게** — [[context-rot]]: 창에 많이 넣을수록 항목당 주의가 희석되고(25:34~25:48), 어텐션 행렬은 n²로 커진다(26:35~26:57). 09-08의 [[long-context-agents|늘리는 쪽의 처방]]과 정면으로 갈린다(→ [[context-rot]]의 ⚠️ Contradiction).
+- **어떻게 작게** — [[toolbox-pattern]]: 도구·스킬을 벡터 인덱스에 두고 **에이전트 루프의 매 반복마다** 필요한 것만 retrieve해 넣고, 필요 없으면 *"일시적으로"* 뺀다(34:34~35:08). 09-23 Lopopolo의 *"작업 분류 → 동적 컨텍스트"*([[agent-loop-size]])가 **무엇을** 동적으로 고르는지였다면, 이것은 **어떤 메커니즘으로**(검색 인덱스) 고르는지다.
+
+이 위키의 조달 태도 셋(고른다 / 쪼갠다 / 펼쳐 놓고 찾게 한다, 09-19)에 넣으면 툴박스는 **"고른다"를 매 턴 다시 하는 것**이다 — 한 번 조립한 컨텍스트를 들고 가지 않는다.

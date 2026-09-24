@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [long-context, agent, tool-calls, context-window, minimax]
 aliases: [긴 컨텍스트, 100만 토큰 컨텍스트]
-related: [context-engineering, context-resets-and-compaction, sparse-attention, agent-distributed-systems, attention-mechanism]
+related: [context-engineering, context-resets-and-compaction, sparse-attention, agent-distributed-systems, attention-mechanism, context-rot]
 first-seen: tech-bridge-minimax-m3-long-context
-sources: [tech-bridge-minimax-m3-long-context, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-minimax-m3-long-context, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-08
-updated: 2026-09-21
+updated: 2026-09-24
 ---
 
 # Long-Context for Agents
@@ -83,3 +83,9 @@ updated: 2026-09-21
 
 - [[tech-bridge-minimax-m3-long-context]] · [[minimax-m3]] · [[olive-song]]
 - 관련: [[sparse-attention]] · [[context-engineering]] · [[context-resets-and-compaction]] · [[harness-pruning]] · [[agent-distributed-systems]] · [[native-multimodal-pretraining]]
+
+## 2026-09-24 — 세 번째 반론: context rot
+
+[[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])가 **창 확장론을 이름으로 반박**한다 — *"'1500만 컨텍스트 윈도우'를 믿는 사람들"*(25:09~25:19)에게 창은 **단기 기억의 한 유형**일 뿐이고, 많이 넣을수록 항목당 주의가 희석되며([[context-rot]]), 어텐션 행렬은 n²로 커진다(26:35~26:57). 처방은 **창을 가능한 한 작게**(27:00~27:03) + 장기 기억은 외부 저장소로.
+
+⚠️ **측정은 없다** — 이 페이지의 MiniMax 쪽과 마찬가지로. 그리고 **제곱 비용 논거는 [[sparse-attention]]이 정확히 겨냥하는 것**이라, 두 논거 중 *주의 희석*만이 이 페이지의 처방에 대한 실질적 반론으로 남는다. → [[context-rot]]의 ⚠️ Contradiction.

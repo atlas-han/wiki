@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [parallelism, sub-agents, context-window, pstack, aggregation]
 aliases: [swarm, 겁 없는 병렬성, fearless parallelism]
-related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context]
+related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-14
-updated: 2026-09-20
+updated: 2026-09-24
 ---
 
 # 에이전트 스웜
@@ -74,3 +74,7 @@ updated: 2026-09-20
 > ⚠️ **그 외에는 아무것도 없다.** 조율 방식·통신 구조·비용·실패한 에이전트의 처리·수렴까지 걸린 시간 — **전부 없다.** *"서로 이야기하고 스스로를 조직한다"* 는 **진행자의 서술**이고 화자가 확인하지 않는다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ai-formal-verification]] · [[openai]]
+
+## 2026-09-24 — 워크트리를 저장 계층 쪽에서 보면
+
+[[tech-bridge-oracle-agent-memory-harness]]는 이 페이지의 *겁 없는 병렬성*을 떠받치는 워크트리를 **파일에 트랜잭션 일관성이 없어서 쓰는 우회책**으로 읽는다 — *"8·16·32개 에이전트 (…) 파일은 동시에 수정될 수 없다 (…) [워크트리]"*(14:44~15:36). 그렇게 보면 스웜의 병합 단계는 **사후에 치르는 격리 비용**이다. → [[files-vs-database-agent-memory]] ⚠️ 코드처럼 **리뷰가 필요한 산출물**에서는 워크트리의 diff·브랜치 단위 롤백을 트랜잭션이 대체하지 못한다 — 소스는 이 반론을 말하지 않는다.

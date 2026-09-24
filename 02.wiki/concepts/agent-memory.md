@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
-related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent]
+related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-08
-updated: 2026-09-18
+updated: 2026-09-24
 ---
 
 # Agent Memory
@@ -147,3 +147,24 @@ updated: 2026-09-18
 **쓰는 주체가 실행자와 분리**된 첫 서술이다 — [[generator-evaluator-pattern]]이 *평가* 를 분리한 것과 같은 논리를 *기억* 에 적용한 셈이다. 사용 사례는 채용 에이전트(*"지원자가 적합한지 여부와 양측 간의 적합성에 대한 피드백"*, 03:52~03:57). 그리고 이 역할이 [[managed-agents|Claude Managed Agents]]에 **기본 제공**된다(11:08~11:12).
 
 > ⚠️ 무엇을 남길지의 판정, 무효화, 틀린 기억 처리 — 이 페이지의 기존 빈자리가 그대로다. ⚠️ ko가 *dreamer* 를 **"몽상가"**, *writing learnings to memory* 를 *"기억해 두어"* 로 옮겼다.
+
+## 4R · 세 수명 · 저장 위치 — 메모리 엔지니어링이라는 분과 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])가 이 페이지의 정의에 **동사 넷**을 준다 — 에이전트가 정보를 ***retain, reuse, refine and recall***(보유·재사용·정제·회수)하게 하는 메커니즘과 시스템 전체(22:26~22:47, en-orig 대조). 목적은 *"3시간 씨름한 문제가 다음번에는 더 쉬워지도록"*(22:58~23:05).
+
+이 페이지가 **출처**(겪은 것 vs 적힌 것)로 메모리를 갈랐다면, 이 소스는 **수명과 저장 위치**로 가른다:
+
+| 수명 | 예 | 저장 위치 |
+|---|---|---|
+| 단기 | 코딩 에이전트의 to-do 목록 — *"장기 저장할 필요는 없다"*(23:50~23:59) | 파일 |
+| 장기 · 일화 | 이전 대화 — Claude에서 과거 대화로 워크플로·스킬을 다듬는다(24:03~24:24) | DB |
+| 장기 · 절차 | 마음에 든 프런트엔드 작업의 **대화 전체를 반복 가능한 워크플로로**(24:33~24:54) | DB → 스킬 |
+| **공유** — *"비교적 새로운"* | 서브에이전트 ↔ 부모, 두 에이전트의 협업(23:15~23:29) | ⚠️ 말하지 않음 |
+
+→ [[files-vs-database-agent-memory]] — 단기는 파일, 장기로 **승격**되면 DB. 이 페이지의 미해결 *"여러 에이전트 간 공유"* 에 **이름(shared memory)은 붙었지만 저장·일관성 설계는 비어 있다.**
+
+**관리형 해법이 없을 때 엔지니어가 내려야 할 결정 목록**(28:06~28:30) — *언제 압축하나, 언제 요약하나, 요약기는 어떻게 쓰나, 무엇을 남기고 무엇을 버리나, 이전 대화에서 무엇을 언제 추출하나, 토큰은 몇 개 쓰나.* 이 페이지의 *"무엇을 저장할지 누가 정하는가"* 를 **실무 체크리스트**로 풀어 놓은 것이다. 벤더의 답은 **Oracle Agent Memory Package의 컨텍스트 카드**(주제 · 요약+현재 의도 · 사실/선호/기억 · **미해결 질문을 추적하는 일화 기억** · 최근 메시지, 28:51~29:44) — ⚠️ *"단 한 줄의 코드로"*(28:32~28:38)는 당사자 주장, 효과 측정 없음. → [[oracle]]
+
+그리고 메모리가 왜 필요한가의 논거로 **창 확장론을 반박**한다 — *"1500만 컨텍스트 윈도우"* 를 믿는 사람들에게 *컨텍스트 창은 단기 기억의 한 유형일 뿐*이고 커질수록 [[context-rot|썩는다]](25:02~25:48).
+
+> ⚠️ 이 페이지의 오래된 빈자리가 **그대로다** — 승격은 있고 **강등·무효화·틀린 기억 정정은 없다.**

@@ -5,9 +5,9 @@ category: person
 tags: [educator, ai, coursera]
 links:
   - https://www.andrewng.org/
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-oracle-agent-memory-harness]
 created: 2026-08-31
-updated: 2026-09-06
+updated: 2026-09-24
 ---
 
 # Andrew Ng
@@ -36,3 +36,9 @@ Ng의 두 주장에 **당사자·반대편**의 진술이 붙었다.
 
 - [[tech-bridge-andrew-ng-ai-opportunity]] · [[coursera]] · [[learnvector]] · [[regulatory-capture]] · [[cognitive-offloading]]
 - 반대편 진술: [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-jensen-huang-g20-agi]] · [[agi-definition]] · [[ai-jobs-impact]]
+
+## 강좌 공동 제작자로서 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[oracle|Oracle]]의 [[ignacio-martinez|Ignacio Martinez]]가 *"내 경력의 정점"* 으로 **Ng과 에이전트 메모리 강좌를 냈다**고 소개한다(01:45~01:50). [[toolbox-pattern|툴박스 패턴]]도 *"이 강좌에서 소개했다"*(48:46~48:51), 그리고 동료와 **에이전트 지속 학습 강좌를 녹화할 예정**(*"몇 주 뒤"*, 12:32~12:41). 이 위키에서 Ng은 지금까지 **인터뷰 대상**(규제 포획·노동·AGI 정의)이었는데, 여기서는 **실무 에이전트 기법의 교육 유통 경로**로 등장한다 — Ng 본인은 영상에 나오지 않는다.
+
+> ⚠️ **강좌명·플랫폼을 자막이 말하지 않는다**. ⚠️ en-orig는 이름을 **"Andrew Ang"**(01:47) · **"Andrew Yang"**(48:50)으로 깨뜨린다 — ko·en 변종은 *앤드류 응 / Andrew Ng* 으로 옳다.

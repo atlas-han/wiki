@@ -65,8 +65,10 @@ sources:
   - tech-bridge-altman-benioff-dreamforce
   - tech-bridge-musk-shotwell-cross-lab-peer-review
   - tech-bridge-lopopolo-agent-harness
+  - tech-bridge-tokenmaxxing-to-valuemaxxing
+  - tech-bridge-oracle-agent-memory-harness
 created: 2026-06-03
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # Tech Bridge
@@ -629,3 +631,48 @@ updated: 2026-09-23
 
 - **벤더 제작 에피소드도 올린다** — 이제까지의 벤더 발표는 컨퍼런스 무대였는데 이번엔 **벤더가 만든 방송물**이다. 당사자성이 한 단계 강하다(**진행자까지 같은 편**).
 - **Boost 비교 표처럼 화면에만 있는 정보**가 처음으로 논지의 일부가 됐다 — 자막 기반 ingest의 **구조적 사각**이다.
+
+## 2026-09-23 업로드 — IBM Technology 계열 밸류맥싱 해설 (2026-09-24 ingest)
+
+[[tech-bridge-tokenmaxxing-to-valuemaxxing|토큰맥싱과의 작별]](`H5h_GUaR-bU`, 8:13, **공식 챕터 없음**, `public`). 설명란 링크가 전부 `ibm.biz`·IBM 채널이라 [[ibm|IBM Technology]] 계열 **여섯 번째**로 판정. **화자 무명**(설명란·자막 모두). 토큰맥싱 → 토큰 최소화 → [[value-maxing|밸류맥싱]]의 세 국면과 [[token-minimization-trap]](*입력 500 토큰 절약 → 재작업 5,000*, 가상 예시).
+
+### 자막 관찰 — 두 핵심 용어가 둘 다 일반어로 녹았다
+
+- **⚠️ 제목의 용어가 자막에서 사라졌다** — *token maxing* → **"토큰 최대화"**(01:19), *value maxing* → **"최대화 가치"**(04:23)·**"가치 극대화"**(06:10). 설명란만 *토큰맥싱·밸류맥싱(Valuemaxxing)* 으로 옳다.
+- **⚠️ 논지 문장이 뒤집혔다** — *"metrics become proxies for success rather than simply indicators of activity"* → **"성공의 지표가 되는 대신 단순한 활동 표시기입니다"**(00:14~00:18).
+- **⚠️ input → "입장료", 두 번**(04:07·04:18) — *"입장료는 무료지만"* 은 없던 말. **adoption → "입양"**(01:27·07:59) — 맺음의 *도입 → 가치* 두 장 구도가 *입양 → 가치* 로.
+- **⚠️ 도구 호출이 전화로** — *calling tools* → **"전화를 걸었습니다"**(02:05). *tool catalogs* → **"공구"**(03:38). *administrative controls* → **"행정 직원"**(07:26, 없던 사람).
+- **⚠️ 결과 지표의 방향이 바뀌었다** — 밸류맥싱 질문 넷 중 셋: *회피된* → **"필요했던"** 재작업, *해결된* → **"방지한"** 취약점 + **없던 질문 하나**, *절약된* 시간 → **"걸린"** 시간(04:44~04:55).
+- **⚠️ 묘사가 명령문으로** — 등장한 긴축 정책의 나열이 **"모델을 제한하십시오 … 지침을 줄이세요"**(03:12~03:19)로. *instead of volume* 누락(06:53)으로 **볼륨도 재라**로 읽힌다.
+- **⚠️ 헤지 소실** — *might*(03:57) · *may … may*(07:52~07:57)가 단정으로. **없던 주어** *"저는"*(08:07).
+- **⚠️ agent → "요원"** 재발(02:12), *architectural* → **"건축적"**(03:52·03:56), *SDLC* → **"발달 과정"**(05:12), *AI* → **"일체 포함"**(00:11).
+- **✅ 수치는 보존** — 500 · 5,000 · 2028 · 70%.
+- **판독하지 않은 것**: 03:35 *"근소한"* · 05:07~05:12 en-orig *"is rooted in"*.
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **IBM 편의 화자 이름이 설명란에서도 빠졌다** — 09-15·09-16·09-17은 설명란에만 이름이 있었는데 이번엔 **설명란에도 없다**(09-07·09-08과 같은 상태로 복귀). 자막에 나오는 이름은 **인용되는 제3자 둘**(*Neil Dar* · *Mark Boroditsky*, ASR 철자 미확정)뿐이다.
+- **설명란이 개념어를 자막보다 정확히 쓴다** — 09-23 편은 *용어 자체가* 설명란에만 남은 경우다(09-22 Lopopolo 편은 *사람 이름* 이었다).
+
+## 2026-09-23 업로드 — Oracle 에이전트 메모리·하네스 워크숍 (2026-09-24 ingest)
+
+[[tech-bridge-oracle-agent-memory-harness|토탈 리콜: 에이전트 메모리와 하네스 엔지니어링]](`DesSEX_9Z5A`, 57:08, 공식 챕터 17개) — [[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]] ([[files-vs-database-agent-memory]], [[context-rot]], [[agent-umwelt]], [[toolbox-pattern]]). **채널 첫 Oracle 소스이자 첫 "워크숍" 녹화** — 강의 약 38분 뒤 실습 안내·데모·Q&A가 이어지고, **실습 1시간 15분은 녹화 밖**이다(*"남은 1시간 15분"*, 43:54~43:57). 행사는 회의장 Wi-Fi *"AI.gineer"*(39:39)와 *"AI Engineer"*(40:48)로 [[ai-engineer|AI Engineer]] 계열로 보이나 **회차·연도 미확정**. 제목의 *토탈 리콜*은 **데모 앱 이름**이다.
+
+**09-23 [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]] 다음 날 하네스 소스가 또 왔고, 둘이 정면으로 엇갈린다** — Lopopolo *"하네스는 만들지 않는다(고정)"* vs Martinez *"모델이 고정이고 하네스는 우리가 만든다"*. 같은 넓은 정의(*모델이 아닌 모든 것*)에서 출발한다. → 소스 페이지의 ⚠️ Contradiction.
+
+### 자막 관찰 — 두 중심어가 한 단어로, 그리고 ko가 en-orig보다 옳은 자리
+
+- **⚠️ 발표의 두 중심어가 "환경"으로 합쳐졌다** — *harness* 는 ko에서 **"환경"** 이 약 20회, *"프레임워크·기본 틀·프레임"* 5회, *"하네스"* 8회. 31~32분의 **Umwelt도 "환경"**. ko만으로는 두 개념을 구분할 수 없다.
+- **⚠️ 기술어가 사물·일상어로, 거의 전부** — *worktrees* → **"나무를 다루는 일"**(15:12, 챕터 제목의 주인공), *ACID* → **"산성"**, *embeddings* → **"상감(세공)"**, *retrieval* → **"회복·복구"**, *weights* → **"무게"**, *transactional* → **"거래"**, *hybrid search* → **"잡종"**, *gateway* → **"문"**, *index* → **"지수"**.
+- **⚠️ 영화 제목 창작** — *frozen model* → **"겨울왕국은 나아지지 않죠"**(35:24). 발표의 핵심 은유(*frozen reasoning core*)다.
+- **⚠️ 없던 정치 단위 창작** — *agents* → **"자치령 대표"**(12:37·43:02). 동료 이름 *Valentine* → **"발렌타인데이·애인"**(27:32·27:38).
+- **⚠️ 부정 반전** — *"I will **not** name names"* → **"이름을 밝히겠습니다"**(20:49). *"with **no** agent harness"* → **"하네스를 구현하겠습니다"**(44:59).
+- **⚠️ 수치가 다른 것에 붙었다** — *10,000 (tools)* → **"10,000달러"**(50:03), *100 million parameter models* → **"1억 개의 모델"**(54:08), 라우팅 회사 과금 *절감액의 10%* → **"토큰 가격의 10%"**(54:41), *raise your hand* → **"상금을 올리세요"**(45:24).
+- **⚠️ Claude Code → "클라우드, 코드"·Codex → "클라우드, 코덱스"**(06:20·08:29) — 09-20부터 **네 번째 연속**.
+- **✅ 처음 보는 역전 — ko가 en-orig보다 옳다.** en-orig *Andrew Ang/Yang*·*Asian memory*·*the envelop … von Wexul*·*354 years ago* 를 ko는 **앤드류 응 · 에이전트 메모리 · 움벨트/야콥 폰 우엑스퀼 · 30~40년 전**으로 적는다. 같이 받은 **en 변종 트랙이 이미 교정돼 있고 ko는 그것에서 번역된 것으로 보인다**(추정). 이 위키는 이 교정을 채택하되 **en-orig에 없는 문장은 인용하지 않았다**(예: *"The umwelt is like the environment of a model"*).
+- **⚠️ 화자 이름이 자막에 0회** — 설명란에만(Ignacio Martinez). 동료 **Casio**(12:30)·**Valentine**은 성·실명 미확정. 데모 모델 *Grog/Groq 4.1 fast reasoning*(52:41) — xAI Grok 4.1 Fast로 읽히나 미확정.
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **워크숍도 올린다** — 발표·대담·제작 에피소드에 이어 **실습 세션**. 녹화가 세션 중간에 끝나 **약속된 실험 결과(카운터 경주)가 영상에 없다** — 워크숍 형식의 구조적 사각이다.
+- **녹화 시점이 업로드보다 꽤 이를 수 있다** — 데모 모델이 이 위키가 09-01에 받은 [[grok-4-6]]보다 이전 세대(Grok 4.1)로 읽힌다. ⚠️ 가능성만 표시.

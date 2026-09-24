@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-09-22
+updated: 2026-09-24
 sources: []
 ---
 
@@ -159,6 +159,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ⚠️ **HF 사건 서술이 일곱이 됐고, 오늘의 두 편은 서로 맞지 않는다.** 침입 대상(HF 서버 / *OpenAI 서버 관리자 권한*), 기간(금→월 / *일주일*), 행위자(모델 하나 / *에이전트 무리*), 과제(벤치마크 / *침투 테스트*), HF가 경쟁사 보안 모델을 *거절당했나*(Brockman) *접근 못 했나*(Altman). 머스크 판본의 세부는 **대부분 호스트가 공급했고 출처가 없다.** → [[hugging-face]]에 대조표.
   ③ [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]([[ryan-lopopolo]], [[google-cloud|Google Cloud]])은 *하네스 엔지니어링* 을 자기 용어로 부르는 사람이 *"하네스를 만들어 본 적이 없다"* 고 말한다 — [[tools-and-context-over-harness]](하네스는 고정, 노력은 도구·컨텍스트에). [[harness-pruning]](Anthropic)·[[ride-the-optimization-trajectory]](Bergum)에 이은 **하네스 시간축의 세 번째 입장**이다. [[shift-left-interventions]] · [[agent-loop-size]] · [[linear-vs-closed-loop-harness]]. 3부 [[model-harness-knowledge-stack]]([[antigravity]] Boost · [[google-skills]])는 수치 없는 벤더 소개다. ⚠️ *agent harness* 명명자 여부는 설명란과 본인 발언이 어긋난다.
   운영: 오늘 목록의 새 멤버 전용 영상은 `zkmvCDSxqdc`(*PR 2,000개*, 38:02)다. `XZuws4hFG4o`(젠슨 황)는 여전히 멤버 전용. **멤버 전용은 영구 상태가 아니다** — §4a 목록을 매일 재확인해야 한다.
+
+- *2026-09-24*: [[tech-bridge]] **2편** ingest(09-23 업로드). ① [[tech-bridge-oracle-agent-memory-harness|Martinez 편]]([[ignacio-martinez]], [[oracle|Oracle]], 57:08 워크숍)은 **하루 전 [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]과 같은 넓은 하네스 정의에서 반대 결론**을 낸다 — Lopopolo는 *하네스는 고정하고 도구·컨텍스트에 투자하라*([[tools-and-context-over-harness]]), Martinez는 *모델은 빌리는 동결된 추론 엔진이고 우리가 만드는 것은 하네스다*. 이 위키에서 처음으로 **저장 계층**이 하네스의 한 층이 됐다 — [[files-vs-database-agent-memory]](단기는 파일, 승격되면 DB; **워크트리는 트랜잭션 일관성의 대용품**). 여기에 [[context-rot]](많이 넣을수록 주의가 희석 → 창을 작게, [[long-context-agents]]와 ⚠️ Contradiction), [[agent-umwelt]](시맨틱 레이어 = 에이전트의 지각 렌즈), [[toolbox-pattern]](도구를 벡터 인덱스에 두고 반복마다 필요한 것만)이 더해졌다. ⚠️ DB 벤더의 당사자 워크숍이고 측정값이 없다.
+  ② [[tech-bridge-tokenmaxxing-to-valuemaxxing|IBM 편]](8:13, 화자 무명)은 토큰 경제 계보([[trusted-throughput]] · [[overspending-underusing-loop]] · [[true-cost-to-perfect-answer]])에 **토큰 최소화도 토큰맥싱과 같은 함정**이라는 이름을 붙였다 — 비용은 사라지지 않고 재작업으로 옮겨 간다([[token-minimization-trap]]). 결과를 최적화 대상으로 삼으면 모델보다 시스템(컨텍스트 관리·오케스트레이션)이 중요해진다는 것이 [[value-maxing]]이다. ⚠️ Piras의 *과소비·과소사용 순환*과 달리 이 소스는 **일방향 진행**으로 그린다 — 위키는 판정하지 않는다.
+  자막 쪽으로는 ⚠️ **ko가 두 중심어 *harness* 와 *Umwelt* 를 둘 다 "환경"으로 합쳤고**, IBM 편에서는 제목어 *token maxing*·*value maxing* 이 녹았다. ✅ 반대로 **ko가 en-orig보다 옳은 첫 사례**가 나왔다(Andrew Ng · 움벨트/폰 윅스퀼 — en-orig는 *Andrew Ang* · *von Wexul*). 운영: ⚠️ **세 번째 멤버 전용 `FJo7p9SPS9c`(*AI 에이전트와 함께하는 스펙 주도 개발 풀코스 강의*, 61:33)** — *유명 인물 대담* 패턴이 깨졌다. 공통점은 **길이**(37~61분)만 남는다.
 
 ---
 

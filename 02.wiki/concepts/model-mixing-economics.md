@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
-related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack]
+related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-09
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # 모델 혼합의 경제학
@@ -93,3 +93,23 @@ updated: 2026-09-23
 > 에이전트는 디렉터리를 검사하고, 함수를 업데이트하고, 단위 테스트를 실행한 다음, **하나의 작업을 완료하기 위해 해당 시퀀스를 20번, 40번 또는 심지어 60번 반복**할 수 있습니다. 따라서 **연속적인 홉을 많이 사용하는 경우 속도와 비용이 급격히 증가합니다.** 따라서 **빠르고 비용 효율적인 모델은 결코 성능 저하를 의미하지 않습니다.** (26:29~26:50)
 
 → [[model-harness-knowledge-stack]]. ⚠️ **당사자 발표(Gemini 3.8 Flash 소개)이고 수치가 없다.** 그리고 **약한 모델이 홉 수 자체를 늘릴 가능성**(비용 = 홉 수 × 단가)을 다루지 않는다. 같은 에피소드에서 하네스 쪽은 **Antigravity `/boost`를 "아껴 쓰라"** 고 한다 — 모드 선택도 예산 문제라는 암시지만 말하지 않는다.
+
+## 선택보다 오케스트레이션 — IDC 예측 (2026-09-24 · [[tech-bridge-tokenmaxxing-to-valuemaxxing]])
+
+> **모델 오케스트레이션[이] 모델 선택[보다] 점점 더 중요해지고 있다.** **IDC는 2028년까지 [선도적인] 대규모 AI [배포]의 70%[가] 단 [하나의 모델]에만 의존하는 대신 여러 모델과 함께 작업할 것[이라고] 예측합니다.** (05:48~06:05)
+
+근거가 이 페이지의 *예산* 논리가 아니라 **결과 논리**다 — *"결과가 토큰보다 더 중요[하다면], 시스템이 모델들보다 더 중요해집니다"*(05:43~05:48). 이 페이지에 처음 들어온 **애널리스트 예측**이지만 ⚠️ **예측이고, 출처·정의(무엇이 *선도적 대규모 배포* 인지)가 자막에 없다.**
+
+⚠️ 같은 소스가 *"최신 [모델] 제한"* 을 **실패하는 긴축 정책 목록**에 넣는다(03:12~03:16, → [[token-minimization-trap]]). 이 페이지의 *실행은 싼 모델* 과 어디서 갈리는지는 말하지 않는다. → [[value-maxing]]
+
+## 라우터를 하네스 안에 — 그리고 "절감액의 10%" (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])가 모델 혼합을 **하네스의 기능**으로 둔다:
+
+> **모델에 결함이 있는 경우**[모델이 형편없으면] (…) **라우터** (…) 어려운 문제는 **[프런티어] LLM**으로 (…) **간단한 문제의 경우, 개방형 가중치 SLM을 할당합니다.** (53:29~53:44)
+
+> 개인적으로 **미래는** (…) **각 유형별 소규모 전문가**[의 혼합] (…) [1억 파라미터 모델] (…) **애그리게이터** (…) [오케스트레이터] (…) **라우팅을 구현할 수 있습니다. [하네스] 내의 모델.** (53:58~54:32)
+
+그리고 이 축에 처음으로 **사업 모델**이 붙는다 — *"일부 회사들은 본질적으로 그것만 한다 (…) 원래 쓰려던 돈에서 **절감해 드린 토큰의 10%를 받겠습니다**"*(54:33~54:45, en-orig 대조; ⚠️ ko는 *"토큰 가격의 10%"* 로 바꿨다). 회사 이름은 말하지 않는다.
+
+이 페이지의 분할 축들(계획 vs 실행, 대화 vs 도구 호출, 루프 횟수가 곱하는 비용)에 **난이도 라우팅**이 더해진다 — 기준이 *단계*가 아니라 **문제의 난이도**다. ⚠️ **난이도를 누가 어떻게 판정하는지**(라우터 자체가 LLM인가)는 말하지 않는다. *소규모 전문가 혼합이 미래*는 **개인 의견**이라고 스스로 단서를 단다(53:58).

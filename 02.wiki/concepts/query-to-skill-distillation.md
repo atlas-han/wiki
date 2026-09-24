@@ -6,9 +6,9 @@ tags: [agent-skills, feedback-loop, context, automation, no-human-gate]
 aliases: [쿼리 증류, 스킬 자동 증류]
 related: [agent-skills, skill-self-improvement, agent-knowledge-sourcing, context-engineering, sweeper-agent, no-silent-write]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-24
 ---
 
 # 쿼리를 스킬로 증류하기
@@ -61,3 +61,7 @@ updated: 2026-09-19
 - [[tech-bridge-vercel-eve-filesystem-agent]] — first-seen
 - [[vercel]] · [[andrew-qu]] · [[eve-framework]]
 - 관련: [[agent-skills]] · [[skill-self-improvement]] · [[file-system-agent]] · [[agent-knowledge-sourcing]] · [[sweeper-agent]] · [[no-silent-write]] · [[harness-pruning]] · [[agent-memory]]
+
+## 짝이 하나 더 — 버전 교체형 승격 (2026-09-24)
+
+[[tech-bridge-oracle-agent-memory-harness]]의 **스킬 승격**은 이 페이지와 같이 **성공**에서 배우고 **게이트를 말하지 않지만**, 재료가 *질의 다수*가 아니라 **성공한 긴 세션 하나**이고, 결과가 *새 스킬 추가*가 아니라 **기존 skill.md를 증류한 새 버전으로 교체 · 옛 버전 은퇴**다(36:47~37:04). → [[skill-self-improvement]]의 3자 비교표.

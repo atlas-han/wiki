@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-21
+updated: 2026-09-24
 ---
 
 # Log
@@ -1499,3 +1499,32 @@ Lauren Tan 워크숍은 **[[grok-4-6|Grok 4.6]] 발표 당일**이고 **[[grokbo
 ### 운영 메모
 
 **멤버 전용은 영구 상태가 아니다** — §4a 목록의 영상이 공개로 풀릴 수 있으므로 목록 조회에 `%(availability)s`를 함께 찍어 **매일 재확인**했다(추가 요청 없이 한 번에 판정됨). 세 편을 **병렬 서브에이전트**로 나눠 raw·source·개념 페이지를 쓰게 하고 index·overview·log·iconize·커밋은 오케스트레이터가 맡았다. ⚠️ 서브에이전트 지시에서 raw 파일명 접두사를 **ingest 날짜로 잘못 줬다가** 기존 관례(**업로드 날짜**)대로 `2026-09-21_`·`2026-09-22_`로 고치고 참조를 갱신했다.
+
+## [2026-09-24] ingest | Tech Bridge — 토탈 리콜: 에이전트 메모리와 하네스 엔지니어링(Ignacio Martinez, Oracle) · 토큰맥싱과의 작별(IBM Technology 계열) (09-23 업로드 2편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 493초, Shorts 없음). 09-23 업로드 **3편** 중 **2편 ingest**, **1편 멤버 전용**(`FJo7p9SPS9c`, *AI 에이전트와 함께하는 스펙 주도 개발 풀코스 강의*, 61:33 — **신규 판정**, 페이지 없음). `zkmvCDSxqdc`·`XZuws4hFG4o`는 **여전히 `subscriber_only`**. 두 편 다 ko+en-orig 확보, **429 없음**.
+
+**신규 source 2 · concept 6 · entity 2**, 기존 **21페이지 보강**, index 실측 **591 → 601**.
+
+- `DesSEX_9Z5A`(57:08, **Ignacio Martinez / Oracle**, 공식 챕터 17개) → [[tech-bridge-oracle-agent-memory-harness]]
+- `H5h_GUaR-bU`(8:13, **IBM Technology 계열, 화자 무명**, 공식 챕터 없음) → [[tech-bridge-tokenmaxxing-to-valuemaxxing]]
+
+신규: [[ignacio-martinez]] · [[oracle]] · [[files-vs-database-agent-memory]] · [[context-rot]] · [[agent-umwelt]] · [[toolbox-pattern]] · [[value-maxing]] · [[token-minimization-trap]]
+
+보강: [[tech-bridge]] · [[ai-engineer]] · [[andrew-ng]] · [[ibm]] · [[agent-memory]] · [[agent-harness-design]] · [[tools-and-context-over-harness]] · [[context-engineering]] · [[continual-learning]] · [[skill-self-improvement]] · [[query-to-skill-distillation]] · [[linear-vs-closed-loop-harness]] · [[model-mixing-economics]] · [[retrieval-augmented-generation]] · [[long-context-agents]] · [[agent-tool-design-practices]] · [[file-system-agent]] · [[company-knowledge-moat]] · [[agent-swarm]] · [[overspending-underusing-loop]] · [[trusted-throughput]] · [[agent-roi-measurement]] · [[true-cost-to-perfect-answer]]
+
+### 이번 실행의 구도 — 같은 정의, 반대 결론
+
+하루 전 [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]과 오늘의 Martinez 편은 **"에이전트 = 모델 + 하네스"라는 같은 넓은 정의**에서 출발해 **무엇을 고정할지에서 정반대**다 — Lopopolo는 하네스를 고정하고 도구·컨텍스트에 투자, Martinez는 모델을 고정값으로 빌리고 하네스(메모리·도구·인식)를 소유. Martinez 편은 **저장 계층을 하네스의 층으로 세운 첫 소스**다(파일 vs DB, 워크트리 = 트랜잭션 대용품). [[agent-harness-design]]·[[tools-and-context-over-harness]]에 ⚠️ Contradiction 표시. IBM 편은 토큰 경제 계보에 *최소화도 함정* 을 더했고 [[overspending-underusing-loop]]와 순환/일방향으로 어긋난다(⚠️ Contradiction, 판정 안 함).
+
+### 주의사항
+
+- ⚠️ **ko가 두 중심어를 "환경"으로 합쳤다** — *harness* 약 20회, *Umwelt* 도 "환경". 사물·일상어 직역: worktrees → "나무를 다루는 일", ACID → "산성", embeddings → "상감", frozen → "겨울왕국".
+- ⚠️ **부정·수치 뒤집힘** — *"I will not name names"* → "이름을 밝히겠습니다"(20:49), *"with no agent harness"* → "하네스를 구현하겠습니다"(44:59), 도구 10,000개 → "10,000달러", *절감액의 10%* → "토큰 가격의 10%". IBM 편: 논지 문장 반전(00:14~00:18), *input* → "입장료", *adoption* → "입양", 밸류맥싱 네 질문 중 셋의 방향 반전.
+- ✅ **ko가 en-orig보다 옳은 첫 사례** — en-orig *Andrew Ang/Yang* · *Asian memory* · *von Wexul* · *354 years ago* 를 ko가 Andrew Ng · 에이전트 메모리 · 움벨트/폰 윅스퀼 · 30~40년 전으로 적는다. ko가 교정된 en 변종 트랙에서 번역된 것으로 추정(이번엔 `en` 과 `en-orig` 파일이 **서로 달랐다**). **en-orig에 없는 문장은 인용하지 않았다.**
+- 이름: Martinez는 **설명란에만**(설명란 의존 **아홉 번 연속**). 동료 *Casio*·*Valentine*, 데모 모델 *Grog/Groq 4.1 fast reasoning*(Grok 4.1 Fast로 읽히나 미확정)은 판독 보류. IBM 편 화자는 무명, 인용된 *Neil Dar*·*Mark Boroditsky* 는 자막만이 출처라 페이지 없음.
+- 미확정: Martinez 편 행사(AI Engineer 계열로 보임)·녹화 시점, 설명란 *"7계층"* 은 음성으로 6개까지만. IBM 편 500 → 5,000 토큰은 **가상 예시**, IDC 2028 전망은 출처 없음.
+
+### 운영 메모
+
+§2 명령에 `%(availability)s`를 넣어 **목록 한 번으로 멤버 전용을 재판정**했다. 두 편을 **병렬 서브에이전트**로 나눠 raw·source·개념/엔티티를 맡기고(raw 파일명은 처음부터 **published 날짜**로 지시), index·overview·log·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지(tech-bridge·model-mixing-economics·context-engineering)는 두 에이전트가 동시에 좁은 Edit로 건드렸고 충돌 없이 양쪽 절이 모두 남았다.

@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [measurement, roi, adoption, tokens, bias, communication]
 aliases: [측정 문제, 에이전트 ROI]
-related: [mousepower, trusted-throughput, token-roles, overspending-underusing-loop, agent-org-adoption, task-entropy-matrix, verification-bottleneck]
+related: [mousepower, trusted-throughput, token-roles, overspending-underusing-loop, agent-org-adoption, task-entropy-matrix, verification-bottleneck, value-maxing]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 ---
 
 # 에이전트의 측정 문제
@@ -50,3 +50,9 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-mousepower-measuring-agents]] · [[mousepower]] · [[james-watt]] · [[trusted-throughput]] · [[task-entropy-matrix]] · [[maximillian-piras]]
+
+## 결과를 묻는 질문 넷 — 밸류맥싱 편 (2026-09-24 · [[tech-bridge-tokenmaxxing-to-valuemaxxing]])
+
+이 페이지의 *"버그를 몇 개 잡았나? 지원 요청을 몇 개 닫았나?"* 와 같은 형식의 질문 목록이 [[ibm|IBM Technology]] 계열 해설에서 나왔다 — **배포 몇 건 · 절약된 개발자 시간 · 회피된 재작업 · 해결된 취약점**(04:44~04:55). 용도도 명시된다: AI가 측정 가능한 결과를 만드는지, 그리고 **추가(incremental) 토큰 사용이 정당한지**(04:57~05:05). → [[value-maxing]]
+
+⚠️ **귀속 공백은 그대로다** — 어느 토큰이 어느 배포를 만들었는지 나누는 법은 없다. 그리고 이 페이지의 3번(*척도는 고객의 멘탈 모델에*)은 다루지 않는다 — IBM 편의 척도는 **조직 내부**(개발자·플랫폼 리더)용이다. ⚠️ ko는 넷 중 셋의 방향을 바꿨다(*회피된* → *필요했던* 재작업 등).

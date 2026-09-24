@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing]
 created: 2026-09-08
-updated: 2026-09-18
+updated: 2026-09-24
 ---
 
 # IBM
@@ -123,3 +123,22 @@ updated: 2026-09-18
 **IBM 편 다섯 편의 자리가 보인다** — 09-15(직무 입문) · 09-16(보안) · 09-17(레거시)이 **AI 엔지니어의 세 층**([[three-tier-ai-skill-stack]])과 나란히 읽힌다: *무엇을 배우나 → 무엇을 지키나 → 무엇을 옮기나*. 소스들은 서로를 언급하지 않는다.
 
 ⚠️ **이 편의 기존 경고에 해당하는 것**: 레거시 현대화·메인프레임·COBOL 번역은 **엔터프라이즈 벤더가 파는 것과 정확히 같은 자리**다(IBM이 메인프레임 벤더라는 사실은 **위키의 배경 지식**이지 소스에 없다). 소스는 그 연결을 하지 않고 **도구 이름을 하나도 부르지 않는다.** 위키는 근거 없이 주장하지 않되, 다섯 편 중 **판매 대상과 가장 가까운 주제**라는 점을 표시해 둔다.
+
+## 여섯 번째 소스 — 토큰 경제, 그리고 IBM 사람이 처음 인용되다 (2026-09-24)
+
+[[tech-bridge-tokenmaxxing-to-valuemaxxing]](09-23 게시, 8:13 1인 해설, 공식 챕터 없음)로 IBM은 **소스 여섯 편**을 가진 조직이 됐다. 판정 근거: 설명란 관련 링크 `ibm.biz` 둘(*"Valuemaxxing 자세히 알아보기"*, *"IBM 월간 AI 뉴스레터"*) + IBM Technology·IBM·IBM Developer 채널. ⚠️ 해시태그에는 IBM이 없다.
+
+| | 09-07 ~ 09-17 (다섯 편) | **09-23 (이번)** |
+|---|---|---|
+| 발표자 | 무명 둘 · 설명란에만 셋 | **무명** — 설명란에도 자막에도 없음 |
+| 촬영 시점 | 다섯 번 미확정 | **미확정**(*"지난 한 해 동안"*, *"2028년까지"* 뿐) |
+| 자사 제품 | 없음 | **없음** — 단 마지막 구간이 **플랫폼 기능 목록 형태**(관리 제어·분석·워크플로·스킬·도구 통합, 07:19~07:50) |
+| 주제 | 지식·품질·직무·보안·레거시 | **토큰 경제 — 토큰맥싱 → 최소화 → [[value-maxing\|밸류맥싱]]** |
+
+**처음인 것 둘.** ① **IBM 사람이 권위로 인용된다** — *"Neil Dar, SVP for IBM Consulting"*(01:34, ⚠️ ASR 철자, 설명란 미확정). 이 위키의 이전 다섯 편 기록에는 **IBM 소속 인물을 권위로 인용한 자리가 없다**(⚠️ 위키 페이지 기준 확인, 원 자막 전수 확인은 아님). ② **IBM 편이 처음으로 비용·지표를 다룬다** — 이 위키의 토큰 경제 계보([[trusted-throughput]] · [[overspending-underusing-loop]] · [[true-cost-to-perfect-answer]])에 엔터프라이즈 벤더 목소리가 붙었다.
+
+**같은 벤더가 컨텍스트의 양쪽을 다 말했다** — 09-07 편은 *다 쏟아붓기* 의 실패, 이번 편은 *다 잘라내기* 의 실패([[token-minimization-trap]]). 두 편은 서로를 언급하지 않는다.
+
+⚠️ **기존 경고에 해당하는 것**: *"개발자와 리더[가] 혼자 짊어질 수 없다 — 플랫폼이 도와야 한다"*(07:11~07:23)는 **플랫폼 벤더가 자기 층을 해법에 넣는 문장**이다. 제품명은 없다. 설명란 링크는 열어 보지 않았다.
+
+09-23 편이 더한 것: [[value-maxing]] · [[token-minimization-trap]], 그리고 [[trusted-throughput]] · [[overspending-underusing-loop]] · [[agent-roi-measurement]] · [[true-cost-to-perfect-answer]] · [[context-engineering]] · [[model-mixing-economics]] 보강.

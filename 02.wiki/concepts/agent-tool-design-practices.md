@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [tool-design, mcp, agent-tooling, errors, read-write, api-design]
 aliases: [도구 품질 모범 사례, 결과 중심 도구, 조치 가능한 오류]
-related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems]
+related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems, toolbox-pattern]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-11
-updated: 2026-09-21
+updated: 2026-09-24
 ---
 
 # 에이전트용 도구 설계 모범 사례 다섯
@@ -101,3 +101,9 @@ REST의 자원 단위(GET /orders, DELETE /orders/1)가 아니라 **의도 단�
 
 - [[tech-bridge-build-time-vs-runtime-tools]] (first-seen) · [[averi-kitsch]]
 - 관련: [[secure-tool-evolution]] · [[no-silent-write]] · [[deny-and-continue]] · [[outcome-engineering]] · [[agent-skills]] · [[model-context-protocol]]
+
+## 2026-09-24 — "도구가 너무 많다"에 대한 실행 시점의 답: 툴박스
+
+이 페이지의 실패 모드 표에서 *도구가 너무 많다 → 선택 과부하*는 **설계 시점**(도구를 줄이고 잘 설계하라)의 처방이었다. [[tech-bridge-oracle-agent-memory-harness]]는 **실행 시점**의 답을 준다 — [[toolbox-pattern]]: 도구 정의를 **HNSW 벡터 인덱스**에 두고 에이전트 루프의 매 반복마다 필요한 것만 넣는다(34:19~35:08, 48:54~50:08).
+
+그리고 이 페이지의 규칙 2(*설명은 안내 — 언제·어떻게 쓰는가*)에 한 면이 붙는다 — 툴박스에서 도구 설명은 **검색기가 읽는 문서**이기도 해서, 설명이 비슷한 도구끼리는 **LLM으로 설명을 보강해 분리도(separability)를 높인다**(50:57~51:34). ⚠️ 측정 없음, 그리고 **검색이 빗나가 필요한 도구가 안 들어오는 실패**는 다루지 않는다.

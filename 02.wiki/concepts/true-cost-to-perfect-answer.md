@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [token-economics, cost, reliability, expected-value, evaluation, token-roles, anthropic]
 aliases: [진짜 비용, 예산 나누기 합격률, 기대 실행 횟수]
-related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth]
+related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-24
 ---
 
 # 완벽한 답까지의 진짜 비용
@@ -59,3 +59,9 @@ updated: 2026-09-18
 
 - [[tech-bridge-tokens-should-have-jobs]] · [[angela-jiang]] · [[katelyn-lesse]] · [[anthropic]]
 - 관련: [[all-or-nothing-accuracy]] · [[fixed-budget-alpha]] · [[token-roles]] · [[trusted-throughput]] · [[overspending-underusing-loop]] · [[model-mixing-economics]] · [[verification-cost-asymmetry]]
+
+## 재작업이라는 두 번째 분모 (2026-09-24 · [[tech-bridge-tokenmaxxing-to-valuemaxxing]])
+
+[[ibm|IBM Technology]] 계열 해설이 같은 단위 전환을 **입력 절감** 쪽에서 말한다 — *"[입력]에서 500 토큰을 절약할 수 있지만, 이제 디버깅 및 재작업 과정에서 5,000 토큰을 사용해야 합니다"*(04:04~04:10), *"비용[은] 사라지는 것이 아니라, 단지 이동하는 것뿐입니다"*(04:10~04:13).
+
+이 페이지의 식(실행당 예산 × 기대 실행 횟수)으로 읽으면: 입력을 깎아 **실행당 예산**이 줄어도 합격률이 떨어지면 **기대 실행 횟수**(또는 재작업)가 커져 진짜 비용이 오른다. ⚠️ 이 연결은 위키의 해석이고, IBM 편의 500 → 5,000은 **가상 예시**다(이 페이지의 42%·1.8M은 측정). → [[token-minimization-trap]] · [[value-maxing]]

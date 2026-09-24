@@ -3,11 +3,11 @@ title: Agent Harness Design
 type: concept
 category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
-related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition, tools-and-context-over-harness, linear-vs-closed-loop-harness]
+related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition, tools-and-context-over-harness, linear-vs-closed-loop-harness, files-vs-database-agent-memory]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness]
 created: 2026-05-25
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # Agent Harness Design
@@ -212,3 +212,19 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 - 빌리 — **직접 짜 봐야 이해한다.** 루핑·도구·메모리 세 결정으로 선형/폐루프/가드레일 하네스를 코드로 보인다. → [[linear-vs-closed-loop-harness]]
 
 > ⚠️ Contradiction: 에피소드는 Lopopolo를 *"'에이전트 하네스'라는 용어를 만든"* 사람으로 소개한다(02:14~02:22). 이 페이지의 출발점은 [[anthropic|Anthropic]] 블로그의 *harness* 용법이다. 본인은 **"하네스 엔지니어링"** 을 자기 용어로 부른다(14:50~14:52). **이 위키는 판정하지 않는다.**
+
+## 2026-09-24 — 스토리지가 하네스의 첫 층으로, 그리고 "모델이 고정"이라는 반대 방향
+
+[[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])의 정의는 09-23 Lopopolo 편의 진행자 정의와 같은 폭이다 — *"모델 자체가 추론 (…) 나머지는 모두 [하네스]"*(06:49~06:52). 새로 붙는 것은 **목적 문장**과 **층 목록**이다.
+
+> [하네스 엔지니어링]의 목표는 (…) **언제나 믿을 수 있고 예측 가능합니다.** 하나의 모델이 추론 방식은 **매우 비결정적입니다. 같은 [입력]을 제공하면 (…) 매번 다른 결과를 낳는다** (08:04~08:21)
+
+> 하네스 (…) 모델을 기반으로 구축합니다. **상호 교환 가능합니다.** (…) 공통 인터페이스 **OpenAI 또는 (…) Anthropic API 사양** (10:03~10:14)
+
+**음성으로 확인되는 층**: 모델(동결, 건드리지 않음) · **스토리지** · 메모리 엔지니어링(인코딩·검색·retrieval) · 시맨틱 레이어 · 에이전트 루프 · 컨텍스트 엔지니어링(*"일곱 층 중 마지막"*, 34:10~34:14). ⚠️ 설명란의 *"7계층"* 중 일곱 번째는 슬라이드에만 있다.
+
+⭐ **이 위키의 하네스 층 목록에 스토리지가 처음 들어왔다** — Anthropic(루프·도구·샌드박스), Cursor(네 구성요소), Cole Medin(AI Layer 6요소) 어디에도 **메모리가 물리적으로 어디 사는가**는 층이 아니었다. → [[files-vs-database-agent-memory]]
+
+에이전트 루프의 요구는 *"실패에 강해서 루프를 절대 빠져나가지 않게"*(33:53~33:59) — 그리고 Q&A에서 그 반대편인 **상한**이 나온다: 도구 호출 8~12회의 *"인내심"* 변수(52:41~53:25). → [[linear-vs-closed-loop-harness]]
+
+> ⚠️ Contradiction: 09-23 [[tools-and-context-over-harness|Lopopolo]]는 **하네스를 고정**하고 도구·컨텍스트에 투자하라고 했고, 이 소스는 **모델이 고정(임대)** 이고 하네스를 직접 만들라고 한다(워크숍 = *"모델만으로 시작해 층을 더한다"*, 44:26~44:34). 다만 Martinez가 만드는 층(메모리·시맨틱·컨텍스트 조립)은 Lopopolo의 *"도구와 컨텍스트"* 와 상당 부분 겹친다 — **어휘 충돌일 가능성**을 표시하고 판정하지 않는다.

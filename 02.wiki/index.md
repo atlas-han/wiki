@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-22
+updated: 2026-09-24
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-09-22
 ## Entities
 
 ### Persons
+- [[ignacio-martinez]] — [[oracle|Oracle]] AI 개발자 애드버킷(7년 근속, 그중 약 4년 DevRel). *추론은 빌리고 메모리·도구·인식은 소유한다* — 스토리지를 하네스 층에 올린 첫 화자. [[andrew-ng|Andrew Ng]]과 에이전트 메모리 강좌를 냈다고 소개 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 당사자 · **이름은 설명란에만**
 - [[ryan-lopopolo]] — Google Cloud에서 클라우드를 운영하는 에이전트를 만드는 엔지니어. *하네스 엔지니어링* 을 자기 용어로 부르며 *"저는 하네스를 만들어 본 적이 없습니다"* — 하네스는 고정하고 도구·컨텍스트에 투자하라 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ *agent harness* 명명자 여부는 설명란과 본인 발언이 어긋난다
 - [[marc-benioff]] — [[salesforce|Salesforce]] CEO·회장, Dreamforce 진행자. 기술 중립론을 폈다가 [[sam-altman|Altman]]에게 *"그건 중립적인 기술이 아니다"* 로 반박당함 ([[tech-bridge-altman-benioff-dreamforce]])
 - [[gwynne-shotwell]] — [[spacex|SpaceX]] 사장 겸 COO. [[terafab|Terafab]]의 crawl-walk-run 단계론의 출처. **AI에 대해서는 말하지 않는다** ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
@@ -90,6 +91,7 @@ updated: 2026-09-22
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[oracle]] — DB·OCI 벤더. DBFS · 컨버지드 DB · Oracle Agent Memory Package(컨텍스트 카드) · OCI Generative AI ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 전부 당사자 주장, 측정 없음
 - [[salesforce]] — Dreamforce 주최사. [[openai|OpenAI]]와 공동 개발 플랫폼(Agentforce로 보이나 판독 보류) ([[tech-bridge-altman-benioff-dreamforce]])
 - [[all-in-podcast]] — 청중 앞 라이브 녹화 팟캐스트. ⚠️ 호스트 개인은 자막에서 식별되지 않는데 **HF 사건의 세부는 대부분 호스트가 공급했다** ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 - [[exa]] — **AI 에이전트를 위한 검색 엔진**(2021 창업, 옛 이름 Metaphor). 임베딩에 걸고 200ms와 분 단위 두 티어를 함께 판다. [[cursor|Cursor]]의 웹 검색이 여기로 간다 ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ **정확도 수치 0개** · *"구글보다 낫다"* 에 벤치마크 없음 · ⚠️ **자막이 회사 이름을 네 갈래로 깨뜨린다**
@@ -244,6 +246,7 @@ updated: 2026-09-22
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[files-vs-database-agent-memory]] — 에이전트 메모리의 단기분은 파일에, 장기로 승격되면 DB로. **워크트리는 파일에 트랜잭션 일관성이 없어서 쓰는 우회책** ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ DB 벤더의 논지
 - [[model-harness-knowledge-stack]] — 모델(Gemini 3.8 Flash) · 하네스(Boost) · 지식(Skills) 3계층. 루프 횟수가 비용을 곱한다는 논거 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 벤더 소개, 수치 없음
 - [[agent-data-marketplace]] — 데이터 보유자와 에이전트 개발자를 검색 엔진이 **중개**하고 공개 웹과 유료 비공개 데이터가 한 쿼리에서 섞인다. **위키에 데이터 유통·정산이 들어온 첫 자리** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 가격·라이선스·출처 표기·감사 전무 · ⚠️ *"에이전트는 출처를 신경 쓰지 않는다"* 가 [[lethal-trifecta]]와 정면 충돌
 - [[per-customer-search-engine]] — *"고객 5,000곳에 각각 다른 엔진"* — 완벽한 검색의 정의를 고객에게 넘긴다. ⚠️ [[which-bm25-problem]]이 **제품 형태로 재발**하고, 그 결과 *"구글보다 낫다"* 가 **원리적으로 검증 불가능**해진다 ([[tech-bridge-exa-perfect-search-for-agents]])
@@ -262,6 +265,9 @@ updated: 2026-09-22
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[context-rot]] — 컨텍스트 창에 많이 넣을수록 항목당 주의가 희석된다 → 창은 작게 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 희석 논거와 n² 비용 논거가 섞임 · [[long-context-agents]]와 Contradiction
+- [[agent-umwelt]] — 시맨틱 레이어(tribal knowledge)는 에이전트의 지각 렌즈(Uexküll의 *Umwelt*). 렌즈 밖의 것은 에이전트에게 틀린 게 아니라 **없다** ([[tech-bridge-oracle-agent-memory-harness]])
+- [[value-maxing]] — 밸류맥싱: 토큰 최대화도 최소화도 아닌 **결과**를 최적화 대상으로. 세 국면(맥싱 → 최소화 → 가치)과 개발자·플랫폼 리더·플랫폼의 분담 ([[tech-bridge-tokenmaxxing-to-valuemaxxing]]) ⚠️ 측정 없음 · [[overspending-underusing-loop]]와 Contradiction(순환 vs 일방향)
 - [[accident-reporting-culture]] — 신기술 사고는 불가피하니 **FAA·NTSB식 투명 보고와 학습 문화**를 만들자는 [[sam-altman|Altman]]의 처방. HF 사건의 사후 틀 ([[tech-bridge-altman-benioff-dreamforce]])
 - [[perfect-search-as-cost-problem]] — 이상적 해(쌍마다 LLM)는 이미 알려져 있고 **검색당 1천만 달러**다. 따라서 검색 공학은 **그 비용을 10억~1조 배 줄이는 최적화 문제** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 전제가 검증되지 않고 [[context-window-as-floppy-disk]]와 **정면으로 만난다**
 - [[suppressed-query-demand]] — **안 될 걸 알아서 아예 묻지 않는다.** 그래서 그 수요는 로그에 남지 않는다. ⭐ [[llm-as-search-user|*사용자가 바뀌었다*]]의 **두 번째 읽기**(제약이 풀린 것) ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 증거는 화자의 *"장담컨대"* 뿐
@@ -326,6 +332,8 @@ updated: 2026-09-22
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[toolbox-pattern]] — 도구·스킬을 HNSW 벡터 인덱스에 두고 **루프 반복마다 필요한 것만** 넣는다. 비슷한 도구 설명은 LLM으로 보강해 분리도를 높인다 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 검색이 빗나갈 때의 대책 없음
+- [[token-minimization-trap]] — 명백한 낭비를 넘어 작업·도메인·아키텍처 컨텍스트까지 자르면 **비용이 재작업으로 옮겨 간다**(입력 500 → 재작업 5,000, 가상 예시) ([[tech-bridge-tokenmaxxing-to-valuemaxxing]])
 - [[cross-lab-peer-review]] — AI 기업들이 **출시 전 서로의 모델을 자기 하네스로 시험**한다. 문제는 제작사 먼저, 다음은 공개 경고, 강제력은 여론+제조물 책임. ⭐ [[embedded-external-evaluators|Amodei의 중립 검사관]]과 **검증자 선택이 정반대** — 경쟁사가 채점한다 ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 - [[model-rendered-interface]] — 모델이 사내 데이터를 모아 **인터페이스 코드를 새로 써서** 화면을 그린다. [[agentic-sites]](블록 재조립)의 반대쪽 끝 ([[tech-bridge-altman-benioff-dreamforce]]) ⚠️ ko가 권한 단서(*where it's allowed to look*)를 지웠다
 - [[tools-and-context-over-harness]] — 하네스는 고정하고 최신 모델을 즉시 채택, 노력은 **도구·컨텍스트에만**. [[harness-pruning]]·[[ride-the-optimization-trajectory]]에 이은 **하네스 시간축의 세 번째 입장** ([[tech-bridge-lopopolo-agent-harness]])
@@ -539,6 +547,8 @@ updated: 2026-09-22
 ---
 
 ## Sources
+- [[tech-bridge-oracle-agent-memory-harness]] — 토탈 리콜: 에이전트 메모리와 하네스 엔지니어링 ([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]], 57:08, 2026-09-23 업로드, AI Engineer 계열 워크숍). **같은 날 하루 전 Lopopolo 편과 같은 넓은 하네스 정의에서 반대 결론** — 모델은 빌리는 고정값이고 만드는 것은 하네스다. [[files-vs-database-agent-memory]] · [[context-rot]] · [[agent-umwelt]] · [[toolbox-pattern]] ⚠️ 당사자 · 측정 없음 · ko가 *harness* 와 *Umwelt* 를 둘 다 "환경"으로
+- [[tech-bridge-tokenmaxxing-to-valuemaxxing]] — 토큰맥싱과의 작별 (IBM Technology 계열 1인 해설, 화자 무명, 8:13, 2026-09-23 업로드). **토큰 최대화와 토큰 최소화는 같은 함정** — [[value-maxing]] · [[token-minimization-trap]] ⚠️ 유일한 수치가 가상 예시 · IDC 전망 출처 없음
 - [[tech-bridge-altman-benioff-dreamforce]] — 샘 올트먼 × 마크 베니오프 Dreamforce 대담 ([[sam-altman|Sam Altman]] / [[marc-benioff|Marc Benioff]], 37:03, 2026-09-21 업로드 · **멤버 전용 → 09-23 공개 전환**). **HF 사건의 경위를 올트먼 본인이 처음 시간순으로 말한다** — *"보안 문제로 주로 다뤄졌지만 진짜 정렬 문제이기도 하다"*, 그 귀결이 [[openai-daybreak|Daybreak]]. [[accident-reporting-culture]] · [[model-rendered-interface]] ⚠️ Contradiction: HF가 경쟁사 보안 모델에 *접근 못 했다* vs Brockman의 *거절당했다*
 - [[tech-bridge-musk-shotwell-cross-lab-peer-review]] — 일론 머스크 × 그윈 숏웰 All-In 대담 ([[elon-musk|Elon Musk]] / [[gwynne-shotwell|Gwynne Shotwell]], 36:50, 2026-09-22 업로드). **경쟁사 오너가 같은 HF 사건을 증거로 [[cross-lab-peer-review|AI 기업 간 출시 전 상호 검증]]을 제안** + [[terafab]] ⚠️ Contradiction: 침입 대상(*OpenAI 서버 관리자 권한*)·기간(*일주일*)·행위자(*에이전트 무리*)가 올트먼 판본과 전부 어긋난다
 - [[tech-bridge-lopopolo-agent-harness]] — 하네스 엔지니어링 완벽 해설 ([[ryan-lopopolo|Ryan Lopopolo]] / [[google-cloud|Google Cloud]], 30:31, 2026-09-22 업로드). *"하네스는 만들지 않는다"* — [[tools-and-context-over-harness]] · [[shift-left-interventions]] · [[agent-loop-size]] · [[linear-vs-closed-loop-harness]] · [[model-harness-knowledge-stack]] ⚠️ 3부는 수치 없는 벤더 소개, 보안은 차단 목록 하나
@@ -630,6 +640,6 @@ updated: 2026-09-22
 
 ## 통계
 
-- 총 페이지 수: 591 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 571 → 591, + 2026-09-21·09-22 Tech Bridge 3편: source 3 + concept 8 + entity 9)
+- 총 페이지 수: 601 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 591 → 601, + 2026-09-23 Tech Bridge 2편: source 2 + concept 6 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-23 (Tech Bridge **3편**, **스무날 연속** — 09-22 업로드 2편 + **멤버 전용에서 공개로 풀린 09-21 업로드 1편**. **HF 사건의 여섯·일곱 번째 서술이 하루에 들어온 날이다.** [[tech-bridge-altman-benioff-dreamforce|Altman × Benioff 편]]과 [[tech-bridge-musk-shotwell-cross-lab-peer-review|Musk × Shotwell 편]]이 09-20 [[tech-bridge-brockman-agi-era-defender-window|Brockman 편]] 등 앞선 서술들과 **HF 사건**을 서로 다르게 말한다 — 침입 대상·기간·행위자·과제가 판본마다 어긋나고 처방도 갈린다(Daybreak 판매 / [[cross-lab-peer-review|경쟁사 상호 검증]]). [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]은 *하네스는 만들지 않는다* 로 하네스 시간축의 세 번째 입장을 세웠다.)
+- 마지막 ingest: 2026-09-24 (Tech Bridge **2편**, **스무하루 연속** — 09-23 업로드분. [[tech-bridge-oracle-agent-memory-harness|Martinez 편]]([[oracle|Oracle]])은 하루 전 [[tech-bridge-lopopolo-agent-harness|Lopopolo 편]]과 **같은 하네스 정의에서 반대 결론**을 낸다 — Lopopolo는 *하네스는 고정, 도구·컨텍스트에 투자*, Martinez는 *모델이 고정, 만드는 것은 하네스*. 저장 계층([[files-vs-database-agent-memory]])이 처음 하네스 층에 들어왔다. [[tech-bridge-tokenmaxxing-to-valuemaxxing|IBM 편]]은 토큰 경제 계보에 [[token-minimization-trap|토큰 최소화도 함정]]을 더했다. ⚠️ 세 번째 멤버 전용 `FJo7p9SPS9c`(*스펙 주도 개발 풀코스*, 61:33) — 첫 **비대담** 멤버 전용.)

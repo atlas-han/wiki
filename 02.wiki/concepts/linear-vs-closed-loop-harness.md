@@ -6,9 +6,9 @@ tags: [harness, agent-loop, determinism, tests, guardrails, adk, memory]
 aliases: [선형 하네스, 폐루프 하네스, closed loop harness, 하네스 설계의 세 결정]
 related: [agent-harness-design, harness-engineering, verifiable-goals, generator-evaluator-pattern, ralph-wiggum-method, context-resets-and-compaction, agent-memory, tools-and-context-over-harness, workflow-vs-agent]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # 선형 하네스 vs 폐루프 하네스
@@ -52,3 +52,23 @@ updated: 2026-09-23
 - [[tech-bridge-lopopolo-agent-harness]]
 - 관련: [[agent-harness-design]] · [[harness-engineering]] · [[workflow-vs-agent]] · [[verifiable-goals]] · [[generator-evaluator-pattern]] · [[ralph-wiggum-method]] · [[context-resets-and-compaction]] · [[agent-memory]]
 - 반대 입장: [[tools-and-context-over-harness]]
+
+## 루프 상한에 이름이 붙었다 — 인내심 예산 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+이 페이지가 ⚠️로 남긴 *"루프 상한·메모리 크기·비용을 어떻게 정하는지 없다"* 에 한 실무자의 값이 들어왔다. [[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]]):
+
+> 물론 한계는 있습니다. **왜냐하면 우리에게는 무한한 돈이 없기 때문입니다.** (…) **만약 [생성]이 단지 환각**이죠 (…) 차단값은 (…) **Frontier LLM**[에 따라 다릅니다]. (52:23~52:39)
+
+> [Grok 4.1 Fast reasoning — ⚠️ 미확정] (…) **8에서 12 사이의 값을 발견했습니다. 최대 [도구 호출] 횟수 포기하기 전에** (…) **모델의 정밀도와 정확도**[에 따라] (52:41~53:00)
+
+> 제가 정의하고 싶은 것은 (…) **[히스테리시스] 변수** (…) **[하네스]가 모델에게 가질 인내심** (53:17~53:25)
+
+| | 빌리의 폐루프 (09-23) | **Martinez (09-24)** |
+|---|---|---|
+| 상한 | 테스트 통과 또는 **~5회** | 도구 호출 **8~12회** |
+| 근거 | (데모) | **모델별 경험값** — 모델의 정확도에 따라 조정 |
+| 이름 | — | **"히스테리시스 변수" = 인내심** |
+
+⭐ **상한을 모델마다 튜닝하는 하이퍼파라미터로 둔다**는 것이 새 점이다. 그리고 데모가 그 필요를 보여 준다 — 같은 질문을 한 번은 **16단계**(47:30), 다시 **2단계**(53:03~53:08)에 풀었다. **분산이 크면 평균이 아니라 꼬리를 자를 상한이 필요하다.** 루프 안쪽은 반대 요구다 — *"실패에 강해서 루프를 절대 빠져나가지 않게"*(33:53~33:59), 데모에서도 오류를 감지하고 *"계속 시도"*(47:35~47:44). **안에서는 버티고, 바깥에서 예산으로 끊는다.**
+
+⚠️ 8~12는 **측정이 아니라 개인 경험**이다. ⚠️ *hysteresis* 는 공학에서 **이력 의존(되돌아올 때 다른 경로)** 을 뜻하는데 화자는 **상한값**의 뜻으로 쓴다 — 비표준 용법이고, 챕터 제목도 *"이력(Hysteresis) 변수"* 로 직역했다. 이 위키는 판정하지 않는다.

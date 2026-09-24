@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-15
-updated: 2026-09-20
+updated: 2026-09-24
 ---
 
 # AI Engineer
@@ -72,3 +72,15 @@ updated: 2026-09-20
 ⚠️ 운영 조건이 소스 안에서 보인다 — *"질의응답은 나중에 하라는 지시를 받았어요"*(04:13), *"빨간색 경고등이 울리는 걸 보니 초과 시간"*(16:58). **세션 시간이 짧고 엄격하다.**
 
 → [[tech-bridge-rlhf-assistance-vs-automation]] · [[diogo-almeida]] · [[typesafe-ai]]
+
+## 워크숍 형식 — Oracle의 메모리·하네스 세션 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])의 **오전 9시 워크숍**(*"지금이 오전 9시인 건 알아요"*, 00:07). 행사명은 직접 말하지 않지만 두 단서가 이 조직을 가리킨다 — 회의장 Wi-Fi *"**AI.gineer**의 Wi-Fi"*(39:37~39:39), 슬라이드는 *"[AI Engineer]에게 갈 것입니다. 그래서 만약 (…) 세션에"*(40:45~40:51, en-orig *"they will go into the AI engineer. So, if you go into the session"*). 그리고 *"Oracle 부스, 매일"*(56:09~56:15) → **다일(多日) 행사 + 스폰서 부스** — 이 페이지의 *스폰서 140곳 이상* 과 정합.
+
+| | 이 행사의 기존 소스 | **이 소스** |
+|---|---|---|
+| 형식 | 무대 발표·대담 | **워크숍**(강의 → GitHub Codespaces 실습 1시간 15분, 녹화 밖) |
+| 행사명 | 화자가 직접(09-15·09-18) | **Wi-Fi 이름·슬라이드 게시처로 간접** |
+| 운영 조건 | 짧고 엄격한 세션(09-20) | **긴 세션**(강의 후 1시간 15분 남음), 회의장 **Wi-Fi 장애**(39:32~40:23) |
+
+> ⚠️ **회차·연도·도시는 여전히 미확정.** 09-07 절차대로 다른 AI Engineer 소스와 **같은 회차로 묶지 않는다.** 이 행사에서 나온 이 위키의 **여섯 번째** 소스.

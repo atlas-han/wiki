@@ -3,11 +3,11 @@ title: Continual Learning
 type: concept
 category: theory
 tags: [learning, memory, catastrophic-forgetting, bayesian, agi]
-related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex]
+related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-05
-updated: 2026-09-09
+updated: 2026-09-24
 ---
 
 # Continual Learning
@@ -86,3 +86,19 @@ Ghahramani가 continual learning과 나란히 놓는 것이 둘 더 있다.
 - [[tech-bridge-uncertainty-mathematics]] — first-seen
 - [[zoubin-ghahramani]]
 - 관련: [[bayesian-inference]] · [[context-resets-and-compaction]] · [[in-context-learning]] · [[memex]]
+
+## 실무자의 세 층 — 가중치 · 표현 · 컨텍스트 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])가 지속 학습을 **어디를 바꾸는가**로 세 층으로 나눈다:
+
+> 방법은 있습니다 (…) **[가중치]** (…) **[표현(representation)] — [임베딩과 리랭킹]**, 그리고 **컨텍스트 창에서도** (…) **이것들은 세 가지 [지속 학습 기법]입니다.** (35:27~35:47)
+
+| 층 | 무엇을 바꾸나 | 화자의 평가 |
+|---|---|---|
+| 가중치 | 모델 자체 | *"99.9%의 경우 가중치는 변하지 않는다 — 수백만 달러나 GPU가 없으면"*(12:44~12:56) |
+| 표현 | 임베딩 모델 · 리랭커 | (워크숍 범위 밖) |
+| **컨텍스트·토큰 공간** | 창에 들어가는 것(메모리 · 스킬) | *"더 쉽고 더 저렴하다 (…) 가장 실현 가능한"*(35:47~36:09) |
+
+이 페이지가 [[tech-bridge-uncertainty-mathematics|Ghahramani]]에게서 받은 지속 학습은 **가중치 층의 과제**(파국적 망각, 베이즈 갱신)였고, 09-08의 Cursor *continual learning* 플러그인은 **이름만 같은 컨텍스트 층**이었다. 이 소스는 그 둘을 **한 표의 양 끝**으로 놓고, 실무는 **컨텍스트 층에서** 한다고 명시한다 — 구체적 수단은 **메모리 승격**(단기 파일 → 장기 DB)과 **스킬 승격**(증류 → 새 skill.md, 옛 버전 은퇴, 36:47~37:04 → [[skill-self-improvement]]).
+
+> ⚠️ 가중치 층을 두고 쓴 *"동결"* 이라는 표현(*frozen reasoning core*, 12:15~12:18)을 ko는 35:24에서 **"겨울왕국"** 으로 옮겼다. 화자는 동료와 **지속 학습 강좌**를 녹화할 예정이라고 한다(12:32~12:41) — 내용은 미공개.

@@ -787,5 +787,17 @@
   "02.wiki/entities/ryan-lopopolo.md": "LiUser",
   "02.wiki/entities/openai-daybreak.md": "LiBoxes",
   "02.wiki/entities/salesforce.md": "LiBuilding",
-  "02.wiki/entities/marc-benioff.md": "LiUser"
+  "02.wiki/entities/marc-benioff.md": "LiUser",
+  "01.raw/articles/2026-09-23_토탈 리콜 - 에이전트 메모리와 하네스 엔지니어링을 마스터해보세요.md": "LiNewspaper",
+  "01.raw/articles/2026-09-23_토큰맥싱과의 작별 - AI 사용량보다 에이전틱 성과가 중요한 이유.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-oracle-agent-memory-harness.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-tokenmaxxing-to-valuemaxxing.md": "LiVideo",
+  "02.wiki/concepts/files-vs-database-agent-memory.md": "LiDatabase",
+  "02.wiki/concepts/context-rot.md": "LiBookText",
+  "02.wiki/concepts/agent-umwelt.md": "LiBookText",
+  "02.wiki/concepts/toolbox-pattern.md": "LiPuzzle",
+  "02.wiki/concepts/value-maxing.md": "LiLightbulb",
+  "02.wiki/concepts/token-minimization-trap.md": "LiPuzzle",
+  "02.wiki/entities/ignacio-martinez.md": "LiUser",
+  "02.wiki/entities/oracle.md": "LiBuilding"
 }

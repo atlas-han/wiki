@@ -6,9 +6,9 @@ tags: [harness, tools, context, model-upgrade, scaffolding, sunk-cost]
 aliases: [하네스를 만들지 않는다, 도구와 컨텍스트라는 두 인터페이스, over-scaffolding]
 related: [harness-pruning, ride-the-optimization-trajectory, harness-engineering, agent-harness-design, shift-left-interventions, context-engineering, executable-standards, agent-skills]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # 하네스는 고정하고 도구와 컨텍스트에 투자하라
@@ -51,3 +51,14 @@ updated: 2026-09-23
 - 같은 전제, 다른 처방: [[harness-pruning]] · [[ride-the-optimization-trajectory]]
 - 계보: [[harness-engineering]] · [[agent-harness-design]] · [[context-engineering]] · [[shift-left-interventions]]
 - 긴장: [[executable-standards]] · [[linear-vs-closed-loop-harness]]
+
+## 반대 방향에서 온 같은 정의 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+하루 뒤 [[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])가 **같은 넓은 정의**(*에이전트 = 모델 + 하네스, 하네스 = 나머지 전부*)에서 **반대 결론**을 낸다 — 고정된 것은 **모델**이고(*"우리가 빌린 것"*, 07:40; *"99.9%의 경우 가중치는 변하지 않는다"*, 12:44~12:47), 우리가 만드는 것이 **하네스**다. 워크숍 전체가 하네스 직접 구축이다.
+
+| | 고정하는 것 | 투자하는 것 |
+|---|---|---|
+| Lopopolo (이 페이지) | **하네스**(Antigravity 같은 에이전트 제품) + 최신 모델 즉시 채택 | 도구 · 컨텍스트 |
+| Martinez (09-24) | **모델**(동결·임대, 교체 가능) | **하네스** = 스토리지 · 메모리 · 시맨틱 레이어 · 루프 · 컨텍스트 조립 |
+
+> ⚠️ Contradiction: 문장만 보면 정반대지만, **Martinez의 "하네스" 층 대부분이 Lopopolo의 "도구와 컨텍스트"에 해당한다.** Lopopolo가 고정하는 것은 **루프를 돌리는 제품**이고, Martinez도 루프는 *"매우 미니멀하게"*(33:18~33:21) 짠다. 둘 다 **모델에 무관하게 살아남는 투자처**(Lopopolo *"결코 낡지 않는"*, Martinez *"모델 부분은 교체 가능"*, 10:17~10:19)를 찾는다는 점에서는 같다. 이 위키는 **어휘의 충돌**로 읽되, 루프를 직접 짜는가에 대해서는 **실제로 갈린다**고 기록한다.

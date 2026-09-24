@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [vertical-agents, internal-agents, context, build-vs-buy, differentiation]
 aliases: [기성 수직 에이전트 vs 자체 에이전트, 회사 지식 해자]
-related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering]
+related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering, agent-umwelt]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-24
 ---
 
 # 회사 고유 지식이라는 해자
@@ -56,3 +56,9 @@ updated: 2026-09-19
 - [[tech-bridge-vercel-eve-filesystem-agent]] — first-seen
 - [[andrew-qu]] · [[vercel]] · [[eve-framework]]
 - 관련: [[company-brain]] · [[agent-knowledge-sourcing]] · [[file-system-agent]] · [[query-to-skill-distillation]] · [[knowledge-work-agent-gap]] · [[context-engineering]]
+
+## 2026-09-24 — 시맨틱 레이어에 지각론의 이름: 움벨트
+
+[[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])가 이 페이지의 *"회사 고유의 맥락 지식"* 을 **시맨틱 레이어 = 에이전트의 움벨트**로 부른다 — 동료 사이엔 말하지 않아도 아는 것, *"아이에게는 모든 것을 명시해야 하는"* 것: **tribal knowledge · institutional knowledge · 데이터가 어떻게 모델링되고 쿼리가 어떻게 실행되는가 · 메타데이터**(32:24~33:13). → [[agent-umwelt]]
+
+**같은 방향의 세 번째 소스**다(Vercel의 이 페이지, PromptQL의 [[company-brain]]에 이어). 이 소스가 더하는 것은 **넣지 않은 것의 성질** — 렌즈 밖의 것은 에이전트에게 *틀린 것이 아니라 존재하지 않는다*(⚠️ 위키의 확장). ⚠️ 세 소스 모두 **판매자**다.

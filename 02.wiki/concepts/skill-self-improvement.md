@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness]
 created: 2026-09-05
-updated: 2026-09-19
+updated: 2026-09-24
 ---
 
 # Skill Self-Improvement
@@ -93,3 +93,19 @@ updated: 2026-09-19
 
 - [[tech-bridge-six-agent-skills]] — first-seen
 - 관련: [[agent-skills]] · [[self-harness]] · [[harness-pruning]] · [[generator-evaluator-pattern]] · [[llm-coding-guidelines]]
+
+## 세 번째 경로 — 성공한 긴 세션을 증류하고 옛 버전을 은퇴 (2026-09-24 · [[tech-bridge-oracle-agent-memory-harness]])
+
+[[ignacio-martinez|Ignacio Martinez]]([[oracle|Oracle]])의 **스킬 승격(skill promotion)·워크플로 승격**:
+
+> [승격한다면] 예를 들어, [스킬]이라면 (…) **증류를 통해 원본보다 더 나은 [skill.md]** (…) **이전 버전은 [은퇴시키고], 새 버전으로 업데이트** (36:47~37:04)
+
+재료는 *"서너 시간 들여 하루 종일 성공시킨 워크플로"*(36:24~36:34), 결과는 **나의 어조·업무 방식·선호**가 들어간 스킬 — *"이 라이브러리가 마음에 든다, 이 DB 엔진이 버그가 적었다"*(37:04~37:29). 절차 기억의 예(프런트엔드 작업의 대화 전체 → 반복 가능한 워크플로, 24:33~24:54)도 같은 경로다.
+
+| 패턴 | 무엇에서 | 무엇을 고치는가 | 승격 게이트 |
+|---|---|---|---|
+| task-observer (이 페이지) | **실패** 관찰 | 규칙·스킬 | **사람** |
+| [[query-to-skill-distillation]] (Vercel) | **성공한 질의** 다수 | 새 스킬 추가 | 없음 |
+| **스킬 승격 (Oracle)** | **성공한 긴 세션** 하나 | **기존 스킬을 새 버전으로 교체** | ⚠️ **말하지 않음** |
+
+⭐ **버전 교체가 명시된 첫 사례** — 앞의 둘은 추가·수정이었고, 이것은 **옛 버전을 은퇴**시킨다. ⚠️ 그래서 이 페이지의 원칙(*한 번의 우연이 영구 규칙이 되면 오염*)이 가장 날카롭게 걸린다 — **세션 하나에서 증류한 스킬이 이전 버전을 덮어쓰는데, 회귀를 확인하는 [[skill-evals|eval]]이 없다.** ko는 *skill* 을 **"기술"**, *promote* 를 **"홍보"** 로 옮기고 **`skill.md` 라는 파일명을 지웠다**(36:49~36:56).

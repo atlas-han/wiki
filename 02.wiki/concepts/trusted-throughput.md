@@ -3,11 +3,11 @@ title: Trusted Throughput
 type: concept
 category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
-related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth]
+related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth, value-maxing, token-minimization-trap]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing]
 created: 2026-09-02
-updated: 2026-09-13
+updated: 2026-09-24
 ---
 
 # Trusted Throughput
@@ -204,3 +204,9 @@ Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacev
 - [[tech-bridge-trusted-throughput]] — [[mingsheng-hong]] ([[ironclad]]), 2026-09-01
 - [[tech-bridge-claude-platform-agent-era]] — Anthropic Claude Platform 팀, 2026-09-01
 - [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-altman-astra-hardware]] — 판매자 층의 토큰 (2026-09-06)
+
+## 대시보드는 조작된다 — IBM 컨설팅의 증언 (2026-09-24 · [[tech-bridge-tokenmaxxing-to-valuemaxxing]])
+
+> **[진짜] 지표[가] 부족[한 상황에서] 팀들은 [사용량 대시보드]를 만들었[고], 사람들[은 그것을 조작(game)하는 법을] 금방 익혔습니다.** 곧 **사용[량]이 가치의 [대리] 지표가 되었습니다.** — IBM 컨설팅 SVP *Neil Dar*(ASR 철자, 설명란 미확정) 인용 (01:32~01:46)
+
+이 페이지 원 소스의 Amazon 리더보드 사례가 **일반화된 증언**으로 다시 나왔다. 처방도 같다 — *"목표는 인공지능[을 덜] 사용하[는 것이 아니라], 인공지능을 더 효과적으로 활용하[는 것]"*(06:25~06:30) = 이 페이지의 *"'긴축'에 관한 것이 아니라 ROI"*. 새로 붙은 것은 둘이다: **긴축 쪽의 실패 메커니즘**([[token-minimization-trap]] — 컨텍스트 절감 → 재작업)과 **플랫폼 리더의 인센티브**(*"[볼륨 대신] 가치를 측정해야 하고, 효율성[에] 보상"*, 06:51~06:55). ⚠️ ko가 *dashboards* → **"패널"**, *game* → **"조종"**, *instead of* **누락**으로 이 문장들의 Goodhart 의미를 흐렸다. → [[value-maxing]]
