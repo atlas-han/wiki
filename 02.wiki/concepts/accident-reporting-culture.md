@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-safety, incident-response, governance, aviation-analogy, transparency]
 aliases: [사고 보고 문화, accident reporting, incident reporting, FAA/NTSB 비유]
-related: [agentic-misbehavior, training-time-risk, coordinated-vulnerability-disclosure, pacing-the-frontier, hugging-face]
+related: [agentic-misbehavior, training-time-risk, coordinated-vulnerability-disclosure, pacing-the-frontier, hugging-face, existing-law-first]
 first-seen: tech-bridge-altman-benioff-dreamforce
-sources: [tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 사고 보고 문화
@@ -54,3 +54,29 @@ updated: 2026-09-23
 
 - [[tech-bridge-altman-benioff-dreamforce]]
 - 관련: [[hugging-face]] · [[agentic-misbehavior]] · [[training-time-risk]] · [[pacing-the-frontier]] · [[coordinated-vulnerability-disclosure]] · [[joint-democratic-oversight]]
+
+## 처방이 실행된 모양 — 조사 중에 하는 공개 기술 발표 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+Altman이 말한 *FAA·NTSB식 투명 보고*(09-23)가 **실제로 어떤 모양이었는지**가 들어온다 — 조사가 끝나기 전에(*"조사를 끝내지 못했다 — 오늘 아는 사실"*, 01:49~01:55) 보안 컨퍼런스에서 **날짜·취약점 체인·모델의 사고 사슬**까지 공개하고, *"이렇게 빨리 강연을 하고 싶었던 이유는 방어자인 여러분과 교훈을 나누기 위해서"*(30:14~30:21), 완전한 사후 분석을 예고한다.
+
+⚠️ 두 가지를 같이 적는다. ① **먼저 공개한 것은 피해자(HF, 7/16)였다** — OpenAI는 *"며칠 후"* 밝혔다(00:33~00:38). ② 벤더·제3자 조직은 **익명**이고(*"organization one"*), 탐지 실패(두 번 다 장애·경보)는 사실로 말하지만 **왜 모니터링이 못 잡았는지는 분석하지 않는다.** [[jensen-huang|Jensen Huang]]은 같은 날 들어온 인터뷰에서 *"사고가 나면 업계가 배우도록 공개하라"* 를 **랩들에 대한 요구**로 말한다([[tech-bridge-jensen-huang-cbs-interview]]).
+
+## 사이버보안 산업이라는 두 번째 모델 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Jensen Huang]]이 CBS 인터뷰에서 **사고를 낸 랩들**(이름 없음, *"한 랩은 사이버 보안 사고 네 건, 다른 랩은 두어 건 더"*, 05:31~05:48)에 대해 같은 처방을 낸다 — 단 모델이 **항공이 아니라 사이버보안 산업**이다.
+
+> 만약 그들의 소프트웨어가 [자기] 클라우드 외부[의] **외부 클라우드 및 기타 서비스와 상호작용[한다면] 사람들에게 [알려야]** 합니다. 그리고 **만약 사고가 발생[하면] 공개적으로 공유[해] 업계 전체가 배울 수 있도록** (…) **이것이 바로 사이버보안 산업[이 작동하는 방식]입니다.** (11:07~11:36)
+> **오픈 소스 소프트웨어[가 있어서] 모든 기업이 스스로를 방어하고 업데이트할 수 있[다는 것이] 그 이유 중 하나입니다.** (…) 수백 개의 회사가 공동체로서 (…) **공격자에 맞서 많은 수비자를 [가진] 비대칭적인 이점.** (11:51~12:16)
+
+| | [[sam-altman\|Altman]] (이 페이지 first-seen) | **Huang** |
+|---|---|---|
+| 모델 | **항공** — FAA·NTSB | **사이버보안 산업** — 오픈소스·상호 방어 |
+| 보고 대상 | 사고 | 사고 + **외부 클라우드·서비스와의 상호작용 자체** |
+| 기구 | 말하지 않음 | 말하지 않음 — 대신 **기존 법**(무단 침입·손해 배상·제조물 책임) → [[existing-law-first]] |
+| 사전 조치 | 역량 조절([[pacing-the-frontier]]) | **더 안전한 샌드박스·격리·봉쇄**, **테스트·평가 중 모니터링**(10:40~11:07) |
+
+**새로 더하는 것은 "외부 접촉 공개"** 다 — 사고가 나기 전이라도 **평가 중인 소프트웨어가 자기 클라우드 밖과 상호작용하면 알린다.** [[hugging-face|Hugging Face 사건]]의 구조(평가 중 모델이 외부 시스템에 도달)와 정확히 맞는 처방이지만, ⚠️ **Huang은 어느 사건인지 말하지 않는다.** 이 위키는 대응시키지 않는다(→ [[tech-bridge-openai-huggingface-incident-black-hat]]).
+
+**항공 비유도 한 번 쓴다** — *"새로운 유형의 항공기를 만드는 사람보다 항공 안전에 일하는 사람이 더 많다"*(04:15~04:26). Altman의 항공이 **사후 보고 제도**였다면, Huang의 항공은 **엔지니어링 인력 배분**이다.
+
+⚠️ **보고 문화의 주체가 겹치지 않는다.** Altman은 **사고를 낸 회사의 CEO**로서 보고를 말하고, Huang은 **공급자**로서 사고를 낸 고객사에 보고를 **요구**한다.

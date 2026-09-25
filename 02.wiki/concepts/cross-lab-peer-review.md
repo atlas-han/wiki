@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ai-safety, evaluation, governance, regulation, china, peer-review, product-liability, self-regulation]
 aliases: [AI 피어 리뷰, 경쟁사가 숙제를 채점한다, 상호 테스트 하네스, cross-lab testing]
-related: [embedded-external-evaluators, regulatory-capture, default-legal-regulation, slowdown-within-lead-margin, race-to-the-top, ai-arms-limitation-lens, generator-evaluator-pattern, skill-evals, agentic-misbehavior, balance-of-power-safety]
+related: [embedded-external-evaluators, regulatory-capture, default-legal-regulation, slowdown-within-lead-margin, race-to-the-top, ai-arms-limitation-lens, generator-evaluator-pattern, skill-evals, agentic-misbehavior, balance-of-power-safety, existing-law-first]
 first-seen: tech-bridge-musk-shotwell-cross-lab-peer-review
-sources: [tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 랩 간 출시 전 상호 검증
@@ -98,3 +98,18 @@ updated: 2026-09-23
 - 관련: [[regulatory-capture]] · [[default-legal-regulation]] · [[ai-arms-limitation-lens]] · [[slowdown-within-lead-margin]] · [[race-to-the-top]] · [[balance-of-power-safety]]
 - 평가: [[generator-evaluator-pattern]] · [[skill-evals]]
 - 사건: [[hugging-face]] · [[agentic-misbehavior]]
+
+## 같은 강제 수단, 사전 검사 없이 — Huang의 "기존 법 먼저" (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Jensen Huang]]이 CBS 인터뷰에서 이 패턴의 **강제력 ②(제조물 책임)** 를 **단독으로** 내세운다:
+
+> **제조물 책임법이 있고, 그 제조물 책임법은 [이번] 사건[에 대해] 검증되어야 합니다.** (08:14~08:26)
+
+| | 이 패턴 (Musk) | [[existing-law-first]] (Huang) |
+|---|---|---|
+| 검사 | 경쟁사가 **출시 전** 테스트 | 없음 — **사고 후** |
+| 강제력 | 여론 + 제조물 책임 | 제조물 책임 + 무단 침입·손해 배상·SLA |
+| 새 기구·규제 | 없음 (*"규제는 래칫"*) | 없음 (*"무엇이 빠졌는지 알기 전까지"*) |
+| 랩에 대한 관찰 | *"연구소라는 용어가 재밌다 — 실제로는 영리 기업"* | *"실험실이라고 부르는 것만으로도 많은 것을 알 수 있다"* — **연구소 → 제품 회사** |
+
+**두 판매자가 같은 결론(새 규제 없이 제조물 책임으로)에 다른 길로 온다.** 차이는 이 패턴의 핵심인 **사전 검사**다 — Musk 안에서 경쟁사의 공개 경고는 사고 후 *"과실의 명백한 증거"* 가 되어 **책임법이 작동할 증거를 미리 만든다.** Huang 안에는 그 장치가 없고, 대신 **랩 내부의 엔지니어링 규율**(샌드박스·격리·평가 중 모니터링)과 **사고 공개**를 기대한다. ⚠️ 이 위키가 겹쳐 읽은 것이다.

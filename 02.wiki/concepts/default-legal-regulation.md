@@ -3,11 +3,11 @@ title: Default Legal (기본값 합법 — 규제의 기본값 문제)
 type: concept
 category: theory
 tags: [regulation, ai-policy, innovation, startups, eu, g20]
-related: [regulatory-capture, intelligence-as-infrastructure, agi-definition, ai-jobs-impact]
+related: [regulatory-capture, intelligence-as-infrastructure, agi-definition, ai-jobs-impact, existing-law-first]
 first-seen: tech-bridge-elon-musk-g20-ai-future
-sources: [tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-25
 ---
 
 # Default Legal (기본값 합법 — 규제의 기본값 문제)
@@ -68,3 +68,14 @@ Musk의 것만 **메타 층위**다. Huang의 *"실제 피해만 규제"* 와 Ng
 - [[tech-bridge-elon-musk-g20-ai-future]] — first-seen
 - [[elon-musk]] · [[regulatory-capture]]
 - 같은 회의의 다른 입장: [[tech-bridge-jensen-huang-g20-agi]] · [[tech-bridge-altman-g20-economic-boom]]
+
+## "무엇이 빠졌는지 알기 전까지" — 기존 법 쪽의 입증 책임 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Huang]]이 CBS 인터뷰에서 이 페이지의 **메타 층위**에 가까운 문장을 말한다:
+
+> **무엇이 빠졌는지 알기 전까지, 왜 법을 더 추가해야 할까요?** (09:00~09:06)
+> **가장 [명백한] 것부터 하세요. 실용적인 것부터 하고, 이론은 나중에 이야기합시다.** (08:30~08:36)
+
+이 페이지의 표에서 Huang 칸은 *"실제 피해만"* — **default legal을 전제하고 명시하지 않은 것**이었다. CBS 편은 그것을 **입증 책임의 배분**으로 말한다: 새 법을 원하는 쪽이 **기존 법(무단 침입·손해 배상·제조물 책임·SLA)으로 무엇이 안 되는지** 먼저 보여야 한다. → [[existing-law-first]]
+
+**차이도 있다.** Musk의 default legal은 **새것에 대한 기본값**(목록에 없으면 허용)이고, Huang은 **기존 법의 충분성**(이미 있는 것으로 먼저 다뤄 보라)이다. 전자는 규제의 **범위**를, 후자는 규제의 **순서**를 다룬다. ⚠️ Huang은 **기존 법이 소프트웨어·모델에 어떻게 적용되는지**(제품인가 서비스인가)를 말하지 않는다 — 이 페이지 유보의 *"기본값이 틀렸을 때의 비용"* 과 같은 자리의 빈칸이다.

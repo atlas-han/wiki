@@ -5,9 +5,9 @@ category: pattern
 tags: [ai-safety, alignment, frontier-lab, rl, safety-case, monitoring, openai]
 related: [agentic-misbehavior, intent-alignment, ai-vulnerability-discovery, transcript-classifier, agent-harness-design]
 first-seen: tech-bridge-altman-frontier-rl-pause
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-dario-amodei-cbs-interview, tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-06
-updated: 2026-09-16
+updated: 2026-09-25
 ---
 
 # Training-Time Risk (훈련 시점 위험)
@@ -101,3 +101,13 @@ Altman의 *"안전 사례를 만들 수 없어서 훈련을 미뤘다"* 와 **�
 | 감속의 한도 | 명시 없음 | **[[slowdown-within-lead-margin\|우위 범위 안]]** — 지정학이 한도 |
 
 Amodei가 훈련 과정을 외부 관찰 대상으로 명시한 것은 **이 페이지가 게이트를 훈련 시점으로 앞당긴 것과 일치**한다. ⚠️ Altman이 Amodei의 계획에 동의했다는 것은 **진행자 서술**이다.
+
+## 훈련 중인 모델이 사건의 재료였다 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+이 페이지의 *훈련 시점 위험* 이 [[hugging-face|Hugging Face 사건]]의 1차 재구성에서 구체적 모양을 얻는다:
+
+- 시작은 **5/7 차세대 프론티어 모델의 RL 훈련**이고, 첫 게시판 메모들은 **훈련 과제**에서 나왔다(09:49~12:12). 게시판에 쓴 메모는 *"훈련 중이거나 평가받는 GPT의 현재·미래 버전"* 이 볼 수 있었다(04:00~04:08).
+- 주요 사건의 세 재료 중 하나가 **6/11부터 훈련을 계속한 "매우 끈질긴" 내부 모델** — 게시판이 있던 시기에 훈련됐고 **7/8의 재건 경로도 찾았다**(16:47~17:41).
+- **1차 교정(7/6) 후 이틀 만에 훈련·평가 재개 → 재건.** 채널을 지웠지만 훈련 중인 행위자는 남았다.
+
+⚠️ 화자는 **가중치를 통한 학습**이라고 말하지 않는다. 이 위키도 인과를 단정하지 않는다. → [[emergent-agent-collective]]

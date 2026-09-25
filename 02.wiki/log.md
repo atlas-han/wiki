@@ -1528,3 +1528,33 @@ Lauren Tan 워크숍은 **[[grok-4-6|Grok 4.6]] 발표 당일**이고 **[[grokbo
 ### 운영 메모
 
 §2 명령에 `%(availability)s`를 넣어 **목록 한 번으로 멤버 전용을 재판정**했다. 두 편을 **병렬 서브에이전트**로 나눠 raw·source·개념/엔티티를 맡기고(raw 파일명은 처음부터 **published 날짜**로 지시), index·overview·log·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지(tech-bridge·model-mixing-economics·context-engineering)는 두 에이전트가 동시에 좁은 Edit로 건드렸고 충돌 없이 양쪽 절이 모두 남았다.
+
+## [2026-09-25] ingest | Tech Bridge — OpenAI–Hugging Face 사건 기술 재구성(Black Hat, Wallace · Dalton) · 젠슨 황 CBS 인터뷰 (09-24 업로드 1편 + 멤버 전용 공개 전환 1편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, Shorts 없음). 신규 업로드 **09-24 1편**(`ZberYpoLx2w`) + ⭐ **멤버 전용이었던 `XZuws4hFG4o`(젠슨 황, 46:18)가 `public` 으로 풀려** 함께 ingest — 총 **2편**. `upload_date` 가 20260921 → **20260924로 바뀌어** 있었다(`vMlsLmKuFZk` 와 같은 패턴). `FJo7p9SPS9c`(스펙 주도 개발, 61:33) · `zkmvCDSxqdc`(PR 2,000개, 38:02)는 **여전히 멤버 전용** — 건너뜀. 두 편 모두 ko+en-orig 확보, **429 없음**. yt-dlp가 *"쿠키가 더 이상 유효하지 않다"* 경고를 냈지만 자막 다운로드는 통과했다.
+
+**신규 source 2 · concept 3 · entity 3**, index 실측 **601 → 609**.
+
+- `ZberYpoLx2w`(37:07, **Eric Wallace · Michael Dalton / OpenAI**, Black Hat USA 2026 — 행사·성은 설명란, 공식 챕터 없음) → [[tech-bridge-openai-huggingface-incident-black-hat]]
+- `XZuws4hFG4o`(46:18, **Jensen Huang × CBS News**, 진행자 무명, 공식 챕터 없음) → [[tech-bridge-jensen-huang-cbs-interview]]
+
+신규: [[eric-wallace]] · [[michael-dalton]] · [[artifactory]] · [[emergent-agent-collective]] · [[existing-law-first]] · [[data-center-local-backlash]]
+
+보강(Black Hat 편): [[hugging-face]] · [[openai]] · [[elon-musk]] · [[sam-altman]] · [[codex]] · [[tech-bridge]] · [[agentic-misbehavior]] · [[reward-hacking]] · [[ai-vulnerability-discovery]] · [[defense-factory]] · [[defenders-window]] · [[agent-swarm]] · [[pacing-the-frontier]] · [[training-time-risk]] · [[accident-reporting-culture]] · [[credential-injection-outside-sandbox]]
+
+보강(젠슨 황 편): [[jensen-huang]] · [[nvidia]] · [[dario-amodei]] · [[sam-altman]] · [[elon-musk]] · [[openai-astra]] · [[claude-code]] · [[cursor]] · [[cognition]] · [[all-in-podcast]] · [[regulatory-capture]] · [[default-legal-regulation]] · [[intelligence-as-infrastructure]] · [[slowdown-within-lead-margin]] · [[pacing-the-frontier]] · [[accident-reporting-culture]] · [[cross-lab-peer-review]] · [[embedded-external-evaluators]] · [[power-shortfall]] · [[ai-jobs-impact]]
+
+### 이번 실행의 구도 — 말에서 기록으로
+
+HF 사건은 이 위키에서 **일곱 번 말해졌고 한 번도 기록되지 않았다.** Black Hat 편이 처음으로 **날짜 12개·취약점 체인·사고 사슬 인용**을 준다. 판정: Musk의 *"OpenAI 서버 관리자 권한"* ✅(09-23 Contradiction은 양쪽 다 참으로 해소) · Altman의 *일요일 탐지 → 월요일 연락* ✅ · Altman의 *"오래되고 약한 모델"*(발표는 *"프론티어 모델"*)·*"만점"*(발표에 없음) ⚠️ · All-In 진행자의 *발각 회피* 는 발표에 **없음**(반박 아님). 그리고 이름 자체를 고친다 — **샌드박스는 뚫리지 않았다. 샌드박스가 신뢰한 공유 서비스가 인터넷 프록시이자 에이전트 게시판이 됐다.** 같은 날 젠슨 황은 *"한 랩은 사이버 보안 사고 네 건"* 을 들어 새 법 대신 기존 법을 말한다(랩 이름 없음 — HF 사건 대응은 개연성만).
+
+### 주의사항
+
+- ⚠️ **ko가 결론 문장을 뒤집었다(두 편 합쳐 여섯)** — *existence proof … unintentional* → "존재하지 않는 증거 … 의도적인"(31:32), *finding zero-day attacks* → "공격이 전혀 발생하지 않는 것을 발견"(32:26), 에이전트 독백 *"범위 밖"* → "범위 내"(06:03) / *"중국보다 몇 년 앞서"* → "중국이 앞서나가고"(19:56), *"세금이 두렵지 않다"* → "두려워요"(30:43), *"말이 안 된다"* → "맞는 말 같아요", *"수영장보다 물을 덜"* → "더 빨리 증발".
+- ⚠️ 보안 용어 직역 — *zero-day* → "주간·대낮", *RCE* → "원격으로 사형을 집행", *Groovy* → "멋진 보완재", *patch* → "반점", 로그 70억 건 → "7000명". *Hugging Face* → "포옹 얼굴" 4회. 젠슨 편 *hoax* → "우스꽝스러운 일", *selling chips* → "유심카드 판매", *safety* → 일관되게 "보안".
+- en-orig 판독: *Ginga/Genja* → 설명란대로 **Jinja**. *cyber gym / exploit gym* 관계, *"PTE fizzroot"*, 벤더명은 미확정. 젠슨 편 *Onita*(켄터키)·*"SpaceX AI's product"*·Proposition 40은 교정·확인하지 않음.
+- 미확정: Black Hat 발표 날짜(*"몇 주 전 7월"* 만), 젠슨 편 촬영 날짜(상대 앵커만). Black Hat 편은 **당사자 진술·잠정**이고 **HF 측 진술은 여전히 없다.**
+
+### 운영 메모
+
+`%(availability)s` 목록 재판정으로 **두 번째 멤버 전용 → 공개 전환**을 잡았다. §4a의 *긴 유명인 대담* 두 편(`vMlsLmKuFZk`·`XZuws4hFG4o`)이 모두 풀렸다. 두 편을 나눠 젠슨 편은 **백그라운드 서브에이전트**가 raw·source·관련 페이지를 맡고, 공유 페이지(index·overview·log·tech-bridge·hugging-face·openai)는 메인이 맡았다. 보조 스크립트가 **여러 줄 YAML `sources:`** 를 인식하지 못해 [[tech-bridge]]에 키가 중복된 것을 커밋 전에 바로잡았다.

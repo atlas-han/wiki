@@ -799,5 +799,15 @@
   "02.wiki/concepts/value-maxing.md": "LiLightbulb",
   "02.wiki/concepts/token-minimization-trap.md": "LiPuzzle",
   "02.wiki/entities/ignacio-martinez.md": "LiUser",
-  "02.wiki/entities/oracle.md": "LiBuilding"
+  "02.wiki/entities/oracle.md": "LiBuilding",
+  "01.raw/articles/2026-09-24_AI에 대한 두려움, 엔비디아 CEO 젠슨 황의 진짜 생각은 무엇일까요.md": "LiNewspaper",
+  "01.raw/articles/2026-09-24_OpenAI 평가 에이전트 탈출 사건 - 자율 AI가 허깅페이스를 공격한 전말.md": "LiNewspaper",
+  "02.wiki/concepts/existing-law-first.md": "LiBookText",
+  "02.wiki/concepts/data-center-local-backlash.md": "LiBookText",
+  "02.wiki/concepts/emergent-agent-collective.md": "LiAlertTriangle",
+  "02.wiki/sources/tech-bridge-openai-huggingface-incident-black-hat.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-jensen-huang-cbs-interview.md": "LiVideo",
+  "02.wiki/entities/eric-wallace.md": "LiUser",
+  "02.wiki/entities/michael-dalton.md": "LiUser",
+  "02.wiki/entities/artifactory.md": "LiWrench"
 }

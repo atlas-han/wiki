@@ -3,11 +3,11 @@ title: Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
 type: concept
 category: theory
 tags: [infrastructure, tokens, energy, compute, data-center, sovereignty, nvidia, policy]
-related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation]
+related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation, data-center-local-backlash]
 first-seen: tech-bridge-jensen-huang-g20-agi
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-07
+updated: 2026-09-25
 ---
 
 # Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
@@ -107,3 +107,15 @@ Musk가 이 케이크의 **맨 아래 층에 결손**이 있다고 말한다 —
 - [[tech-bridge-jensen-huang-g20-agi]] — first-seen
 - 2026-09-07 추가: [[tech-bridge-altman-g20-economic-boom]] · [[tech-bridge-elon-musk-g20-ai-future]] · [[power-shortfall]] · [[intelligence-abundance]]
 - 관련: [[compute-constrained-growth]] · [[trusted-throughput]] · [[token-roles]] · [[agi-definition]] · [[nvidia]]
+
+## AI 공장 — "에너지 in, 지능 out", 그리고 흔들리는 층 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Huang]]이 CBS 인터뷰에서 이 페이지의 프레임을 **미국 시청자에게** 다시 말한다.
+
+- **5단 케이크 재등장, 그러나 목적이 바뀌었다** — G20에서는 *"각국은 모든 층을 할 필요 없다, 확산에 집중"* 이었다. CBS에서는 Amodei의 칩 수출 반대에 대한 **반론의 틀**이다: *"AI는 다섯 겹의 케이크 — **모델만이 아니다.** 에너지·칩·모델·데이터/애플리케이션 (…) **미국의 모든 층이 이겨야**"*(20:15~20:43). 즉 **칩 층의 수출이 모델 층의 안보와 따로 계산되어야 한다**는 논증으로 쓰인다. → [[slowdown-within-lead-margin]]
+- ⚠️ **열거가 흔들린다** — CBS 열거에는 G20의 **층 3(인프라)이 없고**, 화자가 *"여섯 층이라고 할 수도, 다섯이라고 할 수도"*(20:28~20:35)라 한다. 이 위키는 G20의 5층 표를 유지한다.
+- **AI 공장** — *"발전기 대신, 인터넷 데이터센터 대신, 이제 AI 공장이 필요 (…) 에너지가 들어가고, 데이터가 들어가고, 토큰이라는 숫자들이 지능으로 재구성 (…) 에너지 in, 지능 out"*(42:16~42:52). **토큰 = kWh** 의 대중판이다.
+- **세 번의 산업혁명** — 전기(보이지 않는 에너지) → 정보(인터넷 데이터센터) → AI(추론·도구 사용)(39:48~41:31). *"원자가 아니라 전자를 제조"*, *"숫자를 제조하는 게 이상하죠"*(44:27~46:16). ⚠️ ko가 마지막 문장을 **"숫자를 조작하는 거군요"** 로 옮겼다.
+- **규모** — *"100조 달러 경제 중 약 15조 달러가 더 많은 지능의 혜택"*, *"수조 달러 규모의 산업"*(43:30~43:59). ⚠️ G20의 *"100조 달러 산업"* 과 **같은 수가 다른 것**(산업 vs 세계 경제)을 가리킨다. 출처 없음.
+- **"AGI가 하는 일"** — [[openai-astra|Astra]]가 뒷마당 사진을 CAD 파일로(41:31~42:16). G20의 *"이미 거의 AGI"* 가 **데모 하나**로 구체화된다 → [[agi-definition]].
+- **층 1·3의 지역 비용** — 데이터센터 반발, *"물은 이제 신화"*, 전력망 기여(당위) → [[data-center-local-backlash]]. *"향후 5년은 틀림없이 화석 연료를 더"*(34:31~34:40) → [[power-shortfall]].

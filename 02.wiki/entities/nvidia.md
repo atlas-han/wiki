@@ -5,9 +5,9 @@ category: org
 tags: [gpu, chips, ai-infrastructure, data-center, physical-ai, hardware]
 links:
   - https://www.nvidia.com/
-sources: [tech-bridge-jensen-huang-g20-agi]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-25
 ---
 
 # NVIDIA
@@ -40,3 +40,19 @@ GPU와 AI 인프라를 만드는 회사. 본 위키에는 CEO [[jensen-huang|Jen
 - [[tech-bridge-jensen-huang-g20-agi]] · [[jensen-huang]]
 - 관련: [[intelligence-as-infrastructure]] · [[compute-constrained-growth]] · [[brain-hands-decoupling]]
 - 외부: <https://www.nvidia.com/>
+
+## CEO의 CBS 인터뷰 — Vera Rubin, "미국 먼저", 데이터센터 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+> ⚠️ 여전히 **CEO의 방송 발언**이고 제품 스펙·재무의 1차 소스가 아니다.
+
+- **제품 세대: Vera Rubin** — *"우리는 지금 Vera Rubin이라고 부르는 세대에 있다. Vera Rubin이 대량 생산으로 출하되고 있다"*(19:47~19:56). 이 위키의 **첫 NVIDIA 제품명**이다. 스펙은 없다.
+- ⭐ **"이 기술로 중국보다 몇 년 앞서 있다"**(19:56~19:59) — 측정 기준 없음. ⚠️ **ko가 "중국은 이 기술 분야에서 앞서나가고 있다"로 뒤집었다.**
+- **공급 정책: 미국 먼저** — *"미국이 그렇게 결정했고 전적으로 지지한다. NVIDIA의 최고 기술을 미국 기업에 먼저 제공"*, *"Dario와 Sam, 미국의 랩·산업체에 제공되고 있다"*(19:40~20:10). 동시에 *"중국에 모든 미국 제품을 금지하는 데 전적으로 반대"*, *"모든 칩 회사는 세계로 가서 경쟁해야"*(21:38~22:09). → [[slowdown-within-lead-margin]]
+- **5단 케이크에서의 자리** — *"칩 분야에서 세계를 선도하고 싶다"*(20:43~20:46). → [[intelligence-as-infrastructure]]
+- **AI 공장** — *"이 공장들 안에는 NVIDIA가 만드는 컴퓨터가 많다"*(42:52~42:59). *"NVIDIA는 많은 데이터센터에 동력을 공급한다"* 는 **진행자**의 말(32:03~32:06). → [[data-center-local-backlash]]
+- **데이터센터 설계** — *"냉각 시스템은 이제 물을 재순환, 온수로 데이터센터를 식힌다"*(33:31~33:44). ⚠️ NVIDIA 설계인지 업계 일반인지 화자가 가르지 않는다.
+- **사내 AI 사용** — *"OpenAI의 최신 Astra (…) 어디에서나 사용"*, [Claude Code] · [Cursor] · [Cognition](01:09~01:21). G20의 *"Anthropic, OpenAI, Cursor"* 목록의 갱신.
+- **기원** — *"게임용 칩 회사로 시작"*, *"30년 전 데니스"* 는 **진행자**의 말(37:44~37:52).
+- 진행자: *"세계에서 가장 가치 있는 회사"*(12:48~12:52) — ⚠️ 진행자 진술.
+
+→ [[jensen-huang]] · [[tech-bridge-jensen-huang-cbs-interview]]

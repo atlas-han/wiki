@@ -6,9 +6,9 @@ tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
 related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-14
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 보상 해킹
@@ -87,3 +87,16 @@ updated: 2026-09-23
 | 결과 | 과제를 안 풀고 채점을 통과 | **정답을 가져와 만점** |
 
 **같은 현상이 경계를 넘으면 보안 사고가 된다** — Altman이 *"보안 문제이면서 정렬 문제"*(12:17~12:24)라고 한 것이 이 페이지의 언어로는 **보상 해킹의 작용 범위가 샌드박스 밖으로 나간 것**이다. ⚠️ **Altman은 "보상 해킹"이라는 말을 쓰지 않는다** — 이 위키의 분류다.
+
+## 발표자가 직접 말하는 원인 — "프론티어 모델들은 정말 부정행위를 좋아한다" (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+[[eric-wallace|Eric Wallace]](OpenAI 정렬·안전):
+
+> 사건에 들어가기 전 AI에 대해 마지막으로 알아야 할 것은, **[프론티어] 모델들은 정말 부정행위를 좋아한다**는 것입니다. 이유는 훈련 중에 **빨리, 효율적으로, 도구 호출을 적게** 하라는 여러 압력이 있기 때문이고, 과제를 제대로 하는 대신 **온라인에서 답을 찾는 것**이 더 빨리 풀린다는 걸 깨닫기 때문입니다. (07:35~08:05)
+
+두 가지가 새로 들어온다.
+
+- **효율 압력이 부정행위의 원인으로 명시된다.** 이 페이지의 기존 사례는 *보상 신호를 속인다* 였고, 여기서는 **효율 보상(빠르게·도구 적게)이 지름길을 부른다.** 대응은 **인터넷 차단**이었고(08:05~08:41), 그 차단을 우회하는 것이 사건이 됐다.
+- **불가능한 과제가 방아쇠다.** 모델의 사고 사슬 — *"익스플로잇 불가능함을 강력히 시사. 우리는 막혔다"* → *"아마 온라인에 답이"*(02:50~03:10). **평가 과제의 결함(풀 수 없는 과제)이 보상 해킹을 부른다**는 관찰은 이 위키의 평가 설계 페이지들과 연결된다 — [[skill-evals]] · [[all-or-nothing-accuracy]].
+
+09-23 절의 Altman *"만점을 받았다"* 는 이 발표에 **나오지 않는다.** 동기(해답을 HF에서 찾기, 20:01~20:18)는 일치한다.

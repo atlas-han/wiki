@@ -67,8 +67,10 @@ sources:
   - tech-bridge-lopopolo-agent-harness
   - tech-bridge-tokenmaxxing-to-valuemaxxing
   - tech-bridge-oracle-agent-memory-harness
+  - tech-bridge-openai-huggingface-incident-black-hat
+  - tech-bridge-jensen-huang-cbs-interview
 created: 2026-06-03
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # Tech Bridge
@@ -676,3 +678,32 @@ updated: 2026-09-24
 
 - **워크숍도 올린다** — 발표·대담·제작 에피소드에 이어 **실습 세션**. 녹화가 세션 중간에 끝나 **약속된 실험 결과(카운터 경주)가 영상에 없다** — 워크숍 형식의 구조적 사각이다.
 - **녹화 시점이 업로드보다 꽤 이를 수 있다** — 데모 모델이 이 위키가 09-01에 받은 [[grok-4-6]]보다 이전 세대(Grok 4.1)로 읽힌다. ⚠️ 가능성만 표시.
+
+## 2026-09-24 업로드 — OpenAI의 HF 사건 기술 재구성, Black Hat (2026-09-25 ingest)
+
+[[tech-bridge-openai-huggingface-incident-black-hat|OpenAI 평가 에이전트 탈출 사건]](`ZberYpoLx2w`, 37:07, 공식 챕터 없음) — [[eric-wallace|Eric Wallace]] · [[michael-dalton|Michael Dalton]] / [[openai|OpenAI]] ([[emergent-agent-collective]] · [[artifactory]] · [[defense-factory]])
+
+**이 채널이 09-06부터 여러 대담으로 실어 온 [[hugging-face|HF 사건]]의 1차 기술 발표를 올렸다.** 대담 속 *말* 일곱 개를 이 한 편이 판정한다(Musk의 *OpenAI 서버 관리자* ✅, Altman의 주말 타임라인 ✅, Altman의 *오래된 약한 모델*·*만점* ⚠️).
+
+### 자막 관찰 — 결론 문장 두 개가 뒤집혔다
+
+- **⚠️ 발표의 결론이 반대로 읽힌다** — *existence proof … unintentional* → **"존재하지 않는 증거 … 의도적인 것"**(31:32), *finding zero-day attacks* → **"공격이 전혀 발생하지 않는 것을 발견"**(32:26). 에이전트 독백 *"범위 밖"* → **"범위 내"**(06:03).
+- **⚠️ 보안 용어가 일상어로** — *zero-day* → **"주간·대낮"**(4회), *RCE* → **"원격으로 사형을 집행"**, *Groovy plugin* → **"멋진 보완재"**, *patch* → **"반점"**, *vuln* → **"금고"**, *red teaming* → **"적색"**, *server-side* → **"섬기는 사람"**, *least privilege* → **"특권 리스"**.
+- **⚠️ 수치가 사람이 됐다** — 로그 *7 billion* → **"7000명"**(01:40).
+- **⚠️ 회사명** — *Hugging Face* → **"포옹 얼굴·껴안는 얼굴"** 4회(옳은 자리 3회), *postmortem* → **"포스트모던"**, en-orig ASR *"open eye"* 를 받아 **"오픈아이(Open Eye)"**(29:37). *agent* → **"요원"** 다수(09-23 IBM 편 재발), *frontier* → **"국경"**(09-06 기록 재발).
+- **en-orig도 흔들린다** — *Jinja* → *Ginga/Genja*(설명란이 교정), *GPU* → *GP*, *IAM* → *IM*, *vulns* → *vans*.
+
+### 이번 편에서 채널에 대해 새로 알게 된 것
+
+- **보안 컨퍼런스 발표도 올린다** — 행사명(Black Hat)·발표자 성은 **설명란에만**(설명란 의존 **열 번 연속**). 슬라이드 의존 발표라 **화면 속 인용이 영상 자막에 없다.**
+- 설명란이 **발표 세션 URL**을 달았다 — 이 위키가 원 행사를 특정할 수 있었던 유일한 근거다.
+
+## 멤버 전용 → 공개 전환 두 번째 — `XZuws4hFG4o` 젠슨 황 CBS 인터뷰 (2026-09-25 ingest)
+
+[[tech-bridge-jensen-huang-cbs-interview|AI에 대한 두려움, 젠슨 황의 진짜 생각]](`XZuws4hFG4o`, 46:18, 공식 챕터 없음) — [[jensen-huang|Jensen Huang]] / CBS News(진행자 무명) ([[existing-law-first]] · [[data-center-local-backlash]])
+
+- **멤버 전용이 풀린 두 번째 사례.** 09-21 목록에 오르고 09-22 `subscriber_only` 판정 → 09-25 `public`, **`upload_date` 20260921 → 20260924로 바뀌었다**(`vMlsLmKuFZk`와 같은 패턴). §4a의 *긴 유명인 대담* 패턴 두 편이 모두 공개로 풀렸다.
+- **같은 CBS 시리즈의 두 번째 CEO** — [[tech-bridge-dario-amodei-cbs-interview|Amodei 편]](09-15)과 칩 수출·공포의 지위·처방에서 정면으로 갈린다.
+- **⚠️ ko가 네 문장을 뒤집었다** — *"중국보다 몇 년 앞서"* → **"중국이 앞서나가고"**, *"세금이 두렵지 않다"* → **"두려워요"**, *"말이 안 된다"* → **"맞는 말 같아요"**, *"수영장보다 물을 덜"* → **"더 빨리 증발"**. *hoax* → **"우스꽝스러운 일"**, *selling chips* → **"유심카드 판매"**, *race* → **"인종"**, *safety* → 일관되게 **"보안"**.
+- ✅ 03:48 en-orig *"now grounded"* 를 ko가 *"근거하지 않는다"* 로 **옳게** 적었다 — ko가 en-orig보다 옳은 두 번째 사례.
+- 설명란이 **피지컬 AI·로보틱스**를 주요 내용으로 적었지만 **영상에 그 대목이 없다** — 설명란 요약이 내용과 어긋난 첫 관측.

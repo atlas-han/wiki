@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-safety, geopolitics, china, chips, export, security, pace]
 aliases: [여유 안의 감속, 멈추지 말고 늦추자, envelope]
-related: [ai-arms-limitation-lens, training-time-risk, swiss-cheese-defense-in-depth, embedded-external-evaluators, power-shortfall, regulatory-capture, race-to-the-top]
+related: [ai-arms-limitation-lens, training-time-risk, swiss-cheese-defense-in-depth, embedded-external-evaluators, power-shortfall, regulatory-capture, race-to-the-top, intelligence-as-infrastructure]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-16
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 우위 범위 안의 감속
@@ -64,3 +64,23 @@ updated: 2026-09-23
 ## 기업 간에는 여유가 없다 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 
 [[elon-musk|Musk]]: 선두 두 회사(Anthropic·OpenAI)의 모델이 *"기능 면에서 상당히 유사"*(31:38~31:46)하므로 **어느 쪽도 상대에게 선두를 넘기지 않고는 속도를 늦추기 어렵다**(en-orig 31:46~31:53; ⚠️ ko는 *"속도가 많이 느려진다"* 로 오역). 이 페이지의 여유는 **미·중 사이**의 우위였다. **미국 선두 기업 사이에는 그 여유가 없다**는 진술이고, 모순이 아니라 **다른 축의 격차**다 — 그러나 둘을 겹치면 감속은 **기업 간 합의 없이는 일어나지 않는다**(→ [[race-to-the-top]]). 머스크는 중국에 대해서도 **감속 요청이 아닌** 안을 낸다 — *"중국에 잠시 중단을 요청 (…) 중국은 이미 그럴 의사가 없다고 밝혔습니다"*(27:27~27:34, 진행자 측) → [[cross-lab-peer-review]]. ⚠️ 이 위키가 겹쳐 읽은 것이다.
+
+## ⚠️ 칩 판매자의 반론 — 그리고 "우위의 크기"에 대한 첫 수치 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+CBS 진행자가 이 페이지의 전략을 인용한다 — Amodei: *"중국에 강력한 AI 칩이나 반도체 제조 장비를 팔지 말라"*(19:09~19:21). [[jensen-huang|Jensen Huang]]의 답:
+
+> 미국[은] 그렇게 결정했고, 저는 그 결정을 전적으로 지지합니다. **저희는 NVIDIA의 최고 기술을 미국 기업에 먼저 제공합니다.** (…) Vera Rubin이 대량 생산으로 출하되고 있습니다. **[저희는 이 기술로 중국보다 몇 년 앞서 있습니다.]** (19:37~19:59)
+> **[우리는] 중국에 모든 미국 제품을 금지해야 한다는 [데] 전적으로 동의하지 않[습니다].** (…) 모든 칩 회사는 세계로 가서 (…) 경쟁해야 합니다. (…) **[우리 시장은 그가 내줄 수 있는 것이 아닙니다].** (21:41~22:28)
+
+**이 페이지의 유보 첫 줄 — *"우위의 크기가 소스에 없다"* — 에 대한 첫 진술**이 **"몇 년"** 이다. 그러나:
+
+- **칩을 파는 쪽이 말한 칩 격차**다. 무엇으로 쟀는지(성능·양산·생태계) 없다.
+- **이 페이지의 논리로는 "몇 년 앞서 있다"가 감속 여유의 근거**가 된다. Huang은 같은 수치를 **수출해도 된다는 근거**로 쓴다. **같은 수치, 반대 결론.**
+- Huang의 *"미국 먼저"* 는 **순서**(미국 고객 우선 공급)이지 **금지**가 아니다. 이 페이지의 첫 지렛대(칩 판매 금지 → 상대의 컴퓨팅 상한)와 **메커니즘이 다르다.**
+- 그의 틀은 **5단 케이크** — *"AI는 모델만이 아니다"*(20:15~20:22). 모델 층의 안보 논리를 **칩 층의 시장 논리**와 분리한다. → [[intelligence-as-infrastructure]]
+
+> ⚠️ **Contradiction:** Amodei의 *칩 = 시간을 사는 지렛대* vs Huang의 *칩 = 세계 시장에서 경쟁할 제품*. 그리고 Huang이 반박한 *"모든 미국 제품 금지"* 는 인용된 Amodei 문장(**강력한** AI 칩·제조 장비)보다 넓다 — **두 사람이 같은 범위를 다투고 있는지부터 불확실하다.** 해소하지 않는다.
+
+⚠️ **ko 자막이 이 절의 핵심 문장을 뒤집었다** — *"중국보다 몇 년 앞서 있다"* → **"중국은 이 기술 분야에서 앞서나가고 있다"**(19:56~19:59). ko만 읽으면 **우위가 반대 방향**이다. 그리고 *"not his to cede"* 에서 **his(=Amodei)가 사라졌다**(22:24~22:28).
+
+같은 인터뷰의 속도 문장 — *"누구와도 상관없이 최대한 빨리"*(16:01~16:07), 그러나 Sacks에게 귀속한 *"해야 할 것보다 빠르지 않게"*(18:15~18:30) → [[pacing-the-frontier]].

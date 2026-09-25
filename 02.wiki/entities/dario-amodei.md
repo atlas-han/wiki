@@ -6,9 +6,9 @@ tags: [anthropic, ceo, ai-safety, regulation, geopolitics]
 aliases: [다리오 아모데이]
 links:
   - https://www.anthropic.com
-sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-16
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # Dario Amodei
@@ -79,3 +79,21 @@ updated: 2026-09-23
 > 제가 **'그가 옳다'라고 말한 의미는 인공지능의 위험성이 현재 매우 심각하다는 것**입니다. (06:57~07:03)
 
 **진단(위험의 크기)에 대한 동의**로 답하고, 처방은 같은 대담에서 **다른 안**([[cross-lab-peer-review]] — 중립 기관이 아닌 **경쟁사**가 검사)을 낸다 → [[embedded-external-evaluators]]와 대비. ⚠️ CBS 편의 "동의"와 이 "이번 주말"이 같은 일인지 확정할 수 없다. ⚠️ ko가 진행자의 질문 후반을 **"그는 규제가 (…) 모두를 해결한다는 점을 정확하게 설명했습니다"** 라는 단정문으로 옮겨 **규제 해법 지지로 읽히게** 만들었다.
+
+## 같은 CBS 시리즈의 정면 반론 — Jensen Huang (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+CBS 계열 인터뷰에서 진행자가 **이 페이지의 발언을 인용해** [[jensen-huang|Jensen Huang]]에게 반론을 묻는다. Amodei 본인의 새 발언은 없다 — **다른 CEO가 Amodei의 입장을 어떻게 받는가**의 기록이다.
+
+| 축 | Amodei (09-15 CBS) | Huang (이 소스) |
+|---|---|---|
+| **칩 수출** | 권위주의 국가에 칩을 팔지 않는다 (진행자 인용: *"중국에 강력한 AI 칩이나 반도체 제조 장비를 팔지 말라"*, 19:09~19:21) | **미국에 먼저**, *"Vera Rubin — 중국보다 몇 년 앞서 있다"*, *"중국에 **모든 미국 제품**을 금지하는 데 전적으로 반대"*, ***"우리 시장은 그가 내줄 것이 아니다"***(19:21~22:28) |
+| **처방** | [[embedded-external-evaluators\|상주 외부 평가자]] → 업계 합의 → 정부 | **새 법 전에 기존 법** — *"무엇이 빠졌는지 알기 전까지"* → [[existing-law-first]] |
+| **규제 요구의 의미** | 규제 대상이 스스로 공개·평가를 요구 | ***"행간을 읽으면 그들은 기존 법에서 면제되기를 원한다"***(06:33~06:48) |
+| **공포** | *"업계가 너무 오래 위험이 없다고 거짓말했다"* | *"드라마, 무책임, 과학에 근거하지 않음"*, 동기는 *"정치적이거나 관심 끌기"* |
+| **확률** | 형식 거부 — *"제대로 지으면 매우 낮고 잘못 지으면 매우 높다"* | *"2030년 세상의 종말 가능성 0%"* |
+
+> ⚠️ **Contradiction:** 칩 수출·처방·공포의 지위 세 축에서 정면으로 갈린다. 해소하지 않는다. 두 가지를 표시한다 — ① Huang이 반박한 *"모든 미국 제품 금지"* 는 진행자가 인용한 Amodei 문장(**강력한** AI 칩 + 제조 장비)보다 **넓다.** ② Huang의 *0%* 는 **"2030년 종말"** 이라는 특정 명제에 대한 것이고 Amodei는 그런 명제를 말하지 않았다 — **확률 축은 충돌이 아니라 엇갈림**이다.
+
+Huang은 Amodei를 **이름으로 공격하지 않는다** — *"두 랩 모두"*, *"젊은, 처음 CEO가 된 사람들"*, *"엔지니어들은 충분히 이해한다"*, *"그들을 믿는다"*(09:30~10:24). 그리고 *"Vera Rubin이 Dario와 Sam에게 제공되고 있다"*(20:02~20:05) — **Anthropic은 NVIDIA의 고객**이다. ⚠️ 이해관계를 함께 읽는다.
+
+→ [[tech-bridge-jensen-huang-cbs-interview]] · [[jensen-huang]]

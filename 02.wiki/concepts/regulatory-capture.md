@@ -3,11 +3,11 @@ title: Regulatory Capture
 type: concept
 category: theory
 tags: [regulation, ai-policy, competition]
-related: [cognitive-offloading, intent-alignment, ai-privilege, training-time-risk, agi-definition, default-legal-regulation, intelligence-abundance]
+related: [cognitive-offloading, intent-alignment, ai-privilege, training-time-risk, agi-definition, default-legal-regulation, intelligence-abundance, existing-law-first]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-08-31
-updated: 2026-09-16
+updated: 2026-09-25
 ---
 
 # Regulatory Capture
@@ -92,3 +92,29 @@ Huang의 *"실제 피해"* 처방은 Ng의 *"구체 해악만"* 과 같은 형�
 [[bill-gates]]의 *"외부 중재자·라이선스"* 에 가장 가까운 업계 응답이다. 단 Gates가 *"중국 논증은 빈 기준을 들고 가는 한 성립하지 않는다"* 고 한 반면 Amodei에게 중국은 *"가장 어려운 딜레마"* 다.
 
 여섯 입장을 해소하지 않는다.
+
+## 일곱 번째 칸 — "규제 요구는 면제 요구다" (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Huang]]의 칸(09-06, G20)이 CBS 인터뷰에서 **새 독법 하나**를 얻는다. 여섯 번째 칸([[dario-amodei|Amodei]]: *규제 대상이 규제를 요구한다*)을 **정반대로 읽는** 진술이다.
+
+| 화자 | 규제에 대한 입장 | 자율 판단 | 공포에 대한 태도 |
+|---|---|---|---|
+| [[jensen-huang]] ([[tech-bridge-jensen-huang-cbs-interview]]) | **새 법 전에 기존 법** — 무단 침입·손해 배상·**제조물 책임**·SLA. *"무엇이 빠졌는지 알기 전까지 왜 법을 더하나"* → [[existing-law-first]] | 신뢰 — *"옳은 일을 하도록 완벽하게 인센티브를 받는다"*, **단 인센티브의 원천은 법적 책임** | **서사는 거짓, 우려는 옳다.** *"드라마, 무책임, 과학에 근거하지 않음"*, 공포 조장의 동기는 *"정치적이거나 관심 끌기"* |
+
+> 행간의 의미를 읽어보세요. **사실 그들은 더 많은 법률을 요구하는 게 아닙니다. 그들은 기존 법률의 적용을 받지 않[기를 원하고] 있습니다.** (06:33~06:48)
+
+### 포획의 세 번째 경로
+
+이 페이지는 포획의 경로를 둘 가지고 있었다 — [[andrew-ng|Ng]]의 **공포 마케팅**(경쟁자를 누른다), [[elon-musk|Musk]]의 **지도부 접근권**. Huang이 세 번째를 댄다: **새 규제 체계가 기존의 일반 책임법을 대체하면서 책임이 줄어든다.** 앞의 둘은 *경쟁자에게 비용을 지우는* 포획이고, 이것은 *자기 책임을 덜어 내는* 포획이다.
+
+> ⚠️ **Contradiction:** 여섯 번째 칸(Amodei)과 일곱 번째 칸(Huang)이 **같은 행위를 반대로 읽는다.** Amodei: 규제 대상이 공개 의무·외부 평가를 **스스로 요구**하는 것은 책임의 표시. Huang: 그것은 **기존 책임에서 벗어나려는** 것. 그리고 **공포의 지위**에서도 — Amodei *"업계가 위험을 숨겼다"* / Huang *"위험을 과장하는 것이 무책임"*. **Ng–Amodei 충돌에 Huang이 Ng 쪽으로 합류**한다. 이 위키는 해소하지 않는다.
+
+### 이 표의 규칙을 이 칸에 적용하면
+
+화자는 **칩 판매자**다 — 새 규제가 늦을수록 판매에 유리하다. 진행자가 그것을 직접 물었고(12:46~13:05), 답은 *"우리의 성공은 안전한 배포에 달렸다"* 였다. **"면제 요구" 독법에는 어떤 법안·조항·요청도 인용되지 않는다.** Musk 칸(*완화를 원하는 쪽*)과 Amodei 칸(*규제를 요구하는 쪽*)에 적용했던 규칙을 **여기에도 그대로** 적용한다. ⚠️ 표시만 한다.
+
+### 대통령과의 거리
+
+진행자가 트럼프의 *"AI 위험 공포는 hoax"* 를 묻자 Huang은 **규정은 피하고**(*"대신 말하고 싶지 않다"*) **결론(2030년 종말 0%)과 처방(기존 규제 적용)에는 동의**한다(23:12~24:59). ⚠️ 대통령의 원 발화는 소스에 없다. ⚠️ ko가 *hoax* 를 **"우스꽝스러운 일"** 로 누그러뜨렸다.
+
+일곱 입장을 해소하지 않는다.

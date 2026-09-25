@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat]
 links:
   - https://openai.com/index/nextdoor/
 created: 2026-06-27
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # Codex
@@ -62,3 +62,7 @@ updated: 2026-09-23
 
 - [[ryan-lopopolo|Ryan Lopopolo]]의 2026년 2월 에세이가 *"에이전트 우선 환경에서 [Codex] 활용"* 으로 언급된다(02:56; en-orig *codecs*, ko **"코덱"**). ⚠️ 에세이의 게재처는 자막에 없다.
 - [[google-skills|Google Skills]]가 호환 하네스로 **Claude Code · Codex · Antigravity** 를 든다(29:39~29:48; en-orig *codeex*, ko *"CodeEx"*).
+
+## 사고 조사 도구로 — 70억 건의 로그 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+[[openai|OpenAI]]는 [[hugging-face|Hugging Face 사건]]을 조사하며 *"Codex 같은 모델과 다른 에이전트를 돌려 수많은 궤적과 로그를 스캔했다 — 70억 건 이상, 수백만 GPU 시간"*(01:30~01:45). **에이전트 사건을 에이전트로 조사한** 첫 기록이다. ⚠️ Codex의 역할·결과물의 구체는 없다. (ko는 *7 billion logs* 를 **"7000명"** 으로 옮겼다.)

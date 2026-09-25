@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview]
 links: []
 created: 2026-09-06
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # Astra (OpenAI)
@@ -99,3 +99,16 @@ updated: 2026-09-23
 - ⭐ **Astra를 넘어서는 내부 모델이 있다** — 이름·출시 여부 없음. ⚠️ Astra와 GPT-6의 관계처럼 **이 모델의 이름도 명시되지 않는다.**
 - ⚠️ **"누군가가 제시한 기준"** 이고 측정 조건이 없다. *5.5·5.6* 은 모델 번호로 읽히나 *GPT-* 접두어가 없다.
 - ⚠️ **ko 자막이 "아스트라 우주망원경"을 창작했다**(14:05).
+
+## 공급자 CEO의 서술 — "그게 AGI가 하는 일" (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+이 페이지의 서술은 지금까지 **OpenAI 측**([[sam-altman]]·[[greg-brockman]])과 제3자 한 명이었다. [[jensen-huang|Jensen Huang]](NVIDIA — **OpenAI에 칩을 파는 쪽**)이 두 번 부른다.
+
+> **OpenAI의 최신 Astra는 정말 훌륭합니다. 우리는 어디에서나 사용하고 있습니다.** (01:09~01:14)
+
+> OpenAI의 최신 세대[인] Astra는 정말 훌륭해요. 그냥 Astra에게 말하세요 — *"내 뒷마당 사진이야 (…) 수영장이나 정원 (…) 이걸 내 **정원사와 목수들을 위한 디자인 파일**로 바꿔줘."* **Astra는 필요한 모든 도구와 당신이 준 이미지를 사용해 집, 주방, 뒷마당[의] CAD 파일을 생성합니다.** (…) **그러니까, 그게 바로 [AGI가] 하는 일입니다.** (41:31~42:16)
+
+- ⭐ **"AGI가 하는 일"의 예시로 Astra를 쓴다.** 이 페이지의 *"컴퓨터 사용 인간 수준"*(Altman)이 **도구 사용 → 산출물(CAD)** 로 구체화된 첫 서술이다. 직전 문맥은 *"웹 브라우저, PowerPoint, Excel, AutoCAD, Blender 대신"*(41:09~41:23). → [[agi-definition]]
+- **사내 사용 주장** — *"어디에서나 사용"*. ⚠️ **무엇에 쓰는지는 말하지 않는다.** 뒷마당 → CAD는 **가상의 사용 예**(*"그냥 말하세요"*)이지 NVIDIA의 사용 기록이 아니다.
+- ⚠️ **이해관계** — 화자는 Astra를 돌리는 컴퓨터를 판다. 그리고 같은 인터뷰에서 OpenAI를 *"사고를 낸 두 랩"* 중 하나로 **문맥상** 가리킨다(이름은 대지 않음).
+- ⚠️ **ko가 Astra를 "그녀"로 받는다**(42:01 *"아스트라는 모든 도구를 사용합니다. 필요한 이미지와 당신이 그녀가 제공했고"*).

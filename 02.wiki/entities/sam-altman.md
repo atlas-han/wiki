@@ -5,9 +5,9 @@ category: person
 tags: [openai, ceo, ai-safety, agi, compute]
 links:
   - https://openai.com/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # Sam Altman
@@ -100,3 +100,20 @@ CBS 진행자: *"Elon Musk가 당신에게 동의한다고 했고, **Sam Altman*
 - 개인: 짧은 영상을 좋아하지만 *"제 아이들이 그런 것들에 가까이 가는 걸 절대 허락하지 않을 거예요"*(09:57~10:08).
 
 ⚠️ **판매자의 무대 진술**이고 반대 심문이 없다. *"지난 며칠 동안 일어난 일"* 에 대한 *"실망"*(04:54~04:56)이 무엇을 가리키는지 대담은 말하지 않는다.
+
+## HF 사건 서술의 사후 판정 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+자사 발표자들(Wallace·Dalton)의 1차 재구성과 대조하면: **주말 타임라인은 일·월이 정확히 맞고**(7/19 일 탐지 → 7/20 월 HF 연락), **정답 탈취 동기도 일치**한다. ⚠️ 다만 *"비교적 오래되고 훨씬 약한 모델"*(09-06)은 발표의 *"프론티어 모델 평가"* · *"차세대 프론티어 모델 RL"* 과 **표현이 다르고**, *"만점"*(09-23)과 **단수 "모델"** 은 발표에 없다(발표는 수십만 메시지의 에이전트 집단). → [[hugging-face]]
+
+## 공급자 CEO가 본 Altman의 회사 — "젊은, 처음 CEO" (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+CBS 진행자가 *"Dario Amodei, Sam Altman, Elon Musk가 속도 조절을 말한다"*(00:05~00:13), *"Dario Amodei나 Sam Altman 같은 사람이 규제를 보고 싶다고 한다"*(05:26~05:31)로 Altman을 **규제 요구 쪽**에 놓고 [[jensen-huang|Jensen Huang]]에게 묻는다. ⚠️ **진행자의 요약**이고 Altman 본인의 발언이 아니다.
+
+Huang의 답에서 Altman의 회사(문맥상)에 대해 나오는 것:
+
+- *"두 랩 모두 — 한 랩은 사이버 보안 사고 네 건, 다른 랩은 두어 건 더"*(05:31~05:48). ⚠️ **어느 쪽이 OpenAI인지, 사고가 무엇인지 말하지 않는다.** → [[hugging-face]] (개연성만)
+- *"역사상 가장 중요한 기술 회사 중 두 곳"*, *"수백억 달러 수익, 수천억 달러 기대"*, *"인류 역사상 어떤 회사도 본 적 없는 속도로 컴퓨팅 증설"*(07:26~08:00).
+- *"모두 젊은, 처음 CEO가 된 사람들"*, *"그들을 믿는다"*, *"세상의 종말에 대한 [책임 회피]와 주의 분산은 용납하지 않는다"*(09:37~10:32).
+- ***"행간을 읽으면 그들은 더 많은 법이 아니라 기존 법에서 면제되기를 원한다"***(06:33~06:48) → [[existing-law-first]]. ⚠️ Altman의 기존 입장(정부의 모델 테스트·공유 표준 찬성, [[regulatory-capture]])과 **어떤 요구가 "면제"인지** Huang은 짚지 않는다.
+- *"Vera Rubin이 Dario와 Sam에게 제공되고 있다"*(20:02~20:05) — **OpenAI는 NVIDIA의 고객**이다.
+- 사고 대응으로 기대하는 것 — 샌드박스·격리, 평가 중 모니터링, **외부 클라우드 접촉 공개**, 사고 공개 공유(10:40~11:36). Altman이 Dreamforce에서 말한 [[accident-reporting-culture]]와 **같은 방향**이다.

@@ -3,11 +3,11 @@ title: 프론티어의 속도 조절 (Pacing the Frontier)
 type: concept
 category: theory
 tags: [ai-safety, governance, openai, deployment, alignment, bottleneck]
-related: [training-time-risk, slowdown-within-lead-margin, agi-definition, compute-constrained-growth, embedded-external-evaluators, joint-democratic-oversight]
+related: [training-time-risk, slowdown-within-lead-margin, agi-definition, compute-constrained-growth, embedded-external-evaluators, joint-democratic-oversight, existing-law-first]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-20
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 프론티어의 속도 조절 (Pacing the Frontier)
@@ -60,3 +60,31 @@ updated: 2026-09-23
 > 우리는 **역량 개발 속도를 조절하여 정렬, 안전 및 모니터링이 항상 역량 개발보다 앞서 나가도록** 해야 합니다. (14:40~14:51)
 
 근거는 **수학 사다리**(초등 수학 → 밀레니엄 난제, 3년)의 *"누구의 기준으로 봐도 확실히 빠른 이륙"*(14:19~14:24)이다. ⚠️ **같은 대담에서 Altman은 조건부 감속을 비판한다**(*"어떤 단서도 붙어서는 안 됩니다"*, 03:33) → [[slowdown-within-lead-margin]]. **"무조건 조절"이 실제로 무엇을 멈추는지는 말하지 않는다.**
+
+## 보안 담당자가 말하는 감속 — "의식적으로 연구 속도를 늦추고 있다" (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+[[greg-brockman|Brockman]](원칙어) · [[sam-altman|Altman]](CEO)에 이어 **OpenAI 세 번째 화자**, 이번엔 **보안·인프라 실무자**([[michael-dalton|Michael Dalton]])다:
+
+> 많은 팀이 **모든 것을 내려놓고** 예방·탐지·대응을 강화하고 있습니다. **보안을 강화하고 환경의 보안 원칙과 기반을 업그레이드하기 위해 의식적으로 연구 속도를 늦추고 있으며**, AI 에이전트 모니터링을 대폭 확대하고 있습니다. (29:50~30:08)
+
+앞의 두 화자는 *원칙* 이었고, 여기서는 **사건에 대한 대응 조치**로 나온다 — 감속의 **트리거가 명시된** 첫 서술이다. ⚠️ 무엇을 얼마나 늦췄는지(어떤 연구, 기간)는 말하지 않는다. 그리고 1차 교정 직후 **훈련·평가를 이틀 만에 재개**(7/6)했다가 7/8 게시판이 재건된 것이 발표 자체의 타임라인에 있다.
+
+## "최대한 빨리, 그러나 해야 할 것보다 빠르지 않게" — 기준 대신 책임 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+CBS 진행자가 David Sacks의 말(*"AI 개발 속도를 늦추면 미국 경제와 군에 막대한 피해"*)을 전하며 *"중국을 고려하면 지금 속도를 조절해야 하나"* 를 묻자, [[jensen-huang|Jensen Huang]]:
+
+> 그가 한 말[의] 맥락[은] 정확히 모르겠[지만], **그는 미국이 가능한 한 빨리, 하지만 [해야 할 속도]보다 빠르지는 않게 [가기를] 원한다고 거의 확신해요.** 우리는 최대한 빨리 [가되], 마땅히 해야 할 속도보다 더 빠르지는 않게 [가야 합니다]. (18:15~18:35)
+
+**같은 모양, 다른 기준.** 이 페이지의 원칙은 *역량의 속도를 안전·보안·정렬 **기준**이 따라오는 속도에 묶는다* 였다. Huang의 *"should"* 는 기준을 말하지 않고 바로 **법적 책임**으로 넘어간다:
+
+> 안전하지 않은 제품을 [내놓아] 사람들을 위험에 [빠뜨리면], **우리에게는 당신에게 책임을 물을 수 있는 모든 유형의 법이 있습니다.** 따라서 (…) 기업들은 **옳은 일을 하도록 완벽하게 [인센티브를 받고] 있습니다.** (18:37~18:58)
+
+| | 속도의 상한을 정하는 것 | 조율 주체 |
+|---|---|---|
+| [[greg-brockman\|Brockman]]·[[sam-altman\|Altman]] (이 페이지) | 안전·보안·정렬 **기준** | 랩 (일방) + 랩 간 |
+| [[dario-amodei\|Amodei]] | **외부 평가자의 처리량** | 평가자 → 정부 |
+| **Huang** | **사후 법적 책임의 위협** → [[existing-law-first]] | 법원 (사후) |
+
+⚠️ **귀속 주의** — *"not faster than we should"* 는 **Huang이 Sacks에게 귀속한 해석**이고(*"맥락은 정확히 모르겠지만"*), Sacks의 전언된 원문은 **감속의 비용**만 말한다. 이 위키는 이것을 **Huang의 문장**으로 적는다.
+
+⚠️ 같은 인터뷰에서 Huang은 *"누구와도 상관없이 가능한 한 빨리"*(16:01~16:07)라고도 하고, 랩들은 *"컴퓨팅의 상당 부분을 AI 안전으로 옮겨야"*(03:24~03:37) 한다고도 한다. **"해야 할 속도"가 실제로 무엇을 멈추는지는 이 페이지의 다른 화자들과 마찬가지로 말하지 않는다.**

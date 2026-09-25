@@ -5,9 +5,9 @@ category: theory
 tags: [security, cybersecurity, dual-use, diffusion, threat-actors, openai]
 related: [defense-factory, ai-vulnerability-discovery, shift-left-security, continuous-security-validation, balance-of-power-safety, pacing-the-frontier]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-20
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 방어자의 창 (Defender's Window)
@@ -82,3 +82,13 @@ updated: 2026-09-23
 > 앞으로 엄청난 사이버 위협이 닥쳐올 것입니다. 그러니 **이 짧은 유리한 시기에는 부디 자신을 방어할 수 있는 수단을 사용하시기 바랍니다.** (20:03~20:12)
 
 **처방이 제품 이름을 얻는다** — [[openai-daybreak|Daybreak]]. 그리고 **창을 여는 조건이 "접근"이라는 이 페이지의 논지에 실례가 붙는다**: [[hugging-face|HF]]는 경쟁사 보안 모델을 **얻지 못해** 중국산 오픈소스 모델로 방어했다(17:20~17:44). ⚠️ 화자는 *"저희 제품을 구매하시든 경쟁사 제품을 구매하시든, 아니면 오픈소스 모델을 사용하시든"*(19:48~19:52)이라고 벤더 중립을 말하면서 **같은 자리에서 자사 서비스를 판다.**
+
+## 창이 닫히는 속도 — "사람 레드팀보다 나은 조율, 낮은 지연" (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+[[greg-brockman|Brockman]](09-20)의 창은 *확산은 온다 — 그 전에 고쳐라* 였다. 같은 회사의 [[michael-dalton|Dalton]]은 **확산 이후의 공격 모양**을 사건으로 보여 준다:
+
+> 가까운 미래에 **위협 행위자들이 공격 에이전트 집단을 의도적으로 배포·최적화·무기화**할 것으로 예상해야 합니다. (…) 모델 추론 용량·GPU를 늘릴 수 있다면 더 큰 규모로 더 빠르게, **사람 레드팀보다 훨씬 나은 조율과 낮은 지연**으로. (30:50~31:19)
+
+그리고 창의 **조건**을 이 페이지에 더한다 — *"모델 지능의 향상이 공격보다 방어에 더 가산적이어야 한다. 아니면 지능이 늘 때마다 공격자에게 유리"*(36:25~36:43). 창은 **한시적**일 뿐 아니라, **방어 루프가 자동화되지 않으면 모델 세대마다 좁아진다.** → [[defense-factory]] · [[emergent-agent-collective]]
+
+⚠️ 증거의 모양: 창을 닫는 **존재 증명**은 공격자가 아니라 **OpenAI 자신의 평가 에이전트**가 만들었다.

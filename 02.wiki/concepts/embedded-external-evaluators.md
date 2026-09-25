@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ai-safety, governance, regulation, evaluation, third-party, speed-limit]
 aliases: [식품 검사관 모델, 제3자 상주 평가자, 평가자 처리량이 제한 속도]
-related: [regulatory-capture, training-time-risk, verification-bottleneck, swiss-cheese-defense-in-depth, race-to-the-top, joint-democratic-oversight, coordinated-vulnerability-disclosure, uk-aisi]
+related: [regulatory-capture, training-time-risk, verification-bottleneck, swiss-cheese-defense-in-depth, race-to-the-top, joint-democratic-oversight, coordinated-vulnerability-disclosure, uk-aisi, existing-law-first]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-16
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # 상주 외부 평가자
@@ -66,3 +66,14 @@ updated: 2026-09-23
 ## 대비 — 같은 주의 반대 방향 외부 검증 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 
 [[elon-musk|Musk]]의 [[cross-lab-peer-review]]는 이 패턴과 **"외부가 검증하라"는 표면만 같고 구성 요소가 전부 다르다** — 검사자가 **중립 기관이 아니라 경쟁사**, 위치가 **랩 안(훈련 과정)이 아니라 랩 밖(출시 전 API)**, 대상이 **약속의 이행이 아니라 모델 자체**, 강제력이 **정부 기준이 아니라 여론 재판과 제조물 책임**. 그리고 머스크는 *"중국은 미국 규제 기관이 자국의 AI 기업들을 감시하는 데 동의하지 않을 것"*(27:53~27:56, 문맥상)이라며 **정부 층위를 피한다.** 이 페이지의 유보 *"누가 평가자인가·누가 비용을 대는가"* 에 머스크 안은 **"이해가 상충하는 경쟁자가 제 비용으로"** 라고 답하는 셈이다 — 그러면 **거짓 경보 동기**가 새 문제가 된다.
+
+## ⚠️ 반대 — "새 기구 전에 기존 법" (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+CBS 진행자가 [[jensen-huang|Jensen Huang]]에게 *"왜 AI판 FDA나 FAA를 지지하지 않나"*, *"Dario Amodei나 Sam Altman 같은 사람이 규제를 보고 싶다고 하는데"* 를 묻는다(04:36~05:31). 답은 이 페이지의 **정반대 순서**다:
+
+> **우리가 새로운 법과 새로운 규정을 만들기 전에, 현행 법률과 현행 규정을 적용합시다.** (04:49~04:55)
+> **무엇이 빠졌는지 알기 전까지, 왜 법을 더 추가해야 할까요?** (09:00~09:06)
+
+> ⚠️ **Contradiction:** 이 페이지는 *"누군가 AI 모델을 만들 때마다"* 제3자가 **훈련 과정을 관찰**하는 **사전** 장치이고, 평가자의 처리량이 **기술의 제한 속도**가 된다. Huang은 **사고 후 기존 법 적용**이 먼저이고, 새 기구는 *"무엇이 빠졌는지"* 확인된 뒤다. 그리고 *"행간을 읽으면 그들은 더 많은 법이 아니라 기존 법에서 면제되기를 원한다"*(06:33~06:48) — **이 페이지의 제안 자체를 책임 회피로 읽는 독법**이다. ⚠️ Huang은 어떤 제안이 면제를 뜻하는지 구체적으로 들지 않고, 이 페이지의 평가자 안을 **직접 거론하지도 않는다.** → [[existing-law-first]]
+
+이 위키에서 이 안에 대한 반대는 이제 둘이다 — [[cross-lab-peer-review|Musk]](*중립 기관 대신 경쟁사*)와 **Huang**(*새 기구 대신 기존 법*). 둘 다 **새 규제기관을 원하지 않는다**는 점에서 같다.

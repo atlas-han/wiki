@@ -5,9 +5,9 @@ category: pattern
 tags: [security, automation, pipeline, vulnerability, machine-speed, openai]
 related: [defenders-window, ai-vulnerability-discovery, continuous-security-validation, shift-left-security, all-or-nothing-accuracy, scheduled-agent-automations]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-25
 ---
 
 # 방어 공장 (Defense Factory)
@@ -57,3 +57,27 @@ updated: 2026-09-20
 - [[tech-bridge-brockman-agi-era-defender-window]] — first-seen
 - [[greg-brockman]] · [[openai]] · [[openai-astra]] · [[codex]]
 - 관련: [[defenders-window]] · [[ai-vulnerability-discovery]] · [[continuous-security-validation]] · [[shift-left-security]] · [[all-or-nothing-accuracy]] · [[risk-proportional-human-review]] · [[scheduled-agent-automations]] · [[verification-bottleneck]]
+
+## 같은 회사의 보안 담당자가 빈칸을 채운다 — 롤백, 그리고 부분 자동화의 실패 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+09-20의 이 페이지는 *"자동 교정·자동 배포의 안전장치(잘못된 패치·회귀·롤백·승인 게이트)가 소스에 한 마디도 없다"* 고 표시했다. [[michael-dalton|Michael Dalton]](OpenAI 보안·인프라)이 Black Hat에서 **같은 루프를 말하면서 롤백을 넣는다:**
+
+> 취약점이 발견되면 에이전트가 식별할 뿐 아니라 **패치를 제안**하고, 자동화된 인프라가 그 패치로 **변경을 배포**하며, **가용성 사고나 장애가 나면 되돌리는(roll back)** 지점까지. 최종 상태에서 그 루프는 완전 자동화돼야 합니다. (33:26~33:44)
+
+그리고 **왜 전체여야 하는가**를 새로 논증한다:
+
+> 패치 자동화 없이 **취약점 발견만 자동화하면 병목을 취약점에서 패치·교정으로 옮길 뿐**이고, 사람 엔지니어를 새 취약점으로 파묻게 됩니다. (33:04~33:19)
+
+이 페이지가 Brockman 일화에서 본 **"발견 15분 / 수정 45분"** 의 교정 병목이 **업계 규모의 논증**이 됐다. [[verification-bottleneck]]과 같은 모양 — **자동화된 단계 바로 다음이 병목이 된다.**
+
+| 새로 들어오는 것 | 인용 |
+|---|---|
+| **왜 지금** — 공격 쪽은 완전 자동화의 *"의도치 않은 존재 증명"* 을 얻었다 | 31:32~31:57 |
+| **사고 대응도 루프에** — 에이전트 공격은 *"포렌식적으로 조밀"*, 방어 에이전트로 IR 확장 | 34:06~34:48 |
+| **공격을 늦추는 축** — 허니 토큰·기만이 에이전트에게 *"이 자격 증명 써도 되나?"* 의 불확실성 | 34:58~35:27 |
+| **우선순위** — 자동화는 연속체, **위험·자동화 ROI** 순으로 | 35:30~35:41 |
+| **기본기** — 세분화·최소 권한은 여전히 필수 | 35:45~35:55 |
+| **최종 상태** — 지능 향상이 공격보다 방어에 더 가산적 | 36:25~36:43 |
+
+⚠️ **여전히 채워지지 않은 것**: 잘못된 패치의 **정확성 검증**, **승인 게이트**. 롤백은 *가용성 사고* 에 한정된다 — **기능적으로 틀린 패치**가 장애 없이 배포되는 경우는 말하지 않는다.
+⚠️ **포화(saturation) 기준과의 긴장**: Brockman은 *"Astra를 겨눴더니 포화됐다"* 고 했는데, 같은 회사의 에이전트가 **자사 Artifactory에서 제로데이 두 개**를 찾았다. 시점 선후가 불명이라(포화 발언이 사건 전인지 후인지) **모순으로 확정하지 않는다.**

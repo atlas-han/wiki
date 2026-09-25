@@ -3,11 +3,11 @@ title: Power Shortfall (전력이 컴퓨팅의 상한이다)
 type: concept
 category: theory
 tags: [power-grid, electricity, data-center, compute, gpu, export-controls, infrastructure]
-related: [compute-constrained-growth, intelligence-as-infrastructure, humanoid-robot-scaling, trusted-throughput]
+related: [compute-constrained-growth, intelligence-as-infrastructure, humanoid-robot-scaling, trusted-throughput, data-center-local-backlash]
 first-seen: tech-bridge-elon-musk-g20-ai-future
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-07
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # Power Shortfall (전력이 컴퓨팅의 상한이다)
@@ -72,3 +72,13 @@ updated: 2026-09-23
 ## 같은 화자, 병목이 칩으로 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 
 2주 뒤 같은 [[elon-musk|Musk]]가 **칩 공급**을 병목으로 세운다 — *"기존 반도체 공장의 용량이 부족 (…) 이 모든 공장들이 최대 생산 능력으로 가동"*(20:02~20:14), *"테라팹을 구축하든지, 아니면 확장성에 실패하든지"*(20:47~20:50) → [[terafab]]. **모순이 아니라 층이 다르다**([[intelligence-as-infrastructure]]의 에너지 층 → 칩 층). 이 페이지의 *"칩 생산 연 40~50% vs 전력 연 10~20%"* 는 칩이 전력보다 빨리 는다는 전제였는데, 이번엔 **칩 쪽도 상한에 닿았다**고 말한다. ⚠️ 두 진술 모두 수치 근거가 없다.
+
+## "향후 5년은 화석 연료를 더" — 판매자의 단서, 그리고 전력망 기여 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Jensen Huang]]이 CBS 인터뷰의 데이터센터 반발 답변에서 이 페이지의 층 1을 다룬다.
+
+- **공급 측** — *"100년 만에 처음으로"* 모든 형태의 발전(태양광·핵융합·핵분열·수력)이 *"테이블 위에 있고, 모두 투자를 받고 있다"*(34:07~34:29). 이 페이지 유보의 *"공급 측 대응이 논의되지 않는다"* 에 대한 **다른 화자의 답**이다 — 단 **수치가 없다.**
+- ⭐ **화자 스스로의 단서** — ***"향후 5년 동안 우리는 틀림없이 화석 연료를 훨씬 더 쓸 것입니다. 하지만 그 뒤 수십 년 동안"*** 지속 가능한 에너지(34:31~34:48). Musk의 *"2027년 15 GW 부족"* 과 같은 시간대를 **결손이 아니라 연료 구성**으로 말한다.
+- **데이터센터 → 전력망** — *"발전소를 위해 제공해야"*, *"지역 전력망에 기여해 신뢰성을 높여야"*, *"전기 요금이 오른다는 것은 사실상 반대 — 전력망을 더 탄력적으로 만들고 전력 비용을 줄인다"*(33:44~36:59). ⚠️ **전부 "should"** 이고 수치 없음.
+
+> ⚠️ **Contradiction (부분):** 이 페이지의 전제(칩이 전력보다 빨리 늘어 결손이 생긴다)와 Huang의 *"데이터센터가 지역 전력 비용을 낮춘다"* 는 **데이터센터가 자체 발전·전력망 투자를 할 때만** 함께 성립한다. Huang은 그것을 당위로 말한다. 해소하지 않는다. → [[data-center-local-backlash]]

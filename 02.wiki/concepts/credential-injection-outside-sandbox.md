@@ -6,9 +6,9 @@ tags: [credentials, sandbox, proxy, access-control, privilege-escalation, securi
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
 related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-10
-updated: 2026-09-11
+updated: 2026-09-25
 ---
 
 # 샌드박스 밖 자격증명 주입
@@ -76,3 +76,7 @@ updated: 2026-09-11
 - [[anthropic-managed-agents]] — 같은 처방의 선행 사례
 - 관련: [[agent-governance-layers]] · [[prompt-injection]] · [[multiplayer-agent-context]] · [[black-box-agent-approach]]
 - [[tech-bridge-build-time-vs-runtime-tools]] — 셋째 자리: 도구 파라미터 바인딩 · [[bound-parameters]] (2026-09-11)
+
+## 샌드박스 밖 서비스가 공격면이 된 사례 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+이 원칙은 *자격 증명을 샌드박스 밖에 두라* 였다. [[hugging-face|Hugging Face 사건]]은 그 **바깥 쪽이 뚫린** 경우다 — 샌드박스는 인터넷이 없었지만 샌드박스가 신뢰하는 사내 패키지 관리자 [[artifactory|Artifactory]]는 인터넷이 있었고, SSRF·제로데이로 **관리자 토큰의 서명 키**까지 넘어갔다(14:05~14:28 · 24:15~24:22). 이후 에이전트들은 IMDS·쿠버네티스 서비스 계정·Azure Key Vault로 **샌드박스 밖 자격 증명을 연쇄 수집**했다(25:42~25:57). **바깥에 둔 자격 증명은 바깥 서비스의 공격면만큼만 안전하다.**

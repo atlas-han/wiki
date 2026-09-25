@@ -3,9 +3,9 @@ title: Cognition
 type: entity
 category: org
 tags: [coding-agents, acquisition, rust, dioxus]
-sources: [tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-25
 ---
 
 # Cognition
@@ -36,3 +36,9 @@ updated: 2026-09-14
 ## References
 
 - [[tech-bridge-ambitious-software-agent-era]] · [[dioxus]] · [[jonathan-kelley]]
+
+## 두 번째 소스 — 제품 사용자로서의 언급 한 마디 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Jensen Huang]](NVIDIA CEO)이 CBS 인터뷰에서 사내 사용 도구를 나열하며 *"우리는 [Cognition]을 사용합니다"*(01:19~01:23)라고 한다 — [[openai-astra|Astra]]·[[claude-code|Claude Code]]·[[cursor|Cursor]] 다음. **이 위키에서 Cognition이 "쓰이는 것"으로 나온 첫 언급**이다. ⚠️ **어떤 제품인지는 말하지 않는다** — 회사 이름뿐이다. 이 페이지의 *"채용 공고 한 문단이 전부"* 는 **한 줄 늘었을 뿐**이다.
+
+> ⚠️ **ko 자막이 또 회사명을 보통명사로 바꿨다** — **"우리는 인지 기능을 사용합니다"**(01:19). 09-14의 **"인지 컴퓨팅"** 에 이어 **두 번째**. 이 회사 이름은 ko에서 **한 번도 안정적으로 옮겨진 적이 없다**(09-14 한 문장 건너 복구된 것 제외).

@@ -6,9 +6,9 @@ tags: [tesla, spacex, x, ceo, humanoid-robots, regulation, g20, power-grid]
 links:
   - https://www.tesla.com/
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-07
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # Elon Musk
@@ -59,3 +59,24 @@ CBS 진행자: *"**Elon Musk**가 당신에게 동의한다고 했습니다."*(0
 - **[[terafab]]** — *"테라팹을 구축하든지, 아니면 확장성에 실패하든지"*(20:47~20:50). G20 편의 병목이 **전력**이었다면 여기서는 **칩**이다 → [[power-shortfall]].
 
 > ⚠️ **경쟁 AI 회사의 소유주**로서 [[openai|OpenAI]]의 사고와 처방을 말한다. 자기 회사(SpaceX)를 하네스를 돌리는 쪽에 넣는다(32:47).
+
+## HF 사건 서술의 사후 판정 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+09-23 이 페이지가 표시한 *"OpenAI 서버에 대한 관리자 권한"*(Musk)은 [[openai|OpenAI]] 발표자들의 1차 재구성으로 **참으로 확인**된다 — Artifactory 관리자 토큰(6/26), OpenAI 클러스터 관리자(7/8~19). *"스웜"* 도 에이전트 메시지에 실제로 나오는 말이다. 2차 자료를 읽은 사람의 서술이었지만 **대상·규모 판단은 맞았다.** → [[hugging-face]]
+
+## CBS 진행자의 호명, 그리고 같은 처방의 다른 판매자 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+CBS 진행자가 *"Dario Amodei, Sam Altman, **Elon Musk** 같은 최고 CEO들이 AI 개발 속도를 조절해야 한다고 말한다"*(00:05~00:13)로 인터뷰를 연다. ⚠️ **진행자의 요약**이다 — 09-16 Amodei 편의 *"Musk와 Altman이 동의했다"* 와 같은 종류이고, 머스크 본인은 All-In에서 *"다리오가 옳다"* 를 **위험의 크기**에 대한 동의로만 해명했다(위 09-23 절).
+
+[[jensen-huang|Jensen Huang]]의 답이 머스크의 All-In 입장과 **여러 곳에서 겹친다**:
+
+| | Musk (All-In, 09-23) | Huang (CBS) |
+|---|---|---|
+| 랩 | *"연구소라는 용어가 재밌다 — 실제로는 영리 기업"* | *"실험실이라고 부르는 것만으로도 많은 것을 알 수 있다"* — 연구소 → 제품 회사 |
+| 강제력 | 여론 + **제조물 책임** → [[cross-lab-peer-review]] | **제조물 책임** + 무단 침입·손해 배상·SLA → [[existing-law-first]] |
+| 새 규제 | *"한 방향 래칫"* | *"무엇이 빠졌는지 알기 전까지"* |
+| 위험의 크기 | *"매우 심각"* | *"2030년 종말 0%"*, 서사는 *"드라마"* |
+
+**처방의 뼈대(새 규제 없이 책임법으로)는 같고, 위험 진단은 반대다.** ⚠️ 이 위키가 겹쳐 읽은 것이다.
+
+그리고 진행자가 *"All-In 서밋에서 당신이 [트럼프]와 통화하는 것을 들었다"*(23:34~23:37) — 09-23 All-In 편의 *"오늘 아침 젠슨이"*(05:03~05:06)와 **같은 행사일 가능성**이 있으나 확정하지 않는다. → [[all-in-podcast]]

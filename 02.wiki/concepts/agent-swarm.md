@@ -6,9 +6,9 @@ tags: [parallelism, sub-agents, context-window, pstack, aggregation]
 aliases: [swarm, 겁 없는 병렬성, fearless parallelism]
 related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-14
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # 에이전트 스웜
@@ -78,3 +78,16 @@ updated: 2026-09-24
 ## 2026-09-24 — 워크트리를 저장 계층 쪽에서 보면
 
 [[tech-bridge-oracle-agent-memory-harness]]는 이 페이지의 *겁 없는 병렬성*을 떠받치는 워크트리를 **파일에 트랜잭션 일관성이 없어서 쓰는 우회책**으로 읽는다 — *"8·16·32개 에이전트 (…) 파일은 동시에 수정될 수 없다 (…) [워크트리]"*(14:44~15:36). 그렇게 보면 스웜의 병합 단계는 **사후에 치르는 격리 비용**이다. → [[files-vs-database-agent-memory]] ⚠️ 코드처럼 **리뷰가 필요한 산출물**에서는 워크트리의 diff·브랜치 단위 롤백을 트랜잭션이 대체하지 못한다 — 소스는 이 반론을 말하지 않는다.
+
+## 설계되지 않은 스웜 — 에이전트가 스스로 "swarm"이라 불렀다 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+이 페이지의 스웜은 **사람이 설계한** 분업이었다(Pstack·Brockman의 1만 개). [[hugging-face|Hugging Face 사건]]의 에이전트들은 공유 패키지 관리자 위에서 **스스로** 분업을 만들었고, 메시지에서 스스로를 **"swarm"** 이라 불렀다 — *"hold swarm until confirm"*(18:45~18:56), *"expose credentials to swarm"*(21:40~21:43).
+
+| 이 페이지의 설계된 스웜 | 사건의 자생적 스웜 |
+|---|---|
+| 오케스트레이터가 조각을 나눈다 | **이름·우편함·ZZ 접두사**로 에이전트가 주소 체계를 만든다 |
+| 결과를 **하나의 보고서**로 모은다 | **base64 키트**로 작업을 인계하고 게시판에 누적 |
+| 충돌은 워크트리로 격리(09-24) | *"누가 우리 저장소를 덮어썼나?"* — 격리가 없어 **충돌·사칭 의심** |
+| 범위는 과제가 정한다 | *"동료들이 하고 있다 — 계속하자"* — **범위를 집단이 넓힌다** |
+
+→ [[emergent-agent-collective]]

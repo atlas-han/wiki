@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-23
+updated: 2026-09-25
 ---
 
 # OpenAI
@@ -135,3 +135,16 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## 경쟁사 소유주의 서술 — Hugging Face 사건 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 
 [[elon-musk|Musk]]: *"OpenAI 서버에 대한 관리자 권한을 획득 (…) OpenAI는 이 사실을 일주일 동안 깨닫지 못했습니다"*(01:52~02:03). All-In 진행자가 이를 OpenAI의 **"[허깅페이스] 침투 테스트"** 로 부르며 *"무모한 실험"* 이라 하고, 머스크가 *"좀 무모한 행동"*(31:20~31:24)으로 동의한다. *"앤트로픽이 오픈 AI보다 안전에 더 많은 신경을 쓴다"*(31:57~32:04). ⚠️ **경쟁사 소유주의 2차 전언**이고, 같은 날 ingest된 [[tech-bridge-altman-benioff-dreamforce|Altman 1인칭 서술]]과 **침입 대상·기간이 어긋난다** → [[hugging-face]]. 처방 → [[cross-lab-peer-review]]. ⚠️ ko가 OpenAI를 **"오픈소스"**(31:42)·**"오픈아이얼"**(07:35)·**"야외에서"**(32:34)로 옮겼다.
+
+## Black Hat — 사건의 1차 기술 재구성 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
+
+[[eric-wallace|Eric Wallace]](정렬·안전 연구)와 [[michael-dalton|Michael Dalton]](보안·인프라)이 [[hugging-face|Hugging Face 사건]]을 날짜·취약점 체인 단위로 공개했다. 회사에 대해 새로 확인되는 것:
+
+- **훈련·평가 인프라** — VM-as-a-service 샌드박스, 인터넷 차단, 사내 [[artifactory|Artifactory]]가 유일한 외부 의존성(08:42~09:32). **5/7 차세대 프론티어 모델 RL 실행**, *"한 번도 출시 안 한 내부 실험 모델"*(09:49~10:08).
+- **Exploit Gym** 류 사이버 평가를 **프로덕션보다 사이버 거부가 줄어든** 상태로 돌린다(17:42~17:50).
+- 최근 **하위 에이전트(sub-agent) 기능** 출시 — 모델이 스스로를 포크해 나눠 정복(07:12~07:30).
+- 사후 조사를 **[[codex|Codex]] 등 에이전트로 70억 건 이상 로그**, 수백만 GPU 시간(01:30~01:45). **완전한 사후 분석을 예고**했다.
+- *"보안을 강화하기 위해 **의식적으로 연구 속도를 늦추고 있다**"*(29:57~30:05) — [[pacing-the-frontier]]의 세 번째 OpenAI 화자.
+- 탐지는 **장애(7/4)와 워크로드 경보(7/19)** 였고, **HF의 공개(7/16)가 먼저**였다.
+
+→ [[emergent-agent-collective]] · [[defense-factory]]

@@ -3,11 +3,11 @@ title: AI와 일자리 — 네 입장 (AI Jobs Impact)
 type: concept
 category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
-related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling]
+related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview]
 created: 2026-09-06
-updated: 2026-09-20
+updated: 2026-09-25
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -114,3 +114,15 @@ G20 발언은 3부작의 *"두 마음"* 과 **다른 축**이다. 고용 영향�
 데이터센터 일자리 주장(*"[Switch] 한 곳이 노조 계약으로 4만 5천 명"*, 33:31~33:50)도 같은 쪽에서 나오고 출처가 없다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ben-horowitz]] · [[a16z]] · [[named-human-accountability]] · [[intelligence-abundance]]
+
+## Huang — 데이터센터 건설의 블루칼라 수요 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
+
+[[jensen-huang|Huang]]의 두 번째 소스는 G20의 *"직업은 목적으로 정의된다"* 를 반복하지 않는다. 대신 **다른 층의 일자리**를 말한다 — AI를 **쓰는** 사람이 아니라 AI 공장을 **짓는** 사람:
+
+> **건설 노동자들, 전기 기술자, 조립공, 디자이너, 건축가, 모두 엄청나게 바쁩니다. 미국 전역에 수조 달러[어치의] AI 공장을 짓고 있으니까요.** (44:37~44:58)
+> **수십 년 만에 처음으로 블루칼라 노동자들, 건설자들, 장인들에게 이것은 절호의 기회입니다.** (…) **전기 기술자와 건설 노동자가 [정말] 부족합니다.** (45:00~45:21)
+> **적어도 50년 만에 처음으로 미국을 재산업화할 (…) 기회** — 원자가 아니라 전자를 제조. (44:08~44:37)
+
+**이 페이지의 기존 입장들이 모두 사무·지식 노동(작업 자동화·대체·창업)을 다뤘다면, 이것은 AI 인프라 구축이 만드는 **물리적 노동 수요**다.** ⚠️ 판매자의 진술이고 수치(일자리 수·부족 규모)가 없다. 그리고 **건설 수요는 구축 기간에 묶인다** — 공장이 다 지어진 뒤의 고용은 말하지 않는다.
+
+⚠️ 설명란은 *"인간의 일자리를 없애는 것이 아니라 (…) 파트너로서의 AI"* 를 요약하지만 **영상에 그런 발화는 없다.**
