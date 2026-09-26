@@ -168,6 +168,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ② [[tech-bridge-jensen-huang-cbs-interview|젠슨 황 CBS 편]]([[jensen-huang]])은 같은 CBS 시리즈의 [[dario-amodei|Amodei]]와 칩 수출·공포의 지위·처방(기존 법 vs 외부 평가자)에서 정면으로 갈리고, *"규제 요구 = 면제 요구"* 라는 독법([[existing-law-first]])을 [[regulatory-capture]]에 더한다. [[data-center-local-backlash]] 신규.
   자막 쪽으로는 ⚠️ **두 편 합쳐 결론·핵심 문장 여섯 개가 ko에서 뒤집혔다** — *existence proof* → "존재하지 않는 증거", *finding zero-days* → "공격이 발생하지 않음", *"중국보다 앞서"* → "중국이 앞서", *"세금이 두렵지 않다"* → "두려워요" 등.
 
+- *2026-09-26*: [[tech-bridge]] **2편** ingest(09-25 업로드 1편 + 멤버 전용 공개 전환 1편). ① [[tech-bridge-jev-agent-harness|Jev 편]]([[langchain|LangChain]])은 09-19부터 제목에만 있던 [[jev|Jev]]를 처음 서술한다 — 텍스트를 생성하지 않고 타입이 정해진 답+확률을 돌려주는 **[[system-1-model|System 1 모델]]** 을 하네스의 결정 지점(라우팅 · auto mode 게이트 · eval judge)에 두자는 벤더 제안이고, 학습 목표·정확도는 여전히 비어 있다.
+  ② [[tech-bridge-lauren-tan-2000-prs|Lauren Tan PR 2,000 편]]은 09-12 [[tech-bridge-lauren-tan-trusting-agents|워크숍]]의 신뢰론을 압축해 **강제의 층**(코드베이스 → 정적 분석 → 규칙·bugbot·스킬 → 스타일 가이드)과 *교정할 때마다 가장 효과적인 층에 심어라*, 그리고 [[codebase-gardening|코드베이스 = 기억이라 안티패턴이 퍼진다]]를 새로 얹었다. 수치는 두 배가 됐고 워크숍의 유보는 전부 빠졌다.
+  운영: 멤버 전용 `zkmvCDSxqdc` 가 **제목까지 바뀌어** 공개됐다 — *긴 유명인 대담* 패턴은 깨졌다. `FJo7p9SPS9c` 는 여전히 멤버 전용.
+
 ---
 
 전체 페이지 카탈로그는 [[02.wiki/index]], 시간순 작업 기록은 [[log]] 참조.

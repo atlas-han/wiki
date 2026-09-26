@@ -809,5 +809,13 @@
   "02.wiki/sources/tech-bridge-jensen-huang-cbs-interview.md": "LiVideo",
   "02.wiki/entities/eric-wallace.md": "LiUser",
   "02.wiki/entities/michael-dalton.md": "LiUser",
-  "02.wiki/entities/artifactory.md": "LiWrench"
+  "02.wiki/entities/artifactory.md": "LiWrench",
+  "01.raw/articles/2026-09-25_Jev로 더 빠르고 스마트한 에이전트 하네스를 구축하는 방법입니다.md": "LiNewspaper",
+  "01.raw/articles/2026-09-25_Cursor&xAI 개발자 Lauren Tan - 한 달에 PR 2,000개를 프로덕션에 반영한 워크플로우.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-jev-agent-harness.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-lauren-tan-2000-prs.md": "LiVideo",
+  "02.wiki/concepts/system-1-model.md": "LiLayers",
+  "02.wiki/concepts/codebase-gardening.md": "LiPuzzle",
+  "02.wiki/entities/jev.md": "LiBot",
+  "02.wiki/entities/langchain.md": "LiBuilding"
 }

@@ -3,11 +3,11 @@ title: AI가 여는 형식 검증
 type: concept
 category: technique
 tags: [formal-verification, lean, proof, security, navier-stokes, verifiable-code]
-related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery]
+related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery, agent-verification-skill]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-20
-updated: 2026-09-23
+updated: 2026-09-26
 ---
 
 # AI가 여는 형식 검증
@@ -53,3 +53,11 @@ updated: 2026-09-23
 ## CEO의 서술 — "7대 난제 중 하나" (2026-09-23 · [[tech-bridge-altman-benioff-dreamforce]])
 
 [[sam-altman|Altman]]: *"올여름, 저희는 수학에서 가장 풀리지 않은 7대 난제 중 하나를 증명할 수 있는 모델을 개발했습니다"*(13:38~13:47), 그리고 서두에서 *"밀레니엄 프라이즈 문제까지 증명할 수 있는 모델"*(02:30). **나비에-스토크스(밀레니엄 문제 중 하나)에 대한 09-20 [[greg-brockman|Brockman]]의 서술과 같은 사건으로 보인다** — ⚠️ Altman은 **어느 문제인지 말하지 않고 Lean 형식화도 언급하지 않는다.** 이 위키는 같은 사건으로 **추정만** 한다.
+
+## 실무자의 위치 — "스펙트럼의 먼 끝, 여전히 열린 문제" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]이 에이전트 검증을 **스펙트럼**으로 놓으며:
+
+> **반대쪽 끝은 훨씬 훨씬 어렵고 여전히 열린 문제**인데, **형식 검증**입니다. **형식 기법이나 Lean, TLA+ 같은 언어**에 기대서 **비즈니스 로직 불변식이 항상 참인지 확인**하고 (…) 하지만 **형식 기법을 돌릴 능력이 없더라도 — 실제로 그런 사람은 아주 적습니다 — 검증 스킬만으로도 아주 멀리 갈 수 있습니다.** (07:44~08:37)
+
+이 페이지의 CEO 서술(Brockman·Altman — *모델이 형식 검증의 제약을 푼다*)과 **온도가 다르다.** 앞의 둘이 **수학 난제의 증명**을 말했다면, 이쪽은 **애플리케이션의 비즈니스 불변식**을 말하고, 결론은 **"아직 없어도 된다"** 다. 싼 쪽 끝은 [[agent-verification-skill]]. ⚠️ 한 문단의 언급이고 사례·도구 경험은 없다.

@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
-related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals]
+related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # 검증 스킬
@@ -52,3 +52,22 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[feature-map]] · [[skill-evals]] · [[verification-bottleneck]] · [[behavior-validated-trust]] · [[agent-trust-curve]] · [[pstack]] · [[lauren-tan]]
+
+## 검증의 스펙트럼, 그리고 스킬 = CLI + feature map (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표가 두 가지를 더한다.
+
+**① 스펙트럼의 반대쪽 끝 — 형식 검증.**
+
+> 스케일의 **낮은 쪽 끝**에는 검증 스킬 (…) **반대쪽 끝은 훨씬 어렵고 여전히 열린 문제**인데, **형식 검증** — **Lean, TLA+** 같은 언어로 **비즈니스 로직 불변식이 항상 참인지** 확인하는 것. (…) **형식 기법을 돌릴 능력이 없더라도 — 그런 사람은 아주 적습니다 — 검증 스킬만으로도 아주 멀리 갈 수 있습니다.** (07:12~08:37)
+
+검증 스킬은 **스펙트럼의 싼 쪽 끝**이라는 자기 위치 규정이다. → [[ai-formal-verification]]
+
+**② 두 구성 요소** — *"반복 끝에 도달한 형태이고 처음부터 이렇지는 않았다"*(09:03~09:08):
+
+- **스킬 디렉터리 안의 CLI** — *"에이전트가 **세션마다 달라질 수 있는 스크립트를 매번 만들게 하는 대신**, 스킬 디렉터리 안에 CLI를 만들어 두면 매번 그걸 쓴다"*(09:41~09:56). 목적은 **재현 가능성**과 **경험적 증거**이고, *"거기에 투자해서 좋게 만들어야"* 한다.
+- **[[feature-map]]** — *"구체화된 기억"*.
+
+**③ 경계가 다시 그어졌다** — *"검증은 정확성에 관한 것 (…) 성능이나 코드 품질에 대해서는 많은 걸 말해 주지 않는다"*(12:36~13:11). 빈칸은 **경험 많은 엔지니어가 만드는 품질 스킬**([[pstack]])이 채우고, **검증과 결합해야** *"정확할 뿐 아니라 품질도 높다"* 를 확인할 수 있다(14:18~14:30).
+
+**기원** — control glass는 Cursor agents window의 **성능 회귀 감시**를 손으로 하던 데서 나왔다(*"PR이 랜딩되는 속도로는 넘을 수 없는 PR의 벽"*, 03:08~03:16).

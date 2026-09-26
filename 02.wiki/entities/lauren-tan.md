@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-01
-updated: 2026-09-14
+updated: 2026-09-26
 ---
 
 # Lauren Tan
@@ -82,3 +82,14 @@ updated: 2026-09-14
 
 - [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-pstack-third-party-review]] · [[grokbot]] · [[cursor]] · [[pstack]] · [[persistent-agent-teams]]
 - <https://x.com/poteto>
+
+## 세 번째 본인 소스 — 1인 녹화 발표 "지난달 PR 2,000개" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+09-12 워크숍과 **같은 주제(신뢰)를 진행자 없이 38분으로 압축한 판본**이다. 비교 전체는 소스 페이지의 비교 절에 있다.
+
+- **자기소개가 바뀌었다** — *"SpaceX AI에서 GrokBot을 만듭니다"*(00:03~00:07), *"6개월 전 제가 처음 Cursor에 합류했을 때, **우리가 SpaceX AI의 일부가 되기 전**"*(02:07~02:17), *"Cursor와 SpaceX AI에서의 지난 6개월"*(04:14~04:20). 영상 제목은 *"Cursor&xAI 개발자"* 인데 **자막에 xAI는 없다.** ⚠️ **이 페이지 첫 줄의 "Cursor 엔지니어"를 고치지 않는다** — "SpaceX AI의 일부"의 형태를 화자가 말하지 않으므로 **발화만 기록**한다. 09-14 제3자의 *"SpaceX와 Cursor의 principal engineer"* 에 **본인 발화 쪽 근거가 처음 생긴 것**이지만 직함(principal)은 여전히 본인 진술에 없다.
+- **수치** — **지난달 PR 2,000건**(00:07~00:16). 위 표의 *지난달 1,000 · 이번 달 12일 시점 ~800* 과 나란히 두면 **약 한 달 뒤, "지난달" = 워크숍의 그 달**일 개연성이 있으나 **채택하지 않는다**(어림수 *5개월/6개월* 과 미확정 워크숍 날짜에 기댐). ⚠️ 자기 보고.
+- **기원** — Cursor 합류 직후 **agents window 성능 문제**를 맡았고, PR 홍수 속에서 트레이스·힙 스냅샷을 손으로 뜨다가 검증 스킬을 만들었다. 동기: *"내가 병목이다"*(04:49~04:51).
+- **새 조어·비유** — **정원과 정원사**, **안티패턴은 바이러스처럼 퍼진다**, **코드베이스는 구체화된 스냅샷**(→ [[codebase-gardening]]), GrokBot = **바깥 루프**(→ [[grokbot]]). **"소프트웨어 공장"이라는 말을 싫어한다** — 슬라이드의 그 말에 줄을 긋는다(33:39~33:42). 대안은 여전히 **미슐랭 주방**.
+- **새 입장** — *"회사 두뇌까지는 필요 없다, 에이전트는 도구를 잘 쓴다"*(33:05~33:16, → [[company-brain]]). 형식 검증(Lean·TLA+)은 *"여전히 열린 문제"*, *"없어도 검증 스킬로 멀리 간다"*(07:44~08:37).
+- **빠진 것** — 워크숍의 **유보가 전부 없다**: *"무제한 토큰이 있는 AI 랩"* 인정, *"맹목적으로 믿지 마라"*, *"평균 PR 크기는 모른다"*, 자동 병합의 서술. **수치는 두 배가 되고 유보는 사라졌다** — 이 인물의 수치를 인용할 때는 워크숍의 유보를 함께 적는다.

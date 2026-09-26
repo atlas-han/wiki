@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-01
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Cursor
@@ -77,3 +77,11 @@ Google 측 에피소드가 [[antigravity|Antigravity]]·[[claude-code|Claude Cod
 ## NVIDIA 사내 사용 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
 
 [[jensen-huang|Jensen Huang]]이 CBS 인터뷰에서 *"우리는 [Cursor]를 사용합니다"*(01:16~01:19)라고 한다 — [[openai-astra|Astra]]·[[claude-code|Claude Code]]·[[cognition|Cognition]]과 나란히. 09-06 G20 편(*"Anthropic, OpenAI, Cursor 같은 기성 AI"*)에 이어 **같은 화자의 두 번째 언급**이다. ⚠️ 규모·용도 없음. ko는 **"커서"**(01:16).
+
+## "우리가 SpaceX AI의 일부가 되기 전" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]이 녹화 발표에서: *"6개월 전 제가 처음 Cursor에 합류했을 때, **우리가 SpaceX AI의 일부가 되기 전**"*(02:07~02:17), *"**Cursor와 SpaceX AI**에서 지낸 지난 6개월"*(04:14~04:20), 자기소개는 *"**SpaceX AI에서** GrokBot을 만든다"*(00:03~00:07). 영상 제목은 *"Cursor&xAI 개발자"* — **xAI는 자막에 없다.**
+
+> ⚠️ **이 위키에서 Cursor가 (화자 합류 이후) SpaceX AI의 일부가 되었다는 취지의 첫 발화**다. 위 *"SpaceX와 Grok 4.6을 공동 발표"* 와 같은 방향이지만 **"일부가 되었다"의 형태(인수·편입·제휴)와 시점은 말하지 않는다.** 이 위키는 **조직 구조를 추정하지 않고 발화만 기록**한다. 제목의 *"xAI"* 는 채택하지 않는다(09-12 설명란과 같은 처리).
+
+같은 발표의 Cursor 내부 서술: **agents window = "Cursor IDE를 대체할 새 표면"**(02:28~02:36)이었고 합류 당시 **성능 문제가 많았다**. **Bugbot**은 이번에도 **지침(소프트) 층**으로 분류되고 → [[hard-vs-soft-enforcement]], **Cursor automations·SDK**가 [[grokbot]]의 바깥 루프와 짝을 이룬다(34:23~34:39). ⚠️ ko는 *bugbot* 을 **"오류 봇"** 으로 옮긴다.

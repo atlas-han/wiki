@@ -3,11 +3,11 @@ title: Post-training의 북극성 (RLHF · RLVR · 보정된 의사결정)
 type: concept
 category: technique
 tags: [post-training, rlhf, rlvr, calibration, objective-function]
-related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality]
+related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-26
 ---
 
 # Post-training의 북극성
@@ -53,6 +53,7 @@ updated: 2026-09-20
 - **제3의 목표에 대해 확인 가능한 것은 이름뿐이다.** 손실 함수·데이터·평가·규모 전부 없다. **이 표의 세 번째 행은 주장이지 관측이 아니다.**
 - **RLVR 서술도 한 문장뿐**이다 — *"순수 정확성의 로그 오류율"*.
 - 화자는 **그 제3의 것을 파는 회사 소속**이다.
+- **2026-09-26:** 같은 회사의 모델 [[jev|Jev]]가 [[tech-bridge-jev-agent-harness]]([[langchain|LangChain]] 소개)로 들어왔다 — *상태 + 질문 → 타입이 지정된 답과 확률*, 텍스트 생성 없음(→ [[system-1-model]]). 이것이 위 *"API의 모양조차 다르다"* 의 구체형일 **수는 있지만**, 그 영상은 학습 목표·보정·Almeida를 **말하지 않는다.** **세 번째 행은 여전히 주장이지 관측이 아니다** — 반환 확률이 보정되어 있는지조차 주장되지 않았다.
 
 ## References
 

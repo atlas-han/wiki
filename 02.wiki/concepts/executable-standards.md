@@ -4,11 +4,11 @@ type: concept
 category: practice
 tags: [guardrails, governance, standards, automation, tribal-knowledge]
 aliases: [실행 가능한 가드레일, 문서로서의 표준, executable policy]
-related: [decision-quality, behavior-validated-trust, agent-governance-layers, llm-coding-guidelines, trusted-throughput, intent-md, scheduled-agent-automations]
+related: [decision-quality, behavior-validated-trust, agent-governance-layers, llm-coding-guidelines, trusted-throughput, intent-md, scheduled-agent-automations, codebase-gardening]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-09
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # 실행 가능한 표준
@@ -85,3 +85,11 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-ai-era-code-quality]] · [[ibm]] · [[agent-governance-layers]]
+
+## 부족 지식을 리뷰 댓글에서 프레임워크로 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표가 이 페이지의 방향을 한 문장으로:
+
+> 예전에 **스타일 가이드, 코드 리뷰 과정, 엔지니어가 다른 엔지니어의 작업을 리뷰하며 댓글을 달던 것**에서 그걸 꺼내서, **그 지식을 추출해 프레임워크에, 코드베이스 자체에 인코딩**하는 겁니다. **코드베이스가 기억 역할을 하도록**요. (29:45~30:13)
+
+그리고 **스타일 가이드를 "사람만 강제할 수 있는" 최하위 층**으로 따로 세운다 — *"무엇이 빠졌는지 찾는 출발점"* 으로만 쓰라(18:26~18:34). → [[hard-vs-soft-enforcement]] · [[codebase-gardening]]

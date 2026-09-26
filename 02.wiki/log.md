@@ -1558,3 +1558,34 @@ HF 사건은 이 위키에서 **일곱 번 말해졌고 한 번도 기록되지 
 ### 운영 메모
 
 `%(availability)s` 목록 재판정으로 **두 번째 멤버 전용 → 공개 전환**을 잡았다. §4a의 *긴 유명인 대담* 두 편(`vMlsLmKuFZk`·`XZuws4hFG4o`)이 모두 풀렸다. 두 편을 나눠 젠슨 편은 **백그라운드 서브에이전트**가 raw·source·관련 페이지를 맡고, 공유 페이지(index·overview·log·tech-bridge·hugging-face·openai)는 메인이 맡았다. 보조 스크립트가 **여러 줄 YAML `sources:`** 를 인식하지 못해 [[tech-bridge]]에 키가 중복된 것을 커밋 전에 바로잡았다.
+
+## [2026-09-26] ingest | Tech Bridge — Jev로 에이전트 하네스 짓기(LangChain) · Lauren Tan 한 달에 PR 2,000개 (09-25 업로드 1편 + 멤버 전용 공개 전환 1편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 493초). 신규 업로드 **09-25 1편**(`BJeHhsMVc8A`) + ⭐ **멤버 전용이었던 `zkmvCDSxqdc`(Lauren Tan, 38:02)가 `public` 으로 풀려** 함께 ingest — 총 **2편**. `upload_date` 20260922 → **20260925**, **제목도 바뀌었다**(*"지난달 PR 2,000개를 프로덕션에 반영한 방법"* → 현재 제목). `FJo7p9SPS9c` 는 여전히 `subscriber_only`. 자막 ko·en-orig·en 모두 확보, **429 없음**(쿠키 무효 경고는 계속, 무해).
+
+**신규 source 2 · concept 2 · entity 2**, index 실측 **609 → 615**.
+
+- `BJeHhsMVc8A`(9:14, **LangChain 오픈소스 팀, 화자 "Sydney"**, 공식 챕터 13개) → [[tech-bridge-jev-agent-harness]]
+- `zkmvCDSxqdc`(38:02, **Lauren Tan**, 공식 챕터 없음) → [[tech-bridge-lauren-tan-2000-prs]]
+
+신규: [[jev]] · [[langchain]] · [[system-1-model]] · [[codebase-gardening]]
+
+보강(Jev 편): [[typesafe-ai]] · [[diogo-almeida]] · [[tech-bridge-rlhf-assistance-vs-automation]] · [[post-training-northstars]] · [[model-mixing-economics]] · [[transcript-classifier]] · [[generator-evaluator-pattern]]
+
+보강(Lauren Tan 편): [[lauren-tan]] · [[grokbot]] · [[cursor]] · [[spacex]] · [[dune-architecture]] · [[pstack]] · [[hard-vs-soft-enforcement]] · [[agent-trust-curve]] · [[feature-map]] · [[agent-verification-skill]] · [[ai-formal-verification]] · [[company-brain]] · [[organic-architecture]] · [[executable-standards]] · [[trusted-throughput]] · [[agent-manager-analogy]] · [[scheduled-agent-automations]] · [[tech-bridge]]
+
+### 이번 실행의 구도 — 열린 질문 하나가 닫히고, 한 사람이 자기 말을 다시 한다
+
+09-19 Almeida 편에서 **제목에만 있고 자막에 없던 'Jev'** 가 이번엔 **LangChain의 입으로** 서술됐다 — 텍스트 대신 타입이 정해진 답과 확률. 다만 Almeida의 *제3의 목표* 와 Jev를 잇는 발화는 여전히 없어 **부분 해소**로만 기록했다. Lauren Tan 편은 **09-12 워크숍의 재방문**이다. 09-18 재방문 규칙대로 *무엇이 더해지고 무엇이 사라졌는가* 를 적었다 — 더해진 것은 강제의 층 이름·가장 효과적인 층에 심기·[[codebase-gardening|정원사]]·*회사 두뇌는 필요 없다*, 사라진 것은 **유보 전부**(PR 크기 · 무제한 토큰 · 맹목적 신뢰 경계 · 자동 병합).
+
+### 주의사항
+
+- ⚠️ **ko가 뜻을 뒤집은 자리** — Lauren 편 *"다수가 슬롭"* → "지능이 높았지만", *"가장 효과적인 단계"* → "가장 어려운 단계", *"마지막으로 남기고 싶은 것"* → "제일 원하지 않는 일", 서술문 → 명령문(17:36). Jev 편 *"it's back on"* → "반환하십시오"(07:14), 설치 명령 → *"LangChain은 타입 안전합니다"*(08:53).
+- ⚠️ **핵심어 소실** — *harness* → "연결 장치", *structured output* → "구조화된 출구·체계적인 퇴출 절차", *tool call* → "전화·통화", PR → **"추출 요청"**, *feature map* → "함수 맵", Dune의 *코드 주석* 금지 → "댓글 금지", 16ms → "16분". *LLM* → 법학 석사 계열 여섯 번(Jev 편).
+- ⚠️ **`en` 트랙이 두 편 모두 en-orig와 달랐지만 ko 오역을 공유한다** — 독립 근거가 아니다. 인용은 en-orig만.
+- ⚠️ **수치** — Jev 편 자막 *"20~200배·40~400배"* vs 설명란 *"최대 200배/400배"*(하한 소실) → 자막을 따름, 측정 조건 없음. PR 2,000개는 자기 보고, 크기·회귀 수치 없음.
+- 미확정: Lauren Tan 소속(*SpaceX AI* 발화 · 제목 *Cursor&xAI* · 기존 *Cursor*), 촬영 시점(워크숍보다 약 한 달 뒤로 보이나 채택하지 않음), Jev 화자 성, Jev 출시일·패키지 정확한 이름.
+
+### 운영 메모
+
+두 편을 **병렬 서브에이전트**로 나눴고(raw 파일명은 처음부터 published 날짜), index·overview·log·tech-bridge·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지 충돌 없음. 멤버 전용 → 공개 전환은 **세 번째**이고 이번엔 **제목까지 바뀌었다** — §4a 목록 재판정은 `%(availability)s` 한 번으로 충분했다.

@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-09
-updated: 2026-09-10
+updated: 2026-09-26
 ---
 
 # 예약형 에이전트 자동화
@@ -68,3 +68,7 @@ updated: 2026-09-10
 
 - [[tech-bridge-cursor-legacy-refactoring]] · [[cursor]] · [[cursor-cloud]]
 - [[tech-bridge-agent-to-agent-as-search]] — 청소부 에이전트 = 지식 흐름의 예약 잡 (2026-09-10)
+
+## GrokBot 루틴 — 외부 신호를 구독하는 자동화 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]: *"**GrokBot 루틴**은 **Slack 스레드나 Sentry 알림을 구독해서 자동으로 일을 시작**하게 해 준다"*(33:50~34:00), 그리고 *"**Cursor automations**를 세팅하고 **SDK**로 추가 봇"*(34:23~34:34). 이 페이지의 예약 잡이 **시간**을 트리거로 삼는다면, 루틴은 **외부 이벤트**(알림·스레드)를 트리거로 삼는다. 결과 사례는 **버그 리포트 자동 재현·PR 자동 오픈**(34:57~35:04). → [[grokbot]] ⚠️ 제품 권유이고 실패 사례·수치는 없다.

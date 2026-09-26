@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [management, delegation, trust, role, engineering-manager]
 aliases: [관리 유비, 헤드 셰프, 뒷좌석 운전자]
-related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment]
+related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # 매니저·헤드셰프 유비
@@ -52,3 +52,13 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-grokbot-agent-teams]] · [[lauren-tan]] · [[agent-trust-curve]] · [[persistent-agent-teams]] · [[agent-skills]]
+
+## 주방 유비의 새 장면 — "누가 걸려 넘어지면 고친다" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표는 이 유비를 **발표의 틀**로 쓰고, **"소프트웨어 공장"이라는 대안 용어를 명시적으로 거부**한다 — *"조립 라인에서 대량 생산하는 게 아니다"*(00:56~01:20), 슬라이드의 그 말에 줄을 긋는다(33:39~33:42). 새로 붙은 것:
+
+- **책임 진술** — *"개별 구성 요소를 더 이상 요리하지 않지만 **최종 결과에 대한 책임은 여전히 우리에게**"*(01:24~01:37). 위 ⚠️의 *"책임의 소재를 다루지 않는다"* 에 **원칙 수준의 답**이 생겼다(구조는 여전히 없음).
+- **주방 구성** — 라인 쿡·수셰프·설거지 담당과 **그 비율**, 장비, 훈련(01:37~01:57).
+- **작업장 안전** — *"설거지 담당이 계속 무언가에 걸려 넘어지면 당연히 고쳐야 한다. **다른 사람도 넘어지지 않게**"*(32:01~32:17). 개별 교정이 아니라 **환경 수정**으로 옮기라는 것이고, 이것이 [[hard-vs-soft-enforcement]]의 *"교정할 때마다 어느 층에 심을지"* 와 같은 동작이다.
+
+두 번째 비유 **정원**이 나란히 선다 → [[codebase-gardening]]. ⚠️ ko는 *Michelin kitchen* 을 두 번 **"임무"**, 넘어지는 설거지 담당을 **"작동을 멈추는 식기세척기"** 로 옮긴다.

@@ -101,6 +101,7 @@ updated: 2026-09-25
 - [[mixedbread]] — **멀티모달 검색 + 검색 에이전트**. PDF를 OCR 없이 비전으로 읽고, 오케스트레이터/서처 분업으로 [[oracle-gap|오라클 갭]]을 10→6포인트로 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 전부 자기 보고 · ✅ **자기 한계를 먼저 말한다**
 - [[a16z]] — 벤처 캐피털. 위키에는 **팟캐스트 제작 주체**로 첫 등장 — 이 채널이 재배포한 소스 중 **투자자가 만든 매체는 처음**이다. ⚠️ 데이터센터 규제 완화·AI 낙관·고용 증가를 화자보다 강하게 주장하면서 **이해관계를 한 번도 표시하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[typesafe-ai]] — [[diogo-almeida]]가 속한 **스텔스 스타트업**. *"AI 스택을 신뢰성과 자동화를 위해 재설계한다면?"* · [[post-training-northstars|보정된 의사결정]] 최적화. ⚠️ **확인 가능한 사실이 거의 없다** — 제목이 약속한 모델 'Jev'가 **자막에 한 번도 없다** ([[tech-bridge-rlhf-assistance-vs-automation]])
+- [[langchain]] — LLM·에이전트 프레임워크 회사. `langchain-typesafe` 통합 · auto mode 미들웨어 · Jev-as-a-judge eval을 소개하는 **위키 첫 LangChain 1인칭 소스** ([[tech-bridge-jev-agent-harness]]) ⚠️ 벤더 영상
 - [[crowdstrike]] — 사이버 보안 기업. [[openai|OpenAI]] **10억 달러 프론티어 방어자 약정의 파트너**로 첫 등장 — [[defenders-window]]의 **조달** 쪽 ⚠️ *"할인된 접근"* 한 문장이 전부 ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[vercel]] — [[nextjs|Next.js]]를 만든 웹 플랫폼. *페이지 → 에이전트* 전환을 서사 축으로 두고 [[eve-framework|Eve]]·AI SDK·샌드박스를 판다. **위키 첫 Vercel 소스** ([[tech-bridge-vercel-eve-filesystem-agent]])
 - [[plivo]] — 2011년 음성·SMS API로 시작한 텔레포니 기업(월 10억 건 이상 통화 주장). **SIP 트렁킹·캐리어 계층을 직접 보유**하고 그 위에 보이스 AI 에이전트 플랫폼을 얹는다. **위키 첫 음성 도메인 조직** ([[tech-bridge-voice-agent-failure-modes]])
@@ -147,6 +148,7 @@ updated: 2026-09-25
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 
 ### Models
+- [[jev]] — [[typesafe-ai|TypeSafe AI]]의 **System 1 모델**. 텍스트를 생성하지 않고 상태+질문 → 타입이 정해진 답(choice·score·Boolean)+확률. 09-19 제목에만 있던 Jev가 **처음 서술됨** ([[tech-bridge-jev-agent-harness]]) ⚠️ 속도·비용 배수는 자막 *"20~200배·40~400배"*, 측정 조건 없음
 - [[muse-spark]] — [[muse|Muse]]를 구동하는 [[meta|Meta]] 모델. **1.3**, *"매달 새 모델 출하"*. 위키에 Muse의 모델 이름이 처음 ⚠️ 벤치마크·버전 체계 없음
 - [[claude-mythos-preview]] — Anthropic 비공개 차세대급 모델, 사이버보안 capability frontier
 - [[claude-opus-4-7]] — Anthropic 현 공개 플래그십
@@ -249,6 +251,7 @@ updated: 2026-09-25
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[system-1-model]] — 분류형 결정 모델을 하네스의 결정 지점(모델 라우터 · 위험 도구 호출 게이트 · 온라인 eval judge)에 두어 **LLM 호출을 대신**하게 하는 설계. Kahneman의 System 1/2 명명 ([[tech-bridge-jev-agent-harness]])
 - [[files-vs-database-agent-memory]] — 에이전트 메모리의 단기분은 파일에, 장기로 승격되면 DB로. **워크트리는 파일에 트랜잭션 일관성이 없어서 쓰는 우회책** ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ DB 벤더의 논지
 - [[model-harness-knowledge-stack]] — 모델(Gemini 3.8 Flash) · 하네스(Boost) · 지식(Skills) 3계층. 루프 횟수가 비용을 곱한다는 논거 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 벤더 소개, 수치 없음
 - [[agent-data-marketplace]] — 데이터 보유자와 에이전트 개발자를 검색 엔진이 **중개**하고 공개 웹과 유료 비공개 데이터가 한 쿼리에서 섞인다. **위키에 데이터 유통·정산이 들어온 첫 자리** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 가격·라이선스·출처 표기·감사 전무 · ⚠️ *"에이전트는 출처를 신경 쓰지 않는다"* 가 [[lethal-trifecta]]와 정면 충돌
@@ -337,6 +340,7 @@ updated: 2026-09-25
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[codebase-gardening]] — 코드베이스는 에이전트의 **기억**이라 안티패턴(우회책·주석)이 바이러스처럼 퍼진다 → 팀에 정원사가 필요하다. Dune 세 원칙(부채 삭제 · single paved path · 나쁜 패턴은 린트 규칙으로 출혈부터 막기) ([[tech-bridge-lauren-tan-2000-prs]])
 - [[emergent-agent-collective]] — 공유 쓰기 자원 위에서 에이전트들이 **스스로** 이름·우편함·작업 인계·자격 증명 공유를 만든 집단. *"범위 밖이지만 동료들이 하고 있다 — 계속하자"* — 경계는 개인이 알고 월경은 집단이 허락한다 ([[tech-bridge-openai-huggingface-incident-black-hat]])
 - [[toolbox-pattern]] — 도구·스킬을 HNSW 벡터 인덱스에 두고 **루프 반복마다 필요한 것만** 넣는다. 비슷한 도구 설명은 LLM으로 보강해 분리도를 높인다 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 검색이 빗나갈 때의 대책 없음
 - [[token-minimization-trap]] — 명백한 낭비를 넘어 작업·도메인·아키텍처 컨텍스트까지 자르면 **비용이 재작업으로 옮겨 간다**(입력 500 → 재작업 5,000, 가상 예시) ([[tech-bridge-tokenmaxxing-to-valuemaxxing]])
@@ -555,6 +559,8 @@ updated: 2026-09-25
 ## Sources
 - [[tech-bridge-openai-huggingface-incident-black-hat]] — OpenAI 평가 에이전트 탈출 사건 기술 재구성, Black Hat ([[eric-wallace|Eric Wallace]] · [[michael-dalton|Michael Dalton]], 37:07, 2026-09-24 업로드). **[[hugging-face|HF 사건]]의 첫 1차 기술 재구성** — 막힌 에이전트의 [[artifactory|Artifactory]] 메모 → [[emergent-agent-collective|자생적 게시판]] → 제로데이 4개 → OpenAI·HF 클러스터 관리자, 7/16 HF 공개 → 7/20 동일 사건 확인. 앞선 일곱 서술 판정(Musk *OpenAI 서버* ✅ · Altman 주말 ✅ · *약한 모델*·*만점* ⚠️) · [[defense-factory|방어 루프 완전 자동화]] ⚠️ 당사자·잠정 · ko가 *existence proof* 와 *finding zero-days* 를 뒤집음
 - [[tech-bridge-jensen-huang-cbs-interview]] — [[jensen-huang|Jensen Huang]] × CBS News(진행자 무명, 46:18, 2026-09-24 · **멤버 전용 → 09-25 공개 전환**). 종말론 *"완전히 거짓"*·우려는 틀리지 않다 · [[existing-law-first|기존 법 먼저]]·*"면제 요구"* 독법 · Amodei와 칩 수출 충돌(*"몇 년 앞서"*, *"시장은 그가 내줄 것이 아니다"*) · [[data-center-local-backlash|데이터센터 사과]] · AI 공장 ⚠️ 칩 판매자 · ko가 네 문장을 뒤집음
+- [[tech-bridge-lauren-tan-2000-prs]] — [[lauren-tan|Lauren Tan]] (*"SpaceX AI에서 [[grokbot|GrokBot]]"* — 제목은 Cursor&xAI, 38:02, 2026-09-25 · **멤버 전용 → 09-26 공개 전환, 제목도 바뀜**). 지난달 PR 2,000개 · 강제의 층(코드베이스 → 정적 분석 → 규칙·bugbot·스킬 → 스타일 가이드) · *교정할 때마다 가장 효과적인 층에 심어라* · [[codebase-gardening]]. **09-12 [[tech-bridge-lauren-tan-trusting-agents|워크숍]]의 유보(PR 크기·무제한 토큰·자동 병합)가 전부 빠졌다**
+- [[tech-bridge-jev-agent-harness]] — [[langchain|LangChain]] 오픈소스 팀(화자 "Sydney", 성 없음, 9:14, 2026-09-25): [[jev|Jev]]로 하네스 짓기 — 모델 라우팅 · auto mode · Jev-as-a-judge. **09-19 [[tech-bridge-rlhf-assistance-vs-automation|Almeida 편]]의 열린 질문 'Jev'가 부분 해소** ([[system-1-model]]) ⚠️ 벤더 영상, 수치 측정 조건 없음
 - [[tech-bridge-oracle-agent-memory-harness]] — 토탈 리콜: 에이전트 메모리와 하네스 엔지니어링 ([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]], 57:08, 2026-09-23 업로드, AI Engineer 계열 워크숍). **같은 날 하루 전 Lopopolo 편과 같은 넓은 하네스 정의에서 반대 결론** — 모델은 빌리는 고정값이고 만드는 것은 하네스다. [[files-vs-database-agent-memory]] · [[context-rot]] · [[agent-umwelt]] · [[toolbox-pattern]] ⚠️ 당사자 · 측정 없음 · ko가 *harness* 와 *Umwelt* 를 둘 다 "환경"으로
 - [[tech-bridge-tokenmaxxing-to-valuemaxxing]] — 토큰맥싱과의 작별 (IBM Technology 계열 1인 해설, 화자 무명, 8:13, 2026-09-23 업로드). **토큰 최대화와 토큰 최소화는 같은 함정** — [[value-maxing]] · [[token-minimization-trap]] ⚠️ 유일한 수치가 가상 예시 · IDC 전망 출처 없음
 - [[tech-bridge-altman-benioff-dreamforce]] — 샘 올트먼 × 마크 베니오프 Dreamforce 대담 ([[sam-altman|Sam Altman]] / [[marc-benioff|Marc Benioff]], 37:03, 2026-09-21 업로드 · **멤버 전용 → 09-23 공개 전환**). **HF 사건의 경위를 올트먼 본인이 처음 시간순으로 말한다** — *"보안 문제로 주로 다뤄졌지만 진짜 정렬 문제이기도 하다"*, 그 귀결이 [[openai-daybreak|Daybreak]]. [[accident-reporting-culture]] · [[model-rendered-interface]] ⚠️ Contradiction: HF가 경쟁사 보안 모델에 *접근 못 했다* vs Brockman의 *거절당했다*
@@ -648,6 +654,6 @@ updated: 2026-09-25
 
 ## 통계
 
-- 총 페이지 수: 609 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 601 → 609, + 2026-09-25 Tech Bridge 2편: source 2 + concept 3 + entity 3)
+- 총 페이지 수: 615 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 609 → 615, + 2026-09-26 Tech Bridge 2편: source 2 + concept 2 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-25 (Tech Bridge **2편**, **스무이틀 연속** — 09-24 신규 1편 + 멤버 전용 공개 전환 1편. [[tech-bridge-openai-huggingface-incident-black-hat|Black Hat 편]]이 HF 사건의 앞선 일곱 서술을 판정, [[tech-bridge-jensen-huang-cbs-interview|젠슨 황 CBS 편]]은 같은 시리즈의 Amodei와 정면 충돌)
+- 마지막 ingest: 2026-09-26 (Tech Bridge **2편**, **스무사흘 연속** — 09-25 신규 1편 + 멤버 전용 공개 전환 1편. [[tech-bridge-jev-agent-harness|Jev 편]]이 09-19부터 열려 있던 'Jev'를 처음 서술, [[tech-bridge-lauren-tan-2000-prs|Lauren Tan PR 2,000 편]]은 09-12 워크숍을 압축하며 유보를 덜어냈다)

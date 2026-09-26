@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-07
-updated: 2026-09-23
+updated: 2026-09-26
 ---
 
 # SpaceX
@@ -55,3 +55,9 @@ updated: 2026-09-23
 **위 09-20 절이 "문맥과 어긋난다"고 표시만 했던 열거**(Brockman 편 진행자)와 [[tech-bridge-lauren-tan-trusting-agents|Lauren Tan 편]]의 *"SpaceX AI"*([[grok-4-6]])에 이어, **이번엔 소유주 본인이** SpaceX를 AI 모델 평가 주체로 부른다. **세 소스가 독립적으로 같은 방향을 가리킨다.** ⚠️ 조직 구조를 설명하는 소스는 여전히 없다 — **추정하지 않는다.**
 
 같은 대담: 사장 겸 COO [[gwynne-shotwell]] · Tesla와의 공동 R&D 팹 [[terafab]] · Starship **2027년 완전 재사용** 목표(*"가능성이 매우 높다"*, 18:17~18:27).
+
+## "SpaceX AI"와 Cursor — 당사자 엔지니어의 발화 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]: *"저는 **SpaceX AI에서 GrokBot**을 만듭니다"*(00:03~00:07), *"6개월 전 Cursor에 합류했을 때, **우리가 SpaceX AI의 일부가 되기 전**"*(02:07~02:17). → **[[cursor|Cursor]]가 "SpaceX AI"의 일부가 되었다는 취지의 첫 발화**다. 위 09-23 절의 *"세 소스가 같은 방향"* 에 **네 번째**가 붙는다.
+
+> ⚠️ **"SpaceX AI"가 SpaceX의 조직 단위인지, 별도 법인인지, 무엇과 무엇의 결합인지 이 소스도 말하지 않는다.** 영상 제목은 *"Cursor&xAI"* 인데 **자막에 xAI는 없다.** 위 절의 원칙대로 **조직 구조를 추정하지 않는다.**

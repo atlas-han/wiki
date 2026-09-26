@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-01
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # GrokBot
@@ -61,3 +61,19 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-grokbot-agent-teams]] · [[persistent-agent-teams]] · [[cursor]] · [[lauren-tan]] · [[roshan-sadanani]]
+
+## 세 번째 본인 소스 — "바깥 루프" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]의 녹화 발표가 GrokBot과 Cursor의 **역할 분담을 처음 말로 정리**한다:
+
+> **GrokBot과 Cursor는 함께 흥미로운 역할**을 합니다. **GrokBot은 제가 바깥 루프(outer loop)라고 부르는 것을 제공하는 데 아주 뛰어나요.** **Slack, Datadog, Sentry, PlanetScale** 등 여러 커넥터에 연결해 정보를 모으고 스스로 좋은 결정을 내리게 할 수 있으니까요. (32:34~33:05)
+
+> **GrokBot 루틴**은 **Slack 스레드나 Sentry 알림을 구독해서 자동으로 일을 시작**하게 해 줍니다. (…) GrokBot은 **바깥 루프에서 오는 이벤트에 자동으로 반응해서 cloud agent를 띄울** 수 있습니다. (33:50~34:20)
+
+- **구도**: GrokBot = **바깥 루프**(외부 신호·이벤트) → Cursor **cloud agents** = 실행 → **코드베이스·규칙·스킬** = 공유 인프라. 여기에 **Cursor automations**와 **SDK**로 *"세팅한 에이전트 인프라를 재사용하는 추가 봇"*(34:23~34:39). 결과 사례(스크린샷): **버그 리포트 자동 재현, PR 자동 오픈**(34:48~35:04).
+- 위 구성 요소 표의 **루틴·자동화** 행에 **구독 대상(Slack 스레드·Sentry 알림)** 과 **커넥터 목록**이 처음 채워졌다.
+- *"어떤 사람들은 이걸 **회사 두뇌**라고 부르는데 저는 그렇게 정교한 게 필요하다고 생각하지 않는다"*(33:05~33:16) → [[company-brain]]
+- **Dune의 host는 "GrokBot 가상 머신에서 돈다"**(27:31~27:36) — 위 *"자체 컴퓨터"* 행과 맞물린다. → [[dune-architecture]]
+- 화자 소개가 *"**SpaceX AI에서** GrokBot을 만든다"*(00:03~00:07)로 바뀌었다. ⚠️ 이 페이지 첫 줄의 *"Cursor의 … 제품"* 은 고치지 않는다 — 화자는 *"Cursor가 SpaceX AI의 일부가 되었다"* 는 취지로만 말한다(→ [[cursor]]).
+
+> ⚠️ **당사자의 제품 권유**이고 커넥터·루틴의 가용 범위, 비용, 실패 사례는 없다. ko·en-orig 모두 제품명을 여러 번 틀린다(en-orig *graphbot·Rockbot·Grockbots* / ko *"GraphBot"·"성장봇"*).

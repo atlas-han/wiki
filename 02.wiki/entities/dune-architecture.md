@@ -3,9 +3,9 @@ title: Dune (GrokBot 아키텍처)
 type: entity
 category: tool
 tags: [architecture, electron, react, ci, agents, grokbot, cursor]
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # Dune
@@ -43,3 +43,16 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[grokbot]] · [[lauren-tan]] · [[shortest-path-architecture]] · [[hard-vs-soft-enforcement]] · [[llm-coding-guidelines]] · [[organic-architecture]]
+
+## 세 원칙, host·client, 그리고 "사람에게는 짜증" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표가 더한 것:
+
+- **세 원칙**(25:14~26:12) — ① **이미 있는 기술 부채를 삭제** ② **축복받은 패턴에 단일한 포장 경로(single paved path)** — *"관습적인 방법이 하나여야 에이전트가 추측하지 않는다"* ③ **나쁜 패턴을 보면 먼저 린트 규칙** — *"항상 즉시 치울 필요는 없다. 적어도 출혈은 멈춘다."* → [[codebase-gardening]]
+- **명사 둘 추가** — **host**(*"GrokBot 가상 머신에서 도는"*)와 **client**(*"Dune 애플리케이션 전체를 구동하는"*). **entry point**는 *"일종의 라우트"*(27:12~27:43).
+- **렌더러 예산에 120fps = 8ms** 추가(28:27~28:38). 경계 강제는 여전히 **import·의존성 그래프**(28:53~29:02). *"Cursor agents window에서 얻은 교훈"* 이라 명시.
+- **주석 금지의 이유가 다르게 제시됐다** — *"에이전트가 코드 주변의 주석을 **진짜 문제를 풀지 않을 정당화**로 쓰고 반창고로 덮는다"* + **복제되어 퍼진다**(23:41~24:25). 위 표의 *"99%가 무관한 역사적 사연"* 과 **모순이 아니라 다른 층**이다. ⚠️ 대가(지식이 어디 남나)는 이번에도 답이 없다. ⚠️ ko 자막은 이 결정을 **"댓글 금지"** 로 옮겨 **PR 댓글 금지**처럼 읽힌다.
+- **대가를 인정한다** — *"사람에게는 꽤 짜증나는 코드베이스일 수도"*(19:45~19:53). 이유는 기여자 구성 — *"디자이너, PM, **CEO**"*(20:06~20:15).
+- **Dune이 요점이 아니다** — *"핵심 주제는 Dune이 아니라 여러분 자신의 에이전트 친화 프레임워크"*, **부족 지식을 스타일 가이드 리뷰에서 꺼내 코드베이스에 인코딩**(29:24~30:10).
+
+`useEffect` 금지·*"Electron 앱을 위한 Next.js"*·PR 600건 재작성은 **이번 발표에 나오지 않는다.** 여전히 오픈소스 언급 없음.

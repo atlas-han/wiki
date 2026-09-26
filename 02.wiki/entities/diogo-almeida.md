@@ -7,9 +7,9 @@ aliases: [Diogo Almeida, 지오구 알메이다]
 links:
   - https://x.com/CompleteSkeptic
   - https://www.linkedin.com/in/diogomda/
-sources: [tech-bridge-rlhf-assistance-vs-automation]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-26
 ---
 
 # Diogo Almeida
@@ -45,10 +45,11 @@ updated: 2026-09-20
 - **[[sutton-bitter-lesson|Bitter Lesson]]을 통상과 반대 방향으로 인용한다**(15:38~15:49) — 양 트랙 일치라 자막 오류로 보기 어렵고, 이 위키는 판독하지 않는다.
 - *"원래의 스케일링 법칙이 잘못되었다"*(13:29~13:43) — **힌트 한 줄로 끝난다.**
 - 소속 회사의 제품·모델에 대해 확인 가능한 것이 없다 → [[typesafe-ai]]
+  - **2026-09-26 갱신:** 회사의 모델 [[jev|Jev]]는 이제 [[langchain|LangChain]]의 소개 영상 [[tech-bridge-jev-agent-harness]]로 서술된다(상태 + 질문 → 타입 답 + 확률). ⚠️ 그 영상은 **Almeida를 언급하지 않고**, Jev가 이 사람이 말한 *보정된 의사결정* 목표로 학습됐는지도 말하지 않는다 — **이 위키는 둘을 연결하지 않는다.**
 
 ## References
 
 - [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen
-- [[typesafe-ai]] · [[openai]] · [[ai-engineer]]
+- [[typesafe-ai]] · [[openai]] · [[ai-engineer]] · [[jev]] ([[tech-bridge-jev-agent-harness]], 2026-09-26 — Almeida 비언급)
 - 관련: [[rlhf]] · [[assistance-vs-automation]] · [[preference-reward-asymmetry]] · [[post-training-northstars]] · [[smarter-software-vs-cheaper-software]] · [[claude-code]]
 - 외부: <https://x.com/CompleteSkeptic> · <https://www.linkedin.com/in/diogomda/>

@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
-related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing]
+related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness]
 created: 2026-09-09
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # 모델 혼합의 경제학
@@ -113,3 +113,13 @@ updated: 2026-09-24
 그리고 이 축에 처음으로 **사업 모델**이 붙는다 — *"일부 회사들은 본질적으로 그것만 한다 (…) 원래 쓰려던 돈에서 **절감해 드린 토큰의 10%를 받겠습니다**"*(54:33~54:45, en-orig 대조; ⚠️ ko는 *"토큰 가격의 10%"* 로 바꿨다). 회사 이름은 말하지 않는다.
 
 이 페이지의 분할 축들(계획 vs 실행, 대화 vs 도구 호출, 루프 횟수가 곱하는 비용)에 **난이도 라우팅**이 더해진다 — 기준이 *단계*가 아니라 **문제의 난이도**다. ⚠️ **난이도를 누가 어떻게 판정하는지**(라우터 자체가 LLM인가)는 말하지 않는다. *소규모 전문가 혼합이 미래*는 **개인 의견**이라고 스스로 단서를 단다(53:58).
+
+## 라우터가 LLM이 아닐 때 — System 1 모델 (2026-09-26 · [[tech-bridge-jev-agent-harness]])
+
+바로 위 절이 남긴 빈칸(*난이도를 누가 판정하나, 라우터 자체가 LLM인가*)에 [[langchain|LangChain]]이 **한 가지 구체적 답**을 낸다 — 라우터를 **텍스트를 생성하지 않는 분류 모델**([[typesafe-ai|TypeSafe]]의 [[jev|Jev]])로 둔다.
+
+> 최근 LangChain에서 탐색하고 있는 예가 있는데, **저희 내부 코딩 에이전트가 주어진 질문이나 코딩 작업의 복잡도에 따라 빠르고 저렴한 모델과 더 비싸고 강력한 모델 사이를 전환**하게 하고 싶습니다. (…) **주어진 기준에 비추어 프롬프트를 평가해 빠른 모델을 쓸지 더 강력한 모델을 쓸지 결정**하는 데 도움을 받을 수 있습니다. 그리고 Jev는 거의 즉시 결정합니다. (06:17~06:44)
+
+라우팅은 **매 요청마다** 일어나므로 라우터의 지연·단가가 절감액을 깎는다 — 라우터가 LLM이면 *싼 모델로 보내기 위해 비싼 판정을 치르는* 역설이 생길 수 있다. 이 소스의 논거가 정확히 그 비용 쪽이다(*"분류형 작업에서 LLM 대비 20~200배 빠르고 40~400배 저렴할 수 있다"*, 02:22~02:34). → [[system-1-model]]
+
+⚠️ **벤더 소개이고 *"탐색 중"*(06:18) 단계다.** 라우팅 정확도, **오라우팅**(어려운 작업을 싼 모델로 보냈을 때)의 비용, 20~200배의 측정 조건이 **전부 없다.** Oracle 편의 *"절감액의 10%"* 사업 모델과 같은 자리를 **모델 제공자**가 노리는 구도지만 소스는 그렇게 말하지 않는다.

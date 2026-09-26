@@ -2,12 +2,12 @@
 title: Generator–Evaluator Pattern
 type: concept
 category: pattern
-tags: [agent, multi-agent, gan, evaluation, feedback-loop]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design]
+tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness]
 created: 2026-05-25
-updated: 2026-09-18
+updated: 2026-09-26
 ---
 
 # Generator–Evaluator Pattern
@@ -245,3 +245,17 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 그리고 루프의 **자리**가 정해진다 — *실행 → 조언 → 채점 → 회고* 에서 채점은 **회고로 넘기기 전의 관문**이다(*"만약 통과된다면 (…) 회고에 보내서"*, 11:44~11:49) → [[strategy-primitives]].
 
 > ⚠️ **채점 전략 단독의 합격률·진짜 비용은 자막에 없다**(*"복잡한 전략 최대 75%"* 가 전부). ⚠️ **채점자의 독립성**(같은 모델인가, 루브릭은 누가 쓰는가)이 이번에도 다뤄지지 않는다 — 09-09 이래 **네 번째로 열린 채**이고, 이번엔 **판매자 자신의 발표**다. ⚠️ ko가 *grading* 을 **"성적 평가"·"성적"** 으로, *grader*(en-orig ASR *greater*)를 **"더 상위 단계"** 로 옮겨 ko만 읽으면 채점자가 사라진다.
+
+## 두 번째 비-LLM judge — 루브릭 항목을 질문으로 (2026-09-26 · [[tech-bridge-jev-agent-harness]])
+
+*평가자가 LLM이 아닐 때*(2026-09-12, [[slop-probes]])에 이은 **두 번째 비-LLM 평가자**. [[langchain|LangChain]]이 [[typesafe-ai|TypeSafe]]의 [[jev|Jev]]를 **온라인 eval의 judge**로 쓴다.
+
+> **대규모로 eval을 돌릴 때 모든 [트레이스]를 사람이 감독하는 것은 그다지 합리적이지 않습니다.** 그렇다고 (…) **코드 스타일 평가자만으로는 부족한 경우가 많습니다.** (07:45~07:56)
+
+> [eval의 입력]과 에이전트의 답이 있고, 여러분이 제공하는 **루브릭, 즉 채점 기준**이 있습니다. **이 답이 맞는가? 레퍼런스와 일치하는가? 근거가 있는가(grounded)? 출처가 인용되었는가?** 그러면 Jev가 이 여러 루브릭 기준에 따라 주어진 답을 채점할 수 있습니다. (08:01~08:19)
+
+구조가 이 페이지의 기존 평가자와 다르다: **루브릭 항목 하나 = 타입이 지정된 질문 하나**(Boolean·score)이고, 한 상태(입력 + 답)에 여러 질문을 **병렬로** 던진다(05:16~05:22) → [[system-1-model]]. 프로브(09-12)가 기준을 **데이터에서 마이닝**했다면, 여기서는 기준을 **사람이 질문으로 쓴다** — LLM judge와 같은 입력 방식에 **텍스트 없는 출력**이다.
+
+> *"LLM-as-a-judge 온라인 eval의 일종의 진화"* (08:22~08:24) — 블로그 결과로 *"훨씬 저렴하고 훨씬 빠를 뿐 아니라 (…) LLM 대안보다 eval 전반에 걸쳐 훨씬 더 신뢰할 수 있고 일관적"* (08:31~08:42)
+
+⚠️ **벤더의 구두 전언이고 수치가 영상에 없다**(블로그는 이 위키가 확인하지 않음). *일관성*(같은 입력 → 같은 점수)은 *정확성*(사람 판정과의 일치)이 아니다 — 소스는 둘을 구분하지 않는다. **판정 이유가 텍스트로 남지 않는다**는 점(감사·디버깅)도 다루지 않는다. 그리고 **루브릭을 누가 쓰는가** — 이번엔 명시적으로 *"여러분이 제공하는"* 사람이다. 09-09 이래 열려 있던 *작성자=검증자* 문제에서 **사람 쪽으로 닫히는 드문 예**지만, 루브릭 품질은 여전히 검증되지 않는다.

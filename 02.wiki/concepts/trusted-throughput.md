@@ -5,9 +5,9 @@ category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
 related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth, value-maxing, token-minimization-trap]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-02
-updated: 2026-09-24
+updated: 2026-09-26
 ---
 
 # Trusted Throughput
@@ -210,3 +210,7 @@ Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacev
 > **[진짜] 지표[가] 부족[한 상황에서] 팀들은 [사용량 대시보드]를 만들었[고], 사람들[은 그것을 조작(game)하는 법을] 금방 익혔습니다.** 곧 **사용[량]이 가치의 [대리] 지표가 되었습니다.** — IBM 컨설팅 SVP *Neil Dar*(ASR 철자, 설명란 미확정) 인용 (01:32~01:46)
 
 이 페이지 원 소스의 Amazon 리더보드 사례가 **일반화된 증언**으로 다시 나왔다. 처방도 같다 — *"목표는 인공지능[을 덜] 사용하[는 것이 아니라], 인공지능을 더 효과적으로 활용하[는 것]"*(06:25~06:30) = 이 페이지의 *"'긴축'에 관한 것이 아니라 ROI"*. 새로 붙은 것은 둘이다: **긴축 쪽의 실패 메커니즘**([[token-minimization-trap]] — 컨텍스트 절감 → 재작업)과 **플랫폼 리더의 인센티브**(*"[볼륨 대신] 가치를 측정해야 하고, 효율성[에] 보상"*, 06:51~06:55). ⚠️ ko가 *dashboards* → **"패널"**, *game* → **"조종"**, *instead of* **누락**으로 이 문장들의 Goodhart 의미를 흐렸다. → [[value-maxing]]
+
+## 수치는 두 배, 유보는 사라졌다 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]의 녹화 발표: *"지난달 **PR 2,000개**를 프로덕션에 반영"*(00:07~00:16) — 09-12 워크숍의 *지난달 1,000 · 12일 시점 ~800* 의 두 배다. 화자는 *"목표가 아니었다"*(04:24~04:31)고 하지만, 워크숍에 있던 **유보**(평균 PR 크기 모름, 맹목적 신뢰 경계, 무제한 토큰 인정)는 **녹화 발표에 하나도 없다.** 이 페이지의 기준으로 읽으면 **PR 수는 여전히 throughput이지 trusted throughput의 증거가 아니다** — 회귀·되돌림·리뷰 부담의 수치가 없다. → [[agent-trust-curve]]

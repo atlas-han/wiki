@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # 신뢰 곡선
@@ -60,3 +60,15 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[lauren-tan]] · [[agent-verification-skill]] · [[agent-manager-analogy]] · [[behavior-validated-trust]] · [[persistent-agent-teams]] · [[pstack]]
+
+## 첫 구간이 가장 빠져나오기 어렵다 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표는 곡선을 **본인 여정**이 아니라 **청중의 위치 진단**으로 쓴다. 곡선의 이름도 *"trust graph"*(35:33~35:35).
+
+> 저도 처음엔 **1~5개 범위**에 있었습니다. **모든 채팅을 베이비시팅해야 한다고 느끼고** (…) 저는 **이 단계가 사실 빠져나오기 가장 어렵다**고 주장하고 싶습니다. **어떻게 빠져나오는지가 항상 분명하지는 않으니까요.** (05:25~06:09)
+
+> **신뢰 없이 서브에이전트나 cloud agent를 100개 띄우면** 금세 **슬롭 PR, 회귀, 버그**가 잔뜩 배포됩니다. (06:25~06:40)
+
+그리고 **곡선을 오르는 방법이 한 동작으로 압축**됐다 — **교정할 때마다 [[hard-vs-soft-enforcement|다섯 층]] 중 가장 효과적인 곳에 심는다.** 오른쪽 끝의 모습도 달라졌다: 09-12의 *"자동 병합 → main에서 사후 리뷰"* 대신 *"환경을 너무 신뢰하게 돼서 **에이전트가 그냥 자유로워질 수 있는** 곳"*(37:17~37:28).
+
+> ⚠️ 수치는 **지난달 PR 2,000건**으로 두 배가 됐고, 09-12의 유보(PR 크기 모름·맹목적 신뢰 경계·자동 병합의 안전망 부재)는 **이번 발표에 하나도 없다.** 위 [[trusted-throughput]] 긴장은 그대로다.

@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-14
+updated: 2026-09-26
 ---
 
 # Pstack
@@ -106,3 +106,7 @@ updated: 2026-09-14
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[tech-bridge-pstack-third-party-review]] · [[lauren-tan]] · [[cursor]] · [[molten-base]]
 - 개념: [[feature-map]] · [[skill-evals]] · [[agent-verification-skill]] · [[agent-skills]] · [[agent-arena]] · [[agent-swarm]] · [[laziness-protocol]] · [[minimizing-reader-load]] · [[build-a-lever]]
+
+## 녹화 발표에서의 자리 — "품질"의 몫 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]은 이번엔 Pstack을 *"오늘은 많이 이야기하지 않겠다"*(13:22~13:26)며 한 문단으로만 다룬다. 대신 **자리를 정한다** — 검증 스킬이 **정확성**을 준다면, Pstack 같은 **플레이북·스킬 모음**(디버깅·기능 개발·프로토타이핑)이 **품질**을 맡고, 둘을 결합해야 *"정확할 뿐 아니라 품질도 높다"* 를 확인할 수 있다(13:11~14:30). *"팀의 더 경험 많은 엔지니어가 팀 스킬 저장소로 기여"* 할 자리라고도 한다. ⚠️ en-orig는 이름을 *"PAC"*·*"PSA"* 로 적고 ko가 *Pstack* 으로 맞게 적었다.

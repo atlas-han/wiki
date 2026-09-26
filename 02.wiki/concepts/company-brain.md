@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [company-brain, wiki, shared-context, access-control, knowledge-base, coding-agent]
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
-related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent]
+related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent, codebase-gardening]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-10
-updated: 2026-09-19
+updated: 2026-09-26
 ---
 
 # 회사 두뇌
@@ -102,3 +102,13 @@ updated: 2026-09-19
 - [[tech-bridge-company-brain-security]] (first-seen) · [[tanmai-gopal]] · [[promptql]]
 - [[tech-bridge-agent-to-agent-as-search]] — 공유 사일로·청소부 AI
 - 관련: [[llm-wiki-pattern]] · [[agent-memory]] · [[agent-knowledge-sourcing]] · [[knowledge-work-agent-gap]]
+
+## ⚠️ 실무자의 반론 — "그렇게 정교한 게 필요 없다" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+[[lauren-tan]]이 [[grokbot|GrokBot]]을 *바깥 루프*(Slack·Datadog·Sentry·PlanetScale 커넥터로 정보를 모아 스스로 결정)로 소개한 직후:
+
+> **어떤 사람들은 이걸 회사 두뇌라고 부르는데**, 저는 개인적으로 **그렇게 정교한 게 필요하다고 생각하지 않습니다.** **에이전트는 도구를 정말 잘 쓰니까요.** 이 도구들을 GrokBot에 연결하고 GrokBot이 cloud agent를 자동으로 띄우게 하면, **인프라에 많이 투자할 필요가 정말 없다**는 걸 알게 될 겁니다. (33:05~33:36)
+
+이 페이지에 **처음 붙는 반대 입장**이다. 이 페이지의 소스들이 *조직 지식을 어디에 쌓고 누가 보고 누가 책임지나* 를 물었다면, 이 화자는 **쌓지 말고 필요할 때 도구로 가져오라**는 쪽이다([[agent-knowledge-sourcing]] 라우팅 표의 *"바깥에서 실제로 조회"* 행 — MCP·커넥터 쪽). 그리고 같은 발표에서 **축적은 다른 곳에 한다** — *"코드베이스가 최고의 기억 형태"*(→ [[codebase-gardening]]).
+
+> ⚠️ **근거는 단언뿐**이고, 이 페이지가 다룬 **권한·기밀·책임**(누가 볼 수 있는가, 잘못 가져왔을 때 누가 책임지나)에는 답하지 않는다. 화자는 **커넥터 제품을 만드는 쪽**이다. ⚠️ ko 자막은 *"어떤 사람들은 이걸 회사 두뇌라고 부른다"* 를 **"이곳이 바로 회사의 두뇌입니다"** 로 옮겨 **반론이 동의처럼** 읽힌다.

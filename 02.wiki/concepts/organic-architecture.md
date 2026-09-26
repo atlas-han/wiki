@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [vibe-coding, technical-debt, guardrails, prototype, ai-slop]
 aliases: [organic architecture, 가드레일 없는 코드베이스]
-related: [greenfield-vs-brownfield-agent-risk, shortest-path-architecture, ai-slop, dune-architecture, hard-vs-soft-enforcement, system-level-quality]
+related: [greenfield-vs-brownfield-agent-risk, shortest-path-architecture, ai-slop, dune-architecture, hard-vs-soft-enforcement, system-level-quality, codebase-gardening]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # 유기적 아키텍처
@@ -52,3 +52,11 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[greenfield-vs-brownfield-agent-risk]] · [[shortest-path-architecture]] · [[dune-architecture]] · [[ai-slop]] · [[lauren-tan]]
+
+## 같은 현상, 정원 비유로 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표는 **이 말을 쓰지 않고** 같은 현상을 **정원**으로 다시 말한다:
+
+> **코드베이스는 정원 같다** (…) 처음엔 **무해해 보이는 우회책**이 있는데, 에이전트의 본성상 그 패턴을 **계속 반복해서 복사**하고, 곧 **유지하기 골치 아프고 성능 문제가 많은, 아주 바이브 코딩된 코드베이스**가 됩니다. (22:01~22:31)
+
+차이는 **원인의 위치**다 — 이 페이지는 *가드레일 부재*(그린필드 바이브 코딩)였고, 정원 비유는 **기존 우회책의 복제**(어느 코드베이스에서나)다. 그리고 **개입 지점**이 붙었다 — 정원사 역할, *"린트 규칙으로 출혈부터 멈춘다"*. 위 *"언제 교정해야 하는지의 판단 기준이 없다"* 에 대한 부분적 답이 *"퍼지기 시작하기 전에 가능한 한 빨리"*(25:07~25:11)다. → [[codebase-gardening]]

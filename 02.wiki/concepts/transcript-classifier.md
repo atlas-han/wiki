@@ -2,12 +2,12 @@
 title: Transcript Classifier
 type: concept
 category: pattern
-tags: [agent-safety, classifier, claude-code, llm-as-judge]
-related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode, slop-probes]
+tags: [agent-safety, classifier, claude-code, llm-as-judge, latency, auto-mode]
+related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode, slop-probes, system-1-model, jev]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-jev-agent-harness]
 created: 2026-05-25
-updated: 2026-09-12
+updated: 2026-09-26
 ---
 
 # Transcript Classifier
@@ -84,7 +84,24 @@ Stage 2는 stage 1과 거의 동일한 prompt를 받으므로 **prompt cache hit
 
 프로브가 LLM을 쓰지 않는 이유는 소스에 없다. 다만 reasoning-blind가 인젝션을 구조적으로 피하듯, **비-LLM 분류기는 산출물 안의 텍스트에 설득되지 않는다**는 이점이 있을 수 있다 — ⚠️ 위키의 추정이며 소스는 말하지 않는다.
 
+## 지연이라는 축 — 느린 게이트는 꺼진다 (2026-09-26)
+
+[[tech-bridge-jev-agent-harness]]에서 [[langchain|LangChain]]이 **같은 이름의 다른 제품** — *"사전 구축된 auto mode 미들웨어"*(06:50~06:52) — 을 소개하며, 위험 판정기를 **LLM이 아닌 분류 모델**([[jev|Jev]])로 둔다. 그리고 이 페이지가 한 번도 다루지 않은 축을 꺼낸다:
+
+> **최근 제 코딩 에이전트에서 auto mode를 껐었습니다. 주어진 [도구 호출]이 위험한지 분류하는 단계가 너무 느려서** 제 코딩 에이전트가 생산적으로 느껴지지 않았거든요. **하지만 Jev가 이렇게 빨리 결정할 수 있으니 [지금은 다시 켜 두었습니다].** (07:02~07:16)
+
+위의 평가 결과(FPR 0.4% · FNR 17%)는 **게이트가 켜져 있다는 전제** 위의 숫자다. 이 일화는 **지연이 채택률을 결정한다** — 정확해도 느리면 사용자가 끈다 — 는 것을 보여 준다. 위 2단계 구조의 Stage 1(*단일 토큰 yes/no*)이 이미 같은 압력에 대한 응답으로 읽힐 수 있다(⚠️ 위키의 해석).
+
+| | 이 분류기 (Claude Code) | LangChain auto mode + Jev |
+|---|---|---|
+| 판정기 | LLM (Sonnet 4.6), 2단계 + CoT | **System 1 모델** — 텍스트 없이 타입 답 + 확률 → [[system-1-model]] |
+| 공개된 정확도 | FPR/FNR 실측 | **없음** (*"DB 삭제는 확실히 위험으로 분류"* 예시뿐, 07:18~07:27) |
+| 논거 | 정확도·recall | **속도** |
+
+⚠️ 화자의 "코딩 에이전트"가 무엇인지, 원래 느렸던 분류 단계가 어떤 모델이었는지 **말하지 않는다** — 이 페이지의 분류기였다고 **읽지 않는다.** Jev 판정기가 reasoning-blind 같은 **인젝션 방어 설계**를 갖는지도 없다.
+
 ## References
 
 - [[anthropic-claude-code-auto-mode]]
 - [[tech-bridge-agent-to-agent-as-search]] — 프라이버시로의 유비와 그 한계 (2026-09-10)
+- [[tech-bridge-jev-agent-harness]] — LangChain auto mode 미들웨어 + Jev, 지연 축 (2026-09-26)

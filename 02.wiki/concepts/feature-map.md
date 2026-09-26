@@ -6,9 +6,9 @@ tags: [context, navigation, bug-reports, ui, skills, agents]
 aliases: [feature map, 기능 맵]
 related: [agent-verification-skill, agent-knowledge-sourcing, context-engineering, intent-md, agent-skills, fuzzy-intent-discovery]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 # 기능 지도
@@ -59,3 +59,17 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[agent-verification-skill]] · [[pstack]] · [[context-engineering]] · [[agent-knowledge-sourcing]] · [[lauren-tan]]
+
+## "구체화된 기억" — 스킬 디렉터리 안, 자동화가 유지 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+같은 화자의 녹화 발표가 정의를 더한다:
+
+> **사이트맵에서 영감을 받은** feature map (…) **본질적으로 구체화된 기억(materialized memory)의 한 형태**예요. 애플리케이션이 어떻게 동작하는지, 어떤 기능이 있는지, **사용자가 거기 어떻게 도달하는지 — 키보드 단축키나 클릭할 DOM 요소.** (10:52~11:26)
+
+> 이 feature map은 **스킬 자체 안에, 코드베이스의 스킬 디렉터리 일부로 저장**되고, **이 feature map을 유지하는 자동화**도 있습니다. (11:26~11:38)
+
+위 *"형식·크기·갱신 주기가 소스에 없다"* 중 **저장 위치(스킬 디렉터리)와 갱신 주체(자동화)** 가 채워졌다. 그리고 검증 스킬의 **두 구성 요소 중 하나**로 자리가 정해졌다 — 다른 하나는 **스킬 디렉터리 안의 CLI**다(→ [[agent-verification-skill]]). *"CLI와 feature map을 합치자 이 조합이 아주 아주 강력하다"*(11:41~11:47).
+
+> ⚠️ 그 **자동화가 무엇인지**(09-12의 Pstack `maintain verification skill` 인지)는 말하지 않는다. 형식·크기는 여전히 없다.
+>
+> ⚠️ ko 자막은 *feature map* 을 **"함수 맵"** 으로 옮긴다 — ko로 이 개념을 검색하면 놓친다.

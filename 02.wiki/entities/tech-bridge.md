@@ -69,8 +69,10 @@ sources:
   - tech-bridge-oracle-agent-memory-harness
   - tech-bridge-openai-huggingface-incident-black-hat
   - tech-bridge-jensen-huang-cbs-interview
+  - tech-bridge-jev-agent-harness
+  - tech-bridge-lauren-tan-2000-prs
 created: 2026-06-03
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 
 # Tech Bridge
@@ -707,3 +709,23 @@ updated: 2026-09-25
 - **⚠️ ko가 네 문장을 뒤집었다** — *"중국보다 몇 년 앞서"* → **"중국이 앞서나가고"**, *"세금이 두렵지 않다"* → **"두려워요"**, *"말이 안 된다"* → **"맞는 말 같아요"**, *"수영장보다 물을 덜"* → **"더 빨리 증발"**. *hoax* → **"우스꽝스러운 일"**, *selling chips* → **"유심카드 판매"**, *race* → **"인종"**, *safety* → 일관되게 **"보안"**.
 - ✅ 03:48 en-orig *"now grounded"* 를 ko가 *"근거하지 않는다"* 로 **옳게** 적었다 — ko가 en-orig보다 옳은 두 번째 사례.
 - 설명란이 **피지컬 AI·로보틱스**를 주요 내용으로 적었지만 **영상에 그 대목이 없다** — 설명란 요약이 내용과 어긋난 첫 관측.
+
+## 2026-09-25 업로드 — LangChain이 소개하는 Jev (2026-09-26 ingest)
+
+[[tech-bridge-jev-agent-harness|Jev로 더 빠르고 스마트한 에이전트 하네스를 구축하는 방법]](`BJeHhsMVc8A`, 9:14, 공식 챕터 13개) — [[langchain|LangChain]] 오픈소스 팀(화자 "Sydney", 성 없음) ([[jev]] · [[system-1-model]])
+
+- **09-19 [[tech-bridge-rlhf-assistance-vs-automation|Almeida 편]]의 제목에만 있던 'Jev'가 이 채널에서 처음 서술됐다.** 단 Almeida의 *제3의 목표* 와 Jev를 잇는 발화는 없다 — 연결하지 않았다.
+- **벤더 영상** — 파트너 모델을 프레임워크 회사가 소개한다. 수치는 자막 *"20~200배 빠르고 40~400배 저렴"*(02:22~02:34)인데 **설명란은 "최대 200배/400배"로 하한을 지웠다** — 09-21 원칙(*수치는 자막을 따른다*)의 재적용. 측정 조건 없음.
+- **⚠️ ko가 핵심어를 잃었다** — *harness* → "연결 장치", *structured output* → "구조화된 출구"·"체계적인 퇴출 절차", *tool call* → "전화·통화", *score* → "구두점", 설치 명령이 *"LangChain은 타입 안전합니다"* 라는 주장 문장이 됐다. *LLM* → 법학 석사 계열 여섯 번.
+- **`en` 트랙이 en-orig와 달랐지만 독립 증거가 아니었다** — ko와 같은 자리에서 틀린다. 인용은 en-orig만.
+
+## 멤버 전용 → 공개 전환 세 번째 — `zkmvCDSxqdc` Lauren Tan PR 2,000개 (2026-09-26 ingest)
+
+[[tech-bridge-lauren-tan-2000-prs|Cursor&xAI 개발자 Lauren Tan: 한 달에 PR 2,000개를 프로덕션에 반영한 워크플로우]](`zkmvCDSxqdc`, 38:02, 공식 챕터 없음) — [[lauren-tan|Lauren Tan]] ([[codebase-gardening]] · [[hard-vs-soft-enforcement]])
+
+- **멤버 전용이 풀린 세 번째 사례이자 제목까지 바뀐 첫 사례.** 09-22 `upload_date`·제목 *"지난달 PR 2,000개를 프로덕션에 반영한 방법"* 으로 올라와 09-23 `subscriber_only` 판정 → 09-26 `public`, `upload_date` **20260925**, 제목 변경. ⚠️ **"긴 유명인 대담" 패턴은 이제 유지되지 않는다** — 1인 발표도 풀렸다.
+- **`[한글자막]` 접두어인데 수동 자막이 없다** — `subtitles` 빈 값, 자동 자막뿐.
+- **소속 세 갈래, 해소하지 않음** — 본인 *"SpaceX AI에서 GrokBot"*, *"우리가 SpaceX AI의 일부가 되기 전 Cursor 합류"* · 제목 *Cursor&xAI*(자막에 xAI 없음) · 위키 기존 기록 *Cursor 엔지니어*.
+- **09-12 [[tech-bridge-lauren-tan-trusting-agents|워크숍]]의 재방문** — 수치는 두 배(PR 1,000 → 2,000), 유보(PR 크기 모름 · 무제한 토큰 · 맹목적 신뢰 경계 · 자동 병합 서술)는 전부 빠졌다.
+- **⚠️ ko가 뜻을 셋 뒤집었다** — *"다수가 슬롭"* → "지능이 높았지만", *"가장 효과적인 단계"* → "가장 어려운 단계", *"마지막으로 남기고 싶은 것"* → "제일 원하지 않는 일". PR → **"추출 요청"**, 16ms → **"16분"**. ✅ 반대로 ko가 en-orig ASR을 고친 자리(Pstack · 기술 부채 · Dune)도 있다.
+

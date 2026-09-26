@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
-related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust]
+related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs]
 created: 2026-09-13
-updated: 2026-09-15
+updated: 2026-09-26
 ---
 
 # 하드 강제와 소프트 강제
@@ -62,3 +62,22 @@ updated: 2026-09-15
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[executable-standards]] · [[verifiable-goals]] · [[dune-architecture]] · [[shortest-path-architecture]] · [[verification-bottleneck]] · [[lauren-tan]]
+
+## 층의 이름이 말로 확정됐다 — 그리고 스타일 가이드라는 최하위 층 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
+
+위 표의 *"층 번호는 화면의 다이어그램을 읽는 말"* 이라는 유보를 같은 화자의 녹화 발표가 **일부 푼다.** 이번엔 각 층을 **말로 설명하고 순서를 권한다**(15:24~18:54):
+
+| 순서 | 층 | 발화 |
+|---|---|---|
+| 1 | **코드베이스** | *"최고의 기억 형태"*. **더 나은 자료구조·알고리즘으로 범주적으로 불가능하게** |
+| 2 | **정적 분석**(린터·컴파일러 진단·CI) | *"같은 실수를 계속하면 린트 규칙으로, 더 좋게는 범주적으로 불가능하게"* |
+| 3 | **규칙 · bugbot · 스킬** | *"하드한 제약보다는 **지침(guidance)의 영역**"* — 규칙 읽기를 잊거나 **에이전트를 모는 사용자가 무시할** 수 있다 |
+| 마지막 | **스타일 가이드** | ***"코드 리뷰에서 사람만이 강제할 수 있다"*** — PR 속도로는 *"그냥 불가능"*, **"무엇이 빠졌는지 찾는 출발점"** 으로만 |
+
+**새로 확정된 것**: ① **스타일 가이드가 독립된 최하위 층**이다(09-12에는 소프트 층 경고 속에 섞여 나왔다). ② **교정이 트리거다** — *"에이전트를 교정하고 개입하고 있는 자신을 발견할 때마다, 이 다섯 조각의 관점에서 **이 순서에서 어디가 가장 효과적인 단계인지** 생각하라"*(36:23~36:42), *"이 순서대로 생각하시길 확실히 권한다"*(36:46~36:50). ③ 소프트 층이 약한 이유에 **사람 쪽 경로**가 붙었다 — 에이전트가 잊는 것만이 아니라 **모는 사람이 무시한다.**
+
+> ⚠️ 화자는 *"다섯 개의 점"*(15:39~15:41)과 스타일 가이드를 뺀 *"나머지 네 부분"*(18:37~18:39)이라 하지만 **발화로 이름이 붙는 묶음은 넷**이다. **규칙·bugbot·스킬을 몇 칸으로 세는지는 여전히 화면에만 있다.**
+>
+> ⚠️ ko 자막이 17:36을 **"에이전트를 제어하고 무시하세요"**(명령)로, 36:33의 *"가장 효과적인 단계"* 를 **"가장 어려운 단계"** 로 옮겼다. 이 절은 en-orig로 읽었다.
+
+**왜 하드 층인가**의 동기도 같은 발표에서 나왔다 — 코드베이스가 기억이라 **나쁜 패턴은 바이러스처럼 퍼진다.** → [[codebase-gardening]]
