@@ -71,8 +71,10 @@ sources:
   - tech-bridge-jensen-huang-cbs-interview
   - tech-bridge-jev-agent-harness
   - tech-bridge-lauren-tan-2000-prs
+  - tech-bridge-agents-as-catalyst
+  - tech-bridge-sdd-full-course
 created: 2026-06-03
-updated: 2026-09-26
+updated: 2026-09-27
 ---
 
 # Tech Bridge
@@ -729,3 +731,22 @@ updated: 2026-09-26
 - **09-12 [[tech-bridge-lauren-tan-trusting-agents|워크숍]]의 재방문** — 수치는 두 배(PR 1,000 → 2,000), 유보(PR 크기 모름 · 무제한 토큰 · 맹목적 신뢰 경계 · 자동 병합 서술)는 전부 빠졌다.
 - **⚠️ ko가 뜻을 셋 뒤집었다** — *"다수가 슬롭"* → "지능이 높았지만", *"가장 효과적인 단계"* → "가장 어려운 단계", *"마지막으로 남기고 싶은 것"* → "제일 원하지 않는 일". PR → **"추출 요청"**, 16ms → **"16분"**. ✅ 반대로 ko가 en-orig ASR을 고친 자리(Pstack · 기술 부채 · Dune)도 있다.
 
+## 2026-09-26 업로드 — IBM Technology 계열, 에이전트는 촉매다 (2026-09-27 ingest)
+
+[[tech-bridge-agents-as-catalyst|AI 에이전트는 혁명이 아닙니다, 진짜 변화를 이끄는 '촉매'입니다]](`B1FXnXlIm8c`, 10:03, 공식 챕터 13개) — [[ibm|IBM Technology]] 계열, 화자 설명란 기준 "Sam Anthony" ([[agents-as-catalyst]])
+
+- **IBM 계열 일곱 번째** — 자사 제품 없음·촬영 시점 미확정 일곱 번 연속, *이름은 설명란에만* 네 번째(자막에 자기소개 없음). 수치·사례 0개.
+- **A2A가 이 채널에서 표준 이름으로 처음 나왔다**(05:13) — 단 약칭을 풀지 않고, ko·en 둘 다 *"8020"* 으로 적었다.
+- **⚠️ ko가 결론 문장 셋을 뒤집었다** — *"그 이익은 에이전트가 영원히 남을 것을 요구하지 않는다"* → "에이전트가 영원히 남아있을 것이다", *"우리가 만드는 에이전트가 아니라"* → "그것들이 바로 우리가 만들어내는 에이전트", *"허용한다고 자동으로 수행돼야 하는 건 아니다"* → "허용하지 않는다 / 반드시 해야 한다". *agents* → **"요원·대리인" 열한 번**, *customer support* → "환자 치료", *single application* → "독신 생활".
+- **`en` 트랙이 다시 ko와 같은 자리에서 틀렸다**(*8020* · *isolated equipment* · *databases* · *experience*) — 인용은 en-orig만.
+
+## 멤버 전용 → 공개 전환 네 번째 — `FJo7p9SPS9c` 스펙 주도 개발 풀코스 (2026-09-27 ingest)
+
+[[tech-bridge-sdd-full-course|AI 에이전트와 함께하는 스펙 주도 개발 풀코스 강의]](`FJo7p9SPS9c`, 1:01:33, 공식 챕터 없음) — [[jetbrains|JetBrains]] 협업 강좌, 강사 [[paul-everitt]](표기 미확정) ([[spec-driven-development]] · [[cognitive-debt]])
+
+- **멤버 전용이 풀린 네 번째 사례.** 09-23 멤버 전용 게시 → 09-27 회차 `public`, `upload_date` **20260926**. 네 번 모두 같은 패턴(공개 시점으로 날짜가 다시 잡힘 — 추정).
+- **강좌 형식의 재배포** — 여러 레슨을 이어 붙였다(*"lesson four"* 46:45, *"lesson 12"* 57:45). 설명란에 수료증 링크가 있다(열어 보지 않음).
+- **08-29 [[tech-bridge-spec-driven-development|Spec Kit 편]]과 같은 주제, 다른 헌법** — 규칙(08-29) 대 mission · tech stack · roadmap(이번). ⚠️ Contradiction으로 표시했다.
+- **화자 이름 세 갈래** — *Everett*(en-orig) · *Everitt*(en) · *에버릿*(ko), 소개자는 *"Andrew"* 뿐(성 없음).
+- **⚠️ ko가 셋을 뒤집었다** — *"Agents are stateless"* → "상태를 가지고 있다", *"3 or 4 minutes"* → "3~4시간", *"back-and-forth"* → "일방적인 대화". *feature* → "함수", *roadmap* → "시트 경로"·"경로 지도", *tech stack* → "배터리", *main* → "도메인", SDD → "SSD"·"자기 주도 개발". MCP → CLI+스킬 추세가 "MCP 서버에 CLI 기능을 더한다"로 바뀌었다.
+- **`en` 트랙이 또 ko와 같은 자리에서 틀렸다**(*"Behave badly"* · *"branch domain"* · *"Hana version"* · *"MCP servers moving towards more CLI"*) — 인용은 en-orig만. ✅ ko가 en-orig ASR을 고친 자리도 있다(*STD* → SDD, *NCP* → MCP).

@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course]
 created: 2026-08-29
-updated: 2026-09-05
+updated: 2026-09-27
 ---
 
 # Spec-Driven Development
@@ -76,8 +76,38 @@ Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven
 
 ⚠️ 이 위키는 **원문서를 직접 ingest하지 않았다.** 위 내용은 [[switch-dimension]] 해설을 통한 것이고, 해설에 나온 *"두 배 더 빠릅니다"* 는 근거가 확인되지 않았다.
 
+## 두 번째 영상 소스 — 도구 없는 풀코스, 헌법의 다른 정의 (2026-09-27 · [[tech-bridge-sdd-full-course]])
+
+[[jetbrains|JetBrains]] 협업 강좌(강사 표기 미확정 [[paul-everitt]]). 08-29 편이 **Spec Kit 한 도구의 네 단계**였다면, 이 강좌는 **손으로 짠 프롬프트로 같은 흐름을 돌리고, 반복되는 부분을 [[agent-skills|스킬]]로 묶고, 표준으로 에이전트·IDE에서 독립**하는 순서다. Spec Kit은 *"one attempt"*(54:43~54:49)로 낮춰진다.
+
+| | 08-29 편 (Spec Kit) | 09-27 풀코스 |
+|---|---|---|
+| **헌법** | 깨지지 않는 규칙(testable · 보안 · privacy 등) | **mission · tech stack · roadmap** 세 파일(`specs/mission.md` · `techstack.md` · `roadmap.md`, 18:59~19:04). *"agent agnostic and more structured"* 한 AGENTS.md 대체물(10:05~10:15) |
+| **기술 스택의 자리** | 기능별 plan (spec은 what만) | **프로젝트 수준 헌법** |
+| **기능 문서** | spec → plan → tasks | 기능마다 브랜치, **plan · requirements · validation** 세 문서(20:57~22:43) |
+| **루프** | implement 후 동작 확인 | plan → implement → **validate**(human in the loop) → 기능 사이 **재계획** |
+| **작성 방식** | 사람이 원칙을 붙여 커맨드 실행 | **에이전트와의 대화(인터뷰)** — *"We write it in a conversation with the agent"*(15:43~15:45) |
+| **도구** | `specify` CLI + `/speckit.*` | 도구 없이 시작 → 스킬로 패키징 → Spec Kit · OpenSpec은 참고용(55:35~55:39) |
+
+> ⚠️ **Contradiction: 같은 단어, 다른 문서.** 08-29 편의 constitution은 **규칙**이고 스택은 plan에 들어간다. 풀코스의 헌법은 **미션·스택·로드맵**이다. 이 페이지는 둘을 나란히 둔다. 풀코스 안에서도 인트로의 *"immutable standards"*(02:31~02:36)와 본문의 *"living document"*(19:59~20:00, 29:48~29:50)가 부딪힌다 — 운영은 가변(헌법 변경은 **별도 브랜치**, 29:48~29:57)이다.
+
+**새로 들어온 운영 규칙**
+
+- **재계획(replanning)** — 기능 사이에 멈춰 헌법·로드맵·**프로세스 자체**를 고친다. *"You have to run slow to run fast."*(29:26~29:27) 개발자의 일이 *"planning and validation, rather than implementing"*(35:32~35:38)으로 옮겨 갔으므로 시간을 떼어 둔다.
+- **스펙은 에이전트를 통해 고친다** — 직접 편집하면 관련 문서가 어긋난다(*drift*, 19:26~19:34 · 27:53~28:04).
+- **코드의 실수는 계획의 실수에서 온다** — 고칠 때 스펙과 구현을 **함께**(26:05~26:15).
+- **스펙의 누락은 실패가 아니다** — 발견한 결정을 스펙에 되먹인다(39:51~39:58).
+- **스펙 버전 관리는 열린 문제** — *"an evolving topic in the community"*(28:34~28:42). 작은 헌법 변경은 기능 브랜치, 큰 것은 별도 브랜치.
+- **리뷰 부담** — [[cognitive-debt|인지 부채와 AI 피로]]를 이름 붙여 다룬다. 처방은 작은 단계·깨끗한 기능 경계·고수준 리뷰·서브에이전트 deep review.
+- **레거시 도입** — 기존 코드·to-do에서 헌법을 **역설계**하고 이후는 같은 루프(46:53~46:58). ⚠️ 데모의 레거시는 방금 만든 MVP에서 `specs/`를 뺀 것이다.
+- **MVP를 헌법·스펙의 극한 시험으로** — 로드맵 나머지를 한 번에 구현시키고, 코드 대신 **스펙을 검증**시켜 계획의 구멍을 찾는다(43:31~45:16).
+- **OpenSpec 대응표** — propose·explore = plan, apply = implement, archive = replanning(55:10~55:20).
+
+> ⚠️ **Contradiction: 계획을 믿는가.** [[tech-bridge-pstack-third-party-review]]의 [[lauren-tan|Lauren Tan]]은 *"계획을 믿지 않는다, 최고의 사양은 코드"* 이고 Pstack이 OpenSpec류가 아니라고 구분한다. 풀코스는 계획·스펙을 개발자의 주 업무로 둔다. 전자는 자리 잡은 코드베이스의 운영, 후자는 greenfield에서 출발 — 대상이 다르다는 점만 표시한다.
+
 ## References
 
 - [[tech-bridge-spec-driven-development]]
+- [[tech-bridge-sdd-full-course]]
 - [[github-spec-kit]]
 - 공식: <https://github.github.io/spec-kit/>

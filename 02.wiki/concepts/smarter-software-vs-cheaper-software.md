@@ -5,9 +5,9 @@ category: theory
 tags: [saas, automation, software-economics, just-in-time, accessibility]
 related: [assistance-vs-automation, ambitious-software, code-is-the-product, agentic-sites, intelligence-abundance]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-agents-as-catalyst]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-27
 ---
 
 # 더 똑똑한 소프트웨어 vs 더 싸게 쓰는 소프트웨어
@@ -59,3 +59,7 @@ updated: 2026-09-20
 - [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen
 - [[diogo-almeida]] · [[typesafe-ai]]
 - 관련: [[assistance-vs-automation]] · [[ambitious-software]] · [[code-is-the-product]] · [[agentic-sites]] · [[intelligence-abundance]]
+
+## ⚠️ 반대 판정 — "기술의 민주화" (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+> ⚠️ Contradiction: [[ibm|IBM Technology]] 계열 해설은 정반대 방향을 말한다 — *"모든 인터페이스나 프레임워크를 배우는 대신, 에이전트와 에이전틱 코딩 IDE로 사람들은 원하는 것을 설명하고 구현 세부 사항은 AI에게 넘길 수 있습니다. 이 기술의 민주화는 진입 장벽을 낮추고"*(06:45~07:04), *"혁신은 (…) 이제 문제를 이해하는 사람에게서 나올 수 있습니다"*(07:10~07:16). 이 페이지의 *"접근성은 그대로"* 와 **같은 말(접근성)에 반대 판정**이다. 대상은 조금 다르다 — Almeida는 **완성된 소프트웨어의 표현력과 쓸 수 있는 사람의 범위**, 저쪽은 **만들 수 있는 사람의 범위**. 두 소스 모두 측정값이 없고 서로를 모른다. 이 위키는 판정하지 않는다. → [[agents-as-catalyst]]

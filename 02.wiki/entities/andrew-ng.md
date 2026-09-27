@@ -5,9 +5,9 @@ category: person
 tags: [educator, ai, coursera]
 links:
   - https://www.andrewng.org/
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-oracle-agent-memory-harness, tech-bridge-sdd-full-course]
 created: 2026-08-31
-updated: 2026-09-24
+updated: 2026-09-27
 ---
 
 # Andrew Ng
@@ -42,3 +42,13 @@ Ng의 두 주장에 **당사자·반대편**의 진술이 붙었다.
 [[oracle|Oracle]]의 [[ignacio-martinez|Ignacio Martinez]]가 *"내 경력의 정점"* 으로 **Ng과 에이전트 메모리 강좌를 냈다**고 소개한다(01:45~01:50). [[toolbox-pattern|툴박스 패턴]]도 *"이 강좌에서 소개했다"*(48:46~48:51), 그리고 동료와 **에이전트 지속 학습 강좌를 녹화할 예정**(*"몇 주 뒤"*, 12:32~12:41). 이 위키에서 Ng은 지금까지 **인터뷰 대상**(규제 포획·노동·AGI 정의)이었는데, 여기서는 **실무 에이전트 기법의 교육 유통 경로**로 등장한다 — Ng 본인은 영상에 나오지 않는다.
 
 > ⚠️ **강좌명·플랫폼을 자막이 말하지 않는다**. ⚠️ en-orig는 이름을 **"Andrew Ang"**(01:47) · **"Andrew Yang"**(48:50)으로 깨뜨린다 — ko·en 변종은 *앤드류 응 / Andrew Ng* 으로 옳다.
+
+## ⚠️ 추정 등장 — SDD 강좌의 소개자 "Andrew" (2026-09-27 · [[tech-bridge-sdd-full-course]])
+
+[[jetbrains|JetBrains]] 협업 스펙 주도 개발 강좌에서 강사가 소개자를 *"Thank you, **Andrew**"*(00:30)로 부른다. **성은 세 트랙 어디에도 없다.** 기여자에 *"Isabel Zaro from deeplearning.ai"*(04:12~04:14)가 있고, 소개자가 *"I'm definitely an advocate of lazy prompting when it works"*(03:31~03:33)라고 말한다 — Ng일 개연성이 높지만 **이 위키는 확정하지 않는다.** 소개자 몫으로 보이는 발화(en-orig `>>` 전환 표시로 추정):
+
+- *"Spec-driven development is currently the best type of workflow for building serious applications with agentic coding assistance."*(00:03~00:09)
+- 스펙은 에이전트와 대화하며 핵심 아키텍처 결정을 내리고 그 결정을 마크다운으로 요약시켜 쓴다(01:33~01:48). 스펙 없는 팀에서 에이전트들이 *"building quickly but in contradictory ways"*(02:25~02:27).
+- *"the great developers I know out there almost always will write detailed specs for projects with any significant complexity"*(03:33~03:39). 20~30분 돌 에이전트라면 *"3 or 4 minutes"* 들여 명확한 지시를 쓰는 편이 낫다(03:53~04:05).
+
+위 [[cognitive-offloading]]의 "숙제 점수는 오르고 retention은 떨어진다"와 같은 방향의 걱정이 이 강좌에서는 [[cognitive-debt|인지 부채]]라는 개발자 쪽 이름으로 나온다 — 단 그 대목(26:26~26:37)은 소개자가 아니라 레슨 본문의 내레이션이다.

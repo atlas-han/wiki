@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-09-25
+updated: 2026-09-27
 ---
 
 # Claude Code
@@ -137,3 +137,14 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 하드웨어 공급자의 사내 사용 목록 (2026-09-25 · [[tech-bridge-jensen-huang-cbs-interview]])
 
 [[jensen-huang|Jensen Huang]](NVIDIA CEO)이 CBS 인터뷰 첫 답변에서 사내 사용 도구를 나열한다 — *"OpenAI의 최신 Astra (…) 어디에서나 사용하고 있습니다. **우리는 [Claude Code]를 사용합니다.** 우리는 [Cursor]를 사용합니다 (…) 우리는 [Cognition]을 사용합니다."*(01:09~01:21). 09-06 G20의 *"Anthropic, OpenAI, Cursor 같은 기성 AI"* 가 **제품명**으로 갱신됐다. ⚠️ 규모·용도는 없다. ⚠️ **이름이 양 트랙에서 또 깨졌다** — en-orig ASR부터 *"cloud code"*, ko **"클라우드 코드"**(01:16). 09-20·09-21·09-23에 이어 **네 번째**.
+
+## SDD 강좌의 시연 에이전트 (2026-09-27 · [[tech-bridge-sdd-full-course]])
+
+[[jetbrains|JetBrains]] 협업 스펙 주도 개발 강좌가 **WebStorm + Claude Code**로 전 과정을 시연한다(13:28~13:36). 강좌가 짚은 기능:
+
+- **AskUserQuestion 도구** — 헌법·기능 스펙 인터뷰에서 프롬프트로 직접 부른다. *"This tool is totally optional, but we just like the way it looks in the interface."*(17:32~17:35)
+- **권한 확인** — 명령마다 확인을 묻는다, *"unless you start Claude Code in an unsafe mode"*(14:17~14:25). *"The ultimate responsibility for the code is yours."*(14:30~14:32) 세션 단위 일괄 승인은 보안 트레이드오프를 감수할 때만(18:42~18:49).
+- **`/clear`** — 구현 전·기능 사이마다 컨텍스트를 비운다(23:37~23:41, 36:52~36:55).
+- **skill creator와 global skills** — changelog 스킬을 만들자 **global skills area**에 두었고 곧바로 그 스킬로 changelog를 생성했다(34:57~35:09).
+- **plugins** — *"a collection of agent extensions that can be installed and updated"*(54:16~54:23), ⚠️ 아직 에이전트 간 표준이 아니고 코드를 실행하므로 신뢰를 확인하라(54:31~54:42).
+- 강좌는 Claude Code를 **여럿 중 하나**로 둔다 — 같은 스킬을 [[codex|Codex]]로 옮겨 돌리고(57:45~57:53), ACP registry로 OpenCode를 붙인다.

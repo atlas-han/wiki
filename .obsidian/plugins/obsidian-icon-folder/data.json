@@ -817,5 +817,13 @@
   "02.wiki/concepts/system-1-model.md": "LiLayers",
   "02.wiki/concepts/codebase-gardening.md": "LiPuzzle",
   "02.wiki/entities/jev.md": "LiBot",
-  "02.wiki/entities/langchain.md": "LiBuilding"
+  "02.wiki/entities/langchain.md": "LiBuilding",
+  "01.raw/articles/2026-09-26_AI 에이전트는 혁명이 아닙니다, 진짜 변화를 이끄는 촉매입니다.md": "LiNewspaper",
+  "01.raw/articles/2026-09-26_AI 에이전트와 함께하는 스펙 주도 개발 풀코스 강의.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-agents-as-catalyst.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-sdd-full-course.md": "LiVideo",
+  "02.wiki/concepts/agents-as-catalyst.md": "LiLightbulb",
+  "02.wiki/concepts/cognitive-debt.md": "LiBookText",
+  "02.wiki/entities/jetbrains.md": "LiBuilding",
+  "02.wiki/entities/paul-everitt.md": "LiUser"
 }

@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [protocol, harness, client, interoperability, json-rpc, standards]
 aliases: [Agent Client Protocol, 에이전트 클라이언트 프로토콜]
-related: [model-context-protocol, agentic-stack-decomposition, standards-as-market-makers, agent-harness-design, cloud-agent-delegation, goose, zed]
+related: [model-context-protocol, agentic-stack-decomposition, standards-as-market-makers, agent-harness-design, cloud-agent-delegation, goose, zed, jetbrains, spec-driven-development]
 first-seen: tech-bridge-acp-universal-remote
-sources: [tech-bridge-acp-universal-remote]
+sources: [tech-bridge-acp-universal-remote, tech-bridge-sdd-full-course]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 ---
 
 # ACP (Agent Client Protocol)
@@ -60,6 +60,17 @@ updated: 2026-09-13
 >
 > ⚠️ **당사자 진술.** 경쟁 표준·대안 검토 없음, 채택 수치 없음.
 
+## 두 번째 소스 — ACP registry와 IDE 쪽 시연 (2026-09-27 · [[tech-bridge-sdd-full-course]])
+
+[[jetbrains|JetBrains]] 협업 SDD 강좌가 ACP를 **워크플로를 특정 에이전트에 묶지 않는 네 표준** 중 하나로 소개한다 — *"MCP for external tools, agents.md for rules, agent skills (…), and ACP for connecting agents to clients"*(57:14~57:31). 09-12 편이 **하네스 쪽(Goose)** 에서 본 ACP였다면, 이번은 **클라이언트(IDE) 쪽**이다.
+
+- **ACP registry** — *"automates finding, installing, and connecting agents within clients"*(58:20~58:28), *"covers the whole life cycle"*(58:29~58:31). 이 위키에 **registry가 처음 등장**한다.
+- **시연** — JetBrains IDE의 AI 채팅 창 → registry → 호환 에이전트 목록 → **OpenCode** 설치 클릭 → 필요하면 OpenCode 자체 설치 + IDE 통합(58:35~59:04). 같은 에디터에서 여러 에이전트를 나란히 쓴다(59:12~59:16).
+- **설계 계보** — *"the protocol matches what's used in LSP"*(59:33~59:34). 범위는 *"next edit suggestion in the editor and plan mode"*(59:40~59:43)까지 덮는다고 한다. 로컬에 **커스텀 에이전트**를 써서 붙일 수도 있다(59:45~59:51).
+
+> ⚠️ **위의 빈자리는 그대로다.** registry가 설치까지 자동화하는데도 **인증·신원·설치 대상의 신뢰**를 강좌가 말하지 않는다. 같은 강좌가 플러그인에 대해서는 *"plugins can execute code. So, make sure you trust them"*(54:36~54:40)이라고 경고하지만 **registry 설치에는 같은 경고를 붙이지 않는다.** ⚠️ **당사자 시연** — ACP 공동 제안사(JetBrains)의 강좌이고 JetBrains IDE로 시연한다.
+
 ## References
 
+- [[tech-bridge-sdd-full-course]] · [[jetbrains]]
 - [[tech-bridge-acp-universal-remote]] · [[model-context-protocol]] · [[agentic-stack-decomposition]] · [[standards-as-market-makers]] · [[agent-harness-design]] · [[goose]] · [[zed]] · [[alex-hancock]] · [[lethal-trifecta]]

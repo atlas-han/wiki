@@ -6,9 +6,9 @@ tags: [standards, ecosystem, network-effects, adoption, protocol]
 aliases: [표준이 생태계를 만든다, 보편 채택]
 related: [model-context-protocol, agent-client-protocol, agent-skills, openclaw, agentic-stack-decomposition, intelligence-as-infrastructure]
 first-seen: tech-bridge-acp-universal-remote
-sources: [tech-bridge-acp-universal-remote]
+sources: [tech-bridge-acp-universal-remote, tech-bridge-agents-as-catalyst]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 ---
 
 # 시장을 만드는 표준
@@ -48,3 +48,11 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-acp-universal-remote]] · [[agent-client-protocol]] · [[model-context-protocol]] · [[agent-skills]] · [[alex-hancock]] · [[block]]
+
+## "AI는 표준화를 이끈다" — 채택이 아니라 실패가 표준을 부른다 (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+[[ibm|IBM Technology]] 계열 해설은 표준화의 동력을 **다른 자리**에서 찾는다.
+
+> **AI는 표준화를 이끌고 있습니다. 불일치는 실패 지점이 됩니다.** 팀들은 공통 패턴, 일관된 인터페이스, 공유된 관례를 가질수록 이득을 봅니다. (03:47~04:00)
+
+이 페이지의 논리는 *보편 채택 → 생태계·시장* (수요 쪽)이었다. 이 소스는 *에이전트가 불일치에서 실패한다 → 고칠 유인* (공급 쪽 압력)이다 — 사람은 불일치를 우회하지만 에이전트는 멈추기 때문이다. 둘은 양립한다. MCP·A2A는 그 결과로 *"기본값으로 시스템 간 연결"* 을 가능케 한 사례로 나온다(05:09~05:30). → [[agents-as-catalyst]] · [[model-context-protocol]]

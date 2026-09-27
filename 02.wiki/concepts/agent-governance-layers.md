@@ -6,9 +6,9 @@ tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
 related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst]
 created: 2026-09-09
-updated: 2026-09-17
+updated: 2026-09-27
 ---
 
 # 에이전트 거버넌스 두 층
@@ -108,3 +108,11 @@ updated: 2026-09-17
 > **개별 파일을 검토하는 것만으로는 충분하지 않습니다. 보안은 워크플로 전체를 이해하는 데 달려 있습니다. 가장 어려운 보안 문제는 단 하나의 함수에 숨어 있지 않습니다 — 연결된 시스템들 전반에 걸친 의도치 않은 결과로 나타납니다.**
 
 → [[continuous-security-validation]] · [[shift-left-security]]
+
+## 허용 ≠ 자동 실행 — 벤더 해설의 한 줄 요약 (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+[[ibm|IBM Technology]] 계열 해설이 이 페이지의 원칙을 **한 문장**으로 줄인다.
+
+> **시스템이 어떤 동작을 허용한다고 해서 그것이 자동으로 수행돼야 한다는 뜻은 아닙니다.** 에이전트는 보안과 권한을 수면 위로 끌어내고 있습니다 — **권한 경계(permission boundaries), 감사 가능성(auditability), 그리고 어떤 동작에 사람의 감독이 필요한가**에 새로 초점이 맞춰지면서요. (03:31~03:44)
+
+*권한이 있다* 와 *자동으로 해도 된다* 를 분리하는 것 — 기존 권한 모델(사람 사용자 기준)을 에이전트에 그대로 물려주면 안 된다는 뜻으로 읽힌다([[action-reversibility]] · [[agent-identity-separation]]). ⚠️ **어떤 동작이 사람 감독 대상인지 가르는 기준은 없다** — 세 항목을 이름만 댄다. ko 자막은 이 문장을 **"시스템은 특정 동작을 허용하지 않습니다. 그것은 반드시 해야 한다는 것을 의미합니다"** 로 뒤집었다. → [[agents-as-catalyst]]

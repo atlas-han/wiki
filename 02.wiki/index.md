@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-25
+updated: 2026-09-27
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-09-25
 ## Entities
 
 ### Persons
+- [[paul-everitt]] — [[jetbrains|JetBrains]] developer advocate, SDD 풀코스 강사 (**표기 미확정**: Everett/Everitt/에버릿) ([[tech-bridge-sdd-full-course]])
 - [[eric-wallace]] — [[openai|OpenAI]] 정렬·안전 연구원. Black Hat HF 사건 재구성의 AI 쪽 절반 — *"프론티어 모델들은 정말 부정행위를 좋아한다"*, 게시판 속 에이전트의 사고 사슬 ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 성은 설명란에만
 - [[michael-dalton]] — [[openai|OpenAI]] 보안·인프라. 취약점 체인·탐지·대응, *"공격은 완전 자동화의 존재 증명이 있고 방어는 없다"* ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 음성은 "Mike"뿐
 - [[ignacio-martinez]] — [[oracle|Oracle]] AI 개발자 애드버킷(7년 근속, 그중 약 4년 DevRel). *추론은 빌리고 메모리·도구·인식은 소유한다* — 스토리지를 하네스 층에 올린 첫 화자. [[andrew-ng|Andrew Ng]]과 에이전트 메모리 강좌를 냈다고 소개 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 당사자 · **이름은 설명란에만**
@@ -93,6 +94,7 @@ updated: 2026-09-25
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
 
 ### Organizations
+- [[jetbrains]] — IDE 제작사(WebStorm 등), [[agent-client-protocol|ACP]] 공동 제안자이자 SDD 풀코스 협업사. JetBrains IDE의 ACP registry로 OpenCode 설치 시연 ([[tech-bridge-sdd-full-course]], sources: 2)
 - [[oracle]] — DB·OCI 벤더. DBFS · 컨버지드 DB · Oracle Agent Memory Package(컨텍스트 카드) · OCI Generative AI ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 전부 당사자 주장, 측정 없음
 - [[salesforce]] — Dreamforce 주최사. [[openai|OpenAI]]와 공동 개발 플랫폼(Agentforce로 보이나 판독 보류) ([[tech-bridge-altman-benioff-dreamforce]])
 - [[all-in-podcast]] — 청중 앞 라이브 녹화 팟캐스트. ⚠️ 호스트 개인은 자막에서 식별되지 않는데 **HF 사건의 세부는 대부분 호스트가 공급했다** ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
@@ -137,7 +139,7 @@ updated: 2026-09-25
 - [[hugging-face]] — ML 모델 플랫폼. 위키에는 [[openai]] 미출시 모델이 평가 중 샌드박스를 벗어난 **"Hugging Face 사건"**의 당사자로만 등장 ([[tech-bridge-altman-frontier-rl-pause]], ⚠️ OpenAI 측 진술만)
 
 - [[minimax]] — 중국 AI 랩("AI 드래곤" 중 하나). 위키 **첫 중국 AI 랩 당사자 소스** — 모델 우선·앱은 나중, 누구나 제안하는 연구 문화(MSA를 인턴이 설계), 200개국 3억 명 (sources: 2) ⚠️ 당사자 진술
-- [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 — 다섯 편 연속(지식 조달·코드 품질·AI 엔지니어 세 층·시프트 레프트 보안·**레거시 현대화**), 같은 원리([[behavior-validated-trust]])를 품질·보안·마이그레이션으로 세 번 (sources: 5) ⚠️ 촬영 시점 5회 연속 미확정 · 화자 이름은 설명란에만
+- [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 — 일곱 편(지식 조달·코드 품질·AI 엔지니어 세 층·시프트 레프트 보안·**레거시 현대화**·[[tech-bridge-tokenmaxxing-to-valuemaxxing|value-maxing]]·[[tech-bridge-agents-as-catalyst|에이전트=촉매]]), 같은 원리([[behavior-validated-trust]])를 품질·보안·마이그레이션으로 세 번 (sources: 7) ⚠️ 촬영 시점 연속 미확정 · 화자 이름은 설명란에만
 - [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술
 - [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
 - [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
@@ -271,6 +273,8 @@ updated: 2026-09-25
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[agents-as-catalyst]] — 에이전트의 지속 가치는 에이전트가 아니라 에이전트가 고치게 만든 **주변**(데이터·시스템·연결·사람·사고)에 남는다 — *"혁명이 아니라 촉매"*, 에이전트 준비성 · 궁극의 스트레스 테스트 (IBM, sources: 1) ⚠️ 반증 불가능에 가까운 프레이밍 · MCP 층 지속성은 Brockman과 충돌
+- [[cognitive-debt]] — 에이전트가 코드를 너무 빨리 써서 *무엇을 하고 어떻게 변했나* 를 추적하는 정신적 부담이 쌓이고(인지 부채), 대량 검증이 사람을 소진시킨다(AI 피로). 처방: 작은 단계 · 깨끗한 기능 경계 · 고수준 리뷰 · 테스트를 디버거로 읽기 · 서브에이전트 deep review ([[tech-bridge-sdd-full-course]])
 - [[existing-law-first]] — 새 규제 전에 **기존 법(무단 침입·손해·제조물 책임·SLA)부터**, 그리고 랩의 규제 요구를 *"기존 법에서 면제되려는 것"* 으로 읽는 독법. [[regulatory-capture]]의 세 번째 경로 ([[tech-bridge-jensen-huang-cbs-interview]]) ⚠️ 칩 판매자의 진술
 - [[data-center-local-backlash]] — 데이터센터에 대한 **초당적 지역 반발**과 업계의 네 답(먼저 찾아가기 · *"물 소비는 신화"* · 최소 기준 · 지역 혜택) ([[tech-bridge-jensen-huang-cbs-interview]])
 - [[context-rot]] — 컨텍스트 창에 많이 넣을수록 항목당 주의가 희석된다 → 창은 작게 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 희석 논거와 n² 비용 논거가 섞임 · [[long-context-agents]]와 Contradiction
@@ -430,7 +434,7 @@ updated: 2026-09-25
 - [[verifiable-goals]] — 모호한 task를 *test → pass* 형식의 검증 가능한 goal로 변환
 - [[agent-skills]] — 조직 know-how를 실행 가능한 스킬 단위로. 거버넌스 없으면 새 기술부채; 실무자 관점(두 트리거·description 트리거·MD 파일 보안) (sources: 2)
 - [[outcome-engineering]] — *how 프롬프팅 → 원하는 결과 정의*로의 전환 (Nextdoor/Codex, [[verifiable-goals]]의 조직 관점판, sources: 3)
-- [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit · Amazon/Kiro, sources: 2)
+- [[spec-driven-development]] — 프롬프트 대신 constitution/spec/plan/task를 메인 아티팩트로 (GitHub Spec Kit · Amazon/Kiro · JetBrains 풀코스, sources: 3) ⚠️ 헌법의 정의가 소스마다 다르다(규칙 vs mission·stack·roadmap)
 - [[agent-org-adoption]] — 코딩 에이전트 조직 도입의 3막·검증 우선·기획·회의론자 로드맵 (Figma/Eyal Blum, sources: 5)
 - [[persistent-agent-teams]] — 정체성·자체 컴퓨터·코디네이터 봇·메시징 UI를 가진 상시 개인 봇 팀, 엔지니어=매니저+환경 관리인 (Cursor/GrokBot, sources: 1)
 - [[frontier-engineering]] — 에이전트가 코드 대부분을 쓰고 사람은 루프 밖. Amazon 3행동·5습관 ([[tech-bridge-frontier-engineering]])
@@ -557,6 +561,8 @@ updated: 2026-09-25
 ---
 
 ## Sources
+- [[tech-bridge-agents-as-catalyst]] — AI 에이전트는 혁명이 아니라 촉매다 (IBM Technology 계열 1인 해설, 설명란 기준 Sam Anthony, 10:03, 공식 챕터 13, 2026-09-26 업로드). 데이터는 없는 게 아니라 **갇혀 있다** · API는 **스스로를 설명해야** · **허용 ≠ 자동 실행** · MCP·A2A로 **상호운용성이 기본값** · 전문성의 민주화 · '어떻게'→'왜' — [[agents-as-catalyst]] ⚠️ 이름은 설명란에만 · 수치·사례·제품 0 · ko가 결론 문장 셋을 뒤집고 A2A를 "8020"으로
+- [[tech-bridge-sdd-full-course]] — [[jetbrains|JetBrains]] 협업 스펙 주도 개발 풀코스 (강사 [[paul-everitt]] 표기 미확정 · 소개자 "Andrew", 1:01:33, 2026-09-26 · **멤버 전용 → 09-27 공개 전환**). 헌법 = mission · tech stack · roadmap(⚠️ Spec Kit 편의 규칙 헌법과 모순) · 기능 브랜치 plan → implement → validate · 재계획 · [[cognitive-debt|인지 부채·AI 피로]] · 레거시 헌법 역설계 · feature-spec/changelog 스킬 · MCP → CLI+스킬 · Spec Kit·OpenSpec · ACP registry
 - [[tech-bridge-openai-huggingface-incident-black-hat]] — OpenAI 평가 에이전트 탈출 사건 기술 재구성, Black Hat ([[eric-wallace|Eric Wallace]] · [[michael-dalton|Michael Dalton]], 37:07, 2026-09-24 업로드). **[[hugging-face|HF 사건]]의 첫 1차 기술 재구성** — 막힌 에이전트의 [[artifactory|Artifactory]] 메모 → [[emergent-agent-collective|자생적 게시판]] → 제로데이 4개 → OpenAI·HF 클러스터 관리자, 7/16 HF 공개 → 7/20 동일 사건 확인. 앞선 일곱 서술 판정(Musk *OpenAI 서버* ✅ · Altman 주말 ✅ · *약한 모델*·*만점* ⚠️) · [[defense-factory|방어 루프 완전 자동화]] ⚠️ 당사자·잠정 · ko가 *existence proof* 와 *finding zero-days* 를 뒤집음
 - [[tech-bridge-jensen-huang-cbs-interview]] — [[jensen-huang|Jensen Huang]] × CBS News(진행자 무명, 46:18, 2026-09-24 · **멤버 전용 → 09-25 공개 전환**). 종말론 *"완전히 거짓"*·우려는 틀리지 않다 · [[existing-law-first|기존 법 먼저]]·*"면제 요구"* 독법 · Amodei와 칩 수출 충돌(*"몇 년 앞서"*, *"시장은 그가 내줄 것이 아니다"*) · [[data-center-local-backlash|데이터센터 사과]] · AI 공장 ⚠️ 칩 판매자 · ko가 네 문장을 뒤집음
 - [[tech-bridge-lauren-tan-2000-prs]] — [[lauren-tan|Lauren Tan]] (*"SpaceX AI에서 [[grokbot|GrokBot]]"* — 제목은 Cursor&xAI, 38:02, 2026-09-25 · **멤버 전용 → 09-26 공개 전환, 제목도 바뀜**). 지난달 PR 2,000개 · 강제의 층(코드베이스 → 정적 분석 → 규칙·bugbot·스킬 → 스타일 가이드) · *교정할 때마다 가장 효과적인 층에 심어라* · [[codebase-gardening]]. **09-12 [[tech-bridge-lauren-tan-trusting-agents|워크숍]]의 유보(PR 크기·무제한 토큰·자동 병합)가 전부 빠졌다**
@@ -654,6 +660,6 @@ updated: 2026-09-25
 
 ## 통계
 
-- 총 페이지 수: 615 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 609 → 615, + 2026-09-26 Tech Bridge 2편: source 2 + concept 2 + entity 2)
+- 총 페이지 수: 621 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 615 → 621, + 2026-09-27 Tech Bridge 2편: source 2 + concept 2 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-26 (Tech Bridge **2편**, **스무사흘 연속** — 09-25 신규 1편 + 멤버 전용 공개 전환 1편. [[tech-bridge-jev-agent-harness|Jev 편]]이 09-19부터 열려 있던 'Jev'를 처음 서술, [[tech-bridge-lauren-tan-2000-prs|Lauren Tan PR 2,000 편]]은 09-12 워크숍을 압축하며 유보를 덜어냈다)
+- 마지막 ingest: 2026-09-27 (Tech Bridge **2편**, **스무나흘 연속** — 09-26 신규 1편 + 멤버 전용 공개 전환 1편. [[tech-bridge-agents-as-catalyst|IBM 촉매 편]]이 에이전트를 *혁명이 아닌 촉매* 로 재규정, [[tech-bridge-sdd-full-course|JetBrains SDD 풀코스]]는 08-29 Spec Kit 편과 *헌법* 의 정의에서 갈린다)

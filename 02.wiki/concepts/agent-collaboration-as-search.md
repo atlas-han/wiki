@@ -6,9 +6,9 @@ tags: [agent-to-agent, multi-agent, search, retrieval, privacy, coase-theorem, c
 aliases: [A2A as search, 에이전트 대 에이전트, 단일 전지 에이전트]
 related: [context-engineering, retrieval-augmented-generation, long-context-agents, agent-distributed-systems, persistent-agent-teams, sweeper-agent, black-box-agent-approach, privacy-auto-mode, sutton-bitter-lesson]
 first-seen: tech-bridge-agent-to-agent-as-search
-sources: [tech-bridge-agent-to-agent-as-search, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-agent-to-agent-as-search, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-agents-as-catalyst]
 created: 2026-09-10
-updated: 2026-09-21
+updated: 2026-09-27
 ---
 
 # 에이전트 간 협업은 검색 문제다
@@ -86,3 +86,7 @@ updated: 2026-09-21
 
 - [[tech-bridge-agent-to-agent-as-search]] (first-seen) · [[jean-denis-greze]] · [[town]]
 - 관련: [[context-engineering]] · [[retrieval-augmented-generation]] · [[sweeper-agent]] · [[black-box-agent-approach]] · [[privacy-auto-mode]] · [[sutton-bitter-lesson]] · [[company-brain]]
+
+## "A2A"의 다른 용법 — 표준 이름으로서 (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+이 페이지의 *A2A* 는 **에이전트 대 에이전트 협업 일반**이다. [[ibm|IBM Technology]] 계열 해설은 같은 약어를 **[[model-context-protocol|MCP]]와 나란히 놓인 표준화 "아이디어"** 로 쓴다 — *"MCP와 A2A 같은 아이디어들은 공통 패턴을 세우고, 외부 도구·시스템·에이전트와 통신하는 방식을 표준화하는 데 도움을 주었습니다"*(05:09~05:21). ⚠️ 영상·설명란 모두 **A2A를 풀어 말하지 않고**, ko·en 자막은 **"8020"** 으로 적었다. 이 위키는 두 용법을 **같은 것으로 보지 않는다** — 이 페이지의 논지(A2A는 검색 문제)는 그 표준과 무관하다.

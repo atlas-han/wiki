@@ -6,9 +6,9 @@ tags: [tool-design, mcp, agent-tooling, errors, read-write, api-design]
 aliases: [도구 품질 모범 사례, 결과 중심 도구, 조치 가능한 오류]
 related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems, toolbox-pattern]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness, tech-bridge-agents-as-catalyst]
 created: 2026-09-11
-updated: 2026-09-24
+updated: 2026-09-27
 ---
 
 # 에이전트용 도구 설계 모범 사례 다섯
@@ -107,3 +107,11 @@ REST의 자원 단위(GET /orders, DELETE /orders/1)가 아니라 **의도 단�
 이 페이지의 실패 모드 표에서 *도구가 너무 많다 → 선택 과부하*는 **설계 시점**(도구를 줄이고 잘 설계하라)의 처방이었다. [[tech-bridge-oracle-agent-memory-harness]]는 **실행 시점**의 답을 준다 — [[toolbox-pattern]]: 도구 정의를 **HNSW 벡터 인덱스**에 두고 에이전트 루프의 매 반복마다 필요한 것만 넣는다(34:19~35:08, 48:54~50:08).
 
 그리고 이 페이지의 규칙 2(*설명은 안내 — 언제·어떻게 쓰는가*)에 한 면이 붙는다 — 툴박스에서 도구 설명은 **검색기가 읽는 문서**이기도 해서, 설명이 비슷한 도구끼리는 **LLM으로 설명을 보강해 분리도(separability)를 높인다**(50:57~51:34). ⚠️ 측정 없음, 그리고 **검색이 빗나가 필요한 도구가 안 들어오는 실패**는 다루지 않는다.
+
+## ⚠️ 긴장 — "사람과 기계 모두에게" 이해되는 API (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+[[ibm|IBM Technology]] 계열 해설은 API의 요구 조건을 이렇게 적는다.
+
+> 오늘날 API가 에이전트에게 의미 있으려면 **스스로를 설명해야(explain itself)** 합니다. **예측 가능하고, 잘 문서화되어 있고, 사람과 기계 모두가 이해할 수 있어야** 합니다. (03:09~03:19)
+
+이 페이지의 전제는 *"에이전트가 쓸 도구는 사람이 쓸 API와 다르게 설계해야 한다"* 다. 두 주장은 **층이 다르다**(요구 조건 vs 설계 규칙) — 규칙 2(*설명은 안내*)·4(*조치 가능한 오류*)는 *스스로를 설명하는 API* 의 구체화로 읽힌다. 그러나 **한 인터페이스로 사람과 기계를 함께 섬기는가, 에이전트용 층을 따로 두는가**에는 두 소스가 다른 답을 준다. 이 위키는 해소하지 않는다. → [[agents-as-catalyst]]

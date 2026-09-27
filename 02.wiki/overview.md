@@ -172,6 +172,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ② [[tech-bridge-lauren-tan-2000-prs|Lauren Tan PR 2,000 편]]은 09-12 [[tech-bridge-lauren-tan-trusting-agents|워크숍]]의 신뢰론을 압축해 **강제의 층**(코드베이스 → 정적 분석 → 규칙·bugbot·스킬 → 스타일 가이드)과 *교정할 때마다 가장 효과적인 층에 심어라*, 그리고 [[codebase-gardening|코드베이스 = 기억이라 안티패턴이 퍼진다]]를 새로 얹었다. 수치는 두 배가 됐고 워크숍의 유보는 전부 빠졌다.
   운영: 멤버 전용 `zkmvCDSxqdc` 가 **제목까지 바뀌어** 공개됐다 — *긴 유명인 대담* 패턴은 깨졌다. `FJo7p9SPS9c` 는 여전히 멤버 전용.
 
+- *2026-09-27*: [[tech-bridge]] **2편** ingest(09-26 업로드 1편 + 멤버 전용 공개 전환 1편). ① [[tech-bridge-agents-as-catalyst|IBM 계열 7번째]](설명란 기준 Sam Anthony, ⚠️ 자막에 이름 없음)가 **[[agents-as-catalyst|에이전트는 혁명이 아니라 촉매]]** 라는 프레이밍을 들여왔다 — 데이터 계층 · *"스스로를 설명하는 API"* · 허용 ≠ 자동 실행 · MCP/A2A 상호운용성 · 민주화 · '어떻게'→'왜'. ⚠️ MCP 층의 지속성(Brockman)·접근성(Almeida)에서 기존 소스와 충돌, 수치·사례 0개.
+  ② [[tech-bridge-sdd-full-course|JetBrains 협업 SDD 풀코스]]는 08-29 [[tech-bridge-spec-driven-development|Spec Kit 편]]과 같은 흐름을 도구 없이 가르치며 헌법을 **mission · tech stack · roadmap** 으로 정의하고(규칙 중심 헌법과 ⚠️ 모순), 기능 루프 사이의 **재계획**, [[cognitive-debt|인지 부채·AI 피로]], 레거시 헌법 역설계, 스킬 패키징과 MCP·AGENTS.md·skills·ACP 표준을 통한 에이전트 독립을 더했다.
+  자막 쪽으로는 ⚠️ ko가 두 편 모두 결론 문장을 뒤집었다 — *"영원히 남을 것을 요구하지 않는다"* → "남아있을 것이다", *"Agents are stateless"* → "상태를 가지고 있다". 운영: §4a 목록의 마지막 멤버 전용 `FJo7p9SPS9c` 가 풀려 **목록이 비었다.**
+
 ---
 
 전체 페이지 카탈로그는 [[02.wiki/index]], 시간순 작업 기록은 [[log]] 참조.

@@ -6,9 +6,9 @@ tags: [code-quality, judgment, architecture, trade-offs, engineer-role]
 aliases: [결정 품질, implementation vs decision quality, 구현 품질]
 related: [system-level-quality, behavior-validated-trust, executable-standards, outcome-engineering, frontier-engineering, ai-native-sdlc, brain-hands-decoupling, ai-slop, no-one-shot-design, taste-vs-judgment]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-agents-as-catalyst]
 created: 2026-09-09
-updated: 2026-09-12
+updated: 2026-09-27
 ---
 
 # 결정 품질
@@ -71,3 +71,13 @@ AI는 즉시 **API 엔드포인트 + DB 스키마 + 큐 컨슈머 + 프런트엔
 ## References
 
 - [[tech-bridge-ai-era-code-quality]] · [[ibm]]
+
+## IBM 계열의 네 번째 반복 — "무엇이 만들 가치가 있는가" (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+같은 [[ibm|IBM Technology]] 계열이 이 페이지의 명제를 다시 말한다 — 이번엔 **코드 품질이 아니라 경쟁 우위**의 언어로.
+
+> 강력한 에이전틱 코딩 IDE가 등장하면서 **구현은 빠르고 접근 가능해지고, 관심은 위로 이동합니다.** '어떻게' 대신 '왜'에 집중합니다. (08:46~08:58)
+
+> **기술 구현이 보편화되면, 경쟁 우위는 애초에 무엇이 만들 가치가 있는지 아는 쪽으로 옮겨 갑니다.** (09:08~09:15)
+
+*"결과 기반 사고(outcome-based thinking)와 더 높은 수준의 문제 해결"*(08:59~09:04) — [[value-maxing]]·[[outcome-engineering]]과 같은 방향. ⚠️ 위 *"처방이 '판단이 중요하다'에서 멈춘다"* 비판이 **그대로 적용된다** — *무엇이 만들 가치가 있는지 아는 법* 은 말하지 않는다. → [[agents-as-catalyst]]

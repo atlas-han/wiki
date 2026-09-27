@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course]
 created: 2026-05-25
-updated: 2026-09-20
+updated: 2026-09-27
 ---
 
 # Model Context Protocol (MCP)
@@ -169,3 +169,25 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 > ⚠️ 그리고 **MCP를 대체할 무엇이 실제로 무엇인지** — 권한·감사·재현성을 어떻게 다루는지 — 가 없다. 주장은 방향뿐이다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[openai-astra]] · [[file-system-agent]] · [[push-vs-pull-context-retrieval]]
+
+## 상호운용성의 기본값 — "MCP와 A2A 같은 아이디어" (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
+
+[[ibm|IBM Technology]] 계열 해설은 MCP를 **도구 접속 규약이 아니라 시스템 간 상호운용성의 표준화**로 놓는다 — 그리고 **A2A와 한 묶음**으로.
+
+> **MCP와 A2A 같은 아이디어들은 공통 패턴을 세우고, 외부 도구·시스템·에이전트와 통신하는 방식을 표준화하는 데 도움을 주었습니다.** 이것들은 시스템 계층을 열어, **기본값으로 시스템 간 연결을 가능하게 하고 상호운용성 쪽으로** 이동하게 했습니다. (05:09~05:30)
+
+> **통합은 (…) 노력이 아니라 기대가 되어 가고 있습니다.** (05:41~05:48)
+
+전제는 *"사람이 단절된 시스템들 사이의 다리였다"*(04:53~05:03). 그리고 테제([[agents-as-catalyst]])상 이 표준화는 **에이전트가 사라져도 남는 이득**이다.
+
+> ⚠️ Contradiction: 앞의 *"세상을 다시 도구화하고 있다"* 절에서 [[greg-brockman|Brockman]]은 MCP·CLI 층을 *"거의 뻣뻣한 방식"* 의 **과도기적 재도구화**로 본다. 이 소스는 같은 층을 **오래 남을 기반**으로 본다. 두 소스는 서로를 모르고, 이 위키는 판정하지 않는다.
+
+⚠️ 영상은 MCP·A2A를 **"아이디어"** 로만 부르고 **A2A를 풀어 말하지 않는다**(설명란도 MCP만 풀어 적음). ko·en 자막은 A2A를 **"8020"** 으로 적었다. 이 위키에는 A2A 프로토콜 페이지가 없다 — [[agent-collaboration-as-search]]의 *A2A* 는 에이전트 간 협업 일반을 가리키는 다른 용법이다.
+
+## 교육 콘텐츠가 "MCP → CLI + 스킬"을 추세로 가르친다 (2026-09-27 · [[tech-bridge-sdd-full-course]])
+
+[[jetbrains|JetBrains]] 협업 SDD 강좌: MCP는 *"Until now, the universal way to extend an agent"*(52:21~52:27)였지만 *"skills that use code tools like a CLI (…) often accomplish the same purpose more elegantly"*(52:49~52:58). 예시는 패키지 최신 문서를 주는 **Context7** — 설치 과정이 **MCP 서버 대 CLI+skills**를 고르게 하고, 강좌는 후자를 고른다(53:14~53:21). *"This trend from NCP[=MCP] servers to skills plus CLI is accelerating. People are rethinking MCP because CLI tools can take action with less setup and less context usage."*(53:51~54:02)
+
+- 같은 강좌가 MCP를 여전히 **에이전트 독립의 네 표준**(*"MCP for external tools"* 57:16~57:20) 중 하나로 둔다 — **대체가 아니라 역할 축소**로 읽힌다.
+- [[tech-bridge-graft-code-knowledge-graph|Graft 편]]의 CLI 대 MCP 비교([[push-vs-pull-context-retrieval]])가 **측정**이었다면, 이 강좌의 근거(설정·컨텍스트 사용이 적다)는 **주장**이다.
+- ⚠️ ko는 이 문장의 방향을 바꿨다 — *"MCP 서버에 더 많은 CLI 기능을 제공합니다"*(53:52). `en`도 같은 오독(*"MCP servers moving towards more CLI capabilities"*).

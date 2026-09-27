@@ -1589,3 +1589,33 @@ HF 사건은 이 위키에서 **일곱 번 말해졌고 한 번도 기록되지 
 ### 운영 메모
 
 두 편을 **병렬 서브에이전트**로 나눴고(raw 파일명은 처음부터 published 날짜), index·overview·log·tech-bridge·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지 충돌 없음. 멤버 전용 → 공개 전환은 **세 번째**이고 이번엔 **제목까지 바뀌었다** — §4a 목록 재판정은 `%(availability)s` 한 번으로 충분했다.
+
+## [2026-09-27] ingest | Tech Bridge — AI 에이전트는 혁명이 아니라 촉매(IBM) · 스펙 주도 개발 풀코스(JetBrains) (09-26 업로드 1편 + 멤버 전용 공개 전환 1편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 493초, 전부 `public`). 신규 업로드 **09-26 1편**(`B1FXnXlIm8c`) + ⭐ **멤버 전용이었던 `FJo7p9SPS9c`(스펙 주도 개발 풀코스, 61:33)가 `public` 으로 풀려** 함께 ingest — 총 **2편**. `upload_date` 20260923 → **20260926**(제목은 그대로). 이로써 **§4a 멤버 전용 목록이 비었다.** 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, 수동 트랙 없음), **429 없음**(쿠키 무효 경고는 계속, 무해).
+
+**신규 source 2 · concept 2 · entity 2**, index 실측 **615 → 621**.
+
+- `B1FXnXlIm8c`(10:03, **IBM Technology 계열, 설명란 기준 Sam Anthony**, 공식 챕터 13개) → [[tech-bridge-agents-as-catalyst]]
+- `FJo7p9SPS9c`(1:01:33, **JetBrains 협업 강좌, 강사 [[paul-everitt]] 표기 미확정**, 공식 챕터 없음 — 구간은 편집자 부여) → [[tech-bridge-sdd-full-course]]
+
+신규: [[agents-as-catalyst]] · [[cognitive-debt]] · [[jetbrains]] · [[paul-everitt]]
+
+보강(IBM 편): [[ibm]] · [[model-context-protocol]] · [[agent-governance-layers]] · [[decision-quality]] · [[agent-collaboration-as-search]] · [[agent-tool-design-practices]] · [[standards-as-market-makers]] · [[smarter-software-vs-cheaper-software]]
+
+보강(SDD 편): [[spec-driven-development]] · [[github-spec-kit]] · [[agent-skills]] · [[agent-client-protocol]] · [[model-context-protocol]] · [[andrew-ng]] · [[claude-code]] · [[tech-bridge]]
+
+### 이번 실행의 구도 — 가벼운 프레이밍 하나, 무거운 실습 하나
+
+IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이밍이다 — 에이전트의 값은 에이전트가 아니라 에이전트가 고치게 만든 주변(데이터·API·권한·상호운용성·사람)에 남는다. IBM 계열 일곱 번째이고 *"무엇을 만들 가치가 있나"* 는 [[decision-quality]]·[[value-maxing]]에 이은 반복이다. SDD 풀코스는 08-29 [[tech-bridge-spec-driven-development|Spec Kit 편]]의 **재방문이 아니라 다른 강사의 같은 주제**인데, *헌법(constitution)* 이라는 같은 단어가 **규칙 목록 ↔ mission·tech stack·roadmap 세 파일**로 서로 다른 것을 가리킨다. 09-18 재방문 규칙을 준용해 *무엇이 더해지고 무엇이 사라졌는가* 를 [[spec-driven-development]]에 적었다 — 더해진 것은 기능 사이의 **재계획**, [[cognitive-debt|인지 부채·AI 피로]], 레거시 헌법 역설계, 스킬 패키징, **에이전트·IDE 독립**(MCP · AGENTS.md · skills · ACP), 사라진 것은 **도구 의존**(Spec Kit이 *"one attempt"* 로 낮춰짐).
+
+### 주의사항
+
+- ⚠️ **ko가 결론·테제 문장을 뒤집은 자리** — IBM 편 *"None of those benefits require agents to stick around forever"* → "영원히 남아있을 것이다"(09:47), *"It's not the agents we build"* → "그것들이 바로 우리가 만들어내는 에이전트"(09:26), *"allows an action doesn't mean it should be performed automatically"* → "허용하지 않습니다 / 반드시 해야 한다"(03:31), *"Years from now"* → "몇 년 전"(00:10). SDD 편 *"Agents are stateless"* → "상태를 가지고 있다"(01:12), *"3 or 4 minutes"* → "3~4시간"(04:01), *back-and-forth* → "일방적인 대화"(43:59), *MCP 서버 → 스킬+CLI* → "MCP 서버에 CLI를 더한다"(53:52).
+- ⚠️ **핵심어 소실** — *MCP and A2A* → **"MCP와 8020"**, *agents* → 요원·대리인·작용제, *customer support* → "환자 치료", *single application* → "독신 생활", *tech stack* → **"배터리"**(세 번), *roadmap* → "시트 경로", *feature* → "함수", *main 브랜치* → "도메인", SDD → "SSD"·"자기 주도 개발", *brownfield* → "오염된 부지".
+- ⚠️ **`en` 트랙은 두 편 모두 en-orig와 달랐고 이번에도 ko 오역을 공유한다**(8020 · branch domain · Behave badly) — 독립 근거가 아니다. 인용은 en-orig만. 반대로 **ko가 en-orig ASR보다 옳은 자리**도 있다(*STD* → SDD, *NCP* → MCP).
+- 미확정: IBM 편 화자 이름(**자막 세 트랙 어디에도 없음** — 설명란 의존 IBM 계열 네 번째, 인물 페이지 만들지 않음), A2A의 풀이(영상·설명란 모두 없음, 페이지 없음), SDD 강사 철자(Everett/Everitt/에버릿), 소개자 "Andrew"의 성, *"React 9.2"*(두 트랙 일치 → 판독 안 함), 두 편 촬영 시점.
+
+### 운영 메모
+
+두 편을 **병렬 서브에이전트**로 나눴고(raw 파일명은 처음부터 published 날짜), index·overview·log·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지([[model-context-protocol]]·[[tech-bridge]])를 두 에이전트가 좁은 Edit로 건드렸고 충돌 없음. 서브에이전트 하나가 raw 헤더에 *"info.json이 0바이트라 자막 종류 확인 불가"* 라고 적었으나 실제로는 4MB였고 **`subtitles` 빈 값 · `automatic_captions` 에 ko 있음**을 확인해 커밋 전에 고쳤다. 멤버 전용 → 공개 전환은 **네 번째**이고 §4a 목록의 네 편이 전부 풀렸다.

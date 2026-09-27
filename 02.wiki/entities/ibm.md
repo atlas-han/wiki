@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst]
 created: 2026-09-08
-updated: 2026-09-24
+updated: 2026-09-27
 ---
 
 # IBM
@@ -142,3 +142,22 @@ updated: 2026-09-24
 ⚠️ **기존 경고에 해당하는 것**: *"개발자와 리더[가] 혼자 짊어질 수 없다 — 플랫폼이 도와야 한다"*(07:11~07:23)는 **플랫폼 벤더가 자기 층을 해법에 넣는 문장**이다. 제품명은 없다. 설명란 링크는 열어 보지 않았다.
 
 09-23 편이 더한 것: [[value-maxing]] · [[token-minimization-trap]], 그리고 [[trusted-throughput]] · [[overspending-underusing-loop]] · [[agent-roi-measurement]] · [[true-cost-to-perfect-answer]] · [[context-engineering]] · [[model-mixing-economics]] 보강.
+
+## 일곱 번째 소스 — 에이전트는 촉매다 (2026-09-27)
+
+[[tech-bridge-agents-as-catalyst]](09-26 게시, 10:03 1인 해설, 공식 챕터 13개)로 IBM은 **소스 일곱 편**을 가진 조직이 됐다. 판정 근거: 해시태그 `#IBMTechnology` + 관련 링크 `ibm.biz` 둘(*"AI 에이전트 자세히 알아보기"*, *"IBM 월간 AI 뉴스레터 구독"*).
+
+| | 09-07 ~ 09-23 (여섯 편) | **09-26 (이번)** |
+|---|---|---|
+| 발표자 | 무명 셋 · 설명란에만 셋 | **"Sam Anthony, IBM 데이터 사이언티스트"** — ⚠️ **설명란에만**, 자막에 자기소개 없음 |
+| 촬영 시점 | 여섯 번 미확정 | **미확정** |
+| 자사 제품 | 없음 | **없음** — 고유명은 MCP·A2A(*"아이디어"*)뿐 |
+| 주제 | 지식·품질·직무·보안·레거시·토큰 경제 | **에이전트의 지속 가치는 주변에 남는다** — [[agents-as-catalyst]] |
+
+> **관찰 유지, 일곱 번째** — 자사 제품 없음·촬영 시점 미확정이 일곱 번 연속, *이름은 설명란에만* 이 네 번째. 이번 편은 **수치·사례도 0개**다.
+
+**같은 원리를 네 번째로 말했다** — *구현은 쉬워지고 무엇을 만들지가 차별화* 가 09-08([[decision-quality]]) → 09-23([[value-maxing]]) → 이번(*"경쟁 우위는 애초에 무엇이 만들 가치가 있는지 아는 쪽으로"*, 09:08~09:15)으로 되풀이된다. ⚠️ 반면 이번 편의 **민주화 낙관**은 같은 계열 09-15([[read-fluency-for-agent-output]])·09-16([[shift-left-security]])이 강조한 **검증·보안 비용**을 한 번도 꺼내지 않는다.
+
+⚠️ **기존 경고에 해당하는 것**: 데이터 계층 현대화·API 표준화·거버넌스·상호운용성은 **엔터프라이즈 데이터·통합 벤더가 파는 것과 같은 자리**다. 소스는 그 연결을 하지 않고 제품명이 없다.
+
+09-26 편이 더한 것: [[agents-as-catalyst]], 그리고 [[model-context-protocol]] · [[agent-governance-layers]] · [[decision-quality]] 보강.

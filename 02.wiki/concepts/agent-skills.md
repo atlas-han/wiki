@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course]
 created: 2026-08-31
-updated: 2026-09-23
+updated: 2026-09-27
 ---
 
 # Agent Skills
@@ -271,3 +271,15 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 같은 에피소드의 [[ryan-lopopolo|Lopopolo]]는 스킬의 **발동 조건**을 자율성의 핵심으로 든다 — *"에이전트가 수행할 작업을 분류하고, 이를 바탕으로 필요한 컨텍스트를 동적으로 파악하는 것이 높은 자율성의 핵심 요소"*(12:58~13:30). 이 페이지의 progressive disclosure와 같은 자리다. → [[agent-loop-size]] · [[tools-and-context-over-harness]]
 
 ⚠️ **09-10에 기록한 *공유 스킬은 누가 쓰는가* 의 문제가 벤더 규모로 커졌다** — *명령 하나로 100+ 외부 스킬*(29:34~29:39)을 권하면서 **검토·버전 고정·[[prompt-injection|인젝션]] 표면**을 말하지 않는다. 품질 근거는 **GitHub 별 19,000개**뿐이다.
+
+## 스킬이 워크플로 자체를 담는다 — SDD 강좌 (2026-09-27 · [[tech-bridge-sdd-full-course]])
+
+[[spec-driven-development|스펙 주도 개발]] 강좌([[jetbrains|JetBrains]] 협업)는 스킬을 **자기 개발 프로세스를 자동화하는 단위**로 쓴다. 정의는 기존과 같다 — *"a package of instructions and resources providing the agent new capabilities and expertise"*, *"great for definable, repeatable workflows that require context specific to your project or organization"*(33:35~33:51).
+
+- **재계획의 산물로서의 스킬** — 비기술 이해관계자용 **changelog 스킬**(33:53~35:09), validation 단계(README 갱신 · lint · format · 테스트)를 묶는 **validation 스킬**(34:29~34:47), 매번 같은 프롬프트를 치던 **feature-spec 스킬**(50:19~51:04). 셋 다 **에이전트의 스킬 작성 스킬(skill creator)과 대화해서** 만든다.
+- **범위** — 에이전트가 changelog 스킬을 스스로 **global skills area**에 만들었다(34:57~35:04). 프로젝트 전용이냐 전사 표준이냐는 *"a style choice"*(34:24~34:26).
+- ⭐ **progressive disclosure는 컨텍스트가 커질수록 믿기 어렵다** — *"their judgment isn't always perfect, especially as the context window gets larger"*(51:37~51:44). 처방: *"If you know you want a skill used, name it."*(51:48~51:51) — 파일 태깅과 같은 휴리스틱. 스킬이 **다른 스킬을 부르게** 할 수도 있다(51:23~51:27).
+- **슬래시 커맨드 → 스킬** — *"many agents are moving from custom {slash} commands over to skills"*(52:05~52:10).
+- **MCP → CLI + 스킬** — Context7 설치 화면이 MCP 서버와 CLI+skills 중 고르게 하고, 강좌는 후자를 고른다(53:14~53:21). *"CLI tools can take action with less setup and less context usage"*(53:56~54:02). → [[model-context-protocol]]
+- **이식성** — feature-spec 스킬을 Codex의 다른 경로로 복사하자 *"It runs just fine once migrated"*(57:45~57:53). 강좌는 agent skills를 MCP · AGENTS.md · ACP와 함께 **에이전트 독립의 네 표준** 중 하나로 둔다(57:14~57:31).
+- ⚠️ **플러그인** — *"plugins are not yet a cross-agent standard. Like apps or dependencies, plugins can execute code. So, make sure you trust them"*(54:31~54:42). 09-23에 표시한 **외부 스킬의 검토·버전 고정·인젝션 표면** 문제에 대한 처방은 이번에도 "신뢰하라" 한 줄이다.
