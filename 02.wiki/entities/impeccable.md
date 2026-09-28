@@ -5,9 +5,9 @@ category: tool
 tags: [design, agent-skills, claude-code, cursor, codex, copilot, steering]
 aliases: [임페커블]
 links: []
-sources: [tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-impeccable-design-steering, tech-bridge-skill-engineering-dark-arts]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-28
 ---
 
 # Impeccable
@@ -47,3 +47,23 @@ updated: 2026-09-12
 
 - [[tech-bridge-impeccable-design-steering]] · [[paul-bakaus]]
 - 관련: [[adjective-verb-steering]] · [[steering-altitude]] · [[no-one-shot-design]] · [[agent-skills]] · [[ai-slop]]
+
+## 2026-09-28 — 내부 구조: 스크립트·훅·라이브 모드·하네스별 빌드 ([[tech-bridge-skill-engineering-dark-arts]])
+
+제작자 워크숍이 09-11 편에 없던 **구성 요소**를 밝힌다. 사이트 `impeccable.style`(02:21), **Apache 2 오픈소스**(49:37~49:40), 설치 `npx impeccable skills install`(ASR *"MPX"*, 49:42~49:45) — 09-12에 *"라이선스는 소스에 없다"* 로 남긴 빈칸이 채워졌다.
+
+| 구성 요소 | 내용 |
+|---|---|
+| **명령별 MD 라우팅** | `critique`·`polish` 등 명령마다 다른 MD 파일 로드, *"not just one giant skill MD"*(21:43~21:52). 브리프를 보고 **brand(랜딩) / product register**를 바꿔 다른 규칙 로드(22:00~22:19) |
+| **`critique`** | 서로 못 보는 두 서브에이전트 — 디자인 디렉터 LLM + **결정론적 디자인 린터**(대비·서체 수·가장자리 근접, 09:05~09:21) → 메인 스레드 종합 → [[generator-evaluator-pattern]] |
+| **`color.js`** | 프로젝트 시작 시 100개 넘는 손으로 고른 원색 중 시드 → [[anti-attractor]] |
+| **`.impeccable` 폴더** | 비평을 git-ignore된 파일로 남기고 다음 세션이 읽는다, 사용자의 반대를 선호로 기록(23:07~24:12) |
+| **`context.mjs`** | 매 호출 실행 — `product.md`·`design.md` 주입, 없으면 구조화된 JSON 지시, **자기 업데이트 안내**(27:03~28:15) → [[scripts-that-talk-back]] |
+| **디자인 훅** | Claude Code·Cursor·Codex·GitHub Copilot에 설치, 편집마다 린트, 약한 모델엔 PreToolUse, 파일~CSS 규칙 단위 ignore(30:27~34:21) → [[hook-enforced-workflow]] |
+| **라이브 모드** | 인앱 브라우저 + 폴러 + SSE + stdout — 요소 선택 → 변형 → accept/escape(35:43~39:17). MCP를 쓰지 않는다 |
+| **하네스·모델별 빌드** | 치환 변수(질문 도구), 모델별 XML 블록(과적합 회피 규칙), Codex/GPT용 gate MD, **자체 CLI 설치기/컴파일러**(45:22~46:51) → [[cross-harness-skill-compilation]] |
+| **eval** | E2E(LLM + Playwright) + 비공개 eval 하네스, 규칙마다 XML ID로 **줄 단위 ablation** → [[skill-evals]] |
+
+**09-11 편과의 관계** — 그 편의 *"auto는 없다"* 와 이 구조는 모순되지 않는다: **결정은 사람에게**(라이브 모드의 accept/escape, 비평 반대의 기록), **규율은 모델에게 강제**(스크립트·훅·gate). ⚠️ 위키의 정리.
+
+⚠️ 제작자 진술. 라이브 데모는 Cursor+Composer에서 서브에이전트를 보여 주지 못했고(16:23~16:26) 훅 데모는 *"fake demo"*(33:38). 제작자 스스로 *"we're definitely outgrowing the skill platform"*(58:44~58:48).

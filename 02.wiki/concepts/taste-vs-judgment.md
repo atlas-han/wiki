@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts]
 created: 2026-09-12
-updated: 2026-09-16
+updated: 2026-09-28
 ---
 
 # 취향과 판단
@@ -100,3 +100,16 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 > **AI 코딩 도구 덕분에 코드 생성이 쉬워졌으므로, 이제 어려운 부분은 코드 자체가 아니라 판단력입니다.** (…) **수업에서 항상 배울 수 있는 건 아니지만, 직접 만들어 보면서 확실히 배울 수 있습니다.** (00:36~01:07)
 
 *판단* 의 내용은 **구조화·무엇을 만들지·왜 이 접근인지**이고, 처방은 **건설**이다 — 신호 정의(Hall)·슬롭 측정(Castello Branco)·조향(Bakaus)과 달리 **학습 경로**를 말한다. 그리고 그 판단이 서기 위한 최소 조건을 같은 소스가 정한다 — [[read-fluency-for-agent-output|에이전트가 쓴 것을 읽을 만큼]]. ⚠️ 취향(taste)이라는 말은 이 소스에 없다. → [[ai-engineer-vs-ml-researcher]]
+
+## 2026-09-28 — 제작자의 재확인: 취향은 모델 수준에서 풀 수 없고, 모델은 맥시멀리스트다
+
+[[paul-bakaus]]가 워크숍 Q&A에서 09-11 입장(*"증폭될 수 있지만 배양될 수 없다"*)을 **eval 경험**으로 다시 말한다([[tech-bridge-skill-engineering-dark-arts]], 56:04~58:12).
+
+> *"I don't think taste can be solved at a model level. Um, I actually think it's a it's a fundamentally human thing."* (56:28~56:34)
+
+- **희소성** — 취향은 희소하고 고유해서 *"once everybody uses the same taste uh it becomes ubiquitous and then we don't think it's tasteful anymore"*(56:34~56:45). en-orig는 *"scars"*, ko·en은 **"희귀/rare"** — *scarce*로 읽힌다(ko가 맞는 자리). 이 페이지의 **희소성 태그**와 [[ai-slop]]의 "움직이는 표적"이 **같은 메커니즘**(보급되면 가치가 사라진다)이라는 화자 자신의 연결이다.
+- **모델 judge의 편향** — *"there are certain things that a models can evaluate well like hey is the correct thing in the first viewport (…) so functional stuff"*(56:56~57:03). 하지만 첫 뷰포트 품질 judge에서 **Gemini는 더 채울수록 높게 매긴다** — *"the models are often maximalist"*(57:18~57:37). 그래서 **모델 응답을 뒤집는 judge**를 쓴다(57:41~57:49).
+- **실무 결론** — 그의 도구는 *"the design director eyes that works marginally better than random"*, 1차 통과용이고 이후 *"I use my own human eyes to evaluate results and annotate them"*(58:02~58:12).
+- 그가 이 주제로 *"Ben from Contra"* 와 이야기했고 *"some of my colleagues might disagree"*(56:19~56:28) — 반대 입장의 이름은 없다. 이 페이지 네 입장 중 [[thais-castello-branco]]([[taste-labs]])의 **취향은 훈련·측정 가능** 쪽과 여전히 갈린다.
+
+⚠️ *"marginally better than random"* 의 측정 방법·수치 없음. eval 하네스는 비공개.

@@ -6,9 +6,9 @@ tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
 related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts]
 created: 2026-09-13
-updated: 2026-09-19
+updated: 2026-09-28
 ---
 
 # 스킬 eval
@@ -75,3 +75,22 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 ## References
 
 - [[tech-bridge-lauren-tan-trusting-agents]] · [[pstack]] · [[generator-evaluator-pattern]] · [[verification-cost-asymmetry]] · [[skill-self-improvement]] · [[agent-skills]] · [[lauren-tan]]
+
+## 줄 단위 ablation과 하네스 재현 — 배포되는 스킬의 eval (2026-09-28 · [[tech-bridge-skill-engineering-dark-arts]])
+
+[[paul-bakaus]]가 Q&A에서 밝힌 [[impeccable|Impeccable]]의 평가 절차(51:46~55:54). *"it started you know vibes based uh and now it's really uh truly um well tested"*(55:48~55:54).
+
+| 층 | 내용 |
+|---|---|
+| **저장소 테스트** | E2E — LLM 기반 테스트 + Playwright(라이브 모드 스크립트 등, 52:57~53:11) |
+| **하네스 재현** | 비공개 eval 하네스가 관심 하네스(Claude Code·Codex·Gemini)의 **조건과 도구**(브라우저 스크린샷 등)를 재현 — Claude Code SDK 사용(52:27~53:40) |
+| **사용자 역 LLM** | 초기화 인터뷰가 대화형이라 *"this LLM that acts as the user against the other LLM"*(53:59~54:04) |
+| **MoE 디자인 judge** | *"give it eyes"* — 결과마다 평가(54:09~54:16) |
+| **행렬** | 20개 니치(예: 이탈리안 레스토랑) × GPT-5.5·Opus·Sonnet × **스킬 릴리스마다 5~10회**, 경쟁 스킬(Anthropic front-end design)과 비교(54:20~54:48) |
+| ⭐ **줄 단위 ablation** | 규칙마다 **고유 ID를 가진 XML 태그** → 그 줄을 빼고 전 모델로 eval → 다시 넣고 → **결정론적 검출 엔진**으로 실제로 바뀌었는지 확인(54:50~55:28). 예: *"don't do like gray on colorful backgrounds"* 에는 ablation 테스트와 결정론적 피드백 루프가 붙어 있다(55:30~55:44). *"harder and more expensive (…) I don't recommend it for everyone"*(54:53~54:58) |
+
+이 페이지의 기존 절차(Lauren Tan: 실패 → 테스트 → 스킬 수정)와 비교하면 **단위가 규칙 한 줄**이고 **판정이 결정론적 검출기**라는 점이 새롭다 — LLM judge의 편향을 피하려고 **측정 가능한 규칙만** ablation 대상이 되는 셈이다. ⚠️ 위키의 해석.
+
+**judge의 편향** — 취향 평가는 잘 안 된다고 본인이 말한다(*"I don't think they work particularly well"* 56:14~56:16). 첫 뷰포트 judge에서 Gemini는 **더 채울수록 높게** 매긴다(57:18~57:33) → **모델 응답을 뒤집는 judge**(57:41~57:49). 결과는 *"marginally better than random"*, 1차 통과 후 **사람이 주석**(58:02~58:12). → [[taste-vs-judgment]]
+
+**스킬 eval의 공통 도구가 없다** — 청중이 짚자 화자는 자기 도구를 공개할 수도 있다고만 답했다(1:00:24~1:00:37). ⚠️ eval 하네스는 **비공개**(53:17~53:20)라 위 절차는 전부 자기 진술이다.

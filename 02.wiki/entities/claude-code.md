@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-09-27
+updated: 2026-09-28
 ---
 
 # Claude Code
@@ -148,3 +148,29 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - **skill creator와 global skills** — changelog 스킬을 만들자 **global skills area**에 두었고 곧바로 그 스킬로 changelog를 생성했다(34:57~35:09).
 - **plugins** — *"a collection of agent extensions that can be installed and updated"*(54:16~54:23), ⚠️ 아직 에이전트 간 표준이 아니고 코드를 실행하므로 신뢰를 확인하라(54:31~54:42).
 - 강좌는 Claude Code를 **여럿 중 하나**로 둔다 — 같은 스킬을 [[codex|Codex]]로 옮겨 돌리고(57:45~57:53), ACP registry로 OpenCode를 붙인다.
+
+## 장시간 자율 연구 에이전트로 — 9~10시간마다 멈춘 쪽 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
+
+[[prime-intellect|Prime Intellect]]가 Claude Code(Opus — ⚠️ 버전은 en-orig *1.8*, en·ko *4.8* 로 미확정)를 optimizer speedrun에 풀었다. 화자가 *"honestly very painful to work with"*(07:34~07:36)라 부른 행동:
+
+> *"Claude Claude code keeps stopping every 9 or 10 hours and basically said, "Yeah, I cannot improve the record. It's too hard for me. There is no way to to go beyond it.""* (07:36~07:46)
+
+*"계속해, 새 방향을 탐색해"* 라고 하면 다시 10시간 — 결과적으로 **시간의 약 1/3을 놀았다**(08:00~08:04, 화자가 모니터링할 수단이 없었으므로). 그 밖의 관측:
+
+- scratchpad는 적게, **이모지와 함께 새 기록에 흥분**(09:01~09:07). 서브에이전트·compaction은 Codex보다 훨씬 적다(compaction은 전체 실행에 ~1회, 09:55~10:01).
+- **그런데 성적은 최고** — 당시 최고 기록 2,990 step을 **50~60 step 앞섰고**(11:05~11:15), 초반이 특히 빨랐다(10:34~10:39). 재시작 때 **인간의 새 기록을 가져와 개선**했다(10:50~10:56).
+- 6일 실험에서도 *"once again very good"*(12:57~12:59), **점진적** 개선. 단 **max mode에선 토큰을 훨씬 많이** 쓴다(13:39~13:41).
+- **논문 검색이 가장 활발했고, 다른 모델이 못 찾은 논문으로 최고 결과**(14:04~14:17).
+
+> ⚠️ **포기가 모델 성향인지 하네스(goal.md 방식)·설정 탓인지는 소스가 가리지 않는다.** 단일 실험이다. 이 위키의 [[reward-hacking]] 사례(막히자 답을 찾아 나간 평가 에이전트)와 **막혔을 때의 반응이 정반대**라는 점만 기록한다. ⚠️ en-orig ASR은 또 *"Cloud Code"*(05:32·05:41) — 제목·설명란은 옳다. → [[automated-ai-research]]
+
+## 2026-09-28 — 스킬 배포자가 본 Claude Code의 하네스 동작 ([[tech-bridge-skill-engineering-dark-arts]])
+
+[[paul-bakaus]]([[impeccable|Impeccable]])가 여러 하네스용으로 스킬을 컴파일하며 관찰한 것(화자 진술, 시점 미확정) → [[cross-harness-skill-compilation]]:
+
+- **서브에이전트를 스킬이 프로그래밍적으로 쉽게 띄운다**(41:08~41:13) — Codex는 사용자 요청 필요.
+- **AskUserQuestion** — *"one of the coolest tools"*(41:33~41:41).
+- **백그라운드 작업이 끝나면 모델이 자동으로 깨어난다**(42:52~43:00) — Impeccable 라이브 모드가 이것에 기댄다.
+- **스킬 디렉터리를 가리키는 환경 변수**가 있다 — *"no other harness supports this right now I believe"*(22:52~23:04).
+- **자기 작업을 자기가 리뷰하면 높게 매긴다**(Codex와 공통, 08:02~08:08).
+- ⚠️ **마켓플레이스** — *"the claude code one for sure doesn't work particularly well"* — 업데이트가 안 되고 캐싱 문제(1:02:38~1:02:50). *"Anthropic[] has still not adopted agents.md"*(40:51~40:54).

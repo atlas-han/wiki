@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
 related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts]
 created: 2026-06-03
-updated: 2026-09-23
+updated: 2026-09-28
 ---
 
 # Harness Engineering
@@ -139,3 +139,11 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 | **Google 에피소드 진행자 ([[tech-bridge-lopopolo-agent-harness]])** | **LLM이 아닌 모든 것** — *"하네스는 LLM을 제외한 AI 에이전트의 모든 구성 요소"*(00:47~00:49). 빌리: *"의도를 행동으로 연결"*(20:36~20:38) |
 
 > ⚠️ Contradiction: 에피소드의 설명란·내레이션은 Lopopolo를 **"'에이전트 하네스'라는 용어를 만든"** 사람으로 소개한다(02:14~02:22). 본인이 명명을 주장하는 대상은 **harness engineering**이고, 이 위키의 [[agent-harness-design]]은 [[anthropic|Anthropic]] 블로그의 *harness* 용법에서 출발했다. **판정하지 않는다** — 양쪽 게재일이 위키에 월 단위로 없다. 이 페이지의 first-seen(06-03 Cole Medin 편)이 *"2026년 들어 대중화"* 라고 한 것과, Lopopolo의 **2026년 2월** 글(02:43~02:48)은 시간상 정합한다.
+
+## 스킬 작성자에게 온 하네스 엔지니어링 — "Prompting is a spell, harnessing is magic" (2026-09-28 · [[tech-bridge-skill-engineering-dark-arts]])
+
+[[paul-bakaus]]([[impeccable|Impeccable]])의 워크숍 테제: *"prompting is sort of like the starter level, but harness engineering is where you should end up"*(06:23~06:28). 이 페이지의 하네스 엔지니어링이 **에이전트 제작자**의 일이었다면, 이 워크숍은 **스킬 배포자**가 남의 하네스를 확장하는 일로 가져온다 — *"it is extending the harness of whoever is using that thing"*(06:46~06:50).
+
+질문의 형태: *"what capabilities of that harness that you can exploit to make the best user experience for your use case"*(34:52~34:57). 쓰인 하네스 기능 — 서브에이전트(블라인드 평가), 스크립트 stdout([[scripts-that-talk-back]]), 편집 훅([[hook-enforced-workflow]]), 백그라운드 작업·인앱 브라우저(라이브 모드), 스킬 디렉터리 환경 변수(기억). 그리고 하네스마다 이 기능들이 다르므로 **하네스별 빌드**가 필요하다 → [[cross-harness-skill-compilation]].
+
+⚠️ 화자는 한계도 말한다 — Impeccable은 *"definitely outgrowing the skill platform"*, 라이브 모드는 *"first party harness integration"* 이 낫겠다(58:44~59:13). 스킬로 하네스를 확장하는 데는 **천장**이 있다.

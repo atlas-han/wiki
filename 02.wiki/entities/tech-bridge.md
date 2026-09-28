@@ -73,8 +73,10 @@ sources:
   - tech-bridge-lauren-tan-2000-prs
   - tech-bridge-agents-as-catalyst
   - tech-bridge-sdd-full-course
+  - tech-bridge-agents-vs-humans-optimizer-speedrun
+  - tech-bridge-skill-engineering-dark-arts
 created: 2026-06-03
-updated: 2026-09-27
+updated: 2026-09-28
 ---
 
 # Tech Bridge
@@ -750,3 +752,21 @@ updated: 2026-09-27
 - **화자 이름 세 갈래** — *Everett*(en-orig) · *Everitt*(en) · *에버릿*(ko), 소개자는 *"Andrew"* 뿐(성 없음).
 - **⚠️ ko가 셋을 뒤집었다** — *"Agents are stateless"* → "상태를 가지고 있다", *"3 or 4 minutes"* → "3~4시간", *"back-and-forth"* → "일방적인 대화". *feature* → "함수", *roadmap* → "시트 경로"·"경로 지도", *tech stack* → "배터리", *main* → "도메인", SDD → "SSD"·"자기 주도 개발". MCP → CLI+스킬 추세가 "MCP 서버에 CLI 기능을 더한다"로 바뀌었다.
 - **`en` 트랙이 또 ko와 같은 자리에서 틀렸다**(*"Behave badly"* · *"branch domain"* · *"Hana version"* · *"MCP servers moving towards more CLI"*) — 인용은 en-orig만. ✅ ko가 en-orig ASR을 고친 자리도 있다(*STD* → SDD, *NCP* → MCP).
+
+## 2026-09-27 업로드 — Prime Intellect, 에이전트 대 인간 연구자 (2026-09-28 ingest)
+
+[[tech-bridge-agents-vs-humans-optimizer-speedrun|Claude Code와 Codex를 인간 연구자들과 경쟁시켰습니다]](`AzmloQSjvp0`, 19:08, 공식 챕터 18개) — [[prime-intellect|Prime Intellect]], 화자 설명란 기준 [[elie-bakouch|Elie Bakouch]] ([[automated-ai-research]])
+
+- **이름은 설명란에만** — 자막은 *"Ali"*(en-orig) · *"Ellie"*(en/ko), 회사는 *"Primal director"*. 행사명·촬영 시점 미확정(상대 단서만).
+- **⚠️ ko가 부정을 네 번 뒤집었다** — *"not released yet"* → "출판되었습니다", *"didn't release yet"* → "공개했지만", *"there was no slash goal"* → "있었어요", *보상 0/음수* → "해냈습니다". 수치: *90 minutes* → "90일", *less than 2 minutes* → "2초 이내", *50~60 step* → "1,990걸음".
+- **en-orig 자체가 흔들린다** — GPT-2 재현 *90 minutes*(01:50) ↔ 이후 *19 minutes*, Opus 버전 *1.8*(en·ko *4.8*). 해소하지 않았다. `en` 트랙은 ko 오류 다수를 공유.
+
+## 2026-09-27 업로드 — Paul Bakaus 두 번째, 스킬 엔지니어링 dark arts (2026-09-28 ingest)
+
+[[tech-bridge-skill-engineering-dark-arts|스킬 엔지니어링의 숨겨진 비기(Dark Arts)를 소개합니다]](`LXdWUZYzins`, 1:04:24, 공식 챕터 19개) — [[paul-bakaus]] · [[impeccable]] ([[anti-attractor]] · [[scripts-that-talk-back]] · [[cross-harness-skill-compilation]])
+
+- **같은 화자의 두 번째 소스** — 09-11 [[tech-bridge-impeccable-design-steering|Impeccable 편]]이 *무엇을 조향하나* 였다면 이번은 *스킬을 어떻게 짓나*. 같은 행사인지 근거 없음(별개 취급).
+- 자막엔 *"my name is Paul"* 뿐 — 성은 제목·설명란. *jQuery UI 제작자* 는 자막이 확인(05:43~05:48).
+- **⚠️ ko가 뜻을 뒤집었다** — *"you're out of luck"* → "이점을 누릴 수 있습니다", *"can't tune pixels through a chat box"* → "픽셀 조정 가능", *"keep you in the right lane"* → "곤경에 빠뜨리는", Anthropic이 주어인 *"they shipped a new version three weeks ago"* → "저는"(시점 단서가 사라짐). *500 issues* → "다섯", LLM → **"법학 석사"**(다시), *gate* → "문", *ablation* → "절제술", *Gemini* → "쌍둥이자리".
+- ⚠️ 설명란이 자막보다 세다 — 훅이 사후 점검 *"대신"* 쓰기를 막는다고 적었으나 자막에선 **약한 모델·일부 하네스용**이다. 자막을 따랐다.
+

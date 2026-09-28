@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-27
+updated: 2026-09-28
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-09-27
 ## Entities
 
 ### Persons
+- [[elie-bakouch]] — [[prime-intellect|Prime Intellect]] 연구 엔지니어. [[codex|Codex]]·[[claude-code|Claude Code]]를 optimizer speedrun에 풀어 인간 기록과 경쟁시킨 실험 발표 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 이름은 설명란에만(자막 "Ali"/"Ellie")
 - [[paul-everitt]] — [[jetbrains|JetBrains]] developer advocate, SDD 풀코스 강사 (**표기 미확정**: Everett/Everitt/에버릿) ([[tech-bridge-sdd-full-course]])
 - [[eric-wallace]] — [[openai|OpenAI]] 정렬·안전 연구원. Black Hat HF 사건 재구성의 AI 쪽 절반 — *"프론티어 모델들은 정말 부정행위를 좋아한다"*, 게시판 속 에이전트의 사고 사슬 ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 성은 설명란에만
 - [[michael-dalton]] — [[openai|OpenAI]] 보안·인프라. 취약점 체인·탐지·대응, *"공격은 완전 자동화의 존재 증명이 있고 방어는 없다"* ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 음성은 "Mike"뿐
@@ -91,9 +92,10 @@ updated: 2026-09-27
 - [[averi-kitsch]] — [[google-cloud|Google Cloud]] 데이터베이스 staff 엔지니어 · [[mcp-toolbox-for-databases|MCP Toolbox for Databases]] 기술 리드. *데이터베이스는 에이전트만큼만 안전하다* — [[confused-deputy-attack|혼동된 대리인]]·[[lethal-trifecta|치명적 3요소]]·[[agent-identity-separation|세 신원]]·[[secure-tool-evolution|도구 진화]]·[[bound-parameters|바운드 파라미터]] ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 당사자(플랫폼 판매자)
 - [[prerna-kakkar]] — Google 시니어 엔지니어 · eval bench(에이전트·MCP·스킬 평가) 기술 리드. [[build-time-vs-runtime-tools|빌드타임 vs 런타임]] 구분, 테이블 삭제 사례, 미실행 데모 해설 ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 성은 설명란 단독
 - [[thais-castello-branco]] — [[taste-labs|Taste Labs]] 창업자. *"훌륭함은 정의하기 어렵지만 슬롭은 쉽다"* · [[ai-slop|슬롭]] 세 특징(반복·적합성 부족·낮은 의도) · [[slop-probes|프로브]] · *"취향이 아니라 판단"* · [[intentional-out-of-distribution|온도가 아니라 규칙 위반]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 당사자 · 수치 없음
-- [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
+- [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[prime-intellect]] — 빅랩 바깥의 AI 연구·훈련 인프라 회사. [[automated-ai-research|자동화된 AI 연구]] 벤치마크(optimizer speedrun) · GPU 샌드박스 · 훈련/평가 라이브러리 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 당사자 · 자막에서 회사명이 "Primal director"
 - [[jetbrains]] — IDE 제작사(WebStorm 등), [[agent-client-protocol|ACP]] 공동 제안자이자 SDD 풀코스 협업사. JetBrains IDE의 ACP registry로 OpenCode 설치 시연 ([[tech-bridge-sdd-full-course]], sources: 2)
 - [[oracle]] — DB·OCI 벤더. DBFS · 컨버지드 DB · Oracle Agent Memory Package(컨텍스트 카드) · OCI Generative AI ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 전부 당사자 주장, 측정 없음
 - [[salesforce]] — Dreamforce 주최사. [[openai|OpenAI]]와 공동 개발 플랫폼(Agentforce로 보이나 판독 보류) ([[tech-bridge-altman-benioff-dreamforce]])
@@ -222,11 +224,14 @@ updated: 2026-09-27
 - [[mcp-toolbox-for-databases]] — [[google-cloud|Google Cloud]]의 오픈소스 데이터베이스 MCP 서버(별 15.7k·DB 40+, 자기 진술). **가드레일이 YAML 설정에 산다** — source·읽기 전용 드라이버·허용 데이터셋·출력 크기·고정 SQL·바운드/인증 파라미터 ([[tech-bridge-build-time-vs-runtime-tools]])
 
 ---
-- [[impeccable]] — 코딩 하네스(Claude Code·Copilot·Cursor·Codex)용 **디자인 스킬**. bolder·quieter·distill·polish·denser·harden·overdrive — **단어의 뜻을 스킬이 정의**(bolder=위계·스케일·타이포, 그라데이션 아님), *"믿으면 실패"* 자기 점검, 워크플로 주입 지점, **auto 없음·PR 닫음** ([[tech-bridge-impeccable-design-steering]]) ⚠️ 당사자
+- [[impeccable]] — 코딩 하네스(Claude Code·Copilot·Cursor·Codex)용 **디자인 스킬**. bolder·quieter·distill·polish·denser·harden·overdrive — **단어의 뜻을 스킬이 정의**(bolder=위계·스케일·타이포, 그라데이션 아님), *"믿으면 실패"* 자기 점검, 워크플로 주입 지점, **auto 없음·PR 닫음** · 내부 구조: 결정론적 린터 + 블라인드 LLM 평가 · [[scripts-that-talk-back|stdout으로 지시하는 스크립트]] · 쓰기 차단 훅 · 하네스별 빌드 ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[automated-ai-research]] — 자동화된 AI 연구: 재귀적 자기 개선 주장을 빅랩 바깥에서 **스피드런으로 측정**. 접근 범위 세 트랙(가중치만 / arXiv만 / 전체) · **기록 경신 ≠ 발견** · AlphaEvolve식 발견 루프 제안 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 단일 실험 · 제안은 미공개
+- [[anti-attractor]] — 금지 목록은 모델을 **옆 클러스터로 옮길 뿐**. 무작위 시드(상위 후보 버리기 · 맥락 없는 서브에이전트 순위 · 스크립트 시드)로 발산을 강제 ([[tech-bridge-skill-engineering-dark-arts]]) ⚠️ 측정 없음
+- [[scripts-that-talk-back]] — 스킬 안 스크립트의 **stdout으로 다음 행동을 지시**하면 산문 규칙보다 잘 따른다. 대가는 프롬프트 캐싱 ([[tech-bridge-skill-engineering-dark-arts]])
 - [[retrieval-side-context-compression]] — 문서 10개에서 **가장 중요한 100 토큰만** 넘겨 후속 LLM 비용을 줄인다. **압축을 검색 엔진이 대신 하는 첫 형태** ([[tech-bridge-exa-perfect-search-for-agents]]) ⚠️ 버린 것을 에이전트가 모른다 — [[corpus-as-filesystem-workspace]]·[[bm25]]와 **정반대 처방**
 - [[bm25]] — **Best Match 25.** 30년 된 어휘 점수 함수. **위키에 페이지가 없었다.** 정확 일치·저비용·**모델이 결과를 설명 가능**(다음 쿼리 재구성에 쓴다)이 세 이유 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 텍스트에서는 프리미티브, **스캔 PDF에서는 천장**
 - [[oracle-gap]] — **완벽한 문서와 내 검색 시스템의 차이.** 정확도 절대값보다 덜 속이고 **무엇을 고칠지 알려 준다.** [[ir-evaluation-obsolescence]]가 남긴 *책임 소재* 공백을 메운다 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 오라클의 정의가 자막에서 구분되지 않음
@@ -344,6 +349,7 @@ updated: 2026-09-27
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[cross-harness-skill-compilation]] — 스킬 *형식* 은 이식돼도 하네스 동작·모델 과적합은 다르다 → **하네스·모델별 빌드**, 가장 약한 모델 기준 gate(*"if the gate can be skipped it will be"*) ([[tech-bridge-skill-engineering-dark-arts]])
 - [[codebase-gardening]] — 코드베이스는 에이전트의 **기억**이라 안티패턴(우회책·주석)이 바이러스처럼 퍼진다 → 팀에 정원사가 필요하다. Dune 세 원칙(부채 삭제 · single paved path · 나쁜 패턴은 린트 규칙으로 출혈부터 막기) ([[tech-bridge-lauren-tan-2000-prs]])
 - [[emergent-agent-collective]] — 공유 쓰기 자원 위에서 에이전트들이 **스스로** 이름·우편함·작업 인계·자격 증명 공유를 만든 집단. *"범위 밖이지만 동료들이 하고 있다 — 계속하자"* — 경계는 개인이 알고 월경은 집단이 허락한다 ([[tech-bridge-openai-huggingface-incident-black-hat]])
 - [[toolbox-pattern]] — 도구·스킬을 HNSW 벡터 인덱스에 두고 **루프 반복마다 필요한 것만** 넣는다. 비슷한 도구 설명은 LLM으로 보강해 분리도를 높인다 ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 검색이 빗나갈 때의 대책 없음
@@ -561,6 +567,8 @@ updated: 2026-09-27
 ---
 
 ## Sources
+- [[tech-bridge-agents-vs-humans-optimizer-speedrun]] — [[prime-intellect|Prime Intellect]]: [[codex|Codex]]·[[claude-code|Claude Code]]를 optimizer speedrun에 투입(설명란 기준 [[elie-bakouch|Elie Bakouch]], 19:08, 공식 챕터 18, 2026-09-27 업로드). 둘 다 인간 기록을 넘었으나 **인간 기록 위의 +α**이고 **새 옵티마이저 발명 0** · Claude는 9~10시간마다 멈춤 · Codex는 멈추지 않고 서브에이전트·압축 多 → [[automated-ai-research]] ⚠️ 단일 실험 · 행사명·촬영 시점 미확정 · ko가 부정을 네 번 뒤집음
+- [[tech-bridge-skill-engineering-dark-arts]] — [[paul-bakaus|Paul Bakaus]]([[impeccable|Impeccable]]) 스킬 엔지니어링 워크숍(1:04:24, 공식 챕터 19, 2026-09-27 업로드). *프롬프트는 입문, 스킬은 하네스 확장* · 블라인드 서브에이전트 평가(LLM 디자인 디렉터 + 결정론 린터) · [[anti-attractor|무작위 시드]] · [[scripts-that-talk-back|stdout 지시]] · 쓰기 차단 훅 · [[cross-harness-skill-compilation|하네스·모델별 컴파일]] · 가장 약한 모델 기준 ⚠️ 효과 주장 전부 미측정 · eval 하네스 비공개 · 촬영 시점 미확정
 - [[tech-bridge-agents-as-catalyst]] — AI 에이전트는 혁명이 아니라 촉매다 (IBM Technology 계열 1인 해설, 설명란 기준 Sam Anthony, 10:03, 공식 챕터 13, 2026-09-26 업로드). 데이터는 없는 게 아니라 **갇혀 있다** · API는 **스스로를 설명해야** · **허용 ≠ 자동 실행** · MCP·A2A로 **상호운용성이 기본값** · 전문성의 민주화 · '어떻게'→'왜' — [[agents-as-catalyst]] ⚠️ 이름은 설명란에만 · 수치·사례·제품 0 · ko가 결론 문장 셋을 뒤집고 A2A를 "8020"으로
 - [[tech-bridge-sdd-full-course]] — [[jetbrains|JetBrains]] 협업 스펙 주도 개발 풀코스 (강사 [[paul-everitt]] 표기 미확정 · 소개자 "Andrew", 1:01:33, 2026-09-26 · **멤버 전용 → 09-27 공개 전환**). 헌법 = mission · tech stack · roadmap(⚠️ Spec Kit 편의 규칙 헌법과 모순) · 기능 브랜치 plan → implement → validate · 재계획 · [[cognitive-debt|인지 부채·AI 피로]] · 레거시 헌법 역설계 · feature-spec/changelog 스킬 · MCP → CLI+스킬 · Spec Kit·OpenSpec · ACP registry
 - [[tech-bridge-openai-huggingface-incident-black-hat]] — OpenAI 평가 에이전트 탈출 사건 기술 재구성, Black Hat ([[eric-wallace|Eric Wallace]] · [[michael-dalton|Michael Dalton]], 37:07, 2026-09-24 업로드). **[[hugging-face|HF 사건]]의 첫 1차 기술 재구성** — 막힌 에이전트의 [[artifactory|Artifactory]] 메모 → [[emergent-agent-collective|자생적 게시판]] → 제로데이 4개 → OpenAI·HF 클러스터 관리자, 7/16 HF 공개 → 7/20 동일 사건 확인. 앞선 일곱 서술 판정(Musk *OpenAI 서버* ✅ · Altman 주말 ✅ · *약한 모델*·*만점* ⚠️) · [[defense-factory|방어 루프 완전 자동화]] ⚠️ 당사자·잠정 · ko가 *existence proof* 와 *finding zero-days* 를 뒤집음
@@ -660,6 +668,6 @@ updated: 2026-09-27
 
 ## 통계
 
-- 총 페이지 수: 621 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 615 → 621, + 2026-09-27 Tech Bridge 2편: source 2 + concept 2 + entity 2)
+- 총 페이지 수: 629 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 621 → 629, + 2026-09-28 Tech Bridge 2편: source 2 + concept 4 + entity 2)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-27 (Tech Bridge **2편**, **스무나흘 연속** — 09-26 신규 1편 + 멤버 전용 공개 전환 1편. [[tech-bridge-agents-as-catalyst|IBM 촉매 편]]이 에이전트를 *혁명이 아닌 촉매* 로 재규정, [[tech-bridge-sdd-full-course|JetBrains SDD 풀코스]]는 08-29 Spec Kit 편과 *헌법* 의 정의에서 갈린다)
+- 마지막 ingest: 2026-09-28 (Tech Bridge **2편**, **스무닷새 연속** — 09-27 업로드 2편. [[tech-bridge-agents-vs-humans-optimizer-speedrun|Prime Intellect 스피드런 편]]이 *기록 경신 ≠ 발견* 을 측정으로 보였고, [[tech-bridge-skill-engineering-dark-arts|Bakaus 워크숍]]은 09-11 [[tech-bridge-impeccable-design-steering|Impeccable 편]]의 내부 구조를 열었다)

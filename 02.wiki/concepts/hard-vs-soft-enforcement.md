@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-09-28
 ---
 
 # 하드 강제와 소프트 강제
@@ -81,3 +81,22 @@ updated: 2026-09-26
 > ⚠️ ko 자막이 17:36을 **"에이전트를 제어하고 무시하세요"**(명령)로, 36:33의 *"가장 효과적인 단계"* 를 **"가장 어려운 단계"** 로 옮겼다. 이 절은 en-orig로 읽었다.
 
 **왜 하드 층인가**의 동기도 같은 발표에서 나왔다 — 코드베이스가 기억이라 **나쁜 패턴은 바이러스처럼 퍼진다.** → [[codebase-gardening]]
+
+## 강제의 필요량은 모델 강도의 함수다 — "if the gate can be skipped it will be" (2026-09-28 · [[tech-bridge-skill-engineering-dark-arts]])
+
+[[paul-bakaus]]의 [[impeccable|Impeccable]] 워크숍이 이 페이지의 구분을 **스킬 층**에서, 그리고 **모델마다 다르게** 적용한다.
+
+> *"a weaker model has opinions just fine, but what it loses is the discipline to follow yours"* (47:10~47:14)
+>
+> *"if the gate can be skipped it will be (…) if the model can wiggle itself out out of a difficult situation it will absolutely do that (…) be careful, make it unskippable."* (48:19~48:40)
+
+| 층 | 워크숍의 수단 | 누구에게 |
+|---|---|---|
+| soft — 산문 규칙 | SKILL.md 본문 | *"buried rules get skimmed"*(25:12) |
+| 중간 — 지금 할 일을 지금 말하기 | 스크립트 stdout 지시 → [[scripts-that-talk-back]] | 모든 모델, 특히 규칙을 못 따르는 GPT-5 mini(26:18~26:35) |
+| 중간 — 모델이 좋아하는 형식 | Codex/GPT에게만 로드되는 **8개 gate**, 압축 금지, gate마다 결과 기록(47:40~48:16) | Codex·GPT |
+| 중간 — 벌칙 문구 | *"you must say that you are giving the user a degraded experience"*(14:16~14:23) | Codex (*"if codeex realizes it can get away with something it will do it"* 13:59~14:03) |
+| hard — 사후 | PostToolUse 린트 훅 → 모델이 스스로 고침(33:43~33:50) | 기본 |
+| hard — 사전 | **PreToolUse로 쓰기 차단**(31:16~31:22) | *"slightly weaker models"*·특정 하네스 → [[hook-enforced-workflow]] |
+
+이 페이지의 핵심 경고(말해 두는 것은 강제가 아니다)가 **모델 강도에 따라 경계가 이동한다**는 형태로 구체화된다 — 강한 모델에선 soft로 충분한 규칙이 약한 모델에선 hard가 돼야 한다. 배포되는 스킬은 사용자의 모델을 모르므로 **가장 약한 모델 기준**이다(*"build for the lowest common denominator"* 47:07~47:10) → [[cross-harness-skill-compilation]]. ⚠️ 모든 모델별 행동은 화자 관찰, 수치 없음.

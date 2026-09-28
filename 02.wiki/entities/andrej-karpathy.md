@@ -4,12 +4,12 @@ type: entity
 category: person
 tags: [researcher, educator, llm, transformer, computer-vision]
 aliases: [카파시, Karpathy, 안드레 카파시]
-sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills]
+sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun]
 links:
   - https://karpathy.ai
   - https://github.com/karpathy
 created: 2026-05-25
-updated: 2026-09-05
+updated: 2026-09-28
 ---
 
 # Andrej Karpathy
@@ -66,3 +66,7 @@ AI 연구자·교육자. 본 위키에 두 갈래로 등장한다 — **위키 �
 - [[karpathy-llm-wiki-gist]]
 - [[multica-karpathy-skills-claude-md]]
 - [[tech-bridge-karpathy-transformers-stanford]]
+
+## GPT-2 재현 영상이 스피드런의 기원으로 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
+
+[[prime-intellect|Prime Intellect]] 발표가 자동화된 AI 연구 벤치마크의 출발점으로 든다 — *"it all started with Andrej Karpathy that's basically at fun by doing this video where he trained GPT-2 from scratch in like 90 minutes"*(01:40~01:50). 이것이 modded-nanoGPT 스피드런으로 이어졌다([[nanogpt]]). ⚠️ 영상 제목·게시 시점은 소스에 없고, en-orig는 이후 *19분* 으로도 들린다.

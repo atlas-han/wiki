@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts]
 created: 2026-05-25
-updated: 2026-09-26
+updated: 2026-09-28
 ---
 
 # Generator–Evaluator Pattern
@@ -259,3 +259,20 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 > *"LLM-as-a-judge 온라인 eval의 일종의 진화"* (08:22~08:24) — 블로그 결과로 *"훨씬 저렴하고 훨씬 빠를 뿐 아니라 (…) LLM 대안보다 eval 전반에 걸쳐 훨씬 더 신뢰할 수 있고 일관적"* (08:31~08:42)
 
 ⚠️ **벤더의 구두 전언이고 수치가 영상에 없다**(블로그는 이 위키가 확인하지 않음). *일관성*(같은 입력 → 같은 점수)은 *정확성*(사람 판정과의 일치)이 아니다 — 소스는 둘을 구분하지 않는다. **판정 이유가 텍스트로 남지 않는다**는 점(감사·디버깅)도 다루지 않는다. 그리고 **루브릭을 누가 쓰는가** — 이번엔 명시적으로 *"여러분이 제공하는"* 사람이다. 09-09 이래 열려 있던 *작성자=검증자* 문제에서 **사람 쪽으로 닫히는 드문 예**지만, 루브릭 품질은 여전히 검증되지 않는다.
+
+## 연구 발견 루프로 — 실측 보상 + judge의 taste + 사람 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
+
+[[prime-intellect|Prime Intellect]]가 제안한(⚠️ *"we didn't try it yet"*, 16:53) **AlphaEvolve 영감의 발견 루프**(15:23~16:50): **생성자 여럿**(폐쇄 모델 + 비용 효율적인 오픈소스 모델) → **스피드런 실행으로 보상** → **judge의 품질 피드백·taste** → **규모 확장할 방법 선별** → **사람이 판단·조향**. 이 페이지의 기존 사례와 다른 점은 **평가자가 세 겹**이라는 것 — 실측 수치(스피드런 기록), LLM judge의 안목, 사람. 그리고 루프의 목적이 산출물 품질이 아니라 **새로운 방법의 발견**이다. 동기는 같은 소스의 관측 — 단일 에이전트는 기록을 깼지만 **새 옵티마이저를 하나도 발명하지 못했다**(14:23~15:00). → [[automated-ai-research]]
+
+## 평가자를 둘로 나누고 서로 못 보게 한다 — 앵커링 (2026-09-28 · [[tech-bridge-skill-engineering-dark-arts]])
+
+[[impeccable|Impeccable]]의 `critique` 명령. 자기 평가 편향은 이 페이지 그대로다 — *"if you ask codeex or claw code to review its own work, it will usually rate it as very high (…) It's like grading your own homework"*(08:02~08:15). 새로운 것은 **평가자 내부의 앵커링**이다. 같은 모델 스레드에서 결정론적 디자인 린터를 돌리면:
+
+- 좋은 페이지라도 린터가 많이 지적하면 *"well I guess there's 500 issues therefore this design must be bad"*(09:37~09:42)
+- 끔찍한(빈) 페이지라도 검출이 없으면 *"we didn't find any issues so this must be great design"*(09:54~09:56)
+
+처방: *"It spawns two sub agents and they are blind to each other"*(10:08~10:11) — ① 디자인 디렉터 역 LLM(위계·슬롭·휴리스틱, 브라우저 도구) ② 결정론적 린터 + 브라우저 증거 → *"the main thread synthesizes both into one critique"*(10:46~10:49). *"two blind opinions beat one confident guess"*(12:12~12:15).
+
+이 페이지의 09-12 절(평가자가 LLM이 아닐 때)과 비교하면 **LLM 판정과 비-LLM 판정을 병렬로 두고 서로 격리**하는 구성이다. 격리의 이유는 편향이 아니라 **한쪽 출력이 다른 쪽의 판단을 끌고 가는 것**이다. [[anti-attractor]]의 순위 서브에이전트도 같은 원리(생성 세션의 맥락을 모르는 평가자, 19:20~19:26).
+
+⚠️ **Codex에서는 이 구성이 기본으로 안 된다** — 서브에이전트는 사용자가 명시적으로 요청해야 한다(12:56~13:02). 화자의 우회는 *"you are giving the user a degraded experience"* 라고 말하게 하는 벌칙 문구다(14:16~14:23) → [[cross-harness-skill-compilation]]. 라이브 데모는 서브에이전트 생성을 보여 주지 못했다(16:23~16:26). 효과 수치 없음.

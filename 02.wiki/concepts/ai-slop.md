@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts]
 created: 2026-09-12
-updated: 2026-09-20
+updated: 2026-09-28
 ---
 
 # AI 슬롭
@@ -149,3 +149,14 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 > ⚠️ 측정은 없다. 화자 개인의 판단이다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[openai-astra]] · [[jagged-capability-frontier]]
+
+## 금지 목록은 옆 클러스터로 옮길 뿐 — 제작자의 처방 전환 (2026-09-28 · [[tech-bridge-skill-engineering-dark-arts]])
+
+[[paul-bakaus]]가 09-11 편의 *"슬롭은 움직이는 표적"* 을 다시 말하고(*"slop is a moving target"* 03:58~04:00, 보라색 그라데이션 → *"cloud[Claude] beige"* 04:02~04:06) 이번엔 **원인과 처방**을 붙인다.
+
+- **원인 — 중앙값의 중력.** *"The median is the model's gravity. Even 250 lines of like artis[an]al, crafted, beautiful skill pros[e] cannot change this."*(05:58~06:09) 금지는 *"just relocates the model to the next cluster"*(05:03~05:08) — Inter를 금하면 잠재 공간의 다음 서체로(05:13~05:16). 이 페이지가 09-12에 정리한 *"고정된 슬롭 목록은 낡는다"* 를 제작자가 **메커니즘으로** 확인한다.
+- **기본값이 슬롭을 만든다.** 보라색 그라데이션의 기원은 Tailwind의 기본 테마, 그리고 화자 자신이 만든 **jQuery UI의 첫 기본 테마가 주황**이어서 웹이 주황이 됐다 — *"I thought people would modify the theme, but now[no] they didn't"*(05:31~05:56). **슬롭은 AI 이전부터**라는 이 페이지의 09-12 절과 같은 방향의 증언.
+- **처방 — 금지 대신 시드.** → [[anti-attractor]] (무작위 시드 · 상위 후보 버리기 · 맥락 없는 서브에이전트 순위)
+- **모델별 슬롭 tell.** Gemini의 이미지 hover 애니메이션, Codex의 나쁜 자간·과한 둥근 모서리·hairline border(44:07~44:36) — 슬롭이 **모델마다 다르다**. → [[cross-harness-skill-compilation]]
+
+⚠️ 수치 없음. 슬롭 **판정**은 화자도 모델에게 맡기지 못한다(*"models are particularly bad at evaluating taste"* 56:48~56:53) → [[taste-vs-judgment]].

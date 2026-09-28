@@ -825,5 +825,15 @@
   "02.wiki/concepts/agents-as-catalyst.md": "LiLightbulb",
   "02.wiki/concepts/cognitive-debt.md": "LiBookText",
   "02.wiki/entities/jetbrains.md": "LiBuilding",
-  "02.wiki/entities/paul-everitt.md": "LiUser"
+  "02.wiki/entities/paul-everitt.md": "LiUser",
+  "01.raw/articles/2026-09-27_Claude Code와 Codex를 인간 연구자들과 경쟁시켰습니다 — Elie Bakouch, Prime Intellect.md": "LiNewspaper",
+  "01.raw/articles/2026-09-27_스킬 엔지니어링의 숨겨진 비기(Dark Arts)를 소개합니다 — Paul Bakaus (Impeccable).md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-agents-vs-humans-optimizer-speedrun.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-skill-engineering-dark-arts.md": "LiVideo",
+  "02.wiki/concepts/automated-ai-research.md": "LiSettings",
+  "02.wiki/concepts/anti-attractor.md": "LiSettings",
+  "02.wiki/concepts/scripts-that-talk-back.md": "LiSettings",
+  "02.wiki/concepts/cross-harness-skill-compilation.md": "LiPuzzle",
+  "02.wiki/entities/prime-intellect.md": "LiBuilding",
+  "02.wiki/entities/elie-bakouch.md": "LiUser"
 }

@@ -8,9 +8,9 @@ links:
   - https://x.com/pbakaus
   - https://linkedin.com/in/paulbakaus
   - https://www.paulbakaus.com/
-sources: [tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-impeccable-design-steering, tech-bridge-skill-engineering-dark-arts]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-28
 ---
 
 # Paul Bakaus
@@ -38,3 +38,18 @@ updated: 2026-09-12
 
 - [[tech-bridge-impeccable-design-steering]] · [[impeccable]]
 - 관련: [[no-one-shot-design]] · [[steering-altitude]] · [[adjective-verb-steering]] · [[taste-vs-judgment]]
+
+## 2026-09-28 — 두 번째 소스: 스킬 엔지니어링 워크숍 ([[tech-bridge-skill-engineering-dark-arts]])
+
+1:04:24 워크숍(발표 + 약 14분 Q&A). 자막은 이번에도 *"my name is Paul"*(00:52~00:55)뿐이고 성은 **설명란**(같은 X·LinkedIn·웹사이트 링크)에서 온다. 행사·촬영 시점 미확정, 09-11 편과 같은 행사인지 모른다.
+
+새로 알려진 사실:
+
+- **jQuery UI 제작자** — *"I created a framework called jQuery UI and the first default theme of jQuery UI was orange"*(05:43~05:48). 설명란의 주장을 자막이 확인. 그 경험이 *기본값이 웹의 모양을 정한다* 는 슬롭 관찰의 근거다 → [[ai-slop]].
+- **Impeccable의 기원** — 1년간 만든 대규모 엔터프라이즈 앱에서 에이전트가 만든 화면을 디자인 시스템으로 되돌리려고 만든 첫 스킬 `normalize`(01:14~01:46).
+- **radiant shaders** — 셰이더 ~100개 라이브러리(18:35~18:42, ASR). 09-11 편의 *"radian shaders"* 와 같은 것으로 보이나 미확정.
+- **아홉 dark arts** — 블라인드 서브에이전트 평가 · [[anti-attractor]] · 내부 라우팅 · 기억 · [[scripts-that-talk-back]] · 동봉 훅 · 라이브 모드 · [[cross-harness-skill-compilation]] · 가장 약한 모델 기준.
+- **비공개 eval 하네스**와 줄 단위 ablation → [[skill-evals]].
+- **입장** — 취향은 모델 수준에서 풀 수 없다(56:28~56:32) → [[taste-vs-judgment]]. **스킬은 대개 사용자가 직접 써야 하고, 배포자는 더 투자해야 한다**(59:25~59:36) → [[agent-skills]]. MCP는 **컨텍스트 오염** 때문에 잘 안 쓴다(1:01:22~1:01:38). 자체 CLI 설치기를 유지하는 것을 *"I would rather not"*(1:03:50~1:03:55).
+
+⚠️ 당사자 — 이번에도 수치 없음, 검증 도구 비공개.

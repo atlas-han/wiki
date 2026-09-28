@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-09-25
+updated: 2026-09-28
 sources: []
 ---
 
@@ -175,6 +175,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-09-27*: [[tech-bridge]] **2편** ingest(09-26 업로드 1편 + 멤버 전용 공개 전환 1편). ① [[tech-bridge-agents-as-catalyst|IBM 계열 7번째]](설명란 기준 Sam Anthony, ⚠️ 자막에 이름 없음)가 **[[agents-as-catalyst|에이전트는 혁명이 아니라 촉매]]** 라는 프레이밍을 들여왔다 — 데이터 계층 · *"스스로를 설명하는 API"* · 허용 ≠ 자동 실행 · MCP/A2A 상호운용성 · 민주화 · '어떻게'→'왜'. ⚠️ MCP 층의 지속성(Brockman)·접근성(Almeida)에서 기존 소스와 충돌, 수치·사례 0개.
   ② [[tech-bridge-sdd-full-course|JetBrains 협업 SDD 풀코스]]는 08-29 [[tech-bridge-spec-driven-development|Spec Kit 편]]과 같은 흐름을 도구 없이 가르치며 헌법을 **mission · tech stack · roadmap** 으로 정의하고(규칙 중심 헌법과 ⚠️ 모순), 기능 루프 사이의 **재계획**, [[cognitive-debt|인지 부채·AI 피로]], 레거시 헌법 역설계, 스킬 패키징과 MCP·AGENTS.md·skills·ACP 표준을 통한 에이전트 독립을 더했다.
   자막 쪽으로는 ⚠️ ko가 두 편 모두 결론 문장을 뒤집었다 — *"영원히 남을 것을 요구하지 않는다"* → "남아있을 것이다", *"Agents are stateless"* → "상태를 가지고 있다". 운영: §4a 목록의 마지막 멤버 전용 `FJo7p9SPS9c` 가 풀려 **목록이 비었다.**
+
+- *2026-09-28*: [[tech-bridge]] **2편** ingest(09-27 업로드 2편). ① [[tech-bridge-agents-vs-humans-optimizer-speedrun|Prime Intellect 스피드런 편]](설명란 기준 [[elie-bakouch|Elie Bakouch]])은 [[codex|Codex]]·[[claude-code|Claude Code]]가 optimizer speedrun에서 인간 기록을 넘었지만 **새 옵티마이저·메커니즘은 하나도 발명하지 못했다**고 보고한다 — 기록 경신과 발견은 다른 축이고, 재귀적 자기 개선은 빅랩 바깥에서 접근 범위를 통제한 벤치마크로 재야 한다([[automated-ai-research]]). ⚠️ 모델은 인간 기록을 언제든 가져올 수 있었다 — *독립적 승리* 가 아니다.
+  ② [[tech-bridge-skill-engineering-dark-arts|Paul Bakaus 워크숍]]은 09-11 [[tech-bridge-impeccable-design-steering|Impeccable 편]]의 *무엇을* 에 이어 *어떻게* 를 연다 — 스킬은 포장한 프롬프트가 아니라 **사용자 하네스의 확장**이고, 금지 목록 대신 [[anti-attractor|무작위 시드]], 산문 규칙 대신 [[scripts-that-talk-back|stdout으로 말하는 스크립트]]와 쓰기 차단 훅, 배포 스킬은 [[cross-harness-skill-compilation|하네스·모델별로 컴파일하고 가장 약한 모델이 건너뛸 수 없게]].
+  자막 쪽으로는 ⚠️ ko가 두 편 모두 부정을 뒤집었다 — *"not released yet"* → "출판되었습니다", *"you're out of luck"* → "이점을 누릴 수 있습니다", *"can't tune pixels through a chat box"* → "픽셀 조정 가능".
 
 ---
 

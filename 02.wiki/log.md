@@ -1619,3 +1619,36 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 두 편을 **병렬 서브에이전트**로 나눴고(raw 파일명은 처음부터 published 날짜), index·overview·log·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지([[model-context-protocol]]·[[tech-bridge]])를 두 에이전트가 좁은 Edit로 건드렸고 충돌 없음. 서브에이전트 하나가 raw 헤더에 *"info.json이 0바이트라 자막 종류 확인 불가"* 라고 적었으나 실제로는 4MB였고 **`subtitles` 빈 값 · `automatic_captions` 에 ko 있음**을 확인해 커밋 전에 고쳤다. 멤버 전용 → 공개 전환은 **네 번째**이고 §4a 목록의 네 편이 전부 풀렸다.
+
+## [2026-09-28] ingest | Tech Bridge — Claude Code·Codex 대 인간 연구자(Prime Intellect) · 스킬 엔지니어링 dark arts(Paul Bakaus) (09-27 업로드 2편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 493초, 전부 `public`). 신규 **09-27 업로드 2편**, 나머지 13편은 기존. **§4a 멤버 전용 대기 없음.** 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, 수동 트랙 없음), **429 없음**(쿠키 무효 경고는 계속, 무해).
+
+**신규 source 2 · concept 4 · entity 2**, index 실측 **621 → 629**.
+
+- `AzmloQSjvp0`(19:08, **Prime Intellect, 설명란 기준 Elie Bakouch**, 공식 챕터 18개) → [[tech-bridge-agents-vs-humans-optimizer-speedrun]]
+- `LXdWUZYzins`(1:04:24, **Paul Bakaus / Impeccable 워크숍**, 공식 챕터 19개) → [[tech-bridge-skill-engineering-dark-arts]]
+
+신규: [[automated-ai-research]] · [[anti-attractor]] · [[scripts-that-talk-back]] · [[cross-harness-skill-compilation]] · [[prime-intellect]] · [[elie-bakouch]]
+
+보강(스피드런 편): [[claude-code]] · [[codex]] · [[nanogpt]] · [[andrej-karpathy]] · [[generator-evaluator-pattern]] · [[context-resets-and-compaction]] · [[verifiable-goals]]
+
+보강(dark arts 편): [[agent-skills]] · [[hook-enforced-workflow]] · [[skill-evals]] · [[generator-evaluator-pattern]] · [[ai-slop]] · [[taste-vs-judgment]] · [[hard-vs-soft-enforcement]] · [[harness-engineering]] · [[paul-bakaus]] · [[impeccable]] · [[claude-code]] · [[codex]] · [[tech-bridge]]
+
+### 이번 실행의 구도 — 같은 두 에이전트, 연구자로서와 스킬 소비자로서
+
+두 편 모두 [[codex|Codex]]와 [[claude-code|Claude Code]]를 **나란히 관찰**한다. 스피드런 편에서 Claude Code는 9~10시간마다 멈추고 약 1/3을 유휴로 보냈고 Codex는 멈추지 않으며 서브에이전트·스크래치패드·압축을 더 많이 썼다. dark arts 편은 같은 차이를 **스킬 작성자의 비용**으로 읽는다 — 하네스마다 서브에이전트 기동 권한 · ask-user 도구 · 백그라운드 완료 시 깨어나는지가 달라서 스킬을 하네스·모델별로 컴파일해야 한다. 두 소스는 서로를 언급하지 않는다. 스피드런 편의 결론(*기록 경신 ≠ 발견*, 논문 조합과 "+1 개선"뿐)은 dark arts 편의 *"the median is the model's gravity"* · [[anti-attractor|금지 목록은 옆 클러스터로 옮길 뿐]]과 **같은 관측의 다른 층**으로 읽힐 수 있으나 어느 쪽도 그렇게 말하지 않아 연결은 페이지에 쓰지 않았다.
+
+### 주의사항
+
+- ⚠️ **ko가 부정을 뒤집은 자리** — 스피드런 편 *"not released yet"* → "출판되었습니다"(11:22~11:25), *"didn't release yet"* → "공개했지만"(17:41~17:44), *"there was no slash goal"* → "있었어요"(06:37), *보상 0/음수* → "해냈습니다"(04:44). dark arts 편 *"you're out of luck"* → "이점을 누릴 수 있습니다"(13:08), *"can't tune pixels through a chat box"* → "픽셀 조정 가능"(34:25), *"keep you in the right lane"* → "곤경에 빠뜨리는"(32:26).
+- ⚠️ **수치·단위** — *90 minutes* → "90일", *less than 2 minutes* → "2초 이내", *50~60 step* → "1,990걸음", *500 issues* → "다섯"(en도 동일). **en-orig 자체의 자기모순**(GPT-2 재현 90분 ↔ 19분, Opus 1.8 ↔ en·ko 4.8)은 해소하지 않았다.
+- ⚠️ **창작된 약어 확장 재발** — LLM → "법학 석사"(dark arts 10:19). 09-19 이후 반복.
+- ⚠️ **설명란이 자막보다 세다(수치 외 첫 사례)** — dark arts 설명란은 훅이 사후 점검 *"대신"* 쓰기를 막는다고 적었지만 자막에서는 약한 모델·일부 하네스용이다. 09-20 원칙(수치는 자막)을 **주장의 범위**로 넓혀 자막을 따랐다.
+- `en` 트랙은 두 편 모두 ko 오류 다수를 공유 — 독립 근거가 아니다. 인용은 en-orig만.
+- 미확정: 두 편 촬영 시점·행사명, Elie Bakouch 이름(자막 *Ali*/*Ellie*), Opus·Kimi·GLM 버전, Prime Intellect 라이브러리 이름(ASR 훼손), 6일 vs 5일, *GPD55*(→GPT-5.5 추정), *Tariq*·*Ben from Contra*·*Andrew*, Anthropic 스킬 업데이트 *"3주 전"* 의 절대 시점, Bakaus eval 하네스(비공개). 설명란 링크는 열지 않았다.
+
+### 운영 메모
+
+두 편을 **병렬 서브에이전트**로 나눴고(raw 파일명은 처음부터 published 날짜), index·overview·log·tech-bridge·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지([[claude-code]]·[[codex]]·[[generator-evaluator-pattern]])를 두 에이전트가 append-only로 건드렸고 충돌 없음. 09-27 메모대로 서브에이전트 메타 주장을 검증했다 — 두 info.json 모두 `subtitles` 빈 값 · `automatic_captions` 에 ko/en-orig 있음, 인용 타임스탬프 표본이 실제 자막 이벤트와 일치, frontmatter 중복 키 없음.
+

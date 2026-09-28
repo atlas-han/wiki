@@ -3,11 +3,11 @@ title: Context Resets vs. Compaction
 type: concept
 category: technique
 tags: [context-window, agent, context-engineering]
-related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern]
+related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun]
 created: 2026-05-25
-updated: 2026-09-17
+updated: 2026-09-28
 ---
 
 # Context Resets vs. Compaction
@@ -102,3 +102,7 @@ updated: 2026-09-17
 ⚠️ **그러나 [[agent-governance-layers]]가 기록한 위험은 그대로다** — 무엇을 *"무관한 것"* 으로 볼지가 모델에 달려 있다면, **사용자가 중요하다고 여긴 것이 밤새 사라질 수 있다.** 소스는 이 가능성을 다루지 않고, 압축 결과를 사용자가 보거나 되돌릴 수 있는지도 말하지 않는다.
 
 → [[nightly-memory-consolidation]]
+
+## 장시간 자율 실행에서 모델별 빈도 차이 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
+
+optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context window"* 라 **compaction을 많이** 했고, [[claude-code|Claude Code]]는 화자 정정 끝에 *"one for the full run"*(09:45~10:01). Codex 쪽 빈도는 문장이 깨져 불명(*"20 every one hour"*, 10:03). 두 에이전트는 **scratchpad(모델의 활성 메모리)** 에 쓰는 양도 크게 달랐다(08:21~08:47). ⚠️ compaction 빈도가 성과에 준 영향은 소스가 말하지 않는다. → [[automated-ai-research]]

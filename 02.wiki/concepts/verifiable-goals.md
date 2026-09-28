@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun]
 created: 2026-05-25
-updated: 2026-09-13
+updated: 2026-09-28
 ---
 
 # Verifiable Goals
@@ -135,3 +135,7 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 - [[tech-bridge-signal-layer]] — 채점기 경계선 (verifier가 없는 영역)
 - [[tech-bridge-trusted-throughput]] — 토큰 지출로의 Goodhart 확장
 - 관련: [[llm-coding-guidelines]] (상위 hub), [[surgical-edits]], [[sprint-contract]], [[ralph-wiggum-method]]
+
+## 규칙이 명확한 경쟁 과제 = 보상 신호 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
+
+[[prime-intellect|Prime Intellect]]는 optimizer speedrun을 에이전트의 **평가이자 훈련 환경**으로 쓴다 — *"the reward is positive if the model beat (…) the last record (…) and the reward is zero or negative if it didn't manage"*(04:34~04:45), *"there is those clear rule that you can verify or not"*(05:10~05:13). 기록 인정에 **통계적 임계값**을 두어 *"seed optimization"*·우연을 배제한다(07:20~07:27). 이 페이지의 *verifier가 강하면 독립적으로 루프를 돈다* 의 극단 사례 — 에이전트가 **며칠간** 혼자 반복했다. ⚠️ 그러나 같은 소스는 **검증 가능한 목표가 수렴은 부르되 발명은 부르지 않았다**고 보고한다(새 옵티마이저 0개). → [[automated-ai-research]]

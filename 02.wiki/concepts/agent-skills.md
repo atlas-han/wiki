@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts]
 created: 2026-08-31
-updated: 2026-09-27
+updated: 2026-09-28
 ---
 
 # Agent Skills
@@ -283,3 +283,22 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 - **MCP → CLI + 스킬** — Context7 설치 화면이 MCP 서버와 CLI+skills 중 고르게 하고, 강좌는 후자를 고른다(53:14~53:21). *"CLI tools can take action with less setup and less context usage"*(53:56~54:02). → [[model-context-protocol]]
 - **이식성** — feature-spec 스킬을 Codex의 다른 경로로 복사하자 *"It runs just fine once migrated"*(57:45~57:53). 강좌는 agent skills를 MCP · AGENTS.md · ACP와 함께 **에이전트 독립의 네 표준** 중 하나로 둔다(57:14~57:31).
 - ⚠️ **플러그인** — *"plugins are not yet a cross-agent standard. Like apps or dependencies, plugins can execute code. So, make sure you trust them"*(54:31~54:42). 09-23에 표시한 **외부 스킬의 검토·버전 고정·인젝션 표면** 문제에 대한 처방은 이번에도 "신뢰하라" 한 줄이다.
+
+## 스킬은 포장한 프롬프트가 아니라 하네스 확장이다 — Impeccable 워크숍 (2026-09-28 · [[tech-bridge-skill-engineering-dark-arts]])
+
+[[paul-bakaus]]가 [[impeccable|Impeccable]]을 만들며 배운 **아홉 "dark arts"** 를 푼 워크숍. 09-12 절(어휘를 담는 스킬)의 같은 스킬이 **왜 스크립트 폴더로 가득한가**에 대한 답이다. 테제: *"prompting is sort of like the starter level, but harness engineering is where you should end up"*(06:23~06:28) — 스킬을 *"the same way as MCP is an extension to the coding harness"*(06:34~06:36)로 생각하라. 근거: 250줄의 공들인 산문도 *"The median is the model's gravity"*(05:58~06:09)를 못 바꾼다.
+
+| 기법 | 이 페이지에 더하는 것 |
+|---|---|
+| 서로 못 보는 두 서브에이전트(LLM 디렉터 + 결정론적 린터) | 스킬이 **평가 구조**를 담는다 → [[generator-evaluator-pattern]] |
+| [[anti-attractor]] — 무작위 시드 | 금지 목록 대신 **출발점을 흔드는** 스킬 |
+| 내부 라우팅 | 한 SKILL.md에 다 넣으면 *"it kind of blurs them"*(20:31~20:37) → **명령별 MD 파일** 로드 + brand/product **register 전환**(21:43~22:19). progressive disclosure를 스킬 **안에서** 한 번 더 |
+| 기억 | 스킬은 *"by default don't have long-term memory"*(22:41~22:43) → 저장소의 `.impeccable` 폴더에 비평을 남기고 다음 세션이 읽는다, 사용자의 반대를 **선호로 기록**(23:07~24:12). *"compound engineering"*(24:15) → [[agent-memory]] |
+| [[scripts-that-talk-back]] | 산문 규칙보다 **스크립트 stdout 지시**를 잘 따른다 — 대가는 프롬프트 캐싱 |
+| 동봉 훅 | 하네스가 **명시하지 않으면 스킬 호출을 잊는다**(30:00~30:06) → [[hook-enforced-workflow]] |
+| 라이브 모드 | 인앱 브라우저·폴러로 **하네스 기능끼리 연결**(36:53~36:58) — MCP 없이 |
+| [[cross-harness-skill-compilation]] | 형식은 이식돼도 **동작은 컴파일해야** 한다 — 하네스·모델별 빌드, 가장 약한 모델 기준, *"if the gate can be skipped it will be"*(48:19~48:23) |
+
+⭐ **09-10 절(공유 스킬은 누가 쓰는가)에 배포자 자신의 세 번째 입장**: *"most skills should probably be written by the individual users"*, 배포한다면 *"need to invest more time than they currently do"*(59:25~59:36) — 작성자가 안 쓴 모델에서 동작하지 않는 스킬이 많다(59:41~59:49), *"I would rather see less skills in the ecosystem that are really battle tested and proven"*(59:57~1:00:04). 그리고 **스킬 배포 표준이 없다**(1:03:46~1:03:47) — 벤더 마켓플레이스는 업데이트가 잘 안 되고(1:02:38~1:02:50) npx skills는 하네스별 디렉터리를 존중하지 않는다(46:27~46:44).
+
+⚠️ 당사자 진술. 수치 없음, 검증 도구(eval 하네스)는 비공개. Impeccable 자신은 *"definitely outgrowing the skill platform"*(58:44~58:48) — 스킬 형식의 **한계**를 제작자가 말한 첫 소스다.
