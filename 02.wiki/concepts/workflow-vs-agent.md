@@ -6,9 +6,9 @@ tags: [agents, workflow, loop, tool-use, definition]
 aliases: [워크플로와 에이전트의 구분, 에이전트 루프, 동적 결정]
 related: [dynamic-workflows, agent-harness-design, three-tier-ai-skill-stack, ai-engineer-vs-ml-researcher, agent-distributed-systems, ralph-wiggum-method]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-vercel-eve-filesystem-agent]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-16
-updated: 2026-09-19
+updated: 2026-09-29
 ---
 
 # 워크플로 vs 에이전트
@@ -54,6 +54,10 @@ updated: 2026-09-19
 즉 **미리 정의된 경로의 대가는 단계 경계에서 잃는 정보**다. 요약으로 넘기면 뒤 단계가 *왜 그렇게 판단했는지* 를 잃고, 그래서 **오류를 되짚을 수 없다.** 이 위키의 [[dynamic-workflows]]가 기록한 *fan-out의 병목은 reduce* 와 같은 진단이 **직렬 체인에서** 나온 셈이다.
 
 ⚠️ **생존 편향에 주의** — 이것은 도착한 팀의 회고이고, 소스는 체인이 **원리상** 안 되는지 **그들의 체인이** 안 됐는지 가르지 않는다.
+
+## 범용 에이전트 시대에도 워크플로는 남는다 (2026-09-29)
+
+[[jerry-liu|Jerry Liu]]([[llamaindex|LlamaIndex]], [[tech-bridge-llamaindex-document-context-layer]])는 에이전트 루프가 검색을 흡수했다고 말하는 같은 발표에서 **반복 가능한 문서 처리는 워크플로로 남긴다** — *"If there is a repeatable workflow, like invoice processing, KYC, or claims, instead of always offloading it to a generalized agent, how do you actually develop some sort of specialized workflow for it and really carefully tune cost and accuracy"*(07:31~07:45). 기준은 **반복성 + 비용·정확도 조율 필요**다. ⚠️ ko는 이 문장을 *"불만을 제기할 때는 항상 다른 사람에게 맡기지 말고 직접 처리하세요"* 로 옮겨 요점이 사라졌다.
 
 ## References
 

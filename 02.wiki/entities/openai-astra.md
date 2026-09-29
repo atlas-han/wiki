@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot]
 links: []
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-09-29
 ---
 
 # Astra (OpenAI)
@@ -112,3 +112,13 @@ updated: 2026-09-25
 - **사내 사용 주장** — *"어디에서나 사용"*. ⚠️ **무엇에 쓰는지는 말하지 않는다.** 뒷마당 → CAD는 **가상의 사용 예**(*"그냥 말하세요"*)이지 NVIDIA의 사용 기록이 아니다.
 - ⚠️ **이해관계** — 화자는 Astra를 돌리는 컴퓨터를 판다. 그리고 같은 인터뷰에서 OpenAI를 *"사고를 낸 두 랩"* 중 하나로 **문맥상** 가리킨다(이름은 대지 않음).
 - ⚠️ **ko가 Astra를 "그녀"로 받는다**(42:01 *"아스트라는 모든 도구를 사용합니다. 필요한 이미지와 당신이 그녀가 제공했고"*).
+
+## 파트너·유통자 CEO의 서술 — Copilot 안의 견인력 (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+[[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]] — Astra를 **자기 제품 안에서 라우팅하는** 쪽)가 사용량 대시보드를 묻는 질문에:
+
+> But Open AI for us, you know, especially with **Astra now** is again really seeing fantastic traction. (09:56~10:01)
+
+- Astra는 [[microsoft-copilot|Copilot]]의 **learned router**가 고르는 여러 모델 중 하나다 — *"every model … needs to compete … for handling tasks inside of the Copilot system"*(10:19~10:25). 절대량에서 API 사용은 *"dominated still by what is happening with Open AI"*(11:25~11:29). → [[model-mixing-economics]]
+- ⚠️ **수치 없음.** *"fantastic traction"* 의 척도(호출 수·매출·라우팅 비율)가 없다.
+- ⚠️ **ko가 뜻을 뒤집었다** — **"OpenAI는 그렇지 않습니다. 특히 요즘 아스트라 모델에서는 더욱 그렇습니다"**(09:55). ko만 읽으면 **Astra가 부진하다**는 뜻이 된다.

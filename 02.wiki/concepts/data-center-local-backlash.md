@@ -6,9 +6,9 @@ tags: [data-center, community, power-grid, water, energy, infrastructure, nvidia
 aliases: [데이터센터 반대, NIMBY 데이터센터, 뒷마당 데이터센터, data center backlash]
 related: [intelligence-as-infrastructure, power-shortfall, compute-constrained-growth, regulatory-capture, ai-jobs-impact]
 first-seen: tech-bridge-jensen-huang-cbs-interview
-sources: [tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-29
 ---
 
 # 데이터센터 지역 반발
@@ -85,3 +85,23 @@ updated: 2026-09-25
 - 공급 측: [[intelligence-as-infrastructure]] · [[power-shortfall]] · [[compute-constrained-growth]]
 - 물 반론: [[tech-bridge-altman-agi-superintelligence]] · [[sam-altman]] · [[andrew-ng]] · [[regulatory-capture]]
 - 일자리: [[ai-jobs-impact]]
+
+## 운영자의 첫 목소리 — "허가"와 이름 있는 사례 (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+칩 판매자(Huang)에 이어 **데이터센터를 직접 짓고 운영하는 하이퍼스케일러**의 CEO [[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]])가 답한다. 진행자가 먼저 *"Microsoft has actually changed how it works with local communities including dropping NDAs"*(18:11~18:17)를 꺼낸다.
+
+> we have to get the **permission** from the communities (…) if you're going to be building a data center consuming power using water, at the end of the day we have to **earn that permission** (18:21~18:36)
+> I don't think of anything that we do as building a data center and get out. (19:51~19:54)
+
+| 요소 | 내용 | 소스 |
+|---|---|---|
+| **이름 있는 사례** | 워싱턴주 **Quincy** — *"I'll call it a 20 year longitudinal study"* | 18:38~18:47 |
+| **세수** | *"something like 12 X"* | 18:52~18:54 |
+| **지역 혜택** | 카운티·농촌 공동체 성장, 새 병원·학교·시내 중심가 | 18:56~19:05 |
+| **고용** | *"close to a thousand people there"* — 데이터센터는 자동으로 돌지 않고 *"constantly refurbishing a building"* | 19:06~19:17 |
+| **약속** | *"paying our way through"*, 물 사용 약속 | 19:38~19:47 |
+| **표준화** | 경쟁 조건이 *"to be more welcome in … the communities"* 가 되면 좋다, *"We want that to become a new standard"* | 20:06~20:38 |
+
+**Huang과의 차이**: Huang은 **사과 + 물은 신화 + 최소 기준(미관·이격·소음)**, Nadella는 **허가의 언어 + 20년 된 한 도시의 결과**. Nadella는 **물·전기 요금 반론을 하지 않는다** — *"commitments around water use"* 뿐이다. 이 페이지의 표에 **네 번째 행**이 생긴다: **운영자 — 정당성 인정(허가) + 이름 있는 사례 + 투명성(NDA, 진행자 서술)**.
+
+⚠️ **NDA는 진행자만 말한다.** 화자는 NDA를 직접 설명하지 않는다 — 언제, 어느 지역, 무엇을 공개하게 됐는지 없다. ⚠️ **"20년 종단 연구"는 화자가 붙인 이름**(*"I'll call it"*)이지 연구가 아니다. 세수 *"12 X"*·고용 *"close to a thousand"* 출처 없음. ko는 *12 X* 를 **"12번"**, *at the end of the day* 를 **"청구서 때문에"** 로 옮긴다. **반대 측 1차 목소리는 여전히 없다.**

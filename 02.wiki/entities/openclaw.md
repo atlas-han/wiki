@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-29
 ---
 
 # OpenClaw
@@ -26,6 +26,8 @@ updated: 2026-09-10
 | [[tech-bridge-company-brain-security]] (2026-09-10) | *OpenClaw* | [[tanmai-gopal]]: 기밀 유출 두려움이 *"**OpenClaw와 Hermes**를 온갖 곳에 배포하지 못하게 막아온 가장 큰 것"* |
 | [[tech-bridge-agent-to-agent-as-search]] (2026-09-10) | *"claw land"* · *"open source claw-ish worlds"* | [[jean-denis-greze]]: **개인 위키**가 인기 있는 1인 사용자 세계, 오픈소스 세계의 대명사로 |
 | [[tech-bridge-zuckerberg-muse-personal-agent]] (2026-09-13) | *OpenClaw* | [[mark-zuckerberg]]: *"**올해 초 OpenClaw 같은 게 나왔을 때** 많은 사람이 **Mac Studio**를 사기 시작했다"* — **로컬 실행형 개인 에이전트의 대명사**로, [[confidential-vm|기밀 VM]]의 대안으로 대조된다 |
+| [[tech-bridge-llamaindex-document-context-layer]] (2026-09-28) | *"open claw"* | [[jerry-liu]]([[llamaindex]]): *"the modern generalized agent"* 의 예로 *"Claude code, Claude code work[=Cowork], open claw, codex"*(02:24~02:28) — **범용 에이전트 하네스**의 대명사로 코딩 에이전트와 나란히 |
+| [[tech-bridge-nadella-copilot-autopilot]] (2026-09-28) | en-orig *"open clock"* · *"open club"* (ko "오픈 클럽"·"오픈 클라우드") | [[satya-nadella]]([[microsoft]]): *"open clock came out and I think inspired … all of us … to say wow there is a way … to think about these autopilots"*(12:33~12:40) — ⭐ **대기업 CEO가 자기 제품(Autopilot)의 영감으로 명시한 첫 사례.** Copilot tasks가 *"just around the same time as open clock came out"*(02:44~02:48). 진행자: 에이전트 붐이 *"earlier this year with open club"*(03:53~03:56). 표기는 세 번 다 ASR이라 **OpenClaw로 읽는 것은 위키의 추정** |
 
 ## 소스들이 합쳐 말하는 것 (위키의 종합, ⚠️ 추정)
 

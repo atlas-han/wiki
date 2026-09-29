@@ -6,9 +6,9 @@ tags: [business-model, pricing, tokens, commerce, agents]
 aliases: [토큰 무료 + 거래 수수료, transaction cut]
 related: [agent-roi-measurement, overspending-underusing-loop, trusted-throughput, mousepower, model-mixing-economics, intelligence-abundance]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-14
-updated: 2026-09-17
+updated: 2026-09-29
 ---
 
 # 거래 수수료형 에이전트 과금
@@ -84,3 +84,12 @@ updated: 2026-09-17
 > - **부담 주체가 이번 편에서 사라졌다.** 앞 편의 *"개인이 아니라 기업"* 이 이 소스만 읽으면 성립하지 않는다.
 
 그리고 [[business-in-a-box]]가 이 모델의 **공급 측면**이다 — 에이전트가 사업을 세워 주면 거래가 생기고, 수수료는 거기서 나온다. ⚠️ **소스는 이 연결을 하지 않는다.**
+
+## ⚠️ 반대 입장 — "보조금은 모두에게 끝난다" (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+[[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]]):
+
+> once the subsidy stop[s] for everybody, (…) there's marginal cost to tokens. (04:55~05:02)
+> there are finite number of business models that have to ultimately account for the fact that software for the first time has marginal cost. (05:43~05:49)
+
+> ⚠️ **Contradiction (부분):** 이 페이지의 모델은 **사용자 쪽 토큰을 대량 무료**로 두고 거래 상대 기업에서 몫을 뗀다. Nadella는 그런 무료분을 **일시적 보조금**으로 보고, 자기 제품은 **좌석(= 사용 권리) + 사용량**으로 사용자 기업이 한계비용을 낸다. 단 그의 *"finite"* 목록(05:28~05:43)에 *"an ad"* 와 *"transactions"* 가 들어 있어 **거래 수수료 모델 자체를 배제하지는 않는다** — 두 입장은 **누가 한계비용을 대는가**에서 갈린다. 어느 쪽도 토큰 원가를 대지 않는다. → [[software-marginal-cost]]

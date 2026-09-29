@@ -1652,3 +1652,33 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 두 편을 **병렬 서브에이전트**로 나눴고(raw 파일명은 처음부터 published 날짜), index·overview·log·tech-bridge·iconize·커밋은 오케스트레이터가 맡았다. 공유 페이지([[claude-code]]·[[codex]]·[[generator-evaluator-pattern]])를 두 에이전트가 append-only로 건드렸고 충돌 없음. 09-27 메모대로 서브에이전트 메타 주장을 검증했다 — 두 info.json 모두 `subtitles` 빈 값 · `automatic_captions` 에 ko/en-orig 있음, 인용 타임스탬프 표본이 실제 자막 이벤트와 일치, frontmatter 중복 키 없음.
 
+
+## [2026-09-29] ingest | Tech Bridge — 사티아 나델라 Copilot·Autopilot(Microsoft) · 문서 컨텍스트 레이어(Jerry Liu, LlamaIndex) (09-28 업로드 2편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 493초, 전부 `public`). 신규 **09-28 업로드 2편**, 나머지 13편은 기존. **§4a 멤버 전용 대기 없음.** 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, `subtitles` 비어 있음 — 오케스트레이터가 info.json에서 직접 확인), **429 없음**(쿠키 무효 경고는 계속, 무해).
+
+**신규 source 2 · concept 5 · entity 6**, index 실측 **629 → 642**.
+
+- `MsgkesEBZFc`(25:47, **Satya Nadella / Microsoft**, 'DB Live' @ Copilot 행사, 공식 챕터 11개) → [[tech-bridge-nadella-copilot-autopilot]]
+- `S-bRN-avZ4Q`(20:33, **Jerry Liu / LlamaIndex**, AI Engineer World's Fair 2026, 공식 챕터 11개) → [[tech-bridge-llamaindex-document-context-layer]]
+
+신규: [[satya-nadella]] · [[microsoft]] · [[microsoft-copilot]] · [[agent-365]] · [[software-marginal-cost]] · [[inference-revenue-training-rnd]] · [[jerry-liu]] · [[llamaindex]] · [[document-context-layer]] · [[document-parsing-for-agents]] · [[tiered-document-parsing]]
+
+보강(나델라 편): [[embedded-external-evaluators]] · [[data-center-local-backlash]] · [[ai-arms-limitation-lens]] · [[model-mixing-economics]] · [[assistance-vs-automation]] · [[compute-constrained-growth]] · [[agent-governance-layers]] · [[agentic-misbehavior]] · [[transaction-cut-monetization]] · [[openai-astra]] · [[openai]] · [[openclaw]] · [[tech-bridge]]
+
+보강(Jerry Liu 편): [[retrieval-augmented-generation]] · [[agentic-search]] · [[retrieval-primitive-repertoire]] · [[search-latency-tiers]] · [[mixedbread]](⚠️ Contradiction) · [[workflow-vs-agent]] · [[context-engineering]] · [[ai-engineer]] · [[openclaw]] · [[tech-bridge]]
+
+### 이번 실행의 구도
+
+같은 날 **플랫폼의 꼭대기와 바닥**이 들어왔다. 나델라는 에이전트를 **팔리는 제품과 손익계산서**의 언어로(한계비용 · 좌석 · learned router · 추론=매출), Jerry Liu는 에이전트가 **읽을 수 있는 문서**의 언어로(글리프 · 좌표 · 읽기 순서)말한다. 둘 다 *모델 선택·검색의 복잡도는 루프/라우터가 흡수한다* 는 같은 전제 위에 서 있고, 서로를 언급하지 않는다.
+
+### 자막 주의
+
+- ⚠️ ko가 두 편 모두 **뜻을 뒤집었다** — 나델라 편 *"fantastic traction"* → "OpenAI는 그렇지 않습니다", *"both sides will care about the same set of things"* → "생각이 다르다" / Liu 편 *"extremely low cost"* → "비용도 엄청나게 높습니다", *"not terribly inaccurate"* → "몹시 부정확하기를".
+- 나델라 편 장관 이름 *Blinken*(en-orig) vs *Bessent*(ko·en) — `en`이 ko와 같은 원천이라 독립 근거가 아니다. 판독 안 함.
+- 설명란이 자막보다 센 사례 계속 — 나델라 편 *"만들지 않는다"* vs 자막 *"not worth doing / should not launch"*, Liu 편 *"50개 이상"* vs *"probably like 50"*. 자막을 따랐다.
+- ✅ Liu 편은 행사(AI Engineer World's Fair)와 연도(2026)가 **발화로 확정**된 소스. 나델라 편 촬영 날짜는 미확정.
+
+### 운영 메모
+
+두 편을 **병렬 서브에이전트**로 나눴고, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. [[openclaw]]를 두 에이전트가 좁은 Edit로 건드렸고 충돌 없음. 09-27 교훈대로 서브에이전트의 자막 종류 주장을 info.json에서 재확인했다(일치).

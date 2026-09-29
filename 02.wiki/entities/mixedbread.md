@@ -6,9 +6,9 @@ tags: [retrieval, multimodal-search, search-agent, startup]
 aliases: [믹스드브레드, mixedbread.com]
 links:
   - https://mixedbread.com
-sources: [tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-29
 ---
 
 # Mixedbread
@@ -48,6 +48,10 @@ updated: 2026-09-21
 | 공통 | **BM25 기준선이 잘못 설정돼 있다** → [[which-bm25-problem]] | 〃 |
 
 ⚠️ **BM25에 대한 두 회사의 평가가 정반대로 읽히지만 실은 어긋나지 않는다.** Hornet은 *텍스트 웹 문서*에서 BM25가 강하다고 하고, Mixedbread는 *스캔된 PDF*에서 BM25가 천장에 부딪힌다고 한다 — **도메인이 다르다.** 두 소스 어느 쪽도 이 구분을 명시하지 않는다.
+
+## ⚠️ PDF를 비전으로 읽는 것에 대한 반대 벤더 (2026-09-29)
+
+> ⚠️ **Contradiction:** [[llamaindex|LlamaIndex]]의 [[jerry-liu|Jerry Liu]]([[tech-bridge-llamaindex-document-context-layer]])는 원샷 VLM이 *"can hallucinate on text only pages. It costs a ton of money"*(11:34~11:36)이고 *"still lacks a lot of the semantics and grounding"*(11:38~11:41)이라며 **파이프라인 + 비전의 하이브리드**를 판다. 이 페이지의 *"OCR 없이 비전으로 읽으면 정확도가 크게 뛴다"*(13:17~13:38)와 부딪힌다. **둘 다 당사자**이고 층이 다르다 — Mixedbread는 **검색용 표현**, LlamaIndex는 **파싱 출력(마크다운)**. 어느 쪽도 상대 방식과의 비교 수치를 자막에 내지 않는다. → [[document-parsing-for-agents]]
 
 ## 미해결
 

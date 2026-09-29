@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-09-29
 sources: []
 ---
 
@@ -179,6 +179,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-09-28*: [[tech-bridge]] **2편** ingest(09-27 업로드 2편). ① [[tech-bridge-agents-vs-humans-optimizer-speedrun|Prime Intellect 스피드런 편]](설명란 기준 [[elie-bakouch|Elie Bakouch]])은 [[codex|Codex]]·[[claude-code|Claude Code]]가 optimizer speedrun에서 인간 기록을 넘었지만 **새 옵티마이저·메커니즘은 하나도 발명하지 못했다**고 보고한다 — 기록 경신과 발견은 다른 축이고, 재귀적 자기 개선은 빅랩 바깥에서 접근 범위를 통제한 벤치마크로 재야 한다([[automated-ai-research]]). ⚠️ 모델은 인간 기록을 언제든 가져올 수 있었다 — *독립적 승리* 가 아니다.
   ② [[tech-bridge-skill-engineering-dark-arts|Paul Bakaus 워크숍]]은 09-11 [[tech-bridge-impeccable-design-steering|Impeccable 편]]의 *무엇을* 에 이어 *어떻게* 를 연다 — 스킬은 포장한 프롬프트가 아니라 **사용자 하네스의 확장**이고, 금지 목록 대신 [[anti-attractor|무작위 시드]], 산문 규칙 대신 [[scripts-that-talk-back|stdout으로 말하는 스크립트]]와 쓰기 차단 훅, 배포 스킬은 [[cross-harness-skill-compilation|하네스·모델별로 컴파일하고 가장 약한 모델이 건너뛸 수 없게]].
   자막 쪽으로는 ⚠️ ko가 두 편 모두 부정을 뒤집었다 — *"not released yet"* → "출판되었습니다", *"you're out of luck"* → "이점을 누릴 수 있습니다", *"can't tune pixels through a chat box"* → "픽셀 조정 가능".
+
+- *2026-09-29*: [[tech-bridge]] **2편** ingest(09-28 업로드 2편). ① [[tech-bridge-nadella-copilot-autopilot|사티아 나델라 편]]은 위키 첫 [[microsoft|Microsoft]] 1인칭 소스다 — [[microsoft-copilot|Copilot]]을 chat·co-work·code·Autopilot의 조합으로, [[agent-365|Agent 365]]를 신뢰의 자리로 놓고, *"보조금이 끝나면 소프트웨어가 처음으로 한계비용을 갖는다"*([[software-marginal-cost]])로 [[transaction-cut-monetization|토큰 무료·거래 수수료]] 모델과 갈린다. 트럼프–시진핑 회담 질문에 답한 **세 번째 CEO**(Amodei 무기 · Huang 제품 표준 · Nadella 사고 통보 체계와 *에이전트 자체가 insider*)이고, [[embedded-external-evaluators]]를 Amodei와 같은 비유로 말하지만 평가자가 OpenAI↔MS 상호라 독립성이 다르다.
+  ② [[tech-bridge-llamaindex-document-context-layer|Jerry Liu 편]]은 RAG 프레임워크를 만든 쪽이 RAG를 *에이전트 하네스 + [[document-context-layer|컨텍스트 레이어]]* 로 다시 나눈다 — 검색의 복잡도는 에이전트 루프로 넘어갔고, 남은 병목은 [[document-parsing-for-agents|PDF 파싱]]이며, 싸게 전부 훑고 표·차트만 VLM에 넘기는 [[tiered-document-parsing|계층형 파싱]]은 *"에이전트가 원문으로 돌아가 메운다"* 를 전제로 한다. ⚠️ [[mixedbread|Mixedbread]]의 *비전으로 읽기* 와 정면 충돌.
+  자막 쪽으로는 ⚠️ ko가 두 편 모두 뜻을 뒤집었다 — *"fantastic traction"* → "그렇지 않습니다", *"extremely low cost"* → "비용도 엄청나게 높습니다".
 
 ---
 

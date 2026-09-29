@@ -5,9 +5,9 @@ category: theory
 tags: [compute, scaling, growth, efficiency, demand, data-center, bubble, openai]
 related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition, power-shortfall, intelligence-abundance]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-06
-updated: 2026-09-20
+updated: 2026-09-29
 ---
 
 # Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
@@ -121,3 +121,11 @@ G20에서 Altman이 *"효율은 수요가 삼킨다"* 에 **숫자를 붙였다.
 > ⚠️ **당사자 진술이고 수치가 없다.** 그리고 **화자는 컴퓨트를 대규모로 조달하는 회사의 사장**이다 — *"컴퓨트는 해낼 수 있다"* 는 그 위치에서 읽어야 한다. 같은 대담에서 진행자가 **데이터센터 규제**를 가장 강하게 밀어붙인다(→ [[a16z]] · [[ben-horowitz]]).
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[pacing-the-frontier]] · [[defenders-window]] · [[power-shortfall]]
+
+## 하이퍼스케일러의 판단 규칙 — 추론 매출 대비 훈련 R&D (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+[[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]])는 *"과잉 구축과 과소 구축 중 무엇이 더 큰 위험인가"* 에 **완벽한 선은 없다**(*"there will never be a way … to say there's a perfect line of under build over build"*, 21:06~21:13)고 답하고, 대신 **회계 규칙**을 준다 — *"inference has to dominate because otherwise … what are you training for?"*(22:58~23:01), 훈련은 매출의 일정 비율인 R&D(*"Is it 10? Is it 15? Is it 20?"*, 23:09~23:11), *"the laws of physics of the income statement"*(23:29~23:34). → [[inference-revenue-training-rnd]]
+
+- **이 페이지의 "거품 — 자기 계획이 아니라 세계의 계획"과 같은 구조** — *"we feel pretty confident about our compute ramp, and others will … decide on what compute ramp they want"*(22:49~22:53), 남들은 *"catching up"*, MS는 *"a more gradual ramp"*(22:24~22:28). ⚠️ Altman과 Nadella **둘 다 거품의 위험을 남에게** 둔다.
+- **성장의 척도가 다르다** — Altman은 **컴퓨트 배분**이 성장을 정한다고 했고, Nadella는 **확산**(*"the market is still a lot more concentrated. It's about the hit app"*, 20:53~21:00)과 **실질 GDP**(21:17~21:25)를 척도로 둔다. 컴퓨트가 모자라다는 말은 하지 않는다.
+- ⚠️ 10·15·20%는 **질문형**이고 MS 자신의 비율은 말하지 않는다. *"whether that will be a linear line, I don't know"*(21:28~21:29).

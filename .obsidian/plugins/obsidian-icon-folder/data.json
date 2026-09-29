@@ -835,5 +835,20 @@
   "02.wiki/concepts/scripts-that-talk-back.md": "LiSettings",
   "02.wiki/concepts/cross-harness-skill-compilation.md": "LiPuzzle",
   "02.wiki/entities/prime-intellect.md": "LiBuilding",
-  "02.wiki/entities/elie-bakouch.md": "LiUser"
+  "02.wiki/entities/elie-bakouch.md": "LiUser",
+  "01.raw/articles/2026-09-28_MS 사티아 나델라가 밝힌 AI 미래 — 코파일럿과 오토파일럿, 그리고 다가올 제품 경쟁.md": "LiNewspaper",
+  "01.raw/articles/2026-09-28_AI 에이전트를 위한 문서 컨텍스트 레이어 구축하는 법 — Jerry Liu, LlamaIndex.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-nadella-copilot-autopilot.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-llamaindex-document-context-layer.md": "LiVideo",
+  "02.wiki/concepts/document-context-layer.md": "LiLayers",
+  "02.wiki/concepts/document-parsing-for-agents.md": "LiSettings",
+  "02.wiki/concepts/inference-revenue-training-rnd.md": "LiBookText",
+  "02.wiki/concepts/software-marginal-cost.md": "LiBookText",
+  "02.wiki/concepts/tiered-document-parsing.md": "LiPuzzle",
+  "02.wiki/entities/agent-365.md": "LiBoxes",
+  "02.wiki/entities/microsoft-copilot.md": "LiBoxes",
+  "02.wiki/entities/jerry-liu.md": "LiUser",
+  "02.wiki/entities/satya-nadella.md": "LiUser",
+  "02.wiki/entities/llamaindex.md": "LiBuilding",
+  "02.wiki/entities/microsoft.md": "LiBuilding"
 }

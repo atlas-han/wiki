@@ -5,9 +5,9 @@ category: theory
 tags: [rlhf, automation, assistance, objective-function, human-in-the-loop]
 related: [rlhf, preference-reward-asymmetry, post-training-northstars, smarter-software-vs-cheaper-software, workflow-vs-agent, risk-proportional-human-review, verification-cost-asymmetry]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-29
 ---
 
 # 보조 vs 자동화 (Assistance vs Automation)
@@ -62,3 +62,15 @@ updated: 2026-09-20
 
 - [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen
 - 관련: [[rlhf]] · [[preference-reward-asymmetry]] · [[post-training-northstars]] · [[smarter-software-vs-cheaper-software]] · [[workflow-vs-agent]] · [[risk-proportional-human-review]] · [[verification-cost-asymmetry]] · [[claude-code]]
+
+## 제품의 답 — Copilot과 Autopilot을 한 묶음으로 (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+이 페이지의 구분을 **제품 이름**으로 가진 회사가 있다 — [[microsoft|Microsoft]]의 [[microsoft-copilot|Copilot]](보조)과 **Autopilot**(자동화). [[satya-nadella|Satya Nadella]]는 둘을 **고르지 않고 조합한다.**
+
+> a long-running business process agent, right? Where it completes the job, but you are still **the human in the loop both at the input and at the output**. (01:34~01:44)
+> Autopilot's a fantastic until you have to do something with the output of an Autopilot. (02:54~02:59)
+> I think of Autopilot as something that has an identity, it does complete jobs, but then when it hands off or when I'm trying to instruct it, **I need my Copilot and my Co-work**. (03:24~03:33)
+
+- **조합의 형태** — 자동화 구간(Autopilot)의 **양 끝**에 보조 구간(Copilot·Co-work)을 둔다. Excel 비유로는 Co-work가 **outer loop**, Excel 안의 에이전트 루프가 **inner loop**(03:17~03:22). *"I don't think of any one form factor as the be-all end-all"*(03:02~03:04).
+- **이 페이지와의 관계** — [[diogo-almeida|Almeida]]는 *사람을 만족시키는 목적함수로 훈련된 모델은 자동화에 못 미친다*는 **원인**을 말했다. Nadella는 원인을 말하지 않고 **배치**로 답한다 — 자동화를 쓰되 입력과 출력에 사람을 둔다. [[risk-proportional-human-review]]의 *위험한 결정 곁에 사람* 과 같은 배치이지만, 기준이 위험이 아니라 **구간의 위치**(시작과 끝)다.
+- ⚠️ **당사자 진술.** Autopilot의 성능·실패율은 없다. *"in the loop at the input and at the output"* 은 **중간 단계의 개입 수단**을 말하지 않는다 — 장시간 실행 중 무엇을 사람이 볼 수 있는지는 [[agent-365|Agent 365]]의 *"observe everything"* 한 마디로 대신된다.

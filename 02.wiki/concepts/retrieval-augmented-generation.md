@@ -6,9 +6,9 @@ tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
 related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-08
-updated: 2026-09-24
+updated: 2026-09-29
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -122,3 +122,11 @@ updated: 2026-09-24
 - **진단**: 데이터 형마다 **다른 DB**를 쓰게 돼 *"매우 높은 데이터 동기화 [로직 오버헤드]"*(21:01~21:05) — 유지보수와 엔지니어링 노력.
 
 ⚠️ **처방은 자사 제품이다** — *"시장에서 유일한 컨버지드 데이터베이스"*(21:31~21:37), in-database embeddings(*제3자 임베딩 서비스를 호출하지 않는다*, 18:41~18:58). 측정 없음. 이 페이지가 09-20에 기록한 *벡터 경로가 기본값이 아닐 수 있다*(BM25·에이전트 검색)는 논점은 **등장하지 않는다** — 이 소스에서 벡터 검색은 전제다.
+
+## 2026-09-29 — RAG를 대중화한 쪽이 RAG를 해체한다
+
+[[tech-bridge-llamaindex-document-context-layer]]([[jerry-liu|Jerry Liu]], [[llamaindex|LlamaIndex]] CEO)는 이 페이지의 09-16 파이프라인(청킹 → 임베딩 → 벡터 DB → top-k → 생성)을 **2023년 1월의 "naive RAG" 스냅숏**으로 놓는다 — *"All the steps are fixed"*(01:51~01:53). 그리고 *"RAG in 2026 … basically decomposes into an agent harness plus a context layer"*(00:30~00:36). 검색 복잡도는 에이전트 루프로 갔고(*"baked into the agent layer"* 02:29~02:33), 남는 일은 **문서를 에이전트가 읽을 수 있게 만드는 것**이다 → [[document-context-layer]] · [[document-parsing-for-agents]].
+
+- 09-10 [[tech-bridge-agent-to-agent-as-search]]의 *수동 → RAG → 에이전틱 검색* 3단계와 **합치**한다. 이번엔 RAG 프레임워크를 만든 쪽의 서술이다.
+- 이 페이지의 미해결 *"청킹·임베딩·재랭킹 등 구현 층위"* 에 **청킹보다 앞선 층**이 생겼다 — PDF가 좌표 붙은 글리프와 선분으로 된 표라서, 청킹할 텍스트 자체를 먼저 만들어야 한다(08:57~09:11).
+- ⚠️ 당사자 진술(파싱·추출 제품 판매자). 벡터 검색은 버려지지 않고 BM25·grep·읽기·스크롤과 함께 **도구 세트의 하나**로 남는다(19:48~19:52).

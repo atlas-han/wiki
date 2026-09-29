@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-25
+updated: 2026-09-29
 ---
 
 # OpenAI
@@ -148,3 +148,11 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - 탐지는 **장애(7/4)와 워크로드 경보(7/19)** 였고, **HF의 공개(7/16)가 먼저**였다.
 
 → [[emergent-agent-collective]] · [[defense-factory]]
+
+## 파트너 CEO가 말하는 OpenAI (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+[[microsoft|Microsoft]]의 [[satya-nadella|Satya Nadella]] — 이 위키 첫 **파트너 쪽 1인칭** 서술.
+
+- **사용량** — *"in absolute terms, we are dominated still by what is happening with Open AI"*(11:25~11:29, API 측), *"especially with Astra now … fantastic traction"*(09:56~10:01) → [[openai-astra]]. 다만 Copilot 안에서 OpenAI 모델은 **learned router가 고르는 여러 모델 중 하나**다(10:19~10:25) → [[model-mixing-economics]].
+- **공동 안전 위원회** — *"a joint safety board where we really do a lot of the testing internally on both sides … embedded evaluators, OpenAI and Microsoft"*(15:48~16:05). 업계 단위라면 *"not just … something that Sam and I sit around and decide"*(17:13~17:19) → [[embedded-external-evaluators]].
+- ⚠️ **경쟁에 대해서는 말하지 않는다** — 진행자가 *"OpenAI and Anthropic have been increasingly focused on the enterprise"* 를 묻자(12:17~12:29) 답은 OpenClaw와 자사 [[agent-365|Agent 365]]로 간다. 파트너이자 엔터프라이즈 경쟁자라는 관계의 구체는 소스에 없다.

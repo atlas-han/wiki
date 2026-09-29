@@ -5,9 +5,9 @@ category: technique
 tags: [llm, context-window, agent, prompting]
 related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer]
 created: 2026-05-25
-updated: 2026-09-24
+updated: 2026-09-29
 ---
 
 # Context Engineering
@@ -176,3 +176,7 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 - **어떻게 작게** — [[toolbox-pattern]]: 도구·스킬을 벡터 인덱스에 두고 **에이전트 루프의 매 반복마다** 필요한 것만 retrieve해 넣고, 필요 없으면 *"일시적으로"* 뺀다(34:34~35:08). 09-23 Lopopolo의 *"작업 분류 → 동적 컨텍스트"*([[agent-loop-size]])가 **무엇을** 동적으로 고르는지였다면, 이것은 **어떤 메커니즘으로**(검색 인덱스) 고르는지다.
 
 이 위키의 조달 태도 셋(고른다 / 쪼갠다 / 펼쳐 놓고 찾게 한다, 09-19)에 넣으면 툴박스는 **"고른다"를 매 턴 다시 하는 것**이다 — 한 번 조립한 컨텍스트를 들고 가지 않는다.
+
+## 2026-09-29 — "컨텍스트가 스택 위로 올라갔다"
+
+[[jerry-liu|Jerry Liu]]([[tech-bridge-llamaindex-document-context-layer]])의 관찰: 생성형 AI의 *"first two and a half years"* 에는 컨텍스트 창을 넘치지 않게 관리하는 것이 화두였지만, compaction·long context가 발전하면서 *"more and more of the conversation is actually how do you just hook up the right MCP servers and skills and tasks to the agent"*(03:15~03:21) — *"context is moving up the stack"*(02:55~02:57). 이 페이지의 **창 안 관리**(compaction·trimming) 축에서 **창 밖 조달**([[model-context-protocol|MCP]]·[[agent-skills|스킬]]·문서 파싱) 축으로의 이동이다 → [[document-context-layer]]. ⚠️ ko는 *two and a half* 를 **"1년 반"** 으로 옮겼다(03:01).

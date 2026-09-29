@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-09
-updated: 2026-09-26
+updated: 2026-09-29
 ---
 
 # 모델 혼합의 경제학
@@ -123,3 +123,16 @@ updated: 2026-09-26
 라우팅은 **매 요청마다** 일어나므로 라우터의 지연·단가가 절감액을 깎는다 — 라우터가 LLM이면 *싼 모델로 보내기 위해 비싼 판정을 치르는* 역설이 생길 수 있다. 이 소스의 논거가 정확히 그 비용 쪽이다(*"분류형 작업에서 LLM 대비 20~200배 빠르고 40~400배 저렴할 수 있다"*, 02:22~02:34). → [[system-1-model]]
 
 ⚠️ **벤더 소개이고 *"탐색 중"*(06:18) 단계다.** 라우팅 정확도, **오라우팅**(어려운 작업을 싼 모델로 보냈을 때)의 비용, 20~200배의 측정 조건이 **전부 없다.** Oracle 편의 *"절감액의 10%"* 사업 모델과 같은 자리를 **모델 제공자**가 노리는 구도지만 소스는 그렇게 말하지 않는다.
+
+## "auto가 제품" — 사용자가 고르지 않는다 (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+이 페이지의 사례는 지금까지 **개발자·팀이 예산을 보고 모델을 섞는** 것이었다. [[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]])는 그 선택을 **제품이 가져간다**고 말한다.
+
+> the last time I picked a model has been a long time because in an interesting way **auto has become the product** essentially (…) the idea that you go in and pick models is becoming pretty passe both (…) in GitHub co-pilot as well as in co-pilot. (08:15~08:31)
+> we are even not just doing model routing, but (…) we have **learned routers**, right? So the the real model is **my model that routes**. (08:33~08:41)
+> it's about sort of the intensity of the task that then really picks the model. So it's not the user. (…) **your agent picks the model**. (09:10~09:17)
+
+- **라우팅 기준** — 작업 강도(진행자 *"Hard model for hard tasks"* → *"Correct"*, 08:42~08:44). 스웜·서브에이전트에서는 **여러 모델 패밀리를 넘나들며 KV 캐시 적중률**까지 최적화해야 하고, 그것이 *"much easier in coding"*, 지식 노동·사이버에서는 아직 과제다(08:45~09:02). ⭐ 이 페이지에 **캐시**가 라우팅 변수로 처음 들어온다 — 모델을 자주 바꾸면 캐시가 깨진다는 **라우팅의 숨은 비용**.
+- **구조** — *"the model router plus a model that we have trained together in a harness. And our harness is capable of calling all the other models"*(09:45~09:53). 자체 **MAI 모델**이 더 강한 모델로 **넘기는** 역할이라 구조상 사용량이 가장 많다. Oracle 편의 *"라우터를 하네스 안에"* 와 같은 모양이고, 라우터가 **학습된** 모델이라는 점은 Jev 편(System 1)과 같은 방향이다.
+- **모델 간 경쟁** — *"every model … needs to compete … for handling tasks inside of the Copilot system"*(10:19~10:25). OpenAI(Astra)·Anthropic·Grok이 한 라우터 아래에 있고, 고객은 **자기 모델(BYO)** 을 넣을 수 있다(11:01~11:10).
+- ⚠️ **당사자 진술, 측정 없음.** 라우팅 정확도·오라우팅 비용·사용자가 모델을 고정할 수 있는지 **전부 없다.** ⚠️ ko가 *learned routers* 를 **"스마트 라우터"**, *auto has become the product* 를 **"자동 조종 장치 자체"**(Autopilot과 혼동), *KV cache hit ratios* 를 **"지식 캐시 조정"** 으로 옮긴다.

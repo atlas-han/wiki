@@ -6,9 +6,9 @@ tags: [tool-design, primitives, grep, bm25, semantic-search, co-design, training
 aliases: [프리미티브 레퍼토리, 도구 공동 설계, tool co-design]
 related: [bm25, code-as-atypical-knowledge, tools-are-not-neutral, llm-as-search-user, ride-the-optimization-trajectory, agent-tool-design-practices, retrieval-augmented-generation, reference-graph-vs-vector-search]
 first-seen: tech-bridge-knowledge-agents-not-coding-agents
-sources: [tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-29
 ---
 
 # 검색 프리미티브 레퍼토리
@@ -69,6 +69,12 @@ updated: 2026-09-21
 | **참조 그래프** | **무엇이 무엇을 쓰는가** | 코드 밖 | [[reference-graph-vs-vector-search]] |
 
 **네 번째는 이 소스에 없다** — 이 위키가 09-15에 따로 받은 것이다. **넷을 어떻게 섞는지 말하는 소스는 이 위키에 아직 없다.**
+
+### 2026-09-29 — 목록에 "읽기·스크롤"이 붙고, 표의 빈칸 하나에 답이 왔다
+
+[[jerry-liu|Jerry Liu]]([[tech-bridge-llamaindex-document-context-layer]])의 문서 검색 도구 세트: *"retrieval, BM25, grep, vector search, reading and scrolling"*(19:48~19:52). **읽기·스크롤**을 검색 프리미티브와 같은 줄에 놓은 것이 새롭다 — 찾는 것과 **찾은 문서 안을 돌아다니는 것**을 한 도구 세트로 본다. ⚠️ 섞는 방법은 여기에도 없다(한 문장뿐).
+
+위 표의 `grep` 약점 **"PDF·이미지"** 에 대한 그 소스의 답은 **먼저 마크다운으로 파싱하라**다 → [[document-parsing-for-agents]] · [[tiered-document-parsing]]. 파싱이 되면 `grep`·BM25의 약점 칸이 줄어든다(⚠️ 위키의 연결 — 소스는 이렇게 말하지 않는다).
 
 ## References
 

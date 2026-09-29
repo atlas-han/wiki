@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-15
-updated: 2026-09-24
+updated: 2026-09-29
 ---
 
 # AI Engineer
@@ -41,7 +41,7 @@ updated: 2026-09-24
 ## 미해결 사항
 
 - **정식 조직명·법인 형태·소재지·설립 시점** 전부 없다.
-- **행사 브랜드들의 관계**(World's Fair를 포함하는지) 미확정.
+- **행사 브랜드들의 관계**(World's Fair를 포함하는지) 미확정. → ⭐ 2026-09-29 [[tech-bridge-llamaindex-document-context-layer]]에서 화자가 *"AI Engineer World Fair"* 라고 **한 구절로** 불렀다(아래 절). 다른 소스들이 같은 회차인지는 여전히 미확정.
 - **수익 모델**(스폰서십 비중 등) 언급 없음.
 - **[[vincent-wendy]] 외의 구성원** 이름이 하나도 나오지 않는다.
 
@@ -84,3 +84,17 @@ updated: 2026-09-24
 | 운영 조건 | 짧고 엄격한 세션(09-20) | **긴 세션**(강의 후 1시간 15분 남음), 회의장 **Wi-Fi 장애**(39:32~40:23) |
 
 > ⚠️ **회차·연도·도시는 여전히 미확정.** 09-07 절차대로 다른 AI Engineer 소스와 **같은 회차로 묶지 않는다.** 이 행사에서 나온 이 위키의 **여섯 번째** 소스.
+
+## "AI Engineer World Fair" — 두 이름이 한 구절에 (2026-09-29 · [[tech-bridge-llamaindex-document-context-layer]])
+
+[[jerry-liu|Jerry Liu]]([[llamaindex|LlamaIndex]])의 발표 첫머리: *"Really big shout out to the AI Engineer World Fair for hosting. And if you've seen some of my earlier talks from the previous AI Engineer conferences"*(en-orig 00:08~00:15). **이 채널 소스에서 "AI Engineer"와 "World's Fair"가 화자 발화 한 구절로 묶인 첫 사례**다 — 위 *"World's Fair가 이 조직의 행사인지 소스에 근거가 없다"* 에 대한 **첫 직접 근거**(이 행사가 AI Engineer의 World's Fair라는 것까지. [[tech-bridge-mousepower-measuring-agents]]의 World's Fair와 **같은 회차인지는 여전히 모른다**).
+
+| 항목 | 소스 |
+|---|---|
+| 행사명 | *"AI Engineer World Fair"*(00:08~00:10) · 이전 회차 *"previous AI Engineer conferences"*(00:12~00:15) |
+| **연도** | *"today in 2026"*(00:24~00:26) — **이 페이지에서 처음으로 연도가 발화로 확정** |
+| 형식 | **트랙** 발표(*"one of the core concepts of this track"* 07:57~07:59), 20분 남짓, 시간 초과로 끝부분 생략(20:04~20:21) |
+| 행사장 | 스폰서 **부스 *"LG47"***(20:22), *"giant pickleball tournament today"*(20:27~20:29) |
+
+⚠️ ko는 00:08을 *"AI 엔지니어 월드에 오신 것을 환영합니다!"* 로 옮겨 **"Fair"가 빠지고 감사가 환영이 됐다** — ko만 읽으면 이 근거가 사라진다. `en`은 *"AI Engineer World Fair"* 로 옳다. 월·일·도시는 발화 없음.
+

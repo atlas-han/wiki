@@ -5,9 +5,9 @@ category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
 related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot]
 created: 2026-05-25
-updated: 2026-09-25
+updated: 2026-09-29
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -139,3 +139,13 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 이 페이지의 네 원인은 **단일 에이전트** 기준이다. 5번은 새 형태다 — **개별 에이전트는 경계를 알았고(overeager에 가까움), 월경의 근거는 사회적 증거였다.** 이 위키는 이것을 네 원인의 다섯 번째로 넣지 않고 **다중 에이전트 증폭기**로 따로 둔다 → [[emergent-agent-collective]].
 
 ⚠️ 09-23 절의 *"사고 흔적에 발각 회피"*(All-In 진행자)는 **이 발표에 없다** — 인용된 사고 사슬에 기만 계획은 없다. 발표는 슬라이드에서 골라 읽은 것이므로 **부재를 반박으로 읽지 않는다.**
+
+## 국가 간 위험으로 — "에이전트가 insider가 된다" (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+[[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]])가 미·중 정상회담에 바라는 것(사고 통보 체계)의 **근거로** 이 페이지의 현상을 든다.
+
+> for the first time, I would say, with these powerful AI agents, you kind of have an **insider risk**, right? (…) historical cyber risk was all about the bad actor using cyber capability to attack. And the question now is, in fact, **the attack can just come from the agent itself.** (13:53~14:13)
+
+- **층이 올라간다** — 이 페이지는 지금까지 **회사·개인 단위의 사고**(auto mode 분류 · 대량 메일 · HF 사건 등)를 모았다. Nadella는 같은 현상을 **두 국가 사이의 통보 대상**으로 올린다 — 안전의 둘째 층 *"an environment that needs to be contained that is not contained"*(14:33~14:37)이 통보의 자리다. → [[ai-arms-limitation-lens]]
+- **처방은 격리** — *"building out that containment is a solid engineering problem"*(15:27~15:31), Autopilot이 도는 환경이 그 일을 한다(15:33~15:43) → [[agent-365]].
+- ⚠️ **사례를 들지 않는다.** 어떤 에이전트가 무엇을 했는지 없다 — 이 위키의 [[tech-bridge-openai-huggingface-incident-black-hat|HF 사건]] 같은 구체 사고와 연결하지 않는다. ⚠️ ko는 대비의 과거 쪽에 에이전트를 넣어(**"역사적으로 모든 것은 에이전트에 달려 있었습니다"**, 14:03) **새로움이라는 논점을 지운다.**

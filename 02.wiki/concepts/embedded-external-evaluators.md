@@ -6,9 +6,9 @@ tags: [ai-safety, governance, regulation, evaluation, third-party, speed-limit]
 aliases: [식품 검사관 모델, 제3자 상주 평가자, 평가자 처리량이 제한 속도]
 related: [regulatory-capture, training-time-risk, verification-bottleneck, swiss-cheese-defense-in-depth, race-to-the-top, joint-democratic-oversight, coordinated-vulnerability-disclosure, uk-aisi, existing-law-first]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-16
-updated: 2026-09-25
+updated: 2026-09-29
 ---
 
 # 상주 외부 평가자
@@ -77,3 +77,16 @@ CBS 진행자가 [[jensen-huang|Jensen Huang]]에게 *"왜 AI판 FDA나 FAA를 �
 > ⚠️ **Contradiction:** 이 페이지는 *"누군가 AI 모델을 만들 때마다"* 제3자가 **훈련 과정을 관찰**하는 **사전** 장치이고, 평가자의 처리량이 **기술의 제한 속도**가 된다. Huang은 **사고 후 기존 법 적용**이 먼저이고, 새 기구는 *"무엇이 빠졌는지"* 확인된 뒤다. 그리고 *"행간을 읽으면 그들은 더 많은 법이 아니라 기존 법에서 면제되기를 원한다"*(06:33~06:48) — **이 페이지의 제안 자체를 책임 회피로 읽는 독법**이다. ⚠️ Huang은 어떤 제안이 면제를 뜻하는지 구체적으로 들지 않고, 이 페이지의 평가자 안을 **직접 거론하지도 않는다.** → [[existing-law-first]]
 
 이 위키에서 이 안에 대한 반대는 이제 둘이다 — [[cross-lab-peer-review|Musk]](*중립 기관 대신 경쟁사*)와 **Huang**(*새 기구 대신 기존 법*). 둘 다 **새 규제기관을 원하지 않는다**는 점에서 같다.
+
+## 같은 단어, 같은 비유, 다른 독립성 — Nadella (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+[[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]])가 **같은 용어와 같은 식품 비유**를 쓴다 — 그리고 **이미 하고 있다**고 말한다.
+
+> OpenAI and we have been doing quite frankly for all these years is we have a joint safety board where we really do a lot of the testing internally on both sides. Essentially, we have had, you can call it **embedded evaluators**, OpenAI and Microsoft. (15:48~16:05)
+> it's not about trying to come up with regulation after something bad happens, but to be able to really **anticipate the risks** (16:34~16:42) (…) we have after all things like **food safety laws** for a reason (16:54~16:58)
+> these embedded evaluators not just being something that Sam and I sit around and decide about (…) if you're going to have a broad industry wide embedded evaluators we should actually have **a very diverse group of people** who are doing it. (17:12~17:30)
+
+- **합치** — Amodei와 **사전** 장치라는 점, **식품** 비유, **업계 전체로 넓혀야** 한다는 점이 같다. 새 규제가 필요하냐는 물음에 *"I think so. I think in time we will need some new way"*(17:07~17:09).
+- ⚠️ **독립성이 다르다.** Nadella가 *"있어 왔다"* 고 하는 평가자는 **제3자가 아니라 OpenAI와 MS가 서로의 안에서** 하는 테스트다 — 이해관계가 얽힌 두 파트너. 이 페이지의 정의(**소속은 회사 밖**)에 비추면 **1단계 이전**이다. Nadella 자신이 업계 단위라면 *"Sam and I"* 가 정하는 것이 아니어야 한다고 짚는 것이 그 한계의 인정이다.
+- ⚠️ **Contradiction (Huang 편과):** 같은 주(추정)에 [[jensen-huang|Huang]]은 *"새 법 전에 현행 법"*, Nadella는 *"사고 후가 아니라 사전"* + *"in time … new"*. 단 Nadella도 **엔지니어링 먼저, 그다음 규제**(16:42~16:52)라는 순서를 둔다.
+- ⚠️ ko가 *embedded evaluators* 를 **"통합 평가자"** 로(`en` *"integrated evaluators"*), *"Sam and I … not just"* 를 **"샘과 나만이 … 결정했습니다"** 로 뒤집는다(17:13~17:18). ko만 읽으면 **두 CEO가 이미 정했다**는 뜻이 된다.

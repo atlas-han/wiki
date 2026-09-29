@@ -6,9 +6,9 @@ tags: [ai-safety, geopolitics, china, bioweapons, verification, negotiation, spe
 aliases: [군축 협상 렌즈, 검증이 핵심, 생물무기협약 확장]
 related: [slowdown-within-lead-margin, embedded-external-evaluators, joint-democratic-oversight, regulatory-capture, coordinated-vulnerability-disclosure]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-nadella-copilot-autopilot]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-29
 ---
 
 # 군비 제한 렌즈
@@ -56,3 +56,23 @@ updated: 2026-09-16
 - [[tech-bridge-dario-amodei-cbs-interview]] — first-seen
 - [[dario-amodei]] · [[anthropic]]
 - 관련: [[slowdown-within-lead-margin]] · [[embedded-external-evaluators]] · [[joint-democratic-oversight]] · [[balance-of-power-safety]]
+
+## 세 번째 CEO의 답 — 사고 통보 체계와 insider risk (2026-09-29 · [[tech-bridge-nadella-copilot-autopilot]])
+
+같은 트럼프–시진핑 회담(⚠️ 같은 회담인지 판정하지 않음 — Nadella는 *"this week"*, *"the dinner on Thursday evening"* 에 간다고 한다, 13:16~13:24)에 [[satya-nadella|Satya Nadella]]가 바란 것은 **가장 작은 층**이다.
+
+> I think what Secretary [Blinken/Bessent] said recently, I think it's a good start, right? Which is in some sense the two superpowers (…) having some set of norms. (…) is some **notifications**. (13:31~13:45) — 진행자 *"The hotline?"* → *"if there's a cyber incident or something"* (13:46~13:51)
+
+근거가 새롭다 — **에이전트 자체가 내부자가 된다**:
+
+> for the first time, I would say, with these powerful AI agents, you kind of have an **insider risk** (…) historical cyber risk was all about the bad actor using cyber capability to attack. And the question now is, in fact, **the attack can just come from the agent itself.** (13:53~14:13)
+
+그리고 안전을 세 층으로 나눠 통보의 자리를 정한다(14:27~14:53): ① AI를 쓰는 악의적 행위자 ② *"an environment that needs to be contained that is not contained"* — **여기가 통보** ③ 정렬(*"an experimental science"*). 미·중이 합의할 한 가지로는 **양측이 같은 것을 원한다**(시민의 가치 · 확산 · 안전)는 전제에서 *"the more there are norms that they set and the US in particular can lead"*(17:37~18:03).
+
+| CEO | 회담에 바란 것 | 층 |
+|---|---|---|
+| [[dario-amodei\|Amodei]] | 생물무기협약 확장(작은 것) · AI 속도 제한(큰 것) — **검증이 핵심** | 무기 |
+| [[jensen-huang\|Huang]] ([[tech-bridge-jensen-huang-cbs-interview]]) | **"제품 기대치"** 글로벌 표준 | 소비자 제품 |
+| **Nadella** | **격리 실패 시 사고 통보** — 에이전트 insider risk | 사이버 사고 대응 |
+
+⚠️ **통보는 검증이 아니다.** 이 페이지의 핵심(*"합의보다 합의의 검증 가능성이 먼저"*)에 비추면, 통보 체계는 **상대가 스스로 알려 주기를 기대하는** 장치다 — 무엇을, 언제, 어떤 기준으로 통보하는지 소스에 없다. ⚠️ **장관 이름**은 en-orig *"Blinken"*, ko·en *"Bessent"* — 판독하지 않는다. ⚠️ ko가 insider risk 대비를 **"역사적으로 모든 것은 에이전트에 달려 있었다"**(14:03)로, *"both sides will care about the same set of things"* 를 **"양쪽 모두의 생각이 다르다"**(17:39)로 뒤집는다 — ko만 읽으면 권고의 전제가 반대가 된다.

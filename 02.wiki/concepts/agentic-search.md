@@ -6,9 +6,9 @@ tags: [retrieval, search, agent-loop, harness, bm25]
 aliases: [agentic search, agentic retrieval, 에이전트 검색, 에이전트 기반 검색]
 related: [retrieval-augmented-generation, agent-collaboration-as-search, agent-knowledge-sourcing, context-engineering, bm25, llm-as-search-user, corpus-as-filesystem-workspace, ir-evaluation-obsolescence]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-21
-updated: 2026-09-22
+updated: 2026-09-29
 ---
 
 # 에이전트 검색 (Agentic Search)
@@ -72,6 +72,12 @@ updated: 2026-09-22
 | 실패의 소재 | 모델·하네스·엔진으로 **분리** | **엔진 품질** |
 
 **이 차이는 제품 모양의 차이로 보인다** — 한쪽은 에이전트가 반복해서 두드리는 **프리미티브**를, 한쪽은 한 번에 답을 주는 **완성된 결과**를 판다. ⚠️ **두 소스 어느 쪽도 이 구분을 말하지 않는다.**
+
+## 도구가 기본적이어도 된다 — RAG 프레임워크 쪽의 동의 (2026-09-29 추가)
+
+[[jerry-liu|Jerry Liu]]([[llamaindex|LlamaIndex]], [[tech-bridge-llamaindex-document-context-layer]])가 [[jo-bergum|Bergum]] 쪽에 선다 — *"the retrieval complexity has started to get baked into the agent layer"*(02:29~02:33), *"Even if the retrieval tools are basic, uh the agent can input the right queries to basically loop upon itself"*(02:48~02:54). 더 나아가 **인덱싱(파싱) 품질이 좀 떨어져도** *"a sufficiently good agent … can always dive deeper into the document"*(15:48~15:53)라고 본다 → [[tiered-document-parsing]]. 위 표의 *궤적* 이 **검색에서 파싱까지** 확장된 것.
+
+⚠️ 위 09-22 절의 대비([[will-bryk|Bryk]] — 엔진이 한 번에 답을 준다)와 나란히 두면, 에이전트를 **재조사자**로 두는 쪽(Bergum·Liu)과 **소비자**로 두는 쪽(Bryk)이 갈린다. Liu는 판매자이고 측정은 없다.
 
 ## References
 

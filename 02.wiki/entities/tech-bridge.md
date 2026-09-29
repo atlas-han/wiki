@@ -75,8 +75,10 @@ sources:
   - tech-bridge-sdd-full-course
   - tech-bridge-agents-vs-humans-optimizer-speedrun
   - tech-bridge-skill-engineering-dark-arts
+  - tech-bridge-nadella-copilot-autopilot
+  - tech-bridge-llamaindex-document-context-layer
 created: 2026-06-03
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 
 # Tech Bridge
@@ -770,3 +772,20 @@ updated: 2026-09-28
 - **⚠️ ko가 뜻을 뒤집었다** — *"you're out of luck"* → "이점을 누릴 수 있습니다", *"can't tune pixels through a chat box"* → "픽셀 조정 가능", *"keep you in the right lane"* → "곤경에 빠뜨리는", Anthropic이 주어인 *"they shipped a new version three weeks ago"* → "저는"(시점 단서가 사라짐). *500 issues* → "다섯", LLM → **"법학 석사"**(다시), *gate* → "문", *ablation* → "절제술", *Gemini* → "쌍둥이자리".
 - ⚠️ 설명란이 자막보다 세다 — 훅이 사후 점검 *"대신"* 쓰기를 막는다고 적었으나 자막에선 **약한 모델·일부 하네스용**이다. 자막을 따랐다.
 
+## 2026-09-28 업로드 — 사티아 나델라, Copilot과 Autopilot (2026-09-29 ingest)
+
+[[tech-bridge-nadella-copilot-autopilot|MS 사티아 나델라가 밝힌 AI 미래]](`MsgkesEBZFc`, 25:47, 공식 챕터 11개) — [[satya-nadella]] · [[microsoft]] · [[microsoft-copilot]] · [[agent-365]] ([[software-marginal-cost]] · [[inference-revenue-training-rnd]])
+
+- **위키 첫 Microsoft 1인칭 소스.** 새 Copilot = chat·co-work·code·Autopilot 조합, 신뢰가 최대 이슈라 Agent 365가 핵심. *"보조금이 끝나면 소프트웨어가 처음으로 한계비용을 갖는다"* — Zuckerberg의 토큰 무료 모델과 대립. 모델 선택은 *"auto가 제품"*(learned router).
+- **같은 트럼프–시진핑 회담 질문에 세 번째 CEO** — Amodei(무기) · Huang(제품 표준) · Nadella(사고 통보 체계, *에이전트 자체가 insider*). embedded evaluators·식품 안전 비유는 Amodei와 같지만 평가자가 OpenAI↔MS 상호라 독립성이 다르다.
+- 자막엔 *"Satya"* 뿐 — 성·직함은 제목·설명란. 진행자 *Deirdre*(성 Bosa는 설명란에만), 쇼 이름 *DB Live*, 장소는 *"our Copilot event today"*. 촬영 날짜 미확정(목요일 만찬 전날까지만). 답변 첫머리가 6곳에서 잘린 편집본.
+- **⚠️ ko가 뜻을 네 번 뒤집었다** — Astra *"fantastic traction"* → "OpenAI는 그렇지 않습니다", *"both sides will care about the same set of things"* → "양쪽 모두의 생각이 다르다", *"not just … Sam and I … decide"* → "샘과 나만이 … 결정했습니다". *marginal cost* → "가장자리 가의", *inference is revenue* → "레시피", Anthropic → "인류학". 장관 이름 *Blinken*(en-orig) vs *Bessent*(ko·en) — 판독 안 함. `en`은 ko와 같은 원천이라 독립 근거 아님.
+
+## 2026-09-28 업로드 — Jerry Liu, 에이전트를 위한 문서 컨텍스트 레이어 (2026-09-29 ingest)
+
+[[tech-bridge-llamaindex-document-context-layer|AI 에이전트를 위한 문서 컨텍스트 레이어 구축하는 법]](`S-bRN-avZ4Q`, 20:33, 공식 챕터 11개) — [[jerry-liu]] · [[llamaindex]] ([[document-context-layer]] · [[document-parsing-for-agents]] · [[tiered-document-parsing]])
+
+- **RAG를 대중화한 쪽이 RAG를 해체한다** — 2026년의 RAG는 *에이전트 하네스 + 컨텍스트 레이어*, 검색의 복잡도는 에이전트 루프로 넘어갔고 남은 병목은 문서 파싱.
+- PDF는 인쇄용이라 파싱이 어렵다 → 원샷 VLM의 환각·비용·grounding 문제로 **하이브리드** 권고. 저비용 인덱싱은 *"조금 틀려도 에이전트가 원문으로 돌아간다"* → 계층형 파싱. ⚠️ ParseBench 결과 수치는 자막에 없고 벤치 제작자 = 판매자. [[mixedbread|Mixedbread]]의 *비전으로 읽기* 와 충돌.
+- ✅ 행사 *AI Engineer World's Fair* 와 연도 *2026* 이 **발화로 확정**(00:08 · 00:24). 성·회사명은 제목·설명란(en-orig는 *"co-founder and CEO of"* 에서 회사명이 빠짐). 마지막 *미래* 챕터는 시간 초과로 건너뜀 — 내용 없음.
+- **⚠️ ko가 뜻을 뒤집었다** — *"extremely low cost"* → "비용도 엄청나게 높습니다", *"not terribly inaccurate"* → "몹시 부정확하기를", *"changed dramatically"* → "급격히 악화", *"two and a half years"* → "1년 반", *claims*(보험 청구) → "불만", *citations* → "진료 예약". 설명란 *"50개 이상"* vs 자막 *"probably like 50"* — 자막을 따랐다.

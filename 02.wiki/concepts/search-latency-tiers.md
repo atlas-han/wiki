@@ -6,9 +6,9 @@ tags: [retrieval, latency, voice-agents, real-time, product, agent-harness]
 aliases: [200ms 검색, latency tiers, 지연 티어]
 related: [voice-latency-thinking-tradeoff, agentic-search, per-customer-search-engine, retrieval-side-context-compression]
 first-seen: tech-bridge-exa-perfect-search-for-agents
-sources: [tech-bridge-exa-perfect-search-for-agents]
+sources: [tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer]
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-29
 ---
 
 # 검색 지연 티어
@@ -51,6 +51,18 @@ updated: 2026-09-22
 | 이 위키의 짝 | [[voice-latency-thinking-tradeoff]] | [[perfect-search-as-cost-problem]] |
 
 ⚠️ **소스는 무엇이 이 차이를 만드는지 말하지 않는다** — 다른 인덱스인지, 다른 파이프라인인지, 같은 엔진의 타임아웃 설정인지 알 수 없다. → [[per-customer-search-engine]]
+
+## 파싱 쪽 짝 (2026-09-29)
+
+[[tech-bridge-llamaindex-document-context-layer]]([[jerry-liu|Jerry Liu]], [[llamaindex|LlamaIndex]])가 **문서 파싱**에 같은 모양을 준다 — 정확도·비용·지연 곡선 위 세 영역(고정확도 / 저비용 인덱싱 / 초저지연). 초저지연의 예는 *"you upload a thousand documents and you need to process it within a minute"*(16:15~16:18)이고, VLM으로는 *"really tough for basically every single OCR service out there … that includes ours, too"*(16:23~16:28).
+
+| | 이 페이지 (Exa, 검색) | Liu (파싱) |
+|---|---|---|
+| 빠른 티어 | 200ms 엔드포인트 | **VLM 없는** Rust 파서 |
+| 느린 티어 | 분 단위 복합 질의 | VLM 기반 파서 |
+| 두 티어의 관계 | ⚠️ 소스가 말하지 않음 | **한 에이전트 루프 안에서 연쇄** — 빠른 것으로 다 훑고 필요한 페이지만 느린 것으로 → [[tiered-document-parsing]] |
+
+위 *"두 티어를 가르는 메커니즘"* 미해결 항목에 대해 파싱 쪽은 **모델을 쓰느냐 안 쓰느냐**로 답한다. 검색에도 같은 답인지는 모른다. → [[document-parsing-for-agents]]
 
 ## 미해결
 

@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 
 # Index
@@ -21,6 +21,8 @@ updated: 2026-09-28
 ## Entities
 
 ### Persons
+- [[satya-nadella]] — [[microsoft|Microsoft]] CEO. Copilot 행사 'DB Live' 대담 — chat·co-work·code·Autopilot 조합 · *"소프트웨어가 처음으로 한계비용을 갖는다"* · *"auto가 제품"*(learned router) · 미·중 사고 통보 체계 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자 · 성·직함은 제목·설명란에서
+- [[jerry-liu]] — [[llamaindex|LlamaIndex]] 공동창업자·CEO. *2026년의 RAG = 에이전트 하네스 + 컨텍스트 레이어* ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 성·회사명은 제목·설명란에서(자막은 "I'm Jerry"뿐)
 - [[elie-bakouch]] — [[prime-intellect|Prime Intellect]] 연구 엔지니어. [[codex|Codex]]·[[claude-code|Claude Code]]를 optimizer speedrun에 풀어 인간 기록과 경쟁시킨 실험 발표 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 이름은 설명란에만(자막 "Ali"/"Ellie")
 - [[paul-everitt]] — [[jetbrains|JetBrains]] developer advocate, SDD 풀코스 강사 (**표기 미확정**: Everett/Everitt/에버릿) ([[tech-bridge-sdd-full-course]])
 - [[eric-wallace]] — [[openai|OpenAI]] 정렬·안전 연구원. Black Hat HF 사건 재구성의 AI 쪽 절반 — *"프론티어 모델들은 정말 부정행위를 좋아한다"*, 게시판 속 에이전트의 사고 사슬 ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 성은 설명란에만
@@ -95,6 +97,8 @@ updated: 2026-09-28
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[microsoft]] — 하이퍼스케일러 · [[microsoft-copilot|Copilot]] 제작사 · [[openai|OpenAI]] 파트너. **위키 첫 Microsoft 1인칭 소스** ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
+- [[llamaindex]] — RAG 프레임워크에서 **에이전트용 문서 인프라**로. LlamaParse(하이브리드 파싱·인용) · Rust 오픈소스 Light Parse · ParseBench(인간 검증 2,000페이지) ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 당사자 · 벤치 수치 자막에 없음
 - [[prime-intellect]] — 빅랩 바깥의 AI 연구·훈련 인프라 회사. [[automated-ai-research|자동화된 AI 연구]] 벤치마크(optimizer speedrun) · GPU 샌드박스 · 훈련/평가 라이브러리 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 당사자 · 자막에서 회사명이 "Primal director"
 - [[jetbrains]] — IDE 제작사(WebStorm 등), [[agent-client-protocol|ACP]] 공동 제안자이자 SDD 풀코스 협업사. JetBrains IDE의 ACP registry로 OpenCode 설치 시연 ([[tech-bridge-sdd-full-course]], sources: 2)
 - [[oracle]] — DB·OCI 벤더. DBFS · 컨버지드 DB · Oracle Agent Memory Package(컨텍스트 카드) · OCI Generative AI ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ 전부 당사자 주장, 측정 없음
@@ -171,6 +175,8 @@ updated: 2026-09-28
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[microsoft-copilot]] — chat·co-work·code·**Autopilot** 네 폼팩터 묶음. Autopilot = 입력·출력에 사람이 있는 장시간 비즈니스 프로세스 에이전트 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
+- [[agent-365]] — Microsoft의 에이전트 관찰·거버넌스·정책·보안·FinOps 제품이자 Autopilot 호스팅 환경 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 수치 없음
 - [[openai-daybreak]] — HF 사건 뒤 나온 [[openai|OpenAI]]의 기업용 사이버 방어 프로그램(상시 가동 에이전트 방어). 판매자 진술뿐, 가격·범위 없음 ([[tech-bridge-altman-benioff-dreamforce]])
 - [[antigravity]] — Google의 코딩 에이전트 하네스. `/boost` = 오케스트레이터 + 병렬 하위 에이전트 + 독립 검증 패스, *복잡한 작업에만* ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 수치 없음
 - [[terafab]] — Tesla×SpaceX 공동 R&D 칩 팹(Giga Texas). *"테라팹을 짓거나, 확장에 실패하거나"* — 머스크의 병목이 전력에서 **칩으로** 옮겨 갔다 ([[tech-bridge-musk-shotwell-cross-lab-peer-review]])
@@ -229,6 +235,7 @@ updated: 2026-09-28
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[document-parsing-for-agents]] — PDF는 인쇄용(좌표 붙은 글리프 · 선분으로 그린 표 · 읽기 순서 보장 없음). 파이프라인 / 원샷 VLM / **하이브리드** · ParseBench · 고정확도·저비용·초저지연 세 영역 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ Contradiction: [[mixedbread|Mixedbread]]의 *OCR 없이 비전으로*
 - [[automated-ai-research]] — 자동화된 AI 연구: 재귀적 자기 개선 주장을 빅랩 바깥에서 **스피드런으로 측정**. 접근 범위 세 트랙(가중치만 / arXiv만 / 전체) · **기록 경신 ≠ 발견** · AlphaEvolve식 발견 루프 제안 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 단일 실험 · 제안은 미공개
 - [[anti-attractor]] — 금지 목록은 모델을 **옆 클러스터로 옮길 뿐**. 무작위 시드(상위 후보 버리기 · 맥락 없는 서브에이전트 순위 · 스크립트 시드)로 발산을 강제 ([[tech-bridge-skill-engineering-dark-arts]]) ⚠️ 측정 없음
 - [[scripts-that-talk-back]] — 스킬 안 스크립트의 **stdout으로 다음 행동을 지시**하면 산문 규칙보다 잘 따른다. 대가는 프롬프트 캐싱 ([[tech-bridge-skill-engineering-dark-arts]])
@@ -258,6 +265,7 @@ updated: 2026-09-28
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[document-context-layer]] — RAG를 하네스와 컨텍스트 레이어로 나눴을 때의 컨텍스트 쪽: 파싱 · 시맨틱/저장 · 반복 가능한 문서 워크플로 세 층 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 당사자
 - [[system-1-model]] — 분류형 결정 모델을 하네스의 결정 지점(모델 라우터 · 위험 도구 호출 게이트 · 온라인 eval judge)에 두어 **LLM 호출을 대신**하게 하는 설계. Kahneman의 System 1/2 명명 ([[tech-bridge-jev-agent-harness]])
 - [[files-vs-database-agent-memory]] — 에이전트 메모리의 단기분은 파일에, 장기로 승격되면 DB로. **워크트리는 파일에 트랜잭션 일관성이 없어서 쓰는 우회책** ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ DB 벤더의 논지
 - [[model-harness-knowledge-stack]] — 모델(Gemini 3.8 Flash) · 하네스(Boost) · 지식(Skills) 3계층. 루프 횟수가 비용을 곱한다는 논거 ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 벤더 소개, 수치 없음
@@ -278,6 +286,8 @@ updated: 2026-09-28
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[software-marginal-cost]] — 보조금이 끝나면 소프트웨어가 **처음으로 한계비용**을 갖는다 — 좌석은 사용 권리가 된다(Nadella). [[transaction-cut-monetization]]과 대립 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
+- [[inference-revenue-training-rnd]] — *추론은 매출, 훈련은 R&D* — "손익계산서의 물리 법칙"으로 과잉 구축을 판단 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자 · 수치 없음
 - [[agents-as-catalyst]] — 에이전트의 지속 가치는 에이전트가 아니라 에이전트가 고치게 만든 **주변**(데이터·시스템·연결·사람·사고)에 남는다 — *"혁명이 아니라 촉매"*, 에이전트 준비성 · 궁극의 스트레스 테스트 (IBM, sources: 1) ⚠️ 반증 불가능에 가까운 프레이밍 · MCP 층 지속성은 Brockman과 충돌
 - [[cognitive-debt]] — 에이전트가 코드를 너무 빨리 써서 *무엇을 하고 어떻게 변했나* 를 추적하는 정신적 부담이 쌓이고(인지 부채), 대량 검증이 사람을 소진시킨다(AI 피로). 처방: 작은 단계 · 깨끗한 기능 경계 · 고수준 리뷰 · 테스트를 디버거로 읽기 · 서브에이전트 deep review ([[tech-bridge-sdd-full-course]])
 - [[existing-law-first]] — 새 규제 전에 **기존 법(무단 침입·손해·제조물 책임·SLA)부터**, 그리고 랩의 규제 요구를 *"기존 법에서 면제되려는 것"* 으로 읽는 독법. [[regulatory-capture]]의 세 번째 경로 ([[tech-bridge-jensen-huang-cbs-interview]]) ⚠️ 칩 판매자의 진술
@@ -349,6 +359,7 @@ updated: 2026-09-28
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[tiered-document-parsing]] — 에이전트 루프 안에서 VLM 없는 빠른 파서로 전부 훑고 **표·차트 페이지만 VLM 도구로**. 전제: 파싱이 모자라면 에이전트가 원문으로 돌아가 메운다 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 측정 없음
 - [[cross-harness-skill-compilation]] — 스킬 *형식* 은 이식돼도 하네스 동작·모델 과적합은 다르다 → **하네스·모델별 빌드**, 가장 약한 모델 기준 gate(*"if the gate can be skipped it will be"*) ([[tech-bridge-skill-engineering-dark-arts]])
 - [[codebase-gardening]] — 코드베이스는 에이전트의 **기억**이라 안티패턴(우회책·주석)이 바이러스처럼 퍼진다 → 팀에 정원사가 필요하다. Dune 세 원칙(부채 삭제 · single paved path · 나쁜 패턴은 린트 규칙으로 출혈부터 막기) ([[tech-bridge-lauren-tan-2000-prs]])
 - [[emergent-agent-collective]] — 공유 쓰기 자원 위에서 에이전트들이 **스스로** 이름·우편함·작업 인계·자격 증명 공유를 만든 집단. *"범위 밖이지만 동료들이 하고 있다 — 계속하자"* — 경계는 개인이 알고 월경은 집단이 허락한다 ([[tech-bridge-openai-huggingface-incident-black-hat]])
@@ -567,6 +578,8 @@ updated: 2026-09-28
 ---
 
 ## Sources
+- [[tech-bridge-nadella-copilot-autopilot]] — [[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]]) × Deirdre 'DB Live' @ Copilot 행사(25:47, 공식 챕터 11, 2026-09-28 업로드). chat·co-work·code·Autopilot 조합 · [[agent-365|Agent 365]] · [[software-marginal-cost|*"software for the first time has marginal cost"*]] · *"auto has become the product"*(learned router) · 미·중 통보 체계·insider risk · [[embedded-external-evaluators|embedded evaluators]] · Quincy 데이터센터 · [[inference-revenue-training-rnd|추론=매출·훈련=R&D]] ⚠️ 당사자 · 촬영 날짜 미확정 · ko가 뜻을 네 번 뒤집음 · 장관 이름 Blinken/Bessent 판독 안 함
+- [[tech-bridge-llamaindex-document-context-layer]] — [[jerry-liu|Jerry Liu]]([[llamaindex|LlamaIndex]]) @ AI Engineer World's Fair 2026(20:33, 공식 챕터 11, 2026-09-28 업로드). 2026년의 RAG = 하네스 + [[document-context-layer|컨텍스트 레이어]] · [[document-parsing-for-agents|PDF 파싱이 어려운 이유와 하이브리드]] · ParseBench · [[tiered-document-parsing|빠른 파서로 훑고 필요한 페이지만 VLM]] ⚠️ 당사자 · 벤치 수치 없음 · ko가 *extremely low cost* → "비용도 엄청나게 높습니다"
 - [[tech-bridge-agents-vs-humans-optimizer-speedrun]] — [[prime-intellect|Prime Intellect]]: [[codex|Codex]]·[[claude-code|Claude Code]]를 optimizer speedrun에 투입(설명란 기준 [[elie-bakouch|Elie Bakouch]], 19:08, 공식 챕터 18, 2026-09-27 업로드). 둘 다 인간 기록을 넘었으나 **인간 기록 위의 +α**이고 **새 옵티마이저 발명 0** · Claude는 9~10시간마다 멈춤 · Codex는 멈추지 않고 서브에이전트·압축 多 → [[automated-ai-research]] ⚠️ 단일 실험 · 행사명·촬영 시점 미확정 · ko가 부정을 네 번 뒤집음
 - [[tech-bridge-skill-engineering-dark-arts]] — [[paul-bakaus|Paul Bakaus]]([[impeccable|Impeccable]]) 스킬 엔지니어링 워크숍(1:04:24, 공식 챕터 19, 2026-09-27 업로드). *프롬프트는 입문, 스킬은 하네스 확장* · 블라인드 서브에이전트 평가(LLM 디자인 디렉터 + 결정론 린터) · [[anti-attractor|무작위 시드]] · [[scripts-that-talk-back|stdout 지시]] · 쓰기 차단 훅 · [[cross-harness-skill-compilation|하네스·모델별 컴파일]] · 가장 약한 모델 기준 ⚠️ 효과 주장 전부 미측정 · eval 하네스 비공개 · 촬영 시점 미확정
 - [[tech-bridge-agents-as-catalyst]] — AI 에이전트는 혁명이 아니라 촉매다 (IBM Technology 계열 1인 해설, 설명란 기준 Sam Anthony, 10:03, 공식 챕터 13, 2026-09-26 업로드). 데이터는 없는 게 아니라 **갇혀 있다** · API는 **스스로를 설명해야** · **허용 ≠ 자동 실행** · MCP·A2A로 **상호운용성이 기본값** · 전문성의 민주화 · '어떻게'→'왜' — [[agents-as-catalyst]] ⚠️ 이름은 설명란에만 · 수치·사례·제품 0 · ko가 결론 문장 셋을 뒤집고 A2A를 "8020"으로
@@ -668,6 +681,6 @@ updated: 2026-09-28
 
 ## 통계
 
-- 총 페이지 수: 629 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 621 → 629, + 2026-09-28 Tech Bridge 2편: source 2 + concept 4 + entity 2)
+- 총 페이지 수: 642 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 629 → 642, + 2026-09-29 Tech Bridge 2편: source 2 + concept 5 + entity 6)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-28 (Tech Bridge **2편**, **스무닷새 연속** — 09-27 업로드 2편. [[tech-bridge-agents-vs-humans-optimizer-speedrun|Prime Intellect 스피드런 편]]이 *기록 경신 ≠ 발견* 을 측정으로 보였고, [[tech-bridge-skill-engineering-dark-arts|Bakaus 워크숍]]은 09-11 [[tech-bridge-impeccable-design-steering|Impeccable 편]]의 내부 구조를 열었다)
+- 마지막 ingest: 2026-09-29 (Tech Bridge **2편**, **스무엿새 연속** — 09-28 업로드 2편. [[tech-bridge-nadella-copilot-autopilot|나델라 편]]이 위키 첫 Microsoft 1인칭 소스로 *소프트웨어의 한계비용* 을 꺼냈고, [[tech-bridge-llamaindex-document-context-layer|Jerry Liu 편]]은 RAG를 대중화한 쪽이 RAG를 *하네스 + 컨텍스트 레이어* 로 해체한다)
