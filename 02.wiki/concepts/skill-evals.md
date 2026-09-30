@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
-related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier]
+related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent]
 created: 2026-09-13
-updated: 2026-09-28
+updated: 2026-09-30
 ---
 
 # 스킬 eval
@@ -94,3 +94,14 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 **judge의 편향** — 취향 평가는 잘 안 된다고 본인이 말한다(*"I don't think they work particularly well"* 56:14~56:16). 첫 뷰포트 judge에서 Gemini는 **더 채울수록 높게** 매긴다(57:18~57:33) → **모델 응답을 뒤집는 judge**(57:41~57:49). 결과는 *"marginally better than random"*, 1차 통과 후 **사람이 주석**(58:02~58:12). → [[taste-vs-judgment]]
 
 **스킬 eval의 공통 도구가 없다** — 청중이 짚자 화자는 자기 도구를 공개할 수도 있다고만 답했다(1:00:24~1:00:37). ⚠️ eval 하네스는 **비공개**(53:17~53:20)라 위 절차는 전부 자기 진술이다.
+
+## 조직 규모의 eval — 886개 YAML 태스크와 제품팀 검토 (2026-09-30 · [[tech-bridge-wandb-aria-self-improving-agent]])
+
+[[weights-and-biases|Weights & Biases]]의 [[wandb-aria|ARIA]] 팀([[zubin-aysola]]). 화자는 *"I mostly prompt engineer these days"*, RL보다 *"building skills for the software agent"*(05:09~05:19)에 시간을 쓰고, 그 스킬·프롬프트를 이렇게 잰다:
+
+- 태스크 = **시작 조건 + 종료 조건의 YAML**(10:33~10:42), 사용자 흐름을 단순 지시 또는 **페르소나 사용자 LLM**으로 시뮬레이션(10:47~11:25) — [[impeccable|Impeccable]]의 *사용자 역 LLM*(위 09-28 절)과 같은 장치
+- ⭐ *"we have 886 tasks. We categorize them by levels. We expose them to our product team so that they can decide whether or not the tasks are good enough"*(11:28~11:34) — **태스크 세트 자체에 사람 검토 게이트**
+- 채점은 통과/실패 + **변형 간 상대 비교**(09:58~10:13) → [[yaml-agent-eval-pipeline]]
+- 새 태스크는 **프로덕션 트레이스**에서 — 실패와 성공 모두(12:05~12:11) → [[production-trace-eval-flywheel]]
+
+⚠️ **작성자 = 검증자, 네 번째 반복.** 데모에서 ARIA는 *"wrote itself a new task, ran it, and then scored it"*(13:00~13:02). 제품팀 검토가 886개에는 걸리지만 **ARIA가 새로 쓴 태스크에도 걸리는지**는 말하지 않는다.

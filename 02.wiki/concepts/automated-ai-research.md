@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [automated-ai-research, recursive-self-improvement, speedrun, optimizer-speedrun, benchmark, research-agent, discovery-loop, prime-intellect]
 aliases: [automated AI research, AI 연구 자동화, 자동화된 AI 연구, recursive self-improvement, 재귀적 자기 개선, optimizer speedrun, 옵티마이저 스피드런, research speedrun]
-related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect]
+related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect, production-trace-eval-flywheel]
 first-seen: tech-bridge-agents-vs-humans-optimizer-speedrun
-sources: [tech-bridge-agents-vs-humans-optimizer-speedrun]
+sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-09-30
 ---
 
 # 자동화된 AI 연구 (Automated AI Research)
@@ -104,3 +104,16 @@ Google의 **AlphaEvolve**와 후속 논문에서 영감받은 **멀티에이전�
 - [[tech-bridge-agents-vs-humans-optimizer-speedrun]] (first-seen)
 - [[prime-intellect]] · [[elie-bakouch]] · [[claude-code]] · [[codex]] · [[nanogpt]] · [[andrej-karpathy]]
 - 관련: [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[reward-hacking]] · [[self-harness]] · [[context-resets-and-compaction]]
+
+## 제품 층위의 "auto research" (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]])는 발표 전체를 *"auto research"* 의 청사진이라 부른다 — *"you've heard a lot about auto research. Um, we think there's a blueprint for 2026 and beyond on how you should think about auto research"*(00:48~00:56). 이 페이지의 첫 소스(Prime Intellect)가 **모델 훈련 연구**의 자동화였다면, 여기서 연구 대상은 **자기 제품의 에이전트**다 — 맺음말은 수직 SaaS와 *"agent labs"* 에게 *"creating these like auto research labs around their their own products"*(17:57~18:05)를 권한다. 루프 구조(worker → 트레이스 패턴 → judge → 사람 보정 → 프로덕션 A/B → 레시피 승격)는 위 발견 루프처럼 **판정자가 세 겹**이다. ⚠️ 발표에 결과·측정 없음. ko는 *auto research* 를 **"자동화된 연구"**(00:49 · 00:55)로 옮긴다. → [[loop-is-the-product]] · [[agent-recipes]] · [[taste-encoded-evals]]
+
+## "auto research"가 제품 안으로 — 자기 자신을 연구 대상으로 (2026-09-30 · [[tech-bridge-wandb-aria-self-improving-agent]])
+
+[[weights-and-biases|Weights & Biases]]의 [[wandb-aria|ARIA]] 데모에서 같은 말이 두 뜻으로 쓰인다.
+
+- **연구 과제로서** — ARIA가 *"training machine learning models on H200s running on Corey[=CoreWeave] infrastructure and doing auto research for Karpathy's nanohat[=nanochat]"*(14:59~15:05). 한 문장 언급이고 결과는 없다. → [[andrej-karpathy]]
+- **자기 개선으로서** — 데모 프로젝트 *"Arya Researches Arya"*(02:45~02:47)에서 ARIA에게 *"do auto research for itself"*(02:51)를 시킨다: 자기 eval 코드베이스로 training job을 띄우고, 프로덕션 트레이스를 검토해 태스크를 추가하고, *"try to write a new variant for itself"*(03:21~03:23).
+
+두 번째 뜻의 **산출물 크기**가 이 페이지의 관찰과 맞물린다 — 데모의 개선은 시스템 프롬프트나 스킬에 넣은 *"a tight little prompt"*(15:57~16:00) 하나였다. 이 페이지의 *"조합·+1 개선은 하지만 새 메커니즘은 없다"*(Bakouch)와 **같은 크기**의 개선이고, 제품 운영에서는 그것으로 충분하다는 입장이다. ⚠️ 위키의 정리. 측정 조건(태스크 세트·후보 대 prod 결과)은 화면에만 있다. → [[production-trace-eval-flywheel]] · [[self-harness]]

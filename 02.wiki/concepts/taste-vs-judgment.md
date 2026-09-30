@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-12
-updated: 2026-09-28
+updated: 2026-09-30
 ---
 
 # 취향과 판단
@@ -113,3 +113,22 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 - 그가 이 주제로 *"Ben from Contra"* 와 이야기했고 *"some of my colleagues might disagree"*(56:19~56:28) — 반대 입장의 이름은 없다. 이 페이지 네 입장 중 [[thais-castello-branco]]([[taste-labs]])의 **취향은 훈련·측정 가능** 쪽과 여전히 갈린다.
 
 ⚠️ *"marginally better than random"* 의 측정 방법·수치 없음. eval 하네스는 비공개.
+
+## 2026-09-30 — 또 하나의 입장: taste는 eval로 코드화해 내려받게 할 수 있다
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]], [[tech-bridge-introspection-loop-is-the-product]])는 이 페이지에서 **가장 강한 "학습·이식 가능" 쪽**에 선다. taste는 **제작자의 것**이지만 코드로 옮겨 **남에게 넘길 수 있다**:
+
+> *"How How do I make my taste as an artist or as a software developer um something that anyone can download in their brain and be able to be a one-to-one replica to me."* (11:14~11:26)
+
+- **eval = 제작자의 taste** — *"It's not just tests. It's It's really what is the taste of the creator that agents should be able to reproduce and self-improve around."*(11:01~11:08)
+- **레시피로 옮긴다** — *"if I want to use someone else's recipe, I should be able to also bring that taste"*(07:42~07:47) → [[agent-recipes]]
+- **가중치로 옮긴다** — RL은 *"turn these um tastemakers into environments and evals around them so then we can move them into the weights"*(11:28~11:39)
+- **최종 판정은 사용자** — 제작자 taste를 프로덕션 A/B로 *"my users believe uh I have great taste as well"*(15:44~15:46)일 때만 승격 → [[taste-encoded-evals]]
+
+| 입장 | 취향은 | 남는 사람의 몫 |
+|---|---|---|
+| **Gavrilescu** | **코드화·이식·가중치화 가능** — 트레이스에서 발견되고 judge로 굳는다 | judge에 **동의하는지 답하는 보정**(*"You don't need the human to actually build the evals. You need them to calibrate the evals."* 14:45~14:49) + 사용자의 A/B |
+
+> ⚠️ **Contradiction:** [[paul-bakaus|Paul Bakaus]](09-28 절)의 *"I don't think taste can be solved at a model level"* 과 정면으로 갈린다. Bakaus의 희소성 논거(모두가 같은 taste를 쓰면 사라진다)에 대해 Gavrilescu는 오히려 **남의 taste를 내려받는 것**을 제품 가치로 둔다 — *"to be able to use the taste of of different makers uh as recipes for your agent"*(08:56~09:00). 둘 다 측정이 없고, Gavrilescu는 레시피 제품을 판다.
+
+⚠️ **ko가 이 논쟁의 두 말을 합친다** — 이 소스의 *taste* 를 ko는 **"기준"**(11:51 · 15:44)·**"판단력"**(15:26 · 15:45 · 16:08)·**"판단"**(15:58)으로 옮기고, `en`도 *"criterion"*·*"judgment"* 다. ko만 읽으면 이 화자가 Thais·Hall처럼 **"판단"** 을 말하는 것처럼 보인다. 원문은 일관되게 **taste**다.

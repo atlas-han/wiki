@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
 created: 2026-06-03
-updated: 2026-09-28
+updated: 2026-09-30
 ---
 
 # Harness Engineering
@@ -147,3 +147,13 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 질문의 형태: *"what capabilities of that harness that you can exploit to make the best user experience for your use case"*(34:52~34:57). 쓰인 하네스 기능 — 서브에이전트(블라인드 평가), 스크립트 stdout([[scripts-that-talk-back]]), 편집 훅([[hook-enforced-workflow]]), 백그라운드 작업·인앱 브라우저(라이브 모드), 스킬 디렉터리 환경 변수(기억). 그리고 하네스마다 이 기능들이 다르므로 **하네스별 빌드**가 필요하다 → [[cross-harness-skill-compilation]].
 
 ⚠️ 화자는 한계도 말한다 — Impeccable은 *"definitely outgrowing the skill platform"*, 라이브 모드는 *"first party harness integration"* 이 낫겠다(58:44~59:13). 스킬로 하네스를 확장하는 데는 **천장**이 있다.
+
+## "RLHF → 하네스 → 루프" — 다음 층을 부르는 이름 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]의 한 줄 계보: *"We've started with everything goes down to RLHF for models … We then quickly moved to harnesses and how the model is a commodity and it's all about the harness. And now we're talking about loops and how you should build these loops and not touch code anymore."*(01:10~01:28). 이 페이지의 *context → harness* 진화에 **루프**를 한 단계 더 얹는다. 그의 구도에서 하네스는 루프가 남긴 것을 담는 **[[agent-recipes|레시피]] 안의 버전 관리 대상**(모델별 *"profiles of the harness"* 08:36~08:38)이 된다. ⚠️ *"not touch code anymore"* 는 화자의 요약, 근거 없음. → [[loop-is-the-product]]
+
+## 하네스 = 실험 단위 — YAML 변형을 병렬로 (2026-09-30 · [[tech-bridge-wandb-aria-self-improving-agent]])
+
+[[weights-and-biases|W&B]]는 자체 하네스([[wandb-aria|ARIA]])를 만든다 — 에이전트를 어떻게 포장하느냐(도구 호출 등)에 따라 벤치마크 결과가 크게 달라진다는 관찰에서(00:48~00:59). 하네스는 *"relatively agnostic software stack for how we treat compaction and how we prepare context and how we assemble UI payloads"*(07:10~07:15)이고, 설계 원칙은 **변형을 싸게**: *"YAML define different configurations of the agent to sort of get multiple parallel uh variants and then test them all"*(07:24~07:31), *"it's just better to run more experiments than fewer (…) that's the thesis behind the agent harness itself too"*(07:39~07:44). 연구·프로덕션 하네스는 byte-wise 동일(05:27~05:33) → [[research-production-agent-parity]] · [[yaml-agent-eval-pipeline]].
+
+> ⚠️ Contradiction: [[tools-and-context-over-harness]]([[ryan-lopopolo|Lopopolo]], 09-23)는 *하네스는 고정, 도구·컨텍스트에 투자*. W&B는 하네스를 직접 만들고 **하네스 구성 자체를 실험 변수**로 둔다. 다만 데모의 실제 개선은 시스템 프롬프트·스킬(=컨텍스트)에 들어갔다(15:57~16:00) — 층을 나누면 "하네스를 누가 소유하느냐"의 차이에 가깝다. ⚠️ 위키의 정리.

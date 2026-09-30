@@ -850,5 +850,22 @@
   "02.wiki/entities/jerry-liu.md": "LiUser",
   "02.wiki/entities/satya-nadella.md": "LiUser",
   "02.wiki/entities/llamaindex.md": "LiBuilding",
-  "02.wiki/entities/microsoft.md": "LiBuilding"
+  "02.wiki/entities/microsoft.md": "LiBuilding",
+  "01.raw/articles/2026-09-29_루프 자체가 제품입니다 — xAI 출신 창업자가 밝히는 차세대 AI 에이전트의 핵심.md": "LiNewspaper",
+  "01.raw/articles/2026-09-29_스스로 개선되는 AI 에이전트는 어떻게 만들었을까요 — Weights & Biases.md": "LiNewspaper",
+  "02.wiki/concepts/agent-recipes.md": "LiPuzzle",
+  "02.wiki/concepts/loop-is-the-product.md": "LiPuzzle",
+  "02.wiki/concepts/production-trace-eval-flywheel.md": "LiPuzzle",
+  "02.wiki/concepts/research-production-agent-parity.md": "LiPuzzle",
+  "02.wiki/concepts/taste-encoded-evals.md": "LiSettings",
+  "02.wiki/concepts/valued-work-per-watt.md": "LiBookText",
+  "02.wiki/concepts/yaml-agent-eval-pipeline.md": "LiPuzzle",
+  "02.wiki/entities/introspection-dev.md": "LiBuilding",
+  "02.wiki/entities/roland-gavrilescu.md": "LiUser",
+  "02.wiki/entities/wandb-aria.md": "LiBoxes",
+  "02.wiki/entities/wandb-weave.md": "LiWrench",
+  "02.wiki/entities/weights-and-biases.md": "LiBuilding",
+  "02.wiki/entities/zubin-aysola.md": "LiUser",
+  "02.wiki/sources/tech-bridge-introspection-loop-is-the-product.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-wandb-aria-self-improving-agent.md": "LiVideo"
 }

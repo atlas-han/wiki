@@ -6,9 +6,9 @@ tags: [token-economics, metrics, value-maxing, tokenmaxxing, goodhart, roi, adop
 aliases: [밸류맥싱, valuemaxxing, value maxing, 토큰맥싱, tokenmaxxing, token maxing, 토큰 최소화]
 related: [token-minimization-trap, trusted-throughput, overspending-underusing-loop, agent-roi-measurement, true-cost-to-perfect-answer, token-roles, model-mixing-economics, context-engineering, mousepower]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-30
 ---
 
 # 밸류맥싱 (Value Maxing)
@@ -78,3 +78,7 @@ updated: 2026-09-24
 
 - [[tech-bridge-tokenmaxxing-to-valuemaxxing]] · [[ibm]]
 - [[token-minimization-trap]] · [[trusted-throughput]] · [[overspending-underusing-loop]] · [[agent-roi-measurement]] · [[true-cost-to-perfect-answer]] · [[token-roles]] · [[model-mixing-economics]] · [[outcome-engineering]]
+
+## 분모를 명시한 짝 — valued work per watt (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]: *"how much value am I getting per watt? Um how do I measure the value is the first step, and how do I know I'm getting a good deal on that value is the second."*(09:38~09:49). **가치를 먼저**라는 순서는 이 페이지와 같고, 분모(와트, 맺음말에선 Claude Code 대비 **가격 차이** 17:31~17:38)를 명시한다는 점이 다르다. 가치의 측정은 제작자 taste + 사용자 A/B로 넘긴다. ⚠️ 와트를 재는 방법은 없다. → [[valued-work-per-watt]]

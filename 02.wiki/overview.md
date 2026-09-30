@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-09-29
+updated: 2026-09-30
 sources: []
 ---
 
@@ -183,6 +183,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-09-29*: [[tech-bridge]] **2편** ingest(09-28 업로드 2편). ① [[tech-bridge-nadella-copilot-autopilot|사티아 나델라 편]]은 위키 첫 [[microsoft|Microsoft]] 1인칭 소스다 — [[microsoft-copilot|Copilot]]을 chat·co-work·code·Autopilot의 조합으로, [[agent-365|Agent 365]]를 신뢰의 자리로 놓고, *"보조금이 끝나면 소프트웨어가 처음으로 한계비용을 갖는다"*([[software-marginal-cost]])로 [[transaction-cut-monetization|토큰 무료·거래 수수료]] 모델과 갈린다. 트럼프–시진핑 회담 질문에 답한 **세 번째 CEO**(Amodei 무기 · Huang 제품 표준 · Nadella 사고 통보 체계와 *에이전트 자체가 insider*)이고, [[embedded-external-evaluators]]를 Amodei와 같은 비유로 말하지만 평가자가 OpenAI↔MS 상호라 독립성이 다르다.
   ② [[tech-bridge-llamaindex-document-context-layer|Jerry Liu 편]]은 RAG 프레임워크를 만든 쪽이 RAG를 *에이전트 하네스 + [[document-context-layer|컨텍스트 레이어]]* 로 다시 나눈다 — 검색의 복잡도는 에이전트 루프로 넘어갔고, 남은 병목은 [[document-parsing-for-agents|PDF 파싱]]이며, 싸게 전부 훑고 표·차트만 VLM에 넘기는 [[tiered-document-parsing|계층형 파싱]]은 *"에이전트가 원문으로 돌아가 메운다"* 를 전제로 한다. ⚠️ [[mixedbread|Mixedbread]]의 *비전으로 읽기* 와 정면 충돌.
   자막 쪽으로는 ⚠️ ko가 두 편 모두 뜻을 뒤집었다 — *"fantastic traction"* → "그렇지 않습니다", *"extremely low cost"* → "비용도 엄청나게 높습니다".
+
+- *2026-09-30*: [[tech-bridge]] **2편** ingest(09-29 업로드 2편). 두 발표가 같은 질문 — **에이전트가 자기 개선 루프를 어떻게 도는가** — 에 서로 다른 층에서 답한다. ① [[tech-bridge-introspection-loop-is-the-product|Roland Gavrilescu 편]]([[introspection-dev|Introspection]])은 *설계 원칙*: [[loop-is-the-product|제품은 루프다]](신호와 검증기가 성공을 정한다), [[agent-recipes|시스템 증류가 해자다]](실패 패턴·반복 행동·사용자 불만을 모델 무관한 레시피로 버전 관리), [[valued-work-per-watt|와트당 가치]]가 점수다. 제작자의 taste는 [[taste-encoded-evals|에이전트가 만든 judge를 사람이 보정하고 사용자가 A/B로 승인하는 eval]]이 된다 — ⚠️ [[paul-bakaus|Bakaus]]의 *taste는 모델 수준에서 못 푼다* 와 충돌.
+  ② [[tech-bridge-wandb-aria-self-improving-agent|Zubin Aysola 편]]([[weights-and-biases|W&B]])은 *운영*: 벤치마크·eval·에이전트·구성이 공변하므로 [[wandb-weave|Weave]]로 양쪽 트레이스를 같은 포맷에 남기고 [[production-trace-eval-flywheel|프로덕션의 모든 실패와 성공을 오프라인 태스크로]] 옮기며, [[research-production-agent-parity|연구·프로덕션 에이전트를 코드 수준에서 같게]] 유지하고 [[yaml-agent-eval-pipeline|YAML 변형을 병렬로]] 채점한다. [[wandb-aria|ARIA]]가 그 루프를 스스로 도는 데모. 둘 다 [[self-harness]]를 제품에서 하는 사례이고, 둘 다 **측정 결과를 자막에 내놓지 않는다.**
+  자막 쪽으로는 ⚠️ ko가 두 편 모두 결론을 뒤집었다 — *"You don't need the human to build the evals"* → "평가는 사람이 하는 것이다", *"weren't calling weave.log properly"* → "올바르게 작동합니다". 같은 날 멤버 전용 2편(Warp · Factory)은 건너뛰었다.
 
 ---
 

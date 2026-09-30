@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 # Index
@@ -21,6 +21,8 @@ updated: 2026-09-29
 ## Entities
 
 ### Persons
+- [[roland-gavrilescu]] — [[introspection-dev|Introspection]] 공동창업자(전 xAI 에이전트 인프라). auto research 청사진 세 아이디어 — *루프가 제품* · *시스템 증류가 해자* · *와트당 가치 있는 작업* ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ 당사자 · 성은 설명란에서(자막 "Rowland")
+- [[zubin-aysola]] — [[weights-and-biases|W&B]]에서 [[wandb-aria|ARIA]]의 오프라인 eval·자기 개선 루프를 만드는 엔지니어 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 이름은 설명란 LinkedIn slug에서만(자막 "Zuban Isaola") · 확정 안 함
 - [[satya-nadella]] — [[microsoft|Microsoft]] CEO. Copilot 행사 'DB Live' 대담 — chat·co-work·code·Autopilot 조합 · *"소프트웨어가 처음으로 한계비용을 갖는다"* · *"auto가 제품"*(learned router) · 미·중 사고 통보 체계 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자 · 성·직함은 제목·설명란에서
 - [[jerry-liu]] — [[llamaindex|LlamaIndex]] 공동창업자·CEO. *2026년의 RAG = 에이전트 하네스 + 컨텍스트 레이어* ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 성·회사명은 제목·설명란에서(자막은 "I'm Jerry"뿐)
 - [[elie-bakouch]] — [[prime-intellect|Prime Intellect]] 연구 엔지니어. [[codex|Codex]]·[[claude-code|Claude Code]]를 optimizer speedrun에 풀어 인간 기록과 경쟁시킨 실험 발표 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 이름은 설명란에만(자막 "Ali"/"Ellie")
@@ -97,6 +99,8 @@ updated: 2026-09-29
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[introspection-dev]] — Introspection(introspection.dev): 에이전트 루프를 **agent recipes**로 증류해 버전 관리. pi.recipes(early release), Pi 하네스·Harbor 기반 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ 당사자
+- [[weights-and-biases]] — ML 실험 추적 회사, [[wandb-weave|Weave]]·[[wandb-aria|ARIA]] 제작사. 발표자가 *"coreweave Arya"* 라 부르지만 CoreWeave와의 관계는 소스에 없음 ([[tech-bridge-wandb-aria-self-improving-agent]])
 - [[microsoft]] — 하이퍼스케일러 · [[microsoft-copilot|Copilot]] 제작사 · [[openai|OpenAI]] 파트너. **위키 첫 Microsoft 1인칭 소스** ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
 - [[llamaindex]] — RAG 프레임워크에서 **에이전트용 문서 인프라**로. LlamaParse(하이브리드 파싱·인용) · Rust 오픈소스 Light Parse · ParseBench(인간 검증 2,000페이지) ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 당사자 · 벤치 수치 자막에 없음
 - [[prime-intellect]] — 빅랩 바깥의 AI 연구·훈련 인프라 회사. [[automated-ai-research|자동화된 AI 연구]] 벤치마크(optimizer speedrun) · GPU 샌드박스 · 훈련/평가 라이브러리 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 당사자 · 자막에서 회사명이 "Primal director"
@@ -175,6 +179,7 @@ updated: 2026-09-29
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[wandb-aria]] — W&B의 리서치 에이전트(*"general availability on Monday"*). 자기 오프라인 eval에서 hill climb — 데모에서 프로덕션 트레이스를 회귀 태스크로 바꾸고 `weave.log` 호출 문제에 프롬프트 패치 후보를 냄 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 결과 수치는 화면에만
 - [[microsoft-copilot]] — chat·co-work·code·**Autopilot** 네 폼팩터 묶음. Autopilot = 입력·출력에 사람이 있는 장시간 비즈니스 프로세스 에이전트 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
 - [[agent-365]] — Microsoft의 에이전트 관찰·거버넌스·정책·보안·FinOps 제품이자 Autopilot 호스팅 환경 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 수치 없음
 - [[openai-daybreak]] — HF 사건 뒤 나온 [[openai|OpenAI]]의 기업용 사이버 방어 프로그램(상시 가동 에이전트 방어). 판매자 진술뿐, 가격·범위 없음 ([[tech-bridge-altman-benioff-dreamforce]])
@@ -197,6 +202,7 @@ updated: 2026-09-29
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 
 ### Tools
+- [[wandb-weave]] — W&B의 에이전트 트레이싱·평가 도구. 프로덕션·오프라인 트레이스를 **같은 포맷**으로 남겨 플라이휠의 전제가 된다 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 당사자(*"the best observability platform"*)
 - [[artifactory]] — 사내 패키지 관리자·캐시. HF 사건에서 샌드박스가 신뢰한 **유일한 외부 의존성** → SSRF 프록시·에이전트 게시판·제로데이 두 개 ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 벤더명 소스에 없음
 - [[google-skills]] — Google Cloud·Firebase·Flutter·Maps 스킬 100개+, 하네스 무관. *"MCP 서버도 무거운 플러그인도 아니다"* ([[tech-bridge-lopopolo-agent-harness]]) ⚠️ 품질 근거는 GitHub 별 수뿐
 - [[browsecomp-plus]] — **830문항 심층 연구 벤치마크.** 도구는 `search` 하나, 골든 정답과 종단 일치로 채점. **검색 품질을 최종 정답률로 환산해 주는 첫 벤치마크** ([[tech-bridge-bm25-agentic-search]] · [[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ **코퍼스 크기가 세 갈래**(10만5천 / 20만 / 10만) · 논문·저자 없음
@@ -235,6 +241,7 @@ updated: 2026-09-29
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[taste-encoded-evals]] — 제작자의 taste를 eval로: 에이전트가 트레이스에서 패턴을 찾아 judge를 만들고, 사람은 **보정만**, 프로덕션 A/B(multi-armed bandit)로 사용자 동의를 확인한 뒤 레시피 승격 ([[tech-bridge-introspection-loop-is-the-product]]) > ⚠️ Contradiction: [[paul-bakaus|Bakaus]]의 *taste는 모델 수준에서 못 푼다*
 - [[document-parsing-for-agents]] — PDF는 인쇄용(좌표 붙은 글리프 · 선분으로 그린 표 · 읽기 순서 보장 없음). 파이프라인 / 원샷 VLM / **하이브리드** · ParseBench · 고정확도·저비용·초저지연 세 영역 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ Contradiction: [[mixedbread|Mixedbread]]의 *OCR 없이 비전으로*
 - [[automated-ai-research]] — 자동화된 AI 연구: 재귀적 자기 개선 주장을 빅랩 바깥에서 **스피드런으로 측정**. 접근 범위 세 트랙(가중치만 / arXiv만 / 전체) · **기록 경신 ≠ 발견** · AlphaEvolve식 발견 루프 제안 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 단일 실험 · 제안은 미공개
 - [[anti-attractor]] — 금지 목록은 모델을 **옆 클러스터로 옮길 뿐**. 무작위 시드(상위 후보 버리기 · 맥락 없는 서브에이전트 순위 · 스크립트 시드)로 발산을 강제 ([[tech-bridge-skill-engineering-dark-arts]]) ⚠️ 측정 없음
@@ -286,6 +293,7 @@ updated: 2026-09-29
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[valued-work-per-watt]] — 최적화할 점수: 먼저 가치를 재고, 그 가치를 싸게 얻는지. Cursor·Cognition이 제품 → eval → 모델 순으로 갔다는 예 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ "per watt"의 실제 측정 단위 불명
 - [[software-marginal-cost]] — 보조금이 끝나면 소프트웨어가 **처음으로 한계비용**을 갖는다 — 좌석은 사용 권리가 된다(Nadella). [[transaction-cut-monetization]]과 대립 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
 - [[inference-revenue-training-rnd]] — *추론은 매출, 훈련은 R&D* — "손익계산서의 물리 법칙"으로 과잉 구축을 판단 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자 · 수치 없음
 - [[agents-as-catalyst]] — 에이전트의 지속 가치는 에이전트가 아니라 에이전트가 고치게 만든 **주변**(데이터·시스템·연결·사람·사고)에 남는다 — *"혁명이 아니라 촉매"*, 에이전트 준비성 · 궁극의 스트레스 테스트 (IBM, sources: 1) ⚠️ 반증 불가능에 가까운 프레이밍 · MCP 층 지속성은 Brockman과 충돌
@@ -359,6 +367,11 @@ updated: 2026-09-29
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[loop-is-the-product]] — 제품은 루프다: 신호 품질이 성공률을, 검증기 품질이 그 성공이 진짜인지를 정하고, 두 번째 루프가 첫 루프의 산출을 되먹인다 ([[tech-bridge-introspection-loop-is-the-product]])
+- [[agent-recipes]] — *시스템 증류가 해자*: 실패 패턴 → judge/eval, 반복 행동 → 스킬/프롬프트, 사용자 불만 → 하네스 확장/메모리, 전부 모델 무관한 Git 레포 하나로 버전 관리 ([[tech-bridge-introspection-loop-is-the-product]])
+- [[production-trace-eval-flywheel]] — 프로덕션의 모든 실패 **와 성공**이 오프라인 eval 태스크가 되고, 이제 에이전트가 그 루프를 스스로 돈다. 벤치마크·eval·에이전트·구성은 공변한다 ([[tech-bridge-wandb-aria-self-improving-agent]])
+- [[research-production-agent-parity]] — 연구용과 프로덕션 에이전트를 *"bite-wise identical"* 로, 4시간 sync job으로 drift를 막아야 오프라인 점수가 의미를 갖는다 ([[tech-bridge-wandb-aria-self-improving-agent]])
+- [[yaml-agent-eval-pipeline]] — YAML 변형을 병렬로: config → hydrate → 환경 → rehydrate → 실행 → 채점(규범 pass/fail + 변형 간 상대) → teardown. YAML 태스크 886개, 제품팀 검토 ([[tech-bridge-wandb-aria-self-improving-agent]])
 - [[tiered-document-parsing]] — 에이전트 루프 안에서 VLM 없는 빠른 파서로 전부 훑고 **표·차트 페이지만 VLM 도구로**. 전제: 파싱이 모자라면 에이전트가 원문으로 돌아가 메운다 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 측정 없음
 - [[cross-harness-skill-compilation]] — 스킬 *형식* 은 이식돼도 하네스 동작·모델 과적합은 다르다 → **하네스·모델별 빌드**, 가장 약한 모델 기준 gate(*"if the gate can be skipped it will be"*) ([[tech-bridge-skill-engineering-dark-arts]])
 - [[codebase-gardening]] — 코드베이스는 에이전트의 **기억**이라 안티패턴(우회책·주석)이 바이러스처럼 퍼진다 → 팀에 정원사가 필요하다. Dune 세 원칙(부채 삭제 · single paved path · 나쁜 패턴은 린트 규칙으로 출혈부터 막기) ([[tech-bridge-lauren-tan-2000-prs]])
@@ -676,11 +689,13 @@ updated: 2026-09-29
 - [[tech-bridge-tokens-should-have-jobs]] — [[katelyn-lesse|Katelyn Lesse]]·[[angela-jiang|Angela Jiang]] ([[anthropic|Anthropic]] · [[ai-engineer|AI Engineer]] 발표): **09-01 대담의 재방문 — [[token-roles|토큰 역할]]에 처음 붙은 수치.** one-shot 15%/39k → [[fixed-budget-alpha|고정 60만]] 76 vs 89 → [[all-or-nothing-accuracy|100% 합격률]] 42% vs 최대 75% → [[true-cost-to-perfect-answer|진짜 비용]] 180만 · 효율 → 조언 / 신뢰성 → 채점·회고 · [[strategy-primitives|메타 하네스 층·회고·`outcomes` 기본 제공·동적 구성]] (12:45, 공식 챕터 8, 2026-09-17) ⚠️ 내부 벤치 · 채점·회고 수치 없음 · **Sonnet+Opus 비용 역전은 되풀이되지 않음** · ko *executor* → "유언집행자"
 - [[tech-bridge-brockman-agi-era-defender-window]] — [[greg-brockman|Greg Brockman]] ([[openai|OpenAI]] 공동창업자·사장) × [[ben-horowitz|Ben Horowitz]]·Erik Torenberg ([[a16z]] 팟캐스트): **위키의 OpenAI 1인칭 소스가 둘이 된 날**이자 **보안이 회사 전략의 축으로 서는 첫 소스.** *"우리는 AGI 시대에 있다"* 인데 **어느 모델인지는 상관없고**([[agi-definition]] 네 번째 입장) 선언의 내용은 **안전·보안·정렬을 개발·평가 시점까지 끌어올리는 공정**이다([[pacing-the-frontier]]). 대담의 절반이 보안 — **[[defenders-window|방어자의 창]]**(*"방어자는 전장을 통제한다"*, 격차는 **접근**에서 난다) · **[[defense-factory|방어 공장]]**(발견→분류→교정→배포→검증, **완료 기준이 "포화"**) · **프로덕션 엔지니어 25%를 보안으로** · **1만 에이전트로 나비에-스토크스 → Lean 형식화**([[agent-swarm]]·[[ai-formal-verification]]) · **10억 달러 프론티어 방어자 약정**([[crowdstrike]]) · 개인 펜테스트 **15분 13건 / 45분 수정**([[codex]]·[[cloudflare]]). **[[hugging-face]] 사건의 다섯 번째 서술**에서 ⭐ *HF가 로그 분석에 쓴 프론티어 모델이 **거부했다*** 가 새로 들어온다([[deny-and-continue]]). [[openai-astra|Astra]]는 **24시간 일관 실행**이되 **[[jagged-capability-frontier|들쭉날쭉]]**(*"[[ai-slop|슬롭]]이 아닌 건 처음이지만 훌륭한 글은 아니다"*), 제품 비판은 *"약속받았던 AI는 텍스트 상자가 아니었다"*([[capability-discovery-burden]], **이탈 15억 명**), 경영은 **집중**(Sora 취소 · ChatGPT Work 통합) ([[tech-bridge]], 2026-09-19, **49:21**, 공식 챕터 10, **촬영 연도 2026 자막 내부 확인**, ⚠️ 당사자 + **진행자가 VC인데 이해관계 미표시** · 반대 심문 거의 없음 · **탈중앙화 반론에 끝내 무응답** · **컴퓨터 사용의 보안 모델 전무** · 수치 전부 자기 보고 · ko가 *the business is ripping*→**"완전히 망해가고 있다"**·*the planet*→**"지구 전체 면적"**·*frontline defenders*→**"최전선 수비수"**)
 - [[tech-bridge-rlhf-assistance-vs-automation]] — [[diogo-almeida|Diogo Almeida]] (GPT-4·ChatGPT·InstructGPT 공동 저자 · [[typesafe-ai|TypeSafe]] · [[ai-engineer|AI Engineer]]): **위키가 [[rlhf|RLHF]]를 만든 쪽의 목소리로 RLHF의 한계를 듣는 첫 소스** — 그리고 **이 위키에 RLHF 페이지가 없었다는 사실이 이 소스로 드러났다.** 테제는 *미해결 수학 문제는 풀면서 고객 서비스는 못 하는 이유가 난이도가 아니라 목적함수* — **[[assistance-vs-automation|보조 vs 자동화]]**(*"왼쪽 과제의 목표는 루프 안의 사람을 만족시키는 것"*), **[[preference-reward-asymmetry|과대약속은 버그가 아니라 특징]]**(*확신 없음* 만 벌받는다 → 환각의 첫 구조적 설명), **[[smarter-software-vs-cheaper-software|SaaS는 2019년 이후 변한 게 없다]]**(*"우리가 자동화한 건 소프트웨어를 쓰는 과정뿐"*), **[[post-training-northstars|제3의 북극성=보정된 의사결정]]**. [[claude-code|Claude Code]]에 대한 **위키의 가장 이론적인 비판**(*"여전히 보조의 시대"* — ⚠️ 단 화자는 *"좋아하고 계속 쓴다"* 고도 말한다) ([[tech-bridge]], 2026-09-19, **17:36**, 공식 챕터 11, ⚠️ 당사자 · **eval·벤치마크 0건** · **제목의 'Jev'가 자막에 한 번도 없다** · [[sutton-bitter-lesson|Bitter Lesson]]을 **반대 방향으로 인용**(판독 안 함) · ko가 *our chef*→RLHF 직역·LLM을 **세 갈래**로·*assistance*→**"의료 보조"**)
+- [[tech-bridge-introspection-loop-is-the-product]] — [[roland-gavrilescu|Roland Gavrilescu]] ([[introspection-dev|Introspection]], 전 xAI): **auto research의 청사진 세 가지** — [[loop-is-the-product|루프가 제품]](신호·검증기·두 번째 루프, [[openclaw|OpenClaw]]로 딜러들을 서로 입찰시킨 첫 루프) · [[agent-recipes|시스템 증류가 해자]](모델 무관 Git 레포로 버전 관리하는 레시피, pi.recipes) · [[valued-work-per-watt|와트당 가치 있는 작업]]. 제작자의 taste를 [[taste-encoded-evals|eval로]] — 에이전트가 만들고 사람은 보정만, 사용자는 A/B로 동의 ([[tech-bridge]], 2026-09-29, **18:15**, 공식 챕터 18, ⚠️ 당사자 · **측정 0건** · 채용 사례는 **가상 예시** · 행사명은 설명란에만 · ko가 *"You don't need the human to build the evals"* → **"평가는 사람이 하는 것이다"**, moat → "모드")
+- [[tech-bridge-wandb-aria-self-improving-agent]] — [[zubin-aysola|Zubin Aysola]] ([[weights-and-biases|Weights & Biases]]): **eval 도구 회사가 자기 에이전트를 자기 도구로 개선하는 1인칭 소스.** *"benchmarks, evaluations, the agents, and how you configure them are all covariant"* → [[wandb-weave|Weave]]로 양쪽 트레이스를 같은 포맷에 남기고 [[production-trace-eval-flywheel|프로덕션 실패·성공을 오프라인 태스크로]], [[research-production-agent-parity|연구=프로덕션 코드]](4시간 sync), [[yaml-agent-eval-pipeline|YAML 변형 병렬 평가]](886 태스크). 라이브 데모에서 [[wandb-aria|ARIA]]가 트레이스를 회귀 태스크로 바꾸고 프롬프트 패치 후보를 낸다. *"8개월째 코드를 안 썼다"* 지만 개선에 대한 생각은 면제되지 않는다 ([[tech-bridge]], 2026-09-29, **16:33**, 공식 챕터 19, ⚠️ 당사자 · 수치는 886·7주·*"about 66%"*(분모 없음)뿐 · **후보가 이겼는지는 화면에만** · 보안·승격 게이트 논의 없음 · ko가 *"weren't calling weave.log properly"* → **"올바르게 작동합니다"**, *"wasn't entirely certain"* → **"절대적으로 확신"**)
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 642 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 629 → 642, + 2026-09-29 Tech Bridge 2편: source 2 + concept 5 + entity 6)
+- 총 페이지 수: 657 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 642 → 657, + 2026-09-30 Tech Bridge 2편: source 2 + concept 7 + entity 6)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-29 (Tech Bridge **2편**, **스무엿새 연속** — 09-28 업로드 2편. [[tech-bridge-nadella-copilot-autopilot|나델라 편]]이 위키 첫 Microsoft 1인칭 소스로 *소프트웨어의 한계비용* 을 꺼냈고, [[tech-bridge-llamaindex-document-context-layer|Jerry Liu 편]]은 RAG를 대중화한 쪽이 RAG를 *하네스 + 컨텍스트 레이어* 로 해체한다)
+- 마지막 ingest: 2026-09-30 (Tech Bridge **2편**, **스무이레 연속** — 09-29 업로드 2편. 같은 날 두 발표가 **에이전트가 자기 개선 루프를 도는 법**을 말한다 — [[tech-bridge-introspection-loop-is-the-product|Introspection 편]]은 루프를 제품으로, [[tech-bridge-wandb-aria-self-improving-agent|W&B 편]]은 프로덕션 트레이스를 eval 태스크로. 멤버 전용 2편은 §4a 대기)

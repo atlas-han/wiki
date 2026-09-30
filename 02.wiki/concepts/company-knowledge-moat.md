@@ -6,9 +6,9 @@ tags: [vertical-agents, internal-agents, context, build-vs-buy, differentiation]
 aliases: [기성 수직 에이전트 vs 자체 에이전트, 회사 지식 해자]
 related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering, agent-umwelt]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-19
-updated: 2026-09-24
+updated: 2026-09-30
 ---
 
 # 회사 고유 지식이라는 해자
@@ -62,3 +62,7 @@ updated: 2026-09-24
 [[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])가 이 페이지의 *"회사 고유의 맥락 지식"* 을 **시맨틱 레이어 = 에이전트의 움벨트**로 부른다 — 동료 사이엔 말하지 않아도 아는 것, *"아이에게는 모든 것을 명시해야 하는"* 것: **tribal knowledge · institutional knowledge · 데이터가 어떻게 모델링되고 쿼리가 어떻게 실행되는가 · 메타데이터**(32:24~33:13). → [[agent-umwelt]]
 
 **같은 방향의 세 번째 소스**다(Vercel의 이 페이지, PromptQL의 [[company-brain]]에 이어). 이 소스가 더하는 것은 **넣지 않은 것의 성질** — 렌즈 밖의 것은 에이전트에게 *틀린 것이 아니라 존재하지 않는다*(⚠️ 위키의 확장). ⚠️ 세 소스 모두 **판매자**다.
+
+## 2026-09-30 — 해자를 "증류 과정"에 두는 입장
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]], [[tech-bridge-introspection-loop-is-the-product]]): *"System distillation is the moat."*(04:11~04:14) — 루프에서 배운 것(judge·eval·스킬·하네스 프로필)을 **모델·제공자와 무관한 Git 저장소**로 두면 *"a moat that keeps getting better over time … lives in your company"*(05:49~05:59)이 된다. 이 페이지의 **회사 고유 맥락 지식**과 자산은 같은 쪽(회사 안)이고 형태가 다르다 — 지식 그 자체가 아니라 **그것을 루프로 증류해 온 이력**. 모순이라기보다 같은 해자의 다른 층이다(⚠️ 위키의 정리). 이 페이지의 *⚠️ 인센티브를 보라* 는 여기에도 걸린다 — 화자는 레시피 제품(pi.recipes)을 판다. ko는 *moat* 를 **"모드"** 로 옮겨 이 주장을 지운다(04:14 · 05:47). → [[agent-recipes]]

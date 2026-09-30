@@ -77,8 +77,10 @@ sources:
   - tech-bridge-skill-engineering-dark-arts
   - tech-bridge-nadella-copilot-autopilot
   - tech-bridge-llamaindex-document-context-layer
+  - tech-bridge-introspection-loop-is-the-product
+  - tech-bridge-wandb-aria-self-improving-agent
 created: 2026-06-03
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 # Tech Bridge
@@ -789,3 +791,24 @@ updated: 2026-09-29
 - PDF는 인쇄용이라 파싱이 어렵다 → 원샷 VLM의 환각·비용·grounding 문제로 **하이브리드** 권고. 저비용 인덱싱은 *"조금 틀려도 에이전트가 원문으로 돌아간다"* → 계층형 파싱. ⚠️ ParseBench 결과 수치는 자막에 없고 벤치 제작자 = 판매자. [[mixedbread|Mixedbread]]의 *비전으로 읽기* 와 충돌.
 - ✅ 행사 *AI Engineer World's Fair* 와 연도 *2026* 이 **발화로 확정**(00:08 · 00:24). 성·회사명은 제목·설명란(en-orig는 *"co-founder and CEO of"* 에서 회사명이 빠짐). 마지막 *미래* 챕터는 시간 초과로 건너뜀 — 내용 없음.
 - **⚠️ ko가 뜻을 뒤집었다** — *"extremely low cost"* → "비용도 엄청나게 높습니다", *"not terribly inaccurate"* → "몹시 부정확하기를", *"changed dramatically"* → "급격히 악화", *"two and a half years"* → "1년 반", *claims*(보험 청구) → "불만", *citations* → "진료 예약". 설명란 *"50개 이상"* vs 자막 *"probably like 50"* — 자막을 따랐다.
+
+## 2026-09-29 업로드 — Roland Gavrilescu, 루프 자체가 제품이다 (2026-09-30 ingest)
+
+[[tech-bridge-introspection-loop-is-the-product|루프 자체가 제품입니다]](`cv2_Lzvd1mk`, 18:15, 공식 챕터 18개) — [[roland-gavrilescu]] · [[introspection-dev]] ([[loop-is-the-product]] · [[agent-recipes]] · [[valued-work-per-watt]] · [[taste-encoded-evals]])
+
+- **auto research의 청사진 세 가지** — 루프가 제품, 시스템 증류가 해자, 와트당 가치 있는 작업. 첫 루프는 [[openclaw|OpenClaw]]로 자동차 딜러들을 서로 입찰시킨 개인 사례.
+- 성·행사명(AI Engineer World's Fair)은 **설명란에만** — 자막은 *"Rowland"*, 행사명 발화 없음. 연도 2026은 내부 단서로 추정, 월·일 미확정. **채용 에이전트 "실전 사례"는 가상 예시**다. 측정 0건.
+- **⚠️ ko가 결론을 뒤집었다** — *"You don't need the human to actually build the evals"* → "평가는 사람이 하는 것이다"(14:47), *"over and over again"* → "한 번만 반복"(15:52), 딜러들이 *outbid each other* → "협력하여 … 돕는"(02:13~02:16). moat → "모드", taste → "기준"/"판단력"(위키가 구분하는 두 말이 합쳐짐).
+
+## 2026-09-29 업로드 — Weights & Biases, 스스로 개선되는 에이전트 ARIA (2026-09-30 ingest)
+
+[[tech-bridge-wandb-aria-self-improving-agent|스스로 개선되는 AI 에이전트는 어떻게 만들었을까요?]](`kJj9sHyiRHI`, 16:33, 공식 챕터 19개) — [[zubin-aysola]] · [[weights-and-biases]] · [[wandb-weave]] · [[wandb-aria]] ([[production-trace-eval-flywheel]] · [[research-production-agent-parity]] · [[yaml-agent-eval-pipeline]])
+
+- **eval 도구 회사가 자기 에이전트를 자기 도구로 개선한다** — 벤치마크·eval·에이전트·구성이 공변하므로 프로덕션 트레이스를 오프라인 태스크로. 발표 절반이 라이브 데모.
+- 화자 이름은 **설명란 LinkedIn slug에서만**(자막 *"Zuban Isaola"*) — 확정 안 함. 행사명·날짜 발화 없음. 슬라이드는 화자 스스로 *"claude sort of slop out"* 이라 해서 근거로 쓰지 않았다.
+- ⚠️ 설명란이 자막보다 세다 — *"바이트 단위까지 100% 동일"*(자막엔 100% 없음), *"SDK 버그를 스스로 … 해결"*(자막은 SDK **호출** 문제를 프롬프트로 **완화**한 후보까지, 이겼는지는 화면에만).
+- **⚠️ ko가 데모의 결론을 뒤집었다** — *"weren't calling weave.log … properly"* → "올바르게 작동합니다"(13:26), *"wasn't entirely certain"* → "절대적으로 확신"(08:04), *offline* → "온라인"(02:12), 제품팀 검토 → "소비자들이 구매 여부를 결정". execution → **"처형"**, ko 문장에 **힌디어 단어**(05:33) — 이 채널 첫 사례.
+
+## 멤버 전용 대기 (2026-09-30 확인)
+
+`XyVUHSzKM2E`(09-28, *Zach Lloyd (Warp) — 소프트웨어 공장*, 20:09) · `cHsunDt0QUc`(09-28, *Factory Tereza — 소프트웨어 팩토리*, 21:55)는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest.

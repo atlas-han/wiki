@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
 related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product]
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-09-30
 ---
 
 # Verifiable Goals
@@ -139,3 +139,7 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## 규칙이 명확한 경쟁 과제 = 보상 신호 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
 
 [[prime-intellect|Prime Intellect]]는 optimizer speedrun을 에이전트의 **평가이자 훈련 환경**으로 쓴다 — *"the reward is positive if the model beat (…) the last record (…) and the reward is zero or negative if it didn't manage"*(04:34~04:45), *"there is those clear rule that you can verify or not"*(05:10~05:13). 기록 인정에 **통계적 임계값**을 두어 *"seed optimization"*·우연을 배제한다(07:20~07:27). 이 페이지의 *verifier가 강하면 독립적으로 루프를 돈다* 의 극단 사례 — 에이전트가 **며칠간** 혼자 반복했다. ⚠️ 그러나 같은 소스는 **검증 가능한 목표가 수렴은 부르되 발명은 부르지 않았다**고 보고한다(새 옵티마이저 0개). → [[automated-ai-research]]
+
+## 신호가 성공률을, 검증기가 그 진위를 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]는 루프의 두 끝을 나눈다 — *"the quality of the signal determines the uh success rate of the loop and the uh quality of the verifier um is able to calibrate uh if that success is actually correct or not"*(03:33~03:49). 이 페이지가 verifier 쪽만 다뤄 왔다면, 이 소스는 **입력 신호의 품질을 성공률의 원인으로 따로 둔다.** 첫 사례(OpenClaw의 옛 이름 Clawbot으로 만든 자동차 협상 루프)에도 *"a verifiable way to know when the price is right"*(02:18~02:21)가 들어 있다. 주관 영역(위 09-12 절)에 대한 이 소스의 답은 **제작자 taste를 judge로 코드화 + 사용자 A/B로 보정**이다. → [[loop-is-the-product]] · [[taste-encoded-evals]]

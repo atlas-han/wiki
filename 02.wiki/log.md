@@ -1682,3 +1682,34 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 두 편을 **병렬 서브에이전트**로 나눴고, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. [[openclaw]]를 두 에이전트가 좁은 Edit로 건드렸고 충돌 없음. 09-27 교훈대로 서브에이전트의 자막 종류 주장을 info.json에서 재확인했다(일치).
+
+
+## [2026-09-30] ingest | Tech Bridge — 루프 자체가 제품이다(Roland Gavrilescu, Introspection) · 스스로 개선되는 에이전트 ARIA(Weights & Biases) (09-29 업로드 2편)
+
+`--playlist-end 15` 가 **15편** 반환(전부 롱폼, 최단 493초). 신규 **09-29 업로드 2편**(`public`), 11편은 기존, ⚠️ **09-28 업로드 2편이 `subscriber_only`** — `XyVUHSzKM2E`(Zach Lloyd / Warp, 20:09) · `cHsunDt0QUc`(Factory Tereza, 21:55). 가이드 §4a에 추가하고 페이지를 만들지 않았다. 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, `subtitles` 비어 있음 — 오케스트레이터가 info.json에서 직접 확인), **429 없음**(쿠키 무효 경고는 계속, 무해).
+
+**신규 source 2 · concept 7 · entity 6**, index 실측 **642 → 657**.
+
+- `cv2_Lzvd1mk`(18:15, **Roland Gavrilescu / Introspection**, 공식 챕터 18개) → [[tech-bridge-introspection-loop-is-the-product]]
+- `kJj9sHyiRHI`(16:33, **Zubin Aysola(추정) / Weights & Biases**, 공식 챕터 19개) → [[tech-bridge-wandb-aria-self-improving-agent]]
+
+신규: [[roland-gavrilescu]] · [[introspection-dev]] · [[loop-is-the-product]] · [[agent-recipes]] · [[valued-work-per-watt]] · [[taste-encoded-evals]] · [[zubin-aysola]] · [[weights-and-biases]] · [[wandb-weave]] · [[wandb-aria]] · [[production-trace-eval-flywheel]] · [[research-production-agent-parity]] · [[yaml-agent-eval-pipeline]]
+
+보강(Introspection 편): [[openclaw]] · [[cursor]] · [[cognition]] · [[spacex]] · [[taste-vs-judgment]] · [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[self-harness]] · [[skill-self-improvement]] · [[harness-engineering]] · [[automated-ai-research]] · [[value-maxing]] · [[company-knowledge-moat]] · [[tech-bridge]]
+
+보강(W&B 편): [[self-harness]] · [[automated-ai-research]] · [[skill-evals]] · [[generator-evaluator-pattern]] · [[harness-engineering]] · [[tech-bridge]]
+
+### 이번 실행의 구도
+
+같은 날 **자기 개선 루프의 설계와 운영**이 들어왔다. Gavrilescu는 *무엇을 만들 것인가*(루프·레시피·와트당 가치)를, Aysola는 *그것을 매일 어떻게 돌리는가*(같은 포맷의 트레이스 · 코드 수준 동일성 · 886개 YAML 태스크 · 야간 CI)를 말한다. 둘 다 **에이전트가 eval을 만들고 사람은 보정·검토·가드레일로 물러난다**는 같은 그림이고, 서로를 언급하지 않는다. ⚠️ Introspection 편의 *taste를 eval로 인코딩* 은 [[paul-bakaus|Bakaus]]의 *taste는 모델 수준에서 못 푼다* 와 충돌한다([[taste-encoded-evals]]에 표시). 두 편 모두 **측정 결과를 자막에 내놓지 않는다** — W&B 데모에서 후보가 prod를 이겼는지는 화면에만 있다.
+
+### 자막 주의
+
+- ⚠️ ko가 두 편 모두 **결론을 뒤집었다** — Introspection *"You don't need the human to actually build the evals"* → "평가는 사람이 하는 것이다"(14:47), *"over and over again"* → "한 번만 반복"(15:52) / W&B *"weren't calling weave.log … properly"* → "올바르게 작동합니다"(13:26), *"wasn't entirely certain"* → "절대적으로 확신"(08:04), *offline* → "온라인"(02:12).
+- ⚠️ **ko 문장에 힌디어 단어가 섞였다**(W&B 05:33 *"텍스트가 बहुत 많습니다"*) — 이 채널 ko에서 처음 본 유형.
+- 설명란이 자막보다 센 사례 계속 — W&B *"바이트 단위까지 100% 동일"*(자막엔 100% 없음), *"SDK 버그 … 해결"*(자막은 호출 문제를 프롬프트로 완화한 후보까지). 자막을 따랐다.
+- 이름·행사: 두 편 모두 **행사명 발화 없음**. Gavrilescu는 성을, Aysola는 이름 전체를 설명란(링크 slug)에서 가져왔다. `en` 트랙은 두 편 모두 ko와 오류를 공유 — 독립 근거 아님.
+
+### 운영 메모
+
+두 편을 **병렬 서브에이전트**로 나눴고, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. ⚠️ **W&B 서브에이전트가 파일을 쓰기 전에 "완료" 보고를 냈다**(보고된 파일이 디스크에 없었다). 오케스트레이터가 raw·source를 직접 쓰기 시작했는데 서브에이전트가 여전히 실행 중이라 raw를 덮어썼다 — `ListAgents`로 실행 중임을 확인하고 소유권을 서브에이전트에 넘겼다(source는 서브에이전트 판으로 교체). 최종 보고 후 파일 존재·frontmatter 중복 키·wikilink·ko 주장 표본(13:26 · 02:12 · 02:13~02:16 · 14:47 · 15:52)을 검증했다. → **서브에이전트의 완료 보고를 받으면 `ListAgents` 상태와 `git status`로 파일 존재부터 확인할 것.**

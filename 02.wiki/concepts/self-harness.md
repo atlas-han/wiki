@@ -3,11 +3,11 @@ title: Self-Harness
 type: concept
 category: pattern
 tags: [agent, harness, self-improvement, harness-engineering, terminal-bench, llm-engineering]
-related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills]
+related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills, production-trace-eval-flywheel, research-production-agent-parity]
 first-seen: self-harness-paper
-sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context, tech-bridge-tokens-should-have-jobs]
+sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context, tech-bridge-tokens-should-have-jobs, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
 created: 2026-06-14
-updated: 2026-09-18
+updated: 2026-09-30
 ---
 
 # Self-Harness
@@ -163,3 +163,15 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 09-01에 *"dreaming"* 으로 이 페이지에 들어온 제품 전략이 [[ai-engineer|AI Engineer]] 발표에서 **루프의 자리**를 얻는다 — *실행 → 조언 → 채점 → 회고*, 채점을 통과한 것만 회고로 보낸다(*"만약 통과된다면 (…) 그 모든 자료를 회고에 보내서 다음 시도가 그 어느 때보다 더 나아지도록"*, 11:46~11:51). 이 페이지의 non-regressive 채택 규칙(회귀 게이트를 통과한 것만 병합)과 **같은 순서**다 — 다만 여기서 개선되는 것은 하니스가 아니라 **메모리**다.
 
 그리고 화자의 장기 목표가 이 페이지의 방향과 같다 — *"여러분이 업무를 수행하는 동안 이러한 전략을 **동적으로 구성**할 수 있도록 모델과 플랫폼을 더욱 개선"*(12:16~12:23). 09-05 Claude Code 팀의 *"Claude는 자기만의 하네스를 만드는 데 능숙"* 이 **플랫폼의 목표 선언**으로 되풀이된 셈이다. → [[strategy-primitives]] ⚠️ 선언뿐, 실체 없음.
+
+## 제품 층위 — 트레이스 패턴 → 레시피 diff → 사람 보정 + A/B (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]])의 **에이전트 레시피**는 이 페이지의 3단계 루프(트레이스 → 약점 → 수정안 → 검증)를 **모델·제공자와 무관한 Git 저장소**로 외부화한 것에 가깝다 — *"everything could be versioned and agents would have a way to continuously track how this change and why, and is meant to be owned by you, but managed by your agents"*(07:07~07:17). 레시피는 **모델별 하네스 프로필**도 담는다(08:34~08:38) — 이 페이지의 *"모델별로 달랐던 진화"* 와 같은 관찰을 저장소 구조로 받는다. 차이는 **채택 게이트**: 논문은 회귀 테스트, 이 소스는 **사람의 judge 보정 + 프로덕션 A/B**(*"That's when you promote"* 15:46~15:48). 구현은 *"the Pie Harness and on Harbor for evals"*(07:00) — Harbor는 위 실험의 실행 환경과 같은 이름이다(같은 것인지 추정). ⚠️ 측정 없음. → [[agent-recipes]]
+
+## 제품판 루프 — 프로덕션 트레이스에서 후보 변형까지 (2026-09-30 · [[tech-bridge-wandb-aria-self-improving-agent]])
+
+[[weights-and-biases|Weights & Biases]]의 에이전트 [[wandb-aria|ARIA]]는 *"the thing that we use to now build itself because it's sophisticated enough that it can actually do that offline hill climbing uh by itself"*(02:29~02:35). 라이브 데모에서 ARIA는 프로덕션 트레이스로 *"wrote itself a new task, ran it, and then scored it"*(13:00~13:02), 원인(*"we weren't calling weave.log, one of our SDK calls, properly in the sandbox"* 13:22~13:27)을 짚고, *"a tight little prompt that we injected into the system prompt or in one of the skills"*(15:57~16:00)를 넣은 **후보 변형**을 prod 변형과 비교했다.
+
+이 페이지의 3단계 루프와 칸이 겹친다 — **자기 실행 트레이스 → bounded edit(프롬프트 한 조각) → 회귀 태스크로 검증**. 다른 점: ① 입력이 **실사용자 프로덕션 트레이스**다 → [[production-trace-eval-flywheel]] ② 논문은 평가자 $\mathcal{E}$를 고정하지만 여기선 **ARIA가 태스크도 쓴다** — 평가자가 루프 안에서 자란다 ③ 채택은 사람 팀이 한다(*"deploy new versions of the agent uh, and work with my team to do that"* 04:27~04:31). 화자는 공변성을 문제로 든다 — *"benchmarks, evaluations, the agents, and how you configure them are all covariant"*(01:21~01:24) — $M$·$\mathcal{E}$ 고정은 실무에서 **가정**이라는 지적이다. → [[research-production-agent-parity]]
+
+⚠️ 후보가 prod를 이겼는지는 화면에만 있다(13:45~13:48). "스스로 해결"은 자막으로 확인되지 않는다.

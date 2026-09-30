@@ -3,9 +3,9 @@ title: Cognition
 type: entity
 category: org
 tags: [coding-agents, acquisition, rust, dioxus]
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-14
-updated: 2026-09-25
+updated: 2026-09-30
 ---
 
 # Cognition
@@ -42,3 +42,7 @@ updated: 2026-09-25
 [[jensen-huang|Jensen Huang]](NVIDIA CEO)이 CBS 인터뷰에서 사내 사용 도구를 나열하며 *"우리는 [Cognition]을 사용합니다"*(01:19~01:23)라고 한다 — [[openai-astra|Astra]]·[[claude-code|Claude Code]]·[[cursor|Cursor]] 다음. **이 위키에서 Cognition이 "쓰이는 것"으로 나온 첫 언급**이다. ⚠️ **어떤 제품인지는 말하지 않는다** — 회사 이름뿐이다. 이 페이지의 *"채용 공고 한 문단이 전부"* 는 **한 줄 늘었을 뿐**이다.
 
 > ⚠️ **ko 자막이 또 회사명을 보통명사로 바꿨다** — **"우리는 인지 기능을 사용합니다"**(01:19). 09-14의 **"인지 컴퓨팅"** 에 이어 **두 번째**. 이 회사 이름은 ko에서 **한 번도 안정적으로 옮겨진 적이 없다**(09-14 한 문장 건너 복구된 것 제외).
+
+## 세 번째 소스 — "제품 → eval → 모델" 경로의 예로 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]: *"Think of how um Cursor and Cognition went from building the best product to then uh building the best evals for the product, and finally building the best models based on the previous two artifacts."*(09:09~09:23). **이 위키에서 Cognition의 제품·eval·모델에 대한 첫 서술**이지만 외부 화자의 한 문장이고 근거가 없다 — 위 원칙대로 **자체 모델의 이름·존재를 이 문장으로 확정하지 않는다.** ⚠️ ko는 회사명을 또 **"인지 기능"** 으로 옮겼다(09:12) — 위 첫 소스의 *"인지 컴퓨팅"* 과 같은 유형이다. → [[valued-work-per-watt]]

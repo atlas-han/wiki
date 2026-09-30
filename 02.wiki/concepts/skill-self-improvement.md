@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-05
-updated: 2026-09-24
+updated: 2026-09-30
 ---
 
 # Skill Self-Improvement
@@ -109,3 +109,7 @@ updated: 2026-09-24
 | **스킬 승격 (Oracle)** | **성공한 긴 세션** 하나 | **기존 스킬을 새 버전으로 교체** | ⚠️ **말하지 않음** |
 
 ⭐ **버전 교체가 명시된 첫 사례** — 앞의 둘은 추가·수정이었고, 이것은 **옛 버전을 은퇴**시킨다. ⚠️ 그래서 이 페이지의 원칙(*한 번의 우연이 영구 규칙이 되면 오염*)이 가장 날카롭게 걸린다 — **세션 하나에서 증류한 스킬이 이전 버전을 덮어쓰는데, 회귀를 확인하는 [[skill-evals|eval]]이 없다.** ko는 *skill* 을 **"기술"**, *promote* 를 **"홍보"** 로 옮기고 **`skill.md` 라는 파일명을 지웠다**(36:49~36:56).
+
+## 네 번째 경로 — 실패·반복·불만을 한 저장소의 세 칸으로 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]]): *"Failure patterns should become judges and evals. Repeated behavior should become skills and prompts. User frustration, extensions and memories to your harness"*(06:09~06:17). 위 표의 경로들(실패 → 스킬 · 성공 질의 → 스킬 · 성공 세션 → 스킬 교체)이 **입력별로 다른 출력**을 갖는 한 표가 된다 — 실패는 스킬이 아니라 **judge·eval**로 간다는 점이 이 페이지(task-observer: 실패 → 스킬 개선)와 다르다. 승격 게이트는 **사람의 judge 보정 + 프로덕션 A/B**(14:45~15:48). ⚠️ 가상 예시·측정 없음. → [[agent-recipes]] · [[taste-encoded-evals]]

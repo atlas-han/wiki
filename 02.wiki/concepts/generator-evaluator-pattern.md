@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-09-30
 ---
 
 # Generator–Evaluator Pattern
@@ -276,3 +276,11 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 이 페이지의 09-12 절(평가자가 LLM이 아닐 때)과 비교하면 **LLM 판정과 비-LLM 판정을 병렬로 두고 서로 격리**하는 구성이다. 격리의 이유는 편향이 아니라 **한쪽 출력이 다른 쪽의 판단을 끌고 가는 것**이다. [[anti-attractor]]의 순위 서브에이전트도 같은 원리(생성 세션의 맥락을 모르는 평가자, 19:20~19:26).
 
 ⚠️ **Codex에서는 이 구성이 기본으로 안 된다** — 서브에이전트는 사용자가 명시적으로 요청해야 한다(12:56~13:02). 화자의 우회는 *"you are giving the user a degraded experience"* 라고 말하게 하는 벌칙 문구다(14:16~14:23) → [[cross-harness-skill-compilation]]. 라이브 데모는 서브에이전트 생성을 보여 주지 못했다(16:23~16:26). 효과 수치 없음.
+
+## judge를 에이전트가 만들고 사람은 보정만 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]])의 두 번째 루프: 트레이스의 **실패 패턴 → judge·eval**(*"Failure patterns should become judges and evals."* 06:09~06:11). 이 페이지의 기존 사례와 다른 점은 **평가자를 누가 쓰느냐**다 — *"the calibration bit and the eval generation bit is not that hard. It it should be doable by agents to build. You just need a human in the loop to say … Do you agree with this judgment?"*(14:20~14:35). 평가자 품질에 대한 화자의 한 줄: *"the uh quality of the verifier um is able to calibrate uh if that success is actually correct or not"*(03:39~03:49). 판정은 세 겹(에이전트 judge → 사람 보정 → 프로덕션 A/B의 사용자). ⚠️ 가상 예시, 측정 없음. → [[taste-encoded-evals]] · [[loop-is-the-product]]
+
+## 후보 vs 프로덕션 — 변형 비교로서의 평가 (2026-09-30 · [[tech-bridge-wandb-aria-self-improving-agent]])
+
+[[wandb-aria|ARIA]]([[weights-and-biases|W&B]])의 오프라인 eval은 생성자를 **하나의 후보 변형**으로, 평가자를 **같은 태스크 위의 프로덕션 변형과의 비교**로 둔다 — *"run the candidate and production agent on it"*(04:06~04:11). 채점은 두 겹: 규범적(*"did we pass a task or not"* 10:01~10:03)과 상대적(되묻는 변형 vs 안 묻는 변형, 10:03~10:13). 궤적 검토도 ARIA에게 맡긴다 — *"review the roll out that it generated for itself or review some other rollout and decide what went wrong or what went well"*(06:46~06:51). **생성자·평가자가 같은 에이전트**인 구성이며, 이 페이지가 모아 온 격리 장치(다른 모델 judge, 앵커링 차단)는 언급되지 않는다. → [[yaml-agent-eval-pipeline]]

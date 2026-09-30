@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-10
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 # OpenClaw
@@ -28,6 +28,7 @@ updated: 2026-09-29
 | [[tech-bridge-zuckerberg-muse-personal-agent]] (2026-09-13) | *OpenClaw* | [[mark-zuckerberg]]: *"**올해 초 OpenClaw 같은 게 나왔을 때** 많은 사람이 **Mac Studio**를 사기 시작했다"* — **로컬 실행형 개인 에이전트의 대명사**로, [[confidential-vm|기밀 VM]]의 대안으로 대조된다 |
 | [[tech-bridge-llamaindex-document-context-layer]] (2026-09-28) | *"open claw"* | [[jerry-liu]]([[llamaindex]]): *"the modern generalized agent"* 의 예로 *"Claude code, Claude code work[=Cowork], open claw, codex"*(02:24~02:28) — **범용 에이전트 하네스**의 대명사로 코딩 에이전트와 나란히 |
 | [[tech-bridge-nadella-copilot-autopilot]] (2026-09-28) | en-orig *"open clock"* · *"open club"* (ko "오픈 클럽"·"오픈 클라우드") | [[satya-nadella]]([[microsoft]]): *"open clock came out and I think inspired … all of us … to say wow there is a way … to think about these autopilots"*(12:33~12:40) — ⭐ **대기업 CEO가 자기 제품(Autopilot)의 영감으로 명시한 첫 사례.** Copilot tasks가 *"just around the same time as open clock came out"*(02:44~02:48). 진행자: 에이전트 붐이 *"earlier this year with open club"*(03:53~03:56). 표기는 세 번 다 ASR이라 **OpenClaw로 읽는 것은 위키의 추정** |
+| [[tech-bridge-introspection-loop-is-the-product]] (2026-09-29) | en-orig *"Clawbot"* · *"Open Claw"* · *"open cloud"* | [[roland-gavrilescu]]([[introspection-dev\|Introspection]]): ⭐ **옛 이름**을 말한다 — *"Clawbot? That was the original I original name of what is now now now known as Open Claw"*(01:35~01:42). *"this guy, AJ"* 가 그 위에 만든 **자동차 할인 협상 루프**를 *"the first real example of loop is the product"* 로 든다(01:45~02:36) → [[loop-is-the-product]] |
 
 ## 소스들이 합쳐 말하는 것 (위키의 종합, ⚠️ 추정)
 
@@ -46,3 +47,13 @@ updated: 2026-09-29
 
 - [[understand-anything]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-zuckerberg-muse-personal-agent]]
 - 관련: [[confidential-vm]] · [[muse]]
+
+## 옛 이름 "Clawbot"과 첫 루프 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]가 처음으로 **OpenClaw의 이전 이름**을 말한다 — *"Do you guys remember Clawbot? That was the original I original name of what is now now now known as Open Claw"*(01:35~01:42). 그리고 그 위의 사용 사례 하나를 구체적으로 든다:
+
+> *"this guy, AJ, built the first loop around Clawbot. What he did was to find a way to talk to dealers and talk to Reddit users to get bigger discounts on a car."* (01:45~01:57)
+
+단계는 Reddit에서 가격·재고 찾기 → 딜러와 대화 → 딜러끼리 입찰 경쟁 → *"a verifiable way to know when the price is right"* → 구매(02:05~02:25). *"probably this was when all the Mac minis were uh selling off the shelves"*(02:28~02:30) — 위 [[mark-zuckerberg|Zuckerberg]]의 *Mac Studio 구매 흐름*과 **같은 그림(로컬 하드웨어 구매 붐)** 이 다른 기종으로 한 번 더 나온다.
+
+> ⚠️ **"Clawbot" 철자는 en-orig ASR 그대로**다(`en`도 *"Clawbot"*, ko *"클로봇"*). 옛 이름의 공식 철자·개명 시점·AJ가 누구인지는 이 위키가 확인하지 않았다. **여전히 어느 소스도 OpenClaw의 제작자·기능을 설명하지 않는다** — 이번 소스도 사용 사례 하나다. → [[loop-is-the-product]]

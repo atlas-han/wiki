@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product]
 created: 2026-09-07
-updated: 2026-09-26
+updated: 2026-09-30
 ---
 
 # SpaceX
@@ -61,3 +61,7 @@ updated: 2026-09-26
 [[lauren-tan]]: *"저는 **SpaceX AI에서 GrokBot**을 만듭니다"*(00:03~00:07), *"6개월 전 Cursor에 합류했을 때, **우리가 SpaceX AI의 일부가 되기 전**"*(02:07~02:17). → **[[cursor|Cursor]]가 "SpaceX AI"의 일부가 되었다는 취지의 첫 발화**다. 위 09-23 절의 *"세 소스가 같은 방향"* 에 **네 번째**가 붙는다.
 
 > ⚠️ **"SpaceX AI"가 SpaceX의 조직 단위인지, 별도 법인인지, 무엇과 무엇의 결합인지 이 소스도 말하지 않는다.** 영상 제목은 *"Cursor&xAI"* 인데 **자막에 xAI는 없다.** 위 절의 원칙대로 **조직 구조를 추정하지 않는다.**
+
+## 자막에 처음 나온 "XAI" — 전 직원의 과거형 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
+
+[[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]]): *"My co-founder and I were in this mythical place called XAI working hard on agent infra"*(00:10~00:15), *"we left a few months ago"*(00:23). 위 절들이 *"자막에 xAI는 없다"* 고 기록해 온 것과 달리 **이 소스의 en-orig에는 "XAI"가 발화로 나온다**(ko도 *"XAI"*). ⚠️ 그러나 **"SpaceX AI"와의 관계는 이 소스도 말하지 않는다** — 떠난 시점의 조직 이름일 뿐이다. 위 원칙대로 조직 구조를 추정하지 않는다.
