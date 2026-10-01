@@ -79,8 +79,10 @@ sources:
   - tech-bridge-llamaindex-document-context-layer
   - tech-bridge-introspection-loop-is-the-product
   - tech-bridge-wandb-aria-self-improving-agent
+  - tech-bridge-ai-data-exposure-hidden-risk
+  - tech-bridge-anthropic-dreaming-memory
 created: 2026-06-03
-updated: 2026-09-30
+updated: 2026-10-01
 ---
 
 # Tech Bridge
@@ -809,6 +811,22 @@ updated: 2026-09-30
 - ⚠️ 설명란이 자막보다 세다 — *"바이트 단위까지 100% 동일"*(자막엔 100% 없음), *"SDK 버그를 스스로 … 해결"*(자막은 SDK **호출** 문제를 프롬프트로 **완화**한 후보까지, 이겼는지는 화면에만).
 - **⚠️ ko가 데모의 결론을 뒤집었다** — *"weren't calling weave.log … properly"* → "올바르게 작동합니다"(13:26), *"wasn't entirely certain"* → "절대적으로 확신"(08:04), *offline* → "온라인"(02:12), 제품팀 검토 → "소비자들이 구매 여부를 결정". execution → **"처형"**, ko 문장에 **힌디어 단어**(05:33) — 이 채널 첫 사례.
 
-## 멤버 전용 대기 (2026-09-30 확인)
+## 2026-09-30 업로드 — Jeff Crume, AI가 여러분의 데이터를 노출하고 있다 (2026-10-01 ingest)
 
-`XyVUHSzKM2E`(09-28, *Zach Lloyd (Warp) — 소프트웨어 공장*, 20:09) · `cHsunDt0QUc`(09-28, *Factory Tereza — 소프트웨어 팩토리*, 21:55)는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest.
+[[tech-bridge-ai-data-exposure-hidden-risk|AI가 여러분의 데이터를 노출하고 있습니다]](`lr5cxvYJDLg`, 11:15, 공식 챕터 없음) — [[jeff-crume]] · [[ibm]] ([[ai-data-exposure]] · [[lineage-driven-risk-visibility]])
+
+- **"어떤 AI 도구를 쓰나"가 아니라 "민감 데이터가 AI를 어떻게 흐르나"** — 섀도우 AI·공개 챗봇 입력·학습 데이터·RAG·도구·하위 에이전트 전 구간, workload(시스템 안)와 workforce(직원 사용) 둘 다. 형태가 바뀐 파생 데이터까지 lineage로 추적하라는 요구사항 목록.
+- IBM 계열 **여덟 번째**, 이름은 이번에도 **설명란에만**, 촬영 시점 미확정. 수치는 *"31%"* 하나뿐이고 출처 없음. 제품명 0개지만 결론은 *"그런 도구가 있다"*.
+- **⚠️ ko가 목표 문장을 뒤집었다** — *"enable AI adoption without creating security gaps"* → "도입을 허용하지 않음 / 취약점을 만듭니다", *"can't afford"* → "여유가 있다", *"if we can't monitor"* → "감시할 수 있습니다". "AI" → **"일체 포함"** 세 번, lineage → "혈통". *agentic platform* 은 **세 트랙 모두** 깨짐.
+
+## 2026-09-30 업로드 — Lamis Mukta (Anthropic), 자는 동안 스스로 학습하는 AI (2026-10-01 ingest)
+
+[[tech-bridge-anthropic-dreaming-memory|자는 동안 스스로 학습하는 AI]](`sINXtw4wmyM`, 31:27, 공식 챕터 없음) — [[lamis-mukta]] · [[anthropic]] · [[managed-agents]] ([[agent-dreaming]] · [[production-memory-guardrails]])
+
+- **컨텍스트 엔지니어링 1년 회고**(CLAUDE.md → memory tool → 스킬 → 파일 시스템 메모리) 끝에 **dreaming** — 세션 밖에서 트랜스크립트와 메모리 스토어를 배치로 훑어 변경을 제안하고 사람이 수락. 위키에서 이름뿐이던 dreaming이 **처음 구조째** 들어왔다.
+- 프로덕션 가드레일(버전·해시 비교 동시성·층별 권한·이식성) — 화자 스스로 *"DB 관행으로 돌아가는 중"*. 당사자 진술, **수치 0개**. 행사는 자막상 *AI DevCon*, Tessl은 설명란 링크뿐. 성 *Mukta* 는 설명란에만.
+- **⚠️ ko 오류** — 라디안/도 예시의 **정답·오답 반전**(20:17~20:21), *dreaming API* → "스트리밍 API"·Claude → "클라우드"(28:17~28:19, **`en`도 같은 오류**), 없던 "연구 결과에 따르면" 삽입(17:28), CLAUDE.md → "클로드 의학박사".
+
+## 멤버 전용 대기 (2026-10-01 확인)
+
+`XyVUHSzKM2E`(09-28, *Zach Lloyd (Warp) — 소프트웨어 공장*, 20:09) · `cHsunDt0QUc`(09-28, *Factory Tereza — 소프트웨어 팩토리*, 21:55) · **`8DRjkp_X8yY`(신규, *AI 시대에 쏟아지는 PR 병목, 어떻게 해결해야 할까요?*, 22:33)** 는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest.

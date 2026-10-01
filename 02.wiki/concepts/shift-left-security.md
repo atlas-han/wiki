@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [security, sdlc, devsecops, validation, ai-assisted-development]
 aliases: [shift left, 보안을 왼쪽으로, 시프트 레프트]
-related: [continuous-security-validation, generated-dependency-scrutiny, behavior-validated-trust, ai-native-sdlc, executable-standards, decision-quality, verification-bottleneck, agent-governance-layers, shift-left-interventions]
+related: [continuous-security-validation, generated-dependency-scrutiny, behavior-validated-trust, ai-native-sdlc, executable-standards, decision-quality, verification-bottleneck, agent-governance-layers, shift-left-interventions, ai-data-exposure]
 first-seen: tech-bridge-shift-left-security-ai-code
-sources: [tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai]
+sources: [tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-ai-data-exposure-hidden-risk]
 created: 2026-09-17
-updated: 2026-09-23
+updated: 2026-10-01
 ---
 
 # 시프트 레프트 보안
@@ -133,3 +133,7 @@ updated: 2026-09-23
 ## 같은 이름, 다른 대상 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
 
 [[ryan-lopopolo|Ryan Lopopolo]]가 **에이전트 교정**에 같은 이름을 쓴다 — 프롬프트에 텍스트를 붙이는 것이 *"가장 [오른쪽 끝]"*, 문서 → AGENTS.md → 정적 검증기·테스트 → eval로 갈수록 왼쪽(06:24~06:46). → [[shift-left-interventions]]. **구조는 이 페이지와 같다**(늦고 수동이고 한 번뿐인 것 → 이르고 자동이고 반복되는 것). ⚠️ 두 소스는 서로를 모르고, **Lopopolo 쪽은 보안을 한 번도 말하지 않는다.** (ko는 그 정의 문장을 *"극우적인 방향 / 좌파적인 접근"* 으로 옮겼다.)
+
+## 같은 화자, 코드에서 데이터로 (2026-10-01 · [[tech-bridge-ai-data-exposure-hidden-risk]])
+
+[[jeff-crume|Jeff Crume]]의 두 번째 소스는 이 페이지의 원칙 ②·⑤를 **데이터 흐름**에 적용한다 — AI 인지 분류·발견은 *"continuous because the system is changing constantly"*(09:31~09:35), 위험 식별은 *"proactively, not just after all of the data has escaped"*(07:50~07:53). 원인 진단도 같다 — *"AI adoption is moving faster than traditional security approaches can actually protect"*(00:16~00:22). 다만 이번 편은 *왼쪽으로 옮기기* 보다 **끝까지 따라가기**(lineage)에 무게가 있다 → [[ai-data-exposure]] · [[lineage-driven-risk-visibility]].

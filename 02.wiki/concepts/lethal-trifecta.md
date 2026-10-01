@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [security, data-exfiltration, prompt-injection, agent-safety, llm-security, threat-model]
 aliases: [lethal trifecta, 치명적 삼중주, 치명적 3요소]
-related: [confused-deputy-attack, prompt-injection, agentic-misbehavior, agent-identity-separation, secure-tool-evolution, sweeper-agent, black-box-agent-approach]
+related: [confused-deputy-attack, prompt-injection, agentic-misbehavior, agent-identity-separation, secure-tool-evolution, sweeper-agent, black-box-agent-approach, ai-data-exposure]
 first-seen: tech-bridge-build-time-vs-runtime-tools
 sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-one-designer-plus-ai]
 created: 2026-09-11
-updated: 2026-09-15
+updated: 2026-10-01
 ---
 
 # 치명적 3요소
@@ -62,3 +62,9 @@ updated: 2026-09-15
 
 - [[tech-bridge-build-time-vs-runtime-tools]] (first-seen) · [[averi-kitsch]]
 - 관련: [[confused-deputy-attack]] · [[prompt-injection]] · [[agentic-misbehavior]] · [[secure-tool-evolution]] · [[bound-parameters]]
+
+## 공격자 없는 노출 — 트리펙타 밖의 경로 (2026-10-01)
+
+[[tech-bridge-ai-data-exposure-hidden-risk]]([[jeff-crume|Jeff Crume]] / [[ibm|IBM]])의 [[ai-data-exposure|AI 데이터 노출]]은 **②(신뢰할 수 없는 콘텐츠)가 없는** 유출을 다룬다 — 섀도우 AI, 공개 챗봇에 스프레드시트 붙여넣기, 도구가 데이터를 어디에 쓰는지 모름, 에이전트가 에이전트를 낳음. [[prompt-injection]]은 그 소스에 한 번도 나오지 않는다.
+
+이 틀로 보면 그 소스는 ①(비공개 데이터)이 **어디에 있는지부터 모른다**는 데서 출발하고(*"what sensitive data is being used by AI"* 04:13~04:17), ③(외부 노출)을 **사후에라도 추적**하는 것(lineage·조사)을 처방한다. 트리펙타는 *셋 중 하나를 빼라* 는 예방 틀인데, 그 소스는 **빼기 전에 보이지 않는다**는 문제를 앞에 둔다. ⚠️ 위키의 정리 — 소스는 이 틀을 언급하지 않는다.

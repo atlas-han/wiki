@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
-related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases]
+related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk]
 created: 2026-05-25
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 # Model Context Protocol (MCP)
@@ -191,3 +191,12 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 - 같은 강좌가 MCP를 여전히 **에이전트 독립의 네 표준**(*"MCP for external tools"* 57:16~57:20) 중 하나로 둔다 — **대체가 아니라 역할 축소**로 읽힌다.
 - [[tech-bridge-graft-code-knowledge-graph|Graft 편]]의 CLI 대 MCP 비교([[push-vs-pull-context-retrieval]])가 **측정**이었다면, 이 강좌의 근거(설정·컨텍스트 사용이 적다)는 **주장**이다.
 - ⚠️ ko는 이 문장의 방향을 바꿨다 — *"MCP 서버에 더 많은 CLI 기능을 제공합니다"*(53:52). `en`도 같은 오독(*"MCP servers moving towards more CLI capabilities"*).
+
+## 2026-10-01 — MCP가 보안 인벤토리 항목이 됐다
+
+[[tech-bridge-ai-data-exposure-hidden-risk]]([[jeff-crume|Jeff Crume]] / [[ibm|IBM]])에서 MCP는 **데이터 노출 discovery의 대상**으로 두 번 나온다 — 렌즈가 다르다.
+
+- **agentic platform discovery**(런타임): *"who prompted which particular model, and which agent actually ran, which MCP tool was called"*(08:11~08:18)
+- **endpoint DLP discovery**(설치 인벤토리): *"which agents and extensions and MCP servers exist on each of these devices"*(08:30~08:35)
+
+화자의 요점은 두 렌즈가 *"Each one of these only sees part of the picture"*(09:04~09:06)라는 것 — 어떤 MCP 서버가 깔려 있는지와 어떤 MCP 도구가 실제 호출됐는지가 **다른 도구에 흩어져** 있다. ⚠️ 첫 렌즈 이름(*agentic*)은 세 자막 트랙 모두 깨졌다(en-orig *"a Gentic"*, `en` *"Agility"*). → [[ai-data-exposure]]

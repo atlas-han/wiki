@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent-infrastructure, meta-harness, claude-platform]
 aliases: [Claude Managed Agents]
-sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
+sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory]
 links:
   - https://platform.claude.com/docs/en/managed-agents/overview
 created: 2026-05-25
-updated: 2026-09-18
+updated: 2026-10-01
 ---
 
 # Managed Agents
@@ -82,3 +82,13 @@ updated: 2026-09-18
 → [[strategy-primitives]]. *"이러한 것들 중 **일부**"* 라고 하므로 **조언(advising)이 기본 제공인지는 소스가 말하지 않는다.** ⚠️ 화면의 아키텍처 그림은 자막에 없다. ⚠️ ko가 *Claude Managed Agents* 를 **"클라우드 관리형 에이전트"** 로, *outcomes* 를 **"결과"** 로 옮겼다 — 설명란(*"Claude Managed Agents 아키텍처"*)으로 판독.
 
 장기 목표도 이 제품에 걸린다 — *"여러분이 업무를 수행하는 동안 이러한 전략을 동적으로 구성할 수 있도록 모델과 플랫폼을 더욱 개선"*(12:16~12:23). [[dynamic-workflows]]·[[self-harness]]와 같은 방향의 **선언**이고 실체는 없다.
+
+## memory and dreaming API — 응용 AI 팀의 설명 (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
+
+[[lamis-mukta|Lamis Mukta]](Anthropic 응용 AI 팀)가 Q&A에서 메모리 스토어 구현을 묻는 질문에 이 제품을 가리킨다 — *"we're not allowed to make product call to actions but given that you asked"*(27:51~27:55):
+
+> *"a lot of this references the architecture that we used in our memory uh our memory infrastructure for our managed agent solutions and so when I talk about these things about productionizing um memory so everything like versioning uh hashing etc that's all available within our memory in[=and] dreaming API through claude manage[=Managed] agents"* (27:59~28:21)
+
+- 09-18의 *"회고(dreaming)는 기본 제공"* 과 일치한다. 이번에 더해진 것은 **메모리 쪽 보장** — 버전 관리·해시 기반 동시성(→ [[production-memory-guardrails]])과 dreaming의 구조(→ [[agent-dreaming]]).
+- dreaming 권한: *"when you set up a dreaming procedure you decide exactly which session transcripts to attach"*(29:20~29:25).
+- ⚠️ API 이름은 ASR(*"memory in dreaming API"*)과 설명란(*"Memory & Dreaming API"*)으로 판독. ko·`en`은 둘 다 **"스트리밍 API … 클라우드 관리형 에이전트"** 로 깨졌다. 엔드포인트·사용법은 발화되지 않았다(설명란의 "실전 적용 가이드"는 자막에 없다).

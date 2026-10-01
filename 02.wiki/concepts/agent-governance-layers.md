@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
-related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters]
+related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters, ai-data-exposure]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst, tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst, tech-bridge-nadella-copilot-autopilot, tech-bridge-ai-data-exposure-hidden-risk]
 created: 2026-09-09
-updated: 2026-09-29
+updated: 2026-10-01
 ---
 
 # 에이전트 거버넌스 두 층
@@ -124,3 +124,10 @@ updated: 2026-09-29
 - **새로 붙는 것: FinOps** — 이 페이지의 층들(도구 정의·자격 증명 주입·실행 게이트)에 **비용 통제**가 거버넌스 항목으로 들어온다. 같은 대담의 [[software-marginal-cost]](토큰에 한계비용)와 이어진다.
 - ⚠️ **"보는 층"인지 "막는 층"인지 불명** — *observe · govern · set policy* 가 실행 전 차단을 포함하는지 소스가 말하지 않는다. 이 페이지가 모아 온 사례는 대부분 **막는** 벽이었다.
 - ⚠️ 당사자 진술, *"fastest adoption"* 에 수치 없음.
+
+## 보는 층 — 데이터 흐름 가시성 (2026-10-01 · [[tech-bridge-ai-data-exposure-hidden-risk]])
+
+[[ibm|IBM]] 계열 [[jeff-crume|Jeff Crume]] 해설이 이 페이지의 벽들에 **관측 층**을 더한다. 질문은 *"Was it authorized and was it governed?"*(04:23~04:25)이고, 처방은 workload(AI 시스템 내부)와 workforce(직원 사용) **두 흐름을 가로지르는 공유 정책** — *"policies that are shared across both of these and monitored and enforced"*(07:25~07:29) — 과 *"a single pane of glass"*(07:33~07:35).
+
+- ⚠️ 09-29 Agent 365 항목의 빈자리가 반복된다 — 처방의 거의 전부가 **보는 것**(discovery·lineage·조사·규제 보고)이고 **막는 것**은 *"enforced"* 한 단어다.
+- 이 페이지의 벽들은 대부분 **접근 시점**에 선다. 이 편의 [[lineage-driven-risk-visibility]]는 **접근 이후**(변환·전파·목적지)를 본다. → [[ai-data-exposure]]

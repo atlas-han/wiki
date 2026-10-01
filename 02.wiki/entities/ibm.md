@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk]
 created: 2026-09-08
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 # IBM
@@ -161,3 +161,20 @@ updated: 2026-09-27
 ⚠️ **기존 경고에 해당하는 것**: 데이터 계층 현대화·API 표준화·거버넌스·상호운용성은 **엔터프라이즈 데이터·통합 벤더가 파는 것과 같은 자리**다. 소스는 그 연결을 하지 않고 제품명이 없다.
 
 09-26 편이 더한 것: [[agents-as-catalyst]], 그리고 [[model-context-protocol]] · [[agent-governance-layers]] · [[decision-quality]] 보강.
+
+## 여덟 번째 소스 — 데이터 노출, 그리고 결론이 "도구가 있다" (2026-10-01)
+
+[[tech-bridge-ai-data-exposure-hidden-risk]](09-30 게시, 11:15 1인 해설, 공식 챕터 없음)로 IBM은 **소스 여덟 편**을 가진 조직이 됐다. 판정 근거: 해시태그 `#IBMTechnology` + 관련 링크 `ibm.biz` 둘(*"Exposed Data 상세 정보"*, *"IBM AI 뉴스레터 구독"*) + IBM Technology 채널 링크.
+
+| | 09-07 ~ 09-26 (일곱 편) | **09-30 (이번)** |
+|---|---|---|
+| 발표자 | 무명 셋 · 설명란에만 넷 | **[[jeff-crume|Jeff Crume]]** — ⚠️ **설명란에만**, 이 위키의 **같은 화자 두 번째** |
+| 촬영 시점 | 일곱 번 미확정 | **미확정** |
+| 자사 제품 | 없음 | **없음** — 단 결론이 *"there are tools that can help you manage your data exposure from AI. That's the good news."*(11:09~11:13), 후반 요구사항이 **통합 가시성 플랫폼의 기능 명세** 형태 |
+| 주제 | 지식·품질·직무·보안(코드)·레거시·토큰 경제·촉매 | **AI를 지나가는 민감 데이터의 노출** — [[ai-data-exposure]] |
+
+> **관찰 유지, 여덟 번째** — 자사 제품명 없음·촬영 시점 미확정이 여덟 번 연속. ⚠️ 다만 이번 편은 **판매 대상과 가장 가까운 형태**다 — 09-23 편(플랫폼 기능 목록)과 같은 유형이고, 설명란 링크 이름이 *"Exposed Data 상세 정보"* 다(열어 보지 않았다).
+
+**같은 벤더가 데이터의 양쪽을 말했다** — 09-26 편은 데이터가 *갇혀 있는 것*(열어라), 이번 편은 데이터가 *흐르는 것*(감시하라). 두 편은 서로를 언급하지 않는다 → [[agents-as-catalyst]] · [[ai-data-exposure]].
+
+09-30 편이 더한 것: [[ai-data-exposure]] · [[lineage-driven-risk-visibility]], 그리고 [[retrieval-augmented-generation]] · [[agent-governance-layers]] · [[model-context-protocol]] · [[shift-left-security]] · [[lethal-trifecta]] 보강.

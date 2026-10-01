@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory]
 created: 2026-08-31
-updated: 2026-09-28
+updated: 2026-10-01
 ---
 
 # Agent Skills
@@ -302,3 +302,7 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 ⭐ **09-10 절(공유 스킬은 누가 쓰는가)에 배포자 자신의 세 번째 입장**: *"most skills should probably be written by the individual users"*, 배포한다면 *"need to invest more time than they currently do"*(59:25~59:36) — 작성자가 안 쓴 모델에서 동작하지 않는 스킬이 많다(59:41~59:49), *"I would rather see less skills in the ecosystem that are really battle tested and proven"*(59:57~1:00:04). 그리고 **스킬 배포 표준이 없다**(1:03:46~1:03:47) — 벤더 마켓플레이스는 업데이트가 잘 안 되고(1:02:38~1:02:50) npx skills는 하네스별 디렉터리를 존중하지 않는다(46:27~46:44).
 
 ⚠️ 당사자 진술. 수치 없음, 검증 도구(eval 하네스)는 비공개. Impeccable 자신은 *"definitely outgrowing the skill platform"*(58:44~58:48) — 스킬 형식의 **한계**를 제작자가 말한 첫 소스다.
+
+## 2026-10-01 — 스킬의 병목은 "누가 스킬을 정하나" ([[tech-bridge-anthropic-dreaming-memory]])
+
+[[anthropic|Anthropic]] 응용 AI 팀의 [[lamis-mukta|Lamis Mukta]]는 스킬을 컨텍스트 엔지니어링 1년의 세 번째 정거장으로 놓는다. 잘하는 곳: *"processes where you have like a procedural workflow"*(05:48~05:50). progressive disclosure는 **책장 비유** — 누가 프랑스어로 말을 걸면 프랑스어 사전을 꺼내 읽으면 되지, 7년치 프랑스어 수업을 미리 머리에 넣어 둘 필요가 없다(06:18~06:48). 병목: *"it's still kind of driven by humans and agents together (…) you're still being quite opinionated about like what things need skills"*(06:57~07:07) — 그래서 다음 단계가 **에이전트가 자율로 쓰는 파일 시스템 메모리**와 세션 밖의 [[agent-dreaming|dreaming]]이다. [[skill-self-improvement]]·[[query-to-skill-distillation]]이 *스킬 생성의 자동화*로 같은 병목을 푸는 것과 달리, 이 발표는 **스킬이 아니라 메모리 쪽으로** 우회한다. ⚠️ ko는 *progressive disclosure* 를 **"점진적 확산"**(07:48), *bottleneck* 을 **"목 … 병"**(06:53~06:56)으로 옮겼다.

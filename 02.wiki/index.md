@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-09-30
+updated: 2026-10-01
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-09-30
 ## Entities
 
 ### Persons
+- [[lamis-mukta]] — [[anthropic|Anthropic]] 응용 AI 팀(스타트업·창업자 담당). 컨텍스트 엔지니어링 1년 회고와 아웃오브밴드 메모리 정리 [[agent-dreaming|dreaming]] 발표 ([[tech-bridge-anthropic-dreaming-memory]]) ⚠️ 당사자 · 성은 설명란에만(자막 "Lamis")
 - [[roland-gavrilescu]] — [[introspection-dev|Introspection]] 공동창업자(전 xAI 에이전트 인프라). auto research 청사진 세 아이디어 — *루프가 제품* · *시스템 증류가 해자* · *와트당 가치 있는 작업* ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ 당사자 · 성은 설명란에서(자막 "Rowland")
 - [[zubin-aysola]] — [[weights-and-biases|W&B]]에서 [[wandb-aria|ARIA]]의 오프라인 eval·자기 개선 루프를 만드는 엔지니어 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 이름은 설명란 LinkedIn slug에서만(자막 "Zuban Isaola") · 확정 안 함
 - [[satya-nadella]] — [[microsoft|Microsoft]] CEO. Copilot 행사 'DB Live' 대담 — chat·co-work·code·Autopilot 조합 · *"소프트웨어가 처음으로 한계비용을 갖는다"* · *"auto가 제품"*(learned router) · 미·중 사고 통보 체계 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자 · 성·직함은 제목·설명란에서
@@ -293,6 +294,7 @@ updated: 2026-09-30
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[ai-data-exposure]] — AI 데이터 노출: 섀도우 AI·챗봇 입력·아키텍처 각 칸(학습·RAG·도구·하위 에이전트)·workforce 행위를 통한, **공격자 없는** 민감 데이터 노출. workload와 workforce를 구분 ([[tech-bridge-ai-data-exposure-hidden-risk]]) ⚠️ 벤더 해설 · 31% 수치 출처 없음
 - [[valued-work-per-watt]] — 최적화할 점수: 먼저 가치를 재고, 그 가치를 싸게 얻는지. Cursor·Cognition이 제품 → eval → 모델 순으로 갔다는 예 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ "per watt"의 실제 측정 단위 불명
 - [[software-marginal-cost]] — 보조금이 끝나면 소프트웨어가 **처음으로 한계비용**을 갖는다 — 좌석은 사용 권리가 된다(Nadella). [[transaction-cut-monetization]]과 대립 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
 - [[inference-revenue-training-rnd]] — *추론은 매출, 훈련은 R&D* — "손익계산서의 물리 법칙"으로 과잉 구축을 판단 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자 · 수치 없음
@@ -367,6 +369,9 @@ updated: 2026-09-30
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[agent-dreaming]] — 세션 밖에서 트랜스크립트 + 메모리 스토어를 배치로 분석해 실패 패턴의 근거·빈도와 함께 메모리 변경을 **제안**하고 사람이 수락하는 second-order 과정 ([[tech-bridge-anthropic-dreaming-memory]]) ⚠️ 당사자 · 수치 없음 · 09-18 드리머(직접 쓰기)와 모드 차이 미확정
+- [[production-memory-guardrails]] — 다수 에이전트가 공유하는 파일 시스템 메모리의 4원칙: 버전·롤백 · 쓰기 전후 해시 비교 동시성 · 층별 권한(조직 전역 읽기 전용) · 이식성 ([[tech-bridge-anthropic-dreaming-memory]]) > ⚠️ Contradiction: [[files-vs-database-agent-memory]]의 *DB로 가라*
+- [[lineage-driven-risk-visibility]] — 데이터를 출처 → 변환 → 전파 → 목적지 계보로 추적해, 변환·파생된 사본도 원본과 같은 위험으로 본다. 통합 뷰·AI 인지 분류·규제 보고 ([[tech-bridge-ai-data-exposure-hidden-risk]]) ⚠️ 요구사항 목록 · 측정 없음
 - [[loop-is-the-product]] — 제품은 루프다: 신호 품질이 성공률을, 검증기 품질이 그 성공이 진짜인지를 정하고, 두 번째 루프가 첫 루프의 산출을 되먹인다 ([[tech-bridge-introspection-loop-is-the-product]])
 - [[agent-recipes]] — *시스템 증류가 해자*: 실패 패턴 → judge/eval, 반복 행동 → 스킬/프롬프트, 사용자 불만 → 하네스 확장/메모리, 전부 모델 무관한 Git 레포 하나로 버전 관리 ([[tech-bridge-introspection-loop-is-the-product]])
 - [[production-trace-eval-flywheel]] — 프로덕션의 모든 실패 **와 성공**이 오프라인 eval 태스크가 되고, 이제 에이전트가 그 루프를 스스로 돈다. 벤치마크·eval·에이전트·구성은 공변한다 ([[tech-bridge-wandb-aria-self-improving-agent]])
@@ -691,11 +696,13 @@ updated: 2026-09-30
 - [[tech-bridge-rlhf-assistance-vs-automation]] — [[diogo-almeida|Diogo Almeida]] (GPT-4·ChatGPT·InstructGPT 공동 저자 · [[typesafe-ai|TypeSafe]] · [[ai-engineer|AI Engineer]]): **위키가 [[rlhf|RLHF]]를 만든 쪽의 목소리로 RLHF의 한계를 듣는 첫 소스** — 그리고 **이 위키에 RLHF 페이지가 없었다는 사실이 이 소스로 드러났다.** 테제는 *미해결 수학 문제는 풀면서 고객 서비스는 못 하는 이유가 난이도가 아니라 목적함수* — **[[assistance-vs-automation|보조 vs 자동화]]**(*"왼쪽 과제의 목표는 루프 안의 사람을 만족시키는 것"*), **[[preference-reward-asymmetry|과대약속은 버그가 아니라 특징]]**(*확신 없음* 만 벌받는다 → 환각의 첫 구조적 설명), **[[smarter-software-vs-cheaper-software|SaaS는 2019년 이후 변한 게 없다]]**(*"우리가 자동화한 건 소프트웨어를 쓰는 과정뿐"*), **[[post-training-northstars|제3의 북극성=보정된 의사결정]]**. [[claude-code|Claude Code]]에 대한 **위키의 가장 이론적인 비판**(*"여전히 보조의 시대"* — ⚠️ 단 화자는 *"좋아하고 계속 쓴다"* 고도 말한다) ([[tech-bridge]], 2026-09-19, **17:36**, 공식 챕터 11, ⚠️ 당사자 · **eval·벤치마크 0건** · **제목의 'Jev'가 자막에 한 번도 없다** · [[sutton-bitter-lesson|Bitter Lesson]]을 **반대 방향으로 인용**(판독 안 함) · ko가 *our chef*→RLHF 직역·LLM을 **세 갈래**로·*assistance*→**"의료 보조"**)
 - [[tech-bridge-introspection-loop-is-the-product]] — [[roland-gavrilescu|Roland Gavrilescu]] ([[introspection-dev|Introspection]], 전 xAI): **auto research의 청사진 세 가지** — [[loop-is-the-product|루프가 제품]](신호·검증기·두 번째 루프, [[openclaw|OpenClaw]]로 딜러들을 서로 입찰시킨 첫 루프) · [[agent-recipes|시스템 증류가 해자]](모델 무관 Git 레포로 버전 관리하는 레시피, pi.recipes) · [[valued-work-per-watt|와트당 가치 있는 작업]]. 제작자의 taste를 [[taste-encoded-evals|eval로]] — 에이전트가 만들고 사람은 보정만, 사용자는 A/B로 동의 ([[tech-bridge]], 2026-09-29, **18:15**, 공식 챕터 18, ⚠️ 당사자 · **측정 0건** · 채용 사례는 **가상 예시** · 행사명은 설명란에만 · ko가 *"You don't need the human to build the evals"* → **"평가는 사람이 하는 것이다"**, moat → "모드")
 - [[tech-bridge-wandb-aria-self-improving-agent]] — [[zubin-aysola|Zubin Aysola]] ([[weights-and-biases|Weights & Biases]]): **eval 도구 회사가 자기 에이전트를 자기 도구로 개선하는 1인칭 소스.** *"benchmarks, evaluations, the agents, and how you configure them are all covariant"* → [[wandb-weave|Weave]]로 양쪽 트레이스를 같은 포맷에 남기고 [[production-trace-eval-flywheel|프로덕션 실패·성공을 오프라인 태스크로]], [[research-production-agent-parity|연구=프로덕션 코드]](4시간 sync), [[yaml-agent-eval-pipeline|YAML 변형 병렬 평가]](886 태스크). 라이브 데모에서 [[wandb-aria|ARIA]]가 트레이스를 회귀 태스크로 바꾸고 프롬프트 패치 후보를 낸다. *"8개월째 코드를 안 썼다"* 지만 개선에 대한 생각은 면제되지 않는다 ([[tech-bridge]], 2026-09-29, **16:33**, 공식 챕터 19, ⚠️ 당사자 · 수치는 886·7주·*"about 66%"*(분모 없음)뿐 · **후보가 이겼는지는 화면에만** · 보안·승격 게이트 논의 없음 · ko가 *"weren't calling weave.log properly"* → **"올바르게 작동합니다"**, *"wasn't entirely certain"* → **"절대적으로 확신"**)
+- [[tech-bridge-ai-data-exposure-hidden-risk]] — [[jeff-crume|Jeff Crume]] ([[ibm|IBM]] Technology): **민감 데이터는 이미 노출됐고 AI가 그걸 보이지 않게 키운다.** "어떤 AI 도구를 쓰나"가 아니라 데이터가 AI 아키텍처 전 구간·직원 사용을 어떻게 흐르는지를 형태가 바뀌어도 추적하라 — [[ai-data-exposure]] · [[lineage-driven-risk-visibility]]. ⚠️ 벤더 해설 · 31% 출처 없음 · ko가 목표 문장을 뒤집음
+- [[tech-bridge-anthropic-dreaming-memory]] — [[lamis-mukta|Lamis Mukta]] ([[anthropic|Anthropic]] · AI DevCon): **컨텍스트 엔지니어링 1년 회고**(CLAUDE.md → memory tool → [[agent-skills|스킬]] → 파일 시스템 메모리)와 [[production-memory-guardrails|프로덕션 가드레일]], 인밴드 메모리의 한계 끝에 [[agent-dreaming|dreaming]] — 세션 밖 배치로 메모리 변경을 제안, 사람이 수락. [[managed-agents|Managed Agents]] API. ⚠️ 당사자 · 수치 없음
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 657 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 642 → 657, + 2026-09-30 Tech Bridge 2편: source 2 + concept 7 + entity 6)
+- 총 페이지 수: 664 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 657 → 664, + 2026-10-01 Tech Bridge 2편: source 2 + concept 4 + entity 1)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-09-30 (Tech Bridge **2편**, **스무이레 연속** — 09-29 업로드 2편. 같은 날 두 발표가 **에이전트가 자기 개선 루프를 도는 법**을 말한다 — [[tech-bridge-introspection-loop-is-the-product|Introspection 편]]은 루프를 제품으로, [[tech-bridge-wandb-aria-self-improving-agent|W&B 편]]은 프로덕션 트레이스를 eval 태스크로. 멤버 전용 2편은 §4a 대기)
+- 마지막 ingest: 2026-10-01 (Tech Bridge **2편**, **스물여드레 연속** — 09-30 업로드 2편. 같은 날 **에이전트 시대의 데이터**를 두 방향에서 — [[tech-bridge-ai-data-exposure-hidden-risk|IBM 편]]은 데이터가 AI를 통해 *새어 나가는* 쪽을, [[tech-bridge-anthropic-dreaming-memory|Anthropic 편]]은 에이전트가 데이터를 *기억으로 쌓고 정리하는* 쪽을. 멤버 전용 3편 건너뜀)

@@ -1713,3 +1713,32 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 두 편을 **병렬 서브에이전트**로 나눴고, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. ⚠️ **W&B 서브에이전트가 파일을 쓰기 전에 "완료" 보고를 냈다**(보고된 파일이 디스크에 없었다). 오케스트레이터가 raw·source를 직접 쓰기 시작했는데 서브에이전트가 여전히 실행 중이라 raw를 덮어썼다 — `ListAgents`로 실행 중임을 확인하고 소유권을 서브에이전트에 넘겼다(source는 서브에이전트 판으로 교체). 최종 보고 후 파일 존재·frontmatter 중복 키·wikilink·ko 주장 표본(13:26 · 02:12 · 02:13~02:16 · 14:47 · 15:52)을 검증했다. → **서브에이전트의 완료 보고를 받으면 `ListAgents` 상태와 `git status`로 파일 존재부터 확인할 것.**
+
+
+## [2026-10-01] ingest | Tech Bridge — AI가 여러분의 데이터를 노출하고 있다(Jeff Crume, IBM) · 자는 동안 스스로 학습하는 AI(Lamis Mukta, Anthropic) (09-30 업로드 2편)
+
+`--playlist-end 15` 가 **12편**만 반환 — 나머지 3편은 `subscriber_only` 라 목록 조회에서 ERROR로 빠졌다: 기존 대기 `XyVUHSzKM2E`(Warp) · `cHsunDt0QUc`(Factory)에 **신규 `8DRjkp_X8yY`**(*AI 시대에 쏟아지는 PR 병목*, 22:33)가 추가. 페이지를 만들지 않았다. 신규 **09-30 업로드 2편**(`public`), 10편은 기존. 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, `subtitles` 비어 있음 — 오케스트레이터가 info.json에서 직접 확인), **429 없음**(쿠키 무효 경고는 계속, 무해). 두 편 다 **공식 챕터 없음**.
+
+**신규 source 2 · concept 4 · entity 1**, index 실측 **657 → 664**.
+
+- `lr5cxvYJDLg`(11:15, **Jeff Crume / IBM Technology**) → [[tech-bridge-ai-data-exposure-hidden-risk]]
+- `sINXtw4wmyM`(31:27, **Lamis Mukta / Anthropic**, AI DevCon) → [[tech-bridge-anthropic-dreaming-memory]]
+
+신규: [[ai-data-exposure]] · [[lineage-driven-risk-visibility]] · [[agent-dreaming]] · [[production-memory-guardrails]] · [[lamis-mukta]]
+
+보강(IBM 편): [[jeff-crume]] · [[ibm]] · [[katelyn-lesse]](모순 표시만) · [[retrieval-augmented-generation]] · [[agent-governance-layers]] · [[lethal-trifecta]] · [[model-context-protocol]] · [[shift-left-security]] · [[tech-bridge]]
+
+보강(Anthropic 편): [[agent-memory]] · [[nightly-memory-consolidation]] · [[files-vs-database-agent-memory]] · [[continual-learning]] · [[context-engineering]] · [[token-roles]] · [[agent-skills]] · [[managed-agents]] · [[anthropic]] · [[claude-code]] · [[tech-bridge]]
+
+### 이번 실행의 구도
+
+같은 날 **에이전트가 다루는 데이터**를 반대 방향에서 본다. Crume은 데이터가 AI를 거쳐 *새어 나가는* 쪽(섀도우 AI · RAG · 도구 · 하위 에이전트 · 직원 복사/붙여넣기)을, Mukta는 에이전트가 데이터를 *기억으로 쌓고 밤사이 정리하는* 쪽을 말한다. 서로를 언급하지 않지만, Mukta 편의 조직 공유 메모리·트랜스크립트 배치 분석은 Crume 편이 말하는 **lineage 추적 대상이 하나 더 생기는 일**이다(정리자 해석). ⚠️ Mukta 편 가드레일(버전·해시 동시성·권한)은 [[files-vs-database-agent-memory]]의 *DB로 가라* 와 충돌 — 화자 스스로 *"DB 관행으로 돌아가는 중"* 이라 한다. ⚠️ [[agent-dreaming]]의 *제안 → 사람 수락* 은 09-18 소스의 드리머(통과한 결과를 직접 메모리에 씀)와 다르다 — 같은 제품의 다른 모드인지 미확정.
+
+### 자막 주의
+
+- IBM 편: ko가 **목표 문장**을 뒤집음(*"enable AI adoption without creating data security gaps"* → "도입을 허용하지 않음 / 취약점을 만듭니다", 04:35~04:38), *"can't afford"* → "여유가 있다"(07:37), *"if we can't monitor"* → "감시할 수 있습니다"(11:02). "AI" → **"일체 포함"** 세 번. *agentic platform* 은 **세 트랙 모두** 깨짐(en-orig *"a Gentic"* · en *"Agility"* · ko "애질리티").
+- Anthropic 편: 라디안/도 예시의 **정답·오답 반전**(20:17~20:21), *Memory & Dreaming API* → "메모리 및 스트리밍 API"·Claude → "클라우드"(28:17~28:19) — **`en`도 같은 오류**라 독립 근거가 아니다. 없던 *"연구 결과에 따르면"* 삽입(17:28). 설명란의 *"자는 동안"*·주기 표현은 자막에 없다(자막은 *"next day"* 뿐).
+
+### 운영 메모
+
+두 편을 **병렬 서브에이전트**로 나눴고, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. 09-30 교훈대로 완료 통지 후 `ListAgents`·`git status`로 파일 존재를 확인했고, frontmatter 중복 키·깨진 wikilink 검사도 통과. 멤버 전용 영상은 이제 `--print` 목록에서 **줄 자체가 빠지고 stderr ERROR로만** 보인다 — 15편 중 12편만 나오면 stderr를 볼 것.

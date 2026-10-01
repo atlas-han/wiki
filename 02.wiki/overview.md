@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-09-30
+updated: 2026-10-01
 sources: []
 ---
 
@@ -187,6 +187,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-09-30*: [[tech-bridge]] **2편** ingest(09-29 업로드 2편). 두 발표가 같은 질문 — **에이전트가 자기 개선 루프를 어떻게 도는가** — 에 서로 다른 층에서 답한다. ① [[tech-bridge-introspection-loop-is-the-product|Roland Gavrilescu 편]]([[introspection-dev|Introspection]])은 *설계 원칙*: [[loop-is-the-product|제품은 루프다]](신호와 검증기가 성공을 정한다), [[agent-recipes|시스템 증류가 해자다]](실패 패턴·반복 행동·사용자 불만을 모델 무관한 레시피로 버전 관리), [[valued-work-per-watt|와트당 가치]]가 점수다. 제작자의 taste는 [[taste-encoded-evals|에이전트가 만든 judge를 사람이 보정하고 사용자가 A/B로 승인하는 eval]]이 된다 — ⚠️ [[paul-bakaus|Bakaus]]의 *taste는 모델 수준에서 못 푼다* 와 충돌.
   ② [[tech-bridge-wandb-aria-self-improving-agent|Zubin Aysola 편]]([[weights-and-biases|W&B]])은 *운영*: 벤치마크·eval·에이전트·구성이 공변하므로 [[wandb-weave|Weave]]로 양쪽 트레이스를 같은 포맷에 남기고 [[production-trace-eval-flywheel|프로덕션의 모든 실패와 성공을 오프라인 태스크로]] 옮기며, [[research-production-agent-parity|연구·프로덕션 에이전트를 코드 수준에서 같게]] 유지하고 [[yaml-agent-eval-pipeline|YAML 변형을 병렬로]] 채점한다. [[wandb-aria|ARIA]]가 그 루프를 스스로 도는 데모. 둘 다 [[self-harness]]를 제품에서 하는 사례이고, 둘 다 **측정 결과를 자막에 내놓지 않는다.**
   자막 쪽으로는 ⚠️ ko가 두 편 모두 결론을 뒤집었다 — *"You don't need the human to build the evals"* → "평가는 사람이 하는 것이다", *"weren't calling weave.log properly"* → "올바르게 작동합니다". 같은 날 멤버 전용 2편(Warp · Factory)은 건너뛰었다.
+
+- *2026-10-01*: [[tech-bridge]] **2편** ingest(09-30 업로드 2편). 같은 날 **에이전트가 다루는 데이터**를 반대 방향에서 본다. ① [[tech-bridge-ai-data-exposure-hidden-risk|Jeff Crume 편]]([[ibm|IBM]])은 *유출*: 섀도우 AI·챗봇 입력·RAG·도구·하위 에이전트를 거치며 민감 데이터가 **공격자 없이** 새어 나가고([[ai-data-exposure]]), 형태가 바뀐 파생 데이터까지 [[lineage-driven-risk-visibility|계보로 추적]]해야 한다 — 그런데 위협 모델에 prompt injection이 없다.
+  ② [[tech-bridge-anthropic-dreaming-memory|Lamis Mukta 편]]([[anthropic|Anthropic]])은 *축적*: 메모리는 파일 시스템 + 에이전트 자율이 최선이되 프로덕션에선 [[production-memory-guardrails|버전·해시 동시성·권한·이식성]]이 필요하고, 인밴드 메모리의 한계를 [[agent-dreaming|dreaming]](세션 밖 배치 정리, 사람이 수락)으로 메운다 — 화자 스스로 *"DB 관행으로 돌아가는 중"*. [[files-vs-database-agent-memory]]와 부딪힌다.
+  자막 쪽으로는 ⚠️ ko가 두 편 모두 핵심 문장을 뒤집었다 — *"enable AI adoption without creating security gaps"* → "도입을 허용하지 않음", 라디안/도 예시의 정답·오답 반전. 멤버 전용 3편은 건너뛰었다.
 
 ---
 

@@ -2,11 +2,11 @@
 title: Jeff Crume
 type: entity
 category: person
-tags: [ibm, security, devsecops, education]
+tags: [ibm, security, devsecops, education, data-security]
 links: []
-sources: [tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-shift-left-security-ai-code, tech-bridge-ai-data-exposure-hidden-risk]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-01
 ---
 
 # Jeff Crume
@@ -55,3 +55,20 @@ updated: 2026-09-17
 
 - [[tech-bridge-shift-left-security-ai-code]] · [[ibm]] · [[tech-bridge]]
 - 들여온 개념: [[shift-left-security]] · [[generated-dependency-scrutiny]] · [[continuous-security-validation]]
+
+## 두 번째 소스 — 코드에서 데이터로 (2026-10-01 · [[tech-bridge-ai-data-exposure-hidden-risk]])
+
+09-30 게시 11:15 1인 해설(무챕터). **이번에도 이름은 설명란에만**(*"IBM의 Jeff Crume 박사"*) — 자막에 자기소개 없음. 촬영 시점 미확정(*"One recent study"* 00:22, MCP·EU AI Act 언급뿐).
+
+| | 09-16 [[tech-bridge-shift-left-security-ai-code]] | **09-30 (이번)** |
+|---|---|---|
+| 대상 | AI가 **생성한 코드** | AI를 **지나가는 데이터** |
+| 핵심 문장 | *결과를 믿어라, 생성만이 아니라* | *"Do you know where your data is?"* (00:00~00:02) |
+| 공통 원인 | AI의 속도가 기존 보안 관행을 앞지른다 | *"AI adoption is moving faster than traditional security approaches can actually protect"* (00:16~00:22) |
+| 공통 처방 | 지속적 검증 | *"continuous because the system is changing constantly"* (09:31~09:35) · *"proactively, not just after all of the data has escaped"* (07:50~07:53) |
+| 수치 | 1개(27년 제로데이, 출처 없음) | 1개(31% 조직, 출처 없음) |
+| 제품명 | 0 | 0 — 단 결론이 *"there are tools that can help you"* (11:09~11:10) |
+
+수사도 이어진다 — 09-16의 비욘세·미다스 왕에 이어 이번엔 **혈액**(*"Data is the lifeblood of AI (…) we could be hemorrhaging and not even know it"* 10:54~11:04).
+
+이 편이 들여온 것: [[ai-data-exposure]] · [[lineage-driven-risk-visibility]].

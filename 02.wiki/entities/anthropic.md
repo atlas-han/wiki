@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-09-23
+updated: 2026-10-01
 ---
 
 # Anthropic
@@ -163,3 +163,7 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 ## 경쟁사 소유주의 평가 (2026-09-23 · [[tech-bridge-musk-shotwell-cross-lab-peer-review]])
 
 [[elon-musk|Musk]]: *"종합적으로 봤을 때 저는 앤트로픽이 오픈 AI보다 안전에 더 많은 신경을 쓴다고 생각합니다. 하지만 (…) 앤트로픽조차도 자신들의 모델에 대해 우려하고 있다는 점을 인정"*(31:57~32:10). 그리고 *"앤트로픽스(Anthropics)도 자체적으로 몇 가지 보안 문제를 보고했습니다"*(02:05~02:08) — ⚠️ **무엇인지 말하지 않는다.** [[claude-mythos-preview]]의 사태와 **연결하지 않는다.** 선두 두 회사(Anthropic·OpenAI)의 모델이 *"기능 면에서 상당히 유사"* 해 어느 쪽도 선두를 넘기지 않고는 늦추기 어렵다(31:38~31:53) → [[slowdown-within-lead-margin]] · [[cross-lab-peer-review]].
+
+## 응용 AI 팀 — 컨텍스트 엔지니어링 1년 회고와 dreaming (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
+
+[[lamis-mukta|Lamis Mukta]](member of technical staff, 응용 AI 팀 — *"sits between research, product and go to market"* 00:23~00:27)의 AI DevCon 발표. 회사 격언으로 *"at Anthropic, we like to say do the simple thing that works"*(03:25~03:28)를 들고, 지난 1년의 경로를 **CLAUDE.md → memory tool → 스킬 → 메모리 = 파일 시스템**으로 정리한다. 프로덕션 메모리에는 버전·해시 동시성·권한·이식성(→ [[production-memory-guardrails]]), 세션 밖에서는 **dreaming**(→ [[agent-dreaming]])을 둔다 — 제품으로는 [[managed-agents|Claude Managed Agents]]의 memory and dreaming API(28:19~28:21). "DB 재발명" 질문에는 *"we sort of are merging back into those practices"*(31:06~31:08)라고 인정한다. ⚠️ 당사자 발표, 수치 없음. ⚠️ ko가 *Anthropic* 을 03:25에서 **"인류학적인"** 으로 옮겼다.

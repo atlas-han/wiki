@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
-related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot]
+related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory]
 created: 2026-09-08
-updated: 2026-09-24
+updated: 2026-10-01
 ---
 
 # Agent Memory
@@ -168,3 +168,15 @@ updated: 2026-09-24
 그리고 메모리가 왜 필요한가의 논거로 **창 확장론을 반박**한다 — *"1500만 컨텍스트 윈도우"* 를 믿는 사람들에게 *컨텍스트 창은 단기 기억의 한 유형일 뿐*이고 커질수록 [[context-rot|썩는다]](25:02~25:48).
 
 > ⚠️ 이 페이지의 오래된 빈자리가 **그대로다** — 승격은 있고 **강등·무효화·틀린 기억 정정은 없다.**
+
+## 세션 밖에서 고친다 — 인밴드의 한계와 dreaming (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
+
+[[lamis-mukta|Lamis Mukta]]([[anthropic|Anthropic]])가 이 페이지의 쓰기 경로에 **"어디서 쓰는가"** 라는 축을 준다. 세션 안에서 에이전트가 직접 쓰는 **인밴드** 메모리(memory tool, *"autonomy proved to work really well"* 05:13~05:16)는 과제와 메모리 큐레이션이 자원을 나누고, *"they just won't see patterns that happen across sessions"*(16:21~16:22). 그래서 세션 밖에서 배치로 트랜스크립트를 훑는 **dreaming**을 병렬로 둔다. → [[agent-dreaming]]
+
+| 소스 | 누가 쓰는가 | 언제 | 사람 게이트 |
+|---|---|---|---|
+| Muse (09-17) | 같은 에이전트 | 하루 끝 | 서술 없음 |
+| 드리머 (09-18) | 별도 역할 | 라운드 사이 | 서술 없음 |
+| **dreaming (10-01)** | 오케스트레이터 + 서브에이전트 | 배치·비동기, *"next day"* | ⭐ **변경 제안 + 근거 트랜스크립트 + 빈도 통계 → 사람이 수락/거부**(22:57~23:21) |
+
+이 페이지의 오래된 빈자리 중 둘에 처음으로 답이 붙는다: **틀린·낡은 기억의 정정**(*"some pass that checks that everything that's written there is still correct"* 17:40~17:45, *"cut things that are no longer relevant"* 26:17~26:21)과 **여럿이 쓸 때**(버전·해시 동시성·층별 권한 → [[production-memory-guardrails]]). 저장 형식은 **파일 시스템의 마크다운**, 검색은 bash·grep(07:30~07:39). ⚠️ 효과 수치 없음, 당사자 발표.

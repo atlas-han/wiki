@@ -8,7 +8,7 @@ links:
   - https://www.linkedin.com/in/katelynlesse/
 sources: [tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
 created: 2026-09-02
-updated: 2026-09-18
+updated: 2026-10-01
 ---
 
 # Katelyn Lesse
@@ -43,3 +43,7 @@ updated: 2026-09-18
 - 실행의 **진짜 비용 180만 토큰** 계산도 Angela가 *"케이틀린이 언급했듯이"* 로 돌린다(09:12) → [[true-cost-to-perfect-answer]]
 
 09-01에서 *"이것은 분산 시스템 문제"* 라며 **인프라**를 말했던 화자가, 이번엔 **측정 방법**을 말한다. ⚠️ en-orig ASR은 *Caitlyn/Caitlin*, ko는 *케이틀린* — 설명란의 *Katelyn Lesse* 철자를 채택했다(09-01과 같은 처리).
+
+## ⚠️ Contradiction (범위 차이, 2026-10-01)
+
+[[tech-bridge-ai-data-exposure-hidden-risk]]의 [[jeff-crume|Jeff Crume]]은 공개 챗봇에 넣은 민감 데이터를 *"they can use that sensitive information to train their models, and then it's available to everyone"*(01:02~01:05)라고 일반화한다. 이 페이지의 *"고객 데이터로 학습하지 않는다"* 와 부딪히지만 **대상이 다를 수 있다**(소비자용 공개 챗봇 vs API 플랫폼) — Crume은 어떤 서비스·약관인지 말하지 않는다. 미해소. → [[ai-data-exposure]]

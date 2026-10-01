@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [memory, compaction, agents, personal-agent, meta, muse]
 aliases: [메모리 압축, 밤의 정리, nightly compaction]
-related: [agent-memory, context-resets-and-compaction, agent-governance-layers, proactive-idea-feed, muse-spark, long-context-agents, skill-self-improvement]
+related: [agent-memory, context-resets-and-compaction, agent-governance-layers, proactive-idea-feed, muse-spark, long-context-agents, skill-self-improvement, agent-dreaming]
 first-seen: tech-bridge-zuckerberg-muse-in-daily-use
-sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-anthropic-dreaming-memory]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-01
 ---
 
 # 매일 밤의 메모리 압축
@@ -74,3 +74,16 @@ updated: 2026-09-17
 
 - [[tech-bridge-zuckerberg-muse-in-daily-use]] · [[tech-bridge-zuckerberg-muse-personal-agent]] · [[muse]] · [[muse-spark]]
 - 관련: [[agent-memory]] · [[context-resets-and-compaction]] · [[agent-governance-layers]] · [[proactive-idea-feed]] · [[harness-pruning]] · [[long-context-agents]] · [[skill-self-improvement]]
+
+## 같은 직관, 다른 설계 — Anthropic의 dreaming (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
+
+[[anthropic|Anthropic]]의 [[agent-dreaming|dreaming]]도 *"runs in batch and asynchronously"*(18:10~18:14)이고 결과는 *"next day when you run these agents again"*(19:26~19:28)에 반영된다 — 이 페이지와 같은 **하루 경계의 정리**다(제목은 "자는 동안"이라 하지만 자막에 밤·잠은 없다). 차이는 이 페이지의 미해결 항목 쪽에 있다:
+
+| | Muse (이 페이지) | Anthropic dreaming |
+|---|---|---|
+| 누가 판정 | *"대체로는 그것이 스스로 정합니다"* | 오케스트레이터가 *"prevalent enough patterns"* 만 골라 **제안**(22:35~22:51) |
+| 근거 제시 | 없음 | 패턴이 나온 **트랜스크립트 예시 + 빈도 통계**(22:57~23:05) |
+| 사용자 가시성·되돌리기 | 없음 | **사람이 변경별 수락/거부**(23:13~23:21), 메모리는 **버전 관리·롤백**(10:19~10:32) |
+| 입력 | 그날의 활동 | 메모리 스토어 + 일정 기간의 트랜스크립트(도구 호출 메타데이터 포함) |
+
+⚠️ Muse는 개인 비서, Anthropic은 에이전트 함대 대상 — 같은 저울에 올리기 어렵다. 어느 쪽도 효과 수치는 없다.

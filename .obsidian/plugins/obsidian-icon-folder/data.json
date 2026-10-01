@@ -867,5 +867,14 @@
   "02.wiki/entities/weights-and-biases.md": "LiBuilding",
   "02.wiki/entities/zubin-aysola.md": "LiUser",
   "02.wiki/sources/tech-bridge-introspection-loop-is-the-product.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-wandb-aria-self-improving-agent.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-wandb-aria-self-improving-agent.md": "LiVideo",
+  "01.raw/articles/2026-09-30_AI가 여러분의 데이터를 노출하고 있습니다 - 눈에 보이지 않는 AI 보안의 숨은 위험.md": "LiNewspaper",
+  "01.raw/articles/2026-09-30_자는 동안 스스로 학습하는 AI — 단순 기억을 넘어 꿈으로 진화하는 에이전트의 비밀.md": "LiNewspaper",
+  "02.wiki/concepts/agent-dreaming.md": "LiPuzzle",
+  "02.wiki/concepts/ai-data-exposure.md": "LiBookText",
+  "02.wiki/concepts/lineage-driven-risk-visibility.md": "LiPuzzle",
+  "02.wiki/concepts/production-memory-guardrails.md": "LiPuzzle",
+  "02.wiki/entities/lamis-mukta.md": "LiUser",
+  "02.wiki/sources/tech-bridge-ai-data-exposure-hidden-risk.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-anthropic-dreaming-memory.md": "LiVideo"
 }

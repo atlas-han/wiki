@@ -3,11 +3,11 @@ title: Continual Learning
 type: concept
 category: theory
 tags: [learning, memory, catastrophic-forgetting, bayesian, agi]
-related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement]
+related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement, agent-dreaming]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory]
 created: 2026-09-05
-updated: 2026-09-24
+updated: 2026-10-01
 ---
 
 # Continual Learning
@@ -102,3 +102,7 @@ Ghahramani가 continual learning과 나란히 놓는 것이 둘 더 있다.
 이 페이지가 [[tech-bridge-uncertainty-mathematics|Ghahramani]]에게서 받은 지속 학습은 **가중치 층의 과제**(파국적 망각, 베이즈 갱신)였고, 09-08의 Cursor *continual learning* 플러그인은 **이름만 같은 컨텍스트 층**이었다. 이 소스는 그 둘을 **한 표의 양 끝**으로 놓고, 실무는 **컨텍스트 층에서** 한다고 명시한다 — 구체적 수단은 **메모리 승격**(단기 파일 → 장기 DB)과 **스킬 승격**(증류 → 새 skill.md, 옛 버전 은퇴, 36:47~37:04 → [[skill-self-improvement]]).
 
 > ⚠️ 가중치 층을 두고 쓴 *"동결"* 이라는 표현(*frozen reasoning core*, 12:15~12:18)을 ko는 35:24에서 **"겨울왕국"** 으로 옮겼다. 화자는 동료와 **지속 학습 강좌**를 녹화할 예정이라고 한다(12:32~12:41) — 내용은 미공개.
+
+## Anthropic도 컨텍스트 층에서 말한다 — dreaming (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
+
+[[lamis-mukta|Lamis Mukta]]([[anthropic|Anthropic]])의 발표는 목적지를 *"where this will go on the path to continual learning"*(01:54~01:55)으로 잡지만, 수단은 전부 **컨텍스트 층**이다 — 파일 시스템 메모리를 잘 만들면 *"you would have the feeling of continual learning because your agents would get better at the individual (…) tasks"*(08:20~08:28). 그리고 인밴드 메모리가 보지 못하는 **세션 간·함대 전체의 패턴**을 배치로 메모리에 되먹이는 [[agent-dreaming|dreaming]]을 *"close the loop"*(26:10~26:12)의 장치로 둔다. 09-24 실무자 표의 **컨텍스트·토큰 공간 층**에 해당하고, 가중치 갱신은 나오지 않는다. ⚠️ *"feeling of"* — 화자 스스로 '느낌'이라 한다. ⚠️ ko는 01:55~01:59에서 continual learning을 **"배움의 길 … 지속적으로 연주"** 로 옮겼다.

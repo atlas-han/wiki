@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
-related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search]
+related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search, ai-data-exposure, lineage-driven-risk-visibility]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-ai-data-exposure-hidden-risk]
 created: 2026-09-08
-updated: 2026-09-29
+updated: 2026-10-01
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -130,3 +130,13 @@ updated: 2026-09-29
 - 09-10 [[tech-bridge-agent-to-agent-as-search]]의 *수동 → RAG → 에이전틱 검색* 3단계와 **합치**한다. 이번엔 RAG 프레임워크를 만든 쪽의 서술이다.
 - 이 페이지의 미해결 *"청킹·임베딩·재랭킹 등 구현 층위"* 에 **청킹보다 앞선 층**이 생겼다 — PDF가 좌표 붙은 글리프와 선분으로 된 표라서, 청킹할 텍스트 자체를 먼저 만들어야 한다(08:57~09:11).
 - ⚠️ 당사자 진술(파싱·추출 제품 판매자). 벡터 검색은 버려지지 않고 BM25·grep·읽기·스크롤과 함께 **도구 세트의 하나**로 남는다(19:48~19:52).
+
+## 2026-10-01 — RAG 파이프라인이 데이터 노출 지점으로
+
+[[tech-bridge-ai-data-exposure-hidden-risk]]([[jeff-crume|Jeff Crume]] / [[ibm|IBM]])는 RAG를 처음으로 **보안 관점**에서 다룬다. 성능·검색 품질이 아니라 **민감 데이터가 들어오고 형태가 바뀌는 곳**이다.
+
+- 아키텍처의 한 칸: *"Along with that prompt, we may augment that with other data sources. So, retrieval augmented generation."*(02:03~02:10)
+- 감시 대상: *"I need to look at rag pipelines, see what information is coming into the system that way. I'm going to look at vector databases, which are the heart of a lot of these generative AI models."*(05:18~05:29)
+- 변환 주체: *"data gets transformed by rag[=RAG], AI agents and systems"*(09:57~10:04) → [[lineage-driven-risk-visibility]]
+
+09-24 Oracle 편의 적재 단계 *PII 가리기* 가 변환이 민감도를 **줄이는** 쪽이라면, 이 편의 우려는 변환이 민감도를 **숨기는** 쪽이다(⚠️ 위키의 대응). ⚠️ ko는 02:09의 RAG를 *"세대가 증강됨 회복"* 으로 깼다(05:20에서는 *"RAG 흐름"* 으로 바르게 씀). → [[ai-data-exposure]]

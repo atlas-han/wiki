@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-10-01
 ---
 
 # Claude Code
@@ -174,3 +174,7 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - **스킬 디렉터리를 가리키는 환경 변수**가 있다 — *"no other harness supports this right now I believe"*(22:52~23:04).
 - **자기 작업을 자기가 리뷰하면 높게 매긴다**(Codex와 공통, 08:02~08:08).
 - ⚠️ **마켓플레이스** — *"the claude code one for sure doesn't work particularly well"* — 업데이트가 안 되고 캐싱 문제(1:02:38~1:02:50). *"Anthropic[] has still not adopted agents.md"*(40:51~40:54).
+
+## 2026-10-01 — CLAUDE.md가 컨텍스트 엔지니어링 1년의 출발점으로 ([[tech-bridge-anthropic-dreaming-memory]])
+
+[[anthropic|Anthropic]] 응용 AI 팀의 [[lamis-mukta|Lamis Mukta]]가 지난 1년의 타임라인을 *"these Claude MD files that we launched with Claude code"*(03:34~03:36)에서 시작한다 — *"kind of unreasonably effective"*(03:39~03:40), 그러나 세션 시작에 주입하니 길어질수록 *"context bloat"*(04:14~04:16). 이어 memory tool → 스킬 → 파일 시스템 메모리로 간다(→ [[context-engineering]]). 인밴드 메모리의 예로도 Claude Code를 든다 — 새 세션은 *"largely like focusing on that specific context"*(15:18~15:24). → [[agent-dreaming]]. 청중이 *"the cla code leak and the memory stuff. The dreaming stuff"*(28:38~28:41)를 언급하지만 무엇인지는 발화되지 않는다 — ⚠️ 이 위키는 연결하지 않는다. ⚠️ ko는 25:06에서 CLAUDE.md를 **"클로드 의학박사"** 로 옮겼다.

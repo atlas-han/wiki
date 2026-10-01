@@ -3,11 +3,11 @@ title: Token Roles
 type: concept
 category: pattern
 tags: [agent, token-economics, model-routing, evaluation, memory, anthropic]
-related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth, fixed-budget-alpha, all-or-nothing-accuracy, true-cost-to-perfect-answer, strategy-primitives]
+related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth, fixed-budget-alpha, all-or-nothing-accuracy, true-cost-to-perfect-answer, strategy-primitives, agent-dreaming]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory]
 created: 2026-09-02
-updated: 2026-09-18
+updated: 2026-10-01
 ---
 
 # Token Roles
@@ -160,3 +160,7 @@ Angela 본인의 수동 버전도 대담에 나온다 — 마음에 안 드는 �
 - 장기 목표: **모델·플랫폼이 전략을 동적으로 구성** → [[self-harness]] · [[dynamic-workflows]]와 같은 방향.
 
 > ⚠️ 이 페이지의 이름 경고는 유지된다 — 발표 제목이 *"tokens should have jobs"* 이지 *token roles* 가 아니다. ⚠️ 벤치의 과제 수·모델·평가자 없음, 채점·회고 수치 없음, 화자 스스로 *"미미한 차이"*. ⚠️ ko가 *executor* 를 **"유언집행자"** 로, *600,000 tokens* 를 **"60만 달러"** 로, *outcomes* 를 **"결과"** 로 옮겼다 — raw 헤더 참조.
+
+## dreaming에 구조가 붙다 (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
+
+세 역할 중 **dreaming**이 별도 발표로 풀렸다 — 인밴드 메모리가 과제와 메모리 큐레이션 사이에서 자원을 나누는 문제에 대한 답으로, *"dedicated capacity i.e. token spend which is specifically directed towards helping agents learn better"*(24:16~24:23). 즉 **회고에 토큰 예산을 따로 주는 것**이 이 페이지의 논지(토큰에 실행 말고 다른 일을 준다)와 정확히 겹친다. 비용 반론(*"that sounds really expensive"*)에는 원샷이 늘어 비용이 내려간다고 답한다(24:25~24:46) — ⚠️ 이번에도 수치는 없다. 구조·사람 게이트는 → [[agent-dreaming]].

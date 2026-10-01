@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory]
 created: 2026-05-25
-updated: 2026-09-29
+updated: 2026-10-01
 ---
 
 # Context Engineering
@@ -180,3 +180,16 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 ## 2026-09-29 — "컨텍스트가 스택 위로 올라갔다"
 
 [[jerry-liu|Jerry Liu]]([[tech-bridge-llamaindex-document-context-layer]])의 관찰: 생성형 AI의 *"first two and a half years"* 에는 컨텍스트 창을 넘치지 않게 관리하는 것이 화두였지만, compaction·long context가 발전하면서 *"more and more of the conversation is actually how do you just hook up the right MCP servers and skills and tasks to the agent"*(03:15~03:21) — *"context is moving up the stack"*(02:55~02:57). 이 페이지의 **창 안 관리**(compaction·trimming) 축에서 **창 밖 조달**([[model-context-protocol|MCP]]·[[agent-skills|스킬]]·문서 파싱) 축으로의 이동이다 → [[document-context-layer]]. ⚠️ ko는 *two and a half* 를 **"1년 반"** 으로 옮겼다(03:01).
+
+## 2026-10-01 — Anthropic 응용 AI 팀의 1년 회고 ([[tech-bridge-anthropic-dreaming-memory]])
+
+[[lamis-mukta|Lamis Mukta]]의 논거: *"the intelligence alone is not going to compound because they need this context"*(02:18~02:22), 그 컨텍스트는 *"often kind of orthogonal to the model intelligence"*(02:26~02:30)라 새 모델도 조직에서 무엇이 필요한지 모른다 — 그래서 컨텍스트 엔지니어링은 모델이 좋아져도 *"multiplying the intelligence"*(02:46~02:51). 지난 1년의 네 정거장:
+
+| 정거장 | 남은 교훈 | 드러난 한계 |
+|---|---|---|
+| CLAUDE.md | 사람이 읽고 사람·에이전트가 같이 쓰는 마크다운 — *"kind of unreasonably effective"*(03:39~03:40) | 세션 시작 주입 → *"context bloat"*(04:14~04:16) |
+| memory tool | 언제 읽고 쓸지 에이전트가 정하는 **인밴드** 자율 | 자원 분할·세션 간 가시성 없음(15:37~16:41) |
+| 스킬 | progressive disclosure — 책장에서 필요한 책만 꺼낸다(06:16~06:48) | 무엇이 스킬이 될지 아직 사람이 정한다(06:54~07:07) |
+| 메모리 = 파일 시스템 | 전용 도구 대신 bash·grep 검색 — 검색이 progressive disclosure를 닮는다(07:47~07:49) | 프로덕션의 동시성·권한 → [[production-memory-guardrails]] |
+
+그 위에 세션 밖의 [[agent-dreaming|dreaming]]. 요약의 첫 줄은 *"do the simple thing that works. Context management uh makes such a huge difference to your agent performance"*(24:55~25:02). 위 09-29 Jerry Liu의 *"컨텍스트가 스택 위로 올라갔다"* 와 같은 방향 — 창 관리에서 **지식·메모리 관리**로. ⚠️ ko는 24:56에서 *context management* 를 **"경영진 맥락"** 으로 옮겼다.
