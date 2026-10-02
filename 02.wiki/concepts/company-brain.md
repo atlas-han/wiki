@@ -6,9 +6,9 @@ tags: [company-brain, wiki, shared-context, access-control, knowledge-base, codi
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
 related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent, codebase-gardening]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-10
-updated: 2026-09-26
+updated: 2026-10-02
 ---
 
 # 회사 두뇌
@@ -112,3 +112,15 @@ updated: 2026-09-26
 이 페이지에 **처음 붙는 반대 입장**이다. 이 페이지의 소스들이 *조직 지식을 어디에 쌓고 누가 보고 누가 책임지나* 를 물었다면, 이 화자는 **쌓지 말고 필요할 때 도구로 가져오라**는 쪽이다([[agent-knowledge-sourcing]] 라우팅 표의 *"바깥에서 실제로 조회"* 행 — MCP·커넥터 쪽). 그리고 같은 발표에서 **축적은 다른 곳에 한다** — *"코드베이스가 최고의 기억 형태"*(→ [[codebase-gardening]]).
 
 > ⚠️ **근거는 단언뿐**이고, 이 페이지가 다룬 **권한·기밀·책임**(누가 볼 수 있는가, 잘못 가져왔을 때 누가 책임지나)에는 답하지 않는다. 화자는 **커넥터 제품을 만드는 쪽**이다. ⚠️ ko 자막은 *"어떤 사람들은 이걸 회사 두뇌라고 부른다"* 를 **"이곳이 바로 회사의 두뇌입니다"** 로 옮겨 **반론이 동의처럼** 읽힌다.
+
+## 세 번째 형식 — 원천 기록을 전부 DB에, 에이전트엔 SQL (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[conductor|Conductor]]의 사내 에이전트 **CIA(Conductor Internal Agent)** 는 *"the centralized database of everything that's happening in the organization"*(07:16~07:21)이다. Slack 새 메시지를 집어 *"save it to a Postgress[=Postgres] uh uh table"*(07:28~07:31), Discord의 사용자 버그 요청도 같게, 회의는 녹음해 넣는다(07:31~07:40). 이름은 *"feed the beast"* — *"you want them to have as much information and as much context as they can have about the way you guys specifically work"*(07:48~07:53). 처방: *"just put everything in a database and then give your agent a SQL tool and let it handle uh uh handle the rest"*(08:05~08:13).
+
+| | PromptQL (09-10) | Vercel (09-19) | **Conductor CIA (10-02)** |
+|---|---|---|---|
+| 담는 것 | 사람이 다듬은 지식 | 에이전트용 시맨틱 레이어 | **원천 기록 그대로**(메시지·버그 요청·회의 녹음) |
+| 형식 | 링크된 마크다운 | grep 가능한 파일 | **Postgres 테이블 + SQL 도구** |
+| 쓰기 | 에이전트 제안 → 사람 승인 | 질의 증류 | **자동 수집** |
+
+> ⚠️ **Contradiction: 자동 추가 금지 vs 전부 자동 수집.** 이 페이지의 셋째 구성 요소(*자동 추가 금지* → [[no-silent-write]])와 CIA는 정반대로 보인다. 다만 같은 발표에서 화자는 큐레이션 문서(docs·CLAUDE.md·스킬)를 **[[slop-free-zone]]** 으로 따로 엄격히 다루고, Slack은 *"we also assume that anything written in Slack is slop free"*(06:02~06:05)로 둔다 — **원천 기록은 자동, 다듬은 지식은 사람**이라는 분업으로 읽힌다(⚠️ 위키의 정리, 화자가 명시하지 않음). CIA의 **접근 권한·민감 정보** 처리는 발화되지 않는다 — 이 페이지가 중시한 *누가 볼 수 있는가*가 빈칸이다. 근거로 든 트윗(08:01)은 원문이 자막에 없다.

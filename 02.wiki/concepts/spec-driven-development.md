@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons]
 created: 2026-08-29
-updated: 2026-09-27
+updated: 2026-10-02
 ---
 
 # Spec-Driven Development
@@ -104,6 +104,19 @@ Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven
 - **OpenSpec 대응표** — propose·explore = plan, apply = implement, archive = replanning(55:10~55:20).
 
 > ⚠️ **Contradiction: 계획을 믿는가.** [[tech-bridge-pstack-third-party-review]]의 [[lauren-tan|Lauren Tan]]은 *"계획을 믿지 않는다, 최고의 사양은 코드"* 이고 Pstack이 OpenSpec류가 아니라고 구분한다. 풀코스는 계획·스펙을 개발자의 주 업무로 둔다. 전자는 자리 잡은 코드베이스의 운영, 후자는 greenfield에서 출발 — 대상이 다르다는 점만 표시한다.
+
+## 세 번째 영상 소스 — 엔터프라이즈 flavor: use case 스펙, plan/tasks 없음 (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+스위스 엔터프라이즈 Java 컨설턴트 [[simon-martinelli|Simon Martinelli]]의 발표. SDD를 *flavor*로 나누고, [[kiro|Kiro]] · [[github-spec-kit|Spec Kit]] · BMAD Method · Tessl 도구를 *"too developer centric"*(03:20~03:24)으로 묶은 뒤 자기 프로세스 [[ai-unified-process|AI Unified Process]]를 내놓는다.
+
+- **스펙 = system use case + entity model** — 요구공학자·PO·BA가 쓴다. user story는 use case의 한 flow이고 *"use cases are better than user stories because they are simply bigger"*(12:29~12:31). ⚠️ 설명란·ko의 "SysML 유스케이스"는 번역 트랙 표기, en-orig는 *"system use cases"*.
+- **plan·task 단계 생략** — *"I skip the plan task phase"*(06:01~06:04). 그 자리를 스킬이 채운다: *"the skills must match the outcome"*(09:13~09:17).
+- **brownfield = 스펙 역설계** — 코드·테스트·문서에서 use case·entity model을 뽑아 다시 생성(10:09~10:32).
+- **waterfall 아님** — *"we don't do big upfront design. We just go use case by use case."*(28:50~28:51)
+- **specs are not enough** — *"you need to harness you need all the context around that"*(25:10~25:13). → [[harness-engineering]]
+- **shift left** — *"everything shifts left to requirements engineering"*(26:43~26:45).
+
+> ⚠️ **Contradiction: plan/tasks와 스펙 형식.** 이 페이지의 Spec Kit 코어는 Spec(사용자 스토리) → **Plan → Tasks** → Implement. Martinelli는 plan/tasks 없이 use case에서 바로 코드로 간다. 또 09-27 풀코스의 *"스펙은 에이전트를 통해 고친다(직접 편집은 drift)"* 와 달리, 요구공학자가 markdown을 **직접 고치고** 재생성한다(26:33~26:37, 29:28~29:52). ⚠️ 셋 다 효과 측정은 없다.
 
 ## References
 

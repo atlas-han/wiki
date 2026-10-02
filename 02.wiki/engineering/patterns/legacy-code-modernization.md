@@ -6,9 +6,9 @@ tags: [legacy, modernization, migration, architecture, cicd, technical-debt, age
 aliases: [레거시 현대화, 현대화의 세 축]
 related: [technical-debt, legacy-skills-gap, syntactically-correct-behaviorally-wrong, risk-proportional-human-review, greenfield-vs-brownfield-agent-risk, refactoring, ai-native-sdlc]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-02
 ---
 
 # 레거시 코드 현대화
@@ -76,6 +76,18 @@ updated: 2026-09-18
 ## 표시해 둔 것
 
 > ⚠️ **수치 근거 없음** — *몇 달 → 몇 주*, *시간의 절반*. **도구·제품·사례 0개.** *"의도는 유지된다"*(번역)와 *"동작이 틀릴 수 있다"*(한계)가 같은 영상 안에서 정리되지 않는다. **"가장 큰 위험을 수반하는 결정"의 예시가 없다.**
+
+## 스펙 역설계로 현대화 — 번역은 lift and shift (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]](엔터프라이즈 현대화 8년, 스위스 최대 도매업체 ERP 현대화 중)는 코드·테스트·문서에서 **use case + entity model을 역설계**하고, 업무 담당자가 검토한 뒤 새 코드를 생성한다(10:09~10:32). → [[ai-unified-process]]
+
+> *"there are a lot of ids that we can directly transform maybe from cobalt[=COBOL] to Java. So that's also something that anthropic is is telling us but that never worked. So we did that like 30 years ago cobalt to C or cobalt to C++"* (10:32~10:46) · *"modernization is not lift and shift modernization is rethinking how people are working with the software"* (10:52~10:59)
+
+- 스펙을 거치므로 **현대화 중 새 기능**이 가능하다 — 2년 전 원칙은 *"the exact same system just in another technology"*(11:27~11:30)였다.
+- 리뷰 양은 모듈 criticality에 비례 → [[risk-proportional-human-review]]
+- 아키텍처 목적지: 마이크로서비스 500개도 거대 모놀리스도 아닌 [[self-contained-systems|self-contained system]].
+
+> ⚠️ **Contradiction: AI 번역의 자리.** 위 IBM 편은 AI의 두 자리 중 하나로 **번역**(COBOL→Java, *"논리와 의도는 유지"*)을 든다. Martinelli는 같은 예를 *"that never worked"* 라 한다. 두 소스 모두 *현대화 ≠ 번역* 에서는 같고, 갈리는 것은 번역이 **쓸모 있는 중간 단계**인가다. *"anthropic is telling us"* 가 무엇을 가리키는지는 발화되지 않는다. 또 IBM 편의 아키텍처 축 *모놀리스 → 독립 서비스* 에 대해 Martinelli는 **과도한 분할(distributed big ball of mud)** 을 경고하고 서비스 크기를 AI 컨텍스트로 정하라고 한다.
 
 ## References
 

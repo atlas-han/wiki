@@ -6,9 +6,9 @@ tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comm
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
 related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-02
 ---
 
 # 코드베이스 정원 가꾸기
@@ -87,3 +87,7 @@ updated: 2026-09-26
 - [[tech-bridge-lauren-tan-2000-prs]] — first-seen
 - [[tech-bridge-lauren-tan-trusting-agents]] — 같은 화자의 09-12 워크숍(패턴 복제 = 하드 강제의 근거)
 - [[lauren-tan]] · [[dune-architecture]] · [[hard-vs-soft-enforcement]] · [[organic-architecture]] · [[executable-standards]] · [[shortest-path-architecture]]
+
+## 도입 전 점검표 — Agent Readiness (2026-10-02 · [[tech-bridge-factory-software-factory]])
+
+[[factory-ai|Factory]]의 [[tereza-tizkova|Tereza Tížková]]가 같은 직관을 **조직 도입의 관점**에서 말한다: AI 도입은 *"a bit of power law"*(16:54~16:57) — 준비 안 된 코드베이스에서는 *"make your code degrading"*(17:09~17:12), *"sometimes AI really makes a mess and this can really compound"*(17:32~17:39). 처방은 **[[agent-readiness]]** (신규) — 재현 가능한 개발 환경·테스트·문서·스타일·린터 점검(18:06~18:25). 이 페이지가 **도입 후 정원 가꾸기**라면 그쪽은 **도입 전 위생 점검**이다. ⚠️ 근거로 든 *"data from Stanford"*(17:21)와 *"nice correlation"*(17:55~18:03)은 연구 이름·수치가 없다.

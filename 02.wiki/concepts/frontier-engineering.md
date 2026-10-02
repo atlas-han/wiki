@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, kiro, amazon, habits]
 related: [agent-org-adoption, harness-engineering, spec-driven-development, verifiable-goals, agent-harness-design]
 first-seen: tech-bridge-frontier-engineering
-sources: [tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-andrew-ng-ai-opportunity]
+sources: [tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-08-30
-updated: 2026-08-31
+updated: 2026-10-02
 ---
 
 # Frontier Engineering
@@ -60,3 +60,12 @@ DHH 클립([[tech-bridge-dhh-agent-productivity]])은 "사람은 루프 밖"을 
 - [[tech-bridge-dhh-agent-productivity]] · [[dhh]] · [[omarchy]]
 - [[tech-bridge-ai-native-skills]] · [[agent-skills]]
 - [[tech-bridge-andrew-ng-ai-opportunity]] · [[andrew-ng]]
+
+## ⚠️ 반대 프레이밍 — "최전선 *가까이*", 그리고 사람은 가운데 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]도 *frontier*를 말하지만 결론이 다르다.
+
+- **near vs at**: *"Staying near the frontier means you are always trying the latest things basically the day they come out"*(01:41~01:47)이면서 *"there is a danger if you are at the frontier"*(03:00~03:06) — 워크플로만 다듬다 일을 못 한다. → [[dont-beat-the-market]]
+- **사람의 자리**: *"I don't think the future should be we are like managing swarms of agents and we are like factory line managers"*(15:14~15:22), *"I want to feel like a human at the center of it all"*(15:35~15:39). → [[orchestras-not-factories]]
+
+> ⚠️ **Contradiction: 사람은 루프 밖인가, 가운데인가.** 이 페이지의 3행동(*hands-off*, *드문 개입*, *병렬 에이전트로 유휴 최소화*)은 Holtz가 거부하는 *swarm을 관리하는 라인 관리자* 그림과 가깝다. 다만 Holtz도 *"most of the time I can zoom out"*(15:12~15:14)이라 하고 그의 제품은 병렬 에이전트 관리 도구다 — **작업량보다 은유와 사람의 자리에 대한 태도가 갈린다.** 양쪽 다 비교 측정은 없다.

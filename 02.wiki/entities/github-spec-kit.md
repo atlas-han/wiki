@@ -6,9 +6,9 @@ tags: [github, spec, cli, copilot, agent]
 links:
   - https://github.com/github/spec-kit
   - https://github.github.io/spec-kit/
-sources: [tech-bridge-spec-driven-development, tech-bridge-sdd-full-course]
+sources: [tech-bridge-spec-driven-development, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons]
 created: 2026-08-29
-updated: 2026-09-27
+updated: 2026-10-02
 ---
 
 # GitHub Spec Kit
@@ -31,6 +31,10 @@ GitHub이 공개한 **스펙 주도 개발 하니스**. `specify` CLI로 저장�
 - ⚠️ 강좌의 열거에는 **`specify` 단계가 없다**(en-orig 그대로). 08-29 편 데모의 `/speckit.specify`와 다르다 — 강좌가 생략한 것인지 발화의 누락인지 확인하지 않았다.
 - 대안으로 **OpenSpec**(Fission AI, propose · explore · apply · archive)을 나란히 두고, 둘 다 *"branch management, verification scripts, and opinionated spec document formats"*(55:26~55:34)를 갖췄다고 한다. 권고는 채택보다 **자기 워크플로를 다듬는 참고**(55:35~55:39).
 - ⚠️ **constitution의 뜻이 다르다** — Spec Kit(08-29 편)은 규칙, 강좌는 mission · tech stack · roadmap. [[spec-driven-development]] 참조.
+
+## "too developer centric" — 엔터프라이즈 실무자의 평 (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]]는 [[kiro|Amazon Kiro]] · BMAD Method · Tessl 도구와 함께 Spec Kit을 *"great tools"* 라 하면서도 *"they are all in my opinion at least too developer centric"*(03:13~03:24)이라 묶는다. 대안은 요구공학자가 쓰는 use case + entity model에서 **plan/tasks 없이** 바로 구현하는 [[ai-unified-process|AI Unified Process]]. Spec Kit에 대한 구체 비판(커맨드·산출물)은 없다 — 도구 일반의 흐름(PRD → plan → tasks → implement)을 Kiro를 예로 설명할 뿐이다(05:49~06:01).
 
 ## References
 

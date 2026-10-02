@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-12
-updated: 2026-09-28
+updated: 2026-10-02
 ---
 
 # AI 슬롭
@@ -160,3 +160,9 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 - **모델별 슬롭 tell.** Gemini의 이미지 hover 애니메이션, Codex의 나쁜 자간·과한 둥근 모서리·hairline border(44:07~44:36) — 슬롭이 **모델마다 다르다**. → [[cross-harness-skill-compilation]]
 
 ⚠️ 수치 없음. 슬롭 **판정**은 화자도 모델에게 맡기지 못한다(*"models are particularly bad at evaluating taste"* 56:48~56:53) → [[taste-vs-judgment]].
+
+## 네 번째 축 — "어디서" 막을 것인가 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+정의(Taste Labs)·측정·예방(09-15)·제작자의 처방(09-28)에 이어, [[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]가 **구역**을 더한다 → [[slop-free-zone]]. *"a slot[=slop]-free zone is a part of the codebase or a part of the app that requires really strict human review"*(05:05~05:17) — 모든 곳의 슬롭을 막는 게 아니라 **엄격한 곳(migrations·CLAUDE.md·스킬)과 느슨한 곳을 나눈다**: *"quite careful with certain parts of our codebase and then very loose with other parts"*(05:27~05:31).
+
+> ⚠️ 같은 발표가 *"anything written in Slack is slop free. It's it's not written by the AI, it's written by a human"*(06:02~06:07)을 **가정**한다 — 이 페이지의 *"AI 슬롭 이전에 인간 슬롭이 있었다"*(Lauren Tan)와, 사람이 AI 출력을 붙여 넣는 현실 둘 다와 부딪힌다.

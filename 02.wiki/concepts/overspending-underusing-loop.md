@@ -6,9 +6,9 @@ tags: [token-economics, adoption, budget, fomo, austerity]
 aliases: [둠 루프, overspending and underusing, 토큰 맥싱 악순환]
 related: [trusted-throughput, token-roles, model-mixing-economics, agent-roi-measurement, agent-org-adoption, compute-constrained-growth, value-maxing, token-minimization-trap]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory]
 created: 2026-09-13
-updated: 2026-09-24
+updated: 2026-10-02
 ---
 
 # 과지출·저활용 둠 루프
@@ -59,3 +59,9 @@ updated: 2026-09-24
 - **긴축이 무엇을 자르는가** — 명백한 낭비(큰 도구 카탈로그·낡은 컨텍스트)를 지나 **작업 설명·도메인 제약·아키텍처 컨텍스트**까지, 그 결과 *입력 500 토큰 절약 → 디버깅·재작업 5,000 토큰*(04:04~04:10, ⚠️ 가상 예시). → [[token-minimization-trap]]
 
 > ⚠️ Contradiction: 이 페이지(Piras)는 맥싱 ↔ 긴축의 **순환**(FOMO가 차오르면 재시도)을, IBM 계열 편은 맥싱 → 최소화 → 가치의 **단계적 진행**(*"첫 번째 장은 [도입]에 대해 다루었[고], 다음 장은 가치"*, 07:57~08:02)을 그린다. 어느 쪽도 조직 사례로 뒷받침하지 않는다. → [[value-maxing]]
+
+## Coinbase 차트, 다르게 읽기 (2026-10-02 · [[tech-bridge-factory-software-factory]])
+
+[[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]])도 Coinbase CEO의 트윗 차트를 든다 — *"they continue growing and token maxing but they stopped spending so much money"*(05:30~05:35). 방법으로 넷을 꼽는다: 사람별 기본 모델(프런티어를 기본값으로 밀지 않기), 캐싱, **지출 한도 없이 결과를 보여 달라**, 라우팅(05:36~06:06).
+
+> ⚠️ **Contradiction: 같은 차트(로 보이는 것)의 평가.** 이 페이지의 첫 소스(마우스파워 편)는 Coinbase를 *"좋은 출발이지만 문제는 여전히 토큰에 너무 집중돼 있다"* 로 유보했다. Factory 편은 **토큰 소비가 계속 느는 것을 문제 삼지 않고**(*"token maxing"*) 지출이 갈라진 것을 성공으로 든다. 다만 *지출 한도 없이 결과를 요구* 한다는 레버는 이 페이지의 처방(**결과로 추적**)과 같은 방향이다. 두 소스 모두 차트 수치는 화면뿐이고, 같은 차트인지는 미확정.

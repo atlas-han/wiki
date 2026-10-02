@@ -1742,3 +1742,37 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 두 편을 **병렬 서브에이전트**로 나눴고, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. 09-30 교훈대로 완료 통지 후 `ListAgents`·`git status`로 파일 존재를 확인했고, frontmatter 중복 키·깨진 wikilink 검사도 통과. 멤버 전용 영상은 이제 `--print` 목록에서 **줄 자체가 빠지고 stderr ERROR로만** 보인다 — 15편 중 12편만 나오면 stderr를 볼 것.
+
+
+## [2026-10-02] ingest | Tech Bridge — SDD를 실무에 적용하며 배운 교훈(Simon Martinelli) · 공장이 아니라 오케스트라(Charlie Holtz, Conductor) · 진짜 소프트웨어 팩토리(Tereza Tížková, Factory) (10-01 업로드 3편)
+
+`--playlist-end 15` 가 **12편** 반환 — 3편은 `subscriber_only` 로 stderr ERROR: 기존 `XyVUHSzKM2E`(Warp) · `8DRjkp_X8yY`(PR 병목)에 **신규 `wrii8VocfZU`**(제목·업로드일 미상). 페이지를 만들지 않았다. ⭐ **`cHsunDt0QUc`(Factory) `public` 전환**(`upload_date` 20261001). 신규 10-01 업로드 3편 ingest, 9편은 기존. 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, info.json에서 직접 확인), **429 없음**. Martinelli 편은 공식 챕터 없음(편집자 소제목, raw에 명시), 나머지는 공식 챕터(13·28)를 따랐다.
+
+**신규 source 3 · concept 8 · engineering 1 · entity 5**, index 실측 **664 → 681**.
+
+- `T3SWxxQFr4o`(30:41, **Simon Martinelli**) → [[tech-bridge-sdd-enterprise-lessons]]
+- `WWUxQgAZTu4`(16:56, **Charlie Holtz / Conductor**, AI Engineer World's Fair) → [[tech-bridge-conductor-orchestras-not-factories]]
+- `cHsunDt0QUc`(21:55, **Tereza Tížková / Factory**) → [[tech-bridge-factory-software-factory]]
+
+신규: [[ai-unified-process]] · [[self-contained-systems]] · [[simon-martinelli]] · [[orchestras-not-factories]] · [[slop-free-zone]] · [[dont-beat-the-market]] · [[charlie-holtz]] · [[conductor]] · [[software-factory]] · [[automatic-model-routing]] · [[deferred-tool-context]] · [[agent-readiness]] · [[factory-ai]] · [[tereza-tizkova]]
+
+보강(Martinelli 편): [[spec-driven-development]] · [[github-spec-kit]] · [[kiro]] · [[claude-code]] · [[agent-skills]] · [[harness-engineering]] · [[legacy-code-modernization]] · [[risk-proportional-human-review]] · [[shift-left-interventions]]
+
+보강(Conductor 편): [[company-brain]] · [[cloud-agent-delegation]] · [[multiplayer-agent-context]] · [[ai-slop]] · [[slop-cannon]] · [[frontier-engineering]] · [[ride-the-optimization-trajectory]] · [[ralph-wiggum-method]] · [[risk-proportional-human-review]] · [[value-maxing]] · [[claude-code]] · [[openclaw]] · [[fable-5-1]] · [[ai-engineer]] · [[software-factory]](반론 절)
+
+보강(Factory 편): [[model-mixing-economics]] · [[overspending-underusing-loop]] · [[generator-evaluator-pattern]] · [[agent-swarm]] · [[reward-hacking]] · [[verifiable-goals]] · [[codebase-gardening]] · [[toolbox-pattern]] · [[context-engineering]] · [[ralph-wiggum-method]] · [[sprint-contract]] · [[agent-visual-qa]] · [[adobe]]
+
+### 이번 실행의 구도
+
+같은 날 업로드된 세 편이 **소프트웨어 공장**의 앞·안·바깥을 본다. Factory 편은 공장 자체(생애주기 전체를 자율 루프로), Conductor 편은 그 은유에 대한 반론(*"I honestly kind of hate the term"* — 사람은 지휘자), Martinelli 편은 공장에 들어가는 입력(요구공학·스펙). 세 편은 서로를 언급하지 않는다. ⚠️ 모순 표시: Martinelli의 *plan/task 생략·use case 스펙* ↔ [[spec-driven-development]]의 기존 절차 · Factory의 *스웜 대신 순차* ↔ [[agent-swarm]] · Holtz의 *사람이 한가운데* ↔ [[frontier-engineering]]의 Amazon(사람 루프 밖) · Conductor 사내 에이전트의 자동 수집 ↔ [[company-brain]]의 PromptQL(자동 추가 금지) · Factory의 Coinbase 차트 성공 서사 ↔ [[overspending-underusing-loop]]의 09-12 유보.
+
+### 자막 주의
+
+- Martinelli 편: **설명란 'SysML 유스케이스'가 틀렸다** — en-orig는 *system use cases*(04:39~04:48), ko/en이 설명란과 같은 오류. ko가 *17 years* → "17살", *12 to 15 people* → 나이대, *"in a minute in a demo"* → "1분 만에 완료"(숫자 창작), *"I don't like PowerPoint"* → 좋아한다, Anthropic → "인류학", markdown → "가격 인하". 첫 일화의 도구는 en-orig *"Ventsurf"* vs ko/en "Cursor" — 판독 안 함.
+- Conductor 편: ko가 결론을 뒤집음(*"I don't want to be in my dark factory"* → "공장에 있고 싶다", 16:01~16:05). en-orig가 *slop* → **"slot"** 여섯 번(공식 챕터가 교정). *30,000 line PRs* → "3만 건의 구매 요청(PR)". `en`이 ko와 오류 공유(Conductor → "Driver") — 독립 근거 아님.
+- Factory 편: ko가 computer use 평가 반전(14:23), *nondeterministic* → "결정론자들"(10:28), 없던 문장 삽입(02:34), *"can't really quantify"* → "코딩을 할 수 있습니다"(19:29, `en`도 동일). 세 트랙 모두 **"factory.com"**(설명란 factory.ai). 13:28 챕터의 *브라우저 검증자*·*웹 앱* 은 자막에 없다(*virtual computer*) — 챕터가 발화보다 세다.
+
+### 운영 메모
+
+⚠️ **`/usr/bin/git`이 Xcode 라이선스 미동의로 막혔다**(*"You have not agreed to the Xcode license agreements"* — Xcode 업데이트 후로 보임). `xcode-select -p`가 Xcode.app을 가리킨다. `sudo xcodebuild -license`는 사람이 해야 하므로 **`/Library/Developer/CommandLineTools/usr/bin/git`을 직접 호출**해 pull·commit·push를 했다. 세 편을 **병렬 서브에이전트**로 나눴고 index·overview·log·[[tech-bridge]]·[[software-factory]] 반론 절·iconize·커밋은 오케스트레이터가 맡았다(software-factory 소유권은 Factory 에이전트에 명시). 완료 통지 후 `ListAgents`·`git status`로 파일 존재, frontmatter 중복 키·깨진 wikilink 검사.
+

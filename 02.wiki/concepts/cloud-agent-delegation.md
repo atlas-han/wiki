@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-09
-updated: 2026-09-13
+updated: 2026-10-02
 ---
 
 # 클라우드 에이전트 위임
@@ -81,3 +81,11 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-cursor-legacy-refactoring]] · [[cursor]] · [[cursor-cloud]]
+
+## "방목형 에이전트" — git worktree에서 클라우드 샌드박스로 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])의 원칙 5 *free-range agents*: *"Give them give them a sandbox where they that won't get killed, where they can explore your codebase, where they can work on really hard tasks, where they can they know that they're not going to get shut down when you close your laptop lid."*(08:25~08:36) 여기에 둘을 더한다 — **스스로를 더 띄울 기회**(*"opportunities to create more of themselves"* 08:39~08:40)와 **다른 에이전트·사람과의 협업**(08:44~08:46). 근거는 추세다 — 모델이 더 오래 돌고 *"there're going to be many more of them"*, 노트북에 갇히면 효과가 떨어진다(08:53~09:08).
+
+이 페이지에 **제품 이력으로서의 증언**이 처음 붙는다: *"Up until basically this week, every uh every task in conductor was built on a git work tree, but now they're in a cloud sandbox."*(10:06~10:12) — 로컬 병렬(worktree)에서 원격 샌드박스로의 이동. 샌드박스 위에 얹은 것은 **실시간 협업**(→ [[multiplayer-agent-context]])과 **에이전트가 스스로를 띄우는 API**(개인 [[openclaw|OpenClaw]]가 Telegram·Slack 메시지로 워크스페이스 생성, 12:58~13:53).
+
+> ⚠️ 샌드박스의 인프라·격리 수준·비용은 발화되지 않는다. 자사 신제품 데모(*"coming out this week"* 09:36~09:39)다.

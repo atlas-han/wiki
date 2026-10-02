@@ -5,9 +5,9 @@ category: technique
 tags: [qa, verification, multimodal, completeness, design]
 related: [generator-evaluator-pattern, agent-verification-skill, verification-bottleneck, skill-evals, multimodal-elicitation, design-handoff-friction]
 first-seen: tech-bridge-one-designer-plus-ai
-sources: [tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-02
 ---
 
 # Agent Visual QA
@@ -36,3 +36,7 @@ updated: 2026-09-15
 ## References
 
 - [[tech-bridge-one-designer-plus-ai]] · [[vincent-wendy]] · [[devin]]
+
+## 2026-10-02 — 실행형 검증자: 가상 컴퓨터에서 직접 클릭
+
+[[factory-ai|Factory]] Missions의 **user testing validator**([[tech-bridge-factory-software-factory]]) — *"really in the arena trying the things. So it doesn't care how it was made (…) It works in its virtual computer and it clicks on the stuff and really checks if everything works"*(13:33~13:45). 이 페이지의 *보고 빠진 것을 찾는* 검증을 **조작하며 동작을 확인**하는 쪽으로 넓힌다. 근거 사례: 다른 제품의 마이그레이션 결과가 *"wasn't interactive. It was just a dummy result"*(14:01~14:03). 화자는 이를 컴퓨터 사용·에이전트용 영속 VM의 진보 덕으로 돌린다(14:13~14:25). ⚠️ 챕터는 *"브라우저 검증자"* 라 했지만 발화에 browser·web app은 없다. ⚠️ ko는 이 대목에서 *"지금은 정말 별로"*(14:23)로 의미를 뒤집는다.

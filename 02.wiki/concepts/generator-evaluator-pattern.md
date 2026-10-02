@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory]
 created: 2026-05-25
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # Generator–Evaluator Pattern
@@ -284,3 +284,16 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 ## 후보 vs 프로덕션 — 변형 비교로서의 평가 (2026-09-30 · [[tech-bridge-wandb-aria-self-improving-agent]])
 
 [[wandb-aria|ARIA]]([[weights-and-biases|W&B]])의 오프라인 eval은 생성자를 **하나의 후보 변형**으로, 평가자를 **같은 태스크 위의 프로덕션 변형과의 비교**로 둔다 — *"run the candidate and production agent on it"*(04:06~04:11). 채점은 두 겹: 규범적(*"did we pass a task or not"* 10:01~10:03)과 상대적(되묻는 변형 vs 안 묻는 변형, 10:03~10:13). 궤적 검토도 ARIA에게 맡긴다 — *"review the roll out that it generated for itself or review some other rollout and decide what went wrong or what went well"*(06:46~06:51). **생성자·평가자가 같은 에이전트**인 구성이며, 이 페이지가 모아 온 격리 장치(다른 모델 judge, 앵커링 차단)는 언급되지 않는다. → [[yaml-agent-eval-pipeline]]
+
+## 검증자 둘 — 정적 scrutiny와 실행형 user testing (2026-10-02 · [[tech-bridge-factory-software-factory]])
+
+[[factory-ai|Factory]] **Missions**의 구조: 오케스트레이터 → 순차 워커 → 검증자, 검증자의 피드백은 처음으로 돌아간다. 이 페이지의 원칙이 그대로 박혀 있다 — *"the validators judge code that they didn't write"*(13:01~13:07). 그리고 **done의 정의를 코드 전에** — 오케스트레이터가 쓰는 **validation contract**, *"written before any code is done"*(13:07~13:14) → [[sprint-contract]].
+
+새로운 것은 검증자를 **둘로 나눈 축**이다:
+
+| 검증자 | 보는 것 | en-orig |
+|---|---|---|
+| **scrutiny** | 코드베이스·린터·타입·테스트 — *"really rigorous check of the code"* | 13:16~13:27 |
+| **user testing** | *"it doesn't care how it was made"* — 가상 컴퓨터에서 직접 클릭해 동작 확인 | 13:33~13:43 |
+
+사례: 다른 제품이 만든 마이그레이션 결과는 *"just a dummy result"*(14:01~14:03)였고, 클릭해 본 에이전트가 *"actually working and not just looking good in the code"*(14:09~14:13)를 가렸다 → [[agent-visual-qa]]. ⚠️ 고객 미션 16시간 중 **검증이 40%**(11:51~12:02, 1건) — 평가자 비용이 작지 않다는 일화. 검증자가 다른 모델인지는 미발화. → [[software-factory]]

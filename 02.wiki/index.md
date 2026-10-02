@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-10-01
 ## Entities
 
 ### Persons
+- [[simon-martinelli]] — 스위스 엔터프라이즈 Java 컨설턴트(17년), [[ai-unified-process|AI Unified Process]] 저자, 레거시 현대화 ([[tech-bridge-sdd-enterprise-lessons]]) ⚠️ 당사자 · 성은 설명란에만
+- [[charlie-holtz]] — [[conductor|Conductor]] 공동창업자. 가장 빠른 빌더들의 6원칙과 *공장이 아니라 오케스트라* ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 당사자 · 이름은 설명란에서
+- [[tereza-tizkova]] — [[factory-ai|Factory]] 소속 발표자. [[software-factory|소프트웨어 팩토리]] 3원칙 ([[tech-bridge-factory-software-factory]]) ⚠️ 성·링크는 설명란에만(자막 "Theresa/Teresa")
 - [[lamis-mukta]] — [[anthropic|Anthropic]] 응용 AI 팀(스타트업·창업자 담당). 컨텍스트 엔지니어링 1년 회고와 아웃오브밴드 메모리 정리 [[agent-dreaming|dreaming]] 발표 ([[tech-bridge-anthropic-dreaming-memory]]) ⚠️ 당사자 · 성은 설명란에만(자막 "Lamis")
 - [[roland-gavrilescu]] — [[introspection-dev|Introspection]] 공동창업자(전 xAI 에이전트 인프라). auto research 청사진 세 아이디어 — *루프가 제품* · *시스템 증류가 해자* · *와트당 가치 있는 작업* ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ 당사자 · 성은 설명란에서(자막 "Rowland")
 - [[zubin-aysola]] — [[weights-and-biases|W&B]]에서 [[wandb-aria|ARIA]]의 오프라인 eval·자기 개선 루프를 만드는 엔지니어 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 이름은 설명란 LinkedIn slug에서만(자막 "Zuban Isaola") · 확정 안 함
@@ -100,6 +103,7 @@ updated: 2026-10-01
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[factory-ai]] — Factory(factory.ai): Droid · Missions · 자동 모델 라우팅 · 지연 도구 컨텍스트 · Agent Readiness · plugins · AutoWiki. Adobe·EY 등 엔터프라이즈 고객 ([[tech-bridge-factory-software-factory]]) ⚠️ 벤더 · 자막은 세 트랙 모두 "factory.com"
 - [[introspection-dev]] — Introspection(introspection.dev): 에이전트 루프를 **agent recipes**로 증류해 버전 관리. pi.recipes(early release), Pi 하네스·Harbor 기반 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ 당사자
 - [[weights-and-biases]] — ML 실험 추적 회사, [[wandb-weave|Weave]]·[[wandb-aria|ARIA]] 제작사. 발표자가 *"coreweave Arya"* 라 부르지만 CoreWeave와의 관계는 소스에 없음 ([[tech-bridge-wandb-aria-self-improving-agent]])
 - [[microsoft]] — 하이퍼스케일러 · [[microsoft-copilot|Copilot]] 제작사 · [[openai|OpenAI]] 파트너. **위키 첫 Microsoft 1인칭 소스** ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
@@ -180,6 +184,7 @@ updated: 2026-10-01
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[conductor]] — 여러 코딩 에이전트를 동시에 돌리는 데스크톱 앱. git worktree → 클라우드 샌드박스, 실시간 협업 워크스페이스·모바일·API ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 당사자 데모
 - [[wandb-aria]] — W&B의 리서치 에이전트(*"general availability on Monday"*). 자기 오프라인 eval에서 hill climb — 데모에서 프로덕션 트레이스를 회귀 태스크로 바꾸고 `weave.log` 호출 문제에 프롬프트 패치 후보를 냄 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 결과 수치는 화면에만
 - [[microsoft-copilot]] — chat·co-work·code·**Autopilot** 네 폼팩터 묶음. Autopilot = 입력·출력에 사람이 있는 장시간 비즈니스 프로세스 에이전트 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
 - [[agent-365]] — Microsoft의 에이전트 관찰·거버넌스·정책·보안·FinOps 제품이자 Autopilot 호스팅 환경 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 수치 없음
@@ -242,6 +247,8 @@ updated: 2026-10-01
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[automatic-model-routing]] — 난이도 분류 → 임계값 → 임계값을 넘는 최저가 모델, 실패·장애 시 전환. *캐싱은 가격 결정 문제* ([[tech-bridge-factory-software-factory]]) ⚠️ "보수적 25%" 벤더 수치
+- [[deferred-tool-context]] — 짧은 도구 목록만 컨텍스트에 두고 호출 시점에 전체 정의를 로드 — *토큰 50% 이상 절감* ([[tech-bridge-factory-software-factory]]) ⚠️ 벤더 수치 · [[toolbox-pattern]]과 비교
 - [[taste-encoded-evals]] — 제작자의 taste를 eval로: 에이전트가 트레이스에서 패턴을 찾아 judge를 만들고, 사람은 **보정만**, 프로덕션 A/B(multi-armed bandit)로 사용자 동의를 확인한 뒤 레시피 승격 ([[tech-bridge-introspection-loop-is-the-product]]) > ⚠️ Contradiction: [[paul-bakaus|Bakaus]]의 *taste는 모델 수준에서 못 푼다*
 - [[document-parsing-for-agents]] — PDF는 인쇄용(좌표 붙은 글리프 · 선분으로 그린 표 · 읽기 순서 보장 없음). 파이프라인 / 원샷 VLM / **하이브리드** · ParseBench · 고정확도·저비용·초저지연 세 영역 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ Contradiction: [[mixedbread|Mixedbread]]의 *OCR 없이 비전으로*
 - [[automated-ai-research]] — 자동화된 AI 연구: 재귀적 자기 개선 주장을 빅랩 바깥에서 **스피드런으로 측정**. 접근 범위 세 트랙(가중치만 / arXiv만 / 전체) · **기록 경신 ≠ 발견** · AlphaEvolve식 발견 루프 제안 ([[tech-bridge-agents-vs-humans-optimizer-speedrun]]) ⚠️ 단일 실험 · 제안은 미공개
@@ -273,6 +280,7 @@ updated: 2026-10-01
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[software-factory]] — 코딩만이 아니라 신호 수집부터 검증·학습까지 개발 생애주기 전체를 자율로 도는 루프. 스웜도 컨설팅도 아님. [[defense-factory]]와 구분 ([[tech-bridge-factory-software-factory]]) > ⚠️ 반론: [[orchestras-not-factories]]
 - [[document-context-layer]] — RAG를 하네스와 컨텍스트 레이어로 나눴을 때의 컨텍스트 쪽: 파싱 · 시맨틱/저장 · 반복 가능한 문서 워크플로 세 층 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 당사자
 - [[system-1-model]] — 분류형 결정 모델을 하네스의 결정 지점(모델 라우터 · 위험 도구 호출 게이트 · 온라인 eval judge)에 두어 **LLM 호출을 대신**하게 하는 설계. Kahneman의 System 1/2 명명 ([[tech-bridge-jev-agent-harness]])
 - [[files-vs-database-agent-memory]] — 에이전트 메모리의 단기분은 파일에, 장기로 승격되면 DB로. **워크트리는 파일에 트랜잭션 일관성이 없어서 쓰는 우회책** ([[tech-bridge-oracle-agent-memory-harness]]) ⚠️ DB 벤더의 논지
@@ -294,6 +302,7 @@ updated: 2026-10-01
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[orchestras-not-factories]] — 사람은 공장 라인 관리자가 아니라 사람·에이전트 혼성 팀 한가운데의 지휘자 — [[software-factory]] 프레이밍에 대한 반론 ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 일화 근거 · 화자 회사명이 곧 은유
 - [[ai-data-exposure]] — AI 데이터 노출: 섀도우 AI·챗봇 입력·아키텍처 각 칸(학습·RAG·도구·하위 에이전트)·workforce 행위를 통한, **공격자 없는** 민감 데이터 노출. workload와 workforce를 구분 ([[tech-bridge-ai-data-exposure-hidden-risk]]) ⚠️ 벤더 해설 · 31% 수치 출처 없음
 - [[valued-work-per-watt]] — 최적화할 점수: 먼저 가치를 재고, 그 가치를 싸게 얻는지. Cursor·Cognition이 제품 → eval → 모델 순으로 갔다는 예 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ "per watt"의 실제 측정 단위 불명
 - [[software-marginal-cost]] — 보조금이 끝나면 소프트웨어가 **처음으로 한계비용**을 갖는다 — 좌석은 사용 권리가 된다(Nadella). [[transaction-cut-monetization]]과 대립 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
@@ -369,6 +378,10 @@ updated: 2026-10-01
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[ai-unified-process]] — 엔터프라이즈 SDD: system use case + 엔티티 모델 → 바로 코드, plan/task는 스킬이 대체, brownfield는 역공학으로 스펙화, *"워터폴이 아니라 use case 하나씩"* ([[tech-bridge-sdd-enterprise-lessons]]) > ⚠️ Contradiction: [[spec-driven-development]]의 plan/tasks 단계
+- [[agent-readiness]] — AI 도입은 power law: 재현 가능한 환경·테스트·문서·린터를 점검하는 코드베이스 위생 ([[tech-bridge-factory-software-factory]]) ⚠️ Stanford 데이터 출처 미상
+- [[slop-free-zone]] — 엄격한 사람 검토가 필요한 구역(마이그레이션은 CI 게이트, CLAUDE.md·스킬)을 정하고 나머지는 느슨하게 ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 설명란이 자막보다 셈
+- [[dont-beat-the-market]] — 최전선 *가까이*. *"왜 이 워크플로가 기본값이 아닌가?"* 를 묻고 진짜 alpha가 있는 곳에만 투자 ([[tech-bridge-conductor-orchestras-not-factories]])
 - [[agent-dreaming]] — 세션 밖에서 트랜스크립트 + 메모리 스토어를 배치로 분석해 실패 패턴의 근거·빈도와 함께 메모리 변경을 **제안**하고 사람이 수락하는 second-order 과정 ([[tech-bridge-anthropic-dreaming-memory]]) ⚠️ 당사자 · 수치 없음 · 09-18 드리머(직접 쓰기)와 모드 차이 미확정
 - [[production-memory-guardrails]] — 다수 에이전트가 공유하는 파일 시스템 메모리의 4원칙: 버전·롤백 · 쓰기 전후 해시 비교 동시성 · 층별 권한(조직 전역 읽기 전용) · 이식성 ([[tech-bridge-anthropic-dreaming-memory]]) > ⚠️ Contradiction: [[files-vs-database-agent-memory]]의 *DB로 가라*
 - [[lineage-driven-risk-visibility]] — 데이터를 출처 → 변환 → 전파 → 목적지 계보로 추적해, 변환·파생된 사본도 원본과 같은 위험으로 본다. 통합 뷰·AI 인지 분류·규제 보고 ([[tech-bridge-ai-data-exposure-hidden-risk]]) ⚠️ 요구사항 목록 · 측정 없음
@@ -540,6 +553,7 @@ updated: 2026-10-01
 - [[actix-sync-arbiter]] — CPU-bound 작업용 동기 actor 스레드 풀
 
 ### Patterns
+- [[self-contained-systems]] — UI·로직·DB를 한 레포에 담는 수직 분할 — AI가 필요한 코드가 한곳에. 순진한 마이크로서비스(*분산 big ball of mud*)와 거대 모놀리스 사이 ([[tech-bridge-sdd-enterprise-lessons]])
 - [[pets-vs-cattle]] — 인프라 일반 원칙, [[brain-hands-decoupling]]의 사상적 출처
 - [[twelve-factor-app]] — SaaS 앱 12원칙(config-in-env·stateless·dev/prod parity), cloud-native 토대 (sources: 1)
 - [[tree-sitter-llm-hybrid]] — 결정론적 파서(Tree-sitter) + LLM 분업의 코드 분석 패턴
@@ -698,11 +712,14 @@ updated: 2026-10-01
 - [[tech-bridge-wandb-aria-self-improving-agent]] — [[zubin-aysola|Zubin Aysola]] ([[weights-and-biases|Weights & Biases]]): **eval 도구 회사가 자기 에이전트를 자기 도구로 개선하는 1인칭 소스.** *"benchmarks, evaluations, the agents, and how you configure them are all covariant"* → [[wandb-weave|Weave]]로 양쪽 트레이스를 같은 포맷에 남기고 [[production-trace-eval-flywheel|프로덕션 실패·성공을 오프라인 태스크로]], [[research-production-agent-parity|연구=프로덕션 코드]](4시간 sync), [[yaml-agent-eval-pipeline|YAML 변형 병렬 평가]](886 태스크). 라이브 데모에서 [[wandb-aria|ARIA]]가 트레이스를 회귀 태스크로 바꾸고 프롬프트 패치 후보를 낸다. *"8개월째 코드를 안 썼다"* 지만 개선에 대한 생각은 면제되지 않는다 ([[tech-bridge]], 2026-09-29, **16:33**, 공식 챕터 19, ⚠️ 당사자 · 수치는 886·7주·*"about 66%"*(분모 없음)뿐 · **후보가 이겼는지는 화면에만** · 보안·승격 게이트 논의 없음 · ko가 *"weren't calling weave.log properly"* → **"올바르게 작동합니다"**, *"wasn't entirely certain"* → **"절대적으로 확신"**)
 - [[tech-bridge-ai-data-exposure-hidden-risk]] — [[jeff-crume|Jeff Crume]] ([[ibm|IBM]] Technology): **민감 데이터는 이미 노출됐고 AI가 그걸 보이지 않게 키운다.** "어떤 AI 도구를 쓰나"가 아니라 데이터가 AI 아키텍처 전 구간·직원 사용을 어떻게 흐르는지를 형태가 바뀌어도 추적하라 — [[ai-data-exposure]] · [[lineage-driven-risk-visibility]]. ⚠️ 벤더 해설 · 31% 출처 없음 · ko가 목표 문장을 뒤집음
 - [[tech-bridge-anthropic-dreaming-memory]] — [[lamis-mukta|Lamis Mukta]] ([[anthropic|Anthropic]] · AI DevCon): **컨텍스트 엔지니어링 1년 회고**(CLAUDE.md → memory tool → [[agent-skills|스킬]] → 파일 시스템 메모리)와 [[production-memory-guardrails|프로덕션 가드레일]], 인밴드 메모리의 한계 끝에 [[agent-dreaming|dreaming]] — 세션 밖 배치로 메모리 변경을 제안, 사람이 수락. [[managed-agents|Managed Agents]] API. ⚠️ 당사자 · 수치 없음
+- [[tech-bridge-sdd-enterprise-lessons]] — [[simon-martinelli|Simon Martinelli]] (스위스 엔터프라이즈 Java 컨설턴트 · AI DevCon/Tessl 추정): **엔터프라이즈·레거시에 SDD를 적용한 교훈** — 스펙 = 요구공학자가 쓰는 system use case + 엔티티 모델([[ai-unified-process]]), plan/task 단계를 건너뛰고 스킬이 메운다, 레거시는 역공학으로 스펙화, 500개 마이크로서비스도 거대 모놀리스도 아닌 [[self-contained-systems]], *"스펙만으론 부족 — 하네스가 필요"*, 모든 엔지니어링이 요구공학으로 shift-left ([[tech-bridge]], 2026-10-01, **30:41**, 공식 챕터 없음, ⚠️ 당사자 · ETH 연구·데모 시간 등 수치 출처 없음 · **설명란의 'SysML'은 en-orig *system use cases*의 오기** · 촬영 시점 미확정)
+- [[tech-bridge-conductor-orchestras-not-factories]] — [[charlie-holtz|Charlie Holtz]] ([[conductor|Conductor]] · AI Engineer World's Fair): **가장 빠른 빌더들의 6원칙** — 최전선 가까이 · [[dont-beat-the-market|시장을 이기려 하지 마라]] · [[slop-free-zone|슬롭 없는 구역]] · feed the beast([[company-brain]]) · 방목형 클라우드 에이전트 · [[orchestras-not-factories|공장이 아니라 오케스트라]] — [[software-factory]] 프레이밍에 대한 반론 ([[tech-bridge]], 2026-10-01, **16:56**, 공식 챕터 13, ⚠️ 당사자 · 수치는 일화뿐 · ko가 *"I don't want to be in my dark factory"* → **"공장에 있고 싶다"** 로 결론 반전)
+- [[tech-bridge-factory-software-factory]] — [[tereza-tizkova|Tereza Tížková]] ([[factory-ai|Factory]]): **[[software-factory|소프트웨어 팩토리]]의 정의와 3원칙** — agnostic([[automatic-model-routing|자동 모델 라우팅]], Coinbase 사례) · autonomous(Missions: 오케스트레이터 → **순차** 워커 → 검증자, validation contract) · always improving([[deferred-tool-context|지연 도구 컨텍스트]], [[agent-readiness]], plugins·AutoWiki). 사람은 how가 아니라 what ([[tech-bridge]], 2026-10-01, **21:55**, 공식 챕터 28, 09-28 멤버 전용 → 10-02 공개, ⚠️ 벤더 · 25%·50%·16시간 수치 미검증 · ko가 computer use 평가를 **반전**(14:23))
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 664 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 657 → 664, + 2026-10-01 Tech Bridge 2편: source 2 + concept 4 + entity 1)
+- 총 페이지 수: 681 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 664 → 681, + 2026-10-02 Tech Bridge 3편: source 3 + concept 8 + engineering 1 + entity 5)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-01 (Tech Bridge **2편**, **스물여드레 연속** — 09-30 업로드 2편. 같은 날 **에이전트 시대의 데이터**를 두 방향에서 — [[tech-bridge-ai-data-exposure-hidden-risk|IBM 편]]은 데이터가 AI를 통해 *새어 나가는* 쪽을, [[tech-bridge-anthropic-dreaming-memory|Anthropic 편]]은 에이전트가 데이터를 *기억으로 쌓고 정리하는* 쪽을. 멤버 전용 3편 건너뜀)
+- 마지막 ingest: 2026-10-02 (Tech Bridge **3편**, **스물아흐레 연속** — 10-01 업로드 3편, 그중 `cHsunDt0QUc`는 09-28 멤버 전용에서 공개 전환. 같은 날 **소프트웨어 공장**을 두고 찬반이 갈린다 — [[tech-bridge-factory-software-factory|Factory 편]]은 개발 생애주기 전체를 자율 루프로, [[tech-bridge-conductor-orchestras-not-factories|Conductor 편]]은 *"그 용어가 싫다"* 며 오케스트라를, [[tech-bridge-sdd-enterprise-lessons|Martinelli 편]]은 그 앞단의 스펙·요구공학을. 멤버 전용 3편 건너뜀)

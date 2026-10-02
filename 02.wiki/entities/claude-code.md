@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories]
 links:
   - https://code.claude.com/docs
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Claude Code
@@ -86,6 +86,10 @@ Claude Code 팀 엔지니어 3인이 자기 도구를 어떻게 쓰는지 증언
 Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베타 고객 Aura가 *"기성품 Claude 코드를 쓰는 것과 달리"* [[eve-framework|Eve]]로 처음부터 구축했다는 대목(14:15~14:26, ⚠️ 수치 없음).
 
 ⚠️ en-orig가 *Claude Code* 를 **"Cod code"** 로 반복 오인식했고 ko가 일부 자리에서 *Claude* 를 떨어뜨렸다 — raw 헤더 참조.
+
+## 2026-10-02 — 엔터프라이즈 SDD 데모의 실행기, 거의 빈 CLAUDE.md ([[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]]가 Spring PetClinic 역설계 스펙에 *implement* 한 마디로 의사 목록 화면을 만든다(약 1분 30초, ⚠️ 화자 진술 22:09~22:12). 도구명은 en-orig ASR *"flow code"*(15:47) — 설명란 해시태그 *#ClaudeCode* 로 판독. *"I don't run it here inside the ID[=IDE]. That's just for for demo purposes"*(15:52~15:56). CLAUDE.md는 *"has not much inside"*, 아키텍처·패키지 구조·도구 가이드라인을 **참조**만 하고 *"most of the things are in the skills"*(16:06~16:34). 근거로 ETH Zurich 연구를 들며 *"it's maybe even better to have none of those files than a big one"*(23:20~23:23) — ⚠️ 연구명·수치 미발화. 스킬 공유의 문제로 *"not everybody in the organization is maybe using the same agent"*(15:42~15:47). → [[ai-unified-process]] · ⚠️ ko는 CLAUDE.md를 **"DMD 흐름"**(16:07)으로 옮겼다.
 
 ## References
 
@@ -178,3 +182,10 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 2026-10-01 — CLAUDE.md가 컨텍스트 엔지니어링 1년의 출발점으로 ([[tech-bridge-anthropic-dreaming-memory]])
 
 [[anthropic|Anthropic]] 응용 AI 팀의 [[lamis-mukta|Lamis Mukta]]가 지난 1년의 타임라인을 *"these Claude MD files that we launched with Claude code"*(03:34~03:36)에서 시작한다 — *"kind of unreasonably effective"*(03:39~03:40), 그러나 세션 시작에 주입하니 길어질수록 *"context bloat"*(04:14~04:16). 이어 memory tool → 스킬 → 파일 시스템 메모리로 간다(→ [[context-engineering]]). 인밴드 메모리의 예로도 Claude Code를 든다 — 새 세션은 *"largely like focusing on that specific context"*(15:18~15:24). → [[agent-dreaming]]. 청중이 *"the cla code leak and the memory stuff. The dreaming stuff"*(28:38~28:41)를 언급하지만 무엇인지는 발화되지 않는다 — ⚠️ 이 위키는 연결하지 않는다. ⚠️ ko는 25:06에서 CLAUDE.md를 **"클로드 의학박사"** 로 옮겼다.
+
+## 2026-10-02 — Conductor를 낳은 도구, 그리고 "매일 인턴 귀에 속삭이는 말" ([[tech-bridge-conductor-orchestras-not-factories]])
+
+- **제품 기원**: [[conductor|Conductor]] 팀은 *"we were such power users of cloud[=Claude] code back in February of last year that we uh started building our whole workflow around cloud code and we started cloning our repo five times and then we discovered work trees"*(02:14~02:26) — Claude Code 여러 개를 병렬로 돌리던 사용 패턴이 멀티 에이전트 관리 앱이 됐다.
+- **CLAUDE.md = 슬롭 없는 구역**: *"if you had a a new intern (…) you had the opportunity to like whisper something in their ear every time they started working (…) And this is what the cloud MD or agents uh MD is."*(06:28~06:49) 최고 빌더들은 *"put an unusual amount of time into the CloudMD or their skill files"*(06:17~06:23). → [[slop-free-zone]]
+
+⚠️ en-orig는 Claude Code·CLAUDE.md를 일관되게 *"cloud code"*·*"cloud MD"* 로 들었고 ko는 *"클라우드 코드"*·*"클라우드 MD"*.

@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-02
 sources: []
 ---
 
@@ -191,6 +191,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-10-01*: [[tech-bridge]] **2편** ingest(09-30 업로드 2편). 같은 날 **에이전트가 다루는 데이터**를 반대 방향에서 본다. ① [[tech-bridge-ai-data-exposure-hidden-risk|Jeff Crume 편]]([[ibm|IBM]])은 *유출*: 섀도우 AI·챗봇 입력·RAG·도구·하위 에이전트를 거치며 민감 데이터가 **공격자 없이** 새어 나가고([[ai-data-exposure]]), 형태가 바뀐 파생 데이터까지 [[lineage-driven-risk-visibility|계보로 추적]]해야 한다 — 그런데 위협 모델에 prompt injection이 없다.
   ② [[tech-bridge-anthropic-dreaming-memory|Lamis Mukta 편]]([[anthropic|Anthropic]])은 *축적*: 메모리는 파일 시스템 + 에이전트 자율이 최선이되 프로덕션에선 [[production-memory-guardrails|버전·해시 동시성·권한·이식성]]이 필요하고, 인밴드 메모리의 한계를 [[agent-dreaming|dreaming]](세션 밖 배치 정리, 사람이 수락)으로 메운다 — 화자 스스로 *"DB 관행으로 돌아가는 중"*. [[files-vs-database-agent-memory]]와 부딪힌다.
   자막 쪽으로는 ⚠️ ko가 두 편 모두 핵심 문장을 뒤집었다 — *"enable AI adoption without creating security gaps"* → "도입을 허용하지 않음", 라디안/도 예시의 정답·오답 반전. 멤버 전용 3편은 건너뛰었다.
+
+- *2026-10-02*: [[tech-bridge]] **3편** ingest(10-01 업로드 3편, 그중 Factory 편은 09-28 멤버 전용에서 공개 전환). 같은 날 **[[software-factory|소프트웨어 공장]]** 을 두고 찬반이 갈린다. ① [[tech-bridge-factory-software-factory|Tereza Tížková 편]]([[factory-ai|Factory]])은 *찬성·설계도*: 신호 수집부터 검증·학습까지 생애주기 전체를 자율 루프로 — [[automatic-model-routing|자동 모델 라우팅]], 스웜 대신 순차 워커 + 검증자(Missions), [[deferred-tool-context|지연 도구 컨텍스트]], [[agent-readiness]]. 수치(25%·50%·16시간)는 전부 벤더 진술.
+  ② [[tech-bridge-conductor-orchestras-not-factories|Charlie Holtz 편]]([[conductor|Conductor]])은 *반대*: *"I honestly kind of hate the term"* — 사람은 라인 관리자가 아니라 지휘자([[orchestras-not-factories]]), 그 앞에 [[dont-beat-the-market|시장을 이기려 하지 마라]] · [[slop-free-zone|슬롭 없는 구역]] 등 다섯 원칙. ③ [[tech-bridge-sdd-enterprise-lessons|Simon Martinelli 편]]은 공장의 *입력*: 스펙 = system use case + 엔티티 모델([[ai-unified-process]]), [[self-contained-systems]], 모든 엔지니어링이 요구공학으로 shift-left — 09-27 JetBrains 편의 [[spec-driven-development|SDD]]와 절차가 갈린다.
+  자막 쪽으로는 ⚠️ ko가 Conductor 편 결론(*"공장에 있고 싶다"*)과 Factory 편 computer use 평가를 뒤집었고, Martinelli 편은 **설명란('SysML')이 자막(*system use cases*)보다 틀렸다.**
 
 ---
 

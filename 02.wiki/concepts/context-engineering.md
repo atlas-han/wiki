@@ -5,9 +5,9 @@ category: technique
 tags: [llm, context-window, agent, prompting]
 related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory]
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Context Engineering
@@ -193,3 +193,7 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 | 메모리 = 파일 시스템 | 전용 도구 대신 bash·grep 검색 — 검색이 progressive disclosure를 닮는다(07:47~07:49) | 프로덕션의 동시성·권한 → [[production-memory-guardrails]] |
 
 그 위에 세션 밖의 [[agent-dreaming|dreaming]]. 요약의 첫 줄은 *"do the simple thing that works. Context management uh makes such a huge difference to your agent performance"*(24:55~25:02). 위 09-29 Jerry Liu의 *"컨텍스트가 스택 위로 올라갔다"* 와 같은 방향 — 창 관리에서 **지식·메모리 관리**로. ⚠️ ko는 24:56에서 *context management* 를 **"경영진 맥락"** 으로 옮겼다.
+
+## 2026-10-02 — 도구 정의도 컨텍스트다: deferred context engine
+
+[[tech-bridge-factory-software-factory]]의 [[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]])는 소프트웨어 팩토리의 *"elephant in the room, context with agents"*(15:07~15:10)로 **도구 bloat**를 든다 — 수백 개 도구의 스키마·파라미터·긴 설명이 창을 채워 잘못된 도구 선택과 압축을 부른다. 처방은 도구에 적용한 progressive disclosure → [[deferred-tool-context]] (신규). 같은 발표의 *always improving* 축은 컨텍스트의 다른 두 층도 다룬다 — 코드베이스 자체(→ [[agent-readiness]])와 관찰로만 배우는 암묵지(plugins·AutoWiki). ⚠️ *"50% of tokens or more"* 는 벤더 수치.

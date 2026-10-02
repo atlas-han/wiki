@@ -6,9 +6,9 @@ tags: [shift-left, context, agents-md, static-analysis, tests, evals, lazy-promp
 aliases: [시프트 레프트(에이전트), 게으른 프롬프터, lazy prompter, 개입의 스펙트럼]
 related: [shift-left-security, tools-and-context-over-harness, context-engineering, harness-engineering, llm-coding-guidelines, executable-standards, agent-skills, skill-self-improvement]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-enterprise-lessons]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-02
 ---
 
 # 개입을 왼쪽으로
@@ -48,6 +48,10 @@ updated: 2026-09-23
 - **스펙트럼의 가장 왼쪽(eval → DeepMind)은 Google 내부자의 경로다.** 화자도 *"운이 좋든 나쁘든 간에"* 라는 단서를 붙이고, **작동한 사례를 말하지 않는다.** 대부분의 사용자에게 스펙트럼은 테스트에서 끝난다.
 - **어느 칸으로 옮길지 판단 기준이 없다** — *"전부 다요"*(04:59)가 답이다.
 - **측정 없음** — 앵커 링크 기법도 *"제 개인적인 취향에 약간 치우친 방식일 수도"*(08:54).
+
+## 같은 단어, 다른 대상 — 일이 requirements engineering으로 shift left (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]]의 *shift left*는 **개입**이 아니라 **사람의 노동**이 왼쪽으로 가는 것이다 — *"So everything shifts left to requirements engineering in my opinion"*(26:43~26:45), *"Now you have two weeks and then five minutes and two weeks"*(26:59~27:00). 구현이 몇 분이 되자 스펙을 쓰는 요구공학자·PO가 병목이 된다(스위스 의회 PoC, 26:21~26:29). 이 페이지의 스펙트럼(프롬프트 → 문서 → AGENTS.md → 검증기)과는 축이 다르지만, 둘 다 **"앞단에 넣은 것이 뒤의 반복을 줄인다"** 는 같은 구조다. → [[ai-unified-process]]
 
 ## References
 

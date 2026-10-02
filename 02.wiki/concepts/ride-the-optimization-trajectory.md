@@ -6,9 +6,9 @@ tags: [agent-design, harness, tool-design, frontier-models, bet]
 aliases: [편법, hack, 프론티어의 궤적에 올라타기]
 related: [corpus-as-filesystem-workspace, file-system-agent, harness-pruning, agent-harness-design, llm-as-search-user, retrieval-primitive-repertoire, sutton-bitter-lesson, tools-and-context-over-harness]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-21
-updated: 2026-09-23
+updated: 2026-10-02
 ---
 
 # 모델이 최적화되는 방향에 올라타기
@@ -79,3 +79,7 @@ updated: 2026-09-23
 ## 같은 근거, 다른 화자 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
 
 [[ryan-lopopolo|Ryan Lopopolo]]가 **같은 근거**로 [[tools-and-context-over-harness]]를 편다 — *"**모범 사례 도구들이 학습 데이터에 매우 잘 반영되어 있기 때문**입니다"*(07:10~07:16), *"모든 하네스는 기본적으로 파일 읽기, [grep] 및 임의 명령 실행 도구를 제공"*(16:00~16:07). Bergum이 **작업을 bash·도구 사용 형태로 설계**하라고 했다면, Lopopolo는 **그 표면 위에 도구와 문서만 쌓고 하네스는 고정**하라고 한다. ⚠️ 두 소스는 서로를 모른다. Bergum은 이것을 *편법(hack)* 이라 부르며 한시적이라 했고, Lopopolo는 **"결코 낡지 않는"** 부분이라 한다 — **같은 전제에서 수명 판단이 갈린다.**
+
+## 쓰는 쪽의 짝 — "왜 이것이 기본값이 아닌가?" (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])의 [[dont-beat-the-market]]은 이 페이지의 **반대 방향 짝**이다 — 궤적 위에 얹으라는 게 아니라 **궤적이 해 줄 일은 직접 하지 마라**: *"if Ralph loops work for everyone, like if they are the default, um then you probably should just wait for Anthropic or OpenAI or whatever to build the uh workflow into the into the default harness"*(03:53~04:05). 투자할 곳은 *"real alpha"* — 모델이 모르는 사용자·코드베이스 정보(04:09~04:23). 같은 전제(랩이 범용 개선을 공급한다)에서 **설계자는 올라타고, 사용자는 기다린다.** ⚠️ 소스끼리 서로를 모른다.

@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory]
 created: 2026-09-09
-updated: 2026-09-29
+updated: 2026-10-02
 ---
 
 # 모델 혼합의 경제학
@@ -136,3 +136,11 @@ updated: 2026-09-29
 - **구조** — *"the model router plus a model that we have trained together in a harness. And our harness is capable of calling all the other models"*(09:45~09:53). 자체 **MAI 모델**이 더 강한 모델로 **넘기는** 역할이라 구조상 사용량이 가장 많다. Oracle 편의 *"라우터를 하네스 안에"* 와 같은 모양이고, 라우터가 **학습된** 모델이라는 점은 Jev 편(System 1)과 같은 방향이다.
 - **모델 간 경쟁** — *"every model … needs to compete … for handling tasks inside of the Copilot system"*(10:19~10:25). OpenAI(Astra)·Anthropic·Grok이 한 라우터 아래에 있고, 고객은 **자기 모델(BYO)** 을 넣을 수 있다(11:01~11:10).
 - ⚠️ **당사자 진술, 측정 없음.** 라우팅 정확도·오라우팅 비용·사용자가 모델을 고정할 수 있는지 **전부 없다.** ⚠️ ko가 *learned routers* 를 **"스마트 라우터"**, *auto has become the product* 를 **"자동 조종 장치 자체"**(Autopilot과 혼동), *KV cache hit ratios* 를 **"지식 캐시 조정"** 으로 옮긴다.
+
+## 라우터의 4단계 — 임계값 위 최저가 (2026-10-02 · [[tech-bridge-factory-software-factory]])
+
+[[factory-ai|Factory]]의 [[tereza-tizkova|Tereza Tížková]]가 자사 **automatic model routing** 을 단계별로 설명한다 → [[automatic-model-routing]] (신규). ① 할당(조직이 사람별 권한·**기본 모델**을 준다 — 마케팅·영업·엔지니어) ② **난이도 분류**(프롬프트 구조·코드베이스·도구, *"This is the magic of the routing"* 07:33) ③ 임계값 ④ *"you choose the cheapest model above the threshold"*(07:54~07:59). 실패·공급자 장애 시 전환 — 라우터의 이점을 비용만이 아니라 **신뢰성·속도(오픈 모델이 빠르다)** 로 든다(06:37~06:51).
+
+같은 발표의 **Coinbase** 읽기: 이 페이지의 기존 서술(*기본 모델을 바꾸고 프런티어를 가장 어려운 작업에만*)에 레버 셋이 더해진다 — **캐싱**(*"to stop prefilling the stuff every time"* 05:49~05:51), **지출 한도 없이 결과 요구**(05:51~05:55), **라우팅**(05:57~06:06).
+
+> ⚠️ *"You can save for example 25% but even more probably"*(07:03~07:09) — *"very conservative"* 라는 자사 벤치마크, 구성 미발화. 캐싱 질문에는 *"just a pricing decision. It's not a technical challenge because everyone can do caching"*(09:15~09:22)로 답했다 — 과제 중간 모델 전환이 캐시를 깨는 비용은 말하지 않는다(위 Nadella 편 *KV 캐시 적중률* 과 긴장).

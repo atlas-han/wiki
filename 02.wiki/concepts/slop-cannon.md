@@ -6,9 +6,9 @@ tags: [ai-slop, coding-agents, code-quality, failure-mode]
 aliases: [slop cannon, 슬롭 대포]
 related: [ai-slop, organic-architecture, architecture-as-remaining-art, verification-bottleneck, code-is-the-product]
 first-seen: tech-bridge-ambitious-software-agent-era
-sources: [tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-10-02
 ---
 
 # 슬롭 캐논
@@ -56,3 +56,9 @@ updated: 2026-09-14
 
 - [[tech-bridge-ambitious-software-agent-era]] · [[jonathan-kelley]] · [[dioxus]]
 - 관련: [[ai-slop]] · [[organic-architecture]] · [[verification-bottleneck]] · [[architecture-as-remaining-art]] · [[code-is-the-product]]
+
+## 두 번째 고백 — "앱을 두어 번 다시 썼다" (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]: *"We we've had to rewrite our whole app like a couple of times because we weren't careful about slot[=slop] free zones."*(05:42~05:48) Dioxus의 실패형이 **정체**(draft에 쌓임)였다면 이쪽은 **재작성** — 머지는 됐고 코드베이스가 *"a really tricky spot"*(05:39~05:42)에 빠졌다. 처방은 생산을 줄이는 게 아니라 **엄격 구역을 정하는 것**이다 → [[slop-free-zone]]. 화자는 *"a lot of people assume that we are pure token maxers and we are like ripping through like 30,000 line PRs, but we're actually not"*(05:18~05:27)로 시작한다 — 슬롭 캐논이라는 **평판**을 먼저 부정한다.
+
+> ⚠️ 몇 번·언제·무엇이 문제였는지(재작성의 규모)는 없다. 일화.

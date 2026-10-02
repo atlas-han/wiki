@@ -4,9 +4,9 @@ type: entity
 category: product
 tags: [aws, amazon, coding-agent, spec-driven]
 links: []
-sources: [tech-bridge-frontier-engineering]
+sources: [tech-bridge-frontier-engineering, tech-bridge-sdd-enterprise-lessons]
 created: 2026-08-30
-updated: 2026-08-30
+updated: 2026-10-02
 ---
 
 # Kiro
@@ -20,6 +20,10 @@ updated: 2026-08-30
 - Amazon이 사내에서 많이 쓰는 [[spec-driven-development]]가 제품에 들어가 있어, Amazon 엔지니어에게 채택이 자연스럽다고 한다.
 
 제품 공개 스펙·요금·모델 백엔드는 이 영상에 없음. 위키는 현장 사용 맥락만 기록.
+
+## 도구 중심 SDD의 예로 (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]]가 도구 중심 SDD의 대표 흐름으로 Kiro를 든다 — *"if you look at Amazon Kira[=Kiro] for example you have product requirements document from that you generate some plan and out of the plan there will be tasks and finally AI will implement the tasks"*(05:49~06:01). 그리고 Spec Kit · BMAD와 함께 *"too developer centric"*(03:20~03:24). 자기 프로세스([[ai-unified-process]])는 plan/task 단계를 건너뛴다. ⚠️ 제품 기능에 대한 설명은 이 한 문장뿐이다. ASR: en-orig *"Kira"*, ko *"Chiro"*.
 
 ## References
 

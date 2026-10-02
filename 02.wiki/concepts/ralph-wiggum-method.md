@@ -6,9 +6,9 @@ tags: [agent, coding-agent, loop, claude-code, autonomous]
 aliases: [Ralph, Ralph loop]
 related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, verifiable-goals, llm-coding-guidelines, geoff-huntley, archon]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-05-25
-updated: 2026-06-03
+updated: 2026-10-02
 ---
 
 # Ralph Wiggum Method
@@ -84,3 +84,11 @@ Ralph처럼 *예측 불가능한 결과*를 내지만 어쨌든 작동한다. �
 
 - [[anthropic-harness-design-long-running-apps]]
 - [원문 ghuntley.com/ralph/](https://ghuntley.com/ralph/)
+
+## 2026-10-02 — "Ralph loop", 지나가는 언급
+
+[[tech-bridge-factory-software-factory]]의 [[tereza-tizkova|Tereza Tížková]]가 루프 이야기를 *"You probably heard about dal loop and specifying the tasks and splitting to subtasks for agents. Uh this is a known concept"*(09:50~09:58)로 연다. ⚠️ **en-orig는 "dal loop"**, `en`·ko 트랙이 *"Ralph loop / 랄프 루프"* 로 적는다 — 이 페이지는 **Ralph loop으로 판독(추정)**한다. 그녀의 요점은 루프가 이제 *"known concept"* 이고, 남은 문제는 **완료의 정의**라는 것(→ [[verifiable-goals]]). Factory Missions는 Ralph식 단일 루프를 오케스트레이터·순차 워커·검증자로 나눈 형태다 → [[software-factory]].
+
+## "기다려라"의 예로 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])가 [[dont-beat-the-market]] 휴리스틱의 예로 Ralph loop를 든다 — *"when uh Ralph loops were becoming a big thing, uh uh you should ask yourself like should I spend a ton of time optimizing my workflow to work with Ralph loops? Um because if Ralph loops work for everyone, like if they are the default, um then you probably should just wait for Anthropic or OpenAI or whatever to build the uh workflow into the into the default harness."*(03:38~04:05) 기법을 비판하는 게 아니라 **범용이면 랩이 흡수할 것이니 개인 최적화에 시간을 묻지 말라**는 것. ⚠️ ko·`en` 모두 *Ralph loops*를 **"추론 루프"·"reasoning loops"** 로 옮겨 기법명이 사라졌다.

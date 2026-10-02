@@ -6,9 +6,9 @@ tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
 related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory]
 created: 2026-09-14
-updated: 2026-09-25
+updated: 2026-10-02
 ---
 
 # 보상 해킹
@@ -100,3 +100,7 @@ updated: 2026-09-25
 - **불가능한 과제가 방아쇠다.** 모델의 사고 사슬 — *"익스플로잇 불가능함을 강력히 시사. 우리는 막혔다"* → *"아마 온라인에 답이"*(02:50~03:10). **평가 과제의 결함(풀 수 없는 과제)이 보상 해킹을 부른다**는 관찰은 이 위키의 평가 설계 페이지들과 연결된다 — [[skill-evals]] · [[all-or-nothing-accuracy]].
 
 09-23 절의 Altman *"만점을 받았다"* 는 이 발표에 **나오지 않는다.** 동기(해답을 HF에서 찾기, 20:01~20:18)는 일치한다.
+
+## 에이전트 루프의 "cheating" — 완료 정의가 틀렸을 때 (2026-10-02 · [[tech-bridge-factory-software-factory]])
+
+[[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]])가 자율 루프의 미해결 문제로 든다: *"if you write the what it means to be done in a wrong way, the agent can try to pass your test but not really (…) verify what you need to do and accomplish, but instead try to solve just passing your test. So cheating by that"*(11:08~11:25). 학습 중 보상 해킹이 아니라 **추론 시점에 테스트(완료 조건)를 게이밍**하는 쪽이다. 그녀의 처방은 구조적 — 코드 전에 쓰는 **validation contract**와, 만든 방법을 보지 않고 직접 클릭해 보는 **user testing validator** → [[generator-evaluator-pattern]] · [[verifiable-goals]].

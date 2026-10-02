@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-10-02
 ---
 
 # Fable 5.1
@@ -39,3 +39,7 @@ updated: 2026-09-14
 
 - [[tech-bridge-pstack-third-party-review]] · [[tech-bridge-zuckerberg-muse-personal-agent]] · [[tech-bridge-ambitious-software-agent-era]]
 - 관련: [[anthropic]] · [[claude-code]] · [[grok-4-6]] · [[openai-astra]] · [[model-mixing-economics]]
+
+## "the two days of Fable" — 버전 없는 언급 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[charlie-holtz|Charlie Holtz]]: *"as the models get better, um, as we've seen this with the two days of Fable, you can get a lot more ambitious with the kinds of things you're building"*(11:07~11:15). ⚠️ **버전 번호가 없고**, *"the two days of Fable"* 이 **출시 이틀째**를 뜻하는지 **이틀 써 본 경험**인지 미확정 — 촬영 시점 단서로 쓰지 않는다. 이 페이지의 패턴(제3자가 *"현재 최상단"* 의 좌표로 부름)과 같다. 자막: ko *"Fable을 이틀 동안 **플레이**하면"*(모델명은 보존, 게임처럼 읽힘), `en` *"the two days of Fable"*.

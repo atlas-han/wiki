@@ -81,8 +81,11 @@ sources:
   - tech-bridge-wandb-aria-self-improving-agent
   - tech-bridge-ai-data-exposure-hidden-risk
   - tech-bridge-anthropic-dreaming-memory
+  - tech-bridge-sdd-enterprise-lessons
+  - tech-bridge-conductor-orchestras-not-factories
+  - tech-bridge-factory-software-factory
 created: 2026-06-03
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Tech Bridge
@@ -827,6 +830,30 @@ updated: 2026-10-01
 - 프로덕션 가드레일(버전·해시 비교 동시성·층별 권한·이식성) — 화자 스스로 *"DB 관행으로 돌아가는 중"*. 당사자 진술, **수치 0개**. 행사는 자막상 *AI DevCon*, Tessl은 설명란 링크뿐. 성 *Mukta* 는 설명란에만.
 - **⚠️ ko 오류** — 라디안/도 예시의 **정답·오답 반전**(20:17~20:21), *dreaming API* → "스트리밍 API"·Claude → "클라우드"(28:17~28:19, **`en`도 같은 오류**), 없던 "연구 결과에 따르면" 삽입(17:28), CLAUDE.md → "클로드 의학박사".
 
-## 멤버 전용 대기 (2026-10-01 확인)
+## 2026-10-01 업로드 — Simon Martinelli, 스펙 기반 개발(SDD)을 실무에 적용하며 배운 교훈 (2026-10-02 ingest)
 
-`XyVUHSzKM2E`(09-28, *Zach Lloyd (Warp) — 소프트웨어 공장*, 20:09) · `cHsunDt0QUc`(09-28, *Factory Tereza — 소프트웨어 팩토리*, 21:55) · **`8DRjkp_X8yY`(신규, *AI 시대에 쏟아지는 PR 병목, 어떻게 해결해야 할까요?*, 22:33)** 는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest.
+[[tech-bridge-sdd-enterprise-lessons|AI 시대, 스펙 기반 개발(SDD)을 실무에 적용하며 배운 교훈들]](`T3SWxxQFr4o`, 30:41, 공식 챕터 없음) — [[simon-martinelli]] ([[ai-unified-process]] · [[self-contained-systems]] · [[spec-driven-development]])
+
+- **엔터프라이즈·레거시 쪽 SDD** — 스펙은 system use case + 엔티티 모델, plan/task 단계는 건너뛰고 스킬이 메운다. 09-27 JetBrains 풀코스와 **같은 이름, 다른 절차**(모순 표시).
+- 행사는 설명란 링크(AI DevCon · Tessl)로만 추정, 촬영 시점 미확정. 이름은 설명란에만.
+- **⚠️ 설명란 'SysML 유스케이스'는 en-orig *system use cases*의 오기** — 설명란이 자막보다 틀린 사례. ko가 *17 years* → "17살", *"I don't like PowerPoint"* → 좋아한다, Anthropic → "인류학", markdown → "가격 인하".
+
+## 2026-10-01 업로드 — Charlie Holtz (Conductor), 공장이 아니라 오케스트라 (2026-10-02 ingest)
+
+[[tech-bridge-conductor-orchestras-not-factories|공장이 아니라 오케스트라입니다]](`WWUxQgAZTu4`, 16:56, 공식 챕터 13) — [[charlie-holtz]] · [[conductor]] ([[orchestras-not-factories]] · [[slop-free-zone]] · [[dont-beat-the-market]])
+
+- **가장 빠른 빌더들의 6원칙**, 마지막이 [[software-factory]] 프레이밍에 대한 정면 반론 — *"I honestly kind of hate the term"*. 같은 날 Factory 편과 짝.
+- 행사(AI Engineer World's Fair)·이름은 설명란에서. 수치는 일화뿐.
+- **⚠️ ko가 결론을 뒤집었다** — *"I don't want to be in my dark factory. I don't want to be a line manager"* → "공장에 있고 싶다 … 라인 관리자가 되고 싶습니다"(16:01~16:05). en-orig는 *slop* 을 **"slot"** 으로 여섯 번 — 공식 챕터가 교정(09-15 원칙 적용). *30,000 line PRs* → "3만 건의 구매 요청(PR)"(단위 오류 재발).
+
+## 2026-10-01 업로드 — Tereza Tížková (Factory), 진짜 소프트웨어 팩토리 (2026-10-02 ingest)
+
+[[tech-bridge-factory-software-factory|진짜 '소프트웨어 팩토리'를 만들려면]](`cHsunDt0QUc`, 21:55, 공식 챕터 28) — [[tereza-tizkova]] · [[factory-ai]] ([[software-factory]] · [[automatic-model-routing]] · [[deferred-tool-context]] · [[agent-readiness]])
+
+- **09-28 업로드 당시 멤버 전용 → 10-02 공개 확인**(`upload_date` 20261001로 변경). 함께 묶였던 Warp 편 `XyVUHSzKM2E`는 여전히 멤버 전용.
+- 3원칙 agnostic · autonomous(Missions — 스웜 대신 **순차** 워커 + 검증자) · always improving. 25%·50%·16시간 수치는 전부 화자 진술·안 보이는 슬라이드.
+- **⚠️ ko가 computer use 평가를 반전**(14:23, *예전엔 별로, 지금은 아주 좋다* → 반대), *nondeterministic* → "결정론자들", 없던 문장 삽입(02:34). 세 트랙 모두 회사 도메인을 **"factory.com"** 으로(설명란은 factory.ai). 13:28 챕터의 *브라우저*·*웹 앱* 은 자막에 없다(*virtual computer* 뿐).
+
+## 멤버 전용 대기 (2026-10-02 확인)
+
+`XyVUHSzKM2E`(09-28, *Zach Lloyd (Warp) — 소프트웨어 공장*, 20:09) · `8DRjkp_X8yY`(*AI 시대에 쏟아지는 PR 병목*, 22:33) · **`wrii8VocfZU`(신규, 제목·업로드일 미상 — 목록 stderr ERROR로만 확인)** 는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest. `cHsunDt0QUc`는 공개 전환되어 위에서 ingest.

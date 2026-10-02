@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, planning, verification]
 related: [generator-evaluator-pattern, agent-harness-design, verifiable-goals, spec-driven-development, agent-org-adoption]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-factory-software-factory]
 created: 2026-05-25
-updated: 2026-08-29
+updated: 2026-10-02
 ---
 
 # Sprint Contract
@@ -51,3 +51,7 @@ Sprint construct는 **work decomposition의 가정**을 인코딩 — "모델이
 
 - [[anthropic-harness-design-long-running-apps]]
 - [[tech-bridge-spec-driven-development]] · [[tech-bridge-figma-coding-agents]]
+
+## 2026-10-02 — Factory의 validation contract
+
+[[factory-ai|Factory]] Missions에서 오케스트레이터가 쓰는 **validation contract** — *"that's written before any code is done"*(13:07~13:14), 이후 scrutiny·user testing 두 검증자가 이를 기준으로 판정한다([[tech-bridge-factory-software-factory]]). **코드 전에 done을 못 박는다**는 점은 같고, 차이는 **작성 주체**: 이 페이지의 원형은 generator와 evaluator가 **협상**하지만, Factory 설명에는 협상이 없고 오케스트레이터가 *"decides and writes the conditions"*(12:05~12:08)한다. ⚠️ 계약의 형식·검증자가 계약을 고칠 수 있는지는 미발화.

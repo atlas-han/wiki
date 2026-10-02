@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
 related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons]
 created: 2026-06-03
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # Harness Engineering
@@ -115,6 +115,17 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 > 모델과 플랫폼만 있는 게 아니라 **그 위에 우리가 제공하는 하네스도 있습니다.**
 
 > ⚠️ **당사자 진술.** 하네스를 파는 회사가 하네스가 중요하다고 말하는 구조다. 4월에 쓰였다는 기술 블로그가 언급되나 소스에 링크가 없다.
+
+## "Specs are not enough — you need a harness" (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]]의 SDD 발표 결론: *"specs are not enough. So you need to harness you need all the context around that that this really works"*(25:10~25:15). 그가 든 가드레일(22:23~24:16):
+
+1. **프로젝트 생성은 AI에게 맡기지 않는다** — 토큰 낭비 + *"outdated application"*(22:42~22:44). start.spring.io 같은 CLI.
+2. **규칙 파일은 작게** — CLAUDE.md·AGENTS.md에 다 넣지 말 것. ETH Zurich 연구를 들어 *"the bigger the system prompt the more hallucinations you get probably. So it's maybe even better to have none of those files than a big one."*(23:15~23:23) ⚠️ 연구명·수치 미발화.
+3. 아키텍처 문서(arc42), [[agent-skills|스킬]], 큰 문서는 MCP vector search.
+4. 결과: *"near deterministic"*(24:06~24:10) — 지우고 다시 돌려도 거의 같은 산출. ⚠️ 측정 없음.
+
+> ⚠️ **Contradiction: Global Rules를 키울 것인가.** 이 페이지의 System Evolution은 *"every mistake becomes a rule"* → `agents.md`에 규칙 추가다. Martinelli는 규칙 파일을 **작게 유지하고 스킬·가이드라인 문서로 뺀다**(CLAUDE.md는 참조만, 16:06~16:34). 둘이 양립하려면 "규칙 추가"의 목적지가 AGENTS.md 본문이 아니라 **참조되는 문서·스킬**이어야 한다 — ⚠️ 위키의 정리.
 
 ## References
 

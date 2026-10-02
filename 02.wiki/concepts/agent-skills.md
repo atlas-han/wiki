@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons]
 created: 2026-08-31
-updated: 2026-10-01
+updated: 2026-10-02
 ---
 
 # Agent Skills
@@ -252,6 +252,18 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 **이 위키는 progressive disclosure를 *사람이 쓴 문서의 계층화*로만 봐 왔다** — 스킬 파일의 앞머리, [[three-tier-ai-skill-stack]]의 층, [[minimizing-reader-load]]. 여기서는 **검색 결과에 자동으로 붙는다**: 제목 + 스니펫이 1층이고, 본문이 2층이며, **무엇을 펼칠지는 모델이 정한다.**
 
 즉 **스킬에서 나온 규율이 스킬 밖의 임의 코퍼스에 적용 가능한 패턴이었다**는 것이 이번에 드러난 것이다.
+
+## 2026-10-02 — plan/tasks 자리를 스킬이 메운다, "we don't prompt" ([[tech-bridge-sdd-enterprise-lessons]])
+
+[[simon-martinelli|Simon Martinelli]]의 [[ai-unified-process|AI Unified Process]]는 스펙(use case + entity model)에서 바로 코드로 가므로 그 사이의 스킬이 *"probably the most important thing of the whole process. So that means the skills must match the outcome."*(09:08~09:17) 고객 6곳의 스킬이 모두 다르다(React · Vaadin · Angular · Quarkus · 사내 프레임워크, 09:23~09:48).
+
+- ⭐ *"in those projects we don't prompt. So we have skills for everything and we iterate on the skills."*(15:30~15:34) — 개선 대상이 프롬프트가 아니라 스킬.
+- **두 층** — 스펙 작성 스킬 + 스택별 구현 스킬. 스택 조합은 회사가 만들 일(16:39~16:58).
+- **배포 문제** — *"not everybody in the organization is maybe using the same agent. So we need some skill distribution"*(15:42~15:49) → [[cross-harness-skill-compilation]]
+- **스킬은 작게** — 사내 프레임워크의 큰 문서는 스킬에 넣지 않고 vector search가 있는 MCP 서버로(23:44~23:56) → [[model-context-protocol]]
+- **스택 수 = 스킬 유지 비용** — 한 스택이면 스킬·가드레일을 한 번만, 프런트·백엔드가 다르면 *"create this twice and also maintain that twice"*(20:15~20:20) → [[self-contained-systems]]
+
+⚠️ 실무자 진술, 스킬 품질의 측정·eval은 말하지 않는다([[skill-evals]]의 빈자리 그대로).
 
 ## References
 

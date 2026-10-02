@@ -6,9 +6,9 @@ tags: [token-economics, metrics, value-maxing, tokenmaxxing, goodhart, roi, adop
 aliases: [밸류맥싱, valuemaxxing, value maxing, 토큰맥싱, tokenmaxxing, token maxing, 토큰 최소화]
 related: [token-minimization-trap, trusted-throughput, overspending-underusing-loop, agent-roi-measurement, true-cost-to-perfect-answer, token-roles, model-mixing-economics, context-engineering, mousepower]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-24
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # 밸류맥싱 (Value Maxing)
@@ -82,3 +82,7 @@ updated: 2026-09-30
 ## 분모를 명시한 짝 — valued work per watt (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
 [[roland-gavrilescu|Roland Gavrilescu]]: *"how much value am I getting per watt? Um how do I measure the value is the first step, and how do I know I'm getting a good deal on that value is the second."*(09:38~09:49). **가치를 먼저**라는 순서는 이 페이지와 같고, 분모(와트, 맺음말에선 Claude Code 대비 **가격 차이** 17:31~17:38)를 명시한다는 점이 다르다. 가치의 측정은 제작자 taste + 사용자 A/B로 넘긴다. ⚠️ 와트를 재는 방법은 없다. → [[valued-work-per-watt]]
+
+## "우리는 토큰맥서가 아니다" — 평판의 부정 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+멀티 에이전트 앱 [[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]: *"a lot of people assume that we are pure token maxers and we are like ripping through like 30,000 line PRs, but we're actually not."*(05:18~05:27) 에이전트를 가장 많이 돌릴 것 같은 회사가 **토큰맥싱을 평판 위험으로** 다루고, 대안으로 [[slop-free-zone|엄격 구역/느슨한 구역]]을 든다. ⚠️ ko는 *30,000 line PRs*를 **"3만 건의 구매 요청(PR)"** 으로 옮겨 단위(줄 → 건)가 바뀌었다.

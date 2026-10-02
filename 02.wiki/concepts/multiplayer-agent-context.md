@@ -6,9 +6,9 @@ tags: [multiplayer, shared-agent, slack, knowledge-creation, privilege, incident
 aliases: [공유 AI, 멀티플레이어 에이전트]
 related: [company-brain, credential-injection-outside-sandbox, claude-tag, goal-level-delegation, persistent-agent-teams, no-silent-write, agent-org-adoption]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-10
-updated: 2026-09-15
+updated: 2026-10-02
 ---
 
 # 멀티플레이어 에이전트 컨텍스트
@@ -68,3 +68,11 @@ updated: 2026-09-15
 
 - [[tech-bridge-company-brain-security]] (first-seen) · [[tanmai-gopal]]
 - 관련: [[company-brain]] · [[credential-injection-outside-sandbox]] · [[claude-tag]] · [[no-silent-write]]
+
+## 2026-10-02 — 여러 사람 × 여러 에이전트, 실시간 공유 워크스페이스 ([[tech-bridge-conductor-orchestras-not-factories]])
+
+[[conductor|Conductor]]의 클라우드 버전 데모가 이 페이지의 *여러 사람 + 에이전트 하나*, [[persistent-agent-teams]]의 *사람 하나 + 에이전트 여럿* 사이의 **세 번째 형태**를 보인다: 팀원별로 진행 중인 에이전트 워크스페이스를 목록으로 보고, 동료의 워크스페이스에 들어가 변경을 리뷰하고 *"can we actually use tabs, not spaces?"* 를 남기면 동료가 실시간으로 보고 같은 자리에서 채팅한다(10:22~12:29).
+
+화자 [[charlie-holtz|Charlie Holtz]]의 주장: *"collaboration is the the one one of the most important new concepts uh in these tools that no one is really talking about right now"*(10:49~10:56). 이유 — *"all great things are built with teams of people"*, 그리고 모델이 좋아질수록 더 야심찬 것을 만들게 되어 *"you're going to need more people and more agents to work on those things"*(11:02~11:19).
+
+> ⚠️ 이 페이지가 미해결로 둔 **권한 상승**·**동시 지시 충돌**은 데모에서도 다뤄지지 않는다. 데모는 동료의 응답을 기다리다 끝난다(*"The agents have escaped."* 12:37~12:38).

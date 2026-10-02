@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-10
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # OpenClaw
@@ -57,3 +57,7 @@ updated: 2026-09-30
 단계는 Reddit에서 가격·재고 찾기 → 딜러와 대화 → 딜러끼리 입찰 경쟁 → *"a verifiable way to know when the price is right"* → 구매(02:05~02:25). *"probably this was when all the Mac minis were uh selling off the shelves"*(02:28~02:30) — 위 [[mark-zuckerberg|Zuckerberg]]의 *Mac Studio 구매 흐름*과 **같은 그림(로컬 하드웨어 구매 붐)** 이 다른 기종으로 한 번 더 나온다.
 
 > ⚠️ **"Clawbot" 철자는 en-orig ASR 그대로**다(`en`도 *"Clawbot"*, ko *"클로봇"*). 옛 이름의 공식 철자·개명 시점·AJ가 누구인지는 이 위키가 확인하지 않았다. **여전히 어느 소스도 OpenClaw의 제작자·기능을 설명하지 않는다** — 이번 소스도 사용 사례 하나다. → [[loop-is-the-product]]
+
+## 다른 에이전트 제품을 부르는 개인 에이전트 — "Lord Crandon" (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[charlie-holtz|Charlie Holtz]]가 자신의 OpenClaw를 *"my open claw called Lord Crandon"*(13:05~13:08)으로 소개한다. 그것이 **[[conductor|Conductor]] API**를 갖고 있어 *"from my phone or from my telegram or from really or from slack or wherever I am"*(13:20~13:24) *"create a new workspace for me that makes uh yeah makes all the buttons blue"* 를 보내면 워크스페이스를 만들고 코딩 에이전트에게 일을 넘긴다(13:35~14:03). OpenClaw가 **코딩 에이전트 오케스트레이터의 원격 입구**로 쓰이는 첫 사례다. ⚠️ 시연은 워크스페이스 생성까지만 보이고 결과물은 보이지 않는다.

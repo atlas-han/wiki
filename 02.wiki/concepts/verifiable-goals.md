@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
 related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory]
 created: 2026-05-25
-updated: 2026-09-30
+updated: 2026-10-02
 ---
 
 # Verifiable Goals
@@ -143,3 +143,7 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## 신호가 성공률을, 검증기가 그 진위를 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
 [[roland-gavrilescu|Roland Gavrilescu]]는 루프의 두 끝을 나눈다 — *"the quality of the signal determines the uh success rate of the loop and the uh quality of the verifier um is able to calibrate uh if that success is actually correct or not"*(03:33~03:49). 이 페이지가 verifier 쪽만 다뤄 왔다면, 이 소스는 **입력 신호의 품질을 성공률의 원인으로 따로 둔다.** 첫 사례(OpenClaw의 옛 이름 Clawbot으로 만든 자동차 협상 루프)에도 *"a verifiable way to know when the price is right"*(02:18~02:21)가 들어 있다. 주관 영역(위 09-12 절)에 대한 이 소스의 답은 **제작자 taste를 judge로 코드화 + 사용자 A/B로 보정**이다. → [[loop-is-the-product]] · [[taste-encoded-evals]]
+
+## 문제는 루프가 아니라 "done" (2026-10-02 · [[tech-bridge-factory-software-factory]])
+
+[[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]]): *"the question is not the loop itself but the question is how how you define what it means to be done in the loop"*(09:58~10:05). 예전 프로그래밍의 루프는 종료 조건이 명확했지만 지금은 *"the criteria become open-ended because a lot of the tasks are very nondeterministic. It's basically open world"*(10:23~10:30) — 동료가 만든 로고 **3D 프린팅** 루프처럼 물리 세계까지. 결론은 *"they just need to be verifiable"*(10:42). Factory는 완료 조건을 오케스트레이터가 **코드 전에** validation contract로 쓴다(13:07~13:14). ⚠️ ko는 *nondeterministic* 의 *non-* 을 잃고 **"결정론자들"**(10:28)로 옮겨 요지가 반대가 된다. → [[software-factory]] · [[reward-hacking]]

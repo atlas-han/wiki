@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-02
 ---
 
 # 위험 비례 사람 검토
@@ -45,7 +45,15 @@ updated: 2026-09-18
 
 > ⚠️ **"가장 큰 위험을 수반하는 결정"이 무엇인지 예시가 없다.** *"최고의 성과를 내는 팀"* 이 누구인지, 근거가 무엇인지도 없다. 위험도를 **누가 어떻게 판정하는가**(사람이 판정하면 그 판정이 병목)도 다뤄지지 않는다.
 
+## 구체 예 — ERP 모듈의 criticality (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
+
+위 IBM 편이 예시 없이 말한 "가장 위험한 결정"에 [[simon-martinelli|Simon Martinelli]]가 예를 붙인다. ERP의 모듈은 *"don't have all the same, how should I say, criticality"*(07:24~07:31) — 재고 관리가 멈추면 *"they can just go and grab a coffee"*(07:39~07:41), 주문 관리가 멈추면 *"the company probably will lose money"*(07:47~07:50). *"So you should do risk management and then decide how much review um your code probably needs. But that's not different from AI or manual driven development."*(07:52~07:59) 리뷰 방식은 PR 없이 **trunk-based + 두 개발자의 peer review**(24:38~25:04). ⚠️ 모듈별 리뷰 강도를 어떻게 정하는지의 기준표는 없다. ko는 *criticality* 를 **"비판적 사고"** 로 옮겼다.
+
 ## References
 
 - [[tech-bridge-legacy-code-modernization-ai]] · [[anna-gutowska]] · [[ibm]]
 - 관련: [[agent-trust-curve]] · [[named-human-accountability]] · [[goal-level-delegation]] · [[task-entropy-matrix]] · [[verification-bottleneck]] · [[legacy-code-modernization]] · [[syntactically-correct-behaviorally-wrong]] · [[decision-quality]]
+
+## 코드베이스 구역판 — 슬롭 없는 구역 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+[[conductor|Conductor]]의 [[slop-free-zone]]은 이 페이지의 기준(결정의 위험도)을 **코드 위치**로 옮긴 형태로 읽힌다 — *"in our CI uh any change to migrations file requires the a uh a human to review it"*(05:51~06:02). DB 마이그레이션처럼 **되돌리기 어려운 곳**에는 강제 사람 검토, 나머지는 *"very loose"*(05:28~05:31). 이 페이지가 비워 둔 *"가장 큰 위험을 수반하는 결정의 예"* 에 대한 실무 사례 하나. ⚠️ 위험도 기준이라는 연결은 위키의 정리이며, 화자는 위험이라는 말을 쓰지 않는다.

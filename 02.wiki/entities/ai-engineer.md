@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories]
 created: 2026-09-15
-updated: 2026-09-29
+updated: 2026-10-02
 ---
 
 # AI Engineer
@@ -98,3 +98,6 @@ updated: 2026-09-29
 
 ⚠️ ko는 00:08을 *"AI 엔지니어 월드에 오신 것을 환영합니다!"* 로 옮겨 **"Fair"가 빠지고 감사가 환영이 됐다** — ko만 읽으면 이 근거가 사라진다. `en`은 *"AI Engineer World Fair"* 로 옳다. 월·일·도시는 발화 없음.
 
+## "software factory" 트랙과 그 반론 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
+
+설명란은 [[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])의 발표를 *"AI Engineer World's Fair에서 발표한 세션"* 이라 하지만, 자막엔 행사명이 없고 *"what's the conference about?" And I said it was about AI engineering*(00:16~00:20)뿐이다. 행사 구성에 대한 단서 하나: *"The whole like talk track today is about software factories and I honestly kind of hate the term."*(14:23~14:32) — 이 세션이 **software factory 주제 트랙** 안에서 그 프레이밍을 반박했다는 화자 진술. → [[software-factory]] · [[orchestras-not-factories]]. ⚠️ 트랙 이름·일정은 확인하지 않았다.
