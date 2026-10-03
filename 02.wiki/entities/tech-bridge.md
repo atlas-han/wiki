@@ -84,8 +84,11 @@ sources:
   - tech-bridge-sdd-enterprise-lessons
   - tech-bridge-conductor-orchestras-not-factories
   - tech-bridge-factory-software-factory
+  - tech-bridge-death-of-code-review
+  - tech-bridge-dx-ai-impact-trends
+  - tech-bridge-warp-factory-engineering
 created: 2026-06-03
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # Tech Bridge
@@ -854,6 +857,29 @@ updated: 2026-10-02
 - 3원칙 agnostic · autonomous(Missions — 스웜 대신 **순차** 워커 + 검증자) · always improving. 25%·50%·16시간 수치는 전부 화자 진술·안 보이는 슬라이드.
 - **⚠️ ko가 computer use 평가를 반전**(14:23, *예전엔 별로, 지금은 아주 좋다* → 반대), *nondeterministic* → "결정론자들", 없던 문장 삽입(02:34). 세 트랙 모두 회사 도메인을 **"factory.com"** 으로(설명란은 factory.ai). 13:28 챕터의 *브라우저*·*웹 앱* 은 자막에 없다(*virtual computer* 뿐).
 
-## 멤버 전용 대기 (2026-10-02 확인)
+## 2026-10-02 업로드 — Laurie Voss (Arize AI), 코드 리뷰의 종말 (2026-10-03 ingest)
 
-`XyVUHSzKM2E`(09-28, *Zach Lloyd (Warp) — 소프트웨어 공장*, 20:09) · `8DRjkp_X8yY`(*AI 시대에 쏟아지는 PR 병목*, 22:33) · **`wrii8VocfZU`(신규, 제목·업로드일 미상 — 목록 stderr ERROR로만 확인)** 는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest. `cHsunDt0QUc`는 공개 전환되어 위에서 ingest.
+[[tech-bridge-death-of-code-review|코드 리뷰의 종말]](`-TeOEuplMrQ`, 24:11, 공식 챕터 21) — [[laurie-voss]] · [[arize-ai]] ([[mergeability-gap]] · [[automated-code-review]] · [[verification-bottleneck]])
+
+- 에이전트 시대 코드 리뷰 산업 서베이 — 수치 거의 전부 **2차 인용**(METR·Cisco·FrontierCode 등), 화자 산수 2곳 불일치(51 vs 59포인트, "three orders" vs 약 176배). Bun 수치는 [[bun]] 페이지와 충돌(모순 표시).
+- 녹화 2026년 6월 이후, AI Engineer 계열 행사 추정. 성 *Voss*·arize.com은 설명란에만(자막 "Lori", "Arise AI").
+- **⚠️ ko 오류** — *"can't skip … production"* → "제작 과정을 건너뛰세요"(반전), internal product → "국내총생산", Anthropic's → "인류". *mergeability* 는 ko/en 공유 오류.
+
+## 2026-10-02 업로드 — Justin Reock (DX), 400개 기업 데이터로 본 AI의 현주소 (2026-10-03 ingest)
+
+[[tech-bridge-dx-ai-impact-trends|400개 기업 데이터로 본 소프트웨어 개발 AI의 현주소]](`xRZHLI5SPWo`, 18:42, 공식 챕터 14) — [[justin-reock]] · [[getdx]] ([[dora-metrics]] · [[ai-measurement-framework]] · [[perceived-vs-actual-productivity]])
+
+- 벤더 플랫폼 집계 데이터. **"400개 기업"은 제목·설명란에만**(자막은 "about 200,000 engineers"). 촬영 2026년 6~7월 추정(Q2 리포트 *"midish end of July"*).
+- **⚠️ ko가 결론을 반전** — *"Nobody hit 2x, nobody hit 5x"* → "어떤 사람은 2배, 어떤 사람은 5배"(15:28). ko는 1~3단어 조각 번역(1,502줄 vs en-orig 555). **`en`은 중앙값 7.7%·평균 13%를 뒤바꿨다** — 수치는 en-orig로만.
+
+## 2026-10-02 업로드 — Zach Lloyd (Warp), 소프트웨어 공장을 짓는 일 (2026-10-03 ingest)
+
+[[tech-bridge-warp-factory-engineering|소프트웨어 엔지니어링은 이제 소프트웨어 공장을 짓는 일이 될 것입니다]](`XyVUHSzKM2E`, 20:09, 공식 챕터 29) — [[zach-lloyd]] · [[warp]] ([[factory-engineering]] · [[build-in-the-open]] · [[software-factory]])
+
+- **09-28 업로드 당시 멤버 전용 → 10-03 공개 확인**(`upload_date` 20261002로 변경). Factory·Conductor 편에 이은 소프트웨어 공장 세 번째 목소리.
+- 공식 챕터 29개가 발화보다 일관되게 15~35초 늦다(raw에 양쪽 시각 병기). 행사명 미발화. 수치(60k stars · 800k 개발자 · 6개월 무코딩)는 전부 화자 진술.
+- **⚠️ ko 반전** — 채용 발언(18:25~18:37) *"hiring more people than we've ever hired"* → "고용한 적이 없다", 테제 문장(14:48~14:54) *"building the thing that builds the product"* 이 ko에서는 *제품 자체를 만든다*는 뜻으로 뒤집혔다. ko·en 공유 오류 *sloppy PRs* → "public relations".
+
+## 멤버 전용 대기 (2026-10-03 확인)
+
+`8DRjkp_X8yY`(*AI 시대에 쏟아지는 PR 병목*, 22:33) · `wrii8VocfZU`(제목·업로드일 미상) · **`_0zB1Qj-xoE`·`PACIHCnvNMo`(신규, 제목·업로드일 미상 — 목록 stderr ERROR로만 확인)** 는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest. `XyVUHSzKM2E`(Warp)는 공개 전환되어 위에서 ingest.

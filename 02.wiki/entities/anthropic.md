@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-03
 ---
 
 # Anthropic
@@ -167,3 +167,13 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 ## 응용 AI 팀 — 컨텍스트 엔지니어링 1년 회고와 dreaming (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
 
 [[lamis-mukta|Lamis Mukta]](member of technical staff, 응용 AI 팀 — *"sits between research, product and go to market"* 00:23~00:27)의 AI DevCon 발표. 회사 격언으로 *"at Anthropic, we like to say do the simple thing that works"*(03:25~03:28)를 들고, 지난 1년의 경로를 **CLAUDE.md → memory tool → 스킬 → 메모리 = 파일 시스템**으로 정리한다. 프로덕션 메모리에는 버전·해시 동시성·권한·이식성(→ [[production-memory-guardrails]]), 세션 밖에서는 **dreaming**(→ [[agent-dreaming]])을 둔다 — 제품으로는 [[managed-agents|Claude Managed Agents]]의 memory and dreaming API(28:19~28:21). "DB 재발명" 질문에는 *"we sort of are merging back into those practices"*(31:06~31:08)라고 인정한다. ⚠️ 당사자 발표, 수치 없음. ⚠️ ko가 *Anthropic* 을 03:25에서 **"인류학적인"** 으로 옮겼다.
+
+## 자동 보안 리뷰어의 README 경고 · Carlini의 C 컴파일러 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]의 2차 인용 세 가지:
+
+- **자동 보안 리뷰어**: README에 *"this action is not hardened against prompt injection attacks uh and should only be re used to review trusted PRs"*(20:39~20:47) — 화자는 이를 *"talked out of its findings by the very thing that it is reviewing"* 으로 읽는다. → [[prompt-injection]] · [[automated-code-review]]
+- **Nicholas Carlini**(2월): 에이전트 16개가 Rust로 C 컴파일러를 처음부터, Linux 커널 컴파일, 약 2,000 세션 — 사람은 루프 *안* 이 아니라 *위*(테스트 하네스·피드백 시스템을 사람이 썼다). 본인 경고: *"it is easy to watch the tests pass and assume that the job is done uh and that it rarely is"*(15:37~15:45).
+- [[bun|Bun]]은 *"now part of Anthropic"*(02:44~02:46), [[fable-5-1|Fable]] 출시 자료에 Stripe 5천만 줄 Ruby 하루 마이그레이션(02:30~02:41).
+
+ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"** 로 옮겼다(anthropic의 사전적 뜻).

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, kiro, amazon, habits]
 related: [agent-org-adoption, harness-engineering, spec-driven-development, verifiable-goals, agent-harness-design]
 first-seen: tech-bridge-frontier-engineering
-sources: [tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-conductor-orchestras-not-factories, tech-bridge-dx-ai-impact-trends]
 created: 2026-08-30
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # Frontier Engineering
@@ -69,3 +69,9 @@ DHH 클립([[tech-bridge-dhh-agent-productivity]])은 "사람은 루프 밖"을 
 - **사람의 자리**: *"I don't think the future should be we are like managing swarms of agents and we are like factory line managers"*(15:14~15:22), *"I want to feel like a human at the center of it all"*(15:35~15:39). → [[orchestras-not-factories]]
 
 > ⚠️ **Contradiction: 사람은 루프 밖인가, 가운데인가.** 이 페이지의 3행동(*hands-off*, *드문 개입*, *병렬 에이전트로 유휴 최소화*)은 Holtz가 거부하는 *swarm을 관리하는 라인 관리자* 그림과 가깝다. 다만 Holtz도 *"most of the time I can zoom out"*(15:12~15:14)이라 하고 그의 제품은 병렬 에이전트 관리 도구다 — **작업량보다 은유와 사람의 자리에 대한 태도가 갈린다.** 양쪽 다 비교 측정은 없다.
+
+## ⚠️ 집계 데이터의 반론 — "Nobody hit 2x" (2026-10-03 · [[tech-bridge-dx-ai-impact-trends]])
+
+[[getdx|DX]]의 [[justin-reock|Justin Reock]]이 DX 연구 집계(표본 미발화 — 발표의 "200,000명"은 다른 설문 맥락)로 PR 처리량 증가를 보고한다: *"a median 7.7% increase in this velocity metric, a 13% average, but even our top performers were in the 70% range. Nobody hit 2x, nobody hit 5x, nobody hit 10x."*(15:19~15:32) 이유는 AI의 시간 절약이 *"outweighed by other nonAI factors"*(15:34~15:39) — 회의·컨텍스트 전환·개발 환경의 마찰.
+
+> ⚠️ **Contradiction: step function인가, 한 자릿수 퍼센트인가.** 이 페이지의 Amazon 파일럿은 프로덕션 배포 속도에서 *절반 3x 미만, 다른 절반 중앙값 4.5x, 일부 10x+* 였다. DX 집계에선 상위도 70%대다. **지표가 다르고**(배포 속도 vs PR 처리량) **모집단이 다르다**(선별 파일럿·사내 도구 vs 여러 회사의 평균) — 그래서 둘 다 참일 수 있다: frontier 습관을 갖춘 소수와 업계 평균 사이의 거리. 그러나 이 페이지가 *"도구가 아니라 일하는 방식"* 으로 설명한 격차를 DX는 *조직의 비AI 병목* 으로 설명한다. 둘 다 당사자 데이터이고 서로를 언급하지 않는다. → [[perceived-vs-actual-productivity]]

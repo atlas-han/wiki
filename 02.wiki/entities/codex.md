@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review]
 links:
   - https://openai.com/index/nextdoor/
 created: 2026-06-27
-updated: 2026-09-28
+updated: 2026-10-03
 ---
 
 # Codex
@@ -89,3 +89,7 @@ updated: 2026-09-28
 - **데스크톱 앱의 인앱 브라우저**를 라이브 모드가 쓴다(35:04~35:12).
 - **모델 버릇(디자인)** — 나쁜 자간, 과하게 둥근 모서리, hairline border(44:17~44:36). Codex/GPT는 **"gate"라는 단어를 좋아하고** 지시를 압축한다 → Codex에만 로드되는 8-gate MD(47:16~48:16).
 - **플러그인 마켓플레이스**가 배포 경로로 있다(1:02:25~1:02:30).
+
+## 자기 리뷰 루프 — "리뷰를 리뷰하는 에이전트" (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 [[openai|OpenAI]] 2월 글을 요약(2차 인용): *"codeex[=Codex] reviews its own changes uh then calls in more agents to review those reviews um in a loop until every agent reviewer is satisfied"*(17:23~17:34). 변경마다 Codex를 **부팅 가능**하게 해 Codex가 Codex 사본을 띄워 UI를 보고 버그 수정을 확인하고, **로깅 스택 전체**를 에이전트에 노출했다(17:34~17:48). → [[automated-code-review]] · [[agent-visual-qa]]

@@ -6,9 +6,9 @@ tags: [testing, fuzzing, verification, coding-agents, quality]
 aliases: [퍼징 하네스, 올바른 테스트를 고르는 일]
 related: [verification-bottleneck, agent-verification-skill, verification-cost-asymmetry, generator-evaluator-pattern, decision-quality]
 first-seen: tech-bridge-ambitious-software-agent-era
-sources: [tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-death-of-code-review]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-10-03
 ---
 
 # 테스트 작성과 테스트 하네스 구축의 분리
@@ -58,3 +58,7 @@ updated: 2026-09-14
 
 - [[tech-bridge-ambitious-software-agent-era]] · [[jonathan-kelley]] · [[dioxus]]
 - 관련: [[verification-bottleneck]] · [[agent-verification-skill]] · [[verification-cost-asymmetry]] · [[task-entropy-matrix]] · [[decision-quality]] · [[agents-as-patient-specialists]]
+
+## "human on the loop" — Carlini의 C 컴파일러 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 이 페이지의 구분을 **반대 방향에서** 확인한다. Nicholas Carlini(Anthropic)의 에이전트 16개 C 컴파일러는 *"no human in the loop"* 였지만 *"there was absolutely a human on the loop. the system uh that reviewed the code, the system that checked whether the code was doing what it was supposed to do, all of that uh was written by a human"*(15:15~15:25) — *"automated testing with tests that took a human to write them"*(15:30~15:34). 여기서는 **하네스를 사람이 썼다** — 이 페이지의 *"장치는 에이전트가"* 와 갈리는 지점. 공통은 **무엇을 검증할지는 사람**이라는 것. 그리고 [[bun|Bun]] 포팅의 unsafe 블록 13,044개는 *기존 테스트 스위트를 게이트로 쓰면 테스트가 설계되지 않은 곳은 보지 못한다* 는 반례다(16:55~17:04). → [[mergeability-gap]]

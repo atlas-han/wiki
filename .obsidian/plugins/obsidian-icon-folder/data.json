@@ -896,5 +896,25 @@
   "02.wiki/entities/factory-ai.md": "LiBuilding",
   "02.wiki/sources/tech-bridge-conductor-orchestras-not-factories.md": "LiVideo",
   "02.wiki/sources/tech-bridge-factory-software-factory.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-sdd-enterprise-lessons.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-sdd-enterprise-lessons.md": "LiVideo",
+  "01.raw/articles/2026-10-02_코드 리뷰의 종말 - 데이터가 보여주는 진짜 현실입니다.md": "LiNewspaper",
+  "01.raw/articles/2026-10-02_소프트웨어 엔지니어링은 이제 소프트웨어 공장을 짓는 일이 될 것입니다 — Zach Lloyd (Warp).md": "LiNewspaper",
+  "01.raw/articles/2026-10-02_400개 기업 데이터로 본 소프트웨어 개발 AI의 현주소입니다.md": "LiNewspaper",
+  "02.wiki/concepts/perceived-vs-actual-productivity.md": "LiBookText",
+  "02.wiki/concepts/automated-code-review.md": "LiPuzzle",
+  "02.wiki/concepts/factory-engineering.md": "LiLightbulb",
+  "02.wiki/concepts/mergeability-gap.md": "LiBookText",
+  "02.wiki/concepts/build-in-the-open.md": "LiLightbulb",
+  "02.wiki/concepts/ai-measurement-framework.md": "LiPuzzle",
+  "02.wiki/sources/tech-bridge-death-of-code-review.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-warp-factory-engineering.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-dx-ai-impact-trends.md": "LiVideo",
+  "02.wiki/engineering/patterns/dora-metrics.md": "LiPuzzle",
+  "02.wiki/entities/warp.md": "LiBoxes",
+  "02.wiki/entities/justin-reock.md": "LiUser",
+  "02.wiki/entities/getdx.md": "LiBuilding",
+  "02.wiki/entities/zach-lloyd.md": "LiUser",
+  "02.wiki/entities/arize-ai.md": "LiBuilding",
+  "02.wiki/entities/laurie-voss.md": "LiUser"
+
 }

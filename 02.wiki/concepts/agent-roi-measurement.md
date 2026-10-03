@@ -6,9 +6,9 @@ tags: [measurement, roi, adoption, tokens, bias, communication]
 aliases: [측정 문제, 에이전트 ROI]
 related: [mousepower, trusted-throughput, token-roles, overspending-underusing-loop, agent-org-adoption, task-entropy-matrix, verification-bottleneck, value-maxing]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-dx-ai-impact-trends]
 created: 2026-09-13
-updated: 2026-09-24
+updated: 2026-10-03
 ---
 
 # 에이전트의 측정 문제
@@ -56,3 +56,13 @@ updated: 2026-09-24
 이 페이지의 *"버그를 몇 개 잡았나? 지원 요청을 몇 개 닫았나?"* 와 같은 형식의 질문 목록이 [[ibm|IBM Technology]] 계열 해설에서 나왔다 — **배포 몇 건 · 절약된 개발자 시간 · 회피된 재작업 · 해결된 취약점**(04:44~04:55). 용도도 명시된다: AI가 측정 가능한 결과를 만드는지, 그리고 **추가(incremental) 토큰 사용이 정당한지**(04:57~05:05). → [[value-maxing]]
 
 ⚠️ **귀속 공백은 그대로다** — 어느 토큰이 어느 배포를 만들었는지 나누는 법은 없다. 그리고 이 페이지의 3번(*척도는 고객의 멘탈 모델에*)은 다루지 않는다 — IBM 편의 척도는 **조직 내부**(개발자·플랫폼 리더)용이다. ⚠️ ko는 넷 중 셋의 방향을 바꿨다(*회피된* → *필요했던* 재작업 등).
+
+## 처음으로 집계 수치와 절차 — DX 편 (2026-10-03 · [[tech-bridge-dx-ai-impact-trends]])
+
+측정 플랫폼 [[getdx|DX]]의 [[justin-reock|Justin Reock]]이 이 페이지의 질문(*"where's our 10x productivity?"* 10:59~11:02)에 **절차**와 **집계 수치**를 함께 내놓았다.
+
+- **절차** — 새 AI 지표를 만들지 말고 *"foundational developer experience and developer productivity metrics"*(11:08~11:14) 위에서 **사용자 코호트를 비교**한다. 차원은 utilization → impact → cost의 성숙도 곡선 → [[ai-measurement-framework]]
+- **수치(⚠️ 벤더 데이터)** — PR 처리량 증가 중앙값 7.7%·평균 13%·상위 70%대, *"Nobody hit 2x"*(15:19~15:32), 체감 전달 속도 1년간 +약 4.5%(03:32~03:37) → [[perceived-vs-actual-productivity]]
+- **측정은 원래 안 풀렸다** — *"we we never completed that conversation before kind of throwing accelerant on this"*(10:39~10:43)
+
+이 페이지의 세 갈래와 대조하면: **1(우리는 표본이 아니다)** 에는 20만 명 규모의 집계로 답하지만 표본 구성은 밝히지 않는다. **2(토큰은 투입량이다)** 와는 같은 편이다 — 토큰·DAU는 utilization과 cost 차원에 두고 가치는 impact 차원에서 따로 잰다. 다만 귀속은 코호트 비교로 우회할 뿐이고 *누가 AI를 많이 쓰는가* 의 선택 편향은 다루지 않는다. **3(척도는 고객의 멘탈 모델에)** 은 여전히 비어 있다 — IBM 편처럼 독자가 **조직 내부 리더**다. ⚠️ 측정을 파는 회사가 측정의 필요를 말한다는 점도 함께 적어 둔다.

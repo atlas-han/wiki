@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering]
 created: 2026-08-29
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # Spec-Driven Development
@@ -117,6 +117,14 @@ Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven
 - **shift left** — *"everything shifts left to requirements engineering"*(26:43~26:45).
 
 > ⚠️ **Contradiction: plan/tasks와 스펙 형식.** 이 페이지의 Spec Kit 코어는 Spec(사용자 스토리) → **Plan → Tasks** → Implement. Martinelli는 plan/tasks 없이 use case에서 바로 코드로 간다. 또 09-27 풀코스의 *"스펙은 에이전트를 통해 고친다(직접 편집은 drift)"* 와 달리, 요구공학자가 markdown을 **직접 고치고** 재생성한다(26:33~26:37, 29:28~29:52). ⚠️ 셋 다 효과 측정은 없다.
+
+## 공장의 한 단계로서의 spec — product spec + tech spec (2026-10-03 · [[tech-bridge-warp-factory-engineering]])
+
+[[warp|Warp]]의 [[zach-lloyd|Zach Lloyd]]는 SDD를 [[software-factory|소프트웨어 공장]]의 **조건부 단계**로 둔다. triage 에이전트가 *"if this is easy, and this is unambiguous, just implement it"*(10:01~10:07) — **어려운 이슈만** spec으로 간다: *"If an issue is hard, uh I recommend having an agent that produces specs."*(10:07~10:15)
+
+spec은 **두 장**이다 — *"Product spec describes the product invariants that you're building towards. Tech spec describes the architecture and the shape of the code."*(10:31~10:41) 쓰는 것은 **에이전트**, 루프에서 spec을 리뷰하는 것은 **사람**(*"Humans will review the spec"* 03:36~03:40). 졸업생 조언에서도 *"understand the specs that agents are written sorry are writing"*(18:16~18:21)을 핵심 역량으로 든다.
+
+> 위키의 정리: 이 페이지의 Spec Kit 코어(Spec → Plan → Tasks)와 비교하면 product spec ≈ 무엇·불변식(Spec), tech spec ≈ 어떻게(Plan)에 해당한다. 새로운 것은 **"모든 일에 spec을 쓰지 않는다"는 triage 분기**와 **작성 주체가 에이전트·검토 주체가 사람**이라는 역할 배치다. ⚠️ 분기 기준(무엇이 "hard"인가)·효과 측정은 없다.
 
 ## References
 

@@ -2,12 +2,12 @@
 title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
-tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck]
+tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -16,7 +16,7 @@ updated: 2026-10-02
 
 > *"I would define the software factory as the whole loop the whole life cycle of developing software with autonomy which doesn't mean just coding and generating code by that I mean collecting all the signals reacting to user feedback to logs prioritizing what's important then orchestrating it all executing validating doing really good uh testing in production and then iterating on all this uh while also continuously improving in the process"* (00:47~01:18)
 
-> ⚠️ **정의의 출처가 하나, 그것도 벤더다.** 화자는 "software factory"를 제품 이름 겸 범주로 파는 회사 소속이다. 용어 자체는 그보다 넓게 쓰인다(*"everyone is talking about software factory but only few people are actually building one"* 00:05~00:13). 이 페이지의 구조·수치는 **Factory의 정의**이고, 다른 화자가 같은 말을 다르게 쓰면 아래에 추가한다.
+> ⚠️ **정의의 출처가 하나, 그것도 벤더다.** 화자는 "software factory"를 제품 이름 겸 범주로 파는 회사 소속이다. 용어 자체는 그보다 넓게 쓰인다(*"everyone is talking about software factory but only few people are actually building one"* 00:05~00:13). 이 페이지의 구조·수치는 **Factory의 정의**이고, 다른 화자가 같은 말을 다르게 쓰면 아래에 추가한다. → 두 번째 벤더 정의는 아래 **"두 번째 정의 — Warp"** 섹션([[tech-bridge-warp-factory-engineering]]).
 
 ## 아닌 것으로 정의하기
 
@@ -101,9 +101,52 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 
 [[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])는 같은 행사의 software factory 트랙 안에서 *"I honestly kind of hate the term. I think it's the wrong way of thinking about these new tools"*(14:26~14:34)라 하고, 사람이 *"factory line managers like pushing buttons"*(15:20~15:24)가 아니라 지휘봉을 든 지휘자로 사람·에이전트 혼성 팀을 이끌며 원할 때만 줌인하는 그림을 제시한다 → [[orchestras-not-factories]]. 근거는 측정이 아니라 10년 전 *"feature factories (…) just doesn't work"*(15:28~15:33)라는 일화와 도구 제작자의 언어 책임이다. ⚠️ 화자 회사명이 곧 그 은유(Conductor)이고, 그의 제품도 병렬 에이전트 관리 도구다. 같은 날 ingest된 이 페이지의 first-seen 소스(Factory)와 **같은 날 업로드**됐지만 서로를 언급하지 않는다.
 
+## 두 번째 정의 — Warp: "SDLC 그 자체" (2026-10-03 · [[tech-bridge-warp-factory-engineering]])
+
+[[warp|Warp]]의 [[zach-lloyd|Zach Lloyd]]는 같은 말을 **더 낮게** 정의한다 — *"There's nothing that complicated about loops. (…) This loop could literally just say like the software development life cycle. It's the same thing."*(03:15~03:25) 그리고 **채택 예측**을 붙인다: *"every company every open-source project will have at its core a software factory, kind of like the way that CI/CD became just like, "Oh, of course you have that.""*(08:33~08:44) ⚠️ 이 화자도 공장 인프라(Warp 에이전트 플랫폼)를 파는 쪽이고, 측정치는 없다.
+
+**루프와 사람 칸**(03:25~03:50):
+
+```
+아이디어 → [에이전트] triage ─(쉽고 모호하지 않음)→ 바로 구현
+                 └─(어려움)→ [에이전트] product spec + tech spec → [사람] spec 리뷰
+→ [에이전트] 구현(클라우드) → [사람+에이전트] 코드 리뷰 → [에이전트] 검증(computer use·영상·스크린샷)
+→ [사람] 제품 리뷰 → 출시 → [에이전트] 모니터링(크래시? 쓰이나?) → 맨 위로
+```
+
+**구성요소 넷**(07:51~08:13): 자동화 · 컨텍스트와 스킬 · 적시에 사람(*"when things get stuck on the factory"*) · 자기개선 루프.
+
+**아키텍처**(12:22~13:11): 여러 입구(task tracker·Slack·Teams·터미널/IDE·모니터링) → **control plane**(일 분배) → **클라우드 샌드박스**(어느 harness·어느 model) → 그 아래 ⭐ **data plane** — *"something that lets agents remember what they've done, learn, um improve over time"*(13:01~13:11).
+
+**측정과 skill loop**(13:11~14:35): 효율 = 출시량 대비 *"human time and token time"*(13:32~13:40). 루프의 전형은 **skill loop** — 공장 에이전트가 스킬을 돌리고 **observer 에이전트**가 적용을 지켜보며 스킬을 고친다; 예: 시니어가 리뷰 에이전트의 코멘트를 교정하면 observer가 다음 실행을 위해 리뷰 에이전트를 개선(14:17~14:33). → [[skill-self-improvement]]
+
+**지을까 살까**: Uber는 내부 버전을 지었다(11:53~12:01, 같은 행사의 다른 발표). 그러나 *"to build a thing that actually scales is probably like you should probably focusing on your own product, not building this infrastructure"*(12:09~12:18) — 엔지니어링은 **튜닝**(*"are these the right skills for my domain?"* 17:09~17:14)에 남는다. → [[factory-engineering]]
+
+**오픈소스 운영에 쓰기**: Warp는 5년 closed 끝에 오픈소스로 전환했고, 이유 하나가 **공개 공장** build.warp.dev였다(04:19~04:49). 노이즈 이슈·sloppy PR·리뷰 지옥을 공장으로 감당한다. → [[build-in-the-open]]
+
+### Factory 정의와 비교
+
+| | **Factory** (Tereza Tížková) | **Warp** (Zach Lloyd) |
+|---|---|---|
+| 정의의 높이 | 조직을 *"rebuild it from scratch"* | *"the software development life cycle. It's the same thing"* |
+| 사람의 자리 | 루프 밖 — *"monitor and decide what to build"*, *"a year or more"* 무인 예측 | **루프 안 세 칸** — spec·코드·제품 리뷰. 코드 리뷰 투입은 리스크 관리(11:05~11:10) |
+| spec | 오케스트레이터의 **validation contract**(코드 전) | 어려운 이슈만 **product spec(불변식) + tech spec(아키텍처)** |
+| 검증 | scrutiny + user testing validator(가상 컴퓨터 클릭) | computer use로 영상·스크린샷, CI/CD |
+| 개선 | deferred context · Agent Readiness · plugins/AutoWiki | **data plane** + **skill loop**(observer 에이전트) |
+| 출시 후 | 프로덕션 테스트 → 반복 | **모니터링 에이전트**가 크래시·사용을 보고 맨 위로 |
+| 짓기 | 처음부터 다시 | 대부분은 사서 **튜닝** |
+| 측정 | 벤더 수치(25%·50%·40%) | 없음 — 효율 지표의 *정의*만 |
+
+> ⚠️ **Contradiction: 사람 게이트의 위치.** 같은 "software factory" 아래 Factory는 사람을 **루프 밖 감독자**로(무인 1년 이상 예측), Warp는 **루프 안 고정 리뷰 칸**으로 둔다. 어느 쪽이 결과가 나은지 측정은 양쪽 다 없다.
+
+> ⚠️ **Contradiction: 직접 지을까.** Factory: *"rebuild it from scratch"*(조직 재설계). Warp: 공장 인프라는 짓지 말고 핵심 제품에 집중, 튜닝만. 둘 다 그 인프라를 파는 회사다.
+
+**은유에 대해**: Zach Lloyd는 공장 은유가 *"mechanizing or dehumanizing"* 으로 들릴 수 있음을 인정하면서도 *"leaning into it"*(19:14~19:23) — 핵심은 *"are you building something useful?"* 이고 taste가 들어가는 touch point는 사람 몫이라 한다. 위 Conductor 반론과 **사람이 중심**이라는 결론은 같고, 은유의 선택만 갈린다. → [[orchestras-not-factories]]
+
 ## References
 
 - [[tech-bridge-factory-software-factory]] — first-seen (Tereza Tížková, Factory)
 - [[tech-bridge-figma-coding-agents]] — 이전에 한 단어로만 등장(*"계획만 있으면 그 위의 루프·워크플로·'software factory'"*)
 - [[factory-ai]] · [[tereza-tizkova]] · [[defense-factory]] · [[loop-is-the-product]] · [[automatic-model-routing]] · [[deferred-tool-context]] · [[agent-readiness]]
 - [[tech-bridge-conductor-orchestras-not-factories]] — 반론(Charlie Holtz, Conductor)
+- [[tech-bridge-warp-factory-engineering]] — 두 번째 정의(Zach Lloyd, Warp) · [[warp]] · [[zach-lloyd]] · [[factory-engineering]] · [[build-in-the-open]]

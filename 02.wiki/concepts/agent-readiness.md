@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-readiness, codebase-hygiene, ai-adoption, power-law, tests, linters, documentation, reproducible-env]
 related: [codebase-gardening, software-factory, greenfield-vs-brownfield-agent-risk, executable-standards, agent-org-adoption, hard-vs-soft-enforcement, ai-slop]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory]
+sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # 에이전트 준비도 (Agent Readiness)
@@ -57,3 +57,21 @@ updated: 2026-10-02
 - [[tech-bridge-factory-software-factory]] — first-seen
 - [[codebase-gardening]] · [[software-factory]] · [[greenfield-vs-brownfield-agent-risk]] · [[executable-standards]] · [[agent-org-adoption]]
 - [[factory-ai]] · [[tereza-tizkova]]
+
+## 다른 회사, 같은 점검표 — "예전엔 그냥 좋은 DevEx라 불렀다" (2026-10-03 · [[tech-bridge-dx-ai-impact-trends]])
+
+[[getdx|DX]]의 [[justin-reock|Justin Reock]]이 같은 것을 **플랫폼의 AI 준비도(platform's AI readiness)** 라고 부른다: *"In 2024 we gave everybody a coding assistant. In 2025 we started building agents. Now we're realizing that our infrastructure wasn't ready for any of this."*(13:17~13:27) 준비도를 재면 *"how efficient you're going to be spending tokens and providing context to these agents"*(13:33~13:41)를 더 잘 다룬다고.
+
+| DX 항목 (13:41~13:50) | Factory 항목 (위) |
+|---|---|
+| *"clear and accurate, well structured documentation"* | 문서화 |
+| *"data structures with straightforward relations"* | — (새 항목) |
+| *"manageable modular code"* | 코드 스타일 · 깨끗한 코드베이스 |
+| *"reliable local CI and non-flaky test suites"* | 테스트 · 린터 · 재현 가능한 환경 |
+
+⭐ *"If, by the way, any of this sounds familiar to you, it's because we used to just call this good developer experience, right? But it turns out that what's good for humans is also good for agents. So we may finally paradoxically be making those investments that we should have been making over the last couple of decades."*(13:50~14:05)
+
+- **에이전트 준비도 = 미뤄 둔 DevEx 투자.** 두 벤더가 독립적으로 거의 같은 목록에 닿았다. Reock의 표현은 이 개념에서 *에이전트 전용* 이라는 인상을 걷어낸다.
+- **power law와 같은 그림을 다른 데이터로** — DX는 변경 실패율의 회사별 변동성이 AI 이후 커졌고, 그 갈림은 *"your release pipeline, your automated testing"*(05:29~05:33)에서 온다고 본다: *"The pattern remains the same. the amplitude has changed as a result of AI."*(05:33~05:38) → [[dora-metrics]]
+- **느린 CI가 PR을 키운다** — 빌드 45분~1시간이면 AI가 만든 함수 넷을 PR 하나에 몰아넣는다(07:28~07:46). *reliable local CI* 가 점검표에 있는 이유의 구체적 메커니즘.
+- ⚠️ 두 회사 모두 이 점검을 **파는** 쪽이다(Factory는 Agent Readiness, DX는 준비도 측정). 독립 연구는 아직 이 위키에 없다.

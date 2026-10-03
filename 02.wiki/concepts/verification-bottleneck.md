@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends]
 created: 2026-09-13
-updated: 2026-09-17
+updated: 2026-10-03
 ---
 
 # 검증 병목
@@ -111,3 +111,37 @@ Lauren Tan 쪽의 답은 그 적응의 구체적 형태다 — **사람이 PR �
 ⚠️ 소스가 내놓는 해법은 **자동화**(프론티어 모델을 쓴 취약점 탐지)인데, **AI가 만든 코드를 AI가 검증하는 구성의 독립성을 논의하지 않는다** — 이 위키가 [[embedded-external-evaluators]]·[[skill-evals]]에서 반복해 기록한 *작성자=검증자* 문제가 여기서도 열린 채로 남는다.
 
 → [[shift-left-security]] · [[continuous-security-validation]]
+
+## 네 번째 답 — 리뷰를 시스템으로 재건한다, 그리고 첫 정량 근거 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]([[arize-ai|Arize AI]])가 이 페이지의 진단에 **처음으로 숫자를 붙였다** — 모두 화자의 2차 인용이다.
+
+| 근거 | 진술 | en-orig |
+|---|---|---|
+| 경제학자 3인, GitHub 개발자 10만+ | 자율 에이전트를 켠 개발자 *"wrote 741% more code but only 30% more software shipped"*, 저자들은 *"blunt that review was the bottleneck"* | 01:22~01:54 |
+| Cisco 연구(약 20년 전) | 한 번에 400줄, 시간당 450줄을 넘으면 결함 발견이 무너진다 → 1만 줄 에이전트 PR = *"three or four working days"* | 03:30~04:05 |
+
+**"더 열심히 리뷰"는 산수상 안 된다** — 그리고 리뷰를 빼 본 곳(OpenAI 2월 글, Carlini, Bun)은 모두 리뷰를 **지운 게 아니라 사람이 지은 시스템으로 옮겼다**(*"They didn't delete review, they moved it."* 17:21~17:23).
+
+| 답 | 소스 | 처방 |
+|---|---|---|
+| 작업을 고른다 | 마우스파워 (09-12) | 검증이 비싼 작업은 주지 마라 |
+| 역량을 짓는다 | Lauren Tan (09-12) | 검증을 스킬로 |
+| 일을 쪼갠다 | Jonathan Kelley (09-13) | 무엇을 검증할지는 사람, 장치는 에이전트 |
+| **리뷰를 재건한다** | **Voss (10-03)** | ***"stop reviewing PRs"*(23:19~23:21)** — 사람은 PR이 아니라 **리뷰 하네스**(좋음의 정의·회사 맥락·도메인 지식)를 짓는다 |
+
+네 번째 답이 고유한 점: 사람이 **루프 *안*(in)이 아니라 루프 *위*(on)** 에 선다 — 그리고 테스트 통과가 머지 가능을 보장하지 않기 때문에(METR 약 절반, FrontierCode 88% vs 29%) 그 하네스가 *테스트 이상* 을 봐야 한다. → [[mergeability-gap]] · [[automated-code-review]]
+
+⚠️ 같은 발표가 **Dex Horthy의 철회**(*"Please please read the code. We tried not reading the code for like six months. It did not end well."* 18:48~18:54)를 근거로 들면서 처방은 *"stop reviewing PRs"* 다. 두 주장을 화해시키는 말은 없다 — 위키의 독해로는 *아무도 안 보는 것* 과 *보는 층을 올리는 것* 의 차이.
+
+## "생성은 애초에 병목이 아니었다" — 집계 데이터, 그러나 다른 병목 (2026-10-03 · [[tech-bridge-dx-ai-impact-trends]])
+
+[[getdx|DX]]의 [[justin-reock|Justin Reock]]: *"code generation was never the bottleneck in the first place, right? Even if engineers are getting like 100% accurate instant code coming from the models, which they are not, you would still only be attacking anywhere from maybe 14 to 16% of the overall value stream."*(14:48~15:03) PR 처리량 증가는 **중앙값 7.7%, 평균 13%, 상위 70%대 — *"Nobody hit 2x"***(15:19~15:32). 근거는 Goldratt: *"an hour saved on something that isn't the bottleneck is worthless"*(16:02~16:05). ⚠️ 전부 DX 플랫폼 데이터, 14~16%의 출처 미발화.
+
+**이 페이지를 지지하는 쪽** — 같은 데이터의 품질 지표가 검증 병목의 증상이다:
+
+- 평균 PR 크기 **44 → 72줄**(06:56~07:02), 점진적 전달 체감 **−10%**(08:12~08:14) → 리뷰 표면이 커진다 → [[minimizing-reader-load]]
+- 변경 확신 **−6%** vs 유지보수성 **+약 4%** — *"I trust the outputs less. I'm more afraid now of breaking things than I was a year ago."*(06:35~06:41) → [[perceived-vs-actual-productivity]]
+- Zapier의 주 약 3,000건 자동 1차 리뷰 — 피상적 항목만, 사람은 여전히 루프에(17:28~17:52, 화자 전언) → [[automated-code-review]]
+
+> ⚠️ **Contradiction: 다음 병목은 검증인가, 조직 마찰인가.** 이 페이지는 병목이 *생성 → 검증* 으로 옮겨갔다고 본다. Reock은 AI의 시간 절약을 갉아먹는 것으로 **검증이 아니라** *"meeting heavy days and context switching and other sources of interruption, the cumulative effects of the dev environment and friction"*(15:45~15:53)을 꼽고, 사례도 스탠드업 축소·온보딩·인시던트 컨텍스트(Zapier·Spotify)다. 자기 데이터(PR ↑, 확신 ↓)는 검증 병목을 가리키는데 결론에서는 그것을 말하지 않는다 — **같은 데이터의 두 읽기.** 위키의 독해: 둘은 배타적이지 않다. *생성이 병목이 아니었다*는 데는 모두 동의하고, 그다음 병목이 **코드 경로 안(리뷰)이냐 밖(조직)이냐**가 갈린다.

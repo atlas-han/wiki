@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-09-29
+updated: 2026-10-03
 ---
 
 # OpenAI
@@ -156,3 +156,14 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - **사용량** — *"in absolute terms, we are dominated still by what is happening with Open AI"*(11:25~11:29, API 측), *"especially with Astra now … fantastic traction"*(09:56~10:01) → [[openai-astra]]. 다만 Copilot 안에서 OpenAI 모델은 **learned router가 고르는 여러 모델 중 하나**다(10:19~10:25) → [[model-mixing-economics]].
 - **공동 안전 위원회** — *"a joint safety board where we really do a lot of the testing internally on both sides … embedded evaluators, OpenAI and Microsoft"*(15:48~16:05). 업계 단위라면 *"not just … something that Sam and I sit around and decide"*(17:13~17:19) → [[embedded-external-evaluators]].
 - ⚠️ **경쟁에 대해서는 말하지 않는다** — 진행자가 *"OpenAI and Anthropic have been increasingly focused on the enterprise"* 를 묻자(12:17~12:29) 답은 OpenClaw와 자사 [[agent-365|Agent 365]]로 간다. 파트너이자 엔터프라이즈 경쟁자라는 관계의 구체는 소스에 없다.
+
+## "no manually written code" — 리뷰를 옮긴 내부 프로젝트 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]](Arize AI)의 2차 인용 — 원 글의 제목·저자는 발화되지 않았다.
+
+- **2026년 2월** 글: 빈 저장소에서 내부 제품을 *"no manually written code"* 로, 5개월 뒤 약 100만 줄·머지된 PR 약 1,500개·엔지니어 3명(05:02~05:25). *"humans may review pull requests but they are not required to"*(05:31~05:36).
+- 리뷰는 지운 게 아니라 옮겼다: [[codex|Codex]]가 자기 변경을 리뷰하고 더 많은 에이전트가 그 리뷰를 리뷰, 변경마다 Codex를 부팅해 UI 확인, 로깅 스택 노출(17:21~17:48). 한동안 금요일마다 손으로 슬롭 청소 → 슬롭 청소 에이전트(17:58~18:17).
+- 화자의 유보: 제품이 무엇인지 말하지 않았고 방법을 오픈소스로 내지도 않았다 — *"there are still holes in that strategy"*(05:43~05:55).
+- **CriticGPT(2024)** — 모델 코드의 버그를 잡는 모델, 사람+모델이 각자 단독보다 나았다(10:13~10:26). → [[mergeability-gap]]
+
+⚠️ 이 위키의 [[ryan-lopopolo]] 페이지는 그가 2026년 2월 Codex 완전 자율화 글을 썼다고 기록한다 — **같은 글인지 확인하지 않았다.** ⚠️ 19:06~19:12 *"OpenAI is running uh lived with the results um and reversed in public"* 은 문맥상 Dex Horthy에 대한 말로 읽는다 — OpenAI의 번복으로 기록하지 않는다.

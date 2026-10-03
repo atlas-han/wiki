@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review]
 created: 2026-09-15
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # AI Engineer
@@ -101,3 +101,7 @@ updated: 2026-10-02
 ## "software factory" 트랙과 그 반론 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 설명란은 [[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])의 발표를 *"AI Engineer World's Fair에서 발표한 세션"* 이라 하지만, 자막엔 행사명이 없고 *"what's the conference about?" And I said it was about AI engineering*(00:16~00:20)뿐이다. 행사 구성에 대한 단서 하나: *"The whole like talk track today is about software factories and I honestly kind of hate the term."*(14:23~14:32) — 이 세션이 **software factory 주제 트랙** 안에서 그 프레이밍을 반박했다는 화자 진술. → [[software-factory]] · [[orchestras-not-factories]]. ⚠️ 트랙 이름·일정은 확인하지 않았다.
+
+## "death of the code review" 연속 세션 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]의 첫머리: *"Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing[=scheduling] decisions get made, but uh Swix decided it would be funny for those two to be backtoback."*(00:00~00:15) — **같은 제목 세션 두 개가 연속 배치**됐다는 화자 진술. *"Swix"*(en *"Swish"*)는 swyx로 판독(⚠️ 추정). 행사 단서: *"He famously did that at AIE last year"*(18:36~18:38, Dex Horthy), *"There are enough pitches for ARISE at this conference"*(22:15~22:18). 언급 사건으로 보아 **2026년 6월 이후**(FrontierCode *"launched it in June"* 07:58~08:00). ⚠️ 행사명·회차·도시는 발화되지 않았다 — 09-07 절차대로 다른 AI Engineer 소스와 같은 회차로 묶지 않는다. 앞 세션은 이 위키에 없다.

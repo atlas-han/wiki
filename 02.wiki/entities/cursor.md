@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review]
 created: 2026-09-01
-updated: 2026-09-30
+updated: 2026-10-03
 ---
 
 # Cursor
@@ -89,3 +89,14 @@ Google 측 에피소드가 [[antigravity|Antigravity]]·[[claude-code|Claude Cod
 ## "제품 → eval → 모델" 경로의 예로 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
 [[roland-gavrilescu|Roland Gavrilescu]]: *"Think of how um Cursor and Cognition went from building the best product to then uh building the best evals for the product, and finally building the best models based on the previous two artifacts."*(09:09~09:23) — 이것을 *"the recipe for everything going forward"* 라 부른다. 자체 모델 Composer(위)와 방향은 맞지만 **"최고의 eval" 단계에 대한 근거는 소스에 없다.** 외부 화자의 서술이다. → [[valued-work-per-watt]]
+
+## 자동 코드 리뷰어의 아키텍처 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 Cursor가 **공개한 리뷰어 아키텍처**를 업계 사례의 중심에 놓는다(제3자 요약, 원문 미확인):
+
+- **1세대**: diff마다 리뷰 **8패스**, 리뷰어 **순서 셔플**(순서가 결과를 바꿨다) — 목적은 **오탐 걸러내기**(11:32~11:57).
+- **재구축**: 모델이 diff를 추론하고 도구를 부르며 어디를 팔지 정한다. ⭐ *"they had to tell the model to be more suspicious of the code"* — *"don't trust the code by default"*(12:26~12:51).
+- **리뷰 + 수정**: 발견에서 수정 에이전트를 띄워 diff를 돌려준다. 다음은 **코드를 실행해 버그 보고를 증명**(13:06~13:30).
+- **지표**: **resolution rate**(사람이 리뷰 제안을 받아들이는 비율) 52% → 70%+(14:15~14:22).
+
+⚠️ 제품명(Bugbot 등)은 발화되지 않았다 — [[tech-bridge-lauren-tan-2000-prs]]의 *bugbot* 과 같은 것인지 확인하지 않았다. → [[automated-code-review]]

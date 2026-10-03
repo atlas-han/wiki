@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review]
 created: 2026-09-18
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # 위험 비례 사람 검토
@@ -57,3 +57,17 @@ updated: 2026-10-02
 ## 코드베이스 구역판 — 슬롭 없는 구역 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 [[conductor|Conductor]]의 [[slop-free-zone]]은 이 페이지의 기준(결정의 위험도)을 **코드 위치**로 옮긴 형태로 읽힌다 — *"in our CI uh any change to migrations file requires the a uh a human to review it"*(05:51~06:02). DB 마이그레이션처럼 **되돌리기 어려운 곳**에는 강제 사람 검토, 나머지는 *"very loose"*(05:28~05:31). 이 페이지가 비워 둔 *"가장 큰 위험을 수반하는 결정의 예"* 에 대한 실무 사례 하나. ⚠️ 위험도 기준이라는 연결은 위키의 정리이며, 화자는 위험이라는 말을 쓰지 않는다.
+
+## 공장의 코드 리뷰 칸 — 에이전트 먼저, 사람 투입은 리스크 관리 (2026-10-03 · [[tech-bridge-warp-factory-engineering]])
+
+[[zach-lloyd|Zach Lloyd]]([[warp|Warp]])는 [[software-factory]]의 리뷰 단계를 *"in many ways the most painful part"*(10:53~10:54)라 하고, 처방을 이 원칙의 언어로 말한다 — *"I would have an agent do code review first, and then it becomes over time like a risk management exercise of like when do you bring in humans to do code review, but you want to have a step in here where humans can do it."*(10:59~11:13) 사람의 자리는 없애지 않고 **언제 부를지를 위험으로 정한다.** ⚠️ 위험 기준(무엇이 사람을 부르는가)은 말하지 않는다 — [[slop-free-zone]]의 migrations CI 게이트 같은 구체 규칙이 없다.
+
+## 사람 체크포인트가 살아남는 세 자리 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 업계 사례를 훑은 뒤 같은 배치를 **관찰**로 내놓는다 — 사람 체크포인트는 *"moving around uh but it is surviving in predictable places"*(19:46~19:50):
+
+1. *"where correctness isn't cheaply checkable"* → [[mergeability-gap]]
+2. *"where uh the blast radius is large"* — 보안 민감 환경에선 사람 리뷰를 빼자는 말에 *"an immediate no"* (19:54~20:04)
+3. *"wherever someone has to put their name on the result"* (20:04~20:08) → [[named-human-accountability]]
+
+이 페이지의 기준(결정의 위험도)에 **검증 비용**(1번)과 **귀속**(3번)이 붙었다. 그리고 역할은 위로 — *"from inspecting the code directly to designing and tuning the systems that inspect the code and designing the definition of good"*(20:13~20:22). → [[automated-code-review]]

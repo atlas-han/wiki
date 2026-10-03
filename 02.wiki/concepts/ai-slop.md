@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review]
 created: 2026-09-12
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # AI 슬롭
@@ -166,3 +166,12 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 정의(Taste Labs)·측정·예방(09-15)·제작자의 처방(09-28)에 이어, [[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]가 **구역**을 더한다 → [[slop-free-zone]]. *"a slot[=slop]-free zone is a part of the codebase or a part of the app that requires really strict human review"*(05:05~05:17) — 모든 곳의 슬롭을 막는 게 아니라 **엄격한 곳(migrations·CLAUDE.md·스킬)과 느슨한 곳을 나눈다**: *"quite careful with certain parts of our codebase and then very loose with other parts"*(05:27~05:31).
 
 > ⚠️ 같은 발표가 *"anything written in Slack is slop free. It's it's not written by the AI, it's written by a human"*(06:02~06:07)을 **가정**한다 — 이 페이지의 *"AI 슬롭 이전에 인간 슬롭이 있었다"*(Lauren Tan)와, 사람이 AI 출력을 붙여 넣는 현실 둘 다와 부딪힌다.
+
+## 슬롭 청소의 자동화 — 금요일과 로봇 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 전한 두 일화(2차 인용):
+
+- [[openai|OpenAI]]의 무인 코딩 프로젝트(2월 글): *"for a while on this project, they had to spend every Friday cleaning up AI slop uh by hand as humans"* → 확장이 안 되자 *"they trained agents to look for AI slop and get rid of the AI slop"*(17:58~18:17). **슬롭 청소가 사람의 정기 업무 → 에이전트 업무로** 옮겨 간 기록.
+- [[bun|Bun]] 포팅의 마지막 PR(Zig 코드 전부 삭제)을 *"another robot"* 이 *"this is AI slop. You can't possibly delete all of your code"* 로 플래그(16:09~16:22) — **자동 슬롭 탐지기의 오탐** 사례(정당한 대규모 삭제를 슬롭으로 봤다).
+
+두 번째는 [[automated-code-review]]의 *오탐이 리뷰어를 죽인다* 와 같은 자리다.

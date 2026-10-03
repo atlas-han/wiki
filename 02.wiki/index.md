@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-10-02
 ## Entities
 
 ### Persons
+- [[zach-lloyd]] — [[warp|Warp]] 창업자(전 Google principal engineer · Google Docs 엔지니어링 리드). *"소프트웨어 엔지니어링은 공장 공학이 된다"* ([[tech-bridge-warp-factory-engineering]]) ⚠️ 당사자 · 6개월 무코딩은 본인 진술
+- [[laurie-voss]] — [[arize-ai|Arize AI]] DevRel 책임자, npm Inc. 공동 창업자. 에이전트 시대 코드 리뷰 산업 현황 서베이 ([[tech-bridge-death-of-code-review]]) ⚠️ 성·링크는 설명란에만(자막 "Lori")
+- [[justin-reock]] — [[getdx|DX]] deputy CTO. DX 플랫폼 데이터로 본 AI 도입 1년의 다섯 트렌드(속도·품질·사람·측정·병목) ([[tech-bridge-dx-ai-impact-trends]]) ⚠️ 자막 "Justin Rio", 이름은 설명란 링크(justinreock)
 - [[simon-martinelli]] — 스위스 엔터프라이즈 Java 컨설턴트(17년), [[ai-unified-process|AI Unified Process]] 저자, 레거시 현대화 ([[tech-bridge-sdd-enterprise-lessons]]) ⚠️ 당사자 · 성은 설명란에만
 - [[charlie-holtz]] — [[conductor|Conductor]] 공동창업자. 가장 빠른 빌더들의 6원칙과 *공장이 아니라 오케스트라* ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 당사자 · 이름은 설명란에서
 - [[tereza-tizkova]] — [[factory-ai|Factory]] 소속 발표자. [[software-factory|소프트웨어 팩토리]] 3원칙 ([[tech-bridge-factory-software-factory]]) ⚠️ 성·링크는 설명란에만(자막 "Theresa/Teresa")
@@ -103,6 +106,8 @@ updated: 2026-10-02
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[arize-ai]] — Laurie Voss 소속. 자막엔 "Arise AI"(설명란 arize.com). 제품은 소스에서 발화되지 않음 ([[tech-bridge-death-of-code-review]])
+- [[getdx]] — DX(getdx.com): 개발자 경험·생산성 측정 플랫폼. 분기 State of AI·AI Impact 리포트, AI Measurement Framework, 플랫폼 AI 준비도 측정 ([[tech-bridge-dx-ai-impact-trends]]) ⚠️ 벤더 데이터 · "DORA·SPACE·DevEx를 만든 사람들"은 자사 진술
 - [[factory-ai]] — Factory(factory.ai): Droid · Missions · 자동 모델 라우팅 · 지연 도구 컨텍스트 · Agent Readiness · plugins · AutoWiki. Adobe·EY 등 엔터프라이즈 고객 ([[tech-bridge-factory-software-factory]]) ⚠️ 벤더 · 자막은 세 트랙 모두 "factory.com"
 - [[introspection-dev]] — Introspection(introspection.dev): 에이전트 루프를 **agent recipes**로 증류해 버전 관리. pi.recipes(early release), Pi 하네스·Harbor 기반 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ 당사자
 - [[weights-and-biases]] — ML 실험 추적 회사, [[wandb-weave|Weave]]·[[wandb-aria|ARIA]] 제작사. 발표자가 *"coreweave Arya"* 라 부르지만 CoreWeave와의 관계는 소스에 없음 ([[tech-bridge-wandb-aria-self-improving-agent]])
@@ -184,6 +189,7 @@ updated: 2026-10-02
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[warp]] — 에이전트 내장 터미널에서 출발한 오픈소스 agentic development environment. 5년 closed 후 오픈소스화, 공개 공장 build.warp.dev ([[tech-bridge-warp-factory-engineering]]) ⚠️ 규모 수치는 창업자 진술
 - [[conductor]] — 여러 코딩 에이전트를 동시에 돌리는 데스크톱 앱. git worktree → 클라우드 샌드박스, 실시간 협업 워크스페이스·모바일·API ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 당사자 데모
 - [[wandb-aria]] — W&B의 리서치 에이전트(*"general availability on Monday"*). 자기 오프라인 eval에서 hill climb — 데모에서 프로덕션 트레이스를 회귀 태스크로 바꾸고 `weave.log` 호출 문제에 프롬프트 패치 후보를 냄 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 결과 수치는 화면에만
 - [[microsoft-copilot]] — chat·co-work·code·**Autopilot** 네 폼팩터 묶음. Autopilot = 입력·출력에 사람이 있는 장시간 비즈니스 프로세스 에이전트 ([[tech-bridge-nadella-copilot-autopilot]]) ⚠️ 당사자
@@ -302,6 +308,10 @@ updated: 2026-10-02
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[factory-engineering]] — 엔지니어는 제품이 아니라 "제품을 만드는 것"(공장)을 짓고 측정·튜닝한다 — meta-engineering ([[tech-bridge-warp-factory-engineering]]) > ⚠️ 반대 은유: [[orchestras-not-factories]]
+- [[build-in-the-open]] — 복제가 공짜인 시대엔 좋은 제품만으론 부족 — 공개 개발로 생태계·브랜드를 얻고 오픈소스의 고통은 소프트웨어 공장으로 감당 ([[tech-bridge-warp-factory-engineering]]) ⚠️ 사례 하나
+- [[mergeability-gap]] — 테스트 통과 ≠ 머지 가능: METR 약 절반, FrontierCode Fable 5 88%(SWE-bench Pro) vs 29%(최난도). 머지 가능성 채점기가 생기면 곧 학습 신호 ([[tech-bridge-death-of-code-review]]) ⚠️ 전부 2차 인용
+- [[perceived-vs-actual-productivity]] — 체감과 실제의 괴리 셋: METR(−19% vs 체감 +20%, 전언) · DX 집계 체감 +4.5%·처리량 중앙값 7.7% · 유지보수성 +4% vs 변경 확신 −6% ([[tech-bridge-dx-ai-impact-trends]]) > ⚠️ Contradiction: [[frontier-engineering]] Amazon 4.5x vs "Nobody hit 2x"
 - [[orchestras-not-factories]] — 사람은 공장 라인 관리자가 아니라 사람·에이전트 혼성 팀 한가운데의 지휘자 — [[software-factory]] 프레이밍에 대한 반론 ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 일화 근거 · 화자 회사명이 곧 은유
 - [[ai-data-exposure]] — AI 데이터 노출: 섀도우 AI·챗봇 입력·아키텍처 각 칸(학습·RAG·도구·하위 에이전트)·workforce 행위를 통한, **공격자 없는** 민감 데이터 노출. workload와 workforce를 구분 ([[tech-bridge-ai-data-exposure-hidden-risk]]) ⚠️ 벤더 해설 · 31% 수치 출처 없음
 - [[valued-work-per-watt]] — 최적화할 점수: 먼저 가치를 재고, 그 가치를 싸게 얻는지. Cursor·Cognition이 제품 → eval → 모델 순으로 갔다는 예 ([[tech-bridge-introspection-loop-is-the-product]]) ⚠️ "per watt"의 실제 측정 단위 불명
@@ -378,6 +388,8 @@ updated: 2026-10-02
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[automated-code-review]] — 다중 패스·기본 의심·리뷰+수정 융합·사람 수락률 지표. 사람은 in이 아니라 on the loop, 리뷰어는 프롬프트 인젝션에 88% 속는다(사람 35%) ([[tech-bridge-death-of-code-review]]) ⚠️ 벤더 수치
+- [[ai-measurement-framework]] — AI 효과를 새 지표가 아니라 기존 기초 지표 위의 사용자 코호트 비교로: utilization → impact → cost 성숙도 곡선, 에이전트에게 사람과 일한 경험 묻기 ([[tech-bridge-dx-ai-impact-trends]]) ⚠️ 벤더 프레임워크
 - [[ai-unified-process]] — 엔터프라이즈 SDD: system use case + 엔티티 모델 → 바로 코드, plan/task는 스킬이 대체, brownfield는 역공학으로 스펙화, *"워터폴이 아니라 use case 하나씩"* ([[tech-bridge-sdd-enterprise-lessons]]) > ⚠️ Contradiction: [[spec-driven-development]]의 plan/tasks 단계
 - [[agent-readiness]] — AI 도입은 power law: 재현 가능한 환경·테스트·문서·린터를 점검하는 코드베이스 위생 ([[tech-bridge-factory-software-factory]]) ⚠️ Stanford 데이터 출처 미상
 - [[slop-free-zone]] — 엄격한 사람 검토가 필요한 구역(마이그레이션은 CI 게이트, CLAUDE.md·스킬)을 정하고 나머지는 느슨하게 ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 설명란이 자막보다 셈
@@ -553,6 +565,7 @@ updated: 2026-10-02
 - [[actix-sync-arbiter]] — CPU-bound 작업용 동기 actor 스레드 풀
 
 ### Patterns
+- [[dora-metrics]] — DORA 배포 빈도·변경 실패율: 대리 지표의 한계, AI 1년 — 배포 빈도 ↑(둔화), CFR 회사별 변동성 극심. *"The pattern remains the same. the amplitude has changed as a result of AI."* 짝 지표 PR 크기 44→72줄 ([[tech-bridge-dx-ai-impact-trends]]) ⚠️ 벤더 데이터
 - [[self-contained-systems]] — UI·로직·DB를 한 레포에 담는 수직 분할 — AI가 필요한 코드가 한곳에. 순진한 마이크로서비스(*분산 big ball of mud*)와 거대 모놀리스 사이 ([[tech-bridge-sdd-enterprise-lessons]])
 - [[pets-vs-cattle]] — 인프라 일반 원칙, [[brain-hands-decoupling]]의 사상적 출처
 - [[twelve-factor-app]] — SaaS 앱 12원칙(config-in-env·stateless·dev/prod parity), cloud-native 토대 (sources: 1)
@@ -610,6 +623,9 @@ updated: 2026-10-02
 ---
 
 ## Sources
+- [[tech-bridge-death-of-code-review]] — [[laurie-voss|Laurie Voss]] ([[arize-ai|Arize AI]]) 코드 리뷰의 종말(24:11, 공식 챕터 21, 2026-10-02 업로드): 코드 741%↑ vs 출시 30%↑, Cisco 400줄, [[mergeability-gap|테스트 통과 ≠ 머지 가능]], [[automated-code-review|자동 리뷰]] 현장, Bun unsafe 13,044, "stop reviewing PRs — 리뷰 하네스를 지어라" ⚠️ 거의 전부 2차 인용·화자 산수 오류 2곳
+- [[tech-bridge-warp-factory-engineering]] — [[zach-lloyd|Zach Lloyd]] ([[warp|Warp]]) (20:09, 공식 챕터 29, 09-28 멤버 전용 → 10-02 공개): **소프트웨어 엔지니어링은 [[factory-engineering|공장 공학]]이 된다** — 사람 칸(spec·코드·제품 리뷰)이 박힌 SDLC 루프, control/data plane, skill loop, [[build-in-the-open|공개 공장]] build.warp.dev. [[software-factory]]의 두 번째 벤더 정의 ⚠️ 측정 없음 · ko가 채용 발언 반전
+- [[tech-bridge-dx-ai-impact-trends]] — [[justin-reock|Justin Reock]]([[getdx|DX]] deputy CTO) — AI 도입 1년의 다섯 트렌드(18:42, 공식 챕터 14, 2026-10-02 업로드). 배포 빈도 ↑ · [[dora-metrics|CFR 진폭 ↑]] · 유지보수성 +4% vs 변경 확신 −6% · PR 44→72줄 · [[ai-measurement-framework]] · *"code generation was never the bottleneck"* — 처리량 중앙값 7.7%, *"Nobody hit 2x"* ⚠️ 벤더 데이터 · "400개 기업"은 자막에 없음 · 촬영 2026년 6~7월 추정
 - [[tech-bridge-nadella-copilot-autopilot]] — [[satya-nadella|Satya Nadella]]([[microsoft|Microsoft]]) × Deirdre 'DB Live' @ Copilot 행사(25:47, 공식 챕터 11, 2026-09-28 업로드). chat·co-work·code·Autopilot 조합 · [[agent-365|Agent 365]] · [[software-marginal-cost|*"software for the first time has marginal cost"*]] · *"auto has become the product"*(learned router) · 미·중 통보 체계·insider risk · [[embedded-external-evaluators|embedded evaluators]] · Quincy 데이터센터 · [[inference-revenue-training-rnd|추론=매출·훈련=R&D]] ⚠️ 당사자 · 촬영 날짜 미확정 · ko가 뜻을 네 번 뒤집음 · 장관 이름 Blinken/Bessent 판독 안 함
 - [[tech-bridge-llamaindex-document-context-layer]] — [[jerry-liu|Jerry Liu]]([[llamaindex|LlamaIndex]]) @ AI Engineer World's Fair 2026(20:33, 공식 챕터 11, 2026-09-28 업로드). 2026년의 RAG = 하네스 + [[document-context-layer|컨텍스트 레이어]] · [[document-parsing-for-agents|PDF 파싱이 어려운 이유와 하이브리드]] · ParseBench · [[tiered-document-parsing|빠른 파서로 훑고 필요한 페이지만 VLM]] ⚠️ 당사자 · 벤치 수치 없음 · ko가 *extremely low cost* → "비용도 엄청나게 높습니다"
 - [[tech-bridge-agents-vs-humans-optimizer-speedrun]] — [[prime-intellect|Prime Intellect]]: [[codex|Codex]]·[[claude-code|Claude Code]]를 optimizer speedrun에 투입(설명란 기준 [[elie-bakouch|Elie Bakouch]], 19:08, 공식 챕터 18, 2026-09-27 업로드). 둘 다 인간 기록을 넘었으나 **인간 기록 위의 +α**이고 **새 옵티마이저 발명 0** · Claude는 9~10시간마다 멈춤 · Codex는 멈추지 않고 서브에이전트·압축 多 → [[automated-ai-research]] ⚠️ 단일 실험 · 행사명·촬영 시점 미확정 · ko가 부정을 네 번 뒤집음
@@ -720,6 +736,6 @@ updated: 2026-10-02
 
 ## 통계
 
-- 총 페이지 수: 681 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 664 → 681, + 2026-10-02 Tech Bridge 3편: source 3 + concept 8 + engineering 1 + entity 5)
+- 총 페이지 수: 697 (02.wiki 실측 `find 02.wiki -name "*.md" | wc -l`, log 포함; 681 → 697, + 2026-10-03 Tech Bridge 3편: source 3 + concept 6 + engineering 1 + entity 6)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-02 (Tech Bridge **3편**, **스물아흐레 연속** — 10-01 업로드 3편, 그중 `cHsunDt0QUc`는 09-28 멤버 전용에서 공개 전환. 같은 날 **소프트웨어 공장**을 두고 찬반이 갈린다 — [[tech-bridge-factory-software-factory|Factory 편]]은 개발 생애주기 전체를 자율 루프로, [[tech-bridge-conductor-orchestras-not-factories|Conductor 편]]은 *"그 용어가 싫다"* 며 오케스트라를, [[tech-bridge-sdd-enterprise-lessons|Martinelli 편]]은 그 앞단의 스펙·요구공학을. 멤버 전용 3편 건너뜀)
+- 마지막 ingest: 2026-10-03 (Tech Bridge **3편**, **서른 날 연속** — 10-02 업로드 3편, 그중 `XyVUHSzKM2E`(Warp)는 09-28 멤버 전용에서 공개 전환. 같은 날 세 편이 **검증·측정**으로 모인다 — [[tech-bridge-death-of-code-review|코드 리뷰의 종말]]은 리뷰를 시스템으로 재건하라, [[tech-bridge-dx-ai-impact-trends|DX 편]]은 *"Nobody hit 2x"*, [[tech-bridge-warp-factory-engineering|Warp 편]]은 공장 은유를 받아들이되 사람 칸을 남긴다. 멤버 전용 4편 건너뜀)

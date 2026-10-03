@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [software-factory, human-in-the-loop, multi-agent, metaphor, developer-experience, coding-agents]
 aliases: [orchestras not factories, 공장이 아닌 오케스트라, orchestra not factory, 지휘자 비유]
-related: [software-factory, frontier-engineering, persistent-agent-teams, agent-swarm, slop-free-zone, multiplayer-agent-context, risk-proportional-human-review, goal-level-delegation]
+related: [software-factory, frontier-engineering, persistent-agent-teams, agent-swarm, slop-free-zone, multiplayer-agent-context, risk-proportional-human-review, goal-level-delegation, factory-engineering]
 first-seen: tech-bridge-conductor-orchestras-not-factories
-sources: [tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # 공장이 아니라 오케스트라 (Orchestras, Not Factories)
@@ -49,7 +49,13 @@ updated: 2026-10-02
 >
 > ⚠️ **ko 자막이 결론을 뒤집는다** — *"I don't want to be in my dark factory. I don't want to be a line manager"*(16:01~16:05)가 ko에서 **"어두운 내 공장에 있고 싶다 … 라인 관리자가 되고 싶습니다"**, *most of the time I can zoom out* 이 **"가끔씩 시간을 낼 수 있어"**, *feature factories* 가 **"함수"**. 한국어 자막만 본 독자에겐 반대 주장으로 읽힐 수 있다.
 
+## 맞은편 — 은유를 받아들이는 쪽 (2026-10-03 · [[tech-bridge-warp-factory-engineering]])
+
+[[warp|Warp]]의 [[zach-lloyd|Zach Lloyd]]는 software factory 발표에서 같은 질문(제품 발견·taste는?)을 받고 **은유의 위험을 인정한다** — *"the problem with the factory metaphor, even though I'm like leaning into it because I think that's like there's something to it, is that it can kind of sound like uh mechanizing or dehumanizing."*(19:14~19:23) 그러나 은유를 버리지 않고, 사람을 **라인 관리자가 아니라 공장을 짓고 튜닝하는 엔지니어**로 놓는다 → [[factory-engineering]]. 사람이 남는 곳은 *"human taste, human input, human product sense, um humans like guiding at those touch points where you can't automate stuff"*(19:36~19:47).
+
+> ⚠️ **Contradiction: 같은 결론, 다른 은유.** Holtz는 *"I honestly kind of hate the term"*, Lloyd는 *"leaning into it"*. 그런데 둘 다 **사람의 taste·리뷰가 중심**이라는 데 도착하고, 둘 다 에이전트 여럿을 돌리는 도구를 판다. 운영상 차이로 드러나는 것은 Warp 루프가 **사람 칸(spec·코드·제품 리뷰)을 다이어그램에 고정**(03:35~03:47)한다는 점 정도 — Conductor의 "원할 때 줌인"과 대비된다. 측정은 양쪽 다 없다.
+
 ## References
 
 - [[tech-bridge-conductor-orchestras-not-factories]] (first-seen) · [[charlie-holtz]] · [[conductor]]
-- 관련: [[software-factory]] · [[frontier-engineering]] · [[persistent-agent-teams]] · [[agent-swarm]] · [[slop-free-zone]] · [[multiplayer-agent-context]]
+- 관련: [[software-factory]] · [[factory-engineering]] · [[tech-bridge-warp-factory-engineering]] · [[frontier-engineering]] · [[persistent-agent-teams]] · [[agent-swarm]] · [[slop-free-zone]] · [[multiplayer-agent-context]]

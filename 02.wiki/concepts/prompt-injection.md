@@ -5,9 +5,9 @@ category: technique
 tags: [agent-safety, attack, llm-security]
 related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review]
 created: 2026-05-25
-updated: 2026-09-11
+updated: 2026-10-03
 ---
 
 # Prompt Injection
@@ -97,3 +97,12 @@ updated: 2026-09-11
 - [[tech-bridge-flutter-ai-workflow]] — 스킬 파일 공급망 벡터
 - [[tech-bridge-agent-to-agent-as-search]] — 공유 사일로/위키 벡터 (2026-09-10)
 - [[tech-bridge-build-time-vs-runtime-tools]] — 치명적 3요소 · 신뢰된 내부 시스템 벡터 (2026-09-11)
+
+## 다섯 번째 벡터: 리뷰 대상이 리뷰어를 설득한다 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 **자동 코드 리뷰어**를 프롬프트 인젝션의 표적으로 든다 — PR 본문·커밋 메시지·코드 자체가 리뷰어의 입력이다.
+
+- [[anthropic|Anthropic]]의 자동 보안 리뷰어 README(화자 인용): *"this action is not hardened against prompt injection attacks uh and should only be re used to review trusted PRs"*(20:39~20:47) → *"can be talked out of its findings by the very thing that it is reviewing"*(20:47~20:51).
+- ⭐ 3월 연구(이름 미발화, 2차 인용): 무해한 커밋 메시지로 포장한 취약 코드가 *"fooled an autonomous review agent in 88% of attempts"*, 같은 시도가 사람 리뷰어를 통과한 것은 35%(20:59~21:12). *"you don't just lose a reviewer, you lose the thing that was hard to fool"*(21:15~21:19).
+
+[[lethal-trifecta]] 관점에서: 리뷰어는 **신뢰할 수 없는 입력**(외부 PR)을 읽고 **결정 권한**(승인·차단)을 가진다 — 유출 경로가 없어도 *판정을 바꾸는 것* 자체가 피해다. → [[automated-code-review]]

@@ -6,9 +6,9 @@ tags: [code-review, abstraction, readability, pr-size, pstack]
 aliases: [읽기 부하, reader load]
 related: [laziness-protocol, shortest-path-architecture, decision-quality, code-is-the-product, verification-bottleneck, large-class]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-dx-ai-impact-trends]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-10-03
 ---
 
 # 독자 부담 최소화
@@ -49,3 +49,11 @@ updated: 2026-09-14
 
 - [[tech-bridge-pstack-third-party-review]] · [[pstack]] · [[lauren-tan]]
 - 관련: [[laziness-protocol]] · [[decision-quality]] · [[system-level-quality]] · [[code-is-the-product]] · [[verification-bottleneck]] · [[organic-architecture]] · [[speculative-generality]] · [[duplicate-code]] · [[large-class]]
+
+## PR 크기의 집계 수치 — 44줄 → 72줄 (2026-10-03 · [[tech-bridge-dx-ai-impact-trends]])
+
+위 "열려 있는 것"의 *"측정 방법이 없다. PR 줄 수?"* 에 업계 집계가 하나 생겼다. [[getdx|DX]]의 [[justin-reock|Justin Reock]]: 약 1년 사이 *"we've seen PRs go from uh around 44 lines on average per PR up to 72"*(06:56~07:02), *"This is going to be one of the most important metrics that we look at this year"*(06:46~06:50). ⚠️ DX 플랫폼 데이터, 표본 미발화.
+
+- **왜 커지나** — ① 모델 출력이 *"law of averages"* 로 평범해 코드가 길다(07:24~07:28) ② ⭐ **느린 빌드**: 파이프라인이 45분~1시간이면 AI가 즉시 만든 함수 넷을 PR 넷이 아니라 *"cram all that code into a single PR"*(07:28~07:46). 독자 부담이 **CI 속도의 함수**이기도 하다는 관측.
+- **무엇을 잃나** — *"every extra line of code is a potential bug, a potential vulnerability. It's mortar[=more to] review."*(07:50~07:56), 점진적 전달 체감 **−10%**(08:12~08:14), 변경 확신 **−6%**(06:24~06:29). → [[dora-metrics]] · [[perceived-vs-actual-productivity]]
+- 이 페이지의 처방(최소 추상, 작은 변경)과 같은 방향이지만, 측정 단위는 여전히 **줄 수**다 — 추상 계층 수 같은 독자 부담의 직접 척도는 아니다.

@@ -3,9 +3,9 @@ title: Cognition
 type: entity
 category: org
 tags: [coding-agents, acquisition, rust, dioxus]
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review]
 created: 2026-09-14
-updated: 2026-09-30
+updated: 2026-10-03
 ---
 
 # Cognition
@@ -46,3 +46,9 @@ updated: 2026-09-30
 ## 세 번째 소스 — "제품 → eval → 모델" 경로의 예로 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
 [[roland-gavrilescu|Roland Gavrilescu]]: *"Think of how um Cursor and Cognition went from building the best product to then uh building the best evals for the product, and finally building the best models based on the previous two artifacts."*(09:09~09:23). **이 위키에서 Cognition의 제품·eval·모델에 대한 첫 서술**이지만 외부 화자의 한 문장이고 근거가 없다 — 위 원칙대로 **자체 모델의 이름·존재를 이 문장으로 확정하지 않는다.** ⚠️ ko는 회사명을 또 **"인지 기능"** 으로 옮겼다(09:12) — 위 첫 소스의 *"인지 컴퓨팅"* 과 같은 유형이다. → [[valued-work-per-watt]]
+
+## FrontierCode — "would you merge this?" 벤치마크 (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]] 진술(2차 인용): Cognition(*"the makers of Devon[=Devin]"*)이 관리자의 실제 질문 *"would you merge this?"* 를 중심으로 **FrontierCode**를 만들어 6월에 냈다(07:50~08:00). 관리자 20명+, 자기 저장소에서 과제 150개, 과제당 전문가 40시간+. 채점 항목은 동작 정확성·회귀·안전·범위 규율·테스트 품질·유지보수성 — *"a human review rubric uh made machine checkable"*(08:08~08:16). [[fable-5-1|Fable 5]] SWE-bench Pro 88% vs 최난도 구간 29%, GPT 5.5 6% 미만(08:20~08:48). → [[mergeability-gap]]
+
+⚠️ en-orig는 같은 벤치마크를 *"Frontier Code"*(07:58)와 *"Frontierbench"*(08:08)로 부른다. 챕터는 *"FrontierCode"*. 벤치마크 문서는 확인하지 않았다.

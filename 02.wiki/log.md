@@ -1776,3 +1776,36 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 ⚠️ **`/usr/bin/git`이 Xcode 라이선스 미동의로 막혔다**(*"You have not agreed to the Xcode license agreements"* — Xcode 업데이트 후로 보임). `xcode-select -p`가 Xcode.app을 가리킨다. `sudo xcodebuild -license`는 사람이 해야 하므로 **`/Library/Developer/CommandLineTools/usr/bin/git`을 직접 호출**해 pull·commit·push를 했다. 세 편을 **병렬 서브에이전트**로 나눴고 index·overview·log·[[tech-bridge]]·[[software-factory]] 반론 절·iconize·커밋은 오케스트레이터가 맡았다(software-factory 소유권은 Factory 에이전트에 명시). 완료 통지 후 `ListAgents`·`git status`로 파일 존재, frontmatter 중복 키·깨진 wikilink 검사.
 
+
+
+## [2026-10-03] ingest | Tech Bridge — 코드 리뷰의 종말(Laurie Voss, Arize AI) · 400개 기업 데이터로 본 AI의 현주소(Justin Reock, DX) · 소프트웨어 공장을 짓는 일(Zach Lloyd, Warp) (10-02 업로드 3편)
+
+`--playlist-end 15` 가 **11편** 반환 — 4편은 `subscriber_only` 로 stderr ERROR: 기존 `8DRjkp_X8yY` · `wrii8VocfZU`에 **신규 `_0zB1Qj-xoE` · `PACIHCnvNMo`**(제목·업로드일 미상). 페이지를 만들지 않았다. ⭐ **`XyVUHSzKM2E`(Warp) `public` 전환**(`upload_date` 20261002). 10-02 업로드 3편 ingest, 8편은 기존. 자막 ko·en-orig·en 모두 확보(전부 `automatic_captions`, info.json에서 직접 확인 — `subtitles` 빈 값), **429 없음**. 세 편 모두 공식 챕터(21·14·29).
+
+**신규 source 3 · concept 6 · engineering 1 · entity 6**, index 실측 **681 → 697**.
+
+- `-TeOEuplMrQ`(24:11, **Laurie Voss / Arize AI**) → [[tech-bridge-death-of-code-review]]
+- `xRZHLI5SPWo`(18:42, **Justin Reock / DX**) → [[tech-bridge-dx-ai-impact-trends]]
+- `XyVUHSzKM2E`(20:09, **Zach Lloyd / Warp**) → [[tech-bridge-warp-factory-engineering]]
+
+신규: [[mergeability-gap]] · [[automated-code-review]] · [[laurie-voss]] · [[arize-ai]] · [[ai-measurement-framework]] · [[perceived-vs-actual-productivity]] · [[dora-metrics]] · [[justin-reock]] · [[getdx]] · [[factory-engineering]] · [[build-in-the-open]] · [[zach-lloyd]] · [[warp]]
+
+보강(Voss 편): [[verification-bottleneck]](네 번째 답 — 리뷰를 시스템으로 재건) · [[bun]](⚠️ Contradiction: 75만 줄/11일 vs 100만 줄+/6일, unsafe 13,044) · [[fable-5-1]] · [[cognition]](FrontierCode) · [[cursor]] · [[prompt-injection]](리뷰어 벡터 88% vs 35%) · [[risk-proportional-human-review]] · [[ai-slop]] · [[openai]] · [[anthropic]] · [[ai-engineer]] · [[codex]] · [[test-harness-vs-test-authoring]]
+
+보강(DX 편): [[agent-readiness]](*"we used to just call this good developer experience"*) · [[verification-bottleneck]](⚠️ Contradiction: 다음 병목 = 검증 vs 조직 마찰) · [[agent-roi-measurement]] · [[minimizing-reader-load]](PR 44→72줄) · [[frontier-engineering]](⚠️ Contradiction: Amazon 4.5x vs *"Nobody hit 2x"*)
+
+보강(Warp 편): [[software-factory]](두 번째 정의 · Factory 대비표 · Contradiction 2) · [[orchestras-not-factories]](맞은편) · [[skill-self-improvement]](observer 에이전트) · [[spec-driven-development]](product/tech spec, triage 분기) · [[risk-proportional-human-review]](코드 리뷰 칸)
+
+### 이번 실행의 구도
+
+같은 날 업로드된 세 편이 **생성 이후**를 본다. Voss 편은 리뷰가 병목이 됐다는 측정치 묶음과 *"stop reviewing PRs — 리뷰 하네스를 지어라"*, DX 편은 조직 단위 집계로 *"code generation was never the bottleneck"* — 처리량 중앙값 7.7%, Warp 편은 그 검증 칸을 품은 공장 루프를 짓는 일이 엔지니어링이 된다고 본다. Voss와 DX는 출발(생성은 병목이 아니다)이 같지만 다음 병목을 각각 **검증**과 **조직 마찰**로 본다 — [[verification-bottleneck]]에 모순 표시. Warp 편은 전날 Factory·Conductor 편에 이어 [[software-factory]] 논쟁의 세 번째 목소리(은유를 받아들이되 사람 칸을 남긴다).
+
+### 자막 주의
+
+- Voss 편: 성 *Voss*·arize.com은 설명란에만(자막 "Lori", "Arise AI"). ko가 *"can't skip … production"* → "제작 과정을 건너뛰세요"(반전), internal product → "국내총생산", million lines → "백만 명에 가까운 돈", 60 million → "60개". *mergeability* 는 en "fusion capability"·ko "용량·합병" — 공유 오류. 화자 산수 2곳 불일치(51 vs 59포인트, "three orders" vs 약 176배) — 인용은 고치지 않고 표시. 설명란·챕터가 단서(최난도 구간 한정, SWE-bench Pro)를 떨어뜨렸다.
+- DX 편: ko는 1~3단어 조각 번역(json3 이벤트 3,003개, 평균 약 4.5자)이라 *"Nobody hit 2x, nobody hit 5x"* → "어떤 사람은 2배, 어떤 사람은 5배"(15:28)로 반전, *10 million* → "1억", "2015년"·"90년대생" 창작. **`en`은 중앙값 7.7%·평균 13%를 뒤바꿨다**(15:17~15:22) — 수치는 en-orig로만 판독. "400개 기업"은 제목·설명란에만. 촬영 2026년 6~7월 추정, 단 *"November … 2024 to February this year"* 가 어긋남(미판독).
+- Warp 편: ko가 채용 발언(*"we're hiring more people than we've ever hired"* → "고용한 적이 없다", 18:25~18:37)과 테제 문장(14:48~14:54)을 뒤집었다. ko·en 공유 오류 *sloppy PRs* → "public relations", *data moat* → "data model". 공식 챕터 29개가 발화보다 15~35초 늦다(raw에 양쪽 시각 병기). 행사명 미발화.
+
+### 운영 메모
+
+게이트 G 지속 — `/usr/bin/git`이 여전히 Xcode 라이선스로 막혀 `/Library/Developer/CommandLineTools/usr/bin/git`으로 pull·commit·push. 오케스트레이터가 자막을 먼저 받아 `[MM:SS]` txt로 변환해 넘기고 세 편을 **병렬 서브에이전트**로, index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. [[software-factory]] 소유권은 Warp 에이전트에 명시. 완료 통지 후 `git status`로 파일 존재, frontmatter 중복 키·깨진 wikilink 검사.

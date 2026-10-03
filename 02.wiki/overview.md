@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-02
+updated: 2026-10-03
 sources: []
 ---
 
@@ -195,6 +195,11 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-10-02*: [[tech-bridge]] **3편** ingest(10-01 업로드 3편, 그중 Factory 편은 09-28 멤버 전용에서 공개 전환). 같은 날 **[[software-factory|소프트웨어 공장]]** 을 두고 찬반이 갈린다. ① [[tech-bridge-factory-software-factory|Tereza Tížková 편]]([[factory-ai|Factory]])은 *찬성·설계도*: 신호 수집부터 검증·학습까지 생애주기 전체를 자율 루프로 — [[automatic-model-routing|자동 모델 라우팅]], 스웜 대신 순차 워커 + 검증자(Missions), [[deferred-tool-context|지연 도구 컨텍스트]], [[agent-readiness]]. 수치(25%·50%·16시간)는 전부 벤더 진술.
   ② [[tech-bridge-conductor-orchestras-not-factories|Charlie Holtz 편]]([[conductor|Conductor]])은 *반대*: *"I honestly kind of hate the term"* — 사람은 라인 관리자가 아니라 지휘자([[orchestras-not-factories]]), 그 앞에 [[dont-beat-the-market|시장을 이기려 하지 마라]] · [[slop-free-zone|슬롭 없는 구역]] 등 다섯 원칙. ③ [[tech-bridge-sdd-enterprise-lessons|Simon Martinelli 편]]은 공장의 *입력*: 스펙 = system use case + 엔티티 모델([[ai-unified-process]]), [[self-contained-systems]], 모든 엔지니어링이 요구공학으로 shift-left — 09-27 JetBrains 편의 [[spec-driven-development|SDD]]와 절차가 갈린다.
   자막 쪽으로는 ⚠️ ko가 Conductor 편 결론(*"공장에 있고 싶다"*)과 Factory 편 computer use 평가를 뒤집었고, Martinelli 편은 **설명란('SysML')이 자막(*system use cases*)보다 틀렸다.**
+
+- *2026-10-03*: [[tech-bridge]] **3편** ingest(10-02 업로드 3편, 그중 Warp 편은 09-28 멤버 전용에서 공개 전환). 세 편이 **검증과 측정**으로 모인다. ① [[tech-bridge-death-of-code-review|Laurie Voss 편]]([[arize-ai|Arize AI]])이 [[verification-bottleneck]]에 처음으로 측정치 묶음(741% vs 30%, Cisco 400줄, METR 절반, FrontierCode 88 vs 29)을 붙였다 — 리뷰를 빼 본 곳들은 리뷰를 지운 게 아니라 사람이 지은 시스템으로 옮겼고, 테스트 통과는 머지 가능을 뜻하지 않는다([[mergeability-gap]] · [[automated-code-review]]). 처방은 *"stop reviewing PRs"* — 리뷰 하네스를 지어라.
+  ② [[tech-bridge-dx-ai-impact-trends|Justin Reock 편]]([[getdx|DX]])은 이 위키에 처음 들어온 **조직 단위 집계 데이터**: 배포 빈도는 늘었지만 [[dora-metrics|변경 실패율 진폭]]이 커지고, PR은 44→72줄, 변경 확신 −6%, 처리량 증가 중앙값 7.7% — *"Nobody hit 2x"*. *생성은 애초에 병목이 아니었다*는 출발은 Voss와 같지만 다음 병목을 검증이 아니라 조직 마찰로 본다([[perceived-vs-actual-productivity]] · [[ai-measurement-framework]]). [[frontier-engineering]]의 Amazon 4.5x와 정면 충돌.
+  ③ [[tech-bridge-warp-factory-engineering|Zach Lloyd 편]]([[warp|Warp]])은 [[software-factory|소프트웨어 공장]]의 *세 번째 목소리*: Factory처럼 정의하되 "그냥 SDLC"로 낮추고, Conductor가 싫어한 은유를 *"leaning into it"* — 사람은 공장을 짓는 엔지니어([[factory-engineering]]), 루프 안 spec·코드·제품 리뷰 칸은 사람 몫. [[build-in-the-open]].
+  자막 쪽으로는 ⚠️ ko가 세 편 모두 핵심 문장을 뒤집었다 — DX *"Nobody hit 2x"* → "어떤 사람은 2배", Warp 채용 발언 *"hiring more people than we've ever hired"* → "고용한 적이 없다", Voss *"can't skip … production"* → "건너뛰세요". 멤버 전용 4편은 건너뛰었다.
 
 ---
 

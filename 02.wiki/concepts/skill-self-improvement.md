@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering]
 created: 2026-09-05
-updated: 2026-09-30
+updated: 2026-10-03
 ---
 
 # Skill Self-Improvement
@@ -113,3 +113,9 @@ updated: 2026-09-30
 ## 네 번째 경로 — 실패·반복·불만을 한 저장소의 세 칸으로 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
 [[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]]): *"Failure patterns should become judges and evals. Repeated behavior should become skills and prompts. User frustration, extensions and memories to your harness"*(06:09~06:17). 위 표의 경로들(실패 → 스킬 · 성공 질의 → 스킬 · 성공 세션 → 스킬 교체)이 **입력별로 다른 출력**을 갖는 한 표가 된다 — 실패는 스킬이 아니라 **judge·eval**로 간다는 점이 이 페이지(task-observer: 실패 → 스킬 개선)와 다르다. 승격 게이트는 **사람의 judge 보정 + 프로덕션 A/B**(14:45~15:48). ⚠️ 가상 예시·측정 없음. → [[agent-recipes]] · [[taste-encoded-evals]]
+
+## 다섯 번째 경로 — 사람의 교정을 지켜보는 observer 에이전트 (2026-10-03 · [[tech-bridge-warp-factory-engineering]])
+
+[[zach-lloyd|Zach Lloyd]]([[warp|Warp]])가 [[software-factory]]의 표준 루프로 든 **skill loop**: *"you're going to have your factory agents that are running skills, and then you'll have observer agents that are seeing how those skills are being applied, looking for issues and trying to improve the skills."*(14:06~14:17) 예 — 코드 리뷰 에이전트의 코멘트를 **시니어 엔지니어가 고치면**, *"you'd want an observer agent that would look at that and basically uh improve the code review agent for the next run."*(14:17~14:33)
+
+구조는 이 페이지의 task-observer와 같지만 **신호가 다르다** — 에이전트 자신의 실패가 아니라 **사람이 결과물을 교정한 흔적**(diff)이 학습 재료다. 사람의 교정은 이미 일어난 리뷰의 부산물이라 **추가 라벨링 비용이 없다.** 공장에는 이것을 담을 **data plane**(*"lets agents remember what they've done, learn, um improve over time"* 13:01~13:11)이 있어야 한다고 한다. ⚠️ **승격 게이트를 말하지 않는다** — observer가 고친 스킬을 누가 검토하는지, 시니어 한 명의 취향이 영구 규칙이 되는 오염(이 페이지의 핵심 우려)을 어떻게 막는지 없다. 측정·사례도 없다.

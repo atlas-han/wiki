@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review]
 created: 2026-09-14
-updated: 2026-10-02
+updated: 2026-10-03
 ---
 
 # Fable 5.1
@@ -43,3 +43,12 @@ updated: 2026-10-02
 ## "the two days of Fable" — 버전 없는 언급 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 [[charlie-holtz|Charlie Holtz]]: *"as the models get better, um, as we've seen this with the two days of Fable, you can get a lot more ambitious with the kinds of things you're building"*(11:07~11:15). ⚠️ **버전 번호가 없고**, *"the two days of Fable"* 이 **출시 이틀째**를 뜻하는지 **이틀 써 본 경험**인지 미확정 — 촬영 시점 단서로 쓰지 않는다. 이 페이지의 패턴(제3자가 *"현재 최상단"* 의 좌표로 부름)과 같다. 자막: ko *"Fable을 이틀 동안 **플레이**하면"*(모델명은 보존, 게임처럼 읽힘), `en` *"the two days of Fable"*.
+
+## "Fable 5" — SWE-bench Pro 88%, FrontierCode 최난도 29% (2026-10-03 · [[tech-bridge-death-of-code-review]])
+
+[[laurie-voss|Laurie Voss]]가 **버전 5**(5.1이 아님)를 수치와 함께 부른다 — 이 페이지에 처음 들어온 **벤치마크 수치**지만 역시 제3자(화자)의 2차 인용이다.
+
+- *"Fable 5 before it got pulled and then unpulled, uh, scores 88% on Sweetbench Pro, but only 29% on the hardest slice of, uh, Frontier code"*(08:20~08:30) → [[mergeability-gap]]. ⚠️ *"pulled and then unpulled"* 가 어떤 사건인지 이 위키에 1차 기록이 없다. ko는 *"복원 후에는 88%의 효율"* 로 모델명을 잃었다.
+- *"Stripe in Anthropics launch materials for Fable this year reported migrating a 50 million line Ruby codebase in a single day"*(02:30~02:36) — **Fable 출시 자료**의 존재를 말하는 첫 소스(버전 미발화, 자료 미확인).
+
+⚠️ 위 표의 패턴(Fable = *"현재 최상단"* 의 좌표)과 같은 용법이되, 여기서는 **최상단 모델조차 머지 가능성에선 29%** 라는 반례의 주어로 쓰인다.
