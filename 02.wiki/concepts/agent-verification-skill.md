@@ -6,9 +6,9 @@ tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
 related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # 검증 스킬
@@ -71,3 +71,16 @@ updated: 2026-09-26
 **③ 경계가 다시 그어졌다** — *"검증은 정확성에 관한 것 (…) 성능이나 코드 품질에 대해서는 많은 걸 말해 주지 않는다"*(12:36~13:11). 빈칸은 **경험 많은 엔지니어가 만드는 품질 스킬**([[pstack]])이 채우고, **검증과 결합해야** *"정확할 뿐 아니라 품질도 높다"* 를 확인할 수 있다(14:18~14:30).
 
 **기원** — control glass는 Cursor agents window의 **성능 회귀 감시**를 손으로 하던 데서 나왔다(*"PR이 랜딩되는 속도로는 넘을 수 없는 PR의 벽"*, 03:08~03:16).
+
+## "가장 중요한 스킬", 손과 눈 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+대담 발췌에서 [[lauren-tan]]이 검증의 **순위**를 처음 매긴다:
+
+> *"the single most important skill that should be in your tool kit is verification"* (01:14~01:21)
+> *"you can sort of give your agent, uh, hands and eyes, in a way that's the analogy I like, where the agent is able to run the code, right? And actually, uh, interact with it like a normal human user would, and also do things like, you know, debug it, you know, take traces and snapshots"* (01:29~01:49)
+> *"that was actually the first skill I built when I joined Cursor"* (01:49~01:54)
+
+- **"hands and eyes"** — 위 정의의 *"앱을 실제로 띄우고 확인"* 에 붙는 본인의 비유.
+- **CLI의 이유가 하나 더** — 09-25의 *재현 가능성* 에 더해, *"extract out the deterministic parts and turn that into code and just leave only the parts that actually require judgment"*(03:48~03:56). → [[build-a-lever]]
+- **바깥 루프의 재료** — 검증 스킬은 Slack 제보를 받아 **main에서 재현**하고 사용자 설정·데이터·의존성 문제를 걸러 내는 데 재사용된다(07:20~07:56). → [[grokbot]]
+- 해설의 정의(ko 02:05~02:17): *"검증은 테스트가 통과했다는 보고서를 받는 일에서 끝나지 않습니다. 실제 앱을 열고 사용자가 누르는 버튼을 눌러보고 화면과 실행 기록을 확인하는 과정까지 포함합니다."* (내레이터의 말)

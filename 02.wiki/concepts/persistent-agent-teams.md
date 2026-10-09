@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots]
 created: 2026-09-01
-updated: 2026-09-23
+updated: 2026-10-09
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -174,3 +174,18 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 > **챗봇**이 있었고, 그 다음에는 **코딩/컴퓨터 활용 에이전트가 올해 등장했죠.** (29:34~29:36) (…) **AI가 항상 사용자를 위해 작동하고, 사용자의 업무를 이해하고, 성공에 필요한 것이 무엇인지 파악하고, 새로운 코드를 생성하고, 슬랙이나 이메일을 능동적으로 확인하는 단계** (…) 저는 **우리가 세 번째 단계의 문턱에 서 있다**고 생각합니다. (30:15~30:34)
 
 같은 대담에 **방어 쪽 상시 실행**([[openai-daybreak|Daybreak]])과 **화면 생성**([[model-rendered-interface]])이 함께 나온다. ⚠️ 관성 유보 — *"그 변화가 완전히 자리잡는 데는 몇 년이 걸릴 거예요"*(32:01~32:10). ⚠️ 상시 실행 에이전트의 권한·감사는 언급되지 않는다.
+
+## 문턱을 넘었다 — Dots 출시 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+09-06 *"능동적 컴퓨터"*, 09-23 *"세 번째 단계의 문턱"* 이 DevDay 2026에 **이름 붙은 제품** [[openai-dots|Dots]]가 됐다. [[sam-altman|Altman]]은 먼저 일반론으로 — *"agents that are running in the background 24/7 connected to your systems doing stuff proactively for you"*(03:25~03:32) — 그리고 자기 사용을 말한다: *"It has become the default way that I use chat"*(10:58~11:03).
+
+| 이 페이지의 네 구성 요소 | Dots (소스 기준) |
+|---|---|
+| 정체성 | **있다** — 사용자가 이름을 붙인다(*Doie*, *Boo*) → [[agent-persona-naming]] |
+| 자체 컴퓨터 | *"its own cloud computer"* (⚠️ 화자 미확정) |
+| 코디네이터 | 언급 없음 — 1인 1 Dot |
+| 메시징 UI | ChatGPT 안 + 모바일 등 여러 표면 |
+
+09-06 독해(*"봇 팀이 아니라 하나의 상시 에이전트"*)가 맞았다. 다만 [[chatgpt-space|Space]]에서는 *"seven people's dots can working together"* — **팀은 한 사람의 봇들이 아니라 여러 사람의 Dot으로** 생긴다.
+
+⚠️ 이 페이지가 줄곧 유보한 **권한·감사 경계**는 출시 당일에도 나오지 않는다 — Dot은 Slack 전체·캘린더·발표 자료를 읽고, 다음 버전 목표는 *"fix that in prod"* 다(10:09~10:11).

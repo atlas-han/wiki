@@ -6,9 +6,9 @@ tags: [code-quality, judgment, architecture, trade-offs, engineer-role]
 aliases: [결정 품질, implementation vs decision quality, 구현 품질]
 related: [system-level-quality, behavior-validated-trust, executable-standards, outcome-engineering, frontier-engineering, ai-native-sdlc, brain-hands-decoupling, ai-slop, no-one-shot-design, taste-vs-judgment]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-agents-as-catalyst]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-agents-as-catalyst, tech-bridge-prompt-to-production]
 created: 2026-09-09
-updated: 2026-09-27
+updated: 2026-10-09
 ---
 
 # 결정 품질
@@ -81,3 +81,13 @@ AI는 즉시 **API 엔드포인트 + DB 스키마 + 큐 컨슈머 + 프런트엔
 > **기술 구현이 보편화되면, 경쟁 우위는 애초에 무엇이 만들 가치가 있는지 아는 쪽으로 옮겨 갑니다.** (09:08~09:15)
 
 *"결과 기반 사고(outcome-based thinking)와 더 높은 수준의 문제 해결"*(08:59~09:04) — [[value-maxing]]·[[outcome-engineering]]과 같은 방향. ⚠️ 위 *"처방이 '판단이 중요하다'에서 멈춘다"* 비판이 **그대로 적용된다** — *무엇이 만들 가치가 있는지 아는 법* 은 말하지 않는다. → [[agents-as-catalyst]]
+
+## 판단이 무엇을 보고 고르는가 — 제약은 프롬프터만 안다 (2026-10-09 · [[tech-bridge-prompt-to-production]])
+
+같은 [[ibm|IBM Technology]] 계열(추정)이 이 페이지의 명제를 **계획 단계**에서 다시 말한다:
+
+> *"the quality of the solution is often determined long before that first line of code is even written"* (00:46~00:50) · *"As AI makes implementation cheaper, choosing the right approach becomes even more important."* (02:09~02:16)
+
+예제는 [[tech-bridge-ai-era-code-quality|알림 기능 예제]]의 사촌이다 — *"help customers find information faster"* 라는 요청에 에이전트는 검색창·FAQ·개인화 추천·AI 챗봇 무엇이든 만들 수 있다(01:04~01:18). 이번엔 **고르는 근거가 조금 더 구체적이다**: 개인화할 고객 데이터, AI 비서 예산, 특정 스택 라이선스(01:38~01:45) — **에이전트가 모르는, 프롬프터만 아는 제약**이다. *"you, the prompter, need to set the stage of what is important for success and why"*(01:29~01:34).
+
+⚠️ 위 *"처방이 '판단이 중요하다'에서 멈춘다"* 비판은 **부분적으로만 완화된다** — 판단의 입력(제약)은 보여 주지만, 제약이 서로 충돌할 때 어떻게 고르는지는 말하지 않는다. 결론도 *"engineering judgment and thinking have become even more valuable"*(06:38~06:42)이다.

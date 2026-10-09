@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [testing, fuzzing, verification, coding-agents, quality]
 aliases: [퍼징 하네스, 올바른 테스트를 고르는 일]
-related: [verification-bottleneck, agent-verification-skill, verification-cost-asymmetry, generator-evaluator-pattern, decision-quality]
+related: [verification-bottleneck, agent-verification-skill, verification-cost-asymmetry, generator-evaluator-pattern, decision-quality, structure-sensitive-tests]
 first-seen: tech-bridge-ambitious-software-agent-era
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-death-of-code-review]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development]
 created: 2026-09-14
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 테스트 작성과 테스트 하네스 구축의 분리
@@ -62,3 +62,9 @@ updated: 2026-10-03
 ## "human on the loop" — Carlini의 C 컴파일러 (2026-10-03 · [[tech-bridge-death-of-code-review]])
 
 [[laurie-voss|Laurie Voss]]가 이 페이지의 구분을 **반대 방향에서** 확인한다. Nicholas Carlini(Anthropic)의 에이전트 16개 C 컴파일러는 *"no human in the loop"* 였지만 *"there was absolutely a human on the loop. the system uh that reviewed the code, the system that checked whether the code was doing what it was supposed to do, all of that uh was written by a human"*(15:15~15:25) — *"automated testing with tests that took a human to write them"*(15:30~15:34). 여기서는 **하네스를 사람이 썼다** — 이 페이지의 *"장치는 에이전트가"* 와 갈리는 지점. 공통은 **무엇을 검증할지는 사람**이라는 것. 그리고 [[bun|Bun]] 포팅의 unsafe 블록 13,044개는 *기존 테스트 스위트를 게이트로 쓰면 테스트가 설계되지 않은 곳은 보지 못한다* 는 반례다(16:55~17:04). → [[mergeability-gap]]
+
+> ⚠️ **다른 평가(동일 사례인지 미확인)** — [[kent-beck|Kent Beck]]은 *"we spent $10,000 in tokens and we got a working C compiler"* 라는 *"breathless uh accounts"* 를 들며 파 보면 *"hello world, doesn't actually work"*, *"C compilerish"* 라고 한다(08:51~09:43, [[tech-bridge-kent-beck-craft-augmented-development]]). 실험자를 밝히지 않았다 — Carlini 사례라면 Voss(*Linux 커널 컴파일*)와 정반대 평가다. 둘 다 2차 진술.
+
+## 왜 올바른 테스트를 못 고르는가 — 구조에 붙는다 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+이 페이지의 ❌ 칸(*"생성자를 주면 생성자를 테스트"*)에 [[matt-pocock|Matt Pocock]]이 사례와 진단을 붙인다 — 동어반복 테스트(*"Opus 5 got addicted to these"* 05:27~05:29), 소스 파일을 읽어 순서를 검사하는 테스트, mock 때문에 실패할 수 없는 테스트. 진단: *"The AI isn't trying to write bad tests here. It's just taking our instructions and writing tests that are too tied into the structure instead of actually executing code."*(08:00~08:12) → [[structure-sensitive-tests]]. 처방은 리뷰가 아니라 설계 — [[deep-modules]]로 테스트를 인터페이스에 묶는다.

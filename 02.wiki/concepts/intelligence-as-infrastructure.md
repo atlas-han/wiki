@@ -3,11 +3,11 @@ title: Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
 type: concept
 category: theory
 tags: [infrastructure, tokens, energy, compute, data-center, sovereignty, nvidia, policy]
-related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation, data-center-local-backlash]
+related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation, data-center-local-backlash, orbital-compute]
 first-seen: tech-bridge-jensen-huang-g20-agi
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
@@ -119,3 +119,21 @@ Musk가 이 케이크의 **맨 아래 층에 결손**이 있다고 말한다 —
 - **규모** — *"100조 달러 경제 중 약 15조 달러가 더 많은 지능의 혜택"*, *"수조 달러 규모의 산업"*(43:30~43:59). ⚠️ G20의 *"100조 달러 산업"* 과 **같은 수가 다른 것**(산업 vs 세계 경제)을 가리킨다. 출처 없음.
 - **"AGI가 하는 일"** — [[openai-astra|Astra]]가 뒷마당 사진을 CAD 파일로(41:31~42:16). G20의 *"이미 거의 AGI"* 가 **데모 하나**로 구체화된다 → [[agi-definition]].
 - **층 1·3의 지역 비용** — 데이터센터 반발, *"물은 이제 신화"*, 전력망 기여(당위) → [[data-center-local-backlash]]. *"향후 5년은 틀림없이 화석 연료를 더"*(34:31~34:40) → [[power-shortfall]].
+
+## AI 공장 → "SI 공장" (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[jensen-huang|Huang]]의 세 번째 진술. 그림은 같고 호칭이 바뀐다:
+
+> *"We call them data centers because that's where we hold data. But the things that we're building now, these are really SI factories, super intelligence factories. And the reason why is a factory is because you're producing something of economic value. You're just not storing it."* (08:13~08:28)
+
+- **저장 vs 생산** — 데이터센터의 정의를 *데이터를 두는 곳* 에서 *경제 가치를 만드는 곳* 으로 옮긴다. 인터넷이 *"find anything anywhere"* 였다면 SI 공장은 *"know anything and do anything from anywhere"*(08:43~08:55).
+- **5단 케이크의 맨 아래** — *"every single layer of the computing stack has been reinvented"*, 그래서 *"the first thing we need is energy"*(00:58~01:17).
+- **규모** — 미국 전역 연 10~20 GW(09:03~09:07). 그 에너지 층을 **궤도로** 올리자는 같은 무대의 구상 → [[orbital-compute]].
+- ⚠️ **"SI"는 무대에서 합의된 호칭**이다 — 진행자 *"now calling this super intelligence, which I think is actually good branding"*(00:15~00:22), Huang 스스로 *"AI excuse me SI"*(08:48~08:51). [[agi-definition]]의 능력 단계 논쟁과 섞지 않는다.
+
+## 저장에서 생산으로, 그리고 한국의 확산 (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+- **기준점이 생겼다** — Huang은 지금을 **1964 IBM System/360 이후 처음의 재발명**으로 둔다(CPU·I/O·가상 메모리·OS/하드웨어 분리·세대 호환이 그때 정해졌다, 01:16~01:54). 새 컴퓨터는 *"taught, not programmed"*(02:10~02:13).
+- ⭐ *"This is the first time in history that a computer is going to be generating information, not just retrieving information. (…) The reason why we call it an AI factory is because we're now producing intelligence."*(03:00~03:19) → *"storing things has value, but manufacturing something valuable has incredible value"*(03:24~03:30). CBS(*에너지 in, 지능 out*)·백악관 패널(*SI factories*)에 이은 **세 번째 판**, 이번엔 **저장 vs 제조**의 대비.
+- **5단 케이크는 진행자가 열거** — 데이터센터(인프라)·에너지·칩·모델·애플리케이션(03:54~04:10). Huang은 층을 세지 않고 *"how do we reinvent every aspect of industry"* 로 답한다. ⚠️ 설명란은 다섯 층을 Huang의 이야기로 적는다.
+- ⭐ **확산론이 한 나라의 칭찬으로** — G20의 *"모든 층을 지을 필요 없다, 확산에 집중"* 이 여기서 *"Korea is (…) singular in your ability to both consume and export AI"*(04:47~04:54)가 된다. 근거는 지난 산업혁명: *"the technology was invented in Europe but diffused in the United States"*(05:40~05:45) — 한국은 발명과 확산을 한 사회에서 할 수 있다(*"social love of technology"*). 그리고 *"With AI and automation, you could punch well above your weight"*(06:11~06:14) — **작은 인구를 지능 인프라로 보충**한다는 논리. ⚠️ 칩 판매자가 주요 고객국(협력사 Samsung·SK·Hyundai·Naver·LG·Doosan)에서 한 덕담이다.

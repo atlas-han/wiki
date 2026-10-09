@@ -6,9 +6,9 @@ tags: [design, control, human-in-the-loop, delegation, altitude, agent]
 aliases: [level of control, right altitude, 통제 수준, 조향 고도]
 related: [adjective-verb-steering, no-one-shot-design, goal-level-delegation, harness-pruning, signal-layer, decision-quality, agent-governance-layers, figma]
 first-seen: tech-bridge-impeccable-design-steering
-sources: [tech-bridge-impeccable-design-steering]
+sources: [tech-bridge-impeccable-design-steering, tech-bridge-agentcraft-strategy-game]
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-10-09
 ---
 
 # 조향 고도
@@ -46,6 +46,10 @@ updated: 2026-09-12
 이 개념은 **디자인에서는 그 이동을 멈춘다.** 이유가 다르다 — 모델이 못 해서가 아니라(*"어쩌면 영원히"* 라고 하면서도 *"AI가 더 낫게 만들기는 한다"*), **검증할 채점기가 없기 때문**이다: *"사용자도 의견이 있다. 디자인은 지저분하다."* [[signal-layer]]의 채점기 경계선을 여기에 대면 — **자동 채점기가 있는 영역(코드)은 위임 고도가 올라가고, 없는 영역(디자인)은 사람이 중간 고도에 남는다.** ⚠️ 이 연결은 위키의 정리이며 어느 소스도 말하지 않는다.
 
 그리고 [[decision-quality]]([[ibm]])가 코드에서 *결정은 사람 몫* 이라 한 것과 같은 판정이다 — 디자인에서 *결정* 은 형용사를 고르는 일이고, 그것이 **자동화하면 안 되는 이유**로 제시된다(→ [[no-one-shot-design]]의 *"auto는 없다"*).
+
+## 한 제품 계열 안의 두 고도 (2026-10-09 · [[tech-bridge-agentcraft-strategy-game]])
+
+[[agentcraft|AgentCraft]]는 파일·도구 단위까지 보여 주는 **낮은 고도**(파워 유저, *"raise the ceiling"*)이고, 같은 화자의 단순판 Loopers(가칭)는 *"more of a mobile game level"* — *"I prompt, I get a result, I don't really care perhaps about the way, I can see it if I want to"*(11:44~12:09) — **높은 고도**(*"lower the floor"* 10:59)다. 고도를 **사용자 숙련도**로 나눈 첫 사례: 이 페이지의 고도 이동이 *작업 단계*(탐색·폴리시)나 *채점기 유무* 를 따랐다면, 여기서는 **사람이 누구냐**를 따른다. ⚠️ 단순판은 *"a very very early draft"*(12:44~12:48), 당사자 진술.
 
 ## ⚠️ 미해결
 

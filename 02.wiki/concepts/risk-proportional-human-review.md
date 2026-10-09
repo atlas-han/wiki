@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration, agents]
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
-related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation]
+related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck]
 created: 2026-09-18
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 위험 비례 사람 검토
@@ -71,3 +71,13 @@ updated: 2026-10-03
 3. *"wherever someone has to put their name on the result"* (20:04~20:08) → [[named-human-accountability]]
 
 이 페이지의 기준(결정의 위험도)에 **검증 비용**(1번)과 **귀속**(3번)이 붙었다. 그리고 역할은 위로 — *"from inspecting the code directly to designing and tuning the systems that inspect the code and designing the definition of good"*(20:13~20:22). → [[automated-code-review]]
+
+## 위험 비례를 숫자 하나로 — 보정된 확률의 임계값 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]])
+
+분류 확률이 **> 0.9면 자동, 0.1~0.9면 사람, < 0.1이면 무시**(지원 이메일의 환불 판정, 10:45~12:05, 값은 예시). *"Because the numbers are calibrated, the threshold also tells us roughly how often the automatic path will be wrong. So the more a mistake is going to cost, the higher we would set the threshold."*(12:05~12:20) — 이 페이지의 *가장 위험한 결정 곁에 사람을* 이 **실수 비용에 맞춰 조정하는 임계값**으로 구현된다. 전제는 확률이 **보정돼 있다**는 것이다 → [[model-calibration]]. ⚠️ 사람 구간(0.1~0.9)으로 떨어지는 **물량**은 말하지 않는다 → [[verification-bottleneck]]
+
+## PR 단위의 기준 — "every single one-way door you do" (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]은 이 원칙을 **PR 하나하나에 붙는 라벨**로 만든다 — 첫 원칙 *"some reviews are more important than others"*(17:02~17:07), 기준은 one-way/two-way door와 blast radius([[action-reversibility]]), 결과는 PR 하단의 *merge danger* 요약(18:22~18:32). 결론: *"You really don't need to review every single two-way door. Every single one-way door you do."*(22:06~22:12) IBM 편이 비워 둔 *"가장 위험한 결정이 무엇인가"* 에 Martinelli(모듈 criticality) · Conductor(마이그레이션 파일)에 이어 **세 번째 구체 예**(이메일 대량 발송 · 비싼 마이그레이션 · 데이터 손실)가 붙는다.
+
+> ⚠️ ko 자막은 결론 문장을 캡션 경계에서 **"되돌릴 수 있는 모든 결정을 검토하십시오"** 로 쪼개 반대로 읽히게 했다(22:07~22:12). 위험도를 누가 판정하는지는 이 소스에서도 열려 있다.

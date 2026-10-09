@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-07
-updated: 2026-09-30
+updated: 2026-10-09
 ---
 
 # SpaceX
@@ -65,3 +65,11 @@ updated: 2026-09-30
 ## 자막에 처음 나온 "XAI" — 전 직원의 과거형 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
 [[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]]): *"My co-founder and I were in this mythical place called XAI working hard on agent infra"*(00:10~00:15), *"we left a few months ago"*(00:23). 위 절들이 *"자막에 xAI는 없다"* 고 기록해 온 것과 달리 **이 소스의 en-orig에는 "XAI"가 발화로 나온다**(ko도 *"XAI"*). ⚠️ 그러나 **"SpaceX AI"와의 관계는 이 소스도 말하지 않는다** — 떠난 시점의 조직 이름일 뿐이다. 위 원칙대로 조직 구조를 추정하지 않는다.
+
+## Starship 첫 궤도, 10 GW, 궤도 컴퓨팅 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[elon-musk|Musk]]의 백악관 패널 발언(전부 자기 진술).
+
+- **Starship 첫 궤도 발사** — 진행자 *"first orbital Starship launch"*(12:14~12:20, *"Monday"*), Musk *"we took Starship to orbit for the first time and we deployed Starlink B3[=V3] satellites"*, 날개폭 737급, *"the largest payload delivered to orbit since Skylab"*(16:08~16:27), 내년 *"a weekly or twice weekly cadence"*(16:33~16:38). ⚠️ 발사 날짜 미발화. 09-23 Shotwell 편은 *Flight 14 → 15 포획 시도* 만 말했다.
+- **10 GW** — 진행자: SpaceX가 공개 언급한 10 GW는 *"about 25% of all the power added in America"*, *"literal rocket engineers working on bringing on the power (…) Helping make the turbines"*(03:51~04:09). G20의 *"자체 발전소"* 진술과 이어진다.
+- ⭐ **궤도 컴퓨팅** — Tesla와 연 200 GW 태양광 생산 목표, Starship으로 연 수백 GW의 AI 컴퓨팅 발사(06:46~07:10, 17:30~17:48). 달·화성 자립 도시에 약 100만 톤(17:17~17:27). → [[orbital-compute]]

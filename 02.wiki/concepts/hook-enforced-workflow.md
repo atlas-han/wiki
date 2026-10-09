@@ -3,11 +3,11 @@ title: Hook-Enforced Workflow
 type: concept
 category: pattern
 tags: [hooks, harness, enforcement, agent-skills]
-related: [agent-skills, agent-harness-design, hard-vs-soft-enforcement, self-harness, no-silent-write]
+related: [agent-skills, agent-harness-design, hard-vs-soft-enforcement, self-harness, no-silent-write, deny-and-continue]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering]
 created: 2026-09-15
-updated: 2026-09-28
+updated: 2026-10-09
 ---
 
 # Hook-Enforced Workflow
@@ -54,3 +54,14 @@ updated: 2026-09-28
 | **ignore 규칙이 필수** | *"oftentimes these hooks have false positives as well and you want a way to configure those hooks. Um, otherwise gets really annoying very quickly"*(34:01~34:10). Impeccable은 파일 단위부터 CSS 규칙 안까지 여러 수준의 ignore를 준다(34:13~34:21) |
 
 이 페이지의 기존 경고(*"훅이 강제하는 만큼 틀렸을 때도 강제한다"*)에 대한 **실무 처방이 처음 나왔다** — 오탐을 전제하고 사용자가 끌 수 있게 하라. 다만 PreToolUse 차단의 오탐은 **쓰기 자체를 막으므로** 비용이 더 크다는 점은 소스가 따로 말하지 않는다. ⚠️ **훅까지 설치하는 스킬**의 신뢰·업데이트 경로도 논의되지 않는다(화자는 자체 설치기가 *"the hooks in the right part of the system"* 에 넣는다고만 한다, 1:03:56~1:04:02).
+
+## Stop 훅과 쓰기 차단 훅 + 거부 사유 — Rails 사례 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]의 두 훅(⚠️ 코드는 슬라이드에만, 자막은 구조 설명):
+
+| 훅 | 시점 | 하는 일 |
+|---|---|---|
+| **Stop** | Claude가 에이전틱 루프를 빠져나가려 할 때 | RuboCop 실행, 실패면 *"you're not allowed to exit. You must run again."* (11:22~11:44) |
+| **새 파일 쓰기** | 파일을 새로 쓰려 할 때 | Ruby 스크립트가 `db/migrate` 쓰기를 차단하고 거부 사유 *"Instead of writing here, I want you to run the generator."* (14:17~14:45) |
+
+두 번째 훅이 이 페이지에 새로 더하는 것은 **거부 사유의 설계**다 — *"agents have a goal. (…) you block them, they're going to try to find a way to hack around it. (…) by giving it an error message and making its easy path the right thing to do"*(14:48~15:02). *막는 것* 만으로는 우회를 부르고, **옳은 대안을 쉬운 길로 제시**해야 한다. → [[deny-and-continue]] · [[reward-hacking]]. 화자는 훅 문법이 하네스마다 다르고 자주 바뀐다며 *"the idea"* 를 강조한다(11:05~11:14).

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-05-25
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Generator–Evaluator Pattern
@@ -297,3 +297,15 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 | **user testing** | *"it doesn't care how it was made"* — 가상 컴퓨터에서 직접 클릭해 동작 확인 | 13:33~13:43 |
 
 사례: 다른 제품이 만든 마이그레이션 결과는 *"just a dummy result"*(14:01~14:03)였고, 클릭해 본 에이전트가 *"actually working and not just looking good in the code"*(14:09~14:13)를 가렸다 → [[agent-visual-qa]]. ⚠️ 고객 미션 16시간 중 **검증이 40%**(11:51~12:02, 1건) — 평가자 비용이 작지 않다는 일화. 검증자가 다른 모델인지는 미발화. → [[software-factory]]
+
+## 분리의 또 다른 이유 — 컨텍스트 예산 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+이 패턴의 원래 논거는 *자기 평가 편향* 이다. [[matt-pocock|Matt Pocock]]은 **다른 논거**로 같은 분리에 도착한다 — 한 컨텍스트 창에 들어갈 **일의 양**. 구현 에이전트는 탐색·수정·디버깅으로 이미 차 있어 코딩 표준까지 얹으면 *"it's going to perform worse"*(12:11~12:16), *"implementation is overloaded"*(12:19~12:21). 리뷰 서브에이전트는 diff + coding standards만 보면 되니 *"review is actually underloaded"*(13:13~13:18) — 그래서 표준은 **평가자 쪽에만** 둔다(AGENTS.md가 아니라). *"implement, you make it work, and then code review, you actually make it good"*(13:38~13:45) — red-green-refactor의 두 창 버전.
+
+평가자가 **댓글이 아니라 커밋**한다는 점(*"The reviewer should commit"* 15:43~15:46)도 이 패턴의 기본형(평가 → 생성자에게 피드백)과 다르다 — 평가자가 직접 고친다. → [[automated-code-review]]
+
+## 점수 게이트 "B 이상" — 채점자를 말하지 않는 루프 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[kimchi|Kimchi]] **Ferment**: 변경 → 빌드 → 깨졌는지 확인 → 재수정·재빌드 → 스테이징(08:57~09:17), *"artifact is only considered complete once like the output of the scoring like at least B as a score"*, 원하면 A를 향해 다시(09:51~10:07). 점수는 라우팅의 보증으로도 쓰인다(*"whatever model we will pick for you you will always have like good enough scoring"*, 08:40~08:46). 공동 발표자 Laura의 해설: *"there is a a higher order model that is checking that quality"*(09:29~09:37).
+
+> ⚠️ Factory Missions의 *"the validators judge code that they didn't write"* 와 달리, Kimchi 발표는 **채점 모델·루브릭·평가자 분리 여부**를 말하지 않는다. *"higher order"* 가 생성 모델보다 강한 모델이라는 뜻인지도 미확정 — 같은 하네스가 고른 모델의 산출물을 같은 하네스가 채점한다면 이 페이지의 작성자=검증자 문제가 남는다.

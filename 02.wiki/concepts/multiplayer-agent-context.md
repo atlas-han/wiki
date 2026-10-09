@@ -6,9 +6,9 @@ tags: [multiplayer, shared-agent, slack, knowledge-creation, privilege, incident
 aliases: [공유 AI, 멀티플레이어 에이전트]
 related: [company-brain, credential-injection-outside-sandbox, claude-tag, goal-level-delegation, persistent-agent-teams, no-silent-write, agent-org-adoption]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game]
 created: 2026-09-10
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 멀티플레이어 에이전트 컨텍스트
@@ -76,3 +76,9 @@ updated: 2026-10-02
 화자 [[charlie-holtz|Charlie Holtz]]의 주장: *"collaboration is the the one one of the most important new concepts uh in these tools that no one is really talking about right now"*(10:49~10:56). 이유 — *"all great things are built with teams of people"*, 그리고 모델이 좋아질수록 더 야심찬 것을 만들게 되어 *"you're going to need more people and more agents to work on those things"*(11:02~11:19).
 
 > ⚠️ 이 페이지가 미해결로 둔 **권한 상승**·**동시 지시 충돌**은 데모에서도 다뤄지지 않는다. 데모는 동료의 응답을 기다리다 끝난다(*"The agents have escaped."* 12:37~12:38).
+
+## 2026-10-09 — 사람·에이전트 공용 채팅과 게시판 ([[tech-bridge-agentcraft-strategy-game]])
+
+[[agentcraft|AgentCraft]]의 **방(room)** — 완전 로컬 호스팅에 터널로 사람을 들이고 승인한다(08:21~08:46). 화자의 아내(프로덕트 디자이너)가 디자인하는 것을 엔지니어가 지도에서 보고 *"I can take that design, follow up on it, implement it while she keeps working"*(09:07~09:12) — **hand off·fork**. [[conductor|Conductor]] 데모와 달리 채팅이 *"not only between uh the people within the room, but also between agents"*(09:26~09:34)이고, 공용 **게시판**(notice board)에서 *"They're all aware of each other"*(09:34~09:41). 모바일·Telegram에서도(09:53~09:59). → [[design-handoff-friction]]
+
+> ⚠️ 이 페이지가 미해결로 둔 **권한 상승**·**동시 지시 충돌**은 여기서도 다뤄지지 않는다. *"I'm not really bound anymore to get[=Git]"*(09:18~09:23) — Git 밖의 공유 워크스페이스에서 충돌·병합이 어떻게 처리되는지도 발화되지 않는다.

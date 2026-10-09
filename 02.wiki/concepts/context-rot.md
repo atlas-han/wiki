@@ -6,9 +6,9 @@ tags: [context-window, attention, long-context, degradation, context-engineering
 aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation, 맥락 왜곡]
 related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-09
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -64,3 +64,7 @@ updated: 2026-09-24
 
 - [[tech-bridge-oracle-agent-memory-harness]] · [[ignacio-martinez]]
 - [[context-anxiety]] · [[long-context-agents]] · [[sparse-attention]] · [[attention-mechanism]] · [[context-resets-and-compaction]] · [[context-engineering]] · [[toolbox-pattern]] · [[agent-memory]] · [[context-window-as-floppy-disk]]
+
+## 프롬프트 속 규칙도 썩는다 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+[[david-khourshid|David Khourshid]]: *"the rules decay with context because that prompt, the rules in there, are just it's text, just like the rest of your context. So, as your context builds up, the rules get a little bit less significant over time."*(07:23~07:37) — 컨텍스트 부패를 **시스템 프롬프트의 규칙**에 적용한 형태. 처방은 창을 작게 유지하는 것이 아니라 **규칙을 텍스트 밖(상태 머신의 전이)으로 옮기는 것** → [[agent-state-machine]]. ⚠️ ko는 *less significant* 를 **"더 엄격해집니다"** 로 뒤집었다(07:33~07:37). 측정 없음.

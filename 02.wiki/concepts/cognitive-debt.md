@@ -6,9 +6,9 @@ tags: [cognitive-load, code-review, human-in-the-loop, verification, spec-driven
 aliases: [cognitive debt, 인지 부채, AI fatigue, AI 피로]
 related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot]
 first-seen: tech-bridge-sdd-full-course
-sources: [tech-bridge-sdd-full-course]
+sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility]
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-10-09
 ---
 
 # 인지 부채와 AI 피로
@@ -36,6 +36,12 @@ updated: 2026-09-27
 
 특징: 처방의 대부분이 **리뷰 양을 줄이거나 쪼개는 것**이고, 이해 자체를 늘리는 처방은 **테스트를 디버거로 읽기** 하나다. 컨텍스트 과부하를 *"ours and agents"*(38:34) — **사람과 에이전트 양쪽의 문제**로 나란히 두는 것도 이 소스의 특징이다.
 
+## 속도 조절과 학습 — "소프트웨어는 부산물" (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]이 청중 코멘트를 받아: *"by pacing yourself you're giving yourself the chance to form understanding and that's exactly right"*(32:11~32:20). 더 강한 명제를 단다 — *"The best software that I've (…) worked on is software where I tried to maximize learning which threw off software as a side effect"*(32:20~32:35). Ward Cunningham이 하루 오후 작업을 컴퓨터째 꺼 버리자 다음 날 *"about 15 minutes"* 에 더 명료하게 재구현했다(33:28~33:57). 다크 팩토리에선 *"you don't learn anything"*(34:10~34:14).
+
+> ⚠️ ko·en 모두 *"threw off software as a side effect"* 를 **"소프트웨어가 손상되었다"/"harmed the software"** 로 뒤집었다(32:32) — en-orig로만 읽을 것.
+
 ## 위키 내 자매 개념
 
 - [[verification-bottleneck]] — 병목이 생성에서 검증으로 옮겨 갔다는 진단. 인지 부채는 그 병목을 **통과시킨 뒤에도 남는 비용**(이해하지 못한 채 병합된 코드)이다.
@@ -46,6 +52,12 @@ updated: 2026-09-27
 
 > ⚠️ **측정 없음.** 두 용어 모두 강좌에서 정의와 처방만 나오고, 인지 부채를 재는 방법이나 AI 피로의 발생 조건에 대한 데이터는 없다. 이 위키의 단일 소스 개념이다.
 
+## 조직 단위의 증상 (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+상위 10위 자동차 제조사 임원(익명)이 엿들은 개발자의 말, [[dan-adler|Dan Adler]]가 전함: *"I don't know what this code does. AI wrote it for me."*(04:23~04:26) — *"When you're writing vehicle autopilot code and you have thousands of engineers in your org (…) this is terrifying."*(04:29~04:37). 이 페이지의 인지 부채가 **개인의 피로**가 아니라 **안전 필수 코드를 가진 조직의 위험**으로 서술된 첫 사례. ⚠️ 이중 전언(개발자 → 임원 → 화자), ko 자막은 이 문장을 반전시켰다.
+
 ## References
 
 - [[tech-bridge-sdd-full-course]] · [[spec-driven-development]] · [[verification-bottleneck]]
+- [[tech-bridge-kent-beck-craft-augmented-development]] — 속도 조절과 학습 (Kent Beck)
+- [[tech-bridge-sourcegraph-codebase-visibility]] — 조직 단위의 증상 (Dan Adler)

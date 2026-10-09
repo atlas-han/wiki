@@ -3,11 +3,11 @@ title: Trusted Throughput
 type: concept
 category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
-related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth, value-maxing, token-minimization-trap]
+related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth, value-maxing, token-minimization-trap, effort-output-outcome-mission]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-kent-beck-craft-augmented-development]
 created: 2026-09-02
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # Trusted Throughput
@@ -214,3 +214,13 @@ Amazon 리더보드 일화가 조직에서 생긴 Goodhart라면, [[ivanna-kacev
 ## 수치는 두 배, 유보는 사라졌다 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
 
 [[lauren-tan]]의 녹화 발표: *"지난달 **PR 2,000개**를 프로덕션에 반영"*(00:07~00:16) — 09-12 워크숍의 *지난달 1,000 · 12일 시점 ~800* 의 두 배다. 화자는 *"목표가 아니었다"*(04:24~04:31)고 하지만, 워크숍에 있던 **유보**(평균 PR 크기 모름, 맹목적 신뢰 경계, 무제한 토큰 인정)는 **녹화 발표에 하나도 없다.** 이 페이지의 기준으로 읽으면 **PR 수는 여전히 throughput이지 trusted throughput의 증거가 아니다** — 회귀·되돌림·리뷰 부담의 수치가 없다. → [[agent-trust-curve]]
+
+## 세 번째 값 2,500 — 그리고 유보의 복귀 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+Tech Bridge 해설 영상이 *"X에서는 … 한 달에 2,500개의 PR을 프로덕션에 반영했다고 소개했습니다"*(ko 00:11~00:17)라고 **내레이터의 입으로** 전한다. **본인 발화가 아니고, 달이 없고, 출처는 X 프로필**이다(이 위키는 열어 보지 않았다). 해설 스스로 *"2,500개의 새 기능을 만들었다는 뜻은 아닙니다"*(00:22~00:26)라고 단서를 단다 — **PR 수 ≠ 산출이라는 이 페이지의 경고를 채널이 먼저 말한 첫 사례.**
+
+자기 보고 계열: 09-12 *지난달 1,000* → 09-25 *지난달 2,000* → **X 프로필 2,500/월**. 반면 같은 영상의 대담 발췌에서 본인은 *"it's very hard to get to this point. I don't want to sell this as (…) something that you can just do easily"*(10:12~10:21)라고 말한다 — 09-25에 사라졌던 유보가 **대담 형식에서는 남아 있다.**
+
+## LOC·PR 수의 자리 — 노력과 산출 (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]이 [[effort-output-outcome-mission|노력 → 산출 → 결과 → 미션]] 사슬로 이 페이지의 경고에 위치를 준다: *"The Genie produced 200,000 lines of code. That's a measure of effort. It has nothing to do with the mission."*(46:00~46:07), *"lines of code (…) somehow it's back PR count"*(47:10~47:22). Goodhart는 더 나쁘다 — *"I think Goodart was an optimist. (…) people will twist the entire system out of shape."*(48:41~48:52)

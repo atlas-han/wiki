@@ -4,11 +4,11 @@ type: entity
 category: model
 tags: [minimax, open-source, long-context, multimodal, sparse-attention, moe]
 aliases: [M3]
-sources: [tech-bridge-minimax-m3-long-context]
+sources: [tech-bridge-minimax-m3-long-context, tech-bridge-kimchi-cost-per-task-harness]
 links:
   - https://www.minimax.io/
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-10-09
 ---
 
 # MiniMax M3
@@ -66,6 +66,12 @@ updated: 2026-09-08
 **M3.1이 개발 중**이고, [[minimax|MiniMax]]의 자체 research harness가 그 개발에 M3를 쓰고 있다 — *"M3가 벌써 M4를 만들고 있나요?" — "음, M3.1을 만들고 있습니다."* → [[self-harness]]
 
 향후 계획으로 **1조 파라미터 초과**가 언급된다(*"분명히요. (…) 이것보다 훨씬 더 야심찬 목표를 세울 것입니다"*). ⚠️ ko 자막이 이 대목을 *"1조 **달러**"* 로 옮겼다 — **원문은 파라미터**다.
+
+## 출시 1~2주 만에 하네스의 1순위로 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 사내 차트(자사 3개월 사용): 하네스가 가장 많이 고른 모델이 *"The 3rd of June Kimmy[=Kimi] 2.6"* → *"It happened the 12th of June"* → *"21st of June, the one winning is Minimat[=MiniMax] 3"*(06:05~06:25). 위 *"6월 초 출시"* 기록과 맞물려 **출시 후 1~2주 안에 결과 기반 라우터가 주력으로 채택**한 사용 기록이다. → [[automatic-model-routing]]
+
+> ⚠️ en-orig *"Minimat 3"*, ko *"미니맥스 3"* — 이 위키의 MiniMax M3와 **이름만으로** 같은 모델로 읽었다. 같은 발표의 비용 표엔 *"Minimax 2.7"*(토큰 *"1.5"*, 작업당 *"$148"*, 03:50~03:59)도 나온다 — 이 위키에 M2.7 페이지는 없다. 자사 차트, 품질 유지의 근거는 *"same outcome"* 한 마디.
 
 ## 개선 요청 (커뮤니티에 요청한 것)
 

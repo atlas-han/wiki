@@ -3,11 +3,11 @@ title: "자동 모델 라우팅 (Automatic Model Routing)"
 type: concept
 category: technique
 tags: [model-routing, router, cost, reliability, fallback, prompt-caching, open-models, model-selection]
-related: [model-mixing-economics, software-factory, overspending-underusing-loop, token-roles, system-1-model, harness-engineering]
+related: [model-mixing-economics, software-factory, overspending-underusing-loop, token-roles, system-1-model, harness-engineering, true-cost-to-perfect-answer]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory]
+sources: [tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 자동 모델 라우팅 (Automatic Model Routing)
@@ -53,6 +53,7 @@ updated: 2026-10-02
 | Oracle | 하네스 안 라우터 | (절감액의 10% 과금 모델) | [[tech-bridge-oracle-agent-memory-harness]] |
 | Jev | 비-LLM System 1 모델 | 확률 판정 | [[tech-bridge-jev-agent-harness]] · [[system-1-model]] |
 | Microsoft Copilot | **learned router** + 자체 MAI 모델 | 과제 강도, *"your agent picks the model"* | [[tech-bridge-nadella-copilot-autopilot]] |
+| **Kimchi** ([[cast-ai\|Cast AI]]) | 하네스(*"based on the outcome of the task"*) — 사전 분류 여부 미발화 | 작업당 비용 + 산출물 점수 게이트(B 이상) | [[tech-bridge-kimchi-cost-per-task-harness]] |
 
 공통 결론: **사람이 모델을 고르는 시대가 끝나 간다**(Nadella *"auto has become the product"*). Factory가 덧붙인 것은 **조직 단위의 기본 모델·권한**(①)과 **failover를 라우터의 이점으로 명시**한 것.
 
@@ -68,3 +69,11 @@ updated: 2026-10-02
 - [[tech-bridge-factory-software-factory]] — first-seen
 - [[model-mixing-economics]] · [[software-factory]] · [[overspending-underusing-loop]] · [[token-roles]] · [[system-1-model]]
 - [[factory-ai]] · [[tereza-tizkova]]
+
+## 결과로 보증하는 라우터, 그리고 시간축 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[kimchi|Kimchi]]([[cast-ai|Cast AI]])는 Factory와 **반대쪽 끝**에서 같은 기능을 말한다. Factory는 과제 **전에** 난이도를 분류해 *"임계값 위 최저가"* 를 고르고, Kimchi는 *"based on the outcome of the task"*(04:24~04:28) 고르며 산출물 **점수**를 *"to prove you that whatever model we will pick for you you will always have like good enough scoring"*(08:37~08:46) — **사후 품질 게이트로 라우팅을 보증**한다. 비교 단위는 토큰 단가가 아니라 **같은 품질의 작업당 비용**(03:07~03:23) → [[true-cost-to-perfect-answer]].
+
+⭐ **이 페이지 첫 시간축 기록**: 사내 차트에서 1순위 모델이 *"The 3rd of June Kimmy[=Kimi] 2.6"* → *"It happened the 12th of June"* → *"21st of June (…) Minimat[=MiniMax] 3"*(06:05~06:25). [[minimax-m3]]가 6월 초 출시된 지 1~2주 안이다. 화자의 논점: *"Do you think we look at this as human? Absolutely not. But an autonomous harness (…) is going to do just that."*(06:32~06:47) — 라우터의 이점이 **한 과제의 비용**만이 아니라 **새 모델 채택 속도**라는 주장.
+
+> ⚠️ **메커니즘 미발화.** 무엇이 *outcome* 신호인지, 과제 전 선택인지 실패 후 전환인지, 전환 빈도·임계값, 채점 모델 — 전부 말하지 않는다. 6월 12일 전환이 품질을 유지했다는 근거는 차트의 *"same outcome"*(05:04) 한 마디. 성과 수치(2.5배)는 화자 산수와도 맞지 않는다(토큰 ×1.5·비용 ÷1.5 = 2.25배).

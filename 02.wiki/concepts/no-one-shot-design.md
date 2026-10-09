@@ -6,9 +6,9 @@ tags: [design, iteration, elicitation, human-in-the-loop, auto-mode, intent]
 aliases: [multi-shot design, no auto mode, 원샷 불가, 멀티샷 디자인]
 related: [steering-altitude, adjective-verb-steering, fuzzy-intent-discovery, intent-md, decision-quality, ai-slop, generator-evaluator-pattern, privacy-auto-mode, anthropic-claude-code-auto-mode, no-silent-write]
 first-seen: tech-bridge-impeccable-design-steering
-sources: [tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-one-designer-plus-ai, tech-bridge-kent-beck-craft-augmented-development]
 created: 2026-09-12
-updated: 2026-09-15
+updated: 2026-10-09
 ---
 
 # 디자인은 원샷할 수 없다
@@ -76,6 +76,14 @@ updated: 2026-09-15
 그런데 처방이 다르다. [[paul-bakaus]]는 **같은 능력 위에서 반복하고 조향**하고, Vincent는 **그 능력을 경로에서 뺀다** — GPT로 PNG를 만들고 [[figma|Figma]]에서 벡터화한다.
 
 > **원샷이 안 된다는 진단은 같고, 원샷을 포기한 뒤에 무엇을 하느냐가 갈린다.** → [[capability-detour]]
+
+## 소프트웨어 전체로 — 원샷 vs 반복 (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]이 같은 구분을 **소프트웨어 개발 전반**에 건다 — *"the distinction between oneshot development and iterative development"*(35:06~35:13). 근거는 Bakaus와 다르다: 맥락·이해관계자가 아니라 **변경 가능성과 설치 기반**.
+
+- 반복 패러다임: *"software that has value deployed in the world that you then change and now it has more value in the world"*(41:35~41:46).
+- 경계 조건: *"If I'm writing a little app, one shot is fine."*(42:12~42:19) — Bakaus의 *"어쩌면 영원히"* 보다 약한 주장.
+- 형식 기법도 원샷이다 — *"it's still feels like a oneshot process"*(37:54~38:00) → [[ai-formal-verification]]
 
 ## References
 

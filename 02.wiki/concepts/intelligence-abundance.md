@@ -5,9 +5,9 @@ category: theory
 tags: [abundance, equity, electricity-analogy, pricing, access, openai, policy]
 related: [compute-constrained-growth, intelligence-as-infrastructure, power-shortfall, token-roles, ai-jobs-impact, regulatory-capture]
 first-seen: tech-bridge-altman-g20-economic-boom
-sources: [tech-bridge-altman-g20-economic-boom]
+sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-10-09
 ---
 
 # Intelligence Abundance (지능의 풍요 — 형평 논거)
@@ -60,6 +60,10 @@ Altman은 이것을 향후 5년의 **위험 셋** 중 하나로 분류한다(나
 | [[sam-altman]] (이 페이지) | **가격** — 풍요롭지 않으면 부유층의 물건이 된다 |
 
 ⚠️ 둘 다 자기 상품이 해결한다고 말하는 구조다. 그러나 **가격 쪽 논증은 검증 가능하다** — 전기 요금 곡선이라는 역사 사례가 있고, AI 토큰 가격도 관측 가능하다. 이 위키에 그 시계열은 아직 없다.
+
+## 두 번째 항목 — 속도 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+같은 화자가 DevDay 2026에서 **가격이 내려가는 축을 하나 더** 세운다: *"historically what we have mostly focused on (…) is bringing down the like price of IQ (…) Now there's this new vector that is clearly going to be very important of speed"*, *"we've got to go invest in the democratization of this like we have for model intelligence"*(29:38~30:17). 그리고 이 페이지의 *"전기처럼"* 논거에 단서를 단다 — *"there will always be a real frontier in terms of intelligence or speed or whatever else at a higher price"*(30:47~30:56). **풍요는 최전선 아래에서 온다.** → [[inference-speed-as-capability]]
 
 ## ⚠️ 유보
 

@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # 신뢰 곡선
@@ -72,3 +72,15 @@ updated: 2026-09-26
 그리고 **곡선을 오르는 방법이 한 동작으로 압축**됐다 — **교정할 때마다 [[hard-vs-soft-enforcement|다섯 층]] 중 가장 효과적인 곳에 심는다.** 오른쪽 끝의 모습도 달라졌다: 09-12의 *"자동 병합 → main에서 사후 리뷰"* 대신 *"환경을 너무 신뢰하게 돼서 **에이전트가 그냥 자유로워질 수 있는** 곳"*(37:17~37:28).
 
 > ⚠️ 수치는 **지난달 PR 2,000건**으로 두 배가 됐고, 09-12의 유보(PR 크기 모름·맹목적 신뢰 경계·자동 병합의 안전망 부재)는 **이번 발표에 하나도 없다.** 위 [[trusted-throughput]] 긴장은 그대로다.
+
+## "신뢰의 사다리" — 해설의 요약 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+Tech Bridge 해설은 원본 대담에서 *"신뢰의 사다리"*(ko 00:57~00:59, en-orig 번역 *"ladder of trust"*)가 나온다고 전하고, 요지를 이렇게 옮긴다: *"여러 작업을 맡길 수 있다는 신뢰는 자신 있는 답변보다 실제 결과를 확인하고 잘못됐을 때 다시 고칠 수 있는 환경에서 생긴다"*(ko 01:02~01:08). ⚠️ **발췌에는 Lauren이 이 말을 하는 음성이 없다** — 내레이터의 요약이다.
+
+본인 발화로 남은 것은 곡선을 오르는 비용에 대한 유보다 — *"it's very hard to get to this point (…) it takes a lot of time and effort to think about your code and where you see your agents failing"*(10:12~10:29). 위 09-25 절의 *"첫 구간이 가장 빠져나오기 어렵다"* 와 같은 방향이다.
+
+## 같은 사다리, 다른 승급 조건 — 능력 vs 행동 (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+[[jensen-huang|Jensen Huang]]도 사다리를 그린다: 직원·아이가 똑똑해질수록 *"you would give them larger and larger boundaries to explore"*(16:53~17:01), AI는 *"I give you no rights"* 에서 시작해 *"based on the job that I want you to do and your capabilities"* 만큼 넓힌다(17:38~17:51). 
+
+> ⚠️ **승급 조건이 다르다.** 이 페이지의 [[lauren-tan|Lauren Tan]]은 **관찰된 행동**(지름길 없음, 신뢰를 잃는 메커니즘)으로 오르고, Huang은 ***능력*(*"because its capabilities deserve it"*)** 으로 오른다. 능력이 늘어도 행동이 확인되지 않으면 어떻게 하는가 — Huang의 답은 사다리가 아니라 **두 번째 원칙(모든 AI 감시)** 이다. 두 화자 모두 이 차이를 말하지 않는다(위키의 관찰).

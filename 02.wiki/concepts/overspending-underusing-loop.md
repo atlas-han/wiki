@@ -6,9 +6,9 @@ tags: [token-economics, adoption, budget, fomo, austerity]
 aliases: [둠 루프, overspending and underusing, 토큰 맥싱 악순환]
 related: [trusted-throughput, token-roles, model-mixing-economics, agent-roi-measurement, agent-org-adoption, compute-constrained-growth, value-maxing, token-minimization-trap]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-09-13
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 과지출·저활용 둠 루프
@@ -65,3 +65,9 @@ updated: 2026-10-02
 [[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]])도 Coinbase CEO의 트윗 차트를 든다 — *"they continue growing and token maxing but they stopped spending so much money"*(05:30~05:35). 방법으로 넷을 꼽는다: 사람별 기본 모델(프런티어를 기본값으로 밀지 않기), 캐싱, **지출 한도 없이 결과를 보여 달라**, 라우팅(05:36~06:06).
 
 > ⚠️ **Contradiction: 같은 차트(로 보이는 것)의 평가.** 이 페이지의 첫 소스(마우스파워 편)는 Coinbase를 *"좋은 출발이지만 문제는 여전히 토큰에 너무 집중돼 있다"* 로 유보했다. Factory 편은 **토큰 소비가 계속 느는 것을 문제 삼지 않고**(*"token maxing"*) 지출이 갈라진 것을 성공으로 든다. 다만 *지출 한도 없이 결과를 요구* 한다는 레버는 이 페이지의 처방(**결과로 추적**)과 같은 방향이다. 두 소스 모두 차트 수치는 화면뿐이고, 같은 차트인지는 미확정.
+
+## 조직 층의 실명 사례들, 그리고 긴축 대신 단가 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[cast-ai|Cast AI]]의 Laura가 든 *"in the last few weeks"* 의 두 뉴스: 인도의 한 회사가 *"spent $500 million on anthropic alone in one months"*, Uber CTO가 *"in the last four months he actually used the entire budget of anthropic for the entire year"*(00:43~01:06) — 이 페이지의 *"1년 치 토큰 예산을 한 분기에"* 의 실명 판본. ⚠️ 둘 다 보도·트윗 미특정. 5억 달러 일화는 [[tech-bridge-trusted-throughput]]에도 있다(같은 보도인지 미확인).
+
+루프의 긴축 국면(*"Companies responded this by limiting the use of token"*, 01:18~01:21)을 Kimchi는 **틀린 대응**으로 보고, 빠져나오는 길을 Coinbase와 같은 방향 — **모델 믹스를 하네스가 자동으로** — 에서 찾는다. 자사 3개월 차트: 토큰 1.5배↑, 비용 1.5배↓(05:06~05:21). ⚠️ 이 페이지의 결론(*모델 믹스 최적화는 지출을 줄이지만 루프를 깨지는 못한다*)에 대한 반례는 아니다 — 가치 척도는 여전히 없다.

@@ -87,8 +87,23 @@ sources:
   - tech-bridge-death-of-code-review
   - tech-bridge-dx-ai-impact-trends
   - tech-bridge-warp-factory-engineering
+  - tech-bridge-jev-calibrated-decisions
+  - tech-bridge-lauren-tan-agent-dev-workflow
+  - tech-bridge-altman-devday-dots
+  - tech-bridge-learn-anything-with-ai
+  - tech-bridge-pocock-pr-bottleneck
+  - tech-bridge-rails-harness-engineering
+  - tech-bridge-white-house-superintelligence-panel
+  - tech-bridge-kent-beck-craft-augmented-development
+  - tech-bridge-sourcegraph-codebase-visibility
+  - tech-bridge-kimchi-cost-per-task-harness
+  - tech-bridge-agentcraft-strategy-game
+  - tech-bridge-prompt-to-production
+  - tech-bridge-uber-debug-assist
+  - tech-bridge-goodbye-slop-state-machines
+  - tech-bridge-jensen-huang-korea-society-gala
 created: 2026-06-03
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # Tech Bridge
@@ -880,6 +895,129 @@ updated: 2026-10-03
 - 공식 챕터 29개가 발화보다 일관되게 15~35초 늦다(raw에 양쪽 시각 병기). 행사명 미발화. 수치(60k stars · 800k 개발자 · 6개월 무코딩)는 전부 화자 진술.
 - **⚠️ ko 반전** — 채용 발언(18:25~18:37) *"hiring more people than we've ever hired"* → "고용한 적이 없다", 테제 문장(14:48~14:54) *"building the thing that builds the product"* 이 ko에서는 *제품 자체를 만든다*는 뜻으로 뒤집혔다. ko·en 공유 오류 *sloppy PRs* → "public relations".
 
-## 멤버 전용 대기 (2026-10-03 확인)
+## 2026-10-03 업로드 — IBM Technology(화자 무명), 글을 쓰지 않는 AI 모델 Jev (2026-10-09 ingest)
 
-`8DRjkp_X8yY`(*AI 시대에 쏟아지는 PR 병목*, 22:33) · `wrii8VocfZU`(제목·업로드일 미상) · **`_0zB1Qj-xoE`·`PACIHCnvNMo`(신규, 제목·업로드일 미상 — 목록 stderr ERROR로만 확인)** 는 `subscriber_only` — ingest하지 않음. 공개 전환 시 그날 ingest. `XyVUHSzKM2E`(Warp)는 공개 전환되어 위에서 ingest.
+[[tech-bridge-jev-calibrated-decisions|글을 쓰지 않는 AI 모델? Jev의 정체는 무엇일까요]](`9tPnHRSUNFA`, 14:51, 공식 챕터 10) — [[ibm]] · [[typesafe-ai]] · [[jev]] ([[model-calibration]] · [[system-1-model]] · [[post-training-northstars]])
+
+- TypeSafe의 Jev를 제3자가 설명 — **RLCD(보정된 결정을 위한 RL)**, *"Because the numbers are calibrated"*, 이름 = **Jevons paradox**. LangChain 편(09-25)이 비워 둔 학습 목표·보정·이름을 채우지만 **전부 TypeSafe 자료의 재진술**, 수치·실측 0개.
+- IBM 계열 아홉 번째, 화자 **무명**(자막·설명란 모두), 촬영 시점 미확정. IBM 판정은 설명란 `#IBMTechnology`·`ibm.biz`뿐.
+- **⚠️ ko 오류** — TypeSafe → "어떤 유형의 안전장치"(04:54), LLM 학습 → "법학 석사 과정 교육"(07:01), *takes text in as of today* → "오늘부터 문자 메시지만 받습니다"(12:43), Jev를 "사람"·"담당자"로 세 번. **`en` 트랙 = en-orig 완전 동일.**
+
+## 2026-10-03 업로드 — Lauren Tan, AI 에이전트 개발 워크플로우 (해설 + 대담 발췌) (2026-10-09 ingest)
+
+[[tech-bridge-lauren-tan-agent-dev-workflow|Lauren Tan(SpaceX - Cursor & Grok Bot 개발자)의 AI 에이전트 개발 워크플로우]](`OLYuAekOBeA`, 11:36, 공식 챕터 15) — [[lauren-tan]] ([[agent-verification-skill]] · [[build-a-lever]] · [[dune-architecture]] · [[verification-bottleneck]])
+
+- ⭐ **채널 첫 "한국어 해설 + 원본 대담 발췌" 형식** — 내레이터(미상)가 줄거리를 끌고 Lauren 영어 발화 6구간(약 5분)을 끼운다. 원본 대담 `MN9dGgmLyso`(진행 Matt Pocock — ⚠️ 태그·ASR 판독)는 위키에 없음. 설명란의 *"Lauren의 강의"* 는 기존 [[tech-bridge-lauren-tan-2000-prs]](`zkmvCDSxqdc`) — **관련 소스, 중복 아님**. 제목에 접두어(`[한영자막]`) 없음.
+- **자막 구조가 새롭다** — ko = 원음 혼합(한국어 내레이션 ASR + 영어 ASR), **en-orig 내레이션은 ko의 번역**(*"롤레는"* → *"Rolfe"*, Lauren을 *"he"*), en = ko의 번역. 인용은 Lauren은 en-orig, 내레이션은 ko에서.
+- **⚠️ 해설 ≠ 발화** — *"2,500 PR/월"* 은 내레이터의 X 인용, 조정자·패턴 문서화·토큰 비용·도메인 전문성은 발췌 없는 요약. 해설은 *"주방 비유"* 라 하나 발췌의 실제 말은 **공장 품질 감독관**(09:12~09:20).
+
+## 2026-10-04 업로드 — Sam Altman × Dan Shipper, DevDay 2026 대담 (2026-10-09 ingest)
+
+[[tech-bridge-altman-devday-dots|샘 알트만이 OpenAI와 일상을 운영하기 위해 AI를 실제로 활용하는 방법]](`wrii8VocfZU`, 31:27, 공식 챕터 14) — [[sam-altman]] · [[dan-shipper]] · [[openai]] ([[openai-dots]] · [[chatgpt-space]] · [[inference-speed-as-capability]] · [[bring-your-own-subscription]])
+
+- **10-02 멤버 전용 → 10-09 공개 확인**(`upload_date` 20261004로 변경 — 멤버십 확인일보다 늦다). DevDay 2026 키노트 당일, 라이브 관객. 진행자는 자막에 *"Dan"* 한 번, Shipper·Every는 설명란에만.
+- CEO의 AI 사용 일화(Dots가 아침을 돌려줌, 밤새 5~6개 버전, 키노트 5분 전 데모 장애 경고) · Space의 live documents · Decisions API와 [[jev|Jev]](ASR *"Do/Diego"* → [[diogo-almeida]] 판독) · ultra fast와 속도의 민주화. 22개 출시는 진행자 집계.
+- **⚠️ ko 오류** — Jev 대목 반전(*"pretty different"* → "크게 다르지 않다"), Space → "우주", Dot → "상사·담당자·팀원", Jev → "인물", Y Combinator → "YMCA", *big SEV(?) in production* → "빅 세븐 프로덕션과 함께 작업". **`en` 파일이 en-orig와 바이트 동일**(독립 판독 근거 없음). `>>` 화자 표지 부정확.
+
+## 2026-10-04 업로드 — Nick Saraev 클립 + 한국어 내레이션, AI로 무엇이든 효과적으로 학습하는 방법 (2026-10-09 ingest)
+
+[[tech-bridge-learn-anything-with-ai|AI로 무엇이든 효과적으로 학습하는 방법]](`ffzZCOWth68`, 16:46, 공식 챕터 18) — [[nick-saraev]] ([[retrieval-practice]] · [[ai-assisted-learning]] · [[cognitive-offloading]])
+
+- ⭐ **새 형식** — `[한영자막]` 접두 없음, 원 오디오가 **한국어 내레이션**(Tech Bridge 원고)이고 Saraev의 영어 클립 17개를 사이에 넣었다. 영어 오디오는 별도 트랙(자동 더빙 추정). 자막 성격도 뒤집힌다: **ko = 원어 ASR, en-orig = 더빙 ASR, en = ko의 기계번역** — 내레이션은 ko에서만 인용.
+- 내레이션이 원 화자를 **보충·정정·견제**한다 — 일주일 뒤 61%는 내레이션에만, *"네 번 읽었다는 뜻은 아니에요"* 로 Saraev를 바로잡고, 매 역할에 *링크 직접 열기 · 점수 ≠ 평가 · 진단은 추측* 단서. 설명란이 원본 영상과 논문 두 편(Roediger & Karpicke 2006, Cepeda 2008)을 **링크로 명시** — 이 채널에서 드문 일.
+- ⚠️ 시점 미확정(원본 게시일 없음), "10가지 역할"의 번호·이름은 Tech Bridge 것. ko는 받아쓰기 오류(*면적관*·*체점*·*네차해*), 13:18 *"잘못된 메모가 깔끔한 카드로"* 는 더빙에서 경고가 장점(*"Messy notes can turn into neat cards"*)으로 바뀌었다.
+
+## 2026-10-05 업로드 — Matt Pocock (AI Hero), PR 병목 (2026-10-09 ingest)
+
+[[tech-bridge-pocock-pr-bottleneck|AI 시대에 쏟아지는 PR 병목, 어떻게 해결해야 할까요?]](`8DRjkp_X8yY`, 22:32, 공식 챕터 없음) — [[matt-pocock]] ([[structure-sensitive-tests]] · [[deep-modules]] · [[automated-code-review]] · [[software-factory]])
+
+- **10-01 업로드 확인 당시 멤버 전용 → 10-09 공개 확인**(`upload_date` 20261005로 변경). Voss 편(코드 리뷰의 종말)에 이은 리뷰 병목 두 번째 목소리 — 서베이가 아니라 자기 스킬로 짠 처방.
+- **화자 이름·소속은 설명란에만**(자막엔 자기소개 없음, *"AIhero.dev/skills"* 정황). 설명란상 AI Engineer Paris 2026, 발화 *"Thank you, Paris"*. 01:20~01:48 자막 공백(세 트랙 공통). 측정치 없음.
+- **⚠️ ko가 PR을 일관되게 "홍보"로**(ko 단독), 결론 *"don't need to review every single two-way door"* 를 캡션 경계에서 "되돌릴 수 있는 모든 결정을 검토하십시오"로 쪼갬. *Opus 5* → "작품 5", *merge danger* → "녹을 위험".
+
+## 2026-10-05 업로드 — Joël Quenneville, Rails에서 하네스 엔지니어링 (2026-10-09 ingest)
+
+[[tech-bridge-rails-harness-engineering|Rails에서 하네스 엔지니어링을 활용하는 방법]](`xgPyzfDIrPY`, 30:55, 공식 챕터 없음) — [[joel-quenneville]] ([[human-plumbing]] · [[feedforward-feedback-steering]] · [[domain-specific-scripts]] · [[harness-engineering]])
+
+- **채널 첫 Ruby/Rails 실무 소스.** "prompt and pray"를 멈추고 판단을 RuboCop(지시 → Stop 훅)·제너레이터(쓰기 차단 훅 + 거부 사유)·좁은 리뷰 스킬(서브에이전트)로 옮겨 AI 산출물의 바닥을 올린다. Böckeler 2×2, Goodhart 경고, 도메인 전용 스크립트, retro 스킬. 측정 없음.
+- 이름은 **제목에만**(영상이 문장 중간에서 시작, 자기소개 없음), 소속 미발화(설명란 링크 shopify.engineering은 본문과 무관). 행사명 미발화(*"Rachel's talk here yesterday"*), 촬영 2026년 5월 말 이후 추정(dynamic workflows·ultracode 언급 — 위키 교차 참조). **en-orig에 결손 3구간**(en·ko에만 내용) — 인용하지 않음.
+- **⚠️ ko가 결론 두 교훈을 뒤집었다** — *"No more prompt and pray"* → "끝났어 기도해 보세요", *"don't just fix the mistake"* → "단지 그것을 수정하는 것뿐", *"how could this be the last time?"* → "마지막일 리가 없잖아?". **en·ko 공유 오류** *harness engineering* → "control engineering/제어공학"(결론 문장), *root cause* → "RuboCop". cop → "경찰", generator → "발전기", LLM → "법학 석사"(다시). en-orig는 AGENTS.md를 *.mmd* 로 열 번 넘게.
+
+## 2026-10-06 업로드 — Jensen Huang × Elon Musk × Tom Brown, 백악관 SI 패널 (2026-10-09 ingest)
+
+[[tech-bridge-white-house-superintelligence-panel|젠슨 황과 일론 머스크가 직접 밝히는 슈퍼 인텔리전스와 에너지, 우주 컴퓨팅의 미래]](`PACIHCnvNMo`, 26:09, 공식 챕터 없음) — [[jensen-huang]] · [[elon-musk]] · [[tom-brown]] · [[nvidia]] · [[spacex]] · [[anthropic]] ([[orbital-compute]] · [[power-shortfall]] · [[agent-governance-layers]] · [[cross-lab-peer-review]])
+
+- **10-03 멤버 전용 → 10-09 공개 확인**(`upload_date` 20261006으로 변경 — 최초 게시일 아님). 설명란상 백악관 패널, 진행자 무명, 영상은 문장 중간에서 시작.
+- 전력 1% ≈ GDP 1%(Musk의 내기), **SI 공장**, **궤도 컴퓨팅**(연 200 GW 태양광), NVIDIA **OpenShell·BlueField**(격리 + 대역 밖 감시), Opus 5.5(*"normal progress"*), **SI 안전 공동 선언**(*"grading each other's homework"* — 선언문 미확인). ⚠️ GW당 산출 Huang 400~500억 vs Musk 산수 600억.
+- 녹화일 미발화 — *"월요일"* Starship 첫 궤도 발사, *"며칠 전"* Opus 5.5, *"오늘 점심"* 서명. 2026년 10-03 이전(9월 중순~10월 초 추정). 화자 귀속은 내용 판독.
+- **⚠️ ko·en 공유 오류 *POTUS* → "포데스타/Podesta"**(25:46). ko 반전 — *"but for AI, they would have died"* → "AI 때문에 죽을 것"(22:01), *"you give them … access"* → "박탈당했습니다"(14:12), *"ought to embrace"* → "포옹을 그만둔"(25:43). *contained* → "자제력"·"구금", Claude → "클라우드", BlueField → "사람".
+
+## 2026-10-06 업로드 — Kent Beck, AI 시대의 소프트웨어 엔지니어링 (2026-10-09 ingest)
+
+[[tech-bridge-kent-beck-craft-augmented-development|켄트 벡이 밝히는 AI 시대의 소프트웨어 엔지니어링]](`_0zB1Qj-xoE`, 51:43, 공식 챕터 없음) — [[kent-beck]] ([[features-vs-futures]] · [[effort-output-outcome-mission]] · [[spec-driven-development]])
+
+- **10-03 멤버 전용 → 10-09 공개 확인**(`upload_date` 20261006). 단독 강연, 정부·군 청중 — 행사명 미발화(설명란 링크로 Rise8 Prodacity 추정), 녹화 연도 미발화. 청중 질문 2건은 녹음 안 됨.
+- 지니는 plausible할 뿐 working이 아니다 · 기능마다 futures를 태운다 · SDD = 폭포수 · 다크 팩토리는 *"always"* 탈선 · LOC·PR 수는 노력/산출 측정, *"Goodart was an optimist"*. 1만 달러 C 컴파일러는 출처 미발화(Carlini 사례와 동일 여부 미확인).
+- **⚠️ ko가 features → "자원", futures → "선물 거래", genie → "천재"** 로 중심 그림을 망가뜨렸고, 처방 *"add back some of the futures"* → "기능 추가"(24:26), *"a year ago"* → "1년 후"(37:36), *"came straight out of school"* → "대학을 중퇴"(33:04). en·ko 공유 오류: *"threw off software as a side effect"* → "harmed/손상"(32:32), *output* → "result/결과"(44:22).
+
+## 2026-10-06 업로드 — Dan Adler (Sourcegraph), AI 코딩 에이전트가 거대한 코드베이스를 망가뜨리고 있습니다 (2026-10-09 ingest)
+
+[[tech-bridge-sourcegraph-codebase-visibility|AI 코딩 에이전트가 거대한 코드베이스를 망가뜨리고 있습니다]](`oeL0uP-NO-U`, 10:51, 공식 챕터 15) — [[dan-adler]] · [[sourcegraph]] ([[large-scale-code-changes]] · [[code-knowledge-graph]] · [[agentic-search]])
+
+- 진단 + 자사 제품(Agentic Batch Changes, 발표 당일 베타) 발표. 근거는 출처 없는 72% 통계와 익명 인용 둘(자동차 제조사 임원, 은행 *"90,000 repositories"*). Mercari 수치 2+80 ≠ 100(ASR "100%" 탈락 가능).
+- 자기소개가 잘려 **이름·CEO 직함은 제목·설명란에만**. 행사명 미발화(설명란 `ai.engineer` 링크로 추정), 녹화일 = 베타 공개일(미확인).
+- **⚠️ ko 반전 셋** — *"I don't know what this code does. AI wrote it for me."* → "알고 있습니다 … 일체 포함"(04:24), *Few … work at startups* → "상당수가"(00:39), *the tools that are creating the conditions* → "절대로 생성되는 코드가 아닙니다"(03:56). en·ko 공유 오류 넷(*single prompt* → "알림", *grep* → "AI", *PR* → "추출 요청", *AGENTS.md* → ".mmd").
+
+## 2026-10-07 업로드 — Cast AI · Kimchi, 토큰 제한을 멈추세요 (2026-10-09 ingest)
+
+[[tech-bridge-kimchi-cost-per-task-harness|토큰 제한을 멈추세요: 하네스가 최적의 모델을 직접 고르게 해보세요]](`31XD1O74pks`, 17:39, 공식 챕터 16) — [[cast-ai]] · [[kimchi]] ([[automatic-model-routing]] · [[true-cost-to-perfect-answer]] · [[value-maxing]])
+
+- 벤더 2인 발표("Laura" 공동 창업자·사장 / "Zilvinas" 엔지니어링 리드 — **둘 다 성 미발화, 설명란에 화자 이름 없음**). 토큰당이 아니라 **같은 품질의 작업당 비용**으로 모델을 고르는 하네스, 6월 Kimi 2.6 → MiniMax 3 전환 차트, Ferment(B 이상 점수 게이트·스테이징 정지)·Teleport·Studio.
+- ⚠️ 수치 전부 자사·출처 미특정. 토큰 ×1.5·비용 ÷1.5 = 2.25배인데 화자는 "2.5배". Gemini 3 Flash 작업당 en-orig **"$75"** vs en·ko **"$705"**. 녹화 6월 21일 이후(AI Engineer 부스 "U4" 추정).
+- **⚠️ ko 오류** — *2.5 time less* → "2.5배 더 성장"(반전), *half a year ago* → "반년 후", 2,000줄 *PR* → "지지율", *open source or proprietary models* → "장비를 소유하거나 소유자에게 개방". `en`·ko 공유 창작 *"Zulfiqar"*(09:20).
+
+## 2026-10-07 업로드 — Ido Salomon (AgentCraft), 코딩 에이전트를 전략 게임으로 (2026-10-09 ingest)
+
+[[tech-bridge-agentcraft-strategy-game|코딩 에이전트를 전략 게임으로 만들었습니다]](`eTtZlAPA9H4`, 13:12, 공식 챕터 18) — [[ido-salomon]] · [[agentcraft]] ([[agent-attention-management]] · [[verification-bottleneck]] · [[orchestras-not-factories]])
+
+- 당사자 데모, **수치·측정 없음**(90%는 근거 없는 추정, 사용자 반응은 일화). 자막에 자기소개 없음 — **첫 줄이 문장 중간**(앞부분 결손), 이름은 제목·설명란에만. 설명란 #MCP·`mcp-ui.dev`는 발화와 대응 없음. 행사·촬영일 미발화.
+- 제품명 첫 소개를 세 트랙 모두 *"AtomCraft"*(01:46)로 들음. en-orig `>>` 로 게임식 음성 효과로 보이는 *"At your command."* 등이 끼어 있다(추정).
+- **⚠️ ko 결론 반전** — *"we are the bottleneck, but we don't have to be"* → "그것은 아닙니다. 우리에게는 그럴 만한 이유가 있다"(13:02~13:04, ko 단독). *without having them burn out* → "에이전트가 부족해지지 않는", *20 stuff going* → "이제 저는 스무 살이에요", *changes* → "잔돈", *hand off or fork* → "송금 … 포크 하나". `en`의 *"dropped out of college to play StarCraft"* 가 ko에서 "대학에 갔고"로 — **en 경유 2단 변형**.
+
+## 2026-10-07 업로드 — IBM Technology 계열(추정), 프롬프트에서 프로덕션까지 (2026-10-09 ingest)
+
+[[tech-bridge-prompt-to-production|프롬프트에서 프로덕션까지: AI 코드 워크플로우의 미래는 어떻게 바뀔까요?]](`kcflfXb6dBM`, 7:03, 공식 챕터 11) — [[ibm]] (발표자 무명) ([[agent-change-evidence]] · [[verification-bottleneck]] · [[behavior-validated-trust]] · [[decision-quality]])
+
+- 계획 → 자가 수정 실행 → 증거. *"AI can scale execution dramatically faster than humans can scale verification"* — AI는 코드만이 아니라 **증거**(테스트·검증·영향 분석·설명)를 내야 하고 사람은 다섯 질문으로 본다. 수치·사례·제품명 0개.
+- ⚠️ IBM 판정 근거가 **`ibm.biz` 링크 둘뿐**(해시태그에 IBM 없음) — IBM 편 중 가장 약하다. 발표자 무명, 촬영 시점 미확정.
+- **⚠️ ko가 핵심 문장 셋을 부정 처리 오류로 반전** — *"I can't realistically review every change"* → "모두 검토할 수 있습니다", *"the bottleneck becomes our confidence"* → "병목 현상이 줄어듭니다 · 우리는 확신을 갖고 있습니다", *"I don't care if AI changed 1,000 lines"* → "바꿨는지에 관심이 있다". 제목 구 *prompt to production* 은 처음·끝 모두 깨졌다("지침에서 지침으로" / "즉흥적인 접근"). 이번 `en`은 en-orig의 **의역 트랙**(prompt → instruction, commit → confirm)이라 그 의역이 ko로 번졌다.
+
+## 2026-10-08 업로드 — Kriti Dangi (Uber), 디버깅 에이전트 하네스 Debug Assist (2026-10-09 ingest)
+
+[[tech-bridge-uber-debug-assist|Uber에서 디버깅 에이전트 하네스를 구축하는 방법]](`6YuIp-MwPv4`, 27:58, **공식 챕터 없음** — 구간은 위키가 나눔) — [[kriti-dangi]] · [[uber]] · [[debug-assist]] ([[deterministic-agent-pipeline]] · [[harness-as-platform]] · [[mergeability-gap]])
+
+- 사내 디버깅 에이전트 1인칭 운영 보고 + Q&A 3개. LangGraph 고정 골격(결정론 + LLM 노드, Sonnet/Opus·턴 예산), 기능 플래그 MCP 자동 롤백, 런타임 스킬(플러그인 약 3,000개 → 에이전트 타입으로 범위 지정). 지표: 월 9,000 RCA, 정확도 50%, **PR 머지율 5% → 약 48%(1년)** — 전부 자기 보고. **Jira "resolution time … increased twofold" = 개선**이라는 발언은 말 그대로면 거꾸로(방향 미확정).
+- 이름 *Kriti Dangi* 는 제목·설명란에만(자기소개 없음). 행사·녹화일·모델 버전 미발화(설명란 "AGNTCon + MCPCon 안내" 링크만).
+- **⚠️ en·ko 공유 오류** — *harness* 네 번 모두 framework/structure/infrastructure(제목의 핵심어가 자막에서 사라짐). **ko 단독** — *PR creation* → "파라나 주 대통령", *lovely question* → "[욕설]", *roughly 10,000 by the end of next half* → "약 2000% … 10,000부터 … 학기", *right direction* → "경영상의 문제점".
+
+## 2026-10-08 업로드 — David Khourshid (XState·Stately), 슬롭이여 안녕 결정론이여 어서 와 (2026-10-09 ingest)
+
+[[tech-bridge-goodbye-slop-state-machines|AI 에이전트의 엉망진창 결과물(Slop)을 없애려면 '이 구조'를 도입해야 합니다]](`D7q8fa589FY`, 20:29, 공식 챕터 21) — [[david-khourshid]] · [[xstate]] ([[agent-state-machine]] · [[ai-slop]] · [[jev]])
+
+- 슬롭 = *구조 없는 위임*, 처방은 규칙을 상태·전이로·내용은 모델로. 상태 머신을 트레이스·eval과 함께 다른 에이전트에게 넘겨 V2 → V1과 비교(*"The state machine is how you could have the agent self-improve"*). **실측 없음** — V1→V2·Jev 에스프레소 데모 모두 1회 시연.
+- Agent Conf 2026(폴란드), *"A couple days ago (…) Type Safe announced Jev"* → Jev 발표 며칠 뒤 녹화(절대 날짜 미확정, 2026-09 전후 추정). 설명란은 Jev를 *"에이전트 프레임워크"* 라 부름(발화 아님).
+- **⚠️ ko 반전** — *non-deterministic parts* → "결정론적 예시"(05:45), *replaces confusion* → "혼란을 줄 것"(10:16~10:23), *"I'm not arguing that (…) is good"* → "좋다고 말하는 거예요"(11:14~11:22), 시점 단서 *a couple days ago* 소실(17:51). *slop*·*edges* 는 en/ko 공유 오류("trash"/"쓰레기", "limits"/"한계").
+
+## 2026-10-08 업로드 — Jensen Huang × "주주 장", 2026 코리아 소사이어티 연례 갈라 (2026-10-09 ingest)
+
+[[tech-bridge-jensen-huang-korea-society-gala|젠슨 황·주주 장 대담 — 2026 코리아 소사이어티 연례 갈라]](`wg4_OW0EfN4`, 23:10, 공식 챕터 9) — [[jensen-huang]] · [[nvidia]] ([[ai-anthropomorphism]] · [[intelligence-as-infrastructure]] · [[agent-governance-layers]] · [[reward-hacking]])
+
+- Huang의 **네 번째 소스**(G20 · CBS · 백악관 패널에 이어), 이번엔 **수상 갈라의 우호적 무대**. 새 수치·제품 없음 — 새로 들어온 것은 *"AI is not alive"*·시험 비유(*"not cheating. That's called obvious"*)·정렬 = *"not just what, but how"*·*"가치 있는 목표는 모호하다"*·한국 *"consume and export AI"*·*"responsible optimism"*.
+- **⚠️ 진행자 이름 미해소** — 제목·설명란 "주주 장", 자막에선 Huang이 *"Julie"* 라 부른다. 녹화일 미발화: 진행자 *"this morning … open agent safety platform"* 이 백악관 패널(`PACIHCnvNMo`)의 *"great Monday … open agent safety framework"* 와 같은 발표로 추정(명칭 갈림) → **같은 주 두 무대**일 가능성. 큰 수치(자사주 1,500억·총 2,350억 달러, 금융사 약 5천억 달러)는 전부 진행자 진술.
+- **⚠️ ko 반전** — *"They're not alive"* → "살아있습니다"(16:26), *"this morning"* → "내일"(12:50), 마지막 문장의 걱정 → "두려워하지 맙시다"(23:01), *"not cheating"* → "제대로 하는 게 아니야". *safety* → "보안", *sandbox* → "테스트 환경", *sentient* → "모르고 있다"는 **en 공유 오류**. ⭐ **AI가 사람이 아니라는 구간에서 ko·en이 AI를 "그"·"그녀"로 받는다** — 번역 층의 의인화. Korea Society → "한국학회", 소맥의 맥주 → "메주".
+
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-09 확인)
+
+- **2026-10-03 대기 목록 네 편이 모두 공개 전환 — 이번 회차에 위에서 ingest:** `8DRjkp_X8yY`([[tech-bridge-pocock-pr-bottleneck|Pocock PR 병목]], `upload_date` 20261005) · `wrii8VocfZU`([[tech-bridge-altman-devday-dots|Altman × Shipper DevDay]], 20261004) · `_0zB1Qj-xoE`([[tech-bridge-kent-beck-craft-augmented-development|Kent Beck]], 20261006) · `PACIHCnvNMo`([[tech-bridge-white-house-superintelligence-panel|백악관 SI 패널]], 20261006). 네 편 모두 공개 시점으로 `upload_date`가 다시 잡혔다(기존 패턴, 추정).
+- **여전히 `subscriber_only` — ingest하지 않음:** `5tdMgKkX5dU`(10-03 업로드, Lauren Tan 팟캐스트 풀버전) · `J1BGMIWTJ1U`(10-05, 그렉 브록만) · `RVnSsolR3uE`(10-06, Codex로 요리하기). 공개 전환 시 그날 ingest.
+- 이번 회차(2026-10-09)는 10-03~10-08 업로드 15편을 한 번에 ingest했다 — OAuth 만료로 5일분이 밀렸다.

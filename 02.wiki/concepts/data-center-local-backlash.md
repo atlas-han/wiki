@@ -6,9 +6,9 @@ tags: [data-center, community, power-grid, water, energy, infrastructure, nvidia
 aliases: [데이터센터 반대, NIMBY 데이터센터, 뒷마당 데이터센터, data center backlash]
 related: [intelligence-as-infrastructure, power-shortfall, compute-constrained-growth, regulatory-capture, ai-jobs-impact]
 first-seen: tech-bridge-jensen-huang-cbs-interview
-sources: [tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-25
-updated: 2026-09-29
+updated: 2026-10-09
 ---
 
 # 데이터센터 지역 반발
@@ -105,3 +105,9 @@ updated: 2026-09-29
 **Huang과의 차이**: Huang은 **사과 + 물은 신화 + 최소 기준(미관·이격·소음)**, Nadella는 **허가의 언어 + 20년 된 한 도시의 결과**. Nadella는 **물·전기 요금 반론을 하지 않는다** — *"commitments around water use"* 뿐이다. 이 페이지의 표에 **네 번째 행**이 생긴다: **운영자 — 정당성 인정(허가) + 이름 있는 사례 + 투명성(NDA, 진행자 서술)**.
 
 ⚠️ **NDA는 진행자만 말한다.** 화자는 NDA를 직접 설명하지 않는다 — 언제, 어느 지역, 무엇을 공개하게 됐는지 없다. ⚠️ **"20년 종단 연구"는 화자가 붙인 이름**(*"I'll call it"*)이지 연구가 아니다. 세수 *"12 X"*·고용 *"close to a thousand"* 출처 없음. ko는 *12 X* 를 **"12번"**, *at the end of the day* 를 **"청구서 때문에"** 로 옮긴다. **반대 측 1차 목소리는 여전히 없다.**
+
+## "그들은 보답할 것이다" — 운영자 둘의 같은 처방 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+- [[jensen-huang|Huang]]: 데이터센터가 *"coming into a lot of neighborhoods and a lot of communities. We have to do a better job um in partnering with the communities"*, 이 산업혁명의 번영에 *"bring them along"*(02:03~02:18). CBS의 *"더 일찍 찾아와 말씀드리지 못해 죄송하다"* 의 연장.
+- [[elon-musk|Musk]](Colossus 지역, 진행자 질문): 일자리 초과, 세수 *"might have doubled"*, 반값 서비스(⚠️ *"halfp price stalling uh access"* 미판독), *"$250 million water recycling plant"*(10:09~10:53) → ***"you do need to do things for the community. Um and if you do so they will reciprocate."***(10:53~10:56)
+- ⚠️ 둘 다 **운영자 측 진술**이고 지역 주민의 목소리는 없다. 물 재활용 시설은 이 페이지의 *물* 쟁점에 대한 **운영자 측 대응 사례**지만 규모 외 수치(용량·사용량)가 없다. 지역 이름 미발화.

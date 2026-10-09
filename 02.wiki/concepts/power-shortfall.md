@@ -3,11 +3,11 @@ title: Power Shortfall (전력이 컴퓨팅의 상한이다)
 type: concept
 category: theory
 tags: [power-grid, electricity, data-center, compute, gpu, export-controls, infrastructure]
-related: [compute-constrained-growth, intelligence-as-infrastructure, humanoid-robot-scaling, trusted-throughput, data-center-local-backlash]
+related: [compute-constrained-growth, intelligence-as-infrastructure, humanoid-robot-scaling, trusted-throughput, data-center-local-backlash, orbital-compute]
 first-seen: tech-bridge-elon-musk-g20-ai-future
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-07
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # Power Shortfall (전력이 컴퓨팅의 상한이다)
@@ -82,3 +82,23 @@ updated: 2026-09-25
 - **데이터센터 → 전력망** — *"발전소를 위해 제공해야"*, *"지역 전력망에 기여해 신뢰성을 높여야"*, *"전기 요금이 오른다는 것은 사실상 반대 — 전력망을 더 탄력적으로 만들고 전력 비용을 줄인다"*(33:44~36:59). ⚠️ **전부 "should"** 이고 수치 없음.
 
 > ⚠️ **Contradiction (부분):** 이 페이지의 전제(칩이 전력보다 빨리 늘어 결손이 생긴다)와 Huang의 *"데이터센터가 지역 전력 비용을 낮춘다"* 는 **데이터센터가 자체 발전·전력망 투자를 할 때만** 함께 성립한다. Huang은 그것을 당위로 말한다. 해소하지 않는다. → [[data-center-local-backlash]]
+
+## 전력을 GDP로 환산하다 — "1% ≈ 1%", 그리고 맞지 않는 GW당 산출 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[elon-musk|Musk]]가 이 페이지의 병목에 **환산율**을 붙인다:
+
+> *"the average power consumption in the United States is about 500 gawatt. So every 5 GW of incremental steadyst state production is a 1% increase in in the power used"* (04:14~04:23) · *"I would bet anyone that 1% increase in power usage corresponds to roughly 1% increase in GDP"* (05:02~05:09)
+
+근거는 와트당 지능이 하드웨어(GPU의 와트당 연산)와 알고리즘 양쪽에서 계속 오른다는 것(04:33~04:59). 이 위키의 [[valued-work-per-watt]]가 *제품의 점수*로 쓰던 단위를 **거시 경제의 환산율**로 쓴 셈이다.
+
+| 양 | 화자 | 값 | 판정 |
+|---|---|---|---|
+| 5 GW = 미국 전력의 1% | Musk | 평균 500 GW | ✅ 산수 맞음 |
+| 전력 1% ≈ GDP 1% | Musk | *"I would bet"* | ⚠️ 내기, 측정치 아님 |
+| GW당 연간 산출 | [[jensen-huang|Huang]](추정) | 400~500억 달러 (05:18~05:26) | — |
+| GW당 연간 산출 | Musk 즉석 산수 | 600억 달러 (05:32~05:49) | ⚠️ **Huang과 불일치**, 무대에서 미해소 |
+| 중국 전력 생산 | Musk | 미국의 약 3배 (03:21~03:26) | ⚠️ 출처 없음 |
+
+> ⚠️ 이 페이지 §산수의 Huang *"1 GW ≈ 500~600억 달러"*(G20)는 **투자액**이다. 여기 400~600억은 **연간 산출**이다 — 비슷한 숫자, 다른 양. 혼용하지 않는다.
+
+공급 쪽 답이 하나 늘었다 — **지상 밖**. 지상 태양광은 우주의 1/5~1/8, SpaceX+Tesla 연 200 GW 태양광 생산, Starship이 연 수백 GW의 AI 컴퓨팅을 쏘아 올린다 → [[orbital-compute]]. Huang(추정)은 *"for the first time in in probably forever"* 모든 형태의 지속 가능 에너지에 정부 보조 없이 시장 자금이 붙는다(10:59~11:33) — CBS의 *"100년 만에 처음"* 과 같은 주장.

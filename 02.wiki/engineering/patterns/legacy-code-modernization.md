@@ -6,9 +6,9 @@ tags: [legacy, modernization, migration, architecture, cicd, technical-debt, age
 aliases: [레거시 현대화, 현대화의 세 축]
 related: [technical-debt, legacy-skills-gap, syntactically-correct-behaviorally-wrong, risk-proportional-human-review, greenfield-vs-brownfield-agent-risk, refactoring, ai-native-sdlc]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-sourcegraph-codebase-visibility]
 created: 2026-09-18
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 레거시 코드 현대화
@@ -88,6 +88,18 @@ updated: 2026-10-02
 - 아키텍처 목적지: 마이크로서비스 500개도 거대 모놀리스도 아닌 [[self-contained-systems|self-contained system]].
 
 > ⚠️ **Contradiction: AI 번역의 자리.** 위 IBM 편은 AI의 두 자리 중 하나로 **번역**(COBOL→Java, *"논리와 의도는 유지"*)을 든다. Martinelli는 같은 예를 *"that never worked"* 라 한다. 두 소스 모두 *현대화 ≠ 번역* 에서는 같고, 갈리는 것은 번역이 **쓸모 있는 중간 단계**인가다. *"anthropic is telling us"* 가 무엇을 가리키는지는 발화되지 않는다. 또 IBM 편의 아키텍처 축 *모놀리스 → 독립 서비스* 에 대해 Martinelli는 **과도한 분할(distributed big ball of mud)** 을 경고하고 서비스 크기를 AI 컨텍스트로 정하라고 한다.
+
+## 새 코드가 처음부터 레거시가 되는 경로 (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+이 페이지의 정의 *"아무도 완전히 이해하지 못하는 핵심 인프라"* 에 [[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]])가 **새 경로**를 붙인다. 상위 10위 자동차 제조사 임원(익명)이 엿들은 개발자의 말:
+
+> *"I don't know what this code does. AI wrote it for me."* (04:23~04:26)
+
+**이해의 부재**가 시간이 흘러서(원저자 은퇴 — [[legacy-skills-gap]])가 아니라 **작성 시점부터** 생긴다. Adler의 진단은 *"the problem here is actually the volume of code"*(03:46~03:52) — 에이전트마다 다른 표준, 이미 있는 라이브러리를 모르는 중복(*"You you already have a library that does this, but your agent doesn't know that."* 03:07~03:10), 서비스 간 의존성 취약화, 매일 발견되는 취약점(03:00~03:36).
+
+**"왜 지금 더 나빠지는가" 표에 넷째 줄**: 사람·생산성·보안에 이어 **양** — *"The very tools that are speeding all of us up (…) are also the tools that are creating the conditions"*(03:54~04:02).
+
+⚠️ 72% 통계(00:28~00:30)를 빼면 **데이터가 없다**. 자동차 회사 인용은 이중 전언이고 화자는 코드베이스 가시성 벤더다. 또 ko 자막이 이 인용을 *"저는 이 코드가 무슨 일을 하는지 알고 있습니다"* 로 **뒤집었다**(raw 보정 목록).
 
 ## References
 

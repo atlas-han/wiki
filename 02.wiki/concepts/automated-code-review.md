@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop, prompt-injection, review-harness, agents]
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
-related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput]
+related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 자동 코드 리뷰
@@ -62,6 +62,28 @@ Cursor는 이를 **resolution rate**라 부르고 52% → 70%+로 올렸다(14:1
 
 *"once the premerge review is all machines, watching what the code actually does becomes the last reviewer standing"*(21:55~22:00) — 테스트 결과가 아니라 **궤적**. → [[production-trace-eval-flywheel]]
 
+## 한 사람이 지은 리뷰 하네스 — Pocock (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, [[matt-pocock|Matt Pocock]]은 자기 스킬로 그 부품을 보여 준다.
+
+| 부품 | 내용 | en-orig |
+|---|---|---|
+| **표준은 리뷰어에게** | 구현 에이전트는 탐색·수정·디버깅으로 과부하 — *"don't put coding standards in your implement agent"*. 리뷰 스킬은 diff + 저장소의 coding standards 파일을 **서브에이전트**에서 검사 — *"review is actually underloaded"* | 11:34~13:18 |
+| **전역 지시에 넣지 않는다** | AGENTS.md에 두면 *"they sort of drown out your implement. It may read them, it may not."* | 14:07~14:14 |
+| ⭐ **외주하지 않는다** | 범용 리뷰어는 너무 일반적이면 오탐, 너무 구체적이면 다른 스택에서 못 쓴다 → *"don't outsource automated review. Build your own. Build up your own coding standards over time."* | 14:47~15:09 |
+| ⭐ **댓글이 아니라 커밋** | 댓글은 *"providing more work for the human reviewer"* → *"The reviewer should commit. It should make fixes."* 질문이 있을 때만 댓글 | 15:33~16:00 |
+| **구현=작동, 리뷰=좋게** | *"implement, you make it work, and then code review, you actually make it good"* — red-green-refactor를 두 컨텍스트 창으로 | 13:38~13:58 |
+
+> ⚠️ **Contradiction: 벤더 리뷰어.** 이 페이지의 현장 표(Copilot 6천만, CodeRabbit 1,300만, Cursor)는 자동 리뷰의 기본값이 **벤더 제품**임을 보여 주는데, Pocock은 Cursor Bugbot·CodeRabbit을 쓰는 팀에 *"don't outsource"* 라 한다. 근거(오탐 vs 범용성)는 Cursor 1세대가 꼽은 문제와 같다 — **문제 인식은 같고 처방(벤더의 다중 패스 vs 팀 고유 표준)이 갈린다.** 커밋하는 리뷰어는 Cursor의 *리뷰 + 수정 융합* 과 같은 결론이다.
+
+> ⚠️ 리뷰어의 커밋을 **누가 리뷰하나**(Voss의 *"who reviews the reviewer"*)는 Pocock 편에서 다뤄지지 않는다. 측정 없음, 화자 자신의 스킬.
+
+## 개인 규모 — 좁은 리뷰 스킬 셋을 서브에이전트로 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+위 표가 벤더 규모라면 [[joel-quenneville|Joël Quenneville]]은 **한 개발자의 하네스** 규모다. 원칙은 **좁게** — *"Don't just try to dump a bunch of like random programming wisdom into a skill file. Instead, focus it on a particular theory of what good code is."*(17:15~17:24). 그의 스킬 셋은 자기 PR 리뷰 순서다: **구조**(해법이 문제에 맞나) → **메서드 단위** → **폴리시**(가독성·문서화)(17:27~17:47). 손으로 부르면 [[human-plumbing]]이므로 서브에이전트로 — *"That helps with bias"*(18:08~18:13), 다섯 줄짜리 스킬이 차례로 호출(*"This is not real orchestration"* 18:20).
+
+왜 같은 휴리스틱을 AGENTS.md가 아니라 리뷰에 두나 — *"apply them backwards to a concrete program I've already generated. It's much easier to find violations in a program I've written now than for all possible programs I could generate in the future."*(20:00~20:12) → [[feedforward-feedback-steering]]의 feedback·inferential 칸. ⚠️ 측정 없음 — 리뷰 스킬이 무엇을 얼마나 잡았는지 수치가 없다.
+
 ## ⚠️ 유보
 
 - **모든 수치가 벤더 발표 또는 화자의 2차 인용**이다(Copilot 6천만, CodeRabbit 1,300만, Cursor 52→70%, 베이징대 44%, 88% vs 35%).
@@ -72,3 +94,5 @@ Cursor는 이를 **resolution rate**라 부르고 52% → 70%+로 올렸다(14:1
 
 - [[tech-bridge-death-of-code-review]] · [[laurie-voss]]
 - 관련: [[mergeability-gap]] · [[verification-bottleneck]] · [[generator-evaluator-pattern]] · [[risk-proportional-human-review]] · [[prompt-injection]] · [[cursor]] · [[codex]] · [[code-knowledge-graph]]
+- [[tech-bridge-pocock-pr-bottleneck]] — 한 사람이 지은 리뷰 하네스 (Matt Pocock)
+- [[tech-bridge-rails-harness-engineering]] — 좁은 리뷰 스킬 셋 (Joël Quenneville)

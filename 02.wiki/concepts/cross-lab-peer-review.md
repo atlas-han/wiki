@@ -6,9 +6,9 @@ tags: [ai-safety, evaluation, governance, regulation, china, peer-review, produc
 aliases: [AI 피어 리뷰, 경쟁사가 숙제를 채점한다, 상호 테스트 하네스, cross-lab testing]
 related: [embedded-external-evaluators, regulatory-capture, default-legal-regulation, slowdown-within-lead-margin, race-to-the-top, ai-arms-limitation-lens, generator-evaluator-pattern, skill-evals, agentic-misbehavior, balance-of-power-safety, existing-law-first]
 first-seen: tech-bridge-musk-shotwell-cross-lab-peer-review
-sources: [tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-23
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # 랩 간 출시 전 상호 검증
@@ -113,3 +113,21 @@ updated: 2026-09-25
 | 랩에 대한 관찰 | *"연구소라는 용어가 재밌다 — 실제로는 영리 기업"* | *"실험실이라고 부르는 것만으로도 많은 것을 알 수 있다"* — **연구소 → 제품 회사** |
 
 **두 판매자가 같은 결론(새 규제 없이 제조물 책임으로)에 다른 길로 온다.** 차이는 이 패턴의 핵심인 **사전 검사**다 — Musk 안에서 경쟁사의 공개 경고는 사고 후 *"과실의 명백한 증거"* 가 되어 **책임법이 작동할 증거를 미리 만든다.** Huang 안에는 그 장치가 없고, 대신 **랩 내부의 엔지니어링 규율**(샌드박스·격리·평가 중 모니터링)과 **사고 공개**를 기대한다. ⚠️ 이 위키가 겹쳐 읽은 것이다.
+
+## 제안에서 "서명"으로 — SI 안전 공동 선언 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+09-23 이 페이지의 유보 첫 줄은 *"참여 의사 미확인"* 이었다. 백악관 패널(2026년, 10-03 이전 녹화)에서 같은 어휘가 **서명된 문서**로 말해진다.
+
+> *"We we signed a joint declaration uh regarding SI safety. (…) we agreed to to a number of things that uh include joint monitoring um board special committees and uh just generally uh grading each other's homework which is a lot better than if people just grade their own homework uh for obvious reasons"* (24:31~24:57 — ⚠️ 화자 귀속 추정: [[elon-musk|Musk]])
+
+> *"rigorous internal controls (…) very clearly documented intentions of the products (…) internal audit (…) external audits um from from a third party and uh um and then industries sharing best practices. I I thought that the the the declaration has has a lot of teeth."* (25:02~25:33 — ⚠️ 귀속 추정: [[jensen-huang|Huang]])
+
+| 구성 요소 (09-23 Musk 제안) | 선언(발화 기준) |
+|---|---|
+| 경쟁사가 출시 전 서로의 모델 시험 | *"grading each other's homework"* — **출시 전인지·무엇을 시험하는지 미발화** |
+| 강제력: 여론 + 제조물 책임 | *"a lot of teeth"* — **무엇인지 미발화** |
+| — | **새로**: 공동 모니터링, 이사회 특별위원회, 내부 통제·내부 감사, **제3자 외부 감사**, 업계 모범 사례 공유 |
+| 중국의 선두 기업 참여 | 언급 없음 |
+
+- ⭐ **[[embedded-external-evaluators|Amodei의 중립 검사관]]과의 대비가 흐려진다** — 선언에는 *경쟁사 채점*과 *제3자 외부 감사*가 **함께** 들어 있다(발화 기준).
+- ⚠️ **서명자 목록·문서 제목·조항은 발화되지 않았고 이 위키는 선언문을 보지 않았다.** *"published by the White House soon if it hasn't been already"*(24:39~24:42). ko는 이를 "백악관의 분위기는 곧 좋아질 것"으로, 주재자 *POTUS* 를 "포데스타"로 옮겼다(`en`도 *Podesta*).

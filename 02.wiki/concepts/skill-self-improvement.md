@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-05
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # Skill Self-Improvement
@@ -119,3 +119,23 @@ updated: 2026-10-03
 [[zach-lloyd|Zach Lloyd]]([[warp|Warp]])가 [[software-factory]]의 표준 루프로 든 **skill loop**: *"you're going to have your factory agents that are running skills, and then you'll have observer agents that are seeing how those skills are being applied, looking for issues and trying to improve the skills."*(14:06~14:17) 예 — 코드 리뷰 에이전트의 코멘트를 **시니어 엔지니어가 고치면**, *"you'd want an observer agent that would look at that and basically uh improve the code review agent for the next run."*(14:17~14:33)
 
 구조는 이 페이지의 task-observer와 같지만 **신호가 다르다** — 에이전트 자신의 실패가 아니라 **사람이 결과물을 교정한 흔적**(diff)이 학습 재료다. 사람의 교정은 이미 일어난 리뷰의 부산물이라 **추가 라벨링 비용이 없다.** 공장에는 이것을 담을 **data plane**(*"lets agents remember what they've done, learn, um improve over time"* 13:01~13:11)이 있어야 한다고 한다. ⚠️ **승격 게이트를 말하지 않는다** — observer가 고친 스킬을 누가 검토하는지, 시니어 한 명의 취향이 영구 규칙이 되는 오염(이 페이지의 핵심 우려)을 어떻게 막는지 없다. 측정·사례도 없다.
+
+## 여섯 번째 경로 — 사람의 리뷰를 회고하는 retro 스킬 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]의 **retro**(retrospective) 스킬은 에이전트 세션 하나, PR + 세션, 또는 *"all of the PRs that we've done over the last week, all of the reviews"*(20:45~20:51)를 회고해 다음을 **제안**한다: 자동 검사 · coding standards 갱신(20:54~20:59) · **navigation pointers**(에이전트가 정보를 얼마나 쉽게 찾았나, AGENTS.md에 포인터를 둘 수 있나 21:21~21:29) · **tool economy**(더 토큰 효율적인 도구 21:31~21:38) · **bloat**(비대한 steering 파일·스킬 21:43~21:51).
+
+| | 원천 | 반영 |
+|---|---|---|
+| task-observer (09-05) | 작업 중 실패 | 사람 검토 후 |
+| observer 에이전트 (Warp, 10-03) | 사람의 교정 | — |
+| **retro (이 소스)** | **사람의 코드 리뷰** | **제안** — 반영 절차는 발화되지 않음 |
+
+목표는 복리 — *"by doing human review you're making the quality of the next human review higher"*(21:04~21:08). ⚠️ 화자 진술, *"It's amazing how many things this catches"*(21:38~21:40)에 측정 없음. retro가 v1.3에 포함되는지 미발화.
+
+## 여섯 번째 경로의 두 번째 사례 — 세션 뒤 retro 스킬, 대상은 하네스 전체 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]의 **retro 스킬**은 긴 세션이 끝난 뒤 사람이 직접 돌린다 — *"it analyzes my history and suggests automations that I can do"*(29:22~29:29). 스킬이 묻는 질문은 사람의 회고 질문을 묶은 것이다: 어디서 개입했나 · 어떤 신호가 빠졌나 · 손으로 복사한 것 · AGENTS.md에서 결정론으로 옮길 것 · 대화가 열화했나, 나눌 수 있었나 · 반복되는 실수(28:47~29:09). 대상이 **스킬 자체**가 아니라 **하네스 전체**(훅·cop·제너레이터·스크립트)라는 점이 앞의 경로들(Pocock의 retro 포함 — Pocock 편은 standards·포인터·도구까지 넓히지만 출발점은 리뷰)과 다르다. 반영은 사람이 고른다(*"suggests"*). Matt Pocock도 *"I think last week"* 같은 이름(*Retro*)의 스킬을 냈다고 한다(29:41~29:49) — 통합 메모: 바로 위 [[tech-bridge-pocock-pr-bottleneck]] 섹션이 그 스킬이다(같은 회차에 들어옴). 트리거 질문은 *"how could this be the last time?"*(28:20~28:26).
+
+## 일곱 번째 경로 — 개선 대상이 워크플로 그래프 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+[[david-khourshid|David Khourshid]]: 상태 머신을 *"a durable artifact"* 로 삼아 트레이스(실제·시뮬레이션 사용자, 도그푸딩)와 단계별·전체 eval을 붙여 에이전트에게 *"Please propose some changes to this agent."*(12:44~13:15). 개선안을 내는 쪽은 *"Not the exact same agent, but a different agent"*(16:17~16:23), 검증은 같은 시나리오를 V1·V2에 돌려 비교(16:36~16:46). 앞의 경로들이 **스킬 텍스트**를 고친다면 이 경로는 **상태·전이 그래프**를 고친다 — diff가 *"화살표"* 단위로 읽힌다(*"you cannot draw arrows in paragraphs"* 11:39~11:42). ⚠️ V1→V2는 1회 시연·체감, Stately 내부 적용 결과 미공개. → [[agent-state-machine]]

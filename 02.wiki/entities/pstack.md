@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # Pstack
@@ -110,3 +110,9 @@ updated: 2026-09-26
 ## 녹화 발표에서의 자리 — "품질"의 몫 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
 
 [[lauren-tan]]은 이번엔 Pstack을 *"오늘은 많이 이야기하지 않겠다"*(13:22~13:26)며 한 문단으로만 다룬다. 대신 **자리를 정한다** — 검증 스킬이 **정확성**을 준다면, Pstack 같은 **플레이북·스킬 모음**(디버깅·기능 개발·프로토타이핑)이 **품질**을 맡고, 둘을 결합해야 *"정확할 뿐 아니라 품질도 높다"* 를 확인할 수 있다(13:11~14:30). *"팀의 더 경험 많은 엔지니어가 팀 스킬 저장소로 기여"* 할 자리라고도 한다. ⚠️ en-orig는 이름을 *"PAC"*·*"PSA"* 로 적고 ko가 *Pstack* 으로 맞게 적었다.
+
+## 저장소 위치, 그리고 "설치만으로는 안 된다" (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+- **저장소** — 해설 영상 설명란이 **`https://github.com/cursor/plugins/tree/main/pstack`** 를 *"pstack 공식 저장소"* 로 건다. 이 페이지에 처음 기록되는 위치다(⚠️ 이 위키는 열어 보지 않았다 — Cursor 플러그인 저장소 하위 디렉터리라는 것만 URL에서 읽힌다).
+- **제작자 본인의 유보** — *"I don't want to sell this as, like you know, something that you can just do easily by using PAC[=Pstack]. Like, it takes a lot of time and effort to think about your code and where you see your agents failing"*(10:15~10:29). 해설도 *"설치만으로 내 프로젝트의 검증 환경까지 생기지는 않습니다"*(ko 06:09~06:14). 위 *"화자 본인의 유보"* 절과 같은 방향이고, 09-25 발표에서 빠졌던 유보가 대담에서는 남아 있다.
+- ASR: en-orig·ko 모두 *"PAC"*(09-25 raw와 같은 오인식), 내레이션 *"P스텍"*.

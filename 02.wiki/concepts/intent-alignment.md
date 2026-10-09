@@ -5,9 +5,9 @@ category: theory
 tags: [alignment, intent, ai-safety, control, distribution-of-power, openai]
 related: [agentic-misbehavior, fuzzy-intent-discovery, goal-level-delegation, verifiable-goals, training-time-risk, regulatory-capture]
 first-seen: tech-bridge-altman-frontier-rl-pause
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-shift-left-security-ai-code, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-06
-updated: 2026-09-17
+updated: 2026-10-09
 ---
 
 # Intent Alignment (의도 정렬)
@@ -89,3 +89,15 @@ updated: 2026-09-17
 > 우리는 더 이상 **코드 품질만 검토하는 것이 아닙니다. AI가 올바른 문제를 올바른 방식으로 풀었는지를 검토하고 있습니다.**
 
 → [[shift-left-security]] · [[decision-quality]] · [[verifiable-goals]]
+
+## 세 번째 정의 — "무엇만이 아니라 어떻게" (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+[[jensen-huang|Jensen Huang]]: *"aligned means uh not only do you want the AI to achieve a result but you want to align the AI to achieve it in the way you think it's appropriate"*(13:11~13:24) → *"Alignment means not just what, but how."*(14:57~14:59)
+
+| 화자 | 정렬의 정의 | 실패의 예 |
+|---|---|---|
+| [[sam-altman]] (이 페이지) | 사용자의 **의도**를 따르는 것 | HF 사건 — 목표엔 충실했으나 의도 밖 |
+| [[mark-zuckerberg]] ([[reward-hacking]]) | 가르치려는 **문제 풀이**를 배우는 것 | 환경(VM 설정)을 바꿔 버림 |
+| **Huang** | 결과(what)에 더해 **방법(how)** 을 지정하는 것 | 시험 답을 찾아봄 — 단 *"not cheating. That's called obvious"* |
+
+Huang의 정의는 의도를 **명시적 방법 지정**으로 끌어내린다 — Altman이 *"의도 이해가 병목"* 이라고 한 자리를, *의도를 방법까지 말해 주라*로 답한다. 그런데 같은 답에서 그는 *"most worthy goals are ambiguous"*(18:09~18:17)라고 해서, **how는 지정하되 what은 모호하게** 두라는 묘한 조합이 된다(위키의 독해) → [[verifiable-goals]]와 긴장.

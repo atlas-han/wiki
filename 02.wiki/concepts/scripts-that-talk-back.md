@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [agent-skills, harness, instruction-following, scripts, prompt-caching, weakest-model]
 aliases: [scripts that talk back, 스크립트 stdout 지시, stdout steering, 말을 되돌려주는 스크립트]
-related: [agent-skills, hook-enforced-workflow, cross-harness-skill-compilation, hard-vs-soft-enforcement, anti-attractor, harness-engineering]
+related: [agent-skills, hook-enforced-workflow, cross-harness-skill-compilation, hard-vs-soft-enforcement, anti-attractor, harness-engineering, domain-specific-scripts]
 first-seen: tech-bridge-skill-engineering-dark-arts
-sources: [tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-09
 ---
 
 # Scripts that talk back
@@ -53,6 +53,10 @@ Q&A에서 보충: 결과가 매번 다르면 *"a dynamic shell execution"* 이�
 - **[[hook-enforced-workflow]]와의 차이** — 훅은 하네스가 부르고, 이 스크립트는 **스킬이 부른다**(모델이 스킬을 불러야 동작). 그래서 화자는 기법 6에서 *"the harnesses forget to simply call impeccable"*(30:02~30:06)을 따로 훅으로 푼다.
 - **progressive disclosure의 동적 판** — [[agent-skills]]의 *필요할 때 파일을 로드* 가 정적 파일이 아니라 **실행 결과**로 바뀐다.
 - [[cross-harness-skill-compilation]] — 가장 약한 모델을 기준으로 삼는 이유가 이 기법의 출발점이다.
+
+## 이웃 — 절차가 아니라 어휘를 돌려주는 스크립트 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]의 [[domain-specific-scripts|도메인 전용 스크립트]]도 스크립트 출력으로 에이전트를 조향한다. 차이는 내용 — 이 페이지의 stdout은 *"다음에 정확히 이것을 하라"*(절차), Quenneville의 스크립트는 문서 모집단을 파이프라인 단계별로 **분류**해 안정된 정의와 *"a richer set of primitives for thinking"*(26:09~26:12)을 준다(개념). 둘 다 **산문 규칙을 실행되는 코드로 바꾼다**는 점에서 같은 계열이다.
 
 ## ⚠️ 표시해 둔 것
 

@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [system-1-model, classifier, typed-output, structured-decisions, agent-harness, model-routing, guardrails, llm-as-judge, latency, cost]
 aliases: [System 1 model, 시스템 1 모델, typed decision model, 분류형 결정 모델]
-related: [jev, typesafe-ai, agent-harness-design, harness-engineering, model-mixing-economics, transcript-classifier, generator-evaluator-pattern, slop-probes, post-training-northstars, privacy-auto-mode]
+related: [jev, typesafe-ai, agent-harness-design, harness-engineering, model-mixing-economics, transcript-classifier, generator-evaluator-pattern, slop-probes, post-training-northstars, privacy-auto-mode, model-calibration, risk-proportional-human-review, prompt-injection, agent-state-machine, inference-speed-as-capability]
 first-seen: tech-bridge-jev-agent-harness
-sources: [tech-bridge-jev-agent-harness]
+sources: [tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-altman-devday-dots, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # System 1 모델
@@ -56,16 +56,43 @@ updated: 2026-09-26
 
 이 위키가 안전 분류기를 다룬 자리([[transcript-classifier]])는 FPR/FNR만 봤다. 여기서 **지연이 채택률을 결정한다**는 축이 추가된다 — 느린 게이트는 정확해도 **꺼진다.** 09-19 [[model-mixing-economics]]의 *기준이 지연일 때*(음성 에이전트)와 같은 방향의 관찰이다.
 
+## 프론티어 랩의 응답 — 같은 것을 만들지 않는다 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+[[openai|OpenAI]] DevDay 2026에서 Decisions API가 나왔고, 진행자는 그것을 [[jev|Jev]]와 같은 계열로 소개했다. [[sam-altman|Altman]]의 답은 **System 1 모델을 따로 만들지 않고, 주력 모델의 비용·속도를 밀겠다**는 것이다:
+
+> *"we want to make the best cheapest fastest most capable model at every point on the paro[=Pareto] curve of cost and speed and modality but I think there will be new approaches new architectures new technologies that are things we just can't cover all of but for the the kind of mainline workhorse like we will try to deliver that."* (20:31~20:48)
+
+이 페이지의 *"지연이 게이트를 끄게 만든다"* 문제에 대한 **두 가지 답이 갈렸다** — ① 전용 분류형 모델(TypeSafe) ② 범용 모델의 가장 싸고 빠른 등급(OpenAI). Altman도 Luna(⚠️ 미판독 모델명)의 1순위 요청이 *"even cheaper and even faster"* 였다고 한다(19:27~19:30). → [[inference-speed-as-capability]]
+
+⚠️ **Decisions API가 타입 출력·확률을 돌려주는지, 별도 모델인지 소스는 말하지 않는다.** 이 위키는 Decisions API를 System 1 모델로 분류하지 않는다.
+
+## 네 번째 자리 — 상태 머신의 다음 이벤트 선택자 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+라우팅·auto mode·judge에 이어, [[david-khourshid|David Khourshid]]의 에스프레소 데모는 System 1 모델을 **결정론적 그래프 안의 선택자**로 쓴다 — 상태 머신과 허용 이벤트 전부를 [[jev|Jev]]에 주고, 다음 이벤트를 확률과 함께 고르게 한다(18:54~19:57). *choice* 질문의 선택지가 **현재 상태에서 나가는 전이 목록**과 같아지므로, 모델이 무엇을 골라도 그래프 밖으로는 못 나간다. ⚠️ 1회 시연. → [[agent-state-machine]]
+
 ## ⚠️ 유보
 
 - **정확도가 비어 있다.** 소스는 속도·비용만 비교하고 **분류 품질을 LLM과 비교하지 않는다**(judge 쪽의 *"더 신뢰할 수 있고 일관적"* 은 블로그의 구두 전언). 안전 게이트에서 속도를 얻고 **놓친 위험(FNR)** 이 늘었는지 알 수 없다.
-- **확률의 의미.** *"확률을 반환한다"* 는데 그것이 **보정(calibrated)** 되어 있는지는 주장되지 않았다 — 게이트 임계값을 정하려면 필수인 정보다. → [[decision-quality]]
+- **확률의 의미.** *"확률을 반환한다"* 는데 그것이 **보정(calibrated)** 되어 있는지는 주장되지 않았다 — 게이트 임계값을 정하려면 필수인 정보다. → [[decision-quality]] → **2026-10-09**: [[tech-bridge-jev-calibrated-decisions]]이 *"Because the numbers are calibrated"*(12:05)라고 **주장**한다(RLCD로 학습). ⚠️ 실측 없음, TypeSafe 자료의 재진술 → [[model-calibration]]
 - **수치.** *"20~200배 빠르고 40~400배 저렴"*(02:22~02:34)의 기준 LLM·작업·하드웨어가 없다.
 - **LLM은 순차적이라는 대조**(05:28~05:32)는 벤더의 성격 규정이다. LLM도 한 호출에서 여러 필드를 구조화된 출력으로 채울 수 있다 — 차이는 **생성 비용**이지 병렬 가능성이 아닐 수 있다(⚠️ 위키의 추정).
 - **텍스트 없는 답의 감사 가능성.** 게이트가 *왜* 막았는지 설명이 남지 않는다. [[transcript-classifier]]의 2단계 CoT와 대조되지만 소스는 이를 다루지 않는다.
+
+## 두 번째 소스 — 임계값 3분기, 그리고 System 1 ↔ System 2 워크플로 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]])
+
+[[ibm|IBM]] 계열 해설이 LangChain 편에 없던 세 가지를 더한다.
+
+1. **확률을 코드 분기로** — 지원 이메일이 환불 요청일 확률 **> 0.9 → 자동 환불 큐 · 0.1~0.9 → 사람 호출 · < 0.1 → 무시**(10:45~12:05, 값은 예시). *"So the more a mistake is going to cost, the higher we would set the threshold."*(12:18~12:20) → [[model-calibration]] · [[risk-proportional-human-review]]
+2. **System 1 → System 2 → System 1** — Jev가 분류하고, LLM이 답장을 쓰고(*"the slower work"*), Jev가 고객 답신을 다시 분류한다(13:08~13:39). *"is it time to throw away large language models (…)? No, hardly."*(12:54~13:02) — LangChain 편의 *"drop-in 대체가 아니다"* 와 같은 결론. → [[model-mixing-economics]]
+3. **게이트의 한계** — 안전 게이트(탈옥 감지, 12:25~12:41)로 쓰이는 Jev 자신도 *"can be tricked by instructions hidden in the data it's reading"*(12:52~12:54). 텍스트 입력만, 수학·숫자 세기에 약하다(12:41~12:48). → [[prompt-injection]]
+
+⚠️ **"System 1 모델" 범주에 Jev 외의 사례가 있다는 근거는 여전히 없다** — 두 소스 모두 Jev 하나다. 두 소스의 예시 골격이 같아(지원 티켓·팀·긴급도) **TypeSafe 문서에서 나온 같은 그림**일 가능성이 있다.
 
 ## References
 
 - [[tech-bridge-jev-agent-harness]] — first-seen
 - [[jev]] · [[typesafe-ai]] · [[langchain]]
 - 관련: [[agent-harness-design]] · [[harness-engineering]] · [[model-mixing-economics]] · [[transcript-classifier]] · [[generator-evaluator-pattern]] · [[slop-probes]] · [[post-training-northstars]] · [[decision-quality]]
+- [[tech-bridge-jev-calibrated-decisions]] — 두 번째 소스 (IBM 계열: RLCD · 임계값 · 워크플로 · 한계) · [[model-calibration]]
+- [[tech-bridge-altman-devday-dots]] — 프론티어 랩의 응답(Decisions API, Altman) · [[inference-speed-as-capability]]
+- [[tech-bridge-goodbye-slop-state-machines]] — 상태 머신의 다음 이벤트 선택자 · [[agent-state-machine]]

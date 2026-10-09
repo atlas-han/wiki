@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [agents, workflow, loop, tool-use, definition]
 aliases: [워크플로와 에이전트의 구분, 에이전트 루프, 동적 결정]
-related: [dynamic-workflows, agent-harness-design, three-tier-ai-skill-stack, ai-engineer-vs-ml-researcher, agent-distributed-systems, ralph-wiggum-method]
+related: [dynamic-workflows, agent-harness-design, three-tier-ai-skill-stack, ai-engineer-vs-ml-researcher, agent-distributed-systems, ralph-wiggum-method, deterministic-agent-pipeline, agent-state-machine]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-llamaindex-document-context-layer]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-llamaindex-document-context-layer, tech-bridge-uber-debug-assist, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-16
-updated: 2026-09-29
+updated: 2026-10-09
 ---
 
 # 워크플로 vs 에이전트
@@ -59,8 +59,18 @@ updated: 2026-09-29
 
 [[jerry-liu|Jerry Liu]]([[llamaindex|LlamaIndex]], [[tech-bridge-llamaindex-document-context-layer]])는 에이전트 루프가 검색을 흡수했다고 말하는 같은 발표에서 **반복 가능한 문서 처리는 워크플로로 남긴다** — *"If there is a repeatable workflow, like invoice processing, KYC, or claims, instead of always offloading it to a generalized agent, how do you actually develop some sort of specialized workflow for it and really carefully tune cost and accuracy"*(07:31~07:45). 기준은 **반복성 + 비용·정확도 조율 필요**다. ⚠️ ko는 이 문장을 *"불만을 제기할 때는 항상 다른 사람에게 맡기지 말고 직접 처리하세요"* 로 옮겨 요점이 사라졌다.
 
+## 하이브리드의 운영 사례 — 계획을 고정한 그래프 안의 에이전트 (2026-10-09 · [[tech-bridge-uber-debug-assist]])
+
+위 ⚠️ 유보의 *"하이브리드(워크플로 안의 에이전트)를 다루지 않는다"* 에 [[uber|Uber]] [[debug-assist|Debug Assist]]가 실제 운영 사례를 준다. LangGraph 그래프로 단계를 고정하고(*"We control the plan."* 09:28~09:29), 데이터 수집은 결정론 노드, 분류·RCA·수정은 턴 예산이 걸린 LLM 노드와 병렬 서브에이전트에 맡긴다. 고정의 이유는 **환각 감소**(*"it removes certain levels of hallucination from the agent"* 09:17~09:22) — Vercel이 체인을 버린 이유(단계 경계의 컨텍스트 손실)와 정반대 쪽에서 같은 축을 건넌다. Uber는 노드 간 상태 전달로 손실을 막는다고 한다(12:58~13:03). ⚠️ 두 소스 모두 비교 측정 없음. → [[deterministic-agent-pipeline]]
+
+## "Loops are graphs" — 축이 시간으로 옮겨 간다 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+> ⚠️ **Contradiction:** [[david-khourshid|David Khourshid]]는 *"You saw everyone talking about loops, and now people are talking about graphs. They're the same picture. They're the same thing, actually. Loops are graphs."*(02:43~02:52)라며 이 페이지의 이분법을 받아들이지 않는다. 그의 설계에선 **런타임에는 경로가 상태 머신으로 고정**(워크플로)되고, **버전 사이에는 다른 에이전트가 트레이스를 보고 경로를 바꾼다**(V1 → V2, 13:47~14:28). 이 위키의 독해: 구분축이 *"누가 경로를 정하는가"* 에서 *"언제 경로가 바뀌는가"* 로 옮겨 간다. 화자 자신은 이 구분을 말하지 않는다. → [[agent-state-machine]]
+
 ## References
 
 - [[tech-bridge-ai-engineer-three-tier-skill-stack]] — first-seen
 - [[cedric-clyburn]] · [[ibm]]
-- 관련: [[dynamic-workflows]] · [[agent-harness-design]] · [[ralph-wiggum-method]] · [[three-tier-ai-skill-stack]]
+- 관련: [[dynamic-workflows]] · [[agent-harness-design]] · [[ralph-wiggum-method]] · [[three-tier-ai-skill-stack]] · [[deterministic-agent-pipeline]] · [[agent-state-machine]]
+- [[tech-bridge-uber-debug-assist]] — 하이브리드 운영 사례(Uber Debug Assist)
+- [[tech-bridge-goodbye-slop-state-machines]] — "Loops are graphs"(David Khourshid)

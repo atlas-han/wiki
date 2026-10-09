@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [ai-slop, coding-agents, code-quality, failure-mode]
 aliases: [slop cannon, 슬롭 대포]
-related: [ai-slop, organic-architecture, architecture-as-remaining-art, verification-bottleneck, code-is-the-product]
+related: [ai-slop, organic-architecture, architecture-as-remaining-art, verification-bottleneck, code-is-the-product, software-factory, automated-code-review]
 first-seen: tech-bridge-ambitious-software-agent-era
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-pocock-pr-bottleneck]
 created: 2026-09-14
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 슬롭 캐논
@@ -62,3 +62,9 @@ updated: 2026-10-02
 [[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]: *"We we've had to rewrite our whole app like a couple of times because we weren't careful about slot[=slop] free zones."*(05:42~05:48) Dioxus의 실패형이 **정체**(draft에 쌓임)였다면 이쪽은 **재작성** — 머지는 됐고 코드베이스가 *"a really tricky spot"*(05:39~05:42)에 빠졌다. 처방은 생산을 줄이는 게 아니라 **엄격 구역을 정하는 것**이다 → [[slop-free-zone]]. 화자는 *"a lot of people assume that we are pure token maxers and we are like ripping through like 30,000 line PRs, but we're actually not"*(05:18~05:27)로 시작한다 — 슬롭 캐논이라는 **평판**을 먼저 부정한다.
 
 > ⚠️ 몇 번·언제·무엇이 문제였는지(재작성의 규모)는 없다. 일화.
+
+## 구조적 정의 — 브레이크 없는 팩토리 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]은 이 이름을 **고백이 아니라 구조**로 쓴다 — *"If you just have permanent acceleration pushing stuff through your factory, you're going to end up with a slop cannon, right? You're just going to end up with a ton of slop crappy PRs that you're not going to be able to touch or review or even freaking look at."*(02:18~02:32) Dioxus(draft에 쌓임)·Conductor(재작성)가 **결과**였다면, 이쪽은 **원인**([[software-factory]]의 가속기만 있고 브레이크가 없음)과 **처방**(자동 검사 → 자동 리뷰 → 사람 리뷰)을 붙인다. 근거 문장: *"code is the environment your agent operates in. And if you have bad code in your codebase, that is going to beget more bad code."*(02:42~02:51) → [[codebase-gardening]]
+
+> ⚠️ 설명란은 *"쓰레기 대포"*, ko 자막은 *"대포를 얻게 될 겁니다. 쓰레기잖아"*(02:22~02:24)로 이름이 쪼개졌다.

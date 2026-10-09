@@ -5,9 +5,9 @@ category: theory
 tags: [indexing, context-engineering, documentation, limits]
 related: [file-discovery-tax, code-knowledge-graph, llm-coding-guidelines, agent-memory, context-engineering]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sourcegraph-codebase-visibility]
 created: 2026-09-15
-updated: 2026-09-21
+updated: 2026-10-09
 ---
 
 # Code-Only Index Blind Spot
@@ -47,3 +47,11 @@ updated: 2026-09-21
 ## References
 
 - [[tech-bridge-graft-code-knowledge-graph]] · [[graft]] · [[file-discovery-tax]]
+
+## ⚠️ 반대편 — "AGENTS.md는 거의 효과가 없다" (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+> *"The repo architecture that you're plugging into your agents.mmd[=AGENTS.md] files, like let's be real, that's barely moving the needle here."* (07:15~07:22)
+
+[[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]])는 이 페이지와 **정반대 방향**에서 같은 경계선을 긋는다 — 이 페이지는 *코드 인덱스만으로는 산문 맥락이 빠진다*, Adler는 *산문 맥락 파일로는 코드를 못 본다.*
+
+> ⚠️ **Contradiction: 산문 맥락 파일의 효과.** [[llm-coding-guidelines]]·[[intent-md]] 쪽 소스들은 그런 파일이 행동을 바꾼다고 하고, Adler는 *"barely moving the needle"* 이라 한다. Adler의 말은 **측정 없는 단언**이고, 화자는 코드 인덱스를 파는 회사다. 위키의 독해: 둘이 겨냥하는 규모가 다르다 — 한 저장소의 *아키텍처 설명*은 수만 저장소 사이의 *어디에 무엇이 있는가*를 대신할 수 없다. 이 페이지의 표 *"셋을 하나로 잇는 소스는 아직 없다"* 는 그대로다.

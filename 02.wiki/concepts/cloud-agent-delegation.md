@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-09-09
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 클라우드 에이전트 위임
@@ -89,3 +89,9 @@ updated: 2026-10-02
 이 페이지에 **제품 이력으로서의 증언**이 처음 붙는다: *"Up until basically this week, every uh every task in conductor was built on a git work tree, but now they're in a cloud sandbox."*(10:06~10:12) — 로컬 병렬(worktree)에서 원격 샌드박스로의 이동. 샌드박스 위에 얹은 것은 **실시간 협업**(→ [[multiplayer-agent-context]])과 **에이전트가 스스로를 띄우는 API**(개인 [[openclaw|OpenClaw]]가 Telegram·Slack 메시지로 워크스페이스 생성, 12:58~13:53).
 
 > ⚠️ 샌드박스의 인프라·격리 수준·비용은 발화되지 않는다. 자사 신제품 데모(*"coming out this week"* 09:36~09:39)다.
+
+## Teleport와 Studio — 개인 원격에서 팀 칸반으로 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[kimchi|Kimchi]]([[cast-ai|Cast AI]]) **Teleport**: 로컬 환경을 Google의 Kubernetes 컨테이너와 동기화해 *"It feels exactly the same. It just doesn't run inside your laptop"*(13:23~13:32), 노트북을 닫아도 계속. SaaS 또는 온프레미스(11:47~11:56). 전제는 Ferment의 *"사람은 두세 시간마다"*(08:04~08:11) — *"it will keep on running until the task is done or until the human in the loop needs to be involved"*(12:25~12:31). ⚠️ *"62% of our engineers are only using teleports when they are coding now"*(13:53~13:57) — 자사 수치, 측정 방법 미발화.
+
+새로운 것은 **팀 층**이다. **Studio**는 *"a teleport for teams"*(14:17~14:23) — 터미널·CLI 세션은 공유할 수 없으니 *"first he has to live somewhere else"*(15:34~15:36), 그 위에 **검토 요청 세션을 동료가 넘겨받는 칸반**(15:45~16:38). 목적은 계획 단계에서 동료·PM이 스펙을 잡는 것(15:02~15:10). → [[plan-to-ticket-pipeline]] · [[tech-bridge-conductor-orchestras-not-factories|Conductor의 클라우드 샌드박스·실시간 협업]]과 같은 방향.

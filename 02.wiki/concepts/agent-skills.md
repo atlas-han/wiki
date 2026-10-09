@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist]
 created: 2026-08-31
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Agent Skills
@@ -318,3 +318,11 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 ## 2026-10-01 — 스킬의 병목은 "누가 스킬을 정하나" ([[tech-bridge-anthropic-dreaming-memory]])
 
 [[anthropic|Anthropic]] 응용 AI 팀의 [[lamis-mukta|Lamis Mukta]]는 스킬을 컨텍스트 엔지니어링 1년의 세 번째 정거장으로 놓는다. 잘하는 곳: *"processes where you have like a procedural workflow"*(05:48~05:50). progressive disclosure는 **책장 비유** — 누가 프랑스어로 말을 걸면 프랑스어 사전을 꺼내 읽으면 되지, 7년치 프랑스어 수업을 미리 머리에 넣어 둘 필요가 없다(06:18~06:48). 병목: *"it's still kind of driven by humans and agents together (…) you're still being quite opinionated about like what things need skills"*(06:57~07:07) — 그래서 다음 단계가 **에이전트가 자율로 쓰는 파일 시스템 메모리**와 세션 밖의 [[agent-dreaming|dreaming]]이다. [[skill-self-improvement]]·[[query-to-skill-distillation]]이 *스킬 생성의 자동화*로 같은 병목을 푸는 것과 달리, 이 발표는 **스킬이 아니라 메모리 쪽으로** 우회한다. ⚠️ ko는 *progressive disclosure* 를 **"점진적 확산"**(07:48), *bottleneck* 을 **"목 … 병"**(06:53~06:56)으로 옮겼다.
+
+## 2026-10-09 — 스킬을 어느 에이전트에 줄 것인가 ([[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]의 스킬 저장소(AIhero.dev/skills, *"I'll be shipping version 1.3 this week"* 22:19~22:21)는 **PR 생애주기를 스킬로 나눈다** — 코드베이스 설계(deep module 기회를 HTML로) · 코드 리뷰(diff + coding standards, 서브에이전트) · PR(merge danger · 다이어그램, *"in progress"*) · retro(리뷰에서 검사·표준 갱신 제안). 새 지점은 **배치**: 코딩 표준은 전역(AGENTS.md)에 두면 구현 에이전트의 창에서 *"drown out"* 되니(14:07~14:11) **리뷰 서브에이전트만 읽는 파일**에 둔다. progressive disclosure를 *언제 읽느냐* 가 아니라 *누가 읽느냐* 로 적용한 것. Dex의 *show me* 스킬(*"the human layer skills repo"* 18:53~18:58)을 빌려 온다고 밝히는 것도 [[agent-skills]]의 공유·유통 사례. ⚠️ 측정 없음, 화자 자신의 제품.
+
+## 2026-10-09 — 골격은 고정, 스킬은 런타임에: 프로덕션 에이전트에서의 스킬 ([[tech-bridge-uber-debug-assist]])
+
+[[uber|Uber]] [[debug-assist|Debug Assist]]는 스킬을 **에이전트 골격과 분리된 비즈니스 로직**으로 다룬다. *"this is the basic skeleton of the agent. It never changes. What changes is the skills and plugins."*(14:56~15:04) LLM 노드마다 자기 스킬(*"How to create a good PR at Uber"*, 테스트 계획 관행, 안드로이드 수정 관행)이 있고 런타임에 가져온다 — 그래서 새 에이전트는 *"a matter of crowd sourcing the skills"*(15:33~15:37). 사내 마켓플레이스는 플러그인 약 3,000개, 에이전트 타입으로 범위를 자른다(17:09~17:27). Ask AI에서 개발자가 RCA를 교정하면 *"a feedback loop to the agent which helps improve its own prompts and skills"*(18:20~18:27) — ⚠️ 자동 반영인지 사람 승격인지 미발화([[skill-self-improvement]]의 *"승격은 사람이"* 와 대조 불가). 스킬 거버넌스(누가 검토하나)는 말하지 않는다. → [[harness-as-platform]]

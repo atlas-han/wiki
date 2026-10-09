@@ -6,9 +6,9 @@ tags: [tesla, spacex, x, ceo, humanoid-robots, regulation, g20, power-grid]
 links:
   - https://www.tesla.com/
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-07
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # Elon Musk
@@ -80,3 +80,15 @@ CBS 진행자가 *"Dario Amodei, Sam Altman, **Elon Musk** 같은 최고 CEO들�
 **처방의 뼈대(새 규제 없이 책임법으로)는 같고, 위험 진단은 반대다.** ⚠️ 이 위키가 겹쳐 읽은 것이다.
 
 그리고 진행자가 *"All-In 서밋에서 당신이 [트럼프]와 통화하는 것을 들었다"*(23:34~23:37) — 09-23 All-In 편의 *"오늘 아침 젠슨이"*(05:03~05:06)와 **같은 행사일 가능성**이 있으나 확정하지 않는다. → [[all-in-podcast]]
+
+## 백악관 패널 — 전력 1% ≈ GDP 1%, 궤도 컴퓨팅, 서명된 "숙제 채점" (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[jensen-huang|Huang]]·[[tom-brown|Tom Brown]]과의 26:09 패널(설명란상 백악관, 진행자 무명).
+
+- **전력이 장기 과제** — *"China has um about three times the electricity production of the United States"*(03:21~03:26, 출처 없음), 로직·메모리 팹 용량도(03:33~03:47). Shotwell 편의 *"병목이 칩으로"* 와 둘 다 말한다.
+- ⭐ **전력 1% ≈ GDP 1%** — 미국 평균 전력 소비 약 500 GW → 5 GW = 1%(04:14~04:23, 산수 맞음), *"I would bet anyone that 1% increase in power usage corresponds to roughly 1% increase in GDP"*(05:02~05:09) — **내기이지 측정치가 아니다.** 즉석 산수로 GW당 600억 달러(05:32~05:49) — ⚠️ 같은 무대 Huang(추정)의 400~500억과 불일치. → [[power-shortfall]]
+- ⭐ **궤도 컴퓨팅** — *"orbital compute is going to be a very big deal"*(06:23~06:26), SpaceX+Tesla 연 200 GW 태양광 생산, 지상은 1/5~1/8(06:46~07:10), Starship이 연 수백 GW의 AI 컴퓨팅을 발사(17:30~17:34). → [[orbital-compute]]
+- **Starship 첫 궤도 · Starlink V3 배치**(16:08~16:27), 내년 주 1~2회(16:33~16:38). → [[spacex]]
+- **Colossus 지역** — 일자리가 사람보다 많다, 세수 *"might have doubled"*, 2.5억 달러 물 재활용 시설, *"they will reciprocate"*(10:09~10:56). → [[data-center-local-backlash]]
+- **의료 일화** — X-ray·MRI를 AI에 넣어 의사가 틀린 것을 AI가 맞혔다는 *"many anecdotes"*(21:44~22:05). ⚠️ ko는 *"but for AI, they would have died"* 를 **"AI 때문에 죽을 것"** 으로 반전.
+- ⭐ **"서로의 숙제 채점"이 서명된 선언으로** — (귀속 추정) *"We we signed a joint declaration uh regarding SI safety"*, *"joint monitoring um board special committees and uh just generally uh grading each other's homework"*(24:31~24:57). 09-23의 **제안**이 이번엔 **서명**으로 말해진다 — ⚠️ 서명자·조항 미발화, 선언문 미확인. → [[cross-lab-peer-review]]

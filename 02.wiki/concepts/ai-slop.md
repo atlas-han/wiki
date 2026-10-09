@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
-related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering]
+related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-12
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # AI 슬롭
@@ -175,3 +175,10 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 - [[bun|Bun]] 포팅의 마지막 PR(Zig 코드 전부 삭제)을 *"another robot"* 이 *"this is AI slop. You can't possibly delete all of your code"* 로 플래그(16:09~16:22) — **자동 슬롭 탐지기의 오탐** 사례(정당한 대규모 삭제를 슬롭으로 봤다).
 
 두 번째는 [[automated-code-review]]의 *오탐이 리뷰어를 죽인다* 와 같은 자리다.
+
+## 원인론 — "구조 없는 위임" (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+[[david-khourshid|David Khourshid]](XState): *"So, where does slop in agents come from? In my opinion, it comes from unstructured delegation."*(03:28~03:32) — 판단·구조·구현·취향을 전부 넘기고 *"hoping for the best from the agent"*(04:03~04:05). 모델이 좋아져도 위험은 남는다. 문제의 정의는 *"it works until it doesn't and when it stops working, what can we actually point to to tell the agent this is what you need to fix?"*(04:17~04:27).
+
+- **"슬롭 = 결정의 부재"** 와 같은 방향이지만 처방의 층이 다르다 — 금지 목록·프로브(산출물 쪽)가 아니라 **규칙을 상태·전이로 빼내는 구조**(과정 쪽). → [[agent-state-machine]]
+- ⚠️ ko·`en`은 이 영상에서 *slop* 을 **"쓰레기"·"여유분"·"trash"·"junk"** 로 옮겨 제목어가 자막에서 사라졌다.

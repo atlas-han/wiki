@@ -5,9 +5,9 @@ category: person
 tags: [openai, ceo, ai-safety, agi, compute]
 links:
   - https://openai.com/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots]
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # Sam Altman
@@ -117,3 +117,17 @@ Huang의 답에서 Altman의 회사(문맥상)에 대해 나오는 것:
 - ***"행간을 읽으면 그들은 더 많은 법이 아니라 기존 법에서 면제되기를 원한다"***(06:33~06:48) → [[existing-law-first]]. ⚠️ Altman의 기존 입장(정부의 모델 테스트·공유 표준 찬성, [[regulatory-capture]])과 **어떤 요구가 "면제"인지** Huang은 짚지 않는다.
 - *"Vera Rubin이 Dario와 Sam에게 제공되고 있다"*(20:02~20:05) — **OpenAI는 NVIDIA의 고객**이다.
 - 사고 대응으로 기대하는 것 — 샌드박스·격리, 평가 중 모니터링, **외부 클라우드 접촉 공개**, 사고 공개 공유(10:40~11:36). Altman이 Dreamforce에서 말한 [[accident-reporting-culture]]와 **같은 방향**이다.
+
+## DevDay 2026 대담 — 자기 업무에 AI를 쓰는 법 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+DevDay 키노트 당일 [[dan-shipper|Dan Shipper]](⚠️ 설명란 판독)와의 라이브 대담(31:27). **처음으로 Altman이 자기 일상·업무의 AI 사용을 일화로 말한다.**
+
+- **[[openai-dots|Dots]]** — *"the first thing that has given me back control of my mornings"*(08:21~08:24). Dot 이름 *"Doie"*. 밤새 5~6개 버전 구현, Codex로 못 찾은 Slack 스크린샷을 다음 날 찾아옴. 연구 측 핵심은 [[openai-astra|Astra]]가 *"over the intelligence bar"*.
+- **[[chatgpt-space|Space]]** — 새 아이디어는 손으로 쓴다(*"it helps me like think about it"*), 회사 대시보드는 *"just for me"* 로 계속 갱신.
+- ⭐ **관심의 이동** — *"A lot on my mind recently is just how we're thinking about the safety alignment and security challenge"*, 6개월 전엔 매출·성장 지표(17:50~18:03).
+- **모든 프롬프트를 ultra fast로** — Bret Victor의 즉각적 연결, *"price of IQ"* 다음은 속도의 민주화, 자체 칩, 8배·100배 → [[inference-speed-as-capability]]
+- **르네상스 대 산업혁명** — AI는 사람 중심이어야, *"house cats"* 미래론은 슬프다. *"never like as doomery about the job stuff"* → [[ai-jobs-impact]]
+- **스타트업** — *"I would love to be a startup investor again"*, 1~2인으로 할 수 있는 일을 실리콘밸리가 *"re-examination"* 하지 않았다. 본인도 *"plug-in extension"* 을 직접 내고 싶다.
+- [[jev|Jev]]·Decisions API — [[diogo-almeida|Diogo]](ASR *"Do"*·*"Diego"*)가 OpenAI 출신이고 영감을 줬지만 *"it's pretty different (…) we have other things to go do"*.
+
+⚠️ 출시 당일 판매자 진술, 반대 심문 없음. ⚠️ 09-06 *"사이드 퀘스트가 너무 많았다"* 와 **하루 22개 출시**(진행자 집계)·오피스 도구 3종의 관계를 말하지 않는다 → [[openai]] Contradiction. ⚠️ 상시 에이전트의 권한·프라이버시는 한 번도 나오지 않는다(09-06 본인의 [[ai-privilege]] 제안과 대비).

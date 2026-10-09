@@ -3,9 +3,9 @@ title: Dune (GrokBot 아키텍처)
 type: entity
 category: tool
 tags: [architecture, electron, react, ci, agents, grokbot, cursor]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # Dune
@@ -56,3 +56,14 @@ updated: 2026-09-26
 - **Dune이 요점이 아니다** — *"핵심 주제는 Dune이 아니라 여러분 자신의 에이전트 친화 프레임워크"*, **부족 지식을 스타일 가이드 리뷰에서 꺼내 코드베이스에 인코딩**(29:24~30:10).
 
 `useEffect` 금지·*"Electron 앱을 위한 Next.js"*·PR 600건 재작성은 **이번 발표에 나오지 않는다.** 여전히 오픈소스 언급 없음.
+
+## feature 발견 장치와 god file 8개 — 대담 발췌 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+> *"But it comes with a lot of really really restrictive lit[=lint] rules"* (ko 트랙 영어 구간 04:41~04:44)
+> *"the code base is designed in a way that there's really only one way to do something (…) features all go into a specific directory. Every feature has its own directory (…) there's like a, a...Thing that discovers features, like through a registry and like crawling the code base"* (04:42~05:07)
+> *"the very first versions of Grokbot were composed of like eight god files"* (05:47~05:53)
+
+- **새 구성 요소** — feature를 **레지스트리 + 코드베이스 크롤링**으로 발견한다. 위 제약 목록의 *feature 단위 디렉터리* 행을 보완한다.
+- **기원** — feature 디렉터리는 *"I'm not going to append to a god file"*(05:40~05:45)에서 나왔고, GrokBot 첫 버전이 **god file 8개**였다. ⚠️ en-orig의 *"at least 100 lines long"*(05:53~05:55)은 god file 치고 작아 자릿수가 의심된다 — 인용하지 않는다.
+- **대가의 다른 진술** — *"frees up your own mental capacity, and the agent doesn't have to think about that anymore"*(05:20~05:30). 09-25 발표의 *"사람에게는 짜증"* 과 **다른 측면**(인지 부하 vs 작성 자유)이라 모순으로 두지 않고 나란히 표시한다.
+- 해설은 이 프레임워크를 *"공개 설치 도구로 받아들이기보다 기능을 추가할 경로를 어떻게 정했는지에 집중"* 하라고 권한다(ko 04:28~04:35). ko는 이름을 *"듀"*, en-orig 내레이션은 이름을 뺐다.

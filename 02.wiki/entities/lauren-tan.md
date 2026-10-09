@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
 created: 2026-09-01
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # Lauren Tan
@@ -93,3 +93,16 @@ updated: 2026-09-26
 - **새 조어·비유** — **정원과 정원사**, **안티패턴은 바이러스처럼 퍼진다**, **코드베이스는 구체화된 스냅샷**(→ [[codebase-gardening]]), GrokBot = **바깥 루프**(→ [[grokbot]]). **"소프트웨어 공장"이라는 말을 싫어한다** — 슬라이드의 그 말에 줄을 긋는다(33:39~33:42). 대안은 여전히 **미슐랭 주방**.
 - **새 입장** — *"회사 두뇌까지는 필요 없다, 에이전트는 도구를 잘 쓴다"*(33:05~33:16, → [[company-brain]]). 형식 검증(Lean·TLA+)은 *"여전히 열린 문제"*, *"없어도 검증 스킬로 멀리 간다"*(07:44~08:37).
 - **빠진 것** — 워크숍의 **유보가 전부 없다**: *"무제한 토큰이 있는 AI 랩"* 인정, *"맹목적으로 믿지 마라"*, *"평균 PR 크기는 모른다"*, 자동 병합의 서술. **수치는 두 배가 되고 유보는 사라졌다** — 이 인물의 수치를 인용할 때는 워크숍의 유보를 함께 적는다.
+
+## 네 번째 본인 소스 — 대담 발췌 + 한국어 해설 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+Tech Bridge의 11:36 **해설 영상**이 원본 대담(`MN9dGgmLyso`, 이 위키에 없음)에서 **본인 발화 약 5분(6구간)** 을 발췌했다. 진행자는 **Matt Pocock**으로 판독(⚠️ 태그와 ko ASR *"몇 포코"* 에만 기댐). 해설은 09-25 발표([[tech-bridge-lauren-tan-2000-prs]])를 *"로렌의 강의"* 로 참고했다고 밝힌다. **대담 날짜는 미발화.**
+
+- **새 발화** — *"the single most important skill that should be in your tool kit is verification"*(01:14~01:21), 에이전트에게 *"hands and eyes"*(01:29~01:35), *"the first skill I built when I joined Cursor"*(01:49~01:54).
+- **CLI의 이유를 본인이 처음 말한다** — 일은 판단과 결정론의 *"gradient"*, *"I try to extract out the deterministic parts and turn that into code and just leave only the parts that actually require judgment"*(03:48~03:56). → [[build-a-lever]]
+- **GrokBot 첫 버전 = god file 8개** → feature 디렉터리의 기원(05:47~05:55). → [[dune-architecture]]
+- **리뷰는 표본** — *"as a quality supervisor on a factory, you can't look at every single item. You sample, right?"*(09:12~09:20). ⚠️ 09-25에 *"소프트웨어 공장"* 이라는 말을 거부했던 것과 대비 — **품질 감독이라는 한 측면에서만** 공장 비유를 받아들인다. → [[agent-manager-analogy]]
+- **유보가 돌아왔다** — *"it's very hard to get to this point. I don't want to sell this as (…) something that you can just do easily by using PAC[=Pstack]"*(10:12~10:21). 09-25 발표에 없던 09-12 계열 유보가 대담에서는 본인 발화로 다시 나온다.
+- **수치** — *"한 달 PR 2,500개"* 는 **내레이터가 X 프로필에서 인용**(ko 00:11~00:17), 본인 발화 아님, 달 미상. 자기 보고 계열 1,000 → 2,000 → 2,500.
+- **소속** — 제목 *"SpaceX - Cursor & Grok Bot 개발자"* 이나 **발췌에 SpaceX는 없다**(본인 발화는 *"joined Cursor"*·*"Grokbot"* 뿐). 위 소속 기록을 바꾸지 않는다.
+- ⚠️ en-orig 내레이션은 한국어 ASR의 번역이라 이 인물을 *"Laurent"*·*"Rolfe"*·*"Rowland"*, **"he"** 로 적는다 — 채택하지 않는다.

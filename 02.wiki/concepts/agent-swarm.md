@@ -6,9 +6,9 @@ tags: [parallelism, sub-agents, context-window, pstack, aggregation]
 aliases: [swarm, 겁 없는 병렬성, fearless parallelism]
 related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-altman-devday-dots]
 created: 2026-09-14
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 에이전트 스웜
@@ -74,6 +74,14 @@ updated: 2026-10-02
 > ⚠️ **그 외에는 아무것도 없다.** 조율 방식·통신 구조·비용·실패한 에이전트의 처리·수렴까지 걸린 시간 — **전부 없다.** *"서로 이야기하고 스스로를 조직한다"* 는 **진행자의 서술**이고 화자가 확인하지 않는다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[greg-brockman]] · [[ai-formal-verification]] · [[openai]]
+
+### 2026-10-09 — 4일, 그리고 "아무도 문제에는 관심이 없었다" ([[tech-bridge-altman-devday-dots]])
+
+DevDay 2026 대담에서 진행자가 *"if an agent solves a Navier Stokes in a data center but no one finds out, did it really solve it?"*(01:56~01:59)라 농담하자, [[sam-altman|Altman]](⚠️ 자막 화자 표지 없음 — 문맥 판독):
+
+> *"10,000 agents worked super hard for 4 days in perfect coordination with each other and did this amazing thing and almost none of the public reaction was about that actually the problem being solved."* (02:03~02:14)
+
+**새로 붙는 것은 기간(4일)뿐이다** — 그리고 *"in perfect coordination"* 은 위에서 *진행자의 서술*로 유보했던 *"스스로를 조직한다"* 를 **화자 쪽에서 처음 말한 것**이다. ⚠️ 조율 방식·비용·Lean 형식화는 여기서도 없다. 문제 이름은 진행자가 꺼냈고 Altman이 부정하지 않았을 뿐이다.
 
 ## 2026-09-24 — 워크트리를 저장 계층 쪽에서 보면
 

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [evals, production-traces, regression-tasks, hill-climbing, observability, self-improvement, flywheel]
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
-related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals]
+related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-09
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -55,3 +55,7 @@ updated: 2026-09-30
 
 - [[tech-bridge-wandb-aria-self-improving-agent]] (first-seen) · [[zubin-aysola]] · [[wandb-aria]] · [[wandb-weave]]
 - 관련: [[research-production-agent-parity]] · [[yaml-agent-eval-pipeline]] · [[self-harness]] · [[skill-evals]]
+
+## 트레이스가 eval 태스크가 아니라 그래프 변경이 될 때 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+[[david-khourshid|David Khourshid]]의 루프 *model → observe → propose → compare* 도 트레이스를 연료로 쓰지만 산출물이 다르다 — 회귀 태스크가 아니라 **상태 머신 V2**. 그리고 eval이 모두 통과해도 남는 칸을 짚는다: *"all of your evals could pass uh with the first machine, but unless you're dog fooding (…) you're not going to get the optimal results"*(14:38~14:51) → eval의 세 번째 대상 *"evaling the edges"*(12:29~12:31). 화자는 이 계보를 **process mining**(*"about 20 years older"*, 16:53~17:12 — ⚠️ 미확인)에 잇는다. → [[agent-state-machine]]

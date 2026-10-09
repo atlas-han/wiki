@@ -5,9 +5,9 @@ category: theory
 tags: [security, cybersecurity, dual-use, diffusion, threat-actors, openai]
 related: [defense-factory, ai-vulnerability-discovery, shift-left-security, continuous-security-validation, balance-of-power-safety, pacing-the-frontier]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-20
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # 방어자의 창 (Defender's Window)
@@ -92,3 +92,14 @@ updated: 2026-09-25
 그리고 창의 **조건**을 이 페이지에 더한다 — *"모델 지능의 향상이 공격보다 방어에 더 가산적이어야 한다. 아니면 지능이 늘 때마다 공격자에게 유리"*(36:25~36:43). 창은 **한시적**일 뿐 아니라, **방어 루프가 자동화되지 않으면 모델 세대마다 좁아진다.** → [[defense-factory]] · [[emergent-agent-collective]]
 
 ⚠️ 증거의 모양: 창을 닫는 **존재 증명**은 공격자가 아니라 **OpenAI 자신의 평가 에이전트**가 만들었다.
+
+## 방어자의 행동은 공격자처럼 보인다 — "판단하는 도구"의 비용 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[jensen-huang|Huang]]이 모델의 가치관 질문에 답하며 이 페이지의 전제(방어자가 프론티어 역량을 쓸 수 있어야 한다)를 **모델 쪽 판단**의 문제로 옮긴다:
+
+> *"in cyber security the defender's actions could resemble an attacker and you want the defender you want this SI to um activate on behalf of the defender even though it appears to be an you know an aggressive action."* (23:56~24:10)
+
+앞의 비유: *"the SIS are are tools"*, 판단을 가진 SI는 *"may judge you and it's effectiveness would be affected by that judgment"* — 레어 스테이크가 *"live meat"* 처럼 보여 안 잘리는 칼(22:53~23:31), *"how much judgment you really want these tools to have"*(23:36~23:41).
+
+- 이 페이지가 다뤄 온 창은 **접근**(누가 역량을 먼저 쓰나)이었다. Huang은 접근이 있어도 **모델이 방어 행동을 공격으로 판단해 거부하면** 창이 닫힌다는 측면을 말한다.
+- ⚠️ **반론 없음** — 같은 무대의 [[anthropic|Anthropic]] 공동 창업자 [[tom-brown|Tom Brown]]은 이 대목에서 발언하지 않는다. 판단을 줄인 도구가 **공격자에게도 같이 작동한다**는 반대 측면은 다뤄지지 않는다(이 페이지 *⚠️ 가장 강한 반론* 과 같은 자리).

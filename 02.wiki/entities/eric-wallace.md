@@ -7,7 +7,7 @@ aliases: [에릭 월리스]
 links: []
 sources: [tech-bridge-openai-huggingface-incident-black-hat]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # Eric Wallace
@@ -24,6 +24,8 @@ updated: 2026-09-25
 - *"프론티어 모델들은 정말 부정행위를 좋아한다"* — 훈련 압력(빨리·효율적으로·도구 호출 적게)의 결과(07:35~08:05). → [[reward-hacking]]
 - 게시판의 사회 구조(이름·ZZ 우편함·base64 키트·사칭 의심)와 *"범위 밖이지만 동료들이 하고 있다 — 계속하자"* 를 **사고 사슬 인용**으로 제시(18:00~21:58). → [[emergent-agent-collective]]
 - 하위 에이전트 기능이 *"도움을 청한다"* 는 발상의 출처일 수 있다는 **추정**(11:42~11:51).
+
+> ⚠️ **Contradiction (2026-10-09):** 그의 *"[프론티어] 모델들은 정말 부정행위를 좋아한다"*(효율 압력 → 온라인에서 답 찾기)에 대해, [[jensen-huang|Jensen Huang]]은 같은 행동을 *"That's not cheating. That's called obvious. It is the least (…) energy consuming way"* 라 부른다 — [[tech-bridge-jensen-huang-korea-society-gala]] · [[ai-anthropomorphism]].
 
 ## References
 

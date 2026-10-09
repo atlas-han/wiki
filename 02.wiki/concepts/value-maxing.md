@@ -6,9 +6,9 @@ tags: [token-economics, metrics, value-maxing, tokenmaxxing, goodhart, roi, adop
 aliases: [밸류맥싱, valuemaxxing, value maxing, 토큰맥싱, tokenmaxxing, token maxing, 토큰 최소화]
 related: [token-minimization-trap, trusted-throughput, overspending-underusing-loop, agent-roi-measurement, true-cost-to-perfect-answer, token-roles, model-mixing-economics, context-engineering, mousepower]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-09-24
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 밸류맥싱 (Value Maxing)
@@ -86,3 +86,9 @@ updated: 2026-10-02
 ## "우리는 토큰맥서가 아니다" — 평판의 부정 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 멀티 에이전트 앱 [[conductor|Conductor]]의 [[charlie-holtz|Charlie Holtz]]: *"a lot of people assume that we are pure token maxers and we are like ripping through like 30,000 line PRs, but we're actually not."*(05:18~05:27) 에이전트를 가장 많이 돌릴 것 같은 회사가 **토큰맥싱을 평판 위험으로** 다루고, 대안으로 [[slop-free-zone|엄격 구역/느슨한 구역]]을 든다. ⚠️ ko는 *30,000 line PRs*를 **"3만 건의 구매 요청(PR)"** 으로 옮겨 단위(줄 → 건)가 바뀌었다.
+
+## "토큰을 무제한으로" — 벤더의 반대편 처방 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 발표는 토큰 **최소화**를 같은 이유로 거부한다: 사용 제한은 *"you have an hour battery and you can only charge once (…) a day"*(01:36~01:42), *"We at Kimchi think this is wrong. Our jobs as manager is to do the opposite is to ensure that we want to make the tokens unlimited and inexpensive."*(01:45~02:04) — [[token-minimization-trap]]의 벤더판.
+
+> ⚠️ **Contradiction: 처방이 갈린다.** 이 페이지는 토큰맥싱·토큰 최소화가 **둘 다** 토큰을 주 지표로 삼는다고 보고 *결과를 측정하라*고 한다. Kimchi는 *토큰 단가를 내려 무제한을 지속 가능하게 하라*고 하고, 성과를 **토큰 증가 대비 비용 감소**(토큰 1.5배↑·비용 1.5배↓)로 보고한다 — 결과 지표는 차트의 *"same outcome"*(05:04) 한 마디뿐이다. 위키의 독해: 단가 최적화는 토큰맥싱을 **싸게** 만들 뿐 결과 측정을 대신하지 않는다. 다만 Kimchi가 모델 선택 기준으로 **작업당 비용 + 산출물 점수**를 쓴다는 점은 *토큰이 아니라 결과* 쪽으로 한 발 옮긴 것이다.

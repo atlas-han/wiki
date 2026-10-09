@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production]
 created: 2026-09-13
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 검증 병목
@@ -145,3 +145,65 @@ Lauren Tan 쪽의 답은 그 적응의 구체적 형태다 — **사람이 PR �
 - Zapier의 주 약 3,000건 자동 1차 리뷰 — 피상적 항목만, 사람은 여전히 루프에(17:28~17:52, 화자 전언) → [[automated-code-review]]
 
 > ⚠️ **Contradiction: 다음 병목은 검증인가, 조직 마찰인가.** 이 페이지는 병목이 *생성 → 검증* 으로 옮겨갔다고 본다. Reock은 AI의 시간 절약을 갉아먹는 것으로 **검증이 아니라** *"meeting heavy days and context switching and other sources of interruption, the cumulative effects of the dev environment and friction"*(15:45~15:53)을 꼽고, 사례도 스탠드업 축소·온보딩·인시던트 컨텍스트(Zapier·Spotify)다. 자기 데이터(PR ↑, 확신 ↓)는 검증 병목을 가리키는데 결론에서는 그것을 말하지 않는다 — **같은 데이터의 두 읽기.** 위키의 독해: 둘은 배타적이지 않다. *생성이 병목이 아니었다*는 데는 모두 동의하고, 그다음 병목이 **코드 경로 안(리뷰)이냐 밖(조직)이냐**가 갈린다.
+
+## 표본을 보고 환경을 고친다 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+[[lauren-tan]]의 대담 발췌가 *"사람은 그 많은 변경을 어떻게 검토하나"* 에 답한다 — **전수가 아니라 표본**:
+
+> *"as a quality supervisor on a factory, you can't look at every single item. You sample, right? You take you, you you go in there every day and you look at the quality of the pull requests, you look at the code that the agents are writing, and you scanize[=scrutinize] it very rigorously and think about all the inefficiencies, the bad patterns that the agent are doing"* (09:12~09:37)
+
+해설(ko 09:40~09:49): *"문제 하나를 고치고 끝내는 대신 다음에도 같은 문제가 생길 환경인지 돌아보는 겁니다. 스킬과 타입, 제약을 조정하면서 사람이 개입하는 지점을 줄여 갑니다."*
+
+- [[tech-bridge-death-of-code-review|Voss]]의 *"stop reviewing PRs"* 와 **전수 리뷰를 버린다는 점은 같고**, 남는 사람의 일이 다르다 — Voss는 **리뷰 시스템**을 짓고, Lauren은 표본에서 본 것으로 **환경**(스킬·타입·제약 — [[hard-vs-soft-enforcement]])을 고친다.
+- ⚠️ 표본 크기·빈도·선택 기준은 없다. [[risk-proportional-human-review]]처럼 **어디를 볼지 위험으로 고르는** 장치가 없다.
+- ⚠️ 해설만의 요약(발췌 음성 없음): 비슷한 제보를 묶는 **조정자 역할**, 나쁜 패턴을 **곧바로 고치지 않고 문서에 모아** 공통 원인을 찾기(ko 08:09~08:28) — 원본 대담 미확인.
+
+## 네 번째 답을 실행 단위로 — 싼 층 둘을 깔고 사람은 one-way door만 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]: PR 병목은 AI 이전부터 있었고(*"huge numbers of PRs just laying around that no one's bothered to review"* 00:12~00:18) AI가 키웠다. 답은 사람 리뷰를 없애는 것이 아니라 **빠르게** 하는 것 — *"to make human review faster by leaning on those first two phases"*(03:47~03:50): 자동 검사(CPU) → 자동 리뷰(토큰) → 사람 리뷰. 그리고 사람 리뷰 자체를 **위험도로 거른다** — *"You really don't need to review every single two-way door. Every single one-way door you do."*(22:06~22:12)
+
+Voss 편의 *네 번째 답*(리뷰를 시스템으로 재건)과 같은 방향이지만, Voss가 *"stop reviewing PRs"* 라 한 데 비해 Pocock은 **PR 리뷰를 남기고 그것을 사람 친화적으로** 만든다(merge danger 요약, 다이어그램). → [[automated-code-review]] · [[risk-proportional-human-review]] · [[structure-sensitive-tests]]
+
+## 1시간 생성, 이틀 다듬기 — 개인 단위의 같은 병목 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]의 출발 일화: 2일로 잡은 기능이 에이전트로 약 1시간 만에 동작했지만 다듬고 리뷰하는 데 이틀 — *"I did two days worth of work in two days"*(01:46~01:49), *"one hour building code and then two days playing whack-a-ole[=mole] with (…) slop"*(02:03~02:12). Voss 편의 741% vs 30%를 **한 사람의 하루**로 겪은 것. 그가 거절하는 해법은 PR을 그대로 올려 *"shifted that burden onto everyone else. Don't do that."*(02:31~02:36) — 병목을 동료 리뷰어에게 넘기는 것. 그의 답은 이 페이지의 네 답 어디에도 정확히 맞지 않는 **다섯 번째 — 생성의 바닥을 올려 검증할 양을 줄인다**(→ 아래 통합 표)(*"raise the floor on what the AI gives me so that I'm not spending two days reviewing it"* 02:41~02:49): 결정론적 도구·훅·좁은 리뷰 스킬. ⚠️ 측정 없음 — 바닥을 올린 뒤 이틀이 얼마로 줄었는지 말하지 않는다.
+
+## 리뷰 이전의 병목 — 가시성 (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+[[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]])는 리뷰 피로를 인정한다 — *"this flood of AI generated code that we now have to review (…) and we're exhausted by it"*(02:02~02:09). 그러나 코드 리뷰 에이전트·코드베이스 건강 측정 도구·더 나은 모델을 *"sandbags"* 와 *"local maxima"*(02:22~02:31)로 내리고, 병목을 **리뷰 이전**에 둔다: 에이전트(와 리뷰어)가 수만 저장소를 **보지 못한다**(*"You can't gp[=grep] what you literally cannot see."* 07:33~07:36).
+
+[[file-discovery-tax]]가 *변경 전* 단일 저장소의 탐색 비용이었다면, 이것은 **변경 전 저장소 사이의 가시성**이다. ⚠️ 측정치 없음, 화자는 가시성 인프라 벤더 → [[code-knowledge-graph]] · [[large-scale-code-changes]]
+
+## diff가 아니라 의도와 스펙을 — 비기술 인력의 PR (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[kimchi|Kimchi]]의 Zilvinas: *"what we believe is that reading code is not enough anymore"*(10:48~10:52). 이유에 새 변수가 붙는다 — 변경량 증가에 더해 *"as you keep bringing like a little bit of a less technical personnel onto your pipelines"*(11:06~11:12). PM이나 사장이 2,000줄 PR을 들고 오면 *"you need to actually review not just the differences but the actual intent which he wanted to achieve and the specifications which he provided to the coding agent"*(11:19~11:30). → [[intent-alignment]] · [[spec-driven-development]]
+
+답은 **두 층**이다: Ferment의 점수 게이트(B 이상)와 스테이징에서의 사람 정지(*"some little human (…) before going to the production"*, 10:11~10:18), 그리고 Studio에서 **계획 단계 리뷰**. ⚠️ 의도 리뷰를 실제로 어떻게 하는지는 시연되지 않는다.
+
+## 병목은 리뷰보다 넓다 — 주의 비용과 인터페이스 (2026-10-09 · [[tech-bridge-agentcraft-strategy-game]])
+
+[[ido-salomon|Ido Salomon]]([[agentcraft|AgentCraft]])도 *"we are the bottleneck"*(01:01~01:02)에서 출발하지만 병목을 **리뷰 하나가 아니라** *"steer them, direct them, review them"*(00:47~00:53) 전체의 **주의·기력**으로 본다. 답은 리뷰 처리량이 아니라 **인터페이스** — 상태 패널·지도·히트맵, RTS식 *"the nearest thing that actually needed your attention"*(04:45~04:49) 점프, 할 일 생성(퀘스트), 자율 실행, 영상·사진 *"visual evidence"* 리뷰(07:22~07:28), 사람 협업. → [[agent-attention-management]] (신규)
+
+답의 표에 넣으면: **주의를 라우팅한다** — 모두 보지 말고 **필요한 곳으로 점프**, 리뷰는 시각 증거로 압축, 단순판에선 과정 보기를 선택 사항으로(→ 아래 통합 표).
+
+⚠️ 단순판의 *"I don't really care perhaps about the way, I can see it if I want to"*(12:05~12:09)는 Voss가 인용한 *"Please please read the code"*(18:48~18:54)와 정면으로 긴장한다 — 화자는 이를 다루지 않는다. 당사자 데모, 측정 없음.
+
+## 또 하나의 답 — 에이전트가 증거를 낸다 (2026-10-09 · [[tech-bridge-prompt-to-production]])
+
+[[ibm|IBM Technology]] 계열 해설(발표자 무명)이 이 페이지의 진단을 **가장 짧게** 말한다 — 측정치 없이 가상 예시 하나로:
+
+> *"AI can scale execution dramatically faster than humans can scale verification. If an agent updates five files, that's no sweat. (…) If it updates 500 files (…) I can't realistically review every change."* (04:33~04:52) → *"the bottleneck becomes our confidence that the solution's outcomes are successful"* (04:55~05:00)
+
+| 답 | 소스 | 처방 |
+|---|---|---|
+| 작업을 고른다 | 마우스파워 (09-12) | 검증이 비싼 작업은 주지 마라 |
+| 역량을 짓는다 | Lauren Tan (09-12) | 검증을 스킬로 |
+| 일을 쪼갠다 | Jonathan Kelley (09-13) | 무엇을 검증할지는 사람, 장치는 에이전트 |
+| 리뷰를 재건한다 | Voss (10-03) | *"stop reviewing PRs"* — 리뷰 하네스 |
+| 바닥을 올린다 | Quenneville (10-05) | 결정론적 도구·훅·좁은 리뷰 스킬로 생성 품질을 올려 검증할 양을 줄인다 (위 섹션) |
+| 주의를 라우팅한다 | Salomon (10-07) | 필요한 곳으로 점프, 시각 증거로 압축 → [[agent-attention-management]] (위 섹션) |
+| **증거를 받는다** | **IBM 계열 (10-07)** | *"AI (…) should generate evidence"*(05:31~05:36) — 사람은 diff 대신 **다섯 질문의 답**(무엇·왜·무엇이 깨질 수 있나·하류 영향·목표 달성)을 본다 → [[agent-change-evidence]] |
+
+> 통합 메모(2026-10-09): 이번 회차의 세 소스(Quenneville·Salomon·IBM 계열)가 각자 "다섯 번째 답"의 자리를 주장했다 — 위 표는 업로드 순으로 합친 것이다. Pocock(10-05) 편은 스스로 네 번째 답의 변주로 자리 잡고, Lauren Tan(10-03)·Sourcegraph(10-06)·Kimchi(10-07) 편은 새 행을 주장하지 않는다.
+
+> ⚠️ **Contradiction(추가): 실행은 병목이었나.** 이 소스는 *"For years, software development was limited by execution"*(04:08~04:13)이라 한다 — 위 [[tech-bridge-dx-ai-impact-trends|Reock]]의 *"code generation was never the bottleneck"* 과 정면으로 갈린다. 다만 이 소스의 *execution* 은 *"Writing code, migrating systems, and testing"*(04:13~04:16)이고, **같은 영상 안에서** 병목을 *"coordinating all of the changes around it"*(03:55~04:01) · *"the hardest part, coordination"*(06:27~06:29)으로도 부른다. 화자 자신이 실행 → 조율 → 확신 세 이름을 쓴다. 해소하지 않는다.

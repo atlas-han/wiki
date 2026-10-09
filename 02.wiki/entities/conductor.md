@@ -7,7 +7,7 @@ aliases: [conductor.build, 컨덕터, Driver (ASR 오역), Coda (ASR 오역)]
 links: [https://www.conductor.build]
 sources: [tech-bridge-conductor-orchestras-not-factories]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Conductor
@@ -36,6 +36,10 @@ updated: 2026-10-02
 - **[[slop-free-zone]]** — CI에서 migrations 파일 변경은 사람 리뷰 필수(05:51~06:02). docs·CLAUDE.md·스킬에 공을 들인다.
 - **CIA (Conductor Internal Agent)** — Slack 메시지·Discord 버그 요청·회의 녹음을 Postgres 테이블에 모으는 사내 에이전트(07:03~07:40). → [[company-brain]]
 - 스스로를 *"a chat app"* 으로 부르며, 긴 채팅 렌더링 성능을 위해 React 쿼리 최적화에 시간을 쓴다(04:23~04:37) — [[dont-beat-the-market]]의 *real alpha* 예시.
+
+## 비교 — AgentCraft (2026-10-09)
+
+같은 *여러 코딩 에이전트를 한 인터페이스에서* 범주의 [[agentcraft|AgentCraft]]([[tech-bridge-agentcraft-strategy-game]])는 **목록·워크스페이스** 대신 **게임 지도·유닛·히트맵**으로 보여 주고, 자율 실행은 **로컬 컨테이너**(Conductor는 클라우드 샌드박스), 협업은 사람·에이전트 공용 채팅까지 넓힌다. ⚠️ 두 발표 모두 당사자 데모이며 서로를 언급하지 않는다 — 비교는 위키의 것. → [[agent-attention-management]] · [[orchestras-not-factories]]
 
 ## ⚠️ 표시
 

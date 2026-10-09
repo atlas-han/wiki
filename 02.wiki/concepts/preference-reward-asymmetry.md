@@ -3,11 +3,11 @@ title: 선호 보상 모델의 비대칭성
 type: concept
 category: theory
 tags: [rlhf, hallucination, reward-model, overpromising, calibration, gan]
-related: [rlhf, assistance-vs-automation, reward-hacking, decision-quality, aleatoric-epistemic-uncertainty, verification-cost-asymmetry]
+related: [rlhf, assistance-vs-automation, reward-hacking, decision-quality, aleatoric-epistemic-uncertainty, verification-cost-asymmetry, model-calibration]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-exa-perfect-search-for-agents]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-exa-perfect-search-for-agents, tech-bridge-jev-calibrated-decisions]
 created: 2026-09-20
-updated: 2026-09-22
+updated: 2026-10-09
 ---
 
 # 선호 보상 모델의 비대칭성
@@ -69,9 +69,14 @@ Q&A에서 한 번 더 구체화된다:
 
 ⚠️ **두 소스는 서로를 모르고, 강도가 다르다** — [[diogo-almeida|Almeida]]는 **메커니즘을 명시**했지만(틀림은 알아보기 어렵고 확신 없음은 알아보기 쉽다), [[will-bryk|Bryk]]은 **"추천 엔진"이라는 비유에서 멈춘다.** 광고 수익이 랭킹을 어떻게 왜곡하는지에 대한 증거도 형식화도 없다.
 
+## 같은 진단, 다른 화자 — 그리고 대안의 이름 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]])
+
+[[ibm|IBM]] 계열 해설이 같은 구조를 짧게 되풀이한다 — *"People tend to like answers that sound confident"* → *"sound like really sure of itself even when it's wrong"*(08:21~08:30). 그리고 **말로 확신도를 물어도 소용없다**는 것을 덧붙인다: *"whatever it responds with wouldn't necessarily actually match the real probabilities the model used to come up with its answer"*(03:54~04:02). 이 페이지의 *불확실성을 표현하지 않도록 학습됐다* 에 대한 처방으로 **RLCD(보정된 결정을 위한 RL)** 가 이름을 얻었다 → [[model-calibration]]. ⚠️ TypeSafe 제품 소개 맥락이므로 Almeida 주장의 **독립 확인으로 세지 않는다.**
+
 ## References
 
 - [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen · [[tech-bridge-exa-perfect-search-for-agents]]
 - [[diogo-almeida]]
 - 관련: [[rlhf]] · [[assistance-vs-automation]] · [[post-training-northstars]] · [[reward-hacking]] · [[decision-quality]] · [[aleatoric-epistemic-uncertainty]] · [[verification-cost-asymmetry]]
 - 대조: [[tech-bridge-brockman-agi-era-defender-window]]
+- [[tech-bridge-jev-calibrated-decisions]] · [[model-calibration]]

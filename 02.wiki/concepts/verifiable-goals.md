@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-05-25
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Verifiable Goals
@@ -147,3 +147,15 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## 문제는 루프가 아니라 "done" (2026-10-02 · [[tech-bridge-factory-software-factory]])
 
 [[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]]): *"the question is not the loop itself but the question is how how you define what it means to be done in the loop"*(09:58~10:05). 예전 프로그래밍의 루프는 종료 조건이 명확했지만 지금은 *"the criteria become open-ended because a lot of the tasks are very nondeterministic. It's basically open world"*(10:23~10:30) — 동료가 만든 로고 **3D 프린팅** 루프처럼 물리 세계까지. 결론은 *"they just need to be verifiable"*(10:42). Factory는 완료 조건을 오케스트레이터가 **코드 전에** validation contract로 쓴다(13:07~13:14). ⚠️ ko는 *nondeterministic* 의 *non-* 을 잃고 **"결정론자들"**(10:28)로 옮겨 요지가 반대가 된다. → [[software-factory]] · [[reward-hacking]]
+
+## 검증기는 정오만 본다 — 확신은 보상하지 않는다 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]])
+
+[[ibm|IBM]] 계열 해설은 RLVR의 성공을 인정하면서(*"a big reason that reasoning models today have got so good at math and coding"*, 08:55~08:59) 그 빈칸을 짚는다: *"the reward here only checks whether the final answer was right. It doesn't reward the model for knowing how sure it should be."*(09:02~09:09). 검증 가능한 목표는 **답의 정오**를 학습시키지만 **답을 얼마나 믿을지**는 학습시키지 않는다 — 그 칸을 겨냥한 것이 RLCD다 → [[model-calibration]] · [[post-training-northstars]]. ⚠️ *로그 오류율* 이라는 Almeida의 표현과 충돌 가능(post-training-northstars 참조).
+
+## ⚠️ 반대편 — "가장 가치 있는 목표는 모호하다" (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+[[jensen-huang|Jensen Huang]]: *"most of the most ambitious goals, most aspirational goals, most worthy goals are ambiguous. And part of leadership is to the artistry of giving goals that are sufficiently specific but sufficiently ambiguous so that you could be surprised by its outcome. to leave room for surprise, leave room for discovery, leave room for innovation."*(18:09~18:36)
+
+이 페이지가 모아 온 *"검증 가능한 형태로 써라"* 와 **반대 방향의 처방**이다. Huang은 모호함의 대가를 목표 명세가 아니라 **실행 감시**로 치른다 — *"if the instruction you give to the AI is ambiguous, how do you know (…) you like the journey that it's taking? (…) You have to monitor all AIS"*(18:40~18:56). 
+
+> ⚠️ **긴장(모순 아님):** 이 페이지의 소스 대부분은 **코딩 에이전트의 완료 조건**을, Huang은 **리더가 조직·AI에 주는 목표**를 말한다 — 층이 다르다. 그러나 둘 다 *AI에 일을 맡기는 법*에 대한 처방이고, **모호함을 줄일 것인가 / 감시로 흡수할 것인가**에서 갈린다. 같은 답 안에서 Huang은 정렬을 *"how"* 를 지정하는 것으로 정의한다 → [[intent-alignment]].

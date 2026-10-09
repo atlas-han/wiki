@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comments, paved-path]
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
-related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory]
+related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck]
 created: 2026-09-26
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 코드베이스 정원 가꾸기
@@ -91,3 +91,12 @@ updated: 2026-10-02
 ## 도입 전 점검표 — Agent Readiness (2026-10-02 · [[tech-bridge-factory-software-factory]])
 
 [[factory-ai|Factory]]의 [[tereza-tizkova|Tereza Tížková]]가 같은 직관을 **조직 도입의 관점**에서 말한다: AI 도입은 *"a bit of power law"*(16:54~16:57) — 준비 안 된 코드베이스에서는 *"make your code degrading"*(17:09~17:12), *"sometimes AI really makes a mess and this can really compound"*(17:32~17:39). 처방은 **[[agent-readiness]]** (신규) — 재현 가능한 개발 환경·테스트·문서·스타일·린터 점검(18:06~18:25). 이 페이지가 **도입 후 정원 가꾸기**라면 그쪽은 **도입 전 위생 점검**이다. ⚠️ 근거로 든 *"data from Stanford"*(17:21)와 *"nice correlation"*(17:55~18:03)은 연구 이름·수치가 없다.
+
+## 정원 손질의 실례 — god file 8개에서 feature 디렉터리로 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+- [[grokbot|GrokBot]] 첫 버전은 *"eight god files"*(05:50~05:53)였고, feature 디렉터리는 *"I'm not going to append to a god file"*(05:40~05:45)에서 나왔다 — 위 *"단일 포장 경로"* 원칙의 **출발 상태**. *"there's really only one way to do something"*(04:45~04:50). → [[dune-architecture]]
+- ⚠️ **결이 다른 해설 요약** — Tech Bridge 내레이션은 Lauren이 *"좋지 않은 코드 패턴을 발견하더라도 곧바로 수정하지 않고 문서에 모아두게 하는 사례"* 를 설명한다고 전한다(ko 08:17~08:24, 발췌 음성 없음). 위 *"퍼지기 시작하기 전에 가능한 한 빨리 싹을 잘라야"* 와 다르게 읽힌다. 모으는 목적이 *"공통 원인이나 반복되는 문제"* 찾기(08:24~08:28)라면 양립하지만 **원본을 확인하지 않았으므로 해소하지 않는다.**
+
+## 같은 전제, 설계 쪽 처방 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]: *"code is the environment your agent operates in. And if you have bad code in your codebase, that is going to beget more bad code."*(02:42~02:51) — 이 페이지의 전제(*코드베이스는 기억이다*, 안티패턴은 번진다)와 같은 말을 **브레이크가 필요한 이유**로 쓴다. 처방은 정원사가 아니라 **설계**([[deep-modules]] — 작은 인터페이스로 번질 표면을 줄인다)와 **리뷰어의 커밋**(나쁜 패턴이 머지 전에 고쳐진다).

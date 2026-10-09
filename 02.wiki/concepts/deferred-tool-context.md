@@ -3,11 +3,11 @@ title: "지연 도구 컨텍스트 (Deferred Tool Context)"
 type: concept
 category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
-related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval]
+related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -53,6 +53,18 @@ updated: 2026-10-02
 - **프롬프트 캐시와의 관계** — 로드할 때마다 도구 정의가 추가되면 캐시 접두가 바뀌는가. [[toolbox-pattern]]도 같은 질문(매 반복 재조립의 비용)을 미해결로 둔다.
 - 짧은 설명을 누가 쓰는가(사람 vs 자동 요약).
 - 50% 절감의 측정 조건.
+
+## 같은 문제, 다른 답 — 에이전트 타입으로 미리 자르기 (2026-10-09 · [[tech-bridge-uber-debug-assist]])
+
+[[uber|Uber]]도 같은 bloat를 겪었다: *"Uber has a skills marketplace which is huge. There are almost 3,000 plugins right now and we can't dump the context of all the plugins to an agent. It goes crazy."*(17:09~17:21) 답은 progressive disclosure가 아니라 **정적 범위 지정** — *"this is how we do it using the agent type parameter"*(17:23~17:27). 에이전트 타입이 실행 시 가져올 바이너리·런타임·스킬·플러그인을 정한다.
+
+| | Factory (지연 도구 컨텍스트) | Uber (에이전트 타입) |
+|---|---|---|
+| 언제 고르나 | 실행 중, 에이전트가 필요할 때 | 실행 전, 에이전트 타입으로 |
+| 누가 고르나 | 모델 | 플랫폼 설정 |
+| 대가 | 목록·설명은 늘 컨텍스트에 | 타입 밖 도구는 아예 못 씀 |
+
+⚠️ 둘 다 측정치 없음(Factory *"50% of tokens or more"* 는 조건 없음, Uber는 수치 없음). → [[harness-as-platform]]
 
 ## References
 

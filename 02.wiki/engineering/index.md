@@ -3,7 +3,7 @@ title: Engineering
 type: overview
 tags: [meta, engineering]
 created: 2026-05-25
-updated: 2026-09-02
+updated: 2026-10-09
 ---
 
 # Engineering
@@ -34,6 +34,7 @@ updated: 2026-09-02
 - [[design-patterns]] — Refactoring.Guru 한국어 기준 GoF 디자인 패턴 22개 허브(생성·구조·행동).
 - [[refactoring]] — behavior를 유지하면서 내부 구조를 개선하는 작은 변경들의 연속.
 - [[technical-debt]] — 빠른 delivery를 위해 미룬 구조 개선이 이후 변경 비용의 이자로 돌아오는 상태.
+- [[deep-modules]] — 복잡한 동작을 작은 인터페이스 뒤에 숨기는 모듈(Ousterhout). 에이전트 시대엔 구조 결합 테스트를 막는 설계 처방으로 재등장 ([[tech-bridge-pocock-pr-bottleneck]], 2026-10-09).
 - [[code-smells]] — 리팩터링 후보를 찾는 진단 vocabulary(23개 smell).
   - *Bloaters*: [[long-method]] · [[large-class]] · [[primitive-obsession]] · [[long-parameter-list]] · [[data-clumps]]
   - *OO Abusers*: [[alternative-classes-with-different-interfaces]] · [[refused-bequest]] · [[switch-statements]] · [[temporary-field]]

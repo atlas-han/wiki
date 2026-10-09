@@ -5,9 +5,9 @@ category: pattern
 tags: [spec, planning, agent, github, workflow]
 related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development]
 created: 2026-08-29
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # Spec-Driven Development
@@ -125,6 +125,19 @@ Amazon 현장([[tech-bridge-frontier-engineering]] 습관 4): 사내 spec-driven
 spec은 **두 장**이다 — *"Product spec describes the product invariants that you're building towards. Tech spec describes the architecture and the shape of the code."*(10:31~10:41) 쓰는 것은 **에이전트**, 루프에서 spec을 리뷰하는 것은 **사람**(*"Humans will review the spec"* 03:36~03:40). 졸업생 조언에서도 *"understand the specs that agents are written sorry are writing"*(18:16~18:21)을 핵심 역량으로 든다.
 
 > 위키의 정리: 이 페이지의 Spec Kit 코어(Spec → Plan → Tasks)와 비교하면 product spec ≈ 무엇·불변식(Spec), tech spec ≈ 어떻게(Plan)에 해당한다. 새로운 것은 **"모든 일에 spec을 쓰지 않는다"는 triage 분기**와 **작성 주체가 에이전트·검토 주체가 사람**이라는 역할 배치다. ⚠️ 분기 기준(무엇이 "hard"인가)·효과 측정은 없다.
+
+## 정면 반론 — "그건 폭포수다" (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]은 이 위키에서 SDD를 가장 정면으로 반대한다. 앞선 소스들이 *"waterfall 아님"* 을 방어했다면, Beck은 믿음 자체를 겨눈다.
+
+> *"I'm gonna write a spec and the genie is going to produce the software and if the spec is good enough, the software is going to be good enough. And there's a word for that. That's exactly waterfall development where it didn't work. It never worked."* (35:31~35:53)
+
+- Winston Royce 논문의 폭포수 그림 다음 페이지에는 *"waterfall going down and feedback coming up"*(36:19~36:22) — ⚠️ 화자 기억, 논문 미특정.
+- 실패 모드: *"I'm gonna write more of a spec and a bigger spec (…) until the spec is big enough and complicated enough that the software is correct"*(41:56~42:09).
+- **조건부 반대** — *"If I'm writing a little app, one shot is fine."*(42:12~42:19) 그래프 DB VM 같은 장수 시스템, 그리고 *"they've ever had a billion users"*(42:44~42:50) — 큰 설치 기반에서는 연속성·데이터 마이그레이션 때문에 원샷 재작성이 안 된다.
+- 스펙에 안 적히는 것: *"It's not written in any spec that says and this will be easier to change in the future."*(27:32~27:38) → [[features-vs-futures]]
+
+> ⚠️ **Contradiction.** [[tech-bridge-sdd-enterprise-lessons]]는 use case 단위 SDD를 *"we don't do big upfront design"* 이라 하고, Beck은 *spec이 좋으면 소프트웨어도 좋다* 는 원샷 SDD를 겨눈다. **둘이 같은 대상을 말하는지는 불분명** — Beck은 SDD 도구나 반복형 SDD를 특정하지 않는다.
 
 ## References
 

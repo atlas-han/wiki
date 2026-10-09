@@ -3,11 +3,11 @@ title: Refactoring
 type: engineering
 tags: [engineering, refactoring]
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-10-09
 category: pattern
-related: [code-smells, refactoring-techniques, technical-debt, design-patterns]
+related: [code-smells, refactoring-techniques, technical-debt, design-patterns, features-vs-futures]
 first-seen: refactoring-guru-refactoring
-sources: [refactoring-guru-refactoring]
+sources: [refactoring-guru-refactoring, tech-bridge-kent-beck-craft-augmented-development]
 ---
 
 # Refactoring
@@ -36,6 +36,10 @@ Refactoring.Guru가 정리하는 대표적 시점:
 2. 어떤 smell을 줄이는가? ([[long-method]], [[duplicate-code]], [[feature-envy]], [[shotgun-surgery]] 등)
 3. 어떤 technique을 적용했는가? ([[refactoring-techniques]]의 family 이름으로 설명)
 4. 변경 후 다음 feature가 더 싸지는가, 아니면 단지 취향에 맞게 바뀐 것인가?
+
+## 기능 사이의 리팩터링 — futures를 되돌리는 순간 (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]은 AI가 기능을 끝낸 직후를 리팩터링의 자리로 둔다 — 지니가 *"Do you want me to implement the next thing?"*(24:12~24:14) 할 때 *"I'm going to uh refactor what's there. I'm going to eliminate some duplication. I'm going to optimize some of this for um for readability"*(24:42~24:58). 리팩터링의 가치를 **미래 선택권(futures)** 으로 설명한다 → [[features-vs-futures]]. 기능 추가와 섞지 말라는 이 페이지의 판단 기준과 같은 방향 — *"You can't wipe the knife while you're cutting."*(29:01~29:03)
 
 ## 관련 페이지
 

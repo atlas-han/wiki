@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
-related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening]
+related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-13
-updated: 2026-09-28
+updated: 2026-10-09
 ---
 
 # 하드 강제와 소프트 강제
@@ -100,3 +100,21 @@ updated: 2026-09-28
 | hard — 사전 | **PreToolUse로 쓰기 차단**(31:16~31:22) | *"slightly weaker models"*·특정 하네스 → [[hook-enforced-workflow]] |
 
 이 페이지의 핵심 경고(말해 두는 것은 강제가 아니다)가 **모델 강도에 따라 경계가 이동한다**는 형태로 구체화된다 — 강한 모델에선 soft로 충분한 규칙이 약한 모델에선 hard가 돼야 한다. 배포되는 스킬은 사용자의 모델을 모르므로 **가장 약한 모델 기준**이다(*"build for the lowest common denominator"* 47:07~47:10) → [[cross-harness-skill-compilation]]. ⚠️ 모든 모델별 행동은 화자 관찰, 수치 없음.
+
+## "같은 댓글을 두 번 쓰지 않는다" — 승격 루프의 도구화, 그리고 하드 층의 거짓말 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]은 위 운용 규칙(*PR 댓글은 코드 스멜*)과 같은 말을 한다 — *"when you do a human review, you're not just reviewing the code, you're reviewing the system that creates it. And the theory here is that you never want to write the same comment twice"*(20:14~20:24). 차이는 **승격을 스킬이 제안한다**는 것: retro 스킬이 지난 PR·리뷰를 회고해 **자동 검사와 coding standards 갱신을 제안**한다(20:45~20:59). → [[skill-self-improvement]]
+
+동시에 하드 층에 단서를 붙인다 — *"checks can lie"*(04:47). CI가 하드 강제여도 그 CI가 돌리는 테스트가 구현을 되풀이할 뿐이면([[structure-sensitive-tests]]) 하드 강제도 거짓말한다. 처방은 이 페이지의 *1층(코드베이스)* 으로 내려가는 것 — [[deep-modules]].
+
+층 순서도 겹친다: Pocock의 브레이크 세 겹(자동 검사 → 자동 리뷰 → 사람 리뷰)은 하드 → 소프트 → 사람 순이고, 줄 세우는 기준을 **비용**(CPU → 토큰 → 사람, 04:13~04:21)으로 댄다.
+
+## 소프트에서 하드로 가는 사다리 — 지시 한 줄 → 훅 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]은 같은 결론을 **두 단계 사다리**로 보여 준다. ① 판단(스타일 가이드)을 결정론적 도구로 옮기고 AGENTS.md엔 *"after changing Ruby files, run rubocop"* 지시만 — *"this is still probabilistic, but look how much smaller your agents.MD is (…) Rubocop owns your style guide."*(10:37~10:53). ② *"If we want to get to 100%"* — **Stop 훅**이 RuboCop 실패 시 루프 종료를 막는다(10:59~11:46). 마이그레이션도 같은 사다리: 지시 *"maybe 90%"* → 쓰기 차단 훅(14:07~14:34). 이 페이지의 층 2(정적 분석)와 층 3(규칙) 사이에 **"규칙이 정적 분석을 부르게 하고, 훅이 그것을 강제한다"** 는 연결이 생긴다. Lauren Tan의 *"PR 댓글은 코드 스멜"* 과 같은 질문을 그는 *"is there a way to catch that using a cop? And be creative. Be ambitious."*(12:49~12:54)로 묻는다.
+
+> ⚠️ **조이는 데에도 한계.** 같은 화자가 *"when I constrain my agents too tightly, that's when they start trying to hack around things"*(23:19~23:23) — Code Climate 같은 **점수 최대화**를 너무 조이면 Goodhart. 통과/실패 게이트(RuboCop)와 점수 목표를 구분해야 한다는 뜻으로 읽힌다(⚠️ 위키의 독해, 화자는 구분을 명시하지 않는다). → [[feedforward-feedback-steering]]
+
+## 전이가 없으면 강제할 필요도 없다 — 구성상 하드 강제 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+[[david-khourshid|David Khourshid]]는 메가 프롬프트가 규칙을 **프롬프트와 도구 설명에 반복**하는 것을 소프트 강제의 전형으로 든다 — *"Only call this after the user approves it."*(06:37~06:41), *"Obviously, you should never write tools like this where the tool is part of the control flow"*(06:41~06:47). 명시적 상태 머신에선 drafting·reviewing에서 send로 가는 전이가 없어 전송이 *"mathematically impossible"*(08:27~08:38) — 게이트를 건너뛸 수 없는 게 아니라 **게이트 밖으로 가는 길이 없다.** CI·훅이 사후에 막는 층 위에, **경로 자체를 그래프로 정의하는 층**이 하나 더 있다. → [[agent-state-machine]]

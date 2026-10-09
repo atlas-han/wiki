@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [software-factory, human-in-the-loop, multi-agent, metaphor, developer-experience, coding-agents]
 aliases: [orchestras not factories, 공장이 아닌 오케스트라, orchestra not factory, 지휘자 비유]
-related: [software-factory, frontier-engineering, persistent-agent-teams, agent-swarm, slop-free-zone, multiplayer-agent-context, risk-proportional-human-review, goal-level-delegation, factory-engineering]
+related: [software-factory, frontier-engineering, persistent-agent-teams, agent-swarm, slop-free-zone, multiplayer-agent-context, risk-proportional-human-review, goal-level-delegation, factory-engineering, agent-attention-management, features-vs-futures]
 first-seen: tech-bridge-conductor-orchestras-not-factories
-sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering]
+sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game]
 created: 2026-10-02
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 공장이 아니라 오케스트라 (Orchestras, Not Factories)
@@ -55,7 +55,19 @@ updated: 2026-10-03
 
 > ⚠️ **Contradiction: 같은 결론, 다른 은유.** Holtz는 *"I honestly kind of hate the term"*, Lloyd는 *"leaning into it"*. 그런데 둘 다 **사람의 taste·리뷰가 중심**이라는 데 도착하고, 둘 다 에이전트 여럿을 돌리는 도구를 판다. 운영상 차이로 드러나는 것은 Warp 루프가 **사람 칸(spec·코드·제품 리뷰)을 다이어그램에 고정**(03:35~03:47)한다는 점 정도 — Conductor의 "원할 때 줌인"과 대비된다. 측정은 양쪽 다 없다.
 
+## 같은 편의 두 번째 목소리 — Kent Beck (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]도 다크 팩토리를 거부한다 — *"there's no human involved There's no feedback. And that always goes off the rails. Always."*(31:07~31:17). Holtz가 **사람의 자리**(지휘자)를 근거로 든다면 Beck은 **피드백 부재**를 든다. 대안의 모양도 다르다: 지휘자가 아니라 **기능 사이에 멈추는 사람**(*"take a breath and say, huh, maybe I'm not ready"*, 24:21~24:24) → [[features-vs-futures]].
+
+## 같은 자리, 다른 은유 — RTS 지휘관 (2026-10-09 · [[tech-bridge-agentcraft-strategy-game]])
+
+[[agentcraft|AgentCraft]]의 [[ido-salomon|Ido Salomon]]도 [[conductor|Conductor]]처럼 *여러 코딩 에이전트를 한 화면에서 다루는 앱* 을 만들고, 사람을 **가운데서 지휘하는 자리**(오케스트라 지휘자 대신 **RTS 지휘관**)에 둔다. 두 발표 모두 사람·에이전트 혼성 실시간 협업을 시연했다.
+
+갈리는 점: Holtz는 *"software factory"* 라는 말을 거부했지만 Salomon은 자기 자율 실행 기능에 대해 *"Now it's called software factories, but at the time it was just doing stuff autonomously."*(06:13~06:18)라며 **그 이름을 그냥 받아들인다** — 지휘 은유와 공장 기능이 한 제품 안에 공존한다. 위키의 독해: 은유 논쟁은 *사람이 어디 서는가* 의 문제이고, 화면 아래에서 자율 루프가 도는 것 자체는 양쪽 모두 받아들인다.
+
 ## References
 
 - [[tech-bridge-conductor-orchestras-not-factories]] (first-seen) · [[charlie-holtz]] · [[conductor]]
 - 관련: [[software-factory]] · [[factory-engineering]] · [[tech-bridge-warp-factory-engineering]] · [[frontier-engineering]] · [[persistent-agent-teams]] · [[agent-swarm]] · [[slop-free-zone]] · [[multiplayer-agent-context]]
+- [[tech-bridge-kent-beck-craft-augmented-development]] — 같은 편의 두 번째 목소리 (Kent Beck) · [[features-vs-futures]]
+- [[tech-bridge-agentcraft-strategy-game]] — RTS 지휘관 은유 (Ido Salomon, AgentCraft) · [[agent-attention-management]]

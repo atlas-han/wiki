@@ -3,11 +3,11 @@ title: Deny-and-Continue
 type: concept
 category: pattern
 tags: [agent-safety, claude-code, permission-system]
-related: [transcript-classifier, agentic-misbehavior, agent-harness-design]
+related: [transcript-classifier, agentic-misbehavior, agent-harness-design, hook-enforced-workflow]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-rails-harness-engineering]
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-10-09
 ---
 
 # Deny-and-Continue
@@ -34,6 +34,10 @@ Auto mode의 목적은 *`--dangerously-skip-permissions`를 대체하되 interru
 
 - **Outbound** subagent 위임: classifier가 **deny 가능** (작업 자체가 의심스러우면 시작도 안 함)
 - **Inbound** subagent 리턴: classifier는 **경고만 prepend** — 결과는 보존, orchestrator가 어떻게 다룰지 결정
+
+## 사용자 훅에서의 같은 패턴 — 사유에 대안을 담는다 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+Auto mode의 차단 사유는 *"우회를 시도하지 말라"* 는 **금지**다. [[joel-quenneville|Joël Quenneville]]의 사용자 정의 훅은 사유에 **대안 행동**을 넣는다 — `db/migrate` 쓰기를 막으며 *"Instead of writing here, I want you to run the generator."*(14:42~14:45). 근거: 목표가 있는 에이전트는 막히면 우회를 찾으니 *"making its easy path the right thing to do"*(15:00~15:02), *"agents want to take the easy path"*(15:12~15:14). 세션을 끊지 않고 사유와 함께 돌려보낸다는 점은 같고, **우회 억제를 지시가 아니라 경로 설계로** 한다는 점이 다르다. ⚠️ 측정 없음. → [[hook-enforced-workflow]]
 
 ## References
 

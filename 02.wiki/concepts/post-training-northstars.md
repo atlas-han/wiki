@@ -3,11 +3,11 @@ title: Post-training의 북극성 (RLHF · RLVR · 보정된 의사결정)
 type: concept
 category: technique
 tags: [post-training, rlhf, rlvr, calibration, objective-function]
-related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model]
+related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model, model-calibration, verifiable-goals]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions]
 created: 2026-09-20
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # Post-training의 북극성
@@ -54,9 +54,25 @@ updated: 2026-09-26
 - **RLVR 서술도 한 문장뿐**이다 — *"순수 정확성의 로그 오류율"*.
 - 화자는 **그 제3의 것을 파는 회사 소속**이다.
 - **2026-09-26:** 같은 회사의 모델 [[jev|Jev]]가 [[tech-bridge-jev-agent-harness]]([[langchain|LangChain]] 소개)로 들어왔다 — *상태 + 질문 → 타입이 지정된 답과 확률*, 텍스트 생성 없음(→ [[system-1-model]]). 이것이 위 *"API의 모양조차 다르다"* 의 구체형일 **수는 있지만**, 그 영상은 학습 목표·보정·Almeida를 **말하지 않는다.** **세 번째 행은 여전히 주장이지 관측이 아니다** — 반환 확률이 보정되어 있는지조차 주장되지 않았다.
+- **2026-10-09:** [[tech-bridge-jev-calibrated-decisions]]([[ibm|IBM]] 계열, 화자 무명)이 Jev = **RLCD**(reinforcement learning for calibrated decisions) 학습, 반환 확률 = 보정됨이라고 **진술**한다(09:21~09:48, 12:05). 위 *"반환 확률이 보정되어 있는지조차 주장되지 않았다"* 는 **주장은 생겼다**로 바뀐다. 그러나 화자 스스로 TypeSafe 자료의 재진술이라 밝히고(09:30~09:37) 손실 함수·데이터·보정 실측은 없다 — **세 번째 행은 여전히 관측이 아니다.** → [[model-calibration]]
+
+## 제3의 북극성에 이름이 붙었다 — RLCD (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]])
+
+[[ibm|IBM]] 계열 해설(화자 무명)이 같은 세 갈래를 **학습 절차**로 다시 설명한다:
+
+| 갈래 | IBM 편의 설명 | en-orig |
+|---|---|---|
+| RLHF | 사람이 두 응답 중 고름 → reward model. *"a model can learn to sound like really sure of itself even when it's wrong"* | 08:03~08:30 |
+| RLVR | 자동 채점(수학·단위 테스트). *"It doesn't reward the model for knowing how sure it should be"* | 08:35~09:09 |
+| **RLCD** | ***"reinforcement learning for calibrated decisions"*** — 확률이 맞으면 보상, [[jev\|Jev]]의 학습 방식 | 09:21~09:48 |
+
+→ 위 표의 *"제3 ([[typesafe-ai|TypeSafe]]) — 보정된 의사결정 — ⚠️ 미출시 · 검증 불가"* 에 **기법 이름(RLCD)과 모델(Jev)** 이 붙었다. ⚠️ 여전히 **TypeSafe 자료의 제3자 재진술**이고(*"I'll stick to what they have said"*, 09:33~09:37) 화자는 Almeida를 언급하지 않는다. → [[model-calibration]]
+
+> ⚠️ **Contradiction(표현): RLVR과 확신.** 이 페이지의 RLVR = *"순수 정확성의 로그 오류율"*(Almeida, 15:56~16:11, ko 번역 기준). 로그 손실은 그 자체로 보정을 보상하는 채점 규칙이다. IBM 편은 RLVR이 *"얼마나 확신해야 하는지엔 보상하지 않는다"* 고 단언한다. 같은 회사의 서사를 두 화자가 다르게 옮겼을 수 있다 — **Almeida 편 en-orig 재확인 전까지 미해소.**
 
 ## References
 
 - [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen
 - [[diogo-almeida]] · [[typesafe-ai]]
 - 관련: [[rlhf]] · [[preference-reward-asymmetry]] · [[assistance-vs-automation]] · [[sutton-bitter-lesson]] · [[decision-quality]]
+- [[tech-bridge-jev-calibrated-decisions]] — RLCD (IBM 계열) · [[model-calibration]]

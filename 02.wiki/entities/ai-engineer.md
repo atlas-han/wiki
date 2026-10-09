@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-09-15
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # AI Engineer
@@ -105,3 +105,17 @@ updated: 2026-10-03
 ## "death of the code review" 연속 세션 (2026-10-03 · [[tech-bridge-death-of-code-review]])
 
 [[laurie-voss|Laurie Voss]]의 첫머리: *"Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing[=scheduling] decisions get made, but uh Swix decided it would be funny for those two to be backtoback."*(00:00~00:15) — **같은 제목 세션 두 개가 연속 배치**됐다는 화자 진술. *"Swix"*(en *"Swish"*)는 swyx로 판독(⚠️ 추정). 행사 단서: *"He famously did that at AIE last year"*(18:36~18:38, Dex Horthy), *"There are enough pitches for ARISE at this conference"*(22:15~22:18). 언급 사건으로 보아 **2026년 6월 이후**(FrontierCode *"launched it in June"* 07:58~08:00). ⚠️ 행사명·회차·도시는 발화되지 않았다 — 09-07 절차대로 다른 AI Engineer 소스와 같은 회차로 묶지 않는다. 앞 세션은 이 위키에 없다.
+
+## 도시가 발화됐다 — "Thank you, Paris" (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]의 발표가 *"It's been a really nice conference. (…) Thank you, Paris."*(22:23~22:30)로 끝난다. 설명란은 *"AI 엔지니어 파리 2026"*. **이 위키의 AI Engineer 계열 소스에서 도시가 발화된 첫 사례**다(지금까지는 *World's Fair*·*AIE* 같은 이름뿐). 화자는 *"previous AI engineer talks I've given"*(08:33~08:36) — 이 행사 무대에 여러 번 선 사람.
+
+> ⚠️ **연도·날짜는 설명란에만**(발화 없음). 파리 회차가 World's Fair·다른 소스의 회차와 어떤 관계인지 근거 없음 — 09-07 절차대로 별개로 취급. *"software factory … the biggest buzz word of the day"*(01:02~01:05)는 Conductor 편의 *"The whole like talk track today is about software factories"* 와 비슷한 분위기이나 **같은 회차라는 근거가 없다.**
+
+## 설명란 링크만 있는 경우 (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+[[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]]) 발표의 설명란에 `https://ai.engineer` · `@aiDotEngineer` 링크가 있지만 **자막엔 행사명이 없다**(자기소개 구간이 잘렸다). 현장 단서는 *"there are now code review agents. I'm sure there's a lot of them around this room right now"*(02:09~02:13)뿐. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 적는다.
+
+## 부스 "U4" — 벤더 2인 발표 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 발표는 설명란에 **https://ai.engineer** 링크를 걸지만 자막엔 행사명이 없다. 행사장 단서: *"You can see this at our booth (…) We are in U4. It's exactly this way across a few streets."*(16:55~17:03 — `en`·ko는 *"UZ4"*, ⚠️ 번호 미확정; LlamaIndex 편의 *"LG47"* 과 같은 종류의 부스 번호). 녹화는 6월 21일 이후(사내 차트 날짜), 연도 미발화. ⚠️ ko는 *booth* 를 **"웹사이트"** 로 옮겨(16:53) 행사장 단서가 사라진다.

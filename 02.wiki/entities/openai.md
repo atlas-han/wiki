@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # OpenAI
@@ -167,3 +167,13 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - **CriticGPT(2024)** — 모델 코드의 버그를 잡는 모델, 사람+모델이 각자 단독보다 나았다(10:13~10:26). → [[mergeability-gap]]
 
 ⚠️ 이 위키의 [[ryan-lopopolo]] 페이지는 그가 2026년 2월 Codex 완전 자율화 글을 썼다고 기록한다 — **같은 글인지 확인하지 않았다.** ⚠️ 19:06~19:12 *"OpenAI is running uh lived with the results um and reversed in public"* 은 문맥상 Dex Horthy에 대한 말로 읽는다 — OpenAI의 번복으로 기록하지 않는다.
+
+## DevDay 2026 — Dots·Space·구독 이동, 그리고 "집중"과의 긴장 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+키노트 당일 [[sam-altman|Altman]] 대담. 출시물로 언급된 것: [[openai-dots|Dots]](상시 가동 개인 에이전트) · [[chatgpt-space|Space]](오피스 스위트형 3종, live documents) · Decisions API(⚠️ 정체 미설명) · ChatGPT 앱·마켓플레이스 · [[codex|Codex]] 네이티브 앱·플러그인 확장 · ChatGPT 구독 토큰을 앱 개발자에게([[bring-your-own-subscription]]) · *"ultra fast"* 추론 등급([[inference-speed-as-capability]]). 진행자 집계 *"22 new things today"*(작년 약 9, 재작년 4~5).
+
+- **규모 자기 서술** — *"we are not a gigantic company (…) maybe the big tech companies have like a hundred times more people than we do"*(26:16~26:25, ⚠️ 화자도 *"I don't know"*).
+- **자체 칩** — *"our own chip is going to be an incredible contributor to letting us get very fast inference"*(29:58~30:04). ⚠️ 위 3부작의 *Jalapeno* 와 같은 것인지 미확인.
+- **플랫폼 입장** — *"we're going to give you all of the same tools we use"*, *"no other AI lab would do"*(24:22~24:28).
+
+> ⚠️ **Contradiction: '집중' 대 '22개 출시'.** 위 *"올해의 주제는 '집중'"*(Brockman, 09-20)·*"사이드 퀘스트가 너무 많았다"*(Altman, 09-06)와, 같은 해 DevDay의 22개 출시·오피스 도구 3종·마켓플레이스. Altman은 *"practice what we preach"*·*"AI 없이는 못 했다"* 로만 설명한다. 출시물 대부분이 ChatGPT 한 표면에 묶인다는 점이 *"단일 통합 스택"* 과 맞을 수는 있으나 **화자의 말은 아니다.**

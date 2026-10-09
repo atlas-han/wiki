@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [harness, agent-loop, determinism, tests, guardrails, adk, memory]
 aliases: [선형 하네스, 폐루프 하네스, closed loop harness, 하네스 설계의 세 결정]
-related: [agent-harness-design, harness-engineering, verifiable-goals, generator-evaluator-pattern, ralph-wiggum-method, context-resets-and-compaction, agent-memory, tools-and-context-over-harness, workflow-vs-agent]
+related: [agent-harness-design, harness-engineering, verifiable-goals, generator-evaluator-pattern, ralph-wiggum-method, context-resets-and-compaction, agent-memory, tools-and-context-over-harness, workflow-vs-agent, human-plumbing]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-rails-harness-engineering]
 created: 2026-09-23
-updated: 2026-09-24
+updated: 2026-10-09
 ---
 
 # 선형 하네스 vs 폐루프 하네스
@@ -72,3 +72,7 @@ updated: 2026-09-24
 ⭐ **상한을 모델마다 튜닝하는 하이퍼파라미터로 둔다**는 것이 새 점이다. 그리고 데모가 그 필요를 보여 준다 — 같은 질문을 한 번은 **16단계**(47:30), 다시 **2단계**(53:03~53:08)에 풀었다. **분산이 크면 평균이 아니라 꼬리를 자를 상한이 필요하다.** 루프 안쪽은 반대 요구다 — *"실패에 강해서 루프를 절대 빠져나가지 않게"*(33:53~33:59), 데모에서도 오류를 감지하고 *"계속 시도"*(47:35~47:44). **안에서는 버티고, 바깥에서 예산으로 끊는다.**
 
 ⚠️ 8~12는 **측정이 아니라 개인 경험**이다. ⚠️ *hysteresis* 는 공학에서 **이력 의존(되돌아올 때 다른 경로)** 을 뜻하는데 화자는 **상한값**의 뜻으로 쓴다 — 비표준 용법이고, 챕터 제목도 *"이력(Hysteresis) 변수"* 로 직역했다. 이 위키는 판정하지 않는다.
+
+## 가장 작은 폐루프 — Ruby 래퍼 하나 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]은 폐루프 하네스를 슬라이드 몇 장으로 짓는다: FizzBuzz 스펙을 주고 Anthropic API를 한 번 부르는 Ruby 래퍼(선형) → 15로 나누기 줄이 영원히 안 걸리는 *"correctish"* 결과(04:44~04:56) → 사람이 스펙을 돌려 결과를 붙여 넣는 [[human-plumbing]] → 그 절차를 래퍼 안의 **루프**로(06:46~06:55). *"a loop allows an agent to respond to failure. It means that the agent is now self-healing and that the first generation doesn't have to be perfect"*(07:27~07:38), *"The loop plus the tests are what are going to steer the agent to the right choice."*(07:57~08:02). 이 페이지의 *"코드 수정 → 테스트 → 실패면 반복"* 과 같은 구조이고, 상용 하네스(Cursor·Claude Code·Codex)의 심장이 이 루프의 일반판이라고 한다(08:08~08:14 — ⚠️ 화자 단언).

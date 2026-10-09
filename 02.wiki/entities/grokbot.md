@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
 created: 2026-09-01
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # GrokBot
@@ -77,3 +77,9 @@ updated: 2026-09-26
 - 화자 소개가 *"**SpaceX AI에서** GrokBot을 만든다"*(00:03~00:07)로 바뀌었다. ⚠️ 이 페이지 첫 줄의 *"Cursor의 … 제품"* 은 고치지 않는다 — 화자는 *"Cursor가 SpaceX AI의 일부가 되었다"* 는 취지로만 말한다(→ [[cursor]]).
 
 > ⚠️ **당사자의 제품 권유**이고 커넥터·루틴의 가용 범위, 비용, 실패 사례는 없다. ko·en-orig 모두 제품명을 여러 번 틀린다(en-orig *graphbot·Rockbot·Grockbots* / ko *"GraphBot"·"성장봇"*).
+
+## 첫 버전은 god file 8개, 그리고 두 루프의 연결 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+- **재작성 전 상태가 구체화됐다** — *"the very first versions of Grokbot were composed of like eight god files"*(05:47~05:53). 위 *"바이브 코딩된 그린필드 → PR 600건+ Dune 재작성"* 의 출발점이다. → [[dune-architecture]]
+- **바깥 루프를 도구 중립으로** — *"maybe you have the Slack MCP, right? Or you have your own harness that you've built a Slack subscription into for a particular Slack channel"*(07:04~07:15) → 제보마다 검증 스킬로 재현하고 *"verify that it still exists on main, and confirm it wasn't something like the user's setup, their data, or maybe they didn't install a dependency"*(07:43~07:56). *"creating those two loops and connecting them is a really important part of the job these days"*(07:56~08:06).
+- ⚠️ 바깥 루프를 자동화하는 도구를 꼽는 자리가 *"tools likeot"*(ko 트랙 영어 구간 06:42)로 **잘렸다.** 문맥상 GrokBot일 개연성이 높으나 판독하지 않는다.

@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -126,3 +126,36 @@ G20 발언은 3부작의 *"두 마음"* 과 **다른 축**이다. 고용 영향�
 **이 페이지의 기존 입장들이 모두 사무·지식 노동(작업 자동화·대체·창업)을 다뤘다면, 이것은 AI 인프라 구축이 만드는 **물리적 노동 수요**다.** ⚠️ 판매자의 진술이고 수치(일자리 수·부족 규모)가 없다. 그리고 **건설 수요는 구축 기간에 묶인다** — 공장이 다 지어진 뒤의 고용은 말하지 않는다.
 
 ⚠️ 설명란은 *"인간의 일자리를 없애는 것이 아니라 (…) 파트너로서의 AI"* 를 요약하지만 **영상에 그런 발화는 없다.**
+
+## Altman — 잠재 수요가 예상보다 컸다 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+> *"I think I was never like as doomery about the job stuff as other people, but it still has surprised me somewhat on the upside of just how much latent demand existed in the world and how and also how much like people have remained at the center of everything that is happening with AI."* (00:44~01:01)
+
+경계도 긋는다 — *"some areas of work where there's actually not much creativity required and we don't care about the person doing it and many of those tasks or jobs will be done by AI"*(01:07~01:20). 그리고 개발자: *"they've never been able to do more, but there's never been a higher bar either"*(00:34~00:40).
+
+틀은 **르네상스 대 산업혁명** — 산업혁명은 사람을 *"cognitive machine doing some extremely specialized thing"* 으로 만들었고(06:23~06:28), AI는 사람 중심이어야 한다. 09-20 [[greg-brockman|Brockman]]의 *"창업 르네상스"* 와 같은 비유다.
+
+⚠️ 09-06 *"두 마음 — 예상·기대보다 적었다"* 와 **같은 방향의 반복**이고 새 근거는 없다. *"we don't care about the person doing it"* 이 **어떤 일인지** 예시가 없다.
+
+## 연 10~20 GW = 일자리 100만 — 숫자가 붙은 블루칼라 수요 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[jensen-huang|Huang]]이 CBS의 *"블루칼라 절호의 기회"* 에 처음으로 **규모**를 붙인다:
+
+> *"across all of the United States, uh, somewhere between 10, uh, 20 gawatts a year. Let's just just estimate that creates just, you know, probably about a million jobs in in building out these data centers."* (09:03~09:13)
+
+발전소·데이터센터 건설·냉각·배관공(09:14~09:22), *"first time in 50 years we are re-industrializing the United States creating a whole bunch of blueco collar jobs"*(09:27~09:33), *"we want an economy that has a shape that includes white collar jobs and blue collar jobs not just white collar jobs"*(09:37~09:44).
+
+[[elon-musk|Musk]]의 지역 진술: Colossus 주변은 *"there's more jobs than than there are people"*(10:23~10:27) — 과거엔 실업이 꽤 있었다고.
+
+- ⚠️ **"100만"은 화자가 스스로 *estimate* 라 부른 수**이고 산출 근거가 없다. 건설 일자리인지 상시 고용인지 구분하지 않는다. Musk의 진술은 지역 이름 없는 한 사례.
+- 같은 무대의 [[tom-brown|Tom Brown]]은 반대 방향(소프트웨어 엔지니어링)을 말한다 — 모델이 쓰는 소프트웨어가 늘어 제품이 싸지고, 엔지니어링을 *"both people and super intelligence"* 가 한다(19:13~19:25). **화이트칼라 쪽 영향은 패널에서 다뤄지지 않는다.**
+
+## Huang — 아이들에게: "Go to college", "Engage AI" (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+진행자가 통념을 늘어놓는다 — *"don't become a radiologist, which has been debunked"*, 컴공 하지 마라, *"Don't go to college. Do HVAC."* [[jensen-huang|Huang]]: *"We need radiologists"*, *"We need computer science nerds"*, ⭐ ***"Go to college."***(20:15~20:32)
+
+- *"What I would advise all children is this. Engage AI. Use it. Use it to empower yourself. Use it to lift yourself."*(21:28~21:37)
+- 근거는 역사: 모든 산업혁명이 *"gave us more ambition, more aspiration. It lifted us"*(21:48~21:53) — 비행기 비유.
+- 틀은 *"not doomerism or Pollyannaism — responsible optimism"*(20:50~21:03).
+
+G20의 *"직업은 남고 작업이 자동화"*, CBS·백악관 패널의 *블루칼라 수요*에 이어 **진로 조언**으로 같은 입장을 반복한다. ⚠️ 근거는 역사 유비뿐이고 수치가 없다. 블루칼라 수요를 강조한 앞 소스들과 달리 여기선 **대학을 가라**고 하는데, 진행자의 *"Do HVAC"* 를 부정한 것이지 기술직을 낮춘 것은 아니다(위키의 독해).

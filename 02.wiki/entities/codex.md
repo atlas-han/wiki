@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots]
 links:
   - https://openai.com/index/nextdoor/
 created: 2026-06-27
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # Codex
@@ -93,3 +93,10 @@ updated: 2026-10-03
 ## 자기 리뷰 루프 — "리뷰를 리뷰하는 에이전트" (2026-10-03 · [[tech-bridge-death-of-code-review]])
 
 [[laurie-voss|Laurie Voss]]가 [[openai|OpenAI]] 2월 글을 요약(2차 인용): *"codeex[=Codex] reviews its own changes uh then calls in more agents to review those reviews um in a loop until every agent reviewer is satisfied"*(17:23~17:34). 변경마다 Codex를 **부팅 가능**하게 해 Codex가 Codex 사본을 띄워 UI를 보고 버그 수정을 확인하고, **로깅 스택 전체**를 에이전트에 노출했다(17:34~17:48). → [[automated-code-review]] · [[agent-visual-qa]]
+
+## CEO의 Slack 검색 도구로, 그리고 네이티브 앱 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+- [[sam-altman|Altman]]: *"Slack search is obviously terrible. So I mostly use codecs[=Codex] to search it"*(13:53~13:58), *"codeex doesn't usually fail"*(14:13~14:15) — 그 Codex로 10~20분 못 찾은 것을 [[openai-dots|Dot]]이 다음 날 찾았다(스크린샷 이미지). 코딩 밖 일상 도구로 쓰인 두 번째 1인칭 사례(첫째는 09-06 진행자의 우체국 양식).
+- 예전엔 *"a little side project for myself like I used to do with Codeex"*(26:51~26:53) — 이제는 Dots로 실제 출시물을 내고 싶다.
+- DevDay 2026: 진행자 [[dan-shipper|Dan Shipper]]의 *"Codex native apps (…) You finally did it"*, *"plug-in extensions"*(20:48~20:57). ⚠️ 무엇인지 설명 없음.
+- ⚠️ ko는 Codex를 **"코덱"** 으로 옮긴다(13:55, 14:05, 14:13).

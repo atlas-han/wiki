@@ -3,12 +3,12 @@ title: 행동 가역성 (Action Reversibility)
 type: concept
 category: framing
 tags: [reversibility, blast-radius, sandbox, trust, undo]
-aliases: [가역성, undo 없음, 폭발 반경]
-related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution]
+aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
+related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck]
 created: 2026-09-09
-updated: 2026-09-11
+updated: 2026-10-09
 ---
 
 # 행동 가역성
@@ -66,3 +66,11 @@ updated: 2026-09-11
 - [[tech-bridge-knowledge-work-agent-infrastructure]] · [[composio]] · [[karan-vaidya]]
 - [[tech-bridge-agent-to-agent-as-search]] — 정보 공개의 비가역성 (2026-09-10)
 - [[tech-bridge-build-time-vs-runtime-tools]] — 되돌릴 수 없는 행동을 도구에서 뺀다 · 가역성=도구 분류 기준 (2026-09-11)
+
+## PR마다 적는 가역성 — one-way / two-way door와 merge danger (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]은 이 개념을 **PR 리뷰의 분류 기준**으로 쓴다 — *"this AWS terminology, which is is it a one-way door or is it a two-way door?"*(17:21~17:29). 이 페이지의 첫 표(코드 = 사후 신뢰, 되돌릴 수 있다)와 같은 출발: *"most PRs that you have will be two-way doors. You can merge the PR and then always pull it back later"*(17:29~17:34), 토목 기사라면 *"that bridge is going down"*(17:41~17:46). 그러나 **코드 안에도 one-way door가 있다** — *"a very simple change accidentally blasts out an email to 60,000 people"*, *"expensive migrations or data loss"*(17:56~18:09). 여기에 **blast radius**(*"What can go wrong? And if things do go wrong, how bad is it?"* 18:12~18:19)를 더해, 모든 PR 하단에 **merge danger** 요약을 붙인다(*"this one is a two-way door. Its blast radius is localized"* 18:25~18:29).
+
+Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이쪽은 **코드 변경 하나하나**를 가른다 — 이메일 발송·DB 마이그레이션은 코드 안에 있는 지식 노동형 부작용이다. → [[risk-proportional-human-review]] · [[agent-distributed-systems]]
+
+> ⚠️ 60,000명 이메일이 실제 사건인지 가상 예인지 미발화. merge danger 판정을 누가(에이전트? 사람?) 하는지도 발화되지 않는다 — PR 스킬은 *"currently in progress"*(16:37~16:40).

@@ -2,13 +2,13 @@
 title: TypeSafe (TypeSafe AI)
 type: entity
 category: org
-tags: [startup, stealth, post-training, automation, calibration, jev, system-1-model]
+tags: [startup, stealth, post-training, automation, calibration, jev, system-1-model, rlcd]
 aliases: [TypeSafe, TypeSafe AI, 타입세이프]
 links:
   - https://typesafe.ai/
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-20
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # TypeSafe (TypeSafe AI)
@@ -51,10 +51,18 @@ updated: 2026-09-26
 
 **여전히 미확인인 것**: ① **Jev가 Almeida가 말한 "제3의 목표"(보정된 의사결정)로 학습된 모델인지** — LangChain 편은 Almeida·보정·RLHF·post-training을 **한 번도 말하지 않는다.** *"확률을 반환"* 과 *"API의 모양이 다르다"* 가 양립한다는 정황뿐이고 **이 위키는 둘을 연결하지 않는다.** ② 반환 확률이 **보정되어 있는지.** ③ 모델 크기·아키텍처·학습 데이터·정확도. ④ *"20~200배 빠르고 40~400배 저렴"* 의 측정 조건(⚠️ 파트너의 구두 주장, 출처 없음).
 
+### 2026-10-09 갱신 — "보정된 의사결정"과 Jev가 한 문장에 묶였다
+
+[[tech-bridge-jev-calibrated-decisions]]([[ibm|IBM]] 계열 1인 해설, 화자 무명)이 위 미확인 ①·②에 **제3자 진술**을 준다: Jev는 **RLCD(reinforcement learning for calibrated decisions)** 로 학습되고(09:21~09:30), 반환 확률은 보정돼 있다(12:05~12:08). 화자는 출처를 *"what they[=TypeSafe] have said"*(09:33~09:37)로 돌린다 — **TypeSafe 자료 자체는 이 위키가 여전히 읽지 않았다.** 같은 화자가 회사가 질문 유형에 이름을 붙인다고 말하는데(*"which type safe calls a null"*, 04:54) ko는 이를 **"어떤 유형의 안전장치"** 로 옮겼다. → [[model-calibration]] · [[jev]]
+
+### 2026-10-09 갱신 — 외부 개발자의 Jev 데모와 발표 시점 단서
+
+[[tech-bridge-goodbye-slop-state-machines]]에서 [[david-khourshid|David Khourshid]](XState)가 *"A couple days ago, I was pretty much nerd sniped when Type Safe announced Jev."*(17:52~17:56)라 하고 Jev로 상태 머신 기반 에스프레소 데모를 했다. **Jev 발표는 그 Agent Conf 2026 발표 며칠 전** — 여전히 절대 날짜는 없다. *"the creator said, 'You're absolutely correct.'"*(18:38~18:40)의 creator가 TypeSafe 쪽 인물인지 미발화. 아키텍처·자금은 여전히 전무(학습은 위 갱신의 RLCD 이름·제3자 재진술뿐).
+
 ## 미해결 사항
 
 - 모델·제품·아키텍처·학습 데이터·평가 — ~~전부 없음~~ → **모델 이름([[jev|Jev]])·입출력 모양·용도만 확인**(2026-09-26), 아키텍처·학습 데이터·평가는 **여전히 없음.**
-- *"보정된 의사결정"* 이 손실 함수 수준에서 무엇인지 — 이름뿐이다.
+- *"보정된 의사결정"* 이 손실 함수 수준에서 무엇인지 — 이름 **RLCD**와 *"확률이 맞으면 보상"* 까지(2026-10-09, 제3자 재진술). 손실 함수·데이터는 여전히 없음.
 - 설립·규모·자금.
 - ~~'Jev' — 설명란에만 존재.~~ → 2026-09-26 [[tech-bridge-jev-agent-harness]]로 **이름·용도·API 모양은 확인**. 학습 목표·정확도는 여전히 없음 → [[jev]]
 
@@ -62,6 +70,8 @@ updated: 2026-09-26
 
 - [[tech-bridge-rlhf-assistance-vs-automation]] — first-seen
 - [[tech-bridge-jev-agent-harness]] — Jev의 첫 실질 서술 (LangChain, 2026-09-25 업로드) · [[jev]] · [[system-1-model]] · [[langchain]]
+- [[tech-bridge-jev-calibrated-decisions]] — RLCD · 보정 주장 (IBM 계열, 2026-10-03 업로드) · [[model-calibration]]
+- [[tech-bridge-goodbye-slop-state-machines]] — 외부 개발자 Jev 데모 · 발표 시점 상대 단서 · [[david-khourshid]]
 - [[diogo-almeida]] · [[openai]]
 - 관련: [[post-training-northstars]] · [[assistance-vs-automation]] · [[rlhf]] · [[decision-quality]]
 - 외부: <https://typesafe.ai/>

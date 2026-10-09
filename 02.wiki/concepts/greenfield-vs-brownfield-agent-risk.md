@@ -6,9 +6,9 @@ tags: [legacy, refactoring, guardrails, big-tech, risk, agents]
 aliases: [브라운필드가 안전하다, 대기업 문제가 모두의 문제]
 related: [organic-architecture, shortest-path-architecture, hard-vs-soft-enforcement, ai-slop, dune-architecture, agent-org-adoption, system-level-quality]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-legacy-code-modernization-ai]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-legacy-code-modernization-ai, tech-bridge-sourcegraph-codebase-visibility]
 created: 2026-09-13
-updated: 2026-09-18
+updated: 2026-10-09
 ---
 
 # 그린필드가 브라운필드보다 위험하다
@@ -70,3 +70,15 @@ updated: 2026-09-18
 **모순이 아니다.** 두 소스는 서로를 언급하지 않지만 **같은 변수(가드레일의 유무)의 양 끝**을 말한다 — 옛 코드가 에이전트에게 안전한지는 **나이가 아니라 가드레일**이 정한다는 결론에 양쪽이 각자 도달한다. 이 페이지의 제목(*그린필드가 더 위험*)은 **가드레일 있는 브라운필드**에 한해 성립하고, IBM 편의 레거시는 그 조건 밖이다.
 
 → [[legacy-code-modernization]]. IBM 편의 처방(현대화의 세 축 중 **개발 프로세스** — 자동 테스트·지속 배포)은 사실상 *브라운필드를 Lauren Tan의 조건 쪽으로 옮기는 일* 이다 — ⚠️ 이 연결은 위키가 놓는 것이다.
+
+## ⚠️ 저장소 경계 너머의 브라운필드 (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+> ⚠️ **Contradiction.** [[lauren-tan]]은 *대기업 인프라가 이미 가드레일이라 브라운필드가 안전하다*고 했다. [[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]])는 **바로 그 대기업의 거대한 레거시 코드베이스가** *"beginning to decay"*(02:35~02:42) 한다고 한다 — 원인은 *"the volume of code"*(03:46~03:52).
+
+| | Tan (09-12 업로드) | Adler (10-06 업로드) |
+|---|---|---|
+| 단위 | 잘 세팅된 **저장소·플랫폼** | **수만 저장소**(*"50,000 repo codebase"* 05:03, 은행 *"90,000 repositories"* 06:26) |
+| 대기업 인프라 | 가드레일 | 에이전트가 **보지 못하는** 범위 |
+| 에이전트의 실패 | 그린필드에서 편의로 수렴 | 브라운필드에서 *"already have a library (…) but your agent doesn't know that"*(03:07~03:10) |
+
+위키의 독해: Tan의 조건 *"이미 잘 세팅돼 있다면"* 이 저장소 **안**에서는 성립해도 저장소 **사이**에는 가드레일이 아니라 사각지대가 있다. 두 화자 모두 이 경계를 말하지 않는다. Adler의 근거는 72% 통계(출처 미발화)와 익명 인용뿐 → [[large-scale-code-changes]]

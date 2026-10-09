@@ -3,11 +3,11 @@ title: RLHF (인간 피드백 기반 강화 학습)
 type: concept
 category: technique
 tags: [rlhf, post-training, alignment, human-preference, reward-model]
-related: [preference-reward-asymmetry, assistance-vs-automation, post-training-northstars, reward-hacking, intent-alignment, decision-quality]
+related: [preference-reward-asymmetry, assistance-vs-automation, post-training-northstars, reward-hacking, intent-alignment, decision-quality, model-calibration]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jev-calibrated-decisions]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-09
 ---
 
 # RLHF (인간 피드백 기반 강화 학습)
@@ -49,6 +49,8 @@ updated: 2026-09-20
 | 다른 북극성이 가능하다(RLVR·보정된 의사결정) | [[post-training-northstars]] |
 | 안전의 초기 접근이 *"가장자리를 둘러싸는"* 표면 조치였다 | [[tech-bridge-brockman-agi-era-defender-window]] 03:53~04:32 |
 
+**두 번째 목소리 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]]).** [[ibm|IBM]] 계열 해설: *"People tend to like answers that sound confident. So an unfortunate side effect of RLHF is that a model can learn to sound like really sure of itself even when it's wrong."*(08:21~08:30) — [[preference-reward-asymmetry]]와 같은 진단. ⚠️ 이 해설은 TypeSafe의 Jev를 소개하는 맥락이라 **Almeida(TypeSafe)의 서사와 독립이라고 보기 어렵다.** 대안으로 제시되는 것은 RLVR이 아니라 **RLCD** → [[model-calibration]]
+
 ## ⚠️ 이 페이지에 없는 것
 
 - **알고리즘의 실제 절차** — 보상 모델 학습, PPO/DPO 등. **두 소스 모두 "다들 아시니 넘어간다"고 명시적으로 건너뛴다.**
@@ -61,3 +63,4 @@ updated: 2026-09-20
 - [[tech-bridge-brockman-agi-era-defender-window]] — 기원
 - [[diogo-almeida]] · [[greg-brockman]] · [[openai]]
 - 관련: [[assistance-vs-automation]] · [[preference-reward-asymmetry]] · [[post-training-northstars]] · [[reward-hacking]] · [[intent-alignment]]
+- [[tech-bridge-jev-calibrated-decisions]] — RLHF의 확신 부작용 (IBM 계열)

@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production]
 created: 2026-09-08
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 # IBM
@@ -178,3 +178,37 @@ updated: 2026-10-01
 **같은 벤더가 데이터의 양쪽을 말했다** — 09-26 편은 데이터가 *갇혀 있는 것*(열어라), 이번 편은 데이터가 *흐르는 것*(감시하라). 두 편은 서로를 언급하지 않는다 → [[agents-as-catalyst]] · [[ai-data-exposure]].
 
 09-30 편이 더한 것: [[ai-data-exposure]] · [[lineage-driven-risk-visibility]], 그리고 [[retrieval-augmented-generation]] · [[agent-governance-layers]] · [[model-context-protocol]] · [[shift-left-security]] · [[lethal-trifecta]] 보강.
+
+## 아홉 번째 소스 — 처음으로 남의 회사 제품을 설명한다 (2026-10-09)
+
+[[tech-bridge-jev-calibrated-decisions]](10-03 게시, 14:51 1인 화이트보드 해설, 공식 챕터 10개)로 IBM은 **소스 아홉 편**을 가진 조직이 됐다. 판정 근거: 해시태그 `#IBMTechnology` + 관련 링크 `ibm.biz` 둘(*"New Frontier AI Models"*, *"IBM AI 월간 뉴스레터"*). 자막엔 IBM이 한 번도 나오지 않는다.
+
+| | 09-07 ~ 09-30 (여덟 편) | **10-03 (이번)** |
+|---|---|---|
+| 발표자 | 무명 셋 · 설명란에만 다섯 | **무명** — 설명란에도 자막에도 없음 |
+| 촬영 시점 | 여덟 번 미확정 | **미확정**(*"a new AI model"*, *"as of today"* 뿐) |
+| 자사 제품 | 없음 | **없음** — 대신 **타사 스타트업([[typesafe-ai\|TypeSafe]])의 모델 [[jev\|Jev]]** 가 주제 |
+| 주제 | 지식·품질·직무·보안·레거시·토큰 경제·촉매·데이터 노출 | **System 1 모델 · 보정된 확률 · RLCD** — [[model-calibration]] |
+
+> **처음인 것** — IBM 편이 **특정 회사의 특정 모델**을 이름으로 설명한다. 이전 여덟 편은 일반 메커니즘(MCP·RAG·DLP 등)만 다뤘다. 화자는 *"TypeSafe haven't published much about Jev's architecture, so I'll stick to what they have said"*(09:30~09:37)라고 **출처를 타사 공개 자료에 돌린다.** IBM과 TypeSafe의 관계는 소스가 말하지 않고 위키도 추정하지 않는다.
+>
+> **관찰 유지, 아홉 번째** — 자사 제품명 없음·촬영 시점 미확정이 아홉 번 연속. 수치는 칠판 예시 값뿐이다.
+
+10-03 편이 더한 것: [[model-calibration]], 그리고 [[jev]] · [[typesafe-ai]] · [[system-1-model]] · [[post-training-northstars]] · [[rlhf]] · [[preference-reward-asymmetry]] · [[risk-proportional-human-review]] 보강.
+
+## 열 번째 소스 — 프롬프트에서 프로덕션까지, 그리고 판정 근거가 가장 약하다 (2026-10-09)
+
+[[tech-bridge-prompt-to-production]](10-07 게시, **7:03** 1인 해설, 공식 챕터 11개)로 IBM은 **소스 열 편**을 가진 조직이 됐다. ⚠️ **판정 근거: 설명란 관련 링크 둘이 `ibm.biz`(설명 문구 없음) — 그것뿐이다.** 해시태그(`#AI코딩 #에이전트코딩 …`)에 IBM이 없고 링크 설명(*"IBM AI 뉴스레터"* 등)도 없다. 이전 아홉 편 중 **가장 약한 판정**이다.
+
+| | 09-07 ~ 10-03 (아홉 편) | **10-07 (이번)** |
+|---|---|---|
+| 발표자 | 무명 넷 · 설명란에만 다섯 | **무명** — 설명란에도 자막에도 없음 |
+| 촬영 시점 | 아홉 번 미확정 | **미확정** |
+| 자사 제품 | 없음(10-03 편은 타사 모델 Jev 해설) | **없음** — 수치·사례도 0개 |
+| 주제 | 지식·품질·직무·보안·레거시·토큰 경제·촉매·데이터 노출·Jev(보정) | **프롬프트 → 프로덕션: 계획 → 자가 수정 실행 → 증거** |
+
+> **관찰 유지, 열 번째** — 자사 제품명 없음·촬영 시점 미확정이 열 번 연속. 이번 편이 **이 위키의 IBM 편 중 최단편**(7:03)이다.
+
+**같은 원리를 또 말했다** — *작성자가 아니라 증거를*([[behavior-validated-trust]], 09-08·09-17·09-18에 이어)과 *구현은 싸지고 판단이 차별화*([[decision-quality]], 09-08·09-23·09-26에 이어)를 **한 편에** 담았다. 이번 편은 서로를 언급하지 않는 앞선 편들과 달리 둘을 **하나의 워크플로(계획 → 실행 → 검증)의 앞뒤**로 놓는다.
+
+10-07 편이 더한 것: [[agent-change-evidence]], 그리고 [[verification-bottleneck]](다섯 번째 답 · ⚠️ Contradiction: 실행은 병목이었나) · [[behavior-validated-trust]] · [[decision-quality]] 보강.

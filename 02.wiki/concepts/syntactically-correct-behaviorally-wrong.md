@@ -6,9 +6,9 @@ tags: [code-translation, migration, testing, verification, legacy, trust]
 aliases: [동작이 틀린 번역, 컴파일되지만 틀리다]
 related: [behavior-validated-trust, legacy-code-modernization, shift-left-security, decision-quality, verifiable-goals, generator-evaluator-pattern, risk-proportional-human-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-kent-beck-craft-augmented-development]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-09
 ---
 
 # 문법은 맞고 동작은 틀리다
@@ -32,6 +32,14 @@ updated: 2026-09-18
 | **09-18** | **[[tech-bridge-legacy-code-modernization-ai]]** | **문법적으로 옳은 번역**(구문 정합) |
 
 세 번째가 더하는 것은 **비교 대상이 있다**는 점이다 — 앞의 둘은 *코드가 옳은가* 였고, 이쪽은 *원본과 같은가* 다. 검증이 **기능 검증**이 아니라 **동등성 검증**이 된다.
+
+## 범용 코딩으로 — "plausible, but actually working, no" (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]이 같은 구분을 마이그레이션이 아니라 **AI 코딩 일반**에 건다. *"just because uh genie can create syntactically correct programs doesn't mean that they're better than a programmer or even that they actually work."*(07:53~08:06) — *"They're plausible. Genie is really good at plausible, but actually working, no."*(08:42~08:49)
+
+처방은 **적대적 관점** — *"You made yourself happy, but did you make me happy? (…) How hard do I have to push?"*(10:37~10:47). 이유: 프로그래머가 *"works by construction"* 으로 보장하던 것을 *"Genie doesn't have those tricks"*(10:54~11:04), 그래서 *"trustworthiness that you used to be able to infer, you simply can't assume"*(11:06~11:12).
+
+> ⚠️ 근거로 든 *"$10,000 in tokens (…) working C compiler"*(08:57~09:04)는 출처 미발화 — [[test-harness-vs-test-authoring]]의 Carlini 사례와 같은지 확인하지 않았다.
 
 ## 관련
 

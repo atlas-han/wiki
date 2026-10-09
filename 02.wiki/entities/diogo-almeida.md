@@ -7,9 +7,9 @@ aliases: [Diogo Almeida, 지오구 알메이다]
 links:
   - https://x.com/CompleteSkeptic
   - https://www.linkedin.com/in/diogomda/
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-altman-devday-dots]
 created: 2026-09-20
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # Diogo Almeida
@@ -46,6 +46,14 @@ updated: 2026-09-26
 - *"원래의 스케일링 법칙이 잘못되었다"*(13:29~13:43) — **힌트 한 줄로 끝난다.**
 - 소속 회사의 제품·모델에 대해 확인 가능한 것이 없다 → [[typesafe-ai]]
   - **2026-09-26 갱신:** 회사의 모델 [[jev|Jev]]는 이제 [[langchain|LangChain]]의 소개 영상 [[tech-bridge-jev-agent-harness]]로 서술된다(상태 + 질문 → 타입 답 + 확률). ⚠️ 그 영상은 **Almeida를 언급하지 않고**, Jev가 이 사람이 말한 *보정된 의사결정* 목표로 학습됐는지도 말하지 않는다 — **이 위키는 둘을 연결하지 않는다.**
+
+## 전 직장 CEO의 언급 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+OpenAI DevDay 2026 대담에서 진행자가 [[jev|Jev]]를 꺼내자 [[sam-altman|Sam Altman]]: *"Do uh used to work at open and um do is awesome and he was talking about this class of ideas for a long time"*(19:04~19:12), 이어 *"like Diego has inspired me for a long time on thinking about this"*(19:45~19:47).
+
+⚠️ **이름 판독.** en-orig *"Do"*·*"Diego"*, ko *"Do"*·*"디에고"*. 성은 발화되지 않는다. 문맥(Jev, OpenAI 출신)과 09-19 편 en-orig의 *"Diego Mida"* 를 근거로 **이 위키는 Diogo Almeida로 판독한다.** *"Do"* 가 애칭인지 ASR 절단인지 미확정.
+
+**값**: 09-19 본인의 *"OpenAI에서 ChatGPT를 실제로 싫어하는 몇 안 되는 사람"* 이라는 자기소개에, **전 직장 CEO가 그를 *"awesome"* 이라 부르고 영감의 출처로 꼽는** 바깥 서술이 처음 붙었다. ⚠️ 무엇에 대한 영감인지는 *"this class of ideas"* 뿐이다.
 
 ## References
 

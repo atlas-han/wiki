@@ -6,9 +6,9 @@ tags: [tooling, cli, automation, skills, verification, pstack]
 aliases: [lever, 도구를 만들어라]
 related: [skill-self-improvement, agent-verification-skill, agent-tool-design-practices, executable-standards, harness-engineering]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-agent-dev-workflow]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-10-09
 ---
 
 # 지렛대를 만들어라
@@ -34,6 +34,18 @@ updated: 2026-09-14
 이 원칙은 **Pstack 자신의 존재 이유이기도 하다.** `create verification` / `maintain verification` 스킬이 하는 일이 정확히 *"같은 검증을 반복하는 스크립트를 만들고 유지하는 것"* 이다 → [[agent-verification-skill]].
 
 즉 **스택이 자기 원칙의 사례다.** 09-13 [[pstack]] 페이지에 기록된 제작 경위(*"스킬 몇 개로 시작했다"*)와 이 원칙을 함께 읽으면, **Pstack = 반복을 관찰하고 만든 지렛대들의 누적**으로 읽힌다.
+
+## 제작자 본인의 기준 — 판단이 필요한가 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+이 원칙은 지금까지 **제3자 리뷰어의 전언**으로만 있었다. 대담 발췌에서 [[lauren-tan]]이 **같은 원칙을 다른 기준으로** 말한다:
+
+> *"to kind of take away the judgment that would otherwise unnecessarily be used"* (ko 트랙 영어 구간 02:59~03:06)
+> *"I also think of, you know, agents and skills, and sort of like, is like a gradient. You have some parts of the work that are entirely judgmentbased, right? (…) and then you have the more deterministic parts. Like I don't know, if you wanted to, uh, refactor some code, right, from one pattern to another, that's very mechanical, right? You don't...you don't need a agent to think about it and come up with it in a novel way each time"* (03:08~03:42)
+> *"that was really the inspiration for the CLI. And you'll see this in a lot of the other skills that I built, is like I try to extract out the deterministic parts and turn that into code and just leave only the parts that actually require judgment."* (03:42~03:56)
+
+- **기준이 다르다** — 리뷰어의 전언은 **반복이 예상되면**(사전·빈도), 본인은 **판단이 필요 없으면**(성질). 아래 *"여러 번"의 문턱이 없다* 에 대한 본인 쪽 답에 가깝다 — **횟수가 아니라 기계적인가를 본다.**
+- **목적이 하나 더** — 해설: *"검증할 때마다 에이전트가 새 스크립트를 만들게 하면 같은 작업의 실행 방법까지 매번 달라질 수 있죠"*(ko 02:37~02:46). 일관성, 그리고 **불필요한 판단의 절약**.
+- [[scripts-that-talk-back]]·[[hard-vs-soft-enforcement]]와 같은 방향(산문 지시보다 실행되는 코드)이고, [[workflow-vs-agent]]의 구분을 **한 스킬 안의 gradient**로 옮긴 형태다.
 
 ## 열려 있는 것
 

@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist]
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 # Model Context Protocol (MCP)
@@ -42,6 +42,7 @@ USB-C가 전자기기 연결의 표준이 된 것처럼, MCP는 AI 앱이 외부
 
 - [[playwright-mcp]] — 브라우저 자동화 (Playwright)를 MCP 서버로. [[anthropic-harness-design-long-running-apps]]의 evaluator agent가 실제 페이지 클릭·스크린샷·검증에 사용.
 - [[anthropic-managed-agents]]에서: **MCP + secure vault + dedicated proxy** 패턴으로 토큰을 sandbox 밖에 격리. *"Claude calls MCP tools via a dedicated proxy; this proxy takes in a token associated with the session."*
+- [[debug-assist|Uber Debug Assist]] — Jaeger·인시던트 조회 + 기능 플래그 MCP로 자동 롤백 ([[tech-bridge-uber-debug-assist]])
 
 ## [[agent-harness-design]] 관점
 
@@ -200,3 +201,7 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 - **endpoint DLP discovery**(설치 인벤토리): *"which agents and extensions and MCP servers exist on each of these devices"*(08:30~08:35)
 
 화자의 요점은 두 렌즈가 *"Each one of these only sees part of the picture"*(09:04~09:06)라는 것 — 어떤 MCP 서버가 깔려 있는지와 어떤 MCP 도구가 실제 호출됐는지가 **다른 도구에 흩어져** 있다. ⚠️ 첫 렌즈 이름(*agentic*)은 세 자막 트랙 모두 깨졌다(en-orig *"a Gentic"*, `en` *"Agility"*). → [[ai-data-exposure]]
+
+## 2026-10-09 — 조회에서 프로덕션 완화 행동으로 ([[tech-bridge-uber-debug-assist]])
+
+[[uber|Uber]] [[debug-assist|Debug Assist]]의 RCA 노드는 데이터가 부족하면 *"it goes and queries Uber ecosystem. So, it does that via MCP connections like (…) Jaeger distributed tracing, logging, uh incident data"*(10:58~11:13) — 여기까지는 읽기. 수정 노드는 **기능 플래그 MCP**에 붙어 크래시와 플래그의 상관을 찾고, 강하면 *"it simply goes and rolls the feature flag back and the issue is mitigated"*(13:41~13:47) — **프로덕션 상태를 바꾸는 쓰기 행동**이다. ⚠️ 승인 게이트·임계값·감사 기록은 발화되지 않는다. [[mcp-toolbox-for-databases]]가 보여 준 *"MCP 서버가 가드레일의 자리"* 를 쓰기 쪽에서 물을 자리.

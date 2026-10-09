@@ -3,11 +3,11 @@ title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game]
 created: 2026-10-02
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -143,6 +143,31 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 
 **은유에 대해**: Zach Lloyd는 공장 은유가 *"mechanizing or dehumanizing"* 으로 들릴 수 있음을 인정하면서도 *"leaning into it"*(19:14~19:23) — 핵심은 *"are you building something useful?"* 이고 taste가 들어가는 touch point는 사람 몫이라 한다. 위 Conductor 반론과 **사람이 중심**이라는 결론은 같고, 은유의 선택만 갈린다. → [[orchestras-not-factories]]
 
+## 가속기와 브레이크 — Pocock (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
+
+[[matt-pocock|Matt Pocock]]은 이 말을 *"probably the biggest buzz word of the day"*(01:02~01:05)로 부르며 두 축으로 나눈다. **가속기** — 사람이 아니라 결정론적 코드가 작업을 촉발한다(*"a classifier like Jev"* 가 이슈를 fix·reproduction으로 분류, PlanetScale의 느린 쿼리 리포트가 다른 작업을 띄움 — 01:48~02:05; *"All of this is not humans triggering it. It's uh deterministic code triggering it"* 02:06~02:12). **브레이크** — *"mechanisms that slow down, that increase quality"*(02:35~02:38), 세 겹: 자동 검사(CPU) → 자동 리뷰(토큰) → 사람 리뷰. 브레이크가 없으면 [[slop-cannon]](02:18~02:26).
+
+| | Factory (Tížková) | Warp (Lloyd) | **Pocock** |
+|---|---|---|---|
+| 정의의 축 | 생애주기 전체의 자율 루프 | SDLC 그 자체를 짓는 일 | **가속기 vs 브레이크** |
+| 리뷰 칸 | validators | *"the most painful part"* — 에이전트 먼저, 사람은 리스크 관리 | **발표 전체** — 브레이크 세 겹, one-way door만 전부 사람 |
+
+⚠️ 01:20~01:48 자막 공백 — 가속기 목록 앞부분이 비어 있다.
+
+## 반론 2 — "다크 팩토리는 언제나 탈선한다" (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]: *"anytime I've tried fully agentic the dark factory the dark software factory (…) there's no human involved There's no feedback. And that always goes off the rails. Always."*(30:46~31:17) 그리고 *"It's amazing while it's going off the rails"*(31:19~31:23) — 산출량은 인상적이지만 *"it's still complete crap"*(31:34).
+
+- 이유는 피드백: 더 빠른 도구는 *"can create opportunities for feedback faster than we're prepared to gather that feedback or analyze that feedback"*(30:23~30:32).
+- 다크 팩토리에서 배우는 것은 *"how unreliable the genie really is. But we already knew that."*(34:14~34:20)
+- [[features-vs-futures]]로 보면 피드백 없는 기능 연속 = futures를 0까지 태우는 가장 빠른 길.
+
+> ⚠️ **Contradiction.** Factory·Warp의 자율 루프(검증자·validator 포함)와 Beck의 *"no human (…) no feedback"* 은 **같은 것을 말하지 않을 수 있다** — Factory의 Missions는 validator를 둔다. Beck은 특정 제품을 겨누지 않고 **본인 경험 일반화**만 말한다(측정 없음). [[orchestras-not-factories]]와 같은 편, 근거는 다르다(역할·즐거움 vs 피드백 부재).
+
+## 이름이 기능을 따라잡다 (2026-10-09 · [[tech-bridge-agentcraft-strategy-game]])
+
+[[agentcraft|AgentCraft]]의 [[ido-salomon|Ido Salomon]]: *"Now it's called software factories, but at the time it was just doing stuff autonomously."*(06:13~06:18) — 오케스트레이터가 의도를 쪼개 로컬 컨테이너에서 격리 실행하고, 루프가 Twitter·GitHub를 훑어 백그라운드로 기능을 만드는 것(06:20~06:54). Factory·Warp의 정의(신호 수집부터 검증·학습까지의 SDLC 루프)보다 **훨씬 좁은 용법**이다 — *사람이 babysit하지 않는 자율 실행* 정도. ⚠️ 이 용법이 퍼지면 이 페이지의 *"아닌 것으로 정의하기"* 가 더 중요해진다(위키의 관찰).
+
 ## References
 
 - [[tech-bridge-factory-software-factory]] — first-seen (Tereza Tížková, Factory)
@@ -150,3 +175,6 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 - [[factory-ai]] · [[tereza-tizkova]] · [[defense-factory]] · [[loop-is-the-product]] · [[automatic-model-routing]] · [[deferred-tool-context]] · [[agent-readiness]]
 - [[tech-bridge-conductor-orchestras-not-factories]] — 반론(Charlie Holtz, Conductor)
 - [[tech-bridge-warp-factory-engineering]] — 두 번째 정의(Zach Lloyd, Warp) · [[warp]] · [[zach-lloyd]] · [[factory-engineering]] · [[build-in-the-open]]
+- [[tech-bridge-pocock-pr-bottleneck]] — 가속기 vs 브레이크(Matt Pocock) · [[slop-cannon]]
+- [[tech-bridge-kent-beck-craft-augmented-development]] — 반론 2(Kent Beck, 다크 팩토리)
+- [[tech-bridge-agentcraft-strategy-game]] — 좁은 용법(Ido Salomon, AgentCraft)

@@ -5,9 +5,9 @@ category: org
 tags: [gpu, chips, ai-infrastructure, data-center, physical-ai, hardware]
 links:
   - https://www.nvidia.com/
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # NVIDIA
@@ -56,3 +56,27 @@ GPU와 AI 인프라를 만드는 회사. 본 위키에는 CEO [[jensen-huang|Jen
 - 진행자: *"세계에서 가장 가치 있는 회사"*(12:48~12:52) — ⚠️ 진행자 진술.
 
 → [[jensen-huang]] · [[tech-bridge-jensen-huang-cbs-interview]]
+
+## OpenShell · BlueField — 에이전트 격리와 대역 밖 감시 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+CEO [[jensen-huang|Huang]]의 백악관 패널 발언. 진행자가 *"the open agent safety framework from Nvidia"*(12:20~12:26)를 언급하고 Huang이 **두 기술**로 답한다:
+
+| 이름 | 역할 (Huang의 설명) | en-orig |
+|---|---|---|
+| **OpenShell** | *"a containment system. It's basically kind of like a browser for websites. It's now essentially a browser of agents"* — 에이전트를 나머지 컴퓨터로부터 격리, *"the rights that you give it are only the rights it should have"* | 14:27~14:47 |
+| **BlueField** | *"a new chip called Blue Field and it it just keeps an eye on everything that the agent is doing at all times"* — 정책 위반 시 escalate | 14:47~15:05 |
+
+설계 원칙: 평가·배포 모두 **격리 + 실시간 감시**, 감시는 *"another another chip (…) out of band (…) outside the sandbox"*(13:42~13:57). → [[agent-governance-layers]]
+
+- ⚠️ **프레임워크의 공식 명칭은 진행자 발화뿐**이고 이 위키에 NVIDIA 1차 문서가 없다. BlueField가 무엇을 관측·판정하는지, OpenShell의 권한 모델은 발화되지 않았다. ko는 BlueField를 **"블루필드라는 사람"** 으로 옮겼다(14:50).
+- 같은 패널: **SI 공장**(데이터센터 → 공장) · **궤도 컴퓨팅**에 *"Putting Nvidia computing in space"*(07:30~07:32, 추정) → [[orbital-compute]] · Rubin(*"Reubens"*, 05:13, ⚠️ 판독 추정 — Musk의 언급).
+
+## CEO의 코리아 소사이어티 갈라 — 자사주·금융사·한국 협력, 안전 플랫폼 (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+> ⚠️ 아래 수치는 **전부 진행자의 진술**이고 Huang은 확인도 부정도 하지 않는다. 이 위키는 원 자료를 보지 않았다.
+
+- **자사주 매입** — 그날 아침 WSJ 헤드라인 *"an historic stock buyback, $150 billion, um, to the total of 235 billion"*(00:10~00:19). *"to the total of"* 의 기준(누적 승인액 등) 미발화.
+- **금융사 파트너십** — Apollo·Blackstone·BlackRock·Goldman Sachs·KKR, *"to the tune of about a half a trillion dollars of investment"*(00:30~00:48). Huang: *"I'm your largest customer all of you"*(00:42).
+- **한국 협력사** — Samsung·SK·Hyundai·Naver(*"most recently. You signed a big package"*)·LG·Doosan(04:22~04:31).
+- **"open agent safety platform"** — *"You just launched a platform this morning (…) to help developers test and deploy"*(12:47~12:55). [[tech-bridge-white-house-superintelligence-panel|백악관 패널]]의 *"open agent safety framework"* 와 같은 발표로 추정(⚠️ 명칭 갈림, 공식 문서 없음).
+- **창립 연도** — LinkedIn *"Nvidia, 1993, present"*(진행자 낭독, 08:50~08:57), Huang *"33 years old, almost 34 years old"*(10:19~10:22).

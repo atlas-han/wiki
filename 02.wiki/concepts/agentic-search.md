@@ -6,9 +6,9 @@ tags: [retrieval, search, agent-loop, harness, bm25]
 aliases: [agentic search, agentic retrieval, 에이전트 검색, 에이전트 기반 검색]
 related: [retrieval-augmented-generation, agent-collaboration-as-search, agent-knowledge-sourcing, context-engineering, bm25, llm-as-search-user, corpus-as-filesystem-workspace, ir-evaluation-obsolescence]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer, tech-bridge-sourcegraph-codebase-visibility]
 created: 2026-09-21
-updated: 2026-09-29
+updated: 2026-10-09
 ---
 
 # 에이전트 검색 (Agentic Search)
@@ -85,3 +85,11 @@ updated: 2026-09-29
 - 인물·조직: [[jo-bergum]] · [[hornet]] · [[benjamin-clavie]]
 - 하위: [[bm25]] · [[llm-as-search-user]] · [[retrieval-not-reasoning-bottleneck]] · [[context-window-as-floppy-disk]] · [[corpus-as-filesystem-workspace]] · [[ir-evaluation-obsolescence]] · [[which-bm25-problem]]
 - 관련: [[retrieval-augmented-generation]] · [[agent-collaboration-as-search]] · [[agent-knowledge-sourcing]] · [[agent-harness-design]] · [[reference-graph-vs-vector-search]]
+
+## 검색 범위 밖의 코드 — 엔터프라이즈 규모 (2026-10-09 · [[tech-bridge-sourcegraph-codebase-visibility]])
+
+[[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]])가 코딩 에이전트 쪽에서 같은 전제를 말한다: *"if we know anything about LLMs is that they just love to search. It's like a new hire getting up to speed on the codebase. It's how agents build models of the world."*(07:05~07:15) — 에이전트는 *"GP gp gp gp gp gp[=grep] its way to codebase understanding"*(07:22~07:26).
+
+새로 붙는 축은 **범위**다. 이 페이지의 반복 검색은 *닿을 수 있는 코퍼스* 안에서의 일인데, 수만 저장소는 *"way too much to fit into a context window or even just to clone and GP in real time"*(02:45~02:52) — **검색 루프가 아무리 좋아도 인덱스 밖은 0이다.** *"understanding is a context problem. You can't gp what you literally cannot see."*(07:31~07:36) → [[code-knowledge-graph]] · [[large-scale-code-changes]]
+
+⚠️ 같은 화자가 AGENTS.md류 파일을 *"barely moving the needle"*(07:20~07:22)라 깎는다 — [[code-only-index-blind-spot]]의 Contradiction 참조.

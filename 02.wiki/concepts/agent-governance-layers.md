@@ -6,9 +6,9 @@ tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
 related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters, ai-data-exposure]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst, tech-bridge-nadella-copilot-autopilot, tech-bridge-ai-data-exposure-hidden-risk]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst, tech-bridge-nadella-copilot-autopilot, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-09
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 # 에이전트 거버넌스 두 층
@@ -131,3 +131,29 @@ updated: 2026-10-01
 
 - ⚠️ 09-29 Agent 365 항목의 빈자리가 반복된다 — 처방의 거의 전부가 **보는 것**(discovery·lineage·조사·규제 보고)이고 **막는 것**은 *"enforced"* 한 단어다.
 - 이 페이지의 벽들은 대부분 **접근 시점**에 선다. 이 편의 [[lineage-driven-risk-visibility]]는 **접근 이후**(변환·전파·목적지)를 본다. → [[ai-data-exposure]]
+
+## 벽을 하드웨어로 — 격리, 그리고 격리를 믿지 않는 대역 밖 감시 (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+[[jensen-huang|Huang]]([[nvidia|NVIDIA]])이 이 페이지의 *"경계는 에이전트 바깥에"* 를 **칩 수준**까지 내린다:
+
+> *"even though you have it contained, you should never trust that it's contained. And so you want to monitor it in real time. And you want to ideally monitor it with another another chip so that it is outside, you know, if you will call out of band outside the environment, outside the sandbox of the agent itself."* (13:39~13:57)
+
+| 층 | Huang의 이름 | 이 페이지의 대응 |
+|---|---|---|
+| 격리(containment) | **OpenShell** — *"a browser of agents"*, *"the rights that you give it are only the rights it should have"*(14:27~14:47) | ① 결정론적 접근 제어 |
+| 감시(monitoring) | **BlueField** — *"keeps an eye on everything that the agent is doing at all times"*, 정책 위반 시 escalate(14:47~15:05) | 09-29 Agent 365·10-01 *보는 층* — 단, **감시자가 에이전트와 다른 하드웨어** |
+
+- **새로 붙는 것: 감시자의 위치.** 이 페이지의 *보는 층*은 지금까지 소프트웨어(로그·리니지·정책 엔진)였다. Huang은 감시자가 **에이전트의 샌드박스 밖, 대역 밖(out of band)** 에 있어야 한다고 한다 — 격리 자체가 뚫렸을 때도 감시는 남는다는 설계.
+- **평가 때와 배포 때가 같은 구조** — 학습은 *"fairly safe"*, 평가·테스트부터 격리+감시, 배포도 *"a very similar system"*(13:13~14:05). 비유는 직원: 권한·도구·접근을 정해 주고 *"you monitor on a on a regular basis on a continuous basis"*(14:10~14:18).
+- ⚠️ 09-29·10-01 항목의 빈자리가 반복된다 — BlueField가 **보고 escalate** 하는지 **막는지**, 무엇을 정책 위반으로 판정하는지 발화되지 않는다. 자사 칩의 판매 맥락이다.
+
+## 일반 청중판 — "상자에 넣고, 모두를 지켜본다" (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+[[jensen-huang|Jensen Huang]]이 자사 *"open agent safety platform"* 출시 당일(진행자 발화, 12:47~12:52) 수상 갈라에서 한 설명. **제품 이름도 하드웨어도 없다** — 두 원칙만:
+
+1. **상자** — *"a sandbox, a force field, a container that is ironclad. You can't get out of it. It's no different than a garage with no windows, no doors."*(17:07~17:23) 그 안에서 *"minimal rights, minimal access, minimal everything"*, 일과 능력에 따라 *"more rights, more tools, more access"*(17:38~17:51).
+2. **감시** — 지시가 모호하기 때문에(*"it is an uncertain system"*): *"You have to monitor all AIS[=AIs]. So two things you have to do. You have to container and you have to monitor it."*(18:54~19:02)
+
+관리 비유는 *"how we deal with employees (…) children (…) students"*(19:02~19:15). 그리고 *"It is not true. You cannot contain it. It is not true. (…) You can't monitor it. It is not true."*(19:23~19:31) — **두 층 모두 가능하다**는 주장.
+
+> ⚠️ [[tech-bridge-white-house-superintelligence-panel|백악관 패널]]의 같은 화자는 *"never trust that it's contained"* — **격리를 믿지 말고 다른 칩으로 바깥에서 감시하라**였다. 갈라는 **"격리가 불가능하다는 말을 믿지 말라"** 쪽이다. 처방은 같고 다루는 두려움이 반대다(위키의 관찰).

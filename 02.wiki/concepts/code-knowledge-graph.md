@@ -3,11 +3,11 @@ title: Code Knowledge Graph
 type: concept
 category: pattern
 tags: [knowledge-graph, code-understanding, onboarding, developer-tooling]
-related: [llm-wiki-pattern, tree-sitter-llm-hybrid, generator-evaluator-pattern, agent-harness-design]
+related: [llm-wiki-pattern, tree-sitter-llm-hybrid, generator-evaluator-pattern, agent-harness-design, large-scale-code-changes, agentic-search]
 first-seen: lum1104-understand-anything
-sources: [lum1104-understand-anything, james-ai-explorer-understand-anything, tech-bridge-graft-code-knowledge-graph]
+sources: [lum1104-understand-anything, james-ai-explorer-understand-anything, tech-bridge-graft-code-knowledge-graph, tech-bridge-sourcegraph-codebase-visibility]
 created: 2026-05-30
-updated: 2026-09-15
+updated: 2026-10-09
 ---
 
 # Code Knowledge Graph
@@ -75,3 +75,19 @@ updated: 2026-09-15
 - [[lum1104-understand-anything]] (1차, GitHub README)
 - [[james-ai-explorer-understand-anything]] (2차, 한국어 블로그)
 - [[understand-anything]] · [[tree-sitter-llm-hybrid]] · [[llm-wiki-pattern]]
+
+## 2026-10-09 — 단일 저장소에서 수만 저장소의 인프라로 ([[tech-bridge-sourcegraph-codebase-visibility]])
+
+[[sourcegraph|Sourcegraph]]의 [[dan-adler|Dan Adler]]가 같은 자료구조를 **엔터프라이즈 인프라**로 놓는다 — 이 페이지의 *"IDE 기본 기능·Sourcegraph와 대비"* 에서 비교 대상으로만 나왔던 회사가 직접 화자로 들어왔다.
+
+| | [[understand-anything]] (2026-05) | [[graft]] (2026-09) | **Sourcegraph** (2026-10) |
+|---|---|---|---|
+| 보는 쪽 | 사람 | 에이전트 | **에이전트** |
+| 규모 | 한 프로젝트 | 한 저장소 | ***"500 or 5,000 or 50,000 or half a million repo codebase"***(07:44~07:48) |
+| 노드의 질 | 평문 요약 | 위치 | ***"compiler accurate output"***(08:42~08:44) |
+| 이유 | 이해 | [[file-discovery-tax\|탐색 턴 제거]] | **가시성** — *"You can't gp[=grep] what you literally cannot see."*(07:33~07:36) |
+| 다음 단계 | — | — | 그래프 위의 **일괄 변경** → [[large-scale-code-changes]] |
+
+> *"The foundational graph of your codebase including search and then the actual compiler accurate output. (…) Visibility is infrastructure."* (08:38~08:57)
+
+⚠️ 화자는 자사 제품의 기반을 설명하는 벤더다 — 그래프의 구축 방식·정확도·신선도([[incremental-index-freshness]])는 말하지 않는다.

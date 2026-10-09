@@ -5,9 +5,9 @@ category: technique
 tags: [qa, verification, multimodal, completeness, design]
 related: [generator-evaluator-pattern, agent-verification-skill, verification-bottleneck, skill-evals, multimodal-elicitation, design-handoff-friction]
 first-seen: tech-bridge-one-designer-plus-ai
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory, tech-bridge-agentcraft-strategy-game]
 created: 2026-09-15
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Agent Visual QA
@@ -40,3 +40,9 @@ updated: 2026-10-02
 ## 2026-10-02 — 실행형 검증자: 가상 컴퓨터에서 직접 클릭
 
 [[factory-ai|Factory]] Missions의 **user testing validator**([[tech-bridge-factory-software-factory]]) — *"really in the arena trying the things. So it doesn't care how it was made (…) It works in its virtual computer and it clicks on the stuff and really checks if everything works"*(13:33~13:45). 이 페이지의 *보고 빠진 것을 찾는* 검증을 **조작하며 동작을 확인**하는 쪽으로 넓힌다. 근거 사례: 다른 제품의 마이그레이션 결과가 *"wasn't interactive. It was just a dummy result"*(14:01~14:03). 화자는 이를 컴퓨터 사용·에이전트용 영속 VM의 진보 덕으로 돌린다(14:13~14:25). ⚠️ 챕터는 *"브라우저 검증자"* 라 했지만 발화에 browser·web app은 없다. ⚠️ ko는 이 대목에서 *"지금은 정말 별로"*(14:23)로 의미를 뒤집는다.
+
+## 2026-10-09 — 리뷰어에게 넘기는 시각 증거 ([[tech-bridge-agentcraft-strategy-game]])
+
+[[agentcraft|AgentCraft]]의 **review kit**: 파일별 변경을 보거나 *"just get visual evidence. So you can actually see videos of what changed or photos of what changed, so you can really quickly understand what you want"*(07:22~07:30), 또는 여러 인스턴스를 병렬로 돌려 *"just pick the best implementation"*(07:30~07:36). 이 페이지의 앞 사례들이 **에이전트가 시각적으로 검증**하는 쪽이었다면, 이것은 **사람 리뷰어의 주의를 아끼려고** 시각 증거를 만드는 쪽이다. → [[agent-attention-management]]
+
+⚠️ 화면에 드러나지 않는 변경(로직·회귀 — [[mergeability-gap]]의 *"quietly broke other code"*)을 영상·사진이 놓치는 문제는 다뤄지지 않는다. 당사자 데모.

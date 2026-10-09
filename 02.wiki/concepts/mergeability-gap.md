@@ -6,9 +6,9 @@ tags: [code-review, benchmarks, verification, swe-bench, frontiercode, metr, tra
 aliases: [테스트 통과 ≠ 머지 가능, mergeability, 머지 적합성]
 related: [verification-bottleneck, automated-code-review, verifiable-goals, reward-hacking, syntactically-correct-behaviorally-wrong, signal-layer, test-harness-vs-test-authoring, sutton-bitter-lesson]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review]
+sources: [tech-bridge-death-of-code-review, tech-bridge-uber-debug-assist]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # 머지 가능성 격차
@@ -50,6 +50,7 @@ Sarah Guo의 논리(Voss 인용, 09:09~09:56):
 - **[[reward-hacking]]** — 테스트만 통과하는 코드는 *대리 지표를 최적화한* 결과. 격차의 존재가 곧 대리 지표 최적화의 흔적이다.
 - **[[verification-bottleneck]]** — 사람 리뷰가 병목인 이유 중 하나가 이 격차다: 테스트 통과를 믿을 수 없으니 사람이 읽어야 한다.
 - **[[sutton-bitter-lesson]]** — 채점기가 생기면 규모가 이긴다는 같은 논리가 *머지 가능성* 에도 적용된다는 예측.
+- **(2026-10-09) 머지율의 1년 궤적 — [[tech-bridge-uber-debug-assist]].** [[uber|Uber]] [[debug-assist|Debug Assist]]가 만든 PR의 머지율: *"back when we started this 1 year ago (…) the merge rate was only 5%. And now that number has increased to almost 48%."*(19:59~20:18) RCA 정확도의 기준도 *"exact developer fixes"*(19:21~19:25) — **사람의 실제 수정이 정답지**다. 머지 가능성을 벤치마크가 아니라 **운영 지표**로 잰 첫 기록. ⚠️ 자기 보고·분모 미발화. 수락률 최적화의 Goodhart 위험([[automated-code-review]])이 그대로 적용된다.
 
 ## ⚠️ 유보
 

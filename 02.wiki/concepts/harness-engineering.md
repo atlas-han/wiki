@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity, human-plumbing, feedforward-feedback-steering, domain-specific-scripts, harness-as-platform, deterministic-agent-pipeline]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering, tech-bridge-uber-debug-assist]
 created: 2026-06-03
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # Harness Engineering
@@ -168,3 +168,13 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 [[weights-and-biases|W&B]]는 자체 하네스([[wandb-aria|ARIA]])를 만든다 — 에이전트를 어떻게 포장하느냐(도구 호출 등)에 따라 벤치마크 결과가 크게 달라진다는 관찰에서(00:48~00:59). 하네스는 *"relatively agnostic software stack for how we treat compaction and how we prepare context and how we assemble UI payloads"*(07:10~07:15)이고, 설계 원칙은 **변형을 싸게**: *"YAML define different configurations of the agent to sort of get multiple parallel uh variants and then test them all"*(07:24~07:31), *"it's just better to run more experiments than fewer (…) that's the thesis behind the agent harness itself too"*(07:39~07:44). 연구·프로덕션 하네스는 byte-wise 동일(05:27~05:33) → [[research-production-agent-parity]] · [[yaml-agent-eval-pipeline]].
 
 > ⚠️ Contradiction: [[tools-and-context-over-harness]]([[ryan-lopopolo|Lopopolo]], 09-23)는 *하네스는 고정, 도구·컨텍스트에 투자*. W&B는 하네스를 직접 만들고 **하네스 구성 자체를 실험 변수**로 둔다. 다만 데모의 실제 개선은 시스템 프롬프트·스킬(=컨텍스트)에 들어갔다(15:57~16:00) — 층을 나누면 "하네스를 누가 소유하느냐"의 차이에 가깝다. ⚠️ 위키의 정리.
+
+## 한 언어 생태계에서 칸을 채우기 — Rails (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]은 하네스를 가장 작은 형태로 정의한다 — Anthropic API 호출을 감싼 Ruby 래퍼, *"This wrapper is not just convenience. It's a thing called an agent harness."*(03:58~04:04) — 그리고 루프를 넣는다(*"a generic version of this loop is at the heart of all the commercial harnesses"* 08:08~08:12). 위 3계층으로 옮기면 그는 Tool Harness(Claude Code)는 고르고 **AI Layer의 Hooks·Skills·Sub-agents에 Rails 도구를 꽂는다**: 스타일은 RuboCop + Stop 훅, 마이그레이션은 제너레이터 + 쓰기 차단 훅(거부 사유로 *"easy path the right thing"*), 휴리스틱은 좁은 리뷰 스킬 3종을 서브에이전트로. 결론 문장이 이 페이지의 System Evolution과 같다 — *"don't just fix the mistake. (…) try to fix the system so that the next time it doesn't make that mistake again. That's at the heart of harness engineering"*(30:35~30:48). 정리 틀은 [[feedforward-feedback-steering|Böckeler의 2×2]], 사람의 역할은 [[human-plumbing]]에서 빠져나오는 것.
+
+> ⚠️ **Contradiction: 실수의 목적지.** 위 §3의 예시 *"컨벤션 위반 ➡️ `agents.md`에 규칙 추가"* 를 Quenneville은 *"prompt and pray"* 라 부른다 — *"agents.mmd[=AGENTS.md] is not the place for your style guide"*(08:59~09:03), AGENTS.md는 *"a very thin almost routing layer"*(21:39~21:43). 10-02 Martinelli(*규칙 파일은 작게*)에 이은 **세 번째 소스**가 같은 쪽이다. 세 소스 모두 *"모든 실수를 하네스 개선으로"* 에 동의하고, 갈리는 것은 **기록 위치**(AGENTS.md 본문 vs 결정론적 도구·훅·참조 스킬)다.
+
+## "We are the providers of the harness" — 하네스가 사내 플랫폼 제품이 될 때 (2026-10-09 · [[tech-bridge-uber-debug-assist]])
+
+[[uber|Uber]]의 [[debug-assist|Debug Assist]] 팀은 자기를 에이전트 제작자가 아니라 **하네스 제공자**로 정의한다 — *"Because we are not the owners of domain, we are the providers of the harness."*(27:46~27:50) 골격(LangGraph, 결정론+LLM 노드)·실행 환경·의존성은 플랫폼이, 스킬·서브에이전트는 도메인 팀이(15:52~16:23). 에이전트 약 8개·모노레포 5개가 한 코드베이스를 공유한다. ⚠️ `en`·ko 자막은 이 문장들의 *harness* 를 framework/structure/infrastructure로 옮겼다. → [[harness-as-platform]] · [[deterministic-agent-pipeline]]

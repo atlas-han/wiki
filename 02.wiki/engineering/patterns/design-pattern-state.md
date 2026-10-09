@@ -3,11 +3,11 @@ title: 상태 (State)
 type: engineering
 tags: [engineering, design-patterns, gof, behavioral]
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-10-09
 category: pattern
-related: [design-patterns, design-pattern-chain-of-responsibility, design-pattern-command, design-pattern-iterator]
+related: [design-patterns, design-pattern-chain-of-responsibility, design-pattern-command, design-pattern-iterator, agent-state-machine]
 first-seen: refactoring-guru-ko-design-patterns
-sources: [refactoring-guru-ko-design-patterns]
+sources: [refactoring-guru-ko-design-patterns, tech-bridge-goodbye-slop-state-machines]
 ---
 
 # 상태 (State)
@@ -40,6 +40,7 @@ sources: [refactoring-guru-ko-design-patterns]
 ## 다른 패턴과의 관계
 - [[design-pattern-strategy]]와 구조가 거의 동일하지만 의도가 다르다. State는 상태 객체들이 서로를 인식하며 상태 전이를 스스로 주도하는 반면, Strategy의 알고리즘들은 서로를 전혀 알지 못한다. 그래서 State는 Strategy의 확장으로 볼 수 있다
 - [[design-pattern-bridge]], [[design-pattern-adapter]]와 합성 기반의 유사한 구조를 공유하지만 해결하는 문제가 다르다
+- **에이전트 워크플로로의 확장** — [[agent-state-machine]]: 상태 + 이벤트 → 다음 상태를 에이전트의 제어 흐름에 적용해, 금지된 행동은 전이 부재로 막고 그래프 자체를 트레이스·eval과 함께 에이전트가 개선하게 한다([[david-khourshid|David Khourshid]], [[tech-bridge-goodbye-slop-state-machines]]).
 
 ## References
 - [[refactoring-guru-ko-design-patterns]] — 상태 (State) 원문: https://refactoring.guru/ko/design-patterns/state

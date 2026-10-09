@@ -7,9 +7,9 @@ aliases: [LangChain, 랭체인, LangChainAI]
 links:
   - https://www.langchain.com/
   - https://www.langchain.com/langsmith
-sources: [tech-bridge-jev-agent-harness]
+sources: [tech-bridge-jev-agent-harness, tech-bridge-uber-debug-assist, tech-bridge-goodbye-slop-state-machines]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # LangChain
@@ -30,6 +30,8 @@ LLM 애플리케이션·에이전트 프레임워크를 만드는 회사이자 �
 | **프레임워크 이름** | 도구 정의 맥락에서 언급 (05:39) | [[tech-bridge-build-time-vs-runtime-tools]] |
 | **[[deepagents\|DeepAgents]]** | LangChain의 에이전트 SDK — Self-Harness 실험의 초기 하네스 | [[self-harness-paper]] |
 
+- **LangGraph를 프로덕션 에이전트 골격으로 쓰는 고객 사례**(2026-10-09, [[tech-bridge-uber-debug-assist]]) — [[uber|Uber]] [[debug-assist|Debug Assist]]는 *"built on a LangGraph pipeline. It is a mix of deterministic and LLM nodes"*(08:52~08:59). 고른 이유는 계획 단계 우회: *"What LangGraph or LangChain allows us to do is bypass that planning phase"*(09:08~09:13) → [[deterministic-agent-pipeline]]. Arize 트레이싱을 LangChain에 붙여 모든 LLM·도구 호출을 본다(25:28~25:35). ⚠️ 벤더가 아니라 **사용자 쪽 1인칭** — 이 위키의 LangChain 1인칭 소스([[tech-bridge-jev-agent-harness]])와 다른 시점.
+
 ## 이 위키에서의 자리
 
 LangChain 편의 프레이밍은 **하네스 = 루프 + 루프 안의 결정 지점들**이고, 그 결정 지점(라우팅·안전 게이트·채점)을 **LLM이 아닌 분류 모델**에 맡기자는 것이다 → [[system-1-model]] · [[agent-harness-design]] · [[harness-engineering]].
@@ -37,5 +39,11 @@ LangChain 편의 프레이밍은 **하네스 = 루프 + 루프 안의 결정 지
 ## References
 
 - [[tech-bridge-jev-agent-harness]] — first-seen (1인칭)
+- [[tech-bridge-uber-debug-assist]] — LangGraph 고객 사례 (Uber Debug Assist) · [[uber]] · [[debug-assist]]
+- [[tech-bridge-goodbye-slop-state-machines]] — LangGraph를 상태 머신 도구로 언급 · [[david-khourshid]]
 - [[deepagents]] · [[jev]] · [[typesafe-ai]] · [[oracle]]
 - 외부: <https://www.langchain.com/> · <https://www.langchain.com/langsmith> · <https://academy.langchain.com>
+
+## LangGraph — 상태 머신 도구로 언급 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
+
+[[david-khourshid|David Khourshid]](XState 제작자)가 에이전트 워크플로의 전이 로직 구현 선택지로 *"You could use LangGraph, I guess, which actually is um one of the uh most popular tools for using state machines with agents."*(15:48~15:54) — 경쟁 도구 제작자의 지나가는 평가, 근거 수치 없음. → [[agent-state-machine]]

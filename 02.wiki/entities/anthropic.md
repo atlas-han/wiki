@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # Anthropic
@@ -177,3 +177,10 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 - [[bun|Bun]]은 *"now part of Anthropic"*(02:44~02:46), [[fable-5-1|Fable]] 출시 자료에 Stripe 5천만 줄 Ruby 하루 마이그레이션(02:30~02:41).
 
 ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"** 로 옮겼다(anthropic의 사전적 뜻).
+
+## 공동 창업자의 백악관 패널 — Opus 5.5, 그리고 NVIDIA CEO의 Claude (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+- 공동 창업자 [[tom-brown|Tom Brown]]이 [[jensen-huang|Huang]]·[[elon-musk|Musk]]의 패널에 16:39 합류. 진행자 *"you announced Opus 5.5 in the last several days"*(17:58~18:01) → Brown: *"continues the normal progress"*, 더 긴 작업의 위임, 소프트웨어가 *"higher quality, cheaper over time"*(18:18~19:25). → [[claude-opus-5-5]]. ⚠️ 발표일·사양 없음.
+- **경쟁·공급 관계의 상대가 Claude 사용자** — Huang *"I use I use um uh Claude to uh help me do research"*(19:59~20:04). ko는 "클라우드".
+- **가치관 질문** — Huang은 *"SI는 도구"*, 판단을 덜 가진 도구를 원한다(22:53~23:41). Brown은 이 질문과 공동 선언 대목에서 **발언하지 않는다.**
+- **SI 안전 공동 선언**에 Anthropic이 서명했는지는 발화되지 않는다(*"We"*, 24:31). → [[cross-lab-peer-review]]

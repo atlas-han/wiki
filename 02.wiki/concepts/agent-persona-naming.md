@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ux, adoption, anthropomorphism, personal-agent, meta, muse]
 aliases: [에이전트 이름 짓기, 아바타, agent naming]
-related: [agent-org-adoption, proactive-idea-feed, agent-trust-curve, agent-manager-analogy, goal-level-delegation, cognitive-offloading]
+related: [agent-org-adoption, proactive-idea-feed, agent-trust-curve, agent-manager-analogy, goal-level-delegation, cognitive-offloading, ai-anthropomorphism]
 first-seen: tech-bridge-zuckerberg-muse-in-daily-use
-sources: [tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-altman-devday-dots, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-09
 ---
 
 # 에이전트 이름과 아바타
@@ -61,6 +61,8 @@ updated: 2026-09-17
 
 **소스는 이 연결을 하지 않고, 위키도 근거 없이 주장하지 않는다** — 다만 이 위키의 다른 페이지들과 방향이 어긋난다는 점은 기록한다.
 
+- **반대 방향의 비용** — [[jensen-huang|Jensen Huang]]은 의인화가 친근함이 아니라 **공포**를 만든다고 본다(*"We give it these human properties unnecessarily and we're scaring people"*). 두 방향을 한 자리에 둔 페이지 → [[ai-anthropomorphism]] ([[tech-bridge-jensen-huang-korea-society-gala]], 2026-10-09)
+
 ## 미해결 사항
 
 - **기본 이름이 있는지**, 이름 없이 쓸 수 있는지.
@@ -73,3 +75,14 @@ updated: 2026-09-17
 
 - [[tech-bridge-zuckerberg-muse-in-daily-use]] · [[muse]] · [[mark-zuckerberg]] · [[meta]]
 - 관련: [[agent-org-adoption]] · [[proactive-idea-feed]] · [[agent-manager-analogy]] · [[agent-trust-curve]] · [[goal-level-delegation]] · [[cognitive-offloading]]
+
+## 두 번째 제품 — OpenAI Dots (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+같은 장면이 다른 회사 제품에서 반복됐다. [[openai-dots|Dots]] 출시 당일 대담:
+
+| | 이름 | en-orig |
+|---|---|---|
+| [[sam-altman]] | **Doie** (전엔 **Alfred**) | *"Doie. I try I had it Alfred earlier and then like many people are calling it Doy for now, but I'm trying to like think of a great name."* (10:44~10:50) |
+| 진행자 [[dan-shipper\|Dan Shipper]] | **Boo** | *"mine's name is Boo"* (10:51) |
+
+**Muse 편과 같은 세 가지가 겹친다** — ① 진행자가 먼저 이름을 묻는다 ② CEO가 아직 확정하지 못했다(Agrippa는 정했지만 Pip은 *"두고 봐야"*, Doie는 *"trying to think of a great name"*) ③ 기본값 이름이 퍼진다(*"many people are calling it Doy"*). ⚠️ Dots에 아바타가 있는지는 소스에 없다. ⚠️ ko는 이름을 살렸지만(*"도이"*, *"알프레드"*, *"부"*) 다른 자리에서 Dot 자체를 **"담당자"·"상사"·"팀원"** 으로 옮겨 사람처럼 만들었다.

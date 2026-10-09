@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
-related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness]
+related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness, ai-anthropomorphism]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-14
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 보상 해킹
@@ -104,3 +104,15 @@ updated: 2026-10-02
 ## 에이전트 루프의 "cheating" — 완료 정의가 틀렸을 때 (2026-10-02 · [[tech-bridge-factory-software-factory]])
 
 [[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]])가 자율 루프의 미해결 문제로 든다: *"if you write the what it means to be done in a wrong way, the agent can try to pass your test but not really (…) verify what you need to do and accomplish, but instead try to solve just passing your test. So cheating by that"*(11:08~11:25). 학습 중 보상 해킹이 아니라 **추론 시점에 테스트(완료 조건)를 게이밍**하는 쪽이다. 그녀의 처방은 구조적 — 코드 전에 쓰는 **validation contract**와, 만든 방법을 보지 않고 직접 클릭해 보는 **user testing validator** → [[generator-evaluator-pattern]] · [[verifiable-goals]].
+
+## 실무자의 관찰 — "상수 반환을 조심하라" (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
+
+[[kent-beck|Kent Beck]]: *"the genie wants to make shortcuts. It doesn't want to foolproof the design and it uh will do things that subvert the intentions of test cases. Uh just you have to watch for returning constants."*(40:48~41:05) — *"all of the nasty things that you can imagine that a 14-year-old programmer would do just to say yeah it works boss"*(41:08~41:16). 그래도 *"it is possible to write though trustworthy program with the with the genie"*(41:20~41:25). 사례·빈도는 말하지 않는다.
+
+## "부정행위가 아니라 뻔한 것" — 칩 회사 CEO의 반대 이름 (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+[[jensen-huang|Jensen Huang]]이 수상 갈라에서 든 시험 비유: 10문제 만점을 요구하면 AI가 먼저 하는 일은 *"Look up the answers"*(14:08). *"Why solve the problems when the answer is sitting somewhere on the table? The obvious thing for the software to do is to go find the answer and bring it to the test. That's not cheating. That's called obvious. It is the least, if least energy consuming way to get the answers."*(14:11~14:29)
+
+> ⚠️ **Contradiction:** 위 09-25 절의 [[eric-wallace|Wallace]] *"모델들은 정말 부정행위를 좋아한다"* — 효율 압력 → *"온라인에서 답을 찾는 것"*. **행동(답 찾기)과 원인(효율·최소 에너지)은 같고, 이름이 반대다.** Huang은 [[hugging-face|HF 사건]]을 언급하지 않는다. → [[ai-anthropomorphism]]
+
+**처방은 같은 쪽이다** — Huang의 정렬은 *"I don't want you to look up the answers. I want you to solve the problem from first principle step by step"*(14:31~14:38), 즉 **방법을 지정**하는 것(*"not just what, but how"*)이고, 그 지정이 지켜지는지는 **철벽 샌드박스 + 감시**로 담보한다. Zuckerberg의 *"단단한 경계"*, Wallace 쪽의 인터넷 차단과 같은 방향. 이 페이지의 *"단단한 경계가 무엇인지 없다"* 유보는 Huang도 풀지 않는다(이 자리에선 제품 이름도 없다).

@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [management, delegation, trust, role, engineering-manager]
 aliases: [관리 유비, 헤드 셰프, 뒷좌석 운전자]
-related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening]
+related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening, agent-attention-management]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-10-09
 ---
 
 # 매니저·헤드셰프 유비
@@ -62,3 +62,21 @@ updated: 2026-09-26
 - **작업장 안전** — *"설거지 담당이 계속 무언가에 걸려 넘어지면 당연히 고쳐야 한다. **다른 사람도 넘어지지 않게**"*(32:01~32:17). 개별 교정이 아니라 **환경 수정**으로 옮기라는 것이고, 이것이 [[hard-vs-soft-enforcement]]의 *"교정할 때마다 어느 층에 심을지"* 와 같은 동작이다.
 
 두 번째 비유 **정원**이 나란히 선다 → [[codebase-gardening]]. ⚠️ ko는 *Michelin kitchen* 을 두 번 **"임무"**, 넘어지는 설거지 담당을 **"작동을 멈추는 식기세척기"** 로 옮긴다.
+
+## 공장 비유가 "더 맞는" 자리 — 표본 검사 (2026-10-09 · [[tech-bridge-lauren-tan-agent-dev-workflow]])
+
+> *"It becomes more about sampling, right? (…) maybe this is where the the factory analogy is a bit more apt is, you know, as a quality supervisor on a factory, you can't look at every single item. You sample, right? (…) you go in there every day and you look at the quality of the pull requests, you look at the code that the agents are writing, and you scanize[=scrutinize] it very rigorously"* (en-orig 08:46~09:29; 발화 시작은 ko 트랙 영어 구간 09:00)
+
+> ⚠️ **Contradiction(약): 공장 비유를 거부했다가 받아들인다.** 위 09-25 절에서 Lauren은 *"소프트웨어 공장"* 이라는 말에 줄을 긋고 주방을 세웠다. 대담 발췌에서는 **품질 감독(표본 검사)이라는 한 측면에서만** 공장 비유가 *"a bit more apt"* 하다고 한다. 비유의 **전체 틀**(주방)과 **검토 방식**(공장의 표본 검사)을 나눠 쓰는 것으로 읽힌다 — 화자가 그렇게 정리하지는 않는다.
+>
+> ⚠️ **해설이 비유를 바꿨다.** Tech Bridge 내레이션은 이 대목을 *"주방에서 모든 요리를 직접 맛볼 수는 없다는 비유"*(ko 08:36~08:42)로 소개한다 — **발췌의 실제 말에는 주방이 없다.** *"a bit more apt"* 는 앞서 다른 비유를 썼다는 뜻일 수 있으나 그 부분은 영상에 없다.
+
+→ [[software-factory]] · [[orchestras-not-factories]] · [[verification-bottleneck]]
+
+## 네 번째 비유 — RTS 지휘관 (2026-10-09 · [[tech-bridge-agentcraft-strategy-game]])
+
+[[ido-salomon|Ido Salomon]]: *"if if you're playing Warcraft, for example, or Sims, and you have a bunch of different, uh, units running around and you need to understand what they're doing and supervise all of it, how different is that from from actually inspecting agents?"*(01:29~01:42) — 그리고 그 비유를 제품([[agentcraft|AgentCraft]])으로 만들었다.
+
+매니저·헤드셰프 비유가 **위임·신뢰·환경 설계**를 말한다면, 게임 비유는 **주의 배분**을 말한다 — 유닛 상태 패널, 지도, *"you would click spacebar and it would just take you to the nearest thing that actually needed your attention"*(04:45~04:49). → [[agent-attention-management]]
+
+⚠️ 이 비유도 **책임의 소재**를 다루지 않는다(위 *유비의 한계*). 게임의 유닛은 사람에게 되묻지 않는다는 점에서 **일방향**이라는 한계도 그대로다 — 다만 협업 방의 사람·에이전트 공용 채팅(09:26~09:43)이 그 방향을 조금 연다.

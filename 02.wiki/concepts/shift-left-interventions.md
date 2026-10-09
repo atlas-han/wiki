@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [shift-left, context, agents-md, static-analysis, tests, evals, lazy-prompter]
 aliases: [시프트 레프트(에이전트), 게으른 프롬프터, lazy prompter, 개입의 스펙트럼]
-related: [shift-left-security, tools-and-context-over-harness, context-engineering, harness-engineering, llm-coding-guidelines, executable-standards, agent-skills, skill-self-improvement]
+related: [shift-left-security, tools-and-context-over-harness, context-engineering, harness-engineering, llm-coding-guidelines, executable-standards, agent-skills, skill-self-improvement, feedforward-feedback-steering, human-plumbing]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering]
 created: 2026-09-23
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 개입을 왼쪽으로
@@ -52,6 +52,10 @@ updated: 2026-10-02
 ## 같은 단어, 다른 대상 — 일이 requirements engineering으로 shift left (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
 
 [[simon-martinelli|Simon Martinelli]]의 *shift left*는 **개입**이 아니라 **사람의 노동**이 왼쪽으로 가는 것이다 — *"So everything shifts left to requirements engineering in my opinion"*(26:43~26:45), *"Now you have two weeks and then five minutes and two weeks"*(26:59~27:00). 구현이 몇 분이 되자 스펙을 쓰는 요구공학자·PO가 병목이 된다(스위스 의회 PoC, 26:21~26:29). 이 페이지의 스펙트럼(프롬프트 → 문서 → AGENTS.md → 검증기)과는 축이 다르지만, 둘 다 **"앞단에 넣은 것이 뒤의 반복을 줄인다"** 는 같은 구조다. → [[ai-unified-process]]
+
+## 같은 이동, 두 번째 지도 — feedforward/feedback 2×2 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
+
+[[joel-quenneville|Joël Quenneville]]은 같은 방향을 다른 축으로 그린다 — [[feedforward-feedback-steering|생성 전/후 × 결정론/LLM]]. 프롬프트·AGENTS.md(이 페이지의 오른쪽 끝)는 **feedforward·inferential** 한 칸이고, *"move judgment out of that feed forward inferial quadrant and into the other three"*(21:30~21:36). 이 페이지의 정적 검증기는 feedback·computational, eval·리뷰는 feedback·inferential, 그리고 이 페이지에 없던 **feedforward·computational**(Rails 제너레이터·템플릿 — *틀린 것을 처음부터 못 쓰게*)이 추가된다. 동기도 같다 — Lopopolo의 *"게으른 프롬프터"* ↔ Quenneville의 [[human-plumbing]] 탈출. 개입을 언제 넣을지도 같은 답이다: *"drive it with lived pain"*(28:14~28:18), *"how could this be the last time?"*(28:20~28:26).
 
 ## References
 

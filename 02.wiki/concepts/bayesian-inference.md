@@ -3,11 +3,11 @@ title: Bayesian Inference
 type: concept
 category: theory
 tags: [uncertainty, probability, bayes, calibration, decision-making]
-related: [aleatoric-epistemic-uncertainty, continual-learning, sutton-bitter-lesson, fuzzy-intent-discovery]
+related: [aleatoric-epistemic-uncertainty, continual-learning, sutton-bitter-lesson, fuzzy-intent-discovery, model-calibration]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-jev-calibrated-decisions]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-10-09
 ---
 
 # Bayesian Inference
@@ -54,6 +54,8 @@ updated: 2026-09-05
 > 비가 올 확률이 **70%** 라고 예측했을 때, 제가 예측한 모든 날들을 종합해 보면, **그중 70%는 실제로 비가 왔고 30%는 비가 오지 않았다**는 식으로 균형을 맞춰야 한다고 봅니다. 그러니까 그건 **보정된(calibrated) 확률**이라는 거죠.
 
 반복 불가능한 사건(화성 최초 착륙일)에도 확률을 쓰는 것이 *"**완벽하게 타당하고 실제로 옳은 방법**"* 이라고 못 박는다. 이는 빈도주의적 반론에 대한 명시적 응답이다.
+
+**모델 쪽 (2026-10-09).** 같은 정의가 모델 출력의 학습 목표로 다시 나왔다 — *"when we say that there is a 80% probability that 80% probability is going to be correct about 80% of the time. That's calibration."*([[tech-bridge-jev-calibrated-decisions]], 10:19~10:35). [[typesafe-ai|TypeSafe]]의 [[jev|Jev]]는 이것을 보상하는 RL(**RLCD**)로 학습된다고 한다(⚠️ 제3자 재진술). → [[model-calibration]]
 
 ## 실무에서 확인되는 역설
 
@@ -113,3 +115,4 @@ Ghahramani의 답은 계산량이 변했다는 것이다 — 학부 시절의 �
 - [[tech-bridge-uncertainty-mathematics]] — first-seen
 - [[zoubin-ghahramani]] · [[google-deepmind]]
 - 관련: [[aleatoric-epistemic-uncertainty]] · [[continual-learning]] · [[sutton-bitter-lesson]] · [[fuzzy-intent-discovery]]
+- [[tech-bridge-jev-calibrated-decisions]] · [[model-calibration]]

@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness]
 created: 2026-09-09
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 # 모델 혼합의 경제학
@@ -144,3 +144,9 @@ updated: 2026-10-02
 같은 발표의 **Coinbase** 읽기: 이 페이지의 기존 서술(*기본 모델을 바꾸고 프런티어를 가장 어려운 작업에만*)에 레버 셋이 더해진다 — **캐싱**(*"to stop prefilling the stuff every time"* 05:49~05:51), **지출 한도 없이 결과 요구**(05:51~05:55), **라우팅**(05:57~06:06).
 
 > ⚠️ *"You can save for example 25% but even more probably"*(07:03~07:09) — *"very conservative"* 라는 자사 벤치마크, 구성 미발화. 캐싱 질문에는 *"just a pricing decision. It's not a technical challenge because everyone can do caching"*(09:15~09:22)로 답했다 — 과제 중간 모델 전환이 캐시를 깨는 비용은 말하지 않는다(위 Nadella 편 *KV 캐시 적중률* 과 긴장).
+
+## "상용은 엣지 케이스에만, 나머지는 오픈소스" — 작업당 비용으로 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
+
+[[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 발표 부제가 이 페이지의 한 줄 요약이다: *"proprietary models for edge case but use open source for the rest"*(00:12~00:17). 근거로 든 대학 연구(미특정) 표는 **토큰 단가와 작업당 비용이 다른 순서**라는 것 — Gemini 3 Flash *"$3.5 per million token"* vs 작업당 ⚠️ *"$75"*(en-orig) / *"$705"*(`en`·ko), MiniMax 2.7 토큰 *"1.5"* vs 작업당 *"$148"*(03:27~03:59). *"They don't cost the same, but they also not the same per task."*(04:05~04:08)
+
+혼합의 결과로 제시된 곡선은 [[overspending-underusing-loop]]의 Coinbase 차트와 같은 모양 — **토큰 1.5배↑, 비용 1.5배↓**(05:06~05:21, 자사 3개월). ⚠️ 화자는 이를 *"2.5 times"* 절감이라 부르지만 1.5×1.5 = 2.25.

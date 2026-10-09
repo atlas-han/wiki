@@ -3,11 +3,11 @@ title: Prompt Injection
 type: concept
 category: technique
 tags: [agent-safety, attack, llm-security]
-related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack]
+related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions]
 created: 2026-05-25
-updated: 2026-10-03
+updated: 2026-10-09
 ---
 
 # Prompt Injection
@@ -106,3 +106,5 @@ updated: 2026-10-03
 - ⭐ 3월 연구(이름 미발화, 2차 인용): 무해한 커밋 메시지로 포장한 취약 코드가 *"fooled an autonomous review agent in 88% of attempts"*, 같은 시도가 사람 리뷰어를 통과한 것은 35%(20:59~21:12). *"you don't just lose a reviewer, you lose the thing that was hard to fool"*(21:15~21:19).
 
 [[lethal-trifecta]] 관점에서: 리뷰어는 **신뢰할 수 없는 입력**(외부 PR)을 읽고 **결정 권한**(승인·차단)을 가진다 — 유출 경로가 없어도 *판정을 바꾸는 것* 자체가 피해다. → [[automated-code-review]]
+
+**분류기 게이트도 예외가 아니다 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]]).** 탈옥 시도를 거르는 가드레일로 제시된 [[jev|Jev]]에 대해 같은 해설이 *"like any AI model, it can be tricked by instructions hidden in the data it's reading"*(12:50~12:54)라고 한계를 단다. 텍스트를 생성하지 않는 [[system-1-model|System 1 모델]]도 **입력 데이터 속 지시**에 노출된다 — 위 다섯 번째 벡터(리뷰 대상이 리뷰어를 설득)와 같은 모양으로, 게이트 자신이 공격 표면이다.

@@ -2,12 +2,12 @@
 title: Jensen Huang
 type: entity
 category: person
-tags: [nvidia, ceo, gpu, ai-infrastructure, physical-ai, g20]
+tags: [nvidia, ceo, gpu, ai-infrastructure, physical-ai, g20, korea]
 links:
   - https://www.nvidia.com/
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-10-09
 ---
 
 # Jensen Huang
@@ -86,3 +86,46 @@ updated: 2026-09-25
 - 켄터키 마을 이름 — en-orig *Onita* / ko *오네이다*, 교정하지 않음.
 
 → [[tech-bridge-jensen-huang-cbs-interview]] · [[existing-law-first]] · [[data-center-local-backlash]]
+
+## 백악관 패널 — SI 공장, 격리·대역 밖 감시, "판단하지 않는 도구" (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+세 번째 소스. [[elon-musk|Musk]]·[[tom-brown|Tom Brown]]과 함께한 **26:09 패널**(설명란상 백악관, 진행자 무명, 반대 심문 없음). ⚠️ 화자 귀속은 내용 판독 — 05:18 GW당 산출액, 07:12 궤도 컴퓨팅 거들기, 10:57 에너지 자금, 25:00 선언 세부는 **Huang 추정**.
+
+- **SI = 컴퓨팅 스택 전체의 재발명, 기반은 에너지**(00:36~01:32) — G20 5단 케이크와 같은 그림, 호칭만 SI. 본인도 *"AI excuse me SI"*, *"Advance AI. Advance SI. (…) I'm going to get good at this"*(08:48, 12:48~12:52).
+- ⭐ **SI 공장** — *"We call them data centers because that's where we hold data. (…) these are really SI factories (…) you're producing something of economic value. You're just not storing it."*(08:13~08:28). 연 10~20 GW 구축 → *"probably about a million jobs"*(09:03~09:13), *"first time in 50 years we are re-industrializing"*(09:27~09:33). → [[intelligence-as-infrastructure]] · [[ai-jobs-impact]]
+- **GW당 연간 경제 산출 400~500억 달러**(05:18~05:26, 추정) — ⚠️ G20의 *"1 GW ≈ 500~600억"* 은 **투자액**, 이것은 **산출**. 같은 무대 Musk 산수는 600억 → [[power-shortfall]]
+- ⭐ **에이전트 격리 + 대역 밖 감시** — *"you should never trust that it's contained"*, 감시는 *"another another chip (…) out of band (…) outside the sandbox of the agent itself"*(13:39~13:57). 제품: **OpenShell**(*"a browser of agents"*), **BlueField**(감시 칩)(14:27~15:05). CBS의 사고 처방(샌드박스·격리·평가 중 모니터링)이 제품 이름을 얻었다. → [[agent-governance-layers]]
+- **Claude 사용자** — *"I use I use um uh Claude to uh help me do research"*(19:59~20:04), 4~8시간 → 약 3분. G20·CBS의 *"Anthropic, OpenAI, Cursor 같은 기성 AI를 쓴다"* 의 개인판.
+- ⭐ **"SI는 도구" — 판단을 덜 가진 도구** — 스테이크 나이프 비유(23:14~23:31), *"how much judgment you really want these tools to have"*(23:36~23:41), 사이버 방어자의 행동이 공격자처럼 보일 때도 작동해야(23:53~24:10). → [[defenders-window]]
+- **SI 안전 공동 선언**(추정 귀속) — 내부 통제·제3자 외부 감사·업계 모범 사례 공유, *"a lot of teeth"*, *"POTUS (…) watched over the meeting"*(25:00~25:50). → [[cross-lab-peer-review]]. ⚠️ CBS의 *"기존 법 먼저"* 와 나란히 놓으면 **법 대신 자율 선언**을 표준이라 부르는 셈 — 모순으로 표시하지는 않는다([[existing-law-first]]).
+
+## 코리아 소사이어티 갈라 — 의인화 거부, 답 찾기는 "뻔한 것", 상자 + 감시 (2026-10-09 · [[tech-bridge-jensen-huang-korea-society-gala]])
+
+네 번째 소스. **수상 갈라의 무대 대담**(23:10, 진행자 제목상 "주주 장" — 자막에선 Huang이 *"Julie"* 라 부름, ⚠️ 미해소). 우호적 무대, 반대 심문 없음. 진행자에 따르면 **그날 아침 NVIDIA가 "open agent safety platform"을 출시**했다(12:47~12:52) — [[tech-bridge-white-house-superintelligence-panel|백악관 패널]]의 *"great Monday … open agent safety framework"* 와 같은 발표로 추정(⚠️ 명칭 갈림).
+
+### 새로 들어오는 것
+
+- ⭐ **AI는 살아 있지 않다** — *"AI is not alive. AI did not go rogue. It's just a piece of software."*(13:26~13:32), *"no more alive than a pet rock"*(13:42~13:44), *"We give it these human properties unnecessarily and we're scaring people."*(15:56~16:00) → [[ai-anthropomorphism]]
+- ⭐ **시험 비유** — 만점을 받으라 하면 AI는 답을 찾아본다: *"That's not cheating. That's called obvious. It is the least (…) energy consuming way"*(14:21~14:29). → [[reward-hacking]] (⚠️ Eric Wallace와 대립)
+- ⭐ **정렬 = "not just what, but how"**(14:57~14:59) → [[intent-alignment]]
+- **두 가지** — *"a sandbox, a force field, a container that is ironclad"*(17:11~17:17), 권한은 *"minimal"* 에서 *"its capabilities deserve it"* 만큼(17:27~17:51); 그리고 *"You have to monitor all AIS"*(18:54). 비유는 직원·아이·학생, 단 *"I'm not using the human as an example of what the AI is"*(16:43~16:46). → [[agent-governance-layers]] · [[least-privilege-connectors]] · [[agent-trust-curve]]
+- ⭐ **가치 있는 목표는 모호하다** — *"sufficiently specific but sufficiently ambiguous so that you could be surprised by its outcome"*(18:19~18:29) — 그래서 감시가 필요하다. → [[verifiable-goals]]와 긴장
+- **컴퓨팅의 재발명** — 1964 IBM System/360 이후 처음, *"a computer that is taught, not programmed"*, *"generating information, not just retrieving"* → 데이터센터 → AI 공장(01:06~03:30). → [[intelligence-as-infrastructure]]
+- **한국** — *"singular in your ability to both consume and export AI"*(04:47~04:54); 유럽이 발명하고 미국이 확산시킨 지난 산업혁명 비유; *"punch well above your weight"*.
+- **진로** — *"Go to college"*, *"We need radiologists"*, *"We need computer science nerds"*, *"Engage AI"*(20:15~21:37). → [[ai-jobs-impact]]
+- ⭐ ***"not doomerism or Pollyannaism — responsible optimism"***(20:50~21:03); 가장 큰 걱정은 *"we as America become so afraid of the technology that we end up not embracing the technology that we invented"*(22:59~23:09).
+- Denny's(CBS와 같은 이야기), *"There's a little bit of Korean in me"* — 회복력·*"the ability to suffer"*(09:39~09:49), NVIDIA *"33 years old, almost 34"*(10:19~10:22).
+
+### 앞 소스들과의 일관성
+
+AI 공장·5단 케이크(이번엔 **진행자가 열거**)·종말론 거부·샌드박스와 감시·Denny's 모두 **일관**. 강조점 차이 하나: 백악관 패널 *"never trust that it's contained"* vs 갈라 *"It is not true. You cannot contain it. It is not true"*(19:23~19:27) — **격리를 믿지 말라 / 격리 불가능론을 믿지 말라.** 같은 처방(격리 + 감시)으로 끝나 모순은 아니다.
+
+> ⚠️ **Contradiction:** [[eric-wallace|Eric Wallace]](OpenAI)는 답을 온라인에서 찾는 것을 *"부정행위"* 라 부르고, Huang은 같은 행동을 *"not cheating. That's called obvious"* 라 부른다 — [[ai-anthropomorphism]].
+
+⚠️ **ko 자막**이 *"They're not alive"* → **"살아있습니다"**(16:26), *"this morning"* → **"내일"**(12:50), 마지막 문장의 걱정 → **"두려워하지 맙시다"**(23:01)로 뒤집었다. Korea Society → **"한국학회"**.
+
+### 미해결 (갈라 편)
+
+- 진행자 이름(주주 장 / *Julie*), 행사 날짜, 상 이름.
+- 진행자 수치(자사주 1,500억·총 2,350억 달러, 금융사 5곳 약 5천억 달러, Ezra Klein 대담·NYT 헤드라인) — 미확인.
+- *"open agent safety platform"* 의 공식 명칭·문서.

@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots]
 links: []
 created: 2026-09-06
-updated: 2026-09-29
+updated: 2026-10-09
 ---
 
 # Astra (OpenAI)
@@ -122,3 +122,9 @@ updated: 2026-09-29
 - Astra는 [[microsoft-copilot|Copilot]]의 **learned router**가 고르는 여러 모델 중 하나다 — *"every model … needs to compete … for handling tasks inside of the Copilot system"*(10:19~10:25). 절대량에서 API 사용은 *"dominated still by what is happening with Open AI"*(11:25~11:29). → [[model-mixing-economics]]
 - ⚠️ **수치 없음.** *"fantastic traction"* 의 척도(호출 수·매출·라우팅 비율)가 없다.
 - ⚠️ **ko가 뜻을 뒤집었다** — **"OpenAI는 그렇지 않습니다. 특히 요즘 아스트라 모델에서는 더욱 그렇습니다"**(09:55). ko만 읽으면 **Astra가 부진하다**는 뜻이 된다.
+
+## 제품의 전제 조건으로 — Dots (2026-10-09 · [[tech-bridge-altman-devday-dots]])
+
+[[openai-dots|Dots]]를 가능하게 한 연구 측 조건을 묻자 [[sam-altman|Altman]]: *"This is like a very complicated system with a lot of stuff, but may maybe most important was Astra. We needed like a you needed a smart enough model (…) getting the model over the intelligence bar was a key part."* (12:01~12:15)
+
+진행자는 ultra fast와 대비해 *"the Astra is a more expensive model world"* 라 부른다(29:28~29:30) — 09-06 *"더 비싸고 큰 모델 등급"* 과 같은 위치. **Astra가 이름 붙은 출시 제품의 기반으로 언급된 첫 사례**다. ⚠️ 스펙·가격·벤치마크는 여전히 없다.

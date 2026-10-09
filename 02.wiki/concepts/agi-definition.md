@@ -5,9 +5,9 @@ category: theory
 tags: [agi, superintelligence, definition, milestone, openai, nvidia, andrew-ng]
 related: [ai-jobs-impact, intelligence-as-infrastructure, compute-constrained-growth, agent-harness-design, sutton-bitter-lesson, regulatory-capture, one-continuous-exponential]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-white-house-superintelligence-panel]
 created: 2026-09-06
-updated: 2026-09-20
+updated: 2026-10-09
 ---
 
 # AGI 정의 논쟁 (AGI vs Superintelligence)
@@ -99,3 +99,14 @@ Huang의 *"AGI가 등장하더라도 모든 기업의 문제가 해결되는 것
 > ⚠️ **당사자 진술이고 강제력이 없다.** *"기준"* 이 무엇인지, 누가 판정하는지, 못 맞추면 무엇이 멈추는지 소스에 없다. 그리고 **정부·외부 검증이 대담 전체에서 한 번도 언급되지 않는다** — [[dario-amodei]]의 3단계 계획과 갈리는 지점이다.
 
 → [[greg-brockman]] · [[pacing-the-frontier]] · [[jagged-capability-frontier]] · [[openai-astra]]
+
+## 능력 단계가 아니라 호칭으로서의 "Superintelligence" (2026-10-09 · [[tech-bridge-white-house-superintelligence-panel]])
+
+이 페이지의 superintelligence는 **능력의 단계**(AGI 다음)에 대한 논쟁이었다. 백악관 패널에서는 같은 말이 **무대의 호칭**으로 쓰인다:
+
+> *"We're I guess we're now calling this super intelligence, which I think is actually good branding."* (00:15~00:22, 진행자)
+
+이후 화자들이 **AI → SI 로 세 번 고쳐 말한다** — [[jensen-huang|Huang]] *"with these AI excuse me SI infrastructure"*(08:48~08:51), *"we want to advance AI. Advance SI. We I'm going to get good at this."*(12:48~12:52), 진행자 *"stories of AI. I'm sorry. Super intelligence."*(19:31~19:34). [[tom-brown|Tom Brown]]은 Opus 5.5를 *"each of these super intelligences"* 로 부른다(18:30~18:34).
+
+- **같은 패널 안에서 SI는 지금의 모델**(Claude로 하는 리서치, Opus 5.5)을 가리킨다 — 도달 선언이 아니라 **기존 제품의 개명**이다. Huang의 G20 *"이미 거의 AGI"* 와도 다른 층의 말이다.
+- ⚠️ 이 위키는 이 호칭 사용을 **능력 주장의 증거로 쓰지 않는다.** 검색 시 *"super intelligence"·"SI"* 가 이 소스에서는 *AI* 와 같은 뜻이다.
