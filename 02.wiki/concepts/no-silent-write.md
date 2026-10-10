@@ -6,9 +6,9 @@ tags: [memory, approval, human-in-the-loop, wiki, governance, scopes]
 aliases: [silent write 금지, 제안-승인 메모리, suggest-not-write]
 related: [agent-memory, company-brain, named-human-accountability, sweeper-agent, privacy-auto-mode, skill-self-improvement, agent-governance-layers, action-reversibility, agent-tool-design-practices]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-human-is-async-api]
 created: 2026-09-10
-updated: 2026-09-11
+updated: 2026-10-10
 ---
 
 # 자동 쓰기 금지
@@ -55,6 +55,7 @@ updated: 2026-09-11
 ## ⚠️ 한계
 
 - **승인 피로** — 하루에 몇 번 팝업이 뜨는지, 사람들이 읽지 않고 누르기 시작하면 어떻게 되는지 어느 소스도 말하지 않는다.
+  - (2026-10-10) [[tech-bridge-human-is-async-api]]가 현상에 **이름만** 붙인다 — *"alert fatigue is real (…) you just start saying yes, yes, yes, yes, yes every time it asks you questions"*(17:06~17:15), 처방은 *"the cost of being wrong"* 과의 경우별 균형(16:35~17:29) → [[risk-proportional-human-review]] · [[human-as-async-api]]. 빈도·수치는 여전히 없다.
 - **승인된 사실이 나중에 틀리면** — 정정 경로는 여전히 없다.
 - 승인자가 곧 스코프 결정자다 — 잘못된 스코프로 승인하면 유출은 그대로 일어난다. Gopal은 그래서 이름이 필요하다고 한다(사후 책임), 유출 자체를 막지는 못한다.
 

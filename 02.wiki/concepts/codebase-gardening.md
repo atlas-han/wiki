@@ -6,9 +6,9 @@ tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comm
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
 related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-26
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 코드베이스 정원 가꾸기
@@ -100,3 +100,14 @@ updated: 2026-10-09
 ## 같은 전제, 설계 쪽 처방 (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
 
 [[matt-pocock|Matt Pocock]]: *"code is the environment your agent operates in. And if you have bad code in your codebase, that is going to beget more bad code."*(02:42~02:51) — 이 페이지의 전제(*코드베이스는 기억이다*, 안티패턴은 번진다)와 같은 말을 **브레이크가 필요한 이유**로 쓴다. 처방은 정원사가 아니라 **설계**([[deep-modules]] — 작은 인터페이스로 번질 표면을 줄인다)와 **리뷰어의 커밋**(나쁜 패턴이 머지 전에 고쳐진다).
+
+## 풀버전 대담 — 2,500 PR의 대부분이 gardening, 그리고 버퍼 (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+위 *"정원 손질의 실례"* 절이 기댄 해설 영상의 **원 대담 풀버전**. ⚠️ 당사자 진술, 독립 확인 없음.
+
+- ⭐ *"the 2,500 PRs, they're not obviously like 2,500 features, right? they are a lot of the work actually is spent on gardening like another term that I really love"*(44:55~45:11). 좋은 환경의 수혜자는 에이전트만이 아니다 — *"Think of a new hire (…) if you have a really good environment they can be productive from day one"*(45:26~45:36). → [[trusted-throughput]]
+- **god file의 크기 확정** — GrokBot 초기 *"eight god files which were like at least 10,000 lines long if not longer"*(30:26~30:34). 위 절의 출발 상태가 수치를 얻는다.
+- **교정의 대상은 에이전트가 아니라 환경** — 표본에서 *"multiple agents (…) propagating the same workaround everywhere"* 가 보이면 *"amend your kitchen or your factory (…) your skills, your constraints, your lints, your type systems"*(49:32~49:57). 일회성은 그대로 둔다(49:26~49:30).
+- ⭐ **버퍼가 발화로 확인됐다** — React *"foot guns"* 를 찾는 에이전트에게 *"I don't actually tell it to fix the issue first. I tell it to append it to a document and then every couple of days I look at it and I say actually these are all the same thing"*(46:45~46:55), *"you almost want like a buffer a cue[=queue]"*(46:58~47:00) — 실행 모드에선 *"you sometimes miss the big picture"*(47:17~47:19).
+
+> ⚠️ **Contradiction(약), 이제 둘 다 본인 발화.** 위 09-25의 *"퍼지기 시작하기 전에 가능한 한 빨리 싹을 잘라야"* 와 이 *"fix the issue first"* 하지 않기. 위 절이 2차 요약이라 해소를 미뤘던 자리다. 위키의 독해: 버퍼 주기는 **며칠**이고 목적은 **같은 원인 묶기**라, 09-25의 *"린트 규칙으로 적어도 출혈은 멈춘다"* 와 결합하면 양립한다 — 화자는 둘을 잇지 않았다.

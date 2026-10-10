@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Pstack
@@ -116,3 +116,14 @@ updated: 2026-10-09
 - **저장소** — 해설 영상 설명란이 **`https://github.com/cursor/plugins/tree/main/pstack`** 를 *"pstack 공식 저장소"* 로 건다. 이 페이지에 처음 기록되는 위치다(⚠️ 이 위키는 열어 보지 않았다 — Cursor 플러그인 저장소 하위 디렉터리라는 것만 URL에서 읽힌다).
 - **제작자 본인의 유보** — *"I don't want to sell this as, like you know, something that you can just do easily by using PAC[=Pstack]. Like, it takes a lot of time and effort to think about your code and where you see your agents failing"*(10:15~10:29). 해설도 *"설치만으로 내 프로젝트의 검증 환경까지 생기지는 않습니다"*(ko 06:09~06:14). 위 *"화자 본인의 유보"* 절과 같은 방향이고, 09-25 발표에서 빠졌던 유보가 대담에서는 남아 있다.
 - ASR: en-orig·ko 모두 *"PAC"*(09-25 raw와 같은 오인식), 내레이션 *"P스텍"*.
+
+## 기원, full autopilot, recall (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+같은 대담의 풀버전에서 제작자가 Pstack의 **기원과 구성 요소 셋**을 처음 말한다. ⚠️ 당사자 진술, 독립 확인 없음. 설명란은 화자를 *"pstack 개발자"* 로 소개한다.
+
+- **기원** — Meta 퇴사 후 번아웃 휴식기의 사이드 프로젝트(*"back in February, maybe February, early February or January"* 01:36~01:41)에서 스킬을 만들며 *"flying blind"* 였고, *"that project eventually sort of became the basis of PAC[=Pstack] even though I didn't know it at the time"*(02:37~02:42). 저장소는 *"potato noodle"*(02:54~02:56, `poteto/noodle` 판독 — ⚠️ 열어 보지 않았다)에 *"some skills and a brain directory"*(03:00~03:02).
+- **`create verification`** — *"I spent a lot of time actually (…) tuning the verification the create verification skill"*(17:53~17:58). 이 스킬을 Pstack에서 *"probably the most important skill"*(17:38~17:44)이라 한다.
+- ⭐ **full autopilot** — *"I tell my agents full autopilot is is something that you can do in in PAC and that will trigger off this very intense rigorous verification loop where it'll spawn a bunch of verifier agents for every pull request and it will fuzz"*(51:42~52:00) — 앱을 실제로 돌려 클릭하며 회귀·버그를 찾고, 스스로 고쳐 *"a state where it can land"*(52:16~52:21)까지. *"quite token intensive (…) instead of like 10 verifier agents you might do like one"*(52:21~52:31). 이 위키에 처음 기록되는 Pstack **자동 머지 모드**다.
+- ⭐ **`recall`** — 과거 트랜스크립트를 캐는 스킬. Cursor 앱 virtualization 작업에서 새 채팅마다 지난 채팅의 맥락을 옮기고 싶었던 것이 기원, *"recall was just a way for me to collapse collapse and compress that workflow into a skill"*(1:02:26~1:02:33). → [[query-to-skill-distillation]] · [[skill-self-improvement]]
+- 그 밖의 이름: *"the how skill the Y skill the unslap skill"*(16:12~16:17 — how·why·unslop으로 판독, 추정), *"potato mode"*(1:03:26~1:03:28, ⚠️ 정체 미확정). 진행자 [[matt-pocock]]의 *grill me*·*wayfinder* 와 *"very complimentary"*(1:00:00~1:00:04)라 한다.
+- **스킬은 작아진다** — *"with the latest models you can just delete those parts and just really focus on the workflow"*(1:02:56~1:03:03). Pstack의 CLI(결정론)와 짝을 이루는 방향이다(위키의 독해).

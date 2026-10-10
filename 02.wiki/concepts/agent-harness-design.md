@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
 related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition, tools-and-context-over-harness, linear-vs-closed-loop-harness, files-vs-database-agent-memory]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-human-is-async-api]
 created: 2026-05-25
-updated: 2026-09-24
+updated: 2026-10-10
 ---
 
 # Agent Harness Design
@@ -228,3 +228,7 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 에이전트 루프의 요구는 *"실패에 강해서 루프를 절대 빠져나가지 않게"*(33:53~33:59) — 그리고 Q&A에서 그 반대편인 **상한**이 나온다: 도구 호출 8~12회의 *"인내심"* 변수(52:41~53:25). → [[linear-vs-closed-loop-harness]]
 
 > ⚠️ Contradiction: 09-23 [[tools-and-context-over-harness|Lopopolo]]는 **하네스를 고정**하고 도구·컨텍스트에 투자하라고 했고, 이 소스는 **모델이 고정(임대)** 이고 하네스를 직접 만들라고 한다(워크숍 = *"모델만으로 시작해 층을 더한다"*, 44:26~44:34). 다만 Martinez가 만드는 층(메모리·시맨틱·컨텍스트 조립)은 Lopopolo의 *"도구와 컨텍스트"* 와 상당 부분 겹친다 — **어휘 충돌일 가능성**을 표시하고 판정하지 않는다.
+
+## 2026-10-10 — durability가 하네스의 한 층으로 ([[tech-bridge-human-is-async-api]])
+
+[[temporal|Temporal]] 직원은 하네스 정의 논쟁(*"whether the model's in it, whether tools are in it, memory's in it, guard rails, security"* 04:27~04:34)에 판정을 내리지 않고 한 층만 더한다 — *"And part of that picture should be durability."*(04:41~04:47) 구현은 **에이전트 루프를 workflow로, 모델·도구 호출을 activity로** 두는 [[durable-execution]](06:28~06:49) — worker가 죽어도 이벤트 로그 replay로 이어 간다. Claude Platform 팀의 *"하네스는 내구성 있는 서버에서"*([[managed-agents]])와 같은 방향이되, 내구성을 **서버 배치**가 아니라 **실행 모델**에 둔다. 사람을 기다리는 대기도 이 층에 산다 → [[human-as-async-api]]. ⚠️ 벤더 발표.

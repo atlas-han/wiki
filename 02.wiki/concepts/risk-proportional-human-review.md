@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration, agents]
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
-related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility]
+related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api]
 created: 2026-09-18
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 위험 비례 사람 검토
@@ -81,3 +81,9 @@ updated: 2026-10-09
 [[matt-pocock|Matt Pocock]]은 이 원칙을 **PR 하나하나에 붙는 라벨**로 만든다 — 첫 원칙 *"some reviews are more important than others"*(17:02~17:07), 기준은 one-way/two-way door와 blast radius([[action-reversibility]]), 결과는 PR 하단의 *merge danger* 요약(18:22~18:32). 결론: *"You really don't need to review every single two-way door. Every single one-way door you do."*(22:06~22:12) IBM 편이 비워 둔 *"가장 위험한 결정이 무엇인가"* 에 Martinelli(모듈 criticality) · Conductor(마이그레이션 파일)에 이어 **세 번째 구체 예**(이메일 대량 발송 · 비싼 마이그레이션 · 데이터 손실)가 붙는다.
 
 > ⚠️ ko 자막은 결론 문장을 캡션 경계에서 **"되돌릴 수 있는 모든 결정을 검토하십시오"** 로 쪼개 반대로 읽히게 했다(22:07~22:12). 위험도를 누가 판정하는지는 이 소스에서도 열려 있다.
+
+## 반대편 비용에 이름이 붙는다 — alert fatigue (2026-10-10 · [[tech-bridge-human-is-async-api]])
+
+[[temporal|Temporal]] 직원(설명란 기준 Melanie Warrick)이 *"When should the human be in the loop?"*(16:31)에 같은 기준으로 답한다 — *"the big thing you want to take into consideration is the cost of being wrong is high. Okay, it's a case- by case basis"*(16:35~16:43), *"especially in a security standpoint"*(17:02~17:04). 이 페이지의 소스들이 대개 **사람을 덜 부를 때의 위험**만 말했다면, 여기선 **사람을 너무 자주 부를 때의 비용**이 짝으로 선다: *"alert fatigue is real (…) you just start saying yes, yes, yes, yes, yes every time it asks you questions. So, you're trying to balance between those two"*(17:06~17:16). 사람을 부르는 쪽의 구현(대기를 blocking call로 만들지 않기)은 → [[human-as-async-api]].
+
+> ⚠️ 기준선·수치·처방 없음 — *"That's the thing you've got to evaluate for the problems that you're solving."*(17:26~17:29) ko는 *cost of being wrong is high* 를 **"실수할 확률이 높습니다"** 로 옮겨 기준을 *비용* 에서 *확률* 로 바꿨다 — 이 페이지와 [[model-calibration]]이 구분하는 바로 그 두 축이다(Jev 편의 임계값은 *확률* 을 *비용* 에 맞춰 조정한다).

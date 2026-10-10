@@ -7,9 +7,9 @@ aliases: [LangChain, 랭체인, LangChainAI]
 links:
   - https://www.langchain.com/
   - https://www.langchain.com/langsmith
-sources: [tech-bridge-jev-agent-harness, tech-bridge-uber-debug-assist, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-jev-agent-harness, tech-bridge-uber-debug-assist, tech-bridge-goodbye-slop-state-machines, tech-bridge-human-is-async-api]
 created: 2026-09-26
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # LangChain
@@ -47,3 +47,7 @@ LangChain 편의 프레이밍은 **하네스 = 루프 + 루프 안의 결정 지
 ## LangGraph — 상태 머신 도구로 언급 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
 
 [[david-khourshid|David Khourshid]](XState 제작자)가 에이전트 워크플로의 전이 로직 구현 선택지로 *"You could use LangGraph, I guess, which actually is um one of the uh most popular tools for using state machines with agents."*(15:48~15:54) — 경쟁 도구 제작자의 지나가는 평가, 근거 수치 없음. → [[agent-state-machine]]
+
+## LangGraph + Temporal — interrupt를 durable 대기로 (2026-10-10 · [[tech-bridge-human-is-async-api]])
+
+[[temporal|Temporal]] 직원의 데모에서 dispatch 에이전트가 LangGraph 위에서 돈다(*"I've got the dispatch agent running on Langraph"* 13:17~13:19). 통합 방식: *"you're passing us into each node for your graph"*(12:00~12:04) — 모델·도구 호출은 activity, 단계는 workflow, worker에 LangGraph plugin(12:08~12:32). 사람 호출은 LangGraph **`interrupt`** — *"we use the interrupt to call out from their node"*(12:37~12:42) — 를 Temporal의 wait condition으로 받아 workflow를 멈추고, 사람의 응답은 signal로 주입한다(12:52~13:06). 화자의 단서: *"langraph is more than a framework. But in this case, I'm using it as a framework"*(12:44~12:49). → [[durable-execution]] · [[human-as-async-api]]. ⚠️ 통합 벤더(Temporal) 쪽 진술 — LangChain 사람의 말이 아니다. en-orig는 *"langraph"* 로 들었고(`en`·ko는 LangGraph로 바로잡음), ko는 11:53에서 **"LangGraph는 그래픽을 제작하는 회사"** 로 옮겼다.

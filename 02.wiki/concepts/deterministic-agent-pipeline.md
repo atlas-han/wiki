@@ -6,9 +6,9 @@ tags: [agents, workflow, determinism, langgraph, planning, guardrails, max-turns
 aliases: [고정 계획 에이전트, 결정론 노드 + LLM 노드, deterministic and LLM nodes, We control the plan]
 related: [workflow-vs-agent, linear-vs-closed-loop-harness, agent-harness-design, harness-engineering, dynamic-workflows, harness-as-platform, context-engineering, context-rot, agent-verification-skill]
 first-seen: tech-bridge-uber-debug-assist
-sources: [tech-bridge-uber-debug-assist]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-human-is-async-api]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 결정론 골격 에이전트 파이프라인 (Deterministic Agent Pipeline)
@@ -31,6 +31,7 @@ updated: 2026-10-09
 - [[workflow-vs-agent]]가 유보한 **하이브리드** — 바깥은 워크플로(고정 그래프), 안은 에이전트(턴 예산이 걸린 LLM 노드와 병렬 서브에이전트)의 운영 사례.
 - [[linear-vs-closed-loop-harness]]의 세 결정(루핑·도구·메모리)을 **노드 단위로** 내린 형태. 검증 노드의 *"fixed number of retries"*(23:43~23:48)는 상한이 있는 폐루프.
 - [[dynamic-workflows]]와 반대편 — 그쪽은 Claude가 오케스트레이션 스크립트를 **동적으로** 쓰고, 여기는 사람이 그래프를 **정적으로** 쓴다.
+- ⚠️ **같은 말, 다른 결정론** (2026-10-10 · [[tech-bridge-human-is-async-api]]) — Temporal의 *"workflows are deterministic, activities are non-deterministic"*(12:25~12:30)는 이 페이지의 *결정론 노드 + LLM 노드* 와 겉모양이 같지만, 거기서 결정론은 **replay 가능성**의 요구이고(위키의 배경지식 — 화자는 이유를 말하지 않는다) 에이전트 루프 전체(동적 경로 포함)가 workflow에 들어간다. 이 페이지의 결정론은 **계획이 고정됐다**는 뜻이다. → [[durable-execution]]
 
 ## ⚠️ 유보
 

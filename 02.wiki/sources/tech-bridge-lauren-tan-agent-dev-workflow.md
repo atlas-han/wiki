@@ -8,7 +8,7 @@ author: Tech Bridge (한국어 해설, 내레이터 미상) · 발췌 출연 [[l
 date-published: 2026-10-03
 ingested: 2026-10-09
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Tech Bridge — Lauren Tan의 AI 에이전트 개발 워크플로우 (해설 + 대담 발췌)
@@ -169,3 +169,16 @@ updated: 2026-10-09
 - 설명란 링크: 원본 대담 <https://www.youtube.com/watch?v=MN9dGgmLyso> · Lauren의 강의 <https://youtu.be/zkmvCDSxqdc> (= [[tech-bridge-lauren-tan-2000-prs]]) · <https://github.com/cursor/plugins/tree/main/pstack> (⚠️ 대담·저장소는 열어 보지 않았다)
 - 같은 화자: [[tech-bridge-lauren-tan-trusting-agents]](09-12) · [[tech-bridge-lauren-tan-2000-prs]](09-25, **관련 강의**) · [[tech-bridge-grokbot-agent-teams]] · 제3자: [[tech-bridge-pstack-third-party-review]]
 - [[lauren-tan]] · [[tech-bridge]]
+
+## 원 대담 풀버전이 들어왔다 — 위 미해결 항목의 해소 (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+Tech Bridge가 10-09에 같은 대담의 **1:04:03 판본**(5tdMgKkX5dU)을 공개했다. 이 페이지의 Lauren 발화 6구간이 그 영상에 문장 그대로 있다(검증 15:16~15:21 · gradient 19:50~20:52 · Dune 29:20~30:08 · 두 루프 35:21~36:50 · 표본 48:40~49:19 · *"very hard"* 50:13~50:41) → **같은 녹화.** 그 영상이 `MN9dGgmLyso` 무삭제본인지는 미확정. 위 *"해소하지 않고 표시만 한 것"* 가운데:
+
+- **진행자 Matt Pocock** — 발화로 확인(*"me and Matt"* 1:01:10~1:01:15).
+- **"tools likeot"** — *"tools like Grockbot"*(35:23~35:26), GrokBot.
+- **god file "at least 100 lines long"** — *"at least 10,000 lines long if not longer"*(30:30~30:34). 자릿수 의심이 맞았다.
+- **"setting ups and constraints"** — *"setting up guard rails and constraints so that they do the right thing by default"*(50:33~50:41).
+- **해설만의 요약** — 조정자(Cursor projects 코디네이터 38:04~44:00), 패턴을 문서에 모으기(46:45~47:06), 토큰 비용(52:21~52:31), 되돌리기 어려운 변경과 *"I don't really have the answer to"*(54:38~56:34), 도메인 전문성(05:48~07:18) — **모두 발화 근거가 생겼다.**
+- **주방(해설) vs 공장(발화)** — 진행자가 주방으로 묻고(*"did you taste all 2500 of those dishes"* 48:15~48:18), Lauren이 *"you cannot be tasting every single dish"*(48:34~48:38) 뒤에 공장 감독관으로 넘어간다. 둘 다 있다.
+- **2,500 PR** — 진행자가 X 게시물 제목으로 인용(00:09~00:12), Lauren은 2,000과 2,500을 섞는다(38:34~38:53). 여전히 미확정 — 소스 페이지의 Contradiction 절.
+- 남은 것: 대담 날짜(앵커 *"about 10 days ago"* 강연, *"I joined Cursor in March"*), *"Plaid"*·*"bend"* 같은 판독.

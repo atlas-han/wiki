@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-10-02
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -178,3 +178,14 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 - [[tech-bridge-pocock-pr-bottleneck]] — 가속기 vs 브레이크(Matt Pocock) · [[slop-cannon]]
 - [[tech-bridge-kent-beck-craft-augmented-development]] — 반론 2(Kent Beck, 다크 팩토리)
 - [[tech-bridge-agentcraft-strategy-game]] — 좁은 용법(Ido Salomon, AgentCraft)
+- [[tech-bridge-lauren-tan-pocock-podcast-full]] — 다크 팩토리 수용(Lauren Tan, *"It kind of is"*)
+
+## 다크 팩토리 수용 — "It kind of is" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[matt-pocock|Matt Pocock]]: *"this isn't a dark factory, right? This the lights are on, right?"*(50:44~50:49) — [[lauren-tan|Lauren Tan]]: ***"It kind of is. Yeah, actually."***(50:49). ⚠️ 당사자 진술, 독립 확인 없음.
+
+- **어떤 의미에서 어두운가**: *"if my agents are merging their own pull requests it's sort of become dark where I go to sleep my agents now work 24/7"*(50:56~51:05). 영역별 chief of staff(코디네이터) *"more than 10"*(51:05~51:10), PR마다 verifier 에이전트가 앱을 퍼징하는 [[pstack|Pstack]] *full autopilot*(51:42~52:21), 사람은 *"I'll review it in the morning by looking at my commit history"*(52:49~52:52) 후 되돌리거나 린트 규칙을 더한다.
+- **이름에 대한 태도**: 같은 대담 초반 *"I've never really liked the term software factory. Not because you know it's not accurate"*(10:14~10:22) — 싫은 것은 품질·장인정신을 떠올리지 않는 **함의**다. 대안 비유는 미슐랭 주방([[agent-manager-analogy]]), 표본 리뷰에서만 *"the factory analogy is a bit more apt"*(48:47~48:52).
+- **진행자의 구분**: 다크 팩토리를 Karpathy의 원래 *vibe coding*(코드가 거의 존재하지 않는 것)으로 읽으면 Lauren의 방식은 반대 — 코드와 환경이 본질(53:45~54:05). Lauren: *"maybe there's a dimmer switch"*(54:11~54:15).
+
+> ⚠️ **Contradiction: 위 "반론 2"(Kent Beck)와.** Beck은 *"no human involved There's no feedback. And that always goes off the rails. Always."* Lauren은 다크 팩토리를 **받아들이고 잘 잔다**(*"I'm sleeping so much better now"* 53:10~53:12). 다만 Lauren의 구조엔 **verifier 에이전트 + 아침의 사람 사후 리뷰 + 환경 교정**이라는 피드백이 있다 — Beck이 겨눈 *"no feedback"* 이 아니다. 둘 다 측정은 없다. 그리고 Lauren 스스로 *"it's very hard to get to this point"*(50:15~50:18), 첫날은 *"very scary"*(53:18~53:20)였다고 한다.

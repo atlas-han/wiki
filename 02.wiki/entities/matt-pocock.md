@@ -8,9 +8,9 @@ links:
   - https://x.com/mattpocockuk
   - https://www.linkedin.com/in/mapocock/
   - https://aihero.dev
-sources: [tech-bridge-pocock-pr-bottleneck]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Matt Pocock
@@ -42,3 +42,12 @@ AIhero.dev/skills — 발표에서 언급된 것: **코드베이스 설계 스�
 - [[tech-bridge-pocock-pr-bottleneck]] · [[ai-engineer]]
 - 이름 선행 언급: [[adjective-verb-steering]] · [[impeccable]] (Leitwort 트윗, ⚠️ 원문 미확보)
 - 설명란: <https://x.com/mattpocockuk> · <https://aihero.dev> (⚠️ 열어 보지 않았다)
+
+## 진행자로 — Lauren Tan 대담 (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[lauren-tan|Lauren Tan]] 대담의 진행자. 10-03 해설 영상 [[tech-bridge-lauren-tan-agent-dev-workflow]]에서는 태그·ASR(*"몇 포코"*)로만 판독했는데, 풀버전에서 **발화로 확인**된다 — Lauren의 *"how much do you trust, you know, me and Matt, right?"*(1:01:10~1:01:15), *"you obviously have done a lot of work with TypeScript and total TypeScript"*(27:52~27:56). 제목·설명란엔 이름이 없다.
+
+- **자기 진술**: *"I did a drama degree"*(09:21~09:23), 언어·단어 선택에 *"obsessed"*(07:21~07:27) — 에이전트가 붙잡아 재사용하는 단어(*TDD*, *grilling*) → [[adjective-verb-steering]]와 같은 관심. *"I think I might have to change some of the course that I'm filming next week"*(48:04~48:07).
+- **그의 스킬 이름이 발화로 나온다**: *"grill me with docs"*·*"wayfinder"*(1:00:55~1:01:00, Lauren 발화). Lauren은 그의 **동어반복 테스트 제거** 팁을 베꼈다고 말한다(08:21~08:38) → [[structure-sensitive-tests]].
+- **질문 틀이 자기 발표의 틀이다** — one-way / two-way door(54:58~55:21, [[tech-bridge-pocock-pr-bottleneck]]의 *merge danger*), 다크 팩토리(50:41~50:49), *"sampling instead of blocking"*(54:35~54:37). 정의 하나: *"a good codebase is a codebase that's easy to make changes in"*(24:21~24:28).
+- ⚠️ *"TypeScript famously has a 25,000line type uh file"*(31:18~31:24)는 진행자 진술, 이 위키는 확인하지 않았다. 두 사람 모두 자기 스킬을 권한다(*"if you trust us both, of course, use our skills"* 1:01:13~1:01:16).

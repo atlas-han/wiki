@@ -102,8 +102,11 @@ sources:
   - tech-bridge-uber-debug-assist
   - tech-bridge-goodbye-slop-state-machines
   - tech-bridge-jensen-huang-korea-society-gala
+  - tech-bridge-composio-dashboard-is-dead
+  - tech-bridge-human-is-async-api
+  - tech-bridge-lauren-tan-pocock-podcast-full
 created: 2026-06-03
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Tech Bridge
@@ -1016,8 +1019,38 @@ updated: 2026-10-09
 - **⚠️ 진행자 이름 미해소** — 제목·설명란 "주주 장", 자막에선 Huang이 *"Julie"* 라 부른다. 녹화일 미발화: 진행자 *"this morning … open agent safety platform"* 이 백악관 패널(`PACIHCnvNMo`)의 *"great Monday … open agent safety framework"* 와 같은 발표로 추정(명칭 갈림) → **같은 주 두 무대**일 가능성. 큰 수치(자사주 1,500억·총 2,350억 달러, 금융사 약 5천억 달러)는 전부 진행자 진술.
 - **⚠️ ko 반전** — *"They're not alive"* → "살아있습니다"(16:26), *"this morning"* → "내일"(12:50), 마지막 문장의 걱정 → "두려워하지 맙시다"(23:01), *"not cheating"* → "제대로 하는 게 아니야". *safety* → "보안", *sandbox* → "테스트 환경", *sentient* → "모르고 있다"는 **en 공유 오류**. ⭐ **AI가 사람이 아니라는 구간에서 ko·en이 AI를 "그"·"그녀"로 받는다** — 번역 층의 의인화. Korea Society → "한국학회", 소맥의 맥주 → "메주".
 
-## 멤버 전용 → 공개 전환 · 대기 (2026-10-09 확인)
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-09 확인, 이력)
 
 - **2026-10-03 대기 목록 네 편이 모두 공개 전환 — 이번 회차에 위에서 ingest:** `8DRjkp_X8yY`([[tech-bridge-pocock-pr-bottleneck|Pocock PR 병목]], `upload_date` 20261005) · `wrii8VocfZU`([[tech-bridge-altman-devday-dots|Altman × Shipper DevDay]], 20261004) · `_0zB1Qj-xoE`([[tech-bridge-kent-beck-craft-augmented-development|Kent Beck]], 20261006) · `PACIHCnvNMo`([[tech-bridge-white-house-superintelligence-panel|백악관 SI 패널]], 20261006). 네 편 모두 공개 시점으로 `upload_date`가 다시 잡혔다(기존 패턴, 추정).
 - **여전히 `subscriber_only` — ingest하지 않음:** `5tdMgKkX5dU`(10-03 업로드, Lauren Tan 팟캐스트 풀버전) · `J1BGMIWTJ1U`(10-05, 그렉 브록만) · `RVnSsolR3uE`(10-06, Codex로 요리하기). 공개 전환 시 그날 ingest.
 - 이번 회차(2026-10-09)는 10-03~10-08 업로드 15편을 한 번에 ingest했다 — OAuth 만료로 5일분이 밀렸다.
+
+## 2026-10-09 업로드 — Sarah Simionescu (Composio), 대시보드는 끝났습니다 (2026-10-10 ingest)
+
+[[tech-bridge-composio-dashboard-is-dead|대시보드는 끝났습니다: AI 에이전트가 소프트웨어를 쓰는 법]](`5bg469hWGGc`, 10:12, 공식 챕터 18) — [[sarah-simionescu]] · [[composio]] ([[agent-native-interface]] · [[model-context-protocol]] · [[deferred-tool-context]])
+
+- Composio의 **두 번째 발표**. 대시보드 → AI 버튼 → MCP의 진화를 되짚고 MCP의 세 한계(학습 부재·도구 익사·앱 고립)를 에이전트 전용 인터페이스(Composio search · remote workbench)로 푼다는 주장. 데모 둘(Slack 버그 리포트 → 수정 PR, PostHog × Metabase 교차 분석).
+- ⚠️ 당사자 진술 — 첫 데모는 화자 스스로 목업, 네이티브 MCP 대비 벤치마크는 *"early unreleased"* 이고 수치 미발화. 이름은 *"Sarah"* 만 발화, 성은 설명란 링크에만. 행사명 미발화(*"Composio booth"* + ai.engineer 링크 → AI Engineer 추정).
+- **⚠️ ko** — 고유명사·핵심어 네 개가 모두 깨진다(Composio → "작곡가", dashboard → "이사회", agents → "경찰관", query → "상담"), 부정 5곳 반전.
+
+## 2026-10-09 업로드 — Melanie Warrick (Temporal), 인간은 비동기 API입니다 (2026-10-10 ingest)
+
+[[tech-bridge-human-is-async-api|인간은 비동기 API입니다: AI 에이전트가 사람을 기다리다 멈추지 않는 법]](`HjQ1G1NvvHQ`, 18:46, 공식 챕터 20) — [[temporal]] ([[durable-execution]] · [[human-as-async-api]] · [[langchain]] · [[google-cloud]])
+
+- 위키 첫 **durable execution** 소스. 아이스크림 배달 데모로 human-in-the-loop를 wait condition + signal로 구현하고, 승인 대기 중 worker를 강제 종료한 뒤 이벤트 replay로 복구하는 장면까지 보인다(Google ADK · LangGraph 두 연동).
+- ⚠️ 벤더 발표, 수치 없음. 화자 이름은 설명란에만, 행사 미발화(AI Engineer 계열 추정). Q&A는 녹화되지 않았다.
+- **⚠️ ko** — Temporal이 "시간·일시적인·임시"로 약 10회(화자 소속이 지워짐), worker → "노동자", blocking call → "통화 차단", *"the cost of being wrong is high"* → "실수할 확률이 높습니다". en·ko 공유: ADK → "80K".
+
+## 2026-10-03 업로드 → 10-10 공개 확인 — Lauren Tan × Matt Pocock 대담 풀버전 (2026-10-10 ingest)
+
+[[tech-bridge-lauren-tan-pocock-podcast-full|팟캐스트 풀버전 — SpaceX에서 매달 수천 개의 PR을 반영하는 방법 | Lauren Tan(poteto)]](`5tdMgKkX5dU`, 1:04:03, 공식 챕터 12) — [[lauren-tan]] · [[matt-pocock]] · [[pstack]] · [[grokbot]] · [[cursor]] · [[spacex]]
+
+- 10-09 회차에 멤버 전용으로 확인 → 이번 회차 `public`(`upload_date` 20261009, 공개 전환 쪽 값). **10-03 해설 영상 [[tech-bridge-lauren-tan-agent-dev-workflow]]가 발췌한 원 녹화**(발췌 6구간 일치) — 채널이 **같은 대담을 해설판(공개) → 풀버전(멤버 전용 → 공개)** 순서로 낸 첫 사례.
+- Lauren의 **네 번째 소스**. 새로 들어온 것: Cursor 3월 합류·Pstack의 기원, Cursor projects 코디네이터(안쪽 루프) + GrokBot(바깥 루프), *"my agent merge its own code"* 역설계, 다크 팩토리 수용, Pstack full autopilot·`recall` 스킬.
+- ⚠️ 당사자 진술 · PR 수 2,000 vs 2,500 · 소속 표기 셋(발화 "Cursor which is now SpaceX AI" / 제목 "Cursor & Grok Bot" / 설명란 "pstack 개발자") 해소하지 않음 · ko·en 공유 "Pstack" → "피루스 법".
+
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-10 확인)
+
+- **공개 전환 — 이번 회차에 위에서 ingest:** `5tdMgKkX5dU`([[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan 대담 풀버전]], `upload_date` 20261009).
+- **여전히 `subscriber_only` — ingest하지 않음:** `J1BGMIWTJ1U`(10-05 업로드, 그렉 브록만) · `RVnSsolR3uE`(10-06, Codex로 요리하기).
+- **신규 `subscriber_only`:** `zAglgqN5Lhw`(10-09 업로드, *데미스 하사비스가 말하는 AI 혁명, AI의 미래와 인간의 창의성 | Hannah Fry*, 39:41). 공개 전환 시 그날 ingest.

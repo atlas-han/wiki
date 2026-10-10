@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-01
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Lauren Tan
@@ -106,3 +106,14 @@ Tech Bridge의 11:36 **해설 영상**이 원본 대담(`MN9dGgmLyso`, 이 위�
 - **수치** — *"한 달 PR 2,500개"* 는 **내레이터가 X 프로필에서 인용**(ko 00:11~00:17), 본인 발화 아님, 달 미상. 자기 보고 계열 1,000 → 2,000 → 2,500.
 - **소속** — 제목 *"SpaceX - Cursor & Grok Bot 개발자"* 이나 **발췌에 SpaceX는 없다**(본인 발화는 *"joined Cursor"*·*"Grokbot"* 뿐). 위 소속 기록을 바꾸지 않는다.
 - ⚠️ en-orig 내레이션은 한국어 ASR의 번역이라 이 인물을 *"Laurent"*·*"Rolfe"*·*"Rowland"*, **"he"** 로 적는다 — 채택하지 않는다.
+
+## 다섯 번째 본인 소스 — 같은 대담의 풀버전 (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+위 해설 영상이 발췌한 **바로 그 대담의 1:04:03 판본**이다(발췌 6구간이 문장 그대로 있다; `MN9dGgmLyso` 무삭제본인지는 미확정). 진행자 [[matt-pocock|Matt Pocock]]이 **발화로 확인**됐다(*"me and Matt"* 1:01:13). ⚠️ 당사자 진술, 독립 확인 없음.
+
+- **이력·시점** — *"I used to work at Meta on the React team"* 후 번아웃으로 한 달 쉬며 1~2월 사이드 프로젝트 → 그것이 **Pstack의 바탕**(02:37~02:42), 저장소 *"potato noodle"*(`poteto/noodle` 판독, ⚠️ 미확인). ⭐ ***"I joined Cursor in March"***(04:20~04:23) — 이 페이지의 *"약 5개월"*(09-12)·*"6개월 전"*(09-25)과 정합. Netflix 이력도 다시 나온다(*"context not control"* 40:30~40:39).
+- **소속** — *"before I joined cursor uh which is now SpaceX AI"*(00:58~01:04). 09-25의 *"SpaceX AI의 일부가 되기 전"* 보다 강한 표현이지만 형태는 말하지 않는다 → **이 페이지 첫 줄을 고치지 않는다.** 제목은 *"Cursor & Grok Bot 개발자"*, 설명란은 *"pstack 개발자"*.
+- **수치** — 진행자가 X 게시물을 *"how I shipped 2,500 PRs last month"*(00:09~00:12)로 인용, 본인은 같은 대화에서 *"2,000 PRs"*·*"2,000 and 2,500 pull requests last month"*(38:34~38:53). ⚠️ 09-25 강연(2,000)과 어긋나며 해소하지 않는다. *"the 2,500 PRs, they're not obviously like 2,500 features (…) a lot of the work actually is spent on gardening"*(44:55~45:06).
+- **새 입장** — 도메인 전문성은 *"more important than ever"*, 병목은 *"the transfer of your intent"*(05:48~07:18) · *"the new job of the engineer is really to (…) spend time on the environment"*(25:10~25:15) · 안쪽 루프 = **Cursor projects 코디네이터 에이전트**, 바깥 루프 = GrokBot(42:55~43:00) · 시작 질문은 *"how do I get to the point where my agent can merge its own code?"*(38:38~38:45) · ⭐ 다크 팩토리냐는 질문에 ***"It kind of is"***(50:49) — chief of staff *"more than 10"*, Pstack *full autopilot*(PR마다 verifier 에이전트 퍼징), 아침에 커밋 히스토리로 사후 리뷰 · one-way door엔 *"I don't really have the answer to"*(56:29~56:34).
+- **유보와 인정이 함께 있다** — *"very hard to get to this point"*(50:13~50:18), *"quite token intensive"*(52:21~52:24), 첫날 자동 머지가 *"very scary"*(53:18~53:20). 09-25 강연에서 사라졌던 유보가 이 대담엔 있다.
+- **"소프트웨어 공장"** — 09-25엔 줄을 그었지만 여기선 *"Not because (…) it's not accurate"*(10:19~10:22). 소스 페이지의 Contradiction 절.

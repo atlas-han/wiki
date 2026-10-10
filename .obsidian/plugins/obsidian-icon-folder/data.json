@@ -985,5 +985,16 @@
   "02.wiki/sources/tech-bridge-rails-harness-engineering.md": "LiVideo",
   "02.wiki/sources/tech-bridge-sourcegraph-codebase-visibility.md": "LiVideo",
   "02.wiki/sources/tech-bridge-uber-debug-assist.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-white-house-superintelligence-panel.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-white-house-superintelligence-panel.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-composio-dashboard-is-dead.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-human-is-async-api.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-lauren-tan-pocock-podcast-full.md": "LiVideo",
+  "02.wiki/entities/sarah-simionescu.md": "LiUser",
+  "02.wiki/entities/temporal.md": "LiBuilding",
+  "02.wiki/concepts/agent-native-interface.md": "LiBookText",
+  "02.wiki/concepts/human-as-async-api.md": "LiBookText",
+  "02.wiki/engineering/systems/durable-execution.md": "LiServer",
+  "01.raw/articles/2026-10-09_인간은 비동기 API입니다 - AI 에이전트가 사람을 기다리다 멈추지 않는 법.md": "LiNewspaper",
+  "01.raw/articles/2026-10-09_대시보드는 끝났습니다 - AI 에이전트가 소프트웨어를 쓰는 법.md": "LiNewspaper",
+  "01.raw/articles/2026-10-09_SpaceX에서 매달 수천 개의 PR을 반영하는 방법 - Lauren Tan(poteto) 팟캐스트 풀버전.md": "LiNewspaper"
 }

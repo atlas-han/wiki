@@ -6,9 +6,9 @@ tags: [knowledge-work, agent-infrastructure, primitives, bottleneck]
 aliases: [지식 노동 격차, six primitives]
 related: [agent-action-record, agent-governance-layers, action-reversibility, agent-org-adoption, trusted-throughput, generator-evaluator-pattern, company-brain, secure-tool-evolution]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-build-time-vs-runtime-tools, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-build-time-vs-runtime-tools, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-composio-dashboard-is-dead]
 created: 2026-09-09
-updated: 2026-09-21
+updated: 2026-10-10
 ---
 
 # 지식 노동 에이전트 격차
@@ -69,6 +69,10 @@ updated: 2026-09-21
 ## 한 영역에서 세워진 거버넌스 primitive (2026-09-11)
 
 여섯 primitive 중 **거버넌스**가 지식 노동에서 실패하는 방식은 *"권한이 흩어져 결국 프롬프팅으로"* 였다. [[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])는 **데이터베이스 접근**이라는 한 영역에서 그 primitive가 세워진 형태를 보여준다 — 도구가 무엇을 할 수 있는지가 **서버 설정(YAML)** 에 살고([[secure-tool-evolution]]), 게이트는 여러 층(도구 목록 → 드라이버 → 데이터셋 → 출력 → 신원 바인딩), 프롬프팅은 어디에도 없다. 그리고 [[action-reversibility|가역성]] primitive에 대한 세 번째 처방 — *되돌릴 수 없는 행동을 도구에서 뺀다*. 이 소스는 Composio 편을 모르며, 거버넌스가 코딩 밖에서 **영역마다 따로** 세워지는 것(데이터베이스는 Google, 회사 지식은 [[promptql]])이 Composio의 *"빠져 있는 중심"* 주장과 맞는지 어긋나는지는 위키가 판정하지 않는다.
+
+## 2026-10-10 — 같은 회사, 같은 결손을 MCP 층에서 ([[tech-bridge-composio-dashboard-is-dead]])
+
+[[composio|Composio]]의 두 번째 화자 [[sarah-simionescu|Sarah Simionescu]]가 **중앙화** primitive의 결손을 MCP 층에서 다시 말한다: *"every app is isolated. Each MCP server knows about itself and nothing else. So the moment a task spans two apps, and like they always do, it is your job to piece that together."*(04:17~04:32) 2022년의 디버깅 장면도 같은 그림 — Slack·Datadog·PostHog·VS Code·GitHub *"five tools and five UIs"*(01:22~01:37), 그리고 도구마다 다른 쿼리 언어(Datadog 구문·JQL·Slack 검색 수정자, *"they don't even agree on SQL"* 01:52~02:02). Vaidya의 처방이 기록·거버넌스 바닥이었다면 이쪽은 **앱들을 하나로 묶은 에이전트용 인터페이스**다 → [[agent-native-interface]]. ⚠️ 두 발표 모두 당사자 진술.
 
 ## References
 

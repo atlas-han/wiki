@@ -4,10 +4,10 @@ type: engineering
 category: system
 tags: [agent, distributed-systems, reliability, idempotency, observability, safety]
 created: 2026-09-02
-updated: 2026-09-11
-related: [agent-harness-design, verifiable-goals, context-engineering, agentic-misbehavior, managed-agents, token-roles, agent-identity-separation]
+updated: 2026-10-10
+related: [agent-harness-design, verifiable-goals, context-engineering, agentic-misbehavior, managed-agents, token-roles, agent-identity-separation, durable-execution, human-as-async-api]
 first-seen: tech-bridge-agents-as-distributed-systems
-sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform-agent-era, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform-agent-era, tech-bridge-build-time-vs-runtime-tools, tech-bridge-human-is-async-api]
 ---
 
 # Agent Distributed Systems
@@ -135,8 +135,15 @@ sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform
 
 이 페이지가 *scoped 권한·최소 권한* 으로 언급한 것을 [[tech-bridge-build-time-vs-runtime-tools]]([[google-cloud|Google Cloud]])가 **사용자·애플리케이션·에이전트 세 신원**으로 구체화한다 — *"애플리케이션은 무슨 행동을 할지 정확히 알았으니 넓은 권한이 괜찮았지만, 에이전트는 그렇지 않다"*. 이 페이지의 *호출자가 비결정론적* 이라는 진단의 보안 판이다. → [[agent-identity-separation]] · [[confused-deputy-attack]]. 그리고 *조치 가능한 오류*([[agent-tool-design-practices]])는 이 페이지의 *"타임아웃은 실패가 아니라 알 수 없음"* 과 같은 요구다 — 에이전트가 오류의 **종류**를 구분해야 재시도·보상·중단을 고른다.
 
+## 실행 모델로 흡수하기 — durable execution (2026-10-10 · [[tech-bridge-human-is-async-api]])
+
+[[temporal|Temporal]] 직원의 발표가 이 페이지의 요구 일부를 **개별 도구 설계가 아니라 실행 모델**로 푸는 구현을 보여 준다 — *"standardize your fa failure handling and your state management in your system any system any distributed system especially any systems with agents"*(05:34~05:46). 에이전트 루프는 workflow(결정론, 이벤트 히스토리로 replay), 모델·도구 호출은 activity(비결정론)에 두고, worker가 죽어도 *"It's not redone. It's just replayed"*(15:52~15:56). → [[durable-execution]]
+
+원칙 6(승인 바인딩)과의 관계: 같은 발표는 사람 승인을 *wait condition + signal* 로 받아 **오프라인 중에도 잃지 않는 것**을 보여 주지만(15:18~15:34), 승인이 **어떤 행동·시점에 유효한지**는 다루지 않는다 → [[human-as-async-api]]. ⚠️ 벤더 발표, 멱등성 키·보상은 언급 없음 — durable execution이 이 페이지의 원칙을 대체하는 것이 아니라 그 일부(상태·재개)를 플랫폼으로 옮기는 것으로 읽는다(위키의 정리).
+
 ## References
 
 - [[tech-bridge-agents-as-distributed-systems]] — [[salman-munaf]] ([[tiktok]]), 2026-09-02
 - [[tech-bridge-claude-platform-agent-era]] — Anthropic Claude Platform 팀, 2026-09-01
 - [[tech-bridge-build-time-vs-runtime-tools]] — 세 신원 = 최소 권한의 구체적 형태 (2026-09-11)
+- [[tech-bridge-human-is-async-api]] — durable execution으로의 구현 ([[temporal]]), 2026-10-10

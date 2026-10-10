@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Log
@@ -1905,3 +1905,29 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 15편을 영상당 1 서브에이전트로 병렬 처리(raw·source 작성 + `PROPOSAL.md`), 이후 통합을 **세 범위**(ENTITIES · CONCEPTS · NAV)로 나눈 병렬 에이전트가 적용했다. 이 항목·[[02.wiki/index]]·[[overview]]는 NAV 담당. 페이지 수 752는 제안서의 new-pages 40개 + source 15개를 697에 더한 계산값이고, `find 02.wiki -name "*.md" | wc -l` 실측 752와 일치. 이 항목·index·overview의 wikilink 대상은 전부 존재한다.
+
+## [2026-10-10] ingest | Tech Bridge — 대시보드의 종말(Composio) · 인간은 비동기 API(Temporal) · Lauren Tan × Matt Pocock 대담 풀버전(멤버 전용 → 공개) (10-09 업로드 3편)
+
+목록 15편 요청 → 15줄(`availability` 포함). 10-09 업로드 롱폼 4편 중 신규 공개 2편(`5bg469hWGGc` · `HjQ1G1NvvHQ`)과 ⭐ **10-03 멤버 전용 → `public` 전환 1편**(`5tdMgKkX5dU`, `upload_date` 20261009 — 공개 전환 쪽 값)을 ingest. ⚠️ **신규 멤버 전용 `zAglgqN5Lhw`**(10-09, *데미스 하사비스가 말하는 AI 혁명 | Hannah Fry*, 39:41)는 건너뜀, `J1BGMIWTJ1U`(브록만) · `RVnSsolR3uE`(Codex로 요리하기)도 여전히 멤버 전용 — 페이지 없음. 나머지 9편은 기존. 세 편 모두 자막 ko · en-orig · en 확보(전부 `automatic_captions`, `subtitles` 빈 값), 429 없음.
+
+**신규 source 3 · concept 2 · engineering 1 · entity 2**, index **752 → 760**(실측 일치).
+
+- `5bg469hWGGc`(10:12, 챕터 18) → [[tech-bridge-composio-dashboard-is-dead]] — [[sarah-simionescu|Sarah Simionescu]] ([[composio|Composio]]).
+  - 신규: [[sarah-simionescu]] · [[agent-native-interface]]
+  - 보강: [[composio]](두 번째 발표) · [[model-context-protocol]](표준 ≠ 좋은 인터페이스, 세 한계) · [[deferred-tool-context]](Composio search 비교표) · [[agent-skills]](*"band-aid"* 반론) · [[knowledge-work-agent-gap]](앱 고립 = 중앙화 결손) · [[ai-engineer]](설명란 링크 + *"Composio booth"*, 행사 추정)
+  - ⚠️ 벤치마크(vs 앱별 네이티브 MCP)는 *"early unreleased"*, 수치 미발화 · 첫 데모는 화자 스스로 목업 · 행사명·직함 미발화 · 성은 설명란 링크에만. Contradiction: Brockman(컴퓨터 사용) vs Simionescu(에이전트 전용 층).
+  - ⚠️ ko: Composio → "작곡가·침착함", dashboard → "이사회·보드게임", agents → "경찰관·자치령 대표"; 부정 5곳 반전(*"They don't have eyes"* → "눈이 있다" 등). ko는 `en`에서 번역된 것으로 보여 둘의 일치는 독립 확인이 아니다 — 인용은 en-orig만.
+- `HjQ1G1NvvHQ`(18:46, 챕터 20) → [[tech-bridge-human-is-async-api]] — Melanie Warrick([[temporal|Temporal]], 이름은 설명란에만).
+  - 신규: [[temporal]] · [[durable-execution]](engineering/systems) · [[human-as-async-api]]
+  - 보강: [[agent-distributed-systems]] · [[langchain]](LangGraph `interrupt` + Temporal) · [[risk-proportional-human-review]](틀렸을 때의 비용 vs alert fatigue) · [[no-silent-write]](승인 피로에 이름) · [[agent-harness-design]](내구성 = 하네스 층) · [[google-cloud]](ADK 통합) · [[ai-engineer]] · [[deterministic-agent-pipeline]](Temporal의 "결정론" = replay 가능성) · [[02.wiki/engineering/index|engineering/index]]
+  - ⚠️ 용어 Contradiction: Temporal의 *workflow*·*deterministic* 은 [[workflow-vs-agent]]의 뜻(고정 경로)과 다르다. *"millions of workflows parked"* 는 근거 없는 벤더 진술. 설명란의 "Ask human"·"무손실 복구"는 발화에 없다.
+  - ⚠️ ko: Temporal → "시간·일시적인·임시" 약 10회(00:12에서 화자 소속이 지워짐), worker → "노동자", *"not holding a thread"* 부정 소실(08:42), *"the cost of being wrong is high"* → "실수할 확률이 높습니다"(비용이 확률로). en·ko 공유: ADK → "80K", ADK framework → "LangChain".
+- `5tdMgKkX5dU`(1:04:03, 챕터 12) → [[tech-bridge-lauren-tan-pocock-podcast-full]] — [[lauren-tan|Lauren Tan]] × [[matt-pocock|Matt Pocock]].
+  - **10-03 해설 영상 [[tech-bridge-lauren-tan-agent-dev-workflow]](`OLYuAekOBeA`)의 원 녹화** — 발췌 6구간이 ASR 오류(*"PAC"*, *"restrictive lit rules"*)까지 같다. 해설 편이 열어 둔 의문 해소: god file은 *"at least 10,000 lines"*(100 아님), *"tools likeot"* = GrokBot, 진행자 Matt Pocock은 발화로 확인. 원 대담 `MN9dGgmLyso`와의 관계는 미확정(열어 보지 않음, 이 영상도 문장 중간에서 시작·종료).
+  - 신규 페이지 없음. 보강: [[lauren-tan]] · [[matt-pocock]] · [[pstack]] · [[grokbot]] · [[cursor]] · [[spacex]] · [[software-factory]] · [[verification-bottleneck]] · [[action-reversibility]] · [[codebase-gardening]] · [[company-brain]] · [[tech-bridge-lauren-tan-agent-dev-workflow]](해소 메모)
+  - ⚠️ Contradiction: PR 수 2,000(09-25 발표) vs 2,500(X 게시물) — 본인이 한 대담 안에서 섞어 씀 · [[software-factory]] 입장(09-25 슬라이드에서 줄을 그음 vs *"It kind of is"*) · Kent Beck *"dark factory always goes off the rails"* · *일찍 끊어라* vs *문서에 먼저 버퍼링하라*(약). 소속은 발화 *"Cursor which is now SpaceX AI"* / 제목 "Cursor & Grok Bot" / 설명란 "pstack 개발자" 그대로 기록, xAI는 자막에 없음.
+  - ⚠️ en·ko 공유: Pstack → "피루스 법", proofs → "테스트", parallelize → "마비", god files → "Go 파일". ko 단독: environment → "환경 보호", inner loop → "체내 순환계", harness → "안전벨트", PR → "홍보·지원서".
+
+### 운영 메모
+
+게이트 G 지속(CLT git 직접 호출). 자막은 오케스트레이터가 `--sleep-subtitles 8` + 편당 20초 간격으로 먼저 받아 `[MM:SS]` txt로 넘기고, 세 편을 병렬 서브에이전트로(raw·source·entity/concept 좁은 Edit), index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. ⚠️ **Lauren Tan 에이전트가 raw 헤더에 "info.json이 빈 파일(0 bytes)"이라고 적었다**(실제 4MB) — 09-27과 같은 유형. 오케스트레이터가 `timestamp`(2026-10-09 11:00:03 UTC)·태그로 고쳐 넣었다. 서브에이전트의 메타 주장은 계속 검증할 것.

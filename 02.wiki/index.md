@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Index
@@ -21,6 +21,7 @@ updated: 2026-10-09
 ## Entities
 
 ### Persons
+- [[sarah-simionescu]] — [[composio|Composio]] 발표자(팀이 Composio 대시보드 담당, 직함 미발화, 성은 설명란에만). *"The dashboard is dead"* · [[agent-native-interface]] 주장 ([[tech-bridge-composio-dashboard-is-dead]])
 - [[kriti-dangi]] — [[uber|Uber]] 엔지니어(관측 쪽), 사내 디버깅 에이전트 [[debug-assist|Debug Assist]] 발표 — *"we are the providers of the harness"* ([[tech-bridge-uber-debug-assist]]) ⚠️ 이름·직함은 제목·설명란에만
 - [[david-khourshid]] — [[xstate|XState]] 제작자·Stately 창업자(@DavidKPiano). 슬롭은 구조 없는 위임에서 온다, 상태 머신을 에이전트 자기 개선의 산출물로 ([[tech-bridge-goodbye-slop-state-machines]])
 - [[ido-salomon]] — [[agentcraft|AgentCraft]] 개발자. 코딩 에이전트를 RTS 게임처럼 감독 — *"we are the bottleneck, but we don't have to be"* ([[tech-bridge-agentcraft-strategy-game]]) ⚠️ 이름은 제목·설명란에만(자막 자기소개 없음)
@@ -81,7 +82,7 @@ updated: 2026-10-09
 - [[imad-touil]] — QuantumBlack, [[agent-skills]] 거버넌스 ([[tech-bridge-ai-native-skills]])
 - [[bill-gates]] — Microsoft 공동창업자, 2026-08 AI 위험 경고 ([[tech-bridge-bill-gates-ai-warning]])
 - [[carlos-sanchez]] — [[adobe|Adobe]] AEM 수석 과학자, [[agentic-sites]] 설계 ([[tech-bridge-agentic-sites]])
-- [[lauren-tan]] — [[cursor|Cursor]] 엔지니어, [[grokbot|GrokBot]] 기원(Benny)·엔지니어=에이전트 매니저 ([[tech-bridge-grokbot-agent-teams]], sources: 5 — 제3자 리뷰·해설 영상 포함 · 해설 편 [[tech-bridge-lauren-tan-agent-dev-workflow]])
+- [[lauren-tan]] — [[cursor|Cursor]] 엔지니어, [[grokbot|GrokBot]] 기원(Benny)·엔지니어=에이전트 매니저 ([[tech-bridge-grokbot-agent-teams]], sources: 5 — 제3자 리뷰·해설 영상 포함 · 해설 편 [[tech-bridge-lauren-tan-agent-dev-workflow]]) · 대담 풀버전: Cursor 3월 합류·코디네이터 에이전트·다크 팩토리 수용 ([[tech-bridge-lauren-tan-pocock-podcast-full]])
 - [[jonathan-kelley]] — [[dioxus|Dioxus]] 창시자([[cognition|Cognition]] 합류). **[[slop-cannon|슬롭 캐논]]의 출처** · *"코드는 싸졌지만 품질은 아니다"* ([[tech-bridge-ambitious-software-agent-era]])
 - [[mark-zuckerberg]] — [[meta|Meta]] CEO. **권력 균형이 곧 안전** · [[muse|Muse]] 개인 에이전트 · Llama 4 실책 인정 ([[tech-bridge-zuckerberg-muse-personal-agent]]) ⚠️ 당사자 진술
 - [[alex-heath]] — *Sources with Alex Heath* 진행자. 위키의 **네 소스를 낳은 진행자**([[sam-altman]] 3부작 + Zuckerberg). **인터뷰에서 누가 말했는지를 가르는 기준**
@@ -116,6 +117,7 @@ updated: 2026-10-09
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[temporal]] — durable execution 플랫폼(오픈소스 + 관리형 서비스). worker·workflow·activity, Google ADK·LangGraph 통합, 사람 승인을 wait condition + signal로 ([[tech-bridge-human-is-async-api]]) ⚠️ 당사자 진술
 - [[uber]] — 차량 호출·배달. Wisdom·Healthline 버그 유입, 연 5만 건·평균 28일, 모노레포, 에이전트 약 8개·플러그인 약 3,000개 ([[tech-bridge-uber-debug-assist]]) ⚠️ 자기 보고
 - [[cast-ai]] — 오픈소스 코딩 하네스 [[kimchi|Kimchi]] 제작사. 직원 300명(3분의 2 개발자), 자체 하네스 3개월 사용 성과 2.5배 절감 주장 ([[tech-bridge-kimchi-cost-per-task-harness]]) ⚠️ 벤더 · 화자 성 미발화(자막 "Laura"·"Zilvinas")
 - [[sourcegraph]] — 대규모 코드 검색·코드 그래프. Agentic Batch Changes(프롬프트 하나로 수백~수천 저장소 변경, 2026 베타) ([[tech-bridge-sourcegraph-codebase-visibility]]) ⚠️ 제품 설명은 자사 진술뿐
@@ -136,7 +138,7 @@ updated: 2026-10-09
 - [[mixedbread]] — **멀티모달 검색 + 검색 에이전트**. PDF를 OCR 없이 비전으로 읽고, 오케스트레이터/서처 분업으로 [[oracle-gap|오라클 갭]]을 10→6포인트로 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 전부 자기 보고 · ✅ **자기 한계를 먼저 말한다**
 - [[a16z]] — 벤처 캐피털. 위키에는 **팟캐스트 제작 주체**로 첫 등장 — 이 채널이 재배포한 소스 중 **투자자가 만든 매체는 처음**이다. ⚠️ 데이터센터 규제 완화·AI 낙관·고용 증가를 화자보다 강하게 주장하면서 **이해관계를 한 번도 표시하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[typesafe-ai]] — [[diogo-almeida]]가 속한 **스텔스 스타트업**. *"AI 스택을 신뢰성과 자동화를 위해 재설계한다면?"* · [[post-training-northstars|보정된 의사결정]] 최적화. ⚠️ **확인 가능한 사실이 거의 없다** — 제목이 약속한 모델 'Jev'가 **자막에 한 번도 없다** ([[tech-bridge-rlhf-assistance-vs-automation]]) · 2026-10-09 제3자 진술로 Jev = RLCD 학습 ([[tech-bridge-jev-calibrated-decisions]])
-- [[langchain]] — LLM·에이전트 프레임워크 회사. `langchain-typesafe` 통합 · auto mode 미들웨어 · Jev-as-a-judge eval을 소개하는 **위키 첫 LangChain 1인칭 소스** ([[tech-bridge-jev-agent-harness]]) ⚠️ 벤더 영상
+- [[langchain]] — LLM·에이전트 프레임워크 회사. `langchain-typesafe` 통합 · auto mode 미들웨어 · Jev-as-a-judge eval을 소개하는 **위키 첫 LangChain 1인칭 소스** ([[tech-bridge-jev-agent-harness]]) ⚠️ 벤더 영상 · LangGraph `interrupt` + [[temporal|Temporal]] durable 대기 ([[tech-bridge-human-is-async-api]])
 - [[crowdstrike]] — 사이버 보안 기업. [[openai|OpenAI]] **10억 달러 프론티어 방어자 약정의 파트너**로 첫 등장 — [[defenders-window]]의 **조달** 쪽 ⚠️ *"할인된 접근"* 한 문장이 전부 ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[vercel]] — [[nextjs|Next.js]]를 만든 웹 플랫폼. *페이지 → 에이전트* 전환을 서사 축으로 두고 [[eve-framework|Eve]]·AI SDK·샌드박스를 판다. **위키 첫 Vercel 소스** ([[tech-bridge-vercel-eve-filesystem-agent]])
 - [[plivo]] — 2011년 음성·SMS API로 시작한 텔레포니 기업(월 10억 건 이상 통화 주장). **SIP 트렁킹·캐리어 계층을 직접 보유**하고 그 위에 보이스 AI 에이전트 플랫폼을 얹는다. **위키 첫 음성 도메인 조직** ([[tech-bridge-voice-agent-failure-modes]])
@@ -173,7 +175,7 @@ updated: 2026-10-09
 
 - [[minimax]] — 중국 AI 랩("AI 드래곤" 중 하나). 위키 **첫 중국 AI 랩 당사자 소스** — 모델 우선·앱은 나중, 누구나 제안하는 연구 문화(MSA를 인턴이 설계), 200개국 3억 명 (sources: 2) ⚠️ 당사자 진술
 - [[ibm]] — [[tech-bridge-agent-knowledge-four-ways|IBM Technology]] 해설의 제작자. 위키 **첫 "자기 제품 없는 개념 해설"** 벤더 — 일곱 편(지식 조달·코드 품질·AI 엔지니어 세 층·시프트 레프트 보안·**레거시 현대화**·[[tech-bridge-tokenmaxxing-to-valuemaxxing|value-maxing]]·[[tech-bridge-agents-as-catalyst|에이전트=촉매]]), 같은 원리([[behavior-validated-trust]])를 품질·보안·마이그레이션으로 세 번 (sources: 7) ⚠️ 촬영 시점 연속 미확정 · 화자 이름은 설명란에만
-- [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술
+- [[composio]] — 지식 노동 에이전트 **인프라**를 만든다고 밝히는 회사. 위키 첫 "에이전트가 딛고 설 바닥"을 파는 조직 (sources: 1) ⚠️ 당사자 진술 · 두 번째 발표: 대시보드의 종말·[[agent-native-interface]] ([[tech-bridge-composio-dashboard-is-dead]])
 - [[promptql]] — [[company-brain|회사 두뇌]] 플랫폼. Hasura 제작팀. 자사 위키 5,000페이지, 파트너 15~20, 제안→승인 UX, *"prompt tag"* 출시 예고 (sources: 1) ⚠️ 당사자 진술 · ASR *PromQL*
 - [[town]] — 보통 사람을 위한 보조 에이전트 회사(CTO [[jean-denis-greze]]). 힘↔프라이버시를 맞바꾼 커스텀 도구를 쓴다 (sources: 1) ⚠️ 당사자, 규모 없음
 - [[google-cloud]] — Google 클라우드 플랫폼. 위키 두 번째 Google 조직 페이지 · 첫 **클라우드 플랫폼 벤더** — [[mcp-toolbox-for-databases|MCP Toolbox]]·Google managed MCP·Model Armor, 월 도구 호출 2천만(자기 진술) (sources: 1) ⚠️ 당사자
@@ -416,6 +418,8 @@ updated: 2026-10-09
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[agent-native-interface]] — 제품이 사람의 눈·클릭 대신 에이전트를 1차 사용자로 놓는 인터페이스. MCP(채널) 위의 설계 층: 도구 노출량·사용 순서·데이터 크기 ([[tech-bridge-composio-dashboard-is-dead]]) ⚠️ 첫 소스가 이 층을 파는 회사 · Brockman(컴퓨터 사용)과 반대 방향
+- [[human-as-async-api]] — 사람의 입력을 동기 호출이 아니라 비동기 이벤트로: workflow를 wait condition으로 park, 응답은 signal로 주입, 크래시에도 유지. 언제 부를지는 *틀렸을 때의 비용* vs alert fatigue ([[tech-bridge-human-is-async-api]]) ⚠️ 벤더 발표
 - [[deterministic-agent-pipeline]] — 계획을 모델에 맡기지 않는다: 고정 그래프 + 결정론 노드(수집·가지치기) + LLM 노드(판단), 노드별 모델·턴 예산, *"more than 20 turns = wrong direction"* ([[tech-bridge-uber-debug-assist]]) ⚠️ 환각 감소 주장 미측정
 - [[harness-as-platform]] — 하네스(골격·런타임·의존성)는 플랫폼 팀이, 스킬·서브에이전트는 도메인 팀이 — *"we are the providers of the harness"*, 에이전트 타입으로 플러그인 범위 지정, 서브에이전트 30 → 10,000 전망 ([[tech-bridge-uber-debug-assist]]) ⚠️ 거버넌스 미발화
 - [[agent-state-machine]] — 규칙은 전이로, 내용은 모델로: 금지 행동은 전이 부재로 불가능, 구조화 로그, eval은 단계·결과·**엣지**, 머신+트레이스+eval → 다른 에이전트가 V2 제안 → V1과 비교 ([[tech-bridge-goodbye-slop-state-machines]]) ⚠️ 실측 없음(1회 시연)
@@ -597,6 +601,7 @@ updated: 2026-10-09
 → 전체 목록은 [[02.wiki/engineering/index]] 참조
 
 ### Systems
+- [[durable-execution]] — 이벤트 히스토리 replay로 멈춘 자리에서 이어 가는 실행 모델. 에이전트 루프 = workflow(결정론·replay 가능), 모델·도구 호출 = activity(비결정론) — [[workflow-vs-agent]]의 workflow와 다른 뜻 ([[tech-bridge-human-is-async-api]])
 - [[agent-distributed-systems]] — 에이전트가 부작용을 내면 분산 시스템 문제가 된다. 타임아웃=불명·멱등성·메모리=캐시·보상·scoped 권한 (sources: 2)
 - [[actix-web-http-server]] — actix-web `HttpServer` 워커 모델·TLS/HTTP2·graceful shutdown·정적 파일
 - [[actix-web-connection-lifecycle]] — actix-web Accept/Worker/Dispatcher 루프 (내부 동작 다이어그램)
@@ -663,6 +668,9 @@ updated: 2026-10-09
 ---
 
 ## Sources
+- [[tech-bridge-lauren-tan-pocock-podcast-full]] — [[lauren-tan|Lauren Tan]] × [[matt-pocock|Matt Pocock]] 대담 **풀버전**(1:04:03, 챕터 12, 10-03 멤버 전용 → 10-10 공개 확인): 10-03 해설 영상([[tech-bridge-lauren-tan-agent-dev-workflow]]) 발췌 6구간의 원 녹화. 2,500 PR의 메커니즘(Cursor projects 코디네이터 = 안쪽 루프, [[grokbot|GrokBot]] = 바깥 루프), *"how can my agent merge its own code?"* 를 거꾸로 푼 설계, 표본 리뷰, 다크 팩토리냐 — *"It kind of is"*, one-way door엔 *"I don't really have the answer"* ⚠️ 당사자 진술 · Contradiction 2,000 vs 2,500 PR · [[software-factory]] 입장(09-25 줄긋기 vs 수용) · ko "Pstack" → "피루스 법"
+- [[tech-bridge-human-is-async-api]] — Melanie Warrick([[temporal|Temporal]], 이름은 설명란에만) "인간은 비동기 API입니다"(18:46, 챕터 20): blocking call 대신 [[human-as-async-api|wait condition + signal]], worker를 죽여도 이벤트 replay로 재개([[durable-execution]]), Google ADK·LangGraph 데모, 사람을 부를 시점은 *틀렸을 때의 비용* ⚠️ 벤더 발표·수치 없음 · ko가 Temporal을 "시간·임시"로 약 10회 · en·ko 공유 ADK → "80K"
+- [[tech-bridge-composio-dashboard-is-dead]] — [[sarah-simionescu|Sarah Simionescu]] ([[composio|Composio]]) *"The dashboard is dead"*(10:12, 챕터 18): 대시보드·쿼리 언어 = 사람–데이터 번역 장치, [[model-context-protocol|MCP]]는 프로토콜일 뿐 → 학습 부재·도구 익사·앱 고립, Composio search(과제 → 도구 + 계획), remote workbench, *"a new species of user"* → [[agent-native-interface]] ⚠️ 당사자 진술 · 첫 데모는 목업 · 벤치마크 수치 미발화 · ko가 부정 5곳 반전
 - [[tech-bridge-jensen-huang-korea-society-gala]] — [[jensen-huang|Jensen Huang]] × 진행자 "주주 장"(자막 *"Julie"*, ⚠️ 미해소) @ 2026 코리아 소사이어티 연례 갈라(23:10, 공식 챕터 9, 2026-10-08 업로드). 저장 → 생산(*"generating information, not just retrieving"*, AI 공장) · 한국은 AI를 *"consume and export"* · [[ai-anthropomorphism|*"AI is not alive"*]] · 답 찾기는 *"not cheating. That's called obvious"*(⚠️ Wallace와 대립) · 정렬 = *"not just what, but how"* · [[agent-governance-layers|철벽 샌드박스 + 모든 AI 감시]] · *"가치 있는 목표는 모호하다"* · *"responsible optimism"* ⚠️ 칩 판매자·우호적 무대 · 녹화일 미발화(백악관 패널과 같은 주 추정) · ko가 *"not alive"* → "살아있습니다"
 - [[tech-bridge-uber-debug-assist]] — [[kriti-dangi|Kriti Dangi]] ([[uber|Uber]]) 디버깅 에이전트 하네스(27:58, 공식 챕터 없음, Q&A 3개, 2026-10-08 업로드): [[debug-assist|Debug Assist]] — [[deterministic-agent-pipeline|LangGraph 고정 골격·결정론+LLM 노드·턴 예산]], 기능 플래그 MCP 롤백, [[harness-as-platform|골격 고정 + 런타임 스킬, 하네스는 플랫폼이]], 월 9,000 RCA·정확도 50%·**머지율 5%→48%** ⚠️ 전부 자기 보고 · "Jira 해결 시간 2배 증가 = 개선" 방향 미확정 · en·ko가 *harness* 를 지움 · ko "파라나 주 대통령"·"[욕설]"
 - [[tech-bridge-goodbye-slop-state-machines]] — [[david-khourshid|David Khourshid]] ([[xstate|XState]]·Stately) 슬롭이여 안녕, 결정론이여 어서 와(20:29, 공식 챕터 21, 2026-10-08 업로드, Agent Conf 2026): 슬롭 = 구조 없는 위임, 메가 프롬프트 vs [[agent-state-machine|명시적 상태 머신]], *"evaling the edges"*, V1→V2 자기 개선, [[jev|Jev]] 에스프레소 데모 ⚠️ 실측 없음·녹화일은 "Jev 발표 며칠 뒤"
@@ -791,7 +799,7 @@ updated: 2026-10-09
 
 ## 통계
 
-- 총 페이지 수: 752 (697 → 752, + 2026-10-09 Tech Bridge 15편: source 15 + concept 19 + engineering 1 + entity 20 — 제안서 기준 계산, 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 752와 일치)
+- 총 페이지 수: 760 (752 → 760, + 2026-10-10 Tech Bridge 3편: source 3 + concept 2 + engineering 1 + entity 2 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 760과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-09 (Tech Bridge **15편** — 10-03~10-08 업로드분, OAuth 만료로 밀린 5일분을 한 번에. 그중 4편(`wrii8VocfZU` · `8DRjkp_X8yY` · `_0zB1Qj-xoE` · `PACIHCnvNMo`)은 멤버 전용에서 공개 전환, 여전히 멤버 전용인 3편(`5tdMgKkX5dU` · `J1BGMIWTJ1U` · `RVnSsolR3uE`) 건너뜀. 축은 **검증 병목의 여러 답**([[tech-bridge-pocock-pr-bottleneck|Pocock]] · [[tech-bridge-prompt-to-production|증거]] · [[tech-bridge-agentcraft-strategy-game|주의]] · [[tech-bridge-sourcegraph-codebase-visibility|가시성]])과 **결정론 골격**([[tech-bridge-uber-debug-assist|Uber]] · [[tech-bridge-goodbye-slop-state-machines|상태 머신]] · [[tech-bridge-rails-harness-engineering|Rails]]))
-- 직전 ingest: 2026-10-03 (Tech Bridge **3편**, **서른 날 연속** — 10-02 업로드 3편, 그중 `XyVUHSzKM2E`(Warp)는 09-28 멤버 전용에서 공개 전환. 같은 날 세 편이 **검증·측정**으로 모인다 — [[tech-bridge-death-of-code-review|코드 리뷰의 종말]]은 리뷰를 시스템으로 재건하라, [[tech-bridge-dx-ai-impact-trends|DX 편]]은 *"Nobody hit 2x"*, [[tech-bridge-warp-factory-engineering|Warp 편]]은 공장 은유를 받아들이되 사람 칸을 남긴다. 멤버 전용 4편 건너뜀)
+- 마지막 ingest: 2026-10-10 (Tech Bridge **3편** — 10-09 업로드 2편 [[tech-bridge-composio-dashboard-is-dead|Composio 대시보드의 종말]] · [[tech-bridge-human-is-async-api|Temporal 인간은 비동기 API]] + 멤버 전용 → 공개 전환 1편 [[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan 대담 풀버전]](`5tdMgKkX5dU`). 신규 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 건너뜀, `J1BGMIWTJ1U` · `RVnSsolR3uE` 여전히 멤버 전용)
+- 직전 ingest: 2026-10-09 (Tech Bridge **15편** — 10-03~10-08 업로드분, OAuth 만료로 밀린 5일분을 한 번에. 그중 4편(`wrii8VocfZU` · `8DRjkp_X8yY` · `_0zB1Qj-xoE` · `PACIHCnvNMo`)은 멤버 전용에서 공개 전환, 여전히 멤버 전용인 3편(`5tdMgKkX5dU` · `J1BGMIWTJ1U` · `RVnSsolR3uE`) 건너뜀. 축은 **검증 병목의 여러 답**([[tech-bridge-pocock-pr-bottleneck|Pocock]] · [[tech-bridge-prompt-to-production|증거]] · [[tech-bridge-agentcraft-strategy-game|주의]] · [[tech-bridge-sourcegraph-codebase-visibility|가시성]])과 **결정론 골격**([[tech-bridge-uber-debug-assist|Uber]] · [[tech-bridge-goodbye-slop-state-machines|상태 머신]] · [[tech-bridge-rails-harness-engineering|Rails]]))

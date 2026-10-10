@@ -6,9 +6,9 @@ tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
 related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-09
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 행동 가역성
@@ -74,3 +74,12 @@ updated: 2026-10-09
 Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이쪽은 **코드 변경 하나하나**를 가른다 — 이메일 발송·DB 마이그레이션은 코드 안에 있는 지식 노동형 부작용이다. → [[risk-proportional-human-review]] · [[agent-distributed-systems]]
 
 > ⚠️ 60,000명 이메일이 실제 사건인지 가상 예인지 미발화. merge danger 판정을 누가(에이전트? 사람?) 하는지도 발화되지 않는다 — PR 스킬은 *"currently in progress"*(16:37~16:40).
+
+## 검증 가능성이 one-way를 two-way로 바꾼다 — 그리고 "답이 없다" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[matt-pocock|Matt Pocock]]이 위 절의 틀(one-way / two-way door)로 [[lauren-tan|Lauren Tan]]에게 묻는다 — 의료·법률·금융처럼 *"most of your PRs (…) are one-way doors"* 라면?(54:47~55:19) ⚠️ 당사자 진술.
+
+- *"it all comes back to me to the quality of the verification that you're able to um get out of your agents"*(55:26~55:36). ⭐ *"for domains where the work is verifiable, this is easier, right? and the the oneway doors become two-way doors in a sense"*(55:36~55:47) — **검증이 충분하면 가역성을 대신한다**는 주장. 이 페이지의 다른 소스들이 one-way door를 **게이트·사람 리뷰**로 다룬 것과 방향이 다르다.
+- 검증이 어려운 영역에선 *"it's very hard to get to that point"*(55:55~55:59), ⭐ *"I think it's a great question that I don't really have the answer to"*(56:29~56:34).
+- 기대: 증명을 프로그래밍과 합친 에이전트 지향 언어(*"bend"* 56:53, ⚠️ 판독 미확정), *"if the proofs show you that it's correct, then why wouldn't you just merge it? Um but of course, yeah, not all domains are verifiable."*(58:11~58:20) → [[ai-formal-verification]] · [[verifiable-goals]]
+- ⚠️ 위키의 주석: "검증되면 two-way"는 **코드의 정확성**에 대한 말이다. 데이터 손실처럼 *실행 결과* 가 되돌릴 수 없는 경우(진행자의 예 *"cause data loss"* 55:05~55:11)를 증명이 막는지는 화자가 따로 말하지 않는다.

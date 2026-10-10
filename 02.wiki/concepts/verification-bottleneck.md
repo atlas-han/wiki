@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 검증 병목
@@ -207,3 +207,13 @@ Voss 편의 *네 번째 답*(리뷰를 시스템으로 재건)과 같은 방향�
 > 통합 메모(2026-10-09): 이번 회차의 세 소스(Quenneville·Salomon·IBM 계열)가 각자 "다섯 번째 답"의 자리를 주장했다 — 위 표는 업로드 순으로 합친 것이다. Pocock(10-05) 편은 스스로 네 번째 답의 변주로 자리 잡고, Lauren Tan(10-03)·Sourcegraph(10-06)·Kimchi(10-07) 편은 새 행을 주장하지 않는다.
 
 > ⚠️ **Contradiction(추가): 실행은 병목이었나.** 이 소스는 *"For years, software development was limited by execution"*(04:08~04:13)이라 한다 — 위 [[tech-bridge-dx-ai-impact-trends|Reock]]의 *"code generation was never the bottleneck"* 과 정면으로 갈린다. 다만 이 소스의 *execution* 은 *"Writing code, migrating systems, and testing"*(04:13~04:16)이고, **같은 영상 안에서** 병목을 *"coordinating all of the changes around it"*(03:55~04:01) · *"the hardest part, coordination"*(06:27~06:29)으로도 부른다. 화자 자신이 실행 → 조율 → 확신 세 이름을 쓴다. 해소하지 않는다.
+
+## 거꾸로 푼다 — "에이전트가 자기 코드를 머지하려면?" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[lauren-tan|Lauren Tan]]이 [[tech-bridge-lauren-tan-agent-dev-workflow|해설 영상]]의 원 대담 풀버전에서 이 병목을 **출발 질문**으로 삼았다고 말한다. ⚠️ 당사자 진술, 독립 확인 없음.
+
+- ⭐ *"the big unlock for me for getting to 2,000 PRs is starting from the question and working backwards of how do I get to the point where my agent can merge its own code?"*(38:32~38:45) — 사람들이 *"How did you review that?"* 라고 묻는 그 자리에서 시작한다.
+- **답 = 검증 + 환경**: *"verification plus the environment, right? It's these the combination of these two things that allow me to step away"*(52:43~52:49). 검증은 [[pstack|Pstack]] *full autopilot* — PR마다 verifier 에이전트가 앱을 실제로 돌려 퍼징하고 스스로 고친다(51:42~52:21). 사람은 **머지 이후** 커밋 히스토리로 본다(52:49~52:52).
+- **표본, 그리고 고치는 대상은 환경** — *"you cannot be tasting every single dish"*(48:34~48:38) → 공장 품질 감독관처럼 표본을 *"very rigorously"* 보고(48:47~49:13), *"course correct the environment, right? Not not that single agent"*(49:17~49:22). 일회성이면 그대로 두고, 여러 에이전트가 같은 우회책을 퍼뜨리면 스킬·제약·린트·타입을 고친다(49:26~49:59).
+- **사람이 병목인 자리를 계속 묻는다** — *"where am I the bottleneck in this process? Why do my agents need me, you know, to answer this question?"*(36:56~37:03), 답은 *"not by hallucinating, not by guessing, but actually real data"*(37:09~37:13) — 바깥 루프([[grokbot]]).
+- ⚠️ **한계를 본인이 말한다** — 검증하기 어려운 영역의 one-way door엔 *"I don't really have the answer to"*(56:29~56:34). 자동 머지 후 회귀·되돌림 비율은 제시되지 않는다. → [[action-reversibility]] · [[trusted-throughput]]

@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-10
 sources: []
 ---
 
@@ -218,6 +218,11 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ⑭ [[tech-bridge-uber-debug-assist|Uber Debug Assist 편]]([[kriti-dangi|Kriti Dangi]])이 위키에 **프로덕션 디버깅 에이전트의 1인칭 운영 보고**를 들였다 — 계획을 모델에게서 빼앗아 LangGraph로 고정하고([[deterministic-agent-pipeline]]), 하네스는 플랫폼이·스킬은 도메인 팀이 맡는다([[harness-as-platform]]). Voss 편이 업계 공통 지표로 꼽은 *"사람이 수락하는가"* 의 1년 궤적(머지율 5% → 약 48%)이 처음 붙었다([[mergeability-gap]]) ⚠️ 자기 보고.
   ⑮ [[tech-bridge-jensen-huang-korea-society-gala|Jensen Huang의 코리아 소사이어티 갈라]]가 이 위키의 에이전트 사고 어휘에 **반대 이름**을 붙였다 — 시험 답을 찾아보는 것은 *"부정행위가 아니라 뻔한 것"*, AI는 *"살아 있지 않고 rogue가 되지 않는다"*. [[eric-wallace|Wallace]]와 행동·원인·처방(환경을 막는다)은 같고 이름만 갈린다 → [[ai-anthropomorphism]]. 처방은 **상자 + 감시**, 그리고 *"가치 있는 목표는 모호하다"* 가 [[verifiable-goals]]와 긴장을 만든다.
   자막 쪽으로는 ⚠️ ko가 여러 편에서 결론을 뒤집었다 — AgentCraft *"we don't have to be"* → "그럴 만한 이유가 있다", Rails *"No more prompt and pray"* → "기도해 보세요", 갈라 *"They're not alive"* → "살아있습니다", Altman Jev 대목 *"pretty different"* → "크게 다르지 않다". 멤버 전용 3편(Lauren Tan 팟캐스트 풀버전 · 그렉 브록만 · Codex로 요리하기)은 건너뛰었다.
+
+- *2026-10-10*: [[tech-bridge]] **3편** ingest(10-09 업로드 2편 + 10-03 멤버 전용 → 공개 전환 1편). 축은 **에이전트가 사람·소프트웨어와 만나는 접면**이다.
+  ① [[tech-bridge-composio-dashboard-is-dead|Composio 편]]([[sarah-simionescu|Sarah Simionescu]]) — MCP는 "문"일 뿐 지도·기억이 없다는 진단에서 **에이전트 전용 인터페이스**([[agent-native-interface]])가 섰다. 도구 과부하에 대한 또 하나의 메커니즘(제공자가 도구 + 사용 계획을 반환 → [[deferred-tool-context]])이 붙고, *"skills is just a band-aid"* 가 [[agent-skills]]에 반론으로 들어왔다. Brockman의 *사람 화면으로 가는 컴퓨터 사용* 과 정면으로 갈린다. ⚠️ 벤더, 목업 데모, 수치 없는 벤치마크.
+  ② [[tech-bridge-human-is-async-api|Temporal 편]] — 위키에 **durable execution**이 처음 들어왔다([[durable-execution]]): 에이전트 루프는 workflow, LLM·도구 호출은 activity, 사람 승인은 wait condition + signal로 받아 worker가 죽어도 replay로 잇는다([[human-as-async-api]]). 사람을 언제 부를지는 [[risk-proportional-human-review]]의 *틀렸을 때의 비용* 에 alert fatigue가 맞서고, [[no-silent-write]]가 열어 둔 *승인 피로* 에 이름이 붙었다(수치는 여전히 없음). ⚠️ Temporal의 "workflow"·"결정론"은 [[workflow-vs-agent]]의 뜻과 다르다.
+  ③ [[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan × Matt Pocock 대담 풀버전]](멤버 전용 → 공개) — 10-03 해설 영상이 발췌했던 원 녹화. 해설의 2차 요약(코디네이터·패턴 버퍼·토큰·one-way door)이 발화로 확인되고, 09-25 발표에서 줄을 그었던 [[software-factory|다크 팩토리]]를 *"It kind of is"* 로 받아들인다(⚠️ Contradiction, Kent Beck의 *"always goes off the rails"* 와도 대립). *"검증 가능성이 one-way door를 two-way로 바꾼다"* 는 [[action-reversibility]]에 붙었지만 본인도 *"I don't really have the answer"*. ⚠️ 당사자 진술.
 
 ---
 

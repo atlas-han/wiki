@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api]
 created: 2026-09-15
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # AI Engineer
@@ -119,3 +119,11 @@ updated: 2026-10-09
 ## 부스 "U4" — 벤더 2인 발표 (2026-10-09 · [[tech-bridge-kimchi-cost-per-task-harness]])
 
 [[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 발표는 설명란에 **https://ai.engineer** 링크를 걸지만 자막엔 행사명이 없다. 행사장 단서: *"You can see this at our booth (…) We are in U4. It's exactly this way across a few streets."*(16:55~17:03 — `en`·ko는 *"UZ4"*, ⚠️ 번호 미확정; LlamaIndex 편의 *"LG47"* 과 같은 종류의 부스 번호). 녹화는 6월 21일 이후(사내 차트 날짜), 연도 미발화. ⚠️ ko는 *booth* 를 **"웹사이트"** 로 옮겨(16:53) 행사장 단서가 사라진다.
+
+## 설명란 링크 + "Composio booth" (2026-10-10 · [[tech-bridge-composio-dashboard-is-dead]])
+
+[[sarah-simionescu|Sarah Simionescu]]([[composio|Composio]])의 10분 발표. 설명란 끝에 *"AI Engineer 공식 웹사이트: https://ai.engineer"* 링크가 있지만 **자막엔 행사명이 없다.** 현장 단서는 *"If you want to play with the live version, come visit us at the Composio booth"*(08:37~08:43) — 부스 번호는 없다. 연도 단서 *"how I would solve it in 2026"*(04:47~04:52). 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다.
+
+## 설명란 링크 + 현장 소음 (2026-10-10 · [[tech-bridge-human-is-async-api]])
+
+[[temporal|Temporal]] 직원(설명란 기준 Melanie Warrick)의 발표. 설명란에 `https://ai.engineer` · `@aiDotEngineer` 링크가 있지만 **자막엔 행사명이 없다.** 현장 단서는 *"It's an interesting condition to be uh working in this space with the noises around us"*(09:51~09:54)와 *"I suspect internet is part of it"*(03:03) — 소음 있는 공개 공간. 데모의 *"ferry building"*·*"Oracle Park"* 는 시나리오 속 샌프란시스코 지명이지 행사 장소 진술이 아니다. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다.

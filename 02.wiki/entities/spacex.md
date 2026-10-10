@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-07
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # SpaceX
@@ -73,3 +73,7 @@ updated: 2026-10-09
 - **Starship 첫 궤도 발사** — 진행자 *"first orbital Starship launch"*(12:14~12:20, *"Monday"*), Musk *"we took Starship to orbit for the first time and we deployed Starlink B3[=V3] satellites"*, 날개폭 737급, *"the largest payload delivered to orbit since Skylab"*(16:08~16:27), 내년 *"a weekly or twice weekly cadence"*(16:33~16:38). ⚠️ 발사 날짜 미발화. 09-23 Shotwell 편은 *Flight 14 → 15 포획 시도* 만 말했다.
 - **10 GW** — 진행자: SpaceX가 공개 언급한 10 GW는 *"about 25% of all the power added in America"*, *"literal rocket engineers working on bringing on the power (…) Helping make the turbines"*(03:51~04:09). G20의 *"자체 발전소"* 진술과 이어진다.
 - ⭐ **궤도 컴퓨팅** — Tesla와 연 200 GW 태양광 생산 목표, Starship으로 연 수백 GW의 AI 컴퓨팅 발사(06:46~07:10, 17:30~17:48). 달·화성 자립 도시에 약 100만 톤(17:17~17:27). → [[orbital-compute]]
+
+## "Cursor, which is now SpaceX AI" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[lauren-tan|Lauren Tan]](Cursor 엔지니어) 대담: *"the journey sort of began even before I joined cursor uh which is now SpaceX AI"*(00:56~01:04), *"every app that cursor has or spaceexai has has a uh verification skill"*(18:04~18:11). 09-25의 *"SpaceX AI의 일부가 되기 전"*(위 절)보다 강한 표현이지만 **형태(인수·합병·브랜드)는 말하지 않는다** → 관계를 추정하지 않는다. 영상 제목·설명란의 *"SpaceX에서 매달 수천 개의 PR"* 은 **화자 개인의 지난달 PR 수**(2,000/2,500)를 조직 수치처럼 쓴 것이다. "xAI"는 자막에 없다. ⚠️ 당사자(직원) 진술.

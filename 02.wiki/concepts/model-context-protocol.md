@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # Model Context Protocol (MCP)
@@ -205,3 +205,13 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 ## 2026-10-09 — 조회에서 프로덕션 완화 행동으로 ([[tech-bridge-uber-debug-assist]])
 
 [[uber|Uber]] [[debug-assist|Debug Assist]]의 RCA 노드는 데이터가 부족하면 *"it goes and queries Uber ecosystem. So, it does that via MCP connections like (…) Jaeger distributed tracing, logging, uh incident data"*(10:58~11:13) — 여기까지는 읽기. 수정 노드는 **기능 플래그 MCP**에 붙어 크래시와 플래그의 상관을 찾고, 강하면 *"it simply goes and rolls the feature flag back and the issue is mitigated"*(13:41~13:47) — **프로덕션 상태를 바꾸는 쓰기 행동**이다. ⚠️ 승인 게이트·임계값·감사 기록은 발화되지 않는다. [[mcp-toolbox-for-databases]]가 보여 준 *"MCP 서버가 가드레일의 자리"* 를 쓰기 쪽에서 물을 자리.
+
+## 2026-10-10 — "프로토콜은 채널일 뿐": 표준 ≠ 좋은 인터페이스 ([[tech-bridge-composio-dashboard-is-dead]])
+
+[[composio|Composio]]의 [[sarah-simionescu|Sarah Simionescu]]는 MCP의 역사(*"In November of 2024, Enthropic[=Anthropic] announced the MCP protocol"* 02:52~02:57)를 인정한 뒤 이렇게 선을 긋는다: *"MCP is a protocol. It's a channel for communication between agents and your service. And it's up to you, the service, to choose how to communicate with the agent. And it turns out that makes all the difference."*(03:19~03:31) 이 페이지가 MCP를 *연결 표준* 으로 다뤄 온 것에 **"표준을 지켰다 ≠ 에이전트가 쓰기 좋다"** 는 구분을 더한다.
+
+*"If you've ever actually wired up a dozen MCP servers, you will know the reality is a mess for three reasons"*(03:29~03:41): ① 에이전트는 배우지 않는다(스킬은 *"band-aid"*) ② 도구 정의 수천 개에 *"The model just drowns"*(자사 GitHub 툴킷만 200개+) ③ *"Each MCP server knows about itself and nothing else"*(04:20~04:25). 요약: *"MCP gave agents a door into every app. but it left them standing in thousands of separate rooms with no map and no memory of ever being there."*(04:32~04:42) → [[agent-native-interface]] (신규)
+
+- 처방은 MCP를 버리는 게 아니라 **MCP·CLI·네이티브 도구 위에** 에이전트용 층을 짓는 것(*"we build on top of MCP, CLI, and native tools"* 06:52~06:55) — 위 *"MCP → CLI+스킬"* 논쟁을 전송 계층의 선택으로 내린다.
+- ⚠️ **벤더 비교**: Composio vs *"each app's own native MCP that's listed in the clawed[=Claude] uh marketplace"*, 같은 과제·같은 모델, *"a clear difference"*(06:16~06:32) — **미공개 초기 결과, 수치 미발화, 당사자 진술.**
+- [[greg-brockman|Brockman]]의 *"세상을 다시 도구화"* 절과 반대 방향: 그는 MCP 층을 과도기로, Simionescu는 **불충분하니 더 깊이** 지을 것으로 본다.

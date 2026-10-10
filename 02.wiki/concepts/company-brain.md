@@ -6,9 +6,9 @@ tags: [company-brain, wiki, shared-context, access-control, knowledge-base, codi
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
 related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent, codebase-gardening]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-10
-updated: 2026-10-02
+updated: 2026-10-10
 ---
 
 # 회사 두뇌
@@ -124,3 +124,10 @@ updated: 2026-10-02
 | 쓰기 | 에이전트 제안 → 사람 승인 | 질의 증류 | **자동 수집** |
 
 > ⚠️ **Contradiction: 자동 추가 금지 vs 전부 자동 수집.** 이 페이지의 셋째 구성 요소(*자동 추가 금지* → [[no-silent-write]])와 CIA는 정반대로 보인다. 다만 같은 발표에서 화자는 큐레이션 문서(docs·CLAUDE.md·스킬)를 **[[slop-free-zone]]** 으로 따로 엄격히 다루고, Slack은 *"we also assume that anything written in Slack is slop free"*(06:02~06:05)로 둔다 — **원천 기록은 자동, 다듬은 지식은 사람**이라는 분업으로 읽힌다(⚠️ 위키의 정리, 화자가 명시하지 않음). CIA의 **접근 권한·민감 정보** 처리는 발화되지 않는다 — 이 페이지가 중시한 *누가 볼 수 있는가*가 빈칸이다. 근거로 든 트윗(08:01)은 원문이 자막에 없다.
+
+## 실무자 반론의 원형 — "company brain, or a context graph" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[lauren-tan|Lauren Tan]]의 09-25 강연(*"그렇게 정교한 게 필요 없다"*, 위 절)과 같은 입장을 대담에서 더 길게: *"a lot of people talk about this idea of a company brain, right? Or a context graph. I feel like those terms are unnecessarily complex uh or even abstract. To me, it's just about um how do I take information that my agent needs that I would otherwise have to go and pass it myself and just teach it how to do it, right? And that removes me from the equation."*(37:13~37:41) ⚠️ 당사자 진술(화자는 커넥터 제품 쪽 사람이다).
+
+- 반론의 대상이 **context graph** 까지 넓어졌다. 대안은 *"Grabbot[=GrokBot] that have connectors (…) a lot of people call them personal agents"*(40:00~40:09)와 루틴 구독 — 정보 저장소가 아니라 **가져오는 법을 가르치는 것**. 원칙은 Netflix의 *"context not control"*(40:36~40:39).
+- ⚠️ 이 페이지가 다룬 **권한·기밀·책임** 질문에는 이번에도 답하지 않는다.

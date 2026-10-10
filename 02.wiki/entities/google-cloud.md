@@ -6,9 +6,9 @@ tags: [google, cloud, database, mcp, platform, security]
 aliases: [GCP, Google Cloud 데이터베이스]
 links:
   - https://cloud.google.com/
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-lopopolo-agent-harness, tech-bridge-human-is-async-api]
 created: 2026-09-11
-updated: 2026-09-23
+updated: 2026-10-10
 ---
 
 # Google Cloud
@@ -48,3 +48,7 @@ Google의 클라우드 플랫폼 조직. 이 위키에는 [[tech-bridge-build-ti
 같은 에피소드가 Google 쪽 에이전트 스택을 한꺼번에 소개한다 — 하네스 [[antigravity|Antigravity]](`/boost`), 지식 [[google-skills|Google Skills]](Google Cloud 스킬 포함), 모델 Gemini 3.8 Flash, 프레임워크 **ADK**(Agent Development Kit, 빌리의 데모). → [[model-harness-knowledge-stack]]. 위 09-11의 *"Antigravity CLI"* 언급은 이제 [[antigravity]] 페이지로 이어진다.
 
 ⚠️ **당사자 진술이고 수치 없음.** 그리고 **클라우드 전체를 에이전트에게 맡기는 목표에 권한·폭발 반경·감사 이야기가 없다** — 위 09-11 데이터베이스 팀 발표가 *빌드 타임 vs 런타임 도구* 를 구분했던 것과 대조된다.
+
+## ADK + Temporal — 외부 벤더의 통합 데모 (2026-10-10 · [[tech-bridge-human-is-async-api]])
+
+[[temporal|Temporal]] 직원의 데모에서 customer·fleet 에이전트가 **ADK** 위에서 돈다 — *"ADK is a um solution that Google is providing to help you orchestrate agents or multiple agents"*(01:03~01:11). 통합 방식: 모델을 *"temporal model class"* 로, 도구를 *"activity tool"* 로 감싸고 worker에 *"the Google ADK plugin"*(10:12~10:44); ADK 프레임워크 자체는 durable workflow 안에서 돈다(06:28~06:30). → [[durable-execution]] · [[human-as-async-api]]. ⚠️ Google이 아니라 **통합 벤더 쪽 진술**. `en`·ko 자막은 ADK를 **"80K"** 로(01:01~01:03), 06:29의 *ADK framework* 를 **"LangChain"** 으로 옮겼다.

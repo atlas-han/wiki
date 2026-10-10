@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-01
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # GrokBot
@@ -83,3 +83,13 @@ updated: 2026-10-09
 - **재작성 전 상태가 구체화됐다** — *"the very first versions of Grokbot were composed of like eight god files"*(05:47~05:53). 위 *"바이브 코딩된 그린필드 → PR 600건+ Dune 재작성"* 의 출발점이다. → [[dune-architecture]]
 - **바깥 루프를 도구 중립으로** — *"maybe you have the Slack MCP, right? Or you have your own harness that you've built a Slack subscription into for a particular Slack channel"*(07:04~07:15) → 제보마다 검증 스킬로 재현하고 *"verify that it still exists on main, and confirm it wasn't something like the user's setup, their data, or maybe they didn't install a dependency"*(07:43~07:56). *"creating those two loops and connecting them is a really important part of the job these days"*(07:56~08:06).
 - ⚠️ 바깥 루프를 자동화하는 도구를 꼽는 자리가 *"tools likeot"*(ko 트랙 영어 구간 06:42)로 **잘렸다.** 문맥상 GrokBot일 개연성이 높으나 판독하지 않는다.
+
+## 풀버전 대담 — god file 10,000줄, 바깥 루프 ↔ Cursor projects (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+위 절의 해설 영상이 발췌한 대담의 1:04:03 판본. ⚠️ 당사자 진술, 독립 확인 없음.
+
+- **잘렸던 이름이 확인된다** — *"tools like Grockbot are really good because they help you automate the outer loop as well"*(35:23~35:29). 위 ⚠️의 *"tools likeot"* 은 **GrokBot**이다.
+- **god file의 크기** — *"the very first couple of versions of Grockbot were composed of like eight god files which were like at least 10,000 lines long if not longer"*(30:21~30:34). 해설 영상 en-orig의 *"100 lines"* 는 잘린 ASR이었다.
+- ⭐ **역할 분담이 완성된다** — *"cursor projects are my inner loop and grabbot[=GrokBot] is my outer loop. Grabbot takes all the context, external context, gives it to the projects because it can actually just send messages to those projects"*(42:55~43:08). GrokBot류는 *"connectors (…) a lot of people call them personal agents"*(40:02~40:09) — 이메일·캘린더·Slack·Linear·X. 본인 사용: *"I have some Groth[=Grok] bots that look at my Slack channels, look at my X (…) they have routines that subscribe"*(41:09~41:21), 예: GrokBot 데스크톱 앱 버그를 찾으면 Cursor project로 보낸다(41:26~41:36). → [[cursor]] · [[persistent-agent-teams]]
+- **GrokBot 데스크톱 앱**이 자동 머지 작업 대상으로 나온다 — chief of staff 하나는 그 성능을, 하나는 사용자 버그를, 하나는 *"rewriting it in a different language just for fun (…) a native app. It's just a toy"*(51:12~51:32)를 맡는다.
+- ASR: en-orig가 이번엔 *"grockbot"·"graphbot"·"Grabbot"·"Groth bots"·"grapot"*, `en`·ko는 *"Rockbot"*(35:24)과 *"Graphbot"*(42:54)을 공유한다.

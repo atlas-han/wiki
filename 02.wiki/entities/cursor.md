@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full]
 created: 2026-09-01
-updated: 2026-10-03
+updated: 2026-10-10
 ---
 
 # Cursor
@@ -100,3 +100,11 @@ Google 측 에피소드가 [[antigravity|Antigravity]]·[[claude-code|Claude Cod
 - **지표**: **resolution rate**(사람이 리뷰 제안을 받아들이는 비율) 52% → 70%+(14:15~14:22).
 
 ⚠️ 제품명(Bugbot 등)은 발화되지 않았다 — [[tech-bridge-lauren-tan-2000-prs]]의 *bugbot* 과 같은 것인지 확인하지 않았다. → [[automated-code-review]]
+
+## "Cursor, which is now SpaceX AI" · Cursor projects (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
+
+[[lauren-tan|Lauren Tan]]이 [[matt-pocock|Matt Pocock]]과의 대담에서. ⚠️ 당사자(직원) 진술, 독립 확인 없음.
+
+- **소속 표현이 한 걸음 더 나갔다** — *"before I joined cursor uh which is now SpaceX AI"*(00:58~01:04), *"every app that cursor has or spaceexai has has a uh verification skill that is automaintained"*(18:04~18:11). 09-25의 *"SpaceX AI의 일부가 되기 전"*(위 절)과 같은 방향이고, **형태(인수·합병·브랜드)는 여전히 말하지 않는다** → 관계를 추정하지 않는다. 화자의 합류 시점은 *"I joined Cursor in March"*(04:20~04:23).
+- ⭐ **Cursor projects** — *"cursor has a new feature called projects which are these like coordinator agents"*(38:04~38:09). *"a coordinator agent that's in the cloud. It has its own computer and all it really does is like it's a manager of agents (…) It doesn't do the work itself. It delegates and orchestrates"*(41:47~42:03), 이슈 묶음을 받아 *"a bunch of different topologies of agents"* 로 서브에이전트에 나눈다(42:35~42:46). 화자에겐 **안쪽 루프**(*"cursor projects are my inner loop"* 42:55~42:57), [[grokbot|GrokBot]]이 바깥 루프. ⚠️ 이 위키에 이 기능의 독립 기록(출시일·공개 여부·정식 이름)은 없다. → [[cloud-agent-delegation]] · [[persistent-agent-teams]]
+- **agents window 성능 문제** — 합류 직후 *"it had a lot of performance issues. Uh it was it was it was pretty laggy"*(03:31~03:39). 09-25 강연의 기원 이야기와 같다.

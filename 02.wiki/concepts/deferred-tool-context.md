@@ -5,9 +5,9 @@ category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
 related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead]
 created: 2026-10-02
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -65,6 +65,20 @@ updated: 2026-10-09
 | 대가 | 목록·설명은 늘 컨텍스트에 | 타입 밖 도구는 아예 못 씀 |
 
 ⚠️ 둘 다 측정치 없음(Factory *"50% of tokens or more"* 는 조건 없음, Uber는 수치 없음). → [[harness-as-platform]]
+
+## 세 번째 답 — 과제를 말하면 도구와 "계획"을 돌려준다 (2026-10-10 · [[tech-bridge-composio-dashboard-is-dead]])
+
+[[composio|Composio]]의 [[sarah-simionescu|Sarah Simionescu]]: *"if you connect enough servers, you're dumping thousands of tool definitions straight into the context window. I mean, our GitHub like toolkit alone has over 200 tools. The model just drowns. it grabs the wrong tool or struggles to resolve dependencies and it can't figure out which one it needs to call first."*(03:58~04:17) — Factory가 든 실패(비슷한 도구 오선택) 위에 **의존성·호출 순서**를 더한다.
+
+답은 **Composio search**: 에이전트가 먼저 *"to state the task it wants to accomplish"*(05:08~05:13, 데모에선 Slack 메시지·Sentry 이슈·Datadog 로그 셋), 서비스가 과제마다 *"not only the correct tools it needs, but actually a plan of how to use them"*(05:20~05:27)을 돌려준다 — 예: Slack은 채널 ID를 먼저 찾아야 메시지를 조회할 수 있다(05:27~05:33).
+
+| | Factory | Oracle([[toolbox-pattern]]) | Uber | **Composio** |
+|---|---|---|---|---|
+| 상시 컨텍스트 | 짧은 도구 목록 | 없음 | 타입별 도구 | 검색 도구 하나(위키의 독해) |
+| 고르는 주체 | 모델 | 하네스(벡터 검색) | 플랫폼 설정 | **도구 제공자(과제 진술 → 반환)** |
+| 순서·의존성 | 언급 없음 | 언급 없음 | 고정 골격 | **계획으로 함께 반환** |
+
+⚠️ 데모는 화자 스스로 **목업**(*"a mockup demo"* 04:42~04:45). 계획을 누가 어떻게 만드는지, 검색이 빗나갈 때의 폴백은 발화되지 않는다. → [[agent-native-interface]]
 
 ## References
 
