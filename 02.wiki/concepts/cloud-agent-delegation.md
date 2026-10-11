@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex]
 created: 2026-09-09
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # 클라우드 에이전트 위임
@@ -95,3 +95,7 @@ updated: 2026-10-09
 [[kimchi|Kimchi]]([[cast-ai|Cast AI]]) **Teleport**: 로컬 환경을 Google의 Kubernetes 컨테이너와 동기화해 *"It feels exactly the same. It just doesn't run inside your laptop"*(13:23~13:32), 노트북을 닫아도 계속. SaaS 또는 온프레미스(11:47~11:56). 전제는 Ferment의 *"사람은 두세 시간마다"*(08:04~08:11) — *"it will keep on running until the task is done or until the human in the loop needs to be involved"*(12:25~12:31). ⚠️ *"62% of our engineers are only using teleports when they are coding now"*(13:53~13:57) — 자사 수치, 측정 방법 미발화.
 
 새로운 것은 **팀 층**이다. **Studio**는 *"a teleport for teams"*(14:17~14:23) — 터미널·CLI 세션은 공유할 수 없으니 *"first he has to live somewhere else"*(15:34~15:36), 그 위에 **검토 요청 세션을 동료가 넘겨받는 칸반**(15:45~16:38). 목적은 계획 단계에서 동료·PM이 스펙을 잡는 것(15:02~15:10). → [[plan-to-ticket-pipeline]] · [[tech-bridge-conductor-orchestras-not-factories|Conductor의 클라우드 샌드박스·실시간 협업]]과 같은 방향.
+
+## 원격이 로컬을 부른다 — 실행 환경으로 나누는 위임 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[codex|Codex]] Remote(ChatGPT 모바일 앱에서 노트북·원격 서버 조종, 09:10~09:21)로 원격 인스턴스에서 밤새 돈 과제가 **사용자의 Chrome이 필요해지자 로컬 스레드를 띄웠다**: *"hey you can spawn a local thread on my machine and use the Chrome extension to then inspect it"*(33:21~33:25), 로컬 스레드는 *"sent by codeex from another thread"* 로 표시되고 QA 결과를 원격으로 돌려보낸다(33:29~33:44). *"me at 3:00 a.m. while sleeping Codex opened Chrome it went through the form building flow and it created a form end to end"*(36:56~37:03). 막힘은 Slack 보고와 side thread로 풀었다(Vercel CLI 로그인, Convex 키는 채팅에 붙이지 않고 bash 한 줄로 원격 환경에 주입, 39:42~40:25) → [[credential-injection-outside-sandbox]] · [[human-as-async-api]]. ⚠️ 당사자 시연.

@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # 신뢰 곡선
@@ -84,3 +84,7 @@ Tech Bridge 해설은 원본 대담에서 *"신뢰의 사다리"*(ko 00:57~00:59
 [[jensen-huang|Jensen Huang]]도 사다리를 그린다: 직원·아이가 똑똑해질수록 *"you would give them larger and larger boundaries to explore"*(16:53~17:01), AI는 *"I give you no rights"* 에서 시작해 *"based on the job that I want you to do and your capabilities"* 만큼 넓힌다(17:38~17:51). 
 
 > ⚠️ **승급 조건이 다르다.** 이 페이지의 [[lauren-tan|Lauren Tan]]은 **관찰된 행동**(지름길 없음, 신뢰를 잃는 메커니즘)으로 오르고, Huang은 ***능력*(*"because its capabilities deserve it"*)** 으로 오른다. 능력이 늘어도 행동이 확인되지 않으면 어떻게 하는가 — Huang의 답은 사다리가 아니라 **두 번째 원칙(모든 AI 감시)** 이다. 두 화자 모두 이 차이를 말하지 않는다(위키의 관찰).
+
+## autonomy ≠ automation — 정답률과 신뢰를 다른 축으로 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[dru-knox|Dru Knox]]([[tessl|Tessl]])는 이 곡선이 말하는 *신뢰* 를 **정답률과 분리된 축**으로 정의한다: *"You can have high autonomy in the sense that agents frequently are oneshotting the problems you're giving them, but low automation because you don't trust it yet. And so you're reviewing all of the code directly."*(03:30~03:43) — autonomy는 사람이 몇 번 고쳐야 하느냐, automation은 *"How much do you need to review or build trust in the solution before you accept it?"*(03:23~03:27). 그리고 *"You have to build up autonomy first before you can move to automation."*(03:47~03:52) 이 곡선의 *병렬 수 = 신뢰의 함수* 에 **신뢰를 올리는 장치**(PR 뒤의 비싼 검사 = outer loop, *"encode things that otherwise a human would have to verify"* 07:22~07:30)가 붙는다 → [[inner-outer-meta-loops]]. 출발점도 이 곡선의 중간 — *"a couple sessions at a time"*, 쉬운·중간 과제에서 *"frequently do the right thing"*(00:45~01:02). ⚠️ 측정 없음, 벤더 화자.

@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · 발표 [[charlie-holtz]] ([[cond
 date-published: 2026-10-01
 ingested: 2026-10-02
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-11
 ---
 
 # Tech Bridge — 공장이 아니라 오케스트라입니다 (Conductor · Charlie Holtz)
@@ -34,6 +34,8 @@ ASR·ko 보정: ⭐ ko가 **결론의 부정 두 개를 둘 다 뒤집었다** �
 ## 1. 최전선 **가까이** 머물러라 (01:34~03:00)
 
 새 도구는 **나온 날** 써 본다 — *"when uh uh ultra code comes out you're trying it. It means that when uh uh slashgo[=/goal?] comes out you're giving it a go"*(01:47~01:56). ⚠️ *ultra code*는 Claude Code 설정 [[ultracode]]일 수 있으나 화자는 제품을 밝히지 않고, *slashgo*는 `en`이 `/goal`로 판독했을 뿐 어느 제품의 명령인지 없다.
+
+> 2026-10-11 보충: [[tech-bridge-cooking-with-codex]]에서 [[codex|Codex]]에 goal 기능이 있음이 발화로 확인된다(*"I'm running a goal"* 29:06, *"SLGO"* 44:22, *"define goal"* 스킬 32:05~32:12). 이 화자의 *"slashgo"* 가 Codex의 `/goal` 을 가리켰는지는 **여전히 미확정**(다른 하네스에도 같은 이름이 있을 수 있다 — [[cursor-cloud]]의 *"/goal과 유사"*).
 
 이유 둘:
 

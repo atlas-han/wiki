@@ -6,9 +6,9 @@ tags: [management, delegation, trust, role, engineering-manager]
 aliases: [관리 유비, 헤드 셰프, 뒷좌석 운전자]
 related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening, agent-attention-management]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game, tech-bridge-cooking-with-codex]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # 매니저·헤드셰프 유비
@@ -80,3 +80,7 @@ updated: 2026-10-09
 매니저·헤드셰프 비유가 **위임·신뢰·환경 설계**를 말한다면, 게임 비유는 **주의 배분**을 말한다 — 유닛 상태 패널, 지도, *"you would click spacebar and it would just take you to the nearest thing that actually needed your attention"*(04:45~04:49). → [[agent-attention-management]]
 
 ⚠️ 이 비유도 **책임의 소재**를 다루지 않는다(위 *유비의 한계*). 게임의 유닛은 사람에게 되묻지 않는다는 점에서 **일방향**이라는 한계도 그대로다 — 다만 협업 방의 사람·에이전트 공용 채팅(09:26~09:43)이 그 방향을 조금 연다.
+
+## "everyone's become a manager" — 그리고 주방 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[gabriel-chua|Gabriel Chua]]([[openai|OpenAI]]): 주말에 노트북을 집에 두고 나가 *"Hey, CEX[=Codex], is everything okay? Is there anything I can do to help unblock you? And in a sense, everyone's become a manager."*(10:26~10:33) 워크숍 전체가 **주방 비유**로 짜였다 — 셰프와 *"sous chef"*(03:48~03:50), `/code review` = *"before the chef like sends out a dish, they always do a quick taste test"*(20:08~20:14). [[lauren-tan|Lauren Tan]]의 헤드셰프·미슐랭 주방과 같은 그림을 **하네스 제작사**가 쓴다.

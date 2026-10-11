@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex]
 created: 2026-09-15
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # AI Engineer
@@ -127,3 +127,21 @@ updated: 2026-10-10
 ## 설명란 링크 + 현장 소음 (2026-10-10 · [[tech-bridge-human-is-async-api]])
 
 [[temporal|Temporal]] 직원(설명란 기준 Melanie Warrick)의 발표. 설명란에 `https://ai.engineer` · `@aiDotEngineer` 링크가 있지만 **자막엔 행사명이 없다.** 현장 단서는 *"It's an interesting condition to be uh working in this space with the noises around us"*(09:51~09:54)와 *"I suspect internet is part of it"*(03:03) — 소음 있는 공개 공간. 데모의 *"ferry building"*·*"Oracle Park"* 는 시나리오 속 샌프란시스코 지명이지 행사 장소 진술이 아니다. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다.
+
+## 설명란 링크만 — Tessl 발표 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[dru-knox|Dru Knox]]([[tessl|Tessl]])의 19:53 발표. 설명란 끝에 *"AI Engineer 공식 웹사이트: https://ai.engineer"* 와 AI Engineer 유튜브·X·LinkedIn 링크가 있지만 **자막엔 행사명·부스·도시가 없다.** 시점 단서는 *"started to be called loop engineering over the last couple weeks"*(06:09~06:13)뿐(상대 시점). 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다. ⚠️ 앞선 Tessl 관련 두 편([[tech-bridge-sdd-enterprise-lessons]] · [[tech-bridge-anthropic-dreaming-memory]])의 설명란은 `tessl.co`(AI DevCon으로 보임)였다 — 이 편과 같은 행사인지 알 수 없다.
+
+## 월·일까지 발화됐다 — World's Fair 첫날 워크숍, 2026-06-29(월) (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[openai|OpenAI]] [[charlie-guo|Charlie Guo]]·[[gabriel-chua|Gabriel Chua]]의 2시간 워크숍. **이 위키의 AI Engineer 계열 소스에서 처음으로 날짜가 발화로 확정**된다: *"from like the 1st of June to today which is the 29th of June"*(22:38~22:43) + *"thanks so much for joining us today on a 9:00 a.m. on a Monday"*(1:04:30~1:04:35) — 2026-06-29는 월요일(달력 확인).
+
+| 항목 | 소스 |
+|---|---|
+| 행사명 | *"this AI engineers welfare[=World's Fair]"*(21:04~21:07), *"the latest AI engineer world's fair talk"*(57:43~57:45), *"kick off your, uh, AI engineer world"*(1:04:35~1:04:40) |
+| 일정 | 월요일 = 워크숍 날, *"tomorrow we have our opening keynote"*(1:04:40~1:04:44) |
+| 형식 | 2시간 — 1시간 투어 + 1시간 실습(*"mini hackathon"* 03:41~03:46), 끝날 때 스웨트셔츠 배포(1:06:28~1:06:33) |
+| 현장 | *"There was a long line outside"*(00:05~00:08) |
+
+> ⚠️ 도시는 발화되지 않는다. 09-29 Jerry Liu 편(*"AI Engineer World Fair"*, 2026)·10-02 Conductor 편과 **같은 회차라는 근거는 없다**(09-07 절차대로 별개 취급하되, 이 편이 World's Fair 2026 = 6월 말이라는 첫 날짜 앵커).
+> ⚠️ ko는 행사명을 지운다 — 21:05 "엔지니어들이 알 겁니다", 1:04:37 "인공지능 엔지니어로서의 여정".

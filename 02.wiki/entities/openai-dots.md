@@ -5,9 +5,9 @@ category: product
 tags: [openai, chatgpt, persistent-agent, always-on-agent, personal-agent, devday-2026]
 aliases: [Dots, Dot, 닷, 도트, always-on agents in ChatGPT]
 links: []
-sources: [tech-bridge-altman-devday-dots]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Dots (OpenAI)
@@ -47,6 +47,22 @@ updated: 2026-10-09
 - **권한·감사·승인 경계가 한 마디도 없다** — Slack 전체·캘린더·발표 자료를 읽고, 다음 버전 목표가 *"fix that in prod"* 다. 같은 CEO의 [[ai-privilege]] 제안(09-06)도 나오지 않는다.
 - 가격, 어떤 시스템에 연결되는지, 실패 사례 — 없음.
 - 제품 정식 표기(Dots / Dot)와 ChatGPT와의 경계 — 설명란 slug 외 근거 없음.
+
+## 사장의 사용기와 권유 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+출시 당일 CEO 다음으로 들어온 **두 번째 1인칭 출처**다([[greg-brockman|Brockman]]).
+
+| 항목 | 내용 (en-orig) |
+|---|---|
+| **녹화 직전의 실례** | 며칠 무시한 이메일 → 조사 → 답장 초안 → *"Do you approve?"*. *"it's not theoretical. With dots, I actually got that (…) right before we we started this podcast"* (02:21~02:45) |
+| **모델** | ⭐ *"It's powered by GPT-6 Astra"* (27:14~27:17) → [[openai-astra]] |
+| **실행 환경** | *"It has its own cloud computer and it can optionally hook to your local computer"* (26:30~26:34). 출시일 대담의 *"its own cloud computer"* 를 화자를 확정해 재확인하고, **로컬 연결 옵션**이 새로 나온다 |
+| **대비** | *"task-based system that you kind of micromanage that lives on your laptop. You close your laptop, it stops working"* (26:39~26:43) |
+| **권하는 시작법** | 작은 과제(*"go buy something for you"*), *"I really like texting mine"*, 커넥터 설정, 반복 과제·조사 (26:51~27:10) |
+| **능동 연결** | 지역 질문을 기억했다가 새 뉴스가 나오면 먼저 알린다 (27:26~27:41) |
+| **모닝 브리핑 4단계** | 사람을 대신해 연락을 마치고 구매 주문 승인만 받는 단계는 *"not quite there yet"*, 그러나 *"with dots, we actually have the technology for it"* (18:44~19:10) |
+
+⚠️ 가입처로 *"sign up for chat.openai.com"* (26:18~26:20)이라고 발화되는데, Dots 전용 주소의 ASR인지는 판독하지 않았다. 권한·승인 경계는 여전히 *"Do you approve?"* 와 *"approve this purchase order"* 두 장면뿐이다. 위 유보는 그대로 유효하다. ⚠️ ko는 Dots를 "점들"·"도트"·"점이"로 옮긴다.
 
 ## References
 

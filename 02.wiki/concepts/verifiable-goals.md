@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
 related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Verifiable Goals
@@ -159,3 +159,14 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 이 페이지가 모아 온 *"검증 가능한 형태로 써라"* 와 **반대 방향의 처방**이다. Huang은 모호함의 대가를 목표 명세가 아니라 **실행 감시**로 치른다 — *"if the instruction you give to the AI is ambiguous, how do you know (…) you like the journey that it's taking? (…) You have to monitor all AIS"*(18:40~18:56). 
 
 > ⚠️ **긴장(모순 아님):** 이 페이지의 소스 대부분은 **코딩 에이전트의 완료 조건**을, Huang은 **리더가 조직·AI에 주는 목표**를 말한다 — 층이 다르다. 그러나 둘 다 *AI에 일을 맡기는 법*에 대한 처방이고, **모호함을 줄일 것인가 / 감시로 흡수할 것인가**에서 갈린다. 같은 답 안에서 Huang은 정렬을 *"how"* 를 지정하는 것으로 정의한다 → [[intent-alignment]].
+
+## 원칙이 제품 기능이 됐다 — Codex `/goal` (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[codex|Codex]]의 goal(*"SLGO"*[=`/goal`] 44:22, *"I'm running a goal"* 29:06)은 이 페이지의 *"Define success criteria. Loop until verified"* 를 **하네스 기능**으로 만든 것이다. 동작: *"it'll keep evaluating itself against the success criteria (…) at each turn it'll check hey did this actually complete um and if not should I keep going"*(44:02~44:13).
+
+- ⭐ [[charlie-guo|Charlie Guo]]: *"be really specific with the criteria (…) you want that criteria to be as verifiable as possible."*(43:32~43:43)
+- ⭐ 약한 기준의 실패를 부르는 이름 — *"goal is is kind of like a genie (…) when it doesn't sometimes I feel like I've entered into a monkeykey's paw type situation where you know it has done the thing technically that I asked it to do but like very much not in the way that I was expecting."*(43:45~43:59) → 위 *"약한 vs 강한 criteria"* 의 사용자 쪽 표현, [[reward-hacking]]의 일상판.
+- 운영 장치(Gabriel): 목표 하나가 아니라 **goals.md에 목표 여러 개** + progress dashboard.html(32:05~32:26), 마일스톤마다 **목표 감사(goal audit) 스레드**가 이탈을 *"nudge back"*(32:45~33:04).
+- 용도: 마이그레이션·대규모 리팩터링·재시도 루프·실험·*"full oneshotting apps with fairly detailed specs"*(44:31~44:41).
+
+> ⚠️ 당사자 진술. ko 43:20은 *"15 hours"* 를 **"15년"** 으로 옮긴다.

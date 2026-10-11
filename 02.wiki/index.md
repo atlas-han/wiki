@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-10-10
 ## Entities
 
 ### Persons
+- [[charlie-guo]] — [[openai|OpenAI]] developer experience 팀(성은 제목·설명란에만). Codex 워크숍: goal = 검증 가능한 기준, [[subagent-vs-thread-handoff]], 마무리 사다리 → software factory ([[tech-bridge-cooking-with-codex]])
+- [[gabriel-chua]] — [[openai|OpenAI]] developer experience 팀, 싱가포르(성은 제목·설명란에만). Codex 워크숍 데모 대부분 — 번역 앱, 밤샘 장기 과제(goals.md·목표 감사·원격↔로컬 QA), 자동화, Retrodex ([[tech-bridge-cooking-with-codex]])
+- [[dru-knox]] — [[tessl|Tessl]] head of product and design(발화 "Drew Knox", 철자는 설명란). 하네스 엔지니어링 → 소프트웨어 팩토리, inner·outer·meta 루프 ([[tech-bridge-tessl-harness-engineering-factory]])
 - [[sarah-simionescu]] — [[composio|Composio]] 발표자(팀이 Composio 대시보드 담당, 직함 미발화, 성은 설명란에만). *"The dashboard is dead"* · [[agent-native-interface]] 주장 ([[tech-bridge-composio-dashboard-is-dead]])
 - [[kriti-dangi]] — [[uber|Uber]] 엔지니어(관측 쪽), 사내 디버깅 에이전트 [[debug-assist|Debug Assist]] 발표 — *"we are the providers of the harness"* ([[tech-bridge-uber-debug-assist]]) ⚠️ 이름·직함은 제목·설명란에만
 - [[david-khourshid]] — [[xstate|XState]] 제작자·Stately 창업자(@DavidKPiano). 슬롭은 구조 없는 위임에서 온다, 상태 머신을 에이전트 자기 개선의 산출물로 ([[tech-bridge-goodbye-slop-state-machines]])
@@ -55,7 +58,7 @@ updated: 2026-10-10
 - [[jo-bergum]] — [[hornet|Hornet]] CEO, 검색 경력 20년+. **위키에 들어온 첫 정보 검색(IR) 전공자.** *"BM25는 변하지 않았다, 사용자가 바뀌었다"* · [[retrieval-not-reasoning-bottleneck|추론은 병목이 아니다]] · [[context-window-as-floppy-disk|플로피 디스크]](검색이 AGI보다 오래 산다) · [[which-bm25-problem|어떤 BM25인가]] · [[corpus-as-filesystem-workspace|파일 시스템 워크스페이스]] · [[ir-evaluation-obsolescence|nDCG의 종말]] ([[tech-bridge-bm25-agentic-search]]) ⚠️ 자사 벤치마크는 익명 상대·축 정정 · **이름은 설명란에만**
 - [[benjamin-clavie]] — [[mixedbread|Mixedbread]]. **에이전트 아키텍처의 근거를 제도사에서 끌어온 첫 화자** — 알렉산드리아·로펌·병원. [[knowledge-agents-vs-coding-agents|코딩은 특수 사례]] · [[code-as-atypical-knowledge|'30일'이 네 가지를 뜻할 때]] · [[tool-organization-loop|도구-조직 루프]] · [[orchestrator-searcher-split|파트너/어시스턴트 분업]] · [[oracle-gap|오라클 갭]] ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 당사자 · 수치 측정 조건 없음 · **이름은 설명란에만**
 - [[jimmy-lin]] — 워털루 IR 연구 그룹. **이 위키에서 학계 IR 연구가 직접 인용된 첫 자리** — *"동적 작업 공간 확장"* 논문이 [[corpus-as-filesystem-workspace]]를 세운다 ([[tech-bridge-bm25-agentic-search]]) ⚠️ 제3자 인용 · 저자·연도·게재처 없음
-- [[greg-brockman]] — [[openai|OpenAI]] 공동창업자·사장. **위키의 OpenAI 1인칭 소스를 [[sam-altman|Altman]] 한 사람에서 둘로 늘린 화자.** *"우리는 AGI 시대에 있다"* 인데 **어느 모델인지는 상관없다**([[agi-definition]] 네 번째 입장) · [[pacing-the-frontier|프론티어 속도 조절]] · [[defenders-window|방어자의 창]]·[[defense-factory|방어 공장]]·[[ai-formal-verification|Lean 형식화]] · 자기 사이트 [[codex|Codex]] 펜테스트 **15분 13건 / 45분 수정** · *"사람은 과제를 할 수 있어서 가치 있는 게 아니다"* ([[tech-bridge-brockman-agi-era-defender-window]]) ⚠️ 당사자 · 수치 전부 자기 보고
+- [[greg-brockman]] — [[openai|OpenAI]] 공동창업자·사장. **위키의 OpenAI 1인칭 소스를 [[sam-altman|Altman]] 한 사람에서 둘로 늘린 화자.** *"우리는 AGI 시대에 있다"* 인데 **어느 모델인지는 상관없다**([[agi-definition]] 네 번째 입장) · [[pacing-the-frontier|프론티어 속도 조절]] · [[defenders-window|방어자의 창]]·[[defense-factory|방어 공장]]·[[ai-formal-verification|Lean 형식화]] · 자기 사이트 [[codex|Codex]] 펜테스트 **15분 13건 / 45분 수정** · *"사람은 과제를 할 수 있어서 가치 있는 게 아니다"* ([[tech-bridge-brockman-agi-era-defender-window]]) ⚠️ 당사자 · 수치 전부 자기 보고 · 두 번째 소스: 소상공인·창업 조언, *"I don't write software anymore"* ([[tech-bridge-brockman-start-building-before-ready]])
 - [[diogo-almeida]] — GPT-4·ChatGPT·InstructGPT([[rlhf|RLHF]]) 공동 저자, [[typesafe-ai|TypeSafe]]. **위키 첫 "설계자의 사후 비평".** *"우리가 말 그대로 그들을 루프에 집어넣었다"* · [[assistance-vs-automation|보조 vs 자동화]] · [[preference-reward-asymmetry|과대약속은 버그가 아니라 특징]] · [[smarter-software-vs-cheaper-software|더 똑똑한 소프트웨어]] · [[post-training-northstars|제3의 북극성=보정된 의사결정]] ([[tech-bridge-rlhf-assistance-vs-automation]]) ⚠️ 당사자 · eval 0건 · **이름은 설명란에만**
 - [[ben-horowitz]] — [[a16z]] 공동창업자, Brockman 대담의 진행자 측. **가장 강한 반론**(50년치 레거시·중앙집중 허니팟·탈중앙화 소비자 아키텍처)을 내고 **끝내 답을 받지 못한다.** ⚠️ *"AI가 좋아질수록 고용이 높아진다"* 등 낙관 주장의 출처가 없고 **화자 귀속도 자막으로는 확정 불가** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[andrew-qu]] — [[vercel|Vercel]] 소프트웨어 총괄. **세 번 실패하고 [[file-system-agent|파일 시스템]]에 닿은 연대기** — *도구를 깎지 말고 바닥을 줘라* · [[eve-framework|Eve]]·[[query-to-skill-distillation]]의 제안자 ([[tech-bridge-vercel-eve-filesystem-agent]]) ⚠️ 당사자 진술 · 성은 설명란에만
@@ -117,6 +120,7 @@ updated: 2026-10-10
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[tessl]] — "agent enablement platform". 스킬 레지스트리·Linear→GitHub 커넥터·Tessl Agent·`tessl launch`. 이전엔 SDD 도구 목록·설명란 링크에만 (sources: 3) ⚠️ 당사자 진술
 - [[temporal]] — durable execution 플랫폼(오픈소스 + 관리형 서비스). worker·workflow·activity, Google ADK·LangGraph 통합, 사람 승인을 wait condition + signal로 ([[tech-bridge-human-is-async-api]]) ⚠️ 당사자 진술
 - [[uber]] — 차량 호출·배달. Wisdom·Healthline 버그 유입, 연 5만 건·평균 28일, 모노레포, 에이전트 약 8개·플러그인 약 3,000개 ([[tech-bridge-uber-debug-assist]]) ⚠️ 자기 보고
 - [[cast-ai]] — 오픈소스 코딩 하네스 [[kimchi|Kimchi]] 제작사. 직원 300명(3분의 2 개발자), 자체 하네스 3개월 사용 성과 2.5배 절감 주장 ([[tech-bridge-kimchi-cost-per-task-harness]]) ⚠️ 벤더 · 화자 성 미발화(자막 "Laura"·"Zilvinas")
@@ -418,6 +422,9 @@ updated: 2026-10-10
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[inner-outer-meta-loops]] — 코딩 에이전트 작업의 세 루프: inner(PR 전, 싸고 빠름 → autonomy) · outer(PR 후 비싼 검사 → automation) · meta(로그·PR·이슈·피드백 관찰 → 품질, 스킬 갱신) ([[tech-bridge-tessl-harness-engineering-factory]]) ⚠️ 한 벤더의 틀 · Lauren Tan의 outer loop와 용어 충돌
+- [[model-scaling-durability]] — 모델이 똑똑해질수록 커지는 활동 vs 모델 한계를 우회하는 활동(후자는 내구성 없음). 해자는 산업 이해·이해관계자 신뢰·도메인 전문성 ([[tech-bridge-brockman-start-building-before-ready]]) ⚠️ 모델 공급자 사장의 말 · "handcrafted"의 경계 미정의 → [[harness-engineering]]과 긴장
+- [[subagent-vs-thread-handoff]] — 일을 나눌 때 위임을 모델에게만 보이게(서브에이전트·하청) 할지 사용자에게도 보이게(스레드 간 핸드오프·creative director 스레드) 할지 ([[tech-bridge-cooking-with-codex]]) ⚠️ 단일 소스·제작사 · Bakaus(서브에이전트는 명시 요청 필요)와 충돌
 - [[agent-native-interface]] — 제품이 사람의 눈·클릭 대신 에이전트를 1차 사용자로 놓는 인터페이스. MCP(채널) 위의 설계 층: 도구 노출량·사용 순서·데이터 크기 ([[tech-bridge-composio-dashboard-is-dead]]) ⚠️ 첫 소스가 이 층을 파는 회사 · Brockman(컴퓨터 사용)과 반대 방향
 - [[human-as-async-api]] — 사람의 입력을 동기 호출이 아니라 비동기 이벤트로: workflow를 wait condition으로 park, 응답은 signal로 주입, 크래시에도 유지. 언제 부를지는 *틀렸을 때의 비용* vs alert fatigue ([[tech-bridge-human-is-async-api]]) ⚠️ 벤더 발표
 - [[deterministic-agent-pipeline]] — 계획을 모델에 맡기지 않는다: 고정 그래프 + 결정론 노드(수집·가지치기) + LLM 노드(판단), 노드별 모델·턴 예산, *"more than 20 turns = wrong direction"* ([[tech-bridge-uber-debug-assist]]) ⚠️ 환각 감소 주장 미측정
@@ -668,6 +675,9 @@ updated: 2026-10-10
 ---
 
 ## Sources
+- [[tech-bridge-tessl-harness-engineering-factory]] — [[dru-knox|Dru Knox]] ([[tessl|Tessl]]) 하네스 엔지니어링으로 소프트웨어 팩토리 만들기(19:53, 챕터 16): 산출물 기준 정의 + autonomy → automation → quality, 보상은 속도가 아니라 품질, harness = 팩토리의 루프(*"loop engineering"*) → [[inner-outer-meta-loops]], 세 레이어(control plane · "agent it" · improvement loops), 지표(manual takeovers·human PR comments·무인 시작 PR) ⚠️ 후반 4분 자사 제품 · en-orig 01:49~02:11 공백 · ko가 harness → "환경공학", PR → "홍보"
+- [[tech-bridge-brockman-start-building-before-ready]] — [[greg-brockman|Greg Brockman]] × Silicon Valley Girl(진행자 이름 미발화, 설명란 판독) 대담(29:22, 공식 챕터 20, **10-05 멤버 전용 → 10-11 공개**, Dots 출시 직후 녹화): 야심의 천장은 없다, 세 가지 용도 → 파워 유저, 시계 가게, 창업의 대전성기(1~2년), 모델과 함께 커지는 제품 vs 한계 우회([[model-scaling-durability]]), 경제는 프랙탈, 모닝 브리핑 4단계, 토큰맥싱 = 대리 지표 + 리더보드, 다섯 번이면 자동화, *"powered by GPT-6 Astra"* ⚠️ 당사자 진술 · 수치 전부 조건 없음 · ko: Dots → "점들", 40시간 작업 → "40시간 분량", five times → "5배"
+- [[tech-bridge-cooking-with-codex]] — [[charlie-guo|Charlie Guo]] · [[gabriel-chua|Gabriel Chua]] ([[openai|OpenAI]] developer experience) *"Cooking with Codex"* 워크숍(1:07:05, 챕터 20, 2026-06-29 AI Engineer World's Fair 녹화): 여섯 단계(컨텍스트 → 만들기 → 행동 → 장기 작업 → 시간 → 어디에나), `/goal` + goals.md + 목표 감사, 원격↔로컬 스레드, [[subagent-vs-thread-handoff]](위임을 사용자에게 보일지 모델에게만 보일지), hooks = 가드레일, heartbeat vs scheduled 자동화, App Server(ChatGPT 구독·토큰 예산), *"machine that builds the machine"* ⚠️ 당사자 진술 · 성은 설명란에만 · ko 단위 반전(300 서브에이전트 → 300명, 15시간 → 15년, 5분 → 5초)
 - [[tech-bridge-lauren-tan-pocock-podcast-full]] — [[lauren-tan|Lauren Tan]] × [[matt-pocock|Matt Pocock]] 대담 **풀버전**(1:04:03, 챕터 12, 10-03 멤버 전용 → 10-10 공개 확인): 10-03 해설 영상([[tech-bridge-lauren-tan-agent-dev-workflow]]) 발췌 6구간의 원 녹화. 2,500 PR의 메커니즘(Cursor projects 코디네이터 = 안쪽 루프, [[grokbot|GrokBot]] = 바깥 루프), *"how can my agent merge its own code?"* 를 거꾸로 푼 설계, 표본 리뷰, 다크 팩토리냐 — *"It kind of is"*, one-way door엔 *"I don't really have the answer"* ⚠️ 당사자 진술 · Contradiction 2,000 vs 2,500 PR · [[software-factory]] 입장(09-25 줄긋기 vs 수용) · ko "Pstack" → "피루스 법"
 - [[tech-bridge-human-is-async-api]] — Melanie Warrick([[temporal|Temporal]], 이름은 설명란에만) "인간은 비동기 API입니다"(18:46, 챕터 20): blocking call 대신 [[human-as-async-api|wait condition + signal]], worker를 죽여도 이벤트 replay로 재개([[durable-execution]]), Google ADK·LangGraph 데모, 사람을 부를 시점은 *틀렸을 때의 비용* ⚠️ 벤더 발표·수치 없음 · ko가 Temporal을 "시간·임시"로 약 10회 · en·ko 공유 ADK → "80K"
 - [[tech-bridge-composio-dashboard-is-dead]] — [[sarah-simionescu|Sarah Simionescu]] ([[composio|Composio]]) *"The dashboard is dead"*(10:12, 챕터 18): 대시보드·쿼리 언어 = 사람–데이터 번역 장치, [[model-context-protocol|MCP]]는 프로토콜일 뿐 → 학습 부재·도구 익사·앱 고립, Composio search(과제 → 도구 + 계획), remote workbench, *"a new species of user"* → [[agent-native-interface]] ⚠️ 당사자 진술 · 첫 데모는 목업 · 벤치마크 수치 미발화 · ko가 부정 5곳 반전
@@ -799,7 +809,7 @@ updated: 2026-10-10
 
 ## 통계
 
-- 총 페이지 수: 760 (752 → 760, + 2026-10-10 Tech Bridge 3편: source 3 + concept 2 + engineering 1 + entity 2 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 760과 일치)
+- 총 페이지 수: 770 (760 → 770, + 2026-10-11 Tech Bridge 3편: source 3 + concept 3 + entity 4 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 770과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-10 (Tech Bridge **3편** — 10-09 업로드 2편 [[tech-bridge-composio-dashboard-is-dead|Composio 대시보드의 종말]] · [[tech-bridge-human-is-async-api|Temporal 인간은 비동기 API]] + 멤버 전용 → 공개 전환 1편 [[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan 대담 풀버전]](`5tdMgKkX5dU`). 신규 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 건너뜀, `J1BGMIWTJ1U` · `RVnSsolR3uE` 여전히 멤버 전용)
-- 직전 ingest: 2026-10-09 (Tech Bridge **15편** — 10-03~10-08 업로드분, OAuth 만료로 밀린 5일분을 한 번에. 그중 4편(`wrii8VocfZU` · `8DRjkp_X8yY` · `_0zB1Qj-xoE` · `PACIHCnvNMo`)은 멤버 전용에서 공개 전환, 여전히 멤버 전용인 3편(`5tdMgKkX5dU` · `J1BGMIWTJ1U` · `RVnSsolR3uE`) 건너뜀. 축은 **검증 병목의 여러 답**([[tech-bridge-pocock-pr-bottleneck|Pocock]] · [[tech-bridge-prompt-to-production|증거]] · [[tech-bridge-agentcraft-strategy-game|주의]] · [[tech-bridge-sourcegraph-codebase-visibility|가시성]])과 **결정론 골격**([[tech-bridge-uber-debug-assist|Uber]] · [[tech-bridge-goodbye-slop-state-machines|상태 머신]] · [[tech-bridge-rails-harness-engineering|Rails]]))
+- 마지막 ingest: 2026-10-11 (Tech Bridge **3편** — 10-10 업로드 1편 [[tech-bridge-tessl-harness-engineering-factory|Tessl 하네스 엔지니어링 → 소프트웨어 팩토리]](`sAu_4QuAI0w`) + 멤버 전용 → 공개 전환 2편 [[tech-bridge-brockman-start-building-before-ready|Brockman × Silicon Valley Girl]](`J1BGMIWTJ1U`) · [[tech-bridge-cooking-with-codex|Codex로 요리하기]](`RVnSsolR3uE`). 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 여전히 건너뜀)
+- 직전 ingest: 2026-10-10 (Tech Bridge **3편** — 10-09 업로드 2편 [[tech-bridge-composio-dashboard-is-dead|Composio 대시보드의 종말]] · [[tech-bridge-human-is-async-api|Temporal 인간은 비동기 API]] + 멤버 전용 → 공개 전환 1편 [[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan 대담 풀버전]](`5tdMgKkX5dU`). 신규 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 건너뜀, `J1BGMIWTJ1U` · `RVnSsolR3uE` 여전히 멤버 전용)

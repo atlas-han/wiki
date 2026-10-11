@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # OpenAI
@@ -177,3 +177,32 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - **플랫폼 입장** — *"we're going to give you all of the same tools we use"*, *"no other AI lab would do"*(24:22~24:28).
 
 > ⚠️ **Contradiction: '집중' 대 '22개 출시'.** 위 *"올해의 주제는 '집중'"*(Brockman, 09-20)·*"사이드 퀘스트가 너무 많았다"*(Altman, 09-06)와, 같은 해 DevDay의 22개 출시·오피스 도구 3종·마켓플레이스. Altman은 *"practice what we preach"*·*"AI 없이는 못 했다"* 로만 설명한다. 출시물 대부분이 ChatGPT 한 표면에 묶인다는 점이 *"단일 통합 스택"* 과 맞을 수는 있으나 **화자의 말은 아니다.**
+
+## 사장의 두 번째 목소리 — Dots 출시 직후, 내부 운영의 단면 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+[[greg-brockman|Brockman]] × Silicon Valley Girl 대담이다. 녹화는 DevDay 직후로 추정된다.
+
+### 규모 (⚠️ 자기 보고, 조건 없음)
+- *"1.2 billion weekly active users"* · *"300 million people who use chat every single week for health queries"* (01:09~01:15). 09-20 a16z 편에서는 *"거의 11억"* 이었다.
+- 내부 지표: *"if people use chat for three different use cases (…) you become a power user"* (01:22~01:31). 수치는 공개하지 않았다 → [[capability-discovery-burden]]
+
+### 내부 운영
+- **생산성 측정**: 토큰 사용과 LOC·커밋·PR의 상관을 본다. *"all these are proxy metrics"*, 블로그 글을 냈다고 한다(19:51~20:04, 제목 미발화). 다른 신호로 내부 모델 장애 때 *"I can't do my work"* 반응을 본다(20:09~20:20).
+- **토큰 리더보드**: *"We have leaderboards"* (22:07~22:09) → [[value-maxing]]
+- **부서별 사례**: 재무팀은 *"full AI AI first"* 로 장부 마감이 빨라졌다(22:19~22:32). 홍보팀은 기자 행사 좌석·식단을 *"as one person because you have Codex"* 로 처리한다(22:39~22:52). 둘 다 *"since early this year"*.
+- **무엇을 안 만드는가**: *"humans remain in control and in charge (…) the goals come from people"*, *"team humanity"* (25:34~25:50). 구체 사례는 없다.
+
+### 제품 발화
+- *"Open AI we just released dots"* (14:47~14:50) · *"It's powered by GPT-6 Astra"* (27:14~27:17) → [[openai-dots]] · [[openai-astra]]
+
+## Developer experience 팀의 워크숍 — 회사가 가르치는 Codex (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[charlie-guo|Charlie Guo]]·[[gabriel-chua|Gabriel Chua]](둘 다 *"developer experience team at OpenAI"*, 00:16~00:27)가 [[ai-engineer|AI Engineer World's Fair]] 첫날(2026-06-29 월) 2시간 워크숍을 열었다. 이 페이지의 1인칭 출처가 지금까지 경영진(Altman·Brockman)이었다면, **처음으로 실무 직원의 목소리**다. ⚠️ 당사자 진술.
+
+- 2026년 6월 시점 신규·최근 출시(발화): Sites(Enterprise·Business 프리뷰, 6월), Codex 모바일 GA, thread-to-thread handoff(2~3주 전), DigitalOcean 플러그인(지난주), GPT realtime translate(*"one of our latest models"* 06:39~06:42), Agents SDK 변경(sandbox agents · Codex as a tool · tool search · realtime agents, 08:17~08:21), Chronicle(Pro research preview).
+- 사내 문화: *"one of the things around the office that we say uh more frequently than ever now is, have you asked Codex?"*(1:02:14~1:02:20). Sites로 행사 요약·오프사이트 장소 비교를 공유한다(19:23~19:49).
+- 개방 전략: *"we have you know built a lot of the components of the Codex ecosystem to be open source because uh we really want to encourage developers to build wherever you are"*(58:48~58:58). Windows 샌드박스·에이전트 루프에 관한 엔지니어링 블로그 언급(1:01:31~1:01:36).
+- 행사 지원: 참석자에게 **Codex 크레딧 100달러 + API 크레딧 100달러**(1:06:03~1:06:06). 같은 주 OpenAI 세션: 하네스 위에 짓기·하네스 해설(Dom), 음성 에이전트(Charlie), LLM 추론(1:05:13~1:05:40).
+- 모델 표기(발화): GPT-5.1-Codex-Max(*"November 19"*, 연도 미발화), GPT-5.5, GPT-5.4 mini.
+
+→ [[codex]] · [[charlie-guo]] · [[gabriel-chua]]

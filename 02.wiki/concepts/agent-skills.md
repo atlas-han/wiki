@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory]
 created: 2026-08-31
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Agent Skills
@@ -332,3 +332,7 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 [[composio|Composio]]의 [[sarah-simionescu|Sarah Simionescu]]: 에이전트는 매 대화를 0에서 시작해 어제의 실수(Slack 링크 서식)를 오늘 반복한다 — *"And we patch this with skills. But skills is just a band-aid because agents become dumber with the more context you provide. And loading more tools, more skills takes more context."*(03:49~04:00) 그리고 데모 뒤 *"I didn't have to build a workflow or write a skill to teach it how to do this."*(05:51~05:58) — 앱 사용법(호출 순서)을 스킬로 에이전트에 싣는 대신 **도구 제공자가 과제별 계획으로 돌려준다**는 처방 → [[agent-native-interface]] · [[deferred-tool-context]].
 
 위키의 주석: 위 *"벤더가 자사 플랫폼 지식을 스킬로 유통한다"* 절과 같은 문제(앱 사용법을 누가 에이전트에게 주나)에 **다른 전달 경로**를 고른 것이다 — 스킬(상시 설명 + 본문 로드) 대 런타임 반환. ⚠️ 벤더 발언이고 *"dumber with the more context"* 의 측정은 없다([[context-rot]] 참조). ko는 *skills* 를 일반명사 **"기술"** 로 옮겨(03:49~03:51) 이 반론이 ko만으로는 보이지 않는다.
+
+## 스킬 레지스트리 = control plane의 셋째 요소 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[dru-knox|Dru Knox]]([[tessl|Tessl]])는 소프트웨어 팩토리의 control plane에 *"some way to uh standardize and distribute workflows, playbooks (…) Typically, that ends up being something like a skills registry or a shared GitHub repo where you push skills that improve agent quality."*(12:24~12:38)를 넣는다. 자사 레지스트리는 *"built-in governance things like security reviews, quality reviews, controls for who can publish and update what"*(16:41~16:50)를 단다(⚠️ 당사자 진술) — [[tech-bridge-ai-native-skills]]의 registry 논의와 같은 방향. 그리고 스킬은 meta loop의 **수정 대상**이다: 에이전트 실수를 보면 *"Let's update a skill"*(14:56~15:05). 요약 루프: *"find an improvement, take a workflow, turn it into a skill, ship it to everyone"*(19:15~19:23).

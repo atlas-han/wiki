@@ -5,9 +5,9 @@ category: pattern
 tags: [adoption, ux, proactivity, onboarding, chatgpt, retention]
 related: [proactive-idea-feed, agent-org-adoption, agent-trust-curve, learning-curve-as-feature, personal-superintelligence, fuzzy-intent-discovery]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-brockman-start-building-before-ready]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-11
 ---
 
 # 역량 발견의 부담
@@ -46,9 +46,17 @@ updated: 2026-09-20
 
 해법 쪽으로는 [[fuzzy-intent-discovery]]와 방향이 같다 — 사용자가 정확한 요청을 만들어 오게 하는 대신 **시스템이 먼저 제시**한다. 다만 그쪽은 한 세션 안의 문제이고 여기서는 **제품 생애 전체**다.
 
+## 같은 화자의 두 번째 진단 — "세 가지 용도"의 벽 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+> *"if people use chat for three different use cases, so three different things that you really chat could do for you, you become a power user. You become you retain, you keep using chat, and you want to use it more. But getting to those three use cases, it's such a hard challenge."* (01:22~01:37)
+
+09-20의 *"써봤다가 떠난 15억"* 이 **결과**였다면, 이번에는 **경계선**이 나온다. 세 가지 용도를 넘으면 남는다는 것이다. 처방도 같다. AI가 *"Actually, I could do even more (…) I can make a whole presentation, a spreadsheet"* (01:59~02:04)라고 먼저 말해야 한다. 이번에는 그것이 **출시된 제품([[openai-dots|Dots]])의 실례**로 제시된다(02:21~02:45). 사용자 쪽 처방도 하나 추가된다. *"what's a slightly more ambitious thing I can ask my AI to do than it's done for me to date"* (04:51~04:57), 그리고 *"This white page problem"* 에는 *"start small (…) Type something random, push enter"* (23:54~24:06)로 답한다.
+
+⚠️ *"three use cases"* 경계의 수치·측정 기간·정의는 공개되지 않았다.
+
 ## ⚠️ 유보
 
-- **수치 전부 자기 보고**(11억 WAU · 15억 이탈 · 미국 1억).
+- **수치 전부 자기 보고**(11억 WAU · 15억 이탈 · 미국 1억) · 1.2B WAU · "세 가지 용도 → 파워 유저"(10-11).
 - **어떻게 할 것인가가 없다.** *"AI가 말해야 한다"* 뿐이고 메커니즘·제품 계획이 없다.
 - **이탈 원인 분석이 없다** — 화자는 *역량을 몰라서* 로 단정하지만 다른 원인(가격·신뢰·필요 없음)을 검토하지 않는다.
 

@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-10
+updated: 2026-10-11
 sources: []
 ---
 
@@ -223,6 +223,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ① [[tech-bridge-composio-dashboard-is-dead|Composio 편]]([[sarah-simionescu|Sarah Simionescu]]) — MCP는 "문"일 뿐 지도·기억이 없다는 진단에서 **에이전트 전용 인터페이스**([[agent-native-interface]])가 섰다. 도구 과부하에 대한 또 하나의 메커니즘(제공자가 도구 + 사용 계획을 반환 → [[deferred-tool-context]])이 붙고, *"skills is just a band-aid"* 가 [[agent-skills]]에 반론으로 들어왔다. Brockman의 *사람 화면으로 가는 컴퓨터 사용* 과 정면으로 갈린다. ⚠️ 벤더, 목업 데모, 수치 없는 벤치마크.
   ② [[tech-bridge-human-is-async-api|Temporal 편]] — 위키에 **durable execution**이 처음 들어왔다([[durable-execution]]): 에이전트 루프는 workflow, LLM·도구 호출은 activity, 사람 승인은 wait condition + signal로 받아 worker가 죽어도 replay로 잇는다([[human-as-async-api]]). 사람을 언제 부를지는 [[risk-proportional-human-review]]의 *틀렸을 때의 비용* 에 alert fatigue가 맞서고, [[no-silent-write]]가 열어 둔 *승인 피로* 에 이름이 붙었다(수치는 여전히 없음). ⚠️ Temporal의 "workflow"·"결정론"은 [[workflow-vs-agent]]의 뜻과 다르다.
   ③ [[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan × Matt Pocock 대담 풀버전]](멤버 전용 → 공개) — 10-03 해설 영상이 발췌했던 원 녹화. 해설의 2차 요약(코디네이터·패턴 버퍼·토큰·one-way door)이 발화로 확인되고, 09-25 발표에서 줄을 그었던 [[software-factory|다크 팩토리]]를 *"It kind of is"* 로 받아들인다(⚠️ Contradiction, Kent Beck의 *"always goes off the rails"* 와도 대립). *"검증 가능성이 one-way door를 two-way로 바꾼다"* 는 [[action-reversibility]]에 붙었지만 본인도 *"I don't really have the answer"*. ⚠️ 당사자 진술.
+- *2026-10-11*: [[tech-bridge]] **3편** ingest(10-10 업로드 1편 + 멤버 전용 → 공개 전환 2편). 축은 **팩토리와 루프를 짓는 쪽의 목소리** — 벤더(Tessl)·모델 공급자 사장(Brockman)·하네스 제작사 직원(OpenAI DevEx)이다.
+  ① [[tech-bridge-tessl-harness-engineering-factory|Tessl 편]]([[dru-knox|Dru Knox]]) — [[software-factory]]에 **세 번째 벤더 정의**(산출물 전부를 에이전트가 + autonomy → automation → quality의 순서)가 붙고, [[harness-engineering]]이 단일 세션의 래퍼에서 **팩토리의 루프를 짓는 일**(*"loop engineering"*)로 넓어졌다 → [[inner-outer-meta-loops]]. 보상은 속도가 아니라 품질이라는 주장은 Kent Beck의 *"always goes off the rails"* 와 갈린다(⚠️ 둘 다 측정 없음, 벤더).
+  ② [[tech-bridge-brockman-start-building-before-ready|Brockman 두 번째 대담]](Silicon Valley Girl, 멤버 전용 → 공개) — 같은 사장이 보안·AGI 대신 **소상공인·창업자 조언**을 한다. 병목은 모델이 아니라 야심과 "무엇을 시킬지"이고([[capability-discovery-burden]]에 *세 가지 용도 → 파워 유저* 경계), 제품은 모델 한계를 우회하지 말고 모델과 함께 커지는 자리에 서라고 한다([[model-scaling-durability]], ⚠️ [[harness-engineering]]과 긴장). 토큰맥싱을 *주 목표는 아니지만 좋은 대리 지표* 로 놓고 리더보드를 운영하며([[value-maxing]]), Dots를 *"powered by GPT-6 Astra"* 라 불러 [[openai-astra]]의 명명 질문에 첫 단서를 준다. ⚠️ 당사자 진술, 수치 전부 조건 없음.
+  ③ [[tech-bridge-cooking-with-codex|OpenAI의 Codex 워크숍]]([[charlie-guo|Charlie Guo]] · [[gabriel-chua|Gabriel Chua]], 2026-06-29 녹화) — 이 위키 첫 **하네스 제작사 직원의 사용법**. Karpathy식 *검증 가능한 목표*가 제품 기능 `/goal` 이 되고(약한 기준 = *"monkey's paw"*), 자동화는 **스레드 안 heartbeat**와 **새 스레드 예약**으로 나뉘며, 위임은 **누구에게 보일지**로 고른다([[subagent-vs-thread-handoff]]). 훅은 자율이 길어질수록의 가드레일, App Server는 사용자의 ChatGPT 구독으로 제3자 제품을 돌리는 길. 결론은 *"build the machine that builds the machine"* — software factory의 네 번째 화자(Factory·Warp·Tessl 다음). ⚠️ 당사자 진술, Bakaus 관찰(서브에이전트는 명시 요청 필요)과 충돌.
 
 ---
 

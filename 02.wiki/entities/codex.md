@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready]
 links:
   - https://openai.com/index/nextdoor/
 created: 2026-06-27
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Codex
@@ -100,3 +100,29 @@ updated: 2026-10-09
 - 예전엔 *"a little side project for myself like I used to do with Codeex"*(26:51~26:53) — 이제는 Dots로 실제 출시물을 내고 싶다.
 - DevDay 2026: 진행자 [[dan-shipper|Dan Shipper]]의 *"Codex native apps (…) You finally did it"*, *"plug-in extensions"*(20:48~20:57). ⚠️ 무엇인지 설명 없음.
 - ⚠️ ko는 Codex를 **"코덱"** 으로 옮긴다(13:55, 14:05, 14:13).
+
+## 만든 쪽이 설명하는 제품 표면 — 2026년 6월 기준 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[openai|OpenAI]] developer experience 팀 [[charlie-guo|Charlie]]·[[gabriel-chua|Gabriel]]의 [[ai-engineer|AI Engineer World's Fair]] 워크숍(**2026-06-29 녹화**, 업로드는 10월). **이 페이지 첫 OpenAI 직원의 사용법 소스**다 — 지금까지는 CEO 1인칭과 외부 관찰이었다. ⚠️ 전부 당사자 진술, 시간 수치는 화자 서술.
+
+| 축 | 기능 (발화) |
+|---|---|
+| 컨텍스트 | **appshot**(텍스트까지 담는 앱 캡처, 07:24~07:31) · 받아쓰기 · **plugins** = 스킬 + 앱(커넥터) + MCP(10:58~11:17), 앱에 플러그인 만드는 스킬 내장(12:26~12:31) · **memories**(기본 꺼짐, 도구 쓴 대화는 저장 건너뛰기 옵션, 15:28~16:26) · **Chronicle**(Pro, research preview — 화면 맥락) · custom instructions = 홈 디렉터리 AGENTS.md(16:37~16:43) |
+| 만들기 | **Codex Remote**(ChatGPT 모바일 앱에서 노트북·원격 서버 조종, 09:10~09:21) · **Sites**(*"launched earlier in the month in June for in preview for enterprise and business plans"* 07:57~08:03) · `/code review` · 이미지 생성 |
+| 행동 | computer use(macOS에서 커서를 빼앗지 않는다, 23:29~23:43) · Chrome extension(로그인·권한 넘기기) · in-app browser(*"deeper than it has at the Chrome extension"* 26:36~26:42) · **record and replay**(04:00~04:12) |
+| 장기 작업 | **goal**(`/goal`, OpenAI skills 저장소의 *"define goal"* 스킬, 32:05~32:12) · subagents(기본 사용, `.toml`로 이름·모델 지정) · **thread-to-thread handoff**(*"released it in the last week. Two, three weeks"* 45:38~45:42) · side thread(`/side`, 일시적) · 원격 ↔ 로컬 스레드 메시지 · hooks(config.toml) · 네이티브 compaction(GPT-5.1-Codex-Max부터, 42:21~42:35) |
+| 시간 | **heartbeat** 자동화(스레드 안 타이머) · scheduled 자동화(새 스레드) · DigitalOcean 플러그인(*"released last week"* 50:50~50:52) |
+| 어디에나 | **App Server** — *"the core protocol that underpins the Codex app, the Codex CLI, uh, the Codex VS code extension"*(58:29~58:37), 사용자의 ChatGPT 구독·토큰 예산으로 제3자 제품 구동(59:12~59:20), 오픈소스(`openai/codex`) |
+
+- 시연된 장기 과제: 라이브 Q&A 사이트 15시간 30분 55초, 폼 빌더 개조 5시간, Rust 백엔드 패키지 7시간 1분 40초(29:08~31:33, 화자 서술). 트윗 사례: 서브에이전트 ~300개 세션, Tama의 `/goal` 40시간 Doom → Swift(⚠️ 출처 미발화).
+- 위 09-28 관찰(Bakaus)과의 관계: **in-app browser**는 일치. ⚠️ **Contradiction** — Bakaus는 *"서브에이전트는 사용자가 명시적으로 요청해야 쓴다"*, Charlie는 *"by default will get used out of the box"*(44:49~44:52). 시점·맥락 차이 가능 → [[subagent-vs-thread-handoff]]
+- 위 09-28 optimizer speedrun의 *"250k 컨텍스트라 compaction이 잦다"* 와 이 소스의 *"natively train the model on multiple uh context windows"*(42:28~42:35)는 충돌하지 않는다 — 잦은 compaction을 **학습으로 견딘다**는 당사자 주장.
+- ⚠️ ko는 Codex를 **"사본"·"Cortex"·"대뇌피질"·"법전"** 으로, compaction을 **"다짐"** 으로 옮긴다.
+
+→ [[verifiable-goals]] · [[scheduled-agent-automations]] · [[hook-enforced-workflow]] · [[bring-your-own-subscription]] · [[subagent-vs-thread-handoff]]
+
+## 비엔지니어 부서의 백엔드로 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+[[greg-brockman|Brockman]]이 소개한 사내 홍보팀 얼리 어답터 사례다. 기자 여러 명이 오는 행사의 좌석 배치와 식단 선호 관리를 *"as one person because you have Codex that's actually taking care of so much of the back end for you"* 로 처리했다(22:39~22:52). *"that's all been happening since early this year"* (22:54~22:55)라고 한다. 이 위키에서 Codex가 **코딩도 보안도 아닌 사무 업무**에 쓰인 1인칭 사례는 Altman의 Slack 검색(10-09)에 이어 두 번째다. ⚠️ 전언이고, 규모·빈도·도구 설정은 발화되지 않는다.
+
+같은 대담에서 Brockman은 *"I don't write software anymore. I direct an AI for it to write software"* (03:23~03:29)라고 말한다. 어느 도구를 쓰는지는 밝히지 않는다.

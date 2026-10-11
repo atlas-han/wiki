@@ -105,8 +105,11 @@ sources:
   - tech-bridge-composio-dashboard-is-dead
   - tech-bridge-human-is-async-api
   - tech-bridge-lauren-tan-pocock-podcast-full
+  - tech-bridge-tessl-harness-engineering-factory
+  - tech-bridge-brockman-start-building-before-ready
+  - tech-bridge-cooking-with-codex
 created: 2026-06-03
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Tech Bridge
@@ -1054,3 +1057,33 @@ updated: 2026-10-10
 - **공개 전환 — 이번 회차에 위에서 ingest:** `5tdMgKkX5dU`([[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan 대담 풀버전]], `upload_date` 20261009).
 - **여전히 `subscriber_only` — ingest하지 않음:** `J1BGMIWTJ1U`(10-05 업로드, 그렉 브록만) · `RVnSsolR3uE`(10-06, Codex로 요리하기).
 - **신규 `subscriber_only`:** `zAglgqN5Lhw`(10-09 업로드, *데미스 하사비스가 말하는 AI 혁명, AI의 미래와 인간의 창의성 | Hannah Fry*, 39:41). 공개 전환 시 그날 ingest.
+
+## 2026-10-10 업로드 — Dru Knox (Tessl), 하네스 엔지니어링으로 소프트웨어 팩토리 만들기 (2026-10-11 ingest)
+
+[[tech-bridge-tessl-harness-engineering-factory|하네스 엔지니어링: 코딩 에이전트로 '소프트웨어 팩토리'를 만드는 방법]](`sAu_4QuAI0w`, 19:53, 공식 챕터 16) — [[dru-knox]] · [[tessl]] ([[inner-outer-meta-loops]] · [[harness-engineering]] · [[software-factory]] · [[factory-engineering]])
+
+- Tessl 사람이 직접 말하는 첫 소스. 소프트웨어 팩토리 = 산출물 전부를 에이전트가, 기둥 순서 autonomy → automation → quality, 보상은 품질. 하네스 엔지니어링 = 팩토리의 루프(inner·outer·meta)를 짓는 일, 세 레이어(control plane · "agent it" · improvement loops), 지표(manual takeovers ↓ · human PR comments ↓ · 무인 시작 PR ↑).
+- ⚠️ 당사자 진술 — 후반 4분 자사 제품, 수치는 가상·미발화. 이름은 발화("Drew Knox"), 철자 Dru는 설명란. 행사명 미발화(ai.engineer 링크 → 추정). en-orig 01:49~02:11 공백.
+- **⚠️ ko** — harness engineering → "환경공학", PR → "홍보", Tessl → "테슬라", workflows → "현금 흐름", improvement loops → "생리 주기"; autonomy/automation 구분 붕괴(03:34), backlog → "귀걸이".
+
+## 2026-10-05 업로드 → 10-11 공개 확인 — Greg Brockman × Silicon Valley Girl (2026-10-11 ingest)
+
+[[tech-bridge-brockman-start-building-before-ready|준비되기 전에 AI로 만들기 시작하세요 | OpenAI 공동창업자 그렉 브록만]](`J1BGMIWTJ1U`, 29:22, 공식 챕터 20) — [[greg-brockman]] · [[openai]] ([[model-scaling-durability]] · [[capability-discovery-burden]] · [[value-maxing]] · [[openai-dots]] · [[openai-astra]])
+
+- 10-09 회차까지 멤버 전용 → 이번 회차 `public`(`upload_date` 20261010, 공개 전환 쪽 값). Brockman의 **두 번째 소스**이고, 같은 진행자(Silicon Valley Girl)의 소스로는 [[tech-bridge-andrew-ng-ai-opportunity|Andrew Ng 편]]에 이어 두 번째다. 진행자 이름은 두 편 모두 설명란에만 있다.
+- 소상공인·창업·개인 생산성 실용 조언: 야심의 천장, 시계 가게, 창업의 대전성기, 모델과 함께 커지는 제품, 모닝 브리핑 4단계, 다섯 번이면 자동화, *"powered by GPT-6 Astra"*.
+- ⚠️ 당사자 진술, 수치 전부 조건 없음. 제목의 "준비되기 전에"는 채널의 편집 문구다.
+- **⚠️ ko**: 제품명 Dots가 "점들"로 사라지고, 단위 둘이 바뀐다(작업 40시간 → "40시간 분량", 다섯 번 → "5배"). *"white page"* → "백서", *"team humanity"* → "팀워크".
+
+## 2026-10-06 업로드 → 10-11 공개 확인 — Charlie Guo · Gabriel Chua (OpenAI), Codex로 요리하기 (2026-10-11 ingest)
+
+[[tech-bridge-cooking-with-codex|Codex로 요리하기 — OpenAI의 Charlie Guo와 Gabriel Chua]](`RVnSsolR3uE`, 1:07:05, 공식 챕터 20 · 설명란 타임라인 22) — [[charlie-guo]] · [[gabriel-chua]] · [[openai]] · [[codex]] ([[subagent-vs-thread-handoff]] · [[verifiable-goals]] · [[scheduled-agent-automations]] · [[hook-enforced-workflow]] · [[bring-your-own-subscription]] · [[software-factory]])
+
+- 10-06 업로드로 처음 보였고 10-09 `subscriber_only` 확인 → 10-11 `public`(`upload_date` 20261010 = 공개 전환 값). [[ai-engineer|AI Engineer World's Fair]] 첫날 **2026-06-29(월) 9시** 2시간 워크숍의 앞 1시간 — 실습은 영상에 없다.
+- 이 채널 첫 **OpenAI 실무 직원의 Codex 사용법**: 여섯 단계, `/goal` + goals.md + 목표 감사, 원격↔로컬 스레드, 서브에이전트 vs 스레드 핸드오프, hooks, heartbeat 자동화, App Server(Retrodex).
+- ⚠️ 당사자 진술, 성은 제목·설명란에만. **⚠️ ko** — 단위 반전 셋(300 서브에이전트 → 300명, 15시간 → 15년, 5분 → 5초), whitelist → "백인들이 승인한", Codex → "사본·Cortex·대뇌피질".
+
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-11 확인)
+
+- **공개 전환 — 이번 회차에 위에서 ingest:** `J1BGMIWTJ1U`([[tech-bridge-brockman-start-building-before-ready|Greg Brockman × Silicon Valley Girl]], `upload_date` 20261010) · `RVnSsolR3uE`([[tech-bridge-cooking-with-codex|Codex로 요리하기]], `upload_date` 20261010). 두 편 모두 공개 시점으로 `upload_date`가 다시 잡혔다.
+- **여전히 `subscriber_only` — ingest하지 않음:** `zAglgqN5Lhw`(10-09 업로드, *데미스 하사비스가 말하는 AI 혁명, AI의 미래와 인간의 창의성 | Hannah Fry*) — 이번 회차 목록 조회에서 stderr ERROR(멤버 전용). 공개 전환 시 그날 ingest.

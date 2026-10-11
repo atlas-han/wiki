@@ -6,9 +6,9 @@ tags: [agent-native-interface, mcp, tool-design, dashboards, agents-as-users, co
 aliases: [에이전트용 인터페이스, interface designed for agents, 에이전트를 위한 인터페이스, new species of user]
 related: [model-context-protocol, agent-tool-design-practices, deferred-tool-context, toolbox-pattern, knowledge-work-agent-gap, llm-as-search-user, model-rendered-interface, agentic-sites, retrieval-side-context-compression, push-vs-pull-context-retrieval, file-system-agent]
 first-seen: tech-bridge-composio-dashboard-is-dead
-sources: [tech-bridge-composio-dashboard-is-dead]
+sources: [tech-bridge-composio-dashboard-is-dead, tech-bridge-cooking-with-codex]
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # 에이전트 네이티브 인터페이스 (Agent-Native Interface)
@@ -56,6 +56,12 @@ updated: 2026-10-10
 - **계획을 누가 만드나** — 도구 제공자가 돌려주는 *"plan of how to use them"* 이 사람이 쓴 레시피인지, LLM 생성인지, 사용 로그에서 증류한 것인지. 이것이 화자의 이유 1(*"Agents don't learn"*)에 대한 답이라면 **학습이 에이전트가 아니라 제공자 쪽에 쌓이는** 구조다(위키의 독해).
 - **보안·권한** — 앱 여러 개를 *"unified"* 한 층으로 묶으면 그 층이 [[lethal-trifecta]]의 교차점이 된다. 발표는 다루지 않는다(같은 회사의 [[agent-governance-layers]]가 다른 발표에서 다룬다).
 - **사람이 다시 봐야 할 때** — 대시보드가 사라지면 에이전트의 답을 검증할 사람의 창은 무엇인가. 화자의 일화(로그아웃된 Datadog 앞에서 얼어붙음)는 바로 그 비용의 예이기도 하다.
+
+## 세 번째 입장 — 목적지가 아니라 폴백 순서 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+위 Brockman(컴퓨터 사용) vs Simionescu(에이전트 전용 층) 대립에, [[openai|OpenAI]]의 [[charlie-guo|Charlie Guo]]는 [[codex|Codex]]의 세 제어 표면을 **용도별로** 나눈다(26:05~28:15): in-app browser는 로컬 웹앱의 깊은 테스트, **computer use**는 *"applications that otherwise don't have a programmatic interface"*(27:09~27:13) — *"it's great if it's a web app and you can reverse engineer the API calls, but (…) there's a lot of legacy software out there which doesn't easily expose that kind of interface to an agent"*(27:13~27:24), **Chrome extension**은 로그인 상태·권한을 넘길 때(27:43~27:48). [[gabriel-chua|Gabriel Chua]]의 데모 동기도 같다 — *"not everything had an API"*(21:31~21:33).
+
+→ 위키의 독해: 프로그래매틱 인터페이스가 있으면 그것, 없으면 사람 화면. **에이전트 네이티브 인터페이스가 있는 곳에선 그것이 우선**이라는 점에서 Simionescu 쪽과 양립하고, 없는 곳의 폴백으로 컴퓨터 사용을 둔다는 점에서 Brockman 쪽과 양립한다. ⚠️ 하네스 제작사의 진술 — 컴퓨터 사용은 자사 기능이다.
 
 ## References
 

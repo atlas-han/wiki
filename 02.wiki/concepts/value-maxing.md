@@ -6,9 +6,9 @@ tags: [token-economics, metrics, value-maxing, tokenmaxxing, goodhart, roi, adop
 aliases: [밸류맥싱, valuemaxxing, value maxing, 토큰맥싱, tokenmaxxing, token maxing, 토큰 최소화]
 related: [token-minimization-trap, trusted-throughput, overspending-underusing-loop, agent-roi-measurement, true-cost-to-perfect-answer, token-roles, model-mixing-economics, context-engineering, mousepower]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-brockman-start-building-before-ready]
 created: 2026-09-24
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # 밸류맥싱 (Value Maxing)
@@ -92,3 +92,11 @@ updated: 2026-10-09
 [[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 발표는 토큰 **최소화**를 같은 이유로 거부한다: 사용 제한은 *"you have an hour battery and you can only charge once (…) a day"*(01:36~01:42), *"We at Kimchi think this is wrong. Our jobs as manager is to do the opposite is to ensure that we want to make the tokens unlimited and inexpensive."*(01:45~02:04) — [[token-minimization-trap]]의 벤더판.
 
 > ⚠️ **Contradiction: 처방이 갈린다.** 이 페이지는 토큰맥싱·토큰 최소화가 **둘 다** 토큰을 주 지표로 삼는다고 보고 *결과를 측정하라*고 한다. Kimchi는 *토큰 단가를 내려 무제한을 지속 가능하게 하라*고 하고, 성과를 **토큰 증가 대비 비용 감소**(토큰 1.5배↑·비용 1.5배↓)로 보고한다 — 결과 지표는 차트의 *"same outcome"*(05:04) 한 마디뿐이다. 위키의 독해: 단가 최적화는 토큰맥싱을 **싸게** 만들 뿐 결과 측정을 대신하지 않는다. 다만 Kimchi가 모델 선택 기준으로 **작업당 비용 + 산출물 점수**를 쓴다는 점은 *토큰이 아니라 결과* 쪽으로 한 발 옮긴 것이다.
+
+## 프론티어 랩 내부의 입장 — "주 목표는 아니지만 좋은 대리 지표" (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+> *"there was this era of token maxing, right? Where it's just like people are just blindly saying[=throwing] more tokens at it, which is clearly not a primary objective. But it is a good proxy metric. If you're not trying to optimize tokens, you're probably going to then see improved productivity correlated with increased number of tokens. And we really do see it. We have leaderboards"* (21:52~22:09) · [[greg-brockman]]
+
+IBM 해설의 첫 국면(토큰맥싱 → 대시보드가 곧 조작된다)을 **알면서 유지하는 쪽**이다. 조건은 *토큰을 최적화 대상으로 삼지 않을 때만* 이다. 굿하트 경고를 받아들이면서 **리더보드는 운영한다.** 처방의 무게는 양이 아니라 겨냥에 있다. *"the people who really point compute at the right problem (…) and then are willing to push the that token budget high, we're really seeing this like sort of outsized impact"* (23:30~23:45). ⚠️ 모델을 파는 회사의 사장이 말한 것이고, 리더보드의 지표와 사용 방식은 미공개다. 앞의 "우리는 토큰맥서가 아니다"(Conductor)와 "토큰을 무제한으로"(Kimchi) 사이, **대리 지표로서의 토큰맥싱**이라는 세 번째 자리다.
+
+⚠️ ASR *"saying three or more tokens"* 를 *"throwing more tokens"* 로 판독했다. ko는 이를 **"토큰 세 개 이상"** 으로 옮겼다.

@@ -3,11 +3,11 @@ title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex]
 created: 2026-10-02
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -16,7 +16,7 @@ updated: 2026-10-10
 
 > *"I would define the software factory as the whole loop the whole life cycle of developing software with autonomy which doesn't mean just coding and generating code by that I mean collecting all the signals reacting to user feedback to logs prioritizing what's important then orchestrating it all executing validating doing really good uh testing in production and then iterating on all this uh while also continuously improving in the process"* (00:47~01:18)
 
-> ⚠️ **정의의 출처가 하나, 그것도 벤더다.** 화자는 "software factory"를 제품 이름 겸 범주로 파는 회사 소속이다. 용어 자체는 그보다 넓게 쓰인다(*"everyone is talking about software factory but only few people are actually building one"* 00:05~00:13). 이 페이지의 구조·수치는 **Factory의 정의**이고, 다른 화자가 같은 말을 다르게 쓰면 아래에 추가한다. → 두 번째 벤더 정의는 아래 **"두 번째 정의 — Warp"** 섹션([[tech-bridge-warp-factory-engineering]]).
+> ⚠️ **정의의 출처가 하나, 그것도 벤더다.** 화자는 "software factory"를 제품 이름 겸 범주로 파는 회사 소속이다. 용어 자체는 그보다 넓게 쓰인다(*"everyone is talking about software factory but only few people are actually building one"* 00:05~00:13). 이 페이지의 구조·수치는 **Factory의 정의**이고, 다른 화자가 같은 말을 다르게 쓰면 아래에 추가한다. → 두 번째 벤더 정의는 아래 **"두 번째 정의 — Warp"** 섹션([[tech-bridge-warp-factory-engineering]]), 세 번째 벤더 정의는 아래 **"세 번째 정의 — Tessl"** 섹션([[tech-bridge-tessl-harness-engineering-factory]]).
 
 ## 아닌 것으로 정의하기
 
@@ -179,6 +179,8 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 - [[tech-bridge-kent-beck-craft-augmented-development]] — 반론 2(Kent Beck, 다크 팩토리)
 - [[tech-bridge-agentcraft-strategy-game]] — 좁은 용법(Ido Salomon, AgentCraft)
 - [[tech-bridge-lauren-tan-pocock-podcast-full]] — 다크 팩토리 수용(Lauren Tan, *"It kind of is"*)
+- [[tech-bridge-tessl-harness-engineering-factory]] — 세 번째 벤더 정의(Dru Knox, Tessl) · [[tessl]] · [[dru-knox]] · [[inner-outer-meta-loops]]
+- [[tech-bridge-cooking-with-codex]] — 하네스 제작사의 목표, "기계를 만드는 기계"(Charlie Guo, OpenAI) · [[charlie-guo]]
 
 ## 다크 팩토리 수용 — "It kind of is" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
 
@@ -189,3 +191,36 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 - **진행자의 구분**: 다크 팩토리를 Karpathy의 원래 *vibe coding*(코드가 거의 존재하지 않는 것)으로 읽으면 Lauren의 방식은 반대 — 코드와 환경이 본질(53:45~54:05). Lauren: *"maybe there's a dimmer switch"*(54:11~54:15).
 
 > ⚠️ **Contradiction: 위 "반론 2"(Kent Beck)와.** Beck은 *"no human involved There's no feedback. And that always goes off the rails. Always."* Lauren은 다크 팩토리를 **받아들이고 잘 잔다**(*"I'm sleeping so much better now"* 53:10~53:12). 다만 Lauren의 구조엔 **verifier 에이전트 + 아침의 사람 사후 리뷰 + 환경 교정**이라는 피드백이 있다 — Beck이 겨눈 *"no feedback"* 이 아니다. 둘 다 측정은 없다. 그리고 Lauren 스스로 *"it's very hard to get to this point"*(50:15~50:18), 첫날은 *"very scary"*(53:18~53:20)였다고 한다.
+
+## 세 번째 정의 — Tessl: 산출물 기준, 세 기둥의 순서 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[tessl|Tessl]]의 [[dru-knox|Dru Knox]]: *"a software factory is any agentic system where all of the end product of what you're building and shipping to users is created by agents and your software engineering teams effectively focus on building the factory."*(02:11~02:27) — *"everyone on your team effectively becomes internal tool builders"*(02:38~02:43). ⚠️ en-orig 01:49~02:11이 비어 있어, `en`·ko에만 있는 *"엄격한 정의는 없다"* 는 서두는 인용하지 않는다.
+
+**세 기둥 — 순서가 있다**(02:47~04:20):
+
+| 기둥 | 정의 | 루프 |
+|---|---|---|
+| autonomy | *"how much human intervention do you need to get to the right answer"*(03:00~03:04) | inner |
+| automation | *"how much can you let them run (…) How much do you need to review or build trust in the solution before you accept it?"*(03:21~03:27) | outer |
+| quality | *"how good is the product that you're actually producing for your users?"*(03:58~04:01) | meta |
+
+*"You can have high autonomy (…) but low automation because you don't trust it yet."*(03:30~03:41) → *"improving autonomy, then improving automation, all while keeping quality constant."*(04:11~04:20) → [[inner-outer-meta-loops]] · [[agent-trust-curve]]
+
+**보상은 속도가 아니라 품질**: 속도는 *"a very shortterm phenomenon"*(04:43~04:49), *"the idea of a backlog kind of goes away"* → 테스트 품질·아키텍처 리팩터링에 쓸 여력(05:06~05:18). 지표: manual takeovers ↓ · human PR comments ↓ · 사람 입력 없이 시작된 PR ↑ · 품질 유지 후 ↑(19:26~19:50).
+
+| | Factory (Tížková) | Warp (Lloyd) | Pocock | **Tessl (Knox)** |
+|---|---|---|---|---|
+| 정의의 축 | 생애주기 전체의 자율 루프 | SDLC 그 자체를 짓는 일 | 가속기 vs 브레이크 | **산출물 전부를 에이전트가 + 기둥의 순서** |
+| 품질은 어디서 | validators | 리뷰(리스크 관리) | 브레이크 세 겹 | **백로그 소멸로 생긴 여력 + meta loop** |
+| 사람의 자리 | 무엇을(what) | 루프의 고정 칸·taste | one-way door 리뷰 | PR 코멘트·수동 인수 — **줄여야 할 지표** |
+
+> ⚠️ **Contradiction: 위 "반론 2"(Kent Beck)와.** Knox: *"ultimately we think you can raise quality once you have a factory"*(04:22~04:29). Beck: 다크 팩토리는 *"always goes off the rails"*. 다만 Knox의 지표는 사람 코멘트·수동 인수를 **세는** 구조라 Beck이 겨눈 *"no feedback"* 상태가 아니다. 둘 다 측정 없음, Knox는 팩토리 인프라 벤더(⚠️ 당사자 진술). Pocock과는 품질의 원천(브레이크 vs 여력)이 갈린다.
+
+## 하네스 제작사의 목표로 — "기계를 만드는 기계" (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[openai|OpenAI]]의 [[charlie-guo|Charlie Guo]]가 [[codex|Codex]] 워크숍을 이 말로 맺는다: *"how do we figure out how to build the machine that builds the machine right I think like it is one thing to sit with a coding agent and build a single piece of software is another thing to start zooming out and say actually I want to build a software factory right I want to build a system that um that then builds individual pieces of software on an assembly line"*(1:03:53~1:04:14). 그 앞의 사다리: *"have you asked Codex?"* → 루프(*"loop maxing"*) → 무엇이 막았나(맥락·권한) → 하나에서 여럿으로 → *"why does this process need a human at all"*(1:02:12~1:03:23).
+
+- 데모로 보인 조각: Slack 피드백을 30분마다 분류 → 버그·기능 요청은 worktree 스레드에서 PR → 리뷰어 독촉, *"imagine then you wake up and this is a bit like that software factory where all the PRs are ready"*(54:40~54:45).
+- Factory(신호 → 검증 → 학습의 루프)·Warp(SDLC 그 자체)·Tessl(위 세 번째 정의)에 이은 **네 번째 화자, 이번엔 범용 하네스 제작사.** 정의를 따로 주지 않고 **조립 라인 은유**만 쓴다.
+- 사람의 자리: *"we do still want humans in the loop like where they need to be"*(1:03:44~1:03:48) — Kent Beck의 *"다크 팩토리는 언제나 탈선한다"* 와 Lauren Tan의 *"It kind of is"* 사이에서 **"필요한 곳에만"** 으로 선다(위키의 독해).
+- ⚠️ 당사자 진술. ko는 PR을 **"홍보"**(54:42, 54:56)로 옮긴다.

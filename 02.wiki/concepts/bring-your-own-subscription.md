@@ -6,9 +6,9 @@ tags: [platform, subscription, pricing, app-developer, token-economics, openai, 
 aliases: [BYO subscription, bring your own subscription, 구독 연동, 구독 이동]
 related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # 구독을 들고 다니기
@@ -37,6 +37,15 @@ Altman은 이를 플랫폼 철학 안에 놓는다 — *"let people build apps i
 
 - **플랫폼 잠금(lock-in)과의 관계**를 아무도 말하지 않는다 — *"구독을 어디든"* 은 동시에 *ChatGPT 구독이 앱 결제의 기본 단위*가 된다는 뜻일 수 있다(위키의 독해).
 - 앱 개발자의 수익 배분, 구독 등급별 한도 — 없음.
+
+## 메커니즘의 이름 하나 — Codex App Server (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+위 ⚠️ *"메커니즘이 없다"* 에 대한 부분적 단서. [[charlie-guo|Charlie Guo]]([[openai|OpenAI]], **2026-06-29 녹화** — DevDay 대담보다 앞선 시점): App Server로 [[codex|Codex]]를 제품에 넣으면 *"it brings the ability for your users to uh use their chat GBT subscription and perhaps more importantly use their Chat GBT token budget uh to power the products that you're building."*(59:07~59:20) App Server는 *"the core protocol that underpins the Codex app, the Codex CLI, uh, the Codex VS code extension"*(58:29~58:37), 오픈소스.
+
+- 즉 적어도 **Codex 하네스를 임베드하는 경로**에선 구독 토큰을 들고 오는 길이 6월에 이미 있었다. DevDay에서 말한 *"앱 개발자에게 구독을 가져가기"* 가 같은 메커니즘인지는 **두 소스 모두 말하지 않는다.**
+- 빠지는 것: *"the ones that need to live on your computer like computer use are, you know, not going to be there"*(59:26~59:31).
+
+> ⚠️ ko는 App Server를 **"섬기는 사람"**(59:05, 59:35), open source를 **"영업 중"**(1:01:09)으로 옮긴다.
 
 ## References
 

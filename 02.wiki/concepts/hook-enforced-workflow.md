@@ -5,9 +5,9 @@ category: pattern
 tags: [hooks, harness, enforcement, agent-skills]
 related: [agent-skills, agent-harness-design, hard-vs-soft-enforcement, self-harness, no-silent-write, deny-and-continue]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering, tech-bridge-cooking-with-codex]
 created: 2026-09-15
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Hook-Enforced Workflow
@@ -65,3 +65,12 @@ updated: 2026-10-09
 | **새 파일 쓰기** | 파일을 새로 쓰려 할 때 | Ruby 스크립트가 `db/migrate` 쓰기를 차단하고 거부 사유 *"Instead of writing here, I want you to run the generator."* (14:17~14:45) |
 
 두 번째 훅이 이 페이지에 새로 더하는 것은 **거부 사유의 설계**다 — *"agents have a goal. (…) you block them, they're going to try to find a way to hack around it. (…) by giving it an error message and making its easy path the right thing to do"*(14:48~15:02). *막는 것* 만으로는 우회를 부르고, **옳은 대안을 쉬운 길로 제시**해야 한다. → [[deny-and-continue]] · [[reward-hacking]]. 화자는 훅 문법이 하네스마다 다르고 자주 바뀐다며 *"the idea"* 를 강조한다(11:05~11:14).
+
+## 하네스 제작사의 권고 — 자율이 길수록 훅이 가드레일 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[codex|Codex]]의 hooks: *"in your config.toml file uh in your codeex home directory"*(47:44~47:49), *"deterministic behavior at specific checkpoints"*(47:50~47:55). [[charlie-guo|Charlie Guo]]가 든 용도(48:00~48:50): 대화를 로깅 엔진으로 · 입출력 스캔 · 프롬프트에 API 키가 붙었는지 · 호출할 도구가 승인 목록에 있는지 · **턴이 끝날 때 맞춤 검증**.
+
+- 이 페이지의 *"스킬은 알려 주고 훅은 선택지를 없앤다"* 와 같은 선: AGENTS.md로 린터를 시키면 *"it's really good about doing that, but if there are things that are a little bit more sophisticated (…) you can use hooks"*(48:43~48:51).
+- [[gabriel-chua|Gabriel Chua]]: 매 턴 끝 정리 스크립트 — *"some of these housekeeping that maybe you want a language model to do you can run it deterministically with a hook"*(49:42~49:48). ⭐ *"you're giving the agent more autonomy it's going to work (…) longer and longer without your supervision (…) hooks become useful in getting the guardrail."*(49:52~50:01)
+
+> ⚠️ ko: *"approved white list"* → **"백인들이 승인한"**(48:24~48:26), *"housekeeping … you want a language model to do"* → **"모델에게 맡기고 싶지 않아요"**(49:44, 부정 삽입).

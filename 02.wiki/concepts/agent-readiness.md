@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-readiness, codebase-hygiene, ai-adoption, power-law, tests, linters, documentation, reproducible-env]
 related: [codebase-gardening, software-factory, greenfield-vs-brownfield-agent-risk, executable-standards, agent-org-adoption, hard-vs-soft-enforcement, ai-slop]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends]
+sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends, tech-bridge-tessl-harness-engineering-factory]
 created: 2026-10-02
-updated: 2026-10-03
+updated: 2026-10-11
 ---
 
 # 에이전트 준비도 (Agent Readiness)
@@ -75,3 +75,14 @@ updated: 2026-10-03
 - **power law와 같은 그림을 다른 데이터로** — DX는 변경 실패율의 회사별 변동성이 AI 이후 커졌고, 그 갈림은 *"your release pipeline, your automated testing"*(05:29~05:33)에서 온다고 본다: *"The pattern remains the same. the amplitude has changed as a result of AI."*(05:33~05:38) → [[dora-metrics]]
 - **느린 CI가 PR을 키운다** — 빌드 45분~1시간이면 AI가 만든 함수 넷을 PR 하나에 몰아넣는다(07:28~07:46). *reliable local CI* 가 점검표에 있는 이유의 구체적 메커니즘.
 - ⚠️ 두 회사 모두 이 점검을 **파는** 쪽이다(Factory는 Agent Readiness, DX는 준비도 측정). 독립 연구는 아직 이 위키에 없다.
+
+## 다른 면 — 코드베이스 위생이 아니라 접근·권한·실행 환경 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[dru-knox|Dru Knox]]([[tessl|Tessl]])의 레이어 2(*"a massive grabag that I call agent it"* 12:39~12:45, 챕터명은 "에이전트 레디 인프라" — ⚠️ 명칭 판독 불가)는 같은 "준비" 문제를 **환경 쪽**에서 본다: 로컬 설정이 많은 프로젝트를 남에게 넘길 때 *"you realize with horror all of the dependencies that you thought were cleanly isolated and are not"*(12:49~12:55) — 에이전트에게도 같다. 항목: CLI·API 접근 · 제품을 클릭해 볼 방법(13:01~13:09) · company brain에 작업 방식 적기(13:32~13:40) · 내부 서비스 접근(거버넌스) · 프로덕션 로그(컴플라이언스) · 코드 실행 환경(13:40~13:59). ⭐ *"I promise it's worse than you think."*(13:10~13:12) 권고는 *"spend a week, spend two weeks and just get it done"*(13:27~13:30).
+
+| | Factory의 agent readiness | Knox의 레이어 2 |
+|---|---|---|
+| 대상 | 코드베이스 (테스트·린터·문서·스타일·재현 환경) | 조직 환경 (접근·권한·로그·실행 샌드박스·지식) |
+| 실패의 모습 | AI가 코드를 더 나쁘게 만든다 | 에이전트가 사람 없이 PR을 못 올린다 |
+
+두 벤더 모두 이 단계를 팩토리의 **선행 조건**으로 둔다. ⚠️ 당사자 진술.

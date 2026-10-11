@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready]
 links: []
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Astra (OpenAI)
@@ -86,7 +86,7 @@ updated: 2026-10-09
 - 아키텍처·파라미터·훈련 방법·출시일 — **이 소스도 주지 않는다.**
 - *Soul* 등급과의 관계 — **언급 없음.**
 - *"24시간 일관성"*·*"P0 포화"*·*"계단 함수"* 의 **측정 조건** — 전부 자기 보고.
-- Astra ↔ GPT-6 명명 관계.
+- Astra ↔ GPT-6 명명 관계. → 2026-10-11 단서 1건: *"GPT-6 Astra"* ([[tech-bridge-brockman-start-building-before-ready]] 27:16, ASR 단일 발화)
 
 → [[greg-brockman]] · [[tech-bridge-brockman-agi-era-defender-window]] · [[jagged-capability-frontier]] · [[defense-factory]]
 
@@ -128,3 +128,16 @@ updated: 2026-10-09
 [[openai-dots|Dots]]를 가능하게 한 연구 측 조건을 묻자 [[sam-altman|Altman]]: *"This is like a very complicated system with a lot of stuff, but may maybe most important was Astra. We needed like a you needed a smart enough model (…) getting the model over the intelligence bar was a key part."* (12:01~12:15)
 
 진행자는 ultra fast와 대비해 *"the Astra is a more expensive model world"* 라 부른다(29:28~29:30) — 09-06 *"더 비싸고 큰 모델 등급"* 과 같은 위치. **Astra가 이름 붙은 출시 제품의 기반으로 언급된 첫 사례**다. ⚠️ 스펙·가격·벤치마크는 여전히 없다.
+
+## "GPT-6 Astra" — 이름이 처음 한 덩어리로 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+[[greg-brockman|Brockman]]이 [[openai-dots|Dots]]를 설명하며 이렇게 말한다.
+
+> *"dots can really it's quite sophisticated, right? It's powered by GPT-6 Astra, so it's actually got basically this incredible brain, like this smart incredible most intelligent model for any of these kinds of assistants powering it."* (27:11~27:22)
+
+**이 페이지의 미해결 항목 "Astra ↔ GPT-6 명명 관계"에 첫 단서가 생겼다.** *GPT-6 Astra* 라는 연결 표기가 나왔고, 이는 09-06 Altman의 *"더 비싸고 큰 모델 등급을 가리키는 이름"* 과 09-20 Brockman의 *"[GPT-6]이 그 이름에 값하기를 원해 왔다"* 를 함께 읽을 때 **"GPT-6 세대의 Astra 등급"** 이라는 독해와 맞는다(위키의 독해). ⚠️ 다만 단서는 **ASR 단일 발화**이고, `en` 트랙은 en-orig와 같아 독립 확인이 없다. 설명란·챕터에도 이 이름은 없다. 미해결 항목을 지우지 말고 "단서 1건"으로 갱신할 것을 권한다.
+
+같은 대담에서 나온 역량 일화(전부 체감·전언):
+- *"Astra is so good at Blender, so good at 3D modeling"* (03:40~03:45). Microsoft Paint로 스케치하는 것도 볼 수 있다(03:51~03:54).
+- 친구가 Astra로 게스트하우스 CAD 도면을 만들어 시공업자에게 넘겼다(03:58~04:07, 전언).
+- 영상 후반 작업에 *"so many good use cases of Astra"* 가 있다고 *들었다* (06:56~06:59).

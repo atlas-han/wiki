@@ -996,5 +996,15 @@
   "02.wiki/engineering/systems/durable-execution.md": "LiServer",
   "01.raw/articles/2026-10-09_인간은 비동기 API입니다 - AI 에이전트가 사람을 기다리다 멈추지 않는 법.md": "LiNewspaper",
   "01.raw/articles/2026-10-09_대시보드는 끝났습니다 - AI 에이전트가 소프트웨어를 쓰는 법.md": "LiNewspaper",
-  "01.raw/articles/2026-10-09_SpaceX에서 매달 수천 개의 PR을 반영하는 방법 - Lauren Tan(poteto) 팟캐스트 풀버전.md": "LiNewspaper"
+  "01.raw/articles/2026-10-09_SpaceX에서 매달 수천 개의 PR을 반영하는 방법 - Lauren Tan(poteto) 팟캐스트 풀버전.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-tessl-harness-engineering-factory.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-brockman-start-building-before-ready.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-cooking-with-codex.md": "LiVideo",
+  "02.wiki/entities/tessl.md": "LiBuilding",
+  "02.wiki/entities/dru-knox.md": "LiUser",
+  "02.wiki/entities/charlie-guo.md": "LiUser",
+  "02.wiki/entities/gabriel-chua.md": "LiUser",
+  "02.wiki/concepts/inner-outer-meta-loops.md": "LiBookText",
+  "02.wiki/concepts/model-scaling-durability.md": "LiBookText",
+  "02.wiki/concepts/subagent-vs-thread-handoff.md": "LiBookText"
 }

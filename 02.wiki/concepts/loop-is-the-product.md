@@ -6,9 +6,9 @@ tags: [agent-loop, verifier, signal, ooda, self-improvement, auto-research, prod
 aliases: [the loop is the product, loop is the product, 루프 자체가 제품, second loop, 두 번째 루프, OODA loop]
 related: [agent-recipes, taste-encoded-evals, valued-work-per-watt, verifiable-goals, generator-evaluator-pattern, self-harness, harness-engineering, ralph-wiggum-method, agent-loop-size, linear-vs-closed-loop-harness, openclaw, automated-ai-research]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex]
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-11
 ---
 
 # 루프가 제품이다
@@ -74,6 +74,14 @@ updated: 2026-09-30
 - **"첫 루프"와 OODA 기원** — 화자 발화 그대로, 외부 확인 안 함.
 - **신호 품질을 어떻게 재는가** — 말하지 않는다. 검증기 품질의 측정도 없다.
 - 루프가 **제품**이라는 말이 무엇을 파는지(루프 자체인지, 루프의 산출물인지)는 두 번째 아이디어([[agent-recipes]])에서야 드러난다 — 화자의 답은 **레시피**다.
+
+## "loop engineering" — 이름의 이동, 그리고 meta loop (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[dru-knox|Dru Knox]]([[tessl|Tessl]]): *"Harness engineering uh as a sign of how fast terms evolve. It's also started to be called loop engineering over the last couple weeks."*(06:06~06:13) — Gavrilescu의 *RLHF → 하네스 → 루프* 계보가 **업계 용어의 변화**로 한 번 더 증언된다. Knox의 **meta loop**(에이전트 로그·PR·이슈·사용자 피드백을 관찰해 실수를 inner/outer 루프로 되먹임, 08:01~08:26)는 이 페이지의 *두 번째 루프*(첫 루프의 산출물을 보고 무엇을 바꿀지 정함)와 같은 자리다 → [[inner-outer-meta-loops]]. ⚠️ 차이: Gavrilescu는 루프 산출물을 [[agent-recipes|레시피]]에, Knox는 **스킬·플레이북**에 담는다.
+
+## "loop maxing" — 개별 턴에서 루프로 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[charlie-guo|Charlie Guo]]([[openai|OpenAI]]): *"as you evolve that workflow, right, you want to go from just asking in individual turns to building loops, right? We've all heard about loop maxing. That is the new thing. (…) like what is it that the loop needs to be checking at each turn"*(1:02:22~1:02:38). 이 페이지의 *검증기* 질문(루프가 매 턴 무엇을 확인하나)을 하네스 제작사가 사용자에게 던진다. 제품 쪽 구현은 `/goal`(성공 기준으로 매 턴 자기 평가)과 heartbeat 자동화 → [[verifiable-goals]] · [[scheduled-agent-automations]]. ⚠️ *"loop maxing"* 의 출처·정의는 발화되지 않는다.
 
 ## References
 

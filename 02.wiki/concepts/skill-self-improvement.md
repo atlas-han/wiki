@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex]
 created: 2026-09-05
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Skill Self-Improvement
@@ -139,3 +139,12 @@ updated: 2026-10-09
 ## 일곱 번째 경로 — 개선 대상이 워크플로 그래프 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
 
 [[david-khourshid|David Khourshid]]: 상태 머신을 *"a durable artifact"* 로 삼아 트레이스(실제·시뮬레이션 사용자, 도그푸딩)와 단계별·전체 eval을 붙여 에이전트에게 *"Please propose some changes to this agent."*(12:44~13:15). 개선안을 내는 쪽은 *"Not the exact same agent, but a different agent"*(16:17~16:23), 검증은 같은 시나리오를 V1·V2에 돌려 비교(16:36~16:46). 앞의 경로들이 **스킬 텍스트**를 고친다면 이 경로는 **상태·전이 그래프**를 고친다 — diff가 *"화살표"* 단위로 읽힌다(*"you cannot draw arrows in paragraphs"* 11:39~11:42). ⚠️ V1→V2는 1회 시연·체감, Stately 내부 적용 결과 미공개. → [[agent-state-machine]]
+
+## 여덟 번째 경로 — 실제 행동(ground truth)과 대조하는 두 번째 자동화 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[gabriel-chua|Gabriel Chua]]([[openai|OpenAI]], 56:06~56:43): ① **매주 금요일** 대화 스레드를 훑어 *"are there skills that you could improve? Are there like things you could add to the agents markdown or are there skills you could just remove? maybe skills that you haven't been using."* ② 이메일 초안 자동화 옆에 *"a second automation that sort of cross validates against the eventual reply you send because that is the ground truth. Then it updates like a markdown file with the best practices"* → *"the email drafting automation can get better over time."*
+
+- ②는 이 페이지의 기존 경로들(사람 교정 관찰·retro 스킬)과 달리 **사람이 실제로 보낸 결과물 자체를 정답으로 쓴다** — 교정 행위를 따로 기록할 필요가 없다.
+- ①은 **삭제**까지 포함한다 → [[harness-pruning]].
+- 같은 소스 Charlie(추정): 어려운 대화의 끝은 *"make this a skill or even better make this a plugin"*(12:41~12:48) → [[query-to-skill-distillation]]
+- ⚠️ 사람 게이트 유무는 발화되지 않는다(마크다운 파일 자동 갱신으로 들린다).

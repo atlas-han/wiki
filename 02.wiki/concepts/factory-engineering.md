@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [software-factory, meta-engineering, developer-role, process-engineering, skill-loop, measurement, future-of-work]
 aliases: [factory engineering, 공장 공학, meta-engineering, 메타 엔지니어링, building the thing that builds the product]
-related: [software-factory, orchestras-not-factories, skill-self-improvement, harness-engineering, outcome-engineering, taste-vs-judgment, frontier-engineering, risk-proportional-human-review]
+related: [software-factory, orchestras-not-factories, skill-self-improvement, harness-engineering, outcome-engineering, taste-vs-judgment, frontier-engineering, risk-proportional-human-review, inner-outer-meta-loops]
 first-seen: tech-bridge-warp-factory-engineering
-sources: [tech-bridge-warp-factory-engineering]
+sources: [tech-bridge-warp-factory-engineering, tech-bridge-tessl-harness-engineering-factory]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-11
 ---
 
 # 공장 공학 (Factory Engineering)
@@ -54,7 +54,17 @@ updated: 2026-10-03
 
 > ⚠️ **근거는 한 명의 진술.** 화자의 6개월 무코딩, Warp의 역대 최다 채용, 6개월~1년 안의 자동화 — 전부 당사자 진술·예측이다. 공장 공학이 엔지니어 수요를 줄이는지 늘리는지에 대한 데이터는 이 소스에 없다.
 
+## 같은 일, 다른 이름 — "harness engineering" (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[tessl|Tessl]]의 [[dru-knox|Dru Knox]]도 같은 직무 전환을 말한다 — *"everyone on your team effectively becomes internal tool builders and then you're building a system that produces your product."*(02:38~02:45) 다만 그는 이 일을 **harness engineering**(최근엔 *"loop engineering"* 06:09~06:13)이라 부른다: *"You are building the loops that automate and improve the quality of your factory."*(06:26~06:35) 위 "위키에서의 좌표"의 구분(하네스 = 에이전트 하나의 실행 환경, 공장 공학 = SDLC 전체)은 **Knox의 용법에선 성립하지 않는다** — 그에게 하네스 엔지니어링이 곧 공장을 짓는 일이다.
+
+추가되는 것:
+- **사람이 남는 자리의 다른 그림** — 비기술 직군이 아이디어를 내기 쉬워지고 엔지니어는 *"the underlying system that everyone is using to push features out"*(05:38~05:54)을 짓는다.
+- **meta-engineering의 구체 부품** — Lloyd의 *"is this factory building my product in the right way?"* 를 Knox는 meta loop(로그·PR·이슈·사용자 피드백 관찰 → 스킬 갱신)와 세 레이어로 쪼갠다 → [[inner-outer-meta-loops]].
+- **인프라를 직접 짓느냐** — Lloyd는 *직접 짓지 말라*(자사 판매), Knox는 *"You could go do them all yourself (…) There's plenty of tools"*(15:17~15:21)라고 한 뒤 자사 제품을 소개하고 *"modular and open"*(15:58~16:05)을 내세운다. ⚠️ 둘 다 그 인프라를 파는 쪽.
+
 ## References
 
 - [[tech-bridge-warp-factory-engineering]] — first-seen (Zach Lloyd, Warp)
 - [[software-factory]] · [[orchestras-not-factories]] · [[skill-self-improvement]] · [[zach-lloyd]] · [[warp]]
+- [[tech-bridge-tessl-harness-engineering-factory]] — 같은 직무 정의, "harness engineering"이라는 이름으로 (Dru Knox, Tessl)

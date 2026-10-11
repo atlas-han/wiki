@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex]
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-10-11
 ---
 
 # Context Resets vs. Compaction
@@ -106,3 +106,11 @@ updated: 2026-09-28
 ## 장시간 자율 실행에서 모델별 빈도 차이 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
 
 optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context window"* 라 **compaction을 많이** 했고, [[claude-code|Claude Code]]는 화자 정정 끝에 *"one for the full run"*(09:45~10:01). Codex 쪽 빈도는 문장이 깨져 불명(*"20 every one hour"*, 10:03). 두 에이전트는 **scratchpad(모델의 활성 메모리)** 에 쓰는 양도 크게 달랐다(08:21~08:47). ⚠️ compaction 빈도가 성과에 준 영향은 소스가 말하지 않는다. → [[automated-ai-research]]
+
+## compaction을 모델에 학습시켰다는 당사자 서술 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[gabriel-chua|Gabriel Chua]]([[openai|OpenAI]]): *"This is not a new technology. In November 19 when we released GPT 5.1 Codeex Max (…) we natively train the model on multiple uh context windows through a process called compaction. And that's what lets Codex be really good at it."*(42:19~42:39) — compaction을 **하네스 기능이 아니라 학습 대상**으로 놓는 이 위키 첫 서술. 근거로 든 것은 사용자 트윗 둘(*"I pretty much never had issue with 5.5 and codecs across ultra long threads spanning many compactions"* 42:42~42:51; *"it only remembers the good stuff"* 43:01~43:03).
+
+- 위 09-28 optimizer speedrun의 *"250k 컨텍스트라 compaction이 잦다"* 와 맞물린다 — 잦은 compaction을 **견디도록 학습**했다는 주장.
+- ⚠️ 이 페이지 위의 *"compaction은 [[context-anxiety]]를 해소 못 한다"*, *"compaction이 안전 장치를 지운다"* 와 긴장 — 이 소스는 품질 저하가 없다는 쪽이지만 **측정이 아니라 당사자 진술 + 트윗**이다.
+- ⚠️ *"November 19"* 의 연도는 발화되지 않는다 — ko·`en`의 **"2019년"** 은 오류. ko는 compaction을 **"다짐"** 으로 옮긴다.

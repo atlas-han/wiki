@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready]
 created: 2026-09-09
-updated: 2026-09-26
+updated: 2026-10-11
 ---
 
 # 예약형 에이전트 자동화
@@ -72,3 +72,29 @@ updated: 2026-09-26
 ## GrokBot 루틴 — 외부 신호를 구독하는 자동화 (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
 
 [[lauren-tan]]: *"**GrokBot 루틴**은 **Slack 스레드나 Sentry 알림을 구독해서 자동으로 일을 시작**하게 해 준다"*(33:50~34:00), 그리고 *"**Cursor automations**를 세팅하고 **SDK**로 추가 봇"*(34:23~34:34). 이 페이지의 예약 잡이 **시간**을 트리거로 삼는다면, 루틴은 **외부 이벤트**(알림·스레드)를 트리거로 삼는다. 결과 사례는 **버그 리포트 자동 재현·PR 자동 오픈**(34:57~35:04). → [[grokbot]] ⚠️ 제품 권유이고 실패 사례·수치는 없다.
+
+## repo 스윕과 "반복 작업 → 스킬 → GitHub Action" (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[dru-knox|Dru Knox]]([[tessl|Tessl]])는 이 패턴을 소프트웨어 팩토리의 **meta loop 부품**으로 놓는다([[inner-outer-meta-loops]]): *"things that sweep your codebase every day, every night, every week, something like that to look for problems"*(14:24~14:32). 반복 작업의 자동화는 *"as quickly and easily as possible because otherwise people won't do it"*(14:41~14:47). 자사 예(⚠️ 당사자 진술): 에이전트가 PR·이슈를 훑다 *"every week you do a hunt for flaky tests. Why don't we just set that up as a skill for the workflow and then we'll put it in automation on a GitHub action."*(17:55~18:05), 주간 기성 스캔(아키텍처 품질·코드 중복·테스트 스위트·보안 취약점, 18:14~18:32). ⚠️ ko는 *every week* 를 **"몇 주 걸린다"** 로 옮겨(14:27~14:30) 빈도가 소요 기간이 됐다.
+
+## 두 종류 — 스레드 안 heartbeat vs 새 스레드 예약 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[codex|Codex]] 제작사 쪽의 구분([[charlie-guo|Charlie Guo]], 56:56~58:15):
+
+| | heartbeat (in-thread) | scheduled (새 스레드) |
+|---|---|---|
+| 사는 곳 | *"those just live in a single thread. They run on a timer. Um they you know keep going over and over until they're they're done"* (57:05~57:10) | Codex 앱 *"scheduled page"* 에서 *"spin out in their own thread"* (57:55~58:00) |
+| 화자 평가 | *"the more powerful one these days"* (57:01~57:03) | 일회성 검토 후 아카이브하는 반복 작업 |
+| 사례 | DigitalOcean droplet 준비를 5분마다 확인 → 준비되면 SSH 딥링크(51:22~51:57) · 배포 파이프라인 폴링(52:03~52:17) · 발표 overrun 추정(55:21~55:47) · Slack·이메일·Linear → Obsidian 일일 노트(57:19~57:51) | 직속 부하 주간 요약, 분석 검토(58:02~58:15) |
+
+heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)와 달리 **새 에이전트를 띄우지 않고 진행 중인 스레드가 스스로 다시 깨어나는** 형태다 — [[tech-bridge-brockman-agi-era-defender-window|Brockman 일화]]의 *"48시간 뒤 DMARC 완료를 위한 자동화를 스스로 예약"* 이 이 모양으로 읽힌다(위키의 독해, 같은 기능이라는 발화는 없음).
+
+⭐ **자동화를 엮은 데모 — Slack 피드백 → worktree PR.** 30분마다 채널 피드백을 칭찬·버그·기능 요청으로 분류해 답하고, 보낸 뒤 **중간에 방향을 바꿔**(*"I can sort of steer it midway"* 54:18~54:20) 버그·기능 요청이면 *"spin a new thread in a work tree (…) open a PR and then like request Dom to review it (…) within like 24 hours. If not, just keep reminding him"*(53:55~54:09) → [[software-factory]]
+
+자동화로 자동화를 고치기(Gabriel, 56:06~56:43): 매주 금요일 대화를 훑어 스킬 개선·삭제 후보 찾기, 이메일 초안 자동화 옆에 **실제 보낸 답장(ground truth)과 대조하는 두 번째 자동화** → [[skill-self-improvement]]
+
+> ⚠️ ko 52:09는 *"every 5 minutes"* 를 **"5초마다"** 로, 51:28 *"codex heartbeat"* 를 **"대뇌피질 심장 박동"** 으로 옮긴다.
+
+## 언제 자동화로 넘기나 — "다섯 번" (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
+
+[[greg-brockman|Brockman]]의 경험칙이다. 먼저 손으로 한다(복사·붙여넣기 → Gmail 커넥터). *"I've done this three times, I've done this five times, and now I understand how this process works, let's automate it"* (24:39~24:45). 그는 이것을 *"a general software engineering maxim"* 이라 부른다(24:46~24:55). 손으로 하는 단계는 비용이 아니라 수단으로 본다. *"that way you kind of keep your your finger on the pulse of the problem"* (25:02~25:06). 결과의 책임은 사람에게 남는다(*"accountability is something that remains with them"* 25:11~25:15). ⚠️ ko는 *"The five times metric"* 을 **"5배라는 기준"** 으로 옮겼다(횟수 → 배수).

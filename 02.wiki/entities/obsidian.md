@@ -4,11 +4,11 @@ type: entity
 category: tool
 tags: [knowledge-base, markdown, viewer, wiki, cli]
 aliases: [옵시디언]
-sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow]
+sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-cooking-with-codex]
 links:
   - https://obsidian.md
 created: 2026-05-25
-updated: 2026-07-07
+updated: 2026-10-11
 ---
 
 # Obsidian
@@ -29,6 +29,10 @@ updated: 2026-07-07
 ## Karpathy의 비유
 
 > Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase.
+
+## 에이전트가 갱신하는 개인 vault (2026-10-11 · [[tech-bridge-cooking-with-codex]])
+
+[[charlie-guo|Charlie Guo]]([[openai|OpenAI]])는 Slack·이메일·Linear 알림을 훑는 [[codex|Codex]] heartbeat 자동화로 *"a local Obsidian uh, vault"* 의 일일 노트와 작업 흐름 노트를 계속 갱신하고, 나중에 *"what's going on with the latest AI engineer world's fair talk"* 처럼 묻는다(57:19~57:51) → [[scheduled-agent-automations]]. ⚠️ ko 57:28은 **"흑요석 금고"**.
 
 ## References
 

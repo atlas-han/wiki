@@ -3,11 +3,11 @@ title: Harness Engineering
 type: concept
 category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
-related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity, human-plumbing, feedforward-feedback-steering, domain-specific-scripts, harness-as-platform, deterministic-agent-pipeline]
+related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity, human-plumbing, feedforward-feedback-steering, domain-specific-scripts, harness-as-platform, deterministic-agent-pipeline, inner-outer-meta-loops, factory-engineering, software-factory, model-scaling-durability]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering, tech-bridge-uber-debug-assist]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering, tech-bridge-uber-debug-assist, tech-bridge-tessl-harness-engineering-factory, tech-bridge-brockman-start-building-before-ready]
 created: 2026-06-03
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 # Harness Engineering
@@ -136,6 +136,8 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 - [[agent-harness-design]] — Anthropic 관점 허브
 - [[context-engineering]] — 진화의 출발점
 - [[self-harness]] · [[ralph-wiggum-method]] · [[dynamic-workflows]] — 자기개선·오케스트레이션 갈래
+- [[tech-bridge-tessl-harness-engineering-factory]] — 팩토리의 루프를 짓는 일 (Dru Knox, Tessl)
+- [[tech-bridge-brockman-start-building-before-ready]] — "모델 한계 우회는 내구성 없음"과의 긴장 → [[model-scaling-durability]]
 
 ## "하네스는 만들지 않는다"는 하네스 엔지니어 (2026-09-23 · [[tech-bridge-lopopolo-agent-harness]])
 
@@ -178,3 +180,25 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 ## "We are the providers of the harness" — 하네스가 사내 플랫폼 제품이 될 때 (2026-10-09 · [[tech-bridge-uber-debug-assist]])
 
 [[uber|Uber]]의 [[debug-assist|Debug Assist]] 팀은 자기를 에이전트 제작자가 아니라 **하네스 제공자**로 정의한다 — *"Because we are not the owners of domain, we are the providers of the harness."*(27:46~27:50) 골격(LangGraph, 결정론+LLM 노드)·실행 환경·의존성은 플랫폼이, 스킬·서브에이전트는 도메인 팀이(15:52~16:23). 에이전트 약 8개·모노레포 5개가 한 코드베이스를 공유한다. ⚠️ `en`·ko 자막은 이 문장들의 *harness* 를 framework/structure/infrastructure로 옮겼다. → [[harness-as-platform]] · [[deterministic-agent-pipeline]]
+
+## 하네스 엔지니어링 = 팩토리의 루프를 짓는 일 — "loop engineering" (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
+
+[[tessl|Tessl]]의 [[dru-knox|Dru Knox]]는 이 페이지의 정의(LLM을 감싼 wrapper)를 **조직 단위**로 옮긴다 — *"I mentioned the software factory is building your product. You are building the loops that automate and improve the quality of your factory."*(06:24~06:35) 그리고 이름이 또 움직이고 있다고 증언한다: *"It's also started to be called loop engineering over the last couple weeks."*(06:09~06:13) — 위 Gavrilescu의 *RLHF → 하네스 → 루프* 와 같은 방향.
+
+작업 대상은 세 루프([[inner-outer-meta-loops]])와 세 레이어(화자 coinage, *"aren't by any means standard terms"* 11:10~11:14):
+
+| 레이어 | 내용 (en-orig) | 이 페이지의 칸 |
+|---|---|---|
+| ① **control plane** | 이슈 → 샌드박스 headless 에이전트 → PR → 엔지니어 코멘트, *"now all of your touch points with the agent are legible"*(11:40~12:03) · 이슈 추적, PR 리뷰, *"a skills registry or a shared GitHub repo"*(12:29~12:38) | Skills 배포 · 관찰 가능성 |
+| ② ***"agent it"*** (챕터명 "에이전트 레디 인프라") | CLI·API, 내부 서비스 접근(거버넌스), 프로덕션 로그(컴플라이언스), 실행 환경, company brain — *"I promise it's worse than you think"*(13:10~13:12) | Tool Harness 바깥의 환경 → [[agent-readiness]] |
+| ③ **improvement loops** | repo 스윕, 플레이북, 반복 작업 자동화, 출력 품질 점검 → 스킬 갱신 — *"this is where you'll end up spending most of your time"*(14:11~14:14) | §3 System Evolution의 상시화 |
+
+**왜 어려운가**(화자: *"human psychology"* 08:56~09:04): ① 지식이 매주 바뀐다 — 모범 사례가 다음 주 낡고 결국 *"antiatterns[=anti-patterns]"*(09:23~09:31) — 위 [[tools-and-context-over-harness|harness pruning]] 논의와 같은 관찰 ② ⭐ *"harness engineering is fundamentally unplanned work"* — 출시와 경쟁해 *"no one ever does it"*(09:56~10:30) ③ 신호가 로컬 로그·머릿속에 숨는다(10:42~10:50).
+
+**실수의 목적지**: *"Let's update a skill on (…) the playbook you have for adding features to the CLI"*(14:56~15:05) — 위 Contradiction("실수의 목적지")에서 **스킬·플레이북 쪽**에 서는 네 번째 소스(Quenneville · Martinelli · Rails 편에 이어).
+
+> ⚠️ 당사자 진술 — 화자는 이 루프·레이어를 돕는 제품을 판다(발표 후반 4분). 화자 스스로 *"You could go do them all yourself"*(15:17~15:19)라고 기법과 제품을 분리한다. 측정 근거 없음.
+
+> ⚠️ **정의의 범위.** 이 페이지 first-seen(Cole Medin)의 하네스는 **단일 에이전트 세션의 래퍼**(AI Layer 6 구성요소)였다. Knox의 하네스 엔지니어링은 **팩토리 전체의 루프**로, 사실상 [[factory-engineering]](Lloyd)과 같은 일을 가리킨다. 위키는 두 용법을 병기한다.
+
+> ⚠️ Contradiction: 모델 공급자 쪽의 반대 신호 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]]). [[greg-brockman|Brockman]]은 *"some activities that are kind of working around limitations in the model. The second one is pretty hard to be durable."*(13:44~13:53)라고 하며, 그 예로 *"We take the model, we add some prompts, we have some very handcrafted whatever"*(13:53~14:02)를 든다. 이 페이지는 하네스를 지속되는 자산으로 다뤄 왔다. *"handcrafted"* 가 하네스 전부인지 모델 결함을 땜질하는 부분만인지 발화되지 않으므로 판정하지 않는다 → [[model-scaling-durability]]

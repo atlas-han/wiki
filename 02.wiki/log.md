@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Log
@@ -1931,3 +1931,31 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 게이트 G 지속(CLT git 직접 호출). 자막은 오케스트레이터가 `--sleep-subtitles 8` + 편당 20초 간격으로 먼저 받아 `[MM:SS]` txt로 넘기고, 세 편을 병렬 서브에이전트로(raw·source·entity/concept 좁은 Edit), index·overview·log·[[tech-bridge]]·iconize·커밋은 오케스트레이터가 맡았다. ⚠️ **Lauren Tan 에이전트가 raw 헤더에 "info.json이 빈 파일(0 bytes)"이라고 적었다**(실제 4MB) — 09-27과 같은 유형. 오케스트레이터가 `timestamp`(2026-10-09 11:00:03 UTC)·태그로 고쳐 넣었다. 서브에이전트의 메타 주장은 계속 검증할 것.
+
+## [2026-10-11] ingest | Tech Bridge — 하네스 엔지니어링으로 소프트웨어 팩토리(Tessl) · Greg Brockman × Silicon Valley Girl(진행자 추정 · 멤버 전용 → 공개) · Codex로 요리하기(멤버 전용 → 공개) (10-10 업로드 1편 + 공개 전환 2편)
+
+목록 15편 요청 → 14줄 + stderr ERROR 1건 — **멤버 전용 `zAglgqN5Lhw`**(10-09, *데미스 하사비스가 말하는 AI 혁명 | Hannah Fry*)는 여전히 멤버 전용이라 건너뜀, 페이지 없음. 10-10 일반 신규 업로드 1편(`sAu_4QuAI0w`)과 ⭐ **멤버 전용 → `public` 전환 2편**(`J1BGMIWTJ1U` 10-05 첫 확인 · `RVnSsolR3uE` 10-06 첫 확인, 둘 다 `upload_date` 20261010 — 공개 전환 쪽 값)을 ingest. 세 편 모두 자막 ko · en-orig · en 확보(전부 `automatic_captions`), 429 없음.
+
+**신규 source 3 · concept 3 · entity 4**, index **760 → 770**(실측 `find 02.wiki -name "*.md" | wc -l` 770 일치).
+
+- `sAu_4QuAI0w`(19:53, 챕터 16) → [[tech-bridge-tessl-harness-engineering-factory]] — [[dru-knox|Dru Knox]]([[tessl|Tessl]], head of product and design). 10-10 일반 신규 업로드(`timestamp` 1791669602 = 2026-10-10 22:00:02 UTC). 자막 ko·en-orig·en 모두 `automatic_captions`(en-orig 517 · en 568 · ko 568).
+  - 신규: [[tessl]] · [[dru-knox]] · [[inner-outer-meta-loops]]
+  - 보강: [[harness-engineering]](팩토리의 루프를 짓는 일, *"loop engineering"*, 세 레이어, 실수의 목적지 = 스킬 — 네 번째 소스) · [[software-factory]](세 번째 정의, 4열 비교표, Beck과 Contradiction) · [[factory-engineering]](같은 일을 harness engineering이라 부름) · [[agent-trust-curve]](autonomy ≠ automation) · [[agent-readiness]](접근·권한·실행 환경 면) · [[scheduled-agent-automations]](repo 스윕·flaky test → 스킬 → GitHub Action) · [[agent-skills]](스킬 레지스트리 = control plane) · [[ai-engineer]](설명란 링크만) · [[loop-is-the-product]](meta loop = 두 번째 루프) · [[inner-outer-meta-loops]]에 [[assistance-vs-automation]]과의 용어 충돌(automation = 사람 제거 vs 신뢰의 정도) 표시
+  - ⚠️ 후반 4분(15:09~19:24) 자사 제품 — 화자 스스로 기법과 분리. *"40% there"*·*"how AI native am I"* 측정 아님, 레지스트리 개선 수치·Tessl Agent 영상 내용은 자막에 없음. 행사명·녹화일 미발화(ai.engineer 링크 → 추정). en-orig **01:49~02:11 무자막**(`en`·ko만 내용 있음 — 인용 안 함). Contradiction: 팩토리 → 품질 상승(Knox) vs *"always goes off the rails"*(Beck); outer loop 용어 충돌(Lauren Tan = 외부 신호 구독, Knox = PR 뒤 검사).
+  - ⚠️ ko: harness engineering → "환경공학"(4회, 08:52엔 화자 표지 "프랑코:" 창작), PR → "추출 요청·홍보·보도자료", Tessl → "테슬라", workflows → "현금 흐름"(2회), improvement loops → "생리 주기", *high autonomy but low automation* 붕괴(03:34), backlog → "귀걸이"(05:10), *every week* → "몇 주 걸린다"(14:28), *Can be long running* → "사형 집행일"(19:00). en·ko 공유: *"Cloud Code"*(=Claude Code), *"Tesla Agent/Launch"*. en-orig: *"metal loop"* → meta, *"Drew"* → Dru(설명란).
+- `J1BGMIWTJ1U`(29:22, 챕터 20) → [[tech-bridge-brockman-start-building-before-ready]] — [[greg-brockman|Greg Brockman]] × Silicon Valley Girl(진행자 이름 미발화, 설명란 링크 판독).
+  - ⭐ 멤버 전용 → 공개: 10-05 첫 확인, 10-09 `subscriber_only` 확인, 10-11 `public`. `upload_date` 20261010은 공개 전환 값이다. 녹화는 Dots 출시(DevDay 2026) 이후, 10-05 이전으로 추정(*"we just released dots"* 14:47).
+  - 신규: [[model-scaling-durability]] — 진행자 페이지(marina-mogilko)는 만들지 않음(이름이 두 소스 모두 설명란에만, 인터뷰어 페이지 보류)
+  - 보강: [[greg-brockman]](두 번째 소스, Stripe 발화 확인) · [[openai]](1.2B WAU, 생산성 측정, 리더보드, 부서 사례) · [[codex]](홍보팀 백엔드) · [[openai-astra]](⭐ *"GPT-6 Astra"* — 명명 질문 첫 단서) · [[openai-dots]](두 번째 1인칭, 로컬 연결 옵션) · [[capability-discovery-burden]](세 가지 용도 경계) · [[value-maxing]](대리 지표로서의 토큰맥싱) · [[scheduled-agent-automations]](다섯 번 규칙) · [[harness-engineering]](모델 한계 우회 Contradiction 메모)
+  - ⚠️ 당사자 진술. 1.2B WAU(09-20 a16z 편은 "거의 11억") · 20%→80% · 60% B2B(진행자) · 1만 에이전트 · 블로그 글 · 리더보드, 전부 조건 없음. 성 Brockman과 CTO 직함은 제목·설명란에만, 진행자 이름은 설명란 링크에만. 제목의 "준비되기 전에"는 발화에 없다.
+  - ⚠️ Contradiction: 모델 한계 우회는 내구성 없음 vs [[harness-engineering]](경계 미정의) · 1인 운영·창업 낙관 vs [[ai-jobs-impact]] 대체 쪽 입장(판정 안 함).
+  - ⚠️ ko: Dots → "점들·도트·점이"; 작업 *"at least 40 hours"* → "40시간 분량"; *"five times metric"* → "5배"; *"white page problem"* → "백서"; *"team humanity"* → "팀워크"; *"big money in problem"*(밀레니엄 난제 판독) → "엄청난 비용이 드는 문제"; 정보를 *가지고 있다* → "전송된다"; 작은 구멍을 *메운다* → "허점이 생긴다"; [music] 태그 → "음악에 대한 피드백". `en` = en-orig(바이트 동일), 인용은 en-orig만.
+- `RVnSsolR3uE`(1:07:05, 챕터 20 + 설명란 타임라인 22줄) → [[tech-bridge-cooking-with-codex]] — [[charlie-guo|Charlie Guo]] · [[gabriel-chua|Gabriel Chua]] ([[openai|OpenAI]] developer experience). ⭐ **멤버 전용 → 공개 전환**: 10-06 첫 확인·10-09 `subscriber_only` 확인, 10-11 `public`, `upload_date` 20261010은 공개 전환 값.
+  - 신규: [[charlie-guo]] · [[gabriel-chua]] · [[subagent-vs-thread-handoff]]
+  - 보강: [[codex]](2026-06 제품 표면 표, Bakaus와 Contradiction) · [[openai]](DevEx 팀, 6월 출시 목록, 크레딧) · [[ai-engineer]](⭐ World's Fair 2026 첫 날짜 앵커: 2026-06-29 월요일 워크숍, 다음 날 기조연설) · [[scheduled-agent-automations]](heartbeat vs scheduled) · [[verifiable-goals]](`/goal`, genie/monkey's paw) · [[hook-enforced-workflow]](자율이 길수록 가드레일) · [[context-resets-and-compaction]](네이티브 compaction 학습 주장) · [[bring-your-own-subscription]](App Server = 6월에 이미 있던 경로) · [[software-factory]](네 번째 화자 — Factory·Warp·Tessl 다음, "machine that builds the machine") · [[loop-is-the-product]](loop maxing) · [[skill-self-improvement]](ground truth 대조 자동화) · [[agent-native-interface]](폴백 순서) · [[agent-memory]](기본 꺼짐, 도구 대화 건너뛰기) · [[cloud-agent-delegation]](원격이 로컬을 부른다) · [[agent-manager-analogy]] · [[obsidian]] · [[tech-bridge-conductor-orchestras-not-factories]](slashgo 보충)
+  - ⚠️ 녹화 2026-06-29(월) — 발화 *"today which is the 29th of June"* + *"9:00 a.m. on a Monday"* + 달력. 성 Guo·Chua는 제목·설명란에만(ko 52:46 "추아"는 `en` 상속). 당사자 진술(시간 수치·compaction 학습·트윗 사례). 실습 1시간은 영상에 없음. Contradiction: Bakaus(서브에이전트는 명시 요청 필요) vs Charlie(기본 사용); Simionescu(스킬 = 반창고) vs 스킬·플러그인 권장 + 주간 가지치기.
+  - ⚠️ ko 단독 반전: 300 subagents → "300명"(00:55), 15 hours → "15년"(43:20), every 5 minutes → "5초마다"(52:09), *context is not just about* → "맥락이 중요하지 않다"(15:13), *did not demo* → "앱에 없다"(26:20), whitelist → "백인들이 승인한"(48:24~48:26), 훅 잡일 → 부정 삽입(49:44). `en` 공유: *"November 19"* → "2019년 11월", *"my gaps remote"* → "GKE", "Gabriel Chua", voice agents → "Vocals/모음". 제품명: Codex → 사본·Cortex·대뇌피질·법전, compaction → 다짐, App Server → 섬기는 사람, Dom → 일요일.
+
+### 운영 메모
+
+게이트 G 지속(CLT git 직접 호출). 세 편은 편별 서브에이전트가 raw·source 페이지와 PROPOSAL을 쓰고, 신규 entity/concept 페이지·기존 페이지 보강·[[tech-bridge]]·index·overview·log는 단일 통합자가 페이지당 한 번에 합쳤다 — 여러 제안이 겹친 페이지([[software-factory]] · [[scheduled-agent-automations]] · [[ai-engineer]] · [[openai]] · [[codex]] · [[loop-is-the-product]] · [[harness-engineering]])는 섹션을 나란히 붙이고 순번(세 번째 벤더 정의 = Tessl, 네 번째 화자 = OpenAI Codex 워크숍)을 맞췄다.
