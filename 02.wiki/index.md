@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # Index
@@ -21,6 +21,9 @@ updated: 2026-10-11
 ## Entities
 
 ### Persons
+- [[jake-broekhuizen]] — [[langchain|LangChain]] Labs 리드(설명란 — 발화엔 자기소개 없음). 관찰 ≠ 학습, semantic·episodic·procedural 메모리, 트레이스 → 메모리 순환 ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 당사자
+- [[dor-sasson]] — [[stigg|Stigg]] co-founder & CEO(이름은 설명란에만). "모든 AI 기업이 어쩌다 보니 은행을 짓고 있다" — 청구 뒤 검사 → 추론 전 동기 승인, reserve → settle ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더
+- [[hossein-niazmandi]] — [[braintrust|Braintrust]] 화자(이름은 설명란에만 — 자막엔 자기소개 없음, 직함 미상). eval 도구 성숙 4단계와 eval 플랫폼 = systems problem, 사람은 배포 버전을 결정 ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 벤더
 - [[charlie-guo]] — [[openai|OpenAI]] developer experience 팀(성은 제목·설명란에만). Codex 워크숍: goal = 검증 가능한 기준, [[subagent-vs-thread-handoff]], 마무리 사다리 → software factory ([[tech-bridge-cooking-with-codex]])
 - [[gabriel-chua]] — [[openai|OpenAI]] developer experience 팀, 싱가포르(성은 제목·설명란에만). Codex 워크숍 데모 대부분 — 번역 앱, 밤샘 장기 과제(goals.md·목표 감사·원격↔로컬 QA), 자동화, Retrodex ([[tech-bridge-cooking-with-codex]])
 - [[dru-knox]] — [[tessl|Tessl]] head of product and design(발화 "Drew Knox", 철자는 설명란). 하네스 엔지니어링 → 소프트웨어 팩토리, inner·outer·meta 루프 ([[tech-bridge-tessl-harness-engineering-factory]])
@@ -120,6 +123,8 @@ updated: 2026-10-11
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[stigg]] — AI 과금·권한·사용량 인프라 쪽 회사(제품명·기능은 자막에 없음 — 직함·설명란으로 판독). AI의 "Stripe moment"가 없다는 피치 ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더
+- [[braintrust]] — AI 에이전트 eval·observability 플랫폼 회사. evals(프로덕션 전) + observability(프로덕션 중), BTQL, unknown unknowns 자동 발굴 피치. 자막엔 "Brain Trust"도 ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 당사자 진술
 - [[tessl]] — "agent enablement platform". 스킬 레지스트리·Linear→GitHub 커넥터·Tessl Agent·`tessl launch`. 이전엔 SDD 도구 목록·설명란 링크에만 (sources: 3) ⚠️ 당사자 진술
 - [[temporal]] — durable execution 플랫폼(오픈소스 + 관리형 서비스). worker·workflow·activity, Google ADK·LangGraph 통합, 사람 승인을 wait condition + signal로 ([[tech-bridge-human-is-async-api]]) ⚠️ 당사자 진술
 - [[uber]] — 차량 호출·배달. Wisdom·Healthline 버그 유입, 연 5만 건·평균 28일, 모노레포, 에이전트 약 8개·플러그인 약 3,000개 ([[tech-bridge-uber-debug-assist]]) ⚠️ 자기 보고
@@ -142,7 +147,7 @@ updated: 2026-10-11
 - [[mixedbread]] — **멀티모달 검색 + 검색 에이전트**. PDF를 OCR 없이 비전으로 읽고, 오케스트레이터/서처 분업으로 [[oracle-gap|오라클 갭]]을 10→6포인트로 ([[tech-bridge-knowledge-agents-not-coding-agents]]) ⚠️ 전부 자기 보고 · ✅ **자기 한계를 먼저 말한다**
 - [[a16z]] — 벤처 캐피털. 위키에는 **팟캐스트 제작 주체**로 첫 등장 — 이 채널이 재배포한 소스 중 **투자자가 만든 매체는 처음**이다. ⚠️ 데이터센터 규제 완화·AI 낙관·고용 증가를 화자보다 강하게 주장하면서 **이해관계를 한 번도 표시하지 않는다** ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[typesafe-ai]] — [[diogo-almeida]]가 속한 **스텔스 스타트업**. *"AI 스택을 신뢰성과 자동화를 위해 재설계한다면?"* · [[post-training-northstars|보정된 의사결정]] 최적화. ⚠️ **확인 가능한 사실이 거의 없다** — 제목이 약속한 모델 'Jev'가 **자막에 한 번도 없다** ([[tech-bridge-rlhf-assistance-vs-automation]]) · 2026-10-09 제3자 진술로 Jev = RLCD 학습 ([[tech-bridge-jev-calibrated-decisions]])
-- [[langchain]] — LLM·에이전트 프레임워크 회사. `langchain-typesafe` 통합 · auto mode 미들웨어 · Jev-as-a-judge eval을 소개하는 **위키 첫 LangChain 1인칭 소스** ([[tech-bridge-jev-agent-harness]]) ⚠️ 벤더 영상 · LangGraph `interrupt` + [[temporal|Temporal]] durable 대기 ([[tech-bridge-human-is-async-api]])
+- [[langchain]] — LLM·에이전트 프레임워크 회사. `langchain-typesafe` 통합 · auto mode 미들웨어 · Jev-as-a-judge eval을 소개하는 **위키 첫 LangChain 1인칭 소스** ([[tech-bridge-jev-agent-harness]]) ⚠️ 벤더 영상 · LangGraph `interrupt` + [[temporal|Temporal]] durable 대기 ([[tech-bridge-human-is-async-api]]) · LangChain Labs 메모리 발표 + [[langsmith|LangSmith]] Context Hub ([[tech-bridge-langchain-learning-agent-memory]])
 - [[crowdstrike]] — 사이버 보안 기업. [[openai|OpenAI]] **10억 달러 프론티어 방어자 약정의 파트너**로 첫 등장 — [[defenders-window]]의 **조달** 쪽 ⚠️ *"할인된 접근"* 한 문장이 전부 ([[tech-bridge-brockman-agi-era-defender-window]])
 - [[vercel]] — [[nextjs|Next.js]]를 만든 웹 플랫폼. *페이지 → 에이전트* 전환을 서사 축으로 두고 [[eve-framework|Eve]]·AI SDK·샌드박스를 판다. **위키 첫 Vercel 소스** ([[tech-bridge-vercel-eve-filesystem-agent]])
 - [[plivo]] — 2011년 음성·SMS API로 시작한 텔레포니 기업(월 10억 건 이상 통화 주장). **SIP 트렁킹·캐리어 계층을 직접 보유**하고 그 위에 보이스 AI 에이전트 플랫폼을 얹는다. **위키 첫 음성 도메인 조직** ([[tech-bridge-voice-agent-failure-modes]])
@@ -209,6 +214,7 @@ updated: 2026-10-11
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[langsmith]] — [[langchain|LangChain]]의 관측·평가 제품. capture(트레이싱) → analyze(백그라운드 분석 엔진) → update(**Context Hub** — 스킬 마크다운 원격 스토어) ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 당사자 진술, 수치 없음
 - [[debug-assist]] — Uber 사내 디버깅 에이전트: LangGraph 고정 골격, RCA(Sonnet·턴 제한·병렬 서브에이전트) → 기능 플래그 롤백·수정(Opus) → 재현 검증 → PR. 월 9,000 RCA, 정확도 50%, 머지율 5%→48% ([[tech-bridge-uber-debug-assist]]) ⚠️ 자기 보고
 - [[agentcraft]] — 게임에서 영감을 받은 코딩 에이전트 오케스트레이터: 지도 위 유닛·히트맵·스페이스바 주의 점프·퀘스트·로컬 컨테이너 자율 실행·영상/사진 리뷰 키트·사람+에이전트 협업 방. 단순판 Loopers(가칭) ([[tech-bridge-agentcraft-strategy-game]]) ⚠️ 당사자 데모
 - [[kimchi]] — Cast AI의 오픈소스 코딩 하네스: 작업 결과 기준 모델 자동 선택(6월 Kimi 2.6 → MiniMax 3) · Ferment(2시간+ 자율 루프, 점수 B 이상, 스테이징 정지) · Teleport(원격 샌드박스) · Studio(팀 칸반) ([[tech-bridge-kimchi-cost-per-task-harness]]) ⚠️ 자사 수치 · 채점자 미발화
@@ -422,6 +428,8 @@ updated: 2026-10-11
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[trace-to-memory-loop]] — 트레이스(증거) → 필터(대부분 history) → durable context(메모리) → 다음 실행. capture · analyze · update, procedural 변경은 사람 검토 ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 한 벤더의 틀 · [[agent-action-record]]와 Contradiction(로그 = 기억?)
+- [[eval-platform-maturity-stages]] — eval 도구의 4단계(스프레드시트 → 맞춤 UI → 비기술 사용자의 실험 → 프로덕션 연결)와 그 끝의 systems problem(반정형 JSON 트레이스, 실시간 vs 장기 쿼리), 에이전트가 eval 플랫폼의 first-class citizen ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 벤더의 틀
 - [[inner-outer-meta-loops]] — 코딩 에이전트 작업의 세 루프: inner(PR 전, 싸고 빠름 → autonomy) · outer(PR 후 비싼 검사 → automation) · meta(로그·PR·이슈·피드백 관찰 → 품질, 스킬 갱신) ([[tech-bridge-tessl-harness-engineering-factory]]) ⚠️ 한 벤더의 틀 · Lauren Tan의 outer loop와 용어 충돌
 - [[model-scaling-durability]] — 모델이 똑똑해질수록 커지는 활동 vs 모델 한계를 우회하는 활동(후자는 내구성 없음). 해자는 산업 이해·이해관계자 신뢰·도메인 전문성 ([[tech-bridge-brockman-start-building-before-ready]]) ⚠️ 모델 공급자 사장의 말 · "handcrafted"의 경계 미정의 → [[harness-engineering]]과 긴장
 - [[subagent-vs-thread-handoff]] — 일을 나눌 때 위임을 모델에게만 보이게(서브에이전트·하청) 할지 사용자에게도 보이게(스레드 간 핸드오프·creative director 스레드) 할지 ([[tech-bridge-cooking-with-codex]]) ⚠️ 단일 소스·제작사 · Bakaus(서브에이전트는 명시 요청 필요)와 충돌
@@ -608,6 +616,7 @@ updated: 2026-10-11
 → 전체 목록은 [[02.wiki/engineering/index]] 참조
 
 ### Systems
+- [[reserve-then-settle]] — AI 사용 = 원가이므로 권한·한도·잔액을 hot path에서 동기로 먼저 검사·예약하고 정산은 비동기로(ATM 비유). 결정 폭포·동시성(10,000 에이전트, double spend)·멱등성·크레딧 차감 순서·계층 예산·VPC 내부 원장 ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더 프레이밍
 - [[durable-execution]] — 이벤트 히스토리 replay로 멈춘 자리에서 이어 가는 실행 모델. 에이전트 루프 = workflow(결정론·replay 가능), 모델·도구 호출 = activity(비결정론) — [[workflow-vs-agent]]의 workflow와 다른 뜻 ([[tech-bridge-human-is-async-api]])
 - [[agent-distributed-systems]] — 에이전트가 부작용을 내면 분산 시스템 문제가 된다. 타임아웃=불명·멱등성·메모리=캐시·보상·scoped 권한 (sources: 2)
 - [[actix-web-http-server]] — actix-web `HttpServer` 워커 모델·TLS/HTTP2·graceful shutdown·정적 파일
@@ -675,6 +684,9 @@ updated: 2026-10-11
 ---
 
 ## Sources
+- [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]] ([[langchain|LangChain]] Labs) AI 에이전트에 학습하는 메모리를(15:28, 챕터 19): 관찰 ≠ 학습, semantic · episodic · procedural(개선의 대부분) + working/long-term, 읽기·쓰기 순환과 필터 → [[trace-to-memory-loop]], 세 교훈(대부분 history · 캐시/hot path · procedural은 사람 검토 + eval) ⚠️ 10:13~12:28 [[langsmith|LangSmith]]·Context Hub 자사 제품 · *"about 75%"* 화자 추정 · 이름·직함 설명란에만 · ko가 run → "사형 집행", "세금 정보" 환각
+- [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]] ([[stigg|Stigg]]) 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(19:00, 챕터 15): 4월 가격 비상(Anthropic 서드파티 에이전트 구독 사용 차단 · OpenAI "5 5x" · Copilot 무료 폐지)은 인프라 문제, 검사가 청구서 뒤에 온다 → [[reserve-then-settle]], OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, 4가지 패턴, AI의 Stripe moment ⚠️ 벤더 CEO · 타사 내부 주장 출처 없음 · *"150s to even 750"* 단위 미발화(설명란 "배"는 업로더 해석) · 연도 미발화 · ko concurrency → "참석률", rate limit → "이자율"
+- [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]](설명란에만) ([[braintrust|Braintrust]]) 평가 플랫폼 만들기가 생각보다 어려운 이유(16:25, 챕터 15): evals + observability 두 기둥, 최소 eval 시스템 세 요소, multi-persona(PM·SME), North Star 개선 루프(drift) → [[production-trace-eval-flywheel]], [[eval-platform-maturity-stages|성숙 4단계]], systems problem(수백 MB 트레이스, 실시간 vs 장기 쿼리, BTQL), headless 코딩 에이전트가 eval을 돌고 사람이 배포 결정 ⚠️ 벤더 피치(14:45~15:45 unknown unknowns) · 영상이 발표 중간에서 시작 · ko가 production을 "개발 중"·"오프라인"으로 반전
 - [[tech-bridge-tessl-harness-engineering-factory]] — [[dru-knox|Dru Knox]] ([[tessl|Tessl]]) 하네스 엔지니어링으로 소프트웨어 팩토리 만들기(19:53, 챕터 16): 산출물 기준 정의 + autonomy → automation → quality, 보상은 속도가 아니라 품질, harness = 팩토리의 루프(*"loop engineering"*) → [[inner-outer-meta-loops]], 세 레이어(control plane · "agent it" · improvement loops), 지표(manual takeovers·human PR comments·무인 시작 PR) ⚠️ 후반 4분 자사 제품 · en-orig 01:49~02:11 공백 · ko가 harness → "환경공학", PR → "홍보"
 - [[tech-bridge-brockman-start-building-before-ready]] — [[greg-brockman|Greg Brockman]] × Silicon Valley Girl(진행자 이름 미발화, 설명란 판독) 대담(29:22, 공식 챕터 20, **10-05 멤버 전용 → 10-11 공개**, Dots 출시 직후 녹화): 야심의 천장은 없다, 세 가지 용도 → 파워 유저, 시계 가게, 창업의 대전성기(1~2년), 모델과 함께 커지는 제품 vs 한계 우회([[model-scaling-durability]]), 경제는 프랙탈, 모닝 브리핑 4단계, 토큰맥싱 = 대리 지표 + 리더보드, 다섯 번이면 자동화, *"powered by GPT-6 Astra"* ⚠️ 당사자 진술 · 수치 전부 조건 없음 · ko: Dots → "점들", 40시간 작업 → "40시간 분량", five times → "5배"
 - [[tech-bridge-cooking-with-codex]] — [[charlie-guo|Charlie Guo]] · [[gabriel-chua|Gabriel Chua]] ([[openai|OpenAI]] developer experience) *"Cooking with Codex"* 워크숍(1:07:05, 챕터 20, 2026-06-29 AI Engineer World's Fair 녹화): 여섯 단계(컨텍스트 → 만들기 → 행동 → 장기 작업 → 시간 → 어디에나), `/goal` + goals.md + 목표 감사, 원격↔로컬 스레드, [[subagent-vs-thread-handoff]](위임을 사용자에게 보일지 모델에게만 보일지), hooks = 가드레일, heartbeat vs scheduled 자동화, App Server(ChatGPT 구독·토큰 예산), *"machine that builds the machine"* ⚠️ 당사자 진술 · 성은 설명란에만 · ko 단위 반전(300 서브에이전트 → 300명, 15시간 → 15년, 5분 → 5초)
@@ -809,7 +821,7 @@ updated: 2026-10-11
 
 ## 통계
 
-- 총 페이지 수: 770 (760 → 770, + 2026-10-11 Tech Bridge 3편: source 3 + concept 3 + entity 4 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 770과 일치)
+- 총 페이지 수: 782 (770 → 782, + 2026-10-12 Tech Bridge 3편: source 3 + concept 2 + engineering 1 + entity 6 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 782와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-11 (Tech Bridge **3편** — 10-10 업로드 1편 [[tech-bridge-tessl-harness-engineering-factory|Tessl 하네스 엔지니어링 → 소프트웨어 팩토리]](`sAu_4QuAI0w`) + 멤버 전용 → 공개 전환 2편 [[tech-bridge-brockman-start-building-before-ready|Brockman × Silicon Valley Girl]](`J1BGMIWTJ1U`) · [[tech-bridge-cooking-with-codex|Codex로 요리하기]](`RVnSsolR3uE`). 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 여전히 건너뜀)
-- 직전 ingest: 2026-10-10 (Tech Bridge **3편** — 10-09 업로드 2편 [[tech-bridge-composio-dashboard-is-dead|Composio 대시보드의 종말]] · [[tech-bridge-human-is-async-api|Temporal 인간은 비동기 API]] + 멤버 전용 → 공개 전환 1편 [[tech-bridge-lauren-tan-pocock-podcast-full|Lauren Tan 대담 풀버전]](`5tdMgKkX5dU`). 신규 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 건너뜀, `J1BGMIWTJ1U` · `RVnSsolR3uE` 여전히 멤버 전용)
+- 마지막 ingest: 2026-10-12 (Tech Bridge **3편** — 10-11 업로드 3편 [[tech-bridge-langchain-learning-agent-memory|LangChain 학습하는 에이전트 메모리]](`0kVsv2WlL44`) · [[tech-bridge-stigg-ai-companies-building-banks|Stigg 모든 AI 기업이 은행을 짓는다]](`4JfLShdp92k`) · [[tech-bridge-braintrust-eval-platform-systems-problem|Braintrust 평가 플랫폼 만들기]](`S3knIZq7jM8`))
+- 직전 ingest: 2026-10-11 (Tech Bridge **3편** — 10-10 업로드 1편 [[tech-bridge-tessl-harness-engineering-factory|Tessl 하네스 엔지니어링 → 소프트웨어 팩토리]](`sAu_4QuAI0w`) + 멤버 전용 → 공개 전환 2편 [[tech-bridge-brockman-start-building-before-ready|Brockman × Silicon Valley Girl]](`J1BGMIWTJ1U`) · [[tech-bridge-cooking-with-codex|Codex로 요리하기]](`RVnSsolR3uE`). 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 여전히 건너뜀)

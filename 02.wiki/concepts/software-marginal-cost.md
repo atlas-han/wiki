@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [business-model, pricing, tokens, subsidy, seats, usage-based, microsoft]
 aliases: [소프트웨어의 한계비용, 좌석 + 사용량, seats are entitlements to usage, 보조금의 끝]
-related: [transaction-cut-monetization, agent-roi-measurement, overspending-underusing-loop, model-mixing-economics, compute-constrained-growth, inference-revenue-training-rnd, token-roles]
+related: [transaction-cut-monetization, agent-roi-measurement, overspending-underusing-loop, model-mixing-economics, compute-constrained-growth, inference-revenue-training-rnd, token-roles, reserve-then-settle]
 first-seen: tech-bridge-nadella-copilot-autopilot
-sources: [tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-nadella-copilot-autopilot, tech-bridge-stigg-ai-companies-building-banks]
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-12
 ---
 
 # 한계비용이 생긴 소프트웨어
@@ -42,12 +42,21 @@ updated: 2026-09-29
 
 ## ⚠️ 유보
 
-- **"보조금"의 주체** — 누가 지금 보조하고 있는지(모델 회사? MS 자신?) 말하지 않는다.
+- **"보조금"의 주체** — 누가 지금 보조하고 있는지(모델 회사? MS 자신?) 말하지 않는다. → 2026-10-12 [[tech-bridge-stigg-ai-companies-building-banks]]가 한 사례를 주장(아래).
 - **"no limits"와 비용** — 사용량 과금 기능이 *"no limits"* 라는 것은 **사용자가 무제한으로 쓸 수 있고 무제한으로 낸다**는 뜻으로 읽히나, 기업 예산 통제 수단은 [[agent-365|Agent 365]]의 *"finops"* 한 단어뿐이다.
 - **비용 하락 전망**(*"it'll only reduce"*)의 근거 없음 — [[compute-constrained-growth]]의 *"효율은 수요가 삼킨다"* 와 긴장이 있다(단가는 내려도 총비용은 오를 수 있다).
+
+## 보조금의 크기 — 한 벤더의 주장 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+위 ⚠️ *"누가 지금 보조하고 있는지 말하지 않는다"* 에 대한 한 사례. [[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO): [[anthropic|Anthropic]]이 Claude Max 구독 안의 [[openclaw|OpenClaw]] 사용을 보조했고 — *"what the customers were paying daily was, you know, dollars and cents. But on the on the cost side for Anthropic, it was like 150s to even 750 subsidized, which is effectively not an economics that you can scale even for the company at at the size at the scale of Anthropic"*(02:46~03:05) — 4월 서드파티 에이전트의 구독 사용을 끊었다(01:38~01:47).
+
+- Nadella의 *"once the subsidy stop[s] for everybody"* 가 **주체(모델 회사)·경로(정액 구독 안의 서드파티 에이전트)·크기(150~750)** 를 가진 사건으로 한 번 나온다.
+- ⭐ 화자의 해석은 *보조금이 끝났다* 보다 한 단계 아래다 — *"what it seemed to be a business problem really was an infrastructure problem"*(03:08~03:13): API 사용자와 구독 사용자를 런타임에 구분할 계층이 없어 끄는 것밖에 없었다는 것 → [[reserve-then-settle]]
+- ⚠️ **150~750의 단위는 발화되지 않는다**(설명란은 *"사용자당 150~750배"*). 화자는 그 계층을 파는 벤더이고 출처를 대지 않는다.
 
 ## References
 
 - [[tech-bridge-nadella-copilot-autopilot]] — first-seen
 - [[satya-nadella]] · [[microsoft]] · [[microsoft-copilot]]
 - 대비: [[transaction-cut-monetization]] · [[tech-bridge-zuckerberg-muse-personal-agent]]
+- [[tech-bridge-stigg-ai-companies-building-banks]] — 보조금 주체·경로·크기의 첫 주장 · [[reserve-then-settle]]

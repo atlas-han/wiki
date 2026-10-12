@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory]
 created: 2026-09-05
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # Skill Self-Improvement
@@ -148,3 +148,7 @@ updated: 2026-10-11
 - ①은 **삭제**까지 포함한다 → [[harness-pruning]].
 - 같은 소스 Charlie(추정): 어려운 대화의 끝은 *"make this a skill or even better make this a plugin"*(12:41~12:48) → [[query-to-skill-distillation]]
 - ⚠️ 사람 게이트 유무는 발화되지 않는다(마크다운 파일 자동 갱신으로 들린다).
+
+## 아홉 번째 경로 — 트레이스 분석 엔진이 원격 스킬 파일을 고친다, 게이트는 메모리 종류로 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+[[langsmith|LangSmith]]의 분석 엔진이 트레이스(실패한 도구 호출·사용자 정정·말투 이탈 플래그)에서 패턴을 찾아 *"identifies where different static skill markdown files that are based in Contexthub need to be changed or promoted and it'll make that change"*(12:04~12:13). 같은 발표의 교훈 3은 **procedural 메모리(지시·정책·말투 규칙) 변경은 커밋 전에 사람에게 보이고 eval로 보호**하라고 한다(14:23~14:55) — 이 페이지의 *자동 반영하지 않는다* 원칙을 **메모리 종류 기준**으로 다시 말한 것. ⚠️ 데모 구간(*"it'll make that change"*)과 교훈 3의 게이트가 어떻게 연결되는지는 발화되지 않는다. ⚠️ 벤더(LangChain) 당사자 진술. → [[trace-to-memory-loop]]

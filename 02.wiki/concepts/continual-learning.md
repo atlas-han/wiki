@@ -3,11 +3,11 @@ title: Continual Learning
 type: concept
 category: theory
 tags: [learning, memory, catastrophic-forgetting, bayesian, agi]
-related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement, agent-dreaming]
+related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement, agent-dreaming, trace-to-memory-loop]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-langchain-learning-agent-memory]
 created: 2026-09-05
-updated: 2026-10-01
+updated: 2026-10-12
 ---
 
 # Continual Learning
@@ -106,3 +106,7 @@ Ghahramani가 continual learning과 나란히 놓는 것이 둘 더 있다.
 ## Anthropic도 컨텍스트 층에서 말한다 — dreaming (2026-10-01 · [[tech-bridge-anthropic-dreaming-memory]])
 
 [[lamis-mukta|Lamis Mukta]]([[anthropic|Anthropic]])의 발표는 목적지를 *"where this will go on the path to continual learning"*(01:54~01:55)으로 잡지만, 수단은 전부 **컨텍스트 층**이다 — 파일 시스템 메모리를 잘 만들면 *"you would have the feeling of continual learning because your agents would get better at the individual (…) tasks"*(08:20~08:28). 그리고 인밴드 메모리가 보지 못하는 **세션 간·함대 전체의 패턴**을 배치로 메모리에 되먹이는 [[agent-dreaming|dreaming]]을 *"close the loop"*(26:10~26:12)의 장치로 둔다. 09-24 실무자 표의 **컨텍스트·토큰 공간 층**에 해당하고, 가중치 갱신은 나오지 않는다. ⚠️ *"feeling of"* — 화자 스스로 '느낌'이라 한다. ⚠️ ko는 01:55~01:59에서 continual learning을 **"배움의 길 … 지속적으로 연주"** 로 옮겼다.
+
+## LangChain도 컨텍스트 층 — "the system around the agent" (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+[[jake-broekhuizen|Broekhuizen]]([[langchain|LangChain]]): *"the system around the agent should be a place where it can continuously learn and benefit from its interactions and its experiences."*(01:58~02:06). 수단은 전부 컨텍스트 층(스킬·지시·규칙 = procedural 메모리 갱신) → [[trace-to-memory-loop]]. Oracle([[ignacio-martinez|Martinez]]) · Anthropic([[lamis-mukta|Mukta]])에 이어 **세 번째 벤더가 지속 학습을 컨텍스트 층에서** 말한다. ⚠️ 가중치 층 언급 없음, 측정 없음.

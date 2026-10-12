@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-memory, dreaming, out-of-band, batch, continual-learning, transcripts, human-in-the-loop, anthropic, managed-agents]
 aliases: [dreaming, 드리밍, 꿈꾸기, 회고, dreamer, 드리머, out-of-band memory curation, 아웃오브밴드 메모리, memory dreaming]
-related: [agent-memory, nightly-memory-consolidation, token-roles, strategy-primitives, managed-agents, production-memory-guardrails, self-harness, skill-self-improvement, continual-learning, context-engineering, generator-evaluator-pattern]
+related: [agent-memory, nightly-memory-consolidation, token-roles, strategy-primitives, managed-agents, production-memory-guardrails, self-harness, skill-self-improvement, continual-learning, context-engineering, generator-evaluator-pattern, trace-to-memory-loop]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-langchain-learning-agent-memory]
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-12
 ---
 
 # Dreaming — 아웃오브밴드 메모리 정리
@@ -73,6 +73,12 @@ updated: 2026-10-01
 - **스킬도 출력인가** — 09-01은 스킬을 말했고 10-01은 메모리 스토어만 말한다.
 - **자동 적용 모드** — *"in our case, the way that we've designed this in production"*(22:54~22:56)이라 했을 뿐.
 - **인젝션** — 트랜스크립트 자체가 오염됐을 때(사용자 입력·도구 출력에 심긴 지시) 제안이 어떻게 걸러지는지 말하지 않는다. → [[prompt-injection]]
+
+## ⚠️ 같은 낱말, 다른 범위 — LangChain의 "sleeptime compute or dreaming" (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+> ⚠️ **용어 충돌.** [[jake-broekhuizen|Jake Broekhuizen]]([[langchain|LangChain]])은 *"you might have heard of sleeptime compute or dreaming. Those terms refer to the way that memory is updated or pulled from long-term into short-term whilst the agent is doing work or actually in some cases while the agent is also not doing work. That's the sleeptime compute."*(07:46~08:03)라고 한다. 이 페이지의 dreaming(Anthropic)은 **세션 밖·배치**이고 인밴드 메모리와 구분되는 second-order 과정인데, Broekhuizen의 용법은 **작업 중 갱신·적재까지** 포함한다.
+
+수렴하는 점도 있다: 변경을 *"surface the changes (…) before actually committing those"*(14:37~14:46)는 이 페이지의 *제안 → 사람 수락* 게이트와 같고, 저장 형식도 **마크다운 스킬 파일**(Context Hub, 12:07~12:09). → [[trace-to-memory-loop]] · [[langsmith]]
 
 ## References
 

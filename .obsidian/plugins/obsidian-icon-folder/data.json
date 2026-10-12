@@ -1006,5 +1006,17 @@
   "02.wiki/entities/gabriel-chua.md": "LiUser",
   "02.wiki/concepts/inner-outer-meta-loops.md": "LiBookText",
   "02.wiki/concepts/model-scaling-durability.md": "LiBookText",
-  "02.wiki/concepts/subagent-vs-thread-handoff.md": "LiBookText"
+  "02.wiki/concepts/subagent-vs-thread-handoff.md": "LiBookText",
+  "02.wiki/entities/braintrust.md": "LiBuilding",
+  "02.wiki/entities/stigg.md": "LiBuilding",
+  "02.wiki/entities/hossein-niazmandi.md": "LiUser",
+  "02.wiki/entities/dor-sasson.md": "LiUser",
+  "02.wiki/entities/jake-broekhuizen.md": "LiUser",
+  "02.wiki/entities/langsmith.md": "LiBoxes",
+  "02.wiki/concepts/eval-platform-maturity-stages.md": "LiPuzzle",
+  "02.wiki/concepts/trace-to-memory-loop.md": "LiDatabase",
+  "02.wiki/engineering/systems/reserve-then-settle.md": "LiServer",
+  "02.wiki/sources/tech-bridge-braintrust-eval-platform-systems-problem.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-stigg-ai-companies-building-banks.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-langchain-learning-agent-memory.md": "LiVideo"
 }

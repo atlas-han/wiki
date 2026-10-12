@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks]
 links:
   - https://openai.com/
 created: 2026-06-27
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # OpenAI
@@ -69,6 +69,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - 외부: <https://openai.com/>
 - [[tech-bridge-altman-frontier-rl-pause]] · [[tech-bridge-altman-agi-superintelligence]] · [[tech-bridge-altman-astra-hardware]] — Sam Altman 3부작 (2026-09-06 ingest)
 - [[sam-altman]] · [[openai-astra]] · [[hugging-face]]
+- [[tech-bridge-stigg-ai-companies-building-banks]] — financial engineering 팀·4월 가격 변경(벤더 CEO 주장, 2026-10-12)
 
 ## 경쟁사 CEO가 말하는 OpenAI (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
 
@@ -206,3 +207,11 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - 모델 표기(발화): GPT-5.1-Codex-Max(*"November 19"*, 연도 미발화), GPT-5.5, GPT-5.4 mini.
 
 → [[codex]] · [[charlie-guo]] · [[gabriel-chua]]
+
+## 과금 인프라 벤더가 말하는 OpenAI — financial engineering 팀, 4월 가격 변경 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO)의 주장, ⚠️ 원 자료 미확인:
+
+- *"in February, OpenAI, they have a quite a great team. The their team called financial engineering. And these guys basically (…) published how they think about the architecture and what they had to build for this to work at the scale of OpenAI."*(07:43~07:59) 내용(화자의 요약): 런타임의 *"decision waterfall"* — 기능 접근, 플랜의 rate limit, trial·프로모션 여부를 요청 시점에 동기로, 결정론적 우선순위로 평가(08:06~09:08). 화자는 이를 은행 거래 시스템에 비유한다 → [[reserve-then-settle]]
+- 4월 가격 비상: *"OpenAI basically changing how the product here is being priced, bumping the price overnight 5 5x"*(01:48~01:57) — 제품 미특정. 그리고 뒤에서 *"they didn't change the pricing. All they did was change the pace in which tokens get burned (…) So that effectively was a pricing change."*(17:22~17:36) ⚠️ 두 서술이 같은 사건인지 화자는 잇지 않는다. 연도 미발화.
+- 맥락: 같은 시기 OpenAI는 DevDay에서 구독을 제3자 앱에 들고 가게 하는 방향을 냈다 → [[bring-your-own-subscription]]

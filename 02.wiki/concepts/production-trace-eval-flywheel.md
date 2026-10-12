@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [evals, production-traces, regression-tasks, hill-climbing, observability, self-improvement, flywheel]
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
-related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine]
+related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory]
 created: 2026-09-30
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -59,3 +59,20 @@ updated: 2026-10-09
 ## 트레이스가 eval 태스크가 아니라 그래프 변경이 될 때 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
 
 [[david-khourshid|David Khourshid]]의 루프 *model → observe → propose → compare* 도 트레이스를 연료로 쓰지만 산출물이 다르다 — 회귀 태스크가 아니라 **상태 머신 V2**. 그리고 eval이 모두 통과해도 남는 칸을 짚는다: *"all of your evals could pass uh with the first machine, but unless you're dog fooding (…) you're not going to get the optimal results"*(14:38~14:51) → eval의 세 번째 대상 *"evaling the edges"*(12:29~12:31). 화자는 이 계보를 **process mining**(*"about 20 years older"*, 16:53~17:12 — ⚠️ 미확인)에 잇는다. → [[agent-state-machine]]
+
+## 두 번째 벤더, 같은 칸 — 사람이 배포를 결정한다 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
+
+[[braintrust|Braintrust]] 발표(설명란 기준 [[hossein-niazmandi|Hossein Niazmandi]])가 같은 루프를 *"the North Star for many teams"* 로 그린다: *"I can observe the failure modes that happen based on dimensions that I define. I want to be able to grab those failure modes and create test cases so that I can iterate offline. So, I can improve my agent quality without introducing new regressions."*(06:12~06:31), 반복의 이유는 *"just like in classical ML, drift becomes a real thing"*(06:31~06:36). W&B와 다른 점 셋:
+
+1. **실패만 말한다** — 루프의 입력은 *failure modes* 와 *"scenarios where your users had poor interactions"*(10:24~10:31). W&B의 *"every production goodness as well"* 은 없다.
+2. **루프를 도는 것은 사용자의 코딩 에이전트** — *"tell your coding agent of choice, "Find me all traces in the last 24 hours where the user had a poor experience. Run the evals for me.""*(13:59~14:10). W&B ARIA처럼 *자사 에이전트가 스스로* 가 아니라 headless 플랫폼을 외부 에이전트가 쓴다.
+3. ⭐ **마지막 칸이 사람** — *"the human's responsibility is to review the outcome. If I have different iterations of these e-vals that are run by my coding agent, I can look at the outcome and make the decision of which version of it is the best for what I want to ship to production."*(16:05~16:23). 위 "⚠️ 유보"의 *작성자 = 검증자* 빈자리에 대한 한 답 — 단 측정·사례 없음.
+
+그리고 루프 아래의 인프라를 처음 문제 삼는다 — 트레이스는 *"semi-structured JSON"*, 상호작용당 *"hundreds of megabytes"*, 실시간 쿼리와 장기 쿼리라는 *"Two different workloads"*(11:13~12:25). → [[eval-platform-maturity-stages]]
+
+> ⚠️ **용어**: Niazmandi는 evals = *프로덕션 전*, observability = *프로덕션 중* 으로 나눈다(00:22~01:14). 이 페이지의 루프는 그 둘을 잇는 것이고, W&B는 프로덕션 트레이스를 곧장 eval 태스크로 부른다 — 이름의 경계가 다를 뿐 주장 충돌은 아니다.
+> ⚠️ **화자 안의 긴장**: 같은 발표에서 *"You create the dimensions of failure and success because you know the outcomes"*(10:17~10:22)와 *"Rather than you having to think about these dimensions (…) Braintrust can surface these insights automatically"*(14:52~15:02). 후자는 자사 기능 피치.
+
+## 트레이스의 세 갈래 — eval은 그중 하나 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+[[jake-broekhuizen|Broekhuizen]]([[langchain|LangChain]]): *"most trace data actually should stay as history, as referenceable history. Some some might become data sets to do offline evaluations (…) A small (…) subset should end up becoming what changes your agent's memory."*(12:57~13:13). 이 페이지의 순환(트레이스 → eval 태스크)은 **세 갈래(history · eval 데이터셋 · 메모리 갱신) 중 하나**로 놓인다. 메모리 갱신 갈래는 [[trace-to-memory-loop]], 중요한 행동은 다시 eval로 보호한다(*"protecting important behavior with emails[=evals]"* 14:50~14:52). ⚠️ 벤더 진술, 비율·기준 미발화.

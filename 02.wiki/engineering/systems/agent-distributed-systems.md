@@ -4,10 +4,10 @@ type: engineering
 category: system
 tags: [agent, distributed-systems, reliability, idempotency, observability, safety]
 created: 2026-09-02
-updated: 2026-10-10
-related: [agent-harness-design, verifiable-goals, context-engineering, agentic-misbehavior, managed-agents, token-roles, agent-identity-separation, durable-execution, human-as-async-api]
+updated: 2026-10-12
+related: [agent-harness-design, verifiable-goals, context-engineering, agentic-misbehavior, managed-agents, token-roles, agent-identity-separation, durable-execution, human-as-async-api, trace-to-memory-loop, reserve-then-settle]
 first-seen: tech-bridge-agents-as-distributed-systems
-sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform-agent-era, tech-bridge-build-time-vs-runtime-tools, tech-bridge-human-is-async-api]
+sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform-agent-era, tech-bridge-build-time-vs-runtime-tools, tech-bridge-human-is-async-api, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks]
 ---
 
 # Agent Distributed Systems
@@ -140,6 +140,16 @@ sources: [tech-bridge-agents-as-distributed-systems, tech-bridge-claude-platform
 [[temporal|Temporal]] 직원의 발표가 이 페이지의 요구 일부를 **개별 도구 설계가 아니라 실행 모델**로 푸는 구현을 보여 준다 — *"standardize your fa failure handling and your state management in your system any system any distributed system especially any systems with agents"*(05:34~05:46). 에이전트 루프는 workflow(결정론, 이벤트 히스토리로 replay), 모델·도구 호출은 activity(비결정론)에 두고, worker가 죽어도 *"It's not redone. It's just replayed"*(15:52~15:56). → [[durable-execution]]
 
 원칙 6(승인 바인딩)과의 관계: 같은 발표는 사람 승인을 *wait condition + signal* 로 받아 **오프라인 중에도 잃지 않는 것**을 보여 주지만(15:18~15:34), 승인이 **어떤 행동·시점에 유효한지**는 다루지 않는다 → [[human-as-async-api]]. ⚠️ 벤더 발표, 멱등성 키·보상은 언급 없음 — durable execution이 이 페이지의 원칙을 대체하는 것이 아니라 그 일부(상태·재개)를 플랫폼으로 옮기는 것으로 읽는다(위키의 정리).
+
+## 캐시의 반대 방향 실패 — 새 기억이 안 보인다 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+이 페이지의 처방(*메모리를 무효화 가능한 캐시로*)은 **낡은 기억이 남는** 실패를 겨눈다. [[jake-broekhuizen|Broekhuizen]]([[langchain|LangChain]])은 반대쪽을 겪었다 — 장시간 백그라운드 에이전트가 초반에 메모리를 갱신해도 *"because of the runtime state and because of the way that it's accessing memory, you don't actually access that"*(13:37~13:44) → *"understanding what you can cache, what you can't cache"*(13:47~13:50). 갱신 경로(hot path / *"hot reload path"* 14:47)도 캐시 일관성 설계의 대상이다. ⚠️ 화자 경험담, 구체 구성 미발화.
+
+## 돈을 쓰는 부작용 — 같은 풀에 동시에 인출하는 10,000 에이전트 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]])은 이 페이지의 도구를 **과금 경로**에 적용한다. 두 사람이 같은 $10 계좌에서 동시에 인출하는 문제는 은행에선 풀렸지만 *"with the AI and agents, it's not that case. You could have whatever, like 10,000 agents trying to reach out to the same dollar pool"*(10:24~10:35) — 잔액이 있어 보여도 동시에 인출하면 *"concurrency become an issue"*(10:46~10:48). 처방: *"can you basically introduce traits like hold and settle? Think about item potency[=idempotency] and auditability of those um requests"*(11:22~11:32). 그리고 에이전트 작업의 비용은 미리 모르므로 실행 중 잔액을 계속 검사하고 미리 예약한 뒤 비동기로 정산한다(15:33~15:53) → [[reserve-then-settle]]
+
+⚠️ 화자는 이를 *"double spend"* 와 *"double entry bookkeeping"* 으로 한 줄에 잇는다(10:55~11:01) — 앞은 동시성, 뒤는 원장 기록 방식으로 다른 개념이다. ⚠️ 벤더 발표.
 
 ## References
 

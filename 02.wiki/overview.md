@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-11
+updated: 2026-10-12
 sources: []
 ---
 
@@ -227,6 +227,10 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ① [[tech-bridge-tessl-harness-engineering-factory|Tessl 편]]([[dru-knox|Dru Knox]]) — [[software-factory]]에 **세 번째 벤더 정의**(산출물 전부를 에이전트가 + autonomy → automation → quality의 순서)가 붙고, [[harness-engineering]]이 단일 세션의 래퍼에서 **팩토리의 루프를 짓는 일**(*"loop engineering"*)로 넓어졌다 → [[inner-outer-meta-loops]]. 보상은 속도가 아니라 품질이라는 주장은 Kent Beck의 *"always goes off the rails"* 와 갈린다(⚠️ 둘 다 측정 없음, 벤더).
   ② [[tech-bridge-brockman-start-building-before-ready|Brockman 두 번째 대담]](Silicon Valley Girl, 멤버 전용 → 공개) — 같은 사장이 보안·AGI 대신 **소상공인·창업자 조언**을 한다. 병목은 모델이 아니라 야심과 "무엇을 시킬지"이고([[capability-discovery-burden]]에 *세 가지 용도 → 파워 유저* 경계), 제품은 모델 한계를 우회하지 말고 모델과 함께 커지는 자리에 서라고 한다([[model-scaling-durability]], ⚠️ [[harness-engineering]]과 긴장). 토큰맥싱을 *주 목표는 아니지만 좋은 대리 지표* 로 놓고 리더보드를 운영하며([[value-maxing]]), Dots를 *"powered by GPT-6 Astra"* 라 불러 [[openai-astra]]의 명명 질문에 첫 단서를 준다. ⚠️ 당사자 진술, 수치 전부 조건 없음.
   ③ [[tech-bridge-cooking-with-codex|OpenAI의 Codex 워크숍]]([[charlie-guo|Charlie Guo]] · [[gabriel-chua|Gabriel Chua]], 2026-06-29 녹화) — 이 위키 첫 **하네스 제작사 직원의 사용법**. Karpathy식 *검증 가능한 목표*가 제품 기능 `/goal` 이 되고(약한 기준 = *"monkey's paw"*), 자동화는 **스레드 안 heartbeat**와 **새 스레드 예약**으로 나뉘며, 위임은 **누구에게 보일지**로 고른다([[subagent-vs-thread-handoff]]). 훅은 자율이 길어질수록의 가드레일, App Server는 사용자의 ChatGPT 구독으로 제3자 제품을 돌리는 길. 결론은 *"build the machine that builds the machine"* — software factory의 네 번째 화자(Factory·Warp·Tessl 다음). ⚠️ 당사자 진술, Bakaus 관찰(서브에이전트는 명시 요청 필요)과 충돌.
+- *2026-10-12*: [[tech-bridge]] **3편** ingest(10-11 업로드 3편, 모두 설명란 기준 AI Engineer 계열 추정 발표). 축은 **에이전트 트레이스·사용량을 받치는 인프라 벤더** — 메모리(LangChain)·과금(Stigg)·eval(Braintrust)이다.
+  ① [[tech-bridge-langchain-learning-agent-memory|LangChain 메모리 편]]([[jake-broekhuizen|Jake Broekhuizen]]) — [[agent-memory]]에 **semantic · episodic · procedural + working/long-term** 분류가 완결되고, *관찰 ≠ 학습*(트레이스는 증거, 필터를 거쳐야 메모리)이 [[trace-to-memory-loop]]으로 섰다. 사람 게이트의 기준이 **범위**([[no-silent-write]])에서 **메모리 종류**(procedural)로 하나 더 생겼고, "dreaming"은 Anthropic(세션 밖 배치)과 LangChain(작업 중 포함)이 다른 범위로 쓴다 → [[langsmith]] Context Hub(⚠️ 벤더, 측정 없음).
+  ② [[tech-bridge-stigg-ai-companies-building-banks|Stigg 편]]([[dor-sasson|Dor Sasson]]) — 토큰 비용이 처음으로 **파는 쪽의 인프라** 문제로 들어왔다: 권한·한도 검사가 청구서 뒤에 오는 구조가 4월 가격 비상의 원인이고, 은행·ATM처럼 hot path에서 먼저 승인·예약하고 정산은 뒤에 해야 한다 → [[reserve-then-settle]]. [[openclaw]]가 처음으로 정책 사건(Anthropic 구독 경로 차단)의 대상이 되고 [[bring-your-own-subscription]]과 방향이 엇갈린다(⚠️ 벤더 CEO 주장, 보조 규모 단위 미발화, Uber 기간은 Kimchi 편과 모순).
+  ③ [[tech-bridge-braintrust-eval-platform-systems-problem|Braintrust 편]]([[hossein-niazmandi|Hossein Niazmandi]]) — eval 도구가 스프레드시트 → 맞춤 UI → 실험 → 프로덕션 연결로 올라가는 [[eval-platform-maturity-stages|성숙 단계]]와, 그 끝에서 [[production-trace-eval-flywheel]]을 받치는 트레이스 저장·쿼리가 **systems problem**이 된다는 진단(⚠️ eval 플랫폼 벤더의 build vs buy 논지). W&B에 이은 두 번째 벤더가 같은 루프를 그리되, 이번엔 사용자의 코딩 에이전트가 headless로 돌고 **사람이 배포를 결정**한다. 같은 날 LangChain은 그 트레이스의 목적지를 eval 하나가 아니라 history · eval 데이터셋 · 메모리 셋으로 나눈다.
 
 ---
 

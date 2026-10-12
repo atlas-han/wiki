@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks]
 created: 2026-09-10
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # OpenClaw
@@ -30,6 +30,7 @@ updated: 2026-10-09
 | [[tech-bridge-nadella-copilot-autopilot]] (2026-09-28) | en-orig *"open clock"* · *"open club"* (ko "오픈 클럽"·"오픈 클라우드") | [[satya-nadella]]([[microsoft]]): *"open clock came out and I think inspired … all of us … to say wow there is a way … to think about these autopilots"*(12:33~12:40) — ⭐ **대기업 CEO가 자기 제품(Autopilot)의 영감으로 명시한 첫 사례.** Copilot tasks가 *"just around the same time as open clock came out"*(02:44~02:48). 진행자: 에이전트 붐이 *"earlier this year with open club"*(03:53~03:56). 표기는 세 번 다 ASR이라 **OpenClaw로 읽는 것은 위키의 추정** |
 | [[tech-bridge-introspection-loop-is-the-product]] (2026-09-29) | en-orig *"Clawbot"* · *"Open Claw"* · *"open cloud"* | [[roland-gavrilescu]]([[introspection-dev\|Introspection]]): ⭐ **옛 이름**을 말한다 — *"Clawbot? That was the original I original name of what is now now now known as Open Claw"*(01:35~01:42). *"this guy, AJ"* 가 그 위에 만든 **자동차 할인 협상 루프**를 *"the first real example of loop is the product"* 로 든다(01:45~02:36) → [[loop-is-the-product]] |
 | [[tech-bridge-agentcraft-strategy-game]] (2026-10-07 업로드) | en-orig *"open claw"* (ko "오픈클로") | [[ido-salomon]]([[agentcraft]]): 지도 위 유닛이 *"an actual representation of uh cloud[=Claude] code or open claw, whatever agent that you can imagine"*(02:19~02:25) — **코딩 에이전트와 나란히 감독 대상 에이전트**의 예로 |
+| [[tech-bridge-stigg-ai-companies-building-banks]] (2026-10-11 업로드) | en-orig *"open flow"*(01:41) · *"open claw"*(02:35, 02:44) (`en`·ko *"OpenFlow"*·*"Open Claude"*) | [[dor-sasson]]([[stigg]]): ⭐ **첫 정책 사건** — Anthropic이 4월 서드파티 에이전트의 구독 플랜 사용을 끊었고, 그 전엔 Claude Max 구독 안 OpenClaw 사용을 보조했다(⚠️ 화자 주장) |
 
 ## 소스들이 합쳐 말하는 것 (위키의 종합, ⚠️ 추정)
 
@@ -48,6 +49,7 @@ updated: 2026-10-09
 
 - [[understand-anything]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-knowledge-work-agent-infrastructure]] · [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] · [[tech-bridge-zuckerberg-muse-personal-agent]]
 - 관련: [[confidential-vm]] · [[muse]]
+- [[tech-bridge-stigg-ai-companies-building-banks]] — Anthropic 구독 사용 차단(화자 주장)
 
 ## 옛 이름 "Clawbot"과 첫 루프 (2026-09-30 · [[tech-bridge-introspection-loop-is-the-product]])
 
@@ -62,3 +64,14 @@ updated: 2026-10-09
 ## 다른 에이전트 제품을 부르는 개인 에이전트 — "Lord Crandon" (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 [[charlie-holtz|Charlie Holtz]]가 자신의 OpenClaw를 *"my open claw called Lord Crandon"*(13:05~13:08)으로 소개한다. 그것이 **[[conductor|Conductor]] API**를 갖고 있어 *"from my phone or from my telegram or from really or from slack or wherever I am"*(13:20~13:24) *"create a new workspace for me that makes uh yeah makes all the buttons blue"* 를 보내면 워크스페이스를 만들고 코딩 에이전트에게 일을 넘긴다(13:35~14:03). OpenClaw가 **코딩 에이전트 오케스트레이터의 원격 입구**로 쓰이는 첫 사례다. ⚠️ 시연은 워크스페이스 생성까지만 보이고 결과물은 보이지 않는다.
+
+## 처음으로 정책 사건 — Claude 구독 경로가 끊겼다 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO)이 4월(연도 미발화)의 가격 비상 첫 번째로 든다 — *"we had Anthropic basically eliminating access for open flow and other third-party agents to basically use the subscriptions plans."*(01:38~01:47). 이어서:
+
+> *"effectively Anthropic was subsidizing every consumption of every user using open claw within the claw claw max[=Claude Max] subscription. So, effectively what the customers were paying daily was, you know, dollars and cents. But on the on the cost side for Anthropic, it was like 150s to even 750 subsidized"* (02:38~03:01)
+
+- 이 위키에서 OpenClaw가 **사용 사례가 아니라 공급자 정책의 대상**으로 나온 첫 소스다. 함의: OpenClaw는 (적어도 4월 전에는) **Claude 구독으로 구동될 수 있었다.**
+- ⚠️ 01:41은 ASR *"open flow"* 다 — OpenClaw로 읽는 것은 02:35 *"open claw"* 와 설명란(*"Anthropic의 OpenClaw 차단"*)에 기댄 판독. 차단 범위는 *"and other third-party agents"* 로 OpenClaw만이 아니다. *"claw claw max"* → Claude Max도 판독(`en`·ko는 Max 탈락).
+- ⚠️ 150~750의 **단위 미발화**(설명란의 *"사용자당 … 배"* 는 업로더 해석). 보조 규모·Anthropic의 내부 사정(*"didn't have a an effective way to delineate between users who are using their APIs and users are using their subscription programs"*, 03:13~03:22)은 **경쟁 관계 없는 벤더 CEO의 주장, 출처 미제시.** 이 위키는 Anthropic 쪽 발표를 확인하지 않았다.
+- **여전히 어느 소스도 OpenClaw의 제작자·기능을 설명하지 않는다.**

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [token-economics, adoption, budget, fomo, austerity]
 aliases: [둠 루프, overspending and underusing, 토큰 맥싱 악순환]
-related: [trusted-throughput, token-roles, model-mixing-economics, agent-roi-measurement, agent-org-adoption, compute-constrained-growth, value-maxing, token-minimization-trap]
+related: [trusted-throughput, token-roles, model-mixing-economics, agent-roi-measurement, agent-org-adoption, compute-constrained-growth, value-maxing, token-minimization-trap, reserve-then-settle]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-stigg-ai-companies-building-banks]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # 과지출·저활용 둠 루프
@@ -71,3 +71,18 @@ updated: 2026-10-09
 [[cast-ai|Cast AI]]의 Laura가 든 *"in the last few weeks"* 의 두 뉴스: 인도의 한 회사가 *"spent $500 million on anthropic alone in one months"*, Uber CTO가 *"in the last four months he actually used the entire budget of anthropic for the entire year"*(00:43~01:06) — 이 페이지의 *"1년 치 토큰 예산을 한 분기에"* 의 실명 판본. ⚠️ 둘 다 보도·트윗 미특정. 5억 달러 일화는 [[tech-bridge-trusted-throughput]]에도 있다(같은 보도인지 미확인).
 
 루프의 긴축 국면(*"Companies responded this by limiting the use of token"*, 01:18~01:21)을 Kimchi는 **틀린 대응**으로 보고, 빠져나오는 길을 Coinbase와 같은 방향 — **모델 믹스를 하네스가 자동으로** — 에서 찾는다. 자사 3개월 차트: 토큰 1.5배↑, 비용 1.5배↓(05:06~05:21). ⚠️ 이 페이지의 결론(*모델 믹스 최적화는 지출을 줄이지만 루프를 깨지는 못한다*)에 대한 반례는 아니다 — 가치 척도는 여전히 없다.
+
+## 파는 쪽에서 본 원인 — 검사가 청구서 뒤에 온다 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO)은 이 페이지의 조직 층 증상을 **공급자 인프라의 결함**으로 읽는다 — *"the checks for what you're entitled, what you're allowed to do, whether you're an agent or a user via AI product, happened uh after uh the invoice and not before."*(04:32~04:46) → *"it's sticker shock"*(05:03~05:08). 해법은 은행처럼 *"check before we draw down, before we consume"*(05:20~05:25) → [[reserve-then-settle]]
+
+그가 든 사례(⚠️ 출처 미제시):
+- 이름 없는 회사 — *"half a billion of their AI cloud credits just merely having like a few employees burning through the entire organization contract."*(03:44~03:53)
+- [[uber|Uber]] — *"torched down their entire uh AI usage consumption budget for the year in just a few weeks into the year."*(03:55~04:04)
+- Replit — *"what could happen if uh a single org has three users that are basically burning down the entire credit pool"*(04:07~04:14) — ⚠️ 실제 사건이 아니라 예시로 발화.
+
+> ⚠️ **Contradiction: Uber의 기간.** 위 Kimchi 편(Laura)은 Uber CTO가 *"in the last four months"* 에 연간 Anthropic 예산을 썼다고 했다. Sasson은 *"just a few weeks into the year"*, 공급자 미언급. **넉 달 대 몇 주** — 둘 다 출처 미제시, 이 위키는 판정하지 않는다.
+>
+> ⚠️ **"5억" 일화의 세 번째 판본.** Laura(인도 회사, Anthropic, 한 달), [[mingsheng-hong|Hong]](한 달에 Claude 5억 달러), Sasson(이름 없는 회사, *"AI cloud credits"*, 직원 몇 명이 조직 계약 전체를 소진). 세부가 다르다 — 같은 사건인지 미확인.
+>
+> ⚠️ **처방의 대립.** Kimchi는 *토큰 배급은 틀렸다(무제한·저렴하게)*, Sasson은 기업 구매자가 팀·사용자·에이전트별 *"spend caps"*·*"fine-grained control"* 을 원한다(13:14~13:48). 층위가 다르지만(사내 정책 vs 공급자 기능) *통제가 답인가* 에서 갈린다. 둘 다 벤더.

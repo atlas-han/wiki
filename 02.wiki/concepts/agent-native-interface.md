@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-native-interface, mcp, tool-design, dashboards, agents-as-users, context-engineering, saas]
 aliases: [에이전트용 인터페이스, interface designed for agents, 에이전트를 위한 인터페이스, new species of user]
-related: [model-context-protocol, agent-tool-design-practices, deferred-tool-context, toolbox-pattern, knowledge-work-agent-gap, llm-as-search-user, model-rendered-interface, agentic-sites, retrieval-side-context-compression, push-vs-pull-context-retrieval, file-system-agent]
+related: [model-context-protocol, agent-tool-design-practices, deferred-tool-context, toolbox-pattern, knowledge-work-agent-gap, llm-as-search-user, model-rendered-interface, agentic-sites, retrieval-side-context-compression, push-vs-pull-context-retrieval, file-system-agent, eval-platform-maturity-stages]
 first-seen: tech-bridge-composio-dashboard-is-dead
-sources: [tech-bridge-composio-dashboard-is-dead, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-composio-dashboard-is-dead, tech-bridge-cooking-with-codex, tech-bridge-braintrust-eval-platform-systems-problem]
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # 에이전트 네이티브 인터페이스 (Agent-Native Interface)
@@ -62,6 +62,10 @@ updated: 2026-10-11
 위 Brockman(컴퓨터 사용) vs Simionescu(에이전트 전용 층) 대립에, [[openai|OpenAI]]의 [[charlie-guo|Charlie Guo]]는 [[codex|Codex]]의 세 제어 표면을 **용도별로** 나눈다(26:05~28:15): in-app browser는 로컬 웹앱의 깊은 테스트, **computer use**는 *"applications that otherwise don't have a programmatic interface"*(27:09~27:13) — *"it's great if it's a web app and you can reverse engineer the API calls, but (…) there's a lot of legacy software out there which doesn't easily expose that kind of interface to an agent"*(27:13~27:24), **Chrome extension**은 로그인 상태·권한을 넘길 때(27:43~27:48). [[gabriel-chua|Gabriel Chua]]의 데모 동기도 같다 — *"not everything had an API"*(21:31~21:33).
 
 → 위키의 독해: 프로그래매틱 인터페이스가 있으면 그것, 없으면 사람 화면. **에이전트 네이티브 인터페이스가 있는 곳에선 그것이 우선**이라는 점에서 Simionescu 쪽과 양립하고, 없는 곳의 폴백으로 컴퓨터 사용을 둔다는 점에서 Brockman 쪽과 양립한다. ⚠️ 하네스 제작사의 진술 — 컴퓨터 사용은 자사 기능이다.
+
+## eval 플랫폼도 에이전트가 쓴다 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
+
+[[braintrust|Braintrust]] 발표: *"more recently, we've seen that agents have become a first-class citizen of these eval platforms, where you want to be able to use natural language in a headless experience"*(13:44~13:59). 이유는 *"because these coding agents have access to all of your underlying infrastructure and your code base, they become the mechanism to run the evals and log those results."*(14:08~14:20). 대시보드(③단계 UI)를 사람이 보던 자리를 코딩 에이전트가 headless로 대신한다 — Composio의 *"dashboard is dead"* 와 같은 이동을 eval 도구에서 본다. ⚠️ ko는 *"in a headless experience"* 를 **"자연어 없이"** 로 뒤집었다(13:55). → [[eval-platform-maturity-stages]]
 
 ## References
 

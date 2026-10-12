@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
-related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails]
+related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory]
 created: 2026-09-08
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # Agent Memory
@@ -184,3 +184,23 @@ updated: 2026-10-11
 ## 제품 기본값 — 꺼져 있고, 도구 대화는 건너뛸 수 있다 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
 
 [[codex|Codex]] memories(2026-06 기준, [[gabriel-chua|Gabriel Chua]]): *"it is off by default"*(15:28~15:31). 안전 옵션 — *"skip uh generating memories in chats that involve tools because sometimes the tools might return information that you might not want persisted over time"*(16:16~16:26) → [[production-memory-guardrails]] · [[prompt-injection]](도구 출력 = 신뢰할 수 없는 입력이 기억으로 굳는 경로를 막는 설정). 비용: *"memories, uh, and Chronicle will use up a little bit more of your token budget"*(18:39~18:44). **Chronicle**(Pro, research preview)은 텍스트가 아니라 **화면 맥락**을 기억한다 — *"memories and context isn't just textural. It's also about what we're doing, what's on screen"*(15:40~15:46).
+
+## 세 분류 · working vs long-term · 종류별 게이트 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+[[jake-broekhuizen|Jake Broekhuizen]]([[langchain|LangChain]])이 인지과학에서 빌린 분류를 완결된 형태로 준다 — *"A taxonomy that we borrow from cognitive science"*(04:25~04:29):
+
+| 분류 | 정의 | 담는 것 |
+|---|---|---|
+| semantic | *"what the agent knows"*(04:36~04:37) | 사실 · 선호 |
+| episodic | *"what the agent has experienced"*(04:51~04:53) | 학습된 패턴 · 과거 상호작용 · 예시 |
+| procedural | *"how the agent should behave"*(05:00~05:02) | 지시 · 스킬 · 규칙 |
+
+그리고 *"Procedural memory is where actually most of the visible gains come from"*(05:12~05:17). working memory(스크래치패드·도구 결과·검색 파일)와 long-term memory(스토어의 지시·스킬)를 나누고, 트레이스를 *"a record of how our working memory changed"*(07:13~07:18)로 본다 — *"Some part of that should stay as history. Some part of that should become durable long-term context."*(07:18~07:24) → [[trace-to-memory-loop]]
+
+이 페이지의 오래된 미해결 *"무엇을 저장할지 누가 정하는가"* 에 두 겹의 답: **필터**(*"most evidence should stay as history"* 08:44~08:46)와 **종류별 게이트**(procedural 변경은 *"some level of human in the loop"* 14:32~14:37, ⚠️ 근거는 화자 추정 *"about 75% of the behavior"*). [[no-silent-write]]가 **범위**(공유 지식)로 사람 승인을 걸었다면 이 소스는 **종류**(procedural)로 건다.
+
+> ⚠️ **Contradiction: 메모리의 정의 — 출처 vs 기능.** 이 페이지의 first-seen([[tech-bridge-agent-knowledge-four-ways]])은 메모리를 *에이전트가 스스로 수집한 것* 으로 정의해 사람이 적은 것(RAG)과 갈랐다. Broekhuizen은 *"the durable context that an agent references that will guide future runs"*(03:54~03:57)로 정의하고 **사람이 준 규칙·스킬(procedural)도 메모리**에 넣는다(*"We were giving it a rule to follow"* 05:33~05:36).
+
+> ⚠️ 새 함정 — **갱신이 안 보인다.** 장시간 백그라운드 에이전트는 캐시·런타임 상태 때문에 초반에 쓴 메모리를 이후에 못 읽을 수 있다(13:30~13:55). 이 페이지가 다뤄 온 *낡은 기억*([[agent-distributed-systems]])의 반대편.
+
+⚠️ LangChain 당사자 발표, 측정 없음.

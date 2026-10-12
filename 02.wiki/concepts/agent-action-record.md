@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [logging, memory, trust, observability, skills]
 aliases: [행동 기록, the record]
-related: [agent-memory, agent-knowledge-sourcing, knowledge-work-agent-gap, behavior-validated-trust, skill-self-improvement, named-human-accountability, black-box-agent-approach]
+related: [agent-memory, agent-knowledge-sourcing, knowledge-work-agent-gap, behavior-validated-trust, skill-self-improvement, named-human-accountability, black-box-agent-approach, trace-to-memory-loop, eval-platform-maturity-stages]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-eval-platform-systems-problem]
 created: 2026-09-09
-updated: 2026-09-16
+updated: 2026-10-12
 ---
 
 # 에이전트 행동 기록
@@ -71,3 +71,11 @@ updated: 2026-09-16
 > 에이전트가 여러 데이터베이스를 오가며 데이터를 모으는 경우, **우리는 그 에이전트가 왜 그 최종 결정을 내렸는지 이해해야 합니다.** 그 모든 기능을 관찰할 수 있다는 것은 **AI에 대한 투명성과 신뢰**에 매우 중요합니다. (08:26~08:46)
 
 이 페이지의 기록이 *무엇을 했는가* 였다면 이 진술은 **왜 그렇게 결정했는가**까지를 요구한다 — 행동 로그와 **결정 근거**는 다른 것인데 소스는 둘을 구분하지 않는다. 모니터링 항목은 **토큰 비용·보안** 둘. ⚠️ 어떤 도구·방법으로 관찰하는지는 없다. ko는 여기서 *agent* 를 **"상담원"** 으로 옮겼다.
+
+## ⚠️ Contradiction: 로그는 메모리가 아니라 원료다 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+> ⚠️ **Contradiction.** 이 페이지는 행동 로그를 모으면 *"에이전트가 기억을 얻는다"* 고 한다. [[jake-broekhuizen|Broekhuizen]]([[langchain|LangChain]])은 *"A trace, a transcript, or a log is evidence of what happened. It only becomes memory when that lesson is converted into durable context"*(04:00~04:12)이고, 전부 장기 메모리로 올리면 *"it would make the agent struggle and it would make it harder to reason over future tasks"*(08:50~08:54)라고 한다. 이 페이지의 *스킬 = 조직이 일하는 방식의 증류* 는 필터에 해당하므로, 갈림점은 **로그 → 기억 사이에 필터를 두느냐**다. → [[trace-to-memory-loop]]
+
+## 기록의 비용 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
+
+기록하라(*"log every input output, every step of your trace execution that your agent takes"* 10:09~10:17)의 반대편 — [[braintrust|Braintrust]]: *"agent traces are nasty. They are semi-structured JSON. In some cases, we see teams that are logging a movie's worth of data in each interaction, hundreds of megabytes."*(11:13~11:27), *"your typical cloud data warehouses kind of collapse under this type of volume and load."*(11:30~11:34). 이 위키에서 행동 기록의 **저장·쿼리 비용**을 다룬 첫 소스. ⚠️ 벤더 진술, 수치는 사례 묘사.

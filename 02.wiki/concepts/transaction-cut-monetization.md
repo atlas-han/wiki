@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [business-model, pricing, tokens, commerce, agents]
 aliases: [토큰 무료 + 거래 수수료, transaction cut]
-related: [agent-roi-measurement, overspending-underusing-loop, trusted-throughput, mousepower, model-mixing-economics, intelligence-abundance]
+related: [agent-roi-measurement, overspending-underusing-loop, trusted-throughput, mousepower, model-mixing-economics, intelligence-abundance, reserve-then-settle]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-nadella-copilot-autopilot, tech-bridge-stigg-ai-companies-building-banks]
 created: 2026-09-14
-updated: 2026-09-29
+updated: 2026-10-12
 ---
 
 # 거래 수수료형 에이전트 과금
@@ -93,3 +93,5 @@ updated: 2026-09-29
 > there are finite number of business models that have to ultimately account for the fact that software for the first time has marginal cost. (05:43~05:49)
 
 > ⚠️ **Contradiction (부분):** 이 페이지의 모델은 **사용자 쪽 토큰을 대량 무료**로 두고 거래 상대 기업에서 몫을 뗀다. Nadella는 그런 무료분을 **일시적 보조금**으로 보고, 자기 제품은 **좌석(= 사용 권리) + 사용량**으로 사용자 기업이 한계비용을 낸다. 단 그의 *"finite"* 목록(05:28~05:43)에 *"an ad"* 와 *"transactions"* 가 들어 있어 **거래 수수료 모델 자체를 배제하지는 않는다** — 두 입장은 **누가 한계비용을 대는가**에서 갈린다. 어느 쪽도 토큰 원가를 대지 않는다. → [[software-marginal-cost]]
+
+> ⚠️ **두 번째 반대 사례 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]]).** [[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO)은 정액 구독 안의 대량 사용이 지속 불가능했던 사례로 [[anthropic|Anthropic]] × [[openclaw|OpenClaw]]를 든다 — 고객은 *"dollars and cents"*, 원가는 *"150s to even 750 subsidized"*(02:47~03:01, 단위 미발화) → 4월 서드파티 에이전트의 구독 사용 차단(⚠️ 화자 주장, 출처 미제시). 사용자 쪽 토큰을 대량 무료로 두는 모델이 *누가 비용을 대는지를 런타임에 구분하는 계층* 없이 버티는지에 대한 반례로 읽힌다(위키의 독해).

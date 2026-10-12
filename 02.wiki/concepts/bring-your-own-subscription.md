@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [platform, subscription, pricing, app-developer, token-economics, openai, chatgpt, byo]
 aliases: [BYO subscription, bring your own subscription, 구독 연동, 구독 이동]
-related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth]
+related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth, reserve-then-settle]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks]
 created: 2026-10-09
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # 구독을 들고 다니기
@@ -47,8 +47,15 @@ Altman은 이를 플랫폼 철학 안에 놓는다 — *"let people build apps i
 
 > ⚠️ ko는 App Server를 **"섬기는 사람"**(59:05, 59:35), open source를 **"영업 중"**(1:01:09)으로 옮긴다.
 
+## 반대 방향의 사건 — 서드파티 에이전트의 구독 사용 차단 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO, ⚠️ 벤더 주장·출처 미제시): 4월(연도 미발화) *"Anthropic basically eliminating access for open flow[=OpenClaw, 판독] and other third-party agents to basically use the subscriptions plans."*(01:38~01:47) — OpenAI가 구독을 *들고 나가게* 하는 쪽이라면, 이건 **제3자가 구독을 쓰는 경로를 닫는** 쪽이다.
+
+> ⚠️ **방향이 반대인 두 정책.** 사실 충돌은 아니다(회사·시점이 다르다). 하지만 Sasson의 진단 — *"Anthropic didn't have a an effective way to delineate between users who are using their APIs and users are using their subscription programs"*(03:13~03:22) — 을 받아들이면, 이 페이지의 BYO는 **바로 그 구분을 런타임에 하는 계층**(어느 앱·에이전트가 어느 구독의 토큰을 얼마나 쓰는지 요청마다 판정·차감)을 전제로 한다. 위 ⚠️ *"메커니즘이 없다"* 의 빈칸이 어떤 모양인지에 대한 간접 단서 → [[reserve-then-settle]]
+
 ## References
 
 - [[tech-bridge-altman-devday-dots]] — first-seen
 - [[openai]] · [[sam-altman]] · [[dan-shipper]]
 - 관련: [[software-marginal-cost]] · [[model-mixing-economics]] · [[intelligence-abundance]]
+- [[tech-bridge-stigg-ai-companies-building-banks]] — 반대 방향의 사건(Anthropic, 화자 주장) · [[reserve-then-settle]]

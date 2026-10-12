@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks]
 links:
   - https://www.anthropic.com
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 # Anthropic
@@ -118,6 +118,7 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 - [[tech-bridge-claude-code-team-workflow]]
 - [[tech-bridge-ai-native-sdlc]]
 - [[tech-bridge-company-brain-security]] · [[tech-bridge-agent-to-agent-as-search]] — 제3자 언급 (2026-09-10)
+- [[tech-bridge-stigg-ai-companies-building-banks]] — 4월 구독 경로 차단·보조금 규모(벤더 CEO 주장, 2026-10-12)
 
 ## CEO 1인칭 첫 소스 — "멈추지 말고 늦추자" (2026-09-16 · [[tech-bridge-dario-amodei-cbs-interview]])
 
@@ -184,3 +185,13 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - **경쟁·공급 관계의 상대가 Claude 사용자** — Huang *"I use I use um uh Claude to uh help me do research"*(19:59~20:04). ko는 "클라우드".
 - **가치관 질문** — Huang은 *"SI는 도구"*, 판단을 덜 가진 도구를 원한다(22:53~23:41). Brown은 이 질문과 공동 선언 대목에서 **발언하지 않는다.**
 - **SI 안전 공동 선언**에 Anthropic이 서명했는지는 발화되지 않는다(*"We"*, 24:31). → [[cross-lab-peer-review]]
+
+## 제3자 벤더가 말하는 4월 — 서드파티 에이전트의 구독 사용 차단 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]] CEO, 과금 인프라 벤더)의 주장 — **이 위키는 Anthropic 쪽 발표를 확인하지 않았다:**
+
+- 4월(연도 미발화) *"Anthropic basically eliminating access for open flow[=OpenClaw, 판독] and other third-party agents to basically use the subscriptions plans."*(01:38~01:47)
+- 그 전엔 Claude Max(ASR *"claw claw max"*) 구독 안의 [[openclaw|OpenClaw]] 사용을 보조했다 — 고객은 *"dollars and cents"*, Anthropic 원가 쪽은 *"150s to even 750 subsidized"*(02:46~03:01) ⚠️ 단위 미발화.
+- ⭐ 화자의 진단: *"what it seemed to be a business problem really was an infrastructure problem because Anthropic didn't have a an effective way to delineate between users who are using their APIs and users are using their subscription programs."*(03:08~03:22) → [[reserve-then-settle]]
+
+이 페이지의 *"가격 때문에 회피된다는 진술"*(2026-09-08, Cursor 필드 엔지니어)에 이은 **두 번째 제3자 가격 서술**이고, 방향이 반대다 — 그때는 *비싸서 피한다*, 이번엔 *구독 안에서는 원가보다 훨씬 싸게 팔고 있었다*. 둘 다 Anthropic 자신의 소스가 아니다. → [[software-marginal-cost]] · [[bring-your-own-subscription]](OpenAI는 반대로 구독을 제3자 앱에 들고 가게 한다)

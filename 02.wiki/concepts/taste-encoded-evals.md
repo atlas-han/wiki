@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [evals, llm-as-judge, taste, human-in-the-loop, calibration, ab-testing, multi-armed-bandit, traces, agent-recipes]
 aliases: [taste into evals, codify taste into evals, 안목을 평가 지표로, eval calibration, judge calibration, 판정관 보정, HITL calibration]
-related: [taste-vs-judgment, agent-recipes, loop-is-the-product, valued-work-per-watt, generator-evaluator-pattern, skill-evals, skill-self-improvement, self-harness, verifiable-goals, production-trace-eval-flywheel]
+related: [taste-vs-judgment, agent-recipes, loop-is-the-product, valued-work-per-watt, generator-evaluator-pattern, skill-evals, skill-self-improvement, self-harness, verifiable-goals, production-trace-eval-flywheel, eval-platform-maturity-stages]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem]
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-12
 ---
 
 # 제작자의 taste를 eval로 (Taste-Encoded Evals)
@@ -75,6 +75,10 @@ updated: 2026-09-30
 - **사용자가 동의하지 않으면** — 제작자 taste를 버리는가, 사용자를 고르는가? 말하지 않는다.
 - **A/B 지표** — 무엇을 "동의"로 세는지(답장률·채용 성사?) 없다.
 - **"one-to-one replica"** — 비유이며 검증 방법 없음.
+
+## 인프라 쪽에서 본 judge 보정 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
+
+[[braintrust|Braintrust]] 발표는 사람의 judge 보정을 **장기 실행 쿼리 워크로드**의 예로 든다: *"have humans who are doing alignment by annotating your your judges' outcomes. Two different workloads."*(12:12~12:25) — 실시간 관측과 다른 부하라는 것. 그리고 같은 발표의 피치는 *"Rather than you having to think about these dimensions and of success and failure for your AI agent, Braintrust can surface these insights automatically"*(14:52~15:02) — pi.recipes의 *에이전트가 트레이스에서 패턴을 찾는다* 와 같은 방향의 **두 번째 벤더 주장**이다. ⚠️ 둘 다 측정 없음.
 
 ## References
 

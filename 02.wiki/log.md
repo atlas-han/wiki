@@ -3,7 +3,7 @@ title: Log
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # Log
@@ -1959,3 +1959,32 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 게이트 G 지속(CLT git 직접 호출). 세 편은 편별 서브에이전트가 raw·source 페이지와 PROPOSAL을 쓰고, 신규 entity/concept 페이지·기존 페이지 보강·[[tech-bridge]]·index·overview·log는 단일 통합자가 페이지당 한 번에 합쳤다 — 여러 제안이 겹친 페이지([[software-factory]] · [[scheduled-agent-automations]] · [[ai-engineer]] · [[openai]] · [[codex]] · [[loop-is-the-product]] · [[harness-engineering]])는 섹션을 나란히 붙이고 순번(세 번째 벤더 정의 = Tessl, 네 번째 화자 = OpenAI Codex 워크숍)을 맞췄다.
+
+## [2026-10-12] ingest | Tech Bridge — AI 에이전트에 학습하는 메모리를(LangChain) · 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(Stigg) · 평가 플랫폼 만들기가 생각보다 어려운 이유(Braintrust) (10-11 업로드 3편)
+
+10-11 업로드 롱폼 3편(`0kVsv2WlL44` · `4JfLShdp92k` · `S3knIZq7jM8`, 모두 `availability: public`)을 ingest. 세 편 모두 자막 ko · en-orig · en 확보(전부 `automatic_captions`). 세 편 다 화자 이름이 설명란(·제목)에만 있고 행사명은 미발화(설명란 `ai.engineer` 링크 → [[ai-engineer|AI Engineer]] 계열 추정).
+
+**신규 source 3 · concept 2 · engineering 1 · entity 6**, index **770 → 782**(실측 `find 02.wiki -name "*.md" | wc -l` 782 일치).
+
+- `0kVsv2WlL44`(15:28, 챕터 19) → [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]]([[langchain|LangChain]] Labs 리드 — 설명란; 자막엔 자기소개 없음, *"the lab team at Langchain"* 00:28~00:30만). 메타 `upload_date` 20261011, `timestamp` 1791687615 = 2026-10-11 03:00:15 UTC, `availability: public`. 자막 ko·en-orig·en 모두 `automatic_captions`(txt 줄 수 en-orig 438 · en 441 · ko 443), en-orig 실질 공백 없음.
+  - 신규: [[jake-broekhuizen]] · [[langsmith]] · [[trace-to-memory-loop]]
+  - 보강: [[agent-memory]](세 분류·working/long-term·종류별 게이트, 정의 Contradiction) · [[langchain]](두 번째 1인칭, Labs) · [[skill-self-improvement]](아홉 번째 경로) · [[agent-dreaming]](용어 충돌 — 작업 중 포함) · [[production-trace-eval-flywheel]](트레이스 세 갈래) · [[agent-action-record]](Contradiction — 로그 = 기억?) · [[continual-learning]](컨텍스트 층, 세 번째 벤더) · [[agent-distributed-systems]](새 기억이 안 보이는 캐시 실패) · [[ai-engineer]](설명란 링크만) · [[tech-bridge]]
+  - ⚠️ 10:13~12:28 자사 제품(LangSmith·분석 엔진·Context Hub), 고객사·효과 수치 없음, *"about 75%"* 화자 추정. 행사명 미발화(ai.engineer → 추정). Contradiction: 메모리 정의(출처 vs 기능) · 로그 = 기억? · dreaming 범위 · 자동 쓰기 vs procedural 사람 게이트(Muse·Cursor·인밴드 vs 이 소스).
+  - ⚠️ ko: run → "사형 집행·처형"(7곳), *than ever before* → "결코 나타나지 않으며"(02:41), *finally, there's* → "모든 게 제자리를 찾았네요"(05:00), *update the way that it behaves* → "세금 정보를 업데이트"(09:22, 환각), *third level* → "3분의 1"(14:53), *should have … human in the loop* → "좀 먹어야"(14:33), harnesses → "환경"(+leverage → "악용"), Context Hub → "컨텍스트 센터"·"중심 … 정역학". `en` 공유: *"long-term fund managers"*, *"context center"*, *"sleep computing"*, *"test environments"*. `en` 단독: coding → "scheduling agent". en-orig: *"Langmith"* → LangSmith, *"context sub/Contexthub"* → Context Hub, *"emails"* → evals, *"open core"* 미판독(OpenClaw 가능성 — 확정 안 함).
+- `4JfLShdp92k`(19:00, 챕터 15) → [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]]([[stigg|Stigg]] co-founder & CEO — 직함 발화, 이름은 설명란에만). `upload_date` 20261011(`timestamp` 1791709227 = 2026-10-11 09:00:27 UTC), `availability: public`. 자막 ko·en-orig·en 모두 `automatic_captions`(txt 줄 수 en-orig 510 · en 491 · ko 492).
+  - 신규: [[stigg]] · [[dor-sasson]] · [[reserve-then-settle]](engineering/systems)
+  - 보강: [[openclaw]](⭐ 첫 정책 사건 — Anthropic 구독 경로 차단, 화자 주장) · [[anthropic]](두 번째 제3자 가격 서술, 방향 반대) · [[openai]](financial engineering 팀 2월 공개물·4월 변경, 화자 주장) · [[software-marginal-cost]](보조금 주체·경로·크기의 첫 주장) · [[overspending-underusing-loop]](파는 쪽 원인, Uber Contradiction) · [[bring-your-own-subscription]](반대 방향 사건, 메커니즘 간접 단서) · [[agent-distributed-systems]](돈을 쓰는 부작용) · [[uber]](제3자 예산 소진 주장 두 건) · [[ai-engineer]](설명란 링크만) · [[transaction-cut-monetization]](두 번째 반대 사례)
+  - ⚠️ 벤더 CEO — 타사 내부(보조 규모, API/구독 구분 불능, OpenAI financial engineering 공개물, 4월 변경 성격)와 사례(5억 크레딧·Uber·Replit) 전부 출처 미제시, 미확인. Stigg 제품명·기능 미발화. *"150s to even 750"* 단위 미발화 — 설명란 *"사용자당 150~750배"* 는 업로더 해석. *"in April"* 만, 연도 미발화(설명란·챕터의 2026은 업로더 표기). *"open flow"* → OpenClaw, *"claw claw max"* → Claude Max는 판독. OpenAI *"5 5x"*(01:53) vs *"didn't change the pricing"*(17:22) 화자 내부 긴장. "네 가지 패턴"의 넷째 미특정. double spend ≠ double-entry(화자가 한 줄로 이음).
+  - ⚠️ Contradiction: Uber 예산 소진 *"few weeks"*(Sasson) vs *"four months"*(Kimchi 편 Laura) · "5억" 일화 세 판본(Laura·Hong·Sasson) 세부 불일치 · 배급 반대(Kimchi) vs 지출 한도·세밀한 통제(Sasson) · BYO 구독(OpenAI) vs 서드파티 구독 사용 차단(Anthropic, 화자 주장) — 방향 반대.
+  - ⚠️ ko: bank → "벤치"(00:10), concurrency → "참석률·동의·출석"(10:23·10:46·11:14, "배경음악" 창작), rate limitations → "이자율"(08:28), hold and settle → "보존 … 합의"(11:24), credit pools → "신용조합"(13:04), seven-digit contract → "수백만 명"(13:31), 5 weeks → "5분 후에 … 몇 주"(01:10), 5x → "5번"(01:55), subscription 탈락(03:19), ⭐ *"you're pitching this"* → "우리는 홍보하고 있었습니다"(07:36, 1인칭 고백으로 반전). en·ko 공유: *"OpenFlow"*, *"Open Claude"*, Max 탈락. ko가 나은 곳: idempotency(en-orig *"item potency"*), hot path(en-orig *"hot bath"*).
+- `S3knIZq7jM8`(16:25, 챕터 15) → [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]]([[braintrust|Braintrust]], **이름은 설명란에만** — 자막에 자기소개 없음, 영상이 *"which we talked about earlier"* 로 발표 중간에서 시작). 10-11 업로드(`timestamp` 1791756023 = 2026-10-11 22:00:23 UTC, `availability: public`). 자막 ko·en-orig·en 모두 `automatic_captions`(txt 줄 수 en-orig 398 · en 397 · ko 397). en-orig 공백 없음.
+  - 신규: [[braintrust]] · [[eval-platform-maturity-stages]] · [[hossein-niazmandi]] — 편별 에이전트는 Melanie Warrick 선례로 인물 페이지를 빼자고 했으나, 통합자가 다수 선례([[dan-adler]] · [[ignacio-martinez]] · [[andrew-qu]] — 2026-09-02 원칙)와 같은 날 [[dor-sasson]] · [[jake-broekhuizen]]에 맞춰 만들었다(source 페이지의 "페이지 없음" 두 줄만 고침)
+  - 보강: [[production-trace-eval-flywheel]](두 번째 벤더: 실패만, 사용자의 코딩 에이전트, 사람이 배포 결정, 인프라 문제) · [[taste-encoded-evals]](judge 보정 = 장기 쿼리 워크로드, 차원 자동 발굴 피치) · [[field-level-unit-test-evals]](Contradiction 약: 유닛 테스트 통과 = 안정 vs build-once 종언·drift) · [[agent-native-interface]](eval 플랫폼의 headless 사용자) · [[agent-action-record]](기록의 저장·쿼리 비용) · [[ai-engineer]](설명란 링크 + 손들기) · [[tech-bridge]]
+  - ⚠️ 당사자 진술 — build vs buy 논지, 자사 피치 00:00~00:17 · 11:38~12:35 · 14:45~15:45. 수치(수백 MB, KB 대비, 24시간)는 사례·예시. 화자 안의 긴장: 실패 차원을 *사람이 정한다*(10:17~10:22) vs *플랫폼이 찾는다*(14:52~15:02). 단계 번호 2~4는 챕터(업로더)의 것. *"our back"*(15:32) → RBAC 판독(문맥). 행사명 미발화(ai.engineer 링크 → 추정).
+  - ⚠️ ko 반전 다섯: production → "개발 중"(00:46)·"오프라인 환경에서"(00:57), *without introducing new regressions* → "품질을 향상시키지 않고"(06:26), *headless* → "자연어 없이"(13:55), *Rather than you having to think* → "생각해 봐야 한다"(14:49). ko 단독: spreadsheet → "종이에 … 계산"·"잎들이", PMs → "총리들", *a movie's worth* → "수백 개의 영상", full text → "전문을 보려면 클릭하세요", payloads → "요금이 부과", cloud → "구름". en·ko 공유: teams → "장비/equipment"(11:19), long-running queries → "장기 상담/long-term consultations"(12:07), *in prod* → "개발 중/in development"(09:47), flywheel → "피드백 루프"(10:02).
+
+### 운영 메모
+
+목록: `--playlist-end 15` → **15줄**(stderr ERROR 없음). 신규는 10-11 업로드 3편뿐. `zAglgqN5Lhw`(하사비스 × Hannah Fry, 39:41)은 **여전히 멤버 전용**(`availability: subscriber_only`, 목록 줄로 나옴) — 건너뜀, 페이지 없음. 자막은 `--sleep-subtitles 8` + 편당 20초 간격으로 **429 없음**. 게이트 G 지속(CommandLineTools git 직접 호출로 우회).
+
+세 편은 편별 서브에이전트가 raw·source 페이지와 PROPOSAL을 쓰고, 신규 entity/concept/engineering 페이지·기존 페이지 보강·[[tech-bridge]]·index·[[02.wiki/engineering/index|engineering/index]]·overview·log는 단일 통합자가 합쳤다. 여러 제안이 겹친 페이지([[ai-engineer]] · [[agent-action-record]] · [[production-trace-eval-flywheel]] · [[agent-distributed-systems]] · [[tech-bridge]])는 섹션을 업로드 순(LangChain → Stigg → Braintrust)으로 나란히 붙였다. ⚠️ **인물 페이지 판단**: 화자 이름이 설명란에만 있는 경우 위키 다수 선례는 페이지를 만든다([[dan-adler]] — 자기소개 잘림, [[ignacio-martinez]], [[roland-gavrilescu]], [[andrew-qu]]). Melanie Warrick(10-10)만 예외였다. 세 화자 모두 페이지를 두고, Braintrust source의 "인물 페이지는 만들지 않는다" 문장을 좁게 고쳤다. 같은 날 세 벤더가 트레이스를 서로 다른 목적지(메모리 · eval · 과금 원장)로 보낸다 — [[trace-to-memory-loop]] · [[eval-platform-maturity-stages]] · [[reserve-then-settle]]에 상호 링크.

@@ -3,7 +3,7 @@ title: Engineering
 type: overview
 tags: [meta, engineering]
 created: 2026-05-25
-updated: 2026-10-10
+updated: 2026-10-12
 ---
 
 # Engineering
@@ -20,6 +20,7 @@ updated: 2026-10-10
 
 - [[agent-distributed-systems]] — 에이전트가 외부 부작용을 내는 순간 분산 시스템 문제가 된다. 타임아웃=상태 불명, 멱등성 키, 메모리=캐시, 보상 작업, scoped credentials, 승인 바인딩, 관측 가능성.
 - [[durable-execution]] — 프로세스가 죽어도 이벤트 히스토리 replay로 멈춘 자리에서 이어 가는 실행 모델. [[temporal|Temporal]]의 worker·workflow(결정론, 에이전트 루프)·activity(비결정론, 모델·도구 호출), 사람 대기는 wait condition + signal ([[tech-bridge-human-is-async-api]], 2026-10-10). ⚠️ 벤더 발표 1개.
+- [[reserve-then-settle]] — AI 사용의 사전 승인·사후 정산. hot path 동기 검사·예약 → 비동기 정산, 결정 폭포, 동시성·멱등성, 크레딧 버킷·계층 예산·지출 한도, VPC 내부 원장 ([[tech-bridge-stigg-ai-companies-building-banks]])
 - [[actix-web-http-server]] — [[actix-web]] `HttpServer` 워커 모델(코어당 1 워커)·TLS/HTTP2·graceful shutdown·정적 파일.
 - [[actix-web-connection-lifecycle]] — actix-web 내부 Accept/Worker/Dispatcher 루프 (mermaid 다이어그램).
 - [[actix-arbiter]] — [[actix-actor-framework|actix]] actor의 단일 스레드 이벤트 루프 + `System`.

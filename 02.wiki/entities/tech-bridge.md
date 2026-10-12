@@ -108,8 +108,11 @@ sources:
   - tech-bridge-tessl-harness-engineering-factory
   - tech-bridge-brockman-start-building-before-ready
   - tech-bridge-cooking-with-codex
+  - tech-bridge-langchain-learning-agent-memory
+  - tech-bridge-stigg-ai-companies-building-banks
+  - tech-bridge-braintrust-eval-platform-systems-problem
 created: 2026-06-03
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # Tech Bridge
@@ -1087,3 +1090,26 @@ updated: 2026-10-11
 
 - **공개 전환 — 이번 회차에 위에서 ingest:** `J1BGMIWTJ1U`([[tech-bridge-brockman-start-building-before-ready|Greg Brockman × Silicon Valley Girl]], `upload_date` 20261010) · `RVnSsolR3uE`([[tech-bridge-cooking-with-codex|Codex로 요리하기]], `upload_date` 20261010). 두 편 모두 공개 시점으로 `upload_date`가 다시 잡혔다.
 - **여전히 `subscriber_only` — ingest하지 않음:** `zAglgqN5Lhw`(10-09 업로드, *데미스 하사비스가 말하는 AI 혁명, AI의 미래와 인간의 창의성 | Hannah Fry*) — 이번 회차 목록 조회에서 stderr ERROR(멤버 전용). 공개 전환 시 그날 ingest.
+
+## 2026-10-11 업로드 — Jake Broekhuizen (LangChain), AI 에이전트에 학습하는 메모리를 (2026-10-12 ingest)
+
+[[tech-bridge-langchain-learning-agent-memory|AI 에이전트에 학습하는 메모리를 제공해 보세요]](`0kVsv2WlL44`, 15:28, 공식 챕터 19) — [[jake-broekhuizen]] · [[langchain]] · [[langsmith]] ([[trace-to-memory-loop]] · [[agent-memory]] · [[agent-dreaming]] · [[skill-self-improvement]])
+
+- 관찰 ≠ 학습: 트레이스는 증거, durable context로 바뀔 때만 메모리. semantic · episodic · procedural(개선의 대부분) + working vs long-term. 순환: 읽기 → 실행(증거) → 필터(대부분 history) → 쓰기. 세 교훈: 대부분 history(일부 eval 데이터셋) · 캐시/hot path 함정 · procedural 변경은 사람 검토 + eval.
+- ⚠️ 당사자 진술 — 10:13~12:28 LangSmith·Context Hub. 이름·직함은 설명란에만(자기소개 없음). 행사명 미발화(ai.engineer 링크 → 추정). *"about 75%"* 는 화자 추정. ko: run → "사형 집행", *than ever before* → "결코 나타나지 않으며", "세금 정보"(환각), *third level* → "3분의 1".
+
+## 2026-10-11 업로드 — Dor Sasson (Stigg), 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다 (2026-10-12 ingest)
+
+[[tech-bridge-stigg-ai-companies-building-banks|모든 AI 기업이 어쩌다 보니 은행을 짓고 있는 이유입니다]](`4JfLShdp92k`, 19:00, 공식 챕터 15) — [[dor-sasson]] · [[stigg]] ([[reserve-then-settle]] · [[openclaw]] · [[software-marginal-cost]] · [[bring-your-own-subscription]] · [[overspending-underusing-loop]])
+
+- 위키 첫 **AI 과금·권한 인프라** 소스. 4월 가격 비상 = 인프라 비상, 검사가 청구서 뒤에 온다 → 추론 전 동기 승인·예약, 사후 정산(ATM 비유), OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, AI의 Stripe moment.
+- ⚠️ 벤더 CEO, 타사 내부 주장 출처 없음. 이름은 설명란에만. *"150s to even 750"* 단위 미발화(설명란 "사용자당 … 배"는 업로더 해석), 연도 미발화. Uber 기간이 Kimchi 편과 모순.
+- **⚠️ ko** — bank → "벤치", concurrency → "참석률", rate limit → "이자율", credit pools → "신용조합", *"you're pitching this"* → "우리는 홍보하고 있었습니다".
+
+## 2026-10-11 업로드 — Hossein Niazmandi (Braintrust), 평가 플랫폼 만들기가 생각보다 어려운 이유 (2026-10-12 ingest)
+
+[[tech-bridge-braintrust-eval-platform-systems-problem|평가 플랫폼 만들기가 생각보다 어려운 이유 — Braintrust]](`S3knIZq7jM8`, 16:25, 공식 챕터 15) — [[hossein-niazmandi]] · [[braintrust]] ([[eval-platform-maturity-stages]] · [[production-trace-eval-flywheel]] · [[taste-encoded-evals]] · [[agent-native-interface]])
+
+- Braintrust 첫 소스. 에이전트 품질 = evals(프로덕션 전) + observability(프로덕션 중). eval 도구 성숙 4단계(스프레드시트 → 맞춤 UI → 비기술 사용자의 실험 → 프로덕션 연결), 그 끝의 systems problem(반정형 JSON 트레이스, 상호작용당 수백 MB, 실시간 vs 장기 쿼리 → BTQL). 코딩 에이전트가 headless로 eval을 돌고 사람은 배포 버전을 결정.
+- ⚠️ 당사자 진술 — build vs buy에서 buy 쪽 논지, 14:45~15:45 자사 피치(unknown unknowns 자동 발굴). 화자 이름 Hossein Niazmandi는 설명란에만(자막에 자기소개 없음, 영상이 발표 중간에서 시작). 행사명 미발화(ai.engineer 링크 → 추정). en-orig 공백 없음.
+- **⚠️ ko** — production → "개발 중"(00:46)·"오프라인 환경에서"(00:57) 반대말 두 번, *without introducing new regressions* → "품질을 향상시키지 않고 … 회귀 분석을 도입"(06:26), *headless* → "자연어 없이"(13:55), *Rather than you having to think* → "생각해 봐야 한다"(14:49), spreadsheet → "종이에 … 계산"·"잎들이", PMs → "총리들", full text → "전문을 보려면 클릭하세요". en·ko 공유: teams → "장비/equipment", queries → "상담/consultations".

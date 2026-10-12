@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [evaluation, testing, granularity, voice-agents, debuggability]
 aliases: [필드 단위 평가, E2E 대신 유닛 테스트]
-related: [typed-field-collection, skill-evals, all-or-nothing-accuracy, test-harness-vs-test-authoring, verification-bottleneck]
+related: [typed-field-collection, skill-evals, all-or-nothing-accuracy, test-harness-vs-test-authoring, verification-bottleneck, eval-platform-maturity-stages]
 first-seen: tech-bridge-voice-agent-failure-modes
-sources: [tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-voice-agent-failure-modes, tech-bridge-braintrust-eval-platform-systems-problem]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-12
 ---
 
 # 필드 단위 유닛 테스트 평가
@@ -59,6 +59,10 @@ updated: 2026-09-19
 - **95~97%** 의 분모가 앞의 *30% → 95%* 와 같은지 불명.
 - **오디오 입력의 변주**(억양·잡음·속도)를 유닛 테스트에 어떻게 넣는지 없다. 텍스트 필드만 테스트하면 [[transcription-brittleness]]가 잡히지 않는다.
 - 사람 검토가 어디에 들어가는지 없다. → [[verification-bottleneck]]
+
+## 한 번 짓고 끝나는가 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
+
+> ⚠️ **Contradiction (약)**: 이 페이지의 *"단위 테스트가 제대로 통과하기만 한다면, 여러분의 에이전트는 안정적이고 반복 가능한 성능을 보여줄 것입니다"*(20:32~20:52)와 [[braintrust|Braintrust]] 발표의 *"gone are the days where you build once with unit tests and regression tests, you ship to production, and you don't think about it. Evals are a way for you to continue hill climbing against one target, which is agent quality."*(05:40~05:52). 이 페이지는 **해상도**(E2E 대신 필드)를, Braintrust는 **drift**(*"The way users interact with your agents will change over time"* 06:36~06:41) 때문에 프로덕션 관측과 지속 반복이 필요하다고 말한다 — 유닛 테스트형 eval을 부정하진 않지만 *통과 = 안정* 이라는 결론과는 긴장한다. → [[eval-platform-maturity-stages]]
 
 ## References
 

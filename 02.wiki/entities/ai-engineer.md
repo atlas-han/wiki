@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem]
 created: 2026-09-15
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 # AI Engineer
@@ -145,3 +145,15 @@ updated: 2026-10-11
 
 > ⚠️ 도시는 발화되지 않는다. 09-29 Jerry Liu 편(*"AI Engineer World Fair"*, 2026)·10-02 Conductor 편과 **같은 회차라는 근거는 없다**(09-07 절차대로 별개 취급하되, 이 편이 World's Fair 2026 = 6월 말이라는 첫 날짜 앵커).
 > ⚠️ ko는 행사명을 지운다 — 21:05 "엔지니어들이 알 겁니다", 1:04:37 "인공지능 엔지니어로서의 여정".
+
+## 설명란 링크만 — LangChain 메모리 발표 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
+
+[[jake-broekhuizen|Jake Broekhuizen]]([[langchain|LangChain]])의 15:28 발표. *"the reason why we're at this conference"*(02:16~02:20)로 컨퍼런스 발표임은 발화되지만 **행사명·도시·날짜는 없다.** 설명란 끝의 `https://ai.engineer`·AI Engineer 유튜브/X/LinkedIn 링크로 **AI Engineer 계열 추정**(2026-09-07 절차 — 설명란 링크만으로 확정하지 않음).
+
+## 설명란 링크 + "the first talk today" (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
+
+[[dor-sasson|Dor Sasson]]([[stigg|Stigg]])의 19:00 발표. 설명란 끝에 AI Engineer 웹사이트·유튜브·X·LinkedIn 링크. 자막엔 행사명·도시가 없고 현장 단서만 있다 — *"I flew all the way over to make a kind of a funky statement on an AI conference"*(00:01~00:08), *"I'm the first talk today, so the clicker is not working"*(00:44~00:47), *"Well, we have some echo here."*(02:05~02:07). 시점은 *"back in April"*(00:54~01:02) 이후, 연도 미발화. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다.
+
+## 설명란 링크 + 청중 손들기 — Braintrust 발표 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
+
+[[braintrust|Braintrust]] 발표(설명란 기준 [[hossein-niazmandi|Hossein Niazmandi]], 자막엔 이름 없음)의 16:25 영상. 설명란 끝에 `https://ai.engineer` 와 AI Engineer 유튜브·X·LinkedIn 링크가 있지만 **자막엔 행사명·도시·날짜가 없다.** 현장 단서는 손들기(*"show of hands, how many of you have run evals and log the results into a spreadsheet? (…) Okay, I see one or two."* 03:05~03:15)와 *"feel free to come up afterwards"*(05:02~05:05). 시점 단서는 *"when the ChatGPT boom happened a few years ago"*(12:50~12:54)뿐. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다. 영상은 *"which we talked about earlier"*(00:22~00:24)로 시작해 앞부분이 없다.
