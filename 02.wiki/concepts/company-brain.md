@@ -6,9 +6,9 @@ tags: [company-brain, wiki, shared-context, access-control, knowledge-base, codi
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
 related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent, codebase-gardening]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-unblocked-context-engine-structured-queries]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-09-10
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 회사 두뇌
@@ -143,3 +143,7 @@ updated: 2026-10-16
 | 권한 | 접근 제어 규칙 | — | 미발화 | *"permissions-aware"*(01:48) 주장, tenant 주입(14:03~14:12) |
 
 ⚠️ CIA의 *"give your agent a SQL tool and let it handle the rest"* 와 달리 Unblocked는 **원시 쿼리를 에이전트에게 맡기지 않고** 검증·주입 층을 둔다([[nl-to-structured-query-scaffolding]]). 벤더 데모이며 묶음 조립 방법은 공개되지 않았다.
+
+## 오래된 문서의 처리 — 최신 우선 + 사람의 검증 표시 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+**오래된 문서의 처리 — 최신 우선 + 사람의 검증 표시.** 10~15년 쓴 조직의 낡은 문서를 지워야 하느냐는 질문에 [[atlassian|Atlassian]] 응답자는 *"we tend to favor like more recent results"*(35:41~35:43)라고 답했고, 오래됐어도 기준인 문서에는 Confluence **verified badge**를 단다(35:55~36:05)고 했다. 권위를 자동으로 매기는 것은 위험하다고 봤다(*"automatically end up being authoritative which is weird"* 21:26~21:32). [[shane-wolf|Shane Wolf]]는 문서가 *"out of date and inaccurate"* 해도 **결정의 이유**는 가치 있다고 본다(48:15~48:41).

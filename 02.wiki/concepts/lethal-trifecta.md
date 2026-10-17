@@ -6,9 +6,9 @@ tags: [security, data-exfiltration, prompt-injection, agent-safety, llm-security
 aliases: [lethal trifecta, 치명적 삼중주, 치명적 3요소]
 related: [confused-deputy-attack, prompt-injection, agentic-misbehavior, agent-identity-separation, secure-tool-evolution, sweeper-agent, black-box-agent-approach, ai-data-exposure]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-one-designer-plus-ai, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-09-11
-updated: 2026-10-01
+updated: 2026-10-17
 ---
 
 # 치명적 3요소
@@ -52,6 +52,7 @@ updated: 2026-10-01
 - [[sweeper-agent]]([[tech-bridge-agent-to-agent-as-search]]) — 사일로의 비공개 데이터(①)를 읽고, 공유 공간(③, 모두가 읽는다)으로 옮기며, 사일로 안에 인젝션(②)이 들어올 수 있다고 화자가 인정했다. **셋 다 있다.** 그 소스의 *영구 오염·오공개* 우려가 이 틀로 설명된다.
 - [[black-box-agent-approach]] — 읽기 전부 개방(①), 쓰기 직전 소유자 승인(③에 사람을 둠). 승인이 ③을 끊는 자리다.
 - [[company-brain]] — 사용자 클레임으로만 읽기(①을 사용자 단위로), 자동 쓰기 금지(③에 사람). 두 요소를 동시에 다룬다.
+- (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]]) [[cedric-clyburn|Cedric Clyburn]]이 **이름 없이 같은 세 조건**을 말한다 — *"AI systems have access to sensitive data, they have exposure to the web, and also the ability to send data. And the combination of all three for your agent makes it quite possible for your AI agent to (…) read a pull request online (…) and be tricked into sending your credentials to somebody else."*(07:27~07:55) ① 데스크톱 자격증명 ② 온라인 PR ③ 외부 전송. 처방은 일회용 샌드박스(08:04~08:22)다([[agent-sandboxing]]). Willison의 이름이 없는 **독립 재진술**이다(원 출처 불명). ⚠️ ko는 결합의 위험을 "일이 매우 수월해질 수 있습니다"(07:38~07:40)로 뒤집는다.
 
 ## ⚠️ 미해결
 

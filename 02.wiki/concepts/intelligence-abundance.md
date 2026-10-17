@@ -5,9 +5,9 @@ category: theory
 tags: [abundance, equity, electricity-analogy, pricing, access, openai, policy]
 related: [compute-constrained-growth, intelligence-as-infrastructure, power-shortfall, token-roles, ai-jobs-impact, regulatory-capture]
 first-seen: tech-bridge-altman-g20-economic-boom
-sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future]
+sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-09-07
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # Intelligence Abundance (지능의 풍요 — 형평 논거)
@@ -68,6 +68,10 @@ Altman은 이것을 향후 5년의 **위험 셋** 중 하나로 분류한다(나
 ## 다른 경로의 풍요 — 과학 root node (2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]])
 
 [[demis-hassabis|Demis Hassabis]]의 풍요는 **지능 가격의 형평**(Altman)이 아니라 **과학 문제를 풀어서 오는 물질적 풍요**다: *"we solve some terrible diseases, maybe all of them eventually. Um we come up with better materials, new energy sources (…) we solve fusion"*(20:48~21:00) → *"we'll enter a world of abundance"*(21:16~21:19) — *"a lot of these things can be fixed with (…) solutions to particular kind of root nodes"*(21:29~21:37, 예: 우주여행 = 에너지 문제). 그때 남는 최대 과제는 *"the economics and the philosophical side (…) the idea of purpose and value"*(21:42~21:50). 풍요의 쓰임새 하나로 **비용이 유일한 척도가 아닌 건축**을 든다(29:43~29:51). ⚠️ 예측·희망이고 근거 수치 없음. ko는 fusion을 **"합병"**(20:58, `en` *"merger"* 공유)으로 옮겼다.
+
+## 전기 비유의 노동 판본 — 망을 유지하는 사람들 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+[[cedric-clyburn|Cedric Clyburn]]은 *"AI is becoming the new electricity"* 를 [[andrew-ng|Andrew Ng]]의 말로 기억해 인용한다(08:28~08:32, ⚠️ 원 출처 미발화). 그가 끌어내는 것은 가격·형평(Altman)이나 토큰 = kWh(Huang)가 아니라 **직업**이다. *"there's also entire industries and thousands of people who for example work at substations to make sure that the grid is working (…) And AI might follow the same path where we're going to need engineers who can maintain these systems"*(08:45~09:12). 측정은 없고 *"might"* 다.
 
 ## ⚠️ 유보
 

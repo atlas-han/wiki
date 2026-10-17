@@ -6,9 +6,9 @@ tags: [management, delegation, trust, role, engineering-manager]
 aliases: [관리 유비, 헤드 셰프, 뒷좌석 운전자]
 related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening, agent-attention-management]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game, tech-bridge-cooking-with-codex, tech-bridge-dental-clinic-ax-transformation]
 created: 2026-09-13
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 매니저·헤드셰프 유비
@@ -84,3 +84,7 @@ updated: 2026-10-11
 ## "everyone's become a manager" — 그리고 주방 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
 
 [[gabriel-chua|Gabriel Chua]]([[openai|OpenAI]]): 주말에 노트북을 집에 두고 나가 *"Hey, CEX[=Codex], is everything okay? Is there anything I can do to help unblock you? And in a sense, everyone's become a manager."*(10:26~10:33) 워크숍 전체가 **주방 비유**로 짜였다 — 셰프와 *"sous chef"*(03:48~03:50), `/code review` = *"before the chef like sends out a dish, they always do a quick taste test"*(20:08~20:14). [[lauren-tan|Lauren Tan]]의 헤드셰프·미슐랭 주방과 같은 그림을 **하네스 제작사**가 쓴다.
+
+## 개발자가 아닌 매니저 — 담당별 에이전트 팀 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
+
+*"원장님은 코드를 거의 직접 쓰지 않고 AI 코딩 에이전트를 팀원처럼 썼다고 해요. 포털 담당, 전화 담당, 음성 담당, 인프라 담당으로 일을 나눠요. 원장님은 무엇이 필요한지 정하고 결과를 확인해요."*(06:12~06:27) 운영 설정 변경만은 *"본인이 직접 승인"*(06:27~06:31)한다. 이 위키에서 매니저 유비가 **개발자가 아닌 도메인 전문가**에게서 나온 첫 사례다. 해설의 요약은 *"치과 일을 아는 원장님이 할 일을 정하고 AI가 만들고 다시 시험하고 고친 거예요."*(06:46~06:51)다. ⚠️ 해설 전언이며 에이전트 도구 이름은 발화되지 않는다.

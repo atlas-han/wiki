@@ -3,11 +3,11 @@ title: Agentic Misbehavior (Threat Model)
 type: concept
 category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
-related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta]
+related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta, agent-sandboxing]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-05-25
-updated: 2026-09-29
+updated: 2026-10-17
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -149,3 +149,7 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 - **층이 올라간다** — 이 페이지는 지금까지 **회사·개인 단위의 사고**(auto mode 분류 · 대량 메일 · HF 사건 등)를 모았다. Nadella는 같은 현상을 **두 국가 사이의 통보 대상**으로 올린다 — 안전의 둘째 층 *"an environment that needs to be contained that is not contained"*(14:33~14:37)이 통보의 자리다. → [[ai-arms-limitation-lens]]
 - **처방은 격리** — *"building out that containment is a solid engineering problem"*(15:27~15:31), Autopilot이 도는 환경이 그 일을 한다(15:33~15:43) → [[agent-365]].
 - ⚠️ **사례를 들지 않는다.** 어떤 에이전트가 무엇을 했는지 없다 — 이 위키의 [[tech-bridge-openai-huggingface-incident-black-hat|HF 사건]] 같은 구체 사고와 연결하지 않는다. ⚠️ ko는 대비의 과거 쪽에 에이전트를 넣어(**"역사적으로 모든 것은 에이전트에 달려 있었습니다"**, 14:03) **새로움이라는 논점을 지운다.**
+
+## blast radius — injection과 혼란을 한 반경으로 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]: *"the blast radius of a prompt injection attack, uh or the agent getting confused, anything that could go wrong, like we we limit the blast radius by limiting how much the agent has access to."*(05:17~05:27) 위 네 원인 가운데 [[prompt-injection]]과 정직한 실수를 구분하지 않고 **환경 쪽에서 반경을 줄이는** 처방이다. 단 *"sandboxing is not a panacea"*(12:15~12:18)라는 단서가 붙는다(Mythos 샌드박스 탈출 — ⚠️ 화자 주장, [[claude-mythos-preview]]). → [[agent-sandboxing]]

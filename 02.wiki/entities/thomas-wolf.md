@@ -7,7 +7,7 @@ links:
   - https://huggingface.co/
 sources: [tech-bridge-minimax-m3-long-context]
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-10-17
 ---
 
 # Thomas Wolf
@@ -15,6 +15,8 @@ updated: 2026-09-08
 [[hugging-face|Hugging Face]] 공동창업자 겸 CSO. 이 위키에는 [[tech-bridge-minimax-m3-long-context]]의 **무대 대담 진행자**로 등장한다 — [[olive-song]]([[minimax|MiniMax]])에게 [[minimax-m3|M3]]의 설계를 묻는다.
 
 > ⚠️ **이름의 근거가 영상 설명란 하나다.** 자막에는 진행자 이름이 나오지 않는다. 자막의 정황은 **모순되지 않는다** — 게스트를 두고 *"뉴욕에 있던 **Hugging Face에 합류하는 대신** MiniMax에 합류하기로 결정했다"* 고 말하고, MiniMax의 Hugging Face 오픈소스 시작 시점을 *"작년 1월 (…) 그때 **저희가** 팀에 대해 이야기를 나누면서"* 라며 1인칭으로 회상한다. 그래도 **이름 자체를 소스 내부가 확인해 주지는 않는다.**
+
+> 동명이인 주의: [[shane-wolf|Shane Wolf]](Atlassian)는 다른 사람이다.
 
 ## 이 소스에서의 역할 — 맥락을 놓는 진행자
 

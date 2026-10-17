@@ -6,9 +6,9 @@ tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
 related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-10-03
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 자동 코드 리뷰
@@ -102,6 +102,12 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 - 바로 위 Quenneville(구조 → 메서드 → 폴리시 스킬을 차례로)와 같은 계열이다. 차이는 둘이다. 축이 **리뷰 관점이 아니라 정책 단위**이고, **모두 승인할 때까지 반복**한다.
 - 사람은 남는다. *"the goal here isn't to remove the code review quite yet (…) but more so to raise the floor"*(13:07~13:15). 성공 지표는 *"how much I'm casting[=cursing?] at the agent"*(12:51~12:55)이고 화자도 정성적이라고 인정한다(13:04~13:07).
 - ⚠️ 측정 없음. 정책 수와 루프 횟수 상한, 서브에이전트끼리 상충할 때의 처리는 발화되지 않는다. `en`·ko는 성공 지표를 "delegate/위임"으로 바꾼다.
+
+## 잡음 필터를 따로 학습한다 — Atlassian AI reviewer (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[andy-wong|Andy Wong]]([[atlassian|Atlassian]]): *"some of the code review processes (…) provide a little bit too many comments that are not of a high value. So we (…) train a few models ourselves filter those"*(05:35~05:51) → *"around 40% uh human code resolution rate which is rather close to human baseline of 45"*(06:11~06:20). 리뷰어 본체와 별개로 **저가치 댓글을 거르는 모델**을 둔다. "오탐이 리뷰어를 죽인다"는 교훈의 다른 구현이다. 리뷰 맥락은 diff 너머(Jira·Confluence·Slack)까지 넓힌다(04:24~04:43). 기준은 중앙 관리 standards(Markdown)로 둔다.
+
+> ⚠️ "human code resolution rate"의 정의·분모가 발화되지 않는다. en-orig "45"에는 단위도 없다. Cursor의 resolution rate 52%→70%+(위 표)와 **같은 지표인지 알 수 없어 비교하지 않는다**.
 
 ## ⚠️ 유보
 

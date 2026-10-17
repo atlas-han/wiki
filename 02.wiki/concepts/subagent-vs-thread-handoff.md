@@ -6,9 +6,9 @@ tags: [subagents, delegation, multi-agent, threads, visibility, codex, context-i
 aliases: [thread-to-thread handoff, 스레드 간 핸드오프, side thread, 위임 가시성]
 related: [agent-swarm, orchestrator-searcher-split, persistent-agent-teams, goal-level-delegation, multiplayer-agent-context, agent-attention-management, dynamic-workflows, cross-harness-skill-compilation]
 first-seen: tech-bridge-cooking-with-codex
-sources: [tech-bridge-cooking-with-codex]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 서브에이전트 vs 스레드 간 핸드오프
@@ -47,6 +47,7 @@ updated: 2026-10-11
 - [[agent-attention-management]] — 사람이 볼 스레드를 늘리는 쪽이라 주의 비용과 맞바꾼다(위키의 독해).
 
 > ⚠️ **Contradiction: 서브에이전트를 누가 켜나.** [[paul-bakaus|Paul Bakaus]]([[tech-bridge-skill-engineering-dark-arts]]): Codex는 **사용자가 명시적으로 요청해야** 서브에이전트를 쓴다(스킬 배포자 관점, 시점 미확정). Charlie(2026-06-29): **기본으로 모델이 쓴다.** 시점·맥락 차이일 수 있다 → [[cross-harness-skill-compilation]]
+- (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]]) 입문 정의 — 문제를 조사하다가 *"you send off a sub-agent to go see uh how that library works and test it out itself and then come back to the main agent"*(06:53~07:03). 가시성 문제는 다루지 않는다.
 
 ## ⚠️ 유보
 

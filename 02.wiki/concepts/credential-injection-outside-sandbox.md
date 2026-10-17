@@ -4,9 +4,9 @@ type: concept
 category: pattern
 tags: [credentials, sandbox, proxy, access-control, privilege-escalation, security, multiplayer]
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
-related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation]
+related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation, agent-sandboxing]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-09-10
 updated: 2026-10-17
 ---
@@ -90,3 +90,5 @@ updated: 2026-10-17
 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"we're both an LLM gateway and an MCP gateway, and we even do off[=auth] like injection for just standard APIs and re-expose those as MCPs, too."*(12:33~12:43) 사람·에이전트는 키를 받지 않고 엔드포인트만 친다: *"all they have to do is hit that endpoint. And if they're on the tailnet, everything's authenticated as them"*(14:09~14:15). 같은 원칙(자격증명을 에이전트 밖에 둔다)의 **네트워크 게이트웨이 판본**이다 → [[ai-gateway]]
 
 화자가 꼽은 기존 게이트웨이의 실패는 자격증명을 옮기기만 하는 것이다: *"I've traded some keys for a bunch of other keys."*(09:26~09:28) ⚠️ 벤더 진술. 사용자 신원으로 인증된 요청을 에이전트가 보낼 때의 권한 범위는 다루지 않는다.
+
+> ⚠️ **긴장: 비밀을 골라 넣는 쪽 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])**. [[robert-brennan|Robert Brennan]]의 샌드박스 처방은 필요한 비밀만 **샌드박스 안에** 마운트하는 것이다(*"You can mount specific secrets and environment variables for the agent"* 06:15~06:18, *"maybe a couple secrets that it needs to access a local database"* 05:02~05:04). GitHub Actions의 *"secrets registry"*(07:27~07:29)도 같은 형태다. 이 페이지의 처방은 자격증명을 샌드박스에 **아예 두지 않는** 것이다. 앞쪽은 비밀의 개수를 줄이고, 이쪽은 에이전트가 비밀을 보지 못하게 한다. 발표는 이 차이를 다루지 않는다. → [[agent-sandboxing]]

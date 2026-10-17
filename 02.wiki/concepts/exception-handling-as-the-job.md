@@ -5,9 +5,9 @@ category: theory
 tags: [automation, operations, edge-cases, scale, agents]
 related: [self-serve-asset-generation, atomic-design, dynamic-workflows, agent-roi-measurement, architecture-as-remaining-art, action-reversibility]
 first-seen: tech-bridge-one-designer-plus-ai
-sources: [tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-dental-clinic-ax-transformation]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-17
 ---
 
 # Exception Handling as the Job
@@ -33,6 +33,10 @@ updated: 2026-09-15
 화자의 처방은 **작게 생각하기**다 — *"잘못될 수 있고 잘못될 모든 것을 생각해서 미리 풀어 두세요."* 겉보기에 *"예외는 미리 못 만든다"* 와 충돌하는 듯하지만 **층이 다르다**: **예상 가능한 예외는 미리 세고**, **예상 못한 예외는 즉석에서 만든다.** [[atomic-design]]이 방법론 층에서, 이 페이지가 운영 층에서 같은 형태를 반복한다.
 
 > ⚠️ **즉석 기능에 대한 검토·롤백 이야기가 소스에 없다.** 아침에 급히 붙인 편집 버튼이 잘못 동작하면 무슨 일이 생기는지, 누가 확인하는지 다루지 않는다([[action-reversibility]]가 가리키는 자리).
+
+## 비개발 업무의 수치 — 77% 자동 확정, 사람은 1,609줄 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
+
+치과 원장 [[gatsbydds]]의 보험 서류 대조(해설 전언): 94개·3,389쪽을 69분에 읽고 *"대조한 내역 6,928줄 가운데 5,319줄 약 77%를 자동 확정으로 분류"*(03:18~03:26)했다. 사람에게는 나머지 1,609줄이 남는다(ko ASR *"16009줄"*, en-orig *"1,609"*, 산수로 확인). *"전부를 처음부터 훑는 대신 확인이 필요한 줄에 시간을 쓰는 방식으로 바뀐 거죠."*(03:32~03:36) ⚠️ 77%는 정확도가 아니라 분류 비율이다. 해설도 *"모든 보험 서류에 그대로 적용되는 정확도는 아니에요"*(03:41~03:44)라고 말한다. 자동 확정 쪽의 오류율은 발화되지 않는다.
 
 ## References
 

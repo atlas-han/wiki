@@ -5,7 +5,7 @@ category: technique
 tags: [model-routing, router, cost, reliability, fallback, prompt-caching, open-models, model-selection]
 related: [model-mixing-economics, software-factory, overspending-underusing-loop, token-roles, system-1-model, harness-engineering, true-cost-to-perfect-answer]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-gitar-agentic-pr-validation, tech-bridge-tailscale-aperture-ai-without-lock-in]
+sources: [tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-gitar-agentic-pr-validation, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-10-02
 updated: 2026-10-17
 ---
@@ -87,3 +87,7 @@ updated: 2026-10-17
 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]] Aperture)의 모델 선택은 라우터가 고르는 방식이 아니다. 게이트웨이가 연결의 신원을 알고 관리자가 정한 정책을 적용한다: *"Once I connect to the (…) gateway, it knows who I am. It knows what I am."*(11:43~11:47) 그다음은 *"You can use GLM 5.2. Uh you get this budget with GLM 5.2, right? You get unlimited budget with a cheap model, and you get an extremely narrow budget with a frontier model, right?"*(11:52~12:01)이다. 이 페이지의 다른 라우터(Factory의 난이도 분류, Kimchi의 결과 보증)와 달리 **결정 주체가 관리자**다 → [[ai-gateway]]
 
 ⚠️ 모델 단가 기준의 배급이고 작업 결과 기준이 아니다. 어느 쪽이 나은지는 측정되지 않았다. *"GLM 5.2"* 는 예시이고 대조하지 않았다.
+
+## 아직 없음 — 사람이 하네스·스킬 단위로 고른다 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[atlassian|Atlassian]] Jira coding agent: *"We currently don't have anything out uh that would do be doing like doing smart routing. That is something that we're working on with uh in in autodev"*(31:49~31:58). 지금은 *"a model selection at the top level of the harness"* 이고, 스킬·서브에이전트별로 모델을 지정한다(32:52~33:05). 계획은 성공 지표를 보여 주고 *"make sure that that's a policy that you want to enforce or not"*(32:03~32:07)이다. 자동 라우터보다 **정책 쪽**에 가깝고, [[tech-bridge-tailscale-aperture-ai-without-lock-in|Tailscale 편]]과 같은 방향이다.

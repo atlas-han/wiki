@@ -3,11 +3,11 @@ title: Pets vs. Cattle
 type: engineering
 category: pattern
 tags: [infrastructure, operations, cloud, reliability]
-related: [brain-hands-decoupling, agent-harness-design, twelve-factor-app]
+related: [brain-hands-decoupling, agent-harness-design, twelve-factor-app, agent-sandboxing]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents]
+sources: [anthropic-managed-agents, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-05-25
-updated: 2026-06-27
+updated: 2026-10-17
 ---
 
 # Pets vs. Cattle
@@ -30,6 +30,10 @@ updated: 2026-06-27
 | Sandbox 컨테이너 | tool-call error → Claude가 retry 결정 → `provision({resources})` 새 컨테이너 |
 | Harness | `wake(sessionId)` + `getSession(id)`로 마지막 event부터 resume |
 | Session log | 외부 durable storage — fail unit이 아님 |
+
+## 사용자 쪽 판본 — VM(pet) 대 세션당 pod(cattle) (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]은 에이전트를 올려 둔 long-lived VM의 지속성을 *"good and bad"*라고 한다. 다음 실행에도 시스템이 그대로라는 점은 좋다. 하지만 *"your machine could get into a bad state as well and you might have to go and debug"*(08:22~08:35)한다. Kubernetes 세션당 pod는 *"you don't have to worry about like the long-term state of this thing the way you do with a VM (…) you're basically killing the environment and starting fresh."*(10:04~10:15)다. Managed Agents가 인프라 쪽에서 sandbox를 cattle로 만든 이유가 **에이전트를 돌리는 쪽**의 선택 기준으로 다시 나온다. 상태는 *"saving files out or like writing to external systems"*(11:38~11:42)로 밖에 둔다.
 
 ## 일반 원칙
 

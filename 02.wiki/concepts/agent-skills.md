@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-08-31
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # Agent Skills
@@ -349,3 +349,7 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 ## 2026-10-14 — 스킬이 API와 어긋나지 않게: linter로 동기화 ([[tech-bridge-sentry-stop-prompting-codify-linters]])
 
 [[sentry|Sentry]]는 디버깅 에이전트가 오래된 endpoint를 다루도록 스키마 대신 스킬로 안내한다(*"So instead we guide that through skills, which is a pretty common pattern in the agent week[=agentic] world"* 07:46~07:50). 생성한 스킬의 예제가 환각이어서 lint를 걸었다. 그 결과 *"when API changes, we actually don't have to follow up on the agent skills all the time. It's It's It's kept in sync through the through the linters."*(09:42~09:49) → [[skill-linting]]. 위 Lopopolo 절(벤더가 플랫폼 지식을 스킬로 유통)의 **유지 비용**에 대한 한 가지 답이다.
+
+## 2026-10-17 — "매 요청마다"? 입문 해설의 정의 ([[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+[[cedric-clyburn|Cedric Clyburn]]: *"skills, which are markdown files that add reusable and contextual information about your code and project with each AI request"*(06:21~06:30). 형식(마크다운)과 목적(재사용 가능한 맥락)은 이 페이지와 같다. 그러나 *with each AI request* 를 문장 그대로 읽으면 **매 요청 주입**이고, 이 페이지의 **progressive disclosure**(필요할 때만 넣는다)와 긴장한다. 입문 해설의 단순화일 수 있다. 같은 화자가 바로 앞에서 컨텍스트 창의 *"resource limitations"*(04:05~04:11)를 강조했다는 점도 함께 적어 둔다. ⚠️ ko는 skills를 "기술"(04:19, 06:21)로 옮긴다.

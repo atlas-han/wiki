@@ -6,9 +6,9 @@ tags: [evals, llm-as-judge, taste, human-in-the-loop, calibration, ab-testing, m
 aliases: [taste into evals, codify taste into evals, 안목을 평가 지표로, eval calibration, judge calibration, 판정관 보정, HITL calibration]
 related: [taste-vs-judgment, agent-recipes, loop-is-the-product, valued-work-per-watt, generator-evaluator-pattern, skill-evals, skill-self-improvement, self-harness, verifiable-goals, production-trace-eval-flywheel, eval-platform-maturity-stages]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-alexandr-wang-muse-launch, tech-bridge-dental-clinic-ax-transformation]
 created: 2026-09-30
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 제작자의 taste를 eval로 (Taste-Encoded Evals)
@@ -80,6 +80,10 @@ updated: 2026-10-16
 ## 인프라 쪽에서 본 judge 보정 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
 
 [[braintrust|Braintrust]] 발표는 사람의 judge 보정을 **장기 실행 쿼리 워크로드**의 예로 든다: *"have humans who are doing alignment by annotating your your judges' outcomes. Two different workloads."*(12:12~12:25) — 실시간 관측과 다른 부하라는 것. 그리고 같은 발표의 피치는 *"Rather than you having to think about these dimensions and of success and failure for your AI agent, Braintrust can surface these insights automatically"*(14:52~15:02) — pi.recipes의 *에이전트가 트레이스에서 패턴을 찾는다* 와 같은 방향의 **두 번째 벤더 주장**이다. ⚠️ 둘 다 측정 없음.
+
+## 손으로 만든 판본 — 모델 이름을 가린 비교와 정답 자료 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
+
+치과 원장 [[gatsbydds]]는 통화 분류·긴급도·할 일 추출을 사람이 판정하는 화면을 만들었다(03:56~04:02). *"서로 다른 AI가 같은 통화를 보고 다른 답을 내면 그 통화를 먼저 봐요. 어느 모델이 쓴 답인지 가려놓고 둘을 비교하기도 하고요."*(04:04~04:10) 판정은 *"병원 업무에 맞는 정답 자료로 쌓여요"*(04:17~04:19). 모델 간 합의를 정답으로 보지 않는다: *"AI 둘이 같은 말을 한다고 무조건 정답이 되는 건 아니니까 마지막 판정은 사람이 [맡고요]."*(04:19~04:26) 벤더 도구 없이 같은 구조(불일치 우선 → 블라인드 판정 → 축적)를 1인이 만든 사례다. ⚠️ 해설 전언이고, 자료의 규모와 용도는 발화되지 않는다.
 
 ## References
 

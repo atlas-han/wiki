@@ -2,11 +2,11 @@
 title: Cedric Clyburn
 type: entity
 category: person
-tags: [developer-advocate, red-hat, ibm, education, ai-engineer]
+tags: [developer-advocate, red-hat, ibm, education, ai-engineer, spec-driven-development, context-engineering, prompt-injection]
 links: []
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-10-17
 ---
 
 # Cedric Clyburn
@@ -29,7 +29,21 @@ updated: 2026-09-16
 - **이력·이전 경력·발표 이력** — 소스에 없다.
 - **도입부에 약속한 "세 가지 프로젝트"** 가 영상에 없다 — 화자의 원본이 그런지 편집인지 알 수 없다.
 - **촬영 시점**.
+- **소속** — 설명란 두 개가 IBM Technology / Red Hat으로 다르게 쓴다(2026-10-17).
+
+## 두 번째 소스 — 개발자의 일이 구현에서 지휘로 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+> ⚠️ **소속 표기가 설명란마다 다르다.** 이번 설명란: *"IBM Technology의 Cedric Clyburn"*. 09-15 설명란: *"Red Hat의 수석 개발자 애드보킷"*. 이번에도 **자막에는 이름·소속이 없다.** 어느 쪽인지(또는 둘 다인지) 정하지 않는다.
+
+- **입장**: AI가 개발자를 대체하느냐는 질문에 *"I always say no. I've actually seen more people get into coding because of AI."*(00:31~00:35) 대신 *"what AI will do is change what software development looks like."*(00:35~00:40)
+- **전환**: *"the shift from implementing to conducting"*(02:27~02:30). 개발자는 *"a conductor, a captain, someone who can make important architectural decisions"*(03:28~03:36)가 된다. → [[orchestras-not-factories]]
+- **개념 묶음**: [[spec-driven-development]](프롬프트는 모델마다 다르게 해석된다), context management(컨텍스트 창의 자원 한계) → [[context-engineering]], loop engineering(*"a recursive goal where you as a human define the purpose and the AI iterates until it's complete"*), skills·automations·sub-agents를 *"contextual engineering capabilities"* 로 묶는다.
+- **기초 강조**: 모델은 *"doesn't quite understand time and memory like we do"*(05:33~05:38)라고 말하고, GPU 메모리의 가중치·KV 캐시를 그림으로 설명한다. 첫 소스의 "기초를 건너뛰지 말라"([[three-tier-ai-skill-stack]])와 같은 태도다.
+- **보안**: 세 조건(민감 데이터·웹 노출·전송 능력)이 결합하면 인젝션이 성립하고, 처방은 일회용 샌드박스다 → [[prompt-injection]] · [[lethal-trifecta]] · [[agent-sandboxing]]
+- **비유**: *"AI is becoming the new electricity"* 를 [[andrew-ng|Andrew Ng]]의 말로 기억해 인용한다(08:28~08:32). *"I had the chance recently to work with AI legend Andrew Ng"*(08:24~08:28)라고 하지만 무슨 일인지는 말하지 않는다.
+- 이번에도 측정은 없고 일화(조종사)와 가정 예시(RPG)뿐이다.
 
 ## References
 
 - [[tech-bridge-ai-engineer-three-tier-skill-stack]] · [[ibm]] · [[tech-bridge]]
+- [[tech-bridge-five-concepts-coding-with-ai-agents]]

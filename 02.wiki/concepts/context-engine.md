@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [context-engine, institutional-knowledge, grounded-context, context-bundle, retrieval, organization]
 aliases: [context engine, 컨텍스트 엔진, context bundle, grounded context]
-related: [company-brain, agent-knowledge-sourcing, code-only-index-blind-spot, retrieval-augmented-generation, nl-to-structured-query-scaffolding, push-vs-pull-context-retrieval, file-discovery-tax, context-engineering, token-minimization-trap]
+related: [company-brain, agent-knowledge-sourcing, code-only-index-blind-spot, retrieval-augmented-generation, nl-to-structured-query-scaffolding, push-vs-pull-context-retrieval, file-discovery-tax, context-engineering, token-minimization-trap, agentic-search, review-wip-limit]
 first-seen: tech-bridge-unblocked-context-engine-structured-queries
-sources: [tech-bridge-unblocked-context-engine-structured-queries]
+sources: [tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 컨텍스트 엔진 (Context Engine)
@@ -51,6 +51,16 @@ updated: 2026-10-16
 - 묶음을 만드는 방법(인덱싱·랭킹·중복 제거·권한 필터)이 발화되지 않는다 — 제품 시연이지 설계 공개가 아니다.
 - 효과 수치는 벤더 데모 1건. 독립 재현 없음.
 - *permissions-aware* 의 구현.
+
+## 두 번째 벤더 — "more agentic search" (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[atlassian|Atlassian]]도 같은 이름을 쓴다(AI Context Engine). 다만 형태가 다르다. [[unblocked|Unblocked]]는 과제별 grounded context 묶음을 **push**한다. Atlassian은 *"the context engine itself is more agentic search is the way to think about it"*(50:56~51:00)이라고 말한다.
+
+- **그래프 위의 검색**: *"a number of I guess graph databases inside of Atlassian that connect to all of the data"*(16:14~16:20)가 있다. 연결은 *"through inferences as you use the product or (…) explicit"*(16:37~16:42)로 생긴다. 그 위에서 *"narrowing down the retrieval and the search space to scope it to like where this answer is most likely uh lives within the code"*(47:56~48:07).
+- **모노레포의 대안**: *"product repos feel like monor repos because you can pull in that engine at hawk[=ad hoc]"*(18:52~18:55). 스냅샷이 아니라 즉석 조회다(*"you don't snapshot it"* 20:34~20:37).
+- **권위는 사람이 표시한다**: *"you need a human to tell like yes, this is actually true"*(20:23~20:25). Confluence verified badge(35:55~36:05)가 그 표시이고, *"the risk by automating that stuff is (…) things automated automatically end up being authoritative which is weird"*(21:22~21:32).
+- **결정의 이유**: [[shane-wolf|Shane Wolf]]는 *"historical information about why decisions were made (…) often left out of um agent generated code"*(49:01~49:07)라고 말한다.
+- ⚠️ 이 위키의 "네 성질" 중 permissions-aware는 이 소스에서도 발화되지 않는다. 효과 수치도 없다. 화자 귀속 일부는 추정이다(Wi-Fi 장애 중 Q&A).
 
 ## References
 

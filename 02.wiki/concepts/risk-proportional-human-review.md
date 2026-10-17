@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation]
 created: 2026-09-18
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 위험 비례 사람 검토
@@ -89,3 +89,7 @@ updated: 2026-10-16
 > ⚠️ 기준선·수치·처방 없음 — *"That's the thing you've got to evaluate for the problems that you're solving."*(17:26~17:29) ko는 *cost of being wrong is high* 를 **"실수할 확률이 높습니다"** 로 옮겨 기준을 *비용* 에서 *확률* 로 바꿨다 — 이 페이지와 [[model-calibration]]이 구분하는 바로 그 두 축이다(Jev 편의 임계값은 *확률* 을 *비용* 에 맞춰 조정한다).
 
 > ⚠️ **Contradiction (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])**: 이 페이지는 사람이 반드시 볼 변경을 위험도로 가른다(Pocock: *"Every single one-way door you do."*). [[gitar|Gitar]]의 [[ali-reza|Ali-Reza]]는 자동 승인·머지 조건을 *"you can define rules and conditions that control when uh PRs get automatically approved by the agent and merged automatically"*(05:18~05:31)로 **사용자 설정에 넘기고**, 어떤 PR이 자동 머지에서 빠져야 하는지는 말하지 않는다. 위험 비례 기준이 제품에 기본값으로 들어 있는지는 이 소스로 알 수 없다.
+
+## 1인 사업장 판본 — 운영 설정만 직접 승인 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
+
+1인 사업장 판본이다. 에이전트가 만들고 시험하고 고치되 *"실제 운용 설정을 바꾸는 중요한 순간에는 본인이 직접 승인"*(06:27~06:31)하고, 보험 서류는 77%를 자동 확정하고 나머지 줄만 사람이 본다(03:18~03:36). 위험이 큰 결정에 사람을 두는 배치가 해설 전언으로 확인된다.

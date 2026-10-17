@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-09-09
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 예약형 에이전트 자동화
@@ -98,3 +98,11 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## 언제 자동화로 넘기나 — "다섯 번" (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]])
 
 [[greg-brockman|Brockman]]의 경험칙이다. 먼저 손으로 한다(복사·붙여넣기 → Gmail 커넥터). *"I've done this three times, I've done this five times, and now I understand how this process works, let's automate it"* (24:39~24:45). 그는 이것을 *"a general software engineering maxim"* 이라 부른다(24:46~24:55). 손으로 하는 단계는 비용이 아니라 수단으로 본다. *"that way you kind of keep your your finger on the pulse of the problem"* (25:02~25:06). 결과의 책임은 사람에게 남는다(*"accountability is something that remains with them"* 25:11~25:15). ⚠️ ko는 *"The five times metric"* 을 **"5배라는 기준"** 으로 옮겼다(횟수 → 배수).
+
+## 입문 정의 — cron·이벤트 트리거 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+*"being able to set up kind of cron jobs and event-triggered (…) actions. So, for example, if someone comes to your website and fills in a form, that can kick off automation"*(06:30~06:45). [[cedric-clyburn|Cedric Clyburn]]은 이것을 context engineering 기능으로 분류한다.
+
+## 트리거는 실행 환경의 함수다 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]의 비교 축 가운데 triggers가 있다. 로컬은 수동 프롬프트다(11:53~11:56). GitHub Actions는 스케줄(*"every Monday morning at 9:00 a.m. and updates your dependencies"* 07:37~07:40)과 PR 이벤트를 받지만 *"it's only able to respond to events coming out of GitHub"*(07:56~07:58)다. VM은 Twilio·Slack·Datadog·GitHub webhook을 받고(08:44~08:55), Kubernetes는 cron과 Slack·GitHub·Jira의 HTTP 이벤트를 받는다(10:32~10:43). 어떤 이벤트로 에이전트를 깨울 수 있는지가 **어디서 돌리느냐**로 정해진다. → [[agent-sandboxing]]

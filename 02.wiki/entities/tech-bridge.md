@@ -124,6 +124,10 @@ sources:
   - tech-bridge-tailscale-aperture-ai-without-lock-in
   - tech-bridge-factory-bug-report-to-production
   - tech-bridge-braintrust-agentic-vs-vector-search-eval
+  - tech-bridge-atlassian-build-your-own-sdlc
+  - tech-bridge-five-concepts-coding-with-ai-agents
+  - tech-bridge-dental-clinic-ax-transformation
+  - tech-bridge-openhands-sandboxing-coding-agents
 created: 2026-06-03
 updated: 2026-10-17
 ---
@@ -1232,7 +1236,41 @@ updated: 2026-10-17
 - ⚠️ 이름 Jess와 소속은 자막에서, 성 Wang은 설명란에만 있다. 20행·1회 시행·약한 vector 구현(화자 인정)이고, 정확도 수치와 비용 단위는 미발화. 태스크(위치 찾기)와 채점(테스트 통과)이 어긋난다. Cursor 트윗을 *"semantic search also known as agentic search"* 로 소개하는데 화자 자신의 정의와 맞지 않는다. 챕터 9개가 발화보다 최대 1분 39초 이르다. 행사명 미발화(AI Engineer 추정).
 - **⚠️ ko**: 고유명사(Braintrust·Ankur·Qdrant)는 en-orig보다 정확하지만 LLM-as-a-judge → "LLM 학위", team sport → "스포츠 / 장비", turns → "교대 근무", flag → "국기", runs → "처형", Pinecone → "솔방울", `cat` → "고양이"로 옮긴다. 반전도 있다: *a year ago* → "1년 후", *couldn't piece together* → "연결할 수 있었다"(+ 세 함수 → "세 사람"), *made more searches* → "더 많은 성과", *hopefully you learned* → "거의 아는 바가 없습니다".
 
+## 2026-10-14 멤버 전용 → 10-17 공개 — Andy Wong · Andrei Bocan · Shane Wolf (Atlassian), 직접 만드는 SDLC (2026-10-17 ingest)
+
+[[tech-bridge-atlassian-build-your-own-sdlc|직접 만드는 SDLC — Andy Wong, Andrei Bocan, Shane Wolf (Atlassian)]](`ks55L-DkLE8`, 57:21, 공식 챕터 22) — [[andy-wong]] · [[andrei-bocan]] · [[shane-wolf]] · [[atlassian]] ([[review-wip-limit]] · [[context-engine]] · [[automated-code-review]] · [[executable-standards]] · [[verification-bottleneck]])
+
+- 2026-10-14 멤버 전용으로 처음 보였고 2026-10-17 `public` 확인(`upload_date` 20261016). [[ai-engineer|AI Engineer World's Fair]] 워크숍(발화) — Wi-Fi 장애로 실습은 무산되고 약 25분이 Q&A다.
+- 이 채널 첫 **Atlassian** 소스. 코드의 왼쪽과 오른쪽: Jira coding agent(수락 기준 자가 검증, 호스팅 Docker 샌드박스, 타사 에이전트 할당), AI reviewer(자체 학습 잡음 필터) + Markdown standards(느슨한 lint, CI 매핑 없음), AutoDev(백로그 → PR, 1인당 주 3~5 PR·WIP·비용 한도, *"the reviewing step is where things go to die"*), AI Planner, AI SRE, Context Engine(그래프 위 agentic search, 모노레포 대신 code context, verified badge, 결정의 이유).
+- ⚠️ 당사자 진술. 수치는 *"around 40% (…) human baseline of 45"* 한 쌍이고 정의가 없다. 과금 답이 엇갈린다. Wi-Fi 중 Q&A 응답자는 이름 미지목(Andrei 추정).
+- **⚠️ ko** — Jira coding agent → "스케줄링 에이전트", AutoDev → "자동차 개발", monorepo → "원숭이", Markdown → "가격 인하", lint → "먼지", CI check → "IQ 검증", agents → "부동산 중개인", *you don't snapshot it* → "스냅샷으로 저장했습니다", *three five PRs a week* → "세 명 … 5개".
+
+## 2026-10-16 업로드 — Cedric Clyburn (IBM Technology), AI 에이전트로 코딩할 때 알아야 할 5가지 개념 (2026-10-17 ingest)
+
+[[tech-bridge-five-concepts-coding-with-ai-agents|AI 에이전트로 코딩할 때 알아야 할 5가지 개념]](`T8UcAUunSMw`, 9:53, 공식 챕터 10) — [[cedric-clyburn]] · [[ibm]] ([[spec-driven-development]] · [[orchestras-not-factories]] · [[context-engineering]] · [[loop-is-the-product]] · [[agent-skills]] · [[lethal-trifecta]] · [[prompt-injection]])
+
+- IBM Technology 입문 해설, 같은 화자의 두 번째 소스. 조종사의 역할별 에이전트 일화로 시작해 *"I always say no"*(대체 질문). 자동완성 → 기능 전체 위임, SDD(프롬프트는 모델마다 다르게 해석), *implementing → conducting*(지휘자·선장, 아키텍처 결정), 컨텍스트 창 자원 한계, loop engineering = *"a recursive goal"*, LLM 기초(RPG 추정 vs 5분 예제, GPU 메모리·KV 캐시), skills·automations·sub-agents, 세 조건 → 프롬프트 인젝션 → 일회용 샌드박스, *"AI is becoming the new electricity"*(Ng 인용, 화자의 기억).
+- ⚠️ 이름·소속은 설명란에만, 소속 표기가 09-15(Red Hat)와 다르다(IBM Technology). "다섯 개념"의 목록은 발화되지 않는다(서수 3개). 챕터 경계가 발화와 어긋난다(인젝션 07:20 vs 챕터 06:56). 수치는 없다. en-orig 공백 없음.
+- **⚠️ ko**: *instead of … via prompts* → "명령어를 통해 이루어질 수 있습니다", 세 조건의 위험 → "일이 매우 수월해질 수 있습니다", *compromised* → "에이전트가 공격하는 경우", *manually writing code → designing* → "설계를 위해 코드를 수동으로 작성", *prompt injections* → "주사 / 제시된 질문들", *skills* → "기술", 조종사의 팀 → "저는".
+
+## 2026-10-16 업로드 — 동네 치과 원장님의 AX 전환기 (한국어 내레이션 해설, 2026-10-17 ingest)
+
+[[tech-bridge-dental-clinic-ax-transformation|동네 치과 원장님의 AX 전환기 — AI로 치과 업무를 통째로 바꿨다!]](`_RSwx0GvVvY`, 9:03, 공식 챕터 12) — [[gatsbydds]] ([[in-house-ai-data-boundary]] · [[exception-handling-as-the-job]] · [[deterministic-agent-pipeline]] · [[taste-encoded-evals]] · [[agent-manager-analogy]])
+
+- **채널의 세 번째 형식**이다. 원음 발췌가 없는 한국어 내레이션 단독 해설이고, 소재는 커뮤니티 글(아카라이브 「동네 치과의 AX전환기」)이다. 위키 첫 비개발 1인 사업장 사례로, 환자 정보는 병원 안에서(DGX Spark 12대 등), 통화 전사·요약·검색, 보험 서류 77% 자동 확정·사람은 1,609줄, 모델 이름을 가린 비교와 사람의 판정이 정답 자료로 쌓이는 구조, 계산은 프로그램·해석은 AI, 코딩 에이전트를 포털·전화·음성·인프라 팀원처럼 쓰고 운영 설정만 본인이 승인, 구독·광고 정리(마케팅비 0원)를 다룬다.
+- ⚠️ 모든 사실이 2차 전언(작성자 자기 보고 → 해설)이다. 원 글은 확인하지 않았다. 77%는 정확도가 아니라 분류 비율이다. 모델·도구 이름은 미발화이고 장비비 회수는 계산할 수 없다(해설 명시). 작성자 핸들은 설명란에만 있다.
+- **⚠️ 원어 = 한국어**: ko가 원 발화의 ASR이고 en-orig는 영어 대응문, `en`은 ko 번역이다. ko 받아쓰기 오류로는 *16009줄*(=1,609), *마케팅비가 영원*(=0원), *근모*(=근무), *자살한 이동*(=자잘한), *산에 메신저*(=사내)가 있다. `en`: *"Director Lee"*(=이 원장님), *"16,009"*.
+
+## 2026-10-16 업로드 — Robert Brennan (OpenHands), 샌드박스는 선택이 아닙니다 (2026-10-17 ingest)
+
+[[tech-bridge-openhands-sandboxing-coding-agents|샌드박스는 선택이 아닙니다: 코딩 에이전트 격리 방법 4가지]](`VOToAHcnhyA`, 13:51, 공식 챕터 12) — [[robert-brennan]] · [[openhands]] ([[agent-sandboxing]] · [[cloud-agent-delegation]] · [[least-privilege-connectors]] · [[persistent-agent-teams]] · [[pets-vs-cattle]])
+
+- 2026년의 도약은 클라우드 에이전트다. 감독할 사람이 없으니 최소 권한 샌드박스로 blast radius를 줄인다. 로컬은 babysit 아니면 dangerously skip permissions다. 네 전략은 로컬 Docker → Claude Code + GitHub Actions(lock-in) → VM·Mac mini(co-location) → Kubernetes 세션당 pod(*"most robust"*)이고, 비교 축은 local/remote·scale·isolation·persistence·triggers 다섯이다. *"sandboxing is not a panacea"*. 끝은 자사 Agent Canvas 토글이다.
+- ⚠️ 화자는 자막에서 자기소개한다. 측정치는 없다. Mythos 샌드박스 탈출은 화자 주장이고 출처가 없다. 제목 *"선택이 아닙니다"*는 발화되지 않는다. 행사명은 발화되지 않는다(AI Engineer 추정).
+- **⚠️ ko**: GitHub Actions의 한계 둘이 기능으로 뒤집힌다(*can't port* → "쉽게 이전할 수 있습니다", *can't respond to Slack webhook* → "답장할 수 있습니다"). *not necessarily a human there* → "사람이 있을 겁니다", *separated from your environment* → "영향을 미칠 수 있지만", *most robust* → "더 견고한 전략이 필요하다", *thousands* → "수천 번". prompt injection → "즉시 주사", agent → "약물", sandbox → "모래놀이터"다. en-orig는 Claude Code를 *"Quad Code"*로 적는다.
+
 ## 멤버 전용 → 공개 전환 · 대기 (2026-10-17 확인)
 
+- **공개 전환 — 위에서 ingest (2026-10-17 둘째 통합):** `ks55L-DkLE8`([[tech-bridge-atlassian-build-your-own-sdlc|직접 만드는 SDLC — Andy Wong, Andrei Bocan, Shane Wolf (Atlassian)]]) — 2026-10-14 멤버 전용으로 처음 보였고 2026-10-17 `availability: public` 확인(`upload_date` 20261016).
 - **공개 전환 — 위에서 ingest:** `zAglgqN5Lhw`([[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]], 10-13 회차 `availability: public` 확인, `upload_date` 20261012 = 공개 전환 값). 10-11 대기 목록의 마지막 항목이 해소됐다.
 - **여전히 `subscriber_only` — ingest하지 않음:** `N8gD8ebFlMI`(목록 `upload_date` 20261012, *Grok Bot 같은 상시 작동 에이전트는 어떻게 작동할까요? | SpaceX 엔지니어 Lee Robinson의 스탠퍼드 강연*) · `Eu4D795nMsQ`(목록 `upload_date` 20261013, *지능을 빌리는 건 그만: 특화 AI의 학습부터 배포까지*) · `Yhck-x6VuLs`(제목 미확인 — 목록 조회 stderr ERROR만). 공개 전환 시 그날 ingest.

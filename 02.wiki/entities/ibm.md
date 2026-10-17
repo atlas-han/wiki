@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-09-08
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # IBM
@@ -212,3 +212,7 @@ updated: 2026-10-09
 **같은 원리를 또 말했다** — *작성자가 아니라 증거를*([[behavior-validated-trust]], 09-08·09-17·09-18에 이어)과 *구현은 싸지고 판단이 차별화*([[decision-quality]], 09-08·09-23·09-26에 이어)를 **한 편에** 담았다. 이번 편은 서로를 언급하지 않는 앞선 편들과 달리 둘을 **하나의 워크플로(계획 → 실행 → 검증)의 앞뒤**로 놓는다.
 
 10-07 편이 더한 것: [[agent-change-evidence]], 그리고 [[verification-bottleneck]](다섯 번째 답 · ⚠️ Contradiction: 실행은 병목이었나) · [[behavior-validated-trust]] · [[decision-quality]] 보강.
+
+## 열한 번째 소스 — 같은 화자가 두 번째로, 소속 표기는 바뀌었다 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+설명란 링크(`ibm.biz` ×2, @IBMTechnology · @IBM · @IBMDeveloperAdvocates)로 **IBM Technology 판정**을 유지한다. 화자 [[cedric-clyburn|Cedric Clyburn]]의 두 번째 IBM 편이다(첫 소스 09-16 ingest). 이번 설명란은 그를 *"IBM Technology의"* 로 소개해, 09-15의 *"Red Hat 수석 개발자 애드보킷"* 과 다르다. 내용은 입문 해설이다 — 구현 → 지휘, SDD, 컨텍스트·루프 엔지니어링, LLM 기초(KV 캐시), 프롬프트 인젝션 → 일회용 샌드박스, "AI는 새로운 전기". 측정은 없다.

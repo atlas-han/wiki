@@ -6,9 +6,9 @@ tags: [guardrails, governance, standards, automation, tribal-knowledge]
 aliases: [실행 가능한 가드레일, 문서로서의 표준, executable policy]
 related: [decision-quality, behavior-validated-trust, agent-governance-layers, llm-coding-guidelines, trusted-throughput, intent-md, scheduled-agent-automations, codebase-gardening, skill-linting, hard-vs-soft-enforcement]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-09-09
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 실행 가능한 표준
@@ -101,3 +101,9 @@ Lauren Tan의 "리뷰 댓글에서 꺼내 코드베이스에 인코딩"(위 09-2
 사례는 Sentry의 Django·DRF 레거시다. OpenAPI 스키마와 실제 동작이 drift하자 endpoint 반환 타입, *extend schema decorator*, 스키마 일치를 lint 규칙으로 만들었다(06:24~07:07). 같은 원리를 스킬 문서에 적용한 것이 [[skill-linting]]이다.
 
 > ⚠️ 에이전트가 뽑은 lint 규칙을 사람이 검토하는지, 오탐을 어떻게 다루는지는 발화되지 않는다. 규칙 수·종류도 없다.
+
+## 느슨한 lint로서의 standards — Markdown, CI 매핑 없음 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[atlassian|Atlassian]]은 팀·조직 기준을 **Markdown standards**로 중앙 관리한다. 저장소를 패턴으로 지정하면 AI reviewer와 AutoDev가 PR에서 위반을 댓글로 단다(데모 *"design token enforcement"* 37:11~38:17). [[andrei-bocan|Andrei Bocan]]은 이를 *"pretty similar to linting to some degree but they're a lot more uh loose uh when you have the uh agents uh enforce them"*(40:54~41:04)이라고 말한다. 강제 경로는 두 갈래다. 새 코드는 리뷰어가 막고(*"going forward"* 41:13~41:18), 기존 코드는 AutoDev가 점진적 PR로 맞춘다(41:20~41:31).
+
+> ⚠️ 청중이 *"Do you have any way to map those to something like a CI check?"*(51:28~51:33)라고 묻자 답은 *"I don't think we can pro we provides that out of box"*(51:58~52:00)였다. 청중은 *"make it a little bit more deterministic"*(52:05~52:07)을 원했다. 이 페이지의 "문서가 아니라 프로세스에" 축으로 보면 **에이전트 리뷰에 심었지만 결정적 게이트는 아니다**.

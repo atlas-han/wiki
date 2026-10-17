@@ -3,7 +3,7 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-09-15
 updated: 2026-10-17
 ---
@@ -195,3 +195,11 @@ updated: 2026-10-17
 ## 설명란 링크만 — Braintrust 두 번째 발표 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
 
 [[jess-wang|Jess Wang]]([[braintrust|Braintrust]])의 17:46 발표. ⚠️ 행사명 미발화, 설명란 `ai.engineer` 링크·`#AIEngineer`로 **AI Engineer 계열 추정**. 시점 단서는 화자의 어림 *"about a year ago, so April of 2025"*(02:14~02:17)다.
+
+## 행사명이 발화됐다 — Atlassian 3인 워크숍 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[andy-wong|Andy Wong]] · [[andrei-bocan|Andrei Bocan]] · [[shane-wolf|Shane Wolf]]([[atlassian|Atlassian]])의 57:21 워크숍이다. 첫 문장이 *"Welcome to the AI engineers world's fair."*(00:00~00:02)다. 녹화일·도시는 발화되지 않는다(연도 단서 *"the great unsolved problem of uh 2026"* 24:19~24:22). Wi-Fi 장애(11:48~)로 실습은 무산되고 약 25분이 장애 중 Q&A다.
+
+## 설명란 링크만 — OpenHands 발표 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]([[openhands|OpenHands]])의 13:51 발표다. ⚠️ 행사명은 발화되지 않는다. 설명란 `ai.engineer` 링크와 `#AIEngineer`로 **AI Engineer 계열을 추정**한다. 현장 단서는 손들기 질문(03:22~03:38)이다.

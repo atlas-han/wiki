@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-repo]
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
-related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation]
+related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-09-09
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 클라우드 에이전트 위임
@@ -107,3 +107,11 @@ updated: 2026-10-16
 그러나 *"maybe I'm contrarian on this"*: *"I do think that you still want to be able to pull things down into into a computer"*(14:22~14:28) — *"look at things under the microscope"*, 파일 시스템·프로세스 모니터·Mac에서의 상호작용 → *"that option should stay open"*(14:44~15:20). [[tech-bridge-lauren-tan-trusting-agents|Lauren Tan]]의 *"시작하기 가장 좋은 곳은 로컬 — 관찰할 수 있으니까"* 와 **로컬 = 관찰의 자리**라는 근거가 같다. 순서(로컬 → 클라우드)가 아니라 **양방향 토글**로 본다는 점이 다르다.
 
 > ⚠️ **Contradiction (약): 샌드박스로 공급망 공격을 근절?** Rauch: *"we could eradicate supply chain attacks uh if if we move more and more of this development life cycle to to sandboxes"*(12:48~12:56, 스스로 *"bold statement"*). [[tech-bridge-openai-huggingface-incident-black-hat]]에서는 샌드박스가 신뢰한 의존성([[artifactory|Artifactory]])이 탈출 경로였다. 위협 모델이 다르다 — 개발자 머신의 malware 유출(Rauch) vs 샌드박스 안 에이전트 자신([[agentic-misbehavior]]).
+
+## 격리가 근거로 앞에 서다 — "감독할 사람이 없다" (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]([[openhands|OpenHands]]): *"The leap that we're seeing organizations make over the course of 2026 is really to agents that run in the cloud. And this is really where sandboxing comes into play."*(02:14~02:21) 근거는 둘이다. 일할 자리(터미널·파일 시스템)가 필요하고, *"there's not necessarily going to be a human there to babysit them"*(02:41~02:44)이다. 이 페이지의 기존 근거(노트북을 닫아도 돈다, 규모, 병렬)에 **사람 승인의 부재**를 앞세운다.
+
+클라우드 위임을 하나의 범주가 아니라 **격리 수준이 다른 네 단계**로 쪼갠다. 노트북 Docker → Claude Code + GitHub Actions(GitHub 이벤트에만 묶인 lock-in) → 별도 VM·Mac mini(에이전트끼리 co-location) → Kubernetes 세션당 pod(*"the most robust strategy"* 09:38~09:41)다. 자세한 내용은 [[agent-sandboxing]]에 있다. 노트북 일화도 있다. *"biking home with your laptop open cuz you didn't want cloud code[=Claude Code] to shut down"*(12:04~12:08).
+
+> ⚠️ **Contradiction(약)**: 위 Rauch의 *"we could eradicate supply chain attacks (…) if we move (…) to sandboxes"*와 달리 Brennan은 *"sandboxing is not a panacea. There is evidence of agents escaping their sandboxes."*(12:15~12:22)라고 한다. 위협 모델은 다르다(개발자 머신 malware 대 샌드박스 안의 에이전트). 자사 제품 [[openhands|Agent Canvas]]의 로컬 ↔ Docker ↔ VM ↔ Kubernetes 토글(13:07~13:20)은 Rauch의 "양방향"과 같은 방향이다.

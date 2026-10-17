@@ -1081,5 +1081,19 @@
   "02.wiki/sources/tech-bridge-sentry-stop-prompting-codify-linters.md": "LiVideo",
   "02.wiki/sources/tech-bridge-tailscale-aperture-ai-without-lock-in.md": "LiVideo",
   "02.wiki/sources/tech-bridge-unblocked-context-engine-structured-queries.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-vercel-rauch-agentic-workflow.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-vercel-rauch-agentic-workflow.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-atlassian-build-your-own-sdlc.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-five-concepts-coding-with-ai-agents.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-dental-clinic-ax-transformation.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-openhands-sandboxing-coding-agents.md": "LiVideo",
+  "02.wiki/entities/atlassian.md": "LiBuilding",
+  "02.wiki/entities/andy-wong.md": "LiUser",
+  "02.wiki/entities/andrei-bocan.md": "LiUser",
+  "02.wiki/entities/shane-wolf.md": "LiUser",
+  "02.wiki/entities/gatsbydds.md": "LiUser",
+  "02.wiki/entities/robert-brennan.md": "LiUser",
+  "02.wiki/entities/openhands.md": "LiBuilding",
+  "02.wiki/concepts/review-wip-limit.md": "LiPuzzle",
+  "02.wiki/concepts/in-house-ai-data-boundary.md": "LiPuzzle",
+  "02.wiki/concepts/agent-sandboxing.md": "LiShield"
 }

@@ -7,7 +7,7 @@ links:
   - https://www.andrewng.org/
 sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-oracle-agent-memory-harness, tech-bridge-sdd-full-course]
 created: 2026-08-31
-updated: 2026-09-27
+updated: 2026-10-17
 ---
 
 # Andrew Ng
@@ -52,3 +52,7 @@ Ng의 두 주장에 **당사자·반대편**의 진술이 붙었다.
 - *"the great developers I know out there almost always will write detailed specs for projects with any significant complexity"*(03:33~03:39). 20~30분 돌 에이전트라면 *"3 or 4 minutes"* 들여 명확한 지시를 쓰는 편이 낫다(03:53~04:05).
 
 위 [[cognitive-offloading]]의 "숙제 점수는 오르고 retention은 떨어진다"와 같은 방향의 걱정이 이 강좌에서는 [[cognitive-debt|인지 부채]]라는 개발자 쪽 이름으로 나온다 — 단 그 대목(26:26~26:37)은 소개자가 아니라 레슨 본문의 내레이션이다.
+
+## 화자의 기억으로 옮긴 인용 — "AI is becoming the new electricity" (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+[[cedric-clyburn|Cedric Clyburn]]이 *"I had the chance recently to work with AI legend Andrew Ng and I remembered his quote that AI is becoming the new electricity"*(08:24~08:32)라고 말한다. ⚠️ **화자의 기억으로 옮긴 인용**이고 원 출처·시점은 없다. 둘이 함께 한 일도 발화되지 않는다.

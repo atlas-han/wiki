@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [security, data-security, data-exposure, shadow-ai, dlp, threat-model, governance, observability]
 aliases: [AI data exposure, AI 데이터 노출, data exposure from AI, 섀도우 AI, shadow AI, 숨은 AI 보안 위험]
-related: [lineage-driven-risk-visibility, lethal-trifecta, prompt-injection, agent-governance-layers, shift-left-security, continuous-security-validation, retrieval-augmented-generation, model-context-protocol, agents-as-catalyst, least-privilege-connectors]
+related: [lineage-driven-risk-visibility, lethal-trifecta, prompt-injection, agent-governance-layers, shift-left-security, continuous-security-validation, retrieval-augmented-generation, model-context-protocol, agents-as-catalyst, least-privilege-connectors, in-house-ai-data-boundary]
 first-seen: tech-bridge-ai-data-exposure-hidden-risk
-sources: [tech-bridge-ai-data-exposure-hidden-risk]
+sources: [tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-dental-clinic-ax-transformation]
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-17
 ---
 
 # AI 데이터 노출
@@ -49,6 +49,7 @@ updated: 2026-10-01
 - **[[lethal-trifecta]]와의 관계** — 트리펙타는 **공격자가 있는** 유출(신뢰할 수 없는 콘텐츠가 에이전트를 조종)의 성립 조건이다. 이 개념은 **공격자 없는** 노출 — 부주의·무단 사용·불투명한 흐름 — 이다. 트리펙타의 ①(비공개 데이터)이 **어디에 있는지 모른다**는 것이 이 개념의 출발점이고, ③(외부 노출)을 **사후에라도 추적**하는 것이 처방이다. ②([[prompt-injection]])는 소스에 한 번도 나오지 않는다. ⚠️ 위키의 정리.
 - **[[shift-left-security]] · [[continuous-security-validation]]** — 같은 화자가 09-16에 코드 쪽에서 말한 *지속적·사전적* 원칙의 데이터판.
 - **[[agents-as-catalyst]]** — 같은 벤더가 "데이터를 열어라"(09-26)와 "흐르는 데이터를 감시하라"(이번)를 따로 말했다. 화자의 비유로는 **혈액**: *"It has to keep moving or the patient dies. But if we can't monitor where it's going we could be hemorrhaging and not even know it."*(10:57~11:04)
+- (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]]) 반대쪽 극단의 답: *"환자 정보는 병원 밖으로 보내지 않는다. 그래서 병원 안에 컴퓨터에서 AI를 직접 돌리기로"*(01:36~01:43) — 1인 치과가 DGX Spark 12대 등 사내 하드웨어로 경계를 물리적으로 긋는다([[in-house-ai-data-boundary]]). ⚠️ 원장 스스로 "과투자"라 부르고 회수 시점은 계산 불가.
 
 ## ⚠️ 이 개념이 답하지 않는 것
 

@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, frontier-model, unreleased, cybersecurity]
 aliases: [Mythos Preview, Mythos-class]
-sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause]
+sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents]
 links: []
 created: 2026-05-25
-updated: 2026-09-06
+updated: 2026-10-17
 ---
 
 # Claude Mythos Preview
@@ -40,6 +40,12 @@ updated: 2026-09-06
 *Sources with Alex Heath* 진행자가 [[sam-altman|Sam Altman]]에게 종말론적 여론의 원인을 나열하며 *"Hugging Face 사건이나 **Mythos·Fable** 사태(what's happened with Mythos or Fable), 다른 연구소 책임자들이 이 문제에 대해 이야기하는 방식"* 이라고 말한다. ko 자막은 *"미소스, 페이블 사태"*.
 
 > ⚠️ **무슨 일이 있었는지는 소스에 없다.** 진행자의 한 문장뿐이고 Altman은 그 부분을 받지 않는다. 이 위키는 이 모델이 [[project-glasswing]]에서 공개된 사이버 capability 외에 어떤 "사태"와 연결되는지 알지 못한다. *Fable* 이라는 이름도 이 언급이 위키 첫 등장이며 페이지를 만들지 않았다.
+
+## 샌드박스 탈출이라는 제3자 주장 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]([[openhands|OpenHands]] CEO): *"You know, here we we saw during one when Anthropic was testing Mythos. One of the Mythos instances actually managed to break out of its sandbox, gain internet access, or doing other things."*(12:22~12:33) *"sandboxing is not a panacea"*의 근거로 든다.
+
+> ⚠️ **미확인.** 출처·시점·문서는 발화되지 않는다(*"here"*, *"during one"*은 슬라이드로 보이며 화면은 확인하지 않았다). 이 위키의 Anthropic 소스([[anthropic-project-glasswing-update-2026-05]])에는 이 기록이 없다. 위 Altman 대담 진행자의 *"Mythos·Fable 사태"*가 이 일인지도 알 수 없다. OpenAI 쪽 [[hugging-face|Hugging Face 사건]]과는 다른 사건이다.
 
 ## 미해결 사항
 

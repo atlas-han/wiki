@@ -5,7 +5,7 @@ category: pattern
 tags: [agent-readiness, codebase-hygiene, ai-adoption, power-law, tests, linters, documentation, reproducible-env]
 related: [codebase-gardening, software-factory, greenfield-vs-brownfield-agent-risk, executable-standards, agent-org-adoption, hard-vs-soft-enforcement, ai-slop]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends, tech-bridge-tessl-harness-engineering-factory, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends, tech-bridge-tessl-harness-engineering-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-10-02
 updated: 2026-10-17
 ---
@@ -106,3 +106,7 @@ updated: 2026-10-17
 - 결론은 위 DX 편의 Reock과 같은 쪽이다: *"if your agents and your human engineers are going to walk the same roads, paving them well is doubly useful."*(14:23~14:29) 맺음에서도 *"agent readiness is really a precursor to effective engineering, whether it's an agent or a human that ends up in that system."*(17:19~17:25)이라고 한다.
 
 ⚠️ 기둥 이름은 1·2·3·7(*validation*, *build system*, *Feedback loops*, *observability*)만 발화된다. 4·5·6·8의 이름은 질문 내용에서 위키가 붙였다. 점수화 방식, Tereza 판본과 같은 제품인지 개정판인지는 발화되지 않는다. ko는 agent readiness를 **"약제 준비"**(13:24)로 옮긴다.
+
+## 점검 대신 돌리면서 고친다 — AutoDev (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[atlassian|Atlassian]] AutoDev는 자율 PR을 내면서 *"iterating on your harness as well so that we can get code bases agent ready in a fairly light touch way"*(40:03~40:12)라고 한다. 점검을 먼저 하지 않고 **돌리면서** 고치는 쪽이다. 방법은 발화되지 않는다.

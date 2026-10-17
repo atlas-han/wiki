@@ -6,9 +6,9 @@ tags: [software-factory, human-in-the-loop, multi-agent, metaphor, developer-exp
 aliases: [orchestras not factories, 공장이 아닌 오케스트라, orchestra not factory, 지휘자 비유]
 related: [software-factory, frontier-engineering, persistent-agent-teams, agent-swarm, slop-free-zone, multiplayer-agent-context, risk-proportional-human-review, goal-level-delegation, factory-engineering, agent-attention-management, features-vs-futures]
 first-seen: tech-bridge-conductor-orchestras-not-factories
-sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game]
+sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-10-02
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 공장이 아니라 오케스트라 (Orchestras, Not Factories)
@@ -64,6 +64,10 @@ updated: 2026-10-09
 [[agentcraft|AgentCraft]]의 [[ido-salomon|Ido Salomon]]도 [[conductor|Conductor]]처럼 *여러 코딩 에이전트를 한 화면에서 다루는 앱* 을 만들고, 사람을 **가운데서 지휘하는 자리**(오케스트라 지휘자 대신 **RTS 지휘관**)에 둔다. 두 발표 모두 사람·에이전트 혼성 실시간 협업을 시연했다.
 
 갈리는 점: Holtz는 *"software factory"* 라는 말을 거부했지만 Salomon은 자기 자율 실행 기능에 대해 *"Now it's called software factories, but at the time it was just doing stuff autonomously."*(06:13~06:18)라며 **그 이름을 그냥 받아들인다** — 지휘 은유와 공장 기능이 한 제품 안에 공존한다. 위키의 독해: 은유 논쟁은 *사람이 어디 서는가* 의 문제이고, 화면 아래에서 자율 루프가 도는 것 자체는 양쪽 모두 받아들인다.
+
+## 같은 은유, 입문 해설에서 — "a conductor, a captain" (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
+
+[[cedric-clyburn|Cedric Clyburn]]([[ibm|IBM Technology]]): *"Next is the shift from implementing to conducting"*(02:27~02:30) → *"what becomes important for developers? That my friends is being a conductor, a captain, someone who can make important architectural decisions that will impact the software in a year from now"*(03:23~03:38). 지휘자의 일은 **아키텍처 결정**과 **목표를 마일스톤으로 나누는 것**(03:41~03:54)이다. 공장 은유를 거부하는 논쟁은 없다. ⚠️ ko·`en`은 *conducting* 을 "관리"/*managing* 으로 옮겨 은유가 사라진다.
 
 ## References
 

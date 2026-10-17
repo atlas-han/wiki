@@ -5,9 +5,9 @@ category: technique
 tags: [agent-safety, attack, llm-security]
 related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-05-25
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # Prompt Injection
@@ -91,6 +91,7 @@ updated: 2026-10-16
 | 노출 경로 | 별도 필요 | 별도 필요 | 공유 공간 | **같은 채널** — 결과가 티켓에 돌아온다 |
 
 넷째 벡터(공유 사일로)와 가까우나, 차이는 **노출 경로가 진입 경로와 같다**는 점이다 — 페이로드를 넣은 자리에 답이 온다. 그래서 이 소스의 처방은 콘텐츠를 거르는 것이 아니라 **에이전트의 권한을 요청자에 맞추는 것**([[confused-deputy-attack]] · [[agent-identity-separation]] · [[bound-parameters]])이다 — 첫째 요소(비공개 데이터)를 에이전트 손에서 뺀다. 그리고 SQL 층에서는 **prepared statement**로 닫는다([[secure-tool-evolution]]).
+- (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]]) 입문 해설 수준의 재확인: *"just like how SQL injections can infiltrate our applications, prompt injections are also very real."*(07:20~07:27) 입구는 **에이전트가 읽는 온라인 PR**, 목표는 **데스크톱 자격증명**, 처방은 **일회용 샌드박스**다(07:41~08:22). ⚠️ ko는 *prompt injections* 를 "주사 / 제시된 질문들"(07:23~07:25)로 옮긴다.
 
 ## References
 

@@ -4,9 +4,9 @@ type: concept
 category: pattern
 tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
-related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools]
+related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools, agent-sandboxing]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-09-14
 updated: 2026-10-17
 ---
@@ -85,3 +85,9 @@ Tech Bridge 해설이 Meta의 Muse 소개를 이렇게 요약한다. *"Muse is d
 ## 팀 신원별 커넥터 권한 — 게이트웨이에서 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
 
 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"the marketing team, you know, they get access to Google Calendar and Gmail, but the engineering team will also get access to GitHub."*(13:31~13:36) 같은 엔지니어링 안에서도 쓰기와 읽기 전용을 나눈다(13:42~13:47). [[ai-gateway]]는 커넥터 권한을 에이전트가 아니라 **사람·팀 신원**에 묶는다. 커넥터는 chat UI가 아니라 게이트웨이에서 설정된다(15:26~15:34). ⚠️ 벤더 진술이고 화면 데모를 전제한다.
+
+## 실행 환경 층 — 샌드박스와 blast radius (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]([[openhands|OpenHands]]): *"a paradigm that we actually know well from, you know, pre-agent security days, the principle of least privilege, right? The idea is that both agents and humans should only have access to the things that they need in order to do their job"*(04:41~04:53). 예는 *"the GitHub repo that it's editing, and maybe a couple secrets"*(05:00~05:04)다. 근거 어휘는 blast radius다(*"we limit the blast radius by limiting how much the agent has access to"* 05:23~05:27).
+
+앞의 서술들이 **커넥터·도구·신원** 단위로 권한을 좁혔다면, 이쪽은 **실행 환경** 단위다. 새로 더하는 것은 **co-location 문제**다. 한 VM에 모은 에이전트들은 *"all have access to the same stuff"*(09:04~09:06)라서, 코드 리뷰 봇이 Datadog 봇의 메모리를 고칠 수 있다(09:19~09:23). 최소 권한은 사용자와 에이전트 사이만이 아니라 **에이전트와 에이전트 사이**에도 걸린다. → [[agent-sandboxing]]

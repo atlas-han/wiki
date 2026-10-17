@@ -6,9 +6,9 @@ tags: [agent-loop, verifier, signal, ooda, self-improvement, auto-research, prod
 aliases: [the loop is the product, loop is the product, 루프 자체가 제품, second loop, 두 번째 루프, OODA loop]
 related: [agent-recipes, taste-encoded-evals, valued-work-per-watt, verifiable-goals, generator-evaluator-pattern, self-harness, harness-engineering, ralph-wiggum-method, agent-loop-size, linear-vs-closed-loop-harness, openclaw, automated-ai-research, back-pressure]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-five-concepts-coding-with-ai-agents]
 created: 2026-09-30
-updated: 2026-10-16
+updated: 2026-10-17
 ---
 
 # 루프가 제품이다
@@ -86,6 +86,8 @@ updated: 2026-10-16
 ## 반대 방향 — 루프를 두 질문으로 해체 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
 
 [[dex-horthy|Horthy]]: *"This idea of loops was a little mystical"* — trigger(forward pressure) + 작업 중 피드백(back pressure)으로 나누면 된다(12:30~12:50) → [[back-pressure]]. 이 페이지의 *신호 → 행동 → 검증* 과 같은 골격을 **덜 신비하게** 부른다.
+
+> ⚠️ **긴장(약): "loop engineering"의 두 번째 정의 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])**: [[cedric-clyburn|Cedric Clyburn]]([[ibm|IBM Technology]])은 *"loop engineering works like a recursive goal where you as a human define the purpose and the AI iterates until it's complete with whatever the task was that needed to be done."*(04:40~04:52)라고 정의한다. 그 앞에서는 *"instead of you being the person that prompts the agent back and forth (…) you design a system that does it instead"*(04:31~04:40)라고 말한다. 이것은 **단일 작업의 반복 루프**다([[ralph-wiggum-method]]·`/goal` 쪽). 이 페이지가 [[dru-knox|Knox]]에게서 받은 *loop engineering = harness engineering의 새 이름*, 그리고 개선 레버인 **meta loop**와는 층이 다르다. 같은 용어가 두 층에서 쓰이고 있다.
 
 ## References
 

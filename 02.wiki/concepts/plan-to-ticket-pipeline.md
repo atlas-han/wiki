@@ -6,9 +6,9 @@ tags: [plan-mode, tickets, jira, scoping, migration, tdd]
 aliases: [plan mode, 계획 모드, 계획에서 티켓으로]
 related: [cloud-agent-delegation, spec-driven-development, intent-md, sprint-contract, executable-standards, model-mixing-economics, verifiable-goals]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-10-17
 ---
 
 # 계획→티켓 파이프라인
@@ -54,6 +54,10 @@ updated: 2026-09-09
 
 - **계획의 품질을 무엇이 검증하는가에 답이 없다** — 계획이 틀렸을 때 티켓과 PR이 전부 틀리는 경로가 논의되지 않는다.
 - **WordPress 예제의 한계** — 공개 오픈소스 레포이고 **사내 레거시의 전형적 어려움(문서 없음·원저자 부재·비공개 의존성)이 다뤄지지 않는다.**
+
+## Jira 안의 같은 흐름 — Epic 분할 + automation rules (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+Jira 안에서 같은 흐름을 만든다. JCA에 *"can you break this down into like smaller issues for me"*(53:06~53:09)라고 Epic 분할을 시키고, automation rules로 분할된 이슈마다 JCA 세션을 자동으로 시작한다(53:17~53:36). 청중이 물은 "에이전트 웨이브"(V0·V1·V2 Epic)는 *"nothing would prevent you from doing that"*(53:50~53:53) 수준의 답이었다. ⚠️ 전용 기능이 아니라 자동화 조합이다.
 
 ## References
 

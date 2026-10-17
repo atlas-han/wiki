@@ -6,9 +6,9 @@ tags: [tts, normalization, vendor-independence, pronunciation, voice-agents]
 aliases: [TTS 정규화, 합성 전 정규화]
 related: [voice-agent-pipeline, transcription-brittleness, time-to-first-audio, least-privilege-connectors]
 first-seen: tech-bridge-voice-agent-failure-modes
-sources: [tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-voice-agent-failure-modes, tech-bridge-dental-clinic-ax-transformation]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-17
 ---
 
 # TTS 앞의 정규화 레이어
@@ -47,6 +47,10 @@ updated: 2026-09-19
 > 만약 고객에게 제공하는 제품을 개발하고 있다면, **고객에게 이러한 옵션을 제공하는 것이 좋습니다.** (25:12)
 
 발음 제어를 **최종 사용자에게 넘기라**는 권고다 — 브랜드명은 그 브랜드의 주인만 안다.
+
+## 현장 사례 — 요일 발음 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
+
+1인 치과의 음성 챗봇도 같은 자리에서 넘어졌다. *"음성 챗봇이 요일 발음을 제대로 못 하기도 했고"*(06:34~06:37, ko ASR "채봇"). 원인과 해결 방법은 발화되지 않는다. 위 표의 "날짜는 TTS에 맡기지 말 것"과 같은 유형의 실패다.
 
 ## ⚠️ 유보
 

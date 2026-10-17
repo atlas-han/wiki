@@ -6,7 +6,7 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-09-13
 updated: 2026-10-17
 ---
@@ -142,3 +142,7 @@ updated: 2026-10-17
 ## eval 통제에도 같은 원칙 — 프롬프트 금지에서 도구 차단으로 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
 
 [[jess-wang|Jess Wang]]([[braintrust|Braintrust]])은 Claude Code가 vector search만 쓰도록 하려고 먼저 프롬프트로 agentic search를 금지했다. *"but if you've ever done this before, you know that prompting is never enough. So what we also had to do is use the uh disallowed tools flag to prevent uh cloud code from calling certain things"*(12:45~12:58) 에이전트가 잊을 수 있는 층(프롬프트)에 강제를 맡기지 않는다는 이 페이지의 원칙이 **실험의 변수 통제**에 쓰인 사례다. ⚠️ 차단한 도구 목록은 발화되지 않는다. ko는 *flag* 를 "국기"(12:50)로 옮긴다.
+
+## 벤더 제품의 기본값은 soft — Markdown standards, CI 매핑 없음 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[atlassian|Atlassian]] standards는 **에이전트가 해석하는 Markdown 규칙**이다. 화자는 *"a lot more uh loose"* 한 lint라고 말한다(40:54~41:04). CI check(hard) 매핑은 기본 제공되지 않는다(51:58~52:03). 벤더 제품에서 soft 강제가 기본값이고, hard는 청중 요청으로만 등장한 사례다.

@@ -5,7 +5,7 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents]
 created: 2026-09-10
 updated: 2026-10-17
 ---
@@ -80,3 +80,7 @@ updated: 2026-10-17
 ## 게이트웨이 뒤에서 돌리는 개인 사용자 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
 
 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"people are running something like Open Claw[=OpenClaw] with on Tailscale"*(18:22~18:25). 백그라운드에서 돌다가 *"It did something it was not supposed to do."*(18:30~18:32)라는 일이 생기면, 게이트웨이 로그로 *"you can actually diagnose where it went wrong"*(18:36~18:39)라고 한다. 개인 사용자가 OpenClaw 같은 상시 에이전트를 [[ai-gateway]] 뒤에 두는 이유가 **사후 진단**이라는 진술이다. ⚠️ 일화이고 사례·수치는 없다. ko는 이 문장을 "꼬리비늘에 발톱이 열려 있고"(18:21)로 옮긴다.
+
+## "open claw craze" — 실행 환경 분류의 한 단계로 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
+
+[[robert-brennan|Robert Brennan]]([[openhands|OpenHands]])은 에이전트 샌드박싱 전략 셋째를 *"kind of in the open claw craze where you actually get a separate computer, you know, a virtual machine in the cloud or maybe a Mac mini"*(08:10~08:16)로 소개한다. 장점은 webhook과 스케줄이다. 단점은 모든 에이전트가 같은 것에 접근하는 co-location 문제다(08:58~09:34). Zuckerberg 편의 Mac Studio, 다른 소스의 Mac mini 구매 붐과 같은 그림이 **보안 쪽 평가**와 함께 나온다. ⚠️ en-orig ASR은 *"open claw"*(소문자)이고 ko는 "오픈 클로"다.

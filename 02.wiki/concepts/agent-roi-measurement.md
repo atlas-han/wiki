@@ -6,9 +6,9 @@ tags: [measurement, roi, adoption, tokens, bias, communication]
 aliases: [측정 문제, 에이전트 ROI]
 related: [mousepower, trusted-throughput, token-roles, overspending-underusing-loop, agent-org-adoption, task-entropy-matrix, verification-bottleneck, value-maxing]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-dx-ai-impact-trends]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-dx-ai-impact-trends, tech-bridge-atlassian-build-your-own-sdlc]
 created: 2026-09-13
-updated: 2026-10-03
+updated: 2026-10-17
 ---
 
 # 에이전트의 측정 문제
@@ -66,3 +66,7 @@ updated: 2026-10-03
 - **측정은 원래 안 풀렸다** — *"we we never completed that conversation before kind of throwing accelerant on this"*(10:39~10:43)
 
 이 페이지의 세 갈래와 대조하면: **1(우리는 표본이 아니다)** 에는 20만 명 규모의 집계로 답하지만 표본 구성은 밝히지 않는다. **2(토큰은 투입량이다)** 와는 같은 편이다 — 토큰·DAU는 utilization과 cost 차원에 두고 가치는 impact 차원에서 따로 잰다. 다만 귀속은 코호트 비교로 우회할 뿐이고 *누가 AI를 많이 쓰는가* 의 선택 편향은 다루지 않는다. **3(척도는 고객의 멘탈 모델에)** 은 여전히 비어 있다 — IBM 편처럼 독자가 **조직 내부 리더**다. ⚠️ 측정을 파는 회사가 측정의 필요를 말한다는 점도 함께 적어 둔다.
+
+## 벤더 대시보드와 크레딧 한도 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
+
+[[atlassian|Atlassian]]은 리뷰 수·에이전트 실행 수 대시보드(06:21~06:38)와 AutoDev의 *"ROI insights"*(08:15~08:25, 46:02~46:15)를 내세운다. 크레딧 보고는 **제품별**까지이고 작업별은 *"not yet"*(28:08~28:28)이다. 동기: *"when somebody is (…) going to spend like I don't know uh 1 billion tokens on a thing then you want to make sure that like that is something that you actually want to have done"*(28:44~28:54) 비용 한도는 *"per ticket (…) per week"*(44:18~44:24). ⚠️ ROI 지표의 정의는 발화되지 않는다. 과금 방식(credits vs 자기 API 키)에 대한 답도 영상 안에서 엇갈린다(26:33~27:11).
