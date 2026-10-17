@@ -5,9 +5,9 @@ category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
 related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth, value-maxing, token-minimization-trap, effort-output-outcome-mission]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-gitar-agentic-pr-validation, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-factory-bug-report-to-production]
 created: 2026-09-02
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # Trusted Throughput
@@ -224,3 +224,19 @@ Tech Bridge 해설 영상이 *"X에서는 … 한 달에 2,500개의 PR을 프�
 ## LOC·PR 수의 자리 — 노력과 산출 (2026-10-09 · [[tech-bridge-kent-beck-craft-augmented-development]])
 
 [[kent-beck|Kent Beck]]이 [[effort-output-outcome-mission|노력 → 산출 → 결과 → 미션]] 사슬로 이 페이지의 경고에 위치를 준다: *"The Genie produced 200,000 lines of code. That's a measure of effort. It has nothing to do with the mission."*(46:00~46:07), *"lines of code (…) somehow it's back PR count"*(47:10~47:22). Goodhart는 더 나쁘다 — *"I think Goodart was an optimist. (…) people will twist the entire system out of shape."*(48:41~48:52)
+
+## 토큰 리더보드에 대한 풍자 (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+*"we've completely forgotten that lines of code is a garbage metric for productivity, but then we decided that it's different than deciding the engineer who burns the most tokens must be producing the most."*(10:41~10:51) [[gabriel-martinez|Gabriel Martinez]]는 "토큰은 LOC다"를 풍자로 말한다. 그가 제시하는 보상 대상은 *"producing value, elegant, well-factored, pragmatic system design, and around clarity of test and evaluation harnesses"*(08:24~08:31)다. 지표는 제안하지 않는다.
+
+## flaky 테스트 — 고치게 하는가, 재시도로 덮는가 (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[gitar|Gitar]]는 flaky 테스트를 두 방향으로 다룬다. ① 플랫폼 팀에 CI 실패 분류를 준다: *"Are these flakiness issues that you can that you need to address by improving the reliability of the tests or are there infrastructure issues"*(07:04~07:12). ② 동시에 *"you can even set up rules that automatically retry flaky tests if you want. That's a very popular feature."*(04:41~04:47) ②는 이 페이지가 경고한 증상(에이전트의 반복 재시도가 낭비하는 토큰)을 자동화하는 쪽일 수도 있다. 화자는 이 긴장을 다루지 않는다.
+
+PR 분류(*"what amount of PRs are going to feature development versus fixing issues, chores, refactors"* 07:37~07:44)는 PR 수·LOC 계열 지표와 이웃하지만, 양이 아니라 **구성**을 본다. 분류 정확도는 미발화다.
+
+## Goodhart의 명시적 인용과 지표 이름 다섯 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+*"Token leaderboards at big companies just encourage profligate spending. It's Goodhart's law in real time. If you decide to measure token usage, engineers are going to optimize for token usage, and then it's no longer a good metric."*(16:32~16:49) [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]])는 *"It's about who can get the highest leverage outcomes from that spent."*(16:54~16:58)이라고 하고, Factory가 보는 지표를 이름으로 든다: *"signal to production time, human intervention count, median time to repair, shelf life of code, and cost per PR. These are real tangible outcomes."*(17:02~17:13)
+
+이 페이지의 논증(토큰은 LOC다, 대시보드는 조작된다)에 **벤더 쪽의 명시적 Goodhart 인용**이 더해진다. *human intervention count* 는 Tessl의 *manual takeovers* 와 같은 계열로 사람의 개입을 센다. ⚠️ 다섯 지표 모두 이름만 있고 정의·값·사례가 없다. ko는 *signal to production time* 을 "이제 시작할 시간이에요 / 생산에 대한 신호"(17:01~17:03)로, *median* 을 "mean"으로 옮긴다(ko·`en` 공유).

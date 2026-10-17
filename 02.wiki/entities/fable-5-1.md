@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory]
 created: 2026-09-14
-updated: 2026-10-03
+updated: 2026-10-16
 ---
 
 # Fable 5.1
@@ -22,6 +22,10 @@ updated: 2026-10-03
 | [[tech-bridge-pstack-third-party-review]] (09:57~10:03) | *"**Fable이나 [[openai-astra\|Astra]] 같은 모델**이라면 이런 규율을 자연스럽게 고려하고 내장하기 시작하길 바라겠지만"* — **모델이 흡수할 층 vs 바깥에 남을 층**의 논의에서 **프론티어 등급의 대표**로 쓰인다 |
 | [[tech-bridge-zuckerberg-muse-personal-agent]] (41:03~41:08) | 진행자: *"Artificial Analysis 차트에서 당신들의 최신 모델이 **Claude 바로 뒤 — Fable 5.1과 Opus 5**"* |
 | [[tech-bridge-ambitious-software-agent-era]] (16:34~16:47) | *"**Fable 급 도구**라면 의도를 제대로 전달하는 한 실제 코드 품질 자체가 아주 높다"* |
+| [[tech-bridge-runlayer-self-improving-skills-mcp]] (13:59~14:03) | *"we all miss Fable. It was a great model, right? It can deprecate it or it can get dumber."* — **과거형**, 빼앗길 수 있는 프런티어 지능의 예. 버전 미발화 |
+| [[tech-bridge-horthy-state-of-software-factory]] (07:33) | *"and even Astra and Fable, you know, we in I remember in the Opus 4 days"* — 문장이 끊긴다, 버전 미발화. 최상단 좌표로 [[openai-astra\|Astra]]와 짝지어 부르는 또 하나의 사례 |
+
+> ⚠️ **"그리워한다"(2026-10-13).** Wilinski는 Fable을 이미 쓸 수 없는 모델처럼 말한다. [[tech-bridge-death-of-code-review]]의 *"pulled and then unpulled"* 와 같은 사건을 가리키는지는 알 수 없다. 03:31의 en-orig *"And I'm fable probably just like you"* 는 같은 문맥(*"if that frontier intelligence is not being taken from you"*)이라 *"I miss Fable"* 로 읽힐 여지가 있다(`en` *"fallible"*). 판독은 보류한다. ko는 *"It was a great model"* 을 **"그는 훌륭한 본보기였죠"** 로 옮긴다(14:01).
 
 **세 소스가 공통으로 하는 일은 하나다 — Fable을 "현재 최상단"의 좌표로 쓴다.** 스펙·가격·컨텍스트 길이·벤치마크 수치는 **어느 소스에도 없다.**
 

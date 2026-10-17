@@ -6,9 +6,9 @@ tags: [evals, production-traces, regression-tasks, hill-climbing, observability,
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
 related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-09-30
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -76,3 +76,7 @@ updated: 2026-10-12
 ## 트레이스의 세 갈래 — eval은 그중 하나 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
 
 [[jake-broekhuizen|Broekhuizen]]([[langchain|LangChain]]): *"most trace data actually should stay as history, as referenceable history. Some some might become data sets to do offline evaluations (…) A small (…) subset should end up becoming what changes your agent's memory."*(12:57~13:13). 이 페이지의 순환(트레이스 → eval 태스크)은 **세 갈래(history · eval 데이터셋 · 메모리 갱신) 중 하나**로 놓인다. 메모리 갱신 갈래는 [[trace-to-memory-loop]], 중요한 행동은 다시 eval로 보호한다(*"protecting important behavior with emails[=evals]"* 14:50~14:52). ⚠️ 벤더 진술, 비율·기준 미발화.
+
+## 사람이 도는 판본 — 10~20행 샘플에서 시작 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]], 같은 회사의 두 번째 화자)이 같은 순환을 입문 수준으로 그린다. AI 챗봇이 달린 문서 페이지를 출시한 뒤 프로덕션 로그에서 *"sample a subset of them, maybe like 10 to 20 rows or something and create a kind of data set"*(06:35~06:42)을 만들고, 태스크·채점을 바꿔 eval을 돌린 다음 코드를 바꿔 배포하면 *"the whole flow repeats again because, uh, those changes will show up in your production logs"*(07:15~07:21). W&B(에이전트가 스스로 도는 루프)나 Niazmandi(코딩 에이전트가 headless로 eval)와 달리 **사람이 각 단계를 돈다**. 순환의 역할 분담은 *"eval are a team sport"*(07:35~07:39)이다. AI 엔지니어·PM·SME·데이터 분석가가 나눠 맡는다 → [[eval-experiment-anatomy]]

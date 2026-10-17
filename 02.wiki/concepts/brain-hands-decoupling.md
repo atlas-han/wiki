@@ -5,9 +5,9 @@ category: architecture
 tags: [agent-infrastructure, decoupling, sandbox, harness]
 related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure, humanoid-robot-scaling]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future]
+sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-05-25
-updated: 2026-09-07
+updated: 2026-10-16
 ---
 
 # Brain–Hands Decoupling
@@ -99,6 +99,10 @@ Token이 sandbox 안에 들어가지 않음:
 [[jensen-huang]]이 *"에이전트를 물리적 몸체에 넣으면 로봇"* 이라며 hands의 **범위**를 물리 세계로 넓혔다면, Musk는 hands의 **품질이 상한을 만든다**고 말한다. 소프트웨어 층에서는 hands(도구·샌드박스)의 품질이 병목으로 논의된 적이 거의 없는데, 물리 층에서는 그것이 세 항 중 하나로 명시된다. → [[humanoid-robot-scaling]]
 
 ⚠️ 세 항이 *"기하급수적으로 개선 중"* 이라는 주장에 측정치가 없다 — 특히 손의 정밀도는 벤치마크가 제시되지 않는다.
+
+## Vercel의 권장 아키텍처로 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+[[vercel|Vercel]] CEO [[guillermo-rauch|Guillermo Rauch]]가 이 모델을 이름째 쓴다: *"using this mental model like brain and hands. I don't know if you if you've heard of it, but like the architecture that we recommend at Vercel is that you run the harness and then you give it tools. So, in this example, the tool that we're giving it is the Vercel sandbox."*(05:36~05:56) — [[anthropic-managed-agents]]의 원 출처는 밝히지 않는다. **두 번째 회사가 같은 분할을 제품 권장안으로 채택**한 기록이고, 손(샌드박스)이 [[fx]] 하네스 바깥의 교체 가능한 도구다. 보안 쪽 연장(같은 소스 12:34~13:41): 손을 클라우드 샌드박스에 두면 *"compartmentalize and contain the blast radius of a supply chain attack"* — 위 *Security boundary* 절과 같은 논리를 **개발 생애주기 전체**로 넓힌다(⚠️ 화자 주장, 측정 없음). ko는 harness를 "테스트 환경", sandbox를 "실험장"으로 옮겨 이 구조가 읽히지 않는다.
 
 ## References
 

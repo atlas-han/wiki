@@ -6,9 +6,9 @@ tags: [rag, retrieval, vector-db, semantic-search, context]
 aliases: [RAG, 검색 증강 생성]
 related: [agent-memory, agent-knowledge-sourcing, context-engineering, agentic-sites, llm-wiki-pattern, code-knowledge-graph, agent-collaboration-as-search, ai-data-exposure, lineage-driven-risk-visibility]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-ai-data-exposure-hidden-risk]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agentic-sites, karpathy-llm-wiki-gist, tech-bridge-agent-to-agent-as-search, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-08
-updated: 2026-10-01
+updated: 2026-10-16
 ---
 
 # Retrieval-Augmented Generation (RAG)
@@ -140,3 +140,7 @@ updated: 2026-10-01
 - 변환 주체: *"data gets transformed by rag[=RAG], AI agents and systems"*(09:57~10:04) → [[lineage-driven-risk-visibility]]
 
 09-24 Oracle 편의 적재 단계 *PII 가리기* 가 변환이 민감도를 **줄이는** 쪽이라면, 이 편의 우려는 변환이 민감도를 **숨기는** 쪽이다(⚠️ 위키의 대응). ⚠️ ko는 02:09의 RAG를 *"세대가 증강됨 회복"* 으로 깼다(05:20에서는 *"RAG 흐름"* 으로 바르게 씀). → [[ai-data-exposure]]
+
+## 2026-10-15 — "RAG의 다른 절반"은 쿼리다
+
+[[tech-bridge-unblocked-context-engine-structured-queries]]에서 [[peter-werry|Peter]]([[unblocked|Unblocked]])는 검색을 *"two halves"*(07:40~07:42)로 나눈다. 내용 질문은 RAG + agent loop가 *"really really far"*(06:38~06:40) 가지만, 구조적 질문(*"PRs that I merged last week"*)은 *"not where that information's encoded"*(07:28~07:30) — 벡터 저장소엔 집계·필터가 없다. 그가 만드는 것은 *"something that can effectively handle all of the, uh, other half of Reg[=RAG]"*(17:00~17:03) → [[nl-to-structured-query-scaffolding]]. ⚠️ 영상 제목 *"RAG만으로는 부족합니다"* 는 업로더 표기 — 화자는 *"RAG nails the content part"*(06:25)라 말한다.

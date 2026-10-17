@@ -6,9 +6,9 @@ tags: [dora-metrics, deployment-frequency, change-failure-rate, delivery-perform
 aliases: [DORA, DORA metrics, DORA 4대 지표, four key metrics, 배포 빈도, deployment frequency, 변경 실패율, change failure rate, CFR]
 related: [ai-measurement-framework, perceived-vs-actual-productivity, agent-readiness, minimizing-reader-load, verification-bottleneck, trusted-throughput, ai-native-sdlc, spec-driven-development]
 first-seen: tech-bridge-dx-ai-impact-trends
-sources: [tech-bridge-dx-ai-impact-trends]
+sources: [tech-bridge-dx-ai-impact-trends, tech-bridge-factory-bug-report-to-production]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-17
 ---
 
 # DORA 지표 (DORA Metrics)
@@ -63,3 +63,7 @@ DORA는 [[ai-measurement-framework]]의 **impact** 차원에서 쓰는 "기초 �
 - [[tech-bridge-dx-ai-impact-trends]] — first-seen
 - [[getdx]] · [[justin-reock]]
 - [[ai-measurement-framework]] · [[perceived-vs-actual-productivity]] · [[agent-readiness]] · [[minimizing-reader-load]] · [[trusted-throughput]] · [[ai-native-sdlc]] · [[spec-driven-development]]
+
+## 코드 작성 시간을 리드 타임이 압도한다 — 화자의 내기 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"If you pull your Dora metric, the time from code written to time in production, I would bet dwarfs the time actually making those engineering changes."*(05:25~05:35) "코딩은 병목이 아니었다"는 진단의 근거로 DORA 리드 타임을 부른다 → [[verification-bottleneck]]. Factory가 보는 지표에도 *"median time to repair"*(17:05~17:07)가 들어간다. ⚠️ *"I would bet"* — 데이터는 없다. ko·`en` 모두 *median* 을 *"mean"* 으로 옮긴다.

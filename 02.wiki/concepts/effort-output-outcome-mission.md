@@ -6,9 +6,9 @@ tags: [metrics, productivity, goodhart, outcomes, mission, kent-beck, lines-of-c
 aliases: [effort output outcome impact, effort-output-outcome-impact, 노력 산출 결과 미션, tyranny of metrics, 지표의 폭정]
 related: [trusted-throughput, value-maxing, ai-measurement-framework, perceived-vs-actual-productivity, agent-roi-measurement, outcome-engineering, features-vs-futures]
 first-seen: tech-bridge-kent-beck-craft-augmented-development
-sources: [tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-kent-beck-craft-augmented-development, tech-bridge-factory-bug-report-to-production]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 노력 → 산출 → 결과 → 미션
@@ -58,3 +58,9 @@ updated: 2026-10-09
 ## References
 
 - [[tech-bridge-kent-beck-craft-augmented-development]] · [[kent-beck]]
+
+## "measure outcomes, not tokens" — 벤더의 같은 구분 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"you want to measure outcomes, not tokens. Lines of code and tokens generated are gameable metrics. These are not actually associated with outcomes."*(16:18~16:31) 토큰 리더보드는 *"Goodhart's law in real time"*(16:39~16:41)이라고 한다. Beck의 네 칸 가운데 노력·산출 쪽 지표를 Goodhart로 부정하는 같은 논리다. 대신 내놓는 이름은 *"signal to production time, human intervention count, median time to repair, shelf life of code, and cost per PR"*(17:02~17:10)이다.
+
+⚠️ 다섯 지표가 이 페이지의 *outcome* 칸에 드는지 *output* 칸에 드는지는 정의가 없어 판정하지 않는다(예: *cost per PR* 은 PR 단위다). 맺음 *"Your end users don't care about how much you're spending on AI."*(17:49~17:53)는 *mission* 쪽을 가리키지만 지표로 이어지지 않는다.

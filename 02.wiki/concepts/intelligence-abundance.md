@@ -5,9 +5,9 @@ category: theory
 tags: [abundance, equity, electricity-analogy, pricing, access, openai, policy]
 related: [compute-constrained-growth, intelligence-as-infrastructure, power-shortfall, token-roles, ai-jobs-impact, regulatory-capture]
 first-seen: tech-bridge-altman-g20-economic-boom
-sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots]
+sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future]
 created: 2026-09-07
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Intelligence Abundance (지능의 풍요 — 형평 논거)
@@ -64,6 +64,10 @@ Altman은 이것을 향후 5년의 **위험 셋** 중 하나로 분류한다(나
 ## 두 번째 항목 — 속도 (2026-10-09 · [[tech-bridge-altman-devday-dots]])
 
 같은 화자가 DevDay 2026에서 **가격이 내려가는 축을 하나 더** 세운다: *"historically what we have mostly focused on (…) is bringing down the like price of IQ (…) Now there's this new vector that is clearly going to be very important of speed"*, *"we've got to go invest in the democratization of this like we have for model intelligence"*(29:38~30:17). 그리고 이 페이지의 *"전기처럼"* 논거에 단서를 단다 — *"there will always be a real frontier in terms of intelligence or speed or whatever else at a higher price"*(30:47~30:56). **풍요는 최전선 아래에서 온다.** → [[inference-speed-as-capability]]
+
+## 다른 경로의 풍요 — 과학 root node (2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]])
+
+[[demis-hassabis|Demis Hassabis]]의 풍요는 **지능 가격의 형평**(Altman)이 아니라 **과학 문제를 풀어서 오는 물질적 풍요**다: *"we solve some terrible diseases, maybe all of them eventually. Um we come up with better materials, new energy sources (…) we solve fusion"*(20:48~21:00) → *"we'll enter a world of abundance"*(21:16~21:19) — *"a lot of these things can be fixed with (…) solutions to particular kind of root nodes"*(21:29~21:37, 예: 우주여행 = 에너지 문제). 그때 남는 최대 과제는 *"the economics and the philosophical side (…) the idea of purpose and value"*(21:42~21:50). 풍요의 쓰임새 하나로 **비용이 유일한 척도가 아닌 건축**을 든다(29:43~29:51). ⚠️ 예측·희망이고 근거 수치 없음. ko는 fusion을 **"합병"**(20:58, `en` *"merger"* 공유)으로 옮겼다.
 
 ## ⚠️ 유보
 

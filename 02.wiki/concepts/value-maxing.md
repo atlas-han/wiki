@@ -6,9 +6,9 @@ tags: [token-economics, metrics, value-maxing, tokenmaxxing, goodhart, roi, adop
 aliases: [밸류맥싱, valuemaxxing, value maxing, 토큰맥싱, tokenmaxxing, token maxing, 토큰 최소화]
 related: [token-minimization-trap, trusted-throughput, overspending-underusing-loop, agent-roi-measurement, true-cost-to-perfect-answer, token-roles, model-mixing-economics, context-engineering, mousepower]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-brockman-start-building-before-ready]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-brockman-start-building-before-ready, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-09-24
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 밸류맥싱 (Value Maxing)
@@ -100,3 +100,11 @@ updated: 2026-10-11
 IBM 해설의 첫 국면(토큰맥싱 → 대시보드가 곧 조작된다)을 **알면서 유지하는 쪽**이다. 조건은 *토큰을 최적화 대상으로 삼지 않을 때만* 이다. 굿하트 경고를 받아들이면서 **리더보드는 운영한다.** 처방의 무게는 양이 아니라 겨냥에 있다. *"the people who really point compute at the right problem (…) and then are willing to push the that token budget high, we're really seeing this like sort of outsized impact"* (23:30~23:45). ⚠️ 모델을 파는 회사의 사장이 말한 것이고, 리더보드의 지표와 사용 방식은 미공개다. 앞의 "우리는 토큰맥서가 아니다"(Conductor)와 "토큰을 무제한으로"(Kimchi) 사이, **대리 지표로서의 토큰맥싱**이라는 세 번째 자리다.
 
 ⚠️ ASR *"saying three or more tokens"* 를 *"throwing more tokens"* 로 판독했다. ko는 이를 **"토큰 세 개 이상"** 으로 옮겼다.
+
+## 셋째 이름 "ROI 맥싱" — 가치 증명 + 선택권 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"We're not going to be token maxing. We're going to be ROI maxing."*(05:05~05:08) 정의는 *"when I say ROI maxing, I don't just mean cutting costs, right? I mean actually proving some sort of value to the thing that you're doing."*(05:15~05:24)이다. 여기에 **선택권**을 더한다: *"ROI maxing really is all about maximizing choice to prevent lock-in"*(17:40~17:48). 비용 구조가 사내 확산의 상한을 정한다는 논증도 이 위키에서 처음이다(*"You can't actually expand AI usage into the company if that's the only way you can use AI."* 05:37~05:42).
+
+토큰맥싱을 부정하며 시작하지 않는다는 점이 IBM 해설과 다르다. 지난 12개월은 *"it's really made truly agentic coding possible"*(01:21~01:23)였다. 문제는 비용과 *"wasted tokens by default"*(02:07~02:12), 그리고 수직 통합이다.
+
+⚠️ 가치를 *어떻게* 증명하는지는 발화되지 않는다. 처방은 자사 제품 범주([[ai-gateway]])로 귀결되는 벤더 발표다. ko는 *"I don't just mean cutting costs"* 를 **"비용 절감을 말씀하시는 거죠?"**(05:17)라는 되물음으로 바꾼다.

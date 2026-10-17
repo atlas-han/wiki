@@ -6,9 +6,9 @@ tags: [company-brain, wiki, shared-context, access-control, knowledge-base, codi
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
 related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent, codebase-gardening]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-10
-updated: 2026-10-10
+updated: 2026-10-16
 ---
 
 # 회사 두뇌
@@ -105,7 +105,7 @@ updated: 2026-10-10
 
 ## ⚠️ 실무자의 반론 — "그렇게 정교한 게 필요 없다" (2026-09-26 · [[tech-bridge-lauren-tan-2000-prs]])
 
-[[lauren-tan]]이 [[grokbot|GrokBot]]을 *바깥 루프*(Slack·Datadog·Sentry·PlanetScale 커넥터로 정보를 모아 스스로 결정)로 소개한 직후:
+[[lauren-tan]]이 [[grokbot|GrokBot]]을 *바깥 루프*(Slack·Datadog·[[sentry|Sentry]]·PlanetScale 커넥터로 정보를 모아 스스로 결정)로 소개한 직후:
 
 > **어떤 사람들은 이걸 회사 두뇌라고 부르는데**, 저는 개인적으로 **그렇게 정교한 게 필요하다고 생각하지 않습니다.** **에이전트는 도구를 정말 잘 쓰니까요.** 이 도구들을 GrokBot에 연결하고 GrokBot이 cloud agent를 자동으로 띄우게 하면, **인프라에 많이 투자할 필요가 정말 없다**는 걸 알게 될 겁니다. (33:05~33:36)
 
@@ -131,3 +131,15 @@ updated: 2026-10-10
 
 - 반론의 대상이 **context graph** 까지 넓어졌다. 대안은 *"Grabbot[=GrokBot] that have connectors (…) a lot of people call them personal agents"*(40:00~40:09)와 루틴 구독 — 정보 저장소가 아니라 **가져오는 법을 가르치는 것**. 원칙은 Netflix의 *"context not control"*(40:36~40:39).
 - ⚠️ 이 페이지가 다룬 **권한·기밀·책임** 질문에는 이번에도 답하지 않는다.
+
+## 네 번째 형식 — 과제별로 조립해 건네는 컨텍스트 엔진 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+[[unblocked|Unblocked]]는 같은 문제를 **[[context-engine|컨텍스트 엔진]]** 이라는 제품 범주로 푼다 — *"it takes all of that institutional knowledge and it pulls it in"*(01:25~01:29), 에이전트가 호출하면 *"task-specific context bundle"*(03:02~03:04)을 돌려준다.
+
+| | PromptQL (09-10) | Vercel (09-19) | Conductor CIA (10-02) | **Unblocked (10-15)** |
+|---|---|---|---|---|
+| 담는 것 | 사람이 다듬은 지식 | 시맨틱 레이어 | 원천 기록 그대로 | **원천 시스템**(코드·Notion·PR·Slack) |
+| 에이전트에게 | 링크된 마크다운 | grep 가능한 파일 | SQL 도구 | **과제별 묶음 + 검증된 NL 쿼리** |
+| 권한 | 접근 제어 규칙 | — | 미발화 | *"permissions-aware"*(01:48) 주장, tenant 주입(14:03~14:12) |
+
+⚠️ CIA의 *"give your agent a SQL tool and let it handle the rest"* 와 달리 Unblocked는 **원시 쿼리를 에이전트에게 맡기지 않고** 검증·주입 층을 둔다([[nl-to-structured-query-scaffolding]]). 벤더 데모이며 묶음 조립 방법은 공개되지 않았다.

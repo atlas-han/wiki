@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-09-15
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # AI Engineer
@@ -104,7 +104,7 @@ updated: 2026-10-12
 
 ## "death of the code review" 연속 세션 (2026-10-03 · [[tech-bridge-death-of-code-review]])
 
-[[laurie-voss|Laurie Voss]]의 첫머리: *"Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing[=scheduling] decisions get made, but uh Swix decided it would be funny for those two to be backtoback."*(00:00~00:15) — **같은 제목 세션 두 개가 연속 배치**됐다는 화자 진술. *"Swix"*(en *"Swish"*)는 swyx로 판독(⚠️ 추정). 행사 단서: *"He famously did that at AIE last year"*(18:36~18:38, Dex Horthy), *"There are enough pitches for ARISE at this conference"*(22:15~22:18). 언급 사건으로 보아 **2026년 6월 이후**(FrontierCode *"launched it in June"* 07:58~08:00). ⚠️ 행사명·회차·도시는 발화되지 않았다 — 09-07 절차대로 다른 AI Engineer 소스와 같은 회차로 묶지 않는다. 앞 세션은 이 위키에 없다.
+[[laurie-voss|Laurie Voss]]의 첫머리: *"Thank you for following on a session about the death of the code review with a session about the death of the code review. Uh who knows howululing[=scheduling] decisions get made, but uh Swix decided it would be funny for those two to be backtoback."*(00:00~00:15) — **같은 제목 세션 두 개가 연속 배치**됐다는 화자 진술. *"Swix"*(en *"Swish"*)는 swyx로 판독(⚠️ 추정). 행사 단서: *"He famously did that at AIE last year"*(18:36~18:38, [[dex-horthy|Dex Horthy]]), *"There are enough pitches for ARISE at this conference"*(22:15~22:18). 언급 사건으로 보아 **2026년 6월 이후**(FrontierCode *"launched it in June"* 07:58~08:00). ⚠️ 행사명·회차·도시는 발화되지 않았다 — 09-07 절차대로 다른 AI Engineer 소스와 같은 회차로 묶지 않는다. 앞 세션은 이 위키에 없다.
 
 ## 도시가 발화됐다 — "Thank you, Paris" (2026-10-09 · [[tech-bridge-pocock-pr-bottleneck]])
 
@@ -157,3 +157,41 @@ updated: 2026-10-12
 ## 설명란 링크 + 청중 손들기 — Braintrust 발표 (2026-10-12 · [[tech-bridge-braintrust-eval-platform-systems-problem]])
 
 [[braintrust|Braintrust]] 발표(설명란 기준 [[hossein-niazmandi|Hossein Niazmandi]], 자막엔 이름 없음)의 16:25 영상. 설명란 끝에 `https://ai.engineer` 와 AI Engineer 유튜브·X·LinkedIn 링크가 있지만 **자막엔 행사명·도시·날짜가 없다.** 현장 단서는 손들기(*"show of hands, how many of you have run evals and log the results into a spreadsheet? (…) Okay, I see one or two."* 03:05~03:15)와 *"feel free to come up afterwards"*(05:02~05:05). 시점 단서는 *"when the ChatGPT boom happened a few years ago"*(12:50~12:54)뿐. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다. 영상은 *"which we talked about earlier"*(00:22~00:24)로 시작해 앞부분이 없다.
+
+## 설명란 링크 + "expo" — Runlayer 발표 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])의 17:37 발표. 설명란 끝에 `https://ai.engineer` 와 AI Engineer 유튜브·X·LinkedIn 링크가 있다. 자막에는 행사명·도시·날짜가 없다. 현장 단서는 *"so many people are walking today across the expo"*(16:45~16:49)와, 슬라이드 영상이 재생되지 않은 듯한 *"Unfortunately, you cannot see the video"*(09:56~09:58)다. → **AI Engineer 계열로 추정한다**(확정 아님).
+
+## "an AI engineer conference" + "the keynote yesterday" — Codex App Server 발표 (2026-10-14 · [[tech-bridge-codex-app-server]])
+
+[[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]])의 17:40 발표. 행사명은 일반명사로만 나온다 — *"we are at an AI engineer conference"*(10:35~10:37). 설명란 끝에 `https://ai.engineer`·AI Engineer 유튜브 링크가 있다. 일정 단서: *"if you attended the keynote yesterday"*(00:48~00:51), 끝나고 *"Before I let you all go to the keynote"*(15:44~15:46), *"tomorrow in the afternoon"* 의 다른 세션(01:35~01:40, 07:56~07:58), *"the OpenAI booth"*(17:34~17:36). 기조연설에서 App Server를 언급한 사람은 *"Roman"*(00:56, `en` *"Ramón"*) — 신원 미판독.
+
+> ⚠️ 위 [[tech-bridge-cooking-with-codex]](같은 OpenAI developer experience 팀, World's Fair 2026-06-29 월요일 워크숍, *"tomorrow we have our opening keynote"*)와 **같은 행사의 이틀 뒤(06-30 기조연설 다음 날) 회차일 가능성**이 있다. 근거는 "기조연설 다음 날 + 같은 팀 + 모델 5.5"뿐이고 날짜·도시는 발화되지 않았다. 09-07 절차대로 **별개로 취급하고 가능성만 표시한다.**
+
+## 설명란 링크 + "the past few days" — Gitar 발표 (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[ali-reza|Ali-Reza]]([[gitar|Gitar]]/[[sonar|Sonar]])의 10:54 발표다. 설명란 끝에 *"AI Engineer: https://ai.engineer"* 와 `#AIEngineer` 가 있지만 자막에는 행사명이 없다. 현장 단서는 *"good afternoon everyone"*(00:00~00:02)과 *"you've heard a lot in the past few days about the importance of verification in the age of AI"*(00:19~00:24)다. 며칠째 이어진 행사이고 검증이 반복 주제였다는 것까지만 말할 수 있다. ⚠️ 추정.
+
+## 설명란 링크 + 청중 응답 — Sentry 발표 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]([[sentry|Sentry]], 이름은 설명란에만)의 15:00 발표다. 설명란 끝에 `https://ai.engineer` 와 AI Engineer 유튜브·X·LinkedIn 링크가 있다. 자막에는 행사명·도시·날짜가 없다. 현장 단서는 청중 응답 *"What's that? Evals, yes. Hooks, yes."*(02:17~02:20)과 슬라이드 언급 *"I had to remove a lot of swearing from this slide"*(00:59~01:01)이다. 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다.
+
+## 설명란 링크 + "20 minutes" — Unblocked 발표 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+[[peter-werry|Peter]]([[unblocked|Unblocked]])의 18:49 발표. 설명란 끝에 `https://ai.engineer` 링크 하나. 자막엔 행사명·도시·날짜가 없고 현장 단서는 *"we've only got 20 minutes"*(00:04)·*"we're quite short on time today"*(06:03~06:06), 그리고 *"On the description, you probably saw that we were promising a context engine simulator"*(18:08~18:12 — 행사 쪽 발표 소개문으로 읽힘). 2026-09-07 절차대로 **AI Engineer 계열 추정**으로만 기록한다.
+
+## 설명란 링크만 — G2i 발표 (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+[[gabriel-martinez|Gabriel Martinez]]([[g2i|G2i]])의 16:48 발표. ⚠️ 행사명 미발화, 설명란 `ai.engineer` 링크·`#AIEngineer`로 **AI Engineer 계열 추정**.
+
+## 행사명이 발화됐다 — "the last talk on this stage of the AI engineer world's fair this year" (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]])의 19:09 발표. *"Thanks for joining me here for the last talk on this stage of the AI engineer world's fair this year."*(00:03~00:12) 맺음에서도 *"I know this is the the last talk in here of the day"*(18:54~18:58), *"I love the AI Engineer World's Fair and I hope you do, too."*(19:01~19:04)라고 한다. 그날 그 무대의 마지막 발표다. 연도(*"this year"* 뿐)·월·일·도시는 발화되지 않는다. ko는 행사명을 "세계 박람회에서 펼쳐질 이러한 시나리오"(00:04~00:08)로 옮긴다.
+
+## 설명란 링크만 — Factory 두 번째 발표 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]])의 18:02 발표. Q&A 없음. ⚠️ 행사명·도시·연도 미발화, 설명란 `https://ai.engineer` 링크·`#AIEngineer`로 **AI Engineer 계열 추정**. 시점 단서는 Uber CTO의 *"by April"* 헤드라인(과거형)과 *"GPT 5.2"* 뿐이다.
+
+## 설명란 링크만 — Braintrust 두 번째 발표 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]])의 17:46 발표. ⚠️ 행사명 미발화, 설명란 `ai.engineer` 링크·`#AIEngineer`로 **AI Engineer 계열 추정**. 시점 단서는 화자의 어림 *"about a year ago, so April of 2025"*(02:14~02:17)다.

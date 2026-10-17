@@ -3,11 +3,11 @@ title: Cognitive Offloading
 type: concept
 category: technique
 tags: [education, llm, learning]
-related: [regulatory-capture, retrieval-practice, ai-assisted-learning]
+related: [regulatory-capture, retrieval-practice, ai-assisted-learning, ai-flipped-classroom]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future]
 created: 2026-08-31
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Cognitive Offloading
@@ -29,3 +29,5 @@ Wikipedia/검색은 사실 도구로 괜찮지만, 모델에게 일을 시켜 �
 ## 어떻게 쓰면 손상되지 않는가 — 역할을 나눈다 (2026-10-09 · [[tech-bridge-learn-anything-with-ai]])
 
 세 번째 답은 **절차**다. [[nick-saraev|Nick Saraev]] 클립 + [[tech-bridge|Tech Bridge]] 내레이션: 기억은 정보를 다시 읽을 때가 아니라 **꺼낼 때** 남는다([[retrieval-practice]] — 다시 읽기 4회는 일주일 뒤 40%, 1회 읽고 3회 시험은 61%; ⚠️ 61%와 정정은 내레이션에만, 원 연구는 설명란에만). AI 설명을 읽는 것은 재학습 쪽이라 Saraev는 그것을 *"a passive consumption mechanism. You're just reading."*(02:37~02:42)이라 부른다. 처방은 [[ai-assisted-learning|역할 분담]] — **준비·정리는 AI에게, 인출·풀이·설명은 나에게**. 내레이션이 Ng의 우려를 그대로 옮긴다: *"막힌 문제를 고민하는 시간을 전부 AI의 답으로 채우는 거죠. 결과는 얻어도 내가 할 수 있는 일은 늘지 않을 수 있어요."*(ko 15:58~16:06). Ng = 증상, Clyburn = 하한선(읽기는 남긴다), 이 소스 = 역할별 분업표. ⚠️ 세 소스는 서로를 모른다.
+
+> ⚠️ **Contradiction (약) — 2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]].** [[demis-hassabis|Demis Hassabis]]는 암기(*rote learning*)를 *"out of class with the help of AI tools because I think that's exactly what AI tools are good for"*(38:17~38:23)라고 한다. Ng의 *"일을 대신 시키기"* 우려와 방향이 다르다. 다만 하사비스의 도구는 약한 부분의 문제를 더 내주는 개인 교사(38:24~38:33)이고 *"in a very intentional way again that helps with the learning"*(38:05~38:09)을 조건으로 단다 — 정면 충돌은 아니다. → [[ai-flipped-classroom]]

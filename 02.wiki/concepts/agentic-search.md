@@ -6,9 +6,9 @@ tags: [retrieval, search, agent-loop, harness, bm25]
 aliases: [agentic search, agentic retrieval, 에이전트 검색, 에이전트 기반 검색]
 related: [retrieval-augmented-generation, agent-collaboration-as-search, agent-knowledge-sourcing, context-engineering, bm25, llm-as-search-user, corpus-as-filesystem-workspace, ir-evaluation-obsolescence]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer, tech-bridge-sourcegraph-codebase-visibility]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-09-21
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 에이전트 검색 (Agentic Search)
@@ -93,3 +93,11 @@ updated: 2026-10-09
 새로 붙는 축은 **범위**다. 이 페이지의 반복 검색은 *닿을 수 있는 코퍼스* 안에서의 일인데, 수만 저장소는 *"way too much to fit into a context window or even just to clone and GP in real time"*(02:45~02:52) — **검색 루프가 아무리 좋아도 인덱스 밖은 0이다.** *"understanding is a context problem. You can't gp what you literally cannot see."*(07:31~07:36) → [[code-knowledge-graph]] · [[large-scale-code-changes]]
 
 ⚠️ 같은 화자가 AGENTS.md류 파일을 *"barely moving the needle"*(07:20~07:22)라 깎는다 — [[code-only-index-blind-spot]]의 Contradiction 참조.
+
+## 코딩 에이전트에서 벡터와 맞붙인 실험 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]])은 agentic search를 *"works more like a human would"*(10:35~10:37)로 설명한다. *"you give an LLM tools like uh GP find lscat[=grep, find, ls, cat] um bash commands and it basically explores explores your codebase like a human would."*(10:39~10:51) 이 페이지의 *궤적* 정의와 같다. Claude Code는 이것이 기본값이다(*"claude code uses agentic search by default"* 12:17~12:20).
+
+vector search와 같은 하네스에서 비교한 결과는 **정확도 같음, 비용은 agentic이 4분의 1**이었다(14:51~15:01). agentic 쪽의 이점은 *"connective tissue"*(16:04~16:08)로, 함수 이름을 grep하고 전체 함수를 읽고 호출을 따라 다른 파일로 간다(15:44~15:54). 이 페이지의 삼분할(모델·하네스·엔진)로 보면 **모델과 하네스를 고정하고 엔진만 바꾼 실험**이다 → [[reference-graph-vs-vector-search]] · [[eval-experiment-anatomy]]
+
+⚠️ 약 20행, 1회 시행, 약한 vector 구현(화자 인정). 화자가 계기로 든 Cursor 트윗을 *"semantic search also known as agentic search"*(08:54~08:58)라고 소개하지만, 화자 자신의 정의에서 semantic은 벡터 쪽이다. 이 표현을 agentic search의 별칭으로 옮기지 말 것.

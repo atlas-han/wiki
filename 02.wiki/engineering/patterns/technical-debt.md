@@ -3,11 +3,11 @@ title: Technical Debt
 type: engineering
 tags: [engineering, refactoring]
 created: 2026-06-27
-updated: 2026-09-18
+updated: 2026-10-16
 category: pattern
 related: [refactoring, code-smells, surgical-edits, legacy-code-modernization, legacy-skills-gap]
 first-seen: refactoring-guru-refactoring
-sources: [refactoring-guru-refactoring, tech-bridge-legacy-code-modernization-ai]
+sources: [refactoring-guru-refactoring, tech-bridge-legacy-code-modernization-ai, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 ---
 
 # Technical Debt
@@ -46,3 +46,5 @@ Technical Debt는 “지금 빠르게 가기 위해 구조 개선을 미룬 선�
 | **인력** | 부채를 갚을 줄 아는 사람이 사라진다 | [[legacy-skills-gap]] |
 
 그리고 이 페이지의 *"상환은 rewrite가 아니라 작은 [[refactoring-techniques]]의 누적"* 과 같은 결론을 그 소스도 낸다 — *"현대화는 기존 프로세스를 유지하면서 그 아래에서 기술이 발전하는 **점진적인 과정**"*(07:21~07:29). ⚠️ 소스는 수치·사례 없이 일반론으로 말한다.
+
+- (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]]) *"any line of code you write is a liability, that the best code is no code at all. The cost of creating code is falling, but the cost of understanding a software program is not."*(02:54~03:06) 생성 비용이 떨어져도 **이해 비용**은 그대로라는 진술이다.

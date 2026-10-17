@@ -6,9 +6,9 @@ tags: [harness-engineering, steering, agents-md, static-analysis, generators, co
 aliases: [feedforward feedback quadrant, 2x2 조향 사분면, Böckeler 2x2, computational vs inferential, 피드포워드 피드백]
 related: [harness-engineering, hard-vs-soft-enforcement, shift-left-interventions, automated-code-review, hook-enforced-workflow, executable-standards, llm-coding-guidelines, generator-evaluator-pattern, domain-specific-scripts]
 first-seen: tech-bridge-rails-harness-engineering
-sources: [tech-bridge-rails-harness-engineering]
+sources: [tech-bridge-rails-harness-engineering, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Feedforward·Feedback 조향 사분면
@@ -43,6 +43,8 @@ updated: 2026-10-09
 - **[[harness-engineering]]** — 그 페이지는 System Evolution을 *"인간이 steering하는 feed-forward 시스템"* 이라 불렀다. 이 모델에선 그것도 네 칸 중 하나다.
 - **[[automated-code-review]]** · **[[generator-evaluator-pattern]]** — feedback·inferential 칸.
 - **[[domain-specific-scripts]]** — 화자는 칸에 넣지 않았지만, 결정론적 분류를 LLM 분석에 먹이는 것이라 computational이 inferential을 받치는 혼합형이다(⚠️ 위키의 배치).
+- **[[tech-bridge-sentry-stop-prompting-codify-linters|Sentry 편]]** (2026-10-14): [[greg-pstrucha|Greg Pstrucha]]의 처방은 Quenneville과 같은 이동이다. 반복 교정을 feedforward·inferential(re-prompt)에서 **feedback·computational(linter)** 로 옮기고, 남는 정성 판단은 **feedback·inferential(정책별 서브에이전트 루프 grumpy engineer)** 로 옮긴다. 두 번째 화자다(Böckeler 모델은 언급하지 않는다).
+- ⚠️ (2026-10-15) [[back-pressure]]의 *forward pressure*([[dex-horthy|Horthy]])는 이 페이지의 *feedforward* 와 **다르다** — 일을 시작시키는 trigger(스케줄·자동화·webhook)이지 행동 전 안내가 아니다. *back pressure* 는 feedback 칸(computational: 브라우저·curl·테스트, 사람/사용자: UI 실험)과 겹친다.
 
 ## ⚠️ 유보
 

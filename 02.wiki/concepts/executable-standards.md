@@ -4,11 +4,11 @@ type: concept
 category: practice
 tags: [guardrails, governance, standards, automation, tribal-knowledge]
 aliases: [실행 가능한 가드레일, 문서로서의 표준, executable policy]
-related: [decision-quality, behavior-validated-trust, agent-governance-layers, llm-coding-guidelines, trusted-throughput, intent-md, scheduled-agent-automations, codebase-gardening]
+related: [decision-quality, behavior-validated-trust, agent-governance-layers, llm-coding-guidelines, trusted-throughput, intent-md, scheduled-agent-automations, codebase-gardening, skill-linting, hard-vs-soft-enforcement]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-09-09
-updated: 2026-09-26
+updated: 2026-10-16
 ---
 
 # 실행 가능한 표준
@@ -93,3 +93,11 @@ updated: 2026-09-26
 > 예전에 **스타일 가이드, 코드 리뷰 과정, 엔지니어가 다른 엔지니어의 작업을 리뷰하며 댓글을 달던 것**에서 그걸 꺼내서, **그 지식을 추출해 프레임워크에, 코드베이스 자체에 인코딩**하는 겁니다. **코드베이스가 기억 역할을 하도록**요. (29:45~30:13)
 
 그리고 **스타일 가이드를 "사람만 강제할 수 있는" 최하위 층**으로 따로 세운다 — *"무엇이 빠졌는지 찾는 출발점"* 으로만 쓰라(18:26~18:34). → [[hard-vs-soft-enforcement]] · [[codebase-gardening]]
+
+## 리뷰 기록 → lint 규칙을 에이전트에게 맡긴다 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+Lauren Tan의 "리뷰 댓글에서 꺼내 코드베이스에 인코딩"(위 09-26 절)과 같은 방향의 처방을 [[greg-pstrucha|Greg Pstrucha]]는 **실행 지시**로 준다. *"take your laptop, go to your agent and ask, 'Hey, look at all my past transcripts, look at my GitHub reviews, the feedback from the bots, the feedback from my peers and try to codify which ones of those are actual high-quality linter rules that are deterministic and will be able to capture issues that we otherwise re-prompt all the time.'"*(04:43~05:05)
+
+사례는 Sentry의 Django·DRF 레거시다. OpenAPI 스키마와 실제 동작이 drift하자 endpoint 반환 타입, *extend schema decorator*, 스키마 일치를 lint 규칙으로 만들었다(06:24~07:07). 같은 원리를 스킬 문서에 적용한 것이 [[skill-linting]]이다.
+
+> ⚠️ 에이전트가 뽑은 lint 규칙을 사람이 검토하는지, 오탐을 어떻게 다루는지는 발화되지 않는다. 규칙 수·종류도 없다.

@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
-related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel]
+related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel, skill-linting]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-09-13
-updated: 2026-09-30
+updated: 2026-10-16
 ---
 
 # 스킬 eval
@@ -105,3 +105,11 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 - 새 태스크는 **프로덕션 트레이스**에서 — 실패와 성공 모두(12:05~12:11) → [[production-trace-eval-flywheel]]
 
 ⚠️ **작성자 = 검증자, 네 번째 반복.** 데모에서 ARIA는 *"wrote itself a new task, ran it, and then scored it"*(13:00~13:02). 제품팀 검토가 886개에는 걸리지만 **ARIA가 새로 쓴 태스크에도 걸리는지**는 말하지 않는다.
+
+## 자동 증류 스킬의 eval 공백 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[runlayer|Runlayer]]는 증류된 스킬의 효과를 **같은 태스크의 성공률**(36% → 100%)로만 보인다. 실행 횟수는 발화되지 않았고 held-out 태스크도 없다. 화자 스스로 *"the success rate is the easiest number to show"*(13:22~13:24)라고 단서를 단다. 이 페이지가 다뤄 온 *스킬을 바꾸기 전에 회귀 eval을 돌린다* 는 단계는 그 파이프라인에 발화되지 않았다 → [[run-trace-skill-distillation]]
+
+## 결정론 쪽의 짝 — 스킬 속 예제를 lint한다 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+이 페이지의 방법들은 스킬을 쓴 에이전트의 **행동**을 잰다. [[sentry|Sentry]]의 [[greg-pstrucha|Greg Pstrucha]]는 스킬 안의 **코드 예제 자체**를 type check·샌드박스 실행·OpenAPI 일치로 검사한다(08:17~08:30). 환각 예제가 에이전트 정확도를 *"significantly"* 떨어뜨린 뒤의 대응이다(08:08~08:14, 수치 없음). → [[skill-linting]]

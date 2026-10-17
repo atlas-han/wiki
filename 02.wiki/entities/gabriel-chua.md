@@ -7,9 +7,9 @@ links:
   - "https://x.com/gabrielchua"
   - "https://github.com/gabrielchua"
   - "https://gabrielchua.me/"
-sources: [tech-bridge-cooking-with-codex]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-codex-app-server]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Gabriel Chua
@@ -27,6 +27,8 @@ updated: 2026-10-11
 - *"does prompt engineering matter? In so far as the instructions are clear, it still matters (…) I don't think we're in that state anymore"*(29:59~30:17).
 - 자동화: 매주 금요일 스킬 정리, 실제 답장과 초안을 대조하는 두 번째 자동화(56:06~56:43) → [[skill-self-improvement]]. 훅은 *"guardrail"*(49:52~50:01) → [[hook-enforced-workflow]]
 - App Server 위 자체 UI **Retrodex**(59:39~1:00:46).
+
+- 같은 팀의 후속 소스: [[dominik-kundel|Dominik Kundel]]의 [[codex-app-server|App Server]] 발표([[tech-bridge-codex-app-server]], 2026-10-14) — 워크숍 §6이 소개만 한 App Server를 17분 전체로 푼다.
 
 ## References
 

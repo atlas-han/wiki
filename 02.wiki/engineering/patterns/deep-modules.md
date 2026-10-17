@@ -6,9 +6,9 @@ tags: [software-design, modularity, interfaces, testing, ousterhout, coding-agen
 aliases: [deep module, 딥 모듈, 얕은 모듈, shallow module, locality, leverage, seam]
 related: [structure-sensitive-tests, codebase-gardening, refactoring, technical-debt, test-harness-vs-test-authoring, self-contained-systems]
 first-seen: tech-bridge-pocock-pr-bottleneck
-sources: [tech-bridge-pocock-pr-bottleneck]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 깊은 모듈
@@ -54,6 +54,7 @@ updated: 2026-10-09
 - [[codebase-gardening]] — *코드베이스는 에이전트의 기억*, 나쁜 패턴이 번진다. 깊은 모듈은 **번질 표면(인터페이스)을 줄이는** 쪽의 처방.
 - [[self-contained-systems]] — 수직 분할로 *AI가 필요한 코드가 한곳에* — locality의 시스템 수준판.
 - [[refactoring]] · [[technical-debt]] — 얕은 모듈을 깊게 만드는 일은 행동 보존 리팩터링이다.
+- [[compressed-review-surface]] (2026-10-15): *"implementation details pushed to the leaves"*(12:51~12:53). 같은 원리의 **리뷰 쪽 판본**으로, 사람은 주 흐름을 보고 구현은 잎에 둔다.
 
 ## ⚠️ 유보
 

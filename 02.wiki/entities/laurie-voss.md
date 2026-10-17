@@ -10,7 +10,7 @@ links:
   - https://github.com/seldo
 sources: [tech-bridge-death-of-code-review]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-16
 ---
 
 # Laurie Voss
@@ -28,7 +28,7 @@ updated: 2026-10-03
 
 ## 태도
 
-**다른 사람의 대담한 주장을 근거 수준으로 깎는다.** OpenAI의 무인 코딩 제품엔 *"they did not tell us what the product did (…) which suggests to me that there are still holes in that strategy"*(05:43~05:55), 에이전트 열두 개를 동시에 돌리는 사람에겐 *"I'm tend to be suspicious of the people who do"*(04:21~04:25), Dex Horthy의 철회엔 *"That is not a benchmark. That is somebody who ran this experiment for real"*(18:56~19:00). 그러나 그 자신의 수치도 대부분 2차 인용이고, 두 곳의 산수(*"51 points"*, *"three orders of magnitude"*)가 맞지 않는다.
+**다른 사람의 대담한 주장을 근거 수준으로 깎는다.** OpenAI의 무인 코딩 제품엔 *"they did not tell us what the product did (…) which suggests to me that there are still holes in that strategy"*(05:43~05:55), 에이전트 열두 개를 동시에 돌리는 사람에겐 *"I'm tend to be suspicious of the people who do"*(04:21~04:25), [[dex-horthy|Dex Horthy]]의 철회엔 *"That is not a benchmark. That is somebody who ran this experiment for real"*(18:56~19:00). 그러나 그 자신의 수치도 대부분 2차 인용이고, 두 곳의 산수(*"51 points"*, *"three orders of magnitude"*)가 맞지 않는다.
 
 > ⚠️ 소속 회사(Arize)는 LLM 관측·평가 플랫폼으로 알려져 있고, 결론 *"production … the last reviewer standing"*(21:48~22:00)은 그 시장과 겹친다. 화자는 *"I'm not going to give a pitch for Arise here"*(22:13~22:15)라고 선을 그었다.
 

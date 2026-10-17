@@ -6,9 +6,9 @@ tags: [evals, observability, eval-platform, maturity-model, production-traces, m
 aliases: [eval maturity, eval 성숙도, 평가 플랫폼 4단계, spreadsheet to production evals, evals is just a UI on a spreadsheet, eval platform is a systems problem]
 related: [production-trace-eval-flywheel, taste-encoded-evals, skill-evals, field-level-unit-test-evals, research-production-agent-parity, yaml-agent-eval-pipeline, agent-action-record, agent-native-interface, trace-to-memory-loop]
 first-seen: tech-bridge-braintrust-eval-platform-systems-problem
-sources: [tech-bridge-braintrust-eval-platform-systems-problem]
+sources: [tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-10-12
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # eval 플랫폼 성숙 단계
@@ -63,3 +63,7 @@ updated: 2026-10-12
 
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] (first-seen) · [[braintrust]]
 - 관련: [[production-trace-eval-flywheel]] · [[taste-encoded-evals]] · [[skill-evals]] · [[field-level-unit-test-evals]]
+
+## 같은 회사의 두 번째 화자 — "team sport", 그리고 네 요소 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]은 multi-persona를 *"eval are a team sport"*(07:35~07:39)로 말한다. PM은 *"usually spearhead eval at a company"*(07:56~07:59)로 성공의 가설을 세우고, SME는 *"insurance, medicine, law"*(08:12~08:15) 같은 분야에서 라벨과 ground truth를 준다. 위 "최소 eval 시스템"의 세 요소는 같은 회사의 이 소스에서 네 요소(데이터셋·태스크·채점·실험)로 나뉜다 → [[eval-experiment-anatomy]]. ⚠️ 벤더 DevRel의 입문 설명이다.

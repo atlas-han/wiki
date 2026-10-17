@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [harness, tools, context, model-upgrade, scaffolding, sunk-cost]
 aliases: [하네스를 만들지 않는다, 도구와 컨텍스트라는 두 인터페이스, over-scaffolding]
-related: [harness-pruning, ride-the-optimization-trajectory, harness-engineering, agent-harness-design, shift-left-interventions, context-engineering, executable-standards, agent-skills]
+related: [harness-pruning, ride-the-optimization-trajectory, harness-engineering, agent-harness-design, shift-left-interventions, context-engineering, executable-standards, agent-skills, embedded-agent-harness]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-codex-app-server]
 created: 2026-09-23
-updated: 2026-09-24
+updated: 2026-10-16
 ---
 
 # 하네스는 고정하고 도구와 컨텍스트에 투자하라
@@ -62,3 +62,7 @@ updated: 2026-09-24
 | Martinez (09-24) | **모델**(동결·임대, 교체 가능) | **하네스** = 스토리지 · 메모리 · 시맨틱 레이어 · 루프 · 컨텍스트 조립 |
 
 > ⚠️ Contradiction: 문장만 보면 정반대지만, **Martinez의 "하네스" 층 대부분이 Lopopolo의 "도구와 컨텍스트"에 해당한다.** Lopopolo가 고정하는 것은 **루프를 돌리는 제품**이고, Martinez도 루프는 *"매우 미니멀하게"*(33:18~33:21) 짠다. 둘 다 **모델에 무관하게 살아남는 투자처**(Lopopolo *"결코 낡지 않는"*, Martinez *"모델 부분은 교체 가능"*, 10:17~10:19)를 찾는다는 점에서는 같다. 이 위키는 **어휘의 충돌**로 읽되, 루프를 직접 짜는가에 대해서는 **실제로 갈린다**고 기록한다.
+
+## 하네스 제작사가 같은 말을 한다 (2026-10-14 · [[tech-bridge-codex-app-server]])
+
+[[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]] Codex)의 팁 ②·③ — 새 함수는 deferred로 **더하고**, system prompt는 갈아엎지 말고 developer instructions를 **덧붙여라**(*"make sure that the actual prompt is in distribution"* 17:11~17:16). 이 페이지의 "하네스는 고정, 노력은 도구·컨텍스트에"를 **하네스를 만든 쪽**이 근거(모델별 프롬프트 튜닝)와 함께 준다. ⚠️ 당사자 진술, 근거의 측정 없음. → [[embedded-agent-harness]]

@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus]
 aliases: [Opus 4.5]
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-horthy-state-of-software-factory]
 links: []
 created: 2026-05-25
-updated: 2026-09-19
+updated: 2026-10-16
 ---
 
 # Claude Opus 4.5
@@ -37,6 +37,8 @@ updated: 2026-09-19
 **이 위키가 받은 이 모델에 대한 제3자 평가 중 가장 강한 표현**이고, 동시에 가장 느슨한 것이기도 하다 — *"거의 AGI"* 는 **자사 에이전트와의 상대 비교**이지 절대 평가가 아니다. 화자 자신이 비교 대상을 *"우리가 손으로 키운 에이전트"* 라고 못 박는다.
 
 ⚠️ 수치는 *"eval 점수 두 배"* 하나뿐이고 실체가 없다. ⚠️ 화자는 모델의 능력과 [[claude-code|Claude Code]]라는 하네스의 기여를 **가르지 않는다** — 그가 실제로 가져간 것은 모델이 아니라 [[file-system-agent|파일 시스템이라는 설계]]였다. ⚠️ ko 자막이 한 문단에서 *오퍼스*·*오푸스* 두 표기로 갈린다.
+
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) [[dex-horthy|Dex Horthy]]가 **"good enough" 전환점**으로 부른다: *"since uh January when we all picked up Opus 4.5 and decided this stuff was good enough"*(01:51~01:57) — 그 뒤 리뷰 품질 하락·PR당 인시던트 증가를 말한 5월 리포트(⚠️ 미특정, 수치 없음). ko는 이 영상에서도 Opus를 **"작품번호"**(07:36, Opus 4)로 옮긴다.
 
 ## References
 

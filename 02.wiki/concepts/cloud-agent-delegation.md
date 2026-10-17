@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-09-09
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # 클라우드 에이전트 위임
@@ -99,3 +99,11 @@ updated: 2026-10-11
 ## 원격이 로컬을 부른다 — 실행 환경으로 나누는 위임 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
 
 [[codex|Codex]] Remote(ChatGPT 모바일 앱에서 노트북·원격 서버 조종, 09:10~09:21)로 원격 인스턴스에서 밤새 돈 과제가 **사용자의 Chrome이 필요해지자 로컬 스레드를 띄웠다**: *"hey you can spawn a local thread on my machine and use the Chrome extension to then inspect it"*(33:21~33:25), 로컬 스레드는 *"sent by codeex from another thread"* 로 표시되고 QA 결과를 원격으로 돌려보낸다(33:29~33:44). *"me at 3:00 a.m. while sleeping Codex opened Chrome it went through the form building flow and it created a form end to end"*(36:56~37:03). 막힘은 Slack 보고와 side thread로 풀었다(Vercel CLI 로그인, Convex 키는 채팅에 붙이지 않고 bash 한 줄로 원격 환경에 주입, 39:42~40:25) → [[credential-injection-outside-sandbox]] · [[human-as-async-api]]. ⚠️ 당사자 시연.
+
+## "이미 와 있다" — 그래도 로컬은 남겨라 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+진행자(⚠️ David Ondrej 추정)가 노트북의 병목(창 팝업·과열·배터리·*"1,000 tests"*)을 들어 묻자 [[guillermo-rauch|Guillermo Rauch]]([[vercel|Vercel]]): *"It's inevitable, it's already here"*(11:54). 근거 넷 — ① 규모(*"you run out of memory, you run out of CPU"* 12:17) ② **보안**: *"it's much easier to compartmentalize and contain the blast radius of a supply chain attack"*(12:34~12:41), *"from a security perspective, cloud is infinitely better"*(13:37~13:41) ③ 병렬(*"scatter them across multiple sandboxes, they can share state"* 13:49~13:53) ④ *"they can do work while you're asleep"*(14:00) — self-healing software.
+
+그러나 *"maybe I'm contrarian on this"*: *"I do think that you still want to be able to pull things down into into a computer"*(14:22~14:28) — *"look at things under the microscope"*, 파일 시스템·프로세스 모니터·Mac에서의 상호작용 → *"that option should stay open"*(14:44~15:20). [[tech-bridge-lauren-tan-trusting-agents|Lauren Tan]]의 *"시작하기 가장 좋은 곳은 로컬 — 관찰할 수 있으니까"* 와 **로컬 = 관찰의 자리**라는 근거가 같다. 순서(로컬 → 클라우드)가 아니라 **양방향 토글**로 본다는 점이 다르다.
+
+> ⚠️ **Contradiction (약): 샌드박스로 공급망 공격을 근절?** Rauch: *"we could eradicate supply chain attacks uh if if we move more and more of this development life cycle to to sandboxes"*(12:48~12:56, 스스로 *"bold statement"*). [[tech-bridge-openai-huggingface-incident-black-hat]]에서는 샌드박스가 신뢰한 의존성([[artifactory|Artifactory]])이 탈출 경로였다. 위협 모델이 다르다 — 개발자 머신의 malware 유출(Rauch) vs 샌드박스 안 에이전트 자신([[agentic-misbehavior]]).

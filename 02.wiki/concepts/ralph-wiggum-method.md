@@ -6,9 +6,9 @@ tags: [agent, coding-agent, loop, claude-code, autonomous]
 aliases: [Ralph, Ralph loop]
 related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, verifiable-goals, llm-coding-guidelines, geoff-huntley, archon]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 created: 2026-05-25
-updated: 2026-10-02
+updated: 2026-10-16
 ---
 
 # Ralph Wiggum Method
@@ -92,3 +92,7 @@ Ralph처럼 *예측 불가능한 결과*를 내지만 어쨌든 작동한다. �
 ## "기다려라"의 예로 (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 [[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])가 [[dont-beat-the-market]] 휴리스틱의 예로 Ralph loop를 든다 — *"when uh Ralph loops were becoming a big thing, uh uh you should ask yourself like should I spend a ton of time optimizing my workflow to work with Ralph loops? Um because if Ralph loops work for everyone, like if they are the default, um then you probably should just wait for Anthropic or OpenAI or whatever to build the uh workflow into the into the default harness."*(03:38~04:05) 기법을 비판하는 게 아니라 **범용이면 랩이 흡수할 것이니 개인 최적화에 시간을 묻지 말라**는 것. ⚠️ ko·`en` 모두 *Ralph loops*를 **"추론 루프"·"reasoning loops"** 로 옮겨 기법명이 사라졌다.
+
+## "그냥 while 루프" — 회의적 언급 (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+[[gabriel-martinez|Gabriel Martinez]]는 Twitter의 과장을 비판하며 Ralph loop를 예로 든다. *"The Ralph loop was one of those. It was made to sound like a novel agentic breakthrough, when it's just a while loop."*(10:34~10:40) 이 위키에서 처음 나온 회의적 평가다. 그가 부정하는 것은 기법의 효과가 아니라 **새로움이라는 포장**이다.

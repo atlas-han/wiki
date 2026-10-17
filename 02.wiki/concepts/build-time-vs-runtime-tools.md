@@ -6,9 +6,9 @@ tags: [tool-design, database, production, human-in-the-loop, mcp, agent-tooling]
 aliases: [빌드타임 vs 런타임, 개발자 보조 도구 vs 최종 사용자 도구]
 related: [secure-tool-evolution, agent-tool-design-practices, action-reversibility, agentic-misbehavior, agent-governance-layers, model-context-protocol, agent-knowledge-sourcing]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-graft-code-knowledge-graph, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-11
-updated: 2026-09-15
+updated: 2026-10-16
 ---
 
 # 빌드타임 도구 vs 런타임 도구
@@ -65,3 +65,9 @@ updated: 2026-09-15
 
 - [[tech-bridge-build-time-vs-runtime-tools]] (first-seen) · [[averi-kitsch]] · [[prerna-kakkar]] · [[mcp-toolbox-for-databases]]
 - 관련: [[secure-tool-evolution]] · [[agent-tool-design-practices]] · [[action-reversibility]] · [[agentic-misbehavior]]
+
+## ⚠️ Contradiction — NL → 쿼리를 사용자 앞에 둔 벤더 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+이 페이지는 NL→SQL을 **빌드타임 전용**(프로덕션 불가)으로 분류했다. [[unblocked|Unblocked]]의 document query engine은 NL → 문서 DB 쿼리를 **chat agent**(*"it also powers a chat agent"* 17:18~17:19)에 두고, 도구를 고정하는 대신 **생성된 쿼리를 검증**한다 — *"when you get the query out of the LLM, it's untrusted"*(08:30~08:32), 위험 연산자(*"the function operator (…) which would execute raw JavaScript um on the DB server"* 13:35~13:41)·정규식 금지, tenant ID는 *"make sure that the LLM doesn't interact with those fields at all (…) inject those fields underneath"*(14:05~14:12).
+
+위키의 독해: 이 페이지의 근거 사례는 **삭제가 가능한** 도구였고, Unblocked는 **조회 질문**만 다룬다. 위 미해결(*읽기 전용 프로덕션 탐색은 어느 쪽인가*)에 대한 **벤더 한 곳의 실천 답** — "고정 쿼리"와 "아무 쿼리" 사이에 **"생성 + 결정론 검증 + 주입"** 이라는 셋째 자리가 있다. ⚠️ 다만 읽기 전용 제한은 발화되지 않고 검증 규칙 전체는 화면에만 있다. → [[nl-to-structured-query-scaffolding]]

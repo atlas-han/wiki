@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ai-slop, human-review, code-quality, coding-agents, ci, claude-md, agent-skills]
 aliases: [slop-free zone, slop free zone, 슬롭 없는 청정 구역, slot free zone (ASR)]
-related: [ai-slop, slop-cannon, risk-proportional-human-review, verification-bottleneck, context-engineering, agent-skills, company-brain, no-silent-write]
+related: [ai-slop, slop-cannon, risk-proportional-human-review, verification-bottleneck, context-engineering, agent-skills, company-brain, no-silent-write, agentic-inquiry]
 first-seen: tech-bridge-conductor-orchestras-not-factories
-sources: [tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-16
 ---
 
 # 슬롭 없는 구역 (Slop-Free Zone)
@@ -49,6 +49,8 @@ updated: 2026-10-02
 > ⚠️ **"Slack은 슬롭이 없다"는 검증되지 않는 가정이다.** 사람이 AI 출력을 붙여 넣는 경우는 다뤄지지 않는다. 그런데 같은 발표의 [[company-brain|CIA]]는 Slack 메시지를 **자동으로** 사내 DB에 쌓는다 — 가정이 깨지면 에이전트 컨텍스트로 슬롭이 흘러든다.
 >
 > ⚠️ **구역을 누가·어떻게 정하는지**, 구역 밖 코드에 어떤 최소 기준이 있는지(테스트? 자동 리뷰?)는 발화되지 않는다. 효과 측정 없음.
+
+- **[[tech-bridge-vercel-rauch-agentic-workflow]](2026-10-12, [[guillermo-rauch|Guillermo Rauch]] · [[vercel|Vercel]])** — 용어 없이 같은 비대칭: *"there's areas of your code base, there's areas of your product where you want to do the opposite of like, you know, no questions asked. You actually want to be extremely diligent and communicate that to the world."*(10:56~11:05) 한 칸을 더한다 — **구역의 존재를 고객에게 알리는 것이 판매 논점**: *"if I'm an enterprise, I need you to build very strong conviction in the security profile of your product"*(10:03~10:10), *"communicating that you're doing the opposite of vibe coding can really play in your favor"*(10:16~10:23). 구역 밖의 기본값은 [[agentic-inquiry]](모든 줄을 읽지 않되 이해는 한다).
 
 ## References
 

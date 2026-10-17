@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-05-25
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Context Resets vs. Compaction
@@ -114,3 +114,9 @@ optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context 
 - 위 09-28 optimizer speedrun의 *"250k 컨텍스트라 compaction이 잦다"* 와 맞물린다 — 잦은 compaction을 **견디도록 학습**했다는 주장.
 - ⚠️ 이 페이지 위의 *"compaction은 [[context-anxiety]]를 해소 못 한다"*, *"compaction이 안전 장치를 지운다"* 와 긴장 — 이 소스는 품질 저하가 없다는 쪽이지만 **측정이 아니라 당사자 진술 + 트윗**이다.
 - ⚠️ *"November 19"* 의 연도는 발화되지 않는다 — ko·`en`의 **"2019년"** 은 오류. ko는 compaction을 **"다짐"** 으로 옮긴다.
+
+## compaction이 코드 품질 교정을 지운다 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+09-08 절의 *"그건 그냥 프롬프트였고 아마 compaction으로 날아갔을 겁니다"*(Karan Vaidya, 안전 지시)와 같은 관찰이 **코드 품질 교정**에서 나왔다. [[greg-pstrucha|Greg Pstrucha]]는 과방어 코드와 쓸모없는 테스트를 지적하면 에이전트가 *"You're absolutely right. Let me fix this."*(01:17~01:20)라고 답하지만, *"5 minutes pass and compaction of context happens and we're back to back to square one."*(01:26~01:31)이라고 말한다. 결론도 같은 쪽이다. 교정을 컨텍스트에 두지 말고 결정론적 검사(linter)로 컨텍스트 바깥에 둔다. → [[hard-vs-soft-enforcement]]
+
+⚠️ 화자의 경험담이고 빈도·모델은 발화되지 않는다. 같은 페이지 10-11 절의 "compaction을 견디도록 학습했다"(OpenAI 당사자 진술)와 긴장한다.

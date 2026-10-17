@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # Index
@@ -21,6 +21,25 @@ updated: 2026-10-12
 ## Entities
 
 ### Persons
+- [[guillermo-rauch]] — [[vercel|Vercel]] CEO(이름·직함은 제목·설명란에만). fx 터미널 습관 · [[agentic-inquiry]] 조어 · v0 하네스 "90%" → 기성 하네스 · 클라우드 에이전트는 이미 왔지만 로컬 토글은 남겨라 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ CEO 자사 시연
+- [[david-ondrej]] — YouTube 채널 운영자, Rauch 원본 인터뷰(`WeiB_gLOdQE`)의 채널. ⚠️ 진행자라는 것은 설명란 기반 추정 — 이름 미발화 ([[tech-bridge-vercel-rauch-agentic-workflow]])
+- [[rafal-wilinski]] — [[runlayer|Runlayer]] founding engineer(자막엔 "Rafal"만 — 성은 제목·설명란, 전 Zapier agents). 트레이스 증류 자기 개선 에이전트, MCP = 스킬 배포 계층, 증류 플라이휠 = moat ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 벤더
+- [[demis-hassabis]] — [[google-deepmind|Google DeepMind]] 창업자(직함 미발화, en-orig "Dennis"). 게임 디자인 = 과학 연구(taste·intuition·faith), 지능 + 시뮬레이션, 예술가 공동 설계 vs AI slop, 10년 10x → 인간의 연결·장인정신, 교실 뒤집기, "commercial earlier than I thought" ([[tech-bridge-hassabis-fry-creativity-future]])
+- [[hannah-fry]] — RSA 대담 진행자(이름은 제목·설명란에만). ⚠️ DeepMind 팟캐스트 "Hannah"와 동일인 여부 미판독 ([[tech-bridge-hassabis-fry-creativity-future]])
+- [[thomas-heatherwick]] — 디자이너·건축 디자이너, RSA 청중 질문(건축의 인간화, "soullessness at scale", 건물 = 공중 보건) ([[tech-bridge-hassabis-fry-creativity-future]])
+- [[kate-varah]] — National Theatre 공동 CEO(자기소개, en-orig "Kate Far"), RSA 청중 질문(계산 불가능한 스토리텔링) ([[tech-bridge-hassabis-fry-creativity-future]])
+- [[dominik-kundel]] — [[openai|OpenAI]] Codex developer experience(자막엔 "Dom"만 — 성·"DevX 팀 리드"는 설명란). [[codex-app-server|App Server]] 발표: ACP와의 차이, deferred 도구, 하네스 임베드 규칙 셋, Doom 안의 Codex ([[tech-bridge-codex-app-server]]) ⚠️ 당사자 진술
+- [[ali-reza]] — [[gitar|Gitar]] 공동 창업자·전 CEO(현 [[sonar|Sonar]]). 에이전트형 PR 검증, slow down vs rubber stamp, 신뢰 사다리 ([[tech-bridge-gitar-agentic-pr-validation]]) — 자막엔 "Ali"만, 성 미상
+- [[greg-pstrucha]] — [[sentry|Sentry]] 화자(이름은 설명란에만 — 자막엔 자기소개 없음, 직함 미발화). stop prompting, start codifying: 트랜스크립트·리뷰 → lint 규칙, 스킬 lint, grumpy engineer, 숫자 목표 경고 ([[tech-bridge-sentry-stop-prompting-codify-linters]])
+- [[peter-werry]] — [[unblocked|Unblocked]] 엔지니어(설명란 기준 창립 엔지니어; 자막엔 "Peter"만). [[context-engine|컨텍스트 엔진]], NL → 구조화 쿼리 스캐폴딩 ([[tech-bridge-unblocked-context-engine-structured-queries]])
+- [[dex-horthy]] — [[humanlayer|HumanLayer]] CEO·공동 창업자(직함 발화, 성은 제목·설명란에만). "감독 없는 모델은 코드베이스를 좋게 만들지 못한다 — 지금은 코드를 읽어라"; Voss가 인용한 철회의 당사자 ([[tech-bridge-horthy-state-of-software-factory]] · [[tech-bridge-death-of-code-review]])
+- [[alexandr-wang]] — [[meta|Meta]] Chief AI Officer(해설 소개), Scale AI 창업. [[muse|Muse]] 제작: 행동별 eval·80/20 launch blocking·작은 부탁의 신뢰 ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 발췌 속 자기소개 없음, 당사자
+- [[david-senra]] — Alexandr Wang 인터뷰(`S6l3aRsecuE`) 진행자. **이름은 설명란에만** ([[tech-bridge-alexandr-wang-muse-launch]])
+- [[nat-friedman]] — Wang의 *"colleague"*. OpenClaw(⚠️ 판독)를 일찍 써 보고 흥분과 불안을 전한 Muse의 출발점(해설만) ([[tech-bridge-alexandr-wang-muse-launch]])
+- [[gabriel-martinez]] — [[g2i|G2i]] engineering manager·"resident slop warden"(Gabo). 슬롭 = 생성이 판단을 앞지를 때, 압축된 리뷰 표면·관례 ([[tech-bridge-g2i-generation-cheap-evaluation-expensive]]) — 자막에서 자기소개
+- [[remy-guercio]] — [[tailscale|Tailscale]] strategic projects team, AI gateway Aperture 담당(이름은 자막, 성은 설명란에만). 토큰맥싱 → ROI 맥싱, 네 층(LLM·데이터·인터페이스·샌드박스)의 선택권, [[ai-gateway]] ([[tech-bridge-tailscale-aperture-ai-without-lock-in]]) ⚠️ 벤더 발표
+- [[davis-palmie]] — [[factory-ai|Factory]] member of technical staff(자막 자기소개, 철자는 설명란), 전 Lumetric 공동 창업. 소프트웨어 팩토리 3원칙(model agnostic·sovereign deployment·SDLC 통합), incident triage부터, agent readiness 8기둥, "measure outcomes, not tokens" ([[tech-bridge-factory-bug-report-to-production]])
+- [[jess-wang]] — [[braintrust|Braintrust]] DevRel engineer(이름·직함은 자막, 성은 설명란). eval 네 요소 입문, Claude Code 하네스로 agentic vs vector 코드 검색 비교 — 같은 정확도·vector 4배 비용 ([[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
 - [[jake-broekhuizen]] — [[langchain|LangChain]] Labs 리드(설명란 — 발화엔 자기소개 없음). 관찰 ≠ 학습, semantic·episodic·procedural 메모리, 트레이스 → 메모리 순환 ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 당사자
 - [[dor-sasson]] — [[stigg|Stigg]] co-founder & CEO(이름은 설명란에만). "모든 AI 기업이 어쩌다 보니 은행을 짓고 있다" — 청구 뒤 검사 → 추론 전 동기 승인, reserve → settle ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더
 - [[hossein-niazmandi]] — [[braintrust|Braintrust]] 화자(이름은 설명란에만 — 자막엔 자기소개 없음, 직함 미상). eval 도구 성숙 4단계와 eval 플랫폼 = systems problem, 사람은 배포 버전을 결정 ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 벤더
@@ -123,6 +142,15 @@ updated: 2026-10-12
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 
 ### Organizations
+- [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
+- [[rsa]] — 런던의 학회, 하사비스 × Hannah Fry 대담 주최로 판독(발화 "RSA" + 설명란 thersa.org). 정식 명칭·행사명·날짜 미발화 ([[tech-bridge-hassabis-fry-creativity-future]])
+- [[gitar]] — PR 검증(리뷰·CI 실패·flaky·autofix·자동 머지)을 자동화하는 에이전트 제품, Sonar에 인수. 자체 harness·PR당 고정 가격·LLM proxy ([[tech-bridge-gitar-agentic-pr-validation]]) ⚠️ 벤더, 수치 없음, ASR "guitar"
+- [[sonar]] — SonarSource. Gitar 인수자, SonarQube에 Gitar 통합 중 ([[tech-bridge-gitar-agentic-pr-validation]]) ⚠️ 인수 날짜·조건 미발화
+- [[sentry]] — 에러·텔레메트리 모니터링 회사. Django·DRF 레거시의 OpenAPI drift lint, 사내 디버깅 에이전트("Sentry agent") 스킬 lint ([[tech-bridge-sentry-stop-prompting-codify-linters]]) ⚠️ Seer는 설명란 링크만
+- [[unblocked]] — 컨텍스트 엔진 회사; code review 제품, 오픈소스 document query engine·context engine simulator ([[tech-bridge-unblocked-context-engine-structured-queries]]) ⚠️ 자사 데모
+- [[humanlayer]] — multiplayer 코딩 에이전트 워크스페이스, control plane, diff 스트리밍으로 PR 전 리뷰, custom harness 오픈소스 예고 ([[tech-bridge-horthy-state-of-software-factory]]) ⚠️ 당사자 진술
+- [[g2i]] — Gabriel Martinez의 소속. 자사 도구 ORC(en-orig "Ork": planning·review·adversarial checks·context management를 워크플로에) ([[tech-bridge-g2i-generation-cheap-evaluation-expensive]]) ⚠️ 회사 정체·ORC 기능 미발화
+- [[tailscale]] — identity-based mesh network(WireGuard 기반). AI gateway **Aperture**(LLM + MCP gateway, auth 주입, 신원별 모델·예산, chat UI)와 오픈소스 라이브러리 TSNet ([[tech-bridge-tailscale-aperture-ai-without-lock-in]]) ⚠️ Aperture 라이선스 미발화(설명란 "오픈소스"는 발화상 TSNet), 예정 기능 둘
 - [[stigg]] — AI 과금·권한·사용량 인프라 쪽 회사(제품명·기능은 자막에 없음 — 직함·설명란으로 판독). AI의 "Stripe moment"가 없다는 피치 ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더
 - [[braintrust]] — AI 에이전트 eval·observability 플랫폼 회사. evals(프로덕션 전) + observability(프로덕션 중), BTQL, unknown unknowns 자동 발굴 피치. 자막엔 "Brain Trust"도 ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 당사자 진술
 - [[tessl]] — "agent enablement platform". 스킬 레지스트리·Linear→GitHub 커넥터·Tessl Agent·`tessl launch`. 이전엔 SDD 도구 목록·설명란 링크에만 (sources: 3) ⚠️ 당사자 진술
@@ -194,6 +222,7 @@ updated: 2026-10-12
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 
 ### Models
+- [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
 - [[claude-opus-5-5]] — Anthropic Opus 5.x. 진행자 *"며칠 전 발표"*, Brown *"정상적 진보"* — 사양·발표일 없음 ([[tech-bridge-white-house-superintelligence-panel]]) ⚠️ 1차 자료 없음
 - [[jev]] — [[typesafe-ai|TypeSafe AI]]의 **System 1 모델**. 텍스트를 생성하지 않고 상태+질문 → 타입이 정해진 답(choice·score·Boolean)+확률. 09-19 제목에만 있던 Jev가 **처음 서술됨** ([[tech-bridge-jev-agent-harness]]) ⚠️ 속도·비용 배수는 자막 *"20~200배·40~400배"*, 측정 조건 없음 · RLCD·보정 주장·이름 유래(Jevons)는 [[tech-bridge-jev-calibrated-decisions]]
 - [[muse-spark]] — [[muse|Muse]]를 구동하는 [[meta|Meta]] 모델. **1.3**, *"매달 새 모델 출하"*. 위키에 Muse의 모델 이름이 처음 ⚠️ 벤치마크·버전 체계 없음
@@ -214,6 +243,8 @@ updated: 2026-10-12
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
 ### Products
+- [[v0]] — Vercel 앱 생성 제품. 하네스에 엔지니어링 시간 "like 90%"를 쓴 회고 → 지금이라면 기성 하네스 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 회고·추정
+- [[codex-app-server]] — [[codex|Codex]] 하네스를 감싼 JSON-RPC 스타일 프로토콜, 오픈소스(Apache 2). Codex app·VS Code·Xcode·JetBrains·T3 Code·Claude Code 플러그인이 같은 하네스 위. 120+ 메시지, sign in with ChatGPT, developer instructions, deferred 도구, CLI와 같은 바이너리, codex exec와 구분 ([[tech-bridge-codex-app-server]] · [[tech-bridge-cooking-with-codex]]) ⚠️ 당사자 진술
 - [[langsmith]] — [[langchain|LangChain]]의 관측·평가 제품. capture(트레이싱) → analyze(백그라운드 분석 엔진) → update(**Context Hub** — 스킬 마크다운 원격 스토어) ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 당사자 진술, 수치 없음
 - [[debug-assist]] — Uber 사내 디버깅 에이전트: LangGraph 고정 골격, RCA(Sonnet·턴 제한·병렬 서브에이전트) → 기능 플래그 롤백·수정(Opus) → 재현 검증 → PR. 월 9,000 RCA, 정확도 50%, 머지율 5%→48% ([[tech-bridge-uber-debug-assist]]) ⚠️ 자기 보고
 - [[agentcraft]] — 게임에서 영감을 받은 코딩 에이전트 오케스트레이터: 지도 위 유닛·히트맵·스페이스바 주의 점프·퀘스트·로컬 컨테이너 자율 실행·영상/사진 리뷰 키트·사람+에이전트 협업 방. 단순판 Loopers(가칭) ([[tech-bridge-agentcraft-strategy-game]]) ⚠️ 당사자 데모
@@ -245,6 +276,8 @@ updated: 2026-10-12
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 
 ### Tools
+- [[fx]] — Vercel Labs 코딩 CLI(ASR "effects", 설명란 fx.sh). 셸처럼 부팅, 6MB/11MB, 임베드 가능(fx0 데모: HTML → 샌드박스 Next.js → Eve 에이전트) ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 자사 진술
+- [[slopcodebench]] — 문제를 점진 공개하며 기능을 덧붙이게 해 장기 코드 품질 저하를 재는 벤치마크(위스콘신 대학 lab — 화자 진술), GPT-5.5 14.8% ([[tech-bridge-horthy-state-of-software-factory]]) ⚠️ 논문 미확인
 - [[xstate]] — 오픈소스 상태 머신 라이브러리(Stately). 화자 스스로 *"you don't need a special library"* — switch·reducer·LangGraph도 된다 ([[tech-bridge-goodbye-slop-state-machines]]) ⚠️ 기능 서술은 소스에 없음
 - [[wandb-weave]] — W&B의 에이전트 트레이싱·평가 도구. 프로덕션·오프라인 트레이스를 **같은 포맷**으로 남겨 플라이휠의 전제가 된다 ([[tech-bridge-wandb-aria-self-improving-agent]]) ⚠️ 당사자(*"the best observability platform"*)
 - [[artifactory]] — 사내 패키지 관리자·캐시. HF 사건에서 샌드박스가 신뢰한 **유일한 외부 의존성** → SSRF 프록시·에이전트 게시판·제로데이 두 개 ([[tech-bridge-openai-huggingface-incident-black-hat]]) ⚠️ 벤더명 소스에 없음
@@ -285,6 +318,8 @@ updated: 2026-10-12
 ## Concepts (LLM/AI)
 
 ### Techniques
+- [[skill-linting]] — 스킬 안의 코드 예제를 추출해 type check·샌드박스 실행·API 스키마 일치로 결정론 검증하고, API 변경에 스킬을 linter로 동기화한다. 에이전트의 회피(whack-a-mole)를 규칙 덧대기로 수렴 ([[tech-bridge-sentry-stop-prompting-codify-linters]]) ⚠️ 단일 소스, 측정 없음
+- [[expected-pain-planning]] — 계획 깊이 = 변경 확률 × 변경 비용; 두 문장 50% · 스펙 5시간 10% · 손 20시간 0%(직관), don't over plan ([[tech-bridge-horthy-state-of-software-factory]])
 - [[domain-specific-scripts]] — 원시 데이터 대신 도메인 멘탈 모델을 담은 분류 스크립트를 에이전트에 — 안정된 정의·높은 수준의 어휘·버킷. 사람의 암묵지도 드러낸다 ([[tech-bridge-rails-harness-engineering]]) ⚠️ 결과 수치 없음
 - [[retrieval-practice]] — 인출 연습·시험 효과·간격 반복: 다시 읽기 4회는 5분 뒤 83%→일주일 뒤 40%, 1회 읽고 3회 시험은 71%→61%. AI 설명 읽기는 재학습 쪽 ([[tech-bridge-learn-anything-with-ai]]) ↔ [[cognitive-offloading]] ⚠️ 2차 인용, 61%는 내레이션만, 원 논문 미확인
 - [[automatic-model-routing]] — 난이도 분류 → 임계값 → 임계값을 넘는 최저가 모델, 실패·장애 시 전환. *캐싱은 가격 결정 문제* ([[tech-bridge-factory-software-factory]]) ⚠️ "보수적 25%" 벤더 수치
@@ -320,6 +355,7 @@ updated: 2026-10-12
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 
 ### Architectures
+- [[agent-platform-layers]] — compute · dev environment · harness · control plane, 각각 buy or build; 세션·계획·프롬프트의 system of record = 새 software forge ([[tech-bridge-horthy-state-of-software-factory]]) ⚠️ 벤더의 틀
 - [[software-factory]] — 코딩만이 아니라 신호 수집부터 검증·학습까지 개발 생애주기 전체를 자율로 도는 루프. 스웜도 컨설팅도 아님. [[defense-factory]]와 구분 ([[tech-bridge-factory-software-factory]]) > ⚠️ 반론: [[orchestras-not-factories]]
 - [[document-context-layer]] — RAG를 하네스와 컨텍스트 레이어로 나눴을 때의 컨텍스트 쪽: 파싱 · 시맨틱/저장 · 반복 가능한 문서 워크플로 세 층 ([[tech-bridge-llamaindex-document-context-layer]]) ⚠️ 당사자
 - [[system-1-model]] — 분류형 결정 모델을 하네스의 결정 지점(모델 라우터 · 위험 도구 호출 게이트 · 온라인 eval judge)에 두어 **LLM 호출을 대신**하게 하는 설계. Kahneman의 System 1/2 명명 ([[tech-bridge-jev-agent-harness]])
@@ -342,6 +378,7 @@ updated: 2026-10-12
 - [[long-context-agents]] — 길이는 요약 편의가 아니라 **에이전트 실행의 요구**. 도구 응답·다중 라운드가 채운다. **1천만(비에이전트) > 100만(에이전트)** 인데 뒤엣것이 진보 (sources: 1)
 
 ### Theories
+- [[human-provenance-value]] — 계산 가능해도 "다른 인간이 겪었다"는 출처가 의미를 준다('실화를 바탕으로', 반 고흐의 붓질), 노력이 지름길로 대체되면 가치를 다시 정의해야 (Hassabis, [[tech-bridge-hassabis-fry-creativity-future]]) ⚠️ 단일 화자·추측
 - [[ai-anthropomorphism]] — AI의 행동을 사람의 속성(반항·부정행위·지각)으로 서술하는 문제. Huang: *"AI is not alive (…) did not go rogue"*, 답 찾기는 *"not cheating. That's called obvious"* — [[eric-wallace|Wallace]]의 *"부정행위를 좋아한다"* 와 같은 행동·반대 이름. 친근함의 비용([[agent-persona-naming]]) vs 공포의 비용 ([[tech-bridge-jensen-huang-korea-society-gala]]) ⚠️ 칩 판매자의 진술
 - [[features-vs-futures]] — 기능을 낼 때마다 미래 선택권(futures)을 태운다. 가치 = features + futures, 기능 사이에 멈춰 리팩터링으로 되돌려라. AI는 "한 사람, 일주일"에 변경 불가 상태로 ([[tech-bridge-kent-beck-craft-augmented-development]]) ⚠️ 경험 그림, 측정 없음
 - [[effort-output-outcome-mission]] — 노력 → 산출 → 결과 → 미션. LOC·PR 수는 노력·산출 측정, 앞쪽일수록 Goodhart("Goodhart was an optimist"), 뒤쪽일수록 귀속 곤란 ([[tech-bridge-kent-beck-craft-augmented-development]]) ⚠️ ko·en이 output/outcome을 같은 말로
@@ -428,6 +465,18 @@ updated: 2026-10-12
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 
 ### Patterns
+- [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
+- [[run-trace-skill-distillation]] — 성공·실패 실행 트레이스를 frontier LLM이 스킬로 증류(Voyager skill library 계보), 사람 게이트 없이 자동 검사만 거쳐 전사 배포. 36% → 100%는 단일 태스크 ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 게이트 부재
+- [[mcp-skill-distribution]] — 원격 MCP 서버를 스킬의 source of truth·배포 계층으로(비개발자·비개발 클라이언트까지, 역할별 정책), skills over MCP 워킹 그룹, resources 대신 tools ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 벤더 주장
+- [[ai-flipped-classroom]] — 암기는 수업 밖 개인화 AI 교사, 교실은 프로젝트·팀워크(Montessori·Oxbridge supervision). [[cognitive-offloading]]과 약한 Contradiction (Hassabis, [[tech-bridge-hassabis-fry-creativity-future]]) ⚠️ 권고, 측정 없음
+- [[embedded-agent-harness]] — 하네스를 짓지 말고 기성 하네스를 프로토콜로 붙여 그 위에 인터페이스만 짓는다. 제작사 규칙 셋: 버전 번들 · 새 함수는 deferred · system prompt 교체 대신 developer instructions("in distribution"). 구매자 회고(Vercel v0 "90%") ([[tech-bridge-codex-app-server]] · [[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 양쪽 모두 파는 쪽
+- [[agent-plus-program-analysis]] — LLM 에이전트 검증 + taint·control flow·data flow·SCA를 합치면 어느 한쪽보다 precision·coverage가 낫다는 주장 ([[tech-bridge-gitar-agentic-pr-validation]]) ⚠️ 전망(측정 없음), 결합 방식 미발화, 단일 벤더 소스
+- [[context-engine]] — 흩어진 조직 지식을 과제별 grounded context 묶음으로 내보내는 층(Unblocked) ([[tech-bridge-unblocked-context-engine-structured-queries]]) ⚠️ 자사 데모, 50%는 세션 1건
+- [[nl-to-structured-query-scaffolding]] — NL → 구조화 쿼리 생성 주변의 스키마·identity·검증·재시도 스캐폴딩; 쿼리 생성은 쉬운 부분 ([[tech-bridge-unblocked-context-engine-structured-queries]]) ⚠️ [[build-time-vs-runtime-tools]]와 Contradiction
+- [[back-pressure]] — loop = forward pressure(trigger: 스케줄·자동화·webhook) + back pressure(작업 중 피드백: 브라우저·curl·영상, UI는 사용자 실험) — 사람 없이 hill climb ([[tech-bridge-horthy-state-of-software-factory]]) ⚠️ feedforward와 다른 개념
+- [[launch-blocking-evals]] — 이상적 행동·능력 목록을 eval 행으로 판정하고 빨강이 남으면 출시를 막는다(*"green on 80 (…) red on 20 (…) wasn't good enough"*) + 직접 써 본 감각(해설) ([[muse]], [[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 근거는 원음 약 40초
+- [[compressed-review-surface]] — 에이전트가 구현을 수천 줄 만들 때 사람은 서비스 경계·데이터 흐름·상태 전이·실패 모드를 리뷰한다. 다이어그램·선언적 코드, 구현은 잎으로 ([[tech-bridge-g2i-generation-cheap-evaluation-expensive]]) ⚠️ 단일 소스, 측정 없음
+- [[eval-experiment-anatomy]] — eval = 데이터셋·태스크·채점·실험. 데이터셋 × 태스크 × 채점의 조합 하나가 실험 하나이고, 셋 중 하나를 바꿔 가설을 시험하고 행 단위로 비교한다 ([[tech-bridge-braintrust-agentic-vs-vector-search-eval]]) ⚠️ 단일 소스·벤더 입문
 - [[trace-to-memory-loop]] — 트레이스(증거) → 필터(대부분 history) → durable context(메모리) → 다음 실행. capture · analyze · update, procedural 변경은 사람 검토 ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 한 벤더의 틀 · [[agent-action-record]]와 Contradiction(로그 = 기억?)
 - [[eval-platform-maturity-stages]] — eval 도구의 4단계(스프레드시트 → 맞춤 UI → 비기술 사용자의 실험 → 프로덕션 연결)와 그 끝의 systems problem(반정형 JSON 트레이스, 실시간 vs 장기 쿼리), 에이전트가 eval 플랫폼의 first-class citizen ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 벤더의 틀
 - [[inner-outer-meta-loops]] — 코딩 에이전트 작업의 세 루프: inner(PR 전, 싸고 빠름 → autonomy) · outer(PR 후 비싼 검사 → automation) · meta(로그·PR·이슈·피드백 관찰 → 품질, 스킬 갱신) ([[tech-bridge-tessl-harness-engineering-factory]]) ⚠️ 한 벤더의 틀 · Lauren Tan의 outer loop와 용어 충돌
@@ -616,6 +665,7 @@ updated: 2026-10-12
 → 전체 목록은 [[02.wiki/engineering/index]] 참조
 
 ### Systems
+- [[ai-gateway]] — 에이전트·인터페이스와 LLM·MCP·API 엔드포인트 사이의 단일 통제·관측 지점. 연결 신원 기반 인증·신원별 모델/예산 정책·auth 주입·로그 → 에이전트 사후 진단, 네 층의 선택권 ([[tech-bridge-tailscale-aperture-ai-without-lock-in]]) ⚠️ 단일 벤더 소스·측정 없음
 - [[reserve-then-settle]] — AI 사용 = 원가이므로 권한·한도·잔액을 hot path에서 동기로 먼저 검사·예약하고 정산은 비동기로(ATM 비유). 결정 폭포·동시성(10,000 에이전트, double spend)·멱등성·크레딧 차감 순서·계층 예산·VPC 내부 원장 ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더 프레이밍
 - [[durable-execution]] — 이벤트 히스토리 replay로 멈춘 자리에서 이어 가는 실행 모델. 에이전트 루프 = workflow(결정론·replay 가능), 모델·도구 호출 = activity(비결정론) — [[workflow-vs-agent]]의 workflow와 다른 뜻 ([[tech-bridge-human-is-async-api]])
 - [[agent-distributed-systems]] — 에이전트가 부작용을 내면 분산 시스템 문제가 된다. 타임아웃=불명·멱등성·메모리=캐시·보상·scoped 권한 (sources: 2)
@@ -684,6 +734,19 @@ updated: 2026-10-12
 ---
 
 ## Sources
+- [[tech-bridge-vercel-rauch-agentic-workflow]] — [[guillermo-rauch|Guillermo Rauch]] ([[vercel|Vercel]] CEO) × David Ondrej(추정) 인터뷰 발췌 + 해설(15:38, 챕터 8, 2026-10-12 업로드, `[한영자막]` 아님): [[fx]] · 리서치 폴더 agents.md · [[agentic-inquiry]] · [[v0]] 하네스 90% → 기성 하네스 · brain and hands · vibe coding의 반대를 알려라 · 클라우드는 이미 왔고 보안상 낫다(공급망 공격 "근절"은 bold statement) · 로컬 토글 ⚠️ CEO 자사 시연 · 해설 구간 자막 없음 · ko fx → "효과", harness → "테스트 환경", *good at attacking problems in parallel* → "공격에 능숙"
+- [[tech-bridge-runlayer-self-improving-skills-mcp]] — [[rafal-wilinski|Rafal Wilinski]] ([[runlayer|Runlayer]]) 36%에서 100%로: 자기 개선 에이전트(17:37, 챕터 20, 2026-10-12 업로드): 스킬 = 초기 궤적 playbook, 스킬의 세 문제, [[mcp-skill-distribution|MCP = 스킬 배포 계층]], Voyager → [[run-trace-skill-distillation|트레이스 증류]](게이트 없음), 조직 플라이휠, moat. ⚠️ 36%→100% 단일 태스크·분모 미발화, Contradiction: 사람 게이트([[skill-self-improvement]]) · MCP vs CLI+스킬
+- [[tech-bridge-hassabis-fry-creativity-future]] — [[demis-hassabis|Demis Hassabis]] × [[hannah-fry|Hannah Fry]] ([[rsa|RSA]], 멤버 전용 → 공개) AI 혁명, AI의 미래와 인간의 창의성(39:41, 챕터 4, 발췌, 2026-10-12 공개 전환): 다빈치·보헤미안 가정, 게임 디자인 = 과학(taste·intuition·faith), 상상력 연구, 지능 + 시뮬레이션, 예술가 공동 설계 vs [[ai-slop]], 10년 10x → 자율 도구 → [[human-provenance-value]], 미래는 쓰이지 않았다, root node → [[intelligence-abundance|풍요]], Q&A: Kate Varah(계산 불가능?) · Thomas Heatherwick(건축, 데이터센터도 아름답게, MIT 일화) · Usha([[ai-flipped-classroom|교실 뒤집기]]) ⚠️ 발췌(앞뒤 잘림) · 진행자 이름 미발화 · ko가 연대를 나이·인원·점수로, MIT 일화 결론 반전
+- [[tech-bridge-codex-app-server]] — [[dominik-kundel|Dominik Kundel]] ([[openai|OpenAI]]) Codex 하네스 위에 나만의 에이전트를(17:40, 챕터 18, 2026-10-13 업로드): [[codex-app-server|App Server]] = 하네스를 감싼 프로토콜, [[agent-client-protocol|ACP]]와 일반성 vs 깊이, 120+ 메시지, [[bring-your-own-subscription|sign in with ChatGPT]], developer instructions + [[deferred-tool-context|deferred 도구]], 번들·바인딩·SDK, Doom 데모, codex exec 비교, [[embedded-agent-harness|임베드 규칙 셋]]. ⚠️ 당사자 진술, ko·en BYO 과금 반전
+- [[tech-bridge-gitar-agentic-pr-validation]] — [[ali-reza|Ali-Reza]] ([[gitar|Gitar]]/[[sonar|Sonar]]) AI가 코드를 쏟아내는 시대, 검증은 대체 누가 해야 할까요?(10:54, 공식 챕터 17, 2026-10-13 업로드): CI + 코드 리뷰 = 중앙 검증 단계, outer loop, slow down vs rubber stamp, "more AI", 리뷰 → 차단 → CI·flaky → autofix → 자동 머지, 신뢰 사다리, control plane·자체 harness·LLM proxy, [[agent-plus-program-analysis]] ⚠️ 벤더 발표·수치 0개·행사 AI Engineer 추정
+- [[tech-bridge-sentry-stop-prompting-codify-linters]] — [[greg-pstrucha|Greg Pstrucha]](설명란에만) ([[sentry|Sentry]]) 프롬프트는 이제 그만하세요(15:00, 공식 챕터 16, 2026-10-13 업로드): compaction → back to square one, stop prompting/start codifying, 테스트·strict typing·linter, linter 비용 역전, 트랜스크립트·리뷰 → lint 규칙(스케줄), OpenAPI drift lint, [[skill-linting]](whack-a-mole), ESLint·ast-grep·Taskless, 저장소 정책 + grumpy engineer, snake oil(커버리지 100%) ⚠️ 수치 없음·Seer 미발화·행사 AI Engineer 추정
+- [[tech-bridge-unblocked-context-engine-structured-queries]] — [[peter-werry|Peter Werry]] ([[unblocked|Unblocked]], 18:49, 챕터 15, 2026-10-14 업로드): **[[context-engine|컨텍스트 엔진]]** — 사람이 context layer였다 → 과제별 grounded context 묶음(코드·Notion·PR·Slack, $1.29 vs "260", 50% — 세션 1건), 모델 전환 회귀 추적·수정 PR. 2부: RAG는 내용, 구조적 질문은 쿼리 → 오픈소스 document query engine으로 [[nl-to-structured-query-scaffolding|스캐폴딩]] 6단계(스키마 탐색 · identity · synthesis · validation · retry · full-text). ⚠️ 자사 데모, 이름 "Peter"만 발화, "토큰"·"관계형"은 업로더 표기
+- [[tech-bridge-horthy-state-of-software-factory]] — [[dex-horthy|Dex Horthy]](성은 제목·설명란에만) ([[humanlayer|HumanLayer]]) 코드 슬롭과의 싸움: 소프트웨어 팩토리의 현실(16:11, 챕터 14, 2026-10-14 업로드): 1968년부터 있던 공장 → agentic형(빌드만 에이전트, 리뷰 병목) → lights-off 환상, 테제 "unattended models will not improve or maintain your code base quality", maintainability has no fast oracle, [[slopcodebench|SlopCodeBench]](GPT-5.5 14.8%, Astra +1~1.5pp), Steve(Gas Town)의 입장 변화, "12 factor factories"(실제 9): [[expected-pain-planning]] · show me · [[back-pressure]] · anti-slop 규칙 · 인시던트 → PR · feature flag 실험 · compound, [[agent-platform-layers|네 층]]과 system of record, PR 전 diff 리뷰 ⚠️ 벤더 피치(14:53~15:44) · 5월 리포트 미특정 · 행사 미발화(AGNTCon NA 추정) · ko가 PR → "홍보", HumanLayer → "인권 문제"
+- [[tech-bridge-alexandr-wang-muse-launch]] — [[alexandr-wang|Alexandr Wang]]([[meta|Meta]]) × David Senra(설명란만), **Tech Bridge 한국어 해설 + 인터뷰 발췌**(채널 두 번째 형식, 9:10, 원음 약 2분, 2026-10-14 업로드). [[muse|Muse]]: 고장 나던 시제품 → 7개월 → 출시(해설) · *"It's not coding. It's personal"* · 행동별 eval, **80/20 rows는 launch blocking** → [[launch-blocking-evals]] · Jolly Bot · 작은 부탁의 신뢰 · 다음 날 [[muse-wonder]] ⚠️ *"millions of users"* 해설 전언, en-orig 해설 = 영어 대응문, OpenClaw 판독
+- [[tech-bridge-g2i-generation-cheap-evaluation-expensive]] — [[gabriel-martinez|Gabriel Martinez]] ([[g2i|G2i]]) 생성은 저렴하지만 검토는 비쌉니다(16:48, 공식 챕터 23, 2026-10-14 업로드): 슬롭 = generation outruns judgment, 코드는 부채·lines spent, 프로토타입의 환상, 성과 불안 고백, multi-thousand line PR·20페이지 문서, "Generation is cheap, but evaluation is expensive", Ralph loop = while loop, [[compressed-review-surface]], 인지 오버헤드·Rails 관례, ORC ⚠️ 수치 없음·벤더 발표·행사 AI Engineer 추정
+- [[tech-bridge-tailscale-aperture-ai-without-lock-in]] — [[remy-guercio|Remy Guercio]] ([[tailscale|Tailscale]]) 벤더 락인 없는 AI의 미래(19:09, 공식 챕터 6, 2026-10-15 업로드): 토큰맥싱의 1년, 낭비가 기본값(아무도 컨텍스트를 비우지 않는다)·수직 통합, 벤더 통합은 오답, **ROI 맥싱** = 가치 증명 + 선택권, 네 층, [[ai-gateway]](Aperture: 신원 기반 인증·신원별 모델 예산·MCP gateway·auth 주입·로그), MCP "다들 다른 버전" ⚠️ 벤더 발표(화자 고지)·수치 없음·예정 기능 둘·행사명 AI Engineer World's Fair 발화
+- [[tech-bridge-factory-bug-report-to-production]] — [[davis-palmie|Davis Palmie]] ([[factory-ai|Factory]]) 버그 리포트에서 배포까지(18:02, 공식 챕터 22, 2026-10-15 업로드): typing code → governing agents, 코딩은 병목이 아니었다, incident triage부터·기둥별 자동화 후 루프, 3원칙(Tereza 판본과 다름), O(N) → O(1), 표면 비종속, [[agent-readiness]] 8기둥, validation gates, Goodhart·토큰 리더보드, 지표 다섯 ⚠️ 벤더 발표·수치 조건 미발화·지표는 이름만·행사 AI Engineer 추정
+- [[tech-bridge-braintrust-agentic-vs-vector-search-eval]] — [[jess-wang|Jess Wang]] ([[braintrust|Braintrust]]) 코딩 에이전트의 Agentic Search와 Vector Search, 직접 평가해봤습니다(17:46, 챕터 20, 2026-10-15 업로드): vibes 대신 숫자, [[eval-experiment-anatomy|eval 네 요소]], 자연어 trace 질의·CLI·MCP, 순환·team sport / TypeScript Go fix PR 약 20개, Claude Code 하네스 고정(prompting is never enough → disallowed tools), 고아 trace → parent span ID 환경 변수, 이진 테스트 채점, **같은 정확도·vector 4배 비용**(청크가 연결을 놓쳐 반복 검색) ⚠️ 20행·1회·약한 vector 구현, 정확도 수치·비용 단위 미발화, 태스크/채점 어긋남, 행사 AI Engineer 추정
 - [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]] ([[langchain|LangChain]] Labs) AI 에이전트에 학습하는 메모리를(15:28, 챕터 19): 관찰 ≠ 학습, semantic · episodic · procedural(개선의 대부분) + working/long-term, 읽기·쓰기 순환과 필터 → [[trace-to-memory-loop]], 세 교훈(대부분 history · 캐시/hot path · procedural은 사람 검토 + eval) ⚠️ 10:13~12:28 [[langsmith|LangSmith]]·Context Hub 자사 제품 · *"about 75%"* 화자 추정 · 이름·직함 설명란에만 · ko가 run → "사형 집행", "세금 정보" 환각
 - [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]] ([[stigg|Stigg]]) 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(19:00, 챕터 15): 4월 가격 비상(Anthropic 서드파티 에이전트 구독 사용 차단 · OpenAI "5 5x" · Copilot 무료 폐지)은 인프라 문제, 검사가 청구서 뒤에 온다 → [[reserve-then-settle]], OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, 4가지 패턴, AI의 Stripe moment ⚠️ 벤더 CEO · 타사 내부 주장 출처 없음 · *"150s to even 750"* 단위 미발화(설명란 "배"는 업로더 해석) · 연도 미발화 · ko concurrency → "참석률", rate limit → "이자율"
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]](설명란에만) ([[braintrust|Braintrust]]) 평가 플랫폼 만들기가 생각보다 어려운 이유(16:25, 챕터 15): evals + observability 두 기둥, 최소 eval 시스템 세 요소, multi-persona(PM·SME), North Star 개선 루프(drift) → [[production-trace-eval-flywheel]], [[eval-platform-maturity-stages|성숙 4단계]], systems problem(수백 MB 트레이스, 실시간 vs 장기 쿼리, BTQL), headless 코딩 에이전트가 eval을 돌고 사람이 배포 결정 ⚠️ 벤더 피치(14:45~15:45 unknown unknowns) · 영상이 발표 중간에서 시작 · ko가 production을 "개발 중"·"오프라인"으로 반전
@@ -821,7 +884,7 @@ updated: 2026-10-12
 
 ## 통계
 
-- 총 페이지 수: 782 (770 → 782, + 2026-10-12 Tech Bridge 3편: source 3 + concept 2 + engineering 1 + entity 6 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 782와 일치)
+- 총 페이지 수: 845 (782 → 845, + 2026-10-17 Tech Bridge 13편(10-12~10-15 업로드, 10-13~10-16 회차 중단분 일괄 반영): source 13 + concept 16 + engineering 1 + entity 33 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 845와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-12 (Tech Bridge **3편** — 10-11 업로드 3편 [[tech-bridge-langchain-learning-agent-memory|LangChain 학습하는 에이전트 메모리]](`0kVsv2WlL44`) · [[tech-bridge-stigg-ai-companies-building-banks|Stigg 모든 AI 기업이 은행을 짓는다]](`4JfLShdp92k`) · [[tech-bridge-braintrust-eval-platform-systems-problem|Braintrust 평가 플랫폼 만들기]](`S3knIZq7jM8`))
-- 직전 ingest: 2026-10-11 (Tech Bridge **3편** — 10-10 업로드 1편 [[tech-bridge-tessl-harness-engineering-factory|Tessl 하네스 엔지니어링 → 소프트웨어 팩토리]](`sAu_4QuAI0w`) + 멤버 전용 → 공개 전환 2편 [[tech-bridge-brockman-start-building-before-ready|Brockman × Silicon Valley Girl]](`J1BGMIWTJ1U`) · [[tech-bridge-cooking-with-codex|Codex로 요리하기]](`RVnSsolR3uE`). 멤버 전용 `zAglgqN5Lhw`(하사비스 × Hannah Fry) 여전히 건너뜀)
+- 마지막 ingest: 2026-10-17 (Tech Bridge **13편** — 10-12 [[tech-bridge-vercel-rauch-agentic-workflow|Vercel CEO 워크플로]](`21do1LvDNFI`) · [[tech-bridge-runlayer-self-improving-skills-mcp|Runlayer 36%→100%]](`jDdgfTp_PXw`) · [[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]](`zAglgqN5Lhw`, 멤버 전용 → 공개) / 10-13 [[tech-bridge-codex-app-server|Codex App Server]](`GRMr7YdoJzo`) · [[tech-bridge-gitar-agentic-pr-validation|Gitar 검증]](`gnXwThtDnIo`) · [[tech-bridge-sentry-stop-prompting-codify-linters|Sentry 프롬프트는 그만]](`sInGHWqJg0I`) / 10-14 [[tech-bridge-unblocked-context-engine-structured-queries|Unblocked 컨텍스트 엔진]](`djKIU-30YVc`) · [[tech-bridge-horthy-state-of-software-factory|HumanLayer 소프트웨어 팩토리의 현실]](`XejHwIKi5qg`) · [[tech-bridge-alexandr-wang-muse-launch|Alexandr Wang Muse 제작기]](`6gakvEF9m20`) · [[tech-bridge-g2i-generation-cheap-evaluation-expensive|G2i 생성은 싸고 검토는 비싸다]](`utMfI1DXTOE`) / 10-15 [[tech-bridge-tailscale-aperture-ai-without-lock-in|Tailscale 벤더 락인 없는 AI]](`l3HyFh6Dg4w`) · [[tech-bridge-factory-bug-report-to-production|Factory 버그 리포트에서 배포까지]](`lnLqwKTPTYU`) · [[tech-bridge-braintrust-agentic-vs-vector-search-eval|Braintrust agentic vs vector search]](`pLdgH-jLw5A`). 멤버 전용 `N8gD8ebFlMI` · `Eu4D795nMsQ` · `Yhck-x6VuLs` 건너뜀)
+- 직전 ingest: 2026-10-12 (Tech Bridge **3편** — 10-11 업로드 3편 [[tech-bridge-langchain-learning-agent-memory|LangChain 학습하는 에이전트 메모리]](`0kVsv2WlL44`) · [[tech-bridge-stigg-ai-companies-building-banks|Stigg 모든 AI 기업이 은행을 짓는다]](`4JfLShdp92k`) · [[tech-bridge-braintrust-eval-platform-systems-problem|Braintrust 평가 플랫폼 만들기]](`S3knIZq7jM8`))

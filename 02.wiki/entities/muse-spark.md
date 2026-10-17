@@ -4,9 +4,9 @@ type: entity
 category: model
 tags: [meta, muse, model, personal-agent]
 links: []
-sources: [tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-16
 ---
 
 # Muse Spark
@@ -40,6 +40,7 @@ updated: 2026-09-17
 - **크기·컨텍스트 길이·멀티모달 여부** — MMA 카메라 사례가 영상 입력을 시사하지만 **모델이 그것을 한다는 서술은 없다.**
 - **"바닥부터 설계한 모델"이 이것인지** — 미확인.
 - 가격·한도와의 관계(주당 1억 토큰이 이 모델 기준인지).
+- **[[muse-wonder|Muse Wonder]]와의 관계** — 2026-10-12 발표된 Wonder(코딩 지원 포함, Meta model API·Muse Code)가 Spark의 후속인지 병행 계열인지 [[tech-bridge-alexandr-wang-muse-launch]]의 해설은 말하지 않는다.
 
 ## References
 

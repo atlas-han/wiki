@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
-related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall]
+related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-09-12
-updated: 2026-09-30
+updated: 2026-10-16
 ---
 
 # 취향과 판단
@@ -132,3 +132,13 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 > ⚠️ **Contradiction:** [[paul-bakaus|Paul Bakaus]](09-28 절)의 *"I don't think taste can be solved at a model level"* 과 정면으로 갈린다. Bakaus의 희소성 논거(모두가 같은 taste를 쓰면 사라진다)에 대해 Gavrilescu는 오히려 **남의 taste를 내려받는 것**을 제품 가치로 둔다 — *"to be able to use the taste of of different makers uh as recipes for your agent"*(08:56~09:00). 둘 다 측정이 없고, Gavrilescu는 레시피 제품을 판다.
 
 ⚠️ **ko가 이 논쟁의 두 말을 합친다** — 이 소스의 *taste* 를 ko는 **"기준"**(11:51 · 15:44)·**"판단력"**(15:26 · 15:45 · 16:08)·**"판단"**(15:58)으로 옮기고, `en`도 *"criterion"*·*"judgment"* 다. ko만 읽으면 이 화자가 Thais·Hall처럼 **"판단"** 을 말하는 것처럼 보인다. 원문은 일관되게 **taste**다.
+
+## 2026-10-13 — taste를 연구의 조건으로 ([[tech-bridge-hassabis-fry-creativity-future]])
+
+[[demis-hassabis|Demis Hassabis]]는 taste를 디자인·제품이 아니라 **답을 모르는 일 일반**의 조건으로 둔다: 게임 디자이너에게 *"when is it going to be fun?"*, 과학자에게 *"when is this breakthrough going to happen?"* 은 같은 질문이고(05:22~05:47), *"if you knew the answer already, then it wouldn't be research. If you knew could guarantee it was going to be fun then it wouldn't be creative"*(05:49~05:58) → *"it needed a lot of taste and intuition and kind of faith in what you're doing"*(06:03~06:09). 그리고 AI가 *"craft, intuition, the soul of a piece"* 를 더 구체적으로 정의하도록 강요할 것이라 본다(15:30~15:41) — 이 페이지의 "정의할 수 있는가" 문제에 대한 한 예측. → [[human-provenance-value]]
+
+## 2026-10-14 — linter가 끝나는 자리가 taste ([[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]는 결정론 검사로 표현할 수 없는 판단(상태 3개 → 10개로 부푼 state machine)을 이렇게 부른다. *"this is where you're engaging your engineering experience, or if Tweet[?] as as Twitter would say, your taste. Um and you just have to decline it straight up. Or you can have an LLM agent that is going to do a pass"*(11:24~11:38). taste를 **linter로 코드화할 수 없는 잔여**로 두고, 저장소 정책과 리뷰 서브에이전트로 바닥만 올린다([[automated-code-review]]). 위 09-30 Gavrilescu의 "taste는 eval로 코드화할 수 있다"보다 보수적인 쪽이다.
+
+⚠️ **ko·`en`이 또 두 말을 합친다.** *your taste* → `en` *"judgment"*, ko **"표준"**(11:28). 원문은 taste다.

@@ -6,9 +6,9 @@ tags: [harness-engineering, software-factory, feedback-loops, autonomy, automati
 aliases: [inner loop, outer loop, meta loop, 메타 루프, loop engineering]
 related: [harness-engineering, software-factory, factory-engineering, loop-is-the-product, skill-self-improvement, self-harness, structure-sensitive-tests, agent-visual-qa, scheduled-agent-automations, agent-trust-curve, in-context-learning, feedforward-feedback-steering]
 first-seen: tech-bridge-tessl-harness-engineering-factory
-sources: [tech-bridge-tessl-harness-engineering-factory]
+sources: [tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Inner · Outer · Meta 루프
@@ -35,6 +35,7 @@ updated: 2026-10-11
 - **[[loop-is-the-product]]** — Gavrilescu의 *두 번째 루프*(첫 루프의 산출물을 보고 무엇을 바꿀지 정한다)가 meta loop와 같은 자리.
 - **[[feedforward-feedback-steering]]** — inner/outer의 검사는 feedback 센서, meta loop가 고치는 스킬·플레이북은 feedforward 가이드.
 - **[[structure-sensitive-tests]]** — outer loop의 mutation testing은 *테스트 스위트의 품질* 을 재는 장치.
+- [[tech-bridge-gitar-agentic-pr-validation]] (2026-10-14): 같은 단어 *outer loop* 가 같은 자리(PR 뒤의 CI·리뷰)를 가리키지만 가치 부호가 반대다. *"failures introduce an outer loop that are typically measured in hours and days"*(01:50~01:59). Tessl은 outer loop를 설계해서 키울 대상으로, [[ali-reza|Ali-Reza]]는 실패가 만들어 내는 비용으로 쓴다. 그가 말하는 플랫폼 팀용 CI 실패 분류(06:49~07:16)는 meta loop의 부품에 해당한다.
 
 > ⚠️ **용어 충돌.** 같은 단어가 위키 안에서 다른 칸을 가리킨다.
 > - [[lauren-tan|Lauren Tan]]: *"cursor projects are my inner loop and grabbot[=GrokBot] is my outer loop"*([[tech-bridge-lauren-tan-pocock-podcast-full]] 42:55~43:00) — outer = **Slack·Sentry 같은 외부 신호를 구독해 일을 시작하는 루프**. Knox 틀에선 외부 신호(로그·이슈·사용자 피드백)를 보는 것이 **meta**이고, outer는 **PR 뒤 검사**다.

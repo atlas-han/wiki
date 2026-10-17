@@ -5,9 +5,9 @@ category: theory
 tags: [agi, superintelligence, definition, milestone, openai, nvidia, andrew-ng]
 related: [ai-jobs-impact, intelligence-as-infrastructure, compute-constrained-growth, agent-harness-design, sutton-bitter-lesson, regulatory-capture, one-continuous-exponential]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-white-house-superintelligence-panel, tech-bridge-hassabis-fry-creativity-future]
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # AGI 정의 논쟁 (AGI vs Superintelligence)
@@ -110,3 +110,7 @@ Huang의 *"AGI가 등장하더라도 모든 기업의 문제가 해결되는 것
 
 - **같은 패널 안에서 SI는 지금의 모델**(Claude로 하는 리서치, Opus 5.5)을 가리킨다 — 도달 선언이 아니라 **기존 제품의 개명**이다. Huang의 G20 *"이미 거의 AGI"* 와도 다른 층의 말이다.
 - ⚠️ 이 위키는 이 호칭 사용을 **능력 주장의 증거로 쓰지 않는다.** 검색 시 *"super intelligence"·"SI"* 가 이 소스에서는 *AI* 와 같은 뜻이다.
+
+## 정의하지 않는 창업자 (2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]])
+
+[[demis-hassabis|Demis Hassabis]]는 이 대담에서 AGI를 한 번(*"I was trying to build deep mind and AGI"* 07:29~07:31) 말하고 정의·이정표를 제시하지 않는다. 대신 두 시기(10년의 도구 → 그 뒤 자율화)와 *"the future is really not written"*(18:56~18:58)을 말하고, 질문을 **사회가 무엇을 가치로 삼을지**로 옮긴다 → [[human-provenance-value]].

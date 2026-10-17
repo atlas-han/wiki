@@ -3,11 +3,11 @@ title: "지연 도구 컨텍스트 (Deferred Tool Context)"
 type: concept
 category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
-related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform]
+related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server]
 created: 2026-10-02
-updated: 2026-10-10
+updated: 2026-10-16
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -70,7 +70,7 @@ updated: 2026-10-10
 
 [[composio|Composio]]의 [[sarah-simionescu|Sarah Simionescu]]: *"if you connect enough servers, you're dumping thousands of tool definitions straight into the context window. I mean, our GitHub like toolkit alone has over 200 tools. The model just drowns. it grabs the wrong tool or struggles to resolve dependencies and it can't figure out which one it needs to call first."*(03:58~04:17) — Factory가 든 실패(비슷한 도구 오선택) 위에 **의존성·호출 순서**를 더한다.
 
-답은 **Composio search**: 에이전트가 먼저 *"to state the task it wants to accomplish"*(05:08~05:13, 데모에선 Slack 메시지·Sentry 이슈·Datadog 로그 셋), 서비스가 과제마다 *"not only the correct tools it needs, but actually a plan of how to use them"*(05:20~05:27)을 돌려준다 — 예: Slack은 채널 ID를 먼저 찾아야 메시지를 조회할 수 있다(05:27~05:33).
+답은 **Composio search**: 에이전트가 먼저 *"to state the task it wants to accomplish"*(05:08~05:13, 데모에선 Slack 메시지·[[sentry|Sentry]] 이슈·Datadog 로그 셋), 서비스가 과제마다 *"not only the correct tools it needs, but actually a plan of how to use them"*(05:20~05:27)을 돌려준다 — 예: Slack은 채널 ID를 먼저 찾아야 메시지를 조회할 수 있다(05:27~05:33).
 
 | | Factory | Oracle([[toolbox-pattern]]) | Uber | **Composio** |
 |---|---|---|---|---|
@@ -79,6 +79,20 @@ updated: 2026-10-10
 | 순서·의존성 | 언급 없음 | 언급 없음 | 고정 골격 | **계획으로 함께 반환** |
 
 ⚠️ 데모는 화자 스스로 **목업**(*"a mockup demo"* 04:42~04:45). 계획을 누가 어떻게 만드는지, 검색이 빗나갈 때의 폴백은 발화되지 않는다. → [[agent-native-interface]]
+
+## 네 번째 답 — 하네스의 플래그: `deferred` + tool search (2026-10-14 · [[tech-bridge-codex-app-server]])
+
+[[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]] Codex): [[codex-app-server|App Server]]로 도구를 직접 정의할 때 *"you can actually mark them as deferred loading, which means that rather than injecting them into the system prompt, it uh allows Codex to use a tool search tool (…) but allows it to find these tools through tool search rather than polluting the uh overall context window."*(07:47~08:07) 그리고 팁 ②로 다시 — *"expose new um functions (…) But mark them as deferred. That way you're not polluting the context window unnecessarily (…) and instead still have them available for the agent without um necessarily confusing it."*(16:24~16:53) Codex app 자신도 자기 제어 함수(자동화 띄우기 등)를 이렇게 노출한다(16:30~16:40).
+
+| | Factory | Oracle | Uber | Composio | **Codex(OpenAI)** |
+|---|---|---|---|---|---|
+| 누가 만든 장치 | 하네스 사용자(제품) | 하네스 사용자 | 사내 플랫폼 | 도구 공급자 | **하네스 제작사 — 도구 정의의 플래그** |
+| 상시 컨텍스트 | 짧은 목록 | 없음 | 타입별 | 검색 도구 | tool search 도구(위키의 독해) |
+| 고르는 주체 | 모델 | 하네스 | 설정 | 공급자 | 모델(tool search 호출) |
+
+- ⚠️ tool search의 동작(검색 방식, 짧은 설명을 쓰는지, 찾지 못할 때)은 *"we'll cover more tomorrow in the other session"*(07:56~07:58)으로 미뤄져 이 소스에 없다. 측정치도 없다.
+- 이 페이지의 첫 우려(*비슷한 이름의 도구를 잘못 고른다*)에 대해 화자는 *"without um necessarily confusing it"* 이라고만 말한다.
+- ⚠️ ko는 *"available for the agent"* 를 **"에이전트가 사용할 수 없음"**(16:50)으로 뒤집는다. `en`은 deferred를 *"lazy-loaded"*, tool search를 *"tool lookup tool"* 로 옮긴다.
 
 ## References
 

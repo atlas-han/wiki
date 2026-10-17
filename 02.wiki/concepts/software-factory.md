@@ -3,11 +3,11 @@ title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production]
 created: 2026-10-02
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -224,3 +224,21 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 - Factory(신호 → 검증 → 학습의 루프)·Warp(SDLC 그 자체)·Tessl(위 세 번째 정의)에 이은 **네 번째 화자, 이번엔 범용 하네스 제작사.** 정의를 따로 주지 않고 **조립 라인 은유**만 쓴다.
 - 사람의 자리: *"we do still want humans in the loop like where they need to be"*(1:03:44~1:03:48) — Kent Beck의 *"다크 팩토리는 언제나 탈선한다"* 와 Lauren Tan의 *"It kind of is"* 사이에서 **"필요한 곳에만"** 으로 선다(위키의 독해).
 - ⚠️ 당사자 진술. ko는 PR을 **"홍보"**(54:42, 54:56)로 옮긴다.
+
+## 반론 3 — "unattended models will not improve or maintain your code base quality" (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+[[dex-horthy|Dex Horthy]]([[humanlayer|HumanLayer]]): 공장은 AI 이전부터 있었다 — *"software factory is not an AI thing. This has been around since 1968."*(02:24~02:27, 출처 미제시). 2022년형 공장(트래커 → 빌드 → 테스트 → PR → CI·사람 리뷰 → 카나리 → 사용자 피드백 → 모니터링)에서 agentic형은 **builder 한 칸만** 바뀌었고 리뷰는 여전히 병목이다(04:31~04:47). 그 끝의 *"lights-off software factory"*(04:49~04:50, `en`·ko는 *"dark"*)에 대한 판정: *"unattended models will not improve or maintain your code base quality over time."*(05:17~05:23) 원인은 *"maintainability has no fast oracle"*(06:13~06:15) — RL이 좋은 아키텍처를 보상하지 못한다. 근거로 [[slopcodebench|SlopCodeBench]](GPT-5.5 14.8%, 06:53~06:59)와 Steve(Gas Town)의 입장 변화(08:33~08:43). 결론 *"for now we should probably read the code"*(09:03~09:07). 다만 *"theoretically, if you invest into all this other stuff, you could like, probably get uh, close to a place where where this would actually work"*(05:03~05:11) — **원리적 불가능이 아니라 "지금은 아니다"**. Kent Beck(반론 2)과 같은 편이고, Lauren Tan의 수용(*"It kind of is"*)과 반대 → ⚠️ Contradiction 유지. 처방은 공장에 사람의 관행을 다시 까는 "12 factor factories"(실제 9개): [[expected-pain-planning]] · 시각적 정렬 · [[back-pressure]] · anti-slop 규칙 · 피드백·인시던트 → 에이전트 PR · feature flag 실험 · 세션에서 compound. 도구 쪽은 [[agent-platform-layers]].
+
+## 같은 회사의 두 번째 정의 — 도입 순서·조직 축·표면 비종속 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"the software factory, which is the system of agents that will take you from input signal to production deployment."*(06:11~06:20) 골격은 Tereza 판본과 같다. *"coding was the easy part. This actually was never the bottleneck."*(04:48~04:53)이라고 하고, 추상화 사다리(*"From tokens to files to context, now to entire systems."* 01:33~01:38)도 같다. 새로 더하는 것은 셋이다.
+
+- **도입 순서**: *"you don't want to jump into that all at once"*(06:54~06:57). 첫걸음은 *"start with something narrow and verifiable, like incident triage"*(07:06~07:09)이고, 루프는 마지막이다: *"You want to automate the individual pillars first before you turn this system into a loop."*(15:11~15:17) → [[agent-trust-curve]]
+- **조직 축**: *"your software factory should take this pain from O of N to O of 1 conservatively."*(11:24~11:30) 가드레일·에이전트·문서·테스트 정책을 *"just one time"* 정의해 조직 전체에 표준화한다(11:32~11:44). 기준은 *"everyone is pulled to the highest bar, not the lowest common denominator."*(11:49~11:53)
+- **표면 비종속**: *"even though humans and agents may use different surfaces, everything should share the same underlying harness and context."*(12:54~13:02)
+
+바탕에는 [[agent-readiness]] **8기둥**이 있다. 잴 것은 *"outcomes, not tokens"*(16:18~16:22)다 → [[trusted-throughput]]
+
+> ⚠️ **Contradiction(같은 회사 안): 3원칙이 다르다.** Tereza(10-01 업로드)의 3원칙은 **agnostic · autonomous · always improving**, Palmie(10-15 업로드)의 3원칙은 **model agnostic · sovereign deployment · SDLC 통합**이다. 겹치는 것은 비종속 하나뿐이다. *autonomous* 자리에 배포 주권이, *always improving* 자리에 SDLC 통합이 들어간다. 두 발표 모두 *"principles"* 라고 부르며 서로를 언급하지 않는다. 회사의 공식 프레임이 바뀐 것인지 청중에 맞춘 것인지는 알 수 없다.
+
+> ⚠️ **사람의 자리.** Palmie는 *"Humans need to stand as validation gates in this factory"*(15:51~15:55)라고 하고 *"Engineers will not be replaced, but judgment and prioritization now beat mechanical implementation skill."*(15:36~15:43)이라고 한다. Tereza의 루프 밖 감독자보다 이 페이지의 Warp 쪽(사람 게이트)에 가깝다. 다만 *"code does not have to be written by hand"*(16:01~16:03)라고 할 뿐 코드를 읽으라고는 하지 않는다. 그 점에서 Horthy 편의 *"for now we should probably read the code"* 와 갈린다. 벤더 발표이고 측정은 없다.

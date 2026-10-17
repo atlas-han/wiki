@@ -5,9 +5,9 @@ category: technique
 tags: [agent-safety, attack, llm-security]
 related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Prompt Injection
@@ -59,6 +59,8 @@ updated: 2026-10-09
 처방은 공급망 위생이다 — **공식 출처**(Google의 Flutter·Dart 스킬, 공식 패키지 maintainer 스킬: "위험이 낮거나 0에 가깝다"), 아니면 **내용을 읽을 것**, 첫 검색 결과를 받지 말 것. [[agent-skills]]의 거버넌스 표가 "Security"로 한 줄 적어둔 부채가 개인 수준에서 어떻게 생기는지 보여준다.
 
 [[anthropic-managed-agents]]의 토큰 격리(자격증명을 샌드박스 밖에)는 이 벡터에도 유효하다 — 스킬이 키를 훔치려 해도 잡을 게 없어야 한다. 즉 **읽기 전 검사**(출처·내용)와 **성공해도 무해**(격리)가 양쪽에서 필요하다.
+
+**두 번째 증언과 내부 생성 스킬로의 확장 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]]).** [[runlayer|Runlayer]]의 [[rafal-wilinski|Rafal Wilinski]]: `npx skills` 는 *"not just a skill but also free prompt injections. um a wild script that requires root permissions and someone else's API key all in one run. Trust me at run layer we are scanning thousands of skills every day and there is really weird stuff inside."*(06:04~06:18, ⚠️ 수치·사례 없음). 같은 회사는 **에이전트 트레이스에서 자동 증류한 스킬**에도 *"whether it's not containing some kind of prompt injection or maybe PII"*(15:22~15:27) 검사를 건다. 공급망 검사를 외부 스킬에서 내부 생성 스킬로 넓힌 첫 사례다. 다만 사람 리뷰 없이 전사에 배포한다 → [[run-trace-skill-distillation]]. ⚠️ ko는 두 자리 모두에서 prompt injection을 "주사"·**"신속 주사"** 로 옮겨 경고가 읽히지 않는다.
 
 ## 네 번째 벡터: 공유 사일로·위키 (2026-09-10)
 

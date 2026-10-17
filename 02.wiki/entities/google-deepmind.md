@@ -4,10 +4,10 @@ type: entity
 category: org
 tags: [frontier-lab, google, commerce, multimodal, agent]
 links:
-  - https://deepmind.google/
-sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics]
+  - "https://deepmind.google/"
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics, tech-bridge-hassabis-fry-creativity-future]
 created: 2026-09-04
-updated: 2026-09-11
+updated: 2026-10-16
 ---
 
 # Google DeepMind
@@ -46,6 +46,19 @@ Google의 AI 연구·제품 조직. 본 위키에 **Google 계열 조직 페이�
 ## Google의 다른 조직 (2026-09-11)
 
 [[google-cloud|Google Cloud]] 페이지가 생기면서 이 페이지는 더 이상 유일한 Google 조직 페이지가 아니다. 두 조직의 축이 다르다 — DeepMind는 **연구·소비자 에이전트**([[fuzzy-intent-discovery]]·[[bayesian-inference]]), Google Cloud는 **인프라·플랫폼**([[mcp-toolbox-for-databases]]·[[secure-tool-evolution]]). 이 위키에 Google 모회사 페이지는 없다.
+
+## 창업자 축 (2026-10-13 ingest · [[tech-bridge-hassabis-fry-creativity-future]])
+
+[[demis-hassabis|Demis Hassabis]]의 1인칭 대담(RSA, 진행 [[hannah-fry|Hannah Fry]])이 들어오면서 **창업자 목소리**가 처음 생겼다. 직원 소스(커머스 에이전트·불확실성)와 달리 조직의 **기원과 노선**을 말한다.
+
+- **기원 서사**: 게임 디자인(Elixir Studios를 AI 연구의 *"Trojan horse"* 로 04:35~04:44) → 신경과학 박사(상상력) → MIT 포스닥 중 설립(31:51~31:56). *"if you didn't realize I was trying to build deep mind and AGI then it would look a bit strange"*(07:26~07:31).
+- **다학제 팀**: *"The engineering informs the research and the research informs the next part of the engineering and that's why things like Alpha Fold and Alph Go were successful."*(06:58~07:07) — AlphaGo가 이 위키에 처음 언급된다.
+- **예술가 공동 설계 노선**(당사자 진술): *"We've gone a different path for some of our other competitors where we've tried to build build tools in collaboration with top artists"*(12:50~12:57) — Darren Aronofsky, Eve Online 개발사(회사명 미발화). 산출물은 발화되지 않는다.
+- **상업화 순서에 대한 유보**: *"it became commercial earlier than I thought I would have done more scientific and alphafold type things first um and then gone to the more commercial chat bots"*(37:24~37:33).
+- **런던 본거지**: Heatherwick이 *"your decision to not base yourself over in California"*(27:25~27:29)를 칭찬, 하사비스는 런던을 *"the most multi-disiplinary city in the world"*(34:09~34:11)로.
+- 설립 당시 MIT 교수들의 반대: *"this new learning type of approach (…) it will never work it was tried in the 80s at MIT"*(32:05~32:08) → *"it just boiled down to dogma"*(32:16~32:18).
+
+> ⚠️ 진행자 Hannah Fry와 [[tech-bridge-uncertainty-mathematics]] 팟캐스트 진행자 "Hannah"(위 "연구 축")의 동일인 여부는 판독하지 않았다 — 두 소스에 연결 근거 없음.
 
 ## References
 

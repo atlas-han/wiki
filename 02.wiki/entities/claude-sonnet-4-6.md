@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, sonnet, classifier]
 aliases: [Sonnet 4.6]
-sources: [anthropic-claude-code-auto-mode]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-runlayer-self-improving-skills-mcp]
 links: []
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-10-16
 ---
 
 # Claude Sonnet 4.6
@@ -25,6 +25,10 @@ updated: 2026-05-25
 
 - 직전: [[claude-sonnet-4-5]]
 - 같은 세대 상위: [[claude-opus-4-6]]
+
+## 자기 개선 에이전트 사례의 실행 모델 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[runlayer|Runlayer]]의 36% → 100% 사례에서 실행 모델로 쓰였다: *"we were trying to do that using sonet 4.6. So not the most intelligent model but sometimes it succeeded"*(12:42~12:49). 태스크는 AWS Lambda 안에서 Chromium fork를 실행하는 것이었다. ⚠️ 단일 태스크이고 실행 횟수는 발화되지 않았다. 스킬을 증류한 *"frontier LLM"* 은 특정되지 않았다. ko는 *"sometimes it succeeded"* 를 **"때로는 성공적이지 못하다"**(12:47)로 뒤집는다.
 
 ## References
 

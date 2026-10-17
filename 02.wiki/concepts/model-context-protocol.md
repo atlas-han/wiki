@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
-related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure]
+related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure, mcp-skill-distribution]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-05-25
-updated: 2026-10-10
+updated: 2026-10-17
 ---
 
 # Model Context Protocol (MCP)
@@ -87,7 +87,7 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 
 이 위키는 [[tech-bridge-agent-knowledge-four-ways|IBM 편]]에서 둘의 분업을 *스킬 = 따라야 할 절차, MCP = 그 절차를 수행할 외부 접근* 으로 정리했다. 이 소스는 그 분업이 **유통 단위에서는 합쳐진다**는 것을 보여준다 — 도구를 주는 쪽이 *그 도구를 쓰는 법* 도 함께 준다.
 
-목록에 오른 것: **Atlassian · Datadog · Figma · Google(Drive · Calendar · Gmail) · granola · PagerDuty · Sentry.**
+목록에 오른 것: **Atlassian · Datadog · Figma · Google(Drive · Calendar · Gmail) · granola · PagerDuty · [[sentry|Sentry]].**
 
 **클라우드 승계** — [[cursor-cloud|cursor cloud]]의 원격 에이전트도 **로컬에서 쓰던 MCP를 그대로 연결**할 수 있다. 자체적으로 **cursor cloud MCP**가 있어 실패한 실행과 환경을 진단하는 데 쓴다.
 
@@ -215,3 +215,17 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 - 처방은 MCP를 버리는 게 아니라 **MCP·CLI·네이티브 도구 위에** 에이전트용 층을 짓는 것(*"we build on top of MCP, CLI, and native tools"* 06:52~06:55) — 위 *"MCP → CLI+스킬"* 논쟁을 전송 계층의 선택으로 내린다.
 - ⚠️ **벤더 비교**: Composio vs *"each app's own native MCP that's listed in the clawed[=Claude] uh marketplace"*, 같은 과제·같은 모델, *"a clear difference"*(06:16~06:32) — **미공개 초기 결과, 수치 미발화, 당사자 진술.**
 - [[greg-brockman|Brockman]]의 *"세상을 다시 도구화"* 절과 반대 방향: 그는 MCP 층을 과도기로, Simionescu는 **불충분하니 더 깊이** 지을 것으로 본다.
+
+## 2026-10-13 — MCP가 스킬을 운반한다: "skills over MCP" ([[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])는 스킬 도입기의 MCP 사망론(*"thank god MCP is finally dead because I'm not interested in dealing with oath[=OAuth]. I can now hardcode a bunch of CLI commands um hardcode my API key inside markdown file and call it a progress"* 07:19~07:30)을 *"everyone missed the point"* 로 기각한다. 그가 보는 MCP의 역할은 두 가지다. 도구(능력)를 주고, 동시에 **스킬(지식)의 배포 계층**이 된다(07:41~07:51) → [[mcp-skill-distribution]]
+
+- *"there's already a working group called skills over MCP and while the exact API is not final direction is clear"*(08:28~08:36)
+- *"the official spec is leaning towards MCP resources the support for resources is also mixed. So we are going with tools."*(08:43~08:51) — resources 지원이 클라이언트마다 엇갈린다는 실무 진술이다.
+- 09-08 분업(스킬 = 무엇을, MCP = 할 수 있게)을 한 단계 더 밀고 간다. 09-27 "MCP → CLI + 스킬"과는 방향이 반대다. ⚠️ 화자 회사가 MCP gateway를 운영한다.
+
+## 2026-10-17 — "표준은 있는데 다들 다른 버전을 따른다", 그리고 MCP gateway의 기능 ([[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"there's a standard, but everybody follows a different version of that standard. Uh you know, you can tell exactly when an MCP server was built by exactly how they decided to do off[=auth]."*(13:05~13:14) 그는 이것을 *"a great uh you know, kind of archaeology lesson"*(13:18~13:20)이라 부른다. 대응은 auth를 게이트웨이에 모으고 일반 API를 MCP로 재노출하는 것이다(12:33~12:43). 바로 위 Runlayer 편에 이어 MCP gateway가 다시 나오는데, **기능(auth 주입·API → MCP 재노출·팀별 권한)이 발화된 것은 처음**이다 → [[ai-gateway]]
+
+데이터 층을 MCP와 동일시하지도 않는다: *"this is MCP for a lot of people, but in reality it's, you know, CLI or APIs or really just any way that you get data"*(06:03~06:10). ⚠️ 벤더 발표.

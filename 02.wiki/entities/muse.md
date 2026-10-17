@@ -3,9 +3,9 @@ title: Muse
 type: entity
 category: product
 tags: [meta, personal-agent, virtual-machine, privacy, agent-memory]
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-09-14
-updated: 2026-09-17
+updated: 2026-10-16
 ---
 
 # Muse
@@ -99,6 +99,7 @@ updated: 2026-09-17
 ## References
 
 - [[tech-bridge-zuckerberg-muse-personal-agent]] · [[meta]] · [[mark-zuckerberg]]
+- [[tech-bridge-alexandr-wang-muse-launch]] · [[alexandr-wang]] · [[muse-wonder]]
 - 개념: [[confidential-vm]] · [[sentinel-agent]] · [[least-privilege-connectors]] · [[agent-fleet-learning]] · [[transaction-cut-monetization]] · [[discretion-capability]] · [[personal-superintelligence]] · [[goal-level-delegation]]
 - 비교: [[grokbot]] · [[town]] · [[openclaw]] · [[claude-code]] · [[cursor-cloud]]
 
@@ -162,3 +163,17 @@ updated: 2026-09-17
 - **[[rare-disease-long-tail|희귀 질환 롱테일]]** — 롱테일 관찰 자체는 앞 편(17:43~18:16)에 있다. 이 편이 더하는 것은 **출처([[biohub|Biohub]])** 와 **시장 실패의 구조**, 그리고 **개인 맞춤 치료 설계**라는 주장이다. ⚠️ **검증·규제·책임이 한 마디도 없다.**
 
 ⚠️ **이번 편에도 사용자 수·가격·정확도·베타 규모가 없다.** 수치는 **주당 1억 토큰** 하나뿐이고, 그것도 앞 편과 같은 값이다.
+
+## 세 번째 소스 — Alexandr Wang 인터뷰 해설 (2026-10-15)
+
+[[tech-bridge-alexandr-wang-muse-launch]]: Tech Bridge의 **한국어 해설 + 원본 인터뷰 발췌** 형식이다. 원본은 David Senra × [[alexandr-wang|Alexandr Wang]](2026-10-11)이다. **Zuckerberg가 아닌 Meta 인물의 첫 Muse 소스**이고, **자막에 잡힌 원음은 약 2분**이며 나머지는 해설이다.
+
+- ⭐ **첫 실패 서술.** 앞 두 편은 *"실패·오작동 사례가 0건"* 이었다. 이 편에는 (해설) *"a prototype that kept breaking"*(00:20~00:22)과 *"it broke more often than it worked"*(02:19~02:21)가 있고, (원음) *"green on 80 of the rows but red on 20 of the rows. We knew that wasn't good enough."*(05:31~05:36)가 있다. 둘 다 출시 **전**의 일이다 → [[launch-blocking-evals]]
+- ⭐ **첫 이용자 수, 그러나 해설 전언.** *"Alexander Wang said Muse has millions of users"*(00:09~00:11, 해설). 원음이 없고, 설명란도 집계 기준·기간이 미확인이라고 적는다. 위 *"사용자 수 … 하나도 없다"* 는 **"해설 전언 1건(millions)"** 으로 고친다.
+- **출시**: *"about a month after its launch"*(해설) 인터뷰. 출시일 2026-09-08은 설명란 링크(Meta 공식 발표)에서만 온다. 시제품에서 출시까지 *"seven months"*(해설).
+- **포지셔닝**: (원음) *"Consumer AI. It's not work. It's not coding. It's personal."*(03:12~03:27). ⚠️ 화자 구분은 미확정이다.
+- **Jolly Bot**: Muse의 캐릭터. (원음) 첫 시제품에 이미 있었다(*"The Jolly Bot was there"* 02:03~02:06). (해설) 공유 화면에 보이게 해 이름을 기억시켰다(06:21~06:30). 철자는 en-orig에서 *Jolly/Jolie* 로 갈려 미확정이다 → [[agent-persona-naming]]
+- **보안 서술(해설 — Meta 공식 소개 요약)**: 별도 가상 머신의 브라우저, 이메일 발송·구매 전 사용자 확인, 앱 접근 권한은 사용자가 정한다(07:45~07:57). 위 네 겹 서술과 **어긋나지 않는다.**
+- **새 모델**: 인터뷰 다음 날 [[muse-wonder|Muse Wonder]]가 나왔다. Meta model API·**Muse Code**·Wonder Full이 함께 나오고, Muse 앱 탑재는 향후다(해설).
+
+> ⚠️ **Contradiction(약): "not coding" vs "결국 코딩".** Wang 쪽 원음은 *"It's not coding"* 이고, 위 Zuckerberg의 서술은 *"개인 에이전트에서 말하는 것 상당수가 결국 코딩으로 환원된다"* 이다. 그리고 한 달 뒤 Muse Wonder·Muse Code가 코딩을 돕는다. 앞쪽은 포지셔닝 층, 뒤쪽은 모델 능력 층일 수 있다(위키의 관찰).

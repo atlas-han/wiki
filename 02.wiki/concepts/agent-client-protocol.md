@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [protocol, harness, client, interoperability, json-rpc, standards]
 aliases: [Agent Client Protocol, 에이전트 클라이언트 프로토콜]
-related: [model-context-protocol, agentic-stack-decomposition, standards-as-market-makers, agent-harness-design, cloud-agent-delegation, goose, zed, jetbrains, spec-driven-development]
+related: [model-context-protocol, agentic-stack-decomposition, standards-as-market-makers, agent-harness-design, cloud-agent-delegation, goose, zed, jetbrains, spec-driven-development, codex-app-server, embedded-agent-harness]
 first-seen: tech-bridge-acp-universal-remote
-sources: [tech-bridge-acp-universal-remote, tech-bridge-sdd-full-course]
+sources: [tech-bridge-acp-universal-remote, tech-bridge-sdd-full-course, tech-bridge-codex-app-server]
 created: 2026-09-13
-updated: 2026-09-27
+updated: 2026-10-16
 ---
 
 # ACP (Agent Client Protocol)
@@ -69,6 +69,21 @@ updated: 2026-09-27
 - **설계 계보** — *"the protocol matches what's used in LSP"*(59:33~59:34). 범위는 *"next edit suggestion in the editor and plan mode"*(59:40~59:43)까지 덮는다고 한다. 로컬에 **커스텀 에이전트**를 써서 붙일 수도 있다(59:45~59:51).
 
 > ⚠️ **위의 빈자리는 그대로다.** registry가 설치까지 자동화하는데도 **인증·신원·설치 대상의 신뢰**를 강좌가 말하지 않는다. 같은 강좌가 플러그인에 대해서는 *"plugins can execute code. So, make sure you trust them"*(54:36~54:40)이라고 경고하지만 **registry 설치에는 같은 경고를 붙이지 않는다.** ⚠️ **당사자 시연** — ACP 공동 제안사(JetBrains)의 강좌이고 JetBrains IDE로 시연한다.
+
+## 비교 대상 — Codex App Server (2026-10-14 · [[tech-bridge-codex-app-server]])
+
+이 페이지의 소스는 지금까지 ACP를 **채택한 쪽**(Goose, JetBrains)뿐이었다. 처음으로 **나란히 선 다른 프로토콜**이 ACP를 언급한다. [[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]]): [[codex-app-server|App Server]]는 *"if you've ever looked into something like agent client protocol, this is a very similar concept"*(01:07~01:12)이고, 차이는 이렇다 — *"that's a bit different to ACP where it's a more more uh generic protocol we can actually give you more control over the individual parts of the harness"*(06:04~06:13).
+
+| | ACP | Codex App Server |
+|---|---|---|
+| 범위 | 여러 하네스 ↔ 여러 클라이언트 | 한 하네스(Codex) |
+| 제어 | capability 집합 + `_` 확장 | developer instructions, deferred 도구, 스레드별 모델·샌드박스, *"over 120"* 메시지 |
+| 전송 | JSON-RPC, stdio + HTTP/WebSocket | JSON-RPC 스타일, stdio · WebSocket |
+
+- 위키의 정리: 둘은 같은 방향(클라이언트 → 하네스)이다. 갈리는 것은 **일반성 vs 깊이**다. 이 페이지 서두의 "브라우저 하나" 비유로 보면 App Server는 **한 하네스 전용의 풍부한 API**다.
+- ⚠️ Codex가 ACP를 지원하는지, App Server가 ACP를 대체하려는지는 발화되지 않았다. 경쟁 프로토콜에 대한 **한쪽 서술**이다.
+- ⚠️ 위 *"보안 모델이 없다"* 빈자리는 App Server 쪽에서도 채워지지 않는다(인증은 *sign in with ChatGPT* 만 발화).
+- ⚠️ ko는 이 비교를 **"ACP로 가는 것은 더 나은 것입니다"**(06:05)로 바꾼다. 인용은 en-orig.
 
 ## References
 

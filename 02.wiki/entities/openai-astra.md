@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory]
 links: []
 created: 2026-09-06
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Astra (OpenAI)
@@ -141,3 +141,7 @@ updated: 2026-10-11
 - *"Astra is so good at Blender, so good at 3D modeling"* (03:40~03:45). Microsoft Paint로 스케치하는 것도 볼 수 있다(03:51~03:54).
 - 친구가 Astra로 게스트하우스 CAD 도면을 만들어 시공업자에게 넘겼다(03:58~04:07, 전언).
 - 영상 후반 작업에 *"so many good use cases of Astra"* 가 있다고 *들었다* (06:56~06:59).
+
+## 첫 벤치마크 상대값 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+[[dex-horthy|Dex Horthy]]: *"here's the numbers by the way on Astra and Sol X I. Astra is one percentage point or 1.5% percentage points higher than GPT-5.5."*(08:43~08:51) — 문맥상 [[slopcodebench|SlopCodeBench]](GPT-5.5 = 14.8%), ⚠️ 1 vs 1.5 미확정, 벤치마크 이름은 그 문장에 없다. *"Sol X I"*(`en` *"Sol X High"*)는 판독 보류 — 이 페이지의 *Soul* 등급명과 **동일시하지 않는다.** 앞서 *"even Astra and Fable"*(07:33)은 문장이 끊긴다. 이 위키에서 Astra에 붙은 **첫 수치**지만 제3자(화자)의 화면 읽기다.

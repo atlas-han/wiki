@@ -6,9 +6,9 @@ tags: [ride-hailing, mobile, monorepo, debugging-agent, platform-engineering]
 aliases: [우버, Uber Technologies]
 links:
   - https://www.uber.com
-sources: [tech-bridge-uber-debug-assist, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production]
 created: 2026-10-09
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # Uber
@@ -38,3 +38,7 @@ updated: 2026-10-12
 - [[tech-bridge-uber-debug-assist]] — first-seen
 - [[debug-assist]] · [[kriti-dangi]]
 - [[tech-bridge-stigg-ai-companies-building-banks]] · [[tech-bridge-kimchi-cost-per-task-harness]] — AI 예산 소진(제3자 주장)
+
+## 세 번째 판본 — "by April" 헤드라인 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"We've all seen the headlines about Uber's CTO blowing through the year's AI budget by April"*(02:45~02:50). 기간은 Kimchi 편의 *"in the last four months"* 와 맞고(1~4월), Stigg 편의 *"just a few weeks into the year"* 와는 여전히 어긋난다. ⚠️ 출처 미제시(*"headlines"*), CTO 이름 미발화. 세 판본 모두 벤더 발표 안의 제3자 주장이다.

@@ -4,11 +4,11 @@ type: entity
 category: tool
 tags: [benchmark, agent-eval, terminal, containerized, verifier]
 aliases: [Terminal-Bench, Terminal-Bench-2.0, TB2]
-sources: [self-harness-paper]
+sources: [self-harness-paper, tech-bridge-horthy-state-of-software-factory]
 links:
-  - https://arxiv.org/abs/2601.11868
+  - "https://arxiv.org/abs/2601.11868"
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-10-16
 ---
 
 # Terminal-Bench-2.0
@@ -30,6 +30,8 @@ updated: 2026-06-14
 ## 미해결 사항
 
 - TB1 대비 2.0 변경점, 전체 task 분류, leaderboard (별도 소스 필요)
+
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) **포화의 예**로 인용: *"when you see terminal bench scores and everyone's getting 95% of it saying coding is solved"*(06:59~07:05) — ⚠️ 버전·출처 미발화, 수사적 진술. 대비 대상은 [[slopcodebench]]. `en`·ko는 *"final exam"*/"기말고사"로 이름을 잃는다.
 
 ## References
 

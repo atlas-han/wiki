@@ -5,10 +5,11 @@ category: org
 tags: [coding-agents, software-factory, droid, model-routing, enterprise, agent-platform]
 aliases: [Factory, Factory AI, factory.ai]
 links:
-  - https://factory.ai
-sources: [tech-bridge-factory-software-factory]
+  - "https://factory.ai"
+  - "https://factory.com"
+sources: [tech-bridge-factory-software-factory, tech-bridge-factory-bug-report-to-production]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-17
 ---
 
 # Factory (factory.ai)
@@ -37,3 +38,18 @@ updated: 2026-10-02
 ## References
 
 - [[tech-bridge-factory-software-factory]] · [[tereza-tizkova]] · [[software-factory]] · [[automatic-model-routing]] · [[deferred-tool-context]] · [[agent-readiness]] · [[adobe]]
+
+## 두 번째 화자 — 3원칙의 교체, 8기둥, 결과 지표 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]](member of technical staff, 자막에서 자기소개. 전 Lumetric 공동 창업 — *"acquired by Factory"* 00:09~00:15). 자사 진술(⚠️ 전부 당사자):
+
+| 항목 | en-orig |
+|---|---|
+| 모델 비종속 | *"At Factory, you're not locked into a single model provider."*(02:58~03:01) |
+| 배포 | *"We support everything from fully managed to bring your own machine to entirely air-gapped."*(09:00~09:06) |
+| 표면 | *"we have agents available everywhere, from remote machines to the CLI to Slack, any tool your teams use."*(12:46~12:54) |
+| agent readiness | 8기둥(13:23~14:18) → [[agent-readiness]] |
+| 감사·권한 | *"every action is auditable. It operates under your standards with role-based access control and least privilege, for example."*(14:50~14:57) |
+| 지표 | signal to production time · human intervention count · median time to repair · shelf life of code · cost per PR(16:59~17:10) |
+
+⚠️ 3원칙이 Tereza 판본과 다르다([[software-factory]]의 Contradiction 박스). CEO는 *"As our CEO likes to say"*(03:17)로만 나오고 이름은 미발화다. 이번 설명란의 회사 링크는 `https://factory.com` 이다(열어 보지 않음). 위 `factory.ai`(10-02 설명란)와 다르고, Tereza 편 자막도 *"factory.com"* 으로 들렸다. 어느 쪽이 정식 도메인인지는 확인하지 않았다.

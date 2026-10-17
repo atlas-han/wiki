@@ -6,9 +6,9 @@ tags: [platform, subscription, pricing, app-developer, token-economics, openai, 
 aliases: [BYO subscription, bring your own subscription, 구독 연동, 구독 이동]
 related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth, reserve-then-settle]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server]
 created: 2026-10-09
-updated: 2026-10-12
+updated: 2026-10-16
 ---
 
 # 구독을 들고 다니기
@@ -46,6 +46,8 @@ Altman은 이를 플랫폼 철학 안에 놓는다 — *"let people build apps i
 - 빠지는 것: *"the ones that need to live on your computer like computer use are, you know, not going to be there"*(59:26~59:31).
 
 > ⚠️ ko는 App Server를 **"섬기는 사람"**(59:05, 59:35), open source를 **"영업 중"**(1:01:09)으로 옮긴다.
+
+**두 번째 OpenAI 1인칭과 실제 사례 (2026-10-14 · [[tech-bridge-codex-app-server]]).** [[dominik-kundel|Dominik Kundel]]: *"you can have signin with chat GPT as part of that meaning that if someone is using your app they can still bring their own chat GPT subscription and it goes off their codeex uh use usage limit. So if you've used something like T3 code or similar, you're actually using that."*(06:18~06:36) — 차감 대상은 **사용자 자신의 Codex 사용 한도**다. Charlie의 *"Chat GBT token budget"* 과 같은 방향이고, 실사용 앱(T3 Code, ⚠️ ASR *"T3 code"*)이 처음 이름으로 나온다. 그리고 Python SDK가 sign in with ChatGPT를 쉽게 붙여 준다(10:28~10:33). ⚠️ **`en`·ko 공유 반전** — *"this won't affect your Codex usage limits"* / "사용량 제한에 영향을 미치지 않습니다"(06:29). 자막 번역으로 읽으면 이 페이지와 충돌하는 것처럼 보이지만, **en-orig로 보면 충돌이 아니다.**
 
 ## 반대 방향의 사건 — 서드파티 에이전트의 구독 사용 차단 (2026-10-12 · [[tech-bridge-stigg-ai-companies-building-banks]])
 

@@ -6,9 +6,9 @@ tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
 related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-09-14
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 최소 권한 커넥터
@@ -77,3 +77,11 @@ updated: 2026-10-09
 [[jensen-huang|Jensen Huang]]: *"the only information, the only tools, the only rights you will give to AI are the ones that it deserves because its capabilities deserve it. And so the first thing that you do with an AI is you say, I give you no rights. (…) minimal rights, minimal access, minimal everything. based on the job that I want you to do and your capabilities, I would give you more rights, more tools, more access."*(17:23~17:51)
 
 Zuckerberg 편의 *"읽기 전용으로 시작한다"* 와 같은 출발점(0에서 시작)이고, **확대 조건을 명시**한다 — **일(job)과 능력(capabilities)**. 커넥터 단위가 아니라 *정보·도구·권리* 전체를 한 말로 묶는다. ⚠️ 능력을 무엇으로 재는지는 없다. 행동 증거로 넓히는 [[agent-trust-curve]]와 비교.
+
+## 네 번째 서술 — Meta 공식 소개의 2차 요약 (2026-10-15 · [[tech-bridge-alexandr-wang-muse-launch]])
+
+Tech Bridge 해설이 Meta의 Muse 소개를 이렇게 요약한다. *"Muse is designed to use a browser on a separate virtual machine and ask for user confirmation before sending emails or making purchases. It is a structure where users also define the access permissions for required apps."*(07:48~07:57, 해설). Zuckerberg 편의 *"이메일은 읽기 전용으로 시작"*·*"로그인·결제·민감 정보 전송은 매번 승인"* 과 같은 원칙이다. ⚠️ 화자 발화가 아니라 해설이 Meta 자료를 요약한 것이고, 이 위키는 원 자료를 열어 보지 않았다.
+
+## 팀 신원별 커넥터 권한 — 게이트웨이에서 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"the marketing team, you know, they get access to Google Calendar and Gmail, but the engineering team will also get access to GitHub."*(13:31~13:36) 같은 엔지니어링 안에서도 쓰기와 읽기 전용을 나눈다(13:42~13:47). [[ai-gateway]]는 커넥터 권한을 에이전트가 아니라 **사람·팀 신원**에 묶는다. 커넥터는 chat UI가 아니라 게이트웨이에서 설정된다(15:26~15:34). ⚠️ 벤더 진술이고 화면 데모를 전제한다.

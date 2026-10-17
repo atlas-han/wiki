@@ -6,9 +6,9 @@ tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
 related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 created: 2026-09-13
-updated: 2026-09-18
+updated: 2026-10-16
 ---
 
 # 검증 비용의 비대칭
@@ -67,3 +67,5 @@ updated: 2026-09-18
 → [[all-or-nothing-accuracy]]. 세 소스가 서로를 언급하지 않는다. 그리고 이 렌즈가 성립하려면 **수용 기준이 확정된 작업**이어야 한다(P&L) — [[task-entropy-matrix]]의 낮은 엔트로피 칸이다.
 
 > ⚠️ 검증자의 독립성 빈자리가 **네 번째로** 반복된다 — 이번 소스도 *누가 100%를 판정하는가* 를 말하지 않는다.
+
+> ⚠️ **Contradiction(약) (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])**: [[gabriel-martinez|Gabriel Martinez]]는 일반 명제로 *"Generation is cheap, but evaluation is expensive."*(10:05~10:08)라고 말한다. 이 페이지의 "검증이 실행보다 싼 작업"과 표면상 반대다. 두 주장은 범위가 다르다. Piras는 검증이 싼 작업을 **고르라**고 하고, Martinez는 큰 PR·20페이지 문서처럼 지금 **검증이 비싼 모양으로 나오는 산출물**을 묘사한다. Martinez의 처방(작게 쪼개기, [[compressed-review-surface]])은 **작업의 모양을 바꿔 비대칭을 만들라**는 것으로 읽힌다.

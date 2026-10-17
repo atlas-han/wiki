@@ -7,9 +7,9 @@ links:
   - "https://x.com/charlierguo"
   - "https://www.linkedin.com/in/charlierguo"
   - "https://www.ignorance.ai/"
-sources: [tech-bridge-cooking-with-codex]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-codex-app-server]
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Charlie Guo
@@ -28,6 +28,8 @@ updated: 2026-10-11
 - 받아쓰기·appshot을 *"heavily underused"* 라 부른다(17:35~18:28). 어려운 대화의 끝은 *"make this a skill or even better make this a plugin"*(12:41~12:48, 화자 추정).
 - **마무리 사다리** — *"have you asked Codex?"* → *"loop maxing"* → 무엇이 막았나 → 하나에서 여럿으로 → *"why does this process need a human at all"* → *"build the machine that builds the machine"*, *"software factory"*(1:01:54~1:04:21) → [[loop-is-the-product]] · [[software-factory]] · [[human-plumbing]]
 - 같은 행사에서 음성 에이전트 세션도 맡았다(1:05:19~1:05:22, Gabriel의 안내).
+
+- 같은 팀의 후속 소스: [[dominik-kundel|Dominik Kundel]]의 [[codex-app-server|App Server]] 발표([[tech-bridge-codex-app-server]], 2026-10-14) — 워크숍 §6이 소개만 한 App Server를 17분 전체로 푼다.
 
 ## References
 

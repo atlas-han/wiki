@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop, prompt-injection, review-harness, agents]
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
-related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules]
+related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-10-03
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 자동 코드 리뷰
@@ -84,6 +84,25 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 
 왜 같은 휴리스틱을 AGENTS.md가 아니라 리뷰에 두나 — *"apply them backwards to a concrete program I've already generated. It's much easier to find violations in a program I've written now than for all possible programs I could generate in the future."*(20:00~20:12) → [[feedforward-feedback-steering]]의 feedback·inferential 칸. ⚠️ 측정 없음 — 리뷰 스킬이 무엇을 얼마나 잡았는지 수치가 없다.
 
+## 리뷰 너머 CI·머지까지 — Gitar (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[gitar|Gitar]](현재 [[sonar|Sonar]])가 업계 목록에 더해진다. 이 페이지의 설계 교훈 둘을 그대로 제품 기능으로 말한다.
+
+- 오탐이 리뷰어를 죽인다 → *"our goal has been to really make this experience as noisefree as possible, both in the way we handle the UX as well as posting issues that are real and really matter."*(04:01~04:12) 목표이고, 오탐률은 미발화다.
+- 리뷰 + 수정 융합 → *"automatically loop until all the fish[=] issues have been fixed in your PR and you have a green PR ready to merge."*(05:04~05:11)
+
+범위는 리뷰 밖으로 넓어진다. 머지 차단(*"block merging if there are any unresolved code review findings"* 04:25~04:31), CI 실패 근본 원인 요약과 flaky 탐지(04:31~04:40), 규칙 기반 자동 승인·머지(05:14~05:31)까지 다룬다. 이 페이지의 성공 지표(*"사람이 수락하는가"*)에 해당하는 수치는 내지 않는다. 결합 방향은 [[agent-plus-program-analysis]] 참고.
+
+## 정책 하나당 서브에이전트 하나, stand down까지 루프 — grumpy engineer (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]([[sentry|Sentry]])는 linter로 표현할 수 없는 판단(상태 3개짜리 state machine이 작은 PR 하나로 10개로 부푸는 것, 10:55~11:04)을 위해 **저장소 정책**을 먼저 쓴다. 정책 예시는 *"I don't want too many tests. I want stronger tests."*, *"I do not want a code that's too defensive."*, 원치 않는 상태를 타입으로 표현할 수 없게 할 것(11:45~12:15)이다. 그다음 리뷰 스킬을 둔다.
+
+> *"I created a skill that I called grumpy engineer. We call it Garfield internally. And the way it works is it takes all the policies and run sub agents for each of the policies and the sub agent can either give feedback or stand down. And we loop that. (…) we will loop that until the agent stands stands down and says I I'm okay with that. I validate that this is fine. And only then I read the code."* (12:18~12:50)
+
+- 바로 위 Quenneville(구조 → 메서드 → 폴리시 스킬을 차례로)와 같은 계열이다. 차이는 둘이다. 축이 **리뷰 관점이 아니라 정책 단위**이고, **모두 승인할 때까지 반복**한다.
+- 사람은 남는다. *"the goal here isn't to remove the code review quite yet (…) but more so to raise the floor"*(13:07~13:15). 성공 지표는 *"how much I'm casting[=cursing?] at the agent"*(12:51~12:55)이고 화자도 정성적이라고 인정한다(13:04~13:07).
+- ⚠️ 측정 없음. 정책 수와 루프 횟수 상한, 서브에이전트끼리 상충할 때의 처리는 발화되지 않는다. `en`·ko는 성공 지표를 "delegate/위임"으로 바꾼다.
+
 ## ⚠️ 유보
 
 - **모든 수치가 벤더 발표 또는 화자의 2차 인용**이다(Copilot 6천만, CodeRabbit 1,300만, Cursor 52→70%, 베이징대 44%, 88% vs 35%).
@@ -93,6 +112,7 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 ## References
 
 - [[tech-bridge-death-of-code-review]] · [[laurie-voss]]
+- [[tech-bridge-sentry-stop-prompting-codify-linters]] — 정책별 서브에이전트 루프 grumpy engineer (Greg Pstrucha)
 - 관련: [[mergeability-gap]] · [[verification-bottleneck]] · [[generator-evaluator-pattern]] · [[risk-proportional-human-review]] · [[prompt-injection]] · [[cursor]] · [[codex]] · [[code-knowledge-graph]]
 - [[tech-bridge-pocock-pr-bottleneck]] — 한 사람이 지은 리뷰 하네스 (Matt Pocock)
 - [[tech-bridge-rails-harness-engineering]] — 좁은 리뷰 스킬 셋 (Joël Quenneville)

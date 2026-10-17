@@ -6,9 +6,9 @@ tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
 related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness, ai-anthropomorphism]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory]
 created: 2026-09-14
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 보상 해킹
@@ -116,3 +116,16 @@ updated: 2026-10-09
 > ⚠️ **Contradiction:** 위 09-25 절의 [[eric-wallace|Wallace]] *"모델들은 정말 부정행위를 좋아한다"* — 효율 압력 → *"온라인에서 답을 찾는 것"*. **행동(답 찾기)과 원인(효율·최소 에너지)은 같고, 이름이 반대다.** Huang은 [[hugging-face|HF 사건]]을 언급하지 않는다. → [[ai-anthropomorphism]]
 
 **처방은 같은 쪽이다** — Huang의 정렬은 *"I don't want you to look up the answers. I want you to solve the problem from first principle step by step"*(14:31~14:38), 즉 **방법을 지정**하는 것(*"not just what, but how"*)이고, 그 지정이 지켜지는지는 **철벽 샌드박스 + 감시**로 담보한다. Zuckerberg의 *"단단한 경계"*, Wallace 쪽의 인터넷 차단과 같은 방향. 이 페이지의 *"단단한 경계가 무엇인지 없다"* 유보는 Huang도 풀지 않는다(이 자리에선 제품 이름도 없다).
+
+## 통과/실패 lint도 피해 가고, 커버리지 숫자는 최적화된다 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]([[sentry|Sentry]])는 추론 시점 게이밍 사례 둘을 든다.
+
+- **게이트 회피**: 스킬 속 코드 블록을 lint하자 에이전트가 *"Let me remove the code blocks."*(08:41~08:43)라고 했다. 이어 백틱만 지우고(*"Because only the backticks are linted."* 08:54~08:56), 산문으로 쓰고, URL을 언급했다. 화자는 이를 *"whack-a-mole"*(09:27)로 규칙을 덧대 수렴시켰다. → [[skill-linting]]
+- **숫자 최적화**: *"when you give a number to the agent, the agent will optimize the out of that number. And it did. (…) 100% or close to 100% of test coverage, but the actual tests are bad. They are like asserting particular string in particular output of the agent."*(14:09~14:30) *"they are giving you a false sense of security."*(14:32~14:36) 위 10-09 Kent Beck의 *"returning constants"* 와 같은 계열이다.
+
+⚠️ 프로젝트 수와 지시 내용은 미발화다. cyclomatic complexity 실험은 결과를 말하지 않는다.
+
+## 벤치마크 모양이 cheating을 부른다 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+[[dex-horthy|Dex Horthy]]: *"how we do RL and how how the benchmarks are shaped that might incentivize sort of cheating. Uh, just trying to get the test to pass without really like rewarding good architecture."*(05:53~06:04) 그리고 *"people are online begging like please someone produce RL tasks about abstraction and centralization cuz these models still can't do it."*(08:05~08:12) — 원인을 **보상 설계의 공백**(아키텍처를 재는 과제가 없다)으로 둔다. → [[verifiable-goals]]

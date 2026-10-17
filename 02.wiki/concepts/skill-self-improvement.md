@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory]
 created: 2026-09-05
-updated: 2026-10-12
+updated: 2026-10-16
 ---
 
 # Skill Self-Improvement
@@ -152,3 +152,17 @@ updated: 2026-10-12
 ## 아홉 번째 경로 — 트레이스 분석 엔진이 원격 스킬 파일을 고친다, 게이트는 메모리 종류로 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
 
 [[langsmith|LangSmith]]의 분석 엔진이 트레이스(실패한 도구 호출·사용자 정정·말투 이탈 플래그)에서 패턴을 찾아 *"identifies where different static skill markdown files that are based in Contexthub need to be changed or promoted and it'll make that change"*(12:04~12:13). 같은 발표의 교훈 3은 **procedural 메모리(지시·정책·말투 규칙) 변경은 커밋 전에 사람에게 보이고 eval로 보호**하라고 한다(14:23~14:55) — 이 페이지의 *자동 반영하지 않는다* 원칙을 **메모리 종류 기준**으로 다시 말한 것. ⚠️ 데모 구간(*"it'll make that change"*)과 교훈 3의 게이트가 어떻게 연결되는지는 발화되지 않는다. ⚠️ 벤더(LangChain) 당사자 진술. → [[trace-to-memory-loop]]
+
+## 열 번째 경로 — 성공·실패 트레이스를 증류해 전사에 배포, 게이트는 자동 검사뿐 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]]): *"we just take that trace and we ask frontier LLM to simply distill a skill"*(11:32~11:41). 실패 실행도 재료로 쓴다 — *"every run or or pass or fail just feeds our distiller mechanism"*(12:07~12:14). 그리고 ⭐ *"it all happens completely autonomously asynchronously without human in loop"*(12:29~12:33). 조직 단위에서는 *"various series of checks like whether it's not containing some kind of prompt injection or maybe PII"*(15:18~15:27)를 거쳐 MCP gateway로 **회사의 모든 클라이언트·에이전트**에 배포한다 → [[run-trace-skill-distillation]] · [[mcp-skill-distribution]]
+
+| | 원천 | 반영 | 반경 |
+|---|---|---|---|
+| task-observer (09-05) | 작업 중 실패 | 사람 검토 후 | 프로젝트 |
+| LangChain (10-12) | 트레이스 | procedural은 사람·eval | 한 에이전트 |
+| **Runlayer (이 소스)** | **성공 + 실패 트레이스** | **자동 검사만** | **전사** |
+
+> ⚠️ **Contradiction:** 이 페이지의 원칙(*"하나의 잘못된 결과가 에이전트가 영원히 따르는 규칙으로 자동 설정되는 것을 방지"*)을 **명시적으로 버린** 첫 경로다. 앞의 경로들은 대부분 게이트에 대해 *말하지 않았을* 뿐인데, 이 소스는 게이트를 두지 않는다고 *말한다.* 회수·롤백·[[skill-evals|회귀 eval]]은 발화되지 않았다. 근거로 든 36% → 100%는 단일 태스크이고 실행 횟수가 발화되지 않았다. Voyager skill library를 계보로 명시한 첫 소스이기도 하다.
+
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) [[dex-horthy|Horthy]]의 "12 factor factories" 마지막 항목: *"compound over time, learn from past sessions, go read what your engineer go analyze the sessions of your team, figure out what they're struggling with, figure out how to get that into your skills or your memory or whatever it is."*(12:58~13:08) — 개인이 아니라 **팀 세션**이 재료. 그리고 그 세션을 보관할 *"system of record"*(13:53~14:01)가 도구 쪽 전제다 → [[agent-platform-layers]].

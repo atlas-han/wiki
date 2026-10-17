@@ -6,9 +6,9 @@ tags: [context-window, attention, long-context, degradation, context-engineering
 aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation, 맥락 왜곡]
 related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-09-24
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -68,3 +68,7 @@ updated: 2026-10-09
 ## 프롬프트 속 규칙도 썩는다 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
 
 [[david-khourshid|David Khourshid]]: *"the rules decay with context because that prompt, the rules in there, are just it's text, just like the rest of your context. So, as your context builds up, the rules get a little bit less significant over time."*(07:23~07:37) — 컨텍스트 부패를 **시스템 프롬프트의 규칙**에 적용한 형태. 처방은 창을 작게 유지하는 것이 아니라 **규칙을 텍스트 밖(상태 머신의 전이)으로 옮기는 것** → [[agent-state-machine]]. ⚠️ ko는 *less significant* 를 **"더 엄격해집니다"** 로 뒤집었다(07:33~07:37). 측정 없음.
+
+## 비용 쪽에서 본 같은 현상 — 아무도 컨텍스트를 비우지 않는다 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+AI gateway 사용량을 보는 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"You would not believe the number of sessions that are hundreds or thousands of messages long where nobody clears the context. They just kind of keep going."*(02:17~02:26) *"tens of millions of tokens of a session uh where it's the cache is basically maxed out maxed out the entire time."*(02:32~02:39) 품질 저하가 아니라 **낭비**로 본 증언이다. 화자는 토큰맥싱이 *"wasted tokens by default"*(02:07~02:12)를 부추긴다고 본다. ⚠️ 일화이고 분모·비율은 없다. ko는 *"tens of millions of tokens"* 를 **"수천만 명"** 으로 옮긴다.

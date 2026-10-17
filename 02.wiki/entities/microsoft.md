@@ -5,9 +5,9 @@ category: org
 tags: [hyperscaler, copilot, enterprise-ai, openai-partner, data-center]
 links:
   - https://www.microsoft.com/
-sources: [tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-bug-report-to-production]
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-17
 ---
 
 # Microsoft
@@ -44,3 +44,7 @@ updated: 2026-09-29
 
 - [[tech-bridge-nadella-copilot-autopilot]] — 첫 1인칭 소스
 - [[satya-nadella]] · [[microsoft-copilot]] · [[agent-365]] · [[openai]]
+
+## Claude Code 라이선스 회수 헤드라인 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]])가 비용 폭증의 예로 든다: *"or Microsoft clawing back cloud code[=Claude Code] licenses to try and cut down on spend."*(02:50~02:56) 이 위키에 처음 나오는 일화다. 자사 Copilot이 아니라 [[claude-code|Claude Code]] 라이선스를 회수했다는 주장이다. ⚠️ 출처 미제시(*"headlines"*), 시점·규모 미발화. *"cloud code"* 는 문맥 판독이다.

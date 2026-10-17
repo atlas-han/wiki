@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [network-effects, multi-agent, privacy, product-strategy, adoption]
 aliases: [fleet learning, 함대 학습, 에이전트의 네트워크 효과]
-related: [agent-collaboration-as-search, multiplayer-agent-context, agent-org-adoption, personal-superintelligence, skill-self-improvement]
+related: [agent-collaboration-as-search, multiplayer-agent-context, agent-org-adoption, personal-superintelligence, skill-self-improvement, run-trace-skill-distillation]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-runlayer-self-improving-skills-mcp]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-10-16
 ---
 
 # 에이전트 함대 학습
@@ -56,6 +56,16 @@ updated: 2026-09-14
 - ⚠️ **효과 수치가 없다.** *"쓰는 사람이 늘수록 좋아진다"* 에 근거가 없다.
 - ⚠️ **"아무도 안 하고 있다"** 에 비교 대상이 없다.
 - ⚠️ **[[personal-superintelligence]]와의 긴장.** *각자가 방향을 정한다* 는 테제와 *에이전트가 제안한다* 는 처방 사이에서, 제안의 분포가 곧 방향의 분포가 될 수 있다. 소스는 다루지 않는다.
+
+## 조직 안의 함대 — "single player mode"를 넘어 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])는 Zuckerberg와 같은 프레임으로 시작한다: *"self-improving agents but not in a single player mode where just one agent gets smarter. I want to talk about how we can apply that concept and mix it with network effects to get a self-improving company"*(00:01~00:13). 메커니즘은 *"what happens when you multiply that by every agent and every single client in the entire company?"*(15:05~15:07)이다. 비슷한 실행을 묶어 스킬로 증류하고 MCP로 전사에 배포한다 → [[run-trace-skill-distillation]]
+
+| | Muse (Meta) | Runlayer |
+|---|---|---|
+| 함대 | 사용자 간 | **한 조직 안의 에이전트·클라이언트** |
+| 공유되는 것 | 익명화된 통찰 → 제안 | **증류된 스킬** |
+| 게이트 | (미발화) | 프롬프트 인젝션·PII 자동 검사 |
 
 ## References
 

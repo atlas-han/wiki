@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [cognitive-load, code-review, human-in-the-loop, verification, spec-driven-development, agents]
 aliases: [cognitive debt, 인지 부채, AI fatigue, AI 피로]
-related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot]
+related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry]
 first-seen: tech-bridge-sdd-full-course
-sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility]
+sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-09-27
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 인지 부채와 AI 피로
@@ -49,6 +49,7 @@ updated: 2026-10-09
 - [[read-fluency-for-agent-output]] — 언어를 배우는 목표가 "쓸 수 있을 만큼"에서 "에이전트가 쓴 것을 읽고 이해할 수 있을 만큼"으로 옮겨 간다는 주장. 인지 부채를 **갚는 데 필요한 전제 역량**.
 - [[trusted-throughput]] — PR 수가 아니라 신뢰할 수 있는 처리량. AI 피로는 신뢰 없이 처리량을 올렸을 때의 사람 쪽 비용.
 - [[context-rot]] — 에이전트 쪽의 대응물. 이 강좌는 Agent Clinic의 "질병" 목록에 context rot을 넣는다(16:38~16:41).
+- [[agentic-inquiry]] — [[guillermo-rauch|Guillermo Rauch]]의 처방: *"I'm not advocating that you read every line of code, but when you do get something done, try to understand what just happened."*(07:05~07:12, [[tech-bridge-vercel-rauch-agentic-workflow]]) — 읽기량이 아니라 **에이전트에게 설명(호출 스택 다이어그램, API 형태 변경 알림)을 시켜** 부채를 갚는다. ⚠️ 설명의 정확성 검증은 다루지 않는다.
 
 > ⚠️ **측정 없음.** 두 용어 모두 강좌에서 정의와 처방만 나오고, 인지 부채를 재는 방법이나 AI 피로의 발생 조건에 대한 데이터는 없다. 이 위키의 단일 소스 개념이다.
 

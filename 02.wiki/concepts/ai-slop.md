@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
-related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine]
+related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine, human-provenance-value, slopcodebench, compressed-review-surface]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 created: 2026-09-12
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # AI 슬롭
@@ -182,3 +182,32 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 
 - **"슬롭 = 결정의 부재"** 와 같은 방향이지만 처방의 층이 다르다 — 금지 목록·프로브(산출물 쪽)가 아니라 **규칙을 상태·전이로 빼내는 구조**(과정 쪽). → [[agent-state-machine]]
 - ⚠️ ko·`en`은 이 영상에서 *slop* 을 **"쓰레기"·"여유분"·"trash"·"junk"** 로 옮겨 제목어가 자막에서 사라졌다.
+
+## 프런티어 연구소 창업자의 정의 — 주의 포획, 그리고 반대편의 프로토타입 (2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]])
+
+[[demis-hassabis|Demis Hassabis]]: *"there's this notion of AI slop which is just sort of you know kind of um fairly uh creatively mundane or not interesting creatively but it's there to kind of uh uh you know hook an audience for a few seconds and I think we don't really want to be going in that direction ideally although you know it's maybe it's fine as kind of light entertainment"*(13:48~14:12).
+
+- 기존 정의들(평범함·결정의 부재·생산자의 자기 호칭)과 달리 **소비 쪽 목적(몇 초의 주의 포획)** 으로 정의한다 — 소셜 미디어 비판(*"addictive silos"* 18:24~18:28)과 같은 선.
+- **전면 배척이 아니다**(*"fine as kind of light entertainment"*). 반대편(*"the other side of the ledger"*)에 대가의 빠른 아이디어 반복과 신진 창작자의 프로토타입·트레일러를 둔다(14:12~15:08).
+- ⚠️ ko는 *"we don't really want to be going in that direction"* 을 **"저희도 그 방향으로 나아가고 싶습니다"**(14:06)로 뒤집었다.
+- 이 위키의 [[human-provenance-value]]는 slop과 직교하는 축 — 질이 같아도 출처가 의미를 바꾼다.
+
+## 저장소 정책으로 막는다 — 과방어 코드와 쓸모없는 테스트 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]가 사이드 프로젝트에서 본 슬롭은 *"it's overly defensive code. It's uh, tests are crap. They are not testing anything."*(00:32~00:38)이었고, *"every single possible case is try caught by the agent and it's it's just sloppy long long functions"*(12:01~12:10)였다. 위 10-02 절의 "어디서 막을 것인가" 축에서 그의 답은 **linter(결정론)와 저장소 정책 + 정책별 리뷰 서브에이전트 루프**다. → [[hard-vs-soft-enforcement]] · [[automated-code-review]]
+
+⚠️ ko는 *"I do not want a code that's too defensive"* 를 **"지나치게 방어적인 코드를 원합니다"**(11:57)로 뒤집는다.
+
+## 누적으로서의 슬롭 — 벤치마크와 포스트모템 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+[[dex-horthy|Dex Horthy]]: 슬롭은 한 번의 산출이 아니라 **시간에 걸쳐 쌓이는** 것이고, 모델 개선이 그 속도를 따라잡지 못한다. [[slopcodebench|SlopCodeBench]]는 문제를 *"in bits"* 로 공개하며 기능을 덧붙이게 한다(06:33~06:47) — GPT-5.5 *"14.8%"*(06:57). Anthropic 포스트모템(화자 요약): *"we had a security issue, uh, cuz we had a bunch of like messy code that accumulated over time"*(07:19~07:26). 원인론: *"just trying to get the test to pass without really like rewarding good architecture"*(06:00~06:04) — 학습 단계의 인센티브. 처방 중 하나: Dylan Mulroy의 TypeScript anti-slop 규칙 *"about a hundred"*(11:30~11:42). ⚠️ ko는 slop을 "쓰레기"·"질서 유지"로 옮긴다.
+
+## 코드의 정의 — "생성이 판단을 앞지를 때" (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+[[gabriel-martinez|Gabriel Martinez]]([[g2i|G2i]], 자칭 *"resident slop warden"*)는 *"Slop is what happens when (…) generation outruns judgment. Slop is not AI-generated code."*(00:29~00:34)라고 정의한다. *"Slop is output that looks finished before the thinking is finished"*(00:43~00:46)라고도 말한다.
+
+- **위험의 위치**: *"The danger is that the engineer never noticed that there was a choice to make."*(01:02~01:06) "슬롭 = 결정의 부재"를 **결정이 있었다는 사실 자체를 보지 못한 것**까지 넓힌다.
+- **원인에 조직 인센티브를 더한다**: 리뷰 없이 빨리 머지하는 쪽이 더 생산적으로 보이고(07:19~07:33), 화자 자신도 그 불안 때문에 덜 검토하고 머지했다(07:52~08:05).
+- **"AI 이전부터 있었다"**: *"the thing it points at has long been around. Only now it happens at warp speed."*(00:19~00:23)
+- 처방: 관례·[[compressed-review-surface|압축된 리뷰 표면]]·작은 변경. *"The more obvious the path, the less room there is for slop to hide."*(13:55~13:58)
+- ⚠️ ko는 이 영상에서 slop을 "기울기"(slope)·"엉망진창"·"폐기물"·"과실"·"평범함"으로 옮긴다. 정의 문장의 never 세 개도 긍정문으로 바꾼다(01:06~01:12).

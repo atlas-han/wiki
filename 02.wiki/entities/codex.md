@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server]
 links:
-  - https://openai.com/index/nextdoor/
+  - "https://openai.com/index/nextdoor/"
 created: 2026-06-27
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Codex
@@ -126,3 +126,15 @@ updated: 2026-10-11
 [[greg-brockman|Brockman]]이 소개한 사내 홍보팀 얼리 어답터 사례다. 기자 여러 명이 오는 행사의 좌석 배치와 식단 선호 관리를 *"as one person because you have Codex that's actually taking care of so much of the back end for you"* 로 처리했다(22:39~22:52). *"that's all been happening since early this year"* (22:54~22:55)라고 한다. 이 위키에서 Codex가 **코딩도 보안도 아닌 사무 업무**에 쓰인 1인칭 사례는 Altman의 Slack 검색(10-09)에 이어 두 번째다. ⚠️ 전언이고, 규모·빈도·도구 설정은 발화되지 않는다.
 
 같은 대담에서 Brockman은 *"I don't write software anymore. I direct an AI for it to write software"* (03:23~03:29)라고 말한다. 어느 도구를 쓰는지는 밝히지 않는다.
+
+## 하네스를 열어 둔 쪽 — App Server로 남의 앱 안에 (2026-10-14 · [[tech-bridge-codex-app-server]])
+
+[[openai|OpenAI]] Codex developer experience의 [[dominik-kundel|Dominik Kundel]](자막엔 *"Dom"* 만). 위 06월 표의 "어디에나" 행에 있던 **[[codex-app-server|App Server]]** 를 17분 동안 푼다. ⚠️ 당사자 진술.
+
+- *"the app server is actually the protocol that wraps the codeex harness"*(01:02~01:07). 하네스와 App Server 모두 오픈소스(Apache 2)이고, Responses API 호환 공급자·LM Studio·Ollama에 연결할 수 있다(01:26~02:03).
+- 같은 하네스를 쓰는 곳: Codex app·VS Code 확장 + Xcode·JetBrains·T3 Code + ⭐ **Claude Code 안의 Codex 플러그인**(*"earlier this year"*, 02:35~02:55, ⚠️ ASR *"cloud code"*).
+- 제품 사실: App Server는 **Codex CLI와 같은 바이너리**이고, Codex app 번들에 들어 있으며 앱 버전마다 바뀐다. Windows에선 Linux·Windows 바이너리 둘(WSL)을 싣는다(08:34~09:19). Codex app은 system prompt 위에 **developer instructions**를 덧붙여 IDE 확장·CLI와 구분된다(07:20~07:29).
+- **codex exec**(비대화형, 스크립팅·CI/CD) vs App Server(클라이언트, 병렬 thread, eval 하네스, `/goal`)(14:38~15:42).
+- 데모 모델 *"5.5"*(13:26~13:29, 계열명 미발화).
+
+→ [[codex-app-server]] · [[embedded-agent-harness]]

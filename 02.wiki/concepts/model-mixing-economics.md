@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production]
 created: 2026-09-09
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 모델 혼합의 경제학
@@ -150,3 +150,9 @@ updated: 2026-10-09
 [[cast-ai|Cast AI]]의 [[kimchi|Kimchi]] 발표 부제가 이 페이지의 한 줄 요약이다: *"proprietary models for edge case but use open source for the rest"*(00:12~00:17). 근거로 든 대학 연구(미특정) 표는 **토큰 단가와 작업당 비용이 다른 순서**라는 것 — Gemini 3 Flash *"$3.5 per million token"* vs 작업당 ⚠️ *"$75"*(en-orig) / *"$705"*(`en`·ko), MiniMax 2.7 토큰 *"1.5"* vs 작업당 *"$148"*(03:27~03:59). *"They don't cost the same, but they also not the same per task."*(04:05~04:08)
 
 혼합의 결과로 제시된 곡선은 [[overspending-underusing-loop]]의 Coinbase 차트와 같은 모양 — **토큰 1.5배↑, 비용 1.5배↓**(05:06~05:21, 자사 3개월). ⚠️ 화자는 이를 *"2.5 times"* 절감이라 부르지만 1.5×1.5 = 2.25.
+
+## 벤더의 수치 한 쌍 — GPT 5.2 = Opus 반값, 오픈소스 10~30x (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"We found, for instance, that you can achieve the same performance on code review with GPT 5.2 as with the latest Opus models, but at half the price."*(08:13~08:22) 오픈소스 대안은 *"that can slash your cost down to 10 to 30x cheaper."*(08:26~08:30)이다. 원칙으로는 *"Not being locked into a single lab means you unlock the entire Pareto frontier of LLMs."*(08:38~08:44) CEO의 비유도 든다: *"if your kid needs a algebra tutor, you can definitely find someone cheaper than Albert Einstein."*(03:19~03:26)
+
+⚠️ 과제·벤치마크·Opus 버전·오픈소스의 기준 모델은 발화되지 않는다. 같은 회사 Tereza 편의 라우터 4단계는 이번엔 *"dynamically routed"*(03:48~03:51) 한 구절로만 나온다 → [[automatic-model-routing]]

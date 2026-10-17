@@ -6,9 +6,9 @@ tags: [data-center, community, power-grid, water, energy, infrastructure, nvidia
 aliases: [데이터센터 반대, NIMBY 데이터센터, 뒷마당 데이터센터, data center backlash]
 related: [intelligence-as-infrastructure, power-shortfall, compute-constrained-growth, regulatory-capture, ai-jobs-impact]
 first-seen: tech-bridge-jensen-huang-cbs-interview
-sources: [tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-white-house-superintelligence-panel, tech-bridge-hassabis-fry-creativity-future]
 created: 2026-09-25
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 데이터센터 지역 반발
@@ -111,3 +111,7 @@ updated: 2026-10-09
 - [[jensen-huang|Huang]]: 데이터센터가 *"coming into a lot of neighborhoods and a lot of communities. We have to do a better job um in partnering with the communities"*, 이 산업혁명의 번영에 *"bring them along"*(02:03~02:18). CBS의 *"더 일찍 찾아와 말씀드리지 못해 죄송하다"* 의 연장.
 - [[elon-musk|Musk]](Colossus 지역, 진행자 질문): 일자리 초과, 세수 *"might have doubled"*, 반값 서비스(⚠️ *"halfp price stalling uh access"* 미판독), *"$250 million water recycling plant"*(10:09~10:53) → ***"you do need to do things for the community. Um and if you do so they will reciprocate."***(10:53~10:56)
 - ⚠️ 둘 다 **운영자 측 진술**이고 지역 주민의 목소리는 없다. 물 재활용 시설은 이 페이지의 *물* 쟁점에 대한 **운영자 측 대응 사례**지만 규모 외 수치(용량·사용량)가 없다. 지역 이름 미발화.
+
+## 업계 쪽 다섯 번째 목소리 — 미학 (2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]])
+
+[[demis-hassabis|Demis Hassabis]]가 건축가 Thomas Heatherwick의 질문(*"how could we radically humanize the built world"*)에 답하며: *"there's a lot of new buildings going up like data centers and other things to do with the new AI revolution. Well, maybe we should just spend a little bit more and make them beautiful. You know, these are the new uh uh uh types of assets that we're building."*(30:08~30:23) — *"we should be thinking about their effect on the physical environment"*(30:26~30:30). ⚠️ **반발 대응으로 한 말이 아니다** — 주민 반발·물·전력은 언급되지 않는다. Huang의 사과·자원 반론과 다른 축(**경관·영감**)으로, 같은 답에서 *"we might not have to just use the the cost as the only measure"*(29:47~29:51)와 이어진다.

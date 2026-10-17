@@ -5,9 +5,9 @@ category: technique
 tags: [model-routing, router, cost, reliability, fallback, prompt-caching, open-models, model-selection]
 related: [model-mixing-economics, software-factory, overspending-underusing-loop, token-roles, system-1-model, harness-engineering, true-cost-to-perfect-answer]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-gitar-agentic-pr-validation, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-10-02
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 자동 모델 라우팅 (Automatic Model Routing)
@@ -77,3 +77,13 @@ updated: 2026-10-09
 ⭐ **이 페이지 첫 시간축 기록**: 사내 차트에서 1순위 모델이 *"The 3rd of June Kimmy[=Kimi] 2.6"* → *"It happened the 12th of June"* → *"21st of June (…) Minimat[=MiniMax] 3"*(06:05~06:25). [[minimax-m3]]가 6월 초 출시된 지 1~2주 안이다. 화자의 논점: *"Do you think we look at this as human? Absolutely not. But an autonomous harness (…) is going to do just that."*(06:32~06:47) — 라우터의 이점이 **한 과제의 비용**만이 아니라 **새 모델 채택 속도**라는 주장.
 
 > ⚠️ **메커니즘 미발화.** 무엇이 *outcome* 신호인지, 과제 전 선택인지 실패 후 전환인지, 전환 빈도·임계값, 채점 모델 — 전부 말하지 않는다. 6월 12일 전환이 품질을 유지했다는 근거는 차트의 *"same outcome"*(05:04) 한 마디. 성과 수치(2.5배)는 화자 산수와도 맞지 않는다(토큰 ×1.5·비용 ÷1.5 = 2.25배).
+
+## 검증 제품 내부의 부품으로 (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[gitar|Gitar]]의 내부 구성 요소 셋 중 하나가 LLM proxy다: *"We also have an NLM[=LLM] proxy that handles the routing across different models as well as things like failover."*(08:37~08:45) 라우터가 제품 자체가 아니라 **검증 하네스의 부품**으로 나온다. 라우팅 기준은 미발화다. 같은 발표의 *"fixed PR price"*(08:30~08:36)는 [[tech-bridge-kimchi-cost-per-task-harness|Kimchi]]의 작업당 비용과 같은 계열의 과금 단위 전환이다.
+
+## 라우터가 아니라 정책 — 신원별 모델·예산 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]] Aperture)의 모델 선택은 라우터가 고르는 방식이 아니다. 게이트웨이가 연결의 신원을 알고 관리자가 정한 정책을 적용한다: *"Once I connect to the (…) gateway, it knows who I am. It knows what I am."*(11:43~11:47) 그다음은 *"You can use GLM 5.2. Uh you get this budget with GLM 5.2, right? You get unlimited budget with a cheap model, and you get an extremely narrow budget with a frontier model, right?"*(11:52~12:01)이다. 이 페이지의 다른 라우터(Factory의 난이도 분류, Kimchi의 결과 보증)와 달리 **결정 주체가 관리자**다 → [[ai-gateway]]
+
+⚠️ 모델 단가 기준의 배급이고 작업 결과 기준이 아니다. 어느 쪽이 나은지는 측정되지 않았다. *"GLM 5.2"* 는 예시이고 대조하지 않았다.

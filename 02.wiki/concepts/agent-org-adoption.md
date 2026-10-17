@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, organization, verification, culture, figma]
 related: [verifiable-goals, harness-engineering, spec-driven-development, sprint-contract, outcome-engineering, frontier-engineering, persistent-agent-teams, trusted-throughput, token-roles, company-brain]
 first-seen: tech-bridge-figma-coding-agents
-sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-dhh-agent-productivity, tech-bridge-ai-native-skills, tech-bridge-grokbot-agent-teams, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-company-brain-security, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-08-29
-updated: 2026-09-17
+updated: 2026-10-16
 ---
 
 # Agent Org Adoption
@@ -134,3 +134,5 @@ Amazon 현장([[tech-bridge-frontier-engineering]], [[frontier-engineering]])은
 | **남의 쓰임을 빌려 온다** | 익명화된 통찰 | [[agent-fleet-learning]] | 앞 편만 (⚠️ **이번 편엔 언급 없음**) |
 
 이 위키의 기존 도입 서술이 대체로 **조직**(팀·회사)을 단위로 삼았다면, 이 셋은 **개인**을 단위로 삼는다. 진행자가 든 값이 특히 조직 쪽 지표와 다르다 — *"시간 측면이 있고, 저에게는 **영감(inspiration)** 측면도 있었습니다"*. **하지 않았을 일이 생긴 것**이 값이다.
+
+**네 번째 답 — 첫 사용을 지켜본다 (2026-10-15 · [[tech-bridge-alexandr-wang-muse-launch]]).** 해설: *"What does someone try first after downloading the app? Wang says he watched new users interact with Muse many times."*(04:32~04:39). 그 흐름은 *"thinking of what to tell the agent, checking the results, and assigning the next task"*(04:56~05:03)다. 위 세 갈래가 제품 기능이라면 이것은 **제작 절차**다. ⚠️ 원음은 자막에 없다(무캡션 04:39→04:56).

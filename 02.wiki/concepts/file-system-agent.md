@@ -6,9 +6,9 @@ tags: [agents, tools, context, sandbox, claude-code, emergent-behavior]
 aliases: [파일 시스템 에이전트, file-system agent, 최소 도구 세트]
 related: [agent-tool-design-practices, agent-knowledge-sourcing, context-engineering, agent-harness-design, claude-code, build-time-vs-runtime-tools, files-vs-database-agent-memory]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-oracle-agent-memory-harness, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-09-19
-updated: 2026-09-24
+updated: 2026-10-16
 ---
 
 # 파일 시스템 에이전트
@@ -94,3 +94,7 @@ updated: 2026-09-24
 [[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])가 이 페이지와 **같은 관찰**에서 출발한다 — 파일은 *"모델의 본능에 맞는다"*(en-orig 13:46), *"모델들이 즐겨 찾는다"*(14:18~14:20), POSIX라 어디서나 돈다. 그러나 결론은 **파일을 DB 위에 올려라(DBFS)** 다 — 파일에는 **트랜잭션 일관성·백업·하이브리드 검색**이 없고, *8·16·32개 에이전트*가 같은 파일을 동시에 쓰면 깨진다(14:36~15:57). → [[files-vs-database-agent-memory]]
 
 두 소스를 겹치면 경계선이 보인다(⚠️ 위키의 읽기): **읽기 중심·단일 에이전트면 파일 시스템이 이긴다(Vercel), 동시 쓰기·장기 보존이면 파일만으로는 모자란다(Oracle).** 이 페이지의 샌드박스는 **읽기 위주의 시맨틱 레이어**였고, 쓰기 경합은 다루지 않았다. ⚠️ Oracle 쪽은 DB 벤더, Vercel 쪽은 자기 프레임워크 — **둘 다 당사자**다.
+
+## 개인판 — 리서치 폴더와 agents.md (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+같은 회사([[vercel|Vercel]])의 CEO [[guillermo-rauch|Guillermo Rauch]]가 이 패턴을 **개인 연구 습관**으로 쓴다: *"my agents.md file in this research folder sort of like creates the convention for if I ask the agent a question, reads up the instructions, and then dumps my research into this folder. um and I can sort of basically improve it over time."*(01:44~01:59) 결과: *"it's replaced Google for me"*(01:25~01:27). 폴더 하나 + 지시 파일 하나 + 한 글자 alias(`r`)가 전부다 — *"there's basically nothing to do (…) but it still cuts down on all the latency"*(02:20~02:27). [[andrew-qu|Andrew Qu]]의 D0가 *회사 지식*을 파일로 펼쳤다면 이쪽은 *질문의 누적*을 파일로 쌓는다.

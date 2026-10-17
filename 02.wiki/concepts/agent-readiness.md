@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-readiness, codebase-hygiene, ai-adoption, power-law, tests, linters, documentation, reproducible-env]
 related: [codebase-gardening, software-factory, greenfield-vs-brownfield-agent-risk, executable-standards, agent-org-adoption, hard-vs-soft-enforcement, ai-slop]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends, tech-bridge-tessl-harness-engineering-factory]
+sources: [tech-bridge-factory-software-factory, tech-bridge-dx-ai-impact-trends, tech-bridge-tessl-harness-engineering-factory, tech-bridge-factory-bug-report-to-production]
 created: 2026-10-02
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 에이전트 준비도 (Agent Readiness)
@@ -86,3 +86,23 @@ updated: 2026-10-11
 | 실패의 모습 | AI가 코드를 더 나쁘게 만든다 | 에이전트가 사람 없이 PR을 못 올린다 |
 
 두 벤더 모두 이 단계를 팩토리의 **선행 조건**으로 둔다. ⚠️ 당사자 진술.
+
+## 8기둥 — 같은 회사의 확장판 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"At Factory, we have the concept of agent readiness, and we evaluate this based on eight pillars."*(13:23~13:28) 동기는 *"the undertaking of building the Factory will expose tribal knowledge, manual processes, and outdated info. Unblocking these is not only going to help your agents, but it's also going to help your engineering teams."*(13:05~13:21)
+
+| # | 기둥 | en-orig (13:30~14:18) |
+|---|---|---|
+| 1 | validation | *"Do you have guardrails like linters and formatters in place?"* |
+| 2 | build system | *"Are your build commands in CI well documented?"* |
+| 3 | feedback loops | *"Do you have unit and integration tests tight?"* |
+| 4 | docs | *"do you have docs like read me's, agents.md files?"* |
+| 5 | dev environment | *"Are your dev environments cleanly reproducible such that an agent can use them?"* |
+| 6 | code modularity | *"Is your code modular with clear boundaries and rules against sprawl?"* |
+| 7 | observability | *"How long does it take you to find out why something went wrong?"* |
+| 8 | security | *"are you proactively security scanning so that you don't have to worry about leaked secrets or vulnerabilities?"* |
+
+- Tereza(10-01)의 점검표(재현 환경·테스트·문서·스타일·린터)와 DX의 4항목에 **build system(CI 명령 문서화) · observability · security scanning · 모듈 경계(*"rules against sprawl"*)** 가 더해진다.
+- 결론은 위 DX 편의 Reock과 같은 쪽이다: *"if your agents and your human engineers are going to walk the same roads, paving them well is doubly useful."*(14:23~14:29) 맺음에서도 *"agent readiness is really a precursor to effective engineering, whether it's an agent or a human that ends up in that system."*(17:19~17:25)이라고 한다.
+
+⚠️ 기둥 이름은 1·2·3·7(*validation*, *build system*, *Feedback loops*, *observability*)만 발화된다. 4·5·6·8의 이름은 질문 내용에서 위키가 붙였다. 점수화 방식, Tereza 판본과 같은 제품인지 개정판인지는 발화되지 않는다. ko는 agent readiness를 **"약제 준비"**(13:24)로 옮긴다.

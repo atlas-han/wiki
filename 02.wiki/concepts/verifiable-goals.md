@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
 related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory]
 created: 2026-05-25
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Verifiable Goals
@@ -170,3 +170,13 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 - 용도: 마이그레이션·대규모 리팩터링·재시도 루프·실험·*"full oneshotting apps with fairly detailed specs"*(44:31~44:41).
 
 > ⚠️ 당사자 진술. ko 43:20은 *"15 hours"* 를 **"15년"** 으로 옮긴다.
+
+## ⚠️ snake oil — 정성 품질을 숫자 목표로 바꾸지 말 것 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]: *"beware of a snake oil. (…) I've done experiments where I tried to capture a qualitative measure in a quantitative metric."*(13:27~13:39) 예로 든 것은 cyclomatic complexity와 test coverage다. 커버리지는 100% 가까이 올랐지만 테스트는 가치 있는 것을 재지 않았다(14:17~14:32). 같은 화자는 linter로 못 잡는 판단에 *"no more than four states"* 같은 숫자 규칙을 만들 수는 있지만 *"it's all It's all made up"*(11:10~11:17)이라고 스스로 기각한다.
+
+이 페이지의 "검증 가능한 형태로 써라"에 대한 **경계 조건**이다. 검증 가능화가 맞는 대상은 결정론적 규칙(lint·타입·테스트 통과)이고, 정성 품질은 저장소 정책과 리뷰 루프로 남긴다([[automated-code-review]]의 grumpy engineer). → [[reward-hacking]] · [[trusted-throughput]]
+
+## 검증기가 느리면 학습 신호가 아니다 — maintainability (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+*"to do reinforcement learning, you need an oracle. You need a verifier. You need something to say, is this code maintainable or not? And maintainability has no fast oracle."*(06:06~06:15) — *"the cost of bad architecture is measured measured in months and years"*(06:04~06:06), *"We don't find out that the code was ugly until 2 months later"*(06:15~06:19). 이 위키의 검증 가능 목표 논의에 **지연(latency)** 축을 더한다: 검증 가능해도 몇 달 뒤에야 판정되면 RL·에이전트 루프의 목표가 되지 못한다. ⚠️ 화자 스스로 *"intuition-based explanation"*(05:51~05:53).

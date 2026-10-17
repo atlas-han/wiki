@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production]
 created: 2026-09-13
-updated: 2026-10-11
+updated: 2026-10-17
 ---
 
 # 신뢰 곡선
@@ -88,3 +88,24 @@ Tech Bridge 해설은 원본 대담에서 *"신뢰의 사다리"*(ko 00:57~00:59
 ## autonomy ≠ automation — 정답률과 신뢰를 다른 축으로 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
 
 [[dru-knox|Dru Knox]]([[tessl|Tessl]])는 이 곡선이 말하는 *신뢰* 를 **정답률과 분리된 축**으로 정의한다: *"You can have high autonomy in the sense that agents frequently are oneshotting the problems you're giving them, but low automation because you don't trust it yet. And so you're reviewing all of the code directly."*(03:30~03:43) — autonomy는 사람이 몇 번 고쳐야 하느냐, automation은 *"How much do you need to review or build trust in the solution before you accept it?"*(03:23~03:27). 그리고 *"You have to build up autonomy first before you can move to automation."*(03:47~03:52) 이 곡선의 *병렬 수 = 신뢰의 함수* 에 **신뢰를 올리는 장치**(PR 뒤의 비싼 검사 = outer loop, *"encode things that otherwise a human would have to verify"* 07:22~07:30)가 붙는다 → [[inner-outer-meta-loops]]. 출발점도 이 곡선의 중간 — *"a couple sessions at a time"*, 쉬운·중간 과제에서 *"frequently do the right thing"*(00:45~01:02). ⚠️ 측정 없음, 벤더 화자.
+
+## 제품 설정으로 구현된 사다리 — 리뷰 → 차단 → autofix → 자동 머지 (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[ali-reza|Ali-Reza]]([[gitar|Gitar]])가 사용자에게서 관찰했다고 말하는 궤적이다: *"as users use the system and as they build trust in the accuracy of the AI what we see is they work towards full automation"*(05:38~05:50)
+
+1. 리뷰를 받으며 정확도와 중요도를 확인한다(05:50~05:59).
+2. *"then they give teeth to the agent by allowing to start blocking the PRs"*(05:59~06:05)
+3. autofix로 리뷰·CI 실패를 자동 수정한다(06:05~06:15).
+4. *"where the real interesting leap is beginning to happen now is users setting up rules that define when the agent automatically approves and merges PRs."*(06:15~06:27)
+
+*"So over time as they build trust in the system, they unlock more levels of automation."*(06:27~06:33) 같은 사다리가 **제품의 설정 단계**로 구현된 첫 소스다. 승급 조건은 **관찰된 정확도**다(Huang의 *능력*, Lauren Tan의 *행동* 가운데 후자 쪽). ⚠️ 단계별 사용자 비율·기간·강등 사례는 미발화이고, 4단은 도달이 아니라 *"beginning"* 이다. 근거는 *"we're seeing actually a very interesting trend in our users"*(05:31~05:36)라는 벤더의 관찰뿐이다.
+
+## 소비자 쪽 사다리 — 부탁의 크기 (2026-10-15 · [[tech-bridge-alexandr-wang-muse-launch]])
+
+[[alexandr-wang|Alexandr Wang]]([[muse|Muse]])의 원음: *"you try to give it a little thing and it does it, like Oh wow, it did that! And then you try to give it a little bit something, like a little bit more, and then it does it (…) And then you give it, like, a little bit bigger of a of a problem, and it's kind of this, like, trust."*(07:17~07:37). 이 곡선의 다른 화자들은 서로 다른 것을 늘린다. Lauren Tan은 **병렬 에이전트 수**, Huang은 **권한의 경계**, Knox는 **검토 생략**이다. Wang은 **한 사용자가 맡기는 일의 크기**를 늘린다. 승급 조건은 **관찰된 성공**이라 Lauren 쪽에 가깝다. 해설은 이 사다리의 전제로 사람의 결정권을 든다(*"For small requests to build up, the user must retain the power to decide"* 07:37~07:45). 이메일·구매 전 확인이 그 예다(해설, Meta 자료 요약) → [[least-privilege-connectors]]. ⚠️ 측정은 없다. 원음 앞부분(*"we back in February had…"*)은 문장이 잘려 있다.
+
+## 좁고 검증 가능한 기둥부터 — incident triage (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"start with something narrow and verifiable, like incident triage. Let your agent read a sentry alert, pull the traces and other context, and then post in Slack, but keep it so your engineers can review this and decide what to do."*(07:06~07:22) 맞은 진단이 쌓이면(*"as more correct diagnoses roll in"* 07:24~07:26) 팀이 신뢰를 쌓는다. 한꺼번에 하면 *"your teams will not have time to build trust in this system."*(07:01~07:05)
+
+사다리의 첫 칸을 **도메인(사고 분류)** 으로 고르는 처방이다. 루프는 마지막이다: *"each step in the software factory needs careful ownership and monitoring before you even think about letting the the pipeline loop"*(07:34~07:43). 거버넌스 쪽 조건도 붙인다: *"you can't govern what you can't see"*(14:33~14:35). ⚠️ 측정은 없다. ko는 *"will not have time to build trust"* 를 "이 시스템을 믿으세요"(07:03)로, *"you can't govern what you can't see"* 를 "보이지 않는 것을 다스릴 수 있다"(14:29~14:33)로 뒤집는다.

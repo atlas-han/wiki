@@ -5,9 +5,9 @@ category: pattern
 tags: [spec, planning, agent, github, workflow]
 related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory]
 created: 2026-08-29
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Spec-Driven Development
@@ -138,6 +138,8 @@ spec은 **두 장**이다 — *"Product spec describes the product invariants th
 - 스펙에 안 적히는 것: *"It's not written in any spec that says and this will be easier to change in the future."*(27:32~27:38) → [[features-vs-futures]]
 
 > ⚠️ **Contradiction.** [[tech-bridge-sdd-enterprise-lessons]]는 use case 단위 SDD를 *"we don't do big upfront design"* 이라 하고, Beck은 *spec이 좋으면 소프트웨어도 좋다* 는 원샷 SDD를 겨눈다. **둘이 같은 대상을 말하는지는 불분명** — Beck은 SDD 도구나 반복형 SDD를 특정하지 않는다.
+
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) 계획 깊이를 **과제별로 고르는** 비용 모델 → [[expected-pain-planning]]: 두 문장 프롬프트 50% · 5시간 스펙 10% · 손 20시간 0% 재작업(직관 수치), *"don't over plan though"*(09:55~09:57).
 
 ## References
 

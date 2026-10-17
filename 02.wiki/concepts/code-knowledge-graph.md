@@ -3,11 +3,11 @@ title: Code Knowledge Graph
 type: concept
 category: pattern
 tags: [knowledge-graph, code-understanding, onboarding, developer-tooling]
-related: [llm-wiki-pattern, tree-sitter-llm-hybrid, generator-evaluator-pattern, agent-harness-design, large-scale-code-changes, agentic-search]
+related: [llm-wiki-pattern, tree-sitter-llm-hybrid, generator-evaluator-pattern, agent-harness-design, large-scale-code-changes, agentic-search, agentic-inquiry]
 first-seen: lum1104-understand-anything
-sources: [lum1104-understand-anything, james-ai-explorer-understand-anything, tech-bridge-graft-code-knowledge-graph, tech-bridge-sourcegraph-codebase-visibility]
+sources: [lum1104-understand-anything, james-ai-explorer-understand-anything, tech-bridge-graft-code-knowledge-graph, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-05-30
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Code Knowledge Graph
@@ -91,3 +91,7 @@ updated: 2026-10-09
 > *"The foundational graph of your codebase including search and then the actual compiler accurate output. (…) Visibility is infrastructure."* (08:38~08:57)
 
 ⚠️ 화자는 자사 제품의 기반을 설명하는 벤더다 — 그래프의 구축 방식·정확도·신선도([[incremental-index-freshness]])는 말하지 않는다.
+
+## 일회성 그래프 — 스킬로 그리는 호출 스택 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+[[guillermo-rauch|Guillermo Rauch]]가 X에서 본 사례(*"Dylan Monroe"*, ⚠️ 철자 미확인): 에이전트가 *"pseudo static analysis"* 를 하는 *"skill or maybe a skill plus an AST grab[=ast-grep] style tool"* 로 호출 스택을 그린다(07:41~08:17). 그의 논점은 **고정 도구 대비 유연성** — *"to do that only with syntactic tools and and AST parsing, you would have to every time create a new program to visualize what you just did or have a very rigid tool."*(08:19~08:33) [[understand-anything]]의 상시 그래프와 달리 **변경 직후 그때그때** 그린다 → [[agentic-inquiry]].

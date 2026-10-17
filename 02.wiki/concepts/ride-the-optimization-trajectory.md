@@ -6,9 +6,9 @@ tags: [agent-design, harness, tool-design, frontier-models, bet]
 aliases: [편법, hack, 프론티어의 궤적에 올라타기]
 related: [corpus-as-filesystem-workspace, file-system-agent, harness-pruning, agent-harness-design, llm-as-search-user, retrieval-primitive-repertoire, sutton-bitter-lesson, tools-and-context-over-harness]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-conductor-orchestras-not-factories, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-21
-updated: 2026-10-02
+updated: 2026-10-16
 ---
 
 # 모델이 최적화되는 방향에 올라타기
@@ -83,3 +83,7 @@ updated: 2026-10-02
 ## 쓰는 쪽의 짝 — "왜 이것이 기본값이 아닌가?" (2026-10-02 · [[tech-bridge-conductor-orchestras-not-factories]])
 
 [[charlie-holtz|Charlie Holtz]]([[conductor|Conductor]])의 [[dont-beat-the-market]]은 이 페이지의 **반대 방향 짝**이다 — 궤적 위에 얹으라는 게 아니라 **궤적이 해 줄 일은 직접 하지 마라**: *"if Ralph loops work for everyone, like if they are the default, um then you probably should just wait for Anthropic or OpenAI or whatever to build the uh workflow into the into the default harness"*(03:53~04:05). 투자할 곳은 *"real alpha"* — 모델이 모르는 사용자·코드베이스 정보(04:09~04:23). 같은 전제(랩이 범용 개선을 공급한다)에서 **설계자는 올라타고, 사용자는 기다린다.** ⚠️ 소스끼리 서로를 모른다.
+
+## ⚠️ 반례 일화 — 모델 교체가 조용한 회귀였다 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+[[unblocked|Unblocked]]의 code review 제품에서 검출 이슈 수가 줄기 시작했고(*"the number of issues that the code review product was surfacing was was starting to drop"* 04:23~04:30), 엔진이 찾은 *"likely cause"* 는 모델 전환과 *"the behavior characteristics behind the scenes"*(04:39~04:50)였다. 이 페이지의 *모델 교체 = 공짜 업그레이드* 와 반대 방향의 일화다. ⚠️ 버전은 en-orig에서 읽히지 않고(*"Opus 48 or Opus 46 to Opus 48"*), 원인은 *likely* 이며, 이슈 수 감소가 품질 저하인지(오탐 감소일 수도) 발화되지 않는다.

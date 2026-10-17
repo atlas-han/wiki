@@ -6,9 +6,9 @@ tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comm
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
 related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 created: 2026-09-26
-updated: 2026-10-10
+updated: 2026-10-16
 ---
 
 # 코드베이스 정원 가꾸기
@@ -111,3 +111,7 @@ updated: 2026-10-10
 - ⭐ **버퍼가 발화로 확인됐다** — React *"foot guns"* 를 찾는 에이전트에게 *"I don't actually tell it to fix the issue first. I tell it to append it to a document and then every couple of days I look at it and I say actually these are all the same thing"*(46:45~46:55), *"you almost want like a buffer a cue[=queue]"*(46:58~47:00) — 실행 모드에선 *"you sometimes miss the big picture"*(47:17~47:19).
 
 > ⚠️ **Contradiction(약), 이제 둘 다 본인 발화.** 위 09-25의 *"퍼지기 시작하기 전에 가능한 한 빨리 싹을 잘라야"* 와 이 *"fix the issue first"* 하지 않기. 위 절이 2차 요약이라 해소를 미뤘던 자리다. 위키의 독해: 버퍼 주기는 **며칠**이고 목적은 **같은 원인 묶기**라, 09-25의 *"린트 규칙으로 적어도 출혈은 멈춘다"* 와 결합하면 양립한다 — 화자는 둘을 잇지 않았다.
+
+## 진흙은 진흙을 키운다 (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+*"An agent can operate with much more effectively inside a code base that has structure, patterns, clear boundaries, and rationale. But if the system is already a big ball of mud, the agent does not rescue you from the mud. It just builds the ball bigger, faster."*(03:41~03:54) [[gabriel-martinez|Gabriel Martinez]]의 말로, "코드베이스는 에이전트의 기억"과 같은 기제를 다른 화자가 증언한 것이다. 근거가 되는 비용 서술: *"any line of code you write is a liability"*(02:55~02:56), Dijkstra의 *"lines spent"*(04:03~04:08, 화자 인용).

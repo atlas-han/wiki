@@ -6,9 +6,9 @@ tags: [credentials, sandbox, proxy, access-control, privilege-escalation, securi
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
 related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-09-10
-updated: 2026-09-25
+updated: 2026-10-17
 ---
 
 # 샌드박스 밖 자격증명 주입
@@ -80,3 +80,13 @@ updated: 2026-09-25
 ## 샌드박스 밖 서비스가 공격면이 된 사례 (2026-09-25 · [[tech-bridge-openai-huggingface-incident-black-hat]])
 
 이 원칙은 *자격 증명을 샌드박스 밖에 두라* 였다. [[hugging-face|Hugging Face 사건]]은 그 **바깥 쪽이 뚫린** 경우다 — 샌드박스는 인터넷이 없었지만 샌드박스가 신뢰하는 사내 패키지 관리자 [[artifactory|Artifactory]]는 인터넷이 있었고, SSRF·제로데이로 **관리자 토큰의 서명 키**까지 넘어갔다(14:05~14:28 · 24:15~24:22). 이후 에이전트들은 IMDS·쿠버네티스 서비스 계정·Azure Key Vault로 **샌드박스 밖 자격 증명을 연쇄 수집**했다(25:42~25:57). **바깥에 둔 자격 증명은 바깥 서비스의 공격면만큼만 안전하다.**
+
+## 넷째 자리 — 쿼리 재작성 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+[[bound-parameters]]의 넷째 자리 참조 — Unblocked는 tenant 필드를 LLM에게 숨기고 생성된 쿼리에 뒤에서 주입한다(14:03~14:12). 격리 대상은 자격증명이 아니라 **테넌트 경계**(*"It could cross tenant boundaries."* 08:38~08:40).
+
+## 게이트웨이가 자격증명을 쥔다 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"we're both an LLM gateway and an MCP gateway, and we even do off[=auth] like injection for just standard APIs and re-expose those as MCPs, too."*(12:33~12:43) 사람·에이전트는 키를 받지 않고 엔드포인트만 친다: *"all they have to do is hit that endpoint. And if they're on the tailnet, everything's authenticated as them"*(14:09~14:15). 같은 원칙(자격증명을 에이전트 밖에 둔다)의 **네트워크 게이트웨이 판본**이다 → [[ai-gateway]]
+
+화자가 꼽은 기존 게이트웨이의 실패는 자격증명을 옮기기만 하는 것이다: *"I've traded some keys for a bunch of other keys."*(09:26~09:28) ⚠️ 벤더 진술. 사용자 신원으로 인증된 요청을 에이전트가 보낼 때의 권한 범위는 다루지 않는다.

@@ -3,13 +3,13 @@ title: Braintrust
 type: entity
 category: org
 tags: [evals, observability, eval-platform, tracing, llm-ops, vendor]
-aliases: [Brain Trust, 브레인트러스트, 브레인 트러스트, braintrust.dev]
+aliases: [Brain Trust, 브레인트러스트, 브레인 트러스트, braintrust.dev, Brainest (ASR)]
 links:
   - "https://www.braintrust.dev"
   - "https://x.com/braintrust"
-sources: [tech-bridge-braintrust-eval-platform-systems-problem]
+sources: [tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-10-12
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # Braintrust
@@ -48,3 +48,18 @@ updated: 2026-10-12
 
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] · [[hossein-niazmandi]]
 - <https://www.braintrust.dev> · <https://www.braintrust.dev/docs/reference/sql> · <https://x.com/braintrust> (⚠️ 열어 보지 않았다)
+
+## 두 번째 화자 — eval 입문과 코드 검색 실험 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]](DevRel engineer, 자막에서 자기소개)이 말한 제품 기능(⚠️ 당사자 진술):
+
+| 항목 | en-orig |
+|---|---|
+| 실험 비교 UI | 실험 1과 2의 *"improvements or regressions"*, 행 단위로 바뀐 테스트 케이스(04:26~04:41) |
+| 자연어 질의 | *"summarize my experiments for me (…) highlight the problems in these experiments"*(04:49~04:55). 긴 multi-turn trace에서 *"hallucination or drift"* 를 잡는 데 쓴다(04:57~05:10) |
+| CLI · MCP | *"we also have a CLI and an MCP server if you prefer to do it that way"*(05:28~05:32) |
+| SDK observability | *"use the brain trust SDK to wrap your code um and then uh have your production logs show up"*(05:37~05:46) |
+
+실험(vector vs agentic search)에서 Braintrust는 trace를 보는 도구로만 쓰였다. 서브프로세스로 돌린 Claude Code의 trace가 고아가 되자 *"passing the parent span ids as environment variables"*(13:22~13:27)로 이었다. 두 검색 방식은 Braintrust 제품이 아니다. eval의 틀은 [[eval-experiment-anatomy]].
+
+⚠️ 표기: en-orig는 *"Brainest"*(00:02, 00:04, 05:46)와 *"brain trust"*(04:39, 05:35, 05:39)로 흔들린다. `en`은 *"Braintrust"*, ko는 "브레인트러스트". CEO는 en-orig *"Anker"*, `en` *"Ankur"*(08:42)이고 성은 발화되지 않는다.

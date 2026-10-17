@@ -3,9 +3,9 @@ title: Meta
 type: entity
 category: org
 tags: [frontier-lab, social, open-source, infrastructure, llama, glasses]
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-09-14
-updated: 2026-09-17
+updated: 2026-10-16
 ---
 
 # Meta
@@ -86,3 +86,7 @@ Facebook·Instagram·WhatsApp·Threads·스마트 안경·[[muse|Muse]]를 만�
 - **[[biohub|Biohub]]** — *"Meta 바깥에서 제 주된 자선 활동"*. ⚠️ 규모·시점·자금 없음.
 
 ⚠️ **[[confidential-vm|기밀 VM]]의 *"기술적으로 검증 가능"* 이라는 앞 편의 주장이 이번 편에서는 *"업계에서 견줄 데 없다"* 라는 비교 주장으로 바뀐다** — 비교 근거는 없다.
+
+## 세 번째 [[muse|Muse]] 소스 — Alexandr Wang (2026-10-15)
+
+[[tech-bridge-alexandr-wang-muse-launch]]: **Meta 소스 중 처음으로 화자가 [[mark-zuckerberg|Zuckerberg]]가 아니다.** [[alexandr-wang|Alexandr Wang]]은 해설 소개로 *"founded Scale AI and now leads Meta's AI research organization as Chief AI Officer"*(00:11~00:17)이다. 이 조직이 [[meta-superintelligence-labs|MSL]]인지는 소스가 말하지 않는다. 해설은 Meta의 배급 자산을 Muse의 출발 조건으로 든다. *"Meta was already reaching people through Instagram and WhatsApp."*(03:03~03:06, 해설). 인터뷰 다음 날(10-12) [[muse-wonder|Muse Wonder]]와 **Meta model API**, **Muse Code**가 발표됐다(해설, Meta 자료 요약).

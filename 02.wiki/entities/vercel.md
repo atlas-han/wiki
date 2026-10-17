@@ -4,10 +4,10 @@ type: entity
 category: org
 tags: [platform, web-infra, agent-infra, ai-sdk, nextjs]
 links:
-  - https://vercel.com
-sources: [tech-bridge-vercel-eve-filesystem-agent]
+  - "https://vercel.com"
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-16
 ---
 
 # Vercel
@@ -50,7 +50,24 @@ updated: 2026-09-19
 
 ⚠️ 발표 전체에서 **보안·권한·[[prompt-injection]]을 한 번도 다루지 않는다** — 시맨틱 레이어 전체를 샌드박스에 붓는 구조인데도 그렇다.
 
+## CEO 본인의 1인칭 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+[[guillermo-rauch|Guillermo Rauch]](CEO — 이름은 제목·설명란에만)가 David Ondrej(⚠️ 추정) 인터뷰 발췌에서 자기 작업 방식을 보인다. 이 위키의 **두 번째 Vercel 소스**이고 첫 CEO 발화다.
+
+| 제품 (이 소스) | 역할 |
+|---|---|
+| **[[fx]]** | Vercel Labs의 코딩 CLI — 셸처럼 부팅, 6MB/11MB, 임베드 가능 |
+| **fx0** | fx 위의 앱 생성 데모(HTML → 샌드박스 Next.js → Eve 에이전트), 오픈소스 예정이라 함 |
+| **[[v0]]** | 하네스에 *"like 90% of the engineering time"* 을 쓴 앱 생성 제품(회고) |
+| **Vercel Sandbox** | brain and hands의 *손* — *"the tool that we're giving it is the Vercel sandbox"*(05:51~05:56) |
+| *drives* | ⚠️ ASR — 신규 인프라로 보임, 정체 미확인. 에이전트에게 깨 보게 했다(03:23~03:33) |
+
+권장 아키텍처: *"the architecture that we recommend at Vercel is that you run the harness and then you give it tools."*(05:44~05:51) → [[brain-hands-decoupling]]. 보안 서사: 샌드박스로 공급망 공격을 *"eradicate"* 할 수도 있다(12:48~12:56, 화자 *"bold statement"*).
+
+⚠️ 09-19 소스에 대해 이 페이지가 적었던 *"보안·권한·prompt injection을 한 번도 다루지 않는다"* 는 Andrew Qu 발표에 대한 것이다 — 이번 소스는 보안을 **판매 논점**으로 전면에 둔다(엔터프라이즈 신뢰, 샌드박스 격리). 단 prompt injection은 이번에도 나오지 않는다.
+
 ## References
 
 - [[tech-bridge-vercel-eve-filesystem-agent]] · [[andrew-qu]] · [[eve-framework]] · [[nextjs]]
+- [[tech-bridge-vercel-rauch-agentic-workflow]] · [[guillermo-rauch]] · [[fx]] · [[v0]]
 - 관련: [[file-system-agent]] · [[framework-defined-agent-infrastructure]] · [[query-to-skill-distillation]] · [[company-knowledge-moat]] · [[agent-skills]]

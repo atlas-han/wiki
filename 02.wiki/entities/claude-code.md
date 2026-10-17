@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 links:
-  - https://code.claude.com/docs
+  - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-10-02
+updated: 2026-10-17
 ---
 
 # Claude Code
@@ -189,3 +189,13 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - **CLAUDE.md = 슬롭 없는 구역**: *"if you had a a new intern (…) you had the opportunity to like whisper something in their ear every time they started working (…) And this is what the cloud MD or agents uh MD is."*(06:28~06:49) 최고 빌더들은 *"put an unusual amount of time into the CloudMD or their skill files"*(06:17~06:23). → [[slop-free-zone]]
 
 ⚠️ en-orig는 Claude Code·CLAUDE.md를 일관되게 *"cloud code"*·*"cloud MD"* 로 들었고 ko는 *"클라우드 코드"*·*"클라우드 MD"*.
+
+## 2026-10-14 — 경쟁사 하네스가 플러그인으로 들어오다 ([[tech-bridge-codex-app-server]])
+
+[[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]]): *"We even used it earlier this year to put codeex into cloud code um using that same app server. So if you're still on cloud code uh and you want to use codeex from there either to have it review your code or um you know pass off task to codeex to handle it you can actually use that plugin"*(02:35~02:52). [[codex|Codex]]가 [[codex-app-server|App Server]]를 통해 **Claude Code 안의 플러그인**으로 돈다(코드 리뷰, 작업 위임). ⚠️ ASR *"cloud code"* → Claude Code는 문맥 판독이다(*"if you're still on"*, `en`·ko도 "Cloud Code"). 플러그인 이름·출시일은 발화되지 않았다.
+
+## 2026-10-17 — eval 하네스로 쓰기: 도구 차단과 서브프로세스 trace ([[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]])은 코드 검색 실험의 두 조건을 모두 Claude Code 하네스로 돌렸다. agentic 조건은 기본값 그대로였고(*"claude code uses agentic search by default"* 12:17~12:20), vector 조건은 프롬프트 금지만으로 부족해 *"disallowed tools flag"*(12:50~12:58)로 기본 탐색 도구를 막았다 → [[hard-vs-soft-enforcement]]. Claude Code를 서브프로세스로 실행하자 trace가 부모와 끊겨 *"run cloud agent"* 한 줄만 보였고, parent span ID를 환경 변수로 넘겨 모든 turn·LLM 호출·터미널 명령이 보이게 했다(13:14~14:16). ⚠️ 차단 도구 목록, vector 검색을 Claude Code에 붙인 방식, 환경 변수 이름은 발화되지 않는다.
+
+같은 날 업로드된 [[tech-bridge-factory-bug-report-to-production|Factory 편]]은 Microsoft가 Claude Code 라이선스를 회수했다는 헤드라인을(02:50~02:56, ⚠️ 출처 미제시), [[tech-bridge-tailscale-aperture-ai-without-lock-in|Tailscale 편]]은 Claude Code를 *"very vertically integrated tool chains"* 의 대표로(02:48~02:53) 든다.

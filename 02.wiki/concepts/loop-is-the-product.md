@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-loop, verifier, signal, ooda, self-improvement, auto-research, productization]
 aliases: [the loop is the product, loop is the product, 루프 자체가 제품, second loop, 두 번째 루프, OODA loop]
-related: [agent-recipes, taste-encoded-evals, valued-work-per-watt, verifiable-goals, generator-evaluator-pattern, self-harness, harness-engineering, ralph-wiggum-method, agent-loop-size, linear-vs-closed-loop-harness, openclaw, automated-ai-research]
+related: [agent-recipes, taste-encoded-evals, valued-work-per-watt, verifiable-goals, generator-evaluator-pattern, self-harness, harness-engineering, ralph-wiggum-method, agent-loop-size, linear-vs-closed-loop-harness, openclaw, automated-ai-research, back-pressure]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory]
 created: 2026-09-30
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # 루프가 제품이다
@@ -82,6 +82,10 @@ updated: 2026-10-11
 ## "loop maxing" — 개별 턴에서 루프로 (2026-10-11 · [[tech-bridge-cooking-with-codex]])
 
 [[charlie-guo|Charlie Guo]]([[openai|OpenAI]]): *"as you evolve that workflow, right, you want to go from just asking in individual turns to building loops, right? We've all heard about loop maxing. That is the new thing. (…) like what is it that the loop needs to be checking at each turn"*(1:02:22~1:02:38). 이 페이지의 *검증기* 질문(루프가 매 턴 무엇을 확인하나)을 하네스 제작사가 사용자에게 던진다. 제품 쪽 구현은 `/goal`(성공 기준으로 매 턴 자기 평가)과 heartbeat 자동화 → [[verifiable-goals]] · [[scheduled-agent-automations]]. ⚠️ *"loop maxing"* 의 출처·정의는 발화되지 않는다.
+
+## 반대 방향 — 루프를 두 질문으로 해체 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+[[dex-horthy|Horthy]]: *"This idea of loops was a little mystical"* — trigger(forward pressure) + 작업 중 피드백(back pressure)으로 나누면 된다(12:30~12:50) → [[back-pressure]]. 이 페이지의 *신호 → 행동 → 검증* 과 같은 골격을 **덜 신비하게** 부른다.
 
 ## References
 

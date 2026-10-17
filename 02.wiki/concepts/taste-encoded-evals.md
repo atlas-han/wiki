@@ -6,9 +6,9 @@ tags: [evals, llm-as-judge, taste, human-in-the-loop, calibration, ab-testing, m
 aliases: [taste into evals, codify taste into evals, 안목을 평가 지표로, eval calibration, judge calibration, 판정관 보정, HITL calibration]
 related: [taste-vs-judgment, agent-recipes, loop-is-the-product, valued-work-per-watt, generator-evaluator-pattern, skill-evals, skill-self-improvement, self-harness, verifiable-goals, production-trace-eval-flywheel, eval-platform-maturity-stages]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-09-30
-updated: 2026-10-12
+updated: 2026-10-16
 ---
 
 # 제작자의 taste를 eval로 (Taste-Encoded Evals)
@@ -68,6 +68,7 @@ updated: 2026-10-12
 - [[self-harness]] — 트레이스 → 약점 → 수정안 → **회귀 테스트**로 채택. 이 페이지의 채택 게이트는 **사람 보정 + 사용자 A/B**.
 - [[verifiable-goals]] — 주관 영역에 verifier를 세우는 문제(09-12 절). 이 페이지의 답: **verifier = 제작자 taste의 코드화 + 사용자 실험으로의 보정.**
 - [[production-trace-eval-flywheel]] — 같은 날(09-29) 업로드된 W&B ARIA 편의 *프로덕션 트레이스 → 오프라인 eval* 플라이휠. 트레이스에서 eval을 뽑는 방향이 같다. ⚠️ 비교는 그 페이지 쪽을 볼 것 — 이 페이지는 내용을 확인하지 않고 링크만 건다.
+- [[launch-blocking-evals]] ([[tech-bridge-alexandr-wang-muse-launch]]) — 행동 목록 eval의 행 단위 판정에서 빨강이 남으면 출시를 막는다(*"green on 80 of the rows but red on 20 of the rows. We knew that wasn't good enough"* 05:31~05:36). 여기에 제작자의 사용감을 한 겹 더한다(해설). 이 페이지의 *세 겹의 판정* 과 같은 방향이지만 목적은 출시 게이트다.
 
 ## ⚠️ 유보
 

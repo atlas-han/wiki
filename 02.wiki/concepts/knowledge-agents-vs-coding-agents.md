@@ -6,9 +6,9 @@ tags: [knowledge-work, agent-design, generalization, coding-agents]
 aliases: [지식 에이전트, knowledge agents, 코딩은 특수 사례]
 related: [knowledge-work-agent-gap, code-as-atypical-knowledge, orchestrator-searcher-split, tool-organization-loop, agent-org-adoption, workflow-vs-agent, assistance-vs-automation]
 first-seen: tech-bridge-knowledge-agents-not-coding-agents
-sources: [tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-10-16
 ---
 
 # 지식 에이전트 vs 코딩 에이전트
@@ -72,6 +72,10 @@ updated: 2026-09-21
 - [[assistance-vs-automation]] (09-19, [[diogo-almeida|Almeida]]) — **목적함수**로 가른다. 이 페이지는 **도메인**으로 가른다. **축이 다르고 겹칠 수 있다**: 지식 에이전트도 보조일 수 있다.
 - [[workflow-vs-agent]] — *경로가 미리 정해져 있는가*. 역시 다른 축이다.
 - [[agents-as-patient-specialists]] · [[agent-manager-analogy]] — **인간 조직 비유**를 쓴 선례. 다만 그쪽은 **관리**의 비유였고, 여기서는 **분업 구조 자체가 아키텍처**다.
+
+### 소비자 제품 쪽의 같은 선택 (2026-10-15 · [[tech-bridge-alexandr-wang-muse-launch]])
+
+[[benjamin-clavie|Clavie]]가 **설계 원리**로 "코딩 에이전트처럼 만들지 말라"고 했다면, [[muse|Muse]]는 **제품 포지셔닝**으로 같은 선택을 한다. 해설: *"the competition at the time was leaning toward coding agents. He set the starting point of the Muse app as a personal agent that integrates into daily life."*(02:56~03:03). 원음: *"Consumer AI. It's not work. It's not coding. It's personal."*(03:12~03:27, ⚠️ 화자 구분 미확정). ⚠️ 한 달 뒤 같은 브랜드에서 코딩을 돕는 [[muse-wonder|Muse Wonder]]·Muse Code가 나왔다. 포지셔닝과 모델 능력은 따로 움직일 수 있다.
 
 ## References
 

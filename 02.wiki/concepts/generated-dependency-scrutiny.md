@@ -6,9 +6,9 @@ tags: [security, supply-chain, dependencies, licensing, ai-assisted-development]
 aliases: [생성된 의존성, 소프트웨어 공급망, dependency validation]
 related: [shift-left-security, continuous-security-validation, secure-tool-evolution, credential-injection-outside-sandbox, behavior-validated-trust, ai-vulnerability-discovery]
 first-seen: tech-bridge-shift-left-security-ai-code
-sources: [tech-bridge-shift-left-security-ai-code]
+sources: [tech-bridge-shift-left-security-ai-code, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-16
 ---
 
 # 생성된 의존성 검토
@@ -63,6 +63,10 @@ updated: 2026-09-17
 - **모델이 만든 의존성과 사람이 고른 의존성을 다르게 다뤄야 하는지** 소스가 구분하지 않는다.
 - **환각된 패키지명**(존재하지 않는 패키지를 제안해 그 이름이 선점되는 문제)을 언급하지 않는다 — 이 위키에도 아직 소스가 없다.
 - **전이 의존성(transitive)** 의 깊이를 어디까지 볼지 없다.
+
+## 도입하는 쪽의 고민 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+[[guillermo-rauch|Guillermo Rauch]]([[vercel|Vercel]] CEO)가 에이전트에게 기존 프로젝트를 찾게 한 뒤(*"I don't want to reinvent the wheel from first principles"* 10:33~10:35): *"One of my biggest challenges today in adopting new software, both personally and as per sale[=Vercel], is understanding the security that that I'm taking on. Because, you know, supply chain attacks, because vibe coding, because (…) the surface of attack has become so massive as of recently."*(10:35~10:56) — 에이전트가 **의존성 후보를 찾아오는 속도**가 검토 부담을 키운다는 같은 진단의 CEO판.
 
 ## References
 

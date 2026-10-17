@@ -6,9 +6,9 @@ tags: [ux, adoption, anthropomorphism, personal-agent, meta, muse]
 aliases: [에이전트 이름 짓기, 아바타, agent naming]
 related: [agent-org-adoption, proactive-idea-feed, agent-trust-curve, agent-manager-analogy, goal-level-delegation, cognitive-offloading, ai-anthropomorphism]
 first-seen: tech-bridge-zuckerberg-muse-in-daily-use
-sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-altman-devday-dots, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-altman-devday-dots, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch]
 created: 2026-09-17
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 에이전트 이름과 아바타
@@ -25,6 +25,10 @@ updated: 2026-10-09
 | 진행자(무명) | **Pip** | *"한동안 Pip이었으니 그냥 갈 것 같긴 한데, 두고 봐야죠"* |
 
 > ⚠️ **두 이름 모두 ko 자막에서 사라졌다.** *a grippa* → *"그리파"*, *PIP* → **"PIP 프로그램 대상자"**(인사 제도로 오독). 위키는 en-orig와 바로 뒤 문장(*"로마 장군"*)·다른 출현(*"my muse pip"*)을 근거로 판독했다. **철자의 외부 근거는 없다.**
+
+### 제품 단위 캐릭터 — Jolly Bot (2026-10-15 · [[tech-bridge-alexandr-wang-muse-launch]])
+
+위의 Agrippa·Pip은 **사용자가 자기 에이전트에 붙인 이름**이다. [[muse|Muse]]에는 **제품 쪽 캐릭터**도 있다. 원음: *"The Jolly Bot was there"*. 첫 시제품부터 있었다(02:03~02:06). 해설: 사람들이 Muse 화면을 공유할 때 보이게 해서 *"make people remember the product’s name"*(06:21~06:30). 의인화가 **사용자 애착**(위)과 **바이럴 식별**(이 사례)이라는 두 목적에 쓰인다. ⚠️ 철자는 en-orig에서 *Jolly Bot*·*Jolie Bot* 으로 갈린다. 홍보 이야기는 해설 전언이다.
 
 ## 이름 짓기가 가장 어려운 단계였다 — 양쪽 다
 

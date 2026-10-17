@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [vertical-agents, internal-agents, context, build-vs-buy, differentiation]
 aliases: [기성 수직 에이전트 vs 자체 에이전트, 회사 지식 해자]
-related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering, agent-umwelt]
+related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering, agent-umwelt, run-trace-skill-distillation]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-runlayer-self-improving-skills-mcp]
 created: 2026-09-19
-updated: 2026-09-30
+updated: 2026-10-16
 ---
 
 # 회사 고유 지식이라는 해자
@@ -66,3 +66,7 @@ updated: 2026-09-30
 ## 2026-09-30 — 해자를 "증류 과정"에 두는 입장
 
 [[roland-gavrilescu|Roland Gavrilescu]]([[introspection-dev|Introspection]], [[tech-bridge-introspection-loop-is-the-product]]): *"System distillation is the moat."*(04:11~04:14) — 루프에서 배운 것(judge·eval·스킬·하네스 프로필)을 **모델·제공자와 무관한 Git 저장소**로 두면 *"a moat that keeps getting better over time … lives in your company"*(05:49~05:59)이 된다. 이 페이지의 **회사 고유 맥락 지식**과 자산은 같은 쪽(회사 안)이고 형태가 다르다 — 지식 그 자체가 아니라 **그것을 루프로 증류해 온 이력**. 모순이라기보다 같은 해자의 다른 층이다(⚠️ 위키의 정리). 이 페이지의 *⚠️ 인센티브를 보라* 는 여기에도 걸린다 — 화자는 레시피 제품(pi.recipes)을 판다. ko는 *moat* 를 **"모드"** 로 옮겨 이 주장을 지운다(04:14 · 05:47). → [[agent-recipes]]
+
+## 해자를 쌓는 장치 — 증류 플라이휠 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])는 해자를 *지식* 이 아니라 *지식을 쌓는 루프* 에 둔다: *"models are becoming commodity. (…) cost of software is going to zero"*(16:30~16:39) → *"I believe the mode[=moat] can be in building this flywheel and distilling the knowledge through this flywheel because it's like your own hard one[=hard-won] lessons distilled governed of how your company uh does things"*(16:55~17:09). 결론은 *"one thing that competitor can't copy your internal culture and your identity"*(17:30~17:35)이다. 근거로는 *"frontier intelligence is rented or borrowed"*(13:54~13:57)를 든다 — 모델은 빌린 것이고 증류된 절차는 회사의 것이라는 주장이다. ⚠️ Vercel(Qu)과 마찬가지로 그 루프를 파는 쪽이다. ko는 결론을 **"유일한 단점"**(17:31)으로 뒤집는다.

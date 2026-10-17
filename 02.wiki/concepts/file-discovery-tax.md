@@ -5,9 +5,9 @@ category: theory
 tags: [coding-agents, context-window, token-economics, tool-use]
 related: [context-engineering, context-anxiety, code-knowledge-graph, reference-graph-vs-vector-search, agent-harness-design, retrieval-augmented-generation]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-17
 ---
 
 # File Discovery Tax
@@ -42,7 +42,13 @@ updated: 2026-09-15
 
 > ⚠️ 절감 폭은 **프로젝트 크기에 비례한다.** 화자 본인의 단서: *"작은 프로젝트에는 애초에 아낄 검색이 별로 없다."*
 
+- **코드 밖까지 미리 묶어 주기 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])** — 엔진 없는 Claude는 *"the first thing it does is it grabs around your code base and and tries to figure out what's going on"*(02:30~02:34). [[context-engine|컨텍스트 엔진]]은 코드·Notion·PR·Slack을 과제별 묶음으로 미리 주고 시간이 약 3분 → 약 1분 30초로 줄었다(03:45~03:55, 세션 1건, 벤더 데모).
+
 ## References
 
 - [[tech-bridge-graft-code-knowledge-graph]] — 이 위키 첫 명시적 진단
 - [[graft]] · [[code-knowledge-graph]] · [[push-vs-pull-context-retrieval]]
+
+## 검색 방식이 세금을 4배로 바꾼다 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]])의 실험 태스크가 정확히 이 비용이다. LLM이 *"find the buggy code to locate where the logic the buggy logic lives"*(11:54~11:58). vector search 쪽이 4배 비쌌는데(14:58~15:01), 원인은 찾는 단계의 반복이었다: *"it was um constantly searching like returning a chunk of code and then searching again returning a chunk of code searching again and as a result um all of those LLM calls uh piled up"*(16:21~16:33). ⚠️ 비용 단위는 발화되지 않았고 약 20행이다.

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [learning, ai-tutor, cognitive-offloading, prompting, verification, education]
 aliases: [AI로 공부하기, AI 학습 역할, AI tutor roles, 도움받기 vs 생각 맡기기]
-related: [retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory]
+related: [retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # AI 보조 학습 — 역할 분담
@@ -49,6 +49,7 @@ updated: 2026-10-09
 - [[cognitive-offloading]] — Ng는 *무엇이 손상되는가*, Clyburn([[read-fluency-for-agent-output]])은 *읽기는 남긴다*, 이 패턴은 **역할별 분업표**로 같은 질문에 답한다.
 - [[generator-evaluator-pattern]] · [[automated-code-review]] — 6번(다시 쓰지 말고 짚기, 일부러 오류를 넣어 검토자 시험)은 코드 리뷰 에이전트의 결론과 같은 모양이다.
 - [[agent-memory]] — 8번의 *"AI가 지난 대화를 모두 볼 수 있다고 생각하지는 마세요"*(ko 11:24~11:26)는 사용자 쪽에서 본 메모리 한계.
+- **학교 구조로 (2026-10-13 · [[tech-bridge-hassabis-fry-creativity-future]])** — [[demis-hassabis|Demis Hassabis]]의 *"invert the classroom"*(38:12): 암기는 수업 밖에서 개인화된 AI가(*"it gives you more questions on that"* 38:31~38:33), 교실은 프로젝트·팀워크. AI를 *문제를 더 내주는* 시험관 역할로 쓰는 이 페이지의 방향과 같고, 그 분담을 시간표 단위로 끌어올린다 → [[ai-flipped-classroom]].
 
 > ⚠️ **화자와 내레이터의 무게가 다르다.** Saraev 원 제목은 *"So Fast with AI"*(속도), Tech Bridge 내레이션은 매 역할마다 의심의 단서를 붙인다. 이 페이지의 "조건" 열은 **거의 전부 내레이션**이다.
 

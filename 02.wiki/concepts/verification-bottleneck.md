@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive]
 created: 2026-09-13
-updated: 2026-10-10
+updated: 2026-10-16
 ---
 
 # 검증 병목
@@ -217,3 +217,21 @@ Voss 편의 *네 번째 답*(리뷰를 시스템으로 재건)과 같은 방향�
 - **표본, 그리고 고치는 대상은 환경** — *"you cannot be tasting every single dish"*(48:34~48:38) → 공장 품질 감독관처럼 표본을 *"very rigorously"* 보고(48:47~49:13), *"course correct the environment, right? Not not that single agent"*(49:17~49:22). 일회성이면 그대로 두고, 여러 에이전트가 같은 우회책을 퍼뜨리면 스킬·제약·린트·타입을 고친다(49:26~49:59).
 - **사람이 병목인 자리를 계속 묻는다** — *"where am I the bottleneck in this process? Why do my agents need me, you know, to answer this question?"*(36:56~37:03), 답은 *"not by hallucinating, not by guessing, but actually real data"*(37:09~37:13) — 바깥 루프([[grokbot]]).
 - ⚠️ **한계를 본인이 말한다** — 검증하기 어려운 영역의 one-way door엔 *"I don't really have the answer to"*(56:29~56:34). 자동 머지 후 회귀·되돌림 비율은 제시되지 않는다. → [[action-reversibility]] · [[trusted-throughput]]
+
+## CI까지 한 에이전트로 — "slow down" vs "rubber stamp" (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[ali-reza|Ali-Reza]]([[gitar|Gitar]] → [[sonar|Sonar]])는 병목에 **두 나쁜 선택**이라는 이름을 붙인다: *"Either you slow down and ask developers to review every PR very carefully or you rubber stamp PRs and you risk incidents in production."*(03:09~03:16) 원인은 *"more PRs than before, uh, thanks to AI, and bigger PRs"*(02:48~02:53)이고, 그 결과 *"your costs in your development life cycle are kind of shifting to the right"*(02:56~03:00).
+
+- 답은 *"Of course, it's more AI."*(03:27~03:31) 리뷰만이 아니라 **CI 실패 분석·flaky 탐지·자동 수정·자동 승인·머지까지** 한 에이전트 파이프라인으로 묶는다. 이 페이지의 기존 답들이 대부분 리뷰를 다시 짜는 쪽이었던 것과 다르다.
+- 사람이 어디에 남는지는 말하지 않는다. 자동 승인 조건은 *"you can define rules and conditions"*(05:18~05:29)로 사용자에게 넘긴다. 자동 머지 후 회귀율도 없다. Lauren Tan 섹션이 지적한 공백과 같은 자리다.
+- ⚠️ 벤더 발표이고 수치가 없다.
+
+## PR을 기다리지 않는 리뷰 — 철회의 당사자 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
+
+Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-horthy|Dex Horthy]]가 직접 근거를 낸다: agentic형 공장에서 빌드는 *"minutes or hours"*, 리뷰는 *"still takes hours or days"*(04:31~04:37), agentic 코드 리뷰로 당겨도 *"it may still be the bottleneck"*(04:43~04:47). 그의 답은 셋 — ① 계획을 앞에(*"20 minutes 30 minutes up front can save you hours during review"* 09:19~09:24, [[expected-pain-planning]]) ② 에이전트에게 back pressure([[back-pressure]]) ③ ⭐ *"every agent running anywhere as it's writing code the diffs are streaming to the cloud. So we can do code review uh without waiting for pull request."*(15:22~15:31 — 자사 제품, ⚠️ 당사자 진술). 근거로 든 5월 리포트(*"code review uh uh quality is way down (…) incidents per PR is way up"* 01:58~02:08)는 **이름·수치 미발화**.
+
+## "생성은 싸고 평가는 비싸다" — 리뷰 면을 줄이는 답 (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+[[gabriel-martinez|Gabriel Martinez]]: *"Generation is cheap, but evaluation is expensive. If AI produces more than humans can possibly evaluate, it has not accelerated the team, it has created a bottleneck."*(10:05~10:17) 기제는 **모호함을 넘기는 것**이다. 10줄짜리 범위를 받아 20페이지 문서로 돌려주면(09:19~09:26) *"the real work has just moved to the reviewer."*(10:00~10:02)
+
+답은 리뷰 자동화가 아니라 **리뷰할 면을 줄이는 것**이다. 작은 원자적 변경(10:52~10:58), 다이어그램·선언적 코드로 만든 [[compressed-review-surface|압축된 리뷰 표면]](12:31~12:57), 관례(13:46~13:58)가 그 수단이다. 하루 전 업로드된 [[tech-bridge-gitar-agentic-pr-validation|Gitar 편]]의 *"Of course, it's more AI"*(03:27~03:31)와 정반대 방향이다. 다만 Martinez도 자사 에이전트 도구(ORC)로 발표를 맺는다.

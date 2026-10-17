@@ -6,9 +6,9 @@ tags: [parameters, identity, pii, jwt, oidc, zero-trust, security, tool-design]
 aliases: [bounded parameters, authenticated parameters, 바운드 파라미터, 인증된 파라미터]
 related: [agent-identity-separation, secure-tool-evolution, credential-injection-outside-sandbox, confused-deputy-attack, lethal-trifecta, agent-governance-layers, multiplayer-agent-context]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-voice-agent-failure-modes, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-11
-updated: 2026-09-19
+updated: 2026-10-16
 ---
 
 # 바운드 파라미터와 인증 파라미터
@@ -56,6 +56,10 @@ updated: 2026-09-19
 | 동기 | 멀티플레이어 권한 상승 | 혼동된 대리인 · PII |
 
 둘 다 **에이전트 손에 신원을 두지 않는다.** [[anthropic-managed-agents]]의 *토큰을 샌드박스 밖에* 까지 합치면 같은 원칙이 **세 소스·세 자리**(vault+프록시 / 프록시 / 도구 파라미터)에서 나왔다. 세 소스는 서로를 모른다.
+
+### 넷째 자리 — 생성된 쿼리의 실행 직전 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+[[unblocked|Unblocked]]의 쿼리 엔진은 tenant ID를 담은 메타데이터 필드를 *"you're better off making sure that the LLM doesn't interact with those fields at all and then just constraining it behind the scenes. You can inject those fields underneath."*(14:03~14:12)로 다룬다. 도구 시그니처(Google Cloud)·프록시(PromptQL)가 아니라 **LLM이 만든 쿼리를 검증하면서 tenant 조건을 덧붙이는 자리**다 — 쿼리 자체를 LLM이 자유롭게 쓰는 경우의 같은 벽.
 
 ## ⚠️ 미해결
 

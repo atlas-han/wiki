@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, context, automation, no-human-gate]
 aliases: [쿼리 증류, 스킬 자동 증류]
-related: [agent-skills, skill-self-improvement, agent-knowledge-sourcing, context-engineering, sweeper-agent, no-silent-write]
+related: [agent-skills, skill-self-improvement, agent-knowledge-sourcing, context-engineering, sweeper-agent, no-silent-write, run-trace-skill-distillation]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-runlayer-self-improving-skills-mcp]
 created: 2026-09-19
-updated: 2026-09-24
+updated: 2026-10-16
 ---
 
 # 쿼리를 스킬로 증류하기
@@ -65,3 +65,7 @@ updated: 2026-09-24
 ## 짝이 하나 더 — 버전 교체형 승격 (2026-09-24)
 
 [[tech-bridge-oracle-agent-memory-harness]]의 **스킬 승격**은 이 페이지와 같이 **성공**에서 배우고 **게이트를 말하지 않지만**, 재료가 *질의 다수*가 아니라 **성공한 긴 세션 하나**이고, 결과가 *새 스킬 추가*가 아니라 **기존 skill.md를 증류한 새 버전으로 교체 · 옛 버전 은퇴**다(36:47~37:04). → [[skill-self-improvement]]의 3자 비교표.
+
+## 질의 대신 실행 트레이스 — Runlayer (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+같은 "게이트 없는 자동 증류" 계열이지만 재료가 다르다. Vercel은 *성공한 질의의 반복 형태* 를 증류하고, [[runlayer|Runlayer]]는 *실행 트레이스(성공 + 실패)* 를 증류한다. Runlayer는 결과를 MCP로 **전사에 배포**한다 → [[run-trace-skill-distillation]]. 두 소스 모두 증류된 스킬을 누가 검토하는지 말하지 않는다. Runlayer는 프롬프트 인젝션·PII 자동 검사만 언급한다(15:18~15:27).

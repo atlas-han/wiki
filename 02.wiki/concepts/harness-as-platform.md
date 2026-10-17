@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [harness, platform-engineering, agent-skills, plugins, runtime-loading, organization, subagents]
 aliases: [harness as a platform, 하네스 제공자, providers of the harness, 골격 고정 + 런타임 스킬]
-related: [harness-engineering, agent-skills, deferred-tool-context, deterministic-agent-pipeline, agent-harness-design, model-context-protocol, skill-self-improvement]
+related: [harness-engineering, agent-skills, deferred-tool-context, deterministic-agent-pipeline, agent-harness-design, model-context-protocol, skill-self-improvement, embedded-agent-harness, codex-app-server]
 first-seen: tech-bridge-uber-debug-assist
-sources: [tech-bridge-uber-debug-assist]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-codex-app-server]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 플랫폼으로서의 하네스 (Harness as Platform)
@@ -33,6 +33,14 @@ updated: 2026-10-09
 - **스킬 품질·거버넌스** — 크라우드소싱된 스킬을 누가 검토·승격하는지, 충돌하면 어떻게 하는지 발화 없음. [[agent-skills]]의 거버넌스 경고(*"거버넌스 없으면 새 기술부채"*)가 그대로 적용된다.
 - **서브에이전트 10,000개의 선택 문제** — 플러그인 3,000개에서 생긴 *"It goes crazy"* 가 서브에이전트 층에서 다시 생길 자리. 라우팅 방식 미발화.
 - **단일 소스** — 한 회사 한 팀의 자기 보고.
+
+## 하네스를 사서 앱에 박는다 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+조직 안 플랫폼 팀이 아니라 **벤더가 하네스를 제공**하는 판. [[guillermo-rauch|Guillermo Rauch]]: [[v0]]를 처음 만들 때 *"like 90% of the engineering time"* 이 하네스(AI SDK·모델·프롬프트·툴 호출)에 들었고(04:59~05:14), 지금 v0·Gamma·Notion 같은 *"anything that requires sort of agentic intelligence to be embedded"* 를 만든다면 *"I would want to pick a harness off the shelf"*(04:20~04:37). [[fx]] 위 fx0 데모는 *"probably like I don't know, 100 lines of code"*(05:15~05:21). 고객 요청도 같은 방향 — 자기 system of record 안의 앱 생성, 사내용 *"software factory where one of the capabilities is design"*(06:31~06:49). ⚠️ 자사 제품 판매 맥락, 수치는 회고·추정. [[tools-and-context-over-harness]](하네스는 고정, 노력은 도구·컨텍스트에)와 같은 결론을 **임베드 제품 팀** 쪽에서 낸다.
+
+## 파는 쪽의 사용 설명서 — Codex App Server (2026-10-14 · [[tech-bridge-codex-app-server]])
+
+Uber의 *"we are the providers of the harness"* 를 이번엔 **하네스 제작사가 외부 개발자에게** 말한다. [[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]]): Codex app·IDE 확장·Xcode·JetBrains·T3 Code가 *"all of these are powered by the same harness, the same app server"*(02:30~02:33). 분업은 Uber와 같은 모양이다 — 골격(하네스)은 제공자가, 확장(developer instructions·dynamic tools·인터페이스)은 사용자가 낸다. 다른 점은 둘. **회사 경계 밖**이고, 확장 규칙(버전 번들 · deferred · system prompt 교체 금지)을 **제공자가 정한다**. → [[embedded-agent-harness]] · [[codex-app-server]]
 
 ## References
 

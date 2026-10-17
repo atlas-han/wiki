@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-09-10
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # OpenClaw
@@ -31,6 +31,7 @@ updated: 2026-10-12
 | [[tech-bridge-introspection-loop-is-the-product]] (2026-09-29) | en-orig *"Clawbot"* · *"Open Claw"* · *"open cloud"* | [[roland-gavrilescu]]([[introspection-dev\|Introspection]]): ⭐ **옛 이름**을 말한다 — *"Clawbot? That was the original I original name of what is now now now known as Open Claw"*(01:35~01:42). *"this guy, AJ"* 가 그 위에 만든 **자동차 할인 협상 루프**를 *"the first real example of loop is the product"* 로 든다(01:45~02:36) → [[loop-is-the-product]] |
 | [[tech-bridge-agentcraft-strategy-game]] (2026-10-07 업로드) | en-orig *"open claw"* (ko "오픈클로") | [[ido-salomon]]([[agentcraft]]): 지도 위 유닛이 *"an actual representation of uh cloud[=Claude] code or open claw, whatever agent that you can imagine"*(02:19~02:25) — **코딩 에이전트와 나란히 감독 대상 에이전트**의 예로 |
 | [[tech-bridge-stigg-ai-companies-building-banks]] (2026-10-11 업로드) | en-orig *"open flow"*(01:41) · *"open claw"*(02:35, 02:44) (`en`·ko *"OpenFlow"*·*"Open Claude"*) | [[dor-sasson]]([[stigg]]): ⭐ **첫 정책 사건** — Anthropic이 4월 서드파티 에이전트의 구독 플랜 사용을 끊었고, 그 전엔 Claude Max 구독 안 OpenClaw 사용을 보조했다(⚠️ 화자 주장) |
+| [[tech-bridge-alexandr-wang-muse-launch]] (2026-10-14) | 챕터 *"OpenClaw"*, ko *"오픈 컬로"*, ⚠️ en-orig 해설 *"OpenAI's tools"* | (해설) [[nat-friedman|Nat Friedman]]이 일찍 써 보고 *"a mix of excitement and anxiety"* 를 전했고, 이것이 [[muse|Muse]]의 출발점이 된다(01:02~01:16). **OpenClaw로 읽은 것은 챕터 기준 판독**이고 원음은 자막에 없다 |
 
 ## 소스들이 합쳐 말하는 것 (위키의 종합, ⚠️ 추정)
 
@@ -75,3 +76,7 @@ updated: 2026-10-12
 - ⚠️ 01:41은 ASR *"open flow"* 다 — OpenClaw로 읽는 것은 02:35 *"open claw"* 와 설명란(*"Anthropic의 OpenClaw 차단"*)에 기댄 판독. 차단 범위는 *"and other third-party agents"* 로 OpenClaw만이 아니다. *"claw claw max"* → Claude Max도 판독(`en`·ko는 Max 탈락).
 - ⚠️ 150~750의 **단위 미발화**(설명란의 *"사용자당 … 배"* 는 업로더 해석). 보조 규모·Anthropic의 내부 사정(*"didn't have a an effective way to delineate between users who are using their APIs and users are using their subscription programs"*, 03:13~03:22)은 **경쟁 관계 없는 벤더 CEO의 주장, 출처 미제시.** 이 위키는 Anthropic 쪽 발표를 확인하지 않았다.
 - **여전히 어느 소스도 OpenClaw의 제작자·기능을 설명하지 않는다.**
+
+## 게이트웨이 뒤에서 돌리는 개인 사용자 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"people are running something like Open Claw[=OpenClaw] with on Tailscale"*(18:22~18:25). 백그라운드에서 돌다가 *"It did something it was not supposed to do."*(18:30~18:32)라는 일이 생기면, 게이트웨이 로그로 *"you can actually diagnose where it went wrong"*(18:36~18:39)라고 한다. 개인 사용자가 OpenClaw 같은 상시 에이전트를 [[ai-gateway]] 뒤에 두는 이유가 **사후 진단**이라는 진술이다. ⚠️ 일화이고 사례·수치는 없다. ko는 이 문장을 "꼬리비늘에 발톱이 열려 있고"(18:21)로 옮긴다.

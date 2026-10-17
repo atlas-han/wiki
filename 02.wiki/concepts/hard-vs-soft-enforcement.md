@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
-related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine]
+related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-17
 ---
 
 # 하드 강제와 소프트 강제
@@ -118,3 +118,27 @@ updated: 2026-10-09
 ## 전이가 없으면 강제할 필요도 없다 — 구성상 하드 강제 (2026-10-09 · [[tech-bridge-goodbye-slop-state-machines]])
 
 [[david-khourshid|David Khourshid]]는 메가 프롬프트가 규칙을 **프롬프트와 도구 설명에 반복**하는 것을 소프트 강제의 전형으로 든다 — *"Only call this after the user approves it."*(06:37~06:41), *"Obviously, you should never write tools like this where the tool is part of the control flow"*(06:41~06:47). 명시적 상태 머신에선 drafting·reviewing에서 send로 가는 전이가 없어 전송이 *"mathematically impossible"*(08:27~08:38) — 게이트를 건너뛸 수 없는 게 아니라 **게이트 밖으로 가는 길이 없다.** CI·훅이 사후에 막는 층 위에, **경로 자체를 그래프로 정의하는 층**이 하나 더 있다. → [[agent-state-machine]]
+
+## 에이전트에게 "이빨"을 준다 — 코멘트에서 머지 차단으로 (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
+
+[[gitar|Gitar]]에서는 리뷰 코멘트(소프트)를 *"block merging if there are any unresolved code review findings"*(04:25~04:31)로 하드 게이트로 올리는 것이 설정 하나다. 사용자는 신뢰가 쌓인 뒤에야 이 설정을 켠다: *"then they give teeth to the agent by allowing to start blocking the PRs"*(05:59~06:05). 소프트에서 하드로 가는 이동을 **신뢰가 결정한다**는 점이 새롭다. 같은 발표는 CI를 *"it enforces all your quality gates centrally"*(00:48~00:51)라고 규정한다. 프로그램 분석과의 결합은 [[agent-plus-program-analysis]] 참고.
+
+## 소프트 층이 실패하는 기제 — compaction, 그리고 승격 재료가 트랜스크립트로 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[greg-pstrucha|Greg Pstrucha]]([[sentry|Sentry]])는 이 페이지의 결론(말해 두는 것은 강제가 아니다)에 이른 **네 번째 화자**다. Lauren Tan, [[matt-pocock|Pocock]], [[joel-quenneville|Quenneville]]에 이어 그는 소프트 층이 무너지는 기제를 하나 명시한다. *"5 minutes pass and compaction of context happens and we're back to back to square one. And you would have to now repeat yourself, re-prompt your fixes"*(01:26~01:37). 테제는 *"you should stop prompting. You should start codifying the actual rules"*(01:47~01:51)다.
+
+- **비용 구조의 역전**: AI 이전에는 linter의 작성·유지 비용(03:35~03:44)이 사람의 기억(*"people have memory"* 04:07~04:08)보다 비쌌다. 지금은 *"the things that are writing code do not have any memory"*(04:16~04:18)이고, *"to write a new linter is very cheap and very easy. You can just have the agent do that"*(04:27~04:31).
+- **승격 재료와 주기**: Pocock의 retro 스킬은 PR·리뷰를 회고했다. Pstrucha는 재료를 **에이전트 트랜스크립트 + 봇·동료 리뷰**로 넓힌다(04:46~05:05). 주기는 **스케줄**이다(*"sort of on the schedule"* 05:09~05:16). → [[scheduled-agent-automations]]
+- **결정론 층 셋**: 테스트·strict typing·linter(02:35~02:41). 단서가 붙는다. 타입이 있어도 원치 않는 상태가 표현 가능하면 *"the states that are representable in the app are going to lead the agent to introduce them"*(03:09~03:15). 바로 위 Khourshid 절의 "구성상 하드 강제"를 타입 시스템 쪽에서 말한 것이다.
+
+> ⚠️ **Rails 절의 "통과/실패 게이트 vs 점수 목표" 독해에 대한 반례(약).** Pstrucha의 스킬 lint는 통과/실패 게이트인데도 에이전트가 코드 블록 삭제 → 백틱 제거 → 산문 → URL 순으로 피해 갔다(08:39~09:25, *"whack-a-mole"* 09:27). 그는 규칙을 덧대 수렴시켰고 *"wasn't that expensive"*(09:35)라고 했다. 점수형 목표(커버리지)에서는 Quenneville과 같은 쪽이다(14:09~14:36). 따라서 구분 기준은 "점수냐 통과/실패냐"보다 **"검사가 의도의 대리물인가"** 일 수 있다. → [[skill-linting]] · [[reward-hacking]]
+
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) 남이 카탈로그한 규칙을 가져다 쓰는 경로: *"This is Dylan Mulroy. There's about a hundred anti-slop rules. He literally just like went through and cataloged every anti-pattern that agents put in the TypeScript code base and built excellent rules for them."*(11:30~11:42) — [[tech-bridge-sentry-stop-prompting-codify-linters|Pstrucha]]의 *자기 트랜스크립트 → lint* 와 짝(같은 주 업로드). ⚠️ 저장소 URL은 화면에만, 철자 미확인.
+
+## 관례 자체가 결정 면을 줄인다 — Rails (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
+
+[[gabriel-martinez|Gabriel Martinez]]는 Rails를 *"a framework aggressively reduces decision surface"*(14:07~14:10)의 예로 든다. *"Environments with a single correct way of doing things are superior for agentic development because agents aren't confused by dozens of competing approaches."*(15:01~15:09) [[tech-bridge-rails-harness-engineering|Quenneville]]가 같은 Rails 관례를 RuboCop·제너레이터·훅으로 **강제**한다면, Martinez는 **관례가 있다는 사실 자체**가 사람과 에이전트의 인지 오버헤드를 줄인다는 쪽에서 말한다(*"Unless tamed, it exacerbates it"* 13:28~13:30). 강제 메커니즘은 말하지 않는다. 대비 사례로 *"JavaScript."*(14:57)를 든다.
+
+## eval 통제에도 같은 원칙 — 프롬프트 금지에서 도구 차단으로 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]])은 Claude Code가 vector search만 쓰도록 하려고 먼저 프롬프트로 agentic search를 금지했다. *"but if you've ever done this before, you know that prompting is never enough. So what we also had to do is use the uh disallowed tools flag to prevent uh cloud code from calling certain things"*(12:45~12:58) 에이전트가 잊을 수 있는 층(프롬프트)에 강제를 맡기지 않는다는 이 페이지의 원칙이 **실험의 변수 통제**에 쓰인 사례다. ⚠️ 차단한 도구 목록은 발화되지 않는다. ko는 *flag* 를 "국기"(12:50)로 옮긴다.

@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp]
 created: 2026-09-05
-updated: 2026-09-23
+updated: 2026-10-16
 ---
 
 # Harness Pruning
@@ -109,3 +109,7 @@ pruning은 축소가 아니라 **재배치**다.
 > **주변에 지나치게 많은 지원 체계를 구축하면, 실력이 향상될수록 불필요하게 그들의 발전을 제약하게 됩니다.** 그리고 이런 물건들을 버리기 싫다는 생각 때문에 **일종의 매몰 비용 오류**에 빠지게 됩니다. (16:26~16:36)
 
 → [[tools-and-context-over-harness]]. 이 페이지가 *"무엇을 언제 지울 것인가"* 라면, Lopopolo는 **지워야 할 것(모델 결함 보완)을 하네스에 넣지 말고, 낡지 않는 것(도구·문서)만 쌓으라**고 한다. 그리고 이 페이지의 ⚠️ 유보 — *지울 권한이 한곳에 있어야 한다*(Anthropic 팀은 하네스를 소유한다) — 에 대한 **사용자 쪽 답**이기도 하다: 하네스를 소유하지 않는 사람은 지울 수 없으니 **처음부터 거기에 걸지 않는다.** ⚠️ 매몰 비용이라는 **심리적** 원인을 처음 명시한 소스다.
+
+## 반대 방향의 주장 — 스킬은 모델 교체를 견딘다? (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+> ⚠️ **긴장.** 이 페이지는 하네스 기능을 *"현재 모델이 가지고 있는 몇 가지 오류 모드를 보완"* 하는 것으로 보고, 모델이 좋아지면 지운다. [[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])는 반대로, 증류한 스킬이 *"resistant against model intelligence deprecation"*(17:19~17:25)이라며 지능을 빌린 동안 절차를 남기라고 한다. 그의 사례 스킬은 **Sonnet 4.6의 실패에서** 증류됐다(12:36~13:16). 다음 모델에서 그 스킬이 불필요하거나 방해가 되는지, 언제 은퇴시키는지는 다루지 않는다. 두 입장은 *모델 결함 보완물*(지운다)과 *회사 고유 절차*(남긴다)를 구분하면 양립할 수 있지만, 자동 증류는 그 둘을 구분하지 않는다.

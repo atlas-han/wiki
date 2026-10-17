@@ -6,9 +6,9 @@ tags: [harness-engineering, agent-loop, anti-pattern, automation, human-in-the-l
 aliases: [human plumbing, 인간 배관, 사람이 배관 노릇, human plumbing loop]
 related: [harness-engineering, linear-vs-closed-loop-harness, shift-left-interventions, hook-enforced-workflow, verifiable-goals, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-rails-harness-engineering
-sources: [tech-bridge-rails-harness-engineering]
+sources: [tech-bridge-rails-harness-engineering, tech-bridge-horthy-state-of-software-factory]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 인간 배관 (Human Plumbing)
@@ -39,6 +39,7 @@ updated: 2026-10-09
 - **[[shift-left-interventions]]** ([[ryan-lopopolo|Lopopolo]]) — *"게으른 프롬프터"* 가 되려는 것과 같은 동기, 다른 이름. Lopopolo는 **프롬프트에 넣는 손**을, Quenneville은 **결과를 나르는 손**을 줄인다.
 - **[[verifiable-goals]]** — 루프가 돌려면 사람 없이 판정할 수 있는 종료 조건(테스트·cop)이 있어야 한다.
 - **[[skill-self-improvement]]** — retro 스킬이 *"어디서 개입했나"* 를 세션 히스토리에서 찾아 자동화를 제안한다.
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) 팀 단위의 같은 모양: *"I'm talking to my agent and I copy something out and I paste it into Slack or Teams. My my teammate reads it, they paste it into their agent, they get an answer, they paste it back to me."*(13:39~13:49) — 해법을 하네스가 아니라 **세션·계획·프롬프트의 system of record**로 둔다 → [[agent-platform-layers]].
 
 ## ⚠️ 유보
 

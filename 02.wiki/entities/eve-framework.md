@@ -5,10 +5,10 @@ category: tool
 tags: [agent-framework, file-system, vercel, open-source-adapters]
 aliases: [Eve]
 links:
-  - https://eve.dev
-sources: [tech-bridge-vercel-eve-filesystem-agent]
+  - "https://eve.dev"
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-vercel-rauch-agentic-workflow]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-16
 ---
 
 # Eve
@@ -53,6 +53,10 @@ updated: 2026-09-19
 - 채널이 무엇인지(Slack? 웹? 전화?) 나열되지 않는다.
 - 스킬 폴더와 [[query-to-skill-distillation|자동 증류]]의 관계 — 증류 잡이 Eve의 일부인지 별개인지 불명.
 - **보안 모델이 없다.** 격리는 샌드박스뿐이고 [[agent-governance-layers]]·[[agent-identity-separation]]에 해당하는 서술이 전무하다.
+
+## fx0에서 생성되는 Eve (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
+
+[[guillermo-rauch|Guillermo Rauch]]의 [[fx]] 임베드 데모 fx0의 세 번째 모드: *"we gave it a third one, which is agent, and it creates an Eve agent when you give it a prompt."*(06:10~06:18) — Eve가 **앱 생성기의 출력물**로 등장한다(사람이 폴더를 선언하는 대신 프롬프트에서 Eve 에이전트를 만든다). ⚠️ 생성 결과물의 구조는 화면 정보라 자막에 없다. ko는 *"이브에게 지시를 내릴 때"* — Eve를 사람으로 옮겼다.
 
 ## References
 

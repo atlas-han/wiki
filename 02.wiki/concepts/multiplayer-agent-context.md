@@ -6,9 +6,9 @@ tags: [multiplayer, shared-agent, slack, knowledge-creation, privilege, incident
 aliases: [공유 AI, 멀티플레이어 에이전트]
 related: [company-brain, credential-injection-outside-sandbox, claude-tag, goal-level-delegation, persistent-agent-teams, no-silent-write, agent-org-adoption]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game]
+sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-horthy-state-of-software-factory]
 created: 2026-09-10
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 멀티플레이어 에이전트 컨텍스트
@@ -82,3 +82,7 @@ updated: 2026-10-09
 [[agentcraft|AgentCraft]]의 **방(room)** — 완전 로컬 호스팅에 터널로 사람을 들이고 승인한다(08:21~08:46). 화자의 아내(프로덕트 디자이너)가 디자인하는 것을 엔지니어가 지도에서 보고 *"I can take that design, follow up on it, implement it while she keeps working"*(09:07~09:12) — **hand off·fork**. [[conductor|Conductor]] 데모와 달리 채팅이 *"not only between uh the people within the room, but also between agents"*(09:26~09:34)이고, 공용 **게시판**(notice board)에서 *"They're all aware of each other"*(09:34~09:41). 모바일·Telegram에서도(09:53~09:59). → [[design-handoff-friction]]
 
 > ⚠️ 이 페이지가 미해결로 둔 **권한 상승**·**동시 지시 충돌**은 여기서도 다뤄지지 않는다. *"I'm not really bound anymore to get[=Git]"*(09:18~09:23) — Git 밖의 공유 워크스페이스에서 충돌·병합이 어떻게 처리되는지도 발화되지 않는다.
+
+## 2026-10-15 — 로컬 세션에도 사람을 끌어온다 ([[tech-bridge-horthy-state-of-software-factory]])
+
+[[humanlayer|HumanLayer]]: *"I can see everything my team is working on. I can jump into a teammate session. I can invite people to co-prompt my session. Not even in the cloud, like it can be running on my laptop and I can pull somebody into my cloud code[=Claude Code?] session."*(15:06~15:16) + Google Docs·Notion 모양 artifact 협업(15:16~15:22) + diff 스트리밍으로 PR 전 리뷰(15:22~15:31). 동기: 지금은 Slack·Teams 복사·붙여넣기로 팀원의 에이전트와 내 에이전트를 잇는다(13:35~13:50). ⚠️ 벤더 진술, 사용 수치 없음.

@@ -6,9 +6,9 @@ tags: [identity, access-control, least-privilege, security, agent-safety, parame
 aliases: [3대 Identity 분리, 에이전트 신원, 에이전트 파라미터 vs 애플리케이션 파라미터]
 related: [confused-deputy-attack, lethal-trifecta, bound-parameters, credential-injection-outside-sandbox, agent-governance-layers, multiplayer-agent-context, agent-distributed-systems, secure-tool-evolution]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-tailscale-aperture-ai-without-lock-in]
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-10-17
 ---
 
 # 세 신원의 분리
@@ -64,3 +64,9 @@ updated: 2026-09-11
 
 - [[tech-bridge-build-time-vs-runtime-tools]] (first-seen) · [[averi-kitsch]]
 - 관련: [[bound-parameters]] · [[confused-deputy-attack]] · [[credential-injection-outside-sandbox]] · [[agent-governance-layers]] · [[agentic-misbehavior]]
+
+## 네트워크 연결 층에서 붙는 신원 — 에이전트 인스턴스별 node ID (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"every connection that's now made over that tailnet uh comes with the identity of the machine or the user on the other side."*(09:58~10:05) 신원은 두 종류다. 하나는 기기 태그와 그 아래 인스턴스다: *"Hey, this is a machine ID. This is a PR review bot. (…) a separate node ID underneath that says the instantiation of that PR review bot."*(10:07~10:15) 다른 하나는 사용자다: *"it's just me using Cloud Code[=Claude Code] on my laptop"*(10:17~10:20).
+
+이 페이지의 세 신원(사용자·애플리케이션·에이전트)을 **네트워크 연결 층에서** 붙이는 판본이다. 에이전트 신원이 *인스턴스* 단위까지 내려간다는 점이 새롭다. [[ai-gateway]]가 이 신원으로 모델 접근·예산·커넥터 권한을 정한다. ⚠️ 벤더 진술이고 위협 모델(신원 위조, 사용자 대리 실행 시의 confused deputy)은 다루지 않는다.

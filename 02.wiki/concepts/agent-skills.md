@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-08-31
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Agent Skills
@@ -336,3 +336,16 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 ## 스킬 레지스트리 = control plane의 셋째 요소 (2026-10-11 · [[tech-bridge-tessl-harness-engineering-factory]])
 
 [[dru-knox|Dru Knox]]([[tessl|Tessl]])는 소프트웨어 팩토리의 control plane에 *"some way to uh standardize and distribute workflows, playbooks (…) Typically, that ends up being something like a skills registry or a shared GitHub repo where you push skills that improve agent quality."*(12:24~12:38)를 넣는다. 자사 레지스트리는 *"built-in governance things like security reviews, quality reviews, controls for who can publish and update what"*(16:41~16:50)를 단다(⚠️ 당사자 진술) — [[tech-bridge-ai-native-skills]]의 registry 논의와 같은 방향. 그리고 스킬은 meta loop의 **수정 대상**이다: 에이전트 실수를 보면 *"Let's update a skill"*(14:56~15:05). 요약 루프: *"find an improvement, take a workflow, turn it into a skill, ship it to everyone"*(19:15~19:23).
+
+## 2026-10-13 — 긴 작업일수록 초기 궤적, 그리고 MCP로 배포하는 스킬 ([[tech-bridge-runlayer-self-improving-skills-mcp]])
+
+[[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])가 스킬이 필요한 이유를 **작업 시간**에서 찾는다: *"If an agent can reason for much longer, it also means that it can dig a really really uh deep rabbit hole. um it can spend hundreds of tool calls trying to defend a wrong thesis"*(03:41~03:54) → *"the initial trajectory matters a lot and that's why skills are so important"*(04:00~04:05). 정의는 *"a playbook that essentially agent can read um when it thinks that the knowledge is relevant"*(02:08~02:15)이고, *"valuable skills are the rituals that nobody wants rediscovered"*(04:17~04:22)라고 덧붙인다.
+
+스킬의 세 문제로는 ① dev-centric(비개발자는 만들지도 나누지도 못함) ② playbook을 남기는 데 드는 비용 ③ 클라이언트 지원이 엇갈린다는 점을 든다. 처방은 [[mcp-skill-distribution|MCP를 배포 계층으로]](①③)와 [[run-trace-skill-distillation|트레이스 자동 증류]](②, 화자가 명시적으로 매핑하지는 않음)다.
+
+- 09-10 "공유 스킬은 누가 쓰는가" 충돌과의 관계: 문제 ②(*"it takes time and effort and intention and energy (…) to leave something useful for posterity"* 06:34~06:42)는 Gopal과 같은 진단이다. 처방은 Greze 쪽(에이전트가 쓴다)인데, Gopal이 둔 **사람 승인 단계는 뺐다.**
+- ⚠️ `npx skills` 공급망 경고 → [[prompt-injection]]
+
+## 2026-10-14 — 스킬이 API와 어긋나지 않게: linter로 동기화 ([[tech-bridge-sentry-stop-prompting-codify-linters]])
+
+[[sentry|Sentry]]는 디버깅 에이전트가 오래된 endpoint를 다루도록 스키마 대신 스킬로 안내한다(*"So instead we guide that through skills, which is a pretty common pattern in the agent week[=agentic] world"* 07:46~07:50). 생성한 스킬의 예제가 환각이어서 lint를 걸었다. 그 결과 *"when API changes, we actually don't have to follow up on the agent skills all the time. It's It's It's kept in sync through the through the linters."*(09:42~09:49) → [[skill-linting]]. 위 Lopopolo 절(벤더가 플랫폼 지식을 스킬로 유통)의 **유지 비용**에 대한 한 가지 답이다.

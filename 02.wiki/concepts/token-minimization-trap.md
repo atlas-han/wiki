@@ -6,9 +6,9 @@ tags: [token-economics, context-engineering, cost, rework, architecture-context,
 aliases: [토큰 최소화, token minimization, 비용 이동, costs don't disappear they just move, 컨텍스트 과잉 절감]
 related: [value-maxing, context-engineering, true-cost-to-perfect-answer, trusted-throughput, overspending-underusing-loop, agent-tool-design-practices, system-level-quality, agent-knowledge-sourcing]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-10-16
 ---
 
 # 토큰 최소화의 함정
@@ -47,6 +47,7 @@ updated: 2026-09-24
 - **[[context-engineering]]의 반대편 실패** — 같은 IBM 계열 09-07 편([[tech-bridge-agent-knowledge-four-ways]])은 **다 쏟아부으면** 길을 잃고 일반론으로 후퇴한다고 했다. 이 페이지는 **다 잘라내면** 시스템을 깬다. 두 편을 겹치면 *낭비는 빼고 작업·도메인·아키텍처는 남긴다* 는 선이 생긴다 — ⚠️ 겹침은 위키의 것.
 - **[[trusted-throughput]]의 *"긴축이 아니라"*** 에 메커니즘이 붙었다 — 긴축이 왜 ROI를 떨어뜨리는지의 한 경로(컨텍스트 절감 → 재작업).
 - **[[overspending-underusing-loop]]의 긴축 국면**을 구체화한다 — Piras는 긴축을 순환의 국면으로만 그렸고 **긴축이 무엇을 자르는지**는 말하지 않았다.
+- **반대쪽 끝의 벤더 데모 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])** — 컨텍스트를 깎는 대신 **과제별로 미리 묶어 더 주자** 같은 과제의 비용이 $1.29 vs *"up to (…) 260"*(단위 미발화), *"a 50% reduction in cost"*(03:43~03:59)였다는 [[context-engine|컨텍스트 엔진]] 시연. 이 페이지의 *"비용은 이동할 뿐"* 과 같은 방향의 주장이지만 ⚠️ 세션 1건이고 측정 설계가 없다.
 
 ## 남은 공백
 

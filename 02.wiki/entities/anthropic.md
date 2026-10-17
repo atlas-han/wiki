@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory]
 links:
-  - https://www.anthropic.com
+  - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-10-12
+updated: 2026-10-16
 ---
 
 # Anthropic
@@ -195,3 +195,5 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - ⭐ 화자의 진단: *"what it seemed to be a business problem really was an infrastructure problem because Anthropic didn't have a an effective way to delineate between users who are using their APIs and users are using their subscription programs."*(03:08~03:22) → [[reserve-then-settle]]
 
 이 페이지의 *"가격 때문에 회피된다는 진술"*(2026-09-08, Cursor 필드 엔지니어)에 이은 **두 번째 제3자 가격 서술**이고, 방향이 반대다 — 그때는 *비싸서 피한다*, 이번엔 *구독 안에서는 원가보다 훨씬 싸게 팔고 있었다*. 둘 다 Anthropic 자신의 소스가 아니다. → [[software-marginal-cost]] · [[bring-your-own-subscription]](OpenAI는 반대로 구독을 제3자 앱에 들고 가게 한다)
+
+- (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) 제3자 요약: Anthropic 포스트모템이 보안 문제의 원인으로 *"a bunch of like messy code that accumulated over time"* 을 들었다(07:19~07:26, [[dex-horthy|Horthy]] 발화) — ⚠️ 포스트모템 제목·날짜·원문 미발화, 미확인.

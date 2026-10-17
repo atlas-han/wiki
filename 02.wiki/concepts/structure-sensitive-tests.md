@@ -6,9 +6,9 @@ tags: [testing, coding-agents, verification, test-quality, mocking, ci]
 aliases: [동어반복 테스트, tautological tests, 거짓말하는 테스트, checks can lie, 실패할 수 없는 테스트, tests that cannot fail]
 related: [deep-modules, test-harness-vs-test-authoring, mergeability-gap, automated-code-review, verification-bottleneck, reward-hacking, hard-vs-soft-enforcement, verifiable-goals]
 first-seen: tech-bridge-pocock-pr-bottleneck
-sources: [tech-bridge-pocock-pr-bottleneck]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # 구조 민감 테스트
@@ -40,6 +40,7 @@ updated: 2026-10-09
 - [[test-harness-vs-test-authoring]] — Dioxus의 *"생성자를 주면 생성자를 테스트"* 와 같은 관찰. 그쪽은 *에이전트는 올바른 테스트를 고르지 못한다*, 이쪽은 *왜 못 고르는지(구조에 붙는다)와 무엇으로 막는지(설계)*.
 - [[mergeability-gap]] — *테스트 통과 ≠ 머지 가능* 을 벤치마크(METR·FrontierCode)가 아니라 **테스트 자체의 질**에서 본 판.
 - [[hard-vs-soft-enforcement]] — CI는 하드 강제지만, **CI가 검사하는 테스트가 거짓말하면 하드 강제도 거짓말한다.**
+- [[tech-bridge-sentry-stop-prompting-codify-linters|Sentry 편]] (2026-10-14): 커버리지 목표를 받은 에이전트의 테스트는 *"asserting particular string in particular output of the agent"*(14:26~14:30)였다. 이 페이지의 "거짓말하는 테스트"가 **숫자 목표에서 생긴** 사례다(⚠️ 구조 결합인지 목표 게이밍인지는 화자가 구분하지 않는다). 화자의 첫 불만도 *"tests are crap. They are not testing anything."*(00:35~00:38)이다.
 
 ## ⚠️ 유보
 

@@ -111,8 +111,21 @@ sources:
   - tech-bridge-langchain-learning-agent-memory
   - tech-bridge-stigg-ai-companies-building-banks
   - tech-bridge-braintrust-eval-platform-systems-problem
+  - tech-bridge-vercel-rauch-agentic-workflow
+  - tech-bridge-runlayer-self-improving-skills-mcp
+  - tech-bridge-hassabis-fry-creativity-future
+  - tech-bridge-codex-app-server
+  - tech-bridge-gitar-agentic-pr-validation
+  - tech-bridge-sentry-stop-prompting-codify-linters
+  - tech-bridge-unblocked-context-engine-structured-queries
+  - tech-bridge-horthy-state-of-software-factory
+  - tech-bridge-alexandr-wang-muse-launch
+  - tech-bridge-g2i-generation-cheap-evaluation-expensive
+  - tech-bridge-tailscale-aperture-ai-without-lock-in
+  - tech-bridge-factory-bug-report-to-production
+  - tech-bridge-braintrust-agentic-vs-vector-search-eval
 created: 2026-06-03
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # Tech Bridge
@@ -1113,3 +1126,113 @@ updated: 2026-10-12
 - Braintrust 첫 소스. 에이전트 품질 = evals(프로덕션 전) + observability(프로덕션 중). eval 도구 성숙 4단계(스프레드시트 → 맞춤 UI → 비기술 사용자의 실험 → 프로덕션 연결), 그 끝의 systems problem(반정형 JSON 트레이스, 상호작용당 수백 MB, 실시간 vs 장기 쿼리 → BTQL). 코딩 에이전트가 headless로 eval을 돌고 사람은 배포 버전을 결정.
 - ⚠️ 당사자 진술 — build vs buy에서 buy 쪽 논지, 14:45~15:45 자사 피치(unknown unknowns 자동 발굴). 화자 이름 Hossein Niazmandi는 설명란에만(자막에 자기소개 없음, 영상이 발표 중간에서 시작). 행사명 미발화(ai.engineer 링크 → 추정). en-orig 공백 없음.
 - **⚠️ ko** — production → "개발 중"(00:46)·"오프라인 환경에서"(00:57) 반대말 두 번, *without introducing new regressions* → "품질을 향상시키지 않고 … 회귀 분석을 도입"(06:26), *headless* → "자연어 없이"(13:55), *Rather than you having to think* → "생각해 봐야 한다"(14:49), spreadsheet → "종이에 … 계산"·"잎들이", PMs → "총리들", full text → "전문을 보려면 클릭하세요". en·ko 공유: teams → "장비/equipment", queries → "상담/consultations".
+
+## 2026-10-12 업로드 — Guillermo Rauch (Vercel) × David Ondrej(추정), Vercel CEO는 AI를 이렇게 씁니다 (2026-10-13 ingest)
+
+[[tech-bridge-vercel-rauch-agentic-workflow|Vercel CEO는 AI를 이렇게 씁니다 | 실제 개발 워크플로 공개]](`21do1LvDNFI`, 15:38, 공식 챕터 8) — [[guillermo-rauch]] · [[david-ondrej]](⚠️ 진행자 추정) · [[vercel]] ([[fx]] · [[v0]] · [[agentic-inquiry]] · [[brain-hands-decoupling]] · [[cloud-agent-delegation]] · [[slop-free-zone]])
+
+- **형식: `[한영자막]` 아님 — 원본 인터뷰(David Ondrej 채널 `WeiB_gLOdQE`) 발췌 약 90% + 짧은 해설.** 채널 두 번째 해설+발췌 형식([[tech-bridge-lauren-tan-agent-dev-workflow]] 다음). 해설은 어느 자막 트랙에도 없다 — en-orig 공백 7곳이 챕터 시작과 겹침.
+- Vercel CEO 첫 1인칭: fx(셸 같은 코딩 CLI) · 리서치 폴더 + agents.md가 Google 대체 · agentic inquiry(자사 제품을 에이전트에게 깨 보게 / 모든 줄 대신 "방금 무슨 일이") · v0 하네스 "90%" → 기성 하네스 · brain and hands · vibe coding의 반대를 알려라 · 클라우드 에이전트는 이미 와 있고 보안상 낫지만 로컬 토글은 남겨라.
+- ⚠️ 자사 제품 시연, 수치 회고·추정, 공급망 공격 "근절"은 화자 스스로 bold statement. 이름·직함은 제목·설명란에만. 진행자 이름 미발화. *drives*·*Deep Sage*·*live effects* 미판독.
+- **⚠️ ko** — fx → "효과"(전 구간), harness → "테스트 환경", sandbox → "실험장", Eve → 사람 "이브", *agents are really good at attacking problems in parallel* → "공격에 정말 능숙해요. 문제가 동시에 발생"(반전), 단정 → 질문 둘(13:59, 14:26), 11MB → "설치 횟수 11회". ko에 한국어 해설 받아쓰기 없음.
+
+## 2026-10-12 업로드 — Rafal Wilinski (Runlayer), 36%에서 100%로: 자기 개선 에이전트는 어떻게 스스로 스킬을 작성할까요? (2026-10-13 ingest)
+
+[[tech-bridge-runlayer-self-improving-skills-mcp|36%에서 100%로 — Runlayer]](`jDdgfTp_PXw`, 17:37, 공식 챕터 20) — [[rafal-wilinski]] · [[runlayer]] ([[run-trace-skill-distillation]] · [[mcp-skill-distribution]] · [[skill-self-improvement]] · [[agent-fleet-learning]] · [[company-knowledge-moat]])
+
+- Runlayer의 첫 소스. 스킬 = 초기 궤적을 잡는 playbook. 스킬의 세 문제(dev-centric · 저작 비용 · 클라이언트 지원). MCP = 스킬의 배포 계층(skills over MCP 워킹 그룹, resources 대신 tools). Voyager skill library → 성공·실패 트레이스를 frontier LLM이 증류(사람 게이트 없음). 조직 플라이휠(인젝션·PII 자동 검사 → MCP gateway로 전사 배포). moat = 증류 플라이휠.
+- ⚠️ 36% → 100%는 단일 사내 태스크(Sonnet 4.6, AWS Lambda 안의 Chromium fork)이고 실행 횟수가 발화되지 않았다. 당사자 진술(MCP gateway 벤더). 화자 이름은 자막에 *"Rafal"* 만, 성은 제목·설명란에서 왔다. 행사명은 발화되지 않았다(ai.engineer 링크 + expo → 추정). en-orig 공백 없음.
+- **⚠️ ko** — *"the easiest number to show"* → "가장 중요한 수치"(13:22), *"without ever changing a model"* → "모델을 절대 바꾸지 마세요"(17:27), *"can't copy"* → "유일한 단점"(17:31), *"sometimes it succeeded"* → "때로는 성공적이지 못하다"(12:47), *"rented or borrowed"* → "돈으로 살 수 있다"(13:54), *"not interested"* → "관심이 있습니다"(07:22). `en`·ko 공유: Runlayer → "Runway"(01:28)·"PromptLayer"(06:14), 화자 → "Ammar Fall/아마르 폴". ko 단독: run → "사형 집행·처형", flywheel → "핸들", prompt injection → "신속 주사".
+
+## 2026-10-09 업로드 → 10-13 공개 확인 — Demis Hassabis × Hannah Fry (RSA), AI 혁명과 인간의 창의성 (2026-10-13 ingest)
+
+[[tech-bridge-hassabis-fry-creativity-future|데미스 하사비스가 말하는 AI 혁명, AI의 미래와 인간의 창의성]](`zAglgqN5Lhw`, 39:41, 공식 챕터 4) — [[demis-hassabis]] · [[hannah-fry]] · [[rsa]] · [[thomas-heatherwick]] · [[kate-varah]] ([[human-provenance-value]] · [[ai-flipped-classroom]] · [[google-deepmind]] · [[ai-slop]] · [[intelligence-abundance]])
+
+- 2026-10-09 멤버 전용 첫 확인 → 10-13 회차 공개 확인, `upload_date` 20261012(공개 전환 값). DeepMind **창업자 첫 1인칭**. 게임 디자인 = 과학(taste·intuition·faith), 지능 + 시뮬레이션, 예술가 공동 설계 vs AI slop, 10년 10x → 자율 도구 → 인간의 연결·장인정신이 더 중요(추측), 미래는 쓰이지 않았다, root node → 풍요, 청중 Q&A 3건(계산 불가능한 스토리텔링 / 건축·데이터센터도 아름답게 / 교실 뒤집기).
+- ⚠️ 발췌 — 행사 중간 시작(*"you ended your comments there"*), 문장 중간 종료. 진행자 이름은 제목·설명란에만, 하사비스 직함 미발화, en-orig *"Dennis"*. 앞선 소개자 "David" 신원 미상. RSA 행사명·녹화일 미발화. 창작 도구 단락은 당사자 진술.
+- **⚠️ ko** — '90s → "90세"·"90명", the 80s at MIT → "80점", by 16 → "16년 경력", MIT 교수 논거 *없었다* → "타당했습니다", *can't be stopped* → "멈출 수 있겠죠?", AI slop 방향 *원치 않는다* → "나아가고 싶습니다", solvable → "용해성", fusion → "합병"(`en` 공유), 첫 문장 화자 반전(`en` 공유). 고유명사는 `en`·ko가 en-orig보다 나음(Kate Varah, Demis, Aronofsky).
+
+## 2026-10-13 업로드 — Dominik Kundel (OpenAI), OpenAI가 직접 밝힌 Codex 하네스 위에 나만의 에이전트를 구축하는 법 (2026-10-14 ingest)
+
+[[tech-bridge-codex-app-server|Codex 하네스 위에 나만의 에이전트를]](`GRMr7YdoJzo`, 17:40, 공식 챕터 18) — [[dominik-kundel]] · [[codex-app-server]] ([[embedded-agent-harness]] · [[agent-client-protocol]] · [[deferred-tool-context]] · [[bring-your-own-subscription]] · [[codex]])
+
+- Codex App Server = 하네스를 감싼 JSON-RPC 스타일 프로토콜, 오픈소스(Apache 2). 1st/3rd party(Xcode·JetBrains·T3 Code·Claude Code 플러그인)가 같은 하네스 위에서 돈다. ACP와의 차이 = 일반성 vs 깊이. *"over 120"* 클라이언트 메시지, sign in with ChatGPT, developer instructions + dynamic/deferred tools(tool search), 스레드별 모델·샌드박스. CLI와 같은 바이너리·앱 번들, TypeScript 바인딩/JSON schema, stdio·WebSocket, Python SDK 또는 "Codex에게 시켜라". Doom 안의 Codex 데모. codex exec vs App Server. 팁 셋: 하네스 버전 번들 · deferred 노출 · developer instructions(*"in distribution"*).
+- ⚠️ 당사자 진술(OpenAI 자사 프로토콜). 화자는 자막에 *"Dom"* 만 나오고, 성·"DevX 팀 리드"는 설명란에만 있다. 행사명은 일반명사뿐(*"an AI engineer conference"* + *"the keynote yesterday"*)이고 Cooking with Codex와 같은 회차인지는 미확정이다. 설명란의 "Rust"는 발화되지 않았다. en-orig 공백 없음(최대 7초, 데모 조작 중).
+- **⚠️ ko** — ⭐ BYO 과금 *"goes off their codeex usage limit"* → "영향을 미치지 않습니다"(06:29, `en` 공유), *"not sure if I would recommend it"* → "분명히 추천할 거라고"(14:20), *"available for the agent"* → "사용할 수 없음"(16:50), *"not limited to"* → "제한이 있습니다"(11:27), *"in distribution"* → "배포 중"(17:14), ACP *"more generic"* → "ACP로 가는 것은 더 나은 것"(06:05), 15 minutes → "15년"(17:32). Codex → "사본", Doom → "파멸", Electron → "전자", documentation → "선적 서류", parallelize → "마비시키다".
+
+## 2026-10-13 업로드 — Ali-Reza (Gitar/Sonar), AI가 코드를 쏟아내는 시대, 검증은 대체 누가 해야 할까요? (2026-10-14 ingest)
+
+[[tech-bridge-gitar-agentic-pr-validation|AI가 코드를 쏟아내는 시대, 검증은 대체 누가 해야 할까요? — Gitar]](`gnXwThtDnIo`, 10:54, 공식 챕터 17) — [[ali-reza]] · [[gitar]] · [[sonar]] ([[agent-plus-program-analysis]] · [[verification-bottleneck]] · [[automated-code-review]] · [[agent-trust-curve]] · [[trusted-throughput]])
+
+- Gitar·Sonar 첫 소스. CI + 코드 리뷰 = 중앙 검증 단계, 실패는 시간·일 단위 outer loop. AI 때문에 PR이 더 많고 더 커져서 *slow down* 아니면 *rubber stamp*. 답은 *"more AI"*: 노이즈 최소화 리뷰 → 머지 차단 → CI 실패 분석·flaky 탐지·자동 재시도 → green까지 autofix 루프 → 규칙 기반 자동 승인·머지. 사용자는 신뢰가 쌓이는 만큼 단계를 올린다(4단은 "이제 막 시작"). 내부는 control plane · 자체 harness(PR당 고정 가격) · LLM proxy. SonarQube 통합 중이며, 에이전트 + 프로그램 분석은 전망이다.
+- ⚠️ 벤더 발표, 수치 0개. 화자는 자막에 *"Ali"* 만 밝히고 "Ali-Reza"는 설명란에만 있으며 성은 없다. 회사명 ASR은 *"guitar"*. 인수 날짜는 상대 시각(*"about a month ago"*)뿐이다. 행사명 미발화(ai.engineer → 추정). en-orig 공백 없음(최대 6초).
+- **⚠️ ko**: *"AI turns validation into a friction point"* → "AI는 검증을 가능하게"(10:19), afternoon → "오전"(00:00), merge → "합병", CI → "지능지수(IQ)"(04:52, 06:56), PR → "보도자료"·"홍보 자금", Gitar → "기타"(07:50), *by developers* → "더 나이가 많은 쪽 개발자들"(09:42). `en`·ko 공유: autofix → "PR 승인"(06:07).
+
+## 2026-10-13 업로드 — Greg Pstrucha (Sentry), 프롬프트는 이제 그만하세요 (2026-10-14 ingest)
+
+[[tech-bridge-sentry-stop-prompting-codify-linters|프롬프트는 이제 그만하세요 — Greg Pstrucha, Sentry]](`sInGHWqJg0I`, 15:00, 공식 챕터 16) — [[greg-pstrucha]] · [[sentry]] ([[skill-linting]] · [[hard-vs-soft-enforcement]] · [[executable-standards]] · [[automated-code-review]] · [[reward-hacking]] · [[verifiable-goals]])
+
+- 반복되는 교정은 compaction 한 번이면 *"back to square one"* 이다. *"stop prompting (…) start codifying"*. 테스트·strict typing·linter. linter는 이제 에이전트가 싸게 쓴다 → 트랜스크립트·리뷰를 lint 규칙으로 바꾸고 스케줄로 반복한다. Sentry OpenAPI drift lint. 스킬 속 코드 블록 lint와 에이전트의 whack-a-mole. 정성 판단은 저장소 정책 + grumpy engineer(정책별 서브에이전트 루프, 사내명 Garfield). 숫자 목표(커버리지)는 snake oil.
+- ⚠️ 이름은 제목·설명란에만 있다(자기소개 없음, 직함 미발화). "Sentry agent"와 설명란의 Seer는 동일시하지 않는다. 수치는 전부 없다. Taskless는 챕터 표기(ASR *"Task Class"*)다. 행사명은 미발화(ai.engineer → 추정)다. en-orig 공백 없음.
+- **⚠️ ko** — 반전: *"I don't know how to lint against that"* → "만드는 방법을 알고 있어요"(11:06), *"I don't think I reliably can"* → "만들 수 있을 것 같아요"(11:08), *"I do not want a code that's too defensive"* → "원합니다"(11:57). 논거 소실: *"do not have any memory"* → "모든 것이 기록되는 세상"(04:15), *codifying* → "코딩"(01:48), *"we lost the accuracy of the agent"* → "에이전트는 상당히 중요합니다"(08:09). ko 단독 오역: Sentry → "보초", lint → "보푸라기"·"먼지 제거제", state → "주(州)". `en`·ko 공유 오역: agents → "officers"/"경찰관", *taste* → "judgment"/"표준", *casting* → "delegate/위임".
+
+## 2026-10-14 업로드 — Peter Werry (Unblocked), RAG만으로는 부족합니다 (2026-10-15 ingest)
+
+[[tech-bridge-unblocked-context-engine-structured-queries|RAG만으로는 부족합니다: 토큰 비용을 절반으로 줄이는 관계형 컨텍스트 엔진]](`djKIU-30YVc`, 18:49, 공식 챕터 15) — [[peter-werry]] · [[unblocked]] ([[context-engine]] · [[nl-to-structured-query-scaffolding]] · [[build-time-vs-runtime-tools]] · [[code-only-index-blind-spot]])
+
+- 위키 첫 **컨텍스트 엔진** 소스. 1부: 사람이 context layer였다 → 엔진이 코드·Notion·PR·Slack을 과제별 묶음으로(데모 비용 $1.29 vs "260", 50%, 세션 1건). 모델 전환으로 리뷰 제품 이슈 수가 줄어든 원인 추적·수정 PR. 2부: RAG는 내용 질문, 구조적 질문은 쿼리 — 오픈소스 document query engine을 스키마 탐색 → identity → synthesis → validation → retry → full-text search로 켜는 라이브 빌드.
+- ⚠️ 당사자 진술(자사 데모 전부). 이름은 "Peter"만 발화(성·직함 설명란). "토큰"·"관계형"은 발화 없음(업로더 표기). "260" 단위·모델 버전(*"Opus 48 or Opus 46 to Opus 48"*) 판독 보류. 행사명 미발화(ai.engineer → 추정).
+- **⚠️ ko** — Unblocked → "차단 해제", LLM → "법학 석사 학위", PR → "홍보팀"·"개인 최고 기록", schema → "계획", retrieval → "회복", *you were the context layer* → "망토", *the other week* → "다음 주에", *If you don't want to wire up* → "접속하시겠습니까?", "260" → "2분 60초". `en`·ko 공유: queries → "consultations/상담", RAG → "record/기록".
+
+## 2026-10-14 업로드 — Dex Horthy (HumanLayer), 코드 슬롭과의 싸움: 소프트웨어 팩토리의 현실 (2026-10-15 ingest)
+
+[[tech-bridge-horthy-state-of-software-factory|코드 슬롭과의 싸움: 소프트웨어 팩토리의 현실]](`XejHwIKi5qg`, 16:11, 공식 챕터 14) — [[dex-horthy]] · [[humanlayer]] · [[slopcodebench]] ([[back-pressure]] · [[expected-pain-planning]] · [[agent-platform-layers]] · [[software-factory]] · [[verification-bottleneck]])
+
+- 테제 *"unattended models will not improve or maintain your code base quality over time"*: maintainability엔 빠른 oracle이 없고([[slopcodebench|SlopCodeBench]] GPT-5.5 14.8%), 그래서 lights-off factory는 "아직" 아니며 지금은 코드를 읽는다. 처방: [[expected-pain-planning]] · show me · [[back-pressure]](forward + back = loop) · anti-slop 규칙 · 인시던트 → PR · feature flag 실험 · compound, 그리고 세션·계획·프롬프트의 system of record([[agent-platform-layers|네 층]]), PR 전 diff 리뷰. Voss가 인용한 철회의 당사자.
+- ⚠️ 이름은 *"I'm Dex"* 만, 성 Horthy는 제목·설명란에만. 14:53~15:44 자사 피치, 5월 리포트 미특정, Astra +1 vs +1.5pp 미확정, *"Sol X I"* 판독 보류. 행사 미발화(설명란 AGNTCon NA 링크 → 추정).
+- **⚠️ ko** — PR → "홍보·보도자료", HumanLayer → "인권 문제"(14:55), 테제 → "모델이 없는 경우 감독은 개선되지 않을 것"(05:16), *You're not going to make it* → "넌 해낼 거야"(08:31), *5 hours* → "5일"(10:08), compute layer → "망토"(14:16). `en`·ko 공유: lights-off → dark, terminal bench → final exam.
+
+## 2026-10-14 업로드 — Alexandr Wang, Muse 제작기 (해설 + 인터뷰 발췌) (2026-10-15 ingest)
+
+[[tech-bridge-alexandr-wang-muse-launch|알렉산더 왕이 밝힌 Muse 제작기: 고장 나던 AI는 어떻게 출시됐나]](`6gakvEF9m20`, 9:10, 공식 챕터 7) — [[alexandr-wang]] · [[david-senra]](설명란만) · [[nat-friedman]](해설만) ([[muse]] · [[muse-wonder]] · [[launch-blocking-evals]] · [[agent-trust-curve]])
+
+- **채널 두 번째 "한국어 해설 + 원본 인터뷰 발췌"**([[tech-bridge-lauren-tan-agent-dev-workflow]] 다음)이고 제목 접두어가 없다. 원본은 David Senra 인터뷰 `S6l3aRsecuE`(10-11, 위키에 없음). 해설과 함께 **Meta 공식 자료 두 건**(출시 소개, Muse Wonder)을 요약한다. 설명란이 이용자 수 미확인·Wonder 별도 자료라는 **단서를 스스로 단다**. (⚠️ 업로드순으로는 위 Vercel 편(10-12) 다음 세 번째 — 편별 표기 유지)
+- ⚠️ 자막상 원음은 5구간 약 2분이고 무캡션 구간이 8곳이다. **en-orig 해설 구간은 한국어 해설의 영어 대응문**이라 원음이 아니다. *"millions of users"* 는 해설 전언이고, 원음 속 수치는 80/20 rows 하나다. Muse의 **첫 실패 서술**(시제품 고장, 80/20에서 출시 보류)이 나온다.
+- **⚠️ ko** — 해설이 한국어라 대체로 정확하다. 오류는 Meta → "베타", WhatsApp → "와치앱", 이사회 → "이 사회", ⭐ 식단 → "식당"(03:49), 이용자 탈락(*"뮤즈가 수백만 명"*). en-orig는 OpenClaw → *"OpenAI's tools"*(챕터와 어긋남). `en`은 Wang → **"the King"**, *"millions of muses"*.
+
+## 2026-10-14 업로드 — Gabriel Martinez (G2i), 생성은 저렴하지만 검토는 비쌉니다 (2026-10-15 ingest)
+
+[[tech-bridge-g2i-generation-cheap-evaluation-expensive|생성은 저렴하지만 검토는 비쌉니다: 엉터리 AI 코드 배포를 멈추는 법]](`utMfI1DXTOE`, 16:48, 공식 챕터 23) — [[gabriel-martinez]] · [[g2i]] ([[compressed-review-surface]] · [[ai-slop]] · [[verification-bottleneck]] · [[trusted-throughput]] · [[ralph-wiggum-method]])
+
+- 슬롭 = *"generation outruns judgment"*, *"Slop is not AI-generated code"*. 코드는 부채이고 줄은 쓰는 것(Dijkstra, 화자 인용)이다. 프로토타입은 이해관계자에게 "어려운 부분은 끝났다"로 보인다. 성과 불안 고백. *"Generation is cheap, but evaluation is expensive."* Ralph loop는 *"just a while loop"*. 다이어그램·선언적 코드 = 압축된 리뷰 표면. Rails 관례. 끝은 자사 도구 ORC(en-orig *"Ork"*).
+- ⚠️ 화자는 자막에서 자기소개한다. G2i의 정체와 ORC의 기능은 발화되지 않는다. 수치는 없다(챕터의 "1,000줄"은 업로더 표기, 발화는 *multi-thousand*). SQLite 제작자 인용은 트윗을 통한 2차 인용이다. 행사명은 미발화(AI Engineer 추정).
+- **⚠️ ko**: slop → "기울기", never 세 개 → 긍정문(01:06~01:12), liability → "수동적인", *easier* → "더욱 어렵게", PR → "영주권"·"홍보", 4 years → "4분", *Unless tamed* → "통제하려 애쓰는 것이 악화", *the answer is more agents* 를 부정에서 단정으로.
+
+## 2026-10-15 업로드 — Remy Guercio (Tailscale), 벤더 락인 없는 AI의 미래를 만드는 방법입니다 (2026-10-17 ingest)
+
+[[tech-bridge-tailscale-aperture-ai-without-lock-in|벤더 락인 없는 AI의 미래를 만드는 방법입니다]](`l3HyFh6Dg4w`, 19:09, 공식 챕터 6) — [[remy-guercio]] · [[tailscale]] ([[ai-gateway]] · [[value-maxing]] · [[overspending-underusing-loop]] · [[automatic-model-routing]] · [[agent-identity-separation]] · [[model-context-protocol]])
+
+- 지난 12개월 = 토큰맥싱(긍정에서 시작: agentic coding을 가능하게 했다). 문제는 비용·*"wasted tokens by default"*(아무도 컨텍스트를 비우지 않는 수천 메시지 세션)·수직 통합. 청구서 공황 끝의 벤더 통합은 오답. 다음 12개월 = **ROI 맥싱**(비용 절감이 아니라 가치 증명 + 선택권). 네 층(LLM·데이터 커넥터·인터페이스·샌드박스). AI gateway = 사이에서 통제·관측. Aperture: Tailscale 신원, 신원별 모델·예산(싼 모델 무제한, 프런티어 좁게), MCP gateway·auth 주입, chat UI, 로그로 에이전트 사후 진단.
+- ⚠️ 이름은 자막, 성은 설명란. 행사명 AI Engineer World's Fair 발화(연도·도시 미발화). 벤더 발표(화자 고지), 수치 없음, 예정 기능 둘. 설명란 "오픈소스 Aperture"는 발화상 TSNet.
+- **⚠️ ko**: *you can do that* → "문제가 생깁니다", *not just lock-in* → "봉쇄 문제일 뿐", lock-in → "봉쇄"·"차단", Tailscale → "꼬리비늘", Aperture → "구멍"·"조리개".
+
+## 2026-10-15 업로드 — Davis Palmie (Factory), 버그 리포트에서 배포까지: '소프트웨어 팩토리'가 바꿀 개발의 미래 (2026-10-17 ingest)
+
+[[tech-bridge-factory-bug-report-to-production|버그 리포트에서 배포까지: '소프트웨어 팩토리'가 바꿀 개발의 미래]](`lnLqwKTPTYU`, 18:02, 공식 챕터 22) — [[davis-palmie]] · [[factory-ai]] ([[software-factory]] · [[agent-readiness]] · [[trusted-throughput]] · [[model-mixing-economics]] · [[agent-trust-curve]])
+
+- typing code → governing agents, 추상화 사다리. *"coding was the easy part"*. 정의 = 입력 신호에서 프로덕션 배포까지의 에이전트 시스템. incident triage부터 시작해 기둥별로 자동화한 뒤 루프. 3원칙 model agnostic · sovereign deployment · SDLC 통합. O(N) → O(1). 표면 비종속. agent readiness 8기둥. *"Humans need to stand as validation gates"*. *"measure outcomes, not tokens"*, Goodhart, *"don't token max"*.
+- ⚠️ 화자는 자막에서 자기소개(철자는 설명란). 같은 회사 Tereza 편과 3원칙이 다르다. 수치(GPT 5.2 = Opus 반값, 10~30x, Uber·Microsoft 헤드라인) 전부 조건·출처 미발화, 지표 다섯은 이름만. 행사명 미발화(AI Engineer 추정).
+- **⚠️ ko**: *"And don't token max."* → "토큰을 최대화하세요", *can't govern what you can't see* → "다스릴 수 있다", *lowest common denominator* → "최소공배수", agent readiness → "약제 준비", Factory → "공장".
+
+## 2026-10-15 업로드 — Jess Wang (Braintrust), 코딩 에이전트의 Agentic Search와 Vector Search, 직접 평가해봤습니다 (2026-10-16 ingest)
+
+[[tech-bridge-braintrust-agentic-vs-vector-search-eval|코딩 에이전트의 Agentic Search와 Vector Search, 직접 평가해봤습니다 — Braintrust]](`pLdgH-jLw5A`, 17:46, 공식 챕터 20) — [[jess-wang]] · [[braintrust]] ([[eval-experiment-anatomy]] · [[agentic-search]] · [[reference-graph-vs-vector-search]] · [[file-discovery-tax]] · [[production-trace-eval-flywheel]])
+
+- 전반은 eval 입문이다. vibes 대신 숫자, eval = AI 시스템에 대한 질문에 답하는 방법, OpenAI 2025년 4월 아첨 업데이트(화자 진술), 데이터셋·태스크·채점·실험, 자연어 trace 질의·CLI·MCP·SDK, 프로덕션 로그 → 데이터셋 순환, *"team sport"*. 후반은 실험이다. TypeScript Go의 fix PR 약 20개로 Claude Code 하네스를 고정하고 검색 방식만 바꿨다(*"prompting is never enough"* → disallowed tools). 고아 trace는 parent span ID 환경 변수로 해결했다. 결과는 **같은 정확도, vector 4배 비용** — 청크가 imports·호출 코드를 놓쳐 검색을 반복했다(*"proximity"* vs *"connective tissue"*).
+- ⚠️ 이름 Jess와 소속은 자막에서, 성 Wang은 설명란에만 있다. 20행·1회 시행·약한 vector 구현(화자 인정)이고, 정확도 수치와 비용 단위는 미발화. 태스크(위치 찾기)와 채점(테스트 통과)이 어긋난다. Cursor 트윗을 *"semantic search also known as agentic search"* 로 소개하는데 화자 자신의 정의와 맞지 않는다. 챕터 9개가 발화보다 최대 1분 39초 이르다. 행사명 미발화(AI Engineer 추정).
+- **⚠️ ko**: 고유명사(Braintrust·Ankur·Qdrant)는 en-orig보다 정확하지만 LLM-as-a-judge → "LLM 학위", team sport → "스포츠 / 장비", turns → "교대 근무", flag → "국기", runs → "처형", Pinecone → "솔방울", `cat` → "고양이"로 옮긴다. 반전도 있다: *a year ago* → "1년 후", *couldn't piece together* → "연결할 수 있었다"(+ 세 함수 → "세 사람"), *made more searches* → "더 많은 성과", *hopefully you learned* → "거의 아는 바가 없습니다".
+
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-17 확인)
+
+- **공개 전환 — 위에서 ingest:** `zAglgqN5Lhw`([[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]], 10-13 회차 `availability: public` 확인, `upload_date` 20261012 = 공개 전환 값). 10-11 대기 목록의 마지막 항목이 해소됐다.
+- **여전히 `subscriber_only` — ingest하지 않음:** `N8gD8ebFlMI`(목록 `upload_date` 20261012, *Grok Bot 같은 상시 작동 에이전트는 어떻게 작동할까요? | SpaceX 엔지니어 Lee Robinson의 스탠퍼드 강연*) · `Eu4D795nMsQ`(목록 `upload_date` 20261013, *지능을 빌리는 건 그만: 특화 AI의 학습부터 배포까지*) · `Yhck-x6VuLs`(제목 미확인 — 목록 조회 stderr ERROR만). 공개 전환 시 그날 ingest.

@@ -6,9 +6,9 @@ tags: [token-economics, adoption, budget, fomo, austerity]
 aliases: [둠 루프, overspending and underusing, 토큰 맥싱 악순환]
 related: [trusted-throughput, token-roles, model-mixing-economics, agent-roi-measurement, agent-org-adoption, compute-constrained-growth, value-maxing, token-minimization-trap, reserve-then-settle]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-stigg-ai-companies-building-banks]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production]
 created: 2026-09-13
-updated: 2026-10-12
+updated: 2026-10-17
 ---
 
 # 과지출·저활용 둠 루프
@@ -86,3 +86,13 @@ updated: 2026-10-12
 > ⚠️ **"5억" 일화의 세 번째 판본.** Laura(인도 회사, Anthropic, 한 달), [[mingsheng-hong|Hong]](한 달에 Claude 5억 달러), Sasson(이름 없는 회사, *"AI cloud credits"*, 직원 몇 명이 조직 계약 전체를 소진). 세부가 다르다 — 같은 사건인지 미확인.
 >
 > ⚠️ **처방의 대립.** Kimchi는 *토큰 배급은 틀렸다(무제한·저렴하게)*, Sasson은 기업 구매자가 팀·사용자·에이전트별 *"spend caps"*·*"fine-grained control"* 을 원한다(13:14~13:48). 층위가 다르지만(사내 정책 vs 공급자 기능) *통제가 답인가* 에서 갈린다. 둘 다 벤더.
+
+## 청구서 공황의 다른 형태 — 벤더 통합 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
+
+[[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]])가 지난 6개월 동안 수백 명과 나눈 대화(⚠️ 일화): *"I don't know what's going on. I know we're using a lot of AI. I get, you know, uh I get an Anthropic bill every day. Uh, I get a Codex bill every day."*(03:47~03:56) 공황의 장면은 이렇다: *"finance is talking to you, IT is being like, 'What are you doing?' You know, like we said to you know, use AI, but maybe not use that much AI."*(04:36~04:44) 흔한 반응은 *"we're just going to like consolidate on a single vendor. Maybe two vendors, right?"*(04:09~04:12)이고, 화자는 *"that is not not a great idea."*(04:21~04:23)라고 한다.
+
+이 페이지의 "조직 층의 긴축"이 지출을 줄이는 것이라면, 여기서는 **선택지를 줄이는 것**이 긴축이다. 원인 쪽 진단도 있다. 토큰맥싱은 *"wasted tokens by default"*(02:07~02:12)를 부추긴다. 화자의 처방은 [[ai-gateway]]와 *"ROI maxing"*([[value-maxing]])이다. ⚠️ 벤더 발표. ko는 *"not a great idea"* 를 "아이디어는 좋지만"(04:27~04:29)으로 뒤집는다.
+
+## 벤더의 처방 — 모델 비종속과 "don't token max" (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
+
+[[davis-palmie|Davis Palmie]]([[factory-ai|Factory]])는 비용 폭증을 *"headlines"*(Uber CTO의 *"by April"*, Microsoft의 Claude Code 라이선스 회수, 02:45~02:56)로 꺼내고, 답으로 모델 비종속을 든다: *"You want the maximum uh cost efficiency and the minimum effectiveness necessary for each task."*(03:08~03:15) 맺음은 *"And don't token max. Measure what actually matters."*(17:43~17:48)이다. 같은 날 업로드된 Tailscale 편과 함께 **벤더 둘이 "단일 공급자에 묶이지 말라"를 비용 처방으로** 낸다. ⚠️ 일화는 출처 미제시. ko는 맺음을 **"그리고 아닙니다 / 토큰을 최대화하세요."**(17:40~17:44)로 뒤집는다.

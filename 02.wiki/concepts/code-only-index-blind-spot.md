@@ -5,9 +5,9 @@ category: theory
 tags: [indexing, context-engineering, documentation, limits]
 related: [file-discovery-tax, code-knowledge-graph, llm-coding-guidelines, agent-memory, context-engineering]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sourcegraph-codebase-visibility]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-15
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 # Code-Only Index Blind Spot
@@ -55,3 +55,9 @@ updated: 2026-10-09
 [[dan-adler|Dan Adler]]([[sourcegraph|Sourcegraph]])는 이 페이지와 **정반대 방향**에서 같은 경계선을 긋는다 — 이 페이지는 *코드 인덱스만으로는 산문 맥락이 빠진다*, Adler는 *산문 맥락 파일로는 코드를 못 본다.*
 
 > ⚠️ **Contradiction: 산문 맥락 파일의 효과.** [[llm-coding-guidelines]]·[[intent-md]] 쪽 소스들은 그런 파일이 행동을 바꾼다고 하고, Adler는 *"barely moving the needle"* 이라 한다. Adler의 말은 **측정 없는 단언**이고, 화자는 코드 인덱스를 파는 회사다. 위키의 독해: 둘이 겨냥하는 규모가 다르다 — 한 저장소의 *아키텍처 설명*은 수만 저장소 사이의 *어디에 무엇이 있는가*를 대신할 수 없다. 이 페이지의 표 *"셋을 하나로 잇는 소스는 아직 없다"* 는 그대로다.
+
+## "셋을 하나로 잇는 소스"의 첫 후보 — 컨텍스트 엔진 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+이 페이지는 *코드(참조 그래프) · 의도·규칙(파일) · 과거 결정(검색)을 하나로 잇는 소스는 아직 없다* 고 적었다. [[unblocked|Unblocked]]의 [[context-engine|컨텍스트 엔진]]은 한 호출로 *"not only the source code, but also, you know, Notion documents that talked about the architecture, um pull requests, Slack conversations that were had about optimizing this particular component"*(03:08~03:20)를 묶어 돌려준다고 시연한다.
+
+⚠️ **후보일 뿐이다.** 묶음을 어떻게 만드는지(인덱스·랭킹·권한)는 발화되지 않고, 효과는 세션 1건의 비용 비교(*"a 50% reduction in cost"* 03:57~03:59)뿐이다. 화자가 공개한 방법은 **구조화 쿼리 쪽**([[nl-to-structured-query-scaffolding]])이고, 산문 맥락을 코드와 *잇는* 방법은 아니다.

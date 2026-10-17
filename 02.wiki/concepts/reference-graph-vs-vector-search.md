@@ -3,11 +3,11 @@ title: Reference Graph vs Vector Search
 type: concept
 category: technique
 tags: [retrieval, embeddings, code-search, knowledge-graph]
-related: [retrieval-augmented-generation, code-knowledge-graph, file-discovery-tax, long-context-agents]
+related: [retrieval-augmented-generation, code-knowledge-graph, file-discovery-tax, long-context-agents, agentic-search, eval-experiment-anatomy]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-braintrust-agentic-vs-vector-search-eval]
 created: 2026-09-15
-updated: 2026-09-21
+updated: 2026-10-17
 ---
 
 # Reference Graph vs Vector Search
@@ -61,3 +61,27 @@ updated: 2026-09-21
 ## References
 
 - [[tech-bridge-graft-code-knowledge-graph]] · [[code-knowledge-graph]] · [[graft]]
+
+## 세 번째 질문 — "몇 개·누가·언제" (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+이 페이지는 *의미가 비슷한 것* 과 *실제로 서로를 쓰는 것* 을 갈랐다. [[peter-werry|Peter]]([[unblocked|Unblocked]])는 셋째 유형을 더한다 — *"PRs that I merged last week. Who reviewed payments the most, open PRs, etc. Um and these are queries. They're not semantic searches."*(06:51~07:03)
+
+| 질문 | 답하는 구조 |
+|---|---|
+| 의미가 비슷한 것 | 벡터 검색 |
+| 서로를 쓰는 것 | 참조 그래프 |
+| **필터·집계·시간 범위** | **구조화 쿼리** → [[nl-to-structured-query-scaffolding]] |
+
+화자는 RAG를 깎지 않는다(*"RAG nails the content part"* 06:25) — 다른 절반을 더한다(*"the other half of Reg[=RAG]"* 17:03).
+
+## 첫 직접 비교 — 같은 정확도, 4배 비용 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
+
+[[jess-wang|Jess Wang]]([[braintrust|Braintrust]])이 코딩 에이전트의 버그 위치 찾기에서 vector search와 agentic search(grep·find·ls·cat)를 **같은 Claude Code 하네스 위에서** 비교했다. 데이터는 Microsoft TypeScript Go의 *"fix"* PR 약 20개이고, 채점은 테스트 통과 이진 채점이다. 결과: *"both got the same level of accuracy, but essentially vector search cost uh four times more than agentic search."*(14:51~15:01)
+
+이 페이지의 대비표에서 벡터가 *"답하지 못하는 것: 연결·방향·파급"* 이라고 한 자리를 trace가 보여 준다.
+
+- *"these chunks of code often miss things like um imports or tool calls or the calling code above it"*(15:15~15:22). 한 행에서는 *"the vector agent made 26 searches and still couldn't piece together how three functions interacted across the file."*(15:31~15:38)
+- *"vector search gave a lot of proximity to the correct code, but agentic search had more of the connective tissue to connect the actual logic of those chunks of code."*(15:59~16:10)
+- 비용은 정답률이 아니라 **반복 검색의 LLM 호출 누적**에서 왔다(16:19~16:33).
+
+지금까지 이 페이지의 근거는 채택률 진술(당사자)과 논증이었다. 이 소스는 **변수 하나만 바꾼 첫 실험**이다. ⚠️ 약 20행, 작업당 1회 시행이고, 화자 스스로 *"my vector search implementation was relatively weak"*(17:00~17:03)라고 한다. 정확도 수치와 비용 단위는 발화되지 않는다. **혼합 구성은 시험하지 않았다.** 그래서 이 페이지가 적어 둔 *"벡터 검색 쪽의 반론은 이 위키에 아직 없다"* 는 여전히 유효하다. 이 실험도 벡터를 변호하지 않지만, 벡터가 **틀린다**고 하지도 않는다. 실험 설계의 틀은 [[eval-experiment-anatomy]].

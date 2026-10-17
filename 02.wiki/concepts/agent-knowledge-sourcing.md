@@ -6,9 +6,9 @@ tags: [agent, knowledge, routing, decision, skills, mcp, rag, memory]
 aliases: [에이전트 지식 조달, 지식 라우팅]
 related: [agent-skills, model-context-protocol, retrieval-augmented-generation, agent-memory, context-engineering, company-brain, no-silent-write]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-exa-perfect-search-for-agents]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-exa-perfect-search-for-agents, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-08
-updated: 2026-09-22
+updated: 2026-10-16
 ---
 
 # Agent Knowledge Sourcing
@@ -54,6 +54,8 @@ updated: 2026-09-22
 | **이 페이지** | **어느 메커니즘으로 지식을 줄 것인가** | [[tech-bridge-agent-knowledge-four-ways]] |
 
 **설계 시점의 선택을 묻는 표는 이것이 처음**이다.
+
+- **구조적 질문의 갈래 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])** — *"PRs that I merged last week"* 처럼 *글로 적힌 지식* 이지만 집계·필터가 필요한 질문은 RAG 줄로 가지 않는다 — *"these are queries. They're not semantic searches."*(07:00~07:03) → [[nl-to-structured-query-scaffolding]]. [[context-engine|컨텍스트 엔진]]은 이 라우팅을 한 호출 뒤로 숨기는 제품 범주다.
 
 ## 한계
 

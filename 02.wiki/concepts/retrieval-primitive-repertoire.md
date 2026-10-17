@@ -6,9 +6,9 @@ tags: [tool-design, primitives, grep, bm25, semantic-search, co-design, training
 aliases: [프리미티브 레퍼토리, 도구 공동 설계, tool co-design]
 related: [bm25, code-as-atypical-knowledge, tools-are-not-neutral, llm-as-search-user, ride-the-optimization-trajectory, agent-tool-design-practices, retrieval-augmented-generation, reference-graph-vs-vector-search]
 first-seen: tech-bridge-knowledge-agents-not-coding-agents
-sources: [tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-llamaindex-document-context-layer]
+sources: [tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-llamaindex-document-context-layer, tech-bridge-unblocked-context-engine-structured-queries]
 created: 2026-09-21
-updated: 2026-09-29
+updated: 2026-10-16
 ---
 
 # 검색 프리미티브 레퍼토리
@@ -82,3 +82,7 @@ updated: 2026-09-29
 - 양면을 이루는 곳: [[ride-the-optimization-trajectory]] · [[llm-as-search-user]]
 - 개념: [[bm25]] · [[code-as-atypical-knowledge]] · [[tools-are-not-neutral]] · [[retrieval-augmented-generation]] · [[reference-graph-vs-vector-search]]
 - 도구 실패 모드: [[agent-tool-design-practices]] · [[build-a-lever]] · [[capability-discovery-burden]] · [[file-discovery-tax]]
+
+## 프리미티브가 빠지면 루프가 엉뚱한 곳으로 수렴한다 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])
+
+[[unblocked|Unblocked]]의 쿼리 엔진 데모에서 *"PRs with authentication in the title"* 은 정규식으로 생성됐다가 검증기에 막혔고(14:39~14:50), 재시도 루프는 *"it constrained it down to use match, and unfortunately, this is an exact title match. We don't have any PRs with that exact title."*(16:00~16:07)로 수렴했다. 처방은 *"we need one more thing, which is this, full-text search"*(16:08~16:13) — 이 페이지의 *모델이 프리미티브 전부를 알고 골라 써야 한다* 의 구조화 쿼리 판. 프리미티브가 없으면 **검증을 통과하는 틀린 쿼리**가 나온다.
