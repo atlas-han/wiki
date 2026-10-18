@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-engineer, career, roles, judgment, systems]
 aliases: [엔진과 자동차, AI 엔지니어의 정의, 배선하는 사람]
-related: [three-tier-ai-skill-stack, taste-vs-judgment, workflow-vs-agent, agent-knowledge-sourcing, agent-distributed-systems, cognitive-offloading]
+related: [three-tier-ai-skill-stack, taste-vs-judgment, workflow-vs-agent, agent-knowledge-sourcing, agent-distributed-systems, cognitive-offloading, open-model-customization-loop]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-fireworks-train-to-deploy-open-models]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-10-18
 ---
 
 # AI 엔지니어 vs 머신러닝 연구원
@@ -34,6 +34,8 @@ updated: 2026-09-16
 - 이 위키의 *AI engineer* 는 지금까지 **조직**([[ai-engineer|AI Engineer]] — 컨퍼런스 운영)이거나 **직함**이었다. 이 페이지는 **직무**다. 둘은 무관하다.
 - [[agent-distributed-systems]] — 소스의 결론 문장(*"모든 AI 제품은 근본적으로 잘 구조화된 API 호출들"*)이 그 페이지의 전제와 같다.
 - [[workflow-vs-agent]] — 직무의 핵심 산출물이 *루프* 라는 것.
+
+- (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]]) 학습 제품도 이 경계로 나뉜다. [[fireworks-ai|Fireworks AI]]는 입문 PM·빌더에게 Training Agent, 대부분의 고객에게 관리형 학습(버튼), ML 엔지니어에게 자체 training loop·loss function을 쓰는 Training API를 준다(07:19~09:48).
 
 ## ⚠️ 유보
 

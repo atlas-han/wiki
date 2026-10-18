@@ -3,11 +3,11 @@ title: Post-training의 북극성 (RLHF · RLVR · 보정된 의사결정)
 type: concept
 category: technique
 tags: [post-training, rlhf, rlvr, calibration, objective-function]
-related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model, model-calibration, verifiable-goals]
+related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model, model-calibration, verifiable-goals, open-model-customization-loop]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-fireworks-train-to-deploy-open-models]
 created: 2026-09-20
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # Post-training의 북극성
@@ -69,6 +69,10 @@ updated: 2026-10-09
 → 위 표의 *"제3 ([[typesafe-ai|TypeSafe]]) — 보정된 의사결정 — ⚠️ 미출시 · 검증 불가"* 에 **기법 이름(RLCD)과 모델(Jev)** 이 붙었다. ⚠️ 여전히 **TypeSafe 자료의 제3자 재진술**이고(*"I'll stick to what they have said"*, 09:33~09:37) 화자는 Almeida를 언급하지 않는다. → [[model-calibration]]
 
 > ⚠️ **Contradiction(표현): RLVR과 확신.** 이 페이지의 RLVR = *"순수 정확성의 로그 오류율"*(Almeida, 15:56~16:11, ko 번역 기준). 로그 손실은 그 자체로 보정을 보상하는 채점 규칙이다. IBM 편은 RLVR이 *"얼마나 확신해야 하는지엔 보상하지 않는다"* 고 단언한다. 같은 회사의 서사를 두 화자가 다르게 옮겼을 수 있다 — **Almeida 편 en-orig 재확인 전까지 미해소.**
+
+## 랩 밖의 post-training — 제품 옵션이 된 SFT·RFT·DPO (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+이 페이지의 북극성은 프런티어 랩의 목적 함수였다. [[fireworks-ai|Fireworks AI]]에서는 SFT·RFT·DPO가 고객이 고르는 학습 옵션이다(09:58~10:04). *"nowadays, I think RFT has become extremely extremely popular"*(10:04~10:09). 어려운 자리는 랩과 같다 — 벤더가 직접 돕는 일이 *"define a good evaluator function"*(10:12~10:14)이다. 입문자용 Training Agent는 RFT를 지원하지 않는다(10:28~10:30). → [[open-model-customization-loop]] · [[verifiable-goals]]
 
 ## References
 

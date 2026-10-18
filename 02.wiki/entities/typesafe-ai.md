@@ -6,9 +6,9 @@ tags: [startup, stealth, post-training, automation, calibration, jev, system-1-m
 aliases: [TypeSafe, TypeSafe AI, 타입세이프]
 links:
   - https://typesafe.ai/
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-goodbye-slop-state-machines, tech-bridge-just-in-time-ontology]
 created: 2026-09-20
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # TypeSafe (TypeSafe AI)
@@ -58,6 +58,10 @@ updated: 2026-10-09
 ### 2026-10-09 갱신 — 외부 개발자의 Jev 데모와 발표 시점 단서
 
 [[tech-bridge-goodbye-slop-state-machines]]에서 [[david-khourshid|David Khourshid]](XState)가 *"A couple days ago, I was pretty much nerd sniped when Type Safe announced Jev."*(17:52~17:56)라 하고 Jev로 상태 머신 기반 에스프레소 데모를 했다. **Jev 발표는 그 Agent Conf 2026 발표 며칠 전** — 여전히 절대 날짜는 없다. *"the creator said, 'You're absolutely correct.'"*(18:38~18:40)의 creator가 TypeSafe 쪽 인물인지 미발화. 아키텍처·자금은 여전히 전무(학습은 위 갱신의 RLCD 이름·제3자 재진술뿐).
+
+### 2026-10-18 갱신 — 사용자의 프로덕션 규모 보고
+
+- 2026-10-18 · [[tech-bridge-just-in-time-ontology]]: 사용자([[southbridge|Southbridge]])가 Jev를 프로덕션 규모(호출 90,000회)로 쓴 첫 보고. TypeSafe라는 회사명은 발화되지 않는다. → [[jev]]
 
 ## 미해결 사항
 

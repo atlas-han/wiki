@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-05
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Harness Pruning
@@ -113,3 +113,9 @@ pruning은 축소가 아니라 **재배치**다.
 ## 반대 방향의 주장 — 스킬은 모델 교체를 견딘다? (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
 
 > ⚠️ **긴장.** 이 페이지는 하네스 기능을 *"현재 모델이 가지고 있는 몇 가지 오류 모드를 보완"* 하는 것으로 보고, 모델이 좋아지면 지운다. [[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])는 반대로, 증류한 스킬이 *"resistant against model intelligence deprecation"*(17:19~17:25)이라며 지능을 빌린 동안 절차를 남기라고 한다. 그의 사례 스킬은 **Sonnet 4.6의 실패에서** 증류됐다(12:36~13:16). 다음 모델에서 그 스킬이 불필요하거나 방해가 되는지, 언제 은퇴시키는지는 다루지 않는다. 두 입장은 *모델 결함 보완물*(지운다)과 *회사 고유 절차*(남긴다)를 구분하면 양립할 수 있지만, 자동 증류는 그 둘을 구분하지 않는다.
+
+## "delete the product" (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]: *"one of the principles that we had at Cursor uh and now at SpaceX is to delete the product. And what we mean by this is you kind of have to internalize and assume that the models today are the worst they'll ever be. Which means that in 6 months, uh, you might need to completely rebuild the UI."*(37:45~38:04) *"you really want to try to build for the next generation of the model. like how do you build as little as possible"*(38:19~38:28) 이 페이지의 "지운다"를 **처음부터 적게 만든다**(위 2026-09-23 절)와 한 원칙으로 묶는다. 근거로 오늘 강의 내용 대부분이 6개월 전·1년 전에 했을 강의와 크게 다르다는 체감을 든다(38:04~38:17).
+
+> ⚠️ ko는 이 가정법을 **"이 대화는 6개월에서 1년 전에 있었던 일입니다"**(38:09)로 옮긴다.

@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [system-1-model, classifier, typed-output, structured-decisions, agent-harness, model-routing, guardrails, llm-as-judge, latency, cost]
 aliases: [System 1 model, 시스템 1 모델, typed decision model, 분류형 결정 모델]
-related: [jev, typesafe-ai, agent-harness-design, harness-engineering, model-mixing-economics, transcript-classifier, generator-evaluator-pattern, slop-probes, post-training-northstars, privacy-auto-mode, model-calibration, risk-proportional-human-review, prompt-injection, agent-state-machine, inference-speed-as-capability]
+related: [jev, typesafe-ai, agent-harness-design, harness-engineering, model-mixing-economics, transcript-classifier, generator-evaluator-pattern, slop-probes, post-training-northstars, privacy-auto-mode, model-calibration, risk-proportional-human-review, prompt-injection, agent-state-machine, inference-speed-as-capability, cross-model-prior-intersection, pareto-surfing]
 first-seen: tech-bridge-jev-agent-harness
-sources: [tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-altman-devday-dots, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-altman-devday-dots, tech-bridge-goodbye-slop-state-machines, tech-bridge-just-in-time-ontology]
 created: 2026-09-26
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # System 1 모델
@@ -87,6 +87,12 @@ updated: 2026-10-09
 3. **게이트의 한계** — 안전 게이트(탈옥 감지, 12:25~12:41)로 쓰이는 Jev 자신도 *"can be tricked by instructions hidden in the data it's reading"*(12:52~12:54). 텍스트 입력만, 수학·숫자 세기에 약하다(12:41~12:48). → [[prompt-injection]]
 
 ⚠️ **"System 1 모델" 범주에 Jev 외의 사례가 있다는 근거는 여전히 없다** — 두 소스 모두 Jev 하나다. 두 소스의 예시 골격이 같아(지원 티켓·팀·긴급도) **TypeSafe 문서에서 나온 같은 그림**일 가능성이 있다.
+
+## 작업자 층의 decision model — 그리고 질문의 정의가 손잡이다 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[hrishi-olickel|Hrishi Olickel]]은 모델의 세 역할(설계·작업·hill climber)을 나누고 decision model을 **작업자**에 둔다: *"they're workers. They're built for quick contact with information, and they're deployed at the bottom end of large workloads."*(09:59~10:04) 오하이오 entity resolution에서 시험한 배치는 셋이다. ① 싼 reasoning 모델 단독 ② [[jev|Jev]] + 불확실하면 reasoning 모델(이 페이지의 "Jev → LLM" 워크플로) ③ reasoning 모델이 제안하고 Jev가 검사(Jev-as-a-judge).
+
+새로 기록되는 것은 실패와 그 손잡이다. Jev는 가구 연결 9건을 *"confidently"* 놓쳤고, 고친 것은 모델도 임계값도 아닌 **질문의 정의**였다(*"the household question now said what counts as enough evidence"* 11:38~11:41). 그 뒤 *"over a dozen rounds of such qualification. Each round fixed a definition"*(11:47~11:53)이 이어졌다. **typed question의 품질이 이 하네스 부품의 성능을 정한다**는 첫 사용자 증언이다. ⚠️ 자기 보고, 확률값·임계값은 발화되지 않는다.
 
 ## References
 

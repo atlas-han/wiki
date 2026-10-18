@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-08
-updated: 2026-10-12
+updated: 2026-10-18
 ---
 
 # Agent Memory
@@ -204,3 +204,20 @@ updated: 2026-10-12
 > ⚠️ 새 함정 — **갱신이 안 보인다.** 장시간 백그라운드 에이전트는 캐시·런타임 상태 때문에 초반에 쓴 메모리를 이후에 못 읽을 수 있다(13:30~13:55). 이 페이지가 다뤄 온 *낡은 기억*([[agent-distributed-systems]])의 반대편.
 
 ⚠️ LangChain 당사자 발표, 측정 없음.
+
+## 네 층 — core facts · dated logs · scratchpad · 파일 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])이 always-on agent의 메모리를 층으로 나눈다.
+
+| 층 | 무엇 | 발화 |
+|---|---|---|
+| core facts | 매 프롬프트에 들어가는 사용자 사실(예: 소문자로 쓰는 취향) | *"facts about the user that are very important to be included every single time"*(33:00~33:06) |
+| dated logs | 날짜 붙은 지난 대화 기록 | *"these dated logs of kind of your past conversation history"*(33:57~34:03) |
+| scratchpad | 30분~1시간만 쓸모 있는 지금 일 | *"designed to be ephemeral and they will go away"*(34:09~34:11) |
+| 파일 | 나머지 전부. 모델이 grep으로 찾는다 | *"everything else can be found through files"*(34:14~34:17) |
+
+- core facts에는 *"this kind of garbage collection"*(33:32~33:34)이 필요하다고 한다. 지금 대화와 무관한 사실을 빼 두는 뇌에 비유한다(33:36~33:50). 이 페이지의 오래된 빈자리(강등·무효화)에 **이름은 붙지만 규칙은 없다.**
+- 상태(대화 로그·메모리·루틴)는 DB에 남고(11:06~11:12), 회상은 파일로 한다(08:11~09:17). → [[files-vs-database-agent-memory]]
+- LangChain의 working vs long-term, Oracle의 세 수명과 같은 축이다. scratchpad = 단기·working, dated logs = 일화, core facts = semantic에 가깝다(⚠️ 위키의 대응이고, 화자는 그 분류를 쓰지 않는다).
+- 전망: *"the models are going to get better and better about how they recall on past information (…) Maybe it's a graph, maybe it's files, maybe something else."*(39:03~39:20)
+- ⚠️ ko는 memory를 **"추모"**(32:54)·"회고록"(11:09)으로, dated logs를 **"오래된 기록"**(33:59)으로 옮긴다.

@@ -5,9 +5,9 @@ category: org
 tags: [platform, web-infra, agent-infra, ai-sdk, nextjs]
 links:
   - "https://vercel.com"
-sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-vercel-rauch-agentic-workflow]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-fireworks-train-to-deploy-open-models]
 created: 2026-09-19
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Vercel
@@ -65,6 +65,10 @@ updated: 2026-10-16
 권장 아키텍처: *"the architecture that we recommend at Vercel is that you run the harness and then you give it tools."*(05:44~05:51) → [[brain-hands-decoupling]]. 보안 서사: 샌드박스로 공급망 공격을 *"eradicate"* 할 수도 있다(12:48~12:56, 화자 *"bold statement"*).
 
 ⚠️ 09-19 소스에 대해 이 페이지가 적었던 *"보안·권한·prompt injection을 한 번도 다루지 않는다"* 는 Andrew Qu 발표에 대한 것이다 — 이번 소스는 보안을 **판매 논점**으로 전면에 둔다(엔터프라이즈 신뢰, 샌드박스 격리). 단 prompt injection은 이번에도 나오지 않는다.
+
+## 추론 벤더의 고객 사례로 (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+[[fireworks-ai|Fireworks AI]]가 Vercel을 고객으로 든다: *"We helped them actually fine tune and also host the model on our platform and they see a 40x latency improvement."*(03:58~04:06) 커널 최적화 예시도 Vercel이다 — 입력·출력 토큰 수, prompt cache hit rate, latency 목표를 주면 CUDA 커널까지 맞춘다(05:41~06:08). ⚠️ 어느 모델·제품인지, 40배의 기준선은 발화되지 않았다. 벤더 측 진술이다.
 
 ## References
 

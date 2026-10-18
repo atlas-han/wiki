@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
-related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent]
+related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-09
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # 예약형 에이전트 자동화
@@ -106,3 +106,7 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## 트리거는 실행 환경의 함수다 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
 
 [[robert-brennan|Robert Brennan]]의 비교 축 가운데 triggers가 있다. 로컬은 수동 프롬프트다(11:53~11:56). GitHub Actions는 스케줄(*"every Monday morning at 9:00 a.m. and updates your dependencies"* 07:37~07:40)과 PR 이벤트를 받지만 *"it's only able to respond to events coming out of GitHub"*(07:56~07:58)다. VM은 Twilio·Slack·Datadog·GitHub webhook을 받고(08:44~08:55), Kubernetes는 cron과 Slack·GitHub·Jira의 HTTP 이벤트를 받는다(10:32~10:43). 어떤 이벤트로 에이전트를 깨울 수 있는지가 **어디서 돌리느냐**로 정해진다. → [[agent-sandboxing]]
+
+## GrokBot 루틴 = 예약 프롬프트 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+*"routines which if you're familiar with cron jobs you know you're running some prompt basically on some kind of schedule"*(09:53~10:01). 루틴의 결과도 always-on agent를 깨우는 트리거다(11:46~11:52). 사용자가 보여 준 일을 루틴으로 바꾸기도 한다(08:19~08:28). → [[always-on-agent-architecture]] · [[grokbot]]

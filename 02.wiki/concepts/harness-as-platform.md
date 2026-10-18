@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [harness, platform-engineering, agent-skills, plugins, runtime-loading, organization, subagents]
 aliases: [harness as a platform, 하네스 제공자, providers of the harness, 골격 고정 + 런타임 스킬]
-related: [harness-engineering, agent-skills, deferred-tool-context, deterministic-agent-pipeline, agent-harness-design, model-context-protocol, skill-self-improvement, embedded-agent-harness, codex-app-server]
+related: [harness-engineering, agent-skills, deferred-tool-context, deterministic-agent-pipeline, agent-harness-design, model-context-protocol, skill-self-improvement, embedded-agent-harness, codex-app-server, pareto-surfing]
 first-seen: tech-bridge-uber-debug-assist
-sources: [tech-bridge-uber-debug-assist, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-codex-app-server]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-codex-app-server, tech-bridge-just-in-time-ontology]
 created: 2026-10-09
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # 플랫폼으로서의 하네스 (Harness as Platform)
@@ -41,6 +41,10 @@ updated: 2026-10-16
 ## 파는 쪽의 사용 설명서 — Codex App Server (2026-10-14 · [[tech-bridge-codex-app-server]])
 
 Uber의 *"we are the providers of the harness"* 를 이번엔 **하네스 제작사가 외부 개발자에게** 말한다. [[dominik-kundel|Dominik Kundel]]([[openai|OpenAI]]): Codex app·IDE 확장·Xcode·JetBrains·T3 Code가 *"all of these are powered by the same harness, the same app server"*(02:30~02:33). 분업은 Uber와 같은 모양이다 — 골격(하네스)은 제공자가, 확장(developer instructions·dynamic tools·인터페이스)은 사용자가 낸다. 다른 점은 둘. **회사 경계 밖**이고, 확장 규칙(버전 번들 · deferred · system prompt 교체 금지)을 **제공자가 정한다**. → [[embedded-agent-harness]] · [[codex-app-server]]
+
+## 빠르게 바뀌는 런타임 위의 안정 층 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[southbridge|Southbridge]]의 Hank Weave(⚠️ 표기 미확정)는 *"a harness that takes the fast-moving surface of agent runtimes like Cloud Code[=Claude Code] and Pi, and then exposes a consistent, well-tested log and API interface with checkpointing, rollback, budget enforcement, everything built in. Something you can build on."*(16:50~17:05) 에이전트 런타임을 **갈아 끼울 수 있는 아래층**으로 두고 그 위에 안정 인터페이스를 세운다. 화자는 이것을 자기 최적화의 첫 조건(*"stable deployment surface"*)으로 둔다. ⚠️ 자사 제품 평가(*"the oldest, most stable, and the most open"* 17:11~17:15).
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [evals, launch, release-gate, behavior-evals, capability-evals, personal-a
 aliases: [launch blocking threshold, 출시 문턱, 행동별 eval]
 related: [taste-encoded-evals, eval-platform-maturity-stages, production-trace-eval-flywheel, skill-evals, verifiable-goals, agent-trust-curve]
 first-seen: tech-bridge-alexandr-wang-muse-launch
-sources: [tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-alexandr-wang-muse-launch, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # 출시 차단 eval 문턱
@@ -32,6 +32,10 @@ updated: 2026-10-16
 - [[taste-encoded-evals]]: eval 위에 사람의 판단을 한 겹 더 두는 구조는 같다. 다만 그쪽은 **취향을 eval로 옮기는 절차**이고, 이 페이지는 **출시 게이트**다.
 - [[eval-platform-maturity-stages]] · [[production-trace-eval-flywheel]]: 그쪽은 출시 **후** 트레이스로 eval을 키운다. 이 페이지는 출시 **전** 차단이다.
 - [[verifiable-goals]] · [[reward-hacking]]: 행 단위 통과/실패 게이트도 지표가 될 수 있다. 소스는 게이밍을 논하지 않는다.
+
+## 한 달짜리 에이전트, 매달 나오는 모델 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]이 출시 문턱의 시간 문제를 연다: *"What do you do when you need to evaluate an agent that runs for a month but the models ship every month? (…) you either have to figure out how to do a better eval or you know not ship models as fast and I think that's going to be a problem that the industry has to figure out in the next six months."*(40:30~40:53) 행 단위 판정이 끝나기 전에 다음 모델이 나오면 문턱을 어떻게 세우는가. 답은 없다.
 
 ## ⚠️ 유보
 

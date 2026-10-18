@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology]
 created: 2026-09-14
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Fable 5.1
@@ -56,3 +56,7 @@ updated: 2026-10-16
 - *"Stripe in Anthropics launch materials for Fable this year reported migrating a 50 million line Ruby codebase in a single day"*(02:30~02:36) — **Fable 출시 자료**의 존재를 말하는 첫 소스(버전 미발화, 자료 미확인).
 
 ⚠️ 위 표의 패턴(Fable = *"현재 최상단"* 의 좌표)과 같은 용법이되, 여기서는 **최상단 모델조차 머지 가능성에선 29%** 라는 반례의 주어로 쓰인다.
+
+## 비교 기준으로 — 버전 없는 언급 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+*"the cheap reasoning model on its own did as well as Fable for about 2% of the cost."*(11:20~11:26) 오하이오 entity resolution의 200 held-out families 기준이다. Fable은 품질 기준선으로 쓰였다. ⚠️ 버전, 비교한 싼 모델의 이름, 비용 기준은 발화되지 않는다(자기 보고).

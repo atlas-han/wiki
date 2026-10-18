@@ -3,11 +3,11 @@ title: "지연 도구 컨텍스트 (Deferred Tool Context)"
 type: concept
 category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
-related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness]
+related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness, prompt-caching]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-02
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -51,6 +51,7 @@ updated: 2026-10-16
 ## 미해결
 
 - **프롬프트 캐시와의 관계** — 로드할 때마다 도구 정의가 추가되면 캐시 접두가 바뀌는가. [[toolbox-pattern]]도 같은 질문(매 반복 재조립의 비용)을 미해결로 둔다.
+  (2026-10-18) 한 가지 답: 이름만 싣고 **턴 중에는 도구 목록을 바꾸지 않는다**([[tech-bridge-lee-robinson-always-on-agents]] 25:23~25:28). 로드한 정의가 접두에 붙는지 뒤에 붙는지는 여전히 발화되지 않았다. → [[prompt-caching]]
 - 짧은 설명을 누가 쓰는가(사람 vs 자동 요약).
 - 50% 절감의 측정 조건.
 
@@ -93,6 +94,12 @@ updated: 2026-10-16
 - ⚠️ tool search의 동작(검색 방식, 짧은 설명을 쓰는지, 찾지 못할 때)은 *"we'll cover more tomorrow in the other session"*(07:56~07:58)으로 미뤄져 이 소스에 없다. 측정치도 없다.
 - 이 페이지의 첫 우려(*비슷한 이름의 도구를 잘못 고른다*)에 대해 화자는 *"without um necessarily confusing it"* 이라고만 말한다.
 - ⚠️ ko는 *"available for the agent"* 를 **"에이전트가 사용할 수 없음"**(16:50)으로 뒤집는다. `en`은 deferred를 *"lazy-loaded"*, tool search를 *"tool lookup tool"* 로 옮긴다.
+
+## 다섯 번째 목소리 — "tool search tool", 그리고 캐시 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]]): *"one kind of context engineering or harness trick um that a lot of the the popular harnesses now use is uh it's called dynamic context or I think uh some other folks call it the tool search tool which is a fun name (…) you're only putting the names of the tools into the every message"*(20:51~21:11). 문제 서술은 이 페이지와 같다. Google Drive·Gmail·YouTube 커넥터를 깔수록 블록이 찬다(20:29~20:44). 메커니즘은 Codex 편의 `deferred` + tool search와 같은 쪽이다. 새로 더하는 것은 둘이다.
+- **캐시**: *"ideally you don't add or remove new tools during turns"*(25:23~25:28). → [[prompt-caching]]
+- **"가장 싼 것부터" 사다리**: 대화 기록 → 플러그인·MCP·API → 웹 검색 → 브라우저 → 데스크톱 → 사용자(21:30~22:25). 도구를 고르는 순서를 비용·신뢰도로 정한다.
 
 ## References
 

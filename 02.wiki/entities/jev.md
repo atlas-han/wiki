@@ -2,13 +2,13 @@
 title: Jev (TypeSafe AI)
 type: entity
 category: model
-tags: [typesafe, system-1-model, classifier, typed-output, structured-decisions, vendor, calibration, rlcd]
+tags: [typesafe, system-1-model, classifier, typed-output, structured-decisions, vendor, calibration, rlcd, entity-resolution]
 aliases: [Jev, 제브, Jev-as-a-judge]
 links:
   - https://typesafe.ai/
-sources: [tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-altman-devday-dots, tech-bridge-pocock-pr-bottleneck, tech-bridge-goodbye-slop-state-machines]
+sources: [tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-altman-devday-dots, tech-bridge-pocock-pr-bottleneck, tech-bridge-goodbye-slop-state-machines, tech-bridge-just-in-time-ontology]
 created: 2026-09-26
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # Jev (TypeSafe AI)
@@ -86,10 +86,26 @@ updated: 2026-10-09
 - **시점 단서:** *"A couple days ago, I was pretty much nerd sniped when Type Safe announced Jev."*(17:52~17:56) — 발표일의 **상대** 단서뿐, 절대 날짜는 여전히 없다.
 - ⚠️ 1회 시연, 확률 수치·상태 목록은 자막에 없다. 화자 스스로 *"I'm actually surprised."*(20:23). 설명란은 Jev를 *"에이전트 프레임워크"* 라 불렀다 — 발화와 이 페이지의 정의(System 1 모델)와 다르다.
 
+## 첫 외부 프로덕션 규모 보고 — 오하이오 entity resolution, 그리고 첫 실패 양상 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[hrishi-olickel|Hrishi Olickel]]([[southbridge|Southbridge]])이 출시 직후 Jev를 오하이오 선거자금 entity resolution 파이프라인에 넣은 결과를 보고했다. *"Jev launched on a Tuesday when we were deep into an entity resolution pipeline."*(10:36~10:42) TypeSafe·파트너·해설이 아닌 **사용자가 수치와 함께 낸 첫 보고**다.
+
+| 항목 | en-orig (⚠️ 모두 자기 보고) |
+|---|---|
+| 자리 | *"bringing in Jev in this newly exploding class of decision models was very easy, cuz they're workers. (…) deployed at the bottom end of large workloads."*(09:53~10:04) |
+| 설계 | 싼 reasoning 모델 단독 · Jev + 불확실하면 reasoning 모델 · reasoning 모델이 제안하고 Jev가 검사(11:07~11:18) |
+| ⭐ 첫 실패 | *"it missed nine household links because it had confidently said no to every one of them."*(11:28~11:34) |
+| 처방 | *"Without touching the models of[=or] the thresholds, the household question now said what counts as enough evidence, and Jeff[=Jev] went from no on all 13 development questions to yes."*(11:36~11:45) |
+| 교차 | *"Jev and Luna agreed on 194. And none of those shared answers was wrong."*(15:50~15:57) → [[cross-model-prior-intersection]] |
+| 규모 | 203,317 케이스, Jev 호출 90,000회, 총 $795(예상 약 $10,000)(12:19~13:09) |
+
+- **처방이 임계값이 아니라 질문의 정의였다.** IBM 해설의 임계값 3분기(*"the threshold also tells us roughly how often the automatic path will be wrong"*)와 다른 손잡이다. 질문이 결정과 맞지 않으면 보정된 확률도 자신 있게 틀린다(⚠️ 긴장, 화자는 확률값을 말하지 않는다). → [[model-calibration]]
+- ⚠️ en-orig는 Jev를 *"Jeff"*로 섞어 적는다(01:09, 11:42, 12:36, 13:09, 18:21). IBM 편과 같은 ASR이다. ko는 *"went from no … to yes"*를 **"아니라고 → 아니라고"**(11:41), *"90,000 calls to Jeff"*를 **"제프에게 전화를 걸자"**(13:07)로 옮긴다.
+
 ## 미해결 사항
 
 - 모델 크기·아키텍처·학습 데이터 — ~~학습 방식 전무~~ → **학습 방식 이름(RLCD)만** 제3자 진술로 확인(2026-10-09). 크기·아키텍처·데이터는 여전히 없음.
-- 정확도·보정 품질·실패 사례 — 보정 **주장**과 한계 셋(텍스트만 · 수학/숫자 세기 · 숨은 지시)은 생김(2026-10-09). **실측은 여전히 없음**(PII 98% 한 건).
+- 정확도·보정 품질·실패 사례 — 보정 **주장**과 한계 셋(텍스트만 · 수학/숫자 세기 · 숨은 지시)은 생김(2026-10-09). **실측은 여전히 없음**(PII 98% 한 건). → **실패 사례 하나**(2026-10-18, Olickel: 가구 연결 9건 confidently no, 질문 정의로 해소). 보정 실측은 여전히 없음.
 - 20~200배 / 40~400배의 기준 LLM·작업·하드웨어.
 - 출시일(*"방금 나온"* 뿐). Khourshid의 *"A couple days ago (…) Type Safe announced Jev"* 도 상대 단서뿐(2026-10-09).
 - 이름의 유래 → **해소**(Jevons paradox, 2026-10-09).
@@ -105,6 +121,7 @@ updated: 2026-10-09
 - [[tech-bridge-altman-devday-dots]] — 사용자(Dan Shipper)·경쟁 랩 CEO(Sam Altman)의 언급
 - [[tech-bridge-pocock-pr-bottleneck]] — 소프트웨어 팩토리의 분류기 예시
 - [[tech-bridge-goodbye-slop-state-machines]] — 첫 외부 개발자 시연 (상태 머신 위 다음 이벤트 선택)
+- [[tech-bridge-just-in-time-ontology]] — 첫 외부 프로덕션 규모 보고 (오하이오 entity resolution, 실패 양상)
 - [[typesafe-ai]] · [[langchain]] · [[diogo-almeida]] · [[sam-altman]] · [[dan-shipper]] · [[matt-pocock]] · [[david-khourshid]]
 - 관련: [[system-1-model]] · [[model-mixing-economics]] · [[transcript-classifier]] · [[generator-evaluator-pattern]] · [[post-training-northstars]]
 - 외부: <https://typesafe.ai/>

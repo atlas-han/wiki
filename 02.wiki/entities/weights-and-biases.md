@@ -6,9 +6,9 @@ tags: [mlops, experiment-tracking, observability, evals, agents]
 aliases: [W&B, WandB, wandb, 가중치와 편향]
 links:
   - https://wandb.ai
-sources: [tech-bridge-wandb-aria-self-improving-agent]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-fireworks-train-to-deploy-open-models]
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-18
 ---
 
 # Weights & Biases
@@ -31,6 +31,10 @@ updated: 2026-09-30
 ## CoreWeave와의 관계 — 미확정
 
 화자는 ARIA를 *"So that's coreweave Arya. Uh welcome to Weights and Biases."*(16:14~16:17)로 맺고, 모델을 *"coreweave inference"*(07:03~07:05)로 쓰며, 다른 데모가 *"H200s running on Corey[=CoreWeave] infrastructure"*(15:01~15:03)에서 돌았다고 한다. **두 이름이 한 회사처럼 쓰이지만 관계(인수·자회사 등)는 자막에 설명이 없다.** ⚠️ 이 위키는 외부 확인을 하지 않았다.
+
+## 학습 플랫폼의 관측 연동 (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+[[fireworks-ai|Fireworks AI]]의 관리형 학습은 W&B API 키를 받아 학습 지표를 내보낸다: *"you can also plug in your weights and biases API key into the managed training service itself. Uh and export some of the observability metrics to platforms like Weights & Biases if you're already using that."*(08:56~09:09) 이 위키에서 W&B가 **모델 학습 실험 추적** 쪽으로 나온 첫 서술이다(기존은 에이전트·eval 쪽). ko는 *"가중치 및 편향 API 키"*로 옮겼다.
 
 ## 미해결 사항
 

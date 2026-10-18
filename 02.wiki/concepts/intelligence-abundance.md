@@ -3,11 +3,11 @@ title: Intelligence Abundance (지능의 풍요 — 형평 논거)
 type: concept
 category: theory
 tags: [abundance, equity, electricity-analogy, pricing, access, openai, policy]
-related: [compute-constrained-growth, intelligence-as-infrastructure, power-shortfall, token-roles, ai-jobs-impact, regulatory-capture]
+related: [compute-constrained-growth, intelligence-as-infrastructure, power-shortfall, token-roles, ai-jobs-impact, regulatory-capture, just-in-time-ontology]
 first-seen: tech-bridge-altman-g20-economic-boom
-sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-just-in-time-ontology]
 created: 2026-09-07
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # Intelligence Abundance (지능의 풍요 — 형평 논거)
@@ -72,6 +72,10 @@ Altman은 이것을 향후 5년의 **위험 셋** 중 하나로 분류한다(나
 ## 전기 비유의 노동 판본 — 망을 유지하는 사람들 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
 
 [[cedric-clyburn|Cedric Clyburn]]은 *"AI is becoming the new electricity"* 를 [[andrew-ng|Andrew Ng]]의 말로 기억해 인용한다(08:28~08:32, ⚠️ 원 출처 미발화). 그가 끌어내는 것은 가격·형평(Altman)이나 토큰 = kWh(Huang)가 아니라 **직업**이다. *"there's also entire industries and thousands of people who for example work at substations to make sure that the grid is working (…) And AI might follow the same path where we're going to need engineers who can maintain these systems"*(08:45~09:12). 측정은 없고 *"might"* 다.
+
+## 변환의 풍요 — 데이터 인프라의 전제가 바뀐다 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+*"All of our data infrastructure today is built on the idea that transformation is expensive. What if that wasn't true anymore? I believe we've solved the final bottleneck in transformation, general intelligence or judgment, and we've made it accessible on tap all along the Pareto frontier."*(00:26~00:47) [[hrishi-olickel|Hrishi Olickel]]은 풍요를 형평이 아니라 **아키텍처의 전제**로 다룬다. 출발점은 DuckDB의 Hannes가 *"compute and storage were slow and expensive"*를 전제한 분산 아키텍처로 10년을 잃었느냐고 물은 글이다(00:01~00:08, ⚠️ 원문 미확인). 귀결은 [[just-in-time-ontology]]다. 맺음은 *"any information, in any format, is made as useful as it can be"*(20:42~20:46)다.
 
 ## ⚠️ 유보
 

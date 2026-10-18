@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology]
 links: []
 created: 2026-09-06
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Astra (OpenAI)
@@ -145,3 +145,7 @@ updated: 2026-10-16
 ## 첫 벤치마크 상대값 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
 
 [[dex-horthy|Dex Horthy]]: *"here's the numbers by the way on Astra and Sol X I. Astra is one percentage point or 1.5% percentage points higher than GPT-5.5."*(08:43~08:51) — 문맥상 [[slopcodebench|SlopCodeBench]](GPT-5.5 = 14.8%), ⚠️ 1 vs 1.5 미확정, 벤치마크 이름은 그 문장에 없다. *"Sol X I"*(`en` *"Sol X High"*)는 판독 보류 — 이 페이지의 *Soul* 등급명과 **동일시하지 않는다.** 앞서 *"even Astra and Fable"*(07:33)은 문장이 끊긴다. 이 위키에서 Astra에 붙은 **첫 수치**지만 제3자(화자)의 화면 읽기다.
+
+## 제3자 에이전트의 런타임 모델로 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[southbridge|Southbridge]]의 에이전트가 *"running on Astra and then later on Opus"*(12:49~12:53) 10일 동안 파이프라인 아키텍처를 스스로 시도했다고 한다. Astra를 **장기 실행 hill climber의 두뇌**로 쓴 첫 사용자 언급이다. 왜 Opus로 바꿨는지는 발화되지 않는다. ⚠️ 자기 보고, 에이전트 이름 *"4A"* 미판독.

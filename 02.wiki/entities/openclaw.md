@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-10
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # OpenClaw
@@ -84,3 +84,9 @@ updated: 2026-10-17
 ## "open claw craze" — 실행 환경 분류의 한 단계로 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
 
 [[robert-brennan|Robert Brennan]]([[openhands|OpenHands]])은 에이전트 샌드박싱 전략 셋째를 *"kind of in the open claw craze where you actually get a separate computer, you know, a virtual machine in the cloud or maybe a Mac mini"*(08:10~08:16)로 소개한다. 장점은 webhook과 스케줄이다. 단점은 모든 에이전트가 같은 것에 접근하는 co-location 문제다(08:58~09:34). Zuckerberg 편의 Mac Studio, 다른 소스의 Mac mini 구매 붐과 같은 그림이 **보안 쪽 평가**와 함께 나온다. ⚠️ en-orig ASR은 *"open claw"*(소문자)이고 ko는 "오픈 클로"다.
+
+## 1월의 캐시 미스 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]]): *"all the way back to January of this year, uh, when OpenClaw was really getting popular and people were using it, uh, inside of subscription plans for, uh, model providers, this was a very new usage pattern that model providers hadn't really seen and the the harness hadn't really yet been optimized for this type of workflow. So, there was a lot of cache misses. And when you're doing something like this where agents are running all the time, that's obviously problematic."*(29:59~30:27) → [[prompt-caching]]
+
+> ⚠️ 긴장(약): 위 절(Stigg 편)은 같은 구독 사용을 공급자의 **보조금**과 서드파티 접근 차단으로 설명했다. Robinson은 **캐시 미스**를 든다. 둘은 배타적이지 않다. 어느 쪽도 공급자 이름과 수치를 함께 대지 않는다. 연도 표기 *"January of this year"*는 녹화 연도 기준이고 녹화일은 미발화다.

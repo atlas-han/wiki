@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agents, workflow, determinism, langgraph, planning, guardrails, max-turns, context-pruning, model-routing]
 aliases: [고정 계획 에이전트, 결정론 노드 + LLM 노드, deterministic and LLM nodes, We control the plan]
-related: [workflow-vs-agent, linear-vs-closed-loop-harness, agent-harness-design, harness-engineering, dynamic-workflows, harness-as-platform, context-engineering, context-rot, agent-verification-skill]
+related: [workflow-vs-agent, linear-vs-closed-loop-harness, agent-harness-design, harness-engineering, dynamic-workflows, harness-as-platform, context-engineering, context-rot, agent-verification-skill, pareto-surfing]
 first-seen: tech-bridge-uber-debug-assist
-sources: [tech-bridge-uber-debug-assist, tech-bridge-human-is-async-api, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-dental-clinic-ax-transformation]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-human-is-async-api, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-dental-clinic-ax-transformation, tech-bridge-just-in-time-ontology]
 created: 2026-10-09
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # 결정론 골격 에이전트 파이프라인 (Deterministic Agent Pipeline)
@@ -34,6 +34,10 @@ updated: 2026-10-17
 - ⚠️ **같은 말, 다른 결정론** (2026-10-10 · [[tech-bridge-human-is-async-api]]) — Temporal의 *"workflows are deterministic, activities are non-deterministic"*(12:25~12:30)는 이 페이지의 *결정론 노드 + LLM 노드* 와 겉모양이 같지만, 거기서 결정론은 **replay 가능성**의 요구이고(위키의 배경지식 — 화자는 이유를 말하지 않는다) 에이전트 루프 전체(동적 경로 포함)가 workflow에 들어간다. 이 페이지의 결정론은 **계획이 고정됐다**는 뜻이다. → [[durable-execution]]
 - **부품 단위의 같은 감각 (2026-10-15 · [[tech-bridge-unblocked-context-engine-structured-queries]])** — [[peter-werry|Peter]]([[unblocked|Unblocked]])는 쿼리 엔진의 스키마 추론·identity 매칭을 절차적으로 풀고 LLM은 synthesis와 tiebreaker에만 쓴다: *"you can use an LLM as a Thor hammer[?] (…) But actually, you get uh really, really far just using traditional procedural methods. (…) don't always fall back to an LLM"*(10:46~11:00). 그래프 수준(Uber)이 아니라 **한 부품 안의 결정론/LLM 분업** → [[nl-to-structured-query-scaffolding]].
 - (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]]) 1인 치과의 경영 리포트: *"숫자는 분석 프로그램이 계산하고 AI는 그 숫자를 읽어 설명해요. 추정한 내용은 따로 표시하게 했고요."*(05:26~05:33) 결정론적 계산과 LLM 해석의 분업이 개발자가 아닌 사람의 설계로 나온다. 추정치 표시 규칙이 더해진다. 결과로 원장 본인의 카드 영수증 누락을 잡았다(05:57~06:03). ⚠️ 해설 전언이고, "분석 프로그램"의 정체는 발화되지 않는다.
+
+## rig와 codon (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[southbridge|Southbridge]]는 시범에서 작동한 검사를 *"rigs, code that runs between bounded work segments that we call codons"*(19:07~19:11)로 옮긴다. codon은 *"reused, looped independently, validated, and placed in sequence"*(19:13~19:17)된다. 모델 단계 사이에 결정론 검사 코드를 두는 같은 골격이다. ⚠️ 용어 정의는 자막까지.
 
 ## ⚠️ 유보
 

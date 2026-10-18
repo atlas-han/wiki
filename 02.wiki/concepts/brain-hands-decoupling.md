@@ -3,11 +3,11 @@ title: Brain–Hands Decoupling
 type: concept
 category: architecture
 tags: [agent-infrastructure, decoupling, sandbox, harness]
-related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure, humanoid-robot-scaling]
+related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure, humanoid-robot-scaling, always-on-agent-architecture]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow]
+sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-05-25
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Brain–Hands Decoupling
@@ -103,6 +103,16 @@ Token이 sandbox 안에 들어가지 않음:
 ## Vercel의 권장 아키텍처로 (2026-10-12 · [[tech-bridge-vercel-rauch-agentic-workflow]])
 
 [[vercel|Vercel]] CEO [[guillermo-rauch|Guillermo Rauch]]가 이 모델을 이름째 쓴다: *"using this mental model like brain and hands. I don't know if you if you've heard of it, but like the architecture that we recommend at Vercel is that you run the harness and then you give it tools. So, in this example, the tool that we're giving it is the Vercel sandbox."*(05:36~05:56) — [[anthropic-managed-agents]]의 원 출처는 밝히지 않는다. **두 번째 회사가 같은 분할을 제품 권장안으로 채택**한 기록이고, 손(샌드박스)이 [[fx]] 하네스 바깥의 교체 가능한 도구다. 보안 쪽 연장(같은 소스 12:34~13:41): 손을 클라우드 샌드박스에 두면 *"compartmentalize and contain the blast radius of a supply chain attack"* — 위 *Security boundary* 절과 같은 논리를 **개발 생애주기 전체**로 넓힌다(⚠️ 화자 주장, 측정 없음). ko는 harness를 "테스트 환경", sandbox를 "실험장"으로 옮겨 이 구조가 읽히지 않는다.
+
+## 같은 분리, 운영 이유 — 루프를 VM 밖에 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])이 Anthropic과 다른 회사에서 같은 선을 긋는다. brain(에이전트 루프와 상태)은 서버와 DB에, hands(에이전트의 컴퓨터)는 Firecracker VM에 둔다.
+
+> *"the most critical thing here is that if you put the agent loop on the virtual machine, then you can't shut down the virtual machine independently from the uh from the agent server. So yeah, you want to save everything on the server. Um, so you can always kind of rebuild that virtual machine. For example, let's say you need to do some critical zero day Linux uh update on the on the VM. Well, it would be great to be able to rebuild that and not, you know, blow away the entire agent loop and have downtime in the application."* (14:53~15:24)
+
+[[anthropic-managed-agents]]의 이유는 sandbox를 cattle로 만들어 실패를 격리하는 것이었다. Robinson의 이유는 **패치와 다운타임**이고, 거기에 비용(*"not enough computers in the world"* 10:56~11:02 — VM은 평소 잔다)이 더해진다. hands는 snapshot으로 재우고 깨운다(12:28~12:36). → [[always-on-agent-architecture]] · [[pets-vs-cattle]]
+
+> ⚠️ ko는 핵심 문장을 뒤집는다. *"rebuild that and not (…) blow away the entire agent loop"* → **"에이전트 사이클 전체를 파괴하고 시스템 다운타임을 유발합니다"**(15:17~15:22).
 
 ## References
 

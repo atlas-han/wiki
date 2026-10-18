@@ -7,9 +7,9 @@ aliases: [Temporal, Temporal Technologies, temporal.io, 템포럴]
 links:
   - "https://temporal.io"
   - "https://github.com/temporalio/temporal"
-sources: [tech-bridge-human-is-async-api]
+sources: [tech-bridge-human-is-async-api, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-18
 ---
 
 # Temporal
@@ -39,6 +39,15 @@ updated: 2026-10-10
 - **[[agent-distributed-systems]]가 요구한 것의 상용 구현 하나** — 그 페이지는 *"에이전트가 부작용을 내는 순간 분산 시스템 문제"* 라며 상태 불명·재시도·보상·관측을 요구했고, Temporal은 그것을 **실행 모델**(workflow의 이벤트 히스토리 + activity 재시도)로 흡수한다고 주장한다.
 - **프레임워크가 아니라 그 아래 층** — ADK·LangGraph 같은 에이전트 프레임워크를 *대체* 하지 않고 **감싼다**(모델 호출·도구 호출을 activity로). [[langchain]] · [[google-cloud|Google ADK]] 와 경쟁이 아니라 통합 관계로 소개됐다.
 - ⚠️ **용어 충돌** — Temporal의 *workflow* 는 [[workflow-vs-agent]]의 *workflow*(미리 정해진 경로)와 다르다. → [[durable-execution]]
+
+## 사용자 쪽 첫 증언 — GrokBot (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+이 페이지의 서술은 지금까지 Temporal 직원의 발표 하나였다. 이번에는 **Temporal을 쓰는 쪽**이다. [[lee-robinson|Lee Robinson]]([[spacex|SpaceX]], [[grokbot|GrokBot]])이 job queue와 대비해 이유를 말한다. 일반 큐는 3단계 도중 죽으면 1~3단계를 다시 돌리고(16:43~16:50), *"what you really want here is you want a durable workflow, which means that it's safe for you to actually retry that"*(16:51~16:59)라는 것이다.
+
+> *"this is like kind of a solved problem in some ways in um distributed systems and in infrastructure. So, we use an open source uh tool called Temporal (…) so that we don't have to rebuild a lot of this very complicated stuff from scratch. Of course, you still have to run the infrastructure for it"* (17:03~17:19)
+
+- 적용 범위: helper 서브에이전트마다 *"its own durable workflow"*(24:37~24:40)다. 비디오 helper가 죽거나 메모리를 다 써도 진행을 잃지 않는다(24:44~24:52).
+- ⚠️ 무엇을 workflow로 두고 무엇을 activity로 두는지, 자체 호스팅인지 클라우드인지는 발화되지 않는다(*"you still have to run the infrastructure"*는 자체 운영으로 읽히지만 확정하지 않는다). ko는 Temporal을 **"임시직"**(17:10)으로 옮긴다.
 
 ## References
 

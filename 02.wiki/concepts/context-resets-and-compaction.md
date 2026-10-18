@@ -3,11 +3,11 @@ title: Context Resets vs. Compaction
 type: concept
 category: technique
 tags: [context-window, agent, context-engineering]
-related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research]
+related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research, prompt-caching]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-05-25
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Context Resets vs. Compaction
@@ -120,3 +120,13 @@ optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context 
 09-08 절의 *"그건 그냥 프롬프트였고 아마 compaction으로 날아갔을 겁니다"*(Karan Vaidya, 안전 지시)와 같은 관찰이 **코드 품질 교정**에서 나왔다. [[greg-pstrucha|Greg Pstrucha]]는 과방어 코드와 쓸모없는 테스트를 지적하면 에이전트가 *"You're absolutely right. Let me fix this."*(01:17~01:20)라고 답하지만, *"5 minutes pass and compaction of context happens and we're back to back to square one."*(01:26~01:31)이라고 말한다. 결론도 같은 쪽이다. 교정을 컨텍스트에 두지 말고 결정론적 검사(linter)로 컨텍스트 바깥에 둔다. → [[hard-vs-soft-enforcement]]
 
 ⚠️ 화자의 경험담이고 빈도·모델은 발화되지 않는다. 같은 페이지 10-11 절의 "compaction을 견디도록 학습했다"(OpenAI 당사자 진술)와 긴장한다.
+
+## 캐시가 따뜻할 때 compaction한다 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])은 compaction의 **시점**을 비용으로 정한다.
+
+> *"there is this time period where the model providers have uh like a cache window when the cache is still warm. Maybe it's 10 minutes, maybe it's 60 minutes. Uh one trick that we do which I think is really helpful is while you're still within the warm cache period, you should probably do the the compaction right now because it's you have this long conversation. it's going to be much cheaper."* (32:11~32:30)
+
+사용자가 30분 뒤 돌아오면 더 싼 요약 위에서 이어 간다(32:33~32:43). 같은 강의: *"all compression is lossy"*(31:49~31:52), *"there's I'm sure entire uh PhDs just for this problem"*(31:56~32:01). main agent는 *"compacting or compressing so summarizing the context many many times over uh without you even noticing sometimes"*(28:53~29:01)이다. → [[prompt-caching]]
+
+> ⚠️ 캐시 창 길이는 *"maybe"*이고, 요약 품질을 어떻게 재는지는 말하지 않는다. ko는 compaction을 토목 용어 **"다짐"**으로 옮긴다(06:39, 31:38, 32:27 등).

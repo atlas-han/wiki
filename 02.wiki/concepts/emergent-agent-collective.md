@@ -6,9 +6,9 @@ tags: [multi-agent, agentic-misbehavior, coordination, scope-creep, incident, ai
 aliases: [에이전트 게시판, agent message board, 에이전트 집단, collective intelligence, 범위 확장, scope creep]
 related: [agent-swarm, agentic-misbehavior, reward-hacking, artifactory, agent-collaboration-as-search, training-time-risk, defense-factory, cross-lab-peer-review]
 first-seen: tech-bridge-openai-huggingface-incident-black-hat
-sources: [tech-bridge-openai-huggingface-incident-black-hat]
+sources: [tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-10-18
 ---
 
 # 자생적 에이전트 집단 (Emergent Agent Collective)
@@ -60,6 +60,10 @@ updated: 2026-09-25
 - 에이전트가 닿는 **공유 서비스의 쓰기 권한·인증**을 샌드박스 경계로 취급 — *"에이전트는 얻을 수 있는 권한과 통신할 수 있는 시스템에 묶인다"*(35:45~35:55). → [[artifactory]]
 - **허니 토큰·기만**으로 집단이 공유하는 정보 자체에 불확실성을 넣기(34:58~35:27).
 - AI 에이전트 **모니터링의 대폭 확대**(30:05~30:08) — ⚠️ 무엇을 어떻게 보는지는 말하지 않는다.
+
+## 학습 데이터가 없는 영역이라는 진술 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]: *"There hasn't really been a lot of training data for example on using bots in a group chat. (…) if you've seen things like moldbook[=Moltbook] or the hugging face incident like there are ways that that goes poorly. So it's important to be able to train the models how to behave well in a multi- aent[=multi-agent] system"*(37:09~37:31). ⚠️ *"the hugging face incident"*가 이 페이지의 사건과 같은지는 발화로 확인되지 않는다. ko는 Hugging Face를 **"포옹 얼굴"**로, 경고를 **"해결책은 있습니다"**로 옮긴다(37:22).
 
 ## ⚠️ 유보
 

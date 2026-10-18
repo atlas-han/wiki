@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [evals, production-traces, regression-tasks, hill-climbing, observability, self-improvement, flywheel]
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
-related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop]
+related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop, open-model-customization-loop]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-30
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -80,3 +80,15 @@ updated: 2026-10-17
 ## 사람이 도는 판본 — 10~20행 샘플에서 시작 (2026-10-17 · [[tech-bridge-braintrust-agentic-vs-vector-search-eval]])
 
 [[jess-wang|Jess Wang]]([[braintrust|Braintrust]], 같은 회사의 두 번째 화자)이 같은 순환을 입문 수준으로 그린다. AI 챗봇이 달린 문서 페이지를 출시한 뒤 프로덕션 로그에서 *"sample a subset of them, maybe like 10 to 20 rows or something and create a kind of data set"*(06:35~06:42)을 만들고, 태스크·채점을 바꿔 eval을 돌린 다음 코드를 바꿔 배포하면 *"the whole flow repeats again because, uh, those changes will show up in your production logs"*(07:15~07:21). W&B(에이전트가 스스로 도는 루프)나 Niazmandi(코딩 에이전트가 headless로 eval)와 달리 **사람이 각 단계를 돈다**. 순환의 역할 분담은 *"eval are a team sport"*(07:35~07:39)이다. AI 엔지니어·PM·SME·데이터 분석가가 나눠 맡는다 → [[eval-experiment-anatomy]]
+
+## 같은 이름, 가중치로 도는 flywheel (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+[[fireworks-ai|Fireworks AI]]의 "data flywheel"은 배포 → 모니터링(토큰 수·cache hit rate·speculator) → 피드백 → 체크포인트에서 재학습이다(11:43~12:13). 이 페이지의 flywheel이 트레이스를 **eval 태스크**로 바꿔 하네스를 고친다면, 그쪽은 피드백을 **가중치**로 되돌린다 → [[open-model-customization-loop]]. 두 루프가 만날 자리는 RFT의 *"evaluator function"*(10:12~10:24)이지만 발표는 그 연결을 말하지 않는다. ⚠️ 그쪽의 모니터링 지표는 서빙 지표이고 품질 지표가 아니다.
+
+## 모델 학습까지 닫히는 판본 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]]): *"let's say your agent gets something wrong. Um ideally then that gets turned into some kind of evaluation. (…) on the back end, you can go and fix the harness. You can fix the bug, you can fix the prompt, maybe it's an inference issue. Um, you can check and make sure it's actually fixed in the eval."*(36:09~36:31) 여기까지가 이 페이지의 순환이다. 그 바깥에 **모델 학습**이 있다. *"you're training new models and ideally the new models are learning from all of these bugs and these failures and they're kind of climbing on the eval"*(36:47~36:55). SFT로 하네스 사용 예시를, RL로 지시 이행·스킬 선택·클릭 위치를 가르친다(35:07~35:34). 하네스를 고치는 팀과 모델을 학습시키는 팀이 한 회사에 있을 때의 판본이다.
+
+> ⚠️ 데이터 양·주기·효과는 발화되지 않는다. 36:55~36:59는 en-orig 공백이다. ko는 inner/outer loop를 **"악순환"**(36:41~36:44)으로 옮긴다.
+
+열린 문제: *"What do you do when you need to evaluate an agent that runs for a month but the models ship every month?"*(40:30~40:35) → [[launch-blocking-evals]]

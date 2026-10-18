@@ -1095,5 +1095,20 @@
   "02.wiki/entities/openhands.md": "LiBuilding",
   "02.wiki/concepts/review-wip-limit.md": "LiPuzzle",
   "02.wiki/concepts/in-house-ai-data-boundary.md": "LiPuzzle",
-  "02.wiki/concepts/agent-sandboxing.md": "LiShield"
+  "02.wiki/concepts/agent-sandboxing.md": "LiShield",
+  "02.wiki/concepts/pareto-surfing.md": "LiPuzzle",
+  "02.wiki/concepts/prompt-caching.md": "LiDatabase",
+  "02.wiki/concepts/speculative-decoding.md": "LiSettings",
+  "02.wiki/concepts/just-in-time-ontology.md": "LiBookText",
+  "02.wiki/concepts/always-on-agent-architecture.md": "LiBot",
+  "02.wiki/concepts/open-model-customization-loop.md": "LiPuzzle",
+  "02.wiki/concepts/cross-model-prior-intersection.md": "LiSettings",
+  "02.wiki/sources/tech-bridge-lee-robinson-always-on-agents.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-fireworks-train-to-deploy-open-models.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-just-in-time-ontology.md": "LiVideo",
+  "02.wiki/entities/southbridge.md": "LiBuilding",
+  "02.wiki/entities/jetashree-ravi.md": "LiUser",
+  "02.wiki/entities/hrishi-olickel.md": "LiUser",
+  "02.wiki/entities/fireworks-ai.md": "LiBuilding",
+  "02.wiki/entities/lee-robinson.md": "LiUser"
 }

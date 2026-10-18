@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [tool-design, mcp, agent-tooling, errors, read-write, api-design]
 aliases: [도구 품질 모범 사례, 결과 중심 도구, 조치 가능한 오류]
-related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems, toolbox-pattern]
+related: [secure-tool-evolution, build-time-vs-runtime-tools, model-context-protocol, no-silent-write, deny-and-continue, agent-harness-design, action-reversibility, agent-distributed-systems, toolbox-pattern, prompt-caching]
 first-seen: tech-bridge-build-time-vs-runtime-tools
-sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness, tech-bridge-agents-as-catalyst]
+sources: [tech-bridge-build-time-vs-runtime-tools, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness, tech-bridge-agents-as-catalyst, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-11
-updated: 2026-09-27
+updated: 2026-10-18
 ---
 
 # 에이전트용 도구 설계 모범 사례 다섯
@@ -115,3 +115,10 @@ REST의 자원 단위(GET /orders, DELETE /orders/1)가 아니라 **의도 단�
 > 오늘날 API가 에이전트에게 의미 있으려면 **스스로를 설명해야(explain itself)** 합니다. **예측 가능하고, 잘 문서화되어 있고, 사람과 기계 모두가 이해할 수 있어야** 합니다. (03:09~03:19)
 
 이 페이지의 전제는 *"에이전트가 쓸 도구는 사람이 쓸 API와 다르게 설계해야 한다"* 다. 두 주장은 **층이 다르다**(요구 조건 vs 설계 규칙) — 규칙 2(*설명은 안내*)·4(*조치 가능한 오류*)는 *스스로를 설명하는 API* 의 구체화로 읽힌다. 그러나 **한 인터페이스로 사람과 기계를 함께 섬기는가, 에이전트용 층을 따로 두는가**에는 두 소스가 다른 답을 준다. 이 위키는 해소하지 않는다. → [[agents-as-catalyst]]
+
+## 운영 중인 하네스의 세 가지 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])이 *"interesting tidbits from building this out"*(25:14~25:18)으로 든다.
+- 턴 중에 도구를 더하거나 빼지 않는다. 긴 설명·스키마는 줄인다(25:23~25:45). → [[prompt-caching]]
+- *"we can have a harness, it just has one tool and that one tool is like running shell commands. And this is true and you can model a lot of things this way, but if you see the model doing, you know, 90% of its time doing shell commands for this one thing, it actually can be more efficient to make a dedicated tool"*(25:51~26:06). 사람이 리뷰하기에도 *"more legible"*하다. → [[file-system-agent]](범용 도구 쪽에 대한 단서)
+- 조치 가능한 오류(이 페이지의 규칙)를 에이전트에게도: *"Turns out that's also very helpful for agents. So there there is some DX in designing um good error messages for agents too."*(26:22~26:28)

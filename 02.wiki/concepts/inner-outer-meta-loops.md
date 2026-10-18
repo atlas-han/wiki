@@ -6,9 +6,9 @@ tags: [harness-engineering, software-factory, feedback-loops, autonomy, automati
 aliases: [inner loop, outer loop, meta loop, 메타 루프, loop engineering]
 related: [harness-engineering, software-factory, factory-engineering, loop-is-the-product, skill-self-improvement, self-harness, structure-sensitive-tests, agent-visual-qa, scheduled-agent-automations, agent-trust-curve, in-context-learning, feedforward-feedback-steering]
 first-seen: tech-bridge-tessl-harness-engineering-factory
-sources: [tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation]
+sources: [tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-11
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # Inner · Outer · Meta 루프
@@ -44,6 +44,10 @@ updated: 2026-10-16
 > 이 페이지의 inner/outer/meta는 **Knox의 정의**로만 쓴다.
 
 > ⚠️ **한 화자, 한 벤더, 측정 없음.** 화자 스스로 레이어 이름을 *"aren't by any means standard terms"*(11:10~11:14)라 한다. 루프 개선이 기둥을 올린다는 대응은 화자의 틀이지 데이터가 아니다.
+
+## ⚠️ 같은 이름, 다른 루프 — 학습 플라이휠 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]은 inner loop를 "실수 → eval → 하네스·프롬프트·inference 수정 → eval 확인"의 **매일 순환**으로, outer loop를 *"every few months or every month (…) you're training new models"*(36:44~36:49)로 쓴다. Knox의 inner/outer(개발 단계)와도, [[lauren-tan|Lauren Tan]]이 [[grokbot|GrokBot]]을 부른 "바깥 루프"(외부 이벤트)와도 다르다. 같은 SpaceX 쪽 두 화자가 outer loop를 다른 것에 쓴다. 이 페이지의 정의와 섞어 읽지 말 것. → [[production-trace-eval-flywheel]]
 
 ## References
 

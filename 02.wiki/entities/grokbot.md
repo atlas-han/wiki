@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-01
-updated: 2026-10-10
+updated: 2026-10-18
 ---
 
 # GrokBot
@@ -93,3 +93,17 @@ updated: 2026-10-10
 - ⭐ **역할 분담이 완성된다** — *"cursor projects are my inner loop and grabbot[=GrokBot] is my outer loop. Grabbot takes all the context, external context, gives it to the projects because it can actually just send messages to those projects"*(42:55~43:08). GrokBot류는 *"connectors (…) a lot of people call them personal agents"*(40:02~40:09) — 이메일·캘린더·Slack·Linear·X. 본인 사용: *"I have some Groth[=Grok] bots that look at my Slack channels, look at my X (…) they have routines that subscribe"*(41:09~41:21), 예: GrokBot 데스크톱 앱 버그를 찾으면 Cursor project로 보낸다(41:26~41:36). → [[cursor]] · [[persistent-agent-teams]]
 - **GrokBot 데스크톱 앱**이 자동 머지 작업 대상으로 나온다 — chief of staff 하나는 그 성능을, 하나는 사용자 버그를, 하나는 *"rewriting it in a different language just for fun (…) a native app. It's just a toy"*(51:12~51:32)를 맡는다.
 - ASR: en-orig가 이번엔 *"grockbot"·"graphbot"·"Grabbot"·"Groth bots"·"grapot"*, `en`·ko는 *"Rockbot"*(35:24)과 *"Graphbot"*(42:54)을 공유한다.
+
+## 안쪽 설계 — 개발자의 강의 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[spacex|SpaceX]])이 스탠퍼드 강의에서 GrokBot 하네스를 1인칭으로 설명한다. 지금까지 이 페이지는 사용자 쪽(봇 팀·바깥 루프)만 기록했다. 이번에는 **안쪽**이다. ⚠️ 당사자 진술, 수치 없음. → [[always-on-agent-architecture]]
+
+- **"자체 컴퓨터"의 정체**: *"this is running a firecracker virtual machine"*(12:24~12:27). snapshot으로 재우고 깨운다. live view로 사용자가 직접 조작할 수 있고, virtual desktop으로 봇마다 브라우저를 둔다(12:36~13:13). 위 구성 요소 표의 "자체 컴퓨터" 행, 그리고 Lauren Tan의 *"Dune의 host는 GrokBot 가상 머신에서 돈다"*와 맞물린다.
+- **루프는 VM 밖 서버에**: *"if you put the agent loop on the virtual machine, then you can't shut down the virtual machine independently"*(14:53~15:06).
+- ⭐ **클라이언트-서버 도구는 하나**: *"The biggest difference with the Grockbot[=GrokBot] harness (…) there's only one tool that communicates between the client and the server and it's just send user."*(18:21~18:39) 클라이언트는 사인인 폼(1Password), 결제(Stripe Link·X Money), 되돌릴 수 없는 메시지의 초안 승인, 이모지 반응으로 그린다(19:24~19:58). "iMessage처럼 보인다"는 기존 평과 같은 방향이다(*"we all know how to text"* 05:52~05:54).
+- **플러그인·루틴**: *"in Grockbot[=GrokBot] there is a whole system of plugins. So basically any tool that you want to use there's a plugin you can install which uses skills or servers and then also routines which if you're familiar with cron jobs"*(09:45~09:56). 위 "루틴·자동화" 행에 **플러그인 = 스킬 또는 서버**가 더해진다.
+- **durable workflow**: 실패에 Temporal을 쓴다(17:08~17:11). helper 서브에이전트마다 durable workflow다(24:37~24:52).
+- **오픈 판본**: *"I'm pretty sure there's like open grobbot[=GrokBot] on GitHub somewhere where somebody's like, you know, slotforked[=?] our code"*(44:11~44:15). ⚠️ 이 위키는 확인하지 않았다.
+- ASR: en-orig *"Grockbot"*·*"open grobbot"*. 이번에는 ko·`en`이 *"Grokbot"*·*"Grok Bot"*으로 바르다.
+
+> ⚠️ 이 페이지 첫 줄의 *"[[cursor|Cursor]]의 … 제품"*은 고치지 않는다. 화자는 *"We're working on at SpaceX"*(00:17~00:19)라고 한다. 조직 관계는 [[spacex]]의 원칙대로 추정하지 않는다.

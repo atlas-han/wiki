@@ -128,8 +128,11 @@ sources:
   - tech-bridge-five-concepts-coding-with-ai-agents
   - tech-bridge-dental-clinic-ax-transformation
   - tech-bridge-openhands-sandboxing-coding-agents
+  - tech-bridge-fireworks-train-to-deploy-open-models
+  - tech-bridge-lee-robinson-always-on-agents
+  - tech-bridge-just-in-time-ontology
 created: 2026-06-03
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # Tech Bridge
@@ -1269,8 +1272,36 @@ updated: 2026-10-17
 - ⚠️ 화자는 자막에서 자기소개한다. 측정치는 없다. Mythos 샌드박스 탈출은 화자 주장이고 출처가 없다. 제목 *"선택이 아닙니다"*는 발화되지 않는다. 행사명은 발화되지 않는다(AI Engineer 추정).
 - **⚠️ ko**: GitHub Actions의 한계 둘이 기능으로 뒤집힌다(*can't port* → "쉽게 이전할 수 있습니다", *can't respond to Slack webhook* → "답장할 수 있습니다"). *not necessarily a human there* → "사람이 있을 겁니다", *separated from your environment* → "영향을 미칠 수 있지만", *most robust* → "더 견고한 전략이 필요하다", *thousands* → "수천 번". prompt injection → "즉시 주사", agent → "약물", sandbox → "모래놀이터"다. en-orig는 Claude Code를 *"Quad Code"*로 적는다.
 
-## 멤버 전용 → 공개 전환 · 대기 (2026-10-17 확인)
+## 2026-10-13 멤버 전용 → 10-18 공개 — Jetashree Ravi (Fireworks AI), 지능을 빌리는 건 그만 (2026-10-18 ingest)
 
+[[tech-bridge-fireworks-train-to-deploy-open-models|지능을 빌리는 건 그만: 특화 AI의 학습부터 배포까지]](`Eu4D795nMsQ`, 18:48, 공식 챕터 17) — [[jetashree-ravi]] · [[fireworks-ai]] ([[open-model-customization-loop]] · [[speculative-decoding]] · [[model-mixing-economics]] · [[continual-learning]] · [[production-trace-eval-flywheel]])
+
+- 목록에 `upload_date` 20261013으로 처음 올랐고 멤버 전용이었다(10-17 대기 섹션). 2026-10-18 회차에 `public`, `upload_date` 20261017. 이 채널 첫 **추론·학습 플랫폼 벤더** 소스다.
+- 오픈 모델은 대부분 production-ready이고(GLM 5.2), 폐쇄형에 못 미치면 맞춤 학습이 차별화 요인이며, 스택은 "한 번 서빙"에서 학습 → 배포 → 모니터링 → 체크포인트 재학습 루프로 간다. 추론은 자체 FireAttention·CUDA 커널과 고객이 학습하는 draft model(speculative decoding). 학습은 Training Agent·관리형 학습·Training API 세 형태와 SFT·RFT·DPO(RFT의 어려운 자리는 evaluator function, Agent는 RFT 미지원). hot loading(Cursor용으로 시작)과 train-serve numerical fidelity가 "같은 플랫폼"의 근거다. 끝 4분은 데모다.
+- ⚠️ 벤더 발표. 수치(30 trillion tokens·13x·40x·12%·327 million)는 기준선·지표·기간이 없다. 제목 *"지능을 빌리는 건 그만"*·*"특화 AI"*는 발화되지 않는다. 행사명은 발화되지 않는다(AI Engineer 추정). 화자 이름은 자막 *"Jyotishree"*, 설명란 *"Jetashree Ravi"*.
+- **⚠️ ko**: 이름·용어를 낱말 뜻으로 옮긴다 — Fireworks → "불꽃놀이", FireAttention → "화재 주의"·"소방차"·"인재 유지", DPO → "데이터 보호 책임자", speculator → "투기꾼", weights → "페소", hot loading 정의 → "나는 휴식 시간 없이 산다". 반전·단위: *at scale* → "규모가 작아지면", *quality was a big bottleneck* → "품질은 훌륭했습니다", 30 trillion → "300억", 하루 5 trillion 토큰 → "5조 달러".
+
+## 2026-10-12 멤버 전용 → 10-18 공개 — Lee Robinson (SpaceX), 상시 작동 에이전트는 어떻게 작동할까 (2026-10-18 ingest)
+
+[[tech-bridge-lee-robinson-always-on-agents|Grok Bot 같은 상시 작동 에이전트는 어떻게 작동할까요? — Lee Robinson의 스탠퍼드 강연]](`N8gD8ebFlMI`, 45:17, 공식 챕터 없음) — [[lee-robinson]] · [[spacex]] · [[grokbot]] ([[always-on-agent-architecture]] · [[prompt-caching]] · [[brain-hands-decoupling]] · [[durable-execution]] · [[context-resets-and-compaction]])
+
+- 목록에 `upload_date` 20261012로 처음 올랐고 멤버 전용이었다(10-17 대기 섹션). 2026-10-18 회차에 `public`, `upload_date` 20261017. 스탠퍼드 강의로는 [[tech-bridge-karpathy-transformers-stanford|Karpathy CS25 편]]에 이은 것이다(설명란 기준 CS146S). 수업 강의라 *"week one"*·*"last week"*가 발화되고, 영상은 *"as mentioned"*로 시작해 Q&A 없이 끝난다.
+- [[grokbot|GrokBot]]의 **안쪽**이 처음 나온다. 서버에서 자고 깨는 루프와 Firecracker VM, 트리거 → router → "귀찮게 할지" heuristic → 우선순위 큐, thin client와 단일 도구 send user, 루프를 VM 밖에 두기(제로데이 패치), job queue 대신 durable workflow(Temporal), tool search와 "가장 싼 것부터" 사다리, main agent + durable helper, prompt caching(정적 접두·섹션 해시·cache warming·"miss는 버그"), 캐시가 따뜻할 때 compaction, 메모리 네 층, 학습 플라이휠, *"delete the product"*를 다룬다.
+- ⚠️ 이름은 자막에 *"Lee"*만 있고 성·직함·학교·과목은 설명란에만 있다. 당사자 설명이고 수치는 없다. auto review blind test와 환각 *"solved problem mostly"*는 근거가 없다. 공식 챕터가 없어 raw에 위키 소제목을 붙였다. en-orig 36:55~36:59 공백은 메우지 않았다.
+- **⚠️ ko**: 설계 근거를 네 번 뒤집는다(*not enough computers* → "충분한 컴퓨터가 있습니다", *not blow away the agent loop* → "에이전트 사이클 전체를 파괴하고", *don't feel a degradation* → "품질이 향상됩니다", *more important than ever to think about system design* → "절대 생각하지 않는 것이 중요합니다"). 가정법을 사실로 옮긴다("이 대화는 6개월에서 1년 전"). 단위: "6~12일", "수십억 명". Temporal → "임시직", Firecracker → "폭죽", pre-training → "운동 전 보충제", compaction → "다짐", memory → "추모", Hugging Face → "포옹 얼굴". `en`은 대체로 바르다. en-orig는 GrokBot을 *"Grockbot"*으로 적는다.
+
+## 2026-10-17 업로드 — Hrishi Olickel (Southbridge), 적시형 온톨로지 (2026-10-18 ingest)
+
+[[tech-bridge-just-in-time-ontology|적시형 온톨로지: 저렴해진 지능은 데이터에 어떤 의미일까요?]](`8uG4ZY7G2r8`, 20:54, 공식 챕터 10) — [[hrishi-olickel]] · [[southbridge]] ([[just-in-time-ontology]] · [[cross-model-prior-intersection]] · [[pareto-surfing]] · [[jev]] · [[model-mixing-economics]])
+
+- 변환이 싸졌으니 보편 스키마를 버려라. 스키마는 source·storage·decision·모델 prior의 넷이고 결정의 순간에만 함께 알려진다. 그때 병합하고 근거와 함께 재사용한다. 모델은 설계·작업·hill climber 세 역할이다. 사례는 Jev를 넣은 오하이오 선거자금 entity resolution($10,000 예상 → $795, 검증이 첫 답의 4배, 10일, 90,000 호출). prior가 만든 조용한 오류 셋과 교차 모델 prior 교집합(Jev·Luna 194/200), 자기 최적화의 조건 넷·단계 여섯(Pareto surfing).
+- ⚠️ 화자 이름은 설명란에만 있다(회사는 발화). 수치는 모두 자기 보고다. 하네스 Hank Weave는 자사 오픈소스이고 표기가 확정되지 않았다. 행사명은 발화되지 않는다.
+- **⚠️ ko**: 결론 넷이 뒤집힌다(*no super schema* → "존재한다", *it is worse* → "그렇지 않습니다", *no … to yes* → "아니라고 … 아니라고", *you can solve this* → "해결할 수 없습니다"). JIT 정의의 *ahead of time* → "고급". 단위: $ → "건", 10 days → "10년", 194건 일치 → "194년에 만났습니다". schema → "계획", runs → "사형 집행", sign → "표지판". en-orig는 Jev를 *"Jeff"*로 섞어 적는다.
+
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-18 확인)
+
+- **공개 전환 — 위에서 ingest (2026-10-18):** `Eu4D795nMsQ`([[tech-bridge-fireworks-train-to-deploy-open-models|지능을 빌리는 건 그만 — Jetashree Ravi (Fireworks AI)]]) — 목록 `upload_date` 20261013으로 멤버 전용 기록(10-17 두 회차 모두 `subscriber_only`), 2026-10-18 회차 `availability: public` 확인(`upload_date` 20261017 = 공개 전환 값). 제목은 대기 목록의 것과 같다(앞에 `[한영자막]`).
+- **공개 전환 — 위에서 ingest (2026-10-18):** `N8gD8ebFlMI`([[tech-bridge-lee-robinson-always-on-agents|Lee Robinson 스탠퍼드 강연]]) — 10-17 확인 때 `subscriber_only`(목록 `upload_date` 20261012) → 2026-10-18 `availability: public`, `upload_date` 20261017(공개 전환 값).
 - **공개 전환 — 위에서 ingest (2026-10-17 둘째 통합):** `ks55L-DkLE8`([[tech-bridge-atlassian-build-your-own-sdlc|직접 만드는 SDLC — Andy Wong, Andrei Bocan, Shane Wolf (Atlassian)]]) — 2026-10-14 멤버 전용으로 처음 보였고 2026-10-17 `availability: public` 확인(`upload_date` 20261016).
 - **공개 전환 — 위에서 ingest:** `zAglgqN5Lhw`([[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]], 10-13 회차 `availability: public` 확인, `upload_date` 20261012 = 공개 전환 값). 10-11 대기 목록의 마지막 항목이 해소됐다.
-- **여전히 `subscriber_only` — ingest하지 않음:** `N8gD8ebFlMI`(목록 `upload_date` 20261012, *Grok Bot 같은 상시 작동 에이전트는 어떻게 작동할까요? | SpaceX 엔지니어 Lee Robinson의 스탠퍼드 강연*) · `Eu4D795nMsQ`(목록 `upload_date` 20261013, *지능을 빌리는 건 그만: 특화 AI의 학습부터 배포까지*) · `Yhck-x6VuLs`(제목 미확인 — 목록 조회 stderr ERROR만). 공개 전환 시 그날 ingest.
+- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 공개 전환 시 그날 ingest.

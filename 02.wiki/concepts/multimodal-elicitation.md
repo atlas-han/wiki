@@ -3,11 +3,11 @@ title: Multimodal Elicitation
 type: concept
 category: pattern
 tags: [agent, multimodal, elicitation, preference, ontology, evaluation, ux]
-related: [fuzzy-intent-discovery, adaptive-response-format, generator-evaluator-pattern, signal-layer, agentic-sites, context-engineering, structured-brand-context, adjective-verb-steering]
+related: [fuzzy-intent-discovery, adaptive-response-format, generator-evaluator-pattern, signal-layer, agentic-sites, context-engineering, structured-brand-context, adjective-verb-steering, just-in-time-ontology]
 first-seen: tech-bridge-multimodal-commerce-agent
 sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering]
 created: 2026-09-04
-updated: 2026-09-12
+updated: 2026-10-18
 ---
 
 # Multimodal Elicitation
@@ -31,6 +31,8 @@ updated: 2026-09-12
 그리고 이 bridge가 **조직 간 인터페이스**가 된다. Q&A에서 판매자가 채워야 할 부분이 정확히 여기다.
 
 > 제가 앞서 말한 **연결 고리**, 바로 이 부분에서 **판매자 측의 지능이 흘러 들어오기를 기대**합니다. 즉 해당 제약 조건이 판매자가 가진 다양한 메타데이터에 어떻게 매핑될 수 있는지에 대한 온톨로지 말입니다.
+
+> 같은 방향의 일반론: [[just-in-time-ontology]] — 스키마를 미리 통일하지 않고 결정 공간이 알려졌을 때 병합한다(Olickel, 2026-10-18).
 
 ## 형식을 고른다 — 언제 텍스트이고 언제 보드인가
 

@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-07
-updated: 2026-10-10
+updated: 2026-10-18
 ---
 
 # SpaceX
@@ -77,3 +77,11 @@ updated: 2026-10-10
 ## "Cursor, which is now SpaceX AI" (2026-10-10 · [[tech-bridge-lauren-tan-pocock-podcast-full]])
 
 [[lauren-tan|Lauren Tan]](Cursor 엔지니어) 대담: *"the journey sort of began even before I joined cursor uh which is now SpaceX AI"*(00:56~01:04), *"every app that cursor has or spaceexai has has a uh verification skill"*(18:04~18:11). 09-25의 *"SpaceX AI의 일부가 되기 전"*(위 절)보다 강한 표현이지만 **형태(인수·합병·브랜드)는 말하지 않는다** → 관계를 추정하지 않는다. 영상 제목·설명란의 *"SpaceX에서 매달 수천 개의 PR"* 은 **화자 개인의 지난달 PR 수**(2,000/2,500)를 조직 수치처럼 쓴 것이다. "xAI"는 자막에 없다. ⚠️ 당사자(직원) 진술.
+
+## 상시 에이전트를 만드는 곳, 회의에 대신 들어가는 봇 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]](이름은 자막에 "Lee"만, 성·직함은 설명란)의 스탠퍼드 강의다. *"some of the things we'll talk about are in progress. We're working on at SpaceX."*(00:16~00:19) [[grokbot|GrokBot]] 하네스를 1인칭으로 설명한다.
+
+- 사내 사용: *"It's increasingly common now at SpaceX where we see bots joining meetings for employees where they couldn't make it to the meeting, but they want their bot to go and just take notes and come back to them"*(11:33~11:43)
+- *"one of the principles that we had at Cursor uh and now at SpaceX is to delete the product"*(37:45~37:54). 위 절들(Lauren Tan의 *"SpaceX AI"* 발화들)에 이어 Cursor → SpaceX의 연속을 말하는 또 하나의 당사자 발화다. ⚠️ 형태(인수·합병·브랜드)는 여전히 말하지 않는다. 추정하지 않는다. "xAI"는 자막에 없다.
+- ⚠️ 당사자(직원) 진술이다.

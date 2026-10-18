@@ -3,11 +3,11 @@ title: Persistent Agent Teams (지속형 에이전트 팀)
 type: concept
 category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
-related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing]
+related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing, always-on-agent-architecture]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-01
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -193,3 +193,12 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 ## 한 기계에 모인 봇들 — co-location 비판 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
 
 [[robert-brennan|Robert Brennan]]은 *"the open claw[=OpenClaw] craze"*의 패턴, 즉 *"a virtual machine in the cloud or maybe a Mac mini uh and just put all your agents on that"*(08:10~08:20)을 최소 권한 쪽에서 비판한다. *"all of your agents are now like co-located in this virtual machine and they all have access to the same stuff."*(09:01~09:06) 지속성은 *"good and bad"*다. 상태가 남지만 *"your machine could get into a bad state"*(08:22~08:35)할 수 있다. 그의 대안은 세션마다 ephemeral pod다([[agent-sandboxing]]). 이 페이지가 그린 상시 봇 팀은 **정체성과 자기 컴퓨터**를 전제로 했다. Brennan의 비판은 "자기 컴퓨터"가 실제로는 **공유 컴퓨터**일 때 생기는 문제다.
+
+## 같은 제품의 안쪽 — 서버 구조 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+이 페이지의 첫 소스(GrokBot)를 만드는 쪽의 [[lee-robinson|Lee Robinson]]이 그 밑의 구조를 설명한다. 정체성·자기 컴퓨터·루틴이라는 사용 패턴 밑에는 서버에서 자고 깨는 루프, 따로 자는 Firecracker VM, 트리거 → router → 우선순위 큐, 단일 도구 send user가 있다. → [[always-on-agent-architecture]](신규)
+
+- 이 페이지의 "동료에게 문자하듯"에 이유가 붙는다: *"the main reason is because we all know how to text"*(05:50~05:54). 그리고 동료라면 *"knows when to be quiet"*(01:34~01:36)이다. ⚠️ 그 heuristic은 *"not perfect yet"*(41:18~41:20)이다.
+- 지평이 늘어난다: 지금 *"a few hours, maybe a day"* → *"pretty soon um your agents will be working for weeks or months"*(38:45~38:58, 전망).
+- 봇 여럿은 virtual desktop으로 컴퓨터 인프라를 공유한다(*"shared infrastructure between these bots"* 13:10~13:12). 바로 위 절(Brennan)의 co-location 질문이 여기에도 남는다. 강의는 봇 간 격리를 말하지 않는다.
+- 그룹 채팅의 봇: *"There hasn't really been a lot of training data for example on using bots in a group chat"*(37:09~37:16) → 모델을 다중 에이전트에서 잘 행동하도록 학습시켜야 한다(37:25~37:33). → [[emergent-agent-collective]]

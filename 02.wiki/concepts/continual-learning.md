@@ -3,11 +3,11 @@ title: Continual Learning
 type: concept
 category: theory
 tags: [learning, memory, catastrophic-forgetting, bayesian, agi]
-related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement, agent-dreaming, trace-to-memory-loop]
+related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement, agent-dreaming, trace-to-memory-loop, open-model-customization-loop]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-langchain-learning-agent-memory, tech-bridge-fireworks-train-to-deploy-open-models]
 created: 2026-09-05
-updated: 2026-10-12
+updated: 2026-10-18
 ---
 
 # Continual Learning
@@ -110,3 +110,7 @@ Ghahramani가 continual learning과 나란히 놓는 것이 둘 더 있다.
 ## LangChain도 컨텍스트 층 — "the system around the agent" (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
 
 [[jake-broekhuizen|Broekhuizen]]([[langchain|LangChain]]): *"the system around the agent should be a place where it can continuously learn and benefit from its interactions and its experiences."*(01:58~02:06). 수단은 전부 컨텍스트 층(스킬·지시·규칙 = procedural 메모리 갱신) → [[trace-to-memory-loop]]. Oracle([[ignacio-martinez|Martinez]]) · Anthropic([[lamis-mukta|Mukta]])에 이어 **세 번째 벤더가 지속 학습을 컨텍스트 층에서** 말한다. ⚠️ 가중치 층 언급 없음, 측정 없음.
+
+## 가중치 층의 운영 판본 — 체크포인트 재학습과 hot loading (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+위 "세 층"에서 Oracle·Anthropic·LangChain이 모두 컨텍스트 층을 말한 것과 달리, [[fireworks-ai|Fireworks AI]]는 **가중치 층**을 판다. *"most people prefer doing a continuous loop where they train, host, train, host as they get new and new data and feedback from their users"*(11:08~11:15). 새 체크포인트는 hot loading으로 무중단 교체한다(12:48~13:06). Ghahramani가 말한 "거대 모델을 몇 달마다 다시 학습"과 "끊임없는 갱신" 사이의 실무 근사다. ⚠️ 연속 갱신이 아니라 체크포인트 단위이고, catastrophic forgetting이나 재학습 회귀는 다루지 않는다. 벤더 발표다 → [[open-model-customization-loop]]

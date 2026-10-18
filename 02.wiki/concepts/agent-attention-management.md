@@ -6,9 +6,9 @@ tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, vis
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
 related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -54,6 +54,15 @@ updated: 2026-10-09
 - **[[agent-manager-analogy]]** — 매니저 비유가 *위임과 신뢰* 를, 이 개념의 게임 비유가 *주의 배분* 을 말한다.
 - **[[orchestras-not-factories]]** — 같은 *여러 에이전트 한 화면* 앱 제작자의 다른 은유(지휘자 vs RTS 지휘관).
 - **[[persistent-agent-teams]]** — 에이전트에게 정체성을 주고 문자하듯 소통하는 쪽은 *대화* 로 주의를 관리하고, 이 개념은 *공간·시각화* 로 관리한다.
+
+## 언제 말을 걸까 — router 뒤의 heuristic (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])은 사람의 주의를 **에이전트 쪽에서** 아낀다.
+- router 뒤에 *"this heristic[=heuristic] of do I need to bug the user about this or not? Because not everything is actually important."*(12:00~12:06) 동료 기준으로는 *"You really only need a status update maybe, I don't know, every day depending on the task."*(12:13~12:18)
+- 도구 사다리 맨 끝에 사용자를 둔다: *"only if all of those fail, then go bug the user and ask them to go give input or approve something"*(22:21~22:27).
+- ⚠️ 화자 스스로 미완성이라고 한다: *"the heristics around when the agent is silent or when it kind of bugs you, uh I don't think that we have it perfect yet."*(41:12~41:20) 예: 어제 빠진 수업을 녹음해 노트를 정리했다는 제안은 *"maybe that's helpful or maybe that's kind of annoying"*(41:22~41:34)이다. ko는 이 부정을 **"완벽한 것들을 가지고 있고"**(41:19)로 뒤집는다.
+
+이 페이지가 "무엇을, 언제, 어느 해상도로 사람에게 보여 줄 것인가"를 인터페이스 설계로 보았다면, 이 소스는 그 판단의 일부를 **에이전트의 heuristic**에 맡긴다.
 
 ## ⚠️ 미해결
 

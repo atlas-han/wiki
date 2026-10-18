@@ -4,11 +4,11 @@ type: engineering
 category: system
 tags: [durable-execution, workflow-engine, distributed-systems, fault-tolerance, replay, event-history, determinism, agents, human-in-the-loop, temporal]
 aliases: [durable execution, 내구 실행, 내구성 있는 실행, durable workflow, workflow engine]
-related: [agent-distributed-systems, human-as-async-api, agent-harness-design, managed-agents, workflow-vs-agent, deterministic-agent-pipeline, agent-state-machine, brain-hands-decoupling]
+related: [agent-distributed-systems, human-as-async-api, agent-harness-design, managed-agents, workflow-vs-agent, deterministic-agent-pipeline, agent-state-machine, brain-hands-decoupling, always-on-agent-architecture]
 first-seen: tech-bridge-human-is-async-api
-sources: [tech-bridge-human-is-async-api]
+sources: [tech-bridge-human-is-async-api, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-18
 ---
 
 # Durable Execution — 내구 실행
@@ -56,9 +56,21 @@ updated: 2026-10-10
 
 > ⚠️ **Contradiction(용어): "workflow"와 "결정론".** [[workflow-vs-agent]]의 workflow는 *미리 정의된 경로*(에이전트의 반대)이고, [[deterministic-agent-pipeline]]·[[agent-state-machine]]의 결정론은 *경로가 고정됐다* 는 뜻이다. durable execution의 workflow는 **에이전트를 담는 그릇**이고(*"your agent could work run inside of a workflow because it's a loop"* 06:30~06:37), 결정론은 **replay 가능성**의 요구다 — 경로가 LLM 응답에 따라 매번 달라져도, 그 응답이 activity 결과로 기록돼 있으면 replay는 결정론적이다(위키의 배경지식). 같은 단어, 다른 축.
 
+## 두 번째 소스 — 사용자가 고른 이유 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])의 대비는 이렇다. *"the like underlying infrastructure primitives to think about here (…) is a workflow versus a job queue"*(16:17~16:27). job queue는 실패 뒤 처음부터 다시 돌리고, durable workflow는 *"when you retry after a failure, it picks right up on step three"*(16:59~17:03)다. 구현은 [[temporal|Temporal]]이다. 그리고 두 적용이 있다.
+
+| 적용 | 발화 |
+|---|---|
+| 에이전트 턴 처리 | 메시지 → 큐 → 루프 → DB 저장, 재시도 dedupe(15:43~16:17) |
+| 서브에이전트(helper)마다 하나 | *"Each one of these is its own durable workflow"*(24:37~24:40). 비디오 helper가 죽어도 이어 간다 |
+
+→ [[always-on-agent-architecture]]. ⚠️ 당사자 진술이고 replay·결정론 제약을 어떻게 다뤘는지는 말하지 않는다.
+
 ## ⚠️ 유보
 
 - 근거는 **벤더 1인의 데모 1회**. 확장성(*"millions of workflows"* 09:01~09:06)·지연·비용 수치 없음.
+- (2026-10-18) 두 번째 소스는 **사용자**(GrokBot)의 증언이다. 그래도 둘 다 이해당사자다. 독립 측정은 여전히 없다.
 - replay 비용(긴 에이전트 루프의 이벤트 히스토리 크기), workflow 코드 변경 시 진행 중 실행과의 호환(버저닝)은 발표가 다루지 않는다.
 - Temporal 외 durable execution 구현은 이 위키에 아직 소스가 없다.
 

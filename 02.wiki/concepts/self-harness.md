@@ -3,11 +3,11 @@ title: Self-Harness
 type: concept
 category: pattern
 tags: [agent, harness, self-improvement, harness-engineering, terminal-bench, llm-engineering]
-related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills, production-trace-eval-flywheel, research-production-agent-parity]
+related: [agent-harness-design, harness-engineering, generator-evaluator-pattern, ralph-wiggum-method, verifiable-goals, sutton-bitter-lesson, dynamic-workflows, token-roles, agent-skills, production-trace-eval-flywheel, research-production-agent-parity, pareto-surfing]
 first-seen: self-harness-paper
-sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context, tech-bridge-tokens-should-have-jobs, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
+sources: [self-harness-paper, papanuvo-self-harness, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-minimax-m3-long-context, tech-bridge-tokens-should-have-jobs, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-just-in-time-ontology]
 created: 2026-06-14
-updated: 2026-09-30
+updated: 2026-10-18
 ---
 
 # Self-Harness
@@ -175,3 +175,7 @@ Self-Harness는 본 위키의 두 하니스 허브가 말하던 진화 루프를
 이 페이지의 3단계 루프와 칸이 겹친다 — **자기 실행 트레이스 → bounded edit(프롬프트 한 조각) → 회귀 태스크로 검증**. 다른 점: ① 입력이 **실사용자 프로덕션 트레이스**다 → [[production-trace-eval-flywheel]] ② 논문은 평가자 $\mathcal{E}$를 고정하지만 여기선 **ARIA가 태스크도 쓴다** — 평가자가 루프 안에서 자란다 ③ 채택은 사람 팀이 한다(*"deploy new versions of the agent uh, and work with my team to do that"* 04:27~04:31). 화자는 공변성을 문제로 든다 — *"benchmarks, evaluations, the agents, and how you configure them are all covariant"*(01:21~01:24) — $M$·$\mathcal{E}$ 고정은 실무에서 **가정**이라는 지적이다. → [[research-production-agent-parity]]
 
 ⚠️ 후보가 prod를 이겼는지는 화면에만 있다(13:45~13:48). "스스로 해결"은 자막으로 확인되지 않는다.
+
+## 데이터 파이프라인 판본 — 에이전트가 10일 동안 아키텍처를 찾았다 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+*"our agent 4A[=?], running on Astra and then later on Opus, found most of these approaches incrementally on its own. By building the system, running it, debugging it, and trying new things. It ran for 10 days, tried over a dozen architectures"*(12:46~13:04). 개선 대상은 하네스 자체가 아니라 **파이프라인의 모델 배치와 구조**다. 반복마다 *"a version controlled Hank"*였고 배운 것은 부품 라이브러리로 되돌렸다(13:18~13:40). 화자는 조건 넷(stable surface·bounded experiments·know-how·failure surface)을 들고, 현재 최고 모델도 이 일을 *"only barely"* 한다고 한다(18:10~18:15). ⚠️ 자기 보고, 에이전트 이름 미판독. → [[pareto-surfing]]

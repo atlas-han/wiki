@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [agent-skills, harness, instruction-following, scripts, prompt-caching, weakest-model]
 aliases: [scripts that talk back, 스크립트 stdout 지시, stdout steering, 말을 되돌려주는 스크립트]
-related: [agent-skills, hook-enforced-workflow, cross-harness-skill-compilation, hard-vs-soft-enforcement, anti-attractor, harness-engineering, domain-specific-scripts]
+related: [agent-skills, hook-enforced-workflow, cross-harness-skill-compilation, hard-vs-soft-enforcement, anti-attractor, harness-engineering, domain-specific-scripts, prompt-caching]
 first-seen: tech-bridge-skill-engineering-dark-arts
-sources: [tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering]
+sources: [tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-28
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # Scripts that talk back
@@ -46,6 +46,8 @@ Impeccable은 호출마다 `context.mjs`를 실행한다(27:00~27:05):
 > *"it does so at the expense of prompt caching (…) if you run the skill many many times (…) this is not a good technique to use, but I found it to be very useful in really interactive scenarios."* (29:10~29:25)
 
 Q&A에서 보충: 결과가 매번 다르면 *"a dynamic shell execution"* 이라 그 부분은 캐시되지 않지만 *"the skill will still be cached"*(51:12~51:21) — **정적 인라인 콘텐츠 대 동적 호출**의 구분이다(51:25~51:34).
+
+→ 캐시를 지키는 쪽의 기법 모음: [[prompt-caching]](2026-10-18 신설 — 정적 접두·섹션 해시·턴 중 도구 고정).
 
 ## 이 위키에서의 자리
 

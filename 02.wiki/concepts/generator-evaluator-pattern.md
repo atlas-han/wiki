@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology]
 created: 2026-05-25
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # Generator–Evaluator Pattern
@@ -309,3 +309,7 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 [[kimchi|Kimchi]] **Ferment**: 변경 → 빌드 → 깨졌는지 확인 → 재수정·재빌드 → 스테이징(08:57~09:17), *"artifact is only considered complete once like the output of the scoring like at least B as a score"*, 원하면 A를 향해 다시(09:51~10:07). 점수는 라우팅의 보증으로도 쓰인다(*"whatever model we will pick for you you will always have like good enough scoring"*, 08:40~08:46). 공동 발표자 Laura의 해설: *"there is a a higher order model that is checking that quality"*(09:29~09:37).
 
 > ⚠️ Factory Missions의 *"the validators judge code that they didn't write"* 와 달리, Kimchi 발표는 **채점 모델·루브릭·평가자 분리 여부**를 말하지 않는다. *"higher order"* 가 생성 모델보다 강한 모델이라는 뜻인지도 미확정 — 같은 하네스가 고른 모델의 산출물을 같은 하네스가 채점한다면 이 페이지의 작성자=검증자 문제가 남는다.
+
+## 평가자가 같은 prior를 공유하면 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[hrishi-olickel|Hrishi Olickel]]의 대출 부호 사례에서 여러 run이 음수 대출액의 부호를 중복으로 보고 절댓값을 저장했고, 순액 784,000이 부채 $5.3M이 되어 *"validated by multiple models"*(14:50~15:05)였다. 반대로 계열이 다른 [[jev|Jev]]와 Luna가 일치한 194건에는 오류가 없었다(15:50~15:57). 평가자는 **생성자와 다른 계열**에서 골라야 한다는 조건이다. 그래도 *"four different model families produced the same total down to the cent"*(16:26~16:31)처럼 종 수준의 공통 prior는 남는다. → [[cross-model-prior-intersection]]

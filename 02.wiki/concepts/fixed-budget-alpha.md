@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [evaluation, benchmark, token-budget, test-time-compute, methodology, token-roles, anthropic]
 aliases: [예산을 고정하고 비교하라, 역할의 알파]
-related: [token-roles, true-cost-to-perfect-answer, all-or-nothing-accuracy, strategy-primitives, generator-evaluator-pattern, skill-evals, model-mixing-economics]
+related: [token-roles, true-cost-to-perfect-answer, all-or-nothing-accuracy, strategy-primitives, generator-evaluator-pattern, skill-evals, model-mixing-economics, pareto-surfing]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-just-in-time-ontology]
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-18
 ---
 
 # 예산 고정 알파
@@ -53,6 +53,10 @@ updated: 2026-09-18
 > ⚠️ **화자 스스로 차이가 "미미하다"고 말한다.** 76 vs 89가 과제 몇 개에서 나온 것인지, 분산이 어떤지 없다. **채점·회고의 고정 예산 점수는 자막에 없다.**
 >
 > ⚠️ 그래서 이 방법이 두 번째 렌즈([[all-or-nothing-accuracy]])로 이어진다 — 정확도로는 차이가 작아 보이는데 **합격률과 진짜 비용으로 재면 커진다**([[true-cost-to-perfect-answer]]).
+
+## 예산 고정이 실험의 안전장치로 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[hrishi-olickel|Hrishi Olickel]]은 자기 최적화의 조건 둘째로 *"some way to bound your experiments. You can't test unless you can control cost, time, and access as resources."*(17:18~17:25)를 든다. 하네스에 *"budget enforcement"*(17:03)가 들어 있고, hill climber는 *"vary budgets to limit cost exposure"*(10:20~10:23)한다. 오하이오 작업은 *"$795 on an $800 budget that was set ahead of time"*(12:19~12:25)이었다(⚠️ 자기 보고). 이 페이지의 고정 예산이 **비교의 공정성**을 위한 것이었다면, 여기서는 **에이전트가 스스로 실험하게 두기 위한 상한**이다. → [[pareto-surfing]]
 
 ## References
 

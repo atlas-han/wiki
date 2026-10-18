@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-fireworks-train-to-deploy-open-models]
 created: 2026-09-15
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # AI Engineer
@@ -203,3 +203,7 @@ updated: 2026-10-17
 ## 설명란 링크만 — OpenHands 발표 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
 
 [[robert-brennan|Robert Brennan]]([[openhands|OpenHands]])의 13:51 발표다. ⚠️ 행사명은 발화되지 않는다. 설명란 `ai.engineer` 링크와 `#AIEngineer`로 **AI Engineer 계열을 추정**한다. 현장 단서는 손들기 질문(03:22~03:38)이다.
+
+## 설명란 링크 + 청중 손들기 — Fireworks 발표 (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+행사명은 발화되지 않는다. 설명란에 `https://ai.engineer`와 AI Engineer 유튜브·X·LinkedIn 링크가 있다. 현장 단서는 시작의 손들기 두 번(폐쇄형 모델 사용, 비용 부담, 00:04~00:20)과 끝의 *"in the next minute or so that we have"*(18:41~18:42)다. 시점 단서는 *"pre-GLM 5.2 release"*(03:06~03:09)뿐이다. ⚠️ 추정.

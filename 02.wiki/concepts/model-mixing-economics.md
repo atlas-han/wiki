@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
-related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev]
+related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology]
 created: 2026-09-09
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # 모델 혼합의 경제학
@@ -156,3 +156,16 @@ updated: 2026-10-17
 [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"We found, for instance, that you can achieve the same performance on code review with GPT 5.2 as with the latest Opus models, but at half the price."*(08:13~08:22) 오픈소스 대안은 *"that can slash your cost down to 10 to 30x cheaper."*(08:26~08:30)이다. 원칙으로는 *"Not being locked into a single lab means you unlock the entire Pareto frontier of LLMs."*(08:38~08:44) CEO의 비유도 든다: *"if your kid needs a algebra tutor, you can definitely find someone cheaper than Albert Einstein."*(03:19~03:26)
 
 ⚠️ 과제·벤치마크·Opus 버전·오픈소스의 기준 모델은 발화되지 않는다. 같은 회사 Tereza 편의 라우터 4단계는 이번엔 *"dynamically routed"*(03:48~03:51) 한 구절로만 나온다 → [[automatic-model-routing]]
+
+## 고르는 것에서 고치는 것으로 — 오픈 모델 맞춤 학습 (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+[[fireworks-ai|Fireworks AI]] 발표는 손들기로 시작한다: *"How many of you feel like it's getting really expensive really quickly? Okay. That's that's a good percentage of you all."*(00:11~00:20) 같은 비용 압력이 여기서는 단계별 모델 선택이 아니라 **폐쇄형 → 오픈 모델 전환**으로 간다. 전환의 병목은 품질이고(*"their biggest bottleneck or the gap is quality"* 07:03~07:05), 처방은 오픈 모델을 자기 데이터로 학습하는 것이다 → [[open-model-customization-loop]]. Kimchi·Factory가 오픈 모델을 **싼 실행 모델로 고르는** 쪽이라면, 이쪽은 **학습해서 격차를 닫는** 쪽이다. ⚠️ 학습 비용과 손익분기는 발화되지 않았다.
+
+## 셋째 역할 — hill climber (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[hrishi-olickel|Hrishi Olickel]]은 계획/실행 분할에 셋째 역할을 더한다. 데이터 작업에서 지능은 *"three separate roles that coding agents kind of mash into one context window"*(08:31~08:34)를 맡는다.
+- **설계**: *"slower models with heavier, thicker tokens (…) Opus or up."*(09:07~09:22)
+- **작업**: *"cheaper, faster, specialized, good at following instructions, repeatable workers with noble[=known] defects."*(09:28~09:33). 두 역할은 *"pull in very different directions"*(09:03~09:05)다.
+- **hill climber**: 파이프라인을 스스로 최적화하는 모델 → [[pareto-surfing]]
+
+수치 한 쌍(⚠️ 자기 보고): *"the cheap reasoning model on its own did as well as Fable for about 2% of the cost"*(11:20~11:26, 모델명·Fable 버전 미발화). 그리고 오하이오 작업 전체가 예상 약 $10,000 대신 $795였다(12:19~12:40). 비유는 잎꾼개미의 *"four different sizes of worker (…) Small, medium, high, extra high"*(09:38~09:42)다.

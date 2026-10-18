@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, ai-layer, coding-agent, orchestration, llm-engineering]
 related: [agent-harness-design, self-harness, context-engineering, ralph-wiggum-method, dynamic-workflows, generator-evaluator-pattern, model-context-protocol, llm-coding-guidelines, brain-hands-decoupling, verifiable-goals, spec-driven-development, agent-org-adoption, frontier-engineering, tools-and-context-over-harness, shift-left-interventions, agent-loop-size, yaml-agent-eval-pipeline, research-production-agent-parity, human-plumbing, feedforward-feedback-steering, domain-specific-scripts, harness-as-platform, deterministic-agent-pipeline, inner-outer-meta-loops, factory-engineering, software-factory, model-scaling-durability]
 first-seen: tech-bridge-harness-engineering
-sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering, tech-bridge-uber-debug-assist, tech-bridge-tessl-harness-engineering-factory, tech-bridge-brockman-start-building-before-ready]
+sources: [tech-bridge-harness-engineering, self-harness-paper, tech-bridge-spec-driven-development, tech-bridge-figma-coding-agents, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-cursor-legacy-refactoring, tech-bridge-lopopolo-agent-harness, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering, tech-bridge-uber-debug-assist, tech-bridge-tessl-harness-engineering-factory, tech-bridge-brockman-start-building-before-ready, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-06-03
-updated: 2026-10-11
+updated: 2026-10-18
 ---
 
 # Harness Engineering
@@ -202,3 +202,7 @@ harness engineering의 핵심은 기술 스킬을 넘어 **태도의 전환**이
 > ⚠️ **정의의 범위.** 이 페이지 first-seen(Cole Medin)의 하네스는 **단일 에이전트 세션의 래퍼**(AI Layer 6 구성요소)였다. Knox의 하네스 엔지니어링은 **팩토리 전체의 루프**로, 사실상 [[factory-engineering]](Lloyd)과 같은 일을 가리킨다. 위키는 두 용법을 병기한다.
 
 > ⚠️ Contradiction: 모델 공급자 쪽의 반대 신호 (2026-10-11 · [[tech-bridge-brockman-start-building-before-ready]]). [[greg-brockman|Brockman]]은 *"some activities that are kind of working around limitations in the model. The second one is pretty hard to be durable."*(13:44~13:53)라고 하며, 그 예로 *"We take the model, we add some prompts, we have some very handcrafted whatever"*(13:53~14:02)를 든다. 이 페이지는 하네스를 지속되는 자산으로 다뤄 왔다. *"handcrafted"* 가 하네스 전부인지 모델 결함을 땜질하는 부분만인지 발화되지 않으므로 판정하지 않는다 → [[model-scaling-durability]]
+
+## "같은 것"이라는 용례 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]은 *"context engineering is also known as harness engineering. Like I feel like it's kind of the same thing."*(27:26~27:33)라고 한다. 이 페이지의 정의(context engineering을 포함하는 더 큰 우산)와 넓이가 다르다. 강의 전체로 보면 그가 "harness"라고 부르는 것은 서버 구조·큐·도구·메모리까지 포함한다(→ [[always-on-agent-architecture]]). "같은 것"은 컨텍스트를 아끼는 기법 절에서만 쓰인 말로 읽는다.

@@ -6,9 +6,9 @@ tags: [agent-memory, storage, files, database, transactions, worktree, hybrid, h
 aliases: [파일 vs DB, files versus databases, 하이브리드 메모리 저장소, memory promotion, 메모리 승격]
 related: [agent-memory, agent-harness-design, file-system-agent, agent-swarm, ai-native-sdlc, agent-distributed-systems, retrieval-augmented-generation, corpus-as-filesystem-workspace, production-memory-guardrails]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-24
-updated: 2026-10-01
+updated: 2026-10-18
 ---
 
 # 파일 vs 데이터베이스 — 에이전트 메모리의 저장 계층
@@ -87,3 +87,7 @@ Oracle의 답은 **DBFS**(데이터베이스 안의 파일 시스템) — *"데�
 [[lamis-mukta|Lamis Mukta]]([[anthropic|Anthropic]])는 *"modeling these memory systems just as file systems"*(07:22~07:24)를 **현재 최선**으로 두고, 이 페이지의 *동시 쓰기* 문제에는 DB가 아니라 **쓰기 전후 해시 비교**로 답한다 — 해시를 뜨고, 초안을 쓰고, 쓰기 직전 다시 해시해 다르면 쓰지 않고 다시 읽어 재시도(11:09~11:32). 버전 관리·롤백·작성자 추적도 함께. → [[production-memory-guardrails]]
 
 > ⚠️ **Contradiction: 어디에 보장을 둘 것인가.** 이 페이지(Oracle)는 *파일엔 트랜잭션이 없다 → 워크트리로 우회하거나 DB(DBFS)로 승격*. Anthropic은 **파일 시스템 메모리를 유지**하고 동시성·버전을 **하네스/API 층**에 넣는다. 그런데 Q&A에서 *"At what point are we like reinventing databases from like first principles again?"*(30:01~30:05)라는 질문에 화자는 *"to some extent like we sort of are merging back into those practices, but that's because we have enough signal now to know that those things should just be done in a very deterministic way"*(31:03~31:13)라고 답한다 — Oracle의 *"30~40년 전에 해결된 문제"* 와 **같은 인정, 다른 배치**다. 어느 쪽이 나은지 측정은 양쪽 다 없다.
+
+## 상태는 DB, 회상은 파일 — 운영 중인 제품의 배치 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[grokbot|GrokBot]]의 [[lee-robinson|Lee Robinson]]: 서버·VM이 잘 때 *"this state can then be persisted to uh you know a database the the conversation logs the memories the routines"*(11:06~11:12). 그러면서 모델이 쓰는 기억은 파일이다. *"you can store all of the information in files and the reason you can do that is because it's actually very easy for the models then to recall and search this information"*(08:11~08:17). 이 페이지의 하이브리드 처방과 같은 그림이다. ⚠️ 무엇이 DB에서 파일로 노출되는지(또는 반대인지)는 말하지 않는다.

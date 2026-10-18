@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-safety, classifier, claude-code, llm-as-judge, latency, auto-mode]
 related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode, slop-probes, system-1-model, jev]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-jev-agent-harness]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-jev-agent-harness, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-05-25
-updated: 2026-09-26
+updated: 2026-10-18
 ---
 
 # Transcript Classifier
@@ -99,6 +99,12 @@ Stage 2는 stage 1과 거의 동일한 prompt를 받으므로 **prompt cache hit
 | 논거 | 정확도·recall | **속도** |
 
 ⚠️ 화자의 "코딩 에이전트"가 무엇인지, 원래 느렸던 분류 단계가 어떤 모델이었는지 **말하지 않는다** — 이 페이지의 분류기였다고 **읽지 않는다.** Jev 판정기가 reasoning-blind 같은 **인젝션 방어 설계**를 갖는지도 없다.
+
+## "auto review" — 사람 승인보다 안전하다는 주장 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]: *"there are additional safety checks in place which a lot of companies are calling auto review which is essentially a separate AI model that's checking all of the commands that get run."*(05:02~05:10) 별도 모델이 실행 전에 모든 명령을 본다는 구조는 이 페이지와 같다. 자기 VM에서 돌아도 쓴다(*"even working on its own separate machine (…) you would like it if you know a model reviews every shell command before it goes"* 26:42~26:52).
+
+> ⚠️ **근거 없는 비교 주장**: *"that's actually more secure than the fatigue of having to watch hundreds of shell commands and approve each one. We've kind of reached the point where if you did a blind test (…) most of the time the the model's actually doing a better job."*(05:13~05:30) 누가 어떤 test를 했는지 없다. 이 페이지의 평가 결과(auto mode 풀 파이프라인)와 대조할 수 없다. *"a lot of companies"*가 누구인지도 발화되지 않는다. ko는 *"more secure"*를 잃는다(05:12).
 
 ## References
 

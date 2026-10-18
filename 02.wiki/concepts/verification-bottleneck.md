@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology]
 created: 2026-09-13
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # 검증 병목
@@ -239,3 +239,7 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 ## 유량을 리뷰 용량에 맞춘다 — "where things go to die" (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
 
 [[andrei-bocan|Andrei Bocan]]([[atlassian|Atlassian]] AutoDev): *"the reviewing step is where things go to die. Um because people again are uh busy with other things."*(45:32~45:40) 답은 리뷰 자동화가 아니라 **흐름 제어**다. 1인당 주 3~5 PR 설정(41:52~42:01), WIP 한도(43:50~43:58), 티켓·주 단위 비용 한도(44:18~44:28)를 두고, Slack으로 적절한 때에 리뷰어를 호출한다(45:43~46:00). → [[review-wip-limit]]. *"nobody's going to approve a PR that's like change half your code base"*(41:32~41:37)이라 기존 코드를 고칠 때도 PR을 점진적으로 낸다.
+
+## 검증에 매긴 가격 — 첫 답의 약 4배 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+[[tech-bridge-g2i-generation-cheap-evaluation-expensive|G2i]]의 *"Generation is cheap, but evaluation is expensive"*에 데이터 파이프라인 쪽 **비율**이 붙는다: 검증 $545 vs 첫 답 $128(12:26~12:36, ⚠️ 자기 보고). 화자는 이것을 병목이 아니라 **예산 항목**으로 다룬다. 미리 정한 $800 안에서 second opinion·불일치 해소·감사를 돌렸고, *"now that the pipeline is built and verified, we expect the audit budget for the next state to be close to zero."*(12:40~12:45, ⚠️ 예측) 검증을 줄이는 길은 리뷰 자동화(Gitar)나 리뷰 면 축소(G2i)가 아니라 **한 번 검증한 파이프라인의 재사용**이다. → [[just-in-time-ontology]] · [[cross-model-prior-intersection]]

@@ -4,11 +4,11 @@ type: entity
 category: model
 tags: [glm, zhipu, agent-model, terminal-bench, self-harness]
 aliases: [GLM-5]
-sources: [self-harness-paper]
+sources: [self-harness-paper, tech-bridge-fireworks-train-to-deploy-open-models]
 links:
   - https://arxiv.org/abs/2602.15763
 created: 2026-06-14
-updated: 2026-09-08
+updated: 2026-10-18
 ---
 
 # GLM-5
@@ -42,6 +42,10 @@ GLM 팀의 *"from vibe coding to agentic engineering"* 를 표방한 모델 (GLM
 ⚠️ **기준 시점은 대담 시점(6월, 연도 추정 2026)** 이고 업로드 날짜가 아니다. ⚠️ **어느 GLM 버전인지 소스가 명시하지 않는다** — 이 페이지의 GLM-5인지 확인되지 않는다. ⚠️ 같은 문장이 GLM의 제작사를 Moonshot으로 읽히게 하지만 구조가 모호하고 소스가 정정하지 않아 **위키는 그 귀속을 사용하지 않는다.**
 
 [[self-harness-paper]]에서 이 위키가 GLM·[[minimax-m2-5|MiniMax]]·[[qwen3-5|Qwen]]을 **하니스 실험의 base 모델**로 나란히 본 것과 달리, 여기서는 같은 이름들이 **오픈소스 순위 경쟁**의 맥락에서 나온다. ⚠️ ko 자막이 *Artificial Analysis* 를 **"인공 분석 표"** 로 직역했다.
+
+## "production-ready"의 근거로 — GLM 5.2 (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
+
+[[fireworks-ai|Fireworks AI]]의 [[jetashree-ravi|Jetashree Ravi]]가 오픈 모델의 "첫째 사실"의 근거로 든다: *"open-source models for the most part are production-ready. If any of you have used GLM 5.2, you know that that is true especially for the coding use cases."*(01:23~01:33) 트래픽 서술도 붙는다: *"This number was actually pre-GLM 5.2 release. I'm sure this has (…) increased by about at least 5 trillion tokens a day now with the GLM 5.2 release."*(03:06~03:16) ⚠️ 모델명 *"GLM 5.2"*는 이 페이지의 GLM-5와 대조하지 않았다([[tech-bridge-tailscale-aperture-ai-without-lock-in|Tailscale 편]]에 이어 두 번째 언급). 트래픽 증가는 벤더 추정(*"I'm sure"*)이다.
 
 ## References
 

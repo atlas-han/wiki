@@ -5,9 +5,9 @@ category: theory
 tags: [rlhf, hallucination, reward-model, overpromising, calibration, gan]
 related: [rlhf, assistance-vs-automation, reward-hacking, decision-quality, aleatoric-epistemic-uncertainty, verification-cost-asymmetry, model-calibration]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-exa-perfect-search-for-agents, tech-bridge-jev-calibrated-decisions]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-exa-perfect-search-for-agents, tech-bridge-jev-calibrated-decisions, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-09-20
-updated: 2026-10-09
+updated: 2026-10-18
 ---
 
 # 선호 보상 모델의 비대칭성
@@ -51,6 +51,7 @@ Q&A에서 한 번 더 구체화된다:
 >
 > **어느 쪽도 측정을 제시하지 않는다. 이 위키는 대조만 기록하고 판정하지 않는다.**
 
+> ⚠️ **Contradiction(약), 세 번째 발언 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]]).** [[lee-robinson|Lee Robinson]]: *"just a few years ago, they basically couldn't call tools very well and they would hallucinate all the time. It's funny, you don't really hear people talk about hallucinations anymore because it's kind of a solved problem mostly."*(07:21~07:30) Brockman 편 진행자와 같은 쪽("사실상 해결")이고 역시 측정이 없다. 표의 오른쪽 열에 화자 하나가 더해질 뿐 판정은 그대로다.
 
 ## 같은 모양의 논증이 검색 랭킹에 (2026-09-22 추가)
 

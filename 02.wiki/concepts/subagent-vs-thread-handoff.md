@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [subagents, delegation, multi-agent, threads, visibility, codex, context-isolation]
 aliases: [thread-to-thread handoff, 스레드 간 핸드오프, side thread, 위임 가시성]
-related: [agent-swarm, orchestrator-searcher-split, persistent-agent-teams, goal-level-delegation, multiplayer-agent-context, agent-attention-management, dynamic-workflows, cross-harness-skill-compilation]
+related: [agent-swarm, orchestrator-searcher-split, persistent-agent-teams, goal-level-delegation, multiplayer-agent-context, agent-attention-management, dynamic-workflows, cross-harness-skill-compilation, always-on-agent-architecture]
 first-seen: tech-bridge-cooking-with-codex
-sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-10-11
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # 서브에이전트 vs 스레드 간 핸드오프
@@ -48,6 +48,10 @@ updated: 2026-10-17
 
 > ⚠️ **Contradiction: 서브에이전트를 누가 켜나.** [[paul-bakaus|Paul Bakaus]]([[tech-bridge-skill-engineering-dark-arts]]): Codex는 **사용자가 명시적으로 요청해야** 서브에이전트를 쓴다(스킬 배포자 관점, 시점 미확정). Charlie(2026-06-29): **기본으로 모델이 쓴다.** 시점·맥락 차이일 수 있다 → [[cross-harness-skill-compilation]]
 - (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]]) 입문 정의 — 문제를 조사하다가 *"you send off a sub-agent to go see uh how that library works and test it out itself and then come back to the main agent"*(06:53~07:03). 가시성 문제는 다루지 않는다.
+
+## helper — 컨텍스트 격리와 내구성 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])의 main agent는 *"kind of like your orchestrator"*이고 helper는 *"just sub agents"*다(23:34~23:52). 목적은 컨텍스트다. *"None of that is bloating the conversation and the context of the main agent. It's only coming back with the result. And this is how you get to a product that feels like it has infinite context."*(24:03~24:14) 두 가지가 더해진다. helper마다 durable workflow라 죽어도 이어 간다(24:37~24:52). main agent는 to-do를 들고 helper를 확인·메시지·정지한다(24:56~25:05). inference도 나눈다. main agent는 짧은 지연이 중요하고, helper는 *"the difference between 10 minutes and 12 minutes is kind of negligible"*(35:57~36:00)다. 이 페이지의 기준으로는 **모델에게만 보이는 위임**(서브에이전트) 쪽이다. → [[always-on-agent-architecture]] · [[inference-speed-as-capability]]
 
 ## ⚠️ 유보
 

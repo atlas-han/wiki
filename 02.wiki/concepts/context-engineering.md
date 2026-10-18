@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails, prompt-caching]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents]
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-10-18
 ---
 
 # Context Engineering
@@ -27,6 +27,8 @@ LLM의 context window에 무엇을 넣고, 어떤 순서로 배치하고, 언제
 ## Prompt cache 친화적 조직
 
 Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적은 **prompt cache hit율**을 최대화하는 context 배치. [[transcript-classifier]]의 stage 1→stage 2 디자인도 동일 원리 — stage 2는 stage 1과 거의 동일 prompt로 cache hit.
+
+→ 기법 모음은 [[prompt-caching]](2026-10-18 신설).
 
 ## Generator-Evaluator 관점
 
@@ -201,3 +203,9 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 ## 2026-10-17 — 자원 한계로서의 컨텍스트, 그리고 넓은 외연 ([[tech-bridge-five-concepts-coding-with-ai-agents]])
 
 [[cedric-clyburn|Cedric Clyburn]]([[ibm|IBM Technology]]): *"context management is the idea of understanding the resource limitations of an AI model's context window and all of those extra components that are being added in addition to your code base (…) such as tools or skills, or MCP servers to provide external data to the model. So, that's context engineering"*(04:02~04:26). 이어 skills·automations(cron·이벤트 트리거)·sub-agents를 모두 *"contextual engineering capabilities"*(07:03~07:07)로 묶는다. **automations까지 context engineering에 넣는 넓은 외연**이다(다른 소스와의 비교는 통합자가 확인). ⚠️ ko는 *context engineering* 을 "공학 … 맥락"(04:24~04:26)으로 쪼갠다.
+
+## 2026-10-18 — "context engineering is also known as harness engineering" ([[tech-bridge-lee-robinson-always-on-agents]])
+
+[[lee-robinson|Lee Robinson]]: *"Okay, context engineering is also known as harness engineering. Like I feel like it's kind of the same thing. They've evolved over time, but basically what are some tips and tricks we can do to minimize the amount of context that's being used in these harnesses?"*(27:26~27:42) 그가 드는 기법은 prompt caching(정적 접두·섹션 해시·cache warming), 긴 출력은 파일로, 비싼 일은 서브에이전트로, *"always gardening and trimming"*(29:39~29:44), 캐시가 따뜻할 때 compaction이다. → [[prompt-caching]] · [[context-resets-and-compaction]]
+
+> ⚠️ 긴장: [[harness-engineering]]은 하네스를 context engineering보다 넓은 우산(프로세스·오케스트레이션까지)으로 기록한다. Robinson의 용례는 **컨텍스트 최소화**에 한정된다. 같은 말을 다른 넓이로 쓴다.

@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
-related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals]
+related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology]
 created: 2026-09-13
-updated: 2026-10-16
+updated: 2026-10-18
 ---
 
 # 검증 비용의 비대칭
@@ -69,3 +69,7 @@ updated: 2026-10-16
 > ⚠️ 검증자의 독립성 빈자리가 **네 번째로** 반복된다 — 이번 소스도 *누가 100%를 판정하는가* 를 말하지 않는다.
 
 > ⚠️ **Contradiction(약) (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])**: [[gabriel-martinez|Gabriel Martinez]]는 일반 명제로 *"Generation is cheap, but evaluation is expensive."*(10:05~10:08)라고 말한다. 이 페이지의 "검증이 실행보다 싼 작업"과 표면상 반대다. 두 주장은 범위가 다르다. Piras는 검증이 싼 작업을 **고르라**고 하고, Martinez는 큰 PR·20페이지 문서처럼 지금 **검증이 비싼 모양으로 나오는 산출물**을 묘사한다. Martinez의 처방(작게 쪼개기, [[compressed-review-surface]])은 **작업의 모양을 바꿔 비대칭을 만들라**는 것으로 읽힌다.
+
+## ⚠️ 검증이 실행의 4배였는데도 성립한 사례 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
+
+> ⚠️ Contradiction(약): [[hrishi-olickel|Hrishi Olickel]]의 오하이오 entity resolution에서 *"Checking cost about four times as much as doing, 545 on second opinions, settling disagreements, and the audit against 128 for first answers."*(12:26~12:36) 그래도 작업 전체는 예상 약 $10,000 대비 $795로 끝났다(⚠️ 자기 보고). 이 페이지의 축(*"검증이 실행보다 싼 작업이어야 경제적으로 성립한다"*)과 갈린다. 층이 다르다. Piras는 결과 하나의 검증 단가를 말하고, 여기의 checking은 second opinion·불일치 해소·감사를 합친 **파이프라인 단계 총액**이다. 첫 답을 [[jev|Jev]] 같은 싼 결정 모델이 냈기 때문에 검증이 4배여도 전체가 쌌다. 검증을 어디에 몰아줄지는 [[cross-model-prior-intersection]](불일치에만)이 정한다.
