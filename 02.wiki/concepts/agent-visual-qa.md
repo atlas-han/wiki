@@ -5,9 +5,9 @@ category: technique
 tags: [qa, verification, multimodal, completeness, design]
 related: [generator-evaluator-pattern, agent-verification-skill, verification-bottleneck, skill-evals, multimodal-elicitation, design-handoff-friction]
 first-seen: tech-bridge-one-designer-plus-ai
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory, tech-bridge-agentcraft-strategy-game]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory, tech-bridge-agentcraft-strategy-game, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-15
-updated: 2026-10-09
+updated: 2026-10-19
 ---
 
 # Agent Visual QA
@@ -46,3 +46,7 @@ updated: 2026-10-09
 [[agentcraft|AgentCraft]]의 **review kit**: 파일별 변경을 보거나 *"just get visual evidence. So you can actually see videos of what changed or photos of what changed, so you can really quickly understand what you want"*(07:22~07:30), 또는 여러 인스턴스를 병렬로 돌려 *"just pick the best implementation"*(07:30~07:36). 이 페이지의 앞 사례들이 **에이전트가 시각적으로 검증**하는 쪽이었다면, 이것은 **사람 리뷰어의 주의를 아끼려고** 시각 증거를 만드는 쪽이다. → [[agent-attention-management]]
 
 ⚠️ 화면에 드러나지 않는 변경(로직·회귀 — [[mergeability-gap]]의 *"quietly broke other code"*)을 영상·사진이 놓치는 문제는 다뤄지지 않는다. 당사자 데모.
+
+## 2026-10-19 — computer use가 검증 루프를 열었다 ([[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정): *"I felt this breakthrough with computer use once it got really, really good."*(12:25~12:30) 이후 매 기능 끝에 *"verify that the feature works end to end and use it by actually running infrastructure"*(12:36~12:42)를 붙인다. 10-02 절의 Factory user testing validator(가상 컴퓨터에서 클릭)와 같은 **조작하며 확인하는** 검증을, 전용 검증자가 아니라 같은 에이전트에게 한 문장으로 시킨다. ⚠️ 어떤 에이전트·computer use 도구인지는 발화되지 않는다.

@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · Kleiner Perkins "Builders" S2 ·
 date-published: 2026-09-01
 ingested: 2026-09-02
 created: 2026-09-02
-updated: 2026-09-18
+updated: 2026-10-19
 ---
 
 # Tech Bridge — Anthropic Claude Platform 팀이 말하는 에이전트의 시대
@@ -127,6 +127,8 @@ Angela가 대비를 더 선명하게 만든다.
 이것이 [[generator-evaluator-pattern]]을 플랫폼 기능으로 승격시킨 형태다.
 
 **3. Dreaming** — 과거 세션을 되돌아보며 **메모리에 쓰고 스킬을 작성해 개선**. [[self-harness]]가 논문에서 제시한 자기개선 루프를 제품 기능으로 부르는 이름이다.
+
+> ⚠️ Contradiction: 이후 워크숍([[tech-bridge-claude-managed-agents-workshop-2]] 32:21~32:50)에서 제품 팀은 *"Today the dreaming's constrained to memory stores"*라 하고 스킬·프롬프트·에이전트 정의로의 확장은 미래형으로 말한다.
 
 > if you give tokens different jobs besides just executing, you can get to a better maybe like **intelligence per dollar** sort of setup than if you were just brute force executing.
 

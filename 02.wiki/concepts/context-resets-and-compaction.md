@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research, prompt-caching]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1]
 created: 2026-05-25
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Context Resets vs. Compaction
@@ -41,6 +41,8 @@ updated: 2026-10-18
 > It is difficult to know which tokens the future turns will need.
 
 관련 idea: REPL 안에 context를 *object*로 두고 LLM이 코드로 슬라이스하는 패턴 ([arXiv:2512.24601](https://arxiv.org/pdf/2512.24601) 인용).
+
+**구두 판본** ([[tech-bridge-claude-managed-agents-workshop-1]], 2026-10-19): *"So, nothing is ever thrown away. We're not compacting and changing your event stream. We're always storing each and every event (…) the compaction strategy is the one that's deciding, 'Oh, do I want to look at my entire event log, uh summarize it and put it in the context? Do I want to only look at like the last end[=N] events'"*(09:11~09:30). 이 결과로 *"change our compaction strategy"*(10:43~10:44)가 인터페이스를 건드리지 않는다. ⚠️ ko·`en`은 *nothing is ever thrown away*를 "어떤 가능성도 배제되지 않습니다"(09:13)로 옮겨 요점이 사라진다.
 
 ## 계보 — scratch pad (2023)
 

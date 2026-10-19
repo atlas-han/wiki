@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation, product-polish-patterns]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-railway-polished-internal-tools]
 created: 2026-08-31
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # Agent Skills
@@ -353,3 +353,17 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 ## 2026-10-17 — "매 요청마다"? 입문 해설의 정의 ([[tech-bridge-five-concepts-coding-with-ai-agents]])
 
 [[cedric-clyburn|Cedric Clyburn]]: *"skills, which are markdown files that add reusable and contextual information about your code and project with each AI request"*(06:21~06:30). 형식(마크다운)과 목적(재사용 가능한 맥락)은 이 페이지와 같다. 그러나 *with each AI request* 를 문장 그대로 읽으면 **매 요청 주입**이고, 이 페이지의 **progressive disclosure**(필요할 때만 넣는다)와 긴장한다. 입문 해설의 단순화일 수 있다. 같은 화자가 바로 앞에서 컨텍스트 창의 *"resource limitations"*(04:05~04:11)를 강조했다는 점도 함께 적어 둔다. ⚠️ ko는 skills를 "기술"(04:19, 06:21)로 옮긴다.
+
+## 2026-10-19 — 호스팅 스킬은 살아 있는 산출물, 그리고 스킬로 배포한 워크숍 ([[tech-bridge-claude-managed-agents-workshop-2]])
+
+- [[managed-agents|Claude Managed Agents]]: *"these skills are live artifacts that you can update (…) any new sessions that the reference that skill will get that new information."*(22:30~22:46) 갱신은 **새 세션**에 전파된다(실행 중 세션 반영은 발화되지 않음 — 챕터 제목 "실행 중 스킬 업데이트"는 과장).
+- 스킬 내용 예(SEC EDGAR): Python 패키지 사용법과 호출 신원(EDGAR identity) 규칙(14:13~14:20).
+- 교재가 스킬이다: 워크숍 저장소에 Claude Code 스킬을 넣어 `workshop start`/`workshop next`로 6막을 진행한다(06:11~06:19, 07:25~07:57).
+
+## 2026-10-19 — 의견은 스킬로, 그리고 배포 플랫폼의 스킬 ([[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정, [[railway|Railway]]): *"whenever you have opinions about something, they should be packaged as agent skills. And then this way, your agent, whenever it's building something, it will actually follow those skills pretty closely."*(10:45~10:56)
+
+- 사내 도구에 쓴 스킬 셋: 디자인 엔지니어링 둘(UI·타이포그래피·레이아웃·오류 메시지 / 애니메이션, ⚠️ 이름 미발화)과 *"the Railway agent skills, of course"*(11:18~11:21).
+- 벤더 스킬: *"for the agent to effectively work with Railway and be able to deploy everything, we just give it the AI agent skills and it was just able to do it."*(11:32~11:42) 2026-09-23 절(Google Skills)에 이어 **배포 플랫폼 회사**가 자사 지식을 스킬로 낸 사례다. ⚠️ 자사 직원의 자사 제품 언급이고, 검토·버전 고정·인젝션 표면은 말하지 않는다.
+- 10-10 절의 *"skills is just a band-aid"* 반론과 관련해, 이 화자는 컨텍스트 비용을 말하지 않는다.

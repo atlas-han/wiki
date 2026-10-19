@@ -6,9 +6,9 @@ tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemer
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
 related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-10-17
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -53,11 +53,20 @@ updated: 2026-10-17
 - **같은 구성, 다른 근거**: Clyburn은 보안(공격 표면), [[tech-bridge-claude-platform-agent-era]]는 수명 주기(작업할 때 샌드박스를 만들고 끝나면 지운다 → [[managed-agents]] · [[brain-hands-decoupling]]), [[credential-injection-outside-sandbox]]는 자격증명 위치를 든다. Brennan은 blast radius와 감독 부재를 든다.
 - ⚠️ Clyburn은 샌드박스의 **구성**(네트워크 차단 여부, 자격증명 주입 방식, 수명)을 말하지 않는다. 그림은 화면에만 있다(미확인). *"teams are running"* 의 팀이 누구인지, 얼마나 흔한지는 발화되지 않는다.
 
+## 관리형 environment — 네트워크 허용 목록과 캐시된 패키지 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]]의 environment는 *"the template for the sandbox"*다.
+- 네트워크: 데모는 unrestricted. *"when you're building a production agent you you want to tighten the access, control which domains it can uh reach out to or specific MCP servers."*(02:08~02:18) 워크숍 에이전트는 SEC 등 몇 사이트만 허용(11:10~11:17). → [[least-privilege-connectors]]
+- 패키지: 생성 시 설치 후 캐시, *"reuse that environment across like re- re-instantiations of the sandbox"*(34:27~34:36). NPM·Cargo·pip에서 받을 수 있어야 하고, 내부 패키지는 파일·GitHub 저장소를 세션에 올려 설치(34:42~34:56).
+- 비밀은 environment가 아니라 Vault(→ [[credential-injection-outside-sandbox]]).
+- 위치: Anthropic 1P · 자체 호스팅(Vercel·Modal·Daytona·GCP·AWS) → [[brain-hands-decoupling]].
+
 ## 위키의 다른 페이지와
 
 - [[least-privilege-connectors]]: 같은 원칙의 커넥터 층이다. 이쪽은 실행 환경 층이다.
 - [[credential-injection-outside-sandbox]]: 비밀을 **샌드박스 밖**에 둔다. Brennan의 처방은 필요한 비밀만 **골라 넣는** 것이라, 둘은 같은 방향이지만 강도가 다르다(아래 ⚠️).
 - [[brain-hands-decoupling]]·[[pets-vs-cattle]]: 샌드박스를 교체 가능한 cattle로 만드는 인프라 쪽 근거다. Brennan의 ④가 사용자 쪽 판본이다.
+- [[tech-bridge-claude-managed-agents-workshop-1]](호스팅 쪽 판본, 2026-10-19): *"it's also writing uh code that's untrusted. It might be buggy (…) you want your sandbox to be isolated and the blast radius to be limited. So, typically you want to execute every task in a separate container"*(03:59~04:20). Brennan의 세션당 pod와 같은 처방을 **에이전트를 호스팅하는 쪽**(Anthropic)이 말한다. 그리고 sandbox 정의를 *"Provisioned on demand, uh gone when the work is done"*(07:28~07:30)로 일회용에 고정한다.
 - [[action-reversibility]]: ephemeral 컨테이너에서는 *"rm -rf /"*도 컨테이너를 죽이면 끝난다(05:52~05:57). 격리가 되돌림 비용을 0으로 만든다.
 - [[cloud-agent-delegation]]: 클라우드 위임의 실행 형태다. 이 페이지는 그 안의 격리 수준을 가른다.
 - [[agent-identity-separation]]: co-location의 답 가운데 신원 쪽이다.

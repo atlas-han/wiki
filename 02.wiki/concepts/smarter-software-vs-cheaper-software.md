@@ -3,11 +3,11 @@ title: 더 똑똑한 소프트웨어 vs 더 싸게 쓰는 소프트웨어
 type: concept
 category: theory
 tags: [saas, automation, software-economics, just-in-time, accessibility]
-related: [assistance-vs-automation, ambitious-software, code-is-the-product, agentic-sites, intelligence-abundance]
+related: [assistance-vs-automation, ambitious-software, code-is-the-product, agentic-sites, intelligence-abundance, product-polish-patterns]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-agents-as-catalyst]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-agents-as-catalyst, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-20
-updated: 2026-09-27
+updated: 2026-10-19
 ---
 
 # 더 똑똑한 소프트웨어 vs 더 싸게 쓰는 소프트웨어
@@ -63,3 +63,9 @@ updated: 2026-09-27
 ## ⚠️ 반대 판정 — "기술의 민주화" (2026-09-27 · [[tech-bridge-agents-as-catalyst]])
 
 > ⚠️ Contradiction: [[ibm|IBM Technology]] 계열 해설은 정반대 방향을 말한다 — *"모든 인터페이스나 프레임워크를 배우는 대신, 에이전트와 에이전틱 코딩 IDE로 사람들은 원하는 것을 설명하고 구현 세부 사항은 AI에게 넘길 수 있습니다. 이 기술의 민주화는 진입 장벽을 낮추고"*(06:45~07:04), *"혁신은 (…) 이제 문제를 이해하는 사람에게서 나올 수 있습니다"*(07:10~07:16). 이 페이지의 *"접근성은 그대로"* 와 **같은 말(접근성)에 반대 판정**이다. 대상은 조금 다르다 — Almeida는 **완성된 소프트웨어의 표현력과 쓸 수 있는 사람의 범위**, 저쪽은 **만들 수 있는 사람의 범위**. 두 소스 모두 측정값이 없고 서로를 모른다. 이 위키는 판정하지 않는다. → [[agents-as-catalyst]]
+
+## 2026-10-19 — "SaaS는 죽었다"의 실무 판본, 그리고 같은 SaaS ([[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정, [[railway|Railway]])은 *"People have been saying that SaaS is dead for a while now. It's not even a hot take at this point."*(00:00~00:03)로 시작해 사내 마케팅 SaaS 여럿을 에이전트로 만든 도구 하나로 바꿨다고 한다. 끝은 *"I hope that you too can become your company's SAS[=SaaS] layer."*(13:14~13:16)다.
+
+위키 판독: 그가 공들인 목록([[product-polish-patterns]])은 **기존 SaaS가 이미 갖춘 UX를 재현하는 것**이다(*"when you actually try to like replicate an experience"* 04:13~04:15). 이 페이지의 관찰(*SaaS는 변하지 않았다*, 바뀐 것은 공급 측 원가)을 반박하지 않고 사례로 뒷받침한다. 만드는 사람이 SaaS 회사에서 사내 한 사람과 에이전트로 바뀌었을 뿐 만들어진 것의 성질은 같다. 화자는 "더 똑똑한 소프트웨어"를 말하지 않는다. ⚠️ 대체한 SaaS의 이름·비용·절감액은 발화되지 않는다.

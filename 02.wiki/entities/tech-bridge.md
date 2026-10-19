@@ -4,7 +4,7 @@ type: entity
 category: org
 tags: [youtube, korean, ai-engineering, content]
 links:
-  - https://www.youtube.com/@TechBridge-KR
+  - "https://www.youtube.com/@TechBridge-KR"
 sources:
   - tech-bridge-harness-engineering
   - tech-bridge-spec-driven-development
@@ -131,8 +131,11 @@ sources:
   - tech-bridge-fireworks-train-to-deploy-open-models
   - tech-bridge-lee-robinson-always-on-agents
   - tech-bridge-just-in-time-ontology
+  - tech-bridge-claude-managed-agents-workshop-1
+  - tech-bridge-claude-managed-agents-workshop-2
+  - tech-bridge-railway-polished-internal-tools
 created: 2026-06-03
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Tech Bridge
@@ -1298,10 +1301,35 @@ updated: 2026-10-18
 - ⚠️ 화자 이름은 설명란에만 있다(회사는 발화). 수치는 모두 자기 보고다. 하네스 Hank Weave는 자사 오픈소스이고 표기가 확정되지 않았다. 행사명은 발화되지 않는다.
 - **⚠️ ko**: 결론 넷이 뒤집힌다(*no super schema* → "존재한다", *it is worse* → "그렇지 않습니다", *no … to yes* → "아니라고 … 아니라고", *you can solve this* → "해결할 수 없습니다"). JIT 정의의 *ahead of time* → "고급". 단위: $ → "건", 10 days → "10년", 194건 일치 → "194년에 만났습니다". schema → "계획", runs → "사형 집행", sign → "표지판". en-orig는 Jev를 *"Jeff"*로 섞어 적는다.
 
-## 멤버 전용 → 공개 전환 · 대기 (2026-10-18 확인)
+## 2026-10-18 업로드 — Priyanka Phatak · Gabe Cemaj (Anthropic), Claude Managed Agents 워크숍 1부 · 2/4 (2026-10-19 ingest)
+
+[[tech-bridge-claude-managed-agents-workshop-1|Anthropic Claude Managed Agents: 두뇌와 손을 분리한 설계 (1부)]](`3iOP4cXChAc`, 14:39, 공식 챕터 9) — [[priyanka-phatak]] · [[gabe-cemaj]] · [[anthropic]] ([[managed-agents]] · [[brain-hands-decoupling]] · [[agent-harness-design]] · [[pets-vs-cattle]] · [[credential-injection-outside-sandbox]])
+
+- **분할 업로드 시리즈.** [[ai-engineer|AI Engineer]] 워크숍 2시간 슬롯을 네 편으로 나눈 것의 1부다(*"I know they broke it down into four parts"* 01:31~01:35). 3/4·4/4는 2026-10-19 기준 미업로드. `meta.txt`에 `timestamp`가 없어 같은 날 업로드한 두 편은 부 번호순으로 놓는다.
+- 엔지니어링 글 [[anthropic-managed-agents]]의 설계를 만든 팀이 말로 다시 한다. agent·harness·sandbox 정의, Sonnet 4.5 context anxiety, 한 컨테이너의 pet(*"December of last year"*, early access), brain–hands–session 분리와 cattle, proxy 토큰 주입, 버리지 않는 compaction, TTFT 약 90%, 결론 *"harnesses encode assumptions and assumptions can go stale"*. 뒤 절반은 environment → agent → session → event API이고, 콘솔 Quick Start 안내 중(14:35) 끊긴다.
+- ⚠️ 당사자 진술. TTFT는 백분위가 없어 글의 p50 ~60% / p95 90%+와 갈린다(Contradiction). Priyanka의 성 *Phatak*은 1부 자막·설명란에 없고 2부 설명란에서 나온다. Gabe는 en-orig *"Semach"*. 행사명은 설명란 링크에서만 나온다. 슬라이드는 확인하지 않았다.
+- **⚠️ ko**: harness가 "끈"·"테스트 환경"·"환경"으로 흩어져 결론이 "테스트 환경이 필요한 이유"가 된다(`en` 공유). 제목 명제 → "뇌를 분리한다 / 제 손을 보여드릴게요". *more susceptible* → "더 좋을 거예요". *nothing is ever thrown away* → "어떤 가능성도 배제되지 않습니다". sandbox → "모래놀이터", master → "선생님", prompt injection → "주사". en-orig는 Claude를 *"Cloud"*로 네 번 적는다.
+
+[[tech-bridge-claude-managed-agents-workshop-2|Claude Managed Agents로 리서치 에이전트를 만들어봅니다 (2/4)]](`U0ZCwwG8sac`, 35:09, 공식 챕터 18) — [[priyanka-phatak]] · [[gabe-cemaj]] · [[anthropic]] ([[managed-agents]] · [[credential-injection-outside-sandbox]] · [[generator-evaluator-pattern]] · [[agent-dreaming]] · [[agent-memory]] · [[subagent-vs-thread-handoff]])
+
+- 설명란 기준 AI Engineer World's Fair 2026 워크숍 4부작의 2부. 1부 직후 청중 질문으로 시작해 데모 도중 잘린다. 콘솔 Quick Start(농담 에이전트) → research desk 핸즈온(Claude Code 워크숍 스킬, 6막) → 이벤트 스트림 채팅 UI → 스킬(SEC EDGAR)·자기 참조 하위 에이전트·맞춤 도구 dispatch analysis·공유 메모리 스토어 → Outcome으로 Nvidia 분기 공시 분석(사전 실행분) → 스킬 갱신 → Q&A 8건(Vault, Agent SDK, 가드레일, 분기, 메모리·lock-in, 하위 에이전트 채점, MCP 터널, 패키지).
+- 제품 팀이 **아직 없는 것**을 직접 말한다: 세션당 예산 상한, rewind/fork(로드맵), 메모리 밖 dreaming(09-01 *"스킬 작성"*과 Contradiction), 외부 메모리 공급자.
+- ⚠️ 벤더 당사자 시연. 이 편에서 성은 발화되지 않는다(*"Priyanka"*·*"Gabe"*, en-orig 한 번 *"Bianca"*). 성 Phatak · Cemaj는 이 편 설명란에서 왔다. Nvidia 결과 수치 없음, 재시도 장면 없음(설명란과 다름). 예고한 map-reduce·deployments API·dreaming은 이 편에 없다. raw 파일명은 `(2/4)`의 `/` 때문에 `(2-4)`.
+- **⚠️ ko**: 설명 셋이 뒤집힌다(*unrestricted* → "제한이 있지만", *nothing stopping you* → "막습니다", *no more than this amount* → "더 많은 돈을 사용하세요"). sandbox → "테스트 환경", harness → "환경", dreaming → "꿈"·"수면", Anthropic → "인간이 만든", placeholder → "점수판 가치", real credential → "왕실 증서". 원문에 없는 문장 둘(15:25 "고등학교 졸업 후 취업…", 34:26 "저 사람은 자기가 대체 누구라고…").
+
+## 2026-10-18 업로드 — Railway 사내 도구 (화자 Mahmoud Abdelwahab 추정), 엉성한 원샷 SaaS 대체품은 이제 그만 (2026-10-19 ingest)
+
+[[tech-bridge-railway-polished-internal-tools|엉성한 원샷 SaaS 대체품은 이제 그만 만드세요]](`3jtlfKL-N4A`, 13:21, 공식 챕터 8) — [[mahmoud-abdelwahab]] · [[railway]] ([[product-polish-patterns]] · [[agent-verification-skill]] · [[codebase-gardening]] · [[design-system-as-agent-context]] · [[agent-skills]])
+
+- 원샷으로 돌아가는 소프트웨어와 매일 쓰고 싶은 소프트웨어 사이에 큰 격차가 있다. 사내 마케팅 SaaS 여럿을 에이전트로 만든 올인원 도구로 바꾼 경험에서: 추상화가 있으면 에이전트가 기존 패턴을 따른다, 자동 저장·낙관적 업데이트·삭제 취소·보관·URL 상태·무한 스크롤은 요청해야 넣는다, 좋은 페이지를 참고로 지정한다, 의견은 스킬로, 가장 중요한 마지막 단계는 실제 인프라 위 end-to-end 검증(computer use가 돌파).
+- ⚠️ 이름은 자막·설명란 본문 어디에도 없고 설명란 링크 slug(`thisismahmoud`, `m-abdelwahab`)에서만 *추정*. 혼자 찍은 야외 영상(에든버러), 녹화 시점 발화(*"fall 2026. It's October."*). 자사 제품(Railway 배포·스킬). 수치는 *"700 million tokens"* 하나. 제목의 명령형은 발화되지 않는다.
+- **⚠️ ko**: Railway → "철도" 전 구간, 도구가 **"GPT-6를 기반으로 작동"**(01:08, 실제는 Railway 위), *non-blocking* → "차단 기능 … 타이핑하는 동안에는 차단됩니다"(05:18), *shouldn't feel that way* → "그렇게 느껴야 마땅해요"(04:44), 지연 삭제에 없는 "2초 안에"(08:10), computer use → "컴퓨터를 한 번 사용하면서"(12:27), optimistic update → "긍정적인 소식", loading spinner → "충전 표시등", tech stacks → "기술적인 배터리"(`en` 공유). en-orig *"Asians"* = agents, *"SAS"* = SaaS, *"one tech stack"* = TanStack(⚠️ 판독).
+
+## 멤버 전용 → 공개 전환 · 대기 (2026-10-19 확인)
 
 - **공개 전환 — 위에서 ingest (2026-10-18):** `Eu4D795nMsQ`([[tech-bridge-fireworks-train-to-deploy-open-models|지능을 빌리는 건 그만 — Jetashree Ravi (Fireworks AI)]]) — 목록 `upload_date` 20261013으로 멤버 전용 기록(10-17 두 회차 모두 `subscriber_only`), 2026-10-18 회차 `availability: public` 확인(`upload_date` 20261017 = 공개 전환 값). 제목은 대기 목록의 것과 같다(앞에 `[한영자막]`).
 - **공개 전환 — 위에서 ingest (2026-10-18):** `N8gD8ebFlMI`([[tech-bridge-lee-robinson-always-on-agents|Lee Robinson 스탠퍼드 강연]]) — 10-17 확인 때 `subscriber_only`(목록 `upload_date` 20261012) → 2026-10-18 `availability: public`, `upload_date` 20261017(공개 전환 값).
 - **공개 전환 — 위에서 ingest (2026-10-17 둘째 통합):** `ks55L-DkLE8`([[tech-bridge-atlassian-build-your-own-sdlc|직접 만드는 SDLC — Andy Wong, Andrei Bocan, Shane Wolf (Atlassian)]]) — 2026-10-14 멤버 전용으로 처음 보였고 2026-10-17 `availability: public` 확인(`upload_date` 20261016).
 - **공개 전환 — 위에서 ingest:** `zAglgqN5Lhw`([[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]], 10-13 회차 `availability: public` 확인, `upload_date` 20261012 = 공개 전환 값). 10-11 대기 목록의 마지막 항목이 해소됐다.
-- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 공개 전환 시 그날 ingest.
+- **새 멤버 전용 — ingest하지 않음 (2026-10-19 확인):** `WPJoi3ezJJc`(*상위 1% 처럼 AI 쓰는 법*, 7:29, 목록 `upload_date` 20261015). 공개 전환 시 그날 ingest.
+- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18·10-19 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 공개 전환 시 그날 ingest.

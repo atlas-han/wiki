@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [design, iteration, elicitation, human-in-the-loop, auto-mode, intent]
 aliases: [multi-shot design, no auto mode, 원샷 불가, 멀티샷 디자인]
-related: [steering-altitude, adjective-verb-steering, fuzzy-intent-discovery, intent-md, decision-quality, ai-slop, generator-evaluator-pattern, privacy-auto-mode, anthropic-claude-code-auto-mode, no-silent-write]
+related: [steering-altitude, adjective-verb-steering, fuzzy-intent-discovery, intent-md, decision-quality, ai-slop, generator-evaluator-pattern, privacy-auto-mode, anthropic-claude-code-auto-mode, no-silent-write, product-polish-patterns]
 first-seen: tech-bridge-impeccable-design-steering
-sources: [tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-one-designer-plus-ai, tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-one-designer-plus-ai, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-12
-updated: 2026-10-09
+updated: 2026-10-19
 ---
 
 # 디자인은 원샷할 수 없다
@@ -84,6 +84,14 @@ updated: 2026-10-09
 - 반복 패러다임: *"software that has value deployed in the world that you then change and now it has more value in the world"*(41:35~41:46).
 - 경계 조건: *"If I'm writing a little app, one shot is fine."*(42:12~42:19) — Bakaus의 *"어쩌면 영원히"* 보다 약한 주장.
 - 형식 기법도 원샷이다 — *"it's still feels like a oneshot process"*(37:54~38:00) → [[ai-formal-verification]]
+
+## 사내 도구로 — 기준은 크기가 아니라 사용 빈도 (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정, [[railway|Railway]]): *"there's a gap, a big gap, between working software that got one-shotted and software I would actually use, software that sparks joy, that is polished, that feels good."*(00:16~00:25)
+
+- [[kent-beck|Beck]]의 경계 조건(*"If I'm writing a little app, one shot is fine."*)과 다른 선을 긋는다. 사내 도구라도 **매일 쓰면** 원샷으로는 부족하다: *"when you use something every day, I think it makes a huge difference."*(09:30~09:33)
+- 빠지는 것을 목록으로 만든다(자동 저장·낙관적 업데이트·삭제 취소·보관·URL 상태·무한 스크롤). 진단은 *"it's not difficult for the agent to build it. You just need to ask and know exactly what to ask for."*(07:14~07:20) → [[product-polish-patterns]]
+- ⚠️ Tech Bridge 제목 *"엉성한 원샷 SaaS 대체품은 이제 그만 만드세요"*의 명령형은 발화되지 않는다. 화자는 직접 만들기를 권한다(*"become your company's SAS[=SaaS] layer"* 13:14~13:16).
 
 ## References
 

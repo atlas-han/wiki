@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # Claude Code
@@ -25,6 +25,7 @@ updated: 2026-10-17
 - Auto mode는 [[claude-sonnet-4-6|Sonnet 4.6]] 기반 classifier + 서버측 prompt-injection probe로 구성
 - Auto mode 진입 시 blanket shell / 인터프리터 / 패키지 매니저 run 룰은 drop (broad escape 방지)
 - [[anthropic-managed-agents|Managed Agents]]는 Claude Code 같은 범용 harness를 한 형태로 수용하는 "메타-하네스"
+- Managed Agents 팀 리드는 Claude Code를 *"running locally on your computer, has access to your files"*(03:50~03:56) 하는 하네스 + sandbox의 예로 든다 ([[tech-bridge-claude-managed-agents-workshop-1]]). 2부에서 같은 팀은 CMA의 하네스가 *"heavily inspired by Cloud[=Claude] Code's harness"*(26:48~26:52)라고 한다 ([[tech-bridge-claude-managed-agents-workshop-2]]).
 - [[anthropic-harness-design-long-running-apps|harness design 연구]]는 Claude Code의 다중 에이전트 후속 형태로 볼 수 있음
 - **System prompt 가이드라인** ([[llm-coding-guidelines]]): CLAUDE.md 헤더로 over-engineering·scope creep·weak success criteria 같은 *선의의 과잉 행동*을 줄임. [[anthropic-claude-code-auto-mode|auto mode]]가 *권한 게이트*로 위험 행동을 차단한다면, 본 가이드라인은 *프롬프트*로 작업의 질을 잡는 보완 layer. 사례: [[multica-karpathy-skills-claude-md]] (4원칙)
 - **[[dynamic-workflows|Dynamic workflows]]** (2026 신규, research preview): Claude가 오케스트레이션 스크립트를 동적으로 작성해 한 세션에서 10s~100s parallel subagent를 돌리고 검증 후 수렴. 진입은 직접 요청 또는 **[[ultracode]]** 세팅(effort=xhigh + workflow 자동 판단). 토큰 소모 大, 최초 1회 확인. 사례: [[bun|Bun]] Zig→Rust 포팅 ([[jarred-sumner|Jarred Sumner]], [[anthropic-dynamic-workflows]])

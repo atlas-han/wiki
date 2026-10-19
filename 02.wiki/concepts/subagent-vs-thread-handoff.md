@@ -6,9 +6,9 @@ tags: [subagents, delegation, multi-agent, threads, visibility, codex, context-i
 aliases: [thread-to-thread handoff, 스레드 간 핸드오프, side thread, 위임 가시성]
 related: [agent-swarm, orchestrator-searcher-split, persistent-agent-teams, goal-level-delegation, multiplayer-agent-context, agent-attention-management, dynamic-workflows, cross-harness-skill-compilation, always-on-agent-architecture]
 first-seen: tech-bridge-cooking-with-codex
-sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-10-11
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # 서브에이전트 vs 스레드 간 핸드오프
@@ -52,6 +52,14 @@ updated: 2026-10-18
 ## helper — 컨텍스트 격리와 내구성 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
 
 [[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]])의 main agent는 *"kind of like your orchestrator"*이고 helper는 *"just sub agents"*다(23:34~23:52). 목적은 컨텍스트다. *"None of that is bloating the conversation and the context of the main agent. It's only coming back with the result. And this is how you get to a product that feels like it has infinite context."*(24:03~24:14) 두 가지가 더해진다. helper마다 durable workflow라 죽어도 이어 간다(24:37~24:52). main agent는 to-do를 들고 helper를 확인·메시지·정지한다(24:56~25:05). inference도 나눈다. main agent는 짧은 지연이 중요하고, helper는 *"the difference between 10 minutes and 12 minutes is kind of negligible"*(35:57~36:00)다. 이 페이지의 기준으로는 **모델에게만 보이는 위임**(서브에이전트) 쪽이다. → [[always-on-agent-architecture]] · [[inference-speed-as-capability]]
+
+## 자기 참조 하위 에이전트 — 사본은 정의만 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]]에서 본 에이전트는 하위 에이전트 목록에 **자기 자신**을 넣을 수 있다: *"if the main agent ever wants to spin off a copy of itself with its same prompt, it can do that"*(15:08~15:15). 이유는 *"sometimes you don't necessarily know what sort of tasks your session's going to want to do"*(15:16~15:22).
+
+- ⭐ *"It doesn't copy the transcript of that session into the sub agent. It just copies over the tool description and the schemas and the prompt"*(15:37~15:47) — 컨텍스트 격리가 기본값.
+- 가시성: 콘솔에서 *"Each of these lines here represents a thread and a thread represents the work done by a sub-agent."*(20:27~20:31) 끝나면 본 에이전트에 알리고 본 에이전트가 *"woke up"*(20:40~20:42).
+- 하위 에이전트의 목적: *"meant to augment your context and leverage the capabilities of your session"*(31:34~31:45).
 
 ## ⚠️ 유보
 

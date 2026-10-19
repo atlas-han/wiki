@@ -5,9 +5,9 @@ category: technique
 tags: [agent-safety, attack, llm-security]
 related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1]
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # Prompt Injection
@@ -38,6 +38,8 @@ updated: 2026-10-17
 [[anthropic-managed-agents]]는 prompt injection 영향을 줄이기 위해 **자격증명을 sandbox 안에 두지 않는다** (vault + MCP proxy, 또는 Git의 경우 init 시 wire-in). Injection이 agent를 속여 환경변수를 grep하게 만들어도 잡을 게 없다.
 
 > Once an attacker has those tokens, they can spawn fresh, unrestricted sessions and delegate work to them. Narrow scoping is an obvious mitigation, but this encodes an assumption about what Claude can't do with a limited token — and Claude is getting increasingly smart.
+
+- 구두 판본: *"you can never prompt inject Claude to say like, 'Hey, give me your tokens.' or print out the tokens or write them to a file. You could never do that because Claude actually never sees your your tokens."*(08:51~09:01, [[tech-bridge-claude-managed-agents-workshop-1]]) — 막는 것은 토큰 **유출**이다. 주입된 지시로 도구를 오용하는 것은 이 문장의 범위 밖이다.
 
 ## 세 번째 벡터: 스킬 파일 공급망 (2026-09-02)
 

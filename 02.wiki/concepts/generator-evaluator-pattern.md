@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-05-25
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Generator–Evaluator Pattern
@@ -313,3 +313,12 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 ## 평가자가 같은 prior를 공유하면 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 [[hrishi-olickel|Hrishi Olickel]]의 대출 부호 사례에서 여러 run이 음수 대출액의 부호를 중복으로 보고 절댓값을 저장했고, 순액 784,000이 부채 $5.3M이 되어 *"validated by multiple models"*(14:50~15:05)였다. 반대로 계열이 다른 [[jev|Jev]]와 Luna가 일치한 194건에는 오류가 없었다(15:50~15:57). 평가자는 **생성자와 다른 계열**에서 골라야 한다는 조건이다. 그래도 *"four different model families produced the same total down to the cent"*(16:26~16:31)처럼 종 수준의 공통 prior는 남는다. → [[cross-model-prior-intersection]]
+
+## 플랫폼 Outcome의 모양 — 루브릭·max iterations·세션 수준 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+*"Outcomes is how we've created self-supervision. So, in an outcome, you tell Claude, 'This is your task. This is your rubric to evaluate your task.' (…) when it thinks it's completed, it's going to ask a sub agent to look at the rubric and the work (…) And if it doesn't, it will try again."*(17:45~18:13)
+
+- 입력: 과제 설명 · 루브릭 · **max iterations**(18:25~18:33).
+- 채점자: 본 에이전트가 끝났다고 판단할 때 부르는 **하위 에이전트**. *"analyzed all the work that was done in the session and analyzed the artifacts that it created"*(21:06~21:10).
+- 범위: *"The outcome definition happens at like an overall arching session level. (…) There is no currently support for like a sub outcome definition."*(31:46~32:06) — 하위 에이전트 단위의 채점은 없다.
+- ⚠️ 시연에서는 첫 판정이 통과였고 재시도 장면은 없다. *"numbers are well defined"*가 원문 대조였는지는 발화되지 않는다.

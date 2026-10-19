@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent-infrastructure, meta-harness, claude-platform]
 aliases: [Claude Managed Agents]
-sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory]
+sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
 links:
-  - https://platform.claude.com/docs/en/managed-agents/overview
+  - "https://platform.claude.com/docs/en/managed-agents/overview"
 created: 2026-05-25
-updated: 2026-10-01
+updated: 2026-10-19
 ---
 
 # Managed Agents
@@ -24,6 +24,7 @@ updated: 2026-10-01
   - `emitEvent(id, event)`, `getSession(id)`, `getEvents()`
   - `wake(sessionId)`
 - Brain(Claude+harness)을 컨테이너 *밖*으로 빼서 stateless로. 결과: **p50 TTFT ~60%↓, p95 90%+↓**.
+  - ⚠️ 팀 리드의 워크숍 발화는 *"bring down the time to first token by about 90%"*(백분위 없음)다 → [[tech-bridge-claude-managed-agents-workshop-1]]. 위 p50/p95 표기를 유지한다.
 - Session log를 context window *밖*에 두어 compaction의 비가역 손실 회피. ([[context-resets-and-compaction]])
 - Token이 sandbox에 **절대** 안 들어감 — bundled-with-resource (Git) 또는 vault + MCP proxy 패턴.
 - [[claude-code|Claude Code]] 같은 범용 harness, task-specific harness 모두 수용.
@@ -63,6 +64,8 @@ updated: 2026-10-01
 - [[anthropic-managed-agents]]
 - [[anthropic-dynamic-workflows]]
 - [[tech-bridge-claude-platform-agent-era]] — 설계 이유·`outcomes`에 대한 팀 1차 진술
+- [[tech-bridge-claude-managed-agents-workshop-1]] — 팀 리드의 워크숍 구두 판본·API 객체 넷
+- [[tech-bridge-claude-managed-agents-workshop-2]] — 워크숍 2부: 리소스 모델·Vault·Outcome·아직 없는 것 넷
 - [공식 문서](https://platform.claude.com/docs/en/managed-agents/overview)
 
 ## 메타 하네스 층 — 회고와 `outcomes`가 기본 제공 (2026-09-18 · [[tech-bridge-tokens-should-have-jobs]])
@@ -92,3 +95,56 @@ updated: 2026-10-01
 - 09-18의 *"회고(dreaming)는 기본 제공"* 과 일치한다. 이번에 더해진 것은 **메모리 쪽 보장** — 버전 관리·해시 기반 동시성(→ [[production-memory-guardrails]])과 dreaming의 구조(→ [[agent-dreaming]]).
 - dreaming 권한: *"when you set up a dreaming procedure you decide exactly which session transcripts to attach"*(29:20~29:25).
 - ⚠️ API 이름은 ASR(*"memory in dreaming API"*)과 설명란(*"Memory & Dreaming API"*)으로 판독. ko·`en`은 둘 다 **"스트리밍 API … 클라우드 관리형 에이전트"** 로 깨졌다. 엔드포인트·사용법은 발화되지 않았다(설명란의 "실전 적용 가이드"는 자막에 없다).
+
+## 워크숍 1부 — 만든 팀이 말하는 진화와 API 객체 넷 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-1]])
+
+[[priyanka-phatak|Priyanka Phatak]](엔지니어링 팀 리드)와 [[gabe-cemaj|Gabe Cemaj]]의 [[ai-engineer|AI Engineer]] 워크숍 1부. 설계 서술은 [[anthropic-managed-agents]]와 대부분 같다. 새로 나온 것은 셋이다.
+
+- **첫 아키텍처의 시점과 실패 이유.** *"This was in December of last year where we shipped our first architecture to our early access customers, got a bunch of feedback, and then actually pivoted"*(04:32~04:42). 실패 이유는 장애가 구분되지 않음(*"a dropped packet, a dead container would show up very similarly"* 06:18~06:22), 고객 데이터 때문에 들어갈 수 없음(*"customer data would live on these containers"* 06:33~06:36), VPC peering이다. [[katelyn-lesse]]의 *수명 주기 불일치*와 같은 결정의 다른 면이다. ⚠️ 연도 미발화.
+- **API 객체 넷**(발화 표기 그대로, 문서 미대조):
+
+| 객체 | 설정 |
+|---|---|
+| environment (*"V1 environments"*) | sandbox 템플릿 — 네트워킹(무제한 / 도메인·MCP 제한), 설치 패키지 |
+| agent | 이름, 모델(Opus·Haiku·Sonnet), 시스템 프롬프트, 도구(*"agent tool set"* = bash·read·write·grep 등) |
+| session | agent ID + environment ID. *"task unit of work"*. 이벤트를 받기 전에는 idle |
+| events | *"user.message"*, custom tool use → custom tool result(사용자가 처리), *"session.error"*, status idle, interrupt |
+
+- **custom tool의 흐름.** Claude가 custom tool use 이벤트를 스트림에 올리고, 사용자가 처리해 custom tool result로 돌려준다(13:09~13:25). 도구 실행이 **사용자 쪽 hands**가 되는 자리다 → [[brain-hands-decoupling]].
+
+> ⚠️ **Contradiction(표현): TTFT.** 위 *"p50 TTFT ~60%↓, p95 90%+↓"*(글)와 달리 발화는 *"about 90%"*(09:43~09:47)이고 백분위가 없다.
+
+⚠️ ko는 harness를 "테스트 환경"·"환경"으로, Claude를 "클라우드"로 옮긴다. 1부는 콘솔 Quick Start 직전에 끊기고 다중 에이전트·메모리는 2부([[tech-bridge-claude-managed-agents-workshop-2]])로 넘어간다.
+
+## 워크숍 2부 — 만지는 단위와 아직 없는 것 넷 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+같은 팀의 워크숍 2부(핸즈온·Q&A). *"All you have to do is start a session with the agent, send events, get back events. Everything else is managed by us."*(03:00~03:05) — 관리 범위는 *"the infrastructure, the hosting, the harness, the sandbox management, the scaling, the storage of your event log"*(03:07~03:14).
+
+| 단위 | 워크숍에서 나온 것 |
+|---|---|
+| **agent** | 프롬프트·모델·도구·스킬·하위 에이전트. 설명을 바꾸면 *"a new version of that agent"*(14:53~14:55). 콘솔 Quick Start는 *"V1 agents endpoint"*(01:44~01:47)를 부른다 |
+| **environment** | *"the template for the sandbox"*. 네트워크는 unrestricted 또는 도메인·MCP 서버 허용 목록(02:10~02:18). 패키지는 *"creation time and then we'll cache it"*(34:27~34:36), NPM·Cargo·pip만(내부 패키지는 파일·GitHub 저장소 업로드로) |
+| **session** | 이벤트 스트림 — `user.message`를 보내고 SSE로 받는다(11:54~12:43). 실행 중 `user.message`로 조종, 큐잉(*"like 10 messages at a time"* 28:27~28:31) |
+| **skill** | *"live artifacts"* — 갱신은 그 스킬을 참조하는 **새 세션**에 전파(22:30~22:46) |
+| **sub-agent** | 자체 프롬프트·도구·권한. **자기 참조** 가능 — 트랜스크립트는 복사하지 않고 프롬프트·도구·스키마만(15:37~15:47). 콘솔에서 thread 하나 = 하위 에이전트 작업 하나 |
+| **custom tool** | 클라이언트 쪽 오케스트레이션 훅(dispatch analysis → 세션 N개, 이 편에서는 미시연) |
+| **memory store** | 세션 간 공유, 세션당 여러 개(사용자 + 조직), API로 반출 |
+| **outcome** | 과제 + 루브릭 + max iterations → 채점 하위 에이전트, 실패 시 재시도. 세션 수준만 |
+| **vault** | 비밀은 env에 placeholder로, egress에서 허용 도메인에만 진짜 값으로. MCP auth·OAuth 묶음 |
+
+실행 위치: Anthropic 1P · Claude Platform on AWS(⚠️ en-orig *"cloud platform on AWS"* 판독) · 자체 호스팅 샌드박스(Vercel·Modal·Daytona·Google Cloud·AWS). 비공개 데이터는 MCP + vault, **MCP tunnels**, 고객 네트워크에 peer한 자체 호스팅 샌드박스(33:22~34:12).
+
+**아직 없는 것**(워크숍 시점, 팀 진술):
+1. 세션당 돈·토큰 상한 — *"we are exploring (…) but that's not something we offer today"*(27:33~27:44). 반복 폭주 방지는 *"we leave up to you"*. → [[fixed-budget-alpha]]
+2. rewind / roll forward — 없음(28:31~28:36). session forking은 로드맵(28:40~28:48).
+3. 메모리 밖 dreaming — *"Today the dreaming's constrained to memory stores"*(32:21~32:24). 아래 Contradiction.
+4. 외부 메모리 공급자 — *"We don't currently support out of the box other memory providers in the session"*(30:40~30:44). MCP·맞춤 도구로.
+(+ sub-outcome 정의 없음 31:59~32:06)
+
+하네스: *"we have our own harness that's heavily inspired by Cloud[=Claude] Code's harness"*(26:48~26:52), Agent SDK의 *"sort of a fork"*. → [[claude-agent-sdk]] · [[agent-harness-design]]
+
+> ⚠️ Contradiction(약): 이 페이지의 *"[[claude-code|Claude Code]] 같은 범용 harness, task-specific harness 모두 수용"*(엔지니어링 글 기반)과 달리, 워크숍은 **호스팅 하네스 하나**를 말하고 사용자의 *"custom harness"*는 맞춤 도구로 세션들을 바깥에서 조율하는 층이다. 글은 설계 원칙, 워크숍은 현재 제품.
+
+> ⚠️ Contradiction: dreaming의 출력. 09-01([[tech-bridge-claude-platform-agent-era]])은 *"메모리에 쓰고 스킬을 작성"*, 워크숍은 메모리 스토어 전용이고 스킬·프롬프트·에이전트 정의는 *"you can imagine that we can continue to expand"*(미래형). → [[agent-dreaming]]
+
+⚠️ 벤더 당사자 워크숍. *"hours, days, weeks, and even months"*(13:14~13:18)는 근거 없음. Nvidia 데모는 사전 실행분이고 결과 수치 없음. deployments API·map-reduce·dreaming 시연은 3/4·4/4 대기.

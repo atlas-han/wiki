@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
-related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review]
+related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-09
-updated: 2026-10-10
+updated: 2026-10-19
 ---
 
 # 행동 가역성
@@ -83,3 +83,7 @@ Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이�
 - 검증이 어려운 영역에선 *"it's very hard to get to that point"*(55:55~55:59), ⭐ *"I think it's a great question that I don't really have the answer to"*(56:29~56:34).
 - 기대: 증명을 프로그래밍과 합친 에이전트 지향 언어(*"bend"* 56:53, ⚠️ 판독 미확정), *"if the proofs show you that it's correct, then why wouldn't you just merge it? Um but of course, yeah, not all domains are verifiable."*(58:11~58:20) → [[ai-formal-verification]] · [[verifiable-goals]]
 - ⚠️ 위키의 주석: "검증되면 two-way"는 **코드의 정확성**에 대한 말이다. 데이터 손실처럼 *실행 결과* 가 되돌릴 수 없는 경우(진행자의 예 *"cause data loss"* 55:05~55:11)를 증명이 막는지는 화자가 따로 말하지 않는다.
+
+## 제품 사용자의 two-way door — 삭제 취소와 보관 (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
+
+이 페이지는 에이전트의 행동을 다뤘다. [[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정)은 에이전트가 만드는 **제품의 사용자 행동**에 같은 원리를 건다. 에이전트의 기본값은 삭제 버튼 → 확인 대화상자 → 즉시 삭제(07:29~07:40)다. 그가 요청하는 것은 UI에서 바로 지우고 *"you have like a couple of seconds where you could change your mind"*(07:54~07:58)를 준 뒤 실제로 지우는 *"delayed action"*(08:14~08:16)과, 지우지 않고 숨기는 보관/보관 해제(08:16~08:41)다. 확인 대화상자(사전 승인)를 사후 취소로 바꾸는 것이다. → [[product-polish-patterns]]

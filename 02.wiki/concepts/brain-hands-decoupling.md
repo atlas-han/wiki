@@ -5,9 +5,9 @@ category: architecture
 tags: [agent-infrastructure, decoupling, sandbox, harness]
 related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure, humanoid-robot-scaling, always-on-agent-architecture]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-lee-robinson-always-on-agents]
+sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-05-25
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Brain–Hands Decoupling
@@ -43,6 +43,8 @@ LLM 에이전트 시스템을 **brain**(Claude + harness, 결정 주체)과 **ha
 
 - **p50 TTFT ~60% 감소**
 - **p95 TTFT 90%+ 감소**
+
+> ⚠️ **Contradiction(표현).** 같은 팀 리드의 워크숍 발화는 *"we were able to bring down the time to first token by about 90%"*(백분위 없음)다 — [[tech-bridge-claude-managed-agents-workshop-1]](09:43~09:47). 글의 p50/p95 표기를 유지한다.
 
 ### 3. Security boundary
 Token이 sandbox 안에 들어가지 않음:
@@ -113,6 +115,24 @@ Token이 sandbox 안에 들어가지 않음:
 [[anthropic-managed-agents]]의 이유는 sandbox를 cattle로 만들어 실패를 격리하는 것이었다. Robinson의 이유는 **패치와 다운타임**이고, 거기에 비용(*"not enough computers in the world"* 10:56~11:02 — VM은 평소 잔다)이 더해진다. hands는 snapshot으로 재우고 깨운다(12:28~12:36). → [[always-on-agent-architecture]] · [[pets-vs-cattle]]
 
 > ⚠️ ko는 핵심 문장을 뒤집는다. *"rebuild that and not (…) blow away the entire agent loop"* → **"에이전트 사이클 전체를 파괴하고 시스템 다운타임을 유발합니다"**(15:17~15:22).
+
+## 원 출처 팀의 구두 판본 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-1]])
+
+[[priyanka-phatak|Priyanka Phatak]](Claude Managed Agents 엔지니어링 팀 리드)가 이 분리를 워크숍에서 직접 설명한다. 같은 팀의 [[gabe-cemaj|Gabe Cemaj]]는 [[anthropic-managed-agents]]의 공저자다.
+
+> *"what we decided that we wanted to essentially decouple the brains from the hands"* (06:59~07:03) · *"the only thing what[=we were] protecting here was like your session log. Everything else was interchangeable"* (08:13~08:18)
+
+- 세 인터페이스의 이름이 글과 조금 다르다. 글은 session / harness / sandbox, 발화는 **session / brain(*"your harness or the agent loop along with Claude"* 07:19~07:24) / hands(*"sandboxes, your MCP tool calls, etc."* 07:24~07:26)**다. hands에 MCP 호출이 명시된다.
+- sandbox를 다시 띄우는 주체를 *"the harness or Claude"*(07:41~07:45)로 열어 둔다. 글은 Claude다.
+- 첫 아키텍처를 버린 이유에 **고객 데이터**가 더해진다: *"investigating was hard because customer data would live on these containers. So, we didn't have a way in"*(06:31~06:38).
+- ⚠️ ko는 제목 명제를 "뇌를 분리한다 / 제 손을 보여드릴게요"(07:01~07:03)로 깨뜨린다.
+
+## hands를 고객 쪽으로 — 자체 호스팅 샌드박스 공급자 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]] 팀: *"self-hosted sandboxes. So if you want to bring your own sandbox through uh different providers like Vercel or Modal or Daytona or a bunch of others, you can do that uh even, you know, through Google Cloud and and AWS."*(10:33~10:50) 비공개 데이터에는 *"bring your own sandbox which has which is peered with your network"*(33:58~34:02).
+
+- 엔지니어링 글이 1세대(한 컨테이너) 설계의 문제로 든 *customer VPC network peering*이 여기서는 **hands만 고객 네트워크에 peer**하는 선택지로 돌아온다 — brain은 그대로 Anthropic 쪽.
+- 설계 원칙의 연장: *"virtualizing interfaces all the way down uh not only across service boundaries, but also at the event layer"*(00:42~00:49).
 
 ## References
 

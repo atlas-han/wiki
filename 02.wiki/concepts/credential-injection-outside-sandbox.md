@@ -6,9 +6,9 @@ tags: [credentials, sandbox, proxy, access-control, privilege-escalation, securi
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
 related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation, agent-sandboxing]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-09-10
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # 샌드박스 밖 자격증명 주입
@@ -42,6 +42,8 @@ updated: 2026-10-17
 |---|---|---|
 | [[anthropic-managed-agents]] | [[prompt-injection]] 피해 축소 — *"인젝션이 환경변수를 grep하게 만들어도 잡을 게 없다"* | 외부 콘텐츠가 에이전트를 속임 |
 | 이 소스 | **권한 상승** 방지 — 공유 에이전트가 사용자 권한을 넘지 못하게 | **정당한 사용자**가 남의 권한을 얻음 |
+
+같은 팀 리드의 워크숍 발화가 위 첫 행의 동기를 직접 확인한다: *"With our previous setup, your credential would be in your sandbox, so you'd be more susceptible to prompt injection. (…) it would be routed through a proxy that would inject your token before it called the external endpoint or external MCP. That way the model never sees your credentials or your tokens, which means you can never prompt inject Claude to say like, 'Hey, give me your tokens.'"*(08:26~08:56, [[tech-bridge-claude-managed-agents-workshop-1]]). 첫 아키텍처에서는 **자격증명이 sandbox 안에 있었다**는 사실도 처음 나온다. ⚠️ ko: *more susceptible* → "더 좋을 거예요", prompt injection → "주사".
 
 두 위협이 **같은 벽 하나**로 막힌다는 것이 이 개념의 요점이다. 그리고 [[agent-governance-layers]]의 *"벽은 에이전트 바깥에, 에이전트가 잊어도 넘을 수 없는"* 이 여기서는 **HTTP/SQL 프록시**라는 구체적 자리를 얻는다.
 
@@ -92,3 +94,20 @@ updated: 2026-10-17
 화자가 꼽은 기존 게이트웨이의 실패는 자격증명을 옮기기만 하는 것이다: *"I've traded some keys for a bunch of other keys."*(09:26~09:28) ⚠️ 벤더 진술. 사용자 신원으로 인증된 요청을 에이전트가 보낼 때의 권한 범위는 다루지 않는다.
 
 > ⚠️ **긴장: 비밀을 골라 넣는 쪽 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])**. [[robert-brennan|Robert Brennan]]의 샌드박스 처방은 필요한 비밀만 **샌드박스 안에** 마운트하는 것이다(*"You can mount specific secrets and environment variables for the agent"* 06:15~06:18, *"maybe a couple secrets that it needs to access a local database"* 05:02~05:04). GitHub Actions의 *"secrets registry"*(07:27~07:29)도 같은 형태다. 이 페이지의 처방은 자격증명을 샌드박스에 **아예 두지 않는** 것이다. 앞쪽은 비밀의 개수를 줄이고, 이쪽은 에이전트가 비밀을 보지 못하게 한다. 발표는 이 차이를 다루지 않는다. → [[agent-sandboxing]]
+
+## 셋째 메커니즘 — placeholder와 egress 바꿔치기 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]]의 **Vaults**를 제품 팀이 설명한다.
+
+> *"you define a secret uh that you want to you inject in an environment variable. And instead of putting the real secret in, what we put is in is a placeholder. (…) We at Egress[=at egress] swap it out for the real value only on the host domains that you specified are allowed for that secret. So, if you say uh my super secret MVAR[=env var] can only be used for the SEC, and then Cloud[=Claude] tries to use it for anthropic.com, we won't inject (…) But, when it tries to call the SEC.com[=sec.gov?], it would do the swap"* (24:05~24:45)
+
+| | [[anthropic-managed-agents]] (글) | 이 워크숍 |
+|---|---|---|
+| 메커니즘 | bundled with resource(Git) · vault + MCP proxy | **env의 placeholder + egress 바꿔치기** |
+| 범위 | 리소스·도구 단위 | **비밀마다 허용 호스트 도메인** |
+| 샌드박스 안 CLI | — | 가능(Google Workspace CLI 예, 24:59~25:07) |
+
+- 비밀이 샌드박스에 **없다**는 원칙은 같다. 다른 점은 에이전트가 비밀을 *쓰는 방식*을 바꾸지 않는다는 것 — 평소처럼 env를 쓰고, 진짜 값은 나가는 길에서만 생긴다.
+- 프롬프트 인젝션이 env를 읽어 다른 도메인으로 보내도 placeholder만 나간다. [[lethal-trifecta]]의 외부 전송 다리를 **비밀별 도메인 허용 목록**으로 자른다.
+- 이 개념 본문의 동기(멀티플레이어 권한 상승)와는 축이 다르다. 워크숍은 **사용자별** 자격증명을 말하지 않는다 — vault ID를 세션에 붙이는 단위다.
+- ⚠️ 당사자 설명. 데모는 SEC 신원(이름·이메일)을 *"just inject that in the prompt"*(23:59~24:01)로 처리했고 vault는 시연하지 않았다(콘솔 화면만).

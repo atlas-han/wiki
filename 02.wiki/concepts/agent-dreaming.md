@@ -6,9 +6,9 @@ tags: [agent-memory, dreaming, out-of-band, batch, continual-learning, transcrip
 aliases: [dreaming, 드리밍, 꿈꾸기, 회고, dreamer, 드리머, out-of-band memory curation, 아웃오브밴드 메모리, memory dreaming]
 related: [agent-memory, nightly-memory-consolidation, token-roles, strategy-primitives, managed-agents, production-memory-guardrails, self-harness, skill-self-improvement, continual-learning, context-engineering, generator-evaluator-pattern, trace-to-memory-loop]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-langchain-learning-agent-memory, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-10-01
-updated: 2026-10-12
+updated: 2026-10-19
 ---
 
 # Dreaming — 아웃오브밴드 메모리 정리
@@ -79,6 +79,16 @@ updated: 2026-10-12
 > ⚠️ **용어 충돌.** [[jake-broekhuizen|Jake Broekhuizen]]([[langchain|LangChain]])은 *"you might have heard of sleeptime compute or dreaming. Those terms refer to the way that memory is updated or pulled from long-term into short-term whilst the agent is doing work or actually in some cases while the agent is also not doing work. That's the sleeptime compute."*(07:46~08:03)라고 한다. 이 페이지의 dreaming(Anthropic)은 **세션 밖·배치**이고 인밴드 메모리와 구분되는 second-order 과정인데, Broekhuizen의 용법은 **작업 중 갱신·적재까지** 포함한다.
 
 수렴하는 점도 있다: 변경을 *"surface the changes (…) before actually committing those"*(14:37~14:46)는 이 페이지의 *제안 → 사람 수락* 게이트와 같고, 저장 형식도 **마크다운 스킬 파일**(Context Hub, 12:07~12:09). → [[trace-to-memory-loop]] · [[langsmith]]
+
+## 오늘은 메모리 스토어만 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[gabe-cemaj|Gabe Cemaj]]: *"Today the dreaming's constrained to memory stores. (…) they will analyze the transcripts and the memories created across multiple sessions so that it can update its memories so that future agents know what to pull. But you can imagine that we can continue to expand that for skills and for prompts and for agent definitions so that you can you have this continuous learning functionality. But right now we just have it for for memory stores."* (32:21~32:50)
+
+> ⚠️ Contradiction: [[tech-bridge-claude-platform-agent-era]](09-01)은 dreaming을 *"메모리에 쓰고 **스킬을 작성**해 개선"*으로 적었다. 제품 팀의 이 진술(워크숍)은 **메모리 스토어 전용**이고 스킬·프롬프트·에이전트 정의는 미래형이다. [[tech-bridge-anthropic-dreaming-memory]](10-01)도 출력은 메모리 스토어뿐이었다. 09-01은 방향을 말한 것으로 읽는다.
+
+- 사용 맥락: 공유 메모리 스토어를 *"consolidate that knowledge over time using dreaming (…) as different agents run into different edge cases and collectively learn from each other"*(29:57~30:09). → [[agent-fleet-learning]]
+- 하위 에이전트의 탈선에서 배우는가라는 질문에 대한 답이었다 — 즉 **하위 에이전트 트랜스크립트도 입력**이라는 뜻으로 읽히지만 명시되지는 않는다.
+- ⚠️ 시연은 워크숍 후반(3/4·4/4 미업로드)으로 미뤄졌다.
 
 ## References
 

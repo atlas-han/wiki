@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, sonnet]
 aliases: [Sonnet 4.5]
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-claude-managed-agents-workshop-1]
 links: []
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-10-19
 ---
 
 # Claude Sonnet 4.5

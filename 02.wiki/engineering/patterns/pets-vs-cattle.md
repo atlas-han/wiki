@@ -5,9 +5,9 @@ category: pattern
 tags: [infrastructure, operations, cloud, reliability]
 related: [brain-hands-decoupling, agent-harness-design, twelve-factor-app, agent-sandboxing]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [anthropic-managed-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1]
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # Pets vs. Cattle
@@ -30,6 +30,10 @@ updated: 2026-10-17
 | Sandbox 컨테이너 | tool-call error → Claude가 retry 결정 → `provision({resources})` 새 컨테이너 |
 | Harness | `wake(sessionId)` + `getSession(id)`로 마지막 event부터 resume |
 | Session log | 외부 durable storage — fail unit이 아님 |
+
+## 만든 팀의 구두 설명 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-1]])
+
+Managed Agents 팀 리드([[priyanka-phatak|Priyanka Phatak]])가 같은 일화를 워크숍에서 말한다: *"But what happened was we realized we adopted a pet."*(05:22~05:24) 비유는 DB로 푼다. 단일 shard가 죽으면 제품이 죽는다(pet). master-replica 구성이면 master가 죽어도 replica를 올린다(cattle)(05:48~06:01). 위 표의 문제에 **조사 불가**가 더해진다: *"customer data would live on these containers. So, we didn't have a way in, essentially, to go in and debug."*(06:33~06:38) 분리 뒤 보호 대상은 하나다: *"the only thing what[=we were] protecting here was like your session log."*(08:13~08:16) ⚠️ ko: master → "선생님", shard → "염기 조각", *cannot afford to lose it* → "감정을 주체하지 못하고 폭발하는 것을 허용하세요".
 
 ## 사용자 쪽 판본 — VM(pet) 대 세션당 pod(cattle) (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
 

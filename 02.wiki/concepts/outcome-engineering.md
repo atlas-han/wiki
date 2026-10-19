@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, workflow, llm-coding, productivity, codex]
 related: [verifiable-goals, sprint-contract, harness-engineering, agent-harness-design, context-engineering, spec-driven-development, agent-org-adoption]
 first-seen: openai-nextdoor-codex
-sources: [openai-nextdoor-codex, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development]
+sources: [openai-nextdoor-codex, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-06-27
-updated: 2026-08-29
+updated: 2026-10-19
 ---
 
 # Outcome Engineering
@@ -41,6 +41,8 @@ updated: 2026-08-29
 - [[spec-driven-development]] · [[agent-org-adoption]] — 프롬프팅 대신 spec/plan을 쓰는 제품화(Spec Kit)와 조직 운영(Figma). 같은 *how → what* 전환의 2026-08 교차.
 - [[harness-engineering]] — 원문은 Nextdoor가 에이전트에 *"clean environment and harness for investigation"* 를 제공한다고 언급. outcome을 향한 작업도 결국 harness 위에서 일어난다.
 - [[agent-harness-design]] — outcome engineering은 *모델이 더 잘하게 되면서* 사람의 역할이 how→what으로 올라가는 사례. "harness가 인코딩한 가정이 stale된다"는 일반 원리의 인적(human-role) 버전.
+
+- [[managed-agents]]의 **Outcome**(2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]]): 결과를 *과제 + 루브릭 + max iterations*로 선언하면 플랫폼이 채점 하위 에이전트를 붙인다. 이름이 같을 뿐 이 개념의 조직론과는 층이 다르다 — 제품 기능 차원의 "결과 선언".
 
 ## 대비 — context/prompt engineering과의 관계
 

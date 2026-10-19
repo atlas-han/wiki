@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus]
 aliases: [Opus 4.5]
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-horthy-state-of-software-factory]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-company-brain-security, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1]
 links: []
 created: 2026-05-25
-updated: 2026-10-16
+updated: 2026-10-19
 ---
 
 # Claude Opus 4.5

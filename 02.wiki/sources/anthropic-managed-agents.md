@@ -8,7 +8,7 @@ author: Lance Martin, Gabe Cemaj, Michael Cohen
 date-published: 2026
 ingested: 2026-05-25
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-10-19
 ---
 
 # Anthropic — Scaling Managed Agents: Decoupling the brain from the hands
@@ -71,7 +71,7 @@ updated: 2026-05-25
 - 조직: [[anthropic]]
 - 제품: [[managed-agents]], [[claude-code]]
 - 모델: [[claude-sonnet-4-5]], [[claude-opus-4-5]]
-- 저자: Lance Martin, Gabe Cemaj, Michael Cohen
+- 저자: Lance Martin, [[gabe-cemaj|Gabe Cemaj]], Michael Cohen
 - 개념: [[agent-harness-design]], [[brain-hands-decoupling]], [[context-anxiety]], [[context-resets-and-compaction]], [[context-engineering]], [[pets-vs-cattle]]
 
 ## References
@@ -79,3 +79,4 @@ updated: 2026-05-25
 - [원문](https://www.anthropic.com/engineering/managed-agents)
 - 외부 참고: [Building Effective Agents](https://www.anthropic.com/research/building-effective-agents), [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents), [The Bitter Lesson (Sutton)](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), [TAOUP §3](http://www.catb.org/esr/writings/taoup/html/ch03s01.html), [Pets vs Cattle (Cloudscaling)](https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)
 - 시리즈: [[anthropic-claude-code-auto-mode]], [[anthropic-harness-design-long-running-apps]]
+- 구두 판본: 공저자 [[gabe-cemaj|Gabe Cemaj]]와 팀 리드 [[priyanka-phatak|Priyanka Phatak]]의 AI Engineer 워크숍 — [[tech-bridge-claude-managed-agents-workshop-1]](설계 진화, TTFT *"about 90%"*) · [[tech-bridge-claude-managed-agents-workshop-2]](dreaming 메모리 전용, 예산 상한·rewind 없음, 자체 하네스 = Agent SDK의 fork)

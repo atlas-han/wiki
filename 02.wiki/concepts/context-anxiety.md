@@ -5,9 +5,9 @@ category: theory
 tags: [llm-behavior, context-window, agent]
 related: [context-resets-and-compaction, context-engineering, agent-harness-design]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-graft-code-knowledge-graph]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-claude-managed-agents-workshop-1]
 created: 2026-05-25
-updated: 2026-09-15
+updated: 2026-10-19
 ---
 
 # Context Anxiety
@@ -39,6 +39,8 @@ LLM 에이전트가 **context limit이 가까워졌다고 *느끼면*** 작업�
 ## 시사점
 
 Harness가 인코딩한 가정의 대표 사례. *Sonnet 4.5에 대해서는 옳던 것*이 *Opus 4.6에서는 dead weight*. 매 모델 출시마다 stress test해야 함 → [[agent-harness-design]].
+
+같은 예를 Managed Agents 팀 리드가 워크숍에서 하네스 정의의 첫 예로 다시 쓴다: *"whenever Sonnet 4-5 felt like you were getting to the end of the context limit, it would try to wrap up the task really quickly. So, when you're building a harness around Sonnet 4-5, you would add something like a context reset"*(02:51~03:04, [[tech-bridge-claude-managed-agents-workshop-1]]). ⚠️ ko는 context reset을 **"컨텍스트 복원"**으로 옮겨 방향이 반대로 읽힌다.
 
 ## References
 

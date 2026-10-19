@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
 related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition, tools-and-context-over-harness, linear-vs-closed-loop-harness, files-vs-database-agent-memory]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-05-25
-updated: 2026-10-16
+updated: 2026-10-19
 ---
 
 # Agent Harness Design
@@ -236,3 +236,19 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 ## 용도 특화 하네스 — 검증 전용으로 직접 짓기 (2026-10-14 · [[tech-bridge-gitar-agentic-pr-validation]])
 
 [[gitar|Gitar]]: *"We built our own harness here that handles multi- aent[=multi-agent] execution, context management, memory management, um tool calling, all the integrations"*(08:03~08:13). 이유는 *"having our own agent harness has really allowed us to optimize specifically for the validation use case. And it's allowed us to optimize for token cost, precision, and coverage of the agent itself."*(08:13~08:27)다. 같은 날 ingest되는 [[tech-bridge-codex-app-server|Codex App Server 편]]은 설명란에서 반대 방향(하네스를 밑바닥부터 만들지 말고 검증된 하네스를 쓰라)을 권한다. [[harness-as-platform]] · [[tools-and-context-over-harness]]의 build vs reuse 축 위의 두 점이다. ⚠️ 둘 다 자기 하네스를 파는 쪽이다.
+
+## 2026-10-19 — "harnesses encode assumptions"를 팀 리드가 결론으로 ([[tech-bridge-claude-managed-agents-workshop-1]])
+
+[[priyanka-phatak|Priyanka Phatak]](Claude Managed Agents 엔지니어링 팀 리드)가 워크숍의 한 줄 결론으로 말한다: *"if you take one thing home from this, it's that harnesses encode assumptions and assumptions can go stale. So, we designed interfaces to outlast these assumptions"*(10:27~10:38). [[anthropic-managed-agents]]의 문장이 발표의 **결론 자리**로 올라왔다.
+
+정의도 나눈다. **agent**는 *"a model in a loop with tools"*(02:04~02:07)이고, **harness**는 *"a layer that wraps around the model (…) making assumptions about what the model cannot do and trying to sort of fill those gaps"*(02:24~02:39)다. 2026-09-01 절의 *"하네스는 while 루프"*([[katelyn-lesse]])와 갈리지는 않는다. 다만 루프는 agent 쪽에 두고, 하네스의 정체를 **가정**에 둔다. 예는 같은 [[context-anxiety]](Sonnet 4.5 → context reset → Opus 4.5에선 불필요, 02:46~03:13)다.
+
+⚠️ ko는 이 결론을 **"이것이 바로 테스트 환경이 필요한 이유입니다"**(10:29)로 바꾼다. harness → "끈"·"테스트 환경"·"환경".
+
+## 호스팅 하네스는 하나, 사용자 하네스는 그 위에 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]] 팀이 [[claude-agent-sdk|Agent SDK]]와의 관계를 답한다: *"we've rebuilt uh the harness to be a more generic not just coding specific thing."* — *"So, it's sort of a fork?" "Uh yeah."*(26:24~26:36) *"we have our own harness that's heavily inspired by Cloud[=Claude] Code's harness, and we frequently stay stay in touch for like any enhancements across the board."*(26:48~26:58)
+
+- 사용자가 만드는 *"custom harness on top of CMA"*(05:25~05:30)는 **맞춤 도구 + 서버 쪽 오케스트레이션**으로 세션 여러 개를 띄우고 모으는 층이다(dispatch analysis, 14:26~14:35).
+
+> ⚠️ Contradiction(약): [[anthropic-managed-agents]]의 메타 하네스(*"어떤 harness가 들어올지는 비opinionated"*, Claude Code 같은 범용 하네스도 수용)와 달리, 워크숍 답변에는 **호스팅 하네스를 교체한다**는 선택지가 없다. 글 = 인터페이스 원칙, 워크숍 = 현재 제품.

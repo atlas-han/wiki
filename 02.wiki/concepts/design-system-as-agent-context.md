@@ -3,11 +3,11 @@ title: Design System as Agent Context
 type: concept
 category: pattern
 tags: [design-system, context-engineering, constraints, slop, brand]
-related: [structured-brand-context, ai-slop, atomic-design, llm-coding-guidelines, no-one-shot-design, adjective-verb-steering]
+related: [structured-brand-context, ai-slop, atomic-design, llm-coding-guidelines, no-one-shot-design, adjective-verb-steering, product-polish-patterns, codebase-gardening]
 first-seen: tech-bridge-one-designer-plus-ai
-sources: [tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-19
 ---
 
 # Design System as Agent Context
@@ -39,6 +39,16 @@ updated: 2026-09-15
 셋은 경쟁하지 않는다. **정의 → 조향 → 측정** 순서로 붙는다.
 
 > ⚠️ 어떤 항목까지 정의해야 충분한지, 정의가 과하면 무엇을 잃는지는 **소스에 없다.** 화자가 드는 항목은 타이포그래피·색상·컴포넌트·간격·폰트 크기뿐이다.
+
+## 디자인 시스템 대신 살아 있는 페이지 (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정)은 별도 문서 대신 **이미 잘 만든 페이지**를 기준으로 지정한다.
+
+> *"telling the agent explicitly to use existing pages as references. When it comes to the UI, the data fetching and how it works, and how the thing is overall structured, and that made it possible for me to essentially define what good looks like once and then just reuse it for more features."* (09:38~09:58)
+
+- 범위가 넓다: 시각(UI)만이 아니라 *"the data fetching"*·구조까지. 같은 개념(CRUD 목록)을 공유하는 화면은 *"pretty much identical"*(10:39~10:42)이어야 한다.
+- 강제력은 없다: *"Sometimes it just doesn't follow it. I don't know if models like get dumber"*(10:06~10:11). 그래도 *"my success rate is higher"*(10:13~10:16)라고 한다(⚠️ 수치 없음). → [[hard-vs-soft-enforcement]]
+- 새 문서가 아니라 **원래 있던 코드가 그대로 컨텍스트가 된다**는 점에서 [[codebase-gardening]]과 이어진다.
 
 ## References
 

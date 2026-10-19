@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure, mcp-skill-distribution]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-10-19
 ---
 
 # Model Context Protocol (MCP)
@@ -229,3 +229,7 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"there's a standard, but everybody follows a different version of that standard. Uh you know, you can tell exactly when an MCP server was built by exactly how they decided to do off[=auth]."*(13:05~13:14) 그는 이것을 *"a great uh you know, kind of archaeology lesson"*(13:18~13:20)이라 부른다. 대응은 auth를 게이트웨이에 모으고 일반 API를 MCP로 재노출하는 것이다(12:33~12:43). 바로 위 Runlayer 편에 이어 MCP gateway가 다시 나오는데, **기능(auth 주입·API → MCP 재노출·팀별 권한)이 발화된 것은 처음**이다 → [[ai-gateway]]
 
 데이터 층을 MCP와 동일시하지도 않는다: *"this is MCP for a lot of people, but in reality it's, you know, CLI or APIs or really just any way that you get data"*(06:03~06:10). ⚠️ 벤더 발표.
+
+## MCP tunnels — 인터넷에 내놓지 않는 MCP (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]]에서 사내 데이터를 MCP로 노출하는 세 경로: ① MCP + 인증 vault ② *"If you don't want to expose your MCP to the internet, we have a feature called MCP tunnels which lets you create a tunnel from your um network into ours"*(33:37~33:49) ③ 고객 네트워크에 peer한 자체 호스팅 샌드박스. 09-01([[tech-bridge-claude-platform-agent-era]])의 *"MCP 터널(방화벽 뒤 MCP 서버 접근)"*과 같은 기능. 외부 메모리 공급자도 *"you would just build an MCP or a custom tool"*(30:44~30:48).

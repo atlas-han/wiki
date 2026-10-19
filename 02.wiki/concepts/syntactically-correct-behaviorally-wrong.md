@@ -6,9 +6,9 @@ tags: [code-translation, migration, testing, verification, legacy, trust]
 aliases: [동작이 틀린 번역, 컴파일되지만 틀리다]
 related: [behavior-validated-trust, legacy-code-modernization, shift-left-security, decision-quality, verifiable-goals, generator-evaluator-pattern, risk-proportional-human-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-18
-updated: 2026-10-09
+updated: 2026-10-19
 ---
 
 # 문법은 맞고 동작은 틀리다
@@ -50,6 +50,10 @@ updated: 2026-10-09
 ## 표시해 둔 것
 
 > ⚠️ **사례·빈도·수치가 없다.** 어떤 종류의 동작 차이가 흔한지(경계 조건? 정밀도? 예외 처리?) 소스는 말하지 않는다. *"의도는 유지된다"*(04:56)와 이 한계의 긴장을 화자가 해소하지 않는다.
+
+## UI 쪽 판본 — "build pass, test pass, all good, right?" (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정): 에이전트는 *"Okay, I implemented the feature, build pass, test pass, all good, right?"*라고 하지만 *"when you actually try out what happens, you sometimes end up with just like a very broken experience."*(11:53~12:08) 마이그레이션이 아닌 **새 기능 개발**에서, 컴파일·테스트 통과와 실제 동작의 차이를 같은 말로 기록한다. 처방은 실제 인프라에서 end-to-end로 써 보게 하는 검증 루프다. → [[agent-verification-skill]]
 
 ## References
 

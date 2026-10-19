@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comments, paved-path]
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
-related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon]
+related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon, product-polish-patterns]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-26
-updated: 2026-10-16
+updated: 2026-10-19
 ---
 
 # 코드베이스 정원 가꾸기
@@ -115,3 +115,11 @@ updated: 2026-10-16
 ## 진흙은 진흙을 키운다 (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]])
 
 *"An agent can operate with much more effectively inside a code base that has structure, patterns, clear boundaries, and rationale. But if the system is already a big ball of mud, the agent does not rescue you from the mud. It just builds the ball bigger, faster."*(03:41~03:54) [[gabriel-martinez|Gabriel Martinez]]의 말로, "코드베이스는 에이전트의 기억"과 같은 기제를 다른 화자가 증언한 것이다. 근거가 되는 비용 서술: *"any line of code you write is a liability"*(02:55~02:56), Dijkstra의 *"lines spent"*(04:03~04:08, 화자 인용).
+
+## 같은 성질의 좋은 쪽 — 추상화가 있으면 패턴을 따른다 (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정, [[railway|Railway]])은 *"tech stacks don't matter"*를 반쯤만 받는다(*"while I agree to some extent"* 02:40~02:42). 스택보다 중요한 것은 추상화다.
+
+> *"when you give the agent a proper code base with solid abstractions, (…) you end up with a much more consistent result that is similar to what you've already built before. (…) The agent doesn't need to reinvent the same like wheel every time it tries to add a new feature or it doesn't need to introduce new patterns. It will just essentially follow existing patterns."* (02:48~03:18)
+
+이 페이지의 전제(*코드베이스는 기억이다*, *안티패턴은 바이러스처럼 퍼진다*)를 **좋은 패턴 쪽**에서 쓴 것이다. 그는 이 성질을 의도적으로 겨냥해 *"use existing pages as references"*(09:38~09:43)라고 지시한다. 한계도 인정한다: *"Sometimes it just doesn't follow it."*(10:06~10:08) → [[design-system-as-agent-context]] · [[product-polish-patterns]]

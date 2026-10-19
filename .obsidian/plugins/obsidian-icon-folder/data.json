@@ -1110,5 +1110,13 @@
   "02.wiki/entities/jetashree-ravi.md": "LiUser",
   "02.wiki/entities/hrishi-olickel.md": "LiUser",
   "02.wiki/entities/fireworks-ai.md": "LiBuilding",
-  "02.wiki/entities/lee-robinson.md": "LiUser"
+  "02.wiki/entities/lee-robinson.md": "LiUser",
+  "02.wiki/concepts/product-polish-patterns.md": "LiPuzzle",
+  "02.wiki/sources/tech-bridge-claude-managed-agents-workshop-1.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-claude-managed-agents-workshop-2.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-railway-polished-internal-tools.md": "LiVideo",
+  "02.wiki/entities/railway.md": "LiBuilding",
+  "02.wiki/entities/mahmoud-abdelwahab.md": "LiUser",
+  "02.wiki/entities/priyanka-phatak.md": "LiUser",
+  "02.wiki/entities/gabe-cemaj.md": "LiUser"
 }

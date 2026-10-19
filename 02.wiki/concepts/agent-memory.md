@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-09-08
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Agent Memory
@@ -221,3 +221,13 @@ updated: 2026-10-18
 - LangChain의 working vs long-term, Oracle의 세 수명과 같은 축이다. scratchpad = 단기·working, dated logs = 일화, core facts = semantic에 가깝다(⚠️ 위키의 대응이고, 화자는 그 분류를 쓰지 않는다).
 - 전망: *"the models are going to get better and better about how they recall on past information (…) Maybe it's a graph, maybe it's files, maybe something else."*(39:03~39:20)
 - ⚠️ ko는 memory를 **"추모"**(32:54)·"회고록"(11:09)으로, dated logs를 **"오래된 기록"**(33:59)으로 옮긴다.
+
+## 호스팅 메모리 스토어 — 공유·다중 부착·반출 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]] 워크숍. *"long-running memory store that can be shared across sessions"*(16:35~16:39).
+
+- **공유**: 여러 세션이 금융 상품별로 배운 것을 나눈다(16:41~16:48). 리서치 에이전트는 먼저 메모리를 확인하고(*"check if you've already done analysis previously"* 19:23~19:27), 끝에 회사별 노트를 쓴다.
+- **다중 부착**: *"we do allow for attaching multiple memory stores. So you can imagine having a user level memory store and then having some sort of org wide memory store and then you bring both to each session"*(30:53~31:03). → [[multiplayer-agent-context]]
+- **반출**: *"all of this is API based, so you you can extract the memories and put them in different systems"*(30:32~30:38). 외부 메모리 공급자는 세션에 기본 지원하지 않고 MCP·맞춤 도구로 붙인다(30:40~30:48).
+- 정리는 [[agent-dreaming]](메모리 스토어 전용).
+- ⚠️ 당사자 설명. 스토어의 구조(파일·키값)·크기·동시 쓰기 처리는 이 편에 없다(→ [[production-memory-guardrails]]의 10-01 서술).

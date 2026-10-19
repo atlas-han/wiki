@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
-related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification]
+related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-10-19
 ---
 
 # 검증 스킬
@@ -84,3 +84,14 @@ updated: 2026-10-09
 - **CLI의 이유가 하나 더** — 09-25의 *재현 가능성* 에 더해, *"extract out the deterministic parts and turn that into code and just leave only the parts that actually require judgment"*(03:48~03:56). → [[build-a-lever]]
 - **바깥 루프의 재료** — 검증 스킬은 Slack 제보를 받아 **main에서 재현**하고 사용자 설정·데이터·의존성 문제를 걸러 내는 데 재사용된다(07:20~07:56). → [[grokbot]]
 - 해설의 정의(ko 02:05~02:17): *"검증은 테스트가 통과했다는 보고서를 받는 일에서 끝나지 않습니다. 실제 앱을 열고 사용자가 누르는 버튼을 눌러보고 화면과 실행 기록을 확인하는 과정까지 포함합니다."* (내레이터의 말)
+
+## 두 번째 실무자의 같은 순위 — "the most important step" (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
+
+[[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정, [[railway|Railway]])이 사내 도구 원칙의 마지막이자 가장 중요한 단계로 검증을 꼽는다. [[lauren-tan|Lauren Tan]]의 *"the single most important skill (…) is verification"*과 같은 순위다.
+
+> *"the final step and I think this is the most important step is verification. So, the agents typically, whenever you ask it to build something, it's going to be like, 'Okay, I implemented the feature, build pass, test pass, all good, right?' But what I found is when you actually try out what happens, you sometimes end up with just like a very broken experience."* (11:47~12:08)
+> *"once you have like a verification loop in place, it's like a night and day difference (…) 'Okay, I built this thing. I tried it. It failed. I'm going to fix it.'"* (12:08~12:21)
+
+- **돌파 원인 = computer use**: *"I felt this breakthrough with computer use once it got really, really good."*(12:25~12:30) ⚠️ ko는 *"컴퓨터를 한 번 사용하면서"*로 능력 이름을 잃는다.
+- **형식은 스킬이 아니라 한 문장 지시**: *"you should verify that the feature works end to end and use it by actually running infrastructure"*(12:36~12:42), *"You just have to tell them."*(12:46~12:49). Tan은 검증을 스킬(CLI + feature map)로 만들었다. 이 화자는 매 기능 끝에 지시를 붙인다. 검증의 스펙트럼에서 가장 가벼운 쪽이다.
+- 다듬어짐(polish)은 검증이 아니라 사전 요청 목록([[product-polish-patterns]])으로 다룬다. 검증은 *"broken experience"*를 잡는 층이다.

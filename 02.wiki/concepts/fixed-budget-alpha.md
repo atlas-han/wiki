@@ -6,9 +6,9 @@ tags: [evaluation, benchmark, token-budget, test-time-compute, methodology, toke
 aliases: [예산을 고정하고 비교하라, 역할의 알파]
 related: [token-roles, true-cost-to-perfect-answer, all-or-nothing-accuracy, strategy-primitives, generator-evaluator-pattern, skill-evals, model-mixing-economics, pareto-surfing]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2]
 created: 2026-09-18
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # 예산 고정 알파
@@ -57,6 +57,10 @@ updated: 2026-10-18
 ## 예산 고정이 실험의 안전장치로 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 [[hrishi-olickel|Hrishi Olickel]]은 자기 최적화의 조건 둘째로 *"some way to bound your experiments. You can't test unless you can control cost, time, and access as resources."*(17:18~17:25)를 든다. 하네스에 *"budget enforcement"*(17:03)가 들어 있고, hill climber는 *"vary budgets to limit cost exposure"*(10:20~10:23)한다. 오하이오 작업은 *"$795 on an $800 budget that was set ahead of time"*(12:19~12:25)이었다(⚠️ 자기 보고). 이 페이지의 고정 예산이 **비교의 공정성**을 위한 것이었다면, 여기서는 **에이전트가 스스로 실험하게 두기 위한 상한**이다. → [[pareto-surfing]]
+
+## 호스팅 메타 하네스에는 아직 예산 상한이 없다 (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
+
+[[managed-agents|Claude Managed Agents]] 팀: *"we are exploring the idea of what it means to do like budget tighter budget controls so you can say use no more than this amount of money per session, use no more than this amount of tokens per session. Um but that's not something we offer today."*(27:33~27:44) 반복·토큰 폭주는 *"some of that we leave up to you to orchestrate"*(27:17~27:19). 같은 회사의 발표([[tech-bridge-tokens-should-have-jobs]])가 예산 고정을 실험 설계의 전제로 삼은 것과, [[southbridge|Southbridge]] Hank Weave가 *"budget enforcement"*를 하네스 기본 기능으로 든 것([[tech-bridge-just-in-time-ontology]])에 비해, 제품에는 그 층이 아직 없다. ⚠️ ko는 이 문장을 **"이 금액보다 더 많은 돈을 사용하세요"**(27:38)로 뒤집는다.
 
 ## References
 
