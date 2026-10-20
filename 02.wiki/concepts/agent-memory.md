@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-08
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # Agent Memory
@@ -231,3 +231,7 @@ updated: 2026-10-19
 - **반출**: *"all of this is API based, so you you can extract the memories and put them in different systems"*(30:32~30:38). 외부 메모리 공급자는 세션에 기본 지원하지 않고 MCP·맞춤 도구로 붙인다(30:40~30:48).
 - 정리는 [[agent-dreaming]](메모리 스토어 전용).
 - ⚠️ 당사자 설명. 스토어의 구조(파일·키값)·크기·동시 쓰기 처리는 이 편에 없다(→ [[production-memory-guardrails]]의 10-01 서술).
+
+## 자기 메모가 오염원이 된다 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+[[martin-keen|Martin Keen]]([[ibm|IBM Technology]])의 예시에서 에이전트는 드라이버 문서를 대충 읽고 *"the new driver retries failed connections automatically, so the old retry code can be deleted"*(03:41~03:50)라는 메모를 남긴다. 이것이 poisoning이다: *"A mistake gets into this context window somewhere, and then gets treated as fact because to the AI model, its own notes, they look like the ground truth."*(04:58~05:13) 나중에 정정을 덧붙이면 틀린 메모와 공존하는 clash가 된다(07:02~07:22). 처방은 쓰기 전 검증(validate)과, 대체된 버전 삭제(prune, 09:10~09:16)다. 세션 안의 working memory 판본이고, 장기 메모리 쓰기 게이트 논의와 같은 방향이다. → [[context-failure-modes]] · [[no-silent-write]]

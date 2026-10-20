@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
-related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection]
+related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection, three-level-agent-review]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review]
 created: 2026-09-13
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # 검증 비용의 비대칭
@@ -73,3 +73,7 @@ updated: 2026-10-18
 ## ⚠️ 검증이 실행의 4배였는데도 성립한 사례 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 > ⚠️ Contradiction(약): [[hrishi-olickel|Hrishi Olickel]]의 오하이오 entity resolution에서 *"Checking cost about four times as much as doing, 545 on second opinions, settling disagreements, and the audit against 128 for first answers."*(12:26~12:36) 그래도 작업 전체는 예상 약 $10,000 대비 $795로 끝났다(⚠️ 자기 보고). 이 페이지의 축(*"검증이 실행보다 싼 작업이어야 경제적으로 성립한다"*)과 갈린다. 층이 다르다. Piras는 결과 하나의 검증 단가를 말하고, 여기의 checking은 second opinion·불일치 해소·감사를 합친 **파이프라인 단계 총액**이다. 첫 답을 [[jev|Jev]] 같은 싼 결정 모델이 냈기 때문에 검증이 4배여도 전체가 쌌다. 검증을 어디에 몰아줄지는 [[cross-model-prior-intersection]](불일치에만)이 정한다.
+
+## 판단할 재료가 없는 사례 — 검토 비용만 보고된다 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)은 검토 비용을 분·토큰으로만 말한다: 회계 Level 2 *"about 20 minutes and cost 7.5 million tokens"*(08:47~08:50), 요구서 cold review *"15 minutes and cost 13 million tokens"*(10:48~10:51), 메모리 누수 cold review 둘 *"about 15 minutes, and together cost about 6 million tokens"*(06:48~06:52). Level 1의 *"19 minutes and about 16 million tokens"*(05:29~05:32)는 작업+검토 합계다. **작업 자체의 비용이 따로 없어** 검증이 실행보다 쌌는지 판단할 수 없다. 비교 기준은 사람의 시간이다(*"minutes, not hours"* 03:48~03:50). Contradiction이 아니라 공백으로 기록한다. → [[three-level-agent-review]]

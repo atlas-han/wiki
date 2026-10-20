@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [agent-memory, storage, files, database, transactions, worktree, hybrid, harness]
 aliases: [파일 vs DB, files versus databases, 하이브리드 메모리 저장소, memory promotion, 메모리 승격]
-related: [agent-memory, agent-harness-design, file-system-agent, agent-swarm, ai-native-sdlc, agent-distributed-systems, retrieval-augmented-generation, corpus-as-filesystem-workspace, production-memory-guardrails]
+related: [agent-memory, agent-harness-design, file-system-agent, agent-swarm, ai-native-sdlc, agent-distributed-systems, retrieval-augmented-generation, corpus-as-filesystem-workspace, production-memory-guardrails, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-24
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # 파일 vs 데이터베이스 — 에이전트 메모리의 저장 계층
@@ -91,3 +91,7 @@ Oracle의 답은 **DBFS**(데이터베이스 안의 파일 시스템) — *"데�
 ## 상태는 DB, 회상은 파일 — 운영 중인 제품의 배치 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
 
 [[grokbot|GrokBot]]의 [[lee-robinson|Lee Robinson]]: 서버·VM이 잘 때 *"this state can then be persisted to uh you know a database the the conversation logs the memories the routines"*(11:06~11:12). 그러면서 모델이 쓰는 기억은 파일이다. *"you can store all of the information in files and the reason you can do that is because it's actually very easy for the models then to recall and search this information"*(08:11~08:17). 이 페이지의 하이브리드 처방과 같은 그림이다. ⚠️ 무엇이 DB에서 파일로 노출되는지(또는 반대인지)는 말하지 않는다.
+
+## 창에서 파일로 빼낸다 — compaction의 보완 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+[[martin-keen|Martin Keen]]([[ibm|IBM Technology]])은 compaction이 *"lossy"*하다고 인정한 뒤 보완으로 파일을 든다: *"consider moving as much out of the context window as possible and put them into permanent files instead. Detailed information can be retained in those files and then it can be pulled into the context window only when it's actually needed."*(08:20~08:41) 파일 vs DB의 선택은 말하지 않는다. 이 페이지의 축에서 보면 **창 ↔ 영구 저장소** 경계만 긋는 입문 판본이다. → [[context-failure-modes]] · [[context-resets-and-compaction]]

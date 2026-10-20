@@ -3,11 +3,11 @@ title: "지연 도구 컨텍스트 (Deferred Tool Context)"
 type: concept
 category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
-related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness, prompt-caching]
+related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness, prompt-caching, context-failure-modes]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-10-02
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -106,3 +106,9 @@ updated: 2026-10-18
 - [[tech-bridge-factory-software-factory]] — first-seen
 - [[toolbox-pattern]] · [[agent-skills]] · [[context-engineering]] · [[model-context-protocol]] · [[push-vs-pull-context-retrieval]] · [[software-factory]]
 - [[factory-ai]] · [[tereza-tizkova]]
+
+## 정확도 쪽 수치 하나 — 46개에서 실패, 19개에서 통과 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+[[martin-keen|Martin Keen]]([[ibm|IBM Technology]])은 도구 bloat를 *context confusion*이라 부르고 수치를 든다: *"in one benchmark, a model failed a task when it was offered 46 tools, but it then passed the very same task when it was only offered 19 tools. That is tool sprawl at work."*(06:37~06:52) Factory의 *"50% of tokens"*(벤더, 비용 쪽)와 달리 **정확도 쪽** 수치다. 처방 curate는 이 페이지의 메커니즘을 이름 없이 말한다: *"The agent doesn't need 46 tools for database migration. So, just give it the handful that the job calls for and then it can always go and fetch others if it actually needs them."*(08:50~09:02) → [[context-failure-modes]]
+
+⚠️ 벤치마크·모델 이름은 발화되지 않는다. 통합자 확인으로는 Drew Breunig의 *"How Long Contexts Fail"*(2025-06)이 같은 46 vs 19 사례(GeoEngine 벤치마크, 양자화한 Llama 3.1 8B)를 인용한다. 소형 양자화 모델 하나의 단일 과제라면 일반화 범위는 좁다. 화자가 이 사례를 가리킨 것인지는 확인되지 않았다.

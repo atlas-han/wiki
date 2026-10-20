@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
-related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns]
+related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review]
 created: 2026-09-13
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # 검증 스킬
@@ -95,3 +95,7 @@ updated: 2026-10-19
 - **돌파 원인 = computer use**: *"I felt this breakthrough with computer use once it got really, really good."*(12:25~12:30) ⚠️ ko는 *"컴퓨터를 한 번 사용하면서"*로 능력 이름을 잃는다.
 - **형식은 스킬이 아니라 한 문장 지시**: *"you should verify that the feature works end to end and use it by actually running infrastructure"*(12:36~12:42), *"You just have to tell them."*(12:46~12:49). Tan은 검증을 스킬(CLI + feature map)로 만들었다. 이 화자는 매 기능 끝에 지시를 붙인다. 검증의 스펙트럼에서 가장 가벼운 쪽이다.
 - 다듬어짐(polish)은 검증이 아니라 사전 요청 목록([[product-polish-patterns]])으로 다룬다. 검증은 *"broken experience"*를 잡는 층이다.
+
+## 코드 밖의 산출물로 — 완료 · 사실 · 추론 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)도 검증을 **스킬**로 만든다(*"I built each level as an agent skill"* 01:12, *"I've packaged the three review levels as agent skills, and I've released them as open source"* 11:35~11:39). Tan·Railway의 검증이 *앱을 실제로 띄워 써 보는 것*이었다면, 이 화자의 대상은 **코드가 아닌 산출물**(스캔 명세서에서 뽑은 거래 기록, 법적 요구서)까지 포함하고, 검증 대상을 **완료 여부 · 사실 · 추론** 셋으로 나눈다. → [[three-level-agent-review]]. ⚠️ 공개 저장소(설명란 `captivus/agent-review`)의 구성은 확인하지 않았다.

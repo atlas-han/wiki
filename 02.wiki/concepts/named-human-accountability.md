@@ -6,9 +6,9 @@ tags: [accountability, attribution, wiki, governance, audit, authorship]
 aliases: [사람 이름 규칙, human-backed changes]
 related: [no-silent-write, company-brain, behavior-validated-trust, agent-action-record, decision-quality, agentic-misbehavior]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security]
+sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review]
 created: 2026-09-10
-updated: 2026-09-10
+updated: 2026-10-20
 ---
 
 # 모든 변경에 사람의 이름
@@ -51,3 +51,7 @@ updated: 2026-09-10
 
 - [[tech-bridge-company-brain-security]] (first-seen) · [[tanmai-gopal]]
 - 관련: [[no-silent-write]] · [[behavior-validated-trust]] · [[agent-action-record]] · [[company-brain]]
+
+## 2026-10-20 — 검토자 자리에서 빠지는 사람 ([[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 *"not by me"*(12:03)는 검토를 에이전트에게 넘긴다. 그러나 법적 요구서를 보낼지 결정한 사람이 누구인지는 발화되지 않는다(*"Our litigator's verdict, though, was do not send the letter."* 10:44~10:46의 litigator는 persona 에이전트다). 이 페이지의 축(이름 붙은 사람의 귀속)에서 보면 **검토와 귀속이 분리될 수 있는가**라는 질문을 남긴다. → [[risk-proportional-human-review]] · [[three-level-agent-review]]

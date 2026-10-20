@@ -6,9 +6,9 @@ tags: [testing, trust, evidence, observability, authorship]
 aliases: [행동 검증, 작성자 신뢰, evidence not authorship]
 related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability, agent-change-evidence]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-prompt-to-production]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-prompt-to-production, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-09
-updated: 2026-10-09
+updated: 2026-10-20
 ---
 
 # 행동 검증 기반 신뢰
@@ -116,3 +116,7 @@ updated: 2026-10-09
 | 증거 | 테스트 스택 | 실제 조건의 결과 | 원본과의 동등성 | **테스트·검증 + 영향 분석 + 설명** |
 
 이번 판이 더하는 것: 증거가 **행동의 올바름**을 넘어 **영향(downstream)과 목적 달성**까지 묻는다 — *"I care that the right 1,000 lines changed"*(05:24~05:27). → [[agent-change-evidence]]. ⚠️ 위 *"그리고 검증자가 작성자일 때"* 문제가 그대로 남는다 — 증거를 내는 것이 **변경을 만든 AI 자신**이다.
+
+## 같은 계열이 다섯 번째로 — 검증을 컨텍스트에 쓰기 전에 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+[[martin-keen|Martin Keen]]([[ibm|IBM Technology]])의 poisoning 처방은 같은 원리를 **에이전트가 자기 컨텍스트에 쓰는 결론**에 적용한다: *"Before a conclusion gets written down into this context window, check it against something real. So, one quick connection test and our agent would never have written this no retry code note."*(07:39~07:53) 오염의 원인은 *"its own notes, they look like the ground truth"*(05:08~05:13)다. 검증을 출력 쪽이 아니라 **기억에 쓰기 전**에 둔다는 점이 이전 IBM 편들과 다르다. ⚠️ 가상의 예시이고 효과 측정은 없다. → [[context-failure-modes]] · [[no-silent-write]]

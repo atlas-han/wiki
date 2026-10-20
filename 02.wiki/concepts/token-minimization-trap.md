@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [token-economics, context-engineering, cost, rework, architecture-context, anti-pattern]
 aliases: [토큰 최소화, token minimization, 비용 이동, costs don't disappear they just move, 컨텍스트 과잉 절감]
-related: [value-maxing, context-engineering, true-cost-to-perfect-answer, trusted-throughput, overspending-underusing-loop, agent-tool-design-practices, system-level-quality, agent-knowledge-sourcing]
+related: [value-maxing, context-engineering, true-cost-to-perfect-answer, trusted-throughput, overspending-underusing-loop, agent-tool-design-practices, system-level-quality, agent-knowledge-sourcing, context-failure-modes]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-24
-updated: 2026-10-16
+updated: 2026-10-20
 ---
 
 # 토큰 최소화의 함정
@@ -58,3 +58,7 @@ updated: 2026-10-16
 
 - [[tech-bridge-tokenmaxxing-to-valuemaxxing]] · [[value-maxing]] · [[ibm]]
 - [[true-cost-to-perfect-answer]] · [[context-engineering]] · [[trusted-throughput]] · [[overspending-underusing-loop]] · [[agent-tool-design-practices]] · [[system-level-quality]] · [[syntactically-correct-behaviorally-wrong]] · [[agent-knowledge-sourcing]] · [[tech-bridge-agent-knowledge-four-ways]]
+
+## 같은 계열의 "모든 처방은 버린다" — 긴장 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+같은 IBM 계열의 다음 컨텍스트 편([[martin-keen|Martin Keen]])은 *"all four fixes work by throwing something away"*(09:46~09:54)를 결론으로 삼는다(→ [[context-failure-modes]]). 위키 판독으로는 두 편이 모순되지 않는다. 그 편이 버리라는 것은 틀린 결론 · 대체된 버전 · 안 쓰는 도구 · 요약 가능한 이력이고, 과제 프롬프트(*"a few lines near the front"* 03:23~03:28)는 건드리지 않는다. 이 페이지가 경고한 것은 비용 때문에 **작업 설명 · 도메인 제약 · 아키텍처 컨텍스트**까지 지우는 것이다. 다만 그 편은 **무엇을 버리면 안 되는지**를 말하지 않는다. 그리고 compact의 표류(*"a summary of a summary can start to drift"* 08:15~08:23)를 스스로 인정한다 — 버리는 처방이 이 페이지의 실패로 넘어가는 경계다. 이 페이지의 "남은 공백"(어디까지 줄여도 되나)은 여전히 열려 있다.

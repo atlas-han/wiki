@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-08
-updated: 2026-10-17
+updated: 2026-10-20
 ---
 
 # IBM
@@ -216,3 +216,9 @@ updated: 2026-10-17
 ## 열한 번째 소스 — 같은 화자가 두 번째로, 소속 표기는 바뀌었다 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
 
 설명란 링크(`ibm.biz` ×2, @IBMTechnology · @IBM · @IBMDeveloperAdvocates)로 **IBM Technology 판정**을 유지한다. 화자 [[cedric-clyburn|Cedric Clyburn]]의 두 번째 IBM 편이다(첫 소스 09-16 ingest). 이번 설명란은 그를 *"IBM Technology의"* 로 소개해, 09-15의 *"Red Hat 수석 개발자 애드보킷"* 과 다르다. 내용은 입문 해설이다 — 구현 → 지휘, SDD, 컨텍스트·루프 엔지니어링, LLM 기초(KV 캐시), 프롬프트 인젝션 → 일회용 샌드박스, "AI는 새로운 전기". 측정은 없다.
+
+## 열두 번째 소스 — 컨텍스트의 네 가지 실패, 새 화자 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+설명란 본문 *"IBM Technology의 Martin Keen이 …"*, `ibm.biz` 링크 둘(설명 문구 없음, 열어 보지 않음), @IBMTechnology · @IBM · @IBMDeveloperAdvocates 링크로 **IBM Technology 판정**을 유지한다. 해시태그에는 IBM이 없다. 화자는 이 위키에 처음 나오는 [[martin-keen|Martin Keen]]이고, 이름은 설명란 본문에만 있다(자막에는 자기소개·IBM·제품 언급이 없다). 벤더 색은 약하다 — 처방 넷은 모두 일반 기법이다.
+
+내용은 IBM 계열의 세 번째 컨텍스트 편이다(09-08 지식 조달, 09-23 토큰 최소화에 이어). 긴 실행에서 창이 망가지는 네 방식(poisoning · distraction · confusion · clash)과 처방(validate · compact · curate · prune) → [[context-failure-modes]]. poisoning 처방 *"check it against something real"*(07:43~07:46)은 이 페이지가 기록해 온 *"생성이 아니라 검증된 행동을 믿는다"*([[behavior-validated-trust]])를 **컨텍스트 쓰기**에 적용한 다섯 번째 반복이다. ⚠️ 수치 둘(18개 모델 연구, 46 vs 19 도구)은 출처 미발화. 녹화 시점 단서 없음.

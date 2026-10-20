@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review]
 created: 2026-09-13
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # 검증 병목
@@ -243,3 +243,7 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 ## 검증에 매긴 가격 — 첫 답의 약 4배 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 [[tech-bridge-g2i-generation-cheap-evaluation-expensive|G2i]]의 *"Generation is cheap, but evaluation is expensive"*에 데이터 파이프라인 쪽 **비율**이 붙는다: 검증 $545 vs 첫 답 $128(12:26~12:36, ⚠️ 자기 보고). 화자는 이것을 병목이 아니라 **예산 항목**으로 다룬다. 미리 정한 $800 안에서 second opinion·불일치 해소·감사를 돌렸고, *"now that the pipeline is built and verified, we expect the audit budget for the next state to be close to zero."*(12:40~12:45, ⚠️ 예측) 검증을 줄이는 길은 리뷰 자동화(Gitar)나 리뷰 면 축소(G2i)가 아니라 **한 번 검증한 파이프라인의 재사용**이다. → [[just-in-time-ontology]] · [[cross-model-prior-intersection]]
+
+## "사람이 덜 읽게"가 아니라 "사람이 안 읽게" (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*): *"In these cases, each review took minutes, not hours, and the agents do the checking, not me. At the scale we operate, checking it myself isn't an option."*(03:48~03:57) 첫 회계 에이전트가 *"I recommend spot checking a few of these transactions"*라고 돌려준 것을 *"This put the burden of reviewing the agent's work back on us, which is a non-starter."*(07:14~07:26)라 부른다. 병목의 답을 리뷰 면 축소가 아니라 **검토 주체 교체**(세 단계 에이전트 검토)로 둔다. ⚠️ 사람이 놓친 오류와 비교한 데이터는 없다. → [[three-level-agent-review]]

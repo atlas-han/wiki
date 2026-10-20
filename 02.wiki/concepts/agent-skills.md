@@ -3,11 +3,11 @@ title: Agent Skills
 type: concept
 category: pattern
 tags: [skills, harness, governance, mcp, workflow]
-related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation, product-polish-patterns]
+related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-railway-polished-internal-tools]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review]
 created: 2026-08-31
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # Agent Skills
@@ -367,3 +367,7 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 - 사내 도구에 쓴 스킬 셋: 디자인 엔지니어링 둘(UI·타이포그래피·레이아웃·오류 메시지 / 애니메이션, ⚠️ 이름 미발화)과 *"the Railway agent skills, of course"*(11:18~11:21).
 - 벤더 스킬: *"for the agent to effectively work with Railway and be able to deploy everything, we just give it the AI agent skills and it was just able to do it."*(11:32~11:42) 2026-09-23 절(Google Skills)에 이어 **배포 플랫폼 회사**가 자사 지식을 스킬로 낸 사례다. ⚠️ 자사 직원의 자사 제품 언급이고, 검토·버전 고정·인젝션 표면은 말하지 않는다.
 - 10-10 절의 *"skills is just a band-aid"* 반론과 관련해, 이 화자는 컨텍스트 비용을 말하지 않는다.
+
+## 2026-10-20 — 검토 방법론을 스킬로, "Point your agent at the write-up" ([[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)은 세 검토 단계를 각각 agent skill로 만들어(*"I built each level as an agent skill"* 01:12) 오픈소스로 공개했다고 말한다(*"I've packaged the three review levels as agent skills, and I've released them as open source. The write-up is at gallon.me."* 11:35~11:43). 배포 방식이 특이하다 — 저장소 설치가 아니라 *"Point your agent at the write-up, and it will know how to check its own work using this review method"*(11:43~11:48), 곧 **글 자체를 스킬 입력으로** 쓰라고 한다. Railway 편의 "의견은 스킬로"와 같은 계열이고, 대상이 **검토 절차**라는 점이 다르다. ⚠️ 저장소(설명란 `captivus/agent-review`)의 구성은 확인하지 않았다. → [[three-level-agent-review]] · [[agent-verification-skill]]

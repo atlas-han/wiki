@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [model-priors, silent-data-errors, correlated-errors, model-diversity, verification, ensemble, data-engineering, human-in-the-loop]
 aliases: [cross-model prior intersection, prior intersection, 모델 prior, 모델의 사전 가정, 조용한 데이터 오류, silent data errors, LLMs as a species]
-related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop]
+related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop, three-level-agent-review]
 first-seen: tech-bridge-just-in-time-ontology
-sources: [tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review]
 created: 2026-10-18
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # 교차 모델 prior 교집합 (Cross-Model Prior Intersection)
@@ -56,3 +56,7 @@ updated: 2026-10-18
 - [[tech-bridge-just-in-time-ontology]] — first-seen
 - [[hrishi-olickel]] · [[jev]]
 - 관련: [[just-in-time-ontology]] · [[generator-evaluator-pattern]] · [[cross-lab-peer-review]] · [[model-calibration]] · [[verification-cost-asymmetry]] · [[ai-slop]]
+
+## 같은 지시의 두 에이전트 + 원문 control total은 충분한가 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+> ⚠️ Contradiction(긴장): [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 Level 2는 **같은 지시**를 받은 에이전트 둘이다(*"two agents get an identical set of instructions"* 02:15~02:17, *"two more agents, tasked identically"* 08:12~08:15). 모델 다양성은 발화되지 않는다. 성공의 증거도 *"the whole year balanced to the penny"*(08:43~08:45)다. 이 페이지는 여러 모델이 같은 오류를 *"validated"*하고 1센트까지 같은 합계를 내도 공통 prior는 남는다고 했다. 화자의 방어는 합계를 **모델끼리가 아니라 원문과** 맞춘다는 것이다: *"we use the balance printed on the statements as the control total for each month"*(07:50~07:55), 차이는 *"against the statements themselves"*(08:09~08:11)로 정리한다. 남는 구멍: 월 잔액은 같은 달 안의 분류·설명 오류를 잡지 못하고, 두 에이전트가 같은 prior로 같은 오독을 하면 대조자에게 차이로 보이지 않는다. 화자는 56개 차이를 잡았다고 하지만(08:37~08:42) 함께 틀린 것에 대해서는 말하지 않는다. 해소하지 않는다. → [[three-level-agent-review]]

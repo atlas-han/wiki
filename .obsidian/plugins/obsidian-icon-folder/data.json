@@ -1118,5 +1118,11 @@
   "02.wiki/entities/railway.md": "LiBuilding",
   "02.wiki/entities/mahmoud-abdelwahab.md": "LiUser",
   "02.wiki/entities/priyanka-phatak.md": "LiUser",
-  "02.wiki/entities/gabe-cemaj.md": "LiUser"
+  "02.wiki/entities/gabe-cemaj.md": "LiUser",
+  "02.wiki/sources/tech-bridge-context-engineering-four-failure-modes.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-three-level-agent-review.md": "LiVideo",
+  "02.wiki/entities/martin-keen.md": "LiUser",
+  "02.wiki/entities/corey-gallon.md": "LiUser",
+  "02.wiki/concepts/context-failure-modes.md": "LiPuzzle",
+  "02.wiki/concepts/three-level-agent-review.md": "LiPuzzle"
 }

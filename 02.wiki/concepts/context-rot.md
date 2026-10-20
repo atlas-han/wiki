@@ -3,12 +3,12 @@ title: 컨텍스트 부패 (Context Rot)
 type: concept
 category: theory
 tags: [context-window, attention, long-context, degradation, context-engineering]
-aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation, 맥락 왜곡]
-related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory]
+aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation]
+related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-24
-updated: 2026-10-17
+updated: 2026-10-20
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -72,3 +72,11 @@ updated: 2026-10-17
 ## 비용 쪽에서 본 같은 현상 — 아무도 컨텍스트를 비우지 않는다 (2026-10-17 · [[tech-bridge-tailscale-aperture-ai-without-lock-in]])
 
 AI gateway 사용량을 보는 [[remy-guercio|Remy Guercio]]([[tailscale|Tailscale]]): *"You would not believe the number of sessions that are hundreds or thousands of messages long where nobody clears the context. They just kind of keep going."*(02:17~02:26) *"tens of millions of tokens of a session uh where it's the cache is basically maxed out maxed out the entire time."*(02:32~02:39) 품질 저하가 아니라 **낭비**로 본 증언이다. 화자는 토큰맥싱이 *"wasted tokens by default"*(02:07~02:12)를 부추긴다고 본다. ⚠️ 일화이고 분모·비율은 없다. ko는 *"tens of millions of tokens"* 를 **"수천만 명"** 으로 옮긴다.
+
+## 이름 없는 "18개 모델" 연구와 attention budget (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+[[martin-keen|Martin Keen]]([[ibm|IBM Technology]], ⚠️ 이름은 설명란에만)은 이 현상에 처음으로 **연구**를 근거로 붙인다: *"a recent study looked at 18 frontier models and it turned out that they all got less reliable as the context window got bigger. Researchers have taken to giving this thing a name and that is context rot."*(00:36~00:50) 메커니즘은 n² 비용(Oracle 편 ②)이 아니라 **① 희석** 쪽이다: *"Every token in the window is competing for a finite amount of attention. Essentially, an attention budget."*(04:07~04:20) *"The window might hold a million tokens, but the attention spread across those tokens is finite."*(04:20~04:31) 이 화자는 context rot을 배경으로 두고, 긴 실행에서 창이 망가지는 네 방식을 따로 분류한다 → [[context-failure-modes]].
+
+⚠️ 연구 이름은 발화되지 않는다. 통합자가 확인한 바로는 Chroma의 *"Context Rot: How Increasing Input Tokens Impacts LLM Performance"*(2025-07-14)가 18개 LLM을 평가했다. 화자가 이 보고서를 인용한 것인지는 확인되지 않았으므로 위 "⚠️ 미해결"의 **정량** 항목은 닫지 않는다. 다만 다음 회차에서 그 보고서를 직접 ingest하면 닫을 수 있는 후보다.
+
+> **용어 정리 — "맥락 왜곡"을 aliases에서 뺐다 (2026-10-20).** 이 alias는 Oracle 편 ko가 *rot*을 "맥락 왜곡"으로 옮긴 것(위 도입부)에서 왔다. 그런데 이 영상의 ko는 같은 말을 *context poisoning*의 역어로 쓴다(04:38). 두 경우 모두 기계 번역의 산물이고 서로 다른 개념을 가리키므로, 검색 alias로 두면 poisoning을 찾는 사람이 이 페이지로 오게 된다. 이 위키의 정식 역어는 rot = "컨텍스트 부패"·"문맥 부패", poisoning = "컨텍스트 오염"([[context-failure-modes]])이다.

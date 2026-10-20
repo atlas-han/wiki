@@ -3,11 +3,11 @@ title: Context Engineering
 type: concept
 category: technique
 tags: [llm, context-window, agent, prompting]
-related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails, prompt-caching]
+related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails, prompt-caching, context-failure-modes]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-05-25
-updated: 2026-10-18
+updated: 2026-10-20
 ---
 
 # Context Engineering
@@ -209,3 +209,11 @@ Managed Agents 모델에서 fetched event를 transform하는 한 가지 목적�
 [[lee-robinson|Lee Robinson]]: *"Okay, context engineering is also known as harness engineering. Like I feel like it's kind of the same thing. They've evolved over time, but basically what are some tips and tricks we can do to minimize the amount of context that's being used in these harnesses?"*(27:26~27:42) 그가 드는 기법은 prompt caching(정적 접두·섹션 해시·cache warming), 긴 출력은 파일로, 비싼 일은 서브에이전트로, *"always gardening and trimming"*(29:39~29:44), 캐시가 따뜻할 때 compaction이다. → [[prompt-caching]] · [[context-resets-and-compaction]]
 
 > ⚠️ 긴장: [[harness-engineering]]은 하네스를 context engineering보다 넓은 우산(프로세스·오케스트레이션까지)으로 기록한다. Robinson의 용례는 **컨텍스트 최소화**에 한정된다. 같은 말을 다른 넓이로 쓴다.
+
+## 2026-10-20 — 창이 망가지는 네 가지 방식 ([[tech-bridge-context-engineering-four-failure-modes]])
+
+IBM 계열의 세 번째 컨텍스트 편이다. [[martin-keen|Martin Keen]](⚠️ 이름은 설명란에만)의 정의는 **시간축**을 넣는다: *"Context engineering is deciding what actually goes into this context window at each step of an agent's run."*(01:04~01:12) 한 번 조립하고 끝나는 것이 아니라 **매 단계**의 결정이다(Oracle 편의 "매 반복마다 조립한다"와 같은 방향).
+
+실패 넷(poisoning · distraction · confusion · clash)과 처방 넷(validate · compact · curate · prune)은 → [[context-failure-modes]]. 결론은 *"all four fixes work by throwing something away"*(09:46~09:54)다.
+
+⚠️ 축을 섞지 않는다. 09-08 [[tech-bridge-agent-knowledge-four-ways]]의 *쏟아붓기의 세 가지 실패 양상*은 **지식 조달** 축(무엇을 가져와 넣을까)이고, 이번 넷은 **창 위생** 축(한 실행 안에서 창이 어떻게 망가지나)이다. 09-23 [[token-minimization-trap]]은 반대로 **잘라내기**의 실패다. 세 분류의 대조표는 [[context-failure-modes]]에 있다.

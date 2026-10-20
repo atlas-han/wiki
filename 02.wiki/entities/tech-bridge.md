@@ -134,8 +134,10 @@ sources:
   - tech-bridge-claude-managed-agents-workshop-1
   - tech-bridge-claude-managed-agents-workshop-2
   - tech-bridge-railway-polished-internal-tools
+  - tech-bridge-context-engineering-four-failure-modes
+  - tech-bridge-three-level-agent-review
 created: 2026-06-03
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # Tech Bridge
@@ -1325,11 +1327,27 @@ updated: 2026-10-19
 - ⚠️ 이름은 자막·설명란 본문 어디에도 없고 설명란 링크 slug(`thisismahmoud`, `m-abdelwahab`)에서만 *추정*. 혼자 찍은 야외 영상(에든버러), 녹화 시점 발화(*"fall 2026. It's October."*). 자사 제품(Railway 배포·스킬). 수치는 *"700 million tokens"* 하나. 제목의 명령형은 발화되지 않는다.
 - **⚠️ ko**: Railway → "철도" 전 구간, 도구가 **"GPT-6를 기반으로 작동"**(01:08, 실제는 Railway 위), *non-blocking* → "차단 기능 … 타이핑하는 동안에는 차단됩니다"(05:18), *shouldn't feel that way* → "그렇게 느껴야 마땅해요"(04:44), 지연 삭제에 없는 "2초 안에"(08:10), computer use → "컴퓨터를 한 번 사용하면서"(12:27), optimistic update → "긍정적인 소식", loading spinner → "충전 표시등", tech stacks → "기술적인 배터리"(`en` 공유). en-orig *"Asians"* = agents, *"SAS"* = SaaS, *"one tech stack"* = TanStack(⚠️ 판독).
 
+## 2026-10-19 업로드 — Martin Keen (IBM Technology), 컨텍스트 엔지니어링: AI 에이전트가 피해야 할 네 가지 실패 유형 (2026-10-20 ingest)
+
+[[tech-bridge-context-engineering-four-failure-modes|컨텍스트 엔지니어링: AI 에이전트가 피해야 할 네 가지 실패 유형]](`E8zCcv2HcbI`, 10:11, 공식 챕터 10) — [[martin-keen]] · [[ibm]] ([[context-failure-modes]] · [[context-rot]] · [[context-engineering]] · [[context-resets-and-compaction]] · [[deferred-tool-context]] · [[long-context-agents]])
+
+- IBM Technology 입문 해설. 창은 백만 토큰이 됐지만 attention budget은 유한하다(context rot). 가상의 DB 드라이버 마이그레이션 에이전트로 창의 구성(시스템 프롬프트 · 과제 · agents.md · 도구 정의 · 이력 · 도구 결과)을 그린다. 네 실패(poisoning: 틀린 자기 메모 / distraction: 긴 이력이 행동을 끌고 감 / confusion: 46 vs 19 도구 / clash: 틀린 메모와 정정 메모 공존)와 네 처방(validate · compact + 영구 파일 · curate · prune 또는 새 창). *"all four fixes work by throwing something away"*. [[long-context-agents]]와 Contradiction.
+- ⚠️ 이름은 설명란 본문에만, 자막에 IBM·제품 없음. 수치 둘(18개 모델 연구, 46 vs 19 도구)과 네 유형 이름의 출처 미발화(통합자 외부 확인: Breunig *How Long Contexts Fail*·Chroma *Context Rot*와 일치, 인용 여부 미확인). 녹화 시점 단서 없음. en-orig 공백 없음.
+- **⚠️ ko**: *curate* → "치유"·"선택하세요", *"What about distraction?"* → "혼란?"(ko 단독), *46 tools* → "46번의 임무", 토큰 → "백만 명", *holding less context* → "고객 유지율", *compaction* → "다짐", driver → "컨트롤러", *don't bother* → "화내지 마세요", *lean* → "밝혀줍니다", poisoning → "맥락 왜곡"(04:38, [[context-rot]] aliases에서 이 말을 뺐다).
+
+## 2026-10-19 업로드 — 검토 3단계 (화자 Corey Gallon, 설명란 기준), 에이전트가 하는 말을 모두 믿습니다 (2026-10-20 ingest)
+
+[[tech-bridge-three-level-agent-review|에이전트가 하는 말을 모두 믿습니다: 검토 3단계]](`sAHTVCwlDgA`, 12:09, 공식 챕터 8) — [[corey-gallon]] ([[three-level-agent-review]] · [[generator-evaluator-pattern]] · [[agent-verification-skill]] · [[cross-model-prior-intersection]] · [[risk-proportional-human-review]])
+
+- 실패 셋(부풀리기·사실·추론)에 검토 셋: 산출물 계약(artifact verified/missing, "done"만은 불가) · 원문 기준점 + 같은 지시의 독립 에이전트 둘 + 줄 단위 대조 · 자기 감사(주장 라벨 넷) → 맥락 없는 persona cold review → 새 검토자. 사례: 메모리 누수(9 GB, 거짓 셋, PR 머지), 1년 치 거래 추출(56 차이, balanced to the penny), 자동 갱신 계약 요구서(persona 변호사 둘이 독립 발견, do not send). 세 단계를 agent skill로 오픈소스.
+- ⚠️ 이름은 설명란 링크 라벨에서만(gallon.me 발화로 보강, *추정*). "10건 중 4건"은 화자 세션의 처음 발생 비율, 방법 미공개. 수치 자기 보고·비교 기준 없음. Contradiction(긴장) 둘: [[risk-proportional-human-review]]("not by me"), [[cross-model-prior-intersection]](같은 지시 이중 추출).
+- **⚠️ ko**: 4 in 10 sessions → "10명 중 4명", isn't permissible → "허용되는 답변입니다", 토큰 두 수치 → "달러", thousands of dollars → "수천 명의 공급업체", not by me → "나 때문이 아니야".
+
 ## 멤버 전용 → 공개 전환 · 대기 (2026-10-19 확인)
 
 - **공개 전환 — 위에서 ingest (2026-10-18):** `Eu4D795nMsQ`([[tech-bridge-fireworks-train-to-deploy-open-models|지능을 빌리는 건 그만 — Jetashree Ravi (Fireworks AI)]]) — 목록 `upload_date` 20261013으로 멤버 전용 기록(10-17 두 회차 모두 `subscriber_only`), 2026-10-18 회차 `availability: public` 확인(`upload_date` 20261017 = 공개 전환 값). 제목은 대기 목록의 것과 같다(앞에 `[한영자막]`).
 - **공개 전환 — 위에서 ingest (2026-10-18):** `N8gD8ebFlMI`([[tech-bridge-lee-robinson-always-on-agents|Lee Robinson 스탠퍼드 강연]]) — 10-17 확인 때 `subscriber_only`(목록 `upload_date` 20261012) → 2026-10-18 `availability: public`, `upload_date` 20261017(공개 전환 값).
 - **공개 전환 — 위에서 ingest (2026-10-17 둘째 통합):** `ks55L-DkLE8`([[tech-bridge-atlassian-build-your-own-sdlc|직접 만드는 SDLC — Andy Wong, Andrei Bocan, Shane Wolf (Atlassian)]]) — 2026-10-14 멤버 전용으로 처음 보였고 2026-10-17 `availability: public` 확인(`upload_date` 20261016).
 - **공개 전환 — 위에서 ingest:** `zAglgqN5Lhw`([[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]], 10-13 회차 `availability: public` 확인, `upload_date` 20261012 = 공개 전환 값). 10-11 대기 목록의 마지막 항목이 해소됐다.
-- **새 멤버 전용 — ingest하지 않음 (2026-10-19 확인):** `WPJoi3ezJJc`(*상위 1% 처럼 AI 쓰는 법*, 7:29, 목록 `upload_date` 20261015). 공개 전환 시 그날 ingest.
-- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18·10-19 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 공개 전환 시 그날 ingest.
+- **새 멤버 전용 — ingest하지 않음 (2026-10-19 확인):** `WPJoi3ezJJc`(*상위 1% 처럼 AI 쓰는 법*, 7:29, 목록 `upload_date` 20261015). 2026-10-20에도 멤버 전용(목록 줄로 나옴). 공개 전환 시 그날 ingest.
+- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18·10-19·10-20 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 공개 전환 시 그날 ingest.

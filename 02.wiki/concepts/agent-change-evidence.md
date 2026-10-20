@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [verification, evidence, trust, impact-analysis, agentic-coding, code-review]
 aliases: [AI는 코드만이 아니라 증거를 내야 한다, 다섯 질문, change evidence]
-related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review]
+related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review]
 first-seen: tech-bridge-prompt-to-production
-sources: [tech-bridge-prompt-to-production]
+sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-20
 ---
 
 # 변경 증거
@@ -62,3 +62,7 @@ updated: 2026-10-09
 
 - [[tech-bridge-prompt-to-production]] — 출처 (IBM Technology 계열 추정, 발표자 무명)
 - [[verification-bottleneck]] · [[behavior-validated-trust]] · [[decision-quality]] · [[agent-action-record]] · [[mergeability-gap]]
+
+## "done" 대신 종결 문구 둘 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 Level 1은 이 페이지의 요구를 **종결 문구 두 개**로 좁힌다: *"Artifact verified with a fingerprint of the file or files documenting its work, or artifact missing with the reason."*(01:47~01:52) 확인은 받는 쪽이 아니라 보낸 쪽이 한다: *"Then, the agent that sent the job runs the check itself."*(01:56~01:59) *"Saying done on its own isn't a permissible answer."*(02:01~02:03) 사례: 계측 빌드가 실패하자 하위 에이전트가 *"It reported that an artifact was missing, the software build, and that there were 25 compiler errors, and it correctly labeled the what it could deliver as partial."*(05:14~05:24) ⚠️ *"fingerprint"*가 해시인지는 말하지 않는다. → [[three-level-agent-review]]

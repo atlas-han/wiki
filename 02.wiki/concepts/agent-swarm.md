@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [parallelism, sub-agents, context-window, pstack, aggregation]
 aliases: [swarm, 겁 없는 병렬성, fearless parallelism]
-related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory]
+related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory, three-level-agent-review]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-altman-devday-dots]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-altman-devday-dots, tech-bridge-three-level-agent-review]
 created: 2026-09-14
-updated: 2026-10-09
+updated: 2026-10-20
 ---
 
 # 에이전트 스웜
@@ -105,3 +105,7 @@ DevDay 2026 대담에서 진행자가 *"if an agent solves a Navier Stokes in a 
 > ⚠️ **Contradiction: 정의 단계에서 스웜을 배제한다.** [[tereza-tizkova|Tereza Tížková]]([[factory-ai|Factory]])는 [[software-factory]]를 *"not even a swarm of coding agents even thousands of agents"*(02:25~02:29)로 정의하고, Missions의 워커를 **순차**로 돌린다 — *"they don't work in a swarm or parallel (…) if you do this you end up with more fresh context and kind of fresh head"*(12:17~12:32). 동료가 코드를 봐 주는 것에 빗댄다.
 
 다만 **각 워커는 웹 조사·파일 생성 같은 작은 일에 병렬 서브에이전트를 쓸 수 있다**(12:42~12:53). 그래서 이 페이지의 *쪼갠 문제에 여럿* 과 정면 충돌이라기보다 **층위의 선택**이다: 상위 흐름(설계 → 구현 → 검증)은 순차로 컨텍스트를 새로 하고, 하위 잡일만 병렬. ⚠️ 순차가 더 낫다는 측정은 없다 — *"we actually found"* 뿐.
+
+## 2026-10-20 — 검토용 fan-out/fan-in ([[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 회계 추출: 같은 지시의 두 에이전트가 월별로 독립 추출(fan-out) → 세 번째 에이전트가 줄 단위로 대조하고 차이를 원문으로 정리(fan-in) → 다시 두 에이전트가 최종 기록을 확인(07:56~08:18). 병렬화의 목적이 속도가 아니라 **교차 검증**인 형태다. reduce 쪽 병목은 원문 control total(월 인쇄 잔액)이 기준을 주어 완화된다. → [[three-level-agent-review]] · [[cross-model-prior-intersection]](⚠️ 긴장)

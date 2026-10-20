@@ -5,9 +5,9 @@ category: pattern
 tags: [knowledge-base, workflow, llm-tooling]
 related: [agent-harness-design, memex, code-knowledge-graph, obsidian-cli-workflow, company-brain, sweeper-agent, no-silent-write]
 first-seen: karpathy-llm-wiki-gist
-sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search]
+sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-05-25
-updated: 2026-09-10
+updated: 2026-10-20
 ---
 
 # LLM Wiki Pattern
@@ -86,3 +86,7 @@ LLM이 점진적으로 유지·확장하는 마크다운 기반 개인 지식 �
 - [[understand-anything]] · [[code-knowledge-graph]] (LLM Wiki의 그래프 대응물)
 - [[tech-bridge-company-brain-security]] — 조직 규모 인스턴스(5,000페이지·스코프·사람 승인) · [[company-brain]]
 - [[tech-bridge-agent-to-agent-as-search]] — 청소부 에이전트·영구 오염 · [[sweeper-agent]]
+
+## "영구 오염"의 세션 판본 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
+
+위 절의 *"정보 하나가 틀리면 영원히 오염된다"*([[tech-bridge-agent-to-agent-as-search]])는 공유 지식 층의 실패였다. [[martin-keen|Martin Keen]]([[ibm|IBM Technology]])은 같은 일을 **한 세션의 자기 메모**에서 보인다(context poisoning, 04:50~05:17). 처방 둘 — 쓰기 전에 *"check it against something real"*(07:39~07:46), 정정되면 *"just delete the old version rather than leaving both"*(09:10~09:16) — 은 이 위키 운영 규칙(raw 대조 후 기록, 덮어쓰기 대신 갱신·⚠️ 표시)과 같은 방향이다. 차이: 이 위키는 옛 주장을 지우지 않고 `> ⚠️ Contradiction:`으로 **남기는** 쪽을 택한다. 세션 창(attention이 유한한 곳)과 지식 베이스(감사 이력이 필요한 곳)의 요구가 다르다(위키 판독). → [[context-failure-modes]] · [[no-silent-write]]

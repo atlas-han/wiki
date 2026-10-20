@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [tools, skills, retrieval, vector-search, hnsw, context-engineering, progressive-disclosure]
 aliases: [툴박스 패턴, 스킬박스 패턴, skillbox pattern, tool retrieval, 도구 검색]
-related: [context-engineering, context-rot, agent-skills, agent-tool-design-practices, model-context-protocol, retrieval-augmented-generation, push-vs-pull-context-retrieval, build-time-vs-runtime-tools]
+related: [context-engineering, context-rot, agent-skills, agent-tool-design-practices, model-context-protocol, retrieval-augmented-generation, push-vs-pull-context-retrieval, build-time-vs-runtime-tools, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-factory-software-factory]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-factory-software-factory, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-24
-updated: 2026-10-02
+updated: 2026-10-20
 ---
 
 # 툴박스 패턴 (Toolbox Pattern)
@@ -66,3 +66,7 @@ updated: 2026-10-02
 ## 2026-10-02 — 다른 메커니즘, 같은 결론: 지연 도구 컨텍스트
 
 [[factory-ai|Factory]]의 **deferred context engine**([[tech-bridge-factory-software-factory]]) → [[deferred-tool-context]] (신규). 기업의 *"hundreds tools"* 가 컨텍스트를 채우고 비슷한 도구를 헷갈리게 한다는 같은 문제에, 벡터 검색 대신 **짧은 도구 목록 + 짧은 설명을 상시 두고 에이전트가 호출할 때 전체를 로드**한다 — *"nothing is actually removed. is just hidden and not reachable until needed"*(16:23~16:29). 툴박스는 **하네스가 매 반복 검색해 넣고 뺀다**, Factory는 **에이전트가 목록에서 고른다**. ⚠️ *"50% of tokens or more"*(16:40~16:42)는 측정 조건 없는 벤더 수치. 이 페이지의 미해결(재조립과 프롬프트 캐시)은 그쪽에서도 답하지 않는다.
+
+## 2026-10-20 — 입문 판본: curate ([[tech-bridge-context-engineering-four-failure-modes]])
+
+[[martin-keen|Martin Keen]]([[ibm|IBM Technology]])의 처방 curate(*"just give it the handful that the job calls for and then it can always go and fetch others if it actually needs them"* 08:53~09:02)는 같은 처방의 입문 판본이다. 차이는 단위다. 이 페이지의 툴박스는 **매 반복마다** 검색해 넣고 빼지만, curate는 **과제 단위**로 미리 고르고 필요할 때만 더 가져온다([[deferred-tool-context]]에 가깝다). 근거로 든 46 vs 19 도구 수치는 출처 미발화다. → [[context-failure-modes]]

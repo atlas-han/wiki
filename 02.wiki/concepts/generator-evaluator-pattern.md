@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection, three-level-agent-review]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-three-level-agent-review]
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # Generator–Evaluator Pattern
@@ -322,3 +322,9 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 - 채점자: 본 에이전트가 끝났다고 판단할 때 부르는 **하위 에이전트**. *"analyzed all the work that was done in the session and analyzed the artifacts that it created"*(21:06~21:10).
 - 범위: *"The outcome definition happens at like an overall arching session level. (…) There is no currently support for like a sub outcome definition."*(31:46~32:06) — 하위 에이전트 단위의 채점은 없다.
 - ⚠️ 시연에서는 첫 판정이 통과였고 재시도 장면은 없다. *"numbers are well defined"*가 원문 대조였는지는 발화되지 않는다.
+
+## 자기 감사는 통과, 맥락 없는 persona가 잡았다 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 법적 요구서 사례는 자기 평가 편향의 **고위험 판본**이다. 초안 에이전트는 계약·송장의 날짜까지 대조했다며 *"reported them verified. Stage one passed."*(09:38~09:40) 그 뒤 맥락 없는 검토자 셋 — *"our own litigator, the vendor's counsel, and an auditor who trusts none of the numbers"*(09:47~09:53) — 이 편지 · 계약 · 송장만 받고 읽었다. 감사인은 금액이 *"correct down to the cent"*(10:02~10:04)임을 확인했고, 변호사 둘은 독립적으로 3년 자동 갱신 조항을 찾았다(10:06~10:16). 원 에이전트는 수정 중에 갱신을 맞게 적은 줄까지 지웠다: *"The original agent's own check had agreed with its own error."*(10:35~10:37)
+
+설계상의 추가분: 앵커링 차단(*"no history, no drafts, and no conclusions to agree with"* 03:24~03:30)에 **흠을 찾을 이유가 있는 역할**(*"each acting as a persona with reasons to find fault"* 03:14~03:20)을 더하고, 지적도 원문과 대조한 뒤 반영하며(03:31~03:33), 수정본은 *"brand new reviewers"*(03:37~03:42)가 다시 본다. ⚠️ 자기 보고 사례 하나, 재현율 없음. → [[three-level-agent-review]]

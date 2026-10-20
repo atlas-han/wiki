@@ -4,11 +4,11 @@ type: concept
 category: architecture
 tags: [long-context, agent, tool-calls, context-window, minimax]
 aliases: [긴 컨텍스트, 100만 토큰 컨텍스트]
-related: [context-engineering, context-resets-and-compaction, sparse-attention, agent-distributed-systems, attention-mechanism, context-rot]
+related: [context-engineering, context-resets-and-compaction, sparse-attention, agent-distributed-systems, attention-mechanism, context-rot, context-failure-modes]
 first-seen: tech-bridge-minimax-m3-long-context
-sources: [tech-bridge-minimax-m3-long-context, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness]
+sources: [tech-bridge-minimax-m3-long-context, tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-oracle-agent-memory-harness, tech-bridge-context-engineering-four-failure-modes]
 created: 2026-09-08
-updated: 2026-09-24
+updated: 2026-10-20
 ---
 
 # Long-Context for Agents
@@ -89,3 +89,7 @@ updated: 2026-09-24
 [[tech-bridge-oracle-agent-memory-harness]]([[ignacio-martinez|Ignacio Martinez]] / [[oracle|Oracle]])가 **창 확장론을 이름으로 반박**한다 — *"'1500만 컨텍스트 윈도우'를 믿는 사람들"*(25:09~25:19)에게 창은 **단기 기억의 한 유형**일 뿐이고, 많이 넣을수록 항목당 주의가 희석되며([[context-rot]]), 어텐션 행렬은 n²로 커진다(26:35~26:57). 처방은 **창을 가능한 한 작게**(27:00~27:03) + 장기 기억은 외부 저장소로.
 
 ⚠️ **측정은 없다** — 이 페이지의 MiniMax 쪽과 마찬가지로. 그리고 **제곱 비용 논거는 [[sparse-attention]]이 정확히 겨냥하는 것**이라, 두 논거 중 *주의 희석*만이 이 페이지의 처방에 대한 실질적 반론으로 남는다. → [[context-rot]]의 ⚠️ Contradiction.
+
+## 2026-10-20 — 네 번째 반론: "덜 들고 있을 때 더 잘한다" ([[tech-bridge-context-engineering-four-failure-modes]])
+
+> ⚠️ Contradiction: [[martin-keen|Martin Keen]]([[ibm|IBM Technology]], ⚠️ 이름은 설명란에만)은 이 페이지가 긴 창의 근거로 삼는 상황 — *"after, let's say, an hour of running"*, 그리고 *"the biggest band is probably the tool results"*(03:03~03:17) — 을 **문제**로 본다. 결론은 *"And all four fixes work by throwing something away. An agent can get better at long tasks by holding less."*(09:46~09:59)이다. MiniMax의 "짧은 컨텍스트로는 복잡한 작업에 충분하지 않다"와 정면으로 갈리고, Oracle 편(09-24)과 같은 쪽에 한 표를 더한다. 근거로 든 *"a recent study looked at 18 frontier models"*(00:36~00:46)는 이름이 발화되지 않는다(통합자 확인: Chroma *Context Rot* 보고서가 18개 LLM을 평가 — 인용 여부 미확인). **어느 쪽에도 같은 과제의 대조 측정은 없다.** → [[context-failure-modes]] · [[context-rot]]

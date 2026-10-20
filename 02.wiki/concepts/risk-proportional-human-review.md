@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration, agents]
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
-related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api]
+related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review]
 created: 2026-09-18
-updated: 2026-10-17
+updated: 2026-10-20
 ---
 
 # 위험 비례 사람 검토
@@ -93,3 +93,7 @@ updated: 2026-10-17
 ## 1인 사업장 판본 — 운영 설정만 직접 승인 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
 
 1인 사업장 판본이다. 에이전트가 만들고 시험하고 고치되 *"실제 운용 설정을 바꾸는 중요한 순간에는 본인이 직접 승인"*(06:27~06:31)하고, 보험 서류는 77%를 자동 확정하고 나머지 줄만 사람이 본다(03:18~03:36). 위험이 큰 결정에 사람을 두는 배치가 해설 전언으로 확인된다.
+
+## 위험이 오르면 늘어나는 것은 에이전트 검토 단계 — "not by me" (2026-10-20 · [[tech-bridge-three-level-agent-review]])
+
+> ⚠️ Contradiction(긴장): [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)은 *"the highest-stakes example"*(08:53)인 법적 요구서의 검토를 **persona 에이전트**(litigator · vendor's counsel · auditor, *"The two lawyer agents"* 10:26)에게 맡기고, 결론을 *"I believe them because everything I rely on has been thoroughly reviewed and validated first. And most importantly, not by me."*(11:57~12:03)로 맺는다. 위험에 비례해 올라가는 것은 사람의 개입이 아니라 검토 단계의 수다(*"Each level adds to the one before as the stakes go up."* 03:45~03:47). 이 페이지의 배치(가장 큰 위험의 결정 곁에 경험 많은 사람)와 갈린다. 다만 ① 사례 1의 첫 거짓은 **화자의 질문**으로 드러났고(*"It came out when I questioned the results."* 04:43~04:45), ② 요구서 발송을 결정한 사람·사람 변호사의 최종본 검토 여부는 발화되지 않는다. 그래서 "사람이 없다"가 아니라 **"사람이 검토자 자리에서 빠진다(결정자 자리는 미발화)"**로 읽는다. → [[three-level-agent-review]] · [[named-human-accountability]]

@@ -3,11 +3,11 @@ title: Dynamic Workflows
 type: concept
 category: pattern
 tags: [agent, multi-agent, orchestration, parallel-agents, claude-code, long-running]
-related: [agent-harness-design, generator-evaluator-pattern, managed-agents, ultracode, verifiable-goals, ralph-wiggum-method, context-resets-and-compaction]
+related: [agent-harness-design, generator-evaluator-pattern, managed-agents, ultracode, verifiable-goals, ralph-wiggum-method, context-resets-and-compaction, three-level-agent-review]
 first-seen: anthropic-dynamic-workflows
-sources: [anthropic-dynamic-workflows, tech-bridge-claude-code-team-workflow]
+sources: [anthropic-dynamic-workflows, tech-bridge-claude-code-team-workflow, tech-bridge-three-level-agent-review]
 created: 2026-05-30
-updated: 2026-09-05
+updated: 2026-10-20
 ---
 
 # Dynamic Workflows
@@ -114,3 +114,7 @@ updated: 2026-09-05
 - [[anthropic-dynamic-workflows]]
 - [공식 문서 — workflows](https://code.claude.com/docs/en/workflows)
 - 관련: [[agent-harness-design]], [[generator-evaluator-pattern]], [[managed-agents]], [[ultracode]]
+
+## 2026-10-20 — "Critical work checked twice"의 실무 판본 ([[tech-bridge-three-level-agent-review]])
+
+[[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 검토법은 위 3번(독립 시도 + adversarial agent)을 둘로 가른다. 사실 오류에는 독립 이중 작업 + 원문 대조(Level 2), 추론 오류에는 맥락 없는 persona의 적대적 검토(Level 3)다. 회계 사례에서 *"This fan-out, fan-in pattern of identically tasked agents is highly effective in driving accuracy and reliability."*(08:20~08:27) — 56개 차이를 잡고 1년 치가 *"balanced to the penny"*(08:37~08:45)였다. ⚠️ 효과의 근거는 자기 보고 사례 하나다. → [[three-level-agent-review]]
