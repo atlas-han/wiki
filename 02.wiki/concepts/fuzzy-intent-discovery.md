@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, intent, elicitation, state, information-gain, consumer]
 related: [multimodal-elicitation, adaptive-response-format, context-engineering, generator-evaluator-pattern, verifiable-goals, outcome-engineering, signal-layer, intent-alignment, no-one-shot-design, ai-slop]
 first-seen: tech-bridge-multimodal-commerce-agent
-sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-altman-frontier-rl-pause, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-voice-agent-failure-modes, tech-bridge-top-1-percent-ai-habits]
 created: 2026-09-04
-updated: 2026-09-19
+updated: 2026-10-21
 ---
 
 # Fuzzy Intent Discovery
@@ -136,9 +136,17 @@ counterfactual sensitivity를 **양방향**으로 재는 것이 정교한 지점
 
 마지막 행이 갈림의 이유일 수 있다. 음성 통화에는 **탐색에 쓸 턴이 많지 않고**, 틀린 값이 통과하면 되돌리기 어렵다. ⚠️ 다만 Plivo 편은 **모양이 미리 정해지지 않는 대화**(열린 상담·불만 접수)를 어떻게 다룰지 **말하지 않는다** — 이 페이지가 다루는 자리가 그쪽에서는 비어 있다.
 
+## 사용자 쪽 처방 — "나에게 물어봐" (2026-10-21 · [[tech-bridge-top-1-percent-ai-habits]])
+
+이 페이지의 articulation gap을 사용자 입장에서 말한 판본이다. [[nick-saraev|Nick Saraev]]: *"A lot of the time you yourself are bottlenecked by a lack of knowledge and also a lack of explicit verbalization ability of the thing that you want."*(03:36~03:43) 그의 처방은 설계가 아니라 **프롬프트 한 줄**이다. *"just have AI ask you, "Hey, I want To do X, Y, and Z. Can you just ask me anything that I might? need to know …""*(03:49~03:59)
+
+- 차이: 위 Google DeepMind 설계는 에이전트가 working state와 information gain으로 **질문 하나를 고른다.** 사용자 처방은 질문 선택을 모델에 통째로 맡긴다. 순서·개수·종료 조건이 없다.
+- Tech Bridge 내레이션의 적용(고객 제안서): 질문으로 빠진 요구사항이 드러나고, 답하지 못한 질문은 조사할 항목이 된다(04:03~04:14, 더빙). 이것은 이 페이지의 *hard/soft/confidence* 구분을 사용자가 손으로 하는 셈이다(위키 판독).
+
 ## References
 
 - [[tech-bridge-multimodal-commerce-agent]] — [[nidhi-kaushik-vyas]] / [[google-deepmind]]
 - 다음 단계: [[multimodal-elicitation]] → [[adaptive-response-format]]
 - 관련: [[context-engineering]] · [[generator-evaluator-pattern]] · [[verifiable-goals]] · [[outcome-engineering]]
 - [[tech-bridge-altman-frontier-rl-pause]] — 의도 이해가 병목 (Sam Altman, 2026-09-06)
+- [[tech-bridge-top-1-percent-ai-habits]] — 사용자 쪽 "나에게 물어봐" 처방 ([[nick-saraev]], 2026-10-21)

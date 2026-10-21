@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits]
 created: 2026-09-13
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # 검증 병목
@@ -247,3 +247,7 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 ## "사람이 덜 읽게"가 아니라 "사람이 안 읽게" (2026-10-20 · [[tech-bridge-three-level-agent-review]])
 
 [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*): *"In these cases, each review took minutes, not hours, and the agents do the checking, not me. At the scale we operate, checking it myself isn't an option."*(03:48~03:57) 첫 회계 에이전트가 *"I recommend spot checking a few of these transactions"*라고 돌려준 것을 *"This put the burden of reviewing the agent's work back on us, which is a non-starter."*(07:14~07:26)라 부른다. 병목의 답을 리뷰 면 축소가 아니라 **검토 주체 교체**(세 단계 에이전트 검토)로 둔다. ⚠️ 사람이 놓친 오류와 비교한 데이터는 없다. → [[three-level-agent-review]]
+
+## 사용자 한 사람의 검증 — "같은 기준으로 비교하라" (2026-10-21 · [[tech-bridge-top-1-percent-ai-habits]])
+
+코드 리뷰 밖, 개인 업무 단위의 판본이다. Tech Bridge 내레이션(더빙): *"When you delegate a small part of your work, you have concrete things to verify. You can check if the necessary content is included, if there are errors, and how long it takes to edit. By comparing subsequent results using the same criteria, it becomes easier to judge if it's helpful for your work."*(05:49~06:04) 기준 셋(포함 여부 · 오류 · **고치는 시간**)과 고정 기준 비교는 팀 단위 eval의 최소형이다. 같은 편은 AI의 비판을 받아도 *"check if there is a basis for the rebuttal"*(05:15~05:18)이라 하여, 검증 대상을 생성물뿐 아니라 **AI의 평가**로 넓힌다([[sycophancy]]).

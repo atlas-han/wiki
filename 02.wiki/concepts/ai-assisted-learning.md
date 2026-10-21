@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [learning, ai-tutor, cognitive-offloading, prompting, verification, education]
 aliases: [AI로 공부하기, AI 학습 역할, AI tutor roles, 도움받기 vs 생각 맡기기]
-related: [retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom]
+related: [sycophancy, retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits]
 created: 2026-10-09
-updated: 2026-10-16
+updated: 2026-10-21
 ---
 
 # AI 보조 학습 — 역할 분담
@@ -53,6 +53,19 @@ updated: 2026-10-16
 
 > ⚠️ **화자와 내레이터의 무게가 다르다.** Saraev 원 제목은 *"So Fast with AI"*(속도), Tech Bridge 내레이션은 매 역할마다 의심의 단서를 붙인다. 이 페이지의 "조건" 열은 **거의 전부 내레이션**이다.
 
+## 학습에서 업무로 — 같은 역할, 다른 대상 (2026-10-21 · [[tech-bridge-top-1-percent-ai-habits]])
+
+같은 [[nick-saraev|Saraev]] + Tech Bridge 내레이션 형식의 두 번째 편이다. 역할 셋이 업무 버전으로 다시 나온다.
+
+| 학습 편 역할 | 업무 편 장 | 바뀐 점 |
+|---|---|---|
+| 1. 인터뷰어 | AI에게 나를 인터뷰하게 하기(03:18) | 계획 대신 **요구사항**을 끌어낸다 — 고객의 문제·예산·마감, *"Questions you cannot answer become items you need to research further."*(04:09~04:14, 더빙) |
+| 6. 풀이 검토 | 의견 대신 약점 검토(04:18) | *"Poke holes in my thoughts"*(04:38~04:41). 내레이션이 [[sycophancy]]를 근거로 들고, **지적받았다고 바로 고치지 말라**는 단서를 붙인다(05:13~05:18, 더빙) |
+| 10. 서기 | 회의 내용을 다음 작업으로(01:18) | 정리가 아니라 **실행의 입력**이 된다. 담당자·마감·승인을 거친 뒤 연결하고, 녹음 공유 범위를 먼저 정한다(02:03~02:12, 더빙) |
+
+학습 편의 분업이 *준비·정리는 AI, 인출·풀이는 나*였다면, 업무 편은 **맥락과 판단은 나, 초안은 AI**다(*"providing sufficient context and verifying results directly"* 07:05~07:09, 더빙).
+
 ## References
 
 - [[tech-bridge-learn-anything-with-ai]] · [[nick-saraev]] · [[retrieval-practice]] · [[cognitive-offloading]]
+- [[tech-bridge-top-1-percent-ai-habits]] (업무 편) · [[sycophancy]]

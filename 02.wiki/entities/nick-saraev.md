@@ -2,13 +2,14 @@
 title: Nick Saraev
 type: entity
 category: person
-tags: [learning, ai-tutor, youtube, ai-assisted-learning]
+tags: [learning, ai-tutor, youtube, ai-assisted-learning, ai-usage-habits, sycophancy]
 aliases: [Saraev, 닉 사라예프]
 links:
   - https://www.youtube.com/watch?v=FSXHk4hMrY8
-sources: [tech-bridge-learn-anything-with-ai]
+  - https://www.youtube.com/watch?v=He-NyJjzWM0
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-21
 ---
 
 # Nick Saraev
@@ -28,7 +29,21 @@ updated: 2026-10-09
 
 **역할을 늘려 속도를 내라**는 쪽이다(원 제목 *"So Fast"*). 검증·한계에 대한 단서는 클립에서 거의 들리지 않고, 그 무게는 Tech Bridge 내레이션이 붙였다(⚠️ 클립이 잘려 있어 원 영상에 단서가 없었다고 단정할 수는 없다).
 
+## 두 번째 등장 — 업무용 AI 습관 일곱 가지 (2026-10-21 · [[tech-bridge-top-1-percent-ai-habits]])
+
+원본 *"How to Use AI Like A Top 0.1% CEO"*(설명란 `He-NyJjzWM0`)의 클립 일곱 개를 Tech Bridge 내레이션이 잇는다. 학습 편과 같은 형식이다. 내레이션은 그를 *"who specializes in AI-driven task automation"*(00:03~00:08, 더빙)이라 소개한다. 더빙 ASR의 이름은 *"Nick Saraff"*다.
+
+- 말로 하라 — 타이핑 30~50 vs 말하기 150~200 wpm(00:37~00:47). 내레이션이 *"the Stanford study he cited was an experiment on smartphone text entry"*(01:11~01:14, 더빙)라고 범위를 긋는다
+- ⭐ AI가 나를 인터뷰하게 하라 — *"you yourself are bottlenecked by a lack of knowledge and also a lack of explicit verbalization ability of the thing that you want"*(03:36~03:43) → [[fuzzy-intent-discovery]]
+- ⭐ 의견 대신 약점을 물어라 — *"what is wrong with my idea? Poke holes in my thoughts, uh, you know, roast my essay."*(04:36~04:44) → [[sycophancy]]
+- 새 형태는 써 봐야 안다 — 화면 아바타, *"little pendants"*, *"the only way to know is try"*(06:20~06:47)
+- ⚠️ 클립 둘(회의 → 실행 시스템 01:31~02:00, 직접 맡겨 보기 05:31~05:49)은 en-orig 판독 불가. 이 데이터의 en-orig가 그의 원음인지 더빙인지 확인하지 않았다.
+
+**태도는 학습 편과 같다.** *더 많이, 일단 해 보라*는 쪽이고, 범위·검증 단서는 Tech Bridge 내레이션이 붙였다.
+
 ## References
 
 - [[tech-bridge-learn-anything-with-ai]] · [[ai-assisted-learning]] · [[retrieval-practice]]
+- [[tech-bridge-top-1-percent-ai-habits]] · [[sycophancy]] · [[fuzzy-intent-discovery]]
+- 원본 영상(설명란, 2026-10-20 편): <https://www.youtube.com/watch?v=He-NyJjzWM0> (⚠️ 열어 보지 않았다)
 - 원본 영상(설명란): <https://www.youtube.com/watch?v=FSXHk4hMrY8> (⚠️ 열어 보지 않았다)

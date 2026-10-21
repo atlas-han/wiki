@@ -2181,3 +2181,21 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 **용어 충돌 해소**: [[context-rot]]의 alias "맥락 왜곡"은 Oracle 편 ko가 *rot*을 옮긴 기계 번역에서 왔는데, 이번 IBM 편 ko는 같은 말을 *poisoning*의 역어로 쓴다(04:38). 두 개념을 한 검색어가 가리키게 되므로 alias에서 뺐다(본문의 Oracle ko 기록은 유지). 정식 역어는 rot = 컨텍스트 부패, poisoning = 컨텍스트 오염([[context-failure-modes]]). **외부 확인**: PROPOSAL이 요청한 Breunig 분류는 원문(dbreunig.com)에서, "18개 모델"은 Chroma 보고서에서 일치를 확인해 [[context-failure-modes]]·source 페이지 "해소하지 않고 표시만 한 것"에 출처와 함께 적었다. 화자가 인용했다는 증거는 아니어서 [[context-rot]]의 "정량 — 미해결"은 닫지 않았다. 두 source 페이지의 "(신규 제안)" 표기를 "(신규)"로 바꿨다. **반영하지 않은 것**: PROPOSAL의 공개 스킬 저장소(`captivus/agent-review`) 별도 페이지(설명란만·미확인 — PROPOSAL도 만들지 않음). PROPOSAL이 "또는"으로 제시한 [[files-vs-database-agent-memory]]·[[agent-memory]]는 각자 다른 인용(파일로 빼내기 / 자기 메모 오염)으로 둘 다 짧게 보강했다. **멤버 전용 대기**: 이번 회차 목록 확인 결과가 통합자에게 전달되지 않아 [[tech-bridge]]의 대기 섹션(2026-10-19 확인)은 갱신하지 않았다.
+
+## [2026-10-21] ingest | Tech Bridge — 10-20 업로드 1편 (상위 1% 처럼 AI 쓰는 법 — Nick Saraev 클립 + 내레이션, 멤버 전용 → 공개)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 2026-10-19·10-20 멤버 전용이던 `WPJoi3ezJJc`가 `availability: public`으로 전환(`upload_date` 20261015 → 20261020, `timestamp` 2026-10-20 18:00 KST). 7:29 → 롱폼. 다른 신규 업로드 없음. `Yhck-x6VuLs`는 여전히 `subscriber_only`(목록 줄) — 건너뜀.
+
+**신규 source 1 · concept 1**, 기존 페이지 보강 5개, index **888 → 890**(실측 일치).
+
+- `WPJoi3ezJJc`(7:29, 챕터 9) → [[tech-bridge-top-1-percent-ai-habits]] — [[nick-saraev]] 원본 *"How to Use AI Like A Top 0.1% CEO"*(설명란 `He-NyJjzWM0`, 열어 보지 않음)의 클립 7개 + Tech Bridge 내레이션. 10-04 학습 편과 같은 형식.
+  - 신규: [[sycophancy]](근거 얇음 — 내레이션 한 문장, OpenAI 2025 롤백 사례 미확인)
+  - 보강: [[nick-saraev]](두 번째 등장, 원본 링크) · [[ai-assisted-learning]](학습 → 업무 역할 대응표) · [[fuzzy-intent-discovery]](사용자 쪽 "나에게 물어봐") · [[verification-bottleneck]](개인 단위 같은 기준 비교, AI 평가도 검증 대상) · [[tech-bridge]](대기 목록 해소 + 편 항목)
+  - ⚠️ **자막 구성.** 오디오는 `Korean original (default)` + `English (US)`인데 메타 `language`가 `en`. en-orig(`lang=en`) = 영어 트랙(더빙 추정) ASR, ko = `lang=en&tlang=ko` 기계 번역, en = en-orig와 바이트 동일. **한국어 원 내레이션 받아쓰기 없음** — 학습 편(ko = 원 오디오 ASR)과 다르다. 내레이션은 en-orig로 인용하고 *더빙* 표시.
+  - ⚠️ 클립 둘 판독 불가(01:31~02:00, 05:31~05:49) — 인용하지 않음. en-orig 5초 이상 공백 9곳, 모두 클립 구간.
+  - ⚠️ 내레이션의 2차 인용: *"the Stanford study he cited"*(클립에 없음), *"covered in research"*, *"its 2025 GPT-4 update"*(더빙 ASR, GPT-4o 여부 미확인). 0.1%(원본) vs 1%(Tech Bridge).
+  - ⚠️ ko: 키보드도 150~200 wpm(00:43), *Amazon* 잡음 → "닉이 아마존을 어떻게 활용할지"(03:00), 판독 불가 구간에 원문 없는 문장 셋, *will diversify* → 과거형.
+
+### 운영 메모
+
+7분짜리 1편이라 서브에이전트 없이 오케스트레이터가 raw · source · 통합을 직접 했다. 자막 ko·en-orig·en 모두 `automatic_captions`, `--sleep-subtitles 8`로 429 없음.
