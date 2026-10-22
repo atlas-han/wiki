@@ -3,9 +3,9 @@ title: Meta
 type: entity
 category: org
 tags: [frontier-lab, social, open-source, infrastructure, llama, glasses]
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
 created: 2026-09-14
-updated: 2026-10-16
+updated: 2026-10-22
 ---
 
 # Meta
@@ -90,3 +90,7 @@ Facebook·Instagram·WhatsApp·Threads·스마트 안경·[[muse|Muse]]를 만�
 ## 세 번째 [[muse|Muse]] 소스 — Alexandr Wang (2026-10-15)
 
 [[tech-bridge-alexandr-wang-muse-launch]]: **Meta 소스 중 처음으로 화자가 [[mark-zuckerberg|Zuckerberg]]가 아니다.** [[alexandr-wang|Alexandr Wang]]은 해설 소개로 *"founded Scale AI and now leads Meta's AI research organization as Chief AI Officer"*(00:11~00:17)이다. 이 조직이 [[meta-superintelligence-labs|MSL]]인지는 소스가 말하지 않는다. 해설은 Meta의 배급 자산을 Muse의 출발 조건으로 든다. *"Meta was already reaching people through Instagram and WhatsApp."*(03:03~03:06, 해설). 인터뷰 다음 날(10-12) [[muse-wonder|Muse Wonder]]와 **Meta model API**, **Muse Code**가 발표됐다(해설, Meta 자료 요약).
+
+## 네 번째 [[muse|Muse]] 소스 — Cheeky Pint, Zuckerberg · Wang (2026-10-22)
+
+[[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]] — 해설 + 발췌. 연구 조직: MSL *"full reboot"*(원음) + Llama 방향 불만(해설) → [[meta-superintelligence-labs]]. 인프라: *결과를 기다리면 radically behind*, 결과를 보기 전의 수표(원음, 금액 누락 — 해설 *"1천억 달러가 넘는"*) → [[compute-constrained-growth]]. 모델: [[muse-spark|Spark]](*not that big*) → [[muse-wonder|Wonder]](*significantly bigger*). 외부 연결: 브라우저 → 협력 업체 API(해설).

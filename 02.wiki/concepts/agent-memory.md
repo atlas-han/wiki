@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
 created: 2026-09-08
-updated: 2026-10-20
+updated: 2026-10-22
 ---
 
 # Agent Memory
@@ -235,3 +235,7 @@ updated: 2026-10-20
 ## 자기 메모가 오염원이 된다 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
 
 [[martin-keen|Martin Keen]]([[ibm|IBM Technology]])의 예시에서 에이전트는 드라이버 문서를 대충 읽고 *"the new driver retries failed connections automatically, so the old retry code can be deleted"*(03:41~03:50)라는 메모를 남긴다. 이것이 poisoning이다: *"A mistake gets into this context window somewhere, and then gets treated as fact because to the AI model, its own notes, they look like the ground truth."*(04:58~05:13) 나중에 정정을 덧붙이면 틀린 메모와 공존하는 clash가 된다(07:02~07:22). 처방은 쓰기 전 검증(validate)과, 대체된 버전 삭제(prune, 09:10~09:16)다. 세션 안의 working memory 판본이고, 장기 메모리 쓰기 게이트 논의와 같은 방향이다. → [[context-failure-modes]] · [[no-silent-write]]
+
+## 소비자 쪽 기준 — "며칠·몇 주·몇 달" (2026-10-22 · [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]])
+
+[[alexandr-wang|Wang]](해설 귀속) 원음: *"I think it's in the experience of using how well it remembers things that you mention to it over days, weeks, or months."*(06:34~06:40). 위 절들이 메모리를 층·수명·게이트·쓰기 주체로 쪼갠 **개발자 쪽** 논의라면, 이것은 **사용자가 체감하는 회상 품질**을 기준으로 둔다. 해설은 [[muse|Muse]]가 *"모델과 모델이 사용할 시스템을 함께 설계"* 했고 *"저장할 공간이 있어도 필요한 정보를 꺼내 쓰지 못하면 도움이 되지 않는다"* 고 정리한다 — 위 *읽기와 쓰기의 순환* 의 읽기 쪽. Meta는 짝 능력으로 **Active Focus**(현재 작업을 끝까지 — 해설)를 둔다 → [[muse-wonder]].

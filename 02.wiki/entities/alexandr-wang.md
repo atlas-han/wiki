@@ -5,9 +5,9 @@ category: person
 tags: [meta, scale-ai, muse, personal-agent, executive]
 aliases: [Alexander Wang, 알렉산더 왕]
 links: ["https://www.meta.com/about/leadership/alexandr-wang/"]
-sources: [tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-alexandr-wang-muse-launch, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-22
 ---
 
 # Alexandr Wang
@@ -35,3 +35,11 @@ Muse 이용자 *"millions"*(⚠️ 집계 기준 미확인), 직접 써 본 뒤 
 ## References
 
 - [[tech-bridge-alexandr-wang-muse-launch]] · [[muse]] · [[meta]] · [[nat-friedman]] · [[david-senra]]
+
+## 두 번째 소스 — Zuckerberg와 동석 (2026-10-22)
+
+[[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]](Cheeky Pint, 진행 [[john-collison|John Collison]] — 해설 + 발췌). 해설 소개: *"AI 조직을 이[끄는]"*(ko ASR 일부 탈락, 00:29~00:32). 직함·조직명은 이번에도 말하지 않는다 — MSL은 해설이 Zuckerberg와 *함께 꾸렸다* 고만 한다(09:27~09:33).
+
+- **원음(해설 귀속)**: *"situations and how to handle these sorts of tool scenarios, and these are very intentional decisions"*(04:09~04:14, 모델의 행동 설계) · *"how well it remembers things that you mention to it over days, weeks, or months"*(06:34~06:40, 기억의 기준) → [[agent-memory]]
+- **해설 전언**: 같은 채팅창처럼 보여도 함께 일해 보면 차이가 드러난다 · 기억은 모델과 시스템을 함께 설계 · Wonder는 Spark 완성 전부터 준비 · 연구·학습·데이터센터 건설 병행.
+- 원음 ⑧의 *"other than me giving a vibe report now (…) research was going"* 은 연구를 맡은 Wang의 말로 **추정**된다(미확정).

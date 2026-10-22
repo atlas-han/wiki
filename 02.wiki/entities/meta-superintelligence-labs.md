@@ -3,9 +3,9 @@ title: Meta Superintelligence Labs (MSL)
 type: entity
 category: org
 tags: [meta, research-lab, llama, talent-density]
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
 created: 2026-09-14
-updated: 2026-10-16
+updated: 2026-10-22
 ---
 
 # Meta Superintelligence Labs (MSL)
@@ -52,3 +52,10 @@ updated: 2026-10-16
 ⚠️ *"한 1년쯤"* 은 **상대 앵커**이고 이 소스의 촬영 시점이 미확정이므로 **절대 시점을 계산하지 않는다.** 그리고 [[muse-spark|Muse Spark]]가 이 랩의 산물인지 소스가 말하지 않는다.
 
 - (2026-10-15) [[tech-bridge-alexandr-wang-muse-launch]] 해설: [[alexandr-wang|Alexandr Wang]]이 *"leads Meta's AI research organization as Chief AI Officer"*(00:14~00:17)라고 한다. ⚠️ 그 조직의 이름(MSL인지)은 발화되지 않는다.
+
+## 세 번째 언급 — "full reboot"의 원음 (2026-10-22 · [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]])
+
+> *"[We] weren['t] sure up front that it was going to have to be a full reboot, right? It's like that basically started when we were out talking to a lot of the kind of best people and we realized that hey (…) in order to make this as attractive as possible it should feel like ok we're starting this thing again from scratch and yeah we'll pull in a lot of the great people from the Llama effort and FAIR and all of that too. That was a very intentional thing"* (09:51~10:20, [[mark-zuckerberg|Zuckerberg]] 추정)
+
+- **reboot은 사전 계획이 아니었다** — 채용 대화 중에 *매력적으로 보이려면 처음부터 다시 시작하는 느낌이어야 한다* 는 판단에서 나왔다. Llama 팀·FAIR 인력은 흡수.
+- 해설(원음 없음): Zuckerberg는 *"라마가 향하던 방향에 만족하지 못했다"*, [[alexandr-wang|Wang]]과 함께 MSL을 꾸렸고 *"인원수보다 팀 안에 뛰어난 인재가 얼마나 모여 있는지를 중시"* 했다 → [[talent-density]]. ⚠️ 이 편에서 MSL 이름은 **해설에만** 나온다.

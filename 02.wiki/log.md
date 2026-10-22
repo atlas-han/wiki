@@ -2199,3 +2199,20 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 7분짜리 1편이라 서브에이전트 없이 오케스트레이터가 raw · source · 통합을 직접 했다. 자막 ko·en-orig·en 모두 `automatic_captions`, `--sleep-subtitles 8`로 429 없음.
+
+## [2026-10-22] ingest | Tech Bridge — 10-21 업로드 1편 (저커버그는 AI에게 대체 뭘 시키고 있을까? | 메타 뮤즈와 개인 AI — Cheeky Pint 해설)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**(`Yhck-x6VuLs` 멤버 전용 — 이번엔 목록 줄이 아니라 ERROR로만). 신규 10-21 업로드 1편 `vF_vVcqa9M4`(12:30, `public`) → 롱폼. 그 외 목록은 전부 vault에 있음.
+
+**신규 source 1 · entity 1**, 기존 페이지 보강 9개, index **890 → 892**(실측 일치).
+
+- `vF_vVcqa9M4`(12:30, 챕터 21) → [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]] — *Cheeky Pint*([[john-collison|John Collison]] 진행, 해설) 인터뷰의 [[mark-zuckerberg]] · [[alexandr-wang]] 발췌 아홉 구간(약 3분) + 한국어 해설. 10-14 Wang 편과 같은 형식.
+  - 신규: [[john-collison]](이름·직함은 해설에만)
+  - 보강: [[muse-wonder]](Spark의 다음 class — 원음, 공개 범위, Active Focus, 날짜 Contradiction) · [[muse-spark]](작년 말 첫 사전학습, *not that big* — 미해결 둘 닫힘) · [[muse]] · [[mark-zuckerberg]] · [[alexandr-wang]] · [[meta-superintelligence-labs]](full reboot 원음) · [[meta]] · [[agent-memory]](소비자 쪽 기준) · [[compute-constrained-growth]](결과 전의 수표) · [[tech-bridge]](대기 목록 + 편 항목)
+  - **자막 구성.** 메타 `language` = `en`(10-21 편과 같음)이지만 받은 ko는 `lang=ko` **원 오디오 ASR**(10-21 편은 `tlang=ko` 번역이었다) — 해설은 ko로 인용, 발췌는 en-orig로 인용. en = ko의 기계 번역.
+  - ⚠️ 해설 안 날짜 불일치: Wonder 공개 10월 12일(00:18) vs 10월 10일(05:49). 연도: ko *2025년 말* vs en-orig 더빙 *late 2024*. '차' car/tea — 더빙이 tea(00:02·01:29)/car(10:40)로 갈려 미판정. 원음 ⑧ *"[?] billion or [?] billion"* 숫자 누락 — *1천억 달러 이상*은 해설.
+  - ⚠️ 무캡션 11:03→11:38(챕터 *브라우저에서 API 직접 연결로*) — API 연결은 해설만. 발췌 ⑦⑧⑨ 문장별 화자 미확정.
+
+### 운영 메모
+
+12분짜리 1편이라 서브에이전트 없이 오케스트레이터가 raw · source · 통합을 직접 했다. 자막 ko·en-orig·en 모두 `automatic_captions`, `--sleep-subtitles 8`로 429 없음. 메타 `language`=`en` 영상에서도 ko가 원 ASR일 수 있으니 **ko URL의 `tlang` 유무로 매번 판정**할 것(10-21 교훈 재확인).

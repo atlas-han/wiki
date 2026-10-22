@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-20
+updated: 2026-10-22
 sources: []
 ---
 
@@ -267,6 +267,8 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
   ② [[tech-bridge-three-level-agent-review|검토 3단계 편]]([[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*, 설명란 링크 라벨에서만)) — "에이전트가 하는 말을 모두 믿는다, 늘 틀리지만"을 **실패 유형마다 검토 단계 하나**로 푼다: 부풀리기 → 산출물 계약("done"만으로는 불가), 사실 오류 → 원문 기준점 + 독립 이중 작업 + 줄 단위 대조, 추론 오류 → 자기 감사 · 맥락 없는 persona cold review · 새 검토자([[three-level-agent-review]]). 법적 요구서에서 자기 감사는 통과했지만 persona 변호사 둘이 자동 갱신 조항을 찾았다([[generator-evaluator-pattern]]). 결론 *"not by me"*는 [[risk-proportional-human-review]]와, 같은 지시의 이중 추출 + "1센트까지 맞는 합계"는 [[cross-model-prior-intersection]]과 긴장한다. ⚠️ 수치는 모두 자기 보고이고 비교 기준이 없다.
 
 - *2026-10-21*: [[tech-bridge]] **1편** ingest(10-19·10-20 멤버 전용이던 `WPJoi3ezJJc`가 공개로 전환, `upload_date` 20261020. `Yhck-x6VuLs`는 여전히 멤버 전용). [[tech-bridge-top-1-percent-ai-habits|상위 1% 처럼 AI 쓰는 법]]([[nick-saraev|Nick Saraev]] 클립 + Tech Bridge 내레이션) — 10-04 학습 편과 같은 형식으로, 대상이 **업무**로 바뀐다. 일곱 습관은 *맥락은 충분히, 결과는 직접 확인*으로 묶인다. 이 위키에 [[sycophancy]]가 처음 이름을 얻는다(Saraev *"Poke holes in my thoughts"* · 내레이션 *지적받았다고 바로 고치지 말 것*). [[fuzzy-intent-discovery]]의 articulation gap에는 사용자 쪽 처방(*"just have AI ask you"*)이 붙는다. 어제 IBM 편의 *"holding less"*와는 층이 다르다 — 그쪽은 긴 실행의 창, 이쪽은 사람의 첫 요청이다. ⚠️ 한국어 원 내레이션의 받아쓰기가 없어 인용은 영어 트랙(더빙 추정) ASR이다.
+
+- *2026-10-22*: [[tech-bridge]] **1편** ingest(10-21 업로드). [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까?]]([[mark-zuckerberg|Zuckerberg]] · [[alexandr-wang|Wang]] *Cheeky Pint* 발췌 + 한국어 해설) — [[muse|Muse]]의 네 번째 소스이고, 두 사람이 한자리에 나온 첫 소스다. 10-14 Wang 편에서 미해결이던 계보가 원음으로 닫힌다. [[muse-spark|Spark]]는 작년 말 첫 사전학습에서 나온 *"frankly not that big"* 모델이고, [[muse-wonder|Wonder]]는 *"the next kind of class, significantly bigger"*다. 기억은 *"며칠·몇 주·몇 달"*의 사용 경험으로 재고([[agent-memory]]), 짝 능력은 Active Focus다(해설). 결과를 보기 전에 쓴 수표(*"the whole exec team scared"*, 근거는 *vibe report*)는 [[compute-constrained-growth]]의 경영진 쪽 사례이고, MSL의 *"full reboot"*은 채용 대화에서 나온 결정이었다([[meta-superintelligence-labs]]). ⚠️ 해설 안에서 Wonder 공개일이 10-10과 10-12로 갈린다. 금액 *1천억 달러 이상*은 해설에만 있다(원음에서 숫자가 빠졌다).
 
 ---
 

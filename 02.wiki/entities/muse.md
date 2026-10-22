@@ -3,9 +3,9 @@ title: Muse
 type: entity
 category: product
 tags: [meta, personal-agent, virtual-machine, privacy, agent-memory]
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-alexandr-wang-muse-launch, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
 created: 2026-09-14
-updated: 2026-10-16
+updated: 2026-10-22
 ---
 
 # Muse
@@ -177,3 +177,15 @@ updated: 2026-10-16
 - **새 모델**: 인터뷰 다음 날 [[muse-wonder|Muse Wonder]]가 나왔다. Meta model API·**Muse Code**·Wonder Full이 함께 나오고, Muse 앱 탑재는 향후다(해설).
 
 > ⚠️ **Contradiction(약): "not coding" vs "결국 코딩".** Wang 쪽 원음은 *"It's not coding"* 이고, 위 Zuckerberg의 서술은 *"개인 에이전트에서 말하는 것 상당수가 결국 코딩으로 환원된다"* 이다. 그리고 한 달 뒤 Muse Wonder·Muse Code가 코딩을 돕는다. 앞쪽은 포지셔닝 층, 뒤쪽은 모델 능력 층일 수 있다(위키의 관찰).
+
+## 네 번째 소스 — Zuckerberg · Wang 동석, Cheeky Pint 해설 (2026-10-22)
+
+[[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]] — 해설 + 발췌 아홉 구간(약 3분). 진행 [[john-collison|John Collison]](해설).
+
+- **사용 사례**: Wang — *취향에 맞는 차를 찾아 구매까지*(해설, ⚠️ '차' car/tea 미판정). Zuckerberg — MMA 체육관 카메라(**세 번째 소스**), 새 정보는 *"feedback in between the rounds"*(시간 조건, 원음)와 *이미지 잘라내기를 Muse가 스스로 찾았다*(해설). 해설: *"사용자는 코드를 보고 있지 않아도 뒤에서는 필요한 프로그램이 만들어지고 있다"* — 위 *"결국 코딩으로 환원된다"* 와 같은 방향.
+- **제품 형태(해설, 9월 Meta 발표 요약)**: 전용 가상 컴퓨터 + 브라우저, 메일 발송·구매 전 승인 — 기존 기록과 **일치**.
+- **모델이 곧 제품**(해설): 언제 먼저 말을 걸지 · 어떤 도구를 쓸지 · 부탁을 어떻게 마무리할지를 **모델 설계**에 담았다(Wang, 원음 일부 *"these are very intentional decisions"*).
+- **기억**: *"how well it remembers things that you mention to it over days, weeks, or months"*(Wang 원음, 06:34~06:40) — 위 *함대 학습*·메모리 서술에 **사용 경험 기준**이 붙는다. 해설: 모델과 시스템을 함께 설계.
+- **외부 연결(해설만)**: 우선 브라우저로 웹사이트 사용, 협력 업체와는 **API 직접 연결**. 원음 구간(11:03→11:38)은 무캡션.
+- **개인용 Muse에 Wonder는 구독자부터 순차 적용 계획**(해설) → [[muse-wonder]].
+- ⚠️ 출시 후 실패·이용자 수는 이번에도 없다.

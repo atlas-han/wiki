@@ -137,8 +137,9 @@ sources:
   - tech-bridge-context-engineering-four-failure-modes
   - tech-bridge-three-level-agent-review
   - tech-bridge-top-1-percent-ai-habits
+  - tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint
 created: 2026-06-03
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 # Tech Bridge
@@ -1351,7 +1352,7 @@ updated: 2026-10-21
 - **공개 전환 — 위에서 ingest (2026-10-17 둘째 통합):** `ks55L-DkLE8`([[tech-bridge-atlassian-build-your-own-sdlc|직접 만드는 SDLC — Andy Wong, Andrei Bocan, Shane Wolf (Atlassian)]]) — 2026-10-14 멤버 전용으로 처음 보였고 2026-10-17 `availability: public` 확인(`upload_date` 20261016).
 - **공개 전환 — 위에서 ingest:** `zAglgqN5Lhw`([[tech-bridge-hassabis-fry-creativity-future|하사비스 × Hannah Fry]], 10-13 회차 `availability: public` 확인, `upload_date` 20261012 = 공개 전환 값). 10-11 대기 목록의 마지막 항목이 해소됐다.
 - **공개 전환 — 아래에서 ingest (2026-10-21):** `WPJoi3ezJJc`([[tech-bridge-top-1-percent-ai-habits|상위 1% 처럼 AI 쓰는 법]], 7:29) — 2026-10-19·10-20 `subscriber_only`(목록 `upload_date` 20261015) → 2026-10-21 `availability: public`, `upload_date` 20261020(공개 전환 값).
-- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18·10-19·10-20·10-21 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 공개 전환 시 그날 ingest.
+- **여전히 `subscriber_only` — ingest하지 않음 (2026-10-18·10-19·10-20·10-21·10-22 확인):** `Yhck-x6VuLs`(*[한영자막] AI 코딩 에이전트에 메모리 파이프라인이 왜 필요할까요?*, 53:29, 목록 `upload_date` 20261014). 10-17까지는 목록 조회 stderr ERROR로만 보여 제목을 몰랐고, 10-18에는 목록 줄로 나타나 제목·길이가 확인됐다. 10-22에는 다시 stderr ERROR로만 보였다(20편 요청 → 19줄 + ERROR 1). 공개 전환 시 그날 ingest.
 
 ## 2026-10-20 업로드 — Nick Saraev 클립 + Tech Bridge 내레이션, 상위 1% 처럼 AI 쓰는 법 (2026-10-21 ingest, 멤버 전용 → 공개)
 
@@ -1361,3 +1362,11 @@ updated: 2026-10-21
 - 내레이션이 또 **반대 무게**를 얹는다(두 편 연속): 말하기 속도 수치의 범위 제한(*"the Stanford study he cited was an experiment on smartphone text entry"*), 회의 녹음 공유 범위·승인, 공간 도면 치수 확인, AI 동조 현상과 OpenAI 2025 롤백(⚠️ 더빙 ASR은 *GPT-4*, 미확인), *지적받았다고 바로 고치지 말 것*.
 - ⚠️ **자막 구성이 학습 편과 다르다.** 오디오는 한국어 원 트랙 + 영어(US) 트랙인데 메타데이터 `language`가 `en`이라 en-orig = 영어 트랙(더빙 추정) ASR, ko = en의 기계 번역(`tlang=ko`)이다. **한국어 원 내레이션 받아쓰기는 없다.** 클립 둘(01:31~02:00, 05:31~05:49) 판독 불가. 0.1%(원본) vs 1%(Tech Bridge) 제목 차이.
 - **⚠️ ko**: 키보드 속도도 "분당 150~200단어"(00:43), *Not every one … perfect* → "그 단어들 중 하나는 완벽할 겁니다", 클립 끝 잡음 *Amazon* → "닉이 아마존을 어떻게 활용할지"(03:00), 판독 불가 구간에 원문 없는 문장 셋("이메일", "물론, 여러분이 틀릴 수도", "사람들의 의견은 제때에 일을 처리하는 데 도움"), *will diversify* → "발전해 왔습니다", *coworker*(추정) → "멋진 사람".
+
+## 2026-10-21 업로드 — Cheeky Pint 해설, 저커버그는 AI에게 대체 뭘 시키고 있을까 (2026-10-22 ingest)
+
+[[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까? | 메타 뮤즈와 개인 AI]](`vF_vVcqa9M4`, 12:30, 공식 챕터 21) — [[mark-zuckerberg]] · [[alexandr-wang]] · [[john-collison]](신규) ([[muse]] · [[muse-wonder]] · [[muse-spark]] · [[meta-superintelligence-labs]] · [[agent-memory]] · [[compute-constrained-growth]])
+
+- 10-14 [[tech-bridge-alexandr-wang-muse-launch|Wang 편]]과 같은 **한국어 해설 + 원본 인터뷰 발췌** 형식, 원본은 *Cheeky Pint*(진행 John Collison, 해설). 발췌 아홉 구간 약 3분. 줄거리: 두 사람의 사용(차 주문 · MMA 카메라) → 모델이 곧 제품 → Spark(*not that big*) → Wonder(*significantly bigger*) → 기억과 Active Focus → 결과 전의 수표 → MSL full reboot → 브라우저에서 API로.
+- **자막 구성**: 메타 `language` = `en`(10-21 편과 같음)인데 이번엔 받은 **ko가 `lang=ko` 원 오디오 ASR** — 해설은 ko로 인용. en-orig = 영어 트랙(더빙 추정) ASR, en = ko의 기계 번역.
+- ⚠️ 해설 안의 날짜 불일치(Wonder 10-12 vs 10-10), 연도(ko 2025년 말 vs 더빙 late 2024), '차' car/tea(더빙이 둘로 갈림), 원음 ⑧의 금액 누락(해설 *1천억 달러 이상*), API 구간(11:03→11:38) 무캡션.

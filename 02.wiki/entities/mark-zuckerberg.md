@@ -3,9 +3,9 @@ title: Mark Zuckerberg
 type: entity
 category: person
 tags: [meta, ceo, open-source, personal-superintelligence, policy]
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
 created: 2026-09-14
-updated: 2026-09-17
+updated: 2026-10-22
 ---
 
 # Mark Zuckerberg
@@ -86,3 +86,13 @@ updated: 2026-09-17
 **딸 Aurelia**(세 살, 베이킹) · **로봇 만드는 다른 딸** · **Oura 링** · 에이전트 이름 **Agrippa**(로마 장군, 곰인형 아바타 — [[agent-persona-naming]]) · **Priscilla와 함께 시작한 [[biohub|Biohub]]** (⚠️ Priscilla의 성은 소스에 없어 표기를 채택하지 않았다) · *"최근 **월스트리트 저널** 기고"*(⚠️ 제목·날짜 없음).
 
 새 주장 둘: **[[business-in-a-box|비즈니스 인 어 박스]]**(⚠️ *"모든 Meta 서비스 연결"* 과 *"광고 운영"* 이 한 문장에 있는데 **화자가 자기 광고 이해관계를 연결하지 않는다**)와 **[[rare-disease-long-tail|개인 맞춤 치료 설계]]**(⚠️ 검증·규제·책임 서술 없음).
+
+## 세 번째 소스 — Wang과 동석, 투자 결정 회고 (2026-10-22)
+
+[[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]](Cheeky Pint, 진행 [[john-collison|John Collison]] — 해설 + 발췌).
+
+- **MMA 카메라, 세 번째**: *"it gives me feedback in between the rounds, which is a very hard problem it turns out, because it basically has to process all the video quickly"*(02:09~02:29, 원음). 위 *개인 사용* 절의 같은 사례에 **시간 조건**이 붙는다.
+- **[[muse-spark|Spark]] → [[muse-wonder|Wonder]]**: *"frankly not that big"* → *"significantly bigger"*(05:05~05:44, 원음, 해설 귀속).
+- **결과 전의 수표**(원음 ⑧, 문장별 화자 미확정): *"We haven't seen the models yet. (…) we're going to write this check for (…) [?] billion or [?] billion. I'm like, You sure this is going to work?"* · *"the whole exec team scared"*. 해설은 *"1천억 달러가 넘는"* — ⚠️ 원음에서 숫자가 빠졌다. → [[compute-constrained-growth]]
+- **[[meta-superintelligence-labs|MSL]]의 "full reboot"**(원음 ⑨, Zuckerberg 추정): 사전 계획이 아니라 채용 대화에서 나온 결정. 해설: *"라마가 향하던 방향에 만족하지 못했다"*(⚠️ 원음 없음).
+- **자기에게 불리한 진술**: 투자 당시 근거가 *"vibe report"* 와 *"some plots"* 였다(⑧ — 화자 미확정, 위 *자기에게 불리한 진술* 절에 후보로).
