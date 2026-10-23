@@ -270,6 +270,8 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 
 - *2026-10-22*: [[tech-bridge]] **1편** ingest(10-21 업로드). [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까?]]([[mark-zuckerberg|Zuckerberg]] · [[alexandr-wang|Wang]] *Cheeky Pint* 발췌 + 한국어 해설) — [[muse|Muse]]의 네 번째 소스이고, 두 사람이 한자리에 나온 첫 소스다. 10-14 Wang 편에서 미해결이던 계보가 원음으로 닫힌다. [[muse-spark|Spark]]는 작년 말 첫 사전학습에서 나온 *"frankly not that big"* 모델이고, [[muse-wonder|Wonder]]는 *"the next kind of class, significantly bigger"*다. 기억은 *"며칠·몇 주·몇 달"*의 사용 경험으로 재고([[agent-memory]]), 짝 능력은 Active Focus다(해설). 결과를 보기 전에 쓴 수표(*"the whole exec team scared"*, 근거는 *vibe report*)는 [[compute-constrained-growth]]의 경영진 쪽 사례이고, MSL의 *"full reboot"*은 채용 대화에서 나온 결정이었다([[meta-superintelligence-labs]]). ⚠️ 해설 안에서 Wonder 공개일이 10-10과 10-12로 갈린다. 금액 *1천억 달러 이상*은 해설에만 있다(원음에서 숫자가 빠졌다).
 
+- *2026-10-23*: [[tech-bridge]] **1편** ingest(10-22 업로드). [[tech-bridge-stripe-collison-cherny-ai-dev-workflow|AI가 코딩하는데 왜 내가 더 바쁠까?]]([[patrick-collison|Collison]] × [[boris-cherny|Cherny]] 대담 발췌 + 한국어 해설) — 이 위키의 첫 [[stripe|Stripe]] 엔지니어링 소스. 생성과 배포 사이의 간격을 **환경 분리(devbox · worktree) · 검증 자동화([[stripe-minions|Minions]] blueprint) · 계획 후 병렬**로 줄인다. 원음은 *invariants와 hard barriers*(→ [[hard-vs-soft-enforcement]])와 *devbox 열 개*(해설: 10배로 읽지 말 것) 두 구간뿐, 나머지는 해설.
+
 ---
 
 전체 페이지 카탈로그는 [[02.wiki/index]], 시간순 작업 기록은 [[log]] 참조.

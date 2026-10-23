@@ -6,9 +6,9 @@ tags: [agents, workflow, determinism, langgraph, planning, guardrails, max-turns
 aliases: [고정 계획 에이전트, 결정론 노드 + LLM 노드, deterministic and LLM nodes, We control the plan]
 related: [workflow-vs-agent, linear-vs-closed-loop-harness, agent-harness-design, harness-engineering, dynamic-workflows, harness-as-platform, context-engineering, context-rot, agent-verification-skill, pareto-surfing]
 first-seen: tech-bridge-uber-debug-assist
-sources: [tech-bridge-uber-debug-assist, tech-bridge-human-is-async-api, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-dental-clinic-ax-transformation, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-human-is-async-api, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-dental-clinic-ax-transformation, tech-bridge-just-in-time-ontology, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-10-09
-updated: 2026-10-18
+updated: 2026-10-23
 ---
 
 # 결정론 골격 에이전트 파이프라인 (Deterministic Agent Pipeline)
@@ -50,3 +50,9 @@ updated: 2026-10-18
 - [[tech-bridge-uber-debug-assist]] — first-seen
 - [[debug-assist]] · [[uber]] · [[kriti-dangi]]
 - 관련: [[workflow-vs-agent]] · [[linear-vs-closed-loop-harness]] · [[agent-harness-design]] · [[harness-as-platform]] · [[dynamic-workflows]]
+
+## blueprint — Stripe Minions의 같은 구성 (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+[[stripe-minions|Minions]]([[stripe|Stripe]] 사내 코딩 에이전트, [[goose]] 기반)의 흐름에는 *"모델이 판단하는 단계와 정해진 코드가 실행하는 단계를 함께 둡니다. 구현에는 에이전트를 쓰고 정해둔 검사에는 일반 코드를 쓰는 방식입니다. 공식 기술 글에서는 이를 블루프린트라고 부릅니다."*(03:53~04:06, 해설이 Stripe 블로그를 인용). [[debug-assist|Uber Debug Assist]]에 이은 **두 번째 기업 사례**이고, 이번엔 디버깅이 아니라 **구현 → 정해진 검사(포맷 · 타입 · 관련 테스트, 해설 예시)** 의 순서다. 해설은 실패 시 *"어떤 명령이 실패했고 어떤 오류가 나왔는지 에이전트가 확인할 수 있어야"* 한다고 덧붙인다(04:25~04:30).
+
+> ⚠️ 이 위키는 Stripe 블로그를 열어 보지 않았다 — blueprint의 노드 구성·턴 예산·모델 선택은 자막에 없다. 포맷 → 타입 → 테스트 순서는 Tech Bridge의 소규모 팀 예시다.

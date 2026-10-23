@@ -2216,3 +2216,21 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 12분짜리 1편이라 서브에이전트 없이 오케스트레이터가 raw · source · 통합을 직접 했다. 자막 ko·en-orig·en 모두 `automatic_captions`, `--sleep-subtitles 8`로 429 없음. 메타 `language`=`en` 영상에서도 ko가 원 ASR일 수 있으니 **ko URL의 `tlang` 유무로 매번 판정**할 것(10-21 교훈 재확인).
+
+## [2026-10-23] ingest | Tech Bridge — 10-22 업로드 1편 (AI가 코딩하는데 왜 내가 더 바쁠까? | Stripe의 AI 개발 워크플로 — Collison × Cherny 대담 해설)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음, `Yhck-x6VuLs`는 `subscriber_only` 목록 줄로 나옴). 신규 10-22 업로드 1편 `m3g2EkMjpno`(10:00, `public`) → 롱폼. 그 외 목록은 전부 vault에 있음.
+
+**신규 source 1 · entity 4**, 기존 페이지 보강 11개, index **892 → 897**(실측 일치).
+
+- `m3g2EkMjpno`(10:00, 챕터 없음) → [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]] — 설명란 기준 [[patrick-collison|Patrick Collison]](Stripe CEO) × [[boris-cherny|Boris Cherny]](Claude Code) 대담(`S_lzYIvtEaQ`)의 발췌 두 구간(약 30초) + 한국어 해설. 10-21 Cheeky Pint 편과 같은 형식. 해설은 Stripe 블로그 *Minions* Part 1·2를 인용.
+  - 신규: [[stripe]] · [[patrick-collison]] · [[boris-cherny]] · [[stripe-minions]]
+  - 보강: [[hard-vs-soft-enforcement]](Collison 원음 *invariants · hard barriers vs probabilistic*, 요청 vs 시스템의 제한) · [[deterministic-agent-pipeline]](blueprint — 두 번째 기업 사례) · [[agent-sandboxing]](devbox, worktree는 파일만 격리) · [[codebase-gardening]](디렉터리별 안내, 금지 옆에 대안 위치) · [[verification-bottleneck]](생성 시각 vs 수용 시각) · [[cloud-agent-delegation]](devbox 열 개, 10배로 읽지 말 것) · [[goose]] · [[block]](Goose 위의 첫 사내 에이전트) · [[claude-code]](Claude Code ≠ Minions) · [[john-collison]](Stripe 페이지 생김) · [[tech-bridge]]
+  - **자막 구성(새 유형).** 오디오가 **한국어 트랙 하나**(`language: ko`), `automatic_captions`에 `en-orig` 없음(`ko-orig`만). ko = `lang=ko` 원 오디오 ASR → 해설 인용. 영어 원음은 **ko 트랙 안의 영어 ASR 조각**뿐 — 대조할 독립 트랙 없음. en = ko의 기계 번역(인용 안 함).
+  - ⚠️ 발췌 화자: ①의 답만 해설이 Collison에게 귀속, ①의 질문·②는 미상 — Cherny 목소리 확정 구간 없음. ASR *"invariance"* → invariants 판독, *"againstiability"* · *"in the exeme"* 미판독. 무캡션 02:49→02:58 · 05:01→05:08(*"이 관점"* 의 원음) · 06:09→06:27.
+  - ⚠️ devbox · Minions(goose 기반) · blueprint 서술은 해설의 Stripe 블로그 인용 — 블로그·원본 대담은 열어 보지 않았다. 소규모 팀 예시는 Tech Bridge 해설(설명란 자체 고지).
+- 페이지화하지 않음: devbox([[stripe-minions]] · [[stripe]]에 기술), git worktree(도구 언급 — [[agent-sandboxing]]에 기술), claude.com/office-hours(프로그램 정체 미확인).
+
+### 운영 메모
+
+10분짜리 1편이라 서브에이전트 없이 오케스트레이터가 raw · source · 통합을 직접 했다. 자막 ko·en 모두 `automatic_captions`, `--sleep-subtitles 8`로 429 없음. **한국어 단일 트랙 영상은 en-orig가 아예 없다** — 영어 발췌는 ko 트랙의 영어 ASR로만 인용 가능하고 교차 확인이 안 된다.

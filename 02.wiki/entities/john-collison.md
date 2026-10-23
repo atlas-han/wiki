@@ -4,9 +4,9 @@ type: entity
 category: person
 tags: [interviewer, podcast, stripe]
 links: []
-sources: [tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
+sources: [tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-10-22
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 # John Collison
@@ -15,8 +15,12 @@ updated: 2026-10-22
 
 - 해설이 전하는 그의 질문: 영상에서 이미지를 잘라내는 방법까지 알려 줬느냐(02:43~02:48) · 포커스의 의미(챕터 07:11). **두 질문의 원음은 자막에 없거나 판독 불가**이고, 발췌에 그의 목소리가 들어 있는지도 확정되지 않는다.
 
-> ⚠️ 이 위키는 원본 인터뷰를 열어 보지 않았다(설명란에 링크 없음). Stripe 페이지는 없다.
+> ⚠️ 이 위키는 원본 인터뷰를 열어 보지 않았다(설명란에 링크 없음). Stripe 페이지는 없었다(2026-10-23 [[stripe]] 생성).
 
 ## References
 
 - [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]] · [[mark-zuckerberg]] · [[alexandr-wang]] · [[meta]]
+
+## Stripe 페이지 생김 (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+[[stripe]] 페이지가 생겼다. 같은 회사 CEO [[patrick-collison|Patrick Collison]]의 대담을 다룬 소스가 들어왔다 — 두 사람의 관계는 소스에 나오지 않는다.

@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-10-23
 ---
 
 # Claude Code
@@ -204,3 +204,7 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 2026-10-17 — dangerously skip permissions 손들기, 그리고 클라우드로 옮길 이유 ([[tech-bridge-openhands-sandboxing-coding-agents]])
 
 [[robert-brennan|Robert Brennan]]([[openhands|OpenHands]])의 현장 질문이다. Claude Code(en-orig *"Quad Code"*)·Codex·OpenHands를 로컬에서 쓰는 사람은 *"Fewer than I'd expect"*였고, dangerously skip permissions를 쓰는 사람은 *"Somehow more hands than before"*였다(03:22~03:38). skip permissions로 돌린 에이전트는 *"has access basically to everything that you have access to"*(04:26~04:29)다. 프로덕션 DB와 Kubernetes 클러스터도 포함된다. 처방은 격리다([[agent-sandboxing]]). Claude Code와 GitHub Actions를 묶는 것이 둘째 전략이다(06:52~08:06). 같은 trade-off에 대한 Anthropic의 답(auto mode, [[deny-and-continue]])과는 다른 축이다. ⚠️ en-orig는 Claude Code를 *"Quad Code"*(02:04, 03:24, 06:57)와 *"cloud code"*(12:07, 13:04, 13:10)로 적고, ko는 "쿼드 코드"·"클라우드"로 옮긴다.
+
+## "Claude Code ≠ Minions" — 만든 사람의 대담을 다룬 해설 (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+설명란 기준 [[patrick-collison|Patrick Collison]](Stripe CEO)과 [[boris-cherny|Boris Cherny]](*"클로드 코드를 만든"*, 해설 00:43)의 대담을 다룬 해설이다. 해설은 **Stripe 사내 에이전트 [[stripe-minions|Minions]]와 Claude Code를 구분하라**고 두 번(01:36~01:48, 설명란) 고지한다 — devbox·blueprint는 Minions 쪽 이야기다. Claude Code에 직접 귀속되는 원음은 **없다**(Cherny 목소리로 확정되는 구간 없음). 해설의 *"작업하는 디렉토리에서 필요한 안내를 발견하게"*(05:34~05:39) 권고는 위 *계층적 CLAUDE.md 상속*과 같은 방향이다(Tech Bridge 1인칭 권고).

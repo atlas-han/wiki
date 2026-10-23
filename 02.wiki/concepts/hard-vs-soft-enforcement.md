@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-09-13
-updated: 2026-10-17
+updated: 2026-10-23
 ---
 
 # 하드 강제와 소프트 강제
@@ -146,3 +146,9 @@ updated: 2026-10-17
 ## 벤더 제품의 기본값은 soft — Markdown standards, CI 매핑 없음 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
 
 [[atlassian|Atlassian]] standards는 **에이전트가 해석하는 Markdown 규칙**이다. 화자는 *"a lot more uh loose"* 한 lint라고 말한다(40:54~41:04). CI check(hard) 매핑은 기본 제공되지 않는다(51:58~52:03). 벤더 제품에서 soft 강제가 기본값이고, hard는 청중 요청으로만 등장한 사례다.
+
+## "invariants와 hard barriers" — 결제 회사 CEO의 같은 축, 그리고 "요청 vs 시스템의 제한" (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+- **원음**(해설이 [[patrick-collison|Patrick Collison]]에게 귀속, 03:02~03:18): *"it does mostly come back to this idea of um relying on invariance[invariants] and uh hard barriers rather than um things that are somewhat more subjective or discretionary or um or probabilistic."* — 이 페이지의 소스들은 대부분 에이전트 도구 쪽 화자였다. 여기서는 [[stripe|Stripe]]의 **회사 운영 원칙**으로 같은 축이 나오고, 소프트 쪽에 *subjective · discretionary · probabilistic* 셋을 명시적으로 넣는다.
+- 해설의 번역: *"운영 데이터를 건드리지 말라고 적어두는 것과 개발 환경에서 운영 데이터에 접근할 수 없게 만드는 것은 다릅니다. 전자는 요청이고 후자는 시스템의 제한입니다."*(03:32~03:40) 먼저 정할 경계 셋 — **수정 가능한 파일 · 쓸 수 있는 자격 증명 · 배포 가능한 곳**. 검증 쪽 사다리: *"매번 프롬프트로 테스트를 부탁하는 데서 끝내지 않고 검사 결과가 없으면 다음 단계로 넘어가지 않게"*(04:16~04:23, ASR 보정) → [[deterministic-agent-pipeline]]의 blueprint.
+- ⚠️ 원음은 약 15초뿐이고 질문 화자는 미상. ASR *"invariance"* 는 *invariants* 로 판독. 경계 셋·검사 사다리는 Tech Bridge 해설이다.

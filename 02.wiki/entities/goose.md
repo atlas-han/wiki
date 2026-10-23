@@ -3,9 +3,9 @@ title: Goose
 type: entity
 category: tool
 tags: [harness, open-source, block, acp, mcp, linux-foundation]
-sources: [tech-bridge-acp-universal-remote]
+sources: [tech-bridge-acp-universal-remote, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-10-23
 ---
 
 # Goose
@@ -25,3 +25,7 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-acp-universal-remote]] · [[block]] · [[alex-hancock]] · [[agent-client-protocol]] · [[agent-harness-design]] · [[agentic-stack-decomposition]]
+
+## 다운스트림 첫 사례 — Stripe Minions (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+[[stripe|Stripe]]의 사내 코딩 에이전트 [[stripe-minions|Minions]]가 *"블록의 구스를 바탕으로 스트라이프가 만든 자체 에이전트"*(해설 01:40~01:44, 설명란 *"Minions는 goose를 기반으로 만든 Stripe 자체 코딩 에이전트"*)다. 이 위키에서 **Goose 위에 만든 제품이 처음 나온다** — 위 *당사자 진술* 경고와 달리 이번엔 제3자(Tech Bridge가 Stripe 블로그를 인용)의 서술이다. ⚠️ 어떤 부분을 가져다 썼는지(하네스 전체 · 포크 여부)는 자막에 없다.

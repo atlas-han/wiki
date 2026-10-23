@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-09-09
-updated: 2026-10-17
+updated: 2026-10-23
 ---
 
 # 클라우드 에이전트 위임
@@ -115,3 +115,7 @@ updated: 2026-10-17
 클라우드 위임을 하나의 범주가 아니라 **격리 수준이 다른 네 단계**로 쪼갠다. 노트북 Docker → Claude Code + GitHub Actions(GitHub 이벤트에만 묶인 lock-in) → 별도 VM·Mac mini(에이전트끼리 co-location) → Kubernetes 세션당 pod(*"the most robust strategy"* 09:38~09:41)다. 자세한 내용은 [[agent-sandboxing]]에 있다. 노트북 일화도 있다. *"biking home with your laptop open cuz you didn't want cloud code[=Claude Code] to shut down"*(12:04~12:08).
 
 > ⚠️ **Contradiction(약)**: 위 Rauch의 *"we could eradicate supply chain attacks (…) if we move (…) to sandboxes"*와 달리 Brennan은 *"sandboxing is not a panacea. There is evidence of agents escaping their sandboxes."*(12:15~12:22)라고 한다. 위협 모델은 다르다(개발자 머신 malware 대 샌드박스 안의 에이전트). 자사 제품 [[openhands|Agent Canvas]]의 로컬 ↔ Docker ↔ VM ↔ Kubernetes 토글(13:07~13:20)은 Rauch의 "양방향"과 같은 방향이다.
+
+## devbox 열 개 — 그리고 "10배로 읽지 말라" (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+원음(화자 미상, 06:27~06:36): *"10 different dev boxes um with different agents executing parts of the plan and they might work all day"*. [[stripe|Stripe]]의 devbox는 사람과 [[stripe-minions|Minions]]가 함께 쓰는 클라우드 개발 환경이다(해설). 해설과 설명란은 **두 번** *"생산성이 열배라는 뜻으로 읽을 수는 없습니다"* 라고 막고, 먼저 볼 것을 **계획**으로 돌린다 — 입력·출력·오류 형식·각자 바꿀 파일, 임시 응답 합의, 완료 조건(코드 작성/테스트 통과/리뷰 요청), 전제가 바뀌면 다시 나눌 기준(06:42~07:33, 해설 예시). → [[plan-to-ticket-pipeline]]

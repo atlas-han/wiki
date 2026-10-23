@@ -36,6 +36,8 @@ updated: 2026-10-22
 - [[alexandr-wang]] — [[meta|Meta]] Chief AI Officer(해설 소개), Scale AI 창업. [[muse|Muse]] 제작: 행동별 eval·80/20 launch blocking·작은 부탁의 신뢰 ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 발췌 속 자기소개 없음, 당사자
 - [[david-senra]] — Alexandr Wang 인터뷰(`S6l3aRsecuE`) 진행자. **이름은 설명란에만** ([[tech-bridge-alexandr-wang-muse-launch]])
 - [[john-collison]] — Stripe 공동창업자(해설), *Cheeky Pint*에서 Zuckerberg · Wang 동석 인터뷰 진행 ([[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]]) ⚠️ 이름·직함은 해설에만, 발췌 속 목소리 미확정
+- [[patrick-collison]] — [[stripe|Stripe]] CEO(설명란·해설). 원음 *"relying on invariance[invariants] and uh hard barriers rather than … probabilistic"*(해설 귀속) ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+- [[boris-cherny]] — [[claude-code|Claude Code]]를 만든 사람(설명란·해설), Collison 대담 상대. ⚠️ 목소리로 확정되는 발췌 없음 ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
 - [[nat-friedman]] — Wang의 *"colleague"*. OpenClaw(⚠️ 판독)를 일찍 써 보고 흥분과 불안을 전한 Muse의 출발점(해설만) ([[tech-bridge-alexandr-wang-muse-launch]])
 - [[gabriel-martinez]] — [[g2i|G2i]] engineering manager·"resident slop warden"(Gabo). 슬롭 = 생성이 판단을 앞지를 때, 압축된 리뷰 표면·관례 ([[tech-bridge-g2i-generation-cheap-evaluation-expensive]]) — 자막에서 자기소개
 - [[remy-guercio]] — [[tailscale|Tailscale]] strategic projects team, AI gateway Aperture 담당(이름은 자막, 성은 설명란에만). 토큰맥싱 → ROI 맥싱, 네 층(LLM·데이터·인터페이스·샌드박스)의 선택권, [[ai-gateway]] ([[tech-bridge-tailscale-aperture-ai-without-lock-in]]) ⚠️ 벤더 발표
@@ -239,6 +241,7 @@ updated: 2026-10-22
 - [[meta-superintelligence-labs]] — [[meta|Meta]]의 프론티어 모델 조직(MSL). FAIR 전사 → 재부팅 → **[[talent-density|인재 밀도]]**·CEO 좌석 주변 배치 ⚠️ 약어 미전개
 - [[cognition]] — **[[dioxus|Dioxus]]를 인수한 회사.** 소스가 말하는 것은 **채용 공고 세 문장이 전부** (sources: 1)
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
+- [[stripe]] — 결제 인프라 회사(해설). 사람과 에이전트가 함께 쓰는 클라우드 개발 환경 devbox, 사내 에이전트 [[stripe-minions|Minions]] ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 블로그 미확인
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -293,6 +296,7 @@ updated: 2026-10-22
 - [[cursor-cloud]] — [[cursor|Cursor]]의 원격 자율 에이전트 실행 환경(Linux VM·멀티 레포·자기 검증 비디오·automations·`memories.md`) ([[tech-bridge-cursor-legacy-refactoring]])
 - [[openclaw]] — **여섯** 소스에 지나가듯 언급되는 **에이전트 플랫폼**(개인 배포·개인 위키·"claw land"·**Mac Studio 구매의 계기**). 어느 소스도 설명하지 않아 언급을 모은 페이지 (sources: 6) ⚠️ 정체는 위키의 추정
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
+- [[stripe-minions]] — Stripe 사내 코딩 에이전트, [[goose]] 기반. devbox에서 실행, blueprint = 모델 판단 단계 + 정해진 코드 검사 단계. Claude Code와 다른 시스템 ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 해설의 블로그 인용
 
 ### Tools
 - [[fx]] — Vercel Labs 코딩 CLI(ASR "effects", 설명란 fx.sh). 셸처럼 부팅, 6MB/11MB, 임베드 가능(fx0 데모: HTML → 샌드박스 Next.js → Eve 에이전트) ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 자사 진술
@@ -794,6 +798,7 @@ updated: 2026-10-22
 - [[tech-bridge-three-level-agent-review]] — [[corey-gallon|Corey Gallon]](⚠️ 설명란만, *추정*) 에이전트가 하는 말을 모두 믿습니다: 검토 3단계(12:09, 공식 챕터 8, 2026-10-19 업로드): 실패 셋 → 검토 셋, 메모리 누수(거짓 셋, PR 머지)·1년 치 거래 추출(56 차이, balanced to the penny)·자동 갱신 계약 요구서(do not send), 스킬로 공개 ⚠️ 이름 설명란만·수치 자기 보고(4/10 세션은 처음 발생 비율)·비교 기준 없음·Contradiction(긴장) 둘
 - [[tech-bridge-top-1-percent-ai-habits]] — [[nick-saraev|Nick Saraev]] 클립 7개 + Tech Bridge 내레이션 해설(7:29, 공식 챕터 9, 2026-10-20 업로드, 멤버 전용 → 공개): 업무용 AI 습관 일곱 — 말로 맥락 주기 · 회의를 다음 작업의 입력으로 · 글을 시각 자료로 · [[fuzzy-intent-discovery|AI가 나를 인터뷰]] · [[sycophancy|의견 대신 약점]] · 직접 맡겨 보고 같은 기준으로 비교 · 새 형태 시험. 내레이션이 매 장 범위·검증 단서를 붙인다 ⚠️ 한국어 원 내레이션 받아쓰기 없음(en-orig = 영어 트랙 ASR, ko = 그 번역), 클립 둘 판독 불가
 - [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]] — [[mark-zuckerberg|Zuckerberg]] · [[alexandr-wang|Wang]] *Cheeky Pint*(진행 [[john-collison|John Collison]]) 발췌 + Tech Bridge 한국어 해설(12:30, 공식 챕터 21, 2026-10-21 업로드): MMA 카메라 *in between the rounds*, 모델이 곧 제품, [[muse-spark|Spark]](*not that big*) → [[muse-wonder|Wonder]](*significantly bigger*), 기억(*days, weeks, or months*)과 Active Focus, 결과 전의 수표(*the whole exec team scared*), MSL *full reboot*, 브라우저 → API ⚠️ 해설 안 날짜 불일치(10-10 vs 10-12)·금액은 해설만(원음 숫자 누락)·'차' car/tea 미판정·API 구간 무캡션
+- [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]] — [[patrick-collison|Patrick Collison]] × [[boris-cherny|Boris Cherny]] 대담 발췌 2구간(약 30초) + Tech Bridge 한국어 해설(10:00, 챕터 없음, 2026-10-22 업로드): AI가 코딩하는데 왜 내가 더 바쁠까 — 생성과 배포 사이의 간격, devbox · worktree(파일만 격리), invariants · hard barriers, [[stripe-minions|Minions]] blueprint, 디렉터리별 안내, 계획 후 병렬, 생성 시각 vs 수용 시각 ⚠️ 한국어 단일 트랙, en-orig 없음
 - [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]] ([[langchain|LangChain]] Labs) AI 에이전트에 학습하는 메모리를(15:28, 챕터 19): 관찰 ≠ 학습, semantic · episodic · procedural(개선의 대부분) + working/long-term, 읽기·쓰기 순환과 필터 → [[trace-to-memory-loop]], 세 교훈(대부분 history · 캐시/hot path · procedural은 사람 검토 + eval) ⚠️ 10:13~12:28 [[langsmith|LangSmith]]·Context Hub 자사 제품 · *"about 75%"* 화자 추정 · 이름·직함 설명란에만 · ko가 run → "사형 집행", "세금 정보" 환각
 - [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]] ([[stigg|Stigg]]) 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(19:00, 챕터 15): 4월 가격 비상(Anthropic 서드파티 에이전트 구독 사용 차단 · OpenAI "5 5x" · Copilot 무료 폐지)은 인프라 문제, 검사가 청구서 뒤에 온다 → [[reserve-then-settle]], OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, 4가지 패턴, AI의 Stripe moment ⚠️ 벤더 CEO · 타사 내부 주장 출처 없음 · *"150s to even 750"* 단위 미발화(설명란 "배"는 업로더 해석) · 연도 미발화 · ko concurrency → "참석률", rate limit → "이자율"
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]](설명란에만) ([[braintrust|Braintrust]]) 평가 플랫폼 만들기가 생각보다 어려운 이유(16:25, 챕터 15): evals + observability 두 기둥, 최소 eval 시스템 세 요소, multi-persona(PM·SME), North Star 개선 루프(drift) → [[production-trace-eval-flywheel]], [[eval-platform-maturity-stages|성숙 4단계]], systems problem(수백 MB 트레이스, 실시간 vs 장기 쿼리, BTQL), headless 코딩 에이전트가 eval을 돌고 사람이 배포 결정 ⚠️ 벤더 피치(14:45~15:45 unknown unknowns) · 영상이 발표 중간에서 시작 · ko가 production을 "개발 중"·"오프라인"으로 반전
@@ -931,7 +936,7 @@ updated: 2026-10-22
 
 ## 통계
 
-- 총 페이지 수: 892 (890 → 892, + 2026-10-22 Tech Bridge 1편(10-21 업로드 — 저커버그는 AI에게 대체 뭘 시키고 있을까, Cheeky Pint 해설): source 1 + entity 1 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 892와 일치)
+- 총 페이지 수: 897 (892 → 897, + 2026-10-23 Tech Bridge 1편(10-22 업로드 — AI가 코딩하는데 왜 내가 더 바쁠까, Stripe 해설): source 1 + entity 4 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 897과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-22 (Tech Bridge **1편** — 10-21 업로드 [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까? | 메타 뮤즈와 개인 AI]](`vF_vVcqa9M4`). `Yhck-x6VuLs`는 여전히 멤버 전용)
-- 직전 ingest: 2026-10-21 (Tech Bridge **1편** — 10-20 업로드 [[tech-bridge-top-1-percent-ai-habits|상위 1% 처럼 AI 쓰는 법]](`WPJoi3ezJJc`, 멤버 전용 → 공개). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 마지막 ingest: 2026-10-23 (Tech Bridge **1편** — 10-22 업로드 [[tech-bridge-stripe-collison-cherny-ai-dev-workflow|AI가 코딩하는데 왜 내가 더 바쁠까? | Stripe의 AI 개발 워크플로]](`m3g2EkMjpno`). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 직전 ingest: 2026-10-22 (Tech Bridge **1편** — 10-21 업로드 [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까? | 메타 뮤즈와 개인 AI]](`vF_vVcqa9M4`). `Yhck-x6VuLs`는 여전히 멤버 전용)

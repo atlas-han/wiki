@@ -6,9 +6,9 @@ tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemer
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
 related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-10-17
-updated: 2026-10-19
+updated: 2026-10-23
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -83,3 +83,9 @@ updated: 2026-10-19
 - [[tech-bridge-openhands-sandboxing-coding-agents]]
 - [[tech-bridge-five-concepts-coding-with-ai-agents]] — 일회용 샌드박스(Cedric Clyburn, 입문 해설)
 - 관련: [[tech-bridge-tailscale-aperture-ai-without-lock-in]](샌드박스를 네 층 중 하나로) · [[tech-bridge-conductor-orchestras-not-factories]](worktree → cloud sandbox) · [[tech-bridge-vercel-rauch-agentic-workflow]](blast radius, 공급망) · [[anthropic-managed-agents]]
+
+## devbox, 그리고 worktree가 나누지 않는 것 (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+- (해설, Stripe 블로그 인용) [[stripe|Stripe]]의 **devbox** = *"코드와 개발 중인 서비스를 담은 클라우드 개발 환경"*. 사람이 쓰던 개발 기반을 사내 에이전트 [[stripe-minions|Minions]]에도 쓴다(01:20~01:33). 원음 ②(화자 미상): *"10 different dev boxes um with different agents executing parts of the plan"*(06:27~06:33).
+- 작은 팀의 출발점으로 해설은 **작업별 브랜치 + git worktree**를 들면서 바로 한계를 단다: *"워크트리는 파일 작업 공간을 나누는 도구입니다. 접근 권한이나 데이터베이스까지 자동으로 격리해 주지는 않습니다. 테스트 데이터, 환경 변수, 실행 포트, 외부 서비스 권한은 따로 정해야 합니다."*(02:15~02:28) — 위 격리 스펙트럼에서 **파일 층만** 나누는 가장 얇은 단계다. 점검 하나 더: *"실패한 작업을 버리고 같은 조건에서 다시 시작할 수 있는지"*(02:28~02:32) → 일회용 샌드박스의 재현성 조건.
+- 분리의 효과를 보안이 아니라 **추적성**으로 든다: 독립 환경이면 *"변경과 실행 기록을 작업별로 살펴보기 쉬워집니다"*(02:05~02:10).

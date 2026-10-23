@@ -138,8 +138,9 @@ sources:
   - tech-bridge-three-level-agent-review
   - tech-bridge-top-1-percent-ai-habits
   - tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint
+  - tech-bridge-stripe-collison-cherny-ai-dev-workflow
 created: 2026-06-03
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 # Tech Bridge
@@ -1370,3 +1371,13 @@ updated: 2026-10-22
 - 10-14 [[tech-bridge-alexandr-wang-muse-launch|Wang 편]]과 같은 **한국어 해설 + 원본 인터뷰 발췌** 형식, 원본은 *Cheeky Pint*(진행 John Collison, 해설). 발췌 아홉 구간 약 3분. 줄거리: 두 사람의 사용(차 주문 · MMA 카메라) → 모델이 곧 제품 → Spark(*not that big*) → Wonder(*significantly bigger*) → 기억과 Active Focus → 결과 전의 수표 → MSL full reboot → 브라우저에서 API로.
 - **자막 구성**: 메타 `language` = `en`(10-21 편과 같음)인데 이번엔 받은 **ko가 `lang=ko` 원 오디오 ASR** — 해설은 ko로 인용. en-orig = 영어 트랙(더빙 추정) ASR, en = ko의 기계 번역.
 - ⚠️ 해설 안의 날짜 불일치(Wonder 10-12 vs 10-10), 연도(ko 2025년 말 vs 더빙 late 2024), '차' car/tea(더빙이 둘로 갈림), 원음 ⑧의 금액 누락(해설 *1천억 달러 이상*), API 구간(11:03→11:38) 무캡션.
+
+## 2026-10-22 업로드 — Stripe 해설, AI가 코딩하는데 왜 내가 더 바쁠까 (2026-10-23 ingest)
+
+[[tech-bridge-stripe-collison-cherny-ai-dev-workflow|AI가 코딩하는데 왜 내가 더 바쁠까? | Stripe의 AI 개발 워크플로]](`m3g2EkMjpno`, 10:00, 공식 챕터 없음) — [[patrick-collison]](신규) · [[boris-cherny]](신규) · [[stripe]](신규) · [[stripe-minions]](신규) ([[hard-vs-soft-enforcement]] · [[deterministic-agent-pipeline]] · [[agent-sandboxing]] · [[codebase-gardening]] · [[verification-bottleneck]] · [[cloud-agent-delegation]])
+
+- 10-21 Cheeky Pint 편에 이은 **한국어 해설 + 원본 대담 발췌** 형식. 원본은 설명란 기준 Collison × Cherny 대담(`S_lzYIvtEaQ`, claude.com/office-hours). **발췌는 두 구간 약 30초**(invariants · hard barriers / devbox 열 개)이고, 해설은 Stripe 블로그 *Minions* Part 1·2를 끌어온다. 처방 셋: 작업 환경 분리(devbox · worktree) · 검증 자동화(blueprint) · 계획 후 병렬 + 그 사이 *AI가 읽는 코드*.
+- **설명란이 스스로 해설과 원본을 가른다** — 소규모 팀 예시는 Tech Bridge 해설, Minions ≠ Claude Code, devbox 10개 ≠ 생산성 10배.
+- **자막 구성이 새롭다**: 오디오가 **한국어 트랙 하나**(`language: ko`), `en-orig` 없음 — ko = 원 오디오 ASR, 영어 원음은 ko 트랙 안의 영어 ASR 조각뿐, en = ko의 기계 번역. 발췌를 대조할 독립 트랙이 없다.
+- ⚠️ 발췌 화자: ① 답만 해설이 Collison에게 귀속, ① 질문과 ②는 미상 — Cherny 목소리로 확정되는 구간 없음. 무캡션 05:01→05:08(*"이 관점"* 의 원음). Stripe 블로그·원본 대담 미확인.
+- **⚠️ ko**: 보리스천이 → Boris Cherny, 대부박스 → devbox, 콜리스 → Collison, 구스 → goose, 권난 → 권한, 배보 → 배포, 제연 → 재현, 작업길이 → 작업끼리, 06:54 *새/세 에이전트* 미판정.

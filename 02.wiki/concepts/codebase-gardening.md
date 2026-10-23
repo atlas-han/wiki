@@ -6,9 +6,9 @@ tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comm
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
 related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon, product-polish-patterns]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
 created: 2026-09-26
-updated: 2026-10-19
+updated: 2026-10-23
 ---
 
 # 코드베이스 정원 가꾸기
@@ -123,3 +123,10 @@ updated: 2026-10-19
 > *"when you give the agent a proper code base with solid abstractions, (…) you end up with a much more consistent result that is similar to what you've already built before. (…) The agent doesn't need to reinvent the same like wheel every time it tries to add a new feature or it doesn't need to introduce new patterns. It will just essentially follow existing patterns."* (02:48~03:18)
 
 이 페이지의 전제(*코드베이스는 기억이다*, *안티패턴은 바이러스처럼 퍼진다*)를 **좋은 패턴 쪽**에서 쓴 것이다. 그는 이 성질을 의도적으로 겨냥해 *"use existing pages as references"*(09:38~09:43)라고 지시한다. 한계도 인정한다: *"Sometimes it just doesn't follow it."*(10:06~10:08) → [[design-system-as-agent-context]] · [[product-polish-patterns]]
+
+## 프롬프트를 고치기 전에 저장소를 — 금지 옆에 대안의 위치 (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
+
+Tech Bridge 해설(Stripe 발언 아님, 원음 05:01→05:08은 무캡션): 같은 일을 하는 코드가 세 방식으로 흩어져 있으면 *"오래된 예제를 먼저 읽었다면 이미 버린 설계를 다시 가져올 수도"* 있다(05:14~05:24) — 이 페이지의 *패턴 복제* 전제와 같은 기제. 처방 둘이 새로 붙는다.
+
+- **디렉터리에서 발견되는 안내**: *"모든 규칙을 긴 문서 하나에 넣는 것보다 작업하는 디렉토리에서 필요한 안내를 발견하게 하는 겁니다"* — 결제 코드엔 금액 처리 규칙, 화면 코드엔 컴포넌트 예제(05:31~05:46, 1인칭 권고). → [[claude-code]]의 계층적 CLAUDE.md
+- **금지 옆에 대안**: *"새 인증 로직을 만들지 말라는 문장 옆에 기존 인증 모듈의 위치를 적어 두는 겁니다."*(05:51~05:58) 진단 순서: *"AI가 같은 실수를 반복한다면 프롬프트를 다시 쓰기 전에 잘못된 예제나 오래된 설명이 저장소에 남아 있는지 확인해 보십시오."*(05:58~06:05)
