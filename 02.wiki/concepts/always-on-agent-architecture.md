@@ -6,9 +6,9 @@ tags: [always-on-agents, persistent-agents, agent-harness, thin-client, thick-se
 aliases: [always-on agent, always on agent, 상시 작동 에이전트, 상시 에이전트, proactive persistent agents, bot architecture, send user]
 related: [persistent-agent-teams, brain-hands-decoupling, durable-execution, agent-distributed-systems, human-as-async-api, pets-vs-cattle, agent-sandboxing, cloud-agent-delegation, scheduled-agent-automations, agent-attention-management, deferred-tool-context, prompt-caching, context-resets-and-compaction, agent-memory, subagent-vs-thread-handoff, action-reversibility, grokbot, openai-dots]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant]
 created: 2026-10-18
-updated: 2026-10-18
+updated: 2026-10-24
 ---
 
 # 상시 작동 에이전트 아키텍처 (Always-On Agent Architecture)
@@ -62,3 +62,11 @@ updated: 2026-10-18
 
 - [[tech-bridge-lee-robinson-always-on-agents]] — first-seen
 - [[grokbot]] · [[lee-robinson]] · [[persistent-agent-teams]] · [[brain-hands-decoupling]] · [[durable-execution]]
+
+## 2026-10-24 — 두 소스가 더한 것
+
+- **노트북은 잠든다** ([[tech-bridge-jediah-katz-harness-whats-left]]): [[jediah-katz|Jediah Katz]] *"we've gone from agents that work on a typical task for minutes to hours to days, and even longer. And there's just no way that this can work on one person's laptop which might go to sleep."*(05:28~05:40) — 남는 하네스 셋 중 첫째로 *"the infrastructure … to make an autonomous colleague reliable"*. 같은 GrokBot 계열의 두 번째 화자.
+- **연속 감시가 아니라 주기 확인 — 한도 때문에** ([[tech-bridge-claude-duet-proactive-assistant]]): [[claude-duet|Claude Duet]]은 연결 계정을 *"every few hours instead of non-stop because if it was doing this non-stop, it would burn through your limits a lot faster obviously"*(발췌, 화자 미상). 이 페이지의 트리거·heuristic 골격에 **비용 쪽 제약**이 붙는다. 해설: *"정기적으로 살펴보는 일도 사용량을 쓰거든요."*
+- **"조용할 때를 안다"의 제품판** — Duet 해설 *"중요한 건 알림이 많아지는게 아니에요 … 급하지 않은 일까지 계속 부르면 오히려 방해가 될 수 있어요."* Anthropic이 같은 범주(개인 상시 비서)에 들어왔다 — [[grokbot]] · [[openai-dots]] · [[muse]] · [[claude-duet]].
+
+> ⚠️ Duet 쪽은 전부 2차 진술(해설 + 화자 미상 발췌)이다.

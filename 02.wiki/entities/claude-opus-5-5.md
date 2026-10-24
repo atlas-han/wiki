@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant]
 links: []
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-24
 ---
 
 # Claude Opus 5.5
@@ -37,3 +37,7 @@ updated: 2026-10-09
 ## References
 
 - [[tech-bridge-white-house-superintelligence-panel]] · [[tom-brown]] · [[anthropic]]
+
+## Claude Duet의 판단 모델? (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
+
+발췌(화자 미상): *"also said that op 5.5 and that's a model that's going to decide what needs [?] with you first."* — [[claude-duet|Claude Duet]]이 무엇을 먼저 알릴지 정하는 모델로 읽힌다. ⚠️ *op 5.5* → Opus 5.5는 ASR 판독, 앞부분 무캡션.

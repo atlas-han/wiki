@@ -5,9 +5,9 @@ category: product
 tags: [openai, chatgpt, persistent-agent, always-on-agent, personal-agent, devday-2026]
 aliases: [Dots, Dot, 닷, 도트, always-on agents in ChatGPT]
 links: []
-sources: [tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-claude-duet-proactive-assistant]
 created: 2026-10-09
-updated: 2026-10-11
+updated: 2026-10-24
 ---
 
 # Dots (OpenAI)
@@ -69,3 +69,7 @@ updated: 2026-10-11
 - [[tech-bridge-altman-devday-dots]] — first-seen
 - [[openai]] · [[sam-altman]] · [[openai-astra]] · [[chatgpt-space]] · [[dan-shipper]]
 - 관련: [[persistent-agent-teams]] · [[agent-persona-naming]] · [[proactive-idea-feed]] · [[nightly-memory-consolidation]] · [[muse]] · [[ai-privilege]]
+
+## 같은 범주의 Anthropic 제품 (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
+
+[[claude-duet|Claude Duet]] — 선제 알림 · 클라우드 실행 · 승인 게이트. 발췌의 *"Grockbot dots all"* 이 Dots를 가리킬 수 있으나 판독 불가.

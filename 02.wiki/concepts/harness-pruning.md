@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left]
 created: 2026-09-05
-updated: 2026-10-18
+updated: 2026-10-24
 ---
 
 # Harness Pruning
@@ -119,3 +119,11 @@ pruning은 축소가 아니라 **재배치**다.
 [[lee-robinson|Lee Robinson]]: *"one of the principles that we had at Cursor uh and now at SpaceX is to delete the product. And what we mean by this is you kind of have to internalize and assume that the models today are the worst they'll ever be. Which means that in 6 months, uh, you might need to completely rebuild the UI."*(37:45~38:04) *"you really want to try to build for the next generation of the model. like how do you build as little as possible"*(38:19~38:28) 이 페이지의 "지운다"를 **처음부터 적게 만든다**(위 2026-09-23 절)와 한 원칙으로 묶는다. 근거로 오늘 강의 내용 대부분이 6개월 전·1년 전에 했을 강의와 크게 다르다는 체감을 든다(38:04~38:17).
 
 > ⚠️ ko는 이 가정법을 **"이 대화는 6개월에서 1년 전에 있었던 일입니다"**(38:09)로 옮긴다.
+
+## 지웠던 것을 다시 넣는다 — 같은 회사, 두 제품 (2026-10-24 · [[tech-bridge-jediah-katz-harness-whats-left]])
+
+[[jediah-katz|Jediah Katz]]: *"I mentioned how [at] Cursor we found ourselves removing things from the harness, removing prompting, removing guard rails as the models got smarter. But curiously in Grockbot[GrokBot] we've actually found ourselves putting back a lot of these things, adding new prompting, adding new guard rails. And that's because there's a lot of new tasks in this new way of working."*(03:50~04:09) 위 *"균형추"* 절의 **1인칭 사례**다 — pruning은 익숙한 작업에서, 재추가는 새 작업에서.
+
+**지워지는 메커니즘**도 같은 강연이 댄다 — data flywheel: *"the harness brings harder and harder coding tasks within reach … more coding data is shared with the labs. And eventually the models learn natively how to do these skills well."*(02:12~02:31) 해설은 *보조 바퀴*로 옮긴다. 지워도 남는 것은 셋 — 오래 실행되는 인프라 · trust and security · efficiency.
+
+> ⚠️ 해설이 전한 *"두 연구 — 하네스를 바꿔도 점수가 크게 달라지지 않았다"* 는 원음이 무캡션이라 연구명을 확인할 수 없다. 해설 스스로 *코딩·머신 러닝 시험의 맥락*으로 범위를 좁힌다.

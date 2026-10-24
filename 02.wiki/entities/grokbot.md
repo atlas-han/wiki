@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left]
 created: 2026-09-01
-updated: 2026-10-18
+updated: 2026-10-24
 ---
 
 # GrokBot
@@ -107,3 +107,8 @@ updated: 2026-10-18
 - ASR: en-orig *"Grockbot"*·*"open grobbot"*. 이번에는 ko·`en`이 *"Grokbot"*·*"Grok Bot"*으로 바르다.
 
 > ⚠️ 이 페이지 첫 줄의 *"[[cursor|Cursor]]의 … 제품"*은 고치지 않는다. 화자는 *"We're working on at SpaceX"*(00:17~00:19)라고 한다. 조직 관계는 [[spacex]]의 원칙대로 추정하지 않는다.
+
+## 다시 넣은 프롬프트와 가드레일 (2026-10-24 · [[tech-bridge-jediah-katz-harness-whats-left]])
+
+[[jediah-katz|Jediah Katz]]: Cursor에서는 모델이 좋아지며 prompting·guard rails를 지웠는데 *"curiously in Grockbot[GrokBot] we've actually found ourselves putting back a lot of these things, adding new prompting, adding new guard rails. And that's because there's a lot of new tasks in this new way of working."*(03:50~04:09) → [[harness-pruning]]. ASR은 이번에도 *"Grockbot"*.
+- [[tech-bridge-claude-duet-proactive-assistant]] 발췌의 *"Grockbot dots all"*(02:33)은 GrokBot · [[openai-dots|Dots]] 비교로 읽힐 수 있으나 판독 불가 — 해석하지 않는다.

@@ -2234,3 +2234,23 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 10분짜리 1편이라 서브에이전트 없이 오케스트레이터가 raw · source · 통합을 직접 했다. 자막 ko·en 모두 `automatic_captions`, `--sleep-subtitles 8`로 429 없음. **한국어 단일 트랙 영상은 en-orig가 아예 없다** — 영어 발췌는 ko 트랙의 영어 ASR로만 인용 가능하고 교차 확인이 안 된다.
+
+## [2026-10-24] ingest | Tech Bridge — 10-23 업로드 2편 (하네스는 더 이상 필요 없을까? — Jediah Katz 강연 해설 · 클로드가 먼저 일한다 — Claude Duet 해설)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**(신규 멤버 전용 `8tjhiruPpBg`, 업로드 날짜·제목 미상). `Yhck-x6VuLs`(목록 `upload_date` 20261014)는 20편 범위 밖으로 밀려 목록에 없었고, 단건 조회에서 여전히 멤버 전용(stderr ERROR). 신규 10-23 업로드 2편 `NUyLH7tjQpg`(8:28) · `BfHkp3dz2gc`(6:06) → 둘 다 `public` 롱폼. 그 외 목록은 전부 vault에 있음.
+
+**신규 source 2 · entity 2**, 기존 페이지 보강 13개, index **897 → 901**(실측 일치).
+
+- `NUyLH7tjQpg`(8:28, 챕터 10) → [[tech-bridge-jediah-katz-harness-whats-left]] — [[ai-engineer|AI Engineer]] 강연 *Smarter Models Killed the Harness. Here's What's Left*([[jediah-katz|Jediah Katz]], `7Y4sbZgBdnc`)의 발췌 + 한국어 해설. data flywheel → Cursor에선 지웠고 GrokBot에선 다시 넣은 프롬프트·가드레일 → 남는 셋(인프라 · trust and security · efficiency).
+  - 신규: [[jediah-katz]]
+  - 보강: [[harness-pruning]](같은 회사 두 제품의 1인칭 재추가 사례 + flywheel 메커니즘) · [[always-on-agent-architecture]](노트북은 잠든다) · [[least-privilege-connectors]](API 키 파일) · [[agent-attention-management]] · [[grokbot]] · [[cursor]] · [[ai-engineer]]
+  - ⚠️ 발췌 4구간 무캡션(오프닝 인용 · *두 연구* · 총괄 AI 그림 · 사내 사례). *6개월* 은 설명란에만. ko *세일* → 새 일(추정).
+- `BfHkp3dz2gc`(6:06, 챕터 10) → [[tech-bridge-claude-duet-proactive-assistant]] — [[anthropic|Anthropic]]의 선제형 비서 해설. **설명란에 원본 링크 없음, 발췌 화자 미상.**
+  - 신규: [[claude-duet]]
+  - 보강: [[action-reversibility]](보내기·결제·서명·삭제 게이트 + 승인 불가 영역) · [[always-on-agent-architecture]](몇 시간마다 확인 — 한도 때문) · [[least-privilege-connectors]](비밀번호·토큰 비노출) · [[agent-attention-management]] · [[anthropic]] · [[claude-opus-5-5]](*op 5.5* 판독) · [[boris-cherny]](*Boris*만, 동일인 미확정) · [[openai-dots]]
+  - ⚠️ 공식 발표·도움말·리뷰 미확인. *"Grockbot dots all"* 판독 불가 — 해석하지 않음.
+- 페이지화하지 않음: data flywheel(강연 속 용어 — [[harness-pruning]]에 기술), 해설이 전한 *두 연구*(이름 무캡션).
+
+### 운영 메모
+
+8분·6분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 두 편 모두 `Korean original` + `English (US)` 2트랙, 메타 `language`=`en`. **이번엔 `ko`와 `ko-orig`가 바이트까지 같았다**(md5 일치) — 둘 다 `lang=ko` 원 ASR. info.json의 `automatic_captions['ko']` URL은 `tlang=ko`였지만 실제 받은 파일은 원 ASR이었다 → **URL보다 `ko`·`ko-orig` 파일 비교가 확실하다.** `--sleep-subtitles 8`로 429 없음. `NUyLH7tjQpg`의 `timestamp`는 2026-10-24 08:00 KST(`upload_date`는 UTC 기준 20261023).

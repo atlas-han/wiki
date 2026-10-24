@@ -6,9 +6,9 @@ tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
 related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant]
 created: 2026-09-09
-updated: 2026-10-19
+updated: 2026-10-24
 ---
 
 # 행동 가역성
@@ -87,3 +87,7 @@ Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이�
 ## 제품 사용자의 two-way door — 삭제 취소와 보관 (2026-10-19 · [[tech-bridge-railway-polished-internal-tools]])
 
 이 페이지는 에이전트의 행동을 다뤘다. [[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정)은 에이전트가 만드는 **제품의 사용자 행동**에 같은 원리를 건다. 에이전트의 기본값은 삭제 버튼 → 확인 대화상자 → 즉시 삭제(07:29~07:40)다. 그가 요청하는 것은 UI에서 바로 지우고 *"you have like a couple of seconds where you could change your mind"*(07:54~07:58)를 준 뒤 실제로 지우는 *"delayed action"*(08:14~08:16)과, 지우지 않고 숨기는 보관/보관 해제(08:16~08:41)다. 확인 대화상자(사전 승인)를 사후 취소로 바꾸는 것이다. → [[product-polish-patterns]]
+
+## 개인 비서의 4동사 게이트와 승인 불가 영역 (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
+
+[[claude-duet|Claude Duet]](발췌, 화자 미상): *"before it sends a message, makes a payment, signs a document, or deletes anything, it shows you what exactly it's about to do and waits for your approval."* 해설은 두 단계로 나눈다 — **읽기·정리·초안은 먼저**, 밖으로 보내기·결제·삭제는 승인 후. 그리고 *"주식거래나 계좌[ 간] 송금처럼 승인해도 할 수 없는 일도 있고요."*(03:14~03:17) → 이 페이지의 one-way door 구분이 **동사 목록**으로 제품에 들어갔고, 그 위에 **승인으로도 열리지 않는 층**이 하나 더 있다. [[no-silent-write]]와 같은 방향. ⚠️ 2차 진술.

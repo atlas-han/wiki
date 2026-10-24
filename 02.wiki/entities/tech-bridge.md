@@ -139,8 +139,10 @@ sources:
   - tech-bridge-top-1-percent-ai-habits
   - tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint
   - tech-bridge-stripe-collison-cherny-ai-dev-workflow
+  - tech-bridge-jediah-katz-harness-whats-left
+  - tech-bridge-claude-duet-proactive-assistant
 created: 2026-06-03
-updated: 2026-10-23
+updated: 2026-10-24
 ---
 
 # Tech Bridge
@@ -1381,3 +1383,18 @@ updated: 2026-10-23
 - **자막 구성이 새롭다**: 오디오가 **한국어 트랙 하나**(`language: ko`), `en-orig` 없음 — ko = 원 오디오 ASR, 영어 원음은 ko 트랙 안의 영어 ASR 조각뿐, en = ko의 기계 번역. 발췌를 대조할 독립 트랙이 없다.
 - ⚠️ 발췌 화자: ① 답만 해설이 Collison에게 귀속, ① 질문과 ②는 미상 — Cherny 목소리로 확정되는 구간 없음. 무캡션 05:01→05:08(*"이 관점"* 의 원음). Stripe 블로그·원본 대담 미확인.
 - **⚠️ ko**: 보리스천이 → Boris Cherny, 대부박스 → devbox, 콜리스 → Collison, 구스 → goose, 권난 → 권한, 배보 → 배포, 제연 → 재현, 작업길이 → 작업끼리, 06:54 *새/세 에이전트* 미판정.
+
+## 2026-10-23 업로드 — 해설 2편: 하네스에 남는 3가지 · Claude Duet (2026-10-24 ingest)
+
+[[tech-bridge-jediah-katz-harness-whats-left|하네스는 더 이상 필요 없을까? AI가 똑똑해져도 남는 3가지]](`NUyLH7tjQpg`, 8:28, 공식 챕터 10) — [[jediah-katz]](신규) · [[cursor]] · [[grokbot]] · [[ai-engineer]] ([[harness-pruning]] · [[always-on-agent-architecture]] · [[least-privilege-connectors]])
+
+- 10-21·10-22에 이은 **한국어 해설 + 원본 발췌** 형식. 원본은 [[ai-engineer|AI Engineer]] 강연 *Smarter Models Killed the Harness. Here's What's Left*(`7Y4sbZgBdnc`). 줄거리: data flywheel로 코딩 보조 장치는 줄어든다 → GrokBot에선 프롬프트·가드레일을 다시 넣었다 → 남는 셋(인프라 · trust and security · efficiency).
+- 설명란이 수치를 스스로 가른다 — *90%가 노트북 밖* 은 발표자 전망(*6개월* 은 설명란에만), *1만 달러* 는 위험 예시.
+- ⚠️ 발췌 11구간 중 4구간(오프닝 인용 · 두 연구 · 총괄 AI 그림 · 사내 사례) 무캡션. **ko**: *세일*(04:21) → 새 일(추정 — 더빙은 *sales*), *이 아이에게* → 이 AI에게.
+
+[[tech-bridge-claude-duet-proactive-assistant|클로드가 먼저 일한다 | Claude Duet의 기능과 한계]](`BfHkp3dz2gc`, 6:06, 공식 챕터 10) — [[claude-duet]](신규) · [[anthropic]] · [[claude-opus-5-5]] · [[boris-cherny]] ([[action-reversibility]] · [[always-on-agent-architecture]] · [[agent-attention-management]] · [[least-privilege-connectors]])
+
+- **설명란에 원본 링크가 없고 발췌 화자를 아무도 밝히지 않는** 첫 해설 편. 근거는 해설이 전하는 개발사 소개·공식 도움말·한 리뷰.
+- 자막 구성은 두 편 모두 10-21·10-22 편과 같은 `Korean original` + `English (US)`, 메타 `language`=`en`, 받은 ko = `lang=ko` 원 ASR(`ko`·`ko-orig` 바이트 동일).
+- ⚠️ 발췌 *"op 5.5"*(Opus 5.5 판독), *"Grockbot dots all"* 판독 불가, *"CL code called Boris"* 앞 잘림. **ko**: 새 비선 → 새 비서, 계좌관 → 계좌 간, 요금지 → 요금제, 초항 → 초안.
+

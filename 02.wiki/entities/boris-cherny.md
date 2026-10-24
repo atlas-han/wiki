@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, claude-code]
 aliases: [보리스 체르니, Boris]
 links: []
-sources: [tech-bridge-stripe-collison-cherny-ai-dev-workflow]
+sources: [tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-claude-duet-proactive-assistant]
 created: 2026-10-23
-updated: 2026-10-23
+updated: 2026-10-24
 ---
 
 # Boris Cherny
@@ -23,3 +23,7 @@ updated: 2026-10-23
 ## References
 
 - [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]] · [[claude-code]] · [[anthropic]] · [[patrick-collison]]
+
+## Duet 초기 사용자 *Boris* (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
+
+발췌(화자 미상): *"[…] CL[aude] code called Boris talks through his to[-do] list with duet while he's out on walks instead of saving it all for his desk."* [[claude-duet|Claude Duet]] 초기 사용자 사례(해설: *"개발사가 소개한"*). ⚠️ 성이 없고 앞부분이 잘려 동일인으로 확정하지 않는다.

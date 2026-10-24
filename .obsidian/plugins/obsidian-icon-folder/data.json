@@ -1133,5 +1133,9 @@
   "02.wiki/entities/patrick-collison.md": "LiUser",
   "02.wiki/entities/boris-cherny.md": "LiUser",
   "02.wiki/entities/stripe.md": "LiBuilding",
-  "02.wiki/entities/stripe-minions.md": "LiBoxes"
+  "02.wiki/entities/stripe-minions.md": "LiBoxes",
+  "02.wiki/sources/tech-bridge-jediah-katz-harness-whats-left.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-claude-duet-proactive-assistant.md": "LiVideo",
+  "02.wiki/entities/jediah-katz.md": "LiUser",
+  "02.wiki/entities/claude-duet.md": "LiBoxes"
 }

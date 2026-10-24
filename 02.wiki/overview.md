@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-22
+updated: 2026-10-24
 sources: []
 ---
 
@@ -271,6 +271,8 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-10-22*: [[tech-bridge]] **1편** ingest(10-21 업로드). [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까?]]([[mark-zuckerberg|Zuckerberg]] · [[alexandr-wang|Wang]] *Cheeky Pint* 발췌 + 한국어 해설) — [[muse|Muse]]의 네 번째 소스이고, 두 사람이 한자리에 나온 첫 소스다. 10-14 Wang 편에서 미해결이던 계보가 원음으로 닫힌다. [[muse-spark|Spark]]는 작년 말 첫 사전학습에서 나온 *"frankly not that big"* 모델이고, [[muse-wonder|Wonder]]는 *"the next kind of class, significantly bigger"*다. 기억은 *"며칠·몇 주·몇 달"*의 사용 경험으로 재고([[agent-memory]]), 짝 능력은 Active Focus다(해설). 결과를 보기 전에 쓴 수표(*"the whole exec team scared"*, 근거는 *vibe report*)는 [[compute-constrained-growth]]의 경영진 쪽 사례이고, MSL의 *"full reboot"*은 채용 대화에서 나온 결정이었다([[meta-superintelligence-labs]]). ⚠️ 해설 안에서 Wonder 공개일이 10-10과 10-12로 갈린다. 금액 *1천억 달러 이상*은 해설에만 있다(원음에서 숫자가 빠졌다).
 
 - *2026-10-23*: [[tech-bridge]] **1편** ingest(10-22 업로드). [[tech-bridge-stripe-collison-cherny-ai-dev-workflow|AI가 코딩하는데 왜 내가 더 바쁠까?]]([[patrick-collison|Collison]] × [[boris-cherny|Cherny]] 대담 발췌 + 한국어 해설) — 이 위키의 첫 [[stripe|Stripe]] 엔지니어링 소스. 생성과 배포 사이의 간격을 **환경 분리(devbox · worktree) · 검증 자동화([[stripe-minions|Minions]] blueprint) · 계획 후 병렬**로 줄인다. 원음은 *invariants와 hard barriers*(→ [[hard-vs-soft-enforcement]])와 *devbox 열 개*(해설: 10배로 읽지 말 것) 두 구간뿐, 나머지는 해설.
+
+- *2026-10-24*: [[tech-bridge]] **2편** ingest(10-23 업로드). [[tech-bridge-jediah-katz-harness-whats-left|하네스는 더 이상 필요 없을까?]]([[jediah-katz|Jediah Katz]] 강연 발췌 + 해설) — 모델이 좋아지면 코딩 보조 하네스는 data flywheel로 줄지만, 새 작업([[grokbot|GrokBot]])에선 가드레일이 되돌아오고 **오래 실행 · 권한 · 비용**은 남는다 → [[harness-pruning]]의 메커니즘과 균형추를 한 화자가. [[tech-bridge-claude-duet-proactive-assistant|클로드가 먼저 일한다]] — Anthropic도 개인 상시 비서 범주에 [[claude-duet|Claude Duet]]으로 들어왔다(⚠️ 2차 진술): 주기 확인과 한도, 4동사 승인 게이트 → [[always-on-agent-architecture]] · [[action-reversibility]].
 
 ---
 

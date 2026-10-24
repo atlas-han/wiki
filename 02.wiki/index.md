@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-22
+updated: 2026-10-24
 ---
 
 # Index
@@ -50,6 +50,7 @@ updated: 2026-10-22
 - [[robert-brennan]] — OpenHands CEO·공동창업자. 코딩 에이전트 샌드박싱 네 전략·다섯 축, "sandboxing is not a panacea" ([[tech-bridge-openhands-sandboxing-coding-agents]]) — 자막에서 자기소개
 - [[jetashree-ravi]] — [[fireworks-ai|Fireworks AI]] applied ML 팀 일부 리드(이름은 자막 *"Jyotishree"*·애칭 Jet, 철자·성은 설명란). 오픈 모델 "세 가지 사실", 학습 → 배포 → 재학습 루프 ([[tech-bridge-fireworks-train-to-deploy-open-models]]) ⚠️ 당사자 발표
 - [[lee-robinson]] — SpaceX에서 GrokBot always-on agent 구조를 만드는 엔지니어(이전 Cursor). 루프를 VM 밖에, 단일 도구 send user, durable workflow, prompt caching, "delete the product" ([[tech-bridge-lee-robinson-always-on-agents]]) — ⚠️ 자막에는 "Lee"만, 성·직함·스탠퍼드 CS146S는 설명란
+- [[jediah-katz]] — [[cursor|Cursor]]에서 AI 에이전트 도구를 만든 개발자(설명란). AI Engineer 강연: data flywheel로 하네스가 줄고, [[grokbot|GrokBot]]에선 가드레일을 다시 넣었고, 인프라·보안·효율은 남는다 ([[tech-bridge-jediah-katz-harness-whats-left]])
 - [[hrishi-olickel]] — Southbridge 창업자. 보편 스키마 철회 → just-in-time ontology, 모델 세 역할, Jev 오하이오 entity resolution($10,000 → $795), prior 오류·교차 모델 교집합, Pareto surfing ([[tech-bridge-just-in-time-ontology]]) ⚠️ 이름은 설명란에만
 - [[priyanka-phatak]] — [[anthropic|Anthropic]] MTS, Claude Managed Agents 엔지니어링 팀 리드. AI Engineer 워크숍 1·2부: pet → cattle 진화, brain–hands 분리, "harnesses encode assumptions", API 객체 넷, 콘솔 Quick Start, Vault·메모리·forking 보충 답변 ([[tech-bridge-claude-managed-agents-workshop-1]] · [[tech-bridge-claude-managed-agents-workshop-2]]) ⚠️ 성 Phatak은 2부 설명란에만(발화 없음)
 - [[gabe-cemaj]] — [[anthropic|Anthropic]] MTS, Managed Agents 팀. 엔지니어링 글 [[anthropic-managed-agents]] 공저자, 워크숍 핸즈온·Q&A 주 답변자(research desk, Outcome, Vault egress 바꿔치기, 예산 상한·rewind 없음, dreaming 메모리 전용) ([[tech-bridge-claude-managed-agents-workshop-1]] · [[tech-bridge-claude-managed-agents-workshop-2]]) ⚠️ en-orig "Semach"
@@ -284,6 +285,7 @@ updated: 2026-10-22
 - [[devin]] — **Slack 안에 사는 코딩 에이전트.** 디자인 조직에서 일정표 생성·픽셀 퍼펙트 구현·**로고 누락 검수**·1회용 기능 추가에 쓰인다 ([[tech-bridge-one-designer-plus-ai]]) ⚠️ **제작사가 소스에 없다**
 - [[zed]] — 텍스트 에디터, JetBrains와 함께 [[agent-client-protocol|ACP]] 공동 제안
 - [[claude-tag]] — [[anthropic|Anthropic]]의 Slack 네이티브 에이전트. 팀 업무의 70~80%가 여기서 ([[tech-bridge-claude-code-team-workflow]]) · 제3자: **공개 출시**·채널당 메모리=사일로 ([[tech-bridge-company-brain-security]])
+- [[claude-duet]] — [[anthropic|Anthropic]]의 선제형 개인 비서: 아침 요약·알림, 클라우드에서 몇 시간마다 확인, 보내기·결제·서명·삭제 전 승인, 사용량 한도 공유, 미국 유료 대기 명단 ([[tech-bridge-claude-duet-proactive-assistant]]) ⚠️ 2차 진술만
 - [[claude-code]] — Anthropic 공식 coding agent CLI ([[anthropic-claude-code-auto-mode|auto mode]] + [[dynamic-workflows]] 신규)
 - [[managed-agents]] — Claude Platform의 호스티드 meta-harness. session/harness/sandbox 분할 + `outcomes`(채점) · AI Engineer 발표에서 **하네스 위 메타 하네스 층, 회고·`outcomes` 기본 제공** ([[tech-bridge-tokens-should-have-jobs]]) · 워크숍 1부: 첫 아키텍처 실패 이유 셋·API 객체 넷·TTFT "about 90%"(Contradiction) ([[tech-bridge-claude-managed-agents-workshop-1]]) · 워크숍 2부: agent/environment/session·Vault(placeholder·egress)·Outcome(max iterations)·**아직 없는 것 넷** ([[tech-bridge-claude-managed-agents-workshop-2]]) (sources: 7)
 - [[project-glasswing]] — Anthropic ~50개 파트너 협업 사이버보안 이니셔티브
@@ -799,6 +801,8 @@ updated: 2026-10-22
 - [[tech-bridge-top-1-percent-ai-habits]] — [[nick-saraev|Nick Saraev]] 클립 7개 + Tech Bridge 내레이션 해설(7:29, 공식 챕터 9, 2026-10-20 업로드, 멤버 전용 → 공개): 업무용 AI 습관 일곱 — 말로 맥락 주기 · 회의를 다음 작업의 입력으로 · 글을 시각 자료로 · [[fuzzy-intent-discovery|AI가 나를 인터뷰]] · [[sycophancy|의견 대신 약점]] · 직접 맡겨 보고 같은 기준으로 비교 · 새 형태 시험. 내레이션이 매 장 범위·검증 단서를 붙인다 ⚠️ 한국어 원 내레이션 받아쓰기 없음(en-orig = 영어 트랙 ASR, ko = 그 번역), 클립 둘 판독 불가
 - [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]] — [[mark-zuckerberg|Zuckerberg]] · [[alexandr-wang|Wang]] *Cheeky Pint*(진행 [[john-collison|John Collison]]) 발췌 + Tech Bridge 한국어 해설(12:30, 공식 챕터 21, 2026-10-21 업로드): MMA 카메라 *in between the rounds*, 모델이 곧 제품, [[muse-spark|Spark]](*not that big*) → [[muse-wonder|Wonder]](*significantly bigger*), 기억(*days, weeks, or months*)과 Active Focus, 결과 전의 수표(*the whole exec team scared*), MSL *full reboot*, 브라우저 → API ⚠️ 해설 안 날짜 불일치(10-10 vs 10-12)·금액은 해설만(원음 숫자 누락)·'차' car/tea 미판정·API 구간 무캡션
 - [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]] — [[patrick-collison|Patrick Collison]] × [[boris-cherny|Boris Cherny]] 대담 발췌 2구간(약 30초) + Tech Bridge 한국어 해설(10:00, 챕터 없음, 2026-10-22 업로드): AI가 코딩하는데 왜 내가 더 바쁠까 — 생성과 배포 사이의 간격, devbox · worktree(파일만 격리), invariants · hard barriers, [[stripe-minions|Minions]] blueprint, 디렉터리별 안내, 계획 후 병렬, 생성 시각 vs 수용 시각 ⚠️ 한국어 단일 트랙, en-orig 없음
+- [[tech-bridge-jediah-katz-harness-whats-left]] — [[jediah-katz|Jediah Katz]] ([[ai-engineer|AI Engineer]]) 강연 발췌 + Tech Bridge 한국어 해설(8:28, 챕터 10, 2026-10-23 업로드): 하네스는 더 이상 필요 없을까 — data flywheel, GrokBot에서 되돌아온 가드레일, 남는 셋(인프라 · trust and security · efficiency) ⚠️ 발췌 4구간 무캡션
+- [[tech-bridge-claude-duet-proactive-assistant]] — Tech Bridge 한국어 해설 + 화자 미상 발췌(6:06, 챕터 10, 2026-10-23 업로드): 클로드가 먼저 일한다 — [[claude-duet|Claude Duet]]의 선제 알림, 4동사 승인 게이트, 비밀 비노출, 사용량 한도 ⚠️ 원본 링크 없음
 - [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]] ([[langchain|LangChain]] Labs) AI 에이전트에 학습하는 메모리를(15:28, 챕터 19): 관찰 ≠ 학습, semantic · episodic · procedural(개선의 대부분) + working/long-term, 읽기·쓰기 순환과 필터 → [[trace-to-memory-loop]], 세 교훈(대부분 history · 캐시/hot path · procedural은 사람 검토 + eval) ⚠️ 10:13~12:28 [[langsmith|LangSmith]]·Context Hub 자사 제품 · *"about 75%"* 화자 추정 · 이름·직함 설명란에만 · ko가 run → "사형 집행", "세금 정보" 환각
 - [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]] ([[stigg|Stigg]]) 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(19:00, 챕터 15): 4월 가격 비상(Anthropic 서드파티 에이전트 구독 사용 차단 · OpenAI "5 5x" · Copilot 무료 폐지)은 인프라 문제, 검사가 청구서 뒤에 온다 → [[reserve-then-settle]], OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, 4가지 패턴, AI의 Stripe moment ⚠️ 벤더 CEO · 타사 내부 주장 출처 없음 · *"150s to even 750"* 단위 미발화(설명란 "배"는 업로더 해석) · 연도 미발화 · ko concurrency → "참석률", rate limit → "이자율"
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]](설명란에만) ([[braintrust|Braintrust]]) 평가 플랫폼 만들기가 생각보다 어려운 이유(16:25, 챕터 15): evals + observability 두 기둥, 최소 eval 시스템 세 요소, multi-persona(PM·SME), North Star 개선 루프(drift) → [[production-trace-eval-flywheel]], [[eval-platform-maturity-stages|성숙 4단계]], systems problem(수백 MB 트레이스, 실시간 vs 장기 쿼리, BTQL), headless 코딩 에이전트가 eval을 돌고 사람이 배포 결정 ⚠️ 벤더 피치(14:45~15:45 unknown unknowns) · 영상이 발표 중간에서 시작 · ko가 production을 "개발 중"·"오프라인"으로 반전
@@ -936,7 +940,7 @@ updated: 2026-10-22
 
 ## 통계
 
-- 총 페이지 수: 897 (892 → 897, + 2026-10-23 Tech Bridge 1편(10-22 업로드 — AI가 코딩하는데 왜 내가 더 바쁠까, Stripe 해설): source 1 + entity 4 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 897과 일치)
+- 총 페이지 수: 901 (897 → 901, + 2026-10-24 Tech Bridge 2편(10-23 업로드 — 하네스에 남는 3가지 · Claude Duet): source 2 + entity 2 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 901과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-23 (Tech Bridge **1편** — 10-22 업로드 [[tech-bridge-stripe-collison-cherny-ai-dev-workflow|AI가 코딩하는데 왜 내가 더 바쁠까? | Stripe의 AI 개발 워크플로]](`m3g2EkMjpno`). `Yhck-x6VuLs`는 여전히 멤버 전용)
-- 직전 ingest: 2026-10-22 (Tech Bridge **1편** — 10-21 업로드 [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint|저커버그는 AI에게 대체 뭘 시키고 있을까? | 메타 뮤즈와 개인 AI]](`vF_vVcqa9M4`). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 마지막 ingest: 2026-10-24 (Tech Bridge **2편** — 10-23 업로드 [[tech-bridge-jediah-katz-harness-whats-left|하네스는 더 이상 필요 없을까?]](`NUyLH7tjQpg`) · [[tech-bridge-claude-duet-proactive-assistant|클로드가 먼저 일한다 | Claude Duet]](`BfHkp3dz2gc`). `Yhck-x6VuLs`는 여전히 멤버 전용, 신규 멤버 전용 `8tjhiruPpBg`)
+- 직전 ingest: 2026-10-23 (Tech Bridge **1편** — 10-22 업로드 [[tech-bridge-stripe-collison-cherny-ai-dev-workflow|AI가 코딩하는데 왜 내가 더 바쁠까? | Stripe의 AI 개발 워크플로]](`m3g2EkMjpno`). `Yhck-x6VuLs`는 여전히 멤버 전용)

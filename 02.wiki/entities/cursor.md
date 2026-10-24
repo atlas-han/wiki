@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left]
 created: 2026-09-01
-updated: 2026-10-18
+updated: 2026-10-24
 ---
 
 # Cursor
@@ -118,3 +118,7 @@ Google 측 에피소드가 [[antigravity|Antigravity]]·[[claude-code|Claude Cod
 ## "delete the product" — Cursor에서 SpaceX로 이어진 원칙 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
 
 [[lee-robinson|Lee Robinson]]: *"one of the principles that we had at Cursor uh and now at SpaceX is to delete the product. And what we mean by this is you kind of have to internalize and assume that the models today are the worst they'll ever be. Which means that in 6 months, uh, you might need to completely rebuild the UI."*(37:45~38:04) 화자가 Cursor에 있었다는 뜻으로 읽힌다. → [[harness-pruning]] · [[spacex]] ⚠️ 원칙의 출처·문서는 발화되지 않는다.
+
+## 하네스에서 지운 것 — Jediah Katz (2026-10-24 · [[tech-bridge-jediah-katz-harness-whats-left]])
+
+Cursor에서 AI 에이전트 도구를 만든 [[jediah-katz|Jediah Katz]]의 AI Engineer 강연(해설 + 발췌). *"at Cursor we found ourselves removing things from the harness, removing prompting, removing guard rails as the models got smarter"* — [[grokbot]]에서는 반대로 다시 넣었다. → [[harness-pruning]]

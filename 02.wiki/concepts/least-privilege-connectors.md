@@ -6,9 +6,9 @@ tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
 related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools, agent-sandboxing]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant]
 created: 2026-09-14
-updated: 2026-10-17
+updated: 2026-10-24
 ---
 
 # 최소 권한 커넥터
@@ -91,3 +91,8 @@ Tech Bridge 해설이 Meta의 Muse 소개를 이렇게 요약한다. *"Muse is d
 [[robert-brennan|Robert Brennan]]([[openhands|OpenHands]]): *"a paradigm that we actually know well from, you know, pre-agent security days, the principle of least privilege, right? The idea is that both agents and humans should only have access to the things that they need in order to do their job"*(04:41~04:53). 예는 *"the GitHub repo that it's editing, and maybe a couple secrets"*(05:00~05:04)다. 근거 어휘는 blast radius다(*"we limit the blast radius by limiting how much the agent has access to"* 05:23~05:27).
 
 앞의 서술들이 **커넥터·도구·신원** 단위로 권한을 좁혔다면, 이쪽은 **실행 환경** 단위다. 새로 더하는 것은 **co-location 문제**다. 한 VM에 모은 에이전트들은 *"all have access to the same stuff"*(09:04~09:06)라서, 코드 리뷰 봇이 Datadog 봇의 메모리를 고칠 수 있다(09:19~09:23). 최소 권한은 사용자와 에이전트 사이만이 아니라 **에이전트와 에이전트 사이**에도 걸린다. → [[agent-sandboxing]]
+
+## 2026-10-24 — "API 키 파일을 통째로" · 비밀을 보지 않는 비서
+
+- [[tech-bridge-jediah-katz-harness-whats-left]]: [[jediah-katz|Jediah Katz]] *"a simple harness with just bash and all your … API keys in a file can solve coding tasks, but you probably don't want to give all your API keys in a file to the model. … [at] companies where we want to have permissions that are scoped down to specific agents and specific people"*(06:05~06:29). 해설: *"AI가 일을 잘 끝냈는지와 필요한 권한만 썼는지는 함께 살펴봐야 해요."* 모델이 좋아져도 **지워지지 않는** 하네스 층으로 분류된다.
+- [[tech-bridge-claude-duet-proactive-assistant]]: [[claude-duet|Claude Duet]]은 *"never directly sees your passwords or any of your sign[-in] tokens"*, 카드 번호·신분증 공유를 거부하는 검사를 추가(발췌, 화자 미상). 해설: *"문제가 절대 생기지 않는다는 보증으로 받아들이면 안 돼요."* → [[credential-injection-outside-sandbox]]와 같은 방향(⚠️ 구현 미확인).
