@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro]
 created: 2026-09-05
-updated: 2026-10-16
+updated: 2026-10-25
 ---
 
 # Skill Self-Improvement
@@ -166,3 +166,9 @@ updated: 2026-10-16
 > ⚠️ **Contradiction:** 이 페이지의 원칙(*"하나의 잘못된 결과가 에이전트가 영원히 따르는 규칙으로 자동 설정되는 것을 방지"*)을 **명시적으로 버린** 첫 경로다. 앞의 경로들은 대부분 게이트에 대해 *말하지 않았을* 뿐인데, 이 소스는 게이트를 두지 않는다고 *말한다.* 회수·롤백·[[skill-evals|회귀 eval]]은 발화되지 않았다. 근거로 든 36% → 100%는 단일 태스크이고 실행 횟수가 발화되지 않았다. Voyager skill library를 계보로 명시한 첫 소스이기도 하다.
 
 - (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]]) [[dex-horthy|Horthy]]의 "12 factor factories" 마지막 항목: *"compound over time, learn from past sessions, go read what your engineer go analyze the sessions of your team, figure out what they're struggling with, figure out how to get that into your skills or your memory or whatever it is."*(12:58~13:08) — 개인이 아니라 **팀 세션**이 재료. 그리고 그 세션을 보관할 *"system of record"*(13:53~14:01)가 도구 쪽 전제다 → [[agent-platform-layers]].
+
+## /retro — 다음 작업의 환경을 고치되, 너무 자주 돌리지 않는다 (2026-10-25 · [[tech-bridge-pocock-skills-implement-spec-pr-retro]])
+
+[[matt-pocock|Matt Pocock]]의 /retro를 소개한 편이다(발췌, 화자 추정 [[eric-tech|Eric Tech]]). 에이전트가 맞는 정보를 찾느라 오래 걸리면 *"a list of key files on exactly where they are and how to find them more quickly"* 를 담은 파일(*"AGMD"*, 판독 불가)을 만든다(04:08~04:17). 해설은 고칠 대상을 둘로 나눈다. 기계가 확인할 수 있는 실수는 자동 검사로, 판단이 필요한 기준은 사람이 읽는 규칙으로 보낸다.
+
+> ⚠️ **빈도의 비용.** 해설: *"회고를 계속 자동으로 돌리면 기능보다 정리 작업만 늘어날 수 있어요."*(04:40~04:47) 이 페이지의 다른 사례들은 관찰을 상시화하고 반영만 사람이 거른다. 이 경고는 **실행 빈도 자체**를 비용으로 본다. 원음 근거는 없다(해설).

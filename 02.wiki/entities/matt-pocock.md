@@ -8,9 +8,9 @@ links:
   - https://x.com/mattpocockuk
   - https://www.linkedin.com/in/mapocock/
   - https://aihero.dev
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro]
 created: 2026-10-09
-updated: 2026-10-10
+updated: 2026-10-25
 ---
 
 # Matt Pocock
@@ -51,3 +51,11 @@ AIhero.dev/skills — 발표에서 언급된 것: **코드베이스 설계 스�
 - **그의 스킬 이름이 발화로 나온다**: *"grill me with docs"*·*"wayfinder"*(1:00:55~1:01:00, Lauren 발화). Lauren은 그의 **동어반복 테스트 제거** 팁을 베꼈다고 말한다(08:21~08:38) → [[structure-sensitive-tests]].
 - **질문 틀이 자기 발표의 틀이다** — one-way / two-way door(54:58~55:21, [[tech-bridge-pocock-pr-bottleneck]]의 *merge danger*), 다크 팩토리(50:41~50:49), *"sampling instead of blocking"*(54:35~54:37). 정의 하나: *"a good codebase is a codebase that's easy to make changes in"*(24:21~24:28).
 - ⚠️ *"TypeScript famously has a 25,000line type uh file"*(31:18~31:24)는 진행자 진술, 이 위키는 확인하지 않았다. 두 사람 모두 자기 스킬을 권한다(*"if you trust us both, of course, use our skills"* 1:01:13~1:01:16).
+
+## 제3자 소개 — /implement-spec · /pr · /retro (2026-10-25 · [[tech-bridge-pocock-skills-implement-spec-pr-retro]])
+
+Tech Bridge 해설 영상이다. 설명란은 *"Eric Tech가 소개한 Matt Pocock의 세 가지 스킬"* 이라 적었다. **본인 목소리로 확정되는 구간은 없다** — 발췌 화자는 [[eric-tech|Eric Tech]]로 추정된다. 저장소 표기는 <https://github.com/mattpocock/skills>(설명란, ⚠️ 열어 보지 않았다)이고, 10-05 발표의 *AIhero.dev/skills* 와 같은 것인지는 확인하지 않았다.
+
+- **/implement-spec** — 10-05 발표에 없던 스킬이다. 의존 관계를 보고 바로 시작할 수 있는 티켓부터 여러 에이전트에 나누고 결과를 한 갈래에 모은다.
+- **/pr** — 요약(다이어그램) · 근거(스크린샷, 테스트) · merge danger(롤백, blast radius). 발표에서는 *"currently in progress"* 였다. → [[agent-change-evidence]]
+- **/retro** — 핵심 파일 위치를 남겨 다음 탐색을 줄이고, 기계가 볼 것은 자동 검사로, 판단은 사람이 읽을 규칙으로 보낸다. → [[skill-self-improvement]]

@@ -1137,5 +1137,10 @@
   "02.wiki/sources/tech-bridge-jediah-katz-harness-whats-left.md": "LiVideo",
   "02.wiki/sources/tech-bridge-claude-duet-proactive-assistant.md": "LiVideo",
   "02.wiki/entities/jediah-katz.md": "LiUser",
-  "02.wiki/entities/claude-duet.md": "LiBoxes"
+  "02.wiki/entities/claude-duet.md": "LiBoxes",
+  "02.wiki/sources/tech-bridge-kanat-alexander-disposable-vs-durable.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-pocock-skills-implement-spec-pr-retro.md": "LiVideo",
+  "02.wiki/entities/max-kanat-alexander.md": "LiUser",
+  "02.wiki/entities/eric-tech.md": "LiUser",
+  "02.wiki/concepts/disposable-vs-durable-software.md": "LiRecycle"
 }

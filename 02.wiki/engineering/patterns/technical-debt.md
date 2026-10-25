@@ -3,11 +3,11 @@ title: Technical Debt
 type: engineering
 tags: [engineering, refactoring]
 created: 2026-06-27
-updated: 2026-10-16
+updated: 2026-10-25
 category: pattern
 related: [refactoring, code-smells, surgical-edits, legacy-code-modernization, legacy-skills-gap]
 first-seen: refactoring-guru-refactoring
-sources: [refactoring-guru-refactoring, tech-bridge-legacy-code-modernization-ai, tech-bridge-g2i-generation-cheap-evaluation-expensive]
+sources: [refactoring-guru-refactoring, tech-bridge-legacy-code-modernization-ai, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-kanat-alexander-disposable-vs-durable]
 ---
 
 # Technical Debt
@@ -48,3 +48,7 @@ Technical Debt는 “지금 빠르게 가기 위해 구조 개선을 미룬 선�
 그리고 이 페이지의 *"상환은 rewrite가 아니라 작은 [[refactoring-techniques]]의 누적"* 과 같은 결론을 그 소스도 낸다 — *"현대화는 기존 프로세스를 유지하면서 그 아래에서 기술이 발전하는 **점진적인 과정**"*(07:21~07:29). ⚠️ 소스는 수치·사례 없이 일반론으로 말한다.
 
 - (2026-10-15 · [[tech-bridge-g2i-generation-cheap-evaluation-expensive]]) *"any line of code you write is a liability, that the best code is no code at all. The cost of creating code is falling, but the cost of understanding a software program is not."*(02:54~03:06) 생성 비용이 떨어져도 **이해 비용**은 그대로라는 진술이다.
+
+## 변경의 두 번째 위험 — 다음 변경을 어렵게 만드는 것 (2026-10-25 · [[tech-bridge-kanat-alexander-disposable-vs-durable]])
+
+[[max-kanat-alexander|Max Kanat-Alexander]](발췌): 변경의 위험은 둘이다. 하나는 지금 바꾸는 과정의 문제이고, 둘째는 *"you could make it harder to make future changes. In particular, what that means is you could make it more likely to have future problems."*(01:18~01:25) 해설의 예: 할인 기능을 급하게 붙이면 오늘 결제가 틀릴 수도 있고, *"코드가 복잡해져서 다음 수정이 더 어려워질 수도"* 있다. 이 비용을 오래 감당할 필요가 없는 **disposable** 코드에서만 부채를 무시할 수 있다. → [[disposable-vs-durable-software]]

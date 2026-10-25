@@ -2254,3 +2254,24 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 8분·6분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 두 편 모두 `Korean original` + `English (US)` 2트랙, 메타 `language`=`en`. **이번엔 `ko`와 `ko-orig`가 바이트까지 같았다**(md5 일치) — 둘 다 `lang=ko` 원 ASR. info.json의 `automatic_captions['ko']` URL은 `tlang=ko`였지만 실제 받은 파일은 원 ASR이었다 → **URL보다 `ko`·`ko-orig` 파일 비교가 확실하다.** `--sleep-subtitles 8`로 429 없음. `NUyLH7tjQpg`의 `timestamp`는 2026-10-24 08:00 KST(`upload_date`는 UTC 기준 20261023).
+
+## [2026-10-25] ingest | Tech Bridge — 10-24 업로드 2편 (AI 시대에도 코드 품질은 중요할까? — Max Kanat-Alexander 발표 해설 · AI는 끝냈다는데 왜 출시는 느릴까? — Matt Pocock 스킬 3가지 해설)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**(`8tjhiruPpBg` 멤버 전용 지속). `Yhck-x6VuLs`는 목록 범위 밖이었다. 단건 조회해 보니 이번엔 stderr ERROR가 아니라 `subscriber_only` 줄로 나왔고, 여전히 멤버 전용이다. 신규 10-24 업로드 2편 `30ejv1N33Yw`(6:17) · `vbdubFaBmfo`(5:28)는 둘 다 `public` 롱폼이다. 목록의 나머지는 전부 vault에 있다.
+
+**신규 source 2 · entity 2 · concept 1**, 기존 페이지 보강 9개, index **901 → 906**(실측 일치).
+
+- `30ejv1N33Yw`(6:17, 챕터 8) → [[tech-bridge-kanat-alexander-disposable-vs-durable]] — 발췌 화자 [[max-kanat-alexander|Max Kanat-Alexander]](성은 태그에만, 원본 발표 미상). 변경의 두 위험 → 네 기준 → disposable ↔ durable → 격리 환경 · 자동 검사 → *"Not depends but yes or no"*.
+  - 신규: [[max-kanat-alexander]] · [[disposable-vs-durable-software]]
+  - 보강: [[decision-quality]] · [[technical-debt]] · [[agent-sandboxing]] · [[hard-vs-soft-enforcement]]
+  - ⚠️ 발췌 2구간 무캡션(첫 두 질문 · 검사 자동화). Charity Majors(Honeycomb) · 구글 코드 검토 기준은 해설 인용이고 원문은 미확인이다.
+- `vbdubFaBmfo`(5:28, 챕터 7) → [[tech-bridge-pocock-skills-implement-spec-pr-retro]] — [[matt-pocock|Matt Pocock]] 스킬을 [[eric-tech|Eric Tech]]가 소개한 영상의 해설이다. 원본 링크는 없고 스킬 저장소 링크만 있다.
+  - 신규: [[eric-tech]]
+  - 보강: [[agent-change-evidence]] · [[risk-proportional-human-review]] · [[skill-self-improvement]](Contradiction: 회고 빈도의 비용) · [[hard-vs-soft-enforcement]] · [[matt-pocock]]
+  - ⚠️ 발췌 화자 = Eric Tech는 추정이다. *AGMD* · *meringle* 판독 불가. 저장소 미확인.
+- [[tech-bridge]] · index · overview 갱신.
+- 페이지화하지 않음: Charity Majors · Honeycomb · 구글 코드 검토 기준(해설의 지나가는 인용), /implement-spec 단독 개념([[spec-driven-development]] · [[agent-trust-curve]]로 연결만 했다).
+
+### 운영 메모
+
+6분·5분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 두 편 모두 `Korean original` + `English (US)` 2트랙, 메타 `language`=`en`이다. `ko`·`ko-orig`는 md5가 같아 `lang=ko` 원 ASR로 판정했다. 발췌는 ko 트랙의 영어 조각과 en-orig를 대조했다. `--sleep-subtitles 8`로 429 없음. `30ejv1N33Yw`의 `timestamp`는 2026-10-25 08:00 KST다(`upload_date`는 UTC 기준 20261024).

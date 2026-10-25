@@ -6,9 +6,9 @@ tags: [code-quality, judgment, architecture, trade-offs, engineer-role]
 aliases: [결정 품질, implementation vs decision quality, 구현 품질]
 related: [system-level-quality, behavior-validated-trust, executable-standards, outcome-engineering, frontier-engineering, ai-native-sdlc, brain-hands-decoupling, ai-slop, no-one-shot-design, taste-vs-judgment]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-agents-as-catalyst, tech-bridge-prompt-to-production]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-impeccable-design-steering, tech-bridge-taste-labs-measuring-slop, tech-bridge-agents-as-catalyst, tech-bridge-prompt-to-production, tech-bridge-kanat-alexander-disposable-vs-durable]
 created: 2026-09-09
-updated: 2026-10-09
+updated: 2026-10-25
 ---
 
 # 결정 품질
@@ -91,3 +91,7 @@ AI는 즉시 **API 엔드포인트 + DB 스키마 + 큐 컨슈머 + 프런트엔
 예제는 [[tech-bridge-ai-era-code-quality|알림 기능 예제]]의 사촌이다 — *"help customers find information faster"* 라는 요청에 에이전트는 검색창·FAQ·개인화 추천·AI 챗봇 무엇이든 만들 수 있다(01:04~01:18). 이번엔 **고르는 근거가 조금 더 구체적이다**: 개인화할 고객 데이터, AI 비서 예산, 특정 스택 라이선스(01:38~01:45) — **에이전트가 모르는, 프롬프터만 아는 제약**이다. *"you, the prompter, need to set the stage of what is important for success and why"*(01:29~01:34).
 
 ⚠️ 위 *"처방이 '판단이 중요하다'에서 멈춘다"* 비판은 **부분적으로만 완화된다** — 판단의 입력(제약)은 보여 주지만, 제약이 서로 충돌할 때 어떻게 고르는지는 말하지 않는다. 결론도 *"engineering judgment and thinking have become even more valuable"*(06:38~06:42)이다.
+
+## 무엇을 판단하나 vs 얼마나 엄격해야 하나 — 네 기준 (2026-10-25 · [[tech-bridge-kanat-alexander-disposable-vs-durable]])
+
+같은 질문 *"AI 시대에도 코드 품질은 중요할까?"* 에 [[max-kanat-alexander|Max Kanat-Alexander]]는 **소프트웨어의 수명**으로 답한다. 기준은 실패의 피해 · 교체 비용 · 의존 관계 · 유지 비용 넷이다. 넷 다 낮으면 disposable, 높으면 durable이고, 결론은 *"Not depends but yes or no"*(05:27~05:41)다. 이 페이지의 결정 품질이 *무엇을 평가하나* 라면 그쪽은 *얼마나 엄격해야 하나* 다. 해설: *"AI가 만들었다고 자동으로 일회용이 되는 건 아니에요."* → [[disposable-vs-durable-software]]

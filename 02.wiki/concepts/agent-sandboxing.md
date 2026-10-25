@@ -6,9 +6,9 @@ tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemer
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
 related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable]
 created: 2026-10-17
-updated: 2026-10-23
+updated: 2026-10-25
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -89,3 +89,7 @@ updated: 2026-10-23
 - (해설, Stripe 블로그 인용) [[stripe|Stripe]]의 **devbox** = *"코드와 개발 중인 서비스를 담은 클라우드 개발 환경"*. 사람이 쓰던 개발 기반을 사내 에이전트 [[stripe-minions|Minions]]에도 쓴다(01:20~01:33). 원음 ②(화자 미상): *"10 different dev boxes um with different agents executing parts of the plan"*(06:27~06:33).
 - 작은 팀의 출발점으로 해설은 **작업별 브랜치 + git worktree**를 들면서 바로 한계를 단다: *"워크트리는 파일 작업 공간을 나누는 도구입니다. 접근 권한이나 데이터베이스까지 자동으로 격리해 주지는 않습니다. 테스트 데이터, 환경 변수, 실행 포트, 외부 서비스 권한은 따로 정해야 합니다."*(02:15~02:28) — 위 격리 스펙트럼에서 **파일 층만** 나누는 가장 얇은 단계다. 점검 하나 더: *"실패한 작업을 버리고 같은 조건에서 다시 시작할 수 있는지"*(02:28~02:32) → 일회용 샌드박스의 재현성 조건.
 - 분리의 효과를 보안이 아니라 **추적성**으로 든다: 독립 환경이면 *"변경과 실행 기록을 작업별로 살펴보기 쉬워집니다"*(02:05~02:10).
+
+## 일회용 코드를 가두는 격리 환경 (2026-10-25 · [[tech-bridge-kanat-alexander-disposable-vs-durable]])
+
+이 페이지의 샌드박스는 **에이전트**를 가둔다. [[max-kanat-alexander|Max Kanat-Alexander]]의 격리 환경은 **일회용 코드**를 durable 시스템에서 떼어 놓는다: *"better isolated environments. So you can only deploy to this environment that has access to only your data. No customer data, no personally identifiable information whatever you can enforce independence."*(03:46~04:01) 해설은 이렇게 정리한다. *"개인 실험을 고객 데이터와 분리하고 중요한 서비스가 그 실험에 기대지 않게 해요. 그러면 더 자유롭게 바꾸고 버릴 수 있죠."*(04:14~04:22) 일회용이라는 지위를 **선언이 아니라 환경으로** 지키는 것이다. → [[disposable-vs-durable-software]]

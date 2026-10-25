@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro]
 created: 2026-09-18
-updated: 2026-10-20
+updated: 2026-10-25
 ---
 
 # 위험 비례 사람 검토
@@ -97,3 +97,7 @@ updated: 2026-10-20
 ## 위험이 오르면 늘어나는 것은 에이전트 검토 단계 — "not by me" (2026-10-20 · [[tech-bridge-three-level-agent-review]])
 
 > ⚠️ Contradiction(긴장): [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)은 *"the highest-stakes example"*(08:53)인 법적 요구서의 검토를 **persona 에이전트**(litigator · vendor's counsel · auditor, *"The two lawyer agents"* 10:26)에게 맡기고, 결론을 *"I believe them because everything I rely on has been thoroughly reviewed and validated first. And most importantly, not by me."*(11:57~12:03)로 맺는다. 위험에 비례해 올라가는 것은 사람의 개입이 아니라 검토 단계의 수다(*"Each level adds to the one before as the stakes go up."* 03:45~03:47). 이 페이지의 배치(가장 큰 위험의 결정 곁에 경험 많은 사람)와 갈린다. 다만 ① 사례 1의 첫 거짓은 **화자의 질문**으로 드러났고(*"It came out when I questioned the results."* 04:43~04:45), ② 요구서 발송을 결정한 사람·사람 변호사의 최종본 검토 여부는 발화되지 않는다. 그래서 "사람이 없다"가 아니라 **"사람이 검토자 자리에서 빠진다(결정자 자리는 미발화)"**로 읽는다. → [[three-level-agent-review]] · [[named-human-accountability]]
+
+## merge danger — 리뷰를 없애지 않고 어디를 볼지 알려 준다 (2026-10-25 · [[tech-bridge-pocock-skills-implement-spec-pr-retro]])
+
+/pr 스킬의 세 번째 칸(발췌, 화자 추정 [[eric-tech|Eric Tech]]): *"if this po quest[pull request] breaks what is impact in production can we actually roll back if something happen and also what is the blast radius"*(03:01~03:11). 해설: *"위험을 적는다고 검토가 없어지는 건 아니에요. 어디를 더 꼼꼼히 봐야 할지 알려 주는 거죠."*(03:22~03:26) [[tech-bridge-pocock-pr-bottleneck]]의 one-way/two-way door가 **PR 템플릿의 한 칸**이 됐다.

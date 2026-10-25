@@ -141,8 +141,10 @@ sources:
   - tech-bridge-stripe-collison-cherny-ai-dev-workflow
   - tech-bridge-jediah-katz-harness-whats-left
   - tech-bridge-claude-duet-proactive-assistant
+  - tech-bridge-kanat-alexander-disposable-vs-durable
+  - tech-bridge-pocock-skills-implement-spec-pr-retro
 created: 2026-06-03
-updated: 2026-10-24
+updated: 2026-10-25
 ---
 
 # Tech Bridge
@@ -1398,3 +1400,16 @@ updated: 2026-10-24
 - 자막 구성은 두 편 모두 10-21·10-22 편과 같은 `Korean original` + `English (US)`, 메타 `language`=`en`, 받은 ko = `lang=ko` 원 ASR(`ko`·`ko-orig` 바이트 동일).
 - ⚠️ 발췌 *"op 5.5"*(Opus 5.5 판독), *"Grockbot dots all"* 판독 불가, *"CL code called Boris"* 앞 잘림. **ko**: 새 비선 → 새 비서, 계좌관 → 계좌 간, 요금지 → 요금제, 초항 → 초안.
 
+## 2026-10-24 업로드 — 해설 2편: 코드 품질의 네 기준 · Pocock 스킬 3가지 (2026-10-25 ingest)
+
+[[tech-bridge-kanat-alexander-disposable-vs-durable|AI 시대에도 코드 품질은 중요할까?]](`30ejv1N33Yw`, 6:17, 공식 챕터 8) — [[max-kanat-alexander]](신규) ([[disposable-vs-durable-software]](신규) · [[decision-quality]] · [[technical-debt]] · [[agent-sandboxing]] · [[hard-vs-soft-enforcement]])
+
+- 10-21부터 이어진 **한국어 해설 + 원본 발췌** 형식이다. 발췌 화자는 내레이션의 *"소프트웨어 설계 전문가 맥스"* 이고, 성은 태그에만 있다. **원본 발표 링크·제목은 설명란에 없다.** 줄거리: 네 기준 → disposable ↔ durable → *"Not depends but yes or no"*.
+- 09-08 IBM 편 [[tech-bridge-ai-era-code-quality]]과 같은 질문을 다른 축(수명)으로 다룬다. 해설이 Charity Majors(Honeycomb)와 구글 코드 검토 기준을 인용하지만 원문은 미확인이다.
+- ⚠️ 발췌 2구간 무캡션. **ko**: *이래용* · *이회용* → 일회용, *체리티 메이저스* → Charity Majors.
+
+[[tech-bridge-pocock-skills-implement-spec-pr-retro|AI는 끝냈다는데 왜 출시는 느릴까? Matt Pocock의 AI 코딩 스킬 3가지]](`vbdubFaBmfo`, 5:28, 공식 챕터 7) — [[eric-tech]](신규) · [[matt-pocock]] ([[agent-change-evidence]] · [[risk-proportional-human-review]] · [[skill-self-improvement]] · [[hard-vs-soft-enforcement]])
+
+- **소개의 소개**다 — Pocock의 스킬을 Eric Tech가 소개한 영상을 Tech Bridge가 해설한다. 원본 영상 링크는 없고 스킬 저장소 링크만 있다. 10-05 Pocock 본인 발표 [[tech-bridge-pocock-pr-bottleneck]]의 후속 성격이고, 거기 없던 /implement-spec이 나온다.
+- 자막 구성은 두 편 모두 `Korean original` + `English (US)`, 메타 `language`=`en`이다. 받은 ko는 `lang=ko` 원 ASR이다(`ko`·`ko-orig` 바이트 동일).
+- ⚠️ 발췌 6구간 모두 앞부분 무캡션. **ko**: *much은* → PR은, *출신* → 출시, *진한 작업* → 지난 작업. 발췌 *AGMD* 판독 불가.
