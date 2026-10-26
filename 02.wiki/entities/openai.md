@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-10-16
+updated: 2026-10-26
 ---
 
 # OpenAI
@@ -219,3 +219,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## Developer experience 팀의 두 번째 목소리 — App Server (2026-10-14 · [[tech-bridge-codex-app-server]])
 
 [[dominik-kundel|Dominik Kundel]](*"I work at OpenAI on developer experience specifically for Codex"* 00:33~00:37, 성·"리드"는 설명란에만). 같은 팀 [[charlie-guo|Charlie Guo]]·[[gabriel-chua|Gabriel Chua]] 워크숍에 이어 두 번째 developer experience 소스다. 회사의 자세: 하네스를 **오픈소스(Apache 2)로 열고**(*"feel free to fork it"* 01:48~01:49), 1st party 앱과 같은 프로토콜을 서드파티에 준다(경쟁사 Claude Code 안의 Codex 플러그인 포함). 사용자는 ChatGPT 구독으로 로그인해 자기 Codex 한도를 쓴다(06:18~06:31). ⚠️ 당사자 진술. → [[codex-app-server]] · [[bring-your-own-subscription]]
+
+## 소속 인물 — Cova Lee (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
+
+설명란: *"OpenAI의 Cova Lee"* → [[cova-lee]]. 영상 제작 강연에서 썸네일 시뮬레이터 · 스타일 시스템 · computer use 사운드패드 · 주간 점검을 소개했다(발췌 추정). 태그에 Codex가 있지만 발화로 확정되는 구간은 없다.

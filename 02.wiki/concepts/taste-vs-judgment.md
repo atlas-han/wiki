@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production]
 created: 2026-09-12
-updated: 2026-10-16
+updated: 2026-10-26
 ---
 
 # 취향과 판단
@@ -142,3 +142,7 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 [[greg-pstrucha|Greg Pstrucha]]는 결정론 검사로 표현할 수 없는 판단(상태 3개 → 10개로 부푼 state machine)을 이렇게 부른다. *"this is where you're engaging your engineering experience, or if Tweet[?] as as Twitter would say, your taste. Um and you just have to decline it straight up. Or you can have an LLM agent that is going to do a pass"*(11:24~11:38). taste를 **linter로 코드화할 수 없는 잔여**로 두고, 저장소 정책과 리뷰 서브에이전트로 바닥만 올린다([[automated-code-review]]). 위 09-30 Gavrilescu의 "taste는 eval로 코드화할 수 있다"보다 보수적인 쪽이다.
 
 ⚠️ **ko·`en`이 또 두 말을 합친다.** *your taste* → `en` *"judgment"*, ko **"표준"**(11:28). 원문은 taste다.
+
+## 자기 스타일은 자기가 고른 결과에서 · POV는 인터넷이 아니라 삶에서 (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
+
+영상 제작 강연(발췌, [[cova-lee|Cova Lee]] 추정): 최근 영상 50편에서 반복되는 시각 스타일을 에이전트가 뽑게 했다 — *"You kind of want to turn that into a system, which makes it easier for agents to help you with that work."*(04:15~04:29) 해설: *"남의 취향을 그대로 받는 대신 이미 자신이 고른 결과를 기준으로 삼은 거예요."*(04:05~04:09) 참고자료 모음도 *"왜 좋은지 한 줄"* 을 남겨 취향을 말로 만든다. Q&A에서는 그 취향의 원천을 이렇게 말한다. *"It is so important you live more of real life and not try to like absorb things you see from the internet (…) it's going to prevent you from developing a very strong and unique POV."*(08:19~08:32) 해설의 결론도 같다. *"무슨 이야기를 할지는 여전히 사람이 골라야 해요."*

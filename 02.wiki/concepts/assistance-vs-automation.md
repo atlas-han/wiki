@@ -5,9 +5,9 @@ category: theory
 tags: [rlhf, automation, assistance, objective-function, human-in-the-loop]
 related: [rlhf, preference-reward-asymmetry, post-training-northstars, smarter-software-vs-cheaper-software, workflow-vs-agent, risk-proportional-human-review, verification-cost-asymmetry]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-nadella-copilot-autopilot]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-nadella-copilot-autopilot, tech-bridge-chieng-lee-ai-video-production]
 created: 2026-09-20
-updated: 2026-09-29
+updated: 2026-10-26
 ---
 
 # 보조 vs 자동화 (Assistance vs Automation)
@@ -74,3 +74,7 @@ updated: 2026-09-29
 - **조합의 형태** — 자동화 구간(Autopilot)의 **양 끝**에 보조 구간(Copilot·Co-work)을 둔다. Excel 비유로는 Co-work가 **outer loop**, Excel 안의 에이전트 루프가 **inner loop**(03:17~03:22). *"I don't think of any one form factor as the be-all end-all"*(03:02~03:04).
 - **이 페이지와의 관계** — [[diogo-almeida|Almeida]]는 *사람을 만족시키는 목적함수로 훈련된 모델은 자동화에 못 미친다*는 **원인**을 말했다. Nadella는 원인을 말하지 않고 **배치**로 답한다 — 자동화를 쓰되 입력과 출력에 사람을 둔다. [[risk-proportional-human-review]]의 *위험한 결정 곁에 사람* 과 같은 배치이지만, 기준이 위험이 아니라 **구간의 위치**(시작과 끝)다.
 - ⚠️ **당사자 진술.** Autopilot의 성능·실패율은 없다. *"in the loop at the input and at the output"* 은 **중간 단계의 개입 수단**을 말하지 않는다 — 장시간 실행 중 무엇을 사람이 볼 수 있는지는 [[agent-365|Agent 365]]의 *"observe everything"* 한 마디로 대신된다.
+
+## 같은 도구에 자동과 수동을 함께 — 사운드패드 (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
+
+[[cova-lee|Cova Lee]](발췌 추정)의 효과음 도구는 computer use에게 *"Go and use my computer and just tap through my soundpad"* 라고 맡길 수도 있고, *"I can easily go back and just click through myself"* 할 수도 있다(05:22~05:35). 해설: *"반복은 줄이면서 수정할 손잡이는 남긴 셈이죠."*(04:58~05:01) 이 페이지의 축이 도구 하나 안에 같이 들어가 있다. 어디까지 직접 고를지는 사람이 정한다(04:37~04:40).

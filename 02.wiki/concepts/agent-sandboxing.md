@@ -6,9 +6,9 @@ tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemer
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
 related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs]
 created: 2026-10-17
-updated: 2026-10-25
+updated: 2026-10-26
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -93,3 +93,7 @@ updated: 2026-10-25
 ## 일회용 코드를 가두는 격리 환경 (2026-10-25 · [[tech-bridge-kanat-alexander-disposable-vs-durable]])
 
 이 페이지의 샌드박스는 **에이전트**를 가둔다. [[max-kanat-alexander|Max Kanat-Alexander]]의 격리 환경은 **일회용 코드**를 durable 시스템에서 떼어 놓는다: *"better isolated environments. So you can only deploy to this environment that has access to only your data. No customer data, no personally identifiable information whatever you can enforce independence."*(03:46~04:01) 해설은 이렇게 정리한다. *"개인 실험을 고객 데이터와 분리하고 중요한 서비스가 그 실험에 기대지 않게 해요. 그러면 더 자유롭게 바꾸고 버릴 수 있죠."*(04:14~04:22) 일회용이라는 지위를 **선언이 아니라 환경으로** 지키는 것이다. → [[disposable-vs-durable-software]]
+
+## 어디서 실행되나 ≠ 결과가 어디로 가나 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
+
+[[annie-wang|Annie Wang]](발췌)은 두 질문을 나눈다. 샌드박스는 *"an isolated environment with restrictions on which file and network services it can access"* 이고, 프로젝트 사본과 샘플 고객 자료로 프로덕션 DB 없이 일하게 한다(03:30~03:55). 그런데 *"Even if a tool runs on your laptop, it's output may be sent to a [hosted] model. It might also be saved in session history, logs or longterm memory. So think about what data the agent actually needs, where it's allowed to go and how long it should be kept."*(05:02~05:20) 해설: *"실행 장소와 정보가 가는 곳을 따로 살펴야 해요."* 샌드박스는 프롬프트 인젝션의 **영향을 줄일 뿐**이다(04:37~04:42). → [[lethal-trifecta]]

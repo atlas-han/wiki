@@ -143,8 +143,10 @@ sources:
   - tech-bridge-claude-duet-proactive-assistant
   - tech-bridge-kanat-alexander-disposable-vs-durable
   - tech-bridge-pocock-skills-implement-spec-pr-retro
+  - tech-bridge-chieng-lee-ai-video-production
+  - tech-bridge-annie-wang-harness-four-designs
 created: 2026-06-03
-updated: 2026-10-25
+updated: 2026-10-26
 ---
 
 # Tech Bridge
@@ -1413,3 +1415,16 @@ updated: 2026-10-25
 - **소개의 소개**다 — Pocock의 스킬을 Eric Tech가 소개한 영상을 Tech Bridge가 해설한다. 원본 영상 링크는 없고 스킬 저장소 링크만 있다. 10-05 Pocock 본인 발표 [[tech-bridge-pocock-pr-bottleneck]]의 후속 성격이고, 거기 없던 /implement-spec이 나온다.
 - 자막 구성은 두 편 모두 `Korean original` + `English (US)`, 메타 `language`=`en`이다. 받은 ko는 `lang=ko` 원 ASR이다(`ko`·`ko-orig` 바이트 동일).
 - ⚠️ 발췌 6구간 모두 앞부분 무캡션. **ko**: *much은* → PR은, *출신* → 출시, *진한 작업* → 지난 작업. 발췌 *AGMD* 판독 불가.
+
+## 2026-10-25 업로드 — 해설 2편: AI 영상 제작 · Annie Wang 하네스 (2026-10-26 ingest)
+
+[[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]](`ebUlPF9HNAg`, 9:08, 공식 챕터 10) — [[sarah-chieng]](신규) · [[cova-lee]](신규) ([[taste-vs-judgment]] · [[assistance-vs-automation]] · [[skill-self-improvement]])
+
+- **AI 엔지니어링이 아니라 콘텐츠 제작 워크플로**를 다룬 첫 편이다. 화자는 AI 회사([[cerebras|Cerebras]] · [[openai|OpenAI]]) 소속이다. 원본 강연의 제목 · 링크는 없다.
+- 해설이 **스스로 유보**한다: *"제목의 2억 조회수가 이 자동화만으로 생겼다는 근거는 제시되지 않아요."* Buffer 도움말 인용은 해설이 덧붙인 것이다.
+- ⚠️ 발췌 다수 앞부분 무캡션, 구간별 화자는 내레이션에 기댄 추정. **ko**: *천문장* → 첫 문장, *살아도시글을* → 게시글을(추정), *지의 응답* → 질의응답.
+
+[[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]](`8tjhiruPpBg`, 7:20, 공식 챕터 10) — [[annie-wang]](신규) ([[agent-harness-design]] · [[agent-memory]] · [[agent-sandboxing]] · [[prompt-injection]] · [[hard-vs-soft-enforcement]] · [[generator-evaluator-pattern]])
+
+- 10-24 · 10-25엔 **멤버 전용**(stderr ERROR)이었고 10-26에 공개로 확인됐다. 10-23 [[tech-bridge-jediah-katz-harness-whats-left]]에 이은 하네스 해설이다. 원본과 해설이 **같은 예제(CSV 내려받기 버튼)** 를 쓴다.
+- ⚠️ 원본 링크 없음. *ads graph workfow* → ADK graph workflow 판독은 추정. 해설의 *"클로드 개발사의 실무 기록"* 은 출처 미상. **ko**: *한스* → 하네스, *작업 푸름* → 작업 흐름.

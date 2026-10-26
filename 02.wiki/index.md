@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-25
+updated: 2026-10-26
 ---
 
 # Index
@@ -53,6 +53,9 @@ updated: 2026-10-25
 - [[jediah-katz]] — [[cursor|Cursor]]에서 AI 에이전트 도구를 만든 개발자(설명란). AI Engineer 강연: data flywheel로 하네스가 줄고, [[grokbot|GrokBot]]에선 가드레일을 다시 넣었고, 인프라·보안·효율은 남는다 ([[tech-bridge-jediah-katz-harness-whats-left]])
 - [[max-kanat-alexander]] — 소프트웨어 설계 전문가(내레이션 "맥스", 성은 태그에만). 네 기준(실패의 피해 · 교체 비용 · 의존 관계 · 유지 비용)으로 disposable ↔ durable, "Not depends but yes or no" ([[tech-bridge-kanat-alexander-disposable-vs-durable]]) ⚠️ 원본 발표 미상
 - [[eric-tech]] — [[matt-pocock|Matt Pocock]]의 스킬 /implement-spec · /pr · /retro를 소개한 사람(설명란). 증거 · merge danger · 핵심 파일 목록 ([[tech-bridge-pocock-skills-implement-spec-pr-retro]]) ⚠️ 발췌 화자로 추정, 원본 링크 없음
+- [[sarah-chieng]] — [[cerebras|Cerebras]] 소속(설명란). [[cova-lee|Cova Lee]]와 영상 제작 여섯 단계 강연, 말로 먼저 쓰는 대본 · AI는 인터뷰어 ([[tech-bridge-chieng-lee-ai-video-production]]) ⚠️ 구간 귀속 추정
+- [[cova-lee]] — [[openai|OpenAI]] 소속(설명란). 썸네일 시뮬레이터 · 최근 50편에서 뽑은 스타일 시스템 · computer use 사운드패드 · 주간 과정 점검 · *"unique POV"* ([[tech-bridge-chieng-lee-ai-video-production]]) ⚠️ 구간 귀속 추정
+- [[annie-wang]] — 구글 엔지니어(설명란). CSV 내려받기 예제로 하네스 네 층: session/state · 도구와 MCP · 샌드박스와 데이터 흐름 · 결정적 평가 → judge → 사람, *"Simply telling the model to be careful isn't enough"* ([[tech-bridge-annie-wang-harness-four-designs]])
 - [[hrishi-olickel]] — Southbridge 창업자. 보편 스키마 철회 → just-in-time ontology, 모델 세 역할, Jev 오하이오 entity resolution($10,000 → $795), prior 오류·교차 모델 교집합, Pareto surfing ([[tech-bridge-just-in-time-ontology]]) ⚠️ 이름은 설명란에만
 - [[priyanka-phatak]] — [[anthropic|Anthropic]] MTS, Claude Managed Agents 엔지니어링 팀 리드. AI Engineer 워크숍 1·2부: pet → cattle 진화, brain–hands 분리, "harnesses encode assumptions", API 객체 넷, 콘솔 Quick Start, Vault·메모리·forking 보충 답변 ([[tech-bridge-claude-managed-agents-workshop-1]] · [[tech-bridge-claude-managed-agents-workshop-2]]) ⚠️ 성 Phatak은 2부 설명란에만(발화 없음)
 - [[gabe-cemaj]] — [[anthropic|Anthropic]] MTS, Managed Agents 팀. 엔지니어링 글 [[anthropic-managed-agents]] 공저자, 워크숍 핸즈온·Q&A 주 답변자(research desk, Outcome, Vault egress 바꿔치기, 예산 상한·rewind 없음, dreaming 메모리 전용) ([[tech-bridge-claude-managed-agents-workshop-1]] · [[tech-bridge-claude-managed-agents-workshop-2]]) ⚠️ en-orig "Semach"
@@ -808,6 +811,8 @@ updated: 2026-10-25
 - [[tech-bridge-claude-duet-proactive-assistant]] — Tech Bridge 한국어 해설 + 화자 미상 발췌(6:06, 챕터 10, 2026-10-23 업로드): 클로드가 먼저 일한다 — [[claude-duet|Claude Duet]]의 선제 알림, 4동사 승인 게이트, 비밀 비노출, 사용량 한도 ⚠️ 원본 링크 없음
 - [[tech-bridge-kanat-alexander-disposable-vs-durable]] — [[max-kanat-alexander|Max Kanat-Alexander]] 발표 발췌 + Tech Bridge 한국어 해설(6:17, 챕터 8, 2026-10-24 업로드): AI 시대에도 코드 품질은 중요할까 — 변경의 두 위험, 네 기준 → [[disposable-vs-durable-software]], 임시 프로그램이 중요한 시스템이 될 때, 격리 환경, 자동 검사, "yes or no" ⚠️ 발췌 2구간 무캡션 · Charity Majors · 구글 기준은 해설 인용
 - [[tech-bridge-pocock-skills-implement-spec-pr-retro]] — [[eric-tech|Eric Tech]](추정) 영상 발췌 + Tech Bridge 한국어 해설(5:28, 챕터 7, 2026-10-24 업로드): AI는 끝냈다는데 왜 출시는 느릴까 — [[matt-pocock|Matt Pocock]] 스킬 /implement-spec(의존 관계 → 병렬) · /pr(요약 · 근거 · merge danger) · /retro(핵심 파일 목록, 기계 검사 vs 사람 규칙, 과잉 회고 경고) ⚠️ 원본 링크 없음, 발췌 앞부분 무캡션
+- [[tech-bridge-chieng-lee-ai-video-production]] — [[sarah-chieng|Sarah Chieng]](Cerebras) · [[cova-lee|Cova Lee]](OpenAI) 강연 발췌 + Tech Bridge 한국어 해설(9:08, 챕터 10, 2026-10-25 업로드): AI로 영상 만들기 여섯 단계 — 이유를 적은 참고자료, 썸네일 시뮬레이터, 말로 쓰는 대본, 자기 영상에서 뽑은 스타일 규칙, 자동/수동 겸용 사운드패드, 주간 점검 ⚠️ 원본 강연 미상 · "2억 조회수"의 인과는 해설이 스스로 유보
+- [[tech-bridge-annie-wang-harness-four-designs]] — [[annie-wang|Annie Wang]](Google) 발췌 + Tech Bridge 한국어 해설(7:20, 챕터 10, 멤버 전용 → 2026-10-26 공개 확인): 하네스 네 설계 — session · state · 장기 기억, 도구와 MCP, 병렬 검사 + retry limit 워크플로, 샌드박스 ≠ 데이터 흐름, 결정적 평가 → judge → 사람 ⚠️ 원본 링크 없음, ADK 판독 추정
 - [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]] ([[langchain|LangChain]] Labs) AI 에이전트에 학습하는 메모리를(15:28, 챕터 19): 관찰 ≠ 학습, semantic · episodic · procedural(개선의 대부분) + working/long-term, 읽기·쓰기 순환과 필터 → [[trace-to-memory-loop]], 세 교훈(대부분 history · 캐시/hot path · procedural은 사람 검토 + eval) ⚠️ 10:13~12:28 [[langsmith|LangSmith]]·Context Hub 자사 제품 · *"about 75%"* 화자 추정 · 이름·직함 설명란에만 · ko가 run → "사형 집행", "세금 정보" 환각
 - [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]] ([[stigg|Stigg]]) 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(19:00, 챕터 15): 4월 가격 비상(Anthropic 서드파티 에이전트 구독 사용 차단 · OpenAI "5 5x" · Copilot 무료 폐지)은 인프라 문제, 검사가 청구서 뒤에 온다 → [[reserve-then-settle]], OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, 4가지 패턴, AI의 Stripe moment ⚠️ 벤더 CEO · 타사 내부 주장 출처 없음 · *"150s to even 750"* 단위 미발화(설명란 "배"는 업로더 해석) · 연도 미발화 · ko concurrency → "참석률", rate limit → "이자율"
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]](설명란에만) ([[braintrust|Braintrust]]) 평가 플랫폼 만들기가 생각보다 어려운 이유(16:25, 챕터 15): evals + observability 두 기둥, 최소 eval 시스템 세 요소, multi-persona(PM·SME), North Star 개선 루프(drift) → [[production-trace-eval-flywheel]], [[eval-platform-maturity-stages|성숙 4단계]], systems problem(수백 MB 트레이스, 실시간 vs 장기 쿼리, BTQL), headless 코딩 에이전트가 eval을 돌고 사람이 배포 결정 ⚠️ 벤더 피치(14:45~15:45 unknown unknowns) · 영상이 발표 중간에서 시작 · ko가 production을 "개발 중"·"오프라인"으로 반전
@@ -945,7 +950,7 @@ updated: 2026-10-25
 
 ## 통계
 
-- 총 페이지 수: 906 (901 → 906, + 2026-10-25 Tech Bridge 2편(10-24 업로드 — 코드 품질 · Pocock 스킬 3가지): source 2 + entity 2 + concept 1 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 906과 일치)
+- 총 페이지 수: 911 (906 → 911, + 2026-10-26 Tech Bridge 2편(10-25 업로드 — AI 영상 제작 · Annie Wang 하네스): source 2 + entity 3 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 911과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-25 (Tech Bridge **2편** — 10-24 업로드 [[tech-bridge-kanat-alexander-disposable-vs-durable|AI 시대에도 코드 품질은 중요할까?]](`30ejv1N33Yw`) · [[tech-bridge-pocock-skills-implement-spec-pr-retro|AI는 끝냈다는데 왜 출시는 느릴까?]](`vbdubFaBmfo`). `Yhck-x6VuLs` · `8tjhiruPpBg`는 여전히 멤버 전용)
-- 직전 ingest: 2026-10-24 (Tech Bridge **2편** — 10-23 업로드 [[tech-bridge-jediah-katz-harness-whats-left|하네스는 더 이상 필요 없을까?]](`NUyLH7tjQpg`) · [[tech-bridge-claude-duet-proactive-assistant|클로드가 먼저 일한다 | Claude Duet]](`BfHkp3dz2gc`). `Yhck-x6VuLs`는 여전히 멤버 전용, 신규 멤버 전용 `8tjhiruPpBg`)
+- 마지막 ingest: 2026-10-26 (Tech Bridge **2편** — 10-25 업로드 [[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]](`ebUlPF9HNAg`) · [[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]](`8tjhiruPpBg`, 멤버 전용 → 공개). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 직전 ingest: 2026-10-25 (Tech Bridge **2편** — 10-24 업로드 [[tech-bridge-kanat-alexander-disposable-vs-durable|AI 시대에도 코드 품질은 중요할까?]](`30ejv1N33Yw`) · [[tech-bridge-pocock-skills-implement-spec-pr-retro|AI는 끝냈다는데 왜 출시는 느릴까?]](`vbdubFaBmfo`). `Yhck-x6VuLs` · `8tjhiruPpBg`는 여전히 멤버 전용)

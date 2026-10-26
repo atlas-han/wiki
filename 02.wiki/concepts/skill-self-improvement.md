@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production]
 created: 2026-09-05
-updated: 2026-10-25
+updated: 2026-10-26
 ---
 
 # Skill Self-Improvement
@@ -172,3 +172,7 @@ updated: 2026-10-25
 [[matt-pocock|Matt Pocock]]의 /retro를 소개한 편이다(발췌, 화자 추정 [[eric-tech|Eric Tech]]). 에이전트가 맞는 정보를 찾느라 오래 걸리면 *"a list of key files on exactly where they are and how to find them more quickly"* 를 담은 파일(*"AGMD"*, 판독 불가)을 만든다(04:08~04:17). 해설은 고칠 대상을 둘로 나눈다. 기계가 확인할 수 있는 실수는 자동 검사로, 판단이 필요한 기준은 사람이 읽는 규칙으로 보낸다.
 
 > ⚠️ **빈도의 비용.** 해설: *"회고를 계속 자동으로 돌리면 기능보다 정리 작업만 늘어날 수 있어요."*(04:40~04:47) 이 페이지의 다른 사례들은 관찰을 상시화하고 반영만 사람이 거른다. 이 경고는 **실행 빈도 자체**를 비용으로 본다. 원음 근거는 없다(해설).
+
+## 주간 작업 과정 점검 — 조회수 대신 새는 시간 (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
+
+코딩이 아니라 영상 제작 사례다. 해설: *"이번 주에 어디서 오래 걸렸는지, 매번 같은 수정을 한 곳은 어디인지 물어보는 거예요."*(06:40~06:46) 강연에서 찾은 문제는 *"보지 않는 곳으로 알림이 가거나 필요가 없어진 검사를 계속하던"* 것이었다. 원음([[cova-lee|Cova Lee]] 추정): *"we don't have a lot of time to kind of look back and go through all of our processes and understand inefficiencies."*(07:18~07:25) 전날 [[tech-bridge-pocock-skills-implement-spec-pr-retro|/retro]]가 *매 작업 뒤* 라면 이쪽은 **주 단위**다. 앞 절의 빈도 경고와 맞닿는다. 해설의 맺음은 *"결과를 고친 이유까지 남겨 두는"* 것이다(08:51~08:54).

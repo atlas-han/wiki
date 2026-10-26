@@ -5,9 +5,9 @@ category: org
 tags: [inference, accelerator, low-latency]
 links:
   - https://www.cerebras.ai
-sources: [tech-bridge-agentic-sites, tech-bridge-voice-agent-failure-modes]
+sources: [tech-bridge-agentic-sites, tech-bridge-voice-agent-failure-modes, tech-bridge-chieng-lee-ai-video-production]
 created: 2026-09-01
-updated: 2026-09-19
+updated: 2026-10-26
 ---
 
 # Cerebras
@@ -38,3 +38,7 @@ updated: 2026-09-19
 ## References
 
 - [[tech-bridge-agentic-sites]] · [[agentic-sites]] · [[gemma-4]]
+
+## 소속 인물 — Sarah Chieng (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
+
+설명란: *"Cerebras의 Sarah Chieng"* → [[sarah-chieng]]. 주제는 추론 하드웨어가 아니라 **영상 제작 워크플로**다([[cova-lee|Cova Lee]]와 공동 강연). Cerebras에서의 역할은 소스에 없다.

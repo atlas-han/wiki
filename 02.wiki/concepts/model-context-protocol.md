@@ -6,9 +6,9 @@ tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
 related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure, mcp-skill-distribution]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-claude-managed-agents-workshop-2]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-annie-wang-harness-four-designs]
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-10-26
 ---
 
 # Model Context Protocol (MCP)
@@ -233,3 +233,7 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 ## MCP tunnels — 인터넷에 내놓지 않는 MCP (2026-10-19 · [[tech-bridge-claude-managed-agents-workshop-2]])
 
 [[managed-agents|Claude Managed Agents]]에서 사내 데이터를 MCP로 노출하는 세 경로: ① MCP + 인증 vault ② *"If you don't want to expose your MCP to the internet, we have a feature called MCP tunnels which lets you create a tunnel from your um network into ours"*(33:37~33:49) ③ 고객 네트워크에 peer한 자체 호스팅 샌드박스. 09-01([[tech-bridge-claude-platform-agent-era]])의 *"MCP 터널(방화벽 뒤 MCP 서버 접근)"*과 같은 기능. 외부 메모리 공급자도 *"you would just build an MCP or a custom tool"*(30:44~30:48).
+
+## 입문자용 정의 — 결정은 파일을 바꾸지 않는다 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
+
+[[annie-wang|Annie Wang]](발췌): *"[The model] might decide, okay, I need to edit this file. But that decision doesn't change the file itself. A tool has to apply the edit (…) You can also connect tools through an MCP server (…) It gives your application a standard way to discover and call tools exposed by a server."*(01:48~02:13, 마지막 문장은 en-orig 기준)

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, harness, scaffolding, llm-engineering]
 related: [harness-engineering, self-harness, generator-evaluator-pattern, sprint-contract, brain-hands-decoupling, context-anxiety, context-resets-and-compaction, transcript-classifier, agentic-misbehavior, pets-vs-cattle, sutton-bitter-lesson, ralph-wiggum-method, model-context-protocol, dynamic-workflows, intelligence-as-infrastructure, agi-definition, tools-and-context-over-harness, linear-vs-closed-loop-harness, files-vs-database-agent-memory]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-claude-code-auto-mode, anthropic-dynamic-workflows, tech-bridge-harness-engineering, self-harness-paper, tech-bridge-claude-platform-agent-era, tech-bridge-claude-code-team-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-lopopolo-agent-harness, tech-bridge-oracle-agent-memory-harness, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-annie-wang-harness-four-designs]
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-10-26
 ---
 
 # Agent Harness Design
@@ -252,3 +252,7 @@ OS 메타포: `read()`가 1970s 디스크팩과 SSD에 동일하게 동작한 �
 - 사용자가 만드는 *"custom harness on top of CMA"*(05:25~05:30)는 **맞춤 도구 + 서버 쪽 오케스트레이션**으로 세션 여러 개를 띄우고 모으는 층이다(dispatch analysis, 14:26~14:35).
 
 > ⚠️ Contradiction(약): [[anthropic-managed-agents]]의 메타 하네스(*"어떤 harness가 들어올지는 비opinionated"*, Claude Code 같은 범용 하네스도 수용)와 달리, 워크숍 답변에는 **호스팅 하네스를 교체한다**는 선택지가 없다. 글 = 인터페이스 원칙, 워크숍 = 현재 제품.
+
+## 하네스를 고르는 네 질문 — 기억 · 도구와 순서 · 접근 범위 · 완료 기준 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
+
+[[annie-wang|Annie Wang]](Google, 발췌)의 정의: 하네스는 *"[connections?], connect tools and enforce permissions and also manage all the back-and-forth communication"*(00:25~00:33). Tech Bridge 해설은 이를 네 질문으로 접는다. *"무엇을 기억하나요? 어떤 도구를 어떤 순서로 쓰나요? 어디까지 접근할 수 있나요? 무엇을 확인해야 완료인가요?"*(06:56~07:05) 예제는 고객 명단 CSV 내려받기 버튼 하나다. 10-23 [[tech-bridge-jediah-katz-harness-whats-left]]의 *"모델이 좋아져도 남는 것"* 과 같은 질문을 입문자용으로 푼 편이다.

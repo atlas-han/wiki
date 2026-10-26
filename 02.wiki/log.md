@@ -2275,3 +2275,24 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 6분·5분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 두 편 모두 `Korean original` + `English (US)` 2트랙, 메타 `language`=`en`이다. `ko`·`ko-orig`는 md5가 같아 `lang=ko` 원 ASR로 판정했다. 발췌는 ko 트랙의 영어 조각과 en-orig를 대조했다. `--sleep-subtitles 8`로 429 없음. `30ejv1N33Yw`의 `timestamp`는 2026-10-25 08:00 KST다(`upload_date`는 UTC 기준 20261024).
+
+## [2026-10-26] ingest | Tech Bridge — 10-25 업로드 2편 (AI 전문가들이 영상을 만드는 방법 — Sarah Chieng · Cova Lee 강연 해설 · 구글 엔지니어가 말아주는 AI 하네스 — Annie Wang 해설)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). ⭐ 10-24 · 10-25에 멤버 전용(stderr ERROR)이던 `8tjhiruPpBg`가 `public` 줄로 나왔다(`upload_date` 20261025). 신규 10-25 업로드 `ebUlPF9HNAg`(9:08)도 `public`이다. `Yhck-x6VuLs`는 목록 범위 밖이라 단건 조회했고, 여전히 `subscriber_only`다. 목록의 나머지는 전부 vault에 있다.
+
+**신규 source 2 · entity 3**, 기존 페이지 보강 12개, index **906 → 911**(실측 일치).
+
+- `ebUlPF9HNAg`(9:08, 챕터 10) → [[tech-bridge-chieng-lee-ai-video-production]] — 발췌 화자 [[sarah-chieng|Sarah Chieng]](Cerebras) · [[cova-lee|Cova Lee]](OpenAI), 설명란 근거. 구간 귀속은 내레이션 추정이고 원본 강연은 미상이다. 여섯 단계 → 참고자료 · 썸네일 시뮬레이터 · 말로 쓰는 대본 · 스타일 시스템 · 사운드패드 · 주간 점검 → *"unique POV"*.
+  - 신규: [[sarah-chieng]] · [[cova-lee]]
+  - 보강: [[taste-vs-judgment]] · [[assistance-vs-automation]] · [[skill-self-improvement]] · [[cerebras]] · [[openai]]
+  - ⚠️ 발췌 다수 앞부분 무캡션. *Swix*(→ swyx 추정) · *my code access prompt*(Codex?) 판독 불가. Buffer 도움말은 해설의 외부 인용이다.
+- `8tjhiruPpBg`(7:20, 챕터 10) → [[tech-bridge-annie-wang-harness-four-designs]] — 발췌 화자 [[annie-wang|Annie Wang]](Google, 설명란 근거). 원본 링크는 없다. CSV 내려받기 예제로 하네스 네 층을 짚는다.
+  - 신규: [[annie-wang]]
+  - 보강: [[agent-harness-design]] · [[agent-memory]] · [[model-context-protocol]] · [[agent-sandboxing]] · [[prompt-injection]] · [[hard-vs-soft-enforcement]] · [[generator-evaluator-pattern]]
+  - ⚠️ *ads graph workfow* → ADK(추정). 해설의 Anthropic *"실무 기록"* 인용은 출처 미상. 멤버 전용 기간의 원래 업로드 날짜는 모른다.
+- [[tech-bridge]] · index · overview 갱신.
+- 페이지화하지 않음: swyx(swipe file — 지나가는 언급), Buffer, Codex(태그만), ADK(판독 추정), Google 조직 페이지(소속 부서 미상).
+
+### 운영 메모
+
+9분·7분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 두 편 모두 `Korean original` + `English (US)` 2트랙, 메타 `language`=`en`이다. `ko`·`ko-orig`는 md5가 같아 `lang=ko` 원 ASR로 판정했다. `--sleep-subtitles 8` + 편당 20초로 429 없음. `ebUlPF9HNAg`의 `timestamp`는 2026-10-26 07:00 KST다(`upload_date`는 UTC 기준 20261025).

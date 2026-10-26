@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-25
+updated: 2026-10-26
 sources: []
 ---
 
@@ -275,6 +275,8 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-10-24*: [[tech-bridge]] **2편** ingest(10-23 업로드). [[tech-bridge-jediah-katz-harness-whats-left|하네스는 더 이상 필요 없을까?]]([[jediah-katz|Jediah Katz]] 강연 발췌 + 해설) — 모델이 좋아지면 코딩 보조 하네스는 data flywheel로 줄지만, 새 작업([[grokbot|GrokBot]])에선 가드레일이 되돌아오고 **오래 실행 · 권한 · 비용**은 남는다 → [[harness-pruning]]의 메커니즘과 균형추를 한 화자가. [[tech-bridge-claude-duet-proactive-assistant|클로드가 먼저 일한다]] — Anthropic도 개인 상시 비서 범주에 [[claude-duet|Claude Duet]]으로 들어왔다(⚠️ 2차 진술): 주기 확인과 한도, 4동사 승인 게이트 → [[always-on-agent-architecture]] · [[action-reversibility]].
 
 - *2026-10-25*: [[tech-bridge]] **2편** ingest(10-24 업로드). [[tech-bridge-kanat-alexander-disposable-vs-durable|AI 시대에도 코드 품질은 중요할까?]]([[max-kanat-alexander|Max Kanat-Alexander]] 발췌 + 해설) — 품질의 엄격함은 *AI가 짰나* 가 아니라 **실패의 피해 · 교체 비용 · 의존 관계 · 유지 비용**이 정한다 → [[disposable-vs-durable-software]]. 09-08 IBM 편의 [[decision-quality]]와 짝을 이룬다. [[tech-bridge-pocock-skills-implement-spec-pr-retro|AI는 끝냈다는데 왜 출시는 느릴까?]] — [[matt-pocock|Pocock]]의 /implement-spec · /pr · /retro를 [[eric-tech|Eric Tech]]가 소개했다(제3자 소개의 해설). 완료라는 말 옆에 **근거와 merge danger**를 두고([[agent-change-evidence]]), 회고는 다음 작업의 환경을 고친다. 단 너무 자주 돌리면 정리 작업만 는다.
+
+- *2026-10-26*: [[tech-bridge]] **2편** ingest(10-25 업로드). [[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]]([[annie-wang|Annie Wang]] 발췌 + 해설) — 하네스를 네 질문(**무엇을 기억 · 어떤 도구를 어떤 순서로 · 어디까지 접근 · 무엇을 확인해야 완료**)으로 접는다. 실행 장소와 **데이터가 가는 곳**은 따로 봐야 하고([[agent-sandboxing]]), *"Simply telling the model to be careful isn't enough"*([[hard-vs-soft-enforcement]]). 완료 판정은 결정적 평가 → judge → 사람 순으로 쌓는다. [[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]]([[sarah-chieng|Sarah Chieng]] · [[cova-lee|Cova Lee]]) — 위키 첫 **콘텐츠 제작** 소스다. 스타일은 자기가 고른 결과 50편에서 뽑아 에이전트에게 주고([[taste-vs-judgment]]), 도구는 자동과 수동을 함께 둔다([[assistance-vs-automation]]). 해설은 성과 수치의 인과를 스스로 유보했다.
 
 ---
 

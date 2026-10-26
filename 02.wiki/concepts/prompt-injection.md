@@ -5,9 +5,9 @@ category: technique
 tags: [agent-safety, attack, llm-security]
 related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-annie-wang-harness-four-designs]
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-10-26
 ---
 
 # Prompt Injection
@@ -113,3 +113,7 @@ updated: 2026-10-19
 [[lethal-trifecta]] 관점에서: 리뷰어는 **신뢰할 수 없는 입력**(외부 PR)을 읽고 **결정 권한**(승인·차단)을 가진다 — 유출 경로가 없어도 *판정을 바꾸는 것* 자체가 피해다. → [[automated-code-review]]
 
 **분류기 게이트도 예외가 아니다 (2026-10-09 · [[tech-bridge-jev-calibrated-decisions]]).** 탈옥 시도를 거르는 가드레일로 제시된 [[jev|Jev]]에 대해 같은 해설이 *"like any AI model, it can be tricked by instructions hidden in the data it's reading"*(12:50~12:54)라고 한계를 단다. 텍스트를 생성하지 않는 [[system-1-model|System 1 모델]]도 **입력 데이터 속 지시**에 노출된다 — 위 다섯 번째 벡터(리뷰 대상이 리뷰어를 설득)와 같은 모양으로, 게이트 자신이 공격 표면이다.
+
+## 연습 공간 안에서도 — 읽은 글을 명령으로 받지 않기 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
+
+해설: *"읽던 파일에 비밀번호를 다른 곳으로 보내라는 지시가 숨어 있을 수 있어요. (…) 파일에서 읽은 글을 새 명령으로 받아들이지 않고 실제 도구가 할 수 있는 일도 따로 제한해야 해요."*(03:58~04:13) [[annie-wang|Annie Wang]](발췌)이 드는 통제는 제한된 권한, *"credentials kept out of reach"*, 네트워크 제한, 민감한 동작 전 승인 대기다. 그리고 *"Simply telling the model to be careful isn't enough."*(04:16~04:37) → [[credential-injection-outside-sandbox]] · [[hard-vs-soft-enforcement]]

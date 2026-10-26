@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-annie-wang-harness-four-designs]
 created: 2026-09-08
-updated: 2026-10-22
+updated: 2026-10-26
 ---
 
 # Agent Memory
@@ -239,3 +239,7 @@ updated: 2026-10-22
 ## 소비자 쪽 기준 — "며칠·몇 주·몇 달" (2026-10-22 · [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]])
 
 [[alexandr-wang|Wang]](해설 귀속) 원음: *"I think it's in the experience of using how well it remembers things that you mention to it over days, weeks, or months."*(06:34~06:40). 위 절들이 메모리를 층·수명·게이트·쓰기 주체로 쪼갠 **개발자 쪽** 논의라면, 이것은 **사용자가 체감하는 회상 품질**을 기준으로 둔다. 해설은 [[muse|Muse]]가 *"모델과 모델이 사용할 시스템을 함께 설계"* 했고 *"저장할 공간이 있어도 필요한 정보를 꺼내 쓰지 못하면 도움이 되지 않는다"* 고 정리한다 — 위 *읽기와 쓰기의 순환* 의 읽기 쪽. Meta는 짝 능력으로 **Active Focus**(현재 작업을 끝까지 — 해설)를 둔다 → [[muse-wonder]].
+
+## session · state · long-term memory 3분할 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
+
+[[annie-wang|Annie Wang]](발췌): **session**은 *"all the transcript of your conversation"* 이다. 원래 요청과 후속 지시(*"이름과 이메일만"*)가 둘 다 여기 속한다. **state**는 *"more like a scratch pad for your application"* 이다. 이름 · 이메일 · *status: ready for testing* 같은 key-value를 코드가 읽고 갱신한다(00:57~01:25). 해설: *"대화 기록은 작업일지, 상태는 지금 필요한 값을 적는 메모 (…) 다음 대화에서도 쓸 취향을 보관하면 장기 기억이 돼요. 무엇을 저장하고 다시 꺼낼지는 설계자가 정해요."*(01:27~01:43) ⚠️ 용어 체계는 ADK 류로 보이나 원본에서 확정하지 못했다.

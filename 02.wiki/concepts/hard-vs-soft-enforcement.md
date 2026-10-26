@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs]
 created: 2026-09-13
-updated: 2026-10-25
+updated: 2026-10-26
 ---
 
 # 하드 강제와 소프트 강제
@@ -157,3 +157,7 @@ updated: 2026-10-25
 
 - 코드 품질 편(해설): *"매번 사람이 기억해서 검사를 누르게 할 필요는 없어요. 저장하거나 코드를 올릴 때 검사가 자동으로 돌면 좋은 습관을 지키는 비용이 줄어요."*(04:29~05:03) 검사 규칙은 *처음부터 켜 두되*, *"엉뚱한 경고가 너무 많으면 곤란하죠"*. ⚠️ 해당 원음은 무캡션이다.
 - Pocock 스킬 편(해설, /retro): *"금지된 함수를 썼는지처럼 기계가 확인할 수 있는 일은 자동 검사로 막을 수 있죠. 판단이 필요한 기준은 사람이 읽을 규칙으로 남겨요."*(04:30~04:40) 같은 날 올라온 두 해설이 **강제의 층을 실수의 종류로 가른다**. → [[executable-standards]]
+
+## "모델에게 조심하라고 말하는 것으로는 부족하다" (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
+
+[[annie-wang|Annie Wang]](Google, 발췌): *"Those controls need to be enforced by software. Simply telling the model to be careful isn't enough."*(04:33~04:37) 여기서 *those controls* 는 권한 제한 · 자격 증명 격리 · 네트워크 제한 · 민감 동작 승인이다. 같은 편의 retry limit(*"the workflow stops and ask for help"*, 03:06~03:12)도 프롬프트가 아니라 워크플로 구조로 건 멈춤이다.
