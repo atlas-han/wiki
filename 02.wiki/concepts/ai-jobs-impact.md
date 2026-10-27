@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control]
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-10-27
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -159,3 +159,11 @@ G20 발언은 3부작의 *"두 마음"* 과 **다른 축**이다. 고용 영향�
 - 틀은 *"not doomerism or Pollyannaism — responsible optimism"*(20:50~21:03).
 
 G20의 *"직업은 남고 작업이 자동화"*, CBS·백악관 패널의 *블루칼라 수요*에 이어 **진로 조언**으로 같은 입장을 반복한다. ⚠️ 근거는 역사 유비뿐이고 수치가 없다. 블루칼라 수요를 강조한 앞 소스들과 달리 여기선 **대학을 가라**고 하는데, 진행자의 *"Do HVAC"* 를 부정한 것이지 기술직을 낮춘 것은 아니다(위키의 독해).
+
+## 주니어의 훈련 경로가 사라진다 — Voss (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
+
+[[laurie-voss|Voss]]는 일자리 수를 예측하지 않는다. **견습 경로**를 문제 삼는다. 예전에는 주니어에게 잘 정의된 티켓을 주고 틀린 점을 지적하며 키웠는데, *"that is gone because (…) That's what we do with the coding agents now."*(05:08~05:14) 그래도 forward-deployed · product engineer는 *"enormous number"* 가 필요하다. *"Universities teach data structures, boot camps teach React, nobody teaches go sit with a baker for a week and come back with a spec"*(05:35~05:42) — *"you're going to have to grow them on purpose."* 위 표의 네 입장 어디에도 들어가지 않는 축(일의 수가 아니라 **숙련의 생산**)이다.
+
+## Musk — 일이 선택이 된다면, 그리고 해설의 반론 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
+
+[[elon-musk|Musk]]: *"the same way that people retire seem to be fairly happy even though they're not working"*(04:40~04:45) — 그리고 *"One analogy might be gardening"*. 해설은 두 겹으로 깎는다. ① ILO 2025년 분석을 인용해 **지금의 업무 변화**(많은 직업이 *바뀐다*)와 **모든 일이 사라진 미래**를 구분하라고 한다(⚠️ 외부 인용, 미확인). ② *"그런 삶을 선택하려면 생활이 먼저 안정돼야 해요."*(05:26~05:28) 위 2026-09-07 절의 *"12~18개월"* 과 같은 화자이고, 이번에는 시한 없이 **도착한 뒤의 삶**을 말한다.

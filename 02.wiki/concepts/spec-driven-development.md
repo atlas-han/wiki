@@ -5,9 +5,9 @@ category: pattern
 tags: [spec, planning, agent, github, workflow]
 related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer]
 created: 2026-08-29
-updated: 2026-10-17
+updated: 2026-10-27
 ---
 
 # Spec-Driven Development
@@ -155,3 +155,9 @@ spec은 **두 장**이다 — *"Product spec describes the product invariants th
 - [[tech-bridge-sdd-full-course]]
 - [[github-spec-kit]]
 - 공식: <https://github.github.io/spec-kit/>
+
+## 명세를 고객에게서 꺼내는 일 — "go sit with a baker for a week" (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
+
+[[laurie-voss|Voss]]: 주문을 추적하는 소프트웨어는 1만 개다. 그런데 빵집에 맞는 것은 *"only one of those, if you're lucky"* 이고, 그 지식은 *"isn't in the training data. It isn't in the weights. It is in the mind of the person who runs that business."*(03:13~03:19) 처방은 이렇다. *"put your best people's judgment into specs and rubrics and evals (…) turning the sense of the problem into a spec of the problem so that the agents can build it for us."*(06:29~06:51)
+
+이 페이지의 다른 소스들은 명세를 **에이전트 입력**으로 다뤘다. 이 편은 그보다 앞단인 **명세를 얻는 대화**를 직무의 핵심으로 둔다. 그 직무에 product engineer라는 이름을 붙이고, 훈련 경로가 없다고 본다(*"nobody teaches go sit with a baker for a week and come back with a spec"*).

@@ -5,9 +5,9 @@ category: theory
 tags: [abundance, equity, electricity-analogy, pricing, access, openai, policy]
 related: [compute-constrained-growth, intelligence-as-infrastructure, power-shortfall, token-roles, ai-jobs-impact, regulatory-capture, just-in-time-ontology]
 first-seen: tech-bridge-altman-g20-economic-boom
-sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-altman-g20-economic-boom, tech-bridge-altman-devday-dots, tech-bridge-hassabis-fry-creativity-future, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-just-in-time-ontology, tech-bridge-musk-abundance-work-control]
 created: 2026-09-07
-updated: 2026-10-18
+updated: 2026-10-27
 ---
 
 # Intelligence Abundance (지능의 풍요 — 형평 논거)
@@ -89,3 +89,13 @@ Altman은 이것을 향후 5년의 **위험 셋** 중 하나로 분류한다(나
 - [[tech-bridge-altman-g20-economic-boom]] — first-seen
 - [[sam-altman]] · [[openai]]
 - 관련: [[compute-constrained-growth]] · [[intelligence-as-infrastructure]] · [[power-shortfall]] · [[token-roles]] · [[regulatory-capture]]
+
+## 생산 ≠ 분배 — 해설이 붙인 반대편 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
+
+[[elon-musk|Musk]] 인터뷰를 해설한 편이다. 풍요의 원음은 *"There'll be a lot more stuff. I mean 30% more stuff is still a lot"*(02:02~02:05)이다. 해설은 그 위에 *"100만 배"*(원음 무캡션)를 전한 뒤 세 번 깎는다.
+
+1. *"거친 추정"* 이다.
+2. *"돈을 없애자는 정책을 발표한 건 아니에요 (…) 그렇다고 자원이 무한해지는 건 아니죠"* — Musk도 에너지와 물질을 말했다.
+3. *"생산이 늘어나는 것과 누구나 그 물건을 이용할 수 있는 건 다른 문제예요."*(03:35~03:39)
+
+불평등 질문에 대한 Musk의 답은 무캡션이고, 해설의 요약은 *"풍요가 오면 모두가 원하는 걸 가질 수 있다"* 다. 이 페이지의 형평 논거(풍요 → 분배)는 Altman 쪽에서 들어왔다. 이번에는 **해설자가 반대편에 서는** 첫 사례다.

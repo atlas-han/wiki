@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer]
 created: 2026-09-13
-updated: 2026-10-23
+updated: 2026-10-27
 ---
 
 # 검증 병목
@@ -258,3 +258,16 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 - 측정 권고(해설): *"코드가 처음 나온 시간과 사람이 검토해서 받아들인 시간을 함께 기록해 보십시오. 프롬프트 수정, 테스트, 실패 해결, 병합 충돌 정리에 쓴 시간을 보면 처음 고른 우선순위가 맞았는지 판단할 수 있습니다."*(08:52~09:06) 진단표: 환경이 뒤섞이면 분리 · 같은 검사를 사람이 반복하면 자동화 · 합칠 때 깨지면 병렬 계획부터.
 - 테스트 통과 ≠ 요구 충족: *"로그인 버튼이 잘 눌리는 것과 다른 사람의 계정으로 들어갈 수 없는 것은 서로 다른 확인 항목입니다."*(04:35~04:39)
 - ⚠️ 전부 Tech Bridge 해설 권고다 — [[stripe|Stripe]]의 수치나 측정 결과는 자막에 없다.
+
+## 검증 다음의 병목 — 리뷰 → 운영 → 보안 → 문제 정의 (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
+
+[[laurie-voss|Voss]]의 두 번째 강연(발췌)은 이 페이지의 전제를 한 단계 연장한다. 제약 이론(귀속 미상의 *"his big idea"*)에서 두 가지를 가져온다. 하나는 *"speeding things up does not work unless the thing that you were speeding up is the bottleneck"*(00:54~01:00), 다른 하나는 *"when you fix the bottleneck it doesn't go away, it just moves"*(01:11~01:15)다.
+
+화자는 병목이 옮겨 갈 순서를 이렇게 본다.
+
+1. **코드 리뷰**: 12개월 안에 *"real progress"*
+2. **운영**: 배포와 확장
+3. **보안**: 2와 3을 합쳐 *"5 and 10 years"*
+4. **문제를 기술하고 해결의 기준을 정하는 일**: *"that is where it stays"*(03:40~03:48)
+
+이 페이지의 다른 소스들이 검증을 **종착점**으로 봤다면, 이 편은 검증을 **경유지**로 본다.

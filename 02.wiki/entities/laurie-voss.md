@@ -8,9 +8,9 @@ links:
   - https://x.com/seldo
   - https://bsky.app/profile/seldo.com
   - https://github.com/seldo
-sources: [tech-bridge-death-of-code-review]
+sources: [tech-bridge-death-of-code-review, tech-bridge-laurie-voss-product-engineer]
 created: 2026-10-03
-updated: 2026-10-16
+updated: 2026-10-27
 ---
 
 # Laurie Voss
@@ -36,3 +36,14 @@ updated: 2026-10-16
 
 - [[tech-bridge-death-of-code-review]] · [[arize-ai]]
 - 설명란: <https://x.com/seldo> · <https://github.com/seldo> (⚠️ 열어 보지 않았다)
+
+## 두 번째 강연 — 리뷰 다음의 병목, product engineer (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
+
+Tech Bridge의 **내레이션 없는 발췌 편집본**(7:18)이다. 원본 강연 링크는 없다. 발화에 이름이 없고, *"You knew I the arise guy was going to say evals"*(06:34)와 설명란으로 귀속한다. 10-02 강연과는 다른 강연이다.
+
+- 시작 문장: *"the cost of producing plausible code has collapsed while the cost of knowing whether to trust that code has stayed exactly the same."*(00:00~00:07)
+- **병목 이동 순서**: 리뷰 → 운영 → 보안(*"somewhere between 5 and 10 years"*) → 문제 정의. *"my big bet for this talk and for the next 10 years is that is where it stays."*(03:46~03:48) → [[verification-bottleneck]]
+- Fred Brooks의 essential/accidental complexity를 근거로 들고, **product engineer**라는 이름을 붙인다. *"finds out what people need, defines what good looks like, and ships it uh with agents doing the typing."*(04:15~04:21)
+- 주니어: *"nobody teaches go sit with a baker for a week and come back with a spec"*(05:39~05:42) → [[ai-jobs-impact]]
+
+**이번에는 자기 주장을 스스로 깎는다**: *"Am I just thinking that the thing that I enjoy about software development (…) is the hard part of software? You can tell me if I'm wrong."*(04:24~04:32) 위 「태도」 절에서 본 것처럼 남의 주장을 깎던 습관을 자기 주장에도 적용한 것이다.

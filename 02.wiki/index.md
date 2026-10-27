@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-26
+updated: 2026-10-27
 ---
 
 # Index
@@ -80,7 +80,7 @@ updated: 2026-10-26
 - [[dan-shipper]] — Every 진행자(⚠️ 성·소속은 설명란만, 자막엔 "Dan"). DevDay 2026에서 [[sam-altman|Altman]] 인터뷰, Dots 베타 사용자, 사내 [[jev|Jev]] 사용 진술 ([[tech-bridge-altman-devday-dots]])
 - [[nick-saraev]] — 영상 *"How I Learn Complex Skills & Difficult Subjects So Fast with AI"* 화자. AI를 설명자 하나가 아니라 10가지 역할로 — 학습은 소비가 아니라 생산 ([[tech-bridge-learn-anything-with-ai]]) ⚠️ 이름은 설명란·태그에만 · 업무용 AI 습관 일곱 — 말로 맥락 주기, AI가 나를 인터뷰, 의견 대신 약점 ([[tech-bridge-top-1-percent-ai-habits]])
 - [[zach-lloyd]] — [[warp|Warp]] 창업자(전 Google principal engineer · Google Docs 엔지니어링 리드). *"소프트웨어 엔지니어링은 공장 공학이 된다"* ([[tech-bridge-warp-factory-engineering]]) ⚠️ 당사자 · 6개월 무코딩은 본인 진술
-- [[laurie-voss]] — [[arize-ai|Arize AI]] DevRel 책임자, npm Inc. 공동 창업자. 에이전트 시대 코드 리뷰 산업 현황 서베이 ([[tech-bridge-death-of-code-review]]) ⚠️ 성·링크는 설명란에만(자막 "Lori")
+- [[laurie-voss]] — [[arize-ai|Arize AI]] DevRel 책임자, npm Inc. 공동 창업자. 에이전트 시대 코드 리뷰 산업 현황 서베이 ([[tech-bridge-death-of-code-review]]) · 두 번째 강연: 병목은 리뷰 → 운영 → 보안 → 문제 정의, product engineer, 주니어 훈련 경로 ([[tech-bridge-laurie-voss-product-engineer]]) ⚠️ 성·링크는 설명란에만(자막 "Lori")
 - [[justin-reock]] — [[getdx|DX]] deputy CTO. DX 플랫폼 데이터로 본 AI 도입 1년의 다섯 트렌드(속도·품질·사람·측정·병목) ([[tech-bridge-dx-ai-impact-trends]]) ⚠️ 자막 "Justin Rio", 이름은 설명란 링크(justinreock)
 - [[simon-martinelli]] — 스위스 엔터프라이즈 Java 컨설턴트(17년), [[ai-unified-process|AI Unified Process]] 저자, 레거시 현대화 ([[tech-bridge-sdd-enterprise-lessons]]) ⚠️ 당사자 · 성은 설명란에만
 - [[charlie-holtz]] — [[conductor|Conductor]] 공동창업자. 가장 빠른 빌더들의 6원칙과 *공장이 아니라 오케스트라* ([[tech-bridge-conductor-orchestras-not-factories]]) ⚠️ 당사자 · 이름은 설명란에서
@@ -145,7 +145,7 @@ updated: 2026-10-26
 - [[zoubin-ghahramani]] — 케임브리지 교수 · [[google-deepmind|Google DeepMind]], 불확실성의 수학으로 본 지능. [[bayesian-inference]]·[[continual-learning]] ([[tech-bridge-uncertainty-mathematics]])
 - [[sam-altman]] — [[openai|OpenAI]] CEO. 프론티어 RL 실행 연기·[[intent-alignment]]·[[agi-definition]]·[[compute-constrained-growth]]·[[ai-privilege]] (*Sources with Alex Heath* 3부작, sources: 3) ⚠️ 당사자 진술
 - [[jensen-huang]] — [[nvidia|NVIDIA]] CEO. 토큰=kWh·5단 케이크·에이전트 하네스=외골격·"사실상 AGI"·직업은 남고 작업이 자동화 ([[tech-bridge-jensen-huang-g20-agi]]) ⚠️ 인프라 판매자의 정책 무대 발언 · 백악관 SI 패널: SI 공장·격리 + 대역 밖 감시 ([[tech-bridge-white-house-superintelligence-panel]]) · 갈라: AI는 살아 있지 않다·정렬 = what+how·상자 + 감시·responsible optimism ([[tech-bridge-jensen-huang-korea-society-gala]])
-- [[elon-musk]] — [[tesla|Tesla]]·[[spacex|SpaceX]] CEO. G20 첫 연사 — default legal 규제론, 스톡피시 수준 12~18개월, 로봇 10억 대, 2027년 15 GW 전력 부족 ([[tech-bridge-elon-musk-g20-ai-future]], ⚠️ 당사자 진술)
+- [[elon-musk]] — [[tesla|Tesla]]·[[spacex|SpaceX]] CEO. G20 첫 연사 — default legal 규제론, 스톡피시 수준 12~18개월, 로봇 10억 대, 2027년 15 GW 전력 부족 ([[tech-bridge-elon-musk-g20-ai-future]]) · 풍요 · 일 · 통제 인터뷰 해설: 100만 배 디지털 지능, 정원 비유, 참여자냐 구경꾼이냐, truth-seeking, protopia ([[tech-bridge-musk-abundance-work-control]], ⚠️ 당사자 진술)
 - [[corey-haines]] — 마케팅 [[agent-skills|스킬]] 48종 저자, 온보딩·페이월·churn ([[tech-bridge-six-agent-skills]])
 - [[sahil-lavingia]] — Gumroad 창업, *The Minimalist Entrepreneur* 스킬 10종 · 실명 10명·유료 3명 검증 게이트 ([[tech-bridge-six-agent-skills]])
 - [[thomas-wolf]] — [[hugging-face|Hugging Face]] 공동창업자·CSO. [[minimax-m3|M3]] 대담 진행 — 어텐션 효율화의 진자 운동(구조→커널→다시 구조) ([[tech-bridge-minimax-m3-long-context]]) ⚠️ 이름은 설명란 단독
@@ -813,6 +813,8 @@ updated: 2026-10-26
 - [[tech-bridge-pocock-skills-implement-spec-pr-retro]] — [[eric-tech|Eric Tech]](추정) 영상 발췌 + Tech Bridge 한국어 해설(5:28, 챕터 7, 2026-10-24 업로드): AI는 끝냈다는데 왜 출시는 느릴까 — [[matt-pocock|Matt Pocock]] 스킬 /implement-spec(의존 관계 → 병렬) · /pr(요약 · 근거 · merge danger) · /retro(핵심 파일 목록, 기계 검사 vs 사람 규칙, 과잉 회고 경고) ⚠️ 원본 링크 없음, 발췌 앞부분 무캡션
 - [[tech-bridge-chieng-lee-ai-video-production]] — [[sarah-chieng|Sarah Chieng]](Cerebras) · [[cova-lee|Cova Lee]](OpenAI) 강연 발췌 + Tech Bridge 한국어 해설(9:08, 챕터 10, 2026-10-25 업로드): AI로 영상 만들기 여섯 단계 — 이유를 적은 참고자료, 썸네일 시뮬레이터, 말로 쓰는 대본, 자기 영상에서 뽑은 스타일 규칙, 자동/수동 겸용 사운드패드, 주간 점검 ⚠️ 원본 강연 미상 · "2억 조회수"의 인과는 해설이 스스로 유보
 - [[tech-bridge-annie-wang-harness-four-designs]] — [[annie-wang|Annie Wang]](Google) 발췌 + Tech Bridge 한국어 해설(7:20, 챕터 10, 멤버 전용 → 2026-10-26 공개 확인): 하네스 네 설계 — session · state · 장기 기억, 도구와 MCP, 병렬 검사 + retry limit 워크플로, 샌드박스 ≠ 데이터 흐름, 결정적 평가 → judge → 사람 ⚠️ 원본 링크 없음, ADK 판독 추정
+- [[tech-bridge-laurie-voss-product-engineer]] — [[laurie-voss|Laurie Voss]] 강연 발췌 편집본(7:18, 챕터 10, 내레이션 없음 · 영어 원본 오디오만, 2026-10-26 업로드): AI가 코딩하는데, 당신을 왜 뽑죠 — 병목 이동(리뷰 → 운영 → 보안 → 문제 정의), 빵집 주인, Brooks essential complexity, product engineer, 주니어 훈련 경로, high blast radius만 리뷰 · judgment를 specs/rubrics/evals로 ⚠️ 원본 링크 없음 · 제약 이론 "his" 귀속 미상 · ko는 기계 번역
+- [[tech-bridge-musk-abundance-work-control]] — [[elon-musk|Elon Musk]] 인터뷰 발췌 + Tech Bridge 한국어 해설(8:30, 챕터 11, 2026-10-26 업로드): 돈과 일이 사라지면 인간은 뭘 할까 — 100만 배 디지털 지능과 통제, 20~30%, 에너지와 물질, 정원 비유, 참여자 vs 구경꾼, truth-seeking, protopia. 해설이 "거친 추정"·"조건이 달린 예측"으로 깎는다 ⚠️ 원본 링크 없음 · "100만 배"·불평등 답 무캡션 · 진행자 Isaacson은 해설 근거 · ILO/AI 안전 보고서/DeepMind는 외부 인용
 - [[tech-bridge-langchain-learning-agent-memory]] — [[jake-broekhuizen|Jake Broekhuizen]] ([[langchain|LangChain]] Labs) AI 에이전트에 학습하는 메모리를(15:28, 챕터 19): 관찰 ≠ 학습, semantic · episodic · procedural(개선의 대부분) + working/long-term, 읽기·쓰기 순환과 필터 → [[trace-to-memory-loop]], 세 교훈(대부분 history · 캐시/hot path · procedural은 사람 검토 + eval) ⚠️ 10:13~12:28 [[langsmith|LangSmith]]·Context Hub 자사 제품 · *"about 75%"* 화자 추정 · 이름·직함 설명란에만 · ko가 run → "사형 집행", "세금 정보" 환각
 - [[tech-bridge-stigg-ai-companies-building-banks]] — [[dor-sasson|Dor Sasson]] ([[stigg|Stigg]]) 모든 AI 기업이 어쩌다 보니 은행을 짓고 있다(19:00, 챕터 15): 4월 가격 비상(Anthropic 서드파티 에이전트 구독 사용 차단 · OpenAI "5 5x" · Copilot 무료 폐지)은 인프라 문제, 검사가 청구서 뒤에 온다 → [[reserve-then-settle]], OpenAI financial engineering decision waterfall(화자 요약), 동시성·멱등성·크레딧 차감 순서·계층 예산, 4가지 패턴, AI의 Stripe moment ⚠️ 벤더 CEO · 타사 내부 주장 출처 없음 · *"150s to even 750"* 단위 미발화(설명란 "배"는 업로더 해석) · 연도 미발화 · ko concurrency → "참석률", rate limit → "이자율"
 - [[tech-bridge-braintrust-eval-platform-systems-problem]] — [[hossein-niazmandi|Hossein Niazmandi]](설명란에만) ([[braintrust|Braintrust]]) 평가 플랫폼 만들기가 생각보다 어려운 이유(16:25, 챕터 15): evals + observability 두 기둥, 최소 eval 시스템 세 요소, multi-persona(PM·SME), North Star 개선 루프(drift) → [[production-trace-eval-flywheel]], [[eval-platform-maturity-stages|성숙 4단계]], systems problem(수백 MB 트레이스, 실시간 vs 장기 쿼리, BTQL), headless 코딩 에이전트가 eval을 돌고 사람이 배포 결정 ⚠️ 벤더 피치(14:45~15:45 unknown unknowns) · 영상이 발표 중간에서 시작 · ko가 production을 "개발 중"·"오프라인"으로 반전
@@ -950,7 +952,7 @@ updated: 2026-10-26
 
 ## 통계
 
-- 총 페이지 수: 911 (906 → 911, + 2026-10-26 Tech Bridge 2편(10-25 업로드 — AI 영상 제작 · Annie Wang 하네스): source 2 + entity 3 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 911과 일치)
+- 총 페이지 수: 913 (911 → 913, + 2026-10-27 Tech Bridge 2편(10-26 업로드 — Laurie Voss product engineer · Musk 풍요와 통제): source 2 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 913과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-26 (Tech Bridge **2편** — 10-25 업로드 [[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]](`ebUlPF9HNAg`) · [[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]](`8tjhiruPpBg`, 멤버 전용 → 공개). `Yhck-x6VuLs`는 여전히 멤버 전용)
-- 직전 ingest: 2026-10-25 (Tech Bridge **2편** — 10-24 업로드 [[tech-bridge-kanat-alexander-disposable-vs-durable|AI 시대에도 코드 품질은 중요할까?]](`30ejv1N33Yw`) · [[tech-bridge-pocock-skills-implement-spec-pr-retro|AI는 끝냈다는데 왜 출시는 느릴까?]](`vbdubFaBmfo`). `Yhck-x6VuLs` · `8tjhiruPpBg`는 여전히 멤버 전용)
+- 마지막 ingest: 2026-10-27 (Tech Bridge **2편** — 10-26 업로드 [[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]](`SHGxL8DQOxs`) · [[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]](`jbauQUoIcNg`). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 직전 ingest: 2026-10-26 (Tech Bridge **2편** — 10-25 업로드 [[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]](`ebUlPF9HNAg`) · [[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]](`8tjhiruPpBg`, 멤버 전용 → 공개). `Yhck-x6VuLs`는 여전히 멤버 전용)

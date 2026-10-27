@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer]
 created: 2026-09-18
-updated: 2026-10-25
+updated: 2026-10-27
 ---
 
 # 위험 비례 사람 검토
@@ -101,3 +101,7 @@ updated: 2026-10-25
 ## merge danger — 리뷰를 없애지 않고 어디를 볼지 알려 준다 (2026-10-25 · [[tech-bridge-pocock-skills-implement-spec-pr-retro]])
 
 /pr 스킬의 세 번째 칸(발췌, 화자 추정 [[eric-tech|Eric Tech]]): *"if this po quest[pull request] breaks what is impact in production can we actually roll back if something happen and also what is the blast radius"*(03:01~03:11). 해설: *"위험을 적는다고 검토가 없어지는 건 아니에요. 어디를 더 꼼꼼히 봐야 할지 알려 주는 거죠."*(03:22~03:26) [[tech-bridge-pocock-pr-bottleneck]]의 one-way/two-way door가 **PR 템플릿의 한 칸**이 됐다.
+
+## "high blast radius code"만 리뷰하라 (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
+
+[[laurie-voss|Voss]]의 첫 처방이다. *"be prepared for a world in which humans are barely involved in the production of code. So, write down your high blast radius code and make that be the only thing that you are reviewing anymore because the rest of it your automatic reviewers are going to get done."*(05:59~06:12) 핵심은 위험한 코드를 **미리 적어 둔다**는 것이다. 위험 판정을 PR마다 하지 않고 목록으로 고정한다. 10-25 merge danger(PR마다 위험 지점을 표시하는 방식)와 비교된다.

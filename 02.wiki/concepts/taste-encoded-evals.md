@@ -6,9 +6,9 @@ tags: [evals, llm-as-judge, taste, human-in-the-loop, calibration, ab-testing, m
 aliases: [taste into evals, codify taste into evals, 안목을 평가 지표로, eval calibration, judge calibration, 판정관 보정, HITL calibration]
 related: [taste-vs-judgment, agent-recipes, loop-is-the-product, valued-work-per-watt, generator-evaluator-pattern, skill-evals, skill-self-improvement, self-harness, verifiable-goals, production-trace-eval-flywheel, eval-platform-maturity-stages]
 first-seen: tech-bridge-introspection-loop-is-the-product
-sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-alexandr-wang-muse-launch, tech-bridge-dental-clinic-ax-transformation]
+sources: [tech-bridge-introspection-loop-is-the-product, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-alexandr-wang-muse-launch, tech-bridge-dental-clinic-ax-transformation, tech-bridge-laurie-voss-product-engineer]
 created: 2026-09-30
-updated: 2026-10-17
+updated: 2026-10-27
 ---
 
 # 제작자의 taste를 eval로 (Taste-Encoded Evals)
@@ -89,3 +89,7 @@ updated: 2026-10-17
 
 - [[tech-bridge-introspection-loop-is-the-product]] (first-seen)
 - 관련: [[taste-vs-judgment]] · [[agent-recipes]] · [[loop-is-the-product]] · [[skill-evals]] · [[generator-evaluator-pattern]] · [[self-harness]]
+
+## "best people's judgment into specs and rubrics and evals" (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
+
+[[laurie-voss|Voss]](Arize)가 팀 리더에게 주는 세 번째 처방이다. *"put your best people's judgment into specs and rubrics and evals. You knew I the arise guy was going to say evals at some point."*(06:29~06:35) 화자가 평가 플랫폼 회사 소속이라는 것을 **스스로 농담으로 밝힌다**. 앞 처방(검증이 싼 것은 자동 판정 수단을 만들어 에이전트에게 먹여라)과 짝을 이룬다.

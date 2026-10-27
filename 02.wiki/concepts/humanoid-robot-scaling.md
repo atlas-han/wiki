@@ -5,9 +5,9 @@ category: theory
 tags: [robotics, physical-ai, humanoid, dexterity, recursive-manufacturing, tesla]
 related: [brain-hands-decoupling, agent-harness-design, ai-jobs-impact, power-shortfall, intelligence-as-infrastructure]
 first-seen: tech-bridge-elon-musk-g20-ai-future
-sources: [tech-bridge-elon-musk-g20-ai-future]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-musk-abundance-work-control]
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-10-27
 ---
 
 # Humanoid Robot Scaling (휴머노이드 로봇 — 곱셈과 재귀)
@@ -62,3 +62,7 @@ Musk의 곱셈은 **모순이 아니라 그 다음 칸**이다: 인터페이스�
 - [[tech-bridge-elon-musk-g20-ai-future]] — first-seen
 - [[elon-musk]] · [[tesla]]
 - 관련: [[brain-hands-decoupling]] · [[agent-harness-design]] · [[ai-jobs-impact]] · [[power-shortfall]]
+
+## "말하는 AI에서 만드는 AI로" — 손이 생겨도 바로 잘하지는 않는다 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
+
+[[elon-musk|Musk]] 인터뷰를 해설한 편이다. 원음은 조각만 남았다. *"[—] becomes exponentially greater because it cannot do things you know could have a science lab and run experiments"*(01:05~01:15) 해설은 이렇게 받는다. *"요리법을 알려주는 것과 실제로 저녁을 차리는 건 다르죠. (…) 다만 손이 생겼다고 모든 일을 곧바로 잘하는 건 아니에요. 다양한 물건과 환경을 만나도 안정적으로 움직여야 해요."*(01:20~01:38) 위 「유보」 절의 *"손의 정밀도에 측정치가 없다"* 를 해설자가 같은 방향에서 지적한 것이다. 해설이 전하는 *"100만 배"* 상한(우주 · 달 mass driver 포함)은 이 페이지의 *"10배 이상"*(G20)보다 훨씬 크다. ⚠️ 원음이 캡션에 없다.

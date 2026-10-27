@@ -2296,3 +2296,23 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 9분·7분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 두 편 모두 `Korean original` + `English (US)` 2트랙, 메타 `language`=`en`이다. `ko`·`ko-orig`는 md5가 같아 `lang=ko` 원 ASR로 판정했다. `--sleep-subtitles 8` + 편당 20초로 429 없음. `ebUlPF9HNAg`의 `timestamp`는 2026-10-26 07:00 KST다(`upload_date`는 UTC 기준 20261025).
+
+## [2026-10-27] ingest | Tech Bridge — 10-26 업로드 2편 (AI가 코딩하는데, 당신을 왜 뽑죠? — Laurie Voss 강연 발췌 · 돈과 일이 사라지면, 인간은 뭘 할까? — Elon Musk 인터뷰 해설)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 10-26 업로드 2편 모두 `public`이다. `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다.
+
+**신규 source 2**, 기존 페이지 보강 10개, index **911 → 913**(실측 일치).
+
+- `SHGxL8DQOxs`(7:18, 챕터 10) → [[tech-bridge-laurie-voss-product-engineer]]: 화자 [[laurie-voss|Laurie Voss]](설명란 · 태그 · *"the arise guy"* 근거). 10-02 편과 다른 강연이고 원본 링크는 없다.
+  - 보강: [[laurie-voss]] · [[verification-bottleneck]] · [[spec-driven-development]] · [[taste-encoded-evals]] · [[risk-proportional-human-review]] · [[ai-jobs-impact]]
+  - ⭐ **새 트랙 구성**: `English (US) original` 오디오만 있고 한국어 트랙은 없다. 내레이션 없는 발췌 편집본이다. ko는 `tlang=ko` 기계 번역이라 인용은 en-orig로만 했다. ko는 끝에 원문에 없는 인사말을 만들었다.
+  - ⚠️ 제약 이론 *"his"* 는 귀속하지 않았다. *741%* 의 출처는 이 발췌에서 밝혀지지 않는다.
+- `jbauQUoIcNg`(8:30, 챕터 11) → [[tech-bridge-musk-abundance-work-control]]: [[elon-musk|Musk]] 인터뷰 발췌 + 해설. 진행자 Walter Isaacson은 해설 근거다.
+  - 보강: [[elon-musk]] · [[intelligence-abundance]] · [[ai-jobs-impact]] · [[humanoid-robot-scaling]] · [[balance-of-power-safety]]
+  - ⚠️ *"100만 배"* · 불평등에 대한 답 · 돈 발췌가 무캡션이고 달러 수치도 빠졌다. truth-seeking · mass driver는 판독 추정이다. ILO 2025 · 국제 AI 안전 보고서 2026 · DeepMind는 해설의 외부 인용이다. 09-06 G20 편과 같은 대담인지는 확정하지 않았다.
+- [[tech-bridge]] · index · overview 갱신.
+- 페이지화하지 않음: Fred Brooks(인용), Eliyahu Goldratt(발화에 이름 없음), Walter Isaacson(해설에서만 언급), ILO, npm.
+
+### 운영 메모
+
+7분·8분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. Musk 편은 `Korean original` + `English (US)` 구성이고 `ko`·`ko-orig`의 md5가 같았다(원 ASR). Voss 편은 `ko-orig`가 아예 없었다. → **`ko-orig` 부재 + `tlang=ko`이면 한국어 원음이 없는 영상이다.** `--sleep-subtitles 8`로 429는 없었다.

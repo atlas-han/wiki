@@ -6,9 +6,9 @@ tags: [ai-safety, open-source, policy, diffusion, governance]
 aliases: [견제와 균형이 안전이다, 접근 제한은 안전이 아니다]
 related: [personal-superintelligence, training-time-risk, regulatory-capture, default-legal-regulation, intelligence-abundance, agent-governance-layers]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-abundance-work-control]
 created: 2026-09-14
-updated: 2026-09-23
+updated: 2026-10-27
 ---
 
 # 권력 균형으로서의 안전
@@ -96,3 +96,7 @@ Zuckerberg는 통제 주체를 **없애고**, Amodei는 통제 주체를 **복�
 [[sam-altman|Altman]]이 두 큰 과제 중 하나로 **권력 집중**을 든다 — *"통제력 상실로 인한 사고"* 와 *"권력이 지나치게 집중될 가능성"*(03:54~04:04). *"저는 세상이 이것을 두려워하는 것이 당연하다고 생각합니다"*(03:52~03:54), *"이러한 모델을 개발하는 소수의 기업들이 전 세계가 내려야 할 결정을 좌우하게 되는 것은 결코 용납될 수 없습니다"*(24:09~24:12).
 
 그리고 [[hugging-face|HF]]의 방어 서술이 이 페이지의 09-14 사례에 **세부 하나**를 더한다 — HF가 쓴 것은 **중국산 오픈소스 모델**이었다(17:44~17:49). Altman은 *"오픈 소스 모델의 발전을 막아서는 안 됩니다"*(20:00~20:03)라면서도 **처방은 확산이 아니라 [[openai-daybreak|자사 방어 서비스의 개방]]**이다(*"독점해서 기업들이 사용하지 못하게 하고 싶지는 않습니다"*). **같은 사례, [[mark-zuckerberg|Zuckerberg]]와 다른 결론.**
+
+## 성향이냐 장치냐 — Musk의 truth-seeking과 해설의 반론 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
+
+[[elon-musk|Musk]]는 안전의 출발점을 **모델의 성향**에 둔다. *"[Truth-]seeking (…) these are important elements of safety"*, 그리고 AI에게 *"A is true and B is true even though A and B [contradict] each other"* 를 강요하지 말라고 한다(06:34~07:00, 판독 추정). 해설은 이렇게 맞선다. *"좋은 성향이 곧 안전을 보장하는 건 아니에요. 실제로 어떤 상황에서 실패하는지 시험하고 위험한 행동을 제한할 장치가 필요하죠."* 해설은 Google DeepMind 로봇 안전의 *"여러 겹"* 보호도 인용한다(⚠️ 외부 인용, 미확인). 같은 인터뷰의 *"participant or a spectator"* 는 **멈출 수 없다는 전제**에서 나온 선택이다. 이 페이지의 *"견제와 균형"* 논거와는 출발점이 다르다. → [[hard-vs-soft-enforcement]]

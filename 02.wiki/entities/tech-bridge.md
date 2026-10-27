@@ -145,8 +145,10 @@ sources:
   - tech-bridge-pocock-skills-implement-spec-pr-retro
   - tech-bridge-chieng-lee-ai-video-production
   - tech-bridge-annie-wang-harness-four-designs
+  - tech-bridge-laurie-voss-product-engineer
+  - tech-bridge-musk-abundance-work-control
 created: 2026-06-03
-updated: 2026-10-26
+updated: 2026-10-27
 ---
 
 # Tech Bridge
@@ -1428,3 +1430,15 @@ updated: 2026-10-26
 
 - 10-24 · 10-25엔 **멤버 전용**(stderr ERROR)이었고 10-26에 공개로 확인됐다. 10-23 [[tech-bridge-jediah-katz-harness-whats-left]]에 이은 하네스 해설이다. 원본과 해설이 **같은 예제(CSV 내려받기 버튼)** 를 쓴다.
 - ⚠️ 원본 링크 없음. *ads graph workfow* → ADK graph workflow 판독은 추정. 해설의 *"클로드 개발사의 실무 기록"* 은 출처 미상. **ko**: *한스* → 하네스, *작업 푸름* → 작업 흐름.
+
+## 2026-10-26 업로드 — Laurie Voss 발췌 · Musk 해설 (2026-10-27 ingest)
+
+[[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]](`SHGxL8DQOxs`, 7:18, 공식 챕터 10) — [[laurie-voss]] ([[verification-bottleneck]] · [[spec-driven-development]] · [[taste-encoded-evals]] · [[risk-proportional-human-review]] · [[ai-jobs-impact]])
+
+- ⭐ **새 형식 · 새 트랙 구성.** 한국어 내레이션 없이 **원음만 이어 붙인 발췌 편집본**이다. 오디오는 `English (US) original` 하나이고(나머지는 더빙) **한국어 트랙이 없다.** ko는 `tlang=ko` 기계 번역이라 인용은 en-orig로만 했다. ko는 끝에 *"시청해 주셔서 감사합니다"* 를 만들어 냈다.
+- 10-02 [[tech-bridge-death-of-code-review]]와 같은 화자의 **다른 강연**이다. 원본 링크는 없다.
+
+[[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]](`jbauQUoIcNg`, 8:30, 공식 챕터 11) — [[elon-musk]] ([[intelligence-abundance]] · [[ai-jobs-impact]] · [[humanoid-robot-scaling]] · [[balance-of-power-safety]])
+
+- 해설이 **수치와 낙관을 단계마다 깎는다**(*"거친 추정"*, *"조건이 달린 예측"*, *"좋은 성향이 곧 안전을 보장하는 건 아니"*). ILO 2025 · 국제 AI 안전 보고서 2026 · Google DeepMind는 해설의 외부 인용이다.
+- ⚠️ 원음 캡션 공백이 크다. *"100만 배"* · 불평등에 대한 답 · 돈 발췌가 무캡션이고 달러 수치도 빠졌다. 진행자 Walter Isaacson은 해설 근거다. 09-06 G20 편과 같은 대담인지는 확정하지 않았다. **ko**: *말자라는 컴퓨터* → 말하는 컴퓨터(추정), *갖꾸는* → 가꾸는.

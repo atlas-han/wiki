@@ -6,9 +6,9 @@ tags: [tesla, spacex, x, ceo, humanoid-robots, regulation, g20, power-grid]
 links:
   - https://www.tesla.com/
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-musk-abundance-work-control]
 created: 2026-09-07
-updated: 2026-10-09
+updated: 2026-10-27
 ---
 
 # Elon Musk
@@ -92,3 +92,16 @@ CBS 진행자가 *"Dario Amodei, Sam Altman, **Elon Musk** 같은 최고 CEO들�
 - **Colossus 지역** — 일자리가 사람보다 많다, 세수 *"might have doubled"*, 2.5억 달러 물 재활용 시설, *"they will reciprocate"*(10:09~10:56). → [[data-center-local-backlash]]
 - **의료 일화** — X-ray·MRI를 AI에 넣어 의사가 틀린 것을 AI가 맞혔다는 *"many anecdotes"*(21:44~22:05). ⚠️ ko는 *"but for AI, they would have died"* 를 **"AI 때문에 죽을 것"** 으로 반전.
 - ⭐ **"서로의 숙제 채점"이 서명된 선언으로** — (귀속 추정) *"We we signed a joint declaration uh regarding SI safety"*, *"joint monitoring um board special committees and uh just generally uh grading each other's homework"*(24:31~24:57). 09-23의 **제안**이 이번엔 **서명**으로 말해진다 — ⚠️ 서명자·조항 미발화, 선언문 미확인. → [[cross-lab-peer-review]]
+
+## 풍요 · 일 · 통제 — 해설이 깎는 인터뷰 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
+
+Tech Bridge 한국어 해설 + 인터뷰 발췌(8:30)다. 진행자는 해설에 따르면 Walter Isaacson이고, 원본 링크 · 날짜는 없다.
+
+- **통제** — *"I find it unlikely that humans would remain in control if (…) there's a million times more digital intelligence than biological intelligence"*(00:00~00:15). 해설은 *"조건이 달린 예측"* 이지 *"이미 통제권을 잃었다는 확인은 아니"* 라고 한정한다.
+- **20~30%** — *"output of goods and services by 20 to 30% (…) my rough guess"*(01:47~02:08). 09-06 G20 편과 같은 수치지만 문장이 달라 같은 대담인지 확정하지 않는다. 해설이 전하는 *"100만 배"*(우주 · 달 mass driver 포함)는 원음이 캡션에 없다.
+- **일** — 은퇴자의 행복, *"One analogy might be gardening"*(04:54~05:00). 일이 선택이 된다는 전망이다. 불평등 질문에 대한 답은 무캡션이다.
+- **참여자냐 구경꾼이냐** — *"either be a participant or a spectator"*(05:55~05:57)
+- **안전은 truth-seeking에서** — AI에게 동시에 참일 수 없는 두 가지를 믿게 강요하지 말라(06:34~07:00, 판독 추정). 해설은 *"좋은 성향이 곧 안전을 보장하는 건 아니"* 라고 반박한다.
+- **protopia** — *"an achievable (…) future that is not perfect but it's good"*(07:49~07:58)
+
+⚠️ 위 「유보」 절의 위치(AI · 로봇 회사 CEO)는 이 편에도 그대로 적용된다. 이번에는 해설이 수치마다 *"거친 추정"* 이라는 단서를 단다.
