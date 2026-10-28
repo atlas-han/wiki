@@ -6,9 +6,9 @@ tags: [token-economics, context-engineering, cost, rework, architecture-context,
 aliases: [토큰 최소화, token minimization, 비용 이동, costs don't disappear they just move, 컨텍스트 과잉 절감]
 related: [value-maxing, context-engineering, true-cost-to-perfect-answer, trusted-throughput, overspending-underusing-loop, agent-tool-design-practices, system-level-quality, agent-knowledge-sourcing, context-failure-modes]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-context-engineering-four-failure-modes]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-context-engineering-four-failure-modes, tech-bridge-parakhin-shopify-ai-cost-barbell]
 created: 2026-09-24
-updated: 2026-10-20
+updated: 2026-10-28
 ---
 
 # 토큰 최소화의 함정
@@ -62,3 +62,9 @@ updated: 2026-10-20
 ## 같은 계열의 "모든 처방은 버린다" — 긴장 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
 
 같은 IBM 계열의 다음 컨텍스트 편([[martin-keen|Martin Keen]])은 *"all four fixes work by throwing something away"*(09:46~09:54)를 결론으로 삼는다(→ [[context-failure-modes]]). 위키 판독으로는 두 편이 모순되지 않는다. 그 편이 버리라는 것은 틀린 결론 · 대체된 버전 · 안 쓰는 도구 · 요약 가능한 이력이고, 과제 프롬프트(*"a few lines near the front"* 03:23~03:28)는 건드리지 않는다. 이 페이지가 경고한 것은 비용 때문에 **작업 설명 · 도메인 제약 · 아키텍처 컨텍스트**까지 지우는 것이다. 다만 그 편은 **무엇을 버리면 안 되는지**를 말하지 않는다. 그리고 compact의 표류(*"a summary of a summary can start to drift"* 08:15~08:23)를 스스로 인정한다 — 버리는 처방이 이 페이지의 실패로 넘어가는 경계다. 이 페이지의 "남은 공백"(어디까지 줄여도 되나)은 여전히 열려 있다.
+
+## "최신 모델 제한"에 대한 당사자 답 — 개발에서는 함정 (2026-10-28 · [[tech-bridge-parakhin-shopify-ai-cost-barbell]])
+
+이 페이지의 "남은 공백"은 *"최신 모델 제한"* 이 같은 함정인지 원 소스가 말하지 않는다고 적었다. [[mikhail-parakhin|Parakhin]]([[shopify|Shopify]])은 **개발에서는 그렇다**고 답한다. *"you don't know unless you use the large model and then and compare the results, you don't know what you're missing, right? It's a unknown unknown."*(02:31~02:38) 그래서 *"at Shopify we have unlimited tokens for everybody"*(02:50~02:55)이고, 처방도 *"try to not limit tokens"*(07:02~07:09)다.
+
+경계는 둘이다. ① **폭주 차단기**는 둔다(*"circuit breakers because there always runaway processes"* 07:07~07:12). ② **운영**에서는 반대로 파인튜닝한 싼 모델로 절감한다([[model-mixing-economics]]의 바벨). 이 페이지의 선(작업 · 도메인 · 아키텍처 컨텍스트는 남긴다)에 **모델 등급**이라는 축이 하나 더 붙는다. ⚠️ 당사자 진술이고 *"until I see the evidence otherwise"* 라는 잠정 원칙이다.

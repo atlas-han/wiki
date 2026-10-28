@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell]
 created: 2026-09-09
-updated: 2026-10-18
+updated: 2026-10-28
 ---
 
 # 모델 혼합의 경제학
@@ -169,3 +169,11 @@ updated: 2026-10-18
 - **hill climber**: 파이프라인을 스스로 최적화하는 모델 → [[pareto-surfing]]
 
 수치 한 쌍(⚠️ 자기 보고): *"the cheap reasoning model on its own did as well as Fable for about 2% of the cost"*(11:20~11:26, 모델명·Fable 버전 미발화). 그리고 오하이오 작업 전체가 예상 약 $10,000 대신 $795였다(12:19~12:40). 비유는 잎꾼개미의 *"four different sizes of worker (…) Small, medium, high, extra high"*(09:38~09:42)다.
+
+## 바벨 — 단계가 아니라 개발 / 운영으로 가른다 (2026-10-28 · [[tech-bridge-parakhin-shopify-ai-cost-barbell]])
+
+[[mikhail-parakhin|Parakhin]]([[shopify|Shopify]] CTO)의 처방: *"always use this dichotomy barbell strategy for anything coding, for anything development, testing, auto research. Use the largest model. Budget for it (…) For everything production, use fine-tuning, use the right model for that production, auto research the hell out of it so that you balance both cost throughput and and quality."*(07:29~07:55)
+
+이 페이지의 혼합은 대부분 **한 작업 안에서** 계획 모델과 실행 모델을 나누는 라우팅이었다. 바벨은 축이 다르다. **조직의 활동을 탐색(개발 · 테스트 · 연구)과 서빙(운영)으로 가른다.** 탐색 쪽은 비용을 아끼지 않고, 절감은 전부 운영 쪽에서 한다. 운영 쪽 끝은 10-18 [[tech-bridge-fireworks-train-to-deploy-open-models|Fireworks 편]]의 *고르는 것에서 고치는 것으로*(맞춤 학습)와 같은 자리다.
+
+⚠️ 개발 단계의 *"Use the largest model"* 은 이 페이지의 라우팅 수치들(임계값 위 최저가, 오픈소스 10~30x 저렴)과 부딪친다. 화자의 근거는 측정이 아니라 *"you don't know the counterfactual"*(07:24~07:26)이다. 당사자 진술이고 수치가 없다.

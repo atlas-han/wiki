@@ -6,9 +6,9 @@ tags: [automated-ai-research, recursive-self-improvement, speedrun, optimizer-sp
 aliases: [automated AI research, AI 연구 자동화, 자동화된 AI 연구, recursive self-improvement, 재귀적 자기 개선, optimizer speedrun, 옵티마이저 스피드런, research speedrun]
 related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect, production-trace-eval-flywheel]
 first-seen: tech-bridge-agents-vs-humans-optimizer-speedrun
-sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent]
+sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-parakhin-shopify-ai-cost-barbell]
 created: 2026-09-28
-updated: 2026-09-30
+updated: 2026-10-28
 ---
 
 # 자동화된 AI 연구 (Automated AI Research)
@@ -117,3 +117,7 @@ Google의 **AlphaEvolve**와 후속 논문에서 영감받은 **멀티에이전�
 - **자기 개선으로서** — 데모 프로젝트 *"Arya Researches Arya"*(02:45~02:47)에서 ARIA에게 *"do auto research for itself"*(02:51)를 시킨다: 자기 eval 코드베이스로 training job을 띄우고, 프로덕션 트레이스를 검토해 태스크를 추가하고, *"try to write a new variant for itself"*(03:21~03:23).
 
 두 번째 뜻의 **산출물 크기**가 이 페이지의 관찰과 맞물린다 — 데모의 개선은 시스템 프롬프트나 스킬에 넣은 *"a tight little prompt"*(15:57~16:00) 하나였다. 이 페이지의 *"조합·+1 개선은 하지만 새 메커니즘은 없다"*(Bakouch)와 **같은 크기**의 개선이고, 제품 운영에서는 그것으로 충분하다는 입장이다. ⚠️ 위키의 정리. 측정 조건(태스크 세트·후보 대 prod 결과)은 화면에만 있다. → [[production-trace-eval-flywheel]] · [[self-harness]]
+
+## 운영 모델에 "auto research" — 바벨의 양 끝 (2026-10-28 · [[tech-bridge-parakhin-shopify-ai-cost-barbell]])
+
+[[mikhail-parakhin|Parakhin]]([[shopify|Shopify]])은 auto research를 두 번 말한다. 개발 쪽에서는 코딩 · 테스트와 함께 **가장 큰 모델을 쓸 활동**으로 꼽는다(07:31~07:39). 운영 쪽에서는 파인튜닝한 맞춤 모델을 *"auto research the hell out of it so that you balance both cost throughput and and quality"*(07:48~07:55)라고 한다. 연구 대상이 모델 자체가 아니라 **서빙 구성의 비용 · 처리량 · 품질 균형**이다. 같은 화자의 [[company-digital-twin]]도 *대리물 위에서 많이 시도하고 고른 것만 현실에 적용한다*는 같은 모양이다. ⚠️ 방법은 발화되지 않는다(ko 기계 번역은 이 구절을 *"조사하십시오. 자동화하여"* 로 옮겼다).

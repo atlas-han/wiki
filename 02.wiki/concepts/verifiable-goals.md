@@ -5,9 +5,9 @@ category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
 related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment, pareto-surfing]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-tlc-ai-job-anxiety]
 created: 2026-05-25
-updated: 2026-10-18
+updated: 2026-10-28
 ---
 
 # Verifiable Goals
@@ -184,3 +184,7 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## failure surface를 시작 전에 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 [[hrishi-olickel|Hrishi Olickel]]은 자기 최적화의 조건 넷 중 가장 중요한 것으로 *"a failure surface"*를 든다(17:46~17:48). 만드는 법은 셋이다. 좋은 모델을 데이터 일부에 돌리고 일부를 손으로 확인해 기준선을 잡는다. 자동 실패 시스템과 스키마 검사를 둔다. 행동을 측정 대상으로 삼는다(18:37~18:53). *"it's very important to have to define a failure surface before you ever start."*(18:53~18:57) 그리고 *"That last one has been the hardest to put into words and into tooling"*(18:02~18:07)이라고 한다. → [[pareto-surfing]]
+
+## 같은 성질을 노출도 지표로 — TLC의 L (2026-10-28 · [[tech-bridge-tlc-ai-job-anxiety]])
+
+이 페이지는 검증 가능한 목표를 **에이전트가 루프를 돌게 하는 설계 원칙**으로 써 왔다. 10-27 업로드 TLC 편(화자 미상)은 같은 성질을 거꾸로 읽는다. *"AI improves fastest when the work is digital, repeatable, and quick to check. So it can try thousands of times and instantly see what worked. That's the loop."*(03:16~03:28) **빨리 검증되는 일일수록 AI가 빨리 배우고, 그래서 그 직무가 먼저 바뀐다** → [[ai-jobs-impact]]. 반대편 예(창업자 · 리더 · 복잡한 영업)는 10-09 Huang 편의 *"가장 가치 있는 목표는 모호하다"* 와 같은 방향이다. ⚠️ 사이버보안 · 고급 수학에서 빠르다는 예는 근거 제시가 없다.

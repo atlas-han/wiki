@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety]
 created: 2026-09-06
-updated: 2026-10-27
+updated: 2026-10-28
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -167,3 +167,15 @@ G20의 *"직업은 남고 작업이 자동화"*, CBS·백악관 패널의 *블�
 ## Musk — 일이 선택이 된다면, 그리고 해설의 반론 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
 
 [[elon-musk|Musk]]: *"the same way that people retire seem to be fairly happy even though they're not working"*(04:40~04:45) — 그리고 *"One analogy might be gardening"*. 해설은 두 겹으로 깎는다. ① ILO 2025년 분석을 인용해 **지금의 업무 변화**(많은 직업이 *바뀐다*)와 **모든 일이 사라진 미래**를 구분하라고 한다(⚠️ 외부 인용, 미확인). ② *"그런 삶을 선택하려면 생활이 먼저 안정돼야 해요."*(05:26~05:28) 위 2026-09-07 절의 *"12~18개월"* 과 같은 화자이고, 이번에는 시한 없이 **도착한 뒤의 삶**을 말한다.
+
+## TLC — 내 직무를 스스로 채점하는 세 장벽 (2026-10-28 · [[tech-bridge-tlc-ai-job-anxiety]])
+
+화자 미상의 1인칭 발표. 이 페이지의 네 입장은 **누가 말했나**로 나뉘었다. 이 편은 **직무의 성질**로 나눈다. *"It's not as simple as white collar jobs or knowledge work."*(02:34~02:37)
+
+- **T — trust**: *"Does your job or role require trust and accountability?"* — *"we're not ready yet to trust AI doctors and AI auditors and robot lawyers"*(02:54~03:06)
+- **L — learn**: *"Can AI learn what you do very quickly?"* — *"digital, repeatable, and quick to check"* 인 일이 가장 빨리 배워진다(03:12~03:28) → [[verifiable-goals]]
+- **C — contact**: *"Does your job need hands-on contact with the world?"* — 간호사 · 전기 기술자 · 트럭 운전사(03:49~03:59)
+
+*"coding and customer service clear all three barriers and that's why they're feeling it first."*(04:04~04:12) *"The more barriers it has, the further away from risk it is."*(04:15~04:20) 남는 강점은 *"human connection skills and domain expertise"*(04:23~04:28)다.
+
+⚠️ **장벽은 고정돼 있지 않다.** T는 기술이 아니라 **사회적 수용**이고 화자도 *"not ready yet"* 이라고 한다. C는 이 페이지의 Musk 휴머노이드 전망([[humanoid-robot-scaling]])과 맞선다. 화자는 두 조건을 다루지 않는다. 챕터 *"직업보다 업무를 나눠 보기"*(04:30)는 무캡션이라 발화로 확인되지 않는다.

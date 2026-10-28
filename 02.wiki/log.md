@@ -2316,3 +2316,23 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 7분·8분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. Musk 편은 `Korean original` + `English (US)` 구성이고 `ko`·`ko-orig`의 md5가 같았다(원 ASR). Voss 편은 `ko-orig`가 아예 없었다. → **`ko-orig` 부재 + `tlang=ko`이면 한국어 원음이 없는 영상이다.** `--sleep-subtitles 8`로 429는 없었다.
+
+## [2026-10-28] ingest | Tech Bridge — 10-27 업로드 2편 (Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳 — Mikhail Parakhin 인터뷰 발췌 · AI 때문에 불안한가요? 내 일을 점검하는 3가지 질문 — 화자 미상 발표)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 10-27 업로드 3편 중 2편이 `public`이다. `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*, 7:31)은 **신규 멤버 전용**이다(`subscriber_only` 목록 줄). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다.
+
+**신규 source 2 · entity 2 · concept 1**, 기존 페이지 보강 7개(+ tech-bridge), index **913 → 918**(실측 일치).
+
+- `wDTO-nR4yTM`(8:24, 챕터 8) → [[tech-bridge-parakhin-shopify-ai-cost-barbell]]: 화자 [[mikhail-parakhin|Mikhail Parakhin]](제목 · 설명란 · 태그 근거) · [[shopify]]. 내레이션 없는 발췌 편집본이고 원본 링크 · 진행자 이름은 없다.
+  - 신규: [[mikhail-parakhin]] · [[shopify]] · [[company-digital-twin]]
+  - 보강: [[model-mixing-economics]](개발 / 운영 바벨) · [[token-minimization-trap]](*최신 모델 제한* 공백에 당사자 답) · [[sycophancy]](질문에 답이 들어 있다 + 빌드 속도) · [[agent-roi-measurement]](복잡도 정규화) · [[automated-ai-research]](운영 모델의 auto research)
+  - ⚠️ 수치가 없다(생산성 퍼센트 · 매출 효과). *GSD* · *centaur* 는 ASR 판독 추정이다. 08:07~08:21 en-orig는 판독 불가다. 태그 `Boris`는 진행자로 귀속하지 않았다.
+- `inT5ombZ9HE`(6:14, 챕터 11) → [[tech-bridge-tlc-ai-job-anxiety]]: 화자 미상 1인칭 발표. TLC(Trust · Learn · Contact) 세 장벽.
+  - 보강: [[ai-jobs-impact]] · [[verifiable-goals]]
+  - ⚠️ 화자 · 원본 미상. *worry postponement* · 두려움 규칙은 출처 없이 심리학에 귀속된다. *"which camp"* 의 진영 구분은 편집에서 빠졌다.
+- [[tech-bridge]] · index · overview 갱신.
+- 페이지화하지 않음: TLC 화자(미상), 진행자(미상), Tobi Lütke(기존 지나가는 언급).
+
+### 운영 메모
+
+8분 · 6분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. Parakhin 편은 10-27 Voss 편과 같은 **영어 원본 오디오만** 있는 구성이다(`ko-orig` 없음, ko `tlang=ko`). TLC 편은 `Korean original` + `English (US)`, `language`=`en`인데 **`ko-orig`가 없고** ko는 `tlang=ko` 번역이었다(`[music]` → *"음악"*). en-orig URL을 `lang=ko`로 바꿔 직접 요청해도 **0 bytes**였다. → **`Korean original` 트랙이 있어도 한국어 원 ASR이 없을 수 있다.** `--sleep-subtitles 8`로 429는 없었다.

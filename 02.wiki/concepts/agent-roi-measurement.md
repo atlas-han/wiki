@@ -6,9 +6,9 @@ tags: [measurement, roi, adoption, tokens, bias, communication]
 aliases: [측정 문제, 에이전트 ROI]
 related: [mousepower, trusted-throughput, token-roles, overspending-underusing-loop, agent-org-adoption, task-entropy-matrix, verification-bottleneck, value-maxing]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-dx-ai-impact-trends, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-dx-ai-impact-trends, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-parakhin-shopify-ai-cost-barbell]
 created: 2026-09-13
-updated: 2026-10-17
+updated: 2026-10-28
 ---
 
 # 에이전트의 측정 문제
@@ -70,3 +70,9 @@ updated: 2026-10-17
 ## 벤더 대시보드와 크레딧 한도 (2026-10-17 · [[tech-bridge-atlassian-build-your-own-sdlc]])
 
 [[atlassian|Atlassian]]은 리뷰 수·에이전트 실행 수 대시보드(06:21~06:38)와 AutoDev의 *"ROI insights"*(08:15~08:25, 46:02~46:15)를 내세운다. 크레딧 보고는 **제품별**까지이고 작업별은 *"not yet"*(28:08~28:28)이다. 동기: *"when somebody is (…) going to spend like I don't know uh 1 billion tokens on a thing then you want to make sure that like that is something that you actually want to have done"*(28:44~28:54) 비용 한도는 *"per ticket (…) per week"*(44:18~44:24). ⚠️ ROI 지표의 정의는 발화되지 않는다. 과금 방식(credits vs 자기 API 키)에 대한 답도 영상 안에서 엇갈린다(26:33~27:11).
+
+## 복잡도로 정규화한 생산성 — Shopify (2026-10-28 · [[tech-bridge-parakhin-shopify-ai-cost-barbell]])
+
+[[mikhail-parakhin|Parakhin]]([[shopify|Shopify]]): PR 수와 PR 복잡도는 *"just like everybody else"* 로 추정하고, 거기에 **프로젝트 복잡도**를 더 추정한다. 사내 시스템(ASR *"JSD system get stuff done"* — GSD로 판독, 추정)에서 *"normalized for complexity you can be very precise at measuring percentages of of productivity you're gaining."*(01:41~02:11)
+
+이 페이지의 세 갈래 중 **산출을 무엇으로 정규화하나**에 대한 한 답이다. 분모를 PR이 아니라 프로젝트 복잡도로 잡는다. ⚠️ **퍼센트도 복잡도 추정 방법도 말하지 않는다.** 측정 방법이 있다는 진술만 있다.

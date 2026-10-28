@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-27
+updated: 2026-10-28
 sources: []
 ---
 
@@ -278,6 +278,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 
 - *2026-10-26*: [[tech-bridge]] **2편** ingest(10-25 업로드). [[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]]([[annie-wang|Annie Wang]] 발췌 + 해설) — 하네스를 네 질문(**무엇을 기억 · 어떤 도구를 어떤 순서로 · 어디까지 접근 · 무엇을 확인해야 완료**)으로 접는다. 실행 장소와 **데이터가 가는 곳**은 따로 봐야 하고([[agent-sandboxing]]), *"Simply telling the model to be careful isn't enough"*([[hard-vs-soft-enforcement]]). 완료 판정은 결정적 평가 → judge → 사람 순으로 쌓는다. [[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]]([[sarah-chieng|Sarah Chieng]] · [[cova-lee|Cova Lee]]) — 위키 첫 **콘텐츠 제작** 소스다. 스타일은 자기가 고른 결과 50편에서 뽑아 에이전트에게 주고([[taste-vs-judgment]]), 도구는 자동과 수동을 함께 둔다([[assistance-vs-automation]]). 해설은 성과 수치의 인과를 스스로 유보했다.
 - *2026-10-27*: [[tech-bridge]] **2편** ingest(10-26 업로드). [[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]] — [[laurie-voss|Laurie Voss]]의 두 번째 강연(내레이션 없는 발췌). [[verification-bottleneck]]을 **경유지**로 본다: 병목은 리뷰 → 운영 → 보안으로 옮겨 가다 **문제 정의**에 머문다는 베팅, 그 직무를 product engineer로 부르고 주니어 훈련 경로의 공백을 짚는다. [[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]] — [[elon-musk|Musk]]의 풍요 · 일 · 통제 전망을 해설이 단계마다 깎는다(*"거친 추정"*, *"생산과 누구나 누리는 건 다른 문제"*, *"좋은 성향이 곧 안전은 아니"*) → [[intelligence-abundance]] · [[balance-of-power-safety]].
+- *2026-10-28*: [[tech-bridge]] **2편** ingest(10-27 업로드). [[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]]([[mikhail-parakhin|Parakhin]] 발췌, 내레이션 없음) — 위키의 토큰 비용 논의를 반대쪽 끝에서 본다. **개발에서는 제한하지 말고 가장 큰 모델**(반사실을 모르니까), **절감은 운영에서**(파인튜닝한 싼 모델) — [[model-mixing-economics]]에 *개발 / 운영* 바벨 축이 붙고, [[token-minimization-trap]]의 공백(*최신 모델 제한*)에 당사자 답이 생긴다. 회사를 행동 시퀀스로 보는 [[company-digital-twin]]과, 빌드가 싸질수록 커지는 [[sycophancy|아첨]]의 비용. [[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요?]](화자 미상) — [[ai-jobs-impact]]에 처음으로 **개인이 자기 직무를 채점하는 도구**(TLC: Trust · Learn · Contact)가 들어온다. L은 [[verifiable-goals]]를 노출도 지표로 뒤집어 쓴다.
 
 ---
 

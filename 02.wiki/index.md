@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-27
+updated: 2026-10-28
 ---
 
 # Index
@@ -162,6 +162,7 @@ updated: 2026-10-27
 - [[prerna-kakkar]] — Google 시니어 엔지니어 · eval bench(에이전트·MCP·스킬 평가) 기술 리드. [[build-time-vs-runtime-tools|빌드타임 vs 런타임]] 구분, 테이블 삭제 사례, 미실행 데모 해설 ([[tech-bridge-build-time-vs-runtime-tools]]) ⚠️ 성은 설명란 단독
 - [[thais-castello-branco]] — [[taste-labs|Taste Labs]] 창업자. *"훌륭함은 정의하기 어렵지만 슬롭은 쉽다"* · [[ai-slop|슬롭]] 세 특징(반복·적합성 부족·낮은 의도) · [[slop-probes|프로브]] · *"취향이 아니라 판단"* · [[intentional-out-of-distribution|온도가 아니라 규칙 위반]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 당사자 · 수치 없음
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
+- [[mikhail-parakhin]] — [[shopify|Shopify]] CTO(제목 근거). 바닥이 아니라 천장을 높이는 AI, 복잡도로 정규화한 생산성, *"Always use the largest model"* · 전원 무제한 토큰, 회사의 [[company-digital-twin|디지털 트윈]], 개발엔 최대 · 운영엔 파인튜닝의 바벨 전략 ([[tech-bridge-parakhin-shopify-ai-cost-barbell]]) ⚠️ 당사자 · 수치 없음 · 이름은 설명란에만
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -248,6 +249,7 @@ updated: 2026-10-27
 - [[cognition]] — **[[dioxus|Dioxus]]를 인수한 회사.** 소스가 말하는 것은 **채용 공고 세 문장이 전부** (sources: 1)
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 - [[stripe]] — 결제 인프라 회사(해설). 사람과 에이전트가 함께 쓰는 클라우드 개발 환경 devbox, 사내 에이전트 [[stripe-minions|Minions]] ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 블로그 미확인
+- [[shopify]] — 전자상거래 플랫폼. CTO [[mikhail-parakhin|Parakhin]]: 전 직원 무제한 토큰, 머천트 대상 [[company-digital-twin|디지털 트윈]]을 운영에 적용 ([[tech-bridge-parakhin-shopify-ai-cost-barbell]]) · 지나가는 언급 2건 ⚠️ 당사자 진술
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -386,6 +388,7 @@ updated: 2026-10-27
 - [[bound-parameters]] — 사용자 신원(PII)을 에이전트가 채우지 않고 **앱 인증값 / 검증된 JWT 클레임을 도구에 직접 바인딩**. 에이전트는 신원을 보지 못한다 — 도구 시그니처에서 신원이 사라진다. [[credential-injection-outside-sandbox]]와 같은 벽, 다른 자리 (sources: 1)
 - [[slop-probes]] — 디자인을 객관화 가능한 특징(색·타이포·레이아웃·대상)으로 마이닝 → **단일 특징 소형 분류기** → 동시 출현 빈도로 슬롭 예측. *LLM-as-a-judge보다 낫다*, 에이전트 출시 전 **게이트** (Taste Labs, sources: 1) ⚠️ 수치 없음
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
+- [[company-digital-twin]] — 회사를 **행동의 시퀀스**로 표현해 다음 행동을 예측하고, 실제 회사 대신 트윈에 반사실적 개입(광고 · 배송 · 대출)을 돌려 고른 것만 운영에 적용 ([[mikhail-parakhin|Parakhin]] · [[shopify|Shopify]]) ⚠️ 당사자 진술 하나 · 검증 방법 미발화
 
 ### Architectures
 - [[always-on-agent-architecture]] — 하네스를 서버로: 루프·상태는 서버와 DB, 컴퓨터는 따로 자고 깨는 VM, 트리거 → dedupe router → 알림 heuristic → 우선순위 큐, thin client와 단일 도구 send user, 재시도해도 안전한 durable workflow, 사용자는 사다리 맨 끝 ([[tech-bridge-lee-robinson-always-on-agents]]) ⚠️ 단일 당사자 소스
@@ -947,12 +950,14 @@ updated: 2026-10-27
 - [[tech-bridge-sdd-enterprise-lessons]] — [[simon-martinelli|Simon Martinelli]] (스위스 엔터프라이즈 Java 컨설턴트 · AI DevCon/Tessl 추정): **엔터프라이즈·레거시에 SDD를 적용한 교훈** — 스펙 = 요구공학자가 쓰는 system use case + 엔티티 모델([[ai-unified-process]]), plan/task 단계를 건너뛰고 스킬이 메운다, 레거시는 역공학으로 스펙화, 500개 마이크로서비스도 거대 모놀리스도 아닌 [[self-contained-systems]], *"스펙만으론 부족 — 하네스가 필요"*, 모든 엔지니어링이 요구공학으로 shift-left ([[tech-bridge]], 2026-10-01, **30:41**, 공식 챕터 없음, ⚠️ 당사자 · ETH 연구·데모 시간 등 수치 출처 없음 · **설명란의 'SysML'은 en-orig *system use cases*의 오기** · 촬영 시점 미확정)
 - [[tech-bridge-conductor-orchestras-not-factories]] — [[charlie-holtz|Charlie Holtz]] ([[conductor|Conductor]] · AI Engineer World's Fair): **가장 빠른 빌더들의 6원칙** — 최전선 가까이 · [[dont-beat-the-market|시장을 이기려 하지 마라]] · [[slop-free-zone|슬롭 없는 구역]] · feed the beast([[company-brain]]) · 방목형 클라우드 에이전트 · [[orchestras-not-factories|공장이 아니라 오케스트라]] — [[software-factory]] 프레이밍에 대한 반론 ([[tech-bridge]], 2026-10-01, **16:56**, 공식 챕터 13, ⚠️ 당사자 · 수치는 일화뿐 · ko가 *"I don't want to be in my dark factory"* → **"공장에 있고 싶다"** 로 결론 반전)
 - [[tech-bridge-factory-software-factory]] — [[tereza-tizkova|Tereza Tížková]] ([[factory-ai|Factory]]): **[[software-factory|소프트웨어 팩토리]]의 정의와 3원칙** — agnostic([[automatic-model-routing|자동 모델 라우팅]], Coinbase 사례) · autonomous(Missions: 오케스트레이터 → **순차** 워커 → 검증자, validation contract) · always improving([[deferred-tool-context|지연 도구 컨텍스트]], [[agent-readiness]], plugins·AutoWiki). 사람은 how가 아니라 what ([[tech-bridge]], 2026-10-01, **21:55**, 공식 챕터 28, 09-28 멤버 전용 → 10-02 공개, ⚠️ 벤더 · 25%·50%·16시간 수치 미검증 · ko가 computer use 평가를 **반전**(14:23))
+- [[tech-bridge-parakhin-shopify-ai-cost-barbell]] — [[mikhail-parakhin|Mikhail Parakhin]]([[shopify|Shopify]] CTO) 인터뷰 발췌 편집본(8:24, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, 2026-10-27 업로드): AI 비용, 아낄 곳과 쓸 곳 — 천장을 높이는 AI, 복잡도로 정규화한 생산성, 항상 가장 큰 모델 · 무제한 토큰 · 차단기, [[company-digital-twin|회사의 디지털 트윈]], *"the answer is very often in the question"*, 개발 / 운영 바벨 ⚠️ 원본 링크 · 진행자 없음 · 수치 없음 · ko는 기계 번역
+- [[tech-bridge-tlc-ai-job-anxiety]] — 화자 미상 1인칭 발표(6:14, 챕터 11, 2026-10-27 업로드): AI 때문에 불안한가요 — 안개 속 작은 배, 가정과 사실, 걱정의 창(worry postponement), **TLC(Trust · Learn · Contact)** 로 내 직무 채점, 하루 과제 하나, 내 신발 한 켤레 → [[ai-jobs-impact]] · [[verifiable-goals]] ⚠️ 화자 · 원본 미상 · 한국어 원 ASR 없음(en-orig 원음/더빙 미확정) · 심리학 주장 출처 없음
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 913 (911 → 913, + 2026-10-27 Tech Bridge 2편(10-26 업로드 — Laurie Voss product engineer · Musk 풍요와 통제): source 2 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 913과 일치)
+- 총 페이지 수: 918 (913 → 918, + 2026-10-28 Tech Bridge 2편(10-27 업로드 — Parakhin Shopify AI 비용 바벨 · TLC AI 불안): source 2 · entity 2(mikhail-parakhin · shopify) · concept 1(company-digital-twin) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 918과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-27 (Tech Bridge **2편** — 10-26 업로드 [[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]](`SHGxL8DQOxs`) · [[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]](`jbauQUoIcNg`). `Yhck-x6VuLs`는 여전히 멤버 전용)
-- 직전 ingest: 2026-10-26 (Tech Bridge **2편** — 10-25 업로드 [[tech-bridge-chieng-lee-ai-video-production|AI 전문가들이 영상을 만드는 방법]](`ebUlPF9HNAg`) · [[tech-bridge-annie-wang-harness-four-designs|구글 엔지니어가 말아주는 AI 하네스]](`8tjhiruPpBg`, 멤버 전용 → 공개). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 마지막 ingest: 2026-10-28 (Tech Bridge **2편** — 10-27 업로드 [[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]](`wDTO-nR4yTM`) · [[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요? 내 일을 점검하는 3가지 질문]](`inT5ombZ9HE`). 멤버 전용: `FTZak3J9YbM`(신규) · `Yhck-x6VuLs`(지속))
+- 직전 ingest: 2026-10-27 (Tech Bridge **2편** — 10-26 업로드 [[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]](`SHGxL8DQOxs`) · [[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]](`jbauQUoIcNg`). `Yhck-x6VuLs`는 여전히 멤버 전용)

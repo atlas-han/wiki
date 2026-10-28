@@ -147,8 +147,10 @@ sources:
   - tech-bridge-annie-wang-harness-four-designs
   - tech-bridge-laurie-voss-product-engineer
   - tech-bridge-musk-abundance-work-control
+  - tech-bridge-parakhin-shopify-ai-cost-barbell
+  - tech-bridge-tlc-ai-job-anxiety
 created: 2026-06-03
-updated: 2026-10-27
+updated: 2026-10-28
 ---
 
 # Tech Bridge
@@ -1442,3 +1444,17 @@ updated: 2026-10-27
 
 - 해설이 **수치와 낙관을 단계마다 깎는다**(*"거친 추정"*, *"조건이 달린 예측"*, *"좋은 성향이 곧 안전을 보장하는 건 아니"*). ILO 2025 · 국제 AI 안전 보고서 2026 · Google DeepMind는 해설의 외부 인용이다.
 - ⚠️ 원음 캡션 공백이 크다. *"100만 배"* · 불평등에 대한 답 · 돈 발췌가 무캡션이고 달러 수치도 빠졌다. 진행자 Walter Isaacson은 해설 근거다. 09-06 G20 편과 같은 대담인지는 확정하지 않았다. **ko**: *말자라는 컴퓨터* → 말하는 컴퓨터(추정), *갖꾸는* → 가꾸는.
+
+## 2026-10-27 업로드 — Parakhin 발췌 · TLC 발표 (2026-10-28 ingest)
+
+[[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]](`wDTO-nR4yTM`, 8:24, 공식 챕터 8) — [[mikhail-parakhin]](신규) · [[shopify]](신규) ([[model-mixing-economics]] · [[token-minimization-trap]] · [[sycophancy]] · [[agent-roi-measurement]] · [[automated-ai-research]] · [[company-digital-twin]](신규))
+
+- 10-27 Voss 편과 같은 **내레이션 없는 발췌 편집본**이고 오디오도 `English (US) original` 하나다. ko는 `tlang=ko` 기계 번역이라 인용은 en-orig로만 했다. 진행자 한 줄(*"raise the ceiling"*)이 섞여 있는데 진행자 이름은 없다. 태그 `Boris`는 귀속하지 않았다.
+- ⚠️ 원본 링크 없음, 수치 없음. *GSD* · *centaur* 는 ASR 판독 추정. 08:07~08:21 en-orig 판독 불가. **ko**: *auto research the hell out of it* → *"조사하십시오. 자동화하여"*.
+
+[[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요? 내 일을 점검하는 3가지 질문]](`inT5ombZ9HE`, 6:14, 공식 챕터 11) — 화자 미상 ([[ai-jobs-impact]] · [[verifiable-goals]])
+
+- **한 화자의 1인칭 발표**(*"I call it the TLC"*)로 이어지는데 이름 · 원본 링크가 없다. 10-21 편과 같은 트랙 구성(`Korean original` + `English (US)`, `language`=`en`)이다. 이번엔 `ko-orig`가 없고 ko는 `tlang=ko` 번역이다(`[music]` → *"음악"*). `lang=ko` 직접 요청은 0 bytes였다. en-orig가 원음인지 더빙인지 확정하지 않았다.
+- ⚠️ *worry postponement* 등 심리학 주장은 출처가 없다. *"which camp"* 의 진영 구분은 편집에서 빠졌다.
+
+**멤버 전용**: `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*, 7:31, 목록 `upload_date` 20261027) 신규 — 목록 줄로 나옴. `Yhck-x6VuLs`는 단건 조회로 지속 확인.

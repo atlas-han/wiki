@@ -1149,5 +1149,10 @@
   "02.wiki/entities/cova-lee.md": "LiUser",
   "02.wiki/entities/annie-wang.md": "LiUser",
   "02.wiki/sources/tech-bridge-laurie-voss-product-engineer.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-musk-abundance-work-control.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-musk-abundance-work-control.md": "LiVideo",
+  "02.wiki/entities/mikhail-parakhin.md": "LiUser",
+  "02.wiki/entities/shopify.md": "LiBuilding",
+  "02.wiki/concepts/company-digital-twin.md": "LiCopy",
+  "02.wiki/sources/tech-bridge-parakhin-shopify-ai-cost-barbell.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-tlc-ai-job-anxiety.md": "LiVideo"
 }
