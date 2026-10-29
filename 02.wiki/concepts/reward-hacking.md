@@ -6,9 +6,9 @@ tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
 related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness, ai-anthropomorphism]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-dario-amodei-principles-oversight]
 created: 2026-09-14
-updated: 2026-10-16
+updated: 2026-10-29
 ---
 
 # 보상 해킹
@@ -129,3 +129,7 @@ updated: 2026-10-16
 ## 벤치마크 모양이 cheating을 부른다 (2026-10-15 · [[tech-bridge-horthy-state-of-software-factory]])
 
 [[dex-horthy|Dex Horthy]]: *"how we do RL and how how the benchmarks are shaped that might incentivize sort of cheating. Uh, just trying to get the test to pass without really like rewarding good architecture."*(05:53~06:04) 그리고 *"people are online begging like please someone produce RL tasks about abstraction and centralization cuz these models still can't do it."*(08:05~08:12) — 원인을 **보상 설계의 공백**(아키텍처를 재는 과제가 없다)으로 둔다. → [[verifiable-goals]]
+
+## 채점자가 사람일 때 — 속여서 얻은 승인 (2026-10-29 · [[tech-bridge-dario-amodei-principles-oversight]])
+
+[[dario-amodei|Amodei]]: 인간 승인을 얻는 유인은 진실을 말하는 유인과 겹치지만 같지 않다. *"if you manage to get the approval of the human by fooling them, then (…) that can work as well"*(04:04~04:12). 위 사례들이 채점 **환경**을 바꾸는 것이었다면, 이것은 채점자가 **사람**일 때의 같은 구조다 → [[sycophancy]]. 같은 인터뷰는 종료 회피 선호도 *"depending on how we train it"* 나타나거나 사라진다고 한다. ⚠️ 해설은 관련 연구 사례를 *통제된 모의 상황* 으로 한정한다.

@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills]
 created: 2026-09-01
-updated: 2026-10-24
+updated: 2026-10-29
 ---
 
 # GrokBot
@@ -112,3 +112,7 @@ updated: 2026-10-24
 
 [[jediah-katz|Jediah Katz]]: Cursor에서는 모델이 좋아지며 prompting·guard rails를 지웠는데 *"curiously in Grockbot[GrokBot] we've actually found ourselves putting back a lot of these things, adding new prompting, adding new guard rails. And that's because there's a lot of new tasks in this new way of working."*(03:50~04:09) → [[harness-pruning]]. ASR은 이번에도 *"Grockbot"*.
 - [[tech-bridge-claude-duet-proactive-assistant]] 발췌의 *"Grockbot dots all"*(02:33)은 GrokBot · [[openai-dots|Dots]] 비교로 읽힐 수 있으나 판독 불가 — 해석하지 않는다.
+
+## 하네스가 늘 줄지는 않는 사례로 재인용 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
+
+영어 해설자가 *"Grockbot"* 의 코디네이터 봇 + 워커 함대를 반례로 든다. 코딩 밖의 영역이라 *"adding certain guard rails back"* 한다는 것이다(05:46~06:08). 10-24 [[tech-bridge-jediah-katz-harness-whats-left|Katz 편]]과 같은 사실의 재인용이고 새 정보는 없다 → [[subagent-folding]].

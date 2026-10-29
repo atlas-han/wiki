@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills]
 created: 2026-09-05
-updated: 2026-10-24
+updated: 2026-10-29
 ---
 
 # Harness Pruning
@@ -127,3 +127,9 @@ pruning은 축소가 아니라 **재배치**다.
 **지워지는 메커니즘**도 같은 강연이 댄다 — data flywheel: *"the harness brings harder and harder coding tasks within reach … more coding data is shared with the labs. And eventually the models learn natively how to do these skills well."*(02:12~02:31) 해설은 *보조 바퀴*로 옮긴다. 지워도 남는 것은 셋 — 오래 실행되는 인프라 · trust and security · efficiency.
 
 > ⚠️ 해설이 전한 *"두 연구 — 하네스를 바꿔도 점수가 크게 달라지지 않았다"* 는 원음이 무캡션이라 연구명을 확인할 수 없다. 해설 스스로 *코딩·머신 러닝 시험의 맥락*으로 범위를 좁힌다.
+
+## 지우는 단위가 에이전트 구조로 — 서브에이전트 접기 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
+
+영어 해설자가 전한 [[anthropic|Anthropic]] 권고다(2차 진술): 서브에이전트와 긴 시스템 프롬프트는 *"scaffolding for the models that we had like 6 months ago"*(01:52~01:55)이고, 새 모델에서는 *"stopped paying off"* 했다. 이 페이지의 ⚠️ 유보(*지워도 되는지 판단하는 기준 · 절차는 소스에 없다*)에 대한 한 가지 답으로 **기준선(프롬프트 10개 × 2회) → 스킬로 접기 → 같은 과제로 재측정**을 준다 → [[subagent-folding]]. 스킬 지시도 같은 질문으로 덜어낸다: *"would the current model I'm using do this anyway without being told and if yes just cut it out"*(05:28~05:37).
+
+> ⚠️ 같은 영상이 [[grokbot|GrokBot]]의 반례(코딩 밖에서는 가드레일을 다시 넣는다)를 든다. 10-24 Katz 절과 같은 사례다.

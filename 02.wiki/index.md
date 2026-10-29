@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-28
+updated: 2026-10-29
 ---
 
 # Index
@@ -529,6 +529,7 @@ updated: 2026-10-28
 - [[inner-outer-meta-loops]] — 코딩 에이전트 작업의 세 루프: inner(PR 전, 싸고 빠름 → autonomy) · outer(PR 후 비싼 검사 → automation) · meta(로그·PR·이슈·피드백 관찰 → 품질, 스킬 갱신) ([[tech-bridge-tessl-harness-engineering-factory]]) ⚠️ 한 벤더의 틀 · Lauren Tan의 outer loop와 용어 충돌
 - [[model-scaling-durability]] — 모델이 똑똑해질수록 커지는 활동 vs 모델 한계를 우회하는 활동(후자는 내구성 없음). 해자는 산업 이해·이해관계자 신뢰·도메인 전문성 ([[tech-bridge-brockman-start-building-before-ready]]) ⚠️ 모델 공급자 사장의 말 · "handcrafted"의 경계 미정의 → [[harness-engineering]]과 긴장
 - [[subagent-vs-thread-handoff]] — 일을 나눌 때 위임을 모델에게만 보이게(서브에이전트·하청) 할지 사용자에게도 보이게(스레드 간 핸드오프·creative director 스레드) 할지 ([[tech-bridge-cooking-with-codex]]) ⚠️ 단일 소스·제작사 · Bakaus(서브에이전트는 명시 요청 필요)와 충돌
+- [[subagent-folding]] — 서브에이전트를 **하나의 에이전트 루프 + 스킬로 접는다.** 기준선(프롬프트 10개 × 2회) → 서브에이전트 프롬프트를 `SKILL.md` 본문으로 → 같은 과제로 재측정. 남길 세 경우(컨텍스트 팽창 · 도구 오선택 · 병렬 조사), 서로 의존하는 작업은 메인 에이전트에, 스킬의 busy work · 54% 줄여도 안 내려간 비용 ([[tech-bridge-anthropic-fold-subagents-into-skills]]) ⚠️ Anthropic 권고의 2차 진술
 - [[agent-native-interface]] — 제품이 사람의 눈·클릭 대신 에이전트를 1차 사용자로 놓는 인터페이스. MCP(채널) 위의 설계 층: 도구 노출량·사용 순서·데이터 크기 ([[tech-bridge-composio-dashboard-is-dead]]) ⚠️ 첫 소스가 이 층을 파는 회사 · Brockman(컴퓨터 사용)과 반대 방향
 - [[human-as-async-api]] — 사람의 입력을 동기 호출이 아니라 비동기 이벤트로: workflow를 wait condition으로 park, 응답은 signal로 주입, 크래시에도 유지. 언제 부를지는 *틀렸을 때의 비용* vs alert fatigue ([[tech-bridge-human-is-async-api]]) ⚠️ 벤더 발표
 - [[deterministic-agent-pipeline]] — 계획을 모델에 맡기지 않는다: 고정 그래프 + 결정론 노드(수집·가지치기) + LLM 노드(판단), 노드별 모델·턴 예산, *"more than 20 turns = wrong direction"* ([[tech-bridge-uber-debug-assist]]) ⚠️ 환각 감소 주장 미측정
@@ -952,12 +953,14 @@ updated: 2026-10-28
 - [[tech-bridge-factory-software-factory]] — [[tereza-tizkova|Tereza Tížková]] ([[factory-ai|Factory]]): **[[software-factory|소프트웨어 팩토리]]의 정의와 3원칙** — agnostic([[automatic-model-routing|자동 모델 라우팅]], Coinbase 사례) · autonomous(Missions: 오케스트레이터 → **순차** 워커 → 검증자, validation contract) · always improving([[deferred-tool-context|지연 도구 컨텍스트]], [[agent-readiness]], plugins·AutoWiki). 사람은 how가 아니라 what ([[tech-bridge]], 2026-10-01, **21:55**, 공식 챕터 28, 09-28 멤버 전용 → 10-02 공개, ⚠️ 벤더 · 25%·50%·16시간 수치 미검증 · ko가 computer use 평가를 **반전**(14:23))
 - [[tech-bridge-parakhin-shopify-ai-cost-barbell]] — [[mikhail-parakhin|Mikhail Parakhin]]([[shopify|Shopify]] CTO) 인터뷰 발췌 편집본(8:24, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, 2026-10-27 업로드): AI 비용, 아낄 곳과 쓸 곳 — 천장을 높이는 AI, 복잡도로 정규화한 생산성, 항상 가장 큰 모델 · 무제한 토큰 · 차단기, [[company-digital-twin|회사의 디지털 트윈]], *"the answer is very often in the question"*, 개발 / 운영 바벨 ⚠️ 원본 링크 · 진행자 없음 · 수치 없음 · ko는 기계 번역
 - [[tech-bridge-tlc-ai-job-anxiety]] — 화자 미상 1인칭 발표(6:14, 챕터 11, 2026-10-27 업로드): AI 때문에 불안한가요 — 안개 속 작은 배, 가정과 사실, 걱정의 창(worry postponement), **TLC(Trust · Learn · Contact)** 로 내 직무 채점, 하루 과제 하나, 내 신발 한 켤레 → [[ai-jobs-impact]] · [[verifiable-goals]] ⚠️ 화자 · 원본 미상 · 한국어 원 ASR 없음(en-orig 원음/더빙 미확정) · 심리학 주장 출처 없음
+- [[tech-bridge-anthropic-fold-subagents-into-skills]] — 영어 해설자(이름 미상) 발췌 + 한국어 해설(무캡션)(6:55, 챕터 9, 2026-10-28 업로드): [[anthropic|Anthropic]]이 서브에이전트를 줄이라는 이유 — *one agent with a set of skills* · 조직도 복제(Conway's law) · Franken-prompt · progressive disclosure · [[subagent-folding|접는 절차]] · 남길 세 경우 · Cognition Flappy Bird · 스킬의 busy work · [[prompt-caching|캐시]] 때문에 안 내려간 비용 ⚠️ 2차 진술 · 원 출처 링크 없음
+- [[tech-bridge-dario-amodei-principles-oversight]] — [[dario-amodei|Dario Amodei]] 2026년 7월 인터뷰(매체 미상) 발췌 + 해설(9:41, 챕터 11, 2026-10-28 업로드): GPT-2의 두려움 · good faith 이견 · **규칙 대신 원칙** · 승인과 진실의 어긋남([[sycophancy]] · [[reward-hacking]]) · 종료 회피 선호 · 신뢰할 수 있어도 남는 자율무기의 감독 · 책임([[joint-democratic-oversight]]) · 단일하지 않은 미래 ⚠️ 해설의 "다니엘라" 지칭 미확정 · *누가 결정하나* 답 무캡션
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 918 (913 → 918, + 2026-10-28 Tech Bridge 2편(10-27 업로드 — Parakhin Shopify AI 비용 바벨 · TLC AI 불안): source 2 · entity 2(mikhail-parakhin · shopify) · concept 1(company-digital-twin) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 918과 일치)
+- 총 페이지 수: 921 (918 → 921, + 2026-10-29 Tech Bridge 2편(10-28 업로드 — Anthropic 서브에이전트 접기 해설 · Amodei 7월 인터뷰): source 2 · concept 1(subagent-folding) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 921과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-28 (Tech Bridge **2편** — 10-27 업로드 [[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]](`wDTO-nR4yTM`) · [[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요? 내 일을 점검하는 3가지 질문]](`inT5ombZ9HE`). 멤버 전용: `FTZak3J9YbM`(신규) · `Yhck-x6VuLs`(지속))
-- 직전 ingest: 2026-10-27 (Tech Bridge **2편** — 10-26 업로드 [[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]](`SHGxL8DQOxs`) · [[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]](`jbauQUoIcNg`). `Yhck-x6VuLs`는 여전히 멤버 전용)
+- 마지막 ingest: 2026-10-29 (Tech Bridge **2편** — 10-28 업로드 [[tech-bridge-anthropic-fold-subagents-into-skills|Anthropic이 서브에이전트를 줄이라는 이유]](`kJGTHFZHLVg`) · [[tech-bridge-dario-amodei-principles-oversight|다리오 아모데이의 AI 경고]](`jvc8_czisas`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-10-28 (Tech Bridge **2편** — 10-27 업로드 [[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]](`wDTO-nR4yTM`) · [[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요? 내 일을 점검하는 3가지 질문]](`inT5ombZ9HE`). 멤버 전용: `FTZak3J9YbM`(신규) · `Yhck-x6VuLs`(지속))

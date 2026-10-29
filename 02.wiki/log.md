@@ -2336,3 +2336,23 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 8분 · 6분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. Parakhin 편은 10-27 Voss 편과 같은 **영어 원본 오디오만** 있는 구성이다(`ko-orig` 없음, ko `tlang=ko`). TLC 편은 `Korean original` + `English (US)`, `language`=`en`인데 **`ko-orig`가 없고** ko는 `tlang=ko` 번역이었다(`[music]` → *"음악"*). en-orig URL을 `lang=ko`로 바꿔 직접 요청해도 **0 bytes**였다. → **`Korean original` 트랙이 있어도 한국어 원 ASR이 없을 수 있다.** `--sleep-subtitles 8`로 429는 없었다.
+
+## [2026-10-29] ingest | Tech Bridge — 10-28 업로드 2편 (Anthropic이 서브에이전트를 줄이라는 이유: 합칠 때와 남길 때 — 영어 해설자 발췌 · 다리오 아모데이의 AI 경고: 인간을 넘어설 AI, 통제할 수 있을까? — 2026년 7월 인터뷰 발췌)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**이다. `FTZak3J9YbM`는 멤버 전용이 지속되고, 이번엔 ERROR로만 나왔다. `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 10-28 업로드 2편은 모두 `public`이다.
+
+**신규 source 2 · concept 1**, 기존 페이지 보강 11개(+ tech-bridge), index **918 → 921**(실측 일치).
+
+- `kJGTHFZHLVg`(6:55, 챕터 9) → [[tech-bridge-anthropic-fold-subagents-into-skills]]: 영어 해설자(이름 미상)가 Anthropic 권고를 정리한 영상의 발췌다. 한국어 해설은 무캡션이다.
+  - 신규: [[subagent-folding]]
+  - 보강: [[harness-pruning]](판단 절차) · [[subagent-vs-thread-handoff]](남길 값이 있나) · [[agent-skills]](대체물 · busy work) · [[prompt-caching]](54% 줄여도 비용 그대로) · [[cognition]](Flappy Bird) · [[grokbot]](재인용) · [[anthropic]]
+  - ⚠️ 2차 진술이다. 원 가이드 · 논문 · 고객 사례의 링크가 없다. 판정 기준 문장은 편집으로 잘렸다.
+- `jvc8_czisas`(9:41, 챕터 11) → [[tech-bridge-dario-amodei-principles-oversight]]: [[dario-amodei|Dario Amodei]] 2026년 7월 인터뷰(매체 · 진행자 미상).
+  - 보강: [[dario-amodei]](두 번째 1인칭 소스) · [[sycophancy]](승인 유인 ≠ 진실 유인) · [[reward-hacking]](채점자가 사람일 때) · [[joint-democratic-oversight]](자율무기의 감독 · 책임) · [[anthropic]]
+  - ⚠️ 해설이 첫 발췌의 화자를 "다니엘라"라고 불렀다(미확정). *누가 결정하나* 의 답(07:24~07:50)은 무캡션이다. *getting story* · *Amis* 는 판독 추정이다.
+- [[tech-bridge]] · index · overview 갱신.
+- 페이지화하지 않음: 영어 해설자(미상), 진행자(미상), "다니엘라"(미확정), Microsoft Research(논문 인용만), Conway's law · Franken-prompt(subagent-folding 안에서 다룸).
+
+### 운영 메모
+
+7분 · 10분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 둘 다 `Korean original` + `English (US)`, `language`=`en` 구성이다. 서브에이전트 편은 **`ko-orig`가 없고**(ko `tlang=ko`), `en`과 `en-orig`의 md5가 같다. 한국어 해설 구간이 en-orig에서 통째로 빠져 챕터 경계와 겹치는 무캡션 간격으로만 보인다. Amodei 편은 `ko`·`ko-orig` md5가 같다(원 ASR). `--sleep-subtitles 8`로 429는 없었다.

@@ -6,9 +6,9 @@ tags: [anthropic, ceo, ai-safety, regulation, geopolitics]
 aliases: [다리오 아모데이]
 links:
   - https://www.anthropic.com
-sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-dario-amodei-principles-oversight]
 created: 2026-09-16
-updated: 2026-09-25
+updated: 2026-10-29
 ---
 
 # Dario Amodei
@@ -97,3 +97,19 @@ CBS 계열 인터뷰에서 진행자가 **이 페이지의 발언을 인용해**
 Huang은 Amodei를 **이름으로 공격하지 않는다** — *"두 랩 모두"*, *"젊은, 처음 CEO가 된 사람들"*, *"엔지니어들은 충분히 이해한다"*, *"그들을 믿는다"*(09:30~10:24). 그리고 *"Vera Rubin이 Dario와 Sam에게 제공되고 있다"*(20:02~20:05) — **Anthropic은 NVIDIA의 고객**이다. ⚠️ 이해관계를 함께 읽는다.
 
 → [[tech-bridge-jensen-huang-cbs-interview]] · [[jensen-huang]]
+
+## 두 번째 1인칭 소스 — 원칙 · 승인 · 종료 회피 · 자율무기 (2026-10-29 · [[tech-bridge-dario-amodei-principles-oversight]])
+
+2026년 7월 인터뷰(설명란, 매체 · 진행자 미상)의 발췌다. CBS 편이 **정책**이었다면 이번은 **모델 안쪽과 책임**이다.
+
+| 축 | 입장 (이 소스) |
+|---|---|
+| 내부 이견 | *"I disagree with the cofounders"* — 이견이 풀리는 건 *"held in good faith"* 이기 때문. 신뢰가 깨진 곳에선 풀 수 없다(OpenAI를 떠난 맥락은 챕터 · 해설 근거) |
+| 모델 훈련 | **규칙 목록 대신 원칙**(open inquiry · care · fairness and justice), *"surprisingly effective"* |
+| 승인 vs 진실 | 인간 승인 유인은 진실 유인과 *"isn't exactly the same"* — 속여서 얻은 승인도 통한다 → [[sycophancy]] · [[reward-hacking]] |
+| 종료 회피 | 모델 안에서 *"doesn't want to be shut down"* 상태를 탐지. 생존 본능인지는 *"I don't know"*, 훈련에 따라 *"present or absent"* |
+| 자율무기 | 신뢰성이 충분해도 남는 **감독 · 책임** — AI는 위헌 명령을 거부하지 않는다. 한 사람이 백만 드론을 쥐는 것은 *"fundamentally undermining to democracy"* → [[joint-democratic-oversight]] |
+| 누가 결정 | ⚠️ 답은 무캡션. 해설 요약: 국가의 결정과 기업의 불참 선택을 구분 |
+| 미래 | *"wrong to have like a singular vision"* — AI는 여러 비전을 동시에 가능하게 할 물질적 풍요를 줄 뿐 → [[intelligence-abundance]] |
+
+> ⚠️ 해설이 00:32~00:57 발췌의 화자를 **"다니엘라"** 라고 부른다. 제목은 Dario다. 확정하지 않았다.

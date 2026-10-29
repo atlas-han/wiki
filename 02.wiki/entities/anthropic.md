@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-10-24
+updated: 2026-10-29
 ---
 
 # Anthropic
@@ -205,3 +205,8 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 ## Claude Duet — 선제형 개인 비서 (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
 
 [[claude-duet|Claude Duet]]: 연결한 앱에서 할 일을 골라 아침 요약·알림, 초안 준비, 클라우드에서 몇 시간마다 확인, 보내기·결제·서명·삭제 전 승인, 기존 Claude와 사용량 한도 공유. 미국 유료 요금제 대기 명단 시험 버전(해설). ⚠️ Tech Bridge 해설과 화자 미상 발췌만 — 공식 발표 미확인.
+
+## 서브에이전트를 줄이라는 가이드 · CEO의 7월 인터뷰 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]] · [[tech-bridge-dario-amodei-principles-oversight]])
+
+- **가이드(2차 진술)**: 영어 해설자에 따르면 Anthropic은 고객 사례에서 *"one agent with a set of skills"* 가 거대 프롬프트와 서브에이전트 팀을 자주 이겼다고 하며 서브에이전트를 스킬로 접으라고 권한다. Franken-prompt, progressive disclosure, 남길 세 경우가 그 내용이다 → [[subagent-folding]]. 멀티 에이전트 리서치 시스템이 단일 Claude Opus를 internal evals에서 *"by 90%"* 이겼다는 인용도 있다. ⚠️ 가이드 제목 · 링크가 없고, 해설자는 *"no pass rates or sample sizes"* 라고 지적한다.
+- **CEO 인터뷰**: [[dario-amodei|Amodei]]는 2026년 7월 인터뷰(매체 미상)에서 규칙 목록이 아니라 원칙을 가르친다고 말한다. 승인 유인과 진실 유인의 어긋남, 종료 회피 선호, 자율무기의 감독 · 책임도 다룬다 → [[tech-bridge-dario-amodei-principles-oversight]].

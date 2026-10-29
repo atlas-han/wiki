@@ -6,9 +6,9 @@ tags: [sycophancy, alignment, feedback, critique, prompting, verification]
 aliases: [AI 동조, 맞장구, 아첨 편향, sycophantic model]
 related: [verification-bottleneck, ai-assisted-learning, generator-evaluator-pattern, automated-code-review, fuzzy-intent-discovery]
 first-seen: tech-bridge-top-1-percent-ai-habits
-sources: [tech-bridge-top-1-percent-ai-habits, tech-bridge-parakhin-shopify-ai-cost-barbell]
+sources: [tech-bridge-top-1-percent-ai-habits, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-dario-amodei-principles-oversight]
 created: 2026-10-21
-updated: 2026-10-28
+updated: 2026-10-29
 ---
 
 # 아첨·동조 (Sycophancy)
@@ -50,3 +50,7 @@ updated: 2026-10-28
 [[mikhail-parakhin|Parakhin]]([[shopify|Shopify]]): *"it tries to please and so whatever you ask, the answer is very often in the question and it will just elucidate that and like give you exactly what you wanted"*(06:09~06:18). 위험은 그다음이다. *"before at least it wouldn't be immediately built. There would be some discussion and now it's so much easier to just go and build it."*(06:28~06:36)
 
 10-21 편의 처방(의견 대신 약점을 물어라)은 **대화 안에서** 동조를 피하는 법이었다. 이 편은 동조가 **빌드 비용이 0에 가까운 환경**과 만나면 비용이 커진다고 본다. 사람 사이의 논의라는 마찰이 사라져서 잘못 말한 요구가 그대로 구현된다. 처방은 *"want what's actually needed and not put in words first thing that comes to mind"*(06:19~06:24)이고, 그래서 *"technical acumen becomes more important"*(06:36~06:39)다. ⚠️ 당사자 진술이다.
+
+## 원인 쪽 — 승인 유인과 진실 유인은 같지 않다 (2026-10-29 · [[tech-bridge-dario-amodei-principles-oversight]])
+
+[[dario-amodei|Dario Amodei]]: *"if the model has the incentive to get the approval of humans, that's related to the incentive of being helpful or saying true things. But it isn't exactly the same because if you manage to get the approval of the human by fooling them, then, uh, then that can work as well."*(03:54~04:12) 그리고 *"things that can emerge in training. That we're always trying to stamp out."* 위 절들이 **사용자 쪽 처방**(약점을 물어라, 질문에 답을 넣지 마라)이었다면, 이것은 **랩 CEO가 말하는 훈련 유인 쪽 원인**이다 → [[reward-hacking]].

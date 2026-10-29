@@ -5,9 +5,9 @@ category: pattern
 tags: [skills, harness, governance, mcp, workflow]
 related: [harness-engineering, spec-driven-development, frontier-engineering, agent-org-adoption, model-context-protocol, self-harness, prompt-injection, generator-evaluator-pattern, claude-code, agent-knowledge-sourcing, retrieval-augmented-generation, agent-memory, adjective-verb-steering, impeccable, no-one-shot-design, google-skills, harness-as-platform, mcp-skill-distribution, run-trace-skill-distillation, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-ai-native-skills
-sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-ai-native-skills, tech-bridge-flutter-ai-workflow, tech-bridge-six-agent-skills, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-full-course, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-pocock-pr-bottleneck, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-tessl-harness-engineering-factory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-fold-subagents-into-skills]
 created: 2026-08-31
-updated: 2026-10-20
+updated: 2026-10-29
 ---
 
 # Agent Skills
@@ -371,3 +371,9 @@ Flutter 팀 진행자: 공식 스킬의 *"유지 관리해야 할 양이 거의 
 ## 2026-10-20 — 검토 방법론을 스킬로, "Point your agent at the write-up" ([[tech-bridge-three-level-agent-review]])
 
 [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)은 세 검토 단계를 각각 agent skill로 만들어(*"I built each level as an agent skill"* 01:12) 오픈소스로 공개했다고 말한다(*"I've packaged the three review levels as agent skills, and I've released them as open source. The write-up is at gallon.me."* 11:35~11:43). 배포 방식이 특이하다 — 저장소 설치가 아니라 *"Point your agent at the write-up, and it will know how to check its own work using this review method"*(11:43~11:48), 곧 **글 자체를 스킬 입력으로** 쓰라고 한다. Railway 편의 "의견은 스킬로"와 같은 계열이고, 대상이 **검토 절차**라는 점이 다르다. ⚠️ 저장소(설명란 `captivus/agent-review`)의 구성은 확인하지 않았다. → [[three-level-agent-review]] · [[agent-verification-skill]]
+
+## 서브에이전트의 대체물, 그리고 busy work (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
+
+- **대체물**: 서브에이전트 파일(description + system prompt)과 스킬(description + instructions)은 구조가 같다. 서브에이전트 프롬프트를 `SKILL.md` 본문으로 옮기고 progressive disclosure로 필요할 때만 불러온다 → [[subagent-folding]] (Anthropic 권고, 영어 해설자 경유 2차 진술).
+- **busy work**: Microsoft Research와 두 대학의 논문(제목 없음)에 따르면 스킬이 검증 체크리스트를 *"mandatory work"* 로 바꾼다. *"always run the full test suite"* 라고 쓰면 버튼 한 줄 변경에도 전체 테스트를 돌린다(05:00~05:20).
+- **비용**: 7월 논문(제목 없음)에서 스킬을 *"up to 54%"* 줄여도 작업당 비용이 반드시 내려가지 않았다. 스킬은 대부분 캐시되기 때문이다 → [[prompt-caching]].

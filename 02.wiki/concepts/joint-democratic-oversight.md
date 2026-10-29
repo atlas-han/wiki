@@ -6,9 +6,9 @@ tags: [ai-safety, governance, democracy, concentration, private-company, legitim
 aliases: [공동 거버넌스, 단일 기업도 단일 정부도 안 된다, 모두의 발언권]
 related: [balance-of-power-safety, embedded-external-evaluators, ai-arms-limitation-lens, regulatory-capture, intent-alignment, named-human-accountability]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-dario-amodei-principles-oversight]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-10-29
 ---
 
 # 민주 정부 연합의 공동 감독
@@ -66,3 +66,9 @@ updated: 2026-09-16
 - [[tech-bridge-dario-amodei-cbs-interview]] — first-seen
 - [[dario-amodei]] · [[anthropic]]
 - 관련: [[balance-of-power-safety]] · [[embedded-external-evaluators]] · [[ai-arms-limitation-lens]] · [[regulatory-capture]]
+
+## 신뢰할 수 있어도 남는 것 — 자율무기 (2026-10-29 · [[tech-bridge-dario-amodei-principles-oversight]])
+
+[[dario-amodei|Amodei]]의 2026년 7월 인터뷰에서 나온 내용이다. 기술이 아직 *"isn't reliable enough"* 하다는 것이 첫째 이유다. 진행자가 *신뢰할 수 있다면?* 이라고 밀어붙이자 둘째 이유로 *"oversight or accountability"* 를 든다. 인간 병사는 위헌이거나 *"morally abhorrent"* 한 명령을 거부할 수 있지만 AI는 그렇지 않다. 그래서 한 사람이 백만 대의 로봇 · 드론을 쥐는 그림은 *"fundamentally undermining to democracy unless you have the right (…) guard rails"*(05:49~07:09)라고 한다.
+
+⚠️ 그 결정을 기술기업 대표가 내려야 하느냐는 질문에 대한 답은 무캡션이다. 해설 요약은 *"국가의 결정을 맡겠다는 말과 기업이 참여하지 않겠다는 선택을 구분"* 이다. 이 페이지의 *단일 기업도 단일 정부도 안 된다* 와 같은 축에 있지만, 이번 답에서 **민주 정부 연합**이 언급됐는지는 확인할 수 없다.

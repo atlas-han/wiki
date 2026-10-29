@@ -6,9 +6,9 @@ tags: [prompt-caching, context-engineering, cost, latency, harness-design, compa
 aliases: [prompt caching, prompt cache, 프롬프트 캐시, 캐시 적중, cache hit, cache miss, cache warming, 캐시 예열, KV cache hit ratio]
 related: [context-engineering, harness-engineering, context-resets-and-compaction, deferred-tool-context, toolbox-pattern, scripts-that-talk-back, transcript-classifier, automatic-model-routing, model-mixing-economics, trusted-throughput, always-on-agent-architecture, openclaw, fireworks-ai]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills]
 created: 2026-10-18
-updated: 2026-10-18
+updated: 2026-10-29
 ---
 
 # 프롬프트 캐싱 (Prompt Caching)
@@ -55,3 +55,7 @@ updated: 2026-10-18
 
 - [[tech-bridge-lee-robinson-always-on-agents]] — first-seen
 - [[context-engineering]] · [[context-resets-and-compaction]] · [[deferred-tool-context]] · [[scripts-that-talk-back]] · [[transcript-classifier]] · [[automatic-model-routing]] · [[always-on-agent-architecture]]
+
+## 줄여도 안 내려가는 비용 — 스킬은 이미 캐시돼 있다 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
+
+영어 해설자의 인용(2차 진술, 논문 제목 없음): *"A July paper shortens skills by up to 54% and the cost per task didn't necessarily drop. In some cases, skills are small, mostly cash[cached] parts of what the agent reads."*(06:12~06:24) 캐시된 접두부는 이후 턴에서 *"charged a lot less"* 하므로, **지시 문서의 길이를 줄이는 것만으로는 비용 레버가 약할 수 있다** → [[agent-skills]] · [[subagent-folding]].

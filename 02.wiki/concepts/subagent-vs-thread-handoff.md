@@ -6,9 +6,9 @@ tags: [subagents, delegation, multi-agent, threads, visibility, codex, context-i
 aliases: [thread-to-thread handoff, 스레드 간 핸드오프, side thread, 위임 가시성]
 related: [agent-swarm, orchestrator-searcher-split, persistent-agent-teams, goal-level-delegation, multiplayer-agent-context, agent-attention-management, dynamic-workflows, cross-harness-skill-compilation, always-on-agent-architecture]
 first-seen: tech-bridge-cooking-with-codex
-sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-anthropic-fold-subagents-into-skills]
 created: 2026-10-11
-updated: 2026-10-19
+updated: 2026-10-29
 ---
 
 # 서브에이전트 vs 스레드 간 핸드오프
@@ -70,3 +70,7 @@ updated: 2026-10-19
 
 - [[tech-bridge-cooking-with-codex]] — first-seen · [[charlie-guo]] · [[codex]]
 - [[agent-swarm]] · [[orchestrator-searcher-split]] · [[goal-level-delegation]] · [[multiplayer-agent-context]] · [[persistent-agent-teams]] · [[cross-harness-skill-compilation]]
+
+## 남길 값이 있나 — 서브에이전트를 접을 때와 남길 때 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
+
+이 페이지의 축이 *누구에게 보이나* 라면, 영어 해설자가 전한 Anthropic 권고(2차 진술)의 축은 *남길 값이 있나* 다 → [[subagent-folding]]. 남길 경우는 셋이다. ① 컨텍스트 팽창 ② 도구 오선택(*"split agents by context but not necessarily by org chart"*, 03:53~03:57) ③ 병렬 조사(*"The biggest win"*). 반대로 서로 의존하는 단계는 메인 에이전트에 둔다. 근거는 [[cognition|Cognition]]의 Flappy Bird 사례로, 배경과 새를 따로 만든 두 서브에이전트의 결과가 맞지 않았다(04:35~04:51). 핸드오프마다 *"loses detail"* 한다는 진단은 위 creative director 스레드가 sign-off를 두는 이유와 겹친다(위키의 독해).

@@ -3,9 +3,9 @@ title: Cognition
 type: entity
 category: org
 tags: [coding-agents, acquisition, rust, dioxus]
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-anthropic-fold-subagents-into-skills]
 created: 2026-09-14
-updated: 2026-10-03
+updated: 2026-10-29
 ---
 
 # Cognition
@@ -52,3 +52,7 @@ updated: 2026-10-03
 [[laurie-voss|Laurie Voss]] 진술(2차 인용): Cognition(*"the makers of Devon[=Devin]"*)이 관리자의 실제 질문 *"would you merge this?"* 를 중심으로 **FrontierCode**를 만들어 6월에 냈다(07:50~08:00). 관리자 20명+, 자기 저장소에서 과제 150개, 과제당 전문가 40시간+. 채점 항목은 동작 정확성·회귀·안전·범위 규율·테스트 품질·유지보수성 — *"a human review rubric uh made machine checkable"*(08:08~08:16). [[fable-5-1|Fable 5]] SWE-bench Pro 88% vs 최난도 구간 29%, GPT 5.5 6% 미만(08:20~08:48). → [[mergeability-gap]]
 
 ⚠️ en-orig는 같은 벤치마크를 *"Frontier Code"*(07:58)와 *"Frontierbench"*(08:08)로 부른다. 챕터는 *"FrontierCode"*. 벤치마크 문서는 확인하지 않았다.
+
+## Flappy Bird — 서로 맞지 않는 두 서브에이전트 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
+
+영어 해설자의 인용(2차 진술, 원문 링크 없음): Cognition의 예에서 한 서브에이전트는 *"a flappy bird background that looks a lot like Super Mario"* 를, 다른 서브에이전트는 *"a bird that did not match the background whatsoever"* 를 만들었다(04:35~04:45). 서로 의존하는 단계는 메인 에이전트에 두라는 근거로 쓰인다 → [[subagent-folding]].

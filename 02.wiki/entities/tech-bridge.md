@@ -150,7 +150,7 @@ sources:
   - tech-bridge-parakhin-shopify-ai-cost-barbell
   - tech-bridge-tlc-ai-job-anxiety
 created: 2026-06-03
-updated: 2026-10-28
+updated: 2026-10-29
 ---
 
 # Tech Bridge
@@ -1458,3 +1458,17 @@ updated: 2026-10-28
 - ⚠️ *worry postponement* 등 심리학 주장은 출처가 없다. *"which camp"* 의 진영 구분은 편집에서 빠졌다.
 
 **멤버 전용**: `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*, 7:31, 목록 `upload_date` 20261027) 신규 — 목록 줄로 나옴. `Yhck-x6VuLs`는 단건 조회로 지속 확인.
+
+## 2026-10-28 업로드 — 서브에이전트 접기 해설 · Amodei 7월 인터뷰 (2026-10-29 ingest)
+
+[[tech-bridge-anthropic-fold-subagents-into-skills|Anthropic이 서브에이전트를 줄이라는 이유: 합칠 때와 남길 때]](`kJGTHFZHLVg`, 6:55, 공식 챕터 9) — 영어 해설자(이름 미상) 발췌 + 한국어 해설 ([[subagent-folding]](신규) · [[harness-pruning]] · [[subagent-vs-thread-handoff]] · [[agent-skills]] · [[prompt-caching]] · [[cognition]] · [[grokbot]] · [[anthropic]])
+
+- 오디오는 `Korean original` + `English (US)`인데 **`ko-orig`가 없고** ko는 `tlang=ko` 번역이다(10-28 TLC 편과 같은 패턴). `en` = `en-orig`(md5 동일). 인용은 en-orig로만 했다. 한국어 해설로 추정되는 무캡션 8구간이 공식 챕터 경계와 겹친다.
+- ⚠️ **"소개의 소개"**: Anthropic 권고를 영어 해설자가 정리했고, 그것을 Tech Bridge가 다시 해설했다. 수치(2배 · 90% · 54%)의 원 출처를 확인하지 않았다. 판정 기준 문장(03:14~03:23)은 편집으로 잘렸다.
+
+[[tech-bridge-dario-amodei-principles-oversight|다리오 아모데이의 AI 경고: 인간을 넘어설 AI, 통제할 수 있을까?]](`jvc8_czisas`, 9:41, 공식 챕터 11) — [[dario-amodei]] 2026년 7월 인터뷰 발췌 + 해설 ([[sycophancy]] · [[reward-hacking]] · [[joint-democratic-oversight]] · [[intelligence-abundance]])
+
+- `ko`·`ko-orig` md5 동일(원 ASR)이고, en-orig는 영어 트랙(내레이션은 더빙, 발췌는 원음)이다. 10-26 Musk 편과 같은 구성이다.
+- ⚠️ 매체 · 진행자 · 원본 링크가 없다. 해설이 첫 발췌의 화자를 **"다니엘라"** 라고 불러 미확정으로 남겼다. *누가 결정하나* 에 대한 답(07:24~07:50)은 무캡션이라 해설 요약만 있다.
+
+**멤버 전용**: `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*) 지속 — 이번엔 stderr ERROR로만 나왔다(20편 요청 → 19줄 + ERROR 1). `Yhck-x6VuLs`는 단건 조회로 지속 확인(`subscriber_only` 줄).
