@@ -1157,5 +1157,9 @@
   "02.wiki/sources/tech-bridge-tlc-ai-job-anxiety.md": "LiVideo",
   "02.wiki/concepts/subagent-folding.md": "LiMerge",
   "02.wiki/sources/tech-bridge-anthropic-fold-subagents-into-skills.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-dario-amodei-principles-oversight.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-dario-amodei-principles-oversight.md": "LiVideo",
+  "02.wiki/entities/harrison-chase.md": "LiUser",
+  "02.wiki/entities/openai-terra.md": "LiBot",
+  "02.wiki/sources/tech-bridge-harrison-chase-agent-improvement-loop.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-gpt-6-1-terra-first-look.md": "LiVideo"
 }

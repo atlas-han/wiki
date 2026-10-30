@@ -6,9 +6,9 @@ tags: [agent-memory, observability, traces, read-write-cycle, filter, procedural
 aliases: [trace to memory, 트레이스를 메모리로, capture-analyze-update, read-write cycle, 읽기·쓰기 순환, 관찰과 학습]
 related: [agent-memory, agent-dreaming, skill-self-improvement, production-trace-eval-flywheel, agent-action-record, no-silent-write, continual-learning, context-engineering, agent-distributed-systems, langsmith, eval-platform-maturity-stages]
 first-seen: tech-bridge-langchain-learning-agent-memory
-sources: [tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-langchain-learning-agent-memory, tech-bridge-harrison-chase-agent-improvement-loop]
 created: 2026-10-12
-updated: 2026-10-12
+updated: 2026-10-30
 ---
 
 # 트레이스 → 메모리 순환
@@ -63,3 +63,7 @@ updated: 2026-10-12
 
 - [[tech-bridge-langchain-learning-agent-memory]] — first-seen
 - [[agent-memory]] · [[agent-dreaming]] · [[skill-self-improvement]] · [[production-trace-eval-flywheel]] · [[agent-action-record]] · [[langsmith]] · [[jake-broekhuizen]]
+
+## 사람 검토의 기준선이 다르다 — 메모리 종류 vs 전파 범위 (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
+
+같은 [[langchain|LangChain]]의 [[harrison-chase]](추정)는 사람 검토를 **하네스(코드 · 핵심 지시) 변경**에 두고 이유를 *"will usually propagate to all users"*(02:02~02:05)라는 **전파 범위**로 든다. 컨텍스트(텍스트)는 *"the easiest update"* 이고 사용자 · 조직 단위로 쌓을 수 있다고 하며 사람 게이트를 말하지 않는다. 이 페이지의 첫 소스는 게이트를 **procedural 메모리**(지시 · 규칙)에 그었다 — 핵심 지시를 하네스로 보느냐 컨텍스트로 보느냐에 따라 두 기준은 겹치기도, 갈리기도 한다. 트레이스 요건은 *"the exact inputs, the exact outputs and the exact sequence of events"*(03:25~03:28).

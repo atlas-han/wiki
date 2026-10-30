@@ -7,9 +7,9 @@ aliases: [LangChain, 랭체인, LangChainAI]
 links:
   - https://www.langchain.com/
   - https://www.langchain.com/langsmith
-sources: [tech-bridge-jev-agent-harness, tech-bridge-uber-debug-assist, tech-bridge-goodbye-slop-state-machines, tech-bridge-human-is-async-api, tech-bridge-langchain-learning-agent-memory]
+sources: [tech-bridge-jev-agent-harness, tech-bridge-uber-debug-assist, tech-bridge-goodbye-slop-state-machines, tech-bridge-human-is-async-api, tech-bridge-langchain-learning-agent-memory, tech-bridge-harrison-chase-agent-improvement-loop]
 created: 2026-09-26
-updated: 2026-10-12
+updated: 2026-10-30
 ---
 
 # LangChain
@@ -57,3 +57,7 @@ LangChain 편의 프레이밍은 **하네스 = 루프 + 루프 안의 결정 지
 ## LangChain Labs — 에이전트 메모리 (2026-10-12 · [[tech-bridge-langchain-learning-agent-memory]])
 
 **LangChain 사람이 직접 말하는 두 번째 소스**(첫째는 [[tech-bridge-jev-agent-harness]]의 오픈 소스 PM). 설명란 기준 LangChain Labs 리드 [[jake-broekhuizen|Jake Broekhuizen]] — 발화로는 *"the lab team at Langchain"*(00:28~00:30). Labs 팀이 금융 서비스 고객의 지출·예산·비투자 조언 에이전트와 일한 사례(말투가 조언형 → 지시형으로 미끄러짐)를 들고, 관찰 ≠ 학습 → [[trace-to-memory-loop]]을 정리한 뒤 [[langsmith|LangSmith]] + Context Hub 구현을 소개한다(10:13~12:28). ⚠️ 벤더 발표, 고객사 이름·효과 수치 없음. 설명란에 *introducing-langchain-labs* 블로그 링크(열어 보지 않음).
+
+## 세 층의 개선 루프 — Harrison Chase(추정) (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
+
+**LangChain 사람이 직접 말하는 세 번째 소스.** 화자는 태그 기준 [[harrison-chase|Harrison Chase]](발화 · 제목 · 설명란엔 이름 없음). 에이전트를 *모델 + 하네스 + 컨텍스트* 로 나누고, 층마다 다른 개선 방법(SFT · 코드/프롬프트/도구 · 텍스트) 밑에 공통 토대로 **트레이스와 eval**을 둔다 — *"it's where we spend a lot of time"*(03:02~03:04). 하네스 예시로 *"deep agents"*(00:10)를 든다. 제품 시연 · 고객 · 수치는 없다. ⚠️ 벤더가 파는 층을 토대라고 말하는 구도.

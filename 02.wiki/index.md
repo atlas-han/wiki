@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-29
+updated: 2026-10-30
 ---
 
 # Index
@@ -63,6 +63,7 @@ updated: 2026-10-29
 - [[martin-keen]] — [[ibm|IBM Technology]] 해설자. 컨텍스트의 네 가지 실패 유형과 처방 ([[tech-bridge-context-engineering-four-failure-modes]]) ⚠️ 이름은 설명란 본문에만
 - [[corey-gallon]] — 세 단계 에이전트 검토법(산출물 계약 · 원문 대조 이중 작업 · 맥락 없는 persona 적대적 검토)을 agent skill로 오픈소스 공개 ([[tech-bridge-three-level-agent-review]]) ⚠️ 이름은 설명란 링크 라벨에서만(gallon.me 발화로 보강, *추정*)
 - [[jake-broekhuizen]] — [[langchain|LangChain]] Labs 리드(설명란 — 발화엔 자기소개 없음). 관찰 ≠ 학습, semantic·episodic·procedural 메모리, 트레이스 → 메모리 순환 ([[tech-bridge-langchain-learning-agent-memory]]) ⚠️ 당사자
+- [[harrison-chase]] — [[langchain|LangChain]] 쪽 화자(이름은 태그 근거 — 발화 · 제목 · 설명란엔 없음). 에이전트 = 모델 + 하네스 + 컨텍스트, 공통 토대 트레이스 · eval, *"evals are the new PRD"*, *"We don't have a universal judge for correctness"* ([[tech-bridge-harrison-chase-agent-improvement-loop]]) ⚠️ 신원 추정
 - [[dor-sasson]] — [[stigg|Stigg]] co-founder & CEO(이름은 설명란에만). "모든 AI 기업이 어쩌다 보니 은행을 짓고 있다" — 청구 뒤 검사 → 추론 전 동기 승인, reserve → settle ([[tech-bridge-stigg-ai-companies-building-banks]]) ⚠️ 벤더
 - [[hossein-niazmandi]] — [[braintrust|Braintrust]] 화자(이름은 설명란에만 — 자막엔 자기소개 없음, 직함 미상). eval 도구 성숙 4단계와 eval 플랫폼 = systems problem, 사람은 배포 버전을 결정 ([[tech-bridge-braintrust-eval-platform-systems-problem]]) ⚠️ 벤더
 - [[charlie-guo]] — [[openai|OpenAI]] developer experience 팀(성은 제목·설명란에만). Codex 워크숍: goal = 검증 가능한 기준, [[subagent-vs-thread-handoff]], 마무리 사다리 → software factory ([[tech-bridge-cooking-with-codex]])
@@ -269,6 +270,7 @@ updated: 2026-10-29
 - [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
 - [[fable-5-1]] — Claude 계열 프론티어 모델. **같은 날 세 소스가 좌표로 쓴다** — 맨몸 30분(Pstack 비교) · Artificial Analysis 상위(진행자 진술) · *"Fable 급 도구"* ⚠️ **1차 자료 없음·스펙 전무**
 - [[openai-astra]] — [[openai|OpenAI]] 차세대 **모델 등급명**("더 비싸고 큰 모델 등급", Soul과 같은 방식). 컴퓨터 사용 "인간 수준" 체감 ([[tech-bridge-altman-astra-hardware]], ⚠️ 스펙 없음)
+- [[openai-terra]] — [[openai|OpenAI]] **GPT 6.1 Terra**. 리뷰어(미상) 체감: 매우 빠름 · 입력 $1 / 출력 $5 per 1M(화자 정정) · 컴퓨터 사용 괜찮음 · **쉽게 포기한다**(로봇 팔 · Blender), 비교 기준은 GPT-6 Astra ([[tech-bridge-gpt-6-1-terra-first-look]]) ⚠️ 1인 체감 · 발화엔 "GPT-6.1 Turbo"(ASR 가능성)
 
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 
@@ -955,12 +957,14 @@ updated: 2026-10-29
 - [[tech-bridge-tlc-ai-job-anxiety]] — 화자 미상 1인칭 발표(6:14, 챕터 11, 2026-10-27 업로드): AI 때문에 불안한가요 — 안개 속 작은 배, 가정과 사실, 걱정의 창(worry postponement), **TLC(Trust · Learn · Contact)** 로 내 직무 채점, 하루 과제 하나, 내 신발 한 켤레 → [[ai-jobs-impact]] · [[verifiable-goals]] ⚠️ 화자 · 원본 미상 · 한국어 원 ASR 없음(en-orig 원음/더빙 미확정) · 심리학 주장 출처 없음
 - [[tech-bridge-anthropic-fold-subagents-into-skills]] — 영어 해설자(이름 미상) 발췌 + 한국어 해설(무캡션)(6:55, 챕터 9, 2026-10-28 업로드): [[anthropic|Anthropic]]이 서브에이전트를 줄이라는 이유 — *one agent with a set of skills* · 조직도 복제(Conway's law) · Franken-prompt · progressive disclosure · [[subagent-folding|접는 절차]] · 남길 세 경우 · Cognition Flappy Bird · 스킬의 busy work · [[prompt-caching|캐시]] 때문에 안 내려간 비용 ⚠️ 2차 진술 · 원 출처 링크 없음
 - [[tech-bridge-dario-amodei-principles-oversight]] — [[dario-amodei|Dario Amodei]] 2026년 7월 인터뷰(매체 미상) 발췌 + 해설(9:41, 챕터 11, 2026-10-28 업로드): GPT-2의 두려움 · good faith 이견 · **규칙 대신 원칙** · 승인과 진실의 어긋남([[sycophancy]] · [[reward-hacking]]) · 종료 회피 선호 · 신뢰할 수 있어도 남는 자율무기의 감독 · 책임([[joint-democratic-oversight]]) · 단일하지 않은 미래 ⚠️ 해설의 "다니엘라" 지칭 미확정 · *누가 결정하나* 답 무캡션
+- [[tech-bridge-harrison-chase-agent-improvement-loop]] — [[harrison-chase|Harrison Chase]](추정, [[langchain|LangChain]]) 발표 발췌(7:08, 챕터 7, 내레이션 없음 · 영어 원본 오디오만, 2026-10-29 업로드): AI 에이전트는 어떻게 쓸수록 나아질까 — [[model-harness-knowledge-stack|모델 · 하네스 · 컨텍스트]] 층별 개선(SFT · 코드/프롬프트/도구 + 사람 검토 · 사용자/조직 단위 메모리), 공통 토대 트레이스 · eval, *"the new PRD"*, 판정 대상 셋(최종 답 · 환경 최종 상태 · 도구 호출 순서), 만능 판정기 부재, North Star 자기 개선 루프 → [[production-trace-eval-flywheel]] ⚠️ 신원 태그 근거 · 모델 층 소개 잘림 · 사례 · 수치 없음
+- [[tech-bridge-gpt-6-1-terra-first-look]] — 리뷰어 미상 1인칭 첫인상 리뷰 발췌(5:55, 챕터 7, 내레이션 없음 · 영어 원본 오디오만, 2026-10-29 업로드): [[openai-terra|GPT 6.1 Terra]] — C++ 스케이트 게임 2:35 · 7:41(조작 반전 → 수정), Claude는 디테일을 더 판다는 체감, 로봇 팔에서 *"therapy session"* 끝에 포기(GPT-6 [[openai-astra|Astra]]는 완수), Blender에서 *"Done"*, *"it gives up very easily"*, $1/$5 가격과 속도 → [[inference-speed-as-capability]] ⚠️ 리뷰어 · 원본 미상 · Terra/Turbo 이름 불일치 · 가격 미확인
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 921 (918 → 921, + 2026-10-29 Tech Bridge 2편(10-28 업로드 — Anthropic 서브에이전트 접기 해설 · Amodei 7월 인터뷰): source 2 · concept 1(subagent-folding) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 921과 일치)
+- 총 페이지 수: 925 (921 → 925, + 2026-10-30 Tech Bridge 2편(10-29 업로드 — Harrison Chase(추정) 에이전트 개선 루프 · GPT 6.1 Terra 첫인상 리뷰): source 2 · entity 2(harrison-chase · openai-terra) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 925와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-29 (Tech Bridge **2편** — 10-28 업로드 [[tech-bridge-anthropic-fold-subagents-into-skills|Anthropic이 서브에이전트를 줄이라는 이유]](`kJGTHFZHLVg`) · [[tech-bridge-dario-amodei-principles-oversight|다리오 아모데이의 AI 경고]](`jvc8_czisas`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-10-28 (Tech Bridge **2편** — 10-27 업로드 [[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]](`wDTO-nR4yTM`) · [[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요? 내 일을 점검하는 3가지 질문]](`inT5ombZ9HE`). 멤버 전용: `FTZak3J9YbM`(신규) · `Yhck-x6VuLs`(지속))
+- 마지막 ingest: 2026-10-30 (Tech Bridge **2편** — 10-29 업로드 [[tech-bridge-harrison-chase-agent-improvement-loop|AI 에이전트는 어떻게 쓸수록 나아질까?]](`wGnQt2RhWfc`) · [[tech-bridge-gpt-6-1-terra-first-look|GPT 6.1 Terra, 빠르고 싼데 왜 평가는 갈릴까?]](`ht_Wp2oFp5E`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-10-29 (Tech Bridge **2편** — 10-28 업로드 [[tech-bridge-anthropic-fold-subagents-into-skills|Anthropic이 서브에이전트를 줄이라는 이유]](`kJGTHFZHLVg`) · [[tech-bridge-dario-amodei-principles-oversight|다리오 아모데이의 AI 경고]](`jvc8_czisas`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)

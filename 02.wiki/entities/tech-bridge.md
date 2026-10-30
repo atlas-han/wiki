@@ -149,8 +149,10 @@ sources:
   - tech-bridge-musk-abundance-work-control
   - tech-bridge-parakhin-shopify-ai-cost-barbell
   - tech-bridge-tlc-ai-job-anxiety
+  - tech-bridge-harrison-chase-agent-improvement-loop
+  - tech-bridge-gpt-6-1-terra-first-look
 created: 2026-06-03
-updated: 2026-10-29
+updated: 2026-10-30
 ---
 
 # Tech Bridge
@@ -1472,3 +1474,17 @@ updated: 2026-10-29
 - ⚠️ 매체 · 진행자 · 원본 링크가 없다. 해설이 첫 발췌의 화자를 **"다니엘라"** 라고 불러 미확정으로 남겼다. *누가 결정하나* 에 대한 답(07:24~07:50)은 무캡션이라 해설 요약만 있다.
 
 **멤버 전용**: `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*) 지속 — 이번엔 stderr ERROR로만 나왔다(20편 요청 → 19줄 + ERROR 1). `Yhck-x6VuLs`는 단건 조회로 지속 확인(`subscriber_only` 줄).
+
+## 2026-10-29 업로드 — Harrison Chase(추정) 에이전트 개선 루프 · GPT 6.1 Terra 첫인상 (2026-10-30 ingest)
+
+[[tech-bridge-harrison-chase-agent-improvement-loop|AI 에이전트는 어떻게 쓸수록 나아질까? | 모델·하네스·컨텍스트]](`wGnQt2RhWfc`, 7:08, 공식 챕터 7) — [[harrison-chase]](태그 근거) 발표 발췌, 내레이션 없음 ([[model-harness-knowledge-stack]] · [[production-trace-eval-flywheel]] · [[trace-to-memory-loop]] · [[continual-learning]] · [[skill-self-improvement]] · [[langchain]])
+
+- 10-27 Voss · 10-28 Parakhin 편과 같은 **영어 원본 오디오만** 있는 구성이다(`ko-orig` 없음, ko `tlang=ko`). 인용은 en-orig로만 했다. 무캡션 6구간이 챕터 경계와 겹친다.
+- ⚠️ 이름 · 소속은 info.json 태그에만 있다. 첫 층(모델)의 소개가 편집으로 잘렸다. 사례 · 수치가 없다.
+
+[[tech-bridge-gpt-6-1-terra-first-look|GPT 6.1 Terra, 빠르고 싼데 왜 평가는 갈릴까?]](`ht_Wp2oFp5E`, 5:55, 공식 챕터 7) — 리뷰어 미상 1인칭 첫인상 리뷰 발췌, 내레이션 없음 ([[openai-terra]](신규) · [[openai-astra]] · [[openai]] · [[inference-speed-as-capability]])
+
+- 같은 영어 원본 오디오만 있는 구성이다. **채널 첫 모델 출시 당일 리뷰** 형식이다.
+- ⚠️ 리뷰어 · 원본 링크가 없다. 발화의 모델명은 *"GPT-6.1 Turbo"* 한 번뿐이다(Terra의 ASR 오인식 가능성, 미확정). 가격($1/$5)은 화자가 스스로 정정한 숫자다.
+
+**멤버 전용**: `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*) 지속 — stderr ERROR로만 나왔다(20편 요청 → 19줄 + ERROR 1). `Yhck-x6VuLs`는 단건 조회로 지속 확인(`subscriber_only` 줄).

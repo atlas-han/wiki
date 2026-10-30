@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-10-29
+updated: 2026-10-30
 sources: []
 ---
 
@@ -280,6 +280,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-10-27*: [[tech-bridge]] **2편** ingest(10-26 업로드). [[tech-bridge-laurie-voss-product-engineer|AI가 코딩하는데, 당신을 왜 뽑죠?]] — [[laurie-voss|Laurie Voss]]의 두 번째 강연(내레이션 없는 발췌). [[verification-bottleneck]]을 **경유지**로 본다: 병목은 리뷰 → 운영 → 보안으로 옮겨 가다 **문제 정의**에 머문다는 베팅, 그 직무를 product engineer로 부르고 주니어 훈련 경로의 공백을 짚는다. [[tech-bridge-musk-abundance-work-control|돈과 일이 사라지면, 인간은 뭘 할까?]] — [[elon-musk|Musk]]의 풍요 · 일 · 통제 전망을 해설이 단계마다 깎는다(*"거친 추정"*, *"생산과 누구나 누리는 건 다른 문제"*, *"좋은 성향이 곧 안전은 아니"*) → [[intelligence-abundance]] · [[balance-of-power-safety]].
 - *2026-10-28*: [[tech-bridge]] **2편** ingest(10-27 업로드). [[tech-bridge-parakhin-shopify-ai-cost-barbell|Shopify CTO가 말하는 AI 비용, 아낄 곳과 쓸 곳]]([[mikhail-parakhin|Parakhin]] 발췌, 내레이션 없음) — 위키의 토큰 비용 논의를 반대쪽 끝에서 본다. **개발에서는 제한하지 말고 가장 큰 모델**(반사실을 모르니까), **절감은 운영에서**(파인튜닝한 싼 모델) — [[model-mixing-economics]]에 *개발 / 운영* 바벨 축이 붙고, [[token-minimization-trap]]의 공백(*최신 모델 제한*)에 당사자 답이 생긴다. 회사를 행동 시퀀스로 보는 [[company-digital-twin]]과, 빌드가 싸질수록 커지는 [[sycophancy|아첨]]의 비용. [[tech-bridge-tlc-ai-job-anxiety|AI 때문에 불안한가요?]](화자 미상) — [[ai-jobs-impact]]에 처음으로 **개인이 자기 직무를 채점하는 도구**(TLC: Trust · Learn · Contact)가 들어온다. L은 [[verifiable-goals]]를 노출도 지표로 뒤집어 쓴다.
 - *2026-10-29*: [[tech-bridge]] **2편** ingest(10-28 업로드). [[tech-bridge-anthropic-fold-subagents-into-skills|Anthropic이 서브에이전트를 줄이라는 이유]] — 위키가 서브에이전트를 **쓰는 이유**(컨텍스트 격리 · 병렬 탐색)로 모아 온 것을 반대편에서 본다. **접는 절차**(기준선 → 스킬로 접기 → 재측정)가 [[harness-pruning]]에 비어 있던 *지워도 되는지의 판단 절차* 를 채운다 → [[subagent-folding]](신규). ⚠️ 영어 해설자를 거친 2차 진술. [[tech-bridge-dario-amodei-principles-oversight|다리오 아모데이의 AI 경고]] — [[dario-amodei|Amodei]]의 두 번째 1인칭 소스. 정책이 아니라 **모델 안쪽**(규칙 대신 원칙, 승인 유인 ≠ 진실 유인, 종료 회피)과 **책임**(신뢰할 수 있어도 AI 병사는 명령을 거부하지 않는다)을 다룬다.
+- *2026-10-30*: [[tech-bridge]] **2편** ingest(10-29 업로드). [[tech-bridge-harrison-chase-agent-improvement-loop|AI 에이전트는 어떻게 쓸수록 나아질까?]] — [[harrison-chase|Harrison Chase]](추정)가 [[model-harness-knowledge-stack]]의 3분할을 **개선 대상**으로 다시 쓴다: 모델(SFT) · 하네스(코드, 전파 범위 때문에 사람 검토) · 컨텍스트(사용자 · 조직 단위 메모리). 토대는 트레이스와 eval이고, 판정 대상에 **환경 최종 상태 · 도구 호출 순서**가 붙으며, *만능 정답 판정기는 없다* 는 인정이 [[production-trace-eval-flywheel]]의 한계로 들어온다. LangChain 안에서 사람 게이트의 기준(메모리 종류 vs 전파 범위)이 갈린다 → [[trace-to-memory-loop]]. [[tech-bridge-gpt-6-1-terra-first-look|GPT 6.1 Terra 첫인상]] — 위키 첫 모델 출시 당일 1인 리뷰. **빠르고 싸지만 쉽게 포기한다** — [[inference-speed-as-capability]]에 *속도 축과 완수 축은 따로 움직인다* 는 반례가 붙고, [[openai-astra]]에 처음으로 *GPT-6* 번호가 붙는다(제3자 발화).
 
 ---
 

@@ -6,9 +6,9 @@ tags: [agent-stack, model-selection, harness, skills, cost, loops, gemini, antig
 aliases: [3계층 에이전트 스택, 더 똑똑한 모델이 아니라 더 나은 스택, 모델·하네스·지식]
 related: [harness-engineering, model-mixing-economics, agent-skills, antigravity, google-skills, generator-evaluator-pattern, orchestrator-searcher-split, voice-latency-thinking-tradeoff, three-tier-ai-skill-stack]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-harrison-chase-agent-improvement-loop]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-30
 ---
 
 # 모델 · 하네스 · 지식
@@ -61,3 +61,7 @@ updated: 2026-09-23
 - [[tech-bridge-lopopolo-agent-harness]]
 - 제품: [[antigravity]] · [[google-skills]] · [[google-cloud]]
 - 관련: [[model-mixing-economics]] · [[voice-latency-thinking-tradeoff]] · [[agent-skills]] · [[harness-engineering]] · [[generator-evaluator-pattern]] · [[orchestrator-searcher-split]] · [[tools-and-context-over-harness]]
+
+## 두 번째 소스 — 같은 3분할, *고를 것* 이 아니라 *고칠 것* (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
+
+[[langchain|LangChain]] 쪽 화자([[harrison-chase]] 추정)가 같은 그림을 다른 목적으로 쓴다: *"It's got the model, you wrap it in a harness, and you connect it to context."*(01:01~01:04). 세 번째 층을 *지식* 대신 **컨텍스트**(*"mostly (…) text and other sources of knowledge"*)라 부르고, 층마다 **개선 방법과 비용**이 다르다고 본다 — 모델은 SFT(잘된 트레이스만 골라 학습), 하네스는 코드 · 프롬프트 · 도구(전 사용자에 전파되므로 사람 검토), 컨텍스트는 텍스트라 *"the easiest update"* 이고 사용자 · 조직 단위로 쪼갤 수 있다(02:12~02:30). 이 페이지의 첫 소스가 **스택 선택**의 틀이었다면 두 번째는 **개선 대상**의 틀이다.

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production, tech-bridge-harrison-chase-agent-improvement-loop]
 created: 2026-09-05
-updated: 2026-10-26
+updated: 2026-10-30
 ---
 
 # Skill Self-Improvement
@@ -176,3 +176,7 @@ updated: 2026-10-26
 ## 주간 작업 과정 점검 — 조회수 대신 새는 시간 (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
 
 코딩이 아니라 영상 제작 사례다. 해설: *"이번 주에 어디서 오래 걸렸는지, 매번 같은 수정을 한 곳은 어디인지 물어보는 거예요."*(06:40~06:46) 강연에서 찾은 문제는 *"보지 않는 곳으로 알림이 가거나 필요가 없어진 검사를 계속하던"* 것이었다. 원음([[cova-lee|Cova Lee]] 추정): *"we don't have a lot of time to kind of look back and go through all of our processes and understand inefficiencies."*(07:18~07:25) 전날 [[tech-bridge-pocock-skills-implement-spec-pr-retro|/retro]]가 *매 작업 뒤* 라면 이쪽은 **주 단위**다. 앞 절의 빈도 경고와 맞닿는다. 해설의 맺음은 *"결과를 고친 이유까지 남겨 두는"* 것이다(08:51~08:54).
+
+## North Star로 남겨 둔 판본 — 에이전트가 eval 포인트를 스스로 만든다 (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
+
+[[harrison-chase]](추정)는 *"the agent like notices that it made a mistake. The agent goes, creates an eval data point of its own, suggests its own changes"*(06:37~06:43)를 컨텍스트 · 하네스 코드 · 모델 가중치 모두에 대해 그리지만 *"very much a North Star vision"*(06:52~06:54)이라 못 박는다. 막는 것은 만능 정답 판정기의 부재다 → [[production-trace-eval-flywheel]].

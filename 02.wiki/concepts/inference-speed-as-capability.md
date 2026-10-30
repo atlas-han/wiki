@@ -6,9 +6,9 @@ tags: [inference-speed, latency, pricing, democratization, feedback-loop, openai
 aliases: [speed democratization, 속도의 민주화, ultra fast, price of IQ, 지능의 가격과 속도의 가격]
 related: [intelligence-abundance, compute-constrained-growth, system-1-model, search-latency-tiers, voice-latency-thinking-tradeoff, model-mixing-economics, agentic-sites, speculative-decoding, open-model-customization-loop]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-fireworks-train-to-deploy-open-models]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-gpt-6-1-terra-first-look]
 created: 2026-10-09
-updated: 2026-10-18
+updated: 2026-10-30
 ---
 
 # 추론 속도라는 두 번째 축
@@ -61,3 +61,7 @@ Altman이 속도를 모델 공급자의 축으로 말했다면, [[fireworks-ai|F
 - [[tech-bridge-altman-devday-dots]] — first-seen
 - [[sam-altman]] · [[openai]] · [[openai-astra]]
 - 관련: [[intelligence-abundance]] · [[compute-constrained-growth]] · [[search-latency-tiers]] · [[voice-latency-thinking-tradeoff]] · [[system-1-model]] · [[model-mixing-economics]] · [[agentic-sites]]
+
+## 사용자 쪽에서 본 속도 — 빠르고 싸지만 끝까지 안 간다 (2026-10-30 · [[tech-bridge-gpt-6-1-terra-first-look]])
+
+[[openai-terra|GPT 6.1 Terra]] 리뷰어(미상)는 평가를 속도로 연다: C++ 게임을 2분 35초에(*"I really want to drive home the point that this thing is insanely fast"* 00:46~00:48), 그리고 가격 · 속도 · 컴퓨터 사용의 조합으로 닫는다(04:50~05:04). 그러나 같은 리뷰가 *"it gives up very easily"*(04:19~04:22)를 패턴으로 짚는다 → **속도 축과 과제 완수(끈기) 축은 따로 움직일 수 있다.** 리뷰어 스스로 호감의 근거를 *"not because it's making insane-looking high-quality code results"*(05:07~05:11)라고 구분한다. ⚠️ 1인 체감 · 1회 실행.

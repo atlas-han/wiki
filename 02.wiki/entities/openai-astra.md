@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look]
 links: []
 created: 2026-09-06
-updated: 2026-10-18
+updated: 2026-10-30
 ---
 
 # Astra (OpenAI)
@@ -149,3 +149,7 @@ updated: 2026-10-18
 ## 제3자 에이전트의 런타임 모델로 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 [[southbridge|Southbridge]]의 에이전트가 *"running on Astra and then later on Opus"*(12:49~12:53) 10일 동안 파이프라인 아키텍처를 스스로 시도했다고 한다. Astra를 **장기 실행 hill climber의 두뇌**로 쓴 첫 사용자 언급이다. 왜 Opus로 바꿨는지는 발화되지 않는다. ⚠️ 자기 보고, 에이전트 이름 *"4A"* 미판독.
+
+## "GPT-6 Astra" — 제3자 리뷰어의 비교 기준 (2026-10-30 · [[tech-bridge-gpt-6-1-terra-first-look]])
+
+이름 없는 리뷰어가 [[openai-terra|GPT 6.1 Terra]]를 평가하며 두 번 Astra를 기준으로 쓴다. 로봇 팔 테스트에서 Terra는 일찍 멈췄지만 *"GPT-6 Astra did complete this task in one of the more impressive ways that I've seen period"*(03:08~03:15) — 이 위키에서 Astra에 **'GPT-6' 번호가 붙은 첫 발화**다. 스케이트 게임 결과물에서는 *"heavy heavy flavor of distilled Astra or Soul (…) probably Astra"*(01:22~01:30) — ⚠️ 인상이지 증류 사실이 아니다. *Soul* 은 여기서도 Astra와 나란한 등급명으로만 나온다.

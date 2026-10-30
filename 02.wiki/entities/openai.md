@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-10-26
+updated: 2026-10-30
 ---
 
 # OpenAI
@@ -223,3 +223,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## 소속 인물 — Cova Lee (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
 
 설명란: *"OpenAI의 Cova Lee"* → [[cova-lee]]. 영상 제작 강연에서 썸네일 시뮬레이터 · 스타일 시스템 · computer use 사운드패드 · 주간 점검을 소개했다(발췌 추정). 태그에 Codex가 있지만 발화로 확정되는 구간은 없다.
+
+## GPT 6.1 Terra — 출시 당일 제3자 리뷰 (2026-10-30 · [[tech-bridge-gpt-6-1-terra-first-look]])
+
+위키 첫 **OpenAI 모델 출시 당일 리뷰**(리뷰어 미상, 1인 체감). [[openai-terra|GPT 6.1 Terra]]는 *"extremely extremely fast"* 하고 입력 $1 / 출력 $5 per 1M(화자 정정, 미확인)이지만 *"it gives up very easily"* — 비교 기준은 [[openai-astra|GPT-6 Astra]]. 리뷰어는 *"Some of their releases lately have been like, 'Oh, okay, like no thanks.'"*(05:35~05:37)라며 이번엔 아니라고 한다.

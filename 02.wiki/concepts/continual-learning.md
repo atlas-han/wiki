@@ -5,9 +5,9 @@ category: theory
 tags: [learning, memory, catastrophic-forgetting, bayesian, agi]
 related: [bayesian-inference, context-resets-and-compaction, in-context-learning, memex, skill-self-improvement, agent-dreaming, trace-to-memory-loop, open-model-customization-loop]
 first-seen: tech-bridge-uncertainty-mathematics
-sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-langchain-learning-agent-memory, tech-bridge-fireworks-train-to-deploy-open-models]
+sources: [tech-bridge-uncertainty-mathematics, tech-bridge-cursor-legacy-refactoring, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-langchain-learning-agent-memory, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-harrison-chase-agent-improvement-loop]
 created: 2026-09-05
-updated: 2026-10-18
+updated: 2026-10-30
 ---
 
 # Continual Learning
@@ -114,3 +114,7 @@ Ghahramani가 continual learning과 나란히 놓는 것이 둘 더 있다.
 ## 가중치 층의 운영 판본 — 체크포인트 재학습과 hot loading (2026-10-18 · [[tech-bridge-fireworks-train-to-deploy-open-models]])
 
 위 "세 층"에서 Oracle·Anthropic·LangChain이 모두 컨텍스트 층을 말한 것과 달리, [[fireworks-ai|Fireworks AI]]는 **가중치 층**을 판다. *"most people prefer doing a continuous loop where they train, host, train, host as they get new and new data and feedback from their users"*(11:08~11:15). 새 체크포인트는 hot loading으로 무중단 교체한다(12:48~13:06). Ghahramani가 말한 "거대 모델을 몇 달마다 다시 학습"과 "끊임없는 갱신" 사이의 실무 근사다. ⚠️ 연속 갱신이 아니라 체크포인트 단위이고, catastrophic forgetting이나 재학습 회귀는 다루지 않는다. 벤더 발표다 → [[open-model-customization-loop]]
+
+## LangChain의 두 번째 목소리 — 가운데 층은 하네스 코드 (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
+
+위 "세 층(가중치 · 표현 · 컨텍스트)"과 달리 [[harrison-chase]](추정)는 개선 대상을 **모델 가중치 · 하네스 코드 · 컨텍스트**로 나눈다(06:26~06:30). 가중치는 SFT(잘된 트레이스만 걸러 학습, 01:13~01:27), 하네스는 사람이 검토하는 코드 변경, 컨텍스트는 *"user or org level"* 메모리(02:23~02:30). 같은 회사 Labs 편([[tech-bridge-langchain-learning-agent-memory]])이 컨텍스트 층만 팠다면 이 편은 세 층을 나란히 놓는다. *무엇을 기억할지* 는 *"very domain specific"*(03:10~03:17)이라 도구로 풀지 못한다는 인정이 붙는다.

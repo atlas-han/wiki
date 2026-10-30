@@ -6,9 +6,9 @@ tags: [evals, production-traces, regression-tasks, hill-climbing, observability,
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
 related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop, open-model-customization-loop]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop]
 created: 2026-09-30
-updated: 2026-10-18
+updated: 2026-10-30
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -92,3 +92,12 @@ updated: 2026-10-18
 > ⚠️ 데이터 양·주기·효과는 발화되지 않는다. 36:55~36:59는 en-orig 공백이다. ko는 inner/outer loop를 **"악순환"**(36:41~36:44)으로 옮긴다.
 
 열린 문제: *"What do you do when you need to evaluate an agent that runs for a month but the models ship every month?"*(40:30~40:35) → [[launch-blocking-evals]]
+
+## 세 층 모두의 토대 — 판정 대상 셋과 만능 판정기의 부재 (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
+
+[[harrison-chase]](추정, [[langchain|LangChain]])는 플라이휠을 *실행 → 피드백(사람 또는 online judge) → 트레이스 확인 → **eval 데이터 포인트 추가** → 모델 가중치 · 하네스 코드 · 컨텍스트 중 하나를 변경* 으로 그린다(05:57~06:30). 덧붙는 것:
+
+- **eval은 새 PRD** — *"evals are where you define what good looks like"*(04:12~04:14), 응답하지 *않음* 과 음의 기준도 포함(인용된 격언).
+- **판정 대상 셋**: 최종 답 · **환경의 최종 상태**(DB · 파일을 바꾸는 에이전트) · **도구 호출의 정확한 순서**(04:49~05:14).
+- **한계**: *"We don't have a universal judge for correctness."*(05:53~05:57) — 믿을 만한 판정기가 있다면 이미 에이전트 루프 안에 넣었을 것이므로, 판정기의 부재가 곧 이 루프의 어려움이다.
+- 에이전트가 스스로 eval 포인트를 만들고 고치는 판본은 *"very much a North Star vision"*(06:52~06:54).

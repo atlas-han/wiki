@@ -2356,3 +2356,24 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 7분 · 10분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 둘 다 `Korean original` + `English (US)`, `language`=`en` 구성이다. 서브에이전트 편은 **`ko-orig`가 없고**(ko `tlang=ko`), `en`과 `en-orig`의 md5가 같다. 한국어 해설 구간이 en-orig에서 통째로 빠져 챕터 경계와 겹치는 무캡션 간격으로만 보인다. Amodei 편은 `ko`·`ko-orig` md5가 같다(원 ASR). `--sleep-subtitles 8`로 429는 없었다.
+
+## [2026-10-30] ingest | Tech Bridge — 10-29 업로드 2편 (AI 에이전트는 어떻게 쓸수록 나아질까? | 모델·하네스·컨텍스트 — Harrison Chase(추정) 발표 발췌 · GPT 6.1 Terra, 빠르고 싼데 왜 평가는 갈릴까? — 리뷰어 미상 첫인상 리뷰)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**이다. `FTZak3J9YbM`는 멤버 전용이 지속되고 이번에도 ERROR로만 나왔다. `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 10-29 업로드 2편은 모두 `public`이다.
+
+**신규 source 2 · entity 2**, 기존 페이지 보강 9개(+ tech-bridge), index **921 → 925**(실측 일치).
+
+- `wGnQt2RhWfc`(7:08, 챕터 7) → [[tech-bridge-harrison-chase-agent-improvement-loop]]: 내레이션 없는 발표 발췌. 화자는 태그 기준 [[harrison-chase]].
+  - 신규: [[harrison-chase]]
+  - 보강: [[model-harness-knowledge-stack]](두 번째 소스 — 개선 대상의 틀) · [[production-trace-eval-flywheel]](판정 대상 셋 · 만능 판정기 부재) · [[continual-learning]](가운데 층 = 하네스 코드) · [[trace-to-memory-loop]](사람 게이트 기준: 전파 범위 vs 메모리 종류) · [[skill-self-improvement]](North Star) · [[langchain]]
+  - ⚠️ 이름은 태그에만 있다. 모델 층의 소개가 잘렸다. 사례 · 수치가 없다. *"in engine"* 은 판독 보류다.
+- `ht_Wp2oFp5E`(5:55, 챕터 7) → [[tech-bridge-gpt-6-1-terra-first-look]]: 리뷰어 미상 1인칭 첫인상 리뷰 발췌.
+  - 신규: [[openai-terra]]
+  - 보강: [[openai-astra]](*GPT-6 Astra* 첫 발화 · *distilled Astra* 인상) · [[openai]] · [[inference-speed-as-capability]](속도 ≠ 완수)
+  - ⚠️ 발화의 모델명은 *"GPT-6.1 Turbo"* 한 번이다(미확정). 가격은 화자 정정 숫자이고, 모드(fast · ultra · max effort · medium)의 소속 제품은 발화되지 않는다. X 반응은 링크가 없다.
+- [[tech-bridge]] · index · overview 갱신.
+- 페이지화하지 않음: 리뷰어(미상), deep agents(예시 나열), Soul 등급(기존 openai-astra 안에서 다룸), Blender(도구 언급).
+
+### 운영 메모
+
+7분 · 6분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 둘 다 10-27 Voss · 10-28 Parakhin 편과 같은 **영어 원본 오디오만** 있는 구성이다(`English (US) original (default)` + 더빙 7개 언어, `language`=`en`, `ko-orig` 없음, ko `lang=en&tlang=ko`). 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429는 없었다.
