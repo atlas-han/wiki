@@ -5,9 +5,9 @@ category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
 related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production, tech-bridge-harrison-chase-agent-improvement-loop]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-05
-updated: 2026-10-30
+updated: 2026-10-31
 ---
 
 # Skill Self-Improvement
@@ -180,3 +180,13 @@ updated: 2026-10-30
 ## North Star로 남겨 둔 판본 — 에이전트가 eval 포인트를 스스로 만든다 (2026-10-30 · [[tech-bridge-harrison-chase-agent-improvement-loop]])
 
 [[harrison-chase]](추정)는 *"the agent like notices that it made a mistake. The agent goes, creates an eval data point of its own, suggests its own changes"*(06:37~06:43)를 컨텍스트 · 하네스 코드 · 모델 가중치 모두에 대해 그리지만 *"very much a North Star vision"*(06:52~06:54)이라 못 박는다. 막는 것은 만능 정답 판정기의 부재다 → [[production-trace-eval-flywheel]].
+
+## 사람이 실제로 보낸 것과의 diff — "review mode only" (2026-10-31 · [[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+[[dan-martell|Dan Martell]](⚠️ 추정)의 [[grokbot|Grok Bot]] inbox manager 팁. 처음 몇 주는 *"have it draft everything"*(02:22~02:24), 이후 *"Every Friday, compare the drafts you wrote to this week's of what I actually sent. Look at what I changed, like the words I cut, how long my replies are, and how I sign off, and update how you write emails for me, so next week's drafts need fewer edits."*(02:26~02:40) — *"I call this review mode only."*(02:40)
+
+- 이 페이지의 다른 경로들은 실패 · 트레이스 · eval을 신호로 썼다. 여기서는 **사람이 고쳐서 실제로 보낸 결과물**이 정답이고, 초안과의 차이가 곧 피드백이다. 별도 평가 단계가 없다.
+- 반영 대상은 스킬 파일이 아니라 봇의 *"how you write emails for me"* 다. 사람 승인 단계는 따로 없지만, 초안이 밖으로 나가지 않으므로 [[no-silent-write]]처럼 **보내는 행위는 늘 사람**에게 남는다.
+- 같은 영상의 *"Do it once, save it as a skill"*(06:14~06:16)과 작업 녹화 → 스킬(06:16~06:24)은 스킬의 **생성** 경로다. 개선 루프는 아니다.
+
+> ⚠️ 편집량이 실제로 줄었는지는 발화되지 않는다. 1인 사용 팁.

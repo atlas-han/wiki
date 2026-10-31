@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-30
+updated: 2026-10-31
 ---
 
 # Index
@@ -164,6 +164,10 @@ updated: 2026-10-30
 - [[thais-castello-branco]] — [[taste-labs|Taste Labs]] 창업자. *"훌륭함은 정의하기 어렵지만 슬롭은 쉽다"* · [[ai-slop|슬롭]] 세 특징(반복·적합성 부족·낮은 의도) · [[slop-probes|프로브]] · *"취향이 아니라 판단"* · [[intentional-out-of-distribution|온도가 아니라 규칙 위반]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 당사자 · 수치 없음
 - [[paul-bakaus]] — [[impeccable|Impeccable]] 제작자. *디자인은 원샷할 수 없다* · [[steering-altitude|조향 고도]] · [[adjective-verb-steering|형용사는 Leitwort]] · *"auto는 없다"* · 취향은 증폭되되 배양 안 됨 · 스킬 엔지니어링 dark arts 워크숍(블라인드 서브에이전트 · [[anti-attractor|무작위 시드]] · [[cross-harness-skill-compilation|하네스별 컴파일]]) ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 - [[mikhail-parakhin]] — [[shopify|Shopify]] CTO(제목 근거). 바닥이 아니라 천장을 높이는 AI, 복잡도로 정규화한 생산성, *"Always use the largest model"* · 전원 무제한 토큰, 회사의 [[company-digital-twin|디지털 트윈]], 개발엔 최대 · 운영엔 파인튜닝의 바벨 전략 ([[tech-bridge-parakhin-shopify-ai-cost-barbell]]) ⚠️ 당사자 · 수치 없음 · 이름은 설명란에만
+- [[addy-osmani]] — [[anthropic|Anthropic]] 쪽 화자(발화에서 호명, 본인 1인칭 "at Anthropic, we"). lights-on/dark software factory, Claude 1차 리뷰 + 실제 사용자처럼 시험, *"people are responsible for checking on the agent's evidence"*, 에이전트 작성 PR 라벨 + *"I'm still on the hook"* ([[tech-bridge-anthropic-30k-merges-verification]])
+- [[manish-kapur]] — Addy Osmani 대담의 진행 겸 화자(이름은 설명란에만 있고 소거법으로 추정, 소속 미상). CircleCI 통계, "하루 3만 건" 발화, zero-trust 다층 검증, PR 라벨 6~9개월 ([[tech-bridge-anthropic-30k-merges-verification]]) ⚠️ 신원 추정
+- [[dan-martell]] — [[grokbot|Grok Bot]] 사용자 쪽 튜토리얼 화자(설명란 · 태그 근거, 발화엔 3인칭 이름 한 번 + *"plug"*). 역할별 봇을 chief of staff에게 말로 만들게 함, *"review mode only"*, 결제 전 승인 · 읽기 전용 재무, 공유 채널 team bot ([[tech-bridge-dan-martell-grokbot-daily-automation]]) ⚠️ 신원 추정
+- [[ben-davis]] — [[codex|Codex]]를 영상 채널 운영에 쓰는 외부 사용자 화자(이름은 설명란 · 태그 근거 — 발화엔 없음). verifier가 없는 제품 판단에 모델이 약하다는 진단, *"The cohesion just isn't there at the product level"*, 처방은 기능 덜어내기와 Codex thread를 기본 단위로 ([[tech-bridge-ben-davis-codex-product-cohesion]]) ⚠️ 신원 추정
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -308,6 +312,8 @@ updated: 2026-10-30
 - [[openclaw]] — **여섯** 소스에 지나가듯 언급되는 **에이전트 플랫폼**(개인 배포·개인 위키·"claw land"·**Mac Studio 구매의 계기**). 어느 소스도 설명하지 않아 언급을 모은 페이지 (sources: 6) ⚠️ 정체는 위키의 추정
 - [[muse]] — [[meta|Meta]]의 개인 에이전트. **VM 붙은 장수명 에이전트**(목표를 주면 24시간·밤에 "공부") · **주당 1억 토큰 무료 + 거래 수수료** · [[confidential-vm]]·[[sentinel-agent]]·[[least-privilege-connectors]] 4겹 보안 · [[agent-fleet-learning|함대 학습]] (sources: 1) ⚠️ CEO 한 사람의 진술·수치 전무
 - [[stripe-minions]] — Stripe 사내 코딩 에이전트, [[goose]] 기반. devbox에서 실행, blueprint = 모델 판단 단계 + 정해진 코드 검사 단계. Claude Code와 다른 시스템 ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 해설의 블로그 인용
+- [[starship]] — [[spacex|SpaceX]] 궤도 발사체: 부스터 + Ship 완전 재사용 목표, Flight 14 첫 궤도 · Starlink V3 배치, Flight 15 동시 포획 시도 ([[tech-bridge-musk-spacex-ai-compute-outlook]] 외 2소스) ⚠️ 당사자 진술
+- [[starlink]] — [[spacex|SpaceX]] 위성망: [[elon-musk|Musk]]의 3년 대역폭 100배 · 위성 10만 기, AI 에이전트발 수요 1,000배, 연결 매출 "수천억 달러" 전망 ([[tech-bridge-musk-spacex-ai-compute-outlook]]) ⚠️ 전부 소유주 진술
 
 ### Tools
 - [[fx]] — Vercel Labs 코딩 CLI(ASR "effects", 설명란 fx.sh). 셸처럼 부팅, 6MB/11MB, 임베드 가능(fx0 데모: HTML → 샌드박스 Next.js → Eve 에이전트) ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 자사 진술
@@ -674,6 +680,8 @@ updated: 2026-10-30
 - [[cloud-agent-delegation]] — 원격 VM의 자율 에이전트. **티켓당 별도 PR** + 자기 마우스로 UI를 조작한 **검증 비디오** (Cursor, sources: 1) ⚠️ 작성자=검증자
 - [[plan-to-ticket-pipeline]] — **코드를 쓰지 않는 plan mode** → 티켓 분할 → 위임. 계획 전에 되묻는 `ask question` 도구 (Cursor, sources: 1)
 - [[scheduled-agent-automations]] — 예약·이벤트로 도는 클라우드 에이전트. 목적은 산출이 아니라 **레거시화 예방**. automation마다 `memories.md` (Cursor, sources: 1)
+- [[layered-verification-every-loop]] — 루프마다 다층 검증: zero trust 전제, 결정론 · 에이전트 리뷰 · 공급망 보안 세 층이 각자 다른 결함을 잡고, 에이전트 · CI · 유지보수 루프 모두에 둔다 ([[tech-bridge-anthropic-30k-merges-verification]]) ⚠️ 화자 추정, 수치 없음
+- [[primitives-before-features]] — 기능보다 기본 단위 먼저: 출시 비용이 0에 가까운데 verifier가 없는 UX 판단 탓에 기능 사이 이음매가 생긴다(enshittification). 처방은 덜어내기, thread를 CLI · 데스크톱 · 웹 공통 primitive로 ([[tech-bridge-ben-davis-codex-product-cohesion]]) ⚠️ 1인 사용자 의견
 
 ---
 
@@ -959,12 +967,16 @@ updated: 2026-10-30
 - [[tech-bridge-dario-amodei-principles-oversight]] — [[dario-amodei|Dario Amodei]] 2026년 7월 인터뷰(매체 미상) 발췌 + 해설(9:41, 챕터 11, 2026-10-28 업로드): GPT-2의 두려움 · good faith 이견 · **규칙 대신 원칙** · 승인과 진실의 어긋남([[sycophancy]] · [[reward-hacking]]) · 종료 회피 선호 · 신뢰할 수 있어도 남는 자율무기의 감독 · 책임([[joint-democratic-oversight]]) · 단일하지 않은 미래 ⚠️ 해설의 "다니엘라" 지칭 미확정 · *누가 결정하나* 답 무캡션
 - [[tech-bridge-harrison-chase-agent-improvement-loop]] — [[harrison-chase|Harrison Chase]](추정, [[langchain|LangChain]]) 발표 발췌(7:08, 챕터 7, 내레이션 없음 · 영어 원본 오디오만, 2026-10-29 업로드): AI 에이전트는 어떻게 쓸수록 나아질까 — [[model-harness-knowledge-stack|모델 · 하네스 · 컨텍스트]] 층별 개선(SFT · 코드/프롬프트/도구 + 사람 검토 · 사용자/조직 단위 메모리), 공통 토대 트레이스 · eval, *"the new PRD"*, 판정 대상 셋(최종 답 · 환경 최종 상태 · 도구 호출 순서), 만능 판정기 부재, North Star 자기 개선 루프 → [[production-trace-eval-flywheel]] ⚠️ 신원 태그 근거 · 모델 층 소개 잘림 · 사례 · 수치 없음
 - [[tech-bridge-gpt-6-1-terra-first-look]] — 리뷰어 미상 1인칭 첫인상 리뷰 발췌(5:55, 챕터 7, 내레이션 없음 · 영어 원본 오디오만, 2026-10-29 업로드): [[openai-terra|GPT 6.1 Terra]] — C++ 스케이트 게임 2:35 · 7:41(조작 반전 → 수정), Claude는 디테일을 더 판다는 체감, 로봇 팔에서 *"therapy session"* 끝에 포기(GPT-6 [[openai-astra|Astra]]는 완수), Blender에서 *"Done"*, *"it gives up very easily"*, $1/$5 가격과 속도 → [[inference-speed-as-capability]] ⚠️ 리뷰어 · 원본 미상 · Terra/Turbo 이름 불일치 · 가격 미확인
+- [[tech-bridge-anthropic-30k-merges-verification]] — [[addy-osmani|Addy Osmani]] × [[manish-kapur|Manish Kapur]](추정) 무대 대담 편집본(11:06, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-10-30 업로드): Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요 — lights-on vs dark [[software-factory]], Claude 1차 리뷰 + hooks 수정 루프, CLAUDE.md/AGENTS.md에 taste 성문화, 사람은 [[agent-change-evidence|검증 증거]]를 본다, [[layered-verification-every-loop|3층 검증]], 통제 · 권한 · 샌드박스, PR 라벨 + [[named-human-accountability|사람 책임자]], *"Fast to write is not fast to ship"* ⚠️ "3만"은 진행 쪽 발화(Addy 미확인) · Manish 신원 추정 · 통계 출처 없음
+- [[tech-bridge-musk-spacex-ai-compute-outlook]] — [[elon-musk|Elon Musk]](설명란 · 태그 근거) 발언 발췌(7:31, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, 멤버 전용 → 2026-10-30 공개): 로켓 회사가 AI를 키우는 이유 — [[starship]] 완전 재사용 · [[starlink]] 대역폭 100배/수요 1,000배(에이전트), *"more in power and cooling and infrastructure than it is in chips"*, 2027년 +10 GW(13 GW 이상), 터빈 블레이드 주조 12~18개월 지연, [[terafab]] 시험 칩 27년 5~6월 · 양산 28Q3, 임대 수요 → SpaceX ARR 5,000억~1조, [[tesla]] 합병은 전체 주식 50% · 특별위원회 미합의 → [[power-shortfall]] ⚠️ 녹화 행사 미상 · Optimus/Grok 트랙 불일치 · 주조 전제 캡션 없음 · 수치 전부 당사자 진술
+- [[tech-bridge-dan-martell-grokbot-daily-automation]] — [[dan-martell|Dan Martell]](추정) Grok Bot 사용 튜토리얼 발췌(6:42, 챕터 10, 내레이션 없음 · 영어 원본 오디오만, 2026-10-30 업로드): Grok Bot으로 일상을 자동화하기 — 봇마다 24/7 가상 컴퓨터, chief of staff에게 말로 역할별 봇(inbox · travel · people · family · constraint · finance · leadership) 주문, 초안 vs 실제 보낸 메일 diff 루프, 결제 · 제출 전 승인, 읽기 전용 재무, 공유 Slack team bot, 웹 대신 API · skill then routine · 녹화→스킬 → [[persistent-agent-teams]] ⚠️ 신원 추정 · 제작사 미발화 · 마지막 챕터 무캡션 · 수치 없음
+- [[tech-bridge-ben-davis-codex-product-cohesion]] — [[ben-davis|Ben Davis]](추정, 설명란 · 태그 근거)의 Codex 사용기 발췌 + 무캡션 한국어 해설(추정)(6:51, 챕터 8 · 오디오 Korean original + English(US), `ko-orig` 없음, 2026-10-30 업로드): 코드를 잘 짜는데, Codex는 왜 불편해졌을까? — priority view가 할 일 목록이 아니라 타임라인, *"clean verifier function"* 없는 제품 판단, ChatGPT/Codex 분리, Spaces와 thread의 어색한 결합, *"never been easier to ship a feature"*, thread를 공통 기본 단위로 → [[primitives-before-features]] ⚠️ 신원 추정 · 1인 체감 · *"Coda"*=Codex 판독 · [[chatgpt-space]]와 동일성 미확정
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 925 (921 → 925, + 2026-10-30 Tech Bridge 2편(10-29 업로드 — Harrison Chase(추정) 에이전트 개선 루프 · GPT 6.1 Terra 첫인상 리뷰): source 2 · entity 2(harrison-chase · openai-terra) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 925와 일치)
+- 총 페이지 수: 937 (925 → 937, + 2026-10-31 Tech Bridge 4편(10-30 업로드 — Addy Osmani Anthropic 병합 검증 · Musk SpaceX AI 컴퓨트 · Dan Martell Grok Bot · Ben Davis Codex 제품 일관성): source 4 · entity 6(addy-osmani · manish-kapur · dan-martell · ben-davis · starship · starlink) · concept 2(layered-verification-every-loop · primitives-before-features) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 937과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-30 (Tech Bridge **2편** — 10-29 업로드 [[tech-bridge-harrison-chase-agent-improvement-loop|AI 에이전트는 어떻게 쓸수록 나아질까?]](`wGnQt2RhWfc`) · [[tech-bridge-gpt-6-1-terra-first-look|GPT 6.1 Terra, 빠르고 싼데 왜 평가는 갈릴까?]](`ht_Wp2oFp5E`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-10-29 (Tech Bridge **2편** — 10-28 업로드 [[tech-bridge-anthropic-fold-subagents-into-skills|Anthropic이 서브에이전트를 줄이라는 이유]](`kJGTHFZHLVg`) · [[tech-bridge-dario-amodei-principles-oversight|다리오 아모데이의 AI 경고]](`jvc8_czisas`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-10-31 (Tech Bridge **4편** — 10-30 업로드 [[tech-bridge-anthropic-30k-merges-verification|Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요?]](`CmsICMUPtII`) · [[tech-bridge-musk-spacex-ai-compute-outlook|로켓 회사가 AI를 키우는 이유]](`FTZak3J9YbM`, 멤버 전용 → 공개) · [[tech-bridge-dan-martell-grokbot-daily-automation|Grok Bot으로 일상을 자동화하기]](`mHwP7oANlnA`) · [[tech-bridge-ben-davis-codex-product-cohesion|코드를 잘 짜는데, Codex는 왜 불편해졌을까?]](`-B-967gXzHY`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-10-30 (Tech Bridge **2편** — 10-29 업로드 [[tech-bridge-harrison-chase-agent-improvement-loop|AI 에이전트는 어떻게 쓸수록 나아질까?]](`wGnQt2RhWfc`) · [[tech-bridge-gpt-6-1-terra-first-look|GPT 6.1 Terra, 빠르고 싼데 왜 평가는 갈릴까?]](`ht_Wp2oFp5E`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)

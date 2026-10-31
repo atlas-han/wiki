@@ -1161,5 +1161,17 @@
   "02.wiki/entities/harrison-chase.md": "LiUser",
   "02.wiki/entities/openai-terra.md": "LiBot",
   "02.wiki/sources/tech-bridge-harrison-chase-agent-improvement-loop.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-gpt-6-1-terra-first-look.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-gpt-6-1-terra-first-look.md": "LiVideo",
+  "02.wiki/entities/addy-osmani.md": "LiUser",
+  "02.wiki/entities/manish-kapur.md": "LiUser",
+  "02.wiki/entities/dan-martell.md": "LiUser",
+  "02.wiki/entities/ben-davis.md": "LiUser",
+  "02.wiki/entities/starship.md": "LiBoxes",
+  "02.wiki/entities/starlink.md": "LiBoxes",
+  "02.wiki/concepts/layered-verification-every-loop.md": "LiPuzzle",
+  "02.wiki/concepts/primitives-before-features.md": "LiPuzzle",
+  "02.wiki/sources/tech-bridge-anthropic-30k-merges-verification.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-musk-spacex-ai-compute-outlook.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-dan-martell-grokbot-daily-automation.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-ben-davis-codex-product-cohesion.md": "LiVideo"
 }

@@ -151,8 +151,12 @@ sources:
   - tech-bridge-tlc-ai-job-anxiety
   - tech-bridge-harrison-chase-agent-improvement-loop
   - tech-bridge-gpt-6-1-terra-first-look
+  - tech-bridge-anthropic-30k-merges-verification
+  - tech-bridge-musk-spacex-ai-compute-outlook
+  - tech-bridge-dan-martell-grokbot-daily-automation
+  - tech-bridge-ben-davis-codex-product-cohesion
 created: 2026-06-03
-updated: 2026-10-30
+updated: 2026-10-31
 ---
 
 # Tech Bridge
@@ -1488,3 +1492,27 @@ updated: 2026-10-30
 - ⚠️ 리뷰어 · 원본 링크가 없다. 발화의 모델명은 *"GPT-6.1 Turbo"* 한 번뿐이다(Terra의 ASR 오인식 가능성, 미확정). 가격($1/$5)은 화자가 스스로 정정한 숫자다.
 
 **멤버 전용**: `FTZak3J9YbM`(*로켓 회사가 AI를 키우는 이유*) 지속 — stderr ERROR로만 나왔다(20편 요청 → 19줄 + ERROR 1). `Yhck-x6VuLs`는 단건 조회로 지속 확인(`subscriber_only` 줄).
+
+## 2026-10-30 업로드 — Addy Osmani Anthropic 병합 검증 · Musk SpaceX AI 컴퓨트 · Dan Martell Grok Bot · Ben Davis Codex 제품 일관성 (2026-10-31 ingest)
+
+[[tech-bridge-anthropic-30k-merges-verification|[한글자막] Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요? | Addy Osmani]](`CmsICMUPtII`, 11:06, 공식 챕터 11) — [[addy-osmani]](신규) × [[manish-kapur]](신규, 설명란 근거) 무대 대담 편집본, 내레이션 없음 ([[software-factory]] · [[verification-bottleneck]] · [[agent-verification-skill]] · [[agent-change-evidence]] · [[layered-verification-every-loop]](신규) · [[named-human-accountability]] · [[trusted-throughput]] · [[anthropic]] · [[claude-code]])
+
+- 10-27 Voss 편부터 이어진 **영어 원본 오디오만** 있는 구성이다(`ko-orig` 없음, ko `tlang=ko`). 제목에 "[한글자막]"이 붙었지만 `subtitles`는 비어 있다. 인용은 en-orig로만 했고, 첫 챕터(00:00~00:20)는 무캡션이다.
+- ⚠️ Manish의 이름은 설명란에만 있다. "하루 3만 건"은 진행 쪽이 3,000 → 30,000으로 스스로 정정하며 한 말이고 Addy는 되풀이하지 않는다. CircleCI · 85% · 76% 통계는 출처가 없다.
+
+[[tech-bridge-musk-spacex-ai-compute-outlook|로켓 회사가 AI를 키우는 이유]](`FTZak3J9YbM`, 7:31, 공식 챕터 9) — [[elon-musk]](설명란 · 태그 근거) 발언 발췌, 내레이션 없음 ([[spacex]] · [[starship]](신규) · [[starlink]](신규) · [[terafab]] · [[tesla]] · [[power-shortfall]] · [[compute-constrained-growth]])
+
+- **멤버 전용 → 공개 전환**: 10-28 회차부터 `subscriber_only`(목록 `upload_date` 20261027) → 10-31 `public`, `upload_date` 20261030. 영어 원본 오디오만 있는 구성이라 인용은 en-orig로만 했다. 무캡션 8구간이 챕터 경계와 겹친다.
+- ⚠️ 녹화 행사 · 날짜 미상(2026년, Starship 첫 궤도 이후로 추정). 05:36이 en-orig *"Optimus"* vs `en`/ko *"Grok"*(미확정). 터빈 챕터의 핵심 전제(로켓 주조 기술 활용)가 캡션에 없다. 수치는 전부 당사자 진술이다.
+
+[[tech-bridge-dan-martell-grokbot-daily-automation|Grok Bot으로 일상을 자동화하기]](`mHwP7oANlnA`, 6:42, 공식 챕터 10) — [[dan-martell]](신규, 설명란 · 태그 근거) 1인칭 사용 튜토리얼 발췌, 내레이션 없음 ([[grokbot]] · [[persistent-agent-teams]] · [[scheduled-agent-automations]] · [[skill-self-improvement]] · [[action-reversibility]] · [[least-privilege-connectors]] · [[multiplayer-agent-context]])
+
+- 같은 **영어 원본 오디오만** 있는 구성이다. 무캡션 9구간이 챕터 경계 직후와 겹치고, 마지막 챕터(06:27~06:42)는 자막이 없다.
+- ⚠️ 이름은 발화에 3인칭으로 한 번뿐이다(*"Dan Martell's email GPS system from Buy Back Your Time book, plug"*). Grok Bot 제작사는 발화되지 않는다. 시연 결과 · 수치가 없다.
+
+[[tech-bridge-ben-davis-codex-product-cohesion|코드를 잘 짜는데, Codex는 왜 불편해졌을까?]](`-B-967gXzHY`, 6:51, 공식 챕터 8) — [[ben-davis]](신규, 설명란 · 태그 근거) 사용기 발췌 + 무캡션 한국어 해설(추정) ([[primitives-before-features]](신규) · [[codex]] · [[codex-app-server]] · [[chatgpt-space]] · [[verifiable-goals]] · [[taste-vs-judgment]] · [[product-polish-patterns]] · [[openai]])
+
+- 10-28 `kJGTHFZHLVg`와 같은 구성이다: 오디오 `Korean original` + `English (US)` 두 트랙, `ko-orig` 없음, ko `tlang=ko`, `en` = `en-orig`(md5 동일). 인용은 en-orig로만 했다. 무캡션 6구간이 챕터 경계와 겹친다(01:35 경계만 간격 없음).
+- ⚠️ 이름은 설명란 · 태그에만 있다. *"Coda"* → Codex는 판독 추정이다. Spaces가 [[chatgpt-space|ChatGPT Space]]와 같은 제품인지는 미확정이다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). `FTZak3J9YbM`는 공개 전환되어 위에서 ingest했다.

@@ -6,9 +6,9 @@ tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
 related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification]
 created: 2026-09-13
-updated: 2026-10-20
+updated: 2026-10-31
 ---
 
 # 검증 스킬
@@ -99,3 +99,7 @@ updated: 2026-10-20
 ## 코드 밖의 산출물로 — 완료 · 사실 · 추론 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
 
 [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)도 검증을 **스킬**로 만든다(*"I built each level as an agent skill"* 01:12, *"I've packaged the three review levels as agent skills, and I've released them as open source"* 11:35~11:39). Tan·Railway의 검증이 *앱을 실제로 띄워 써 보는 것*이었다면, 이 화자의 대상은 **코드가 아닌 산출물**(스캔 명세서에서 뽑은 거래 기록, 법적 요구서)까지 포함하고, 검증 대상을 **완료 여부 · 사실 · 추론** 셋으로 나눈다. → [[three-level-agent-review]]. ⚠️ 공개 저장소(설명란 `captivus/agent-review`)의 구성은 확인하지 않았다.
+
+## Anthropic 쪽 진술 — "similar to a real user", hooks, taste 파일 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
+
+[[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽): *"you need to give your agents a way to verify that the work is correct"*(03:10~03:14). Claude Code 쪽 워크플로는 Claude의 1차 리뷰에서 *"What's very important in there is making sure that it has a way to actually try the experience out similar to a real user"*(04:20~04:24) — e2e 작업, 브라우저 확인, 도구 실행, 린팅(04:26~04:36). 결함이 나오면 *"hooks that will then go and run on any edits, they will study the diffs"*(04:44~04:46)로 PR을 고치는 루프. 기준은 공유 파일로 성문화한다: *"codify what you consider best practice and taste in your team's shared like Claude.md, Agents.md"*(05:03~05:12, ASR → CLAUDE.md · AGENTS.md). 검증의 종류로는 *"end-to-end tasks, property tests, any visual verification tests"*(06:15~06:20)를 들고, 주니어에게도 *"the different flavors of tests"*(10:15)를 권한다. Lauren Tan · Railway에 이은 세 번째 실무자의 같은 순위다. ⚠️ 회사 내부자의 자기 관행 진술, 효과 수치 없음.

@@ -5,9 +5,9 @@ category: org
 tags: [aerospace, compute, power-plant, data-center, infrastructure]
 links:
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-white-house-superintelligence-panel, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-musk-spacex-ai-compute-outlook]
 created: 2026-09-07
-updated: 2026-10-18
+updated: 2026-10-31
 ---
 
 # SpaceX
@@ -85,3 +85,15 @@ updated: 2026-10-18
 - 사내 사용: *"It's increasingly common now at SpaceX where we see bots joining meetings for employees where they couldn't make it to the meeting, but they want their bot to go and just take notes and come back to them"*(11:33~11:43)
 - *"one of the principles that we had at Cursor uh and now at SpaceX is to delete the product"*(37:45~37:54). 위 절들(Lauren Tan의 *"SpaceX AI"* 발화들)에 이어 Cursor → SpaceX의 연속을 말하는 또 하나의 당사자 발화다. ⚠️ 형태(인수·합병·브랜드)는 여전히 말하지 않는다. 추정하지 않는다. "xAI"는 자막에 없다.
 - ⚠️ 당사자(직원) 진술이다.
+
+## 로켓 회사가 AI를 키우는 이유 — 소유주가 말하는 "컴퓨트 회사" SpaceX (2026-10-30 · [[tech-bridge-musk-spacex-ai-compute-outlook]])
+
+[[elon-musk|Musk]]의 발언 발췌(설명란 · 태그 근거)다. 전부 소유주 진술이다.
+
+- **발사 · 통신** — [[starship]] Flight 15에서 부스터와 Ship 동시 포획을 시도한다. [[starlink]]는 3년 안에 대역폭 100배, *"several hundred billion dollars a year in connectivity revenue"*(02:39~02:43)를 말한다.
+- ⭐ **GW 단위의 컴퓨트** — 2026년 말 *"roughly 3 gigawatts"*, 2027년 *"incremental 10 gigawatts of compute"*, 합계 13 GW 이상(03:10~03:39). 10-06 백악관 패널 진행자가 말한 *"10 GW"*(위 절)와 같은 숫자다. **이번엔 소유주 본인이 연도를 붙였다.**
+- **터빈** — 공급사의 블레이드 · 베인이 12~18개월 늦다 → *"we can bring power online 12 to 18 months faster than anyone else"*(04:15~04:20). ⚠️ 그 이유(로켓 엔진 주조 기술을 자체 활용)는 챕터 제목 · 설명란에만 있고 캡션에는 없다. 위 백악관 절의 *"literal rocket engineers (…) Helping make the turbines"* 가 같은 방향의 유일한 다른 발화다.
+- **임대 수요 → ARR** — *"hounded relentlessly by (…) every hyperscaler and by (…) dozens of smaller companies (…) to rent more of our compute"*(05:43~05:56) → *"SpaceX (…) annual recurring revenue by the end of 2027 is somewhere between 500 billion and a trillion"*(06:12~06:21). 고객 이름 · 통화 단위 · 계산은 없다.
+- **Tesla 합병** — 특별위원회가 조건에 합의하지 못했고, *"no guarantee"* 라 한다(07:04~07:12) → [[tesla]]
+
+> ⚠️ 위 절들의 원칙은 그대로다. **"SpaceX의 컴퓨트"** 가 어느 조직 단위인지(위 *"SpaceX AI"* 발화들과의 관계) 이 소스도 말하지 않는다. 추정하지 않는다. 컴퓨트 최대 사용자를 두고 트랙이 갈린다(en-orig *"Optimus"* vs `en`/ko *"Grok"*, 05:36).

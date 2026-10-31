@@ -5,9 +5,9 @@ category: theory
 tags: [power-grid, electricity, data-center, compute, gpu, export-controls, infrastructure]
 related: [compute-constrained-growth, intelligence-as-infrastructure, humanoid-robot-scaling, trusted-throughput, data-center-local-backlash, orbital-compute]
 first-seen: tech-bridge-elon-musk-g20-ai-future
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-musk-spacex-ai-compute-outlook]
 created: 2026-09-07
-updated: 2026-10-09
+updated: 2026-10-31
 ---
 
 # Power Shortfall (전력이 컴퓨팅의 상한이다)
@@ -102,3 +102,14 @@ updated: 2026-10-09
 > ⚠️ 이 페이지 §산수의 Huang *"1 GW ≈ 500~600억 달러"*(G20)는 **투자액**이다. 여기 400~600억은 **연간 산출**이다 — 비슷한 숫자, 다른 양. 혼용하지 않는다.
 
 공급 쪽 답이 하나 늘었다 — **지상 밖**. 지상 태양광은 우주의 1/5~1/8, SpaceX+Tesla 연 200 GW 태양광 생산, Starship이 연 수백 GW의 AI 컴퓨팅을 쏘아 올린다 → [[orbital-compute]]. Huang(추정)은 *"for the first time in in probably forever"* 모든 형태의 지속 가능 에너지에 정부 보조 없이 시장 자금이 붙는다(10:59~11:33) — CBS의 *"100년 만에 처음"* 과 같은 주장.
+
+## "칩보다 전력 · 냉각 · 인프라", 그리고 터빈 블레이드 주조 (2026-10-30 · [[tech-bridge-musk-spacex-ai-compute-outlook]])
+
+같은 화자([[elon-musk|Musk]], 설명란 · 태그 근거)가 병목을 다시 전력 쪽으로 옮긴다. 이번엔 한 층 더 아래, **부품**까지 내려간다.
+
+- ⭐ *"as I think people are starting to realize the the constraints on deployments of of super intelligence is more in power and cooling and infrastructure than it is in chips."*(02:51~03:04). 위 09-23 절(*병목이 칩으로*)과 방향이 반대다. 같은 사람이 무대마다 다른 층을 앞세운다.
+- **공급 쪽 숫자** — 2026년 말 약 2.5~3 GW에 2027년 +10 GW를 더한다. *"I would be surprised if if we brought on less than 13 gigawatts of compute by the end of next year."*(03:34~03:39) 단위가 *"gigawatts of compute"* 다(전력 용량으로 컴퓨트를 센다).
+- ⭐ **부품 병목** — 터빈 공급사의 블레이드 · 베인이 *"12 to 18 months behind the rest of the turbine"*(03:56~03:59)이다. *"casting is (…) this really difficult bottleneck. Um and if anything it seems to be getting worse."*(04:08~04:12) → *"we can bring power online 12 to 18 months faster than anyone else"*(04:15~04:20)
+- ⚠️ "왜 SpaceX가 더 빠른가"의 전제(로켓 엔진 주조 기술을 블레이드에 쓴다)는 **챕터 제목 · 설명란에만** 있다. 캡션에는 없다.
+
+이 위키의 관찰: 위 「세 화자가 같은 병목을 세 층에서 가리킨다」에 **전력 층 안의 공급망 층(가스 터빈 부품)** 이 하나 더 붙는다. 전력을 늘리는 해법이 발전소 건설(G20)에서 **발전기 부품 제조**로 내려온다. ⚠️ 전부 소유주 진술이다. 12~18개월은 *"they tell us"* 로 전한 공급사 말이고, 출처는 없다.

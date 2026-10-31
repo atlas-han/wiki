@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server, tech-bridge-ben-davis-codex-product-cohesion]
 links:
   - "https://openai.com/index/nextdoor/"
 created: 2026-06-27
-updated: 2026-10-16
+updated: 2026-10-31
 ---
 
 # Codex
@@ -138,3 +138,14 @@ updated: 2026-10-16
 - 데모 모델 *"5.5"*(13:26~13:29, 계열명 미발화).
 
 → [[codex-app-server]] · [[embedded-agent-harness]]
+
+## 외부 사용자가 본 제품 표면의 이음매 — priority view · ChatGPT 분리 · Spaces (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
+
+[[ben-davis|Ben Davis]](설명란 · 태그 근거, 발화에 이름 없음)의 1인칭 사용기 발췌. 이 페이지 소스 대부분이 OpenAI 당사자이거나 기능 관찰이었다면, 이 편은 **외부 사용자가 제품 표면 전체의 일관성을 비판하는 첫 소스**다. ⚠️ 1인 체감, 버전 미상.
+
+- **priority view**: *"supposed to be a to-do list of the threads that need attention"*(00:12~00:16) 인데 *"In Codex that's not how they work. This is basically just a timeline of what you have worked on in order."*(00:20~00:27)
+- **ChatGPT / Codex 분리**: *"There's like a chat and a work and a Codex. It's so weird. Just make all of them Codex under hood."*(01:54~02:01) — 처방은 *"chat GPT powered by Codex"*(01:47~01:50).
+- **Spaces**: 템플릿 · 저장된 프롬프트를 *"fire off into a codex thread"*(02:49~02:51), 편집자와 공유 — *"quite good"*. 그러나 변경 시 화면을 그 페이지로 강제 이동하고, 같은 thread가 Spaces 안과 일반 thread 양쪽에 보인다 — *"they are trying to stick them together and they're just not doing it very well"*(03:58~04:03). ⚠️ [[chatgpt-space]]와 같은 제품인지 미확정.
+- 처방: 기능을 먼저 덜어내고 *"A Coda[=Codex] thread should become the base building block for everything"*(05:20~05:24) — CLI · 데스크톱 · 웹 공통. → [[primitives-before-features]]
+- 위 10-11 · 10-14의 App Server(*같은 하네스가 모든 표면을*)와 층이 다르다 — 이쪽은 **사용자가 보는 thread 단위**의 공통성을 요구한다.
+- ⚠️ ASR *"Coda"* → Codex(판독 추정). ko는 thread를 "실", spaces를 "공간"으로 옮긴다.

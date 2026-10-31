@@ -5,9 +5,9 @@ category: product
 tags: [semiconductor, chips, fab, compute, supply-chain, tesla, spacex, geopolitics]
 aliases: [테라팹, Tera Fab]
 links: []
-sources: [tech-bridge-musk-shotwell-cross-lab-peer-review]
+sources: [tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-musk-spacex-ai-compute-outlook]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-31
 ---
 
 # Terafab
@@ -52,3 +52,20 @@ updated: 2026-09-23
 - [[tech-bridge-musk-shotwell-cross-lab-peer-review]] — first-seen
 - [[tesla]] · [[spacex]] · [[elon-musk]] · [[gwynne-shotwell]]
 - 관련: [[power-shortfall]] · [[intelligence-as-infrastructure]] · [[compute-constrained-growth]] · [[humanoid-robot-scaling]] · [[slowdown-within-lead-margin]]
+
+## 시험 칩 2027년 5~6월, 양산 2028년 3분기, 본 시설 (2026-10-30 · [[tech-bridge-musk-spacex-ai-compute-outlook]])
+
+[[elon-musk|Musk]](설명란 · 태그 근거)가 처음으로 **월 · 분기 단위 일정**을 말한다. 위 표의 walk · run에 비어 있던 시점 칸이 처음 채워진다.
+
+| 단계 | en-orig | 장소 |
+|---|---|---|
+| 시험 칩 | *"our first sort of test chip functional in approximately May or June of next year"*(04:34~04:40), *"just a kind of a SRAM chip"*, 라인 시험용(04:43~04:44) | *"the research lab in in Austin"*(04:46) |
+| 양산 | *"our aspiration is to reach volume production around Q3 of '28"*(04:49~04:54) | *"at Gibbons Creek uh the main Terafab location"*(04:55~04:59, ⚠️ 지명은 ASR 철자) |
+| 궁극 | *"make a terawatt of of uh super intelligence chips per year"*(05:21~05:24) — *"what the name suggests"* | — |
+
+- 화자 단서: *"these are obviously like insanely fast uh time frames for for chip uh chip production"*(05:01~05:07). 그래도 *"I am optimistic"* 이라 한다.
+- 09-22 편의 crawl(*"적어도 내년 말까지"* 무엇이든)과 충돌하지 않는다. 시험 칩이 그 기한 안에 들어간다. **R&D 랩(오스틴)과 본 시설이 다른 곳**이라는 정보가 새로 붙는다.
+- *"a terawatt of (…) super intelligence chips per year"*(05:21~05:24)는 생산량을 **전력 단위**로 센 것이다. 같은 편의 *"gigawatts of compute"*(03:15)와 같은 셈법이다.
+- 같은 편에서 화자는 병목이 *"more in power and cooling and infrastructure than it is in chips"*(02:59~03:04)라고 한다. 위 「이 위키에서의 자리」의 **칩 층 → 다시 전력 층** 이동이다 → [[power-shortfall]]
+
+⚠️ 당사자 진술이다. 공정 노드 · 투자액 · 용량(웨이퍼 수)은 여전히 없다. Tesla · SpaceX의 지분 구조도 이 편에서 말하지 않는다.

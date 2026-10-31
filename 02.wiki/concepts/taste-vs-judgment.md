@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
-related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value]
+related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value, primitives-before-features]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production, tech-bridge-ben-davis-codex-product-cohesion]
 created: 2026-09-12
-updated: 2026-10-26
+updated: 2026-10-31
 ---
 
 # 취향과 판단
@@ -146,3 +146,7 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 ## 자기 스타일은 자기가 고른 결과에서 · POV는 인터넷이 아니라 삶에서 (2026-10-26 · [[tech-bridge-chieng-lee-ai-video-production]])
 
 영상 제작 강연(발췌, [[cova-lee|Cova Lee]] 추정): 최근 영상 50편에서 반복되는 시각 스타일을 에이전트가 뽑게 했다 — *"You kind of want to turn that into a system, which makes it easier for agents to help you with that work."*(04:15~04:29) 해설: *"남의 취향을 그대로 받는 대신 이미 자신이 고른 결과를 기준으로 삼은 거예요."*(04:05~04:09) 참고자료 모음도 *"왜 좋은지 한 줄"* 을 남겨 취향을 말로 만든다. Q&A에서는 그 취향의 원천을 이렇게 말한다. *"It is so important you live more of real life and not try to like absorb things you see from the internet (…) it's going to prevent you from developing a very strong and unique POV."*(08:19~08:32) 해설의 결론도 같다. *"무슨 이야기를 할지는 여전히 사람이 골라야 해요."*
+
+## 2026-10-31 — 사용자 쪽에서: 제품에 보이는 taste의 부재 ([[tech-bridge-ben-davis-codex-product-cohesion]])
+
+[[ben-davis|Ben Davis]](추정)는 taste를 **모델의 한계**로 놓는다: *"the models are not good at making open-ended product decisions that require for lack of better word human taste and discernment and decision-making."*(00:42~00:50) *"Opus is the best at it of anything but it's still not perfect or there."*(00:56~01:00) 앞 입장들이 *만드는 사람의 taste* 를 말했다면, 이 편은 **완성된 제품에서 그 부재가 보인다**는 사용자 쪽 관찰이다 — 그리고 사람의 몫을 *"a very strong vision, and especially way to say no to things"*(04:48~04:52)로 둔다. → [[primitives-before-features]]

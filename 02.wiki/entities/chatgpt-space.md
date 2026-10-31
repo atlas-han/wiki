@@ -6,9 +6,9 @@ tags: [openai, chatgpt, collaboration, office-suite, live-documents, multiplayer
 aliases: [Space, ChatGPT Space, 스페이스, live documents, 살아 있는 문서]
 links:
   - https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt
-sources: [tech-bridge-altman-devday-dots]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-ben-davis-codex-product-cohesion]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-31
 ---
 
 # Space (ChatGPT)
@@ -48,3 +48,12 @@ updated: 2026-10-09
 - [[openai]] · [[sam-altman]] · [[openai-dots]]
 - 관련: [[multiplayer-agent-context]] · [[spec-driven-development]] · [[persistent-agent-teams]]
 - 외부: <https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt> (⚠️ 미확인)
+
+## ⚠️ 같은 기능일 수 있는 사용자 관찰 — Codex 옆의 "spaces" (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
+
+> ⚠️ **동일성 미확정.** 이 소스의 화자([[ben-davis]] 추정)는 *spaces*(복수)를 *"one of the big new headline features that they shipped"*(02:21~02:24)라 부르지만 "ChatGPT Space"라는 이름 · 링크는 없고, [[codex|Codex]] thread와 묶어 말한다. 이 페이지의 DevDay 2026 Space와 같은 제품일 가능성은 있지만(둘 다 OpenAI의 최근 문서형 협업 기능, 공유 가능) **합치지 않고 교차 참조만 한다.**
+
+- 사용 방식: 영상마다 템플릿에서 복사한 단계 · 저장된 프롬프트를 *"fire off into a codex thread"*(02:47~02:51), 편집자와 *"shared spaces"*(02:54~02:56)를 쓴다. 한 줄 평 *"basically notion with a bunch of AI stuff built into it with a lot of rough edges around it."*(03:14~03:18)
+- 거친 점: 모델이 page를 바꿀 때 *"it will force your view, your entire computer back onto that page"*(03:25~03:29), thread가 Space 안과 일반 thread 양쪽에 보인다.
+- 처방: Spaces를 thread 위의 **별도 primitive**로, page는 thread가 조작하는 entity로, headless 제어 가능하게(05:37~06:06) → [[primitives-before-features]]
+- 위 Altman의 *live documents*(자동 갱신 문서) · 여러 Dot의 공동 작업과 비교하면, 이 관찰은 **사람이 저장해 둔 프롬프트로 에이전트를 발사하는 작업 템플릿**이다. 같은 제품이라면 쓰임의 다른 면이다.

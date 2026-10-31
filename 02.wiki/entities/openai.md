@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-10-30
+updated: 2026-10-31
 ---
 
 # OpenAI
@@ -227,3 +227,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## GPT 6.1 Terra — 출시 당일 제3자 리뷰 (2026-10-30 · [[tech-bridge-gpt-6-1-terra-first-look]])
 
 위키 첫 **OpenAI 모델 출시 당일 리뷰**(리뷰어 미상, 1인 체감). [[openai-terra|GPT 6.1 Terra]]는 *"extremely extremely fast"* 하고 입력 $1 / 출력 $5 per 1M(화자 정정, 미확인)이지만 *"it gives up very easily"* — 비교 기준은 [[openai-astra|GPT-6 Astra]]. 리뷰어는 *"Some of their releases lately have been like, 'Oh, okay, like no thanks.'"*(05:35~05:37)라며 이번엔 아니라고 한다.
+
+## 외부 사용자의 제품 비판 — Codex · ChatGPT의 일관성 (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
+
+[[ben-davis|Ben Davis]](설명란 · 태그 근거)는 OpenAI를 3인칭으로 비판한다: ChatGPT와 Codex의 분리는 *"very confusing to most people"*(01:39~01:41), Spaces와 thread의 결합은 어색하고 *"The cohesion just isn't there at the product level"*(04:07~04:09). Codex · ChatGPT를 고른 이유는 *"the most glaringly obvious one"*(04:54~04:56)이라서다. 마무리는 *"I trust they'll do it. There's tons of talented people there."*(06:29~06:31). ⚠️ 1인 사용자 의견, OpenAI 측 응답 없음 → [[primitives-before-features]] · [[codex]]

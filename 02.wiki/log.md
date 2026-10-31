@@ -2377,3 +2377,35 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 7분 · 6분 2편이라 서브에이전트 없이 오케스트레이터가 직접 했다. 둘 다 10-27 Voss · 10-28 Parakhin 편과 같은 **영어 원본 오디오만** 있는 구성이다(`English (US) original (default)` + 더빙 7개 언어, `language`=`en`, `ko-orig` 없음, ko `lang=en&tlang=ko`). 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429는 없었다.
+
+## [2026-10-31] ingest | Tech Bridge — 10-30 업로드 4편 (Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요? — Addy Osmani 대담 · 로켓 회사가 AI를 키우는 이유 — Musk 발언 발췌 · Grok Bot으로 일상을 자동화하기 — Dan Martell(추정) 튜토리얼 · 코드를 잘 짜는데, Codex는 왜 불편해졌을까? — Ben Davis(추정) 사용기)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). ⭐ 멤버 전용이던 `FTZak3J9YbM`가 `public` 줄로 나왔다(`upload_date` 20261027 → 20261030). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 10-30 업로드 3편과 합쳐 **4편** ingest.
+
+**신규 source 4 · entity 6 · concept 2**, 기존 페이지 보강 29개(+ tech-bridge), index **925 → 937**(실측 일치).
+
+- `CmsICMUPtII`(11:06, 챕터 11) → [[tech-bridge-anthropic-30k-merges-verification]]: 내레이션 없는 2인 무대 대담 편집본. 화자는 [[addy-osmani]](발화 호명, 강함) · [[manish-kapur]](설명란 + 소거법, 추정).
+  - 신규: [[addy-osmani]] · [[manish-kapur]] · [[layered-verification-every-loop]]
+  - 보강: [[software-factory]](lights-on/dark 정의) · [[verification-bottleneck]](병합 실패율 · 증거) · [[verification-cost-asymmetry]](검증 수단 제작 비용) · [[agent-verification-skill]](실제 사용자처럼 · hooks · CLAUDE.md) · [[agent-change-evidence]](영상 · 스크린샷) · [[named-human-accountability]](작성자 ≠ 책임자) · [[trusted-throughput]](3만 건 귀속) · [[anthropic]] · [[claude-code]]
+  - ⚠️ "3만"은 진행 쪽 발화이고 자기 정정이 있다. Addy의 2,500은 기간 단위가 없다. 설명란 링크 2개는 열어 보지 않았다.
+  - 페이지화하지 않음: CircleCI(통계 출처로만), Claude.ai 개편(사례 한 줄), property tests(나열), agent identity/telemetry(기존 [[agent-identity-separation]]로 충분), 행사(미상).
+- `FTZak3J9YbM`(7:31, 챕터 9, 멤버 전용 → 공개) → [[tech-bridge-musk-spacex-ai-compute-outlook]]: 내레이션 없는 Musk 발언 발췌. 화자는 설명란 · 태그 기준 [[elon-musk]].
+  - 신규: [[starship]] · [[starlink]]
+  - 보강: [[elon-musk]] · [[spacex]](GW 컴퓨트 · 임대 → ARR) · [[terafab]](시험 칩 27년 5~6월 · 양산 28Q3) · [[tesla]](합병 조건 · 특별위원회) · [[power-shortfall]](칩보다 전력 · 냉각, 터빈 블레이드 주조) · [[compute-constrained-growth]](에이전트 대역폭 · 임대 초과 수요)
+  - ⚠️ 녹화 행사 미상. 05:36 Optimus(en-orig) vs Grok(en/ko) 미확정. 주조 전제는 챕터 제목 · 설명란에만 있다. ARR 통화 단위 미발화.
+  - 페이지화하지 않음: Optimus / Grok(판독 불일치), Gibbons Creek(지명, ASR 철자), 터빈 공급사(무명), 특별위원회(구성 미발화).
+- `mHwP7oANlnA`(6:42, 챕터 10) → [[tech-bridge-dan-martell-grokbot-daily-automation]]: 내레이션 없는 1인칭 Grok Bot 사용 튜토리얼 발췌. 화자는 설명란 · 태그 기준 [[dan-martell]](추정).
+  - 신규: [[dan-martell]]
+  - 보강: [[grokbot]](사용자 쪽 첫 소스 · 녹화→스킬) · [[persistent-agent-teams]](chief of staff가 봇 생성 창구) · [[action-reversibility]](사용자 프롬프트 게이트) · [[least-privilege-connectors]](재무 읽기 전용 + 금지 지시) · [[scheduled-agent-automations]](자연어 예약 · skill then routine) · [[skill-self-improvement]](초안 vs 보낸 메일 diff) · [[multiplayer-agent-context]](공유 채널 team bot)
+  - ⚠️ 이름은 발화에 3인칭 한 번뿐이다. 제작사 미발화, 원본 링크 없음. 마지막 챕터 무캡션.
+  - 페이지화하지 않음: *Buy Back Your Time*(책 제목만) · email GPS system · Mac Mini · Gmail · Slack · 개별 봇들(프롬프트 예시).
+- `-B-967gXzHY`(6:51, 챕터 8) → [[tech-bridge-ben-davis-codex-product-cohesion]]: 영어 1인칭 사용기 발췌 + 무캡션 한국어 해설(추정). 화자는 설명란 · 태그 기준 [[ben-davis]].
+  - 신규: [[ben-davis]] · [[primitives-before-features]]
+  - 보강: [[codex]](외부 사용자의 표면 일관성 비판) · [[openai]] · [[chatgpt-space]](동일성 미확정 교차 참조) · [[codex-app-server]](프로토콜 층 vs 제품 층) · [[verifiable-goals]](경계의 UX 판본) · [[taste-vs-judgment]] · [[product-polish-patterns]](기능 사이 rough edges)
+  - ⚠️ 이름은 발화되지 않는다. *"Coda"*(5회)는 Codex로 판독했다. Spaces는 ChatGPT Space와 합치지 않았다.
+  - 페이지화하지 않음: ChatGPT(언급 수준), Opus(버전 미발화), Notion · Final Cut(비유), enshittification(concept 안에서 다룸).
+- [[tech-bridge]] · index · overview 갱신, iconize 12건.
+
+### 운영 메모
+
+4편이라 영상별 **병렬 서브에이전트 4개**로 raw · source · entity/concept를 나누고, 공유 페이지(index · overview · log · tech-bridge · iconize)는 오케스트레이터가 스크립트로 갱신했다. 커밋 전 오케스트레이터가 source · 신규 페이지의 영어 인용을 en-orig와 기계 대조했다. **비축자 인용 2건**(Musk 편 *"GW of compute"* · *"terawatt of chips"* — 발화는 *"gigawatts of compute"* · *"a terawatt of (…) super intelligence chips per year"*)을 source · [[terafab]] · [[power-shortfall]]에서 바로잡았다. 세 편은 영어 원본 오디오만 있는 구성, Codex 편은 10-28 `kJGTHFZHLVg`와 같은 Korean original + English 두 트랙 구성이다. 429는 없었다.

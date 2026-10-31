@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment, pareto-surfing]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment, pareto-surfing, primitives-before-features]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-tlc-ai-job-anxiety]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-tlc-ai-job-anxiety, tech-bridge-ben-davis-codex-product-cohesion]
 created: 2026-05-25
-updated: 2026-10-28
+updated: 2026-10-31
 ---
 
 # Verifiable Goals
@@ -188,3 +188,7 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## 같은 성질을 노출도 지표로 — TLC의 L (2026-10-28 · [[tech-bridge-tlc-ai-job-anxiety]])
 
 이 페이지는 검증 가능한 목표를 **에이전트가 루프를 돌게 하는 설계 원칙**으로 써 왔다. 10-27 업로드 TLC 편(화자 미상)은 같은 성질을 거꾸로 읽는다. *"AI improves fastest when the work is digital, repeatable, and quick to check. So it can try thousands of times and instantly see what worked. That's the loop."*(03:16~03:28) **빨리 검증되는 일일수록 AI가 빨리 배우고, 그래서 그 직무가 먼저 바뀐다** → [[ai-jobs-impact]]. 반대편 예(창업자 · 리더 · 복잡한 영업)는 10-09 Huang 편의 *"가장 가치 있는 목표는 모호하다"* 와 같은 방향이다. ⚠️ 사이버보안 · 고급 수학에서 빠르다는 예는 근거 제시가 없다.
+
+## 경계의 제품 판본 — UX는 verifier 함수로 쓸 수 없다 (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
+
+[[ben-davis|Ben Davis]](추정): *"Anything that can't be expressed with a clean verifier function the models still just aren't amazing at."*(00:52~00:56) 모델이 이기는 문제는 *"some sort of hill for them to climb. You have a test suite you need to get them all green."*(01:10~01:13)이고, *"You can't really do that for product experience and UI. It's very hard to encode that into a verifier function."*(01:23~01:29) 위 09-01 경계(*verifier를 만들 수 없는 곳*)가 **제품 UX**라는 구체적 자리를 얻고, 그 결과가 실제 제품(Codex · ChatGPT)의 이음매로 보인다는 주장으로 이어진다. 출시 비용이 0에 가까울수록 이 경계의 비용이 커진다 → [[primitives-before-features]]. ⚠️ 1인 사용자 의견. *"Maybe eventually someone will figure it out."*(01:29~01:30)

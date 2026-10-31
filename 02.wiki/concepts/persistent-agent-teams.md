@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing, always-on-agent-architecture]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-01
-updated: 2026-10-18
+updated: 2026-10-31
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -202,3 +202,14 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 - 지평이 늘어난다: 지금 *"a few hours, maybe a day"* → *"pretty soon um your agents will be working for weeks or months"*(38:45~38:58, 전망).
 - 봇 여럿은 virtual desktop으로 컴퓨터 인프라를 공유한다(*"shared infrastructure between these bots"* 13:10~13:12). 바로 위 절(Brennan)의 co-location 질문이 여기에도 남는다. 강의는 봇 간 격리를 말하지 않는다.
 - 그룹 채팅의 봇: *"There hasn't really been a lot of training data for example on using bots in a group chat"*(37:09~37:16) → 모델을 다중 에이전트에서 잘 행동하도록 학습시켜야 한다(37:25~37:33). → [[emergent-agent-collective]]
+
+## 사용자 쪽 판본 — chief of staff에게 말로 역할별 봇을 주문한다 (2026-10-31 · [[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+이 페이지의 첫 소스(GrokBot)를 **쓰는 쪽**, [[dan-martell|Dan Martell]](⚠️ 추정)의 개인 · 사업 운영 튜토리얼이다.
+
+- **코디네이터 계층이 봇 생성 창구가 된다** — 사용자는 봇을 직접 설정하지 않고 chief of staff에게 *"Build me a travel bot"* · *"Build me a people bot"* 식으로 말한다. 프롬프트마다 **역할 · 연결 대상 · 주기 · 출력 형식(길이 제한) · 시작 전 질문**이 들어간다.
+- **역할 분할의 실례**: inbox manager(Gmail · Slack) · travel · people · family · constraint(CRM · 매출 · 분석) · finance(읽기 전용) · leadership(회의 녹취 · 팀 Slack) · team bot.
+- **"자기 컴퓨터"의 사용자 쪽 명분**: *"you close that laptop, the thing stops working. Or you needed to buy a Mac Mini to make it work. Not anymore."*(00:24~00:31) — 위 Brennan 절의 Mac mini 공유 VM 비판과 같은 장면을 반대 방향(상시 실행의 편익)에서 본다.
+- **사람 사이의 배관 제거**: ChatGPT · Claude에서는 *"you copy and paste between projects"*(00:39~00:41), Grok Bot은 *"coordinate all the different handoffs"*(00:45~00:47) → [[human-plumbing]]
+
+> ⚠️ 1인 사용자 · 제품 홍보성 발화, 효과 수치 없음. 봇 간 격리 · 권한 분리는 finance bot의 읽기 전용 말고는 언급되지 않는다.

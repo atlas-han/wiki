@@ -5,9 +5,9 @@ category: theory
 tags: [compute, scaling, growth, efficiency, demand, data-center, bubble, openai]
 related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition, power-shortfall, intelligence-abundance]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-nadella-copilot-autopilot, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-nadella-copilot-autopilot, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-musk-spacex-ai-compute-outlook]
 created: 2026-09-06
-updated: 2026-10-22
+updated: 2026-10-31
 ---
 
 # Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
@@ -133,3 +133,12 @@ G20에서 Altman이 *"효율은 수요가 삼킨다"* 에 **숫자를 붙였다.
 ## 결과보다 앞선 수표 — Meta (2026-10-22 · [[tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint]])
 
 원음(Zuckerberg · Wang, 문장별 화자 미확정): *"be radically behind if you wa[it] to see if things are working"* · *"We haven't seen the models yet. (…) we're going to write this check for (…) [?] billion or [?] billion. I'm like, You sure this is going to work?"* · *"the whole exec team scared"*(08:14~08:52). 해설: *"결과를 확인하고 투자 규모를 조금씩 늘리는 방식으로는 필요한 시점에 컴퓨터가 준비되지 않는다"*, 금액 *"1천억 달러가 넘는"*(⚠️ 원음에서 숫자 누락). 근거는 *"vibe report"* 와 *"some plots"* 였다는 자기 진술이 붙는다.
+
+## 수요 쪽 두 가지 — 에이전트의 대역폭, 그리고 "rent out several times over" (2026-10-30 · [[tech-bridge-musk-spacex-ai-compute-outlook]])
+
+[[elon-musk|Musk]](설명란 · 태그 근거)의 발언에서 수요 논리 두 개가 나온다.
+
+- **에이전트가 통신을 먹는다** — *"AI or ASI agents will (…) even on a per agent basis use far more bandwidth than a person and there will be far more agents than there are people."*(02:14~02:27) 3~5년 안에 대역폭 수요가 1,000배라고 한다 → [[starlink]]. 위 「수요의 크기 — 토큰 외삽」과 같은 모양이다(에이전트 수 × 에이전트당 사용량). 이번엔 대상이 **연산이 아니라 대역폭**이다.
+- **임대 초과 수요** — *"hounded relentlessly by (…) every hyperscaler and by (…) dozens of smaller companies (…) to rent more of our compute"*(05:43~05:56), *"we could rent out our compute several times over if we said yes to everyone"*(06:00~06:03). 화자는 이것을 **SpaceX ARR 2027년 말 5,000억~1조**(06:06~06:21)로 잇는다.
+
+⚠️ 위 「판매자의 시각과 나란히」의 원칙이 그대로 적용된다. 화자는 컴퓨트를 **빌려 주는 쪽**이다. *"several times over"* 는 고객 이름 · 계약 · 가격이 없는 일화이고, ARR 전망에는 통화 단위 · 계산이 없다.

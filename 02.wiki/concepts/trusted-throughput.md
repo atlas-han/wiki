@@ -5,9 +5,9 @@ category: pattern
 tags: [productivity-metrics, token-economics, code-review, ci, goodhart, roi]
 related: [verifiable-goals, agent-org-adoption, frontier-engineering, generator-evaluator-pattern, outcome-engineering, token-roles, context-resets-and-compaction, intelligence-as-infrastructure, compute-constrained-growth, value-maxing, token-minimization-trap, effort-output-outcome-mission]
 first-seen: tech-bridge-trusted-throughput
-sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-gitar-agentic-pr-validation, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-trusted-throughput, tech-bridge-claude-platform-agent-era, tech-bridge-flutter-ai-workflow, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-gitar-agentic-pr-validation, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification]
 created: 2026-09-02
-updated: 2026-10-17
+updated: 2026-10-31
 ---
 
 # Trusted Throughput
@@ -240,3 +240,7 @@ PR 분류(*"what amount of PRs are going to feature development versus fixing is
 *"Token leaderboards at big companies just encourage profligate spending. It's Goodhart's law in real time. If you decide to measure token usage, engineers are going to optimize for token usage, and then it's no longer a good metric."*(16:32~16:49) [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]])는 *"It's about who can get the highest leverage outcomes from that spent."*(16:54~16:58)이라고 하고, Factory가 보는 지표를 이름으로 든다: *"signal to production time, human intervention count, median time to repair, shelf life of code, and cost per PR. These are real tangible outcomes."*(17:02~17:13)
 
 이 페이지의 논증(토큰은 LOC다, 대시보드는 조작된다)에 **벤더 쪽의 명시적 Goodhart 인용**이 더해진다. *human intervention count* 는 Tessl의 *manual takeovers* 와 같은 계열로 사람의 개입을 센다. ⚠️ 다섯 지표 모두 이름만 있고 정의·값·사례가 없다. ko는 *signal to production time* 을 "이제 시작할 시간이에요 / 생산에 대한 신호"(17:01~17:03)로, *median* 을 "mean"으로 옮긴다(ko·`en` 공유).
+
+## "하루 3만 건" — 누가 말했고 누가 확인하지 않았나 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
+
+영상 제목의 숫자는 진행 쪽([[manish-kapur]] 추정) 발화다: *"They are merging about 30,000 code changes every single day. They used to do about 3,000 or so, 2,500 or so code changes just a few months back. They've scaled from 2,500 code changes to 3,000 30,000 code changes per day."*(03:27~03:41) — 스스로 3,000 → 30,000으로 고친다. [[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽)의 숫자는 *"about 2,500 changes all the way back in May"*(03:50~03:53, **기간 단위 미발화**)와 Claude.ai 개편 때 *"about 3,000 pull requests in a very short space of time"*(04:03~04:05)뿐이고 3만은 되풀이하지 않는다. 설명란의 Anthropic 글(redesigning-source-control)이 출처일 수 있으나 열어 보지 않았다(미확인). ⚠️ 이 페이지의 경고대로 *변경 수 ≠ 산출*: 같은 대담이 *"Fast to write is not fast to ship"*(10:37)으로 끝나고, CircleCI 통계(처리량 +59%, 병합 시도 10건 중 3건 실패, 00:20~00:32)가 처리량과 병합 성공이 따로 움직인다는 반례로 인용된다.

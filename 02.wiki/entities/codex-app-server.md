@@ -7,9 +7,9 @@ aliases: [App Server, app server, Codex app-server, codex app server]
 links:
   - "https://developers.openai.com/codex/app-server"
   - "https://github.com/openai/codex"
-sources: [tech-bridge-codex-app-server, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-codex-app-server, tech-bridge-cooking-with-codex, tech-bridge-ben-davis-codex-product-cohesion]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-31
 ---
 
 # Codex App Server
@@ -60,3 +60,7 @@ updated: 2026-10-16
 - [[tech-bridge-codex-app-server]] — 1차 소스
 - [[tech-bridge-cooking-with-codex]] — first mention (§6, Retrodex)
 - [[codex]] · [[openai]] · [[dominik-kundel]] · [[embedded-agent-harness]] · [[agent-client-protocol]] · [[deferred-tool-context]] · [[bring-your-own-subscription]]
+
+## 프로토콜은 같아도 제품 단위는 다르다 — 사용자 비판 (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
+
+[[ben-davis|Ben Davis]](추정)는 *"A Coda[=Codex] thread should become the base building block for everything. That should be the building block for the CLI, for the desktop app, for the web app, everything."*(05:20~05:30)이라고 요구한다. 이 페이지가 정리한 당사자 설명(App Server = Codex app · CLI · VS Code 확장의 공통 프로토콜)과 **층이 다르다** — 하네스 · 프로토콜 층은 이미 공통이라는 것이 OpenAI의 말이고, 화자는 **사용자가 보고 다루는 thread 단위**가 표면마다 어긋난다고 말한다(Spaces 안의 thread와 일반 thread). 모순은 아니다. ⚠️ 화자는 App Server를 언급하지 않는다. → [[primitives-before-features]]

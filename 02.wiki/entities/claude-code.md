@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-10-23
+updated: 2026-10-31
 ---
 
 # Claude Code
@@ -208,3 +208,7 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## "Claude Code ≠ Minions" — 만든 사람의 대담을 다룬 해설 (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
 
 설명란 기준 [[patrick-collison|Patrick Collison]](Stripe CEO)과 [[boris-cherny|Boris Cherny]](*"클로드 코드를 만든"*, 해설 00:43)의 대담을 다룬 해설이다. 해설은 **Stripe 사내 에이전트 [[stripe-minions|Minions]]와 Claude Code를 구분하라**고 두 번(01:36~01:48, 설명란) 고지한다 — devbox·blueprint는 Minions 쪽 이야기다. Claude Code에 직접 귀속되는 원음은 **없다**(Cherny 목소리로 확정되는 구간 없음). 해설의 *"작업하는 디렉토리에서 필요한 안내를 발견하게"*(05:34~05:39) 권고는 위 *계층적 CLAUDE.md 상속*과 같은 방향이다(Tech Bridge 1인칭 권고).
+
+## 2026-10-31 — Claude Code 팀의 리뷰 루프: 1차 리뷰 · hooks · CLAUDE.md ([[tech-bridge-anthropic-30k-merges-verification]])
+
+[[addy-osmani|Addy Osmani]](진행 쪽 표현으로 *"the Claude Code team that you're working with"* 03:48~03:49): Claude가 1차 리뷰를 하되 *"try the experience out similar to a real user"*(04:22~04:24) — 브라우저 · e2e · 린트. 결함은 *"hooks that will then go and run on any edits"*(04:44~04:46)가 diff를 보고 PR을 고치는 루프로 처리한다. 팀 기준은 *"Claude.md, Agents.md"*(05:09, ASR)에 성문화해 리뷰 때 참조하게 한다. 사람은 영상 · 스크린샷 같은 검증 증거를 본다 → [[agent-verification-skill]] · [[agent-change-evidence]]. ⚠️ 내부자 진술, 수치 · 설정 예시 없음.

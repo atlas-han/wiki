@@ -6,9 +6,9 @@ tags: [tesla, spacex, x, ceo, humanoid-robots, regulation, g20, power-grid]
 links:
   - https://www.tesla.com/
   - https://www.spacex.com/
-sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-musk-abundance-work-control]
+sources: [tech-bridge-elon-musk-g20-ai-future, tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-musk-abundance-work-control, tech-bridge-musk-spacex-ai-compute-outlook]
 created: 2026-09-07
-updated: 2026-10-27
+updated: 2026-10-31
 ---
 
 # Elon Musk
@@ -105,3 +105,16 @@ Tech Bridge 한국어 해설 + 인터뷰 발췌(8:30)다. 진행자는 해설에
 - **protopia** — *"an achievable (…) future that is not perfect but it's good"*(07:49~07:58)
 
 ⚠️ 위 「유보」 절의 위치(AI · 로봇 회사 CEO)는 이 편에도 그대로 적용된다. 이번에는 해설이 수치마다 *"거친 추정"* 이라는 단서를 단다.
+
+## 로켓 회사가 AI를 키우는 이유 — GW · Terafab 일정 · ARR · 합병 조건 (2026-10-30 · [[tech-bridge-musk-spacex-ai-compute-outlook]])
+
+내레이션 없는 발췌 편집본(7:31)이다. 화자 이름은 설명란 · 태그에만 있다. 녹화 행사 · 날짜는 나오지 않는다(2026년, Starship 첫 궤도 비행 이후로 추정). 투자자 대상 어휘(*"annual recurring revenue"* · *"shareholders"* · *"special committees"*)가 나온다.
+
+- **[[starship]]** — Flight 15에서 부스터와 Ship을 모두 포획한다. *"more likely than not"*(01:08~01:10)
+- **[[starlink]]** — 3년 안에 대역폭 100배, 3~5년 안에 수요 1,000배. 근거는 *"far more agents than there are people"*(02:25~02:27)
+- ⭐ **병목** — *"more in power and cooling and infrastructure than it is in chips"*(02:59~03:04). 2026년 말 약 3 GW에 2027년 +10 GW를 더해 *"less than 13 gigawatts"* 면 놀랍다고 한다(03:34~03:39). 터빈 블레이드 · 베인 주조가 12~18개월 늦다 → [[power-shortfall]]
+- **[[terafab]]** — 시험 칩은 2027년 5~6월, 양산은 2028년 3분기가 목표다. 화자 스스로 *"insanely fast"* 라 한다
+- **ARR** — *"by the end of 2027 is somewhere between 500 billion and a trillion"*(06:16~06:21). 근거는 컴퓨트 임대 수요 일화뿐이다
+- ⭐ **SpaceX–Tesla 합병** — *"overstating it"* 이라 하면서도 *"a good idea? Yes"* 라 한다. Tesla 쪽은 **전체 주식의 50%** 찬성이 필요하고, 특별위원회가 조건에 합의하지 못했다(06:29~07:12) → [[tesla]]
+
+⚠️ 05:36의 단어가 트랙마다 다르다. en-orig는 *"Optimus"*, `en`/ko는 *"Grok"* 이다. 확정하지 않는다. 위 「유보」 절의 위치(회사 소유주의 자기 진술)는 이 편에 가장 강하게 적용된다. 수치가 전부 자기 회사의 전망이다.

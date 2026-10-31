@@ -6,9 +6,9 @@ tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
 related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-09
-updated: 2026-10-24
+updated: 2026-10-31
 ---
 
 # 행동 가역성
@@ -91,3 +91,14 @@ Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이�
 ## 개인 비서의 4동사 게이트와 승인 불가 영역 (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
 
 [[claude-duet|Claude Duet]](발췌, 화자 미상): *"before it sends a message, makes a payment, signs a document, or deletes anything, it shows you what exactly it's about to do and waits for your approval."* 해설은 두 단계로 나눈다 — **읽기·정리·초안은 먼저**, 밖으로 보내기·결제·삭제는 승인 후. 그리고 *"주식거래나 계좌[ 간] 송금처럼 승인해도 할 수 없는 일도 있고요."*(03:14~03:17) → 이 페이지의 one-way door 구분이 **동사 목록**으로 제품에 들어갔고, 그 위에 **승인으로도 열리지 않는 층**이 하나 더 있다. [[no-silent-write]]와 같은 방향. ⚠️ 2차 진술.
+
+## 사용자가 프롬프트로 거는 게이트 — 결제 · 제출 전 승인, 돈은 아예 못 옮기게 (2026-10-31 · [[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+[[dan-martell|Dan Martell]](⚠️ 추정)의 [[grokbot|Grok Bot]] 프롬프트들이 같은 구분을 **사용자 지시문**으로 건다. 위 Duet 절은 제품 기본값이었다.
+
+- travel bot: *"Once I pick one, fill in the booking and ask for my okay before you pay."*(03:00~03:04) — 채우기는 봇, 선택 · 결제는 사람.
+- family bot: *"Fill out the forms when I ask, and get me the okay before you submit anything."*(03:54~03:58)
+- finance bot: 읽기 전용 접근 + *"And never move money or pay anything."*(04:51~04:53) — Duet의 *"승인해도 할 수 없는 일"* 층과 같은 자리.
+- 이메일은 **초안만** 만들고 보내지 않는다(*"review mode only"* 02:40).
+
+> ⚠️ 게이트가 프롬프트 지시만으로 지켜지는지, 제품 권한으로 강제되는지는 발화되지 않는다(finance bot의 *"read-only access"* 제외).

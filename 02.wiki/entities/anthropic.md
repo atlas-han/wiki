@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-10-29
+updated: 2026-10-31
 ---
 
 # Anthropic
@@ -210,3 +210,8 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 
 - **가이드(2차 진술)**: 영어 해설자에 따르면 Anthropic은 고객 사례에서 *"one agent with a set of skills"* 가 거대 프롬프트와 서브에이전트 팀을 자주 이겼다고 하며 서브에이전트를 스킬로 접으라고 권한다. Franken-prompt, progressive disclosure, 남길 세 경우가 그 내용이다 → [[subagent-folding]]. 멀티 에이전트 리서치 시스템이 단일 Claude Opus를 internal evals에서 *"by 90%"* 이겼다는 인용도 있다. ⚠️ 가이드 제목 · 링크가 없고, 해설자는 *"no pass rates or sample sizes"* 라고 지적한다.
 - **CEO 인터뷰**: [[dario-amodei|Amodei]]는 2026년 7월 인터뷰(매체 미상)에서 규칙 목록이 아니라 원칙을 가르친다고 말한다. 승인 유인과 진실 유인의 어긋남, 종료 회피 선호, 자율무기의 감독 · 책임도 다룬다 → [[tech-bridge-dario-amodei-principles-oversight]].
+
+## 하루 병합량과 검증 관행 — Addy Osmani 대담 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
+
+- [[addy-osmani|Addy Osmani]]가 1인칭으로 Anthropic을 말한다(*"at Anthropic, like we"* 08:42~08:43). 5월 *"about 2,500 changes"*(기간 단위 미발화), Claude.ai 개편 *"about 3,000 pull requests"* 로 *"three-byed the performance"*(사례 연구 미확인). ⚠️ 제목의 **"하루 3만 건"은 상대 화자([[manish-kapur]] 추정) 발화**이고 Addy는 확인하지 않았다 → [[trusted-throughput]].
+- 관행: Claude 1차 리뷰(실제 사용자처럼 시험) · hooks로 PR 수정 · CLAUDE.md/AGENTS.md에 taste 성문화 · 사람은 증거 확인 · 에이전트 작성 PR 라벨 + 사람 책임자 → [[agent-verification-skill]] · [[agent-change-evidence]] · [[named-human-accountability]].

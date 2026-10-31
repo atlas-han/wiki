@@ -6,9 +6,9 @@ tags: [accountability, attribution, wiki, governance, audit, authorship]
 aliases: [사람 이름 규칙, human-backed changes]
 related: [no-silent-write, company-brain, behavior-validated-trust, agent-action-record, decision-quality, agentic-misbehavior]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification]
 created: 2026-09-10
-updated: 2026-10-20
+updated: 2026-10-31
 ---
 
 # 모든 변경에 사람의 이름
@@ -55,3 +55,7 @@ updated: 2026-10-20
 ## 2026-10-20 — 검토자 자리에서 빠지는 사람 ([[tech-bridge-three-level-agent-review]])
 
 [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 *"not by me"*(12:03)는 검토를 에이전트에게 넘긴다. 그러나 법적 요구서를 보낼지 결정한 사람이 누구인지는 발화되지 않는다(*"Our litigator's verdict, though, was do not send the letter."* 10:44~10:46의 litigator는 persona 에이전트다). 이 페이지의 축(이름 붙은 사람의 귀속)에서 보면 **검토와 귀속이 분리될 수 있는가**라는 질문을 남긴다. → [[risk-proportional-human-review]] · [[three-level-agent-review]]
+
+## 2026-10-31 — 작성자 라벨과 책임자 라벨은 다르다 ([[tech-bridge-anthropic-30k-merges-verification]])
+
+질문 *"Should agent-written code be labeled in the PR?"*(08:28~08:30)에 [[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽)는 *"I personally think it should"*(08:32)라고 답하며 소유 의식의 이동을 말한다: *"We've evolved to the point where we don't really mind so much if Claude is like labeled as hey, I'm I'm the one that wrote this thing, because we're a little bit more focused on the outcomes"*(08:45~08:54). 라벨은 *"what are some of the constraints and extra checks that we need to keep in place"*(09:08~09:10)를 정하는 데도 쓴다. 그러나 **책임은 옮기지 않는다**: *"we still label like who's the owner for this change. I might have kicked off a Claude a Claude run to complete a piece of work, but I'm I'm still on the hook. If something goes wrong, I have to go and fix it."*(09:35~09:44) [[manish-kapur]](추정)는 같은 입장에 기한을 붙인다 — *"6 to 9 months, we should label the PRs till we are confident enough in our factories"*(09:14~09:20), 금융권 고객의 *"auditability"*(09:25) 때문. → 이 페이지의 규칙에 **작성자(에이전트일 수 있음)와 책임자(반드시 사람)를 따로 표기한다**는 구분이 붙는다.

@@ -6,9 +6,9 @@ tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
 related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection, three-level-agent-review]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification]
 created: 2026-09-13
-updated: 2026-10-20
+updated: 2026-10-31
 ---
 
 # 검증 비용의 비대칭
@@ -77,3 +77,7 @@ updated: 2026-10-20
 ## 판단할 재료가 없는 사례 — 검토 비용만 보고된다 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
 
 [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)은 검토 비용을 분·토큰으로만 말한다: 회계 Level 2 *"about 20 minutes and cost 7.5 million tokens"*(08:47~08:50), 요구서 cold review *"15 minutes and cost 13 million tokens"*(10:48~10:51), 메모리 누수 cold review 둘 *"about 15 minutes, and together cost about 6 million tokens"*(06:48~06:52). Level 1의 *"19 minutes and about 16 million tokens"*(05:29~05:32)는 작업+검토 합계다. **작업 자체의 비용이 따로 없어** 검증이 실행보다 쌌는지 판단할 수 없다. 비교 기준은 사람의 시간이다(*"minutes, not hours"* 03:48~03:50). Contradiction이 아니라 공백으로 기록한다. → [[three-level-agent-review]]
+
+## 검증 수단을 만드는 비용이 내려갔다 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
+
+[[addy-osmani|Addy Osmani]]: *"Agents can now generate ways for you to check your code much more cheaply than ever before."*(02:36~02:41) 좋은 코드를 가능하게 하던 것 — *"good tests, benchmarks, uh specs"*(02:50~02:54) — 을 에이전트가 더 싸게 만든다는 것이다. 이 페이지의 비대칭(검증이 실행보다 싸다)과는 다른 축이다: **검증 *실행* 비용이 아니라 검증 *수단 제작* 비용**이 내려갔다는 주장이다. 귀결은 ② *비대칭이 있으면 검증도 자동화하라* 와 같다 — *"those checks are one of the most important things we should be spending our time on"*(03:02~03:06). ⚠️ 비용 수치는 없고, *"two to three by like the quality of your outcomes"*(03:21~03:23)도 측정이 없다.

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [product-polish, ux-patterns, one-shot, autosave, optimistic-updates, undo, archiving, url-state, infinite-scroll, internal-tools, agents]
 aliases: [polish patterns, 원샷 vs 다듬어진 소프트웨어, "agents don't do unless you ask", 제품 완성도 체크리스트]
-related: [no-one-shot-design, ai-slop, design-system-as-agent-context, codebase-gardening, agent-verification-skill, action-reversibility, smarter-software-vs-cheaper-software, agent-skills]
+related: [no-one-shot-design, ai-slop, design-system-as-agent-context, codebase-gardening, agent-verification-skill, action-reversibility, smarter-software-vs-cheaper-software, agent-skills, primitives-before-features]
 first-seen: tech-bridge-railway-polished-internal-tools
-sources: [tech-bridge-railway-polished-internal-tools]
+sources: [tech-bridge-railway-polished-internal-tools, tech-bridge-ben-davis-codex-product-cohesion]
 created: 2026-10-19
-updated: 2026-10-19
+updated: 2026-10-31
 ---
 
 # 제품 완성도 패턴 (Product Polish Patterns)
@@ -59,3 +59,7 @@ updated: 2026-10-19
 - [[tech-bridge-railway-polished-internal-tools]] — first-seen
 - [[mahmoud-abdelwahab]] · [[railway]]
 - 관련: [[no-one-shot-design]] · [[ai-slop]] · [[design-system-as-agent-context]] · [[codebase-gardening]] · [[agent-verification-skill]] · [[action-reversibility]] · [[smarter-software-vs-cheaper-software]]
+
+## 화면 안이 아니라 기능 사이 — 사용자가 본 rough edges (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
+
+[[ben-davis|Ben Davis]](추정)의 Codex Spaces 평: *"basically notion with a bunch of AI stuff built into it with a lot of rough edges around it."*(03:14~03:18) 예로 든 것은 이 페이지 목록(autosave · undo · URL state …)에 없는 종류다 — 모델이 page를 고칠 때 *"it will force your view, your entire computer back onto that page"*(03:25~03:29), 같은 thread가 두 곳에 보임. 즉 **개별 화면의 완성도가 아니라 기능 사이의 일관성**이고, 화자의 진단은 같은 방향이다: 모델은 *"not going to do it in the best possible way, and a lot of weird edges are going to naturally start to form"*(04:42~04:47). → [[primitives-before-features]]

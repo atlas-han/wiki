@@ -6,9 +6,9 @@ tags: [multiplayer, shared-agent, slack, knowledge-creation, privilege, incident
 aliases: [공유 AI, 멀티플레이어 에이전트]
 related: [company-brain, credential-injection-outside-sandbox, claude-tag, goal-level-delegation, persistent-agent-teams, no-silent-write, agent-org-adoption]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-company-brain-security, tech-bridge-one-designer-plus-ai, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-horthy-state-of-software-factory, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-10
-updated: 2026-10-16
+updated: 2026-10-31
 ---
 
 # 멀티플레이어 에이전트 컨텍스트
@@ -86,3 +86,12 @@ updated: 2026-10-16
 ## 2026-10-15 — 로컬 세션에도 사람을 끌어온다 ([[tech-bridge-horthy-state-of-software-factory]])
 
 [[humanlayer|HumanLayer]]: *"I can see everything my team is working on. I can jump into a teammate session. I can invite people to co-prompt my session. Not even in the cloud, like it can be running on my laptop and I can pull somebody into my cloud code[=Claude Code?] session."*(15:06~15:16) + Google Docs·Notion 모양 artifact 협업(15:16~15:22) + diff 스트리밍으로 PR 전 리뷰(15:22~15:31). 동기: 지금은 Slack·Teams 복사·붙여넣기로 팀원의 에이전트와 내 에이전트를 잇는다(13:35~13:50). ⚠️ 벤더 진술, 사용 수치 없음.
+
+## 2026-10-31 — 공유 Slack 채널의 team bot, 고치는 사람도 모두 ([[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+[[dan-martell|Dan Martell]](⚠️ 추정)의 [[grokbot|Grok Bot]] 튜토리얼: *"The key thing is is put the team bots in a shared room. (…) And then everybody can talk to the bot in the Slack channel. And then if the bot is not smart, then they go fix the bot inside of their bot structure and then everybody wins because of it."*(05:24~05:38) 효과 주장은 *"nobody has to wait to ask a question to a person if they're available or in a meeting"*(05:38~05:42). 예: product management bot · revenue leader bot.
+
+- 이 페이지의 *여러 사람이 한 에이전트를 공유* 에 **고치는 권한도 공유**가 더해진다. 다만 누가 무엇을 고칠 수 있는지, 서로 다른 권한 수준은 말하지 않는다.
+- leadership bot은 팀 Slack *"in every channel"*(05:00)을 읽고 *"link the source of anything important and tell me what you couldn't read"*(05:11~05:14) — 출처 링크와 **못 읽은 것의 보고**를 요구한다.
+
+> ⚠️ 1인 사업주 시점의 제품 설명, 운영 결과 없음.

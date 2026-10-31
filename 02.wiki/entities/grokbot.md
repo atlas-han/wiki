@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-01
-updated: 2026-10-29
+updated: 2026-10-31
 ---
 
 # GrokBot
@@ -116,3 +116,15 @@ updated: 2026-10-29
 ## 하네스가 늘 줄지는 않는 사례로 재인용 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
 
 영어 해설자가 *"Grockbot"* 의 코디네이터 봇 + 워커 함대를 반례로 든다. 코딩 밖의 영역이라 *"adding certain guard rails back"* 한다는 것이다(05:46~06:08). 10-24 [[tech-bridge-jediah-katz-harness-whats-left|Katz 편]]과 같은 사실의 재인용이고 새 정보는 없다 → [[subagent-folding]].
+
+## 사용자 쪽 첫 소스 — 역할별 봇을 말로 만든다 (2026-10-31 · [[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+지금까지 이 페이지의 소스는 전부 **만드는 쪽**이었다. [[dan-martell|Dan Martell]](⚠️ 설명란 · 태그 근거 추정)의 튜토리얼 발췌가 처음으로 **비엔지니어 사용자**의 쓰임을 준다. 코딩 · Cursor 연결은 한 번도 나오지 않는다.
+
+- **구성 요소 표의 재확인**: *"Every Grok Bot comes with its own virtual computer and login that's on 24/7"*(00:18~00:22), 봇끼리 *"group chat with each other"*(00:47~00:49), 예약 · Slack 감시 트리거(00:29~00:35).
+- **chief of staff가 봇을 만든다** — 사용자는 *"build me an inbox manager, name it something fun"*(01:49~01:54)처럼 말로 지시하고, 반복 일정도 설정 없이 말로 건다(01:31~01:40). 예시 봇: inbox manager · travel · people · family · constraint · finance · leadership · team bot.
+- **사용자가 프롬프트로 거는 게이트** — *"ask for my okay before you pay"*(03:02~03:04), *"get me the okay before you submit anything"*(03:56~03:58), finance bot은 *"read-only access"*(04:39) + *"never move money or pay anything"*(04:51~04:53). → [[action-reversibility]] · [[least-privilege-connectors]]
+- **team bot** — 플러스 아이콘 맨 아래 *"team bot"*(05:56~05:58), Slack 공유 채널에 두고 모두가 고친다(05:24~05:38). → [[multiplayer-agent-context]]
+- **웹보다 API**(06:03~06:11), *"skill then routine"*(06:11), **computer use로 작업을 녹화하면 스킬이 된다**(06:16~06:24) — 위 Lee Robinson 절의 *"plugins (…) skills or servers (…) routines"* 에 **녹화 → 스킬** 경로가 사용자 발화로 붙는다.
+
+> ⚠️ 제작사 미발화, 시연 결과 · 수치 없음, 녹화 → 스킬 기능은 미확인. 이번 en-orig는 *"Grok Bot"* 표기가 대체로 바르다(*"Grok bot"* 06:03~06:05).

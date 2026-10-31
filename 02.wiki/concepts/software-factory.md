@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification]
 created: 2026-10-02
-updated: 2026-10-17
+updated: 2026-10-31
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -242,3 +242,14 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 > ⚠️ **Contradiction(같은 회사 안): 3원칙이 다르다.** Tereza(10-01 업로드)의 3원칙은 **agnostic · autonomous · always improving**, Palmie(10-15 업로드)의 3원칙은 **model agnostic · sovereign deployment · SDLC 통합**이다. 겹치는 것은 비종속 하나뿐이다. *autonomous* 자리에 배포 주권이, *always improving* 자리에 SDLC 통합이 들어간다. 두 발표 모두 *"principles"* 라고 부르며 서로를 언급하지 않는다. 회사의 공식 프레임이 바뀐 것인지 청중에 맞춘 것인지는 알 수 없다.
 
 > ⚠️ **사람의 자리.** Palmie는 *"Humans need to stand as validation gates in this factory"*(15:51~15:55)라고 하고 *"Engineers will not be replaced, but judgment and prioritization now beat mechanical implementation skill."*(15:36~15:43)이라고 한다. Tereza의 루프 밖 감독자보다 이 페이지의 Warp 쪽(사람 게이트)에 가깝다. 다만 *"code does not have to be written by hand"*(16:01~16:03)라고 할 뿐 코드를 읽으라고는 하지 않는다. 그 점에서 Horthy 편의 *"for now we should probably read the code"* 와 갈린다. 벤더 발표이고 측정은 없다.
+
+## lights-on과 dark를 가르는 정의 — "harnessing loops at scale" (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
+
+[[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽, 본인 1인칭)의 정의: *"software factory is harnessing loops at scale"*(01:00~01:02). 그리고 두 공장:
+
+- **lights-on**: *"agents that are helping you um with planning, building, checking, and shipping code again and again, but you as a person still apply your judgment and taste inside the picture."*(01:04~01:14)
+- **dark**: *"a little bit closer to how, you know, a car factory with robotics might be working"*(01:18~01:22) — 사람은 *"thinking about intent"* 로 물러나고 *"the greatest of exceptions"* 에만 불려 온다(01:29~01:35).
+
+Pocock의 *"the lights are on"*(10-10) · Horthy의 *"lights-off software factory"*(10-15)가 이름으로만 쓰던 구분이 여기서 **사람의 판단 · taste가 루프 안에 있는가**라는 기준을 얻는다. 대부분의 팀은 그 사이에서 *"how do I get further and further into automation in a way that I can trust it"*(01:43~01:46)을 찾는 중이라고 본다. 진행 쪽([[manish-kapur]] 추정)의 맺음은 *"We will get to software factories very soon, if not next year"*(10:51~10:54)와 *"autonomy is earned"*(10:48~10:51), 조건은 *"independent automated verification inside each loop of your factory"*(10:56~11:00) → [[layered-verification-every-loop]].
+
+> ⚠️ Kent Beck(반론 2) · Horthy(반론 3)의 *dark factory는 탈선한다 / 지금은 아니다* 와 달리 이 대담은 dark를 **도달 목표**로 놓는다. 다만 Addy 본인은 Anthropic이 dark라고 말하지 않는다 — 그가 설명하는 워크플로(사람이 증거를 확인, 이름 붙은 책임자)는 lights-on 쪽이다.

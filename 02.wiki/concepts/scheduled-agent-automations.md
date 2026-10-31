@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-09
-updated: 2026-10-18
+updated: 2026-10-31
 ---
 
 # 예약형 에이전트 자동화
@@ -110,3 +110,11 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## GrokBot 루틴 = 예약 프롬프트 (2026-10-18 · [[tech-bridge-lee-robinson-always-on-agents]])
 
 *"routines which if you're familiar with cron jobs you know you're running some prompt basically on some kind of schedule"*(09:53~10:01). 루틴의 결과도 always-on agent를 깨우는 트리거다(11:46~11:52). 사용자가 보여 준 일을 루틴으로 바꾸기도 한다(08:19~08:28). → [[always-on-agent-architecture]] · [[grokbot]]
+
+## 설정 대신 말로 예약 · "skill then routine" (2026-10-31 · [[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+[[dan-martell|Dan Martell]](⚠️ 추정)의 [[grokbot|Grok Bot]] 사용 튜토리얼.
+
+- **예약은 자연어로**: *"Every weekday at 5:00 a.m. (…) Send me one short brief"*(01:06~01:16)라고 말한 뒤 *"Notice that I didn't have to go in and configure a reoccurring schedule. I just talked to it like I would a team member"*(01:31~01:38). 위 GrokBot 루틴 = 예약 프롬프트 절의 **사용자 쪽 체감**이다. 예시 주기: 평일 5시 · 매일 6시 · 매일 7시 · 매주 금요일 · 매주 일요일.
+- **순서**: *"Number four, skill then routine. Do it once, save it as a skill, and then schedule it."*(06:11~06:16) — 위 Brockman의 "다섯 번"과 달리 **한 번 해 보고 바로 스킬 → 예약**. 작업을 computer use로 녹화해 스킬을 만드는 경로도 말한다(06:16~06:24, 미확인).
+- 트리거는 예약 + 이벤트 둘 다(*"run on a schedule so that they can monitor Slack or if a message comes in"* 00:29~00:35).

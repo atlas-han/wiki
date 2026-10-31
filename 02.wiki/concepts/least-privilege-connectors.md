@@ -6,9 +6,9 @@ tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
 related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools, agent-sandboxing]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation]
 created: 2026-09-14
-updated: 2026-10-24
+updated: 2026-10-31
 ---
 
 # 최소 권한 커넥터
@@ -96,3 +96,7 @@ Tech Bridge 해설이 Meta의 Muse 소개를 이렇게 요약한다. *"Muse is d
 
 - [[tech-bridge-jediah-katz-harness-whats-left]]: [[jediah-katz|Jediah Katz]] *"a simple harness with just bash and all your … API keys in a file can solve coding tasks, but you probably don't want to give all your API keys in a file to the model. … [at] companies where we want to have permissions that are scoped down to specific agents and specific people"*(06:05~06:29). 해설: *"AI가 일을 잘 끝냈는지와 필요한 권한만 썼는지는 함께 살펴봐야 해요."* 모델이 좋아져도 **지워지지 않는** 하네스 층으로 분류된다.
 - [[tech-bridge-claude-duet-proactive-assistant]]: [[claude-duet|Claude Duet]]은 *"never directly sees your passwords or any of your sign[-in] tokens"*, 카드 번호·신분증 공유를 거부하는 검사를 추가(발췌, 화자 미상). 해설: *"문제가 절대 생기지 않는다는 보증으로 받아들이면 안 돼요."* → [[credential-injection-outside-sandbox]]와 같은 방향(⚠️ 구현 미확인).
+
+## 2026-10-31 — 재무 봇은 읽기 전용, 그리고 지시도 한 겹 더 ([[tech-bridge-dan-martell-grokbot-daily-automation]])
+
+[[dan-martell|Dan Martell]](⚠️ 추정)의 [[grokbot|Grok Bot]] 튜토리얼: *"Build me a finance bot and give it read-only access to my accounting, banking, and email."*(04:37~04:41) 매일 잔고 · 매출 · 지출 · 청구서를 보고하게 한 뒤 *"And never move money or pay anything."*(04:51~04:53)를 덧붙인다. → **권한(읽기 전용)과 지시(금지)를 둘 다** 거는 개인 사용자 판본. 이 페이지의 *"읽기 전용으로 시작한다"* 가 돈이 걸린 커넥터에서 반복된다. ⚠️ 읽기 전용이 커넥터 설정으로 실제 강제되는지는 발화되지 않는다. 다른 봇(inbox · constraint · leadership)은 Gmail · CRM · 팀 Slack 전 채널에 넓게 연결되며 권한 범위는 말하지 않는다.

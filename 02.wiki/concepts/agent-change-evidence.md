@@ -6,9 +6,9 @@ tags: [verification, evidence, trust, impact-analysis, agentic-coding, code-revi
 aliases: [AI는 코드만이 아니라 증거를 내야 한다, 다섯 질문, change evidence]
 related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review]
 first-seen: tech-bridge-prompt-to-production
-sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro]
+sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification]
 created: 2026-10-09
-updated: 2026-10-25
+updated: 2026-10-31
 ---
 
 # 변경 증거
@@ -70,3 +70,7 @@ updated: 2026-10-25
 ## /pr 스킬 — 요약 · 근거 · 위험 세 칸 (2026-10-25 · [[tech-bridge-pocock-skills-implement-spec-pr-retro]])
 
 [[matt-pocock|Matt Pocock]]의 /pr 스킬을 [[eric-tech|Eric Tech]]가 소개한 것을 Tech Bridge가 다시 해설한 편이다. 검토 요청서에 **요약(글 대신 다이어그램) · 근거 · 위험(merge danger)** 을 담는다. 원음(발췌, 화자 추정 Eric Tech): *"Do we have a screenshot? Do we have testing passing? Right? Do we have any proof that this is actually working? rather than be like ok well should be fine."*(02:49~02:58) 해설은 두 가지를 덧붙인다. *"그림이 깔끔하다고 코드가 제대로 작동하는 건 아니죠"*, 그리고 로그인을 고쳤다면 **수정 전 실패 / 수정 후 성공**을 보여 줘야 한다는 것이다(해설 자신의 예시). 이 페이지의 다섯 질문이 **스킬 하나의 출력 형식**으로 들어간 사례다. ⚠️ 스킬 저장소는 미확인.
+
+## 사람은 diff가 아니라 증거를 본다 — 영상 · 스크린샷 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
+
+[[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽): *"And then people are responsible for checking on the agent's evidence."*(05:14~05:17) 형태는 산출물에 맞춘다 — 브라우저 UI면 *"maybe generated me a video of that experience where it's been clicking around"*(05:28~05:31), 모바일 · 데스크톱이면 *"screenshots or videos"*(05:37~05:38). 목표: *"you want to get to a place where the agent's giving you as much verification evidence as possible"*(05:38~05:43). 이 페이지의 다섯 질문이 *설명 · 영향 분석* 쪽이라면 이쪽은 **동작의 기록(시각 증거)**이다. 같은 회사의 09-03 [[tech-bridge-claude-code-team-workflow|Claude Code 팀 대담]]의 *PR + 스크린샷* 과 같은 관행. 병합 기준도 증거로 정한다: *"You have full confidence nothing's going to go wrong, or that you've mitigated that as much as possible."*(10:25~10:28)
