@@ -6,9 +6,9 @@ tags: [token-economics, cost, reliability, expected-value, evaluation, token-rol
 aliases: [진짜 비용, 예산 나누기 합격률, 기대 실행 횟수]
 related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing, automatic-model-routing]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 created: 2026-09-18
-updated: 2026-10-09
+updated: 2026-11-01
 ---
 
 # 완벽한 답까지의 진짜 비용
@@ -71,3 +71,11 @@ updated: 2026-10-09
 [[cast-ai|Cast AI]]의 Laura: *"On one side you see the cost per token. On the other side, you see the cost per task for the same task with the same quality. That is the important thing. Otherwise, you cannot compare Apple with Apple."*(03:07~03:23) — 이 페이지의 단위(쓸 수 있는 답 하나까지의 비용)를 **전략 비교**가 아니라 **모델 비교**에 쓴 첫 소스. 조건이 다르다: Anthropic 편은 **합격률**을 분모에 넣고, 이 편은 **같은 품질**을 전제로 건다(어떻게 품질을 맞췄는지는 미발화, 연구 미특정).
 
 > ⚠️ 표의 핵심 값이 트랙 간에 갈린다 — Gemini 3 Flash 작업당 en-orig *"$75"* vs `en`·ko *"$705"*. 어느 쪽이냐에 따라 *"토큰 단가가 싼 모델이 작업당으론 비싸다"* 는 예시의 방향이 바뀐다.
+
+## 2026-11-01 — 단가표의 "두 배"와 실패 두 번 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)의 [[kimi|Kimi K3.1 Pro]] vs [[claude-opus-5-5|Opus 5.5]] 데모 비교는 이 페이지의 질문을 사용자 언어로 던진다: *"Opus 5.5 is double the cost. And so, the question is is it double the quality?"*(09:48~09:54)
+
+- 이 페이지의 렌즈로 보면 **단가 × 재실행**이 빠져 있다. Opus는 8개 중 2개가 작동하지 않아 수정 요청이 필요했고(07:13~07:19), Kimi는 *"more consistent despite its lower quality"*(09:39~09:42) — 합격률이 다르면 단가 비율(×2)이 곧 작업당 비용 비율이 아니다.
+- 화자의 반론은 반대 방향이다: *"the better you get at quality, the more even a slight percentage improvement makes to the end result."*(09:52~10:00) — 상단의 작은 품질 차이가 결과에 크게 작용한다면 두 배 단가가 정당화될 수 있다는 것.
+- ⚠️ 실행은 **플랜**이었다(*"I didn't run these on API usage"* 10:05~10:07). 토큰 비용은 측정되지 않았고 가격은 화자 진술($2/$10, *"double"*)이다.

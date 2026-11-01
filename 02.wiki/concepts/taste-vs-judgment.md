@@ -6,9 +6,9 @@ tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
 related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value, primitives-before-features]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production, tech-bridge-ben-davis-codex-product-cohesion]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 created: 2026-09-12
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 
 # 취향과 판단
@@ -150,3 +150,11 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 ## 2026-10-31 — 사용자 쪽에서: 제품에 보이는 taste의 부재 ([[tech-bridge-ben-davis-codex-product-cohesion]])
 
 [[ben-davis|Ben Davis]](추정)는 taste를 **모델의 한계**로 놓는다: *"the models are not good at making open-ended product decisions that require for lack of better word human taste and discernment and decision-making."*(00:42~00:50) *"Opus is the best at it of anything but it's still not perfect or there."*(00:56~01:00) 앞 입장들이 *만드는 사람의 taste* 를 말했다면, 이 편은 **완성된 제품에서 그 부재가 보인다**는 사용자 쪽 관찰이다 — 그리고 사람의 몫을 *"a very strong vision, and especially way to say no to things"*(04:48~04:52)로 둔다. → [[primitives-before-features]]
+
+## 2026-11-01 — 평가자 쪽 취향: "quality인가 taste인가" ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+이 페이지의 논쟁은 주로 **만드는 쪽**의 취향이었다. 모델 비교 영상에서 [[nick-saraev|Nick Saraev]](추정)는 **평가하는 쪽**의 취향을 스스로 구분하려 한다. 은하 충돌 데모에서 [[kimi|Kimi]] 쪽이 *"almost looked kind of kiddish"*(03:57~03:58)라 해 놓고 곧바로:
+
+> *"I think this is more of a reflection of just taste that it is necessarily design quality."*(04:03~04:10) · *"It's really just the background color."*(04:29~04:30)
+
+기능은 *"virtually the exact same"*(04:16)이라는 판단과 함께, **시각적 선호를 품질 점수에서 빼려는** 시도다. ⚠️ 다른 데모(*"very sexy"*, *"10 out of 10"*)에서는 같은 구분이 적용되지 않고, 채점 기준은 공개되지 않는다.

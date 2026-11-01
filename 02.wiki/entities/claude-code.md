@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 
 # Claude Code
@@ -212,3 +212,11 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 2026-10-31 — Claude Code 팀의 리뷰 루프: 1차 리뷰 · hooks · CLAUDE.md ([[tech-bridge-anthropic-30k-merges-verification]])
 
 [[addy-osmani|Addy Osmani]](진행 쪽 표현으로 *"the Claude Code team that you're working with"* 03:48~03:49): Claude가 1차 리뷰를 하되 *"try the experience out similar to a real user"*(04:22~04:24) — 브라우저 · e2e · 린트. 결함은 *"hooks that will then go and run on any edits"*(04:44~04:46)가 diff를 보고 PR을 고치는 루프로 처리한다. 팀 기준은 *"Claude.md, Agents.md"*(05:09, ASR)에 성문화해 리뷰 때 참조하게 한다. 사람은 영상 · 스크린샷 같은 검증 증거를 본다 → [[agent-verification-skill]] · [[agent-change-evidence]]. ⚠️ 내부자 진술, 수치 · 설정 예시 없음.
+
+## 2026-11-01 — 사용자가 본 권한 단계 · Remote Control · 서브에이전트 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]])
+
+[[mehul-mohan|Mehul Mohan]]이 CLI를 쓰는 이유로 Claude Code를 든다. *"somebody working at Claude code in Anthropic posted this that now, finally, they have a Claude code even more dangerously skip permissions flag"*(01:31~01:39). 기존 플래그는 *"it still blocks you many, many times with some RMRF commands"*(01:52~01:55)였다. CLI에서는 환경 변수 두 개를 1로 두면 *"would not be interrupted again"*(02:20~02:22)이고, 데스크톱 앱에서는 같은 설정이 *"hidden inside settings"*(03:21)라고 한다. 화자가 보는 권한 단계는 *"auto mode"* · *"bypass permission mode"* · *"an even more dangerous permission mode"*(02:45~02:53) 셋이다. 그 밖에 VM에서 도는 세션을 휴대폰에서 조종하는 Remote Control(*"works flawlessly at least for me"* 11:58~12:01)과 서브에이전트 지원(*"first-class support for sub-agents"* 12:36~12:38)이 나온다. [[herdr]]는 다른 하네스에 서브에이전트 API를 준다. ⚠️ 새 플래그의 이름 · 게시자 · 링크는 없고, 기존 플래그가 *"weaker"* 해졌다는 것도 화자 체감이다(미확인). 이 페이지 위쪽의 [[anthropic-claude-code-auto-mode|auto mode]] 설명은 위험 행동을 거르는 쪽이고, 이 화자는 **끊기지 않는 자율 실행** 쪽에서 본다. 격리 이야기는 없다 → [[agent-sandboxing]].
+
+## 2026-11-01 — 모델 비교의 하네스 쪽 변수 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)가 [[claude-opus-5-5|Opus 5.5]]를 Claude Code로, [[kimi|Kimi K3.1 Pro]]를 Kimi Code로 *"at max effort"*(00:41~00:43) 돌려 같은 프롬프트 데모를 비교한다. Opus 쪽은 평균 47분 2초로 더 오래 걸렸고 데모 둘이 작동하지 않았다 — 화자는 *"didn't (…) proof its work"* 라고 추측할 뿐 Claude Code의 검증 단계 · 로그는 보여 주지 않는다. ⚠️ 비교가 **모델 + 하네스 쌍**이라 결과를 Claude Code나 모델 어느 한쪽에 돌릴 수 없다.

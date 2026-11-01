@@ -6,9 +6,9 @@ tags: [always-on-agents, persistent-agents, agent-harness, thin-client, thick-se
 aliases: [always-on agent, always on agent, 상시 작동 에이전트, 상시 에이전트, proactive persistent agents, bot architecture, send user]
 related: [persistent-agent-teams, brain-hands-decoupling, durable-execution, agent-distributed-systems, human-as-async-api, pets-vs-cattle, agent-sandboxing, cloud-agent-delegation, scheduled-agent-automations, agent-attention-management, deferred-tool-context, prompt-caching, context-resets-and-compaction, agent-memory, subagent-vs-thread-handoff, action-reversibility, grokbot, openai-dots]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
 created: 2026-10-18
-updated: 2026-10-24
+updated: 2026-11-01
 ---
 
 # 상시 작동 에이전트 아키텍처 (Always-On Agent Architecture)
@@ -70,3 +70,7 @@ updated: 2026-10-24
 - **"조용할 때를 안다"의 제품판** — Duet 해설 *"중요한 건 알림이 많아지는게 아니에요 … 급하지 않은 일까지 계속 부르면 오히려 방해가 될 수 있어요."* Anthropic이 같은 범주(개인 상시 비서)에 들어왔다 — [[grokbot]] · [[openai-dots]] · [[muse]] · [[claude-duet]].
 
 > ⚠️ Duet 쪽은 전부 2차 진술(해설 + 화자 미상 발췌)이다.
+
+## 2026-11-01 — 서버 하네스 없이 얻는 "닫아도 돈다" ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]])
+
+개인 개발자 판본이다. [[herdr]]에서는 원격 worker에서 돌린 Claude가 앱을 끈 사이에도 끝났다. *"Even if I quit the app, if I lose the Wi-Fi connection, whatever. Why? Because this was running on the worker."*(05:31~05:36) 로컬에서도 앱 창과 별개인 프로세스가 *"keeping these terminals these agents alive"*(05:52~05:56)다. 그러나 Katz의 *노트북은 잠든다*와 같은 한계가 있다. *"Now on Mac, you don't get the guarantee if the Wi-Fi stops working or if your computer actually goes to sleep."*(05:56~06:02) 그래서 원격 머신이 *"very, very important"*(06:04~06:07)다. 이 페이지의 골격(서버 루프 · 트리거 · router)은 없다. **세션 지속**만 SSH worker와 로컬 데몬으로 얻는다. 비교 대상 [[cmux]]는 이 점에서 졌다(*"if you quit Cmux now, there is no way to get this back"* 13:29~13:32). ⚠️ 1인 사용자 시연이다.

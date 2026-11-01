@@ -6,9 +6,9 @@ tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
 related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 created: 2026-09-13
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 
 # 검증 스킬
@@ -103,3 +103,13 @@ updated: 2026-10-31
 ## Anthropic 쪽 진술 — "similar to a real user", hooks, taste 파일 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
 
 [[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽): *"you need to give your agents a way to verify that the work is correct"*(03:10~03:14). Claude Code 쪽 워크플로는 Claude의 1차 리뷰에서 *"What's very important in there is making sure that it has a way to actually try the experience out similar to a real user"*(04:20~04:24) — e2e 작업, 브라우저 확인, 도구 실행, 린팅(04:26~04:36). 결함이 나오면 *"hooks that will then go and run on any edits, they will study the diffs"*(04:44~04:46)로 PR을 고치는 루프. 기준은 공유 파일로 성문화한다: *"codify what you consider best practice and taste in your team's shared like Claude.md, Agents.md"*(05:03~05:12, ASR → CLAUDE.md · AGENTS.md). 검증의 종류로는 *"end-to-end tasks, property tests, any visual verification tests"*(06:15~06:20)를 들고, 주니어에게도 *"the different flavors of tests"*(10:15)를 권한다. Lauren Tan · Railway에 이은 세 번째 실무자의 같은 순위다. ⚠️ 회사 내부자의 자기 관행 진술, 효과 수치 없음.
+
+## 2026-11-01 — 검증 없는 max effort: 오래 돌고도 작동 확인을 안 했다 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+이 페이지의 반대쪽 사례다. [[nick-saraev|Nick Saraev]](추정)의 비교에서 [[claude-opus-5-5|Opus 5.5]]([[claude-code|Claude Code]], max effort)는 [[kimi|Kimi]]보다 평균 17분 넘게 더 걸렸는데도 키보드 데모가 로딩되지 않았다:
+
+> *"So, by taking far longer, it hasn't even verified that it works."*(02:13~02:15)
+
+마인크래프트 데모에선 캐릭터가 움직이지 않았고 — *"Opus 5.5 might have screwed the pooch up a little bit without that testing."*(07:05~07:09) — 화자는 *"it just didn't I don't know, proof its work or something like that at the end"*(07:21~07:24)라고 추측한다.
+
+**사용자가 본 것은 결과물의 실패뿐이다.** 이 페이지가 말하는 *에이전트가 실제 사용자처럼 확인하게 하기*(브라우저 시험 · CDP 등)가 하네스에 걸려 있었는지는 나오지 않는다. 다만 *"max effort"* 가 **작동 확인을 보장하지 않는다**는 사용자 쪽 관찰로 남긴다. ⚠️ 1인 · 1회 비교, 원인은 화자 추측.

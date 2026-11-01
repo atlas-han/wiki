@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [parallelism, sub-agents, context-window, pstack, aggregation]
 aliases: [swarm, 겁 없는 병렬성, fearless parallelism]
-related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory, three-level-agent-review]
+related: [agent-arena, dynamic-workflows, sweeper-agent, context-engineering, multiplayer-agent-context, files-vs-database-agent-memory, three-level-agent-review, kimi]
 first-seen: tech-bridge-pstack-third-party-review
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-altman-devday-dots, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-brockman-agi-era-defender-window, tech-bridge-oracle-agent-memory-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-altman-devday-dots, tech-bridge-three-level-agent-review, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 created: 2026-09-14
-updated: 2026-10-20
+updated: 2026-11-01
 ---
 
 # 에이전트 스웜
@@ -109,3 +109,9 @@ DevDay 2026 대담에서 진행자가 *"if an agent solves a Navier Stokes in a 
 ## 2026-10-20 — 검토용 fan-out/fan-in ([[tech-bridge-three-level-agent-review]])
 
 [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 회계 추출: 같은 지시의 두 에이전트가 월별로 독립 추출(fan-out) → 세 번째 에이전트가 줄 단위로 대조하고 차이를 원문으로 정리(fan-in) → 다시 두 에이전트가 최종 기록을 확인(07:56~08:18). 병렬화의 목적이 속도가 아니라 **교차 검증**인 형태다. reduce 쪽 병목은 원문 control total(월 인쇄 잔액)이 기준을 주어 완화된다. → [[three-level-agent-review]] · [[cross-model-prior-intersection]](⚠️ 긴장)
+
+## 2026-11-01 — 앱의 버튼이 된 스웜: Kimi swarm ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)가 [[kimi|Kimi]] 앱의 swarm 버튼을 시연한다: *"if you click on that button, it'll actually task like hundreds of agents to go out and find information for you."*(08:41~08:49) — 요청은 *"put together 10 independent landing pages for fake products"*(08:49~08:53), *"instead of me just speaking with a single agent (…) I'm actually uh delegating to a a swarm. This is just natively supported by Kimmy[=Kimi] out of the box."*(08:54~09:02)
+
+이 페이지의 스웜은 Pstack 스킬 · 사내 하네스 · 연구 실험처럼 **사람이 짜는 구성**이었다. 여기서는 **제품 UI의 기본 기능**이고, 실행 중 스웜이 *"cool UX panel"*(09:19~09:22)로 **사용자에게 되묻는다**(제품 구성 · 스타일). ⚠️ 실제 에이전트 수 · 분업 방식 · 결과물은 영상에 나오지 않는다(*"hundreds"* 는 화자 표현).

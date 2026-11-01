@@ -5,9 +5,9 @@ category: product
 tags: [coding-agents, multi-agent, desktop-app, cloud-sandbox, collaboration, worktree, developer-tools]
 aliases: [conductor.build, 컨덕터, Driver (ASR 오역), Coda (ASR 오역)]
 links: [https://www.conductor.build]
-sources: [tech-bridge-conductor-orchestras-not-factories]
+sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
 created: 2026-10-02
-updated: 2026-10-09
+updated: 2026-11-01
 ---
 
 # Conductor
@@ -51,3 +51,7 @@ updated: 2026-10-09
 
 - [[tech-bridge-conductor-orchestras-not-factories]] · [[charlie-holtz]]
 - 관련: [[claude-code]] · [[codex]] · [[openclaw]] · [[cloud-agent-delegation]] · [[multiplayer-agent-context]] · [[company-brain]] · [[slop-free-zone]]
+
+## 같은 범주, 사용자 비교 — herdr · cmux (2026-11-01)
+
+[[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]에서 [[mehul-mohan|Mehul Mohan]]은 같은 범주의 터미널 쪽 도구 [[herdr]]와 [[cmux]]를 비교한다. 그는 이 범주를 *"a agent multiplexer or agent manager sort of screen"*(08:33~08:35)이라 부르고 *"this field is super saturated"*(07:49~07:52)라고 한다. 비교 축은 Conductor 발표(worktree · 클라우드 샌드박스)와 다르다. **SSH 원격 머신과 앱을 닫아도 남는 세션**이 축이다. Conductor는 그 영상에 나오지 않는다. 비교는 위키의 것이다.

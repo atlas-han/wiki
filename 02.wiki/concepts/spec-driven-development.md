@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory, shaping-the-build]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map]
 created: 2026-08-29
-updated: 2026-10-27
+updated: 2026-11-01
 ---
 
 # Spec-Driven Development
@@ -161,3 +161,7 @@ spec은 **두 장**이다 — *"Product spec describes the product invariants th
 [[laurie-voss|Voss]]: 주문을 추적하는 소프트웨어는 1만 개다. 그런데 빵집에 맞는 것은 *"only one of those, if you're lucky"* 이고, 그 지식은 *"isn't in the training data. It isn't in the weights. It is in the mind of the person who runs that business."*(03:13~03:19) 처방은 이렇다. *"put your best people's judgment into specs and rubrics and evals (…) turning the sense of the problem into a spec of the problem so that the agents can build it for us."*(06:29~06:51)
 
 이 페이지의 다른 소스들은 명세를 **에이전트 입력**으로 다뤘다. 이 편은 그보다 앞단인 **명세를 얻는 대화**를 직무의 핵심으로 둔다. 그 직무에 product engineer라는 이름을 붙이고, 훈련 경로가 없다고 본다(*"nobody teaches go sit with a baker for a week and come back with a spec"*).
+
+## 스펙은 단계의 함수 — "there is a place for that" (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
+
+[[andrew-ng|Ng]](제목 · 설명란 · 태그 근거): *"you see a lot of people talk about how oh you should always plan it out, write a long spec, and there is a place for that. And then sometimes there's a place if you know you're going to go to bed in 20 minutes, just bang out some stuff, have a coding agent work for a few hours and see what you get the next morning."*(08:38~08:54) 이 페이지의 소스들은 스펙을 **기본값**으로 말해 왔다. Ng은 스펙을 **프로젝트 단계에 따른 선택**으로 둔다(*"that stage-dependent answer has been very tricky for people to learn"* 08:54~08:59). ⚠️ 09-27 [[tech-bridge-sdd-full-course]]의 소개자 "Andrew"(*"the great developers I know out there almost always will write detailed specs for projects with any significant complexity"*)가 Ng인지는 미확정이다. 같은 사람이라 해도 그쪽은 *"any significant complexity"* 를 조건으로 달았으므로 정면 모순은 아니다. → [[shaping-the-build]]

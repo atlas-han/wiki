@@ -155,8 +155,11 @@ sources:
   - tech-bridge-musk-spacex-ai-compute-outlook
   - tech-bridge-dan-martell-grokbot-daily-automation
   - tech-bridge-ben-davis-codex-product-cohesion
+  - tech-bridge-mehul-mohan-herdr-app-vs-cmux
+  - tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5
+  - tech-bridge-andrew-ng-ai-engineering-skills-map
 created: 2026-06-03
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 
 # Tech Bridge
@@ -1516,3 +1519,22 @@ updated: 2026-10-31
 - ⚠️ 이름은 설명란 · 태그에만 있다. *"Coda"* → Codex는 판독 추정이다. Spaces가 [[chatgpt-space|ChatGPT Space]]와 같은 제품인지는 미확정이다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). `FTZak3J9YbM`는 공개 전환되어 위에서 ingest했다.
+
+## 2026-10-31 업로드 — Mehul Mohan herdr vs cmux · Nick Saraev Kimi K3.1 vs Opus 5.5 · Andrew Ng AI engineering 네 역량 (2026-11-01 ingest)
+
+[[tech-bridge-mehul-mohan-herdr-app-vs-cmux|[한글자막] AI 에이전트를 다루는 새 작업 환경 herdr app | cmux와 비교]](`D2yA1--RoKQ`, 14:10, 공식 챕터 10) — [[mehul-mohan]](신규, 발화 호명 + 설명란) 1인칭 화면 시연, 내레이션 없음 ([[herdr]](신규) · [[cmux]](신규) · [[claude-code]] · [[always-on-agent-architecture]] · [[cloud-agent-delegation]] · [[agent-attention-management]] · [[conductor]])
+
+- 10-27 Voss 편부터 이어진 **영어 원본 오디오만** 있는 구성이다. `ko-orig`가 없고 ko는 `lang=en&variant=gemini&tlang=ko`, en-orig는 `variant=gemini`다. `en`은 en-orig를 고쳐 쓴 문장이라 md5가 다르다. 첫 챕터 00:00~00:21은 무캡션이다. `upload_date` 20261031은 KST로 11-01 08:00이다.
+- ⚠️ 성 Mohan은 설명란에만 있다. herdr는 ASR이 *"holder/Horder/Hodor/Hurder/Herder/harder"* 로, cmux는 *"C marks/C max"* 로 적는다. Claude Code 새 플래그는 게시자 · 이름 · 링크가 없어 미확인이다. 녹화일은 화자 말로 "herdr 앱 발표 당일"이고 날짜는 미상이다.
+
+[[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5|[한글자막] 비싼 AI가 더 잘할까? Kimi K3.1 vs Claude Opus 5.5]](`f_8aIpusjg0`, 10:12, 공식 챕터 11) — [[nick-saraev]](설명란 · 태그 근거, 세 번째 등장) 데모 비교 발췌, 내레이션 없음 ([[kimi]](신규) · [[claude-opus-5-5]] · [[claude-code]] · [[agent-verification-skill]] · [[agent-swarm]] · [[taste-vs-judgment]] · [[true-cost-to-perfect-answer]] · [[inference-speed-as-capability]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 es · fr · id · it), `ko-orig` 없음, ko는 `tlang=ko`, `en` ≠ `en-orig`(md5). 인용은 en-orig로만 했다. 00:00~00:22는 무캡션이고 en-orig는 문장 중간(*"Whereas…"*)에서 시작한다. ko가 뜻을 정반대로 옮긴 곳이 두 군데다(04:28 · 10:07).
+- ⚠️ 이름은 설명란 · 태그에만 있다. 화자는 데모가 8개라 하지만 영상에는 6개만 나온다. 가격($2/$10, *"double the cost"*)과 제작 시간은 화자 진술이고, 실행은 API가 아니라 플랜이었다.
+
+[[tech-bridge-andrew-ng-ai-engineering-skills-map|[한글자막] AI가 코딩하면 개발자는 뭘 해야 할까? 앤드루 응의 답]](`2tEchomcjk4`, 10:26, 공식 챕터 8) — [[andrew-ng]](제목 · 설명란 · 태그 근거) 대담 발췌, 내레이션 없음 ([[ai-engineering-skills-map]](신규) · [[shaping-the-build]](신규) · [[cognitive-offloading]] · [[action-reversibility]] · [[disposable-vs-durable-software]] · [[spec-driven-development]] · [[three-tier-ai-skill-stack]] · [[ai-engineer-vs-ml-researcher]])
+
+- 같은 **영어 원본 오디오만** 있는 구성이다(`ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5). 첫 챕터(00:00~00:20)는 무캡션이고, `>>` 전환은 05:09 질문 한 번뿐인 Ng 답변 위주 편집본이다.
+- ⚠️ 대담 상대는 설명란의 "폴 코플스톤"뿐이라 귀속하지 않았다. 팀명 *"Y Combinator I"* 는 DeepLearning.AI로 판독 추정이다. 1만 건 공고 조사와 학습 연구는 출처가 없다. 녹화일 · 행사는 미상이다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

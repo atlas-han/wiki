@@ -6,9 +6,9 @@ tags: [inference-speed, latency, pricing, democratization, feedback-loop, openai
 aliases: [speed democratization, 속도의 민주화, ultra fast, price of IQ, 지능의 가격과 속도의 가격]
 related: [intelligence-abundance, compute-constrained-growth, system-1-model, search-latency-tiers, voice-latency-thinking-tradeoff, model-mixing-economics, agentic-sites, speculative-decoding, open-model-customization-loop]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-gpt-6-1-terra-first-look]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 created: 2026-10-09
-updated: 2026-10-30
+updated: 2026-11-01
 ---
 
 # 추론 속도라는 두 번째 축
@@ -65,3 +65,9 @@ Altman이 속도를 모델 공급자의 축으로 말했다면, [[fireworks-ai|F
 ## 사용자 쪽에서 본 속도 — 빠르고 싸지만 끝까지 안 간다 (2026-10-30 · [[tech-bridge-gpt-6-1-terra-first-look]])
 
 [[openai-terra|GPT 6.1 Terra]] 리뷰어(미상)는 평가를 속도로 연다: C++ 게임을 2분 35초에(*"I really want to drive home the point that this thing is insanely fast"* 00:46~00:48), 그리고 가격 · 속도 · 컴퓨터 사용의 조합으로 닫는다(04:50~05:04). 그러나 같은 리뷰가 *"it gives up very easily"*(04:19~04:22)를 패턴으로 짚는다 → **속도 축과 과제 완수(끈기) 축은 따로 움직일 수 있다.** 리뷰어 스스로 호감의 근거를 *"not because it's making insane-looking high-quality code results"*(05:07~05:11)라고 구분한다. ⚠️ 1인 체감 · 1회 실행.
+
+## 2026-11-01 — 빠른 쪽이 더 일관적이었다 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)의 같은 프롬프트 데모 비교에서 평균 제작 시간은 [[kimi|Kimi K3.1 Pro]] 29분 41초, [[claude-opus-5-5|Opus 5.5]] 47분 2초(00:57~01:06)였다. 화자는 곧 *"Obviously, time to build was different from quality"*(01:11~01:13)라고 축을 나눈다.
+
+결과는 [[tech-bridge-gpt-6-1-terra-first-look|Terra 편]]의 *빠르지만 쉽게 포기한다* 와 다른 방향이다: 느린 쪽(Opus)이 완성도는 높지만 *"by taking far longer, it hasn't even verified that it works"*(02:13~02:15), 빠른 쪽(Kimi)은 *"more consistent despite its lower quality"*(09:39~09:42). → **속도 · 완성도 · 완수(작동)가 서로 독립적으로 움직인다**는 기록이 하나 더. ⚠️ 하네스까지 다른 1인 비교, 평균의 표본 수 미발화.

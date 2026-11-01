@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 
 # Index
@@ -168,6 +168,7 @@ updated: 2026-10-31
 - [[manish-kapur]] — Addy Osmani 대담의 진행 겸 화자(이름은 설명란에만 있고 소거법으로 추정, 소속 미상). CircleCI 통계, "하루 3만 건" 발화, zero-trust 다층 검증, PR 라벨 6~9개월 ([[tech-bridge-anthropic-30k-merges-verification]]) ⚠️ 신원 추정
 - [[dan-martell]] — [[grokbot|Grok Bot]] 사용자 쪽 튜토리얼 화자(설명란 · 태그 근거, 발화엔 3인칭 이름 한 번 + *"plug"*). 역할별 봇을 chief of staff에게 말로 만들게 함, *"review mode only"*, 결제 전 승인 · 읽기 전용 재무, 공유 채널 team bot ([[tech-bridge-dan-martell-grokbot-daily-automation]]) ⚠️ 신원 추정
 - [[ben-davis]] — [[codex|Codex]]를 영상 채널 운영에 쓰는 외부 사용자 화자(이름은 설명란 · 태그 근거 — 발화엔 없음). verifier가 없는 제품 판단에 모델이 약하다는 진단, *"The cohesion just isn't there at the product level"*, 처방은 기능 덜어내기와 Codex thread를 기본 단위로 ([[tech-bridge-ben-davis-codex-product-cohesion]]) ⚠️ 신원 추정
+- [[mehul-mohan]] — CLI 하네스와 에이전트 관리 도구를 직접 비교하는 개발자 화자(이름은 발화 호명 *"Then why, Mehul"*, 성은 설명란). *"CLI means flexibility"*, 데이터가 무겁거나 사람이 봐야 하는 작업은 로컬 · 나머지는 VM, 휴대폰으로 Claude Code Remote Control, [[cmux]]보다 [[herdr]] 선호 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 소속 미상 · 1인 체감
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -277,6 +278,7 @@ updated: 2026-10-31
 - [[openai-terra]] — [[openai|OpenAI]] **GPT 6.1 Terra**. 리뷰어(미상) 체감: 매우 빠름 · 입력 $1 / 출력 $5 per 1M(화자 정정) · 컴퓨터 사용 괜찮음 · **쉽게 포기한다**(로봇 팔 · Blender), 비교 기준은 GPT-6 Astra ([[tech-bridge-gpt-6-1-terra-first-look]]) ⚠️ 1인 체감 · 발화엔 "GPT-6.1 Turbo"(ASR 가능성)
 
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
+- [[kimi]] — Kimi K3.1 Pro(+ 하네스 Kimi Code · 앱 swarm). Opus 5.5와 같은 프롬프트 데모 비교: 평균 29분 41초 vs 47분 2초, *"more consistent despite its lower quality"*, 입력 $2 · 출력 $10 per 1M(화자 진술). 이전 언급(2.6 · K2.7 · Cursor)도 모음 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]]) ⚠️ 제작사 · 공개 가중치 미발화 · 가격 미확인
 
 ### Products
 - [[v0]] — Vercel 앱 생성 제품. 하네스에 엔지니어링 시간 "like 90%"를 쓴 회고 → 지금이라면 기성 하네스 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 회고·추정
@@ -314,6 +316,8 @@ updated: 2026-10-31
 - [[stripe-minions]] — Stripe 사내 코딩 에이전트, [[goose]] 기반. devbox에서 실행, blueprint = 모델 판단 단계 + 정해진 코드 검사 단계. Claude Code와 다른 시스템 ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 해설의 블로그 인용
 - [[starship]] — [[spacex|SpaceX]] 궤도 발사체: 부스터 + Ship 완전 재사용 목표, Flight 14 첫 궤도 · Starlink V3 배치, Flight 15 동시 포획 시도 ([[tech-bridge-musk-spacex-ai-compute-outlook]] 외 2소스) ⚠️ 당사자 진술
 - [[starlink]] — [[spacex|SpaceX]] 위성망: [[elon-musk|Musk]]의 3년 대역폭 100배 · 위성 10만 기, AI 에이전트발 수요 1,000배, 연결 매출 "수천억 달러" 전망 ([[tech-bridge-musk-spacex-ai-compute-outlook]]) ⚠️ 전부 소유주 진술
+- [[herdr]] — 터미널 코딩 에이전트 여럿을 한 화면에서 다루는 agent multiplexer. 앱 버전은 *"GUI application combined with CLIs"*: SSH worker 추가, 앱을 꺼도 계속 도는 세션(로컬은 별도 프로세스), idle · done · working 상태와 알림, mission control · Slack · Meet형 레이아웃, 서브에이전트 API ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 1인 사용자 몇 시간 체감 · 제작사 미발화
+- [[cmux]] — 에이전트용 터미널 앱. 비교 대상으로만 등장: `cmux ssh` 세션이 앱을 끄면 사라지고 tmux 우회책은 실험 기능이라 잘 깨지며 UI 커스터마이즈에서 *"wow factor"* 를 못 얻었다는 사용자 비판 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 1인 비판 · cmux 측 반론 없음
 
 ### Tools
 - [[fx]] — Vercel Labs 코딩 CLI(ASR "effects", 설명란 fx.sh). 셸처럼 부팅, 6MB/11MB, 임베드 가능(fx0 데모: HTML → 샌드박스 Next.js → Eve 에이전트) ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 자사 진술
@@ -509,6 +513,7 @@ updated: 2026-10-31
 - [[lethal-trifecta]] — Simon Willison: **비공개 데이터 + 신뢰 불가 콘텐츠 + 외부 노출 능력**이 동시에 있으면 유출 성립. [[prompt-injection]]의 벡터 목록에 **성립 조건**을 더한다 — 이 위키의 방어들을 세 요소로 정렬 (sources: 1) ⚠️ 원문 미확보, 전언
 - [[ai-slop]] — **반복 · 적합성 부족 · 낮은 의도.** 훌륭함은 정의하기 어렵지만 슬롭은 쉽다(모두가 동의). AI 이전부터의 동질화를 AI가 가속. **움직이는 표적**(보라색 그라데이션 → *Claude 베이지*) · *"아무도 아무것도 결정하지 않은"* (sources: 2) ⚠️ 측정치 없음
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
+- [[ai-engineering-skills-map]] — AI engineering 네 역량(Ng 팀 skills map): AI 앱 빌드·배포(불확실성 → error analysis·eval 루프) · SE 기본기(모르면 에이전트의 trade-off에 *"bites you later"*) · 코딩 에이전트 활용 · shaping the build. 기준은 사람의 *"fundamental context advantage"* ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 조사 방법 문서 없음 · 팀명 ASR 판독 추정
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -718,6 +723,7 @@ updated: 2026-10-31
 - [[syntactically-correct-behaviorally-wrong]] — *"문법적으로는 올바르지만 동작상으로는 잘못된 번역"*. [[behavior-validated-trust]]의 마이그레이션판 — 검증이 *옳은가* 가 아니라 **원본과 같은가**(동등성), 그런데 레거시는 그 기준(문서·테스트)이 없다 ([[ibm]] 세 번째, sources: 1)
 - [[risk-proportional-human-review]] — **AI는 승수, 사람은 가장 큰 위험을 수반하는 결정 곁에.** 사람의 자리를 시간·책임·추상 수준이 아니라 **결정의 위험도**로 정하는 기준 · *"더 빠를 뿐 아니라 더 철저하게"* — 병목을 없애지 않고 가장 값진 자리로 옮긴다 ([[ibm]], sources: 1) ⚠️ 위험한 결정의 예시 없음 · ko *force multiplier* → "시너지 효과"
 - [[disposable-vs-durable-software]] — **품질의 엄격함은 수명이 정한다.** 실패의 피해 · 교체 비용 · 의존 관계 · 유지 비용 넷 다 낮으면 disposable(엄격함 불필요), 높으면 durable, 애매하면 durable 쪽으로. *AI가 만들었다고 일회용이 아니다*, 일회용 지위는 격리 환경으로 지킨다 ([[tech-bridge-kanat-alexander-disposable-vs-durable]])
+- [[shaping-the-build]] — 빌드가 쉬워지면 병목은 *"deciding what to build"*. product gut을 가진 개발자가 MVP·견고한 아키텍처·고객 피드백 중 지금 무엇을 할지 정한다. 정답은 *"stage-dependent"*(one-way/two-way door, quick and dirty prototype vs 신중한 설계, 긴 spec vs 자기 전 에이전트) ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 1인 전망
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -971,12 +977,15 @@ updated: 2026-10-31
 - [[tech-bridge-musk-spacex-ai-compute-outlook]] — [[elon-musk|Elon Musk]](설명란 · 태그 근거) 발언 발췌(7:31, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, 멤버 전용 → 2026-10-30 공개): 로켓 회사가 AI를 키우는 이유 — [[starship]] 완전 재사용 · [[starlink]] 대역폭 100배/수요 1,000배(에이전트), *"more in power and cooling and infrastructure than it is in chips"*, 2027년 +10 GW(13 GW 이상), 터빈 블레이드 주조 12~18개월 지연, [[terafab]] 시험 칩 27년 5~6월 · 양산 28Q3, 임대 수요 → SpaceX ARR 5,000억~1조, [[tesla]] 합병은 전체 주식 50% · 특별위원회 미합의 → [[power-shortfall]] ⚠️ 녹화 행사 미상 · Optimus/Grok 트랙 불일치 · 주조 전제 캡션 없음 · 수치 전부 당사자 진술
 - [[tech-bridge-dan-martell-grokbot-daily-automation]] — [[dan-martell|Dan Martell]](추정) Grok Bot 사용 튜토리얼 발췌(6:42, 챕터 10, 내레이션 없음 · 영어 원본 오디오만, 2026-10-30 업로드): Grok Bot으로 일상을 자동화하기 — 봇마다 24/7 가상 컴퓨터, chief of staff에게 말로 역할별 봇(inbox · travel · people · family · constraint · finance · leadership) 주문, 초안 vs 실제 보낸 메일 diff 루프, 결제 · 제출 전 승인, 읽기 전용 재무, 공유 Slack team bot, 웹 대신 API · skill then routine · 녹화→스킬 → [[persistent-agent-teams]] ⚠️ 신원 추정 · 제작사 미발화 · 마지막 챕터 무캡션 · 수치 없음
 - [[tech-bridge-ben-davis-codex-product-cohesion]] — [[ben-davis|Ben Davis]](추정, 설명란 · 태그 근거)의 Codex 사용기 발췌 + 무캡션 한국어 해설(추정)(6:51, 챕터 8 · 오디오 Korean original + English(US), `ko-orig` 없음, 2026-10-30 업로드): 코드를 잘 짜는데, Codex는 왜 불편해졌을까? — priority view가 할 일 목록이 아니라 타임라인, *"clean verifier function"* 없는 제품 판단, ChatGPT/Codex 분리, Spaces와 thread의 어색한 결합, *"never been easier to ship a feature"*, thread를 공통 기본 단위로 → [[primitives-before-features]] ⚠️ 신원 추정 · 1인 체감 · *"Coda"*=Codex 판독 · [[chatgpt-space]]와 동일성 미확정
+- [[tech-bridge-andrew-ng-ai-engineering-skills-map]] — [[andrew-ng|Andrew Ng]](제목·설명란·태그 근거, 발화에 이름 없음) 대담 발췌, 내레이션 없음(10:26, 챕터 8 · 영어 원본 오디오만, 2026-10-31 업로드): AI가 코딩하면 개발자는 뭘 해야 할까? — AI engineering 네 역량, 사람의 맥락 우위, error analysis·eval, 기본기와 숨은 trade-off, *"the bottleneck is less building, but deciding what to build"*, 단계 의존, *"chatbots are terrible for learning"* → [[ai-engineering-skills-map]] · [[shaping-the-build]] ⚠️ 대담 상대 "폴 코플스톤"은 설명란에만 · *"Y Combinator I"*=DeepLearning.AI 판독 추정 · 조사·연구 출처 없음
+- [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]] — [[nick-saraev|Nick Saraev]](추정, 설명란 · 태그 근거) 1인 데모 비교 발췌(10:12, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-10-31 업로드): 비싼 AI가 더 잘할까? — 같은 프롬프트 · 각자의 하네스 max effort로 [[kimi|Kimi K3.1 Pro]] vs [[claude-opus-5-5|Opus 5.5]], 제작 시간 29:41 vs 47:02, 3D 키보드 · 은하 · SVG 랜딩 · 타워 철거 · 마인크래프트 · 액션 게임, Opus 2회 작동 실패(*"hasn't even verified that it works"*), *"more of a reflection of just taste"*, Kimi swarm, *"is it double the quality?"* → [[agent-verification-skill]] ⚠️ 신원 추정 · 8개 중 6개 데모만 · 가격 · 시간은 화자 진술 · 플랜 실행 · 하네스까지 묶인 비교
+- [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]] — [[mehul-mohan|Mehul Mohan]](발화 호명 + 설명란) 1인칭 화면 시연 · 사용기(14:10, 챕터 10, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-10-31 UTC 업로드 = 11-01 08:00 KST): AI 에이전트를 다루는 새 작업 환경 herdr app | cmux와 비교 — [[herdr]] 앱 발표 당일 첫인상, CLI의 유연성(Claude Code *"even more dangerously skip permissions"* 플래그 주장), SSH worker · 앱 종료 후에도 이어지는 작업, Mac은 잠들면 멈춤, 에이전트 상태 · 알림, *"agent multiplexer or agent manager"*, 무거운 영상 편집은 로컬 · 나머지는 VM, Remote Control, 서브에이전트 API, [[cmux]] SSH 세션 소실 → [[always-on-agent-architecture]] · [[cloud-agent-delegation]] ⚠️ 녹화일 미상 · 플래그 미확인 · 1인 체감 · 제품명 ASR 6가지 표기
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 937 (925 → 937, + 2026-10-31 Tech Bridge 4편(10-30 업로드 — Addy Osmani Anthropic 병합 검증 · Musk SpaceX AI 컴퓨트 · Dan Martell Grok Bot · Ben Davis Codex 제품 일관성): source 4 · entity 6(addy-osmani · manish-kapur · dan-martell · ben-davis · starship · starlink) · concept 2(layered-verification-every-loop · primitives-before-features) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 937과 일치)
+- 총 페이지 수: 946 (937 → 946, + 2026-11-01 Tech Bridge 3편(10-31 업로드 — Mehul Mohan herdr vs cmux · Nick Saraev Kimi K3.1 vs Opus 5.5 · Andrew Ng AI engineering 네 역량): source 3 · entity 4(mehul-mohan · herdr · cmux · kimi) · concept 2(ai-engineering-skills-map · shaping-the-build) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 946과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-10-31 (Tech Bridge **4편** — 10-30 업로드 [[tech-bridge-anthropic-30k-merges-verification|Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요?]](`CmsICMUPtII`) · [[tech-bridge-musk-spacex-ai-compute-outlook|로켓 회사가 AI를 키우는 이유]](`FTZak3J9YbM`, 멤버 전용 → 공개) · [[tech-bridge-dan-martell-grokbot-daily-automation|Grok Bot으로 일상을 자동화하기]](`mHwP7oANlnA`) · [[tech-bridge-ben-davis-codex-product-cohesion|코드를 잘 짜는데, Codex는 왜 불편해졌을까?]](`-B-967gXzHY`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-10-30 (Tech Bridge **2편** — 10-29 업로드 [[tech-bridge-harrison-chase-agent-improvement-loop|AI 에이전트는 어떻게 쓸수록 나아질까?]](`wGnQt2RhWfc`) · [[tech-bridge-gpt-6-1-terra-first-look|GPT 6.1 Terra, 빠르고 싼데 왜 평가는 갈릴까?]](`ht_Wp2oFp5E`). `FTZak3J9YbM` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-01 (Tech Bridge **3편** — 10-31 업로드 [[tech-bridge-mehul-mohan-herdr-app-vs-cmux|AI 에이전트를 다루는 새 작업 환경 herdr app]](`D2yA1--RoKQ`) · [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5|비싼 AI가 더 잘할까? Kimi K3.1 vs Claude Opus 5.5]](`f_8aIpusjg0`) · [[tech-bridge-andrew-ng-ai-engineering-skills-map|AI가 코딩하면 개발자는 뭘 해야 할까? 앤드루 응의 답]](`2tEchomcjk4`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-10-31 (Tech Bridge **4편** — 10-30 업로드 [[tech-bridge-anthropic-30k-merges-verification|Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요?]](`CmsICMUPtII`) · [[tech-bridge-musk-spacex-ai-compute-outlook|로켓 회사가 AI를 키우는 이유]](`FTZak3J9YbM`, 멤버 전용 → 공개) · [[tech-bridge-dan-martell-grokbot-daily-automation|Grok Bot으로 일상을 자동화하기]](`mHwP7oANlnA`) · [[tech-bridge-ben-davis-codex-product-cohesion|코드를 잘 짜는데, Codex는 왜 불편해졌을까?]](`-B-967gXzHY`). `Yhck-x6VuLs` 멤버 전용 지속)

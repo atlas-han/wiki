@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ai-engineer, career, learning-path, rag, agents, deployment, kubernetes, observability]
 aliases: [3단계 기술 스택, 순서가 중요하다, 기초를 건너뛰지 말라]
-related: [ai-engineer-vs-ml-researcher, read-fluency-for-agent-output, workflow-vs-agent, retrieval-augmented-generation, agent-action-record, agent-harness-design, build-time-vs-runtime-tools]
+related: [ai-engineer-vs-ml-researcher, read-fluency-for-agent-output, workflow-vs-agent, retrieval-augmented-generation, agent-action-record, agent-harness-design, build-time-vs-runtime-tools, ai-engineering-skills-map]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-andrew-ng-ai-engineering-skills-map]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-11-01
 ---
 
 # AI 엔지니어의 세 층
@@ -54,3 +54,7 @@ RAG 지식 시스템(HR·병원·챗봇) · 도구를 쓰는 에이전트(DB 조
 - [[tech-bridge-ai-engineer-three-tier-skill-stack]] — first-seen
 - [[cedric-clyburn]] · [[ibm]]
 - 관련: [[ai-engineer-vs-ml-researcher]] · [[read-fluency-for-agent-output]] · [[workflow-vs-agent]] · [[retrieval-augmented-generation]] · [[agent-action-record]]
+
+## 다른 역량 지도 — Ng 팀의 네 역량 (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
+
+[[andrew-ng|Ng]](제목 · 설명란 · 태그 근거)이 자기 팀 조사(*"over 10,000 job descriptions"*, ⚠️ 문서 없음)로 **AI 앱 빌드 · 배포 / 소프트웨어 공학 기본기 / 코딩 에이전트 활용 / shaping the build** 네 역량을 낸다. 이 페이지와 겹치는 것은 **기본기를 건너뛰면 대가를 치른다**는 점이다 — Ng 판본은 *"the coding agent will make a bunch of trade-offs that you didn't even know it made a trade-off and just bites you later."*(04:40~04:45) 다른 점: 이 페이지는 **학습 순서와 기술 목록**(RAG · Kubernetes · 관측)이고, Ng은 기술 목록 없이 **무엇을 만들지 결정하는 역량**을 넷째 칸에 둔다. → [[ai-engineering-skills-map]]

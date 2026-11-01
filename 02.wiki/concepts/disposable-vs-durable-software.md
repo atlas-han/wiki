@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-quality, disposable-software, durable-software, engineering-rigor, change-cost, isolation, vibe-coding]
 aliases: [disposable software, durable software, 일회용 소프트웨어, 오래 쓰는 코드, 네 가지 기준, four factors]
-related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening]
+related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build]
 first-seen: tech-bridge-kanat-alexander-disposable-vs-durable
-sources: [tech-bridge-kanat-alexander-disposable-vs-durable]
+sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map]
 created: 2026-10-25
-updated: 2026-10-25
+updated: 2026-11-01
 ---
 
 # 일회용 vs 오래 쓰는 소프트웨어
@@ -43,3 +43,7 @@ updated: 2026-10-25
 
 - [[tech-bridge-kanat-alexander-disposable-vs-durable]] (first-seen)
 - [[max-kanat-alexander]] · [[decision-quality]] · [[tech-bridge-ai-era-code-quality]]
+
+## 수명이 아니라 시점으로 — 단계 의존 (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
+
+[[andrew-ng|Ng]](제목 · 설명란 · 태그 근거)은 같은 질문(얼마나 공들일까)에 **프로젝트 단계**로 답한다. *"for early stage projects, so long as you can do it in a responsible, safe way, build a quick and dirty prototype, see what happens, throw it away, build another quick and dirty prototype, see what happens, and drive rapid learnings."*(07:47~08:01) 그리고 *"there's also a time and place to thinking carefully about architecture"*(08:01~08:05). 이 페이지의 네 기준이 **소프트웨어의 성질**로 위치를 정한다면, Ng은 **같은 프로젝트가 시간에 따라 이동한다**고 본다(핵심 주장 4 *위치는 움직인다* 와 같은 방향). 두 소스 모두 일회용의 조건으로 **민감 데이터 격리**를 단다. → [[shaping-the-build]]

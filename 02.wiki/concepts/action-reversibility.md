@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
-related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns]
+related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns, shaping-the-build]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-andrew-ng-ai-engineering-skills-map]
 created: 2026-09-09
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 
 # 행동 가역성
@@ -102,3 +102,7 @@ Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이�
 - 이메일은 **초안만** 만들고 보내지 않는다(*"review mode only"* 02:40).
 
 > ⚠️ 게이트가 프롬프트 지시만으로 지켜지는지, 제품 권한으로 강제되는지는 발화되지 않는다(finance bot의 *"read-only access"* 제외).
+
+## 프로젝트 단계의 one-way / two-way door (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
+
+[[andrew-ng|Ng]](제목 · 설명란 · 태그 근거)이 같은 은유를 **PR · 행동**이 아니라 **프로젝트 단계**에 쓴다: *"The answer is stage-dependent and it depends a lot on, you know, what Jeff Bezos calls one-way doors versus two-way doors."*(07:16~07:23) 초기에는 *"build a quick and dirty prototype, see what happens, throw it away"*(07:54~07:58), 이후에는 아키텍처 · 민감 데이터 · 보안을 신중히(08:01~08:12). 초기의 자유에도 *"so long as you can do it in a responsible, safe way"*(07:49~07:54) — 민감 데이터 유출만은 one-way로 남긴다. ⚠️ 어느 결정이 one-way인지의 적용 예는 없다. → [[shaping-the-build]]

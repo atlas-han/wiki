@@ -1173,5 +1173,14 @@
   "02.wiki/sources/tech-bridge-anthropic-30k-merges-verification.md": "LiVideo",
   "02.wiki/sources/tech-bridge-musk-spacex-ai-compute-outlook.md": "LiVideo",
   "02.wiki/sources/tech-bridge-dan-martell-grokbot-daily-automation.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-ben-davis-codex-product-cohesion.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-ben-davis-codex-product-cohesion.md": "LiVideo",
+  "02.wiki/concepts/ai-engineering-skills-map.md": "LiBookText",
+  "02.wiki/concepts/shaping-the-build.md": "LiPuzzle",
+  "02.wiki/entities/cmux.md": "LiBoxes",
+  "02.wiki/entities/herdr.md": "LiBoxes",
+  "02.wiki/entities/kimi.md": "LiBot",
+  "02.wiki/entities/mehul-mohan.md": "LiUser",
+  "02.wiki/sources/tech-bridge-andrew-ng-ai-engineering-skills-map.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-mehul-mohan-herdr-app-vs-cmux.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5.md": "LiVideo"
 }

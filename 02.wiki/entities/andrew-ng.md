@@ -5,9 +5,9 @@ category: person
 tags: [educator, ai, coursera]
 links:
   - https://www.andrewng.org/
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-oracle-agent-memory-harness, tech-bridge-sdd-full-course]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-oracle-agent-memory-harness, tech-bridge-sdd-full-course, tech-bridge-andrew-ng-ai-engineering-skills-map]
 created: 2026-08-31
-updated: 2026-10-17
+updated: 2026-11-01
 ---
 
 # Andrew Ng
@@ -56,3 +56,13 @@ Ng의 두 주장에 **당사자·반대편**의 진술이 붙었다.
 ## 화자의 기억으로 옮긴 인용 — "AI is becoming the new electricity" (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
 
 [[cedric-clyburn|Cedric Clyburn]]이 *"I had the chance recently to work with AI legend Andrew Ng and I remembered his quote that AI is becoming the new electricity"*(08:24~08:32)라고 말한다. ⚠️ **화자의 기억으로 옮긴 인용**이고 원 출처·시점은 없다. 둘이 함께 한 일도 발화되지 않는다.
+
+## AI engineering 네 역량과 "chatbots are terrible for learning" (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
+
+10-31 업로드 대담 발췌(10:26, 내레이션 없음). ⚠️ 발화에 이름이 없고 **제목 · 설명란 · 태그 근거**이며, 대담 상대는 설명란의 *"폴 코플스톤"* 뿐이다(철자 · 소속 미상, 귀속하지 않음). 08-30 인터뷰에서 *작업 중* 이라던 **AI engineering skills map**의 결과를 말한다 — 팀명은 ASR *"my team at the Y Combinator I"*(00:42~00:45)로 깨져 있고 DeepLearning.AI로 판독 추정한다.
+
+- **네 역량**: AI 앱 빌드 · 배포(불확실성 → error analysis · eval 루프), 소프트웨어 공학 기본기, 코딩 에이전트 활용, shaping the build. 기준은 *"whether or not humans have a fundamental context advantage"*(02:06~02:11). → [[ai-engineering-skills-map]]
+- **기본기**: 모르면 *"the coding agent will make a bunch of trade-offs that you didn't even know it made a trade-off and just bites you later."*(04:37~04:45)
+- **병목의 이름이 바뀐다**: 08-30의 *product management bottleneck* 이 여기서는 *"the bottleneck is less building, but deciding what to build"*(05:22~05:28) — 그 일을 **개발자가** product gut으로 메운다(*"it does not mean engineers should become product managers"*). 정답은 *"stage-dependent"*, Bezos의 one-way/two-way door. → [[shaping-the-build]]
+- **cognitive offloading의 범위 확장**: *"chatbots are terrible for learning"*(09:05~09:08), 그리고 *"people still underestimate the degree to which this is happening among working adults"*(09:51~09:55) — 본인의 코딩 에이전트 사용까지. → [[cognitive-offloading]]
+- 1인칭 자기 묘사: *"I'm personally much stronger on back-end than front-end"*(05:37~05:40).

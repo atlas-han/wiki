@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
 created: 2026-09-09
-updated: 2026-10-23
+updated: 2026-11-01
 ---
 
 # 클라우드 에이전트 위임
@@ -119,3 +119,7 @@ updated: 2026-10-23
 ## devbox 열 개 — 그리고 "10배로 읽지 말라" (2026-10-23 · [[tech-bridge-stripe-collison-cherny-ai-dev-workflow]])
 
 원음(화자 미상, 06:27~06:36): *"10 different dev boxes um with different agents executing parts of the plan and they might work all day"*. [[stripe|Stripe]]의 devbox는 사람과 [[stripe-minions|Minions]]가 함께 쓰는 클라우드 개발 환경이다(해설). 해설과 설명란은 **두 번** *"생산성이 열배라는 뜻으로 읽을 수는 없습니다"* 라고 막고, 먼저 볼 것을 **계획**으로 돌린다 — 입력·출력·오류 형식·각자 바꿀 파일, 임시 응답 합의, 완료 조건(코드 작성/테스트 통과/리뷰 요청), 전제가 바뀌면 다시 나눌 기준(06:42~07:33, 해설 예시). → [[plan-to-ticket-pipeline]]
+
+## 무거운 데이터와 눈으로 보는 루프는 로컬, 나머지는 VM (2026-11-01 · [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]])
+
+[[mehul-mohan|Mehul Mohan]]의 개인 배치 규칙은 이렇다. *"keep on your computer certain workloads that you know are very data heavy or requires you often"*(10:01~10:09). 예는 영상 편집이다. 파일이 *"north of like 8 10 GB files sometimes each"*(10:24~10:26)이고, 에이전트가 모든 프레임을 보지 못해 사람이 영상을 봐야 한다(10:47~10:55). 그 밖의 일은 VM으로 보낸다. *"regular feature development, bug fixes, all of that, that that can sit on a VM"*(11:08~11:14). 위의 Rauch · Lauren Tan은 **로컬 = 관찰의 자리**라 했다. 이 화자는 근거를 **데이터 무게**와 **사람이 직접 보는 피드백 루프**로 구체화한다. 도구로는 [[herdr]]의 SSH worker와 Claude Code Remote Control(휴대폰에서 VM 세션 조종)을 쓴다. ⚠️ 1인 사용자의 작업 습관이다.

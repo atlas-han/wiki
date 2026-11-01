@@ -7,9 +7,9 @@ aliases: [Saraev, 닉 사라예프]
 links:
   - https://www.youtube.com/watch?v=FSXHk4hMrY8
   - https://www.youtube.com/watch?v=He-NyJjzWM0
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
 created: 2026-10-09
-updated: 2026-10-21
+updated: 2026-11-01
 ---
 
 # Nick Saraev
@@ -47,3 +47,12 @@ updated: 2026-10-21
 - [[tech-bridge-top-1-percent-ai-habits]] · [[sycophancy]] · [[fuzzy-intent-discovery]]
 - 원본 영상(설명란, 2026-10-20 편): <https://www.youtube.com/watch?v=He-NyJjzWM0> (⚠️ 열어 보지 않았다)
 - 원본 영상(설명란): <https://www.youtube.com/watch?v=FSXHk4hMrY8> (⚠️ 열어 보지 않았다)
+
+## 세 번째 등장 — Kimi K3.1 Pro vs Claude Opus 5.5 데모 비교 (2026-11-01 · [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
+
+이번엔 학습 · 업무 습관이 아니라 **모델 비교 실험**이다. 설명란은 그를 *"개발 유튜버 닉 사라예프"* 로 소개한다(10-21 편 내레이션의 *"AI-driven task automation"* 과 결이 다르다). 내레이션 없는 10:12 발췌이고, ⚠️ **이름은 이번에도 설명란 · `tags`에만 있다** — 발화에 이름 · 소속이 없고 목소리 동일성은 확인하지 않았다.
+
+- 실험 설계자 1인칭: *"My rules for these comparisons were to feed them the exact same prompt."*(00:32~00:37) — [[kimi|Kimi Code]] vs [[claude-code|Claude Code]], max effort.
+- 자기 작품 언급: 예전에 만든 게임이 *"kind of gone quasi viral"*(07:57~08:01).
+- 결론: Opus 5.5가 여러 면에서 낫지만 [[kimi|Kimi K3.1 Pro]]가 *"more consistent"*, *"is it double the quality?"*(09:50~09:54) — 그리고 스스로 *"the better you get at quality, the more even a slight percentage improvement makes to the end result"*(09:52~10:00)라는 반론을 단다.
+- 태도: 앞 두 편처럼 **써 보고 판단하라** 쪽이지만, 이번엔 은하 데모의 차이를 *"more of a reflection of just taste"*(04:03~04:07)라고 **자기 평가를 스스로 유보**하는 문장이 있다. ⚠️ 채점 기준 · 프롬프트는 공개되지 않는다.

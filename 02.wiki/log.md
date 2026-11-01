@@ -2409,3 +2409,31 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 4편이라 영상별 **병렬 서브에이전트 4개**로 raw · source · entity/concept를 나누고, 공유 페이지(index · overview · log · tech-bridge · iconize)는 오케스트레이터가 스크립트로 갱신했다. 커밋 전 오케스트레이터가 source · 신규 페이지의 영어 인용을 en-orig와 기계 대조했다. **비축자 인용 2건**(Musk 편 *"GW of compute"* · *"terawatt of chips"* — 발화는 *"gigawatts of compute"* · *"a terawatt of (…) super intelligence chips per year"*)을 source · [[terafab]] · [[power-shortfall]]에서 바로잡았다. 세 편은 영어 원본 오디오만 있는 구성, Codex 편은 10-28 `kJGTHFZHLVg`와 같은 Korean original + English 두 트랙 구성이다. 429는 없었다.
+
+## [2026-11-01] ingest | Tech Bridge — 10-31 업로드 3편 (AI 에이전트를 다루는 새 작업 환경 herdr app — Mehul Mohan 사용기 · 비싼 AI가 더 잘할까? Kimi K3.1 vs Claude Opus 5.5 — Nick Saraev(추정) 데모 비교 · AI가 코딩하면 개발자는 뭘 해야 할까? — 앤드루 응 대담 발췌)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 10-31 업로드 **3편** ingest. 셋 다 `English (US) original` + 더빙, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429 없음.
+
+**신규 source 3 · entity 4 · concept 2**, 기존 페이지 보강 19개(claude-code 두 편 중복, + tech-bridge), index **937 → 946**(실측 일치).
+
+- `D2yA1--RoKQ`(14:10, 챕터 10) → [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]: 내레이션 없는 1인칭 화면 시연 · 사용기. 화자는 [[mehul-mohan]](발화 호명 *"Then why, Mehul"* 01:15 + 설명란).
+  - 신규: [[mehul-mohan]] · [[herdr]] · [[cmux]]
+  - 보강: [[claude-code]](권한 단계 주장 · Remote Control · 서브에이전트) · [[agent-attention-management]](상태 배지 + 알림 최소형) · [[cloud-agent-delegation]](데이터 무게 · 눈으로 보는 루프는 로컬) · [[always-on-agent-architecture]](SSH worker · 로컬 데몬으로 세션 지속) · [[conductor]](같은 범주의 사용자 비교)
+  - ⚠️ 새 *"even more dangerously skip permissions"* 플래그와 환경 변수 이름은 미확인이다(화면에만 있음). herdr · cmux 기능은 몇 시간 써 본 1인 진술이다. 설명란 링크 3개는 열지 않았다. `upload_date` 20261031 = 11-01 08:00 KST.
+  - 페이지화하지 않음: Claude 데스크톱 앱 · DeepSeek · OpenCode · iTerm · tmux(언급 수준), Claude Code Remote Control([[claude-code]] 안에서 다룸), "agent multiplexer"([[herdr]] · [[conductor]]에서 다룸), 레트로 "98" 테마(판독 보류).
+- `f_8aIpusjg0`(10:12, 챕터 11) → [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]]: 내레이션 없는 1인칭 모델 비교 발췌. 화자는 설명란 · 태그 기준 [[nick-saraev]](추정).
+  - 신규: [[kimi]]
+  - 보강: [[claude-opus-5-5]](첫 실사용 결과) · [[nick-saraev]](세 번째 등장) · [[claude-code]](하네스 변수) · [[agent-swarm]](앱 기본 swarm) · [[agent-verification-skill]](max effort ≠ 작동 확인) · [[taste-vs-judgment]](평가자 쪽 취향) · [[true-cost-to-perfect-answer]](단가 ×2 vs 실패) · [[inference-speed-as-capability]](빠른 쪽이 더 일관적)
+  - ⚠️ 이름은 발화되지 않는다. *"Kimmy"* · *"Kim E"* · *"Kimiko"* → Kimi로 판독했다. 8개 중 6개 데모만 나온다. 가격은 확인하지 않았다. 비교는 모델 + 하네스 쌍이다.
+  - 페이지화하지 않음: Kimi Code([[kimi]]에 포함), Moonshot(발화 없음, 귀속 미확정), 데모 이름(Loom · Abyssal · Kestrel Tower · Beyond the Veil), Codex · OpenAI(한 마디씩), 화자의 바이럴 게임(이름 없음).
+- `2tEchomcjk4`(10:26, 챕터 8) → [[tech-bridge-andrew-ng-ai-engineering-skills-map]]: 내레이션 없는 대담 발췌. 화자는 제목 · 설명란 · 태그 기준 [[andrew-ng]], 대담 상대는 설명란 "폴 코플스톤"(미귀속).
+  - 신규: [[ai-engineering-skills-map]] · [[shaping-the-build]]
+  - 보강: [[andrew-ng]](네 역량 · 병목 이름 변화) · [[cognitive-offloading]](일하는 어른 · 코딩 에이전트) · [[action-reversibility]](프로젝트 단계의 door) · [[disposable-vs-durable-software]](수명이 아니라 시점) · [[spec-driven-development]](스펙은 단계의 함수) · [[three-tier-ai-skill-stack]](역량 지도 비교) · [[ai-engineer-vs-ml-researcher]](직무가 아니라 역량)
+  - ⚠️ 이름은 발화에 없다. *"Y Combinator I"* → DeepLearning.AI, *"rewrite ratio"* → read-write ratio는 판독 추정이다. 편집 이음매가 5곳이고, 07:16 답의 질문은 캡션에 없다. 조사 · 연구 출처가 없다.
+  - 페이지화하지 않음: 대담 상대(설명란 한글 표기뿐), DeepLearning.AI(태그 · 링크, 발화는 ASR로 깨짐), Jeff Bezos(은유 출처로만), TikTok(비유).
+- [[tech-bridge]] · index · overview 갱신, iconize 9건.
+
+### 운영 메모
+
+3편이라 영상별 **병렬 서브에이전트 3개**(공용 브리프 `.scratch/tb1101/BRIEF.md`)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. 커밋 전 오케스트레이터가 신규 페이지 · 추가된 줄의 영어 인용 423건을 en-orig와 다시 대조했고 비축자 인용은 0건이었다(불일치 11건은 모두 다른 소스 귀속 인용 · 표기). 서브에이전트들은 인용 시작 타임스탬프를 약 57곳 바로잡았다. ⭐ `variant=gemini` 구성에서 `en`은 URL 파라미터가 en-orig와 같아도 **고쳐 쓴 문장**이다(10-30 Osmani 편 포함 4편 연속) — `en`은 인용 근거가 아니다.
+

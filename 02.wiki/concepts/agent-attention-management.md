@@ -6,9 +6,9 @@ tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, vis
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
 related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
 created: 2026-10-09
-updated: 2026-10-24
+updated: 2026-11-01
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -79,3 +79,7 @@ updated: 2026-10-24
 ## 알림을 늘리는 게 아니라 고르는 것 (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]] · [[tech-bridge-jediah-katz-harness-whats-left]])
 
 [[claude-duet|Claude Duet]] 해설: *"중요한 건 알림이 많아지는게 아니에요. 흩어진 일정과 메시지에서 지금 내가 봐야 할 일을 골라주는 거죠. 급하지 않은 일까지 계속 부르면 오히려 방해가 될 수 있어요."*(00:45~00:55) 같은 날 [[jediah-katz|Jediah Katz]] 편 해설은 이 판단을 **새로 생긴 하네스 일**로 꼽는다 — *"일이 길어지면 언제 알려야 하는지, 이런 문제는 코드를 잘 짜는 것만으로 풀리지 않아요."*(04:14~04:21) ⚠️ Duet 초기 리뷰(해설 전언)는 오히려 *먼저 알려 주는 정도가 아쉬웠다* — 과소 알림 쪽 실패.
+
+## 상태 표시와 알림 — 개인 개발자의 에이전트 관리 화면 (2026-11-01 · [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]])
+
+[[herdr]] 사용기에서 [[mehul-mohan|Mehul Mohan]]이 이 문제에 가장 단순한 답을 보여 준다. 통합된 에이전트는 *"it will know like which when it is idle, when it is done, when is it working, and so on"*(06:56~06:59)이고, 앱은 *"dispatching notifications to me"*(06:25~06:27)한다. 화자의 기준은 *"your agents which are just organized properly by the state, like where they are right now"*(09:52~09:56)다. 규모 감각도 있다. *"you would not have like 100 agents running, right? At least not by yourself."*(12:21~12:25) 그 이상은 에이전트가 서브에이전트를 부를 때의 일이다. [[agentcraft|AgentCraft]]의 게임 지도와 달리 **터미널 + 상태 배지 + 알림**이라는 최소형이다. 화자도 mission control · Slack · Google Meet형 레이아웃은 *"almost like an overkill"*(08:44~08:46)이라 한다. ⚠️ 1인 사용자의 몇 시간 체감이다.

@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-engineer, career, roles, judgment, systems]
 aliases: [엔진과 자동차, AI 엔지니어의 정의, 배선하는 사람]
-related: [three-tier-ai-skill-stack, taste-vs-judgment, workflow-vs-agent, agent-knowledge-sourcing, agent-distributed-systems, cognitive-offloading, open-model-customization-loop]
+related: [three-tier-ai-skill-stack, taste-vs-judgment, workflow-vs-agent, agent-knowledge-sourcing, agent-distributed-systems, cognitive-offloading, open-model-customization-loop, ai-engineering-skills-map]
 first-seen: tech-bridge-ai-engineer-three-tier-skill-stack
-sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-fireworks-train-to-deploy-open-models]
+sources: [tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-andrew-ng-ai-engineering-skills-map]
 created: 2026-09-16
-updated: 2026-10-18
+updated: 2026-11-01
 ---
 
 # AI 엔지니어 vs 머신러닝 연구원
@@ -48,3 +48,7 @@ updated: 2026-10-18
 - [[tech-bridge-ai-engineer-three-tier-skill-stack]] — first-seen
 - [[cedric-clyburn]] · [[ibm]]
 - 관련: [[three-tier-ai-skill-stack]] · [[taste-vs-judgment]] · [[read-fluency-for-agent-output]] · [[workflow-vs-agent]]
+
+## 직무가 아니라 역량 — Ng의 정의 (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
+
+이 페이지의 Clyburn 정의는 AI 엔지니어를 **직무**(이미 있는 모델을 배선하는 사람)로 세웠다. [[andrew-ng|Ng]](제목 · 설명란 · 태그 근거)은 같은 말을 직함에서 떼어 낸다: *"by that I don't mean people that will take on an AI engineering job title, but rather people in all sorts of job roles, including software engineering, front-end, back-end, DevOps, mobile, that will benefit from here having AI engineering skills."*(00:27~00:42) 두 정의는 *어려운 것은 코드가 아니라 판단* 이라는 데서 다시 만난다 — Ng의 넷째 역량이 *"deciding what to build"*(05:25~05:28)다. → [[ai-engineering-skills-map]] · [[shaping-the-build]]
