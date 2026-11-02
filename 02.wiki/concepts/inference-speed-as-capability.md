@@ -6,9 +6,9 @@ tags: [inference-speed, latency, pricing, democratization, feedback-loop, openai
 aliases: [speed democratization, 속도의 민주화, ultra fast, price of IQ, 지능의 가격과 속도의 가격]
 related: [intelligence-abundance, compute-constrained-growth, system-1-model, search-latency-tiers, voice-latency-thinking-tradeoff, model-mixing-economics, agentic-sites, speculative-decoding, open-model-customization-loop]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 created: 2026-10-09
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # 추론 속도라는 두 번째 축
@@ -71,3 +71,7 @@ Altman이 속도를 모델 공급자의 축으로 말했다면, [[fireworks-ai|F
 [[nick-saraev|Nick Saraev]](추정)의 같은 프롬프트 데모 비교에서 평균 제작 시간은 [[kimi|Kimi K3.1 Pro]] 29분 41초, [[claude-opus-5-5|Opus 5.5]] 47분 2초(00:57~01:06)였다. 화자는 곧 *"Obviously, time to build was different from quality"*(01:11~01:13)라고 축을 나눈다.
 
 결과는 [[tech-bridge-gpt-6-1-terra-first-look|Terra 편]]의 *빠르지만 쉽게 포기한다* 와 다른 방향이다: 느린 쪽(Opus)이 완성도는 높지만 *"by taking far longer, it hasn't even verified that it works"*(02:13~02:15), 빠른 쪽(Kimi)은 *"more consistent despite its lower quality"*(09:39~09:42). → **속도 · 완성도 · 완수(작동)가 서로 독립적으로 움직인다**는 기록이 하나 더. ⚠️ 하네스까지 다른 1인 비교, 평균의 표본 수 미발화.
+
+## 2026-11-02 — 절반 시간 · 1/3 토큰, 그리고 "일정 복잡도까지" ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+같은 화자([[nick-saraev|Nick Saraev]] 추정)의 두 번째 비교에서 [[openai-terra|GPT-6.1 Terra]]는 평균 23분 43초, [[claude-opus-5-5|Opus 5.5]]는 43분 52초(00:48~00:57) — *"in addition to finishing far faster, it also finished for about a third of the tokens."*(01:04~01:12) 이번엔 빠른 쪽이 **포기하지도**(10-29 편) **더 일관적이지도**(Kimi 편) 않았다. 대신 화자가 붙인 한계는 **복잡도**다: *"great up to a certain level of complexity"*(06:09~06:14). 속도의 쓰임새로는 computer use를 든다 — *"given the costs and also the speed with which it can do its job."*(06:37~06:43) → 속도 축이 **작업 종류**(computer use · 90퍼센타일 작업 vs 3D · 디자인)에 따라 가치가 달라진다는 사용자 쪽 기록. ⚠️ 1인 · 1회, 하네스(Codex vs Claude Code)까지 다른 비교. 비용 대비 점수 2차원에는 속도가 없다는 점은 [[cost-vs-score-frontier]].

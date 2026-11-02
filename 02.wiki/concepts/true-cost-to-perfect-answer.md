@@ -6,9 +6,9 @@ tags: [token-economics, cost, reliability, expected-value, evaluation, token-rol
 aliases: [진짜 비용, 예산 나누기 합격률, 기대 실행 횟수]
 related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing, automatic-model-routing]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 created: 2026-09-18
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # 완벽한 답까지의 진짜 비용
@@ -79,3 +79,10 @@ updated: 2026-11-01
 - 이 페이지의 렌즈로 보면 **단가 × 재실행**이 빠져 있다. Opus는 8개 중 2개가 작동하지 않아 수정 요청이 필요했고(07:13~07:19), Kimi는 *"more consistent despite its lower quality"*(09:39~09:42) — 합격률이 다르면 단가 비율(×2)이 곧 작업당 비용 비율이 아니다.
 - 화자의 반론은 반대 방향이다: *"the better you get at quality, the more even a slight percentage improvement makes to the end result."*(09:52~10:00) — 상단의 작은 품질 차이가 결과에 크게 작용한다면 두 배 단가가 정당화될 수 있다는 것.
 - ⚠️ 실행은 **플랜**이었다(*"I didn't run these on API usage"* 10:05~10:07). 토큰 비용은 측정되지 않았고 가격은 화자 진술($2/$10, *"double"*)이다.
+
+## 2026-11-02 — "95~97%를 11%에": 그래프의 작업당 비용 ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+하루 뒤 같은 화자([[nick-saraev|Nick Saraev]] 추정)는 Kimi 편의 질문(*"is it double the quality?"*)에 **비용 대비 점수 그래프**로 답한다: [[openai-terra|Terra]]는 Agents' Last Exam에서 *"about a dollar"*, [[claude-opus-5-5|Opus 5.5]]는 *"about nine"*(10:00~10:02), 결론 *"about 95 to 97% of Claude Opus 5.5 at 11% of the cost."*(11:40~11:46)
+
+- x축이 **작업당 비용**이라는 점에서 이 페이지의 단위에 한 걸음 가깝다(단가표 ×2 비교였던 Kimi 편보다).
+- 그러나 y축이 평균 점수라면 **합격률 기반 기대 실행 횟수**는 여전히 빠져 있다 — 97%의 "성능"이 *쓸 수 있는 답의 비율* 인지 알 수 없다. 데모 쪽의 *"less than 8/12[=1/12] of the total kind of a dollar usage"*(01:16~01:21)는 수정 요청 없이 끝난 다섯 데모의 실사용 비용으로 보이지만 계산 근거는 미발화. ⚠️ 그래프는 출처 미표기(OpenAI 자료로 추정). → [[cost-vs-score-frontier]]

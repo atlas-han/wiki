@@ -6,9 +6,9 @@ tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
 related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-09-13
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # 검증 스킬
@@ -113,3 +113,9 @@ updated: 2026-11-01
 마인크래프트 데모에선 캐릭터가 움직이지 않았고 — *"Opus 5.5 might have screwed the pooch up a little bit without that testing."*(07:05~07:09) — 화자는 *"it just didn't I don't know, proof its work or something like that at the end"*(07:21~07:24)라고 추측한다.
 
 **사용자가 본 것은 결과물의 실패뿐이다.** 이 페이지가 말하는 *에이전트가 실제 사용자처럼 확인하게 하기*(브라우저 시험 · CDP 등)가 하네스에 걸려 있었는지는 나오지 않는다. 다만 *"max effort"* 가 **작동 확인을 보장하지 않는다**는 사용자 쪽 관찰로 남긴다. ⚠️ 1인 · 1회 비교, 원인은 화자 추측.
+
+## 2026-11-02 — eval.md · 목업 · 완료 차단 훅: 검증 기준을 구현 전에 ([[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+- **[Anthropic]**(발표자 전달) *"they ask Claude to run something that proves it works and to show them the result instead of just saying it's done. That can be the app's tests or a screenshot compared with the design."*(02:23~02:32) · [[boris-cherny|Boris Cherny]] 간접 인용 *"give it away[=a way] to prove it did the work right"*(02:38~02:41).
+- **[AI Labs]** 이를 write-eval 스킬로: 기능마다 `eval.md`(검증 방법) + 디자인이 있으면 **목업 페이지**를 먼저 만들어 비교 기준으로 삼고, eval은 **사람이 승인하기 전엔 빌드 금지**, 그리고 *"a hook that makes sure agent doesn't mark the task as done until the evals have passed"*(03:50~03:56). 위 Lauren Tan · Railway 판본이 *구현 후 스스로 돌려 보기* 였다면, 여기는 **구현 전에 검증 기준을 쓰고 사람이 먼저 검토**한다 — 리뷰 부담을 diff에서 eval로 옮긴다.
+- ⚠️ 2차 전달 + 한 번의 시연.

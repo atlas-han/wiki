@@ -6,9 +6,9 @@ tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
 related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns, shaping-the-build]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-andrew-ng-ai-engineering-skills-map]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-09-09
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # 행동 가역성
@@ -106,3 +106,9 @@ Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이�
 ## 프로젝트 단계의 one-way / two-way door (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
 
 [[andrew-ng|Ng]](제목 · 설명란 · 태그 근거)이 같은 은유를 **PR · 행동**이 아니라 **프로젝트 단계**에 쓴다: *"The answer is stage-dependent and it depends a lot on, you know, what Jeff Bezos calls one-way doors versus two-way doors."*(07:16~07:23) 초기에는 *"build a quick and dirty prototype, see what happens, throw it away"*(07:54~07:58), 이후에는 아키텍처 · 민감 데이터 · 보안을 신중히(08:01~08:12). 초기의 자유에도 *"so long as you can do it in a responsible, safe way"*(07:49~07:54) — 민감 데이터 유출만은 one-way로 남긴다. ⚠️ 어느 결정이 one-way인지의 적용 예는 없다. → [[shaping-the-build]]
+
+## 몇 분 안에 되돌릴 수 있으면 덜 읽어도 된다 (2026-11-02 · [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+- **[Anthropic]**(AI Labs 전달) *"The Claude code team can undo almost anything they release in minutes, and that's what lets them read less."*(11:40~11:46) — 되돌림 속도가 **리뷰 깊이의 예산**이 된다. 같은 영상의 위험 등급도 축이 같다: 돈 · 잠금 · 남의 데이터 노출은 *"You can't take those back once they happen. So, those changes are high risk."*(09:34~09:38)
+- **[AI Labs]** 개인 개발자 판본은 Git: 기능마다 브랜치, CLAUDE.md에 *"use Git and make its own branch for each feature. It should also save every version that works."*(13:43~13:50), fix-a-bug 스킬이 버그를 재현해 원인 추정을 확인한 뒤 고치거나 이전 버전으로 롤백(13:24~13:57).
+- ⚠️ "몇 분"은 발표자 전달이고 측정 없음. → [[risk-proportional-human-review]]

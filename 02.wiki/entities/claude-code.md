@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # Claude Code
@@ -220,3 +220,11 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 2026-11-01 — 모델 비교의 하네스 쪽 변수 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]])
 
 [[nick-saraev|Nick Saraev]](추정)가 [[claude-opus-5-5|Opus 5.5]]를 Claude Code로, [[kimi|Kimi K3.1 Pro]]를 Kimi Code로 *"at max effort"*(00:41~00:43) 돌려 같은 프롬프트 데모를 비교한다. Opus 쪽은 평균 47분 2초로 더 오래 걸렸고 데모 둘이 작동하지 않았다 — 화자는 *"didn't (…) proof its work"* 라고 추측할 뿐 Claude Code의 검증 단계 · 로그는 보여 주지 않는다. ⚠️ 비교가 **모델 + 하네스 쌍**이라 결과를 Claude Code나 모델 어느 한쪽에 돌릴 수 없다.
+
+## 2026-11-02 — 별도 리뷰어 · code review 명령 · REVIEW.md · classifier (AI Labs 전달, [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+[[ai-labs|AI Labs]](설명란 근거)가 Claude Code 팀의 코드 리뷰 글(⚠️ 열어 보지 않음)을 요약한다. **모두 발표자의 2차 전달**이다.
+
+- 팀 관행: 변경 전 *"run something that proves it works and to show them the result instead of just saying it's done"*(02:25~02:28), **별도 reviewer 에이전트**가 사람보다 먼저 모든 변경을 본다(05:06~05:14), **classifier** 에이전트가 변경마다 리뷰 깊이를 정한다(09:09~09:13), 같은 실수를 반복하면 *"they change the instructions Claude reads"*(08:20~08:22), 50회+ 왕복 사례 뒤 루프 세 규칙 → [[review-loop-termination]], 그리고 *"can undo almost anything they release in minutes, and that's what lets them read less"*(11:42~11:46).
+- ⚠️ 제품 진술(미확인): *"That review agent is only available on the team and enterprise plans for now, but a lighter version already comes with Claude code as the code review command."*(05:17~05:26) — effort level이 낮으면 가장 확신하는 것만 보고(05:35~05:39). 기사는 `REVIEW.md`에 규칙을 쓰라고 하지만 *"By default, this file isn't read unless you ask Claude to do so"*(05:47~05:52)라 발표자는 CLAUDE.md에서 링크한다.
+- AI Labs 구현은 Claude Code의 스킬 · 훅 · 서브에이전트 조합이다(완료 차단 훅, 코드 읽기 차단 훅, fresh context 서브에이전트) → [[hook-enforced-workflow]] · [[code-blind-first-user-test]].

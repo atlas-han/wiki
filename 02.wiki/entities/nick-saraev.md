@@ -7,9 +7,9 @@ aliases: [Saraev, 닉 사라예프]
 links:
   - https://www.youtube.com/watch?v=FSXHk4hMrY8
   - https://www.youtube.com/watch?v=He-NyJjzWM0
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 created: 2026-10-09
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # Nick Saraev
@@ -56,3 +56,13 @@ updated: 2026-11-01
 - 자기 작품 언급: 예전에 만든 게임이 *"kind of gone quasi viral"*(07:57~08:01).
 - 결론: Opus 5.5가 여러 면에서 낫지만 [[kimi|Kimi K3.1 Pro]]가 *"more consistent"*, *"is it double the quality?"*(09:50~09:54) — 그리고 스스로 *"the better you get at quality, the more even a slight percentage improvement makes to the end result"*(09:52~10:00)라는 반론을 단다.
 - 태도: 앞 두 편처럼 **써 보고 판단하라** 쪽이지만, 이번엔 은하 데모의 차이를 *"more of a reflection of just taste"*(04:03~04:07)라고 **자기 평가를 스스로 유보**하는 문장이 있다. ⚠️ 채점 기준 · 프롬프트는 공개되지 않는다.
+
+## 네 번째 등장 — GPT-6.1 Terra vs Claude Opus 5.5 데모 비교 + 벤치마크 읽기 (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+10-31 Kimi 편 바로 다음 업로드로, **같은 형식**(비교용 랜딩 페이지, 같은 규칙 문장, 평균 제작 시간부터)이다. ⚠️ **이름은 이번에도 설명란 · `tags`에만 있다**(*"What am I, freaking Nicholas Copernicus?"* 01:35~01:38은 농담이지 자기 소개가 아니다). 형식 유사성은 같은 제작자라는 보조 정황이다. 목소리 동일성은 확인하지 않았다.
+
+- 규칙: *"My constraints here were that both models needed to get the same prompt."*(00:28~00:33) — [[openai-terra|Terra]]는 [[codex|Codex]], [[claude-opus-5-5|Opus 5.5]]는 [[claude-code|Claude Code]], max effort.
+- 데모 결론: *"GPT-6.1 Terra is great up to a certain level of complexity"*(06:06~06:14), 상위는 Opus.
+- 이번엔 후반을 **벤치마크 읽기**에 쓰면서 스스로 단서를 단다: *"the benchmarks themselves are not super valuable or important these days."*(07:43~07:47) 그러고도 *"That, ladies and gentlemen, is leverage."*(11:44~11:46)로 비용 대비 점수 그래프에서 결론을 낸다 → [[cost-vs-score-frontier]]
+- Codex 예산 언급(*"stretch significantly more out of your Codex budget"* 11:23~11:26) — Kimi 편의 *"I did run these on plans"* 처럼 구독 플랜 사용자로 읽힌다(⚠️ 이번 편은 플랜 여부를 명시하지 않는다).
+- 태도: Kimi 편과 같이 **싼 모델을 진지한 선택지로** 놓되, 게임 품질은 *"more like qualitative"*(04:51~04:55)라 하고 비싼 쪽을 *"something that I would actually play"*(04:57~04:58)라고 고른다 — 점수와 체감을 구분하는 문장이 이번에도 있다.

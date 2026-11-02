@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
 related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection, three-level-agent-review]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-three-level-agent-review, tech-bridge-annie-wang-harness-four-designs]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-three-level-agent-review, tech-bridge-annie-wang-harness-four-designs, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-05-25
-updated: 2026-10-26
+updated: 2026-11-02
 ---
 
 # Generator–Evaluator Pattern
@@ -332,3 +332,9 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 ## 완료 판정의 사다리 — 결정적 평가 → judge → 사람 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
 
 [[annie-wang|Annie Wang]](발췌)은 세 단을 쌓는다. ① **결정적 평가**: 샘플 고객 10명이 이름 · 이메일까지 파일에 들어갔는지 코드로 확인한다(05:48~06:07). ② **judge**(해설): 완료 안내가 이해하기 쉬운지는 다른 AI에게 기준을 주고 보게 한다. ③ *"The judge can make mistakes. So it is very helpful to compare its judgment with human review"* — 다운로드는 되는데 버튼 이름이 헷갈리는 것은 자동 검사가 못 본다(06:29~06:55). 생성 단계에서도 unit test와 browser test를 **병렬로** 돌리고 실패를 에이전트에 되먹인다(02:34~02:56). 해설은 *"클로드 개발사의 실무 기록"* 에서 브라우저 조작이 코드 검사가 놓친 문제를 찾았다고 덧붙였지만 출처를 밝히지 않았다(⚠️ 미확인).
+
+## builder · verifier · reviewer와 종료 규칙 — Claude Code 팀 사례 (2026-11-02 · [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+[[ai-labs|AI Labs]](설명란 근거)의 review-loop 스킬은 평가자를 **둘로** 나눈다: verifier(eval마다 passed/failed) + reviewer(*"find anything the evals missed"* 07:26~07:28, `review.md` 규칙). 둘 다 *"sub-agents with fresh context windows (…) so they don't just agree with what the main agent did"*(06:47~06:52). 메인 에이전트는 orchestrator, 상태는 `state.md`.
+
+종료 쪽이 새롭다 — [[anthropic|Anthropic]] Claude Code 팀(발표자 전달) 사례: *"a change that went back and forth more than 50 times"*(10:06~10:08), 재보고의 약 59%가 첫 라운드 문제. 처방은 3라운드 후 재설계 · 변경분만 리뷰 · 문제 종류 명시, AI Labs 판본은 5라운드 · 2라운드 정체. → [[review-loop-termination]]

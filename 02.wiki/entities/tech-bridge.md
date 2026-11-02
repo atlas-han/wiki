@@ -158,8 +158,10 @@ sources:
   - tech-bridge-mehul-mohan-herdr-app-vs-cmux
   - tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5
   - tech-bridge-andrew-ng-ai-engineering-skills-map
+  - tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5
+  - tech-bridge-ai-labs-claude-code-verification-review-loop
 created: 2026-06-03
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # Tech Bridge
@@ -1538,3 +1540,18 @@ updated: 2026-11-01
 - ⚠️ 대담 상대는 설명란의 "폴 코플스톤"뿐이라 귀속하지 않았다. 팀명 *"Y Combinator I"* 는 DeepLearning.AI로 판독 추정이다. 1만 건 공고 조사와 학습 연구는 출처가 없다. 녹화일 · 행사는 미상이다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-01 업로드 — Nick Saraev GPT-6.1 Terra vs Opus 5.5 · AI Labs Claude Code 검증·리뷰 루프 (2026-11-02 ingest)
+
+[[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5|[한글자막] 바이브 코딩, 이렇게 싸도 될까? GPT-6.1 Terra vs Opus 5.5]](`FwJ6Ae_-u4M`, 11:48, 공식 챕터 15) — [[nick-saraev]](설명란 · 태그 근거, 네 번째 등장) 데모 비교 + 벤치마크 읽기 발췌, 내레이션 없음 ([[openai-terra]] · [[claude-opus-5-5]] · [[codex]] · [[cost-vs-score-frontier]](신규) · [[greg-brockman]] · [[inference-speed-as-capability]] · [[true-cost-to-perfect-answer]] · [[taste-vs-judgment]] · [[model-mixing-economics]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 fr · de · hi · id · it · pt · es), `ko-orig` 없음, ko는 `tlang=ko`, `en` ≠ `en-orig`(md5). 인용은 en-orig로만 했다. 00:00~00:20(챕터 "한국어 소개")은 무캡션이다. ko가 뜻을 뒤집거나 주어 · 대상을 바꾼 곳이 세 군데다(04:49 · 10:08 · 11:42).
+- ⚠️ 이름은 설명란 · 태그에만 있다. 시간 · 토큰 · 1/12는 화자 진술이고, 벤치마크 수치는 출처 미표기 그래프(OpenAI 자료로 추정)를 눈대중으로 읽은 값이다. computer use 구간은 남의 데모와 Brockman 인용이다.
+
+[[tech-bridge-ai-labs-claude-code-verification-review-loop|[한글자막] Claude Code, 완료했다고 끝이 아니다 | 검증과 리뷰 루프 만들기]](`IGTdL4IPLq8`, 14:00, 공식 챕터 11) — [[ai-labs]](설명란 근거) 1인칭 복수 해설 · 화면 시연, 내레이션 없음 ([[review-loop-termination]](신규) · [[code-blind-first-user-test]](신규) · [[automated-code-review]] · [[verification-bottleneck]] · [[risk-proportional-human-review]] · [[generator-evaluator-pattern]] · [[agent-verification-skill]] · [[hook-enforced-workflow]] · [[action-reversibility]] · [[claude-code]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개 언어, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5). 첫 챕터 00:00~00:22는 무캡션이다. `upload_date` 20261101은 KST로 11-02 06:45다.
+- ⚠️ 설명란이 "AI Labs 구현"과 "Anthropic 실제 프로세스"를 구분한다고 밝혀, 페이지도 항목마다 [Anthropic]/[AI Labs]를 붙였다. Anthropic 쪽 수치 · 제품 진술은 발표자가 기사를 요약한 것이고 설명란 링크는 열지 않았다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+

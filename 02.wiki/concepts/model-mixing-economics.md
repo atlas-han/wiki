@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 created: 2026-09-09
-updated: 2026-10-28
+updated: 2026-11-02
 ---
 
 # 모델 혼합의 경제학
@@ -177,3 +177,7 @@ updated: 2026-10-28
 이 페이지의 혼합은 대부분 **한 작업 안에서** 계획 모델과 실행 모델을 나누는 라우팅이었다. 바벨은 축이 다르다. **조직의 활동을 탐색(개발 · 테스트 · 연구)과 서빙(운영)으로 가른다.** 탐색 쪽은 비용을 아끼지 않고, 절감은 전부 운영 쪽에서 한다. 운영 쪽 끝은 10-18 [[tech-bridge-fireworks-train-to-deploy-open-models|Fireworks 편]]의 *고르는 것에서 고치는 것으로*(맞춤 학습)와 같은 자리다.
 
 ⚠️ 개발 단계의 *"Use the largest model"* 은 이 페이지의 라우팅 수치들(임계값 위 최저가, 오픈소스 10~30x 저렴)과 부딪친다. 화자의 근거는 측정이 아니라 *"you don't know the counterfactual"*(07:24~07:26)이다. 당사자 진술이고 수치가 없다.
+
+## 사용자 결론으로서의 혼합 — "90퍼센타일은 싼 모델, 최상단은 비싼 모델" (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)의 [[openai-terra|GPT-6.1 Terra]] vs [[claude-opus-5-5|Opus 5.5]] 비교 결론은 단계별이 아니라 **작업 등급별** 분할이다: *"I would absolutely use 6.1 Terra for computer use as well as probably most like 90th percentile applications."*(11:13~11:23) · *"on upper echelons of quality, you know, it doesn't really hold a candle to Opus 5.5, especially in some design applications."*(11:28~11:35) 근거는 데모의 *"great up to a certain level of complexity"*(06:09~06:14)와 비용 대비 점수 그래프(*"90, I don't know, 7%[=97%] of performance for 1/9 or maybe 11% cost"* 10:04~10:12)다. 사실 오류율이 가장 낮다는 그래프를 근거로 *"daily driver for most conversations"*(11:08~11:11)도 Terra에 준다. ⚠️ 1인 판단 + 출처 미표기 그래프. → [[cost-vs-score-frontier]]

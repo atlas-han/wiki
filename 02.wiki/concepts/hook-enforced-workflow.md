@@ -5,9 +5,9 @@ category: pattern
 tags: [hooks, harness, enforcement, agent-skills]
 related: [agent-skills, agent-harness-design, hard-vs-soft-enforcement, self-harness, no-silent-write, deny-and-continue]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering, tech-bridge-cooking-with-codex]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering, tech-bridge-cooking-with-codex, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-09-15
-updated: 2026-10-11
+updated: 2026-11-02
 ---
 
 # Hook-Enforced Workflow
@@ -74,3 +74,10 @@ updated: 2026-10-11
 - [[gabriel-chua|Gabriel Chua]]: 매 턴 끝 정리 스크립트 — *"some of these housekeeping that maybe you want a language model to do you can run it deterministically with a hook"*(49:42~49:48). ⭐ *"you're giving the agent more autonomy it's going to work (…) longer and longer without your supervision (…) hooks become useful in getting the guardrail."*(49:52~50:01)
 
 > ⚠️ ko: *"approved white list"* → **"백인들이 승인한"**(48:24~48:26), *"housekeeping … you want a language model to do"* → **"모델에게 맡기고 싶지 않아요"**(49:44, 부정 삽입).
+
+## 완료 차단 훅과 코드 읽기 차단 훅 — 터미널 우회까지 (2026-11-02 · [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+[[ai-labs|AI Labs]](설명란 근거)가 Claude에게 만들게 한 훅 둘:
+
+- **완료 차단**: *"a hook that makes sure agent doesn't mark the task as done until the evals have passed."*(03:50~03:56) review-loop 안에서도 builder 중 *"stops the main agent from calling the feature done too early"*(07:49~07:53). 10-09 Rails 사례의 Stop 훅과 같은 자리.
+- **읽기 차단**: first-time user 에이전트가 앱 코드를 못 읽게 — *"The agent would normally get around that block with terminal commands. So, the hook stops it from reading the code that way, too."*(12:37~12:42) 파일 읽기 도구만 막으면 셸로 우회한다는 관찰(발표자 진술)이 **도구 단위가 아니라 행동 단위로 막아야 한다**는 근거가 된다. → [[code-blind-first-user-test]]

@@ -6,9 +6,9 @@ tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
 related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-10-03
-updated: 2026-10-17
+updated: 2026-11-02
 ---
 
 # 자동 코드 리뷰
@@ -122,3 +122,13 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 - 관련: [[mergeability-gap]] · [[verification-bottleneck]] · [[generator-evaluator-pattern]] · [[risk-proportional-human-review]] · [[prompt-injection]] · [[cursor]] · [[codex]] · [[code-knowledge-graph]]
 - [[tech-bridge-pocock-pr-bottleneck]] — 한 사람이 지은 리뷰 하네스 (Matt Pocock)
 - [[tech-bridge-rails-harness-engineering]] — 좁은 리뷰 스킬 셋 (Joël Quenneville)
+
+## 별도 리뷰어 · REVIEW.md · 반복 실수는 지시문으로 — Anthropic 관행과 AI Labs 구현 (2026-11-02 · [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+[[ai-labs|AI Labs]](설명란 근거)가 [[anthropic|Anthropic]] [[claude-code|Claude Code]] 팀의 리뷰 글을 요약한다(⚠️ 2차 전달, 기사 미확인).
+
+- **[Anthropic] 리뷰 질문의 교체**: *"Instead of asking whether someone read the code, they started asking what could go wrong with the change and how to catch it."*(01:33~01:38)
+- **[Anthropic] 만든 에이전트 ≠ 리뷰 에이전트**: 만든 쪽은 *"ends up agreeing with itself"*(05:04~05:06) → *"a separate reviewer agent. The reviewer checks every change before a person looks at it."*(05:08~05:14) 효과는 수치 없이 *"far more of their changes get a review that catches something real"*(05:16~05:17). ⚠️ Team · Enterprise 한정, 가벼운 판본 = code review 명령(effort level)이라는 제품 진술은 미확인.
+- **[Anthropic → AI Labs] REVIEW.md**: 기사는 규칙 파일을 권하고, 발표자는 그것을 CLAUDE.md에서 링크해 세션마다 로드한다. 내용 — *"what counts as a real failure in the app and how serious each problem is. It should also say what to ignore and how to report the review"*(06:13~06:19). 10-30 Osmani의 *"codify (…) taste in your team's shared like Claude.md, Agents.md"* 와 같은 자리에 **리뷰 전용 파일**이 들어온다.
+- ⭐ **[Anthropic] 반복 실수 → 지시문**: *"when the Claude code teams[=team's] reviewer keeps finding the same mistake, they change the instructions Claude reads and Claude stops making it."*(08:18~08:24) **[AI Labs]** `review.md` 하단 *"rules learned over time"* — 놓친 버그 **와 반복 오탐** 둘 다 규칙이 되고, 루프가 한 줄 규칙을 제안해 *"only adds it if you approve"*(08:53~08:55). 10-17 Atlassian의 *잡음 필터를 따로 학습* 과 같은 문제(오탐)를 **사람 승인 한 줄 규칙**으로 푼다.
+- **[Anthropic] classifier로 깊이 배분** → [[risk-proportional-human-review]], **루프 종료 세 규칙** → [[review-loop-termination]].

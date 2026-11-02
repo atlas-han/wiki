@@ -8,7 +8,7 @@ author: Tech Bridge (편집, 내레이션 없음) · 대담 [[addy-osmani]](발�
 date-published: 2026-10-30
 ingested: 2026-10-31
 created: 2026-10-31
-updated: 2026-10-31
+updated: 2026-11-02
 ---
 
 # Tech Bridge — Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요? (Addy Osmani × Manish Kapur)
@@ -128,3 +128,7 @@ updated: 2026-10-31
 - raw: `01.raw/articles/2026-10-30_Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요 - Addy Osmani.md`
 - https://www.youtube.com/watch?v=CmsICMUPtII
 - 설명란 링크(미확인, 열어 보지 않음): https://www.anthropic.com/research/redesigning-source-control · https://addyosmani.com/blog/software-factories/
+
+## 이후 소스 (2026-11-02)
+
+- [[tech-bridge-ai-labs-claude-code-verification-review-loop]] — 같은 Anthropic 코드 리뷰 이야기를 외부 제작자([[ai-labs|AI Labs]], 설명란 근거)가 기사 요약으로 전한다. 숫자는 *"changes to review every day went from about 2,500 to over 30,000 in just 4 months"*(그 영상 00:44~00:49)로 **단위(리뷰할 변경 · 하루 · 4개월)가 여기와 다르다.** 여기에 없던 것: 별도 reviewer 에이전트 · classifier · 50회+ 왕복과 루프 종료 세 규칙([[review-loop-termination]]) · *"undo (…) in minutes"*. ⚠️ 두 소스 모두 원 기사와 대조되지 않았다.

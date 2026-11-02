@@ -2437,3 +2437,25 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 3편이라 영상별 **병렬 서브에이전트 3개**(공용 브리프 `.scratch/tb1101/BRIEF.md`)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. 커밋 전 오케스트레이터가 신규 페이지 · 추가된 줄의 영어 인용 423건을 en-orig와 다시 대조했고 비축자 인용은 0건이었다(불일치 11건은 모두 다른 소스 귀속 인용 · 표기). 서브에이전트들은 인용 시작 타임스탬프를 약 57곳 바로잡았다. ⭐ `variant=gemini` 구성에서 `en`은 URL 파라미터가 en-orig와 같아도 **고쳐 쓴 문장**이다(10-30 Osmani 편 포함 4편 연속) — `en`은 인용 근거가 아니다.
 
+## [2026-11-02] ingest | Tech Bridge — 11-01 업로드 2편 (바이브 코딩, 이렇게 싸도 될까? GPT-6.1 Terra vs Opus 5.5 — Nick Saraev(추정) 데모 비교 · Claude Code, 완료했다고 끝이 아니다 — AI Labs 검증·리뷰 루프)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-01 업로드 **2편** ingest. 둘 다 `English (US) original` + 더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429 없음.
+
+**신규 source 2 · concept 3**, 기존 페이지 보강 20개(+ tech-bridge), index **946 → 951**(실측 일치).
+
+- `FwJ6Ae_-u4M`(11:48, 챕터 15) → [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]]: 내레이션 없는 1인칭 모델 비교 + 벤치마크 그래프 읽기 발췌. 화자는 설명란 · 태그 기준 [[nick-saraev]](추정)이고, 10-31 Kimi 편과 형식이 같다(보조 정황).
+  - 신규: [[cost-vs-score-frontier]]
+  - 보강: [[openai-terra]](동일 조건 비교 · computer use · 그래프) · [[claude-opus-5-5]](상위 복잡도 우위 · 실패 없음) · [[nick-saraev]](네 번째 등장) · [[inference-speed-as-capability]](복잡도라는 한계) · [[true-cost-to-perfect-answer]](그래프의 작업당 비용) · [[taste-vs-judgment]](게임은 정성적) · [[model-mixing-economics]](작업 등급별 분할) · [[codex]](Terra의 하네스) · [[greg-brockman]](2차 인용)
+  - ⚠️ 이름은 발화되지 않는다("Nicholas Copernicus"는 농담). *"8/12"*는 1/12로, *"90, I don't know, 7%"*는 97%로 판독했다. 그래프 출처는 미표기다. 10-29 편(Blender 실패, *"gives up very easily"*)과 이번 *"effectively solved"*는 약한 모순으로 표시했다. 비교는 모델 + 하네스 쌍이다.
+  - 페이지화하지 않음: GPT-6.1 Soul · GPT-5.6 Terra(그래프 비교 대상, [[openai-terra]]에 기록), Agents' Last Exam(표기 미확정, [[cost-vs-score-frontier]]에 포함), Rohit(데모 출처, 신원 미상), [[sam-altman]](그림 대상 · 연결만), 데모 이름(Storm Watch · The Long Night · Neon Drift · Meridian), Mario Kart(비유).
+- `IGTdL4IPLq8`(14:00, 챕터 11) → [[tech-bridge-ai-labs-claude-code-verification-review-loop]]: 내레이션 없는 1인칭 복수 해설 · 화면 시연. 원 제작자는 설명란 기준 [[ai-labs]]이고, 발화 · 태그에는 이름이 없으며 발표자 개인도 미상이다.
+  - 신규: [[review-loop-termination]] · [[code-blind-first-user-test]]
+  - 보강: [[ai-labs]](세 번째 소스, 기사 요약 + 스킬) · [[claude-code]](별도 리뷰어 · code review 명령 · REVIEW.md) · [[boris-cherny]](간접 인용) · [[automated-code-review]](반복 실수 → 지시문, 학습 규칙) · [[verification-bottleneck]](4개월 · 단위 차이) · [[risk-proportional-human-review]](classifier · 3등급) · [[generator-evaluator-pattern]](verifier/reviewer 분리 · 종료) · [[agent-verification-skill]](구현 전 eval · 목업) · [[hook-enforced-workflow]](완료 차단 · 터미널 우회 차단) · [[action-reversibility]](되돌림 속도 = 리뷰 예산) · [[tech-bridge-anthropic-30k-merges-verification]](이후 소스)
+  - ⚠️ Anthropic 쪽 수치(2,500 → 30,000+ · 2배 시간 · 50회 넘는 왕복 · 59%)는 발표자 전달이다. 10-30 편은 *merging*, 이 편은 *changes to review · 하루 · 4개월*로 단위가 다르다. 위험 3등급의 귀속과 "불만 → 세 규칙"의 인과는 불분명하다. ASR 판독: *"rd.md"*, *"right eval"*(write-eval 추정), *"scale"*(=skill 추정).
+  - 페이지화하지 않음: REVIEW.md(약 1분 분량이라 [[automated-code-review]] · [[claude-code]]에서 다룸), code review 명령(제품 진술 미확인, [[claude-code]]에 포함), write-eval · review-loop · fix-a-bug 스킬(AI Labs 시연, source에서 다룸), 목업 우선 디자인([[agent-verification-skill]]에 포함), Git 브랜치 · state.md(언급 수준), 설명란의 claude.dev 기사(열지 않음).
+- [[tech-bridge]] · index · overview 갱신, iconize.
+
+### 운영 메모
+
+2편이라 영상별 **병렬 서브에이전트 2개**(공용 브리프 `.scratch/tb1102/BRIEF.md`, 11-01 브리프를 날짜 · 템플릿만 바꿔 재사용)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. 오케스트레이터가 raw · source · 신규 concept의 영어 인용 327건을 en-orig와 다시 대조했고 비축자 인용은 0건이었다(불일치 28건은 모두 `en` 대비 예문 · 다른 소스 귀속 인용 · `(…)` 생략 표기). 서브에이전트들은 인용 시작 타임스탬프를 약 71곳 바로잡았다. ⭐ `variant=gemini`의 `en`은 6편 연속 고쳐 쓴 문장이고, 이번엔 **수치까지 다르다**(Terra 편 en-orig *"8/12"* vs en *"one-twelfth"*) — `en`은 인용 근거가 아니다.
+

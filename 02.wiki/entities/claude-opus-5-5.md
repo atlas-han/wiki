@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 links: []
 created: 2026-10-09
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # Claude Opus 5.5
@@ -52,3 +52,15 @@ updated: 2026-11-01
 - 가격: *"Opus 5.5 is double the cost"*(09:48~09:50) — Kimi $2/$10 per 1M의 두 배라는 화자 진술. ⚠️ **이 페이지의 가격 1차 자료는 여전히 없다**(어느 단가의 두 배인지도 미발화, 실행은 플랜 기반).
 
 > ⚠️ 한 제작자의 주관적 비교, 프롬프트 · 채점 기준 비공개, 8개 중 6개 데모만 영상에 나온다. 하네스(Claude Code)와 묶인 결과다. ko는 이 영상에서도 Opus를 **"작품"** 으로 옮긴다.
+
+## 두 번째 비교 — GPT-6.1 Terra와 같은 프롬프트 데모 5종 · 벤치마크 그래프 (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+같은 화자([[nick-saraev|Nick Saraev]] 추정)가 하루 뒤 같은 형식으로 [[openai-terra|GPT-6.1 Terra]]([[codex|Codex]])와 비교한다.
+
+- 평균 제작 시간 *"43 minutes and 52 seconds"*(00:53~00:57) vs Terra 23분 43초, 출력 토큰은 Terra의 약 3배, 비용 약 12배(화자 진술). ⚠️ Kimi 편의 평균 47분 2초와 다른 것은 데모 세트 차이로 보인다.
+- ⭐ **상위 복잡도에서 앞선다**: *"3D complexity in particular, Opus 5.5 just wiped the floor with Terra on."*(06:11~06:18) · *"at the higher levels of all of this, Opus 5.5 reigns supreme."*(06:27~06:31) · *"on upper echelons of quality, you know, it doesn't really hold a candle to Opus 5.5, especially in some design applications."*(11:28~11:35)
+- **이번엔 명확한 작동 실패가 없다.** 시계 페이지에서 *"not seeing the watch on the right hand side. Don't know if that's intentional or if maybe something is broken."*(05:34~05:42) 한 번뿐이고 곧 *"far higher quality"* 로 평가한다. Kimi 편의 *"screwed up twice"* 와 대조 — ⚠️ 1회씩의 비교라 경향으로 묶지 않는다.
+- 지구본 데모에서는 화자가 Terra 쪽 디자인을 더 좋아했고(01:58~02:06), 폭풍 시뮬레이션은 *"didn't really do that good of a job either"*(03:08~03:13).
+- **그래프상 위치(화자가 읽은 값, ⚠️ 출처 미표기)**: Agents' Last Exam 비용 대비 점수에서 Terra를 이기는 유일한 모델 — *"The only situation in which it gets beat is by Opus 5.5."*(09:49~09:54) — 대신 작업당 약 $9 vs Terra 약 $1(09:58~10:02). → [[cost-vs-score-frontier]]
+
+> ⚠️ 이 페이지의 **가격 1차 자료는 여전히 없다.** "약 12배"(데모 달러 사용량)와 "약 9배"(그래프 작업당 비용)는 서로 다른 화자 진술이고, Kimi 편의 *"double the cost"*(단가표)와도 단위가 다르다.

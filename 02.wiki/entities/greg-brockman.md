@@ -7,9 +7,9 @@ aliases: [Greg Brockman, 그렉 브록먼]
 links:
   - https://x.com/gdb
   - https://gregbrockman.com/
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-brockman-start-building-before-ready]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-brockman-start-building-before-ready, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 created: 2026-09-20
-updated: 2026-10-11
+updated: 2026-11-02
 ---
 
 # Greg Brockman
@@ -98,3 +98,7 @@ Silicon Valley Girl(진행자 이름 미발화, 설명란 판독)과의 29:22 �
 - [[openai]] · [[openai-astra]] · [[sam-altman]] · [[a16z]] · [[ben-horowitz]]
 - 관련: [[defenders-window]] · [[defense-factory]] · [[pacing-the-frontier]] · [[agi-definition]] · [[ai-vulnerability-discovery]]
 - 외부: <https://x.com/gdb> · <https://gregbrockman.com/>
+
+## Terra computer use에 대한 반응 — 제3자가 읽은 인용 (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)가 화면의 게시물을 읽는다: *"One of the founders of OpenAI, Greg Brockman over here"*(07:07~07:12) *"says computer use with Terra has crossed a qualitative threshold where it feels faster using a computer than what I can do unassisted"*(07:10~07:17). 10-11 대담의 *computer use가 "closes the last mile"* 과 같은 방향의, [[openai-terra|GPT-6.1 Terra]] 출시 무렵 발언이다. ⚠️ **2차 진술** — 원 게시물 링크 · 날짜 없음, 화자가 요약해 읽었을 수 있다(문장 안의 *"I"* 가 Brockman 1인칭으로 남아 있어 원문 낭독에 가깝게 들린다).

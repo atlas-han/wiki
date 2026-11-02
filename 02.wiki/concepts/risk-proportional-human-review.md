@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-09-18
-updated: 2026-10-27
+updated: 2026-11-02
 ---
 
 # 위험 비례 사람 검토
@@ -105,3 +105,10 @@ updated: 2026-10-27
 ## "high blast radius code"만 리뷰하라 (2026-10-27 · [[tech-bridge-laurie-voss-product-engineer]])
 
 [[laurie-voss|Voss]]의 첫 처방이다. *"be prepared for a world in which humans are barely involved in the production of code. So, write down your high blast radius code and make that be the only thing that you are reviewing anymore because the rest of it your automatic reviewers are going to get done."*(05:59~06:12) 핵심은 위험한 코드를 **미리 적어 둔다**는 것이다. 위험 판정을 PR마다 하지 않고 목록으로 고정한다. 10-25 merge danger(PR마다 위험 지점을 표시하는 방식)와 비교된다.
+
+## classifier가 깊이를 정하고, 질문은 하나 — "고객에게 무슨 일이 생기나" (2026-11-02 · [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+- **[Anthropic]**(발표자 전달) *"a change needs to get checked harder when a mistake in that feature could do more damage. And they don't choose on their own if a feature needs a full review or a quick one. They have an agent that sorts every change for them, which they call a classifier."*(09:00~09:13) — 위험 판정 자체를 에이전트에게 맡긴다.
+- ⚠️ **[귀속 불분명]** 3등급: *"what happens to a customer if a feature breaks"*(09:17~09:18) — 보기만 틀리면 low, 기능이 멈추지만 잃는 것이 없으면 medium(나중에 고칠 수 있다), 돈을 잃거나 잠기거나 남의 데이터를 보면 high — *"You can't take those back once they happen."*(09:34~09:36) 시청자용 제안(*"You can sort your own changes as well"* 09:13~09:15)으로 나와 Anthropic classifier 기준인지는 모른다.
+- **[AI Labs]** 등급을 eval 작성 스킬에 넘겨 *"a high-risk feature gets stricter evals than a low-risk one."*(09:49~09:53) — 위험이 사람 검토가 아니라 **eval 엄격도**를 정한다. 10-20 Gallon의 *"not by me"*(위험이 오르면 늘어나는 것은 에이전트 검토)와 같은 방향.
+- 등급의 축이 **되돌릴 수 있는가**라는 점에서 [[action-reversibility]]와 겹친다.

@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-01
+updated: 2026-11-02
 ---
 
 # Index
@@ -275,7 +275,7 @@ updated: 2026-11-01
 - [[grok-4-6]] — Cursor Bench 3.2 70.8% @ $2.81/task (vs Fable 5 Max 70.5% @ $17.32) ([[tech-bridge-grokbot-agent-teams]])
 - [[fable-5-1]] — Claude 계열 프론티어 모델. **같은 날 세 소스가 좌표로 쓴다** — 맨몸 30분(Pstack 비교) · Artificial Analysis 상위(진행자 진술) · *"Fable 급 도구"* ⚠️ **1차 자료 없음·스펙 전무**
 - [[openai-astra]] — [[openai|OpenAI]] 차세대 **모델 등급명**("더 비싸고 큰 모델 등급", Soul과 같은 방식). 컴퓨터 사용 "인간 수준" 체감 ([[tech-bridge-altman-astra-hardware]], ⚠️ 스펙 없음)
-- [[openai-terra]] — [[openai|OpenAI]] **GPT 6.1 Terra**. 리뷰어(미상) 체감: 매우 빠름 · 입력 $1 / 출력 $5 per 1M(화자 정정) · 컴퓨터 사용 괜찮음 · **쉽게 포기한다**(로봇 팔 · Blender), 비교 기준은 GPT-6 Astra ([[tech-bridge-gpt-6-1-terra-first-look]]) ⚠️ 1인 체감 · 발화엔 "GPT-6.1 Turbo"(ASR 가능성)
+- [[openai-terra]] — [[openai|OpenAI]] **GPT 6.1 Terra**. 리뷰어(미상) 체감: 매우 빠름 · 입력 $1 / 출력 $5 per 1M(화자 정정) · 컴퓨터 사용 괜찮음 · **쉽게 포기한다**(로봇 팔 · Blender), 비교 기준은 GPT-6 Astra ([[tech-bridge-gpt-6-1-terra-first-look]]) ⚠️ 1인 체감 · 발화엔 "GPT-6.1 Turbo"(ASR 가능성) · Nick Saraev(추정)의 Opus 5.5 동일 조건 비교: 절반 시간 · 1/3 토큰, "일정 복잡도까지", computer use 추천, 그래프상 Pareto frontier 선두 ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
 
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 - [[kimi]] — Kimi K3.1 Pro(+ 하네스 Kimi Code · 앱 swarm). Opus 5.5와 같은 프롬프트 데모 비교: 평균 29분 41초 vs 47분 2초, *"more consistent despite its lower quality"*, 입력 $2 · 출력 $10 per 1M(화자 진술). 이전 언급(2.6 · K2.7 · Cursor)도 모음 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]]) ⚠️ 제작사 · 공개 가중치 미발화 · 가격 미확인
@@ -401,6 +401,7 @@ updated: 2026-11-01
 - [[slop-probes]] — 디자인을 객관화 가능한 특징(색·타이포·레이아웃·대상)으로 마이닝 → **단일 특징 소형 분류기** → 동시 출현 빈도로 슬롭 예측. *LLM-as-a-judge보다 낫다*, 에이전트 출시 전 **게이트** (Taste Labs, sources: 1) ⚠️ 수치 없음
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 - [[company-digital-twin]] — 회사를 **행동의 시퀀스**로 표현해 다음 행동을 예측하고, 실제 회사 대신 트윈에 반사실적 개입(광고 · 배송 · 대출)을 돌려 고른 것만 운영에 적용 ([[mikhail-parakhin|Parakhin]] · [[shopify|Shopify]]) ⚠️ 당사자 진술 하나 · 검증 방법 미발화
+- [[code-blind-first-user-test]] — 빌드를 본 적 없고 코드 읽기가 막힌 새 에이전트에게 실제 앱을 처음 쓰는 고객처럼 쓰게 해 막히는 곳을 찾는다. 서브에이전트, 임시 DB, 터미널 우회까지 막는 훅. 출발점은 Claude Code 팀이 매일 제품을 직접 쓰는 것 ([[tech-bridge-ai-labs-claude-code-verification-review-loop]]) ⚠️ AI Labs 1회 시연, 결과 · 비용 미제시
 
 ### Architectures
 - [[always-on-agent-architecture]] — 하네스를 서버로: 루프·상태는 서버와 DB, 컴퓨터는 따로 자고 깨는 VM, 트리거 → dedupe router → 알림 heuristic → 우선순위 큐, thin client와 단일 도구 send user, 재시도해도 안전한 durable workflow, 사용자는 사다리 맨 끝 ([[tech-bridge-lee-robinson-always-on-agents]]) ⚠️ 단일 당사자 소스
@@ -514,6 +515,7 @@ updated: 2026-11-01
 - [[ai-slop]] — **반복 · 적합성 부족 · 낮은 의도.** 훌륭함은 정의하기 어렵지만 슬롭은 쉽다(모두가 동의). AI 이전부터의 동질화를 AI가 가속. **움직이는 표적**(보라색 그라데이션 → *Claude 베이지*) · *"아무도 아무것도 결정하지 않은"* (sources: 2) ⚠️ 측정치 없음
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 - [[ai-engineering-skills-map]] — AI engineering 네 역량(Ng 팀 skills map): AI 앱 빌드·배포(불확실성 → error analysis·eval 루프) · SE 기본기(모르면 에이전트의 trade-off에 *"bites you later"*) · 코딩 에이전트 활용 · shaping the build. 기준은 사람의 *"fundamental context advantage"* ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 조사 방법 문서 없음 · 팀명 ASR 판독 추정
+- [[cost-vs-score-frontier]] — 벤치마크를 비용(x) × 점수(y)로 놓고 '왼쪽 위'를 고르는 읽기. 질문이 "누가 1등인가"에서 "최고점의 몇 %를 몇 분의 1 비용에"로 바뀐다. Terra는 Opus 5.5의 *"about 95 to 97%"*를 *"11% of the cost"*에 → *"leverage"* ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]]) ⚠️ 출처 미표기 그래프를 눈대중으로 읽은 값, 소스 1개
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -724,6 +726,7 @@ updated: 2026-11-01
 - [[risk-proportional-human-review]] — **AI는 승수, 사람은 가장 큰 위험을 수반하는 결정 곁에.** 사람의 자리를 시간·책임·추상 수준이 아니라 **결정의 위험도**로 정하는 기준 · *"더 빠를 뿐 아니라 더 철저하게"* — 병목을 없애지 않고 가장 값진 자리로 옮긴다 ([[ibm]], sources: 1) ⚠️ 위험한 결정의 예시 없음 · ko *force multiplier* → "시너지 효과"
 - [[disposable-vs-durable-software]] — **품질의 엄격함은 수명이 정한다.** 실패의 피해 · 교체 비용 · 의존 관계 · 유지 비용 넷 다 낮으면 disposable(엄격함 불필요), 높으면 durable, 애매하면 durable 쪽으로. *AI가 만들었다고 일회용이 아니다*, 일회용 지위는 격리 환경으로 지킨다 ([[tech-bridge-kanat-alexander-disposable-vs-durable]])
 - [[shaping-the-build]] — 빌드가 쉬워지면 병목은 *"deciding what to build"*. product gut을 가진 개발자가 MVP·견고한 아키텍처·고객 피드백 중 지금 무엇을 할지 정한다. 정답은 *"stage-dependent"*(one-way/two-way door, quick and dirty prototype vs 신중한 설계, 긴 spec vs 자기 전 에이전트) ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 1인 전망
+- [[review-loop-termination]] — builder · reviewer 루프는 스스로 멈추지 않는다. Claude Code 팀 사례(50회 넘는 왕복, 재보고의 약 59%가 첫 라운드 문제)와 세 규칙(3라운드 후 재설계 · 변경분만 리뷰 · 문제 종류 명시), AI Labs 판본(5라운드 · 2라운드 정체 시 종료) ([[tech-bridge-ai-labs-claude-code-verification-review-loop]]) ⚠️ Anthropic 쪽은 발표자 2차 전달, 기사 미확인, 수치 없는 효과
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -980,12 +983,14 @@ updated: 2026-11-01
 - [[tech-bridge-andrew-ng-ai-engineering-skills-map]] — [[andrew-ng|Andrew Ng]](제목·설명란·태그 근거, 발화에 이름 없음) 대담 발췌, 내레이션 없음(10:26, 챕터 8 · 영어 원본 오디오만, 2026-10-31 업로드): AI가 코딩하면 개발자는 뭘 해야 할까? — AI engineering 네 역량, 사람의 맥락 우위, error analysis·eval, 기본기와 숨은 trade-off, *"the bottleneck is less building, but deciding what to build"*, 단계 의존, *"chatbots are terrible for learning"* → [[ai-engineering-skills-map]] · [[shaping-the-build]] ⚠️ 대담 상대 "폴 코플스톤"은 설명란에만 · *"Y Combinator I"*=DeepLearning.AI 판독 추정 · 조사·연구 출처 없음
 - [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]] — [[nick-saraev|Nick Saraev]](추정, 설명란 · 태그 근거) 1인 데모 비교 발췌(10:12, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-10-31 업로드): 비싼 AI가 더 잘할까? — 같은 프롬프트 · 각자의 하네스 max effort로 [[kimi|Kimi K3.1 Pro]] vs [[claude-opus-5-5|Opus 5.5]], 제작 시간 29:41 vs 47:02, 3D 키보드 · 은하 · SVG 랜딩 · 타워 철거 · 마인크래프트 · 액션 게임, Opus 2회 작동 실패(*"hasn't even verified that it works"*), *"more of a reflection of just taste"*, Kimi swarm, *"is it double the quality?"* → [[agent-verification-skill]] ⚠️ 신원 추정 · 8개 중 6개 데모만 · 가격 · 시간은 화자 진술 · 플랜 실행 · 하네스까지 묶인 비교
 - [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]] — [[mehul-mohan|Mehul Mohan]](발화 호명 + 설명란) 1인칭 화면 시연 · 사용기(14:10, 챕터 10, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-10-31 UTC 업로드 = 11-01 08:00 KST): AI 에이전트를 다루는 새 작업 환경 herdr app | cmux와 비교 — [[herdr]] 앱 발표 당일 첫인상, CLI의 유연성(Claude Code *"even more dangerously skip permissions"* 플래그 주장), SSH worker · 앱 종료 후에도 이어지는 작업, Mac은 잠들면 멈춤, 에이전트 상태 · 알림, *"agent multiplexer or agent manager"*, 무거운 영상 편집은 로컬 · 나머지는 VM, Remote Control, 서브에이전트 API, [[cmux]] SSH 세션 소실 → [[always-on-agent-architecture]] · [[cloud-agent-delegation]] ⚠️ 녹화일 미상 · 플래그 미확인 · 1인 체감 · 제품명 ASR 6가지 표기
+- [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]] — [[nick-saraev|Nick Saraev]](추정, 설명란 · 태그 근거) 1인 데모 비교 + 벤치마크 읽기 발췌(11:48, 챕터 15, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-01 업로드): 바이브 코딩, 이렇게 싸도 될까? — 같은 프롬프트 · 각자의 하네스 max effort로 [[openai-terra|GPT-6.1 Terra]](Codex) vs [[claude-opus-5-5|Opus 5.5]](Claude Code). 제작 시간 23:43 vs 43:52, 출력 토큰 1/3, 비용 약 1/12. Storm Watch · The Long Night · 마인크래프트(*"fully saturated"*) · Neon Drift · Meridian. *"great up to a certain level of complexity"*, 3D · 게임은 Opus 우위. 이어 남의 computer use 사례와 Brockman 인용, Agents' Last Exam 비용 대비 점수 · 비전 · 사실 오류율 그래프 → [[cost-vs-score-frontier]] ⚠️ 신원 추정 · 수치는 화자 진술 또는 출처 미표기 그래프 · computer use는 직접 시험 아님 · 하네스까지 묶인 비교
+- [[tech-bridge-ai-labs-claude-code-verification-review-loop]] — [[ai-labs|AI Labs]](설명란 근거, 발화에 이름 없음) 해설 · 화면 시연(14:00, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-01 UTC 업로드 = 11-02 06:45 KST): Claude Code, 완료했다고 끝이 아니다 — Anthropic Claude Code 팀 코드 리뷰 방식 요약(리뷰할 변경 하루 2,500 → 30,000+ · 4개월, *"what could go wrong with the change and how to catch it"*, 별도 reviewer, classifier, 50회 넘는 왕복 → 세 규칙, *"undo almost anything they release in minutes"*)과 AI Labs 구현(write-eval · REVIEW.md 링크 · review-loop · 학습 규칙 · first-time user · fix-a-bug) → [[review-loop-termination]] · [[code-blind-first-user-test]] · [[automated-code-review]] ⚠️ Anthropic 쪽 2차 전달 · 기사 미확인 · 위험 3등급 귀속 불분명 · 제품 진술(Team/Enterprise · effort · REVIEW.md 로딩) 미확인
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 946 (937 → 946, + 2026-11-01 Tech Bridge 3편(10-31 업로드 — Mehul Mohan herdr vs cmux · Nick Saraev Kimi K3.1 vs Opus 5.5 · Andrew Ng AI engineering 네 역량): source 3 · entity 4(mehul-mohan · herdr · cmux · kimi) · concept 2(ai-engineering-skills-map · shaping-the-build) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 946과 일치)
+- 총 페이지 수: 951 (946 → 951, + 2026-11-02 Tech Bridge 2편(11-01 업로드 — Nick Saraev GPT-6.1 Terra vs Opus 5.5 · AI Labs Claude Code 검증·리뷰 루프): source 2 · concept 3(cost-vs-score-frontier · review-loop-termination · code-blind-first-user-test) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 951과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-01 (Tech Bridge **3편** — 10-31 업로드 [[tech-bridge-mehul-mohan-herdr-app-vs-cmux|AI 에이전트를 다루는 새 작업 환경 herdr app]](`D2yA1--RoKQ`) · [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5|비싼 AI가 더 잘할까? Kimi K3.1 vs Claude Opus 5.5]](`f_8aIpusjg0`) · [[tech-bridge-andrew-ng-ai-engineering-skills-map|AI가 코딩하면 개발자는 뭘 해야 할까? 앤드루 응의 답]](`2tEchomcjk4`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-10-31 (Tech Bridge **4편** — 10-30 업로드 [[tech-bridge-anthropic-30k-merges-verification|Anthropic은 하루 코드 변경 3만 건을 어떻게 병합할까요?]](`CmsICMUPtII`) · [[tech-bridge-musk-spacex-ai-compute-outlook|로켓 회사가 AI를 키우는 이유]](`FTZak3J9YbM`, 멤버 전용 → 공개) · [[tech-bridge-dan-martell-grokbot-daily-automation|Grok Bot으로 일상을 자동화하기]](`mHwP7oANlnA`) · [[tech-bridge-ben-davis-codex-product-cohesion|코드를 잘 짜는데, Codex는 왜 불편해졌을까?]](`-B-967gXzHY`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-02 (Tech Bridge **2편** — 11-01 업로드 [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5|바이브 코딩, 이렇게 싸도 될까? GPT-6.1 Terra vs Opus 5.5]](`FwJ6Ae_-u4M`) · [[tech-bridge-ai-labs-claude-code-verification-review-loop|Claude Code, 완료했다고 끝이 아니다]](`IGTdL4IPLq8`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-01 (Tech Bridge **3편** — 10-31 업로드 [[tech-bridge-mehul-mohan-herdr-app-vs-cmux|AI 에이전트를 다루는 새 작업 환경 herdr app]](`D2yA1--RoKQ`) · [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5|비싼 AI가 더 잘할까? Kimi K3.1 vs Claude Opus 5.5]](`f_8aIpusjg0`) · [[tech-bridge-andrew-ng-ai-engineering-skills-map|AI가 코딩하면 개발자는 뭘 해야 할까? 앤드루 응의 답]](`2tEchomcjk4`). `Yhck-x6VuLs` 멤버 전용 지속)

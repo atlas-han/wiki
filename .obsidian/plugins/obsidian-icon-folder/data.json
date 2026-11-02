@@ -1182,5 +1182,10 @@
   "02.wiki/entities/mehul-mohan.md": "LiUser",
   "02.wiki/sources/tech-bridge-andrew-ng-ai-engineering-skills-map.md": "LiVideo",
   "02.wiki/sources/tech-bridge-mehul-mohan-herdr-app-vs-cmux.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5.md": "LiVideo",
+  "02.wiki/concepts/cost-vs-score-frontier.md": "LiBookText",
+  "02.wiki/concepts/review-loop-termination.md": "LiRepeat",
+  "02.wiki/concepts/code-blind-first-user-test.md": "LiSettings",
+  "02.wiki/sources/tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-ai-labs-claude-code-verification-review-loop.md": "LiVideo"
 }

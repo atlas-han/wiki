@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server, tech-bridge-ben-davis-codex-product-cohesion]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
 links:
   - "https://openai.com/index/nextdoor/"
 created: 2026-06-27
-updated: 2026-10-31
+updated: 2026-11-02
 ---
 
 # Codex
@@ -149,3 +149,7 @@ updated: 2026-10-31
 - 처방: 기능을 먼저 덜어내고 *"A Coda[=Codex] thread should become the base building block for everything"*(05:20~05:24) — CLI · 데스크톱 · 웹 공통. → [[primitives-before-features]]
 - 위 10-11 · 10-14의 App Server(*같은 하네스가 모든 표면을*)와 층이 다르다 — 이쪽은 **사용자가 보는 thread 단위**의 공통성을 요구한다.
 - ⚠️ ASR *"Coda"* → Codex(판독 추정). ko는 thread를 "실", spaces를 "공간"으로 옮긴다.
+
+## Terra의 하네스로 — Opus 5.5 + Claude Code와 같은 조건 비교 (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
+
+[[nick-saraev|Nick Saraev]](추정)의 비교에서 [[openai-terra|GPT-6.1 Terra]]가 쓴 하네스다: *"GPT 6.1 Terra gets to use Codex, Claude Opus 5.5 gets to use Claude code"*(00:37~00:42), max effort. 결론의 비용 문장도 Codex 단위다 — *"You're going to stretch significantly more out of your Codex budget"*(11:23~11:26). ⚠️ 결과는 **모델 + 하네스 쌍**의 것이라 Codex 자체의 기여는 분리되지 않는다.

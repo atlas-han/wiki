@@ -5,9 +5,9 @@ category: org
 tags: [youtube, ai-engineering, content, agent-skills]
 links:
   - https://ailabspro.io/
-sources: [tech-bridge-six-agent-skills, tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-six-agent-skills, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-labs-claude-code-verification-review-loop]
 created: 2026-09-05
-updated: 2026-09-15
+updated: 2026-11-02
 ---
 
 # AI Labs
@@ -44,3 +44,11 @@ updated: 2026-09-15
 
 - [[tech-bridge-six-agent-skills]]
 - <https://ailabspro.io/>
+
+## 2026-11-02 — 세 번째 소스: Anthropic 코드 리뷰 방식 해설 + 자기 구현 ([[tech-bridge-ai-labs-claude-code-verification-review-loop]])
+
+- **귀속은 설명란 근거다.** 발화 · 태그에 "AI Labs"가 없고, 설명란 *"AI Labs가 앤트로픽 Claude Code 팀의 코드 검토 방식을 바탕으로 구성한"* 이 유일한 이름이다. 화법은 이전 두 편과 같은 1인칭 복수 — *"We've shown many ways to give Claude evals in our earlier videos."*(02:53~02:55). ⚠️ 발표자 개인 이름은 이번에도 없다.
+- **형식이 바뀐다** — 남의 도구 소개(09-15 Graft)에서 **남의 프로세스(Anthropic 기사) 요약 + 단계마다 자기 스킬**로. *"Claude code's team mentions their own way to set up these checks, and we turned that into a skill."*(02:57~03:00) 설명란이 *"AI Labs가 제안한 구현과 앤트로픽 팀의 실제 프로세스는 구분해 설명합니다"* 라고 스스로 경계를 단다.
+- **관행이 일관된다** — 기능별 `specs` 폴더와 요구사항 문서(ASR *"rd.md"*, PRD 계열 추정), 디자인은 목업(단순 웹 페이지)부터 — 09-05의 *"보통 간단한 HTML 페이지부터 시작"* 과 같다. CLAUDE.md를 규칙 허브로 쓰고 다른 파일(`review.md`)을 링크한다.
+- 만든 스킬: write-eval · review-loop(orchestrator · builder · verifier · reviewer) · 위험 등급 · first-time user · fix-a-bug. → [[review-loop-termination]] · [[code-blind-first-user-test]]
+- ⚠️ 스킬들의 효과 측정은 없다. 5라운드 상한의 근거는 *"each of our rounds does more work"*(11:14~11:16)뿐.
