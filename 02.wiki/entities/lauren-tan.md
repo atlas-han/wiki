@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-09-01
-updated: 2026-10-10
+updated: 2026-11-03
 ---
 
 # Lauren Tan
@@ -117,3 +117,13 @@ Tech Bridge의 11:36 **해설 영상**이 원본 대담(`MN9dGgmLyso`, 이 위�
 - **새 입장** — 도메인 전문성은 *"more important than ever"*, 병목은 *"the transfer of your intent"*(05:48~07:18) · *"the new job of the engineer is really to (…) spend time on the environment"*(25:10~25:15) · 안쪽 루프 = **Cursor projects 코디네이터 에이전트**, 바깥 루프 = GrokBot(42:55~43:00) · 시작 질문은 *"how do I get to the point where my agent can merge its own code?"*(38:38~38:45) · ⭐ 다크 팩토리냐는 질문에 ***"It kind of is"***(50:49) — chief of staff *"more than 10"*, Pstack *full autopilot*(PR마다 verifier 에이전트 퍼징), 아침에 커밋 히스토리로 사후 리뷰 · one-way door엔 *"I don't really have the answer to"*(56:29~56:34).
 - **유보와 인정이 함께 있다** — *"very hard to get to this point"*(50:13~50:18), *"quite token intensive"*(52:21~52:24), 첫날 자동 머지가 *"very scary"*(53:18~53:20). 09-25 강연에서 사라졌던 유보가 이 대담엔 있다.
 - **"소프트웨어 공장"** — 09-25엔 줄을 그었지만 여기선 *"Not because (…) it's not accurate"*(10:19~10:22). 소스 페이지의 Contradiction 절.
+
+## 제3자의 2차 요약 — 다섯 단계 루프 · 1시간 자동 머지 · "inverse pyramid" (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 Lauren의 글과 영상을 요약한다. **본인 발화가 아니다.** 원 글 링크가 없고, 설명란의 x.ai *Grok Bot for Engineering* 가이드가 그 글인지도 확인하지 않았다.
+
+- **팀 엔지니어 봇** — *"Lauren has a post exactly on this. It's basically about making a team engineer bot. Then you add it to Slack and tag it whenever you want some coding done."*(01:38~01:47)
+- ⭐ **다섯 단계 루프** — Slack 채널 감시 → GrokBot이 Linear 티켓 생성 → Cursor Cloud agent가 자기 컴퓨터에서 재현 → *"what she calls a fix and fuzz pull request with a small swarm of agents"*(03:24~03:28) → *"if the fuzz is clean, it will just ping her on Slack, and then it goes and auto merges after an hour unless she asks for changes."*(03:52~04:00) **1시간 대기 후 자동 머지라는 조건은 이 위키에 처음 기록된다.** 10-10 풀버전은 *"my agents are merging their own pull requests"* 와 아침 사후 리뷰까지만 말했다. → [[pstack]]
+- ⭐ **"inverse pyramid"** — *"Lauren's answer to this is what she calls the inverse pyramid. There are four levels"*(05:11~05:17). 코드베이스 · 정적 분석 · prose(규칙 파일) · 사람 리뷰 순이다. ⚠️ **09-25 본인 발표와 어긋난다.** 거기서는 "다섯" 층이었고(이름이 붙은 묶음은 넷), 최하층은 "사람만 강제할 수 있는" **스타일 가이드**였다. 이 이름도 본인 발화로는 확인되지 않았다. 발표자가 *"Her exact line"*(05:24~05:27)이라며 옮긴 문장은 09-12와 10-09 발화를 합친 모양이다. → [[hard-vs-soft-enforcement]]
+- 미슐랭 주방(04:24~04:31), GrokBot 루틴으로 맥락을 모아 *"her outer loop"*(10:18~10:20)에 넣는 것은 기존 기록과 같다.
+- ⚠️ 발표자의 토큰 경고: *"that's something fine for someone like Lauren who has a ton of inference and credits to throw at these kind of things."*(10:22~10:28) 본인의 *"quite token intensive"*(10-10)와 같은 방향이다.

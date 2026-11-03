@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-09-13
-updated: 2026-10-10
+updated: 2026-11-03
 ---
 
 # Pstack
@@ -127,3 +127,7 @@ updated: 2026-10-10
 - ⭐ **`recall`** — 과거 트랜스크립트를 캐는 스킬. Cursor 앱 virtualization 작업에서 새 채팅마다 지난 채팅의 맥락을 옮기고 싶었던 것이 기원, *"recall was just a way for me to collapse collapse and compress that workflow into a skill"*(1:02:26~1:02:33). → [[query-to-skill-distillation]] · [[skill-self-improvement]]
 - 그 밖의 이름: *"the how skill the Y skill the unslap skill"*(16:12~16:17 — how·why·unslop으로 판독, 추정), *"potato mode"*(1:03:26~1:03:28, ⚠️ 정체 미확정). 진행자 [[matt-pocock]]의 *grill me*·*wayfinder* 와 *"very complimentary"*(1:00:00~1:00:04)라 한다.
 - **스킬은 작아진다** — *"with the latest models you can just delete those parts and just really focus on the workflow"*(1:02:56~1:03:03). Pstack의 CLI(결정론)와 짝을 이루는 방향이다(위키의 독해).
+
+## fix and fuzz — 제3자 요약에서 붙은 이름 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 [[lauren-tan]]의 루프를 요약하면서 *"what she calls a fix and fuzz pull request with a small swarm of agents"*(03:24~03:28)를 *"some of her skills we covered on Pystack[=Pstack] in another video"*(03:28~03:34)와 연결한다. *"a swarm of agents will open the pull request and try and break it"*(03:36~03:42), 무작위 클릭이나 Playwright(ASR *"play route"*)를 쓴다. 깨끗하면 1시간 뒤 자동 머지된다(03:52~04:00). 위 10-10 절의 **full autopilot**(PR마다 검증 에이전트 여럿이 fuzz)과 같은 계열로 보인다(추정 — 영상은 둘이 같다고 말하지 않는다). ⚠️ 2차 전달이고 *"fix and fuzz"* 라는 이름은 본인 소스에서 확인되지 않았다. 설명란이 다시 `github.com/cursor/plugins/tree/main/pstack`을 건다(열어 보지 않았다). *"we covered on Pystack"* 이 가리키는 영상이 09-13 [[tech-bridge-pstack-third-party-review]](화자 미상)인지는 확인하지 않았다 → [[rob-shocks]].

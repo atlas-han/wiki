@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-09-01
-updated: 2026-10-31
+updated: 2026-11-03
 ---
 
 # GrokBot
@@ -128,3 +128,17 @@ updated: 2026-10-31
 - **웹보다 API**(06:03~06:11), *"skill then routine"*(06:11), **computer use로 작업을 녹화하면 스킬이 된다**(06:16~06:24) — 위 Lee Robinson 절의 *"plugins (…) skills or servers (…) routines"* 에 **녹화 → 스킬** 경로가 사용자 발화로 붙는다.
 
 > ⚠️ 제작사 미발화, 시연 결과 · 수치 없음, 녹화 → 스킬 기능은 미확인. 이번 en-orig는 *"Grok Bot"* 표기가 대체로 바르다(*"Grok bot"* 06:03~06:05).
+
+## 엔지니어 사용자의 구성과 불편 — 매니저로만 쓴다 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 GrokBot을 **코딩하지 않는 오케스트레이터**로 쓰는 구성을 보여 준다. 이 페이지에 처음 들어오는 **엔지니어 사용자** 소스다. 앞선 10-30 Dan Martell 편은 비엔지니어 사용자였다. → [[manager-bot-coding-agent-split]](신규)
+
+- **역할** — *"Your bot should be the manager here, not the coder."*(00:21~00:23) first mile은 의도 관리(Slack · 이메일 · X · Linear), last mile은 *"checking the work"*(01:02~01:04)다. 코드는 Claude Code · Cursor Cloud agents에 넘긴다. Lauren Tan의 **바깥 루프**(위 10-09 · 10-10 절)를 사용자 쪽에서 다시 말한 셈이다.
+- ⚠️ **요금(발표자 진술, 미확인)** — *"Grokbot runs on one weekly usage pool that's shared with Grok and Cursor. They have a unified plan now."*(02:22~02:28)
+- **Lauren의 루프(2차 전달)** — Slack 피드백 → GrokBot이 Linear 티켓 생성 → Cursor Cloud agent 재현 → fix and fuzz PR → *"auto merges after an hour unless she asks for changes"*(03:56~04:00). GrokBot 루틴으로 Slack 버그 리포트에서 맥락을 모은다(10:12~10:20). → [[lauren-tan]]
+- **사용자의 불편** — *"Rockbot has evolved to store all your credentials. I don't know how comfortable I feel about this."*(07:26~07:29) 메모리 · 스킬 · vault가 보이지 않고, 프롬프트로 한 설정도 *"saves this to a skill somewhere. Again, I can't see where that skill is"*(08:17~08:20). 위 Lee Robinson 절의 *"plugins (…) skills"* 가 사용자 쪽에서는 **보이지 않는 스킬**로 경험된다.
+- 기기 간 조정(폰 · Mac · PC, 08:31~08:38), Claude Code headless 실행(08:46~08:48), Theo가 T3 Code로 *"drive his whole fleet of machines from Rockbot"*(09:18~09:20, ⚠️ 트윗 미확인).
+
+> ⚠️ **Contradiction: "자체 컴퓨터"는 봇마다인가.** 위 구성 요소 표와 Dan Martell 절(*"Every Grok Bot comes with its own virtual computer"*), Lee Robinson 절(봇마다 virtual desktop)은 봇마다 컴퓨터가 있다고 기록했다. 이 소스는 *"All of your Grokbots share one cloud computer, that's including files, browser sessions, command line credentials."*(10:56~11:02)라고 하고, 그래서 *"If you log a coding CLI in with an API key on one of Grokbot's computers, every bot you have can use that key."*(11:04~11:10)라고 경고한다. 같은 문장 안에 복수형 *"computers"* 가 섞여 있다. 제품 설정이나 시점 차이일 수 있으나 확인하지 않았다. → [[agent-sandboxing]]
+>
+> ASR: en-orig가 07:26~09:38 구간에서 **"Rockbot"**, 나머지는 *"GrokBot"* · *"Grokbot"* 으로 적는다.

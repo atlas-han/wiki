@@ -2459,3 +2459,25 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편이라 영상별 **병렬 서브에이전트 2개**(공용 브리프 `.scratch/tb1102/BRIEF.md`, 11-01 브리프를 날짜 · 템플릿만 바꿔 재사용)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. 오케스트레이터가 raw · source · 신규 concept의 영어 인용 327건을 en-orig와 다시 대조했고 비축자 인용은 0건이었다(불일치 28건은 모두 `en` 대비 예문 · 다른 소스 귀속 인용 · `(…)` 생략 표기). 서브에이전트들은 인용 시작 타임스탬프를 약 71곳 바로잡았다. ⭐ `variant=gemini`의 `en`은 6편 연속 고쳐 쓴 문장이고, 이번엔 **수치까지 다르다**(Terra 편 en-orig *"8/12"* vs en *"one-twelfth"*) — `en`은 인용 근거가 아니다.
 
+## [2026-11-03] ingest | Tech Bridge — 11-02 업로드 2편 (Claude Code 에이전트 요약에 비용 12%? — Better Stack · Grok Bot은 매니저, Claude Code는 개발자 — Rob Shocks)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-02 업로드 **2편** ingest. 둘 다 `English (US) original` + 더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429 없음.
+
+**신규 source 2 · entity 2 · concept 3**, 기존 페이지 보강 13개(+ tech-bridge), index **951 → 958**(실측 일치).
+
+- `Cz9vbmmBNTc`(4:50, 챕터 8) → [[tech-bridge-better-stack-claude-code-agent-summary-cost]]: 내레이션 없는 1인칭 단독 해설 · 측정. 원 제작자는 설명란 기준 [[better-stack]]이다. 발화에서는 텔레메트리 목적지로만 나오고 발표자 개인은 미상이다.
+  - 신규: [[hidden-harness-calls]] · [[fork-subagent]] · [[better-stack]]
+  - 보강: [[claude-code]](agent summary · fork 끄기 · preload) · [[anthropic]](HN 2%/6% · 10-28 리드 · 8월 이슈 무응답) · [[prompt-caching]](캐시 읽기 API 1/10 · 구독 미공개) · [[bun]](preload 스크립트 · pin 경고) · [[subagent-vs-thread-handoff]](fork vs fresh 축)
+  - ⚠️ 수치는 화자 측정(각 1회) · 전달이고, "cost"와 "usage"의 단위 · 캐시 할인 반영 여부가 발화되지 않았다. 8월 이슈는 요청 수 비율이다. 녹화는 10-28 이후 며칠 안으로 추정. ASR 판독: *"clawed"* · *"claw code"* = Claude, *"prompt cash"* = cache, *"CC usage"* = ccusage(추정), *"recall"* = call(추정). `better-stack`의 `links`(betterstack.com)는 영상이 아니라 일반 지식 — 본문에 명시.
+  - 페이지화하지 않음: Flamerix(gist 작성자, 신원 미상, source · bun에 기록), ccusage · T3 Code(언급 수준), Hacker News · GitHub 이슈(번호 미발화), Opus · Haiku(버전 미발화), TanStack(테스트 대상), Claude Code 리드 · HN 팀원(이름 미발화), OpenTelemetry(측정 수단, [[hidden-harness-calls]]에 포함).
+- `ra5WyQ-hKN4`(12:33, 챕터 8) → [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]: 내레이션 없는 1인칭 해설. 화자는 설명란 기준 [[rob-shocks]]이고, 발화 · 태그에는 이름이 없다.
+  - 신규: [[rob-shocks]] · [[manager-bot-coding-agent-split]]
+  - 보강: [[grokbot]](엔지니어 사용자 · 컴퓨터 공유 Contradiction) · [[lauren-tan]](다섯 단계 루프 · 1시간 자동 머지 · 4층 어긋남) · [[pstack]](fix and fuzz) · [[claude-code]](구독 작업자 · 머지 PR 2배) · [[switch-dimension]](동일인 가능성) · [[hard-vs-soft-enforcement]](inverse pyramid · 승격 규칙) · [[risk-proportional-human-review]](녹색 · 노랑 · 빨강 · AI level 1~3) · [[agent-sandboxing]](공유 자격 증명 · Docker 참조 아키텍처) · [[automated-code-review]](revert 40% 감소 · Alan Wells)
+  - ⚠️ Anthropic 수치(6~9월 Claude Code 머지 PR 2배+ · revert 40%+ 감소)는 출처 미발화다. 10-30(merging) · 11-01(하루 리뷰할 변경 2,500 → 30,000+)과 범위 · 배율이 달라 합치지 않았다. 1시간 자동 머지와 "inverse pyramid"라는 이름은 Lauren 본인 소스에서 확인되지 않는다. *"All of your Grokbots share one cloud computer"* 는 10-30 Dan Martell 편의 *"its own virtual computer"* 와 충돌한다. ASR 판독: *"Rockbot"* · *"Crusher"* · *"Entropic"* · *"Cloud Code"* · *"Pystack"* · *"play route"* · *"pros"* · *"Adi Esmany"*.
+  - 페이지화하지 않음: Alan Wells(한 문장, 소속 미상), Theo · T3 Code(트윗 전달, 미확인), Docker 등의 secure software factory 참조 아키텍처(문서명 미확인, [[agent-sandboxing]]에 포함), RICE scoring(발표자 백로그 구성, source에서 다룸), Stripe · Vercel(Slack 관리 한 문장), Linear · Notion · Jira · OpenCode(언급 수준), 미슐랭 주방(기존 기록과 같음), 설명란 링크 셋(열지 않음).
+- [[tech-bridge]] · index · overview 갱신, iconize.
+
+### 운영 메모
+
+2편이라 영상별 **병렬 서브에이전트 2개**(공용 브리프 `.scratch/tb1103/BRIEF.md`, 11-02 브리프를 날짜 · 템플릿만 바꿔 재사용)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. 오케스트레이터가 raw · source · 신규 페이지의 영어 인용 316건을 en-orig와 다시 대조했고 비축자 인용은 0건이었다(불일치 34건은 모두 `en` 대비 예문 · 다른 소스 귀속 인용 · 추정 표기). 서브에이전트들은 인용 타임스탬프를 약 33곳 바로잡았다. ⭐ Better Stack 편은 `en`과 `en-orig` URL이 `variant=gemini` 없이 **쿼리 · 서명까지 같은데** 받은 파일이 달랐다(en-orig 단어 단위 ASR, en 다시 쓴 문장) — `variant=gemini`는 다시 쓰기의 표지가 아니다. 두 편 모두 `en`이 en-orig에서 잘린 마지막 문장을 **지어서 완성**했다(*"keep you all updated."* · *"and finally the review."*).
+

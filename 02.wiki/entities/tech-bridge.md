@@ -160,8 +160,10 @@ sources:
   - tech-bridge-andrew-ng-ai-engineering-skills-map
   - tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5
   - tech-bridge-ai-labs-claude-code-verification-review-loop
+  - tech-bridge-better-stack-claude-code-agent-summary-cost
+  - tech-bridge-rob-shocks-grokbot-manager-coding-agents
 created: 2026-06-03
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Tech Bridge
@@ -1552,6 +1554,20 @@ updated: 2026-11-02
 
 - 같은 **영어 원본 오디오만** 있는 구성(더빙 7개 언어, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5). 첫 챕터 00:00~00:22는 무캡션이다. `upload_date` 20261101은 KST로 11-02 06:45다.
 - ⚠️ 설명란이 "AI Labs 구현"과 "Anthropic 실제 프로세스"를 구분한다고 밝혀, 페이지도 항목마다 [Anthropic]/[AI Labs]를 붙였다. Anthropic 쪽 수치 · 제품 진술은 발표자가 기사를 요약한 것이고 설명란 링크는 열지 않았다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-02 업로드 — Better Stack Claude Code agent summary 비용 · Rob Shocks GrokBot 매니저 + 코딩 에이전트 (2026-11-03 ingest)
+
+[[tech-bridge-better-stack-claude-code-agent-summary-cost|[한글자막] Claude Code 에이전트 요약에 비용 12%? 사용량 실험과 끄는 방법]](`Cz9vbmmBNTc`, 4:50, 공식 챕터 8) — [[better-stack]](설명란 근거) 1인칭 단독 해설, 내레이션 없음 ([[hidden-harness-calls]](신규) · [[fork-subagent]](신규) · [[better-stack]](신규) · [[prompt-caching]] · [[subagent-vs-thread-handoff]] · [[bun]] · [[anthropic]] · [[claude-code]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`). `en` ≠ `en-orig` md5인데 이번엔 두 URL이 `variant=gemini` 없이 쿼리까지 같다. 00:00~00:22는 무캡션이고 마지막 단어는 캡션에서 잘렸다. `upload_date` 20261102는 KST로 11-03 07:00이다.
+- ⚠️ 수치(12% · 8% · 40,000/130 토큰)는 화자 1회 측정이고, Flamerix 15~20% · HN 2%/6% · 8월 이슈 "요청의 4분의 1"은 화자 전달이다(단위가 서로 다름). 설정 이름은 발화되지 않았고 Flamerix gist는 열지 않았다.
+
+[[tech-bridge-rob-shocks-grokbot-manager-coding-agents|[한글자막] Grok Bot은 매니저, Claude Code는 개발자: AI 에이전트를 함께 쓰는 법]](`ra5WyQ-hKN4`, 12:33, 공식 챕터 8) — [[rob-shocks]](설명란 근거) 1인칭 해설, 내레이션 없음 ([[manager-bot-coding-agent-split]](신규) · [[rob-shocks]](신규) · [[grokbot]] · [[lauren-tan]] · [[pstack]] · [[hard-vs-soft-enforcement]] · [[risk-proportional-human-review]] · [[agent-sandboxing]] · [[automated-code-review]] · [[claude-code]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개 언어, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5). 첫 챕터 00:00~00:21은 무캡션이고, 영상이 마지막 문장 *"and review comes"*(12:30) 중간에서 끝난다. `upload_date` 20261102 = 18:00 KST.
+- ⚠️ 내용이 세 층(Lauren 2차 전달 · 회사 사례 전달 · 발표자 자기 구성)이라 페이지도 [Lauren]/[회사]/[Rob]로 나눴다. 설명란 링크 셋(x.ai 가이드 · Pstack · Anthropic 글)은 열지 않았다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
 

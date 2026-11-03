@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Claude Code
@@ -228,3 +228,16 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - 팀 관행: 변경 전 *"run something that proves it works and to show them the result instead of just saying it's done"*(02:25~02:28), **별도 reviewer 에이전트**가 사람보다 먼저 모든 변경을 본다(05:06~05:14), **classifier** 에이전트가 변경마다 리뷰 깊이를 정한다(09:09~09:13), 같은 실수를 반복하면 *"they change the instructions Claude reads"*(08:20~08:22), 50회+ 왕복 사례 뒤 루프 세 규칙 → [[review-loop-termination]], 그리고 *"can undo almost anything they release in minutes, and that's what lets them read less"*(11:42~11:46).
 - ⚠️ 제품 진술(미확인): *"That review agent is only available on the team and enterprise plans for now, but a lighter version already comes with Claude code as the code review command."*(05:17~05:26) — effort level이 낮으면 가장 확신하는 것만 보고(05:35~05:39). 기사는 `REVIEW.md`에 규칙을 쓰라고 하지만 *"By default, this file isn't read unless you ask Claude to do so"*(05:47~05:52)라 발표자는 CLAUDE.md에서 링크한다.
 - AI Labs 구현은 Claude Code의 스킬 · 훅 · 서브에이전트 조합이다(완료 차단 훅, 코드 읽기 차단 훅, fresh context 서브에이전트) → [[hook-enforced-workflow]] · [[code-blind-first-user-test]].
+
+## 2026-11-03 — 백그라운드 에이전트 요약의 숨은 사용량 · fork 서브에이전트 ([[tech-bridge-better-stack-claude-code-agent-summary-cost]])
+
+[[better-stack|Better Stack]](설명란 근거)의 화자가 OpenTelemetry export를 켜고 요청을 **query source**로 묶어, 백그라운드 에이전트 패널의 상태 요약(agent summary)이 얼마나 쓰는지 쟀다. ⚠️ 모두 화자 측정(각 1회) · 전달이다.
+
+- 동작(화자 관찰): 일하는 에이전트마다 *"summarized every 30 seconds"*(02:21), 매번 대화 전체를 보내 호출당 약 40,000 입력 토큰 → 약 130 출력 토큰, 요약도 Opus로 돈다(01:28~01:34). 트랜스크립트(JSONL)에 안 남아 ccusage 같은 집계에서 빠진다(01:47~01:56) → [[hidden-harness-calls]].
+- 비중: 화자 최악 테스트 12% · 현실 테스트 약 8%, Flamerix 15~20%, HN에 답한 Claude Code 팀원 *"about 2% of the cost last week and about 6% in the terminal"*(02:04~02:08).
+- 끄기: *"There is no setting for this."*(03:18~03:20) fork 서브에이전트 설정을 0으로 하면 요약도 사라지지만 대화 · 캐시를 물려받는 fork를 잃는다(설정 이름 · 형식 미발화) → [[fork-subagent]]. 다른 우회는 Flamerix의 [[bun|Bun]] preload 스크립트(`setTimeout` 훅) — 화자는 설치 명령이 최신판을 curl하니 *"read it and pin your own copy"*(04:11~04:13)라고 경고한다.
+- 맥락: 사용량 한도가 빨리 닳는다는 불만 속에 10-28 Claude Code 리드가 *"no single root cause"* 라고 했고(02:59, 이름 미발화), 8월 GitHub 이슈는 *"still open with no reply from Anthropic"*(03:14~03:16)이라고 화자는 전한다.
+
+## 2026-11-03 — 매니저 봇 아래의 작업자, 그리고 "머지 PR 2배 · revert 40%↓" 전달 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)는 [[grokbot|GrokBot]]을 오케스트레이터로 두고, Claude Code를 **구독으로 돌리는 작업자**로 쓴다. *"I much prefer offload to the subscription that I have with Cloud Code[=Claude Code] or Open Code."*(02:34~02:38) *"Rockbot will kick off Cloud Code headless with the model that I picked."*(08:46~08:48) → [[manager-bot-coding-agent-split]]. ⚠️ Anthropic 수치 전달(출처 미발화): *"their merged pull requests to Claude code more than doubled. And the share that they had to revert fell by more than 40%."*(06:19~06:26, 6~9월) 11-02 AI Labs 편의 수치와 범위가 다르다 → [[automated-code-review]].

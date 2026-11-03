@@ -6,9 +6,9 @@ tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemer
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
 related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-10-17
-updated: 2026-10-26
+updated: 2026-11-03
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -97,3 +97,12 @@ updated: 2026-10-26
 ## 어디서 실행되나 ≠ 결과가 어디로 가나 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
 
 [[annie-wang|Annie Wang]](발췌)은 두 질문을 나눈다. 샌드박스는 *"an isolated environment with restrictions on which file and network services it can access"* 이고, 프로젝트 사본과 샘플 고객 자료로 프로덕션 DB 없이 일하게 한다(03:30~03:55). 그런데 *"Even if a tool runs on your laptop, it's output may be sent to a [hosted] model. It might also be saved in session history, logs or longterm memory. So think about what data the agent actually needs, where it's allowed to go and how long it should be kept."*(05:02~05:20) 해설: *"실행 장소와 정보가 가는 곳을 따로 살펴야 해요."* 샌드박스는 프롬프트 인젝션의 **영향을 줄일 뿐**이다(04:37~04:42). → [[lethal-trifecta]]
+
+## "The controls have to live in the environment" — 공유 컴퓨터의 자격 증명 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 [[grokbot|GrokBot]] 오케스트레이션을 설명하며 마지막 단계로 *"lock the doors"*(10:54~10:56)를 든다.
+
+- ⭐ **같은 컴퓨터를 쓰는 봇들의 자격 증명** — *"All of your Grokbots share one cloud computer, that's including files, browser sessions, command line credentials."*(10:56~11:02) *"If you log a coding CLI in with an API key on one of Grokbot's computers, every bot you have can use that key."*(11:04~11:10) 위 10-17 OpenHands 편의 *한 기계에 모인 봇들* 비판이 제품 사용자의 경고로 다시 나온다. ⚠️ 봇마다 컴퓨터가 있다는 이전 기록과 충돌한다 → [[grokbot]].
+- **[Docker 등 전달]** *"Docker and a group of security companies just published a secure software factory reference architecture, and the central idea is this: the more autonomy you give the agent, the less you can rely on it to police itself. The controls have to live in the environment."*(11:27~11:41) ⚠️ 문서명과 참여사는 확인하지 않았다.
+- **실천 목록** — *"running your agents in a sandbox, giving them scoped credentials, read only where you can, and letting them open pull requests but not merge them, at least until you trust the stack that's in place."*(11:43~11:55) → [[least-privilege-connectors]] · [[action-reversibility]]
+- 반대 방향 근거로 작업을 나누는 격리도 든다. *"every worker get its own computer, its own context, and its own kill switch."*(02:40~02:44) → [[manager-bot-coding-agent-split]]

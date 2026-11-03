@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-09-13
-updated: 2026-10-26
+updated: 2026-11-03
 ---
 
 # 하드 강제와 소프트 강제
@@ -161,3 +161,17 @@ updated: 2026-10-26
 ## "모델에게 조심하라고 말하는 것으로는 부족하다" (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
 
 [[annie-wang|Annie Wang]](Google, 발췌): *"Those controls need to be enforced by software. Simply telling the model to be careful isn't enough."*(04:33~04:37) 여기서 *those controls* 는 권한 제한 · 자격 증명 격리 · 네트워크 제한 · 민감 동작 승인이다. 같은 편의 retry limit(*"the workflow stops and ask for help"*, 03:06~03:12)도 프롬프트가 아니라 워크플로 구조로 건 멈춤이다.
+
+## "inverse pyramid" 4층, 그리고 봇에게 붙여 넣는 승격 규칙 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 [[lauren-tan]]의 층을 **"inverse pyramid"** 라는 이름으로 요약한다(2차 전달). *"There are four levels, and you want to put most of your effort at the top."*(05:15~05:18)
+
+| 층 | 발표자 요약 |
+|---|---|
+| 1. 코드베이스 | *"better architecture, stronger typing, clear boundaries"*(05:22~05:24) |
+| 2. 정적 분석 | *"lint rules, tests, continuous integration CI"*(05:41~05:44) — *"If you're finding that your agent keeps making the same mistakes over and over, you turn this into a deterministic lint rule."*(05:44~05:50) |
+| 3. prose(ASR *"pros"*) | *"your agents.md, your Claude.md, your skills, your bug bot, your security bot"*(06:04~06:08) |
+| 4. 사람 리뷰 | *"it's the one that doesn't scale"*(06:14~06:15) |
+
+- ⚠️ **위 09-26 절과의 차이.** 본인 발표의 최하층은 **스타일 가이드**("사람만 강제할 수 있다")였고 층 수는 "다섯"이었다. 여기서는 **넷**이고 최하층 이름이 **사람 리뷰**다. 3층에 *"security bot"* 이 더해진다. 순서는 같다.
+- ⭐ **운용 규칙이 한 줄 프롬프트가 된다** — *"every time you have to correct an agent, move that fix up the stack, code first, then a lint rule, then a rules file, and review comes"*(12:24~12:30). 영상은 이 문장 중간에서 끝난다. 위 09-26 절의 *"교정할 때마다 어느 층이 가장 효과적인지 생각하라"* 가 **오케스트레이터 봇에게 주는 상시 규칙**으로 내려온 판본이다. 발표자의 말로는 *"if you're tidying up after the agent every single time on the same issues, you're doing something wrong. That needs to be programmed in so that it doesn't happen again."*(05:50~06:00)

@@ -5,9 +5,9 @@ category: org
 tags: [education, ai-sdlc, claude-code, content]
 links:
   - https://github.com/switch-dimension/molten-os-core
-sources: [tech-bridge-ai-native-sdlc]
+sources: [tech-bridge-ai-native-sdlc, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-11-03
 ---
 
 # Switch Dimension
@@ -32,3 +32,7 @@ AI 개발 워크플로 교육·콘텐츠 주체. [[tech-bridge-ai-native-sdlc]]�
 
 - [[tech-bridge-ai-native-sdlc]] · [[ai-native-sdlc]] · [[intent-md]]
 - <https://github.com/switch-dimension/molten-os-core>
+
+## 같은 해설자일 가능성 — 미확정 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 *"I covered a lot of that in Entropic's SDLC in a video while back"*(00:34~00:38)라고 말한다. 가리키는 주제가 [[tech-bridge-ai-native-sdlc]]와 겹친다. ⚠️ 같은 사람이라는 근거는 이것뿐이다. 이 페이지의 "해설자 이름 없음"은 그대로 둔다 → [[rob-shocks]].

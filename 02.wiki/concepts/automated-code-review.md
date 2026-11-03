@@ -6,9 +6,9 @@ tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
 related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
 created: 2026-10-03
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # 자동 코드 리뷰
@@ -132,3 +132,11 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 - **[Anthropic → AI Labs] REVIEW.md**: 기사는 규칙 파일을 권하고, 발표자는 그것을 CLAUDE.md에서 링크해 세션마다 로드한다. 내용 — *"what counts as a real failure in the app and how serious each problem is. It should also say what to ignore and how to report the review"*(06:13~06:19). 10-30 Osmani의 *"codify (…) taste in your team's shared like Claude.md, Agents.md"* 와 같은 자리에 **리뷰 전용 파일**이 들어온다.
 - ⭐ **[Anthropic] 반복 실수 → 지시문**: *"when the Claude code teams[=team's] reviewer keeps finding the same mistake, they change the instructions Claude reads and Claude stops making it."*(08:18~08:24) **[AI Labs]** `review.md` 하단 *"rules learned over time"* — 놓친 버그 **와 반복 오탐** 둘 다 규칙이 되고, 루프가 한 줄 규칙을 제안해 *"only adds it if you approve"*(08:53~08:55). 10-17 Atlassian의 *잡음 필터를 따로 학습* 과 같은 문제(오탐)를 **사람 승인 한 줄 규칙**으로 푼다.
 - **[Anthropic] classifier로 깊이 배분** → [[risk-proportional-human-review]], **루프 종료 세 규칙** → [[review-loop-termination]].
+
+## "move most of the review reading to machines" — Anthropic 수치의 또 다른 전달 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
+
+[[rob-shocks|Rob Shocks]](설명란 근거)가 Anthropic 사례를 한 문단으로 전한다(⚠️ 출처 미발화, 설명란의 Anthropic 코드 리뷰 글은 열어 보지 않았다).
+
+- *"From June to September, their merged pull requests to Claude code more than doubled. And the share that they had to revert fell by more than 40%."*(06:18~06:26) 인용: *"We didn't remove review, but we did move most of the review reading to machines."*(06:33~06:38)
+- 이 페이지의 기존 Anthropic 기록(위 11-02 절, 하루 리뷰할 변경 2,500 → 30,000+)과 **범위(Claude Code vs Anthropic 전체)와 배율(2배 vs 12배)이 다르다.** 합치지 않는다. **revert 비율**은 이 위키의 Anthropic 리뷰 이야기에서 처음 나오는 **품질 쪽 지표**다. 다만 분모와 기준은 발화되지 않는다.
+- **[Alan Wells 전달]** 3인 팀이 사람 코드 리뷰 없이 PR을 내보내려고 *"stopped all new product work for about 6 weeks just to build all the validation in."*(06:52~06:56) 자동 리뷰로 가는 **선투자 비용**의 사례다(소속 · 출처 미발화).

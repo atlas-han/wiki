@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-10-31
+updated: 2026-11-03
 ---
 
 # Anthropic
@@ -215,3 +215,12 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 
 - [[addy-osmani|Addy Osmani]]가 1인칭으로 Anthropic을 말한다(*"at Anthropic, like we"* 08:42~08:43). 5월 *"about 2,500 changes"*(기간 단위 미발화), Claude.ai 개편 *"about 3,000 pull requests"* 로 *"three-byed the performance"*(사례 연구 미확인). ⚠️ 제목의 **"하루 3만 건"은 상대 화자([[manish-kapur]] 추정) 발화**이고 Addy는 확인하지 않았다 → [[trusted-throughput]].
 - 관행: Claude 1차 리뷰(실제 사용자처럼 시험) · hooks로 PR 수정 · CLAUDE.md/AGENTS.md에 taste 성문화 · 사람은 증거 확인 · 에이전트 작성 PR 라벨 + 사람 책임자 → [[agent-verification-skill]] · [[agent-change-evidence]] · [[named-human-accountability]].
+
+## Claude Code 사용량 논란과 agent summary — 회사 쪽 반응(외부 화자 전달) (2026-11-03 · [[tech-bridge-better-stack-claude-code-agent-summary-cost]])
+
+[[better-stack|Better Stack]](설명란 근거)의 화자가 [[claude-code|Claude Code]] 백그라운드 에이전트 요약의 비용을 재며 Anthropic 쪽 반응을 전한다. ⚠️ 모두 화자 전달이고 원문(HN 답글 · 리드 발언 · GitHub 이슈)을 찾지 않았다.
+
+- HN에서 Claude Code 팀원: 전체 텔레메트리로 *"about 2% of the cost last week and about 6% in the terminal"*(02:04~02:08) — 화자 측정(12% · 8%) · Flamerix(15~20%)보다 낮다.
+- *"On October 28th, Claude codes lead actually said they found no single root cause and pointed at heavy sessions with lots of agents."*(02:55~03:03, 이름 미발화) 약 4시간 뒤 Flamerix gist가 HN 1면에 올랐다.
+- 8월 GitHub 이슈(한 세션 요청의 거의 4분의 1)는 *"still open with no reply from Anthropic"*(03:14~03:16).
+- 구독에서 캐시 읽기에 대해 *"Anthropic only says they still draw usage and not how much."*(02:42~02:44) 요약은 Claude가 스스로 에이전트 상태를 이해하는 데 쓴다고 Anthropic이 말한다(04:23~04:28), 더 싼 판본을 *"apparently"* 만드는 중(04:34~04:36) → [[hidden-harness-calls]].

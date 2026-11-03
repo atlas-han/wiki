@@ -1187,5 +1187,14 @@
   "02.wiki/concepts/review-loop-termination.md": "LiRepeat",
   "02.wiki/concepts/code-blind-first-user-test.md": "LiSettings",
   "02.wiki/sources/tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5.md": "LiVideo",
-  "02.wiki/sources/tech-bridge-ai-labs-claude-code-verification-review-loop.md": "LiVideo"
+  "02.wiki/sources/tech-bridge-ai-labs-claude-code-verification-review-loop.md": "LiVideo",
+  "01.raw/articles/2026-11-02_Claude Code 에이전트 요약에 비용 12% 사용량 실험과 끄는 방법.md": "LiNewspaper",
+  "01.raw/articles/2026-11-02_Grok Bot은 매니저 Claude Code는 개발자 AI 에이전트를 함께 쓰는 법.md": "LiNewspaper",
+  "02.wiki/concepts/fork-subagent.md": "LiPuzzle",
+  "02.wiki/concepts/hidden-harness-calls.md": "LiPuzzle",
+  "02.wiki/concepts/manager-bot-coding-agent-split.md": "LiPuzzle",
+  "02.wiki/entities/better-stack.md": "LiBuilding",
+  "02.wiki/entities/rob-shocks.md": "LiUser",
+  "02.wiki/sources/tech-bridge-better-stack-claude-code-agent-summary-cost.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-rob-shocks-grokbot-manager-coding-agents.md": "LiVideo"
 }

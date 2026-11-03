@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-02
+updated: 2026-11-03
 ---
 
 # Index
@@ -169,6 +169,7 @@ updated: 2026-11-02
 - [[dan-martell]] — [[grokbot|Grok Bot]] 사용자 쪽 튜토리얼 화자(설명란 · 태그 근거, 발화엔 3인칭 이름 한 번 + *"plug"*). 역할별 봇을 chief of staff에게 말로 만들게 함, *"review mode only"*, 결제 전 승인 · 읽기 전용 재무, 공유 채널 team bot ([[tech-bridge-dan-martell-grokbot-daily-automation]]) ⚠️ 신원 추정
 - [[ben-davis]] — [[codex|Codex]]를 영상 채널 운영에 쓰는 외부 사용자 화자(이름은 설명란 · 태그 근거 — 발화엔 없음). verifier가 없는 제품 판단에 모델이 약하다는 진단, *"The cohesion just isn't there at the product level"*, 처방은 기능 덜어내기와 Codex thread를 기본 단위로 ([[tech-bridge-ben-davis-codex-product-cohesion]]) ⚠️ 신원 추정
 - [[mehul-mohan]] — CLI 하네스와 에이전트 관리 도구를 직접 비교하는 개발자 화자(이름은 발화 호명 *"Then why, Mehul"*, 성은 설명란). *"CLI means flexibility"*, 데이터가 무겁거나 사람이 봐야 하는 작업은 로컬 · 나머지는 VM, 휴대폰으로 Claude Code Remote Control, [[cmux]]보다 [[herdr]] 선호 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 소속 미상 · 1인 체감
+- [[rob-shocks]] — AI 코딩 워크플로 영어 해설자(설명란 근거, 발화엔 이름 없음). GrokBot을 코딩하지 않는 매니저로 두고 Claude Code · Cursor Cloud agents에 위임하는 자기 구성, 메인 에이전트 Chief, RICE + blast radius 백로그 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 신원은 설명란뿐 · 화자 미상인 09-04 SDLC 편 · 09-13 Pstack 리뷰 편과 동일인일 가능성(미확정)
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -256,6 +257,7 @@ updated: 2026-11-02
 - [[taste-labs]] — AI 슬롭을 끝내는 것이 사명인 스타트업(스텔스 해제 직후). 모델 층(프론티어 랩 post-training 데이터·환경) + 앱 층(**Brand API** 베타·창의성 API·브랜드 인덱스), 10년치 웹사이트 200만 개 [[slop-probes|프로브]] ([[tech-bridge-taste-labs-measuring-slop]]) ⚠️ 전부 자기 진술
 - [[stripe]] — 결제 인프라 회사(해설). 사람과 에이전트가 함께 쓰는 클라우드 개발 환경 devbox, 사내 에이전트 [[stripe-minions|Minions]] ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 블로그 미확인
 - [[shopify]] — 전자상거래 플랫폼. CTO [[mikhail-parakhin|Parakhin]]: 전 직원 무제한 토큰, 머천트 대상 [[company-digital-twin|디지털 트윈]]을 운영에 적용 ([[tech-bridge-parakhin-shopify-ai-cost-barbell]]) · 지나가는 언급 2건 ⚠️ 당사자 진술
+- [[better-stack]] — 관측(observability) 플랫폼 회사. Claude Code OpenTelemetry를 query source로 묶어 agent summary 비용을 잰 영상의 원 제작자(설명란 근거, 발표자 개인 미상) ([[tech-bridge-better-stack-claude-code-agent-summary-cost]])
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -727,6 +729,9 @@ updated: 2026-11-02
 - [[disposable-vs-durable-software]] — **품질의 엄격함은 수명이 정한다.** 실패의 피해 · 교체 비용 · 의존 관계 · 유지 비용 넷 다 낮으면 disposable(엄격함 불필요), 높으면 durable, 애매하면 durable 쪽으로. *AI가 만들었다고 일회용이 아니다*, 일회용 지위는 격리 환경으로 지킨다 ([[tech-bridge-kanat-alexander-disposable-vs-durable]])
 - [[shaping-the-build]] — 빌드가 쉬워지면 병목은 *"deciding what to build"*. product gut을 가진 개발자가 MVP·견고한 아키텍처·고객 피드백 중 지금 무엇을 할지 정한다. 정답은 *"stage-dependent"*(one-way/two-way door, quick and dirty prototype vs 신중한 설계, 긴 spec vs 자기 전 에이전트) ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 1인 전망
 - [[review-loop-termination]] — builder · reviewer 루프는 스스로 멈추지 않는다. Claude Code 팀 사례(50회 넘는 왕복, 재보고의 약 59%가 첫 라운드 문제)와 세 규칙(3라운드 후 재설계 · 변경분만 리뷰 · 문제 종류 명시), AI Labs 판본(5라운드 · 2라운드 정체 시 종료) ([[tech-bridge-ai-labs-claude-code-verification-review-loop]]) ⚠️ Anthropic 쪽은 발표자 2차 전달, 기사 미확인, 수치 없는 효과
+- [[hidden-harness-calls]] — 하네스가 상태 요약 같은 보조 목적으로 사용자 몰래 부르는 모델 호출. Claude Code agent summary는 30초마다 대화 전체(호출당 약 4만 입력 토큰)를 Opus로 보내고 JSONL에 안 남아 ccusage가 못 본다. 끄는 설정은 없다 ([[tech-bridge-better-stack-claude-code-agent-summary-cost]]) ⚠️ 화자 1회 측정(12% · 8%), Anthropic 2%/6%는 전달
+- [[fork-subagent]] — 부모 대화 전체와 prompt cache를 물려받는 서브에이전트 vs 과제만 받고 새로 시작하는 서브에이전트. fork를 끄면 agent summary도 0이 됐다(화자 실험) ([[tech-bridge-better-stack-claude-code-agent-summary-cost]]) ⚠️ 설정 이름 미발화, 요약이 함께 사라지는 이유 미설명
+- [[manager-bot-coding-agent-split]] — 상시 봇은 first mile(무엇을 지을지 · 의도 관리)과 last mile(확인 · 추적)만 맡고 가운데 코드 작성은 자기 컴퓨터 · 구독을 가진 코딩 에이전트에게 넘긴다. 근거는 비용(사용량 풀) · 격리(*"its own kill switch"*), 시작 규칙 한 줄 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 1인 구성 서술, 측정 없음 · 봇끼리 컴퓨터 공유 경고와 긴장
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -985,12 +990,14 @@ updated: 2026-11-02
 - [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]] — [[mehul-mohan|Mehul Mohan]](발화 호명 + 설명란) 1인칭 화면 시연 · 사용기(14:10, 챕터 10, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-10-31 UTC 업로드 = 11-01 08:00 KST): AI 에이전트를 다루는 새 작업 환경 herdr app | cmux와 비교 — [[herdr]] 앱 발표 당일 첫인상, CLI의 유연성(Claude Code *"even more dangerously skip permissions"* 플래그 주장), SSH worker · 앱 종료 후에도 이어지는 작업, Mac은 잠들면 멈춤, 에이전트 상태 · 알림, *"agent multiplexer or agent manager"*, 무거운 영상 편집은 로컬 · 나머지는 VM, Remote Control, 서브에이전트 API, [[cmux]] SSH 세션 소실 → [[always-on-agent-architecture]] · [[cloud-agent-delegation]] ⚠️ 녹화일 미상 · 플래그 미확인 · 1인 체감 · 제품명 ASR 6가지 표기
 - [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]] — [[nick-saraev|Nick Saraev]](추정, 설명란 · 태그 근거) 1인 데모 비교 + 벤치마크 읽기 발췌(11:48, 챕터 15, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-01 업로드): 바이브 코딩, 이렇게 싸도 될까? — 같은 프롬프트 · 각자의 하네스 max effort로 [[openai-terra|GPT-6.1 Terra]](Codex) vs [[claude-opus-5-5|Opus 5.5]](Claude Code). 제작 시간 23:43 vs 43:52, 출력 토큰 1/3, 비용 약 1/12. Storm Watch · The Long Night · 마인크래프트(*"fully saturated"*) · Neon Drift · Meridian. *"great up to a certain level of complexity"*, 3D · 게임은 Opus 우위. 이어 남의 computer use 사례와 Brockman 인용, Agents' Last Exam 비용 대비 점수 · 비전 · 사실 오류율 그래프 → [[cost-vs-score-frontier]] ⚠️ 신원 추정 · 수치는 화자 진술 또는 출처 미표기 그래프 · computer use는 직접 시험 아님 · 하네스까지 묶인 비교
 - [[tech-bridge-ai-labs-claude-code-verification-review-loop]] — [[ai-labs|AI Labs]](설명란 근거, 발화에 이름 없음) 해설 · 화면 시연(14:00, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-01 UTC 업로드 = 11-02 06:45 KST): Claude Code, 완료했다고 끝이 아니다 — Anthropic Claude Code 팀 코드 리뷰 방식 요약(리뷰할 변경 하루 2,500 → 30,000+ · 4개월, *"what could go wrong with the change and how to catch it"*, 별도 reviewer, classifier, 50회 넘는 왕복 → 세 규칙, *"undo almost anything they release in minutes"*)과 AI Labs 구현(write-eval · REVIEW.md 링크 · review-loop · 학습 규칙 · first-time user · fix-a-bug) → [[review-loop-termination]] · [[code-blind-first-user-test]] · [[automated-code-review]] ⚠️ Anthropic 쪽 2차 전달 · 기사 미확인 · 위험 3등급 귀속 불분명 · 제품 진술(Team/Enterprise · effort · REVIEW.md 로딩) 미확인
+- [[tech-bridge-better-stack-claude-code-agent-summary-cost]] — [[better-stack|Better Stack]](설명란 근거, 발화에서는 텔레메트리 목적지로만 나옴) 1인 해설(4:50, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-02 UTC 업로드 = 11-03 07:00 KST): Claude Code 에이전트 요약에 비용 12%? — 백그라운드 에이전트 상태 요약을 OpenTelemetry query source로 측정(*"almost exactly 30 seconds apart"*, 호출당 약 40,000 → 130 토큰, 세션 12% · 현실 테스트 약 8%, 요약도 Opus), Flamerix 15~20% · HN 팀원 2%/6%, JSONL 미기록, 캐시 읽기 API 1/10 · 구독 미공개, 끄는 설정 없음 → fork 서브에이전트 끄기 · bun preload(*"read it and pin your own copy"*) → [[hidden-harness-calls]] · [[fork-subagent]] · [[prompt-caching]] ⚠️ 수치는 화자 측정 · 전달, Anthropic 쪽 원문 미확인, gist 미열람, 마지막 단어 캡션 잘림
+- [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]] — [[rob-shocks|Rob Shocks]](설명란 근거, 발화에 이름 없음) 1인 해설(12:33, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-02 18:00 KST): Grok Bot은 매니저, Claude Code는 개발자 — first mile · last mile 분업, Lauren Tan 다섯 단계 루프(fix and fuzz PR → *"auto merges after an hour"*) · inverse pyramid 4층(2차 전달), Anthropic 6~9월 머지 PR 2배+ · revert 40%+ 감소, Alan Wells 6주 검증 투자, 공유 컴퓨터의 자격 증명 · *"The controls have to live in the environment"*, 시작 규칙 → [[manager-bot-coding-agent-split]] · [[hard-vs-soft-enforcement]] · [[agent-sandboxing]] ⚠️ 회사 · Lauren 쪽은 출처 미발화 2차 전달 · 설명란 링크 미확인 · GrokBot 컴퓨터 공유 진술이 이전 소스와 충돌 · 마지막 문장 잘림
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 951 (946 → 951, + 2026-11-02 Tech Bridge 2편(11-01 업로드 — Nick Saraev GPT-6.1 Terra vs Opus 5.5 · AI Labs Claude Code 검증·리뷰 루프): source 2 · concept 3(cost-vs-score-frontier · review-loop-termination · code-blind-first-user-test) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 951과 일치)
+- 총 페이지 수: 958 (951 → 958, + 2026-11-03 Tech Bridge 2편(11-02 업로드 — Better Stack Claude Code agent summary 비용 · Rob Shocks GrokBot 매니저 + 코딩 에이전트): source 2 · entity 2(better-stack · rob-shocks) · concept 3(hidden-harness-calls · fork-subagent · manager-bot-coding-agent-split) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 958과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-02 (Tech Bridge **2편** — 11-01 업로드 [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5|바이브 코딩, 이렇게 싸도 될까? GPT-6.1 Terra vs Opus 5.5]](`FwJ6Ae_-u4M`) · [[tech-bridge-ai-labs-claude-code-verification-review-loop|Claude Code, 완료했다고 끝이 아니다]](`IGTdL4IPLq8`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-01 (Tech Bridge **3편** — 10-31 업로드 [[tech-bridge-mehul-mohan-herdr-app-vs-cmux|AI 에이전트를 다루는 새 작업 환경 herdr app]](`D2yA1--RoKQ`) · [[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5|비싼 AI가 더 잘할까? Kimi K3.1 vs Claude Opus 5.5]](`f_8aIpusjg0`) · [[tech-bridge-andrew-ng-ai-engineering-skills-map|AI가 코딩하면 개발자는 뭘 해야 할까? 앤드루 응의 답]](`2tEchomcjk4`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-03 (Tech Bridge **2편** — 11-02 업로드 [[tech-bridge-better-stack-claude-code-agent-summary-cost|Claude Code 에이전트 요약에 비용 12%?]](`Cz9vbmmBNTc`) · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents|Grok Bot은 매니저, Claude Code는 개발자]](`ra5WyQ-hKN4`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-02 (Tech Bridge **2편** — 11-01 업로드 [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5|바이브 코딩, 이렇게 싸도 될까? GPT-6.1 Terra vs Opus 5.5]](`FwJ6Ae_-u4M`) · [[tech-bridge-ai-labs-claude-code-verification-review-loop|Claude Code, 완료했다고 끝이 아니다]](`IGTdL4IPLq8`). `Yhck-x6VuLs` 멤버 전용 지속)

@@ -4,12 +4,12 @@ type: entity
 category: tool
 tags: [javascript, runtime, toolkit, rust, zig]
 aliases: [번]
-sources: [anthropic-dynamic-workflows, tech-bridge-death-of-code-review]
+sources: [anthropic-dynamic-workflows, tech-bridge-death-of-code-review, tech-bridge-better-stack-claude-code-agent-summary-cost]
 links:
   - https://bun.sh
   - https://github.com/oven-sh/bun
 created: 2026-05-30
-updated: 2026-10-03
+updated: 2026-11-03
 ---
 
 # Bun
@@ -46,3 +46,7 @@ JavaScript/TypeScript 런타임·툴킷. [[jarred-sumner|Jarred Sumner]]이 제�
 > ⚠️ **Contradiction: 규모·기간.** 위 [[anthropic-dynamic-workflows]] 기준은 **Rust 약 75만 줄, 첫 커밋 → 머지 11일**. Voss는 *"over a million lines of Zigg uh to Rust in six days"*(02:46~02:51), *"about a million lines of code by agents in six days"*(15:52~15:56). 줄 수의 기준(Zig 원본 vs Rust 결과)과 기간의 기준(에이전트 작업 vs 머지까지)이 다를 수 있다 — **미확정.**
 
 → [[mergeability-gap]] · [[syntactically-correct-behaviorally-wrong]]
+
+## Claude Code 프로세스에 거는 preload 스크립트 (2026-11-03 · [[tech-bridge-better-stack-claude-code-agent-summary-cost]])
+
+[[claude-code|Claude Code]] 백그라운드 에이전트 요약을 막는 Flamerix의 우회(설명란 gist, ⚠️ 열어 보지 않음)는 *"a bun preload script which hooks set timeout and blocks the summary timer."*(03:59~04:03) 화자 경고: *"It hooks into every claw code process and the install command curls whatever the latest version is. So, make sure you read it and pin your own copy."*(04:06~04:13) Bun preload가 Claude Code 프로세스에 걸린다는 것은 Claude Code가 Bun 런타임 위에서 돈다는 뜻으로 읽히지만 화자는 그렇게 말하지 않았다(추정) → [[hidden-harness-calls]].

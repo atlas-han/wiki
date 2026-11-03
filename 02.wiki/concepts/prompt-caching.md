@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [prompt-caching, context-engineering, cost, latency, harness-design, compaction, kv-cache, agents]
 aliases: [prompt caching, prompt cache, 프롬프트 캐시, 캐시 적중, cache hit, cache miss, cache warming, 캐시 예열, KV cache hit ratio]
-related: [context-engineering, harness-engineering, context-resets-and-compaction, deferred-tool-context, toolbox-pattern, scripts-that-talk-back, transcript-classifier, automatic-model-routing, model-mixing-economics, trusted-throughput, always-on-agent-architecture, openclaw, fireworks-ai]
+related: [context-engineering, harness-engineering, context-resets-and-compaction, deferred-tool-context, toolbox-pattern, scripts-that-talk-back, transcript-classifier, automatic-model-routing, model-mixing-economics, trusted-throughput, always-on-agent-architecture, openclaw, fireworks-ai, hidden-harness-calls, fork-subagent]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost]
 created: 2026-10-18
-updated: 2026-10-29
+updated: 2026-11-03
 ---
 
 # 프롬프트 캐싱 (Prompt Caching)
@@ -59,3 +59,7 @@ updated: 2026-10-29
 ## 줄여도 안 내려가는 비용 — 스킬은 이미 캐시돼 있다 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
 
 영어 해설자의 인용(2차 진술, 논문 제목 없음): *"A July paper shortens skills by up to 54% and the cost per task didn't necessarily drop. In some cases, skills are small, mostly cash[cached] parts of what the agent reads."*(06:12~06:24) 캐시된 접두부는 이후 턴에서 *"charged a lot less"* 하므로, **지시 문서의 길이를 줄이는 것만으로는 비용 레버가 약할 수 있다** → [[agent-skills]] · [[subagent-folding]].
+
+## 캐시 읽기도 한도를 쓴다 — 사용자 쪽에서 본 캐시 (2026-11-03 · [[tech-bridge-better-stack-claude-code-agent-summary-cost]])
+
+[[claude-code|Claude Code]]의 백그라운드 에이전트 요약은 30초마다 대화 전체(호출당 약 40,000 입력 토큰)를 보낸다. 흔한 반론과 화자의 답(⚠️ 화자 진술): *"most of these input tokens are going to be prompt cash[=cache] reads since it only sends over a small difference each time. And yes, on the API, they are about a tenth of the normal price. But on a subscription, Anthropic only says they still draw usage and not how much."*(02:32~02:44) 이 페이지의 *"적중률 · 절감액 수치는 이 위키의 어느 소스에도 없다"* 에 대해 처음 나온 **가격 비율**(API 약 1/10, 화자 수치 · 출처 미표기)이고, 동시에 **구독 한도 환산은 공개되지 않았다**는 공백이 붙는다. 캐시가 맞는 호출이라도 사용자가 부르지 않았다면 비용 문제다 → [[hidden-harness-calls]]. 서브에이전트가 부모의 캐시를 물려받느냐(fork)도 같은 영상에 나온다 → [[fork-subagent]].
