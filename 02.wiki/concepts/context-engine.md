@@ -6,9 +6,9 @@ tags: [context-engine, institutional-knowledge, grounded-context, context-bundle
 aliases: [context engine, 컨텍스트 엔진, context bundle, grounded context]
 related: [company-brain, agent-knowledge-sourcing, code-only-index-blind-spot, retrieval-augmented-generation, nl-to-structured-query-scaffolding, push-vs-pull-context-retrieval, file-discovery-tax, context-engineering, token-minimization-trap, agentic-search, review-wip-limit]
 first-seen: tech-bridge-unblocked-context-engine-structured-queries
-sources: [tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-10-16
-updated: 2026-10-17
+updated: 2026-11-04
 ---
 
 # 컨텍스트 엔진 (Context Engine)
@@ -65,3 +65,12 @@ updated: 2026-10-17
 ## References
 
 - [[tech-bridge-unblocked-context-engine-structured-queries]] · [[unblocked]] · [[peter-werry]]
+
+## 세 번째 벤더 — 원천을 대체하는 "living wiki" (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[greptile|Greptile]]([[daksh-gupta|Daksh Gupta]], 설명란 근거)은 "context engine"이라는 이름을 쓰지 않지만 같은 칸의 제품을 말한다: *"we actually disintermediate all of these context sources with a living wiki. This wiki is essentially a sort of world model of how your company works."*(11:15~11:23)
+
+- 재료: 코드베이스, *"production telemetry, through logs"*(11:28), 문서와 Linear 티켓(11:30~11:34). 앞단의 지식 베이스 항목 예: *"this is authentication. Here's how it works. Here are the flows. Here's a diagram of the flows. Here's every file that's involved."*(09:32~09:36)
+- 축의 차이: [[unblocked|Unblocked]]는 원천에서 과제별 묶음을 조립하고, [[atlassian|Atlassian]]은 스냅샷 없이 즉석 조회한다. Greptile은 **원천을 미리 합성한 위키**를 사이에 둔다. 위키의 [[llm-wiki-pattern]] · [[company-brain]] 쪽 형태에 가깝다.
+- 무엇이 문제인가의 근거: *"there's a lot of tribal knowledge that is subconsciously helping you produce better code."*(10:58~11:01) 인증 우회 판단은 그 코드가 인증된 환경에서 도는지 알아야 한다(09:38~09:49).
+- ⚠️ *"it will never read a file that it didn't need to read."*(11:42~11:44)는 측정 없는 절대 표현이다. 합성한 위키가 틀리거나 낡았을 때(위 Atlassian의 *자동화된 내용이 권위를 갖는 문제*)의 처리, 권한 처리는 발화되지 않는다.

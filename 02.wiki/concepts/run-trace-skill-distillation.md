@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-skills, self-improving-agents, skill-library, trace-distillation, voyager, no-human-gate, organizational-flywheel]
 aliases: [트레이스 증류, 스킬 증류기, skill distiller, self-improving organizational flywheel]
-related: [skill-self-improvement, query-to-skill-distillation, trace-to-memory-loop, agent-skills, mcp-skill-distribution, agent-fleet-learning, company-knowledge-moat, skill-evals, prompt-injection]
+related: [skill-self-improvement, query-to-skill-distillation, trace-to-memory-loop, agent-skills, mcp-skill-distribution, agent-fleet-learning, company-knowledge-moat, skill-evals, prompt-injection, token-economizer]
 first-seen: tech-bridge-runlayer-self-improving-skills-mcp
-sources: [tech-bridge-runlayer-self-improving-skills-mcp]
+sources: [tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-ai-labs-token-economizer]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-04
 ---
 
 # 실행 트레이스 → 스킬 증류
@@ -62,3 +62,17 @@ Sonnet 4.6이 AWS Lambda 안에서 Chromium fork를 실행하는 사내 태스�
 
 - [[tech-bridge-runlayer-self-improving-skills-mcp]] — first-seen
 - [[skill-self-improvement]] · [[query-to-skill-distillation]] · [[trace-to-memory-loop]] · [[mcp-skill-distribution]] · [[agent-fleet-learning]]
+
+## 프로젝트 단위의 작은 판 — micro skills (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+[[token-economizer|Token Economizer]](⚠️ 발표자 설명)도 세션 기록에서 재사용 지식을 뽑지만 단위가 작다. *"When it sees Claude making the same mistake multiple times, it writes it down as a fact about your project. These facts are called micro skills."*(02:53~03:01)
+
+| | Runlayer (이 페이지) | micro skills |
+|---|---|---|
+| 재료 | 성공 + 실패 트레이스 | 반복 실패, 명령 출력 |
+| 출력 | 스킬 | 프로젝트 사실 |
+| 승격 게이트 | 자동 검사(인젝션 · PII) | *"Once a few more sessions confirm that a fact is right"*(03:01~03:03) |
+| 반경 | 전사 | 그 프로젝트 |
+| 주기 | 미발화 | *"every three sessions"*(05:32~05:34), 사용자 한도를 쓴다 |
+
+위 ⚠️ 유보의 질문(잘못 증류된 지식의 회수)에 대한 답은 여기서도 *"unless you change them yourself"*(06:01)뿐이다. 다른 점은 도구 쪽이 위험을 인정하고 **기본을 꺼 둔다**는 것이다 → [[prompt-injection]]. 효과 수치는 기능별로 발화되지 않았다.

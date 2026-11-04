@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [token-economics, context-engineering, cost, rework, architecture-context, anti-pattern]
 aliases: [토큰 최소화, token minimization, 비용 이동, costs don't disappear they just move, 컨텍스트 과잉 절감]
-related: [value-maxing, context-engineering, true-cost-to-perfect-answer, trusted-throughput, overspending-underusing-loop, agent-tool-design-practices, system-level-quality, agent-knowledge-sourcing, context-failure-modes]
+related: [value-maxing, context-engineering, true-cost-to-perfect-answer, trusted-throughput, overspending-underusing-loop, agent-tool-design-practices, system-level-quality, agent-knowledge-sourcing, context-failure-modes, usage-based-tool-pruning]
 first-seen: tech-bridge-tokenmaxxing-to-valuemaxxing
-sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-context-engineering-four-failure-modes, tech-bridge-parakhin-shopify-ai-cost-barbell]
+sources: [tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-context-engineering-four-failure-modes, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-ai-labs-token-economizer]
 created: 2026-09-24
-updated: 2026-10-28
+updated: 2026-11-04
 ---
 
 # 토큰 최소화의 함정
@@ -68,3 +68,9 @@ updated: 2026-10-28
 이 페이지의 "남은 공백"은 *"최신 모델 제한"* 이 같은 함정인지 원 소스가 말하지 않는다고 적었다. [[mikhail-parakhin|Parakhin]]([[shopify|Shopify]])은 **개발에서는 그렇다**고 답한다. *"you don't know unless you use the large model and then and compare the results, you don't know what you're missing, right? It's a unknown unknown."*(02:31~02:38) 그래서 *"at Shopify we have unlimited tokens for everybody"*(02:50~02:55)이고, 처방도 *"try to not limit tokens"*(07:02~07:09)다.
 
 경계는 둘이다. ① **폭주 차단기**는 둔다(*"circuit breakers because there always runaway processes"* 07:07~07:12). ② **운영**에서는 반대로 파인튜닝한 싼 모델로 절감한다([[model-mixing-economics]]의 바벨). 이 페이지의 선(작업 · 도메인 · 아키텍처 컨텍스트는 남긴다)에 **모델 등급**이라는 축이 하나 더 붙는다. ⚠️ 당사자 진술이고 *"until I see the evidence otherwise"* 라는 잠정 원칙이다.
+
+## 왼쪽 칸의 자동화와 측정 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+이 페이지가 *빼도 되는 것*으로 둔 큰 도구 카탈로그를 [[token-economizer|Token Economizer]]가 사용 기록으로 자동으로 뺀다 → [[usage-based-tool-pruning]]. 이 페이지의 질문(절감분이 재작업으로 돌아오는가)에 닿는 측정이 하나 있다. 발표자(AI Labs, 수정판 여부 미발화) 3과제 비교: *"Without the plug-in, Claude took 99 steps to finish all three tasks. With the plug-in, it took 79 steps and the whole thing cost about 21% less. Both versions also passed the same checks."*(10:30~10:40) 메시지당 입력만이 아니라 **과제 완료까지** 재서 스텝도 줄었다는 값이다.
+
+⚠️ 과제당 1회 비교이고 앱 · 모델 · 검사 내용이 미발화라 이 페이지의 일반 경고를 반박하지는 못한다. 빼는 기준도 작업 · 도메인 · 아키텍처 정보가 아니라 도구 정의와 반복 실패라 **이 페이지의 오른쪽 칸을 자르는 사례가 아니다.** 비용이 옮겨 가는 곳은 따로 있다. 처음 세션의 추가 비용(*"it cost a little more than a session without it"* 10:43~10:47)과 조용히 꺼진 도구를 찾는 사람의 시간이다(후자는 위키의 판단, 측정 없음).

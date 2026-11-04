@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # Index
@@ -170,6 +170,7 @@ updated: 2026-11-03
 - [[ben-davis]] — [[codex|Codex]]를 영상 채널 운영에 쓰는 외부 사용자 화자(이름은 설명란 · 태그 근거 — 발화엔 없음). verifier가 없는 제품 판단에 모델이 약하다는 진단, *"The cohesion just isn't there at the product level"*, 처방은 기능 덜어내기와 Codex thread를 기본 단위로 ([[tech-bridge-ben-davis-codex-product-cohesion]]) ⚠️ 신원 추정
 - [[mehul-mohan]] — CLI 하네스와 에이전트 관리 도구를 직접 비교하는 개발자 화자(이름은 발화 호명 *"Then why, Mehul"*, 성은 설명란). *"CLI means flexibility"*, 데이터가 무겁거나 사람이 봐야 하는 작업은 로컬 · 나머지는 VM, 휴대폰으로 Claude Code Remote Control, [[cmux]]보다 [[herdr]] 선호 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 소속 미상 · 1인 체감
 - [[rob-shocks]] — AI 코딩 워크플로 영어 해설자(설명란 근거, 발화엔 이름 없음). GrokBot을 코딩하지 않는 매니저로 두고 Claude Code · Cursor Cloud agents에 위임하는 자기 구성, 메인 에이전트 Chief, RICE + blast radius 백로그 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 신원은 설명란뿐 · 화자 미상인 09-04 SDLC 편 · 09-13 Pstack 리뷰 편과 동일인일 가능성(미확정)
+- [[daksh-gupta]] — 코드 리뷰 제품 회사 Greptile 공동창업자(설명란 근거, 발화엔 이름 없음). 리뷰 에이전트를 직접 만드는 절차와 깨지는 지점을 설명 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ 이름 · 직함은 설명란뿐, 라틴 표기는 한글 "닥시 굽타"의 로마자 복원
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -258,6 +259,7 @@ updated: 2026-11-03
 - [[stripe]] — 결제 인프라 회사(해설). 사람과 에이전트가 함께 쓰는 클라우드 개발 환경 devbox, 사내 에이전트 [[stripe-minions|Minions]] ([[tech-bridge-stripe-collison-cherny-ai-dev-workflow]]) ⚠️ 블로그 미확인
 - [[shopify]] — 전자상거래 플랫폼. CTO [[mikhail-parakhin|Parakhin]]: 전 직원 무제한 토큰, 머천트 대상 [[company-digital-twin|디지털 트윈]]을 운영에 적용 ([[tech-bridge-parakhin-shopify-ai-cost-barbell]]) · 지나가는 언급 2건 ⚠️ 당사자 진술
 - [[better-stack]] — 관측(observability) 플랫폼 회사. Claude Code OpenTelemetry를 query source로 묶어 agent summary 비용을 잰 영상의 원 제작자(설명란 근거, 발표자 개인 미상) ([[tech-bridge-better-stack-claude-code-agent-summary-cost]])
+- [[greptile]] — AI 코드 리뷰 제품 회사. 코드베이스 맥락에서 출발, 여러 회사 코드 코퍼스 평가, living wiki, 샌드박스 + computer use 자율 테스트, 프런티어 20% 모델 배분 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]] · [[tech-bridge-death-of-code-review]]) ⚠️ 모두 당사자 진술, 사이트 미열람
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -360,6 +362,7 @@ updated: 2026-11-03
 
 ---
 - [[impeccable]] — 코딩 하네스(Claude Code·Copilot·Cursor·Codex)용 **디자인 스킬**. bolder·quieter·distill·polish·denser·harden·overdrive — **단어의 뜻을 스킬이 정의**(bolder=위계·스케일·타이포, 그라데이션 아님), *"믿으면 실패"* 자기 점검, 워크플로 주입 지점, **auto 없음·PR 닫음** · 내부 구조: 결정론적 린터 + 블라인드 LLM 평가 · [[scripts-that-talk-back|stdout으로 지시하는 스크립트]] · 쓰기 차단 훅 · 하네스별 빌드 ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
+- [[token-economizer]] — 코딩 에이전트 세션을 지켜보고 낭비를 뒤 세션에서 줄이는 Microsoft 플러그인. 반복 실수(micro skills, 기본 꺼짐) · 미사용 도구 끄기 · 막힘 개입을 훅으로 돌린다 ([[tech-bridge-ai-labs-token-economizer]]) ⚠️ 동작 · 수치는 발표자 설명 · 전달, 저장소 미열람
 
 ## Concepts (LLM/AI)
 
@@ -732,6 +735,8 @@ updated: 2026-11-03
 - [[hidden-harness-calls]] — 하네스가 상태 요약 같은 보조 목적으로 사용자 몰래 부르는 모델 호출. Claude Code agent summary는 30초마다 대화 전체(호출당 약 4만 입력 토큰)를 Opus로 보내고 JSONL에 안 남아 ccusage가 못 본다. 끄는 설정은 없다 ([[tech-bridge-better-stack-claude-code-agent-summary-cost]]) ⚠️ 화자 1회 측정(12% · 8%), Anthropic 2%/6%는 전달
 - [[fork-subagent]] — 부모 대화 전체와 prompt cache를 물려받는 서브에이전트 vs 과제만 받고 새로 시작하는 서브에이전트. fork를 끄면 agent summary도 0이 됐다(화자 실험) ([[tech-bridge-better-stack-claude-code-agent-summary-cost]]) ⚠️ 설정 이름 미발화, 요약이 함께 사라지는 이유 미설명
 - [[manager-bot-coding-agent-split]] — 상시 봇은 first mile(무엇을 지을지 · 의도 관리)과 last mile(확인 · 추적)만 맡고 가운데 코드 작성은 자기 컴퓨터 · 구독을 가진 코딩 에이전트에게 넘긴다. 근거는 비용(사용량 풀) · 격리(*"its own kill switch"*), 시작 규칙 한 줄 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 1인 구성 서술, 측정 없음 · 봇끼리 컴퓨터 공유 경고와 긴장
+- [[review-model-inversion]] — 같은 모델이 쓰고 리뷰하면 같은 방식으로 실패하므로, 작성 모델을 브랜치명 · co-authored-by 등 지문으로 알아내 다른 계열 모델에게 리뷰시킨다 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ "10% 높은 탐지율"은 벤더 진술, 단위 · 표본 · 모델 버전 없음
+- [[usage-based-tool-pruning]] — 지난 세션에서 안 쓴 도구를 규칙으로 골라 프로젝트 컨텍스트에서 뺀다(10메시지 · 최소 2세션). 지연 로딩과 달리 복구는 사람이 한다 ([[tech-bridge-ai-labs-token-economizer]]) ⚠️ 사례 하나, 메시지당 29%는 한 프로젝트 측정, 비용 아님
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -992,12 +997,14 @@ updated: 2026-11-03
 - [[tech-bridge-ai-labs-claude-code-verification-review-loop]] — [[ai-labs|AI Labs]](설명란 근거, 발화에 이름 없음) 해설 · 화면 시연(14:00, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-01 UTC 업로드 = 11-02 06:45 KST): Claude Code, 완료했다고 끝이 아니다 — Anthropic Claude Code 팀 코드 리뷰 방식 요약(리뷰할 변경 하루 2,500 → 30,000+ · 4개월, *"what could go wrong with the change and how to catch it"*, 별도 reviewer, classifier, 50회 넘는 왕복 → 세 규칙, *"undo almost anything they release in minutes"*)과 AI Labs 구현(write-eval · REVIEW.md 링크 · review-loop · 학습 규칙 · first-time user · fix-a-bug) → [[review-loop-termination]] · [[code-blind-first-user-test]] · [[automated-code-review]] ⚠️ Anthropic 쪽 2차 전달 · 기사 미확인 · 위험 3등급 귀속 불분명 · 제품 진술(Team/Enterprise · effort · REVIEW.md 로딩) 미확인
 - [[tech-bridge-better-stack-claude-code-agent-summary-cost]] — [[better-stack|Better Stack]](설명란 근거, 발화에서는 텔레메트리 목적지로만 나옴) 1인 해설(4:50, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-02 UTC 업로드 = 11-03 07:00 KST): Claude Code 에이전트 요약에 비용 12%? — 백그라운드 에이전트 상태 요약을 OpenTelemetry query source로 측정(*"almost exactly 30 seconds apart"*, 호출당 약 40,000 → 130 토큰, 세션 12% · 현실 테스트 약 8%, 요약도 Opus), Flamerix 15~20% · HN 팀원 2%/6%, JSONL 미기록, 캐시 읽기 API 1/10 · 구독 미공개, 끄는 설정 없음 → fork 서브에이전트 끄기 · bun preload(*"read it and pin your own copy"*) → [[hidden-harness-calls]] · [[fork-subagent]] · [[prompt-caching]] ⚠️ 수치는 화자 측정 · 전달, Anthropic 쪽 원문 미확인, gist 미열람, 마지막 단어 캡션 잘림
 - [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]] — [[rob-shocks|Rob Shocks]](설명란 근거, 발화에 이름 없음) 1인 해설(12:33, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-02 18:00 KST): Grok Bot은 매니저, Claude Code는 개발자 — first mile · last mile 분업, Lauren Tan 다섯 단계 루프(fix and fuzz PR → *"auto merges after an hour"*) · inverse pyramid 4층(2차 전달), Anthropic 6~9월 머지 PR 2배+ · revert 40%+ 감소, Alan Wells 6주 검증 투자, 공유 컴퓨터의 자격 증명 · *"The controls have to live in the environment"*, 시작 규칙 → [[manager-bot-coding-agent-split]] · [[hard-vs-soft-enforcement]] · [[agent-sandboxing]] ⚠️ 회사 · Lauren 쪽은 출처 미발화 2차 전달 · 설명란 링크 미확인 · GrokBot 컴퓨터 공유 진술이 이전 소스와 충돌 · 마지막 문장 잘림
+- [[tech-bridge-greptile-daksh-gupta-build-review-agent]] — [[daksh-gupta|Daksh Gupta]](설명란 근거, 발화에 이름 없음) · [[greptile|Greptile]] 1인 발표(15:26, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-04 07:00 KST): AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들 — 뼈대(샌드박스 + PR 웹훅 + 프롬프트)의 문제 다섯, nitpick이 낳는 방어적 코드, *"You don't know the counterfactual."*, 사고 PR 데이터셋, 작성 · 리뷰 모델 뒤집기(10%), grep 비판 · living wiki, computer use 자율 테스트, 프런티어 20% + 하위 작업 20개 → [[review-model-inversion]] · [[automated-code-review]] · [[production-trace-eval-flywheel]] ⚠️ 벤더 당사자, 수치 전부 자사 진술 · 1/1000이 PR · 줄 두 단위 · 10%가 탐지율 · 사고 확률로 흔들림 · en이 model inversion을 "model versioning"으로 바꿈
+- [[tech-bridge-ai-labs-token-economizer]] — [[ai-labs|AI Labs]](설명란 근거, 발화 · 태그에 이름 없음, Graft 편 자기 언급으로 간접 정합) 해설 · 시연(10:54, 챕터 12, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-03 18:00 KST): 클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까? — [[token-economizer|Token Economizer]]의 세 절감(micro skills · 도구 끄기 · 막힘 개입), Microsoft 시험 전달(277개 버그 · Sonnet 5 −23.6% · Opus 4.8 −30.9%), 콜드 스타트와 세션 기록 수정판, 발표자 측정(메시지당 34,300 → 24,400 토큰 · 99 → 79 스텝 · 비용 약 21%) → [[usage-based-tool-pruning]] · [[prompt-injection]] · [[hidden-harness-calls]] ⚠️ 수치는 전달 또는 특정 프로젝트 측정 · 저장소 미열람 · 설명란 *"한 줄로 알린다"* 와 발화 *"without telling you"* 가 어긋남
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 958 (951 → 958, + 2026-11-03 Tech Bridge 2편(11-02 업로드 — Better Stack Claude Code agent summary 비용 · Rob Shocks GrokBot 매니저 + 코딩 에이전트): source 2 · entity 2(better-stack · rob-shocks) · concept 3(hidden-harness-calls · fork-subagent · manager-bot-coding-agent-split) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 958과 일치)
+- 총 페이지 수: 965 (958 → 965, + 2026-11-04 Tech Bridge 2편(11-03 업로드 — Greptile 리뷰 에이전트 만들기 · AI Labs Token Economizer): source 2 · entity 3(daksh-gupta · greptile · token-economizer) · concept 2(review-model-inversion · usage-based-tool-pruning) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 965와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-03 (Tech Bridge **2편** — 11-02 업로드 [[tech-bridge-better-stack-claude-code-agent-summary-cost|Claude Code 에이전트 요약에 비용 12%?]](`Cz9vbmmBNTc`) · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents|Grok Bot은 매니저, Claude Code는 개발자]](`ra5WyQ-hKN4`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-02 (Tech Bridge **2편** — 11-01 업로드 [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5|바이브 코딩, 이렇게 싸도 될까? GPT-6.1 Terra vs Opus 5.5]](`FwJ6Ae_-u4M`) · [[tech-bridge-ai-labs-claude-code-verification-review-loop|Claude Code, 완료했다고 끝이 아니다]](`IGTdL4IPLq8`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-04 (Tech Bridge **2편** — 11-03 업로드 [[tech-bridge-greptile-daksh-gupta-build-review-agent|AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]](`6slamFlG96Q`) · [[tech-bridge-ai-labs-token-economizer|클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]](`FNpUPkAOE4g`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-03 (Tech Bridge **2편** — 11-02 업로드 [[tech-bridge-better-stack-claude-code-agent-summary-cost|Claude Code 에이전트 요약에 비용 12%?]](`Cz9vbmmBNTc`) · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents|Grok Bot은 매니저, Claude Code는 개발자]](`ra5WyQ-hKN4`). `Yhck-x6VuLs` 멤버 전용 지속)

@@ -5,9 +5,9 @@ category: technique
 tags: [qa, verification, multimodal, completeness, design]
 related: [generator-evaluator-pattern, agent-verification-skill, verification-bottleneck, skill-evals, multimodal-elicitation, design-handoff-friction]
 first-seen: tech-bridge-one-designer-plus-ai
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory, tech-bridge-agentcraft-strategy-game, tech-bridge-railway-polished-internal-tools]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-factory-software-factory, tech-bridge-agentcraft-strategy-game, tech-bridge-railway-polished-internal-tools, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-09-15
-updated: 2026-10-19
+updated: 2026-11-04
 ---
 
 # Agent Visual QA
@@ -50,3 +50,12 @@ updated: 2026-10-19
 ## 2026-10-19 — computer use가 검증 루프를 열었다 ([[tech-bridge-railway-polished-internal-tools]])
 
 [[mahmoud-abdelwahab|Mahmoud Abdelwahab]](⚠️ 이름 추정): *"I felt this breakthrough with computer use once it got really, really good."*(12:25~12:30) 이후 매 기능 끝에 *"verify that the feature works end to end and use it by actually running infrastructure"*(12:36~12:42)를 붙인다. 10-02 절의 Factory user testing validator(가상 컴퓨터에서 클릭)와 같은 **조작하며 확인하는** 검증을, 전용 검증자가 아니라 같은 에이전트에게 한 문장으로 시킨다. ⚠️ 어떤 에이전트·computer use 도구인지는 발화되지 않는다.
+
+## 2026-11-04 — PR 리뷰 안으로: 샌드박스 + computer use + flow map ([[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]])는 자동 코드 리뷰의 한 단계로 시각 검증을 넣는다. 근거는 diff만으로 볼 수 없는 결함이다: *"you might be able to read through a bunch of change files for React code and conclude that there's nothing wrong with the code, but in fact when you render it, it might be for instance hidden on an iPhone."*(11:57~12:07)
+
+- 구성: *"you'll need a dev box. You'll need PR branch and dependencies where you're running the app and you'll need some type of flow map"*(13:01~13:05) 그 위에 vision 모델: *"this button technically appears, but it actually is hidden on iPhones"*(13:13~13:15) → [[agent-sandboxing]]
+- 조건 둘: *"you have to document all the flows through your application."*(12:42~12:43) · *"a sufficiently simple build script"*(12:44~12:46). 10-19 절의 *한 문장으로 시킨다* 와 달리 여기서는 **환경 준비가 본체**다 — Greptile은 *"forward deployed engineers"*(12:51~12:52)를 둔다.
+- 비용 쪽: 사용자 흐름 시험에는 *"a very lightweight computer use model"*(14:03~14:05)을 쓴다고 한다 → [[model-mixing-economics]]
+- ⚠️ *"For the first time I think endtoend QA is nearly solved."*(12:37~12:40)는 자사 제품을 설명하는 자리의 평가이고, 탐지율 수치가 없다.

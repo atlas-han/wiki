@@ -6,9 +6,9 @@ tags: [evals, production-traces, regression-tasks, hill-climbing, observability,
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
 related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop, open-model-customization-loop]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-09-30
-updated: 2026-10-30
+updated: 2026-11-04
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -101,3 +101,12 @@ updated: 2026-10-30
 - **판정 대상 셋**: 최종 답 · **환경의 최종 상태**(DB · 파일을 바꾸는 에이전트) · **도구 호출의 정확한 순서**(04:49~05:14).
 - **한계**: *"We don't have a universal judge for correctness."*(05:53~05:57) — 믿을 만한 판정기가 있다면 이미 에이전트 루프 안에 넣었을 것이므로, 판정기의 부재가 곧 이 루프의 어려움이다.
 - 에이전트가 스스로 eval 포인트를 만들고 고치는 판본은 *"very much a North Star vision"*(06:52~06:54).
+
+## 트레이스가 아니라 사고 PR — 코드 리뷰 에이전트의 eval 셋 (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]])의 판본은 에이전트 트레이스 대신 **사고를 낸 과거 PR**이 태스크다: *"You will want a data set of historical PRs."*(05:20~05:23) · *"a list of pull requests that have caused outages and incidents in the past."*(05:29~05:32) · *"have any version of your review agent run through those and see with what frequency it can catch those bugs."*(05:36~05:40)
+
+- ⭐ 왜 필요한가가 이 페이지에서 새롭다. **양성 사례가 극히 드물어서** 운영 중 관찰로는 회귀를 볼 수 없다: *"You don't know the counterfactual."*(04:39~04:40) · *"you wouldn't know for a long time because you don't produce those bugs very often."*(05:14~05:17) ⚠️ 빈도 수치(1/1000)는 PR과 줄 두 단위로 말하며 출처가 없다.
+- 플라이휠의 약점도 말한다: *"the topology and ontology of bugs changes over time."*(05:50~05:51) → *"you'll need to have a real-time updating data set."*(05:51~05:53) *"unless you have millions and millions of pull requests, it's actually hard to have reasonably high coverage of bug types."*(05:56~06:00) 그리고 에이전트가 좋아질수록 *"novel mistakes"*(06:08)가 늘어 과거 셋이 덜 듣는다고 한다. ⚠️ 이 결론은 여러 회사의 코퍼스를 가진 자사 제품의 강점으로 이어진다.
+- 쓰임이 프롬프트 튜닝에 그치지 않는다. 하위 작업을 작은 모델로 바꿀 때의 회귀 검사에도 같은 셋을 쓴다 → [[model-mixing-economics]]
+- 빠진 것: 사고 PR 셋은 *놓치지 않는가*만 잰다. 잡음(nitpick)을 재는 음성 셋은 발화되지 않는다.

@@ -3,11 +3,11 @@ title: Prompt Injection
 type: concept
 category: technique
 tags: [agent-safety, attack, llm-security]
-related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model]
+related: [agentic-misbehavior, transcript-classifier, agent-harness-design, agent-skills, sweeper-agent, company-brain, lethal-trifecta, confused-deputy-attack, system-1-model, token-economizer]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-annie-wang-harness-four-designs]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, tech-bridge-flutter-ai-workflow, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-annie-wang-harness-four-designs, tech-bridge-ai-labs-token-economizer]
 created: 2026-05-25
-updated: 2026-10-26
+updated: 2026-11-04
 ---
 
 # Prompt Injection
@@ -117,3 +117,11 @@ updated: 2026-10-26
 ## 연습 공간 안에서도 — 읽은 글을 명령으로 받지 않기 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
 
 해설: *"읽던 파일에 비밀번호를 다른 곳으로 보내라는 지시가 숨어 있을 수 있어요. (…) 파일에서 읽은 글을 새 명령으로 받아들이지 않고 실제 도구가 할 수 있는 일도 따로 제한해야 해요."*(03:58~04:13) [[annie-wang|Annie Wang]](발췌)이 드는 통제는 제한된 권한, *"credentials kept out of reach"*, 네트워크 제한, 민감한 동작 전 승인 대기다. 그리고 *"Simply telling the model to be careful isn't enough."*(04:16~04:37) → [[credential-injection-outside-sandbox]] · [[hard-vs-soft-enforcement]]
+
+## 명령 출력이 세션마다 읽는 "사실"이 된다 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+[[token-economizer|Token Economizer]]의 micro skills가 **지속되는 벡터**의 예로 나온다(⚠️ 발표자 설명, 저장소 미열람). *"The facts it writes come from whatever the commands in your project print out, and Claude reads them at the start of every session as if they were true facts about your project."*(05:42~05:50) 공격 경로: *"whoever made it could hide instructions in what its commands print. Those instructions would end up in the facts, and Claude would treat them as true in every session unless you change them yourself."*(05:52~06:01)
+
+- **이 벡터의 특징**은 입력 한 번이 아니라 **요약 단계를 거쳐 사실로 승격**되어 세션마다 다시 들어간다는 점이다(위키의 읽기). [[agent-memory]]의 *자기 메모가 오염원이 된다* 와 같은 모양이다.
+- **통제는 기본값 하나다** — 기본 꺼짐, *"That's why Microsoft leaves the choice to you."*(06:05~06:07) 발표자는 *"But for your own projects, you should turn it on"*(06:07~06:09)이라고 선을 긋는다.
+- ⚠️ 자기 프로젝트의 명령도 외부 내용을 출력할 수 있는데 이 경우는 말하지 않는다. 사실에 대한 사람 승인 단계도, 몇 세션의 확인이 인젝션을 걸러 주는지도 발화되지 않았다. 발표자가 고친 수정판은 지난 세션 기록을 한꺼번에 읽는데, 이것이 표면을 넓히는지도 다루지 않는다. → [[run-trace-skill-distillation]] · [[lethal-trifecta]]

@@ -6,9 +6,9 @@ tags: [retrieval, search, agent-loop, harness, bm25]
 aliases: [agentic search, agentic retrieval, 에이전트 검색, 에이전트 기반 검색]
 related: [retrieval-augmented-generation, agent-collaboration-as-search, agent-knowledge-sourcing, context-engineering, bm25, llm-as-search-user, corpus-as-filesystem-workspace, ir-evaluation-obsolescence]
 first-seen: tech-bridge-bm25-agentic-search
-sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-braintrust-agentic-vs-vector-search-eval]
+sources: [tech-bridge-bm25-agentic-search, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-llamaindex-document-context-layer, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-09-21
-updated: 2026-10-17
+updated: 2026-11-04
 ---
 
 # 에이전트 검색 (Agentic Search)
@@ -101,3 +101,11 @@ updated: 2026-10-17
 vector search와 같은 하네스에서 비교한 결과는 **정확도 같음, 비용은 agentic이 4분의 1**이었다(14:51~15:01). agentic 쪽의 이점은 *"connective tissue"*(16:04~16:08)로, 함수 이름을 grep하고 전체 함수를 읽고 호출을 따라 다른 파일로 간다(15:44~15:54). 이 페이지의 삼분할(모델·하네스·엔진)로 보면 **모델과 하네스를 고정하고 엔진만 바꾼 실험**이다 → [[reference-graph-vs-vector-search]] · [[eval-experiment-anatomy]]
 
 ⚠️ 약 20행, 1회 시행, 약한 vector 구현(화자 인정). 화자가 계기로 든 Cursor 트윗을 *"semantic search also known as agentic search"*(08:54~08:58)라고 소개하지만, 화자 자신의 정의에서 semantic은 벡터 쪽이다. 이 표현을 agentic search의 별칭으로 옮기지 말 것.
+
+## "grep은 부정확하고 비싸다" — 인덱스를 파는 쪽의 반론 (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]]): *"people consider GP[=grep] to effectively solved all of codebase context. I actually think that's not true"*(08:38~08:42) *"GP[=grep] is extremely imprecise. And second, it's very expensive."*(08:43~08:46) 코딩 에이전트 트레이스를 보면 *"the vast majority of tokens used by coding agents are all the same. GP[=grep], file read, cache, write for the file contents."*(08:56~09:03) 대안으로 *"slightly more surgical methods of figuring out where you should be reading."*(09:20~09:23)을 말하고, 자사 지식 베이스로 넘어간다.
+
+> ⚠️ **Contradiction(약).** 바로 위 10-17 Braintrust 실험은 grep 계열 agentic search가 벡터 검색과 정확도가 같고 비용이 4분의 1이었다고 했다. 비교 상대가 다르다(저쪽은 벡터 검색, 여기는 사전 구축 지식 베이스). 이 발언에는 측정이 없고, 발표자는 인덱스 쪽 제품을 판다. 저쪽 실험은 약 20행 1회 시행이다. 어느 쪽도 결론이 아니다.
+
+⚠️ GDP를 끌어온 규모 논증(*"a non-trivial percent of GDP growth is GP[=grep], file read, cach[=cache] write."*(09:03~09:06))은 출처 · 수치가 없는 수사다. 토큰 판매자의 *"adverse incentives"*(09:13)도 넌지시 던진 말이고 근거가 없다.

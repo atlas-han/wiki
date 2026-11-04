@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # Claude Code
@@ -241,3 +241,12 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 2026-11-03 — 매니저 봇 아래의 작업자, 그리고 "머지 PR 2배 · revert 40%↓" 전달 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
 
 [[rob-shocks|Rob Shocks]](설명란 근거)는 [[grokbot|GrokBot]]을 오케스트레이터로 두고, Claude Code를 **구독으로 돌리는 작업자**로 쓴다. *"I much prefer offload to the subscription that I have with Cloud Code[=Claude Code] or Open Code."*(02:34~02:38) *"Rockbot will kick off Cloud Code headless with the model that I picked."*(08:46~08:48) → [[manager-bot-coding-agent-split]]. ⚠️ Anthropic 수치 전달(출처 미발화): *"their merged pull requests to Claude code more than doubled. And the share that they had to revert fell by more than 40%."*(06:19~06:26, 6~9월) 11-02 AI Labs 편의 수치와 범위가 다르다 → [[automated-code-review]].
+
+## 2026-11-04 — 플러그인 훅으로 도구 끄기 · 세션 기록 재사용 ([[tech-bridge-ai-labs-token-economizer]])
+
+[[ai-labs|AI Labs]](설명란 근거)가 [[microsoft|Microsoft]] 플러그인 [[token-economizer|Token Economizer]]를 Claude Code에 설치해 보여 준다. ⚠️ 동작은 발표자 설명, 수치는 전달 · 특정 프로젝트의 측정이고 저장소는 열어 보지 않았다.
+
+- **플러그인 표면**: 세션 시작 · 메시지 · 도구 사용 후 · 세션 끝에 훅이 돈다(04:42~05:18) → [[hook-enforced-workflow]].
+- **도구 비용**: *"Claude code loads a lot of tools into every session."*(03:18~03:22) 데모 프로젝트에서 276개를 끄면 메시지당 약 34,300 → 24,400 토큰(09:47~09:54, 수정판) → [[usage-based-tool-pruning]].
+- **세션 기록**: *"But Claude Code already saves all your sessions in the main.claud folder for 30 days"*(07:06~07:11). 발표자는 이 기록을 학습 재료로 쓰도록 플러그인을 고쳤다. ⚠️ 30일 보관은 발표자 진술이고 위키가 확인하지 않았다. 이 기록의 집계 한계는 [[hidden-harness-calls]]의 JSONL 절 참조.
+- **Microsoft 시험 전달**: *"On Claude Code, Sonnet 5 cost 23.6% less and Opus 4.8 cost 30.9% less."*(01:17~01:22) ⚠️ `en` · ko는 모델을 Sonnet 3.5 · Opus 3으로 바꾼다.

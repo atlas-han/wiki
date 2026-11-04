@@ -5,9 +5,9 @@ category: tool
 tags: [coding-agents, knowledge-graph, cli, mcp, open-source]
 links:
   - https://trailhq.com/graft
-sources: [tech-bridge-graft-code-knowledge-graph]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-labs-token-economizer]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-11-04
 ---
 
 # Graft
@@ -55,3 +55,16 @@ CLI(훅)는 **프롬프트마다 최대 3개 위치를 밀어 넣고**, MCP는 *
 ## References
 
 - [[tech-bridge-graft-code-knowledge-graph]] · [[ai-labs]] · [[code-knowledge-graph]] · [[file-discovery-tax]]
+
+## 지도 vs 학습 — Token Economizer와의 대비 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+같은 제작자 [[ai-labs|AI Labs]]가 Graft를 비교 기준으로 쓴다: *"Graft and a lot of other tools make a map of all the files in your project before you start."*(00:30~00:34) [[token-economizer|Token Economizer]]는 *"Instead of making a map, it learns from how you work."*(00:43~00:45)
+
+| | Graft (이 페이지) | Token Economizer (발표자 설명) |
+|---|---|---|
+| 줄이는 비용 | 파일을 찾는 비용 | 반복 실수 · 도구 정의 · 막힌 작업 |
+| 재료 | 코드 구조 | 세션 기록 · 명령 출력 |
+| 모델 호출 | 안 쓴다 | 사실 추출 · 막힘 확인에 쓴다 |
+| 첫 실행의 공백 | 첫 빌드에서는 지도가 없어 차이가 작다 | 처음엔 더 비싸고 여섯 번째 작업쯤 싸진다 |
+
+표는 위키의 정리다. 발표자는 두 도구를 같이 재지 않았고 둘을 함께 쓰는 경우도 말하지 않는다. *"a map of all the files"* 는 09-15 편의 심볼 · 관계 지식 그래프를 단순하게 줄인 표현이다.

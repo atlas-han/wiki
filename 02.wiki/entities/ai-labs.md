@@ -5,9 +5,9 @@ category: org
 tags: [youtube, ai-engineering, content, agent-skills]
 links:
   - https://ailabspro.io/
-sources: [tech-bridge-six-agent-skills, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-six-agent-skills, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-ai-labs-token-economizer]
 created: 2026-09-05
-updated: 2026-11-02
+updated: 2026-11-04
 ---
 
 # AI Labs
@@ -52,3 +52,9 @@ updated: 2026-11-02
 - **관행이 일관된다** — 기능별 `specs` 폴더와 요구사항 문서(ASR *"rd.md"*, PRD 계열 추정), 디자인은 목업(단순 웹 페이지)부터 — 09-05의 *"보통 간단한 HTML 페이지부터 시작"* 과 같다. CLAUDE.md를 규칙 허브로 쓰고 다른 파일(`review.md`)을 링크한다.
 - 만든 스킬: write-eval · review-loop(orchestrator · builder · verifier · reviewer) · 위험 등급 · first-time user · fix-a-bug. → [[review-loop-termination]] · [[code-blind-first-user-test]]
 - ⚠️ 스킬들의 효과 측정은 없다. 5라운드 상한의 근거는 *"each of our rounds does more work"*(11:14~11:16)뿐.
+
+## 2026-11-04 — 네 번째 소스: Token Economizer 해설 + 자기 수정판 ([[tech-bridge-ai-labs-token-economizer]])
+
+- **귀속은 설명란 근거다.** 발화 · 태그에 "AI Labs"가 없고 설명란 *"AI LABS가 기존 세션 기록을 활용하도록 도구를 수정한 과정"* 이 유일한 이름이다. 자기 언급 *"We've covered a few of them on our channel too, and Graft is one of them."*(00:24~00:28)이 09-15 [[graft|Graft]] 편과 맞아 간접 근거가 된다. ⚠️ 발표자 개인 이름은 이번에도 없다.
+- **09-15와 같은 형식이다** — 남의 토큰 절감 도구를 소개하고, 자기 수정판을 만들어 측정한다. 이번 수정은 [[token-economizer|Token Economizer]]가 Claude Code 세션 기록에서 먼저 배우게 하는 것이다(*"We gave it the repo and asked it to change the tool"* 07:17~07:19). 커뮤니티 안내는 없고 프롬프트를 화면으로 보여 준다(*"copy the prompt from the screen"* 07:37~07:39, 자막에는 없다).
+- ⚠️ **측정은 두 프로젝트의 값이다** — 메시지당 34,300 → 24,400 토큰(약 29%), 다른 앱 3과제 99 → 79 스텝 · 비용 약 21%. 설명란이 *"실험 결과는 영상에서 설명한 환경과 작업에 한정됩니다."* 라고 스스로 제한한다.

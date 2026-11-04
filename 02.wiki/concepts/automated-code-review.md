@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop, prompt-injection, review-harness, agents]
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
-related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis]
+related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis, review-model-inversion]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-10-03
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # 자동 코드 리뷰
@@ -140,3 +140,15 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 - *"From June to September, their merged pull requests to Claude code more than doubled. And the share that they had to revert fell by more than 40%."*(06:18~06:26) 인용: *"We didn't remove review, but we did move most of the review reading to machines."*(06:33~06:38)
 - 이 페이지의 기존 Anthropic 기록(위 11-02 절, 하루 리뷰할 변경 2,500 → 30,000+)과 **범위(Claude Code vs Anthropic 전체)와 배율(2배 vs 12배)이 다르다.** 합치지 않는다. **revert 비율**은 이 위키의 Anthropic 리뷰 이야기에서 처음 나오는 **품질 쪽 지표**다. 다만 분모와 기준은 발화되지 않는다.
 - **[Alan Wells 전달]** 3인 팀이 사람 코드 리뷰 없이 PR을 내보내려고 *"stopped all new product work for about 6 weeks just to build all the validation in."*(06:52~06:56) 자동 리뷰로 가는 **선투자 비용**의 사례다(소속 · 출처 미발화).
+
+## 직접 만들면 깨지는 곳 다섯과 처방 — 리뷰 제품 회사의 절차 (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]] 공동창업자)가 *"many people think that's actually all it takes to build a review agent."*(01:16~01:19)라는 뼈대(샌드박스 + PR 웹훅 + 프롬프트)에서 출발한다. ⚠️ 벤더 당사자이고 수치는 전부 자사 진술이다.
+
+- **문제 다섯**: 버그 누락 · 맥락 누락 · 비용(⚠️ *"between three and up to $25 per poll[=pull] request"*(02:30~02:33)) · nitpick · 돌릴 때마다 새 지적.
+- ⭐ **잡음이 코드를 망가뜨린다** — 이 페이지의 *오탐이 리뷰어를 죽인다* 는 사람이 무시한다는 뜻이었다. 여기서 경로가 하나 더 생긴다: *"they leave comments on GitHub and your coding agent picks them up and resolves them."*(03:08~03:11) *"They're going to look at review comments and just address all of them and you'll end up with extremely painfully defensive code"*(03:12~03:18) 리뷰어와 코딩 에이전트를 닫힌 루프로 연결할수록 잡음의 비용이 커진다는 말이다 → [[review-loop-termination]]
+- ⭐ **프롬프트를 고쳐도 나빠졌는지 모른다** — *"when you change a small thing in the prompt, it'll have a weirdly big impact on the number of comments"*(04:29~04:34) *"You don't know the counterfactual."*(04:39~04:40) 이유는 희소성이다: ⚠️ *"only about one out of every thousand pull requests has a genuinely catastrophic bug in it. One every thousand lines of code has a catastrophic bug in it."*(04:57~05:04) ⚠️ PR과 줄, 두 단위가 연달아 나오고 어느 쪽이 측정값인지 미확정이다.
+- **처방 순서(발표자)**: 프롬프트(유형별 버그 목록 · nitpick 정의) → 사고 PR 데이터셋([[production-trace-eval-flywheel]]) → 모델 뒤집기([[review-model-inversion]]) → 코드 · 문서 맥락([[context-engine]] · [[agentic-search]]) → 자율 테스트([[agent-visual-qa]]) → 모델별 비용 분배([[model-mixing-economics]]).
+- **버그만이 아니다** — *"code can be very very bad even if it's not buggy."*(10:00~10:02) *"your correct code can actually still be quite wrong."*(10:35~10:37) Slack 한두 문장으로 시킨 일이면 리뷰어는 티켓 · 문서 없이 의도를 판단할 수 없다.
+
+> ⚠️ **성공 지표가 이 페이지의 기록과 다르다.** 위 Voss 절은 리뷰 제품들의 성공 지표를 *사람이 수락하는가*로 정리했고 Greptile을 같은 목록에 올렸다. 이 발표는 **사고 PR을 얼마나 잡는가**를 제시하고 수락률은 말하지 않는다. Greptile의 실제 내부 지표는 확인하지 않았다. 사고 PR 재생은 **재현율 쪽**만 재고, nitpick을 줄였는지(정밀도 쪽)를 어떻게 재는지는 말하지 않는다.

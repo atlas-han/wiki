@@ -2481,3 +2481,25 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편이라 영상별 **병렬 서브에이전트 2개**(공용 브리프 `.scratch/tb1103/BRIEF.md`, 11-02 브리프를 날짜 · 템플릿만 바꿔 재사용)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. 오케스트레이터가 raw · source · 신규 페이지의 영어 인용 316건을 en-orig와 다시 대조했고 비축자 인용은 0건이었다(불일치 34건은 모두 `en` 대비 예문 · 다른 소스 귀속 인용 · 추정 표기). 서브에이전트들은 인용 타임스탬프를 약 33곳 바로잡았다. ⭐ Better Stack 편은 `en`과 `en-orig` URL이 `variant=gemini` 없이 **쿼리 · 서명까지 같은데** 받은 파일이 달랐다(en-orig 단어 단위 ASR, en 다시 쓴 문장) — `variant=gemini`는 다시 쓰기의 표지가 아니다. 두 편 모두 `en`이 en-orig에서 잘린 마지막 문장을 **지어서 완성**했다(*"keep you all updated."* · *"and finally the review."*).
 
+## [2026-11-04] ingest | Tech Bridge — 11-03 업로드 2편 (AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들 — Greptile · 클로드 코드 토큰을 아끼는 MS 도구 — AI Labs)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-03 업로드 **2편** ingest. 둘 다 `English (US) original` + 더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429 없음.
+
+**신규 source 2 · entity 3 · concept 2**, 기존 페이지 보강 17개(+ tech-bridge), index **958 → 965**(실측 일치).
+
+- `6slamFlG96Q`(15:26, 챕터 9) → [[tech-bridge-greptile-daksh-gupta-build-review-agent]]: 내레이션 없는 1인 발표(슬라이드 언급, 강연 추정, 행사명 없음). 화자는 설명란 기준 [[daksh-gupta]]이고 발화 · 태그에는 사람 이름이 없다. 소속 [[greptile]]은 설명란 · 태그 + 발화 ASR 변형.
+  - 신규: [[daksh-gupta]] · [[greptile]] · [[review-model-inversion]]
+  - 보강: [[automated-code-review]](실패 다섯 · 방어적 코드 · 처방 순서) · [[cross-model-prior-intersection]](코드 리뷰 판본) · [[review-loop-termination]](재실행마다 새 버그 · 59%와 긴장) · [[production-trace-eval-flywheel]](사고 PR eval 셋) · [[model-mixing-economics]](프런티어 20% · 하위 작업 20개) · [[context-engine]](living wiki) · [[agentic-search]](grep 비판) · [[agent-visual-qa]](샌드박스 + computer use + flow map)
+  - ⚠️ 수치(1/1000, 약 3배, 10%, 80%, 80~90%, $3~25, 20%, 20개, 70~80%)는 전부 벤더 진술이고 출처 · 표본 · 모델 버전이 없다. 1/1000은 PR · 줄 두 단위, 10%는 탐지율 · 사고 확률로 흔들린다. 번호도 첫째 · 둘째 · 셋째 · "four out of five"인데 실제 항목은 여섯이다. grep 비판은 10-15 Braintrust 실험과 약하게 충돌한다(비교 상대가 다름). "여러 회사의 코드로 시험"의 동의 조건은 미발화. 라틴 표기 "Daksh"는 info.json에 0건. ASR 판독: *"Reptile"* · *"Grapple"* · *"graviles"* · *"cloud"* · *"Codeex"* · *"codecs"* · *"GBT"* · *"GP"* · *"off bypass"* · *"cache rate"* · *"poll request"* · *"JV"*(Jev 추정).
+  - 페이지화하지 않음: Firecracker · OpenCode · Pi(뼈대 언급 수준), Decisions API([[system-1-model]] 기록과 이름만 같음), Jev(ASR 추정 한 번, source · [[model-mixing-economics]]에 기록), GitHub · GitLab · Jira · Linear · Confluence · Notion · Slack · React(언급 수준), 사고 PR 데이터셋(독립 페이지 없이 [[production-trace-eval-flywheel]]에 포함), Dijkstra식 격언(발화에 이름 없음), 설명란 링크(열지 않음).
+- `FNpUPkAOE4g`(10:54, 챕터 12) → [[tech-bridge-ai-labs-token-economizer]]: 내레이션 없는 1인칭 복수 해설 · 시연. 원 제작자는 설명란 기준 [[ai-labs]]다. 발화 · 태그에 이름이 없고, Graft 자기 언급이 09-15 편과 맞는 간접 근거다. 발표자 개인은 미상이다.
+  - 신규: [[token-economizer]] · [[usage-based-tool-pruning]]
+  - 보강: [[ai-labs]](네 번째 소스 · 자기 수정판) · [[microsoft]](플러그인 · 시험 전달) · [[graft]](지도 vs 학습) · [[claude-code]](훅 · 세션 기록 30일) · [[prompt-injection]](명령 출력 → 사실) · [[run-trace-skill-distillation]](micro skills 비교) · [[token-minimization-trap]](카탈로그 자르기 측정) · [[deferred-tool-context]](사용 기록으로 끄기) · [[hidden-harness-calls]](플러그인 자체 호출)
+  - ⚠️ Microsoft 수치는 전달이고 숫자는 5개 구성 중 2개만 발화됐다. 29%는 메시지당 토큰(비용 아님, 수정판, 한 프로젝트)이고 21%는 3과제 각 1회 비교다(모델 · 앱 · 수정판 사용 여부 미발화). 도구 끄기를 알려 주는지는 설명란과 발화가 어긋난다(공식 문서 미열람, 미확정). 도구당 약 36토큰과 그 해석은 위키 계산 · 추정이다. 30일 보관은 미확인이다. 고친 판본 프롬프트는 화면에만 있다. ASR 판독: *"main.claud"*(`.claude` 추정).
+  - 페이지화하지 않음: GitHub Copilot(시험 구성으로 한 번, 숫자 없음) · Sonnet 5 · Opus 4.8(위키 첫 표기, 시험 구성으로만 발화, [[token-economizer]]에 기록) · micro skills(이 도구의 기능, [[token-economizer]]의 alias로 처리) · 콜드 스타트와 세션 기록 선학습([[token-economizer]]에 포함) · 데모 프로젝트 · 다른 앱(이름 미발화) · 설명란 저장소 링크(열지 않음).
+- [[tech-bridge]] · index · overview 갱신, iconize.
+
+### 운영 메모
+
+2편이라 영상별 **병렬 서브에이전트 2개**(포그라운드, 공용 브리프 `.scratch/tb1104/BRIEF.md`, 11-03 브리프를 치환으로 재사용)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. launchd 정시 실행분이다. 오케스트레이터가 신규 페이지 · 보강 절의 영어 인용 346건과 raw 헤더 86건을 en-orig와 다시 대조했고 불일치는 0건이었다. raw 전사는 en-orig 줄 821개(504 + 317)가 전부 그대로 들어 있다. 서브에이전트들은 인용 타임스탬프를 약 17곳 바로잡았다. ⭐ `en`의 변조가 이번엔 뜻을 바꾸는 수준이다 — model inversion → `model versioning`, computer use → `computer vision`, forward deployed engineers → `team of four`, Sonnet 5 → `Sonnet 3.5`, Opus 4.8 → `Opus 3`. `en`은 계속 인용 근거로 쓰지 않는다.
+

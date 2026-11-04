@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [harness-design, token-cost, usage-limits, observability, opentelemetry, background-agents, agent-summary, prompt-caching, claude-code, cost-attribution]
 aliases: [hidden harness calls, 숨은 하네스 호출, 하네스 자체 호출, agent summary cost, 에이전트 요약 비용, background agent summary, query source, 보이지 않는 토큰]
-related: [prompt-caching, fork-subagent, harness-engineering, agent-harness-design, token-minimization-trap, true-cost-to-perfect-answer, subagent-vs-thread-handoff, review-loop-termination]
+related: [prompt-caching, fork-subagent, harness-engineering, agent-harness-design, token-minimization-trap, true-cost-to-perfect-answer, subagent-vs-thread-handoff, review-loop-termination, token-economizer]
 first-seen: tech-bridge-better-stack-claude-code-agent-summary-cost
-sources: [tech-bridge-better-stack-claude-code-agent-summary-cost]
+sources: [tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-ai-labs-token-economizer]
 created: 2026-11-03
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # 숨은 하네스 호출 (Hidden Harness Calls)
@@ -59,3 +59,13 @@ updated: 2026-11-03
 
 - [[tech-bridge-better-stack-claude-code-agent-summary-cost]] — first-seen
 - [[prompt-caching]] · [[fork-subagent]] · [[claude-code]] · [[better-stack]]
+
+## 절약 도구도 호출한다 — 플러그인의 보조 호출 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+Agent summary는 하네스 자체의 호출이었다. [[token-economizer|Token Economizer]]는 **사용자가 설치한 플러그인이 같은 한도에서 보조 호출을 하는** 경우다(⚠️ 발표자 설명, 저장소 미열람).
+
+- 사실 추출: *"every three sessions it asks a model to read through your recent sessions and write the facts, and that uses some of your own limit."*(05:32~05:40) 이 비용이 micro skills를 기본으로 꺼 둔 이유 중 하나다.
+- 막힘 확인: *"it asks a model to check if Claude is really stuck."*(04:01~04:04)
+- 첫머리 비용: *"it can even cost you more while it's still learning."*(06:48~06:52)
+
+이번에는 호출의 존재를 도구 쪽이 드러낸다. 그래도 호출 크기 · 모델 · 합계는 발화되지 않았다. 발표자의 21%(*"the whole thing cost about 21% less"* 10:34~10:37)가 이 호출들을 포함하는지도 말하지 않는다.

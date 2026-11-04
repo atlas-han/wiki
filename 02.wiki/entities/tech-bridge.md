@@ -162,8 +162,10 @@ sources:
   - tech-bridge-ai-labs-claude-code-verification-review-loop
   - tech-bridge-better-stack-claude-code-agent-summary-cost
   - tech-bridge-rob-shocks-grokbot-manager-coding-agents
+  - tech-bridge-greptile-daksh-gupta-build-review-agent
+  - tech-bridge-ai-labs-token-economizer
 created: 2026-06-03
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # Tech Bridge
@@ -1568,6 +1570,20 @@ updated: 2026-11-03
 
 - 같은 **영어 원본 오디오만** 있는 구성(더빙 7개 언어, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5). 첫 챕터 00:00~00:21은 무캡션이고, 영상이 마지막 문장 *"and review comes"*(12:30) 중간에서 끝난다. `upload_date` 20261102 = 18:00 KST.
 - ⚠️ 내용이 세 층(Lauren 2차 전달 · 회사 사례 전달 · 발표자 자기 구성)이라 페이지도 [Lauren]/[회사]/[Rob]로 나눴다. 설명란 링크 셋(x.ai 가이드 · Pstack · Anthropic 글)은 열지 않았다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-03 업로드 — Greptile 리뷰 에이전트 만들기 · AI Labs Token Economizer (2026-11-04 ingest)
+
+[[tech-bridge-greptile-daksh-gupta-build-review-agent|[한글자막] AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]](`6slamFlG96Q`, 15:26, 공식 챕터 9) — [[daksh-gupta]](설명란 근거) · [[greptile]] 1인 발표, 내레이션 없음 ([[review-model-inversion]](신규) · [[daksh-gupta]](신규) · [[greptile]](신규) · [[automated-code-review]] · [[cross-model-prior-intersection]] · [[review-loop-termination]] · [[production-trace-eval-flywheel]] · [[model-mixing-economics]] · [[context-engine]] · [[agentic-search]] · [[agent-visual-qa]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5, 두 URL 문자열은 동일, `variant=gemini` 없음). en-orig는 *"Fore"*(00:10) 뒤 16초 비었다가 문장 중간에서 시작한다. `upload_date` 20261103 = 2026-11-04 07:00 KST.
+- ⚠️ 벤더 당사자 발표라 페이지를 [조언]/[수치]/[제품]으로 나눴다. 이름 · 직함은 설명란뿐이고 회사 이름은 발화에서 *"Reptile"* · *"Grapple"* · *"graviles"* 로 뭉개진다. 1/1000(PR · 줄), 10%(탐지율 · 사고 확률)가 발화 안에서 흔들린다. 설명란 링크는 열지 않았다.
+
+[[tech-bridge-ai-labs-token-economizer|[한글자막] 클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]](`FNpUPkAOE4g`, 10:54, 공식 챕터 12) — [[ai-labs]](설명란 근거) 1인칭 복수 해설 · 시연, 내레이션 없음 ([[token-economizer]](신규) · [[usage-based-tool-pruning]](신규) · [[microsoft]] · [[graft]] · [[claude-code]] · [[prompt-injection]] · [[run-trace-skill-distillation]] · [[token-minimization-trap]] · [[deferred-tool-context]] · [[hidden-harness-calls]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`). `en` ≠ `en-orig` md5이고 이번엔 `en`이 모델명을 Sonnet 3.5 · Opus 3으로 바꾸고 *"a lot of tokens"* 를 `the most tokens`로 고쳐 쓴다. 00:00~00:23은 무캡션이고 마지막 문장은 *"as you keep using"* 에서 잘린다.
+- ⚠️ Microsoft 수치(277개 버그 · 5개 구성 · 23.6% · 30.9%)는 발표자 전달이고 숫자는 2개 구성만 발화됐다. 발표자 측정(29% · 21%)은 수정판 · 특정 프로젝트 값이고 단위가 달라 합치지 않았다. 설명란 *"한 줄로 알린다"* 와 발화 *"without telling you"* 가 어긋나며 저장소를 열지 않아 미확정이다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
 

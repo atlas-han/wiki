@@ -5,9 +5,9 @@ category: org
 tags: [hyperscaler, copilot, enterprise-ai, openai-partner, data-center]
 links:
   - https://www.microsoft.com/
-sources: [tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-bug-report-to-production, tech-bridge-ai-labs-token-economizer]
 created: 2026-09-29
-updated: 2026-10-17
+updated: 2026-11-04
 ---
 
 # Microsoft
@@ -48,3 +48,7 @@ updated: 2026-10-17
 ## Claude Code 라이선스 회수 헤드라인 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
 
 [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]])가 비용 폭증의 예로 든다: *"or Microsoft clawing back cloud code[=Claude Code] licenses to try and cut down on spend."*(02:50~02:56) 이 위키에 처음 나오는 일화다. 자사 Copilot이 아니라 [[claude-code|Claude Code]] 라이선스를 회수했다는 주장이다. ⚠️ 출처 미제시(*"headlines"*), 시점·규모 미발화. *"cloud code"* 는 문맥 판독이다.
+
+## Token Economizer — 코딩 에이전트용 토큰 절감 플러그인 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+[[ai-labs|AI Labs]](설명란 근거)가 Microsoft의 플러그인 [[token-economizer|Token Economizer]]를 소개한다. 자사 Copilot뿐 아니라 경쟁 제품도 시험 대상이다: *"They did that on five different setups across Claude Code, Codex, and GitHub Copilot."*(01:09~01:13) 발표자가 전달한 시험은 277개 버그 · 6개 프로젝트이고, 숫자가 발화된 구성은 Claude Code 둘(Sonnet 5 −23.6% · Opus 4.8 −30.9%)뿐이다. 보안 판단은 사용자에게 넘긴다: *"That's why Microsoft leaves the choice to you."*(06:05~06:07) ⚠️ 모두 발표자 전달이고 저장소는 열어 보지 않았다.

@@ -3,11 +3,11 @@ title: "지연 도구 컨텍스트 (Deferred Tool Context)"
 type: concept
 category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
-related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness, prompt-caching, context-failure-modes]
+related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness, prompt-caching, context-failure-modes, usage-based-tool-pruning]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-ai-labs-token-economizer]
 created: 2026-10-02
-updated: 2026-10-20
+updated: 2026-11-04
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -112,3 +112,9 @@ updated: 2026-10-20
 [[martin-keen|Martin Keen]]([[ibm|IBM Technology]])은 도구 bloat를 *context confusion*이라 부르고 수치를 든다: *"in one benchmark, a model failed a task when it was offered 46 tools, but it then passed the very same task when it was only offered 19 tools. That is tool sprawl at work."*(06:37~06:52) Factory의 *"50% of tokens"*(벤더, 비용 쪽)와 달리 **정확도 쪽** 수치다. 처방 curate는 이 페이지의 메커니즘을 이름 없이 말한다: *"The agent doesn't need 46 tools for database migration. So, just give it the handful that the job calls for and then it can always go and fetch others if it actually needs them."*(08:50~09:02) → [[context-failure-modes]]
 
 ⚠️ 벤치마크·모델 이름은 발화되지 않는다. 통합자 확인으로는 Drew Breunig의 *"How Long Contexts Fail"*(2025-06)이 같은 46 vs 19 사례(GeoEngine 벤치마크, 양자화한 Llama 3.1 8B)를 인용한다. 소형 양자화 모델 하나의 단일 과제라면 일반화 범위는 좁다. 화자가 이 사례를 가리킨 것인지는 확인되지 않았다.
+
+## 숨기지 않고 끈다 — 사용 기록으로 미리 빼기 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
+
+[[token-economizer|Token Economizer]]는 이 페이지의 답들과 달리 **지난 세션의 사용 기록**으로 고른다 → [[usage-based-tool-pruning]]. 뺀 도구는 *"A tool the plugin turned off stays off in that project"*(09:59~10:01)이고 사람이 복구 명령을 돌린다. Factory의 *숨겨져 있을 뿐*과 반대쪽이다. Uber의 정적 범위 지정처럼 실행 전에 정하지만, 기준이 플랫폼 설정이 아니라 사용 기록이다.
+
+⚠️ 발표자 데모의 34,300 → 24,400 토큰 ÷ 276개는 도구당 약 36토큰이다(위키 계산, 276개가 측정 대상과 같다고 가정). 전체 스키마라기엔 작아 이미 지연 로딩된 환경의 이름 목록일 수 있다(추정). 발표자는 *"the list of every tool"*(01:54~01:56)이라고만 하고 지연 로딩을 말하지 않는다. 두 기법을 겹쳤을 때의 추가 이득은 측정되지 않았다.

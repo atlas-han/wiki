@@ -6,9 +6,9 @@ tags: [review-loop, termination, generator-evaluator, automated-code-review, age
 aliases: [review loop termination, 리뷰 루프 종료, 끝나지 않는 루프, 무한 리뷰 루프, 세 라운드 규칙, three-round rule, delta-only review]
 related: [generator-evaluator-pattern, automated-code-review, three-level-agent-review, verification-cost-asymmetry, true-cost-to-perfect-answer, agent-loop-size, risk-proportional-human-review]
 first-seen: tech-bridge-ai-labs-claude-code-verification-review-loop
-sources: [tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-04
 ---
 
 # 리뷰 루프 종료 조건
@@ -60,3 +60,11 @@ updated: 2026-11-02
 
 - [[tech-bridge-ai-labs-claude-code-verification-review-loop]] §6 · §9
 - [[generator-evaluator-pattern]] · [[automated-code-review]] · [[three-level-agent-review]]
+
+## 돌릴 때마다 새 버그 — "fractally infinite" (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]])는 끝나지 않는 이유를 다르게 설명한다: *"every time you run a review agent on the same poll[=pull] request, you will somehow find new bugs"*(03:26~03:29) · *"bugs will appear to be fractally infinite."*(03:35~03:37)
+
+- > ⚠️ **Contradiction(약): 옛 문제인가, 새 문제인가.** 위 Anthropic 기록(AI Labs 전달)은 reviewer 보고의 약 59%가 첫 라운드부터 있던 것이라 했고, 여기서는 매번 새것을 찾는다고 한다. 저쪽은 수정이 낀 builder-reviewer 라운드이고 여기는 같은 PR의 재실행이라 조건이 다르다. 양쪽 다 측정 방법은 확인하지 않았다.
+- **루프의 다른 쪽 비용** — *"coding agents not discerning."*(03:11~03:12) 지적을 전부 반영하면 *"extremely painfully defensive code"*(03:15~03:18)가 남는다. 이 페이지의 규칙들은 라운드 수와 토큰을 막는다. 이 발화는 **멈춘 뒤 코드에 남는 흔적**을 말한다.
+- 발표자의 처방은 종료 규칙이 아니라 입구 쪽이다(버그 유형 지정 · nitpick 금지, 03:51~04:17). 라운드 상한은 말하지 않는다.

@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-09-09
-updated: 2026-11-02
+updated: 2026-11-04
 ---
 
 # 모델 혼합의 경제학
@@ -181,3 +181,12 @@ updated: 2026-11-02
 ## 사용자 결론으로서의 혼합 — "90퍼센타일은 싼 모델, 최상단은 비싼 모델" (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
 
 [[nick-saraev|Nick Saraev]](추정)의 [[openai-terra|GPT-6.1 Terra]] vs [[claude-opus-5-5|Opus 5.5]] 비교 결론은 단계별이 아니라 **작업 등급별** 분할이다: *"I would absolutely use 6.1 Terra for computer use as well as probably most like 90th percentile applications."*(11:13~11:23) · *"on upper echelons of quality, you know, it doesn't really hold a candle to Opus 5.5, especially in some design applications."*(11:28~11:35) 근거는 데모의 *"great up to a certain level of complexity"*(06:09~06:14)와 비용 대비 점수 그래프(*"90, I don't know, 7%[=97%] of performance for 1/9 or maybe 11% cost"* 10:04~10:12)다. 사실 오류율이 가장 낮다는 그래프를 근거로 *"daily driver for most conversations"*(11:08~11:11)도 Terra에 준다. ⚠️ 1인 판단 + 출처 미표기 그래프. → [[cost-vs-score-frontier]]
+
+## 리뷰 제품의 배분 — 프런티어 20%, 하위 작업 20개 (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]])의 자사 수치: ⚠️ *"our share today is about 20% frontier models for the most critical tasks."*(13:42~13:45) 나머지 *"long tail of tokens which is exploratory file reads and so on we use a variety of smaller models."*(13:46~13:50) 예시는 작은 모델이 맥락 찾기, 가벼운 computer use 모델이 흐름 시험, 프런티어가 버그 분석 · 리뷰 적용 · 제출이다(14:01~14:12). 실제로는 *"20 different subtasks"*(14:13)이고 조합을 고치는 연구 팀이 따로 있으며, 직접 하면 *"You can probably get 70 to 80% of the way there"*(14:21~14:23)라고 한다.
+
+- ⭐ **혼합의 안전장치는 평가 셋이다** — 좋은 데이터셋 없이 작은 모델로 바꾸면 *"you'll only find out when it misses something that then causes an outage or incident."*(14:43~14:46) 이 페이지의 라우팅 논의에 **바꾼 뒤 나빠졌는지 어떻게 아느냐**가 붙는다. 치명적 버그가 드물수록 늦게 드러난다는 논리다 → [[automated-code-review]]
+- **컨텍스트 선별에 작은 모델** — *"In theory, you should be able to use a decision model for this, something like JV or the decisions API to do effective ranking"*(14:59~15:05) ⚠️ *"JV"* 는 [[jev|Jev]] 추정(`en`은 `"Java"`). *"decisions API"* 의 동일성은 [[system-1-model]]의 DevDay 기록과 이름이 같다는 것뿐이다. "in theory"이고 자사 사용이라는 말은 없다.
+- ⚠️ 20%의 단위(토큰 · 비용 · 작업)가 발화되지 않고, 절감 폭도 없다. 작은 모델이 오픈 모델인지는 단정할 수 없다. 프런티어가 오픈 모델보다 낫다면서 *"the rubber band is tightening."*(13:40)이라고 덧붙인다.
+- [[review-model-inversion]]과 함께 읽으면 **혼합의 이유가 둘**이다(비용, 상관 실패 깨기). 둘이 충돌할 때의 순서는 발화되지 않았다.

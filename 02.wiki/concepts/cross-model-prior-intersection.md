@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [model-priors, silent-data-errors, correlated-errors, model-diversity, verification, ensemble, data-engineering, human-in-the-loop]
 aliases: [cross-model prior intersection, prior intersection, 모델 prior, 모델의 사전 가정, 조용한 데이터 오류, silent data errors, LLMs as a species]
-related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop, three-level-agent-review]
+related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop, three-level-agent-review, review-model-inversion]
 first-seen: tech-bridge-just-in-time-ontology
-sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review]
+sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-greptile-daksh-gupta-build-review-agent]
 created: 2026-10-18
-updated: 2026-10-20
+updated: 2026-11-04
 ---
 
 # 교차 모델 prior 교집합 (Cross-Model Prior Intersection)
@@ -60,3 +60,10 @@ updated: 2026-10-20
 ## 같은 지시의 두 에이전트 + 원문 control total은 충분한가 (2026-10-20 · [[tech-bridge-three-level-agent-review]])
 
 > ⚠️ Contradiction(긴장): [[corey-gallon|Corey Gallon]](⚠️ 이름 *추정*)의 Level 2는 **같은 지시**를 받은 에이전트 둘이다(*"two agents get an identical set of instructions"* 02:15~02:17, *"two more agents, tasked identically"* 08:12~08:15). 모델 다양성은 발화되지 않는다. 성공의 증거도 *"the whole year balanced to the penny"*(08:43~08:45)다. 이 페이지는 여러 모델이 같은 오류를 *"validated"*하고 1센트까지 같은 합계를 내도 공통 prior는 남는다고 했다. 화자의 방어는 합계를 **모델끼리가 아니라 원문과** 맞춘다는 것이다: *"we use the balance printed on the statements as the control total for each month"*(07:50~07:55), 차이는 *"against the statements themselves"*(08:09~08:11)로 정리한다. 남는 구멍: 월 잔액은 같은 달 안의 분류·설명 오류를 잡지 못하고, 두 에이전트가 같은 prior로 같은 오독을 하면 대조자에게 차이로 보이지 않는다. 화자는 56개 차이를 잡았다고 하지만(08:37~08:42) 함께 틀린 것에 대해서는 말하지 않는다. 해소하지 않는다. → [[three-level-agent-review]]
+
+## 코드 리뷰로 옮긴 판본 — 쓴 모델과 다른 모델이 리뷰한다 (2026-11-04 · [[tech-bridge-greptile-daksh-gupta-build-review-agent]])
+
+[[daksh-gupta|Daksh Gupta]](설명란 근거, [[greptile|Greptile]])가 같은 직관을 코드에 적용한다: *"they fail in the same ways during review that they do during code generation."*(07:09~07:12) 자세한 내용은 [[review-model-inversion]]에 있다.
+
+- 이 페이지의 방식은 **두 모델의 답을 비교해 불일치에 검증을 몬다.** 뒤집기는 **작성 모델과 다른 모델 하나가 리뷰한다.** 합의를 보지 않으므로 위 대출 부호 사례(여러 모델이 함께 틀린 것을 검증했다고 본 경우)와 형태가 다르다.
+- ⚠️ 이질성의 근거가 처음으로 코드 버그 유형으로 나온다(Claude는 *"one-off errors"*(06:49) 약 3배, GPT는 *"off[=auth] bypasses"*(06:53~06:55)). 다만 표본 · 모델 버전이 없는 벤더 진술이고, 효과 *"10% higher cache[=catch] rate"*(08:06~08:08)도 단위가 없다.
