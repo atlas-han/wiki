@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-04
+updated: 2026-11-05
 ---
 
 # Claude Code
@@ -250,3 +250,11 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - **도구 비용**: *"Claude code loads a lot of tools into every session."*(03:18~03:22) 데모 프로젝트에서 276개를 끄면 메시지당 약 34,300 → 24,400 토큰(09:47~09:54, 수정판) → [[usage-based-tool-pruning]].
 - **세션 기록**: *"But Claude Code already saves all your sessions in the main.claud folder for 30 days"*(07:06~07:11). 발표자는 이 기록을 학습 재료로 쓰도록 플러그인을 고쳤다. ⚠️ 30일 보관은 발표자 진술이고 위키가 확인하지 않았다. 이 기록의 집계 한계는 [[hidden-harness-calls]]의 JSONL 절 참조.
 - **Microsoft 시험 전달**: *"On Claude Code, Sonnet 5 cost 23.6% less and Opus 4.8 cost 30.9% less."*(01:17~01:22) ⚠️ `en` · ko는 모델을 Sonnet 3.5 · Opus 3으로 바꾼다.
+
+## 2026-11-05 — 입문자가 보는 표면: 앱 · 세 모드 · 더하기 버튼 ([[tech-bridge-nick-saraev-shortest-claude-code-course]])
+
+[[nick-saraev|Nick Saraev]](설명란 근거)의 4:48 입문 해설은 CLI가 아니라 **데스크톱 앱의 탭**으로 소개한다. 채팅은 *"it can't actually change any of your files."*(00:37~00:39), *"Claude Code can, and that's the one we want to use today."*(00:41~00:43)
+
+- **모드**: Manual · Plan · Auto. 권고는 *"I recommend sticking with auto for virtually everything."*(01:56~01:58) ⚠️ 입문자에게도 같은 권고이고 예외를 말하지 않는다. 위 Permission modes 절과 함께 읽는다.
+- **구성 요소**: effort 설정, `/init`으로 만드는 CLAUDE.md, 오른쪽 브라우저 패널, 더하기 버튼의 커넥터, 예약 작업, 휴대폰 Remote Control, 아티팩트를 한 번씩 짚는다.
+- ⚠️ *"You can also install custom plugins and now mods"*(03:51~03:53) — mods의 동작은 한 문장뿐이고 위키가 확인하지 않았다. 약 $20이라는 요금과 화면은 설명란이 제작 시점 설명이라고 밝힌다.

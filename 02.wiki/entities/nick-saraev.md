@@ -7,9 +7,9 @@ aliases: [Saraev, 닉 사라예프]
 links:
   - https://www.youtube.com/watch?v=FSXHk4hMrY8
   - https://www.youtube.com/watch?v=He-NyJjzWM0
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-shortest-claude-code-course]
 created: 2026-10-09
-updated: 2026-11-02
+updated: 2026-11-05
 ---
 
 # Nick Saraev
@@ -66,3 +66,11 @@ updated: 2026-11-02
 - 이번엔 후반을 **벤치마크 읽기**에 쓰면서 스스로 단서를 단다: *"the benchmarks themselves are not super valuable or important these days."*(07:43~07:47) 그러고도 *"That, ladies and gentlemen, is leverage."*(11:44~11:46)로 비용 대비 점수 그래프에서 결론을 낸다 → [[cost-vs-score-frontier]]
 - Codex 예산 언급(*"stretch significantly more out of your Codex budget"* 11:23~11:26) — Kimi 편의 *"I did run these on plans"* 처럼 구독 플랜 사용자로 읽힌다(⚠️ 이번 편은 플랜 여부를 명시하지 않는다).
 - 태도: Kimi 편과 같이 **싼 모델을 진지한 선택지로** 놓되, 게임 품질은 *"more like qualitative"*(04:51~04:55)라 하고 비싼 쪽을 *"something that I would actually play"*(04:57~04:58)라고 고른다 — 점수와 체감을 구분하는 문장이 이번에도 있다.
+
+## 다섯 번째 등장 — Claude Code 입문 4:48 (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
+
+앞의 두 비교 편과 달리 **기능 소개**다. ⚠️ **이름은 이번엔 설명란에만 있다**(`tags`에도 없다). 발화의 단서는 *"on my channel"*(04:42) 정도이고 목소리 동일성은 확인하지 않았다. 설명란에 원본 링크가 없다.
+
+- 자기 설정: *"I usually set mine to medium or high across the board."*(02:14~02:16) 비교 편의 max effort와 다르다.
+- 자기 사례: 3D 아파트 시각화, YouTube 편집 · 제안서 · 팟캐스트 스킬, *"I built these 100 websites in approximately the same amount of time it took me to build one using sub agents."*(04:10~04:15) ⚠️ 전부 1인칭 일화다.
+- 태도: 앞 편들처럼 **일단 맡겨 보라** 쪽이다. *"I recommend sticking with auto for virtually everything."*(01:56~01:58)

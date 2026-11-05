@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-annie-wang-harness-four-designs]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-annie-wang-harness-four-designs, tech-bridge-nick-saraev-shortest-claude-code-course]
 created: 2026-09-08
-updated: 2026-10-26
+updated: 2026-11-05
 ---
 
 # Agent Memory
@@ -243,3 +243,7 @@ updated: 2026-10-26
 ## session · state · long-term memory 3분할 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
 
 [[annie-wang|Annie Wang]](발췌): **session**은 *"all the transcript of your conversation"* 이다. 원래 요청과 후속 지시(*"이름과 이메일만"*)가 둘 다 여기 속한다. **state**는 *"more like a scratch pad for your application"* 이다. 이름 · 이메일 · *status: ready for testing* 같은 key-value를 코드가 읽고 갱신한다(00:57~01:25). 해설: *"대화 기록은 작업일지, 상태는 지금 필요한 값을 적는 메모 (…) 다음 대화에서도 쓸 취향을 보관하면 장기 기억이 돼요. 무엇을 저장하고 다시 꺼낼지는 설계자가 정해요."*(01:27~01:43) ⚠️ 용어 체계는 ADK 류로 보이나 원본에서 확정하지 못했다.
+
+## 입문자에게 주는 첫 메모리: `/init` (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
+
+[[nick-saraev|Nick Saraev]](설명란 근거)는 메모리를 세션 사이의 공백으로 설명한다: *"a new session doesn't remember what you talked about in the last one unless you have some sort of memory."*(02:25~02:28) 처방은 *"creating a file called Claude.md, which stores information that Claude can read at the beginning of any individual session."*(02:30~02:35)이고, `/init`이 *"based off what you've done in the workspace so far"*(02:40~02:41) 만들어 준다고 한다. 오염이나 갱신 문제는 말하지 않는다.

@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, workflow, llm-coding, productivity, codex]
 related: [verifiable-goals, sprint-contract, harness-engineering, agent-harness-design, context-engineering, spec-driven-development, agent-org-adoption]
 first-seen: openai-nextdoor-codex
-sources: [openai-nextdoor-codex, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-claude-managed-agents-workshop-2]
+sources: [openai-nextdoor-codex, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-nick-saraev-shortest-claude-code-course]
 created: 2026-06-27
-updated: 2026-10-19
+updated: 2026-11-05
 ---
 
 # Outcome Engineering
@@ -52,6 +52,10 @@ updated: 2026-10-19
 
 - 출처가 **벤더 케이스 스터디**라 정량 근거 없이 생산성·역할 변화를 *주장*한다. "병목이 엔지니어링이 아니다" 같은 진술은 Nextdoor 1개 조직의 경험담.
 - "스택 위로 이동"이 모든 조직·도메인에 일반화되는지는 미검증.
+
+## 입문 판본: "단계가 아니라 결과를" (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
+
+[[nick-saraev|Nick Saraev]](설명란 근거): *"In general, you want to describe the outcome and not the steps to get there."*(01:06~01:09) *"Claude can usually figure that part out."*(01:09~01:10) 위 절들과 달리 완료 조건이나 검증 기준은 붙지 않는다. 원칙만 전하는 입문자용 문장이다.
 
 ## References
 

@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research, prompt-caching, context-failure-modes]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-context-engineering-four-failure-modes]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-context-engineering-four-failure-modes, tech-bridge-nick-saraev-shortest-claude-code-course]
 created: 2026-05-25
-updated: 2026-10-20
+updated: 2026-11-05
 ---
 
 # Context Resets vs. Compaction
@@ -138,3 +138,7 @@ optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context 
 [[martin-keen|Martin Keen]]([[ibm|IBM Technology]])은 compact를 distraction의 처방으로 두면서 한계를 함께 말한다: *"Now, compaction is lossy. A summary of a summary can start to drift like a photocopy of a photocopy."*(08:13~08:23) "all compression is lossy"에 **반복될 때 누적된다**는 점을 더한 증언이다. 보완은 *"consider moving as much out of the context window as possible and put them into permanent files instead"*(08:20~08:33), 그리고 *"only when it's actually needed"*(08:38~08:41) 다시 꺼내기다. clash의 처방 prune의 끝 형태 *"start a fresh window just restating the current corrected state of the job and leave the poison stuff behind"*(09:17~09:28)는 structured handoff를 쓰는 **context reset**과 같은 모양이다. → [[context-failure-modes]]
 
 > **Managed Agents "Third Way"와의 긴장(위키 판독).** 위 절의 Managed Agents는 원본 세션 로그를 창 밖에 두어 *irreversible한 compaction/trimming 결정을 미룰 수 있다*고 했다. 이 화자의 compact는 *"it throws the full log away and starts again from the summary"*(08:06~08:10)이고, prune은 *"just delete the old version"*(09:10~09:16)이다. 버리는 범위가 **창**인지 **기록 전체**인지 화자는 구분하지 않는다. 영구 파일 보완(08:20~08:41)은 Managed Agents 쪽에 가깝다. 입문 해설의 단순화로 보이며 Contradiction으로 올리지는 않는다.
+
+## 입문자용 규칙: 주제가 바뀌면 새 세션 (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
+
+[[nick-saraev|Nick Saraev]](설명란 근거): *"Claude is forced to reread literally the whole thing every single time you have a conversation with it."*(02:44~02:47) *"That means long sessions get slower, more expensive, and usually lower quality."*(02:47~02:51) 처방은 *"if you're switching a topic or you're building something new, always start a new session."*(02:51~02:55) ⚠️ [[prompt-caching]]과 compaction을 말하지 않는 단순화이고 "lower quality"의 근거는 없다. 규칙 자체는 이 페이지의 reset 쪽 판단과 같은 방향이다.

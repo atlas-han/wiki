@@ -164,8 +164,9 @@ sources:
   - tech-bridge-rob-shocks-grokbot-manager-coding-agents
   - tech-bridge-greptile-daksh-gupta-build-review-agent
   - tech-bridge-ai-labs-token-economizer
+  - tech-bridge-nick-saraev-shortest-claude-code-course
 created: 2026-06-03
-updated: 2026-11-04
+updated: 2026-11-05
 ---
 
 # Tech Bridge
@@ -1587,3 +1588,11 @@ updated: 2026-11-04
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
 
+## 2026-11-04 업로드 — Nick Saraev Claude Code 입문 강의 (2026-11-05 ingest)
+
+[[tech-bridge-nick-saraev-shortest-claude-code-course|[한글자막] 세상에서 가장 짧은 클로드 코드 강의 | 설치부터 실전 활용까지 (자막·마무리 수정)]](`uOcO1QNmJOA`, 4:48, 공식 챕터 9) — [[nick-saraev]](설명란 근거) 1인칭 입문 해설, 내레이션 없음 ([[claude-code]] · [[agent-skills]] · [[agent-memory]] · [[context-resets-and-compaction]] · [[scheduled-agent-automations]] · [[outcome-engineering]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5, 두 트랙 파라미터 동일 · `variant=gemini`). 00:00~00:22는 무캡션이다. `upload_date` 20261104 = 2026-11-04 18:00 KST. 제목의 *(자막·마무리 수정)* 이 가리키는 전 판본은 찾지 못했다.
+- ⚠️ 이름은 설명란뿐이고(`tags`에도 없음) 원본 링크가 없다. 요금 · 화면은 설명란이 제작 시점 설명이라고 밝힌다. `en`은 *auto*를 `a car`로 바꾸고 ko는 "자동차"로 옮긴다. 신규 페이지 없이 기존 페이지만 보강했다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

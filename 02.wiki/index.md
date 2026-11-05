@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-04
+updated: 2026-11-05
 ---
 
 # Index
@@ -999,12 +999,13 @@ updated: 2026-11-04
 - [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]] — [[rob-shocks|Rob Shocks]](설명란 근거, 발화에 이름 없음) 1인 해설(12:33, 챕터 8, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-02 18:00 KST): Grok Bot은 매니저, Claude Code는 개발자 — first mile · last mile 분업, Lauren Tan 다섯 단계 루프(fix and fuzz PR → *"auto merges after an hour"*) · inverse pyramid 4층(2차 전달), Anthropic 6~9월 머지 PR 2배+ · revert 40%+ 감소, Alan Wells 6주 검증 투자, 공유 컴퓨터의 자격 증명 · *"The controls have to live in the environment"*, 시작 규칙 → [[manager-bot-coding-agent-split]] · [[hard-vs-soft-enforcement]] · [[agent-sandboxing]] ⚠️ 회사 · Lauren 쪽은 출처 미발화 2차 전달 · 설명란 링크 미확인 · GrokBot 컴퓨터 공유 진술이 이전 소스와 충돌 · 마지막 문장 잘림
 - [[tech-bridge-greptile-daksh-gupta-build-review-agent]] — [[daksh-gupta|Daksh Gupta]](설명란 근거, 발화에 이름 없음) · [[greptile|Greptile]] 1인 발표(15:26, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-04 07:00 KST): AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들 — 뼈대(샌드박스 + PR 웹훅 + 프롬프트)의 문제 다섯, nitpick이 낳는 방어적 코드, *"You don't know the counterfactual."*, 사고 PR 데이터셋, 작성 · 리뷰 모델 뒤집기(10%), grep 비판 · living wiki, computer use 자율 테스트, 프런티어 20% + 하위 작업 20개 → [[review-model-inversion]] · [[automated-code-review]] · [[production-trace-eval-flywheel]] ⚠️ 벤더 당사자, 수치 전부 자사 진술 · 1/1000이 PR · 줄 두 단위 · 10%가 탐지율 · 사고 확률로 흔들림 · en이 model inversion을 "model versioning"으로 바꿈
 - [[tech-bridge-ai-labs-token-economizer]] — [[ai-labs|AI Labs]](설명란 근거, 발화 · 태그에 이름 없음, Graft 편 자기 언급으로 간접 정합) 해설 · 시연(10:54, 챕터 12, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-03 18:00 KST): 클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까? — [[token-economizer|Token Economizer]]의 세 절감(micro skills · 도구 끄기 · 막힘 개입), Microsoft 시험 전달(277개 버그 · Sonnet 5 −23.6% · Opus 4.8 −30.9%), 콜드 스타트와 세션 기록 수정판, 발표자 측정(메시지당 34,300 → 24,400 토큰 · 99 → 79 스텝 · 비용 약 21%) → [[usage-based-tool-pruning]] · [[prompt-injection]] · [[hidden-harness-calls]] ⚠️ 수치는 전달 또는 특정 프로젝트 측정 · 저장소 미열람 · 설명란 *"한 줄로 알린다"* 와 발화 *"without telling you"* 가 어긋남
+- [[tech-bridge-nick-saraev-shortest-claude-code-course]] — [[nick-saraev|Nick Saraev]](설명란 근거, 발화 · 태그에 이름 없음) 입문 해설(4:48, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-04 18:00 KST): 세상에서 가장 짧은 클로드 코드 강의 — 앱 설치, Manual · Plan · Auto, 모델 · effort, CLAUDE.md와 새 세션, 스킬, 커넥터, 서브에이전트, 예약 · 원격 제어, 아티팩트 ⚠️ 사례는 1인칭 일화, 요금 · 화면은 제작 시점 설명, 공식 문서 미열람
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 965 (958 → 965, + 2026-11-04 Tech Bridge 2편(11-03 업로드 — Greptile 리뷰 에이전트 만들기 · AI Labs Token Economizer): source 2 · entity 3(daksh-gupta · greptile · token-economizer) · concept 2(review-model-inversion · usage-based-tool-pruning) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 965와 일치)
+- 총 페이지 수: 966 (965 → 966, + 2026-11-05 Tech Bridge 1편(11-04 업로드 — Nick Saraev Claude Code 입문 강의): source 1 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 966과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-04 (Tech Bridge **2편** — 11-03 업로드 [[tech-bridge-greptile-daksh-gupta-build-review-agent|AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]](`6slamFlG96Q`) · [[tech-bridge-ai-labs-token-economizer|클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]](`FNpUPkAOE4g`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-03 (Tech Bridge **2편** — 11-02 업로드 [[tech-bridge-better-stack-claude-code-agent-summary-cost|Claude Code 에이전트 요약에 비용 12%?]](`Cz9vbmmBNTc`) · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents|Grok Bot은 매니저, Claude Code는 개발자]](`ra5WyQ-hKN4`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-05 (Tech Bridge **1편** — 11-04 업로드 [[tech-bridge-nick-saraev-shortest-claude-code-course|세상에서 가장 짧은 클로드 코드 강의]](`uOcO1QNmJOA`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-04 (Tech Bridge **2편** — 11-03 업로드 [[tech-bridge-greptile-daksh-gupta-build-review-agent|AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]](`6slamFlG96Q`) · [[tech-bridge-ai-labs-token-economizer|클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]](`FNpUPkAOE4g`). `Yhck-x6VuLs` 멤버 전용 지속)

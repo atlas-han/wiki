@@ -2503,3 +2503,18 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편이라 영상별 **병렬 서브에이전트 2개**(포그라운드, 공용 브리프 `.scratch/tb1104/BRIEF.md`, 11-03 브리프를 치환으로 재사용)로 raw · source · entity/concept를 나누고, 공유 페이지는 오케스트레이터가 스크립트로 갱신했다. launchd 정시 실행분이다. 오케스트레이터가 신규 페이지 · 보강 절의 영어 인용 346건과 raw 헤더 86건을 en-orig와 다시 대조했고 불일치는 0건이었다. raw 전사는 en-orig 줄 821개(504 + 317)가 전부 그대로 들어 있다. 서브에이전트들은 인용 타임스탬프를 약 17곳 바로잡았다. ⭐ `en`의 변조가 이번엔 뜻을 바꾸는 수준이다 — model inversion → `model versioning`, computer use → `computer vision`, forward deployed engineers → `team of four`, Sonnet 5 → `Sonnet 3.5`, Opus 4.8 → `Opus 3`. `en`은 계속 인용 근거로 쓰지 않는다.
 
+## [2026-11-05] ingest | Tech Bridge — 11-04 업로드 1편 (세상에서 가장 짧은 클로드 코드 강의 — Nick Saraev)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-04 업로드 **1편** ingest. `English (US) original` + 더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. `--sleep-subtitles 8`로 429 없음.
+
+**신규 source 1**, 기존 페이지 보강 7개(+ tech-bridge), index **965 → 966**(실측 일치).
+
+- `uOcO1QNmJOA`(4:48, 챕터 9) → [[tech-bridge-nick-saraev-shortest-claude-code-course]]: 내레이션 없는 1인칭 입문 해설. 화자는 설명란 기준 [[nick-saraev]]이고 발화 · `tags`에는 이름이 없다.
+  - 보강: [[claude-code]](앱 표면 · 세 모드 · mods 언급) · [[nick-saraev]](다섯 번째 등장) · [[agent-skills]](입문 정의) · [[agent-memory]](`/init`) · [[context-resets-and-compaction]](새 세션 규칙) · [[scheduled-agent-automations]](메뉴 예약) · [[outcome-engineering]](결과를 말하라)
+  - ⚠️ 사례(3D 시각화, 100개 웹사이트)는 1인칭 일화다. 요금 · 화면은 설명란이 제작 시점 설명이라고 밝히고, 공식 문서는 열지 않았다. 00:00~00:22 무캡션이라 타이머 언급의 앞부분을 확인할 수 없다. *(자막·마무리 수정)* 의 전 판본은 찾지 못했다. ASR 판독: *"{slash}init"* · *"Claude.md"* · *"skill.mds"* · *"for your day"*(time 추정).
+  - 페이지화하지 않음: mods(한 문장 언급, 동작 미확인) · 아티팩트 · 오른쪽 브라우저 패널 · 변경 카운터(앱 UI 언급, source에 기록) · 3D 아파트 시각화 · 100개 웹사이트(일화) · GitHub · Slack · Linear · Asana · Trello · Amazon · ChatGPT(언급 수준) · 설명란 링크 2개(열지 않음).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일 2개만).
+
+### 운영 메모
+
+1편 · 4:48이라 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다. 새 개념 페이지를 만들지 않은 것은 의도다 — 입문 소개라 모든 항목이 기존 페이지에 있다. ⭐ `en`의 변조가 이번엔 핵심 권고를 뒤집는다 — *"sticking with auto"* → `keeping a car`. ko도 auto를 "자동차"로 옮겼다. 일반 영어 낱말이 된 제품 용어(auto · manual · tabs)가 특히 취약하다. `en`은 계속 인용 근거로 쓰지 않는다.
