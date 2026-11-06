@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-09-09
-updated: 2026-11-05
+updated: 2026-11-06
 ---
 
 # 예약형 에이전트 자동화
@@ -122,3 +122,7 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## 앱의 메뉴로 소개된 예약 (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
 
 [[nick-saraev|Nick Saraev]](설명란 근거): *"let Claude work while you're away by clicking on scheduled and then creating a task that runs without you."*(04:15~04:21) 위 Dan Martell 편(Grok Bot)은 말로 예약했고, 여기서는 메뉴를 누른다. 제품이 달라 우열을 말할 수 없다. ⚠️ 화면과 메뉴 이름은 제작 시점 기준이고 위키가 확인하지 않았다.
+
+## 비개발자의 예약 세 가지 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+[[sandeep-swadia|Sandeep Swadia]](설명란 근거)의 프롬프트에서 예약은 메뉴가 아니라 문장 안에 있다. 하루 세 번 메시지 점검(*"at 10:00 a.m., 100 p.m., and 400 pm"*(09:29~09:33)), 주간 회고(*"Every Sunday evening, review my calendar and work from this week."*(15:55~15:58)), 주기 진료(*"Make sure I see my doctor every 3 to four months."*(13:11~13:16))다. 정의도 사용자 쪽 말이다: *"that's how you make your agent your trigger."*(13:16~13:18) ⚠️ 예약이 실제로 어떻게 등록되는지는 자막에 없다. → [[personal-agent-four-forces]]

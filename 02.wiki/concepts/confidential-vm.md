@@ -6,9 +6,9 @@ tags: [security, privacy, confidential-computing, agents, trust-boundary]
 aliases: [confidential VM, 운영자도 볼 수 없는 실행 환경]
 related: [sentinel-agent, least-privilege-connectors, credential-injection-outside-sandbox, lethal-trifecta, named-human-accountability, privacy-auto-mode]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-09-14
-updated: 2026-09-17
+updated: 2026-11-06
 ---
 
 # 기밀 VM
@@ -85,3 +85,7 @@ updated: 2026-09-17
 진행자가 사용자 쪽에서 본 것을 덧붙인다 — *"제 Muse의 VM, 즉 개인 컴퓨터를 처음 봤을 때 (…) **메모리나 데이터 같은 것들이 거기 다 저장돼 있고, 오직 우리 에이전트만을 위한 것**이더군요"*(17:12~17:32). **사용자가 VM 내부를 들여다볼 수 있다**는 서술은 이번 편이 처음이다.
 
 ⚠️ [[nightly-memory-consolidation|메모리 압축]]이 이 VM 안에서 도는지 소스가 연결하지 않는다.
+
+## 기술이 아니라 주지 않기로 그은 경계 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+[[sandeep-swadia|Sandeep Swadia]](설명란 근거): *"My AI agent only set the appointment. It did not have my health records or any financial information."*(13:21~13:30) *"Now, I'm not comfortable sharing any of that with AI."*(13:30~13:33) *"That's my choice for now."*(13:36) 실행 환경을 믿게 만드는 대신 **데이터를 넘기지 않는** 사용자 쪽 답이다. ⚠️ 같은 일화에서 에이전트는 마지막 호흡기내과 진료 시점을 답했고 정보원을 말하지 않는다. 화자의 경계가 어디까지인지는 미확정이다. 이 영상은 기밀 VM을 언급하지 않는다.

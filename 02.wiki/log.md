@@ -2518,3 +2518,20 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 1편 · 4:48이라 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다. 새 개념 페이지를 만들지 않은 것은 의도다 — 입문 소개라 모든 항목이 기존 페이지에 있다. ⭐ `en`의 변조가 이번엔 핵심 권고를 뒤집는다 — *"sticking with auto"* → `keeping a car`. ko도 auto를 "자동차"로 옮겼다. 일반 영어 낱말이 된 제품 용어(auto · manual · tabs)가 특히 취약하다. `en`은 계속 인용 근거로 쓰지 않는다.
+
+## [2026-11-06] ingest | Tech Bridge — 11-05 업로드 1편 (반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다 — Sandeep Swadia)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-05 업로드 **1편** ingest. `English (US) original` + 더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. 429 없음.
+
+**신규 source 1 · entity 1 · concept 1**, 기존 페이지 보강 7개(+ tech-bridge), index **966 → 969**(실측 일치).
+
+- `HOo_rDzXfRE`(16:35, 챕터 9) → [[tech-bridge-sandeep-swadia-personal-ai-agent]]: 내레이션 없는 1인 해설. 화자는 설명란 · `tags` 기준 [[sandeep-swadia]]이고 발화에는 이름이 없다.
+  - 신규: [[sandeep-swadia]] · [[personal-agent-four-forces]](ACT와 네 힘)
+  - 보강: [[openai-dots]](시연 도구) · [[agent-attention-management]](필터 프롬프트 · 문지기) · [[scheduled-agent-automations]](문장 속 예약 셋) · [[goal-level-delegation]](*objectives, not just instructions*) · [[agent-persona-naming]](Capes) · [[persistent-agent-teams]](인턴 무리 비판) · [[confidential-vm]](주지 않기로 그은 경계)
+  - ⚠️ 효과 측정이 없다. HBR · Microsoft · Carnegie Mellon · McKinsey · Randy Pausch는 화자 전달이고 원 자료를 열지 않았다. 시연 화면을 보지 않았다. 00:01~00:27 무캡션. ASR 미확정: *"34 times every hour"*(en `30 to 40 times`) · *"Capes"* 철자. *"Grock has Grockbot"* 은 위키의 Cursor 제품 기록과 어긋나 보이나 고치지 않았다.
+  - 페이지화하지 않음: Randy Pausch · Harvard Business Review · Carnegie Mellon · McKinsey · Claude Co-work · Gemini agent(언급 · 전달 수준) · Capes(화자 페이지에 기록).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일 4개만).
+
+### 운영 메모
+
+1편 · 16:35라 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다. ⭐ 이번엔 두 트랙의 json3 파라미터에 `variant`가 아예 없는데도 `en`이 en-orig와 달랐다 — 11-03 Better Stack 편과 같은 패턴이다. ASR이 *"34 times"* 인 곳을 `en`은 `30 to 40 times`로 적는다. `en`이 옳을 수도 있어 어느 쪽으로도 정하지 않았다. `en`은 계속 인용 근거로 쓰지 않는다.

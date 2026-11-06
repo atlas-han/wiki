@@ -5,9 +5,9 @@ category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
 related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-09-05
-updated: 2026-09-21
+updated: 2026-11-06
 ---
 
 # Goal-Level Delegation
@@ -118,3 +118,7 @@ Claude Code 팀이 *녹취록을 안 본다*고 했다면 여기서는 *모드·
 MMA 사례가 한 칸 더 간다 — *"카메라를 지켜보다가 **라운드 사이에** 피드백을 달라"* 는 **트리거 시점까지 맡긴 것**이고, 화자는 결과를 통제하지 않는다(*"좀 더 동기 부여가 되는 장면을 골라 줄 순 없었어?"*).
 
 ⚠️ **실패 사례가 없어 위임의 경계가 어디서 깨지는지 알 수 없다.**
+
+## 일상 프롬프트의 목표 수준 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+[[sandeep-swadia|Sandeep Swadia]](설명란 근거)가 임대차 계약 검토 프롬프트를 설명하며 이 패턴을 그대로 말한다: *"you're giving objectives, not just instructions, goals, not just guidance."*(10:28~10:33) 같은 프롬프트의 *"And show me the exact clauses."*(10:36~10:39)는 목표만 주지 않고 **확인할 근거를 함께 요구**한다. 위임의 경계를 둔 작은 사례다(위키의 읽기). ⚠️ 위 절의 유보대로 실패 사례는 여기에도 없다.

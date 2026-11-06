@@ -5,9 +5,9 @@ category: product
 tags: [openai, chatgpt, persistent-agent, always-on-agent, personal-agent, devday-2026]
 aliases: [Dots, Dot, 닷, 도트, always-on agents in ChatGPT]
 links: []
-sources: [tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-claude-duet-proactive-assistant]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-claude-duet-proactive-assistant, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-10-09
-updated: 2026-10-24
+updated: 2026-11-06
 ---
 
 # Dots (OpenAI)
@@ -73,3 +73,7 @@ updated: 2026-10-24
 ## 같은 범주의 Anthropic 제품 (2026-10-24 · [[tech-bridge-claude-duet-proactive-assistant]])
 
 [[claude-duet|Claude Duet]] — 선제 알림 · 클라우드 실행 · 승인 게이트. 발췌의 *"Grockbot dots all"* 이 Dots를 가리킬 수 있으나 판독 불가.
+
+## 일반 사용자 해설의 시연 도구 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+[[sandeep-swadia|Sandeep Swadia]](설명란 근거)가 *"for the demos in this video"*(02:42~02:44) Dots를 쓴다고 밝히고 면접 준비 · 알림 필터 · 계약서 검토 프롬프트를 말한다. 다만 *"the principles apply to all personal AI agents"*(02:44~02:46)라며 제품 고유 기능을 말하지 않는다. ⚠️ 시연 화면을 보지 않아 Dots의 실제 응답은 기록하지 못했다. 화자 본인의 에이전트 Capes가 Dots인지도 말하지 않는다. ASR은 *"Chachi PT's DOTS"*(02:38)다.

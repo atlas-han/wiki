@@ -6,9 +6,9 @@ tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, vis
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
 related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-10-09
-updated: 2026-11-01
+updated: 2026-11-06
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -83,3 +83,7 @@ updated: 2026-11-01
 ## 상태 표시와 알림 — 개인 개발자의 에이전트 관리 화면 (2026-11-01 · [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]])
 
 [[herdr]] 사용기에서 [[mehul-mohan|Mehul Mohan]]이 이 문제에 가장 단순한 답을 보여 준다. 통합된 에이전트는 *"it will know like which when it is idle, when it is done, when is it working, and so on"*(06:56~06:59)이고, 앱은 *"dispatching notifications to me"*(06:25~06:27)한다. 화자의 기준은 *"your agents which are just organized properly by the state, like where they are right now"*(09:52~09:56)다. 규모 감각도 있다. *"you would not have like 100 agents running, right? At least not by yourself."*(12:21~12:25) 그 이상은 에이전트가 서브에이전트를 부를 때의 일이다. [[agentcraft|AgentCraft]]의 게임 지도와 달리 **터미널 + 상태 배지 + 알림**이라는 최소형이다. 화자도 mission control · Slack · Google Meet형 레이아웃은 *"almost like an overkill"*(08:44~08:46)이라 한다. ⚠️ 1인 사용자의 몇 시간 체감이다.
+
+## 개인 사용자의 필터 프롬프트 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+여러 에이전트가 아니라 **사람에게 오는 메시지**의 주의 관리다. [[sandeep-swadia|Sandeep Swadia]](설명란 근거): *"filter the noise and decide what deserves your attention and simplify what deserves your judgment."*(08:52~08:59) 프롬프트는 시각 셋에 *"flag only decisions waiting for me."*(09:37~09:40) 나머지는 *"park everything else for a 5:00 p.m. summary."*(09:46~09:50)다. 화자가 위험을 먼저 말한다: *"Whoever or whatever is the gatekeeper decides what you get to see."*(09:05~09:13) ⚠️ 놓친 메시지 비율 같은 측정은 없다. 틀은 [[personal-agent-four-forces]] 참조.

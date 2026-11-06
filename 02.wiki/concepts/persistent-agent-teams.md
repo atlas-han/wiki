@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing, always-on-agent-architecture]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-09-01
-updated: 2026-10-31
+updated: 2026-11-06
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -213,3 +213,7 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 - **사람 사이의 배관 제거**: ChatGPT · Claude에서는 *"you copy and paste between projects"*(00:39~00:41), Grok Bot은 *"coordinate all the different handoffs"*(00:45~00:47) → [[human-plumbing]]
 
 > ⚠️ 1인 사용자 · 제품 홍보성 발화, 효과 수치 없음. 봇 간 격리 · 권한 분리는 finance bot의 읽기 전용 말고는 언급되지 않는다.
+
+## 반대편 진단 — 인턴 무리를 관리하는 사람 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+[[sandeep-swadia|Sandeep Swadia]](설명란 근거): *"Instead of one great AI chief of staff, we end up hiring a crowd of AI interns"*(01:23~01:29), *"you become their chief of staff"*(01:33~01:36). 위 Dan Martell 절은 chief of staff 아래 봇을 늘리는데, 이 영상은 하나를 권한다. 충돌로 단정하지는 않는다 — 비판의 대상은 **코디네이터 일이 사람에게 돌아오는 구성**이다(위키의 읽기). ⚠️ 비교 측정은 없다.

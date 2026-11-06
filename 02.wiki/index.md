@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-05
+updated: 2026-11-06
 ---
 
 # Index
@@ -171,6 +171,7 @@ updated: 2026-11-05
 - [[mehul-mohan]] — CLI 하네스와 에이전트 관리 도구를 직접 비교하는 개발자 화자(이름은 발화 호명 *"Then why, Mehul"*, 성은 설명란). *"CLI means flexibility"*, 데이터가 무겁거나 사람이 봐야 하는 작업은 로컬 · 나머지는 VM, 휴대폰으로 Claude Code Remote Control, [[cmux]]보다 [[herdr]] 선호 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 소속 미상 · 1인 체감
 - [[rob-shocks]] — AI 코딩 워크플로 영어 해설자(설명란 근거, 발화엔 이름 없음). GrokBot을 코딩하지 않는 매니저로 두고 Claude Code · Cursor Cloud agents에 위임하는 자기 구성, 메인 에이전트 Chief, RICE + blast radius 백로그 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 신원은 설명란뿐 · 화자 미상인 09-04 SDLC 편 · 09-13 Pstack 리뷰 편과 동일인일 가능성(미확정)
 - [[daksh-gupta]] — 코드 리뷰 제품 회사 Greptile 공동창업자(설명란 근거, 발화엔 이름 없음). 리뷰 에이전트를 직접 만드는 절차와 깨지는 지점을 설명 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ 이름 · 직함은 설명란뿐, 라틴 표기는 한글 "닥시 굽타"의 로마자 복원
+- [[sandeep-swadia]] — 테크 · AI 기업 CEO이자 이사회 멤버(설명란 근거, 발화엔 이름 없음). 나를 아는 개인 에이전트 하나를 비서실장처럼 쓰자고 권하는 해설. 에이전트 이름 Capes(ASR). 건강 · 금융 정보는 주지 않는다고 말한다 → [[personal-agent-four-forces]]
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -737,6 +738,7 @@ updated: 2026-11-05
 - [[manager-bot-coding-agent-split]] — 상시 봇은 first mile(무엇을 지을지 · 의도 관리)과 last mile(확인 · 추적)만 맡고 가운데 코드 작성은 자기 컴퓨터 · 구독을 가진 코딩 에이전트에게 넘긴다. 근거는 비용(사용량 풀) · 격리(*"its own kill switch"*), 시작 규칙 한 줄 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 1인 구성 서술, 측정 없음 · 봇끼리 컴퓨터 공유 경고와 긴장
 - [[review-model-inversion]] — 같은 모델이 쓰고 리뷰하면 같은 방식으로 실패하므로, 작성 모델을 브랜치명 · co-authored-by 등 지문으로 알아내 다른 계열 모델에게 리뷰시킨다 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ "10% 높은 탐지율"은 벤더 진술, 단위 · 표본 · 모델 버전 없음
 - [[usage-based-tool-pruning]] — 지난 세션에서 안 쓴 도구를 규칙으로 골라 프로젝트 컨텍스트에서 뺀다(10메시지 · 최소 2세션). 지연 로딩과 달리 복구는 사람이 한다 ([[tech-bridge-ai-labs-token-economizer]]) ⚠️ 사례 하나, 메시지당 29%는 한 프로젝트 측정, 비용 아님
+- [[personal-agent-four-forces]] — 개인 AI 에이전트의 쓰임을 사람의 시간을 빼앗는 네 힘(조각 · 홍수 · 주기 · 미래)으로 나누고 챗봇과의 차이를 ACT(자율 · 지속 · 맞춤)로 설명하는 틀. 첫 위임 대상은 *습관도 큰 사건도 아닌 일*, 긴장은 문지기 문제와 맞춤 대 경계 ⚠️ 한 사람의 해설, 효과 측정 없음
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1000,12 +1002,13 @@ updated: 2026-11-05
 - [[tech-bridge-greptile-daksh-gupta-build-review-agent]] — [[daksh-gupta|Daksh Gupta]](설명란 근거, 발화에 이름 없음) · [[greptile|Greptile]] 1인 발표(15:26, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-04 07:00 KST): AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들 — 뼈대(샌드박스 + PR 웹훅 + 프롬프트)의 문제 다섯, nitpick이 낳는 방어적 코드, *"You don't know the counterfactual."*, 사고 PR 데이터셋, 작성 · 리뷰 모델 뒤집기(10%), grep 비판 · living wiki, computer use 자율 테스트, 프런티어 20% + 하위 작업 20개 → [[review-model-inversion]] · [[automated-code-review]] · [[production-trace-eval-flywheel]] ⚠️ 벤더 당사자, 수치 전부 자사 진술 · 1/1000이 PR · 줄 두 단위 · 10%가 탐지율 · 사고 확률로 흔들림 · en이 model inversion을 "model versioning"으로 바꿈
 - [[tech-bridge-ai-labs-token-economizer]] — [[ai-labs|AI Labs]](설명란 근거, 발화 · 태그에 이름 없음, Graft 편 자기 언급으로 간접 정합) 해설 · 시연(10:54, 챕터 12, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-03 18:00 KST): 클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까? — [[token-economizer|Token Economizer]]의 세 절감(micro skills · 도구 끄기 · 막힘 개입), Microsoft 시험 전달(277개 버그 · Sonnet 5 −23.6% · Opus 4.8 −30.9%), 콜드 스타트와 세션 기록 수정판, 발표자 측정(메시지당 34,300 → 24,400 토큰 · 99 → 79 스텝 · 비용 약 21%) → [[usage-based-tool-pruning]] · [[prompt-injection]] · [[hidden-harness-calls]] ⚠️ 수치는 전달 또는 특정 프로젝트 측정 · 저장소 미열람 · 설명란 *"한 줄로 알린다"* 와 발화 *"without telling you"* 가 어긋남
 - [[tech-bridge-nick-saraev-shortest-claude-code-course]] — [[nick-saraev|Nick Saraev]](설명란 근거, 발화 · 태그에 이름 없음) 입문 해설(4:48, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-04 18:00 KST): 세상에서 가장 짧은 클로드 코드 강의 — 앱 설치, Manual · Plan · Auto, 모델 · effort, CLAUDE.md와 새 세션, 스킬, 커넥터, 서브에이전트, 예약 · 원격 제어, 아티팩트 ⚠️ 사례는 1인칭 일화, 요금 · 화면은 제작 시점 설명, 공식 문서 미열람
+- [[tech-bridge-sandeep-swadia-personal-ai-agent]] — [[sandeep-swadia|Sandeep Swadia]](설명란 · tags 근거, 발화에 이름 없음) 1인 해설(16:35, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-06 07:00 KST): 반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다 — AI 인턴 무리 대신 비서실장 하나, ACT, 네 힘(HBR 하루 1,200번 전환 · Microsoft 117 이메일 + 153 Teams 메시지), 면접 준비 · 하루 세 번 필터 + 5시 요약 · 계약서 조항 검토 · 진료 주기 · 일요일 우선순위 점검 프롬프트, 문지기 위험, 건강 · 금융 정보 제외 → [[personal-agent-four-forces]] · [[agent-attention-management]] · [[openai-dots]] ⚠️ 효과 측정 없음, 통계 전달 · 미확인, 시연 화면 미확인
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 966 (965 → 966, + 2026-11-05 Tech Bridge 1편(11-04 업로드 — Nick Saraev Claude Code 입문 강의): source 1 — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 966과 일치)
+- 총 페이지 수: 969 (966 → 969, + 2026-11-06 Tech Bridge 1편(11-05 업로드 — Sandeep Swadia 개인 AI 에이전트): source 1 · entity 1(sandeep-swadia) · concept 1(personal-agent-four-forces) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 969와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-05 (Tech Bridge **1편** — 11-04 업로드 [[tech-bridge-nick-saraev-shortest-claude-code-course|세상에서 가장 짧은 클로드 코드 강의]](`uOcO1QNmJOA`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-04 (Tech Bridge **2편** — 11-03 업로드 [[tech-bridge-greptile-daksh-gupta-build-review-agent|AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]](`6slamFlG96Q`) · [[tech-bridge-ai-labs-token-economizer|클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]](`FNpUPkAOE4g`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-06 (Tech Bridge **1편** — 11-05 업로드 [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]](`HOo_rDzXfRE`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-05 (Tech Bridge **1편** — 11-04 업로드 [[tech-bridge-nick-saraev-shortest-claude-code-course|세상에서 가장 짧은 클로드 코드 강의]](`uOcO1QNmJOA`). `Yhck-x6VuLs` 멤버 전용 지속)

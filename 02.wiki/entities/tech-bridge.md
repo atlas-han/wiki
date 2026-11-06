@@ -165,8 +165,9 @@ sources:
   - tech-bridge-greptile-daksh-gupta-build-review-agent
   - tech-bridge-ai-labs-token-economizer
   - tech-bridge-nick-saraev-shortest-claude-code-course
+  - tech-bridge-sandeep-swadia-personal-ai-agent
 created: 2026-06-03
-updated: 2026-11-05
+updated: 2026-11-06
 ---
 
 # Tech Bridge
@@ -1594,5 +1595,14 @@ updated: 2026-11-05
 
 - 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5, 두 트랙 파라미터 동일 · `variant=gemini`). 00:00~00:22는 무캡션이다. `upload_date` 20261104 = 2026-11-04 18:00 KST. 제목의 *(자막·마무리 수정)* 이 가리키는 전 판본은 찾지 못했다.
 - ⚠️ 이름은 설명란뿐이고(`tags`에도 없음) 원본 링크가 없다. 요금 · 화면은 설명란이 제작 시점 설명이라고 밝힌다. `en`은 *auto*를 `a car`로 바꾸고 ko는 "자동차"로 옮긴다. 신규 페이지 없이 기존 페이지만 보강했다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-05 업로드 — Sandeep Swadia 개인 AI 에이전트 (2026-11-06 ingest)
+
+[[tech-bridge-sandeep-swadia-personal-ai-agent|[한글자막] 반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다 | 샌딥 스와디아]](`HOo_rDzXfRE`, 16:35, 공식 챕터 9) — [[sandeep-swadia]](설명란 · tags 근거) 1인 해설, 내레이션 없음 ([[personal-agent-four-forces]] · [[openai-dots]] · [[agent-attention-management]] · [[scheduled-agent-automations]] · [[goal-level-delegation]] · [[agent-persona-naming]] · [[persistent-agent-teams]] · [[confidential-vm]])
+
+- 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5, 두 트랙 파라미터 동일 · 이번엔 `variant` 없음). 00:01~00:27은 무캡션이다. `upload_date` 20261105 = 2026-11-06 07:00 KST.
+- ⚠️ 이름은 설명란 · `tags`뿐이고 원본 링크가 없다. 통계(HBR · Microsoft · Carnegie Mellon) · McKinsey 사례는 화자 전달이고 미확인이다. 효과 측정은 없고 시연 화면을 보지 않았다. `en`은 Claude Co-work를 `Claude's Cospace`로 바꾸고 ko는 CEO를 "감독"으로 옮긴다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

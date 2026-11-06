@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-05
+updated: 2026-11-06
 sources: []
 ---
 
@@ -287,6 +287,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-03*: [[tech-bridge]] **2편** ingest(11-02 업로드, 둘 다 영어 원본 오디오만). [[tech-bridge-better-stack-claude-code-agent-summary-cost|Claude Code 에이전트 요약에 비용 12%?]] — [[better-stack|Better Stack]](설명란 근거)이 Claude Code 백그라운드 에이전트의 상태 요약을 OpenTelemetry로 따로 떼어 쟀다. 요약은 30초마다 대화 전체를 Opus로 보내고, 트랜스크립트에 안 남아 집계 도구가 못 본다. 결과는 세션의 12%(최악에 가까운 조건) · 8%다. 사용자가 부르지 않은 호출이 한도를 쓰는 경우라 [[hidden-harness-calls]]로 이름 붙였다. [[prompt-caching]]에는 처음으로 *캐시 읽기도 구독 한도를 쓴다*는 사용자 쪽 시선이 붙고, 끄는 우회의 대가로 서브에이전트가 맥락을 물려받느냐([[fork-subagent]])가 드러난다(⚠️ 화자 1회 측정, Anthropic 2%/6%는 전달). [[tech-bridge-rob-shocks-grokbot-manager-coding-agents|Grok Bot은 매니저, Claude Code는 개발자]] — [[rob-shocks|Rob Shocks]](설명란 근거)가 [[grokbot|GrokBot]]을 코딩하지 않는 오케스트레이터로 둔다. 봇은 first mile과 last mile만 맡고 코드는 [[claude-code|Claude Code]] · [[cursor-cloud|Cursor Cloud]]에 넘긴다 → [[manager-bot-coding-agent-split]]. GrokBot 소스가 만드는 쪽 → 비엔지니어 사용자에 이어 **엔지니어 사용자**로 오고, 처음으로 사용자의 불편(자격 증명 저장, 보이지 않는 스킬, 봇끼리 공유하는 컴퓨터)이 나온다. Lauren Tan의 층은 "inverse pyramid" 4층으로 요약되는데 본인 발표(다섯 층 · 스타일 가이드)와 어긋나고, [[hard-vs-soft-enforcement]]의 "교정할 때마다 위로"는 봇에게 붙여 넣는 규칙 한 줄이 된다(⚠️ 회사 · Lauren 쪽은 전부 2차 전달).
 - *2026-11-04*: [[tech-bridge]] **2편** ingest(11-03 업로드, 둘 다 영어 원본 오디오만). [[tech-bridge-greptile-daksh-gupta-build-review-agent|AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]] — [[greptile|Greptile]] 공동창업자 [[daksh-gupta|Daksh Gupta]](설명란 근거)가 샌드박스 + 웹훅 + 프롬프트 뼈대에서 생기는 문제를 짚는다. 리뷰 잡음은 코딩 에이전트를 거쳐 방어적 코드로 남고, 치명적 버그는 드물어 프롬프트를 고쳐도 나빠졌는지 알 수 없다. 처방은 사고 PR 데이터셋과 쓴 모델과 다른 모델의 리뷰([[review-model-inversion]])이고, [[automated-code-review]]의 성공 지표가 *사람의 수락*에서 *사고 PR을 잡는가*로 옮겨 간다. 수치는 전부 벤더 진술이고 발화 안에서 단위가 흔들린다. [[tech-bridge-ai-labs-token-economizer|클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]] — [[ai-labs|AI Labs]](설명란 근거)가 [[microsoft|Microsoft]]의 [[token-economizer|Token Economizer]]를 설명한다. 지도를 만드는 [[graft|Graft]]와 달리 세션을 지켜보며 배우는 도구다. 안 쓴 도구를 사용 기록으로 끄는 방식을 [[usage-based-tool-pruning]]으로 이름 붙였고, 명령 출력이 세션마다 읽는 사실로 승격되는 위험은 [[prompt-injection]]에 더했다. 처음에는 오히려 비싸다는 약점을 발표자가 세션 기록 선학습 수정판으로 메우고 메시지당 약 29% · 3과제 비용 약 21% 감소를 보고한다(⚠️ 수치는 전달 또는 특정 프로젝트 측정, 저장소 미열람).
 - *2026-11-05*: [[tech-bridge]] **1편** ingest(11-04 업로드, 영어 원본 오디오만). [[tech-bridge-nick-saraev-shortest-claude-code-course|세상에서 가장 짧은 클로드 코드 강의]] — [[nick-saraev|Nick Saraev]](설명란 근거)가 [[claude-code|Claude Code]]를 데스크톱 앱 기준으로 4:48에 소개한다. 결과를 설명하고, auto 모드를 쓰고, 주제가 바뀌면 새 세션을 열고, 잘된 일은 스킬로 저장하라는 입문용 규칙이다. 새 개념은 없고 기존 페이지에 입문 수준의 증언을 더했다. 사례는 1인칭 일화이고 요금 · 화면은 제작 시점 설명이다.
+- *2026-11-06*: [[tech-bridge]] **1편** ingest(11-05 업로드, 영어 원본 오디오만). [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]] — [[sandeep-swadia|Sandeep Swadia]](설명란 근거)가 코딩이 아닌 일상 사용자의 눈으로 개인 에이전트를 말한다. AI 인턴 무리를 관리하는 대신 나를 아는 비서실장 하나를 두라는 주장이고, 쓸 자리를 조각 · 홍수 · 주기 · 미래 네 힘으로 나눈다 → [[personal-agent-four-forces]]. 화자가 스스로 문지기 위험(*필터가 무엇을 볼지 정한다*)을 꺼내고, 건강 · 금융 정보는 주지 않는다고 선을 긋는다. 효과 측정은 없고, 통계는 문제의 크기만 말하며 미확인이다.
 
 ---
 

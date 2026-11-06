@@ -6,9 +6,9 @@ tags: [ux, adoption, anthropomorphism, personal-agent, meta, muse]
 aliases: [에이전트 이름 짓기, 아바타, agent naming]
 related: [agent-org-adoption, proactive-idea-feed, agent-trust-curve, agent-manager-analogy, goal-level-delegation, cognitive-offloading, ai-anthropomorphism]
 first-seen: tech-bridge-zuckerberg-muse-in-daily-use
-sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-altman-devday-dots, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch]
+sources: [tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-altman-devday-dots, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-sandeep-swadia-personal-ai-agent]
 created: 2026-09-17
-updated: 2026-10-16
+updated: 2026-11-06
 ---
 
 # 에이전트 이름과 아바타
@@ -90,3 +90,7 @@ updated: 2026-10-16
 | 진행자 [[dan-shipper\|Dan Shipper]] | **Boo** | *"mine's name is Boo"* (10:51) |
 
 **Muse 편과 같은 세 가지가 겹친다** — ① 진행자가 먼저 이름을 묻는다 ② CEO가 아직 확정하지 못했다(Agrippa는 정했지만 Pip은 *"두고 봐야"*, Doie는 *"trying to think of a great name"*) ③ 기본값 이름이 퍼진다(*"many people are calling it Doy"*). ⚠️ Dots에 아바타가 있는지는 소스에 없다. ⚠️ ko는 이름을 살렸지만(*"도이"*, *"알프레드"*, *"부"*) 다른 자리에서 Dot 자체를 **"담당자"·"상사"·"팀원"** 으로 옮겨 사람처럼 만들었다.
+
+## 슈퍼히어로 Capes (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
+
+[[sandeep-swadia|Sandeep Swadia]](설명란 근거): *"Oh, wow. Thank you, Capes."*(12:20) *"That's her name, by the way."*(12:20~12:24) *"In my mind, she's a superhero who can juggle a hundred things at once."*(12:24~12:29) 위 Muse · Dots 편은 진행자가 먼저 이름을 물었는데, 여기서는 화자가 일화 중에 스스로 꺼낸다. ⚠️ 철자는 ASR 표기이고 어느 제품인지 말하지 않는다. `en`은 *her*를 `his`로 바꾼다.
