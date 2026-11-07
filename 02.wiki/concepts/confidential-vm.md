@@ -6,9 +6,9 @@ tags: [security, privacy, confidential-computing, agents, trust-boundary]
 aliases: [confidential VM, 운영자도 볼 수 없는 실행 환경]
 related: [sentinel-agent, least-privilege-connectors, credential-injection-outside-sandbox, lethal-trifecta, named-human-accountability, privacy-auto-mode]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-sandeep-swadia-personal-ai-agent]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years]
 created: 2026-09-14
-updated: 2026-11-06
+updated: 2026-11-07
 ---
 
 # 기밀 VM
@@ -60,6 +60,10 @@ updated: 2026-11-06
 - ⚠️ **위협 모델이 명시되지 않는다.** 무엇을 막고 무엇을 못 막는지 — 특히 **에이전트 자신이 데이터를 밖으로 내보내는 경우**(이건 [[sentinel-agent|센티널]]의 몫으로 넘겨진다).
 - ⚠️ **"아무도 안 하고 있다"** 는 주장에 비교 대상이 없다.
 - ⚠️ **근거가 인물에 걸려 있다** — *"밴드를 다시 모아 Moxie가 이걸 설계하게 한 것이 토대"*. 이 위키는 이것을 [[named-human-accountability|이름 붙은 책임]]으로 기록하되 **기술적 근거의 대체물로 받아들이지 않는다.**
+
+## 반대쪽 끝 — "even my therapy notes" (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+위 Swadia 절이 *주지 않는* 쪽이라면 [[garry-tan|Garry Tan]]은 다 주는 쪽이다: *"it's read all of my email and all of my Dropbox."*(03:19~03:21) *"even my therapy notes going back 20 years."*(03:26~03:28) 그는 실행 환경 · 보안 모델을 말하지 않는다. 이 스펙트럼의 어느 지점이 합리적인지는 두 소스 모두 답하지 않는다. → [[lethal-trifecta]]
 
 ## References
 

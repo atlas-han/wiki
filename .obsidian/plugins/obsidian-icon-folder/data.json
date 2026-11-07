@@ -1211,5 +1211,14 @@
   "01.raw/articles/2026-11-05_반칙 같은 생산성 나를 아는 AI 에이전트 하나면 됩니다 샌딥 스와디아.md": "LiNewspaper",
   "02.wiki/sources/tech-bridge-sandeep-swadia-personal-ai-agent.md": "LiVideo",
   "02.wiki/entities/sandeep-swadia.md": "LiUser",
-  "02.wiki/concepts/personal-agent-four-forces.md": "LiPuzzle"
+  "02.wiki/concepts/personal-agent-four-forces.md": "LiPuzzle",
+  "01.raw/articles/2026-11-06_바이브코딩을 멈추세요 AI 에이전트와 TDD로 코딩하는 EXACT.md": "LiNewspaper",
+  "01.raw/articles/2026-11-06_게리 탄 AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-emily-bache-exact-coding-tdd.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-garry-tan-agents-two-years.md": "LiVideo",
+  "02.wiki/entities/emily-bache.md": "LiUser",
+  "02.wiki/entities/garry-tan.md": "LiUser",
+  "02.wiki/entities/gstack.md": "LiWrench",
+  "02.wiki/concepts/exact-coding.md": "LiPuzzle",
+  "02.wiki/concepts/personal-ai-platform-war.md": "LiPuzzle"
 }

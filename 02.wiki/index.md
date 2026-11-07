@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-06
+updated: 2026-11-07
 ---
 
 # Index
@@ -172,6 +172,8 @@ updated: 2026-11-06
 - [[rob-shocks]] — AI 코딩 워크플로 영어 해설자(설명란 근거, 발화엔 이름 없음). GrokBot을 코딩하지 않는 매니저로 두고 Claude Code · Cursor Cloud agents에 위임하는 자기 구성, 메인 에이전트 Chief, RICE + blast radius 백로그 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 신원은 설명란뿐 · 화자 미상인 09-04 SDLC 편 · 09-13 Pstack 리뷰 편과 동일인일 가능성(미확정)
 - [[daksh-gupta]] — 코드 리뷰 제품 회사 Greptile 공동창업자(설명란 근거, 발화엔 이름 없음). 리뷰 에이전트를 직접 만드는 절차와 깨지는 지점을 설명 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ 이름 · 직함은 설명란뿐, 라틴 표기는 한글 "닥시 굽타"의 로마자 복원
 - [[sandeep-swadia]] — 테크 · AI 기업 CEO이자 이사회 멤버(설명란 근거, 발화엔 이름 없음). 나를 아는 개인 에이전트 하나를 비서실장처럼 쓰자고 권하는 해설. 에이전트 이름 Capes(ASR). 건강 · 금융 정보는 주지 않는다고 말한다 → [[personal-agent-four-forces]]
+- [[emily-bache]] — TDD · 에이전트 코딩 채널 진행자(설명란 · tags 근거, 발화엔 이름 없음). codecentric 제작자들을 인터뷰해 [[exact-coding|EXACT]] 소개 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 소속 · 경력 미상
+- [[garry-tan]] — Y Combinator 대표(설명란 · 내레이션 근거). 사내 에이전트 Straylight, 자기 데이터를 대부분 넘긴 개인 에이전트, 연 10만~20만 달러 토큰, 2~3년 보편화 전망 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 투자자 · [[gstack]] 제작자의 진술
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -364,6 +366,7 @@ updated: 2026-11-06
 ---
 - [[impeccable]] — 코딩 하네스(Claude Code·Copilot·Cursor·Codex)용 **디자인 스킬**. bolder·quieter·distill·polish·denser·harden·overdrive — **단어의 뜻을 스킬이 정의**(bolder=위계·스케일·타이포, 그라데이션 아님), *"믿으면 실패"* 자기 점검, 워크플로 주입 지점, **auto 없음·PR 닫음** · 내부 구조: 결정론적 린터 + 블라인드 LLM 평가 · [[scripts-that-talk-back|stdout으로 지시하는 스크립트]] · 쓰기 차단 훅 · 하네스별 빌드 ([[tech-bridge-impeccable-design-steering]] · [[tech-bridge-skill-engineering-dark-arts]], sources: 2) ⚠️ 당사자
 - [[token-economizer]] — 코딩 에이전트 세션을 지켜보고 낭비를 뒤 세션에서 줄이는 Microsoft 플러그인. 반복 실수(micro skills, 기본 꺼짐) · 미사용 도구 끄기 · 막힘 개입을 훅으로 돌린다 ([[tech-bridge-ai-labs-token-economizer]]) ⚠️ 동작 · 수치는 발표자 설명 · 전달, 저장소 미열람
+- [[gstack]] — [[garry-tan|Garry Tan]]의 오픈소스 Claude Code 작업 구성. YC 창업자 교육용이라고 말한다 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ *400배*는 측정 없는 제작자 진술, 저장소 미열람
 
 ## Concepts (LLM/AI)
 
@@ -522,6 +525,7 @@ updated: 2026-11-06
 - [[taste-vs-judgment]] — 생성이 무료가 되면 남는 것은 취향인가 판단인가. **네 입장**: [[dhh|DHH]](병목) · [[lena-hall|Hall]](학습 가능한 선호, 판단이 남음) · Thais(*"취향이라는 말은 쓰고 싶지도 않다"*, 분해 가능한 조각은 훈련) · Paul(**증폭되되 배양 안 됨** — 희소성이 정의) — 넷 다 추론 시점에 **사람의 결정**이 남는다고 봄 (sources: 5)
 - [[ai-engineering-skills-map]] — AI engineering 네 역량(Ng 팀 skills map): AI 앱 빌드·배포(불확실성 → error analysis·eval 루프) · SE 기본기(모르면 에이전트의 trade-off에 *"bites you later"*) · 코딩 에이전트 활용 · shaping the build. 기준은 사람의 *"fundamental context advantage"* ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 조사 방법 문서 없음 · 팀명 ASR 판독 추정
 - [[cost-vs-score-frontier]] — 벤치마크를 비용(x) × 점수(y)로 놓고 '왼쪽 위'를 고르는 읽기. 질문이 "누가 1등인가"에서 "최고점의 몇 %를 몇 분의 1 비용에"로 바뀐다. Terra는 Opus 5.5의 *"about 95 to 97%"*를 *"11% of the cost"*에 → *"leverage"* ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]]) ⚠️ 출처 미표기 그래프를 눈대중으로 읽은 값, 소스 1개
+- [[personal-ai-platform-war]] — 경쟁 단위가 앱에서 에이전트로 옮겨 가고 가치가 소수로 모일 수 있다는 구도. 다음 브라우저 전쟁 · 다섯 왕 · 개인 AI의 Linux · 인지 필터 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 한 사람의 전망, 측정 없음
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -739,6 +743,7 @@ updated: 2026-11-06
 - [[review-model-inversion]] — 같은 모델이 쓰고 리뷰하면 같은 방식으로 실패하므로, 작성 모델을 브랜치명 · co-authored-by 등 지문으로 알아내 다른 계열 모델에게 리뷰시킨다 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ "10% 높은 탐지율"은 벤더 진술, 단위 · 표본 · 모델 버전 없음
 - [[usage-based-tool-pruning]] — 지난 세션에서 안 쓴 도구를 규칙으로 골라 프로젝트 컨텍스트에서 뺀다(10메시지 · 최소 2세션). 지연 로딩과 달리 복구는 사람이 한다 ([[tech-bridge-ai-labs-token-economizer]]) ⚠️ 사례 하나, 메시지당 29%는 한 프로젝트 측정, 비용 아님
 - [[personal-agent-four-forces]] — 개인 AI 에이전트의 쓰임을 사람의 시간을 빼앗는 네 힘(조각 · 홍수 · 주기 · 미래)으로 나누고 챗봇과의 차이를 ACT(자율 · 지속 · 맞춤)로 설명하는 틀. 첫 위임 대상은 *습관도 큰 사건도 아닌 일*, 긴장은 문지기 문제와 맞춤 대 경계 ⚠️ 한 사람의 해설, 효과 측정 없음
+- [[exact-coding]] — 사람들이 예시 매핑으로 무엇을 만들지 정하고, 테스트 목록과 예측형 TDD로 에이전트를 이끄는 워크플로. 리팩터링 서브에이전트의 이득은 Opus 5.5에서 작다 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 제작자 자체 실험, 표의 값 미확인
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1003,12 +1008,14 @@ updated: 2026-11-06
 - [[tech-bridge-ai-labs-token-economizer]] — [[ai-labs|AI Labs]](설명란 근거, 발화 · 태그에 이름 없음, Graft 편 자기 언급으로 간접 정합) 해설 · 시연(10:54, 챕터 12, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-03 18:00 KST): 클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까? — [[token-economizer|Token Economizer]]의 세 절감(micro skills · 도구 끄기 · 막힘 개입), Microsoft 시험 전달(277개 버그 · Sonnet 5 −23.6% · Opus 4.8 −30.9%), 콜드 스타트와 세션 기록 수정판, 발표자 측정(메시지당 34,300 → 24,400 토큰 · 99 → 79 스텝 · 비용 약 21%) → [[usage-based-tool-pruning]] · [[prompt-injection]] · [[hidden-harness-calls]] ⚠️ 수치는 전달 또는 특정 프로젝트 측정 · 저장소 미열람 · 설명란 *"한 줄로 알린다"* 와 발화 *"without telling you"* 가 어긋남
 - [[tech-bridge-nick-saraev-shortest-claude-code-course]] — [[nick-saraev|Nick Saraev]](설명란 근거, 발화 · 태그에 이름 없음) 입문 해설(4:48, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-04 18:00 KST): 세상에서 가장 짧은 클로드 코드 강의 — 앱 설치, Manual · Plan · Auto, 모델 · effort, CLAUDE.md와 새 세션, 스킬, 커넥터, 서브에이전트, 예약 · 원격 제어, 아티팩트 ⚠️ 사례는 1인칭 일화, 요금 · 화면은 제작 시점 설명, 공식 문서 미열람
 - [[tech-bridge-sandeep-swadia-personal-ai-agent]] — [[sandeep-swadia|Sandeep Swadia]](설명란 · tags 근거, 발화에 이름 없음) 1인 해설(16:35, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-06 07:00 KST): 반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다 — AI 인턴 무리 대신 비서실장 하나, ACT, 네 힘(HBR 하루 1,200번 전환 · Microsoft 117 이메일 + 153 Teams 메시지), 면접 준비 · 하루 세 번 필터 + 5시 요약 · 계약서 조항 검토 · 진료 주기 · 일요일 우선순위 점검 프롬프트, 문지기 위험, 건강 · 금융 정보 제외 → [[personal-agent-four-forces]] · [[agent-attention-management]] · [[openai-dots]] ⚠️ 효과 측정 없음, 통계 전달 · 미확인, 시연 화면 미확인
+- [[tech-bridge-emily-bache-exact-coding-tdd]] — [[emily-bache|Emily Bache]](설명란 근거) × Marco Emrich · Ferdinand Ade 인터뷰 + 한국어 해설(17:04, 챕터 14, 영어 원본 오디오만, 2026-11-07 07:00 KST): 바이브코딩을 멈추세요 — [[exact-coding|EXACT]], 예시 매핑, 테스트 목록, 예측형 TDD, 리팩터링 서브에이전트 ⚠️ 표의 값은 화면에만, 자체 실험
+- [[tech-bridge-garry-tan-agents-two-years]] — [[garry-tan|Garry Tan]] 대담 발췌 + 한국어 내레이션(12:50, 챕터 12, 영어 원본 오디오만, 2026-11-06 18:00 KST): AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다 — Straylight, 토큰 비용, [[gstack]], 일자리, [[personal-ai-platform-war|다섯 왕과 개인 AI의 Linux]] ⚠️ 전망 · 자기 수치, 진행자 · 원본 미상
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 969 (966 → 969, + 2026-11-06 Tech Bridge 1편(11-05 업로드 — Sandeep Swadia 개인 AI 에이전트): source 1 · entity 1(sandeep-swadia) · concept 1(personal-agent-four-forces) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 969와 일치)
+- 총 페이지 수: 976 (969 → 976, + 2026-11-07 Tech Bridge 2편(11-06 업로드 — EXACT 코딩 · Garry Tan): source 2 · entity 3(emily-bache · garry-tan · gstack) · concept 2(exact-coding · personal-ai-platform-war) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 976과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-06 (Tech Bridge **1편** — 11-05 업로드 [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]](`HOo_rDzXfRE`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-05 (Tech Bridge **1편** — 11-04 업로드 [[tech-bridge-nick-saraev-shortest-claude-code-course|세상에서 가장 짧은 클로드 코드 강의]](`uOcO1QNmJOA`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-07 (Tech Bridge **2편** — 11-06 업로드 [[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: EXACT]](`hRhjL6BsxTU`) · [[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]](`UIMTEGqP3ys`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-06 (Tech Bridge **1편** — 11-05 업로드 [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]](`HOo_rDzXfRE`). `Yhck-x6VuLs` 멤버 전용 지속)

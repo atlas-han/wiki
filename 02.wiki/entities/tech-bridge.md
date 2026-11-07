@@ -166,8 +166,10 @@ sources:
   - tech-bridge-ai-labs-token-economizer
   - tech-bridge-nick-saraev-shortest-claude-code-course
   - tech-bridge-sandeep-swadia-personal-ai-agent
+  - tech-bridge-emily-bache-exact-coding-tdd
+  - tech-bridge-garry-tan-agents-two-years
 created: 2026-06-03
-updated: 2026-11-06
+updated: 2026-11-07
 ---
 
 # Tech Bridge
@@ -1604,5 +1606,16 @@ updated: 2026-11-06
 
 - 같은 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5, 두 트랙 파라미터 동일 · 이번엔 `variant` 없음). 00:01~00:27은 무캡션이다. `upload_date` 20261105 = 2026-11-06 07:00 KST.
 - ⚠️ 이름은 설명란 · `tags`뿐이고 원본 링크가 없다. 통계(HBR · Microsoft · Carnegie Mellon) · McKinsey 사례는 화자 전달이고 미확인이다. 효과 측정은 없고 시연 화면을 보지 않았다. `en`은 Claude Co-work를 `Claude's Cospace`로 바꾸고 ko는 CEO를 "감독"으로 옮긴다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-06 업로드 — EXACT 코딩 · Garry Tan (2026-11-07 ingest)
+
+[[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: AI 에이전트와 TDD로 코딩하는 EXACT]](`hRhjL6BsxTU`, 17:04, 공식 챕터 14) — [[emily-bache]](설명란 · tags 근거) 인터뷰 + 한국어 해설 ([[exact-coding]] · [[spec-driven-development]] · [[subagent-folding]] · [[context-rot]] · [[structure-sensitive-tests]] · [[shift-left-interventions]] · [[kent-beck]])
+
+[[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]](`UIMTEGqP3ys`, 12:50, 공식 챕터 12) — [[garry-tan]] 대담 발췌 + 한국어 내레이션 ([[gstack]] · [[personal-ai-platform-war]] · [[openclaw]] · [[ai-jobs-impact]] · [[personal-superintelligence]] · [[company-brain]] · [[confidential-vm]] · [[personal-agent-four-forces]] · [[agent-attention-management]] · [[pstack]])
+
+- 둘 다 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5)인데 **내레이션이 트랙에 다르게 담긴다.** EXACT 편은 en-orig에 없고 `en`에만 영역으로 보인다. Tan 편은 en-orig에 한국어 그대로 들어 있다(33줄). `upload_date` 20261106 = EXACT 11-07 07:00 KST · Tan 11-06 18:00 KST.
+- ⚠️ EXACT 편: 표의 값은 화면에만 있고 제작자 자체 실험이다. Tan 편: 2~3년 · 400배 · 토큰 비용은 화자 진술이고 발췌 편집본이다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

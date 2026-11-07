@@ -6,9 +6,9 @@ tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, vis
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
 related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years]
 created: 2026-10-09
-updated: 2026-11-06
+updated: 2026-11-07
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -70,6 +70,10 @@ updated: 2026-11-06
 - **주의 점프의 우선순위** — *"needed your attention"* 을 누가·어떻게 판정하는지(에이전트 자기보고? 규칙?) 발화되지 않는다.
 - **검증 공백** — 결과를 판정할 수 없는 신규 사용자에게 *"I don't really care about the way"* 를 권할 때 품질은 누가 지키는가.
 - 근거는 단일 당사자 데모. 측정 없음.
+
+## 피드를 받아 거르는 인지 필터 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+[[garry-tan|Garry Tan]]은 이 문제를 소셜 피드로 넓힌다: 네트워크는 *"your own cognitive filter."*(09:09)를 거치고, 목표는 *"put control of what goes in your brain back into your own hands"*(09:26~09:29)다. 위 절의 문지기 질문이 그대로 남는다. 나쁜 알고리즘을 내 에이전트로 바꿔도 걸러낸 것을 사람은 보지 못한다(위키의 읽기). → [[personal-ai-platform-war]]
 
 ## References
 

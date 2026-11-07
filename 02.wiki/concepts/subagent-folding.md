@@ -6,9 +6,9 @@ tags: [subagents, agent-skills, multi-agent, harness-pruning, progressive-disclo
 aliases: [fold subagents into skills, 서브에이전트를 스킬로 접기, 서브에이전트 줄이기]
 related: [harness-pruning, subagent-vs-thread-handoff, agent-skills, deferred-tool-context, skill-evals, orchestrator-searcher-split, agent-swarm, prompt-caching]
 first-seen: tech-bridge-anthropic-fold-subagents-into-skills
-sources: [tech-bridge-anthropic-fold-subagents-into-skills]
+sources: [tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-emily-bache-exact-coding-tdd]
 created: 2026-10-29
-updated: 2026-10-29
+updated: 2026-11-07
 ---
 
 # 서브에이전트 접기 (Subagent Folding)
@@ -64,6 +64,10 @@ updated: 2026-10-29
 
 - 출처는 **해설자 한 명의 정리**다. Anthropic 가이드 원문 · 고객 사례 · 수치(2배 빠름 · 90% · 54%)를 확인하지 않았다. 화자 스스로 *"There's no pass rates or sample sizes"* 라고 한다.
 - [[grokbot|GrokBot]]처럼 코딩 밖의 영역에서는 오히려 구조와 가드레일을 다시 넣는다는 반례가 같은 소스에 있다.
+
+## 모델이 바뀌면 답이 바뀐다 — 리팩터링 서브에이전트 (2026-11-07 · [[tech-bridge-emily-bache-exact-coding-tdd]])
+
+[[exact-coding|EXACT]] 실험의 현재 답(Opus 5.5 · Claude Code): *"better results with two agents. The main agent doing most of the TDD workflow and a separate sub agent for the refactoring step."*(11:37~11:44) 효과는 *"measurably better code quality although actually not by much."*(11:47~11:49) 이전 모델에서는 *"with OPU 4.6 the spread was much larger even."*(11:58~12:01) 그래서 *"Nowadays the additional value from the refactoring agent is not so strong but the additional value from having a dedicated TDD approach is still visible."*(12:06~12:14) 이 페이지의 *같은 과제로 비교한다*를 실제로 한 사례이고, **비교는 모델이 바뀔 때마다 다시 해야 한다**는 함의가 있다(위키의 읽기). ⚠️ 제작자 자체 실험, 값 미확인.
 
 ## References
 

@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-garry-tan-agents-two-years]
 created: 2026-09-10
-updated: 2026-10-18
+updated: 2026-11-07
 ---
 
 # OpenClaw
@@ -45,6 +45,10 @@ updated: 2026-10-18
 > **2026-09-14 갱신 — 여섯 번째 소스이고, 처음으로 *경쟁 제품의 CEO* 가 부른다.** 지금까지 다섯 소스는 실무자·창업자였다. 서술의 성격도 다르다 — 앞의 넷이 *쓴다/두렵다/대중화가 어렵다* 였다면, 이번엔 **시장 구조의 좌표**다(*"수백만은 될지 몰라도 수십억은 아닐 것"*). **여전히 어느 소스도 OpenClaw 자체를 설명하지 않는다.**
 
 → 사람이 확인해 줄 것: 제작자·라이선스·[[grokbot]]·[[claude-tag]]와의 관계.
+
+## 투자자의 칭찬 — 반복 가능성과 맞바꾼 것 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+[[garry-tan|Garry Tan]]이 *무엇이 에이전트인가*의 답으로 Peter Steinberger의 OpenClaw를 든다. Claude Code · Codex는 *"they're so worried about sort of repeatability and safety that they actually trade off"*(02:41~02:47) 일하는 경험의 좋은 부분을 내준다는 평이다. 위 사고 · 보안 절들이 걱정하는 바로 그 안전을 *비용*으로 놓은 발언이다(위키의 읽기). ⚠️ 편집으로 답이 03:01에서 끊겼다. 내레이션은 OpenClaw를 오픈소스 개인 에이전트로 설명한다(03:01~03:09). 자동 자막의 제작자 표기는 *Steinberger*다.
 
 ## References
 

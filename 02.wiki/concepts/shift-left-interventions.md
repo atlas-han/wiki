@@ -6,9 +6,9 @@ tags: [shift-left, context, agents-md, static-analysis, tests, evals, lazy-promp
 aliases: [시프트 레프트(에이전트), 게으른 프롬프터, lazy prompter, 개입의 스펙트럼]
 related: [shift-left-security, tools-and-context-over-harness, context-engineering, harness-engineering, llm-coding-guidelines, executable-standards, agent-skills, skill-self-improvement, feedforward-feedback-steering, human-plumbing]
 first-seen: tech-bridge-lopopolo-agent-harness
-sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-sdd-enterprise-lessons, tech-bridge-rails-harness-engineering, tech-bridge-emily-bache-exact-coding-tdd]
 created: 2026-09-23
-updated: 2026-10-09
+updated: 2026-11-07
 ---
 
 # 개입을 왼쪽으로
@@ -56,6 +56,10 @@ updated: 2026-10-09
 ## 같은 이동, 두 번째 지도 — feedforward/feedback 2×2 (2026-10-09 · [[tech-bridge-rails-harness-engineering]])
 
 [[joel-quenneville|Joël Quenneville]]은 같은 방향을 다른 축으로 그린다 — [[feedforward-feedback-steering|생성 전/후 × 결정론/LLM]]. 프롬프트·AGENTS.md(이 페이지의 오른쪽 끝)는 **feedforward·inferential** 한 칸이고, *"move judgment out of that feed forward inferial quadrant and into the other three"*(21:30~21:36). 이 페이지의 정적 검증기는 feedback·computational, eval·리뷰는 feedback·inferential, 그리고 이 페이지에 없던 **feedforward·computational**(Rails 제너레이터·템플릿 — *틀린 것을 처음부터 못 쓰게*)이 추가된다. 동기도 같다 — Lopopolo의 *"게으른 프롬프터"* ↔ Quenneville의 [[human-plumbing]] 탈출. 개입을 언제 넣을지도 같은 답이다: *"drive it with lived pain"*(28:14~28:18), *"how could this be the last time?"*(28:20~28:26).
+
+## 왼쪽으로 옮긴 것이 문서가 아니라 대화일 때 (2026-11-07 · [[tech-bridge-emily-bache-exact-coding-tdd]])
+
+[[exact-coding|EXACT]] 제작자는 같은 말을 쓴다: *"frontload or shift left some of the thinking"*(08:04~08:06) 다만 옮기는 대상이 에이전트용 지시가 아니라 **사람들 사이의 이해**다. 진행자 요약은 *"examples, sticky notes, conversations"*(08:24)다. 효과 근거로는 산문 대비 *"the correctness increases by 60 70% 80% even in some cases"*(05:43~05:50)를 든다. ⚠️ 제작자 자체 실험.
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [context-window, attention, long-context, degradation, context-engineering
 aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation]
 related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd]
 created: 2026-09-24
-updated: 2026-10-20
+updated: 2026-11-07
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -59,6 +59,10 @@ updated: 2026-10-20
 - **정량** — 어느 길이부터, 어떤 과제에서, 얼마나.
 - **① 희석의 메커니즘** — 화자는 제곱 비용으로 설명하고 멈춘다.
 - **작게 유지하라** vs **긴 이력이 필요하다**([[long-context-agents]]) — 과제별 경계선.
+
+## 단계별 새 컨텍스트라는 처방과 그 측정 (2026-11-07 · [[tech-bridge-emily-bache-exact-coding-tdd]])
+
+Ferdinand Ade(설명란 근거)는 *"loss in the middle paper"*(10:40)를 근거로 삼았다: *"the longer the context gets the more gets lost in the middle of the context."*(10:42~10:47) 그래서 TDD 단계마다 *"it would make sense to have each phase in a single sub agent with a fresh context"*(10:51~10:56)라고 생각했다. ⭐ 실험을 거쳐 남은 것은 리팩터링 전담 하나이고 이득은 *"not by much"*(11:49)다. 이 메커니즘에서 나온 처방이 최근 모델에서는 작게 측정된다는 증언이다(위키의 읽기). ⚠️ 값은 화면 표에 있어 확인하지 못했고, 논문 자체는 열지 않았다.
 
 ## References
 

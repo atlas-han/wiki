@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-garry-tan-agents-two-years]
 created: 2026-09-13
-updated: 2026-11-03
+updated: 2026-11-07
 ---
 
 # Pstack
@@ -101,6 +101,10 @@ updated: 2026-11-03
 > **훨씬 더 단단해진(hardened) 애플리케이션으로 이어졌습니다.** (…) **모든 프로젝트에 감자를 던질 필요는 없겠지만** (…) **작은 디자인 변경이나 프런트엔드 UI라면 아마 쓸 필요가 없습니다.**
 
 ⚠️ **단일 사례·단일 관찰자이고 토큰 값이 없다. "2배"를 위키의 일반 계수로 쓰지 않는다.** → [[agent-roi-measurement]]
+
+## 놀림의 원본 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+위 *이름* 절의 `GStack`은 [[gstack]] 페이지로 연결한다. 제작자 [[garry-tan|Garry Tan]]의 설명: *"just drop into Claude code and get exactly the stack that I used to get that."*(06:14~06:19) ⚠️ 두 도구의 기능을 비교한 소스는 아직 없다.
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [testing, coding-agents, verification, test-quality, mocking, ci]
 aliases: [동어반복 테스트, tautological tests, 거짓말하는 테스트, checks can lie, 실패할 수 없는 테스트, tests that cannot fail]
 related: [deep-modules, test-harness-vs-test-authoring, mergeability-gap, automated-code-review, verification-bottleneck, reward-hacking, hard-vs-soft-enforcement, verifiable-goals]
 first-seen: tech-bridge-pocock-pr-bottleneck
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-emily-bache-exact-coding-tdd]
 created: 2026-10-09
-updated: 2026-10-16
+updated: 2026-11-07
 ---
 
 # 구조 민감 테스트
@@ -48,6 +48,10 @@ updated: 2026-10-16
 - *"Opus 5 got addicted to these"* 는 일화 — 빈도·비교 측정 없음.
 - 구조 민감 테스트를 **자동으로 탐지**하는 방법(mutation testing 등)은 발표에 없다.
 - 한 소스.
+
+## 조건 비교 지표로 쓴 mutation score (2026-11-07 · [[tech-bridge-emily-bache-exact-coding-tdd]])
+
+위 *자동 탐지 방법은 발표에 없다*는 유보에 인접한 사례다. [[exact-coding|EXACT]] 실험은 품질 지표에 mutation score를 넣는다: *"mutation score is how good the tests are at finding bugs."*(09:28~09:30) 지시 없는 TDD보다 EXACT가 낫다고 말한다(*"much better unit tests"*(09:37~09:39)). ⚠️ 구조 민감 테스트를 개별로 찾아낸 것은 아니고 값도 확인하지 못했다.
 
 ## References
 

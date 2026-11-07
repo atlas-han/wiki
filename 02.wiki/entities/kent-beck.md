@@ -5,9 +5,9 @@ category: person
 tags: [extreme-programming, tdd, junit, agile, patterns, refactoring, augmented-development, coaching]
 aliases: [켄트 벡, Kent Beck]
 links: []
-sources: [tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-kent-beck-craft-augmented-development, tech-bridge-emily-bache-exact-coding-tdd]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-11-07
 ---
 
 # Kent Beck
@@ -34,6 +34,10 @@ updated: 2026-10-09
 - **자기 작업을 깎는다** — craft 책 세 권은 *"completely obsolete and should be thrown away"*(13:40~13:44), XP에서 *"If I said anything creative (…) it was definitely a mistake"*(30:00~30:07), Casals 일화는 *"The story's made up"*(23:56).
 - [[spec-driven-development]]에 반대 — *"That's exactly waterfall development"*(35:48~35:50). 다크 팩토리는 *"always goes off the rails. Always."*(31:14~31:17). 형식 기법(Lean)에도 두 한계를 든다 → [[ai-formal-verification]].
 - 멘토는 Ward Cunningham(*"Ward invented the wiki"*, 33:08~33:13).
+
+## Canon TDD의 테스트 목록이 에이전트 입력이 되다 (2026-11-07 · [[tech-bridge-emily-bache-exact-coding-tdd]])
+
+[[emily-bache|Emily Bache]]가 [[exact-coding|EXACT]]의 테스트 목록을 Beck의 Canon TDD에서 온 것으로 소개한다: *"you keep track of the whole problem that you need to solve in a natural language list of ideas for test cases."*(02:57~03:01) 전달이고 Beck의 발언은 아니다. Canon TDD 원문은 열지 않았다.
 
 ## References
 

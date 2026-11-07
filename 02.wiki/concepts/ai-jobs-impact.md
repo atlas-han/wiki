@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years]
 created: 2026-09-06
-updated: 2026-10-28
+updated: 2026-11-07
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -79,6 +79,10 @@ G20 발언은 3부작의 *"두 마음"* 과 **다른 축**이다. 고용 영향�
 - 다섯 모두 **측정치가 없다.** Altman의 "예상보다 적었다"조차 기준선이 없다.
 - 다섯 화자의 인센티브가 뚜렷이 다르다 — 재단 운영자, 교육 사업자, 모델 판매자, 인프라 판매자, **로봇 제조사**.
 - 시간 지평이 서로 다르다(Gates 2~4년 vs Huang AGI 이후) — 같은 질문에 답하는 것이 아닐 수 있다.
+
+## 또 하나의 입장 — 재교육과 바닥 · 천장 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+[[garry-tan|Garry Tan]]은 낙관을 희망으로 표시한다: *"That's certainly my hope, right? Uh in the short term, it may not."*(05:50~05:52) *"there will be people who lose their jobs"*(06:39~06:42) 그리고 *"there's a big retraining issue here"*(06:49~06:50) 처방은 분야 전문가가 *"pair up with a 22 year old"*(07:09~07:11)하거나 직접 배워 창업하는 것이고, *"an increase in the amount of agency."*(07:40)를 요구한다. 결론은 *"raising the floor and then on the flip side like the ceiling is sky high."*(08:04~08:06)다. 화자는 자금을 대는 쪽이다. ⚠️ 측정이 없고, 실직자 다수가 창업으로 옮겨 갈 수 있는지는 답하지 않는다.
 
 ## References
 

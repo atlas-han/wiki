@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-06
+updated: 2026-11-07
 sources: []
 ---
 
@@ -288,6 +288,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-04*: [[tech-bridge]] **2편** ingest(11-03 업로드, 둘 다 영어 원본 오디오만). [[tech-bridge-greptile-daksh-gupta-build-review-agent|AI 코드 리뷰 에이전트, 직접 만들 때 놓치기 쉬운 것들]] — [[greptile|Greptile]] 공동창업자 [[daksh-gupta|Daksh Gupta]](설명란 근거)가 샌드박스 + 웹훅 + 프롬프트 뼈대에서 생기는 문제를 짚는다. 리뷰 잡음은 코딩 에이전트를 거쳐 방어적 코드로 남고, 치명적 버그는 드물어 프롬프트를 고쳐도 나빠졌는지 알 수 없다. 처방은 사고 PR 데이터셋과 쓴 모델과 다른 모델의 리뷰([[review-model-inversion]])이고, [[automated-code-review]]의 성공 지표가 *사람의 수락*에서 *사고 PR을 잡는가*로 옮겨 간다. 수치는 전부 벤더 진술이고 발화 안에서 단위가 흔들린다. [[tech-bridge-ai-labs-token-economizer|클로드 코드 토큰을 아끼는 MS 도구, 실제로 얼마나 줄었을까?]] — [[ai-labs|AI Labs]](설명란 근거)가 [[microsoft|Microsoft]]의 [[token-economizer|Token Economizer]]를 설명한다. 지도를 만드는 [[graft|Graft]]와 달리 세션을 지켜보며 배우는 도구다. 안 쓴 도구를 사용 기록으로 끄는 방식을 [[usage-based-tool-pruning]]으로 이름 붙였고, 명령 출력이 세션마다 읽는 사실로 승격되는 위험은 [[prompt-injection]]에 더했다. 처음에는 오히려 비싸다는 약점을 발표자가 세션 기록 선학습 수정판으로 메우고 메시지당 약 29% · 3과제 비용 약 21% 감소를 보고한다(⚠️ 수치는 전달 또는 특정 프로젝트 측정, 저장소 미열람).
 - *2026-11-05*: [[tech-bridge]] **1편** ingest(11-04 업로드, 영어 원본 오디오만). [[tech-bridge-nick-saraev-shortest-claude-code-course|세상에서 가장 짧은 클로드 코드 강의]] — [[nick-saraev|Nick Saraev]](설명란 근거)가 [[claude-code|Claude Code]]를 데스크톱 앱 기준으로 4:48에 소개한다. 결과를 설명하고, auto 모드를 쓰고, 주제가 바뀌면 새 세션을 열고, 잘된 일은 스킬로 저장하라는 입문용 규칙이다. 새 개념은 없고 기존 페이지에 입문 수준의 증언을 더했다. 사례는 1인칭 일화이고 요금 · 화면은 제작 시점 설명이다.
 - *2026-11-06*: [[tech-bridge]] **1편** ingest(11-05 업로드, 영어 원본 오디오만). [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]] — [[sandeep-swadia|Sandeep Swadia]](설명란 근거)가 코딩이 아닌 일상 사용자의 눈으로 개인 에이전트를 말한다. AI 인턴 무리를 관리하는 대신 나를 아는 비서실장 하나를 두라는 주장이고, 쓸 자리를 조각 · 홍수 · 주기 · 미래 네 힘으로 나눈다 → [[personal-agent-four-forces]]. 화자가 스스로 문지기 위험(*필터가 무엇을 볼지 정한다*)을 꺼내고, 건강 · 금융 정보는 주지 않는다고 선을 긋는다. 효과 측정은 없고, 통계는 문제의 크기만 말하며 미확인이다.
+- *2026-11-07*: [[tech-bridge]] **2편** ingest(11-06 업로드, 둘 다 영어 원본 오디오만). [[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: EXACT]] — [[emily-bache|Emily Bache]](설명란 근거)가 [[exact-coding|EXACT]] 제작자들을 인터뷰한다. 사람들이 예시로 무엇을 만들지 정하고 에이전트가 예측형 TDD로 만든다. 자체 실험에서 품질은 오르고 토큰은 늘며, 리팩터링 서브에이전트의 이득은 모델이 좋아지며 줄었다. [[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]] — [[garry-tan|Garry Tan]]이 연 10만~20만 달러 토큰의 개인 에이전트와 [[gstack]]을 말하고, 경쟁이 [[personal-ai-platform-war|어느 에이전트를 쓰느냐]]로 옮겨 간다며 개인 AI의 Linux를 원한다. 표의 값 · 전망은 확인하지 못했다.
 
 ---
 

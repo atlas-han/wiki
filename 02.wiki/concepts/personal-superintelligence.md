@@ -6,9 +6,9 @@ tags: [meta, agents, empowerment, product-thesis, long-tail]
 aliases: [personal super intelligence, 개인용 초지능]
 related: [balance-of-power-safety, intelligence-abundance, agent-org-adoption, goal-level-delegation, discretion-capability, agi-definition]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-garry-tan-agents-two-years]
 created: 2026-09-14
-updated: 2026-09-17
+updated: 2026-11-07
 ---
 
 # 개인 초지능
@@ -67,6 +67,10 @@ updated: 2026-09-17
 - **1년 전**, 짧은 *personal super intelligence* 에세이 — *"Wall Street Journal에 실었다"*.
 - **최근**, **15페이지 선언문**.
 - ⚠️ **두 글의 제목·날짜가 소스에 정확히 나오지 않는다.** 위키는 추정하지 않는다.
+
+## 플랫폼에서 벗어나는 수단으로서의 개인 AI (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+[[garry-tan|Garry Tan]]은 이 페이지가 다룬 회사를 정면으로 든다: *"Going back to Meta, right? Like this is a huge company that controls the algorithm"*(08:41~08:45) 그의 답은 *"You don't download the Facebook app or the Instagram app."*(08:56~09:01)이다. 같은 낱말 *개인*이 여기서는 Meta의 제품이고 저기서는 Meta로부터의 탈출이다 → [[personal-ai-platform-war]]. ⚠️ 위 절의 유보(소셜 미디어 선례)에 진행자의 반론은 있지만 개인 AI 쪽의 수익 구조는 답하지 않는다.
 
 ## References
 

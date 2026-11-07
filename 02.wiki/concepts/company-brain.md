@@ -6,9 +6,9 @@ tags: [company-brain, wiki, shared-context, access-control, knowledge-base, codi
 aliases: [company brain, 사내 두뇌, 사내 AI 지식 베이스]
 related: [llm-wiki-pattern, agent-memory, agent-knowledge-sourcing, no-silent-write, named-human-accountability, credential-injection-outside-sandbox, multiplayer-agent-context, knowledge-work-agent-gap, sweeper-agent, codebase-gardening]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lauren-tan-2000-prs, tech-bridge-conductor-orchestras-not-factories, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-garry-tan-agents-two-years]
 created: 2026-09-10
-updated: 2026-10-17
+updated: 2026-11-07
 ---
 
 # 회사 두뇌
@@ -96,6 +96,10 @@ updated: 2026-10-17
 | 목적 | 조직의 기억 | 에이전트의 성능 |
 
 세 번째 행이 이 대조의 핵심이다. 이 페이지가 개인 위키에서 조직 위키로 갈 때 더해지는 것으로 꼽은 두 가지(*누가 볼 수 있는가* · *누가 책임지는가*)가 **Vercel 편에는 둘 다 없다** — 시맨틱 레이어 전체를 샌드박스에 붓고 [[no-silent-write]]에 해당하는 게이트도 두지 않는다.
+
+## YC의 Straylight (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+[[garry-tan|Garry Tan]]: *"We now have an internal AI agent, for instance, named Straylight"*(00:56~00:59) 범위는 *"every founder we've ever backed, anyone who's ever emailed us, like all the applications."*(01:10~01:14)이다. 투자사가 외부인의 지원서 · 메일까지 회사 두뇌에 넣는 사례다. ⚠️ 접근 통제 · 동의 · 보존 정책은 말하지 않아, 이 페이지의 접근 제어 절과 비교할 수 없다.
 
 ## References
 

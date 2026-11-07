@@ -2535,3 +2535,25 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 1편 · 16:35라 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다. ⭐ 이번엔 두 트랙의 json3 파라미터에 `variant`가 아예 없는데도 `en`이 en-orig와 달랐다 — 11-03 Better Stack 편과 같은 패턴이다. ASR이 *"34 times"* 인 곳을 `en`은 `30 to 40 times`로 적는다. `en`이 옳을 수도 있어 어느 쪽으로도 정하지 않았다. `en`은 계속 인용 근거로 쓰지 않는다.
+
+## [2026-11-07] ingest | Tech Bridge — 11-06 업로드 2편 (바이브코딩을 멈추세요: EXACT — Emily Bache · 게리 탄, AI 에이전트는 2년 안에 — Garry Tan)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-06 업로드 **2편** ingest. 둘 다 `English (US) original` + 더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig`(md5)라 인용은 en-orig로만 했다. 429 없음.
+
+**신규 source 2 · entity 3 · concept 2**, 기존 페이지 보강 14개(+ tech-bridge), index **969 → 976**(실측 일치).
+
+- `hRhjL6BsxTU`(17:04, 챕터 14) → [[tech-bridge-emily-bache-exact-coding-tdd]]: [[emily-bache]](설명란 · tags 근거) 인터뷰 + 한국어 해설.
+  - 신규: [[emily-bache]] · [[exact-coding]](예시 매핑 · 테스트 목록 · 예측형 TDD)
+  - 보강: [[spec-driven-development]] · [[kent-beck]] · [[context-rot]] · [[subagent-folding]] · [[structure-sensitive-tests]] · [[shift-left-interventions]]
+  - ⚠️ 품질 · 비용 값은 화면 표에 있고 보지 않았다. 제작자 자체 실험이다. 무캡션 11곳. `en`에만 있는 카타 수치(`Claim Office` · `Sphinx`) · 오픈소스 · 집필 소식은 인용하지 않았다.
+  - 페이지화하지 않음: Marco Emrich · Ferdinand Ade(화자 구분이 안 되어 [[exact-coding]]에 기록) · codecentric · Terhorst-North · Wynne · Ted M. Young · BMAD(이미 다른 소스에 언급) · cyber-dojo.
+- `UIMTEGqP3ys`(12:50, 챕터 12) → [[tech-bridge-garry-tan-agents-two-years]]: [[garry-tan]] 대담 발췌 + 한국어 내레이션.
+  - 신규: [[garry-tan]] · [[gstack]] · [[personal-ai-platform-war]](브라우저 전쟁 · 다섯 왕 · 개인 AI의 Linux)
+  - 보강: [[openclaw]] · [[ai-jobs-impact]] · [[personal-superintelligence]] · [[company-brain]] · [[confidential-vm]] · [[personal-agent-four-forces]] · [[agent-attention-management]] · [[pstack]]
+  - ⚠️ 2~3년 · 400배 · 토큰 비용은 화자 진술이다. 진행자 · 원본 · 녹화일 미상. *medical dealer* vs `en` `medical biller` 미확정. 06:19~06:33 무캡션.
+  - 페이지화하지 않음: Peter Steinberger · Y Combinator · Straylight(화자 페이지에 기록).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일 7개 + raw 2개).
+
+### 운영 메모
+
+2편(17:04 · 12:50)이지만 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다. ⭐ **한국어 내레이션의 위치가 트랙마다 달랐다.** Tan 편은 en-orig에 한국어 문장이 그대로 들어 있어 내레이션과 화자를 구분해야 한다. EXACT 편은 en-orig가 비어 있고 `en`에만 영역으로 보인다. 그래서 *en-orig 간격 = 내용 불명*으로만 두지 말고 `en`을 **위치 확인**용으로 볼 것(인용은 계속 금지).

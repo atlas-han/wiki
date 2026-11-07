@@ -5,9 +5,9 @@ category: pattern
 tags: [spec, planning, agent, github, workflow]
 related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory, shaping-the-build]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-emily-bache-exact-coding-tdd]
 created: 2026-08-29
-updated: 2026-11-01
+updated: 2026-11-07
 ---
 
 # Spec-Driven Development
@@ -148,6 +148,10 @@ spec은 **두 장**이다 — *"Product spec describes the product invariants th
 ## 입문 해설의 정의 — 프롬프트와 "논쟁"하지 않기 위해 (2026-10-17 · [[tech-bridge-five-concepts-coding-with-ai-agents]])
 
 [[cedric-clyburn|Cedric Clyburn]]([[ibm|IBM Technology]]): *"instead of doing all of this via prompts, which can be interpreted differently by different types of coding models and having to argue with the AI in order to get the right output, what we typically now see is an approach that's known as spec-driven development"*(01:49~02:11). SDD의 이유로 **모델 간 해석 차이**와 **반복 수정 비용**을 든다. 도구·단계(plan/tasks)·헌법은 다루지 않는다. ⚠️ ko는 이 문장을 뒤집는다(*instead of … via prompts* → "이 모든 것은 명령어를 통해 이루어질 수 있습니다" 01:51~01:54).
+
+## 긴 문서라는 UX 문제 — "more and more lines of markdown" (2026-11-07 · [[tech-bridge-emily-bache-exact-coding-tdd]])
+
+[[exact-coding|EXACT]] 제작자의 비판(BMAD 언급): 프레임워크 단계가 이어지면 *"it becomes more and more lines of markdown."*(07:42~07:44) 사람이 얻는 경험은 *"You kind of have the same looks good to me feeling you have you always had with a really big um porest."*(07:52~07:58)이다. [[kent-beck|Beck]]의 폭포수 비판과 달리 **검토의 경험**을 문제 삼는다. 처방은 명세 폐기가 아니라 *"frontload or shift left some of the thinking"*(08:04~08:06)이고 수단은 예시 매핑이다. ⚠️ 비판은 제작자 의견이고 SDD 도구와 직접 비교한 실험은 영상에 없다.
 
 ## References
 

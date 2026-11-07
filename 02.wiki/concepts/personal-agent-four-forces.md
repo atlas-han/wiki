@@ -6,9 +6,9 @@ tags: [personal-agent, productivity, chief-of-staff, attention, recurring-tasks,
 aliases: [four forces, 네 가지 힘, ACT, autonomous continuous tailored, fragments flood frequency future, no habit no headline, AI 인턴과 비서실장]
 related: [agent-attention-management, scheduled-agent-automations, goal-level-delegation, persistent-agent-teams, always-on-agent-architecture, agent-memory, agent-persona-naming, confidential-vm, lethal-trifecta, least-privilege-connectors, human-plumbing, openai-dots, proactive-idea-feed]
 first-seen: tech-bridge-sandeep-swadia-personal-ai-agent
-sources: [tech-bridge-sandeep-swadia-personal-ai-agent]
+sources: [tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years]
 created: 2026-11-06
-updated: 2026-11-06
+updated: 2026-11-07
 ---
 
 # 개인 에이전트의 네 힘 (Personal Agent Four Forces)
@@ -53,6 +53,10 @@ updated: 2026-11-06
 - **한 사람의 해설에서 나온 틀이다.** 네 힘에 대한 측정이나 비교가 없다. 효과 주장은 화자의 경험담이고, 인용 통계는 문제의 크기만 말하며 원 자료를 확인하지 않았다.
 - 보안은 거의 다루지 않는다. 연결 권한과 프롬프트 인젝션은 [[least-privilege-connectors]] · [[lethal-trifecta]]를 함께 봐야 한다.
 - 제품별 차이를 말하지 않고 *"The approach is the same."*(02:59~03:02)이라 한다. 위키는 이 동등성을 확인하지 않았다.
+
+## 같은 그림의 다른 값: 연 10만~20만 달러 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
+
+[[garry-tan|Garry Tan]]도 나를 아는 하나의 에이전트를 그린다: *"think of it as a Jiminy Cricket on your shoulder at all times."*(04:13~04:15) 이 틀과 달리 비용을 밝힌다: *"I spend about maybe a hundred to two hundred thousand dollars a year on tokens."*(04:37~04:41) 보편화 시점은 *"it seems inevitable in about two to three years, I would say, everyone's going to do it"*(04:04~04:09)라고 말한다. ⚠️ 내역이 없어 어디까지가 개인 에이전트 비용인지 알 수 없고 일반 사용자의 비용과 비교할 수 없다.
 
 ## References
 
