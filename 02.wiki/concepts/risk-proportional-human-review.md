@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-09-18
-updated: 2026-11-03
+updated: 2026-11-08
 ---
 
 # 위험 비례 사람 검토
@@ -48,6 +48,10 @@ updated: 2026-11-03
 ## 구체 예 — ERP 모듈의 criticality (2026-10-02 · [[tech-bridge-sdd-enterprise-lessons]])
 
 위 IBM 편이 예시 없이 말한 "가장 위험한 결정"에 [[simon-martinelli|Simon Martinelli]]가 예를 붙인다. ERP의 모듈은 *"don't have all the same, how should I say, criticality"*(07:24~07:31) — 재고 관리가 멈추면 *"they can just go and grab a coffee"*(07:39~07:41), 주문 관리가 멈추면 *"the company probably will lose money"*(07:47~07:50). *"So you should do risk management and then decide how much review um your code probably needs. But that's not different from AI or manual driven development."*(07:52~07:59) 리뷰 방식은 PR 없이 **trunk-based + 두 개발자의 peer review**(24:38~25:04). ⚠️ 모듈별 리뷰 강도를 어떻게 정하는지의 기준표는 없다. ko는 *criticality* 를 **"비판적 사고"** 로 옮겼다.
+
+## Anthropic — 0명 · 1명 · 2명, 분류기는 "무엇을 바꿨나"를 본다 (2026-11-08 · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+해설 전달: 문서 수정처럼 위험이 낮으면 사람 승인 0명, 보통 기능 변경 1명, 가장 위험한 코드 2명. *"등급은 누가 썼느냐가 아니라 무엇을 바꿨느냐를 보고 분류기가 정합니다."*(03:32~03:37) 그리고 *"AI의 승인은 절대 사람의 승인으로 쳐주지 않아요."*(03:39~03:41) 목표는 *대부분의 PR은 사람 최대 한 명, 그것도 작성자 본인이면 충분하게*. 해설의 적용 처방도 *위험 등급은 작성자가 아니라 변경 내용으로*.
 
 ## References
 

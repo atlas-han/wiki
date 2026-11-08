@@ -6,9 +6,9 @@ tags: [generative-ui, dynamic-interface, enterprise, code-generation, ux]
 aliases: [동적 인터페이스, dynamic interface, generative UI, 생성형 UI]
 related: [agentic-sites, adaptive-response-format, persistent-agent-teams, lethal-trifecta, prompt-injection]
 first-seen: tech-bridge-altman-benioff-dreamforce
-sources: [tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-altman-benioff-dreamforce, tech-bridge-nick-saraev-karpathy-ai-habits]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-11-08
 ---
 
 # 모델이 그리는 인터페이스
@@ -55,6 +55,10 @@ updated: 2026-09-23
 - **매번 새로 쓰면 재현성이 없다.** 같은 질문에 다른 화면이 나오는 것을 결정 도구로 쓸 때의 문제 — 소스는 다루지 않는다.
 - **비용·지연** 없음.
 - *"10배 더 빠르고 효율적"*(28:58~29:02) — Benioff의 체감, 측정 없음.
+
+## 읽는 대신 그림을 요청한다 — Karpathy 습관 (2026-11-08 · [[tech-bridge-nick-saraev-karpathy-ai-habits]])
+
+Saraev 전달: Karpathy는 이해가 안 되면 다이어그램 · HTML 페이지 · 맞춤 설명 영상을 요청한다. 논리는 *"why read a thousand words if Opus 5.5 or an equivalent model can make the picture in less time"*(02:12~02:17). 같은 소스는 한 걸음 더 나가 **앱 자체를 공유하지 않고 데이터 + 프롬프트만 준다**고 전한다 → [[share-data-and-prompt-not-app]]. ⚠️ 2차 전달.
 
 ## References
 

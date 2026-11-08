@@ -1220,5 +1220,16 @@
   "02.wiki/entities/garry-tan.md": "LiUser",
   "02.wiki/entities/gstack.md": "LiWrench",
   "02.wiki/concepts/exact-coding.md": "LiPuzzle",
-  "02.wiki/concepts/personal-ai-platform-war.md": "LiPuzzle"
+  "02.wiki/concepts/personal-ai-platform-war.md": "LiPuzzle",
+  "01.raw/articles/2026-11-07_AI끼리 밤새 50번 싸웠다 Anthropic은 AI가 쓴 코드를 어떻게 리뷰할까.md": "LiNewspaper",
+  "01.raw/articles/2026-11-07_세계 최고 AI 엔지니어 카파시가 실제로 AI를 쓰는 법.md": "LiNewspaper",
+  "01.raw/articles/2026-11-08_사람이 못 찾은 버그 AI가 24시간 만에 세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-anthropic-code-review-seven-layers.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-nick-saraev-karpathy-ai-habits.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-salesforce-claude-code-agentic-shift.md": "LiVideo",
+  "02.wiki/entities/john-kim.md": "LiUser",
+  "02.wiki/entities/hackertube.md": "LiWrench",
+  "02.wiki/concepts/agentic-coding-maturity-curve.md": "LiPuzzle",
+  "02.wiki/concepts/effective-output-metric.md": "LiPuzzle",
+  "02.wiki/concepts/share-data-and-prompt-not-app.md": "LiPuzzle"
 }

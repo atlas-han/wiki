@@ -4,12 +4,12 @@ type: entity
 category: person
 tags: [researcher, educator, llm, transformer, computer-vision]
 aliases: [카파시, Karpathy, 안드레 카파시]
-sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun]
+sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits]
 links:
   - https://karpathy.ai
   - https://github.com/karpathy
 created: 2026-05-25
-updated: 2026-09-28
+updated: 2026-11-08
 ---
 
 # Andrej Karpathy
@@ -70,3 +70,14 @@ AI 연구자·교육자. 본 위키에 두 갈래로 등장한다 — **위키 �
 ## GPT-2 재현 영상이 스피드런의 기원으로 (2026-09-28 · [[tech-bridge-agents-vs-humans-optimizer-speedrun]])
 
 [[prime-intellect|Prime Intellect]] 발표가 자동화된 AI 연구 벤치마크의 출발점으로 든다 — *"it all started with Andrej Karpathy that's basically at fun by doing this video where he trained GPT-2 from scratch in like 90 minutes"*(01:40~01:50). 이것이 modded-nanoGPT 스피드런으로 이어졌다([[nanogpt]]). ⚠️ 영상 제목·게시 시점은 소스에 없고, en-orig는 이후 *19분* 으로도 들린다.
+
+## 2026-11-08 — 일상 사용 습관의 2차 정리 ([[tech-bridge-nick-saraev-karpathy-ai-habits]])
+
+[[nick-saraev|Nick Saraev]]가 Karpathy의 공개 글 · 댓글에서 *"지난 2주"* 동안 본 것을 정리했다. **본인 발화 없음, 위키는 원 글 미열람.**
+
+- 설정: [[claude-code|Claude Code]] Mac 데스크톱 앱 + [[claude-opus-5-5|Opus 5.5]] medium effort 기본, max는 안 씀. 코드를 읽지도 쓰지도 않고 터미널 명령도 직접 돌리지 않는다.
+- 설명은 ASD-STE100(항공 정비 매뉴얼식 영어)으로 받는다. 프롬프트는 점점 *"really short and really dumb"*(01:20~01:22) — 요구를 더하면 서로 반대되는 요청이 섞여 결과가 나빠질 수 있다고.
+- 이해가 안 되면 다이어그램 · HTML · 설명 영상을 요청한다 → [[model-rendered-interface]].
+- 공개 벤치마크를 믿지 않는다 — HN 댓글에서 Epoch ECI를 가리켰다고. *Land or water?* 좌표 질문으로 세계 지도를 그리는 실험.
+- [[hackertube|HackerTube]]를 만들었다. 앱 대신 데이터와 프롬프트를 공유한다 → [[share-data-and-prompt-not-app]].
+- ⚠️ **화자 진술 *"now he works at Anthropic"*(00:36)은 미확인**이다. 이 페이지의 사실로 올리지 않는다.

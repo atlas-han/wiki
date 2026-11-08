@@ -6,9 +6,9 @@ tags: [evals, production-traces, regression-tasks, hill-climbing, observability,
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
 related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop, open-model-customization-loop]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-greptile-daksh-gupta-build-review-agent]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift]
 created: 2026-09-30
-updated: 2026-11-04
+updated: 2026-11-08
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -50,6 +50,10 @@ updated: 2026-11-04
 - **효과 수치 없음.** 플라이휠이 점수를 얼마나 올렸는지, 데모의 후보가 prod를 이겼는지(13:45~13:48) 화면에만 있다.
 - **프라이버시.** 프로덕션 화면은 *"a sanitized view of internal customer traces or internal traces"*(03:27~03:31)라고만 한다. 고객 트레이스를 eval 태스크로 옮길 때의 비식별화 절차는 없다.
 - **당사자 진술** — Weave를 파는 회사의 발표다.
+
+## 라벨링된 티켓 · PR → 모델 교체 벤치마크, 그리고 실패 세트 (2026-11-08 · [[tech-bridge-salesforce-claude-code-agentic-shift]])
+
+해설 전달(Salesforce): *"모든 티켓과 PR이 일관되게 라벨링돼 있어서 이걸로 벤치마크를 만들 수 있었죠."*(04:31~04:36) 새 모델이 나오면 다시 돌려 더 나은지, 비용은 얼마인지 본다. ⭐ 특히 **실패 세트** — *"지금까지 모델들이 계속 실패해 온 작업만 모아둔 거죠. 새 모델이 이걸 통과하기 시작하면 그게 바로 모델을 바꿀 이유가 됩니다."*(04:44~04:51) 운영 데이터를 에이전트 개선이 아니라 **모델 교체 결정**에 쓰는 쪽이다. 같은 날 Anthropic 해설의 *사고 PR 시험지*(리뷰어 채점)와 같은 재료(과거 실패)를 쓴다 → [[review-loop-termination]].
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [developer-productivity, perception-gap, self-report, measurement, change-
 aliases: [체감 vs 실제 생산성, perception gap, 체감 생산성, perceived productivity, change confidence, 변경 확신]
 related: [ai-measurement-framework, dora-metrics, agent-roi-measurement, frontier-engineering, verification-bottleneck, trusted-throughput, agent-trust-curve]
 first-seen: tech-bridge-dx-ai-impact-trends
-sources: [tech-bridge-dx-ai-impact-trends]
+sources: [tech-bridge-dx-ai-impact-trends, tech-bridge-salesforce-claude-code-agentic-shift]
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-11-08
 ---
 
 # 체감 생산성과 실제 생산성의 괴리
@@ -63,6 +63,10 @@ updated: 2026-10-03
 - DX 설문의 문항·척도 — "4%"·"6%"·"10%"가 응답 점수의 변화인지 동의 비율의 변화인지 미발화.
 - METR 후속 발표의 내용 — 화자 전언뿐.
 - 변경 확신 하락이 **실제 CFR 상승과 상관**하는지 — 두 데이터를 연결한 분석은 발화되지 않는다.
+
+## 줄 수 대신 유효 산출량 (2026-11-08 · [[tech-bridge-salesforce-claude-code-agentic-shift]])
+
+Salesforce 해설은 측정 쪽 처방 하나를 전한다: 줄 수는 주석만 달아도 오르므로, Stanford 연구진과 만든 [[effective-output-metric|유효 산출량]] 점수를 커밋마다 ML 모델이 매긴다. 점수가 두 배가 됐고 이제 점수당 비용을 본다. ⚠️ 채점자도 모델이고, 체감과의 비교는 해설에 없다.
 
 ## References
 

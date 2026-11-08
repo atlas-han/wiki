@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-05
+updated: 2026-11-08
 ---
 
 # Claude Code
@@ -91,6 +91,12 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 ## 2026-10-02 — 엔터프라이즈 SDD 데모의 실행기, 거의 빈 CLAUDE.md ([[tech-bridge-sdd-enterprise-lessons]])
 
 [[simon-martinelli|Simon Martinelli]]가 Spring PetClinic 역설계 스펙에 *implement* 한 마디로 의사 목록 화면을 만든다(약 1분 30초, ⚠️ 화자 진술 22:09~22:12). 도구명은 en-orig ASR *"flow code"*(15:47) — 설명란 해시태그 *#ClaudeCode* 로 판독. *"I don't run it here inside the ID[=IDE]. That's just for for demo purposes"*(15:52~15:56). CLAUDE.md는 *"has not much inside"*, 아키텍처·패키지 구조·도구 가이드라인을 **참조**만 하고 *"most of the things are in the skills"*(16:06~16:34). 근거로 ETH Zurich 연구를 들며 *"it's maybe even better to have none of those files than a big one"*(23:20~23:23) — ⚠️ 연구명·수치 미발화. 스킬 공유의 문제로 *"not everybody in the organization is maybe using the same agent"*(15:42~15:47). → [[ai-unified-process]] · ⚠️ ko는 CLAUDE.md를 **"DMD 흐름"**(16:07)으로 옮겼다.
+
+## 2026-11-08 — 고객사 확산 · 팀의 리뷰 · 한 사용자의 습관 (세 소스)
+
+- [[tech-bridge-salesforce-claude-code-agentic-shift]]: [[salesforce|Salesforce]] 엔지니어 1만 5천 명 확산(해설 전달, 당사자 자료). [[agentic-coding-maturity-curve]] · [[effective-output-metric]].
+- [[tech-bridge-anthropic-code-review-seven-layers]]: Claude Code 팀의 7겹 리뷰 · 세 라운드 규칙 · CLAUDE.md / REVIEW.md 처방(해설 전달). 11-02 AI Labs 편과 같은 블로그 글이다.
+- [[tech-bridge-nick-saraev-karpathy-ai-habits]]: [[andrej-karpathy|Karpathy]]가 **Mac 데스크톱 앱 + Opus 5.5 medium effort**를 기본으로 쓰고 코드를 읽지 · 쓰지 · 터미널을 돌리지 않는다는 Saraev의 전달. 데이터 작업은 *"Claude code workflows"* 로 Sonnet에 보낸다(04:04~04:08).
 
 ## References
 

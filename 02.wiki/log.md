@@ -2557,3 +2557,29 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 2편(17:04 · 12:50)이지만 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다. ⭐ **한국어 내레이션의 위치가 트랙마다 달랐다.** Tan 편은 en-orig에 한국어 문장이 그대로 들어 있어 내레이션과 화자를 구분해야 한다. EXACT 편은 en-orig가 비어 있고 `en`에만 영역으로 보인다. 그래서 *en-orig 간격 = 내용 불명*으로만 두지 말고 `en`을 **위치 확인**용으로 볼 것(인용은 계속 금지).
+
+## [2026-11-08] ingest | Tech Bridge — 11-07 ~ 11-08 업로드 3편 (AI끼리 밤새 50번 싸웠다 — Anthropic 코드 리뷰 · 카파시가 실제로 AI를 쓰는 법 — Nick Saraev · 세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 11-07 업로드 2편 · 11-08 업로드 1편 ingest. 자막 429 없음.
+
+**신규 source 3 · entity 2 · concept 3**, 기존 페이지 보강 20개(+ tech-bridge), index **976 → 984**(실측 일치).
+
+- `Fxy8Jr77nKc`(7:13, 챕터 7) → [[tech-bridge-anthropic-code-review-seven-layers]]: 한국어 해설 + [[john-kim]] 발췌. Korean original, `ko` = `ko-orig`(원 ASR), en-orig = 영어 더빙.
+  - 신규: [[john-kim]]
+  - 보강: [[review-loop-termination]] · [[layered-verification-every-loop]] · [[risk-proportional-human-review]] · [[named-human-accountability]] · [[agent-attention-management]] · [[automated-code-review]] · [[boris-cherny]] · [[anthropic]] · [[agent-change-evidence]] · [[claude-code]]
+  - ⚠️ Anthropic 블로그의 2차 전달(미열람). John Kim 발췌 ①은 무캡션, ②는 ko-orig의 영어 ASR뿐(en-orig 360.6→375.4초 공백). 기간 *딸 만에*(더빙 석 달 vs 11-02 AI Labs 넉 달) 미확정. *유랜드 유오운* → *you land it, you own it* 추정.
+- `lcp0_GnT54o`(5:33, 챕터 11) → [[tech-bridge-nick-saraev-karpathy-ai-habits]]: [[nick-saraev]](설명란 · tags 근거) 해설, 내레이션 없음, 영어 원본 오디오만.
+  - 신규: [[hackertube]] · [[share-data-and-prompt-not-app]]
+  - 보강: [[andrej-karpathy]] · [[nick-saraev]] · [[model-rendered-interface]] · [[disposable-vs-durable-software]] · [[claude-opus-5-5]] · [[model-mixing-economics]] · [[claude-code]]
+  - ⚠️ Karpathy 원 글 미열람. *"now he works at Anthropic"* 은 화자 진술로만 기록(entity에 사실로 올리지 않음). *"Nick Szabo thumbnails"* 판독 보류. 00:00~00:24 무캡션.
+  - 페이지화하지 않음: Epoch ECI · ASD-STE100 · Hacker News · Sonnet(버전 미발화).
+- `iTIDadQ6Ues`(6:44, 챕터 9) → [[tech-bridge-salesforce-claude-code-agentic-shift]]: 한국어 해설 + 화자 미상 영어 발췌 2곳. Korean original.
+  - 신규: [[agentic-coding-maturity-curve]] · [[effective-output-metric]]
+  - 보강: [[salesforce]] · [[agent-change-evidence]] · [[skill-evals]] · [[model-mixing-economics]] · [[production-trace-eval-flywheel]] · [[perceived-vs-actual-productivity]] · [[claude-code]]
+  - ⚠️ Salesforce 글 · Claude 고객 사례 영상의 2차 전달(미열람, 당사자). 01:38 제품명 원음 *클로드 포스* vs 더빙 *Agentforce* 미확정. 성숙도 곡선 그림 미확인.
+  - 페이지화하지 않음: 리처드(성 · 직함 미발화) · Stanford 연구진 · Dreamforce(기존 [[salesforce]]에 기록).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일 11개만).
+
+### 운영 메모
+
+3편이지만 모두 짧아(4~7분) 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다(부모 `run-ingest.sh` 확인). ⭐ **한국어 인용도 기계 대조했다** — 새 스크립트 `.scratch/tb1108/q.py`는 공백 · 구두점을 모두 지운 정규화로 ko-orig와 en-orig를 함께 다룬다(`(@)` 자동 채움, `(@k)`는 ko 코퍼스 강제). 한국어 ASR의 띄어쓰기가 틀려도 맞는다. 손으로 적은 시각 약 20곳을 커밋 전에 고쳤다. ⭐ **영어 발췌가 en-orig에 없고 ko-orig의 영어 ASR로만 남는 구성**을 처음 봤다(Anthropic 편 06:01~06:13) — 그런 인용은 낱말 판독이 불확실하다고 적었다.

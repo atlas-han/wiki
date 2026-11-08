@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-07
+updated: 2026-11-08
 ---
 
 # Index
@@ -174,6 +174,7 @@ updated: 2026-11-07
 - [[sandeep-swadia]] — 테크 · AI 기업 CEO이자 이사회 멤버(설명란 근거, 발화엔 이름 없음). 나를 아는 개인 에이전트 하나를 비서실장처럼 쓰자고 권하는 해설. 에이전트 이름 Capes(ASR). 건강 · 금융 정보는 주지 않는다고 말한다 → [[personal-agent-four-forces]]
 - [[emily-bache]] — TDD · 에이전트 코딩 채널 진행자(설명란 · tags 근거, 발화엔 이름 없음). codecentric 제작자들을 인터뷰해 [[exact-coding|EXACT]] 소개 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 소속 · 경력 미상
 - [[garry-tan]] — Y Combinator 대표(설명란 · 내레이션 근거). 사내 에이전트 Straylight, 자기 데이터를 대부분 넘긴 개인 에이전트, 연 10만~20만 달러 토큰, 2~3년 보편화 전망 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 투자자 · [[gstack]] 제작자의 진술
+- [[john-kim]] — Anthropic Claude Code 팀 코드 리뷰 글을 소개한 영상의 제작자로 보이는 개발자(설명란 · 영어 더빙 근거, 원음 ASR엔 "종"뿐). *배포한 사람이 책임진다* 발췌 ([[tech-bridge-anthropic-code-review-seven-layers]]) ⚠️ 소속 · 직함 미상, 발췌 하나는 무캡션
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -325,6 +326,7 @@ updated: 2026-11-07
 - [[starlink]] — [[spacex|SpaceX]] 위성망: [[elon-musk|Musk]]의 3년 대역폭 100배 · 위성 10만 기, AI 에이전트발 수요 1,000배, 연결 매출 "수천억 달러" 전망 ([[tech-bridge-musk-spacex-ai-compute-outlook]]) ⚠️ 전부 소유주 진술
 - [[herdr]] — 터미널 코딩 에이전트 여럿을 한 화면에서 다루는 agent multiplexer. 앱 버전은 *"GUI application combined with CLIs"*: SSH worker 추가, 앱을 꺼도 계속 도는 세션(로컬은 별도 프로세스), idle · done · working 상태와 알림, mission control · Slack · Meet형 레이아웃, 서브에이전트 API ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 1인 사용자 몇 시간 체감 · 제작사 미발화
 - [[cmux]] — 에이전트용 터미널 앱. 비교 대상으로만 등장: `cmux ssh` 세션이 앱을 끄면 사라지고 tmux 우회책은 실험 기능이라 잘 깨지며 UI 커스터마이즈에서 *"wow factor"* 를 못 얻었다는 사용자 비판 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 1인 비판 · cmux 측 반론 없음
+- [[hackertube]] — [[andrej-karpathy|Karpathy]]가 Claude로 만들었다고 전해지는 YouTube 스타일 사이트. Hacker News에서 반복 추천된 영상만 모은다 ([[tech-bridge-nick-saraev-karpathy-ai-habits]]) ⚠️ Saraev의 2차 전달, 사이트 미열람
 
 ### Tools
 - [[fx]] — Vercel Labs 코딩 CLI(ASR "effects", 설명란 fx.sh). 셸처럼 부팅, 6MB/11MB, 임베드 가능(fx0 데모: HTML → 샌드박스 Next.js → Eve 에이전트) ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 자사 진술
@@ -411,6 +413,7 @@ updated: 2026-11-07
 - [[intentional-out-of-distribution]] — 창의성은 **온도가 아니다.** 도메인 규칙을 먼저 알고 **몇 가지만 의도적으로 어기되 나머지는 지킨다.** 에이전트용 *영감 기계*(창의성 API, 별명) (Taste Labs, sources: 2) ⚠️ 미출시
 - [[company-digital-twin]] — 회사를 **행동의 시퀀스**로 표현해 다음 행동을 예측하고, 실제 회사 대신 트윈에 반사실적 개입(광고 · 배송 · 대출)을 돌려 고른 것만 운영에 적용 ([[mikhail-parakhin|Parakhin]] · [[shopify|Shopify]]) ⚠️ 당사자 진술 하나 · 검증 방법 미발화
 - [[code-blind-first-user-test]] — 빌드를 본 적 없고 코드 읽기가 막힌 새 에이전트에게 실제 앱을 처음 쓰는 고객처럼 쓰게 해 막히는 곳을 찾는다. 서브에이전트, 임시 DB, 터미널 우회까지 막는 훅. 출발점은 Claude Code 팀이 매일 제품을 직접 쓰는 것 ([[tech-bridge-ai-labs-claude-code-verification-review-loop]]) ⚠️ AI Labs 1회 시연, 결과 · 비용 미제시
+- [[effective-output-metric]] — 줄 수 대신 커밋이 바꾼 것의 가치를 ML 모델이 시니어 패널처럼 채점하는 점수. Salesforce × Stanford, 두 배 → 점수당 비용 ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 해설의 2차 전달, 채점 기준 · 정확도 미상
 
 ### Architectures
 - [[always-on-agent-architecture]] — 하네스를 서버로: 루프·상태는 서버와 DB, 컴퓨터는 따로 자고 깨는 VM, 트리거 → dedupe router → 알림 heuristic → 우선순위 큐, thin client와 단일 도구 send user, 재시도해도 안전한 durable workflow, 사용자는 사다리 맨 끝 ([[tech-bridge-lee-robinson-always-on-agents]]) ⚠️ 단일 당사자 소스
@@ -744,6 +747,8 @@ updated: 2026-11-07
 - [[usage-based-tool-pruning]] — 지난 세션에서 안 쓴 도구를 규칙으로 골라 프로젝트 컨텍스트에서 뺀다(10메시지 · 최소 2세션). 지연 로딩과 달리 복구는 사람이 한다 ([[tech-bridge-ai-labs-token-economizer]]) ⚠️ 사례 하나, 메시지당 29%는 한 프로젝트 측정, 비용 아님
 - [[personal-agent-four-forces]] — 개인 AI 에이전트의 쓰임을 사람의 시간을 빼앗는 네 힘(조각 · 홍수 · 주기 · 미래)으로 나누고 챗봇과의 차이를 ACT(자율 · 지속 · 맞춤)로 설명하는 틀. 첫 위임 대상은 *습관도 큰 사건도 아닌 일*, 긴장은 문지기 문제와 맞춤 대 경계 ⚠️ 한 사람의 해설, 효과 측정 없음
 - [[exact-coding]] — 사람들이 예시 매핑으로 무엇을 만들지 정하고, 테스트 목록과 예측형 TDD로 에이전트를 이끄는 워크플로. 리팩터링 서브에이전트의 이득은 Opus 5.5에서 작다 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 제작자 자체 실험, 표의 값 미확인
+- [[agentic-coding-maturity-curve]] — 엔지니어의 에이전트 코딩 사용 깊이를 9단계 · 4레벨로 그린 Salesforce의 지도. 초반 상승 → 자신감의 계곡 → 레벨 3 서브에이전트 병렬 → 레벨 4 자율(CI 실패 → 수정 → 리뷰 · 머지) ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 그림 미확인, 레벨 2 · 단계 이름 없음
+- [[share-data-and-prompt-not-app]] — 모델이 데이터 위에 어떤 앱이든 만들 수 있다면 앱 대신 데이터 소스와 프롬프트를 공유한다. *"wrappers around a core truth, which is the data"* ([[tech-bridge-nick-saraev-karpathy-ai-habits]]) ⚠️ Saraev의 Karpathy 습관 전달 + 해석
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1010,12 +1015,15 @@ updated: 2026-11-07
 - [[tech-bridge-sandeep-swadia-personal-ai-agent]] — [[sandeep-swadia|Sandeep Swadia]](설명란 · tags 근거, 발화에 이름 없음) 1인 해설(16:35, 챕터 9, 내레이션 없음 · 영어 원본 오디오만, "[한글자막]"이지만 수동 자막 없음, 2026-11-06 07:00 KST): 반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다 — AI 인턴 무리 대신 비서실장 하나, ACT, 네 힘(HBR 하루 1,200번 전환 · Microsoft 117 이메일 + 153 Teams 메시지), 면접 준비 · 하루 세 번 필터 + 5시 요약 · 계약서 조항 검토 · 진료 주기 · 일요일 우선순위 점검 프롬프트, 문지기 위험, 건강 · 금융 정보 제외 → [[personal-agent-four-forces]] · [[agent-attention-management]] · [[openai-dots]] ⚠️ 효과 측정 없음, 통계 전달 · 미확인, 시연 화면 미확인
 - [[tech-bridge-emily-bache-exact-coding-tdd]] — [[emily-bache|Emily Bache]](설명란 근거) × Marco Emrich · Ferdinand Ade 인터뷰 + 한국어 해설(17:04, 챕터 14, 영어 원본 오디오만, 2026-11-07 07:00 KST): 바이브코딩을 멈추세요 — [[exact-coding|EXACT]], 예시 매핑, 테스트 목록, 예측형 TDD, 리팩터링 서브에이전트 ⚠️ 표의 값은 화면에만, 자체 실험
 - [[tech-bridge-garry-tan-agents-two-years]] — [[garry-tan|Garry Tan]] 대담 발췌 + 한국어 내레이션(12:50, 챕터 12, 영어 원본 오디오만, 2026-11-06 18:00 KST): AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다 — Straylight, 토큰 비용, [[gstack]], 일자리, [[personal-ai-platform-war|다섯 왕과 개인 AI의 Linux]] ⚠️ 전망 · 자기 수치, 진행자 · 원본 미상
+- [[tech-bridge-anthropic-code-review-seven-layers]] — 한국어 해설 + [[john-kim|John Kim]] 발췌(7:13, 챕터 7, Korean original · ko-orig 원 ASR, 2026-11-07 12:00 KST): AI끼리 밤새 50번 싸웠다 — 사람의 주의력이 희소 자원, 7겹 리뷰(투표하는 AI 리뷰 16% → 54%, 위험도별 0 · 1 · 2명, 플래그 · 롤백), 59%는 첫 리뷰부터 있던 코드, 세 라운드 규칙(65% → 78%, 8.9% → 1.5%), 사고 PR 시험지, *you land it, you own it*(추정) → [[review-loop-termination]] · [[layered-verification-every-loop]] ⚠️ Anthropic 블로그의 2차 전달, 미대조
+- [[tech-bridge-nick-saraev-karpathy-ai-habits]] — [[nick-saraev|Nick Saraev]](설명란 · tags 근거) 해설(5:33, 챕터 11, 내레이션 없음 · 영어 원본 오디오만, 2026-11-07 18:00 KST): 카파시가 실제로 AI를 쓰는 법 — Claude Code 데스크톱 + Opus 5.5 medium, 코드 안 보기, ASD-STE100, 짧은 프롬프트, 그림 요청, 벤치마크 불신 · land or water 지도, [[hackertube|HackerTube]], Sonnet 위임, [[share-data-and-prompt-not-app|앱 대신 데이터]] ⚠️ 2차 정리, *"now he works at Anthropic"* 미확인
+- [[tech-bridge-salesforce-claude-code-agentic-shift]] — 한국어 해설(6:44, 챕터 9, Korean original · ko-orig 원 ASR, 영어 발췌 2곳 화자 미상, 2026-11-08 09:00 KST): 세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나 — 24시간 버그, headless화, [[effective-output-metric|유효 산출량]], [[agentic-coding-maturity-curve|9단계 성숙도 곡선]], 장애 대응 에이전트, 스킬 마켓플레이스 + eval, 장애 5% 감소, 실패 세트, *검증 없는 자율은 자신감 연극*, 증거 요구, 일에 맞는 모델 ⚠️ 당사자 자료의 2차 전달, 제품명 *클로드 포스* vs *Agentforce* 미확정
 
 ---
 
 ## 통계
 
-- 총 페이지 수: 976 (969 → 976, + 2026-11-07 Tech Bridge 2편(11-06 업로드 — EXACT 코딩 · Garry Tan): source 2 · entity 3(emily-bache · garry-tan · gstack) · concept 2(exact-coding · personal-ai-platform-war) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 976과 일치)
+- 총 페이지 수: 984 (976 → 984, + 2026-11-08 Tech Bridge 3편(11-07 ~ 11-08 업로드 — Anthropic 코드 리뷰 · Karpathy 습관 · Salesforce): source 3 · entity 2(john-kim · hackertube) · concept 3(agentic-coding-maturity-curve · effective-output-metric · share-data-and-prompt-not-app) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 984과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-07 (Tech Bridge **2편** — 11-06 업로드 [[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: EXACT]](`hRhjL6BsxTU`) · [[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]](`UIMTEGqP3ys`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-06 (Tech Bridge **1편** — 11-05 업로드 [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]](`HOo_rDzXfRE`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-08 (Tech Bridge **3편** — 11-07 업로드 [[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다]](`Fxy8Jr77nKc`) · [[tech-bridge-nick-saraev-karpathy-ai-habits|카파시가 실제로 AI를 쓰는 법]](`lcp0_GnT54o`), 11-08 업로드 [[tech-bridge-salesforce-claude-code-agentic-shift|세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]](`iTIDadQ6Ues`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-07 (Tech Bridge **2편** — 11-06 업로드 [[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: EXACT]](`hRhjL6BsxTU`) · [[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]](`UIMTEGqP3ys`). `Yhck-x6VuLs` 멤버 전용 지속)

@@ -6,9 +6,9 @@ tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, vis
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
 related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-10-09
-updated: 2026-11-07
+updated: 2026-11-08
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -74,6 +74,10 @@ updated: 2026-11-07
 ## 피드를 받아 거르는 인지 필터 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
 
 [[garry-tan|Garry Tan]]은 이 문제를 소셜 피드로 넓힌다: 네트워크는 *"your own cognitive filter."*(09:09)를 거치고, 목표는 *"put control of what goes in your brain back into your own hands"*(09:26~09:29)다. 위 절의 문지기 질문이 그대로 남는다. 나쁜 알고리즘을 내 에이전트로 바꿔도 걸러낸 것을 사람은 보지 못한다(위키의 읽기). → [[personal-ai-platform-war]]
+
+## 희소 자원은 컴퓨트가 아니라 사람의 주의력 — Anthropic 리뷰 (2026-11-08 · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+해설 전달: *"이 팀이 가장 아끼는 자원은 컴퓨터가 아니라 사람의 시간과 주의력이거든요."*(01:34~01:39) 그래서 리뷰 질문을 *사람이 읽었나*에서 *무엇이 잘못될 수 있고 가장 좋은 검사는 무엇인가*로 바꾸고, 사람은 결제 · 자동 업데이트 같은 위험한 코드와 아키텍처 결정에 주의를 쓴다. 맺음: *사람의 주의력은 정말 위험한 곳에 쓰도록 옮겼을 뿐*. 단서: 사고가 늘면 *리뷰하던 시간을 고치는 시간으로 옮겨 놓은 것뿐*이다.
 
 ## References
 

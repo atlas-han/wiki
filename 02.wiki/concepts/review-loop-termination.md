@@ -6,9 +6,9 @@ tags: [review-loop, termination, generator-evaluator, automated-code-review, age
 aliases: [review loop termination, 리뷰 루프 종료, 끝나지 않는 루프, 무한 리뷰 루프, 세 라운드 규칙, three-round rule, delta-only review]
 related: [generator-evaluator-pattern, automated-code-review, three-level-agent-review, verification-cost-asymmetry, true-cost-to-perfect-answer, agent-loop-size, risk-proportional-human-review]
 first-seen: tech-bridge-ai-labs-claude-code-verification-review-loop
-sources: [tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-greptile-daksh-gupta-build-review-agent]
+sources: [tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-11-02
-updated: 2026-11-04
+updated: 2026-11-08
 ---
 
 # 리뷰 루프 종료 조건
@@ -55,6 +55,16 @@ updated: 2026-11-04
 - Anthropic 쪽 수치(50회+, 59%)와 세 규칙은 발표자가 기사를 요약한 것이다. 기사(`claude.dev/blog/solving-code-review-at-anthropic`)는 열어 보지 않았다.
 - 효과는 *"more of their changes passed review on the very first try"* 뿐, 비율 · 비용 절감 수치 없음.
 - AI Labs 판본은 한 번의 시연.
+
+## 한국어 해설판 — 세 라운드 규칙과 결과 수치 (2026-11-08 · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+같은 Anthropic 글을 Tech Bridge가 한국어로 다시 정리했다(2차 전달, 블로그 미열람). AI Labs 편에 없던 내용:
+
+- 원인 설명: 사람은 닛을 1초 만에 넘기지만 *"AI 작성은[=작성자는] 그걸 그대로 고칩니다."*(04:46) → 또 커밋, 또 리뷰.
+- 규칙: *"세 번 돌면 리뷰어가 접근 방식부터 다시 생각해 보라고 하고 그다음부턴 바뀐 부부만[=부분만] 다시 봅니다."*(04:51~04:58) + 버그 종류를 짚기 + 반복 금지.
+- ⭐ 결과(이 위키 첫 기록): 한 번에 통과하는 PR 65% → 78%, 다섯 번 이상 도는 PR 8.9% → 1.5%(05:08~05:14).
+- 리뷰어 개선 루프: 과거 사고 PR을 시험지로 매일 채점하고, 프롬프트 · 도구 · 모델 변경은 점수가 오를 때만 남긴다.
+- ⚠️ 59% · 50회는 AI Labs 편과 일치한다. 새 수치는 대조하지 않았다.
 
 ## References
 

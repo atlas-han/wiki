@@ -6,9 +6,9 @@ tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
 related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel, skill-linting]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift]
 created: 2026-09-13
-updated: 2026-10-16
+updated: 2026-11-08
 ---
 
 # 스킬 eval
@@ -71,6 +71,10 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 > 이런 사고방식이 **모든 것을 더 체계적으로 만들어준다**고 생각해요. **프롬프트를 잔뜩 넣고 매번 몇 글자씩 바꿔가면서 … LLM이 마법처럼 … 따르기 시작할 거라고 기대하는 대신에요.** (21:12~21:30)
 
 **같은 날 ingest한 [[tech-bridge-vercel-eve-filesystem-agent|Vercel 편]]이 eval의 다른 실패를 보여준다** — 점수가 아니라 **분포**다. eval 30%를 통과하던 에이전트가 첫 배포에서 *"끔찍하다"* 는 반응을 받았고, 이유는 *예상치 못한 질문* 이었다. 두 소스를 겹치면: **eval은 어느 단위로 재는가(해상도)와 무엇을 재는가(분포) 양쪽에서 실패할 수 있다.** 서로를 모르는 두 소스다.
+
+## Salesforce — 사내 마켓플레이스 + 있을 때/없을 때 재실행 (2026-11-08 · [[tech-bridge-salesforce-claude-code-agentic-shift]])
+
+해설 전달: 팀이 만든 스킬은 사내 마켓플레이스에서 공유하고, 효과는 eval로 본다 — *"같은 작업을 스킬이 있을 때와 없을 때로 다시 돌려보면서요."*(04:11~04:13) 이 페이지의 기본 설계(with/without 비교)를 **대규모 조직의 유통 단계**에 붙인 사례다. ⚠️ 과제 수 · 지표 · 결과는 해설에 없다.
 
 ## References
 

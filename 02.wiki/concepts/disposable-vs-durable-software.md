@@ -6,9 +6,9 @@ tags: [code-quality, disposable-software, durable-software, engineering-rigor, c
 aliases: [disposable software, durable software, 일회용 소프트웨어, 오래 쓰는 코드, 네 가지 기준, four factors]
 related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build]
 first-seen: tech-bridge-kanat-alexander-disposable-vs-durable
-sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map]
+sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits]
 created: 2026-10-25
-updated: 2026-11-01
+updated: 2026-11-08
 ---
 
 # 일회용 vs 오래 쓰는 소프트웨어
@@ -38,6 +38,10 @@ updated: 2026-11-01
 - [[risk-proportional-human-review]] · [[action-reversibility]] — 같은 계열의 비례 원칙을 **PR·행동 단위**가 아니라 **소프트웨어 전체의 수명 단위**에 적용한 것이다. *cost of replacement* 는 가역성의 시스템 판이다.
 
 > ⚠️ **이분법의 범위.** yes/no 결론은 네 기준이 **한쪽으로 몰린 양 끝**에 대한 것이다. 섞인 경우(예: 피해는 크지만 교체가 쉬움)에 대한 원음은 자막에 없다.
+
+## 앱은 데이터 위의 포장 — Saraev의 일반화 (2026-11-08 · [[tech-bridge-nick-saraev-karpathy-ai-habits]])
+
+Karpathy가 앱 대신 데이터 소스와 프롬프트를 공유한다는 전달에 화자가 붙인 해석: *"most specific implementations are just sort of wrappers around a core truth, which is the data."*(04:47~04:53) 이 페이지의 축으로 보면 **앱이 일회용, 데이터가 오래가는 쪽**이라는 주장이다 → [[share-data-and-prompt-not-app]]. ⚠️ 개인 프로젝트 맥락의 해석이고, 유지보수 · 보안 책임이 받는 사람에게 넘어가는 점은 다루지 않는다.
 
 ## References
 

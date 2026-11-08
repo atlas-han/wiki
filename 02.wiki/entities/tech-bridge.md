@@ -168,8 +168,11 @@ sources:
   - tech-bridge-sandeep-swadia-personal-ai-agent
   - tech-bridge-emily-bache-exact-coding-tdd
   - tech-bridge-garry-tan-agents-two-years
+  - tech-bridge-nick-saraev-karpathy-ai-habits
+  - tech-bridge-anthropic-code-review-seven-layers
+  - tech-bridge-salesforce-claude-code-agentic-shift
 created: 2026-06-03
-updated: 2026-11-07
+updated: 2026-11-08
 ---
 
 # Tech Bridge
@@ -1617,5 +1620,19 @@ updated: 2026-11-07
 
 - 둘 다 **영어 원본 오디오만** 있는 구성(더빙 7개, `ko-orig` 없음, ko `tlang=ko`, `en` ≠ `en-orig` md5)인데 **내레이션이 트랙에 다르게 담긴다.** EXACT 편은 en-orig에 없고 `en`에만 영역으로 보인다. Tan 편은 en-orig에 한국어 그대로 들어 있다(33줄). `upload_date` 20261106 = EXACT 11-07 07:00 KST · Tan 11-06 18:00 KST.
 - ⚠️ EXACT 편: 표의 값은 화면에만 있고 제작자 자체 실험이다. Tan 편: 2~3년 · 400배 · 토큰 비용은 화자 진술이고 발췌 편집본이다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-07 ~ 11-08 업로드 — Anthropic 코드 리뷰 해설 · Karpathy 습관(Nick Saraev) · Salesforce 해설 (2026-11-08 ingest)
+
+[[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다 | Anthropic은 AI가 쓴 코드를 어떻게 리뷰할까]](`Fxy8Jr77nKc`, 7:13, 공식 챕터 7) — 한국어 해설 + [[john-kim]](신규, 설명란 · 더빙 근거) 발췌 ([[review-loop-termination]] · [[layered-verification-every-loop]] · [[risk-proportional-human-review]] · [[named-human-accountability]] · [[agent-attention-management]] · [[automated-code-review]] · [[boris-cherny]] · [[anthropic]])
+
+[[tech-bridge-nick-saraev-karpathy-ai-habits|[한글자막] 세계 최고 AI 엔지니어 카파시가 실제로 AI를 쓰는 법]](`lcp0_GnT54o`, 5:33, 공식 챕터 11) — [[nick-saraev]](설명란 · tags 근거)의 [[andrej-karpathy]] 습관 2차 정리, 내레이션 없음 ([[hackertube]](신규) · [[share-data-and-prompt-not-app]](신규) · [[model-rendered-interface]] · [[disposable-vs-durable-software]] · [[claude-opus-5-5]] · [[model-mixing-economics]])
+
+[[tech-bridge-salesforce-claude-code-agentic-shift|사람이 못 찾은 버그, AI가 24시간 만에 | 세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]](`iTIDadQ6Ues`, 6:44, 공식 챕터 9) — 한국어 해설 + 화자 미상 영어 발췌 2곳 ([[agentic-coding-maturity-curve]](신규) · [[effective-output-metric]](신규) · [[salesforce]] · [[agent-change-evidence]] · [[skill-evals]] · [[production-trace-eval-flywheel]] · [[model-mixing-economics]])
+
+- ⭐ **해설 두 편이 `ko-orig`를 갖는 Korean original 구성**이다(`ko` = `ko-orig` md5, en-orig = 영어 더빙 + 발췌 원음 — 10-26 · 10-28 편과 같다). 내레이션은 ko-orig, 영어 발췌는 en-orig로 인용했다. Anthropic 편의 John Kim 발췌는 하나가 무캡션이고, 다른 하나는 **en-orig가 비어 ko-orig의 영어 ASR로만** 남았다(처음 기록하는 구성). Karpathy 편은 영어 원본 오디오만(`ko` `tlang=ko`, `en` ≠ `en-orig`).
+- `upload_date` / KST: Anthropic 편 20261107 = 11-07 12:00, Karpathy 편 20261107 = 11-07 18:00, Salesforce 편 20261108 = **11-08 09:00(이 회차 발화 10분 전)**.
+- ⚠️ 세 편 모두 **당사자 · 제3자 자료의 2차 전달**이다(Anthropic 블로그 · Salesforce 글과 Claude 고객 사례 · Saraev의 Karpathy 정리). 원 자료는 열지 않았다. Salesforce 편 01:38의 제품명(원음 *클로드 포스* vs 더빙 *Agentforce*), Anthropic 편의 기간 *딸 만에*(더빙 석 달 vs AI Labs 넉 달), Karpathy 편의 *"now he works at Anthropic"* 은 미확정이다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

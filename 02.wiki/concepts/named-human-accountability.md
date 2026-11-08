@@ -6,9 +6,9 @@ tags: [accountability, attribution, wiki, governance, audit, authorship]
 aliases: [사람 이름 규칙, human-backed changes]
 related: [no-silent-write, company-brain, behavior-validated-trust, agent-action-record, decision-quality, agentic-misbehavior]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-09-10
-updated: 2026-10-31
+updated: 2026-11-08
 ---
 
 # 모든 변경에 사람의 이름
@@ -46,6 +46,13 @@ updated: 2026-10-31
 - **징벌의 역효과** 미논의 — 이름이 붙으면 사람들이 승인을 피하고, 그러면 두뇌가 자라지 않는다(발표자 자신의 *일일 업데이트 수* 지표가 떨어진다). 소스는 이 긴장을 말하지 않는다.
 - 여러 사람이 논쟁으로 만든 지식([[multiplayer-agent-context]])에는 **누구의 이름**이 붙는가 — 없다.
 - 당사자 진술.
+
+## "누가 타이핑했든 배포한 사람이 책임진다" (2026-11-08 · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+- 해설(Anthropic 글 전달): *"누가 타이핑했든 배포한 사람이 책임져요."*(05:53~05:55)
+- [[john-kim|John Kim]] 발췌(ko-orig의 영어 ASR뿐, 판독 불확실): *"But if you're the one who shipped it, if you're the one who put it into production, then it's your fault at the end of the day."*(06:07~06:13)
+- 팀 구호: 원음 *"유랜드 유오운"*(06:15~06:18) — *you land it, you own it* 음차로 추정 — 풀이 *내가 머지했으면 내가 고친다.*
+- ⭐ 책임을 지탱하는 장치: 변경을 작게 쪼개고 몇 분 안에 되돌릴 수 있게 해 *"책임이 두려움이 되지 않도록 했죠."*(06:25~06:27) → [[action-reversibility]].
 
 ## References
 

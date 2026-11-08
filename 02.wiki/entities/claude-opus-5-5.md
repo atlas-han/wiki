@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits]
 links: []
 created: 2026-10-09
-updated: 2026-11-02
+updated: 2026-11-08
 ---
 
 # Claude Opus 5.5
@@ -33,6 +33,10 @@ updated: 2026-11-02
 ## 위치
 
 - 이 위키의 이전 Opus 페이지: [[claude-opus-4-7]] (2026-05). 5.x 세대의 페이지는 이것이 처음이다.
+
+## 2026-11-08 — medium effort 기본 + Sonnet 위임 (Karpathy 습관, [[tech-bridge-nick-saraev-karpathy-ai-habits]])
+
+Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his default. He does not use max effort."*(00:52~00:54) 그리고 Opus 5.5 medium이 Sonnet 서브에이전트들에게 위임하는 구조를 좋아한다. *Land or water?* 실험을 *"most of the world's knowledge is now compressed in the neurons of these models like Opus 5.5"*(03:13~03:17)의 예로 든다. ⚠️ 2차 전달, 비교 측정 없음.
 
 ## References
 

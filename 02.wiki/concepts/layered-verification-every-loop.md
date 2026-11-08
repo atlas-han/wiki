@@ -6,9 +6,9 @@ tags: [verification, zero-trust, defense-in-depth, deterministic-checks, agentic
 aliases: [zero trust multi-layered verification, 다층 검증, 루프마다 검증, layered verification]
 related: [swiss-cheese-defense-in-depth, automated-code-review, verification-bottleneck, software-factory, agent-verification-skill, three-level-agent-review, generator-evaluator-pattern, agent-plus-program-analysis]
 first-seen: tech-bridge-anthropic-30k-merges-verification
-sources: [tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-anthropic-30k-merges-verification, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-10-31
-updated: 2026-10-31
+updated: 2026-11-08
 ---
 
 # 루프마다 다층 검증
@@ -43,6 +43,15 @@ updated: 2026-10-31
 - 화자 귀속은 설명란 + 소거법 추정이고 소속 미상. *"So we look at it in terms of layers"*(06:50~06:51)의 "we"가 어느 회사 · 제품인지 발화되지 않는다.
 - 층별 효과 · 오탐률 · 비용 수치가 없다. 세 층 목록은 *"could be"*(07:27)로 시작해 예시에 가깝다.
 - 07:45~07:48에서 발언이 끊긴다(편집 컷 추정) — 뒤에 더 있었을 수 있다.
+
+## 7겹 리뷰 — Swiss cheese로 읽기 (2026-11-08 · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+한국어 해설이 Claude Code 팀의 층을 일곱으로 센다: ① PR 전 자기 검증 + 새 맥락의 두 번째 에이전트 ② 모든 PR의 AI 리뷰(지적마다 다른 에이전트 그룹이 투표) ③ 보안 리뷰 ④ 필수 자동 검사 ⑤ 위험도별 사람 승인 ⑥ 머지 · 기능 플래그 ⑦ 빠른 감지 · 롤백.
+
+- ⭐ *"각층이 일부 문제를 잡고 일부는 놓칩니다. 끝까지 뚫고 나가는 건 아주 적고 그건 롤백기[=롤백이] 처리하죠."*(04:01~04:06)
+- 시점: 관문이 아니라 *맞춤법 검사처럼 코드를 쓰는 내내* 돈다.
+- 속도: *천천히 가면 에러율이 낮아지지만 일을 덜하기 때문*이라는 동료의 말 → 더 빨리 발견하고 고치는 쪽.
+- ⚠️ 해설 전달. 2층 효과 16% → 54%는 위키 첫 기록, 미대조.
 
 ## References
 

@@ -6,9 +6,9 @@ tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
 related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis, review-model-inversion]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-10-03
-updated: 2026-11-04
+updated: 2026-11-08
 ---
 
 # 자동 코드 리뷰
@@ -114,6 +114,14 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 - **모든 수치가 벤더 발표 또는 화자의 2차 인용**이다(Copilot 6천만, CodeRabbit 1,300만, Cursor 52→70%, 베이징대 44%, 88% vs 35%).
 - 화자는 Arize(관측 플랫폼) 소속 — *"I'm not going to give a pitch for Arise here"*(22:13~22:15)라 했지만, 결론(프로덕션이 마지막 리뷰어)은 소속 회사의 시장과 겹친다.
 - 한 소스. 다중 패스·기본 의심의 효과를 독립 측정한 소스는 아직 없다.
+
+## 투표하는 AI 리뷰와 사고 PR 시험지 — Anthropic (2026-11-08 · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+해설 전달(Claude Code 팀):
+
+- 모든 PR에 여러 에이전트가 동시에 버그를 찾고, *"다른 에이전트 그룹이 그 지적 하나하나에 투표를 합니다. 충분히 동의를 얻은 지적만 살아남아요."*(02:54~02:57) 사소한 스타일 지적은 버리고 심각도순. 효과: 실질적 리뷰 코멘트를 받는 PR 16% → 54%.
+- ⭐ 리뷰어 평가: *"과거에 사고를 냈던 PR에 모아 시험 문제로 만들고 리뷰어가 매일이 시험을 봐요."*(05:19~05:23) — 11-04 Greptile 편의 *사고 PR 데이터셋*과 같은 방향이다.
+- 끝없는 루프의 종료 규칙은 [[review-loop-termination]].
 
 ## References
 

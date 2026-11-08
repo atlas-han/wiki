@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, claude-code]
 aliases: [보리스 체르니, Boris]
 links: []
-sources: [tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-claude-duet-proactive-assistant, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-claude-duet-proactive-assistant, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-10-23
-updated: 2026-11-02
+updated: 2026-11-08
 ---
 
 # Boris Cherny
@@ -31,3 +31,7 @@ updated: 2026-11-02
 ## 2026-11-02 — "증명할 방법을 줘라" (간접 인용, [[tech-bridge-ai-labs-claude-code-verification-review-loop]])
 
 [[ai-labs|AI Labs]](설명란 근거)가 Anthropic 코드 리뷰 글을 요약하며 전한다: *"Boris Cherny, who is the creator of Claude code, says that the best way to get Claude to work well is to give it away[=a way] to prove it did the work right."*(02:32~02:41) ⚠️ 발표자의 간접 인용이고 원 발언의 출처 · 시점은 발화되지 않는다. 그의 목소리는 나오지 않는다. → [[agent-verification-skill]]
+
+## 2026-11-08 — "검증할 방법을 주면 2~3배" (간접 인용, [[tech-bridge-anthropic-code-review-seven-layers]])
+
+한국어 해설이 Claude Code 팀 리뷰의 첫 층(PR 전 자기 검증)을 설명하며 전한다: *"AI에게 스스로 검증할 방법을 주면 결과물이 두 세 배 좋아진다고요."*(02:42~02:46) — Boris가 *가장 중요한 비법*으로 꼽았다는 말이다. 11-02 AI Labs 편의 간접 인용과 같은 취지이고, **두 단계 건너 전달**(Boris → 블로그 → 해설)이라 원 발언 · 수치의 맥락은 확인하지 않았다.

@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-nick-saraev-karpathy-ai-habits]
 created: 2026-09-09
-updated: 2026-11-04
+updated: 2026-11-08
 ---
 
 # 모델 혼합의 경제학
@@ -81,6 +81,12 @@ updated: 2026-11-04
 **조달의 벽도 다르다.** 프런티어 API의 문제는 가격이 아니라 **꼬리 지연**(P50 450~500ms인데 P90·P95가 1.2~1.3초)이고, [[cerebras]]·[[groq]]의 전용 용량은 *"12개월 선예약"* 이라 **모델 수명보다 계약이 길어진다.** 그래서 이 소스의 결론은 **오픈소스 소형 모델 자체 호스팅**([[qwen3-5|Qwen 3.5]]·[[gemma-4|Gemma 4]])이고, 선택 기준에 **[[token-fertility|토크나이저]]** 가 들어온다 — 다국어에서는 단어당 토큰 수가 곧 지연이다.
 
 ⚠️ **비용이 한 번도 계산되지 않는다.** *비용·지능·지연* 삼각형을 내세우면서 자체 GPU 호스팅이 프런티어 API 대비 얼마인지 수치가 없다 — 이 페이지의 주제인 축이 정작 비어 있다.
+
+## 일에 맞는 모델을 맞는 가격에 — Salesforce · Karpathy (2026-11-08 · [[tech-bridge-salesforce-claude-code-agentic-shift]] · [[tech-bridge-nick-saraev-karpathy-ai-habits]])
+
+- Salesforce(해설 전달): 가장 큰 실수가 뭐였냐는 질문에 *"일에 맞는 모델을 맞는 가격에 쓰는 것."*(05:26~05:28) 평범한 파일 하나에 무거운 모델을 쓰는 사람들이 있었다. 9월 글의 원칙은 *"일상적인 일은 가벼운 모델로 가장 강력한 모델은 정말 어려운 문제에만"*(05:34~05:36) — 24시간 버그는 *큰 모델이 맞았던* 경우다. 비용 쪽 지표는 [[effective-output-metric|점수당 비용]].
+- Karpathy(Saraev 전달): Opus 5.5 medium effort가 Sonnet 서브에이전트들에게 위임하는 구조를 좋아한다 — *"Opus 5.5 maybe on medium effort delegating to a bunch of Sonnet subagents."*(04:18~04:22) 데이터 작업은 Claude가 만든 싼 필터로 먼저 거른다.
+- ⚠️ 둘 다 원칙 진술이고 비용 수치는 없다.
 
 ## References
 

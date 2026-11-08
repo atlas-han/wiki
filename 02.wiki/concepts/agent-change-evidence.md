@@ -6,9 +6,9 @@ tags: [verification, evidence, trust, impact-analysis, agentic-coding, code-revi
 aliases: [AI는 코드만이 아니라 증거를 내야 한다, 다섯 질문, change evidence]
 related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review]
 first-seen: tech-bridge-prompt-to-production
-sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers]
 created: 2026-10-09
-updated: 2026-10-31
+updated: 2026-11-08
 ---
 
 # 변경 증거
@@ -57,6 +57,14 @@ updated: 2026-10-31
 - **설명은 증거인가.** 소스는 *"someone simply telling you the answer"* 를 신뢰의 근거에서 빼면서 *"explanations"* 를 증거 목록에 넣는다. 둘의 경계를 긋지 않는다.
 - **테스트 통과의 한계.** 증거의 첫 항목이 테스트인데, [[mergeability-gap]](METR 약 절반, FrontierCode 88% vs 29%)은 테스트 통과가 머지 가능을 보장하지 않는다는 2차 인용 근거를 갖고 있다.
 - **형식이 없다.** 다섯 질문의 답을 어떤 아티팩트(PR 설명? 별도 리포트? 대시보드?)로 내는지, 누가 그 답을 검증하는지 말하지 않는다. 수치·사례 0개.
+
+## "스스로 리뷰해" 대신 "증거를 보여줘" (2026-11-08 · [[tech-bridge-salesforce-claude-code-agentic-shift]] · [[tech-bridge-anthropic-code-review-seven-layers]])
+
+같은 날 두 해설이 같은 요구를 한다.
+
+- Salesforce(해설 전달, 인물 *리처드*): *"에이전트에게 스스로 리뷰해라고 하지 않습니다. 대신 이렇게 말하죠. 증거를 보여줘."*(05:10~05:15) — 찾은 특징을 표로 만들고 증거를 붙이게 하고, 없으면 다시 시킨다. 일을 줄 때 좋은 결과 · 나쁜 결과의 기준(기존 스키마를 건드리지 않았는지)부터 정한다.
+- Anthropic(해설 전달): 7겹 리뷰의 첫 층에서 Claude가 테스트 · 빌드 · 린터를 돌리고 *"다 했어요라는 말 대신 실행 결과를 보여 줘야 하죠."*(02:28~02:32) 사람의 몫으로 *테스트 결과나 스크린샷 같은 증거를 직접 읽고 판단하는 일*이 남는다.
+- 위키의 읽기: 자기 평가(*review yourself*)를 **산출물(표 · 실행 결과)** 로 바꾸는 요구다. ⚠️ 둘 다 당사자 자료의 2차 전달이다.
 
 ## References
 
