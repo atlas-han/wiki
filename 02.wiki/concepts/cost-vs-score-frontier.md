@@ -6,9 +6,9 @@ tags: [model-selection, benchmark, pareto-frontier, cost, evaluation, leverage, 
 aliases: [cost vs score, 비용 대비 점수, Pareto frontier of cost and score, 비용-점수 그래프, leverage]
 related: [true-cost-to-perfect-answer, model-mixing-economics, pareto-surfing, fixed-budget-alpha, inference-speed-as-capability, value-maxing, document-parsing-for-agents, taste-vs-judgment]
 first-seen: tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5
-sources: [tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-09
 ---
 
 # 비용 대비 점수 프런티어
@@ -54,6 +54,12 @@ updated: 2026-11-02
 - 근거는 사용자 1인이 **출처를 밝히지 않은 그래프**(Terra 랜딩 페이지 — OpenAI 자료로 추정)를 눈대중으로 읽은 것이다. 벤더 그래프는 비교 대상 · 조건 선택이 벤더 몫이다.
 - "$1 vs $9", *"95 to 97%"*, *"11%"* 는 화자 진술이고 위키가 확인하지 않았다.
 - 페이지 하나로 일반화하기엔 소스가 하나다 — 이후 소스로 보강 필요.
+
+## 노력 수준도 프런티어 위의 점이다 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]] 워크숍 해설(⚠️ 벤더 2차 전달). 같은 모델의 노력 수준을 바꾸면 그래프 위의 점이 움직인다: *"커서 벤치에서 페이블 5.1 낮은 노력이가 페이블 5 높은 노력과 같은 성능을 3분의 1 비용으로 냈습니다."*(05:14~05:19) 고객센터 실험의 사다리(74.4% · 4.6센트 → 87.8% · 1.9센트 → 1센트)는 **왼쪽 위로 가는 경로**를 hill climbing으로 찾은 예다 → [[climbable-eval]] · [[model-mixing-economics]].
+
+- ⚠️ 이 페이지의 첫 소스(Saraev)는 공개 그래프를 읽은 3자 진술, 이쪽은 벤더 자기 실험이다. 둘 다 1차 데이터는 위키에 없다.
 
 ## References
 

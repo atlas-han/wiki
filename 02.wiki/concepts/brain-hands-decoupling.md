@@ -5,9 +5,9 @@ category: architecture
 tags: [agent-infrastructure, decoupling, sandbox, harness]
 related: [agent-harness-design, pets-vs-cattle, context-resets-and-compaction, sutton-bitter-lesson, model-context-protocol, intelligence-as-infrastructure, humanoid-robot-scaling, always-on-agent-architecture]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
+sources: [anthropic-managed-agents, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-astra-hardware, tech-bridge-elon-musk-g20-ai-future, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-11-09
 ---
 
 # Brain–Hands Decoupling
@@ -133,6 +133,13 @@ Token이 sandbox 안에 들어가지 않음:
 
 - 엔지니어링 글이 1세대(한 컨테이너) 설계의 문제로 든 *customer VPC network peering*이 여기서는 **hands만 고객 네트워크에 peer**하는 선택지로 돌아온다 — brain은 그대로 Anthropic 쪽.
 - 설계 원칙의 연장: *"virtualizing interfaces all the way down uh not only across service boundaries, but also at the event layer"*(00:42~00:49).
+
+## 며칠짜리 작업의 근거로 — 같은 저자의 워크숍 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[anthropic-managed-agents]]의 공저자 [[lance-martin|Lance Martin]]의 워크숍을 전한 한국어 해설이다(⚠️ 2차 전달). 분리의 동기를 **작업 길이**로 댄다: *"클로드 3 오퍼스가 혼자 할 수 있던 일은 사람 기준 4분 남짓이었는데 발표 그래프에선 12시간까지 올라갔고 랜스 마틴은 이제 하루 이틀짜리 일을 넘보는 구간에 들어섰다고 말합니다."*(05:27~05:37) → *"며칠씩 도는 에이전트라면 밤사이 샌드박스가 죽어도 이어갈 수 있어야 합니다."*(05:40~05:43)
+
+- 구조는 글과 같다: *"두뇌인 하네스와 손인 샌드박스를 떼어 놓았어요."*(05:45~05:47) · 세션 로그는 덧붙이기만 되는 기록(ASR *더 붙이기만*)이라 *"무엇이 죽든 로그에서 다시 살아나죠."*(05:52)
+- ⚠️ 그래프(4분 → 12시간)의 출처 · 측정 기준은 화면에만 있다.
 
 ## References
 

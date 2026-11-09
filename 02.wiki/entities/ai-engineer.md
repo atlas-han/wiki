@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-jediah-katz-harness-whats-left]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-09-15
-updated: 2026-10-24
+updated: 2026-11-09
 ---
 
 # AI Engineer
@@ -44,6 +44,10 @@ updated: 2026-10-24
 - **행사 브랜드들의 관계**(World's Fair를 포함하는지) 미확정. → ⭐ 2026-09-29 [[tech-bridge-llamaindex-document-context-layer]]에서 화자가 *"AI Engineer World Fair"* 라고 **한 구절로** 불렀다(아래 절). 다른 소스들이 같은 회차인지는 여전히 미확정.
 - **수익 모델**(스폰서십 비중 등) 언급 없음.
 - **[[vincent-wendy]] 외의 구성원** 이름이 하나도 나오지 않는다.
+
+## *Your Old Prompts Are Making Claude Worse* (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]]([[anthropic|Anthropic]]) 워크숍(원본 `ys6YQ2yfBpM`, 설명란 *"(AI Engineer)"*). Tech Bridge가 전부 한국어 내레이션으로 해설했다 — 발표 원음은 캡션에 없다. → [[prompt-debt]] · [[climbable-eval]]
 
 ## References
 

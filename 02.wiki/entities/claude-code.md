@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Claude Code
@@ -97,6 +97,10 @@ Claude Code는 이 소스에서 **비교 기준점으로도** 쓰인다 — 베�
 - [[tech-bridge-salesforce-claude-code-agentic-shift]]: [[salesforce|Salesforce]] 엔지니어 1만 5천 명 확산(해설 전달, 당사자 자료). [[agentic-coding-maturity-curve]] · [[effective-output-metric]].
 - [[tech-bridge-anthropic-code-review-seven-layers]]: Claude Code 팀의 7겹 리뷰 · 세 라운드 규칙 · CLAUDE.md / REVIEW.md 처방(해설 전달). 11-02 AI Labs 편과 같은 블로그 글이다.
 - [[tech-bridge-nick-saraev-karpathy-ai-habits]]: [[andrej-karpathy|Karpathy]]가 **Mac 데스크톱 앱 + Opus 5.5 medium effort**를 기본으로 쓰고 코드를 읽지 · 쓰지 · 터미널을 돌리지 않는다는 Saraev의 전달. 데이터 작업은 *"Claude code workflows"* 로 Sonnet에 보낸다(04:04~04:08).
+
+## `/claude-api prompt-audit` · `build-eval` · `hillclimb` (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+Anthropic이 Claude Code 명령으로 내놓았다는 세 가지(이름은 설명란 표기, ⚠️ 해설의 2차 전달). prompt-audit는 *"스킬 클라우드 MD 프롬프트 도구 설명까지 훑어서 이런 패턴을 지워줍니다."*(01:54~01:57) — 옛 모델용 주문을 지운다([[prompt-debt]]). build-eval · hillclimb은 평가를 만들고 학습/시험 분할로 오른다([[climbable-eval]]). 해설의 맺음말: *"여러분의 클로드 MD에도 그런 두 줄이 있을지 모릅니다. 오늘 한번 오딧을 돌려 보세요."*(06:30~06:34) ⚠️ 함께 언급된 *체크업 프롬프트 오딧* · *코스트 옵티마이즈*는 판독 · 확인하지 못했다.
 
 ## References
 

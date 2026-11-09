@@ -6,9 +6,9 @@ tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
 related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel, skill-linting]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-09-13
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # 스킬 eval
@@ -75,6 +75,10 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 ## Salesforce — 사내 마켓플레이스 + 있을 때/없을 때 재실행 (2026-11-08 · [[tech-bridge-salesforce-claude-code-agentic-shift]])
 
 해설 전달: 팀이 만든 스킬은 사내 마켓플레이스에서 공유하고, 효과는 eval로 본다 — *"같은 작업을 스킬이 있을 때와 없을 때로 다시 돌려보면서요."*(04:11~04:13) 이 페이지의 기본 설계(with/without 비교)를 **대규모 조직의 유통 단계**에 붙인 사례다. ⚠️ 과제 수 · 지표 · 결과는 해설에 없다.
+
+## Claude API 스킬을 hill climbing으로 — 66% → 87.9% (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+해설이 전한 Anthropic 자기 적용(⚠️ 2차 전달): *"처음 점수는 66%."*(04:19) 빠진 기능 8개를 채우고, *"클로드가 옛날 API 모양으로 코드를 쓴다는 걸 찾아내고 잘못된 채점기까지 고쳐서 24라운드만에 87.9%가 됐습니다."*(04:21~04:26) — **채점기도 고쳐졌다**는 점이 이 페이지의 앞선 사례(스킬 있음/없음 비교)와 다르다. 분할 · 되돌림 규칙은 [[climbable-eval]].
 
 ## References
 

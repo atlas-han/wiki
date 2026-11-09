@@ -6,9 +6,9 @@ tags: [self-optimizing-pipelines, pareto-frontier, model-selection, cost, failur
 aliases: [Pareto surfing, Pareto serving, 파레토 서핑, hill climber, 자기 최적화 파이프라인, failure surface, codons, rigs]
 related: [model-mixing-economics, self-harness, harness-as-platform, fixed-budget-alpha, verifiable-goals, deterministic-agent-pipeline, just-in-time-ontology, automatic-model-routing, system-1-model, action-reversibility]
 first-seen: tech-bridge-just-in-time-ontology
-sources: [tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-10-18
-updated: 2026-10-18
+updated: 2026-11-09
 ---
 
 # Pareto Surfing
@@ -63,6 +63,10 @@ updated: 2026-10-18
 - 근거는 화자 회사의 사례 하나이고 수치는 자기 보고다.
 - Hank Weave·hank·codon·rig의 정확한 정의는 자막 밖에서 확인하지 않았다.
 - *"sparks of intelligence"*: 화자도 현재 모델이 이 일을 *"barely"* 한다고 한다.
+
+## 다른 hill climber — 학습/시험 분할을 안전장치로 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+Anthropic의 `hillclimb` 명령(해설 전달, ⚠️ 2차): 평가를 학습용 · 시험용으로 나누고, *"학습 점수만 오르고 시험 점수가 그대로면 과적합을 의심하고 그 수정을 되돌립니다."*(04:11~04:15) 비용을 목표로 둘 수도 있다(*성능은 지키면서 비용만 줄여라*). 이 페이지의 조건 넷 · 단계 여섯과 비교하면 **실패 표면 탐색**보다 **과적합 방지**를 앞에 둔다 → [[climbable-eval]].
 
 ## References
 

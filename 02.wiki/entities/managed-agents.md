@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent-infrastructure, meta-harness, claude-platform]
 aliases: [Claude Managed Agents]
-sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
+sources: [anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 links:
   - "https://platform.claude.com/docs/en/managed-agents/overview"
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-11-09
 ---
 
 # Managed Agents
@@ -58,6 +58,10 @@ updated: 2026-10-19
 ## 관련 — Dynamic workflows
 
 [[claude-code|Claude Code]]의 [[dynamic-workflows|dynamic workflows]]는 동일 사상을 *제품 표면*에서 구현: **coordination이 대화 바깥**에서 돌고 진행상황이 **resumable checkpoint**로 저장됨 — 본 페이지의 session-log 외부화([[context-resets-and-compaction]]) 및 stateless harness 원칙과 동형. "many brains, many hands"가 한 세션의 10s~100s parallel subagent로 나타난 형태.
+
+## 며칠짜리 에이전트의 하네스로 — Lance Martin 워크숍 해설 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]]의 [[ai-engineer|AI Engineer]] 워크숍 마지막 챕터를 전한 한국어 해설(⚠️ 2차 전달). 작업 길이가 *사람 기준 4분 남짓*(Claude 3 Opus) → *12시간*(발표 그래프) → *하루 이틀*로 간다는 맥락에서 Managed Agents를 소개한다. 하네스 · 샌드박스 분리, 덧붙이기만 되는 세션 로그, vault 참조(05:44~05:59) — 모두 기존 기록과 같다. 워크숍의 주제 자체는 Managed Agents가 아니라 **프롬프트 · 캐시 · 평가 · 노력 수준으로 비용과 성능을 함께 잡기**다 → [[prompt-debt]] · [[climbable-eval]].
 
 ## References
 

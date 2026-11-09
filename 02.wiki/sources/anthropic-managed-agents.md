@@ -8,7 +8,7 @@ author: Lance Martin, Gabe Cemaj, Michael Cohen
 date-published: 2026
 ingested: 2026-05-25
 created: 2026-05-25
-updated: 2026-10-19
+updated: 2026-11-09
 ---
 
 # Anthropic — Scaling Managed Agents: Decoupling the brain from the hands
@@ -73,6 +73,10 @@ updated: 2026-10-19
 - 모델: [[claude-sonnet-4-5]], [[claude-opus-4-5]]
 - 저자: Lance Martin, [[gabe-cemaj|Gabe Cemaj]], Michael Cohen
 - 개념: [[agent-harness-design]], [[brain-hands-decoupling]], [[context-anxiety]], [[context-resets-and-compaction]], [[context-engineering]], [[pets-vs-cattle]]
+
+## 공저자의 후속 발표 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+공저자 [[lance-martin|Lance Martin]]의 2026-11 AI Engineer 워크숍 해설이 같은 구조(하네스 · 샌드박스 분리, append-only 세션 로그, vault)를 **며칠짜리 작업**의 근거로 다시 소개한다(05:44~05:52). 글의 *하네스 가정은 낡는다*는 같은 워크숍에서 프롬프트 문장 단위로 내려온다 → [[prompt-debt]].
 
 ## References
 

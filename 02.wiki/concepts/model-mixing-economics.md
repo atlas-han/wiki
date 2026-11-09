@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-09-09
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # 모델 혼합의 경제학
@@ -87,6 +87,14 @@ updated: 2026-11-08
 - Salesforce(해설 전달): 가장 큰 실수가 뭐였냐는 질문에 *"일에 맞는 모델을 맞는 가격에 쓰는 것."*(05:26~05:28) 평범한 파일 하나에 무거운 모델을 쓰는 사람들이 있었다. 9월 글의 원칙은 *"일상적인 일은 가벼운 모델로 가장 강력한 모델은 정말 어려운 문제에만"*(05:34~05:36) — 24시간 버그는 *큰 모델이 맞았던* 경우다. 비용 쪽 지표는 [[effective-output-metric|점수당 비용]].
 - Karpathy(Saraev 전달): Opus 5.5 medium effort가 Sonnet 서브에이전트들에게 위임하는 구조를 좋아한다 — *"Opus 5.5 maybe on medium effort delegating to a bunch of Sonnet subagents."*(04:18~04:22) 데이터 작업은 Claude가 만든 싼 필터로 먼저 거른다.
 - ⚠️ 둘 다 원칙 진술이고 비용 수치는 없다.
+
+## 두 번째 손잡이 — 똑똑한 모델을 덜 애쓰게 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]] 워크숍 해설(⚠️ 벤더 자기 실험의 2차 전달). 원칙: *"똑똑한 모델을 덜 애쓰게 하는 쪽이 덜 똑똑한 모델을 오래 고민시키는 것보다 싸고 잘한다는 거예요."*(05:02~05:06) 조언: *"맥스로 시작하지 말고 오퍼스 5.1 로우 부터 시작해 보라."*(05:22~05:26)(⚠️ *5.1* ASR 미확정)
+
+- ⭐ 이 페이지는 주로 **모델 크기**(계획은 큰 모델, 실행은 작은 모델)를 다뤄 왔다. 이 편은 **노력(effort) 수준**을 따로 떼어 같은 비교 축에 올린다 — 블로그 예: Cursor bench에서 Fable 5.1 낮은 노력 = Fable 5 높은 노력, 비용 3분의 1(05:14~05:19).
+- 그러나 같은 영상의 고객센터 실험 사다리는 **더 작은 모델로 내려간다**(Opus 4.8 높음 4.6센트 → Opus 5.0(ASR) 낮음 1.9센트 → Sonnet 5 낮음 1센트, 시험용 78.6% → 90.5%). 두 결론(*큰 모델 · 낮은 노력* vs *작은 모델로 하강*)은 충돌하지 않고, **노력을 먼저 낮추고 그다음 크기를 낮춘다**로 읽힌다(위키의 읽기). → [[climbable-eval]]
+- ⚠️ 시험 세트 14건. 11-04 Greptile 편의 *혼합의 안전장치는 평가 셋이다*와 같은 구조로, 여기선 그 평가 셋이 학습/시험으로 나뉘어 있다.
 
 ## References
 

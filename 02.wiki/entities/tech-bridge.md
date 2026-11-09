@@ -171,8 +171,9 @@ sources:
   - tech-bridge-nick-saraev-karpathy-ai-habits
   - tech-bridge-anthropic-code-review-seven-layers
   - tech-bridge-salesforce-claude-code-agentic-shift
+  - tech-bridge-lance-martin-old-prompts-make-claude-worse
 created: 2026-06-03
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Tech Bridge
@@ -1634,5 +1635,15 @@ updated: 2026-11-08
 - ⭐ **해설 두 편이 `ko-orig`를 갖는 Korean original 구성**이다(`ko` = `ko-orig` md5, en-orig = 영어 더빙 + 발췌 원음 — 10-26 · 10-28 편과 같다). 내레이션은 ko-orig, 영어 발췌는 en-orig로 인용했다. Anthropic 편의 John Kim 발췌는 하나가 무캡션이고, 다른 하나는 **en-orig가 비어 ko-orig의 영어 ASR로만** 남았다(처음 기록하는 구성). Karpathy 편은 영어 원본 오디오만(`ko` `tlang=ko`, `en` ≠ `en-orig`).
 - `upload_date` / KST: Anthropic 편 20261107 = 11-07 12:00, Karpathy 편 20261107 = 11-07 18:00, Salesforce 편 20261108 = **11-08 09:00(이 회차 발화 10분 전)**.
 - ⚠️ 세 편 모두 **당사자 · 제3자 자료의 2차 전달**이다(Anthropic 블로그 · Salesforce 글과 Claude 고객 사례 · Saraev의 Karpathy 정리). 원 자료는 열지 않았다. Salesforce 편 01:38의 제품명(원음 *클로드 포스* vs 더빙 *Agentforce*), Anthropic 편의 기간 *딸 만에*(더빙 석 달 vs AI Labs 넉 달), Karpathy 편의 *"now he works at Anthropic"* 은 미확정이다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-08 업로드 — Lance Martin 워크숍 해설 (2026-11-09 ingest)
+
+[[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다 | 옛날 프롬프트가 Claude를 망치는 이유 (Anthropic Lance Martin)]](`BqUhlnVlEbo`, 6:36, 공식 챕터 8) — 한국어 해설, 전부 내레이션 ([[lance-martin]](신규) · [[prompt-debt]](신규) · [[climbable-eval]](신규) · [[prompt-caching]] · [[harness-pruning]] · [[model-mixing-economics]] · [[managed-agents]])
+
+- Korean original 구성(`ko` = `ko-orig` md5)인데 **en-orig에 원음 발췌가 하나도 없다** — 전 구간 영어 더빙이다. 인용은 전부 ko-orig. 무캡션 네 곳(00:49~00:59 · 01:17~01:25 · 03:10~03:14 · 06:15~06:23)은 두 트랙 모두 비어 있다.
+- `upload_date` 20261108 = **11-08 18:00 KST**(11-08 회차 발화 뒤 게시).
+- ⚠️ Anthropic 자기 실험 · 블로그의 2차 전달(원 발표 `ys6YQ2yfBpM` · 블로그 미열람). 모델 버전 *오퍼스 5.0* · *오퍼스 5.1*은 ASR, 영어 더빙은 *Fable* 자리를 *Haiku 3.5*로 말한다 — 확정하지 않는다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

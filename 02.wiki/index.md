@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Index
@@ -175,6 +175,7 @@ updated: 2026-11-08
 - [[emily-bache]] — TDD · 에이전트 코딩 채널 진행자(설명란 · tags 근거, 발화엔 이름 없음). codecentric 제작자들을 인터뷰해 [[exact-coding|EXACT]] 소개 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 소속 · 경력 미상
 - [[garry-tan]] — Y Combinator 대표(설명란 · 내레이션 근거). 사내 에이전트 Straylight, 자기 데이터를 대부분 넘긴 개인 에이전트, 연 10만~20만 달러 토큰, 2~3년 보편화 전망 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 투자자 · [[gstack]] 제작자의 진술
 - [[john-kim]] — Anthropic Claude Code 팀 코드 리뷰 글을 소개한 영상의 제작자로 보이는 개발자(설명란 · 영어 더빙 근거, 원음 ASR엔 "종"뿐). *배포한 사람이 책임진다* 발췌 ([[tech-bridge-anthropic-code-review-seven-layers]]) ⚠️ 소속 · 직함 미상, 발췌 하나는 무캡션
+- [[lance-martin]] — [[anthropic|Anthropic]](직함 미발화). [[anthropic-managed-agents]] 공저자, AI Engineer 워크숍 *Your Old Prompts Are Making Claude Worse* 발표자 — 프롬프트 부채 · 캐시 순서 · 오를 수 있는 평가 · 똑똑한 모델을 덜 애쓰게 ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -414,6 +415,7 @@ updated: 2026-11-08
 - [[company-digital-twin]] — 회사를 **행동의 시퀀스**로 표현해 다음 행동을 예측하고, 실제 회사 대신 트윈에 반사실적 개입(광고 · 배송 · 대출)을 돌려 고른 것만 운영에 적용 ([[mikhail-parakhin|Parakhin]] · [[shopify|Shopify]]) ⚠️ 당사자 진술 하나 · 검증 방법 미발화
 - [[code-blind-first-user-test]] — 빌드를 본 적 없고 코드 읽기가 막힌 새 에이전트에게 실제 앱을 처음 쓰는 고객처럼 쓰게 해 막히는 곳을 찾는다. 서브에이전트, 임시 DB, 터미널 우회까지 막는 훅. 출발점은 Claude Code 팀이 매일 제품을 직접 쓰는 것 ([[tech-bridge-ai-labs-claude-code-verification-review-loop]]) ⚠️ AI Labs 1회 시연, 결과 · 비용 미제시
 - [[effective-output-metric]] — 줄 수 대신 커밋이 바꾼 것의 가치를 ML 모델이 시니어 패널처럼 채점하는 점수. Salesforce × Stanford, 두 배 → 점수당 비용 ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 해설의 2차 전달, 채점 기준 · 정확도 미상
+- [[climbable-eval]] — 모델이 스스로 오를 수 있는 평가의 네 조건(모델 순서 · 생각에 반응 · 천장 · 안정), 막힌 문제, `build-eval`, 학습/시험 분할 `hillclimb`과 되돌림 규칙. Claude API 스킬 66% → 87.9%, 비용 목표 시험용 78.6% → 90.5% ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 벤더 자기 실험, 시험 세트 14건
 
 ### Architectures
 - [[always-on-agent-architecture]] — 하네스를 서버로: 루프·상태는 서버와 DB, 컴퓨터는 따로 자고 깨는 VM, 트리거 → dedupe router → 알림 heuristic → 우선순위 큐, thin client와 단일 도구 send user, 재시도해도 안전한 durable workflow, 사용자는 사다리 맨 끝 ([[tech-bridge-lee-robinson-always-on-agents]]) ⚠️ 단일 당사자 소스
@@ -749,6 +751,7 @@ updated: 2026-11-08
 - [[exact-coding]] — 사람들이 예시 매핑으로 무엇을 만들지 정하고, 테스트 목록과 예측형 TDD로 에이전트를 이끄는 워크플로. 리팩터링 서브에이전트의 이득은 Opus 5.5에서 작다 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 제작자 자체 실험, 표의 값 미확인
 - [[agentic-coding-maturity-curve]] — 엔지니어의 에이전트 코딩 사용 깊이를 9단계 · 4레벨로 그린 Salesforce의 지도. 초반 상승 → 자신감의 계곡 → 레벨 3 서브에이전트 병렬 → 레벨 4 자율(CI 실패 → 수정 → 리뷰 · 머지) ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 그림 미확인, 레벨 2 · 단계 이름 없음
 - [[share-data-and-prompt-not-app]] — 모델이 데이터 위에 어떤 앱이든 만들 수 있다면 앱 대신 데이터 소스와 프롬프트를 공유한다. *"wrappers around a core truth, which is the data"* ([[tech-bridge-nick-saraev-karpathy-ai-habits]]) ⚠️ Saraev의 Karpathy 습관 전달 + 해석
+- [[prompt-debt]] — 옛 모델용 주문(*두 번 확인해* · 모순된 규칙 · 낡은 thinking 설정 · 손수 스크래치패드)이 새 모델의 비용을 올리고 성능을 깎는다. `/claude-api prompt-audit`로 갚는다(비용 18% + 9% ↓) ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 벤더 2차 전달
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1020,10 +1023,11 @@ updated: 2026-11-08
 - [[tech-bridge-salesforce-claude-code-agentic-shift]] — 한국어 해설(6:44, 챕터 9, Korean original · ko-orig 원 ASR, 영어 발췌 2곳 화자 미상, 2026-11-08 09:00 KST): 세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나 — 24시간 버그, headless화, [[effective-output-metric|유효 산출량]], [[agentic-coding-maturity-curve|9단계 성숙도 곡선]], 장애 대응 에이전트, 스킬 마켓플레이스 + eval, 장애 5% 감소, 실패 세트, *검증 없는 자율은 자신감 연극*, 증거 요구, 일에 맞는 모델 ⚠️ 당사자 자료의 2차 전달, 제품명 *클로드 포스* vs *Agentforce* 미확정
 
 ---
+- [[tech-bridge-lance-martin-old-prompts-make-claude-worse]] — 한국어 해설(6:36, 챕터 8, Korean original · ko-orig 원 ASR, 영어 원음 발췌 없음, 2026-11-08 18:00 KST): [[lance-martin|Lance Martin]] 워크숍 — [[prompt-debt|프롬프트 부채]] · [[prompt-caching|캐시 층 순서]] · [[climbable-eval|오를 수 있는 평가와 hillclimb]] · 똑똑한 모델을 덜 애쓰게 · 며칠짜리 하네스([[managed-agents]]) ⚠️ Anthropic 자기 실험의 2차 전달, 모델 버전 일부 ASR 미확정
 
 ## 통계
 
-- 총 페이지 수: 984 (976 → 984, + 2026-11-08 Tech Bridge 3편(11-07 ~ 11-08 업로드 — Anthropic 코드 리뷰 · Karpathy 습관 · Salesforce): source 3 · entity 2(john-kim · hackertube) · concept 3(agentic-coding-maturity-curve · effective-output-metric · share-data-and-prompt-not-app) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 984과 일치)
+- 총 페이지 수: 988 (984 → 988, + 2026-11-09 Tech Bridge 1편(11-08 업로드 — Lance Martin 워크숍 해설): source 1 · entity 1(lance-martin) · concept 2(prompt-debt · climbable-eval) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 988과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-08 (Tech Bridge **3편** — 11-07 업로드 [[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다]](`Fxy8Jr77nKc`) · [[tech-bridge-nick-saraev-karpathy-ai-habits|카파시가 실제로 AI를 쓰는 법]](`lcp0_GnT54o`), 11-08 업로드 [[tech-bridge-salesforce-claude-code-agentic-shift|세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]](`iTIDadQ6Ues`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-07 (Tech Bridge **2편** — 11-06 업로드 [[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: EXACT]](`hRhjL6BsxTU`) · [[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]](`UIMTEGqP3ys`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-09 (Tech Bridge **1편** — 11-08 업로드 [[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다]](`BqUhlnVlEbo`))
+- 직전 ingest: 2026-11-08 (Tech Bridge **3편** — 11-07 업로드 [[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다]](`Fxy8Jr77nKc`) · [[tech-bridge-nick-saraev-karpathy-ai-habits|카파시가 실제로 AI를 쓰는 법]](`lcp0_GnT54o`), 11-08 업로드 [[tech-bridge-salesforce-claude-code-agentic-shift|세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]](`iTIDadQ6Ues`). `Yhck-x6VuLs` 멤버 전용 지속)

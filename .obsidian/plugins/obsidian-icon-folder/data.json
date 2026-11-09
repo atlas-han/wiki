@@ -1231,5 +1231,10 @@
   "02.wiki/entities/hackertube.md": "LiWrench",
   "02.wiki/concepts/agentic-coding-maturity-curve.md": "LiPuzzle",
   "02.wiki/concepts/effective-output-metric.md": "LiPuzzle",
-  "02.wiki/concepts/share-data-and-prompt-not-app.md": "LiPuzzle"
+  "02.wiki/concepts/share-data-and-prompt-not-app.md": "LiPuzzle",
+  "01.raw/articles/2026-11-08_두 번 확인해 한 줄에 비용 48% 샜다 옛날 프롬프트가 Claude를 망치는 이유 (Anthropic Lance Martin).md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-lance-martin-old-prompts-make-claude-worse.md": "LiVideo",
+  "02.wiki/entities/lance-martin.md": "LiUser",
+  "02.wiki/concepts/prompt-debt.md": "LiPuzzle",
+  "02.wiki/concepts/climbable-eval.md": "LiPuzzle"
 }

@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 links: []
 created: 2026-10-09
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Claude Opus 5.5
@@ -37,6 +37,10 @@ updated: 2026-11-08
 ## 2026-11-08 — medium effort 기본 + Sonnet 위임 (Karpathy 습관, [[tech-bridge-nick-saraev-karpathy-ai-habits]])
 
 Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his default. He does not use max effort."*(00:52~00:54) 그리고 Opus 5.5 medium이 Sonnet 서브에이전트들에게 위임하는 구조를 좋아한다. *Land or water?* 실험을 *"most of the world's knowledge is now compressed in the neurons of these models like Opus 5.5"*(03:13~03:17)의 예로 든다. ⚠️ 2차 전달, 비교 측정 없음.
+
+## 4.8 → 5.5 교체만으로 비용 약 18% ↓ (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]] 워크숍 해설(⚠️ 벤더 자기 실험의 2차 전달): *"오퍼스 4.8에서 5.5로 해도 비용이 18%쯤 줄었는데 오디서를 한번 돌리자 9%가 더 줄었습니다."*(01:58~02:02) → [[prompt-debt]]. 이 페이지의 가격 기록 가운데 **Anthropic 쪽 숫자**는 이것이 처음이다(단, 단가가 아니라 한 과제의 상대 비용). ⚠️ 같은 영상 04:40의 *오퍼스 5.0 낮은 노력*과 같은 모델인지 모른다 — ASR · 더빙 모두 *5.0*이다.
 
 ## References
 

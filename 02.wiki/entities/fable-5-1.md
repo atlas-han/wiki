@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-09-14
-updated: 2026-10-18
+updated: 2026-11-09
 ---
 
 # Fable 5.1
@@ -38,6 +38,10 @@ updated: 2026-10-18
 - 같은 날 [[tech-bridge-zuckerberg-muse-personal-agent]]: ko **"페이블 5.1과 오푸스 5"** — 음차로 보존.
 
 → **같은 이름이 세 소스에서 소실·음차·보존으로 갈린다.** 검색 시 `Fable` · `페이블` 둘 다 본다.
+
+## 낮은 노력의 Fable 5.1 = 높은 노력의 Fable 5 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+Claude 블로그 예시를 한국어 해설이 전한 것(⚠️ 2차 전달): *"커서 벤치에서 페이블 5.1 낮은 노력이가 페이블 5 높은 노력과 같은 성능을 3분의 1 비용으로 냈습니다."*(05:14~05:19) 이 위키에서 Fable 5.1이 **노력 수준 비교**의 주어로 나온 첫 사례다 → [[model-mixing-economics]]. ⚠️ 영어 더빙은 같은 자리를 *Haiku 3.5* · *Haiku 3*로 말한다(더빙 오류로 본다). *Fable 5*(버전 없는 .0)는 위키에 페이지가 없다.
 
 ## References
 

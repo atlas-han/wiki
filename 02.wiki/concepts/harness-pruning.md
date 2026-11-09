@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-09-05
-updated: 2026-10-29
+updated: 2026-11-09
 ---
 
 # Harness Pruning
@@ -96,6 +96,14 @@ pruning은 축소가 아니라 **재배치**다.
 **같은 전제 위에 서 있다** — *모델은 계속 좋아지고 하니스의 가정은 낡는다*. 결론이 갈리는 지점은 **가정을 어느 방향에 거느냐**다: 모델이 **못 하는 것**에 걸면 낡고, 모델이 **점점 잘하게 될 것**에 걸면 자동으로 개선된다.
 
 ⚠️ 화자 스스로 이것을 **"편법(hack)"** 이라 부르고 한시적임을 명시한다 — *"AGI가 등장하면 그들은 그냥 브라우저를 쓸 수도 있겠죠"*(14:24~14:28).
+
+## 지우는 단위가 프롬프트 문장으로 — prompt-audit (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+한국어 해설이 전한 [[lance-martin|Lance Martin]]의 말: *"렌스마틴은 프롬프트에도 코드처럼 빚이 쌓인다고 말합니다."*(00:59~01:01) 옛 모델용 *단계별로 생각해라 · 두 번 확인해라*가 새 모델에선 *"문자 그대로 따르느라 토큰을 더 쓰죠."*(01:12~01:13) → [[prompt-debt]](신규)
+
+- 이 페이지의 ⚠️ 유보(*지워도 되는지 판단하는 기준 · 절차는 소스에 없다*)에 대해 **도구 + 평가** 한 쌍이 처음 나왔다: 찾기는 `/claude-api prompt-audit`, 확인은 학습/시험 분할의 `hillclimb`([[climbable-eval]]).
+- 수치(⚠️ 벤더 자기 실험): 모델 교체만으로 비용 약 18% ↓, audit 한 번에 9% 더 ↓, 정확도 약 2%p ↑(01:58~02:05). 손수 짠 스크래치패드가 내장 생각과 부딪혀 도구 호출을 실행하지 않은 사례는 *스캐폴드가 해가 된다*의 구체 예다.
+- 같은 사람이 공저한 05-25 [[anthropic-managed-agents]]의 *하네스는 가정의 다발이고 가정은 낡는다*가 반 년 뒤 프롬프트 층으로 내려온 셈이다.
 
 ## References
 

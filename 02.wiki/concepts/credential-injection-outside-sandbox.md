@@ -6,9 +6,9 @@ tags: [credentials, sandbox, proxy, access-control, privilege-escalation, securi
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
 related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation, agent-sandboxing]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-09-10
-updated: 2026-10-19
+updated: 2026-11-09
 ---
 
 # 샌드박스 밖 자격증명 주입
@@ -71,6 +71,10 @@ updated: 2026-10-19
 | 에이전트는 | 토큰 없이 프록시 호출 | 그 사람 *으로서* 행동 | 그 사람의 *데이터만* 받음 |
 
 세 소스는 서로를 모르며 **세 위협에 같은 벽**이 답한다. 차이는 Google Cloud가 신원을 프록시가 아니라 **도구 시그니처에서 아예 지운다**는 점이다 — 항공편 조회 도구는 날짜만 받는다. 그래서 [[lethal-trifecta]]의 첫째 요소(비공개 데이터)에 닿는 주체가 사용자로 고정되고, 에이전트 컨텍스트에 PII가 흐르지 않는다. 이 개념의 미해결(*프록시 구현·위임·토큰 수명*)은 그쪽에도 그대로 남는다.
+
+## 며칠짜리 에이전트와 금고 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]] 워크숍 해설(⚠️ 2차 전달): *"클로드는 API 키를 직접 보지 못하고 금고에는 키를 참조만 해요."*(05:55~05:59)(금고 = vault, ASR 추정) 동기는 작업 길이다 — *"며칠씩 혼자 일하는 에이전트에게 비밀번호를 지워주는 건 좀 무섭잖아요."*(06:00~06:03)(*지워주는* → 쥐여주는, 추정). 10-19 워크숍의 vault 설명과 같은 원칙이고 새 세부는 없다.
 
 ## References
 

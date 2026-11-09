@@ -2583,3 +2583,20 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 3편이지만 모두 짧아(4~7분) 서브에이전트 없이 오케스트레이터가 직접 처리했다. launchd 정시 실행분이다(부모 `run-ingest.sh` 확인). ⭐ **한국어 인용도 기계 대조했다** — 새 스크립트 `.scratch/tb1108/q.py`는 공백 · 구두점을 모두 지운 정규화로 ko-orig와 en-orig를 함께 다룬다(`(@)` 자동 채움, `(@k)`는 ko 코퍼스 강제). 한국어 ASR의 띄어쓰기가 틀려도 맞는다. 손으로 적은 시각 약 20곳을 커밋 전에 고쳤다. ⭐ **영어 발췌가 en-orig에 없고 ko-orig의 영어 ASR로만 남는 구성**을 처음 봤다(Anthropic 편 06:01~06:13) — 그런 인용은 낱말 판독이 불확실하다고 적었다.
+
+## [2026-11-09] ingest | Tech Bridge — 11-08 업로드 1편 ('두 번 확인해' 한 줄에 비용 48% 샜다 — 옛날 프롬프트가 Claude를 망치는 이유, Anthropic Lance Martin 해설)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 신규는 11-08 18:00 KST 게시 1편. 자막 429 없음.
+
+**신규 source 1 · entity 1 · concept 2**, 기존 페이지 보강 15개(+ tech-bridge), index **984 → 988**(실측 일치).
+
+- `BqUhlnVlEbo`(6:36, 챕터 8) → [[tech-bridge-lance-martin-old-prompts-make-claude-worse]]: 한국어 해설, 전부 내레이션. Korean original, `ko` = `ko-orig`(원 ASR), en-orig = 전 구간 영어 더빙(원음 발췌 없음).
+  - 신규: [[lance-martin]] · [[prompt-debt]] · [[climbable-eval]]
+  - 보강: [[prompt-caching]] · [[harness-pruning]] · [[model-mixing-economics]] · [[cost-vs-score-frontier]] · [[brain-hands-decoupling]] · [[credential-injection-outside-sandbox]] · [[managed-agents]] · [[anthropic]] · [[claude-code]] · [[fable-5-1]] · [[claude-opus-5-5]] · [[skill-evals]] · [[pareto-surfing]] · [[ai-engineer]] · [[anthropic-managed-agents]]
+  - ⚠️ 원 발표(`ys6YQ2yfBpM`) · Claude 블로그 · claude.dev 글 미열람 — Anthropic 자기 실험의 2차 전달. 모델 버전 *오퍼스 5.0* · *오퍼스 5.1*은 ASR(더빙도 5.0 / *Opus 3.5*), *Fable* 자리를 더빙은 *Haiku 3.5*로 말함 → 확정하지 않음. 무캡션 네 곳. *체크업 프롬프트 오딧* · *규칙을 못 하자* 판독 불가.
+  - 페이지화하지 않음: Opus 4.8 · Opus 5.0 · Opus 5.1 · Sonnet 5 · Fable 5 · τ²-bench · OfficeQA · Cursor bench · cost-optimize 명령(이름만 나옴).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+1편 · 6:36이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1109/`: `lines.py` · `meta.py` · `q.py`(11-08 것 복사) · `merge.py` · `shared.py`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check` 85건 불일치 0. 이번 en-orig는 원음 발췌가 없는 **순수 더빙**이라 인용 코퍼스는 ko-orig 하나였다. 더빙은 모델 이름을 바꾼다(*Fable 5.1* → *Haiku 3.5*, *Opus 5.1* → *Opus 3.5*) — 더빙으로 모델 버전을 판독하지 말 것.

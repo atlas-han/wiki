@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Anthropic
@@ -110,6 +110,10 @@ Anthropic이 *AI-Native SDLC Playbook*을 공개했고, 이 위키는 [[tech-bri
 ## 2026-11-08 — Claude Code 팀의 코드 리뷰 (한국어 해설, [[tech-bridge-anthropic-code-review-seven-layers]])
 
 같은 claude.dev 블로그 글의 세 번째 전달 경로(10-30 Osmani 대담 · 11-02 AI Labs · 이 편). 해설이 전하는 수치: 코드의 90%를 AI가 씀, 코드 2배 · 되돌림 40% 넘게 감소, 하루 변경 5월 2,500 → 9월 3만+, 리뷰 코멘트 16% → 54%, 첫 통과 65% → 78%, 5회+ 루프 8.9% → 1.5%. ⚠️ 당사자 자료의 2차 전달, 미대조. 같은 날 [[tech-bridge-salesforce-claude-code-agentic-shift]]는 Claude 공식 채널의 Salesforce 고객 사례를 근거로 쓴다.
+
+## 옛날 프롬프트가 Claude를 망친다 — 비용 · 성능 다섯 가지 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]]의 [[ai-engineer|AI Engineer]] 워크숍과 Claude 블로그 두 글을 Tech Bridge가 한국어로 해설했다(⚠️ 벤더 자기 실험의 2차 전달, 원 자료 미열람). 고객센터 시뮬레이션: *"답하기 전에 두 번 검증하라는 한 줄은 티켓당 비용을 48% 올렸는데 정확도는 그대로였어요."*(00:22~00:26) 다섯 처방 — `/claude-api prompt-audit`([[prompt-debt]]), 캐시 층 순서([[prompt-caching]]), `build-eval` · `hillclimb`([[climbable-eval]]), *똑똑한 모델을 덜 애쓰게*([[model-mixing-economics]]), 며칠짜리 하네스([[managed-agents]]). ⚠️ 모델 버전(*오퍼스 5.0* · *오퍼스 5.1*)은 ASR이라 확정하지 않는다.
 
 ## References
 

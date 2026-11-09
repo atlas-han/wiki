@@ -6,9 +6,9 @@ tags: [prompt-caching, context-engineering, cost, latency, harness-design, compa
 aliases: [prompt caching, prompt cache, 프롬프트 캐시, 캐시 적중, cache hit, cache miss, cache warming, 캐시 예열, KV cache hit ratio]
 related: [context-engineering, harness-engineering, context-resets-and-compaction, deferred-tool-context, toolbox-pattern, scripts-that-talk-back, transcript-classifier, automatic-model-routing, model-mixing-economics, trusted-throughput, always-on-agent-architecture, openclaw, fireworks-ai, hidden-harness-calls, fork-subagent]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-lance-martin-old-prompts-make-claude-worse]
 created: 2026-10-18
-updated: 2026-11-03
+updated: 2026-11-09
 ---
 
 # 프롬프트 캐싱 (Prompt Caching)
@@ -50,6 +50,14 @@ updated: 2026-11-03
 - 적중률·절감액 수치는 이 위키의 어느 소스에도 없다.
 - 공급자별 캐시 창 길이·가격은 이 페이지가 다루지 않는다. Robinson의 10분·60분은 *"maybe"*다.
 - 캐시를 지키려는 설계가 다른 목표(동적 지시, 모델 라우팅, 도구 지연 로딩)와 부딪힌다. 이 위키는 그 trade-off를 측정한 소스를 아직 갖고 있지 않다.
+
+## 층 순서로 적은 접두 — 공용 → CLAUDE.md → 세션 → 메시지 (2026-11-09 · [[tech-bridge-lance-martin-old-prompts-make-claude-worse]])
+
+[[lance-martin|Lance Martin]]([[anthropic|Anthropic]])의 워크숍을 전한 한국어 해설이다(⚠️ 2차 전달). 캐시 읽기 단가: *"반복되는 앞 부분을 캐시에서 읽으면 랜스 마틴 말로는 기본 입력의 10분의 1 정도만 냅니다."*(02:23~02:29) 조건은 바이트 단위 일치다 — *"시스템 프롬프트에 현재 시각 하나만 넣어도 매번 처음부터 다시 계산합니다."*(02:34~02:37)
+
+- ⭐ 처음으로 **층 순서**를 명시한다: *"모두가 같이 쓰는 시스템 지시와 도구를 맨 앞에, 그다음 프로젝트별 클로드 MD, 세션 상태, 그리고 매 턴 늘어나는 메시지를 맨 뒤에."*(02:45~02:51) — 변하는 빈도가 낮은 것부터 쌓는다.
+- 벤더 수치: τ²-bench(ASR *타우 투 벤치*, 추정) 프롬프트의 93% 캐시 · 통과율 변화 없이 비용 73% ↓, OfficeQA 약 72% ↓(02:54~03:06). 비용 최적화 명령(*코스트 옵티마이즈*)으로 쟀다고 한다.
+- 11-03 Better Stack 편의 *캐시 읽기도 한도를 쓴다*와 같은 *10분의 1* 단가를 말하지만 결론 방향이 다르다 — 이쪽은 API 비용, 그쪽은 구독 한도.
 
 ## References
 

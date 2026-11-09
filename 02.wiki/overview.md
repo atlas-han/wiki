@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-08
+updated: 2026-11-09
 sources: []
 ---
 
@@ -290,6 +290,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-06*: [[tech-bridge]] **1편** ingest(11-05 업로드, 영어 원본 오디오만). [[tech-bridge-sandeep-swadia-personal-ai-agent|반칙 같은 생산성, 나를 아는 AI 에이전트 하나면 됩니다]] — [[sandeep-swadia|Sandeep Swadia]](설명란 근거)가 코딩이 아닌 일상 사용자의 눈으로 개인 에이전트를 말한다. AI 인턴 무리를 관리하는 대신 나를 아는 비서실장 하나를 두라는 주장이고, 쓸 자리를 조각 · 홍수 · 주기 · 미래 네 힘으로 나눈다 → [[personal-agent-four-forces]]. 화자가 스스로 문지기 위험(*필터가 무엇을 볼지 정한다*)을 꺼내고, 건강 · 금융 정보는 주지 않는다고 선을 긋는다. 효과 측정은 없고, 통계는 문제의 크기만 말하며 미확인이다.
 - *2026-11-07*: [[tech-bridge]] **2편** ingest(11-06 업로드, 둘 다 영어 원본 오디오만). [[tech-bridge-emily-bache-exact-coding-tdd|바이브코딩을 멈추세요: EXACT]] — [[emily-bache|Emily Bache]](설명란 근거)가 [[exact-coding|EXACT]] 제작자들을 인터뷰한다. 사람들이 예시로 무엇을 만들지 정하고 에이전트가 예측형 TDD로 만든다. 자체 실험에서 품질은 오르고 토큰은 늘며, 리팩터링 서브에이전트의 이득은 모델이 좋아지며 줄었다. [[tech-bridge-garry-tan-agents-two-years|게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다]] — [[garry-tan|Garry Tan]]이 연 10만~20만 달러 토큰의 개인 에이전트와 [[gstack]]을 말하고, 경쟁이 [[personal-ai-platform-war|어느 에이전트를 쓰느냐]]로 옮겨 간다며 개인 AI의 Linux를 원한다. 표의 값 · 전망은 확인하지 못했다.
 - *2026-11-08*: [[tech-bridge]] **3편** ingest(11-07 ~ 11-08 업로드, 해설 두 편은 Korean original). [[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다]] — Anthropic Claude Code 팀의 리뷰를 한국어로 다시 정리한다. 희소 자원은 사람의 주의력이고, 리뷰는 관문이 아니라 코드를 쓰는 내내 도는 7겹(투표하는 AI 리뷰 · 위험도별 승인 · 플래그 · 롤백)이며, 50라운드 루프는 첫 리뷰부터 있던 코드를 조금씩 다시 찾은 탓이라 [[review-loop-termination|세 라운드 규칙]]으로 끊었다. [[tech-bridge-salesforce-claude-code-agentic-shift|세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]] — 같은 *코드 2배, 사고는 늘지 않음* 주장을 고객사 쪽에서 한다: 줄 수 대신 [[effective-output-metric|유효 산출량]], [[agentic-coding-maturity-curve|9단계 성숙도 곡선]]과 자신감의 계곡, 실패 세트로 모델 교체, 그리고 *스스로 리뷰해* 대신 *증거를 보여줘*([[agent-change-evidence]]). [[tech-bridge-nick-saraev-karpathy-ai-habits|카파시가 실제로 AI를 쓰는 법]] — [[nick-saraev|Nick Saraev]]가 [[andrej-karpathy|Karpathy]]의 습관을 모은다: 코드를 보지 않고, 짧게 묻고, 그림을 요청하고, 앱 대신 [[share-data-and-prompt-not-app|데이터와 프롬프트를 나눈다]]. 세 편 모두 당사자 · 제3자 자료의 2차 전달이고 원 자료는 열지 않았다.
+- *2026-11-09*: [[tech-bridge]] **1편** ingest(11-08 업로드, Korean original · 전부 내레이션). [[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다]] — [[lance-martin|Lance Martin]](Anthropic)의 AI Engineer 워크숍을 한국어로 정리한다. 옛 모델용 주문은 새 모델에서 [[prompt-debt|빚]]이 되고(`/claude-api prompt-audit`), 캐시는 층 순서로 지키고, 평가는 [[climbable-eval|오를 수 있게]] 만들어 학습/시험 분할로 과적합 없이 오르며, *똑똑한 모델을 덜 애쓰게* 하는 편이 싸고 잘한다는 주장이다. [[harness-pruning]]의 *가정은 낡는다*가 프롬프트 문장 단위로 내려왔다. ⚠️ Anthropic 자기 실험의 2차 전달, 시험 세트 14건, 모델 버전 일부 ASR 미확정.
 
 ---
 
