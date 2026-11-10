@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [taste, judgment, design, differentiation, learning, scarcity, ai-slop]
 aliases: [taste, judgment, 취향, 판단력, amplified craft]
-related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value, primitives-before-features]
+related: [signal-layer, ai-slop, decision-quality, cognitive-offloading, multimodal-elicitation, slop-probes, no-one-shot-design, sutton-bitter-lesson, dhh, lena-hall, human-provenance-value, primitives-before-features, high-agency]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-dhh-agent-productivity, tech-bridge-signal-layer, tech-bridge-multimodal-commerce-agent, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-chieng-lee-ai-video-production, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-09-12
-updated: 2026-11-02
+updated: 2026-11-10
 ---
 
 # 취향과 판단
@@ -162,3 +162,7 @@ Paul의 것이 가장 구조적이다 — 학습 가능 여부의 문제가 아�
 ## 2026-11-02 — 취향과 기능을 나눠 말하기, 그리고 "게임은 정성적" ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
 
 같은 화자([[nick-saraev|Nick Saraev]] 추정)의 두 번째 비교에서 평가자 쪽 구분이 더 분명해진다. 지구본 데모: *"I would say honestly, I probably like the globe of 6.1 Terra more."*(01:58~02:06) — 그러면서도 Opus 쪽의 줌 · 효과 처리를 기능으로 따로 인정하고 *"Tough for me to say which one's better."*(02:30~02:31)로 판정을 미룬다. 게임에서는 측정 자체를 포기한다: *"with a game, it's not really like quantitative, right? It's more like qualitative."*(04:49~04:55) — 그리고 판정 기준을 **자기가 실제로 할지**로 바꾼다(*"this is something that I would actually play"* 04:55~04:58). 같은 영상 후반이 비용 대비 점수 그래프로 결론을 내는 것과 대조된다 → [[cost-vs-score-frontier]]. ⚠️ 채점 기준 비공개.
+
+## "무엇을 만들지 아는 것" (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+[[peter-steinberger|Peter Steinberger]](해설 전달)는 앞으로 2년의 사람 몫으로 *"끈기, 취향, 제품 지식"*(04:51~04:54)을 든다. 그리고 *"무엇을 만들지 아는 것. 그 분야의 경험은 여전히 아주 어려운 기술이고 그게 빨리 바뀔 것 같지는 않다고."*(05:14~05:20) 이 페이지의 구분으로는 취향보다 **판단** 쪽에 가깝다(위키의 읽기). → [[high-agency]]

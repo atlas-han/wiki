@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · 발표 [[laurie-voss]] ([[arize-
 date-published: 2026-10-02
 ingested: 2026-10-03
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-11-10
 ---
 
 # Tech Bridge — 코드 리뷰의 종말: 데이터가 보여주는 진짜 현실 (Laurie Voss · Arize AI)
@@ -40,7 +40,7 @@ Cisco 연구(*"two decades ago"*, 10개월, 리뷰 2,500건, 320만 줄): 한 �
 
 ## 3. 리뷰를 빼는 쪽 — 루프 설계가 검사를 대신할 수 있나 (04:36~06:29)
 
-- [[openclaw|OpenClaw]] 제작자 Peter Steinberger: 에이전트에게 프롬프트하지 말고 *"designing the loops that prompt your agents"*(04:44~04:48). [[andrej-karpathy|Karpathy]]도 *"the human in the loop is holding the system back"*(04:54~04:59) 취지. ⚠️ 두 사람 모두 화자의 요약.
+- [[openclaw|OpenClaw]] 제작자 [[peter-steinberger|Peter Steinberger]]: 에이전트에게 프롬프트하지 말고 *"designing the loops that prompt your agents"*(04:44~04:48). [[andrej-karpathy|Karpathy]]도 *"the human in the loop is holding the system back"*(04:54~04:59) 취지. ⚠️ 두 사람 모두 화자의 요약.
 - ⭐ **[[openai|OpenAI]] 2월 글** — 빈 저장소에서 *"no manually written code"*, 5개월 뒤 약 100만 줄·머지된 PR 약 1,500개·엔지니어 3명(05:05~05:25). *"humans may review pull requests but they are not required to. (…) we've pushed almost all review effort towards being handled agent to agent"*(05:31~05:41).
 - 화자의 의심: *"they did not tell us what the product did and (…) did not release an open source product (…) which suggests to me that there are still holes in that strategy"*(05:43~05:55).
 - 요점: *"whether you can build a loop that is good enough uh to review all of your code for you depends entirely on what the loop can see"*(06:10~06:17).
@@ -130,7 +130,7 @@ Cisco 연구(*"two decades ago"*, 10개월, 리뷰 2,500건, 320만 줄): 한 �
 
 ## 등장 개체
 
-- 인물: [[laurie-voss]] (신규) · [[andrej-karpathy]] · Peter Steinberger([[openclaw]] 제작자, 페이지 없음) · Sarah Guo(투자자, 페이지 없음) · Nicholas Carlini(Anthropic, 페이지 없음) · Dex Horthy(페이지 없음) · swyx(⚠️ 판독 추정, 페이지 없음)
+- 인물: [[laurie-voss]] (신규) · [[andrej-karpathy]] · [[peter-steinberger]]([[openclaw]] 제작자) · Sarah Guo(투자자, 페이지 없음) · Nicholas Carlini(Anthropic, 페이지 없음) · Dex Horthy(페이지 없음) · swyx(⚠️ 판독 추정, 페이지 없음)
 - 조직: [[arize-ai]] (신규) · [[openai]] · [[anthropic]] · [[cognition]] · [[cursor]] · METR(페이지 없음) · Cisco · Stripe · GitHub · CodeRabbit · Greptile · Graphite · 베이징대(Peking University) · npm Inc.
 - 제품·모델·벤치마크: [[codex]] · [[bun]] · [[fable-5-1|Fable 5]] · GPT 5.5 · GitHub Copilot 리뷰어 · CriticGPT · SWE-bench / SWE-bench Pro · FrontierCode · [[devin]](*"Devon"*)
 - 개념: [[mergeability-gap]] (신규) · [[automated-code-review]] (신규) · [[verification-bottleneck]] · [[risk-proportional-human-review]] · [[named-human-accountability]] · [[prompt-injection]] · [[ai-slop]] · [[harness-engineering]] · [[test-harness-vs-test-authoring]] · [[production-trace-eval-flywheel]] · [[verifiable-goals]] · [[trusted-throughput]] · [[agent-trust-curve]] · [[code-knowledge-graph]] · [[generator-evaluator-pattern]] · [[minimizing-reader-load]]

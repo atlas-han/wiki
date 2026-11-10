@@ -3,11 +3,11 @@ title: AI와 일자리 — 네 입장 (AI Jobs Impact)
 type: concept
 category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
-related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash]
+related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash, high-agency]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-09-06
-updated: 2026-11-07
+updated: 2026-11-10
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -183,3 +183,13 @@ G20의 *"직업은 남고 작업이 자동화"*, CBS·백악관 패널의 *블�
 *"coding and customer service clear all three barriers and that's why they're feeling it first."*(04:04~04:12) *"The more barriers it has, the further away from risk it is."*(04:15~04:20) 남는 강점은 *"human connection skills and domain expertise"*(04:23~04:28)다.
 
 ⚠️ **장벽은 고정돼 있지 않다.** T는 기술이 아니라 **사회적 수용**이고 화자도 *"not ready yet"* 이라고 한다. C는 이 페이지의 Musk 휴머노이드 전망([[humanoid-robot-scaling]])과 맞선다. 화자는 두 조건을 다루지 않는다. 챕터 *"직업보다 업무를 나눠 보기"*(04:30)는 무캡션이라 발화로 확인되지 않는다.
+
+## 개발자 쪽 — '별표를 단 예'와 틀 밖의 주니어 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+[[peter-steinberger|Peter Steinberger]](OpenClaw · OpenAI)의 Amigoscode 인터뷰를 해설이 옮긴다. 직업 전체가 아니라 **소프트웨어 엔지니어**에 대한 전망이다.
+
+- 직무가 넓어진다: *"이제는 제품 감각이 없으면 일하는 곳에 따라서는 디자인이나 마케팅까지 못 하면 크게 성공하기 어렵다는 겁니다."*(01:56~02:01) 위 Laurie Voss의 제품 엔지니어 논의와 같은 방향이다.
+- 주니어: *"시니어 자리는 많은데 주니어 자리는 줄었다고요. 그도 인정해요."*(04:15~04:17) 처방은 틀 밖의 길이다 — AI 도입에 애먹는 회사, 사람들이 좋아하는 걸 만들어 보인 기록, 목표에 맞는 회사의 전략적 선택 → [[high-agency]]
+- ⭐ 수요: *"모델이을 더 많이 가져갈수록 사람의 책임은 더 커질 거라고 봤습니다."*(04:48~04:51) 소프트웨어 엔지니어가 더 필요하냐에는 *"별표를 달아서 그렇다고 답합니다."*(05:03) 새로운 정의가 필요하다는 단서가 붙는다.
+
+⚠️ 한 사람의 조언을 해설자가 옮긴 것이다. 주니어 채용 감소는 진행자의 진술이고 수치는 없다.

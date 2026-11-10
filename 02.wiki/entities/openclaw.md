@@ -5,9 +5,9 @@ category: product
 tags: [agent-platform, personal-agent, open-source]
 aliases: [open claw, claw]
 links: []
-sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-garry-tan-agents-two-years]
+sources: [lum1104-understand-anything, tech-bridge-grokbot-agent-teams, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-llamaindex-document-context-layer, tech-bridge-nadella-copilot-autopilot, tech-bridge-introspection-loop-is-the-product, tech-bridge-conductor-orchestras-not-factories, tech-bridge-agentcraft-strategy-game, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-garry-tan-agents-two-years, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-09-10
-updated: 2026-11-07
+updated: 2026-11-10
 ---
 
 # OpenClaw
@@ -45,6 +45,8 @@ updated: 2026-11-07
 > **2026-09-14 갱신 — 여섯 번째 소스이고, 처음으로 *경쟁 제품의 CEO* 가 부른다.** 지금까지 다섯 소스는 실무자·창업자였다. 서술의 성격도 다르다 — 앞의 넷이 *쓴다/두렵다/대중화가 어렵다* 였다면, 이번엔 **시장 구조의 좌표**다(*"수백만은 될지 몰라도 수십억은 아닐 것"*). **여전히 어느 소스도 OpenClaw 자체를 설명하지 않는다.**
 
 → 사람이 확인해 줄 것: 제작자·라이선스·[[grokbot]]·[[claude-tag]]와의 관계.
+
+> **2026-11-10 갱신** — 제작자([[peter-steinberger]]) · 성격 · 저장소 생성 시점(2025년 11월)을 처음 말하는 소스가 들어왔다(해설 전달) → 아래 *제작자 · 생성 시점* 절. 라이선스와 위 두 제품과의 관계는 여전히 미확인.
 
 ## 투자자의 칭찬 — 반복 가능성과 맞바꾼 것 (2026-11-07 · [[tech-bridge-garry-tan-agents-two-years]])
 
@@ -94,3 +96,14 @@ updated: 2026-11-07
 [[lee-robinson|Lee Robinson]]([[grokbot|GrokBot]]): *"all the way back to January of this year, uh, when OpenClaw was really getting popular and people were using it, uh, inside of subscription plans for, uh, model providers, this was a very new usage pattern that model providers hadn't really seen and the the harness hadn't really yet been optimized for this type of workflow. So, there was a lot of cache misses. And when you're doing something like this where agents are running all the time, that's obviously problematic."*(29:59~30:27) → [[prompt-caching]]
 
 > ⚠️ 긴장(약): 위 절(Stigg 편)은 같은 구독 사용을 공급자의 **보조금**과 서드파티 접근 차단으로 설명했다. Robinson은 **캐시 미스**를 든다. 둘은 배타적이지 않다. 어느 쪽도 공급자 이름과 수치를 함께 대지 않는다. 연도 표기 *"January of this year"*는 녹화 연도 기준이고 녹화일은 미발화다.
+
+## 제작자 · 생성 시점 — 처음으로 설명하는 소스 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+열여섯 소스 동안 비어 있던 자리를 처음 채운다. 한국어 해설이 [[peter-steinberger|Peter Steinberger]]를 *OpenClaw를 만든 사람*으로 소개한다(설명란 · 제목도 같다).
+
+- 성격: *"만든 오픈 클로는 실제로 일을 해주는 개인 AI 비서입니다."*(00:52~00:55)
+- 생성 시점 · 규모: *"저장소가 생긴게 2025년 11월인데 지금 기터브 스타가 39만 개가 넘어요."*(00:56~01:01) 열린 이슈와 PR만 수천 개다.
+- 제작자의 선택: *"오픈 클로로 큰 회사를 만들 수 있었지만 자기는 뼈속까지 만드는 사람이라며 오픈 AI를 택했습니다."*(01:06~01:12) 합류는 2026년 2월이고 [[sam-altman|Sam Altman]]이 발표했다 → [[openai]]
+- 시기는 위의 Zuckerberg *"올해 초"* · Robinson *"January of this year"* 와 맞는다. 2025년 11월에 생겨 2026년 초에 퍼졌다는 그림이다(위키의 읽기).
+
+> ⚠️ 해설의 2차 전달이고 위키는 GitHub 저장소 · 블로그를 열지 않았다. **영어 더빙은 이 이름을 `Open Interpreter`로, 생성 시점을 `November 2023`으로 말한다** — 더빙 오류로 보고 따르지 않는다. 옛 이름 *Clawbot*과의 관계, 라이선스, OpenAI 합류 뒤 프로젝트의 지위는 이 소스도 말하지 않는다. ⚠️ 긴장(약): 위 Stigg 편은 4월에 Anthropic이 OpenClaw의 Claude 구독 사용을 막았다고 한다. 제작자가 2월에 OpenAI로 갔다는 이 소스와 시기가 겹치지만, 두 사건을 잇는 소스는 없다.

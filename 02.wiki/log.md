@@ -2600,3 +2600,21 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 1편 · 6:36이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1109/`: `lines.py` · `meta.py` · `q.py`(11-08 것 복사) · `merge.py` · `shared.py`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check` 85건 불일치 0. 이번 en-orig는 원음 발췌가 없는 **순수 더빙**이라 인용 코퍼스는 ko-orig 하나였다. 더빙은 모델 이름을 바꾼다(*Fable 5.1* → *Haiku 3.5*, *Opus 5.1* → *Opus 3.5*) — 더빙으로 모델 버전을 판독하지 말 것.
+
+## [2026-11-10] ingest | Tech Bridge — 11-09 업로드 1편 (코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다 — OpenAI 피터 스타인버거가 말하는 2027년 개발자)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 2편 중 `p2aPohAlShc`(11-09 18:00 KST 게시)만 공개. `ezPSsVW92Mg`(10:14, Lauren Tan 정리)는 **멤버 전용 신규**(목록 줄, `subscriber_only`) — 페이지를 만들지 않았다. `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 자막 429 없음.
+
+**신규 source 1 · entity 1 · concept 1**, 기존 페이지 보강 10개(+ tech-bridge), index **988 → 991**(실측 일치).
+
+- `p2aPohAlShc`(5:46, 챕터 8) → [[tech-bridge-peter-steinberger-2027-developer]]: 한국어 해설. Korean original, `ko` = `ko-orig`(원 ASR), en-orig = 영어 더빙. Steinberger 원음으로 보이는 발췌 여섯 곳은 두 트랙 모두 무캡션.
+  - 신규: [[peter-steinberger]] · [[high-agency]]
+  - 보강: [[openclaw]](제작자 · 생성 시점 첫 기록) · [[openai]] · [[sam-altman]] · [[ai-jobs-impact]] · [[ai-slop]] · [[human-provenance-value]] · [[architecture-as-remaining-art]] · [[taste-vs-judgment]] · [[tech-bridge-death-of-code-review]] · [[tech-bridge-garry-tan-agents-two-years]](Steinberger 링크)
+  - ⚠️ Amigoscode 인터뷰(`KrlaBpyWH_k`) · 블로그 세 글 · Altman X 게시물 미열람 — 해설의 2차 전달. **더빙이 OpenClaw를 *Open Interpreter* 로, 2025년 11월을 *November 2023* 으로 말한다** → 따르지 않음. 02:08~02:17(어려워진 쪽인지) · 04:28~04:32(*학위 경력은 적어도*) 해석 미확정.
+  - 페이지화하지 않음: Amigoscode(채널) · 진행자(이름 미발화) · RAG(언급 수준).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+1편 · 5:46이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1110/`: `lines.py` · `meta.py` · `q.py`(11-08 것 복사) · `merge.py` · `shared.py`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check` 72건 불일치 0. raw 헤더의 손 표기 시각 4곳은 `q.py`가 못 읽는 형식이라 눈으로 대조해 고쳤다. ⭐ **ko-orig는 영어 원음 발췌를 `[음악]`으로 적고 다음 줄을 `>>`로 시작한다** — en-orig 빈 구간과 겹치면 무캡션 발췌로 본다.
+

@@ -6,9 +6,9 @@ tags: [architecture, code-quality, coding-agents, design, substrate]
 aliases: [코드는 싸고 품질은 비싸다, 기반이 나쁘면 기여도 나쁘다]
 related: [organic-architecture, shortest-path-architecture, decision-quality, ambitious-software, code-is-the-product, learning-curve-as-feature]
 first-seen: tech-bridge-ambitious-software-agent-era
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-09-14
-updated: 2026-09-15
+updated: 2026-11-10
 ---
 
 # 남은 예술로서의 아키텍처
@@ -59,3 +59,7 @@ updated: 2026-09-15
 
 - [[tech-bridge-ambitious-software-agent-era]] · [[jonathan-kelley]] · [[dioxus]] · [[fable-5-1]]
 - 관련: [[organic-architecture]] · [[shortest-path-architecture]] · [[decision-quality]] · [[ambitious-software]] · [[code-is-the-product]] · [[context-engineering]] · [[steering-altitude]] · [[learning-curve-as-feature]]
+
+## 코드는 안 읽어도 구조는 안다 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+[[peter-steinberger|Peter Steinberger]]가 오픈소스 40개를 관리하는 방식(해설 전달): 정기 세션이 의존성 · 이슈 · PR을 돌리고 본인은 *"한층 위로 올라가는 겁니다."*(01:17~01:19) 블로그: *"요즘은 코드를 거의 익지 않는다고요. 대신 어떤 부품이 어디 있고 전체가 어떻게 설계됐는지는 안다."*(01:37~01:42)[익지 → 읽지] — 줄 단위는 맡기고 **부품 배치와 전체 설계**를 사람이 쥔다는, 이 페이지 주장의 실무자 버전이다. ⚠️ 엄격하다는 수용 규칙의 내용은 말하지 않는다.

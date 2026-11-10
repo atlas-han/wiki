@@ -5,9 +5,9 @@ category: person
 tags: [openai, ceo, ai-safety, agi, compute]
 links:
   - https://openai.com/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-11-10
 ---
 
 # Sam Altman
@@ -131,3 +131,7 @@ DevDay 키노트 당일 [[dan-shipper|Dan Shipper]](⚠️ 설명란 판독)와�
 - [[jev|Jev]]·Decisions API — [[diogo-almeida|Diogo]](ASR *"Do"*·*"Diego"*)가 OpenAI 출신이고 영감을 줬지만 *"it's pretty different (…) we have other things to go do"*.
 
 ⚠️ 출시 당일 판매자 진술, 반대 심문 없음. ⚠️ 09-06 *"사이드 퀘스트가 너무 많았다"* 와 **하루 22개 출시**(진행자 집계)·오피스 도구 3종의 관계를 말하지 않는다 → [[openai]] Contradiction. ⚠️ 상시 에이전트의 권한·프라이버시는 한 번도 나오지 않는다(09-06 본인의 [[ai-privilege]] 제안과 대비).
+
+## Steinberger 영입 발표 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+해설 전달: Altman이 2026년 2월 [[peter-steinberger|Peter Steinberger]]의 [[openai|OpenAI]] 합류를 직접 알리며 그를 *"다음 세대 개인 에이전트를 이끌 사람"*(00:43~00:45)이자 천재라고 불렀다. 게시물은 1600만 회 이상 조회됐다(00:48~00:52, ASR 문장 끊김). ⚠️ X 게시물(설명란 링크)은 위키가 열지 않았다.

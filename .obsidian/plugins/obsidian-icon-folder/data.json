@@ -1236,5 +1236,9 @@
   "02.wiki/sources/tech-bridge-lance-martin-old-prompts-make-claude-worse.md": "LiVideo",
   "02.wiki/entities/lance-martin.md": "LiUser",
   "02.wiki/concepts/prompt-debt.md": "LiPuzzle",
-  "02.wiki/concepts/climbable-eval.md": "LiPuzzle"
+  "02.wiki/concepts/climbable-eval.md": "LiPuzzle",
+  "01.raw/articles/2026-11-09_코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다 OpenAI 피터 스타인버거가 말하는 2027년 개발자 (OpenClaw).md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-peter-steinberger-2027-developer.md": "LiVideo",
+  "02.wiki/entities/peter-steinberger.md": "LiUser",
+  "02.wiki/concepts/high-agency.md": "LiPuzzle"
 }

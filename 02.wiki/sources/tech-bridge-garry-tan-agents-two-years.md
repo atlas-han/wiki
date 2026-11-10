@@ -8,7 +8,7 @@ author: Tech Bridge (번역 재배포 + 한국어 내레이션) · 화자 [[garr
 date-published: 2026-11-06
 ingested: 2026-11-07
 created: 2026-11-07
-updated: 2026-11-07
+updated: 2026-11-10
 ---
 
 # Tech Bridge — 게리 탄, AI 에이전트는 2년 안에 모든 걸 바꿀 겁니다
@@ -37,7 +37,7 @@ updated: 2026-11-07
 - 진행자가 되묻는다: *"that's just data retrieval."*(02:28~02:30)
 
 ### 02:20 무엇이 에이전트인가: OpenClaw와 반복 가능성
-- 답으로 Peter Steinberger의 [[openclaw|OpenClaw]]를 든다. Claude Code · Codex에 대해: *"they're so worried about sort of repeatability and safety that they actually trade off"*(02:41~02:47) 사람과 일하는 듯한 느낌을 내주고 있다는 평가다. ⚠️ 편집으로 이 답은 03:01에서 끊기고 그 뒤를 내레이션이 잇는다. *무엇이 에이전트인가*의 정의는 끝까지 나오지 않는다.
+- 답으로 [[peter-steinberger|Peter Steinberger]]의 [[openclaw|OpenClaw]]를 든다. Claude Code · Codex에 대해: *"they're so worried about sort of repeatability and safety that they actually trade off"*(02:41~02:47) 사람과 일하는 듯한 느낌을 내주고 있다는 평가다. ⚠️ 편집으로 이 답은 03:01에서 끊기고 그 뒤를 내레이션이 잇는다. *무엇이 에이전트인가*의 정의는 끝까지 나오지 않는다.
 
 ### 03:15 맡기는 일과 토큰 비용
 - 넘긴 데이터: *"it's read all of my email and all of my Dropbox."*(03:19~03:21) Apple 메모, 그리고 *"even my therapy notes going back 20 years."*(03:26~03:28) → [[confidential-vm]]
@@ -62,7 +62,7 @@ updated: 2026-11-07
 
 ## 등장 개체
 
-- 인물: [[garry-tan]] · Peter Steinberger · Steve Jobs(언급 수준) · [[tech-bridge]]
+- 인물: [[garry-tan]] · [[peter-steinberger]] · Steve Jobs(언급 수준) · [[tech-bridge]]
 - 조직: Y Combinator · [[meta]] · [[anthropic]] · [[openai]] · IBM(언급 수준)
 - 제품: [[gstack]] · [[openclaw]] · [[claude-code]] · [[codex]] · Straylight(YC 사내, [[garry-tan]]에 기록) · Gemini · Dropbox · Facebook · Instagram(언급 수준)
 - 개념: [[personal-ai-platform-war]] · [[personal-superintelligence]] · [[personal-agent-four-forces]] · [[agent-attention-management]] · [[company-brain]] · [[ai-jobs-impact]] · [[confidential-vm]] · [[lethal-trifecta]]

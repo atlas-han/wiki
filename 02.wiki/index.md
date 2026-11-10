@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-09
+updated: 2026-11-10
 ---
 
 # Index
@@ -176,6 +176,7 @@ updated: 2026-11-09
 - [[garry-tan]] — Y Combinator 대표(설명란 · 내레이션 근거). 사내 에이전트 Straylight, 자기 데이터를 대부분 넘긴 개인 에이전트, 연 10만~20만 달러 토큰, 2~3년 보편화 전망 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 투자자 · [[gstack]] 제작자의 진술
 - [[john-kim]] — Anthropic Claude Code 팀 코드 리뷰 글을 소개한 영상의 제작자로 보이는 개발자(설명란 · 영어 더빙 근거, 원음 ASR엔 "종"뿐). *배포한 사람이 책임진다* 발췌 ([[tech-bridge-anthropic-code-review-seven-layers]]) ⚠️ 소속 · 직함 미상, 발췌 하나는 무캡션
 - [[lance-martin]] — [[anthropic|Anthropic]](직함 미발화). [[anthropic-managed-agents]] 공저자, AI Engineer 워크숍 *Your Old Prompts Are Making Claude Worse* 발표자 — 프롬프트 부채 · 캐시 순서 · 오를 수 있는 평가 · 똑똑한 모델을 덜 애쓰게 ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
+- [[peter-steinberger]] — [[openclaw|OpenClaw]] 제작자, 2026년 2월 [[openai|OpenAI]] 합류(해설 근거). 코드의 거의 100%를 에이전트에게 맡기고 오픈소스 40개를 한 층 위에서 관리하지만 AI가 쓴 메일은 열지 않는다. [[high-agency|하이 에이전시]] · 별표를 단 소프트웨어 엔지니어 · 100% 손으로 쓴 추신 ([[tech-bridge-peter-steinberger-2027-developer]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -531,6 +532,7 @@ updated: 2026-11-09
 - [[ai-engineering-skills-map]] — AI engineering 네 역량(Ng 팀 skills map): AI 앱 빌드·배포(불확실성 → error analysis·eval 루프) · SE 기본기(모르면 에이전트의 trade-off에 *"bites you later"*) · 코딩 에이전트 활용 · shaping the build. 기준은 사람의 *"fundamental context advantage"* ([[tech-bridge-andrew-ng-ai-engineering-skills-map]]) ⚠️ 조사 방법 문서 없음 · 팀명 ASR 판독 추정
 - [[cost-vs-score-frontier]] — 벤치마크를 비용(x) × 점수(y)로 놓고 '왼쪽 위'를 고르는 읽기. 질문이 "누가 1등인가"에서 "최고점의 몇 %를 몇 분의 1 비용에"로 바뀐다. Terra는 Opus 5.5의 *"about 95 to 97%"*를 *"11% of the cost"*에 → *"leverage"* ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]]) ⚠️ 출처 미표기 그래프를 눈대중으로 읽은 값, 소스 1개
 - [[personal-ai-platform-war]] — 경쟁 단위가 앱에서 에이전트로 옮겨 가고 가치가 소수로 모일 수 있다는 구도. 다음 브라우저 전쟁 · 다섯 왕 · 개인 AI의 Linux · 인지 필터 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 한 사람의 전망, 측정 없음
+- [[high-agency]] — 문제와 함께 해결책을, 말 대신 프로토타입을 들고 오는 사람. 만들기가 싸진 시대의 가장 중요한 능력이라는 [[peter-steinberger|Steinberger]]의 조언, 학위보다 확신과 만든 것 ([[tech-bridge-peter-steinberger-2027-developer]]) ⚠️ 한 사람의 조언 · 해설 전달
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -1024,10 +1026,11 @@ updated: 2026-11-09
 
 ---
 - [[tech-bridge-lance-martin-old-prompts-make-claude-worse]] — 한국어 해설(6:36, 챕터 8, Korean original · ko-orig 원 ASR, 영어 원음 발췌 없음, 2026-11-08 18:00 KST): [[lance-martin|Lance Martin]] 워크숍 — [[prompt-debt|프롬프트 부채]] · [[prompt-caching|캐시 층 순서]] · [[climbable-eval|오를 수 있는 평가와 hillclimb]] · 똑똑한 모델을 덜 애쓰게 · 며칠짜리 하네스([[managed-agents]]) ⚠️ Anthropic 자기 실험의 2차 전달, 모델 버전 일부 ASR 미확정
+- [[tech-bridge-peter-steinberger-2027-developer]] — 한국어 해설(5:46, 챕터 8, Korean original · ko-orig 원 ASR, 원음 발췌 여섯 곳 무캡션, 2026-11-09 18:00 KST): [[peter-steinberger|Peter Steinberger]]가 말하는 2027년 개발자 — [[openclaw|OpenClaw]] 제작자 · 생성 시점(2025년 11월), 한 층 위의 오픈소스 관리, 좁아진 소프트웨어 엔지니어, [[high-agency|하이 에이전시]]와 프로토타입, AI가 쓴 메일을 거르는 기준, 틀 밖의 주니어, 별표를 단 예, 100% 손으로 쓴 추신 ⚠️ 인터뷰 · 블로그의 2차 전달, 더빙은 OpenClaw를 Open Interpreter로 말함
 
 ## 통계
 
-- 총 페이지 수: 988 (984 → 988, + 2026-11-09 Tech Bridge 1편(11-08 업로드 — Lance Martin 워크숍 해설): source 1 · entity 1(lance-martin) · concept 2(prompt-debt · climbable-eval) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 988과 일치)
+- 총 페이지 수: 991 (988 → 991, + 2026-11-10 Tech Bridge 1편(11-09 업로드 — Peter Steinberger 해설): source 1 · entity 1(peter-steinberger) · concept 1(high-agency) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 991과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-09 (Tech Bridge **1편** — 11-08 업로드 [[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다]](`BqUhlnVlEbo`))
-- 직전 ingest: 2026-11-08 (Tech Bridge **3편** — 11-07 업로드 [[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다]](`Fxy8Jr77nKc`) · [[tech-bridge-nick-saraev-karpathy-ai-habits|카파시가 실제로 AI를 쓰는 법]](`lcp0_GnT54o`), 11-08 업로드 [[tech-bridge-salesforce-claude-code-agentic-shift|세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]](`iTIDadQ6Ues`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-10 (Tech Bridge **1편** — 11-09 업로드 [[tech-bridge-peter-steinberger-2027-developer|코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다]](`p2aPohAlShc`). `ezPSsVW92Mg` 멤버 전용 신규 · `Yhck-x6VuLs` 지속)
+- 직전 ingest: 2026-11-09 (Tech Bridge **1편** — 11-08 업로드 [[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다]](`BqUhlnVlEbo`))

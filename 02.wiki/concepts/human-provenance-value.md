@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [creativity, ai-art, meaning, craft, effort, human-connection, provenance, value]
 aliases: [human provenance, based on a true story, 인간이 만들었다는 것의 의미, craft and soul, 노력의 지름길]
-related: [ai-slop, taste-vs-judgment, demis-hassabis]
+related: [ai-slop, taste-vs-judgment, demis-hassabis, peter-steinberger]
 first-seen: tech-bridge-hassabis-fry-creativity-future
-sources: [tech-bridge-hassabis-fry-creativity-future]
+sources: [tech-bridge-hassabis-fry-creativity-future, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-10
 ---
 
 # 인간 출처의 가치
@@ -42,3 +42,13 @@ updated: 2026-10-16
 ## References
 
 - [[tech-bridge-hassabis-fry-creativity-future]] · [[demis-hassabis]] · [[kate-varah]]
+
+## "이 글은 100% 손으로 썼다" — 개발자의 추신 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+예술이 아닌 곳에서 같은 가치가 나온다. 코드의 거의 100%를 에이전트가 쓴다고 쓴 [[peter-steinberger|Peter Steinberger]]의 블로그 글 끝에 추신이 붙어 있다(해설 전달):
+
+> *"이글은 100% 손으로 썼다. 오타도 내 목소리도 그대로 둔다."*(05:28~05:31)
+
+해설의 맺음: *"코드는 에이전트에게 맡겨도 무엇을 만들지, 그걸 어떻게 들려줄지는 여전히 사람의 몫이라는 거죠."*(05:31~05:37) 그가 받는 메일도 같은 기준으로 고른다 — 서툰 영어여도 *개성이 드러나는* 글을 연다 → [[ai-slop]]
+
+Hassabis의 *"실화를 바탕으로"* 가 감상자가 출처에 두는 가치라면, 이것은 **작성자 스스로 출처를 표시하는 행위**다. 생산물(코드)과 목소리(글)를 나눠 목소리만 사람이 지킨다(위키의 읽기). ⚠️ 블로그는 위키가 열지 않았다.

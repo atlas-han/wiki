@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
-related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine, human-provenance-value, slopcodebench, compressed-review-surface]
+related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine, human-provenance-value, slopcodebench, compressed-review-surface, high-agency]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-peter-steinberger-2027-developer]
 created: 2026-09-12
-updated: 2026-10-16
+updated: 2026-11-10
 ---
 
 # AI 슬롭
@@ -211,3 +211,13 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 - **"AI 이전부터 있었다"**: *"the thing it points at has long been around. Only now it happens at warp speed."*(00:19~00:23)
 - 처방: 관례·[[compressed-review-surface|압축된 리뷰 표면]]·작은 변경. *"The more obvious the path, the less room there is for slop to hide."*(13:55~13:58)
 - ⚠️ ko는 이 영상에서 slop을 "기울기"(slope)·"엉망진창"·"폐기물"·"과실"·"평범함"으로 옮긴다. 정의 문장의 never 세 개도 긍정문으로 바꾼다(01:06~01:12).
+
+## 받는 쪽의 필터 — "냄새로 걸러낸다" (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
+
+[[peter-steinberger|Peter Steinberger]]는 코드의 거의 100%를 에이전트에게 맡기면서도 *"AI가 쓴 글은 냄새로 걸러내는 사람"*(00:31~00:32)이다(해설 전달). 매주 쏟아지는 *봐 달라* 메일을 거의 열지 않는 이유:
+
+- *"메일을 직접 쓰지도 않았거나 링크를 눌렀더니 프롬프트 한 번으로 만든 거 같은 웹사이트가 나온다는 겁니다."*(03:34~03:37)
+- 반대 기준: *"영어가 서툴러도 괜찮다고 했어요. 오히려 그 사람의 개성이 드러나는게 좋다고."*(03:39~03:42)
+- 결론: *"모두에게 쉬워졌으니까 이런저런 기능이 된다는 기본 수준으로는 부족합니다."*(03:45~03:49)
+
+이 페이지의 다른 소스들은 슬롭을 **만드는 쪽**에서 다뤘다. 이 소스는 **받는 쪽**이 슬롭을 신호로 써서 거르는 모습이다. 슬롭은 품질 문제이기 전에 *주의를 줄 가치가 없다는 신호* 가 된다(위키의 읽기). → [[human-provenance-value]] · [[high-agency]]

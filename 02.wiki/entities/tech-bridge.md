@@ -172,8 +172,9 @@ sources:
   - tech-bridge-anthropic-code-review-seven-layers
   - tech-bridge-salesforce-claude-code-agentic-shift
   - tech-bridge-lance-martin-old-prompts-make-claude-worse
+  - tech-bridge-peter-steinberger-2027-developer
 created: 2026-06-03
-updated: 2026-11-09
+updated: 2026-11-10
 ---
 
 # Tech Bridge
@@ -1647,3 +1648,13 @@ updated: 2026-11-09
 - ⚠️ Anthropic 자기 실험 · 블로그의 2차 전달(원 발표 `ys6YQ2yfBpM` · 블로그 미열람). 모델 버전 *오퍼스 5.0* · *오퍼스 5.1*은 ASR, 영어 더빙은 *Fable* 자리를 *Haiku 3.5*로 말한다 — 확정하지 않는다.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-09 업로드 — Peter Steinberger 해설 (2026-11-10 ingest)
+
+[[tech-bridge-peter-steinberger-2027-developer|코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다 | OpenAI 피터 스타인버거가 말하는 2027년 개발자 (OpenClaw)]](`p2aPohAlShc`, 5:46, 공식 챕터 8) — 한국어 해설 ([[peter-steinberger]](신규) · [[high-agency]](신규) · [[openclaw]] · [[openai]] · [[sam-altman]] · [[ai-jobs-impact]] · [[ai-slop]] · [[human-provenance-value]])
+
+- Korean original 구성(`ko` = `ko-orig` md5), en-orig = 영어 더빙. Steinberger 원음으로 보이는 발췌 여섯 곳은 **두 트랙 모두 무캡션**이다(en-orig 빈 구간 + ko-orig `[음악]` · `>>`). 인용은 전부 ko-orig 내레이션이다.
+- `upload_date` 20261109 = **11-09 18:00 KST**(11-09 회차 발화 뒤 게시).
+- ⚠️ **더빙이 OpenClaw를 `Open Interpreter`로, 2025년 11월을 `November 2023`으로 말한다.** 인터뷰(`KrlaBpyWH_k`) · 블로그 · Altman 게시물은 미열람.
+
+**멤버 전용**: `ezPSsVW92Mg`(목록 `upload_date` 20261109, *에이전트가 자기 PR을 직접 머지한다 | Cursor 엔지니어 Lauren Tan이 에이전트를 믿게 된 방법 10분 정리*, 10:14) 신규 확인(목록 줄, `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
