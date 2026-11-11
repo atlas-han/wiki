@@ -3,9 +3,9 @@ title: Rust
 type: entity
 category: tool
 tags: [language, systems, type-system, borrow-checker, coding-agents]
-sources: [tech-bridge-ambitious-software-agent-era]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-theo-coding-is-gardening, tech-bridge-claude-fable-5-2-announcement]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-11-11
 ---
 
 # Rust
@@ -46,3 +46,9 @@ Rust의 대표적 진입 장벽은 **빌림 검사기(borrow checker)** 와 타�
 - [[tech-bridge-ambitious-software-agent-era]] · [[dioxus]] · [[jonathan-kelley]] · [[blitz]] · [[subsecond]]
 - 개념: [[learning-curve-as-feature]] · [[verifiable-goals]] · [[hard-vs-soft-enforcement]]
 - 생태계 관련: [[actix-web]] · [[tokio]] · [[serde]] · [[bun]] · [[goose]]
+
+## 같은 결론, 다른 이유 — Theo의 TypeScript → Rust (2026-11-11 · [[tech-bridge-theo-coding-is-gardening]])
+
+[[theo|Theo]]는 세 명짜리 팀을 *"조금 더 빠르게 하려고 타입스크립트를 러스트로 다쓰고 있습니다."*(03:28~03:30)[=다시 쓰고] Twitch 시절엔 600~800명이 쓰는 도구라도 다시 쓰는 건 본전이 안 맞았다(해설 전달). 바뀐 계산의 이유는 이 페이지의 *학습 곡선이 자산* 이 아니라 **마찰**이다 — *"마찰은 사람보다 에이전트를 훨씬 세게 막습니다."*(03:34~03:36) → [[agent-friction-multiplier]](신규)
+
+[[fable-5-2|Fable 5.2]] 발표문(해설 전달, [[tech-bridge-claude-fable-5-2-announcement]])에도 Python 핵심 서비스를 Rust로 옮겨 시작 속도가 약 26배 빨라진 사례가 있다(04:20~04:25). ⚠️ 두 소스 모두 재작성의 **품질 · 버그**는 말하지 않는다.

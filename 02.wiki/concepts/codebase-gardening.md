@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comments, paved-path]
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
-related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon, product-polish-patterns]
+related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon, product-polish-patterns, agent-friction-multiplier]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-theo-coding-is-gardening]
 created: 2026-09-26
-updated: 2026-10-23
+updated: 2026-11-11
 ---
 
 # 코드베이스 정원 가꾸기
@@ -130,3 +130,18 @@ Tech Bridge 해설(Stripe 발언 아님, 원음 05:01→05:08은 무캡션): 같
 
 - **디렉터리에서 발견되는 안내**: *"모든 규칙을 긴 문서 하나에 넣는 것보다 작업하는 디렉토리에서 필요한 안내를 발견하게 하는 겁니다"* — 결제 코드엔 금액 처리 규칙, 화면 코드엔 컴포넌트 예제(05:31~05:46, 1인칭 권고). → [[claude-code]]의 계층적 CLAUDE.md
 - **금지 옆에 대안**: *"새 인증 로직을 만들지 말라는 문장 옆에 기존 인증 모듈의 위치를 적어 두는 겁니다."*(05:51~05:58) 진단 순서: *"AI가 같은 실수를 반복한다면 프롬프트를 다시 쓰기 전에 잘못된 예제나 오래된 설명이 저장소에 남아 있는지 확인해 보십시오."*(05:58~06:05)
+
+## 두 번째 실무자 — Theo의 거름 · 지지대 · 잡초 (2026-11-11 · [[tech-bridge-theo-coding-is-gardening]])
+
+[[theo|Theo]](t3.gg, T3 Code)가 같은 은유를 쓴다(해설 전달). *"그래서 태오는 우리 일이 정원 일이라고 말합니다. 걸음을 주고 지대를 세우고 잡초는 보이는 잭시 뽑는 일이죠."*(04:05~04:10)[=거름 · 지지대 · 족족(추정)] 해설은 [[lauren-tan|Lauren]]이 같은 이야기를 했다고 덧붙인다(05:42~05:43). 이 페이지의 처방에 **구체적 손질 세 가지**가 붙는다.
+
+| 손질 | Theo의 사례 | 수치(해설 전달) |
+|---|---|---|
+| **거름** — 플랫폼에 시간 반 | 혼자 세운 회사에서 시간을 제품 · 플랫폼 반반. *"그가 올린 PR의 절반은 사용자 눈에 아무 차이가 없었습니다."*(02:05~02:09) | — |
+| **잡초** — 테스트 삭제 | 시끄러운 테스트 때문에 릴리스 실행이 대부분 실패 → Claude Haiku 에이전트들의 판정으로 삭제 | 25,900여 개 중 약 1만 1천 개(43%), 실행 시간 59% ↓, 되살린 것 네 개 |
+| **지지대** — PR마다 수치 검사 | 서버 → 휴대폰 전송량을 PR마다 재서 댓글로, 기준을 넘으면 빨간 X | — |
+
+- ⭐ 지지대의 핵심은 **에이전트에게 알려 주는 것**이다: *"무엇보다 에이전트에게 이건 우리가 신경 쓰는 숫자라고 알려줍니다. 식물이 그쪽으로 자라도록 옆에 꽂는 나무 지지대인 셈이죠."*(05:15~05:24) → [[hard-vs-soft-enforcement]]
+- 재발 방지: *"나쁜 테스트가 보이면 그걸 쓴 에이전트에게 왜이 테스트를 넣었는지 묻고 그 뿌리를 고칩니다."*(04:48~04:54) — 이 페이지의 *뽑은 잡초가 규칙이 된다* 와 같은 움직임이다.
+- 결과로 제시된 것: T3 Code의 하루 머지 PR이 10월에 평균 130개 이상(해설자 자신의 GitHub API 집계). ⚠️ 인과는 Theo의 해석이다.
+- 새로운 점: 이 페이지의 다른 소스들은 대부분 **더하는** 처방(린트 · 검사 · 구조)이었다. Theo는 **빼는 것**(테스트 43%)을 정원 일의 대표로 든다.

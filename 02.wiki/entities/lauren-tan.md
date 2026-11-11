@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening]
 created: 2026-09-01
-updated: 2026-11-03
+updated: 2026-11-11
 ---
 
 # Lauren Tan
@@ -127,3 +127,9 @@ Tech Bridge의 11:36 **해설 영상**이 원본 대담(`MN9dGgmLyso`, 이 위�
 - ⭐ **"inverse pyramid"** — *"Lauren's answer to this is what she calls the inverse pyramid. There are four levels"*(05:11~05:17). 코드베이스 · 정적 분석 · prose(규칙 파일) · 사람 리뷰 순이다. ⚠️ **09-25 본인 발표와 어긋난다.** 거기서는 "다섯" 층이었고(이름이 붙은 묶음은 넷), 최하층은 "사람만 강제할 수 있는" **스타일 가이드**였다. 이 이름도 본인 발화로는 확인되지 않았다. 발표자가 *"Her exact line"*(05:24~05:27)이라며 옮긴 문장은 09-12와 10-09 발화를 합친 모양이다. → [[hard-vs-soft-enforcement]]
 - 미슐랭 주방(04:24~04:31), GrokBot 루틴으로 맥락을 모아 *"her outer loop"*(10:18~10:20)에 넣는 것은 기존 기록과 같다.
 - ⚠️ 발표자의 토큰 경고: *"that's something fine for someone like Lauren who has a ton of inference and credits to throw at these kind of things."*(10:22~10:28) 본인의 *"quite token intensive"*(10-10)와 같은 방향이다.
+
+## 다른 실무자가 인용하는 이름 — Theo의 정원사 (2026-11-11 · [[tech-bridge-theo-coding-is-gardening]])
+
+[[theo|Theo]]의 영상을 정리한 해설이 끝에서 Lauren을 부른다: *"리액트 컴파일러 팀의 로렌도 같은 비율로 있었죠."*(05:42~05:43) 설명란은 *"Lauren(@poteto)의 게시물"* 을 링크한다(위키 미열람). ⚠️ *비율*(머지 그래프의 수치)인지 *비유*(정원사)인지 ASR로 정해지지 않는다. 바로 뒤가 *"모든 팀에는 정환사가 필요하다."*(05:43~05:46)[=정원사]라서 비유 쪽으로 읽힌다(위키의 읽기). → [[codebase-gardening]]
+
+09-13 [[tech-bridge-pstack-third-party-review]]의 *"우리 친구 Theo"* 가 그녀의 스킬을 딥다이브했다는 언급과 함께, 두 사람이 서로를 참조하는 고리가 하나 더 생겼다.

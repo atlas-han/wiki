@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, frontier-model, unreleased, cybersecurity]
 aliases: [Mythos Preview, Mythos-class]
-sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-fable-5-2-announcement]
 links: []
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-11-11
 ---
 
 # Claude Mythos Preview
@@ -56,3 +56,11 @@ updated: 2026-10-17
 ## References
 
 - [[anthropic-project-glasswing-update-2026-05]]
+
+## Mythos 5.2 — 같은 모델의 안전장치 없는 판 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+2026-11-09 발표(해설 전달)에서 **Claude Mythos 5.2**가 [[fable-5-2|Fable 5.2]]와 함께 나왔다. 해설에 따르면 *"발표문은이 둘이 사실 같은 모델이라고 말합니다."*(00:50~00:53) Mythos는 *"그 안전 장치를 덜어낸 버전이라 심사를 통고한 기간만 신청해서 쓸 수 있고요."*(00:58~01:02)[=심사를 통과한 기관]
+
+- 이 페이지의 *일반 공개 보류 · 파트너 한정* 과 같은 배포 방식이다. 그러나 **Mythos Preview → Mythos 5.2의 관계는 해설이 말하지 않는다.** *"초기 비토스의 39%"*(06:51)(샌드박스 탈출 비율, Mythos 5.2는 3.1%)라는 표현이 이어지는 계보를 시사할 뿐이다.
+- 단백질 구조 예측은 Mythos 5.2의 성과로 귀속된다(05:47~05:53).
+- 더빙은 Mythos 5.2를 `Claude 3.5 Haiku`로 옮긴다(00:43~00:46). 따르지 않는다.

@@ -2618,3 +2618,25 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 1편 · 5:46이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1110/`: `lines.py` · `meta.py` · `q.py`(11-08 것 복사) · `merge.py` · `shared.py`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check` 72건 불일치 0. raw 헤더의 손 표기 시각 4곳은 `q.py`가 못 읽는 형식이라 눈으로 대조해 고쳤다. ⭐ **ko-orig는 영어 원음 발췌를 `[음악]`으로 적고 다음 줄을 `>>`로 시작한다** — en-orig 빈 구간과 겹치면 무캡션 발췌로 본다.
 
+## [2026-11-11] ingest | Tech Bridge — 11-10 업로드 2편 (Claude Fable 5.2 공개 발표문 정리 · Theo가 테스트 1만 1천 개를 지운 이유)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 공개 2편: `cju5CR-2ZvA`(11-10 18:00 KST 게시) · `k-hBhaO46v8`(11-10 22:00 KST 게시). `ezPSsVW92Mg`(Lauren Tan 10분 정리)는 목록 줄 `subscriber_only`로 멤버 전용 지속, `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 자막 429 없음.
+
+**신규 source 2 · entity 2 · concept 2**, 기존 페이지 보강 15개(+ tech-bridge) · Theo 링크 2곳, index **991 → 997**(실측 일치).
+
+- `k-hBhaO46v8`(8:34, 챕터 9) → [[tech-bridge-claude-fable-5-2-announcement]]: 한국어 해설(AI 내레이션). `ko` = `ko-orig`(원 ASR), en-orig = 영어 더빙. Nick Saraev 원음 발췌 다섯 곳은 두 트랙 모두 무캡션.
+  - 신규: [[fable-5-2]](Mythos 5.2 포함) · [[differential-capability-limitation]]
+  - 보강: [[fable-5-1]] · [[claude-opus-5-5]] · [[claude-mythos-preview]] · [[anthropic]] · [[nick-saraev]] · [[uber]] · [[automated-ai-research]] · [[jagged-capability-frontier]] · [[token-roles]] · [[rust]]
+  - ⚠️ Anthropic 발표문 · 리뷰 원 영상 미열람 — 수치는 해설 전달. **더빙이 초반 모델명을 바꾼다**(Fable 5.2 → `Claude 3.5`, Opus 5.5 → `Opus 3.0`, Gemini 4 Carbon → `Gemini 1.5 Pro`). 운영체제 기간은 ko *8회* · 더빙 *8 hours* · 챕터 *8일* → 챕터를 따름. advisor 구성의 주어, *닐* · *버세 엔지니어* 미판독.
+  - 페이지화하지 않음: Gemini 4 Carbon · Remote Labor Index · Frontier Code(벤치마크 이름 수준).
+- `cju5CR-2ZvA`(6:21, 챕터 9) → [[tech-bridge-theo-coding-is-gardening]]: 한국어 해설(AI 내레이션). 구성 같음. Theo 원음 발췌 다섯 곳 무캡션.
+  - 신규: [[theo]](이전 네 소스의 이름 · T3 Code 언급을 모음) · [[agent-friction-multiplier]]
+  - 보강: [[codebase-gardening]] · [[ai-slop]] · [[lauren-tan]] · [[rust]] · [[structure-sensitive-tests]] · [[tech-bridge-codex-app-server]] · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]](Theo 링크)
+  - ⚠️ 원 영상(`GtJKFhztgdM`) · PR #22557 · #5350 · Lauren 게시물 미열람. 머지 PR 그래프는 해설자의 GitHub API 집계다. *컴백스*(Convex 추정) · *로렌도 같은 비율로*(비율 / 비유) · *Son 4.5.5* 미확정.
+  - 페이지화하지 않음: T3 Code · T3 Chat(→ theo) · Twitch · Apollo GraphQL · Convex · Claude Haiku(버전 미발화).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편 · 6~8분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1111/`: `lines.py` · `meta.py` · `gaps.py` · `q.py`(11-10 것 복사) · `build_raw.py` · `merge.py` · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check` 148건 중 불일치 0(`theo` 표의 영어 인용 2건은 다른 소스 귀속, 의도). raw 헤더의 ASR 판독 목록 시각은 손으로 대조해 9곳을 고쳤다. ⚠️ zsh에서 `$A` 처럼 경로 두 개를 담은 변수는 한 인자로 넘어간다 — 경로를 직접 적을 것. ⚠️ `q.py check`는 짧은 영어 조각(*"Tak."*)을 다른 단어 안에서 찾는다 — `<!--k-->`로 코퍼스를 고정할 것.
+

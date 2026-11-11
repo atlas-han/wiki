@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [automated-ai-research, recursive-self-improvement, speedrun, optimizer-speedrun, benchmark, research-agent, discovery-loop, prime-intellect]
 aliases: [automated AI research, AI 연구 자동화, 자동화된 AI 연구, recursive self-improvement, 재귀적 자기 개선, optimizer speedrun, 옵티마이저 스피드런, research speedrun]
-related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect, production-trace-eval-flywheel]
+related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect, production-trace-eval-flywheel, differential-capability-limitation]
 first-seen: tech-bridge-agents-vs-humans-optimizer-speedrun
-sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-parakhin-shopify-ai-cost-barbell]
+sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-claude-fable-5-2-announcement]
 created: 2026-09-28
-updated: 2026-10-28
+updated: 2026-11-11
 ---
 
 # 자동화된 AI 연구 (Automated AI Research)
@@ -121,3 +121,9 @@ Google의 **AlphaEvolve**와 후속 논문에서 영감받은 **멀티에이전�
 ## 운영 모델에 "auto research" — 바벨의 양 끝 (2026-10-28 · [[tech-bridge-parakhin-shopify-ai-cost-barbell]])
 
 [[mikhail-parakhin|Parakhin]]([[shopify|Shopify]])은 auto research를 두 번 말한다. 개발 쪽에서는 코딩 · 테스트와 함께 **가장 큰 모델을 쓸 활동**으로 꼽는다(07:31~07:39). 운영 쪽에서는 파인튜닝한 맞춤 모델을 *"auto research the hell out of it so that you balance both cost throughput and and quality"*(07:48~07:55)라고 한다. 연구 대상이 모델 자체가 아니라 **서빙 구성의 비용 · 처리량 · 품질 균형**이다. 같은 화자의 [[company-digital-twin]]도 *대리물 위에서 많이 시도하고 고른 것만 현실에 적용한다*는 같은 모양이다. ⚠️ 방법은 발화되지 않는다(ko 기계 번역은 이 구절을 *"조사하십시오. 자동화하여"* 로 옮겼다).
+
+## 같은 능력을 억누르는 쪽 — Fable 5.2 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+이 페이지가 측정해 온 능력(모델 개발을 앞당기는 연구)을, [[anthropic|Anthropic]]은 [[fable-5-2|Fable 5.2]] 훈련에서 **일부러 덜 키웠다**고 발표문에 적었다(해설 전달). *"구체적으로는 가속기 커널 최적화 그리고 언어 모델 구조를 개선하는 능력입니다."*(06:03~06:07) 반면 기존 머신 러닝 연구에는 영향이 없도록 했다. → [[differential-capability-limitation]]
+
+같은 발표에서 과학 연구를 맡기는 벤치마크는 58.7 → 74.6으로 올랐다(01:53~01:55). *AI 연구* 전체가 아니라 **AI를 더 빨리 만드는 길목**만 막았다는 구분이다.

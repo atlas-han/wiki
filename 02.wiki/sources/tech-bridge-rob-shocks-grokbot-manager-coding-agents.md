@@ -8,7 +8,7 @@ author: Tech Bridge (번역 재배포, 내레이션 없음) · 원 제작자 · 
 date-published: 2026-11-02
 ingested: 2026-11-03
 created: 2026-11-03
-updated: 2026-11-03
+updated: 2026-11-11
 ---
 
 # Tech Bridge — Grok Bot은 매니저, Claude Code는 개발자 (Rob Shocks)
@@ -128,9 +128,9 @@ en-orig에 발화가 없다(무캡션, 첫 큐 00:21.4). 이 챕터의 내용은
 
 ## 등장 개체
 
-- 인물 · 제작자: [[rob-shocks]](신규, 설명란 근거) · [[lauren-tan]](2차 전달) · [[addy-osmani]](ASR *"Adi Esmany"*, 한 문장) · Alan Wells · Theo(페이지 없음) · [[tech-bridge]]
+- 인물 · 제작자: [[rob-shocks]](신규, 설명란 근거) · [[lauren-tan]](2차 전달) · [[addy-osmani]](ASR *"Adi Esmany"*, 한 문장) · Alan Wells · [[theo|Theo]] · [[tech-bridge]]
 - 조직: [[anthropic]] · [[cursor]] · [[stripe]] · [[vercel]](Slack 관리, 한 문장) · Docker(페이지 없음)
-- 제품: [[grokbot]] · [[claude-code]] · [[cursor-cloud]] · [[pstack]] · [[codex]] · [[tailscale]] · [[claude-opus-5-5]] · Linear · Notion · Jira · OpenCode · T3 Code(페이지 없음)
+- 제품: [[grokbot]] · [[claude-code]] · [[cursor-cloud]] · [[pstack]] · [[codex]] · [[tailscale]] · [[claude-opus-5-5]] · Linear · Notion · Jira · OpenCode · T3 Code(→ [[theo]])
 - 개념: [[manager-bot-coding-agent-split]](신규) · [[hard-vs-soft-enforcement]] · [[risk-proportional-human-review]] · [[agent-sandboxing]] · [[automated-code-review]] · [[agent-manager-analogy]] · [[inner-outer-meta-loops]] · [[cloud-agent-delegation]] · [[persistent-agent-teams]] · [[agent-trust-curve]]
 
 ## 이 위키에서의 좌표

@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement]
 created: 2026-09-14
-updated: 2026-11-09
+updated: 2026-11-11
 ---
 
 # Fable 5.1
@@ -64,3 +64,10 @@ Claude 블로그 예시를 한국어 해설이 전한 것(⚠️ 2차 전달): *
 ## 비교 기준으로 — 버전 없는 언급 (2026-10-18 · [[tech-bridge-just-in-time-ontology]])
 
 *"the cheap reasoning model on its own did as well as Fable for about 2% of the cost."*(11:20~11:26) 오하이오 entity resolution의 200 held-out families 기준이다. Fable은 품질 기준선으로 쓰였다. ⚠️ 버전, 비교한 싼 모델의 이름, 비용 기준은 발화되지 않는다(자기 보고).
+
+## 다음 판 — Fable 5.2와 처음 들어온 스펙 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+2026-11-09 [[anthropic|Anthropic]]이 [[fable-5-2|Fable 5.2]]와 Mythos 5.2를 공개했다(해설 전달). 이 페이지가 기다리던 **벤더 문서의 요약**이 처음 들어왔다. 문서 자체는 아직 위키에 없다.
+
+- 5.1의 좌표 하나: Frontier Code에서 *"바로 전 버전인 페이블 5.1과 비교하면 차이는 더 큽니다. 프론티어 코드가 32.4였으니까요."*(01:57~02:01) — 5.2는 49.1, [[claude-opus-5-5|Opus 5.5]]는 45.5.
+- ⚠️ 영어 더빙은 이 대목의 *페이블 5.1* 을 `3.0`으로 옮긴다(01:59). 이름 소실 사례가 하나 더 늘었다(위 *자막 주의*).

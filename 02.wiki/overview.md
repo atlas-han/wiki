@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-10
+updated: 2026-11-11
 sources: []
 ---
 
@@ -292,6 +292,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-08*: [[tech-bridge]] **3편** ingest(11-07 ~ 11-08 업로드, 해설 두 편은 Korean original). [[tech-bridge-anthropic-code-review-seven-layers|AI끼리 밤새 50번 싸웠다]] — Anthropic Claude Code 팀의 리뷰를 한국어로 다시 정리한다. 희소 자원은 사람의 주의력이고, 리뷰는 관문이 아니라 코드를 쓰는 내내 도는 7겹(투표하는 AI 리뷰 · 위험도별 승인 · 플래그 · 롤백)이며, 50라운드 루프는 첫 리뷰부터 있던 코드를 조금씩 다시 찾은 탓이라 [[review-loop-termination|세 라운드 규칙]]으로 끊었다. [[tech-bridge-salesforce-claude-code-agentic-shift|세일즈포스는 엔지니어 1만 5천 명에게 Claude Code를 어떻게 풀었나]] — 같은 *코드 2배, 사고는 늘지 않음* 주장을 고객사 쪽에서 한다: 줄 수 대신 [[effective-output-metric|유효 산출량]], [[agentic-coding-maturity-curve|9단계 성숙도 곡선]]과 자신감의 계곡, 실패 세트로 모델 교체, 그리고 *스스로 리뷰해* 대신 *증거를 보여줘*([[agent-change-evidence]]). [[tech-bridge-nick-saraev-karpathy-ai-habits|카파시가 실제로 AI를 쓰는 법]] — [[nick-saraev|Nick Saraev]]가 [[andrej-karpathy|Karpathy]]의 습관을 모은다: 코드를 보지 않고, 짧게 묻고, 그림을 요청하고, 앱 대신 [[share-data-and-prompt-not-app|데이터와 프롬프트를 나눈다]]. 세 편 모두 당사자 · 제3자 자료의 2차 전달이고 원 자료는 열지 않았다.
 - *2026-11-09*: [[tech-bridge]] **1편** ingest(11-08 업로드, Korean original · 전부 내레이션). [[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다]] — [[lance-martin|Lance Martin]](Anthropic)의 AI Engineer 워크숍을 한국어로 정리한다. 옛 모델용 주문은 새 모델에서 [[prompt-debt|빚]]이 되고(`/claude-api prompt-audit`), 캐시는 층 순서로 지키고, 평가는 [[climbable-eval|오를 수 있게]] 만들어 학습/시험 분할로 과적합 없이 오르며, *똑똑한 모델을 덜 애쓰게* 하는 편이 싸고 잘한다는 주장이다. [[harness-pruning]]의 *가정은 낡는다*가 프롬프트 문장 단위로 내려왔다. ⚠️ Anthropic 자기 실험의 2차 전달, 시험 세트 14건, 모델 버전 일부 ASR 미확정.
 - *2026-11-10*: [[tech-bridge]] **1편** ingest(11-09 업로드, Korean original). [[tech-bridge-peter-steinberger-2027-developer|코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다]] — [[openclaw|OpenClaw]]를 만들고 OpenAI로 간 [[peter-steinberger|Peter Steinberger]]의 커리어 조언을 한국어로 정리한다. 코드는 에이전트에게 맡기고 자신은 한 층 위에서 구조를 쥐지만, 글과 메일은 사람의 목소리여야 한다고 본다 → [[human-provenance-value]] · [[ai-slop]]. 가장 중요한 능력은 [[high-agency|하이 에이전시]](해결책과 프로토타입을 들고 오기)이고, 소프트웨어 엔지니어는 *별표를 단* 예다 → [[ai-jobs-impact]]. 이 소스로 위키가 처음 OpenClaw의 제작자 · 생성 시점을 기록한다(해설 전달, 더빙은 *Open Interpreter* 로 오역).
+- *2026-11-11*: [[tech-bridge]] **2편** ingest(11-10 업로드, 둘 다 Korean original · AI 내레이션). [[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개]] — [[fable-5-2|Fable]]이 처음으로 스펙(가격 · 벤치마크 · 배포 구조)을 얻는다. 다만 벤더 발표문의 해설 요약이다. 핵심은 같은 발표의 *일부러 덜 키운 능력* 이다 — AI R&D를 앞당길 능력만 훈련에서 억눌렀다 → [[differential-capability-limitation]] · [[automated-ai-research]]. 그러면서도 기본값은 [[claude-opus-5-5|Opus 5.5]]라고 권한다. [[tech-bridge-theo-coding-is-gardening|개발자는 이제 정원사?]] — [[theo|Theo]]가 [[codebase-gardening]]에 거름 · 지지대 · 잡초라는 손질 셋을 붙이고, 테스트 43%를 **지우는 것**을 정원 일의 대표로 든다. 마찰은 에이전트에게서 곱해진다 → [[agent-friction-multiplier]] · [[ai-slop]](이전 모델의 슬롭이 다음 모델을 막는다).
 
 ---
 

@@ -3,11 +3,11 @@ title: 들쭉날쭉한 역량 경계 (Jagged Frontier)
 type: concept
 category: theory
 tags: [capability, evaluation, astra, agi, unevenness]
-related: [agi-definition, all-or-nothing-accuracy, skill-evals, ai-slop, openai-astra, capability-detour]
+related: [agi-definition, all-or-nothing-accuracy, skill-evals, ai-slop, openai-astra, capability-detour, differential-capability-limitation]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-claude-fable-5-2-announcement]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-11-11
 ---
 
 # 들쭉날쭉한 역량 경계 (Jagged Frontier)
@@ -62,3 +62,9 @@ updated: 2026-09-20
 - [[tech-bridge-brockman-agi-era-defender-window]] — first-seen
 - [[greg-brockman]] · [[openai-astra]]
 - 관련: [[agi-definition]] · [[all-or-nothing-accuracy]] · [[skill-evals]] · [[ai-slop]] · [[capability-detour]]
+
+## 평균 10%의 안쪽 — Fable 5.2 표 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+[[fable-5-2|Fable 5.2]]와 [[claude-opus-5-5|Opus 5.5]]의 차이는 항목마다 다르다(해설 전달). 코딩은 45.5 → 49.1인데 로봇 제어는 39.4 → 64.9, Remote Labor Index는 21.3 → 41.3이다. 업무 자동화는 Gemini 4 Carbon이, 한 지식 업무 Elo는 Opus 5.5가 앞선다. 해설의 결론: *"평균 10%라는 말은 어디를 보느냐에 따라 맞기도 하고 틀리기도 합니다."*(02:12~02:17)
+
+⭐ 같은 발표에 **의도한 함몰**도 있다. AI R&D를 앞당길 두 능력은 일부러 Opus 5.5 수준에 묶었다 → [[differential-capability-limitation]]. 표의 낮은 칸이 *못 한 것* 인지 *안 키운 것* 인지는 표만 보고 알 수 없다(위키의 읽기).

@@ -1240,5 +1240,13 @@
   "01.raw/articles/2026-11-09_코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다 OpenAI 피터 스타인버거가 말하는 2027년 개발자 (OpenClaw).md": "LiNewspaper",
   "02.wiki/sources/tech-bridge-peter-steinberger-2027-developer.md": "LiVideo",
   "02.wiki/entities/peter-steinberger.md": "LiUser",
-  "02.wiki/concepts/high-agency.md": "LiPuzzle"
+  "02.wiki/concepts/high-agency.md": "LiPuzzle",
+  "01.raw/articles/2026-11-10_Claude Fable 5.2 공개 Anthropic이 일부러 덜 키운 능력이 있다 발표문 8분 총정리.md": "LiNewspaper",
+  "01.raw/articles/2026-11-10_개발자는 이제 엔지니어가 아니라 정원사 Theo가 테스트 1만 1천 개를 지운 이유 6분 정리 (T3 Code).md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-claude-fable-5-2-announcement.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-theo-coding-is-gardening.md": "LiVideo",
+  "02.wiki/entities/fable-5-2.md": "LiBot",
+  "02.wiki/entities/theo.md": "LiUser",
+  "02.wiki/concepts/differential-capability-limitation.md": "LiPuzzle",
+  "02.wiki/concepts/agent-friction-multiplier.md": "LiPuzzle"
 }

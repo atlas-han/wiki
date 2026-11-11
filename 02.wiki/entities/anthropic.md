@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-09
+updated: 2026-11-11
 ---
 
 # Anthropic
@@ -232,3 +232,11 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - *"On October 28th, Claude codes lead actually said they found no single root cause and pointed at heavy sessions with lots of agents."*(02:55~03:03, 이름 미발화) 약 4시간 뒤 Flamerix gist가 HN 1면에 올랐다.
 - 8월 GitHub 이슈(한 세션 요청의 거의 4분의 1)는 *"still open with no reply from Anthropic"*(03:14~03:16).
 - 구독에서 캐시 읽기에 대해 *"Anthropic only says they still draw usage and not how much."*(02:42~02:44) 요약은 Claude가 스스로 에이전트 상태를 이해하는 데 쓴다고 Anthropic이 말한다(04:23~04:28), 더 싼 판본을 *"apparently"* 만드는 중(04:34~04:36) → [[hidden-harness-calls]].
+
+## Fable 5.2 · Mythos 5.2 발표 — 내부 90%와 일부러 덜 키운 능력 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+2026-11-09 발표문을 한국어 해설이 옮겼다(위키 미열람). → [[fable-5-2]]
+
+- 내부 숫자: *"핵심 코드 베이스의 합차지는 변경의 90% 이상을 이제 클로드가 씁니다. 단 괄호 안에 조건이 있습니다. 사람의 지위 아래에서라는 거죠."*(04:09~04:17)[=사람의 지휘 아래] — Fable 하나가 아니라 Claude 전체 이야기다.
+- ⭐ 훈련에서 AI R&D를 앞당길 두 능력(가속기 커널 최적화 · 언어 모델 구조 개선)을 일부러 덜 키웠다 → [[differential-capability-limitation]](신규)
+- 자기 고백: *"출시 전에 모든 실패를 잡아내는 평가는 아직 풀직 못한 문제라고 적었습니다."*(06:34~06:38)

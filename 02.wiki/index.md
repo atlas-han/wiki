@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # Index
@@ -177,6 +177,7 @@ updated: 2026-11-10
 - [[john-kim]] — Anthropic Claude Code 팀 코드 리뷰 글을 소개한 영상의 제작자로 보이는 개발자(설명란 · 영어 더빙 근거, 원음 ASR엔 "종"뿐). *배포한 사람이 책임진다* 발췌 ([[tech-bridge-anthropic-code-review-seven-layers]]) ⚠️ 소속 · 직함 미상, 발췌 하나는 무캡션
 - [[lance-martin]] — [[anthropic|Anthropic]](직함 미발화). [[anthropic-managed-agents]] 공저자, AI Engineer 워크숍 *Your Old Prompts Are Making Claude Worse* 발표자 — 프롬프트 부채 · 캐시 순서 · 오를 수 있는 평가 · 똑똑한 모델을 덜 애쓰게 ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
 - [[peter-steinberger]] — [[openclaw|OpenClaw]] 제작자, 2026년 2월 [[openai|OpenAI]] 합류(해설 근거). 코드의 거의 100%를 에이전트에게 맡기고 오픈소스 40개를 한 층 위에서 관리하지만 AI가 쓴 메일은 열지 않는다. [[high-agency|하이 에이전시]] · 별표를 단 소프트웨어 엔지니어 · 100% 손으로 쓴 추신 ([[tech-bridge-peter-steinberger-2027-developer]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
+- [[theo]] — 개발자 · 유튜버(t3.gg), T3 Code · T3 Chat 제작. 전 Twitch(2017년부터 4년). *개발자는 이제 정원사* — 거름(플랫폼 반반) · 지지대(PR마다 수치 검사) · 잡초(테스트 43% 삭제). 마찰은 에이전트를 더 세게 막는다 ([[tech-bridge-theo-coding-is-gardening]]) ⚠️ 본인 음성 캡션 없음, 해설 전달 · 이전 네 소스에서 이름 · 제품만
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -289,6 +290,7 @@ updated: 2026-11-10
 
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 - [[kimi]] — Kimi K3.1 Pro(+ 하네스 Kimi Code · 앱 swarm). Opus 5.5와 같은 프롬프트 데모 비교: 평균 29분 41초 vs 47분 2초, *"more consistent despite its lower quality"*, 입력 $2 · 출력 $10 per 1M(화자 진술). 이전 언급(2.6 · K2.7 · Cursor)도 모음 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]]) ⚠️ 제작사 · 공개 가중치 미발화 · 가격 미확인
+- [[fable-5-2]] — Claude Fable 5.2(2026-11-09 공개)와 같은 모델의 안전장치 없는 판 Mythos 5.2. 입력 $8 / 출력 $40, Opus 5.5 대비 코딩 약 10% · 로봇 · Remote Labor Index는 큰 폭, 에이전트 1,000개의 운영체제 · 페르마 형식화, AI R&D 능력은 일부러 덜 키움, 대부분 일은 Opus 5.5부터 ([[tech-bridge-claude-fable-5-2-announcement]]) ⚠️ 발표문의 해설 전달, 원문 미열람
 
 ### Products
 - [[v0]] — Vercel 앱 생성 제품. 하네스에 엔지니어링 시간 "like 90%"를 쓴 회고 → 지금이라면 기성 하네스 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 회고·추정
@@ -417,6 +419,7 @@ updated: 2026-11-10
 - [[code-blind-first-user-test]] — 빌드를 본 적 없고 코드 읽기가 막힌 새 에이전트에게 실제 앱을 처음 쓰는 고객처럼 쓰게 해 막히는 곳을 찾는다. 서브에이전트, 임시 DB, 터미널 우회까지 막는 훅. 출발점은 Claude Code 팀이 매일 제품을 직접 쓰는 것 ([[tech-bridge-ai-labs-claude-code-verification-review-loop]]) ⚠️ AI Labs 1회 시연, 결과 · 비용 미제시
 - [[effective-output-metric]] — 줄 수 대신 커밋이 바꾼 것의 가치를 ML 모델이 시니어 패널처럼 채점하는 점수. Salesforce × Stanford, 두 배 → 점수당 비용 ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 해설의 2차 전달, 채점 기준 · 정확도 미상
 - [[climbable-eval]] — 모델이 스스로 오를 수 있는 평가의 네 조건(모델 순서 · 생각에 반응 · 천장 · 안정), 막힌 문제, `build-eval`, 학습/시험 분할 `hillclimb`과 되돌림 규칙. Claude API 스킬 66% → 87.9%, 비용 목표 시험용 78.6% → 90.5% ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 벤더 자기 실험, 시험 세트 14건
+- [[differential-capability-limitation]] — 훈련에서 AI 개발을 가장 직접 앞당길 능력(가속기 커널 최적화 · 언어 모델 구조 개선)만 골라 덜 키우는 조치. 배포 제한(누가 쓰나)과 다른 훈련 층. *AI가 AI를 더 빨리 만드는 길목의 과속 방지턱* ([[tech-bridge-claude-fable-5-2-announcement]]) ⚠️ 한 소스 · 벤더 발표문 2차 전달, 방법 미기술
 
 ### Architectures
 - [[always-on-agent-architecture]] — 하네스를 서버로: 루프·상태는 서버와 DB, 컴퓨터는 따로 자고 깨는 VM, 트리거 → dedupe router → 알림 heuristic → 우선순위 큐, thin client와 단일 도구 send user, 재시도해도 안전한 durable workflow, 사용자는 사다리 맨 끝 ([[tech-bridge-lee-robinson-always-on-agents]]) ⚠️ 단일 당사자 소스
@@ -754,6 +757,7 @@ updated: 2026-11-10
 - [[agentic-coding-maturity-curve]] — 엔지니어의 에이전트 코딩 사용 깊이를 9단계 · 4레벨로 그린 Salesforce의 지도. 초반 상승 → 자신감의 계곡 → 레벨 3 서브에이전트 병렬 → 레벨 4 자율(CI 실패 → 수정 → 리뷰 · 머지) ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 그림 미확인, 레벨 2 · 단계 이름 없음
 - [[share-data-and-prompt-not-app]] — 모델이 데이터 위에 어떤 앱이든 만들 수 있다면 앱 대신 데이터 소스와 프롬프트를 공유한다. *"wrappers around a core truth, which is the data"* ([[tech-bridge-nick-saraev-karpathy-ai-habits]]) ⚠️ Saraev의 Karpathy 습관 전달 + 해석
 - [[prompt-debt]] — 옛 모델용 주문(*두 번 확인해* · 모순된 규칙 · 낡은 thinking 설정 · 손수 스크래치패드)이 새 모델의 비용을 올리고 성능을 깎는다. `/claude-api prompt-audit`로 갚는다(비용 18% + 9% ↓) ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 벤더 2차 전달
+- [[agent-friction-multiplier]] — 느린 개발 서버 · 캐시 TTL · 무거운 CI의 마찰은 사람보다 에이전트를 훨씬 세게 막는다(확인할 때마다 곱해짐). 그래서 본전이 안 맞던 재작성(TS → Rust)과 플랫폼 정비가 이제 맞는다 ([[tech-bridge-theo-coding-is-gardening]]) ⚠️ 한 사람의 진술 · 해설 전달
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1027,10 +1031,12 @@ updated: 2026-11-10
 ---
 - [[tech-bridge-lance-martin-old-prompts-make-claude-worse]] — 한국어 해설(6:36, 챕터 8, Korean original · ko-orig 원 ASR, 영어 원음 발췌 없음, 2026-11-08 18:00 KST): [[lance-martin|Lance Martin]] 워크숍 — [[prompt-debt|프롬프트 부채]] · [[prompt-caching|캐시 층 순서]] · [[climbable-eval|오를 수 있는 평가와 hillclimb]] · 똑똑한 모델을 덜 애쓰게 · 며칠짜리 하네스([[managed-agents]]) ⚠️ Anthropic 자기 실험의 2차 전달, 모델 버전 일부 ASR 미확정
 - [[tech-bridge-peter-steinberger-2027-developer]] — 한국어 해설(5:46, 챕터 8, Korean original · ko-orig 원 ASR, 원음 발췌 여섯 곳 무캡션, 2026-11-09 18:00 KST): [[peter-steinberger|Peter Steinberger]]가 말하는 2027년 개발자 — [[openclaw|OpenClaw]] 제작자 · 생성 시점(2025년 11월), 한 층 위의 오픈소스 관리, 좁아진 소프트웨어 엔지니어, [[high-agency|하이 에이전시]]와 프로토타입, AI가 쓴 메일을 거르는 기준, 틀 밖의 주니어, 별표를 단 예, 100% 손으로 쓴 추신 ⚠️ 인터뷰 · 블로그의 2차 전달, 더빙은 OpenClaw를 Open Interpreter로 말함
+- [[tech-bridge-theo-coding-is-gardening]] — 한국어 해설(6:21, 챕터 9, Korean original · AI 내레이션, 원음 발췌 다섯 곳 무캡션, 2026-11-10 18:00 KST): [[theo|Theo]]의 *Coding Isn't About Code Anymore* — T3 Code PR 하나로 테스트 1만 1천 개(43%) 삭제(Claude Haiku 판정), Twitch의 PR 두 개(증상 말고 원인), 플랫폼 반반, 에이전트보다 먼저 쓴 슬롭 · 이전 모델의 슬롭, 계산이 바뀌었다(TS → Rust), 마찰은 에이전트를 더 세게, 거름 · 지지대 · 잡초, 머지 PR 10월 평균 130개+(해설자 집계) ⚠️ 원 영상 · PR 미열람
+- [[tech-bridge-claude-fable-5-2-announcement]] — 한국어 해설(8:34, 챕터 9, Korean original · AI 내레이션, Nick Saraev 원음 발췌 다섯 곳 무캡션, 2026-11-10 22:00 KST): Anthropic 발표문으로 대조한 [[fable-5-2|Fable 5.2 · Mythos 5.2]] — 같은 모델의 두 판, 평균 10%와 표의 아래쪽, 프롬프트 한 줄 데모, 에이전트 1,000개가 8일 동안 만든 운영체제, 내부 변경 90%+를 Claude가(사람의 지휘 아래), 블랙홀 · 페르마 · 하드웨어 · 로봇, [[differential-capability-limitation|일부러 덜 키운 능력]], 평가 인식 · 샌드박스 탈출 3.1%, 대부분은 Opus 5.5부터 ⚠️ 발표문 · 리뷰 미열람, 더빙은 초반 모델명을 Claude 3.5 등으로 오역
 
 ## 통계
 
-- 총 페이지 수: 991 (988 → 991, + 2026-11-10 Tech Bridge 1편(11-09 업로드 — Peter Steinberger 해설): source 1 · entity 1(peter-steinberger) · concept 1(high-agency) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 991과 일치)
+- 총 페이지 수: 997 (991 → 997, + 2026-11-11 Tech Bridge 2편(11-10 업로드 — Fable 5.2 발표문 정리 · Theo 정원사 정리): source 2 · entity 2(fable-5-2 · theo) · concept 2(differential-capability-limitation · agent-friction-multiplier) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 997과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-10 (Tech Bridge **1편** — 11-09 업로드 [[tech-bridge-peter-steinberger-2027-developer|코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다]](`p2aPohAlShc`). `ezPSsVW92Mg` 멤버 전용 신규 · `Yhck-x6VuLs` 지속)
-- 직전 ingest: 2026-11-09 (Tech Bridge **1편** — 11-08 업로드 [[tech-bridge-lance-martin-old-prompts-make-claude-worse|'두 번 확인해' 한 줄에 비용 48% 샜다]](`BqUhlnVlEbo`))
+- 마지막 ingest: 2026-11-11 (Tech Bridge **2편** — 11-10 업로드 [[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개]](`k-hBhaO46v8`) · [[tech-bridge-theo-coding-is-gardening|개발자는 이제 정원사?]](`cju5CR-2ZvA`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-10 (Tech Bridge **1편** — 11-09 업로드 [[tech-bridge-peter-steinberger-2027-developer|코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다]](`p2aPohAlShc`). `ezPSsVW92Mg` 멤버 전용 신규 · `Yhck-x6VuLs` 지속)

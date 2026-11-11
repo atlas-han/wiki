@@ -6,9 +6,9 @@ tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
 related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine, human-provenance-value, slopcodebench, compressed-review-surface, high-agency]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-peter-steinberger-2027-developer]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-peter-steinberger-2027-developer, tech-bridge-theo-coding-is-gardening]
 created: 2026-09-12
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # AI 슬롭
@@ -221,3 +221,9 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 - 결론: *"모두에게 쉬워졌으니까 이런저런 기능이 된다는 기본 수준으로는 부족합니다."*(03:45~03:49)
 
 이 페이지의 다른 소스들은 슬롭을 **만드는 쪽**에서 다뤘다. 이 소스는 **받는 쪽**이 슬롭을 신호로 써서 거르는 모습이다. 슬롭은 품질 문제이기 전에 *주의를 줄 가치가 없다는 신호* 가 된다(위키의 읽기). → [[human-provenance-value]] · [[high-agency]]
+
+## 세대 간 슬롭 — 이전 모델의 슬롭이 다음 모델을 막는다 (2026-11-11 · [[tech-bridge-theo-coding-is-gardening]])
+
+[[theo|Theo]]는 T3 Chat의 손으로 짠 동기화 엔진(그만 아는 코드라 팀원들이 늘 그를 기다렸다)을 돌아보며 *"그는 에이전트보다 먼저 슬롭을 쓰고 있었던 겁니다."*(02:37~02:39)라고 말한다(해설 전달). 그리고 한 걸음 더 간다: *"사람이 남긴 슬롭이 팀원을 막았듯 이제는 이전 모델이 남긴 슬롭이 다음 모델을 막는다는 얘기입니다."*(02:51~02:55)
+
+위의 *"AI 슬롭 이전에 인간 슬롭이 있었다"*(Lauren Tan)와 같은 방향이다. 이 소스는 **누가 막히는가**를 바꾼다 — 슬롭의 피해자가 사람 동료에서 **다음 모델**로 옮겨 간다. 처방은 정원 일이다 → [[codebase-gardening]]

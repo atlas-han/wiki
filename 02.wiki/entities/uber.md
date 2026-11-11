@@ -6,9 +6,9 @@ tags: [ride-hailing, mobile, monorepo, debugging-agent, platform-engineering]
 aliases: [우버, Uber Technologies]
 links:
   - https://www.uber.com
-sources: [tech-bridge-uber-debug-assist, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-uber-debug-assist, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-claude-fable-5-2-announcement]
 created: 2026-10-09
-updated: 2026-10-17
+updated: 2026-11-11
 ---
 
 # Uber
@@ -42,3 +42,7 @@ updated: 2026-10-17
 ## 세 번째 판본 — "by April" 헤드라인 (2026-10-17 · [[tech-bridge-factory-bug-report-to-production]])
 
 [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"We've all seen the headlines about Uber's CTO blowing through the year's AI budget by April"*(02:45~02:50). 기간은 Kimchi 편의 *"in the last four months"* 와 맞고(1~4월), Stigg 편의 *"just a few weeks into the year"* 와는 여전히 어긋난다. ⚠️ 출처 미제시(*"headlines"*), CTO 이름 미발화. 세 판본 모두 벤더 발표 안의 제3자 주장이다.
+
+## Fable 5.2 사전 사용 — 보안 감사에 리뷰 에이전트 170개 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+[[fable-5-2|Fable 5.2]] 발표문(해설 전달)에 Uber 엔지니어의 말이 있다. *"10시간 넘는 보안 감사를 맡겼더니 리뷰 에이전트 170개 정도를 내보내고 보고서와 수정 요청까지 들고 돌아왔다고 전합니다."*(04:40~04:47) ⚠️ 엔지니어 이름 · 감사 대상은 해설에 없다.

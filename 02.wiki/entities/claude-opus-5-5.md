@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement]
 links: []
 created: 2026-10-09
-updated: 2026-11-09
+updated: 2026-11-11
 ---
 
 # Claude Opus 5.5
@@ -72,3 +72,12 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 - **그래프상 위치(화자가 읽은 값, ⚠️ 출처 미표기)**: Agents' Last Exam 비용 대비 점수에서 Terra를 이기는 유일한 모델 — *"The only situation in which it gets beat is by Opus 5.5."*(09:49~09:54) — 대신 작업당 약 $9 vs Terra 약 $1(09:58~10:02). → [[cost-vs-score-frontier]]
 
 > ⚠️ 이 페이지의 **가격 1차 자료는 여전히 없다.** "약 12배"(데모 달러 사용량)와 "약 9배"(그래프 작업당 비용)는 서로 다른 화자 진술이고, Kimi 편의 *"double the cost"*(단가표)와도 단위가 다르다.
+
+## Fable 5.2 발표의 기준선 · 권장 기본값 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+[[fable-5-2|Fable 5.2]] 발표문(해설 전달)에서 Opus 5.5는 **비교의 기준선**이자 **권장 기본값**이다.
+
+- 리뷰어(Nick Saraev)의 평가: *"바로 아래 모델인 오퍼스 5.5와 비교하면 대략 10% 차이라는 거죠."*(01:28~01:30) 표에는 Opus 5.5가 앞서는 항목도 있다(한 지식 업무 Elo).
+- 페르마의 마지막 정리 형식화에서 *"같은 조건에 오퍼스 5.5는 30시간이 지나도 27%에서 멈췄습니다."*(05:22~05:26)
+- ⭐ 권고: *"대부분의 코딩과 지식 작업은 5스 [음악] 5. 시작하라고 권합니다. 가장 강한 일상형 모델이라는 표현까지 쓰죠."*(07:05~07:11)[=오퍼스 5.5로] Fable 안전장치에 걸린 요청도 *"이전 오퍼스 모델이"*(07:28~07:31) 대신 답한다(버전 미발화).
+- ⚠️ 영어 더빙은 이 영상 초반에 Opus 5.5를 `Opus 3.0`으로 말한다(01:30 · 02:08).

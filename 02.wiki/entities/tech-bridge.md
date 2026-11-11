@@ -173,8 +173,10 @@ sources:
   - tech-bridge-salesforce-claude-code-agentic-shift
   - tech-bridge-lance-martin-old-prompts-make-claude-worse
   - tech-bridge-peter-steinberger-2027-developer
+  - tech-bridge-claude-fable-5-2-announcement
+  - tech-bridge-theo-coding-is-gardening
 created: 2026-06-03
-updated: 2026-11-10
+updated: 2026-11-11
 ---
 
 # Tech Bridge
@@ -1658,3 +1660,17 @@ updated: 2026-11-10
 - ⚠️ **더빙이 OpenClaw를 `Open Interpreter`로, 2025년 11월을 `November 2023`으로 말한다.** 인터뷰(`KrlaBpyWH_k`) · 블로그 · Altman 게시물은 미열람.
 
 **멤버 전용**: `ezPSsVW92Mg`(목록 `upload_date` 20261109, *에이전트가 자기 PR을 직접 머지한다 | Cursor 엔지니어 Lauren Tan이 에이전트를 믿게 된 방법 10분 정리*, 10:14) 신규 확인(목록 줄, `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+
+## 2026-11-10 업로드 — Fable 5.2 발표문 정리 · Theo 정원사 정리 (2026-11-11 ingest)
+
+[[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개 | Anthropic이 일부러 덜 키운 능력이 있다? 발표문 8분 총정리]](`k-hBhaO46v8`, 8:34, 공식 챕터 9) — 한국어 해설, Anthropic 발표문 · Nick Saraev 리뷰 대조 ([[fable-5-2]](신규) · [[differential-capability-limitation]](신규) · [[claude-opus-5-5]] · [[claude-mythos-preview]] · [[fable-5-1]] · [[anthropic]] · [[nick-saraev]] · [[uber]])
+
+[[tech-bridge-theo-coding-is-gardening|개발자는 이제 엔지니어가 아니라 정원사? | Theo가 테스트 1만 1천 개를 지운 이유 6분 정리 (T3 Code)]](`cju5CR-2ZvA`, 6:21, 공식 챕터 9) — 한국어 해설, Theo 영상 · T3 Code PR · 해설자의 머지 PR 집계 ([[theo]](신규) · [[agent-friction-multiplier]](신규) · [[codebase-gardening]] · [[ai-slop]] · [[lauren-tan]] · [[rust]] · [[structure-sensitive-tests]])
+
+- 두 편 모두 Korean original 구성(`ko` = `ko-orig` md5), en-orig = 영어 더빙, **설명란이 AI 내레이션임을 밝힌다.** 원음 발췌(Saraev 다섯 곳 · Theo 다섯 곳)는 **두 트랙 모두 무캡션**이다. 인용은 전부 ko-orig 내레이션이다.
+- `upload_date` 둘 다 20261110 — Theo 편 18:00 KST, Fable 편 22:00 KST(11-10 회차 발화 뒤 게시).
+- ⚠️ **더빙이 Fable 편 초반의 모델 이름을 바꾼다**(Fable 5.2 → `Claude 3.5`, Mythos 5.2 → `Claude 3.5 Haiku`, Opus 5.5 → `Opus 3.0`). 03:48 이후로는 바른 이름으로 돌아온다. 운영체제 기간은 ko *8회* · 더빙 *8 hours* · 챕터 **8일**이 갈려 챕터를 따랐다.
+- 발표문(`anthropic.com/claude-fable-and-mythos-5-2`) · 리뷰(`foCBPrpbO68`) · Theo 원 영상(`GtJKFhztgdM`) · T3 Code PR 둘 · Lauren 게시물은 미열람.
+
+**멤버 전용**: `ezPSsVW92Mg`(Lauren Tan 10분 정리, 10:14) 지속(목록 줄, `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.

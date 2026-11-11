@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · 발표 Dominik Kundel([[openai|O
 date-published: 2026-10-13
 ingested: 2026-10-14
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-11-11
 ---
 
 # Tech Bridge — OpenAI가 직접 밝힌 Codex 하네스 위에 나만의 에이전트를 구축하는 법 (Dominik Kundel · OpenAI)
@@ -166,7 +166,7 @@ ASR·ko 보정: ko는 **결론 문장 넷을 뒤집는다** — BYO 구독이 *"
 
 ## 등장 개체
 
-- 인물: [[dominik-kundel|Dominik Kundel]](신규 제안 — 자막엔 *"Dom"* 만) · "Roman"(기조연설 화자, 신원 미판독 — 페이지 없음) · Maddie(미판독 — 페이지 없음) · Theo(T3 Code, ⚠️ 판독 — 페이지 없음)
+- 인물: [[dominik-kundel|Dominik Kundel]](신규 제안 — 자막엔 *"Dom"* 만) · "Roman"(기조연설 화자, 신원 미판독 — 페이지 없음) · Maddie(미판독 — 페이지 없음) · [[theo|Theo]](T3 Code, ⚠️ 판독)
 - 조직: [[openai|OpenAI]] · [[jetbrains|JetBrains]](IDE 통합) · [[cloudflare|Cloudflare]](Doom Wasm 렌더러) · [[ai-engineer|AI Engineer]](⚠️ 일반명사 발화 + 설명란 링크 — 추정)
 - 제품·도구: [[codex|Codex]](app · CLI · VS Code 확장 · plugins · `/goal` · codex exec) · [[codex-app-server|Codex App Server]](신규 제안) · Codex Python SDK · [[claude-code|Claude Code]](Codex 플러그인의 호스트) · Xcode · T3 Code · LM Studio · Ollama · Electron · Doom/Freedoom · Visual Basic(페이지 없음)
 - 모델: *"5.5"*(⚠️ 계열명 미발화)

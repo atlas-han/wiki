@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [testing, coding-agents, verification, test-quality, mocking, ci]
 aliases: [동어반복 테스트, tautological tests, 거짓말하는 테스트, checks can lie, 실패할 수 없는 테스트, tests that cannot fail]
-related: [deep-modules, test-harness-vs-test-authoring, mergeability-gap, automated-code-review, verification-bottleneck, reward-hacking, hard-vs-soft-enforcement, verifiable-goals]
+related: [deep-modules, test-harness-vs-test-authoring, mergeability-gap, automated-code-review, verification-bottleneck, reward-hacking, hard-vs-soft-enforcement, verifiable-goals, agent-friction-multiplier]
 first-seen: tech-bridge-pocock-pr-bottleneck
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-emily-bache-exact-coding-tdd]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-theo-coding-is-gardening]
 created: 2026-10-09
-updated: 2026-11-07
+updated: 2026-11-11
 ---
 
 # 구조 민감 테스트
@@ -57,3 +57,12 @@ updated: 2026-11-07
 
 - [[tech-bridge-pocock-pr-bottleneck]] · [[matt-pocock]]
 - 관련: [[deep-modules]] · [[test-harness-vs-test-authoring]] · [[mergeability-gap]] · [[reward-hacking]] · [[hard-vs-soft-enforcement]] · [[automated-code-review]]
+
+## 지우는 쪽의 사례 — 테스트 43%를 에이전트 판정으로 (2026-11-11 · [[tech-bridge-theo-coding-is-gardening]])
+
+[[theo|Theo]]는 T3 Code에서 PR 하나로 테스트 약 1만 1천 개를 지웠다(해설 전달). 이유: *"테스트가 너무 많고 시끄러워서 릴리스 실행이 불안정한 테스트 때문에 대부분 실패했거든요."*(04:13~04:18)
+
+- 방법: Claude Haiku 에이전트들이 같은 기준으로 모든 테스트 파일을 읽었다. *"파일 절반 가까이는 두 번씩 따로 판정해 둘 다 동의할 때만 지웠고 의견이 갈린 1900권은 세 번째 하이코가 정했습니다."*(04:25~04:32)[=1,900건]
+- 결과: *"지온 테스트가 잡았을 회기는 아직 없었고 머지 뒤 되살린 건이네 개뿐이었습니다."*(04:40~04:46)[=지운 테스트가 잡았을 회귀 · 되살린 건 네 개]
+
+이 페이지는 *거짓말하는 검사* 를 **알아보는** 법을 다뤘다. Theo의 사례는 그런 테스트를 **대량으로 걸러 내는** 법이다. 판정 기준의 내용은 해설에 없다. ⚠️ *회귀 없음* 은 짧은 기간의 진술이다.

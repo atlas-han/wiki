@@ -7,9 +7,9 @@ aliases: [Saraev, 닉 사라예프]
 links:
   - https://www.youtube.com/watch?v=FSXHk4hMrY8
   - https://www.youtube.com/watch?v=He-NyJjzWM0
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-claude-fable-5-2-announcement]
 created: 2026-10-09
-updated: 2026-11-08
+updated: 2026-11-11
 ---
 
 # Nick Saraev
@@ -78,3 +78,13 @@ updated: 2026-11-08
 ## 여섯 번째 등장 — 카파시의 AI 사용법 정리 (2026-11-08 · [[tech-bridge-nick-saraev-karpathy-ai-habits]])
 
 설명란(*"원본: Nick Saraev"*) · tags 근거, 발화에 이름 없음. 자기 경험이 아니라 [[andrej-karpathy|Karpathy]]의 공개 글 · 댓글을 2주간 모아 전한다. Karpathy를 *"Uncle Andrej"* · *"Unk"* 로 부른다. 스스로 *"presumably"* · *"I don't know how empirical"* 이라 단서를 다는 편이다. 앞선 입문 편에서 권한 *결과를 설명하라 · auto 모드*의 극단(코드를 아예 보지 않음)을 남의 습관으로 전한다. ⚠️ *"Nick Szabo thumbnails"*(03:34~03:35)는 자기 비꼼인지 판독 보류.
+
+## 일곱 번째 등장 — Fable 5.2 리뷰, 해설자가 대조한 쪽 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
+
+이번엔 Tech Bridge가 Saraev의 리뷰(*"Anthropic has just DROPPED A NUKE! (Fable 5.2)"*, `foCBPrpbO68`, 설명란 근거)를 **발표문과 대조하는 상대**로 쓴다. 원음 발췌 다섯 곳은 두 트랙 모두 무캡션이라 **Saraev 본인의 인용 가능한 발화는 없다.** 해설이 전하는 것:
+
+- 제목은 핵폭탄인데 *"정작 본인은 세상이 뒤집힌 건 아니라고 말합니다."*(00:19~00:22) Opus 5.5 대비 약 10%라는 평가다.
+- 실험: 결과물을 10만 명에게 보여 준다고 말하고 부탁하자 모델이 데모 모음 페이지를 통째로 만들었다. *"다만 그가 강조한 건 한 번에 손보지 않고 나왔다는 점이었죠."*(03:27~03:29)
+- 해설자의 바로잡기: *"닉이 함께 언급한 단백질 구조 예측은 페이블이 아니라 미토스 5.2의 [음악] 성과입니다."*(05:47~05:53)
+
+앞 비교 편들처럼 **데모와 체감**으로 판단하는 리뷰어다. 해설은 그 판단을 벤치마크 표의 아래쪽(로봇 · Remote Labor Index)과 맞대어 *맞기도 하고 틀리기도 하다* 고 정리한다.
