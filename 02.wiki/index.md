@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 
 # Index
@@ -178,6 +178,8 @@ updated: 2026-11-11
 - [[lance-martin]] — [[anthropic|Anthropic]](직함 미발화). [[anthropic-managed-agents]] 공저자, AI Engineer 워크숍 *Your Old Prompts Are Making Claude Worse* 발표자 — 프롬프트 부채 · 캐시 순서 · 오를 수 있는 평가 · 똑똑한 모델을 덜 애쓰게 ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
 - [[peter-steinberger]] — [[openclaw|OpenClaw]] 제작자, 2026년 2월 [[openai|OpenAI]] 합류(해설 근거). 코드의 거의 100%를 에이전트에게 맡기고 오픈소스 40개를 한 층 위에서 관리하지만 AI가 쓴 메일은 열지 않는다. [[high-agency|하이 에이전시]] · 별표를 단 소프트웨어 엔지니어 · 100% 손으로 쓴 추신 ([[tech-bridge-peter-steinberger-2027-developer]]) ⚠️ 본인 음성 캡션 없음, 해설 전달
 - [[theo]] — 개발자 · 유튜버(t3.gg), T3 Code · T3 Chat 제작. 전 Twitch(2017년부터 4년). *개발자는 이제 정원사* — 거름(플랫폼 반반) · 지지대(PR마다 수치 검사) · 잡초(테스트 43% 삭제). 마찰은 에이전트를 더 세게 막는다 ([[tech-bridge-theo-coding-is-gardening]]) ⚠️ 본인 음성 캡션 없음, 해설 전달 · 이전 네 소스에서 이름 · 제품만
+- [[chase-ai]] — Claude · Claude Code 활용 유튜브 채널 Chase AI의 Chase(설명란 근거, 발화에 이름 없음). Fable 5.2 공식 프롬프트 가이드 · 시스템 카드를 읽은 *바뀐 프롬프트 규칙 10가지* ([[tech-bridge-chase-ai-fable-5-2-prompting-rules]]) ⚠️ Harrison Chase와 다른 사람
+- [[alex-karp]] — Palantir 공동창업자 · CEO, 사회 이론 박사. *AI는 일자리를 늘리지만 격차를 키운다*, 부유세는 감시 때문에 반대 · 상속세 50% + 정부 낭비 맞교환, 전장 AI의 국내 사용 금지 ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 원음 거의 무캡션 · 해설 요약, 당사자 인센티브
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -267,6 +269,7 @@ updated: 2026-11-11
 - [[shopify]] — 전자상거래 플랫폼. CTO [[mikhail-parakhin|Parakhin]]: 전 직원 무제한 토큰, 머천트 대상 [[company-digital-twin|디지털 트윈]]을 운영에 적용 ([[tech-bridge-parakhin-shopify-ai-cost-barbell]]) · 지나가는 언급 2건 ⚠️ 당사자 진술
 - [[better-stack]] — 관측(observability) 플랫폼 회사. Claude Code OpenTelemetry를 query source로 묶어 agent summary 비용을 잰 영상의 원 제작자(설명란 근거, 발표자 개인 미상) ([[tech-bridge-better-stack-claude-code-agent-summary-cost]])
 - [[greptile]] — AI 코드 리뷰 제품 회사. 코드베이스 맥락에서 출발, 여러 회사 코드 코퍼스 평가, living wiki, 샌드박스 + computer use 자율 테스트, 프런티어 20% 모델 배분 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]] · [[tech-bridge-death-of-code-review]]) ⚠️ 모두 당사자 진술, 사이트 미열람
+- [[palantir]] — 데이터 통합 · 분석 플랫폼(정보기관 · 국방 출신, Gotham). 창업 2003 · Gotham 2008(S-1, 해설 대조). *AI 주권* 을 사업 언어로 — *언어 모델 연구소의 속국* ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 해설 전달
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -420,6 +423,7 @@ updated: 2026-11-11
 - [[effective-output-metric]] — 줄 수 대신 커밋이 바꾼 것의 가치를 ML 모델이 시니어 패널처럼 채점하는 점수. Salesforce × Stanford, 두 배 → 점수당 비용 ([[tech-bridge-salesforce-claude-code-agentic-shift]]) ⚠️ 해설의 2차 전달, 채점 기준 · 정확도 미상
 - [[climbable-eval]] — 모델이 스스로 오를 수 있는 평가의 네 조건(모델 순서 · 생각에 반응 · 천장 · 안정), 막힌 문제, `build-eval`, 학습/시험 분할 `hillclimb`과 되돌림 규칙. Claude API 스킬 66% → 87.9%, 비용 목표 시험용 78.6% → 90.5% ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 벤더 자기 실험, 시험 세트 14건
 - [[differential-capability-limitation]] — 훈련에서 AI 개발을 가장 직접 앞당길 능력(가속기 커널 최적화 · 언어 모델 구조 개선)만 골라 덜 키우는 조치. 배포 제한(누가 쓰나)과 다른 훈련 층. *AI가 AI를 더 빨리 만드는 길목의 과속 방지턱* ([[tech-bridge-claude-fable-5-2-announcement]]) ⚠️ 한 소스 · 벤더 발표문 2차 전달, 방법 미기술
+- [[reasoning-effort-levels]] — 추론 강도(low~max). Fable 5.2는 high가 가성비 꼭짓점(Frontier Code 2.0 high 45.3% · $6.72 ≈ Opus 5.5 max $12.82), max는 피함. 강도가 바꾸는 것(생각의 양 · 완주 · 서브에이전트) vs 프롬프트로만 바뀌는 것(생각 여부 · 말투 · 길이) ([[tech-bridge-chase-ai-fable-5-2-prompting-rules]]) ⚠️ 실무자의 시스템 카드 해석
 
 ### Architectures
 - [[always-on-agent-architecture]] — 하네스를 서버로: 루프·상태는 서버와 DB, 컴퓨터는 따로 자고 깨는 VM, 트리거 → dedupe router → 알림 heuristic → 우선순위 큐, thin client와 단일 도구 send user, 재시도해도 안전한 durable workflow, 사용자는 사다리 맨 끝 ([[tech-bridge-lee-robinson-always-on-agents]]) ⚠️ 단일 당사자 소스
@@ -758,6 +762,8 @@ updated: 2026-11-11
 - [[share-data-and-prompt-not-app]] — 모델이 데이터 위에 어떤 앱이든 만들 수 있다면 앱 대신 데이터 소스와 프롬프트를 공유한다. *"wrappers around a core truth, which is the data"* ([[tech-bridge-nick-saraev-karpathy-ai-habits]]) ⚠️ Saraev의 Karpathy 습관 전달 + 해석
 - [[prompt-debt]] — 옛 모델용 주문(*두 번 확인해* · 모순된 규칙 · 낡은 thinking 설정 · 손수 스크래치패드)이 새 모델의 비용을 올리고 성능을 깎는다. `/claude-api prompt-audit`로 갚는다(비용 18% + 9% ↓) ([[tech-bridge-lance-martin-old-prompts-make-claude-worse]]) ⚠️ 벤더 2차 전달
 - [[agent-friction-multiplier]] — 느린 개발 서버 · 캐시 TTL · 무거운 CI의 마찰은 사람보다 에이전트를 훨씬 세게 막는다(확인할 때마다 곱해짐). 그래서 본전이 안 맞던 재작성(TS → Rust)과 플랫폼 정비가 이제 맞는다 ([[tech-bridge-theo-coding-is-gardening]]) ⚠️ 한 사람의 진술 · 해설 전달
+- [[waterfall-model]] — 워터폴. Royce 1970 논문은 그림 아래 *위험하고 실패를 부른다* 고 썼고 되먹임 화살표 · *두 번 하라* 를 처방했다, 이름은 1976년 Bell & Thayer. SDD 논쟁의 기준점 ([[tech-bridge-sdd-vs-waterfall]] · [[tech-bridge-kent-beck-craft-augmented-development]]) ⚠️ 논문 미열람, 해설 · 화자 기억
+- [[ai-sovereignty]] — AI 주권. 외부 모델 회사에 데이터 · 역량을 넘기지 않겠다는 주장이자 판매 언어(Palantir *언어 모델 연구소의 속국*). 근거로 든 *Anthropic이 고객 데이터로 학습* 은 약관 문구와 다름(해설) ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 판매자의 언어
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1033,10 +1039,13 @@ updated: 2026-11-11
 - [[tech-bridge-peter-steinberger-2027-developer]] — 한국어 해설(5:46, 챕터 8, Korean original · ko-orig 원 ASR, 원음 발췌 여섯 곳 무캡션, 2026-11-09 18:00 KST): [[peter-steinberger|Peter Steinberger]]가 말하는 2027년 개발자 — [[openclaw|OpenClaw]] 제작자 · 생성 시점(2025년 11월), 한 층 위의 오픈소스 관리, 좁아진 소프트웨어 엔지니어, [[high-agency|하이 에이전시]]와 프로토타입, AI가 쓴 메일을 거르는 기준, 틀 밖의 주니어, 별표를 단 예, 100% 손으로 쓴 추신 ⚠️ 인터뷰 · 블로그의 2차 전달, 더빙은 OpenClaw를 Open Interpreter로 말함
 - [[tech-bridge-theo-coding-is-gardening]] — 한국어 해설(6:21, 챕터 9, Korean original · AI 내레이션, 원음 발췌 다섯 곳 무캡션, 2026-11-10 18:00 KST): [[theo|Theo]]의 *Coding Isn't About Code Anymore* — T3 Code PR 하나로 테스트 1만 1천 개(43%) 삭제(Claude Haiku 판정), Twitch의 PR 두 개(증상 말고 원인), 플랫폼 반반, 에이전트보다 먼저 쓴 슬롭 · 이전 모델의 슬롭, 계산이 바뀌었다(TS → Rust), 마찰은 에이전트를 더 세게, 거름 · 지지대 · 잡초, 머지 PR 10월 평균 130개+(해설자 집계) ⚠️ 원 영상 · PR 미열람
 - [[tech-bridge-claude-fable-5-2-announcement]] — 한국어 해설(8:34, 챕터 9, Korean original · AI 내레이션, Nick Saraev 원음 발췌 다섯 곳 무캡션, 2026-11-10 22:00 KST): Anthropic 발표문으로 대조한 [[fable-5-2|Fable 5.2 · Mythos 5.2]] — 같은 모델의 두 판, 평균 10%와 표의 아래쪽, 프롬프트 한 줄 데모, 에이전트 1,000개가 8일 동안 만든 운영체제, 내부 변경 90%+를 Claude가(사람의 지휘 아래), 블랙홀 · 페르마 · 하드웨어 · 로봇, [[differential-capability-limitation|일부러 덜 키운 능력]], 평가 인식 · 샌드박스 탈출 3.1%, 대부분은 Opus 5.5부터 ⚠️ 발표문 · 리뷰 미열람, 더빙은 초반 모델명을 Claude 3.5 등으로 오역
+- [[tech-bridge-alex-karp-wealth-tax-surveillance]] — 한국어 해설(8:35, 챕터 11, Korean original · AI 내레이션, ko-orig `variant=gemini`, Karp 원음 일곱 곳 무캡션, 2026-11-11 18:00 KST): [[alex-karp|Alex Karp]] × Walter Isaacson(2026-08) — 100배와 5%, 3년 무매출 vs S-1, 난독증 · 아웃사이더, 격차는 AI가 키운다, 부유세 반대 네 가지(감시), 상속세 50% · 맞교환, 실리콘밸리가 깬 계약, 데이터 학습 주장 vs Anthropic 약관, [[ai-sovereignty|AI 주권]], 법적 근거가 있는 감시, 지능 이후 ⚠️ 1차 출처 미열람
+- [[tech-bridge-sdd-vs-waterfall]] — 한국어 해설(8:38, 챕터 9, Korean original · AI 내레이션, IBM 원음 네 곳 무캡션, 2026-11-11 21:00 KST): IBM Technology 영상 + Royce 1970 · Bell & Thayer 1976 · 애자일 선언 · spec-kit · Kiro · Marmelab · Kent Beck · Böckeler · Brooker — 계단이 아니라 고리, spec-first · spec-anchored · spec-as-source, 비밀번호 재설정 스펙, 왜 지금인가(유지 비용), 가볍고 진화하는 스펙, *두 번 하라* → [[waterfall-model]] ⚠️ 원문 미열람, 해설 번역
+- [[tech-bridge-chase-ai-fable-5-2-prompting-rules]] — [한글자막] 재게시(10:22, 챕터 13, 영어 원음만 · ko는 기계 번역, 2026-11-12 07:00 KST): [[chase-ai|Chase AI]]의 [[fable-5-2|Fable 5.2]] 프롬프트 규칙 10가지 — high부터, 증명하게, 끝까지, 옛 CLAUDE.md 정리(규칙을 글자 그대로 따름), 생각하지 말라는 안 통함, 추론 과정 캐묻기는 증류 분류기, 코드의 주인, 서브에이전트는 알아서, 중간 보고, 말투 · 길이는 프롬프트로 → [[reasoning-effort-levels]] · [[prompt-debt]] ⚠️ 가이드 · 시스템 카드 미열람
 
 ## 통계
 
-- 총 페이지 수: 997 (991 → 997, + 2026-11-11 Tech Bridge 2편(11-10 업로드 — Fable 5.2 발표문 정리 · Theo 정원사 정리): source 2 · entity 2(fable-5-2 · theo) · concept 2(differential-capability-limitation · agent-friction-multiplier) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 997과 일치)
+- 총 페이지 수: 1006 (997 → 1006, + 2026-11-12 Tech Bridge 3편(11-11 업로드 — Fable 5.2 프롬프트 규칙 · SDD vs 워터폴 · Alex Karp 부유세): source 3 · entity 3(chase-ai · alex-karp · palantir) · concept 3(reasoning-effort-levels · waterfall-model · ai-sovereignty) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1006과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-11 (Tech Bridge **2편** — 11-10 업로드 [[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개]](`k-hBhaO46v8`) · [[tech-bridge-theo-coding-is-gardening|개발자는 이제 정원사?]](`cju5CR-2ZvA`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-10 (Tech Bridge **1편** — 11-09 업로드 [[tech-bridge-peter-steinberger-2027-developer|코드는 거의 100% AI가 쓰는데, AI가 쓴 메일은 안 연다]](`p2aPohAlShc`). `ezPSsVW92Mg` 멤버 전용 신규 · `Yhck-x6VuLs` 지속)
+- 마지막 ingest: 2026-11-12 (Tech Bridge **3편** — 11-11 업로드 [[tech-bridge-alex-karp-wealth-tax-surveillance|알렉스 카프가 부유세는 반대하는 이유]](`-5fivnqRY4g`) · [[tech-bridge-sdd-vs-waterfall|SDD는 워터폴의 귀환일까]](`7v-QcSBFsUs`) · [[tech-bridge-chase-ai-fable-5-2-prompting-rules|Fable 5.2 프롬프트 규칙 10가지]](`UZflKPqs514`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-11 (Tech Bridge **2편** — 11-10 업로드 [[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개]](`k-hBhaO46v8`) · [[tech-bridge-theo-coding-is-gardening|개발자는 이제 정원사?]](`cju5CR-2ZvA`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)

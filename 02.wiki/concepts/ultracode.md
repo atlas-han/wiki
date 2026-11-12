@@ -3,11 +3,11 @@ title: ultracode
 type: concept
 category: pattern
 tags: [claude-code, setting, effort, dynamic-workflows]
-related: [dynamic-workflows, agent-harness-design]
+related: [dynamic-workflows, agent-harness-design, reasoning-effort-levels]
 first-seen: anthropic-dynamic-workflows
-sources: [anthropic-dynamic-workflows]
+sources: [anthropic-dynamic-workflows, tech-bridge-chase-ai-fable-5-2-prompting-rules]
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-11-12
 ---
 
 # ultracode
@@ -31,3 +31,9 @@ updated: 2026-05-30
 
 - [[anthropic-dynamic-workflows]]
 - [Claude Code settings](https://code.claude.com/docs/en/settings)
+
+## 모델이 스스로 띄우는 *작은 Ultra Code* (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
+
+[[chase-ai|Chase AI]]: [[fable-5-2|Fable 5.2]]는 extra high · max 강도에서 자기 작업을 검사하는 서브에이전트를 스스로 띄운다 — *"Almost like a miniature version of Ultra Code."*(08:16~08:19) 그래서 *서브에이전트를 써서 늘 검사하라* 같은 규칙은 지우라고 한다(그대로 따르느라 사용량을 태운다). → [[reasoning-effort-levels]] · [[prompt-debt]]
+
+- 위키의 읽기: 오케스트레이션을 **하네스 · 사용자가 짜는 것**(이 페이지)과 **모델이 강도에 따라 알아서 하는 것** 이 겹치기 시작한다. 둘을 함께 켜면 이중 검사가 된다(화자의 경고를 위키가 일반화).

@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-context-engineering-four-failure-modes]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-sdd-vs-waterfall]
 created: 2026-09-08
-updated: 2026-10-20
+updated: 2026-11-12
 ---
 
 # IBM
@@ -222,3 +222,11 @@ updated: 2026-10-20
 설명란 본문 *"IBM Technology의 Martin Keen이 …"*, `ibm.biz` 링크 둘(설명 문구 없음, 열어 보지 않음), @IBMTechnology · @IBM · @IBMDeveloperAdvocates 링크로 **IBM Technology 판정**을 유지한다. 해시태그에는 IBM이 없다. 화자는 이 위키에 처음 나오는 [[martin-keen|Martin Keen]]이고, 이름은 설명란 본문에만 있다(자막에는 자기소개·IBM·제품 언급이 없다). 벤더 색은 약하다 — 처방 넷은 모두 일반 기법이다.
 
 내용은 IBM 계열의 세 번째 컨텍스트 편이다(09-08 지식 조달, 09-23 토큰 최소화에 이어). 긴 실행에서 창이 망가지는 네 방식(poisoning · distraction · confusion · clash)과 처방(validate · compact · curate · prune) → [[context-failure-modes]]. poisoning 처방 *"check it against something real"*(07:43~07:46)은 이 페이지가 기록해 온 *"생성이 아니라 검증된 행동을 믿는다"*([[behavior-validated-trust]])를 **컨텍스트 쓰기**에 적용한 다섯 번째 반복이다. ⚠️ 수치 둘(18개 모델 연구, 46 vs 19 도구)은 출처 미발화. 녹화 시점 단서 없음.
+
+## 열세 번째 소스 — 남의 채널이 IBM 영상을 뼈대로 쓰다 (2026-11-12 · [[tech-bridge-sdd-vs-waterfall]])
+
+이번엔 IBM Technology 영상(*"Spec-Driven Development vs. Waterfall: What's Different for AI Coding?"*, `GpZ5T51jE4U`)을 [[tech-bridge|Tech Bridge]]가 **한국어 해설의 뼈대** 로 쓰고 원 논문 · 찬반 글을 덧붙였다. IBM 원음 발췌 네 곳은 무캡션이고, IBM의 주장은 해설의 번역이다.
+
+- IBM의 정의: *"개발을 시작하기 전에 상세한 명세를 쓰고 합의하는 방법론"*(00:58~01:00)
+- IBM의 답: 얼려서 넘기면 *이름만 바뀐 워터폴*, 고리로 돌면 다르다 → [[spec-driven-development]] · [[waterfall-model]]
+- IBM Think 글: *"완벽한 최종본보다 가볍고 진화하는 스펙을 택하라."*(07:35~07:37)

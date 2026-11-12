@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 
 # Anthropic
@@ -240,3 +240,10 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - 내부 숫자: *"핵심 코드 베이스의 합차지는 변경의 90% 이상을 이제 클로드가 씁니다. 단 괄호 안에 조건이 있습니다. 사람의 지위 아래에서라는 거죠."*(04:09~04:17)[=사람의 지휘 아래] — Fable 하나가 아니라 Claude 전체 이야기다.
 - ⭐ 훈련에서 AI R&D를 앞당길 두 능력(가속기 커널 최적화 · 언어 모델 구조 개선)을 일부러 덜 키웠다 → [[differential-capability-limitation]](신규)
 - 자기 고백: *"출시 전에 모든 실패를 잡아내는 평가는 아직 풀직 못한 문제라고 적었습니다."*(06:34~06:38)
+
+## 경쟁 판매자의 비판 — *고객 데이터로 학습한다* vs 약관 (2026-11-12 · [[tech-bridge-alex-karp-wealth-tax-surveillance]])
+
+[[palantir|Palantir]] CEO [[alex-karp|Alex Karp]]가 Anthropic을 지목했다(해설 전달): 미국 기업들이 *"그렇게 윤리적이라면서 어떻게 내 데이터로 나와 경쟁하는 제품을 만드냐고 기업들이 묻는다 는 거죠."*(05:48~05:53)
+
+- 해설의 대조: Anthropic 상용 약관 *"서비스의 고객 콘텐츠로 모델을 학습시킬 수 없다."*(05:59~06:01), 개인 정보 안내도 기업용 · API 입출력은 기본적으로 학습에 쓰지 않는다 → *"이 대목은 카프의 주장과 약관에 문구가 다르다는 것까지만 말해 줄 수 있습니다."*(06:10~06:14)
+- ⚠️ 위키는 약관 · 안내 원문을 열지 않았다. Karp는 [[ai-sovereignty|AI 주권]] 을 파는 경쟁 당사자다.

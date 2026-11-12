@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules]
 links: []
 created: 2026-10-09
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 
 # Claude Opus 5.5
@@ -81,3 +81,7 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 - 페르마의 마지막 정리 형식화에서 *"같은 조건에 오퍼스 5.5는 30시간이 지나도 27%에서 멈췄습니다."*(05:22~05:26)
 - ⭐ 권고: *"대부분의 코딩과 지식 작업은 5스 [음악] 5. 시작하라고 권합니다. 가장 강한 일상형 모델이라는 표현까지 쓰죠."*(07:05~07:11)[=오퍼스 5.5로] Fable 안전장치에 걸린 요청도 *"이전 오퍼스 모델이"*(07:28~07:31) 대신 답한다(버전 미발화).
 - ⚠️ 영어 더빙은 이 영상 초반에 Opus 5.5를 `Opus 3.0`으로 말한다(01:30 · 02:08).
+
+## Fable 5.2 high의 비교 기준으로 (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
+
+[[chase-ai|Chase AI]]가 읽은 Frontier Code 2.0 표: Fable 5.2 high 45.3% · $6.72가 Opus 5.5 extra high보다 높고 Opus 5.5 max($12.82)와 거의 같다 — *"we're getting Opus 5.5 max performance at half the cost."*(01:39~01:42) 그래서 *Opus로 될 일이면 Fable을 낮은 강도로 돌릴 이유가 없다* — *"I could probably get this done with Opus."*(02:11~02:13) → [[reasoning-effort-levels]]

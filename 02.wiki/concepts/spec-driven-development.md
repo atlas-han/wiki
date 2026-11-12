@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory, shaping-the-build]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory, shaping-the-build, waterfall-model]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-emily-bache-exact-coding-tdd]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-sdd-vs-waterfall]
 created: 2026-08-29
-updated: 2026-11-07
+updated: 2026-11-12
 ---
 
 # Spec-Driven Development
@@ -169,3 +169,15 @@ spec은 **두 장**이다 — *"Product spec describes the product invariants th
 ## 스펙은 단계의 함수 — "there is a place for that" (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
 
 [[andrew-ng|Ng]](제목 · 설명란 · 태그 근거): *"you see a lot of people talk about how oh you should always plan it out, write a long spec, and there is a place for that. And then sometimes there's a place if you know you're going to go to bed in 20 minutes, just bang out some stuff, have a coding agent work for a few hours and see what you get the next morning."*(08:38~08:54) 이 페이지의 소스들은 스펙을 **기본값**으로 말해 왔다. Ng은 스펙을 **프로젝트 단계에 따른 선택**으로 둔다(*"that stage-dependent answer has been very tricky for people to learn"* 08:54~08:59). ⚠️ 09-27 [[tech-bridge-sdd-full-course]]의 소개자 "Andrew"(*"the great developers I know out there almost always will write detailed specs for projects with any significant complexity"*)가 Ng인지는 미확정이다. 같은 사람이라 해도 그쪽은 *"any significant complexity"* 를 조건으로 달았으므로 정면 모순은 아니다. → [[shaping-the-build]]
+
+## *워터폴의 귀환인가* 에 한 편을 통째로 — 계단이 아니라 고리 (2026-11-12 · [[tech-bridge-sdd-vs-waterfall]])
+
+[[ibm|IBM]] Technology 영상을 뼈대로 원 논문 · 찬반 글을 나란히 놓은 한국어 해설. 10-09 [[kent-beck|Kent Beck]]의 정면 반론 이후 이 논쟁을 가장 길게 다룬다.
+
+- 반대편(해설 전달): Marmelab *워터폴의 역습*(날짜 표시 하나에 스펙 파일 8개 · 1,300줄), Kent Beck(*구현하면서 명세를 바꿀 만한 걸 하나도 배우지 않는다는 가정*), Birgitta Böckeler *"솔직히이 마크다운 파일들을 다 검토하느니 차라리 코드를 검토하겠다."*(03:17~03:19)
+- ⭐ IBM의 구분선: *"스펙을 통째로 쓰고 얼리고 넘긴다. 그러면 이름만 바뀐 워터입니다."*(03:57~04:00)[=워터폴] 대신 *"모양이 계단이 아니라 고리입니다."*(04:06~04:08) Marc Brooker(AWS): *"반복하는 대상이 구현이 아니라 스펙이라는 겁니다."*(04:34~04:36)
+- ⭐ **Böckeler의 세 단계** — spec-first(그 작업에만) · spec-anchored(남겨서 계속 고침) · spec-as-source(사람은 스펙만). 고리 모델은 둘째에 가깝다(04:40~04:59). 위키의 다른 SDD 소스들을 이 축으로 다시 읽을 수 있다 — spec-kit 데모는 첫째~둘째, [[software-factory]] 계열의 *사람은 스펙만* 은 셋째에 가깝다(위키의 읽기).
+- 예: 비밀번호 재설정 스펙 세 줄 → 돌려 보니 *링크를 두 번 요청하면?* 이 빠짐 → 한 줄 추가(*가장 최근 링크만 유효*) → 다시 돈다.
+- 왜 지금인가: *"원래도 이론상 좋은 생각이었습니다. 다만 최신으로 유지하기가 너무 비쌌죠."*(06:07~06:11) AI가 바꾼 두 계산 — 에이전트는 모르면 묻지 않고 짐작하므로 맥락이 필요하고, 모호함 하나가 추가 프롬프트 · 재확인 반복(돈과 시간)이 된다.
+- 경계: IBM *"완벽한 최종본보다 가볍고 진화하는 스펙을 택하라."*(07:35~07:37) — [[tech-bridge-andrew-ng-ai-engineering-skills-map|Ng]]의 *스펙은 단계의 함수* 와 같은 쪽이다.
+- 맺음: *"스펙을 쓰느냐가 아니라 쓴 스펙으로 돌아가느냐."*(08:13~08:15) → [[waterfall-model]](신규)

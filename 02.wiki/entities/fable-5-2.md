@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules]
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 
 # Claude Fable 5.2
@@ -56,3 +56,23 @@ updated: 2026-11-11
 
 - [[tech-bridge-claude-fable-5-2-announcement]] — 2026-11-10 한국어 해설(8:34), 발표문 · Nick Saraev 리뷰의 2차 전달
 - 발표문(위키 미열람): https://www.anthropic.com/claude-fable-and-mythos-5-2
+
+## 프롬프트 규칙 10가지 — 실무자가 읽은 시스템 카드 (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
+
+[[chase-ai|Chase AI]]가 Anthropic 공식 프롬프트 가이드 · 시스템 카드를 근거로 정리한 *이전 모델과 달라진 점*(영어 원음 en-orig, 화자 전달 — 위키는 원 문서 미열람).
+
+| 성질 (화자) | 처방 |
+|---|---|
+| API 기본 high, Claude Code 기본 medium. high가 가성비 꼭짓점 — Frontier Code 2.0 high 45.3% · $6.72 ≈ Opus 5.5 max $12.82 | high에서 시작, max는 피함 → [[reasoning-effort-levels]] |
+| *"will state inference as facts"*(02:39~02:42) — 없는 파일을 지어내기 2%, 지름길 6배 | 보여 주기 전에 테스트로 증명하게 |
+| 5.1보다 일찍 멈춤(특히 low · medium) | 끝까지 하라고 명시 → 멈춤 약 절반 |
+| *"very diligently follows whatever rules you give it almost to a T"*(04:42~04:48) | 옛 CLAUDE.md · 엄격한 스타일 규칙 · 서브에이전트 위임 규칙을 지움 → [[prompt-debt]] |
+| *"It is always going to think."*(05:41) | 생각을 줄이려면 강도를 내림 |
+| 단계별 추론 설명 요구를 증류 시도로 분류해 막을 수 있음 | 답의 논리만 짧게 묻기 |
+| 코드베이스 소유를 말하면 중복 ↓ · 기능 · 테스트 · 출력 토큰 ↑ | 맡길 때는 주인이라고, 최소 변경이면 말하지 않기 |
+| extra high · max에서 검사용 서브에이전트를 스스로 띄움 | 위임 규칙 불필요 → [[ultracode]] |
+| 긴 작업에서 침묵 | 중간 보고 요청(매 호출마다면 토큰 +20%) |
+| 말투 · 길이는 강도와 무관 | 프롬프트로 |
+
+- 11-10 발표문 해설의 *하이 설정 ≈ 오퍼스 최고 점수 · 비용 절반* 과 같은 방향이다. ⚠️ 벤치마크 점수는 두 소스가 다르게 적는다(발표문 해설 Frontier Code 49.1 vs 이 소스 Frontier Code 2.0 high 45.3%) — 같은 표인지 미확인.
+- 사용량: *"we're still kind of stuck with only 50% of the usage"*(10:14~10:16) — 무엇의 50%인지는 말하지 않는다.

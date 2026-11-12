@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash, high-agency]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years, tech-bridge-peter-steinberger-2027-developer]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years, tech-bridge-peter-steinberger-2027-developer, tech-bridge-alex-karp-wealth-tax-surveillance]
 created: 2026-09-06
-updated: 2026-11-10
+updated: 2026-11-12
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -193,3 +193,12 @@ G20의 *"직업은 남고 작업이 자동화"*, CBS·백악관 패널의 *블�
 - ⭐ 수요: *"모델이을 더 많이 가져갈수록 사람의 책임은 더 커질 거라고 봤습니다."*(04:48~04:51) 소프트웨어 엔지니어가 더 필요하냐에는 *"별표를 달아서 그렇다고 답합니다."*(05:03) 새로운 정의가 필요하다는 단서가 붙는다.
 
 ⚠️ 한 사람의 조언을 해설자가 옮긴 것이다. 주니어 채용 감소는 진행자의 진술이고 수치는 없다.
+
+## Karp — 일자리는 늘고, 격차는 커진다 (2026-11-12 · [[tech-bridge-alex-karp-wealth-tax-surveillance]])
+
+[[palantir|Palantir]] CEO [[alex-karp|Alex Karp]](2026-08 Walter Isaacson 대담, 한국어 해설 전달 — Karp 원음은 거의 무캡션). ⚠️ 화자는 AI 붐의 수혜자(재산 183억 달러)이자 감시 기술 판매자다.
+
+- 일자리 수에는 낙관: AI가 더 많고 좋은 일자리를, 특히 기술직 노동자에게 만든다(02:30~02:38).
+- ⭐ 문제는 **분배의 속도 차이**: *"보통 사람의 임금이 물가의 두 배로 올라도 테크와 AI 쪽 사람들은 열 배, 스무 배, 쉰 배 부자가 될 수 있다."*(02:42~02:47) → *"이 사회에는 반드시 풀어야 할 계급 격차가 있고 AI가 그걸 더 키울 거라고."*(02:50~02:55)
+- 처방은 부유세가 아니다(집행에 감시가 필요 — *AI는 당신이 가진 모든 물건의 값을 추정할 수 있다*). 상속세 50% + 정부 낭비 감축 맞교환, 조건은 *노동자와 중산층에게 닿을 것*.
+- 이 페이지의 다른 입장과: Altman · Huang · Musk가 주로 일자리의 **수 · 종류** 를 다퉜다면 Karp는 **수익의 분배** 를 쟁점으로 놓는다. 표의 *인센티브* 열에 넣으면 *데이터 통합 · 국방 소프트웨어 판매자* 다.

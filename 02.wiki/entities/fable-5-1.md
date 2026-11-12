@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules]
 created: 2026-09-14
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 
 # Fable 5.1
@@ -71,3 +71,7 @@ Claude 블로그 예시를 한국어 해설이 전한 것(⚠️ 2차 전달): *
 
 - 5.1의 좌표 하나: Frontier Code에서 *"바로 전 버전인 페이블 5.1과 비교하면 차이는 더 큽니다. 프론티어 코드가 32.4였으니까요."*(01:57~02:01) — 5.2는 49.1, [[claude-opus-5-5|Opus 5.5]]는 45.5.
 - ⚠️ 영어 더빙은 이 대목의 *페이블 5.1* 을 `3.0`으로 옮긴다(01:59). 이름 소실 사례가 하나 더 늘었다(위 *자막 주의*).
+
+## 5.2와 달랐던 점 (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
+
+[[chase-ai|Chase AI]]에 따르면 Fable 5.1은 *"Hey, just give me an answer. Don't deliberate."*(05:31~05:32) 같은 지시로 내부 생각을 건너뛰고 토큰을 아꼈다. 5.2는 늘 생각하고 양만 강도로 정해진다. 또 5.2는 5.1보다 추론을 사실처럼 말하고 일찍 멈추는 경향이 있다(화자 전달, 시스템 카드 미열람). → [[fable-5-2]] · [[reasoning-effort-levels]]

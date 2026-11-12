@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [prompt-engineering, prompt-debt, prompt-audit, model-upgrade, cost, claude-code, claude-md, anthropic, harness-pruning]
 aliases: [prompt debt, 프롬프트 부채, 프롬프트 빚, prompt audit, prompt-audit, /claude-api prompt-audit, 옛날 프롬프트, legacy prompt instructions]
-related: [harness-pruning, prompt-caching, skill-evals, climbable-eval, model-mixing-economics, tools-and-context-over-harness, agent-harness-design]
+related: [harness-pruning, prompt-caching, skill-evals, climbable-eval, model-mixing-economics, tools-and-context-over-harness, agent-harness-design, reasoning-effort-levels]
 first-seen: tech-bridge-lance-martin-old-prompts-make-claude-worse
-sources: [tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-chase-ai-fable-5-2-prompting-rules]
 created: 2026-11-09
-updated: 2026-11-09
+updated: 2026-11-12
 ---
 
 # 프롬프트 부채 (Prompt Debt)
@@ -52,3 +52,12 @@ updated: 2026-11-09
 - [[tech-bridge-lance-martin-old-prompts-make-claude-worse]] (1절 · 2절) — first-seen
 - [[lance-martin]] · [[anthropic]] · [[claude-code]]
 - 관련: [[harness-pruning]] · [[prompt-caching]] · [[climbable-eval]] · [[skill-evals]]
+
+## 두 번째 소스 — 이유가 모델 성질로 바뀐다 (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
+
+[[chase-ai|Chase AI]]의 Fable 5.2 프롬프트 규칙 10가지 중 넷째 — 화자가 *"arguably the most important"*(04:06) 라고 부른다.
+
+- *"You need to go back and take a hard look at your current claw.md files and your instructions because chances are they are not built for Fable 5.2."*(04:09~04:19)[=CLAUDE.md] Boris의 *"Delete all your claw.md files or even delete your skills."*(04:24~04:26)를 같은 맥락으로 든다([[boris-cherny]] 추정, 성 미발화).
+- ⭐ 이유가 이 페이지의 첫 소스와 다르다: Lance Martin 편은 *옛 지시가 토큰 · 정확도를 깎는다* 를 실험 수치로 보였고, 이 소스는 **새 모델이 규칙을 *거의 글자 그대로* 따른다** 는 성질로 설명한다 — *"Fable 5.2 very diligently follows whatever rules you give it almost to a T."*(04:42~04:48)
+- 지울 것(화자): 꼭 필요하지 않은 엄격한 지침, 엄격한 스타일 규칙, **서브에이전트 위임 규칙**(규칙 8 — 그대로 따르느라 *"you are going to rip through your usage"*(08:26~08:28)).
+- 위키의 관찰: 같은 영상이 새 지시도 *더하라* 고 한다(증명하라 · 끝까지 하라 · 코드의 주인 · 중간 보고). 이것들은 5.2의 약점을 메우는 지시라서, 이 페이지의 정의대로라면 **다음 모델의 프롬프트 부채 후보** 다.

@@ -175,8 +175,11 @@ sources:
   - tech-bridge-peter-steinberger-2027-developer
   - tech-bridge-claude-fable-5-2-announcement
   - tech-bridge-theo-coding-is-gardening
+  - tech-bridge-alex-karp-wealth-tax-surveillance
+  - tech-bridge-sdd-vs-waterfall
+  - tech-bridge-chase-ai-fable-5-2-prompting-rules
 created: 2026-06-03
-updated: 2026-11-11
+updated: 2026-11-12
 ---
 
 # Tech Bridge
@@ -1674,3 +1677,19 @@ updated: 2026-11-11
 - 발표문(`anthropic.com/claude-fable-and-mythos-5-2`) · 리뷰(`foCBPrpbO68`) · Theo 원 영상(`GtJKFhztgdM`) · T3 Code PR 둘 · Lauren 게시물은 미열람.
 
 **멤버 전용**: `ezPSsVW92Mg`(Lauren Tan 10분 정리, 10:14) 지속(목록 줄, `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 목록 20편 요청 → 20줄, stderr ERROR 없음.
+
+## 2026-11-11 업로드 — Fable 5.2 프롬프트 규칙 · SDD vs 워터폴 · Alex Karp 부유세 (2026-11-12 ingest)
+
+[[tech-bridge-alex-karp-wealth-tax-surveillance|"억만장자만 100배 부자, 이건 안 된다" | 팔란티어 CEO 알렉스 카프가 부유세는 반대하는 이유 (8분 정리)]](`-5fivnqRY4g`, 8:35, 공식 챕터 11) — 한국어 해설, The Builders with Walter Isaacson 대담 + 1차 출처 대조 ([[alex-karp]](신규) · [[palantir]](신규) · [[ai-sovereignty]](신규) · [[ai-jobs-impact]] · [[anthropic]] · [[in-house-ai-data-boundary]] · [[regulatory-capture]])
+
+[[tech-bridge-sdd-vs-waterfall|스펙 주도 개발(SDD)은 워터폴의 귀환일까 | 1970년 원조 논문부터 spec-kit까지 8분 정리]](`7v-QcSBFsUs`, 8:38, 공식 챕터 9) — 한국어 해설, IBM Technology 영상 + 원 논문 · 찬반 글 ([[waterfall-model]](신규) · [[spec-driven-development]] · [[kent-beck]] · [[ibm]] · [[kiro]] · [[github-spec-kit]])
+
+[[tech-bridge-chase-ai-fable-5-2-prompting-rules|[한글자막] Anthropic이 바꾼 Fable 5.2 프롬프트 규칙 10가지 (완전 정리)]](`UZflKPqs514`, 10:22, 공식 챕터 13) — Chase AI 영상 재게시, 영어 원음 ([[chase-ai]](신규) · [[reasoning-effort-levels]](신규) · [[fable-5-2]] · [[fable-5-1]] · [[claude-opus-5-5]] · [[prompt-debt]] · [[ultracode]])
+
+- 구성이 셋으로 갈린다: Karp 편 · SDD 편은 Korean original(`ko` = `ko-orig` md5, en-orig = 영어 더빙), **Karp 편의 ko-orig는 처음 보는 `variant=gemini`**. Chase 편은 영어 원음만(`ko`는 `tlang=ko` 기계 번역) — 인용은 en-orig.
+- 두 해설 편 모두 설명란이 *AI 내레이션* 이라고 밝힌다. 원음 발췌(Karp 일곱 곳 · IBM 네 곳)는 ko-orig 무캡션이고, Karp 편은 en-orig에 원음 조각이 일부 남았다(*"And when you have no job you can rely on me to give you money."*).
+- ⭐ Karp 편은 설명란에서부터 **발언과 1차 출처가 다른 대목을 따로 표시했다** 고 밝힌다(S-1 · 약관 · 테러 저지 건수) — 이 채널의 해설 중 대조가 가장 촘촘하다.
+- `upload_date` 셋 다 20261111 — Karp 편 18:00 KST, SDD 편 21:00 KST, Chase 편 **11-12 07:00 KST**(파일명 · `date-published`는 UTC 날짜).
+- 원 인터뷰(`m4mV4IClDlM`) · IBM 원 영상(`GpZ5T51jE4U`) · Chase 원 영상(링크 없음) · 설명란의 1차 출처는 미열람.
+
+**멤버 전용**: `ezPSsVW92Mg`(Lauren Tan 10분 정리, 10:14) 지속(목록 범위 안이지만 이번엔 **목록 줄 없이 stderr ERROR로만**, 단건 조회 `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only`). 목록 20편 요청 → 19줄 + ERROR 1.

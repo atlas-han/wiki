@@ -2640,3 +2640,30 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편 · 6~8분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1111/`: `lines.py` · `meta.py` · `gaps.py` · `q.py`(11-10 것 복사) · `build_raw.py` · `merge.py` · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check` 148건 중 불일치 0(`theo` 표의 영어 인용 2건은 다른 소스 귀속, 의도). raw 헤더의 ASR 판독 목록 시각은 손으로 대조해 9곳을 고쳤다. ⚠️ zsh에서 `$A` 처럼 경로 두 개를 담은 변수는 한 인자로 넘어간다 — 경로를 직접 적을 것. ⚠️ `q.py check`는 짧은 영어 조각(*"Tak."*)을 다른 단어 안에서 찾는다 — `<!--k-->`로 코퍼스를 고정할 것.
 
+## [2026-11-12] ingest | Tech Bridge — 11-11 업로드 3편 (Fable 5.2 프롬프트 규칙 10가지 · SDD는 워터폴의 귀환일까 · 알렉스 카프가 부유세는 반대하는 이유)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**(`ezPSsVW92Mg` 멤버 전용 — 이번엔 목록 줄 없이 ERROR로만). 신규 공개 3편: `-5fivnqRY4g`(11-11 18:00 KST 게시) · `7v-QcSBFsUs`(11-11 21:00 KST) · `UZflKPqs514`(11-12 07:00 KST). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 3 · entity 3 · concept 3**, 기존 페이지 보강 14개(+ tech-bridge), index **997 → 1006**(실측 일치).
+
+- `UZflKPqs514`(10:22, 챕터 13) → [[tech-bridge-chase-ai-fable-5-2-prompting-rules]]: Chase AI 영상의 한국어 자막 재게시. **영어 원음만**(`ko`는 `tlang=ko` 기계 번역, `en` ≠ en-orig) — 인용은 en-orig. 00:00~00:23 무캡션.
+  - 신규: [[chase-ai]] · [[reasoning-effort-levels]]
+  - 보강: [[fable-5-2]] · [[fable-5-1]] · [[claude-opus-5-5]] · [[prompt-debt]] · [[ultracode]]
+  - ⚠️ 공식 프롬프트 가이드 · 시스템 카드 미열람 — 수치는 화자 전달. 화면의 예시 프롬프트는 캡션에 없음. *Boris* 는 성 미발화(boris-cherny 추정). 11-10 발표문 해설의 Frontier Code 49.1과 이 소스의 Frontier Code 2.0 high 45.3%가 같은 표인지 미확인.
+  - 페이지화하지 않음: Frontier Code 2.0 · 증류 분류기.
+- `7v-QcSBFsUs`(8:38, 챕터 9) → [[tech-bridge-sdd-vs-waterfall]]: 한국어 해설(AI 내레이션). `ko` = `ko-orig`(원 ASR), en-orig = 영어 더빙. IBM 원음 발췌 네 곳 무캡션, 05:55~06:07은 ko-orig가 영어 조각을 잡음.
+  - 신규: [[waterfall-model]]
+  - 보강: [[spec-driven-development]] · [[kent-beck]] · [[ibm]] · [[kiro]] · [[github-spec-kit]]
+  - ⚠️ Royce · Bell & Thayer · Marmelab · Beck · Böckeler · Brooker · GitHub 원문 미열람 — 해설의 번역. *별 14만 9천 개* 의 저장소는 발화되지 않음(제목상 spec-kit). X 인용 작성자 미상.
+  - 페이지화하지 않음: Winston Royce · Birgitta Böckeler · Marc Brooker · Marmelab · 애자일 선언.
+- `-5fivnqRY4g`(8:35, 챕터 11) → [[tech-bridge-alex-karp-wealth-tax-surveillance]]: 한국어 해설(AI 내레이션). `ko` = `ko-orig`이고 **`variant=gemini`** 다(처음 기록). Karp 원음 일곱 곳은 ko-orig 무캡션, en-orig에 영어 조각 일부.
+  - 신규: [[alex-karp]] · [[palantir]] · [[ai-sovereignty]]
+  - 보강: [[ai-jobs-impact]] · [[anthropic]] · [[in-house-ai-data-boundary]] · [[regulatory-capture]]
+  - ⚠️ 원 인터뷰(`m4mV4IClDlM`) · S-1 · CalMatters · IRS · Anthropic 약관 · Gallup · Palantir 서한 미열람. 제목의 *100배와 5%* 문장은 캡션에 없음. *당신이 속하지 않은 공* 미판독.
+  - 페이지화하지 않음: Walter Isaacson(두 번째 등장 — 다음에 또 나오면 페이지화 고려) · Peter Thiel · In-Q-Tel · Gotham · Prop 40.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+3편 · 8~10분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1112/`: `lines.py` · `meta.py` · `gaps.py` · `q.py`(11-11 것 복사) · `build_raw.py` · `merge.py` · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secC/`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check`로 새 페이지 · 보강 절 · raw 헤더를 대조해 손으로 적은 시각 6곳을 고쳤다. ⚠️ `q.py`에 `-`로 시작하는 경로(`-5fivnqRY4g/…`)를 주면 `--`도 파일명으로 읽힌다 — `./-5fivnqRY4g/…`로 줄 것.
+

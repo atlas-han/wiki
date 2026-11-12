@@ -1248,5 +1248,17 @@
   "02.wiki/entities/fable-5-2.md": "LiBot",
   "02.wiki/entities/theo.md": "LiUser",
   "02.wiki/concepts/differential-capability-limitation.md": "LiPuzzle",
-  "02.wiki/concepts/agent-friction-multiplier.md": "LiPuzzle"
+  "02.wiki/concepts/agent-friction-multiplier.md": "LiPuzzle",
+  "01.raw/articles/2026-11-11_Anthropic이 바꾼 Fable 5.2 프롬프트 규칙 10가지.md": "LiNewspaper",
+  "01.raw/articles/2026-11-11_스펙 주도 개발(SDD)은 워터폴의 귀환일까 1970년 원조 논문부터 spec-kit까지 8분 정리.md": "LiNewspaper",
+  "01.raw/articles/2026-11-11_억만장자만 100배 부자 이건 안 된다 팔란티어 CEO 알렉스 카프가 부유세는 반대하는 이유 (8분 정리).md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-chase-ai-fable-5-2-prompting-rules.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-sdd-vs-waterfall.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-alex-karp-wealth-tax-surveillance.md": "LiVideo",
+  "02.wiki/entities/chase-ai.md": "LiUser",
+  "02.wiki/entities/alex-karp.md": "LiUser",
+  "02.wiki/entities/palantir.md": "LiBuilding",
+  "02.wiki/concepts/reasoning-effort-levels.md": "LiPuzzle",
+  "02.wiki/concepts/waterfall-model.md": "LiPuzzle",
+  "02.wiki/concepts/ai-sovereignty.md": "LiPuzzle"
 }

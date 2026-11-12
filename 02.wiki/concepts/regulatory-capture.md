@@ -3,11 +3,11 @@ title: Regulatory Capture
 type: concept
 category: theory
 tags: [regulation, ai-policy, competition]
-related: [cognitive-offloading, intent-alignment, ai-privilege, training-time-risk, agi-definition, default-legal-regulation, intelligence-abundance, existing-law-first]
+related: [cognitive-offloading, intent-alignment, ai-privilege, training-time-risk, agi-definition, default-legal-regulation, intelligence-abundance, existing-law-first, ai-sovereignty]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-jensen-huang-cbs-interview]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-jensen-huang-cbs-interview, tech-bridge-alex-karp-wealth-tax-surveillance]
 created: 2026-08-31
-updated: 2026-09-25
+updated: 2026-11-12
 ---
 
 # Regulatory Capture
@@ -118,3 +118,10 @@ Huang의 *"실제 피해"* 처방은 Ng의 *"구체 해악만"* 과 같은 형�
 진행자가 트럼프의 *"AI 위험 공포는 hoax"* 를 묻자 Huang은 **규정은 피하고**(*"대신 말하고 싶지 않다"*) **결론(2030년 종말 0%)과 처방(기존 규제 적용)에는 동의**한다(23:12~24:59). ⚠️ 대통령의 원 발화는 소스에 없다. ⚠️ ko가 *hoax* 를 **"우스꽝스러운 일"** 로 누그러뜨렸다.
 
 일곱 입장을 해소하지 않는다.
+
+## 감시 기술 판매자가 감시를 이유로 세금에 반대할 때 (2026-11-12 · [[tech-bridge-alex-karp-wealth-tax-surveillance]])
+
+[[alex-karp|Alex Karp]]([[palantir|Palantir]])는 부유세 반대의 넷째 이유로 **감시** 를 든다 — *"AI가 있으면 불가능하지 않다고요. AI는 당신이 가진 모든 물건의 값을 추정할 수 있다. 그게 바로 문제라는 겁니다."*(03:24~03:30) 동시에 *"전장에서 쓰는 AI를 국내에서는 못 쓰게 법으로 막자는 겁니다."*(07:09~07:11) 라고 제안한다(해설 전달).
+
+- 이 페이지의 축으로: 감시 기술 판매자가 **감시의 선**(*법적 근거가 있는 감시와 없는 감시*)과 **세제** 에 대해 규칙을 제안한다. 해설은 *감시 논란을 달고 사는 회사의 CEO가 감시가 싫어서 부유세를 반대한다* 는 긴장을 처음부터 짚는다.
+- *AI 주권* 이라는 위험 정의도 같은 경계로 읽는다 → [[ai-sovereignty]](신규).

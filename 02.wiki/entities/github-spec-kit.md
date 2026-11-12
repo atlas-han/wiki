@@ -6,9 +6,9 @@ tags: [github, spec, cli, copilot, agent]
 links:
   - https://github.com/github/spec-kit
   - https://github.github.io/spec-kit/
-sources: [tech-bridge-spec-driven-development, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-spec-driven-development, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-sdd-vs-waterfall]
 created: 2026-08-29
-updated: 2026-10-02
+updated: 2026-11-12
 ---
 
 # GitHub Spec Kit
@@ -40,3 +40,8 @@ GitHub이 공개한 **스펙 주도 개발 하니스**. `specify` CLI로 저장�
 
 - [[tech-bridge-spec-driven-development]] · [[tech-bridge-sdd-full-course]] · [[spec-driven-development]]
 - <https://github.github.io/spec-kit/>
+
+## 별 14만 9천 개, 그리고 *워터폴의 귀환* 논쟁 (2026-11-12 · [[tech-bridge-sdd-vs-waterfall]])
+
+- 해설의 첫 장면: 1970년 논문 이후 *"코드보다 스펙을 먼저 쓰자는 도구가 기터브에서 별 14만9,000개를"*(00:21~00:23) 받았다(제목 *spec-kit까지* 로 보아 spec-kit으로 읽음, 해설 시점).
+- GitHub 문서 · 블로그(해설 전달): 스펙을 브랜치에서 만들고 리뷰하고 머지한다 · 요구 사항과 설계는 *계속되는 활동* 이 된다 · *"AI가 명세를 실행 가능하게 만든다."*(06:51) → [[spec-driven-development]] · [[waterfall-model]]

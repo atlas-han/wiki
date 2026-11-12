@@ -5,9 +5,9 @@ category: person
 tags: [extreme-programming, tdd, junit, agile, patterns, refactoring, augmented-development, coaching]
 aliases: [켄트 벡, Kent Beck]
 links: []
-sources: [tech-bridge-kent-beck-craft-augmented-development, tech-bridge-emily-bache-exact-coding-tdd]
+sources: [tech-bridge-kent-beck-craft-augmented-development, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-sdd-vs-waterfall]
 created: 2026-10-09
-updated: 2026-11-07
+updated: 2026-11-12
 ---
 
 # Kent Beck
@@ -42,3 +42,9 @@ updated: 2026-11-07
 ## References
 
 - [[tech-bridge-kent-beck-craft-augmented-development]]
+
+## 해설이 다시 인용하다 — SDD vs 워터폴 (2026-11-12 · [[tech-bridge-sdd-vs-waterfall]])
+
+한국어 해설이 Beck의 글(martinfowler.com fragments, 2026-01-08 — 설명란, 위키 미열람)을 SDD 반대편의 대표로 인용한다: *"명세를 전무 쓰고 나서 구현한다는 건 구현하면서 명세를 바꿀 만한 걸 하나도 배우지 않는다는 가정이라고요."*(03:03~03:09)[=전부] 기이한 가정이라는 것.
+
+- 10-09 강연에서 Beck이 기억으로 말한 Royce 논문(*"waterfall going down and feedback coming up"*)은 이 해설의 논문 서술 — 되돌아가는 화살표 · *두 번 하라* — 과 같은 방향이다 → [[waterfall-model]](신규). 둘 다 2차 전달이다.

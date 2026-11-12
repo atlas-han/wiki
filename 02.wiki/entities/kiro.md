@@ -4,9 +4,9 @@ type: entity
 category: product
 tags: [aws, amazon, coding-agent, spec-driven]
 links: []
-sources: [tech-bridge-frontier-engineering, tech-bridge-sdd-enterprise-lessons]
+sources: [tech-bridge-frontier-engineering, tech-bridge-sdd-enterprise-lessons, tech-bridge-sdd-vs-waterfall]
 created: 2026-08-30
-updated: 2026-10-02
+updated: 2026-11-12
 ---
 
 # Kiro
@@ -28,3 +28,7 @@ updated: 2026-10-02
 ## References
 
 - [[tech-bridge-frontier-engineering]] · [[clare-liguori]] · [[amazon]] · [[frontier-engineering]]
+
+## SDD 도구의 예로 다시 (2026-11-12 · [[tech-bridge-sdd-vs-waterfall]])
+
+한국어 해설: *"아마존의 키로는 스펙 하나마다 파일 세 개를 만듭니다."*(01:06~01:09) — 요구 사항 · 설계 · 작업 목록. 설명란이 Kiro specs 문서(`kiro.dev/docs/specs/`, 위키 미열람)를 근거로 든다. → [[spec-driven-development]] · [[waterfall-model]]

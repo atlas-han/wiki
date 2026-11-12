@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [data-boundary, on-premise, local-ai, privacy, healthcare, sovereign-deployment]
 aliases: [on-premise AI, 로컬 AI, 환자 정보는 병원 안에서, sovereign deployment]
-related: [ai-data-exposure, confidential-vm, cloud-agent-delegation, software-marginal-cost, deterministic-agent-pipeline]
+related: [ai-data-exposure, confidential-vm, cloud-agent-delegation, software-marginal-cost, deterministic-agent-pipeline, ai-sovereignty]
 first-seen: tech-bridge-dental-clinic-ax-transformation
-sources: [tech-bridge-dental-clinic-ax-transformation]
+sources: [tech-bridge-dental-clinic-ax-transformation, tech-bridge-alex-karp-wealth-tax-surveillance]
 created: 2026-10-17
-updated: 2026-10-17
+updated: 2026-11-12
 ---
 
 # 사내 추론으로 지키는 데이터 경계 (In-House AI Data Boundary)
@@ -44,3 +44,9 @@ updated: 2026-10-17
 ## References
 
 - [[tech-bridge-dental-clinic-ax-transformation]] · [[gatsbydds]]
+
+## 같은 불안의 정치 · 마케팅 판 — AI 주권 (2026-11-12 · [[tech-bridge-alex-karp-wealth-tax-surveillance]])
+
+[[palantir|Palantir]]는 *외부 모델 회사가 내 데이터로 학습한다* 는 기업의 불안을 *AI 주권* 이라는 사업 언어로 만들었다(해설 전달) — 8월 주주 서한 *"우리 고객들은 언어 모델 연구소의 속국이 되기를 거부했다."*(06:28~06:32) 이 페이지의 사례가 **사내 추론이라는 실무 처방** 이라면, 그쪽은 **국가 · 기업 단위의 정체성 언어** 다 → [[ai-sovereignty]](신규).
+
+- ⚠️ 근거로 든 *Anthropic이 고객 데이터로 학습* 은 해설이 약관 문구와 어긋난다고 짚었다. 데이터 경계를 세우는 이유가 *실제 학습 관행* 인지 *통제 · 감사 가능성* 인지 구분해서 읽을 것(위키의 읽기).
