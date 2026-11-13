@@ -3,11 +3,11 @@ title: Transcript Classifier
 type: concept
 category: pattern
 tags: [agent-safety, classifier, claude-code, llm-as-judge, latency, auto-mode]
-related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode, slop-probes, system-1-model, jev]
+related: [agentic-misbehavior, prompt-injection, agent-harness-design, deny-and-continue, privacy-auto-mode, slop-probes, system-1-model, jev, human-loop-roles-relocation]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-jev-agent-harness, tech-bridge-lee-robinson-always-on-agents]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-jev-agent-harness, tech-bridge-lee-robinson-always-on-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-05-25
-updated: 2026-10-18
+updated: 2026-11-13
 ---
 
 # Transcript Classifier
@@ -111,3 +111,11 @@ Stage 2는 stage 1과 거의 동일한 prompt를 받으므로 **prompt cache hit
 - [[anthropic-claude-code-auto-mode]]
 - [[tech-bridge-agent-to-agent-as-search]] — 프라이버시로의 유비와 그 한계 (2026-09-10)
 - [[tech-bridge-jev-agent-harness]] — LangChain auto mode 미들웨어 + Jev, 지연 축 (2026-09-26)
+
+## 2026-11-13 — 사람 14% vs 분류기 89%, 그리고 남는 10% ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]] 발표 해설이 전하는 Anthropic의 8월 실험(⚠️ 해설 수치, 원 글 미열람): 테스터 1,053명의 세션마다 위험한 명령을 하나씩 끼워 넣었더니 *"사람이 잡아낸 건 약 14%였습니다."*(00:10~00:13)(143명, 설명란 13.6%) auto mode 분류기는 같은 명령의 89%(937건)를 막았다.
+
+- auto mode는 프로젝트 안 파일 읽기 · 고치기 말고는 거의 모든 동작을 분류기에 보낸다. 8월부터 세션의 **기본 권한 모드** 가 되기 시작했다(해설).
+- 신뢰 범위 설정: 기본값은 지금 폴더와 저장소만 믿어 스테이징 배포 같은 일이 막힌다. 믿는 저장소 · 버킷 · 도메인을 평문으로 적으면 *"그 문장이 분류 기획에 전달됩니다."*(03:17~03:18)[=분류기에]
+- ⭐ 그래도 *"열개 중 한 개는 여전히 통과했습니다."*(00:27~00:30) 그래서 분류기 앞에 거절 규칙이 선다 — *"규칙에 걸린 도구출은 분류기에 아예 도착하지도 않습니다."*(03:50~03:52)[=도구 호출] 분류기는 *대부분*, 규칙 · 환경은 *보장* → [[human-loop-roles-relocation]] · [[hard-vs-soft-enforcement]].

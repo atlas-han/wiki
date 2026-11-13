@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-11-11
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # Claude Fable 5.2
@@ -76,3 +76,12 @@ updated: 2026-11-12
 
 - 11-10 발표문 해설의 *하이 설정 ≈ 오퍼스 최고 점수 · 비용 절반* 과 같은 방향이다. ⚠️ 벤치마크 점수는 두 소스가 다르게 적는다(발표문 해설 Frontier Code 49.1 vs 이 소스 Frontier Code 2.0 high 45.3%) — 같은 표인지 미확인.
 - 사용량: *"we're still kind of stuck with only 50% of the usage"*(10:14~10:16) — 무엇의 50%인지는 말하지 않는다.
+
+## 2026-11-13 — 모델 선택 가이드의 자리 · 400 오류 규칙 · 지휘 세션 ([[tech-bridge-addy-osmani-which-claude-model]] · [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[addy-osmani|Addy Osmani]] 가이드 해설(⚠️ 원 글 미열람): $8 / $40(발표문 해설과 같음), API 기본 effort high · Claude Code는 medium. 맞는 일 — 큰 리팩터링 · 마이그레이션 · 아키텍처 설계 · *사람이 지켜보지 않는 긴 실행*, 심층 리서치 · 과학 정량 분석. Frontier Code 2.0 high 45.3%(Chase AI 편과 같은 값)로 Opus 5.5 max 45.5%와 거의 같고 작업당 비용은 절반 정도. 출력은 Fable 5.1보다 최대 30% 빠르고 빠른 모드를 지원한다.
+
+- ⭐ **고유 호환성 규칙**: *"생각복록 앞에 내용, 즉 시스템 프롬프트나 도구, 이전 메시지를 바꾸면 400 오류가 납니다."*(07:50~07:56)[=생각 블록] — 기록을 직접 편집한다면 덧붙이기만. 여러 모델을 섞으면 *"가장 엄격한 모델을 맞춰 요청을 구성합니다."*(08:05~08:07)
+- 캐시 읽기 가격은 Opus 5.5와 같아(100만 토큰당 20센트) 긴 실행에서는 차이가 캐시되지 않은 입력 · 출력에서만 난다(거기서 토큰당 2배).
+- ⚠️ 11-10 발표문 해설의 Frontier Code *49.1* 은 이 가이드의 high 45.3%와 다르다 — 다른 effort의 값일 수 있다(위키의 추정, 미확인).
+- 같은 날 [[lydia-hallie|Lydia Hallie]] 발표 해설: 지휘자 세션(판단)은 *페이블*, 작업 스레드는 Opus 5.5 — 버전은 발화되지 않는다(tags에 Fable 5.2).

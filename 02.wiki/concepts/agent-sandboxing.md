@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemeral-environments, kubernetes, docker, prompt-injection]
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
-related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue]
+related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue, human-loop-roles-relocation]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-10-17
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -106,3 +106,12 @@ updated: 2026-11-03
 - **[Docker 등 전달]** *"Docker and a group of security companies just published a secure software factory reference architecture, and the central idea is this: the more autonomy you give the agent, the less you can rely on it to police itself. The controls have to live in the environment."*(11:27~11:41) ⚠️ 문서명과 참여사는 확인하지 않았다.
 - **실천 목록** — *"running your agents in a sandbox, giving them scoped credentials, read only where you can, and letting them open pull requests but not merge them, at least until you trust the stack that's in place."*(11:43~11:55) → [[least-privilege-connectors]] · [[action-reversibility]]
 - 반대 방향 근거로 작업을 나누는 격리도 든다. *"every worker get its own computer, its own context, and its own kill switch."*(02:40~02:44) → [[manager-bot-coding-agent-split]]
+
+## 2026-11-13 — 권한 규칙이 못 막는 것, 샌드박스가 못 덮는 것 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]] 발표 해설(⚠️ 해설자 요약, 위키는 sandboxing 문서 미열람)이 [[claude-code|Claude Code]] 샌드박스의 **자리와 한계** 를 함께 말한다.
+
+- 왜 필요한가: `npm test`는 평범해 auto mode가 통과시키지만 내가 쓰지 않은 의존성 코드도 함께 돈다 — 오염된 의존성이 `.env` · SSH 키를 열어 밖으로 보낼 수 있다. *"관환 규칙은 도구 호출을 실행할지 말지만 정합니다. 일단 실행된 뒤 어디까지 손을 뻗는지는 막지 못합니다."*(04:51~04:56)[=권한 규칙]
+- 무엇을 하나: 기본으로 꺼져 있어 직접 켠다. 읽을 파일 · 쓸 폴더 · 접촉할 호스트를 운영체제가 강제한다 — *"그 명령이 띄운 자식 프로세스까지 전부요."*(05:06~05:08) 거절 규칙도 OS 수준으로 넘어간다.
+- ⚠️ **한계**: *"샌드박스가 덮는 건 쉘 명령뿐입니다."*(05:16~05:17) Claude의 파일 도구 · MCP 서버 · 훅은 여전히 바깥(내 컴퓨터)에서 돈다. 이 페이지에 처음 기록되는 경계다.
+- 그 바깥을 없애는 다음 단계가 클라우드 세션 — 세션마다 새 머신 · 새 저장소 복사본, git에 없는 비밀 파일은 아예 없고, 네트워크는 패키지 레지스트리 · GitHub 정도만, API 키는 값을 보지 못한 채 쓴다 → [[cloud-agent-delegation]] · [[credential-injection-outside-sandbox]].

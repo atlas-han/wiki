@@ -6,9 +6,9 @@ tags: [prompt-caching, context-engineering, cost, latency, harness-design, compa
 aliases: [prompt caching, prompt cache, 프롬프트 캐시, 캐시 적중, cache hit, cache miss, cache warming, 캐시 예열, KV cache hit ratio]
 related: [context-engineering, harness-engineering, context-resets-and-compaction, deferred-tool-context, toolbox-pattern, scripts-that-talk-back, transcript-classifier, automatic-model-routing, model-mixing-economics, trusted-throughput, always-on-agent-architecture, openclaw, fireworks-ai, hidden-harness-calls, fork-subagent]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-10-18
-updated: 2026-11-09
+updated: 2026-11-13
 ---
 
 # 프롬프트 캐싱 (Prompt Caching)
@@ -71,3 +71,10 @@ updated: 2026-11-09
 ## 캐시 읽기도 한도를 쓴다 — 사용자 쪽에서 본 캐시 (2026-11-03 · [[tech-bridge-better-stack-claude-code-agent-summary-cost]])
 
 [[claude-code|Claude Code]]의 백그라운드 에이전트 요약은 30초마다 대화 전체(호출당 약 40,000 입력 토큰)를 보낸다. 흔한 반론과 화자의 답(⚠️ 화자 진술): *"most of these input tokens are going to be prompt cash[=cache] reads since it only sends over a small difference each time. And yes, on the API, they are about a tenth of the normal price. But on a subscription, Anthropic only says they still draw usage and not how much."*(02:32~02:44) 이 페이지의 *"적중률 · 절감액 수치는 이 위키의 어느 소스에도 없다"* 에 대해 처음 나온 **가격 비율**(API 약 1/10, 화자 수치 · 출처 미표기)이고, 동시에 **구독 한도 환산은 공개되지 않았다**는 공백이 붙는다. 캐시가 맞는 호출이라도 사용자가 부르지 않았다면 비용 문제다 → [[hidden-harness-calls]]. 서브에이전트가 부모의 캐시를 물려받느냐(fork)도 같은 영상에 나온다 → [[fork-subagent]].
+
+## 2026-11-13 — 캐시는 모델에 묶인다 · 컨텍스트도 비용 ([[tech-bridge-addy-osmani-which-claude-model]])
+
+[[addy-osmani|Addy Osmani]] 모델 선택 가이드 해설(⚠️ 원 글 미열람): *"컨텍스트도 비용입니다. 큰 컨텍스트는 매 턴마다 다시 전송되기 때문입니다."*(04:47~04:50) 한 턴 캐시 읽기 비용은 15만 토큰 약 3센트 · 2만 토큰 약 0.4센트. 긴 실행에서는 입력 대부분이 캐시 읽기로 청구되고, Opus 5.5 · Fable 5.2의 캐시 읽기는 100만 토큰당 20센트로 같다.
+
+- ⭐ **프롬프트 캐시는 만든 모델에 묶인다** — 모델을 바꾸면 첫 턴에 전체 대화를 다시 캐시에 써야 한다. 전환은 작업 경계에서, Claude Code에선 먼저 `/compact`.
+- Fable 5.2는 생각 블록 앞의 내용(시스템 프롬프트 · 도구 · 이전 메시지)을 바꾸면 400 오류 — 이 페이지의 *정적 접두를 지켜라* 가 Fable 5.2에서는 **오류로 강제** 된다(위키의 읽기). 기록은 덧붙이기만.

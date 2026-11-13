@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [prompt-engineering, prompt-debt, prompt-audit, model-upgrade, cost, claude-code, claude-md, anthropic, harness-pruning]
 aliases: [prompt debt, 프롬프트 부채, 프롬프트 빚, prompt audit, prompt-audit, /claude-api prompt-audit, 옛날 프롬프트, legacy prompt instructions]
-related: [harness-pruning, prompt-caching, skill-evals, climbable-eval, model-mixing-economics, tools-and-context-over-harness, agent-harness-design, reasoning-effort-levels]
+related: [harness-pruning, prompt-caching, skill-evals, climbable-eval, model-mixing-economics, tools-and-context-over-harness, agent-harness-design, reasoning-effort-levels, human-loop-roles-relocation]
 first-seen: tech-bridge-lance-martin-old-prompts-make-claude-worse
-sources: [tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-chase-ai-fable-5-2-prompting-rules]
+sources: [tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-11-09
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # 프롬프트 부채 (Prompt Debt)
@@ -61,3 +61,11 @@ updated: 2026-11-12
 - ⭐ 이유가 이 페이지의 첫 소스와 다르다: Lance Martin 편은 *옛 지시가 토큰 · 정확도를 깎는다* 를 실험 수치로 보였고, 이 소스는 **새 모델이 규칙을 *거의 글자 그대로* 따른다** 는 성질로 설명한다 — *"Fable 5.2 very diligently follows whatever rules you give it almost to a T."*(04:42~04:48)
 - 지울 것(화자): 꼭 필요하지 않은 엄격한 지침, 엄격한 스타일 규칙, **서브에이전트 위임 규칙**(규칙 8 — 그대로 따르느라 *"you are going to rip through your usage"*(08:26~08:28)).
 - 위키의 관찰: 같은 영상이 새 지시도 *더하라* 고 한다(증명하라 · 끝까지 하라 · 코드의 주인 · 중간 보고). 이것들은 5.2의 약점을 메우는 지시라서, 이 페이지의 정의대로라면 **다음 모델의 프롬프트 부채 후보** 다.
+
+## 2026-11-13 — Claude Code 팀의 CLAUDE.md 정리 기준 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+세 번째 소스. [[lydia-hallie|Lydia Hallie]] 발표 해설: [[claude-opus-5-5|Opus 5.5]]가 의도와 코드베이스를 더 잘 이해하니 지시문도 달라져야 한다 — CLAUDE.md에 *깊이 생각해라 · 끝날 때까지 계속해라 · 중요 · 반드시 인증 헬퍼를 써라* 같은 줄이 남아 있지 않나. 공식 문서: *"강조를 쌓으면 클로드가 그 규칙을 과하게 적용한다고요."*(02:12~02:14)
+
+- ⭐ 기준: *"클로드가 저장소를 읽어서 알 수 없는 것만 적으라는 겁니다."*(02:18~02:20) 스택 · 볼 곳은 코드에 있으니 지우고, 코드에 드러나지 않는 사실(레거시 폴더를 아직 모바일 앱이 쓴다)은 남긴다.
+- 모델에 맞춰 CLAUDE.md · 스킬의 지시를 찾아 수정안을 내는 명령어가 있다고 한다 — ⚠️ 이름은 ASR이 *닥터 프롬프트 오* 로 적어 판독하지 못했다.
+- 11-09 Lance Martin(옛 주문이 비용을 키운다) · 11-12 Chase AI(Fable 5.2는 규칙을 글자 그대로 따른다)에 이어 **도구를 만드는 팀이 같은 정리를 권한다.**

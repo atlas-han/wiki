@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
-related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction]
+related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction, human-loop-roles-relocation]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-09-13
-updated: 2026-11-03
+updated: 2026-11-13
 ---
 
 # 하드 강제와 소프트 강제
@@ -175,3 +175,7 @@ updated: 2026-11-03
 
 - ⚠️ **위 09-26 절과의 차이.** 본인 발표의 최하층은 **스타일 가이드**("사람만 강제할 수 있다")였고 층 수는 "다섯"이었다. 여기서는 **넷**이고 최하층 이름이 **사람 리뷰**다. 3층에 *"security bot"* 이 더해진다. 순서는 같다.
 - ⭐ **운용 규칙이 한 줄 프롬프트가 된다** — *"every time you have to correct an agent, move that fix up the stack, code first, then a lint rule, then a rules file, and review comes"*(12:24~12:30). 영상은 이 문장 중간에서 끝난다. 위 09-26 절의 *"교정할 때마다 어느 층이 가장 효과적인지 생각하라"* 가 **오케스트레이터 봇에게 주는 상시 규칙**으로 내려온 판본이다. 발표자의 말로는 *"if you're tidying up after the agent every single time on the same issues, you're doing something wrong. That needs to be programmed in so that it doesn't happen again."*(05:50~06:00)
+
+## 2026-11-13 — *대부분* 과 *보장* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]](Anthropic Claude Code 팀) 발표 해설의 한 문장이 이 페이지의 구분과 같다: *"모델에게 맡기면 대부분 잘되지만 보장은 아닙니다. 보장은 한스에서만 걸 수 있습니다."*(03:36~03:41)[=하네스] 하드 쪽 장치는 거절 규칙(되돌릴 수 없는 것만) · 샌드박스(OS 강제) · 훅(exit 2) · CI이고, 소프트 쪽은 모델 · CLAUDE.md · auto mode 분류기(89%) · 프롬프트다. → [[human-loop-roles-relocation]]

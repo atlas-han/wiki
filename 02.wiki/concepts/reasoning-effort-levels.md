@@ -6,9 +6,9 @@ tags: [reasoning-effort, effort-level, cost, benchmark, fable-5-2, claude-code, 
 aliases: [effort level, reasoning effort, 추론 강도, effort setting, low/medium/high/xhigh/max, extra high, xhigh]
 related: [prompt-debt, ultracode, model-mixing-economics, token-roles, fable-5-2, claude-opus-5-5]
 first-seen: tech-bridge-chase-ai-fable-5-2-prompting-rules
-sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules]
+sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-11-12
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # 추론 강도 (Reasoning Effort Levels)
@@ -49,3 +49,17 @@ updated: 2026-11-12
 
 - [[tech-bridge-chase-ai-fable-5-2-prompting-rules]] — 규칙 1 · 5 · 8 · 10
 - [[tech-bridge-claude-fable-5-2-announcement]] — *하이 설정으로도 오퍼스의 최고 점수와 비슷 · 비용 절반*(발표문 해설)
+
+## 2026-11-13 — 벤더 가이드: *모델보다 effort 먼저* ([[tech-bridge-addy-osmani-which-claude-model]])
+
+두 번째 소스. [[addy-osmani|Addy Osmani]]의 모델 선택 가이드 해설(⚠️ 원 글 · effort 문서 미열람)이 effort를 **모델 선택의 첫 다이얼** 로 놓는다: *"모델을 바꾸기 전에 에포트부터 조정을 하는 것입니다."*(02:31~02:34) 단, *"다만 에포트를 올려도 [음악] 모델에 없는 지식이나 능력이 생기지는 않습니다."*(02:37~02:41) 올리면 더 오래 생각 · 도구를 더 호출 · 자기 결과를 더 검증하고, effort와 지연 시간은 대략 비례한다.
+
+| 기본 effort(해설) | API | Claude Code |
+|---|---|---|
+| Haiku 5.5 · Opus 5.5 | medium | medium |
+| Sonnet 5.5 · Fable 5.2 | high | medium |
+
+- Opus 5.5 SWE-bench Pro(high 기준): medium −2.5p · 비용 70% / low −8p · 1/3 / extra high +1.4p · 2.5배 → high를 넘겨야 하면 *"한 단계 위 모델을 더 낮은 에포트로 시험해 봐야 합니다."*(03:13~03:17)
+- 막힐 때의 순서: ① 스스로 검증할 수단 ② effort 한 단계 ③ 한 단계 위 모델 · 더 낮은 effort. 자동 검증이 되면 **전부 low → 실패만 high**(Opus 5.5 ≈ 97% · 17센트 vs 전부 high 95.3% · 29센트) → [[true-cost-to-perfect-answer]].
+- Haiku 4.5 → 5.5 이전 시 budget tokens를 effort 수준으로 바꿔야 한다. Opus · Fable은 항상 생각을 켠 채 동작한다.
+- 이 페이지의 열린 질문(11-10 발표문 해설 49.1 vs Chase AI 45.3%)에 한 조각: 이 가이드도 Fable 5.2 **high** 45.3%를 적는다. 49.1은 다른 effort 값일 수 있다(⚠️ 위키의 추정).

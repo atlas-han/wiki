@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration, agents]
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
-related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review]
+related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review, human-loop-roles-relocation]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-09-18
-updated: 2026-11-08
+updated: 2026-11-13
 ---
 
 # 위험 비례 사람 검토
@@ -124,3 +124,10 @@ updated: 2026-11-08
 - **[Anthropic 전달]** Lauren Tan식 1시간 자동 머지 루프에 단서를 단다. *"if you look at how Anthropic approach this, you wouldn't apply this to every single type of bug or issue. You'd have green, yellow, and red in terms of blast radius. If something is highly critical, if it deals with payments, you're not going to have it auto merge in the step."*(04:02~04:16) ⚠️ 출처를 말하지 않는다. 11-01 AI Labs 편의 classifier 3등급(low · medium · high, 위 절)과 같은 방향이지만, 이 영상만으로는 같은 기준인지 알 수 없다.
 - ⭐ **[발표자 자기 구성]** *"I mark every change by blast radius or at least I don't, I get the agent to do that, which is how much could break if this goes wrong."*(10:34~10:40) 에이전트가 리뷰 수준을 정한다. *"whether that's human, AI level 1, 2, or 3, and this involves various different levels of playwright testing and security testing."*(10:44~10:52) 백로그 분류에도 RICE와 함께 **blast radius 점수**를 쓴다(09:38~09:50). 위험 등급이 **사람 대 AI 리뷰의 라우팅 키**이자 **우선순위 입력**으로 두 번 쓰인다.
 - 보안 쪽 결론도 같은 축이다. 결정은 *"in each of the codebases that you have set up based on their criticality"*(11:59~12:02) 내려야 한다고 한다.
+
+## 2026-11-13 — 문서 0명 · 보통 1명 · 위험 2명 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]] 팀의 운영(해설 전달): 모든 PR을 Claude가 먼저 리뷰한다 — *"코드를 쓴 세션이 아니라 새 컨텍스트에서요."*(07:30~07:32) 그 뒤 사람이 얼마나 볼지는 위험도로 정한다: 문서 · 문구 수정은 자동 검사만 통과하면 끝, 보통 변경은 한 명, 위험한 변경은 두 명.
+
+- 앞단에는 CI가 있다 — 세션 설정과 무관하게 모든 PR에 같은 검사, autofix를 켜면 실패 시 Claude가 돌아와 고친다. → [[automated-code-review]] · [[human-loop-roles-relocation]]
+- ⚠️ *위험한 변경* 의 판정 기준은 발화되지 않는다.

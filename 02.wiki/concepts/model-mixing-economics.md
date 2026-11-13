@@ -6,9 +6,9 @@ tags: [model-selection, cost, planning-vs-execution, agent-swarm, budget]
 aliases: [모델 혼합, 계획 모델과 실행 모델, 모델 라우팅]
 related: [cloud-agent-delegation, grok-4-6, plan-to-ticket-pipeline, compute-constrained-growth, harness-engineering, model-harness-knowledge-stack, value-maxing, system-1-model, jev, open-model-customization-loop, speculative-decoding, pareto-surfing]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grokbot-agent-teams, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-jev-agent-harness, tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-software-factory, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-factory-bug-report-to-production, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-just-in-time-ontology, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-09-09
-updated: 2026-11-09
+updated: 2026-11-13
 ---
 
 # 모델 혼합의 경제학
@@ -204,3 +204,16 @@ updated: 2026-11-09
 - **컨텍스트 선별에 작은 모델** — *"In theory, you should be able to use a decision model for this, something like JV or the decisions API to do effective ranking"*(14:59~15:05) ⚠️ *"JV"* 는 [[jev|Jev]] 추정(`en`은 `"Java"`). *"decisions API"* 의 동일성은 [[system-1-model]]의 DevDay 기록과 이름이 같다는 것뿐이다. "in theory"이고 자사 사용이라는 말은 없다.
 - ⚠️ 20%의 단위(토큰 · 비용 · 작업)가 발화되지 않고, 절감 폭도 없다. 작은 모델이 오픈 모델인지는 단정할 수 없다. 프런티어가 오픈 모델보다 낫다면서 *"the rubber band is tightening."*(13:40)이라고 덧붙인다.
 - [[review-model-inversion]]과 함께 읽으면 **혼합의 이유가 둘**이다(비용, 상관 실패 깨기). 둘이 충돌할 때의 순서는 발화되지 않았다.
+
+## 2026-11-13 — 섞기의 숨은 비용 네 가지 ([[tech-bridge-addy-osmani-which-claude-model]])
+
+[[addy-osmani|Addy Osmani]]의 모델 선택 가이드 해설(⚠️ 원 글 미열람)이 혼합을 권하면서 **섞을 때 드는 비용** 을 함께 적는다.
+
+1. **캐시가 모델에 묶인다** — 모델을 바꾸면 첫 턴에 전체 대화를 다시 캐시에 쓴다 → 전환은 작업 경계에서, Claude Code에선 먼저 `/compact`.
+2. **생각 블록이 아래로 안 내려간다** — 상위 모델은 하위 모델의 생각 블록을 읽지만 내려가면 이전 추론은 버려진다. API에선 요약으로 새 대화를 시작하는 편이 낫다.
+3. **계획 · 합치기 비용** — 워커 분할(약 2,200만 토큰 결함 탐색, Opus 5.5 지휘 + Sonnet 5.5 워커)은 단독보다 약 1/3 저렴 · 성능 비슷했지만, 앞 단계 의존 작업이나 한 컨텍스트에 들어가는 작업은 *"계획하고 합치는 비용이 절감액보다 큽니다."*(07:09~07:11)
+4. **어드바이저** — Opus 5.5 + Fable 5.1 어드바이저는 약 1.7 오르고 비용 약 2.1배 — *"먼저 측정해 보라는 뜻입니다."*(07:25~07:28)
+
+- 서브에이전트는 *틀리면 금방 드러나는 일*(파일 찾기 · 테스트 실행 · 로그 읽기)에 Haiku · Sonnet, 코드 수정 · 판단은 메인에. ⚠️ 작은 모델이 검색 결과를 잘못 읽으면 메인이 엉뚱한 파일을 열어 토큰을 낭비한다 → [[orchestrator-searcher-split]].
+- 여러 모델을 함께 쓰려면 가장 엄격한 모델에 맞춰 요청을 구성한다(덧붙이기만 · 도구 선택 자동 · 응답 블록은 타입으로).
+- 같은 날 [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]: [[lydia-hallie|Lydia Hallie]]의 구성은 *판단하는 메인 세션 Fable · 작업 스레드 Opus 5.5* — 이 가이드의 *상위 모델이 쪼개고 판단* 과 같은 모양.

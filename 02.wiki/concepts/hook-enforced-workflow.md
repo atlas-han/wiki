@@ -3,11 +3,11 @@ title: Hook-Enforced Workflow
 type: concept
 category: pattern
 tags: [hooks, harness, enforcement, agent-skills]
-related: [agent-skills, agent-harness-design, hard-vs-soft-enforcement, self-harness, no-silent-write, deny-and-continue]
+related: [agent-skills, agent-harness-design, hard-vs-soft-enforcement, self-harness, no-silent-write, deny-and-continue, human-loop-roles-relocation]
 first-seen: tech-bridge-graft-code-knowledge-graph
-sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering, tech-bridge-cooking-with-codex, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-graft-code-knowledge-graph, tech-bridge-skill-engineering-dark-arts, tech-bridge-rails-harness-engineering, tech-bridge-cooking-with-codex, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-09-15
-updated: 2026-11-02
+updated: 2026-11-13
 ---
 
 # Hook-Enforced Workflow
@@ -81,3 +81,10 @@ updated: 2026-11-02
 
 - **완료 차단**: *"a hook that makes sure agent doesn't mark the task as done until the evals have passed."*(03:50~03:56) review-loop 안에서도 builder 중 *"stops the main agent from calling the feature done too early"*(07:49~07:53). 10-09 Rails 사례의 Stop 훅과 같은 자리.
 - **읽기 차단**: first-time user 에이전트가 앱 코드를 못 읽게 — *"The agent would normally get around that block with terminal commands. So, the hook stops it from reading the code that way, too."*(12:37~12:42) 파일 읽기 도구만 막으면 셸로 우회한다는 관찰(발표자 진술)이 **도구 단위가 아니라 행동 단위로 막아야 한다**는 근거가 된다. → [[code-blind-first-user-test]]
+
+## 2026-11-13 — 프롬프트는 보장이 아니다 · exit 2 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]] 발표 해설은 *확인* 의 일을 프롬프트와 훅으로 나눈다. 완료 기준 · 작업별 테스트 · 실제 출력 요구는 프롬프트로 쉽게 하지만 *"하지만 프롬프트는 보정이 아니죠."*(06:32~06:34)[=보장] 반드시 돌아야 하는 검사는 훅으로 — 파일을 고칠 때마다 린트, 작업을 완료로 표시할 때마다 그 부분의 테스트, Claude가 멈추려 할 때 전체 테스트.
+
+- ⭐ **함정**: *"종류 코드가 1이면 작업은 그냥 완료 처리됩니다. 2를 돌려 줘야 클로드가 돌아가서 고칩니다."*(07:05~07:09)[=종료 코드] — 검사가 실패해도 exit 1이면 되먹임이 걸리지 않는다. ⚠️ 해설자 요약이고 위키는 hooks 문서를 열지 않았다. 앞뒤 발표 원음(06:45~07:05)은 무캡션.
+- 여러 세션을 띄울 때의 보장은 CI로 올라간다 — 세션 설정과 무관하게 모든 PR에 같은 검사가 돈다 → [[human-loop-roles-relocation]].

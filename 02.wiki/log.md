@@ -2667,3 +2667,25 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 3편 · 8~10분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1112/`: `lines.py` · `meta.py` · `gaps.py` · `q.py`(11-11 것 복사) · `build_raw.py` · `merge.py` · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secC/`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check`로 새 페이지 · 보강 절 · raw 헤더를 대조해 손으로 적은 시각 6곳을 고쳤다. ⚠️ `q.py`에 `-`로 시작하는 경로(`-5fivnqRY4g/…`)를 주면 `--`도 파일명으로 읽힌다 — `./-5fivnqRY4g/…`로 줄 것.
 
+## [2026-11-13] ingest | Tech Bridge — 11-12 업로드 2편 (어떤 Claude 모델로 만들어야 할까 · 사람은 위험한 명령의 14%만 잡았다)
+
+목록 `--playlist-end 20` → **18줄 + stderr ERROR 2**(`AYCGbCxXHMU` 신규 멤버 전용 · `ezPSsVW92Mg` 지속). 신규 공개 2편: `M_yjL9qgwDo`(11-12 18:00 KST 게시) · `7Yj-f3izMbE`(11-13 07:00 KST). `Yhck-x6VuLs`는 범위 밖이라 단건 조회로 확인했고 여전히 `subscriber_only`다. `AYCGbCxXHMU`(*프롬프트 200단어로 6주를 일한 AI | OpenAI가 공개한 멈추지 않는 Codex 에이전트 8분 정리*, 8:27)는 단건 조회 `subscriber_only` → 건너뜀. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 2 · entity 3 · concept 1**, 기존 페이지 보강 20개(+ tech-bridge), index **1006 → 1012**(실측 일치).
+
+- `M_yjL9qgwDo`(9:01, 챕터 9) → [[tech-bridge-addy-osmani-which-claude-model]]: Addy Osmani claude.dev 글 해설(AI 내레이션). `ko` = `ko-orig`이고 `variant=gemini`(두 번째). en-orig = 영어 더빙, **모델 버전을 바꾼다**(`Opus 3.5` · `Sonnet 3.5` · `Haiku 3.5` · `Fable 2024`). 원음 발췌 없음 · 무캡션 구간 없음.
+  - 신규: [[claude-sonnet-5-5]] · [[claude-haiku-5-5]]
+  - 보강: [[addy-osmani]] · [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]](*완료한 작업당 비용* — 새 concept 대신 기존 페이지에 붙임, alias 추가) · [[model-mixing-economics]] · [[prompt-caching]] · [[cost-vs-score-frontier]] · [[fable-5-2]] · [[fable-5-1]] · [[claude-opus-5-5]](가격 $4/$20 첫 기록, 해설 전달) · [[terminal-bench]] · [[claude-code]]
+  - ⚠️ 원 글 · 공식 문서 미열람. *1.7.5 오르는데*(어드바이저 사례) 판독 미확정. `/effort` 명령 형식 미확정. 11-10 발표문 해설의 Frontier Code 49.1은 이 가이드의 Fable 5.2 high 45.3%와 다르다 — 다른 effort 값일 수 있다(추정).
+  - 페이지화하지 않음: SWE-bench Pro · Frontier Code 2.0 · Terminal-Bench 3.0(기존 terminal-bench 보강) · 어드바이저 도구 · 빠른 모드.
+- `7Yj-f3izMbE`(8:48, 챕터 10) → [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]: Lydia Hallie 발표 해설(AI 음성). **오디오 `ko` 하나 · en-orig 없음**(`en`은 `tlang=en` 기계 번역). 발표 원음 발췌 다섯 곳 이상이 무캡션(01:04~01:13 · 02:03~02:10 · 03:56~04:04 · 04:45~04:51 · 06:45~07:05 · 08:15~08:24 등) — 내용 미상.
+  - 신규: [[lydia-hallie]] · [[human-loop-roles-relocation]]
+  - 보강: [[transcript-classifier]] · [[action-reversibility]] · [[agent-sandboxing]] · [[cloud-agent-delegation]] · [[hook-enforced-workflow]] · [[hard-vs-soft-enforcement]] · [[prompt-debt]] · [[risk-proportional-human-review]] · [[anthropic]] · [[claude-code]] · [[claude-opus-5-5]] · [[fable-5-2]]
+  - ⚠️ 원 발표 · 설명란 링크 미열람. CLAUDE.md 정리 명령 이름(*닥터 프롬프트 오*) · 지휘자 세션 기능 이름(*아직 베타인 클로드 코드 프로젝트*) 판독 못 함. 리디아의 *질문 하나* 는 무캡션(챕터 제목 *되돌릴 수 있는가?*).
+  - 페이지화하지 않음: AI Engineer Code Summit · 지휘자 세션 · autofix.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편 · 8~9분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1113/`: `lines.py` · `meta.py` · `gaps.py` · `q.py`(11-12 것 복사) · `build_raw.py` · `merge.py` · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secAB/`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check`로 새 페이지 · 보강 절을 대조해 손으로 적은 시각 1곳을 고쳤다. ⚠️ `gaps.py`는 `[음악]`만 있는 줄도 캡션으로 세서 03:56~04:04 같은 빈 구간을 놓친다 — lines를 눈으로도 볼 것. *완료한 작업당 비용* 을 새 concept로 썼다가 [[true-cost-to-perfect-answer]]와 겹쳐 보강 절로 옮겼다 — 새 개념 페이지 전에 `grep -rli` 로 기존 정의를 먼저 볼 것.
+

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-repo]
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
-related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing]
+related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing, human-loop-roles-relocation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-09-09
-updated: 2026-11-01
+updated: 2026-11-13
 ---
 
 # 클라우드 에이전트 위임
@@ -123,3 +123,10 @@ updated: 2026-11-01
 ## 무거운 데이터와 눈으로 보는 루프는 로컬, 나머지는 VM (2026-11-01 · [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]])
 
 [[mehul-mohan|Mehul Mohan]]의 개인 배치 규칙은 이렇다. *"keep on your computer certain workloads that you know are very data heavy or requires you often"*(10:01~10:09). 예는 영상 편집이다. 파일이 *"north of like 8 10 GB files sometimes each"*(10:24~10:26)이고, 에이전트가 모든 프레임을 보지 못해 사람이 영상을 봐야 한다(10:47~10:55). 그 밖의 일은 VM으로 보낸다. *"regular feature development, bug fixes, all of that, that that can sit on a VM"*(11:08~11:14). 위의 Rauch · Lauren Tan은 **로컬 = 관찰의 자리**라 했다. 이 화자는 근거를 **데이터 무게**와 **사람이 직접 보는 피드백 루프**로 구체화한다. 도구로는 [[herdr]]의 SSH worker와 Claude Code Remote Control(휴대폰에서 VM 세션 조종)을 쓴다. ⚠️ 1인 사용자의 작업 습관이다.
+
+## 2026-11-13 — 비밀이 없는 곳에서 돌린다 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]] 발표 해설은 클라우드 세션을 **보안 경계의 다음 단계** 로 놓는다. 로컬 샌드박스는 셸 명령만 덮고 파일 도구 · MCP · 훅은 바깥에 남으니, *그런 것들이 애초에 없는 곳* 에서 돌린다: 세션마다 새 머신과 저장소의 새 복사본, 노트북을 닫아도 계속 돈다. git에 없는 `.env` · SSH 키는 거기에 없고, 네트워크는 기본으로 패키지 레지스트리와 GitHub 정도만, API 키는 Claude가 값을 보지 못한 채 쓰게 할 수 있다(해설).
+
+- *"머신은 버리면 되지만 푸시된 커믹과 전송된 메시지는 남습니다."*(05:49~05:51)[=커밋] — 그래서 클라우드에서도 auto mode와 거절 규칙은 그대로 둔다.
+- 맺음 제안: 평소보다 훨씬 큰 일 하나를 클라우드에서 돌려 보고 *내가 어디서 아직 끼어드는지* 보라 — *"그게 바로 다음에 클로드에게 넘겨 줄 일입니다."*(08:43~08:45) → [[human-loop-roles-relocation]]

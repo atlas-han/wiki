@@ -4,11 +4,11 @@ type: entity
 category: tool
 tags: [benchmark, agent-eval, terminal, containerized, verifier]
 aliases: [Terminal-Bench, Terminal-Bench-2.0, TB2]
-sources: [self-harness-paper, tech-bridge-horthy-state-of-software-factory]
+sources: [self-harness-paper, tech-bridge-horthy-state-of-software-factory, tech-bridge-addy-osmani-which-claude-model]
 links:
   - "https://arxiv.org/abs/2601.11868"
 created: 2026-06-14
-updated: 2026-10-16
+updated: 2026-11-13
 ---
 
 # Terminal-Bench-2.0
@@ -37,3 +37,7 @@ updated: 2026-10-16
 
 - [[self-harness-paper]]
 - [Terminal-Bench (arXiv 2601.11868)](https://arxiv.org/abs/2601.11868)
+
+## 2026-11-13 — Terminal-Bench 3.0 언급 ([[tech-bridge-addy-osmani-which-claude-model]])
+
+[[addy-osmani|Addy Osmani]] 모델 선택 가이드 해설(⚠️ 원 글 미열람)이 **Terminal-Bench 3.0** 수치를 든다: Fable 5.1 max 58.0% vs Opus 5.5 high 58.9%, Opus는 토큰을 절반만 썼다 — *단가가 아니라 완료한 작업당 비용* 의 예. 이 페이지의 2.0과 3.0의 차이는 발화되지 않는다.

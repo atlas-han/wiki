@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 links: []
 created: 2026-10-09
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # Claude Opus 5.5
@@ -85,3 +85,12 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 ## Fable 5.2 high의 비교 기준으로 (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
 
 [[chase-ai|Chase AI]]가 읽은 Frontier Code 2.0 표: Fable 5.2 high 45.3% · $6.72가 Opus 5.5 extra high보다 높고 Opus 5.5 max($12.82)와 거의 같다 — *"we're getting Opus 5.5 max performance at half the cost."*(01:39~01:42) 그래서 *Opus로 될 일이면 Fable을 낮은 강도로 돌릴 이유가 없다* — *"I could probably get this done with Opus."*(02:11~02:13) → [[reasoning-effort-levels]]
+
+## 2026-11-13 — 가격  /  (해설 전달) · 기본값 medium · 스레드 모델 ([[tech-bridge-addy-osmani-which-claude-model]] · [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[addy-osmani|Addy Osmani]]의 모델 선택 가이드 해설이 이 페이지에 없던 **가격** 을 준다(⚠️ 해설 전달, 원 글 · 공식 문서 미열람): 입력 $4 · 출력 $20 / 100만 토큰, 컨텍스트 100만, 캐시 읽기 100만 토큰당 20센트(Fable 5.2와 같음). Kimi 편의 *"Opus 5.5 is double the cost"*(Kimi $2/$10 기준)와 산술이 맞는다.
+
+- *"먼저 결론부터 말하면 잘 모르겠을 때는 오퍼스 5.5를 에포트 미디엄으로 시작하면 됩니다."*(00:25~00:29) Claude Code 기본 모델 · API 기본 effort medium. 맞는 일: 여러 PR에 걸친 기능 개발 · 일상 디버깅 · 컴퓨터 사용 · 복잡한 재무 모델 문서.
+- SWE-bench Pro(high 기준): medium −2.5p · 비용 70%, low −8p · 1/3, extra high +1.4p · 2.5배. Frontier Code 2.0 max 45.5%(11-10 발표문 해설의 *45.5* 와 같은 값). Terminal-Bench 3.0 high 58.9%로 Fable 5.1 max 58.0%를 토큰 절반으로 앞섬. 전부 low + 실패만 high 재실행 ≈ 97% · 17센트 vs 전부 high 95.3% · 29센트 → [[true-cost-to-perfect-answer]].
+- 혼합: Opus 지휘 + Sonnet 5.5 워커가 단독보다 약 1/3 저렴 · 성능 비슷. Fable 5.1 어드바이저를 붙이면 약 1.7 오르고 비용 2.1배. 도구 사용 강제 시 400 오류, 항상 생각을 켠 채 동작 → [[model-mixing-economics]].
+- 같은 날 [[lydia-hallie|Lydia Hallie]] 발표 해설: 올해 초 Opus 4.5보다 *의도와 코드베이스를 훨씬 잘 이해해* 중간 조종이 줄었다. 리디아의 구성은 지휘 세션 Fable · 작업 스레드 Opus 5.5.

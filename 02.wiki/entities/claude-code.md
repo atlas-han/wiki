@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-addy-osmani-which-claude-model]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-09
+updated: 2026-11-13
 ---
 
 # Claude Code
@@ -268,3 +268,11 @@ Anthropic이 Claude Code 명령으로 내놓았다는 세 가지(이름은 설�
 - **모드**: Manual · Plan · Auto. 권고는 *"I recommend sticking with auto for virtually everything."*(01:56~01:58) ⚠️ 입문자에게도 같은 권고이고 예외를 말하지 않는다. 위 Permission modes 절과 함께 읽는다.
 - **구성 요소**: effort 설정, `/init`으로 만드는 CLAUDE.md, 오른쪽 브라우저 패널, 더하기 버튼의 커넥터, 예약 작업, 휴대폰 Remote Control, 아티팩트를 한 번씩 짚는다.
 - ⚠️ *"You can also install custom plugins and now mods"*(03:51~03:53) — mods의 동작은 한 문장뿐이고 위키가 확인하지 않았다. 약 $20이라는 요금과 화면은 설명란이 제작 시점 설명이라고 밝힌다.
+
+## 2026-11-13 — 다섯 가지 일의 이양 · 모델 선택 가이드 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]] · [[tech-bridge-addy-osmani-which-claude-model]])
+
+**모범 사례 재작성**([[lydia-hallie|Lydia Hallie]] 발표 해설): 사람이 하던 조종 · 승인 · 거절 · 확인 · 시작이 각각 모델(CLAUDE.md는 *저장소를 읽어 알 수 없는 것만*) · auto mode(기본 권한 모드, 믿는 대상을 평문으로 설정) · 거절 규칙과 샌드박스 · 클라우드 세션(샌드박스는 셸 명령만 덮음) · 훅(**exit 2** 여야 되돌아가 고침) · CI와 새 컨텍스트 Claude 리뷰 · 지휘자 세션(베타, 이름 미확정)으로 옮겨 갔다 → [[human-loop-roles-relocation]].
+
+**모델 설정**([[addy-osmani|Addy Osmani]] 가이드 해설): 기본 모델은 Opus 5.5 · 시작 effort medium(Sonnet · Fable도 Claude Code에서는 medium으로 시작). `/effort` 로 현재 설정 확인, 모델 전환은 작업 경계에서 먼저 `/compact`(캐시가 모델에 묶임), 내장 Explore 서브에이전트는 세션 모델을 따르니 Haiku로 지정한 Explore를 직접 정의, `/model` 로 두 모델에 같은 작업을 돌려 `/usage` 비교 → [[reasoning-effort-levels]] · [[model-mixing-economics]].
+
+⚠️ 둘 다 해설자 요약이고 위키는 공식 문서(best practices · sandboxing · hooks · model config)를 열지 않았다.

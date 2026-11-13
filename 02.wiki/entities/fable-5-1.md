@@ -3,9 +3,9 @@ title: Fable 5.1
 type: entity
 category: model
 tags: [anthropic, frontier-model, coding]
-sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules]
+sources: [tech-bridge-pstack-third-party-review, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-ambitious-software-agent-era, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-09-14
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # Fable 5.1
@@ -75,3 +75,7 @@ Claude 블로그 예시를 한국어 해설이 전한 것(⚠️ 2차 전달): *
 ## 5.2와 달랐던 점 (2026-11-12 · [[tech-bridge-chase-ai-fable-5-2-prompting-rules]])
 
 [[chase-ai|Chase AI]]에 따르면 Fable 5.1은 *"Hey, just give me an answer. Don't deliberate."*(05:31~05:32) 같은 지시로 내부 생각을 건너뛰고 토큰을 아꼈다. 5.2는 늘 생각하고 양만 강도로 정해진다. 또 5.2는 5.1보다 추론을 사실처럼 말하고 일찍 멈추는 경향이 있다(화자 전달, 시스템 카드 미열람). → [[fable-5-2]] · [[reasoning-effort-levels]]
+
+## 2026-11-13 — 비교 기준선으로 ([[tech-bridge-addy-osmani-which-claude-model]])
+
+[[addy-osmani|Addy Osmani]] 가이드 해설(⚠️ 원 글 미열람)에서 Fable 5.1은 두 번 비교 기준으로 나온다: Terminal-Bench 3.0에서 **max 58.0%** 가 Opus 5.5 high 58.9%에 졌고(Opus는 토큰 절반), Opus 5.5에 **Fable 5.1 어드바이저** 를 붙인 사례는 약 1.7 오르는 데 비용 약 2.1배였다. Fable 5.2는 5.1보다 출력이 최대 30% 빠르다.

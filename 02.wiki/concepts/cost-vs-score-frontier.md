@@ -6,9 +6,9 @@ tags: [model-selection, benchmark, pareto-frontier, cost, evaluation, leverage, 
 aliases: [cost vs score, 비용 대비 점수, Pareto frontier of cost and score, 비용-점수 그래프, leverage]
 related: [true-cost-to-perfect-answer, model-mixing-economics, pareto-surfing, fixed-budget-alpha, inference-speed-as-capability, value-maxing, document-parsing-for-agents, taste-vs-judgment]
 first-seen: tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5
-sources: [tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-11-02
-updated: 2026-11-09
+updated: 2026-11-13
 ---
 
 # 비용 대비 점수 프런티어
@@ -66,3 +66,7 @@ updated: 2026-11-09
 - [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]] — first-seen
 - [[openai-terra]] · [[claude-opus-5-5]] · [[nick-saraev]]
 - 관련: [[true-cost-to-perfect-answer]] · [[pareto-surfing]] · [[model-mixing-economics]] · [[document-parsing-for-agents]] · [[inference-speed-as-capability]] · [[taste-vs-judgment]]
+
+## 2026-11-13 — 벤더 가이드의 측정 절차 ([[tech-bridge-addy-osmani-which-claude-model]])
+
+[[addy-osmani|Addy Osmani]] 모델 선택 가이드 해설(⚠️ 원 글 미열람)도 이 그래프로 끝난다: *"공개 벤치마크는 출발점일 뿐입니다."*(08:22~08:24) 실제 작업 · 통과 기준 → 후보 모델을 effort 두세 단계로 → 작업마다 비용 기록 → 점수와 지출 그래프 → 이긴 구성을 실제 트래픽 일부에 먼저. 설명란은 영상 속 그래프의 점과 일부 비용 막대가 *비율만 나타낸 예시* 라고 밝힌다. 사례 수치(Frontier Code 2.0 · Terminal-Bench 3.0 · SWE-bench Pro)는 [[true-cost-to-perfect-answer]] · [[reasoning-effort-levels]]에 있다.

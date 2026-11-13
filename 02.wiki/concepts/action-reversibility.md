@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [reversibility, blast-radius, sandbox, trust, undo]
 aliases: [가역성, undo 없음, 폭발 반경, one-way door, two-way door]
-related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns, shaping-the-build]
+related: [agent-governance-layers, knowledge-work-agent-gap, agentic-misbehavior, trusted-throughput, deny-and-continue, black-box-agent-approach, no-silent-write, build-time-vs-runtime-tools, secure-tool-evolution, risk-proportional-human-review, product-polish-patterns, shaping-the-build, human-loop-roles-relocation]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-railway-polished-internal-tools, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
 created: 2026-09-09
-updated: 2026-11-02
+updated: 2026-11-13
 ---
 
 # 행동 가역성
@@ -112,3 +112,11 @@ Composio 편이 *코드 vs 지식 노동* 으로 가역성을 갈랐다면, 이�
 - **[Anthropic]**(AI Labs 전달) *"The Claude code team can undo almost anything they release in minutes, and that's what lets them read less."*(11:40~11:46) — 되돌림 속도가 **리뷰 깊이의 예산**이 된다. 같은 영상의 위험 등급도 축이 같다: 돈 · 잠금 · 남의 데이터 노출은 *"You can't take those back once they happen. So, those changes are high risk."*(09:34~09:38)
 - **[AI Labs]** 개인 개발자 판본은 Git: 기능마다 브랜치, CLAUDE.md에 *"use Git and make its own branch for each feature. It should also save every version that works."*(13:43~13:50), fix-a-bug 스킬이 버그를 재현해 원인 추정을 확인한 뒤 고치거나 이전 버전으로 롤백(13:24~13:57).
 - ⚠️ "몇 분"은 발표자 전달이고 측정 없음. → [[risk-proportional-human-review]]
+
+## 2026-11-13 — 거절 규칙을 붙일 곳: *되돌릴 수 있는가?* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
+
+[[lydia-hallie|Lydia Hallie]](Anthropic Claude Code 팀) 발표 해설은 가역성을 **사람 승인이 아니라 하드 거절 규칙을 붙일 기준** 으로 쓴다. 코드를 잘못 썼다면 git으로 되돌리면 되니 모델에 맡기고, *"하지만 영어지는 것, 비밀값이 드러나는 것, 바깥으로 나가는 것은 되돌릴 수 없습니다. 이런 건 규칙으로 만듭니다."*(04:08~04:14)[=지워지는 것(추정)] 예: auto mode가 기본 허용하는 `.env` 읽기를 거절 규칙 한 줄로 막는다.
+
+- 리디아의 *질문 하나* 원문은 무캡션이다(챕터 제목 *거절 → 규칙: 되돌릴 수 있는가?*).
+- 클라우드 세션에서도 같은 선이 남는다 — *"머신은 버리면 되지만 푸시된 커믹과 전송된 메시지는 남습니다."*(05:49~05:51)[=커밋] 머신은 가역, 외부로 나간 것은 비가역.
+- 맺음: *"되돌릴 수 없는 것만 규칙으로 막고 나머지는 환경과 검사에 맡기는 것이었죠."*(08:28~08:33) → [[human-loop-roles-relocation]]

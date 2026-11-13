@@ -3,12 +3,12 @@ title: 완벽한 답까지의 진짜 비용 (True Cost to a Perfect Answer)
 type: concept
 category: theory
 tags: [token-economics, cost, reliability, expected-value, evaluation, token-roles, anthropic]
-aliases: [진짜 비용, 예산 나누기 합격률, 기대 실행 횟수]
-related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing, automatic-model-routing]
+aliases: [진짜 비용, 예산 나누기 합격률, 기대 실행 횟수, 완료한 작업당 비용, cost per completed task, 작업당 비용]
+related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing, automatic-model-routing, reasoning-effort-levels]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-09-18
-updated: 2026-11-02
+updated: 2026-11-13
 ---
 
 # 완벽한 답까지의 진짜 비용
@@ -86,3 +86,17 @@ updated: 2026-11-02
 
 - x축이 **작업당 비용**이라는 점에서 이 페이지의 단위에 한 걸음 가깝다(단가표 ×2 비교였던 Kimi 편보다).
 - 그러나 y축이 평균 점수라면 **합격률 기반 기대 실행 횟수**는 여전히 빠져 있다 — 97%의 "성능"이 *쓸 수 있는 답의 비율* 인지 알 수 없다. 데모 쪽의 *"less than 8/12[=1/12] of the total kind of a dollar usage"*(01:16~01:21)는 수정 요청 없이 끝난 다섯 데모의 실사용 비용으로 보이지만 계산 근거는 미발화. ⚠️ 그래프는 출처 미표기(OpenAI 자료로 추정). → [[cost-vs-score-frontier]]
+
+## 2026-11-13 — 벤더 가이드의 결론 문장 · 전부 low, 실패만 high ([[tech-bridge-addy-osmani-which-claude-model]])
+
+[[addy-osmani|Addy Osmani]]의 Claude 모델 선택 가이드(해설)가 이 페이지의 단위를 **모델 선택의 최종 기준** 으로 쓴다: *"토큰 단가가 아니라 완료한 작업당 비용으로 고릅니다."*(08:54~08:57) ⚠️ 수치는 해설이 옮긴 원 글의 값이고 위키는 원 글을 열지 않았다.
+
+| 사례(해설) | 단가로 보면 | 작업당으로 보면 |
+|---|---|---|
+| Frontier Code 2.0: Fable 5.2 high 45.3% vs Opus 5.5 max 45.5% | Fable이 토큰당 2배 | 점수 거의 같고 Fable 쪽 작업당 비용이 절반 정도 |
+| Terminal-Bench 3.0: Fable 5.1 max 58.0% vs Opus 5.5 high 58.9% | — | Opus가 더 높고 토큰은 절반 |
+| 검색 벤치마크 20문제 | — | 두 문제가 전체 지출의 43% — 가장 어려운 작업의 비용을 따로 볼 것 |
+
+- ⭐ **계단식 재실행** — 결과를 자동으로 확인할 수 있으면 *"전부 로우로 돌리고 실패한 [음악] 작업만 하이로 다시 돌리는 것입니다."*(04:07~04:11) Opus 5.5에서 약 97% 통과 · 작업당 약 17센트 vs 전부 high 95.3% · 29센트. 이 페이지의 *예산 ÷ 합격률* 로 보면 low의 싼 예산에 합격률을 재실행으로 메우는 전략이다(위키의 읽기). 전제는 실패를 기계가 아는 것이다.
+- 측정 절차: 실제 작업 · 통과 기준 → 후보 모델을 effort 두세 단계로 → 작업마다 비용 기록 → 점수 × 지출 그래프([[cost-vs-score-frontier]]) → 실제 트래픽 일부에 먼저. Claude Code에서는 `/model` 로 두 모델에 돌려 `/usage` 를 비교한다.
+- 10-09 Kimchi 편 · 11-02 Saraev 편의 *작업당 비용* 이 실무자 측정이었다면, 이번엔 **모델을 파는 쪽의 가이드가 같은 단위를 권한다.** → [[reasoning-effort-levels]]

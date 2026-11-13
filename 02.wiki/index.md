@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # Index
@@ -180,6 +180,7 @@ updated: 2026-11-12
 - [[theo]] — 개발자 · 유튜버(t3.gg), T3 Code · T3 Chat 제작. 전 Twitch(2017년부터 4년). *개발자는 이제 정원사* — 거름(플랫폼 반반) · 지지대(PR마다 수치 검사) · 잡초(테스트 43% 삭제). 마찰은 에이전트를 더 세게 막는다 ([[tech-bridge-theo-coding-is-gardening]]) ⚠️ 본인 음성 캡션 없음, 해설 전달 · 이전 네 소스에서 이름 · 제품만
 - [[chase-ai]] — Claude · Claude Code 활용 유튜브 채널 Chase AI의 Chase(설명란 근거, 발화에 이름 없음). Fable 5.2 공식 프롬프트 가이드 · 시스템 카드를 읽은 *바뀐 프롬프트 규칙 10가지* ([[tech-bridge-chase-ai-fable-5-2-prompting-rules]]) ⚠️ Harrison Chase와 다른 사람
 - [[alex-karp]] — Palantir 공동창업자 · CEO, 사회 이론 박사. *AI는 일자리를 늘리지만 격차를 키운다*, 부유세는 감시 때문에 반대 · 상속세 50% + 정부 낭비 맞교환, 전장 AI의 국내 사용 금지 ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 원음 거의 무캡션 · 해설 요약, 당사자 인센티브
+- [[lydia-hallie]] — Anthropic Claude Code 팀. AI Engineer Code Summit *Rethinking Claude Code Best Practices* — 사람이 하던 다섯 가지 일(조종 · 승인 · 거절 · 확인 · 시작)이 어디로 옮겨 갔나, 거절 규칙의 기준은 *되돌릴 수 있는가?* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]) ⚠️ 원음 무캡션 · 해설 요약
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -294,6 +295,8 @@ updated: 2026-11-12
 - [[minimax-m3]] — [[minimax|MiniMax]] 오픈소스 모델. 코딩+비전+**100만 토큰**을 동시에. [[sparse-attention|MSA]] · [[native-multimodal-pretraining|native multimodality]] (sources: 1) ⚠️ 파라미터 수치가 소스 내부에서 3중 불일치, 벤치마크 전무
 - [[kimi]] — Kimi K3.1 Pro(+ 하네스 Kimi Code · 앱 swarm). Opus 5.5와 같은 프롬프트 데모 비교: 평균 29분 41초 vs 47분 2초, *"more consistent despite its lower quality"*, 입력 $2 · 출력 $10 per 1M(화자 진술). 이전 언급(2.6 · K2.7 · Cursor)도 모음 ([[tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5]]) ⚠️ 제작사 · 공개 가중치 미발화 · 가격 미확인
 - [[fable-5-2]] — Claude Fable 5.2(2026-11-09 공개)와 같은 모델의 안전장치 없는 판 Mythos 5.2. 입력 $8 / 출력 $40, Opus 5.5 대비 코딩 약 10% · 로봇 · Remote Labor Index는 큰 폭, 에이전트 1,000개의 운영체제 · 페르마 형식화, AI R&D 능력은 일부러 덜 키움, 대부분 일은 Opus 5.5부터 ([[tech-bridge-claude-fable-5-2-announcement]]) ⚠️ 발표문의 해설 전달, 원문 미열람
+- [[claude-sonnet-5-5]] — Anthropic 중간 등급 Claude. $2/$10(Opus 5.5의 절반) · 컨텍스트 100만 · API 기본 effort high(Claude Code medium). 범위가 정해진 일 · 채팅 · 반복 에이전트 · 워커, Sonnet 5보다 30% 빠름 ([[tech-bridge-addy-osmani-which-claude-model]]) ⚠️ 해설 전달
+- [[claude-haiku-5-5]] — Anthropic 최소 · 최속 Claude. $0.10/$0.50 · 10만 토큰 넘으면 5배(유일한 길이별 가격) · API 기본 medium. 분류 · 라우팅 · 대량 처리 · 서브에이전트(Explore를 Haiku로) ([[tech-bridge-addy-osmani-which-claude-model]]) ⚠️ 해설 전달
 
 ### Products
 - [[v0]] — Vercel 앱 생성 제품. 하네스에 엔지니어링 시간 "like 90%"를 쓴 회고 → 지금이라면 기성 하네스 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 회고·추정
@@ -764,6 +767,7 @@ updated: 2026-11-12
 - [[agent-friction-multiplier]] — 느린 개발 서버 · 캐시 TTL · 무거운 CI의 마찰은 사람보다 에이전트를 훨씬 세게 막는다(확인할 때마다 곱해짐). 그래서 본전이 안 맞던 재작성(TS → Rust)과 플랫폼 정비가 이제 맞는다 ([[tech-bridge-theo-coding-is-gardening]]) ⚠️ 한 사람의 진술 · 해설 전달
 - [[waterfall-model]] — 워터폴. Royce 1970 논문은 그림 아래 *위험하고 실패를 부른다* 고 썼고 되먹임 화살표 · *두 번 하라* 를 처방했다, 이름은 1976년 Bell & Thayer. SDD 논쟁의 기준점 ([[tech-bridge-sdd-vs-waterfall]] · [[tech-bridge-kent-beck-craft-augmented-development]]) ⚠️ 논문 미열람, 해설 · 화자 기억
 - [[ai-sovereignty]] — AI 주권. 외부 모델 회사에 데이터 · 역량을 넘기지 않겠다는 주장이자 판매 언어(Palantir *언어 모델 연구소의 속국*). 근거로 든 *Anthropic이 고객 데이터로 학습* 은 약관 문구와 다름(해설) ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 판매자의 언어
+- [[human-loop-roles-relocation]] — 사람의 다섯 가지 일 이양. 조종 → 모델(CLAUDE.md는 저장소로 알 수 없는 것만) · 승인 → auto mode(사람 14% vs 89%) · 거절 → 되돌릴 수 없는 것만 규칙 + 샌드박스 · 클라우드 세션 · 확인 → 훅(exit 2) · 시작 → CI · Claude 리뷰 · 지휘자 세션. *대부분은 모델, 보장은 하네스* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]) ⚠️ 해설 요약
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1042,10 +1046,12 @@ updated: 2026-11-12
 - [[tech-bridge-alex-karp-wealth-tax-surveillance]] — 한국어 해설(8:35, 챕터 11, Korean original · AI 내레이션, ko-orig `variant=gemini`, Karp 원음 일곱 곳 무캡션, 2026-11-11 18:00 KST): [[alex-karp|Alex Karp]] × Walter Isaacson(2026-08) — 100배와 5%, 3년 무매출 vs S-1, 난독증 · 아웃사이더, 격차는 AI가 키운다, 부유세 반대 네 가지(감시), 상속세 50% · 맞교환, 실리콘밸리가 깬 계약, 데이터 학습 주장 vs Anthropic 약관, [[ai-sovereignty|AI 주권]], 법적 근거가 있는 감시, 지능 이후 ⚠️ 1차 출처 미열람
 - [[tech-bridge-sdd-vs-waterfall]] — 한국어 해설(8:38, 챕터 9, Korean original · AI 내레이션, IBM 원음 네 곳 무캡션, 2026-11-11 21:00 KST): IBM Technology 영상 + Royce 1970 · Bell & Thayer 1976 · 애자일 선언 · spec-kit · Kiro · Marmelab · Kent Beck · Böckeler · Brooker — 계단이 아니라 고리, spec-first · spec-anchored · spec-as-source, 비밀번호 재설정 스펙, 왜 지금인가(유지 비용), 가볍고 진화하는 스펙, *두 번 하라* → [[waterfall-model]] ⚠️ 원문 미열람, 해설 번역
 - [[tech-bridge-chase-ai-fable-5-2-prompting-rules]] — [한글자막] 재게시(10:22, 챕터 13, 영어 원음만 · ko는 기계 번역, 2026-11-12 07:00 KST): [[chase-ai|Chase AI]]의 [[fable-5-2|Fable 5.2]] 프롬프트 규칙 10가지 — high부터, 증명하게, 끝까지, 옛 CLAUDE.md 정리(규칙을 글자 그대로 따름), 생각하지 말라는 안 통함, 추론 과정 캐묻기는 증류 분류기, 코드의 주인, 서브에이전트는 알아서, 중간 보고, 말투 · 길이는 프롬프트로 → [[reasoning-effort-levels]] · [[prompt-debt]] ⚠️ 가이드 · 시스템 카드 미열람
+- [[tech-bridge-addy-osmani-which-claude-model]] — 한국어 해설(9:01, 챕터 9, Korean original · AI 내레이션, ko-orig `variant=gemini`, 원음 발췌 없음, 2026-11-12 18:00 KST): [[addy-osmani|Addy Osmani]] claude.dev 모델 선택 가이드 — 기본 Opus 5.5 medium, 네 모델 가격 · 기본 effort 표, 백로그 네 장 배정, 모델보다 effort 먼저(SWE-bench Pro · Frontier Code 2.0 · Terminal-Bench 3.0), 전부 low · 실패만 high(97% · 17센트), 캐시는 모델에 묶임, 서브에이전트 · 워커 · 어드바이저, 400 오류 세 가지, 내 작업으로 측정 → [[true-cost-to-perfect-answer]] · [[reasoning-effort-levels]] ⚠️ 원 글 미열람
+- [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]] — 한국어 해설(8:48, 챕터 10, Korean original · AI 음성, en-orig 없음, 발표 원음 무캡션, 2026-11-13 07:00 KST): [[lydia-hallie|Lydia Hallie]] *Rethinking Claude Code Best Practices* — 사람 14% vs auto mode 89%, 하루 머지 2,500 → 3만, 다섯 가지 일, CLAUDE.md에서 지울 것, 믿는 대상 평문 설정, *되돌릴 수 있는가?* 거절 규칙, 샌드박스(셸만) · 클라우드 세션, 검증 지점 · 훅 exit 2, CI · 새 컨텍스트 리뷰 · 위험도별 0/1/2명, 지휘자 세션(Fable) · 스레드(Opus 5.5) → [[human-loop-roles-relocation]] ⚠️ 원 발표 미열람
 
 ## 통계
 
-- 총 페이지 수: 1006 (997 → 1006, + 2026-11-12 Tech Bridge 3편(11-11 업로드 — Fable 5.2 프롬프트 규칙 · SDD vs 워터폴 · Alex Karp 부유세): source 3 · entity 3(chase-ai · alex-karp · palantir) · concept 3(reasoning-effort-levels · waterfall-model · ai-sovereignty) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1006과 일치)
+- 총 페이지 수: 1012 (1006 → 1012, + 2026-11-13 Tech Bridge 2편(11-12 업로드 — Claude 모델 선택 가이드 · Claude Code 모범 사례 재작성): source 2 · entity 3(lydia-hallie · claude-sonnet-5-5 · claude-haiku-5-5) · concept 1(human-loop-roles-relocation) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1012와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-12 (Tech Bridge **3편** — 11-11 업로드 [[tech-bridge-alex-karp-wealth-tax-surveillance|알렉스 카프가 부유세는 반대하는 이유]](`-5fivnqRY4g`) · [[tech-bridge-sdd-vs-waterfall|SDD는 워터폴의 귀환일까]](`7v-QcSBFsUs`) · [[tech-bridge-chase-ai-fable-5-2-prompting-rules|Fable 5.2 프롬프트 규칙 10가지]](`UZflKPqs514`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-11 (Tech Bridge **2편** — 11-10 업로드 [[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개]](`k-hBhaO46v8`) · [[tech-bridge-theo-coding-is-gardening|개발자는 이제 정원사?]](`cju5CR-2ZvA`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-13 (Tech Bridge **2편** — 11-12 업로드 [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]](`M_yjL9qgwDo`) · [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]](`7Yj-f3izMbE`). `AYCGbCxXHMU` 멤버 전용 신규, `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-12 (Tech Bridge **3편** — 11-11 업로드 [[tech-bridge-alex-karp-wealth-tax-surveillance|알렉스 카프가 부유세는 반대하는 이유]](`-5fivnqRY4g`) · [[tech-bridge-sdd-vs-waterfall|SDD는 워터폴의 귀환일까]](`7v-QcSBFsUs`) · [[tech-bridge-chase-ai-fable-5-2-prompting-rules|Fable 5.2 프롬프트 규칙 10가지]](`UZflKPqs514`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)

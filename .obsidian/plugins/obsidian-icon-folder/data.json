@@ -1260,5 +1260,13 @@
   "02.wiki/entities/palantir.md": "LiBuilding",
   "02.wiki/concepts/reasoning-effort-levels.md": "LiPuzzle",
   "02.wiki/concepts/waterfall-model.md": "LiPuzzle",
-  "02.wiki/concepts/ai-sovereignty.md": "LiPuzzle"
+  "02.wiki/concepts/ai-sovereignty.md": "LiPuzzle",
+  "01.raw/articles/2026-11-12_사람은 위험한 명령의 14%만 잡았다 Anthropic Claude Code 팀이 다시 쓴 모범 사례 8분 정리.md": "LiNewspaper",
+  "01.raw/articles/2026-11-12_Fable·Opus·Sonnet·Haiku 어떤 Claude 모델로 만들어야 할까 모델 선택 가이드 9분 총정리.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-addy-osmani-which-claude-model.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-lydia-hallie-rethinking-claude-code-best-practices.md": "LiVideo",
+  "02.wiki/entities/lydia-hallie.md": "LiUser",
+  "02.wiki/entities/claude-sonnet-5-5.md": "LiBot",
+  "02.wiki/entities/claude-haiku-5-5.md": "LiBot",
+  "02.wiki/concepts/human-loop-roles-relocation.md": "LiPuzzle"
 }

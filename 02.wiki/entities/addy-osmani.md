@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, claude-code, software-factory, verification, code-review, accountability]
 aliases: [Addy Osmani, 애디 오스마니, Addy]
 links: []
-sources: [tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-anthropic-30k-merges-verification, tech-bridge-addy-osmani-which-claude-model]
 created: 2026-10-31
-updated: 2026-10-31
+updated: 2026-11-13
 ---
 
 # Addy Osmani
@@ -30,3 +30,9 @@ updated: 2026-10-31
 
 - [[tech-bridge-anthropic-30k-merges-verification]]
 - 관련: [[manish-kapur]](같은 대담) · [[anthropic]] · [[claude-code]]
+
+## 2026-11-13 — Claude 모델 선택 가이드 ([[tech-bridge-addy-osmani-which-claude-model]])
+
+claude.dev 블로그 글 *"Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku"*(2026-11-09, 설명란)의 저자로 두 번째 등장. 결론 세 줄 — Opus 5.5 medium에서 시작, 모델을 바꾸기 전에 effort, 토큰 단가가 아니라 완료한 작업당 비용. 네 모델 가격 · 기본 effort 표, 작업별 배정, 계단식 재실행(전부 low · 실패만 high), 캐시가 모델에 묶이는 문제, 서브에이전트 · 워커 · 어드바이저, 모델 전환 전 400 오류 규칙을 담았다(⚠️ 해설 전달, 원 글 미열람) → [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]] · [[model-mixing-economics]].
+
+- 10-30 편의 소속 근거(*"at Anthropic, like we"*)와 이번 글의 게재처(Claude 개발자 블로그)가 같은 방향이다.

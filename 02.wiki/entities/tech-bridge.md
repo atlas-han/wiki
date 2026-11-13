@@ -178,8 +178,10 @@ sources:
   - tech-bridge-alex-karp-wealth-tax-surveillance
   - tech-bridge-sdd-vs-waterfall
   - tech-bridge-chase-ai-fable-5-2-prompting-rules
+  - tech-bridge-addy-osmani-which-claude-model
+  - tech-bridge-lydia-hallie-rethinking-claude-code-best-practices
 created: 2026-06-03
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 # Tech Bridge
@@ -1693,3 +1695,16 @@ updated: 2026-11-12
 - 원 인터뷰(`m4mV4IClDlM`) · IBM 원 영상(`GpZ5T51jE4U`) · Chase 원 영상(링크 없음) · 설명란의 1차 출처는 미열람.
 
 **멤버 전용**: `ezPSsVW92Mg`(Lauren Tan 10분 정리, 10:14) 지속(목록 범위 안이지만 이번엔 **목록 줄 없이 stderr ERROR로만**, 단건 조회 `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only`). 목록 20편 요청 → 19줄 + ERROR 1.
+
+## 2026-11-12 업로드 — Claude 모델 선택 가이드 · Claude Code 모범 사례 재작성 (2026-11-13 ingest)
+
+[[tech-bridge-addy-osmani-which-claude-model|Fable·Opus·Sonnet·Haiku, 어떤 Claude 모델로 만들어야 할까? | 모델 선택 가이드 9분 총정리]](`M_yjL9qgwDo`, 9:01, 공식 챕터 9) — 한국어 해설, Addy Osmani claude.dev 글 ([[claude-sonnet-5-5]](신규) · [[claude-haiku-5-5]](신규) · [[addy-osmani]] · [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]] · [[model-mixing-economics]] · [[prompt-caching]] · [[cost-vs-score-frontier]] · [[fable-5-2]] · [[fable-5-1]] · [[claude-opus-5-5]] · [[terminal-bench]])
+
+[[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다 | Anthropic Claude Code 팀이 다시 쓴 모범 사례 8분 정리]](`7Yj-f3izMbE`, 8:48, 공식 챕터 10) — 한국어 해설, Lydia Hallie AI Engineer Code Summit 발표 ([[lydia-hallie]](신규) · [[human-loop-roles-relocation]](신규) · [[transcript-classifier]] · [[action-reversibility]] · [[agent-sandboxing]] · [[cloud-agent-delegation]] · [[hook-enforced-workflow]] · [[hard-vs-soft-enforcement]] · [[prompt-debt]] · [[risk-proportional-human-review]] · [[claude-code]] · [[anthropic]])
+
+- 두 편 모두 Korean original · 설명란이 AI 음성임을 밝힌다. 모델 가이드 편은 `ko` = `ko-orig`(`variant=gemini`, Karp 편에 이어 두 번째) + en-orig 영어 더빙, **원음 발췌 없는 순수 내레이션**. 모범 사례 편은 **오디오가 `ko` 하나 · en-orig 없음**(`en`은 기계 번역) — 발표 원음 발췌 다섯 곳 이상이 무캡션이다. 인용은 전부 ko-orig.
+- ⚠️ 모델 가이드 편의 더빙이 모델 버전을 바꾼다(`Opus 3.5` · `Sonnet 3.5` · `Haiku 3.5` · `Fable 2024`, Addy → `Eddie Osman`).
+- `upload_date` 둘 다 20261112 — 모델 가이드 편 18:00 KST, 모범 사례 편 **11-13 07:00 KST**(파일명 · `date-published`는 UTC 날짜).
+- 원 글(claude.dev) · 원 발표(`vlfCjWuv4es`) · 설명란의 공식 문서는 미열람.
+
+**멤버 전용**: `AYCGbCxXHMU`(*프롬프트 200단어로 6주를 일한 AI | OpenAI가 공개한 멈추지 않는 Codex 에이전트 8분 정리*, 8:27, 목록 `upload_date` 20261112) **신규**(목록에선 stderr ERROR로만, 단건 조회 `subscriber_only`). `ezPSsVW92Mg` 지속(stderr ERROR · 단건 `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only`). 목록 20편 요청 → 18줄 + ERROR 2.
