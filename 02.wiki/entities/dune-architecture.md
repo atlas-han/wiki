@@ -3,9 +3,9 @@ title: Dune (GrokBot 아키텍처)
 type: entity
 category: tool
 tags: [architecture, electron, react, ci, agents, grokbot, cursor]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 # Dune
@@ -67,3 +67,7 @@ updated: 2026-10-09
 - **기원** — feature 디렉터리는 *"I'm not going to append to a god file"*(05:40~05:45)에서 나왔고, GrokBot 첫 버전이 **god file 8개**였다. ⚠️ en-orig의 *"at least 100 lines long"*(05:53~05:55)은 god file 치고 작아 자릿수가 의심된다 — 인용하지 않는다.
 - **대가의 다른 진술** — *"frees up your own mental capacity, and the agent doesn't have to think about that anymore"*(05:20~05:30). 09-25 발표의 *"사람에게는 짜증"* 과 **다른 측면**(인지 부하 vs 작성 자유)이라 모순으로 두지 않고 나란히 표시한다.
 - 해설은 이 프레임워크를 *"공개 설치 도구로 받아들이기보다 기능을 추가할 경로를 어떻게 정했는지에 집중"* 하라고 권한다(ko 04:28~04:35). ko는 이름을 *"듀"*, en-orig 내레이션은 이름을 뺐다.
+
+## 2026-11-14 — 한국어 요약: *일렉트론 앱을 위한 Next.js* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+해설 요약: GrokBot은 바이브 코딩 프로토타입이라 코드를 읽는 사람이 없었고, 가드레일이 없으면 에이전트는 그때그때 가장 편한 방법으로 푼다 → 전체를 Dune으로 옮기는 데 PR 600개 이상. Dune 문서의 에이전트 묘사 *"가장 가까운 패턴을 베끼고 이미 열린 파일을 고치고 컴파일 되는 가장 짧은 길을 고른다."*(06:59~07:03) → 원칙 *가장 짧은 길이 가장 좋은 길이 되게*. 기능 하나 = 폴더 하나, `useEffect` · 코드 주석 금지(CI), 렌더러 / 메인 프로세스 폴더 분리와 의존성 그래프 검사(60fps = 16ms). 원음 조각 *"before AI slop we had human slop"*(06:16)이 *빅테크는 사람 때문에 이미 가드레일이 있다* 는 대비의 출발점이다.

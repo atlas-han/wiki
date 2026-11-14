@@ -8,7 +8,7 @@ author: Tech Bridge (한영자막 재배포) · 출연 [[lauren-tan]] ([[cursor|
 date-published: 2026-09-12
 ingested: 2026-09-13
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-11-14
 ---
 
 # Tech Bridge — 에이전트를 실전에서 신뢰하는 법 (Lauren Tan)
@@ -220,3 +220,7 @@ ASR 보정: **ko가 PR을 "개인 최고 기록(Personal Record)"으로 풀어 �
 - 원본: <https://www.youtube.com/watch?v=jLKQp4SgGr0>
 - raw: `01.raw/articles/2026-09-12_Cursor 핵심 개발자 Lauren Tan - AI 에이전트를 실전에서 제대로 신뢰하는 법.md`
 - 관련: [[agent-trust-curve]] · [[agent-verification-skill]] · [[feature-map]] · [[skill-evals]] · [[hard-vs-soft-enforcement]] · [[shortest-path-architecture]] · [[greenfield-vs-brownfield-agent-risk]] · [[organic-architecture]] · [[agent-manager-analogy]] · [[dune-architecture]] · [[pstack]] · [[lauren-tan]] · [[cursor]] · [[grokbot]] · [[grok-4-6]] · [[verification-bottleneck]] · [[tech-bridge-mousepower-measuring-agents]] · [[tech-bridge-grokbot-agent-teams]] · [[tech-bridge-cursor-legacy-refactoring]]
+
+## 2026-11-14 — 녹화 달에 대한 새 단서 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+위 *⚠️ 이 소스가 위키의 기존 시점 추정을 흔든다* 가 남겨 둔 달에 대해: 11-13 업로드된 한국어 10분 요약의 설명란이 바탕 워크숍을 **Maven, 2026-08-12** *"How Cursor Turned AI Agents Into Better Engineers"* 라고 적는다. 이 소스가 확정한 *그달의 12일* · *08-31 업로드 이전* 과 모순이 없고, 요약의 *한 시간짜리 워크숍* · control glass · Benny · feature map · `useEffect`/주석 금지 · 다섯 층 · *7월 PR 거의 1,000*(= 이 소스의 *지난달 1,000*)이 겹친다. → **같은 워크숍이라면 녹화일은 2026-08-12, Grok 4.6 발표일도 08-12.** ⚠️ 진행자 이름 · 원본 영상 id 같은 직접 증거가 없어 위키는 *유력(추정)* 으로 표시만 하고 위 처리(*어느 날짜도 채택하지 않는다*)를 바꾸지 않는다. Maven 페이지는 열지 않았다.

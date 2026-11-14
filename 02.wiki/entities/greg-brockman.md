@@ -7,9 +7,9 @@ aliases: [Greg Brockman, 그렉 브록먼]
 links:
   - https://x.com/gdb
   - https://gregbrockman.com/
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-brockman-start-building-before-ready, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-brockman-start-building-before-ready, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-openai-gpt-6-cyber-keynote]
 created: 2026-09-20
-updated: 2026-11-02
+updated: 2026-11-14
 ---
 
 # Greg Brockman
@@ -102,3 +102,7 @@ Silicon Valley Girl(진행자 이름 미발화, 설명란 판독)과의 29:22 �
 ## Terra computer use에 대한 반응 — 제3자가 읽은 인용 (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
 
 [[nick-saraev|Nick Saraev]](추정)가 화면의 게시물을 읽는다: *"One of the founders of OpenAI, Greg Brockman over here"*(07:07~07:12) *"says computer use with Terra has crossed a qualitative threshold where it feels faster using a computer than what I can do unassisted"*(07:10~07:17). 10-11 대담의 *computer use가 "closes the last mile"* 과 같은 방향의, [[openai-terra|GPT-6.1 Terra]] 출시 무렵 발언이다. ⚠️ **2차 진술** — 원 게시물 링크 · 날짜 없음, 화자가 요약해 읽었을 수 있다(문장 안의 *"I"* 가 Brockman 1인칭으로 남아 있어 원문 낭독에 가깝게 들린다).
+
+## 2026-11-14 — Cyber 키노트: *13년* 과 *작은 흠* ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+OpenAI 사이버 보안 키노트 *"Cyber at the Frontier"* 의 발표자(해설 전달 — 원음 발췌는 무캡션이라 본인 발언은 위키에 없다). 해설이 기록과 맞춘 두 곳: ① PHP 버그를 발표에서 *13년* 이라 했지만 본인의 10월 글에는 *14년* ② PHP2Shell 조율 실패를 *막판의 작은 흠* 정도로 말했지만 Amazon은 패치 나흘 전 공격을 관측했다. 본인의 평가는 기록과 같은 쪽이다 — *"꽤 느리고 수작업이었고 에이전트 시대에는 통하지 않을 방식"*(02:23~02:28). 10월에는 *정부처럼 권한을 받은 방어자가 인터넷을 훑어 알리고, 극단적인 경우 원격으로 패치까지* 하는 방안을 꺼냈다. → [[discovery-remediation-gap]] · [[gpt-6-cyber]]

@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-13
+updated: 2026-11-14
 sources: []
 ---
 
@@ -295,6 +295,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-11*: [[tech-bridge]] **2편** ingest(11-10 업로드, 둘 다 Korean original · AI 내레이션). [[tech-bridge-claude-fable-5-2-announcement|Claude Fable 5.2 공개]] — [[fable-5-2|Fable]]이 처음으로 스펙(가격 · 벤치마크 · 배포 구조)을 얻는다. 다만 벤더 발표문의 해설 요약이다. 핵심은 같은 발표의 *일부러 덜 키운 능력* 이다 — AI R&D를 앞당길 능력만 훈련에서 억눌렀다 → [[differential-capability-limitation]] · [[automated-ai-research]]. 그러면서도 기본값은 [[claude-opus-5-5|Opus 5.5]]라고 권한다. [[tech-bridge-theo-coding-is-gardening|개발자는 이제 정원사?]] — [[theo|Theo]]가 [[codebase-gardening]]에 거름 · 지지대 · 잡초라는 손질 셋을 붙이고, 테스트 43%를 **지우는 것**을 정원 일의 대표로 든다. 마찰은 에이전트에게서 곱해진다 → [[agent-friction-multiplier]] · [[ai-slop]](이전 모델의 슬롭이 다음 모델을 막는다).
 - *2026-11-12*: [[tech-bridge]] **3편** ingest(11-11 업로드). [[tech-bridge-chase-ai-fable-5-2-prompting-rules|Fable 5.2 프롬프트 규칙 10가지]] — [[chase-ai|Chase AI]]가 시스템 카드를 읽어 [[fable-5-2|Fable 5.2]]의 성질(규칙을 글자 그대로 따름 · 늘 생각함 · 추론을 사실로 말함 · 일찍 멈춤)과 처방을 정리한다. [[prompt-debt]]의 두 번째 소스이고, *강도로 바꿀 것과 프롬프트로 바꿀 것* 의 분업이 [[reasoning-effort-levels]]로 정리된다. [[tech-bridge-sdd-vs-waterfall|SDD는 워터폴의 귀환일까]] — [[spec-driven-development]]의 *그건 폭포수다* 논쟁에 한 편을 통째로 쓴 첫 소스. 구분선은 *스펙으로 돌아가느냐* 이고, 원조 논문 자체가 되먹임과 *두 번 하라* 를 처방했다 → [[waterfall-model]]. [[tech-bridge-alex-karp-wealth-tax-surveillance|알렉스 카프가 부유세는 반대하는 이유]] — [[ai-jobs-impact]]에 *일자리는 늘고 격차는 커진다* 는 입장이 들어오고, [[palantir|Palantir]]의 [[ai-sovereignty|AI 주권]] 이 [[in-house-ai-data-boundary]]의 판매 언어 판으로 붙는다. 해설이 Karp의 주장을 S-1 · Anthropic 약관과 대조한다.
 - *2026-11-13*: [[tech-bridge]] **2편** ingest(11-12 업로드, 둘 다 Anthropic 쪽 실무 가이드 해설). [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]] — [[addy-osmani|Addy Osmani]]의 가이드로 위키에 처음 네 모델의 가격 · 기본 effort 표가 들어오고([[claude-sonnet-5-5|Sonnet 5.5]] · [[claude-haiku-5-5|Haiku 5.5]] 신규, [[claude-opus-5-5|Opus 5.5]] $4/$20), *모델보다 effort 먼저 · 완료한 작업당 비용* 이 [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]]에 벤더 판으로 붙는다. [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]] — [[lydia-hallie|Lydia Hallie]]가 사람이 하던 다섯 가지 일을 모델 · 하네스 · 환경에 나눠 준다 → [[human-loop-roles-relocation]]. *대부분은 모델, 보장은 하네스* 이고, 하드 규칙은 [[action-reversibility|되돌릴 수 없는 것]]에만 건다. [[agent-sandboxing]]에 *셸 명령만 덮는다* 는 경계가 처음 기록된다.
+- *2026-11-14*: [[tech-bridge]] **3편** ingest(11-13 업로드). [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber 키노트 대조]] — 위키의 보안 줄기에 처음 *기록 대조형* 소스가 들어온다: 자율 파이프라인 1회 948개와 PHP2Shell 버그 하나에 두 달이 나란히 놓이며 [[discovery-remediation-gap|찾기와 고치기의 속도 차]](신규)가 개념이 되고, 09-20의 패턴 [[defense-factory]]가 Daybreak Defense Factory라는 제품 이름이 된다. 슬라이드와 문서의 점수 차(52.6% vs 48.45%)도 기록된다. [[tech-bridge-lauren-tan-agents-merge-own-prs|Lauren Tan 10분 정리]] — 새 내용은 적지만 설명란의 *Maven 2026-08-12* 가 09-12 워크숍의 남은 *달* 에 유력한 답을 준다(추정, 미확정). [[tech-bridge-jensen-huang-resignation-timeline|Jensen Huang 사임 14일]] — 위키의 [[jensen-huang]] · [[nvidia]]가 사임 이후로 넘어간다(임시 CEO [[colette-kress|Colette Kress]]). 사임 이유는 공식 발표에 없고 의혹은 보도 단계로만 둔다. *AI 산업 → NVIDIA → 한 사람* 이 [[key-person-risk]](신규)로 정리된다.
 
 ---
 

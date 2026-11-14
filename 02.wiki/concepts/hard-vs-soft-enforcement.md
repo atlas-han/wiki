@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction, human-loop-roles-relocation]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-11-13
+updated: 2026-11-14
 ---
 
 # 하드 강제와 소프트 강제
@@ -179,3 +179,7 @@ updated: 2026-11-13
 ## 2026-11-13 — *대부분* 과 *보장* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
 
 [[lydia-hallie|Lydia Hallie]](Anthropic Claude Code 팀) 발표 해설의 한 문장이 이 페이지의 구분과 같다: *"모델에게 맡기면 대부분 잘되지만 보장은 아닙니다. 보장은 한스에서만 걸 수 있습니다."*(03:36~03:41)[=하네스] 하드 쪽 장치는 거절 규칙(되돌릴 수 없는 것만) · 샌드박스(OS 강제) · 훅(exit 2) · CI이고, 소프트 쪽은 모델 · CLAUDE.md · auto mode 분류기(89%) · 프롬프트다. → [[human-loop-roles-relocation]]
+
+## 2026-11-14 — 한국어 요약의 다섯 층 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+Lauren의 다섯 층을 한국어 요약이 다시 센다: 코드베이스 · 정적 분석 · 규칙과 bugbot(판독 추정) · 스킬 · 스타일 가이드. *"이 중 위에 두 층만 CI를 빨갛게 만듭니다."*(08:13~08:15) 그리고 *"사람이 PR에 댓글로 이러지 마세요라고 다는 순간을 코드 냄새로 보라는 겁니다."*(08:40~08:44) 맺음 질문 — *"오늘 어떤 리뷰 댓글 하나를 규칙으로 바꿀 수 있을까요?"*(10:10~10:12)

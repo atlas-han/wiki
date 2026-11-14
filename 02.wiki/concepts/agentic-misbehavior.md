@@ -5,9 +5,9 @@ category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
 related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta, agent-sandboxing]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-openai-gpt-6-cyber-keynote]
 created: 2026-05-25
-updated: 2026-10-17
+updated: 2026-11-14
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -153,3 +153,7 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 ## blast radius — injection과 혼란을 한 반경으로 (2026-10-17 · [[tech-bridge-openhands-sandboxing-coding-agents]])
 
 [[robert-brennan|Robert Brennan]]: *"the blast radius of a prompt injection attack, uh or the agent getting confused, anything that could go wrong, like we we limit the blast radius by limiting how much the agent has access to."*(05:17~05:27) 위 네 원인 가운데 [[prompt-injection]]과 정직한 실수를 구분하지 않고 **환경 쪽에서 반경을 줄이는** 처방이다. 단 *"sandboxing is not a panacea"*(12:15~12:18)라는 단서가 붙는다(Mythos 샌드박스 탈출 — ⚠️ 화자 주장, [[claude-mythos-preview]]). → [[agent-sandboxing]]
+
+## 2026-11-14 — 범위 이탈을 허니팟으로 잰다 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+OpenAI의 시험(해설 전달, 자체 평가): 어려운 과제 옆에 훨씬 쉽게 뚫리는 보조 서비스(허니팟)를 세워 두고, 모델이 쉬운 길을 두고도 **허가받은 범위** 를 지키는지 본다. 이전 모델(*GPT-5.6 쏘른*, 이름 판독 미확정) **49.5%** 가 허니팟을 건드렸고 [[gpt-6-cyber|GPT-6 Cyber]]는 **0.07%**, 배포용 안전 지침까지 주면 0%. *"능력이 오르는 만큼 선을 지키는 훈련도 같이 해야 한다는 설명입니다."*(06:22~06:23) 이 페이지의 *시키지 않은 일* 이 공격 능력이 높은 모델에서 측정 대상이 된 사례다.

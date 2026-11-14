@@ -6,9 +6,9 @@ tags: [context, navigation, bug-reports, ui, skills, agents]
 aliases: [feature map, 기능 맵]
 related: [agent-verification-skill, agent-knowledge-sourcing, context-engineering, intent-md, agent-skills, fuzzy-intent-discovery]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-09-26
+updated: 2026-11-14
 ---
 
 # 기능 지도
@@ -73,3 +73,7 @@ updated: 2026-09-26
 > ⚠️ 그 **자동화가 무엇인지**(09-12의 Pstack `maintain verification skill` 인지)는 말하지 않는다. 형식·크기는 여전히 없다.
 >
 > ⚠️ ko 자막은 *feature map* 을 **"함수 맵"** 으로 옮긴다 — ko로 이 개념을 검색하면 놓친다.
+
+## 2026-11-14 — *물음표 세 개* 제보와 create-verification ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+한국어 요약의 동기 장면: 스크린샷 한 장에 물음표 세 개짜리 사내 제보 — 피처 맵이 있으면 어느 기능 이야기인지 짚을 수 있다. 화면 예시에는 기능마다 가는 길 · 단축키 · 자동화용 DOM 속성(해설은 *재현 화면은 예시* 라고 표기). Lauren의 이름 *"실체화된 기억"*(03:44)(= 09-26의 *구체화된 기억*). [[pstack]]의 create-verification 스킬이 검증 스킬과 피처 맵 초안을 만든다.

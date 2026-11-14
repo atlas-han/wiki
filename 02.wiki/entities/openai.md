@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-11-10
+updated: 2026-11-14
 ---
 
 # OpenAI
@@ -235,3 +235,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## Peter Steinberger 합류 — 다음 세대 개인 에이전트 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
 
 해설 전달: [[openclaw|OpenClaw]] 제작자 [[peter-steinberger|Peter Steinberger]]가 2026년 2월 합류했다. *"올해 2월 샘 몰트먼이 직접 그의 합류를 알렸습니다. 다음 세대 개인 에이전트를 이끌 사람이라고 그리고 천재라고요."*(00:41~00:48) 같은 해 DevDay의 상시 가동 개인 에이전트 [[openai-dots|Dots]]와의 관계는 이 소스가 말하지 않는다. ⚠️ Altman 게시물은 위키가 열지 않았다.
+
+## 2026-11-14 — GPT-6 Cyber와 Daybreak 두 제품 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+사이버 보안 키노트 *"Cyber at the Frontier"* 에서 [[gpt-6-cyber|GPT-6 Cyber]]와 [[openai-daybreak|Daybreak]] Red Team · Defense Factory를 발표(해설 전달). 보안 연구 리드 Clint Gibler의 948개 게시물(11-04), 배포 안전성 문서(키노트 일주일 전)가 함께 나왔다. 해설은 슬라이드와 문서의 점수 차(52.6% vs 48.45%)와 *찾는 모델을 만드는 회사가 막는 제품도 파는 구도* 를 짚는다.

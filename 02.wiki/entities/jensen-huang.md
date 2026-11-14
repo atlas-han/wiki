@@ -5,9 +5,9 @@ category: person
 tags: [nvidia, ceo, gpu, ai-infrastructure, physical-ai, g20, korea]
 links:
   - https://www.nvidia.com/
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-jensen-huang-resignation-timeline]
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 # Jensen Huang
@@ -129,3 +129,16 @@ AI 공장·5단 케이크(이번엔 **진행자가 열거**)·종말론 거부·
 - 진행자 이름(주주 장 / *Julie*), 행사 날짜, 상 이름.
 - 진행자 수치(자사주 1,500억·총 2,350억 달러, 금융사 5곳 약 5천억 달러, Ezra Klein 대담·NYT 헤드라인) — 미확인.
 - *"open agent safety platform"* 의 공식 명칭·문서.
+
+## 2026-11-12 사임 — 첫 보도부터 14일 (2026-11-14 · [[tech-bridge-jensen-huang-resignation-timeline]])
+
+> ⚠️ **이 페이지의 위 절들은 모두 사임 이전(2026-09~10) 소스다.** 2026-11-12 NVIDIA는 Jensen Huang이 **사장 · CEO · 이사 자리에서 모두 물러났다, 효력은 즉시** 라고 발표했다(해설 전달 — 뉴스룸 발표, 위키 미열람). *"발표문에는 왜 물러나는지가 한 줄도 없습니다."*(00:26~00:28) 임시 CEO는 CFO [[colette-kress|Colette Kress]].
+
+해설이 나눈 세 등급 그대로 적는다(모두 2026-11-13 오전 KST 기준):
+
+- **확인(본인 · 회사 · 정부)**: 11-08 전 직원 메일 — *"저는 아내에게 충실하지 못했습니다."*(04:45) 상대 · 중국 · 스파이에 대한 언급은 없다. 같은 날 이사회 독립 조사 개시(국가 안보 · 기밀 유출로 볼 이유는 없다, *젠슨과 경영진을 신뢰한다*). 11-04 하원 3개 위원장의 11-18 비공개 브리핑 출석 요청 → 11-11 밤 출석 동의. 11-11 이사회가 사임을 받아들임(SEC 공시).
+- **보도(익명 소식통)**: 10-29 NYT — 미 정보 당국이 [[megaspeed|Megaspeed]] 전 대표를 중국 정보기관이 포섭한 인물로 판단, 그와 가까운 사이 · 11-06 FT — 정부 메모에 연인 관계 · 11-11 NYT — 직접 보고하는 임원과도 관계 · 11-11 WSJ — 회사가 그를 내보낼 준비 · CNBC — 이사회가 내보내기로 결정.
+- **부인 · 해명**: 본인 — Megaspeed와의 거래는 평범했다 · 중국 외교부 *근거 없음* · 싱가포르 정부 *관계나 간첩 혐의를 조사한 적 없다*.
+- ⚠️ *"그의 중국 발언이 이 관계 때문이었다는 증거는 지금까지 나오지 않았습니다. 기소된 사람도 없습니다."*(04:05~04:11)
+
+사임 직전의 정점(해설 전달): 5월 대통령 전용기 방중 동행 · 9월 [[hugging-face|Hugging Face]] 약 130억 달러 인수 결정 · 10-06 주가 239달러 · 유럽 스타트업 80억 달러 투자 · 10-14 Bloomberg 런던 인터뷰(*한 회사에 기대는 건 시스템 전체의 위험* 질문, 승계 시점 *20년 뒤*). 본인 원음은 무캡션이라 위키에 없다. 사임 뒤 본인은 침묵(NYT: 로펌 선임). → [[key-person-risk]]

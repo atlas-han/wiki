@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-01
-updated: 2026-10-24
+updated: 2026-11-14
 ---
 
 # Cursor
@@ -122,3 +122,7 @@ Google 측 에피소드가 [[antigravity|Antigravity]]·[[claude-code|Claude Cod
 ## 하네스에서 지운 것 — Jediah Katz (2026-10-24 · [[tech-bridge-jediah-katz-harness-whats-left]])
 
 Cursor에서 AI 에이전트 도구를 만든 [[jediah-katz|Jediah Katz]]의 AI Engineer 강연(해설 + 발췌). *"at Cursor we found ourselves removing things from the harness, removing prompting, removing guard rails as the models got smarter"* — [[grokbot]]에서는 반대로 다시 넣었다. → [[harness-pruning]]
+
+## 2026-11-14 — Lauren Tan 10분 요약 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+Tech Bridge 한국어 해설이 Lauren Tan의 Maven 워크숍(2026-08-12, 설명란)을 요약한다 — 에이전트 창 성능 작업(입사 둘째 날)과 control-glass, Cursor 클라우드 에이전트와 Benny, *워크트리는 끝났다*. 설명란의 소속 표기는 *Cursor와 Grok Bot을 만드는 SpaceX AI 엔지니어*.

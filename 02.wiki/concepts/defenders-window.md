@@ -3,11 +3,11 @@ title: 방어자의 창 (Defender's Window)
 type: concept
 category: theory
 tags: [security, cybersecurity, dual-use, diffusion, threat-actors, openai]
-related: [defense-factory, ai-vulnerability-discovery, shift-left-security, continuous-security-validation, balance-of-power-safety, pacing-the-frontier]
+related: [defense-factory, ai-vulnerability-discovery, shift-left-security, continuous-security-validation, balance-of-power-safety, pacing-the-frontier, discovery-remediation-gap]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-white-house-superintelligence-panel, tech-bridge-openai-gpt-6-cyber-keynote]
 created: 2026-09-20
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 # 방어자의 창 (Defender's Window)
@@ -103,3 +103,7 @@ updated: 2026-10-09
 
 - 이 페이지가 다뤄 온 창은 **접근**(누가 역량을 먼저 쓰나)이었다. Huang은 접근이 있어도 **모델이 방어 행동을 공격으로 판단해 거부하면** 창이 닫힌다는 측면을 말한다.
 - ⚠️ **반론 없음** — 같은 무대의 [[anthropic|Anthropic]] 공동 창업자 [[tom-brown|Tom Brown]]은 이 대목에서 발언하지 않는다. 판단을 줄인 도구가 **공격자에게도 같이 작동한다**는 반대 측면은 다뤄지지 않는다(이 페이지 *⚠️ 가장 강한 반론* 과 같은 자리).
+
+## 2026-11-14 — 같은 이름, 키노트의 정의 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+키노트에서 OpenAI가 다시 정의한다(해설 전달): *"가장 앞선 모델과 누구나 쓸 수 있게 퍼진 모델 사이의 간격입니다."*(04:18~04:22) 그 간격이 열린 동안 검증된 방어자가 먼저 쓰게 한다는 것이 Daybreak 프로그램의 논리다. 이번 소스가 보탠 것은 **창 안의 또 다른 간격** — 같은 버그의 *발견과 수정 사이* 다. PHP2Shell은 세 팀이 두 달 사이에 각자 찾았고(*"방화자가 찾을 수 있으면 공격자도 찾을 수 있습니다"*(08:19~08:21)[=방어자]), 패치 나흘 전에 공격이 관측됐다 → [[discovery-remediation-gap]]. 창이 열려 있어도 수정이 느리면 방어자의 이점은 줄어든다(위키의 읽기).

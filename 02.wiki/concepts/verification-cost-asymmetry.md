@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
-related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection, three-level-agent-review]
+related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection, three-level-agent-review, discovery-remediation-gap]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-openai-gpt-6-cyber-keynote]
 created: 2026-09-13
-updated: 2026-10-31
+updated: 2026-11-14
 ---
 
 # 검증 비용의 비대칭
@@ -81,3 +81,7 @@ updated: 2026-10-31
 ## 검증 수단을 만드는 비용이 내려갔다 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
 
 [[addy-osmani|Addy Osmani]]: *"Agents can now generate ways for you to check your code much more cheaply than ever before."*(02:36~02:41) 좋은 코드를 가능하게 하던 것 — *"good tests, benchmarks, uh specs"*(02:50~02:54) — 을 에이전트가 더 싸게 만든다는 것이다. 이 페이지의 비대칭(검증이 실행보다 싸다)과는 다른 축이다: **검증 *실행* 비용이 아니라 검증 *수단 제작* 비용**이 내려갔다는 주장이다. 귀결은 ② *비대칭이 있으면 검증도 자동화하라* 와 같다 — *"those checks are one of the most important things we should be spending our time on"*(03:02~03:06). ⚠️ 비용 수치는 없고, *"two to three by like the quality of your outcomes"*(03:21~03:23)도 측정이 없다.
+
+## 2026-11-14 — 보안 쪽의 같은 비대칭: 찾기는 싸고 고치기는 느리다 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+GPT-6 Cyber 키노트 해설의 테제가 이 페이지의 보안 판이다 — 자율 파이프라인 1회 948개 vs PHP 버그 하나 수정 · 배포에 두 달, ExploitBench +24 vs PatchBench +5.6(서로 다른 시험). 별도 개념으로 정리했다 → [[discovery-remediation-gap]]

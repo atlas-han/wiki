@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-01
-updated: 2026-11-03
+updated: 2026-11-14
 ---
 
 # GrokBot
@@ -142,3 +142,7 @@ updated: 2026-11-03
 > ⚠️ **Contradiction: "자체 컴퓨터"는 봇마다인가.** 위 구성 요소 표와 Dan Martell 절(*"Every Grok Bot comes with its own virtual computer"*), Lee Robinson 절(봇마다 virtual desktop)은 봇마다 컴퓨터가 있다고 기록했다. 이 소스는 *"All of your Grokbots share one cloud computer, that's including files, browser sessions, command line credentials."*(10:56~11:02)라고 하고, 그래서 *"If you log a coding CLI in with an API key on one of Grokbot's computers, every bot you have can use that key."*(11:04~11:10)라고 경고한다. 같은 문장 안에 복수형 *"computers"* 가 섞여 있다. 제품 설정이나 시점 차이일 수 있으나 확인하지 않았다. → [[agent-sandboxing]]
 >
 > ASR: en-orig가 07:26~09:38 구간에서 **"Rockbot"**, 나머지는 *"GrokBot"* · *"Grokbot"* 으로 적는다.
+
+## 2026-11-14 — 바이브 코딩 프로토타입 → Dune, 그리고 PM이 코드를 보내는 팀 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+한국어 요약(해설 전달): GrokBot은 프로토타입을 바이브 코딩으로 빠르게 만들었고 코드를 읽는 사람이 없었다 → Dune으로 이전, PR 600개 이상. 보상은 엔지니어가 아닌 사람에게서 먼저 — Grok 4 팀(판독 추정)에선 PM과 디자이너도 코드를 보낸다, *"엄격한 제약이 있으니 엔지니어링 전문가가 아니어도 높은 수준으로 기여할 수 있다"*(09:28~09:31).

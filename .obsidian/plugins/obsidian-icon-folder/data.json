@@ -1268,5 +1268,16 @@
   "02.wiki/entities/lydia-hallie.md": "LiUser",
   "02.wiki/entities/claude-sonnet-5-5.md": "LiBot",
   "02.wiki/entities/claude-haiku-5-5.md": "LiBot",
-  "02.wiki/concepts/human-loop-roles-relocation.md": "LiPuzzle"
+  "02.wiki/concepts/human-loop-roles-relocation.md": "LiPuzzle",
+  "01.raw/articles/2026-11-13_GPT-6 Cyber 리눅스 버그 948개 찾았다… 그런데 고치는 건 버그 하나에 두 달 OpenAI 키노트를 기록과 대조해 봤다.md": "LiNewspaper",
+  "01.raw/articles/2026-11-13_에이전트가 자기 PR을 직접 머지한다 Cursor 엔지니어 Lauren Tan이 에이전트를 믿게 된 방법 10분 정리.md": "LiNewspaper",
+  "01.raw/articles/2026-11-13_젠슨 황 사임 발표문에 이유는 없었다 첫 보도부터 사임까지 14일 날짜순 9분 정리.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-openai-gpt-6-cyber-keynote.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-lauren-tan-agents-merge-own-prs.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-jensen-huang-resignation-timeline.md": "LiVideo",
+  "02.wiki/entities/gpt-6-cyber.md": "LiBot",
+  "02.wiki/entities/megaspeed.md": "LiBuilding",
+  "02.wiki/entities/colette-kress.md": "LiUser",
+  "02.wiki/concepts/discovery-remediation-gap.md": "LiShield",
+  "02.wiki/concepts/key-person-risk.md": "LiBookText"
 }

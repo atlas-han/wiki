@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-01
-updated: 2026-11-11
+updated: 2026-11-14
 ---
 
 # Lauren Tan
@@ -133,3 +133,9 @@ Tech Bridge의 11:36 **해설 영상**이 원본 대담(`MN9dGgmLyso`, 이 위�
 [[theo|Theo]]의 영상을 정리한 해설이 끝에서 Lauren을 부른다: *"리액트 컴파일러 팀의 로렌도 같은 비율로 있었죠."*(05:42~05:43) 설명란은 *"Lauren(@poteto)의 게시물"* 을 링크한다(위키 미열람). ⚠️ *비율*(머지 그래프의 수치)인지 *비유*(정원사)인지 ASR로 정해지지 않는다. 바로 뒤가 *"모든 팀에는 정환사가 필요하다."*(05:43~05:46)[=정원사]라서 비유 쪽으로 읽힌다(위키의 읽기). → [[codebase-gardening]]
 
 09-13 [[tech-bridge-pstack-third-party-review]]의 *"우리 친구 Theo"* 가 그녀의 스킬을 딥다이브했다는 언급과 함께, 두 사람이 서로를 참조하는 고리가 하나 더 생겼다.
+
+## 일곱 번째 소스 — 한국어 10분 요약, 그리고 워크숍 날짜의 단서 (2026-11-14 · [[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+Tech Bridge의 AI 음성 해설(10:14)이 Maven 워크숍 *"How Cursor Turned AI Agents Into Better Engineers"*(설명란 **2026-08-12**)와 본인 글(*The Complete Guide to pstack Pt. 1* · *Loops You Can Trust*)을 신뢰 곡선 순서로 요약한다. 새 원음은 두 조각 — *"I woke up today and there were like 20 PRs landed and I just reviewed them on main"*(00:17~00:22) · *"before AI slop we had human slop"*(06:16, Meta 모노레포 품질에 대한 농담). 해설 전달 수치: 7월 PR 거의 1,000 · 8월 커밋 2,000+ · **9월 PR 2,500**(공개 게시물 조회수 460만+). 설명란의 소속 표기는 *"Cursor와 Grok Bot을 만드는 SpaceX AI 엔지니어"*.
+
+⚠️ 이 Maven 워크숍이 [[tech-bridge-lauren-tan-trusting-agents]](09-12, 59:41)와 같은 것이라면 그 녹화일은 **2026-08-12** 다 — 사례 · 수치가 겹치지만 직접 증거는 없어 *유력(추정)* 으로만 둔다.

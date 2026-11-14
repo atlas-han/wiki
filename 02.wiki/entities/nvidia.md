@@ -5,9 +5,9 @@ category: org
 tags: [gpu, chips, ai-infrastructure, data-center, physical-ai, hardware]
 links:
   - https://www.nvidia.com/
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-jensen-huang-resignation-timeline]
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 # NVIDIA
@@ -80,3 +80,12 @@ CEO [[jensen-huang|Huang]]의 백악관 패널 발언. 진행자가 *"the open a
 - **한국 협력사** — Samsung·SK·Hyundai·Naver(*"most recently. You signed a big package"*)·LG·Doosan(04:22~04:31).
 - **"open agent safety platform"** — *"You just launched a platform this morning (…) to help developers test and deploy"*(12:47~12:55). [[tech-bridge-white-house-superintelligence-panel|백악관 패널]]의 *"open agent safety framework"* 와 같은 발표로 추정(⚠️ 명칭 갈림, 공식 문서 없음).
 - **창립 연도** — LinkedIn *"Nvidia, 1993, present"*(진행자 낭독, 08:50~08:57), Huang *"33 years old, almost 34 years old"*(10:19~10:22).
+
+## 2026-11-12 CEO 교체 — 임시 CEO Colette Kress, 이사회 의장 신설 (2026-11-14 · [[tech-bridge-jensen-huang-resignation-timeline]])
+
+창업 33년 만의 첫 CEO 교체(해설 전달, 위키는 뉴스룸 발표 미열람). [[jensen-huang|Jensen Huang]] 사장 · CEO · 이사 즉시 사임(이유 미기재) → **임시 CEO는 CFO [[colette-kress|Colette Kress]]**, 정식 CEO는 회사 안팎에서 탐색, **이사회 의장 자리를 처음 신설**. 공시 접수 KST 11-12 밤 10시 52분.
+
+- 경위: 10-29 첫 보도(익명 소식통) → 11-08 사과 메일 · 이사회 독립 조사(*젠슨과 경영진을 신뢰한다*) → 11-10 사외 이사들이 전 뉴욕 남부지검장 대행 변호사(이름 판독 미확정)를 조사 책임자로 → 11-11 밤 이사회, 사임 수락. 보도: 작년 [[megaspeed|Megaspeed]]를 살피던 미국 정부 조사에 NVIDIA가 개입했다(NVIDIA: 질문에 답했을 뿐).
+- 주가(해설자가 Yahoo Finance 종가로 계산): 10-06 정점 239달러 → 10-29 −4%+ · 11-05 −9%+(AI 주식 전반, 사건과 별개) · 11-09 −4.3% · 11-11 −5.5%(최고점 대비 30% 가까이) · 11-12 개장 −13% → **166달러(−4.3%)** 마감, 시총 장중 4조 달러 아래(NBC · CNBC). 주주 집단 소송 보도.
+- 다음 일정: 11월 17일(판독 추정) 실적 발표 — Kress 체제 첫 발표. Bernstein 투자 의견 하향(*젠슨이 곧 엔비디아*).
+- *"AI 산업은 엔비디아에 기대고 엔비디아는 한 사람에게 기대고 있었습니다."*(08:11~08:14) → [[key-person-risk]]

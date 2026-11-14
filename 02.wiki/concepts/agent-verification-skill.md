@@ -6,9 +6,9 @@ tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
 related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-11-02
+updated: 2026-11-14
 ---
 
 # 검증 스킬
@@ -119,3 +119,7 @@ updated: 2026-11-02
 - **[Anthropic]**(발표자 전달) *"they ask Claude to run something that proves it works and to show them the result instead of just saying it's done. That can be the app's tests or a screenshot compared with the design."*(02:23~02:32) · [[boris-cherny|Boris Cherny]] 간접 인용 *"give it away[=a way] to prove it did the work right"*(02:38~02:41).
 - **[AI Labs]** 이를 write-eval 스킬로: 기능마다 `eval.md`(검증 방법) + 디자인이 있으면 **목업 페이지**를 먼저 만들어 비교 기준으로 삼고, eval은 **사람이 승인하기 전엔 빌드 금지**, 그리고 *"a hook that makes sure agent doesn't mark the task as done until the evals have passed"*(03:50~03:56). 위 Lauren Tan · Railway 판본이 *구현 후 스스로 돌려 보기* 였다면, 여기는 **구현 전에 검증 기준을 쓰고 사람이 먼저 검토**한다 — 리뷰 부담을 diff에서 eval로 옮긴다.
 - ⚠️ 2차 전달 + 한 번의 시연.
+
+## 2026-11-14 — *사람이 고리 안에 있는 한* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+한국어 요약이 검증의 이유를 한 문장으로 줄인다: *"이 고리 안에 사람이 끼어 있는 한 에이전트를 여러 개 돌릴 방법이 없습니다."*(02:47~02:52) 사람이 빌드를 열고 스크린샷 · 콘솔 오류를 복사해 붙이는 고리를 control-glass(CDP로 개발 빌드 조작 · 스크린샷 · 영상 · CPU 프로파일 · 힙 스냅샷)가 닫는다. 사연은 입사 둘째 날 에이전트 창 성능 작업 — 메모리 4GB 한도로 앱이 먼저 죽고, 에이전트는 자신 있게 틀린 원인을 짚었다.

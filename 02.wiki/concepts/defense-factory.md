@@ -3,11 +3,11 @@ title: 방어 공장 (Defense Factory)
 type: concept
 category: pattern
 tags: [security, automation, pipeline, vulnerability, machine-speed, openai]
-related: [defenders-window, ai-vulnerability-discovery, continuous-security-validation, shift-left-security, all-or-nothing-accuracy, scheduled-agent-automations]
+related: [defenders-window, ai-vulnerability-discovery, continuous-security-validation, shift-left-security, all-or-nothing-accuracy, scheduled-agent-automations, discovery-remediation-gap]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-openai-gpt-6-cyber-keynote]
 created: 2026-09-20
-updated: 2026-09-25
+updated: 2026-11-14
 ---
 
 # 방어 공장 (Defense Factory)
@@ -81,3 +81,7 @@ updated: 2026-09-25
 
 ⚠️ **여전히 채워지지 않은 것**: 잘못된 패치의 **정확성 검증**, **승인 게이트**. 롤백은 *가용성 사고* 에 한정된다 — **기능적으로 틀린 패치**가 장애 없이 배포되는 경우는 말하지 않는다.
 ⚠️ **포화(saturation) 기준과의 긴장**: Brockman은 *"Astra를 겨눴더니 포화됐다"* 고 했는데, 같은 회사의 에이전트가 **자사 Artifactory에서 제로데이 두 개**를 찾았다. 시점 선후가 불명이라(포화 발언이 사건 전인지 후인지) **모순으로 확정하지 않는다.**
+
+## 2026-11-14 — 패턴 이름이 제품 이름이 됐다 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+09-20 Brockman 편의 *방어 공장* 이 **Daybreak Defense Factory** 라는 출시 제품으로 나왔다(해설 전달). 패턴의 핵심이던 *기계 속도의 발견 → 수정 파이프라인* 이 제품에서는 ① 여러 스캐너 결과를 한곳에 모아 중복을 합치고 ② 담당자를 배정하고 ③ *"클라우드 개발 환경에서 코드를 실제로 돌려본다"*(07:10~07:13)는 확인을 거친 뒤 PR을 올리는 형태다. 설정은 PR 리뷰 · 커밋별 감시 · 일일 깊은 스캔 토글 세 개. 같은 키노트의 948개 · PHP2Shell 두 달은 이 제품이 메우겠다는 간격을 보여 준다 → [[discovery-remediation-gap]] · [[openai-daybreak]]

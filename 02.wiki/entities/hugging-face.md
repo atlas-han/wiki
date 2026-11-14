@@ -5,9 +5,9 @@ category: org
 tags: [ml-platform, open-source, incident, ai-safety]
 links:
   - https://huggingface.co/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-minimax-m3-long-context, tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-resignation-timeline]
 created: 2026-09-06
-updated: 2026-09-25
+updated: 2026-11-14
 ---
 
 # Hugging Face
@@ -233,3 +233,7 @@ Musk의 일반화 — *"충분히 똑똑한 모델이라면 누구나 자신의 
 [[jensen-huang|Jensen Huang]]([[tech-bridge-jensen-huang-cbs-interview]])이 *"한 랩은 사이버 보안 사고 네 건, 다른 랩은 몇 건 더"* 를 들어 **새 법이 아니라 기존 법(무단 침입·손해·제조물 책임)** 으로 다루라고 한다. ⚠️ **어느 랩인지 말하지 않는다** — 이 사건을 가리킨다고 이 위키는 추정만 한다.
 
 ⚠️ **ko 자막**: 이 발표에서도 *Hugging Face* 가 **"포옹 얼굴"·"껴안는 얼굴"** 로 네 번(26:06·27:02·27:27·28:08) 깨지고 세 번(00:19·28:15·29:24) 옳다. HF의 *postmortem* 은 **"포스트모던"**.
+
+## NVIDIA의 인수 결정 — 다른 축의 사실 (2026-11-14 · [[tech-bridge-jensen-huang-resignation-timeline]])
+
+[[jensen-huang|Jensen Huang]] 사임 타임라인 해설이 정점의 사례로 한 줄 전한다: *"9월에는 오픈 소스 AI의 중심지인 허깅 페이스를 약 130억 달러에 인수하기로 했습니다."*(01:58~02:02) 위키의 첫 기록이다(해설 전달 — 발표문 · 거래 조건 · 마무리 여부 미확인). 위 사건 서술들(2026-09)과는 다른 축이고, CEO 교체(11-12)가 이 거래에 영향을 주는지는 소스에 없다.

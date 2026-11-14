@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, frontier-model, unreleased, cybersecurity]
 aliases: [Mythos Preview, Mythos-class]
-sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-fable-5-2-announcement]
+sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-fable-5-2-announcement, tech-bridge-openai-gpt-6-cyber-keynote]
 links: []
 created: 2026-05-25
-updated: 2026-11-11
+updated: 2026-11-14
 ---
 
 # Claude Mythos Preview
@@ -64,3 +64,7 @@ updated: 2026-11-11
 - 이 페이지의 *일반 공개 보류 · 파트너 한정* 과 같은 배포 방식이다. 그러나 **Mythos Preview → Mythos 5.2의 관계는 해설이 말하지 않는다.** *"초기 비토스의 39%"*(06:51)(샌드박스 탈출 비율, Mythos 5.2는 3.1%)라는 표현이 이어지는 계보를 시사할 뿐이다.
 - 단백질 구조 예측은 Mythos 5.2의 성과로 귀속된다(05:47~05:53).
 - 더빙은 Mythos 5.2를 `Claude 3.5 Haiku`로 옮긴다(00:43~00:46). 따르지 않는다.
+
+## 2026-11-14 — Mythos 5.2의 첫 공격 벤치마크 수치 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+OpenAI 키노트 발표자가 *이번 주에 나온 Anthropic Mythos 5.2* 를 ExploitBench(판독 추정) 약 38%로 비교에 올렸다. 해설자 대조: Anthropic 시스템 카드에 *869건 중 331건* — 나누면 38%가 맞다. *"다만 같은 조건에서 잰 숫자 인지는 알 수 없습니다."*(04:57~04:58) 같은 표의 [[gpt-6-cyber|GPT-6 Cyber]]는 슬라이드 52.6% · 문서 48.45%. 위키가 가진 Mythos 5.2의 첫 정량 수치다(해설 전달).

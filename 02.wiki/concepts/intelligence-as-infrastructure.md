@@ -3,11 +3,11 @@ title: Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
 type: concept
 category: theory
 tags: [infrastructure, tokens, energy, compute, data-center, sovereignty, nvidia, policy]
-related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation, data-center-local-backlash, orbital-compute]
+related: [compute-constrained-growth, trusted-throughput, token-roles, agi-definition, agent-harness-design, regulatory-capture, power-shortfall, intelligence-abundance, default-legal-regulation, data-center-local-backlash, orbital-compute, key-person-risk]
 first-seen: tech-bridge-jensen-huang-g20-agi
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-jensen-huang-resignation-timeline]
 created: 2026-09-06
-updated: 2026-10-09
+updated: 2026-11-14
 ---
 
 # Intelligence as Infrastructure (지능 인프라 — 5단 케이크)
@@ -137,3 +137,7 @@ Musk가 이 케이크의 **맨 아래 층에 결손**이 있다고 말한다 —
 - ⭐ *"This is the first time in history that a computer is going to be generating information, not just retrieving information. (…) The reason why we call it an AI factory is because we're now producing intelligence."*(03:00~03:19) → *"storing things has value, but manufacturing something valuable has incredible value"*(03:24~03:30). CBS(*에너지 in, 지능 out*)·백악관 패널(*SI factories*)에 이은 **세 번째 판**, 이번엔 **저장 vs 제조**의 대비.
 - **5단 케이크는 진행자가 열거** — 데이터센터(인프라)·에너지·칩·모델·애플리케이션(03:54~04:10). Huang은 층을 세지 않고 *"how do we reinvent every aspect of industry"* 로 답한다. ⚠️ 설명란은 다섯 층을 Huang의 이야기로 적는다.
 - ⭐ **확산론이 한 나라의 칭찬으로** — G20의 *"모든 층을 지을 필요 없다, 확산에 집중"* 이 여기서 *"Korea is (…) singular in your ability to both consume and export AI"*(04:47~04:54)가 된다. 근거는 지난 산업혁명: *"the technology was invented in Europe but diffused in the United States"*(05:40~05:45) — 한국은 발명과 확산을 한 사회에서 할 수 있다(*"social love of technology"*). 그리고 *"With AI and automation, you could punch well above your weight"*(06:11~06:14) — **작은 인구를 지능 인프라로 보충**한다는 논리. ⚠️ 칩 판매자가 주요 고객국(협력사 Samsung·SK·Hyundai·Naver·LG·Doosan)에서 한 덕담이다.
+
+## 다섯 층 모두에 투자한 회사, 그리고 한 사람 (2026-11-14 · [[tech-bridge-jensen-huang-resignation-timeline]])
+
+사임 타임라인 해설이 다섯 층 케이크(에너지 · 칩 · 인프라 · 모델 · 앱)를 다시 꺼낸다 — NVIDIA는 원래 둘째 층이었고 *"지금은 발전소부터 스타트업까지 모든 층에 투자합니다."*(02:14~02:17) 해설은 이 폭을 의존의 폭으로 읽는다: AI 산업 → NVIDIA → 한 사람. → [[key-person-risk]]

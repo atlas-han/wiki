@@ -6,9 +6,9 @@ tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
 related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel, skill-linting]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-11-09
+updated: 2026-11-14
 ---
 
 # 스킬 eval
@@ -121,3 +121,7 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 ## 결정론 쪽의 짝 — 스킬 속 예제를 lint한다 (2026-10-14 · [[tech-bridge-sentry-stop-prompting-codify-linters]])
 
 이 페이지의 방법들은 스킬을 쓴 에이전트의 **행동**을 잰다. [[sentry|Sentry]]의 [[greg-pstrucha|Greg Pstrucha]]는 스킬 안의 **코드 예제 자체**를 type check·샌드박스 실행·OpenAPI 일치로 검사한다(08:17~08:30). 환각 예제가 에이전트 정확도를 *"significantly"* 떨어뜨린 뒤의 대응이다(08:08~08:14, 수치 없음). → [[skill-linting]]
+
+## 2026-11-14 — 시험인 줄 모르게 짓는 폴더 이름 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+Lauren의 eval(*"에이전트를 위한 유닛 테스트"*)을 한국어 요약이 전한다: 조정자 에이전트가 채점 기준을 만들고 서브에이전트 여럿에게 같은 일을 시키며, 채점은 다른 모델이 교차 확인하고 loop 명령으로 10점 만점까지 돌린다. ⭐ 새로 강조된 대목 — 폴더 이름을 **평가받는 중이란 걸 눈치채지 못하게** 지었다. *"에이전트도 시험인 걸 알면 행동이 달라지거든요."*(05:10~05:12) eval 설계에서 *평가 인식* 을 피하는 실무 장치다(위키에 별도 개념 페이지 없음).

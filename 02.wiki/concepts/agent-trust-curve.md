@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-10-17
+updated: 2026-11-14
 ---
 
 # 신뢰 곡선
@@ -109,3 +109,7 @@ Tech Bridge 해설은 원본 대담에서 *"신뢰의 사다리"*(ko 00:57~00:59
 [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"start with something narrow and verifiable, like incident triage. Let your agent read a sentry alert, pull the traces and other context, and then post in Slack, but keep it so your engineers can review this and decide what to do."*(07:06~07:22) 맞은 진단이 쌓이면(*"as more correct diagnoses roll in"* 07:24~07:26) 팀이 신뢰를 쌓는다. 한꺼번에 하면 *"your teams will not have time to build trust in this system."*(07:01~07:05)
 
 사다리의 첫 칸을 **도메인(사고 분류)** 으로 고르는 처방이다. 루프는 마지막이다: *"each step in the software factory needs careful ownership and monitoring before you even think about letting the the pipeline loop"*(07:34~07:43). 거버넌스 쪽 조건도 붙인다: *"you can't govern what you can't see"*(14:33~14:35). ⚠️ 측정은 없다. ko는 *"will not have time to build trust"* 를 "이 시스템을 믿으세요"(07:03)로, *"you can't govern what you can't see"* 를 "보이지 않는 것을 다스릴 수 있다"(14:29~14:33)로 뒤집는다.
+
+## 2026-11-14 — 한국어 요약의 곡선: *지름길은 없다* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+Tech Bridge 10분 요약이 Lauren의 그래프(가로축 동시에 돌리는 에이전트 수, 세로축 신뢰)를 영상의 뼈대로 쓴다. 1년 전엔 몇 개를 붙잡고 모든 출력을 지켜봤고, 다섯 달 동안 곡선을 올라 지금은 에이전트가 PR을 스스로 머지한다. *"지름길은 없다고 합니다. 아직 여기 있으면서 갑자기 수천 개를 띄우면 토큰만 날린다고요."*(01:43~01:47) 계단 순서는 검증 → 피처 맵 → 스킬 · eval → 클라우드 → 에이전트용 아키텍처 → CI 강제. 맺음 질문은 *"여러분은 지금 신뢰 곡선의 어디쯤에 계실까요?"*(10:07~10:09) — 워크숍 진행자도 *아직 로컬에서 두세 개* 단계라고 했다.

@@ -2689,3 +2689,30 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편 · 8~9분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1113/`: `lines.py` · `meta.py` · `gaps.py` · `q.py`(11-12 것 복사) · `build_raw.py` · `merge.py` · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secAB/`). 인용은 `(@)` 자리표시자를 `q.py fill`로 채웠고 `q.py check`로 새 페이지 · 보강 절을 대조해 손으로 적은 시각 1곳을 고쳤다. ⚠️ `gaps.py`는 `[음악]`만 있는 줄도 캡션으로 세서 03:56~04:04 같은 빈 구간을 놓친다 — lines를 눈으로도 볼 것. *완료한 작업당 비용* 을 새 concept로 썼다가 [[true-cost-to-perfect-answer]]와 겹쳐 보강 절로 옮겼다 — 새 개념 페이지 전에 `grep -rli` 로 기존 정의를 먼저 볼 것.
 
+## [2026-11-14] ingest | Tech Bridge — 11-13 업로드 3편 (GPT-6 Cyber 키노트 대조 · Lauren Tan 10분 정리 · 젠슨 황 사임 14일)
+
+목록 `--playlist-end 20` → **18줄 + stderr ERROR 2**(`fq8GI-7bjgc` 신규 멤버 전용 · `AYCGbCxXHMU` 지속). 신규 공개 3편: `P8cP0PDll2Q`(11-13 12:00 KST 게시) · `ezPSsVW92Mg`(**멤버 전용 → 공개 전환**, `upload_date` 20261109 → 20261113, 18:00 KST) · `5WmvC9_wHE0`(11-14 08:00 KST — 이 회차 70분 전). `Yhck-x6VuLs` · `AYCGbCxXHMU` · `fq8GI-7bjgc`는 단건 조회에서 모두 stderr ERROR(members-only) — 이번엔 `subscriber_only` 줄이 아니라 ERROR로 나왔다. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 3 · entity 3 · concept 2**, 기존 페이지 보강 29개(+ tech-bridge), index **1012 → 1020**(실측 일치).
+
+- `5WmvC9_wHE0`(9:07, 챕터 9) → [[tech-bridge-openai-gpt-6-cyber-keynote]]: OpenAI *Cyber at the Frontier* 키노트를 글 기록과 대조. `ko` = `ko-orig`(`variant=gemini`), en-orig 더빙. **키노트 원음 발췌 일곱 곳 무캡션**(두 트랙 모두) — Brockman 발언 내용은 위키에 없다.
+  - 신규: [[gpt-6-cyber]] · [[discovery-remediation-gap]]
+  - 보강: [[openai-daybreak]](Red Team · Defense Factory 표) · [[defense-factory]] · [[defenders-window]] · [[ai-vulnerability-discovery]] · [[coordinated-vulnerability-disclosure]](PHP2Shell 타임라인) · [[agentic-misbehavior]](허니팟) · [[verification-cost-asymmetry]] · [[greg-brockman]] · [[openai]] · [[mozilla]](MFSA 2026-118 41개) · [[claude-mythos-preview]](Mythos 5.2 38%)
+  - ⚠️ 키노트 원본 · 설명란 기록 링크 미열람, 수치는 OpenAI 자체 발표. 벤치마크 이름 *익스플로이즘* → ExploitBench · *패치 벤치* → PatchBench는 표기 추정. 허니팟 비교 모델 *GPT-5.6 쏘른* 판독 미확정.
+  - 페이지화하지 않음: PHP2Shell · Clint Gibler · Calif · Wiz · Sophos · ExploitBench · PatchBench.
+- `ezPSsVW92Mg`(10:14, 챕터 9) → [[tech-bridge-lauren-tan-agents-merge-own-prs]]: Lauren Tan Maven 워크숍(설명란 2026-08-12) AI 음성 요약. **Lauren 원음은 en-orig에 두 조각만**(00:17~00:24 · 06:10~06:16, *before AI slop we had human slop*) — 나머지 발췌 세 곳은 두 트랙 모두 비었다.
+  - 신규 없음(기존 워크숍 소스와 대부분 겹침)
+  - 보강: [[lauren-tan]] · [[agent-trust-curve]] · [[agent-verification-skill]] · [[feature-map]] · [[pstack]](create-verification) · [[skill-evals]](시험인 줄 모르는 폴더 이름) · [[cloud-agent-delegation]](*워크트리는 끝났다*) · [[dune-architecture]] · [[hard-vs-soft-enforcement]] · [[codebase-gardening]](주석은 잡초) · [[grokbot]] · [[cursor]] · [[grok-4-6]] · [[tech-bridge-lauren-tan-trusting-agents]]
+  - ⭐ 09-12 워크숍의 녹화 *달* — 설명란의 **Maven 2026-08-12** 가 *그달의 12일* · *08-31 이전* 과 맞고 사례 · 수치가 겹친다. 같은 워크숍이라는 직접 증거가 없어 **유력(추정)** 으로만 표시, 기존 *어느 날짜도 채택하지 않는다* 는 유지.
+  - 판독 불가: 00:32 *균 덕분에*(도구 이름), 07:39 *그 PR 하나에 한 마리*.
+- `P8cP0PDll2Q`(8:50, 챕터 10) → [[tech-bridge-jensen-huang-resignation-timeline]]: Jensen Huang 사임까지 14일, 확인 / 보도 / 부인 구분(영상 스스로 구분 · 11-13 오전 KST 기준). Bloomberg 인터뷰 원음 다섯 곳 무캡션.
+  - 신규: [[megaspeed]] · [[colette-kress]] · [[key-person-risk]]
+  - 보강: [[jensen-huang]](사임 절 — 위 절들이 사임 이전 소스라는 경고) · [[nvidia]](CEO 교체 · 주가) · [[hugging-face]](NVIDIA 약 130억 달러 인수 결정, 첫 기록) · [[intelligence-as-infrastructure]]
+  - ⚠️ 원 발표 · 성명 · 보도 미열람. **스파이 · 관계 의혹은 보도 단계로만 기록**(기소 없음). 인명 판독 미확정: 조사 책임자 *준 김*, 후임 후보 *이연복 부사장*. 다음 실적 발표 *11 17일* 판독 추정.
+  - 페이지화하지 않음: Alice Huang(의혹 당사자) · Emily Chang · 조사 책임자 · 하원 위원회 · 언론사.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일 11개만).
+
+### 운영 메모
+
+3편 · 9~10분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1114/`: 11-13 스크립트 복사 + `build_raw.py` · `merge.py`(경로 자동 탐색 · 소스 페이지 보강 지원) · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secC/`). `q.py check` 105건, 손으로 적은 시각 4곳 수정 후 불일치 0. ⚠️ **셸 `printf "…"` 안의 백틱은 명령 치환된다** — `` `useEffect` `` 두 곳이 사라져 복구했다. 보강 절은 quoted heredoc(`<<'EOF'`)으로 쓸 것. ⚠️ `q.py check`는 `*"…"*(06:13~06:16, 설명)` 처럼 시각 뒤에 다른 글이 붙으면 대조하지 않는다 — 시각 괄호를 따로 닫을 것.
+

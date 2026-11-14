@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing, human-loop-roles-relocation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-09
-updated: 2026-11-13
+updated: 2026-11-14
 ---
 
 # 클라우드 에이전트 위임
@@ -130,3 +130,7 @@ updated: 2026-11-13
 
 - *"머신은 버리면 되지만 푸시된 커믹과 전송된 메시지는 남습니다."*(05:49~05:51)[=커밋] — 그래서 클라우드에서도 auto mode와 거절 규칙은 그대로 둔다.
 - 맺음 제안: 평소보다 훨씬 큰 일 하나를 클라우드에서 돌려 보고 *내가 어디서 아직 끼어드는지* 보라 — *"그게 바로 다음에 클로드에게 넘겨 줄 일입니다."*(08:43~08:45) → [[human-loop-roles-relocation]]
+
+## 2026-11-14 — *워크트리는 끝났다* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+Lauren의 글을 한국어 요약이 인용한다: *"워크트리는 끝났다. 클라우드 에이전트가 미래다."*(05:52~05:54) Cursor 클라우드 에이전트는 각자 진짜 컴퓨터를 받아 의존성 설치 · 앱 실행 · 화면 조작을 하고, Benny는 버그 제보를 받으면 클라우드에서 재현해 *이미 main에서 고쳐졌다* 는 정보까지 돌려준다. 순서는 **로컬에서 충분히 지켜보고 믿게 된 다음** 이다 → [[agent-trust-curve]] · [[cursor-cloud]]

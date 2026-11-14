@@ -4,10 +4,10 @@ type: entity
 category: product
 tags: [openai, cybersecurity, defense, persistent-agent, enterprise]
 aliases: [Daybreak, 데이브레이크]
-sources: [tech-bridge-altman-benioff-dreamforce]
+sources: [tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-gpt-6-cyber-keynote]
 links: []
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-11-14
 ---
 
 # Daybreak (OpenAI)
@@ -48,3 +48,17 @@ updated: 2026-09-23
 - [[tech-bridge-altman-benioff-dreamforce]]
 - [[openai]] · [[sam-altman]] · [[hugging-face]]
 - 관련: [[defenders-window]] · [[ai-vulnerability-discovery]] · [[defense-factory]] · [[persistent-agent-teams]] · [[tech-bridge-altman-astra-hardware]]
+
+## 2026-11-14 — 두 제품으로 나뉘다: Red Team · Defense Factory ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+
+키노트 *"Cyber at the Frontier"* 에서 Daybreak가 **두 제품** 으로 구체화됐다(해설 전달, OpenAI 자체 발표). 09-23의 *상시 실행 에이전트 · 프로그램인지 제품인지 흐린 경계* 에 답이 붙은 셈이다.
+
+| | Daybreak Red Team | Daybreak Defense Factory |
+|---|---|---|
+| 역할 | 공격자처럼 내 서비스를 두드려 보는 에이전트 도구 | 여러 보안 도구 결과를 모아 중복 합치기 · 담당자 배정 |
+| 차별점 | 데모: 저장된 검색어에 SQL 인젝션 → 내보내기 기능으로 다른 회사의 비공개 문서 획득, 보고서에 원인 구조 · 공격 단계 · 최소 패치 제안 | 클라우드 개발 환경에서 **코드를 실제로 돌려** 발견 · 패치를 확인한 뒤에야 PR |
+| 설정 | — | 토글 세 개: PR 보안 리뷰 · 커밋마다 상시 감시 · 매일 깊은 스캔 |
+| 출시 | 일부 고객 얼리 액세스 · 대기 명단 | 이달부터 |
+
+- 모델은 [[gpt-6-cyber|GPT-6 Cyber]]. 고객 사례 Sophos — 대응 사건 52% 에이전트 완결, 평균 대응 38분 → 89초.
+- ⚠️ The Register의 요약 *안 쓰면 끝장* 과 해설의 단서 — *"취약점을 찾아내는 모델을 만드는 회사가 그걸 막는 제품도 파는 구도입니다."*(08:01~08:04) 09-23 Altman의 *selfishly* 와 같은 이해관계다.

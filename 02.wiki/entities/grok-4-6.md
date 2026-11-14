@@ -3,9 +3,9 @@ title: Grok 4.6
 type: entity
 category: model
 tags: [cursor, spacex, benchmark, cost-efficiency]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-01
-updated: 2026-09-13
+updated: 2026-11-14
 ---
 
 # Grok 4.6
@@ -68,3 +68,7 @@ updated: 2026-09-13
 ## References
 
 - [[tech-bridge-grokbot-agent-teams]] · [[cursor]] · [[persistent-agent-teams]]
+
+## 2026-11-14 — 발표일 08-12 가능성 (추정) ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+09-12 워크숍([[tech-bridge-lauren-tan-trusting-agents]])이 *그날 Grok 4.6을 발표했다* 고 말한 그 워크숍이, 11-13 해설의 설명란이 적은 **Maven 2026-08-12 워크숍** 과 같은 것일 개연성이 높다(사례 · 수치 일치, 직접 증거 없음). 그렇다면 Grok 4.6 발표일은 **2026-08-12** 다. ⚠️ 확정하지 않는다 — 위 절의 *어느 날짜도 채택하지 않는다* 는 유지.

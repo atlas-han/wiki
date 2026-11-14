@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-13
+updated: 2026-11-14
 ---
 
 # Index
@@ -181,6 +181,7 @@ updated: 2026-11-13
 - [[chase-ai]] — Claude · Claude Code 활용 유튜브 채널 Chase AI의 Chase(설명란 근거, 발화에 이름 없음). Fable 5.2 공식 프롬프트 가이드 · 시스템 카드를 읽은 *바뀐 프롬프트 규칙 10가지* ([[tech-bridge-chase-ai-fable-5-2-prompting-rules]]) ⚠️ Harrison Chase와 다른 사람
 - [[alex-karp]] — Palantir 공동창업자 · CEO, 사회 이론 박사. *AI는 일자리를 늘리지만 격차를 키운다*, 부유세는 감시 때문에 반대 · 상속세 50% + 정부 낭비 맞교환, 전장 AI의 국내 사용 금지 ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 원음 거의 무캡션 · 해설 요약, 당사자 인센티브
 - [[lydia-hallie]] — Anthropic Claude Code 팀. AI Engineer Code Summit *Rethinking Claude Code Best Practices* — 사람이 하던 다섯 가지 일(조종 · 승인 · 거절 · 확인 · 시작)이 어디로 옮겨 갔나, 거절 규칙의 기준은 *되돌릴 수 있는가?* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]) ⚠️ 원음 무캡션 · 해설 요약
+- [[colette-kress]] — NVIDIA CFO. 2026-11-12 Jensen Huang 사임과 함께 임시 CEO, 이사회 의장 자리 신설 · 정식 CEO는 안팎에서 탐색 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 해설 전달
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -271,6 +272,7 @@ updated: 2026-11-13
 - [[better-stack]] — 관측(observability) 플랫폼 회사. Claude Code OpenTelemetry를 query source로 묶어 agent summary 비용을 잰 영상의 원 제작자(설명란 근거, 발표자 개인 미상) ([[tech-bridge-better-stack-claude-code-agent-summary-cost]])
 - [[greptile]] — AI 코드 리뷰 제품 회사. 코드베이스 맥락에서 출발, 여러 회사 코드 코퍼스 평가, living wiki, 샌드박스 + computer use 자율 테스트, 프런티어 20% 모델 배분 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]] · [[tech-bridge-death-of-code-review]]) ⚠️ 모두 당사자 진술, 사이트 미열람
 - [[palantir]] — 데이터 통합 · 분석 플랫폼(정보기관 · 국방 출신, Gotham). 창업 2003 · Gotham 2008(S-1, 해설 대조). *AI 주권* 을 사업 언어로 — *언어 모델 연구소의 속국* ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 해설 전달
+- [[megaspeed]] — 싱가포르, 동남아 최대급 NVIDIA 칩 구매사. 미 상무부 수출 규제 조사(보도) · 싱가포르 경찰 조사(증거 불충분) · 전 대표 관련 스파이 의혹은 익명 소식통 보도 단계, 기소 없음 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 해설 전달
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -297,6 +299,7 @@ updated: 2026-11-13
 - [[fable-5-2]] — Claude Fable 5.2(2026-11-09 공개)와 같은 모델의 안전장치 없는 판 Mythos 5.2. 입력 $8 / 출력 $40, Opus 5.5 대비 코딩 약 10% · 로봇 · Remote Labor Index는 큰 폭, 에이전트 1,000개의 운영체제 · 페르마 형식화, AI R&D 능력은 일부러 덜 키움, 대부분 일은 Opus 5.5부터 ([[tech-bridge-claude-fable-5-2-announcement]]) ⚠️ 발표문의 해설 전달, 원문 미열람
 - [[claude-sonnet-5-5]] — Anthropic 중간 등급 Claude. $2/$10(Opus 5.5의 절반) · 컨텍스트 100만 · API 기본 effort high(Claude Code medium). 범위가 정해진 일 · 채팅 · 반복 에이전트 · 워커, Sonnet 5보다 30% 빠름 ([[tech-bridge-addy-osmani-which-claude-model]]) ⚠️ 해설 전달
 - [[claude-haiku-5-5]] — Anthropic 최소 · 최속 Claude. $0.10/$0.50 · 10만 토큰 넘으면 5배(유일한 길이별 가격) · API 기본 medium. 분류 · 라우팅 · 대량 처리 · 서브에이전트(Explore를 Haiku로) ([[tech-bridge-addy-osmani-which-claude-model]]) ⚠️ 해설 전달
+- [[gpt-6-cyber]] — OpenAI 사이버 보안 특화 모델. 리눅스 권한 상승 948개 검증 + 패치(API 120만 달러) · Firefox 재검사 81개 · ExploitBench(추정) 슬라이드 52.6% vs 문서 48.45% · PatchBench 73.5% · 허니팟 0.07% ([[tech-bridge-openai-gpt-6-cyber-keynote]]) ⚠️ OpenAI 자체 발표
 
 ### Products
 - [[v0]] — Vercel 앱 생성 제품. 하네스에 엔지니어링 시간 "like 90%"를 쓴 회고 → 지금이라면 기성 하네스 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 회고·추정
@@ -543,6 +546,8 @@ updated: 2026-11-13
 - [[cost-vs-score-frontier]] — 벤치마크를 비용(x) × 점수(y)로 놓고 '왼쪽 위'를 고르는 읽기. 질문이 "누가 1등인가"에서 "최고점의 몇 %를 몇 분의 1 비용에"로 바뀐다. Terra는 Opus 5.5의 *"about 95 to 97%"*를 *"11% of the cost"*에 → *"leverage"* ([[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]]) ⚠️ 출처 미표기 그래프를 눈대중으로 읽은 값, 소스 1개
 - [[personal-ai-platform-war]] — 경쟁 단위가 앱에서 에이전트로 옮겨 가고 가치가 소수로 모일 수 있다는 구도. 다음 브라우저 전쟁 · 다섯 왕 · 개인 AI의 Linux · 인지 필터 ([[tech-bridge-garry-tan-agents-two-years]]) ⚠️ 한 사람의 전망, 측정 없음
 - [[high-agency]] — 문제와 함께 해결책을, 말 대신 프로토타입을 들고 오는 사람. 만들기가 싸진 시대의 가장 중요한 능력이라는 [[peter-steinberger|Steinberger]]의 조언, 학위보다 확신과 만든 것 ([[tech-bridge-peter-steinberger-2027-developer]]) ⚠️ 한 사람의 조언 · 해설 전달
+- [[discovery-remediation-gap]] — 찾기와 고치기의 속도 차. 자율 파이프라인 1회 948개 vs PHP2Shell 버그 하나 수정에 두 달(조율 붕괴 · 패치 나흘 전 공격) · ExploitBench +24 vs PatchBench +5.6. 보안 판 검증 비대칭 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
+- [[key-person-risk]] — 핵심 인물 의존 위험. *AI 산업 → NVIDIA → 한 사람*: 33년 단일 CEO, 공개 승계 계획 없음, 사임 뒤 임시 CEO · 이사회 의장 신설, 최고점 대비 30% 가까운 하락 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 사임 이유 미기재
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -1048,10 +1053,13 @@ updated: 2026-11-13
 - [[tech-bridge-chase-ai-fable-5-2-prompting-rules]] — [한글자막] 재게시(10:22, 챕터 13, 영어 원음만 · ko는 기계 번역, 2026-11-12 07:00 KST): [[chase-ai|Chase AI]]의 [[fable-5-2|Fable 5.2]] 프롬프트 규칙 10가지 — high부터, 증명하게, 끝까지, 옛 CLAUDE.md 정리(규칙을 글자 그대로 따름), 생각하지 말라는 안 통함, 추론 과정 캐묻기는 증류 분류기, 코드의 주인, 서브에이전트는 알아서, 중간 보고, 말투 · 길이는 프롬프트로 → [[reasoning-effort-levels]] · [[prompt-debt]] ⚠️ 가이드 · 시스템 카드 미열람
 - [[tech-bridge-addy-osmani-which-claude-model]] — 한국어 해설(9:01, 챕터 9, Korean original · AI 내레이션, ko-orig `variant=gemini`, 원음 발췌 없음, 2026-11-12 18:00 KST): [[addy-osmani|Addy Osmani]] claude.dev 모델 선택 가이드 — 기본 Opus 5.5 medium, 네 모델 가격 · 기본 effort 표, 백로그 네 장 배정, 모델보다 effort 먼저(SWE-bench Pro · Frontier Code 2.0 · Terminal-Bench 3.0), 전부 low · 실패만 high(97% · 17센트), 캐시는 모델에 묶임, 서브에이전트 · 워커 · 어드바이저, 400 오류 세 가지, 내 작업으로 측정 → [[true-cost-to-perfect-answer]] · [[reasoning-effort-levels]] ⚠️ 원 글 미열람
 - [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]] — 한국어 해설(8:48, 챕터 10, Korean original · AI 음성, en-orig 없음, 발표 원음 무캡션, 2026-11-13 07:00 KST): [[lydia-hallie|Lydia Hallie]] *Rethinking Claude Code Best Practices* — 사람 14% vs auto mode 89%, 하루 머지 2,500 → 3만, 다섯 가지 일, CLAUDE.md에서 지울 것, 믿는 대상 평문 설정, *되돌릴 수 있는가?* 거절 규칙, 샌드박스(셸만) · 클라우드 세션, 검증 지점 · 훅 exit 2, CI · 새 컨텍스트 리뷰 · 위험도별 0/1/2명, 지휘자 세션(Fable) · 스레드(Opus 5.5) → [[human-loop-roles-relocation]] ⚠️ 원 발표 미열람
+- [[tech-bridge-jensen-huang-resignation-timeline]] — 한국어 해설(8:50, 챕터 10, Korean original · AI 음성, Bloomberg 원음 무캡션, 2026-11-13 12:00 KST): [[jensen-huang|Jensen Huang]] 사임까지 14일을 확인 / 보도 / 부인으로 — [[megaspeed|Megaspeed]]와 미국 · 싱가포르 조사, 10-29 NYT 첫 보도, 하원 서한, 11-08 사과 메일 · 이사회 독립 조사, 주가 급락, 11-11 반전, 11-12 발표 · 임시 CEO [[colette-kress|Colette Kress]] → [[key-person-risk]] ⚠️ 원 발표 · 보도 미열람, 의혹은 보도 단계
+- [[tech-bridge-lauren-tan-agents-merge-own-prs]] — 한국어 해설(10:14, 챕터 9, Korean original · AI 음성, 원음 조각 2개만 en-orig, 멤버 전용 → 11-14 공개, 2026-11-13 18:00 KST): [[lauren-tan|Lauren Tan]] Maven 워크숍(2026-08-12) 요약 — 신뢰 곡선, control-glass, 피처 맵, 실패를 스킬로 · 시험인 줄 모르는 eval, Benny · *워크트리는 끝났다*, Dune, 다섯 층 · 리뷰 댓글은 코드 냄새, 토큰 vs 사람 → [[agent-trust-curve]] ⚠️ 09-12 워크숍과 같은 것이면 녹화일 08-12(추정)
+- [[tech-bridge-openai-gpt-6-cyber-keynote]] — 한국어 해설(9:07, 챕터 9, Korean original, 키노트 원음 무캡션, 2026-11-14 08:00 KST): OpenAI *Cyber at the Frontier* 키노트를 글 기록과 대조 — PHP2Shell 두 달, 948개, Firefox 81 vs 권고문 41, ExploitBench 슬라이드 vs 문서, PatchBench, 허니팟, Daybreak Red Team · Defense Factory → [[discovery-remediation-gap]] · [[gpt-6-cyber]] ⚠️ 수치는 OpenAI 자체 발표
 
 ## 통계
 
-- 총 페이지 수: 1012 (1006 → 1012, + 2026-11-13 Tech Bridge 2편(11-12 업로드 — Claude 모델 선택 가이드 · Claude Code 모범 사례 재작성): source 2 · entity 3(lydia-hallie · claude-sonnet-5-5 · claude-haiku-5-5) · concept 1(human-loop-roles-relocation) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1012와 일치)
+- 총 페이지 수: 1020 (1012 → 1020, + 2026-11-14 Tech Bridge 3편(11-13 업로드 — GPT-6 Cyber 키노트 대조 · Lauren Tan 10분 정리 · Jensen Huang 사임 14일): source 3 · entity 3(gpt-6-cyber · megaspeed · colette-kress) · concept 2(discovery-remediation-gap · key-person-risk) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1020과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-13 (Tech Bridge **2편** — 11-12 업로드 [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]](`M_yjL9qgwDo`) · [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]](`7Yj-f3izMbE`). `AYCGbCxXHMU` 멤버 전용 신규, `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-12 (Tech Bridge **3편** — 11-11 업로드 [[tech-bridge-alex-karp-wealth-tax-surveillance|알렉스 카프가 부유세는 반대하는 이유]](`-5fivnqRY4g`) · [[tech-bridge-sdd-vs-waterfall|SDD는 워터폴의 귀환일까]](`7v-QcSBFsUs`) · [[tech-bridge-chase-ai-fable-5-2-prompting-rules|Fable 5.2 프롬프트 규칙 10가지]](`UZflKPqs514`). `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-14 (Tech Bridge **3편** — 11-13 업로드 [[tech-bridge-jensen-huang-resignation-timeline|젠슨 황 사임, 발표문에 이유는 없었다]](`P8cP0PDll2Q`) · [[tech-bridge-lauren-tan-agents-merge-own-prs|에이전트가 자기 PR을 직접 머지한다]](`ezPSsVW92Mg`, 멤버 전용 → 공개) · [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber, 리눅스 버그 948개]](`5WmvC9_wHE0`). `fq8GI-7bjgc` 멤버 전용 신규, `AYCGbCxXHMU` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-13 (Tech Bridge **2편** — 11-12 업로드 [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]](`M_yjL9qgwDo`) · [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]](`7Yj-f3izMbE`). `AYCGbCxXHMU` 멤버 전용 신규, `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)

@@ -180,8 +180,11 @@ sources:
   - tech-bridge-chase-ai-fable-5-2-prompting-rules
   - tech-bridge-addy-osmani-which-claude-model
   - tech-bridge-lydia-hallie-rethinking-claude-code-best-practices
+  - tech-bridge-openai-gpt-6-cyber-keynote
+  - tech-bridge-lauren-tan-agents-merge-own-prs
+  - tech-bridge-jensen-huang-resignation-timeline
 created: 2026-06-03
-updated: 2026-11-13
+updated: 2026-11-14
 ---
 
 # Tech Bridge
@@ -1708,3 +1711,18 @@ updated: 2026-11-13
 - 원 글(claude.dev) · 원 발표(`vlfCjWuv4es`) · 설명란의 공식 문서는 미열람.
 
 **멤버 전용**: `AYCGbCxXHMU`(*프롬프트 200단어로 6주를 일한 AI | OpenAI가 공개한 멈추지 않는 Codex 에이전트 8분 정리*, 8:27, 목록 `upload_date` 20261112) **신규**(목록에선 stderr ERROR로만, 단건 조회 `subscriber_only`). `ezPSsVW92Mg` 지속(stderr ERROR · 단건 `subscriber_only`). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only`). 목록 20편 요청 → 18줄 + ERROR 2.
+
+## 2026-11-13 업로드 — GPT-6 Cyber 키노트 대조 · Lauren Tan 10분 정리 · Jensen Huang 사임 14일 (2026-11-14 ingest)
+
+[[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber, 리눅스 버그 948개 찾았다… 그런데 고치는 건 버그 하나에 두 달 | OpenAI 키노트를 기록과 대조해 봤다]](`5WmvC9_wHE0`, 9:07, 공식 챕터 9) — 한국어 해설, OpenAI *Cyber at the Frontier* 키노트를 글 기록과 대조 ([[gpt-6-cyber]](신규) · [[discovery-remediation-gap]](신규) · [[openai-daybreak]] · [[defense-factory]] · [[defenders-window]] · [[ai-vulnerability-discovery]] · [[coordinated-vulnerability-disclosure]] · [[agentic-misbehavior]] · [[verification-cost-asymmetry]] · [[greg-brockman]] · [[openai]] · [[mozilla]] · [[claude-mythos-preview]])
+
+[[tech-bridge-lauren-tan-agents-merge-own-prs|에이전트가 자기 PR을 직접 머지한다 | Cursor 엔지니어 Lauren Tan이 에이전트를 믿게 된 방법 10분 정리]](`ezPSsVW92Mg`, 10:14, 공식 챕터 9) — 한국어 해설(AI 음성), Maven 워크숍(2026-08-12) 요약 ([[lauren-tan]] · [[agent-trust-curve]] · [[agent-verification-skill]] · [[feature-map]] · [[pstack]] · [[skill-evals]] · [[cloud-agent-delegation]] · [[dune-architecture]] · [[hard-vs-soft-enforcement]] · [[codebase-gardening]] · [[grokbot]] · [[cursor]] · [[grok-4-6]] · [[tech-bridge-lauren-tan-trusting-agents]])
+
+[[tech-bridge-jensen-huang-resignation-timeline|젠슨 황 사임, 발표문에 이유는 없었다 | 첫 보도부터 사임까지 14일 날짜순 9분 정리]](`P8cP0PDll2Q`, 8:50, 공식 챕터 10) — 한국어 해설(AI 음성), 확인 / 보도 / 부인 구분 타임라인 ([[megaspeed]](신규) · [[colette-kress]](신규) · [[key-person-risk]](신규) · [[jensen-huang]] · [[nvidia]] · [[hugging-face]] · [[intelligence-as-infrastructure]])
+
+- 세 편 모두 Korean original, `ko` = `ko-orig`(`variant=gemini`) + en-orig 영어 더빙. 인용은 ko-orig. **원음 발췌는 대부분 두 트랙 모두 무캡션** — Lauren 편만 en-orig에 원음 영어 조각 두 개(00:17~00:24 · 06:10~06:16)가 남았다.
+- ⭐ **두 편이 출처 등급을 스스로 밝힌다**: GPT-6 Cyber 편은 *발표와 기록이 다른 곳은 기록을 따른다*, 사임 편은 *확인 / 보도 / 부인* 구분 · *11-13 오전 KST 기준*.
+- `ezPSsVW92Mg`는 11-10 회차부터 멤버 전용이었다가 **11-14 공개 전환**(`upload_date` 20261109 → 20261113). 게시 시각: 사임 편 11-13 12:00 KST · Lauren 편 11-13 18:00 KST · GPT-6 Cyber 편 **11-14 08:00 KST**(이 회차 70분 전).
+- 키노트 원본(`YmxpxJZvm4M`) · Maven 워크숍 · NVIDIA 뉴스룸 · 각종 보도는 미열람.
+
+**멤버 전용**: `fq8GI-7bjgc`(제목 · 날짜 미상) **신규**(목록 stderr ERROR, 단건 조회 ERROR). `AYCGbCxXHMU` 지속(stderr ERROR · 단건 ERROR). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 ERROR). 목록 20편 요청 → 18줄 + ERROR 2.

@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-garry-tan-agents-two-years]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-garry-tan-agents-two-years, tech-bridge-lauren-tan-agents-merge-own-prs]
 created: 2026-09-13
-updated: 2026-11-07
+updated: 2026-11-14
 ---
 
 # Pstack
@@ -135,3 +135,7 @@ updated: 2026-11-07
 ## fix and fuzz — 제3자 요약에서 붙은 이름 (2026-11-03 · [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]])
 
 [[rob-shocks|Rob Shocks]](설명란 근거)가 [[lauren-tan]]의 루프를 요약하면서 *"what she calls a fix and fuzz pull request with a small swarm of agents"*(03:24~03:28)를 *"some of her skills we covered on Pystack[=Pstack] in another video"*(03:28~03:34)와 연결한다. *"a swarm of agents will open the pull request and try and break it"*(03:36~03:42), 무작위 클릭이나 Playwright(ASR *"play route"*)를 쓴다. 깨끗하면 1시간 뒤 자동 머지된다(03:52~04:00). 위 10-10 절의 **full autopilot**(PR마다 검증 에이전트 여럿이 fuzz)과 같은 계열로 보인다(추정 — 영상은 둘이 같다고 말하지 않는다). ⚠️ 2차 전달이고 *"fix and fuzz"* 라는 이름은 본인 소스에서 확인되지 않았다. 설명란이 다시 `github.com/cursor/plugins/tree/main/pstack`을 건다(열어 보지 않았다). *"we covered on Pystack"* 이 가리키는 영상이 09-13 [[tech-bridge-pstack-third-party-review]](화자 미상)인지는 확인하지 않았다 → [[rob-shocks]].
+
+## 2026-11-14 — create-verification · *실행해 보지 않은 스킬은 초안* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
+
+한국어 요약이 전하는 것(해설 전달, 위키는 cursor/plugins 저장소 미열람): **create-verification** 스킬이 저장소를 살펴 앱을 띄우고 조작하고 증거를 남기는 검증 스킬과 [[feature-map|피처 맵]] 초안을 만든다. *"한 번도 실행해 보지 않은 스킬은 초안일 뿐 완성품이 아니라고 못박아둡니다."*(04:01~04:04) 이름은 [[garry-tan|Garry Tan]]의 [[gstack]]을 놀린 것, *p* 는 potato. 설명란은 본인 글 *The Complete Guide to pstack Pt. 1* 을 링크한다.
