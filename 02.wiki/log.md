@@ -2716,3 +2716,21 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 3편 · 9~10분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1114/`: 11-13 스크립트 복사 + `build_raw.py` · `merge.py`(경로 자동 탐색 · 소스 페이지 보강 지원) · `shared.py`, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secC/`). `q.py check` 105건, 손으로 적은 시각 4곳 수정 후 불일치 0. ⚠️ **셸 `printf "…"` 안의 백틱은 명령 치환된다** — `` `useEffect` `` 두 곳이 사라져 복구했다. 보강 절은 quoted heredoc(`<<'EOF'`)으로 쓸 것. ⚠️ `q.py check`는 `*"…"*(06:13~06:16, 설명)` 처럼 시각 뒤에 다른 글이 붙으면 대조하지 않는다 — 시각 괄호를 따로 닫을 것.
 
+
+## [2026-11-15] ingest | Tech Bridge — 11-14 업로드 1편 (멈추지 않는 Codex 에이전트 8분 정리)
+
+목록 `--playlist-end 20` → **19줄 + stderr ERROR 1**(`fq8GI-7bjgc`). **`AYCGbCxXHMU` 공개 전환**(11-13 회차부터 멤버 전용, `upload_date` 20261112 → 20261114, 11-14 18:00 KST 게시 — 11-14 회차 뒤). `fq8GI-7bjgc`는 단건 조회로 처음 제목 · 날짜 확인(*저장소 38개를 에이전트 하나로? '홈 레포' 패턴 | Matt Pocock …*, 목록 `upload_date` 20261113, 8:33) — `subscriber_only` 지속. `Yhck-x6VuLs` 멤버 전용 지속(단건 `subscriber_only` 줄). 그 밖의 11-14 신규 업로드 없음.
+
+**신규 source 1 · entity 2 · concept 1**, 기존 페이지 보강 8개(+ tech-bridge), index **1020 → 1024**(실측 일치).
+
+- `AYCGbCxXHMU`(8:27, 챕터 10) → [[tech-bridge-codex-agents-that-dont-quit]]: OpenAI DevDay 2026 *"What Will You Build With Coding Agents That Don't Quit?"* 한국어 해설(AI 음성). Codex 에이전트 하나가 200단어 프롬프트로 6주 · 1,000시간+ 사내 CI 플레이키 테스트 — 머지 213 · 도구 호출 49만 9천여(대기 6만 7천여) · 하위 세션 5,800+(해설 전달). `ko` = `ko-orig`(`variant=gemini`), en-orig 더빙. ⭐ **원음 영어 조각이 ko-orig에 남았다**(03:15~03:27 *director of agents* — en-orig는 빈 구간 · 08:16~08:22). 무캡션 다섯 곳은 두 트랙 모두 비었다.
+  - 신규: [[aaron-friel]](철자 추정 — 설명란에 이름 없음, en-orig `Friel` · ko *프리엘*) · [[vaibhav-srivastav]](설명란 X 링크로 전체 이름) · [[flaky-tests]]
+  - 보강: [[codex]](6주 운영 수치 · 기능 6가지 · Ultra 첫 기록) · [[openai]](DevDay 발표 · *Sol* 이름 첫 등장) · [[goal-level-delegation]](같은 사람의 1년 비교 7시간 vs 6주) · [[subagent-vs-thread-handoff]](메인 = 조율 · 하위 = 느린 일, 스레드 vs Ultra) · [[scheduled-agent-automations]](heartbeat 30분) · [[context-resets-and-compaction]](진행 메모 + 자동 compaction) · [[cloud-agent-delegation]](원격 환경) · [[generator-evaluator-pattern]](확신 없을 때 비판자 에이전트)
+  - ⚠️ **비용 32 → 16달러는 챕터 제목에만** 있다 — 07:02~07:08 무캡션, 캡션은 *절반으로* 만. 모델 이름 *GPT 5.6 솔* · *GPT 6 솔*(태그 `GPT-6.1 Sol`)은 판독 추정, 더빙은 `GPT-4` · `GPT-4o`로 바꾼다. [[openai-terra|GPT-6.1 Terra]]와의 관계 · DevDay 날짜와 *발표 한 주 전* 의 정합은 미확인. *그래디크*(07:24) 판독 불가.
+  - 페이지화하지 않음: GPT-5.6 Sol · GPT-6.x Sol · Ultra · Codex 클라우드(→ [[codex]] 절) · Lewis Hamilton · OpenAI Cookbook PLANS.md 글.
+  - 원 발표(`U1IVZy9FhVQ`) · Cookbook · VB 게시물 미열람.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+1편 · 8분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1115/`: 11-14 스크립트 복사 — `lines.py` · `meta.py` · `gaps.py` · `q.py` · `build_raw.py` · `merge.py`, 새 페이지 `new/`, 보강 절 `sec/`). `q.py check` 33건 불일치 0(영어 조각 2건은 `<!--k-->`로 ko 코퍼스 고정). raw 헤더 ASR 판독 시각은 손 대조로 1곳 수정. ⭐ **원음 조각이 ko-orig에만 있고 en-orig가 비는 구성**이 처음 나왔다(11-12 Karp 편은 반대로 en-orig에 남았다) — 무캡션 판정은 두 트랙 모두 볼 것. ⚠️ 신규 페이지의 교차 참조를 log 줄 번호로 짚을 때는 그 줄이 속한 `## [` 머리를 확인할 것 — flaky 인과를 처음엔 Gitar 편으로 잘못 붙였다가 Ironclad 편([[tech-bridge-trusted-throughput]])으로 고쳤다.

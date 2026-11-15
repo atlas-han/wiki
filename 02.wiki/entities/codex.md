@@ -3,11 +3,11 @@ title: Codex
 type: entity
 category: product
 tags: [openai, coding-agent, gpt, fast-mode]
-sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]
+sources: [openai-nextdoor-codex, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-brockman-agi-era-defender-window, tech-bridge-lopopolo-agent-harness, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-codex-app-server, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-codex-agents-that-dont-quit]
 links:
   - "https://openai.com/index/nextdoor/"
 created: 2026-06-27
-updated: 2026-11-02
+updated: 2026-11-15
 ---
 
 # Codex
@@ -153,3 +153,11 @@ updated: 2026-11-02
 ## Terra의 하네스로 — Opus 5.5 + Claude Code와 같은 조건 비교 (2026-11-02 · [[tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5]])
 
 [[nick-saraev|Nick Saraev]](추정)의 비교에서 [[openai-terra|GPT-6.1 Terra]]가 쓴 하네스다: *"GPT 6.1 Terra gets to use Codex, Claude Opus 5.5 gets to use Claude code"*(00:37~00:42), max effort. 결론의 비용 문장도 Codex 단위다 — *"You're going to stretch significantly more out of your Codex budget"*(11:23~11:26). ⚠️ 결과는 **모델 + 하네스 쌍**의 것이라 Codex 자체의 기여는 분리되지 않는다.
+
+## 6주 동안 멈추지 않은 에이전트 — 200단어 프롬프트 · 기능 6가지 · 비용 (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
+
+DevDay 2026 발표 *"What Will You Build With Coding Agents That Don't Quit?"* 의 한국어 해설. [[aaron-friel|Aaron Friel]](철자 추정)이 Codex 에이전트 하나에게 약 200단어 프롬프트로 사내 CI의 [[flaky-tests|플레이키 테스트]]를 **6주 · 1,000시간 넘게** 맡겼다 — 머지 213건 · 커밋 1,000+ · 도구 호출 49만 9천여(그중 대기 6만 7천여) · 하위 에이전트 세션 5,800+(해설 전달). 1년 전 같은 무대의 *7시간* 사례는 절차를 다 적은 긴 프롬프트였다.
+
+[[vaibhav-srivastav|VB]]가 정리한 기능 여섯: goal(`/goal` 판독 추정 · AGENTS.md · 진행 메모 · 자동 compaction, *석 달째 도는 스레드*) · 원격 환경(SSH · 이날 새 버전의 Codex 클라우드) · 플러그인(GitHub 이슈 · Slack) · 자식 스레드(worktree) · **Ultra**(어려운 한 문제에 긴 사고 시간 + 하위 에이전트들이 서로 다른 가설 — 위키 첫 기록) · 예약 작업(**heartbeat, 30분마다** 같은 스레드로 복귀). 위 10-11 표의 기능 묶음에 **6주 운영 수치** 와 Ultra가 붙은 셈이다.
+
+비용: 챕터 제목만 *시간당 약 32달러 → 16달러*(캡션 무캡션), 캡션에는 *발표 한 주 전에 나온 GPT 6 솔 기준 절반* 만. 사람 리뷰 시간 · CI 자원은 별도. ⚠️ 모델 이름(GPT-5.6 Sol · GPT-6.x Sol)은 ASR · 태그 판독이고 더빙은 `GPT-4` · `GPT-4o`로 바꾼다.

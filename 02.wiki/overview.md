@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-14
+updated: 2026-11-15
 sources: []
 ---
 
@@ -296,6 +296,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-12*: [[tech-bridge]] **3편** ingest(11-11 업로드). [[tech-bridge-chase-ai-fable-5-2-prompting-rules|Fable 5.2 프롬프트 규칙 10가지]] — [[chase-ai|Chase AI]]가 시스템 카드를 읽어 [[fable-5-2|Fable 5.2]]의 성질(규칙을 글자 그대로 따름 · 늘 생각함 · 추론을 사실로 말함 · 일찍 멈춤)과 처방을 정리한다. [[prompt-debt]]의 두 번째 소스이고, *강도로 바꿀 것과 프롬프트로 바꿀 것* 의 분업이 [[reasoning-effort-levels]]로 정리된다. [[tech-bridge-sdd-vs-waterfall|SDD는 워터폴의 귀환일까]] — [[spec-driven-development]]의 *그건 폭포수다* 논쟁에 한 편을 통째로 쓴 첫 소스. 구분선은 *스펙으로 돌아가느냐* 이고, 원조 논문 자체가 되먹임과 *두 번 하라* 를 처방했다 → [[waterfall-model]]. [[tech-bridge-alex-karp-wealth-tax-surveillance|알렉스 카프가 부유세는 반대하는 이유]] — [[ai-jobs-impact]]에 *일자리는 늘고 격차는 커진다* 는 입장이 들어오고, [[palantir|Palantir]]의 [[ai-sovereignty|AI 주권]] 이 [[in-house-ai-data-boundary]]의 판매 언어 판으로 붙는다. 해설이 Karp의 주장을 S-1 · Anthropic 약관과 대조한다.
 - *2026-11-13*: [[tech-bridge]] **2편** ingest(11-12 업로드, 둘 다 Anthropic 쪽 실무 가이드 해설). [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]] — [[addy-osmani|Addy Osmani]]의 가이드로 위키에 처음 네 모델의 가격 · 기본 effort 표가 들어오고([[claude-sonnet-5-5|Sonnet 5.5]] · [[claude-haiku-5-5|Haiku 5.5]] 신규, [[claude-opus-5-5|Opus 5.5]] $4/$20), *모델보다 effort 먼저 · 완료한 작업당 비용* 이 [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]]에 벤더 판으로 붙는다. [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]] — [[lydia-hallie|Lydia Hallie]]가 사람이 하던 다섯 가지 일을 모델 · 하네스 · 환경에 나눠 준다 → [[human-loop-roles-relocation]]. *대부분은 모델, 보장은 하네스* 이고, 하드 규칙은 [[action-reversibility|되돌릴 수 없는 것]]에만 건다. [[agent-sandboxing]]에 *셸 명령만 덮는다* 는 경계가 처음 기록된다.
 - *2026-11-14*: [[tech-bridge]] **3편** ingest(11-13 업로드). [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber 키노트 대조]] — 위키의 보안 줄기에 처음 *기록 대조형* 소스가 들어온다: 자율 파이프라인 1회 948개와 PHP2Shell 버그 하나에 두 달이 나란히 놓이며 [[discovery-remediation-gap|찾기와 고치기의 속도 차]](신규)가 개념이 되고, 09-20의 패턴 [[defense-factory]]가 Daybreak Defense Factory라는 제품 이름이 된다. 슬라이드와 문서의 점수 차(52.6% vs 48.45%)도 기록된다. [[tech-bridge-lauren-tan-agents-merge-own-prs|Lauren Tan 10분 정리]] — 새 내용은 적지만 설명란의 *Maven 2026-08-12* 가 09-12 워크숍의 남은 *달* 에 유력한 답을 준다(추정, 미확정). [[tech-bridge-jensen-huang-resignation-timeline|Jensen Huang 사임 14일]] — 위키의 [[jensen-huang]] · [[nvidia]]가 사임 이후로 넘어간다(임시 CEO [[colette-kress|Colette Kress]]). 사임 이유는 공식 발표에 없고 의혹은 보도 단계로만 둔다. *AI 산업 → NVIDIA → 한 사람* 이 [[key-person-risk]](신규)로 정리된다.
+- *2026-11-15*: [[tech-bridge]] **1편** ingest(11-14 업로드, 멤버 전용 → 공개). [[tech-bridge-codex-agents-that-dont-quit|멈추지 않는 Codex 에이전트]] — [[goal-level-delegation]]에 지금까지 가장 긴 사례가 붙는다: [[aaron-friel|같은 발표자]]가 1년 사이 *절차를 다 적은 7시간* 에서 *목표 · 규칙 · 한계만 적은 200단어 · 6주* 로 옮겼다(모델도 바뀌어 효과는 분리되지 않음). 맡긴 일인 [[flaky-tests|플레이키 테스트]](신규)는 *끝없고 테스트가 곧 판정기인 일* 의 전형이 되고, 도구 호출의 약 13%가 대기였다는 수치가 heartbeat · 예약 작업([[scheduled-agent-automations]])의 이유를 준다. [[vaibhav-srivastav|VB]]의 *쪼갤 일은 스레드, 어려운 한 문제는 Ultra* 가 [[subagent-vs-thread-handoff]]에 넓이 대 깊이 축을 더한다. 비용(시간당 32 → 16달러)은 캡션이 비어 챕터 제목으로만 남는다.
 
 ---
 

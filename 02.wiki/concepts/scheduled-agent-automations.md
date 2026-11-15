@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
-related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture]
+related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture, flaky-tests]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit]
 created: 2026-09-09
-updated: 2026-11-06
+updated: 2026-11-15
 ---
 
 # 예약형 에이전트 자동화
@@ -126,3 +126,7 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## 비개발자의 예약 세 가지 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
 
 [[sandeep-swadia|Sandeep Swadia]](설명란 근거)의 프롬프트에서 예약은 메뉴가 아니라 문장 안에 있다. 하루 세 번 메시지 점검(*"at 10:00 a.m., 100 p.m., and 400 pm"*(09:29~09:33)), 주간 회고(*"Every Sunday evening, review my calendar and work from this week."*(15:55~15:58)), 주기 진료(*"Make sure I see my doctor every 3 to four months."*(13:11~13:16))다. 정의도 사용자 쪽 말이다: *"that's how you make your agent your trigger."*(13:16~13:18) ⚠️ 예약이 실제로 어떻게 등록되는지는 자막에 없다. → [[personal-agent-four-forces]]
+
+## heartbeat 30분 — 기다림을 스레드 밖으로 (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
+
+6주 실험에서 [[codex|Codex]] 에이전트의 도구 호출 49만 9천여 번 중 6만 7천여 번(위키 계산 약 13%)이 *그냥 기다리는* 호출이었다(해설 전달). [[vaibhav-srivastav|VB]]의 여섯 번째 기능 **예약 작업**: 리뷰를 기다리며 멈추지 말고 **30분마다** 돌아와 확인 — 같은 스레드로 돌아오기 때문에 한 일을 기억한 채 이어 간다, *"이걸 하트비트라고 부릅니다."*(06:48) 위 10-11 표의 *heartbeat (in-thread)* 에 실제 운영 간격이 붙은 첫 기록이다. → [[flaky-tests]]

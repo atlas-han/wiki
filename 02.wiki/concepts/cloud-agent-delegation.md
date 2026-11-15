@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing, human-loop-roles-relocation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-codex-agents-that-dont-quit]
 created: 2026-09-09
-updated: 2026-11-14
+updated: 2026-11-15
 ---
 
 # 클라우드 에이전트 위임
@@ -134,3 +134,7 @@ updated: 2026-11-14
 ## 2026-11-14 — *워크트리는 끝났다* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 Lauren의 글을 한국어 요약이 인용한다: *"워크트리는 끝났다. 클라우드 에이전트가 미래다."*(05:52~05:54) Cursor 클라우드 에이전트는 각자 진짜 컴퓨터를 받아 의존성 설치 · 앱 실행 · 화면 조작을 하고, Benny는 버그 제보를 받으면 클라우드에서 재현해 *이미 main에서 고쳐졌다* 는 정보까지 돌려준다. 순서는 **로컬에서 충분히 지켜보고 믿게 된 다음** 이다 → [[agent-trust-curve]] · [[cursor-cloud]]
+
+## 2026-11-15 — 6주 동안 노트북을 켜 둘 수는 없다 ([[tech-bridge-codex-agents-that-dont-quit]])
+
+[[vaibhav-srivastav|VB]]의 두 번째 기능 **원격 환경**: SSH로 원격 머신에 붙이거나, 이날(DevDay 2026) 새 버전을 공개한 Codex 클라우드에 맡긴다(해설 전달). 6주 · 1,000시간 실험의 전제 조건으로 제시된다. → [[codex]]

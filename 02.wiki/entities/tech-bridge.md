@@ -183,8 +183,9 @@ sources:
   - tech-bridge-openai-gpt-6-cyber-keynote
   - tech-bridge-lauren-tan-agents-merge-own-prs
   - tech-bridge-jensen-huang-resignation-timeline
+  - tech-bridge-codex-agents-that-dont-quit
 created: 2026-06-03
-updated: 2026-11-14
+updated: 2026-11-15
 ---
 
 # Tech Bridge
@@ -1726,3 +1727,13 @@ updated: 2026-11-14
 - 키노트 원본(`YmxpxJZvm4M`) · Maven 워크숍 · NVIDIA 뉴스룸 · 각종 보도는 미열람.
 
 **멤버 전용**: `fq8GI-7bjgc`(제목 · 날짜 미상) **신규**(목록 stderr ERROR, 단건 조회 ERROR). `AYCGbCxXHMU` 지속(stderr ERROR · 단건 ERROR). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 ERROR). 목록 20편 요청 → 18줄 + ERROR 2.
+
+## 2026-11-14 업로드 — 멈추지 않는 Codex 에이전트 8분 정리 (2026-11-15 ingest)
+
+[[tech-bridge-codex-agents-that-dont-quit|프롬프트 200단어로 6주를 일한 AI | OpenAI가 공개한 멈추지 않는 Codex 에이전트 8분 정리]](`AYCGbCxXHMU`, 8:27, 공식 챕터 10) — 한국어 해설(AI 음성), OpenAI DevDay 2026 *Coding Agents That Don't Quit* 발표 ([[aaron-friel]](신규) · [[vaibhav-srivastav]](신규) · [[flaky-tests]](신규) · [[codex]] · [[openai]] · [[goal-level-delegation]] · [[subagent-vs-thread-handoff]] · [[scheduled-agent-automations]] · [[context-resets-and-compaction]] · [[cloud-agent-delegation]] · [[generator-evaluator-pattern]])
+
+- `ko` = `ko-orig`(`variant=gemini`) + en-orig 영어 더빙. 인용은 ko-orig. ⭐ **이번엔 원음 영어 조각이 ko-orig에 남았다**(03:15~03:27 *director of agents* — en-orig는 비었다 · 08:16~08:22). 무캡션 다섯 곳은 두 트랙 모두 비었다 — **비용 수치 대목(07:02~07:08)도 그중 하나**라 32 → 16달러는 챕터 제목에만 있다.
+- `AYCGbCxXHMU`는 11-13 회차부터 멤버 전용이었다가 **11-15 공개 전환**(`upload_date` 20261112 → 20261114, 11-14 18:00 KST 게시).
+- 원 발표(`U1IVZy9FhVQ`) · OpenAI Cookbook PLANS.md 글 · VB 게시물은 미열람.
+
+**멤버 전용**: `fq8GI-7bjgc`(목록 `upload_date` 20261113, *저장소 38개를 에이전트 하나로? '홈 레포' 패턴 | Matt Pocock이 너무 뻔해서 안 올리려던 기법*, 8:33 — 이번 회차 단건 조회로 제목 · 날짜 처음 확인) 지속(목록 stderr ERROR, 단건 `subscriber_only` 줄). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 목록 20편 요청 → 19줄 + ERROR 1.

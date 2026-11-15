@@ -3,11 +3,11 @@ title: Goal-Level Delegation
 type: concept
 category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
-related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra]
+related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra, flaky-tests]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit]
 created: 2026-09-05
-updated: 2026-11-06
+updated: 2026-11-15
 ---
 
 # Goal-Level Delegation
@@ -122,3 +122,9 @@ MMA 사례가 한 칸 더 간다 — *"카메라를 지켜보다가 **라운드 
 ## 일상 프롬프트의 목표 수준 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
 
 [[sandeep-swadia|Sandeep Swadia]](설명란 근거)가 임대차 계약 검토 프롬프트를 설명하며 이 패턴을 그대로 말한다: *"you're giving objectives, not just instructions, goals, not just guidance."*(10:28~10:33) 같은 프롬프트의 *"And show me the exact clauses."*(10:36~10:39)는 목표만 주지 않고 **확인할 근거를 함께 요구**한다. 위임의 경계를 둔 작은 사례다(위키의 읽기). ⚠️ 위 절의 유보대로 실패 사례는 여기에도 없다.
+
+## 같은 사람의 1년 비교 — 절차형 7시간 vs 목표 · 규칙 · 한계형 6주 (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
+
+[[aaron-friel|Aaron Friel]](OpenAI, 철자 추정)은 DevDay 2025에서 [[codex|Codex]]를 7시간 일하게 한 프롬프트에 예시 코드 · 라이브러리 · 구현 순서를 다 적고 계획서 검토 후에야 시작시켰다. DevDay 2026의 6주 실험은 약 200단어 — 코드도 고치는 법도 없이 **일하는 규칙**(근무 시간 외 메시지는 모아 두기 · CI는 시간당 1회 이하 · 테스트 돌리는 법은 직접 알아내기)만 있었다. *"목표와 원하는 결과, 그리고 무엇을 아끼고 무엇을 포기할지만 말해주고 단계는 모델이 알아서 찾게 합니다."*(01:48~01:52) (해설) 맺음: *방법이 아니라 목표와 규칙 그리고 한계.*
+
+⚠️ 그 사이 모델도 바뀌었다(GPT-5.6 Sol → GPT-6.x Sol, 판독 추정) — 이 비교는 **프롬프트 방식만의 효과** 를 분리하지 않는다. → [[flaky-tests]]

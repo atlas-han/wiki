@@ -3,11 +3,11 @@ title: Generator–Evaluator Pattern
 type: concept
 category: pattern
 tags: [agent, multi-agent, gan, evaluation, feedback-loop, llm-as-judge, online-evals]
-related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection, three-level-agent-review]
+related: [agent-harness-design, sprint-contract, dynamic-workflows, self-harness, token-roles, trusted-throughput, managed-agents, verifiable-goals, agent-skills, slop-probes, ai-slop, adjective-verb-steering, no-one-shot-design, system-1-model, jev, automated-ai-research, yaml-agent-eval-pipeline, cross-model-prior-intersection, three-level-agent-review, flaky-tests]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-three-level-agent-review, tech-bridge-annie-wang-harness-four-designs, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [anthropic-harness-design-long-running-apps, tech-bridge-claude-platform-agent-era, tech-bridge-trusted-throughput, tech-bridge-flutter-ai-workflow, tech-bridge-multimodal-commerce-agent, tech-bridge-claude-code-team-workflow, tech-bridge-ai-native-sdlc, tech-bridge-cursor-legacy-refactoring, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-jev-agent-harness, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-factory-software-factory, tech-bridge-pocock-pr-bottleneck, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-just-in-time-ontology, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-three-level-agent-review, tech-bridge-annie-wang-harness-four-designs, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-codex-agents-that-dont-quit]
 created: 2026-05-25
-updated: 2026-11-02
+updated: 2026-11-15
 ---
 
 # Generator–Evaluator Pattern
@@ -338,3 +338,7 @@ generator–evaluator가 아니라 **evaluator–evaluator**다. 회의적 평�
 [[ai-labs|AI Labs]](설명란 근거)의 review-loop 스킬은 평가자를 **둘로** 나눈다: verifier(eval마다 passed/failed) + reviewer(*"find anything the evals missed"* 07:26~07:28, `review.md` 규칙). 둘 다 *"sub-agents with fresh context windows (…) so they don't just agree with what the main agent did"*(06:47~06:52). 메인 에이전트는 orchestrator, 상태는 `state.md`.
 
 종료 쪽이 새롭다 — [[anthropic|Anthropic]] Claude Code 팀(발표자 전달) 사례: *"a change that went back and forth more than 50 times"*(10:06~10:08), 재보고의 약 59%가 첫 라운드 문제. 처방은 3라운드 후 재설계 · 변경분만 리뷰 · 문제 종류 명시, AI Labs 판본은 5라운드 · 2라운드 정체. → [[review-loop-termination]]
+
+## 확신이 없으면 비판자를 하나 더 — 사람 리뷰 전에 (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
+
+6주 실험의 [[codex|Codex]] 에이전트는 [[flaky-tests|실패하는 테스트]]를 지우는 손쉬운 길 대신, 확신이 없을 때 **다른 에이전트를 하나 더 만들어 자기 수정을 따져 묻게** 했다 — 사람에게 리뷰를 요청하기 전에(해설 전달). 평가자를 필요할 때만 띄우는 *조건부 evaluator* 사례다.

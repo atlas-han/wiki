@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-codex-agents-that-dont-quit]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-11-14
+updated: 2026-11-15
 ---
 
 # OpenAI
@@ -239,3 +239,7 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## 2026-11-14 — GPT-6 Cyber와 Daybreak 두 제품 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 
 사이버 보안 키노트 *"Cyber at the Frontier"* 에서 [[gpt-6-cyber|GPT-6 Cyber]]와 [[openai-daybreak|Daybreak]] Red Team · Defense Factory를 발표(해설 전달). 보안 연구 리드 Clint Gibler의 948개 게시물(11-04), 배포 안전성 문서(키노트 일주일 전)가 함께 나왔다. 해설은 슬라이드와 문서의 점수 차(52.6% vs 48.45%)와 *찾는 모델을 만드는 회사가 막는 제품도 파는 구도* 를 짚는다.
+
+## 2026-11-15 — DevDay 2026 *Coding Agents That Don't Quit* ([[tech-bridge-codex-agents-that-dont-quit]])
+
+엔지니어 생산성 담당 [[aaron-friel|Aaron Friel]](철자 추정)과 [[vaibhav-srivastav|VB]]의 DevDay 2026 발표. 사내 실험 — [[codex|Codex]] 에이전트 하나가 6주 · 1,000시간 넘게 사내 CI의 [[flaky-tests|플레이키 테스트]]를 고쳐 213건 머지(해설 전달). 시작 모델 *GPT-5.6 Sol*, 비용 기준 *발표 한 주 전에 나온 GPT-6.x Sol*(둘 다 판독 추정 · 태그 `GPT-6.1 Sol`) — 위키에 *Sol* 이름이 처음 나왔다. [[openai-terra|GPT-6.1 Terra]]와의 관계는 미확인.

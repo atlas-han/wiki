@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research, prompt-caching, context-failure-modes]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-context-engineering-four-failure-modes, tech-bridge-nick-saraev-shortest-claude-code-course]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-context-engineering-four-failure-modes, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-codex-agents-that-dont-quit]
 created: 2026-05-25
-updated: 2026-11-05
+updated: 2026-11-15
 ---
 
 # Context Resets vs. Compaction
@@ -142,3 +142,7 @@ optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context 
 ## 입문자용 규칙: 주제가 바뀌면 새 세션 (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
 
 [[nick-saraev|Nick Saraev]](설명란 근거): *"Claude is forced to reread literally the whole thing every single time you have a conversation with it."*(02:44~02:47) *"That means long sessions get slower, more expensive, and usually lower quality."*(02:47~02:51) 처방은 *"if you're switching a topic or you're building something new, always start a new session."*(02:51~02:55) ⚠️ [[prompt-caching]]과 compaction을 말하지 않는 단순화이고 "lower quality"의 근거는 없다. 규칙 자체는 이 페이지의 reset 쪽 판단과 같은 방향이다.
+
+## 6주 스레드를 받치는 것 — 진행 메모 + 자동 compaction (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
+
+[[vaibhav-srivastav|VB]]의 첫 번째 기능(goal)에 붙은 두 장치(해설 전달): ① **지금까지 한 일과 남은 일을 메모로** 남기게 하라 — 중간에 끊겨도 그 메모를 읽고 돌아올 수 있다(리셋 대비). ② 몇십 턴(판독 추정)을 가면 맥락이 넘치므로 [[codex|Codex]]는 오래된 대화를 자동으로 압축하는 **compaction** 을 기본으로 켠다 — *따로 켤 필요도 없다.* 농담이라며 *석 달째 돌고 있는 스레드* 도 있다고 했다. 즉 장기 스레드는 **compaction(연속) + 외부 메모(리셋 복구)** 를 함께 쓴다.

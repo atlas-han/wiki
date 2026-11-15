@@ -1279,5 +1279,10 @@
   "02.wiki/entities/megaspeed.md": "LiBuilding",
   "02.wiki/entities/colette-kress.md": "LiUser",
   "02.wiki/concepts/discovery-remediation-gap.md": "LiShield",
-  "02.wiki/concepts/key-person-risk.md": "LiBookText"
+  "02.wiki/concepts/key-person-risk.md": "LiBookText",
+  "01.raw/articles/2026-11-14_프롬프트 200단어로 6주를 일한 AI OpenAI가 공개한 멈추지 않는 Codex 에이전트 8분 정리.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-codex-agents-that-dont-quit.md": "LiVideo",
+  "02.wiki/entities/aaron-friel.md": "LiUser",
+  "02.wiki/entities/vaibhav-srivastav.md": "LiUser",
+  "02.wiki/concepts/flaky-tests.md": "LiFlaskConical"
 }

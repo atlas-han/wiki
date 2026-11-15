@@ -6,9 +6,9 @@ tags: [subagents, delegation, multi-agent, threads, visibility, codex, context-i
 aliases: [thread-to-thread handoff, 스레드 간 핸드오프, side thread, 위임 가시성]
 related: [agent-swarm, orchestrator-searcher-split, persistent-agent-teams, goal-level-delegation, multiplayer-agent-context, agent-attention-management, dynamic-workflows, cross-harness-skill-compilation, always-on-agent-architecture, fork-subagent]
 first-seen: tech-bridge-cooking-with-codex
-sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost]
+sources: [tech-bridge-cooking-with-codex, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-codex-agents-that-dont-quit]
 created: 2026-10-11
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 
 # 서브에이전트 vs 스레드 간 핸드오프
@@ -78,3 +78,9 @@ updated: 2026-11-03
 ## 다른 축 — 무엇을 들려 보내나: fork vs fresh (2026-11-03 · [[tech-bridge-better-stack-claude-code-agent-summary-cost]])
 
 [[claude-code|Claude Code]]에는 서브에이전트가 두 종류 있다(화자 설명): 부모 대화 전체와 prompt cache를 물려받는 **fork 서브에이전트**, 그리고 *"start fresh with only the task that Claude hands them"*(03:44~03:46)인 일반 서브에이전트. 이 페이지의 축(위임을 누구에게 보이게 할지)과 직교하는 **맥락 상속의 축**이다 → [[fork-subagent]].
+
+## 6주 실험의 분업 — 메인 스레드는 조율, 느린 일은 하위 에이전트 · 쪼갤 일은 스레드, 어려운 한 문제는 Ultra (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
+
+[[aaron-friel|Aaron Friel]]의 [[codex|Codex]] 에이전트는 처음 한 스레드에서 조사 · 수정을 다 했고, 어려운 문제 하나에 붙잡히면 다른 실패가 쌓였다. 나흘째 단 한 번의 개입(*잡일은 하위 에이전트에게*, 판독 추정) 이후 **메인 스레드 = 테스트 실행 · 실패 수집 · 사람에게 메시지**, **하위 에이전트 = 코드 내려받기 · 수정 · CI 재업로드**. 6주 동안 하위 에이전트 세션 5,800+(해설 전달). 원음(화자 미발화): *"I give an agent a job and then it manages a team of agents to get it done for me."*(03:23~03:27)<!--k-->
+
+[[vaibhav-srivastav|VB]]의 구분은 위 축에 하나를 더한다 — **병렬로 쪼갤 수 있는 일은 자식 스레드**(각자 worktree), **GPU 버그 같은 어려운 한 문제는 Ultra**(긴 사고 시간 안에서 하위 에이전트들이 서로 다른 가설). *넓게 쪼갤 것인가, 한 문제를 깊게 팔 것인가* 의 선택이다.

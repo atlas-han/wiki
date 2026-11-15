@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-14
+updated: 2026-11-15
 ---
 
 # Index
@@ -182,6 +182,8 @@ updated: 2026-11-14
 - [[alex-karp]] — Palantir 공동창업자 · CEO, 사회 이론 박사. *AI는 일자리를 늘리지만 격차를 키운다*, 부유세는 감시 때문에 반대 · 상속세 50% + 정부 낭비 맞교환, 전장 AI의 국내 사용 금지 ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 원음 거의 무캡션 · 해설 요약, 당사자 인센티브
 - [[lydia-hallie]] — Anthropic Claude Code 팀. AI Engineer Code Summit *Rethinking Claude Code Best Practices* — 사람이 하던 다섯 가지 일(조종 · 승인 · 거절 · 확인 · 시작)이 어디로 옮겨 갔나, 거절 규칙의 기준은 *되돌릴 수 있는가?* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]) ⚠️ 원음 무캡션 · 해설 요약
 - [[colette-kress]] — NVIDIA CFO. 2026-11-12 Jensen Huang 사임과 함께 임시 CEO, 이사회 의장 자리 신설 · 정식 CEO는 안팎에서 탐색 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 해설 전달
+- [[aaron-friel]] — OpenAI 엔지니어 생산성 담당(철자 추정). DevDay 2026 *Coding Agents That Don't Quit* — Codex 에이전트 하나에게 200단어 프롬프트로 CI 플레이키 테스트를 6주 · 1,000시간+ 맡겨 213건 머지. 1년 전은 절차형 7시간 ([[tech-bridge-codex-agents-that-dont-quit]])
+- [[vaibhav-srivastav]] — VB. OpenAI DevDay 2026 두 번째 발표자, Codex를 멈추지 않게 하는 기능 6가지(goal · 원격 · 플러그인 · 자식 스레드 · Ultra · heartbeat), 뉘르부르크링 20.8km 3D 재구성 게시물 ([[tech-bridge-codex-agents-that-dont-quit]])
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -773,6 +775,7 @@ updated: 2026-11-14
 - [[waterfall-model]] — 워터폴. Royce 1970 논문은 그림 아래 *위험하고 실패를 부른다* 고 썼고 되먹임 화살표 · *두 번 하라* 를 처방했다, 이름은 1976년 Bell & Thayer. SDD 논쟁의 기준점 ([[tech-bridge-sdd-vs-waterfall]] · [[tech-bridge-kent-beck-craft-augmented-development]]) ⚠️ 논문 미열람, 해설 · 화자 기억
 - [[ai-sovereignty]] — AI 주권. 외부 모델 회사에 데이터 · 역량을 넘기지 않겠다는 주장이자 판매 언어(Palantir *언어 모델 연구소의 속국*). 근거로 든 *Anthropic이 고객 데이터로 학습* 은 약관 문구와 다름(해설) ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 판매자의 언어
 - [[human-loop-roles-relocation]] — 사람의 다섯 가지 일 이양. 조종 → 모델(CLAUDE.md는 저장소로 알 수 없는 것만) · 승인 → auto mode(사람 14% vs 89%) · 거절 → 되돌릴 수 없는 것만 규칙 + 샌드박스 · 클라우드 세션 · 확인 → 훅(exit 2) · 시작 → CI · Claude 리뷰 · 지휘자 세션. *대부분은 모델, 보장은 하네스* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]) ⚠️ 해설 요약
+- [[flaky-tests]] — 플레이키 테스트, 다시 돌리면 통과하는 실패. 끝없고 반복적이며 테스트가 곧 판정기라 장기 에이전트에 맞는 일 — Codex 6주 실험(대기 호출 13% · 시간당 CI 1회 예산 · 테스트 삭제 대신 비판자 에이전트 · GPU 하이젠버그) ([[tech-bridge-codex-agents-that-dont-quit]])
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1056,10 +1059,11 @@ updated: 2026-11-14
 - [[tech-bridge-jensen-huang-resignation-timeline]] — 한국어 해설(8:50, 챕터 10, Korean original · AI 음성, Bloomberg 원음 무캡션, 2026-11-13 12:00 KST): [[jensen-huang|Jensen Huang]] 사임까지 14일을 확인 / 보도 / 부인으로 — [[megaspeed|Megaspeed]]와 미국 · 싱가포르 조사, 10-29 NYT 첫 보도, 하원 서한, 11-08 사과 메일 · 이사회 독립 조사, 주가 급락, 11-11 반전, 11-12 발표 · 임시 CEO [[colette-kress|Colette Kress]] → [[key-person-risk]] ⚠️ 원 발표 · 보도 미열람, 의혹은 보도 단계
 - [[tech-bridge-lauren-tan-agents-merge-own-prs]] — 한국어 해설(10:14, 챕터 9, Korean original · AI 음성, 원음 조각 2개만 en-orig, 멤버 전용 → 11-14 공개, 2026-11-13 18:00 KST): [[lauren-tan|Lauren Tan]] Maven 워크숍(2026-08-12) 요약 — 신뢰 곡선, control-glass, 피처 맵, 실패를 스킬로 · 시험인 줄 모르는 eval, Benny · *워크트리는 끝났다*, Dune, 다섯 층 · 리뷰 댓글은 코드 냄새, 토큰 vs 사람 → [[agent-trust-curve]] ⚠️ 09-12 워크숍과 같은 것이면 녹화일 08-12(추정)
 - [[tech-bridge-openai-gpt-6-cyber-keynote]] — 한국어 해설(9:07, 챕터 9, Korean original, 키노트 원음 무캡션, 2026-11-14 08:00 KST): OpenAI *Cyber at the Frontier* 키노트를 글 기록과 대조 — PHP2Shell 두 달, 948개, Firefox 81 vs 권고문 41, ExploitBench 슬라이드 vs 문서, PatchBench, 허니팟, Daybreak Red Team · Defense Factory → [[discovery-remediation-gap]] · [[gpt-6-cyber]] ⚠️ 수치는 OpenAI 자체 발표
+- [[tech-bridge-codex-agents-that-dont-quit]] — 한국어 해설(8:27, 챕터 10, Korean original · AI 음성) 프롬프트 200단어로 6주를 일한 AI — OpenAI DevDay 2026 *Coding Agents That Don't Quit*: [[aaron-friel|Friel]]의 Codex 에이전트가 CI 플레이키 테스트 6주 · 213건 머지, 나흘째 *잡일은 하위 에이전트에게*, [[vaibhav-srivastav|VB]]의 기능 6가지, 비용 32 → 16달러(챕터만 · 캡션 무캡션). 멤버 전용 → 공개 전환
 
 ## 통계
 
-- 총 페이지 수: 1020 (1012 → 1020, + 2026-11-14 Tech Bridge 3편(11-13 업로드 — GPT-6 Cyber 키노트 대조 · Lauren Tan 10분 정리 · Jensen Huang 사임 14일): source 3 · entity 3(gpt-6-cyber · megaspeed · colette-kress) · concept 2(discovery-remediation-gap · key-person-risk) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1020과 일치)
+- 총 페이지 수: 1024 (1020 → 1024, + 2026-11-15 Tech Bridge 1편(11-14 업로드 — 멈추지 않는 Codex 에이전트 8분 정리): source 1 · entity 2(aaron-friel · vaibhav-srivastav) · concept 1(flaky-tests) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1024와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-14 (Tech Bridge **3편** — 11-13 업로드 [[tech-bridge-jensen-huang-resignation-timeline|젠슨 황 사임, 발표문에 이유는 없었다]](`P8cP0PDll2Q`) · [[tech-bridge-lauren-tan-agents-merge-own-prs|에이전트가 자기 PR을 직접 머지한다]](`ezPSsVW92Mg`, 멤버 전용 → 공개) · [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber, 리눅스 버그 948개]](`5WmvC9_wHE0`). `fq8GI-7bjgc` 멤버 전용 신규, `AYCGbCxXHMU` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-13 (Tech Bridge **2편** — 11-12 업로드 [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]](`M_yjL9qgwDo`) · [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]](`7Yj-f3izMbE`). `AYCGbCxXHMU` 멤버 전용 신규, `ezPSsVW92Mg` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-15 (Tech Bridge **1편** — 11-14 업로드 [[tech-bridge-codex-agents-that-dont-quit|프롬프트 200단어로 6주를 일한 AI]](`AYCGbCxXHMU`, 멤버 전용 → 공개). `fq8GI-7bjgc` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-14 (Tech Bridge **3편** — 11-13 업로드 [[tech-bridge-jensen-huang-resignation-timeline|젠슨 황 사임, 발표문에 이유는 없었다]](`P8cP0PDll2Q`) · [[tech-bridge-lauren-tan-agents-merge-own-prs|에이전트가 자기 PR을 직접 머지한다]](`ezPSsVW92Mg`, 멤버 전용 → 공개) · [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber, 리눅스 버그 948개]](`5WmvC9_wHE0`). `fq8GI-7bjgc` 멤버 전용 신규, `AYCGbCxXHMU` · `Yhck-x6VuLs` 멤버 전용 지속)
