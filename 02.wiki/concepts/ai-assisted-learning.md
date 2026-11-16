@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [learning, ai-tutor, cognitive-offloading, prompting, verification, education]
 aliases: [AI로 공부하기, AI 학습 역할, AI tutor roles, 도움받기 vs 생각 맡기기]
-related: [sycophancy, retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom]
+related: [sycophancy, retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom, ai-learning-polarization]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era]
 created: 2026-10-09
-updated: 2026-10-21
+updated: 2026-11-16
 ---
 
 # AI 보조 학습 — 역할 분담
@@ -69,3 +69,7 @@ updated: 2026-10-21
 
 - [[tech-bridge-learn-anything-with-ai]] · [[nick-saraev]] · [[retrieval-practice]] · [[cognitive-offloading]]
 - [[tech-bridge-top-1-percent-ai-habits]] (업무 편) · [[sycophancy]]
+
+## 위쪽 봉우리의 질문 · 힌트만 주는 튜터 (2026-11-16 · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]])
+
+[[alex-kontorovich|Kontorovich]]가 본 강의실의 *위쪽 봉우리* 학생은 AI에게 *교수가 한 이 말이 무슨 뜻이야 · 지난 3주치 노트로 문제를 내줘* 라고 묻고, 아래쪽은 *답만 알려줘* 라고 묻는다 — 이 페이지의 *도움받기 vs 생각 맡기기* 를 학생의 실제 질문으로 보여 준다. PNAS 2025(해설 전달)는 **도구 쪽 개입** 도 보탠다: 답을 주지 않고 교사가 만든 힌트만 주도록 설계한 AI 튜터에서는 GPT-4를 그냥 쓴 쪽의 손해(시험 −17%)가 대부분 줄었다. 역할 분담을 학생의 습관에만 맡기지 않고 **튜터 설계에 넣을 수 있다** 는 근거다. → [[ai-learning-polarization]]

@@ -7,9 +7,9 @@ aliases: [Theo, t3.gg, Theo - t3.gg, 태오, 테오, Tae-o, Teo, T3 Code, T3 Cha
 links:
   - https://www.youtube.com/watch?v=GtJKFhztgdM
   - https://github.com/pingdotgg/t3code
-sources: [tech-bridge-theo-coding-is-gardening, tech-bridge-codex-app-server, tech-bridge-pstack-third-party-review, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-better-stack-claude-code-agent-summary-cost]
+sources: [tech-bridge-theo-coding-is-gardening, tech-bridge-codex-app-server, tech-bridge-pstack-third-party-review, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-16
 ---
 
 # Theo
@@ -53,3 +53,15 @@ updated: 2026-11-11
 
 - [[tech-bridge-theo-coding-is-gardening]] — 2026-11-10 한국어 해설(6:21), 원 영상 `GtJKFhztgdM`의 2차 전달
 - https://github.com/pingdotgg/t3code (설명란 PR 링크의 저장소, 위키 미열람)
+
+## Fable 5.2 vs Opus 5.5 — *Stop Picking The Wrong Model* (2026-11-16 · [[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+Tech Bridge 해설(원 영상 `XtykeVoSmP8` 42분 · 공식 가이드 · X 게시물 3건의 2차 전달, ⚠️ 본인 음성 무캡션 · 원 자료 미열람). [[fable-5-2|Fable 5.2]] 출시 당일 *"오퍼스를 쓸지 페이블을 쓸지 벌써 헷갈린다"*, 일곱 시간쯤 뒤 *"페이블 5.2가 오퍼스라면 안 했을 멍청한 실수를 많이 한다"*(X 게시물, 해설 전달).
+
+- **두 모델만 남겼다** — 코딩 모델 열 개 넘게에서 Opus · Fable만. 근거는 성능 점수를 *구독 요금 기준 비용* 으로 다시 그린 차트.
+- **자기 계정 측정**(설명란이 구분): 3달 · 요청 110만 건으로 월 200달러 요금제 환산 — Opus만 쓰면 API 값 약 14,600달러 치, Fable만 쓰면 3,000달러 치(주간 한도의 절반까지만). 속도 Haiku 255 · Sonnet 145 · Opus 112 · **Fable 106** tok/s(예상은 50~60).
+- **effort**: 공식 기본값 medium 대신 **high** 추천 — medium은 일찍 멈추고 확인을 덜 하고, max는 쉬운 일에도 억지로 오래 생각해 엉뚱한 일을 벌인다. → [[reasoning-effort-levels]]
+- **기질 비유**: Opus = 모범생 · 앨런(꼼꼼, 틀은 의심하지 않음), Fable = 뒷자리 · 브래드(틀을 의심, *LGTM*). Opus에게 *좋은 생각 같으면 하고 아니면 다른 방법을 제안해라* 를 붙인다. → [[model-temperament-routing]](신규)
+- **T3 Code 사례**: 며칠씩 도는 스레드를 휴대폰에서 빨리 열리게 기록을 조각내는 작업 — Opus의 테스트 환경을 Fable이 검증해 *끝나지 않은 할 일 목록이 기록 전체를 끌고 간다* 는 문제를 짚었다. 챕터 제목의 *150분의 1* 은 캡션에 없다.
+- **자체 평가판**: 종합 순위 Fable 3위(Sonnet · Opus 아래), 코드 리뷰에서 문제 있는 코드를 더 자주 통과 — 그러나 놓친 지적 대부분이 *안 고쳐도 되는 것* 이었다(Theo 재해석). *지금까지는 그랬다*, 언제든 뒤집힐 수 있다.
+- 11-10 *정원사* 편의 T3 Code · Rust 재작성과 이어진다 — 이번엔 *TypeScript를 Rust로 다시 쓰는 일* 이 *검증 가능한 일 = Opus로 충분* 의 예로 나온다.

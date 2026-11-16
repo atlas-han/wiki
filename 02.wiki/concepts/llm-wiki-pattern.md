@@ -5,9 +5,9 @@ category: pattern
 tags: [knowledge-base, workflow, llm-tooling]
 related: [agent-harness-design, memex, code-knowledge-graph, obsidian-cli-workflow, company-brain, sweeper-agent, no-silent-write]
 first-seen: karpathy-llm-wiki-gist
-sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-context-engineering-four-failure-modes]
+sources: [karpathy-llm-wiki-gist, xda-obsidian-cli-terminal-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-context-engineering-four-failure-modes, tech-bridge-matt-pocock-home-repo-pattern]
 created: 2026-05-25
-updated: 2026-10-20
+updated: 2026-11-16
 ---
 
 # LLM Wiki Pattern
@@ -90,3 +90,7 @@ LLM이 점진적으로 유지·확장하는 마크다운 기반 개인 지식 �
 ## "영구 오염"의 세션 판본 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
 
 위 절의 *"정보 하나가 틀리면 영원히 오염된다"*([[tech-bridge-agent-to-agent-as-search]])는 공유 지식 층의 실패였다. [[martin-keen|Martin Keen]]([[ibm|IBM Technology]])은 같은 일을 **한 세션의 자기 메모**에서 보인다(context poisoning, 04:50~05:17). 처방 둘 — 쓰기 전에 *"check it against something real"*(07:39~07:46), 정정되면 *"just delete the old version rather than leaving both"*(09:10~09:16) — 은 이 위키 운영 규칙(raw 대조 후 기록, 덮어쓰기 대신 갱신·⚠️ 표시)과 같은 방향이다. 차이: 이 위키는 옛 주장을 지우지 않고 `> ⚠️ Contradiction:`으로 **남기는** 쪽을 택한다. 세션 창(attention이 유한한 곳)과 지식 베이스(감사 이력이 필요한 곳)의 요구가 다르다(위키 판독). → [[context-failure-modes]] · [[no-silent-write]]
+
+## 홈 레포 안의 LLM 위키 — Matt Pocock (2026-11-16 · [[tech-bridge-matt-pocock-home-repo-pattern]])
+
+[[matt-pocock|Matt Pocock]]은 [[home-repo-pattern|홈 레포]]를 **퍼스널 위키** 라 부른다 — 사업의 중요한 자료를 마크다운으로 쌓은 큰 위키가 들어 있고, 본인 표현으로 *"카파시 스타일의 LLM 위키"*(05:37~05:39, 해설 전달). 에이전트가 거기서 자료를 꺼내 **강의 · 콘텐츠를 만드는 데** 쓴다 — 이 패턴이 *지식 축적* 을 넘어 **생산의 원료 저장소** 로 쓰이는 첫 사례다. 같은 저장소에 외부 서비스 명령(Gmail · Slack · Discord · YouTube · GitHub · Calendar)이 붙어 있어 한 세션에서 메시지 찾기 → 코드 수정 → 강의 수정을 잇는다. 위키를 만들고 최신으로 유지하는 법은 *다음 영상에서* 다루겠다고 했다(⚠️ 원 영상 · 글 미열람).

@@ -8,9 +8,9 @@ links:
   - https://x.com/mattpocockuk
   - https://www.linkedin.com/in/mapocock/
   - https://aihero.dev
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern]
 created: 2026-10-09
-updated: 2026-10-25
+updated: 2026-11-16
 ---
 
 # Matt Pocock
@@ -59,3 +59,12 @@ Tech Bridge 해설 영상이다. 설명란은 *"Eric Tech가 소개한 Matt Poco
 - **/implement-spec** — 10-05 발표에 없던 스킬이다. 의존 관계를 보고 바로 시작할 수 있는 티켓부터 여러 에이전트에 나누고 결과를 한 갈래에 모은다.
 - **/pr** — 요약(다이어그램) · 근거(스크린샷, 테스트) · merge danger(롤백, blast radius). 발표에서는 *"currently in progress"* 였다. → [[agent-change-evidence]]
 - **/retro** — 핵심 파일 위치를 남겨 다음 탐색을 줄이고, 기계가 볼 것은 자동 검사로, 판단은 사람이 읽을 규칙으로 보낸다. → [[skill-self-improvement]]
+
+## 홈 레포 패턴 (2026-11-16 · [[tech-bridge-matt-pocock-home-repo-pattern]])
+
+Tech Bridge 해설(그의 영상 `hWe-j78vNpc`와 같은 날 올라온 aihero.dev 글 기준, ⚠️ 원 자료 미열람 · 본인 음성 무캡션). 멀티 레포 조직에서 스킬 · AGENTS.md · 공유 문서 · 도구를 **집이 되는 저장소 하나** 에 모으고 다른 저장소는 경로 한 줄로 가리킨 뒤 에이전트는 늘 거기서 실행한다 — *"너무 뻔해서 올릴 생각도 안 했다"*(설명란)던 기법. X 게시물은 며칠 만에 조회수 28만 · 북마크 4,900(해설 전달). → [[home-repo-pattern]]
+
+- 규모 사다리 ~20개 포인터 → ~400개 영역 파일(점진적 공개) → 수천 개 스킬 마켓플레이스. 모노레포가 되면 모노레포가 먼저.
+- 자기 홈 레포를 **퍼스널 위키** 라 부른다 — *Karpathy 스타일 LLM 위키* 와 Gmail · Slack · Discord · YouTube · GitHub · Calendar 명령. 위키 유지 방법은 *다음 영상에서* → [[llm-wiki-pattern]]
+- 공개 스킬 저장소 `mattpocock/skills`(10-25 소스의 그 저장소)도 홈 레포에서 포인터 한 줄로 연결된다.
+- ⚠️ 해설이 짚는다: 한 사람의 경험, 효과 수치 없음, *에이전트 코딩 강의를 파는 사람* — 이 페이지 *태도* 절의 *효과 주장은 자기 경험 · 소개하는 스킬은 자기 제품* 과 같은 단서.

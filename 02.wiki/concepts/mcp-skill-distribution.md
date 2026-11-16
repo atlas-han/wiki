@@ -6,9 +6,9 @@ tags: [mcp, agent-skills, distribution, governance, skills-over-mcp, enterprise-
 aliases: [skills over MCP, MCP 스킬 배포, 원격 스킬 서버]
 related: [model-context-protocol, agent-skills, run-trace-skill-distillation, agent-org-adoption, prompt-injection, agent-governance-layers, deferred-tool-context]
 first-seen: tech-bridge-runlayer-self-improving-skills-mcp
-sources: [tech-bridge-runlayer-self-improving-skills-mcp]
+sources: [tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-matt-pocock-home-repo-pattern]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-16
 ---
 
 # MCP를 스킬의 배포 계층으로
@@ -52,3 +52,7 @@ updated: 2026-10-16
 
 - [[tech-bridge-runlayer-self-improving-skills-mcp]] — first-seen
 - [[model-context-protocol]] · [[agent-skills]] · [[prompt-injection]] · [[run-trace-skill-distillation]]
+
+## 어디서부터 배포 인프라인가 — 홈 레포의 상한 (2026-11-16 · [[tech-bridge-matt-pocock-home-repo-pattern]])
+
+[[matt-pocock|Matt Pocock]]의 [[home-repo-pattern|홈 레포 패턴]]은 스킬 배포의 *가벼운 끝* 이다 — 집 저장소 하나에 스킬을 두고 다른 저장소는 경로 한 줄로 가리킨다. 그 글이 스스로 긋는 상한(해설 전달): ~20개 저장소는 포인터 한 줄씩, ~400개는 영역별 파일로 점진적 공개, **수천 개는 스킬을 쓰는 곳이 너무 많아 *스킬 마켓플레이스가 더 맞다*.** 이 페이지의 원격 MCP 배포 · 게이트웨이가 그 마지막 칸에 해당한다(위키의 연결) — 팀 규모와 조직 규모의 경계가 사용자 쪽에서 처음 그어진다.

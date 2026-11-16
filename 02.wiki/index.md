@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-15
+updated: 2026-11-16
 ---
 
 # Index
@@ -184,6 +184,10 @@ updated: 2026-11-15
 - [[colette-kress]] — NVIDIA CFO. 2026-11-12 Jensen Huang 사임과 함께 임시 CEO, 이사회 의장 자리 신설 · 정식 CEO는 안팎에서 탐색 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 해설 전달
 - [[aaron-friel]] — OpenAI 엔지니어 생산성 담당(철자 추정). DevDay 2026 *Coding Agents That Don't Quit* — Codex 에이전트 하나에게 200단어 프롬프트로 CI 플레이키 테스트를 6주 · 1,000시간+ 맡겨 213건 머지. 1년 전은 절차형 7시간 ([[tech-bridge-codex-agents-that-dont-quit]])
 - [[vaibhav-srivastav]] — VB. OpenAI DevDay 2026 두 번째 발표자, Codex를 멈추지 않게 하는 기능 6가지(goal · 원격 · 플러그인 · 자식 스레드 · Ultra · heartbeat), 뉘르부르크링 20.8km 3D 재구성 게시물 ([[tech-bridge-codex-agents-that-dont-quit]])
+- [[lex-fridman]] — 팟캐스트 진행자. #503 *긴급 방송* — AI가 수학 난제를 *풀었다고 주장* 한 직후 수학자 셋에게 학생 조언을 묻고, 생존자 편향을 스스로 꺼낸다 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 원음 무캡션 · 해설 전달
+- [[alex-kontorovich]] — 럿거스대 수학자. 강의실 성적이 *두 봉우리* 로 갈라진다 · 분포의 머리가 되라 · 계산기 70년에도 구구단 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달
+- [[steven-brunton]] — 워싱턴대 수학자. 컴퓨터가 더 잘해도 선형대수는 직접 — 직관, 호기심과 집중은 지루함에서 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달
+- [[ankur-moitra]] — MIT 수학자. 성공의 공식이 창 밖으로, 일하는 이유는 안에서 · 불확실함을 견딜 목적 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달, 일부 대목은 더빙으로만
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -550,6 +554,7 @@ updated: 2026-11-15
 - [[high-agency]] — 문제와 함께 해결책을, 말 대신 프로토타입을 들고 오는 사람. 만들기가 싸진 시대의 가장 중요한 능력이라는 [[peter-steinberger|Steinberger]]의 조언, 학위보다 확신과 만든 것 ([[tech-bridge-peter-steinberger-2027-developer]]) ⚠️ 한 사람의 조언 · 해설 전달
 - [[discovery-remediation-gap]] — 찾기와 고치기의 속도 차. 자율 파이프라인 1회 948개 vs PHP2Shell 버그 하나 수정에 두 달(조율 붕괴 · 패치 나흘 전 공격) · ExploitBench +24 vs PatchBench +5.6. 보안 판 검증 비대칭 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 - [[key-person-risk]] — 핵심 인물 의존 위험. *AI 산업 → NVIDIA → 한 사람*: 33년 단일 CEO, 공개 승계 계획 없음, 사임 뒤 임시 CEO · 이사회 의장 신설, 최고점 대비 30% 가까운 하락 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 사임 이유 미기재
+- [[ai-learning-polarization]] — AI 학습 양극화, 같은 AI · 같은 강의실에서 성적이 두 봉우리로. 갈림길은 *쓰느냐* 가 아니라 *무엇을 묻느냐* — PNAS 2025 GPT-4 연습 +48% · 시험 −17%, 힌트만 주는 튜터는 손해 대부분 감소 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 원 논문 미열람
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -776,6 +781,8 @@ updated: 2026-11-15
 - [[ai-sovereignty]] — AI 주권. 외부 모델 회사에 데이터 · 역량을 넘기지 않겠다는 주장이자 판매 언어(Palantir *언어 모델 연구소의 속국*). 근거로 든 *Anthropic이 고객 데이터로 학습* 은 약관 문구와 다름(해설) ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 판매자의 언어
 - [[human-loop-roles-relocation]] — 사람의 다섯 가지 일 이양. 조종 → 모델(CLAUDE.md는 저장소로 알 수 없는 것만) · 승인 → auto mode(사람 14% vs 89%) · 거절 → 되돌릴 수 없는 것만 규칙 + 샌드박스 · 클라우드 세션 · 확인 → 훅(exit 2) · 시작 → CI · Claude 리뷰 · 지휘자 세션. *대부분은 모델, 보장은 하네스* ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]) ⚠️ 해설 요약
 - [[flaky-tests]] — 플레이키 테스트, 다시 돌리면 통과하는 실패. 끝없고 반복적이며 테스트가 곧 판정기라 장기 에이전트에 맞는 일 — Codex 6주 실험(대기 호출 13% · 시간당 CI 1회 예산 · 테스트 삭제 대신 비판자 에이전트 · GPU 하이젠버그) ([[tech-bridge-codex-agents-that-dont-quit]])
+- [[home-repo-pattern]] — 홈 레포. 스킬 · AGENTS.md · 공유 문서 · 도구를 집 저장소 하나에, 다른 저장소는 경로 한 줄, 에이전트는 늘 거기서 실행. ~20개 포인터 · ~400개 영역 파일(점진적 공개) · 수천 개 마켓플레이스 ([[tech-bridge-matt-pocock-home-repo-pattern]]) ⚠️ 한 사람의 경험, 효과 수치 없음
+- [[model-temperament-routing]] — 모델 기질로 고르기. 꼼꼼한 모범생 Opus(앨런) vs 틀을 의심하는 Fable(브래드, LGTM) — 검증 가능한 일은 Opus, 정답 없는 일 · 검토는 Fable ([[tech-bridge-theo-fable-vs-opus-when-to-use]]) ⚠️ Theo 개인 해석
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1060,10 +1067,13 @@ updated: 2026-11-15
 - [[tech-bridge-lauren-tan-agents-merge-own-prs]] — 한국어 해설(10:14, 챕터 9, Korean original · AI 음성, 원음 조각 2개만 en-orig, 멤버 전용 → 11-14 공개, 2026-11-13 18:00 KST): [[lauren-tan|Lauren Tan]] Maven 워크숍(2026-08-12) 요약 — 신뢰 곡선, control-glass, 피처 맵, 실패를 스킬로 · 시험인 줄 모르는 eval, Benny · *워크트리는 끝났다*, Dune, 다섯 층 · 리뷰 댓글은 코드 냄새, 토큰 vs 사람 → [[agent-trust-curve]] ⚠️ 09-12 워크숍과 같은 것이면 녹화일 08-12(추정)
 - [[tech-bridge-openai-gpt-6-cyber-keynote]] — 한국어 해설(9:07, 챕터 9, Korean original, 키노트 원음 무캡션, 2026-11-14 08:00 KST): OpenAI *Cyber at the Frontier* 키노트를 글 기록과 대조 — PHP2Shell 두 달, 948개, Firefox 81 vs 권고문 41, ExploitBench 슬라이드 vs 문서, PatchBench, 허니팟, Daybreak Red Team · Defense Factory → [[discovery-remediation-gap]] · [[gpt-6-cyber]] ⚠️ 수치는 OpenAI 자체 발표
 - [[tech-bridge-codex-agents-that-dont-quit]] — 한국어 해설(8:27, 챕터 10, Korean original · AI 음성) 프롬프트 200단어로 6주를 일한 AI — OpenAI DevDay 2026 *Coding Agents That Don't Quit*: [[aaron-friel|Friel]]의 Codex 에이전트가 CI 플레이키 테스트 6주 · 213건 머지, 나흘째 *잡일은 하위 에이전트에게*, [[vaibhav-srivastav|VB]]의 기능 6가지, 비용 32 → 16달러(챕터만 · 캡션 무캡션). 멤버 전용 → 공개 전환
+- [[tech-bridge-theo-fable-vs-opus-when-to-use]] — 한국어 해설(8:26, 챕터 10, 오디오 ko 하나 · en-orig 없음, Theo 원음 무캡션, 2026-11-15 12:00 KST): [[theo|Theo]] *Stop Picking The Wrong Model* × [[addy-osmani|Addy Osmani]] 공식 가이드 — 시작은 Opus · effort high, 구독 환산(월 200달러로 Opus 약 14,600 vs Fable 3,000달러 치), 속도 112 vs 106, 모범생 · 뒷자리, T3 Code, 앨런과 브래드 → [[model-temperament-routing]] ⚠️ 구독 · 속도는 Theo 계정 측정, *150분의 1* 은 챕터만
+- [[tech-bridge-matt-pocock-home-repo-pattern]] — 한국어 해설(8:33, 챕터 9, 오디오 ko 하나 · en-orig 없음, 멤버 전용 → 11-16 공개, 2026-11-15 21:00 KST): [[matt-pocock|Matt Pocock]] 홈 레포 패턴 — 복사 · 사용자 폴더의 한계, 경로 한 줄, 규모 사다리, 모노레포, 퍼스널 위키와 도구, 프롬프트 4단계 → [[home-repo-pattern]] ⚠️ aihero.dev 글 기준 2차 전달
+- [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]] — 한국어 해설(8:54, 챕터 9, Korean original + 영어 더빙, 원음 무캡션 · ko-orig가 내레이션 일부를 놓침, 2026-11-16 07:00 KST): [[lex-fridman|Lex Fridman]] #503 수학자 셋의 조언 — 두 봉우리, PNAS 실험, 호기심과 지루함, 안에서 나오는 이유, 이미 이겼다고 치고, 생존자 편향 → [[ai-learning-polarization]] ⚠️ 원 자료 미열람
 
 ## 통계
 
-- 총 페이지 수: 1024 (1020 → 1024, + 2026-11-15 Tech Bridge 1편(11-14 업로드 — 멈추지 않는 Codex 에이전트 8분 정리): source 1 · entity 2(aaron-friel · vaibhav-srivastav) · concept 1(flaky-tests) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1024와 일치)
+- 총 페이지 수: 1034 (1024 → 1034, + 2026-11-16 Tech Bridge 3편(11-15 업로드 — 수학자 3명의 조언 · 홈 레포 패턴 · Fable vs Opus): source 3 · entity 4(lex-fridman · alex-kontorovich · steven-brunton · ankur-moitra) · concept 3(ai-learning-polarization · home-repo-pattern · model-temperament-routing) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1034와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-15 (Tech Bridge **1편** — 11-14 업로드 [[tech-bridge-codex-agents-that-dont-quit|프롬프트 200단어로 6주를 일한 AI]](`AYCGbCxXHMU`, 멤버 전용 → 공개). `fq8GI-7bjgc` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-14 (Tech Bridge **3편** — 11-13 업로드 [[tech-bridge-jensen-huang-resignation-timeline|젠슨 황 사임, 발표문에 이유는 없었다]](`P8cP0PDll2Q`) · [[tech-bridge-lauren-tan-agents-merge-own-prs|에이전트가 자기 PR을 직접 머지한다]](`ezPSsVW92Mg`, 멤버 전용 → 공개) · [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber, 리눅스 버그 948개]](`5WmvC9_wHE0`). `fq8GI-7bjgc` 멤버 전용 신규, `AYCGbCxXHMU` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-16 (Tech Bridge **3편** — 11-15 업로드 [[tech-bridge-theo-fable-vs-opus-when-to-use|Fable 5.2 vs Opus 5.5, 언제 뭘 써야 하나]](`LUKuCe3rcis`) · [[tech-bridge-matt-pocock-home-repo-pattern|홈 레포 패턴]](`fq8GI-7bjgc`, 멤버 전용 → 공개) · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era|수학자 3명이 한 조언]](`YSMIkavxsZE`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-15 (Tech Bridge **1편** — 11-14 업로드 [[tech-bridge-codex-agents-that-dont-quit|프롬프트 200단어로 6주를 일한 AI]](`AYCGbCxXHMU`, 멤버 전용 → 공개). `fq8GI-7bjgc` · `Yhck-x6VuLs` 멤버 전용 지속)

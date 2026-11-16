@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, claude-code, software-factory, verification, code-review, accountability]
 aliases: [Addy Osmani, 애디 오스마니, Addy]
 links: []
-sources: [tech-bridge-anthropic-30k-merges-verification, tech-bridge-addy-osmani-which-claude-model]
+sources: [tech-bridge-anthropic-30k-merges-verification, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-10-31
-updated: 2026-11-13
+updated: 2026-11-16
 ---
 
 # Addy Osmani
@@ -36,3 +36,7 @@ updated: 2026-11-13
 claude.dev 블로그 글 *"Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku"*(2026-11-09, 설명란)의 저자로 두 번째 등장. 결론 세 줄 — Opus 5.5 medium에서 시작, 모델을 바꾸기 전에 effort, 토큰 단가가 아니라 완료한 작업당 비용. 네 모델 가격 · 기본 effort 표, 작업별 배정, 계단식 재실행(전부 low · 실패만 high), 캐시가 모델에 묶이는 문제, 서브에이전트 · 워커 · 어드바이저, 모델 전환 전 400 오류 규칙을 담았다(⚠️ 해설 전달, 원 글 미열람) → [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]] · [[model-mixing-economics]].
 
 - 10-30 편의 소속 근거(*"at Anthropic, like we"*)와 이번 글의 게재처(Claude 개발자 블로그)가 같은 방향이다.
+
+## 2026-11-16 — Theo가 맞춰 본 공식 가이드 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+같은 가이드(claude.dev, 2026-11-09)를 두 번째 Tech Bridge 해설이 [[theo|Theo]]의 영상과 대조한다. 가이드에서 옮긴 값은 11-12 해설과 같다 — *대부분 Opus medium에서 시작*, Fable 칸은 대규모 리팩터링 · 마이그레이션 · 아키텍처 · 서브에이전트 지휘, SWE-bench Pro(medium −2.5p · 70%, xhigh +1.4p · 2.5배), Frontier Code 2.0(Opus max 45.5% · Fable high 45.3%), *high를 넘기려면 한 단계 위 모델을 낮은 effort로*. 마지막 권고 *Opus를 쓰다가 Opus가 아쉬워지는 순간에 Fable*. Theo가 붙인 단서: *절반* 은 API 가격 기준이고 구독에서는 계산이 뒤집힌다. ⚠️ 원 글 미열람.

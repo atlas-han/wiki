@@ -2734,3 +2734,33 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 1편 · 8분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1115/`: 11-14 스크립트 복사 — `lines.py` · `meta.py` · `gaps.py` · `q.py` · `build_raw.py` · `merge.py`, 새 페이지 `new/`, 보강 절 `sec/`). `q.py check` 33건 불일치 0(영어 조각 2건은 `<!--k-->`로 ko 코퍼스 고정). raw 헤더 ASR 판독 시각은 손 대조로 1곳 수정. ⭐ **원음 조각이 ko-orig에만 있고 en-orig가 비는 구성**이 처음 나왔다(11-12 Karp 편은 반대로 en-orig에 남았다) — 무캡션 판정은 두 트랙 모두 볼 것. ⚠️ 신규 페이지의 교차 참조를 log 줄 번호로 짚을 때는 그 줄이 속한 `## [` 머리를 확인할 것 — flaky 인과를 처음엔 Gitar 편으로 잘못 붙였다가 Ironclad 편([[tech-bridge-trusted-throughput]])으로 고쳤다.
+
+## [2026-11-16] ingest | Tech Bridge — 11-15 업로드 3편 (Fable vs Opus · 홈 레포 패턴 · 수학자 3명의 조언)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 공개 3편: `LUKuCe3rcis`(11-15 12:00 KST — 11-15 회차 뒤) · `fq8GI-7bjgc`(**멤버 전용 → 공개 전환**, 11-14 회차부터 멤버 전용, `upload_date` 20261113 → 20261115, 21:00 KST) · `YSMIkavxsZE`(11-16 07:00 KST — 이 회차 두 시간 전). `Yhck-x6VuLs` 멤버 전용 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 3 · entity 4 · concept 3**, 기존 페이지 보강 16개(+ tech-bridge), index **1024 → 1034**(실측 일치).
+
+- `LUKuCe3rcis`(8:26, 챕터 10) → [[tech-bridge-theo-fable-vs-opus-when-to-use]]: [[theo|Theo]] *Stop Picking The Wrong Model*(42분)을 [[addy-osmani|Addy Osmani]] 공식 가이드와 대조. 오디오 ko 하나 · **en-orig 없음**, `ko` = `ko-orig`(`variant=gemini`). Theo 원음 여덟 곳 무캡션.
+  - 신규: [[model-temperament-routing]]
+  - 보강: [[theo]] · [[fable-5-2]](실수 · 속도 106 · 구독에선 아껴 쓸 모델) · [[claude-opus-5-5]](모범생 · high 추천 · 구독 효율) · [[addy-osmani]] · [[reasoning-effort-levels]](high가 꼭짓점 · max는 엉뚱) · [[true-cost-to-perfect-answer]](과금 방식에 따라 뒤집힘) · [[bring-your-own-subscription]](구독 기준 비용 차트) · [[automated-code-review]](LGTM 재해석) · [[tech-bridge-addy-osmani-which-claude-model]](두 번째 해설)
+  - ⭐ 가이드 수치(SWE-bench Pro medium −2.5p · 70% / xhigh +1.4p · 2.5배, Frontier Code 2.0 Opus max 45.5% · Fable high 45.3%)가 11-12 해설과 일치. 11-10 발표문 해설의 Fable 5.2 *49.1* 은 여전히 미해결.
+  - ⚠️ 챕터 제목 *T3 Code와 150분의 1* 의 수치는 캡션에 없다(05:59~06:05 무캡션). effort 등급표 *맨 위가 하이, 맨 아래가 맥스* 는 좋은 순 표로 읽었다(위키 해석). 구독 환산 · 속도는 Theo 한 계정 측정.
+  - 페이지화하지 않음: T3 Code(→ theo) · Artificial Analysis · SWE-bench Pro · Frontier Code 2.0 · 앨런 · 브래드(비유).
+- `fq8GI-7bjgc`(8:33, 챕터 9) → [[tech-bridge-matt-pocock-home-repo-pattern]]: [[matt-pocock|Matt Pocock]] 홈 레포 패턴, aihero.dev 글 기준 해설. 오디오 ko 하나 · en-orig 없음. 무캡션 여섯 곳(00:00~00:08 포함 — *너무 뻔해서* 대목은 맺음 · 설명란으로만).
+  - 신규: [[home-repo-pattern]]
+  - 보강: [[matt-pocock]] · [[agent-skills]](스킬이 사는 자리) · [[llm-wiki-pattern]](홈 레포 안의 Karpathy식 위키 — 콘텐츠 생산 원료) · [[mcp-skill-distribution]](수천 개 → 마켓플레이스 경계)
+  - ⚠️ 효과 수치 없음 · 한 사람의 경험 · 제안자가 강의 판매자(해설이 스스로 짚음). 28만 · 4,900 · 38개는 해설 전달.
+  - 페이지화하지 않음: aihero.dev 글 · `mattpocock/skills` · AGENTS.md · CLAUDE.md · 모노레포 · git submodule.
+- `YSMIkavxsZE`(8:54, 챕터 9) → [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]: [[lex-fridman|Lex Fridman]] Podcast #503 수학자 셋의 조언을 원 자료(PNAS 2025 · Pew 2건 · Common Sense Media 2023)와 대조. Korean original + 영어 더빙(메타 `language`=`en`).
+  - 신규: [[lex-fridman]] · [[alex-kontorovich]] · [[steven-brunton]] · [[ankur-moitra]] · [[ai-learning-polarization]]
+  - 보강: [[cognitive-offloading]](첫 통제 실험 수치) · [[ai-assisted-learning]](위쪽 봉우리의 질문 · 힌트 튜터) · [[ai-formal-verification]](받는 쪽 반응 · Tao *끔찍하다*)
+  - ⭐ **처음 본 구성: ko-orig가 내레이션을 놓친 구간**(06:09~06:37 · 06:50~07:13) — 영어 더빙에만 문장이 있다(Moitra 대학 시절 · Sanjeev Arora · Brunton 커리어 조언). 내용 존재만 기록, 인용하지 않음. 원음 발췌로 보이는 세 곳(01:48~01:53 · 03:10~03:16 · 03:32~03:39)은 두 트랙 모두 비었다.
+  - ⚠️ 원 논문 · 조사 · 전사본 미열람. *렉스 테그마크* → Max Tegmark(더빙 근거). Pew 일자리 조사 *올해 6월* vs 설명란 링크 08-18 게시 — 조사 시점과 게시일로 추정. 이 *수학 난제* 가 위키의 OpenAI Navier-Stokes 주장과 같은 사건인지 미확인.
+  - 페이지화하지 않음: Terence Tao · Sanjeev Arora · Max Tegmark · PNAS 논문 · Pew Research · Common Sense Media.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+3편 · 8~9분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1116/`: 11-15 스크립트 복사 — `lines.py` · `meta.py` · `gaps.py` · `q.py` · `merge.py` · `shared.py`, `build_raw.py`는 인자를 받게 일반화, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secC/` · `secABC/`). `q.py check` 87건 불일치 0. ⭐ **무캡션 구간을 원음 발췌로 단정하기 전에 다른 트랙을 볼 것** — 수학자 편은 ko-orig가 내레이션 40초가량을 통째로 놓쳤고 더빙이 그 자리를 채웠다. en-orig가 없는 편(오디오 ko 하나)에서는 이 구분이 불가능하므로 *내용 미상* 으로만 둔다.
+

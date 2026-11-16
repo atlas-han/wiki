@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use]
 links: []
 created: 2026-10-09
-updated: 2026-11-13
+updated: 2026-11-16
 ---
 
 # Claude Opus 5.5
@@ -94,3 +94,12 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 - SWE-bench Pro(high 기준): medium −2.5p · 비용 70%, low −8p · 1/3, extra high +1.4p · 2.5배. Frontier Code 2.0 max 45.5%(11-10 발표문 해설의 *45.5* 와 같은 값). Terminal-Bench 3.0 high 58.9%로 Fable 5.1 max 58.0%를 토큰 절반으로 앞섬. 전부 low + 실패만 high 재실행 ≈ 97% · 17센트 vs 전부 high 95.3% · 29센트 → [[true-cost-to-perfect-answer]].
 - 혼합: Opus 지휘 + Sonnet 5.5 워커가 단독보다 약 1/3 저렴 · 성능 비슷. Fable 5.1 어드바이저를 붙이면 약 1.7 오르고 비용 2.1배. 도구 사용 강제 시 400 오류, 항상 생각을 켠 채 동작 → [[model-mixing-economics]].
 - 같은 날 [[lydia-hallie|Lydia Hallie]] 발표 해설: 올해 초 Opus 4.5보다 *의도와 코드베이스를 훨씬 잘 이해해* 중간 조종이 줄었다. 리디아의 구성은 지휘 세션 Fable · 작업 스레드 Opus 5.5.
+
+## 2026-11-16 — 모범생 · 앨런: Theo의 기본 모델 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+[[theo|Theo]] 해설(⚠️ 원 영상 미열람): **시작은 Opus** — 공식 가이드와 같은 결론이지만 effort는 medium이 아니라 **high** 추천. SWE-bench Pro(medium −2.5p · 비용 70%, xhigh +1.4p · 2.5배)와 Frontier Code 2.0 max 45.5%는 11-12 가이드 해설과 같은 값으로 다시 나온다.
+
+- **기질**: 시킨 일은 끝까지, 두세 번 확인 — *대신 시킨 일 자체는 의심하지 않는다*, 가만 두면 기능 · 스펙이 부푼다. 보완 한 줄 *좋은 생각 같으면 하고 아니면 다른 방법을 제안해라*. 리뷰어로는 *작은 PR에도 댓글 여덟 개* 인 앨런. → [[model-temperament-routing]]
+- **속도** 112 tok/s(Theo 측정), Fable 5.2 106과 거의 같다.
+- **구독 효율**: 월 200달러 요금제로 API 값 약 14,600~15,000달러 치(Theo 계정 3달 · 110만 요청) — Fable의 약 5배. → [[bring-your-own-subscription]]
+- 검증 가능한 일(TypeScript → Rust 재작성)은 Opus로 충분. Opus의 선택지가 뻔하거나 같은 자리를 맴돌 때 Fable로.

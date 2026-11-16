@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [reasoning-effort, effort-level, cost, benchmark, fable-5-2, claude-code, api, prompt-engineering]
 aliases: [effort level, reasoning effort, 추론 강도, effort setting, low/medium/high/xhigh/max, extra high, xhigh]
-related: [prompt-debt, ultracode, model-mixing-economics, token-roles, fable-5-2, claude-opus-5-5]
+related: [prompt-debt, ultracode, model-mixing-economics, token-roles, fable-5-2, claude-opus-5-5, model-temperament-routing]
 first-seen: tech-bridge-chase-ai-fable-5-2-prompting-rules
-sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model]
+sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-11-12
-updated: 2026-11-13
+updated: 2026-11-16
 ---
 
 # 추론 강도 (Reasoning Effort Levels)
@@ -63,3 +63,7 @@ updated: 2026-11-13
 - 막힐 때의 순서: ① 스스로 검증할 수단 ② effort 한 단계 ③ 한 단계 위 모델 · 더 낮은 effort. 자동 검증이 되면 **전부 low → 실패만 high**(Opus 5.5 ≈ 97% · 17센트 vs 전부 high 95.3% · 29센트) → [[true-cost-to-perfect-answer]].
 - Haiku 4.5 → 5.5 이전 시 budget tokens를 effort 수준으로 바꿔야 한다. Opus · Fable은 항상 생각을 켠 채 동작한다.
 - 이 페이지의 열린 질문(11-10 발표문 해설 49.1 vs Chase AI 45.3%)에 한 조각: 이 가이드도 Fable 5.2 **high** 45.3%를 적는다. 49.1은 다른 effort 값일 수 있다(⚠️ 위키의 추정).
+
+## 2026-11-16 — 실무자의 등급표: high가 꼭짓점, max는 엉뚱해진다 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+[[theo|Theo]]의 Opus effort 등급표(X 게시물, 해설 전달): 맨 위 high · 맨 아래 max. medium은 *조금 일찍 멈추고 확인을 덜 한다*, max는 *쉬운 일에도 억지로 오래 생각하게 만들어 오히려 엉뚱한 일을 벌인다*. 공식 기본값(medium)과 달리 **high를 추천** 한다. 공식 가이드의 *high를 넘기려면 effort 대신 모델을 한 단계 올려 낮은 effort로* 와 합치면 — **effort 사다리의 꼭대기는 max가 아니라 *다음 모델의 낮은 effort*** 라는 같은 결론을 벤더 수치(Frontier Code 2.0 Opus max 45.5% ≈ Fable high 45.3%)와 실무자 체감이 각각 준다. ⚠️ 등급표 원문 미열람, Theo 개인 평.

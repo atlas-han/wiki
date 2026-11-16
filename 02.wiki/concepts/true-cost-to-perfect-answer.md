@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [token-economics, cost, reliability, expected-value, evaluation, token-roles, anthropic]
 aliases: [진짜 비용, 예산 나누기 합격률, 기대 실행 횟수, 완료한 작업당 비용, cost per completed task, 작업당 비용]
-related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing, automatic-model-routing, reasoning-effort-levels]
+related: [all-or-nothing-accuracy, fixed-budget-alpha, token-roles, trusted-throughput, overspending-underusing-loop, model-mixing-economics, verification-cost-asymmetry, compute-constrained-growth, token-minimization-trap, value-maxing, automatic-model-routing, reasoning-effort-levels, bring-your-own-subscription]
 first-seen: tech-bridge-tokens-should-have-jobs
-sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-addy-osmani-which-claude-model]
+sources: [tech-bridge-tokens-should-have-jobs, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-09-18
-updated: 2026-11-13
+updated: 2026-11-16
 ---
 
 # 완벽한 답까지의 진짜 비용
@@ -100,3 +100,7 @@ updated: 2026-11-13
 - ⭐ **계단식 재실행** — 결과를 자동으로 확인할 수 있으면 *"전부 로우로 돌리고 실패한 [음악] 작업만 하이로 다시 돌리는 것입니다."*(04:07~04:11) Opus 5.5에서 약 97% 통과 · 작업당 약 17센트 vs 전부 high 95.3% · 29센트. 이 페이지의 *예산 ÷ 합격률* 로 보면 low의 싼 예산에 합격률을 재실행으로 메우는 전략이다(위키의 읽기). 전제는 실패를 기계가 아는 것이다.
 - 측정 절차: 실제 작업 · 통과 기준 → 후보 모델을 effort 두세 단계로 → 작업마다 비용 기록 → 점수 × 지출 그래프([[cost-vs-score-frontier]]) → 실제 트래픽 일부에 먼저. Claude Code에서는 `/model` 로 두 모델에 돌려 `/usage` 를 비교한다.
 - 10-09 Kimchi 편 · 11-02 Saraev 편의 *작업당 비용* 이 실무자 측정이었다면, 이번엔 **모델을 파는 쪽의 가이드가 같은 단위를 권한다.** → [[reasoning-effort-levels]]
+
+## 2026-11-16 — 작업당 비용은 과금 방식에 따라 뒤집힌다 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+이 페이지의 *Fable high가 Opus max와 점수는 같고 작업당 비용은 절반* 은 **API 가격 기준** 이다. [[theo|Theo]]가 자기 계정 3달 · 요청 110만 건으로 잰 **구독** 환산(해설 전달)은 반대다: 월 200달러 요금제로 Opus만 쓰면 API 값 약 14,600달러 치, Fable만 쓰면 3,000달러 치 — Fable은 주간 한도의 절반까지만 쓸 수 있다. *완료한 작업당 비용* 의 분모가 토큰 단가가 아니라 **한도** 일 때는 같은 비교가 Opus 쪽으로 기운다. ⚠️ 계정 하나의 측정, 요금 정책이 바뀌면 달라진다(해설). → [[bring-your-own-subscription]]

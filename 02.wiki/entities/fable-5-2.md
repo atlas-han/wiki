@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-11-11
-updated: 2026-11-13
+updated: 2026-11-16
 ---
 
 # Claude Fable 5.2
@@ -85,3 +85,13 @@ updated: 2026-11-13
 - 캐시 읽기 가격은 Opus 5.5와 같아(100만 토큰당 20센트) 긴 실행에서는 차이가 캐시되지 않은 입력 · 출력에서만 난다(거기서 토큰당 2배).
 - ⚠️ 11-10 발표문 해설의 Frontier Code *49.1* 은 이 가이드의 high 45.3%와 다르다 — 다른 effort의 값일 수 있다(위키의 추정, 미확인).
 - 같은 날 [[lydia-hallie|Lydia Hallie]] 발표 해설: 지휘자 세션(판단)은 *페이블*, 작업 스레드는 Opus 5.5 — 버전은 발화되지 않는다(tags에 Fable 5.2).
+
+## 2026-11-16 — Theo의 실사용 판정: 덜 꼼꼼하지만 틀을 의심한다 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+[[theo|Theo]]의 *Stop Picking The Wrong Model* 해설(⚠️ 원 영상 · 공식 글 미열람, Theo 음성 무캡션):
+
+- **실수**: 출시 당일 *Opus라면 안 했을 멍청한 실수를 많이 한다*(X 게시물). 같은 테스트 환경을 만들게 하면 Opus보다 빠진 경우가 많다. Theo 자체 평가판 종합 3위(Sonnet · Opus 아래), 리뷰에서 문제 있는 코드를 더 자주 통과 — 단 놓친 지적 대부분이 *안 고쳐도 되는 것* 이었다는 재해석.
+- **강점**: Opus가 깐 환경을 검증해 구조 문제를 짚고 다른 설계를 제안(T3 Code). 정답이 없는 일(그래픽 · 인프라 구조)에서 Opus가 못 내는 안. → [[model-temperament-routing]]
+- **속도**: Theo 측정 **106 tok/s** — Opus 112와 거의 같고 Fable 5.1(80 안팎)보다 빠르다. 공식 글 *이전 버전보다 출력 최대 30% 빠름*, Artificial Analysis 범위와 겹침(해설 전달).
+- **구독에서는 아껴 쓸 모델**: Fable은 주간 한도의 절반까지만 — 월 200달러로 API 값 3,000달러 치(Opus는 약 14,600달러 치, Theo 한 계정 측정). API 기준 *작업당 절반* 과 반대 방향이다. → [[bring-your-own-subscription]]
+- Frontier Code 2.0 high **45.3%** 가 세 번째 소스에서 같은 값으로 나온다(Chase AI 편 · 가이드 해설 · 이 편). 11-10 발표문 해설의 *49.1* 은 여전히 미해결.

@@ -8,7 +8,7 @@ author: Tech Bridge (한국어 해설, AI 내레이션) · 바탕 Addy Osmani "W
 date-published: 2026-11-12
 ingested: 2026-11-13
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-16
 ---
 
 # Tech Bridge — Fable·Opus·Sonnet·Haiku, 어떤 Claude 모델로 만들어야 할까?
@@ -111,3 +111,7 @@ updated: 2026-11-13
 - 영상: https://www.youtube.com/watch?v=M_yjL9qgwDo
 - raw: `01.raw/articles/2026-11-12_Fable·Opus·Sonnet·Haiku 어떤 Claude 모델로 만들어야 할까 모델 선택 가이드 9분 총정리.md`
 - 설명란 참고(위키 미열람): https://claude.dev/blog/which-claude-model-should-you-build-with/ · https://platform.claude.com/docs/en/about-claude/models/choosing-a-model · https://platform.claude.com/docs/en/build-with-claude/effort · https://code.claude.com/docs/en/model-config
+
+## 후속 — 같은 가이드의 두 번째 해설 (2026-11-16 · [[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+11-15 업로드 해설이 같은 가이드를 [[theo|Theo]]의 *Stop Picking The Wrong Model* 과 맞춰 본다. 가이드에서 옮긴 수치(SWE-bench Pro medium −2.5p · 70% / xhigh +1.4p · 2.5배, Frontier Code 2.0 Opus max 45.5% · Fable high 45.3%)는 이 페이지와 같다. 새로 붙은 것은 Theo 쪽 — 구독 한도 환산(월 200달러로 Opus 약 14,600달러 치 vs Fable 3,000달러 치), 속도(Opus 112 · Fable 106 tok/s), effort high 추천, 기질 비유([[model-temperament-routing]]).

@@ -1284,5 +1284,18 @@
   "02.wiki/sources/tech-bridge-codex-agents-that-dont-quit.md": "LiVideo",
   "02.wiki/entities/aaron-friel.md": "LiUser",
   "02.wiki/entities/vaibhav-srivastav.md": "LiUser",
-  "02.wiki/concepts/flaky-tests.md": "LiFlaskConical"
+  "02.wiki/concepts/flaky-tests.md": "LiFlaskConical",
+  "01.raw/articles/2026-11-15_이건 꼭 직접 해라 AI 시대 젊은이들에게 수학자 3명이 한 조언 성적이 두 봉우리로 갈라진다.md": "LiNewspaper",
+  "01.raw/articles/2026-11-15_저장소 38개를 에이전트 하나로 홈 레포 패턴 Matt Pocock이 너무 뻔해서 안 올리려던 기법.md": "LiNewspaper",
+  "01.raw/articles/2026-11-15_Fable 5.2 vs Opus 5.5 언제 뭘 써야 하나 테오의 40분을 공식 가이드와 맞춰 본 8분 정리.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-lex-fridman-mathematicians-advice-ai-era.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-matt-pocock-home-repo-pattern.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-theo-fable-vs-opus-when-to-use.md": "LiVideo",
+  "02.wiki/entities/lex-fridman.md": "LiUser",
+  "02.wiki/entities/alex-kontorovich.md": "LiUser",
+  "02.wiki/entities/steven-brunton.md": "LiUser",
+  "02.wiki/entities/ankur-moitra.md": "LiUser",
+  "02.wiki/concepts/ai-learning-polarization.md": "LiGraduationCap",
+  "02.wiki/concepts/home-repo-pattern.md": "LiHouse",
+  "02.wiki/concepts/model-temperament-routing.md": "LiSplit"
 }

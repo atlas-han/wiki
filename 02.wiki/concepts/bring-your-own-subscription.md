@@ -6,9 +6,9 @@ tags: [platform, subscription, pricing, app-developer, token-economics, openai, 
 aliases: [BYO subscription, bring your own subscription, 구독 연동, 구독 이동]
 related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth, reserve-then-settle]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-10-09
-updated: 2026-10-16
+updated: 2026-11-16
 ---
 
 # 구독을 들고 다니기
@@ -61,3 +61,7 @@ Altman은 이를 플랫폼 철학 안에 놓는다 — *"let people build apps i
 - [[openai]] · [[sam-altman]] · [[dan-shipper]]
 - 관련: [[software-marginal-cost]] · [[model-mixing-economics]] · [[intelligence-abundance]]
 - [[tech-bridge-stigg-ai-companies-building-banks]] — 반대 방향의 사건(Anthropic, 화자 주장) · [[reserve-then-settle]]
+
+## 구독 기준으로 다시 그린 모델 비용 — Theo (2026-11-16 · [[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+[[theo|Theo]]는 모델 성능 점수를 API 값이 아니라 **구독 요금 기준 비용** 으로 다시 그려 *같은 돈이면 Claude 구독으로 가장 많은 일* 을 시킬 수 있다고 주장한다(해설 전달). 자기 계정 3달 · 요청 110만 건 환산: 월 200달러로 [[claude-opus-5-5|Opus]] 약 14,600달러 치 · [[fable-5-2|Fable]] 3,000달러 치(Fable은 주간 한도의 절반까지만). 구독이 *API 가격표와 다른 두 번째 가격표* 가 되어 모델 선택을 바꾼다 — T3 Code가 사용자 구독으로 Codex를 쓰는 구조(10-14)와 같은 축의 사용자 쪽 계산이다. ⚠️ 한 계정 측정, *요금 정책이 바뀌면 달라질 얘기* (해설).

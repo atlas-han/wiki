@@ -3,11 +3,11 @@ title: Cognitive Offloading
 type: concept
 category: technique
 tags: [education, llm, learning]
-related: [regulatory-capture, retrieval-practice, ai-assisted-learning, ai-flipped-classroom, ai-engineering-skills-map]
+related: [regulatory-capture, retrieval-practice, ai-assisted-learning, ai-flipped-classroom, ai-engineering-skills-map, ai-learning-polarization]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-andrew-ng-ai-engineering-skills-map]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-lex-fridman-mathematicians-advice-ai-era]
 created: 2026-08-31
-updated: 2026-11-01
+updated: 2026-11-16
 ---
 
 # Cognitive Offloading
@@ -39,3 +39,10 @@ Wikipedia/검색은 사실 도구로 괜찮지만, 모델에게 일을 시켜 �
 새로운 것은 **대상**이다. *"I think people still underestimate the degree to which this is happening among working adults."*(09:49~09:55) 그리고 자기 이야기로 — *"I love my coding agents, helps you do a ton of work, but the reduced thinking I have to do"*(09:55~10:03, 문장이 편집으로 끊긴다). 이 페이지의 다른 소스들이 **학습자**를 다뤘다면, 이 편은 **코딩 에이전트를 쓰는 개발자 본인**을 같은 위험 안에 넣는다. 같은 영상 앞부분의 *"the coding agent will make a bunch of trade-offs that you didn't even know it made"*(04:37~04:43)가 업무 쪽 결과다 → [[ai-engineering-skills-map]].
 
 단서는 유지된다: *"there are ways to use LLMs that do improve learning"*(10:05~10:10) — 그러나 *"the vast majority of ways that the vast majority of people use LLMs does not result in learning."*(10:20~10:23) → 그 *ways* 의 목록은 [[ai-assisted-learning]].
+
+## 첫 통제 실험 수치 — PNAS 2025 *가드레일 없는 생성형 AI* (2026-11-16 · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]])
+
+이 페이지의 근거는 지금까지 진술 · 사례였다. [[lex-fridman|Lex Fridman]] Podcast #503 해설이 PNAS 2025 실험(설명란 *Generative AI without guardrails can harm learning*, ⚠️ 원 논문 미열람)을 옮긴다: 튀르키예 한 고등학교 약 1,000명, GPT-4를 그냥 쓴 학생은 연습 점수 **+48%** 인데 AI 없이 본 시험은 *아예 안 쓴 학생보다* **−17%**. 연구진의 표현은 *목발* 이고, 가장 많이 보낸 메시지는 *"What is the answer?"* 였다. **답 대신 교사가 만든 힌트만 주는 튜터** 에서는 손해가 대부분 줄었다 — Ng의 *숙제 점수↑ 장기 성과↓* 에 실험 쪽 숫자와 개입 하나가 붙는다.
+
+- 수학자들의 처방도 같은 축이다: [[alex-kontorovich|Kontorovich]] *계산기 70년, 여전히 구구단* · [[steven-brunton|Brunton]] *컴퓨터가 더 잘해도 선형대수는 배워야 — 직접 해봐야 감이 생긴다*.
+- 집단 분포에서 보이는 모양은 [[ai-learning-polarization]](신규, 두 봉우리).

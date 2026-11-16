@@ -5,9 +5,9 @@ category: technique
 tags: [formal-verification, lean, proof, security, navier-stokes, verifiable-code]
 related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery, agent-verification-skill]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs, tech-bridge-altman-devday-dots, tech-bridge-kent-beck-craft-augmented-development]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs, tech-bridge-altman-devday-dots, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-lex-fridman-mathematicians-advice-ai-era]
 created: 2026-09-20
-updated: 2026-10-09
+updated: 2026-11-16
 ---
 
 # AI가 여는 형식 검증
@@ -74,3 +74,7 @@ updated: 2026-10-09
 대신 *"low defect densities with a combination of examples, automated tests, carefully chosen, and foolproofing uh of the design"*(40:25~40:38) — 단 지니는 *"doesn't want to foolproof the design"*(40:51~40:55).
 
 > ⚠️ **Contradiction(관점).** Brockman 쪽(처리량 문제 → AI가 푼다) vs Beck(구조 문제 → AI로도 남는다). Lauren Tan의 *"여전히 열린 문제"* 와 같은 편. 청중 질문(36:46)에 대한 즉답이며 사례·측정은 없다.
+
+## 받는 쪽의 반응 — 수학자들의 *긴급 방송* (2026-11-16 · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]])
+
+이 페이지의 Navier-Stokes 줄기는 지금까지 *주장하는 쪽*(OpenAI · Altman)의 진술이었다. [[lex-fridman|Lex Fridman]] Podcast #503 해설은 받는 쪽을 처음 준다: 지난 몇 주 새 기계가 나비에-스토크스 방정식 · Unique Games 추측 · 다른 결과 수백 개를 *풀었다고 주장* 했고, 방송도 *풀었다가 아니라 주장했다* 고 표현한다. Lex가 읽은 Terence Tao의 글은 *끔찍하다* 로 시작한다 — 대학원생 · 박사후 연구원이 몇 년씩 파던 문제들이 발표 한 번에 흩어졌다. [[ankur-moitra|Moitra]]: 성공의 공식이 창 밖으로 던져졌다. ⚠️ 위 OpenAI 주장과 같은 사건인지 해설은 밝히지 않는다(추정). 전사본 미열람.

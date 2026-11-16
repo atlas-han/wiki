@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop, prompt-injection, review-harness, agents]
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
-related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis, review-model-inversion]
+related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis, review-model-inversion, model-temperament-routing]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-theo-fable-vs-opus-when-to-use]
 created: 2026-10-03
-updated: 2026-11-08
+updated: 2026-11-16
 ---
 
 # 자동 코드 리뷰
@@ -160,3 +160,7 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 - **버그만이 아니다** — *"code can be very very bad even if it's not buggy."*(10:00~10:02) *"your correct code can actually still be quite wrong."*(10:35~10:37) Slack 한두 문장으로 시킨 일이면 리뷰어는 티켓 · 문서 없이 의도를 판단할 수 없다.
 
 > ⚠️ **성공 지표가 이 페이지의 기록과 다르다.** 위 Voss 절은 리뷰 제품들의 성공 지표를 *사람이 수락하는가*로 정리했고 Greptile을 같은 목록에 올렸다. 이 발표는 **사고 PR을 얼마나 잡는가**를 제시하고 수락률은 말하지 않는다. Greptile의 실제 내부 지표는 확인하지 않았다. 사고 PR 재생은 **재현율 쪽**만 재고, nitpick을 줄였는지(정밀도 쪽)를 어떻게 재는지는 말하지 않는다.
+
+## LGTM의 재해석 — 꼼꼼한 리뷰어와 빨리 보내는 리뷰어 (2026-11-16 · [[tech-bridge-theo-fable-vs-opus-when-to-use]])
+
+[[theo|Theo]]의 비유(해설 전달): 6년 넘게 이 코드를 본 **앨런**(작은 PR에도 댓글 여덟 개) = [[claude-opus-5-5|Opus]], 경력 20년+ · 온 지 석 달인 **브래드**(고치기 어려운 위험만 보고 *LGTM*) = [[fable-5-2|Fable]]. Theo 자체 평가판에서 Fable은 *조금 문제 있는 코드를 그냥 통과시키는 일* 이 잦았는데, 놓친 지적을 하나씩 보니 대부분 *안 고쳐도 되는 것* 이었고 Opus가 붙잡던 작업을 Fable은 *이대로 괜찮다* 며 머지했다. 리뷰 에이전트를 고를 때 *얼마나 많이 잡나* 만 재면 꼼꼼한 쪽이 이기지만, **변경의 위험도에 따라 리뷰어 기질을 고른다** 는 축이 따로 있다 → [[model-temperament-routing]] · [[risk-proportional-human-review]]. ⚠️ Theo 개인 평가 · *지금까지는 그랬다*.

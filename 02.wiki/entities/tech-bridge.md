@@ -184,8 +184,11 @@ sources:
   - tech-bridge-lauren-tan-agents-merge-own-prs
   - tech-bridge-jensen-huang-resignation-timeline
   - tech-bridge-codex-agents-that-dont-quit
+  - tech-bridge-lex-fridman-mathematicians-advice-ai-era
+  - tech-bridge-matt-pocock-home-repo-pattern
+  - tech-bridge-theo-fable-vs-opus-when-to-use
 created: 2026-06-03
-updated: 2026-11-15
+updated: 2026-11-16
 ---
 
 # Tech Bridge
@@ -1737,3 +1740,19 @@ updated: 2026-11-15
 - 원 발표(`U1IVZy9FhVQ`) · OpenAI Cookbook PLANS.md 글 · VB 게시물은 미열람.
 
 **멤버 전용**: `fq8GI-7bjgc`(목록 `upload_date` 20261113, *저장소 38개를 에이전트 하나로? '홈 레포' 패턴 | Matt Pocock이 너무 뻔해서 안 올리려던 기법*, 8:33 — 이번 회차 단건 조회로 제목 · 날짜 처음 확인) 지속(목록 stderr ERROR, 단건 `subscriber_only` 줄). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 목록 20편 요청 → 19줄 + ERROR 1.
+
+## 2026-11-15 업로드 — 수학자 3명의 조언 · 홈 레포 패턴 · Fable vs Opus (2026-11-16 ingest)
+
+[[tech-bridge-theo-fable-vs-opus-when-to-use|Fable 5.2 vs Opus 5.5, 언제 뭘 써야 하나 | 테오의 40분을 공식 가이드와 맞춰 본 8분 정리]](`LUKuCe3rcis`, 8:26, 공식 챕터 10) — 한국어 해설, Theo *Stop Picking The Wrong Model* × Addy Osmani 공식 가이드 ([[model-temperament-routing]](신규) · [[theo]] · [[fable-5-2]] · [[claude-opus-5-5]] · [[addy-osmani]] · [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]] · [[bring-your-own-subscription]] · [[automated-code-review]] · [[tech-bridge-addy-osmani-which-claude-model]])
+
+[[tech-bridge-matt-pocock-home-repo-pattern|저장소 38개를 에이전트 하나로? ‘홈 레포’ 패턴 | Matt Pocock이 너무 뻔해서 안 올리려던 기법]](`fq8GI-7bjgc`, 8:33, 공식 챕터 9) — 한국어 해설, aihero.dev 글 기준 ([[home-repo-pattern]](신규) · [[matt-pocock]] · [[agent-skills]] · [[mcp-skill-distribution]] · [[llm-wiki-pattern]])
+
+[[tech-bridge-lex-fridman-mathematicians-advice-ai-era|“이건 꼭 직접 해라” AI 시대 젊은이들에게 수학자 3명이 한 조언 | 성적이 두 봉우리로 갈라진다]](`YSMIkavxsZE`, 8:54, 공식 챕터 9) — 한국어 해설, Lex Fridman Podcast #503 × PNAS · Pew · Common Sense 원 자료 ([[lex-fridman]] · [[alex-kontorovich]] · [[steven-brunton]] · [[ankur-moitra]] · [[ai-learning-polarization]](모두 신규) · [[cognitive-offloading]] · [[ai-assisted-learning]] · [[ai-formal-verification]])
+
+- 구성 두 가지: **Fable · 홈 레포 편은 오디오 ko 하나 · en-orig 없음**(11-13 Lydia Hallie 편과 같음, `en`은 기계 번역), **수학자 편은 Korean original + 영어 더빙**(메타 `language`=`en`). 셋 다 `ko` = `ko-orig`(`variant=gemini`). 인용은 ko-orig.
+- ⭐ **처음 본 구성: ko-orig가 내레이션을 놓쳤다.** 수학자 편 06:09~06:37 · 06:50~07:13은 영어 더빙에만 문장이 있다(Moitra의 대학 시절 · Sanjeev Arora의 조언 · Brunton의 커리어 조언) — 위키는 내용 존재만 적고 인용하지 않았다. 지금까지는 *무캡션 = 원음 발췌* 로 읽었는데, **두 트랙을 모두 봐야** 내레이션 누락과 원음 발췌를 가를 수 있다.
+- 세 편 모두 원 화자(Theo · Pocock · 세 수학자 · Lex) 음성은 캡션에 없다. ⚠️ 챕터 제목만 있는 수치: Fable 편 *150분의 1*.
+- `fq8GI-7bjgc`는 11-14 회차부터 멤버 전용이었다가 **11-16 공개 전환**(`upload_date` 20261113 → 20261115, 11-15 21:00 KST 게시). 게시 시각: Fable 편 11-15 12:00 KST(11-15 회차 뒤) · 수학자 편 **11-16 07:00 KST**(이 회차 두 시간 전).
+- 원 영상(`XtykeVoSmP8` · `hWe-j78vNpc` · `Kw7THrfbA5U`) · 공식 가이드 · aihero.dev 글 · 팟캐스트 전사본 · PNAS 논문은 미열람.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 중인 다른 멤버 전용 영상 없음. 목록 20편 요청 → **20줄**(stderr ERROR 없음).

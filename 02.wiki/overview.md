@@ -3,7 +3,7 @@ title: Overview
 type: overview
 tags: [meta, synthesis]
 created: 2026-05-25
-updated: 2026-11-15
+updated: 2026-11-16
 sources: []
 ---
 
@@ -297,6 +297,7 @@ Clavié 편은 반대쪽에서 온다. [[knowledge-agents-vs-coding-agents]]는 
 - *2026-11-13*: [[tech-bridge]] **2편** ingest(11-12 업로드, 둘 다 Anthropic 쪽 실무 가이드 해설). [[tech-bridge-addy-osmani-which-claude-model|어떤 Claude 모델로 만들어야 할까]] — [[addy-osmani|Addy Osmani]]의 가이드로 위키에 처음 네 모델의 가격 · 기본 effort 표가 들어오고([[claude-sonnet-5-5|Sonnet 5.5]] · [[claude-haiku-5-5|Haiku 5.5]] 신규, [[claude-opus-5-5|Opus 5.5]] $4/$20), *모델보다 effort 먼저 · 완료한 작업당 비용* 이 [[reasoning-effort-levels]] · [[true-cost-to-perfect-answer]]에 벤더 판으로 붙는다. [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices|사람은 위험한 명령의 14%만 잡았다]] — [[lydia-hallie|Lydia Hallie]]가 사람이 하던 다섯 가지 일을 모델 · 하네스 · 환경에 나눠 준다 → [[human-loop-roles-relocation]]. *대부분은 모델, 보장은 하네스* 이고, 하드 규칙은 [[action-reversibility|되돌릴 수 없는 것]]에만 건다. [[agent-sandboxing]]에 *셸 명령만 덮는다* 는 경계가 처음 기록된다.
 - *2026-11-14*: [[tech-bridge]] **3편** ingest(11-13 업로드). [[tech-bridge-openai-gpt-6-cyber-keynote|GPT-6 Cyber 키노트 대조]] — 위키의 보안 줄기에 처음 *기록 대조형* 소스가 들어온다: 자율 파이프라인 1회 948개와 PHP2Shell 버그 하나에 두 달이 나란히 놓이며 [[discovery-remediation-gap|찾기와 고치기의 속도 차]](신규)가 개념이 되고, 09-20의 패턴 [[defense-factory]]가 Daybreak Defense Factory라는 제품 이름이 된다. 슬라이드와 문서의 점수 차(52.6% vs 48.45%)도 기록된다. [[tech-bridge-lauren-tan-agents-merge-own-prs|Lauren Tan 10분 정리]] — 새 내용은 적지만 설명란의 *Maven 2026-08-12* 가 09-12 워크숍의 남은 *달* 에 유력한 답을 준다(추정, 미확정). [[tech-bridge-jensen-huang-resignation-timeline|Jensen Huang 사임 14일]] — 위키의 [[jensen-huang]] · [[nvidia]]가 사임 이후로 넘어간다(임시 CEO [[colette-kress|Colette Kress]]). 사임 이유는 공식 발표에 없고 의혹은 보도 단계로만 둔다. *AI 산업 → NVIDIA → 한 사람* 이 [[key-person-risk]](신규)로 정리된다.
 - *2026-11-15*: [[tech-bridge]] **1편** ingest(11-14 업로드, 멤버 전용 → 공개). [[tech-bridge-codex-agents-that-dont-quit|멈추지 않는 Codex 에이전트]] — [[goal-level-delegation]]에 지금까지 가장 긴 사례가 붙는다: [[aaron-friel|같은 발표자]]가 1년 사이 *절차를 다 적은 7시간* 에서 *목표 · 규칙 · 한계만 적은 200단어 · 6주* 로 옮겼다(모델도 바뀌어 효과는 분리되지 않음). 맡긴 일인 [[flaky-tests|플레이키 테스트]](신규)는 *끝없고 테스트가 곧 판정기인 일* 의 전형이 되고, 도구 호출의 약 13%가 대기였다는 수치가 heartbeat · 예약 작업([[scheduled-agent-automations]])의 이유를 준다. [[vaibhav-srivastav|VB]]의 *쪼갤 일은 스레드, 어려운 한 문제는 Ultra* 가 [[subagent-vs-thread-handoff]]에 넓이 대 깊이 축을 더한다. 비용(시간당 32 → 16달러)은 캡션이 비어 챕터 제목으로만 남는다.
+- *2026-11-16*: [[tech-bridge]] **3편** ingest(11-15 업로드). [[tech-bridge-theo-fable-vs-opus-when-to-use|Fable 5.2 vs Opus 5.5]] — 11-12 가이드 해설의 수치가 두 번째 해설에서 그대로 다시 나오고(Frontier Code 2.0 high 45.3%는 세 번째 확인), [[theo|Theo]]의 자기 계정 측정이 **API 가격과 구독 한도는 다른 경제** 라는 점을 처음 수치로 준다(월 200달러로 Opus 약 14,600 vs Fable 3,000달러 치). 모델을 난이도 · 가격이 아니라 *기질*(꼼꼼함 vs 틀을 의심함)로 배치하는 [[model-temperament-routing]](신규)이 [[generator-evaluator-pattern]]의 모델 배치판으로 붙는다. [[tech-bridge-matt-pocock-home-repo-pattern|홈 레포 패턴]](멤버 전용 → 공개) — 스킬을 *어떻게 배포하나* 에 이어 **멀티 레포 팀에서 스킬이 어디에 사나** 가 [[home-repo-pattern]](신규)으로 들어오고, 그 상한(수천 개 → 마켓플레이스)이 [[mcp-skill-distribution]]과의 경계를 긋는다. [[tech-bridge-lex-fridman-mathematicians-advice-ai-era|수학자 3명의 조언]] — 위키의 첫 교육 · 진로 조언형 소스. [[cognitive-offloading]]에 처음 통제 실험 수치(PNAS 2025 +48% / −17%)와 *힌트만 주는 튜터* 라는 개입이 붙고, 같은 AI에서 갈리는 성적 분포가 [[ai-learning-polarization]](신규)이 된다. [[ai-formal-verification]]의 Navier-Stokes 줄기에 *받는 쪽*(수학자) 반응이 처음 들어온다.
 
 ---
 
