@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 # Index
@@ -188,6 +188,7 @@ updated: 2026-11-16
 - [[alex-kontorovich]] — 럿거스대 수학자. 강의실 성적이 *두 봉우리* 로 갈라진다 · 분포의 머리가 되라 · 계산기 70년에도 구구단 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달
 - [[steven-brunton]] — 워싱턴대 수학자. 컴퓨터가 더 잘해도 선형대수는 직접 — 직관, 호기심과 집중은 지루함에서 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달
 - [[ankur-moitra]] — MIT 수학자. 성공의 공식이 창 밖으로, 일하는 이유는 안에서 · 불확실함을 견딜 목적 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달, 일부 대목은 더빙으로만
+- [[ryan-carson]] — Untangle 창업자. 사람 → 매니저 에이전트(코드를 쓰지 않는다 · 음성) → 빌더 20개쯤 → 리뷰 최대 3번 · QA → 영상 → *Ship it*. 15분 자동 확인 · 머지 큐 매니저 · 작업 녹화 채용 ([[tech-bridge-ryan-carson-managing-20-agents]]) ⚠️ 해설 전달, 성과 비교 수치 없음
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -279,6 +280,7 @@ updated: 2026-11-16
 - [[greptile]] — AI 코드 리뷰 제품 회사. 코드베이스 맥락에서 출발, 여러 회사 코드 코퍼스 평가, living wiki, 샌드박스 + computer use 자율 테스트, 프런티어 20% 모델 배분 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]] · [[tech-bridge-death-of-code-review]]) ⚠️ 모두 당사자 진술, 사이트 미열람
 - [[palantir]] — 데이터 통합 · 분석 플랫폼(정보기관 · 국방 출신, Gotham). 창업 2003 · Gotham 2008(S-1, 해설 대조). *AI 주권* 을 사업 언어로 — *언어 모델 연구소의 속국* ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 해설 전달
 - [[megaspeed]] — 싱가포르, 동남아 최대급 NVIDIA 칩 구매사. 미 상무부 수출 규제 조사(보도) · 싱가포르 경찰 조사(증거 불충분) · 전 대표 관련 스파이 의혹은 익명 소식통 보도 단계, 기소 없음 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 해설 전달
+- [[untangle]] — 가족법 로펌에 AI 법률 보조원을 파는 Ryan Carson의 회사. 개발은 전부 클라우드 에이전트(Devin) · 채용은 작업 녹화로 ([[tech-bridge-ryan-carson-managing-20-agents]]) ⚠️ 제품 · 규모 수치 없음
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -783,6 +785,7 @@ updated: 2026-11-16
 - [[flaky-tests]] — 플레이키 테스트, 다시 돌리면 통과하는 실패. 끝없고 반복적이며 테스트가 곧 판정기라 장기 에이전트에 맞는 일 — Codex 6주 실험(대기 호출 13% · 시간당 CI 1회 예산 · 테스트 삭제 대신 비판자 에이전트 · GPU 하이젠버그) ([[tech-bridge-codex-agents-that-dont-quit]])
 - [[home-repo-pattern]] — 홈 레포. 스킬 · AGENTS.md · 공유 문서 · 도구를 집 저장소 하나에, 다른 저장소는 경로 한 줄, 에이전트는 늘 거기서 실행. ~20개 포인터 · ~400개 영역 파일(점진적 공개) · 수천 개 마켓플레이스 ([[tech-bridge-matt-pocock-home-repo-pattern]]) ⚠️ 한 사람의 경험, 효과 수치 없음
 - [[model-temperament-routing]] — 모델 기질로 고르기. 꼼꼼한 모범생 Opus(앨런) vs 틀을 의심하는 Fable(브래드, LGTM) — 검증 가능한 일은 Opus, 정답 없는 일 · 검토는 Fable ([[tech-bridge-theo-fable-vs-opus-when-to-use]]) ⚠️ Theo 개인 해석
+- [[work-recording-hiring]] — 작업 녹화 채용. 사전 면접 없이 45분 작업 화면 녹화(무급) → 랭킹 에이전트 → 상위 5명 16시간 유급 과제 → 최종 후보에게 첫 통화 ([[tech-bridge-ryan-carson-managing-20-agents]]) ⚠️ 한 회사의 방식, 채용 결과 수치 없음
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1070,10 +1073,12 @@ updated: 2026-11-16
 - [[tech-bridge-theo-fable-vs-opus-when-to-use]] — 한국어 해설(8:26, 챕터 10, 오디오 ko 하나 · en-orig 없음, Theo 원음 무캡션, 2026-11-15 12:00 KST): [[theo|Theo]] *Stop Picking The Wrong Model* × [[addy-osmani|Addy Osmani]] 공식 가이드 — 시작은 Opus · effort high, 구독 환산(월 200달러로 Opus 약 14,600 vs Fable 3,000달러 치), 속도 112 vs 106, 모범생 · 뒷자리, T3 Code, 앨런과 브래드 → [[model-temperament-routing]] ⚠️ 구독 · 속도는 Theo 계정 측정, *150분의 1* 은 챕터만
 - [[tech-bridge-matt-pocock-home-repo-pattern]] — 한국어 해설(8:33, 챕터 9, 오디오 ko 하나 · en-orig 없음, 멤버 전용 → 11-16 공개, 2026-11-15 21:00 KST): [[matt-pocock|Matt Pocock]] 홈 레포 패턴 — 복사 · 사용자 폴더의 한계, 경로 한 줄, 규모 사다리, 모노레포, 퍼스널 위키와 도구, 프롬프트 4단계 → [[home-repo-pattern]] ⚠️ aihero.dev 글 기준 2차 전달
 - [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]] — 한국어 해설(8:54, 챕터 9, Korean original + 영어 더빙, 원음 무캡션 · ko-orig가 내레이션 일부를 놓침, 2026-11-16 07:00 KST): [[lex-fridman|Lex Fridman]] #503 수학자 셋의 조언 — 두 봉우리, PNAS 실험, 호기심과 지루함, 안에서 나오는 이유, 이미 이겼다고 치고, 생존자 편향 → [[ai-learning-polarization]] ⚠️ 원 자료 미열람
+- [[tech-bridge-ryan-carson-managing-20-agents]] — 한국어 해설(8:36, 챕터 9, 오디오 ko 하나 · en-orig 없음, 도입부 원음 한 조각만 캡션, 2026-11-16 18:00 KST): [[ryan-carson|Ryan Carson]] AI Engineer New York 발표 — 매니저 에이전트 하나하고만 음성으로, 빌더 20개(상한은 사람), 15분 자동 확인, 리뷰 최대 3번 · QA, 영상을 직접 보고 Ship it, 매니저끼리 대화 · 머지 큐 매니저, 로컬 개발은 돌 두드리기, 채용도 영상으로 → [[work-recording-hiring]] ⚠️ 성과 비교 수치 없음 · Devin 기능에 의존
+- [[tech-bridge-lauren-tan-all-code-is-slop]] — 한국어 해설(11:11, 챕터 10, Korean original + 영어 더빙, Lauren 원음 전부 무캡션, 2026-11-17 07:00 KST): [[lauren-tan|Lauren Tan]] AI Engineer Code Summit *All Code Is Slop (Except Mine)* — 10월 한 사람 PR 3,127 · 팀 10,926, 되돌림 0.98% → 0.47%, 뒤집힌 피라미드(검증 층 신설), 코드는 기억이다, 타이머 183개, 주석 99% 금지(65,824 → 1,227), 애매하면 금지, 토큰 70%는 검증에(Cindy Sridharan), TLA+ · Lean, 성적표의 빨간 숫자(CPU +100%) ⚠️ 팀 자체 집계 · 팀 PR 수가 캡션에서 갈림(설명란 채택)
 
 ## 통계
 
-- 총 페이지 수: 1034 (1024 → 1034, + 2026-11-16 Tech Bridge 3편(11-15 업로드 — 수학자 3명의 조언 · 홈 레포 패턴 · Fable vs Opus): source 3 · entity 4(lex-fridman · alex-kontorovich · steven-brunton · ankur-moitra) · concept 3(ai-learning-polarization · home-repo-pattern · model-temperament-routing) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1034와 일치)
+- 총 페이지 수: 1039 (1034 → 1039, + 2026-11-17 Tech Bridge 2편(11-16 업로드 — Lauren Tan *All Code Is Slop* · Ryan Carson 에이전트 20개 조직도): source 2 · entity 2(ryan-carson · untangle) · concept 1(work-recording-hiring) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1039와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-16 (Tech Bridge **3편** — 11-15 업로드 [[tech-bridge-theo-fable-vs-opus-when-to-use|Fable 5.2 vs Opus 5.5, 언제 뭘 써야 하나]](`LUKuCe3rcis`) · [[tech-bridge-matt-pocock-home-repo-pattern|홈 레포 패턴]](`fq8GI-7bjgc`, 멤버 전용 → 공개) · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era|수학자 3명이 한 조언]](`YSMIkavxsZE`). `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-15 (Tech Bridge **1편** — 11-14 업로드 [[tech-bridge-codex-agents-that-dont-quit|프롬프트 200단어로 6주를 일한 AI]](`AYCGbCxXHMU`, 멤버 전용 → 공개). `fq8GI-7bjgc` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-17 (Tech Bridge **2편** — 11-16 업로드 [[tech-bridge-lauren-tan-all-code-is-slop|한 달에 PR 1만 개, 그런데 쓰레기 코드는 없다]](`nldpxmin-1M`) · [[tech-bridge-ryan-carson-managing-20-agents|AI 에이전트 20개를 동시에 굴리는 창업자가 절대 건너뛰지 않는 한 단계]](`cY3rFdzLDkw`). 신규 멤버 전용 `OV9By_UspTk` 건너뜀 · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-16 (Tech Bridge **3편** — 11-15 업로드 [[tech-bridge-theo-fable-vs-opus-when-to-use|Fable 5.2 vs Opus 5.5, 언제 뭘 써야 하나]](`LUKuCe3rcis`) · [[tech-bridge-matt-pocock-home-repo-pattern|홈 레포 패턴]](`fq8GI-7bjgc`, 멤버 전용 → 공개) · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era|수학자 3명이 한 조언]](`YSMIkavxsZE`). `Yhck-x6VuLs` 멤버 전용 지속)

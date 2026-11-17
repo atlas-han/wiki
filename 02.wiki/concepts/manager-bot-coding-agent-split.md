@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [orchestration, grokbot, coding-agents, cloud-agents, first-mile, last-mile, intent-management, isolation, subscription-cost, delegation, rob-shocks]
 aliases: [manager bot, 매니저 봇, first mile, last mile, 봇은 매니저, bot as manager not coder, orchestrator bot]
-related: [inner-outer-meta-loops, cloud-agent-delegation, persistent-agent-teams, agent-manager-analogy, goal-level-delegation, agent-sandboxing, hard-vs-soft-enforcement, agent-change-evidence]
+related: [inner-outer-meta-loops, cloud-agent-delegation, persistent-agent-teams, agent-manager-analogy, goal-level-delegation, agent-sandboxing, hard-vs-soft-enforcement, agent-change-evidence, review-loop-termination]
 first-seen: tech-bridge-rob-shocks-grokbot-manager-coding-agents
-sources: [tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-11-03
-updated: 2026-11-03
+updated: 2026-11-17
 ---
 
 # 매니저 봇 · 코딩 에이전트 분업
@@ -56,3 +56,14 @@ updated: 2026-11-03
 
 - [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]] · [[rob-shocks]] · [[grokbot]] · [[claude-code]] · [[cursor-cloud]]
 - [[tech-bridge-lauren-tan-pocock-podcast-full]] — 안쪽 · 바깥 루프의 원 발화
+
+## 두 번째 사례 — 매니저가 일반 세션 하나, 그리고 매니저끼리의 대화 (2026-11-17 · [[tech-bridge-ryan-carson-managing-20-agents]])
+
+[[ryan-carson|Ryan Carson]]의 조직도(한국어 해설)가 같은 분업을 다른 도구로 보여 준다. 규칙은 같다 — *"매니저는 절대 코드를 쓰지 않습니다."*(01:37~01:39) 더해지는 것:
+
+- 매니저는 전용 봇이 아니라 [[devin|Devin]] **세션 하나** 이고 사람은 주로 음성으로 대화한다. 사람에게 올라오는 것은 *질문 하나 + 추천안*.
+- 매니저는 티켓 보드의 의존 관계를 보고 티켓마다 빌더를 붙인다(5~25개, 보통 20개쯤). 빌더의 기술 질문은 대부분 매니저 선에서 풀린다.
+- **확인을 매니저의 성실함에 맡기지 않는다** — 15분마다 스크립트가 모든 빌더 세션을 읽게 한다. *"에이전트는 매번 똑같이 움직이지 않으니 믿지 말고 자동화로 못 박아 두라는 겁니다."*(03:16~03:20)
+- 팀 규모에서는 사람마다 매니저 하나, *"그리고 이 매니저들이 서로 대화합니다."*(05:12~05:14) 순서 충돌(마이그레이션 번호)은 **머지 큐 매니저** 라는 전용 세션이 조율한다.
+
+⚠️ 성과 비교 수치 없음. 위 사례와 달리 last mile의 승인은 봇이 아니라 사람이 영상을 보고 한다.

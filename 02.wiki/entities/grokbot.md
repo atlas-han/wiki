@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-01
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # GrokBot
@@ -146,3 +146,7 @@ updated: 2026-11-14
 ## 2026-11-14 — 바이브 코딩 프로토타입 → Dune, 그리고 PM이 코드를 보내는 팀 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 한국어 요약(해설 전달): GrokBot은 프로토타입을 바이브 코딩으로 빠르게 만들었고 코드를 읽는 사람이 없었다 → Dune으로 이전, PR 600개 이상. 보상은 엔지니어가 아닌 사람에게서 먼저 — Grok 4 팀(판독 추정)에선 PM과 디자이너도 코드를 보낸다, *"엄격한 제약이 있으니 엔지니어링 전문가가 아니어도 높은 수준으로 기여할 수 있다"*(09:28~09:31).
+
+## 2026-11-17 — 10월 성적표: PR 10,926 · 227명 · 되돌림 0.47% · 빨간 숫자 둘 ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+Lauren Tan의 AI Engineer Code Summit 발표 해설이 GrokBot 팀의 추이를 전한다(전부 팀 자체 집계 · 해설 전달). 월간 머지 PR 6월 809 → 10월 10,926(설명란), 안정 버전 하루 한 번꼴, 10월에 PR을 올린 사람 227명(맥락을 모르고 지나가다 고친 사람 포함), 되돌린 커밋 비율 6월 0.98% → 8월 이후 0.47% 안팎. 5월 대비 콜드 실행 39% 빨라짐 — 그러나 **대기 중 메모리 12% · 대기 중 CPU 100% 증가**. 주석은 7월 31일 65,824 → 1,227(*"그래서 그록봇 팀은 주석의 99%를 금지하기로 합니다."*(04:50~04:52)), 에이전트를 바로잡을 때마다 쌓인 검사는 7월 7 → 11월 167(단위 미발화). 릴리스 날 한 번의 결과로 버그 50개(신규 3 · 기존 47)가 슬라이드에 나오지만 무엇이 찾았는지는 캡션에 없다.

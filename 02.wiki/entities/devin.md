@@ -3,9 +3,9 @@ title: Devin
 type: entity
 category: product
 tags: [coding-agent, slack, design-automation, qa]
-sources: [tech-bridge-one-designer-plus-ai]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-11-17
 ---
 
 # Devin
@@ -44,3 +44,14 @@ updated: 2026-09-15
 ## References
 
 - [[tech-bridge-one-designer-plus-ai]] · [[vincent-wendy]] · [[figma]]
+
+## 개발 조직의 사용 기록 — 매니저 세션 · 빌더 20개 · 영상 녹화 (2026-11-17 · [[tech-bridge-ryan-carson-managing-20-agents]])
+
+두 번째 소스는 개발 조직에서 온다. [[ryan-carson|Ryan Carson]]([[untangle|Untangle]])의 발표 해설에서 Devin은 **조직도 전체가 올라탄 도구** 다(해설 전달).
+
+- 매니저 에이전트는 *"특별한 프로그램이 아니라 데빈에서 연 세션 하나입니다."*(01:34~01:36) 빌더 · 리뷰 · QA · 머지 큐 매니저도 세션이다.
+- Carson이 기대는 기능 셋: **기능을 써 보는 영상 녹화**(없으면 직접 만들어야 하는데 어렵다고 한다) · 자동화(15분마다 매니저에게 빌더 확인을 시킨다) · 세션끼리의 대화.
+- 채용 유급 과제에서 지원자에게 Devin 계정을 준다.
+- 비용: 8월 How I AI 인터뷰의 제목이 *한 달에 Devin에 2만 달러를 썼다*.
+
+⚠️ 제작사는 이 소스도 말하지 않는다 — 위 미해결 항목 그대로. ko ASR 표기 *데빈 · 데비네*.

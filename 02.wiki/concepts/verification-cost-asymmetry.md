@@ -6,9 +6,9 @@ tags: [verification, np, complexity, agents, evaluation, economics]
 aliases: [NP형 작업, 실행보다 검증이 쉬운, verify cheaper than execute]
 related: [task-entropy-matrix, generator-evaluator-pattern, verification-bottleneck, agent-verification-skill, behavior-validated-trust, verifiable-goals, cross-model-prior-intersection, three-level-agent-review, discovery-remediation-gap]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-openai-gpt-6-cyber-keynote]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-13
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # 검증 비용의 비대칭
@@ -85,3 +85,7 @@ updated: 2026-11-14
 ## 2026-11-14 — 보안 쪽의 같은 비대칭: 찾기는 싸고 고치기는 느리다 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 
 GPT-6 Cyber 키노트 해설의 테제가 이 페이지의 보안 판이다 — 자율 파이프라인 1회 948개 vs PHP 버그 하나 수정 · 배포에 두 달, ExploitBench +24 vs PatchBench +5.6(서로 다른 시험). 별도 개념으로 정리했다 → [[discovery-remediation-gap]]
+
+## 2026-11-17 — 토큰의 70%가 검증에 ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+Lauren Tan 발표 해설이 Cindy Sridharan의 글 두 개를 나란히 놓는다(번역 전달). 5월: AI가 만든 PR 여러 개가 미묘한 버그를 안고 머지됐고 고치는 데 며칠이 더 들었다. 여섯 달 뒤: 그때 없던 건 검증 과정이었다 — *"지금은 하루 토큰의 70%가 패치를 검증하는 데 들어간다."*(08:24~08:26) Lauren도 자기 토큰 대부분이 검증에 들어간다고 한다. *"새로운 기법은 없습니다. 예전에는 비싸서 못 하던 테스트를 에이전트가 싸게 만들어 준 겁니다."*(08:31~08:35) — 10-31 절의 *검증 수단을 만드는 비용이 내려갔다* 와 같은 관찰이다. ⚠️ 70%는 한 사람의 자기 보고.

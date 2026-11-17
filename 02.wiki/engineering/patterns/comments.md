@@ -3,11 +3,11 @@ title: Comments
 type: engineering
 tags: [engineering, refactoring]
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-11-17
 category: pattern
-related: [code-smells, refactoring-techniques, technical-debt]
+related: [code-smells, refactoring-techniques, technical-debt, codebase-gardening]
 first-seen: refactoring-guru-refactoring
-sources: [refactoring-guru-refactoring]
+sources: [refactoring-guru-refactoring, tech-bridge-lauren-tan-all-code-is-slop]
 ---
 
 # Comments
@@ -39,3 +39,9 @@ sources: [refactoring-guru-refactoring]
 ## References
 - [[refactoring-guru-refactoring]] — Comments 원문: https://refactoring.guru/smells/comments
 - [[code-smells]]
+
+## 에이전트 시대의 판본 — 주석은 베껴도 된다는 허가 (2026-11-17 · [[tech-bridge-lauren-tan-all-code-is-slop]])
+
+[[lauren-tan|Lauren Tan]]의 발표 해설에서 [[grokbot|GrokBot]] 팀은 주석의 99%를 금지했다(슬라이드 65,824 → 1,227, 팀 자체 집계). 계기는 Cursor의 *타이머 183개* 사건 — 임시방편 옆의 주석이 *이건 괜찮다* 고 설명해 주자 다음 에이전트들이 안심하고 베꼈다. 처방은 이 페이지의 Treatment와 같은 방향이되 대상이 다르다: *"주석이 말하던 제약이 진짜라면 주석이 아니라 타입이나 검사로 옮겨 적으라는 겁니다."*(05:49~05:53) 사람에게 주석은 낡는 설명이고 에이전트에게는 **관례로 읽히는 입력** 이다(위키의 정리). → [[codebase-gardening]] · [[hard-vs-soft-enforcement]]
+
+⚠️ 한 팀의 사례다. 금지 뒤의 수치(되돌린 커밋 비율 0.98% → 0.47%)는 주석 금지만의 효과로 분리되지 않는다.

@@ -2764,3 +2764,27 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 3편 · 8~9분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1116/`: 11-15 스크립트 복사 — `lines.py` · `meta.py` · `gaps.py` · `q.py` · `merge.py` · `shared.py`, `build_raw.py`는 인자를 받게 일반화, 새 페이지 `new/`, 보강 절 `secA/` · `secB/` · `secC/` · `secABC/`). `q.py check` 87건 불일치 0. ⭐ **무캡션 구간을 원음 발췌로 단정하기 전에 다른 트랙을 볼 것** — 수학자 편은 ko-orig가 내레이션 40초가량을 통째로 놓쳤고 더빙이 그 자리를 채웠다. en-orig가 없는 편(오디오 ko 하나)에서는 이 구분이 불가능하므로 *내용 미상* 으로만 둔다.
 
+## [2026-11-17] ingest | Tech Bridge — 11-16 업로드 2편 (Lauren Tan All Code Is Slop · Ryan Carson 에이전트 20개 조직도)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 공개 2편: `cY3rFdzLDkw`(11-16 18:00 KST — 11-16 회차 뒤) · `nldpxmin-1M`(11-17 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261116). **신규 멤버 전용 `OV9By_UspTk`**(목록 `upload_date` 20261116, *2시간 만에 유튜브를 만든 프롬프트, 단어 5개 | Andrej Karpathy*, 10:19, 목록 줄 `subscriber_only`) — 건너뜀, 페이지 없음. `Yhck-x6VuLs` 멤버 전용 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 2 · entity 2 · concept 1**, 기존 페이지 보강 23개(+ tech-bridge), index **1034 → 1039**(실측 일치).
+
+- `nldpxmin-1M`(11:11, 챕터 10) → [[tech-bridge-lauren-tan-all-code-is-slop]]: [[lauren-tan|Lauren Tan]]의 AI Engineer Code Summit 발표 *All Code Is Slop (Except Mine)* 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). **원음 발췌 아홉 곳이 두 트랙 모두 무캡션 — Lauren 원음 인용 없음.**
+  - 보강: [[lauren-tan]](여덟 번째 소스 · 10월 수치) · [[grokbot]](성적표) · [[pstack]](no-comment 스킬) · [[cursor]](타이머 183개의 무대) · [[dune-architecture]](애매하면 금지) · [[codebase-gardening]](전파의 날짜 기록) · [[hard-vs-soft-enforcement]](피라미드 세 번째 판 — 검증 층) · [[comments]](에이전트 시대의 판본) · [[ai-formal-verification]](TLA+ · Lean 실사용) · [[verification-cost-asymmetry]](토큰 70%) · [[software-factory]](*not a dark factory*) · [[feature-map]] · [[ai-slop]]
+  - ⭐ 뒤집힌 피라미드가 세 번째 판이다 — 09-26 다섯 층(… 규칙과 bugbot · 스킬 · 스타일 가이드), 11-03 Rob Shocks 네 층, 이번은 코드베이스 · 정적 분석 · **검증** · 글로 쓴 지시 · 사람 리뷰. 어느 판도 정본으로 삼지 않았다.
+  - ⚠️ **팀 PR 수가 캡션에서 갈린다**: 설명란 · 제목 10,926 / ko-orig 00:13 *1926* / 08:42 *19,226*(더빙도 같은 값). 설명란 값을 채택하고 캡션은 ASR 오독으로 추정 표시.
+  - ⚠️ 챕터 *나쁜 루프를 자동화하지 마라* 의 본론(09:20~09:57)과 릴리스 날 버그 50개를 무엇이 찾았는지(10:04~10:27)는 무캡션. 06:33 *못 쓰게 했고* 의 목적어는 tags(`useEffect`)로 추정. 10-10 대담의 dark factory *"It kind of is"* 와 이번 *not a dark factory* 는 나란히만 두었다.
+  - 페이지화하지 않음: Cindy Sridharan(인용 2건, 2차 전달) · React Compiler · TLA+ · Lean · AI Engineer Code Summit · no-comment 스킬.
+- `cY3rFdzLDkw`(8:36, 챕터 9) → [[tech-bridge-ryan-carson-managing-20-agents]]: [[ryan-carson|Ryan Carson]]([[untangle|Untangle]])의 AI Engineer New York 발표 해설. 오디오 ko 하나 · **en-orig 없음**. 도입부 원음 한 조각(00:00~00:15)이 ko-orig에 영어로 남아 그것만 원음 인용.
+  - 신규: [[ryan-carson]] · [[untangle]] · [[work-recording-hiring]]
+  - 보강: [[devin]](개발 조직의 첫 사용 기록) · [[manager-bot-coding-agent-split]](두 번째 사례) · [[agent-manager-analogy]] · [[cloud-agent-delegation]](돌 두드리기 · 95%) · [[review-loop-termination]](세 번째 출처의 *최대 세 번*) · [[agent-attention-management]](상한은 사람) · [[scheduled-agent-automations]](15분 강제 확인) · [[claude-opus-5-5]](엔지니어링 매니저 자리)
+  - ⚠️ ASR이 핵심어 둘을 틀렸다 — *할인을 시킵니다* → 확인을(03:14), *6옥 과제* → 유급 과제(07:09). 설명란 문장으로 판독하고 raw 헤더에 적었다. 엔지니어 *데일* 은 ASR 표기뿐이라 확정하지 않았다.
+  - ⚠️ 성과 비교 수치 없음(해설 · 설명란이 스스로 밝힘). Devin 제작사는 이 소스도 말하지 않아 [[cognition]]과 잇지 않았다.
+  - 페이지화하지 않음: Linear · How I AI · Lenny's Newsletter · ChatPRD · GitHub merge queue · 랭킹 에이전트.
+- 두 편 공통 보강: [[agent-change-evidence]](증거의 형식이 영상이 된다) · [[ai-engineer]](Code Summit · New York). [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편 · 8~11분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1117/`: 11-16 스크립트 복사, `merge.py`는 `engineering/patterns/`도 찾게 고침, 보강 절 `secA/` · `secB/` · `secAB/`). 인용은 `(@)` 자리표시로 쓰고 `q.py fill`로 시각을 채웠다 — `q.py check` 92건 중 손으로 적은 2곳 수정 뒤 불일치 0(영어 원음 조각은 `<!--k-->` 고정, 두 소스 공통 절은 각 말뭉치로 따로 확인). ⭐ **설명란과 캡션의 숫자가 다르면 설명란 · 제목을 우선하되 두 값을 모두 적는다** — 이번 팀 PR 수는 ko ASR과 영어 더빙이 같은 값으로 틀렸다. 더빙이 ko 캡션에서 만들어진다면(추정) 더빙 일치는 독립된 확인이 아니다.
+

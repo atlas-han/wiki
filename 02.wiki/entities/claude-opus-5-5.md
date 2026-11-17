@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents]
 links: []
 created: 2026-10-09
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 # Claude Opus 5.5
@@ -103,3 +103,7 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 - **속도** 112 tok/s(Theo 측정), Fable 5.2 106과 거의 같다.
 - **구독 효율**: 월 200달러 요금제로 API 값 약 14,600~15,000달러 치(Theo 계정 3달 · 110만 요청) — Fable의 약 5배. → [[bring-your-own-subscription]]
 - 검증 가능한 일(TypeScript → Rust 재작성)은 Opus로 충분. Opus의 선택지가 뻔하거나 같은 자리를 맴돌 때 Fable로.
+
+## 2026-11-17 — *엔지니어링 매니저* 자리의 모델 ([[tech-bridge-ryan-carson-managing-20-agents]])
+
+[[ryan-carson|Ryan Carson]]의 9월 글(해설 인용): *"엔지니어링 매니저는 오퍼스 5.5, 여기에 데빈과 리니어, 그리고 로컬 개발은 전혀 하지 않는다."*(02:01~02:05) — 코드를 쓰지 않고 빌더 에이전트를 배정 · 확인하는 매니저 세션에 Opus 5.5를 둔다는 뜻으로 읽힌다(위키 해석, 10월 발표 시점에도 같은지는 미확인).

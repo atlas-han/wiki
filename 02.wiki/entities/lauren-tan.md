@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-01
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # Lauren Tan
@@ -139,3 +139,14 @@ Tech Bridge의 11:36 **해설 영상**이 원본 대담(`MN9dGgmLyso`, 이 위�
 Tech Bridge의 AI 음성 해설(10:14)이 Maven 워크숍 *"How Cursor Turned AI Agents Into Better Engineers"*(설명란 **2026-08-12**)와 본인 글(*The Complete Guide to pstack Pt. 1* · *Loops You Can Trust*)을 신뢰 곡선 순서로 요약한다. 새 원음은 두 조각 — *"I woke up today and there were like 20 PRs landed and I just reviewed them on main"*(00:17~00:22) · *"before AI slop we had human slop"*(06:16, Meta 모노레포 품질에 대한 농담). 해설 전달 수치: 7월 PR 거의 1,000 · 8월 커밋 2,000+ · **9월 PR 2,500**(공개 게시물 조회수 460만+). 설명란의 소속 표기는 *"Cursor와 Grok Bot을 만드는 SpaceX AI 엔지니어"*.
 
 ⚠️ 이 Maven 워크숍이 [[tech-bridge-lauren-tan-trusting-agents]](09-12, 59:41)와 같은 것이라면 그 녹화일은 **2026-08-12** 다 — 사례 · 수치가 겹치지만 직접 증거는 없어 *유력(추정)* 으로만 둔다.
+
+## 여덟 번째 소스 — *All Code Is Slop (Except Mine)*, 10월 성적표 (2026-11-17 · [[tech-bridge-lauren-tan-all-code-is-slop]])
+
+AI Engineer Code Summit 발표의 한국어 해설(11:11). 원음은 캡션에 남지 않았고 전부 해설 전달이다. 소개: Meta · Netflix · Cursor를 거쳤고 React 코어 팀에서 React Compiler를 만들어 왔다 — *"지금은 스페이스 엑스 AI에서 그록봇이라는 제품을 만듭니다."*(00:49~00:51) (설명란 표기 `SpaceXSI Grok Bot 팀`).
+
+- **10월 수치**: 한 사람 PR 3,127개, 팀 10,926개(설명란 — 캡션은 *1926* · *19,226* 으로 갈린다), 6월 팀 809개. 되돌린 커밋 비율 6월 0.98% → 8월 이후 0.47% 안팎. 10월에 PR을 올린 사람 227명. 앞선 소스의 *7월 ~1,000 · 8월 2,000+ · 9월 2,500* 다음 달 값이다.
+- **뒤집힌 피라미드** 가 이번에는 코드베이스 · 정적 분석 · **검증** · 글로 쓴 지시 · 사람 리뷰 — *검증* 이 독립된 층으로 들어갔다. → [[hard-vs-soft-enforcement]]
+- **타이머 183개** — Cursor에서 9월 9일 `setTimeout` 한 줄과 *괜찮다* 는 주석이 10월 17일 183개로 퍼진 사건. 그래서 GrokBot 팀은 주석의 99%를 금지(65,824 → 1,227). → [[codebase-gardening]] · [[comments]]
+- 검증 쪽 새 사실: TLA+ 모델 검사 · Lean 증명을 *실험 중* 으로 쓴다. → [[ai-formal-verification]]
+- 성적표의 빨간 숫자: 대기 중 메모리 +12%, 대기 중 CPU +100%. *"텐의 표현은 여러 면에서 나아졌다 였습니다. 전부는 아닙니다."*(09:09~09:11)
+- 본인 X 게시물(해설 인용): *"이건 사람이 빠진 무인 공장이 아니다."*(10:41~10:43) — 10-10 대담의 *"It kind of is"* 와 나란히 둔다(맥락 미확인). → [[software-factory]]

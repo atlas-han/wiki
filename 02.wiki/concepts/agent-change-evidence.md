@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [verification, evidence, trust, impact-analysis, agentic-coding, code-review]
 aliases: [AI는 코드만이 아니라 증거를 내야 한다, 다섯 질문, change evidence]
-related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review]
+related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review, work-recording-hiring]
 first-seen: tech-bridge-prompt-to-production
-sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-10-09
-updated: 2026-11-08
+updated: 2026-11-17
 ---
 
 # 변경 증거
@@ -82,3 +82,12 @@ updated: 2026-11-08
 ## 사람은 diff가 아니라 증거를 본다 — 영상 · 스크린샷 (2026-10-31 · [[tech-bridge-anthropic-30k-merges-verification]])
 
 [[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽): *"And then people are responsible for checking on the agent's evidence."*(05:14~05:17) 형태는 산출물에 맞춘다 — 브라우저 UI면 *"maybe generated me a video of that experience where it's been clicking around"*(05:28~05:31), 모바일 · 데스크톱이면 *"screenshots or videos"*(05:37~05:38). 목표: *"you want to get to a place where the agent's giving you as much verification evidence as possible"*(05:38~05:43). 이 페이지의 다섯 질문이 *설명 · 영향 분석* 쪽이라면 이쪽은 **동작의 기록(시각 증거)**이다. 같은 회사의 09-03 [[tech-bridge-claude-code-team-workflow|Claude Code 팀 대담]]의 *PR + 스크린샷* 과 같은 관행. 병합 기준도 증거로 정한다: *"You have full confidence nothing's going to go wrong, or that you've mitigated that as much as possible."*(10:25~10:28)
+
+## 2026-11-17 — 증거의 형식이 영상이 된다: 같은 날 두 소스 ([[tech-bridge-lauren-tan-all-code-is-slop]] · [[tech-bridge-ryan-carson-managing-20-agents]])
+
+두 실무자가 따로 같은 말을 한다 — 사람이 보는 것은 diff가 아니라 **돌아가는 모습의 기록** 이다.
+
+- [[lauren-tan|Lauren Tan]](월 1만 PR의 팀): *"코드 대신 검증 결과물을 봅니다. 영상, 스크린샷, 다이어그램입니다."*(07:28~07:30) 에이전트가 앱을 직접 실행해 만든 결과물이다.
+- [[ryan-carson|Ryan Carson]](빌더 20개): 모든 빌더가 만든 기능을 써 보는 영상을 녹화하고 테스트 항목마다 초록 · 빨강이 붙는다. 전부 초록이면 매니저가 *볼 영상이 있다* 고 알리고, 그는 PR 요약을 읽고 영상을 본 뒤 직접 *Ship it* 을 말한다. *"화면에 보이는 기능이라면 생김새와 동작은 결국 사람이 봐야 한다는 게 그의 이유입니다."*(04:45~04:49)
+
+다섯 질문 틀에 견주면 영상은 *무엇이 바뀌었나 · 어떻게 검증했나* 를 한 번에 답하는 형식이다(위키의 정리). ⚠️ 영상은 **화면에 보이는 동작** 만 증명한다 — Lauren의 성적표에서 나빠진 대기 중 CPU · 메모리 같은 것은 영상에 잡히지 않는다. Carson도 휴대폰으로 대충 보고 넘기고 싶은 유혹을 스스로 사례로 든다 — 증거가 있어도 *보는 일* 은 건너뛰기 쉽다. 같은 원리를 사람 채용에 옮긴 것이 [[work-recording-hiring]].

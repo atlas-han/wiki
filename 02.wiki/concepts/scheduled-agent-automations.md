@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture, flaky-tests]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-09-09
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 # 예약형 에이전트 자동화
@@ -130,3 +130,7 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## heartbeat 30분 — 기다림을 스레드 밖으로 (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
 
 6주 실험에서 [[codex|Codex]] 에이전트의 도구 호출 49만 9천여 번 중 6만 7천여 번(위키 계산 약 13%)이 *그냥 기다리는* 호출이었다(해설 전달). [[vaibhav-srivastav|VB]]의 여섯 번째 기능 **예약 작업**: 리뷰를 기다리며 멈추지 말고 **30분마다** 돌아와 확인 — 같은 스레드로 돌아오기 때문에 한 일을 기억한 채 이어 간다, *"이걸 하트비트라고 부릅니다."*(06:48) 위 10-11 표의 *heartbeat (in-thread)* 에 실제 운영 간격이 붙은 첫 기록이다. → [[flaky-tests]]
+
+## 2026-11-17 — 15분마다 매니저에게 확인을 시킨다 ([[tech-bridge-ryan-carson-managing-20-agents]])
+
+유지보수 잡이 아니라 **감독 자체** 를 예약한 사례. [[ryan-carson|Ryan Carson]]은 매니저 에이전트가 모든 빌더 세션을 주기적으로 읽도록 15분마다 스크립트로 시킨다(03:14~03:16, ASR 판독은 설명란 근거). 이유: *"에이전트는 매번 똑같이 움직이지 않으니 믿지 말고 자동화로 못 박아 두라는 겁니다."*(03:16~03:20) 맺음의 표현으로는 *확인은 믿음이 아니라 자동화로 한다.* → [[hard-vs-soft-enforcement]]

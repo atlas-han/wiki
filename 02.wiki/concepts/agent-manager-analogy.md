@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [management, delegation, trust, role, engineering-manager]
 aliases: [관리 유비, 헤드 셰프, 뒷좌석 운전자]
-related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening, agent-attention-management]
+related: [agent-trust-curve, persistent-agent-teams, agent-org-adoption, named-human-accountability, goal-level-delegation, taste-vs-judgment, codebase-gardening, agent-attention-management, manager-bot-coding-agent-split]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game, tech-bridge-cooking-with-codex, tech-bridge-dental-clinic-ax-transformation]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-agentcraft-strategy-game, tech-bridge-cooking-with-codex, tech-bridge-dental-clinic-ax-transformation, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-09-13
-updated: 2026-10-17
+updated: 2026-11-17
 ---
 
 # 매니저·헤드셰프 유비
@@ -88,3 +88,7 @@ updated: 2026-10-17
 ## 개발자가 아닌 매니저 — 담당별 에이전트 팀 (2026-10-17 · [[tech-bridge-dental-clinic-ax-transformation]])
 
 *"원장님은 코드를 거의 직접 쓰지 않고 AI 코딩 에이전트를 팀원처럼 썼다고 해요. 포털 담당, 전화 담당, 음성 담당, 인프라 담당으로 일을 나눠요. 원장님은 무엇이 필요한지 정하고 결과를 확인해요."*(06:12~06:27) 운영 설정 변경만은 *"본인이 직접 승인"*(06:27~06:31)한다. 이 위키에서 매니저 유비가 **개발자가 아닌 도메인 전문가**에게서 나온 첫 사례다. 해설의 요약은 *"치과 일을 아는 원장님이 할 일을 정하고 AI가 만들고 다시 시험하고 고친 거예요."*(06:46~06:51)다. ⚠️ 해설 전언이며 에이전트 도구 이름은 발화되지 않는다.
+
+## 유비가 조직도가 된다 — 매니저 층을 실제로 끼운다 (2026-11-17 · [[tech-bridge-ryan-carson-managing-20-agents]])
+
+직원 110명 회사까지 운영해 본 [[ryan-carson|Ryan Carson]]의 전제도 같다: *"사람을 관리하는 일이 에이전트를 관리하는 일과 닮았다는 것입니다."*(01:06~01:10) 다만 그는 비유에서 멈추지 않고 사람과 빌더 사이에 **매니저 에이전트** 층을 넣는다 — 본인은 빌더 세션에 들어가지도 않는다. 8월에는 혼자 에이전트 15개를 손으로 쓴 목록으로 챙겼는데 10월에는 그 일을 매니저가 한다(해설 전달). 유비의 다음 단계가 *직접 관리* 에서 *관리자를 두는 것* 으로 넘어간 사례다. → [[manager-bot-coding-agent-split]]

@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-10-02
-updated: 2026-10-31
+updated: 2026-11-17
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -253,3 +253,7 @@ Tereza는 소프트웨어 팩토리 짓기를 **사람 팀을 꾸리는 일**에
 Pocock의 *"the lights are on"*(10-10) · Horthy의 *"lights-off software factory"*(10-15)가 이름으로만 쓰던 구분이 여기서 **사람의 판단 · taste가 루프 안에 있는가**라는 기준을 얻는다. 대부분의 팀은 그 사이에서 *"how do I get further and further into automation in a way that I can trust it"*(01:43~01:46)을 찾는 중이라고 본다. 진행 쪽([[manish-kapur]] 추정)의 맺음은 *"We will get to software factories very soon, if not next year"*(10:51~10:54)와 *"autonomy is earned"*(10:48~10:51), 조건은 *"independent automated verification inside each loop of your factory"*(10:56~11:00) → [[layered-verification-every-loop]].
 
 > ⚠️ Kent Beck(반론 2) · Horthy(반론 3)의 *dark factory는 탈선한다 / 지금은 아니다* 와 달리 이 대담은 dark를 **도달 목표**로 놓는다. 다만 Addy 본인은 Anthropic이 dark라고 말하지 않는다 — 그가 설명하는 워크플로(사람이 증거를 확인, 이름 붙은 책임자)는 lights-on 쪽이다.
+
+## 2026-11-17 — *"이건 사람이 빠진 무인 공장이 아니다"* ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+Lauren Tan 발표 해설이 본인 X 게시물(*not a dark factory*)을 인용한다: *"이건 사람이 빠진 무인 공장이 아니다."*(10:41~10:43) 같은 발표에서 사람은 코드 대신 검증 결과물(영상 · 스크린샷 · 다이어그램)을 본다. ⚠️ 위 10-10 절의 *"It kind of is"* 와 방향이 다르게 들리지만 게시물 원문 · 시점을 열지 않아 입장 변화인지 맥락 차이인지 판단하지 않는다. 챕터 제목 *나쁜 루프를 자동화하지 마라* 의 본론은 무캡션이다.

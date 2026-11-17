@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-re
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
 related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing, human-loop-roles-relocation]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-codex-agents-that-dont-quit]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-codex-agents-that-dont-quit, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-09-09
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 
 # 클라우드 에이전트 위임
@@ -138,3 +138,7 @@ Lauren의 글을 한국어 요약이 인용한다: *"워크트리는 끝났다. 
 ## 2026-11-15 — 6주 동안 노트북을 켜 둘 수는 없다 ([[tech-bridge-codex-agents-that-dont-quit]])
 
 [[vaibhav-srivastav|VB]]의 두 번째 기능 **원격 환경**: SSH로 원격 머신에 붙이거나, 이날(DevDay 2026) 새 버전을 공개한 Codex 클라우드에 맡긴다(해설 전달). 6주 · 1,000시간 실험의 전제 조건으로 제시된다. → [[codex]]
+
+## 2026-11-17 — *로컬 개발은 돌 두드리기*, 단서는 95% ([[tech-bridge-ryan-carson-managing-20-agents]])
+
+[[ryan-carson|Ryan Carson]]의 조직도는 개발이 전부 클라우드에서 돈다는 전제 위에 선다. 본인 글(해설 인용): *"로컬 개발은 돌을 두드리며 끙끙대는 것이고 클라우드 에이전트는 로켓에 타는 것이다."*(05:48~05:52) 같은 글에서 이런 공장을 직접 만들지 말고 돈을 내고 만들어진 도구를 쓰라고 권한다. 다만 8월에는 프론트엔드처럼 로컬 브라우저가 필요한 일 때문에 클라우드 비중이 95%라고 했다 — 11-01 절의 *눈으로 보는 루프는 로컬* 과 같은 예외다. 11-14 Lauren Tan의 *워크트리는 끝났다* 에 이은 두 번째 강한 표현.

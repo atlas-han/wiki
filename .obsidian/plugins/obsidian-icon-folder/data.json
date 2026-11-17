@@ -1297,5 +1297,12 @@
   "02.wiki/entities/ankur-moitra.md": "LiUser",
   "02.wiki/concepts/ai-learning-polarization.md": "LiGraduationCap",
   "02.wiki/concepts/home-repo-pattern.md": "LiHouse",
-  "02.wiki/concepts/model-temperament-routing.md": "LiSplit"
+  "02.wiki/concepts/model-temperament-routing.md": "LiSplit",
+  "01.raw/articles/2026-11-16_한 달에 PR 1만 개 그런데 쓰레기 코드는 없다 Lauren Tan.md": "LiNewspaper",
+  "01.raw/articles/2026-11-16_AI 에이전트 20개를 동시에 굴리는 창업자가 절대 건너뛰지 않는 한 단계 Ryan Carson의 조직도 8분 정리.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-lauren-tan-all-code-is-slop.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-ryan-carson-managing-20-agents.md": "LiVideo",
+  "02.wiki/entities/ryan-carson.md": "LiUser",
+  "02.wiki/entities/untangle.md": "LiBuilding",
+  "02.wiki/concepts/work-recording-hiring.md": "LiPuzzle"
 }

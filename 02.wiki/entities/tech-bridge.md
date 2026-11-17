@@ -187,8 +187,10 @@ sources:
   - tech-bridge-lex-fridman-mathematicians-advice-ai-era
   - tech-bridge-matt-pocock-home-repo-pattern
   - tech-bridge-theo-fable-vs-opus-when-to-use
+  - tech-bridge-lauren-tan-all-code-is-slop
+  - tech-bridge-ryan-carson-managing-20-agents
 created: 2026-06-03
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 # Tech Bridge
@@ -1756,3 +1758,20 @@ updated: 2026-11-16
 - 원 영상(`XtykeVoSmP8` · `hWe-j78vNpc` · `Kw7THrfbA5U`) · 공식 가이드 · aihero.dev 글 · 팟캐스트 전사본 · PNAS 논문은 미열람.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 중인 다른 멤버 전용 영상 없음. 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-16 업로드 — Lauren Tan *All Code Is Slop* · Ryan Carson 에이전트 20개 조직도 (2026-11-17 ingest)
+
+[[tech-bridge-lauren-tan-all-code-is-slop|한 달에 PR 1만 개, 그런데 쓰레기 코드는 없다 | Lauren Tan]](`nldpxmin-1M`, 11:11, 공식 챕터 10) — 한국어 해설, AI Engineer Code Summit 발표 *All Code Is Slop (Except Mine)* ([[lauren-tan]] · [[grokbot]] · [[pstack]] · [[cursor]] · [[dune-architecture]] · [[codebase-gardening]] · [[hard-vs-soft-enforcement]] · [[comments]] · [[ai-formal-verification]] · [[verification-cost-asymmetry]] · [[software-factory]] · [[feature-map]] · [[ai-slop]])
+
+[[tech-bridge-ryan-carson-managing-20-agents|AI 에이전트 20개를 동시에 굴리는 창업자가 절대 건너뛰지 않는 한 단계 | Ryan Carson의 조직도 8분 정리]](`cY3rFdzLDkw`, 8:36, 공식 챕터 9) — 한국어 해설, AI Engineer New York 발표 ([[ryan-carson]] · [[untangle]] · [[work-recording-hiring]](모두 신규) · [[devin]] · [[manager-bot-coding-agent-split]] · [[agent-manager-analogy]] · [[cloud-agent-delegation]] · [[review-loop-termination]] · [[agent-attention-management]] · [[scheduled-agent-automations]] · [[claude-opus-5-5]])
+
+두 편 공통: [[agent-change-evidence]] · [[ai-engineer]]
+
+- 구성 두 가지: **Lauren 편은 Korean original + 영어 더빙**(메타 `language`=`en`), **Carson 편은 오디오 ko 하나 · en-orig 없음.** 둘 다 `ko` = `ko-orig`(`variant=gemini`). 인용은 ko-orig.
+- Lauren 편은 원음 발췌 아홉 곳이 두 트랙 모두 무캡션 — **Lauren 원음이 한 줄도 남지 않았다.** Carson 편은 도입부 원음 한 조각(00:00~00:15)이 ko-orig에 영어로 남았다.
+- ⚠️ **Lauren 편 팀 PR 수가 캡션에서 갈린다** — 설명란 · 제목 10,926, ko-orig 00:13 *1926* · 08:42 *19,226*. 위키는 설명란 값을 쓴다. 챕터 *나쁜 루프를 자동화하지 마라* 의 본론은 무캡션(챕터 제목만).
+- ⚠️ Carson 편 ASR이 핵심어 둘을 틀렸다 — *할인을 시킵니다* → 확인을(03:14), *6옥 과제* → 유급 과제(07:09). 둘 다 설명란으로 판독.
+- 게시 시각: Carson 편 11-16 18:00 KST(11-16 회차 뒤) · Lauren 편 **11-17 07:00 KST**(이 회차 두 시간 전, `upload_date`는 UTC 기준 20261116).
+- 원 발표(`O_zcc6Xl12g` · `BTtyguoPvBU`) · X 게시물 · How I AI 인터뷰 · pstack 저장소는 미열람.
+
+**멤버 전용**: 신규 `OV9By_UspTk`(목록 `upload_date` 20261116, *2시간 만에 유튜브를 만든 프롬프트, 단어 5개 | Andrej Karpathy*, 10:19) — 목록 줄 `subscriber_only`, 건너뜀. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 목록 20편 요청 → **20줄**(stderr ERROR 없음).

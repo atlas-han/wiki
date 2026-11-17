@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [review-loop, termination, generator-evaluator, automated-code-review, agent-loops, token-cost, claude-code, anthropic, ai-labs]
 aliases: [review loop termination, 리뷰 루프 종료, 끝나지 않는 루프, 무한 리뷰 루프, 세 라운드 규칙, three-round rule, delta-only review]
-related: [generator-evaluator-pattern, automated-code-review, three-level-agent-review, verification-cost-asymmetry, true-cost-to-perfect-answer, agent-loop-size, risk-proportional-human-review]
+related: [generator-evaluator-pattern, automated-code-review, three-level-agent-review, verification-cost-asymmetry, true-cost-to-perfect-answer, agent-loop-size, risk-proportional-human-review, manager-bot-coding-agent-split]
 first-seen: tech-bridge-ai-labs-claude-code-verification-review-loop
-sources: [tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-11-02
-updated: 2026-11-08
+updated: 2026-11-17
 ---
 
 # 리뷰 루프 종료 조건
@@ -78,3 +78,7 @@ updated: 2026-11-08
 - > ⚠️ **Contradiction(약): 옛 문제인가, 새 문제인가.** 위 Anthropic 기록(AI Labs 전달)은 reviewer 보고의 약 59%가 첫 라운드부터 있던 것이라 했고, 여기서는 매번 새것을 찾는다고 한다. 저쪽은 수정이 낀 builder-reviewer 라운드이고 여기는 같은 PR의 재실행이라 조건이 다르다. 양쪽 다 측정 방법은 확인하지 않았다.
 - **루프의 다른 쪽 비용** — *"coding agents not discerning."*(03:11~03:12) 지적을 전부 반영하면 *"extremely painfully defensive code"*(03:15~03:18)가 남는다. 이 페이지의 규칙들은 라운드 수와 토큰을 막는다. 이 발화는 **멈춘 뒤 코드에 남는 흔적**을 말한다.
 - 발표자의 처방은 종료 규칙이 아니라 입구 쪽이다(버그 유형 지정 · nitpick 금지, 03:51~04:17). 라운드 상한은 말하지 않는다.
+
+## 세 번째 출처의 *최대 세 번* — 그리고 올려 보내는 사다리 (2026-11-17 · [[tech-bridge-ryan-carson-managing-20-agents]])
+
+[[ryan-carson|Ryan Carson]]의 조직도(한국어 해설)에서도 상한은 셋이다: *"빌더는 리뷰를 받고 고치기를 최대 세 번까지 반복합니다."*(03:26~03:28) 넘으면 멈추는 것이 아니라 **위로 올린다** — 세 번을 돌고도 중요한 버그가 남으면 매니저 에이전트에게, 매니저도 못 풀면 사람에게. 리뷰 뒤에는 빌더가 띄우는 QA 자식 에이전트가 따로 있다. 겹겹이 띄우는 비용에 대한 답은 *싸다* 이고 조건은 머지 큐를 막지 않는 것. ⚠️ 왜 셋인지, 상한에 걸리는 비율이 얼마인지는 말하지 않는다.

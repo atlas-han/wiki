@@ -6,9 +6,9 @@ tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comm
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
 related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon, product-polish-patterns, agent-friction-multiplier]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-26
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # 코드베이스 정원 가꾸기
@@ -149,3 +149,11 @@ Tech Bridge 해설(Stripe 발언 아님, 원음 05:01→05:08은 무캡션): 같
 ## 2026-11-14 — 주석은 잡초 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 한국어 요약이 Dune의 코드 주석 금지 이유를 전한다: 에이전트 주석의 대부분이 지금 코드와 상관없는 지난 이야기였고(*Lauren이 절대 이렇게 하지 말랬음* 같은), 에이전트는 있는 걸 베끼니까 임시방편 주석 하나가 코드베이스 전체로 번진다 — Lauren은 이를 **잡초** 에 비유한다(해설 전달). 11-11 Theo 편의 잡초 비유와 같은 말이 원조 쪽에서 다시 확인된다.
+
+## 2026-11-17 — 타이머 183개: 전파의 날짜 기록 ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+Lauren Tan의 *All Code Is Slop (Except Mine)* 해설이 이 페이지의 주장에 **날짜가 붙은 사례** 를 준다(Cursor, 연도 미발화). 9월 9일 에이전트가 화면 깜빡임을 `setTimeout`으로 덮고 *나중에 해제한다* 는 주석을 단다 → 10월 3일 공용 모듈로 복사 → 10월 17일 *"타이머는 183개가 돼 있었습니다."*(04:17~04:19) 진짜 원인은 VS Code의 명령형 방식과 React의 선언형 방식의 충돌이었고, 타이머가 가비지 컬렉션을 키워 성능이 실제로 나빠졌다.
+
+- 슬라이드 문장: *"한 번 베낄 때마다 다음에 또 베낄 가능성이 커집니다."*(03:50~03:52)
+- ⭐ 가장 나빴던 것은 코드가 아니라 주석 — *"주석이 이 임시방편은 괜찮다고 설명해 주니까 다음 에이전트가 안심하고 따랐다는 겁니다."*(04:44~04:48) 처방은 주석 99% 금지와 린트(타이머를 쓰면 막고, 오류 메시지에 *근본 원인을 고치라* 는 지시). → [[comments]]
+- 규모의 근거: 2024년에는 하루 PR 세 개를 리뷰했고 지금은 300개에 가깝다(해설 전달) — 그래서 리뷰가 아니라 정원 가꾸기다.

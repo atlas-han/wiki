@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, visibility, game-design, accessibility]
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
-related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation]
+related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation, manager-bot-coding-agent-split]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-ryan-carson-managing-20-agents]
 created: 2026-10-09
-updated: 2026-11-08
+updated: 2026-11-17
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -95,3 +95,7 @@ updated: 2026-11-08
 ## 개인 사용자의 필터 프롬프트 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
 
 여러 에이전트가 아니라 **사람에게 오는 메시지**의 주의 관리다. [[sandeep-swadia|Sandeep Swadia]](설명란 근거): *"filter the noise and decide what deserves your attention and simplify what deserves your judgment."*(08:52~08:59) 프롬프트는 시각 셋에 *"flag only decisions waiting for me."*(09:37~09:40) 나머지는 *"park everything else for a 5:00 p.m. summary."*(09:46~09:50)다. 화자가 위험을 먼저 말한다: *"Whoever or whatever is the gatekeeper decides what you get to see."*(09:05~09:13) ⚠️ 놓친 메시지 비율 같은 측정은 없다. 틀은 [[personal-agent-four-forces]] 참조.
+
+## 빌더 수의 상한은 사람 — 질문 하나 · 추천안 하나 · 음성 (2026-11-17 · [[tech-bridge-ryan-carson-managing-20-agents]])
+
+[[ryan-carson|Ryan Carson]]은 빌더 에이전트를 5~25개(보통 20개쯤) 돌리고 그 이상은 금방 통제를 잃는다고 한다. *"더 늘리지 못하는 이유는 에이전트가 아니라 사람입니다."*(02:46~02:48) *"매니저와 대화하며 상황을 파악하는 속도가 병목이라는 겁니다."*(02:49~02:51) 그의 인터페이스 답은 셋이다(해설 전달): 사람은 매니저 에이전트 **하나** 하고만 말한다 · 매니저는 **질문 하나에 추천안을 붙여** 올린다 · 대화는 주로 **음성**(글을 빨리 읽지 못해 듣는 쪽이 잘 들어온다는 개인 사정). 마지막 확인은 영상 — 요약을 읽고 영상을 본다.

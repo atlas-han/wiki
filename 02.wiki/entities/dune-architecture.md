@@ -3,9 +3,9 @@ title: Dune (GrokBot 아키텍처)
 type: entity
 category: tool
 tags: [architecture, electron, react, ci, agents, grokbot, cursor]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-13
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # Dune
@@ -71,3 +71,7 @@ updated: 2026-11-14
 ## 2026-11-14 — 한국어 요약: *일렉트론 앱을 위한 Next.js* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 해설 요약: GrokBot은 바이브 코딩 프로토타입이라 코드를 읽는 사람이 없었고, 가드레일이 없으면 에이전트는 그때그때 가장 편한 방법으로 푼다 → 전체를 Dune으로 옮기는 데 PR 600개 이상. Dune 문서의 에이전트 묘사 *"가장 가까운 패턴을 베끼고 이미 열린 파일을 고치고 컴파일 되는 가장 짧은 길을 고른다."*(06:59~07:03) → 원칙 *가장 짧은 길이 가장 좋은 길이 되게*. 기능 하나 = 폴더 하나, `useEffect` · 코드 주석 금지(CI), 렌더러 / 메인 프로세스 폴더 분리와 의존성 그래프 검사(60fps = 16ms). 원음 조각 *"before AI slop we had human slop"*(06:16)이 *빅테크는 사람 때문에 이미 가드레일이 있다* 는 대비의 출발점이다.
+
+## 2026-11-17 — *미묘한 판단이 필요한 것은 슬롭으로* ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+Code Summit 발표 해설이 Dune의 교훈 하나를 전한다: 잘 쓰려면 미묘한 판단이 필요한 것은 슬롭으로 이어진다(06:02~06:06, ASR 판독 추정) — 그래서 **애매하면 금지한다.** *"제품 코드에서는 아예 못 쓰게 했고 뷰 안쪽 몇 군데에서만 허용했습니다."*(06:33~06:35) (목적어는 무캡션 발췌 안, `useEffect`로 추정) 폴더 구조도 규칙 — Electron 렌더러 / 메인의 최상위 폴더 이름이 경계이고 둘 사이의 import는 의존성 분석기와 린트가 막는다.

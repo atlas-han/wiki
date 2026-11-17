@@ -3,9 +3,9 @@ title: Pstack
 type: entity
 category: tool
 tags: [cursor, plugin, skills, verification, evals, lauren-tan]
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-garry-tan-agents-two-years, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-garry-tan-agents-two-years, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-13
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # Pstack
@@ -139,3 +139,7 @@ updated: 2026-11-14
 ## 2026-11-14 — create-verification · *실행해 보지 않은 스킬은 초안* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 한국어 요약이 전하는 것(해설 전달, 위키는 cursor/plugins 저장소 미열람): **create-verification** 스킬이 저장소를 살펴 앱을 띄우고 조작하고 증거를 남기는 검증 스킬과 [[feature-map|피처 맵]] 초안을 만든다. *"한 번도 실행해 보지 않은 스킬은 초안일 뿐 완성품이 아니라고 못박아둡니다."*(04:01~04:04) 이름은 [[garry-tan|Garry Tan]]의 [[gstack]]을 놀린 것, *p* 는 potato. 설명란은 본인 글 *The Complete Guide to pstack Pt. 1* 을 링크한다.
+
+## 2026-11-17 — no-comment 스킬 ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+한국어 해설이 스킬 하나를 더 전한다: no-comment(ASR *노 코멘트*, 철자 추정)가 주석을 걷어낸다 — *"주석이 말하던 제약이 진짜라면 주석이 아니라 타입이나 검사로 옮겨 적으라는 겁니다."*(05:49~05:53) 설명란의 저장소 링크는 여전히 `cursor/plugins`.

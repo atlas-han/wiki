@@ -5,9 +5,9 @@ category: org
 tags: [ide, coding-agent, grokbot, benchmark]
 links:
   - https://cursor.com
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-exa-perfect-search-for-agents, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-lauren-tan-2000-prs, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-01
-updated: 2026-11-14
+updated: 2026-11-17
 ---
 
 # Cursor
@@ -126,3 +126,7 @@ Cursor에서 AI 에이전트 도구를 만든 [[jediah-katz|Jediah Katz]]의 AI 
 ## 2026-11-14 — Lauren Tan 10분 요약 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 Tech Bridge 한국어 해설이 Lauren Tan의 Maven 워크숍(2026-08-12, 설명란)을 요약한다 — 에이전트 창 성능 작업(입사 둘째 날)과 control-glass, Cursor 클라우드 에이전트와 Benny, *워크트리는 끝났다*. 설명란의 소속 표기는 *Cursor와 Grok Bot을 만드는 SpaceX AI 엔지니어*.
+
+## 2026-11-17 — 타이머 183개 사건의 무대 ([[tech-bridge-lauren-tan-all-code-is-slop]])
+
+Lauren Tan이 발표에서 든 전파 사례가 Cursor 코드베이스의 일이다(해설 전달, 연도 미발화): 9월 9일 에이전트의 `setTimeout` 한 줄 → 10월 3일 공용 모듈 → 10월 17일 183개. 원인은 VS Code의 명령형 방식과 React의 선언형 방식이 부딪히는 자리였다. 메인 스레드 코드를 렌더러로 끌어와 화면이 버벅이던 것도 *Cursor 시절의 실수* 로 언급된다. → [[codebase-gardening]]

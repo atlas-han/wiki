@@ -5,9 +5,9 @@ category: technique
 tags: [formal-verification, lean, proof, security, navier-stokes, verifiable-code]
 related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery, agent-verification-skill]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs, tech-bridge-altman-devday-dots, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-lex-fridman-mathematicians-advice-ai-era]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs, tech-bridge-altman-devday-dots, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lauren-tan-all-code-is-slop]
 created: 2026-09-20
-updated: 2026-11-16
+updated: 2026-11-17
 ---
 
 # AI가 여는 형식 검증
@@ -78,3 +78,7 @@ updated: 2026-11-16
 ## 받는 쪽의 반응 — 수학자들의 *긴급 방송* (2026-11-16 · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]])
 
 이 페이지의 Navier-Stokes 줄기는 지금까지 *주장하는 쪽*(OpenAI · Altman)의 진술이었다. [[lex-fridman|Lex Fridman]] Podcast #503 해설은 받는 쪽을 처음 준다: 지난 몇 주 새 기계가 나비에-스토크스 방정식 · Unique Games 추측 · 다른 결과 수백 개를 *풀었다고 주장* 했고, 방송도 *풀었다가 아니라 주장했다* 고 표현한다. Lex가 읽은 Terence Tao의 글은 *끔찍하다* 로 시작한다 — 대학원생 · 박사후 연구원이 몇 년씩 파던 문제들이 발표 한 번에 흩어졌다. [[ankur-moitra|Moitra]]: 성공의 공식이 창 밖으로 던져졌다. ⚠️ 위 OpenAI 주장과 같은 사건인지 해설은 밝히지 않는다(추정). 전사본 미열람.
+
+## 제품 팀이 실제로 쓰기 시작했다 — TLA+ · Lean, *아직 실험 중* (2026-11-17 · [[tech-bridge-lauren-tan-all-code-is-slop]])
+
+09-26에 *스펙트럼의 먼 끝, 여전히 열린 문제* 라고 하던 [[lauren-tan|Lauren Tan]]이 11월 발표(한국어 해설)에서는 쓰는 자리를 말한다: 여러 기기에 걸친 알림 같은 주요 흐름은 **TLA+로 모델 검사**, 직접 만든 가상화 라이브러리의 알고리즘은 **Lean으로 증명**(화면이 깜빡이거나 떨리지 않는지). 버그를 꽤 찾았지만 *"아직 실험 중이라고 선을 긋습니다"*(08:03~08:05). ⚠️ 해설 전달이고 찾은 버그의 수 · 종류는 없다.
