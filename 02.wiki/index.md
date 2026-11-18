@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-17
+updated: 2026-11-18
 ---
 
 # Index
@@ -169,7 +169,7 @@ updated: 2026-11-17
 - [[dan-martell]] — [[grokbot|Grok Bot]] 사용자 쪽 튜토리얼 화자(설명란 · 태그 근거, 발화엔 3인칭 이름 한 번 + *"plug"*). 역할별 봇을 chief of staff에게 말로 만들게 함, *"review mode only"*, 결제 전 승인 · 읽기 전용 재무, 공유 채널 team bot ([[tech-bridge-dan-martell-grokbot-daily-automation]]) ⚠️ 신원 추정
 - [[ben-davis]] — [[codex|Codex]]를 영상 채널 운영에 쓰는 외부 사용자 화자(이름은 설명란 · 태그 근거 — 발화엔 없음). verifier가 없는 제품 판단에 모델이 약하다는 진단, *"The cohesion just isn't there at the product level"*, 처방은 기능 덜어내기와 Codex thread를 기본 단위로 ([[tech-bridge-ben-davis-codex-product-cohesion]]) ⚠️ 신원 추정
 - [[mehul-mohan]] — CLI 하네스와 에이전트 관리 도구를 직접 비교하는 개발자 화자(이름은 발화 호명 *"Then why, Mehul"*, 성은 설명란). *"CLI means flexibility"*, 데이터가 무겁거나 사람이 봐야 하는 작업은 로컬 · 나머지는 VM, 휴대폰으로 Claude Code Remote Control, [[cmux]]보다 [[herdr]] 선호 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 소속 미상 · 1인 체감
-- [[rob-shocks]] — AI 코딩 워크플로 영어 해설자(설명란 근거, 발화엔 이름 없음). GrokBot을 코딩하지 않는 매니저로 두고 Claude Code · Cursor Cloud agents에 위임하는 자기 구성, 메인 에이전트 Chief, RICE + blast radius 백로그 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 신원은 설명란뿐 · 화자 미상인 09-04 SDLC 편 · 09-13 Pstack 리뷰 편과 동일인일 가능성(미확정)
+- [[rob-shocks]] — AI 코딩 워크플로 영어 해설자(설명란 근거, 발화엔 이름 없음). GrokBot을 코딩하지 않는 매니저로 두고 Claude Code · Cursor Cloud agents에 위임하는 자기 구성, 메인 에이전트 Chief, RICE + blast radius 백로그 ([[tech-bridge-rob-shocks-grokbot-manager-coding-agents]]) ⚠️ 신원은 설명란뿐 · 화자 미상인 09-04 SDLC 편 · 09-13 Pstack 리뷰 편과 동일인일 가능성(미확정) · 11-17 [[orca|Orca]] 리뷰 편에서 이름이 처음 발화됨, 원음은 무캡션 ([[tech-bridge-rob-shocks-orca-review-vs-records]])
 - [[daksh-gupta]] — 코드 리뷰 제품 회사 Greptile 공동창업자(설명란 근거, 발화엔 이름 없음). 리뷰 에이전트를 직접 만드는 절차와 깨지는 지점을 설명 ([[tech-bridge-greptile-daksh-gupta-build-review-agent]]) ⚠️ 이름 · 직함은 설명란뿐, 라틴 표기는 한글 "닥시 굽타"의 로마자 복원
 - [[sandeep-swadia]] — 테크 · AI 기업 CEO이자 이사회 멤버(설명란 근거, 발화엔 이름 없음). 나를 아는 개인 에이전트 하나를 비서실장처럼 쓰자고 권하는 해설. 에이전트 이름 Capes(ASR). 건강 · 금융 정보는 주지 않는다고 말한다 → [[personal-agent-four-forces]]
 - [[emily-bache]] — TDD · 에이전트 코딩 채널 진행자(설명란 · tags 근거, 발화엔 이름 없음). codecentric 제작자들을 인터뷰해 [[exact-coding|EXACT]] 소개 ([[tech-bridge-emily-bache-exact-coding-tdd]]) ⚠️ 소속 · 경력 미상
@@ -281,6 +281,7 @@ updated: 2026-11-17
 - [[palantir]] — 데이터 통합 · 분석 플랫폼(정보기관 · 국방 출신, Gotham). 창업 2003 · Gotham 2008(S-1, 해설 대조). *AI 주권* 을 사업 언어로 — *언어 모델 연구소의 속국* ([[tech-bridge-alex-karp-wealth-tax-surveillance]]) ⚠️ 해설 전달
 - [[megaspeed]] — 싱가포르, 동남아 최대급 NVIDIA 칩 구매사. 미 상무부 수출 규제 조사(보도) · 싱가포르 경찰 조사(증거 불충분) · 전 대표 관련 스파이 의혹은 익명 소식통 보도 단계, 기소 없음 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 해설 전달
 - [[untangle]] — 가족법 로펌에 AI 법률 보조원을 파는 Ryan Carson의 회사. 개발은 전부 클라우드 에이전트(Devin) · 채용은 작업 녹화로 ([[tech-bridge-ryan-carson-managing-20-agents]]) ⚠️ 제품 · 규모 수치 없음
+- [[stably-ai]] — [[orca|Orca]]를 만드는 회사(Y Combinator 투자, 해설 전달). 앱은 무료 · 일부 기능은 계정 로그인, 텔레메트리 식별자를 *익명이 아니라 가명* 이라 스스로 적음 ([[tech-bridge-rob-shocks-orca-review-vs-records]]) ⚠️ 창업자 · 규모 미상
 
 ### Models
 - [[muse-wonder]] — [[meta|Meta]] 2026-10-12 발표 모델(해설 — Meta 자료 요약). 개인 에이전트 + 코딩 지원, Meta model API·Muse Code, Wonder Full ([[tech-bridge-alexandr-wang-muse-launch]]) ⚠️ 벤치마크 없음, [[muse-spark]]와의 관계 미상
@@ -348,6 +349,7 @@ updated: 2026-11-17
 - [[herdr]] — 터미널 코딩 에이전트 여럿을 한 화면에서 다루는 agent multiplexer. 앱 버전은 *"GUI application combined with CLIs"*: SSH worker 추가, 앱을 꺼도 계속 도는 세션(로컬은 별도 프로세스), idle · done · working 상태와 알림, mission control · Slack · Meet형 레이아웃, 서브에이전트 API ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 1인 사용자 몇 시간 체감 · 제작사 미발화
 - [[cmux]] — 에이전트용 터미널 앱. 비교 대상으로만 등장: `cmux ssh` 세션이 앱을 끄면 사라지고 tmux 우회책은 실험 기능이라 잘 깨지며 UI 커스터마이즈에서 *"wow factor"* 를 못 얻었다는 사용자 비판 ([[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]) ⚠️ 1인 비판 · cmux 측 반론 없음
 - [[hackertube]] — [[andrej-karpathy|Karpathy]]가 Claude로 만들었다고 전해지는 YouTube 스타일 사이트. Hacker News에서 반복 추천된 영상만 모은다 ([[tech-bridge-nick-saraev-karpathy-ai-habits]]) ⚠️ Saraev의 2차 전달, 사이트 미열람
+- [[orca]] — Claude Code · Codex 같은 CLI 에이전트를 여러 개 띄워 한곳에서 굴리는 오픈 소스(MIT) 작업대. 모델을 대신 부르지 않는다(요금은 원래 구독에서) · 채팅 화면 · 에이전트마다 워크트리 · 내장 브라우저 · 원격 · 모바일 리모컨. 여덟 달에 릴리스 1,012 · 열린 이슈 4,750(채널 집계 11-15) ([[tech-bridge-rob-shocks-orca-review-vs-records]]) ⚠️ 해설 하나, 저장소 · 문서 미열람
 
 ### Tools
 - [[fx]] — Vercel Labs 코딩 CLI(ASR "effects", 설명란 fx.sh). 셸처럼 부팅, 6MB/11MB, 임베드 가능(fx0 데모: HTML → 샌드박스 Next.js → Eve 에이전트) ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 자사 진술
@@ -786,6 +788,7 @@ updated: 2026-11-17
 - [[home-repo-pattern]] — 홈 레포. 스킬 · AGENTS.md · 공유 문서 · 도구를 집 저장소 하나에, 다른 저장소는 경로 한 줄, 에이전트는 늘 거기서 실행. ~20개 포인터 · ~400개 영역 파일(점진적 공개) · 수천 개 마켓플레이스 ([[tech-bridge-matt-pocock-home-repo-pattern]]) ⚠️ 한 사람의 경험, 효과 수치 없음
 - [[model-temperament-routing]] — 모델 기질로 고르기. 꼼꼼한 모범생 Opus(앨런) vs 틀을 의심하는 Fable(브래드, LGTM) — 검증 가능한 일은 Opus, 정답 없는 일 · 검토는 Fable ([[tech-bridge-theo-fable-vs-opus-when-to-use]]) ⚠️ Theo 개인 해석
 - [[work-recording-hiring]] — 작업 녹화 채용. 사전 면접 없이 45분 작업 화면 녹화(무급) → 랭킹 에이전트 → 상위 5명 16시간 유급 과제 → 최종 후보에게 첫 통화 ([[tech-bridge-ryan-carson-managing-20-agents]]) ⚠️ 한 회사의 방식, 채용 결과 수치 없음
+- [[agent-development-environment]] — 에이전트 개발 환경(ADE). 에이전트와 구독은 그대로 두고 바깥의 작업대만 바꾼다 — 격리(워크트리) · 보는 방식(터미널/채팅) · 일감 연결 · 내장 브라우저 · 원격과 알림. Conductor · AgentCraft · Warp · herdr · cmux · Orca를 묶는 허브 ([[tech-bridge-rob-shocks-orca-review-vs-records]]) ⚠️ 범주의 경계는 위키의 묶음
 
 ## Engineering (소프트웨어 엔지니어링)
 
@@ -1075,10 +1078,12 @@ updated: 2026-11-17
 - [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]] — 한국어 해설(8:54, 챕터 9, Korean original + 영어 더빙, 원음 무캡션 · ko-orig가 내레이션 일부를 놓침, 2026-11-16 07:00 KST): [[lex-fridman|Lex Fridman]] #503 수학자 셋의 조언 — 두 봉우리, PNAS 실험, 호기심과 지루함, 안에서 나오는 이유, 이미 이겼다고 치고, 생존자 편향 → [[ai-learning-polarization]] ⚠️ 원 자료 미열람
 - [[tech-bridge-ryan-carson-managing-20-agents]] — 한국어 해설(8:36, 챕터 9, 오디오 ko 하나 · en-orig 없음, 도입부 원음 한 조각만 캡션, 2026-11-16 18:00 KST): [[ryan-carson|Ryan Carson]] AI Engineer New York 발표 — 매니저 에이전트 하나하고만 음성으로, 빌더 20개(상한은 사람), 15분 자동 확인, 리뷰 최대 3번 · QA, 영상을 직접 보고 Ship it, 매니저끼리 대화 · 머지 큐 매니저, 로컬 개발은 돌 두드리기, 채용도 영상으로 → [[work-recording-hiring]] ⚠️ 성과 비교 수치 없음 · Devin 기능에 의존
 - [[tech-bridge-lauren-tan-all-code-is-slop]] — 한국어 해설(11:11, 챕터 10, Korean original + 영어 더빙, Lauren 원음 전부 무캡션, 2026-11-17 07:00 KST): [[lauren-tan|Lauren Tan]] AI Engineer Code Summit *All Code Is Slop (Except Mine)* — 10월 한 사람 PR 3,127 · 팀 10,926, 되돌림 0.98% → 0.47%, 뒤집힌 피라미드(검증 층 신설), 코드는 기억이다, 타이머 183개, 주석 99% 금지(65,824 → 1,227), 애매하면 금지, 토큰 70%는 검증에(Cindy Sridharan), TLA+ · Lean, 성적표의 빨간 숫자(CPU +100%) ⚠️ 팀 자체 집계 · 팀 PR 수가 캡션에서 갈림(설명란 채택)
+- [[tech-bridge-rob-shocks-orca-review-vs-records]] — 한국어 해설(9:24, 챕터 9, Korean original + 영어 더빙 — `en-orig`는 더빙의 ASR, Shocks 원음 여덟 곳 전부 무캡션, 2026-11-17 18:00 KST): [[rob-shocks|Rob Shocks]]의 [[orca|Orca]] 리뷰를 저장소 · 릴리스 노트 · 문서와 대조 — 진짜 기능 목록은 변경 기록, 에이전트와 구독은 그대로, 채팅 모드는 6월 말부터 있었다, 에이전트 하나에 워크트리 하나, 내장 브라우저, 지연은 사라진 게 아니라 안 느껴질 뿐, 31일 중 25 릴리스 · 열린 이슈 4,750, MIT지만 만드는 곳은 회사 · 가명 식별자 → [[agent-development-environment]] ⚠️ 수치는 채널 자체 집계
+- [[tech-bridge-fable-5-2-start-with-opus]] — 한국어 해설(8:46, 챕터 10, 오디오 ko 하나 · en-orig 없음, Lydia Hallie 두 대목 무캡션, 2026-11-18 07:00 KST): [[fable-5-2|Fable 5.2]] 종합편 — 시작은 Opus 5.5 medium, 검증 → effort → 모델, Frontier Code 49.1%와 high 45.3%가 *같은 시험*, 지휘는 Fable · 일은 작은 모델(Explore 상한은 Opus), 끝내기 전에 멈춤과 high, never는 승인 절차로 · go 대신 범위, 주인 문장으로 중복 통합 10% 미만 → 75%, 요약과 diff를 함께, 모델을 바꾸면 캐시도 추론도 버려진다 ⚠️ 출처 다섯 모두 미열람 · 벤더 자체 테스트 수치
 
 ## 통계
 
-- 총 페이지 수: 1039 (1034 → 1039, + 2026-11-17 Tech Bridge 2편(11-16 업로드 — Lauren Tan *All Code Is Slop* · Ryan Carson 에이전트 20개 조직도): source 2 · entity 2(ryan-carson · untangle) · concept 1(work-recording-hiring) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1039와 일치)
+- 총 페이지 수: 1044 (1039 → 1044, + 2026-11-18 Tech Bridge 2편(11-17 업로드 — Fable 5.2 부터 쓰면 안됩니다 · 저는 이제 Orca만 씁니다): source 2 · entity 2(orca · stably-ai) · concept 1(agent-development-environment) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1044와 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-17 (Tech Bridge **2편** — 11-16 업로드 [[tech-bridge-lauren-tan-all-code-is-slop|한 달에 PR 1만 개, 그런데 쓰레기 코드는 없다]](`nldpxmin-1M`) · [[tech-bridge-ryan-carson-managing-20-agents|AI 에이전트 20개를 동시에 굴리는 창업자가 절대 건너뛰지 않는 한 단계]](`cY3rFdzLDkw`). 신규 멤버 전용 `OV9By_UspTk` 건너뜀 · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-16 (Tech Bridge **3편** — 11-15 업로드 [[tech-bridge-theo-fable-vs-opus-when-to-use|Fable 5.2 vs Opus 5.5, 언제 뭘 써야 하나]](`LUKuCe3rcis`) · [[tech-bridge-matt-pocock-home-repo-pattern|홈 레포 패턴]](`fq8GI-7bjgc`, 멤버 전용 → 공개) · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era|수학자 3명이 한 조언]](`YSMIkavxsZE`). `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-18 (Tech Bridge **2편** — 11-17 업로드 [[tech-bridge-fable-5-2-start-with-opus|Fable 5.2 부터 쓰면 안됩니다]](`denLM_IOSig`) · [[tech-bridge-rob-shocks-orca-review-vs-records|저는 이제 Orca만 씁니다]](`qBSqNkmNSXk`). `OV9By_UspTk` · `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-17 (Tech Bridge **2편** — 11-16 업로드 [[tech-bridge-lauren-tan-all-code-is-slop|한 달에 PR 1만 개, 그런데 쓰레기 코드는 없다]](`nldpxmin-1M`) · [[tech-bridge-ryan-carson-managing-20-agents|AI 에이전트 20개를 동시에 굴리는 창업자가 절대 건너뛰지 않는 한 단계]](`cY3rFdzLDkw`). 신규 멤버 전용 `OV9By_UspTk` 건너뜀 · `Yhck-x6VuLs` 멤버 전용 지속)

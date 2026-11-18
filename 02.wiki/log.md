@@ -2788,3 +2788,28 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편 · 8~11분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1117/`: 11-16 스크립트 복사, `merge.py`는 `engineering/patterns/`도 찾게 고침, 보강 절 `secA/` · `secB/` · `secAB/`). 인용은 `(@)` 자리표시로 쓰고 `q.py fill`로 시각을 채웠다 — `q.py check` 92건 중 손으로 적은 2곳 수정 뒤 불일치 0(영어 원음 조각은 `<!--k-->` 고정, 두 소스 공통 절은 각 말뭉치로 따로 확인). ⭐ **설명란과 캡션의 숫자가 다르면 설명란 · 제목을 우선하되 두 값을 모두 적는다** — 이번 팀 PR 수는 ko ASR과 영어 더빙이 같은 값으로 틀렸다. 더빙이 ko 캡션에서 만들어진다면(추정) 더빙 일치는 독립된 확인이 아니다.
 
+## [2026-11-18] ingest | Tech Bridge — 11-17 업로드 2편 (Fable 5.2 부터 쓰면 안됩니다 · 저는 이제 Orca만 씁니다)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 공개 2편: `qBSqNkmNSXk`(11-17 18:00 KST — 11-17 회차 뒤) · `denLM_IOSig`(11-18 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261117). 멤버 전용 `OV9By_UspTk`(목록 줄 · 단건 `subscriber_only`) · `Yhck-x6VuLs`(목록 범위 밖, 단건 `subscriber_only` 줄) 지속 — 건너뜀, 페이지 없음. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 2 · entity 2 · concept 1**, 기존 페이지 보강 16개(+ tech-bridge), index **1039 → 1044**(실측 일치).
+
+- `denLM_IOSig`(8:46, 챕터 10) → [[tech-bridge-fable-5-2-start-with-opus]]: [[fable-5-2|Fable 5.2]] 종합 해설(출시 글 · [[addy-osmani|Addy Osmani]] 가이드 · 프롬프트 문서 · [[lydia-hallie|Lydia Hallie]] 발표 · [[ai-labs|AI LABS]]). 오디오 ko 하나 · **en-orig 없음**, `ko` = `ko-orig`(`variant=gemini`).
+  - 보강: [[fable-5-2]](49.1 · 45.3이 같은 시험 · 성질/처방/수치 표) · [[claude-opus-5-5]](먼저 쓸 모델) · [[reasoning-effort-levels]](medium 시작 vs medium 조기 종료) · [[claude-code]](Explore 상한 Opus) · [[claude-haiku-5-5]] · [[token-roles]](지휘자 구성의 비용) · [[prompt-debt]](never · 메모 · go) · [[prompt-caching]](추론도 따라오지 않는다) · [[addy-osmani]] · [[lydia-hallie]] · [[ai-labs]](인용된 출처로)
+  - ⭐ 49.1%를 소개한 뒤 *아까 그 시험에서* high 45.3%라고 말한다 — 같은 시험의 다른 effort라는 위키 추정에 한 조각. 49.1의 effort는 여전히 미상이라 미해결을 닫지 않았다.
+  - ⚠️ 무캡션 세 구간(01:40~01:58 · 03:10~03:34 · 07:28~07:43)에 Lydia Hallie의 두 대목(발표 첫머리 · 보고서에 보탠 두 가지)이 들어 있어 **내용을 적지 않았다.**
+  - ⚠️ ASR 판독: *비슷한 페이블* → 비싼(추정) · *지위* → 지휘 · *세션 모드* → 세션 모델(추정) · *25가지* → 25개(추정) · *묶거나* → 묻거나 · *대화 박 사람* → 대화 밖 사람. 도입부 27분 / 58분 / 토큰 7배는 3차 전달.
+  - 페이지화하지 않음: Frontier Code · Unity · Explore 서브에이전트 · X 사용자의 실험.
+- `qBSqNkmNSXk`(9:24, 챕터 9) → [[tech-bridge-rob-shocks-orca-review-vs-records]]: [[rob-shocks|Rob Shocks]]의 [[orca|Orca]] 리뷰를 GitHub 저장소 · 릴리스 노트 · orca.dev 문서와 대조한 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`.
+  - 신규: [[orca]] · [[stably-ai]] · [[agent-development-environment]]
+  - 보강: [[rob-shocks]](두 번째 소스 · 이름이 처음 발화됨) · [[bring-your-own-subscription]](작업대는 중간에 끼지 않는다) · [[cloud-agent-delegation]](원격의 값은 지연) · [[herdr]] · [[conductor]]
+  - ⚠️ **`en-orig`가 원음이 아니라 영어 더빙의 ASR이다**(`lang=en&variant=timing-optimized`인데 내용은 내레이션). 인용에 쓰지 않고 ASR 판독 대조용으로만 썼다(*세워* → 세어 · *엿볼* → 엮을). 더빙은 리뷰어 이름을 *Rob Shouksmith* 로 읽는다.
+  - ⚠️ **Shocks 원음 발췌 여덟 곳이 두 트랙 모두 무캡션** — 리뷰어 본인 인용 0. 그의 주장은 내레이션이 받아 말한 대목으로만 적었다. *플러그인은 알파* 의 본론도 무캡션.
+  - ⚠️ 수치는 채널이 11-15에 GitHub API로 집계한 값(설명란). 열린 PR(3,761) > 머지된 PR(2,525)은 전한 값 그대로 두고 표시만 했다. *31일 중 25* 는 캡션(*25회의 정식 릴리스*)과 챕터 제목(*25일*)의 단위가 달라 둘 다 적었다.
+  - 페이지화하지 않음: git worktree · Y Combinator · Jira · Linear · Orca 모바일 앱 · 플러그인.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편 · 8~9분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1118/`: 11-17 스크립트 복사, index · overview · log는 `shared2.py`). 인용은 전부 `(@)` 자리표시 → `q.py fill`, MISS 0. ⭐ **트랙 이름 `en-orig`를 원음의 표지로 믿지 말 것** — 영어 더빙이 붙은 한국어 원본 영상에서는 `en-orig`가 더빙의 ASR이다. `meta.py`의 `lang` · `variant`만으로는 구분되지 않고(원음 영어 영상과 같은 값) **내용이 내레이션과 같은지** 로 판정한다. ADE 허브 페이지는 각 도구 페이지에 이미 적힌 것만 옮겼다(warp · agentcraft · cmux 소스는 다시 읽지 않음).
+

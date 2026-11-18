@@ -5,9 +5,9 @@ category: person
 tags: [creator, grokbot, claude-code, cursor, software-factory, orchestration]
 aliases: [Rob Shocks, 롭 쇼크스]
 links: []
-sources: [tech-bridge-rob-shocks-grokbot-manager-coding-agents]
+sources: [tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-rob-shocks-orca-review-vs-records]
 created: 2026-11-03
-updated: 2026-11-03
+updated: 2026-11-18
 ---
 
 # Rob Shocks
@@ -43,3 +43,12 @@ AI 코딩 워크플로를 다루는 영어 해설 영상 제작자. 이 위키�
 ## References
 
 - [[tech-bridge-rob-shocks-grokbot-manager-coding-agents]] · [[manager-bot-coding-agent-split]] · [[grokbot]] · [[lauren-tan]]
+
+## 2026-11-18 — 두 번째 소스: Orca 리뷰, 그리고 처음 발화된 이름 ([[tech-bridge-rob-shocks-orca-review-vs-records]])
+
+Tech Bridge가 그의 리뷰 영상(설명란 원본 링크 `73DrNNvEKH0`, 위키 미열람)을 공식 기록과 맞춰 본다. **위 *귀속의 근거* 가 달라진다** — 이번에는 내레이션이 이름을 말한다: *"리뷰한 사람은 롭 쇼크스입니다. 에이전트 개발 환경을 두루 써보고 영상으로 남겨온 유튜버입니다."*(00:59~01:02) 설명란 · tags · 원본 링크도 있다.
+
+- 주장(해설이 받아 말한 것): [[claude-code|Claude Code]]를 돌리는 기본 도구를 [[orca|Orca]]로 바꿨다. 두 달 전에는 모자랐던 도구가 지금은 기본값이 됐다.
+- 해설의 대조 결과: 채팅 모드를 *새 기능* 이라 한 것은 기록과 다르다(릴리스 기록에 6월 말부터) · 브라우저 확장과 비밀번호 대목은 날짜가 맞다(11월 5일 · 13일 릴리스, 리뷰는 그 하루 뒤) · *지연이 사라졌다* 는 표현은 *"쇼크스의 말처럼 지연이 사라진 건 아닙니다. 타자를 칠 때 느껴지지 않을 뿐입니다."*(06:05~06:08) 로 고쳐진다.
+- ⚠️ **그의 원음 발췌 여덟 곳은 전부 무캡션** 이라 본인 발화는 인용할 수 없다. 영어 더빙 ASR은 이름을 *Rob Shouksmith* 로 적는다 — 근거로 쓰지 않는다.
+- 11-03 편의 *매니저 봇 + 코딩 에이전트* 구성과 이 리뷰의 관계(같은 작업대 위에서 도는지)는 말하지 않는다.

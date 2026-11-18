@@ -6,9 +6,9 @@ tags: [prompt-engineering, prompt-debt, prompt-audit, model-upgrade, cost, claud
 aliases: [prompt debt, 프롬프트 부채, 프롬프트 빚, prompt audit, prompt-audit, /claude-api prompt-audit, 옛날 프롬프트, legacy prompt instructions]
 related: [harness-pruning, prompt-caching, skill-evals, climbable-eval, model-mixing-economics, tools-and-context-over-harness, agent-harness-design, reasoning-effort-levels, human-loop-roles-relocation]
 first-seen: tech-bridge-lance-martin-old-prompts-make-claude-worse
-sources: [tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-11-09
-updated: 2026-11-13
+updated: 2026-11-18
 ---
 
 # 프롬프트 부채 (Prompt Debt)
@@ -69,3 +69,14 @@ updated: 2026-11-13
 - ⭐ 기준: *"클로드가 저장소를 읽어서 알 수 없는 것만 적으라는 겁니다."*(02:18~02:20) 스택 · 볼 곳은 코드에 있으니 지우고, 코드에 드러나지 않는 사실(레거시 폴더를 아직 모바일 앱이 쓴다)은 남긴다.
 - 모델에 맞춰 CLAUDE.md · 스킬의 지시를 찾아 수정안을 내는 명령어가 있다고 한다 — ⚠️ 이름은 ASR이 *닥터 프롬프트 오* 로 적어 판독하지 못했다.
 - 11-09 Lance Martin(옛 주문이 비용을 키운다) · 11-12 Chase AI(Fable 5.2는 규칙을 글자 그대로 따른다)에 이어 **도구를 만드는 팀이 같은 정리를 권한다.**
+
+## 2026-11-18 — 처방이 문장 수준으로 내려온다: never · 메모 · go ([[tech-bridge-fable-5-2-start-with-opus]])
+
+Fable 5.2 종합 해설(⚠️ 공식 프롬프트 문서의 해설 전달). 빚이 되는 이유: *"페이블은 지시를 아주 꼼꼼하게 따르기 때문입니다. 예를 들어 네버가 들어간 지시는 예외 없는 절대 규칙으로 받아들입니다."*(05:58~06:04)
+
+- **금지를 승인 절차로 바꿔 쓴다** — *파일을 절대 지우지 마라* 대신 *지우기 전에 승인을 받아라*.
+- **쌓인 메모도 빚이다** — 예전 세션의 *절대 재시도하지 마라* 같은 지시를 계속 따른다. *"필요 없어진 메모는 지우고 승인 없이 해도 되는 단계는 하나하나 이름을 적어 주라고 합니다."*(06:19~06:23)
+- **승인의 말도 범위를 적는다** — *go* 한마디 대신 무엇을 허락하는지.
+- **넓게 쓴 승인 규칙은 과잉 보류를 낳는다** — *대화 밖 사람에게 메시지 보내기* 를 승인 대상으로 적자 *"그러자 모델은 동료와 다른 팀에 보내는 일상적인 요청까지 절반쯤은 보류했습니다."*(06:39~06:43)
+
+위 표의 *모순된 규칙* (환불을 붙잡고 확인만 요청)과 같은 모양의 실패다 — 규칙이 틀려서가 아니라 **모델이 규칙을 글자 그대로 넓게 지켜서** 일이 멈춘다. 빚의 범위가 시스템 프롬프트 · CLAUDE.md에서 **에이전트가 스스로 쌓은 메모** 로 넓어진 것이 이 편의 새 조각이다.

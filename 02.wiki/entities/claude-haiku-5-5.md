@@ -6,9 +6,9 @@ tags: [anthropic, claude, haiku, llm, pricing, subagent]
 aliases: [Haiku 5.5, 하이쿠 5.5, claude-haiku-5-5]
 links:
   - https://platform.claude.com/docs/en/about-claude/models/choosing-a-model
-sources: [tech-bridge-addy-osmani-which-claude-model]
+sources: [tech-bridge-addy-osmani-which-claude-model, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-18
 ---
 
 # Claude Haiku 5.5
@@ -28,3 +28,7 @@ updated: 2026-11-13
 ## References
 
 - [[tech-bridge-addy-osmani-which-claude-model]]
+
+## 2026-11-18 — 틀려도 금방 티가 나는 일의 모델 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+Fable 5.2 종합 해설(⚠️ 해설 전달, *하이쿠* 의 버전은 발화되지 않는다): 파일 찾기 · 테스트 실행 · 로그 읽기 같은 일을 서브에이전트 정의 파일의 한 줄로 Haiku에 맡긴다. Claude Code의 Explore는 요즘 버전에서 *"늘 하이쿠로 돌지 않고 세션 모드를 따라갑니다."*(04:08~04:10)[=세션 모델을] — 파일 검색에 Opus 값을 내기 싫으면 Explore라는 이름의 서브에이전트를 Haiku로 직접 정의한다. → [[claude-code]] · [[token-roles]]

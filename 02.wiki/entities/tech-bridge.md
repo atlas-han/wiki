@@ -189,8 +189,10 @@ sources:
   - tech-bridge-theo-fable-vs-opus-when-to-use
   - tech-bridge-lauren-tan-all-code-is-slop
   - tech-bridge-ryan-carson-managing-20-agents
+  - tech-bridge-fable-5-2-start-with-opus
+  - tech-bridge-rob-shocks-orca-review-vs-records
 created: 2026-06-03
-updated: 2026-11-17
+updated: 2026-11-18
 ---
 
 # Tech Bridge
@@ -1775,3 +1777,19 @@ updated: 2026-11-17
 - 원 발표(`O_zcc6Xl12g` · `BTtyguoPvBU`) · X 게시물 · How I AI 인터뷰 · pstack 저장소는 미열람.
 
 **멤버 전용**: 신규 `OV9By_UspTk`(목록 `upload_date` 20261116, *2시간 만에 유튜브를 만든 프롬프트, 단어 5개 | Andrej Karpathy*, 10:19) — 목록 줄 `subscriber_only`, 건너뜀. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-17 업로드 — Fable 5.2 부터 쓰면 안됩니다 · 저는 이제 Orca만 씁니다 (2026-11-18 ingest)
+
+[[tech-bridge-fable-5-2-start-with-opus|Fable 5.2 부터 쓰면 안됩니다 | Anthropic이 직접 밝힌 사용법]](`denLM_IOSig`, 8:46, 공식 챕터 10) — 한국어 해설, 출시 글 · 모델 선택 가이드 · 프롬프트 문서 · Lydia Hallie 발표의 종합 ([[fable-5-2]] · [[claude-opus-5-5]] · [[reasoning-effort-levels]] · [[claude-code]] · [[claude-haiku-5-5]] · [[token-roles]] · [[prompt-debt]] · [[prompt-caching]] · [[addy-osmani]] · [[lydia-hallie]] · [[ai-labs]])
+
+[[tech-bridge-rob-shocks-orca-review-vs-records|저는 이제 Orca만 씁니다 | 에이전트 IDE 다 써 본 리뷰어가 갈아탄 이유]](`qBSqNkmNSXk`, 9:24, 공식 챕터 9) — 한국어 해설, Rob Shocks 리뷰를 공식 기록과 대조 ([[orca]] · [[stably-ai]] · [[agent-development-environment]](모두 신규) · [[rob-shocks]] · [[bring-your-own-subscription]] · [[cloud-agent-delegation]] · [[herdr]] · [[conductor]])
+
+- 구성 두 가지: **Fable 편은 오디오 ko 하나 · en-orig 없음**, **Orca 편은 Korean original + 영어 더빙**(메타 `language`=`en`). 둘 다 `ko` = `ko-orig`(`variant=gemini`). 인용은 ko-orig.
+- ⚠️ **Orca 편의 `en-orig`는 원 리뷰어의 음성이 아니라 영어 더빙의 ASR이다** — 트랙 이름만 보고 원음으로 쓰면 안 된다. 더빙은 리뷰어 이름을 *Rob Shouksmith* 로 읽는다.
+- Orca 편은 Rob Shocks 원음 발췌 여덟 곳이 두 트랙 모두 무캡션 — **리뷰어 본인의 말이 한 줄도 남지 않았다.** Fable 편은 무캡션 세 구간에 Lydia Hallie의 두 대목이 들어 있다.
+- ⭐ Fable 편이 Frontier Code 49.1%와 high 45.3%를 *같은 시험* 으로 잇는다 — [[fable-5-2]]의 미해결에 한 조각.
+- Orca 편의 수치(릴리스 1,012 · 31일 중 25 · 머지 PR 2,525 · 열린 이슈 4,750 · 열린 PR 3,761 · 별 12만 5천+)는 **채널이 11-15에 GitHub API로 직접 집계** 한 값이다(설명란).
+- 게시 시각: Orca 편 11-17 18:00 KST(11-17 회차 뒤) · Fable 편 **11-18 07:00 KST**(이 회차 두 시간 전, `upload_date`는 UTC 기준 20261117).
+- 설명란의 출처(출시 글 · 가이드 · 프롬프트 문서 · 원 발표 `vlfCjWuv4es` · AI LABS `EFGvVCpW9zc` · 원 리뷰 `73DrNNvEKH0` · Orca 저장소와 문서)는 미열람.
+
+**멤버 전용**: `OV9By_UspTk`(*2시간 만에 유튜브를 만든 프롬프트, 단어 5개 | Andrej Karpathy*) 지속 — 목록 줄 `subscriber_only` · 단건 `subscriber_only` 줄. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 목록 20편 요청 → **20줄**(stderr ERROR 없음).

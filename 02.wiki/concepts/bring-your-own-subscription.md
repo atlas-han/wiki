@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [platform, subscription, pricing, app-developer, token-economics, openai, chatgpt, byo]
 aliases: [BYO subscription, bring your own subscription, 구독 연동, 구독 이동]
-related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth, reserve-then-settle]
+related: [model-mixing-economics, software-marginal-cost, intelligence-abundance, compute-constrained-growth, reserve-then-settle, agent-development-environment]
 first-seen: tech-bridge-altman-devday-dots
-sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-altman-devday-dots, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-rob-shocks-orca-review-vs-records]
 created: 2026-10-09
-updated: 2026-11-16
+updated: 2026-11-18
 ---
 
 # 구독을 들고 다니기
@@ -65,3 +65,9 @@ Altman은 이를 플랫폼 철학 안에 놓는다 — *"let people build apps i
 ## 구독 기준으로 다시 그린 모델 비용 — Theo (2026-11-16 · [[tech-bridge-theo-fable-vs-opus-when-to-use]])
 
 [[theo|Theo]]는 모델 성능 점수를 API 값이 아니라 **구독 요금 기준 비용** 으로 다시 그려 *같은 돈이면 Claude 구독으로 가장 많은 일* 을 시킬 수 있다고 주장한다(해설 전달). 자기 계정 3달 · 요청 110만 건 환산: 월 200달러로 [[claude-opus-5-5|Opus]] 약 14,600달러 치 · [[fable-5-2|Fable]] 3,000달러 치(Fable은 주간 한도의 절반까지만). 구독이 *API 가격표와 다른 두 번째 가격표* 가 되어 모델 선택을 바꾼다 — T3 Code가 사용자 구독으로 Codex를 쓰는 구조(10-14)와 같은 축의 사용자 쪽 계산이다. ⚠️ 한 계정 측정, *요금 정책이 바뀌면 달라질 얘기* (해설).
+
+## 2026-11-18 — 도구 쪽의 BYO: 작업대는 중간에 끼지 않는다 ([[tech-bridge-rob-shocks-orca-review-vs-records]])
+
+[[orca|Orca]](에이전트 작업대)의 요금 구조가 같은 원리의 다른 구현이다(한국어 해설 전달). *"오르카가 모델을 대신 불러주는 게 아닙니다."*(01:46~01:47) 사용자 컴퓨터에 깔린 Claude Code를 그대로 실행하므로 *"그래서 요금도 오르카가 아니라 원래 쓰던 구독에서 나갑니다."*(01:52~01:54) 기업용 페이지의 표현은 *"오르카는 중간에 끼지 않는다."*(01:58~02:00)
+
+위 절들의 BYO는 앱이 사용자의 구독으로 **모델을 부르는** 방식이었고, 서드파티 에이전트의 구독 사용을 벤더가 막은 사건도 적혀 있다(10-12 절). 여기는 앱이 **벤더의 CLI 자체를 실행** 한다 — 구조가 다르다(위키 해석). ⚠️ 약관상 어떻게 다뤄지는지는 이 소스가 말하지 않는다. → [[agent-development-environment]]

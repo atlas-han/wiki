@@ -5,9 +5,9 @@ category: org
 tags: [youtube, ai-engineering, content, agent-skills]
 links:
   - https://ailabspro.io/
-sources: [tech-bridge-six-agent-skills, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-ai-labs-token-economizer]
+sources: [tech-bridge-six-agent-skills, tech-bridge-graft-code-knowledge-graph, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-ai-labs-token-economizer, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-09-05
-updated: 2026-11-04
+updated: 2026-11-18
 ---
 
 # AI Labs
@@ -58,3 +58,7 @@ updated: 2026-11-04
 - **귀속은 설명란 근거다.** 발화 · 태그에 "AI Labs"가 없고 설명란 *"AI LABS가 기존 세션 기록을 활용하도록 도구를 수정한 과정"* 이 유일한 이름이다. 자기 언급 *"We've covered a few of them on our channel too, and Graft is one of them."*(00:24~00:28)이 09-15 [[graft|Graft]] 편과 맞아 간접 근거가 된다. ⚠️ 발표자 개인 이름은 이번에도 없다.
 - **09-15와 같은 형식이다** — 남의 토큰 절감 도구를 소개하고, 자기 수정판을 만들어 측정한다. 이번 수정은 [[token-economizer|Token Economizer]]가 Claude Code 세션 기록에서 먼저 배우게 하는 것이다(*"We gave it the repo and asked it to change the tool"* 07:17~07:19). 커뮤니티 안내는 없고 프롬프트를 화면으로 보여 준다(*"copy the prompt from the screen"* 07:37~07:39, 자막에는 없다).
 - ⚠️ **측정은 두 프로젝트의 값이다** — 메시지당 34,300 → 24,400 토큰(약 29%), 다른 앱 3과제 99 → 79 스텝 · 비용 약 21%. 설명란이 *"실험 결과는 영상에서 설명한 환경과 작업에 한정됩니다."* 라고 스스로 제한한다.
+
+## 2026-11-18 — 다섯 번째 등장: 인용된 출처로 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+이번에는 해설 대상이 아니라 **출처 가운데 하나** 다. Tech Bridge의 Fable 5.2 종합 해설이 도입부에서 *"유튜브 채널 AI 랩스가 소개한 실험도 있습니다."*(00:24~00:25) 라며 한 X 사용자의 비교를 옮긴다 — 같은 한 줄 프롬프트에 *"오퍼스는 27분, 페이블은 58분이 걸렸고 토큰은 일곱 배쯤 더 썼다고 합니다."*(00:30~00:35) 설명란의 영상 제목은 *Fable 5.2 Is Insane... Only If You Use It Anthropic's Way*(`EFGvVCpW9zc`, 위키 미열람). ⚠️ 3차 전달이고 과제 · 결과물의 질 · effort 설정은 없다.

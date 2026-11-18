@@ -6,9 +6,9 @@ tags: [prompt-caching, context-engineering, cost, latency, harness-design, compa
 aliases: [prompt caching, prompt cache, 프롬프트 캐시, 캐시 적중, cache hit, cache miss, cache warming, 캐시 예열, KV cache hit ratio]
 related: [context-engineering, harness-engineering, context-resets-and-compaction, deferred-tool-context, toolbox-pattern, scripts-that-talk-back, transcript-classifier, automatic-model-routing, model-mixing-economics, trusted-throughput, always-on-agent-architecture, openclaw, fireworks-ai, hidden-harness-calls, fork-subagent]
 first-seen: tech-bridge-lee-robinson-always-on-agents
-sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model]
+sources: [tech-bridge-lee-robinson-always-on-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-10-18
-updated: 2026-11-13
+updated: 2026-11-18
 ---
 
 # 프롬프트 캐싱 (Prompt Caching)
@@ -78,3 +78,7 @@ updated: 2026-11-13
 
 - ⭐ **프롬프트 캐시는 만든 모델에 묶인다** — 모델을 바꾸면 첫 턴에 전체 대화를 다시 캐시에 써야 한다. 전환은 작업 경계에서, Claude Code에선 먼저 `/compact`.
 - Fable 5.2는 생각 블록 앞의 내용(시스템 프롬프트 · 도구 · 이전 메시지)을 바꾸면 400 오류 — 이 페이지의 *정적 접두를 지켜라* 가 Fable 5.2에서는 **오류로 강제** 된다(위키의 읽기). 기록은 덧붙이기만.
+
+## 2026-11-18 — 캐시도 추론도 모델을 따라가지 않는다 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+Fable 5.2 종합 해설이 11-13 절을 한 번 더 말한다: *"프롬프트 캐시는 그걸 쓴 모델의 것입니다."*(07:56~07:57) 모델을 바꾸면 새 모델의 첫 턴에서 대화 전체의 캐시 쓰기 값을 다시 낸다. 새 조각은 생각이다 — *"페이블에서 다른 모델로 옮기면 페이블이 해둔 추론은 버려집니다."*(08:05~08:06) 그래서 전환은 작업이 한 덩어리 끝난 자리에서, compact를 먼저 돌리거나 짧은 계획서를 들고 새 세션으로. → [[context-resets-and-compaction]] ⚠️ 해설 전달.

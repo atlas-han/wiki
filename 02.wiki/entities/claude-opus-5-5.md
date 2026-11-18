@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus]
 links: []
 created: 2026-10-09
-updated: 2026-11-17
+updated: 2026-11-18
 ---
 
 # Claude Opus 5.5
@@ -107,3 +107,7 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 ## 2026-11-17 — *엔지니어링 매니저* 자리의 모델 ([[tech-bridge-ryan-carson-managing-20-agents]])
 
 [[ryan-carson|Ryan Carson]]의 9월 글(해설 인용): *"엔지니어링 매니저는 오퍼스 5.5, 여기에 데빈과 리니어, 그리고 로컬 개발은 전혀 하지 않는다."*(02:01~02:05) — 코드를 쓰지 않고 빌더 에이전트를 배정 · 확인하는 매니저 세션에 Opus 5.5를 둔다는 뜻으로 읽힌다(위키 해석, 10월 발표 시점에도 같은지는 미확인).
+
+## 2026-11-18 — *먼저 쓸 모델* 의 자리 굳히기 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+종합 해설이 Opus 5.5를 기본 출발점으로 다시 세운다: *"대부분의 일은 오퍼스 5.5, 기본 노력 수준인 미디엄에서 시작하라."*(01:30~01:34) 부족하면 검증 수단 → effort 한 단계 → 그다음에야 큰 모델. Fable로 넘어가는 때는 *"오퍼스를 하이까지 올려도 모자랄 때, 그리고 오래 혼자 돌려 둘 때입니다."*(02:14~02:18) 지휘자 자리에서도 쓰인다 — 소스 코드 2,200만 토큰 결함 탐색에서 Opus 지휘 + Sonnet 일꾼이 Opus 단독보다 1/3쯤 싸고 점수는 비슷했다(11-13 가이드 해설과 같은 사례). Claude Code의 Explore 서브에이전트가 세션 모델을 따를 때 *"API 기준 상한은 오퍼스입니다."*(04:10~04:12) ⚠️ 해설 전달, 원 문서 미열람.

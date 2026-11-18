@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, token-economics, model-routing, evaluation, memory, anthropic]
 related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth, fixed-budget-alpha, all-or-nothing-accuracy, true-cost-to-perfect-answer, strategy-primitives, agent-dreaming]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-fable-5-2-announcement, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-09-02
-updated: 2026-11-11
+updated: 2026-11-18
 ---
 
 # Token Roles
@@ -168,3 +168,12 @@ Angela 본인의 수동 버전도 대담에 나온다 — 마음에 안 드는 �
 ## 벤더의 두 구성 — advisor와 지휘자 (2026-11-11 · [[tech-bridge-claude-fable-5-2-announcement]])
 
 [[fable-5-2|Fable 5.2]] 발표문(해설 전달)도 두 구성을 소개한다. *"작은 모델이 어려운 문제에서만 물어보는 조언자로 두거나 반대로 페이블이 쉬운 일을 작은 모델에게 나눠주는 지위자로 쓰는 방식"*(07:16~07:24)[=지휘자] — 앞은 이 페이지의 advisor 구성(작은 모델이 실행, 큰 모델이 조언)과 같고, 뒤는 큰 모델이 일을 나누는 지휘자 구성이다([[orchestrator-searcher-split]]). ⚠️ 첫 구성의 주어는 ko 문장으로 정해지지 않는다. 위키는 *작은 모델이 실행하다 어려운 문제에서만 Fable에게 묻는다* 로 읽는다(raw 헤더).
+
+## 2026-11-18 — 지휘자 구성의 비용 쪽 장부 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+11-11 절의 *지휘자* 에 조건과 수치가 붙는다(Fable 5.2 종합 해설, ⚠️ 해설 전달). 역할: *"쉬운 일을 작은 모델에게 나눠 주는 지휘자입니다."*(03:04~03:08) 나누는 기준은 **틀려도 금방 티가 나는가** — 파일 찾기 · 테스트 실행 · 로그 읽기는 작은 모델, 코드 수정과 판단은 메인 모델.
+
+- 공짜가 아니다 — 프롬프트 가이드는 서브에이전트가 세션 비용의 큰 부분이 될 수 있다고 경고한다. 도구 설명에 비용을 자세히 적자 띄우는 수가 절반 정도로 줄었다(Anthropic 테스트).
+- 효과가 난 규모: 소스 코드 2,200만 토큰 결함 탐색, Opus 지휘 + Sonnet 일꾼 → Opus 단독보다 1/3쯤 싸고 점수 비슷.
+- 한계: *"컨텍스트 창 하나에 들어가는 일이면 나누고 합치는 비용이 아끼는 것보다 큽니다."*(04:45~04:49)
+- 극단의 사례: *"페이블은 서브 에이전트 1,000개 이상을 지휘하며 8일 동안 쉬지 않고 일했습니다."*(03:43~03:47)

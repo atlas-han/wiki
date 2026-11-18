@@ -5,9 +5,9 @@ category: product
 tags: [agent-multiplexer, terminal, cli, coding-agents, remote-machines, ssh, notifications, developer-tools]
 aliases: [herdr app, herdr.dev, 허더, holder (ASR 오역), Hodor (ASR 오역), Hurder (ASR 오역), Herder (ASR 오역), Horder (ASR 오역)]
 links: [https://herdr.dev/]
-sources: [tech-bridge-mehul-mohan-herdr-app-vs-cmux]
+sources: [tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-rob-shocks-orca-review-vs-records]
 created: 2026-11-01
-updated: 2026-11-01
+updated: 2026-11-18
 ---
 
 # herdr
@@ -42,3 +42,7 @@ updated: 2026-11-01
 
 - [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]] · [[mehul-mohan]]
 - 관련: [[cmux]] · [[claude-code]] · [[codex]] · [[conductor]] · [[agentcraft]]
+
+## 2026-11-18 — 같은 범주의 여섯 번째: Orca ([[tech-bridge-rob-shocks-orca-review-vs-records]])
+
+[[orca|Orca]]가 같은 범주로 들어왔다(Rob Shocks 리뷰를 공식 기록과 대조한 한국어 해설). herdr와 겹치는 것: 여러 CLI 에이전트를 한 화면에서 · 원격 머신 · 알림. Orca 쪽에만 적힌 것: 채팅 화면(원격 타자 지연의 답) · 에이전트마다 워크트리 · 내장 브라우저 · 모바일 리모컨 앱(위 표에서 herdr는 *전용 모바일 앱은 아직 없다* 였다) · MIT 라이선스와 제작사 · 텔레메트리 문서. ⚠️ 두 소스는 서로를 언급하지 않는다 — 비교는 위키의 나란히 놓기다. 범주 전체는 [[agent-development-environment]](신규).

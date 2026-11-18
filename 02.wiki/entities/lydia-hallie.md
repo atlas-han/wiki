@@ -6,9 +6,9 @@ tags: [anthropic, claude-code, developer-relations, best-practices, speaker]
 aliases: [Lydia Hallie, 리디아 할리, 리디아, Lydia]
 links:
   - https://www.youtube.com/watch?v=vlfCjWuv4es
-sources: [tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-18
 ---
 
 # Lydia Hallie
@@ -27,3 +27,7 @@ updated: 2026-11-13
 ## References
 
 - [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]]
+
+## 2026-11-18 — 두 번 불려 나오지만 말은 캡션에 없다 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+Fable 5.2 종합 해설이 Lydia Hallie의 발표를 두 번 끌어온다 — 출시 *이틀 뒤* 발표의 첫머리(01:35~01:37 소개), 그리고 마지막 보고서에 *"리디아는 여기에 두 가지를 보탭니다."*(07:26) ⚠️ **두 대목 모두 바로 뒤가 무캡션**(01:40~01:58 · 07:28~07:43)이라 무슨 말이었는지는 이 소스로 알 수 없다. 발표 내용은 [[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]] 쪽을 볼 것.

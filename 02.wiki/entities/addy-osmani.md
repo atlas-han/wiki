@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, claude-code, software-factory, verification, code-review, accountability]
 aliases: [Addy Osmani, 애디 오스마니, Addy]
 links: []
-sources: [tech-bridge-anthropic-30k-merges-verification, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-anthropic-30k-merges-verification, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-10-31
-updated: 2026-11-16
+updated: 2026-11-18
 ---
 
 # Addy Osmani
@@ -40,3 +40,7 @@ claude.dev 블로그 글 *"Which Claude model should you build with? Fable, Opus
 ## 2026-11-16 — Theo가 맞춰 본 공식 가이드 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
 
 같은 가이드(claude.dev, 2026-11-09)를 두 번째 Tech Bridge 해설이 [[theo|Theo]]의 영상과 대조한다. 가이드에서 옮긴 값은 11-12 해설과 같다 — *대부분 Opus medium에서 시작*, Fable 칸은 대규모 리팩터링 · 마이그레이션 · 아키텍처 · 서브에이전트 지휘, SWE-bench Pro(medium −2.5p · 70%, xhigh +1.4p · 2.5배), Frontier Code 2.0(Opus max 45.5% · Fable high 45.3%), *high를 넘기려면 한 단계 위 모델을 낮은 effort로*. 마지막 권고 *Opus를 쓰다가 Opus가 아쉬워지는 순간에 Fable*. Theo가 붙인 단서: *절반* 은 API 가격 기준이고 구독에서는 계산이 뒤집힌다. ⚠️ 원 글 미열람.
+
+## 2026-11-18 — 종합 해설의 뼈대로 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+Fable 5.2 종합 해설이 가이드를 세 번째로 옮긴다(⚠️ 원 글 미열람). 해설은 가이드가 출시 글과 *같은 날* 나왔다고 말한다. 다시 나온 것: 첫머리의 *Opus 5.5 medium에서 시작*, 검증 → effort → 모델 사다리, Fable로 **시작** 할 일의 표(대규모 리팩터링 · 마이그레이션 · 아키텍처 설계 · 여러 서브에이전트 지휘 · 깊이 있는 리서치와 과학 정량 분석), 일을 나누는 기준 — *"파일 찾기, 테스트 실행, 로그 읽기처럼 틀려도 금방 티가 나는 일은 작은 모델에게 줍니다. 코드 수정과 판단은 메인 모델에 남깁니다."*(03:50~03:56) 새 조각: *"어려운 일에서 오퍼스를 하이 위로 올리기 전에 페이블을 먼저 시험해 보라."*(02:35~02:39)

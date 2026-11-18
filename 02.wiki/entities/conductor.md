@@ -5,9 +5,9 @@ category: product
 tags: [coding-agents, multi-agent, desktop-app, cloud-sandbox, collaboration, worktree, developer-tools]
 aliases: [conductor.build, 컨덕터, Driver (ASR 오역), Coda (ASR 오역)]
 links: [https://www.conductor.build]
-sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-mehul-mohan-herdr-app-vs-cmux]
+sources: [tech-bridge-conductor-orchestras-not-factories, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-rob-shocks-orca-review-vs-records]
 created: 2026-10-02
-updated: 2026-11-01
+updated: 2026-11-18
 ---
 
 # Conductor
@@ -55,3 +55,7 @@ updated: 2026-11-01
 ## 같은 범주, 사용자 비교 — herdr · cmux (2026-11-01)
 
 [[tech-bridge-mehul-mohan-herdr-app-vs-cmux]]에서 [[mehul-mohan|Mehul Mohan]]은 같은 범주의 터미널 쪽 도구 [[herdr]]와 [[cmux]]를 비교한다. 그는 이 범주를 *"a agent multiplexer or agent manager sort of screen"*(08:33~08:35)이라 부르고 *"this field is super saturated"*(07:49~07:52)라고 한다. 비교 축은 Conductor 발표(worktree · 클라우드 샌드박스)와 다르다. **SSH 원격 머신과 앱을 닫아도 남는 세션**이 축이다. Conductor는 그 영상에 나오지 않는다. 비교는 위키의 것이다.
+
+## 2026-11-18 — 워크트리를 떠난 도구와 둘 다 두는 도구 ([[tech-bridge-rob-shocks-orca-review-vs-records]])
+
+같은 범주의 [[orca|Orca]]는 Conductor와 반대 방향의 선택을 보여 준다. Conductor는 *작업 = git worktree* 에서 클라우드 샌드박스로 **옮겨 갔고**(위 이력), Orca는 로컬에 *"둘, 에이전트 하나에 워크트리 하나."*(08:51) 를 두면서 원격 서버 실행을 **함께** 둔다(한국어 해설 전달). ⚠️ 두 소스는 서로를 언급하지 않는다. → [[agent-development-environment]] · [[cloud-agent-delegation]]

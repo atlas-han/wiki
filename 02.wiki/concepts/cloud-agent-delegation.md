@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [cloud-agents, remote-vm, self-verification, async-collaboration, multi-repo]
 aliases: [클라우드 에이전트, cloud agents, 원격 위임]
-related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing, human-loop-roles-relocation]
+related: [plan-to-ticket-pipeline, scheduled-agent-automations, model-mixing-economics, behavior-validated-trust, persistent-agent-teams, generator-evaluator-pattern, goal-level-delegation, agent-sandboxing, human-loop-roles-relocation, agent-development-environment]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-codex-agents-that-dont-quit, tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-acp-universal-remote, tech-bridge-lauren-tan-trusting-agents, tech-bridge-conductor-orchestras-not-factories, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-cooking-with-codex, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-codex-agents-that-dont-quit, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-rob-shocks-orca-review-vs-records]
 created: 2026-09-09
-updated: 2026-11-17
+updated: 2026-11-18
 ---
 
 # 클라우드 에이전트 위임
@@ -142,3 +142,9 @@ Lauren의 글을 한국어 요약이 인용한다: *"워크트리는 끝났다. 
 ## 2026-11-17 — *로컬 개발은 돌 두드리기*, 단서는 95% ([[tech-bridge-ryan-carson-managing-20-agents]])
 
 [[ryan-carson|Ryan Carson]]의 조직도는 개발이 전부 클라우드에서 돈다는 전제 위에 선다. 본인 글(해설 인용): *"로컬 개발은 돌을 두드리며 끙끙대는 것이고 클라우드 에이전트는 로켓에 타는 것이다."*(05:48~05:52) 같은 글에서 이런 공장을 직접 만들지 말고 돈을 내고 만들어진 도구를 쓰라고 권한다. 다만 8월에는 프론트엔드처럼 로컬 브라우저가 필요한 일 때문에 클라우드 비중이 95%라고 했다 — 11-01 절의 *눈으로 보는 루프는 로컬* 과 같은 예외다. 11-14 Lauren Tan의 *워크트리는 끝났다* 에 이은 두 번째 강한 표현.
+
+## 2026-11-18 — 원격의 값은 지연, 그리고 채팅 화면이라는 답 ([[tech-bridge-rob-shocks-orca-review-vs-records]])
+
+[[orca|Orca]] 해설이 원격 실행의 **사람 쪽 비용** 을 처음 말한다. *"원격 터미널에서는 글자 하나를 칠 때마다 그 글자가 서버까지 갔다 와야 화면에 찍힙니다."*(05:55~05:59) 채팅 화면은 입력 창이 로컬에 있어 다 쓰고 보낼 때만 서버로 간다 — 리뷰어의 *지연이 사라졌다* 를 해설은 *타자를 칠 때 느껴지지 않을 뿐* 으로 고친다. 단서: *"문서에는 SSH 세션은 터미널 기반 채팅을 쓴다고 적혀 있습니다."*(06:11~06:13)
+
+위 11-14 · 11-17 절의 강한 표현(*워크트리는 끝났다* · *돌 두드리기*)과 달리 이 도구는 **로컬 워크트리와 원격 서버를 둘 다 둔다** — *에이전트 하나에 워크트리 하나* 가 정리의 둘째 항목이다. 모바일 앱은 내 컴퓨터의 Orca를 조종하는 리모컨이고, 에이전트가 사람을 찾으면 알림이 온다. ⚠️ 해설 전달. 원격 서버를 누가 제공하는지, 원격에서도 워크트리를 쓰는지는 말하지 않는다. → [[agent-development-environment]]

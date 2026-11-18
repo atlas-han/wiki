@@ -1304,5 +1304,12 @@
   "02.wiki/sources/tech-bridge-ryan-carson-managing-20-agents.md": "LiVideo",
   "02.wiki/entities/ryan-carson.md": "LiUser",
   "02.wiki/entities/untangle.md": "LiBuilding",
-  "02.wiki/concepts/work-recording-hiring.md": "LiPuzzle"
+  "02.wiki/concepts/work-recording-hiring.md": "LiPuzzle",
+  "01.raw/articles/2026-11-17_Fable 5.2 부터 쓰면 안됩니다 Anthropic이 직접 밝힌 사용법.md": "LiNewspaper",
+  "01.raw/articles/2026-11-17_저는 이제 Orca만 씁니다 에이전트 IDE 다 써 본 리뷰어가 갈아탄 이유.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-fable-5-2-start-with-opus.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-rob-shocks-orca-review-vs-records.md": "LiVideo",
+  "02.wiki/entities/orca.md": "LiBoxes",
+  "02.wiki/entities/stably-ai.md": "LiBuilding",
+  "02.wiki/concepts/agent-development-environment.md": "LiPuzzle"
 }

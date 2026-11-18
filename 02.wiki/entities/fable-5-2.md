@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-11-11
-updated: 2026-11-16
+updated: 2026-11-18
 ---
 
 # Claude Fable 5.2
@@ -95,3 +95,25 @@ updated: 2026-11-16
 - **속도**: Theo 측정 **106 tok/s** — Opus 112와 거의 같고 Fable 5.1(80 안팎)보다 빠르다. 공식 글 *이전 버전보다 출력 최대 30% 빠름*, Artificial Analysis 범위와 겹침(해설 전달).
 - **구독에서는 아껴 쓸 모델**: Fable은 주간 한도의 절반까지만 — 월 200달러로 API 값 3,000달러 치(Opus는 약 14,600달러 치, Theo 한 계정 측정). API 기준 *작업당 절반* 과 반대 방향이다. → [[bring-your-own-subscription]]
 - Frontier Code 2.0 high **45.3%** 가 세 번째 소스에서 같은 값으로 나온다(Chase AI 편 · 가이드 해설 · 이 편). 11-10 발표문 해설의 *49.1* 은 여전히 미해결.
+
+## 2026-11-18 — 종합편: *먼저 쓰지 말라* 와 시키는 법의 수치 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+출시 글 · 모델 선택 가이드 · 프롬프트 문서 · Lydia Hallie 발표를 한 줄로 꿴 한국어 해설(⚠️ 다섯 출처 모두 위키 미열람).
+
+- ⭐ **49.1과 45.3이 한 영상 안에서 같은 시험으로 이어진다.** Frontier Code 49.1%를 소개한 뒤 *"아까 그 시험에서 페이블과 하이로 돌린 점수는 45.3%였습니다."*(02:23~02:25)[=페이블을 하이로] Opus max 45.5%와 거의 같고 작업당 비용은 절반쯤. 위 절들의 미해결(*같은 표인가*)에 *같은 시험의 다른 effort* 라는 방향의 근거가 하나 붙는다. ⚠️ 49.1이 어느 effort의 값인지는 여전히 말하지 않고, *2.0* 표기도 이 편에는 없다.
+- Frontier Code의 정의가 처음 나온다: *"프론티어 코드는 모델이 고친 코드를 오픈 소스 저장소 관리자들이 실제로 받아줄지를 보는 시험입니다."*(00:58~01:02)
+- 가격 인하 폭: *"보도에 따르면 이전 버전보다 20% 싼 값입니다."*(00:51~00:53) 그래도 토큰당 Opus 5.5의 두 배.
+- **성질과 처방에 크기가 붙었다**(Anthropic 자체 테스트의 해설 전달, 표본 미상):
+
+| 성질 | 처방 | 해설이 전한 결과 |
+|---|---|---|
+| 길고 단계 많은 일에서 끝내기 전에 턴을 마친다(low · medium에서 더 잦다) | high로 올리거나, medium + *시킨 일이 남아 있으면 멈추지 말라* 문단 | 덜 끝내고 멈춘 세션 절반 정도. 목록 적고 멈추기는 못 막음, 출력 토큰 +30%쯤 |
+| never를 예외 없는 절대 규칙으로 받는다 | 금지 대신 승인 절차로 쓴다. 낡은 메모를 지우고, 승인 없이 해도 되는 단계를 이름으로 적는다 | — |
+| 승인 규칙을 넓게 읽는다 | 승인 대상 · 승인의 말을 구체적으로(*go* 한마디 대신 범위) | *대화 밖 사람에게 메시지* → 동료 · 다른 팀에 보내는 일상 요청까지 절반쯤 보류 |
+| 주인이 누군지 모르면 덧붙이기만 한다 | *이 코드베이스의 주인은 너* 한 문장 | 중복 통합 10% 미만 → 75%쯤. 출력 토큰 +70~80%, 시키지 않은 변경 |
+| 서브에이전트를 많이 띄운다 | 도구 설명에 서브에이전트 비용을 자세히 적는다 | 띄우는 수 절반 정도 |
+| 마무리 요약이 작은 변경을 자주 빠뜨린다 | 요약과 diff를 함께 본다 | — |
+
+- 모델을 바꾸면 캐시뿐 아니라 생각도 따라오지 않는다: *"페이블에서 다른 모델로 옮기면 페이블이 해둔 추론은 버려집니다."*(08:05~08:06) → [[prompt-caching]]
+- 3차원 작업(Unity 테스터의 평가)이 Fable로 시작할 일의 예로 더해진다.
+- ⚠️ 도입부의 일화 — 같은 한 줄 프롬프트에 Opus 27분 · Fable 58분 · 토큰 일곱 배쯤([[ai-labs|AI LABS]]가 소개한 한 X 사용자, 3차 전달). 과제와 결과물의 질은 없다.

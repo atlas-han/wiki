@@ -6,9 +6,9 @@ tags: [reasoning-effort, effort-level, cost, benchmark, fable-5-2, claude-code, 
 aliases: [effort level, reasoning effort, 추론 강도, effort setting, low/medium/high/xhigh/max, extra high, xhigh]
 related: [prompt-debt, ultracode, model-mixing-economics, token-roles, fable-5-2, claude-opus-5-5, model-temperament-routing]
 first-seen: tech-bridge-chase-ai-fable-5-2-prompting-rules
-sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus]
 created: 2026-11-12
-updated: 2026-11-16
+updated: 2026-11-18
 ---
 
 # 추론 강도 (Reasoning Effort Levels)
@@ -67,3 +67,11 @@ updated: 2026-11-16
 ## 2026-11-16 — 실무자의 등급표: high가 꼭짓점, max는 엉뚱해진다 ([[tech-bridge-theo-fable-vs-opus-when-to-use]])
 
 [[theo|Theo]]의 Opus effort 등급표(X 게시물, 해설 전달): 맨 위 high · 맨 아래 max. medium은 *조금 일찍 멈추고 확인을 덜 한다*, max는 *쉬운 일에도 억지로 오래 생각하게 만들어 오히려 엉뚱한 일을 벌인다*. 공식 기본값(medium)과 달리 **high를 추천** 한다. 공식 가이드의 *high를 넘기려면 effort 대신 모델을 한 단계 올려 낮은 effort로* 와 합치면 — **effort 사다리의 꼭대기는 max가 아니라 *다음 모델의 낮은 effort*** 라는 같은 결론을 벤더 수치(Frontier Code 2.0 Opus max 45.5% ≈ Fable high 45.3%)와 실무자 체감이 각각 준다. ⚠️ 등급표 원문 미열람, Theo 개인 평.
+
+## 2026-11-18 — medium에서 시작 vs medium에서 일찍 멈춘다 ([[tech-bridge-fable-5-2-start-with-opus]])
+
+종합 해설에서 두 문서의 권고가 맞닿는다. 가이드는 *Opus 5.5 medium에서 시작*, 프롬프트 문서는 [[fable-5-2|Fable 5.2]]가 길고 단계 많은 일에서 끝내기 전에 턴을 마치는 일이 low · medium에서 더 잦다고 한다 — *"그런데 클로드 코드의 기본 값이 바로 그 미디엄이라는 게 문제입니다."*(05:03~05:05) 해설의 화해는 조건부다: 평소는 medium, **오래 혼자 돌릴 일 앞에서만 high**(또는 medium + *멈추지 말라* 문단 — 조기 종료 절반, 출력 토큰 +30%쯤).
+
+- high 위는 권하지 않는다 — 성능 향상의 대부분은 high에서. high 이상에서는 인사 한마디에도 생각부터 하므로 느려진 턴만 내린다. extra high는 점수 조금 · 토큰 훨씬 많이. *"하이를 넘으면 한 단계가 더 큰 모델 하나 값일 수 있습니다."*(05:52~05:54)
+- 사다리의 첫 칸이 다시 확인된다: effort보다 먼저 **스스로 확인할 수단**(테스트 · 빌드).
+- 위 11-16 절의 [[theo|Theo]](*high를 기본으로*)와는 여전히 다르다 — 벤더는 *긴 자율 실행* 이라는 조건을 붙인다. ⚠️ 해설 전달.
