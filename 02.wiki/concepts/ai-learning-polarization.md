@@ -6,9 +6,9 @@ tags: [education, learning, cognitive-offloading, ai-tutor, assessment]
 aliases: [두 봉우리, bimodal grades, 성적 양극화, AI learning polarization, 같은 AI 다른 결과]
 related: [cognitive-offloading, ai-assisted-learning, retrieval-practice, read-fluency-for-agent-output]
 first-seen: tech-bridge-lex-fridman-mathematicians-advice-ai-era
-sources: [tech-bridge-lex-fridman-mathematicians-advice-ai-era]
+sources: [tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
 created: 2026-11-16
-updated: 2026-11-16
+updated: 2026-11-19
 ---
 
 # AI 학습 양극화 — 두 봉우리로 갈라지는 성적
@@ -40,3 +40,11 @@ updated: 2026-11-16
 
 - [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]] · [[alex-kontorovich]]
 - PNAS (2025) "Generative AI without guardrails can harm learning" https://www.pnas.org/doi/10.1073/pnas.2422633122 (설명란, 위키 미열람)
+
+## 2026-11-19 — 같은 실험의 두 번째 전달: 힌트 반의 숫자 ([[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]])
+
+[[tania-lombrozo|Tania Lombrozo]] 강연 해설이 위 PNAS 2025 실험을 다시 옮긴다(⚠️ 해설 전달). 일치: 튀르키예 한 고등학교 · 약 1,000명 · GPT-4 튜터 · 연습 +48% · 시험 −17% · *목발* · 가장 많이 한 일은 답을 달라는 것. **새 값**: 힌트만 주는 튜터 반은 *"연습 문제를 127% 더 잘 풀었고 시험에서는 AI를 안 쓴 반과 차이가 없었습니다."*(08:57~09:02)
+
+- ⚠️ 위에 적은 *손해가 대부분 줄었다* 와 이 편의 *손해가 사라진 겁니다* 는 세기가 다르다. 같은 논문의 두 해설이고 위키는 논문을 열지 않았다.
+- 힌트를 *교사가 만들었다* 는 것은 이 편에 없다.
+- 이 편은 *두 봉우리* 를 말하지 않는다 — 분포가 아니라 반 평균의 비교다. 대신 갈림길의 기제를 준다: 답을 받은 쪽은 스스로 설명하는 단계를 건너뛰고, 그 손해를 느끼지 못한다 → [[learning-by-thinking]].

@@ -6,9 +6,9 @@ tags: [learning, retrieval-practice, testing-effect, spaced-repetition, memory, 
 aliases: [회상 연습, 시험 효과, testing effect, test-enhanced learning, 간격 반복, spaced repetition]
 related: [ai-assisted-learning, cognitive-offloading, read-fluency-for-agent-output]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-11-19
 ---
 
 # 인출 연습
@@ -42,3 +42,7 @@ AI 설명을 읽는 것은 **재학습 쪽**이다 — Saraev는 *"explain this 
 
 - [[tech-bridge-learn-anything-with-ai]] · [[nick-saraev]] · [[ai-assisted-learning]] · [[cognitive-offloading]]
 - 설명란 인용(⚠️ 열어 보지 않았다): Roediger & Karpicke (2006) <https://learninglab.psych.purdue.edu/downloads/2006/2006_Roediger_Karpicke_PsychSci.pdf> · Cepeda et al. (2008) <https://escholarship.org/uc/item/0kp5q19x>
+
+## 2026-11-19 — 이웃 원리: 자기 설명 효과 ([[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]])
+
+[[tania-lombrozo|Tania Lombrozo]] 강연 해설(⚠️ 해설 전달)로 **자기 설명 효과** 가 위키에 처음 이름으로 들어왔다. 1989년 연구(역학 예제를 공부하는 학생들의 혼잣말 분석): *"잘하는 학생들은 풀이 한 단계마다 왜 그런지 스스로 설명했고 못하는 학생들은 그런 설명이 적었습니다."*(05:05~05:09) 인출 연습이 *꺼내기* 라면 이쪽은 *설명하기* — 위 Saraev 인용의 *explaining things actively* 에 해당하는 연구 쪽 근거다. 둘을 묶는 틀은 [[learning-by-thinking]](신규). ⚠️ 저자는 ASR 판독에 기댄 추정이고 설명란에 이 논문은 없다.

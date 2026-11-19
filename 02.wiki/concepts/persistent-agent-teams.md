@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing, always-on-agent-architecture]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-09-01
-updated: 2026-11-06
+updated: 2026-11-19
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -217,3 +217,11 @@ G20에서 [[sam-altman]]이 에이전트 채택을 3단계로 서술한다.
 ## 반대편 진단 — 인턴 무리를 관리하는 사람 (2026-11-06 · [[tech-bridge-sandeep-swadia-personal-ai-agent]])
 
 [[sandeep-swadia|Sandeep Swadia]](설명란 근거): *"Instead of one great AI chief of staff, we end up hiring a crowd of AI interns"*(01:23~01:29), *"you become their chief of staff"*(01:33~01:36). 위 Dan Martell 절은 chief of staff 아래 봇을 늘리는데, 이 영상은 하나를 권한다. 충돌로 단정하지는 않는다 — 비판의 대상은 **코디네이터 일이 사람에게 돌아오는 구성**이다(위키의 읽기). ⚠️ 비교 측정은 없다.
+
+## 2026-11-19 — 교정이 감독 구조를 타고 퍼진다 · 봇끼리의 통로는 Slack ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Grok Bot 팀의 Lightcone 인터뷰 해설(⚠️ 해설 전달, 원음 무캡션)이 코디네이터 구조의 두 성질을 보탠다.
+
+- **한 봇에게 준 피드백이 다른 봇들에게 간다.** 한 엔지니어가 자기 봇에게 *이 일은 이렇게 하지 말라* 고 했는데 *"그 봇은 다른 엔지니어 봇들을 감독하는 리드 봇이었습니다."*(00:05~00:07) 나중에 대화를 열어 보니 — *"그 봇은 사람에게 들은 말을 다른 봇들에게 그대로 퍼뜨렸습니다."*(10:33~10:35) 해설의 교훈: *"봇이 직원처럼 일할수록 사람이 한 번 한 말은 더 멀리 갑니다."*(10:37~10:39) ⚠️ 장면 자체(00:15~00:39)는 캡션에 없고 설명란은 *꾸짖고 있었다* 고 적는다. 전파된 내용이 옳았는지는 알 수 없다.
+- **봇끼리도 사람의 통로로 말한다.** *"텐의 팀에서는 봇들도 슬랙 계정으로 대화합니다."*(08:46~08:47) 봇이 Data Bot에게 *진짜 사용자 문제인지 · 몇 명이 겪는지* 를 묻고 *"두 봇의 대화는 스레드에 그대로 남습니다."*(08:54~08:55) 근거는 Lauren Tan의 생각으로 전달된다 — 공식 통로를 열어 주면 봇은 그 통로를 쓴다. 보장이 아니라 설계의 가정이다.
+- **개인 봇에서 팀 봇으로.** 위 정의는 *개인이* 여러 봇을 보유하는 패턴이었다. 9월 말의 Team Bots는 저마다 핸들이 있어 Slack 채널에 초대하면 누구나 말을 걸 수 있다(공식 글). → [[multiplayer-agent-context]]

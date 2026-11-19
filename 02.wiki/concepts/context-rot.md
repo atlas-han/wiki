@@ -6,9 +6,9 @@ tags: [context-window, attention, long-context, degradation, context-engineering
 aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation]
 related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-09-24
-updated: 2026-11-07
+updated: 2026-11-19
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -84,3 +84,9 @@ AI gateway 사용량을 보는 [[remy-guercio|Remy Guercio]]([[tailscale|Tailsca
 ⚠️ 연구 이름은 발화되지 않는다. 통합자가 확인한 바로는 Chroma의 *"Context Rot: How Increasing Input Tokens Impacts LLM Performance"*(2025-07-14)가 18개 LLM을 평가했다. 화자가 이 보고서를 인용한 것인지는 확인되지 않았으므로 위 "⚠️ 미해결"의 **정량** 항목은 닫지 않는다. 다만 다음 회차에서 그 보고서를 직접 ingest하면 닫을 수 있는 후보다.
 
 > **용어 정리 — "맥락 왜곡"을 aliases에서 뺐다 (2026-10-20).** 이 alias는 Oracle 편 ko가 *rot*을 "맥락 왜곡"으로 옮긴 것(위 도입부)에서 왔다. 그런데 이 영상의 ko는 같은 말을 *context poisoning*의 역어로 쓴다(04:38). 두 경우 모두 기계 번역의 산물이고 서로 다른 개념을 가리키므로, 검색 alias로 두면 poisoning을 찾는 사람이 이 페이지로 오게 된다. 이 위키의 정식 역어는 rot = "컨텍스트 부패"·"문맥 부패", poisoning = "컨텍스트 오염"([[context-failure-modes]])이다.
+
+## 2026-11-19 — "18개 모델" 연구에 이름이 붙는다: Chroma ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+10-20 Martin Keen 편은 *a recent study looked at 18 frontier models* 라고만 했다. Karpathy 해설은 같은 숫자에 출처를 붙인다: *"크로마는 작년 7월 모델 18개를 시험했습니다. 입력이 길어질수록 성능이 점점 불안정해졌습니다."*(07:33~07:39) 설명란에 `research.trychroma.com/context-rot` 링크가 있다. → 위의 *이름 없는 연구* 는 **Chroma의 2025년 7월 Context Rot 보고서** 로 보인다(⚠️ 추정 — 숫자와 용어가 같을 뿐, 위키는 보고서를 열지 않았다).
+
+해설이 이 연구를 쓰는 자리는 **프롬프트 길이** 다 — 스킬 팩을 길게 얹는 습관의 반대편에 *"카파씨는 그 반대로 모델에게 점점 덜 말하는 방식을 택했습니다."*(07:40~07:44) 를 놓는다. 긴 실행에서 창이 차오르는 문제(이 페이지의 본 주제)와는 원인이 다르지만 처방의 방향은 같다 — 덜 넣는다.

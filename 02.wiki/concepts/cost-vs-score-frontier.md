@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [model-selection, benchmark, pareto-frontier, cost, evaluation, leverage, thinking-modes]
 aliases: [cost vs score, 비용 대비 점수, Pareto frontier of cost and score, 비용-점수 그래프, leverage]
-related: [true-cost-to-perfect-answer, model-mixing-economics, pareto-surfing, fixed-budget-alpha, inference-speed-as-capability, value-maxing, document-parsing-for-agents, taste-vs-judgment]
+related: [true-cost-to-perfect-answer, model-mixing-economics, pareto-surfing, fixed-budget-alpha, inference-speed-as-capability, value-maxing, document-parsing-for-agents, taste-vs-judgment, demo-collaboration-gap]
 first-seen: tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5
-sources: [tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model]
+sources: [tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-addy-osmani-which-claude-model, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 created: 2026-11-02
-updated: 2026-11-13
+updated: 2026-11-19
 ---
 
 # 비용 대비 점수 프런티어
@@ -70,3 +70,12 @@ updated: 2026-11-13
 ## 2026-11-13 — 벤더 가이드의 측정 절차 ([[tech-bridge-addy-osmani-which-claude-model]])
 
 [[addy-osmani|Addy Osmani]] 모델 선택 가이드 해설(⚠️ 원 글 미열람)도 이 그래프로 끝난다: *"공개 벤치마크는 출발점일 뿐입니다."*(08:22~08:24) 실제 작업 · 통과 기준 → 후보 모델을 effort 두세 단계로 → 작업마다 비용 기록 → 점수와 지출 그래프 → 이긴 구성을 실제 트래픽 일부에 먼저. 설명란은 영상 속 그래프의 점과 일부 비용 막대가 *비율만 나타낸 예시* 라고 밝힌다. 사례 수치(Frontier Code 2.0 · Terminal-Bench 3.0 · SWE-bench Pro)는 [[true-cost-to-perfect-answer]] · [[reasoning-effort-levels]]에 있다.
+
+## 2026-11-19 — 꼭대기에 있는데 "최악": 그래프가 재지 않는 것 ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+GPT-6.2 [[openai-astra|Astra]] 발표 글의 그래프(해설 전달, 화면): *"세로가 점수, 가로가 비용인데 새 아스트라는 왼쪽 위 꼭대기에 있습니다."*(00:57~01:02) *"경쟁 모델인 클로드 페이블 5.2는 저 오른쪽 끝입니다."*(01:02~01:06) 해설의 말로 *숫자만 보면 흠잡을 데가 없다.* 그런데 같은 날 조기 접근자들은 *최악* · *사실상 못 쓴다* 고 썼다.
+
+- **이 페이지의 유보에 붙는 사례다.** 프런티어 위의 자리는 *한 번의 과제를 얼마에 몇 점으로 끝냈는가* 를 말한다. 불만은 그 밖에서 나왔다 — 엉뚱한 질문에서 멈춤 · 알아듣기 어려운 설명 · 몇 주를 돌고도 제자리 · 결과물의 수렴(벨웨더). → [[demo-collaboration-gap]]
+- **같은 벤더 안에서도** — Frontier Code에서 [[openai-sol|Sol]]은 Astra와 0.5점 차이인데 비용은 훨씬 낮다(비용 비는 ASR 판독 불가). Hacker News: *"아스트라가 솔보다 눈에 튀게 나은 작업을 아직 못 찾았다."*(07:58~08:00)[=띄게] 이 페이지의 *leverage* 읽기로는 Sol이 꼭짓점이다.
+- 해설의 유보: *"미리 써 본 몇 사람의 경험이고 벤치마크 숫자가 틀렸다는 뜻도 아닙니다."*(08:34~08:37)
+- ⚠️ 어느 벤치마크의 그래프인지 · 가로축이 토큰 단가인지 작업당 비용인지는 말하지 않는다. 해설이 전한 Astra의 가격($8 / $40)은 11-18에 적은 [[fable-5-2|Fable 5.2]]의 값과 같아서, 그렇다면 가로축의 차이는 **작업당 쓴 토큰** 에서 와야 한다(위키 추정).

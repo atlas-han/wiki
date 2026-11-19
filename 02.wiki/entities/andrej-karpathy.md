@@ -4,12 +4,12 @@ type: entity
 category: person
 tags: [researcher, educator, llm, transformer, computer-vision]
 aliases: [카파시, Karpathy, 안드레 카파시]
-sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
 links:
   - https://karpathy.ai
   - https://github.com/karpathy
 created: 2026-05-25
-updated: 2026-11-08
+updated: 2026-11-19
 ---
 
 # Andrej Karpathy
@@ -81,3 +81,19 @@ AI 연구자·교육자. 본 위키에 두 갈래로 등장한다 — **위키 �
 - 공개 벤치마크를 믿지 않는다 — HN 댓글에서 Epoch ECI를 가리켰다고. *Land or water?* 좌표 질문으로 세계 지도를 그리는 실험.
 - [[hackertube|HackerTube]]를 만들었다. 앱 대신 데이터와 프롬프트를 공유한다 → [[share-data-and-prompt-not-app]].
 - ⚠️ **화자 진술 *"now he works at Anthropic"*(00:36)은 미확인**이다. 이 페이지의 사실로 올리지 않는다.
+
+## 2026-11-19 — HackerTube의 두 시간과 0.2% 계산: 두 번째 2차 정리 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+[[tech-bridge|Tech Bridge]]가 Karpathy의 블로그 · X · Hacker News 댓글 · 강연 기록을 따라간 한국어 해설(10:19). **본인 발화는 이번에도 캡션에 없다** — 원 영상 발췌로 보이는 세 구간(3월 팟캐스트 · *자리를 비우라* · Sequoia 행사)이 전부 무캡션이고, 아래는 모두 내레이션이 옮긴 말이다. 위키는 원 글 미열람.
+
+- **[[hackertube|HackerTube]]의 경위와 수치** — 금요일 밤 유튜브의 *슬롭의 벽* 을 보고 토요일 아침 두 시간에 만들었다. *"이름은 해커 튜브. 해커 뉴스 20년치 댓글에서 골라낸 영상 6,454개가 들어 있습니다."*(00:20~00:24) 손으로 한 일은 API 키 · 서버 · 도메인 셋.
+- **일하는 방식의 선언**: *"코드를 읽지도 쓰지도 않고 터미널 명령도 치지 않는다. 클로드와 대화만 하고 모든 일을 클로드가 하게 한다."*(00:48~00:54) 그러면서 *"자기도 1년 전만 해도 코드를 한 글자씩 손으로 쳤다고 적었습니다."*(02:06~02:10)
+- ⭐ **냅킨 계산(10월 글)** — 약 60억 명은 AI를 거의 써 본 적이 없고, 10억~20억 명은 무료 챗봇을 조금 나은 검색처럼 쓴다. *"그리고 약 2000만 명, 0.2%가 있습니다. 몇 주, 몇 달 걸리던 큰 프로젝트를 에이전트가 프롬프트 하나로 끝내는 걸 지켜보는 사람들입니다."*(01:27~01:34) 맨 위에 연구소 안의 약 5,000명. 벌어지는 이유는 야망 · 들쭉날쭉함 · 접근 셋 → [[jagged-capability-frontier]].
+- **짧은 프롬프트와 그 조건**: *"내 프롬프트는 점점 짧고 멍청해진다. 말을 덜해도 모델이 내가 뭘 하려는지 알아듣기 때문이다."*(04:05~04:10) 단 *"이렇게 짧게 맡기는 건 오퍼스 5.5 이상에서만 한다고 했습니다."*(04:57~05:00) → [[goal-level-delegation]]
+- **사람의 일은 이해**(10월 초 글): 글 → 그림 → HTML → 설명 영상의 사다리. *"모델이 잡일을 더 많이 맡을수록 사람의 일은 감독과 이해 쪽으로 올라간다."*(05:46~05:50) → [[model-rendered-interface]]
+- **코드 대신 데이터** — 서버 코드는 *바이브 코딩으로 만든 엉망진창* 이라 공개하지 않고 댓글 분석 데이터를 압축 파일로 올렸다. 엿새 뒤에는 남이 올린 채널 목록으로 3분 만에 영상 47,000개짜리 사이트를 만들었다 → [[share-data-and-prompt-not-app]]
+- 벤치마크: *"카파시는 요즘 벤치마크가 아주 나쁜 상태라 사실상 믿지 않는다고 했습니다."*(09:08~09:12) 육지/바다 평가는 이 해설에 따르면 **남이 만든 것을 공유한 것** 이다 — 11-08 Saraev 편은 본인의 실험처럼 전했다.
+
+> ⚠️ **Anthropic 합류 — 진술이 둘이 됐다, 여전히 미확인.** 이 해설: *"올해 5월에는 엔트로픽에 합류했습니다."*(00:34~00:35) 11-08 Saraev 편의 *"now he works at Anthropic"* 에 시점이 붙었다. 다만 이 편의 설명란이 *원본 요약 영상* 을 따로 들고 있어 두 진술이 독립인지 알 수 없고, 위키는 1차 기록을 열지 않았다. **이 페이지의 사실로는 아직 올리지 않는다.**
+>
+> ⚠️ 11-08 편과 겹치는 습관(설정 · 다섯 낱말 · 사다리 · 데이터 공유)은 서로 받쳐 주지만 같은 2차 정리를 거쳤을 수 있다 — 독립된 두 확인으로 치지 않는다.

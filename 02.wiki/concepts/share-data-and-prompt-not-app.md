@@ -6,9 +6,9 @@ tags: [software-distribution, data-over-apps, prompts, personal-software, model-
 aliases: [share the data not the app, 앱 대신 데이터, 데이터와 프롬프트 공유, data is the core truth, wrappers around the data]
 related: [disposable-vs-durable-software, model-rendered-interface, andrej-karpathy, hackertube]
 first-seen: tech-bridge-nick-saraev-karpathy-ai-habits
-sources: [tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-19
 ---
 
 # 앱 대신 데이터와 프롬프트를 공유한다
@@ -41,3 +41,14 @@ updated: 2026-11-08
 ## References
 
 - [[tech-bridge-nick-saraev-karpathy-ai-habits]] (9절)
+
+## 2026-11-19 — 두 번째 소스: 압축 파일 하나, 3분, 그리고 엿새 뒤의 재현 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+한국어 해설이 같은 습관을 [[hackertube|HackerTube]]의 구체적 경위로 전한다(⚠️ 2차 전달, 11-08 편과 독립인지는 미확인).
+
+- 공개하지 않은 것과 그 이유: 서버 코드 — *"바이브 코딩으로 만든 엉망 진창이라서요."*(07:49~07:51) 11-08 편에는 없던 **이유** 다. 앱 코드는 남에게 줄 만한 물건이 아니라는 판단이 먼저 있다.
+- 공개한 것: *"대신 댓글을 분석한 데이터를 압축 파일 하나로 올렸습니다."*(07:53~07:55) 이걸 Opus 5.5에 주고 유튜브 같은 사이트를 만들어 달라고 하면 거의 바로 나온다, 3분쯤 걸렸다고.
+- ⭐ **본인이 받는 쪽에서 재현했다**: *"다른 개발자가 올린 유튜브 채널 목록을 보고 클로드 코드로 3분만에 영상 47,000개 짜리 트리스탄 튜브를 만들었습니다."*(08:04~08:09) — 데이터를 받아 각자 만든다는 패턴이 반대 방향으로도 한 번 돈 예다.
+- 비용의 분포가 논리를 받친다: HackerTube에 든 입력 5억 400만 토큰의 90% 넘게가 댓글 선별이었고 앱 작업은 Opus 5.5 약 100만 토큰이었다. 해설의 결론: *"해커 튜브에서 진짜 귀한 건 20년치 댓글에서 걸러낸 영상 목록입니다. 카파시가 코드 대신 공개한 것도 바로 그 데이터였습니다."*(08:57~09:04)
+
+위 *한계* 에 한 줄을 보탠다 — 이 예에서 공유된 것은 **데이터** 이고, 프롬프트는 농담 반의 한 줄(*안녕 클로드, 좋은 아침이야 …*)이다. *데이터 + 프롬프트* 에서 무게는 거의 전부 데이터 쪽에 있다(위키의 읽기).

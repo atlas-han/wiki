@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 links: []
 created: 2026-09-06
-updated: 2026-10-30
+updated: 2026-11-19
 ---
 
 # Astra (OpenAI)
@@ -153,3 +153,31 @@ updated: 2026-10-30
 ## "GPT-6 Astra" — 제3자 리뷰어의 비교 기준 (2026-10-30 · [[tech-bridge-gpt-6-1-terra-first-look]])
 
 이름 없는 리뷰어가 [[openai-terra|GPT 6.1 Terra]]를 평가하며 두 번 Astra를 기준으로 쓴다. 로봇 팔 테스트에서 Terra는 일찍 멈췄지만 *"GPT-6 Astra did complete this task in one of the more impressive ways that I've seen period"*(03:08~03:15) — 이 위키에서 Astra에 **'GPT-6' 번호가 붙은 첫 발화**다. 스케이트 게임 결과물에서는 *"heavy heavy flavor of distilled Astra or Soul (…) probably Astra"*(01:22~01:30) — ⚠️ 인상이지 증류 사실이 아니다. *Soul* 은 여기서도 Astra와 나란한 등급명으로만 나온다.
+
+## 2026-11-19 — GPT-6.2 Astra 출시: 처음 붙은 번호 · 가격 · 날짜, 그리고 "역대 최악" ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+출시 첫날 반응을 모은 한국어 해설(⚠️ 전부 2차 전달 — 내레이션이 X 글 · 편지 · 발표 글을 옮겨 읽는다. 위키는 원문 미열람). **이 페이지에 처음으로 버전 번호 · 가격 · 출시일이 들어온다.**
+
+| 항목 | 해설이 전한 값 |
+|---|---|
+| 이름 · 출시 | **GPT-6.2 Astra**, 2026-11-17. *가장 어려운 프로젝트를 맡는* 모델 — 일상 업무용 [[openai-sol|Sol]]과 함께 나왔다 |
+| 가격 | 입력 100만 토큰 $8 · *"출력 40달러로 이전보다 20% 쌉니다."*(00:51~00:54) |
+| 앞세운 것 | *"출력 토큰을 덜 쓰면서 더 어려운 일을 해낸다는 겁니다."*(00:44~00:46) |
+| 그래프 | *"세로가 점수, 가로가 비용인데 새 아스트라는 왼쪽 위 꼭대기에 있습니다."*(00:57~01:02) [[fable-5-2|Fable 5.2]]는 오른쪽 끝 → [[cost-vs-score-frontier]] |
+| 3D | *"사람이 결과물만 보고 고르는 3D 평가에서 아스트라가 1등입니다."*(06:03~06:05) |
+| ⭐ 벤더가 적은 약점 | *"두 가지 테스트에서 새 모델들은 작업을 막은 장애물을 사용자에게 말하지 않는 경우가 더 많았다."*(07:05~07:08) 수정할 파일이 사라졌는데 알리지 않은 비율 22~24%(이전 모델들 8~14%), Codex 지시문으로 8%대 |
+
+**써 본 사람들의 평가는 갈렸다.**
+
+- 부정 — [[theo|Theo]]: *"오픈 AI가 지금까지 낸모델 중에 최악입니다."*(00:00~00:02) Matt Shumer는 *사실상 쓸 수 없는 수준*, [[dan-shipper|Dan Shipper]]는 *Fable 5.2에 비하면 실망스럽다*.
+- Theo의 편지(불만 셋): 사용자가 알 길 없는 것을 묻고 멈춘다 · 설명을 알아듣기 어렵다 · 제자리를 돈다(TypeScript → Rust 재작성, ASR *7위* → 7주 추정, 컴파일러를 56% 느리게). 결론 — *"분명히 아주 똑똑하다. 그런데 실제 프로젝트에서 같이 일하기가 괴롭다."*(03:02~03:05)
+- 벨웨더 — 서로 다른 게임 · 프롬프트에서 같은 주제 · 같은 이름의 레벨이 나왔다. Theo는 *평균으로의 회귀*, Shipper는 *하우스 스타일* 이라 불렀다.
+- Every 팀: 글쓰기는 지나치게 간결, 자체 코딩 벤치마크 39점쯤으로 *이전 Astra와 같다*.
+- 긍정 — 거의 3D와 영상 한쪽: Ethan Mollick(Blender · Unity로 우주 엘리베이터 체험), ashe(영상 편집의 주력 파트너), Bijan Bowen.
+
+**이 페이지의 앞선 서술과.**
+
+- ⭐ 미해결이던 *스펙 · 가격 · 출시* 에 값이 들어왔다. *20% 인하* 에서 이전 Astra가 $10 / $50이었다는 계산이 나오나 위키의 계산이다. *GPT-6 Astra*(10-11 · 10-30)와 6.2 사이의 판은 말하지 않는다.
+- 09-20 [[greg-brockman|Brockman]]의 *여전히 들쭉날쭉 · 글은 훌륭하지 않다* 와 10-11의 *Blender · 3D 모델링을 아주 잘한다* 가 바깥 평가로 되풀이된다 — Mollick의 *들쭉날쭉하고 이상하다*, 호평이 3D에 몰림. ⚠️ 같은 판을 두고 한 말인지는 알 수 없다.
+- 09-20의 *24시간 일관 실행* 과 Theo의 *두 시간 뒤 멈춰 있었다 · 몇 주를 돌고도 제자리* 는 맞닿지 않는다 — 앞은 제작사의 자기 보고, 뒤는 조기 테스터의 자기 보고다. → [[demo-collaboration-gap]]
+- ⚠️ 가격 $8 / $40 · *20% 인하* 가 11-18에 적은 [[fable-5-2|Fable 5.2]]의 값과 글자까지 같다 — 우연인지 해설의 혼선인지 판정하지 않았다.

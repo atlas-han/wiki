@@ -191,8 +191,12 @@ sources:
   - tech-bridge-ryan-carson-managing-20-agents
   - tech-bridge-fable-5-2-start-with-opus
   - tech-bridge-rob-shocks-orca-review-vs-records
+  - tech-bridge-grok-bot-team-lightcone-ai-coworkers
+  - tech-bridge-karpathy-hackertube-two-hours-five-words
+  - tech-bridge-gpt-6-2-astra-launch-day-reactions
+  - tech-bridge-lombrozo-learning-by-thinking-ai-tutor
 created: 2026-06-03
-updated: 2026-11-18
+updated: 2026-11-19
 ---
 
 # Tech Bridge
@@ -1793,3 +1797,37 @@ updated: 2026-11-18
 - 설명란의 출처(출시 글 · 가이드 · 프롬프트 문서 · 원 발표 `vlfCjWuv4es` · AI LABS `EFGvVCpW9zc` · 원 리뷰 `73DrNNvEKH0` · Orca 저장소와 문서)는 미열람.
 
 **멤버 전용**: `OV9By_UspTk`(*2시간 만에 유튜브를 만든 프롬프트, 단어 5개 | Andrej Karpathy*) 지속 — 목록 줄 `subscriber_only` · 단건 `subscriber_only` 줄. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-18 업로드 — 그록봇 · Karpathy HackerTube(멤버 전용 → 공개) · GPT-6.2 Astra · Lombrozo (2026-11-19 ingest)
+
+[[tech-bridge-grok-bot-team-lightcone-ai-coworkers|그록봇에게 모든 권한을 주면 생기는 일 | Lauren Tan]](`JFp1efdoQIQ`, 11:10, 공식 챕터 9) — 한국어 해설, Y Combinator Lightcone *The Rise Of AI Coworkers* 를 x.ai 공식 글과 대조 ([[roman-ugarte]](신규) · [[grokbot]] · [[lauren-tan]] · [[garry-tan]] · [[agent-trust-curve]] · [[least-privilege-connectors]] · [[persistent-agent-teams]] · [[software-factory]] · [[agent-verification-skill]])
+
+- **오디오 ko 하나 · en-orig 없음**, `ko` = `ko-orig`(`variant=gemini`). 인용은 ko-orig. 게시 11-18 18:00 KST(11-18 회차 뒤).
+- ⚠️ **무캡션 열두 구간이 전부 출연자 원음 자리** — Lauren Tan · Roman Ugarte · Garry Tan 본인 인용 0. 리드 봇 장면 · 팀의 원칙 · 권한의 지름길 · *코드를 안 읽고 내보내게 된 과정*(55초) · *봇에게 없는 것* · *팀이 막힌 곳* 이 모두 그 안에 있어 적지 않았다.
+- 이 편은 Cursor를 말하지 않는다 — 공식 글은 x.ai, tags는 `SpaceXSI` · `xAI`. Lauren Tan을 다룬 이 채널의 아홉 번째 소스.
+- ⚠️ 월 PR 4,000(Ugarte의 말)은 11-17 편의 10월 3,127과 다르다 — 나란히 둠. 설명란 출처(Lightcone `y1-9yeYLJUo` · x.ai 글 세 편)는 미열람.
+
+[[tech-bridge-karpathy-hackertube-two-hours-five-words|2시간 만에 유튜브를 만든 프롬프트, 단어 5개 | Andrej Karpathy]](`OV9By_UspTk`, 10:19, 공식 챕터 9) — 한국어 해설, Karpathy의 블로그 · X · HN 댓글 · 강연 기록으로 HackerTube의 두 시간을 따라감 ([[andrej-karpathy]] · [[hackertube]] · [[share-data-and-prompt-not-app]] · [[skill-evals]] · [[context-rot]] · [[boris-cherny]] · [[goal-level-delegation]] · [[model-rendered-interface]] · [[jagged-capability-frontier]] · [[disposable-vs-durable-software]])
+
+- **멤버 전용 → 공개**: 11-17 · 11-18 회차에 `subscriber_only`(목록 `upload_date` 20261116), 11-19 회차에 `public` 확인 — `upload_date` 20261118, 11-18 22:00 KST. 제목 그대로.
+- Korean original + 영어 더빙. ⚠️ **`en-orig`는 더빙의 ASR**(11-17 Orca 편과 같은 경우) — 인용은 ko-orig. 더빙 ASR은 Opus 버전을 일관되게 *3.5* 로, *바이브 코딩* 자리를 *software 2.0* 으로 읽는다.
+- 원 영상 발췌 세 곳(02:16~02:48 · 06:09~06:31 · 08:27~08:57)이 두 트랙 모두 무캡션 — **Karpathy 본인 발화가 한 줄도 남지 않았다.**
+- 11-08 [[tech-bridge-nick-saraev-karpathy-ai-habits|Saraev 편]]과 같은 소재의 두 번째 소스. 설명란이 *원본 요약 영상*(`3BFMS3Wirq8`)을 들어 독립된 확인으로 치지 않았다. 설명란 링크 열한 개는 미열람.
+
+[[tech-bridge-gpt-6-2-astra-launch-day-reactions|GPT-6.2 Astra, 점수는 1등인데 "OpenAI 역대 최악"? | 출시 첫날 반응 모음]](`hIo10QPrYko`, 8:59, 공식 챕터 9) — 한국어 해설, OpenAI 발표 글과 조기 접근자들의 X 글 · 편지 · 영상 · Hacker News 댓글을 모음 ([[openai-sol]] · [[demo-collaboration-gap]](모두 신규) · [[openai-astra]] · [[theo]] · [[dan-shipper]] · [[openai]] · [[cost-vs-score-frontier]] · [[jagged-capability-frontier]] · [[fable-5-2]] · [[claude-opus-5-5]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`kind=asr&lang=ko`, 이번에는 `variant=gemini` 없음). ⚠️ `en-orig`는 더빙의 ASR — 다만 **영어 원음 발췌 세 곳(Every · vogel · Bijan Bowen)은 더빙 트랙에도 원음 그대로 실려** ko-orig에 영어로 잡혔다. 인용은 ko-orig.
+- ⚠️ 무캡션 03:46~04:07 · 04:25~04:36은 Every 영상 발췌 — **Every 팀이 낸 결론의 원문은 캡션에 없다.** Bijan Bowen 발췌는 앞부분이 조각.
+- ⚠️ 더빙 ASR이 모델 이름을 틀린다(*GPT-4o* · *Claude 3.5 Sonnet and Opus* · *Opus 3.5*) — 판독 대조에 쓸 때 고유명사는 따르지 않았다.
+- 형식: 한 사건(모델 출시)에 대한 **여러 사람의 글을 모아 대조** 하는 편 — 설명란이 *의견은 모두 쓴 사람의 것* 이라 밝힌다. 출처 열셋(발표 글 · X 글 여덟 · 영상 셋 · Hacker News)은 미열람.
+- ⭐ Astra의 가격($8 / $40 · 20% 인하)이 11-17 편이 전한 Fable 5.2의 값과 같다 — 판정하지 않고 양쪽 페이지에 표시.
+- 게시 시각: 11-18 22:00 KST(11-18 회차 뒤).
+
+[[tech-bridge-lombrozo-learning-by-thinking-ai-tutor|AI가 답을 다 알려 줬더니 시험 점수가 떨어졌다 | Tania Lombrozo]](`z7bhaskC02Y`, 11:03, 공식 챕터 10) — 한국어 해설, Tania Lombrozo 강연(TEDxNewEngland)과 그 뒤의 연구를 따라간다 ([[tania-lombrozo]] · [[learning-by-thinking]](둘 다 신규) · [[cognitive-offloading]] · [[ai-learning-polarization]] · [[ai-assisted-learning]] · [[retrieval-practice]])
+
+- 구성: **오디오 ko 하나 · en-orig 없음**, `ko` = `ko-orig`(`variant=gemini`). 인용은 ko-orig.
+- ⚠️ **무캡션 구간이 열한 곳, 약 4분 40초** — 강연 원음 발췌로 추정되며 Lombrozo 본인의 말은 한 줄도 남지 않았다(고무 오리 이야기 · 청중 질문 · 친구 이야기 · AI 대목).
+- ⭐ 11-15 수학자 편과 **같은 PNAS 2025 실험** 을 축으로 삼는다 — 힌트만 주는 튜터 반의 값(연습 +127% · 시험 차이 없음)이 새로 나왔고, 11-15의 *손해가 대부분 줄었다* 와 이 편의 *사라졌다* 는 세기가 다르다(논문 미열람).
+- 게시 시각 **11-19 07:00 KST**(이 회차 두 시간 전, `upload_date`는 UTC 기준 20261118). 설명란의 출처 일곱(원 강연 `4qxROUatTzk` · PNAS · TiCS 2024 · PNAS Nexus 보도자료 · Brockbank 2022 · Rozenblit & Keil 2002 · 위키백과)은 미열람. 1989년 자기 설명 논문은 설명란에 없다.
+
+**멤버 전용**: `OV9By_UspTk`가 이 회차에 `public`으로 풀렸다(위). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄) — 대기 목록은 이것 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음).

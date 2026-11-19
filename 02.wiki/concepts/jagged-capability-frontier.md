@@ -3,11 +3,11 @@ title: 들쭉날쭉한 역량 경계 (Jagged Frontier)
 type: concept
 category: theory
 tags: [capability, evaluation, astra, agi, unevenness]
-related: [agi-definition, all-or-nothing-accuracy, skill-evals, ai-slop, openai-astra, capability-detour, differential-capability-limitation]
+related: [agi-definition, all-or-nothing-accuracy, skill-evals, ai-slop, openai-astra, capability-detour, differential-capability-limitation, demo-collaboration-gap]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-claude-fable-5-2-announcement, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 created: 2026-09-20
-updated: 2026-11-11
+updated: 2026-11-19
 ---
 
 # 들쭉날쭉한 역량 경계 (Jagged Frontier)
@@ -68,3 +68,23 @@ updated: 2026-11-11
 [[fable-5-2|Fable 5.2]]와 [[claude-opus-5-5|Opus 5.5]]의 차이는 항목마다 다르다(해설 전달). 코딩은 45.5 → 49.1인데 로봇 제어는 39.4 → 64.9, Remote Labor Index는 21.3 → 41.3이다. 업무 자동화는 Gemini 4 Carbon이, 한 지식 업무 Elo는 Opus 5.5가 앞선다. 해설의 결론: *"평균 10%라는 말은 어디를 보느냐에 따라 맞기도 하고 틀리기도 합니다."*(02:12~02:17)
 
 ⭐ 같은 발표에 **의도한 함몰**도 있다. AI R&D를 앞당길 두 능력은 일부러 Opus 5.5 수준에 묶었다 → [[differential-capability-limitation]]. 표의 낮은 칸이 *못 한 것* 인지 *안 키운 것* 인지는 표만 보고 알 수 없다(위키의 읽기).
+
+## 2026-11-19 — 들쭉날쭉함이 사용 격차의 이유로 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+Karpathy의 10월 *냅킨 계산* 글(한국어 해설 전달, ⚠️ 원 글 미열람)이 AI를 깊이 쓰는 0.2%와 나머지가 벌어지는 이유 셋 가운데 둘째로 든다. 실력은 *"디지털이고 검증할 수 있고 돈이 되는 분야에서"*(01:53~01:55) 먼저 왔고 수학과 코드가 그렇다(01:53~01:58, 동사는 ASR 판독 보류). 나머지 둘은 야망(*"한 문단짜리 답을 묻는 질문으로는 시스템이 거의 힘을 쓰지 않습니다."*(01:47~01:49))과 접근(무료 · 유료 · 연구소 내부)이다.
+
+이 페이지의 앞선 용법은 *모델의 한계* 를 말하는 것이었다(Brockman — 고르게 올라와야 한다). 여기서는 같은 성질이 **사람들이 보는 세상을 가르는 원인** 으로 쓰인다 — 어느 봉우리 위에서 일하느냐에 따라 모델에 대한 인상이 달라진다. 봉우리가 서는 조건 셋(디지털 · 검증 가능 · 수익)을 적은 것은 이 소스가 처음이다.
+
+## 2026-11-19 — 바깥 사용자가 같은 말을 쓴다: GPT-6.2 Astra ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+이 개념은 [[greg-brockman|Brockman]]이 Astra를 두고 쓴 말로 이 위키에 들어왔다(09-20, 제작사의 자기 평가). GPT-6.2 [[openai-astra|Astra]] 출시 첫날, 와튼 스쿨의 Ethan Mollick 교수가 같은 낱말로 평했다고 해설이 전한다: *"들쭉날쭉하고 이상하다. 다른 모델보다 다루기 어렵다. 하지만 야심찬 프로젝트를 맡기면 잘 해낸다고 썼습니다."*(01:32~01:38) ⚠️ 한국어 해설의 번역이고 원문의 낱말(*jagged* 인지)은 위키가 확인하지 않았다.
+
+출시 첫날의 지형(모두 사용자 자기 보고):
+
+| 앞선 쪽 | 뒤처진 쪽 |
+|---|---|
+| 3D · 게임(*세계 최고 수준* — [[theo|Theo]]) · 영상 편집 · 사람이 결과물만 보고 고르는 3D 평가 1등 | 긴 작업에서 멈춤 · 설명의 가독성 · 제자리 돌기(Theo) |
+| 컴퓨터 사용 · 코드 품질(Theo의 칭찬) | 글쓰기 — 지나친 간결함(Every) |
+| 한 번에 뽑아내는 결과물 | 변주 — 다른 프롬프트에서 같은 이름의 레벨(*벨웨더*) |
+
+09-20에 Brockman이 든 뒤처진 곳이 *글쓰기* 였고, 두 달 뒤 바깥 팀(Every)이 든 것도 글쓰기다 — 다만 이유가 다르다(09-20 *훌륭하지는 않다* / 이번 *너무 압축한다*). 뒤처진 쪽이 **도메인이 아니라 일의 길이와 방식** 으로 갈린다는 것이 이 편의 새 조각이다. → [[demo-collaboration-gap]]

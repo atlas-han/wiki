@@ -3,7 +3,7 @@ title: Index
 type: overview
 tags: [meta]
 created: 2026-05-25
-updated: 2026-11-18
+updated: 2026-11-19
 ---
 
 # Index
@@ -189,6 +189,8 @@ updated: 2026-11-18
 - [[steven-brunton]] — 워싱턴대 수학자. 컴퓨터가 더 잘해도 선형대수는 직접 — 직관, 호기심과 집중은 지루함에서 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달
 - [[ankur-moitra]] — MIT 수학자. 성공의 공식이 창 밖으로, 일하는 이유는 안에서 · 불확실함을 견딜 목적 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 해설 전달, 일부 대목은 더빙으로만
 - [[ryan-carson]] — Untangle 창업자. 사람 → 매니저 에이전트(코드를 쓰지 않는다 · 음성) → 빌더 20개쯤 → 리뷰 최대 3번 · QA → 영상 → *Ship it*. 15분 자동 확인 · 머지 큐 매니저 · 작업 녹화 채용 ([[tech-bridge-ryan-carson-managing-20-agents]]) ⚠️ 해설 전달, 성과 비교 수치 없음
+- [[roman-ugarte]] — [[grokbot|Grok Bot]] 팀 제품 매니저. 봇은 사람처럼 이름 · 역할 · 컴퓨터 · 로그인, 작업 → 목표 → 일자리, 권한의 계단(읽기 전용 → 일 하나 → 직무 하나 — 셋째 칸은 *한참 멀었다*), *실패는 실행이 아니라 의도에서 난다* ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]]) ⚠️ 해설 전달, 원음 무캡션
+- [[tania-lombrozo]] — 프린스턴대 심리학 교수 · 인지과학자. [[learning-by-thinking|생각으로 배우기]](바깥 입력 없이 일어나는 학습) · 설명 깊이의 착각은 쓸모 있다 — 막힌 자리가 찾아볼 목록 · AI에게 묻기 전에 먼저 스스로에게 ([[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]]) ⚠️ 원음 무캡션 · 해설 전달
 
 ### Organizations
 - [[runlayer]] — "golden path for AI at your company". 원격 MCP 서버로 스킬 배포(내부 6개월), 트레이스 자동 증류, 인젝션·PII 검사 후 MCP gateway로 전사 배포. 자막 ASR "Rumlayer"·"run layer", en/ko "Runway"·"PromptLayer" ([[tech-bridge-runlayer-self-improving-skills-mcp]]) ⚠️ 당사자 진술
@@ -309,6 +311,7 @@ updated: 2026-11-18
 - [[claude-sonnet-5-5]] — Anthropic 중간 등급 Claude. $2/$10(Opus 5.5의 절반) · 컨텍스트 100만 · API 기본 effort high(Claude Code medium). 범위가 정해진 일 · 채팅 · 반복 에이전트 · 워커, Sonnet 5보다 30% 빠름 ([[tech-bridge-addy-osmani-which-claude-model]]) ⚠️ 해설 전달
 - [[claude-haiku-5-5]] — Anthropic 최소 · 최속 Claude. $0.10/$0.50 · 10만 토큰 넘으면 5배(유일한 길이별 가격) · API 기본 medium. 분류 · 라우팅 · 대량 처리 · 서브에이전트(Explore를 Haiku로) ([[tech-bridge-addy-osmani-which-claude-model]]) ⚠️ 해설 전달
 - [[gpt-6-cyber]] — OpenAI 사이버 보안 특화 모델. 리눅스 권한 상승 948개 검증 + 패치(API 120만 달러) · Firefox 재검사 81개 · ExploitBench(추정) 슬라이드 52.6% vs 문서 48.45% · PatchBench 73.5% · 허니팟 0.07% ([[tech-bridge-openai-gpt-6-cyber-keynote]]) ⚠️ OpenAI 자체 발표
+- [[openai-sol]] — [[openai|OpenAI]]의 일상 업무용 모델 등급. **GPT-6.2 Sol**(2026-11-17, [[openai-astra|Astra]]와 동시 출시) 입력 $2 / 출력 $10(이전 가격 그대로) · OpenAI 직원 다수의 기본 모델 · Frontier Code에서 Astra와 0.5점 차이 · 3D 평가 3위 ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]]) ⚠️ 해설 전달, 앞선 *Soul* 표기들과의 동일성은 위키 추정
 
 ### Products
 - [[v0]] — Vercel 앱 생성 제품. 하네스에 엔지니어링 시간 "like 90%"를 쓴 회고 → 지금이라면 기성 하네스 ([[tech-bridge-vercel-rauch-agentic-workflow]]) ⚠️ 회고·추정
@@ -559,6 +562,8 @@ updated: 2026-11-18
 - [[discovery-remediation-gap]] — 찾기와 고치기의 속도 차. 자율 파이프라인 1회 948개 vs PHP2Shell 버그 하나 수정에 두 달(조율 붕괴 · 패치 나흘 전 공격) · ExploitBench +24 vs PatchBench +5.6. 보안 판 검증 비대칭 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 - [[key-person-risk]] — 핵심 인물 의존 위험. *AI 산업 → NVIDIA → 한 사람*: 33년 단일 CEO, 공개 승계 계획 없음, 사임 뒤 임시 CEO · 이사회 의장 신설, 최고점 대비 30% 가까운 하락 ([[tech-bridge-jensen-huang-resignation-timeline]]) ⚠️ 사임 이유 미기재
 - [[ai-learning-polarization]] — AI 학습 양극화, 같은 AI · 같은 강의실에서 성적이 두 봉우리로. 갈림길은 *쓰느냐* 가 아니라 *무엇을 묻느냐* — PNAS 2025 GPT-4 연습 +48% · 시험 −17%, 힌트만 주는 튜터는 손해 대부분 감소 ([[tech-bridge-lex-fridman-mathematicians-advice-ai-era]]) ⚠️ 원 논문 미열람
+- [[demo-collaboration-gap]] — 데모와 협업의 간극. 한 번에 뽑아내는 결과물 · 벤치마크는 최고인 모델이 며칠씩 같이 일하는 사람에게는 괴롭다 — 멈춤 · 설명의 가독성 · 제자리 · 결과물의 수렴 · 목표 읽기. GPT-6.2 Astra 출시 첫날의 테제, 벤더가 적은 *장애물을 알리지 않음* 과 방향이 반대인 두 증상 ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]]) ⚠️ 소스 하나 · 조기 접근자 몇 명의 자기 보고, 이름은 위키가 붙임
+- [[learning-by-thinking]] — 생각으로 배우기. 새 정보 없이 이미 가진 것을 바꾸고 합쳐 배운다 — 고무 오리 디버깅 · 자기 설명 효과(1989) · 설명 깊이의 착각(2002)을 묶는 틀. 답을 주는 AI는 이 단계를 빼고(연습 +48% · 시험 −17%) 손해는 본인에게 보이지 않는다, 처방은 *묻기 전에 먼저 설명* ([[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]]) ↔ [[cognitive-offloading]] · [[retrieval-practice]] ⚠️ 해설 전달, 원 강연 · 논문 미열람
 
 ### Patterns
 - [[agentic-inquiry]] — 모든 줄을 읽지 말고 에이전트에게 "방금 무슨 일이"를 묻는다(호출 스택 다이어그램, API 형태 변경 Slack 알림). 같은 화자가 "자사 제품을 에이전트에게 깨 보게 하기"로도 씀 — 두 용법 ([[tech-bridge-vercel-rauch-agentic-workflow]], Rauch 자칭 조어)
@@ -1080,10 +1085,14 @@ updated: 2026-11-18
 - [[tech-bridge-lauren-tan-all-code-is-slop]] — 한국어 해설(11:11, 챕터 10, Korean original + 영어 더빙, Lauren 원음 전부 무캡션, 2026-11-17 07:00 KST): [[lauren-tan|Lauren Tan]] AI Engineer Code Summit *All Code Is Slop (Except Mine)* — 10월 한 사람 PR 3,127 · 팀 10,926, 되돌림 0.98% → 0.47%, 뒤집힌 피라미드(검증 층 신설), 코드는 기억이다, 타이머 183개, 주석 99% 금지(65,824 → 1,227), 애매하면 금지, 토큰 70%는 검증에(Cindy Sridharan), TLA+ · Lean, 성적표의 빨간 숫자(CPU +100%) ⚠️ 팀 자체 집계 · 팀 PR 수가 캡션에서 갈림(설명란 채택)
 - [[tech-bridge-rob-shocks-orca-review-vs-records]] — 한국어 해설(9:24, 챕터 9, Korean original + 영어 더빙 — `en-orig`는 더빙의 ASR, Shocks 원음 여덟 곳 전부 무캡션, 2026-11-17 18:00 KST): [[rob-shocks|Rob Shocks]]의 [[orca|Orca]] 리뷰를 저장소 · 릴리스 노트 · 문서와 대조 — 진짜 기능 목록은 변경 기록, 에이전트와 구독은 그대로, 채팅 모드는 6월 말부터 있었다, 에이전트 하나에 워크트리 하나, 내장 브라우저, 지연은 사라진 게 아니라 안 느껴질 뿐, 31일 중 25 릴리스 · 열린 이슈 4,750, MIT지만 만드는 곳은 회사 · 가명 식별자 → [[agent-development-environment]] ⚠️ 수치는 채널 자체 집계
 - [[tech-bridge-fable-5-2-start-with-opus]] — 한국어 해설(8:46, 챕터 10, 오디오 ko 하나 · en-orig 없음, Lydia Hallie 두 대목 무캡션, 2026-11-18 07:00 KST): [[fable-5-2|Fable 5.2]] 종합편 — 시작은 Opus 5.5 medium, 검증 → effort → 모델, Frontier Code 49.1%와 high 45.3%가 *같은 시험*, 지휘는 Fable · 일은 작은 모델(Explore 상한은 Opus), 끝내기 전에 멈춤과 high, never는 승인 절차로 · go 대신 범위, 주인 문장으로 중복 통합 10% 미만 → 75%, 요약과 diff를 함께, 모델을 바꾸면 캐시도 추론도 버려진다 ⚠️ 출처 다섯 모두 미열람 · 벤더 자체 테스트 수치
+- [[tech-bridge-grok-bot-team-lightcone-ai-coworkers]] — 한국어 해설(11:10, 챕터 9, 오디오 ko 하나 · en-orig 없음, 출연자 원음 열두 곳 전부 무캡션, 2026-11-18 18:00 KST): Y Combinator Lightcone *The Rise Of AI Coworkers* 의 [[grokbot|Grok Bot]] 팀([[lauren-tan|Lauren Tan]] · [[roman-ugarte|Roman Ugarte]])을 x.ai 공식 글과 대조 — 리드 봇이 피드백을 다른 봇들에게 퍼뜨렸다, 이름 · 로그인 · 컴퓨터를 가진 AI 동료, 1.0판 11-11 · Team Bots 9월 말, 작업 → 목표 → 일자리, 권한의 계단(읽기 전용 → 일 하나 → 직무 하나), Data Bot · 자기 할인 승인 금지, Slack 스레드와 대화 200개로 기능 하나, 가장 작은 고리부터, 봇끼리도 Slack 계정으로, 월 PR 4,000, 기본값은 내보내지 않는 쪽, 실패는 의도에서 난다 ⚠️ 인터뷰 · 공식 글 미열람, 본인 인용 0, 월 PR은 11-17 편의 3,127과 다름
+- [[tech-bridge-karpathy-hackertube-two-hours-five-words]] — 한국어 해설(10:19, 챕터 9, Korean original + 영어 더빙 — `en-orig`는 더빙의 ASR, 원 영상 발췌 세 곳 무캡션 · Karpathy 본인 발화 0, 11-17~11-18 멤버 전용 → 2026-11-18 22:00 KST 공개): [[andrej-karpathy|Karpathy]]가 두 시간에 만든 [[hackertube|HackerTube]] — HN 댓글 4,300만 → 영상 6,454(세 사람 · 세 달 기준), 입력 5억 400만 토큰의 90% 넘게가 댓글 선별 · 앱은 Opus 5.5 약 100만, 0.2% 냅킨 계산(60억 / 10~20억 / 2,000만 / 5,000), 짧고 멍청한 프롬프트는 Opus 5.5 이상에서만, 이해의 사다리(글 → 그림 → HTML → 영상), 스킬 위약 대조 9개 중 2개만 이득, Chroma 18개 모델, 코드 대신 데이터 → [[share-data-and-prompt-not-app]] ⚠️ 전부 2차 전달 · 11-08 Saraev 편과 독립 여부 미상 · Anthropic 합류(*올해 5월*) 미확인
+- [[tech-bridge-gpt-6-2-astra-launch-day-reactions]] — 한국어 해설(8:59, 챕터 9, Korean original + 영어 더빙 — `en-orig`는 더빙의 ASR, 영어 원음 발췌 셋(Every · vogel · Bijan Bowen)만 원음, Every 결론 원문 무캡션, 2026-11-18 22:00 KST): [[openai|OpenAI]] GPT-6.2 [[openai-astra|Astra]] · [[openai-sol|Sol]] 출시(11-17) 첫날 반응 모음 — Astra $8 / $40(20% 인하) · Sol $2 / $10, 비용 대비 점수 그래프의 왼쪽 위인데 [[theo|Theo]] *역대 최악* · Matt Shumer *사실상 못 쓴다* · [[dan-shipper|Dan Shipper]] *Fable 5.2에 비하면 실망*, Theo의 편지(묻고 멈춤 · 알아듣기 어려운 설명 · 제자리), 벨웨더(다른 게임 · 같은 이름), Every 자체 벤치마크 39점, 호평은 3D · 영상, 발표 글이 적은 약점(장애물을 알리지 않음 22~24% → Codex 지시문으로 8%대), Sol과 0.5점 차이, 2주 예측 → [[demo-collaboration-gap]] ⚠️ 전부 해설의 번역 전달 · 출처 열셋 미열람 · 가격이 Fable 5.2와 같은 값
+- [[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]] — 한국어 해설(11:03, 챕터 10, 오디오 ko 하나 · en-orig 없음, 강연 원음 발췌 열한 곳 전부 무캡션(약 4분 40초), 2026-11-19 07:00 KST): [[tania-lombrozo|Tania Lombrozo]] 강연과 그 뒤의 연구 — PNAS 2025 답을 주는 AI 튜터는 연습 +48% · 시험 −17%, 힌트만 주는 튜터는 연습 +127% · 시험 차이 없음, 고무 오리 디버깅, 바깥 입력 없이 배우는 [[learning-by-thinking|생각으로 배우기]], 자기 설명 효과, 설명 깊이의 착각(막힌 자리가 찾아볼 목록), 덜 배운 것을 본인은 모른다, AI는 단계별로 생각할수록 잘 푼다, 묻기 전에 먼저 설명 → [[cognitive-offloading]] ⚠️ 출처 일곱 모두 미열람 · 강연자 본인 인용 0 · 1989년 논문 저자는 ASR 추정
 
 ## 통계
 
-- 총 페이지 수: 1044 (1039 → 1044, + 2026-11-18 Tech Bridge 2편(11-17 업로드 — Fable 5.2 부터 쓰면 안됩니다 · 저는 이제 Orca만 씁니다): source 2 · entity 2(orca · stably-ai) · concept 1(agent-development-environment) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1044와 일치)
+- 총 페이지 수: 1053 (1044 → 1053, + 2026-11-19 Tech Bridge 4편(11-18 업로드 3편 + 멤버 전용에서 풀린 1편 — 그록봇에게 모든 권한을 주면 생기는 일 · 2시간 만에 유튜브를 만든 프롬프트 · GPT-6.2 Astra 출시 첫날 반응 모음 · AI가 답을 다 알려 줬더니 시험 점수가 떨어졌다): source 4 · entity 3(roman-ugarte · openai-sol · tania-lombrozo) · concept 2(demo-collaboration-gap · learning-by-thinking) — 02.wiki 실측 `find 02.wiki -name "*.md" | wc -l` 1053과 일치)
 - 마지막 TIL: 2026-07-08 ([[2026-07-08-obsidian-cli|Obsidian CLI]])
-- 마지막 ingest: 2026-11-18 (Tech Bridge **2편** — 11-17 업로드 [[tech-bridge-fable-5-2-start-with-opus|Fable 5.2 부터 쓰면 안됩니다]](`denLM_IOSig`) · [[tech-bridge-rob-shocks-orca-review-vs-records|저는 이제 Orca만 씁니다]](`qBSqNkmNSXk`). `OV9By_UspTk` · `Yhck-x6VuLs` 멤버 전용 지속)
-- 직전 ingest: 2026-11-17 (Tech Bridge **2편** — 11-16 업로드 [[tech-bridge-lauren-tan-all-code-is-slop|한 달에 PR 1만 개, 그런데 쓰레기 코드는 없다]](`nldpxmin-1M`) · [[tech-bridge-ryan-carson-managing-20-agents|AI 에이전트 20개를 동시에 굴리는 창업자가 절대 건너뛰지 않는 한 단계]](`cY3rFdzLDkw`). 신규 멤버 전용 `OV9By_UspTk` 건너뜀 · `Yhck-x6VuLs` 멤버 전용 지속)
+- 마지막 ingest: 2026-11-19 (Tech Bridge **4편** — 11-18 업로드 [[tech-bridge-grok-bot-team-lightcone-ai-coworkers|그록봇에게 모든 권한을 주면 생기는 일]](`JFp1efdoQIQ`) · [[tech-bridge-karpathy-hackertube-two-hours-five-words|2시간 만에 유튜브를 만든 프롬프트, 단어 5개]](`OV9By_UspTk`) · [[tech-bridge-gpt-6-2-astra-launch-day-reactions|GPT-6.2 Astra, 점수는 1등인데 "OpenAI 역대 최악"?]](`hIo10QPrYko`) · [[tech-bridge-lombrozo-learning-by-thinking-ai-tutor|AI가 답을 다 알려 줬더니 시험 점수가 떨어졌다]](`z7bhaskC02Y`). `OV9By_UspTk`는 멤버 전용 → 공개 전환분. `Yhck-x6VuLs` 멤버 전용 지속)
+- 직전 ingest: 2026-11-18 (Tech Bridge **2편** — 11-17 업로드 [[tech-bridge-fable-5-2-start-with-opus|Fable 5.2 부터 쓰면 안됩니다]](`denLM_IOSig`) · [[tech-bridge-rob-shocks-orca-review-vs-records|저는 이제 Orca만 씁니다]](`qBSqNkmNSXk`). `OV9By_UspTk` · `Yhck-x6VuLs` 멤버 전용 지속)

@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, claude-code]
 aliases: [보리스 체르니, Boris]
 links: []
-sources: [tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-claude-duet-proactive-assistant, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-claude-duet-proactive-assistant, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-10-23
-updated: 2026-11-08
+updated: 2026-11-19
 ---
 
 # Boris Cherny
@@ -35,3 +35,7 @@ updated: 2026-11-08
 ## 2026-11-08 — "검증할 방법을 주면 2~3배" (간접 인용, [[tech-bridge-anthropic-code-review-seven-layers]])
 
 한국어 해설이 Claude Code 팀 리뷰의 첫 층(PR 전 자기 검증)을 설명하며 전한다: *"AI에게 스스로 검증할 방법을 주면 결과물이 두 세 배 좋아진다고요."*(02:42~02:46) — Boris가 *가장 중요한 비법*으로 꼽았다는 말이다. 11-02 AI Labs 편의 간접 인용과 같은 취지이고, **두 단계 건너 전달**(Boris → 블로그 → 해설)이라 원 발언 · 수치의 맥락은 확인하지 않았다.
+
+## 2026-11-19 — "검증할 방법을 주라" 세 번째 간접 인용: 시점이 붙는다 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+Karpathy 해설이 *루프에서 손을 떼려면 믿을 수 있어야 한다* 는 대목에서 전한다: *"가장 중요한 팁은 클로드에게 자기 작업을 검증할 방법을 주는 것이다."*(06:36~06:40) *"피드백 고리가 있으면 최종 결과물의 품질이 두 세 배가 된다."*(06:40~06:44) 11-02 · 11-08의 간접 인용과 같은 말이고, 이번에 **시점(올해 1월)과 매체(글 — 설명란의 X 링크 `bcherny/status/2007179861115511237`)** 가 처음 붙었다. ⚠️ 여전히 한국어 옮김의 간접 인용이고 위키는 원 글을 열지 않았다. → [[agent-verification-skill]]

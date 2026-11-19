@@ -5,9 +5,9 @@ category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
 related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra, flaky-tests]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-09-05
-updated: 2026-11-15
+updated: 2026-11-19
 ---
 
 # Goal-Level Delegation
@@ -128,3 +128,13 @@ MMA 사례가 한 칸 더 간다 — *"카메라를 지켜보다가 **라운드 
 [[aaron-friel|Aaron Friel]](OpenAI, 철자 추정)은 DevDay 2025에서 [[codex|Codex]]를 7시간 일하게 한 프롬프트에 예시 코드 · 라이브러리 · 구현 순서를 다 적고 계획서 검토 후에야 시작시켰다. DevDay 2026의 6주 실험은 약 200단어 — 코드도 고치는 법도 없이 **일하는 규칙**(근무 시간 외 메시지는 모아 두기 · CI는 시간당 1회 이하 · 테스트 돌리는 법은 직접 알아내기)만 있었다. *"목표와 원하는 결과, 그리고 무엇을 아끼고 무엇을 포기할지만 말해주고 단계는 모델이 알아서 찾게 합니다."*(01:48~01:52) (해설) 맺음: *방법이 아니라 목표와 규칙 그리고 한계.*
 
 ⚠️ 그 사이 모델도 바뀌었다(GPT-5.6 Sol → GPT-6.x Sol, 판독 추정) — 이 비교는 **프롬프트 방식만의 효과** 를 분리하지 않는다. → [[flaky-tests]]
+
+## 2026-11-19 — 낱말 다섯 개의 위임과 그 조건 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+Karpathy 해설(⚠️ 2차 전달). 목표 수준 위임의 가장 짧은 형태: 서버 주소를 주고 *"업데이트, 배포, 보안 강화, 최적화."*(04:29~04:31) — *"그러자 클로드가 전부 해냈다고 적었습니다."*(04:32~04:33)
+
+- 왜 짧게: *"내 프롬프트는 점점 짧고 멍청해진다. 말을 덜해도 모델이 내가 뭘 하려는지 알아듣기 때문이다."*(04:05~04:10) *"너무 많이 주면 오히려 요구 사항으로 모델을 묶어버린다고 했습니다."*(04:12~04:13) — 요구를 적는 일이 정보가 아니라 **제약** 으로 작동한다는 주장이다.
+- ⭐ 위 *전환의 조건 — 모델 품질* 에 붙는 문장: *"이렇게 짧게 맡기는 건 오퍼스 5.5 이상에서만 한다고 했습니다. 더 약한 모델은 이만큼 믿지 않겠다고요."*(04:57~05:02)
+- 맡긴 뒤 사람이 하는 일은 지켜보기가 아니라 **이해** 다: *"모델이 잡일을 더 많이 맡을수록 사람의 일은 감독과 이해 쪽으로 올라간다."*(05:46~05:50)
+
+⚠️ 맥락은 혼자 쓰는 사이트다. 같은 주의 Fable 5.2 종합편([[tech-bridge-fable-5-2-start-with-opus]])이 전한 처방 — 승인의 범위를 정확히 적어라 — 과는 방향이 반대로 보이지만, 그쪽은 되돌리기 어려운 행동의 승인이고 이쪽은 버려도 되는 결과물이다(위키의 읽기).

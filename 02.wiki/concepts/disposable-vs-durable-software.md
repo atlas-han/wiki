@@ -6,9 +6,9 @@ tags: [code-quality, disposable-software, durable-software, engineering-rigor, c
 aliases: [disposable software, durable software, 일회용 소프트웨어, 오래 쓰는 코드, 네 가지 기준, four factors]
 related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build]
 first-seen: tech-bridge-kanat-alexander-disposable-vs-durable
-sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-10-25
-updated: 2026-11-08
+updated: 2026-11-19
 ---
 
 # 일회용 vs 오래 쓰는 소프트웨어
@@ -51,3 +51,9 @@ Karpathy가 앱 대신 데이터 소스와 프롬프트를 공유한다는 전�
 ## 수명이 아니라 시점으로 — 단계 의존 (2026-11-01 · [[tech-bridge-andrew-ng-ai-engineering-skills-map]])
 
 [[andrew-ng|Ng]](제목 · 설명란 · 태그 근거)은 같은 질문(얼마나 공들일까)에 **프로젝트 단계**로 답한다. *"for early stage projects, so long as you can do it in a responsible, safe way, build a quick and dirty prototype, see what happens, throw it away, build another quick and dirty prototype, see what happens, and drive rapid learnings."*(07:47~08:01) 그리고 *"there's also a time and place to thinking carefully about architecture"*(08:01~08:05). 이 페이지의 네 기준이 **소프트웨어의 성질**로 위치를 정한다면, Ng은 **같은 프로젝트가 시간에 따라 이동한다**고 본다(핵심 주장 4 *위치는 움직인다* 와 같은 방향). 두 소스 모두 일회용의 조건으로 **민감 데이터 격리**를 단다. → [[shaping-the-build]]
+
+## 2026-11-19 — "크고 버려도 되는 소프트웨어를 마음껏 주문하라" ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+Karpathy의 10월 초 글의 결론으로 해설이 전한다(⚠️ 2차 전달): *"지능과 코드가 흔해진 만큼 예전 같으면 만들 이유가 없던 크고 버려도 되는 소프트웨어를 마음껏 주문하라고 했습니다."*(05:52~05:58) 일회용 쪽을 **권고** 로 말한 첫 소스다 — 앞선 소스들은 일회용과 오래 쓰는 것을 가르는 기준을 다뤘다.
+
+[[hackertube|HackerTube]]가 그 실례로 놓인다. 서버 코드는 *"바이브 코딩으로 만든 엉망 진창이라서요."*(07:49~07:51) 공개하지 않았고, 남긴 것은 데이터다 — *"해커 튜브에서 진짜 귀한 건 20년치 댓글에서 걸러낸 영상 목록입니다."*(08:57~09:00) 11-08 절의 *앱은 데이터 위의 포장* 과 같은 결론이 이번에는 비용으로도 받쳐진다: 토큰의 90% 넘게가 데이터 선별에, 앱에는 약 100만 토큰이 들었다. → [[share-data-and-prompt-not-app]]

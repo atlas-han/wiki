@@ -6,9 +6,9 @@ tags: [generative-ui, dynamic-interface, enterprise, code-generation, ux]
 aliases: [동적 인터페이스, dynamic interface, generative UI, 생성형 UI]
 related: [agentic-sites, adaptive-response-format, persistent-agent-teams, lethal-trifecta, prompt-injection]
 first-seen: tech-bridge-altman-benioff-dreamforce
-sources: [tech-bridge-altman-benioff-dreamforce, tech-bridge-nick-saraev-karpathy-ai-habits]
+sources: [tech-bridge-altman-benioff-dreamforce, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-09-23
-updated: 2026-11-08
+updated: 2026-11-19
 ---
 
 # 모델이 그리는 인터페이스
@@ -65,3 +65,14 @@ Saraev 전달: Karpathy는 이해가 안 되면 다이어그램 · HTML 페이�
 - [[tech-bridge-altman-benioff-dreamforce]]
 - [[marc-benioff]] · [[salesforce]] · [[sam-altman]]
 - 관련: [[agentic-sites]] · [[adaptive-response-format]] · [[persistent-agent-teams]] · [[lethal-trifecta]] · [[prompt-injection]]
+
+## 2026-11-19 — 이해의 사다리: 글 → 그림 → HTML → 설명 영상 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+11-08 편이 나열로 전한 Karpathy의 습관이 이 해설에서는 **순서가 있는 사다리** 로 나온다(10월 초 글의 해설 전달, ⚠️ 원 글 미열람). 전제: *"앞으로는 언어 모델의 결과물을 이해하는 데 훨씬 많은 시간을 쓰게 될 거라고요."*(05:16~05:20)
+
+1. 글 — 항공기 정비 문서용 단순 기술 영어로 설명해 달라고 한다(05:26~05:28).
+2. 그림 — *"다이어그램으로 그려 달라고 하면 훨씬 빨리 읽힙니다."*(05:32~05:33)
+3. HTML — *"움직이고 눌러 볼 수 있는 웹페이지로 받는 거죠."*(05:36~05:38)
+4. 설명 영상 — *"카파시가 가장 기대한다고 한 형식은 주제마다 새로 만드는 설명 영상입니다. 실제로 되기 시작했다고 적었습니다."*(05:40~05:45)
+
+이 페이지의 본래 주제(제품의 화면을 모델이 그린다)와 방향이 다르다는 점은 11-08 절과 같다 — 여기서 모델이 그리는 것은 제품이 아니라 **자기 결과물의 설명** 이다. 새로 붙는 것은 이유다: 사람의 일이 *감독과 이해* 로 올라가므로 읽는 비용이 병목이 된다 → [[read-fluency-for-agent-output]].

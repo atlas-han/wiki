@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-09-01
-updated: 2026-11-17
+updated: 2026-11-19
 ---
 
 # Lauren Tan
@@ -150,3 +150,15 @@ AI Engineer Code Summit 발표의 한국어 해설(11:11). 원음은 캡션에 �
 - 검증 쪽 새 사실: TLA+ 모델 검사 · Lean 증명을 *실험 중* 으로 쓴다. → [[ai-formal-verification]]
 - 성적표의 빨간 숫자: 대기 중 메모리 +12%, 대기 중 CPU +100%. *"텐의 표현은 여러 면에서 나아졌다 였습니다. 전부는 아닙니다."*(09:09~09:11)
 - 본인 X 게시물(해설 인용): *"이건 사람이 빠진 무인 공장이 아니다."*(10:41~10:43) — 10-10 대담의 *"It kind of is"* 와 나란히 둔다(맥락 미확인). → [[software-factory]]
+
+## 아홉 번째 소스 — Lightcone *The Rise Of AI Coworkers* 해설 (2026-11-19 · [[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Y Combinator Lightcone에 제품 매니저 [[roman-ugarte|Roman Ugarte]]와 함께 나온 인터뷰의 한국어 해설(11:10). ⚠️ **원음 발췌 열두 곳이 전부 무캡션 — 본인 인용 0.** 아래는 내레이션이 받아 옮긴 것이다. 소개는 소속 없이 *"그록 봇이라는 제품을 만든 핵심 팀의 엔지니어입니다."*(00:41~00:43) — 이 편은 Cursor를 말하지 않는다(설명란 공식 글은 x.ai, tags `SpaceXSI` · `xAI`).
+
+- **봇과 Slack에서 일한다** — 봇 이름은 *포테이토*(철자 미상, 본인 X 핸들은 `poteto`). X에서 본 영상 링크 하나로 시작해 *"코드 편집기를 한 번도 열지 않고 대화 200개로 기능 하나가 나왔습니다."*(05:29~05:32) 동료와 PM이 같은 스레드에서 의견을 냈다.
+- **리드 봇 일화** — 한 엔지니어의 피드백을 리드 봇이 다른 봇들에게 그대로 퍼뜨렸다(장면은 무캡션, 설명란은 *꾸짖고 있었다*). → [[persistent-agent-teams]]
+- **가장 작은 고리부터** — *"에이전트는 이미 코드를 씁니다. 그런데 그 코드를 돌려 보는 건 누구일까요? 준비가 안 된 팀에서는 사람입니다."*(07:03~07:08) 그 고리가 믿을 만해지면 바깥 고리(지표 알림 → 봇이 재현 · 수정 · 확인)를 얹는다. → [[agent-verification-skill]]
+- ***소프트웨어 공장* 을 좋아하지 않는다** — X 글(해설 전달): *"필요한 건 좋은 소프트웨어 엔지니어링 그리고 토큰을 옳은 곳에 쓰는 일이라고요."*(06:53~06:57) 11-17 편의 *무인 공장이 아니다* 에 이은 두 번째 기록. → [[software-factory]]
+- **에이전트는 유지 보수로** — *"버그와 성능은 봇에게 맡기고 제품 고민은 사람이 하는 겁니다."*(11:00~11:02)
+- ⚠️ **월 PR 4,000** — *"우가르테에 따르면 텐 한 사람이 한 달에 올리는 PR이 4,000개입니다."*(09:01~09:04) 위 여덟 번째 소스의 10월 3,127과 다르다. 어느 달인지 없는 동료의 어림수라 모순으로 치지 않고 나란히 둔다.
+- 내년의 바람: 봇마다 전화번호와 신용카드. 봇끼리의 대화에 대해서는 *"공식 통로를 열어주면 봇은 그 통로를 쓴다는 게 텐의 생각입니다."*(08:57~08:59)

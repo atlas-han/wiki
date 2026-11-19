@@ -6,9 +6,9 @@ tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
 related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools, agent-sandboxing]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-09-14
-updated: 2026-10-31
+updated: 2026-11-19
 ---
 
 # 최소 권한 커넥터
@@ -100,3 +100,9 @@ Tech Bridge 해설이 Meta의 Muse 소개를 이렇게 요약한다. *"Muse is d
 ## 2026-10-31 — 재무 봇은 읽기 전용, 그리고 지시도 한 겹 더 ([[tech-bridge-dan-martell-grokbot-daily-automation]])
 
 [[dan-martell|Dan Martell]](⚠️ 추정)의 [[grokbot|Grok Bot]] 튜토리얼: *"Build me a finance bot and give it read-only access to my accounting, banking, and email."*(04:37~04:41) 매일 잔고 · 매출 · 지출 · 청구서를 보고하게 한 뒤 *"And never move money or pay anything."*(04:51~04:53)를 덧붙인다. → **권한(읽기 전용)과 지시(금지)를 둘 다** 거는 개인 사용자 판본. 이 페이지의 *"읽기 전용으로 시작한다"* 가 돈이 걸린 커넥터에서 반복된다. ⚠️ 읽기 전용이 커넥터 설정으로 실제 강제되는지는 발화되지 않는다. 다른 봇(inbox · constraint · leadership)은 Gmail · CRM · 팀 Slack 전 채널에 넓게 연결되며 권한 범위는 말하지 않는다.
+
+## 2026-11-19 — 사내 봇의 첫 칸도 읽기 전용: Data Bot ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Grok Bot 팀의 권한 계단([[agent-trust-curve]])에서 첫 칸이 이 원칙과 같은 자리다(⚠️ x.ai 공식 글의 한국어 해설 전달). 데이터 팀에 분석 요청이 하루 수십 건씩 오자 *"그래서 승인된 표를 읽기 전용으로만 조회하는 봇을 만들어 슬랙에 뒀습니다."*(04:27~04:30) — 범위가 둘로 좁혀져 있다: **승인된 표** 만, **읽기** 만. 데이터 팀 추정으로 지난 한 주에 약 70시간어치 일을 대신했다(ASR 판독 추정).
+
+쓰기 쪽의 대응물은 직무 분리다: *"영업 담당자는 견적 봇으로 자기 할인을 스스로 승인할 수 없다."*(04:39~04:42) 봇의 권한을 좁히는 것이 아니라 **봇을 거쳐 사람이 자기 권한을 넘는 길** 을 막는 규칙이다.

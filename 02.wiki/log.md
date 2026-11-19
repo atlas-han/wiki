@@ -2813,3 +2813,45 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 2편 · 8~9분이라 서브에이전트 없이 직접 처리했다(`.scratch/tb1118/`: 11-17 스크립트 복사, index · overview · log는 `shared2.py`). 인용은 전부 `(@)` 자리표시 → `q.py fill`, MISS 0. ⭐ **트랙 이름 `en-orig`를 원음의 표지로 믿지 말 것** — 영어 더빙이 붙은 한국어 원본 영상에서는 `en-orig`가 더빙의 ASR이다. `meta.py`의 `lang` · `variant`만으로는 구분되지 않고(원음 영어 영상과 같은 값) **내용이 내레이션과 같은지** 로 판정한다. ADE 허브 페이지는 각 도구 페이지에 이미 적힌 것만 옮겼다(warp · agentcraft · cmux 소스는 다시 읽지 않음).
 
+## [2026-11-19] ingest | Tech Bridge — 11-18 업로드 4편 (그록봇에게 모든 권한을 주면 생기는 일 · 2시간 만에 유튜브를 만든 프롬프트, 단어 5개 · GPT-6.2 Astra 출시 첫날 반응 모음 · AI가 답을 다 알려 줬더니 시험 점수가 떨어졌다)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음). 신규 공개 4편: `JFp1efdoQIQ`(11-18 18:00 KST) · `hIo10QPrYko`(11-18 22:00 KST) · `z7bhaskC02Y`(11-19 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261118) · **`OV9By_UspTk` 멤버 전용 → `public` 전환**(11-17 · 11-18 `subscriber_only`, 목록 `upload_date` 20261116 → 20261118, 11-18 22:00 KST). `Yhck-x6VuLs`는 목록 범위 밖 · 단건 조회 `subscriber_only` 줄 지속 — 건너뜀, 페이지 없음. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 4 · entity 3 · concept 2**, 기존 페이지 보강 29개(+ tech-bridge), index **1044 → 1053**(실측 일치).
+
+- `JFp1efdoQIQ`(11:10, 챕터 9) → [[tech-bridge-grok-bot-team-lightcone-ai-coworkers]]: Y Combinator Lightcone *The Rise Of AI Coworkers*([[lauren-tan|Lauren Tan]] · [[roman-ugarte|Roman Ugarte]], 진행 [[garry-tan|Garry Tan]])를 x.ai 공식 글 세 편과 대조한 해설. 오디오 ko 하나 · **en-orig 없음**, `ko` = `ko-orig`(`variant=gemini`). 11-18 18:00 KST 게시.
+  - 신규: [[roman-ugarte]]
+  - 보강: [[grokbot]](1.0판 11-11 · Team Bots · Data Bot · 권한의 계단 · 샌디) · [[lauren-tan]](아홉 번째 소스 · Slack 스레드로 기능 · 월 PR 4,000) · [[garry-tan]](진행자) · [[agent-trust-curve]](권한 축의 계단) · [[least-privilege-connectors]](Data Bot · 자기 할인 승인 금지) · [[persistent-agent-teams]](교정의 전파 · 봇끼리의 통로) · [[software-factory]](당사자의 거부 두 번째) · [[agent-verification-skill]](가장 작은 고리부터)
+  - ⚠️ **무캡션 열두 구간이 전부 출연자 원음 자리**(00:15~00:39 · 01:37~02:01 · 02:37~02:59 · 03:33~04:06 · 05:09~05:29 · 05:51~06:46 · 07:11~07:47 · 08:23~08:43 · 09:09~09:43 · 10:07~10:32) — 본인 인용 0, 내레이션이 받아 옮긴 대목으로만 적었다. 리드 봇 장면 · 권한의 *지름길* · *봇에게 없는 것*(챕터 제목) · *팀이 막힌 곳* 은 **내용을 적지 않았다.**
+  - ⚠️ 월 PR 4,000(Ugarte) vs 11-17 편의 10월 3,127 — 달을 말하지 않는 어림수라 모순 표시 없이 나란히 뒀다. *1.0판 11-11* · *첫 코드부터 출시까지 7주* 는 기존의 베타 시점 미해결과 함께 뒀다(기점 계산 안 함). 이 편은 Cursor를 말하지 않는다(공식 글 x.ai · tags `SpaceXSI` · `xAI`) — 조직 구조 추정 없음.
+  - ⚠️ ASR 판독: *자기 보색에* → 자기 봇에게 · *본마다* → 봇마다 · *회사 박사례* → 회사 밖 사례 · *새 칸* → 셋째 칸 · *이른 시간 어치* → 일흔 시간(70, 추정) · *테는* · *다는* → 텐은. *로그인과 예상까지 받은 봇*(03:21)은 판독 불가로 남겼다. *하퍼* · *샌디* · *포테이토* 는 철자 미상.
+  - 페이지화하지 않음: Y Combinator · Lightcone · Team Bots · Data Bot · Harper · 샌디 · Slack.
+- `OV9By_UspTk`(10:19, 챕터 9) → [[tech-bridge-karpathy-hackertube-two-hours-five-words]]: [[andrej-karpathy|Andrej Karpathy]]의 [[hackertube|HackerTube]] 두 시간을 그의 블로그 · X · HN 댓글 · 강연 기록으로 따라간 해설. **멤버 전용(11-17 · 11-18) → 공개 전환**(`upload_date` 20261116 → 20261118, 11-18 22:00 KST). Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`.
+  - 신규 페이지 없음.
+  - 보강: [[andrej-karpathy]](0.2% 냅킨 계산 · 일하는 방식 선언 · Anthropic 진술 둘째) · [[hackertube]](순서 · 선별 기준 · 토큰) · [[share-data-and-prompt-not-app]](압축 파일 · 엿새 뒤 재현) · [[skill-evals]](위약 대조군) · [[context-rot]](18개 모델 연구 = Chroma, 추정) · [[boris-cherny]](세 번째 간접 인용, 시점 1월) · [[goal-level-delegation]](다섯 낱말 · Opus 5.5 이상 조건) · [[model-rendered-interface]](이해의 사다리) · [[jagged-capability-frontier]](사용 격차의 이유) · [[disposable-vs-durable-software]](버려도 되는 소프트웨어를 주문하라)
+  - ⚠️ **`en-orig`는 영어 더빙의 ASR** — 인용하지 않고 판독 대조용으로만. 더빙 ASR은 Opus를 일관되게 *3.5* 로, *바이브 코딩* 을 *software 2.0* 으로, Sonnet *4.5* 를 *3.5* 로 읽는다(ko · tags를 따름, Sonnet 버전은 미확정).
+  - ⚠️ **무캡션 세 구간(02:16~02:48 · 06:09~06:31 · 08:27~08:57)이 원 영상 발췌 자리** — 3월 팟캐스트에서 한 말 · *자리를 비우라* 의 본론 · Sequoia 행사의 MenuGen 이야기를 **적지 않았다.** Karpathy 본인 인용 0.
+  - ⚠️ *단어 다섯 개* 인데 캡션에는 넷(*보안 강화* = secure · harden, 11-08 Saraev 편 영어 원음과 대조한 추정). ASR 판독: *밸브 코딩* → 바이브 코딩 · *손수 세기 분에* / *소래도 주* → Sonnet(추정) · *척하는 글* → 첫 칸은 글(미확정) · *인 키코딩* → 인기 코딩(추정) · *메뉴 제* → MenuGen.
+  - ⚠️ 11-08 Saraev 편과 겹치는 내용은 독립된 확인으로 치지 않았다(설명란의 *원본 요약 영상* `3BFMS3Wirq8`). 갈리는 곳 둘: 육지/바다 평가는 *남이 만든 것* · 짧은 프롬프트의 이유. *올해 5월 Anthropic 합류* 는 미확인으로 둠.
+  - 페이지화하지 않음: 0.2% 냅킨 계산 · 이해의 사다리 · skill-placebo · Chroma · TristanTube · MenuGen · No Priors · Sequoia AI Ascent.
+- `hIo10QPrYko`(8:59, 챕터 9) → [[tech-bridge-gpt-6-2-astra-launch-day-reactions]]: [[openai|OpenAI]] GPT-6.2 [[openai-astra|Astra]] · [[openai-sol|Sol]] 출시(2026-11-17) 첫날 반응 모음 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`kind=asr&lang=ko`, `variant=gemini` 없음). 11-18 22:00 KST 게시.
+  - 신규: [[openai-sol]] · [[demo-collaboration-gap]]
+  - 보강: [[openai-astra]](첫 버전 번호 · 가격 · 출시일 · 벤더가 적은 약점 · 갈린 평가) · [[theo]](조기 테스터의 공개 편지 · 2주 예측) · [[dan-shipper]](Every 대표 · 30명 팀의 평가) · [[openai]] · [[cost-vs-score-frontier]](꼭대기인데 *최악*) · [[jagged-capability-frontier]](바깥 사용자의 *들쭉날쭉*) · [[fable-5-2]](비교 기준 · 같은 가격) · [[claude-opus-5-5]](불만의 맞은편 모델)
+  - ⚠️ **`en-orig`는 영어 더빙의 ASR** — 인용하지 않았다. 다만 영어 원음 발췌 세 곳(Every 04:36~04:47 · vogel 04:58~05:37 · Bijan Bowen 06:19~06:36)은 두 트랙에 같은 영어가 잡혀 ko-orig의 글자로 인용했다(`<!--k-->`). 더빙 ASR은 모델명을 틀린다(*GPT-4o* · *Claude 3.5 Sonnet and Opus* · *Opus 3.5*).
+  - ⚠️ 무캡션 03:46~04:07 · 04:25~04:36(Every 발췌) — **Every 팀이 낸 결론의 원문과 *점수보다 큰 불만* 의 앞머리를 적지 않았다.** 04:36의 발췌는 주어 없이 문장 중간부터.
+  - ⚠️ ASR 판독 미확정으로 남긴 것: *경직 모델의 5% 비용*(경쟁 / 직전) · *7위를 돌고도*(7주 추정) · *비용은 1점*(더빙 1/10th, 토큰 가격으로는 1/4) · *다셋째*(닷새째 / 셋째 날). 인용문은 전부 내레이션의 한국어 번역이지 X 글 · 편지 · 발표 글의 원문이 아니다.
+  - ⚠️ Astra $8 / $40 · *이전보다 20% 인하* 가 11-18에 적은 Fable 5.2의 값과 같다 — 우연인지 해설의 혼선인지 판정하지 않고 [[openai-astra]] · [[fable-5-2]] · 소스 페이지에 표시.
+  - 페이지화하지 않음: Matt Shumer · Ethan Mollick · ashe · vogel · Bijan Bowen · Ben · Every(회사) · Frontier Code · 벨웨더 사건 · Hacker News.
+- `z7bhaskC02Y`(11:03, 챕터 10) → [[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]]: [[tania-lombrozo|Tania Lombrozo]] 강연(설명란 TEDxNewEngland)과 PNAS 2025 · 자기 설명 효과 · 설명 깊이의 착각 · PNAS Nexus 2025를 따라간 해설. 오디오 ko 하나 · **en-orig 없음**, `ko` = `ko-orig`(`variant=gemini`). 11-19 07:00 KST 게시(`upload_date` 20261118).
+  - 신규: [[tania-lombrozo]] · [[learning-by-thinking]](고무 오리 디버깅 · 자기 설명 효과 · 설명 깊이의 착각은 이 페이지의 절로)
+  - 보강: [[cognitive-offloading]](기제 · 힌트 반 +127% · 본인은 모른다 · PNAS Nexus) · [[ai-learning-polarization]](같은 실험의 두 번째 전달) · [[ai-assisted-learning]](순서 규칙) · [[retrieval-practice]](이웃 원리 자기 설명 효과)
+  - ⭐ 힌트만 주는 튜터 반: 연습 +127% · 시험은 AI를 안 쓴 반과 차이 없음(*손해가 사라진 겁니다*). ⚠️ 11-16 ingest의 *손해가 대부분 줄었다* 와 세기가 다르다 — 같은 논문의 두 해설, 논문 미열람이라 둘 다 적고 표시만 했다.
+  - ⚠️ **무캡션 열한 구간, 약 4분 40초**(00:35~01:20 · 02:14~02:53 · 03:39~04:02 · 04:24~04:58 · 05:39~06:25 · 06:40~07:13 · 07:54~08:49 · 10:33~10:58) — 강연 원음 발췌로 추정, 대조 트랙이 없어 **내용을 적지 않았다.** Lombrozo 본인 인용 0.
+  - ⚠️ ASR 판독: *고모리 디버깅* → 고무 오리 디버깅 · *일보 피나스* → 회보 PNAS · *집 아바타를* → 집 앞을(추정) · *미셸 린치 연구팀* → Michelene Chi(추정, 설명란에 없는 1989년 논문) · *세 카드* → 새 카드(추정) · *로젠블릭과 카일* → Rozenblit & Keil · *못 땄던* → 못 닿던(추정). 2024년 논문 대목은 내레이션이 밝힌 *보도 자료의 설명*(3차 전달).
+  - 페이지화하지 않음: 고무 오리 디버깅 · *실용주의 프로그래머* · PNAS · PNAS Nexus · TEDxNewEngland · 프린스턴대 · Rozenblit & Keil · Melumad & Yun · Brockbank · Bastani.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+4편이라 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1119/<id>/`: `hdr.md` · `src.md` · `sec/` · `new/` · `summary.json`), 병합은 본 세션이 `merge_all.py`(raw · source · 신규 · 절 덧붙임) → `shared3.py`(index · overview · log · tech-bridge · iconize)로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 네 편 `check` 합계 352건 불일치 0. [[jagged-capability-frontier]]는 두 편(Karpathy · Astra)이 각각 절을 붙였다. 영어 더빙이 붙은 두 편(Karpathy · Astra) 모두 `en-orig`가 더빙의 ASR이었다 — 11-17 Orca 편에 이어 세 번째. Astra 편은 영어 원음 발췌 세 곳만 두 트랙에 같은 영어로 잡혔다.
+

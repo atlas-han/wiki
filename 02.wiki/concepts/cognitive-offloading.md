@@ -5,9 +5,9 @@ category: technique
 tags: [education, llm, learning]
 related: [regulatory-capture, retrieval-practice, ai-assisted-learning, ai-flipped-classroom, ai-engineering-skills-map, ai-learning-polarization]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-lex-fridman-mathematicians-advice-ai-era]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
 created: 2026-08-31
-updated: 2026-11-16
+updated: 2026-11-19
 ---
 
 # Cognitive Offloading
@@ -46,3 +46,11 @@ Wikipedia/검색은 사실 도구로 괜찮지만, 모델에게 일을 시켜 �
 
 - 수학자들의 처방도 같은 축이다: [[alex-kontorovich|Kontorovich]] *계산기 70년, 여전히 구구단* · [[steven-brunton|Brunton]] *컴퓨터가 더 잘해도 선형대수는 배워야 — 직접 해봐야 감이 생긴다*.
 - 집단 분포에서 보이는 모양은 [[ai-learning-polarization]](신규, 두 봉우리).
+
+## 2026-11-19 — 기제와 세 번째 반: 힌트만 주는 튜터는 연습 +127% · 시험 차이 없음 ([[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]])
+
+[[tania-lombrozo|Tania Lombrozo]] 강연 해설이 같은 PNAS 2025 실험을 영상의 축으로 다시 옮긴다(⚠️ 해설 전달, 원 논문 미열람). 11-16에 적은 +48% / −17%는 그대로이고, **힌트만 주는 튜터 반의 값이 새로 붙는다**: *"이 반은 연습 문제를 127% 더 잘 풀었고 시험에서는 AI를 안 쓴 반과 차이가 없었습니다. 손해가 사라진 겁니다."*(08:57~09:04) ⚠️ 11-16 소스는 *손해가 대부분 줄었다* 고 옮겼다 — 표현의 세기가 다르고 어느 쪽이 논문에 가까운지는 미확인.
+
+- **왜 손상되는가** — 배움의 한 부분은 바깥 입력 없이 이미 가진 것을 바꾸고 합치는 데서 일어난다([[learning-by-thinking]], 신규). 답을 받으면 그 단계가 통째로 빠진다. 연구진의 말로는 *"연구진은 그냥 답을 주는 AI가 목발처럼 쓰였다고 봤습니다."*(09:05~09:06)
+- ⭐ **본인은 모른다**: *"시험을 더 못 봤는데도 덜 배웠다고 느끼지 않았습니다."*(09:19~09:21) Ng의 *숙제 점수↑ 장기 성과↓* 에 **자각이 따라오지 않는다** 는 조각이 붙는다 — 오프로딩의 손해는 스스로 알아채 고칠 수 있는 종류가 아니다.
+- 두 번째 연구(PNAS Nexus 2025년 10월, 보도자료 경유): 수천 명이 챗봇 또는 구글 검색으로 같은 주제를 공부했고 *"챗봇으로 배운 사람들의 지식이 더 얕았습니다."*(09:34~09:35) 학생이 아닌 집단 · 수학이 아닌 과제에서의 같은 방향이다(⚠️ 표본 · 측정 방법은 말하지 않는다).

@@ -7,9 +7,9 @@ aliases: [Theo, t3.gg, Theo - t3.gg, 태오, 테오, Tae-o, Teo, T3 Code, T3 Cha
 links:
   - https://www.youtube.com/watch?v=GtJKFhztgdM
   - https://github.com/pingdotgg/t3code
-sources: [tech-bridge-theo-coding-is-gardening, tech-bridge-codex-app-server, tech-bridge-pstack-third-party-review, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-theo-coding-is-gardening, tech-bridge-codex-app-server, tech-bridge-pstack-third-party-review, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 created: 2026-11-11
-updated: 2026-11-16
+updated: 2026-11-19
 ---
 
 # Theo
@@ -65,3 +65,14 @@ Tech Bridge 해설(원 영상 `XtykeVoSmP8` 42분 · 공식 가이드 · X 게�
 - **T3 Code 사례**: 며칠씩 도는 스레드를 휴대폰에서 빨리 열리게 기록을 조각내는 작업 — Opus의 테스트 환경을 Fable이 검증해 *끝나지 않은 할 일 목록이 기록 전체를 끌고 간다* 는 문제를 짚었다. 챕터 제목의 *150분의 1* 은 캡션에 없다.
 - **자체 평가판**: 종합 순위 Fable 3위(Sonnet · Opus 아래), 코드 리뷰에서 문제 있는 코드를 더 자주 통과 — 그러나 놓친 지적 대부분이 *안 고쳐도 되는 것* 이었다(Theo 재해석). *지금까지는 그랬다*, 언제든 뒤집힐 수 있다.
 - 11-10 *정원사* 편의 T3 Code · Rust 재작성과 이어진다 — 이번엔 *TypeScript를 Rust로 다시 쓰는 일* 이 *검증 가능한 일 = Opus로 충분* 의 예로 나온다.
+
+## 2026-11-19 — OpenAI 조기 테스터로서: *내가 Astra를 싫어하는 이유* ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+GPT-6.2 [[openai-astra|Astra]] 출시 당일(2026-11-17) Theo는 *"오픈 AI가 지금까지 낸모델 중에 최악입니다."*(00:00~00:02) 한 줄을 올린 뒤, 테스트 기간에 OpenAI에 보냈던 편지를 통째로 공개했다 — *"하루 만에 186만 번 읽혔습니다."*(01:46~01:48) ⚠️ 아래는 한국어 해설이 옮겨 읽은 것이고 위키는 편지를 열지 않았다.
+
+- **칭찬으로 시작한다** — *"3D와 게임은 세계 최고 수준이다. 컴퓨터를 다루는 능력도 코드 품질도 좋아졌다."*(01:54~01:59) Astra와 만든 리버스 프록시로 월 25,000달러를 아낀다는 말도 있다. 그리고 *"그밖에 모든 것이 진심으로 싫다."*(02:08)
+- **불만 셋** — ① 엉뚱한 질문을 하고 멈춘다: *"아스트라가 또 멈췄는지 확인하는 에이전트를 따로 돌려야 했다고 적었습니다."*(02:25~02:28) ② 설명을 알아듣기 어렵다(같은 질문에 [[claude-opus-5-5|Opus 5.5]]는 한 줄) ③ 제자리를 돈다(TypeScript → Rust, 컴파일러 56% 느려짐).
+- **벨웨더** — 동료 Ben과 서로 다른 게임의 레벨을 시켰는데 주제도 이름도 같았다. *"태오는 이걸 평균으로의 회계라고 불렀습니다."*(03:24~03:27)[=회귀라고]
+- **2주 예측** — 첫날 열광, 둘째 날 돌아섬, 이어 *Sol이 낫지 않냐* 는 글, *"그리고 2주 뒤은 거의 잊친다."*(08:23)[=뒤에는 거의 잊힌다] 단서: *"내가 틀렸기를 정말로 바란다."*(08:26~08:28)
+
+11-16 편(*Stop Picking The Wrong Model*)이 Anthropic 두 모델을 재는 **리뷰어** 였다면 이 편은 **벤더에 피드백을 보낸 조기 접근자** 다. 두 편 모두에서 그의 기준 모델은 Opus 5.5다. ⚠️ 예측이 맞았는지는 12월 초에야 볼 수 있다 — 위키는 이후 소스가 오면 대조한다.

@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 created: 2026-11-11
-updated: 2026-11-18
+updated: 2026-11-19
 ---
 
 # Claude Fable 5.2
@@ -117,3 +117,15 @@ updated: 2026-11-18
 - 모델을 바꾸면 캐시뿐 아니라 생각도 따라오지 않는다: *"페이블에서 다른 모델로 옮기면 페이블이 해둔 추론은 버려집니다."*(08:05~08:06) → [[prompt-caching]]
 - 3차원 작업(Unity 테스터의 평가)이 Fable로 시작할 일의 예로 더해진다.
 - ⚠️ 도입부의 일화 — 같은 한 줄 프롬프트에 Opus 27분 · Fable 58분 · 토큰 일곱 배쯤([[ai-labs|AI LABS]]가 소개한 한 X 사용자, 3차 전달). 과제와 결과물의 질은 없다.
+
+## 2026-11-19 — 경쟁 모델의 비교 기준으로: GPT-6.2 Astra 출시 ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+GPT-6.2 [[openai-astra|Astra]] 반응 모음 해설(⚠️ 2차 전달)에서 Fable 5.2가 세 번 기준으로 불려 나온다.
+
+- OpenAI 발표 글의 비용 대비 점수 그래프: *"경쟁 모델인 클로드 페이블 5.2는 저 오른쪽 끝입니다."*(01:02~01:06) — Astra는 왼쪽 위. → [[cost-vs-score-frontier]]
+- [[dan-shipper|Dan Shipper]]: *"아쉽게도 좋지 않다. 페이블 5.2에 이에 비하면 실망스러운 추이라고요."*(01:24~01:27)
+- 사람이 결과물만 보고 고르는 3D 평가에서 Astra 1등, 그 뒤가 Fable 5.2, 이어 Sol(06:03~06:10, ASR *클로든 페이블 5.2 그리고 소리*).
+
+⚠️ **가격이 글자까지 같다.** 해설은 Astra를 *입력 $8 · 출력 $40, 이전보다 20% 인하* 라 적는데, 이는 11-18에 이 페이지에 적은 Fable 5.2의 값($8 / $40 · *보도에 따르면 20% 싼 값*)과 같다. 두 벤더가 같은 값을 매겼는지 해설이 섞였는지는 발표 글을 열지 않아 판정하지 않는다.
+
+⭐ **같은 주, 닮은 성질.** 이 페이지의 *길고 단계가 많은 일에서 끝내기 전에 턴을 마친다* 와 Astra의 *사용자가 알 길 없는 것을 묻고 멈춘다* 는 모양은 달라도 둘 다 **오래 맡긴 일이 서 있는** 실패이고, 두 벤더 모두 시스템 프롬프트 문단으로 줄였다고 적는다. → [[demo-collaboration-gap]]

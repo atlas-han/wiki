@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 links: []
 created: 2026-10-09
-updated: 2026-11-18
+updated: 2026-11-19
 ---
 
 # Claude Opus 5.5
@@ -111,3 +111,13 @@ Saraev 전달: Karpathy는 Opus 5.5를 *"exclusively on medium effort as his def
 ## 2026-11-18 — *먼저 쓸 모델* 의 자리 굳히기 ([[tech-bridge-fable-5-2-start-with-opus]])
 
 종합 해설이 Opus 5.5를 기본 출발점으로 다시 세운다: *"대부분의 일은 오퍼스 5.5, 기본 노력 수준인 미디엄에서 시작하라."*(01:30~01:34) 부족하면 검증 수단 → effort 한 단계 → 그다음에야 큰 모델. Fable로 넘어가는 때는 *"오퍼스를 하이까지 올려도 모자랄 때, 그리고 오래 혼자 돌려 둘 때입니다."*(02:14~02:18) 지휘자 자리에서도 쓰인다 — 소스 코드 2,200만 토큰 결함 탐색에서 Opus 지휘 + Sonnet 일꾼이 Opus 단독보다 1/3쯤 싸고 점수는 비슷했다(11-13 가이드 해설과 같은 사례). Claude Code의 Explore 서브에이전트가 세션 모델을 따를 때 *"API 기준 상한은 오퍼스입니다."*(04:10~04:12) ⚠️ 해설 전달, 원 문서 미열람.
+
+## 2026-11-19 — GPT-6.2 Astra를 써 본 사람들의 기준 모델 ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+GPT-6.2 [[openai-astra|Astra]] 반응 모음(⚠️ 해설 전달 + 원음 발췌 하나)에서 불만을 말하는 두 사람이 Opus를 맞은편에 세운다.
+
+- [[theo|Theo]] — 컴퓨터 한 대에서만 작업이 느린 이유를 묻자 Astra는 패키지 관리자의 내부 동작을 네 문단 늘어놓았다. *"같은 질문에 클로드 오퍼스 5.5에 답은 한 줄이었습니다."*(02:38~02:41) — *SSD가 느려져요.*
+- 개발 유튜버 vogel(원음) — 사내 장난감 프로젝트에서 Astra가 리뷰와 재확인에 계속 걸리자 Opus로 바꿨다: *"Opus understood that the goal was to get it out there"*(05:17~05:20)<!--k--> *"it feels better to use Opus because it feels like it's on your team"*(05:28~05:32)<!--k--> ⚠️ vogel은 버전을 말하지 않는다(*Opus*).
+- Every의 자체 코딩 벤치마크: Astra 39점쯤, *클로드 모델들* 40~41점(어느 모델인지는 말하지 않음).
+
+둘 다 점수가 아니라 **목표를 읽는 방식** 의 비교다 — 무엇을 답하면 되는지, 이 일의 끝이 어디인지. ⚠️ 두 사람의 일화이고 과제는 각각 하나다.

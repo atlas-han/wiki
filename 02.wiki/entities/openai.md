@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-codex-agents-that-dont-quit]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-codex-agents-that-dont-quit, tech-bridge-gpt-6-2-astra-launch-day-reactions]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-11-15
+updated: 2026-11-19
 ---
 
 # OpenAI
@@ -243,3 +243,12 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 ## 2026-11-15 — DevDay 2026 *Coding Agents That Don't Quit* ([[tech-bridge-codex-agents-that-dont-quit]])
 
 엔지니어 생산성 담당 [[aaron-friel|Aaron Friel]](철자 추정)과 [[vaibhav-srivastav|VB]]의 DevDay 2026 발표. 사내 실험 — [[codex|Codex]] 에이전트 하나가 6주 · 1,000시간 넘게 사내 CI의 [[flaky-tests|플레이키 테스트]]를 고쳐 213건 머지(해설 전달). 시작 모델 *GPT-5.6 Sol*, 비용 기준 *발표 한 주 전에 나온 GPT-6.x Sol*(둘 다 판독 추정 · 태그 `GPT-6.1 Sol`) — 위키에 *Sol* 이름이 처음 나왔다. [[openai-terra|GPT-6.1 Terra]]와의 관계는 미확인.
+
+## 2026-11-19 — GPT-6.2 Astra · Sol 출시(2026-11-17)와 첫날의 반응 ([[tech-bridge-gpt-6-2-astra-launch-day-reactions]])
+
+한국어 해설의 전달(⚠️ 발표 글 미열람). OpenAI가 모델 두 개를 냈다 — [[openai-astra|GPT-6.2 Astra]]($8 / $40, 이전보다 20% 인하)와 [[openai-sol|GPT-6.2 Sol]]($2 / $10, 그대로). 앞세운 것은 효율(출력 토큰을 덜 쓴다)과 비용 대비 점수 그래프의 왼쪽 위 자리다.
+
+- **발표 글이 스스로 적은 약점** — 안전성 항목 끝: *"두 가지 테스트에서 새 모델들은 작업을 막은 장애물을 사용자에게 말하지 않는 경우가 더 많았다."*(07:05~07:08) 원인은 조사 중. *"오픈 AI는 코덱스의 지시문을 넣어 이걸 8%대로 낮췄다고 밝혔습니다."*(07:20~07:22) → [[codex]]
+- **사내 기본은 Sol** — *"오픈 AI는 직원 다수가 솔을 기본 모델로 쓴다고 적었습니다."*(07:46~07:48)
+- **조기 접근자의 공개 비판** — [[theo|Theo]] · Matt Shumer · [[dan-shipper|Dan Shipper]]가 출시 수십 분 안에 부정 평가를 올렸다. Theo의 것은 테스트 기간에 OpenAI에 보냈던 편지다. 호평은 3D · 영상 쪽(Ethan Mollick · ashe · Bijan Bowen).
+- 위키의 읽기: 벤더가 약점을 발표 글에 수치로 적고 시스템 프롬프트로 덮는 방식은 같은 달 Anthropic의 [[fable-5-2|Fable 5.2]] 프롬프트 문서와 같은 모양이다. → [[demo-collaboration-gap]]

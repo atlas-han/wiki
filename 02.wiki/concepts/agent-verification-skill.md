@@ -6,9 +6,9 @@ tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
 related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-09-13
-updated: 2026-11-14
+updated: 2026-11-19
 ---
 
 # 검증 스킬
@@ -123,3 +123,7 @@ updated: 2026-11-14
 ## 2026-11-14 — *사람이 고리 안에 있는 한* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 한국어 요약이 검증의 이유를 한 문장으로 줄인다: *"이 고리 안에 사람이 끼어 있는 한 에이전트를 여러 개 돌릴 방법이 없습니다."*(02:47~02:52) 사람이 빌드를 열고 스크린샷 · 콘솔 오류를 복사해 붙이는 고리를 control-glass(CDP로 개발 빌드 조작 · 스크린샷 · 영상 · CPU 프로파일 · 힙 스냅샷)가 닫는다. 사연은 입사 둘째 날 에이전트 창 성능 작업 — 메모리 4GB 한도로 앱이 먼저 죽고, 에이전트는 자신 있게 틀린 원인을 짚었다.
+
+## 2026-11-19 — *가장 작은 고리부터*: 코드를 돌려 보는 건 누구인가 ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Lightcone 인터뷰 해설(⚠️ 해설 전달 — Tan이 화면에 그린 고리의 설명 07:11~07:47은 무캡션). 어디서 투자를 시작하느냐는 물음에 대한 답이 이 스킬의 자리다: *"에이전트는 이미 코드를 씁니다. 그런데 그 코드를 돌려 보는 건 누구일까요? 준비가 안 된 팀에서는 사람입니다."*(07:03~07:08) 그 고리가 믿을 만해진 뒤에야 *"바깥에 고리를 하나 더 얹습니다."*(07:51~07:53) — 지표 알림에 봇이 깨어나 자기 기계에서 재현하고 **같은 도구로** 고치고 돌려 보고 확인한다. 해설의 맺음도 같은 말이다: *"코드를 읽는 대신 에이전트가 제 일을 스스로 확인하게 만듭니다."*(10:47~10:49)

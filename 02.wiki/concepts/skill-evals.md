@@ -6,9 +6,9 @@ tags: [evals, testing, subagents, judge, blinding, hill-climbing]
 aliases: [에이전트 유닛 테스트, eval playbook, 눈가림 서브에이전트]
 related: [skill-self-improvement, generator-evaluator-pattern, agent-verification-skill, verification-cost-asymmetry, agent-skills, transcript-classifier, yaml-agent-eval-pipeline, production-trace-eval-flywheel, skill-linting]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-skill-engineering-dark-arts, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-karpathy-hackertube-two-hours-five-words]
 created: 2026-09-13
-updated: 2026-11-14
+updated: 2026-11-19
 ---
 
 # 스킬 eval
@@ -125,3 +125,15 @@ E2E는 통과/실패만 주고 **어디가 깨졌는지 주지 않는다.** [[al
 ## 2026-11-14 — 시험인 줄 모르게 짓는 폴더 이름 ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 Lauren의 eval(*"에이전트를 위한 유닛 테스트"*)을 한국어 요약이 전한다: 조정자 에이전트가 채점 기준을 만들고 서브에이전트 여럿에게 같은 일을 시키며, 채점은 다른 모델이 교차 확인하고 loop 명령으로 10점 만점까지 돌린다. ⭐ 새로 강조된 대목 — 폴더 이름을 **평가받는 중이란 걸 눈치채지 못하게** 지었다. *"에이전트도 시험인 걸 알면 행동이 달라지거든요."*(05:10~05:12) eval 설계에서 *평가 인식* 을 피하는 실무 장치다(위키에 별도 개념 페이지 없음).
+
+## 2026-11-19 — 위약 대조군: 길이만 같고 쓸모없는 글과 비교한다 ([[tech-bridge-karpathy-hackertube-two-hours-five-words]])
+
+Karpathy 해설이 *남의 스킬 팩이 정말 효과가 있는가* 를 물으며 든 측정(9월 말, 설명란의 `skill-placebo` 저장소 — ⚠️ 해설 전달, 위키 미열람). 코딩 에이전트 스킬 아홉 개를 **길이만 같고 쓸모는 없는 글** 과 비교했다(07:03~07:10, ASR 판독 포함).
+
+- *"결과는 아홉 개 중 두 개만 위약보다 나았습니다. 그것도 품질이 아니라 같은 일을 더 싸게 했다는 뜻이었습니다."*(07:11~07:16)
+- *"여섯 개는 차이가 없었고 하나는 오히려 통과율이 떨어졌습니다."*(07:17~07:19)
+- Karpathy의 이름이 붙은 스킬도 들어 있었다: *"카파씨 본인이 아니라 다른 사람이 만든 것인데 판정은 위약과 차이 없음이었습니다."*(07:26~07:30) ⚠️ 어느 저장소의 스킬인지는 말하지 않는다 — 위키의 [[multica-karpathy-skills-claude-md]]와 같은 것인지 미확인.
+
+⭐ **이 페이지에 처음 들어오는 대조군 설계다.** 위의 기본 설계와 Salesforce 사례는 *스킬 있음 vs 없음* 이다. 그 비교에서는 *컨텍스트에 글이 더 들어갔다는 것 자체* 의 효과와 *그 글의 내용* 의 효과가 섞인다. 위약 대조는 앞의 것을 빼고 잰다 — 그리고 그렇게 재자 아홉 중 일곱이 사라졌다.
+
+⚠️ 측정한 사람 · 과제 · 모델 · 표본 크기 · *나았다* 의 기준은 말하지 않는다. 남은 두 개의 이득이 품질이 아니라 **비용** 이었다는 것도 해설의 요약이다.

@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-09-13
-updated: 2026-11-14
+updated: 2026-11-19
 ---
 
 # 신뢰 곡선
@@ -113,3 +113,18 @@ Tech Bridge 해설은 원본 대담에서 *"신뢰의 사다리"*(ko 00:57~00:59
 ## 2026-11-14 — 한국어 요약의 곡선: *지름길은 없다* ([[tech-bridge-lauren-tan-agents-merge-own-prs]])
 
 Tech Bridge 10분 요약이 Lauren의 그래프(가로축 동시에 돌리는 에이전트 수, 세로축 신뢰)를 영상의 뼈대로 쓴다. 1년 전엔 몇 개를 붙잡고 모든 출력을 지켜봤고, 다섯 달 동안 곡선을 올라 지금은 에이전트가 PR을 스스로 머지한다. *"지름길은 없다고 합니다. 아직 여기 있으면서 갑자기 수천 개를 띄우면 토큰만 날린다고요."*(01:43~01:47) 계단 순서는 검증 → 피처 맵 → 스킬 · eval → 클라우드 → 에이전트용 아키텍처 → CI 강제. 맺음 질문은 *"여러분은 지금 신뢰 곡선의 어디쯤에 계실까요?"*(10:07~10:09) — 워크숍 진행자도 *아직 로컬에서 두세 개* 단계라고 했다.
+
+## 2026-11-19 — 권한 축의 계단: 읽기 전용 → 일 하나 → 직무 하나 ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Grok Bot 팀의 제품 매니저 [[roman-ugarte|Roman Ugarte]]가 Lightcone에서 말한 것(⚠️ 한국어 해설 전달, 원음 무캡션). 위 곡선이 *몇 개를 병렬로 굴릴 수 있는가* 였다면 이쪽은 **무엇을 하게 둘 것인가** 다. 전제는 *"업계 누구도 정답을 못 찾았다고 먼저 인정합니다."*(03:25~03:27)
+
+| 칸 | 내용 | 예 |
+|---|---|---|
+| 첫째 | *"첫 칸은 읽기 전용입니다. 보기만 하고 아무것도 바꾸지 못합니다."*(04:06~04:10) | Data Bot — 승인된 표만 읽기 전용 조회 |
+| 둘째 | *"둘째 칸에서는 봇이 직접 행동하고 일 하나를 처음부터 끝까지 맡습니다."*(04:11~04:14) | (예는 말하지 않는다) |
+| 셋째 | 직무 하나를 통째로 책임진다 | *아직 한참 멀었다* (Ugarte) |
+
+- 같은 사다리가 일감 쪽으로도 나온다: *"처음에는 작은 작업 하나를 줍니다. 잘해내면 목표를 주고 그것도 해내면 일자리를 통째로 맡깁니다."*(02:29~02:33) → [[goal-level-delegation]]
+- 해설의 요약: *"봇에게 주는 권한은 사람을 뽑을 때처럼 작게 주고 넓혀 갑니다."*(10:44~10:45) — [[agent-manager-analogy]]의 채용 판이다.
+- 올라가지 않는 자리도 있다 — 기준을 분명히 정할 수 없는 결정은 *"지금은 사람이 반드시 검토합니다."*(04:45) (견적 봇으로 자기 할인을 스스로 승인할 수 없다.)
+- ⚠️ 팀이 쓴다는 *지름길* 의 본문(03:33~04:06)은 캡션에 없다. 칸을 올리는 기준(무엇을 보고 다음 칸으로 가는가)도 말하지 않는다.

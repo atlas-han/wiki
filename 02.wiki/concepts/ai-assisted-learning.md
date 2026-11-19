@@ -6,9 +6,9 @@ tags: [learning, ai-tutor, cognitive-offloading, prompting, verification, educat
 aliases: [AI로 공부하기, AI 학습 역할, AI tutor roles, 도움받기 vs 생각 맡기기]
 related: [sycophancy, retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom, ai-learning-polarization]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
 created: 2026-10-09
-updated: 2026-11-16
+updated: 2026-11-19
 ---
 
 # AI 보조 학습 — 역할 분담
@@ -73,3 +73,11 @@ updated: 2026-11-16
 ## 위쪽 봉우리의 질문 · 힌트만 주는 튜터 (2026-11-16 · [[tech-bridge-lex-fridman-mathematicians-advice-ai-era]])
 
 [[alex-kontorovich|Kontorovich]]가 본 강의실의 *위쪽 봉우리* 학생은 AI에게 *교수가 한 이 말이 무슨 뜻이야 · 지난 3주치 노트로 문제를 내줘* 라고 묻고, 아래쪽은 *답만 알려줘* 라고 묻는다 — 이 페이지의 *도움받기 vs 생각 맡기기* 를 학생의 실제 질문으로 보여 준다. PNAS 2025(해설 전달)는 **도구 쪽 개입** 도 보탠다: 답을 주지 않고 교사가 만든 힌트만 주도록 설계한 AI 튜터에서는 GPT-4를 그냥 쓴 쪽의 손해(시험 −17%)가 대부분 줄었다. 역할 분담을 학생의 습관에만 맡기지 않고 **튜터 설계에 넣을 수 있다** 는 근거다. → [[ai-learning-polarization]]
+
+## 2026-11-19 — 순서 규칙: 먼저 스스로 설명하고, 막힌 자리만 묻는다 ([[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]])
+
+[[tania-lombrozo|Tania Lombrozo]] 강연 해설(⚠️ 해설 전달)의 권고는 이 페이지의 역할 분담에 **순서** 를 보탠다: *"AI에게 묻기 전에 먼저 스스로에게 물어보세요."*(10:19~10:21) *"어떻게 되는지 설명해 보고 막히는 자리가 생기면 그때 그 부분을 찾아보는 겁니다."*(10:22~10:26)
+
+- 근거는 설명 깊이의 착각을 뒤집어 쓰는 것이다 — *"설명하다 막힌 자리가 그대로 찾아볼 목록이 되니까요."*(07:39~07:41) 위 표의 *빈틈 · 진단* 역할을 AI에게 맡기기 전에 혼자서 먼저 해 볼 수 있다는 말이다.
+- 얻는 것: *"그러면 AI의 답도 그냥 받아 적는 게 아니라 내가 아는 것에 이어 붙일 수 있습니다."*(10:26~10:30)
+- 도구 쪽 개입의 숫자도 갱신된다 — 힌트만 주는 튜터 반은 연습 +127% · 시험은 AI를 안 쓴 반과 차이 없음(11-16에는 *대부분 줄었다* 로 적었다). → [[cognitive-offloading]] · [[learning-by-thinking]]

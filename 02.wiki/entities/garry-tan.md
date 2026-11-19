@@ -5,9 +5,9 @@ category: person
 tags: [y-combinator, investor, personal-agent, gstack, open-source]
 aliases: [게리 탄, Gary Tan, Garry Tan]
 links: []
-sources: [tech-bridge-garry-tan-agents-two-years]
+sources: [tech-bridge-garry-tan-agents-two-years, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-11-07
-updated: 2026-11-07
+updated: 2026-11-19
 ---
 
 # Garry Tan
@@ -33,3 +33,11 @@ Y Combinator 대표(설명란 · 내레이션 근거). 개인 AI 에이전트의
 ## References
 
 - [[tech-bridge-garry-tan-agents-two-years]]
+
+## 2026-11-19 — Lightcone 진행자로 두 번 ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Grok Bot 팀(Lauren Tan · Roman Ugarte)이 나온 Lightcone *The Rise Of AI Coworkers* 의 진행자로 한국어 해설에 두 번 불려 나온다(ASR *게리 텐*). ⚠️ 원음은 무캡션, 둘 다 해설 전달이다.
+
+- 봇에 가장 열광하는 초기 사용자 가운데 작은 회사가 많다 — *"사람을 뽑기가 가장 어려운 곳이기 때문입니다."*(03:18~03:19)
+- Slack 스레드만으로 기능을 내는 식으로 일하는 엔지니어가 전 세계의 1%쯤일 거라고 말한다 — 내레이션의 단서: *"물론 어림짐작입니다."*(05:42)
+- 진행자들은 팀의 방식을 *소프트웨어 공장* 이라 부르는데 Lauren Tan은 그 말을 좋아하지 않는다. → [[software-factory]]

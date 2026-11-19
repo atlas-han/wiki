@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
 created: 2026-09-01
-updated: 2026-11-17
+updated: 2026-11-19
 ---
 
 # GrokBot
@@ -150,3 +150,17 @@ updated: 2026-11-17
 ## 2026-11-17 — 10월 성적표: PR 10,926 · 227명 · 되돌림 0.47% · 빨간 숫자 둘 ([[tech-bridge-lauren-tan-all-code-is-slop]])
 
 Lauren Tan의 AI Engineer Code Summit 발표 해설이 GrokBot 팀의 추이를 전한다(전부 팀 자체 집계 · 해설 전달). 월간 머지 PR 6월 809 → 10월 10,926(설명란), 안정 버전 하루 한 번꼴, 10월에 PR을 올린 사람 227명(맥락을 모르고 지나가다 고친 사람 포함), 되돌린 커밋 비율 6월 0.98% → 8월 이후 0.47% 안팎. 5월 대비 콜드 실행 39% 빨라짐 — 그러나 **대기 중 메모리 12% · 대기 중 CPU 100% 증가**. 주석은 7월 31일 65,824 → 1,227(*"그래서 그록봇 팀은 주석의 99%를 금지하기로 합니다."*(04:50~04:52)), 에이전트를 바로잡을 때마다 쌓인 검사는 7월 7 → 11월 167(단위 미발화). 릴리스 날 한 번의 결과로 버그 50개(신규 3 · 기존 47)가 슬라이드에 나오지만 무엇이 찾았는지는 캡션에 없다.
+
+## 2026-11-19 — 1.0판 · Team Bots · Data Bot, 그리고 권한의 계단 ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
+
+Y Combinator Lightcone에 나온 팀(Lauren Tan · [[roman-ugarte|Roman Ugarte]])의 이야기를 x.ai 공식 글과 맞춘 한국어 해설. ⚠️ 출연자 원음은 전부 무캡션, 인터뷰 · 공식 글 미열람 — 아래는 모두 해설 전달이다.
+
+- **시점**: *"그록 봇은 11월 11일에 1.0판이 나왔습니다. 발표글 조회수가 5,500만을 넘었습니다."*(01:06~01:11) YC의 소개로는 *"첫 코드부터 출시까지 7주."*(00:48) Team Bots는 9월 말. ⚠️ 이 페이지 첫머리의 *08-30 전후 베타* 추정 · 그 반증과 함께 둔다 — *출시* 가 베타인지 1.0인지 말하지 않아 7주의 기점은 계산하지 않는다.
+- **소속 표기**: 이 편은 Cursor를 말하지 않는다. 공식 글 세 편이 모두 x.ai 도메인이고 영상 tags는 `SpaceXSI` · `xAI`. 조직 구조는 [[spacex]]의 원칙대로 추정하지 않는다.
+- **Team Bots**(팀이 같이 쓰는 봇): *"공식 글에 따르면 팀봇은 저마다 자기 핸들이 있어서 슬랙 채널에 초대하면 누구나 말을 걸 수 있습니다."*(02:18~02:22) 회사 밖 사례 — 소상공인 보험사 Harper(철자 추정)가 24시간 만에 만들어 보험이 끊긴 고객을 되살리는 일을 맡겼고, 고객들이 아낀 돈이 12만 달러를 넘는다(대표의 말).
+- **Data Bot**: *"그래서 승인된 표를 읽기 전용으로만 조회하는 봇을 만들어 슬랙에 뒀습니다."*(04:27~04:30) 데이터 팀 추정으로 지난 한 주에 약 70시간어치(ASR *이른 시간*, 추정).
+- **권한의 계단**(Ugarte): 읽기 전용 → 봇이 직접 행동하며 일 하나를 끝까지 → 직무 하나를 통째로. 셋째 칸은 *"우가르테는 여기까지는 아직 한참 멀었다고 말합니다."*(04:18~04:20) 막아 둔 일의 예: *"영업 담당자는 견적 봇으로 자기 할인을 스스로 승인할 수 없다."*(04:39~04:42) → [[agent-trust-curve]] · [[least-privilege-connectors]]
+- **봇끼리의 통로**: *"텐의 팀에서는 봇들도 슬랙 계정으로 대화합니다."*(08:46~08:47) 봇이 Data Bot에게 묻는 대화가 스레드에 남는다. 위 11-03 절의 Contradiction(*모든 봇이 클라우드 컴퓨터 하나를 공유*)과는 다른 층 — 대화의 통로이지 자격증명의 경계가 아니다.
+- **바깥 고리의 이름**: 팀에 *샌디*(철자 미상)라는 장치가 돈다 — *"하루에 수천 건씩 들어오는 고객 의견을 봅니다."*(08:08~08:10) 작은 버그면 재현 · 수정 · 병합까지. ⚠️ 원조 봇 Benny와의 관계는 말하지 않는다.
+- **내년의 바람**(Tan): *"본마다 전화번호와 신용카드까지 갖는 겁니다. 사람이 하는 일은 거의 다 할 수 있게요."*(02:09~02:13)[=봇마다]
+- **출시 기준**: *"그래서 이 팀의 기본값은 내보내지 않는 쪽입니다."*(09:47~09:48) *"안에서 반응이 엇갈리기만 해도 출시하지 않습니다."*(09:54~09:55)

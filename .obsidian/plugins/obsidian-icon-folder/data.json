@@ -1311,5 +1311,18 @@
   "02.wiki/sources/tech-bridge-rob-shocks-orca-review-vs-records.md": "LiVideo",
   "02.wiki/entities/orca.md": "LiBoxes",
   "02.wiki/entities/stably-ai.md": "LiBuilding",
-  "02.wiki/concepts/agent-development-environment.md": "LiPuzzle"
+  "02.wiki/concepts/agent-development-environment.md": "LiPuzzle",
+  "01.raw/articles/2026-11-18_그록봇에게 모든 권한을 주면 생기는 일 Lauren Tan.md": "LiNewspaper",
+  "01.raw/articles/2026-11-18_2시간 만에 유튜브를 만든 프롬프트, 단어 5개 Andrej Karpathy.md": "LiNewspaper",
+  "01.raw/articles/2026-11-18_GPT-6.2 Astra 점수는 1등인데 OpenAI 역대 최악 출시 첫날 반응 모음.md": "LiNewspaper",
+  "01.raw/articles/2026-11-18_AI가 답을 다 알려 줬더니 시험 점수가 떨어졌다 Tania Lombrozo.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-grok-bot-team-lightcone-ai-coworkers.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-karpathy-hackertube-two-hours-five-words.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-gpt-6-2-astra-launch-day-reactions.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-lombrozo-learning-by-thinking-ai-tutor.md": "LiVideo",
+  "02.wiki/entities/roman-ugarte.md": "LiUser",
+  "02.wiki/entities/openai-sol.md": "LiBot",
+  "02.wiki/concepts/demo-collaboration-gap.md": "LiBookText",
+  "02.wiki/entities/tania-lombrozo.md": "LiUser",
+  "02.wiki/concepts/learning-by-thinking.md": "LiPuzzle"
 }
