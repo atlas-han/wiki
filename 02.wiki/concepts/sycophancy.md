@@ -6,9 +6,9 @@ tags: [sycophancy, alignment, feedback, critique, prompting, verification]
 aliases: [AI 동조, 맞장구, 아첨 편향, sycophantic model]
 related: [verification-bottleneck, ai-assisted-learning, generator-evaluator-pattern, automated-code-review, fuzzy-intent-discovery]
 first-seen: tech-bridge-top-1-percent-ai-habits
-sources: [tech-bridge-top-1-percent-ai-habits, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-dario-amodei-principles-oversight]
+sources: [tech-bridge-top-1-percent-ai-habits, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-dario-amodei-principles-oversight, tech-bridge-jonathan-blow-30-years-zero-progress]
 created: 2026-10-21
-updated: 2026-10-29
+updated: 2026-11-20
 ---
 
 # 아첨·동조 (Sycophancy)
@@ -54,3 +54,7 @@ updated: 2026-10-29
 ## 원인 쪽 — 승인 유인과 진실 유인은 같지 않다 (2026-10-29 · [[tech-bridge-dario-amodei-principles-oversight]])
 
 [[dario-amodei|Dario Amodei]]: *"if the model has the incentive to get the approval of humans, that's related to the incentive of being helpful or saying true things. But it isn't exactly the same because if you manage to get the approval of the human by fooling them, then, uh, then that can work as well."*(03:54~04:12) 그리고 *"things that can emerge in training. That we're always trying to stamp out."* 위 절들이 **사용자 쪽 처방**(약점을 물어라, 질문에 답을 넣지 마라)이었다면, 이것은 **랩 CEO가 말하는 훈련 유인 쪽 원인**이다 → [[reward-hacking]].
+
+## 2026-11-20 — 높여도 맞고 낮춰도 맞다: 판매량 예측 ([[tech-bridge-jonathan-blow-30-years-zero-progress]])
+
+[[jonathan-blow|Jonathan Blow]]가 든 사례(⚠️ 한국어 해설 전달): 새 게임을 내기 전 AI에게 첫 달 판매량을 여러 번 예측시켰다. AI는 이유를 줄줄이 달아 숫자를 냈고, 그가 빠진 이유 하나를 들어 더 높아야 하지 않느냐고 하자 — *"Oh, you know what? You're right."*(06:19~06:20)(en-orig에만 잡힌 원음 ASR, 조각) 해설: *"더 높아야 한다고 해도 맞습니다. 더 낮아야 한다고 해도 맞습니다."*(06:37~06:39) Blow는 이것을 성격 문제가 아니라 **추론이 없다는 증거** 로 쓴다 — *"들여다보면 구멍과 건너뛴 자리가 쉽게 보인다는 겁니다."*(06:41~06:45) 위 *비판에 동조하기* 절의 위험이 같은 대화에서 양쪽으로 나온 사례다. ⚠️ 모델 이름 · 횟수 · 숫자는 없다.

@@ -5,9 +5,9 @@ category: theory
 tags: [jobs, labor, automation, tasks-vs-jobs, policy, bill-gates, andrew-ng, openai, nvidia, tesla, robotics]
 related: [agi-definition, cognitive-offloading, regulatory-capture, frontier-engineering, agent-org-adoption, goal-level-delegation, humanoid-robot-scaling, data-center-local-backlash, high-agency]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years, tech-bridge-peter-steinberger-2027-developer, tech-bridge-alex-karp-wealth-tax-surveillance]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-bill-gates-ai-warning, tech-bridge-andrew-ng-ai-opportunity, tech-bridge-elon-musk-g20-ai-future, tech-bridge-altman-g20-economic-boom, tech-bridge-brockman-agi-era-defender-window, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-laurie-voss-product-engineer, tech-bridge-musk-abundance-work-control, tech-bridge-tlc-ai-job-anxiety, tech-bridge-garry-tan-agents-two-years, tech-bridge-peter-steinberger-2027-developer, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]
 created: 2026-09-06
-updated: 2026-11-12
+updated: 2026-11-20
 ---
 
 # AI와 일자리 — 다섯 입장 (AI Jobs Impact)
@@ -202,3 +202,13 @@ G20의 *"직업은 남고 작업이 자동화"*, CBS·백악관 패널의 *블�
 - ⭐ 문제는 **분배의 속도 차이**: *"보통 사람의 임금이 물가의 두 배로 올라도 테크와 AI 쪽 사람들은 열 배, 스무 배, 쉰 배 부자가 될 수 있다."*(02:42~02:47) → *"이 사회에는 반드시 풀어야 할 계급 격차가 있고 AI가 그걸 더 키울 거라고."*(02:50~02:55)
 - 처방은 부유세가 아니다(집행에 감시가 필요 — *AI는 당신이 가진 모든 물건의 값을 추정할 수 있다*). 상속세 50% + 정부 낭비 감축 맞교환, 조건은 *노동자와 중산층에게 닿을 것*.
 - 이 페이지의 다른 입장과: Altman · Huang · Musk가 주로 일자리의 **수 · 종류** 를 다퉜다면 Karp는 **수익의 분배** 를 쟁점으로 놓는다. 표의 *인센티브* 열에 넣으면 *데이터 통합 · 국방 소프트웨어 판매자* 다.
+
+## 2026-11-20 — Gates, 석 달 뒤: 젊은 직원부터 · 토큰과 로봇에 세금 · 휴먼 리저브드 ([[tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]])
+
+위 *다섯 입장* 표의 [[bill-gates|Gates]] 행(8월 Radio Atlantic)에 CBS 인터뷰 해설이 붙는다. ⚠️ 인터뷰의 일자리 대목(10:45~11:26)은 무캡션이고 아래는 내레이션이 GatesNotes 8월 에세이를 옮긴 것이다(에세이 미열람).
+
+- **관찰이 하나 붙었다.** *"생성형 AI가 퍼진 뒤 대체되기 쉬운 일자리에서 젊은 직원의 고용이 크게 줄었다고 썼습니다. 나이 든 동료들은 그렇지 않았고요."*(10:36~10:42) ⚠️ 어느 연구인지는 캡션에 없다. [[laurie-voss|Voss]]의 *주니어의 훈련 경로가 사라진다* 와 같은 쪽을 가리키는 고용 쪽 진술이다.
+- **누가 먼저.** *"가장 먼저 다치는 건 준비할 시간이 가장 적은 사람들이라고 합니다."*(11:26~11:28) 예로 든 것은 소프트웨어에 밀려난 회계 직원(ASR *보석에*, 추정)과 시급 10달러짜리 로봇에게 자리를 잃는 시급 20달러 노동자.
+- **과세의 근거.** 8월의 *노동세 → 자본세* 가 *AI 토큰과 로봇에 세금* 으로 구체화됐다 — *"사람을 뽑으면 급여세를 내는데 로봇을 사면 비용 처리로 끝나니까요."*(11:39~11:42)
+- **휴먼 리저브드.** *"자연 보호 구역처럼 어떤 일은 일부러 사람에게만 남겨두자는 겁니다."*(11:44~11:48) — 8월의 human-reserved 직군과 같은 제안이고 비유가 새로 붙었다.
+- ⚠️ 표의 *2~4년* 대체 시점은 이 편에 다시 나오지 않는다. 이 편의 *4년* 은 위험과 혜택 중 어느 쪽이 크게 남을지 가를 시간이다.

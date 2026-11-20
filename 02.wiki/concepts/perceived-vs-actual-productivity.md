@@ -6,9 +6,9 @@ tags: [developer-productivity, perception-gap, self-report, measurement, change-
 aliases: [체감 vs 실제 생산성, perception gap, 체감 생산성, perceived productivity, change confidence, 변경 확신]
 related: [ai-measurement-framework, dora-metrics, agent-roi-measurement, frontier-engineering, verification-bottleneck, trusted-throughput, agent-trust-curve]
 first-seen: tech-bridge-dx-ai-impact-trends
-sources: [tech-bridge-dx-ai-impact-trends, tech-bridge-salesforce-claude-code-agentic-shift]
+sources: [tech-bridge-dx-ai-impact-trends, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-jonathan-blow-30-years-zero-progress]
 created: 2026-10-03
-updated: 2026-11-08
+updated: 2026-11-20
 ---
 
 # 체감 생산성과 실제 생산성의 괴리
@@ -73,3 +73,9 @@ Salesforce 해설은 측정 쪽 처방 하나를 전한다: 줄 수는 주석만
 - [[tech-bridge-dx-ai-impact-trends]] — first-seen
 - [[getdx]] · [[justin-reock]]
 - [[ai-measurement-framework]] · [[dora-metrics]] · [[verification-bottleneck]] · [[frontier-engineering]] · [[tech-bridge-frontier-engineering]] · [[agent-trust-curve]] · [[trusted-throughput]] · [[agent-roi-measurement]]
+
+## 2026-11-20 — 바깥에서 하는 검산: 30년치와 0년 ([[tech-bridge-jonathan-blow-30-years-zero-progress]])
+
+위 세 어긋남은 모두 개발 조직 **안쪽** 의 측정이다. [[jonathan-blow|Jonathan Blow]]의 물음은 바깥에서 온다 — 10배가 3년 이어졌다면 쓰는 사람 눈에 30년치 소프트웨어 발전이 보여야 한다: *"10배에 3년이면 30년치. 그런데 블로거가 본 건 대략 0년입니다."*(02:05~02:07)[블로거=블로] 낮춰 잡아도 — *"1년 반 전부터 다섯 배만 올랐다고 쳐도 7, 8년치. 그것도 안 보인다고 합니다."*(02:12~02:16) 진행자의 가설은 *생산성은 정말 올랐는데 소프트웨어 산업이 블랙홀처럼 삼킨다* 였고, Blow의 답은 *소프트웨어는 원래부터 쌓이기만 했다* 다([[technical-debt]]).
+
+체감이 생기는 자리도 짚는다. 본인의 5시간 → 1시간(엑셀 Visual Basic 30줄)을 두고 — *"블로는 사람들이 AI가 코딩을 잘한다고 믿게 되는 이유가 이런 경험이라고 봅니다."*(04:11~04:15) 조건은 처음 보는 언어 · 서른 줄 · 쓰고 버릴 코드였다. ⚠️ *"이건 통계가 아니라 블로거 한 사람의 관찰입니다."*(03:03~03:05)[블로거=블로] — 설명란도 30년/0년 · 5시간/1시간을 *암산과 추정* 이라고 적는다. *발전 몇 년치* 는 단위가 정의되지 않았다. 한국어 해설 전달.

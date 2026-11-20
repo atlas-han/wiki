@@ -3,11 +3,11 @@ title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-10-02
-updated: 2026-11-19
+updated: 2026-11-20
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -261,3 +261,15 @@ Lauren Tan 발표 해설이 본인 X 게시물(*not a dark factory*)을 인용�
 ## 2026-11-19 — 진행자는 공장이라 부르고 당사자는 싫어한다 ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
 
 Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이라고 부릅니다."*(06:46~06:48) 정작 [[lauren-tan|Lauren Tan]]은 그 말을 좋아하지 않고, 얼마 뒤 X에 썼다고 한다 — *"필요한 건 좋은 소프트웨어 엔지니어링 그리고 토큰을 옳은 곳에 쓰는 일이라고요."*(06:53~06:57) ⚠️ X 글은 미열람, 해설 전달. 11-17 편의 *이건 사람이 빠진 무인 공장이 아니다* 와 같은 게시물인지 확인하지 않았다. 이 페이지가 기록해 온 **이름에 대한 당사자의 거리 두기** 가 두 소스째다.
+
+## 2026-11-20 — Microsoft CEO의 공장: 블로그 두 편 · 변화 셋 · 브라운필드의 바닥 ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+[[satya-nadella|Satya Nadella]]도 이 말을 쓴다 — 다만 *"사티아도 아직 감을 잡는 중이라며 블로그 두 편을 가리킵니다."*(03:50~03:53) ⚠️ 한국어 해설의 전달, 공식 글 미열람.
+
+- **사례 둘** — Copilot Cowork 팀: *"엔지니어 아홉 명이 하루에 풀 리퀘스트 1,211개를 머지했다고 요."*(04:12~04:16) / [[github-copilot|GitHub Copilot]] 런타임: 80만 줄 넘는 Rust를 주로 개발자 한 명이 몇 달 만에. ⚠️ *하루* 가 최고 기록인지 평균인지, revert · 품질 수치는 캡션에 없다. 같은 Cowork 팀의 **첫 Rust 이전은 되돌렸다** — 공장 서사에 드문 실패 기록.
+- **변화 셋** — *"코드는 입력에서 출력이 됐고 그래서 스펙과 의도가 중요해졌습니다."*(04:32~04:34) *"공장에서는 모든 게 문서로 남아서 신입의 온보딩이 오히려 쉬워졌다고요."*(04:36~04:38) 그리고 운영 로그가 돌아와 수정 → 검증 → 배포로 닫히는 고리(원음: *"it's sort of the ability to take my production logs and then to be able to verify the fix"*(04:47~04:52)).
+- **공장을 짓는 것도 일** — Azure 네트워크 팀: *"일을 직접 하던 팀이 이제 일을 하는 공장을 지었습니다. 그래도 그 역시 일이라고 사티아는 덧붙입니다."*(05:45~05:49) 위 Warp의 *factory engineering* 과 같은 쪽이다.
+- ⭐ **바닥은 그대로** — *"새 공장을 지어도 바닥의 빌드와 CICD는 그대로입니다. 브라운필드에서는 거기가 가장 풀기 어려운 병목이라고 사티아는 말합니다."*(06:34~06:39) → [[greenfield-vs-brownfield-agent-risk]]
+- **채용** — 신입 채용 둔화는 *공장을 짓느라* 그런 것이라는 전망(수치 없음).
+
+이 페이지의 화자들은 지금까지 공장을 파는 쪽(Factory · Warp)이거나 안에서 돌리는 쪽(Anthropic · xAI)이었다. 하이퍼스케일러 CEO가 자사 팀을 예로 든 것은 처음이다.

@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [vertical-agents, internal-agents, context, build-vs-buy, differentiation]
 aliases: [기성 수직 에이전트 vs 자체 에이전트, 회사 지식 해자]
-related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering, agent-umwelt, run-trace-skill-distillation]
+related: [company-brain, agent-knowledge-sourcing, file-system-agent, knowledge-work-agent-gap, context-engineering, agent-umwelt, run-trace-skill-distillation, model-swap-acid-test]
 first-seen: tech-bridge-vercel-eve-filesystem-agent
-sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-runlayer-self-improving-skills-mcp]
+sources: [tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-09-19
-updated: 2026-10-16
+updated: 2026-11-20
 ---
 
 # 회사 고유 지식이라는 해자
@@ -70,3 +70,9 @@ updated: 2026-10-16
 ## 해자를 쌓는 장치 — 증류 플라이휠 (2026-10-13 · [[tech-bridge-runlayer-self-improving-skills-mcp]])
 
 [[rafal-wilinski|Rafal Wilinski]]([[runlayer|Runlayer]])는 해자를 *지식* 이 아니라 *지식을 쌓는 루프* 에 둔다: *"models are becoming commodity. (…) cost of software is going to zero"*(16:30~16:39) → *"I believe the mode[=moat] can be in building this flywheel and distilling the knowledge through this flywheel because it's like your own hard one[=hard-won] lessons distilled governed of how your company uh does things"*(16:55~17:09). 결론은 *"one thing that competitor can't copy your internal culture and your identity"*(17:30~17:35)이다. 근거로는 *"frontier intelligence is rented or borrowed"*(13:54~13:57)를 든다 — 모델은 빌린 것이고 증류된 절차는 회사의 것이라는 주장이다. ⚠️ Vercel(Qu)과 마찬가지로 그 루프를 파는 쪽이다. ko는 결론을 **"유일한 단점"**(17:31)으로 뒤집는다.
+
+## 2026-11-20 — Hayek과 토큰 자본: 학습 고리는 회사의 것 ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+[[satya-nadella|Satya Nadella]]는 같은 결론을 경제학에서 끌어온다(The Pragmatic Engineer 인터뷰, 원음은 en-orig 단일 트랙): *"It's all about knowledge being distributed."*(11:00~11:02) — 지식이 흩어져 있으므로 세상의 지식을 다 가진 모델 하나는 오지 않고, *"every firm needs to be in control of it"*(11:14). 해설의 요약: *"사람과 함께 토큰이 회사의 자본이 된다는 거죠."*(11:25~11:26) *"그 토큰 자본은 회사 지식을 담은 오픈 모델일 수도 컨텍스트 층일 수도 있다고고요."*(11:26~11:30)
+
+위 Wilinski의 *해자는 지식을 쌓는 루프에 있다* 와 같은 자리를 가리킨다: *"You as a firm need to be in charge and control of your own learning loop."*(12:01~12:06) 해자가 정말 회사 쪽에 있는지 재는 절차가 [[model-swap-acid-test]](신규)다. ⚠️ 위 유보 절의 *인센티브를 보라* 가 여기에도 적용된다 — 여러 모델을 얹는 플랫폼을 파는 회사의 CEO다.

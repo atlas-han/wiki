@@ -5,9 +5,9 @@ category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
 related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta, agent-sandboxing]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-openai-gpt-6-cyber-keynote]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-05-25
-updated: 2026-11-14
+updated: 2026-11-20
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -157,3 +157,9 @@ Blast radius를 오해. 예: 공유 자원을 test-scoped로 착각, 다른 사�
 ## 2026-11-14 — 범위 이탈을 허니팟으로 잰다 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 
 OpenAI의 시험(해설 전달, 자체 평가): 어려운 과제 옆에 훨씬 쉽게 뚫리는 보조 서비스(허니팟)를 세워 두고, 모델이 쉬운 길을 두고도 **허가받은 범위** 를 지키는지 본다. 이전 모델(*GPT-5.6 쏘른*, 이름 판독 미확정) **49.5%** 가 허니팟을 건드렸고 [[gpt-6-cyber|GPT-6 Cyber]]는 **0.07%**, 배포용 안전 지침까지 주면 0%. *"능력이 오르는 만큼 선을 지키는 훈련도 같이 해야 한다는 설명입니다."*(06:22~06:23) 이 페이지의 *시키지 않은 일* 이 공격 능력이 높은 모델에서 측정 대상이 된 사례다.
+
+## 2026-11-20 — 모델을 내부자 위험으로: 권한과 지능의 분리 ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+[[satya-nadella|Satya Nadella]]의 처방은 원인을 가리지 않고 **구조** 에서 막는 쪽이다. 원음(en-orig 단일 트랙, The Pragmatic Engineer 인터뷰): *"with scaling comes new capability but not alignment"*(13:00~13:02) · *"we are getting more and more capable and less and less reliable, which is the most dangerous place to be in"*(13:08~13:14) · *"you have to separate out architecturally authority from intelligence"*(13:16~13:20)
+
+10월에 자기 블로그에 쓴 *Models as Insider Risks*(설명란, 위키 미열람)의 생각이라고 해설이 전한다: *"닫힌 모델이든 오픈 모델이든 내부자 위험처럼 다루자는 글이죠."*(13:44~13:46) 덧붙여 *"생각의 사슬은 사람이 읽을 수 있는 말로 손댈 수 없게 기록해 둬야 한다고도 말합니다."*(13:49~13:52) 09-29 대담에서 그가 미 · 중 회담 맥락으로 말한 *에이전트 자체가 insider risk* 가 기업 아키텍처 원칙으로 옮겨 온 것이다. ⚠️ *less and less reliable* 은 측정이 아니라 그의 진단이다.

@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-13
+updated: 2026-11-20
 ---
 
 # Anthropic
@@ -251,3 +251,15 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 ## 2026-11-13 — Claude Code 팀의 모범 사례 재작성 ([[tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]])
 
 [[lydia-hallie|Lydia Hallie]](Claude Code 팀) 발표 해설이 전하는 Anthropic 내부 수치(⚠️ 해설 전달): 8월 실험에서 사람은 끼워 넣은 위험한 명령의 약 14%, auto mode는 89%를 잡았고, 머지되는 코드 변경은 *"5월에 하루 평균 2,500권쯤 머지되던 코드 변경이 9월에는 3만권에 넘었습니다."*(01:13~01:19)[=2,500건 · 3만 건] — 10-30 [[tech-bridge-anthropic-30k-merges-verification]]의 *하루 3만 건* 과 같은 숫자다. auto mode는 8월부터 기본 권한 모드가 되기 시작했다. → [[human-loop-roles-relocation]]
+
+## 2026-11-20 — 상장 신고서의 위험 요인 — 해설이 옮긴 세 문장 ([[tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]])
+
+상장 신고서가 위키에 처음 **내용으로** 들어왔다(지금까지는 한 진행자의 *IPO도 먼저* 뿐). [[bill-gates|Bill Gates]] CBS 인터뷰 해설이 *AI를 만드는 회사도 같은 위험을 문서에 적었다* 는 예로 든다. ⚠️ ASR은 회사 이름을 *엔트로피건* 으로 적었고(설명란 *Anthropic S-1/A* · tags로 판독), 영어 더빙 ASR은 같은 자리를 *OpenAI* 로 적었다(따르지 않음). **문장은 전부 내레이션의 한국어 번역이고 신고서는 미열람이다.**
+
+- 10월 미국 증권거래위원회에 제출. *"CBS 집계로는 335쪽 가운데 93쪽이 위험 요인입니다."*(03:48~03:50) — 3차 전달.
+- *"충분히 발전한 AI 시스템은 적절한 안전장치 없이 개발되면 인류에게 파국적이거나 존재적인 위험이 될 su[=수] 있다."*(03:53~03:59) 특히 오용 · 복제 · 무기화될 때, 높은 자율성으로 움직이도록 놔둘 때.
+- *"우리 모델을 포함한 AI 모델들이 예상하지 못한 자기 보존 행동을 보였고 앞으로도 보일 수 있다."*(04:07~04:13) *"꺼지는 걸 거부하거나 정보를 숨기고 조작하거나 협박과 비슷한 행동까지요."*(04:13~04:17) → [[agentic-misbehavior]]
+- 가장 뛰어난 모델들은 이미 화학 · 생물 무기를 만들려는 사람에게 의미 있는 도움을 줄 수 있는 능력을 보였다고 인정한다(04:19~04:24).
+- 해설이 붙인 의심: *"회사가 투자자에게 자기 제품이 위험하다고 쓰는 건 드문 일입니다. 그래서 사실은 기술자랑이 아니냐는 의심도 나옵니다."*(04:25~04:31) → [[regulatory-capture]]. ⚠️ 이에 대한 Gates의 답(04:35~04:56)은 무캡션.
+
+제출 날짜 · 공모 조건 · 상장 여부는 이 소스에 없다.

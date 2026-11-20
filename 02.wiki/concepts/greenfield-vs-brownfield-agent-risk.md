@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [legacy, refactoring, guardrails, big-tech, risk, agents]
 aliases: [브라운필드가 안전하다, 대기업 문제가 모두의 문제]
-related: [organic-architecture, shortest-path-architecture, hard-vs-soft-enforcement, ai-slop, dune-architecture, agent-org-adoption, system-level-quality]
+related: [organic-architecture, shortest-path-architecture, hard-vs-soft-enforcement, ai-slop, dune-architecture, agent-org-adoption, system-level-quality, software-factory]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-legacy-code-modernization-ai, tech-bridge-sourcegraph-codebase-visibility]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-legacy-code-modernization-ai, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-09-13
-updated: 2026-10-09
+updated: 2026-11-20
 ---
 
 # 그린필드가 브라운필드보다 위험하다
@@ -82,3 +82,9 @@ updated: 2026-10-09
 | 에이전트의 실패 | 그린필드에서 편의로 수렴 | 브라운필드에서 *"already have a library (…) but your agent doesn't know that"*(03:07~03:10) |
 
 위키의 독해: Tan의 조건 *"이미 잘 세팅돼 있다면"* 이 저장소 **안**에서는 성립해도 저장소 **사이**에는 가드레일이 아니라 사각지대가 있다. 두 화자 모두 이 경계를 말하지 않는다. Adler의 근거는 72% 통계(출처 미발화)와 익명 인용뿐 → [[large-scale-code-changes]]
+
+## 2026-11-20 — 다른 축: 브라운필드의 병목은 빌드와 CI/CD ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+이 페이지는 *안전* 의 축에서 브라운필드를 본다. [[satya-nadella|Satya Nadella]]는 *처리량* 의 축을 말한다(한국어 해설 전달): *"새 공장을 지어도 바닥의 빌드와 CICD는 그대로입니다. 브라운필드에서는 거기가 가장 풀기 어려운 병목이라고 사티아는 말합니다."*(06:34~06:39) 예는 Windows(AI가 취약점을 찾는 속도가 올라 패치 규모가 커진다 — 원음에서 남은 구절 *"from crash traces all the way to fixes"*(06:23~06:26))와 GitHub다: *"깃허브는 더 극적입니다. 공장 밑바닥까지 다시 깔고 있다고요."*(06:42~06:43)
+
+진행자가 *React 때도 새 기능부터 섞어 썼는데 무엇이 다르냐* 고 되묻자 돌아온 답은 — 프레임워크와 런타임은 바뀌어도 IDE에서 코드를 쓰는 일은 그대로였는데 *"이번엔 그게 한꺼번에 바뀝니다."*(07:31~07:33) 위 Lauren Tan의 주장(가드레일이 갖춰진 브라운필드는 안전하다)과 충돌하지 않는다 — 안전한 것과 빠른 것은 다른 질문이다.

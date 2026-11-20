@@ -6,9 +6,9 @@ tags: [code-quality, disposable-software, durable-software, engineering-rigor, c
 aliases: [disposable software, durable software, 일회용 소프트웨어, 오래 쓰는 코드, 네 가지 기준, four factors]
 related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build]
 first-seen: tech-bridge-kanat-alexander-disposable-vs-durable
-sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
+sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-jonathan-blow-30-years-zero-progress]
 created: 2026-10-25
-updated: 2026-11-19
+updated: 2026-11-20
 ---
 
 # 일회용 vs 오래 쓰는 소프트웨어
@@ -57,3 +57,9 @@ Karpathy가 앱 대신 데이터 소스와 프롬프트를 공유한다는 전�
 Karpathy의 10월 초 글의 결론으로 해설이 전한다(⚠️ 2차 전달): *"지능과 코드가 흔해진 만큼 예전 같으면 만들 이유가 없던 크고 버려도 되는 소프트웨어를 마음껏 주문하라고 했습니다."*(05:52~05:58) 일회용 쪽을 **권고** 로 말한 첫 소스다 — 앞선 소스들은 일회용과 오래 쓰는 것을 가르는 기준을 다뤘다.
 
 [[hackertube|HackerTube]]가 그 실례로 놓인다. 서버 코드는 *"바이브 코딩으로 만든 엉망 진창이라서요."*(07:49~07:51) 공개하지 않았고, 남긴 것은 데이터다 — *"해커 튜브에서 진짜 귀한 건 20년치 댓글에서 걸러낸 영상 목록입니다."*(08:57~09:00) 11-08 절의 *앱은 데이터 위의 포장* 과 같은 결론이 이번에는 비용으로도 받쳐진다: 토큰의 90% 넘게가 데이터 선별에, 앱에는 약 100만 토큰이 들었다. → [[share-data-and-prompt-not-app]]
+
+## 2026-11-20 — 서른 줄과 시스템: 조각 사이의 선 ([[tech-bridge-jonathan-blow-30-years-zero-progress]])
+
+[[jonathan-blow|Jonathan Blow]]의 AI 사용 사례는 스펙트럼의 일회용 끝에 있다 — 엑셀 표에 색을 입히는 Visual Basic 30줄, *"쓰고 버릴 코드였습니다."*(04:20) 오래 사는 쪽이 왜 다른지에 대한 그의 설명은 네 기준과 다른 축이다: 프로그램 조각보다 **조각 사이의 선** 이 더 빨리 늘고(*"프로그램 조각이 셋이면 그 사이에 그을 수 있는 선은 셋, 넷이면 여섯입니다."*(04:28~04:31)), *"이 선은 코드에 적혀 있지 않습니다. 여기를 이렇게 짜면 저기가 어떻게 되는지 그 영향과 제약이 선입니다."*(04:34~04:38) 네 기준의 *의존 관계* 를 프로그램 안쪽으로 접어 넣은 그림으로 읽을 수 있다(위키의 읽기).
+
+해설의 권고는 이 틀의 두 끝에 하나씩이다 — 서른 줄짜리 쓰고 버릴 코드에는 AI를 마음껏, *"오래 살 시스템이라면 조각 사이에 선을 그린 지도는 사람이 주고 있습니다."*(11:52~11:55)[주고=쥐고, 추정] 11-18 Karpathy 편의 *크고 버려도 되는 소프트웨어* 보다 일회용의 범위를 훨씬 좁게 잡는다 — Blow는 *어느 크기를 넘으면 드러난다* 고만 하고 그 크기를 말하지 않는다. ⚠️ 한국어 해설 전달.

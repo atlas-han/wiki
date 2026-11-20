@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [model-priors, silent-data-errors, correlated-errors, model-diversity, verification, ensemble, data-engineering, human-in-the-loop]
 aliases: [cross-model prior intersection, prior intersection, 모델 prior, 모델의 사전 가정, 조용한 데이터 오류, silent data errors, LLMs as a species]
-related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop, three-level-agent-review, review-model-inversion]
+related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop, three-level-agent-review, review-model-inversion, model-swap-acid-test]
 first-seen: tech-bridge-just-in-time-ontology
-sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-greptile-daksh-gupta-build-review-agent]
+sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-10-18
-updated: 2026-11-04
+updated: 2026-11-20
 ---
 
 # 교차 모델 prior 교집합 (Cross-Model Prior Intersection)
@@ -67,3 +67,7 @@ updated: 2026-11-04
 
 - 이 페이지의 방식은 **두 모델의 답을 비교해 불일치에 검증을 몬다.** 뒤집기는 **작성 모델과 다른 모델 하나가 리뷰한다.** 합의를 보지 않으므로 위 대출 부호 사례(여러 모델이 함께 틀린 것을 검증했다고 본 경우)와 형태가 다르다.
 - ⚠️ 이질성의 근거가 처음으로 코드 버그 유형으로 나온다(Claude는 *"one-off errors"*(06:49) 약 3배, GPT는 *"off[=auth] bypasses"*(06:53~06:55)). 다만 표본 · 모델 버전이 없는 벤더 진술이고, 효과 *"10% higher cache[=catch] rate"*(08:06~08:08)도 단위가 없다.
+
+## 2026-11-20 — 제품 원칙으로: *다른 가문에게 비평을* ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+[[satya-nadella|Satya Nadella]]가 검증을 누가 하느냐에 대해 같은 방향을 말한다(한국어 해설 전달, ⚠️ 원음은 캡션에 없다): *"사티아는 모델 가문을 따로 두고 다른 가문에게 비평을 맡기라고 합니다."*(03:38~03:40) *"한 모델 가문의 약점이 내 제품의 약점이 되지 않게 다른 가문의 눈으로 한 번 더 보는 겁니다."*(03:42~03:45) Olickel이 데이터 작업에서 잰 것(194/200 일치, 오류는 불일치 쪽)을 근거 수치 없이 **제품 아키텍처 권고** 로 말한 것이다. 같은 인터뷰의 [[model-swap-acid-test]](어떤 모델로도 갈아 끼울 수 있어야 한다)가 이 권고의 전제다.

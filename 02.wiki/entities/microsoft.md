@@ -5,9 +5,9 @@ category: org
 tags: [hyperscaler, copilot, enterprise-ai, openai-partner, data-center]
 links:
   - https://www.microsoft.com/
-sources: [tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-bug-report-to-production, tech-bridge-ai-labs-token-economizer]
+sources: [tech-bridge-nadella-copilot-autopilot, tech-bridge-factory-bug-report-to-production, tech-bridge-ai-labs-token-economizer, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-09-29
-updated: 2026-11-04
+updated: 2026-11-20
 ---
 
 # Microsoft
@@ -52,3 +52,19 @@ updated: 2026-11-04
 ## Token Economizer — 코딩 에이전트용 토큰 절감 플러그인 (2026-11-04 · [[tech-bridge-ai-labs-token-economizer]])
 
 [[ai-labs|AI Labs]](설명란 근거)가 Microsoft의 플러그인 [[token-economizer|Token Economizer]]를 소개한다. 자사 Copilot뿐 아니라 경쟁 제품도 시험 대상이다: *"They did that on five different setups across Claude Code, Codex, and GitHub Copilot."*(01:09~01:13) 발표자가 전달한 시험은 277개 버그 · 6개 프로젝트이고, 숫자가 발화된 구성은 Claude Code 둘(Sonnet 5 −23.6% · Opus 4.8 −30.9%)뿐이다. 보안 판단은 사용자에게 넘긴다: *"That's why Microsoft leaves the choice to you."*(06:05~06:07) ⚠️ 모두 발표자 전달이고 저장소는 열어 보지 않았다.
+
+## 2026-11-20 — CEO가 가리킨 사내 사례들과 자발적 퇴직 제안 ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+[[satya-nadella|Nadella]]의 The Pragmatic Engineer 인터뷰를 공식 글과 맞춰 본 한국어 해설에서(⚠️ 공식 글 여덟 편 모두 위키 미열람, 수치는 해설의 전달).
+
+| 자리 | 내용 |
+|---|---|
+| **Copilot Cowork 팀** | *"엔지니어 아홉 명이 하루에 풀 리퀘스트 1,211개를 머지했다고 요."*(04:12~04:16) 코드는 대부분 에이전트가, 판단은 엔지니어가. Python → Rust 이전의 **첫 시도는 되돌렸다**(Bas Brekelmans의 글) |
+| **[[github-copilot\|GitHub Copilot]] 런타임** | TypeScript → Rust, 80만 줄 넘게, 주로 개발자 한 명, 몇 달(Stephen Toub의 글) |
+| **Azure 네트워크 팀** | 전 세계 광케이블 망 운영 — Nadella가 가장 아낀다는 사례. *"일을 직접 하던 팀이 이제 일을 하는 공장을 지었습니다."*(05:45~05:47) ⚠️ 무엇을 지었는지는 캡션에 없다 |
+| **Windows · MSRC** | *"마이크로소프트 보안 팀은 올해 패치 규모가 당분간 계속 커질거라고 공지했습니다."*(06:01~06:05) AI 모델이 취약점을 찾는 속도를 끌어올려서. 브라운필드의 병목은 빌드와 CI/CD |
+| **GitHub** | 9월 PR의 40% 넘게가 에이전트 초안에서 시작(3월 17%, Octoverse) — 바닥을 다시 깐다 |
+| **PRAISE 프리셉터십** | Mark Russinovich · Scott Hanselman이 10월 소개, 카네기 멜론과 운영 — 신입 엔지니어를 선배 프리셉터와 짝짓는다 |
+| **인사** | *"마이크로소프트는 10월 26일 자발적 퇴직 제안을 발표했습니다."*(08:26~08:28) 대상은 캐나다 · 인도 · 영국 · 미국의 참여 팀, 인원수 · AI 언급 없음. *"4월에 자발적 은퇴 프로그램에 이어 올해 두 번째입니다."*(08:39~08:40) |
+
+위 10-17 절의 *Claude Code 라이선스 회수 헤드라인* 과 나란히 읽을 만하다 — 이 편에서 CEO는 코딩 도구의 무게중심을 옮긴 것이 [[claude-code|Claude Code]]였다고 인정하지만(제목 · 설명란), 라이선스 회수 일화는 나오지 않는다. 직원 수는 *20만 명이 넘는* 으로 언급된다(14:44, 해설).

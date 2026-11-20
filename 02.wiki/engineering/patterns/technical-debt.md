@@ -3,11 +3,11 @@ title: Technical Debt
 type: engineering
 tags: [engineering, refactoring]
 created: 2026-06-27
-updated: 2026-10-25
+updated: 2026-11-20
 category: pattern
 related: [refactoring, code-smells, surgical-edits, legacy-code-modernization, legacy-skills-gap]
 first-seen: refactoring-guru-refactoring
-sources: [refactoring-guru-refactoring, tech-bridge-legacy-code-modernization-ai, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-kanat-alexander-disposable-vs-durable]
+sources: [refactoring-guru-refactoring, tech-bridge-legacy-code-modernization-ai, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-jonathan-blow-30-years-zero-progress]
 ---
 
 # Technical Debt
@@ -52,3 +52,9 @@ Technical Debt는 “지금 빠르게 가기 위해 구조 개선을 미룬 선�
 ## 변경의 두 번째 위험 — 다음 변경을 어렵게 만드는 것 (2026-10-25 · [[tech-bridge-kanat-alexander-disposable-vs-durable]])
 
 [[max-kanat-alexander|Max Kanat-Alexander]](발췌): 변경의 위험은 둘이다. 하나는 지금 바꾸는 과정의 문제이고, 둘째는 *"you could make it harder to make future changes. In particular, what that means is you could make it more likely to have future problems."*(01:18~01:25) 해설의 예: 할인 기능을 급하게 붙이면 오늘 결제가 틀릴 수도 있고, *"코드가 복잡해져서 다음 수정이 더 어려워질 수도"* 있다. 이 비용을 오래 감당할 필요가 없는 **disposable** 코드에서만 부채를 무시할 수 있다. → [[disposable-vs-durable-software]]
+
+## 2026-11-20 — 양이 곧 빚: 같은 문제에 더 많은 코드 ([[tech-bridge-jonathan-blow-30-years-zero-progress]])
+
+[[jonathan-blow|Jonathan Blow]]는 부채를 *미룬 구조 개선* 이 아니라 **같은 문제에 대한 코드의 양** 으로 센다(⚠️ 한국어 해설 전달 · 영어 인용은 en-orig에만 잡힌 원 대담 ASR). 잘하는 사람과 AI에게 같은 문제를 주면 — *"and the AI will give you a lot more code just like the the mathematical proofs would be a lot longer than if a real mathematician had written the proof."*(07:11~07:20) *"and then that extra code is all technical debt that you have to"*(07:24~07:27) *AI가 만든 부채는 AI가 갚으면 된다* 는 주장에 대한 그의 답이다. 해설이 옮긴 계산: 코드가 늘면 줄마다 생기는 오류도 같이 늘고 어느 선을 넘으면 손을 못 댄다 — *"코드를 보지 않는 순수한 바이브 코딩은 그 선에 꽤 빨리 닿는다고 봅니다."*(07:39~07:42)
+
+산업 규모의 같은 그림: 1990년 유닉스 워크스테이션과 지금의 컴퓨터는 하는 일이 같은데 코드는 비교가 안 되게 늘었다(해설이 붙인 수치 — systemd 약 171만 줄, Phoronix 2022년 말, 위키 미열람). *"블로의 표현으로 우리는 거대한 쓰레기 매립지 위에 삽니다."*(09:21~09:23) 해설의 처방은 위 *상환* 절과 같은 쪽이다: *"그리고 코드가 늘어난 만큼 멈춰서 갚는 시간을 따로 잡습니다."*(11:56~11:58) ⚠️ 줄당 오류 · *선* 은 Blow의 추정이고 수치가 없다.

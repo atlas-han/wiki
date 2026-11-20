@@ -2855,3 +2855,41 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 4편이라 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1119/<id>/`: `hdr.md` · `src.md` · `sec/` · `new/` · `summary.json`), 병합은 본 세션이 `merge_all.py`(raw · source · 신규 · 절 덧붙임) → `shared3.py`(index · overview · log · tech-bridge · iconize)로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 네 편 `check` 합계 352건 불일치 0. [[jagged-capability-frontier]]는 두 편(Karpathy · Astra)이 각각 절을 붙였다. 영어 더빙이 붙은 두 편(Karpathy · Astra) 모두 `en-orig`가 더빙의 ASR이었다 — 11-17 Orca 편에 이어 세 번째. Astra 편은 영어 원음 발췌 세 곳만 두 트랙에 같은 영어로 잡혔다.
 
+## [2026-11-20] ingest | Tech Bridge — 11-19 업로드 3편 (클로드 코드에 한 방 맞은 MS CEO가 말하는 엔지니어의 다음 일 · AI는 핵무기보다 위험하다 · AI로 10배 빨라졌다면, 30년치 발전은 어디 갔나)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음, 전부 `public`). 신규 공개 3편: `l33zynXSBFs`(11-19 12:00 KST) · `2zh8cg0SN_8`(11-19 18:00 KST) · `oCEJgCOLEIs`(11-20 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261119). `Yhck-x6VuLs`는 목록 범위 밖 · 단건 조회 `subscriber_only` 줄 지속 — 건너뜀, 페이지 없음. 자막 429 없음.
+
+**신규 source 3 · entity 2 · concept 1**, 기존 페이지 보강 18개(+ tech-bridge), index **1053 → 1059**(실측 일치).
+
+- `l33zynXSBFs`(15:43, 챕터 10) → [[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]]: [[satya-nadella|Satya Nadella]]의 The Pragmatic Engineer 인터뷰(진행 Gergely Orosz, 11-16 공개)를 Microsoft · GitHub 공식 글과 대조한 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-19 12:00 KST 게시.
+  - 신규: [[github-copilot]] · [[model-swap-acid-test]]
+  - 보강: [[satya-nadella]](두 번째 소스 · IDE 여섯 달 · 권한과 지능의 분리 · 학생 모드) · [[microsoft]](사내 사례 표 · 자발적 퇴직 제안) · [[claude-code]](경쟁사 CEO의 인정) · [[software-factory]](블로그 두 편 · 변화 셋 · 바닥은 그대로) · [[verification-bottleneck]](순서 · 다른 가문) · [[greenfield-vs-brownfield-agent-risk]](처리량의 축: 빌드 · CI/CD) · [[agentic-misbehavior]](내부자 위험) · [[cross-model-prior-intersection]](제품 원칙으로) · [[company-knowledge-moat]](Hayek · 토큰 자본 · 학습 고리)
+  - ⚠️ **`en-orig`가 섞여 있다** — 내레이션 자리는 영어 더빙의 ASR(인용하지 않음. *Cursor* → *ChatGPT*, *거게이* → *GitHub*, *PRAISE* → *Praxis* 로 틀린다), 인터뷰 발췌 자리는 **Nadella 원음** 으로 판정(ko-orig가 비는 구간에만 · 1인칭 구어 · 더빙이 3인칭으로 받음 · 맺음 발췌 14:51~15:31은 두 트랙에 같은 영어). 영어 인용은 맺음 발췌(ko-orig 글자, `<!--k-->`) 외에는 **en-orig 단일 트랙** — 조각난 발췌 넷은 인용하지 않았다.
+  - ⚠️ ko-orig 무캡션 열여덟 곳(약 7분 40초). **두 트랙 모두 빈 여섯 곳**(00:07~00:12 · 02:33~02:45 · 08:49~09:05 · 09:10~09:23 · 09:52~10:08 · 14:08~14:31)은 **내용을 적지 않았다.** *밀어낸 것은 Claude Code* 라는 말은 ko-orig 캡션에 없고(제목 · 설명란 · 더빙 ASR) Nadella가 그 이름을 직접 말한 문장도 캡션으로 확인되지 않는다 — [[claude-code]] 절에 표시.
+  - ⭐ 해설이 화자의 기억을 공식 글로 바로잡은 곳 둘(설명란이 밝힘): 런타임의 원래 언어 Python → **TypeScript**, 롤백한 Rust 이전은 **Copilot Cowork 팀**(Python → Rust). 위키는 공식 글을 열지 않아 *해설이 고쳤다* 까지만 적었다.
+  - ⚠️ ASR 판독: *거게이 · 거기 · 거기 애가* → Gergely · *코파일럿 코어 코드 팀* → Copilot Cowork 팀 · *이를 경유하고* → 이끌고(추정) · *페이엑스 단말기* → VAX(추정) · *AI는 이티 회사* → AI 네이티브 회사(추정) · *엑셀에 올린* → X에 올린 · *프레이즈* → PRAISE. **미확정: *RSI가 자기한테는 이퀄***(eval / quality). 아키텍처 결정 *둘* 가운데 내레이션은 첫째만 센다.
+  - 페이지화하지 않음: The Pragmatic Engineer · Gergely Orosz(진행자 — 다음 소스가 오면 재검토) · Copilot Cowork · Stephen Toub · Bas Brekelmans · Amy Coleman · Mark Russinovich · Scott Hanselman · PRAISE · MSRC · Octoverse · Azure 네트워크 팀 · Hayek · FDE · VS Code.
+- `2zh8cg0SN_8`(13:16, 챕터 10) → [[tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]]: [[bill-gates|Bill Gates]]의 CBS 〈Great Question〉 인터뷰(설명란 2026년 11월)를 GatesNotes 2023 · 2026-08 에세이, Hugging Face · OpenAI 공지, Anthropic 상장 신고서와 맞춰 따라간 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-19 18:00 KST 게시.
+  - 신규 페이지 없음.
+  - 보강: [[bill-gates]](핵 비교 · 감시 체계 내년 안 · 재난이 먼저 와야 · 선례 셋 · AI 친구 온실 · *4년* 의 다른 뜻) · [[hugging-face]](아홉 번째 서술 — 7-21 OpenAI 발표 · 꺼 둔 거절 장치 · 거절당한 이유) · [[anthropic]](상장 신고서의 위험 요인 세 문장) · [[ai-jobs-impact]](젊은 직원 고용 감소 · 토큰과 로봇 과세의 근거 · 휴먼 리저브드 비유) · [[defenders-window]](공격이 앞서는 몇 년 · 안전장치에 막힌 방어)
+  - ⚠️ **`en-orig`는 영어 더빙의 ASR** — 인용하지 않았다. 이 편에는 두 트랙에 같은 영어가 잡힌 원음 구간이 없다. 더빙 ASR은 Anthropic 자리(03:45)를 *OpenAI* 로, *3년 사이* 를 *a year or two* 로 적었다(ko · 설명란 · tags를 따름).
+  - ⚠️ **무캡션 열세 자리, 약 5분 19초**(00:04~00:10 · 01:06~01:40 · 03:00~03:23 · 04:35~04:56 · 05:11~05:30 · 05:41~06:01 · 06:30~06:55 · 07:42~08:19 · 08:45~09:18 · 09:24~09:53 · 10:09~10:17 · 10:45~11:26 · 12:17~12:50) — CBS 인터뷰 원음 발췌로 추정, 두 트랙 모두 비어 **내용을 적지 않았다.** Gates 본인 인용 0. 제목의 문장은 내레이션이 받아 말한 05:30~05:32로만, *인류가 끝날 확률* 의 답 · *재난이 와야* 의 인정 원문 · 규제 입장 해명은 없다.
+  - ⭐ Hugging Face 사건: 7-16 HF 공개는 Black Hat 재구성(09-25 ingest)과 일치. 새로 들어온 것은 7-21 OpenAI 발표, 거절 장치를 꺼 둔 시험, 방어 쪽이 거절당한 이유. 설명란에 HF 공지가 출처로 있으나 미열람이라 [[hugging-face]]의 *HF 측 진술 없음* 경고는 풀지 않았다. 09-23의 Contradiction(거부 vs 접근 불가)도 해소로 치지 않았다.
+  - ⚠️ 8월 인터뷰와: *4년* 이 다른 뜻(일자리 대체 시점 → 가를 시간), 과세는 *노동세 → 자본세* 에서 *AI 토큰과 로봇에 세금* 으로 — 모순으로 치지 않고 표시.
+  - ⚠️ ASR 판독: *토니 도쿠필렌커가* → Tony Dokoupil 앵커가(추정) · *엔트로피건* → Anthropic은 · *익스플로잇 짐* → Exploit Gym · *조직에 편입했다* → 조직 개편을 했다 · *세 국제 기구* → 새 국제 기구 · *보석에 밀려난* → 소프트웨어에(추정). 미확정으로 남긴 것: *을 사건에 비유*(사건 이름 탈락) · *정부 바깥에서 걷습니다* · 2030년 세 질문의 앞 둘(*번 있었나? 어떤가?*). *335쪽 가운데 93쪽* 은 CBS 집계의 재전달(3차).
+  - 페이지화하지 않음: Tony Dokoupil · CBS 〈Great Question〉 · Bernie Sanders · GatesNotes · Exploit Gym · 토큰 · 로봇세 · 휴먼 리저브드 · AI 친구 온실 비유 · 선례 셋 · Fidelity · Vanguard.
+- `oCEJgCOLEIs`(12:10, 챕터 10) → [[tech-bridge-jonathan-blow-30-years-zero-progress]]: [[jonathan-blow|Jonathan Blow]]의 The Students 대담을 따라간 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-20 07:00 KST 게시(`upload_date` 20261119).
+  - 신규: [[jonathan-blow]]
+  - 보강: [[technical-debt]](양이 곧 빚 · 쓰레기 매립지) · [[perceived-vs-actual-productivity]](바깥쪽 검산 30년치/0년 · 체감이 생기는 자리) · [[disposable-vs-durable-software]](서른 줄과 시스템 · 조각 사이의 선) · [[sycophancy]](판매량 예측 — 높여도 낮춰도 맞다)
+  - ⭐ **`en-orig`가 더빙 ASR이면서 원 대담 발췌 구간에서는 Blow의 영어 원음을 담았다**(01:57~02:02 · 02:22~02:55 · 03:30~04:04 · 04:51~05:30 · 06:12~06:31 · 07:03~07:27 · 08:16~08:25 · 09:59~10:46). ko-orig는 그 구간이 무캡션. 판정 근거는 ko 무캡션과의 겹침 · 더빙 재개 줄의 `>>` · 구어 흔적. 영어 인용은 *en-orig에만 잡힌 원음 ASR* 로 표시했고 **두 트랙 교차 확인은 없다**(11-18 Astra 편과 다른 점). 화자 구분이 없어 진행자의 말이 섞였을 수 있다.
+  - ⚠️ 두 트랙 모두 무캡션: 00:08~00:14 · **00:49~01:10(다리 비유)** · **01:30~01:36(질문의 원문)** · 01:41~01:57 · **11:35~11:47(컴파일러 얘기)** 등 — **내용을 적지 않았다.**
+  - ⚠️ 설명란: 30년/0년 · 5시간/1시간은 *측정값이 아니라 Blow의 암산과 추정*. AlphaZero 대목은 원음 *without being taught the rules* → 해설의 정정 *규칙은 받고 기보 없이* 를 따름. systemd 약 171만 줄(Phoronix 2022) · Alpine Linux 로그인 버그(11-05 공개, 결정 셋)는 해설이 붙인 것 — 출처 넷 미열람. 설명란은 *OpenSSH 인증 우회 CVE-2026-123158*, 내레이션은 *알파인 리눅스 로그인* — 관계는 캡션으로 미확인.
+  - ⚠️ ASR 판독: *블로거* → 블로 · *기소 부채* → 기술 부채 · *셋 게임* → 새 게임 · *개선* → 계산 · *넣으면* → 넘으면 · *기부* → 기보 · *비즈로* → 빚으로 · *스코버를 코드* → 쓰고 버릴 코드 · *사람이 주고* → 쥐고(추정). en-orig 원음의 *since 2003* → 2023(추정, 미확정). 재생 수는 ko *사흘* / 더빙 *four days*.
+  - ↔ 11-16 Lauren Tan 편 등 에이전트 중심 팀의 성과 보고와 방향이 반대 — Blow가 *선에 빨리 닿는다* 고 한 것은 코드를 보지 않는 순수한 바이브 코딩이라 정면 모순으로 표시하지는 않고 소스 페이지 *위키의 읽기* 에 나란히 적었다.
+  - 페이지화하지 않음: The Students · *Braid* · *The Witness* · *Preventing the Collapse of Civilization* · systemd · Phoronix · OX Security · Alpine Linux · AlphaZero · GTA · 바이브 코딩.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+3편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1120/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 세 편 `check` 합계 314건 불일치 0. 세 편 모두 영어 더빙이 붙었고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **이번 회차의 새 판단**: Blow · Nadella 편은 인터뷰 원음 발췌가 ko-orig에서는 무캡션이고 **en-orig에만** 잡혔다 — 원음으로 판정한 근거(ko 무캡션 구간과 겹침 · 1인칭 구어 · 발췌 뒤 더빙이 3인칭으로 받음)를 소스 페이지에 적고 *en-orig 단일 트랙, 교차 확인 없음* 으로 표시해 인용했다. Gates 편은 원음 구간이 두 트랙 모두 무캡션이라 본인 인용 0.
+

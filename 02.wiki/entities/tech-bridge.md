@@ -195,8 +195,11 @@ sources:
   - tech-bridge-karpathy-hackertube-two-hours-five-words
   - tech-bridge-gpt-6-2-astra-launch-day-reactions
   - tech-bridge-lombrozo-learning-by-thinking-ai-tutor
+  - tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap
+  - tech-bridge-bill-gates-cbs-more-dangerous-than-nukes
+  - tech-bridge-jonathan-blow-30-years-zero-progress
 created: 2026-06-03
-updated: 2026-11-19
+updated: 2026-11-20
 ---
 
 # Tech Bridge
@@ -1831,3 +1834,32 @@ updated: 2026-11-19
 - 게시 시각 **11-19 07:00 KST**(이 회차 두 시간 전, `upload_date`는 UTC 기준 20261118). 설명란의 출처 일곱(원 강연 `4qxROUatTzk` · PNAS · TiCS 2024 · PNAS Nexus 보도자료 · Brockbank 2022 · Rozenblit & Keil 2002 · 위키백과)은 미열람. 1989년 자기 설명 논문은 설명란에 없다.
 
 **멤버 전용**: `OV9By_UspTk`가 이 회차에 `public`으로 풀렸다(위). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄) — 대기 목록은 이것 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-19 업로드 — Satya Nadella(Pragmatic Engineer) · Bill Gates(CBS) · Jonathan Blow(The Students) (2026-11-20 ingest)
+
+[[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap|클로드 코드에 한 방 맞은 MS CEO가 말하는 엔지니어의 다음 일 | Satya Nadella]](`l33zynXSBFs`, 15:43, 공식 챕터 10) — 한국어 해설, The Pragmatic Engineer 팟캐스트의 Nadella 인터뷰를 Microsoft · GitHub 공식 글과 맞춰 본다 ([[github-copilot]] · [[model-swap-acid-test]](둘 다 신규) · [[satya-nadella]] · [[microsoft]] · [[claude-code]] · [[software-factory]] · [[verification-bottleneck]] · [[greenfield-vs-brownfield-agent-risk]] · [[agentic-misbehavior]] · [[cross-model-prior-intersection]] · [[company-knowledge-moat]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). ⚠️ `en-orig`는 **섞여 있다** — 내레이션 자리는 더빙의 ASR(인용하지 않음), 인터뷰 발췌 자리는 Nadella 원음(ko-orig가 비는 구간에만 나오는 1인칭 구어, 맺음 발췌는 두 트랙에 같은 영어). 영어 인용은 맺음 발췌 외에는 **en-orig 단일 트랙**.
+- ⚠️ ko-orig 무캡션 열여덟 곳(약 7분 40초). 두 트랙 모두 빈 곳 여섯(00:07~00:12 · 02:33~02:45 · 08:49~09:05 · 09:10~09:23 · 09:52~10:08 · 14:08~14:31)은 내용 미상 — *꿈의 다음 직업* 원음 · *선택권* 답의 원음이 여기 든다.
+- ⭐ 09-29 Copilot 행사 대담에 이은 **두 번째 Nadella 소스.** *insider risk* 가 한 달 반 사이에 블로그 글(*Models as Insider Risks*)과 *권한과 지능의 분리* 원칙이 됐다.
+- ⭐ **해설이 화자의 기억을 바로잡은 곳 둘**(설명란이 밝힘): GitHub Copilot 런타임의 원래 언어는 Python이 아니라 TypeScript · 롤백한 Rust 이전은 Copilot Cowork 팀(Python → Rust). Nadella의 원래 발화는 캡션에 없다.
+- 게시 시각 **11-19 12:00 KST**. 설명란의 출처 아홉(원 인터뷰 `0NE89Nzfk20` · Pragmatic Engineer 글 · Copilot Cowork · Rust 이전 · PRAISE · 자발적 퇴직 제안 · MSRC · Octoverse · Models as Insider Risks)은 미열람.
+
+[[tech-bridge-bill-gates-cbs-more-dangerous-than-nukes|AI는 핵무기보다 위험하다 | Bill Gates]](`2zh8cg0SN_8`, 13:16, 공식 챕터 10) — 한국어 해설, CBS 〈Great Question〉 인터뷰(2026년 11월)를 GatesNotes 두 편 · Hugging Face와 OpenAI의 공지 · Anthropic 상장 신고서와 맞춰 따라간다 (신규 페이지 없음 · [[bill-gates]] · [[hugging-face]] · [[anthropic]] · [[ai-jobs-impact]] · [[defenders-window]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). ⚠️ `en-orig`는 더빙의 ASR — 이 편에는 **두 트랙에 같은 영어가 잡힌 원음 구간이 하나도 없다.** 인용은 ko-orig.
+- ⚠️ **무캡션 열세 자리, 약 5분 19초** — CBS 인터뷰 원음 발췌로 추정되며 더빙 트랙에도 비어 있다. Gates 본인의 말은 한 줄도 남지 않았다(제목의 문장 · 멸망 확률 · *재난이 와야* 의 인정 · 규제 입장 해명 · 마지막 답).
+- ⭐ [[hugging-face]]의 **아홉 번째 서술** — 7-16 공개일은 Black Hat 재구성과 일치, **7-21 OpenAI 발표** · **거절 장치를 꺼 둔 시험** · **방어 쪽이 거절당한 이유**(사고 대응 팀과 공격자를 구분하지 못함)가 새로 들어왔다.
+- ⭐ [[anthropic]] 상장 신고서가 처음 내용으로 들어왔다(10월 제출 · 335쪽 가운데 93쪽이 위험 요인 — CBS 집계의 재전달).
+- ⚠️ 더빙 ASR이 Anthropic 자리를 *OpenAI* 로, *3년* 을 *a year or two* 로 적었다 — 따르지 않았다.
+- 게시 시각 **11-19 18:00 KST**(11-19 회차 뒤). 설명란 출처 여섯(CBS 원본 `G3q7uqWJTWo` · GatesNotes 2023 · 2026 · HF 공지 · OpenAI 공지 · Anthropic S-1/A)은 미열람.
+
+[[tech-bridge-jonathan-blow-30-years-zero-progress|AI로 10배 빨라졌다면, 30년치 발전은 어디 갔나 | Jonathan Blow]](`oCEJgCOLEIs`, 12:10, 공식 챕터 10) — 한국어 해설, Jonathan Blow의 The Students 대담을 흐름대로 따라간다 ([[jonathan-blow]](신규) · [[technical-debt]] · [[perceived-vs-actual-productivity]] · [[disposable-vs-durable-software]] · [[sycophancy]])
+
+- 구성: **Korean original + 영어 더빙**, `ko` = `ko-orig`(`variant=gemini`). 내레이션 인용은 ko-orig.
+- ⭐ **원 대담 발췌가 길고, 그 구간의 Blow 영어 원음이 `en-orig`(더빙 트랙 ASR)에만 잡혔다** — ko-orig는 같은 구간이 무캡션. 11-18 Astra 편(발췌가 두 트랙에 같은 영어)과 다른 모양이다. 영어 인용은 *en-orig에만 잡힌 원음 ASR* 로 표시했고 교차 확인은 없다. 화자 구분 없음(진행자 혼입 가능).
+- ⚠️ 두 트랙 모두 빈 곳: 챕터 제목의 *다리 비유*(00:49~01:10) · *질문 하나* 의 원문(01:30~01:36) · 컴파일러 얘기(11:35~11:47) — 적지 않았다.
+- ⚠️ 설명란이 스스로 밝힌다 — 30년/0년 · 5시간/1시간은 *측정값이 아니라 Blow의 암산과 추정*, AlphaZero 대목은 영상 안에서 정정(*규칙은 받고 기보 없이*). systemd 약 171만 줄 · Alpine Linux 버그의 날짜와 원인은 해설이 Phoronix · OX Security 글에서 붙인 것(미열람).
+- 게시 시각 **11-20 07:00 KST**(이 회차 두 시간 전, `upload_date`는 UTC 기준 20261119). 재생 수는 ko *사흘 만에 24만*, 더빙 *four days* 로 갈린다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄) — 대기 목록은 이것 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음).

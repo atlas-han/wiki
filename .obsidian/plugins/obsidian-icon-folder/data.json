@@ -1324,5 +1324,14 @@
   "02.wiki/entities/openai-sol.md": "LiBot",
   "02.wiki/concepts/demo-collaboration-gap.md": "LiBookText",
   "02.wiki/entities/tania-lombrozo.md": "LiUser",
-  "02.wiki/concepts/learning-by-thinking.md": "LiPuzzle"
+  "02.wiki/concepts/learning-by-thinking.md": "LiPuzzle",
+  "01.raw/articles/2026-11-19_클로드 코드에 한 방 맞은 MS CEO가 말하는 엔지니어의 다음 일 Satya Nadella.md": "LiNewspaper",
+  "01.raw/articles/2026-11-19_AI는 핵무기보다 위험하다 Bill Gates.md": "LiNewspaper",
+  "01.raw/articles/2026-11-19_AI로 10배 빨라졌다면 30년치 발전은 어디 갔나 Jonathan Blow.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-bill-gates-cbs-more-dangerous-than-nukes.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-jonathan-blow-30-years-zero-progress.md": "LiVideo",
+  "02.wiki/entities/github-copilot.md": "LiBoxes",
+  "02.wiki/concepts/model-swap-acid-test.md": "LiPuzzle",
+  "02.wiki/entities/jonathan-blow.md": "LiUser"
 }

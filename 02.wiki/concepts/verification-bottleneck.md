@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review, greenfield-vs-brownfield-agent-risk]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer, tech-bridge-anthropic-30k-merges-verification, tech-bridge-ai-labs-claude-code-verification-review-loop]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer, tech-bridge-anthropic-30k-merges-verification, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
 created: 2026-09-13
-updated: 2026-11-02
+updated: 2026-11-20
 ---
 
 # 검증 병목
@@ -283,3 +283,13 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 > ⚠️ 10-30 [[tech-bridge-anthropic-30k-merges-verification]]에서는 진행 쪽이 3만을 *merging*(*"30,000 code changes every single day"*)으로, Addy가 2,500을 기간 단위 없이(*"back in May"*) 말했다. 여기서는 **"리뷰할 변경 · 하루 · 4개월"** 이 붙는다. 같은 수치의 다른 전달로 보이나(추정) 단위가 갈리고, 원 기사는 확인하지 않았다.
 
 답의 모양은 같은 계열이다 — 검사를 *"while Claude is building instead of waiting until the end"*(01:46~01:49)로 당기고, 사람은 *"the parts that are most likely to break"*(02:02~02:04)에 쓴다. 이번 소스가 더하는 것은 **리뷰 루프 자체의 비용**(50회+ 왕복 → [[review-loop-termination]])과 **되돌리기가 읽기를 줄인다**는 진술(→ [[action-reversibility]]).
+
+## 2026-11-20 — *코드가 싸진 세상에서 비싸진 것* — Microsoft CEO의 답 ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
+
+*"그럼 코드가 싸진 세상에서 비싸진 건 뭘까요? 사티아의 답은 검증입니다."*(02:26~02:29) [[satya-nadella|Satya Nadella]]의 The Pragmatic Engineer 인터뷰(한국어 해설, ⚠️ 답의 앞머리 02:33~02:45는 무캡션).
+
+- **순서가 있다** — 원음(en-orig 단일 트랙): *"How do you take every failure and then build the test case and make sure you truly verify the test"*(03:07~03:11) 해설: *"실패 하나가 테스트 하나가 되고 그 순서가 쌓여 팀의 새 노하우가 됩니다."*(03:27~03:30) 그는 이것을 *"new type of tribal knowledge people are building up"*(03:16~03:18) 이라 부른다 — 검증 방법이 아직 문서가 아니라 팀의 암묵지라는 관찰이다.
+- ⭐ **검증자는 다른 가문** — *"한 모델 가문의 약점이 내 제품의 약점이 되지 않게 다른 가문의 눈으로 한 번 더 보는 겁니다."*(03:42~03:45) → [[cross-model-prior-intersection]] ⚠️ 내레이션 전달뿐.
+- **CEO도 모른다** — *"I've not worked in a team that is mostly now code is output"*(02:49~02:53) 그래서 신입 프리셉터십 팀에 들어가 배우고 싶다고 한다.
+
+이 페이지의 진술은 Cursor · Anthropic · Factory 등 에이전트를 만드는 쪽에서 주로 왔다. Copilot을 가진 회사의 CEO가 같은 결론(*다음 문제는 코드가 아니라 검증*)을 말한 것으로 적는다. 새 수치는 없다.

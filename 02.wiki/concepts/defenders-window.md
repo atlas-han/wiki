@@ -5,9 +5,9 @@ category: theory
 tags: [security, cybersecurity, dual-use, diffusion, threat-actors, openai]
 related: [defense-factory, ai-vulnerability-discovery, shift-left-security, continuous-security-validation, balance-of-power-safety, pacing-the-frontier, discovery-remediation-gap]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-white-house-superintelligence-panel, tech-bridge-openai-gpt-6-cyber-keynote]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-white-house-superintelligence-panel, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]
 created: 2026-09-20
-updated: 2026-11-14
+updated: 2026-11-20
 ---
 
 # 방어자의 창 (Defender's Window)
@@ -107,3 +107,11 @@ updated: 2026-11-14
 ## 2026-11-14 — 같은 이름, 키노트의 정의 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 
 키노트에서 OpenAI가 다시 정의한다(해설 전달): *"가장 앞선 모델과 누구나 쓸 수 있게 퍼진 모델 사이의 간격입니다."*(04:18~04:22) 그 간격이 열린 동안 검증된 방어자가 먼저 쓰게 한다는 것이 Daybreak 프로그램의 논리다. 이번 소스가 보탠 것은 **창 안의 또 다른 간격** — 같은 버그의 *발견과 수정 사이* 다. PHP2Shell은 세 팀이 두 달 사이에 각자 찾았고(*"방화자가 찾을 수 있으면 공격자도 찾을 수 있습니다"*(08:19~08:21)[=방어자]), 패치 나흘 전에 공격이 관측됐다 → [[discovery-remediation-gap]]. 창이 열려 있어도 수정이 느리면 방어자의 이점은 줄어든다(위키의 읽기).
+
+## 2026-11-20 — 바깥에서 온 같은 진단, 그리고 거절당한 이유 ([[tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]])
+
+[[bill-gates|Bill Gates]]의 8월 에세이가 이 페이지의 전제를 반대편에서 말한다(해설의 번역, 에세이 미열람): *"내가 아는 가장 뛰어난 보안 전문가들이 앞으로 몇 년을 두려워하고 있다. 공격하는 쪽이 새 능력을 얻는 속도가 막는 쪽이 약점을 고치는 속도보다 빠르기 때문이다."*(01:45~01:55) OpenAI 쪽 화자들이 *방어자가 먼저 쓸 수 있는 짧은 창* 을 말했다면, Gates는 같은 기간을 **공격이 앞서는 몇 년** 으로 읽는다 — 창이 열려 있다는 낙관과 이미 밀리고 있다는 비관이 같은 사실 위에 선다(위키의 읽기).
+
+위 *방어자의 행동은 공격자처럼 보인다* 절의 실례에 이유가 붙었다. [[hugging-face|Hugging Face]]가 공격 기록을 상용 모델에 맡겼다가 거절당한 일을 두고 — *"안전장치가 사고 대응 팀과 공격자를 구분하지 못했다는 겁니다."*(03:30~03:35) *"막는 쪽이 오히려 안전장치에 막힌 셈입니다."*(03:38~03:39) ⚠️ 해설 전달이고, 설명란의 HF 공지 · OpenAI 공지는 미열람.
+
+Gates의 처방은 창을 넓히는 쪽이 아니라 **감시** 다 — 모델이 사이버 공격이나 생물 테러에 쓰이는지 지켜보다 막는 체계를 *"내년 안에 구체적으로 만들 수 있다고 봅니다."*(10:28~10:30)
