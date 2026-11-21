@@ -198,8 +198,10 @@ sources:
   - tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap
   - tech-bridge-bill-gates-cbs-more-dangerous-than-nukes
   - tech-bridge-jonathan-blow-30-years-zero-progress
+  - tech-bridge-zechner-ronacher-verification-is-overrated
+  - tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature
 created: 2026-06-03
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 
 # Tech Bridge
@@ -1861,5 +1863,24 @@ updated: 2026-11-20
 - ⚠️ 두 트랙 모두 빈 곳: 챕터 제목의 *다리 비유*(00:49~01:10) · *질문 하나* 의 원문(01:30~01:36) · 컴파일러 얘기(11:35~11:47) — 적지 않았다.
 - ⚠️ 설명란이 스스로 밝힌다 — 30년/0년 · 5시간/1시간은 *측정값이 아니라 Blow의 암산과 추정*, AlphaZero 대목은 영상 안에서 정정(*규칙은 받고 기보 없이*). systemd 약 171만 줄 · Alpine Linux 버그의 날짜와 원인은 해설이 Phoronix · OX Security 글에서 붙인 것(미열람).
 - 게시 시각 **11-20 07:00 KST**(이 회차 두 시간 전, `upload_date`는 UTC 기준 20261119). 재생 수는 ko *사흘 만에 24만*, 더빙 *four days* 로 갈린다.
+
+**멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄) — 대기 목록은 이것 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-20 업로드 — Mario Zechner · Armin Ronacher(Matt Pocock 라이브) · Daniel Kokotajlo(The Diary Of A CEO) (2026-11-21 ingest)
+
+[[tech-bridge-zechner-ronacher-verification-is-overrated|검증은 과대평가됐다 | Pi 제작자 Mario Zechner]](`zU3vWXMBJAk`, 13:51, 공식 챕터 10) — 한국어 해설, Matt Pocock의 11-17 라이브에서 Pi를 만드는 두 사람이 한 말을 블로그 글 · 저장소 기록과 맞춰 본다 ([[mario-zechner]] · [[armin-ronacher]] · [[pi-coding-agent]](셋 다 신규) · [[verification-bottleneck]] · [[reward-hacking]] · [[ai-formal-verification]] · [[cross-model-prior-intersection]] · [[review-wip-limit]] · [[cognitive-debt]] · [[named-human-accountability]] · [[software-factory]] · [[matt-pocock]] · [[claude-opus-5-5]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`는 더빙의 ASR(인용하지 않음 — *Pi* → *Aider* · *Pie*, *Earendil* → *Sentry*, *Opus 5.5* → *Opus 3.5*).
+- ⚠️ **라이브 원음이 어느 트랙에도 없다.** ko-orig 무캡션 열여덟 곳(약 5분 50초)이 전부 발췌 자리이고 en-orig도 같은 자리가 빈다 — 11-19 업로드의 Nadella · Blow 편과 달리 영어 트랙이 원음을 싣지 않았다. **Zechner · Ronacher · Pocock 본인 인용 0**, 제목의 말을 Zechner가 직접 푼 답(06:55~07:31)도 무캡션. 10:08~10:17의 조각은 번역 캡션인지 원음인지 미확정이라 인용하지 않았다.
+- ⭐ 채널의 검증 소스들 가운데 처음으로 **검증 산출물의 양을 신뢰의 근거로 삼는 것** 을 문제 삼는다. 처방은 읽는 양의 한도와 이해.
+- 게시 시각 **11-20 18:00 KST**. 설명란의 출처 넷(원본 라이브 `ZBTegd8DUZM` · Zechner 블로그 글 · Ronacher 블로그 글 · Pi 저장소)은 미열람.
+
+[[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature|200만 달러를 거절한 오픈AI 내부자가 아내에게 한 말 | Daniel Kokotajlo]](`AaamlI8WH7Q`, 14:47, 공식 챕터 10) — 한국어 해설, The Diary Of A CEO의 Kokotajlo 인터뷰(07-13 공개)를 Vox 보도 · 본인 글 · AI Futures Project 자료와 맞춰 본다 ([[daniel-kokotajlo]](신규) · [[openai]] · [[sam-altman]] · [[automated-ai-research]] · [[agentic-misbehavior]] · [[balance-of-power-safety]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`kind=asr&lang=ko`, 이번엔 `variant=gemini` 없음). ⭐ **11-19 업로드 두 편(Nadella · Blow)과 반대** — 인터뷰 원음 발췌가 **ko-orig에 영어 그대로** 잡혔고 `en-orig`는 내레이션 자리의 더빙 ASR뿐(발췌 자리는 대부분 빔). 예외는 13:43~14:17(두 트랙에 같은 영어). → *더빙 영상의 원음이 어느 트랙에 잡히는지는 영상마다 다르다 — 매번 두 트랙을 다 볼 것.*
+- ⚠️ 두 트랙 모두 빈 곳 열한 곳 — *실업률은 멀쩡하다* 에 대한 답(07:09~07:24) · Plan A 설명의 끝(10:53~11:14) · *아직 늦지 않았다* 의 원음(14:26~14:35)이 여기 든다. 내용을 적지 않았다.
+- ⭐ 해설이 **인터뷰 뒤의 일로 보정** 한 곳: 인터뷰(7월)의 중간값 2029년 → 11-10 팀 업데이트의 *초인적 AI 연구자* 2027년 5월. 금액도 가른다 — 본인이 밝힌 것은 *가족 재산의 85% 이상*, 200만 달러는 언론 추정.
+- 더빙 ASR이 틀린 곳: 조회수 2,300만 → *24 million*, 미중 칩 전쟁 → *US-China war*, *경쟁을 이어가면* → *If the economy continues*.
+- 게시 시각 **11-21 07:00 KST**(이 회차 두 시간 전, `upload_date` 20261120은 UTC 기준). 설명란의 출처 열(원 인터뷰 `_g4l7YkDQwA` · Vox 둘 · X 게시물 둘 · *What 2026 looks like* · Asterisk · AI 2027 · 타임라인 업데이트 · AI 2040)은 미열람.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄) — 대기 목록은 이것 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음).

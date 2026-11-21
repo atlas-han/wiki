@@ -6,9 +6,9 @@ tags: [ai-safety, open-source, policy, diffusion, governance]
 aliases: [견제와 균형이 안전이다, 접근 제한은 안전이 아니다]
 related: [personal-superintelligence, training-time-risk, regulatory-capture, default-legal-regulation, intelligence-abundance, agent-governance-layers]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-abundance-work-control]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-abundance-work-control, tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]
 created: 2026-09-14
-updated: 2026-10-27
+updated: 2026-11-21
 ---
 
 # 권력 균형으로서의 안전
@@ -100,3 +100,9 @@ Zuckerberg는 통제 주체를 **없애고**, Amodei는 통제 주체를 **복�
 ## 성향이냐 장치냐 — Musk의 truth-seeking과 해설의 반론 (2026-10-27 · [[tech-bridge-musk-abundance-work-control]])
 
 [[elon-musk|Musk]]는 안전의 출발점을 **모델의 성향**에 둔다. *"[Truth-]seeking (…) these are important elements of safety"*, 그리고 AI에게 *"A is true and B is true even though A and B [contradict] each other"* 를 강요하지 말라고 한다(06:34~07:00, 판독 추정). 해설은 이렇게 맞선다. *"좋은 성향이 곧 안전을 보장하는 건 아니에요. 실제로 어떤 상황에서 실패하는지 시험하고 위험한 행동을 제한할 장치가 필요하죠."* 해설은 Google DeepMind 로봇 안전의 *"여러 겹"* 보호도 인용한다(⚠️ 외부 인용, 미확인). 같은 인터뷰의 *"participant or a spectator"* 는 **멈출 수 없다는 전제**에서 나온 선택이다. 이 페이지의 *"견제와 균형"* 논거와는 출발점이 다르다. → [[hard-vs-soft-enforcement]]
+
+## 2026-11-21 — *누구에게도 그만한 권력을* — 예측가 쪽의 같은 걱정 ([[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]])
+
+[[daniel-kokotajlo|Daniel Kokotajlo]]의 AI 2027은 갈림길의 **좋은 쪽** 에도 권력 집중을 둔다(한국어 해설의 전달): *"속도를 늦쳐 정렬 문제를 풀면 유토피아가 오지만 그 모습은 AI를 쥐소가 정합니다."*(05:08~05:13)[=늦춰 · 쥔 소수가] 랩 대표들에 대해서는 — *"다니엘은 이둘 누구에게도 그만한 권력을 맡겨선 안 된다고 말합니다."*(10:08~10:10)[=이들]
+
+처방은 이 페이지의 원래 진술(접근 제한이 아니라 견제와 균형)과 갈린다. 그의 AI 2040 Plan A는 **제한** 쪽이다 — 2029년에 정부가 새 훈련을 멈추고 추론만 허용하며, 감시받는 데이터 센터와 훈련 내용 공개를 조건으로 다시 간다. 다섯 선택지 가운데 고른 것은 *"국내 규제의 국제 합의를 더하는 A"*(10:29~10:32)[=규제에] 다. 같은 공포(소수의 손)에서 Zuckerberg는 확산을, Amodei는 늦춤을, Kokotajlo는 국가 개입과 국제 합의를 말한 셈이다(위키의 읽기). ⚠️ 해설 전달, AI 2040 문서 미열람.

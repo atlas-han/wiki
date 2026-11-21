@@ -5,9 +5,9 @@ category: person
 tags: [openai, ceo, ai-safety, agi, compute]
 links:
   - https://openai.com/
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-peter-steinberger-2027-developer]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-jensen-huang-cbs-interview, tech-bridge-altman-devday-dots, tech-bridge-peter-steinberger-2027-developer, tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]
 created: 2026-09-06
-updated: 2026-11-10
+updated: 2026-11-21
 ---
 
 # Sam Altman
@@ -135,3 +135,9 @@ DevDay 키노트 당일 [[dan-shipper|Dan Shipper]](⚠️ 설명란 판독)와�
 ## Steinberger 영입 발표 (2026-11-10 · [[tech-bridge-peter-steinberger-2027-developer]])
 
 해설 전달: Altman이 2026년 2월 [[peter-steinberger|Peter Steinberger]]의 [[openai|OpenAI]] 합류를 직접 알리며 그를 *"다음 세대 개인 에이전트를 이끌 사람"*(00:43~00:45)이자 천재라고 불렀다. 게시물은 1600만 회 이상 조회됐다(00:48~00:52, ASR 문장 끊김). ⚠️ X 게시물(설명란 링크)은 위키가 열지 않았다.
+
+## 2026-11-21 — 비방 금지 조항과 *몰랐다* (2024-05, 해설 전달) ([[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]])
+
+[[daniel-kokotajlo|Daniel Kokotajlo]]의 퇴사 서류에 든 비방 금지 조항이 2024년 5월 Vox 보도로 알려진 뒤의 일을 해설이 옮긴다. Altman은 X에 이런 일이 있는 줄 몰랐다며 정말 부끄럽다고 썼다고 한다. 이어서: *"하지만 며칠 뒤 복스는 관련 회사 문소에 올트먼의 서명이 있다고 보도했습니다. 정말 알았는지는 증명되지 않았지만요."*(03:42~03:48)[=Vox · 문서] ⚠️ 위키는 X 게시물도 Vox 보도 두 편도 열지 않았다 — *알았다* 도 *몰랐다* 도 확정하지 않는다.
+
+같은 인터뷰에서 Kokotajlo는 랩 대표들이 서로를 믿지 못해 멈추지 못한다고 본다 — 원음 조각(ko-orig 단일 트랙) *"can't let Dario or Elon get there first"*(09:46~09:48), 해설: *"샘도 다리오도 일론도 서로를 못 믿으니 아무도 멈추지 못합니다."*(10:04~10:06) ⚠️ Altman의 속을 짐작한 남의 말이다.

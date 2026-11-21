@@ -2893,3 +2893,31 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 
 3편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1120/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 세 편 `check` 합계 314건 불일치 0. 세 편 모두 영어 더빙이 붙었고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **이번 회차의 새 판단**: Blow · Nadella 편은 인터뷰 원음 발췌가 ko-orig에서는 무캡션이고 **en-orig에만** 잡혔다 — 원음으로 판정한 근거(ko 무캡션 구간과 겹침 · 1인칭 구어 · 발췌 뒤 더빙이 3인칭으로 받음)를 소스 페이지에 적고 *en-orig 단일 트랙, 교차 확인 없음* 으로 표시해 인용했다. Gates 편은 원음 구간이 두 트랙 모두 무캡션이라 본인 인용 0.
 
+## [2026-11-21] ingest | Tech Bridge — 11-20 업로드 2편 (검증은 과대평가됐다 · 200만 달러를 거절한 오픈AI 내부자가 아내에게 한 말)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음, 전부 `public`). 신규 공개 2편: `zU3vWXMBJAk`(11-20 18:00 KST) · `AaamlI8WH7Q`(11-21 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261120). `Yhck-x6VuLs`는 목록 범위 밖 · 단건 조회 `subscriber_only` 줄 지속 — 건너뜀, 페이지 없음. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 2 · entity 4**, 기존 페이지 보강 15개(+ tech-bridge), index **1059 → 1065**(실측 일치).
+
+- `zU3vWXMBJAk`(13:51, 챕터 10) → [[tech-bridge-zechner-ronacher-verification-is-overrated]]: [[matt-pocock|Matt Pocock]]의 11-17 라이브(손님 [[mario-zechner|Mario Zechner]] · [[armin-ronacher|Armin Ronacher]])를 두 사람의 블로그 글 · Pi 저장소와 대조한 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-20 18:00 KST 게시.
+  - 신규: [[mario-zechner]] · [[armin-ronacher]] · [[pi-coding-agent]]
+  - 보강: [[verification-bottleneck]](반대 방향의 말 — 양은 증거가 아니다 · 단위의 문제) · [[reward-hacking]](배포 시점 판본: 시작 시간 100% 단축) · [[ai-formal-verification]](Lean 증명의 회고) · [[cross-model-prior-intersection]](보험으로서의 앙상블 리뷰 — 합집합과 과잉 지적) · [[review-wip-limit]](개인 단위: 리뷰할 수 있는 만큼만) · [[cognitive-debt]](이해에서 도망치는 업계) · [[named-human-accountability]](책임지는 건 나 · 이해의 조건) · [[software-factory]](다크 팩토리: 아직 본 적 없다 · Pi의 조건부 자동 수정) · [[matt-pocock]](진행자 · 전술과 전략) · [[claude-opus-5-5]](감독 없이 훨씬 오래)
+  - ⚠️ **라이브 원음이 두 트랙 모두 무캡션이다.** ko-orig 열여덟 곳(약 5분 50초)이 전부 발췌 자리이고 en-orig(더빙 ASR)도 같은 자리가 빈다 — 11-20 회차의 *en-orig에 원음이 잡힌다* 는 관찰이 이 편에는 맞지 않는다. Zechner · Ronacher · Pocock **본인 인용 0**, 인용 147건은 전부 ko-orig 내레이션. 빈 구간의 내용(Opus 5.5 답의 원음 · *가중치* 설명 · ***검증은 과대평가됐다* 를 직접 푼 답** · 친구와의 다크 팩토리 대화 · 주니어에게 준 답)은 적지 않았다.
+  - ⚠️ 10:08~10:17에 ko-orig는 `>>` 와 함께 한국어 문장을, en-orig는 같은 내용의 영어를 실었다(파일 · 레코드 2,000개 · 지금은 수백만 개). 번역 캡션인지 원음인지 가리지 못해 **인용하지 않고** 낱말만 적었다 — Ronacher가 *지난주 금요일에 겪은 일* 이 무엇인지는 미상.
+  - ⚠️ 더빙 ASR의 고유명사 오류: *Pi* → *Aider* · *Pie*, *Earendil* → *Sentry*(*Sentry acquired Aider* — 사실과 다른 문장이 된다), *Opus 5.5* → *Opus 3.5*, *Zechner* → *Gerner*. [[pi-coding-agent]] 별칭에 오인식으로 적어 두었다.
+  - ⚠️ ASR 판독: *모두를 전부 뜯어냈습니다* → 모듈을(설명란) · *엘엔딜* → Earendil · *아르미는 · 아르미니 · 아르미네* → 아르민 · *린이라는 증명도 고로* → Lean이라는 증명 도구로 · *젠 숫자* → 잰 · *이해해서 도망치고* → 이해에서 · *사람 코드가 나올 수도* → 나을. **추정: *스티브 얘기도* → Steve Yegge도**(성은 어느 캡션에도 없다). 04:13 Lauren Tan 인용의 첫 구절(*모호함이*)은 캡션에서 빠졌다.
+  - 자동 수정 *조건 셋* 이 무엇의 조건인지는 빈 구간에 있어 앞뒤 문맥으로 자동 수정이라 읽었다(병합까지 자동인지는 모른다). 분류 봇을 만든 *데이비드* 가 David Cramer라는 근거는 없다 — 따로 적었다.
+  - 페이지화하지 않음: Earendil(인수 한 문장뿐 — 다음 소스가 오면 재검토) · libGDX · Flask · David Cramer · Steve Yegge(추정 판독) · Lean · 2021년 Facebook 장애 · 블로그 글 두 편. [[lauren-tan]] · [[sentry]]는 지나가는 언급이라 보강하지 않았다.
+- `AaamlI8WH7Q`(14:47, 챕터 10) → [[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]]: 전 OpenAI 연구원 [[daniel-kokotajlo|Daniel Kokotajlo]]의 The Diary Of A CEO 인터뷰(진행 Steven Bartlett, 07-13 공개)를 Vox 보도 · 본인 글 · AI Futures Project 자료와 대조한 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`kind=asr&lang=ko`). 11-21 07:00 KST 게시(`upload_date` 20261120).
+  - 신규: [[daniel-kokotajlo]]
+  - 보강: [[openai]](퇴사자의 회고 · 비방 금지 서명) · [[sam-altman]](*몰랐다* 와 Vox의 서명 보도 — 미확정으로) · [[automated-ai-research]](순서의 주장: 경제보다 자기 연구 먼저) · [[agentic-misbehavior]](*그냥 희망일 뿐* · 70%의 뜻) · [[balance-of-power-safety]](같은 공포, 국가 개입 쪽 처방)
+  - ⭐ **트랙 배치가 어제와 반대** — 인터뷰 원음 발췌가 **ko-orig에 영어 그대로** 잡혔고 `en-orig`는 내레이션 자리의 더빙 ASR(인용하지 않음), 발췌 자리는 대부분 비었다. 영어 원음 인용은 ko-orig 글자이고 **13:43~14:07만 두 트랙 확인**(`<!--k-->`), 나머지는 ko-orig 단일 트랙. en-orig에만 있는 원음은 14:09~14:17 한 구절(*maybe the future will be good*)이고 그렇게 표시했다. 화자 구분 없음.
+  - ⚠️ 두 트랙 모두 빈 열한 곳(00:07~00:10 · 02:40~02:49 · 03:21~03:38 · 05:21~05:32 · 06:18~06:25 · 07:09~07:24 · 09:32~09:43 · 10:53~11:14 · 11:42~11:48 · 11:59~12:10 · 14:26~14:35)은 **내용을 적지 않았다.** 조각난 발췌 넷은 직접 인용을 아꼈다. en-orig 13:30~13:37의 버튼 문답 조각(*Probably not, but I would feel very*)은 화자 · 위치를 확정할 수 없어 인용하지 않았고, 버튼에 대한 최종 답이 뒤집혔는지는 *확정되지 않음* 으로 적었다.
+  - ⭐ 해설의 보정 둘: 타임라인(인터뷰의 2029년 → 11-10 업데이트의 2027년 5월 — 같은 지표인지는 미확인으로 표시) · 금액(본인 글은 *가족 재산의 85% 이상*, 200만 달러는 언론 추정).
+  - ⚠️ ASR 판독: *그만났자* → 그만 낳자 · *다이어리 오버 CEO* → The Diary Of A CEO · *읽습니다* → 이끕니다 · *복습보도* → Vox 보도 · *산내 메신저에서 묶기* → 사내 메신저에서 묻기 · *쥐소가* → 쥔 소수가 · *일절는요* → 일자리는요 · *10쪽* → 10조 · *주차는* → 늦추는 · *face of progress* → pace. 더빙 ASR의 오류(2,300만 → *24 million*, 칩 전쟁 → *war*)는 raw 머리에 적었다.
+  - 페이지화하지 않음: AI Futures Project · AI 2027 · AI 2040(1차 문서를 ingest하면 분리 — 지금은 [[daniel-kokotajlo]]에) · The Diary Of A CEO · Steven Bartlett · Vox · Asterisk · interpretability(지나가는 언급).
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1121/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 249건(147 + 102) 불일치 0. 두 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치가 편마다 다르다**: Zechner 편은 라이브 원음 발췌가 **두 트랙 모두 무캡션**(ko-orig 열여덟 곳 약 5분 50초)이라 Zechner · Ronacher · Pocock 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다 — 제목의 말을 Zechner가 직접 푼 답(06:55~07:31)도 캡션에 없다. Kokotajlo 편은 어제 Nadella 편과 반대로 인터뷰 영어 원음이 **ko-orig에** 영어 그대로 잡혀 영어 인용도 ko-orig 글자로 했다(두 트랙 확인은 13:43~14:07 한 곳, 나머지는 ko-orig 단일 트랙). 두 트랙 모두 빈 구간은 내용을 적지 않았다.

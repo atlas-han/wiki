@@ -6,9 +6,9 @@ tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
 related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review, greenfield-vs-brownfield-agent-risk]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer, tech-bridge-anthropic-30k-merges-verification, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer, tech-bridge-anthropic-30k-merges-verification, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-09-13
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 
 # 검증 병목
@@ -293,3 +293,14 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 - **CEO도 모른다** — *"I've not worked in a team that is mostly now code is output"*(02:49~02:53) 그래서 신입 프리셉터십 팀에 들어가 배우고 싶다고 한다.
 
 이 페이지의 진술은 Cursor · Anthropic · Factory 등 에이전트를 만드는 쪽에서 주로 왔다. Copilot을 가진 회사의 CEO가 같은 결론(*다음 문제는 코드가 아니라 검증*)을 말한 것으로 적는다. 새 수치는 없다.
+
+## 2026-11-21 — *검증은 과대평가됐다* — 에이전트를 만드는 쪽에서 나온 반대 방향의 말 ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+코딩 에이전트 [[pi-coding-agent|Pi]]를 만드는 [[mario-zechner|Mario Zechner]]와 [[armin-ronacher|Armin Ronacher]]가 [[matt-pocock|Matt Pocock]]의 라이브에서 한 말(한국어 해설, ⚠️ 두 사람의 원음은 두 트랙 모두 무캡션 — 아래는 전부 내레이션 전달).
+
+- **양은 증거가 아니다** — *"테스트가 많다는 것과 그 테스트가 맞는 걸 재고 있다는 건 다른 이야기라는 거죠."*(07:31~07:34) 사례는 시작 시간 100% 단축 실험이다: *"젠 숫자는 완벽했고 앱은 사라졌습니다."*(07:36~07:38)[=잰] → [[reward-hacking]]
+- ⭐ **단위의 문제** — *"순수 함수 하나는 쉽게 검증한다. 하지만 모듈 하나하나가 검증됐다고 그 조합까지 검증된 건 아니다."*(07:55~07:59) 검증이 통하는 분야는 처음부터 그렇게 쓴다: *"항공 우주처럼 수십년 검증해온 분야는 처음부터 검증받을 걸 알고 코드를 씁니다. 우리 코드는 전혀 그렇지 않죠."*(08:02~08:06)
+- **버리자는 말은 아니다** — *"검증을 버리라는 말이 아닙니다. 없는 것보다는 낫다. 다만 CI가 초록불이라고 안심하지는 말라는 거죠."*(08:27~08:32)
+- **처방은 검증 장치를 더하는 쪽이 아니라 읽는 양을 묶는 쪽이다** — *"에이전트가 하루에 만들 코드 양의 한도를 정하라. 내가 실제로 리뷰할 수 있는 만큼만."*(06:37~06:41) → [[review-wip-limit]]. 맺음: *"초록 불을 믿되 안심하지 않는다. 핵심 코드는 직접 읽는다. 그리고 이해를 놓치지 않는다."*(13:34~13:39)
+
+이 페이지의 소스 대부분은 *병목이 검증으로 옮겨갔으니 검증을 자동화 · 계층화하라* 로 간다. 이 소스는 같은 진단(생성은 싸졌다)에서 출발해 **검증 산출물의 양을 신뢰의 근거로 삼는 것** 을 문제 삼는다. 반박이라기보다 한계선이다 — Pi의 자동 수정 조건도 라벨 · 실패하는 테스트 · 통과로, 검증 장치다. ⚠️ 제목의 말을 Zechner가 직접 푼 답(06:55~07:31)은 캡션에 없고, 새 수치도 없다.

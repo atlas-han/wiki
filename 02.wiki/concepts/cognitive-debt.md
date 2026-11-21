@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [cognitive-load, code-review, human-in-the-loop, verification, spec-driven-development, agents]
 aliases: [cognitive debt, 인지 부채, AI fatigue, AI 피로]
-related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry]
+related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry, review-wip-limit]
 first-seen: tech-bridge-sdd-full-course
-sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow]
+sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-09-27
-updated: 2026-10-16
+updated: 2026-11-21
 ---
 
 # 인지 부채와 AI 피로
@@ -62,3 +62,14 @@ updated: 2026-10-16
 - [[tech-bridge-sdd-full-course]] · [[spec-driven-development]] · [[verification-bottleneck]]
 - [[tech-bridge-kent-beck-craft-augmented-development]] — 속도 조절과 학습 (Kent Beck)
 - [[tech-bridge-sourcegraph-codebase-visibility]] — 조직 단위의 증상 (Dan Adler)
+
+## 2026-11-21 — *업계가 이해에서 도망치고 있다* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[pi-coding-agent|Pi]]를 만드는 두 사람이 [[matt-pocock|Matt Pocock]]의 라이브에서 거듭 꺼낸 단어가 *이해* 다(한국어 해설의 전달, 원음은 무캡션).
+
+- [[mario-zechner|Mario Zechner]]: *"마리오는 지금 업계가 이해해서 도망치고 있다고 말합니다."*(10:50~10:52)[=이해에서]
+- [[armin-ronacher|Armin Ronacher]]의 2월 블로그 글(내레이션이 옮김): *"지각 없는 기계는 결코 책임을 질 수 없다. 그러니 사람은 기계가 낸 결과를 이해할 수 있어야 한다고요."*(10:43~10:49) → [[named-human-accountability]]
+- 장애의 날: *"모든 게 한 번에 무너진 날, 첫 원리부터 따진 사람이 필요했다는 거죠."*(11:39~11:44)(2021년 Facebook 장애를 두고) *"포춘 500 기업의 비상 계획인 또 다른 코딩 에이전트일 수는 없다는 겁니다."*(11:45~11:48)[=계획이]
+- 빚을 지지 않는 방법으로 Zechner가 드는 것은 읽는 양의 한도다 → [[review-wip-limit]]
+
+인지 부채를 *피로* 가 아니라 **책임과 비상 대응 능력** 의 문제로 놓는 판본이다. ⚠️ Zechner가 *이미 보고 있다* 는 장면이 무엇인지는 빈 구간에 있어 적지 못했다.

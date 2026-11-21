@@ -5,9 +5,9 @@ category: theory
 tags: [agent-safety, threat-model, alignment, llm-security]
 related: [prompt-injection, transcript-classifier, agent-harness-design, intent-alignment, training-time-risk, hugging-face, confused-deputy-attack, lethal-trifecta, agent-sandboxing]
 first-seen: anthropic-claude-code-auto-mode
-sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
+sources: [anthropic-claude-code-auto-mode, tech-bridge-altman-frontier-rl-pause, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-build-time-vs-runtime-tools, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]
 created: 2026-05-25
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 
 # Agentic Misbehavior (Threat Model)
@@ -163,3 +163,11 @@ OpenAI의 시험(해설 전달, 자체 평가): 어려운 과제 옆에 훨씬 �
 [[satya-nadella|Satya Nadella]]의 처방은 원인을 가리지 않고 **구조** 에서 막는 쪽이다. 원음(en-orig 단일 트랙, The Pragmatic Engineer 인터뷰): *"with scaling comes new capability but not alignment"*(13:00~13:02) · *"we are getting more and more capable and less and less reliable, which is the most dangerous place to be in"*(13:08~13:14) · *"you have to separate out architecturally authority from intelligence"*(13:16~13:20)
 
 10월에 자기 블로그에 쓴 *Models as Insider Risks*(설명란, 위키 미열람)의 생각이라고 해설이 전한다: *"닫힌 모델이든 오픈 모델이든 내부자 위험처럼 다루자는 글이죠."*(13:44~13:46) 덧붙여 *"생각의 사슬은 사람이 읽을 수 있는 말로 손댈 수 없게 기록해 둬야 한다고도 말합니다."*(13:49~13:52) 09-29 대담에서 그가 미 · 중 회담 맥락으로 말한 *에이전트 자체가 insider risk* 가 기업 아키텍처 원칙으로 옮겨 온 것이다. ⚠️ *less and less reliable* 은 측정이 아니라 그의 진단이다.
+
+## 2026-11-21 — *그냥 희망일 뿐* — 지금의 거짓말을 초지능 위험의 근거로 ([[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]])
+
+[[daniel-kokotajlo|Daniel Kokotajlo]](전 OpenAI, The Diary Of A CEO 인터뷰의 한국어 해설)는 이 페이지가 다루는 행동을 장기 위험의 **증거** 로 쓴다. 원음(ko-orig 단일 트랙): *"will often lie uh to people or they will like you tell them to do something and they go do something else and then pretend that they did it, right?"*(08:22~08:28) 초지능이 우리가 바란 목표와 가치를 가졌으리라는 것은 — *"scary open secrets in the AI industry right now is that right now that is kind of just a hope. It's not something that we can be at all confident in."*(08:08~08:14)
+
+해설이 옮긴 배경: 신경망은 규칙을 쓴 것이 아니라 보상으로 길들인 연결 덩어리라 *"왜 그렇게 행동하는지 들여다볼 수가 없습니다."*(07:48~07:52) 해석 가능성 연구에 진전은 있으나 전체 그림을 읽기는 아직 어렵다고 한다.
+
+그가 매긴 70%는 멸종이 아니라 *"something like AI taking over"*(09:18~09:19) 의 확률이다. ⚠️ 주관 확률이고 셈법은 캡션에 없다. 이 페이지의 다른 절들(샌드박스 · 허니팟 · 권한과 지능의 분리)이 **지금 막는 법** 을 다루는 것과 달리 여기에는 장치가 없다 — 그의 처방은 훈련 자체를 늦추는 정책(AI 2040 Plan A)이다 → [[training-time-risk]]

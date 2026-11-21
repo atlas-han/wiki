@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [verification-bottleneck, code-review, autonomous-agents, wip-limit, flow-control, human-in-the-loop, cost-limits]
 aliases: [review WIP limit, work in progress limit, 리뷰 용량 한도, PR 할당 한도, 에이전트 PR 유량 제어]
-related: [verification-bottleneck, compressed-review-surface, risk-proportional-human-review, human-as-async-api, agent-roi-measurement, software-factory, automated-code-review, trusted-throughput]
+related: [verification-bottleneck, compressed-review-surface, risk-proportional-human-review, human-as-async-api, agent-roi-measurement, software-factory, automated-code-review, trusted-throughput, cognitive-debt]
 first-seen: tech-bridge-atlassian-build-your-own-sdlc
-sources: [tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-10-17
-updated: 2026-10-17
+updated: 2026-11-21
 ---
 
 # 리뷰 WIP 한도 (Review WIP Limit)
@@ -47,3 +47,13 @@ updated: 2026-10-17
 ## References
 
 - [[tech-bridge-atlassian-build-your-own-sdlc]]
+
+## 2026-11-21 — 개인 단위의 판본: *내가 실제로 리뷰할 수 있는 만큼만* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[mario-zechner|Mario Zechner]]가 3월 블로그 글에 쓴 원칙(한국어 해설이 옮김 — 위키는 글 미열람).
+
+- *"에이전트가 하루에 만들 코드 양의 한도를 정하라. 내가 실제로 리뷰할 수 있는 만큼만."*(06:37~06:41)
+- 짝이 되는 원칙: *"아키텍처나 API 처럼 시스템의 모양을 정하는 건 손으로 쓰라고 합니다."*(06:42~06:46)
+- 본인이 말하는 효과: *"그 덕에 12개월 동안 에이전트가 고쳐왔는데도 파이의 코드베이스를 여전히 안다는 겁니다."*(06:30~06:34)
+
+Atlassian의 판본이 팀의 리뷰 용량에 맞춘 **설정** (주당 PR 수 · WIP · 비용 한도)이었다면 이것은 유지보수자 한 사람의 **규율** 이다. 목적도 다르게 적힌다 — 처리량 관리가 아니라 *코드베이스를 여전히 아는 것*(→ [[cognitive-debt]]). ⚠️ 한도의 숫자는 없고 효과는 본인 보고다.

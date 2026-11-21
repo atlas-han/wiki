@@ -1333,5 +1333,13 @@
   "02.wiki/sources/tech-bridge-jonathan-blow-30-years-zero-progress.md": "LiVideo",
   "02.wiki/entities/github-copilot.md": "LiBoxes",
   "02.wiki/concepts/model-swap-acid-test.md": "LiPuzzle",
-  "02.wiki/entities/jonathan-blow.md": "LiUser"
+  "02.wiki/entities/jonathan-blow.md": "LiUser",
+  "01.raw/articles/2026-11-20_검증은 과대평가됐다 Pi 제작자 Mario Zechner.md": "LiNewspaper",
+  "01.raw/articles/2026-11-20_200만 달러를 거절한 오픈AI 내부자가 아내에게 한 말 Daniel Kokotajlo.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-zechner-ronacher-verification-is-overrated.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature.md": "LiVideo",
+  "02.wiki/entities/mario-zechner.md": "LiUser",
+  "02.wiki/entities/armin-ronacher.md": "LiUser",
+  "02.wiki/entities/pi-coding-agent.md": "LiTerminal",
+  "02.wiki/entities/daniel-kokotajlo.md": "LiUser"
 }

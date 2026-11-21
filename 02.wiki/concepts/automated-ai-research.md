@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [automated-ai-research, recursive-self-improvement, speedrun, optimizer-speedrun, benchmark, research-agent, discovery-loop, prime-intellect]
 aliases: [automated AI research, AI 연구 자동화, 자동화된 AI 연구, recursive self-improvement, 재귀적 자기 개선, optimizer speedrun, 옵티마이저 스피드런, research speedrun]
-related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect, production-trace-eval-flywheel, differential-capability-limitation]
+related: [generator-evaluator-pattern, verifiable-goals, self-harness, reward-hacking, context-resets-and-compaction, taste-vs-judgment, jagged-capability-frontier, claude-code, codex, nanogpt, prime-intellect, production-trace-eval-flywheel, differential-capability-limitation, agentic-misbehavior]
 first-seen: tech-bridge-agents-vs-humans-optimizer-speedrun
-sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-wandb-aria-self-improving-agent, tech-bridge-parakhin-shopify-ai-cost-barbell, tech-bridge-claude-fable-5-2-announcement, tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]
 created: 2026-09-28
-updated: 2026-11-11
+updated: 2026-11-21
 ---
 
 # 자동화된 AI 연구 (Automated AI Research)
@@ -127,3 +127,14 @@ Google의 **AlphaEvolve**와 후속 논문에서 영감받은 **멀티에이전�
 이 페이지가 측정해 온 능력(모델 개발을 앞당기는 연구)을, [[anthropic|Anthropic]]은 [[fable-5-2|Fable 5.2]] 훈련에서 **일부러 덜 키웠다**고 발표문에 적었다(해설 전달). *"구체적으로는 가속기 커널 최적화 그리고 언어 모델 구조를 개선하는 능력입니다."*(06:03~06:07) 반면 기존 머신 러닝 연구에는 영향이 없도록 했다. → [[differential-capability-limitation]]
 
 같은 발표에서 과학 연구를 맡기는 벤치마크는 58.7 → 74.6으로 올랐다(01:53~01:55). *AI 연구* 전체가 아니라 **AI를 더 빨리 만드는 길목**만 막았다는 구분이다.
+
+## 2026-11-21 — 경제보다 먼저: *회사는 자기 연구부터 자동화한다* ([[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]])
+
+[[daniel-kokotajlo|Daniel Kokotajlo]]는 이 페이지의 주제를 **순서의 주장** 으로 말한다(The Diary Of A CEO 인터뷰, 한국어 해설). 로보택시 · 배관공 로봇 · 변호사 AI가 먼저 오는 것이 아니다 — 원음(ko-orig 단일 트랙): *"We're not going to see that sort of like broad diffusion of AI into the economy happening first because that's not what they're focusing on first."*(06:41~06:48) 해설의 정리: *"먼저 자기 연구를 자동화하고 스스로 개선하며 초지능에 간 다음 경제로 나간다."*(06:55~07:01)
+
+- AI 2027의 줄거리도 같은 순서다: *"They automate the coding, then they automate the rest of the research process then the face of progress accelerates dramatically"*(04:23~04:28)[=pace]
+- 함의(해설 요약, 원음 무캡션): 실업률이 멀쩡하다는 것은 안심할 근거가 못 된다 — *"일자리에 다을 무렵엔 이미 너무 빠르다고요."*(07:27~07:29)
+- OpenAI 입사 당시의 공감대도 이 능력을 문턱으로 삼았다 — AI 연구 과정을 자동화할 만한 것에 가까워지면 멈춘다(→ [[openai]]).
+- ⭐ 해설의 보정: 그의 팀은 2026-11-10 *초인적 AI 연구자* 의 중간값을 2027년 5월로 당겼다(인터뷰 때는 2029년이라 했다 — 같은 지표인지는 미확인).
+
+⚠️ 이 페이지의 앞선 절들은 스피드런 · 제품 속 auto research처럼 **잴 수 있는 것** 이었다. 이것은 예측가의 시나리오이고 측정이 아니다. 위키는 AI 2027도 타임라인 업데이트도 열지 않았다.

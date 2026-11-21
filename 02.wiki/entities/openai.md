@@ -3,11 +3,11 @@ title: OpenAI
 type: entity
 category: org
 tags: [ai-lab, gpt, codex, frontier-lab]
-sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-codex-agents-that-dont-quit, tech-bridge-gpt-6-2-astra-launch-day-reactions]
+sources: [openai-nextdoor-codex, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-dario-amodei-cbs-interview, tech-bridge-brockman-agi-era-defender-window, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-altman-benioff-dreamforce, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-nadella-copilot-autopilot, tech-bridge-death-of-code-review, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-cooking-with-codex, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-codex-app-server, tech-bridge-chieng-lee-ai-video-production, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-peter-steinberger-2027-developer, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-codex-agents-that-dont-quit, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]
 links:
   - "https://openai.com/"
 created: 2026-06-27
-updated: 2026-11-19
+updated: 2026-11-21
 ---
 
 # OpenAI
@@ -252,3 +252,12 @@ GPT 모델 패밀리와 ChatGPT·[[codex|Codex]]를 만드는 AI 연구·제품 
 - **사내 기본은 Sol** — *"오픈 AI는 직원 다수가 솔을 기본 모델로 쓴다고 적었습니다."*(07:46~07:48)
 - **조기 접근자의 공개 비판** — [[theo|Theo]] · Matt Shumer · [[dan-shipper|Dan Shipper]]가 출시 수십 분 안에 부정 평가를 올렸다. Theo의 것은 테스트 기간에 OpenAI에 보냈던 편지다. 호평은 3D · 영상 쪽(Ethan Mollick · ashe · Bijan Bowen).
 - 위키의 읽기: 벤더가 약점을 발표 글에 수치로 적고 시스템 프롬프트로 덮는 방식은 같은 달 Anthropic의 [[fable-5-2|Fable 5.2]] 프롬프트 문서와 같은 모양이다. → [[demo-collaboration-gap]]
+
+## 2026-11-21 — 퇴사자의 회고: *가까워지면 멈춘다* 와 비방 금지 서명 ([[tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature]])
+
+전 연구원 [[daniel-kokotajlo|Daniel Kokotajlo]](2022년 입사 · 2024년 퇴사)의 The Diary Of A CEO 인터뷰(한국어 해설). ⚠️ 퇴사자의 회고와 해설의 전달이고 OpenAI 쪽 반론은 소스에 없다.
+
+- **입사 당시의 공감대** — 원음(ko-orig 단일 트랙): *"that could maybe automate the AI research process, we would pause and figure out how to make it safe."*(01:02~01:07) 선두여야 그럴 여유가 있다는 논리 — *"that's why we need to be in the lead so that we have that room to do the safe stuff, right?"*(01:20~01:24)
+- **바뀐 이야기(해설 전달)** — *"왜 그렇게 위험한 걸 만드냐는 질문이 쏟아지자 회사가 하는 이야기가 바뀌었다고 합니다. 사실 별로 안 위험하다고요."*(01:39~01:45) 원음은 캡션에 없다.
+- **퇴사 서류(2024)** — *"I got the exit paperwork and it included this clause that said you basically have to agree not to criticize the company again."*(02:00~02:06) 서명하지 않으면 지분을 잃는다. 해설(Vox 2024-05 보도, 미열람): *"보도가 나가자 직원들이 산내 메신저에서 묶기 시작했고 회사는 물러섰습니다."*(03:13~03:17)[=사내 메신저에서 묻기]
+- 위키의 기존 OpenAI 소스는 대부분 회사 · 경영진의 1인칭이었다. 이것은 **나간 사람의 서술** 로 따로 둔다 — [[training-time-risk]]의 *훈련 앞에 게이트를 세운다* 는 자기 서술과 나란히 읽을 것.

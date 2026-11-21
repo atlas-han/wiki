@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [accountability, attribution, wiki, governance, audit, authorship]
 aliases: [사람 이름 규칙, human-backed changes]
-related: [no-silent-write, company-brain, behavior-validated-trust, agent-action-record, decision-quality, agentic-misbehavior]
+related: [no-silent-write, company-brain, behavior-validated-trust, agent-action-record, decision-quality, agentic-misbehavior, cognitive-debt]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-anthropic-code-review-seven-layers]
+sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-09-10
-updated: 2026-11-08
+updated: 2026-11-21
 ---
 
 # 모든 변경에 사람의 이름
@@ -66,3 +66,9 @@ updated: 2026-11-08
 ## 2026-10-31 — 작성자 라벨과 책임자 라벨은 다르다 ([[tech-bridge-anthropic-30k-merges-verification]])
 
 질문 *"Should agent-written code be labeled in the PR?"*(08:28~08:30)에 [[addy-osmani|Addy Osmani]]([[anthropic|Anthropic]] 쪽)는 *"I personally think it should"*(08:32)라고 답하며 소유 의식의 이동을 말한다: *"We've evolved to the point where we don't really mind so much if Claude is like labeled as hey, I'm I'm the one that wrote this thing, because we're a little bit more focused on the outcomes"*(08:45~08:54). 라벨은 *"what are some of the constraints and extra checks that we need to keep in place"*(09:08~09:10)를 정하는 데도 쓴다. 그러나 **책임은 옮기지 않는다**: *"we still label like who's the owner for this change. I might have kicked off a Claude a Claude run to complete a piece of work, but I'm I'm still on the hook. If something goes wrong, I have to go and fix it."*(09:35~09:44) [[manish-kapur]](추정)는 같은 입장에 기한을 붙인다 — *"6 to 9 months, we should label the PRs till we are confident enough in our factories"*(09:14~09:20), 금융권 고객의 *"auditability"*(09:25) 때문. → 이 페이지의 규칙에 **작성자(에이전트일 수 있음)와 책임자(반드시 사람)를 따로 표기한다**는 구분이 붙는다.
+
+## 2026-11-21 — 코드 쪽의 같은 말: *책임지는 건 에이전트가 아니라 나다* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[armin-ronacher|Armin Ronacher]](한국어 해설의 전달): *"일이 터지면 책임지는 건 에이전트가 아니라 나다."*(10:17~10:39) 2월 블로그 글에서는(내레이션이 옮김) *"지각 없는 기계는 결코 책임을 질 수 없다. 그러니 사람은 기계가 낸 결과를 이해할 수 있어야 한다고요."*(10:43~10:49)
+
+이 페이지의 규칙은 *변경에 사람의 이름을 붙인다* 였다. Ronacher는 한 단계를 더 요구한다 — 이름을 건 사람이 **결과를 이해할 수 있어야** 이름이 뜻을 가진다(→ [[cognitive-debt]]). ⚠️ 원음은 캡션에 없고 블로그 글은 미열람.

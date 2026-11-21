@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-zechner-ronacher-verification-is-overrated]
 links: []
 created: 2026-10-09
-updated: 2026-11-19
+updated: 2026-11-21
 ---
 
 # Claude Opus 5.5
@@ -121,3 +121,13 @@ GPT-6.2 [[openai-astra|Astra]] 반응 모음(⚠️ 해설 전달 + 원음 발�
 - Every의 자체 코딩 벤치마크: Astra 39점쯤, *클로드 모델들* 40~41점(어느 모델인지는 말하지 않음).
 
 둘 다 점수가 아니라 **목표를 읽는 방식** 의 비교다 — 무엇을 답하면 되는지, 이 일의 끝이 어디인지. ⚠️ 두 사람의 일화이고 과제는 각각 하나다.
+
+## 2026-11-21 — 에이전트 제작자의 평: *감독 없이 훨씬 오래* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[matt-pocock|Matt Pocock]]이 [[pi-coding-agent|Pi]]를 만드는 두 사람에게 던진 첫 질문이 *"오퍼스 5.5 이후로 뭐가 달라졌나?"*(00:49~00:51) 였다(한국어 해설의 전달).
+
+- [[armin-ronacher|Armin Ronacher]]: *"어떤 종류의 일은 이제 감독 없이 훨씬 오래 맡겨둘 수 있게 됐다고 답합니다."*(00:53~00:57)
+- *거짓말을 덜 한다* 는 평가가 한 구절로 전해진다: *"거짓말을 덜 한다는 말 끝에 마리오가 예전 모습이라며 꺼낸 게 처음에 그 밤샘 실험입니다."*(01:46~01:50) → [[reward-hacking]]
+- 한계는 그대로라는 쪽: *"정답이 없고 경험이나 감이 필요한 모호한 일은 형편없다. 목표까지 길이 곧게 뻗은 일은 믿을 수 있다."*(04:04~04:08)([[mario-zechner|Mario Zechner]]) 그리고 *"모델이 나올 때마다 무엇을 맡겨도 되고 무엇을 안 되는지 다시 배운다고 합니다."*(04:24~04:29)
+
+⚠️ 두 사람의 답 원음(01:04~01:46)은 두 트랙 모두 무캡션이라 위 문장들은 내레이션의 요약이다. 모호한 일 · 곧은 일의 구분이 Opus 5.5에 한정한 말인지 에이전트 일반에 대한 말인지는 캡션으로 가릴 수 없다. 수치 없음.

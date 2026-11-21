@@ -3,11 +3,11 @@ title: AI가 여는 형식 검증
 type: concept
 category: technique
 tags: [formal-verification, lean, proof, security, navier-stokes, verifiable-code]
-related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery, agent-verification-skill]
+related: [executable-standards, verifiable-goals, defense-factory, agent-swarm, verification-bottleneck, ai-vulnerability-discovery, agent-verification-skill, reward-hacking]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs, tech-bridge-altman-devday-dots, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lauren-tan-all-code-is-slop]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-lauren-tan-2000-prs, tech-bridge-altman-devday-dots, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-09-20
-updated: 2026-11-17
+updated: 2026-11-21
 ---
 
 # AI가 여는 형식 검증
@@ -82,3 +82,13 @@ updated: 2026-11-17
 ## 제품 팀이 실제로 쓰기 시작했다 — TLA+ · Lean, *아직 실험 중* (2026-11-17 · [[tech-bridge-lauren-tan-all-code-is-slop]])
 
 09-26에 *스펙트럼의 먼 끝, 여전히 열린 문제* 라고 하던 [[lauren-tan|Lauren Tan]]이 11월 발표(한국어 해설)에서는 쓰는 자리를 말한다: 여러 기기에 걸친 알림 같은 주요 흐름은 **TLA+로 모델 검사**, 직접 만든 가상화 라이브러리의 알고리즘은 **Lean으로 증명**(화면이 깜빡이거나 떨리지 않는지). 버그를 꽤 찾았지만 *"아직 실험 중이라고 선을 긋습니다"*(08:03~08:05). ⚠️ 해설 전달이고 찾은 버그의 수 · 종류는 없다.
+
+## 2026-11-21 — 증명해 본 사람의 회고: *하고 나서 왜 했나 싶었다* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[armin-ronacher|Armin Ronacher]]가 [[pi-coding-agent|Pi]]의 일부를 Lean으로 증명해 본 경험(한국어 해설의 전달, ASR *린이라는 증명도 고로*).
+
+- *"린이라는 증명도 고로 파이의 일부를 증명했는데 하고 나서 왜 했나 싶었다고요."*(07:42~07:46)[=Lean이라는 증명 도구로]
+- 이유: *"결국 에이전트가 참고할 산출물이 하나 더 늘었을 뿐 에이전트를 근본적으로 묶지는 못했다는 겁니다."*(07:47~07:51)
+- 같은 자리에서 [[mario-zechner|Mario Zechner]]가 짚은 단위의 문제: *"순수 함수 하나는 쉽게 검증한다. 하지만 모듈 하나하나가 검증됐다고 그 조합까지 검증된 건 아니다."*(07:55~07:59)
+
+위 [[lauren-tan|Lauren Tan]] 절의 *아직 실험 중* 보다 한 걸음 더 비관적인 실무자 보고다. ⚠️ 무엇을 증명했는지는 *파이의 일부* 뿐이고 Ronacher의 원음은 캡션에 없다. 사례 하나.

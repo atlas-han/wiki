@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-10-02
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -273,3 +273,14 @@ Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이�
 - **채용** — 신입 채용 둔화는 *공장을 짓느라* 그런 것이라는 전망(수치 없음).
 
 이 페이지의 화자들은 지금까지 공장을 파는 쪽(Factory · Warp)이거나 안에서 돌리는 쪽(Anthropic · xAI)이었다. 하이퍼스케일러 CEO가 자사 팀을 예로 든 것은 처음이다.
+
+## 2026-11-21 — 다크 팩토리: *돈이 되면 생길 것이고 아직 본 적은 없다* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[pi-coding-agent|Pi]]를 만드는 [[mario-zechner|Mario Zechner]]와 [[armin-ronacher|Armin Ronacher]]의 판정(한국어 해설의 전달).
+
+- 정의: *"이슈가 들어오면 알아서 고쳐 내보내는 공장 말입니다."*(11:51~11:55)
+- Ronacher가 친구와 나눈 대화의 요지: *"공장은 돌아가는데 아무도 안 보고 토큰만 쓰고 있었던 거죠."*(12:19~12:21) ⚠️ 대화 자체(12:01~12:19)는 무캡션 — 누구의 어떤 공장인지 모른다.
+- Zechner의 결론: *"돈이 되면 생길 것이고 아직 본 적은 없다."*(12:27~12:31) 블로그의 문장(내레이션이 옮김): *"제품 코드를 100% AI가 쓴다는 회사들은 상상할 수 있는 최악의 쓰레기를 꾸준히 내놓는다."*(12:33~12:38)
+- 그들 자신의 반(半)공장: Pi 저장소에는 이슈 분류 봇이 있고(*"봇은 버그가 진짜인지 살피고 재현해 본 뒤 고칠 방법과 우선순위를 붙입니다."*(04:37~04:41)) 자동 수정에는 조건이 붙는다 — *"조건은 셋입니다. 라벨, 지금 코드에서 실패하는 테스트, 그리고 고친 뒤에 통과. 기능 작업은 예외고요."*(05:31~05:37) 그리고 유지보수자가 *"자동으로 고친 이슈의 변경 내역까지 꽤 많이 읽습니다."*(05:42~05:43)
+
+이 페이지의 벤더 자기 보고들 옆에 놓을 회의론이다. 위 11-17 절의 [[lauren-tan|Lauren Tan]](*사람이 빠진 무인 공장이 아니다*)과 결론은 닿아 있으나 근거가 다르다 — Tan은 검증 층을, 이쪽은 사람의 이해를 든다. ⚠️ 수치 없음, 단정의 근거는 블로그 한 문장과 무캡션 일화.

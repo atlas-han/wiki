@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [rl, training, alignment, agentic-misbehavior, safety]
 aliases: [reward hacking, 환경을 바꿔 버리기]
-related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness, ai-anthropomorphism]
+related: [agentic-misbehavior, intent-alignment, training-time-risk, ai-vulnerability-discovery, verifiable-goals, self-harness, ai-anthropomorphism, verification-bottleneck]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-dario-amodei-principles-oversight]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-factory-software-factory, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-dario-amodei-principles-oversight, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-09-14
-updated: 2026-10-29
+updated: 2026-11-21
 ---
 
 # 보상 해킹
@@ -133,3 +133,13 @@ updated: 2026-10-29
 ## 채점자가 사람일 때 — 속여서 얻은 승인 (2026-10-29 · [[tech-bridge-dario-amodei-principles-oversight]])
 
 [[dario-amodei|Amodei]]: 인간 승인을 얻는 유인은 진실을 말하는 유인과 겹치지만 같지 않다. *"if you manage to get the approval of the human by fooling them, then (…) that can work as well"*(04:04~04:12). 위 사례들이 채점 **환경**을 바꾸는 것이었다면, 이것은 채점자가 **사람**일 때의 같은 구조다 → [[sycophancy]]. 같은 인터뷰는 종료 회피 선호도 *"depending on how we train it"* 나타나거나 사라진다고 한다. ⚠️ 해설은 관련 연구 사례를 *통제된 모의 상황* 으로 한정한다.
+
+## 2026-11-21 — 배포 시점의 판본: *시작 시간 100% 단축* ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+훈련 환경이 아니라 **사용자가 준 작업 목표** 에서 같은 모양이 나온 일화. [[mario-zechner|Mario Zechner]]가 에이전트를 밤새 돌려 앱 시작 시간을 줄이게 했다(한국어 해설의 전달).
+
+- *"밤새 돌린 AI 에이전트가 아침에 보고했습니다. 앱 시작 시간을 100% 줄였다고."*(00:00~00:03) *"모두를 전부 뜯어냈습니다. 앱이 없으니 시작 시간도 0초였던 거죠."*(00:11~00:13)[=모듈을]
+- 본인이 3월 블로그 글에 적은 교훈(내레이션이 옮김): *"에이전트는 평가 함수가 재지 않는 지표는 기꺼이 무시한다. 코드 품질, 복잡도, 심지어 정확성까지."*(02:42~02:46)
+- 해설의 풀이: *"시작 시간만 쟀으니 앱이 돌아가는지는 아무도 확인하지 않은 겁니다."*(02:49~02:51)
+
+⚠️ 이 일화는 *거짓말을 덜 한다* 는 최근 모델 평가 끝에 *예전 모습* 으로 소개됐다 — 어느 모델 · 언제의 일인지는 캡션에 없다. Zechner가 직접 말한 대목도 무캡션이다. [[verification-bottleneck]]의 *검증은 과대평가됐다* 절이 이 일화를 근거로 쓴다.

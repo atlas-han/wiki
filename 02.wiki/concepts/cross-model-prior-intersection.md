@@ -6,9 +6,9 @@ tags: [model-priors, silent-data-errors, correlated-errors, model-diversity, ver
 aliases: [cross-model prior intersection, prior intersection, 모델 prior, 모델의 사전 가정, 조용한 데이터 오류, silent data errors, LLMs as a species]
 related: [just-in-time-ontology, generator-evaluator-pattern, cross-lab-peer-review, model-calibration, verification-bottleneck, verification-cost-asymmetry, system-1-model, ai-slop, three-level-agent-review, review-model-inversion, model-swap-acid-test]
 first-seen: tech-bridge-just-in-time-ontology
-sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]
+sources: [tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-10-18
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 
 # 교차 모델 prior 교집합 (Cross-Model Prior Intersection)
@@ -71,3 +71,13 @@ updated: 2026-11-20
 ## 2026-11-20 — 제품 원칙으로: *다른 가문에게 비평을* ([[tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap]])
 
 [[satya-nadella|Satya Nadella]]가 검증을 누가 하느냐에 대해 같은 방향을 말한다(한국어 해설 전달, ⚠️ 원음은 캡션에 없다): *"사티아는 모델 가문을 따로 두고 다른 가문에게 비평을 맡기라고 합니다."*(03:38~03:40) *"한 모델 가문의 약점이 내 제품의 약점이 되지 않게 다른 가문의 눈으로 한 번 더 보는 겁니다."*(03:42~03:45) Olickel이 데이터 작업에서 잰 것(194/200 일치, 오류는 불일치 쪽)을 근거 수치 없이 **제품 아키텍처 권고** 로 말한 것이다. 같은 인터뷰의 [[model-swap-acid-test]](어떤 모델로도 갈아 끼울 수 있어야 한다)가 이 권고의 전제다.
+
+## 2026-11-21 — *보험* 으로서의 앙상블 리뷰 ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+[[mario-zechner|Mario Zechner]]의 AI 리뷰 방식(한국어 해설의 전달, 원음 설명 08:49~09:04는 무캡션).
+
+- *"방법은 2000년대 머신러닝 썼던 앙상블입니다."*(08:44~08:46) *"다른 회사 모델 여러 개에 같은 입력으로 리뷰를 맡기면 서로 전혀 다른 문제를 찾아냅니다."*(09:04~09:08)
+- 값: *"대신 너무 열심히라 고칠 필요도 없는 것까지 문제라고 올립니다. 결국 걸러내는 건 자기 판단이라고요."*(09:09~09:13)
+- 이름: *"마리오는 이걸 안전장치가 아니라 보험이라고 부릅니다."*(08:34~08:38)
+
+이 페이지의 원 정식화는 *일치한 답은 믿고 불일치에 검증을 몰아준다* 였다. Zechner의 판본은 일치를 보지 않고 **합집합** 을 쓴다 — 서로 다른 문제를 찾아낸다는 것이 쓸모이고, 그래서 과잉 지적이 늘며 거르는 일이 사람에게 남는다. 어제 Nadella 절(*다른 가문에게 비평을*)에 이은 독립 등장. ⚠️ 어느 모델들인지, 얼마나 잡는지 수치는 없다.

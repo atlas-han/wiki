@@ -8,9 +8,9 @@ links:
   - https://x.com/mattpocockuk
   - https://www.linkedin.com/in/mapocock/
   - https://aihero.dev
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-zechner-ronacher-verification-is-overrated]
 created: 2026-10-09
-updated: 2026-11-16
+updated: 2026-11-21
 ---
 
 # Matt Pocock
@@ -68,3 +68,12 @@ Tech Bridge 해설(그의 영상 `hWe-j78vNpc`와 같은 날 올라온 aihero.de
 - 자기 홈 레포를 **퍼스널 위키** 라 부른다 — *Karpathy 스타일 LLM 위키* 와 Gmail · Slack · Discord · YouTube · GitHub · Calendar 명령. 위키 유지 방법은 *다음 영상에서* → [[llm-wiki-pattern]]
 - 공개 스킬 저장소 `mattpocock/skills`(10-25 소스의 그 저장소)도 홈 레포에서 포인터 한 줄로 연결된다.
 - ⚠️ 해설이 짚는다: 한 사람의 경험, 효과 수치 없음, *에이전트 코딩 강의를 파는 사람* — 이 페이지 *태도* 절의 *효과 주장은 자기 경험 · 소개하는 스킬은 자기 제품* 과 같은 단서.
+
+## 2026-11-21 — 진행자로: Pi 제작자 두 사람과의 라이브 ([[tech-bridge-zechner-ronacher-verification-is-overrated]])
+
+2026-11-17 라이브 방송에 [[mario-zechner|Mario Zechner]]와 [[armin-ronacher|Armin Ronacher]]를 불렀다(Tech Bridge 한국어 해설로 전달, ⚠️ Pocock의 원음은 캡션에 없다). 해설은 그를 *타입스크립트 강사* 로 소개한다.
+
+- 첫 질문: *"오퍼스 5.5 이후로 뭐가 달라졌나?"*(00:49~00:51)
+- 본인의 구분 — 전술과 전략: *"눈 앞의 전투를 이기는 게 전술, 전쟁을 이기는 법을 고민하는 게 전략."*(02:59~03:02) *"에이전트는 전술에 강하고 전략에 약하다는 거죠."*(03:02~03:04)
+- [[lauren-tan|Lauren Tan]]의 말을 끌어온다: *"코드 베이스와 API에서 뉘앙스를 최대한 없애야 한다고요."*(04:15~04:17)
+- 방송 전에 Zechner가 한 *검증은 과대평가됐다* 는 말을 방송에서 되물은 사람이다 → [[verification-bottleneck]]
