@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [plan-mode, tickets, jira, scoping, migration, tdd]
 aliases: [plan mode, 계획 모드, 계획에서 티켓으로]
-related: [cloud-agent-delegation, spec-driven-development, intent-md, sprint-contract, executable-standards, model-mixing-economics, verifiable-goals]
+related: [cloud-agent-delegation, spec-driven-development, intent-md, sprint-contract, executable-standards, model-mixing-economics, verifiable-goals, grill-with-docs]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-atlassian-build-your-own-sdlc]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-09-09
-updated: 2026-10-17
+updated: 2026-11-22
 ---
 
 # 계획→티켓 파이프라인
@@ -62,3 +62,12 @@ Jira 안에서 같은 흐름을 만든다. JCA에 *"can you break this down into
 ## References
 
 - [[tech-bridge-cursor-legacy-refactoring]] · [[cursor]]
+
+## 2026-11-22 — 계획 앞의 문답, 그리고 세션 단위 티켓 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]의 작업 영상 해설(원음 무캡션, 내레이션 전달).
+
+- 해설은 그가 [[grill-with-docs]]를 플랜 모드와 비교한다고 전한다: *"만들기 전에 무엇을 만들지부터 맞추니 결과를 예측하기 쉬워진다는 겁니다."*(03:01~03:03) ⚠️ 비교의 원음은 캡션에 없다 — 어느 쪽을 낫다고 했는지의 세부는 미상.
+- 티켓의 단위는 **세션** 이다: *"투 티켓은 거기까지 가는 길을 세션 단위 작업으로 자릅니다."*(07:11~07:14) 결과는 *"티켓은 아홉 개로 나뉘었습니다."*(07:22)
+- 위임은 의존 관계 순서로 — 서로 막지 않는 티켓 세 개부터 병렬로 시작한다(10-25 소스의 /implement-spec 설명과 같다).
+- Cursor 판본의 *ask question* 도구가 계획 전의 되묻기였다면, 이 사례의 되묻기는 번호 붙은 질문 40개이고 산출물이 계획이 아니라 용어집 · ADR · 스펙이다.

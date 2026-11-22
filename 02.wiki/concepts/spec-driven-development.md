@@ -3,11 +3,11 @@ title: Spec-Driven Development
 type: concept
 category: pattern
 tags: [spec, planning, agent, github, workflow]
-related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory, shaping-the-build, waterfall-model]
+related: [verifiable-goals, sprint-contract, harness-engineering, outcome-engineering, agent-org-adoption, model-context-protocol, frontier-engineering, cognitive-debt, agent-skills, agent-client-protocol, ai-unified-process, self-contained-systems, software-factory, shaping-the-build, waterfall-model, grill-with-docs]
 first-seen: tech-bridge-spec-driven-development
-sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-sdd-vs-waterfall]
+sources: [tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-ai-native-skills, tech-bridge-ai-native-sdlc, tech-bridge-sdd-full-course, tech-bridge-sdd-enterprise-lessons, tech-bridge-warp-factory-engineering, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-horthy-state-of-software-factory, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-laurie-voss-product-engineer, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-sdd-vs-waterfall, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-08-29
-updated: 2026-11-12
+updated: 2026-11-22
 ---
 
 # Spec-Driven Development
@@ -181,3 +181,14 @@ spec은 **두 장**이다 — *"Product spec describes the product invariants th
 - 왜 지금인가: *"원래도 이론상 좋은 생각이었습니다. 다만 최신으로 유지하기가 너무 비쌌죠."*(06:07~06:11) AI가 바꾼 두 계산 — 에이전트는 모르면 묻지 않고 짐작하므로 맥락이 필요하고, 모호함 하나가 추가 프롬프트 · 재확인 반복(돈과 시간)이 된다.
 - 경계: IBM *"완벽한 최종본보다 가볍고 진화하는 스펙을 택하라."*(07:35~07:37) — [[tech-bridge-andrew-ng-ai-engineering-skills-map|Ng]]의 *스펙은 단계의 함수* 와 같은 쪽이다.
 - 맺음: *"스펙을 쓰느냐가 아니라 쓴 스펙으로 돌아가느냐."*(08:13~08:15) → [[waterfall-model]](신규)
+
+## 2026-11-22 — 스펙이 문답의 부산물로 나오는 판본: grill → to-spec → to-tickets → implement-spec ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]이 [[mattpocock-skills|자기 스킬]]로 기능 하나를 만드는 작업 영상의 한국어 해설(원음 무캡션, 수치는 해설이 화면에서 읽은 값).
+
+- 스펙은 처음이 아니라 **질문 40개 뒤** 에 온다: *"질문 번호가 40에 이르자 그는 정리를 시킵니다."*(07:08~07:09) 그 앞은 [[grill-with-docs]] — 용어집과 결정 기록을 먼저 남기는 문답이다.
+- 두 문서의 구분: *"투 스펙은 도착지 문서를 쓰고 투 티켓은 거기까지 가는 길을 세션 단위 작업으로 자릅니다."*(07:11~07:14)[=to-spec · to-tickets(표기 추정)]
+- 스펙의 모양: *"결과는 깃허브 이슈 하나, 사용자 이야기 47개와 구현 결정, 범위 밖 항목까지 담겼습니다."*(07:16~07:20) *"티켓은 아홉 개로 나뉘었습니다."*(07:22)
+- 구현은 사람 없이: *"마지막으로 임플리먼트 스펙을 실행하고 자리를 뜹니다."*(07:31~07:33) → 21,349줄 · 커밋 37개 · 파일 71개의 PR 하나.
+
+이 페이지의 기존 소스들(Spec Kit · Kiro · JetBrains)이 constitution/spec/plan/task라는 **문서 구조** 를 말한다면, 여기서 강조점은 스펙 앞의 **용어 합의** 다 — *"이름이 정해지면 데이터 모델이 정해지고 에이전트가 혼자 골라야 할 선택지는 그만큼 줄어듭니다."*(13:14~13:18) 저장 위치도 다르다: 스펙은 저장소 파일이 아니라 GitHub 이슈다. ⚠️ 단일 사례, 저자 본인의 시연.

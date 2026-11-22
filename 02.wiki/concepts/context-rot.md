@@ -6,9 +6,9 @@ tags: [context-window, attention, long-context, degradation, context-engineering
 aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation]
 related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-karpathy-hackertube-two-hours-five-words]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-09-24
-updated: 2026-11-19
+updated: 2026-11-22
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -90,3 +90,16 @@ AI gateway 사용량을 보는 [[remy-guercio|Remy Guercio]]([[tailscale|Tailsca
 10-20 Martin Keen 편은 *a recent study looked at 18 frontier models* 라고만 했다. Karpathy 해설은 같은 숫자에 출처를 붙인다: *"크로마는 작년 7월 모델 18개를 시험했습니다. 입력이 길어질수록 성능이 점점 불안정해졌습니다."*(07:33~07:39) 설명란에 `research.trychroma.com/context-rot` 링크가 있다. → 위의 *이름 없는 연구* 는 **Chroma의 2025년 7월 Context Rot 보고서** 로 보인다(⚠️ 추정 — 숫자와 용어가 같을 뿐, 위키는 보고서를 열지 않았다).
 
 해설이 이 연구를 쓰는 자리는 **프롬프트 길이** 다 — 스킬 팩을 길게 얹는 습관의 반대편에 *"카파씨는 그 반대로 모델에게 점점 덜 말하는 방식을 택했습니다."*(07:40~07:44) 를 놓는다. 긴 실행에서 창이 차오르는 문제(이 페이지의 본 주제)와는 원인이 다르지만 처방의 방향은 같다 — 덜 넣는다.
+
+## 2026-11-22 — 스마트 존 · 덤 존: 15만 토큰이라는 실무 문턱과 Pocock의 수정 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]의 작업 영상 해설에서 서브 에이전트 하나가 26만 토큰을 쓴 채 버그를 쫓던 장면에 붙은 이야기다(한국어 내레이션 전달, 원음 무캡션).
+
+- 출처: *"덱소 씨가 처음 꺼낸 스마트 존, 덤 존 이야기입니다."*(06:39~06:41)[=[[dex-horthy|Dex Horthy]](추정 — 더빙 *Dexo*, 성은 캡션에 없다)]
+- 주장: *"대화가 15만 토큰쯤 넘어가면 에이전트가 조금씩 둔해진다는 주장입니다."*(06:42~06:45)
+- 근거로 든 것은 이 페이지의 ② n² 쪽이다: *"토큰이 늘면 모델이 챙겨야 할 토큰 사이의 관계는 제곱으로 늘어납니다."*(06:46~06:48)
+- 모델에 따라 문턱이 움직였다: *"소넷 3.5 같은 예전 모델은 8만에서 12만 토큰쯤이면 대화를 비워야 했다고 그는 회상합니다."*(06:50~06:55)
+- ⭐ 지금의 입장은 품질과 비용이다: *"환각보다는 결과물이 덜 좋아지는 게 문제고 비용도 문제라는 겁니다."*(06:58~07:00) *"75만 토큰짜리 대화는 캐시가 만료되면 그 토큰을 전부 다시 처리하는 비용을 또 냅니다."*(07:02~07:06) — 10-17 Tailscale 편의 *아무도 컨텍스트를 비우지 않는다* 와 같은 비용 논거가 사용자 쪽에서 나왔다.
+- 처방(그 자리의): *"그는 새 서브 에이전트를 띄우는 편이 나았을 거라고 말합니다."*(06:35~06:37)
+
+⚠️ 15만 · 8만~12만은 측정이 아니라 경험칙의 전달이다. *제곱* 논거가 품질 저하를 설명하는지 계산 비용을 설명하는지는 이 페이지 도입부의 지적대로 여기서도 갈리지 않는다.

@@ -200,8 +200,10 @@ sources:
   - tech-bridge-jonathan-blow-30-years-zero-progress
   - tech-bridge-zechner-ronacher-verification-is-overrated
   - tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature
+  - tech-bridge-pocock-21k-lines-questions-before-code
+  - tech-bridge-walden-yan-cognition-no-laptop-development
 created: 2026-06-03
-updated: 2026-11-21
+updated: 2026-11-22
 ---
 
 # Tech Bridge
@@ -1884,3 +1886,22 @@ updated: 2026-11-21
 - 게시 시각 **11-21 07:00 KST**(이 회차 두 시간 전, `upload_date` 20261120은 UTC 기준). 설명란의 출처 열(원 인터뷰 `_g4l7YkDQwA` · Vox 둘 · X 게시물 둘 · *What 2026 looks like* · Asterisk · AI 2027 · 타임라인 업데이트 · AI 2040)은 미열람.
 
 **멤버 전용**: `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄) — 대기 목록은 이것 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-21 업로드 — Matt Pocock(mattpocock/skills 70분 작업 영상) · Walden Yan(Cognition, AI Engineer Code Summit) (2026-11-22 ingest)
+
+[[tech-bridge-pocock-21k-lines-questions-before-code|2만 1천 줄 기능 출시, 코드보다 질문이 먼저였다 | Matt Pocock]](`UYTHGeEukl8`, 13:27, 공식 챕터 12) — 한국어 해설, Matt Pocock이 자기 스킬 저장소로 기능 하나를 처음부터 끝까지 만드는 70분 작업 영상을 따라간다 ([[mattpocock-skills]] · [[grill-with-docs]](둘 다 신규) · [[matt-pocock]] · [[spec-driven-development]] · [[plan-to-ticket-pipeline]] · [[context-rot]] · [[context-resets-and-compaction]] · [[dex-horthy]] · [[risk-proportional-human-review]] · [[hard-vs-soft-enforcement]] · [[comments]] · [[codebase-gardening]] · [[skill-self-improvement]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`는 더빙의 ASR(인용하지 않음 — *Opus 5.5* → *Opus 3.5*, *첫 요청은 받아쓰기로* → *dictated the 16,000 lines*).
+- ⚠️ **원 영상 음성이 어느 트랙에도 없다**(11-20 업로드의 Zechner 편과 같은 배치). ko-orig 무캡션 열두 곳(약 3분 46초)이 발췌 자리이고 en-orig도 같은 자리가 빈다 — **Pocock 본인 인용 0.** 이름에 매달리는 이유(04:31~04:49) · 코드를 한 줄씩 읽는 이유(09:14~09:49) · 사람이 어디서 쓸모 있었나(12:42~13:06)의 답이 전부 빈 구간이다.
+- ⭐ 채널의 Pocock 소스 가운데 처음으로 **스킬 사슬 전체**(grill-with-docs → to-spec → to-tickets → implement-spec → retro)가 한 기능 위에서 돈다. 10-25 해설의 /implement-spec · /retro가 본인 작업으로 다시 나온다.
+- 게시 시각 **11-21 18:00 KST**. 설명란의 출처 둘(원본 영상 `jVBlkOF8sHk` · mattpocock/skills 저장소)은 미열람. *덱소 씨*(06:39) → Dex Horthy는 추정 판독.
+
+[[tech-bridge-walden-yan-cognition-no-laptop-development|노트북을 열지 않고 개발하는 회사 | Walden Yan]](`VdX9fccu72E`, 10:32, 공식 챕터 12) — 한국어 해설, Cognition 공동 창업자의 AI Engineer Code Summit 발표(11-12)를 슬라이드와 글로 남은 기록에 맞춰 본다 ([[walden-yan]] · [[devin-bots]](둘 다 신규) · [[cognition]] · [[devin]] · [[software-factory]] · [[goal-level-delegation]] · [[agent-verification-skill]] · [[agent-change-evidence]] · [[run-trace-skill-distillation]] · [[effort-output-outcome-mission]] · [[nvidia]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`의 내레이션 자리는 더빙의 ASR(인용하지 않음 — *GB 300* → *GB200*, *Devin Bots* → *Devin Boss*).
+- **발표 원음은 세 조각이 두 트랙에 같은 글자로 잡혔다**(08:05~08:20 · 08:53~08:59 · 10:10 — 뒤의 것은 끊겨 인용하지 않음). 어제 Zechner 편(두 트랙 모두 무캡션)과 Kokotajlo 편(ko-orig에만)에 이어 세 번째 배치다. ⚠️ 나머지 발췌 자리 열한 곳(약 2분 50초)은 두 트랙 모두 무캡션 — **제목의 *노트북을 열지 않고* 와 아이패드 이야기(04:14~04:25)도 그 안에 있다.**
+- ⭐ 채널의 [[software-factory]] 소스 가운데 **사람 승인 없는 머지의 비율을 숫자로 낸 첫 사례**(안드로이드 앱 PR 1,134개 중 999개). 해설이 유보를 직접 단다 — PR 수는 양이지 가치가 아니다 · 인원 2.7배는 글로 확인되지 않는다 · GB 300 비교는 슬라이드에만 있다 · 하루 4, 50개는 평균 26개.
+- ⚠️ 안드로이드 앱을 맡긴 엔지니어의 이름은 ASR이 *36* · *3욕* 으로 적어 판독하지 못했다(더빙 ASR도 *36*).
+- 게시 시각 **11-22 08:00 KST**(`upload_date`는 UTC 기준 20261121). 설명란의 출처 여섯(원본 발표 `U92J5mCDLMc` · Devin Bots 출시 글 · Walden Yan X · Russell Kaplan X · CoreWeave 발표문 · Cognition 블로그 글)은 미열람.
+
+**멤버 전용**: 신규 `jMzmFrwfYHk`(*우리는 세상이 모르는 비밀을 알았다 | 앤트로픽 창업자들*, 11:08, 목록 `upload_date` 20261121, 목록 줄 `subscriber_only`) — 건너뜀, 페이지 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 목록은 둘. 목록 20편 요청 → **20줄**(stderr ERROR 없음).

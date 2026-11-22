@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [verification, evidence, trust, impact-analysis, agentic-coding, code-review]
 aliases: [AI는 코드만이 아니라 증거를 내야 한다, 다섯 질문, change evidence]
-related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review, work-recording-hiring]
+related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review, work-recording-hiring, software-factory]
 first-seen: tech-bridge-prompt-to-production
-sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-10-09
-updated: 2026-11-17
+updated: 2026-11-22
 ---
 
 # 변경 증거
@@ -91,3 +91,12 @@ updated: 2026-11-17
 - [[ryan-carson|Ryan Carson]](빌더 20개): 모든 빌더가 만든 기능을 써 보는 영상을 녹화하고 테스트 항목마다 초록 · 빨강이 붙는다. 전부 초록이면 매니저가 *볼 영상이 있다* 고 알리고, 그는 PR 요약을 읽고 영상을 본 뒤 직접 *Ship it* 을 말한다. *"화면에 보이는 기능이라면 생김새와 동작은 결국 사람이 봐야 한다는 게 그의 이유입니다."*(04:45~04:49)
 
 다섯 질문 틀에 견주면 영상은 *무엇이 바뀌었나 · 어떻게 검증했나* 를 한 번에 답하는 형식이다(위키의 정리). ⚠️ 영상은 **화면에 보이는 동작** 만 증명한다 — Lauren의 성적표에서 나빠진 대기 중 CPU · 메모리 같은 것은 영상에 잡히지 않는다. Carson도 휴대폰으로 대충 보고 넘기고 싶은 유혹을 스스로 사례로 든다 — 증거가 있어도 *보는 일* 은 건너뛰기 쉽다. 같은 원리를 사람 채용에 옮긴 것이 [[work-recording-hiring]].
+
+## 2026-11-22 — 제작사 쪽에서 본 영상 증거: *고친 화면을 녹화한 영상* ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+2026-11-17 절은 [[devin|Devin]] 사용자([[ryan-carson|Ryan Carson]]) 쪽에서 본 영상 증거였다. 이번은 제작사 [[cognition|Cognition]]의 [[walden-yan|Walden Yan]] 발표(한국어 해설 전달)다.
+
+- *"데빈은 PR을 올리고 고친 화면을 녹화한 영상을 증거로 같이 보냅니다."*(02:58~03:00) 들어오는 쪽도 영상이다 — *"고객이 슬랙으로 버그 영상을 보내면 그대로 사례 채널에 넘기고 데빈을 부릅니다."*(02:52~02:56)
+- 발표 원음(두 자막 트랙 일치): *"And most of the time our engineers don't even need to look open dev and they're just from Slack looking at the recordings that it sends back to them."*(08:15~08:19)
+
+증거가 검토의 **보조** 가 아니라 **대체** 로 쓰이는 자리까지 갔다 — 안드로이드 앱 사례에서 PR 1,134개 중 999개는 사람 승인 없이 머지됐고, 사람은 Slack에서 녹화만 본다. ⚠️ 녹화가 무엇을 보여 주지 못하는지(화면에 드러나지 않는 회귀 · 보안)는 발표에 없고, 해설도 *"사람 승인 없는 머지가 어디까지 안전한지도 이 발표에는 나오지 않았습니다."*(10:05~10:08)라고 적는다.

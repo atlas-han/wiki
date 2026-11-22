@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-10-02
-updated: 2026-11-21
+updated: 2026-11-22
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -284,3 +284,15 @@ Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이�
 - 그들 자신의 반(半)공장: Pi 저장소에는 이슈 분류 봇이 있고(*"봇은 버그가 진짜인지 살피고 재현해 본 뒤 고칠 방법과 우선순위를 붙입니다."*(04:37~04:41)) 자동 수정에는 조건이 붙는다 — *"조건은 셋입니다. 라벨, 지금 코드에서 실패하는 테스트, 그리고 고친 뒤에 통과. 기능 작업은 예외고요."*(05:31~05:37) 그리고 유지보수자가 *"자동으로 고친 이슈의 변경 내역까지 꽤 많이 읽습니다."*(05:42~05:43)
 
 이 페이지의 벤더 자기 보고들 옆에 놓을 회의론이다. 위 11-17 절의 [[lauren-tan|Lauren Tan]](*사람이 빠진 무인 공장이 아니다*)과 결론은 닿아 있으나 근거가 다르다 — Tan은 검증 층을, 이쪽은 사람의 이해를 든다. ⚠️ 수치 없음, 단정의 근거는 블로그 한 문장과 무캡션 일화.
+
+## 2026-11-22 — Cognition의 공장: *기본값은 자율주행* 과 사람 승인 없는 머지 999개 ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+[[cognition|Cognition]]의 [[walden-yan|Walden Yan]]이 AI Engineer Code Summit(2026-11-12)에서 한 발표의 한국어 해설. 첫째 변화로 꼽은 것이 *소프트웨어 공장이라는 생각* 이다.
+
+- 정의: *"버그 신고가 들어오면 분류부터 구현, 테스트, 리뷰까지 데빈이 합니다. 배포와 장애 대응도 마찬가지입니다. 사람은 판단이 필요할 때만 불러옵니다."*(01:25~01:33) 챕터 제목은 *기본값은 자율주행*.
+- 공장을 고치는 고리: *"에이전트가 일을 하고 다른 에이전트가 그 일하는 방식을 고칩니다."*(05:26~05:28) → [[run-trace-skill-distillation]]
+- 조직 축: 역할별 분업(기획자 · 엔지니어 · QA · 온콜)을 없애고 *"두 세 명 짜리 작은 팀, 포드로 쪼갰습니다."*(02:18~02:20) — 2026-10-17 [[factory-ai|Factory]] 절의 *조직 축* 에 대응하는 구체 형태다.
+- ⭐ 숫자: 새로 만든 안드로이드 앱에서 *"1,134개 중 999개는 사람의 승인 없이 머지되었습니다."*(08:46~08:48) 사람의 품은 *"메시지 183개입니다."*(08:36~08:37) 발표 원음(두 자막 트랙 일치): *"escalating only the most important decisions to a human at the end of the day."*(08:07~08:11)
+- 전사 그래프: 머지된 PR 40배 · 엔지니어 2.7배(1년).
+
+이 페이지의 벤더 자기 보고들 가운데 **사람 승인을 뺀 머지의 비율(약 88%)을 숫자로 낸 첫 사례** 다. 어제 [[mario-zechner|Zechner]]의 *아직 본 적은 없다* 바로 다음 날 들어온 반대쪽 보고이기도 하다. ⚠️ 범위가 좁다 — 기존 iOS 앱을 설계도 삼아 맞춰 가는 신규 앱 하나이고 아직 공개 테스트 중이다. 해설의 맺음: *"사람 승인 없는 머지가 어디까지 안전한지도 이 발표에는 나오지 않았습니다."*(10:05~10:08) 발표자는 *"it's not a slop application."*(08:53~08:55)이라고 하지만 근거는 캡션에 없다.

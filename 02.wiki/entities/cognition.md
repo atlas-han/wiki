@@ -3,9 +3,9 @@ title: Cognition
 type: entity
 category: org
 tags: [coding-agents, acquisition, rust, dioxus]
-sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-anthropic-fold-subagents-into-skills]
+sources: [tech-bridge-ambitious-software-agent-era, tech-bridge-jensen-huang-cbs-interview, tech-bridge-introspection-loop-is-the-product, tech-bridge-death-of-code-review, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-09-14
-updated: 2026-10-29
+updated: 2026-11-22
 ---
 
 # Cognition
@@ -56,3 +56,17 @@ updated: 2026-10-29
 ## Flappy Bird — 서로 맞지 않는 두 서브에이전트 (2026-10-29 · [[tech-bridge-anthropic-fold-subagents-into-skills]])
 
 영어 해설자의 인용(2차 진술, 원문 링크 없음): Cognition의 예에서 한 서브에이전트는 *"a flappy bird background that looks a lot like Super Mario"* 를, 다른 서브에이전트는 *"a bird that did not match the background whatsoever"* 를 만들었다(04:35~04:45). 서로 의존하는 단계는 메인 에이전트에 두라는 근거로 쓰인다 → [[subagent-folding]].
+
+## 2026-11-22 — 처음으로 회사 자신의 말이 들어온다: PR 40배 · 포드 · 슬랙 · 혼자 테스트하는 코드베이스 · Devin Bots ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+이 페이지는 지금까지 채용 공고 한 문단과 외부 화자의 지나가는 언급으로만 채워져 있었다. 공동 창업자 [[walden-yan|Walden Yan]]의 AI Engineer Code Summit 발표(2026-11-12)를 한국어 해설이 따라간 이 소스로 **회사가 자기 일하는 방식을 직접 말한 내용** 이 처음 들어온다. ⚠️ 해설 전달이고 수치는 전부 [[devin|Devin]]을 파는 회사의 자기 보고다. 위키는 원본 발표와 글을 열지 않았다.
+
+- **그래프.** *"엔지니어는 2.7배 늘었습니다. 그런데 뭐지된 PR은 40배가 됐습니다."*(00:00~00:03)[=머지된] 기준은 *"작년 11월을 1로 놓고 잰 배수입니다."*(00:36~00:39) ⚠️ 해설의 대조: *"인원 2.7배는 글로 확인되는 자료가 없습니다."*(00:45~00:47) 단서는 *"올해 7월 월드 냰은 엔지니어가 70명 남짓이라 다들 놀란다고 썼습니다."*(00:47~00:52)[=Walden Yan] — **이 위키의 첫 규모 수치** 다(본인 글의 전달).
+- **조직.** *"지금은 두 세 명 짜리 작은 팀, 포드로 쪼갰습니다. 결제나 모바일 앱처럼 제품 한 조각을 통째로 맡습니다."*(02:18~02:24)
+- **일하는 곳.** *"고객이 슬랙으로 버그 영상을 보내면 그대로 사례 채널에 넘기고 데빈을 부릅니다."*(02:52~02:56) 도착점은 *"IDE도, 깃허브도 열지 않고 개발 한 바퀴를 도는 것."*(03:19~03:22)
+- **개발 환경.** *"지금은 모든 서비스를 도커 컴포즈로 띄우고 외부 서비스는 흉내낸 가짜로 바꾸고 가상 머신 하나 안에서 돌립니다."*(03:48~03:53) *"가상 머신은 매 시간 새로 만듭니다."*(03:54) → [[agent-verification-skill]]
+- **인프라.** *"코어 위브 발표문에 따르면 코그니션은 이 칩으로 실제 서비스를 돌린 첫 고객이었습니다."*(06:26~06:30)[=CoreWeave — 칩은 [[nvidia|NVIDIA]] Vera Rubin] 자체 추론 환경을 꾸린다는 뜻이다. ⚠️ 어느 모델을 돌리는지는 캡션에 없다 — 2026-09-30 절의 *자체 모델의 이름 · 존재를 확정하지 않는다* 는 유보는 그대로 둔다.
+- **안드로이드 앱.** *"코그니션은 엔지니어링 팀이 작아서 안드로이드 앱까지 맡을 사람이 없었습니다."*(07:11~07:14) 44일 뒤 *"1,134개 중 999개는 사람의 승인 없이 머지되었습니다."*(08:46~08:48) → [[software-factory]]
+- **신제품.** 발표 닷새 뒤(11-17) [[devin-bots|Devin Bots]]를 냈다. 발표는 그 예고편이었다고 Walden Yan이 X에 썼다(내레이션 전달).
+
+회사명은 이번 ko-orig에서 처음부터 끝까지 *코그니션* 으로 안정적으로 적혔다 — 앞선 소스들의 *인지 컴퓨팅* · *인지 기능* 은 영어 원음을 번역한 캡션의 문제였고, 이번은 한국어 내레이션이다.

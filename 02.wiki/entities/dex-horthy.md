@@ -4,11 +4,11 @@ type: entity
 category: person
 tags: [humanlayer, founder, coding-agents, software-factory, context-engineering, 12-factor-agents]
 aliases: [Dex, Dexter Horthy, 덱스 호시]
-sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-death-of-code-review]
+sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-death-of-code-review, tech-bridge-pocock-21k-lines-questions-before-code]
 links:
   - "https://humanlayer.dev/resources"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-22
 ---
 
 # Dex Horthy
@@ -33,3 +33,7 @@ updated: 2026-10-16
 ## References
 
 - [[tech-bridge-horthy-state-of-software-factory]] · [[tech-bridge-death-of-code-review]] · [[humanlayer]]
+
+## 2026-11-22 — *스마트 존, 덤 존* 의 출처로 지목됨 (추정 판독, [[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]의 작업 영상 해설: *"덱소 씨가 처음 꺼낸 스마트 존, 덤 존 이야기입니다."*(06:39~06:41) ⚠️ **ASR *덱소 씨* 를 Dex Horthy로 읽은 것은 추정이다** — 영어 더빙 ASR은 *Dexo*, 성은 어느 캡션에도 없고 Pocock의 원음은 무캡션이다. 내용은 *"대화가 15만 토큰쯤 넘어가면 에이전트가 조금씩 둔해진다는 주장입니다."*(06:42~06:45) → [[context-rot]]. 이 위키의 Horthy 본인 소스에는 이 용어가 아직 없다 — 본인 발화로 확인되면 이 절의 추정 표시를 닫는다.

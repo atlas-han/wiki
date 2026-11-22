@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-skills, self-improving-agents, skill-library, trace-distillation, voyager, no-human-gate, organizational-flywheel]
 aliases: [트레이스 증류, 스킬 증류기, skill distiller, self-improving organizational flywheel]
-related: [skill-self-improvement, query-to-skill-distillation, trace-to-memory-loop, agent-skills, mcp-skill-distribution, agent-fleet-learning, company-knowledge-moat, skill-evals, prompt-injection, token-economizer]
+related: [skill-self-improvement, query-to-skill-distillation, trace-to-memory-loop, agent-skills, mcp-skill-distribution, agent-fleet-learning, company-knowledge-moat, skill-evals, prompt-injection, token-economizer, agent-verification-skill]
 first-seen: tech-bridge-runlayer-self-improving-skills-mcp
-sources: [tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-ai-labs-token-economizer]
+sources: [tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-ai-labs-token-economizer, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-10-16
-updated: 2026-11-04
+updated: 2026-11-22
 ---
 
 # 실행 트레이스 → 스킬 증류
@@ -76,3 +76,13 @@ Sonnet 4.6이 AWS Lambda 안에서 Chromium fork를 실행하는 사내 태스�
 | 주기 | 미발화 | *"every three sessions"*(05:32~05:34), 사용자 한도를 쓴다 |
 
 위 ⚠️ 유보의 질문(잘못 증류된 지식의 회수)에 대한 답은 여기서도 *"unless you change them yourself"*(06:01)뿐이다. 다른 점은 도구 쪽이 위험을 인정하고 **기본을 꺼 둔다**는 것이다 → [[prompt-injection]]. 효과 수치는 기능별로 발화되지 않았다.
+
+## 2026-11-22 — Cognition: 세션 1,300여 개 → 로그인 스킬 → 테스트 시간 31% ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+[[cognition|Cognition]]의 [[walden-yan|Walden Yan]]이 *공장이 스스로 나아지게 하는 단계* 로 소개한 것(한국어 해설 전달, 슬라이드의 예).
+
+- 재료: *"클라우드에서 돌린 세션은 코드 한 줄 결정 하나까지 기록에 남습니다. 그 기록 위에 다시 에이전트를 돌립니다."*(04:42~04:47)
+- 결과: *"슬라이드의 예에서는 지난 세션 1,300여 개를 분석했습니다. 테스트할 때마다 되풀이되던 로그인을 스킬로 저장해 테스트 시간을 31% 줄였습니다."*(04:47~04:55)
+- 한 줄 정리: *"에이전트가 일을 하고 다른 에이전트가 그 일하는 방식을 고칩니다."*(05:26~05:28)
+
+[[runlayer|Runlayer]] 판본과 같은 고리(트레이스 → 스킬)이고, 증류 대상이 **반복되는 준비 동작** (로그인)이라는 점이 구체적이다 — 효과도 정확도가 아니라 시간으로 잰다. ⚠️ 설명한 발표 원음(04:58~05:26)은 무캡션이라 사람 게이트가 있는지, 스킬이 얼마나 쌓였는지는 알 수 없다. 31%는 슬라이드의 자기 보고다.

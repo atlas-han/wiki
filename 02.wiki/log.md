@@ -2921,3 +2921,33 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1121/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 249건(147 + 102) 불일치 0. 두 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치가 편마다 다르다**: Zechner 편은 라이브 원음 발췌가 **두 트랙 모두 무캡션**(ko-orig 열여덟 곳 약 5분 50초)이라 Zechner · Ronacher · Pocock 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다 — 제목의 말을 Zechner가 직접 푼 답(06:55~07:31)도 캡션에 없다. Kokotajlo 편은 어제 Nadella 편과 반대로 인터뷰 영어 원음이 **ko-orig에** 영어 그대로 잡혀 영어 인용도 ko-orig 글자로 했다(두 트랙 확인은 13:43~14:07 한 곳, 나머지는 ko-orig 단일 트랙). 두 트랙 모두 빈 구간은 내용을 적지 않았다.
+
+## [2026-11-22] ingest | Tech Bridge — 11-21 업로드 2편 (2만 1천 줄 기능 출시, 코드보다 질문이 먼저였다 · 노트북을 열지 않고 개발하는 회사)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음, `public` 19 · `subscriber_only` 1). 신규 공개 2편: `UYTHGeEukl8`(11-21 18:00 KST) · `VdX9fccu72E`(11-22 08:00 KST — 이 회차 한 시간 전, `upload_date`는 UTC 기준 20261121). **신규 멤버 전용 1편**: `jMzmFrwfYHk`(*우리는 세상이 모르는 비밀을 알았다 | 앤트로픽 창업자들*, 11:08, 목록 `upload_date` 20261121, 목록 줄 `subscriber_only`) — 건너뜀, 페이지 없음. `Yhck-x6VuLs`는 목록 범위 밖 · 단건 조회 `subscriber_only` 줄 지속 — 건너뜀. 자막 429 없음(`--sleep-subtitles 8`).
+
+**신규 source 2 · entity 3 · concept 1**, 기존 페이지 보강 20개(+ tech-bridge), index **1065 → 1071**(실측 일치).
+
+- `UYTHGeEukl8`(13:27, 챕터 12) → [[tech-bridge-pocock-21k-lines-questions-before-code]]: [[matt-pocock|Matt Pocock]]의 70분 작업 영상(`jVBlkOF8sHk`)을 화면의 숫자 · 저장소와 맞춰 따라간 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-21 18:00 KST 게시.
+  - 신규: [[mattpocock-skills]](tool — 세 번째 소스에서 페이지화) · [[grill-with-docs]](concept)
+  - 보강: [[matt-pocock]](본인 작업 영상 — 질문 40개 → 21,349줄 → PR 7개 → 회고) · [[spec-driven-development]](스펙이 문답의 부산물 · GitHub 이슈로) · [[plan-to-ticket-pipeline]](계획 앞의 문답 · 세션 단위 티켓 9개) · [[context-rot]](스마트 존 · 덤 존, 15만 토큰 · 품질과 캐시 비용) · [[context-resets-and-compaction]](문서로 옮긴 뒤 압축) · [[dex-horthy]](용어의 출처로 지목 — 추정 판독) · [[risk-proportional-human-review]](PR 일곱 개 중 사람 필수 하나) · [[hard-vs-soft-enforcement]](코멘트를 린트로 · 래칫 도입) · [[comments]](주석 2,053줄 감사 — 금지가 아니라 분류) · [[codebase-gardening]](기존 코드가 반대 패턴을 가르쳤다) · [[skill-self-improvement]](retro의 실례 — 산출물은 이슈)
+  - ⚠️ **원 영상 음성이 두 트랙 모두 무캡션이다**(어제 Zechner 편과 같은 배치). ko-orig 열두 곳(약 3분 46초)이 발췌 자리이고 en-orig(더빙 ASR)도 같은 자리가 빈다. **Pocock 본인 인용 0**, 인용 152건은 전부 ko-orig 내레이션. 해설이 *이렇게 설명합니다* · *이렇게 받아칩니다* 하고 넘긴 답들 — **이름에 매달리는 이유**(04:31~04:49) · 시안에 대한 반응 · 왜 이렇게까지 준비했나 · PR을 나누는 기준 · 코드를 한 줄씩 읽는 이유 · 주석을 두고 에이전트에게 받아친 말 · **사람이 어디서 쓸모 있었나**(12:42~13:06) — 은 적지 않았다. 마지막 것은 설명란 요약(*처음과 끝*)만 옮겼다.
+  - ⚠️ 추정 판독: *덱소 씨*(06:39) → **Dex Horthy**(더빙 *Dexo*, 성은 어느 캡션에도 없다 — [[dex-horthy]]에 추정으로 표시) · *천 육천은 받아쓰기로* → 첫 요청은 받아쓰기로 · *한 해 만에* → 한 앱 안에 · *그때는 리뷰와 회고로* → 끝에는(설명란) · *디프의 상단 부분이 주석* → 상당 부분이. 더빙 ASR은 이 오인식들을 그대로 번역한다(*16,000 lines* · *same year* · *top part*) — 대조 근거가 되지 못했다.
+  - ⚠️ 스킬 이름 *투 스펙* · *투 티켓* 의 철자(to-spec · to-tickets)는 미확인. PR을 일곱 개로 나눈 것이 /pr 스킬인지 그냥 시킨 것인지도 캡션에 없다. 주석 감사의 22 · 18 · 3이 무엇을 센 단위인지 미상.
+  - 수치는 전부 해설이 화면에서 읽은 값이다(스타 32만 · 용어집 560줄 · 사용자 이야기 47개 · +21,349 / 커밋 37 / 파일 71 · `as` 2,078곳 · 주석 12% 대 18%). *40분* · *70분* 은 영상 속 시간.
+  - 페이지화하지 않음: wayfinder · to-spec · to-tickets · implement-spec · retro 개별 스킬([[mattpocock-skills]]에 묶음) · 스마트 존/덤 존([[context-rot]] 절로) · 린트 래칫([[hard-vs-soft-enforcement]] 절로) · 체스터턴의 울타리 · ADR · Figma · Pocock의 앱(이름 미상). [[claude-code]] · [[claude-opus-5-5]] · [[agent-skills]]는 설정 한 줄 · 일반 언급이라 보강하지 않았다.
+- `VdX9fccu72E`(10:32, 챕터 12) → [[tech-bridge-walden-yan-cognition-no-laptop-development]]: [[cognition|Cognition]] 공동 창업자 [[walden-yan|Walden Yan]]의 AI Engineer Code Summit 발표(11-12)를 슬라이드 · 글과 대조한 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-22 08:00 KST 게시(`upload_date` 20261121).
+  - 신규: [[walden-yan]] · [[devin-bots]]
+  - 보강: [[cognition]](회사 자신의 말이 처음 들어옴 — 그래프 · 포드 · 슬랙 · 개발 환경 · 엔지니어 70명 남짓) · [[devin]](제작사가 말하는 용법 — 버그 신고에서 배포까지 · 영상 증거 · 테스트 스킬) · [[software-factory]](기본값은 자율주행 · 사람 승인 없는 머지 999/1,134) · [[goal-level-delegation]](일감이 아니라 직무 — 숫자 하나로 줄일 수 있는 일) · [[agent-verification-skill]](코드베이스 쪽의 전제: Docker Compose · 매시간 새 가상 머신 · 에이전트가 쓰는 스킬) · [[agent-change-evidence]](제작사 쪽의 영상 증거 — 검토의 대체로) · [[run-trace-skill-distillation]](세션 1,300여 개 → 로그인 스킬 → 31%) · [[effort-output-outcome-mission]](PR 40배는 산출 지표 — 해설의 유보와 검산) · [[nvidia]](Vera Rubin 첫 프로덕션 고객 사례)
+  - **발표 원음 세 조각이 두 트랙에 같은 글자로 잡혔다**(08:05~08:20 · 08:53~08:59 · 10:10). 앞의 둘을 영어 그대로 인용했고(화자 표시 없음 — 발표 발췌 자리라 Walden Yan으로 읽음) 10:10은 끊겨서 쓰지 않았다. 인용 145건 기계 대조 불일치 0.
+  - ⚠️ **발췌 자리 열한 곳(ko-orig 약 2분 50초)은 두 트랙 모두 무캡션.** 제목의 *노트북을 열지 않고* 와 설명란의 *아이패드로 개발하는 엔지니어* 가 나온 대목(04:14~04:25)이 그 안에 있어 **제목의 근거를 캡션으로 확인하지 못했다** — 설명란 문장과 내레이션의 *아이패드가 더 안전하다는 말도 덧붙였습니다* 만 적었다. 포드 설명 · *직무* 원음 · 세션 분석 설명 · 맺음말도 내용 미상.
+  - ⚠️ **판독 불가: 안드로이드 앱을 Devin에게 맡긴 엔지니어의 이름 · 소속.** ko-orig *보팀의 엔지니어 36* · *36이* · *3욕은*, 더빙 ASR *the Bo team, 36*. 이름을 추정하지 않았고 페이지도 만들지 않았다. *안드로이드의 미학에 한 줄을 더했습니다*(09:42~09:44)도 판독하지 못해 인용하지 않았다.
+  - ⚠️ 더빙 ASR 오류: *GB 300* → *GB200*(세 번 — 해설의 *GB 300 비교는 슬라이드에만, 글로 남은 것은 GB 200 대비 4.8배* 라는 구분이 영어 트랙에서 사라진다) · *Devin Bots* → *Devin Boss* · *Walden Yan* → *Waldnia*.
+  - ⚠️ ASR 판독: *뭐지된* → 머지된 · *월드 냰* → Walden Yan · *도커 컴포저* → Docker Compose · *데빈 보스* → Devin Bots · *러셀 케플러* → Russell Kaplan · *맞는 것* → 맡는 것(추정) · *보타나가* → 봇 하나가(추정) · *계정 여러 서로* → 계정 여럿으로(추정).
+  - 해설의 *엔지니어 한 명이 10배* 는 40 ÷ 2.7(약 15)과 맞지 않는다 — 발표의 말인지 해설의 어림인지 캡션으로 알 수 없어 소스 페이지에 적어 두었다. [[effort-output-outcome-mission]]의 *PR을 잘게 쪼갤수록 그래프가 커진다* 는 위키의 관찰로 표시했다.
+  - 페이지화하지 않음: Russell Kaplan(한 문장) · CoreWeave(발표문 출처로만) · AI Engineer Code Summit(행사 이름은 설명란에만 — [[ai-engineer]] 보강 없음) · 엔지니어(이름 미상) · Docker Compose · Kotlin · Vera Rubin(→ [[nvidia]] 한 절). [[agent-development-environment]]는 뜻이 달라(바깥 작업대 도구) 잇지 않았다.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1122/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 297건(152 + 145) 불일치 0. 두 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: Pocock 편은 어제 Zechner 편과 같다 — 원 영상 음성이 **두 트랙 모두 무캡션**(ko-orig 열두 곳 약 3분 46초)이라 Pocock 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다. Walden Yan 편은 발표 영어 원음이 세 조각만 두 트랙에 같은 글자로 잡혔고(08:05~08:20 · 08:53~08:59 · 10:10) 앞의 둘만 인용했다 — 나머지 발췌 자리 열한 곳(약 2분 50초)은 두 트랙 모두 무캡션이며, 제목의 *노트북을 열지 않고* 대목(04:14~04:25)도 그 안에 있어 설명란 문장만 적었다. 빈 구간의 내용은 적지 않았다.

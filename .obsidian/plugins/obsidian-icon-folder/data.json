@@ -1341,5 +1341,13 @@
   "02.wiki/entities/mario-zechner.md": "LiUser",
   "02.wiki/entities/armin-ronacher.md": "LiUser",
   "02.wiki/entities/pi-coding-agent.md": "LiTerminal",
-  "02.wiki/entities/daniel-kokotajlo.md": "LiUser"
+  "02.wiki/entities/daniel-kokotajlo.md": "LiUser",
+  "01.raw/articles/2026-11-21_2만 1천 줄 기능 출시, 코드보다 질문이 먼저였다 Matt Pocock.md": "LiNewspaper",
+  "01.raw/articles/2026-11-21_노트북을 열지 않고 개발하는 회사 Walden Yan.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-pocock-21k-lines-questions-before-code.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-walden-yan-cognition-no-laptop-development.md": "LiVideo",
+  "02.wiki/entities/mattpocock-skills.md": "LiWrench",
+  "02.wiki/concepts/grill-with-docs.md": "LiMessagesSquare",
+  "02.wiki/entities/walden-yan.md": "LiUser",
+  "02.wiki/entities/devin-bots.md": "LiBoxes"
 }

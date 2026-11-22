@@ -5,9 +5,9 @@ category: technique
 tags: [context-window, agent, context-engineering]
 related: [context-anxiety, context-engineering, agent-harness-design, transformer, llm-wiki-pattern, automated-ai-research, prompt-caching, context-failure-modes]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-context-engineering-four-failure-modes, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-codex-agents-that-dont-quit]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-karpathy-transformers-stanford, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-context-engineering-four-failure-modes, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-codex-agents-that-dont-quit, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-05-25
-updated: 2026-11-15
+updated: 2026-11-22
 ---
 
 # Context Resets vs. Compaction
@@ -146,3 +146,9 @@ optimizer speedrun 실험에서 [[codex|Codex]]는 *"only had like 250k context 
 ## 6주 스레드를 받치는 것 — 진행 메모 + 자동 compaction (2026-11-15 · [[tech-bridge-codex-agents-that-dont-quit]])
 
 [[vaibhav-srivastav|VB]]의 첫 번째 기능(goal)에 붙은 두 장치(해설 전달): ① **지금까지 한 일과 남은 일을 메모로** 남기게 하라 — 중간에 끊겨도 그 메모를 읽고 돌아올 수 있다(리셋 대비). ② 몇십 턴(판독 추정)을 가면 맥락이 넘치므로 [[codex|Codex]]는 오래된 대화를 자동으로 압축하는 **compaction** 을 기본으로 켠다 — *따로 켤 필요도 없다.* 농담이라며 *석 달째 돌고 있는 스레드* 도 있다고 했다. 즉 장기 스레드는 **compaction(연속) + 외부 메모(리셋 복구)** 를 함께 쓴다.
+
+## 2026-11-22 — 문서로 옮긴 뒤 압축한다 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]은 질문 40개의 문답을 스펙과 티켓으로 정리한 다음에 대화를 압축한다(한국어 해설 전달): *"대화 내용이 이미 문서로 정리돼 있으니 압축해도 잃을 게 거의 없다고 봅니다."*(07:27~07:30) 압축의 손실을 압축 알고리즘이 아니라 **압축 전에 남긴 산출물**(용어집 · ADR · 스펙 이슈 · 티켓)로 막는 순서다 → [[grill-with-docs]].
+
+같은 영상에서 리셋 쪽의 판단도 나온다 — 26만 토큰을 쓴 서브 에이전트에 대해 *"그는 새 서브 에이전트를 띄우는 편이 나았을 거라고 말합니다."*(06:35~06:37) 비용 논거: *"75만 토큰짜리 대화는 캐시가 만료되면 그 토큰을 전부 다시 처리하는 비용을 또 냅니다."*(07:02~07:06) → [[context-rot]]

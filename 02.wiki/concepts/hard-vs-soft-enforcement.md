@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction, human-loop-roles-relocation]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-09-13
-updated: 2026-11-17
+updated: 2026-11-22
 ---
 
 # 하드 강제와 소프트 강제
@@ -192,3 +192,14 @@ AI Engineer Code Summit 발표(한국어 해설)의 뒤집힌 피라미드는 **
 - 순서를 뒤집는 이유: *"글은 에이전트가 읽고도 안 따를 수 있기 때문입니다. 코드로 만든 검사는 통과하지 못하면 거기서 멈춥니다."*(03:04~03:08)
 - 승격 규칙의 누적: 에이전트를 바로잡을 때마다 검사 하나 — 슬라이드 그래프 7월 7 → 11월 167(단위 미발화). 맺음: *"에이전트를 고쳐 줄 일이 생기면 글이 아니라 검사로 남긴다."*(10:45~10:46)
 - 오류 메시지가 소프트 층을 겸한다 — 린트가 막고, 그 메시지에 에이전트가 읽을 지시(*덮지 말고 근본 원인을 고쳐라*)를 적는다.
+
+## 2026-11-22 — 리뷰 코멘트를 린트로, 도입은 래칫으로 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]은 21,349줄 PR의 리뷰 코멘트 12개(주석 과다 · TypeScript `as` · 교차 타입 · 문자열 이름 검색 매개변수 · 결과를 버리는 fetch)를 하나같이 린트 규칙으로 만들자고 한다(한국어 해설 전달, 원음 무캡션).
+
+- ⭐ 도입 방식: *"첫 날부터 전부 막는 게 아니라 지금 위반 수를 기준 선으로 두고 그 수가 줄어들기만 하게 조이는 래칫 방식입니다."*(10:16~10:22)
+- 기준선의 크기: *"애즈는 파일 698개, 2078개, 유즈 팩트는 228개쯤."*(10:59~11:01)[=`as` 파일 698개 · 2,078곳, `useEffect` 228개쯤] *"포콕은 유조선을 돌리는 중이라며 웃습니다."*(11:04~11:05)
+- 동기: *"여기서 본 건 다시는 보고 싶지 않다. 린트로 아예 없애 버리겠다."*(10:24~10:27)
+- 소프트가 비어 있었다는 진단도 같이 나온다 — 회고의 결론은 그가 지적한 내용을 다룬 코딩 표준이 하나도 없었다는 것.
+
+이 페이지의 *PR 댓글은 코드 스멜* 과 같은 방향이고, 기존 위반이 수천 건인 저장소에서 하드 규칙을 **어떻게 켜는가** 에 대한 답(기준선 + 감소만 허용)이 처음 붙었다. ⚠️ 규칙이 실제로 만들어졌는지 · 효과는 소스에 없다.

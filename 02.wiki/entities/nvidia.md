@@ -5,9 +5,9 @@ category: org
 tags: [gpu, chips, ai-infrastructure, data-center, physical-ai, hardware]
 links:
   - https://www.nvidia.com/
-sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-jensen-huang-resignation-timeline]
+sources: [tech-bridge-jensen-huang-g20-agi, tech-bridge-jensen-huang-cbs-interview, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-jensen-huang-resignation-timeline, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-09-06
-updated: 2026-11-14
+updated: 2026-11-22
 ---
 
 # NVIDIA
@@ -89,3 +89,14 @@ CEO [[jensen-huang|Huang]]의 백악관 패널 발언. 진행자가 *"the open a
 - 주가(해설자가 Yahoo Finance 종가로 계산): 10-06 정점 239달러 → 10-29 −4%+ · 11-05 −9%+(AI 주식 전반, 사건과 별개) · 11-09 −4.3% · 11-11 −5.5%(최고점 대비 30% 가까이) · 11-12 개장 −13% → **166달러(−4.3%)** 마감, 시총 장중 4조 달러 아래(NBC · CNBC). 주주 집단 소송 보도.
 - 다음 일정: 11월 17일(판독 추정) 실적 발표 — Kress 체제 첫 발표. Bernstein 투자 의견 하향(*젠슨이 곧 엔비디아*).
 - *"AI 산업은 엔비디아에 기대고 엔비디아는 한 사람에게 기대고 있었습니다."*(08:11~08:14) → [[key-person-risk]]
+
+## 2026-11-22 — Vera Rubin의 첫 프로덕션 고객 사례: 에이전트가 추론 성능을 튜닝했다 ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+[[cognition|Cognition]]의 [[walden-yan|Walden Yan]] 발표를 따라간 한국어 해설에 Vera Rubin이 **쓰는 쪽의 사례** 로 나온다(2026-09-25 절은 CEO의 *출하 중* 발언뿐이었다). ⚠️ 해설 전달 · 위키는 CoreWeave 발표문을 열지 않았다.
+
+- *"코어 위브 발표문에 따르면 코그니션은 이 칩으로 실제 서비스를 돌린 첫 고객이었습니다."*(06:26~06:30)[=CoreWeave] *"받았을 때는 이 칩에 맞춘 커널이 아직 없어서 추론 환경을 처음부터 만들어야 했습니다."*(06:32~06:35)
+- 에이전트에게 준 목표: *"GPU 하나가 1분에 내는 토큰 수를 끝까지 올려라."*(06:38~06:43) *"9월 중순부터 일주일 남짓 에이전트가 찾은 방법이 아홉 단계로 쌓였습니다."*(06:44~06:46)
+- 슬라이드의 결과: *"끝에는 27,336 토큰. GB 300 최고치를 훌쩍 넘었습니다."*(06:56~07:00)
+- ⭐ 해설의 대조: *"다만 GB 300과의 비교와 에이전트의 일주일은 이 슬라이드에만 있습니다. 글로 남은 비교는 GB 200 대비 최대 4.8배입니다."*(07:01~07:06)
+
+⚠️ 칩 스펙은 여전히 없다. 27,336은 *GPU 하나가 1분에 내는 토큰 수* 로 소개되나 어느 모델 · 어떤 부하인지 캡션에 없다. 영어 더빙 ASR은 *GB 300* 을 전부 *GB200* 으로 적는다(쓰지 않음). 설명란의 발표문 제목에는 *Vera Rubin NVL72* 가 보인다. → [[goal-level-delegation]]

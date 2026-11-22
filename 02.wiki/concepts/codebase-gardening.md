@@ -6,9 +6,9 @@ tags: [codebase-as-memory, anti-patterns, tech-debt, lint, ci, agents, code-comm
 aliases: [코드베이스 정원사, gardener, 안티패턴은 바이러스처럼 퍼진다, 코드베이스는 기억이다, 린트로 출혈부터 멈춘다]
 related: [hard-vs-soft-enforcement, organic-architecture, dune-architecture, shortest-path-architecture, executable-standards, ai-slop, greenfield-vs-brownfield-agent-risk, agent-memory, deep-modules, slop-cannon, product-polish-patterns, agent-friction-multiplier]
 first-seen: tech-bridge-lauren-tan-2000-prs
-sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop]
+sources: [tech-bridge-lauren-tan-2000-prs, tech-bridge-factory-software-factory, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-railway-polished-internal-tools, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-09-26
-updated: 2026-11-17
+updated: 2026-11-22
 ---
 
 # 코드베이스 정원 가꾸기
@@ -157,3 +157,13 @@ Lauren Tan의 *All Code Is Slop (Except Mine)* 해설이 이 페이지의 주장
 - 슬라이드 문장: *"한 번 베낄 때마다 다음에 또 베낄 가능성이 커집니다."*(03:50~03:52)
 - ⭐ 가장 나빴던 것은 코드가 아니라 주석 — *"주석이 이 임시방편은 괜찮다고 설명해 주니까 다음 에이전트가 안심하고 따랐다는 겁니다."*(04:44~04:48) 처방은 주석 99% 금지와 린트(타이머를 쓰면 막고, 오류 메시지에 *근본 원인을 고치라* 는 지시). → [[comments]]
 - 규모의 근거: 2024년에는 하루 PR 세 개를 리뷰했고 지금은 300개에 가깝다(해설 전달) — 그래서 리뷰가 아니라 정원 가꾸기다.
+
+## 2026-11-22 — 회고가 찾은 원인: 기존 코드와 문서가 반대 패턴을 가르쳤다 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+[[matt-pocock|Matt Pocock]]의 retro가 리뷰 코멘트 12개의 원인을 하나로 모은다(한국어 해설 전달).
+
+- *"오히려 기존 코드와 문서가 반대 패턴을 가르치고 있었습니다."*(10:46~10:50) *"에이전트는 눈에 보이는 코드를 따라했을 뿐이고 리뷰어에게는 들이댈 규칙이 없었던 겁니다."*(10:51~10:54)
+- 남은 양: *"애즈는 파일 698개, 2078개, 유즈 팩트는 228개쯤."*(10:59~11:01)[=`as` · `useEffect`]
+- 처방은 Dune 세 원칙의 셋째와 같다 — 린트 규칙으로 출혈부터 막되 **래칫** 으로(→ [[hard-vs-soft-enforcement]]).
+
+*코드베이스는 에이전트의 기억* 이라는 이 페이지의 전제가 팀이 아니라 **혼자 쓰는 저장소** 에서 독립적으로 확인된 사례다. 주석이 퍼진 것도 같은 구조다 — 새 기능 폴더의 주석 비율이 저장소 평균보다 높았다(18% 대 12%, → [[comments]]).

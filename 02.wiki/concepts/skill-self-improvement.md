@@ -3,11 +3,11 @@ title: Skill Self-Improvement
 type: concept
 category: pattern
 tags: [agent-skills, feedback-loop, governance, claude-code]
-related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution]
+related: [agent-skills, harness-pruning, self-harness, generator-evaluator-pattern, impeccable, adjective-verb-steering, query-to-skill-distillation, software-factory, agent-state-machine, trace-to-memory-loop, run-trace-skill-distillation, mcp-skill-distribution, codebase-gardening]
 first-seen: tech-bridge-six-agent-skills
-sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-dan-martell-grokbot-daily-automation]
+sources: [tech-bridge-six-agent-skills, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-oracle-agent-memory-harness, tech-bridge-introspection-loop-is-the-product, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-horthy-state-of-software-factory, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-chieng-lee-ai-video-production, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-09-05
-updated: 2026-10-31
+updated: 2026-11-22
 ---
 
 # Skill Self-Improvement
@@ -190,3 +190,12 @@ updated: 2026-10-31
 - 같은 영상의 *"Do it once, save it as a skill"*(06:14~06:16)과 작업 녹화 → 스킬(06:16~06:24)은 스킬의 **생성** 경로다. 개선 루프는 아니다.
 
 > ⚠️ 편집량이 실제로 줄었는지는 발화되지 않는다. 1인 사용 팁.
+
+## 2026-11-22 — retro의 실례: 리뷰 코멘트 12개 → 원인 하나 → 이슈 20개쯤 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+10-25 소스가 제3자 소개로 전한 /retro가 [[matt-pocock|Matt Pocock]] 본인의 작업에서 도는 모습이다(한국어 해설 전달, 원음 무캡션).
+
+- 정의: *"코드가 아니라 에이전트가 일하는 환경을 고치는 스킬입니다."*(10:33~10:35)
+- 입력은 세션 기록 30개쯤과 리뷰 코멘트 12개. 결론: *"오히려 기존 코드와 문서가 반대 패턴을 가르치고 있었습니다."*(10:46~10:50) *"에이전트는 눈에 보이는 코드를 따라했을 뿐이고 리뷰어에게는 들이댈 규칙이 없었던 겁니다."*(10:51~10:54)
+- 산출물은 스킬 수정이 아니라 **이슈** 다 — 20개쯤을 예상하고, *"질문 없이 바로 에이전트에게 넘겨도 될 만한 작은 일들입니다."*(12:14~12:18) 자기 스킬 저장소([[mattpocock-skills]])에도 이슈를 올리고, 스킬은 그렇게 조금씩 고쳐진다고 한다.
+- ⭐ 회고 안에서 사람이 한 번 더 민다: 주석 감사에서 에이전트가 *"다 지우면 잃는 지식이 있다고 버팁니다."*(11:21~11:23) — 더 공격적으로 보라고 하자 답이 바뀌었다. **관찰은 자동이어도 기준은 사람이 정한다** 는 이 페이지의 요지와 맞는다. ⚠️ Pocock이 받아친 말(11:28~12:03)은 무캡션.

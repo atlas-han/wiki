@@ -3,11 +3,11 @@ title: Goal-Level Delegation
 type: concept
 category: pattern
 tags: [delegation, abstraction, slack-agent, claude-code, trust]
-related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra, flaky-tests]
+related: [harness-pruning, dynamic-workflows, persistent-agent-teams, token-roles, intent-alignment, openai-astra, flaky-tests, software-factory]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit, tech-bridge-karpathy-hackertube-two-hours-five-words]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-one-designer-plus-ai, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-knowledge-agents-not-coding-agents, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-09-05
-updated: 2026-11-19
+updated: 2026-11-22
 ---
 
 # Goal-Level Delegation
@@ -138,3 +138,14 @@ Karpathy 해설(⚠️ 2차 전달). 목표 수준 위임의 가장 짧은 형�
 - 맡긴 뒤 사람이 하는 일은 지켜보기가 아니라 **이해** 다: *"모델이 잡일을 더 많이 맡을수록 사람의 일은 감독과 이해 쪽으로 올라간다."*(05:46~05:50)
 
 ⚠️ 맥락은 혼자 쓰는 사이트다. 같은 주의 Fable 5.2 종합편([[tech-bridge-fable-5-2-start-with-opus]])이 전한 처방 — 승인의 범위를 정확히 적어라 — 과는 방향이 반대로 보이지만, 그쪽은 되돌리기 어려운 행동의 승인이고 이쪽은 버려도 되는 결과물이다(위키의 읽기).
+
+## 2026-11-22 — *일감이 아니라 직무*: 숫자 하나로 줄일 수 있는 일 ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+[[cognition|Cognition]]의 [[walden-yan|Walden Yan]]이 다음 단계로 꼽은 것(한국어 해설 전달): *"에이전트에게 일감이 아니라 직무를 준다."*(05:32~05:34)
+
+- 슬라이드의 예: 사람은 *"우리 API에 P99 응답 시간을 빠르게 해 줘."*(05:37~05:39)만 말하고, [[devin|Devin]]이 목표 수치(840ms → 500ms)를 정하고 이슈 14개와 경보 · 주간 보고를 건 뒤 *"아침마다 휴대폰으로 보고합니다."*(05:50~05:51)
+- ⭐ 조건: *"숫자 하나로 줄일 수 있는 일이면 에이전트를 붙여 24시간 그 숫자를 밀게 하라는 겁니다."*(06:15~06:19)
+- 사례 둘: [[nvidia|NVIDIA]] Vera Rubin 추론 튜닝(*"GPU 하나가 1분에 내는 토큰 수를 끝까지 올려라."*(06:38~06:43)) · 안드로이드 앱(*"이 기능을 옮겨라가 아니라 안드로이드를 iOS와 똑같이 유지하라."*(09:25~09:28)).
+- 제품화: [[devin-bots|Devin Bots]] 출시 글의 구분 — *"일감은 바꿀 내용을 말하고 책임은 결과를 말한다고 적었습니다."*(09:21~09:23)
+
+이 페이지의 정의(목표를 통째로 맡기고 보고 시점을 에이전트가 정한다)에 **기간이 없는 목표** 가 더해진다 — 끝나는 과제가 아니라 계속 지켜야 하는 수치 · 상태다. 사흘 전 [[grokbot|Grok Bot]] 팀의 *작업 → 목표 → 일자리* ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])와 같은 사다리다. ⚠️ *감시를 없앤 자리를 산출물 검증이 메운다* 는 이 페이지의 조건에 대해 발표가 내놓은 것은 스크린샷 테스트 2,800여 개와 녹화 영상이고, Vera Rubin 사례에서는 *"잘 먹힌 방법은 사람 엔지니어가 마지막에 확인했습니다."*(06:48~06:50) 숫자 하나를 미는 에이전트가 재지 않는 것을 버리는 문제([[reward-hacking]] — 어제의 *시작 시간 100% 단축*)는 발표에 나오지 않는다.

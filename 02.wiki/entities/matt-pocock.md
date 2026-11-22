@@ -8,9 +8,9 @@ links:
   - https://x.com/mattpocockuk
   - https://www.linkedin.com/in/mapocock/
   - https://aihero.dev
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-pocock-21k-lines-questions-before-code]
 created: 2026-10-09
-updated: 2026-11-21
+updated: 2026-11-22
 ---
 
 # Matt Pocock
@@ -77,3 +77,16 @@ Tech Bridge 해설(그의 영상 `hWe-j78vNpc`와 같은 날 올라온 aihero.de
 - 본인의 구분 — 전술과 전략: *"눈 앞의 전투를 이기는 게 전술, 전쟁을 이기는 법을 고민하는 게 전략."*(02:59~03:02) *"에이전트는 전술에 강하고 전략에 약하다는 거죠."*(03:02~03:04)
 - [[lauren-tan|Lauren Tan]]의 말을 끌어온다: *"코드 베이스와 API에서 뉘앙스를 최대한 없애야 한다고요."*(04:15~04:17)
 - 방송 전에 Zechner가 한 *검증은 과대평가됐다* 는 말을 방송에서 되물은 사람이다 → [[verification-bottleneck]]
+
+## 2026-11-22 — 본인의 70분 작업 영상: 질문 40개 → 21,349줄 → PR 7개 → 회고 ([[tech-bridge-pocock-21k-lines-questions-before-code]])
+
+Tech Bridge 한국어 해설(11-21 게시)이 그의 작업 영상 `jVBlkOF8sHk` 를 따라간다. ⚠️ **원음은 두 트랙 모두 무캡션 — 본인 인용 0**, 아래는 내레이션이 간추린 말이고 수치는 해설이 화면에서 읽은 값이다. 위키는 원본 영상을 열지 않았다.
+
+- 해설의 소개: 타입스크립트 강의로 이름을 알렸고 *"요즘은 이스킬 저장소로 더 유명합니다."*(00:32~00:33)[=이 스킬 저장소(추정)] → [[mattpocock-skills]](신규)
+- **코드보다 질문이 먼저.** *"매트 포콕은 40분 가까이 코드를 한 줄도 쓰지 않았습니다."*(00:12~00:16) *"대신 AI가 던지는 질문 40개에 답하면서 단어 하나를 고르고 있었습니다."*(00:17~00:21) → [[grill-with-docs]](신규)
+- **이름에 대한 집착이 작업 방식으로.** 10-10 대담의 *언어 · 단어 선택에 obsessed* 가 여기서는 560줄 용어집 · 이름 후보의 시나리오 테스트 · ADR로 나타난다. *"이름이 정해지면 기능도 다 정해진 셈이라고 말합니다."*(03:14~03:16)
+- **도구.** *"도구는 클로드 코드, 모델은 오퍼스 5.5, 초론 수준은 중간이었습니다."*(01:34~01:35)[=추론 수준]
+- **리뷰.** 21,349줄을 PR 일곱 개로 나누게 하고, 꼭 사람이 봐야 한다고 한 것은 DB 마이그레이션 하나. 코멘트 12개는 대부분 *주석이 너무 많다* 였고 전부 린트 규칙으로 만들자고 한다: *"여기서 본 건 다시는 보고 싶지 않다. 린트로 아예 없애 버리겠다."*(10:24~10:27) — 10-05 발표의 *같은 코멘트를 두 번 쓰지 마라* 의 실례. → [[hard-vs-soft-enforcement]] · [[comments]]
+- **태도.** *"혼자 쓰는 앱이지만 사용자가 수십만 명인 서비스인 척하는 연습이라고 말합니다."*(08:53~08:56)
+- **사람의 자리.** 설명란 요약: 사람이 쓸모 있는 곳은 처음(방향 맞추기)과 끝(리뷰 · 회고). ⚠️ 본인의 답(12:42~13:06)은 무캡션.
+- ⚠️ 이 페이지 *태도* 절의 단서 그대로다 — 자기 스킬로 한 자기 사례 하나, 머지 뒤의 품질 평가는 없다.

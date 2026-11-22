@@ -4,11 +4,11 @@ type: concept
 category: technique
 tags: [verification, skills, tracing, cdp, correctness, agents]
 aliases: [verification skill, 에이전트가 스스로 확인하게 하기]
-related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review]
+related: [verification-bottleneck, feature-map, behavior-validated-trust, agent-trust-curve, generator-evaluator-pattern, verifiable-goals, skill-evals, ai-formal-verification, product-polish-patterns, three-level-agent-review, run-trace-skill-distillation]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-railway-polished-internal-tools, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-09-13
-updated: 2026-11-19
+updated: 2026-11-22
 ---
 
 # 검증 스킬
@@ -127,3 +127,15 @@ updated: 2026-11-19
 ## 2026-11-19 — *가장 작은 고리부터*: 코드를 돌려 보는 건 누구인가 ([[tech-bridge-grok-bot-team-lightcone-ai-coworkers]])
 
 Lightcone 인터뷰 해설(⚠️ 해설 전달 — Tan이 화면에 그린 고리의 설명 07:11~07:47은 무캡션). 어디서 투자를 시작하느냐는 물음에 대한 답이 이 스킬의 자리다: *"에이전트는 이미 코드를 씁니다. 그런데 그 코드를 돌려 보는 건 누구일까요? 준비가 안 된 팀에서는 사람입니다."*(07:03~07:08) 그 고리가 믿을 만해진 뒤에야 *"바깥에 고리를 하나 더 얹습니다."*(07:51~07:53) — 지표 알림에 봇이 깨어나 자기 기계에서 재현하고 **같은 도구로** 고치고 돌려 보고 확인한다. 해설의 맺음도 같은 말이다: *"코드를 읽는 대신 에이전트가 제 일을 스스로 확인하게 만듭니다."*(10:47~10:49)
+
+## 2026-11-22 — 코드베이스 쪽의 전제: 에이전트가 혼자 띄우고 혼자 시험한다 ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+[[cognition|Cognition]]의 [[walden-yan|Walden Yan]] 발표(한국어 해설 전달). 검증 스킬이 성립하려면 에이전트가 시스템 전체를 직접 돌릴 수 있어야 한다는 쪽의 구체 구성이다.
+
+- 예전: *"예전에는 클라우드의 스테이징 서버와 데이터베이스에 붙어서 테스트했고, 마지막엔 엔지니어가 직접 화면을 눌러봤습니다."*(03:41~03:46)
+- 지금: *"지금은 모든 서비스를 도커 컴포즈로 띄우고 외부 서비스는 흉내낸 가짜로 바꾸고 가상 머신 하나 안에서 돌립니다."*(03:48~03:53)[=Docker Compose] *"가상 머신은 매 시간 새로 만듭니다. 최신 코드를 받아 처음부터 빌드하고 빌드가 깨지면 데빈이 먼저 고칩니다."*(03:54~03:58)
+- ⭐ 스킬의 주인: *"테스트하는 방법도 데빈이 스크립트 파일로 직접 적어둡니다. 코드가 바뀌면 그 스킬도 데빈이 고칩니다."*(04:00~04:03)
+- 스킬의 개선: 지난 세션 1,300여 개를 분석해 *"테스트할 때마다 되풀이되던 로그인을 스킬로 저장해 테스트 시간을 31% 줄였습니다."*(04:51~04:55) → [[run-trace-skill-distillation]]
+- 여러 사용자가 얽힌 기능도: 한 가상 머신에서 계정 여럿으로 같은 Zoom 통화에 들어가 음성을 주고받게 했다(내레이션 전달).
+
+[[lauren-tan|Lauren Tan]] 쪽 판본과 견주면 스킬을 사람이 쓰느냐 에이전트가 쓰느냐가 다르다 — 여기서는 작성도 유지도 [[devin|Devin]]이다. ⚠️ 해설의 대조: *"도커 컴포저 이전이나 매시간 재빌드는 발표에서만 나온 이야기입니다. 테스트 스킬은 코그니션이 5월에 블로그에도 적어 두었습니다."*(04:06~04:11) 위키는 그 블로그 글(*Verifying Agentic Development at Scale*)을 열지 않았다. 가짜로 바꾼 외부 서비스가 실제와 어긋날 때의 처리는 캡션에 없다.

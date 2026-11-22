@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [metrics, productivity, goodhart, outcomes, mission, kent-beck, lines-of-code, pr-count]
 aliases: [effort output outcome impact, effort-output-outcome-impact, 노력 산출 결과 미션, tyranny of metrics, 지표의 폭정]
-related: [trusted-throughput, value-maxing, ai-measurement-framework, perceived-vs-actual-productivity, agent-roi-measurement, outcome-engineering, features-vs-futures]
+related: [trusted-throughput, value-maxing, ai-measurement-framework, perceived-vs-actual-productivity, agent-roi-measurement, outcome-engineering, features-vs-futures, goal-level-delegation]
 first-seen: tech-bridge-kent-beck-craft-augmented-development
-sources: [tech-bridge-kent-beck-craft-augmented-development, tech-bridge-factory-bug-report-to-production]
+sources: [tech-bridge-kent-beck-craft-augmented-development, tech-bridge-factory-bug-report-to-production, tech-bridge-walden-yan-cognition-no-laptop-development]
 created: 2026-10-09
-updated: 2026-10-17
+updated: 2026-11-22
 ---
 
 # 노력 → 산출 → 결과 → 미션
@@ -64,3 +64,14 @@ updated: 2026-10-17
 [[davis-palmie|Davis Palmie]]([[factory-ai|Factory]]): *"you want to measure outcomes, not tokens. Lines of code and tokens generated are gameable metrics. These are not actually associated with outcomes."*(16:18~16:31) 토큰 리더보드는 *"Goodhart's law in real time"*(16:39~16:41)이라고 한다. Beck의 네 칸 가운데 노력·산출 쪽 지표를 Goodhart로 부정하는 같은 논리다. 대신 내놓는 이름은 *"signal to production time, human intervention count, median time to repair, shelf life of code, and cost per PR"*(17:02~17:10)이다.
 
 ⚠️ 다섯 지표가 이 페이지의 *outcome* 칸에 드는지 *output* 칸에 드는지는 정의가 없어 판정하지 않는다(예: *cost per PR* 은 PR 단위다). 맺음 *"Your end users don't care about how much you're spending on AI."*(17:49~17:53)는 *mission* 쪽을 가리키지만 지표로 이어지지 않는다.
+
+## 2026-11-22 — *PR 40배*: 산출 지표로 연 발표와 해설의 유보 ([[tech-bridge-walden-yan-cognition-no-laptop-development]])
+
+[[cognition|Cognition]]의 [[walden-yan|Walden Yan]] 발표는 한 달 동안 머지된 PR 수의 배수 그래프로 열린다(1년 사이 40배, 연구 개발 인력 2.7배). 사슬로 치면 **산출** 이다. 한국어 해설이 그 자리에서 유보를 단다.
+
+- *"다만 여기서 세는 건 PR 개수입니다. PR 하나의 크기나 가치는 그래프에 나오지 않습니다."*(01:08~01:11)
+- *"품질이 그대로라는 것도 발표자의 말입니다. 데빈을 파는 회사의 발표라는 점도 감안해야 합니다."*(01:13~01:16)
+- 맺음: *"PR 개수는 일의 양이지 가치가 아닙니다."*(10:02~10:03)
+- 검산도 한다 — *"발표에서는 하루 4, 50개라고 했지만 44일 평균으로 치면 하루 26개 꼴입니다."*(08:21~08:25)
+
+같은 발표 안에 **결과 쪽 지표로 일을 맡기는** 대목이 함께 있다는 점이 눈에 띈다: 에이전트에게는 P99 응답 시간 · GPU당 분당 토큰 수처럼 결과에 가까운 숫자를 주면서([[goal-level-delegation]]), 회사의 성과는 PR 수로 보여 준다. ⚠️ 에이전트가 PR을 잘게 쪼갤수록 그래프가 커진다는 점(메시지 하나에 PR 여섯 개)은 해설도 발표도 따지지 않는다 — 위키의 관찰이다.
