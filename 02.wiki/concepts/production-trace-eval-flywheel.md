@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [evals, production-traces, regression-tasks, hill-climbing, observability, self-improvement, flywheel]
 aliases: [eval flywheel, eval 플라이휠, 평가 플라이휠, production traces to eval tasks, 프로덕션 트레이스를 평가 태스크로]
-related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop, open-model-customization-loop]
+related: [research-production-agent-parity, yaml-agent-eval-pipeline, self-harness, skill-evals, generator-evaluator-pattern, verifiable-goals, automated-ai-research, field-level-unit-test-evals, agent-state-machine, eval-platform-maturity-stages, taste-encoded-evals, trace-to-memory-loop, open-model-customization-loop, post-training-northstars]
 first-seen: tech-bridge-wandb-aria-self-improving-agent
-sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift]
+sources: [tech-bridge-wandb-aria-self-improving-agent, tech-bridge-goodbye-slop-state-machines, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-langchain-learning-agent-memory, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-lee-robinson-always-on-agents, tech-bridge-harrison-chase-agent-improvement-loop, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 created: 2026-09-30
-updated: 2026-11-08
+updated: 2026-11-23
 ---
 
 # 프로덕션 트레이스 → eval 태스크 플라이휠
@@ -114,3 +114,13 @@ updated: 2026-11-08
 - 플라이휠의 약점도 말한다: *"the topology and ontology of bugs changes over time."*(05:50~05:51) → *"you'll need to have a real-time updating data set."*(05:51~05:53) *"unless you have millions and millions of pull requests, it's actually hard to have reasonably high coverage of bug types."*(05:56~06:00) 그리고 에이전트가 좋아질수록 *"novel mistakes"*(06:08)가 늘어 과거 셋이 덜 듣는다고 한다. ⚠️ 이 결론은 여러 회사의 코퍼스를 가진 자사 제품의 강점으로 이어진다.
 - 쓰임이 프롬프트 튜닝에 그치지 않는다. 하위 작업을 작은 모델로 바꿀 때의 회귀 검사에도 같은 셋을 쓴다 → [[model-mixing-economics]]
 - 빠진 것: 사고 PR 셋은 *놓치지 않는가*만 잰다. 잡음(nitpick)을 재는 음성 셋은 발화되지 않는다.
+
+## 2026-11-23 — 모델 훈련 층의 고리: 사내 10만 명이 깨뜨린 것이 다음 과제 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+[[melvin-johnson|Melvin Johnson]]([[google-deepmind|Google DeepMind]])의 Gemini 4 훈련 발표를 옮긴 한국어 해설. ⚠️ 해설 전달, 제작사 자기 보고.
+
+- 고리: *"사내 10만 명에게 써보게 합니다. 그리고 실제로 쓰다 깨진 것이 다음 차례의 어려운 과제가 됩니다."*(02:57~03:00)
+- 수집 방식: *"이름을 가린 두 모델에 같은 일을 시켜 더 나은 쪽을 고르게 합니다."*(10:19~10:23) *"평소 코딩하는 동안 몰래 다른 모델로 연결해 신호를 모으기도 합니다."*(10:24~10:26)
+- 과제로 바꾸기: 구글 사내의 병합된 변경을 훈련 과제로 만든다 — 평균 변경 크기가 SWE-bench Verified의 20배라고 한다.
+
+위 2026-10-18 절들(가중치로 도는 flywheel · 모델 학습까지 닫히는 판본)의 랩 규모 사례다. ⚠️ 이 구간의 발표 원음(09:41~10:18)은 무캡션이라 실패를 과제로 바꾸는 절차는 캡션에 없다.

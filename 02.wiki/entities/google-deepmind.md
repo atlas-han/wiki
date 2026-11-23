@@ -5,9 +5,9 @@ category: org
 tags: [frontier-lab, google, commerce, multimodal, agent]
 links:
   - "https://deepmind.google/"
-sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics, tech-bridge-hassabis-fry-creativity-future]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics, tech-bridge-hassabis-fry-creativity-future, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 created: 2026-09-04
-updated: 2026-10-16
+updated: 2026-11-23
 ---
 
 # Google DeepMind
@@ -65,3 +65,14 @@ Google의 AI 연구·제품 조직. 본 위키에 **Google 계열 조직 페이�
 - [[tech-bridge-multimodal-commerce-agent]] — [[nidhi-kaushik-vyas]], 2026-09-03
 - [[tech-bridge-uncertainty-mathematics]] — [[zoubin-ghahramani]], 2026-09-03
 - <https://deepmind.google/>
+
+## 2026-11-23 — 사후 학습 팀이 말하는 Gemini 4 훈련 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+Gemini의 사후 학습을 이끄는 [[melvin-johnson|Melvin Johnson]]이 AI Engineer CODE Summit 2026에서 한 발표의 한국어 해설. 이 페이지에 처음으로 **모델 훈련 공정** 이 들어온다. ⚠️ 해설 전달, 발표 원음은 캡션에 없음.
+
+- **바깥의 평과 반등.** 발표는 *"구글 클라우드는 잘 나가는데 제미나이는 끝났다. 딥마인드는 더 이상 최전선 연구소가 아니다."*(00:41~00:47)라는 말로 열렸다. *"그의 계산으로 구글은 236일 동안 최전선 모델을 내지 못했습니다."*(01:20~01:22) 그 뒤 9월 말 Argon · 10월 말 Carbon · 11월 Hydrogen → [[gemini-4]]
+- **구글 안의 사용.** *"지금 구글 새 코드의 75%를 AI가 씁니다. 2024년 10월에는 25%를 조금 넘었습니다. 엔지니어가 검토하고 승인한 코드 기준입니다."*(02:24~02:33) → [[antigravity]]
+- **훈련 고리.** 어려운 과제 → 리뷰어처럼 채점 → 강화 학습 → 사내 10만 명 사용 → *"실제로 쓰다 깨진 것이 다음 차례의 어려운 과제가 됩니다."*(02:59~03:00) → [[reward-hacking]] · [[post-training-northstars]]
+- **속도.** *"올해 초엔 출시 간격이 두 세 달이었는데 7월부터 11월까지는 16주 동안 여섯 번 출시했습니다."*(10:31~10:37)
+
+⚠️ 전부 자기 보고다. 2026-10-13 절의 [[demis-hassabis|Hassabis]] 대담과는 층이 다르다 — 그쪽은 연구 방향, 이쪽은 코딩 모델의 훈련 운영이다.

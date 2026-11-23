@@ -3,11 +3,11 @@ title: 들쭉날쭉한 역량 경계 (Jagged Frontier)
 type: concept
 category: theory
 tags: [capability, evaluation, astra, agi, unevenness]
-related: [agi-definition, all-or-nothing-accuracy, skill-evals, ai-slop, openai-astra, capability-detour, differential-capability-limitation, demo-collaboration-gap]
+related: [agi-definition, all-or-nothing-accuracy, skill-evals, ai-slop, openai-astra, capability-detour, differential-capability-limitation, demo-collaboration-gap, human-readable-folder]
 first-seen: tech-bridge-brockman-agi-era-defender-window
-sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-claude-fable-5-2-announcement, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-gpt-6-2-astra-launch-day-reactions]
+sources: [tech-bridge-brockman-agi-era-defender-window, tech-bridge-claude-fable-5-2-announcement, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 created: 2026-09-20
-updated: 2026-11-19
+updated: 2026-11-23
 ---
 
 # 들쭉날쭉한 역량 경계 (Jagged Frontier)
@@ -88,3 +88,14 @@ Karpathy의 10월 *냅킨 계산* 글(한국어 해설 전달, ⚠️ 원 글 �
 | 한 번에 뽑아내는 결과물 | 변주 — 다른 프롬프트에서 같은 이름의 레벨(*벨웨더*) |
 
 09-20에 Brockman이 든 뒤처진 곳이 *글쓰기* 였고, 두 달 뒤 바깥 팀(Every)이 든 것도 글쓰기다 — 다만 이유가 다르다(09-20 *훌륭하지는 않다* / 이번 *너무 압축한다*). 뒤처진 쪽이 **도메인이 아니라 일의 길이와 방식** 으로 갈린다는 것이 이 편의 새 조각이다. → [[demo-collaboration-gap]]
+
+## 2026-11-23 — 용어의 출처와 짝말: 들쭉날쭉한 경계의 *매끈한 안쪽* ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+한국어 해설이 이 말의 출처를 처음 적어 준다: *"2023년 하버드 경영대학원 연구진이 BCG와 함께 낸 논문에서 나왔습니다."*(04:28~04:32) *"컨설턴트 758명을 실험했더니 경계 안의 과제에서는 품질이 40% 넘게 올랐습니다. 그런데 경계 밖의 과제에서는 AI를 쓴 쪽이 정답을 낼 확률이 19% 포인트 낮았습니다."*(04:39~04:49) ⚠️ 논문(Dell'Acqua 외, HBS Working Paper 24-013 — 설명란)은 위키 미열람, 내레이션의 수치다.
+
+- **경계의 이동.** [[thariq-shihipar|Thariq Shihipar]]가 발표에서 보여 준 순서: *"함수 하나, 기능 하나, 할 일 앱, 슬랙 복제. 그리고 이제는 마리오 카트를 처음부터 만들어 달라는 수준입니다."*(04:53~04:57) *"벤치마크에서 보는 건 늘 이 끝자락입니다."*(04:59~05:01)
+- ⭐ **매끈한 안쪽(smooth interior).** *"그가 더 중요하게 본 건 경계 안쪽입니다. 그는 이걸 매끈한 안쪽이라고 불렀습니다."*(05:02~05:06) *"경계 아래는 들쭉날쭉하지 않고 고르게 넓어진다는 겁니다."*(05:12~05:14) ⚠️ 원음은 무캡션 — 영어 표현은 더빙 ASR에만 있다.
+- **근거로 든 그림.** 위도와 경도를 글자로만 주고 땅인지 물인지 16,200번 묻는 평가(Celeste, [[andrej-karpathy|Karpathy]] 소개): *"오퍼스 4.6은 91%로 윤곽이 흐릿하게 잡히고 오퍼스 5.5는 99% 거의 실제 지도입니다."*(06:21~06:26) *"타리크가 이 지도에서 본 건 벤치마크 점수가 아니라 모델이 가진 일반 지식의 폭이었습니다."*(06:32~06:36)
+- **귀결.** 안쪽이 매끈하면 형식을 사람이 고를 수 있다 — *"그래서 이제 원하는 방식대로 시킬 수 있습니다."*(05:35~05:37) → [[human-readable-folder]]
+
+위 절들과의 관계: 이 페이지는 경계가 고르지 않아 **단일한 문턱이 없다** 는 쪽을 모아 왔다. *매끈한 안쪽* 은 그것을 뒤집지 않는다 — 끝자락은 여전히 들쭉날쭉하고, 고르다는 것은 이미 경계 안에 들어온 영역이다. ⚠️ 근거는 평가 하나와 발표자의 경험이고, *안쪽* 과 *끝자락* 을 어디서 가르는지는 소스에 없다. 세계지도 평가도 60% → 91% → 99%로 **세대에 따라** 달라진 것이라 *안쪽이 원래 매끈하다* 가 아니라 *매끈해졌다* 로 읽는 편이 안전하다.

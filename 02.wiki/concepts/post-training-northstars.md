@@ -3,11 +3,11 @@ title: Post-training의 북극성 (RLHF · RLVR · 보정된 의사결정)
 type: concept
 category: technique
 tags: [post-training, rlhf, rlvr, calibration, objective-function]
-related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model, model-calibration, verifiable-goals, open-model-customization-loop]
+related: [rlhf, preference-reward-asymmetry, assistance-vs-automation, sutton-bitter-lesson, decision-quality, jev, system-1-model, model-calibration, verifiable-goals, open-model-customization-loop, reward-hacking]
 first-seen: tech-bridge-rlhf-assistance-vs-automation
-sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-fireworks-train-to-deploy-open-models]
+sources: [tech-bridge-rlhf-assistance-vs-automation, tech-bridge-jev-agent-harness, tech-bridge-jev-calibrated-decisions, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 created: 2026-09-20
-updated: 2026-10-18
+updated: 2026-11-23
 ---
 
 # Post-training의 북극성
@@ -80,3 +80,15 @@ updated: 2026-10-18
 - [[diogo-almeida]] · [[typesafe-ai]]
 - 관련: [[rlhf]] · [[preference-reward-asymmetry]] · [[assistance-vs-automation]] · [[sutton-bitter-lesson]] · [[decision-quality]]
 - [[tech-bridge-jev-calibrated-decisions]] — RLCD (IBM 계열) · [[model-calibration]]
+
+## 2026-11-23 — 랩의 사후 학습 공정: 과제의 난이도와 채점표 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+[[google-deepmind|Google DeepMind]] 사후 학습 책임자 [[melvin-johnson|Melvin Johnson]]의 발표를 옮긴 한국어 해설. 이 페이지가 **무엇을 목표로 삼는가** 를 다뤘다면, 이 소스는 코딩 에이전트의 RL에서 **신호가 어디서 사라지는가** 를 말한다. ⚠️ 해설 전달.
+
+- 정의: *"사후 학습은 다 만든 모델에게 일하는 법을 가르치는 단계입니다."*(02:20~02:22)
+- ⭐ **쉬운 과제에는 신호가 없다.** *"여덟 번 다 맞히면 비교할 게 없습니다. 여덟 번 중에 세 번 맞춰야 그 세 번이 배울 거리가 됩니다."*(03:41~03:46) 그래서 *"늘 다 풀리던 파일 하나짜리 문제는 잘라냈고 수십 개 파일을 걸친 긴 과제는 두 배로 늘렸습니다."*(03:48~03:54) 모델이 좋아질수록 *"연습 문제가 바닥납니다."*(03:04~03:06)
+- **과제의 출처.** 실제 오픈 소스 커밋(*"원래 테스트가 없어도 됩니다."*(04:07))과 구글 사내의 병합된 변경. ⚠️ 셋 가운데 둘째 출처는 무캡션 구간(04:10~04:37)에 있어 내용 미상.
+- **이진 검증기에도 신호가 없다.** *"통과냐 실패냐만 보는 테스트는 어려운 과제에서 신호가 거의 없습니다."*(06:01~06:03) 과제별 기준으로 0과 1 사이의 점수를 준다 — 이 페이지의 RLVR(검증 가능한 보상) 축에서, 검증기를 기준표로 바꾼 판본이다. → [[verifiable-goals]] · [[reward-hacking]]
+- **정직에 주는 보상.** *"막힌 지점과 부분 진척을 솔직히 밝히면 꾸며낸 완성보다 높은 점수를 받습니다."*(09:27~09:32)
+
+위 위계(*올바른 작업 > 데이터 > 컴퓨트*)와 맞닿는다 — 이 발표의 대부분은 작업(과제와 채점)을 고르는 이야기이고 컴퓨트는 *강화 학습을 크게 돌리고* 한마디뿐이다.

@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [cognitive-load, code-review, human-in-the-loop, verification, spec-driven-development, agents]
 aliases: [cognitive debt, 인지 부채, AI fatigue, AI 피로]
-related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry, review-wip-limit]
+related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry, review-wip-limit, human-readable-folder]
 first-seen: tech-bridge-sdd-full-course
-sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 created: 2026-09-27
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 # 인지 부채와 AI 피로
@@ -73,3 +73,14 @@ updated: 2026-11-21
 - 빚을 지지 않는 방법으로 Zechner가 드는 것은 읽는 양의 한도다 → [[review-wip-limit]]
 
 인지 부채를 *피로* 가 아니라 **책임과 비상 대응 능력** 의 문제로 놓는 판본이다. ⚠️ Zechner가 *이미 보고 있다* 는 장면이 무엇인지는 빈 구간에 있어 적지 못했다.
+
+## 2026-11-23 — 만든 사람의 고백과 구조적 처방: 이해할 구역을 정한다 ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+[[claude-code|Claude Code]]를 만들던 [[thariq-shihipar|Thariq Shihipar]]가 자기 게임을 두고 한 고백의 한국어 해설(원음 무캡션, 내레이션 전달): *"자기가 만든 게임인데 캐릭터가 뭘 하는지 모르겠다고 합니다."*(00:00~00:02) *"그런데 그는 무대에서 이건 받아들일 수 없다고 했습니다."*(00:18~00:20)
+
+- **증상 둘.** 결정이 모델로 넘어간다 — *"그 질문들에 모델이 알아서 답을 정해버립니다."*(07:24~07:26) 그리고 몰입이 깨진다 — *"게다가 프롬프트를 보내놓고 딴 일을 하다 돌아오니 몰입이 안 됐습니다."*(07:26~07:29) 발표 2주 전 X 글(내레이션이 옮김): *"코딩 에이전트에 빠지면 일을 많이 하는 것 같은데 실제로는 아무것도 진행되지 않는 상태가 온다고요."*(07:36~07:40)
+- **왜 문제인가.** 그의 기준은 작품이다 — *"좋은 작품이 결국 선택의 결과라고 봅니다."*(08:04~08:06) 선택하려면 알아야 하는데 *"바이브 코딩한 코드는 들여다봐도 무슨 일이 일어나는지 모르겠다는 겁니다."*(08:12~08:15)
+- ⭐ **처방은 속도가 아니라 구역이다.** 코드베이스를 엔진과 사람이 읽는 폴더로 나누고, 읽는 쪽에만 린트 · 규칙 · 실제 단위 · 줄마다의 주석을 건다 → [[human-readable-folder]]. 이 페이지의 기존 처방(작은 단계 · 속도 조절)과 겹치지 않는 세 번째 종류다.
+- 이틀 전 [[tech-bridge-zechner-ronacher-verification-is-overrated]]의 *업계가 이해에서 도망치고 있다* 와 같은 걱정을, 이번에는 에이전트 도구를 만든 쪽 사람이 자기 일로 말한다.
+
+⚠️ *"그 결과 오히려 진도가 더 나갔다고 털어놓았습니다."*(07:31~07:33) 는 앞뒤 문맥과 맞지 않는다(영어 더빙 ASR도 *more progress*) — 글자 그대로 두었고 근거로 쓰지 않았다. *그 질문들* 의 내용은 무캡션 구간(07:03~07:24)에 있다.

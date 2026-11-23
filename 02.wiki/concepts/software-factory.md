@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 created: 2026-10-02
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -296,3 +296,14 @@ Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이�
 - 전사 그래프: 머지된 PR 40배 · 엔지니어 2.7배(1년).
 
 이 페이지의 벤더 자기 보고들 가운데 **사람 승인을 뺀 머지의 비율(약 88%)을 숫자로 낸 첫 사례** 다. 어제 [[mario-zechner|Zechner]]의 *아직 본 적은 없다* 바로 다음 날 들어온 반대쪽 보고이기도 하다. ⚠️ 범위가 좁다 — 기존 iOS 앱을 설계도 삼아 맞춰 가는 신규 앱 하나이고 아직 공개 테스트 중이다. 해설의 맺음: *"사람 승인 없는 머지가 어디까지 안전한지도 이 발표에는 나오지 않았습니다."*(10:05~10:08) 발표자는 *"it's not a slop application."*(08:53~08:55)이라고 하지만 근거는 캡션에 없다.
+
+## 2026-11-23 — 공장이면서 공방: 산업 혁명과 르네상스가 동시에 ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+[[thariq-shihipar|Thariq Shihipar]]의 발표(한국어 해설 전달, 원음 무캡션)는 공장을 부정하지 않고 그 옆에 다른 것을 놓는다.
+
+- *"그는 지금의 AI를 산업 혁명이면서 동시에 르네상스라고 봅니다."*(03:34~03:37)
+- 공장 쪽은 이미 왔다: *"소프트웨어 공장이라는 말이 흔해졌고 소프트웨어 만들기는 더 이상 병목이 아니게 됐습니다."*(03:41~03:45)
+- 둘의 경쟁은 다르다: *"산업화는 빠르고 믿을 수 있고 싸게 내 놓는 경쟁입니다. 르네상스는 아무도 본 적 없는 것을 내 놓는 일이고요."*(03:46~03:52) *"지금은 둘이 동시에 돌아간다는 겁니다."*(04:21~04:23)
+- 공방 쪽의 재료로 꼽은 것: *"빠르고 표현력 있고 고치는 즉시 반영되는 새 언어, 새로운 데이터베이스와 서버, 운영체제와의 새로운 상호작용, 다시 읽어볼 만해진 옛 HCI 연구, 새로운 미학, 그리고 쓰는 사람이 고쳐 쓸 수 있는 소프트웨어."*(10:18~10:32)
+
+위키의 읽기: [[orchestras-not-factories]]가 공장 은유 자체를 반대한다면 이것은 **병치** 다 — 공장의 지표(속도 · 신뢰 · 비용)로 잴 수 없는 일이 따로 있고, 그 일에는 사람이 코드를 읽고 고르는 구조가 필요하다는 것([[human-readable-folder]]). 같은 행사에서 하루 전 소스 [[tech-bridge-walden-yan-cognition-no-laptop-development]]가 공장 쪽의 숫자(사람 승인 없는 머지 999개)를 냈다. ⚠️ 원음(03:54~04:19)은 무캡션.

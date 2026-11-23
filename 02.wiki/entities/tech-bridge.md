@@ -202,8 +202,10 @@ sources:
   - tech-bridge-kokotajlo-diary-of-a-ceo-two-million-signature
   - tech-bridge-pocock-21k-lines-questions-before-code
   - tech-bridge-walden-yan-cognition-no-laptop-development
+  - tech-bridge-thariq-shihipar-human-folder-unacceptable
+  - tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication
 created: 2026-06-03
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # Tech Bridge
@@ -1905,3 +1907,23 @@ updated: 2026-11-22
 - 게시 시각 **11-22 08:00 KST**(`upload_date`는 UTC 기준 20261121). 설명란의 출처 여섯(원본 발표 `U92J5mCDLMc` · Devin Bots 출시 글 · Walden Yan X · Russell Kaplan X · CoreWeave 발표문 · Cognition 블로그 글)은 미열람.
 
 **멤버 전용**: 신규 `jMzmFrwfYHk`(*우리는 세상이 모르는 비밀을 알았다 | 앤트로픽 창업자들*, 11:08, 목록 `upload_date` 20261121, 목록 줄 `subscriber_only`) — 건너뜀, 페이지 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 목록은 둘. 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-22 업로드 — Thariq Shihipar(AI Engineer Code Summit 마지막 무대) · Melvin Johnson(Google DeepMind, Gemini 4 사후 학습) (2026-11-23 ingest)
+
+[[tech-bridge-thariq-shihipar-human-folder-unacceptable|Claude Code 만들던 개발자가 “받아들일 수 없다”고 한 것 | Thariq Shihipar]](`SBKLfp5NE4M`, 11:22, 공식 챕터 10) — 한국어 해설, Anthropic을 10월 말 떠난 Claude Code 팀 출신의 AI Engineer Code Summit 마지막 발표를 따라간다 ([[human-readable-folder]](신규) · [[thariq-shihipar]] · [[sutton-bitter-lesson]] · [[jagged-capability-frontier]] · [[harness-pruning]] · [[cognitive-debt]] · [[software-factory]] · [[claude-code]] · [[andrej-karpathy]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`는 처음부터 끝까지 더빙의 ASR(인용하지 않음 — *Thariq Shihipar* → *Tareq Shabar*, *Celeste* → *Celestia*, *11월* → *last November*).
+- ⚠️ **발표 원음은 두 트랙 모두 무캡션**(ko-orig 열세 곳, 약 3분 33초) — 11-20 Zechner 편 · 11-21 Pocock 편과 같은 배치다. **Thariq 본인 인용 0건**, 인용 130건은 전부 한국어 내레이션. 제목의 *받아들일 수 없다* 도 내레이션의 전달(00:18~00:20)로만 남았고, 세 오답을 묶는 *하나의 두려움* 이 무엇인지(02:54~03:23)도 빈 구간에 있다.
+- ⭐ [[thariq-shihipar]]가 9월 팀 대담(화자 미특정)에 이어 **단독 발표자로** 돌아왔다 — 이력(Claude Code 1년여 · 10월 말 퇴사 · 그 전 YC 투자 게임 회사 5년)이 처음 들어온다. 채널의 [[software-factory]] 연속 편들 옆에 *공장이면서 공방* 이라는 병치를 놓고, [[cognitive-debt]]에 구조적 처방([[human-readable-folder]])을 준다.
+- ⚠️ 판독 미확정: 세계지도의 60% 모델 이름(ko ASR *손해 4.5* 대 더빙 ASR *Sonnet 3.5*) · *진도가 더 나갔다*(07:31, 문맥과 어긋나나 두 트랙 동일 — 글자 그대로 둠).
+- 게시 시각 **11-22 19:00 KST**(`upload_date` 20261122). 설명란의 출처 일곱(원본 발표 `xRJMiaUoD_8` · Sutton 원문 · Dell'Acqua 외 논문 · Karpathy X · Celeste X · Thariq X 두 편)은 이번에 미열람.
+
+[[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication|테스트는 통과했는데, AI가 증거를 조작했다 | Melvin Johnson]](`tEqDle7SOYU`, 11:07, 공식 챕터 10) — 한국어 해설, Google DeepMind 사후 학습 책임자의 AI Engineer CODE Summit 2026 발표를 슬라이드와 공식 글에 맞춰 본다 ([[melvin-johnson]] · [[gemini-4]](둘 다 신규) · [[google-deepmind]] · [[reward-hacking]] · [[post-training-northstars]] · [[verifiable-goals]] · [[agent-change-evidence]] · [[production-trace-eval-flywheel]] · [[antigravity]] · [[terminal-bench]] · [[ai-engineer]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`의 내레이션 자리는 더빙의 ASR(인용하지 않음 — *날조 비율* → *hallucination rates*, 01:24~01:59 타이밍 밀림).
+- ⚠️ **발표 원음은 두 트랙 모두 0줄이다** — 11-20 Zechner 편 · 11-21 Pocock 편과 같은 배치. 발췌 자리 열한 곳(약 3분 48초)이 무캡션이고 **Melvin Johnson 본인 인용은 0건**, 인용 119건은 전부 ko-orig 내레이션이다. 어려운 과제의 둘째 출처(04:10~04:37) · 채점 환경을 잠그는 방법(06:40~07:03)이 그 안에 있어 내용 미상.
+- ⭐ 채널의 [[reward-hacking]] 소스 가운데 **모델을 훈련하는 팀이 보상 신호를 어떻게 고쳤는지 말한 첫 사례** — 과제별 기준과 부분 점수 · 채점 장치를 건드리면 강한 음의 보상 · 행동만 벌하고 생각은 벌하지 않는다 · 정직한 부분 해답에 더 높은 점수. 해설이 METR의 o3 사례와 OpenAI 연구진 논문을 바깥 근거로 붙인다.
+- ⚠️ 판독하지 못한 것: *채점 기 후에*(05:11) · *없는 파일을 지원했습니다*(05:17) · 07:10의 주어 — 인용하지 않았다. *단원문* · *테스트 단원* 은 단언(assertion)으로 추정 표시.
+- 게시 시각 **11-23 07:00 KST**(`upload_date`는 UTC 기준 20261122). 설명란의 출처 넷(원본 발표 `fTHByDwTxGM` · *Introducing Gemini 4 Hydrogen* · METR 글 · Baker et al. 논문)은 미열람.
+
+**멤버 전용**: 신규 없음. `jMzmFrwfYHk`(*우리는 세상이 모르는 비밀을 알았다 | 앤트로픽 창업자들*, 11:08, 목록 `upload_date` 20261121) 지속 — 목록 줄 · 단건 조회 모두 `subscriber_only`. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 목록은 둘. 목록 20편 요청 → **20줄**(stderr ERROR 없음).

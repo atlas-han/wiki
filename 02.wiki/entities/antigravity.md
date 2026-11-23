@@ -6,9 +6,9 @@ tags: [google, coding-agent, harness, ide, orchestration, subagents]
 aliases: [Antigravity, 안티그래비티, Antigravity Boost, "/boost", Antigravity CLI]
 links:
   - https://g.dev/cloud/antigravity-homepage
-sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-flutter-ai-workflow, tech-bridge-build-time-vs-runtime-tools]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-flutter-ai-workflow, tech-bridge-build-time-vs-runtime-tools, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-11-23
 ---
 
 # Google Antigravity
@@ -52,3 +52,9 @@ updated: 2026-09-23
 - [[tech-bridge-lopopolo-agent-harness]] · [[tech-bridge-flutter-ai-workflow]] · [[tech-bridge-build-time-vs-runtime-tools]]
 - [[google-cloud]] · [[google-skills]] · [[ryan-lopopolo]]
 - 관련: [[model-harness-knowledge-stack]] · [[tools-and-context-over-harness]] · [[harness-engineering]] · [[claude-code]] · [[cursor]] · [[codex]]
+
+## 2026-11-23 — 알파벳 안의 사용 규모 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+[[google-deepmind|Google DeepMind]]의 [[melvin-johnson|Melvin Johnson]] 발표를 옮긴 한국어 해설에서: *"알파벳 안에서 안티 그래비티로 개발하는 사람은 매년 10만 명이 넘습니다."*(02:33~02:36)[=Antigravity] 같은 대목에 *"지금 구글 새 코드의 75%를 AI가 씁니다."*(02:24~02:26)가 붙는다(엔지니어가 검토하고 승인한 코드 기준). 이 사내 사용자들이 새 후보 모델의 시험장이다 → [[gemini-4]] · [[production-trace-eval-flywheel]]
+
+⚠️ *매년* 은 ASR 글자 그대로다(영어 더빙 ASR도 *every year*) — 단위가 맞는지 확인하지 못했다. 해설 전달, 자기 보고.

@@ -4,11 +4,11 @@ type: entity
 category: tool
 tags: [benchmark, agent-eval, terminal, containerized, verifier]
 aliases: [Terminal-Bench, Terminal-Bench-2.0, TB2]
-sources: [self-harness-paper, tech-bridge-horthy-state-of-software-factory, tech-bridge-addy-osmani-which-claude-model]
+sources: [self-harness-paper, tech-bridge-horthy-state-of-software-factory, tech-bridge-addy-osmani-which-claude-model, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 links:
   - "https://arxiv.org/abs/2601.11868"
 created: 2026-06-14
-updated: 2026-11-13
+updated: 2026-11-23
 ---
 
 # Terminal-Bench-2.0
@@ -41,3 +41,12 @@ updated: 2026-11-13
 ## 2026-11-13 — Terminal-Bench 3.0 언급 ([[tech-bridge-addy-osmani-which-claude-model]])
 
 [[addy-osmani|Addy Osmani]] 모델 선택 가이드 해설(⚠️ 원 글 미열람)이 **Terminal-Bench 3.0** 수치를 든다: Fable 5.1 max 58.0% vs Opus 5.5 high 58.9%, Opus는 토큰을 절반만 썼다 — *단가가 아니라 완료한 작업당 비용* 의 예. 이 페이지의 2.0과 3.0의 차이는 발화되지 않는다.
+
+## 2026-11-23 — Gemini 4의 점수와 *부정행위* 수치 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+[[melvin-johnson|Melvin Johnson]]([[google-deepmind|Google DeepMind]])의 발표를 옮긴 한국어 해설에서 이 벤치마크가 두 번 나온다(ASR *터미널 벤치* — 판본은 말하지 않는다).
+
+- 점수: Hydrogen이 *"이전 3.8 플래시의 세 배 쯤인 57%입니다."*(02:09~02:12) ⚠️ 설명란은 이 수치의 출처가 발표가 아니라고 적는다.
+- ⭐ 부정행위: *"카본 터미널 벤치에서 성공한 부정행위가 0%. 공식 발표로는 시도 자체도 0.4%로 줄었습니다."*(07:42~07:46) — 벤치마크가 점수만이 아니라 **채점을 속이려는 시도의 비율** 을 재는 자리로 쓰였다. → [[reward-hacking]] · [[gemini-4]]
+
+⚠️ 무엇을 부정행위로 세었는지와 판정 주체는 캡션에 없다. 제작사 자기 평가.

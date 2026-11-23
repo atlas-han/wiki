@@ -3,11 +3,11 @@ title: Verifiable Goals
 type: concept
 category: pattern
 tags: [llm-coding, planning, verification, success-criteria]
-related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment, pareto-surfing, primitives-before-features]
+related: [llm-coding-guidelines, surgical-edits, sprint-contract, ralph-wiggum-method, generator-evaluator-pattern, outcome-engineering, claude-code, spec-driven-development, agent-org-adoption, frontier-engineering, signal-layer, trusted-throughput, agent-distributed-systems, slop-probes, ai-slop, steering-altitude, automated-ai-research, model-calibration, intent-alignment, pareto-surfing, primitives-before-features, reward-hacking]
 first-seen: multica-karpathy-skills-claude-md
-sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-tlc-ai-job-anxiety, tech-bridge-ben-davis-codex-product-cohesion]
+sources: [multica-karpathy-skills-claude-md, charlychoi-claude-code-best-practices, tech-bridge-figma-coding-agents, tech-bridge-spec-driven-development, tech-bridge-frontier-engineering, tech-bridge-signal-layer, tech-bridge-trusted-throughput, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-introspection-loop-is-the-product, tech-bridge-factory-software-factory, tech-bridge-jev-calibrated-decisions, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-cooking-with-codex, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-tlc-ai-job-anxiety, tech-bridge-ben-davis-codex-product-cohesion, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 created: 2026-05-25
-updated: 2026-10-31
+updated: 2026-11-23
 ---
 
 # Verifiable Goals
@@ -192,3 +192,13 @@ LLM은 **자기 평가 편향**(self-evaluation bias)이 있어 *"되었다"* �
 ## 경계의 제품 판본 — UX는 verifier 함수로 쓸 수 없다 (2026-10-31 · [[tech-bridge-ben-davis-codex-product-cohesion]])
 
 [[ben-davis|Ben Davis]](추정): *"Anything that can't be expressed with a clean verifier function the models still just aren't amazing at."*(00:52~00:56) 모델이 이기는 문제는 *"some sort of hill for them to climb. You have a test suite you need to get them all green."*(01:10~01:13)이고, *"You can't really do that for product experience and UI. It's very hard to encode that into a verifier function."*(01:23~01:29) 위 09-01 경계(*verifier를 만들 수 없는 곳*)가 **제품 UX**라는 구체적 자리를 얻고, 그 결과가 실제 제품(Codex · ChatGPT)의 이음매로 보인다는 주장으로 이어진다. 출시 비용이 0에 가까울수록 이 경계의 비용이 커진다 → [[primitives-before-features]]. ⚠️ 1인 사용자 의견. *"Maybe eventually someone will figure it out."*(01:29~01:30)
+
+## 2026-11-23 — 통과/실패는 어려운 과제에서 신호가 없다: 기준표와 부분 점수 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+[[melvin-johnson|Melvin Johnson]]([[google-deepmind|Google DeepMind]])의 Gemini 4 훈련 발표를 옮긴 한국어 해설. 검증 가능한 목표를 **훈련 보상** 으로 쓸 때의 한계 둘을 든다. ⚠️ 해설 전달.
+
+- **이진 판정의 낭비.** *"통과냐 실패냐만 보는 테스트는 어려운 과제에서 신호가 거의 없습니다."*(06:01~06:03) 과제마다 기준을 따로 본다 — *"고쳤나, 시간 초과와 재시도를 처리했나, 테스트 단원을 건드리지 않았나, 보고하기 전에 경합 테스트를 돌렸나를 따로 봅니다."*(06:16~06:22)[=테스트 단언(추정)]
+- **보이는 검증기는 고쳐진다.** 해설이 METR의 글에서 옮긴 것: *"답안지가 보이면 답안지를 고치는 거죠."*(05:53~05:55) → [[reward-hacking]]
+- 맺음: *"테스트를 통과했다고 문제를 푼 건 아닙니다. 모델은 우리가 준 채점표를 배울 뿐이고 그래서 채점표를 사람처럼 만들어야 한다는 겁니다."*(10:50~10:56)
+
+위 2026-10-15 절(*검증기가 느리면 학습 신호가 아니다*)과 2026-10-14 절(*정성 품질을 숫자 목표로 바꾸지 말 것*) 사이에 놓인다 — 코드 품질과 고친 범위를 참조 답안과 맞대어 점수로 만든다는 자기 보고다. ⚠️ 그 채점을 무엇이 하는지는 캡션에 없다.

@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
-related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode, ai-slop, taste-vs-judgment]
+related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode, ai-slop, taste-vs-judgment, human-readable-folder]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-rlhf-assistance-vs-automation]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 created: 2026-05-25
-updated: 2026-09-22
+updated: 2026-11-23
 ---
 
 # The Bitter Lesson
@@ -216,3 +216,12 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 > ⚠️ **화자는 그 "제3의 목표"를 파는 스텔스 회사 소속**이고, 위계를 뒷받침하는 측정은 제시하지 않는다.
 
 → [[tech-bridge-rlhf-assistance-vs-automation]] · [[diogo-almeida]] · [[post-training-northstars]] · [[assistance-vs-automation]]
+
+## 2026-11-23 — 발표 제목이 된 쓴 교훈: *모델에 맞추라* 는 결론을 거두는 읽기 ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+[[thariq-shihipar|Thariq Shihipar]]의 AI Engineer Code Summit 발표는 제목에 쓴 교훈을 넣었다(한국어 해설 전달, 발표 원음은 무캡션). 해설의 요약: *"70년 AI 연구의 가장 큰 교훈은 계산을 쏟아붓는 일반적인 방법이 결국 큰 차이로 이긴다는 것. 사람이 생각하는 방식을 모델에 집어넣는 건 길게 보면 통하지 않는다는 겁니다."*(02:34~02:42)
+
+- **그가 오답으로 부른 것은 쓴 교훈을 따라 내렸던 자기 예언들이다.** Bash면 충분하다 · React면 충분하다 · 확산 모델이 미술을 집어삼킨다 — *"세 오답은 사실 하나의 두려움에서 나왔습니다."*(02:23~02:27) 모델이 잘하는 한 가지 방식으로 모든 것이 수렴하고 사람의 방식은 밀려난다는 쪽의 예측이었는데, 실제로는 *"지금 모델은 도구 호출과 스킬, 필요할 때만 꺼내 보는 점진적 공개, 코드 모드까지 고루고루 잘 씁니다."*(01:44~01:48) ⚠️ *하나의 두려움* 이 무엇인지는 무캡션 구간(02:54~03:23)에 있다 — 이 문단의 풀이는 위키의 읽기다.
+- **질문의 형태로 남긴다.** *"AGI를 믿으면서도 사람을 중심에 둘 수는 없을까?"*(03:23~03:27) 쓴 교훈을 부정하지 않는다 — 하네스가 대부분 사라질 것이라는 전망은 그대로 둔다([[harness-pruning]]). 달라진 것은 거기서 끌어내는 처방이다: *"모델이 무엇을 잘 쓰는지 맞추지 말고 좋은 소프트웨어를 내놓는 최선의 방법을 고민하자는 것입니다."*(10:10~10:14)
+- 이 페이지의 계보에서: 9월 [[tech-bridge-rlhf-assistance-vs-automation]]이 쓴 교훈을 반대 방향으로 인용한 첫 사례였다면, 이번은 **같은 방향으로 믿으면서 그 적용 범위를 줄이는** 사례다 — 모델 안에 사람의 구조를 넣지 말라는 것과, 사람이 읽을 산출물의 형식을 사람이 정하는 것은 다른 층의 일이라는 구분. → [[human-readable-folder]]
+- 쇼고스 밈이 같이 나온다: *"웃는 얼굴 가면을 쓴 촉수 괴물로 AI를 속을 알 수 없는 외계 지능에 빗댄 밈입니다."*(02:47~02:51) ⚠️ 그가 이 그림으로 무엇을 말했는지는 무캡션.

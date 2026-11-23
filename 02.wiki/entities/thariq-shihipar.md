@@ -3,9 +3,9 @@ title: Thariq Shihipar
 type: entity
 category: person
 tags: [anthropic, claude-code, agent-engineering]
-sources: [tech-bridge-claude-code-team-workflow]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-11-23
 ---
 
 # Thariq Shihipar
@@ -32,3 +32,18 @@ updated: 2026-09-05
 ## References
 
 - [[tech-bridge-claude-code-team-workflow]] · [[anthropic]] · [[claude-code]]
+
+## 2026-11-23 — 떠난 뒤의 단독 발표: 틀린 예언 셋 · 매끈한 안쪽 · 사람이 읽는 폴더 ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+앞선 소스에서는 세 사람의 발언이 섞여 어느 말이 Thariq의 것인지 특정할 수 없었다. 이번은 **혼자 한 발표** 의 한국어 해설이라 귀속은 분명하다. ⚠️ 다만 발표 원음이 두 자막 트랙 모두 무캡션이라 **본인 인용은 여전히 0건** 이고, 아래는 전부 내레이션의 전달이다.
+
+- **이력이 처음 들어온다.** *"얼마 전까지 엔트로픽에서 1년 넘게 클로드 코드를 만들던 개발자입니다."*(00:05~00:07)[=Anthropic] *"그는 10월 말 엔트로픽을 떠났습니다. X에 올린 퇴사 글은 650만 번 넘게 읽혔습니다."*(00:34~00:37) 그 전에는 — *"그는 와이 콤비네이터 투자를 받은 게임 회사를 5년 동안 운영했던 사람입니다."*(06:46~06:49) → 이 페이지 첫 줄의 *Claude Code 팀 엔지니어* 는 2026년 10월 말까지의 소속이다. ⚠️ 떠난 이유와 지금의 소속은 소스에 없다.
+- **무대.** AI Engineer Code Summit(11월, 샌프란시스코)의 마지막 순서. *"주제는 내가 틀렸던 것들이었습니다."*(00:41~00:43)
+- **틀렸다고 인정한 셋.** Bash면 충분하다 · React면 충분하다 · 확산 모델이 미술을 집어삼킨다. *"세 오답은 사실 하나의 두려움에서 나왔습니다."*(02:23~02:27) → [[sutton-bitter-lesson]]
+- **질문.** *"AGI를 믿으면서도 사람을 중심에 둘 수는 없을까?"*(03:23~03:27)
+- **매끈한 안쪽.** 들쭉날쭉한 경계의 아래쪽은 고르게 넓어진다는 관찰 → [[jagged-capability-frontier]]
+- **하네스 전망.** *"지금 모델을 씌우는 하네스와 비계도 대부분 머지않아 필요 없어질 거라고 그는 말합니다."*(05:45~05:49) — 9월 대담의 [[harness-pruning]](화자 미특정)보다 멀리 간 말이고, 이번에는 그의 것이다.
+- **사람이 읽는 폴더.** 자기 게임의 코드베이스를 엔진과 휴먼 폴더로 나눴다 → [[human-readable-folder]]
+- **결론.** *"그의 결론은 모델이 무엇을 잘 쓰는지 맞추지 말고 좋은 소프트웨어를 내놓는 최선의 방법을 고민하자는 것입니다."*(10:10~10:14)
+
+⚠️ ASR은 이름을 *타리크 시바르* · *타릭* 으로, 영어 더빙 ASR은 *Tareq Shabar* 로 적는다 — 철자는 제목과 설명란을 따랐다. 설명란의 X 계정은 `trq212`.

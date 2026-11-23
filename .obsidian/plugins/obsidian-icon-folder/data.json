@@ -1349,5 +1349,12 @@
   "02.wiki/entities/mattpocock-skills.md": "LiWrench",
   "02.wiki/concepts/grill-with-docs.md": "LiMessagesSquare",
   "02.wiki/entities/walden-yan.md": "LiUser",
-  "02.wiki/entities/devin-bots.md": "LiBoxes"
+  "02.wiki/entities/devin-bots.md": "LiBoxes",
+  "01.raw/articles/2026-11-22_Claude Code 만들던 개발자가 받아들일 수 없다고 한 것 Thariq Shihipar.md": "LiNewspaper",
+  "01.raw/articles/2026-11-22_테스트는 통과했는데, AI가 증거를 조작했다 Melvin Johnson.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-thariq-shihipar-human-folder-unacceptable.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication.md": "LiVideo",
+  "02.wiki/concepts/human-readable-folder.md": "LiFolderOpen",
+  "02.wiki/entities/melvin-johnson.md": "LiUser",
+  "02.wiki/entities/gemini-4.md": "LiSparkles"
 }

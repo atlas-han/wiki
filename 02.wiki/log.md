@@ -2951,3 +2951,33 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1122/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 297건(152 + 145) 불일치 0. 두 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: Pocock 편은 어제 Zechner 편과 같다 — 원 영상 음성이 **두 트랙 모두 무캡션**(ko-orig 열두 곳 약 3분 46초)이라 Pocock 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다. Walden Yan 편은 발표 영어 원음이 세 조각만 두 트랙에 같은 글자로 잡혔고(08:05~08:20 · 08:53~08:59 · 10:10) 앞의 둘만 인용했다 — 나머지 발췌 자리 열한 곳(약 2분 50초)은 두 트랙 모두 무캡션이며, 제목의 *노트북을 열지 않고* 대목(04:14~04:25)도 그 안에 있어 설명란 문장만 적었다. 빈 구간의 내용은 적지 않았다.
+
+## [2026-11-23] ingest | Tech Bridge — 11-22 업로드 2편 (Claude Code 만들던 개발자가 “받아들일 수 없다”고 한 것 · 테스트는 통과했는데, AI가 증거를 조작했다)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음, `public` 19 · `subscriber_only` 1). 신규 공개 2편: `SBKLfp5NE4M`(11-22 19:00 KST) · `tEqDle7SOYU`(11-23 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261122). 신규 멤버 전용 없음. `jMzmFrwfYHk`(목록 줄 · 단건 조회 `subscriber_only`) · `Yhck-x6VuLs`(목록 범위 밖 · 단건 조회 `subscriber_only` 줄) 지속 — 건너뜀, 페이지 없음. 자막 429 없음.
+
+**신규 source 2 · concept 1 · entity 2**, 기존 페이지 보강 17개(+ tech-bridge), index **1071 → 1076**(실측 일치).
+
+- `SBKLfp5NE4M`(11:22, 챕터 10) → [[tech-bridge-thariq-shihipar-human-folder-unacceptable]]: [[anthropic|Anthropic]] [[claude-code|Claude Code]] 팀 출신 [[thariq-shihipar|Thariq Shihipar]]의 AI Engineer Code Summit 마지막 발표를 따라간 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-22 19:00 KST 게시(`upload_date` 20261122).
+  - 신규: [[human-readable-folder]]
+  - 보강: [[thariq-shihipar]](단독 발표 — 이력 · 퇴사 · 틀린 예언 셋 · 결론) · [[sutton-bitter-lesson]](*모델에 맞추라* 는 결론을 거두는 읽기 · 쇼고스) · [[jagged-capability-frontier]](용어의 출처 HBS · BCG 논문 · 짝말 *매끈한 안쪽* · 세계지도 평가) · [[harness-pruning]](*대부분 머지않아 필요 없어진다* — 해설의 단서 둘) · [[cognitive-debt]](만든 사람의 고백 · 구역의 처방) · [[software-factory]](공장이면서 공방 · 르네상스의 재료) · [[claude-code]](*Bash면 충분하다* 는 오답) · [[andrej-karpathy]](눈 가린 Claude의 세계지도 소개)
+  - ⚠️ **발표 원음은 두 트랙 모두 무캡션**(ko-orig 열세 곳 약 3분 33초 · en-orig 열한 곳, 같은 자리). **Thariq 본인 인용 0건** — 인용 130건은 전부 ko-orig 내레이션, 기계 대조 불일치 0. `en-orig`는 전부 더빙 ASR이라 쓰지 않았다.
+  - ⚠️ **빈 구간에 든 것**: 도입 고백의 원음(00:11~00:18 — 제목의 *받아들일 수 없다* 는 내레이션 전달로만) · *Bash면 충분하다* 가 틀린 이유(01:22~01:44) · **세 오답을 묶는 *하나의 두려움* 과 쇼고스 대목(02:54~03:23)** · 산업 혁명 / 르네상스 원음(03:54~04:19) · *매끈한 안쪽* 원음(05:22~05:36) · 바이브 코딩 때 모델이 대신 답한 *질문들* (07:03~07:24) · 07:43~08:04 · 휴먼 폴더의 규칙(08:33~08:47) · 데모 뒷부분(09:27~10:01) · 맺음말(10:40~10:56). 내용을 적지 않았다. [[sutton-bitter-lesson]] 절의 *하나의 두려움* 풀이는 위키의 읽기로 표시했다.
+  - ⚠️ **판독 미확정**: 세계지도의 60% 모델 — ko-orig *손해 4.5*, 더빙 ASR *Sonnet 3.5*. **버전을 정하지 않았다.** *그 결과 오히려 진도가 더 나갔다*(07:31~07:33)는 문맥상 *덜* 이어야 통하나 두 트랙 모두 *더 / more* — 글자 그대로 두고 근거로 쓰지 않았다. *최근에는 공장과*(04:19)의 첫머리는 인용하지 않았다.
+  - ⚠️ ASR 판독: *타리크 시바르 · 타릭* → Thariq Shihipar · *엔트로픽* → Anthropic · *마침 것부터* → 맞힌 것부터 · *오비 까지나* → 어디까지나 · *셀레스티* → Celeste · *휴 원* → 휴먼 · *록 점 티에스* → rock.ts · *코서의 탭* → Cursor의 Tab · *돌 모더기* → 돌무더기 · *비슷하겠습니다* → 비슷하게 씁니다(추정) · *목업 판화를* → 목업 하나를(추정) · *AI 통째로 바뀌지 말라고* → AI로 통째로 바꾸지 말라고(추정) · *줄 세워 돌라는* → 줄 세워 두라는(추정) · *뭐라는지* → 뭘 하는지(추정). 더빙은 *11월* 을 *last November* 로 오역한다.
+  - 페이지화하지 않음: Celeste(평가 출처로만) · 쇼고스 밈 · Dell'Acqua 외 논문(→ [[jagged-capability-frontier]] 한 절) · Y Combinator · Cursor Tab(한 문장 — [[cursor]] 보강 없음) · 게임(이름이 캡션에 없다) · 바이브 코딩(전용 페이지 없음) · AI Engineer Code Summit([[ai-engineer]] 보강 없음) · [[anthropic]](퇴사 사실은 [[thariq-shihipar]]에).
+- `tEqDle7SOYU`(11:07, 챕터 10) → [[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]]: [[google-deepmind|Google DeepMind]] 사후 학습 책임자 [[melvin-johnson|Melvin Johnson]]의 AI Engineer CODE Summit 2026 발표를 슬라이드 · 공식 글과 대조한 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-23 07:00 KST 게시(`upload_date` 20261122).
+  - 신규: [[melvin-johnson]] · [[gemini-4]]
+  - 보강: [[reward-hacking]](훈련하는 쪽의 공정 — 사례 셋 · 기준표 채점 · 채점 장치를 건드리면 음의 보상 · 행동만 벌한다) · [[google-deepmind]](훈련 공정이 처음 들어옴 — 236일 · 새 코드의 75% · 16주 여섯 번 출시) · [[post-training-northstars]](쉬운 과제와 이진 검증기에는 신호가 없다 · 정직에 주는 보상) · [[verifiable-goals]](통과/실패의 한계 — 기준표와 부분 점수) · [[agent-change-evidence]](요약을 실제 도구 출력에 대조 · 날조율 8% → 1.5%) · [[production-trace-eval-flywheel]](사내 10만 명이 깨뜨린 것이 다음 훈련 과제) · [[antigravity]](알파벳 안 사용 규모) · [[terminal-bench]](Hydrogen 57% · Carbon 부정행위 0%) · [[ai-engineer]](CODE Summit 2026 · 샌프란시스코)
+  - ⚠️ **발표 원음은 두 트랙 모두 0줄.** 발췌 자리 열한 곳(ko-orig 약 3분 48초)이 무캡션이고 `>>` 둘(08:29 · 10:18)은 내레이션 복귀 표시다. **Melvin Johnson 본인 인용 0건**, 인용은 전부 ko-orig 내레이션. 인용 119건 기계 대조 불일치 0.
+  - ⚠️ **무캡션에 든 내용**: 어려운 과제의 둘째 출처(04:10~04:37 — 첫째 · 셋째만 적음) · 배울 거리가 남은 문제의 비율 숫자(03:19~03:36) · 채점 환경을 잠그는 방법(06:40~07:03) · 날조와 출시 속도에 대한 발표자 설명(08:00~08:29 · 09:03~09:27 · 09:41~10:18). 적지 않았다.
+  - ⚠️ **판독 불가 — 인용하지 않음**: *채점 기 후에*(05:11) · *없는 파일을 지원했습니다*(05:17, 더빙 *submitted non-existent files*) · *코드는 벌점의 기준을 하나 정해 둡니다*(07:10)의 주어 · *마케팅은 잊지 말고*(02:14, 더빙 *Forget the marketing*).
+  - ⚠️ ASR 판독: *레미티어* → METR · *오쓰리* → o3 · *샀습니다* → 쌌습니다 · *산의 사용자* → 사내 사용자 · *SW 벤치 베리파이드* → SWE-bench Verified · *43배 넘게 찾았다고* → 잦았다고(추정) · *단원문* · *테스트 단원* → 단언(assertion)(추정 — 더빙은 *a single character* · *test units* 라 대조 불가). *Argon* 철자는 내레이션 *아르곤* 을 원소 이름으로 읽은 것(Carbon · Hydrogen은 info.json tags).
+  - ⚠️ 더빙 ASR: *날조 비율* → *hallucination rates*, 01:24~01:59 타이밍 밀림. 쓰지 않았다. *매년 10만 명*(02:36)은 두 트랙이 같아 그대로 두고 단위 미확인으로 표시.
+  - 기준표를 무엇이 채점하는지 · 부정행위 0%의 정의와 판정 주체는 캡션에 없다 — 소스 페이지와 [[reward-hacking]] 절에 유보로 적었다. 설명란은 Hydrogen의 Terminal-Bench 수치와 236일 계산의 출처가 발표가 아니라고 밝힌다.
+  - 페이지화하지 않음: METR(해설이 붙인 사례 하나) · OpenAI o3([[openai]] 보강 없음) · Baker et al. 논문(미열람) · Cursor 벤치 · SWE-bench Verified · Alphabet · Mark Twain. 신규 concept 없음 — 기준표 채점과 행동만 벌하기는 [[reward-hacking]] · [[verifiable-goals]] 절로 넣었다.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1123/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 249건(130 + 119) 불일치 0. 두 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: 두 편 모두 발표 영어 원음이 **두 트랙 모두 무캡션**이다(Thariq 편 ko-orig 열세 곳 약 3분 33초 · Melvin Johnson 편 열한 곳 약 3분 48초) — 발표자 본인 인용은 0이고 인용은 전부 ko-orig 내레이션이다. Thariq 편 제목의 *받아들일 수 없다* 는 내레이션의 전달로만 남아 있다. 빈 구간의 내용은 적지 않았다.

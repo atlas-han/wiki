@@ -3,11 +3,11 @@ title: Harness Pruning
 type: concept
 category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
-related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness]
+related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness, human-readable-folder]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 created: 2026-09-05
-updated: 2026-11-09
+updated: 2026-11-23
 ---
 
 # Harness Pruning
@@ -141,3 +141,12 @@ pruning은 축소가 아니라 **재배치**다.
 영어 해설자가 전한 [[anthropic|Anthropic]] 권고다(2차 진술): 서브에이전트와 긴 시스템 프롬프트는 *"scaffolding for the models that we had like 6 months ago"*(01:52~01:55)이고, 새 모델에서는 *"stopped paying off"* 했다. 이 페이지의 ⚠️ 유보(*지워도 되는지 판단하는 기준 · 절차는 소스에 없다*)에 대한 한 가지 답으로 **기준선(프롬프트 10개 × 2회) → 스킬로 접기 → 같은 과제로 재측정**을 준다 → [[subagent-folding]]. 스킬 지시도 같은 질문으로 덜어낸다: *"would the current model I'm using do this anyway without being told and if yes just cut it out"*(05:28~05:37).
 
 > ⚠️ 같은 영상이 [[grokbot|GrokBot]]의 반례(코딩 밖에서는 가드레일을 다시 넣는다)를 든다. 10-24 Katz 절과 같은 사례다.
+
+## 2026-11-23 — 지우기의 끝점을 말한다: *대부분 머지않아 필요 없어진다* ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+이 개념의 첫 소스였던 Claude Code 팀 대담의 한 사람 [[thariq-shihipar|Thariq Shihipar]]가 Anthropic을 떠난 뒤 단독 발표에서 한 전망(한국어 해설 전달, 원음 무캡션): *"지금 모델을 씌우는 하네스와 비계도 대부분 머지않아 필요 없어질 거라고 그는 말합니다. 완벽한 모델이라면 보안 취약점을 따로 검사하지 않아도 처음부터 맞는 코드를 쓸 거라는 겁니다."*(05:45~05:55)
+
+- 9월 대담은 *모델이 좋아지면 기능을 하나씩 지운다* 였다. 이번은 방향은 같고 **범위가 대부분으로 넓어졌다.** 근거는 [[jagged-capability-frontier|매끈한 안쪽]] — 모델이 할 줄 아는 범위가 고르게 넓어진다는 관찰이다.
+- ⚠️ **해설이 두 번 단서를 단다.** *"이건 오비 까지나 그의 전망입니다."*(05:55~05:56)[=어디까지나] *"물론 하네스가 필요 없어진다는 건 그의 전망이고 휴먼 폴더도 본인 말로 아직 초기 실험입니다."*(11:09~11:13)
+- ⚠️ 위의 *지웠던 것을 다시 넣는다*([[tech-bridge-jediah-katz-harness-whats-left]])와 나란히 읽을 것. 보안 검사는 그쪽 분류로는 모델 능력이 아니라 **책임과 검증** 의 문제에 가깝고, *완벽한 모델이라면* 은 조건절이다.
+- 같은 발표에서 그는 하네스를 지우는 대신 **사람 쪽에 구조를 하나 더한다** — [[human-readable-folder]]. 모델을 위한 비계는 줄고 사람을 위한 비계가 생긴다는 점에서 지우기의 반대편 짝이다.

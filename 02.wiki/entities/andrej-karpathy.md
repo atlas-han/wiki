@@ -4,12 +4,12 @@ type: entity
 category: person
 tags: [researcher, educator, llm, transformer, computer-vision]
 aliases: [카파시, Karpathy, 안드레 카파시]
-sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
+sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-thariq-shihipar-human-folder-unacceptable]
 links:
   - https://karpathy.ai
   - https://github.com/karpathy
 created: 2026-05-25
-updated: 2026-11-19
+updated: 2026-11-23
 ---
 
 # Andrej Karpathy
@@ -97,3 +97,13 @@ AI 연구자·교육자. 본 위키에 두 갈래로 등장한다 — **위키 �
 > ⚠️ **Anthropic 합류 — 진술이 둘이 됐다, 여전히 미확인.** 이 해설: *"올해 5월에는 엔트로픽에 합류했습니다."*(00:34~00:35) 11-08 Saraev 편의 *"now he works at Anthropic"* 에 시점이 붙었다. 다만 이 편의 설명란이 *원본 요약 영상* 을 따로 들고 있어 두 진술이 독립인지 알 수 없고, 위키는 1차 기록을 열지 않았다. **이 페이지의 사실로는 아직 올리지 않는다.**
 >
 > ⚠️ 11-08 편과 겹치는 습관(설정 · 다섯 낱말 · 사다리 · 데이터 공유)은 서로 받쳐 주지만 같은 2차 정리를 거쳤을 수 있다 — 독립된 두 확인으로 치지 않는다.
+
+## 2026-11-23 — 눈 가린 Claude 12개의 세계지도를 소개한 사람으로 ([[tech-bridge-thariq-shihipar-human-folder-unacceptable]])
+
+[[thariq-shihipar|Thariq Shihipar]]의 발표 해설에 한 장면으로 나온다(내레이션 전달 — Karpathy의 X 글(2026-10-02, 설명란)은 위키 미열람).
+
+- 평가: *"셀레스티라는 사용자가 올리고 안드레 카파시가 소개한 평가입니다."*(06:01~06:03)[=Celeste · Andrej Karpathy] *"모델에게 위도와 경도를 글자로만 주고 땅인지 물인지 묻습니다. 지구 전체를 16,200번 묻고 답을 점으로 찍습니다."*(06:05~06:11)
+- 그가 덧붙인 말(내레이션의 번역): *"모델은 안다. 인터넷을 압축하면서."*(06:12~06:14)
+- 결과: *"오퍼스 4.6은 91%로 윤곽이 흐릿하게 잡히고 오퍼스 5.5는 99% 거의 실제 지도입니다."*(06:21~06:26) *"이미지도 도구도 없이 글로만 배운 모델이 그린 지구입니다."*(06:29~06:31) ⚠️ 60%인 첫 모델의 이름은 ko ASR(*손해 4.5*)과 영어 더빙 ASR(*Sonnet 3.5*)이 달라 정하지 않았다.
+
+Thariq는 이것을 [[jagged-capability-frontier|매끈한 안쪽]]의 그림으로 썼다. ⚠️ Karpathy 본인이 이 평가에서 무엇을 읽었는지는 위의 한 줄 말고는 소스에 없다.

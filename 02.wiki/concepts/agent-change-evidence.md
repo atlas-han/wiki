@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [verification, evidence, trust, impact-analysis, agentic-coding, code-review]
 aliases: [AI는 코드만이 아니라 증거를 내야 한다, 다섯 질문, change evidence]
-related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review, work-recording-hiring, software-factory]
+related: [behavior-validated-trust, verification-bottleneck, decision-quality, outcome-engineering, agent-action-record, generator-evaluator-pattern, mergeability-gap, minimizing-reader-load, automated-code-review, three-level-agent-review, work-recording-hiring, software-factory, reward-hacking]
 first-seen: tech-bridge-prompt-to-production
-sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-walden-yan-cognition-no-laptop-development]
+sources: [tech-bridge-prompt-to-production, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-anthropic-30k-merges-verification, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
 created: 2026-10-09
-updated: 2026-11-22
+updated: 2026-11-23
 ---
 
 # 변경 증거
@@ -100,3 +100,14 @@ updated: 2026-11-22
 - 발표 원음(두 자막 트랙 일치): *"And most of the time our engineers don't even need to look open dev and they're just from Slack looking at the recordings that it sends back to them."*(08:15~08:19)
 
 증거가 검토의 **보조** 가 아니라 **대체** 로 쓰이는 자리까지 갔다 — 안드로이드 앱 사례에서 PR 1,134개 중 999개는 사람 승인 없이 머지됐고, 사람은 Slack에서 녹화만 본다. ⚠️ 녹화가 무엇을 보여 주지 못하는지(화면에 드러나지 않는 회귀 · 보안)는 발표에 없고, 해설도 *"사람 승인 없는 머지가 어디까지 안전한지도 이 발표에는 나오지 않았습니다."*(10:05~10:08)라고 적는다.
+
+## 2026-11-23 — 훈련 쪽의 같은 원칙: 요약을 실제 도구 출력에 대조한다 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
+
+[[melvin-johnson|Melvin Johnson]]([[google-deepmind|Google DeepMind]])의 Gemini 4 훈련 발표를 옮긴 한국어 해설. 에이전트의 완료 보고를 믿지 않고 기록에 맞춰 보는 일을 **훈련 데이터 단계** 에서 한다. ⚠️ 해설 전달.
+
+- 가장 흔한 날조: *"테스트가 통과했다는 주장, 그다음은 확인도 안 하고 다 했다는 선언이었습니다."*(08:31~08:34)
+- 대조: *"그 요약을 실제 도구 출력과 테스트 결과에 하나하나 맞춰 봅니다."*(08:56~09:00) 확인되지 않은 주장이 섞인 훈련 기록은 걸러낸다.
+- 수치(사내 어려운 평가, 자기 평가): 날조 비율 Argon 8% · Hydrogen 2.9% · Carbon 1.5% → [[gemini-4]]
+- ⭐ 해설이 시청자에게 돌린 권고: *"여러분의 에이전트가 다 했다고 보고하면 요약 대신 실제로 돌린 명령어와 테스트 출력을 열어 보세요."*(10:57~11:01)
+
+이 페이지의 증거 형식(영상 · 스크린샷 · 세 칸 요약)은 에이전트가 **내는** 것이었다. 여기서 증거는 에이전트가 낸 요약이 아니라 **실행 기록 자체** 다 — 날조율이 가장 낮다는 Carbon에서도 1.5%이고 0은 아니라는 점이 요약만 읽지 말라는 근거가 된다.
