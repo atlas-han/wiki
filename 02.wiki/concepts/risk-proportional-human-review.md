@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review, human-loop-roles-relocation]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-pocock-21k-lines-questions-before-code]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-09-18
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # 위험 비례 사람 검토
@@ -140,3 +140,14 @@ updated: 2026-11-22
 - 가장 높은 쪽: *"일곱 개 중 꼭 사람이 봐야 한다고 한 건 하나뿐이었습니다."*(09:02~09:04) — 데이터베이스에 새 개념을 더하는 **마이그레이션**. 10-05 발표의 one-way door · blast radius 기준과 맞는 선택이다.
 - 가장 큰 덩어리는 따로 묶는다: *"가장 큰 마지막 덩어리는 기능 플래그 뒤에 숨겨 네 개로 더 쪼갰습니다."*(08:46~08:48)
 - ⚠️ 그런데도 그는 코드를 한 줄씩 읽었고 그 이유(09:14~09:49)는 무캡션이다. 결과로 보면 읽기의 산출물은 승인이 아니라 린트 규칙 후보 12개였다 — **필수 리뷰는 위험에 비례하고, 나머지 읽기는 환경을 고치는 재료** 라는 두 층으로 읽힌다(위키의 해석).
+
+## 2026-11-24 — PR 설명의 세 칸과 *다섯 개에 하나* ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션).
+
+- *"그다음은 사람 차례입니다. 그런데 매트는 모든 코드를 한 줄씩 읽지 않습니다."*(07:08~07:11)
+- 에이전트가 쓰는 PR 설명의 세 칸: *"바뀐 것의 요약, 작동한다는 증거, 그리고 뭐지 위험입니다."*(07:14~07:18)[=머지 위험 — 10-25 절의 merge danger]
+- 기준: *"사람의 눈은 되돌릴 수 없는 곳에 있습니다."*(08:13~08:15) → [[action-reversibility]]
+- 낮은 쪽의 빈도가 숫자로 나왔다: 아키텍처 개선 스킬이 만드는 *"이런 자동 피알은 다섯 개에 하나쯤만 직접 확인합니다."*(11:21~11:23) 그리고 도메인에 따라 달라진다는 단서 — 금융이나 의료였다면 달랐을 것이라고 덧붙였다는 전달(11:24~11:26, ASR 일부 불확실).
+
+⚠️ **머지 위험을 누가 어떻게 매기는지에 대한 설명(07:20~08:10)은 무캡션이다.** 뒤이은 *양쪽 문은 훑어보고 한쪽 문은 천천히 엽니다*(08:11~08:13)는 two-way / one-way door로 읽히나 글자가 달라 인용하지 않았다.

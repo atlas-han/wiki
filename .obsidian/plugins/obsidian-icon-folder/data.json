@@ -1356,5 +1356,13 @@
   "02.wiki/sources/tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication.md": "LiVideo",
   "02.wiki/concepts/human-readable-folder.md": "LiFolderOpen",
   "02.wiki/entities/melvin-johnson.md": "LiUser",
-  "02.wiki/entities/gemini-4.md": "LiSparkles"
+  "02.wiki/entities/gemini-4.md": "LiSparkles",
+  "01.raw/articles/2026-11-23_구글 모델을 욕하던 개발자의 새 최애, Gemini 4 Neon Theo.md": "LiNewspaper",
+  "01.raw/articles/2026-11-23_우리는 세상이 모르는 비밀을 알았다 앤트로픽 창업자들.md": "LiNewspaper",
+  "01.raw/articles/2026-11-23_프로그래밍 언어 대신 배워야 할 것 Matt Pocock.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-theo-gemini-4-neon-capability-vs-coherency.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-anthropic-founders-secret-making-of-anthropic.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages.md": "LiVideo",
+  "02.wiki/concepts/capability-vs-coherency.md": "LiPuzzle",
+  "02.wiki/concepts/tactical-vs-strategic-programming.md": "LiLightbulb"
 }

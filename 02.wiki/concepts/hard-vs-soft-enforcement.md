@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
-related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction, human-loop-roles-relocation]
+related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction, human-loop-roles-relocation, tactical-vs-strategic-programming]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-pocock-21k-lines-questions-before-code]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-09-13
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # 하드 강제와 소프트 강제
@@ -203,3 +203,15 @@ AI Engineer Code Summit 발표(한국어 해설)의 뒤집힌 피라미드는 **
 - 소프트가 비어 있었다는 진단도 같이 나온다 — 회고의 결론은 그가 지적한 내용을 다룬 코딩 표준이 하나도 없었다는 것.
 
 이 페이지의 *PR 댓글은 코드 스멜* 과 같은 방향이고, 기존 위반이 수천 건인 저장소에서 하드 규칙을 **어떻게 켜는가** 에 대한 답(기준선 + 감소만 허용)이 처음 붙었다. ⚠️ 규칙이 실제로 만들어졌는지 · 효과는 소스에 없다.
+
+## 2026-11-24 — *고를 수 있다면 늘 후자*: 규칙도 배포도 결정론 쪽으로 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션).
+
+- ⭐ 원칙: *"규칙을 AI에게 지키라고 맡길지 린트 규칙으로 만들지 고를 수 있다면 늘 후자입니다. 매번 똑같이 도는 결정론 쪽이요."*(09:44~09:50)
+- 같은 규칙이 두 자리에 나온다 — 코딩 표준 문서의 예로: *"타입스크립트에서 애니 타입을 쓰면 구멍이 생긴다. 이런 식의 규칙입니다."*(06:51~06:53) 그리고 린트 규칙으로: *"애니 타입을 막는 규칙도 그래서 있습니다. 매트는 애니를 타입 검사를 피해 가는 꼼수라고 불렀습니다."*(09:10~09:14)
+- 리뷰 지적을 옮기는 통로는 회고 스킬이다: *"리뷰에서 나온 지적을 다음엔 자동 검사로 막을 방법을 찾습니다."*(09:23~09:26) — 11-22 절(리뷰 코멘트 12개를 린트로)의 일반형.
+- 배포에도 같은 원칙: *"에이전트가 직접 서버에 올리게 하지 않고 깃허브에 합쳐지면 자동으로 배포되게 둡니다. 토큰도 안 들고 매번 같으니까요."*(09:52~09:57)
+- 피드백 루프의 세 겹: *"타입이 있으면 실수를 바로 알려줍니다. 테스트는 실제로 돌려서 확인하고 린터는 위험한 패턴을 잡습니다."*(09:04~09:08)
+
+⚠️ 09:29~09:44는 무캡션. 코딩 표준 문서와 린트 규칙이 어떻게 나뉘는지(무엇이 문서에 남는지)는 캡션에 없다.

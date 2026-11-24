@@ -7,9 +7,9 @@ aliases: [Theo, t3.gg, Theo - t3.gg, 태오, 테오, Tae-o, Teo, T3 Code, T3 Cha
 links:
   - https://www.youtube.com/watch?v=GtJKFhztgdM
   - https://github.com/pingdotgg/t3code
-sources: [tech-bridge-theo-coding-is-gardening, tech-bridge-codex-app-server, tech-bridge-pstack-third-party-review, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-gpt-6-2-astra-launch-day-reactions]
+sources: [tech-bridge-theo-coding-is-gardening, tech-bridge-codex-app-server, tech-bridge-pstack-third-party-review, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 created: 2026-11-11
-updated: 2026-11-19
+updated: 2026-11-24
 ---
 
 # Theo
@@ -76,3 +76,17 @@ GPT-6.2 [[openai-astra|Astra]] 출시 당일(2026-11-17) Theo는 *"오픈 AI가 
 - **2주 예측** — 첫날 열광, 둘째 날 돌아섬, 이어 *Sol이 낫지 않냐* 는 글, *"그리고 2주 뒤은 거의 잊친다."*(08:23)[=뒤에는 거의 잊힌다] 단서: *"내가 틀렸기를 정말로 바란다."*(08:26~08:28)
 
 11-16 편(*Stop Picking The Wrong Model*)이 Anthropic 두 모델을 재는 **리뷰어** 였다면 이 편은 **벤더에 피드백을 보낸 조기 접근자** 다. 두 편 모두에서 그의 기준 모델은 Opus 5.5다. ⚠️ 예측이 맞았는지는 12월 초에야 볼 수 있다 — 위키는 이후 소스가 오면 대조한다.
+
+## 2026-11-24 — 구글 모델로 돌아선 리뷰어: Gemini 4 Neon과 *일관성* ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+11-23 업로드 해설(원 영상 `HQlk9RGx2dk`의 2차 전달, 원 자료 미열람). ⭐ **Theo의 영어 원음이 캡션에 두 곳 잡혔다** — 11-10 · 11-16 편은 원음이 전부 무캡션이었다. 나머지 발췌 열한 곳은 무캡션.
+
+- **입장 변화.** *"구글 모델을 그렇게 욕하던 개발자가 지금 제일 좋아하는 모델로 구글 것을 뽑았습니다."*(00:00~00:04) [[gemini-4|Gemini 4]] Argon · Carbon을 혹평했던 그가 Neon을 두고 *"차라리 제미나이 5라고 불렀어야 했다고 썼습니다."*(00:07~00:11)
+- **X 글.** *"왜 아무도 네온 얘기를 안 하지?"*(05:37) — *"이 글은 78만 번 읽혔습니다."*(05:39)
+- **본인 원음.** *"Well, I'll tell you with my full heart behind it. They crack something special here."*(10:20~10:24) · *"the new frontier is not the capability frontier. The new frontier is coherency"*(10:48~10:51) → [[capability-vs-coherency]](신규)
+- **TS Rust.** 11-10 · 11-16 · 11-19 편에 나온 TypeScript 컴파일러의 [[rust|Rust]] 재작성이 다시 시험대다 — Astra는 속도를 56% 늦췄고, Opus에 Fable을 붙여 20%쯤, Neon은 *"걸린 시간은 10시간."*(07:02~07:04) 실행 파일은 5.95배 작아지고 전체 실행 시간은 48.6% 줄었다(Theo 화면 기준).
+- **습관.** Amazon에서 배운 대로 *"제품을 만들기 전에 가짜 보도자료부터 쓰는 겁니다."*(07:38~07:40) 모델에게도 계획을 블로그 글처럼 쓰게 한다.
+- **자기 벤치.** 사실 설명 시험 13위 · 코드 리뷰 시험 타당한 지적 21개 · 종합 6위(Carbon 12위). 실제로 써 본 경험은 숫자보다 낫다고 했다(⚠️ ASR은 *낮다고* — 추정).
+- **숨기지 않은 흠.** 스킬 이름을 대충 불렀더니 실행하지 않고 멈췄다 — *"모델 탓인지 안티 그래비티 탓인지는 모르겠다면서도 그는 이 일을 숨기지 않고 짚었습니다."*(05:29~05:33)
+
+11-16 편의 기준 모델은 Opus 5.5였고 11-19 편까지 그랬다. 이 편에서 처음으로 *가장 좋아하는 모델* 이 Anthropic 밖으로 나간다 — 다만 그의 그래프에서 Neon · Fable · Opus는 같은 구석에 있다. ⚠️ 11-19 편의 *2주 예측*(Astra는 잊힌다)과는 별개의 주제다.

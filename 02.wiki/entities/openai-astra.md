@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-gpt-6-2-astra-launch-day-reactions]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 links: []
 created: 2026-09-06
-updated: 2026-11-19
+updated: 2026-11-24
 ---
 
 # Astra (OpenAI)
@@ -181,3 +181,12 @@ updated: 2026-11-19
 - 09-20 [[greg-brockman|Brockman]]의 *여전히 들쭉날쭉 · 글은 훌륭하지 않다* 와 10-11의 *Blender · 3D 모델링을 아주 잘한다* 가 바깥 평가로 되풀이된다 — Mollick의 *들쭉날쭉하고 이상하다*, 호평이 3D에 몰림. ⚠️ 같은 판을 두고 한 말인지는 알 수 없다.
 - 09-20의 *24시간 일관 실행* 과 Theo의 *두 시간 뒤 멈춰 있었다 · 몇 주를 돌고도 제자리* 는 맞닿지 않는다 — 앞은 제작사의 자기 보고, 뒤는 조기 테스터의 자기 보고다. → [[demo-collaboration-gap]]
 - ⚠️ 가격 $8 / $40 · *20% 인하* 가 11-18에 적은 [[fable-5-2|Fable 5.2]]의 값과 글자까지 같다 — 우연인지 해설의 혼선인지 판정하지 않았다.
+
+## 2026-11-24 — *능력은 높지만 일관성이 낮다*: Theo의 그래프에서 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+[[theo|Theo]]가 [[gemini-4|Gemini 4 Neon]]을 호평한 영상의 한국어 해설에서 GPT-6.2 Astra는 **대조군** 이다(⚠️ 한 사용자의 사례, 해설 전달).
+
+- 그래프: *"그 그림에서 GPT 6.2 아스트라는 능력은 높지만 일관성이 낮습니다."*(05:53~05:56) → [[capability-vs-coherency]]
+- 디스크 속도 질문: Astra는 디스크와 상관없는 이야기를 만들어 냈다고 한다(02:40~02:42).
+- 설계안: *"다른 모델과 짜던 설계안에 네온의 의견을 붙였더니 아스트라가 바로 네온 안을 따르겠다고 했습니다."*(03:40~03:44)
+- TS Rust: 크기를 *"46% 줄였지만 속도는 오히려 56% 느려졌습니다."*(06:47~06:50) 빠르게만 하라고 다시 시키자 *"변경을 하나도 넣지 못했습니다."*(06:52~06:54) — 11-19 절의 *컴파일러를 56% 느리게* 와 같은 일화이고 이번에 크기 46% 감소가 더해졌다. ⚠️ 매달린 기간은 이번에도 판독되지 않는다(ko-orig *7을 넘게*, 더빙 *seven hours* — 11-19 절의 *7주 추정* 을 확인해 주지 않는다).

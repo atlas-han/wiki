@@ -6,9 +6,9 @@ tags: [model-selection, fable-5-2, claude-opus-5-5, code-review, verification, r
 aliases: [모범생과 뒷자리, 앨런과 브래드, model temperament, model personality routing, 모델 성향]
 related: [reasoning-effort-levels, automatic-model-routing, generator-evaluator-pattern, verifiable-goals, automated-code-review, true-cost-to-perfect-answer]
 first-seen: tech-bridge-theo-fable-vs-opus-when-to-use
-sources: [tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 created: 2026-11-16
-updated: 2026-11-16
+updated: 2026-11-24
 ---
 
 # 모델 기질로 고르기 (Model Temperament Routing)
@@ -42,3 +42,7 @@ updated: 2026-11-16
 ## References
 
 - [[tech-bridge-theo-fable-vs-opus-when-to-use]] · [[theo]]
+
+## 2026-11-24 — 같은 리뷰어의 다음 틀: 기질에서 *일관성* 축으로 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+[[theo|Theo]]는 여드레 뒤 영상에서 모델을 **능력과 일관성** 두 축에 놓는다 — *"능력은 가장 잘 할 때 무엇을 할 수 있느냐? 일관성은 자기가 뭘 하고 있는지 아느냐입니다."*(05:44~05:50) 이 페이지가 갈라 놓은 두 모델은 그 그림에서 한 구석에 모인다: *"네온은 페이블, 오퍼스와 나란히 오른쪽 위에 있습니다."*(06:00~06:01) 기질(틀 안에서 꼼꼼한가 · 틀을 의심하는가)은 일관성이 충분한 모델들 **사이** 의 구분이고, 일관성은 그 앞의 문턱으로 읽힌다(위키의 읽기). → [[capability-vs-coherency]]

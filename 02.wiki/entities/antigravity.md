@@ -6,9 +6,9 @@ tags: [google, coding-agent, harness, ide, orchestration, subagents]
 aliases: [Antigravity, 안티그래비티, Antigravity Boost, "/boost", Antigravity CLI]
 links:
   - https://g.dev/cloud/antigravity-homepage
-sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-flutter-ai-workflow, tech-bridge-build-time-vs-runtime-tools, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
+sources: [tech-bridge-lopopolo-agent-harness, tech-bridge-flutter-ai-workflow, tech-bridge-build-time-vs-runtime-tools, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 created: 2026-09-23
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Google Antigravity
@@ -58,3 +58,12 @@ updated: 2026-11-23
 [[google-deepmind|Google DeepMind]]의 [[melvin-johnson|Melvin Johnson]] 발표를 옮긴 한국어 해설에서: *"알파벳 안에서 안티 그래비티로 개발하는 사람은 매년 10만 명이 넘습니다."*(02:33~02:36)[=Antigravity] 같은 대목에 *"지금 구글 새 코드의 75%를 AI가 씁니다."*(02:24~02:26)가 붙는다(엔지니어가 검토하고 승인한 코드 기준). 이 사내 사용자들이 새 후보 모델의 시험장이다 → [[gemini-4]] · [[production-trace-eval-flywheel]]
 
 ⚠️ *매년* 은 ASR 글자 그대로다(영어 더빙 ASR도 *every year*) — 단위가 맞는지 확인하지 못했다. 해설 전달, 자기 보고.
+
+## 2026-11-24 — 바깥 사용자의 화면에서: Neon을 싣는 통로와 연결부 버그 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+[[theo|Theo]]의 [[gemini-4|Gemini 4 Neon]] 사용기(한국어 해설 전달)에서 Antigravity는 Neon을 T3 Code에 붙이는 통로로 나온다.
+
+- 설치: *"네온은 8분 동안 그 PC에 접속해 안티 그래비티를 깔고 T3 코드에 붙인 뒤 직접 확인했습니다."*(04:01~04:06)
+- 연결부 버그: Neon이 멈춘 것처럼 보였는데 *"대시보드는 이미 두 개 만들었는데 안티 그래비티 연결부에서 채팅이 안 보이고 있었다고요."*(04:36~04:41) 수정 PR은 *"36개 패키지 검사와 테스트 153개를 통과한 수정을 올렸습니다."*(05:18~05:20) ⚠️ 버그가 Antigravity 쪽인지 T3 Code의 연결 코드 쪽인지는 캡션으로 가릴 수 없다(PR은 T3 Code 저장소 일을 하던 중에 나왔다).
+- 스킬: 스킬 이름을 대충 부르자 실행하지 않고 멈췄다 — Theo는 모델 탓인지 Antigravity 탓인지 모르겠다고 했다.
+- 속도: *"구글 쪽에서 확인되는 건 안티그래비티에서 카본의 첫 응답이 1.5배 빨라졌다는 언급 정도입니다."*(02:27~02:30)

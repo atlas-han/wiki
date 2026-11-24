@@ -6,9 +6,9 @@ tags: [learning, ai-tutor, cognitive-offloading, prompting, verification, educat
 aliases: [AI로 공부하기, AI 학습 역할, AI tutor roles, 도움받기 vs 생각 맡기기]
 related: [sycophancy, retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom, ai-learning-polarization]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-10-09
-updated: 2026-11-19
+updated: 2026-11-24
 ---
 
 # AI 보조 학습 — 역할 분담
@@ -81,3 +81,13 @@ updated: 2026-11-19
 - 근거는 설명 깊이의 착각을 뒤집어 쓰는 것이다 — *"설명하다 막힌 자리가 그대로 찾아볼 목록이 되니까요."*(07:39~07:41) 위 표의 *빈틈 · 진단* 역할을 AI에게 맡기기 전에 혼자서 먼저 해 볼 수 있다는 말이다.
 - 얻는 것: *"그러면 AI의 답도 그냥 받아 적는 게 아니라 내가 아는 것에 이어 붙일 수 있습니다."*(10:26~10:30)
 - 도구 쪽 개입의 숫자도 갱신된다 — 힌트만 주는 튜터 반은 연습 +127% · 시험은 AI를 안 쓴 반과 차이 없음(11-16에는 *대부분 줄었다* 로 적었다). → [[cognitive-offloading]] · [[learning-by-thinking]]
+
+## 2026-11-24 — 개발자의 판본: 모르는 보고서를 수업으로 바꾸는 스킬, 그리고 책 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션). 진행자가 아키텍처 보고서를 보고 묻는다 — *"이 보고서를 봐도 무슨 말인지 모르겠다고. 그럼 뭘 배워야 하냐고."*(11:28~11:31)
+
+- 배울 대상: *"배워야 할 건 프로그래밍 언어가 아니라 이런 단어입니다. 같은 문제를 말할 단어가 있으면 AI에게 훨씬 정확하게 시킬 수 있습니다."*(12:13~12:19) — 학습의 목적이 **AI에게 시킬 말** 을 갖는 것으로 놓인다.
+- 출처는 책: *"그 단어는 책에서 배우라고 했습니다."*(12:21) *"실제로 읽기만 해도 이 분야 대부분의 사람보다 앞서게 된다고 했습니다."*(12:52~12:55)
+- 도구: *"모르는 보고서를 넘기면 내가 아는 것을 기억하면서 퀴즈와 HTML 수업을 만들어 줍니다."*(12:36~12:41) *"매트는 이걸로 루빅스 큐브도 배웠다고 했습니다."*(12:42~12:44) — 이 페이지의 역할로는 출제자 쪽이고, *내가 아는 것을 기억한다* 는 점이 더해진다. ⚠️ 스킬 이름 줄(12:34~12:36)은 ASR 불확실.
+
+⚠️ 물음에 대한 본인의 답(11:35~12:13)은 무캡션이라 *이런 단어* 의 예는 캡션에 없다. 퀴즈가 인출 연습으로 설계됐는지도 소스가 말하지 않는다.

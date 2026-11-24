@@ -6,9 +6,9 @@ tags: [agent-skills, claude-code, matt-pocock, grill-with-docs, implement-spec, 
 aliases: [mattpocock/skills, Matt Pocock skills, AIhero.dev/skills, 매트 포콕 스킬 저장소]
 links:
   - https://github.com/mattpocock/skills
-sources: [tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern]
+sources: [tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-11-22
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # mattpocock/skills
@@ -51,3 +51,18 @@ updated: 2026-11-22
 ## References
 
 - [[tech-bridge-pocock-21k-lines-questions-before-code]] · [[tech-bridge-pocock-skills-implement-spec-pr-retro]] · [[tech-bridge-matt-pocock-home-repo-pattern]] · [[matt-pocock]] · [[grill-with-docs]] · [[agent-skills]]
+
+## 2026-11-24 — 대담에서 직접 돌린 스킬들과 *하루 루프* ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+NetworkChuck 대담을 따라간 한국어 해설이 저장소의 스킬을 루프 순서로 다시 보여 준다(내레이션 전달, 대담 원음 무캡션, 저장소 미열람 — 설명란에 링크만 있다).
+
+- 스킬의 정의(해설): *"스킬은 AI의 일하는 수서를 적어 준 짧은 문서입니다."*(02:58~03:02)[=순서]
+- 루프: *"그릴링, 스펙과 티켓, 구현, 코드 리뷰, 그리고 회고."*(08:30~08:32) 작은 일은 스펙을 건너뛴다 — *"작은 일이면 바로 구현 스킬로 넘어갑니다. 대화 하나를 넘길 만큼 크면 다른 길로 갑니다."*(06:17~06:21)
+- 티켓의 크기: *"티켓 하나가 대화 하나. 대략 15만 토큰 안에 끝나게요."*(06:27~06:29) 서브 에이전트는 *"각자 워크 트리, 즉 따로 떨어진 작업 폴더에서 동시에 일하고 끝나면 합쳐서 PR 하나를 만듭니다."*(06:33~06:37)
+- 코드 리뷰 스킬이 보는 둘: *"스펙대로 만들었는지, 그리고 코딩 표준을 지켰는지."*(06:40~06:43) 표준은 본인이 직접 쓴 문서다.
+- PR 설명의 세 칸: *"바뀐 것의 요약, 작동한다는 증거, 그리고 뭐지 위험입니다."*(07:14~07:18)[=머지 위험]
+- 회고: *"세션과 리뷰를 돌아보고 다음엔 무엇을 바꿀지 제안하게 합니다."*(08:24~08:27) *"다음엔 자동 검사로 막을 방법을 찾습니다."*(09:24~09:26)
+- **이 위키에 처음 나오는 스킬 둘.** ① 아키텍처 개선: *"코드베이스를 이런 모양으로 바꿔주는 스킬이 임프루브 코드베이스 아키텍처입니다."*(10:39~10:42)[=improve-codebase-architecture(추정 철자)] — 대담 중에 돌린 보고서의 *"첫 지적은 두 기능에 거의 똑같은 코드가 150줄 겹친다는 것."*(10:45~10:49) 출처는 Michael Feathers의 책이라고 한다: *"아키텍처 개선 스킬도 거기서 나왔습니다."*(12:32~12:34) → [[deep-modules]] ② 가르치는 스킬(이름 줄은 ASR 불확실 — teach로 보인다): *"모르는 보고서를 넘기면 내가 아는 것을 기억하면서 퀴즈와 HTML 수업을 만들어 줍니다."*(12:36~12:41) → [[ai-assisted-learning]]
+- 자동 PR의 확인 빈도: *"이런 자동 피알은 다섯 개에 하나쯤만 직접 확인합니다."*(11:21~11:23)
+
+⚠️ 11-21 업로드 편의 스킬 이름(to-spec · to-tickets · implement-spec · retro)은 이 편 캡션에 나오지 않는다 — 내레이션은 *스펙* · *티켓* · *구현 스킬* · *회고 스킬* 이라고만 부른다. 같은 스킬인지는 대조하지 않았다.

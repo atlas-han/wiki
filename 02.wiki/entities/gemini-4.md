@@ -6,9 +6,9 @@ tags: [google, google-deepmind, gemini, frontier-model, coding-agent, post-train
 aliases: [Gemini 4, 제미나이 4, Gemini 4 Carbon, Gemini 4 Hydrogen, Gemini 4 Argon, 카본, 하이드로젠, 아르곤]
 links:
   - https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/
-sources: [tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
+sources: [tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 created: 2026-11-23
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Gemini 4 (Argon · Carbon · Hydrogen)
@@ -34,3 +34,18 @@ updated: 2026-11-23
 ## References
 
 - [[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]] · [[melvin-johnson]] · [[google-deepmind]] · [[terminal-bench]] · [[reward-hacking]]
+
+## 2026-11-24 — Neon: 바깥 리뷰어가 처음 호평한 Gemini 4 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+계열의 넷째 이름 **Neon** 이 [[theo|Theo]]의 영상을 옮긴 한국어 해설로 들어온다. ⚠️ 해설 전달이고 위키는 Google 발표 글 · 모델 카드 · Artificial Analysis를 열지 않았다. *Neon* 의 철자는 제목 · 설명란 · tags. 도입부 한 곳(00:07)은 *제미나이 4.5 네온* 이라 부르지만 나머지는 전부 Gemini 4 Neon이다.
+
+- **출시.** *"11월 18일 구글은 제미나이 4 네온을 공개했습니다."*(00:32~00:34) Sundar Pichai가 직접 알렸다.
+- **Carbon과의 관계.** *"구글 모델 카드에는 네온이 카본을 고쳐 만든 모델이라고 적혀 있습니다."*(09:31~09:33) — 위 *미해결* 의 *세 모델의 관계* 가운데 처음 채워지는 칸이다. 소스는 Neon을 *더 작고 싼 모델* 이라 부르고, Theo는 중형 모델이라 추측한다.
+- **가격.** *"가격은 입력 100만 토큰에 3달러, 출력은 15달러."*(01:43~01:45)
+- **지수.** *"네온은 아티피셜 애널리시스 지수에서 61점으로 전체 3위입니다."*(01:32~01:36) Theo가 본 그래프에서는 [[claude-opus-5-5|Opus 5.5]]보다 위였다.
+- **보안 시험.** 공격 성공률 0%, Carbon도 같았다(01:49~01:53). ⚠️ 시험 이름은 판독하지 못했다(ASR *그레이스원*).
+- **Theo의 사례.** 디스크 속도 진단 · 원격 PC 설치 8분 · [[antigravity|Antigravity]] 연결부 버그를 스스로 짚고 PR · TS Rust 최적화 10시간(실행 파일 47.43MB → 7.97MB, 실행 시간 48.6% 감소). → [[capability-vs-coherency]]
+- **약점(Theo가 인정).** 코드 구조 설명에서 72개 주장 가운데 열 개가 틀렸다 — *"카본보다 절반으로 줄었지만 사실 설명은 여전히 약합니다."*(08:27~08:31) 그리고 *"확실히 약한 건 3D입니다."*(08:57) 그의 벤치 종합은 *"카본은 12위, 네온은 6위입니다."*(08:48~08:50)
+- **앞선 모델에 대한 평.** Theo는 *"앞서 나온 제미나이 4 아르곤과 카본을 혹평했던 사람이었거든요."*(00:46~00:48) 그의 그래프에서 Carbon은 능력 · 일관성 모두 낮은 왼쪽 아래다. 어제 소스가 Carbon에 적은 값(Cursor 벤치 1등 · 부정행위 0%)은 제작사 평가였고, 이쪽은 한 사용자의 평이다 — 서로 다른 것을 잰다.
+
+⚠️ Neon이 어떻게 나왔는지(*DeepMind가 내부 엔지니어들의 요구를 중형 모델에 먼저 시험했다*)는 Theo의 추측이라고 내레이션이 밝힌다. 그는 큰 버전이 나오면 이름을 Gemini 5로 하라고 했다.

@@ -2981,3 +2981,42 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1123/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 249건(130 + 119) 불일치 0. 두 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: 두 편 모두 발표 영어 원음이 **두 트랙 모두 무캡션**이다(Thariq 편 ko-orig 열세 곳 약 3분 33초 · Melvin Johnson 편 열한 곳 약 3분 48초) — 발표자 본인 인용은 0이고 인용은 전부 ko-orig 내레이션이다. Thariq 편 제목의 *받아들일 수 없다* 는 내레이션의 전달로만 남아 있다. 빈 구간의 내용은 적지 않았다.
+
+## [2026-11-24] ingest | Tech Bridge — 11-23 업로드 3편 (구글 모델을 욕하던 개발자의 새 최애, Gemini 4 Neon · 우리는 세상이 모르는 비밀을 알았다 · 프로그래밍 언어 대신 배워야 할 것)
+
+목록 `--playlist-end 20` → **20줄**(stderr ERROR 없음, 전부 `public`). 신규 공개 3편: `7gF_S-mzsnM`(11-23 18:00 KST) · `jMzmFrwfYHk`(11-23 22:00 KST — ✅ **멤버 전용 → `public` 전환**, 11-22 확인분, `upload_date` 20261121 → 20261123, 제목 그대로) · `T8ccKI9Wn2E`(11-24 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261123). 신규 멤버 전용 없음. `Yhck-x6VuLs`(목록 범위 밖 · 단건 조회 `subscriber_only` 줄) 지속 — 건너뜀, 페이지 없음. 자막 429 없음.
+
+**신규 source 3 · concept 2**, 기존 페이지 보강 28개(+ tech-bridge), index **1076 → 1081**(실측 일치).
+
+- `7gF_S-mzsnM`(11:02, 챕터 11) → [[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]]: 구글 모델을 혹평해 온 [[theo|Theo]]가 [[gemini-4|Gemini 4 Neon]]을 가장 좋아하는 모델로 꼽은 영상(`HQlk9RGx2dk`)의 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-23 18:00 KST 게시(`upload_date` 20261123).
+  - 신규: [[capability-vs-coherency]]
+  - 보강: [[theo]](입장 변화 · 본인 원음 둘 · TS Rust 10시간 · 가짜 보도자료 습관 · 자기 벤치) · [[gemini-4]](Neon — 11-18 출시 · Carbon을 고쳐 만든 모델 · 가격 · 지수 · 약점) · [[openai-astra]](능력 높고 일관성 낮음 · 크기 46% 감소 / 속도 56% 저하) · [[claude-opus-5-5]](더 작고 싼 모델에 넘겼다는 평 · 그래프에서는 같은 구석) · [[fable-5-2]](같은 구석 · 지수에서 근소하게 뒤) · [[antigravity]](Neon을 T3 Code에 붙이는 통로 · 연결부 버그 PR) · [[google-deepmind]](바깥 평이 돌아선 사례 · Theo의 추측) · [[model-temperament-routing]](기질에서 일관성 축으로)
+  - ⭐ **Theo 영어 원음이 두 곳 잡혔다**(10:08~10:24 · 10:40~10:52, 두 트랙 같은 글자) — 본인 인용은 이 두 대목뿐. 나머지 발췌 자리 열한 곳(ko-orig 약 3분 45초)은 두 트랙 모두 무캡션. 인용 112건 기계 대조 불일치 0. `en-orig` 내레이션 자리는 더빙 ASR이라 쓰지 않았다.
+  - ⚠️ **무캡션에 든 내용**: *절반 넘게 줄였다* 의 대상(01:58~02:25) · 디스크 속도의 나머지 두 원인(02:56~03:28) · 멈춘 대화의 전말(04:44~05:16) · 능력 / 일관성 그래프에 대한 Theo의 설명(06:06~06:32) · Neon이 쓴 글의 나머지(08:06~08:18) · 출처 추측 원음의 앞부분(09:50~10:08). 적지 않았다.
+  - ⚠️ **판독 불가 — 정하지 않음**: 도입부 *제미나이 4.5 네온*(00:07, 더빙도 4.5 — 제목 · 설명란 · tags · 이후 캡션은 Gemini 4 Neon) · 발표 문구 *최전선급 진행*(00:39) · 보안 시험 *그레이스원*(더빙 *Grace-1*) · *GPT 6 루나* · *리듬이 얘기가 뭐냐고*(03:29) · *MDc*(03:36) · PC 이름 *우드리게*(더빙 *Woodridge*) · *TS 라이저* · *7을 넘게*(06:45, 더빙 *seven hours* — 11-19 편의 *7위* 와 같은 자리) · *나올 동안*(06:52) · *여러 날의 싱크 때*(06:56).
+  - ⚠️ ASR 판독: *태오 · 태호* → Theo · *열을 넘게* → 열흘 넘게 · *케이블* · *페이우리* → Fable(추정) · *오포스* → Opus · *디스코* → 디스크 · *통째로 바뀐* → 통째로 맡긴(추정) · *뮤즈 원더풀* → Muse Wonder Full · *일은 두 개 주장* → 일흔두 개 주장 · *코그 리뷰* → 코드 리뷰 · *훨씬 낮다고* → 낫다고(추정 — 더빙 *much better*). 더빙은 *T3 코드에 붙인* 을 *attached it to the T3 codebase* 로, *통째로 맡긴* 을 *completely changed* 로 옮긴다.
+  - Neon의 출처(*DeepMind가 내부 엔지니어들의 요구를 중형 모델에 먼저 시험했다*)는 내레이션이 Theo의 추측이라고 밝힌 대목이다 — 추측으로 표시했다. 어제 [[melvin-johnson]] 편과의 인과는 어느 소스에도 없어 잇지 않았다.
+  - 페이지화하지 않음: Sundar Pichai(발표 글로만) · Artificial Analysis(지수 출처로만) · T3 Code(→ [[theo]]) · TS Rust(→ [[theo]] · [[rust]] 보강 없음) · [[bun]] · [[sentry]] · [[muse-wonder]] · [[amazon]](한 문장씩 — 보강 없음) · *GPT 6 루나* · 보안 시험(이름 미판독). Neon은 따로 페이지를 만들지 않고 [[gemini-4]]의 절로 넣었다.
+- `jMzmFrwfYHk`(11:08, 챕터 10) → [[tech-bridge-anthropic-founders-secret-making-of-anthropic]]: [[anthropic|Anthropic]] 공식 다큐 *The making of Anthropic* 의 공동 창업자 일곱 명 인터뷰를 따라간 창업사 해설. **멤버 전용(11-22 확인) → 11-24 `public` 확인**, `upload_date` 20261121 → 20261123(11-23 22:00 KST). Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`).
+  - 신규: 없음(source만)
+  - 보강: [[anthropic]](창업 연표 — 2018 OpenAI · 2021-01-26 공익법인 · 2023-03 Claude · 교훈 셋) · [[dario-amodei]](Big Blob of Compute · 암 발생률 90% · Glasswing 날의 글) · [[tom-brown]](AWS 클러스터 · 스케일링 법칙 논문 저자) · [[project-glasswing]](출시 파트너 + 40곳 넘는 조직 · 크레딧 최대 1억 달러 — 본문 약 50곳과 차이 표시) · [[claude-mythos-preview]](일반에 풀지 않은 결정의 회사 쪽 서사) · [[claude-code]](3.5 Sonnet 다음이라는 자리) · [[sutton-bitter-lesson]](창업의 *비밀* 이 된 같은 관찰) · [[race-to-the-top]](*최전선에 서야 안전 연구도 된다*)
+  - ⚠️ **창업자 원음은 두 트랙 모두 0줄.** 무캡션 스물세 곳(`gaps.py` 4.5초 기준, ko-orig 약 4분 40초). **창업자 본인 인용 0건**, 인용 121건은 전부 ko-orig 내레이션, 기계 대조 불일치 0. `en-orig`는 전부 더빙 ASR이라 쓰지 않았다.
+  - ⚠️ **무캡션에 든 것**: 제목의 Jack Clark 문장(00:04~00:14 — 설명란에만 있다) · Big Blob of Compute 원음(01:01~01:23) · 공익법인 논의(02:56~03:15) · **이름을 정한 경위(03:40~04:03 — 챕터 *이름은 도메인 값으로*)** · 급여(04:11~04:22) · ***헬리콥터 테스트*(챕터 04:31~05:57 — 캡션에 한 번도 안 나온다)** · *끔찍한 출시* 평의 출처와 *형편없던 시절* 원음(06:07~06:36) · Mythos의 취약점 발견 능력(08:04~08:43) · 혜택에 대한 원음(10:04~10:40). 적지 않았다.
+  - ⚠️ **판독 불가 — 인용하지 않음**: *웨이드를 여기까지 끌고 왔을까요*(00:26~00:28, 더빙도 *Wade*).
+  - ⚠️ ASR 판독: *엔트로피 · 엔트로픽* → Anthropic · *제로 디카플런* → Jared Kaplan(설명란 · tags) · *화려하지 일을* → 화려하지 않은 일을 · *글래스 윙* → Glasswing · *미토스* → Mythos · *컴퓨터 덩어리* · *컴퓨터를 확보한다* → 컴퓨트(추정) · *형태의 회사가* → 어떤 형태의(추정). 더빙은 *공익 법인* 을 *non-profit corporation* 으로 오역한다.
+  - 당사자 진술(회사의 자기 소개 다큐) — 소스 페이지와 각 절에 표시했다. Dario의 글 인용은 해설의 번역이고 원문 · 출처는 캡션에 없다. 맺음의 *고객의 질문에 답하지 못했던 회사* 일화는 캡션 앞부분에 없다.
+  - 페이지화하지 않음: Jack Clark · Jared Kaplan · Sam McCandlish · Daniela Amodei(이름 한 번씩) · Chris Olah(설명란 명단에만) · Claude 3 Opus · Claude 3.5 Sonnet · 공익법인(PBC) · compute multiplier · Big Blob of Compute(→ [[sutton-bitter-lesson]] 한 절) · 스케일링 법칙 논문(제목이 캡션에 없다). 신규 concept 없음.
+- `T8ccKI9Wn2E`(13:37, 챕터 10) → [[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]]: [[matt-pocock|Matt Pocock]]이 NetworkChuck과 나눈 2시간 대담의 작업 방식을 따라간 해설. Korean original + 영어 더빙(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). 11-24 07:00 KST 게시(`upload_date` 20261123).
+  - 신규: [[tactical-vs-strategic-programming]]
+  - 보강: [[matt-pocock]](대담 — 전술 / 전략 틀 · 하루 루프 · 이력) · [[mattpocock-skills]](루프 순서 · 아키텍처 개선 스킬 · 가르치는 스킬) · [[grill-with-docs]](규칙 둘 · 반년 다듬은 용어집 · ADR 31개) · [[deep-modules]](*불을 꺼도 되는 방* · 아키텍처 보고서) · [[context-rot]](15만 토큰이 티켓의 크기 기준) · [[reasoning-effort-levels]](높은 단계의 자리 — 논거는 무캡션) · [[risk-proportional-human-review]](PR 설명의 세 칸 · 다섯 개에 하나) · [[agent-trust-curve]](신뢰는 좋은 코드베이스에서) · [[structure-sensitive-tests]](숫자를 다시 확인하는 테스트) · [[hard-vs-soft-enforcement]](*고를 수 있다면 늘 린트 규칙* · 배포도 결정론) · [[software-factory]](방마다 밝기 스위치) · [[ai-assisted-learning]](보고서를 수업으로 바꾸는 스킬 · 책)
+  - ⚠️ **대담 원음은 두 트랙 모두 0줄.** 발췌 자리 열다섯 곳(ko-orig 약 4분 32초)이 무캡션이고 `>>` 하나(08:10)는 내레이션 복귀 표시다. **Matt Pocock · 진행자 본인 인용 0건**, 인용은 전부 ko-orig 내레이션. 인용 172건 기계 대조 불일치 0.
+  - ⚠️ **무캡션에 든 내용**: 제목 물음의 답과 바이브 코딩 평(00:02~00:08 · 00:18~00:23 — 설명란에만) · AI가 전략을 못 하는 이유(00:51~01:37) · 그릴링 문답 장면(03:15~03:59) · **높은 노력 수준이 왜 해로운지(05:30~06:01 — 챕터 제목의 주장)** · 머지 위험을 매기는 법(07:20~08:10) · 아키텍처 보고서의 나머지(10:55~11:21) · 무엇을 배우느냐는 물음의 답(11:35~12:13). 적지 않았다.
+  - ⚠️ **판독 불가 — 인용하지 않음**: *신뢰의 사다리* 화자 이름(ko-orig *도런 테네마*, 더빙 *Doron Tenne* — Lauren Tan **추정**, [[lauren-tan]] 보강 없음) · *안 말에 안 된다고 했습니다*(01:58) · *PR 스기니스는 설명물에는*(07:13) · *양쪽 문 · 한쪽 문*(08:11 — two-way / one-way door 추정) · *잘 듣는 일* · *오리 시도*(06:01~06:09) · *티치 스킬 루프*(12:34).
+  - ⚠️ ASR 판독: *맷 턱 · 메트* → Matt Pocock · *오스트아웃트* → Ousterhout · *일하는 수서* → 순서 · *환부를* → 환불을 · *결정기로* → 결정 기록 · *뭐지 위험* → 머지 위험 · *회고 스키* → 회고 스킬 · *실뢰* → 신뢰 · *울트라 싱크* → ultrathink(추정) · *덱소 씨* → Dex Horthy(추정) · *나눠 봤습니다* → 나눠 맡습니다(추정) · *초기 솔직하게* → 척이(추정) · *대답 내내* → 대담 내내.
+  - 내레이션의 *트윗 글자수 240*(10-05 발표는 280) · *레거시 코드 활용 전략 2003년*(통상 2004년)은 글자 그대로 두고 표시했다. 11-21 업로드 편의 *용어집 560줄* 과 이 편의 *ADR 31개* 가 같은 저장소인지는 캡션에 없다.
+  - 페이지화하지 않음: NetworkChuck(진행자 — 캡션에 *척* 뿐, 본인 인용 0) · John Ousterhout · Michael Feathers · 책 다섯 권 · teach / improve-codebase-architecture 스킬(→ [[mattpocock-skills]] 절) · 용어집 · ADR(→ [[grill-with-docs]] 절) · 워크트리 · 밈 둘. [[dex-horthy]] · [[lauren-tan]]은 추정 판독이라 보강하지 않았다.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+3편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1124/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 세 편 `check` 합계 405건(112 + 121 + 172) 불일치 0. 세 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: 앤트로픽 창업자들 편(스물세 곳 약 4분 40초)과 Pocock 편(열다섯 곳 약 4분 32초)은 원음이 **두 트랙 모두 무캡션** 이라 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다. Theo 편은 영어 원음이 두 곳(10:08~10:24 · 10:40~10:52)만 두 트랙에 같은 글자로 잡혔고 나머지 발췌 자리 열한 곳(약 3분 45초)은 무캡션이다. 빈 구간의 내용은 적지 않았다.

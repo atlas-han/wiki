@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
-related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment]
+related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment, deep-modules]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-09-13
-updated: 2026-11-19
+updated: 2026-11-24
 ---
 
 # 신뢰 곡선
@@ -128,3 +128,14 @@ Grok Bot 팀의 제품 매니저 [[roman-ugarte|Roman Ugarte]]가 Lightcone에�
 - 해설의 요약: *"봇에게 주는 권한은 사람을 뽑을 때처럼 작게 주고 넓혀 갑니다."*(10:44~10:45) — [[agent-manager-analogy]]의 채용 판이다.
 - 올라가지 않는 자리도 있다 — 기준을 분명히 정할 수 없는 결정은 *"지금은 사람이 반드시 검토합니다."*(04:45) (견적 봇으로 자기 할인을 스스로 승인할 수 없다.)
 - ⚠️ 팀이 쓴다는 *지름길* 의 본문(03:33~04:06)은 캡션에 없다. 칸을 올리는 기준(무엇을 보고 다음 칸으로 가는가)도 말하지 않는다.
+
+## 2026-11-24 — Pocock이 빌려 쓴 사다리: 신뢰는 좋은 코드베이스에서 나온다 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달)에서 이 곡선이 다른 화자의 입으로 인용된다.
+
+- *"신뢰의 사다리를 올라야 한다고요."*(08:40) ⚠️ 누구의 말을 빌렸는지는 ASR이 깨졌다 — *한 달에 PR을 2,500개쯤 낸다는 개발자 도런 테네마를 빌립니다*(08:36~08:38, 더빙 *Doron Tenne*). 수치와 표현으로 보아 [[lauren-tan|Lauren Tan]]으로 **추정** 되나 확정하지 않는다.
+- 숫자가 붙었다: *"에이전트를 못 믿으면 하나하나 지켜보느라 네 개 넘게 돌리기도 어렵습니다. 믿을 수 있으면 수백 개를 함께 돌릴 수 있고요."*(08:42~08:48)
+- ⭐ Pocock의 덧붙임 — 신뢰의 출처: *"그 신뢰는 좋은 코드 베이스에서 나옵니다."*(08:50~08:51) 그가 고전들에서 *"뽑은 정의는 바꾸기 쉬운 코드 베이스입니다. 바꿔도 뭔가 망가질 걱정이 적은 곳."*(08:54~08:57)
+- 그리고 수단: *"그러려면 에이전트가 자기 작업을 스스로 채점할 피드백 루프가 많아야 합니다."*(08:59~09:02) — 타입 · 테스트 · 린터. → [[hard-vs-soft-enforcement]] · [[deep-modules]]
+
+이 페이지의 도입은 병렬성을 *신뢰의 함수* 라 하고 신뢰를 개인적인 것으로 본다. 이 절은 그 신뢰를 **코드베이스의 성질**(바꾸기 쉬움 · 피드백 루프의 수)에 건다 — 사람 쪽이 아니라 환경 쪽에 놓은 판이다(위키의 읽기).

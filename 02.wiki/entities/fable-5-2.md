@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 created: 2026-11-11
-updated: 2026-11-19
+updated: 2026-11-24
 ---
 
 # Claude Fable 5.2
@@ -129,3 +129,11 @@ GPT-6.2 [[openai-astra|Astra]] 반응 모음 해설(⚠️ 2차 전달)에서 Fa
 ⚠️ **가격이 글자까지 같다.** 해설은 Astra를 *입력 $8 · 출력 $40, 이전보다 20% 인하* 라 적는데, 이는 11-18에 이 페이지에 적은 Fable 5.2의 값($8 / $40 · *보도에 따르면 20% 싼 값*)과 같다. 두 벤더가 같은 값을 매겼는지 해설이 섞였는지는 발표 글을 열지 않아 판정하지 않는다.
 
 ⭐ **같은 주, 닮은 성질.** 이 페이지의 *길고 단계가 많은 일에서 끝내기 전에 턴을 마친다* 와 Astra의 *사용자가 알 길 없는 것을 묻고 멈춘다* 는 모양은 달라도 둘 다 **오래 맡긴 일이 서 있는** 실패이고, 두 벤더 모두 시스템 프롬프트 문단으로 줄였다고 적는다. → [[demo-collaboration-gap]]
+
+## 2026-11-24 — Theo의 그래프에서 Neon과 같은 구석 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+[[gemini-4|Gemini 4 Neon]] 해설에서 Fable은 세 번 스친다(⚠️ ASR이 이름을 *케이블* · *페이블* · *페이우리* 로 적는다 — tags의 *Fable 5.2* 로 판독, 첫째와 셋째는 추정).
+
+- 코딩 에이전트 지수로는 Neon이 Fable보다도 근소하게 앞선다고 한다(00:54~00:55).
+- [[capability-vs-coherency|능력 · 일관성]] 그래프: *"네온은 페이블, 오퍼스와 나란히 오른쪽 위에 있습니다."*(06:00~06:01)
+- TS Rust 최적화에서 Opus에 Fable을 붙여 20%쯤 빨라졌다(06:54~06:58).

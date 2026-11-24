@@ -6,9 +6,9 @@ tags: [context-window, attention, long-context, degradation, context-engineering
 aliases: [context rot, 문맥 부패, 컨텍스트 열화, context degradation]
 related: [context-engineering, context-anxiety, long-context-agents, context-resets-and-compaction, attention-mechanism, sparse-attention, toolbox-pattern, agent-memory, context-failure-modes]
 first-seen: tech-bridge-oracle-agent-memory-harness
-sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-pocock-21k-lines-questions-before-code]
+sources: [tech-bridge-oracle-agent-memory-harness, tech-bridge-goodbye-slop-state-machines, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-context-engineering-four-failure-modes, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-09-24
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # 컨텍스트 부패 (Context Rot)
@@ -103,3 +103,15 @@ AI gateway 사용량을 보는 [[remy-guercio|Remy Guercio]]([[tailscale|Tailsca
 - 처방(그 자리의): *"그는 새 서브 에이전트를 띄우는 편이 나았을 거라고 말합니다."*(06:35~06:37)
 
 ⚠️ 15만 · 8만~12만은 측정이 아니라 경험칙의 전달이다. *제곱* 논거가 품질 저하를 설명하는지 계산 비용을 설명하는지는 이 페이지 도입부의 지적대로 여기서도 갈리지 않는다.
+
+## 2026-11-24 — 15만 토큰이 작업 단위를 정한다: *티켓 하나가 대화 하나* ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션)에 11-22 절의 문턱이 다시 나오고, 이번에는 **일을 쪼개는 기준** 으로 쓰인다.
+
+- 먼저 따지는 것: *"이 일이 대화 하나에 들어가는지부터 따집니다."*(04:51~04:52)
+- 창과 문턱의 차이: *"오퍼스는 100만 토큰까지 담을 수 있습니다. 그런데 메트는 15만 토큰쯤부터 불안해진다고 했습니다. 진행자가 너무 이르다며 놀랄 정도로요."*(04:55~05:03)
+- 근거는 같은 제곱 논거에 비유가 붙었다: *"토큰이 쌓이면 토큰 사이의 관계는 제곱으로 늘어납니다. 꽉 찬 방에서 가장 중요한 말만 골라 듣기 어렵듯 모델의 판단이 흐려집니다."*(05:04~05:10)
+- 이름과 출처: *"메트는 이걸 스마트 존과 덤 존으로 나눠 부릅니다. 덱소 씨가 만든 말이라고 출처도 밝혔습니다."*(05:12~05:15)[=[[dex-horthy|Dex Horthy]](추정 — 11-22 절과 같은 판독)]
+- ⭐ 작업 단위: *"티켓 하나가 대화 하나. 대략 15만 토큰 안에 끝나게요."*(06:27~06:29) — 문턱이 [[plan-to-ticket-pipeline|티켓 분할]]의 크기 기준이 된다.
+
+⚠️ 11-22 절의 수정(환각이 아니라 품질과 비용의 문제)은 이 편에 나오지 않는다 — 여기서는 *판단이 흐려진다* 로만 전해진다. 15만은 여전히 경험칙이다.

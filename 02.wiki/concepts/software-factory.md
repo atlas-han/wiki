@@ -3,11 +3,11 @@ title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test, tactical-vs-strategic-programming]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-10-02
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -307,3 +307,12 @@ Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이�
 - 공방 쪽의 재료로 꼽은 것: *"빠르고 표현력 있고 고치는 즉시 반영되는 새 언어, 새로운 데이터베이스와 서버, 운영체제와의 새로운 상호작용, 다시 읽어볼 만해진 옛 HCI 연구, 새로운 미학, 그리고 쓰는 사람이 고쳐 쓸 수 있는 소프트웨어."*(10:18~10:32)
 
 위키의 읽기: [[orchestras-not-factories]]가 공장 은유 자체를 반대한다면 이것은 **병치** 다 — 공장의 지표(속도 · 신뢰 · 비용)로 잴 수 없는 일이 따로 있고, 그 일에는 사람이 코드를 읽고 고르는 구조가 필요하다는 것([[human-readable-folder]]). 같은 행사에서 하루 전 소스 [[tech-bridge-walden-yan-cognition-no-laptop-development]]가 공장 쪽의 숫자(사람 승인 없는 머지 999개)를 냈다. ⚠️ 원음(03:54~04:19)은 무캡션.
+
+## 2026-11-24 — 불을 전부 끈 공장은 싫다: *방마다 밝기 스위치* ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션)에서 다크 팩토리에 대한 그의 입장이 한 줄로 나온다.
+
+- 모듈 하나는 꺼도 된다: *"그러면 모듈 안은 마음껏 바꿔도 됩니다. 메트 표현으로는 그 방은 불을 꺼도 되는 거죠."*(10:26~10:30) → [[deep-modules]]
+- 공장 전체는 아니다 — 불을 전부 끈 채 에이전트만 일하는 공장은 싫다고 했다는 전달(10:32~10:34, ASR *공장을 싫다고*)에 이어: *"대신 방마다 밝기를 조절하는 스위치를 달자는 겁니다."*(10:36~10:38)
+
+11-21 절(*돈이 되면 생길 것이고 아직 본 적은 없다*)이 다크 팩토리의 존재를 물었다면 여기서는 **단위** 가 바뀐다 — 켜고 끄는 것은 공장이 아니라 모듈이고, 끌 수 있는 조건은 좁은 입구와 그 입구로 도는 테스트다(위키의 읽기). 같은 대담의 틀로는 전술은 맡기되 전략은 사람이 쥔다는 말이다. → [[tactical-vs-strategic-programming]](신규)

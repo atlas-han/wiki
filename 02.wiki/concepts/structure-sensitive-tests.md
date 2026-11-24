@@ -6,9 +6,9 @@ tags: [testing, coding-agents, verification, test-quality, mocking, ci]
 aliases: [동어반복 테스트, tautological tests, 거짓말하는 테스트, checks can lie, 실패할 수 없는 테스트, tests that cannot fail]
 related: [deep-modules, test-harness-vs-test-authoring, mergeability-gap, automated-code-review, verification-bottleneck, reward-hacking, hard-vs-soft-enforcement, verifiable-goals, agent-friction-multiplier]
 first-seen: tech-bridge-pocock-pr-bottleneck
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-theo-coding-is-gardening]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-emily-bache-exact-coding-tdd, tech-bridge-theo-coding-is-gardening, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-10-09
-updated: 2026-11-11
+updated: 2026-11-24
 ---
 
 # 구조 민감 테스트
@@ -66,3 +66,14 @@ updated: 2026-11-11
 - 결과: *"지온 테스트가 잡았을 회기는 아직 없었고 머지 뒤 되살린 건이네 개뿐이었습니다."*(04:40~04:46)[=지운 테스트가 잡았을 회귀 · 되살린 건 네 개]
 
 이 페이지는 *거짓말하는 검사* 를 **알아보는** 법을 다뤘다. Theo의 사례는 그런 테스트를 **대량으로 걸러 내는** 법이다. 판정 기준의 내용은 해설에 없다. ⚠️ *회귀 없음* 은 짧은 기간의 진술이다.
+
+## 2026-11-24 — *구현을 그대로 따라하는 테스트*: 숫자를 다시 확인하는 테스트 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션)에 같은 진단이 초심자용 예와 함께 나온다.
+
+- *"테스트는 AI가 얼마든지 써줍니다. 그런데 매트는 테스트가 원래 어려운 일이라고 했습니다. 구현을 그대로 따라하는 테스트가 쉽게 나오기 때문입니다."*(09:59~10:07)
+- 예: *"트윗 글자수가 240이라는 코드에 그 숫자가 240인지 확인하는 테스트처럼요."*(10:08~10:12) ⚠️ 숫자는 내레이션 글자 그대로다.
+- 비용: *"이러면 코드 한 줄을 고칠 때마다 테스트도 같이 고쳐야 합니다."*(10:13~10:15)
+- 처방은 이 페이지와 같다 — 좁은 입구로만 테스트한다: *"테스트는 그 입구로 말합니다."*(10:21) → [[deep-modules]]
+
+이 페이지 표의 **동어반복 테스트**(상수 `X_POST_CHARACTER_LIMIT = 280` 을 다시 단언)와 같은 예로 보인다 — 원 발표의 280이 이 해설에서는 240으로 전해진다(어느 쪽이 대담의 말인지는 원음 무캡션이라 알 수 없다). 새 논거는 없다.

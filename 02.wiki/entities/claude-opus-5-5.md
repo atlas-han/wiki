@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 links: []
 created: 2026-10-09
-updated: 2026-11-21
+updated: 2026-11-24
 ---
 
 # Claude Opus 5.5
@@ -131,3 +131,12 @@ GPT-6.2 [[openai-astra|Astra]] 반응 모음(⚠️ 해설 전달 + 원음 발�
 - 한계는 그대로라는 쪽: *"정답이 없고 경험이나 감이 필요한 모호한 일은 형편없다. 목표까지 길이 곧게 뻗은 일은 믿을 수 있다."*(04:04~04:08)([[mario-zechner|Mario Zechner]]) 그리고 *"모델이 나올 때마다 무엇을 맡겨도 되고 무엇을 안 되는지 다시 배운다고 합니다."*(04:24~04:29)
 
 ⚠️ 두 사람의 답 원음(01:04~01:46)은 두 트랙 모두 무캡션이라 위 문장들은 내레이션의 요약이다. 모호한 일 · 곧은 일의 구분이 Opus 5.5에 한정한 말인지 에이전트 일반에 대한 말인지는 캡션으로 가릴 수 없다. 수치 없음.
+
+## 2026-11-24 — *더 작고 싼 모델* 에 넘겼다는 평 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+[[theo|Theo]]의 [[gemini-4|Gemini 4 Neon]] 영상을 옮긴 해설에서 Opus 5.5는 넘어야 할 기준으로 나온다: *"더 작고 싼 모델이 어떻게 오퍼스 5.5를 넘었다는 걸까요?"*(00:24~00:26) *"그런데 그래프를 열어 보니 네온이 오퍼스 5.5보다 위에 있었습니다."*(00:50~00:52) 가격도 Theo 말로는 Neon이 확실히 싸다(Neon 입력 3달러 · 출력 15달러 — Opus 값은 이 소스에 없다).
+
+- TS Rust 최적화에서 Opus로 바꾸고 Fable까지 붙여 20%쯤 빨라졌다(06:54~06:58 — ASR *오포스* · *페이우리*, 기간은 미판독). 같은 목표를 Neon은 10시간에 끝냈다고 한다.
+- 그래도 Theo의 [[capability-vs-coherency|능력 · 일관성]] 그래프에서는 *"네온은 페이블, 오퍼스와 나란히 오른쪽 위에 있습니다."*(06:00~06:01) — 밀려난 것이 아니라 같은 구석이다.
+
+⚠️ 한 사용자의 프로젝트 하나. 어느 그래프인지(지수 이름)는 이 대목 캡션에 없다.

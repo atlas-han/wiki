@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-safety, anthropic, strategy, frontier, standards, defense]
 aliases: [race to the top, 기준을 올리는 경쟁, 프론티어에 있되 올바르게]
-related: [slowdown-within-lead-margin, embedded-external-evaluators, regulatory-capture, training-time-risk, balance-of-power-safety, project-glasswing]
+related: [slowdown-within-lead-margin, embedded-external-evaluators, regulatory-capture, training-time-risk, balance-of-power-safety, project-glasswing, sutton-bitter-lesson]
 first-seen: tech-bridge-dario-amodei-cbs-interview
-sources: [tech-bridge-dario-amodei-cbs-interview]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-11-24
 ---
 
 # 최고를 향한 경쟁
@@ -47,3 +47,14 @@ updated: 2026-09-16
 - [[tech-bridge-dario-amodei-cbs-interview]] — first-seen
 - [[dario-amodei]] · [[anthropic]]
 - 관련: [[slowdown-within-lead-margin]] · [[embedded-external-evaluators]] · [[regulatory-capture]] · [[training-time-risk]] · [[balance-of-power-safety]]
+
+## 2026-11-24 — 회사의 역사로 말한 전제: *최전선에 서야 안전 연구도 된다* ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+[[anthropic|Anthropic]] 창업사 해설에서 이 개념의 전제가 **교훈** 으로 나온다(*race to the top* 이라는 말은 나오지 않는다 — 위키의 연결). ⚠️ 해설 전달이다 — 바탕은 회사가 만든 다큐 *The making of Anthropic* 이고(위키 미열람) **창업자 원음은 캡션에 한 줄도 없다.** 인용은 전부 한국어 내레이션.
+
+- *"뒤처진 시절을 겪으며 배운 것은 안전 연구도 가장 강한 모델을 가졌을 때 가장 잘 된다는 점입니다."*(07:23~07:27)
+- *"문제를 먼저 보면 그 문제를 다룰 시간도 가장 많이 생깁니다."*(07:29~07:31)
+- 창업자들이 꼽았다는 교훈: *"최전선에 서야 안전 연구도 된다."*(10:51) *"옳게 하면 단기적으로 대가를 치른다."*(10:54)
+- 사례로 놓인 것이 [[project-glasswing]]이다: *"미토스를 일반에 풀지 않고 방어하는 쪽에 먼저 줬습니다."*(08:44~08:47)
+
+⚠️ 당사자 진술이다. *가장 강한 모델을 가져야 한다* 는 결론은 회사의 상업적 이해와 겹친다 — 위키의 단서. 단기적 대가가 무엇이었는지는 캡션에 없다.

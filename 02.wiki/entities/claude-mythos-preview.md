@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, frontier-model, unreleased, cybersecurity]
 aliases: [Mythos Preview, Mythos-class]
-sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-fable-5-2-announcement, tech-bridge-openai-gpt-6-cyber-keynote]
+sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-altman-frontier-rl-pause, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-fable-5-2-announcement, tech-bridge-openai-gpt-6-cyber-keynote, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 links: []
 created: 2026-05-25
-updated: 2026-11-14
+updated: 2026-11-24
 ---
 
 # Claude Mythos Preview
@@ -68,3 +68,13 @@ updated: 2026-11-14
 ## 2026-11-14 — Mythos 5.2의 첫 공격 벤치마크 수치 ([[tech-bridge-openai-gpt-6-cyber-keynote]])
 
 OpenAI 키노트 발표자가 *이번 주에 나온 Anthropic Mythos 5.2* 를 ExploitBench(판독 추정) 약 38%로 비교에 올렸다. 해설자 대조: Anthropic 시스템 카드에 *869건 중 331건* — 나누면 38%가 맞다. *"다만 같은 조건에서 잰 숫자 인지는 알 수 없습니다."*(04:57~04:58) 같은 표의 [[gpt-6-cyber|GPT-6 Cyber]]는 슬라이드 52.6% · 문서 48.45%. 위키가 가진 Mythos 5.2의 첫 정량 수치다(해설 전달).
+
+## 2026-11-24 — 회사가 자기 역사 안에 놓은 Mythos ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+[[anthropic|Anthropic]] 창업사 해설의 아홉째 챕터(*Mythos, 다르게 내놓기*). ⚠️ 해설 전달이다 — 바탕은 회사가 만든 다큐 *The making of Anthropic* 이고(위키 미열람) **창업자 원음은 캡션에 한 줄도 없다.** 인용은 전부 한국어 내레이션. 해설은 모델을 *Claude Mythos* 라고만 부른다(판 구분 없음).
+
+- 도입부의 대비: *"그리고 3년 뒤 이 회사는 직접 만든 가장 강한 모델을 일반에 풀지 않기로 합니다."*(00:21~00:25)
+- *"클로드 미토스를 제한적으로 시험한다는 소식이 뉴스를 탔습니다."*(07:55~07:59) *"미토스를 일반에 풀지 않고 방어하는 쪽에 먼저 줬습니다."*(08:44~08:47) → [[project-glasswing]]
+- 회사가 이 결정에 붙인 이유는 교훈의 형태로 나온다: *"문제를 먼저 보면 그 문제를 다룰 시간도 가장 많이 생깁니다."*(07:29~07:31)
+
+⚠️ 취약점 발견 능력에 대한 창업자들의 설명(08:04~08:43)은 무캡션이라 능력 수치는 이 소스에 없다. 당사자 진술.

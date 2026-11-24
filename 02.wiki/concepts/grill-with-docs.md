@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [agent-skills, requirements, glossary, naming, adr, alignment, spec-driven-development, matt-pocock]
 aliases: [grill-with-docs, grill me with docs, grill me, 그릴 위드 독스, 질문 먼저, grilling]
-related: [spec-driven-development, plan-to-ticket-pipeline, intent-md, fuzzy-intent-discovery, agent-skills, context-resets-and-compaction, codebase-gardening]
+related: [spec-driven-development, plan-to-ticket-pipeline, intent-md, fuzzy-intent-discovery, agent-skills, context-resets-and-compaction, codebase-gardening, tactical-vs-strategic-programming]
 first-seen: tech-bridge-pocock-21k-lines-questions-before-code
-sources: [tech-bridge-pocock-21k-lines-questions-before-code]
+sources: [tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-11-22
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # Grill with Docs
@@ -52,3 +52,17 @@ updated: 2026-11-22
 ## References
 
 - [[tech-bridge-pocock-21k-lines-questions-before-code]] · [[mattpocock-skills]] · [[matt-pocock]] · [[spec-driven-development]] · [[plan-to-ticket-pipeline]]
+
+## 2026-11-24 — 규칙 둘, 반년 다듬은 용어집, ADR 31개 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+NetworkChuck 대담 해설에서 같은 스킬이 다른 저장소(직접 만든 영상 편집기)로 시연된다(내레이션 전달, 문답 장면 03:15~03:59는 무캡션).
+
+- 장면: *"입력한 건 막연한 한 줄. 텔레프롬프터 화면이 지저분해졌으니 정리를 도와달라는 겁니다."*(02:39~02:43) *"보통은 여기서 AI가 바로 코드를 짭니다. 그런데 이번에는 질문부터 합니다."*(02:45~02:47)
+- 질문의 모양: *"그리고 질문마다 자기 추측을 붙입니다. 아마 이쪽일 것 같다고요."*(02:53~02:54)
+- ⭐ **규칙 둘**(이 페이지에 처음 명시됨): *"이해가 같아질 때까지 끈질기게 묻는다. 그리고 코드에서 찾을 수 있는 사실은 묻지 말고 직접 찾는다."*(03:04~03:07)
+- **용어집.** *"코스, 섹션, 레슨, 버전 같은 말이 이 앱에서 무슨 뜻인지 적어둔 문서입니다. 피해야 할 말까지 적혀 있습니다."*(04:02~04:07) *"반 년 동안 AI와 함께 다듬은 단어라 AI가 처음부터 이 앱의 말로 대화한다고 합니다."*(04:09~04:12)
+- 용어가 갈린 앱의 예: *"화면은 리버설, 이메일은 차지백, 데이터베이스는 리펀드라고 부르는 앱입니다."*(04:16~04:20) *"말을 하나로 맞추면 AI가 내 머릿속에 들어온 것 같다고 했습니다."*(04:21~04:25)
+- **ADR.** *"되돌리기 어렵고 비싼 결정을 짧은 문서로 남깁니다. 이 저장소에만 31개가 있습니다."*(04:29~04:33) 이유: *"코드는 지금 모습만 보여줍니다. 왜 그렇게 정했는지는 남지 않아서 기록이 없으면 AI는 같은 실수를 되풀이합니다."*(04:34~04:40)
+- 도입: *"처음부터 다 갖출 필요는 없습니다."*(04:41) *"지금 손대는 곳부터 넓혀가면 됩니다."*(04:45~04:47) 해설의 권유도 여기서 시작한다 — *"다음 기능 하나를 시작할 때 AI가 먼저 질문하게 시키는 데서 시작해 보세요."*(13:30~13:34)
+
+⚠️ 11-21 업로드 편의 *용어집 560줄* 과 이 편의 *ADR 31개* 가 같은 저장소의 수치인지는 캡션에 없다. 스킬 이름은 이 편에서 *그릴*(몰아세운다는 뜻)로만 불린다.

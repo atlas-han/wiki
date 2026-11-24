@@ -6,9 +6,9 @@ tags: [reasoning-effort, effort-level, cost, benchmark, fable-5-2, claude-code, 
 aliases: [effort level, reasoning effort, 추론 강도, effort setting, low/medium/high/xhigh/max, extra high, xhigh]
 related: [prompt-debt, ultracode, model-mixing-economics, token-roles, fable-5-2, claude-opus-5-5, model-temperament-routing]
 first-seen: tech-bridge-chase-ai-fable-5-2-prompting-rules
-sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus]
+sources: [tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-11-12
-updated: 2026-11-18
+updated: 2026-11-24
 ---
 
 # 추론 강도 (Reasoning Effort Levels)
@@ -75,3 +75,14 @@ updated: 2026-11-18
 - high 위는 권하지 않는다 — 성능 향상의 대부분은 high에서. high 이상에서는 인사 한마디에도 생각부터 하므로 느려진 턴만 내린다. extra high는 점수 조금 · 토큰 훨씬 많이. *"하이를 넘으면 한 단계가 더 큰 모델 하나 값일 수 있습니다."*(05:52~05:54)
 - 사다리의 첫 칸이 다시 확인된다: effort보다 먼저 **스스로 확인할 수단**(테스트 · 빌드).
 - 위 11-16 절의 [[theo|Theo]](*high를 기본으로*)와는 여전히 다르다 — 벤더는 *긴 자율 실행* 이라는 조건을 붙인다. ⚠️ 해설 전달.
+
+## 2026-11-24 — 높은 단계의 자리: 조사 · 성능 측정 · 디버깅 · 자기 검증 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달). 챕터 제목은 *"최선을 다해"가 AI를 멍청하게 만든다* 이다.
+
+- 진행자의 설정: *"진행자 척은 AI가 매번 최선을 다하길 바라서 노력 수준을 최고에 가깝게 둔다고 했습니다."*(05:18~05:23)
+- ⚠️ **이에 대한 Pocock의 답(05:30~06:01)은 두 트랙 모두 무캡션이다.** 높은 강도가 왜 해로운지의 논거는 이 위키에 들어오지 않았다 — 설명란은 *"최선을 다해"라고 시키면 오히려 멍청해지는 이유* 라고만 적는다.
+- 남은 것은 배치다: *"높은 단계는 조사나 성능 측정, 디버깅처럼"*(06:04~06:07) 여러 번 시도해야 하는 일에 맞는다고 하고, 검증 쪽에서 다시 나온다 — *"높은 노력 단계를 쓰는 곳도 바로 여깁니다. 앱을 실제로 클릭해 보고 성능을 재면서 자기 작업을 검증할 때요."*(09:16~09:21)
+- 탐색에는 필요 없다는 쪽: *"맞는 파일을 읽으면 되죠."*(06:03~06:04)
+
+11-16 절(*max는 엉뚱해진다*)과 같은 방향의 실무자 진술이 하나 더해졌으나, 근거 문장이 비어 있어 독립된 논거로 세지 않는다. 그가 11-21 업로드 편에서 쓴 설정은 중간이었다.

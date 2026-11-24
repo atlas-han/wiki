@@ -8,9 +8,9 @@ links:
   - https://x.com/mattpocockuk
   - https://www.linkedin.com/in/mapocock/
   - https://aihero.dev
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-pocock-21k-lines-questions-before-code]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-10-09
-updated: 2026-11-22
+updated: 2026-11-24
 ---
 
 # Matt Pocock
@@ -90,3 +90,18 @@ Tech Bridge 한국어 해설(11-21 게시)이 그의 작업 영상 `jVBlkOF8sHk`
 - **태도.** *"혼자 쓰는 앱이지만 사용자가 수십만 명인 서비스인 척하는 연습이라고 말합니다."*(08:53~08:56)
 - **사람의 자리.** 설명란 요약: 사람이 쓸모 있는 곳은 처음(방향 맞추기)과 끝(리뷰 · 회고). ⚠️ 본인의 답(12:42~13:06)은 무캡션.
 - ⚠️ 이 페이지 *태도* 절의 단서 그대로다 — 자기 스킬로 한 자기 사례 하나, 머지 뒤의 품질 평가는 없다.
+
+## 2026-11-24 — NetworkChuck 대담: *언어 대신 배울 것은 단어다* ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+Tech Bridge 한국어 해설(11-24 07:00 KST 게시)이 NetworkChuck과의 2시간 대담(원본 `mU8WKII1gpk`, 미열람)을 따라간다. ⚠️ **대담 원음은 두 트랙 모두 무캡션 — 본인 인용 0**, 아래는 내레이션이 옮긴 말이다.
+
+- **제목의 물음.** *"프로그래밍 언어, 지금 꼭 배워야 할까요?"*(00:00~00:02) — 답 *아니요* 는 설명란에만 있다. 해설의 소개: *"이렇게 답한 사람은 맷 턱 타입스크립트 강의로 이름을 알린 개발자입니다."*(00:08~00:12)[=Matt Pocock]
+- ⭐ **틀: 전술과 전략.** Ousterhout의 책에서 가져온 구분으로 자기 작업 방식 전체를 설명한다 — 에이전트는 오늘 일을 끝내고, 집은 사람이 돌본다: *"그래서 집을 돌볼 사람이 필요하고 지금은 그게 바로 사용자라는 겁니다."*(01:52~01:54) → [[tactical-vs-strategic-programming]](신규)
+- **하루 루프.** *"그릴링, 스펙과 티켓, 구현, 코드 리뷰, 그리고 회고."*(08:30~08:32) — 11-21 업로드 편의 사슬과 같다. → [[mattpocock-skills]] · [[grill-with-docs]]
+- **15만 토큰.** *"그런데 메트는 15만 토큰쯤부터 불안해진다고 했습니다. 진행자가 너무 이르다며 놀랄 정도로요."*(04:58~05:03) → [[context-rot]]
+- **모델 비교를 하지 않는다.** *"다음 모델이 다 고쳐주길 기다리지 말고 지금 내 문제를 고치라는 겁니다."*(06:12~06:16)
+- **표준을 AI에게 맡기고 안 보는 것이 바이브 코딩이다.** 진행자의 습관에 대한 평으로 전해진다: *"잘하라고는 하는데 어떻게 잘하는지는 관심이 없는 거죠."*(07:01~07:03)
+- **언어 대신 단어, 단어는 책에서.** *"배워야 할 건 프로그래밍 언어가 아니라 이런 단어입니다."*(12:13~12:15) *"그가 꼽은 책은 소프트웨어 설계의 철학, 실용주의 프로그래머, 페더스의 책 리팩토링, 익스트림 프로그래밍입니다."*(12:46~12:52)
+- **이력(이 위키에 처음 들어옴).** *"매트 자신도 컴퓨터 공학 전공이 아닙니다. 연극을 전공하고 6년 동안 발성 코치로 일하다 2015년에 독학으로 넘어왔습니다."*(12:57~13:03)
+- **태도.** *"매트가 가장 많이 한 말은 케어, 신경 쓴다는 말이었습니다."*(13:06~13:08)
+- ⚠️ 핵심 답 셋이 무캡션이다 — AI가 전략을 못 하는 이유(00:51~01:37) · 높은 노력 수준이 왜 해로운지(05:30~06:01) · 무엇을 배워야 하느냐는 물음의 답(11:35~12:13). 적지 않았다.

@@ -6,9 +6,9 @@ tags: [ai-research, scaling, computation, history-of-ai, sutton]
 aliases: [Bitter Lesson]
 related: [agent-harness-design, brain-hands-decoupling, signal-layer, agentic-sites, agent-distributed-systems, verifiable-goals, agent-skills, flutter, transformer, in-context-learning, compute-constrained-growth, agi-definition, agent-collaboration-as-search, privacy-auto-mode, ai-slop, taste-vs-judgment, human-readable-folder]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-thariq-shihipar-human-folder-unacceptable]
+sources: [anthropic-managed-agents, tech-bridge-signal-layer, tech-bridge-agents-as-distributed-systems, tech-bridge-flutter-ai-workflow, tech-bridge-karpathy-transformers-stanford, tech-bridge-altman-agi-superintelligence, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-to-agent-as-search, tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 created: 2026-05-25
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # The Bitter Lesson
@@ -225,3 +225,15 @@ Huang의 확장은 위 Ghahramani의 조건부(*"판돈이 크면 명시적 확�
 - **질문의 형태로 남긴다.** *"AGI를 믿으면서도 사람을 중심에 둘 수는 없을까?"*(03:23~03:27) 쓴 교훈을 부정하지 않는다 — 하네스가 대부분 사라질 것이라는 전망은 그대로 둔다([[harness-pruning]]). 달라진 것은 거기서 끌어내는 처방이다: *"모델이 무엇을 잘 쓰는지 맞추지 말고 좋은 소프트웨어를 내놓는 최선의 방법을 고민하자는 것입니다."*(10:10~10:14)
 - 이 페이지의 계보에서: 9월 [[tech-bridge-rlhf-assistance-vs-automation]]이 쓴 교훈을 반대 방향으로 인용한 첫 사례였다면, 이번은 **같은 방향으로 믿으면서 그 적용 범위를 줄이는** 사례다 — 모델 안에 사람의 구조를 넣지 말라는 것과, 사람이 읽을 산출물의 형식을 사람이 정하는 것은 다른 층의 일이라는 구분. → [[human-readable-folder]]
 - 쇼고스 밈이 같이 나온다: *"웃는 얼굴 가면을 쓴 촉수 괴물로 AI를 속을 알 수 없는 외계 지능에 빗댄 밈입니다."*(02:47~02:51) ⚠️ 그가 이 그림으로 무엇을 말했는지는 무캡션.
+
+## 2026-11-24 — 창업의 *비밀* 이 된 같은 관찰: Big Blob of Compute ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+[[anthropic|Anthropic]] 창업사 해설은 창업자들이 2018년 [[openai|OpenAI]]에서 본 것을 *비밀* 이라 부른다. Sutton의 이름은 나오지 않지만 내용은 이 페이지와 같은 관찰이다(위키의 연결). ⚠️ 해설 전달이다 — 바탕은 회사가 만든 다큐 *The making of Anthropic* 이고(위키 미열람) **창업자 원음은 캡션에 한 줄도 없다.** 인용은 전부 한국어 내레이션.
+
+- 당시의 통념: *"그래서 계획하고 추론하고 도구를 쓰는 법은 따로 가르쳐야 한다고 보는 사람이 많았습니다."*(00:46~00:50)
+- ⭐ [[dario-amodei|Dario Amodei]]가 붙인 이름: *"빅 블롭 오브 컴퓨트, 거대한 컴퓨터 덩어리입니다."*(00:56~00:58)[=Big Blob of Compute]
+- 내용: *"모델을 키우고 데이터를 더 넣으면 지능이 예측 가능한 선을 따라 올라간다."*(01:26~01:29) *"키울 때마다 가르친 적 없는 능력이 새로 나타난다."*(01:31~01:33)
+- *"이 관찰은 2020년 스케일링 법칙 논문으로 정리됩니다."*(01:36~01:39)
+- 두 방향의 결론: 병을 없앨 수 있다는 상상과, *"하지만 같은 선을 따라가면 반대쪽 결론도 나옵니다."*(01:56~01:58) 해설의 맺음: *"비밀을 끝까지 본 사람들은 그래서 위험하다는 것까지 봤습니다."*(10:44~10:46)
+
+[[tech-bridge-altman-g20-economic-boom]]의 *설립 결정으로서의 스케일링 법칙* 과 나란히 놓인다 — 두 회사의 창업 서사가 같은 관찰에서 출발하고, 이 소스는 거기에 **같은 선이 위험의 근거이기도 하다** 는 읽기를 붙인다. ⚠️ Dario의 원음(01:01~01:23)은 무캡션.

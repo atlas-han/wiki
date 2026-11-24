@@ -5,9 +5,9 @@ category: person
 tags: [anthropic, co-founder, claude, opus]
 aliases: [톰 브라운, nottombrown]
 links: []
-sources: [tech-bridge-white-house-superintelligence-panel]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-11-24
 ---
 
 # Tom Brown
@@ -26,3 +26,12 @@ updated: 2026-10-09
 ## References
 
 - [[tech-bridge-white-house-superintelligence-panel]] · [[anthropic]] · [[claude-opus-5-5]]
+
+## 2026-11-24 — 창업 초기의 역할과 스케일링 법칙 논문 ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+[[anthropic|Anthropic]] 창업사 해설에 이름이 두 번 나온다. ⚠️ 해설 전달이다 — 바탕은 회사가 만든 다큐 *The making of Anthropic* 이고(위키 미열람) **창업자 원음은 캡션에 한 줄도 없다.** 인용은 전부 한국어 내레이션.
+
+- 2020년 스케일링 법칙 논문의 저자 명단: *"샘 맥캔들리시, 톰 브라운, 다리오 아모데이가 함께 올라 있습니다."*(01:41~01:45) ⚠️ 논문 제목은 캡션에 없다.
+- 초기의 일: *"톰 브라운은 AWS 클러스터를 구해 왔고 다리오는 투자를, 다니엘라는 채용을 맡았습니다."*(04:04~04:10) — 해설은 이를 *화려하지 않은 일* 의 예로 든다(ASR *화려하지 일을*).
+
+본인 인용은 0건이다.

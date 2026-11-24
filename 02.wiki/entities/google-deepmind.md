@@ -5,9 +5,9 @@ category: org
 tags: [frontier-lab, google, commerce, multimodal, agent]
 links:
   - "https://deepmind.google/"
-sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics, tech-bridge-hassabis-fry-creativity-future, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
+sources: [tech-bridge-multimodal-commerce-agent, tech-bridge-uncertainty-mathematics, tech-bridge-hassabis-fry-creativity-future, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
 created: 2026-09-04
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Google DeepMind
@@ -76,3 +76,14 @@ Gemini의 사후 학습을 이끄는 [[melvin-johnson|Melvin Johnson]]이 AI Eng
 - **속도.** *"올해 초엔 출시 간격이 두 세 달이었는데 7월부터 11월까지는 16주 동안 여섯 번 출시했습니다."*(10:31~10:37)
 
 ⚠️ 전부 자기 보고다. 2026-10-13 절의 [[demis-hassabis|Hassabis]] 대담과는 층이 다르다 — 그쪽은 연구 방향, 이쪽은 코딩 모델의 훈련 운영이다.
+
+## 2026-11-24 — Gemini 4 Neon: 바깥의 평이 돌아선 사례 ([[tech-bridge-theo-gemini-4-neon-capability-vs-coherency]])
+
+어제 절이 만드는 쪽의 말이었다면 이쪽은 쓰는 쪽이다. [[gemini-4|Gemini 4]] Argon · Carbon을 혹평했던 [[theo|Theo]]가 11월 18일 나온 Neon을 가장 좋아하는 모델로 꼽았다(한국어 해설 전달).
+
+- 발표에서 Theo가 짚은 한 줄: *"모델을 함께 일하기 더 좋게 만들고 있다는 문장이죠."*(01:39~01:41)
+- ⚠️ **추측**(내레이션이 그렇게 밝힌다): *"딥마인드 연구팀이 내부 엔지니어들의 요구를 큰 모델 대신 중형 모델에 먼저 시험해 봤다는 겁니다."*(09:38~09:41)
+- Theo 원음: *"because they wanted people to stop hating Gemini models so much."*(10:08~10:10) — 문장 중간부터 잡혔고 주어는 무캡션 구간에 있다.
+- *"구글은 발표에서 일부러 낮춰 말했다는 게 태호의 설명입니다."*(10:26~10:28)[=태오]
+
+어제 [[melvin-johnson|Melvin Johnson]] 발표의 *사내 10만 명이 깨뜨린 것이 다음 훈련 과제* 와 Theo의 추측(*내부 엔지니어들의 요구*)은 방향이 닮았지만, 둘을 잇는 말은 어느 소스에도 없다.

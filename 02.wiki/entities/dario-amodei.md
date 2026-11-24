@@ -6,9 +6,9 @@ tags: [anthropic, ceo, ai-safety, regulation, geopolitics]
 aliases: [다리오 아모데이]
 links:
   - https://www.anthropic.com
-sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-dario-amodei-principles-oversight]
+sources: [tech-bridge-dario-amodei-cbs-interview, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-jensen-huang-cbs-interview, tech-bridge-dario-amodei-principles-oversight, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 created: 2026-09-16
-updated: 2026-10-29
+updated: 2026-11-24
 ---
 
 # Dario Amodei
@@ -113,3 +113,15 @@ Huang은 Amodei를 **이름으로 공격하지 않는다** — *"두 랩 모두"
 | 미래 | *"wrong to have like a singular vision"* — AI는 여러 비전을 동시에 가능하게 할 물질적 풍요를 줄 뿐 → [[intelligence-abundance]] |
 
 > ⚠️ 해설이 00:32~00:57 발췌의 화자를 **"다니엘라"** 라고 부른다. 제목은 Dario다. 확정하지 않았다.
+
+## 2026-11-24 — 창업 서사 속의 Dario: Big Blob of Compute와 두 결론 ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+[[anthropic|Anthropic]] 창업사를 다룬 한국어 해설. ⚠️ 해설 전달이다 — 바탕은 회사가 만든 다큐 *The making of Anthropic* 이고(위키 미열람) **창업자 원음은 캡션에 한 줄도 없다.** 인용은 전부 한국어 내레이션. **본인 인용은 0건이다.**
+
+- ⭐ 이름 붙인 관찰: *"다리오 아모데이는 다른 흐름을 봤습니다."*(00:53~00:54) *"빅 블롭 오브 컴퓨트, 거대한 컴퓨터 덩어리입니다."*(00:56~00:58)[=Big Blob of Compute] ⚠️ 본인 설명(01:01~01:23)은 무캡션. → [[sutton-bitter-lesson]]
+- 2020년 스케일링 법칙 논문의 저자 가운데 하나로 꼽힌다(*"샘 맥캔들리시, 톰 브라운, 다리오 아모데이가 함께 올라 있습니다."*(01:41~01:45)).
+- 좋은 쪽의 상상: *"다리오는 암 발생률을 90% 줄일 수도 있다고 상상했습니다."*(01:49~01:51) *"심장병과 비만, 주요 감염병이 과거의 일이 될 수도 있다고요."*(01:51~01:55) 반대쪽: *"하지만 같은 선을 따라가면 반대쪽 결론도 나옵니다."*(01:56~01:58)
+- 초기의 역할은 투자 유치였다(*"다리오는 투자를, 다니엘라는 채용을 맡았습니다."*(04:06~04:10)).
+- Project Glasswing을 낸 날의 글(해설의 번역): *"사이버는 최전선 AI 모델이 낳은 첫 번째 명백한 위험이지만 마지막은 아닐 것이다."*(09:22~09:27) ⚠️ 원문 · 제목 · 출처는 캡션에 없다. → [[project-glasswing]]
+
+위 CBS 인터뷰의 *멈추지 말고 늦추자* 와 같은 방향의 말이 여기서는 회사의 교훈으로 나온다: *"뒤처진 시절을 겪으며 배운 것은 안전 연구도 가장 강한 모델을 가졌을 때 가장 잘 된다는 점입니다."*(07:23~07:27) — 누구의 말인지는 캡션으로 알 수 없다. → [[race-to-the-top]]

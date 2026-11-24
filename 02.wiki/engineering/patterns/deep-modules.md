@@ -4,11 +4,11 @@ type: engineering
 category: pattern
 tags: [software-design, modularity, interfaces, testing, ousterhout, coding-agents]
 aliases: [deep module, 딥 모듈, 얕은 모듈, shallow module, locality, leverage, seam]
-related: [structure-sensitive-tests, codebase-gardening, refactoring, technical-debt, test-harness-vs-test-authoring, self-contained-systems]
+related: [structure-sensitive-tests, codebase-gardening, refactoring, technical-debt, test-harness-vs-test-authoring, self-contained-systems, tactical-vs-strategic-programming]
 first-seen: tech-bridge-pocock-pr-bottleneck
-sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-g2i-generation-cheap-evaluation-expensive]
+sources: [tech-bridge-pocock-pr-bottleneck, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
 created: 2026-10-09
-updated: 2026-10-16
+updated: 2026-11-24
 ---
 
 # 깊은 모듈
@@ -66,3 +66,15 @@ updated: 2026-10-16
 - [[tech-bridge-pocock-pr-bottleneck]] · [[matt-pocock]]
 - John Ousterhout, *A Philosophy of Software Design* (원전, ⚠️ 미확보)
 - 관련: [[structure-sensitive-tests]] · [[codebase-gardening]] · [[self-contained-systems]] · [[refactoring]] · [[hard-vs-soft-enforcement]]
+
+## 2026-11-24 — *그 방은 불을 꺼도 된다*: 테스트의 입구와 아키텍처 개선 스킬 ([[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]])
+
+[[matt-pocock|Matt Pocock]]의 NetworkChuck 대담 해설(내레이션 전달, 원음 무캡션)에서 딥 모듈이 테스트 문제의 답으로 다시 나온다.
+
+- 문제: *"구현을 그대로 따라하는 테스트가 쉽게 나오기 때문입니다."*(10:05~10:07) → [[structure-sensitive-tests]]
+- 처방: *"대신 큰 덩어리를 모듈 하나로 묶고 바깥에 좁은 입구 하나만 냅니다. 테스트는 그 입구로 말합니다."*(10:17~10:21) *"오스트아웃트가 딥 모듈이라 부른 구조입니다."*(10:23~10:25)[=Ousterhout]
+- ⭐ 새 비유: *"그러면 모듈 안은 마음껏 바꿔도 됩니다. 메트 표현으로는 그 방은 불을 꺼도 되는 거죠."*(10:26~10:30) — 모듈 단위로 사람의 주의를 끄는 것이다. 공장 전체의 불을 끄는 것과는 구별한다: *"대신 방마다 밝기를 조절하는 스위치를 달자는 겁니다."*(10:36~10:38) → [[software-factory]]
+- 도구화: *"코드베이스를 이런 모양으로 바꿔주는 스킬이 임프루브 코드베이스 아키텍처입니다."*(10:39~10:42) 보고서의 제안 — *"흩어진 경로를 깊은 모듈 하나 뒤로 모으자고 제안합니다."*(10:50~10:52) 이 페이지 *도구화* 절의 실행 장면이다. → [[mattpocock-skills]]
+- 같은 책에서 온 다른 구분(전술 / 전략) → [[tactical-vs-strategic-programming]](신규)
+
+⚠️ 보고서의 나머지(10:55~11:21)는 무캡션이다. 스킬 이름의 철자는 ASR을 옮긴 추정이다.

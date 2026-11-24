@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-20
+updated: 2026-11-24
 ---
 
 # Anthropic
@@ -263,3 +263,17 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - 해설이 붙인 의심: *"회사가 투자자에게 자기 제품이 위험하다고 쓰는 건 드문 일입니다. 그래서 사실은 기술자랑이 아니냐는 의심도 나옵니다."*(04:25~04:31) → [[regulatory-capture]]. ⚠️ 이에 대한 Gates의 답(04:35~04:56)은 무캡션.
 
 제출 날짜 · 공모 조건 · 상장 여부는 이 소스에 없다.
+
+## 2026-11-24 — 창업사: 비밀 · 공익법인 · 뒤처진 시절 · Mythos ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+공동 창업자 일곱 명의 인터뷰를 따라간 한국어 해설로 **이 페이지에 회사의 연표가 처음 들어온다.** ⚠️ 해설 전달이다 — 바탕은 회사가 만든 다큐 *The making of Anthropic* 이고(위키 미열람) **창업자 원음은 캡션에 한 줄도 없다.** 인용은 전부 한국어 내레이션.
+
+- **출발.** *"2018년 훗날 엔트로픽을 세울 사람들은 모두 오픈 AI에 있었습니다."*(00:33~00:36)[=Anthropic · [[openai|OpenAI]]] 그들이 본 것: *"모델을 키우고 데이터를 더 넣으면 지능이 예측 가능한 선을 따라 올라간다."*(01:26~01:29) *"이것이 그들이 본 비밀이었습니다."*(01:34) → [[sutton-bitter-lesson]]
+- **형태.** *"2021년 1월 26일 엔트로픽은 공익 법인으로 설립됩니다."*(03:27~03:29) 해설의 풀이: *"공익 법인은 이익만이 아니라 정관에 적은 공익 목적에도 책임을 지는 회사 형태입니다."*(03:15~03:19) 미션 문장은 *"미션은 인류의 장기적 이익을 위한 AI 개발."*(03:23~03:25)
+- **초기.** *"그때 엔트로픽은 회사라기보다 연구실이었습니다."*(04:22~04:23) 역할은 *"톰 브라운은 AWS 클러스터를 구해 왔고 다리오는 투자를, 다니엘라는 채용을 맡았습니다."*(04:04~04:10) 구호는 *"당시 구호는 도움이 되고 해롭지 않고 정직한 비서였습니다."*(04:47~04:50)
+- **Claude.** *"쓸만한 모델이 나옵니다. 처음 코드명은 주니어, 나중에 붙은 이름이 클로드입니다."*(05:21~05:25)(ASR *2022 중반*) *"2023년 3월, 클로드가 드디어 세상에 공개됩니다."*(05:57~05:59) *"자랑스러운 제품이었지만 최전선에서 한참 뒤처져 있다는 것도 분명했습니다."*(06:01~06:04)
+- **따라잡기.** 컴퓨트 확보와 *"같은 컴퓨터를 더 효과적으로 쓰게 해주는 개선, 컴퓨트 멀티플라이어를 쌓는다."*(06:40~06:44)[=compute multiplier] 이어 *"그리고 클로드 3 오퍼스가 나옵니다. 처음으로 정말 좋은 모델이었다고 합니다."*(06:49~06:53) → [[claude-code]]
+- ⭐ **교훈 셋.** *"최전선에 서야 안전 연구도 된다."*(10:51) *"옳게 하면 단기적으로 대가를 치른다."*(10:54) *"그리고 혜택은 아직 스스로 증명해야 한다."*(10:56~10:58) → [[race-to-the-top]]
+- **Mythos.** *"미토스를 일반에 풀지 않고 방어하는 쪽에 먼저 줬습니다."*(08:44~08:47) → [[project-glasswing]] · [[claude-mythos-preview]]
+
+⚠️ 당사자 진술이고 독립 확인이 없다. 회사 이름이 정해진 경위(챕터 *이름은 도메인 값으로*) · *헬리콥터 테스트* · 급여 · OpenAI를 떠난 이유는 무캡션 구간에 있거나 소스에 없다 — 적지 않는다. 제목의 Jack Clark 문장도 캡션에 없다.

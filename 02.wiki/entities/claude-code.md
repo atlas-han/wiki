@@ -4,11 +4,11 @@ type: entity
 category: product
 tags: [anthropic, agent, cli, coding-agent]
 aliases: [클로드 코드]
-sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-addy-osmani-which-claude-model, tech-bridge-fable-5-2-start-with-opus, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-thariq-shihipar-human-folder-unacceptable]
+sources: [anthropic-claude-code-auto-mode, anthropic-managed-agents, multica-karpathy-skills-claude-md, anthropic-dynamic-workflows, lum1104-understand-anything, charlychoi-claude-code-best-practices, tech-bridge-impeccable-design-steering, tech-bridge-graft-code-knowledge-graph, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-lopopolo-agent-harness, tech-bridge-jensen-huang-cbs-interview, tech-bridge-sdd-full-course, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-skill-engineering-dark-arts, tech-bridge-anthropic-dreaming-memory, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-codex-app-server, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-anthropic-30k-merges-verification, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ai-labs-token-economizer, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-addy-osmani-which-claude-model, tech-bridge-fable-5-2-start-with-opus, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-anthropic-founders-secret-making-of-anthropic]
 links:
   - "https://code.claude.com/docs"
 created: 2026-05-25
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Claude Code
@@ -294,3 +294,9 @@ Claude Code 팀에 1년 넘게 있다가 10월 말 떠난 [[thariq-shihipar|Thar
 - **쓰는 방식에 대한 경고.** 자기 게임을 통째로 맡겼더니 캐릭터가 무엇을 하는지 모르게 됐다는 고백과, 그 처방으로 내놓은 [[human-readable-folder|사람이 읽는 폴더]] — *"복잡한 기본 블록은 여전히 클로드가 만듭니다. 다만 그걸 어떻게 엮을지는 그가 읽고 고칩니다."*(10:01~10:05) 사람이 읽는 층에서는 Cursor의 Tab 자동 완성을 많이 쓴다고 한다(09:18~09:20).
 
 ⚠️ 제품의 현재 방침이 아니라 떠난 사람의 회고다. Anthropic의 공식 입장은 이 소스에 없다.
+
+## 2026-11-24 — 회사 연표에서의 자리: 3.5 Sonnet 다음 ([[tech-bridge-anthropic-founders-secret-making-of-anthropic]])
+
+[[anthropic|Anthropic]] 창업사 해설이 이 도구를 모델 계보의 결과로 놓는다: *"몇 달 뒤 클로드 3.5 소네트부터는 모델이 프로그래밍에 쓸만해졌습니다."*(06:55~06:57) 그 뒤에 *"나온 도구가 클로드 코드입니다."*(06:59~07:02) 제품 방향 논쟁은 창업 초기부터 있었다고 한다 — *"순수한 챗봇이냐, 소프트웨어 엔지니어링이냐."*(04:33~04:35) *"결론은 둘 다 잘해야 한다는 것이었습니다."*(04:36~04:38)
+
+⚠️ 해설 전달. 이어지는 창업자 발언(07:09~07:23)은 무캡션이고 출시 시점은 캡션에 없다.

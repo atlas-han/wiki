@@ -204,8 +204,11 @@ sources:
   - tech-bridge-walden-yan-cognition-no-laptop-development
   - tech-bridge-thariq-shihipar-human-folder-unacceptable
   - tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication
+  - tech-bridge-theo-gemini-4-neon-capability-vs-coherency
+  - tech-bridge-anthropic-founders-secret-making-of-anthropic
+  - tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages
 created: 2026-06-03
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 
 # Tech Bridge
@@ -1927,3 +1930,33 @@ updated: 2026-11-23
 - 게시 시각 **11-23 07:00 KST**(`upload_date`는 UTC 기준 20261122). 설명란의 출처 넷(원본 발표 `fTHByDwTxGM` · *Introducing Gemini 4 Hydrogen* · METR 글 · Baker et al. 논문)은 미열람.
 
 **멤버 전용**: 신규 없음. `jMzmFrwfYHk`(*우리는 세상이 모르는 비밀을 알았다 | 앤트로픽 창업자들*, 11:08, 목록 `upload_date` 20261121) 지속 — 목록 줄 · 단건 조회 모두 `subscriber_only`. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 목록은 둘. 목록 20편 요청 → **20줄**(stderr ERROR 없음).
+
+## 2026-11-23 업로드 — Theo(Gemini 4 Neon 리뷰) · 앤트로픽 창업자들(회사 다큐) · Matt Pocock(NetworkChuck 대담) (2026-11-24 ingest)
+
+[[tech-bridge-theo-gemini-4-neon-capability-vs-coherency|구글 모델을 욕하던 개발자의 새 최애, Gemini 4 Neon | Theo]](`7gF_S-mzsnM`, 11:02, 공식 챕터 11) — 한국어 해설, 구글 모델을 혹평해 온 Theo가 Gemini 4 Neon을 가장 좋아하는 모델로 꼽은 영상을 발표 글 · Artificial Analysis 기록과 구분해 가며 따라간다 ([[theo]] · [[gemini-4]] · [[capability-vs-coherency]](신규) · [[openai-astra]] · [[claude-opus-5-5]] · [[fable-5-2]] · [[antigravity]] · [[google-deepmind]] · [[model-temperament-routing]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`의 내레이션 자리는 더빙의 ASR(인용하지 않음).
+- ⭐ **Theo의 영어 원음이 두 곳 잡혔다**(10:08~10:24 · 10:40~10:52, 두 트랙 같은 글자) — 11-20~11-23의 네 편이 본인 인용 0건이었던 것과 다르다. 나머지 발췌 자리 열한 곳(약 3분 45초)은 무캡션. 인용 112건 가운데 본인 원음은 이 두 대목에서만 나왔고 나머지는 ko-orig 내레이션.
+- ⭐ 채널이 [[theo|Theo]]를 다룬 **네 번째 편**(11-10 정원사 · 11-15 Fable vs Opus · 11-18 Astra 반응 모음)이고, 어제 ingest한 [[melvin-johnson|Melvin Johnson]] 편(Gemini 4를 만든 쪽)에 이어 **같은 모델 계열을 바깥 사용자가 평한 편** 이다. 두 소스를 잇는 인과는 어느 쪽도 말하지 않는다.
+- ⚠️ 판독하지 못한 것: 도입부의 *제미나이 4.5 네온*(나머지는 전부 Gemini 4 Neon) · 보안 시험 이름(*그레이스원*) · *GPT 6 루나* · *MDc* · PC 이름(*우드리게*) · *TS 라이저* · Astra가 매달린 기간(*7을 넘게*) · *낮다고 / 낫다고*(08:52~08:54). *절반 넘게 줄였다* 의 대상은 무캡션 구간에 있어 내용 미상.
+- 게시 시각 **11-23 18:00 KST**(`upload_date` 20261123). 설명란의 자료 여덟(원본 영상 `HQlk9RGx2dk` · Google 발표 글 · 모델 카드 · Artificial Analysis · Pichai X · Theo X 세 편)은 미열람.
+
+[[tech-bridge-anthropic-founders-secret-making-of-anthropic|우리는 세상이 모르는 비밀을 알았다 | 앤트로픽 창업자들]](`jMzmFrwfYHk`, 11:08, 공식 챕터 10) — 한국어 해설, Anthropic 공식 다큐 *The making of Anthropic* 의 공동 창업자 일곱 명 인터뷰를 따라 회사의 시작부터 Mythos를 일반에 풀지 않은 결정까지 ([[anthropic]] · [[dario-amodei]] · [[tom-brown]] · [[project-glasswing]] · [[claude-mythos-preview]] · [[claude-code]] · [[sutton-bitter-lesson]] · [[race-to-the-top]])
+
+- **멤버 전용 → 공개.** 2026-11-22 `subscriber_only`로 처음 확인(목록 `upload_date` 20261121), 11-23에도 멤버 전용, **2026-11-24 `public` 확인** — `upload_date` 20261123, 게시 시각 11-23 22:00 KST. 제목은 그대로.
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`는 전부 더빙의 ASR(인용하지 않음 — *공익 법인* → *non-profit corporation* 오역).
+- ⚠️ **창업자 인터뷰 원음은 두 트랙 모두 0줄이다.** 무캡션 스물세 곳(`gaps.py` 기준, 약 4분 40초 — 영상의 4할 남짓). **창업자 본인 인용 0건**, 인용 121건은 전부 ko-orig 내레이션. **제목의 Jack Clark 문장도 캡션에 없고**(설명란에만) 챕터 제목 *이름은 도메인 값으로* · *헬리콥터 테스트* 의 내용도 무캡션 구간에 있어 적지 않았다.
+- ⭐ 채널에서 **Anthropic의 창업사를 다룬 첫 소스** — 2018년 OpenAI → 2020년 스케일링 법칙 논문 → 2021-01-26 공익법인 → 2022년 중반 코드명 주니어 → 2023년 3월 Claude → Claude 3 Opus → 3.5 Sonnet → Claude Code → 2026년 4월 Mythos · Project Glasswing. 바탕이 회사의 자기 소개 다큐라 당사자 진술이다.
+- ⚠️ 판독하지 못한 것: 00:26~00:28(*웨이드를*) — 인용하지 않았다. *컴퓨터* ↔ *컴퓨트*(00:56 · 06:38) · *형태의 회사가*(02:40)는 추정 표시. Glasswing 규모(출시 파트너 + 40곳 넘는 조직)는 [[project-glasswing]] 본문의 약 50곳과 세는 방식이 다르다 — 해소하지 않았다.
+- 설명란의 출처 둘(원본 다큐 `sof3vW4mHTs` · Project Glasswing 페이지)은 미열람.
+
+[[tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages|프로그래밍 언어 대신 배워야 할 것 | Matt Pocock]](`T8ccKI9Wn2E`, 13:37, 공식 챕터 10) — 한국어 해설, NetworkChuck과 나눈 2시간 대담에서 Matt Pocock이 보여 준 작업 방식을 순서대로 따라간다 ([[tactical-vs-strategic-programming]](신규) · [[matt-pocock]] · [[mattpocock-skills]] · [[grill-with-docs]] · [[context-rot]] · [[reasoning-effort-levels]] · [[risk-proportional-human-review]] · [[agent-trust-curve]] · [[hard-vs-soft-enforcement]] · [[structure-sensitive-tests]] · [[deep-modules]] · [[software-factory]] · [[ai-assisted-learning]])
+
+- 구성: **Korean original + 영어 더빙**(메타 `language`=`en`), `ko` = `ko-orig`(`variant=gemini`). `en-orig`의 내레이션 자리는 더빙의 ASR(인용하지 않음 — *그릴링* → *Grit-ring*, 02:01~02:36 타이밍 밀림).
+- ⚠️ **대담 원음은 두 트랙 모두 0줄이다** — 11-20 Zechner 편 · 11-21 Pocock 편 · 11-22 Thariq 편과 같은 배치. 발췌 자리 열다섯 곳(약 4분 32초)이 무캡션이고 **Matt Pocock · 진행자 본인 인용은 0건**, 인용 172건은 전부 ko-orig 내레이션이다(기계 대조 불일치 0).
+- ⚠️ **핵심 답 넷이 그 안에 있다** — AI가 전략을 못 하는 이유(00:51~01:37) · 높은 노력 수준이 왜 해로운지(05:30~06:01, 챕터 제목의 주장) · 머지 위험을 매기는 법(07:20~08:10) · 무엇을 배워야 하느냐는 물음의 답(11:35~12:13). 제목 물음의 답 *아니요* 도 설명란에만 있다. 적지 않았다.
+- ⭐ 채널의 Pocock 소스 가운데 **작업 루프에 이유를 붙인 첫 편** — Ousterhout의 전술 / 전략 구분으로 그릴링 · 용어집 · ADR · 15만 토큰 · 머지 위험 · 린트 규칙 · 딥 모듈을 한 줄에 놓는다. 본인 이력(연극 전공 · 발성 코치 6년 · 2015년 독학 전향)도 처음 들어왔다.
+- ⚠️ 판독하지 못한 것: *신뢰의 사다리* 를 말한 사람의 이름(ko-orig *도런 테네마*, 더빙 *Doron Tenne* — Lauren Tan 추정, 확정하지 않음) · *안 말에 안 된다고*(01:58) · *PR 스기니스는*(07:13) · teach 스킬 이름 줄(12:34). *덱소 씨* 는 Dex Horthy 추정.
+- 게시 시각 **11-24 07:00 KST**(`upload_date`는 UTC 기준 20261123). 설명란의 출처 둘(원본 대담 `mU8WKII1gpk` · `mattpocock/skills`)은 미열람.
+
+**멤버 전용**: 신규 없음. ✅ `jMzmFrwfYHk` **`public` 전환 확인, ingest**(11-22 멤버 전용 확인 → 11-24 공개, `upload_date` 20261121 → 20261123, 11-23 22:00 KST, 제목 그대로). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 목록은 다시 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음, 전부 `public`).
