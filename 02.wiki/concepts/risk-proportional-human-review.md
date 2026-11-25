@@ -6,9 +6,9 @@ tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration,
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
 related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review, human-loop-roles-relocation]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 created: 2026-09-18
-updated: 2026-11-24
+updated: 2026-11-25
 ---
 
 # 위험 비례 사람 검토
@@ -151,3 +151,14 @@ updated: 2026-11-24
 - 낮은 쪽의 빈도가 숫자로 나왔다: 아키텍처 개선 스킬이 만드는 *"이런 자동 피알은 다섯 개에 하나쯤만 직접 확인합니다."*(11:21~11:23) 그리고 도메인에 따라 달라진다는 단서 — 금융이나 의료였다면 달랐을 것이라고 덧붙였다는 전달(11:24~11:26, ASR 일부 불확실).
 
 ⚠️ **머지 위험을 누가 어떻게 매기는지에 대한 설명(07:20~08:10)은 무캡션이다.** 뒤이은 *양쪽 문은 훑어보고 한쪽 문은 천천히 엽니다*(08:11~08:13)는 two-way / one-way door로 읽히나 글자가 달라 인용하지 않았다.
+
+## 2026-11-25 — 사람의 검토를 *어디에* 넣을까: 긴 고리와 서명 ([[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+IBM Technology 영상([[grace-ableidinger|Grace Ableidinger]])의 한국어 해설. 입문 정리이고 측정은 없다. ⚠️ 화자 원음 무캡션.
+
+- 물음이 이 페이지와 같다: *"그럼 사람의 검토를 작업 흐름 어디에 넣어야 할까요? 여기서 에이전틱 코딩이 나옵니다."*(02:48~02:52)
+- 위험에 맞춘 자리: 안전 장치 다섯 가운데 거버넌스 — *"되돌릴 수 없거나 비용이 큰 결정에는 사람이 서명합니다."*(06:39~06:41) → [[action-reversibility]]
+- 작업으로 가른 예: 빠른 버그 수정 · 변수 이름 바꾸기는 짧은 고리로 충분할 수 있고, *"새 기능을 프로덕션에 올리거나 데이터베이스나 결제 시스템을 건드리거나 큰 리팩토링을 할 때는 내가 운전대를 잡은 에이전틱 루프가 맞습니다."*(07:47~07:55)
+- 자율과 함께 커진다: *"에이전트가 알아서 하는 일이 늘수록 테스트와 승인, 롤백, 감사 기록도 더 중요해집니다."*(08:03~08:07)
+
+→ [[vibe-vs-agentic-coding]](신규)

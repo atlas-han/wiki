@@ -6,9 +6,9 @@ tags: [automations, scheduling, webhooks, maintenance, proactive, memory]
 aliases: [automations, 예약 에이전트, 트리거 에이전트]
 related: [cloud-agent-delegation, persistent-agent-teams, agent-memory, skill-self-improvement, executable-standards, grokbot, sweeper-agent, always-on-agent-architecture, flaky-tests]
 first-seen: tech-bridge-cursor-legacy-refactoring
-sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit, tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-agent-to-agent-as-search, tech-bridge-lauren-tan-2000-prs, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-brockman-start-building-before-ready, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-codex-agents-that-dont-quit, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-09-09
-updated: 2026-11-17
+updated: 2026-11-25
 ---
 
 # 예약형 에이전트 자동화
@@ -134,3 +134,15 @@ heartbeat는 위 Cursor 정의(*"예약되거나 트리거되는 cloud agent"*)�
 ## 2026-11-17 — 15분마다 매니저에게 확인을 시킨다 ([[tech-bridge-ryan-carson-managing-20-agents]])
 
 유지보수 잡이 아니라 **감독 자체** 를 예약한 사례. [[ryan-carson|Ryan Carson]]은 매니저 에이전트가 모든 빌더 세션을 주기적으로 읽도록 15분마다 스크립트로 시킨다(03:14~03:16, ASR 판독은 설명란 근거). 이유: *"에이전트는 매번 똑같이 움직이지 않으니 믿지 말고 자동화로 못 박아 두라는 겁니다."*(03:16~03:20) 맺음의 표현으로는 *확인은 믿음이 아니라 자동화로 한다.* → [[hard-vs-soft-enforcement]]
+
+## 2026-11-25 — 시간으로 깨우면 바뀐 게 없어도 든다: 루틴 대 웹훅 ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+[[grokbot|Grok Bot]] 팀의 X 라이브를 옮긴 해설(⚠️ 내레이션 전달, 원음 무캡션)에서 예약 실행의 **값** 이 처음 주제로 나온다 — *"이날 가장 많이 나온 불만은 사용량이었습니다."*(05:27~05:28)
+
+- 구조: *"루틴은 정해진 시간마다 봇을 깨웁니다."*(06:02~06:04) *"바뀐 게 없어도 확인하는 데 사용량이 듭니다."*(06:04~06:05)
+- 만든 사람들이 권한 것은 사건으로 깨우는 쪽: *"리니어 같은 서비스에서 일이 생겼을 때만 봇을 깨우는 방식입니다."*(06:10~06:11)[=Linear, 웹훅]
+- 사건 쪽도 조건이 넓으면 같다(공식 문서, 내레이션이 옮김): *"새 메시지마다 실행하라는 식의 넓은 조건은 사용량을 먹으니 피하라고 적어두었습니다."*(06:13~06:19)
+- 실수 셋 가운데 둘째(*생각 없이 돌리기*): *"5분마다 도는 루틴을 걸어두었다면"*(07:24) 정말 필요한지 돌아보라는 [[matt-palmer|Matt Palmer]]의 말(ASR 판독 · 추정).
+- 하네스 쪽 개선: *"플랜 전체로는 7%, 루틴 실행은 최대 15% 더 쓸 수 있다는 내용이었습니다."*(06:25~06:30) ⚠️ 기준 미상 · 동료의 글 미열람.
+
+위 11-15 절(heartbeat 30분) · 11-17 절(15분마다 확인)은 주기를 **짧게 거는** 사례였다. 이 절은 같은 장치의 반대쪽 — 주기가 곧 비용이라는 것 — 이다. 주기와 비용의 관계를 잰 숫자는 이 소스에 없다.

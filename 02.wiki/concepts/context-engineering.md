@@ -5,9 +5,9 @@ category: technique
 tags: [llm, context-window, agent, prompting]
 related: [context-resets-and-compaction, context-anxiety, agent-harness-design, harness-engineering, agi-definition, agent-org-adoption, agent-knowledge-sourcing, long-context-agents, retrieval-augmented-generation, agent-memory, agent-collaboration-as-search, company-brain, shift-left-interventions, tools-and-context-over-harness, token-minimization-trap, context-rot, toolbox-pattern, agent-dreaming, production-memory-guardrails, prompt-caching, context-failure-modes]
 first-seen: anthropic-managed-agents
-sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes]
+sources: [anthropic-managed-agents, anthropic-harness-design-long-running-apps, tech-bridge-harness-engineering, tech-bridge-multimodal-commerce-agent, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-agent-knowledge-four-ways, tech-bridge-minimax-m3-long-context, tech-bridge-agent-to-agent-as-search, tech-bridge-company-brain-security, tech-bridge-graft-code-knowledge-graph, tech-bridge-voice-agent-failure-modes, tech-bridge-vercel-eve-filesystem-agent, tech-bridge-lopopolo-agent-harness, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-anthropic-dreaming-memory, tech-bridge-factory-software-factory, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 created: 2026-05-25
-updated: 2026-10-20
+updated: 2026-11-25
 ---
 
 # Context Engineering
@@ -217,3 +217,15 @@ IBM 계열의 세 번째 컨텍스트 편이다. [[martin-keen|Martin Keen]](⚠
 실패 넷(poisoning · distraction · confusion · clash)과 처방 넷(validate · compact · curate · prune)은 → [[context-failure-modes]]. 결론은 *"all four fixes work by throwing something away"*(09:46~09:54)다.
 
 ⚠️ 축을 섞지 않는다. 09-08 [[tech-bridge-agent-knowledge-four-ways]]의 *쏟아붓기의 세 가지 실패 양상*은 **지식 조달** 축(무엇을 가져와 넣을까)이고, 이번 넷은 **창 위생** 축(한 실행 안에서 창이 어떻게 망가지나)이다. 09-23 [[token-minimization-trap]]은 반대로 **잘라내기**의 실패다. 세 분류의 대조표는 [[context-failure-modes]]에 있다.
+
+## 2026-11-25 — *많은* 컨텍스트가 아니라 *걸러 낸* 컨텍스트 ([[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+IBM Technology 영상([[grace-ableidinger|Grace Ableidinger]])의 한국어 해설. ⚠️ **컨텍스트가 많으면 왜 안 되는지에 대한 화자의 설명(05:08~05:33)은 무캡션** 이라 결론과 방법만 남아 있다.
+
+- 정의: *"컨텍스트는 모델이 답을 낼 때 기대는 정보입니다. 코딩 에이전트라면 파일, 테스트, 문서 그리고 내가 쓴 프롬프트까지요."*(04:57~05:05)
+- 결론: *"그래서 목표는 많은 컨텍스트가 아니라 걸러낸 컨텍스트입니다. 판서의 깔때기처럼요."*(05:33~05:37)
+- 방법 둘: *"하나는 에이전트의 작업 흐름에 사람이 확인하는 단계를 더 넣는 것. 다른 하나는 앞에서 본 서브 에이전트입니다."*(05:38~05:44)
+- 서브에이전트의 몫: 코드베이스 구석을 파고든 뒤 짧은 요약만 들고 돌아와 *"메인 에이전트는 수많은 파일에 묻히지 않고 계획과 지위에만 집중합니다."*(05:50~05:54)[=지휘]
+- IBM 글(ASR 추정 판독): *"에이전트는 강력하지만 독심술사는 아니다. 성공 기준을 분명히 정하고 최신 코드와 설계 문서를 건네라고요."*(05:57~06:03)
+
+해설은 화자가 **사람의 분별력** 을 컨텍스트로 설명한다고 옮긴다 — 무엇을 넣을지 고르는 일이 사람의 몫이라는 뜻으로 읽힌다(위키의 읽기). → [[vibe-vs-agentic-coding]](신규)

@@ -5,9 +5,9 @@ category: org
 tags: [ibm, enterprise, education, content]
 links:
   - https://www.youtube.com/@IBMTechnology
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-sdd-vs-waterfall]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-ai-era-code-quality, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-tokenmaxxing-to-valuemaxxing, tech-bridge-agents-as-catalyst, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-jev-calibrated-decisions, tech-bridge-prompt-to-production, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-sdd-vs-waterfall, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 created: 2026-09-08
-updated: 2026-11-12
+updated: 2026-11-25
 ---
 
 # IBM
@@ -230,3 +230,15 @@ updated: 2026-11-12
 - IBM의 정의: *"개발을 시작하기 전에 상세한 명세를 쓰고 합의하는 방법론"*(00:58~01:00)
 - IBM의 답: 얼려서 넘기면 *이름만 바뀐 워터폴*, 고리로 돌면 다르다 → [[spec-driven-development]] · [[waterfall-model]]
 - IBM Think 글: *"완벽한 최종본보다 가볍고 진화하는 스펙을 택하라."*(07:35~07:37)
+
+## 열네 번째 소스 — 바이브 코딩과 에이전틱 코딩, 영상과 Think 글이 함께 쓰이다 (2026-11-25 · [[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+IBM Technology 영상(`h4tHDFCPmQE`)을 [[tech-bridge|Tech Bridge]]가 한국어 해설의 뼈대로 쓴 두 번째 편이다(첫 편은 11-12의 [[tech-bridge-sdd-vs-waterfall]]). 화자는 Red Hat의 [[grace-ableidinger|Grace Ableidinger]](신규) — 라이트보드 형식이다. ⚠️ 화자 원음 발췌 아홉 곳은 무캡션이고, 영어 더빙은 화자를 다른 이름으로 읽는다.
+
+- 해설은 영상 옆에 **IBM Think 글** *What is agentic coding?*(2026.03.27, 설명란 · 위키 미열람)을 놓고 여러 번 끌어 쓴다. 예시 요청: *"프론트 엔드에 인증을 붙이고 API를 고치고 단위 테스트까지 넣어 달라."*(03:37~03:41)
+- 글의 스펙트럼: *"한쪽 끝은 속도와 탐색이 먼저인 바이브 코딩, 그다음이 역할과 제약을 정해 에이전트를 지휘하는 에이전틱 코딩."*(03:48~03:55) → [[vibe-vs-agentic-coding]](신규)
+- 글의 표현(ASR 추정 판독): *"에이전트는 강력하지만 독심술사는 아니다. 성공 기준을 분명히 정하고 최신 코드와 설계 문서를 건네라고요."*(05:57~06:03)
+- 글의 권고(ASR 추정 판독): *"쓰기 권한을 제한하고 병합 전에 테스트를 강제하고 에이전트가 한 일을 기록하라고요."*(07:02~07:06)
+- 실력 걱정에 대한 글의 답: *"생각을 AI에 너무 많이 넘기면 기본기가 조용히 깎여 나갈 수 있고 그러니 이해를 자동화로 대신하지 말라고요."*(08:21~08:27) → [[cognitive-offloading]]
+
+IBM Technology에서 Red Hat 소속으로 소개된 화자는 [[cedric-clyburn|Cedric Clyburn]]에 이어 두 번째다. 내용은 입문 정리이고 측정은 없다.

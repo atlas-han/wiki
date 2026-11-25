@@ -3020,3 +3020,35 @@ IBM 편은 **수치·사례·자사 제품이 하나도 없는** 10분 프레이
 ### 운영 메모
 
 3편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1124/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 세 편 `check` 합계 405건(112 + 121 + 172) 불일치 0. 세 편 모두 Korean original + 영어 더빙이고 `en-orig`의 내레이션 자리는 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: 앤트로픽 창업자들 편(스물세 곳 약 4분 40초)과 Pocock 편(열다섯 곳 약 4분 32초)은 원음이 **두 트랙 모두 무캡션** 이라 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다. Theo 편은 영어 원음이 두 곳(10:08~10:24 · 10:40~10:52)만 두 트랙에 같은 글자로 잡혔고 나머지 발췌 자리 열한 곳(약 3분 45초)은 무캡션이다. 빈 구간의 내용은 적지 않았다.
+
+## [2026-11-25] ingest | Tech Bridge — 11-24 업로드 2편 (그록봇은 챗봇이 아니다 · 바이브 코딩 vs 에이전틱 코딩, 무엇을 써야 할까?)
+
+목록 `--playlist-end 20` → **20줄**(전부 `public`). ⚠️ 첫 조회는 **0줄 + `ERROR: [youtube] <id>: The page needs to be reloaded.` 20건** 이었다 — `--skip-download --ignore-no-formats-error`를 목록 조회에도 붙이자 정상(yt-dlp 2026.03.17). 신규 공개 2편: `t-R5Ep3UTg8`(11-24 18:00 KST) · `awaU-RwDdgg`(11-25 07:00 KST — 이 회차 두 시간 전, `upload_date`는 UTC 기준 20261124). 신규 멤버 전용 없음. `Yhck-x6VuLs`(목록 범위 밖 · 단건 조회 stderr ERROR *members-only*) 지속 — 건너뜀, 페이지 없음. 자막 429 없음.
+
+**신규 source 2 · entity 2 · concept 1**, 기존 페이지 보강 14개(+ tech-bridge), index **1081 → 1086**(실측 일치).
+
+- `t-R5Ep3UTg8`(10:06, 챕터 11) → [[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]]: [[grokbot|Grok Bot]]을 만든 [[lauren-tan|Lauren Tan]] · [[matt-palmer|Matt Palmer]]의 X 라이브(`doLKqG8TefU`, 11-13 금요일 밤)를 공식 문서와 맞춘 해설. `ko` = `ko-orig`(`variant=gemini`), `en-orig`는 영어 더빙 ASR로 판정. 11-24 18:00 KST 게시(`upload_date` 20261124).
+  - 신규: [[matt-palmer]]
+  - 보강: [[grokbot]](정의 · 회의 · 메일과 전화 · 주 봇 · Team Bots · 사용량 · 실수 셋 · 승인과 금고 · 사용자 사례) · [[lauren-tan]](열 번째 소스 — 봇 12개 · 50개에서 합침 · 글은 직접 쓴다) · [[manager-bot-coding-agent-split]](만든 쪽이 같은 분업을 권한다 — 점유 · 맥락의 분리) · [[cursor-cloud]](봇이 코딩을 넘기는 자리 — *끝나면 사라진다*) · [[scheduled-agent-automations]](루틴 대 웹훅 — 주기가 곧 비용) · [[persistent-agent-teams]](만든 사람은 줄였다 · 주 봇) · [[learning-by-thinking]](글은 직접 쓴다)
+  - ⚠️ **두 사람의 원음 열한 곳(ko-orig 약 3분 58초)이 두 트랙 모두 무캡션** — 본인 인용 0. 인용 109건 기계 대조 불일치 0, 전부 ko-orig 내레이션. `en-orig`는 더빙 ASR이라 쓰지 않았다(*Matt Pham* · *his integration* 등으로 옮긴다).
+  - ⚠️ **포맷 목록 미취득**: yt-dlp(2026.03.17)가 *The page needs to be reloaded* 경고를 내 `formats` 에 오디오 항목이 없고 메타 `language` 도 없다 — 오디오 트랙 구성(Korean original + 영어 더빙)은 메타가 아니라 캡션 내용으로만 판정했다. 자막 · 설명 · 챕터는 정상 취득, 429 없음.
+  - ⚠️ **무캡션에 든 내용**: 봇이 몇 개면 되는지에 대한 답의 본문(02:31~03:01) · Slack 스레드에서 버그를 고치는 흐름(03:42~04:10 — 내레이션이 *로런의 설명으로 들어보겠습니다* 라고 넘긴 자리) · 사용량 화면에서 무엇을 보라는지(05:35~06:02) · 첫째 실수의 설명(06:39~07:17) · 셋째 실수를 꺼낸 대목(07:29~07:52) · 카페 주인의 쓰임(08:20~08:40) · 맺음의 원음(09:46~09:58). 적지 않았다.
+  - ⚠️ **판독 불가 — 정하지 않음**: Lauren이 Grok Bot에 붙인 이름 *바깥 꼴*(04:42, 더빙 *outer shell* — 위키의 *바깥 루프* 와 잇지 않았다) · 회의 기능 이름 *회의인*(01:28) · *한 두 주 전화도 겁니다*(01:58 — 전화 기능의 시점) · *4 별로 걸러 보라*(05:32, 더빙 *by day*) · *슬랙과 매일 회의에*(01:17) · *첫 문장부터 긁겠습니다*(00:42) · 동료 *샘 소콜린*(더빙 *Sam Sokoline*) · 7% / 15%의 기준.
+  - ⚠️ ASR 판독: *맷 파모 · 메트 · 매트* → Matt Palmer · *로로 · 로른* → Lauren · *일을 맞는* → 맡는 · *보섹에 · 보시 · 보스로 · 서곳을* → 봇에 · 봇이 · 봇으로 · 봇을 · *지위* → 지휘(설명란) · *폰트를 너무 작게* → 봇을 너무 작게(설명란) · *필요한 짐이* → 필요한지(추정) · *내 장 연동* → 내장 연동(추정) · *보험서* → 보험사.
+  - 📎 11-19 Lightcone 편과의 차이 하나를 적어 두었다(Contradiction으로 올리지 않음): 그 편에서 *봇마다 전화번호* 는 내년의 바람이었고 이 편은 전화를 거는 기능을 이미 있는 것으로 다룬다 — 시점 차이인지 범위 차이인지 어느 쪽도 말하지 않는다. [[grokbot]] 11-03 절의 Contradiction(컴퓨터가 봇마다인가 공유인가)은 이 편의 *클라우드에 자기 컴퓨터* 한 줄로 갈리지 않아 그대로 두었다.
+  - 페이지화하지 않음: xAI(소속 표기로만 — [[grokbot]] · [[spacex]]의 원칙대로 조직 구조 추정하지 않음) · *샘 소콜린*(철자 미상, 한 문장) · Slack · Notion · Linear · GitHub · Google Meet · Zoom(연결 대상으로만) · 웹훅(→ [[scheduled-agent-automations]]의 절) · 사용자 사례의 인물들(익명). [[cloud-agent-delegation]] · [[least-privilege-connectors]] · [[agent-trust-curve]] · [[inner-outer-meta-loops]]는 소스 페이지에서 링크만 걸고 보강하지 않았다.
+- `awaU-RwDdgg`(8:50, 챕터 9) → [[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]]: IBM Technology 영상(`h4tHDFCPmQE`)에서 Red Hat의 [[grace-ableidinger|Grace Ableidinger]]가 라이트보드로 비교한 바이브 코딩과 에이전틱 코딩의 해설. `ko` = `ko-orig`(`variant=gemini`, 한국어 내레이션), `en-orig`는 영어 더빙 ASR. 11-25 07:00 KST 게시(`upload_date` 20261124 — UTC 기준).
+  - 신규: [[grace-ableidinger]] · [[vibe-vs-agentic-coding]]
+  - 보강: [[ibm]](열네 번째 소스 — 영상 + IBM Think 글, Red Hat 소속 화자 두 번째) · [[andrej-karpathy]](*바이브 코딩* 글의 내용이 처음 요약됨 · 주말 프로젝트 단서) · [[disposable-vs-durable-software]](버려도 되는 코드는 짧은 고리 · *설명해야 할 코드인가*) · [[risk-proportional-human-review]](검토를 어디에 넣을까 · 되돌릴 수 없는 결정에 서명) · [[agent-governance-layers]](안전 장치 다섯) · [[context-engineering]](걸러 낸 컨텍스트 · 서브에이전트의 요약) · [[cognitive-offloading]](*이해를 자동화로 대신하지 말라*)
+  - ⚠️ **화자 원음은 두 트랙 모두 무캡션** — en-orig 아홉 곳 약 2분 50초(00:18~00:25 · 00:55~01:09 · 02:05~02:41 · 03:10~03:36 · 04:35~04:48 · 05:08~05:33 · 06:11~06:34 · 07:12~07:30 · 08:34~08:44), ko-orig는 같은 자리가 `[음악]` 표시로 열다섯 조각. **본인 인용 0.** 인용 110건(전부 ko-orig 내레이션) 기계 대조 불일치 0. `en-orig`는 더빙 ASR이라 쓰지 않았다.
+  - ⚠️ **영어 더빙이 화자를 *Edidiong Asikpo* 로 읽는다**(00:35, ko-orig는 *그리스 에이블딩어*) — 서로 다른 이름. 제목 · 설명란 · tags의 *Grace Ableidinger* 를 따랐고 이유는 정하지 않았다. 더빙은 *에이전틱* 을 두 번 *Iterative* 로(07:10 · 07:52), *IBM 글이 드는 예는* 을 *IBM's Creed* 로 옮긴다.
+  - ⚠️ **포맷 목록 미취득**: 이 회차 yt-dlp가 영상 포맷을 받지 못해(*The page needs to be reloaded* · *Only images are available*) 오디오 트랙 구성과 메타 `language`(`None`)를 info.json으로 확인하지 못했다. 트랙 성격은 자막 내용(en-orig 첫 줄부터 내레이션의 번역)으로 판정했다.
+  - ⚠️ **무캡션에 든 내용**: 개발자들의 반응(00:55~01:09) · *리뷰* 설명(02:05~02:40) · 서브에이전트가 처음 나오는 자리(03:10~03:36) · 컨텍스트가 많으면 왜 안 되는지(05:08~05:33) · 보안 문제의 내용(06:11~06:33) · 질문 넷의 원 표현(07:12~07:30) · 화자의 마지막 조언(08:34~08:44). 적지 않았다.
+  - ⚠️ **판독 불가 — 정하지 않음**: *넘어 잘 안다고*(01:39) · *프로덕션 상세로*(01:59) · *글도 같은 말을 합니다* 가 가리키는 글(02:40) · *도끼 고를*(05:46) · 안전 장치 다섯을 꼽은 주체(*글로 꼽은*, 06:33 — 더빙 *The article lists*) · 끊긴 문장 *일이 커질수록 중요해지는*(08:01).
+  - ⚠️ ASR 판독: *에이아이와 고친 코드* → AI가 고친 코드(설명란) · *에이전트 코딩* → 에이전틱 코딩 · *라이트 모드의* → 라이트보드에(설명란) · *되게* → 대개(추정) · *오후 한 낮* → 한나절(추정) · *IBM 크리드는 얘는* → IBM 글이 드는 예는(추정) · *지위* → 지휘 · *IBM 그래프 표현도* → IBM 글의 표현도(추정) · *이런 글의 공고도 갔습니다* → 글의 권고도 같습니다(추정).
+  - 페이지화하지 않음: Red Hat(화자 소속으로만) · IBM Think 글(→ [[ibm]]) · [[openai]](Karpathy 소개 한 문장 — 보강 없음) · [[action-reversibility]] · [[context-rot]] · [[agentic-coding-maturity-curve]](링크만 — 근거 대목이 무캡션이거나 한 문장). *vibe coding* 단독 페이지는 만들지 않고 [[vibe-vs-agentic-coding]]의 alias로 넣었다.
+- [[tech-bridge]] · index · overview 갱신, iconize(오늘 파일만).
+
+### 운영 메모
+
+2편을 영상마다 fork 서브에이전트 하나씩 병렬로 돌리고(`.scratch/tb1125/<id>/`), 병합은 본 세션이 `merge_all.py` → `shared.py`로 했다. 인용은 전부 `(@)` 자리표시 → `q.py fill`, 두 편 `check` 합계 219건(109 + 110) 불일치 0. 두 편 모두 `ko` = `ko-orig`(한국어 내레이션)이고 `en-orig`의 내레이션 자리는 영어 더빙의 ASR이다(인용하지 않음). ⚠️ **트랙 배치**: 그록봇 편(열한 곳 약 3분 58초)과 Ableidinger 편(en-orig 기준 아홉 곳 약 2분 50초)은 원음이 **두 트랙 모두 무캡션** 이라 본인 인용이 0이고 인용은 전부 ko-orig 내레이션이다. 빈 구간의 내용은 적지 않았다. ⚠️ **오디오 트랙 구성 미확인** — 이 회차 yt-dlp가 *The page needs to be reloaded* 로 포맷 목록을 받지 못해 info.json에 오디오 포맷과 `language`가 없다. 더빙 여부는 캡션 내용으로만 판정했다.

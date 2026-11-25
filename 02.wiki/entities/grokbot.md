@@ -3,9 +3,9 @@ title: GrokBot
 type: entity
 category: product
 tags: [persistent-agents, messaging-ui, agent-teams, cursor]
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-cursor-legacy-refactoring, tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-09-01
-updated: 2026-11-19
+updated: 2026-11-25
 ---
 
 # GrokBot
@@ -164,3 +164,20 @@ Y Combinator Lightcone에 나온 팀(Lauren Tan · [[roman-ugarte|Roman Ugarte]]
 - **바깥 고리의 이름**: 팀에 *샌디*(철자 미상)라는 장치가 돈다 — *"하루에 수천 건씩 들어오는 고객 의견을 봅니다."*(08:08~08:10) 작은 버그면 재현 · 수정 · 병합까지. ⚠️ 원조 봇 Benny와의 관계는 말하지 않는다.
 - **내년의 바람**(Tan): *"본마다 전화번호와 신용카드까지 갖는 겁니다. 사람이 하는 일은 거의 다 할 수 있게요."*(02:09~02:13)[=봇마다]
 - **출시 기준**: *"그래서 이 팀의 기본값은 내보내지 않는 쪽입니다."*(09:47~09:48) *"안에서 반응이 엇갈리기만 해도 출시하지 않습니다."*(09:54~09:55)
+
+## 2026-11-25 — 만든 사람들의 사용법: 회의 · 전화 · 주 봇 · 웹훅, 그리고 실수 셋 ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+11-24 업로드 해설. [[lauren-tan|Lauren Tan]]과 [[matt-palmer|Matt Palmer]](신규)가 정식 버전을 발표한 주에 X 라이브로 시청자 질문에 답한 것을 공식 문서와 맞춘다. ⚠️ 두 사람의 원음은 열한 곳 전부 무캡션(본인 인용 0), 라이브 · 공식 문서 미열람 — 아래는 모두 해설 전달이다.
+
+- **시점**: *"11월 13일 금요일 밤, 그록봇 정식 버전을 발표한 주에 팀의 맷 파모와 로런 탄이 X 라이브로 시청자 질문을 받았습니다."*(00:32~00:38)[=Matt Palmer · Lauren Tan] 위 11-19 절의 *1.0판 11월 11일* 과 같은 주다.
+- **공식 문서의 정의**(내레이션이 옮김): *"그록봇은 먼저 나서서 일하는 AI 팀원이라고요."*(00:42~00:43) *"클라우드에 자기 컴퓨터가 있어서 브라우저와 터미널로 사람이 하는 일을 똑같이 할 수 있다는 겁니다."*(00:46~00:49) ⚠️ 위 11-03 절의 Contradiction(컴퓨터가 봇마다인가 공유인가)은 이 문장으로 갈리지 않는다.
+- **회의**: *"그록봇이 구글 미트나 줌 회의에 대신 들어가 회의록을 씁니다."*(01:28~01:32) 회의 중에 Notion · Slack을 뒤져 달라고 시킬 수 있다. 기능 이름은 ASR로 판독되지 않는다.
+- **메일 · 전화**: 봇마다 *"mail.grokbot.com 주소가 생기고"*(01:56~01:58) 전화를 건다 — 차량국이나 보험사에 걸어 *"자동 응답 메뉴로 넘기고 대기열에서 기다립니다."*(02:06~02:08) 상담원이 받으면 내 휴대폰으로 넘겨받는다. ⚠️ 위 11-19 절에서 *봇마다 전화번호* 는 내년의 바람이었다 — 시점 차이인지 범위 차이인지는 어느 쪽도 말하지 않는다. 전화 기능이 언제 생겼는지도 판독되지 않는다.
+- **주 봇**: *"그리고 이젠 사이드바에 별표가 붙는 주 봇을 정할 수 있습니다."*(03:13~03:15) *"공식 문서를 보면 팀 봇은 주 봇이 될 수 없습니다."*(03:20~03:22)
+- **Team Bots**: *"팀이나 엔터프라이즈 플랜에서는 잘 만든 봇을 팀 봇으로 공유할 수 있습니다."*(03:28~03:33) Slack 스레드에서 불러 버그를 고치게 한다(그 흐름의 설명은 무캡션).
+- **코딩은 넘긴다**: *"그록 봇이 코딩을 직접 하지 않고 커서의 클라우드 에이전트에게 맡기는 겁니다."*(04:22~04:25) → [[manager-bot-coding-agent-split]] · [[cursor-cloud]]
+- **사용량**: *"이날 가장 많이 나온 불만은 사용량이었습니다."*(05:27~05:28) 루틴은 바뀐 것이 없어도 깨어나는 만큼 든다 → 웹훅을 권한다. 그날 아침 하네스를 손봐 *"플랜 전체로는 7%, 루틴 실행은 최대 15% 더 쓸 수 있다는 내용이었습니다."*(06:25~06:30)(동료의 글, 기준 미상) → [[scheduled-agent-automations]]
+- **실수 셋**: *"작게 쓰기, 생각 없이 돌리기, 생각까지 맡기기."*(08:04~08:06)
+- **승인과 금고**: 내장 연동은 *"보내기 전에 늘 승인을 받는다고 답했습니다."*(09:22~09:23) *"비밀번호는 봇이 보지 못하는 금고에 넣습니다."*(09:25~09:27) ⚠️ 위 11-03 절의 사용자 불편(자격증명을 봇이 쥔다 · vault가 보이지 않는다)에 대한 답은 아니다 — 이 편은 그 불만을 다루지 않는다.
+- **사용자 사례**(자기 보고): 고교 풋볼 스카우트가 X에서 선수를 찾아 *"3일만에 3,000명 넘게 구글 시트에 모았습니다."*(09:04~09:05) · 명함 사진 → 스프레드시트 · 장학금 찾는 루틴 · 병원 청구서 대조 · 트럭 정비 봇 · 샌프란시스코의 카페 주인.
+- **소속 표기**: 설명란은 *xAI의 그록봇* 이라고 쓰고 공식 문서는 docs.x.ai다. 위 11-19 절과 같다 — 조직 구조는 추정하지 않는다.

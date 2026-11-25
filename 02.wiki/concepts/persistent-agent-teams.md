@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing, always-on-agent-architecture]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-09-01
-updated: 2026-11-19
+updated: 2026-11-25
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -225,3 +225,15 @@ Grok Bot 팀의 Lightcone 인터뷰 해설(⚠️ 해설 전달, 원음 무캡�
 - **한 봇에게 준 피드백이 다른 봇들에게 간다.** 한 엔지니어가 자기 봇에게 *이 일은 이렇게 하지 말라* 고 했는데 *"그 봇은 다른 엔지니어 봇들을 감독하는 리드 봇이었습니다."*(00:05~00:07) 나중에 대화를 열어 보니 — *"그 봇은 사람에게 들은 말을 다른 봇들에게 그대로 퍼뜨렸습니다."*(10:33~10:35) 해설의 교훈: *"봇이 직원처럼 일할수록 사람이 한 번 한 말은 더 멀리 갑니다."*(10:37~10:39) ⚠️ 장면 자체(00:15~00:39)는 캡션에 없고 설명란은 *꾸짖고 있었다* 고 적는다. 전파된 내용이 옳았는지는 알 수 없다.
 - **봇끼리도 사람의 통로로 말한다.** *"텐의 팀에서는 봇들도 슬랙 계정으로 대화합니다."*(08:46~08:47) 봇이 Data Bot에게 *진짜 사용자 문제인지 · 몇 명이 겪는지* 를 묻고 *"두 봇의 대화는 스레드에 그대로 남습니다."*(08:54~08:55) 근거는 Lauren Tan의 생각으로 전달된다 — 공식 통로를 열어 주면 봇은 그 통로를 쓴다. 보장이 아니라 설계의 가정이다.
 - **개인 봇에서 팀 봇으로.** 위 정의는 *개인이* 여러 봇을 보유하는 패턴이었다. 9월 말의 Team Bots는 저마다 핸들이 있어 Slack 채널에 초대하면 누구나 말을 걸 수 있다(공식 글). → [[multiplayer-agent-context]]
+
+## 2026-11-25 — 만든 사람은 줄였다: 50개에서 합치고, 주 봇 하나 ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+[[grokbot|Grok Bot]]을 만든 [[lauren-tan|Lauren Tan]]의 자기 구성(⚠️ 해설 전달, 원음 무캡션).
+
+- *"12개쯤 쓴다면서도 그렇게 많을 필요는 없다고 했습니다."*(02:24~02:28) ⚠️ 답의 본문은 무캡션.
+- *"로런 자신도 처음엔 50개짜리 봇 팀을 꾸리려다 관리하는 일만 늘어서 대부분 합쳤다고 합니다."*(03:01~03:05)
+- 남긴 봇은 역할별로 이름을 붙인 셋: *"X 계정을 관리하는 봇, 개발을 맡는 봇, 개인 비서 봇입니다."*(03:09~03:12)
+- **코디네이터 자리가 제품 기능이 됐다**: *"그리고 이젠 사이드바에 별표가 붙는 주 봇을 정할 수 있습니다."*(03:13~03:15) *"비서 실장처럼 다른 봇들의 일을 모아 답하는 자리입니다."*(03:15~03:18) 팀 봇은 주 봇이 될 수 없다(공식 문서, 내레이션이 옮김).
+- 한 스레드에 봇 여럿([[matt-palmer|Matt Palmer]]): *"카피 검토 봇에게 마케팅 문구를 보게 하고 그걸 출시 봇에게 넘기는 식입니다."*(04:12~04:16)
+
+위 10-31 절(chief of staff 아래 봇을 늘린다)과 11-06 절(인턴 무리를 관리하게 된다) 사이에서, 만든 사람의 경험은 **뒤쪽 진단에 가깝다** — 늘렸다가 관리 일만 늘어 합쳤다. 다만 0이나 1로 가지는 않았고 비서실장 자리는 남겼다. 몇 개가 적당한지의 기준은 캡션에 없다.

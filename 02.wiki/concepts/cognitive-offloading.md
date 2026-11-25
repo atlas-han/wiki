@@ -5,9 +5,9 @@ category: technique
 tags: [education, llm, learning]
 related: [regulatory-capture, retrieval-practice, ai-assisted-learning, ai-flipped-classroom, ai-engineering-skills-map, ai-learning-polarization]
 first-seen: tech-bridge-andrew-ng-ai-opportunity
-sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
+sources: [tech-bridge-andrew-ng-ai-opportunity, tech-bridge-ai-engineer-three-tier-skill-stack, tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 created: 2026-08-31
-updated: 2026-11-19
+updated: 2026-11-25
 ---
 
 # Cognitive Offloading
@@ -54,3 +54,11 @@ Wikipedia/검색은 사실 도구로 괜찮지만, 모델에게 일을 시켜 �
 - **왜 손상되는가** — 배움의 한 부분은 바깥 입력 없이 이미 가진 것을 바꾸고 합치는 데서 일어난다([[learning-by-thinking]], 신규). 답을 받으면 그 단계가 통째로 빠진다. 연구진의 말로는 *"연구진은 그냥 답을 주는 AI가 목발처럼 쓰였다고 봤습니다."*(09:05~09:06)
 - ⭐ **본인은 모른다**: *"시험을 더 못 봤는데도 덜 배웠다고 느끼지 않았습니다."*(09:19~09:21) Ng의 *숙제 점수↑ 장기 성과↓* 에 **자각이 따라오지 않는다** 는 조각이 붙는다 — 오프로딩의 손해는 스스로 알아채 고칠 수 있는 종류가 아니다.
 - 두 번째 연구(PNAS Nexus 2025년 10월, 보도자료 경유): 수천 명이 챗봇 또는 구글 검색으로 같은 주제를 공부했고 *"챗봇으로 배운 사람들의 지식이 더 얕았습니다."*(09:34~09:35) 학생이 아닌 집단 · 수학이 아닌 과제에서의 같은 방향이다(⚠️ 표본 · 측정 방법은 말하지 않는다).
+
+## 2026-11-25 — *이해를 자동화로 대신하지 말라*: 실력 걱정에 대한 IBM 글의 답 ([[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+IBM Technology 영상([[grace-ableidinger|Grace Ableidinger]])의 한국어 해설. 영상은 개발자들의 걱정으로 시작한다 — 판서에서 효율에는 체크, *"품질과 보안 실력에는 물음표."*(01:10) (⚠️ 개발자들의 반응 자체는 무캡션.) 해설은 끝에서 *실력* 물음에 IBM Think 글(위키 미열람)로 답한다:
+
+- *"생각을 AI에 너무 많이 넘기면 기본기가 조용히 깎여 나갈 수 있고 그러니 이해를 자동화로 대신하지 말라고요."*(08:21~08:27)
+
+근거가 되는 측정은 이 소스에 없다 — 권고 한 문장이다. 이 페이지의 실험 수치들과 방향은 같다. → [[vibe-vs-agentic-coding]](신규)

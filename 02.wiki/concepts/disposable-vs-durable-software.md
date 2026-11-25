@@ -6,9 +6,9 @@ tags: [code-quality, disposable-software, durable-software, engineering-rigor, c
 aliases: [disposable software, durable software, 일회용 소프트웨어, 오래 쓰는 코드, 네 가지 기준, four factors]
 related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build]
 first-seen: tech-bridge-kanat-alexander-disposable-vs-durable
-sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-jonathan-blow-30-years-zero-progress]
+sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-jonathan-blow-30-years-zero-progress, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 created: 2026-10-25
-updated: 2026-11-20
+updated: 2026-11-25
 ---
 
 # 일회용 vs 오래 쓰는 소프트웨어
@@ -63,3 +63,14 @@ Karpathy의 10월 초 글의 결론으로 해설이 전한다(⚠️ 2차 전달
 [[jonathan-blow|Jonathan Blow]]의 AI 사용 사례는 스펙트럼의 일회용 끝에 있다 — 엑셀 표에 색을 입히는 Visual Basic 30줄, *"쓰고 버릴 코드였습니다."*(04:20) 오래 사는 쪽이 왜 다른지에 대한 그의 설명은 네 기준과 다른 축이다: 프로그램 조각보다 **조각 사이의 선** 이 더 빨리 늘고(*"프로그램 조각이 셋이면 그 사이에 그을 수 있는 선은 셋, 넷이면 여섯입니다."*(04:28~04:31)), *"이 선은 코드에 적혀 있지 않습니다. 여기를 이렇게 짜면 저기가 어떻게 되는지 그 영향과 제약이 선입니다."*(04:34~04:38) 네 기준의 *의존 관계* 를 프로그램 안쪽으로 접어 넣은 그림으로 읽을 수 있다(위키의 읽기).
 
 해설의 권고는 이 틀의 두 끝에 하나씩이다 — 서른 줄짜리 쓰고 버릴 코드에는 AI를 마음껏, *"오래 살 시스템이라면 조각 사이에 선을 그린 지도는 사람이 주고 있습니다."*(11:52~11:55)[주고=쥐고, 추정] 11-18 Karpathy 편의 *크고 버려도 되는 소프트웨어* 보다 일회용의 범위를 훨씬 좁게 잡는다 — Blow는 *어느 크기를 넘으면 드러난다* 고만 하고 그 크기를 말하지 않는다. ⚠️ 한국어 해설 전달.
+
+## 2026-11-25 — 버려도 되는 코드는 짧은 고리로, 남길 코드는 긴 고리로 ([[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+[[grace-ableidinger|Grace Ableidinger]]의 IBM Technology 영상을 따라간 해설이 같은 가름을 **일하는 방식의 선택** 으로 옮긴다. ⚠️ 해설 전달 · 화자 원음 무캡션 · 측정 없음.
+
+- 출발점은 Karpathy의 단서다 — *"다만 그도 이 방식은 버려도 되는 주말 프로젝트에나 괜찮다고 선을 그었습니다."*(00:13~00:16) 그리고 물음: *"그럼 결제 시스템처럼 버리면 안 되는 코드는 어떻게 짜야 할까요?"*(00:25~00:27)
+- 넘어가는 순간: *"문제는 이 코드가 실제 서비스 그러니까 프로덕션으로 넘어갈 때 드러납니다."*(01:52~01:56)
+- 해설의 요약: *"버려도 되는 코드는 바이브로, 남길 코드는 이해와 검증이 들어간 루프로."*(08:10~08:13)
+- 맺음의 물음은 기준을 하나 더 얹는다: *"지금 AI에게 맡기고 있는 그 코드 버려도 되는 코드인가요? 아니면 누군가에게 설명해야 할 코드인가요?"*(08:44~08:47) — *설명해야 하는가* 는 이 페이지의 네 기준(피해 · 교체 비용 · 의존 · 유지 비용)에 없는 물음이다(대비는 위키의 읽기).
+
+이 페이지가 **위치를 정하는 기준** 이라면 [[vibe-vs-agentic-coding]](신규)은 위치가 정해진 뒤 **어떤 고리로 일할지** 를 말한다.

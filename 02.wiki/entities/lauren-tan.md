@@ -5,9 +5,9 @@ category: person
 tags: [cursor, grokbot, agents, refactoring]
 links:
   - https://x.com/poteto
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-lauren-tan-trusting-agents, tech-bridge-pstack-third-party-review, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-09-01
-updated: 2026-11-19
+updated: 2026-11-25
 ---
 
 # Lauren Tan
@@ -162,3 +162,15 @@ Y Combinator Lightcone에 제품 매니저 [[roman-ugarte|Roman Ugarte]]와 함�
 - **에이전트는 유지 보수로** — *"버그와 성능은 봇에게 맡기고 제품 고민은 사람이 하는 겁니다."*(11:00~11:02)
 - ⚠️ **월 PR 4,000** — *"우가르테에 따르면 텐 한 사람이 한 달에 올리는 PR이 4,000개입니다."*(09:01~09:04) 위 여덟 번째 소스의 10월 3,127과 다르다. 어느 달인지 없는 동료의 어림수라 모순으로 치지 않고 나란히 둔다.
 - 내년의 바람: 봇마다 전화번호와 신용카드. 봇끼리의 대화에 대해서는 *"공식 통로를 열어주면 봇은 그 통로를 쓴다는 게 텐의 생각입니다."*(08:57~08:59)
+
+## 2026-11-25 — 열 번째 소스: X 라이브 Q&A 해설 — 봇 12개 · 50개에서 합침 · *글은 직접 쓴다* ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+[[matt-palmer|Matt Palmer]](신규)와 함께 [[grokbot|Grok Bot]] 정식 버전을 발표한 주(11월 13일 금요일 밤)에 X 라이브로 시청자 질문에 답한 것의 한국어 해설. ⚠️ **본인 원음은 전부 무캡션** — 아래는 내레이션이 받아 옮긴 것이다.
+
+- **자기 봇의 수**: *"12개쯤 쓴다면서도 그렇게 많을 필요는 없다고 했습니다."*(02:24~02:28) *"로런 자신도 처음엔 50개짜리 봇 팀을 꾸리려다 관리하는 일만 늘어서 대부분 합쳤다고 합니다."*(03:01~03:05) 남긴 것은 *"X 계정을 관리하는 봇, 개발을 맡는 봇, 개인 비서 봇입니다."*(03:09~03:12) → [[persistent-agent-teams]]
+- **봇은 코딩하지 않는다**: *"봇이 직접 코딩을 하면 그 일에 매달려 다른 일을 못 합니다."*(04:26~04:30) *"클라우드 에이전트는 자기 컴퓨터에서 코드를 고치고 끝나면 사라집니다."*(04:31~04:32) → [[manager-bot-coding-agent-split]]
+- **Grok Bot에 붙인 이름**: ASR *바깥 꼴*(더빙 *outer shell*) — 판독되지 않는다. 뜻풀이는 *"일에 필요한 맥락을 사람 대신 모아오는 역할이라는 뜻입니다."*(04:44~04:47) ⚠️ 위 절들의 *바깥 루프* 와 같은 말일 수 있으나 정하지 않는다([[inner-outer-meta-loops]]).
+- **가장 흔한 실수**: 봇을 너무 작게 쓰는 것(ASR 판독 — 설명란 근거). 설명의 본문은 무캡션이고 받는 줄만 있다 — *"점심 주문이나 장보기 같은 일상부터 혼자서는 벅찬 큰 프로젝트까지 맡겨보라는 겁니다."*(07:17~07:21)
+- **맡기지 않는 것**: *"글쓰기는 생각하는 과정이라 정보는 봇에게 모아 오게 해도 글은 직접 쓴다고 했습니다."*(07:52~07:58) → [[learning-by-thinking]]
+- 일상: 회의에 대신 들어가 회의록을 쓰는 기능과 Slack 팀 봇을 아끼는 기능으로 꼽았고, 회의하느라 바쁠 때 치과 예약을 바꾸는 전화를 봇에 맡긴다고 했다.
+- 사용량 불만에는 설정의 사용량 화면부터 보라고 답했다(무엇별로 거르는지는 판독 불가).

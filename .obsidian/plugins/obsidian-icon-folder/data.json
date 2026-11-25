@@ -1364,5 +1364,12 @@
   "02.wiki/sources/tech-bridge-anthropic-founders-secret-making-of-anthropic.md": "LiVideo",
   "02.wiki/sources/tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages.md": "LiVideo",
   "02.wiki/concepts/capability-vs-coherency.md": "LiPuzzle",
-  "02.wiki/concepts/tactical-vs-strategic-programming.md": "LiLightbulb"
+  "02.wiki/concepts/tactical-vs-strategic-programming.md": "LiLightbulb",
+  "01.raw/articles/2026-11-24_그록봇은 챗봇이 아니다, 만든 사람들이 알려 주는 AI 팀원 쓰는 법 Lauren Tan, Matt Palmer.md": "LiNewspaper",
+  "01.raw/articles/2026-11-24_바이브 코딩 vs 에이전틱 코딩, 무엇을 써야 할까 Grace Ableidinger.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-grace-ableidinger-vibe-vs-agentic-coding.md": "LiVideo",
+  "02.wiki/entities/matt-palmer.md": "LiUser",
+  "02.wiki/entities/grace-ableidinger.md": "LiUser",
+  "02.wiki/concepts/vibe-vs-agentic-coding.md": "LiRepeat"
 }

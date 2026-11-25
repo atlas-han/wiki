@@ -207,8 +207,10 @@ sources:
   - tech-bridge-theo-gemini-4-neon-capability-vs-coherency
   - tech-bridge-anthropic-founders-secret-making-of-anthropic
   - tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages
+  - tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama
+  - tech-bridge-grace-ableidinger-vibe-vs-agentic-coding
 created: 2026-06-03
-updated: 2026-11-24
+updated: 2026-11-25
 ---
 
 # Tech Bridge
@@ -1960,3 +1962,24 @@ updated: 2026-11-24
 - 게시 시각 **11-24 07:00 KST**(`upload_date`는 UTC 기준 20261123). 설명란의 출처 둘(원본 대담 `mU8WKII1gpk` · `mattpocock/skills`)은 미열람.
 
 **멤버 전용**: 신규 없음. ✅ `jMzmFrwfYHk` **`public` 전환 확인, ingest**(11-22 멤버 전용 확인 → 11-24 공개, `upload_date` 20261121 → 20261123, 11-23 22:00 KST, 제목 그대로). `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 `subscriber_only` 줄). 대기 목록은 다시 하나. 목록 20편 요청 → **20줄**(stderr ERROR 없음, 전부 `public`).
+
+## 2026-11-24 업로드 — Lauren Tan · Matt Palmer(Grok Bot X 라이브) · Grace Ableidinger(IBM Technology, 바이브 코딩 vs 에이전틱 코딩) (2026-11-25 ingest)
+
+[[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama|그록봇은 챗봇이 아니다, 만든 사람들이 알려 주는 AI 팀원 쓰는 법 | Lauren Tan, Matt Palmer]](`t-R5Ep3UTg8`, 10:06, 공식 챕터 11) — 한국어 해설, Grok Bot을 만든 두 사람이 정식 버전 발표 주(11-13 금요일 밤)에 X 라이브로 시청자 질문에 답한 것을 공식 문서와 맞춰 따라간다 ([[grokbot]] · [[lauren-tan]] · [[matt-palmer]](신규) · [[manager-bot-coding-agent-split]] · [[cursor-cloud]] · [[scheduled-agent-automations]] · [[persistent-agent-teams]] · [[learning-by-thinking]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`), `en-orig`는 영어 더빙의 ASR로 판정(인용하지 않음). ⚠️ 이 회차는 yt-dlp가 *The page needs to be reloaded* 경고로 포맷 목록을 받지 못해 오디오 트랙 구성을 메타로 확인하지 못했다 — 캡션 내용으로만 판정.
+- ⚠️ **두 사람의 원음은 열한 곳(약 3분 58초) 전부 두 트랙 모두 무캡션** — 본인 인용 0, 인용 109건은 전부 ko-orig 내레이션. 내레이션이 *로런의 설명으로 들어보겠습니다* 라고 넘긴 자리(03:42~04:10)도 무캡션이다.
+- ⭐ 채널이 Grok Bot 팀을 다룬 편이 11-19 ingest의 Lightcone 편에 이어 한 주 사이 둘째다. 그 편이 *팀이 봇을 어떻게 믿게 됐나* 였다면 이 편은 *사용자가 어떻게 쓰나* — 봇의 수를 줄이고, 코딩은 넘기고, 루틴 대신 웹훅을 쓰고, 글은 직접 쓴다.
+- ⚠️ 판독하지 못한 것: Lauren이 Grok Bot에 붙인 이름 *바깥 꼴*(더빙 *outer shell* — 위키의 *바깥 루프* 와 같은 말인지 미정) · 회의 기능 이름 *회의인* · 전화 기능의 시점(*한 두 주 전화도 겁니다*) · 사용량 화면의 필터(*4 별로* / 더빙 *by day*) · *슬랙과 매일 회의*(메일 · 회의?) · 동료 이름 *샘 소콜린* · 7% / 15%의 기준.
+- 게시 시각 **11-24 18:00 KST**(`upload_date` 20261124). 설명란의 자료 넷(원본 라이브 `doLKqG8TefU` · Grok Bot 공식 문서 셋)은 미열람.
+
+[[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding|바이브 코딩 vs 에이전틱 코딩, 무엇을 써야 할까? | Grace Ableidinger]](`awaU-RwDdgg`, 8:50, 공식 챕터 9) — 한국어 해설, IBM Technology 영상에서 Red Hat의 Grace Ableidinger가 라이트보드에 그린 두 방식을 Karpathy의 X 글 · IBM Think 글과 함께 따라간다 ([[grace-ableidinger]](신규) · [[vibe-vs-agentic-coding]](신규) · [[ibm]] · [[andrej-karpathy]] · [[disposable-vs-durable-software]] · [[risk-proportional-human-review]] · [[agent-governance-layers]] · [[context-engineering]] · [[cognitive-offloading]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션, `en-orig`는 영어 더빙의 ASR(인용하지 않음). ⚠️ 이 회차에는 영상 포맷 목록을 받지 못해(*The page needs to be reloaded*) 오디오 트랙 구성 · 메타 `language`를 info.json으로 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- ⚠️ **화자 원음은 두 트랙 모두 무캡션** — en-orig 아홉 곳 약 2분 50초(ko-orig는 `[음악]` 표시로 열다섯 조각). 인용 110건은 전부 ko-orig 내레이션이고 본인 인용은 0.
+- ⚠️ **영어 더빙이 화자를 *Edidiong Asikpo* 로 읽는다**(00:35) — ko-orig는 *그리스 에이블딩어*. 제목 · 설명란 · tags의 *Grace Ableidinger* 를 따랐다. 더빙은 *에이전틱* 도 두 번 *Iterative* 로 옮긴다.
+- ⭐ IBM Technology 영상을 해설의 뼈대로 쓴 두 번째 편(11-12 SDD vs Waterfall에 이어)이고, [[andrej-karpathy|Karpathy]]의 *바이브 코딩* 글 내용이 위키에 처음 요약됐다(내레이션의 옮김).
+- ⚠️ 판독하지 못한 것: *넘어 잘 안다고*(01:39) · *프로덕션 상세로*(01:59) · *글도 같은 말을 합니다* 의 글(02:40) · *도끼 고를*(05:46) · 안전 장치 다섯을 꼽은 주체(*글로 꼽은*, 06:33) · 끊긴 문장(08:01). 무캡션에 든 것: 개발자들의 반응 · 컨텍스트가 많으면 왜 안 되는지 · 질문 넷의 원 표현 · 화자의 마지막 조언.
+- 게시 시각 **11-25 07:00 KST**(`upload_date` 20261124, UTC 기준). 설명란의 자료 셋(원본 영상 `h4tHDFCPmQE` · Karpathy X 2025.02.02 · IBM Think *What is agentic coding?* 2026.03.27)은 미열람.
+
+**멤버 전용**: 신규 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 stderr ERROR *members-only*). 대기 목록은 하나. 목록 20편 요청 → **20줄**(전부 `public`). ⚠️ 이 회차부터 `--skip-download --ignore-no-formats-error` 없이 목록을 조회하면 편마다 `ERROR: The page needs to be reloaded.` 로 줄이 하나도 나오지 않는다(20편 요청 → 0줄 + ERROR 20) — 두 옵션을 붙이면 정상.

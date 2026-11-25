@@ -6,9 +6,9 @@ tags: [governance, access-control, policy, guardrails, safety]
 aliases: [거버넌스 두 층, 에이전트 바깥의 벽]
 related: [context-resets-and-compaction, agentic-misbehavior, ai-privilege, executable-standards, action-reversibility, knowledge-work-agent-gap, credential-injection-outside-sandbox, black-box-agent-approach, privacy-auto-mode, secure-tool-evolution, bound-parameters, ai-data-exposure]
 first-seen: tech-bridge-knowledge-work-agent-infrastructure
-sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst, tech-bridge-nadella-copilot-autopilot, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala]
+sources: [tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-build-time-vs-runtime-tools, tech-bridge-shift-left-security-ai-code, tech-bridge-agents-as-catalyst, tech-bridge-nadella-copilot-autopilot, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-white-house-superintelligence-panel, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 created: 2026-09-09
-updated: 2026-10-09
+updated: 2026-11-25
 ---
 
 # 에이전트 거버넌스 두 층
@@ -157,3 +157,18 @@ updated: 2026-10-09
 관리 비유는 *"how we deal with employees (…) children (…) students"*(19:02~19:15). 그리고 *"It is not true. You cannot contain it. It is not true. (…) You can't monitor it. It is not true."*(19:23~19:31) — **두 층 모두 가능하다**는 주장.
 
 > ⚠️ [[tech-bridge-white-house-superintelligence-panel|백악관 패널]]의 같은 화자는 *"never trust that it's contained"* — **격리를 믿지 말고 다른 칩으로 바깥에서 감시하라**였다. 갈라는 **"격리가 불가능하다는 말을 믿지 말라"** 쪽이다. 처방은 같고 다루는 두려움이 반대다(위키의 관찰).
+
+## 2026-11-25 — 입문판 목록: 안전 장치 다섯 ([[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+IBM Technology 영상([[grace-ableidinger|Grace Ableidinger]])의 한국어 해설이 코딩 에이전트의 안전 장치를 다섯으로 든다. ⚠️ 꼽은 주체가 화자인지 IBM 글인지는 ASR(*글로 꼽은*)로 정하지 못했고, 바로 앞의 보안 설명(06:11~06:33)은 무캡션이다.
+
+- 전제: *"에이전트가 할 수 있는 일이 많아질수록 보안 문제도 커집니다."*(06:05~06:09)
+- **테스트** — *"바꾼 게 제대로 동작하는지 확인합니다."*(06:35~06:37)
+- **거버넌스** — *"되돌릴 수 없거나 비용이 큰 결정에는 사람이 서명합니다."*(06:39~06:41)
+- **관찰 가능성** — *"에이전트가 무엇을 왜 했는지 볼 수 있어야 합니다."*(06:43~06:45)
+- **롤백** — *"실수는 되돌릴 수 있어야 하고요."*(06:47~06:49)
+- **가드레일** — *"정해둔 규칙 안에서만 움직이게 합니다."*(06:49~06:51)
+- 이미 도구에 들어 있는 형태: *"명령을 실행하기 전에 허락을 묻거나 도구를 쓰려면 연결을 따로 승인받게 하는 식이죠."*(06:55~06:58)
+- IBM 글의 권고(ASR 추정 판독): *"쓰기 권한을 제한하고 병합 전에 테스트를 강제하고 에이전트가 한 일을 기록하라고요."*(07:02~07:06)
+
+이 페이지의 두 층(경계를 에이전트 바깥에 둔다)과 견주면 다섯 가운데 가드레일 · 거버넌스가 *막는 쪽*, 관찰 가능성이 *보는 쪽* 에 놓인다(짝짓기는 위키의 읽기). 소스는 경계를 어디에 구현하는지까지는 말하지 않는다.

@@ -4,12 +4,12 @@ type: entity
 category: person
 tags: [researcher, educator, llm, transformer, computer-vision]
 aliases: [카파시, Karpathy, 안드레 카파시]
-sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-thariq-shihipar-human-folder-unacceptable]
+sources: [karpathy-llm-wiki-gist, multica-karpathy-skills-claude-md, tech-bridge-karpathy-transformers-stanford, tech-bridge-six-agent-skills, tech-bridge-agents-vs-humans-optimizer-speedrun, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
 links:
   - https://karpathy.ai
   - https://github.com/karpathy
 created: 2026-05-25
-updated: 2026-11-23
+updated: 2026-11-25
 ---
 
 # Andrej Karpathy
@@ -107,3 +107,14 @@ AI 연구자·교육자. 본 위키에 두 갈래로 등장한다 — **위키 �
 - 결과: *"오퍼스 4.6은 91%로 윤곽이 흐릿하게 잡히고 오퍼스 5.5는 99% 거의 실제 지도입니다."*(06:21~06:26) *"이미지도 도구도 없이 글로만 배운 모델이 그린 지구입니다."*(06:29~06:31) ⚠️ 60%인 첫 모델의 이름은 ko ASR(*손해 4.5*)과 영어 더빙 ASR(*Sonnet 3.5*)이 달라 정하지 않았다.
 
 Thariq는 이것을 [[jagged-capability-frontier|매끈한 안쪽]]의 그림으로 썼다. ⚠️ Karpathy 본인이 이 평가에서 무엇을 읽었는지는 위의 한 줄 말고는 소스에 없다.
+
+## 2026-11-25 — *바이브 코딩* 이라는 말을 만든 글이 처음으로 요약되다 ([[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]])
+
+11-24 업로드 해설(IBM Technology 영상의 2차 전달). 해설이 Karpathy의 X 글(2025.02.02, 설명란 · 위키 미열람)을 내레이션으로 옮긴다 — 위키가 *바이브 코딩* 의 출처 글 내용을 적는 것은 이 소스가 처음이다. ⚠️ 본인 원문이 아니라 한국어 내레이션의 옮김이다.
+
+- *"바이브코딩이라는 말을 만든 사람은 코드를 읽지 않는다고 썼습니다."*(00:00~00:02) *"오픈에이아이 공동 창업자 안드레이 카파시의 글입니다."*(00:04~00:06)[=OpenAI · Andrej Karpathy]
+- 방식: AI가 고친 코드는 늘 전부 수락하고 *"바뀐 부분은 더 읽지 않는다고요."*(00:09~00:11) 에러가 나면 *"아무 말 없이 에러 메시지를 그대로 붙여 넣고"*(01:30~01:33) — 대개 그걸로 고쳐진다고 한다(ASR *되게* · 추정).
+- 결과: 코드가 자기가 평소 이해할 수 있는 범위를 넘는다고 적었다(01:36~01:39 — ⚠️ 끝 낱말은 판독하지 못했다).
+- **단서.** *"다만 그도 이 방식은 버려도 되는 주말 프로젝트에나 괜찮다고 선을 그었습니다."*(00:13~00:16) — 해설은 이 선에서 출발해 *버리면 안 되는 코드* 의 방식을 묻는다 → [[vibe-vs-agentic-coding]](신규) · [[disposable-vs-durable-software]]
+
+11-19 편에서 그가 HackerTube 서버 코드를 *바이브 코딩으로 만든 엉망진창* 이라 공개하지 않았다는 대목과 같은 선 위에 있다(연결은 위키의 읽기).

@@ -6,9 +6,9 @@ tags: [orchestration, grokbot, coding-agents, cloud-agents, first-mile, last-mil
 aliases: [manager bot, 매니저 봇, first mile, last mile, 봇은 매니저, bot as manager not coder, orchestrator bot]
 related: [inner-outer-meta-loops, cloud-agent-delegation, persistent-agent-teams, agent-manager-analogy, goal-level-delegation, agent-sandboxing, hard-vs-soft-enforcement, agent-change-evidence, review-loop-termination]
 first-seen: tech-bridge-rob-shocks-grokbot-manager-coding-agents
-sources: [tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-11-03
-updated: 2026-11-17
+updated: 2026-11-25
 ---
 
 # 매니저 봇 · 코딩 에이전트 분업
@@ -67,3 +67,15 @@ updated: 2026-11-17
 - 팀 규모에서는 사람마다 매니저 하나, *"그리고 이 매니저들이 서로 대화합니다."*(05:12~05:14) 순서 충돌(마이그레이션 번호)은 **머지 큐 매니저** 라는 전용 세션이 조율한다.
 
 ⚠️ 성과 비교 수치 없음. 위 사례와 달리 last mile의 승인은 봇이 아니라 사람이 영상을 보고 한다.
+
+## 2026-11-25 — 만든 쪽이 같은 분업을 권한다: 점유와 맥락의 분리 ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+[[grokbot|Grok Bot]]을 만든 [[lauren-tan|Lauren Tan]]과 [[matt-palmer|Matt Palmer]]의 X 라이브를 옮긴 해설이 이 분업을 *개발자에게 가장 쓸모 있는 패턴* 으로 꼽고 **지휘** 라고 부른다(ASR *지위*, 설명란 *지휘 방식*). ⚠️ 두 사람의 원음은 무캡션 — 내레이션 전달.
+
+- 모양: *"그록 봇이 코딩을 직접 하지 않고 커서의 클라우드 에이전트에게 맡기는 겁니다."*(04:22~04:25)
+- **근거 하나 — 점유**(Lauren): *"봇이 직접 코딩을 하면 그 일에 매달려 다른 일을 못 합니다."*(04:26~04:30) *"클라우드 에이전트는 자기 컴퓨터에서 코드를 고치고 끝나면 사라집니다."*(04:31~04:32)
+- **근거 둘 — 맥락의 분리**(Matt): *"코딩에 필요한 스킬과 연결은 에이전트 쪽에 두고 그록 봇은 그걸 기억할 필요가 없습니다."*(04:36~04:40)
+- 봇의 몫: *"일에 필요한 맥락을 사람 대신 모아오는 역할이라는 뜻입니다."*(04:44~04:47) — 위 *세 구간* 의 first mile에 해당하는 말이다. last mile(결과 확인)은 이 편의 캡션에 없다.
+- 한 번에 시키는 예(Matt, 출시일이 바뀌었을 때): *"관련자에게 DM을 보내고 노션 문구를 고치고 코드는 클라우드 에이전트에게 맡기고 매 시간 슬랙을 확인하라고 한 번에 시킵니다."*(05:14~05:20)
+
+위 본문에서 발표자(Rob Shocks)가 든 근거 셋(비용 · 격리 · 매니저 역할의 여유)과 견주면, Lauren의 **점유** 는 셋째(*매니저 역할의 여유*)와, Matt의 **맥락의 분리** 는 둘째(*its own context*)와 같은 쪽이다. 첫째인 **비용**(사용량 풀)은 이 편에서 분업의 근거로 나오지 않는다 — 사용량은 루틴 쪽 이야기로만 나온다([[scheduled-agent-automations]]). 누가 누구에게서 배웠는지는 어느 소스도 말하지 않는다.

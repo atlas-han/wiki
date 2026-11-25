@@ -6,9 +6,9 @@ tags: [cloud-agents, remote-vm, automations, cursor]
 links:
   - https://cursor.com/docs/cloud-agent
   - https://cursor.com/docs/automations
-sources: [tech-bridge-cursor-legacy-refactoring]
+sources: [tech-bridge-cursor-legacy-refactoring, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-11-25
 ---
 
 # Cursor Cloud
@@ -45,3 +45,7 @@ updated: 2026-09-09
 ## References
 
 - [[tech-bridge-cursor-legacy-refactoring]] · [[cursor]] · [[cloud-agent-delegation]] · [[scheduled-agent-automations]]
+
+## 2026-11-25 — Grok Bot이 코딩을 넘기는 자리 ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+[[grokbot|Grok Bot]]을 만든 두 사람의 X 라이브를 옮긴 해설에서 Cursor의 클라우드 에이전트는 **봇이 코딩을 넘기는 상대** 로 나온다(⚠️ 내레이션 전달, 원음 무캡션). *"그록 봇이 코딩을 직접 하지 않고 커서의 클라우드 에이전트에게 맡기는 겁니다."*(04:22~04:25) 성질은 한 줄로 — *"클라우드 에이전트는 자기 컴퓨터에서 코드를 고치고 끝나면 사라집니다."*(04:31~04:32) 오래 사는 봇과 일 하나로 끝나는 에이전트를 가르는 말이다. → [[manager-bot-coding-agent-split]] · [[cloud-agent-delegation]]

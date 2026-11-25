@@ -6,9 +6,9 @@ tags: [learning, cognitive-science, education, self-explanation, illusion-of-exp
 aliases: [learning by thinking, 생각으로 배우기, 자기 설명 효과, self-explanation effect, 설명 깊이의 착각, illusion of explanatory depth, 고무 오리 디버깅, rubber duck debugging]
 related: [cognitive-offloading, ai-assisted-learning, retrieval-practice, ai-learning-polarization, cognitive-debt]
 first-seen: tech-bridge-lombrozo-learning-by-thinking-ai-tutor
-sources: [tech-bridge-lombrozo-learning-by-thinking-ai-tutor]
+sources: [tech-bridge-lombrozo-learning-by-thinking-ai-tutor, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
 created: 2026-11-19
-updated: 2026-11-19
+updated: 2026-11-25
 ---
 
 # 생각으로 배우기 — 자기 설명 효과 · 설명 깊이의 착각 · 고무 오리 디버깅
@@ -51,3 +51,13 @@ Lombrozo의 비유는 요리다. 레시피의 초콜릿 칩과 가염 버터가 
 - [[tech-bridge-lombrozo-learning-by-thinking-ai-tutor]] · [[tania-lombrozo]]
 - Lombrozo, Learning by thinking in natural and artificial minds (Trends in Cognitive Sciences, 2024) https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(24)00191-8 (설명란, 위키 미열람)
 - Rozenblit & Keil (2002) https://pmc.ncbi.nlm.nih.gov/articles/PMC3062901/ · Brockbank et al. (2022) · Bastani et al. (PNAS, 2025) https://www.pnas.org/doi/10.1073/pnas.2422633122 (설명란, 위키 미열람)
+
+## 2026-11-25 — *글은 직접 쓴다*: 봇을 만든 사람들이 긋는 선 ([[tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]])
+
+[[grokbot|Grok Bot]]을 만든 두 사람이 꼽은 실수 셋 가운데 하나가 **글쓰기까지 맡기는 것** 이다(⚠️ 해설 전달, 원음 무캡션 — 이 실수를 꺼낸 대목 자체도 무캡션이다).
+
+- [[lauren-tan|Lauren Tan]]: *"글쓰기는 생각하는 과정이라 정보는 봇에게 모아 오게 해도 글은 직접 쓴다고 했습니다."*(07:52~07:58)
+- [[matt-palmer|Matt Palmer]]: *"동료에게 보내는 감사 인사 한 줄도 10분을 들여 자기 말로 쓰라는 게 매트의 조언이었습니다."*(07:59~08:02)
+- 해설의 맺음: *"지금 여러분이 직접 하고 있는 일 중에 봇에게 맡길 수 있는 건 뭔가요? 단, 글은 직접 쓰는 겁니다."*(09:58~10:03)
+
+위 본문의 원리(입력이 아니라 **생산** 이 생각을 만든다)를 일의 자리로 옮긴 경험칙이다 — 모으기는 넘기고 쓰기는 남긴다. ⚠️ 근거는 두 사람의 습관이고 연구를 들지 않는다. 이 페이지의 실험들과 잇는 것은 위키의 읽기다.
