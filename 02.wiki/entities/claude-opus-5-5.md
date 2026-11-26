@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus, flagship, secondhand-claims]
 aliases: [Opus 5.5, 오푸스 5.5]
-sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
+sources: [tech-bridge-white-house-superintelligence-panel, tech-bridge-claude-duet-proactive-assistant, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-theo-gemini-4-neon-capability-vs-coherency, tech-bridge-armin-ronacher-workshop-before-software-factory]
 links: []
 created: 2026-10-09
-updated: 2026-11-24
+updated: 2026-11-26
 ---
 
 # Claude Opus 5.5
@@ -140,3 +140,13 @@ GPT-6.2 [[openai-astra|Astra]] 반응 모음(⚠️ 해설 전달 + 원음 발�
 - 그래도 Theo의 [[capability-vs-coherency|능력 · 일관성]] 그래프에서는 *"네온은 페이블, 오퍼스와 나란히 오른쪽 위에 있습니다."*(06:00~06:01) — 밀려난 것이 아니라 같은 구석이다.
 
 ⚠️ 한 사용자의 프로젝트 하나. 어느 그래프인지(지수 이름)는 이 대목 캡션에 없다.
+
+## 2026-11-26 — 같은 하네스에서 14분: 사용자 한 사람의 세션 기록 ([[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]가 자기 [[pi-coding-agent|Pi]] 세션을 모델별로 나눈 숫자(한국어 해설 전달, n=1). 위 11-21 절의 *감독 없이 훨씬 오래* 에 숫자가 붙는다.
+
+- 혼자 일한 시간(프롬프트 하나 · 상위 10% 기준): *"오퍼스 4.6은 2.4분, 지금의 오퍼스 5.5는 14분입니다. 같은 하네스로 여섯 배 가까이 오래 일합니다."*(02:26~02:32) → [[claude-opus-4-6]]
+- 도구 쓰는 방식: *"오퍼스 5.5는 SED, CAT, GREP 같은 터미널 명령어에 호출의 43%를 씁니다."*(02:33~02:38)
+- 사람이 고치는 횟수: *"프롬프트 100개당 그가 바로잡은 횟수는 8.5에서 3.9로 줄었습니다."*(02:12~02:16) ⚠️ 이 문장과 ESC 횟수(13 → 7)는 어느 모델에서 어느 모델로인지 캡션이 밝히지 않는다 — 앞뒤 문맥으로 Opus 4.6 → 5.5로 보이나 정하지 않았다.
+
+⚠️ 한 사람의 자기 계측이고 계측 방법 · 세션 수 · 기간은 캡션에 없다. *상위 10% 기준* 이 백분위인지 평균인지도 모른다. 벤치마크가 아니다. Ronacher의 결론은 모델 칭찬이 아니라 그 반대편이다 — *"에이전트는 여섯 배 오래 일하지만 사람의 주의력은 그대로입니다."*(10:05~10:06)(해설의 정리)

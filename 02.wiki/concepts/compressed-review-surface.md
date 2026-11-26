@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [code-review, verification, diagrams, declarative-code, architecture, human-in-the-loop, ai-slop]
 aliases: [compressed review surface, reviewable surface, 리뷰 표면, 검토 접점]
-related: [verification-bottleneck, deep-modules, agent-state-machine, risk-proportional-human-review, cognitive-debt, read-fluency-for-agent-output, architecture-as-remaining-art, ai-slop, hard-vs-soft-enforcement]
+related: [verification-bottleneck, deep-modules, agent-state-machine, risk-proportional-human-review, cognitive-debt, read-fluency-for-agent-output, architecture-as-remaining-art, ai-slop, hard-vs-soft-enforcement, workshop-before-factory]
 first-seen: tech-bridge-g2i-generation-cheap-evaluation-expensive
-sources: [tech-bridge-g2i-generation-cheap-evaluation-expensive]
+sources: [tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-26
 ---
 
 # 압축된 리뷰 표면 (Compressed Review Surface)
@@ -45,3 +45,13 @@ updated: 2026-10-16
 ## References
 
 - [[tech-bridge-g2i-generation-cheap-evaluation-expensive]]
+
+## 구조가 아니라 요약으로 줄인다 — 70% 지점에서 끼어들기 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 Code Summit 발표 해설에 리뷰 면을 줄이는 **다른 방식** 이 나온다(해설 전달 · 원음 무캡션). 위 본문이 *무엇을* 리뷰 면에 남길지(구조 · 선언적 코드)를 말한다면 이쪽은 *언제 · 무엇을 읽을지* 다.
+
+- 전제는 같다: *"그 자신도 커밋이 폭발적으로 늘면서 코드를 다 읽을 수 없게 됐습니다."*(06:48~06:50)
+- 방법: *"작업의 70% 쯤 검증으로 넘어가기 직전에 끼어드는 겁니다. 코드를 한 줄씩 읽는 대신 요약을 읽고 방향을 판단합니다."*(07:25~07:31)
+- 목적: *"공방의 셋째 조건, 이해하는 만큼만 달리기를 지키는 장치입니다."*(07:32~07:34) → [[workshop-before-factory]](신규) · [[cognitive-debt]]
+
+⚠️ 방법의 설명(06:56~07:25)은 무캡션이다 — 요약을 에이전트가 쓰는지, 어떤 형식인지, *70%* 를 어떻게 아는지, 요약이 틀렸을 때를 어떻게 잡는지는 모른다. 위 본문의 처방과 달리 요약은 코드에서 떨어진 산출물이라 코드와 어긋날 수 있다는 점은 위키의 메모다(소스에 없다).

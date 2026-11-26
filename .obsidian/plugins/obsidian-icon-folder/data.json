@@ -1371,5 +1371,11 @@
   "02.wiki/sources/tech-bridge-grace-ableidinger-vibe-vs-agentic-coding.md": "LiVideo",
   "02.wiki/entities/matt-palmer.md": "LiUser",
   "02.wiki/entities/grace-ableidinger.md": "LiUser",
-  "02.wiki/concepts/vibe-vs-agentic-coding.md": "LiRepeat"
+  "02.wiki/concepts/vibe-vs-agentic-coding.md": "LiRepeat",
+  "01.raw/articles/2026-11-25_AI 코딩 공장이 슬롭을 안 내보내는 12가지 규칙 Dex Horthy.md": "LiNewspaper",
+  "01.raw/articles/2026-11-25_소프트웨어 공장보다 공방을 먼저 지어라 Armin Ronacher.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-dex-horthy-twelve-rules-no-slop-factory.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-armin-ronacher-workshop-before-software-factory.md": "LiVideo",
+  "02.wiki/concepts/no-ai-slop-manifesto.md": "LiScrollText",
+  "02.wiki/concepts/workshop-before-factory.md": "LiHammer"
 }

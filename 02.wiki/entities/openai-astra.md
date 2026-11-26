@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [openai, frontier-model, computer-use, model-family]
 aliases: [Astra, 아스트라]
-sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
+sources: [tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-altman-agi-superintelligence, tech-bridge-company-brain-security, tech-bridge-brockman-agi-era-defender-window, tech-bridge-altman-benioff-dreamforce, tech-bridge-jensen-huang-cbs-interview, tech-bridge-nadella-copilot-autopilot, tech-bridge-altman-devday-dots, tech-bridge-brockman-start-building-before-ready, tech-bridge-horthy-state-of-software-factory, tech-bridge-just-in-time-ontology, tech-bridge-gpt-6-1-terra-first-look, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 links: []
 created: 2026-09-06
-updated: 2026-11-24
+updated: 2026-11-26
 ---
 
 # Astra (OpenAI)
@@ -190,3 +190,11 @@ updated: 2026-11-24
 - 디스크 속도 질문: Astra는 디스크와 상관없는 이야기를 만들어 냈다고 한다(02:40~02:42).
 - 설계안: *"다른 모델과 짜던 설계안에 네온의 의견을 붙였더니 아스트라가 바로 네온 안을 따르겠다고 했습니다."*(03:40~03:44)
 - TS Rust: 크기를 *"46% 줄였지만 속도는 오히려 56% 느려졌습니다."*(06:47~06:50) 빠르게만 하라고 다시 시키자 *"변경을 하나도 넣지 못했습니다."*(06:52~06:54) — 11-19 절의 *컴파일러를 56% 느리게* 와 같은 일화이고 이번에 크기 46% 감소가 더해졌다. ⚠️ 매달린 기간은 이번에도 판독되지 않는다(ko-orig *7을 넘게*, 더빙 *seven hours* — 11-19 절의 *7주 추정* 을 확인해 주지 않는다).
+
+## 2026-11-26 — SlopCodeBench 엄격 기준 1등, 16.33% ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]의 Code Summit 발표 해설(한국어 내레이션 전달): *"그 기준으로 1등인 GPT-6 아스트라 엑스 하이가 16.33% 196개 중 서른 두개였습니다."*(04:02~04:08) 영상은 이 수치로 열고 닫는다 — *"최고의 모델도 코드를 계속 고쳐 나가는 시험에서는 16%였습니다."*(11:52~11:54)
+
+- 10-15 절의 상대값(*GPT-5.5보다 1~1.5%p 높다*, GPT-5.5 = 14.8%)에 처음으로 **절대값** 이 붙었고 범위가 맞는다. 지표는 [[slopcodebench|SlopCodeBench]]의 엄격 기준(앞선 체크포인트의 테스트까지 전부 통과)이다.
+- ⚠️ *엑스 하이* 는 ASR 표기다. 10-15 절에서 판독을 보류한 *Sol X I*(`en` *Sol X High*)와 같은 꼬리로 보이지만 설정 이름을 정하지 않았다. *GPT-6 아스트라* 가 11-19 절의 GPT-6.2 Astra와 같은 판인지도 캡션에 없다.
+- 1등이 이 점수라는 것이 발표의 논거다 — 한 번에 끝나는 문제의 실력과 달리 *"코드베이스를 개선하는 실력은 그 사이 조금밖에 오르지 않았습니다."*(03:04~03:07)

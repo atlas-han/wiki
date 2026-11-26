@@ -6,9 +6,9 @@ tags: [ci, lint, guardrails, code-review, enforcement, standards]
 aliases: [강제의 층, CI를 빨갛게, 소프트 강제에 의존하지 말라]
 related: [executable-standards, verifiable-goals, llm-coding-guidelines, agent-governance-layers, shortest-path-architecture, verification-bottleneck, behavior-validated-trust, codebase-gardening, structure-sensitive-tests, deep-modules, agent-state-machine, agent-plus-program-analysis, skill-linting, context-resets-and-compaction, human-loop-roles-relocation, tactical-vs-strategic-programming]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-graft-code-knowledge-graph, tech-bridge-lauren-tan-2000-prs, tech-bridge-skill-engineering-dark-arts, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-goodbye-slop-state-machines, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 created: 2026-09-13
-updated: 2026-11-24
+updated: 2026-11-26
 ---
 
 # 하드 강제와 소프트 강제
@@ -215,3 +215,12 @@ AI Engineer Code Summit 발표(한국어 해설)의 뒤집힌 피라미드는 **
 - 피드백 루프의 세 겹: *"타입이 있으면 실수를 바로 알려줍니다. 테스트는 실제로 돌려서 확인하고 린터는 위험한 패턴을 잡습니다."*(09:04~09:08)
 
 ⚠️ 09:29~09:44는 무캡션. 코딩 표준 문서와 린트 규칙이 어떻게 나뉘는지(무엇이 문서에 남는지)는 캡션에 없다.
+
+## 2026-11-26 — 규칙 7: *결정론적인 도구로 슬롭과 싸우라* ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]의 Code Summit 규칙 12가지 가운데 일곱 번째(한국어 내레이션 전달).
+
+- 정의: *"일곱 번째 규칙은 결정론적인 도구로 슬롭과 싸우라는 겁니다. 같은 코드에는 늘 같은 판정을 내리는 린트 규칙 같은 것들입니다."*(07:05~07:11) — 11-24 절의 *고를 수 있다면 늘 후자* 와 같은 원칙이다.
+- 가져다 쓸 재료 셋: *"클라우드 플레어의 수석 엔지니어 딜런 몰로이가 만든 안티 슬롭 저장소에는 에이전트가 슬롭을 못 만들게 막는 규칙이 100개쯤 들어있습니다."*(07:11~07:18)[=Cloudflare · 10-15 소스 en-orig의 *Dylan Mulroy* — 철자 미확인] 그리고 *"팩토리도 ES 린트 플러그인을 냈고 슬롭 코드 벤치의 파이썬 품질 규칙도 가져다 쓸 수 있습니다."*(07:18~07:24)[=ESLint] → [[factory-ai]] · [[slopcodebench]]
+- 해설은 이것을 세 줄 요약의 한 줄로 올린다 — *기계가 잡을 건 기계에게*(챕터 제목).
+- ⚠️ 한계도 같은 발표에 있다: Horthy 원음 조각(en-orig 단일 트랙)은 에이전트 리뷰어 · 린터 · 검증기를 두고 *"they are not sufficient."*(11:12) 라고 한다 — 하드 층을 깔아도 사람의 판단이 남는다는 쪽이다. 이유를 말하는 자리는 무캡션이다.

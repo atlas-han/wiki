@@ -4,12 +4,12 @@ type: entity
 category: tool
 tags: [benchmark, coding-agents, maintainability, ai-slop, long-horizon, iterative]
 aliases: [Slop Code Bench, SlopCode-Bench]
-sources: [tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 links:
   - "https://arxiv.org/abs/2603.24755"
   - "https://snorkel.ai/leaderboard/slopcode-bench/"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-26
 ---
 
 # SlopCodeBench
@@ -38,3 +38,18 @@ updated: 2026-10-16
 
 - [[tech-bridge-horthy-state-of-software-factory]]
 - [SlopCodeBench (arXiv 2603.24755)](https://arxiv.org/abs/2603.24755) (⚠️ 미확인)
+
+## 2026-11-26 — 과제 수 · 엄격 기준 · 새 1등 16.33% ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]의 Code Summit 발표 해설이 이 페이지 *미해결* 의 일부를 채운다(⚠️ 한국어 내레이션의 전달 — 논문 · 리더보드는 여전히 미열람).
+
+- 규모: *"문제 36개를 체크포인트 196개로 쪼갰습니다."*(03:44~03:49)
+- 진행과 채점: *"첫 명세로 프로그램을 짜고 명세가 바뀔 때마다 자기 코드를 고쳐 나갑니다. 숨은 테스트로 채점하고 슬롭이 얼마나 쌓였는지도 봅니다."*(03:50~03:56)
+- ⭐ **지표 정의**(10-15에는 미발화였다): *"엄격 기준은 앞선 체크포인트의 테스트까지 전부 통과해야 점수를 줍니다."*(03:58~04:02)
+- 점수: *"그 기준으로 1등인 GPT-6 아스트라 엑스 하이가 16.33% 196개 중 서른 두개였습니다."*(04:02~04:08) 설명란도 *16.33%(196개 중 32개)*. 10-15의 GPT-5.5 14.8% · *Astra는 1~1.5%p 높다* 와 맞는 범위다. ⚠️ *엑스 하이* 가 가리키는 설정 이름은 정하지 않았다. → [[openai-astra]]
+- 벤치를 이끄는 사람으로 **Gabe Orlanski** 가 이름으로 나온다(설명란 글 *Slop Is Moving Up the Stack*, 미열람). 그의 정리로 전해진 말: *"슬롭은 사라진 게 아니라 설계 결정으로 자리를 옮겼다."*(04:14~04:16)
+- 라이브러리 실험: 같은 구현 에이전트에게 라이브러리를 주면 *"라이브러리를 피해 우회하는 비율이 사람이 짠 라이브러리에선 27%, 에이전트가 짠 라이브러리에선 40%였습니다."*(04:22~04:28) ⚠️ 실험 조건 · 표본은 캡션에 없다.
+- Horthy 원음(en-orig 단일 트랙) — 무엇을 재는가: *"this is a benchmark that measures a model's ability to evolve a code base over time."*(03:36~03:40) 한 번에 문제 전체를 아는 과제와의 대비: *"that requires knowing the entire problem in advance. And most of us don't write software that way."*(03:21~03:25)
+- 규칙 재료: 벤치의 Python 품질 규칙을 가져다 쓸 수 있다고 한다(내레이션 07:20~07:24).
+
+남은 미해결: Snorkel과의 관계 · 통과율로 보이는 다른 지표(ASR *프리율*, 판독하지 못함) · 리더보드의 나머지 순위.

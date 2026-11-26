@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [loops, feedback, verification, triggers, agents, software-factory, hill-climbing]
 aliases: [back pressure, backpressure, forward pressure, 역압, 순방향 압력, 역방향 압력]
-related: [loop-is-the-product, agent-verification-skill, agent-visual-qa, scheduled-agent-automations, feedforward-feedback-steering, human-plumbing, verifiable-goals, software-factory, linear-vs-closed-loop-harness]
+related: [loop-is-the-product, agent-verification-skill, agent-visual-qa, scheduled-agent-automations, feedforward-feedback-steering, human-plumbing, verifiable-goals, software-factory, linear-vs-closed-loop-harness, hard-vs-soft-enforcement]
 first-seen: tech-bridge-horthy-state-of-software-factory
-sources: [tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-26
 ---
 
 # 백 프레셔 (Back Pressure)
@@ -42,3 +42,14 @@ updated: 2026-10-16
 ## References
 
 - [[tech-bridge-horthy-state-of-software-factory]]
+
+## 2026-11-26 — 규칙 1번이 됐다: 앞 압력 · 뒤 압력 ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+10-15 소스에서 여덟 번째 항목이던 루프가 Code Summit 발표에서는 **첫 번째 규칙** 이다(한국어 해설 — 내레이션은 *앞 압력* · *뒤 압력* 이라고 옮긴다).
+
+- 앞 압력: *"일을 시작시키는 힘입니다."*(01:54~01:56) Horthy 원음(en-orig 단일 트랙)의 예 — 사고가 나면 호출과 함께 PR이 온다: *"when I get page 3 in the morning, I'm looking at a pull request that we think is going to solve it."*(02:08~02:11) (ASR *page 3* 는 새벽 3시의 호출로 읽힌다.)
+- 뒤 압력이 필요한 이유: *"이제 만드는 건 몇 분, 몇 시간이면 끝나는데 리뷰와 테스트는 여전히 며칠씩 걸립니다."*(02:22~02:27) 그래서 투자하는 곳 — 에이전트 코드 리뷰 · 에이전트 테스트 · CI(ASR *CRI*, 추정) · 린터: *"사람이 끼지 않아도 에이전트가 스스로 더 나은 결과를 내게 하는 장치들입니다."*(02:33~02:37)
+- 맞물림: *"요즘 유행하는 루프라는 말을 그는 앞 압력과 뒤 압력이 맞물리는 것으로 봅니다."*(02:38~02:44)
+- ⭐ 기준이 하나 붙었다: *"일은 자동으로 시작되고 사람 손에 닿을 때쯤엔 쉬운 문제는 이미 다 고쳐져 있어야 한다는 겁니다."*(02:44~02:49) — 뒤 압력의 몫은 *쉬운 문제* 까지이고 그다음은 사람이다.
+
+이 페이지 *유보* 에 적은 열린 문제(뒤 압력의 거짓 통과)에 대해서는 원음 조각 하나가 방향만 준다 — 에이전트 리뷰어 · 린터 · 검증기는 *"they are not sufficient."*(11:12) ⚠️ 이유를 말하는 자리는 무캡션이다.

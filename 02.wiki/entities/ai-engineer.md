@@ -3,9 +3,9 @@ title: AI Engineer
 type: entity
 category: org
 tags: [conference, community, events, design]
-sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]
+sources: [tech-bridge-one-designer-plus-ai, tech-bridge-tokens-should-have-jobs, tech-bridge-rlhf-assistance-vs-automation, tech-bridge-oracle-agent-memory-harness, tech-bridge-llamaindex-document-context-layer, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-composio-dashboard-is-dead, tech-bridge-human-is-async-api, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-braintrust-eval-platform-systems-problem, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-codex-app-server, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-factory-bug-report-to-production, tech-bridge-braintrust-agentic-vs-vector-search-eval, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-fireworks-train-to-deploy-open-models, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication, tech-bridge-dex-horthy-twelve-rules-no-slop-factory, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-09-15
-updated: 2026-11-23
+updated: 2026-11-26
 ---
 
 # AI Engineer
@@ -227,3 +227,18 @@ updated: 2026-11-23
 ## 2026-11-23 — CODE Summit 2026 · 샌프란시스코: Google DeepMind의 Gemini 4 훈련 발표 ([[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]])
 
 [[melvin-johnson|Melvin Johnson]]([[google-deepmind|Google DeepMind]])의 발표를 옮긴 한국어 해설. 행사명이 내레이션에서 발화된다: *"11월 샌프란시스코의 AI 엔지니어 코드 서밋."*(00:37~00:39) 설명란 표기는 *AI Engineer CODE Summit 2026*. 그제 올라온 [[tech-bridge-walden-yan-cognition-no-laptop-development]](11월 12일 샌프란시스코)와 같은 행사로 보인다 ⚠️ 이 소스는 날짜(일)를 말하지 않는다. 발표 당일 Gemini 4 Hydrogen이 나왔다고 한다 → [[gemini-4]]
+
+## 2026-11-26 — Code Summit: 선언이 공개된 무대 ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]의 발표를 옮긴 한국어 해설. 설명란 표기는 *AI Engineer Code Summit*, 원 발표 영상은 `-NFMsM2y0Vk`(미열람). ⚠️ 날짜 · 장소는 이 소스에 없다 — 11-23 절의 *11월 샌프란시스코* 행사와 같은 것으로 보이나 이 소스로는 확인되지 않는다.
+
+- 이 행사가 **글의 공동 작성 단위** 로 나온 첫 사례다: *"이 무대에서 덱스는 안티 슬롭 선언을 공개했습니다. 코드 서밋의 연사와 참가자들이 함께 쓴 글입니다."*(09:03~09:07) → [[no-ai-slop-manifesto]](신규)
+- 본보기로 든 것: *"2001년 엔지니어 17명이 스키 산장에 모여 애자일 선언을 썼던 것처럼 이번엔 AI 슬롭에 맞서는 선언을 쓰자는 겁니다."*(09:09~09:15)
+- 같은 행사 발표의 해설이 위키에 넷 쌓였다 — [[tech-bridge-lauren-tan-all-code-is-slop]] · [[tech-bridge-walden-yan-cognition-no-laptop-development]] · [[tech-bridge-thariq-shihipar-human-folder-unacceptable]] · [[tech-bridge-melvin-johnson-gemini-4-post-training-evidence-fabrication]]. 선언의 서명자가 이들 가운데 누구인지는 소스에 없다.
+
+## 2026-11-26 — Code Summit: *Build the Workshop Before the Software Factory* ([[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]](Earendil)의 발표를 [[tech-bridge|Tech Bridge]]가 한국어로 해설했다: *"무대는 11월 AI 엔지니어 코드 서밋. 아르민은 지금 이랜딜이라는 회사에 CTO입니다."*(00:31~00:35)[=Earendil] 발표 제목과 원본 링크(`JNexz3Tbiu8`)는 설명란에 있다(위키 미열람). 주장은 [[workshop-before-factory]](신규) — 공장을 짓기 전에 공방부터.
+
+- 같은 행사의 발표 해설이 이 채널에 이어지고 있다(위 11-17 · 11-23 절). 이 편은 그중 *소프트웨어 공장* 이라는 말에 가장 직접 답한다 — [[software-factory]] 참조.
+- ⚠️ 내레이션은 *11월* 이라고만 한다. 개최 도시와 날짜, 위 11-23 절의 *CODE Summit 2026 · 샌프란시스코* 와 같은 행사인지는 캡션에 없다. 발표자 원음은 두 자막 트랙 모두 무캡션.

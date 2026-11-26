@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [cognitive-load, code-review, human-in-the-loop, verification, spec-driven-development, agents]
 aliases: [cognitive debt, 인지 부채, AI fatigue, AI 피로]
-related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry, review-wip-limit, human-readable-folder]
+related: [verification-bottleneck, cognitive-offloading, read-fluency-for-agent-output, spec-driven-development, generator-evaluator-pattern, trusted-throughput, context-rot, agentic-inquiry, review-wip-limit, human-readable-folder, workshop-before-factory]
 first-seen: tech-bridge-sdd-full-course
-sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-thariq-shihipar-human-folder-unacceptable]
+sources: [tech-bridge-sdd-full-course, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-vercel-rauch-agentic-workflow, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-09-27
-updated: 2026-11-23
+updated: 2026-11-26
 ---
 
 # 인지 부채와 AI 피로
@@ -84,3 +84,14 @@ updated: 2026-11-23
 - 이틀 전 [[tech-bridge-zechner-ronacher-verification-is-overrated]]의 *업계가 이해에서 도망치고 있다* 와 같은 걱정을, 이번에는 에이전트 도구를 만든 쪽 사람이 자기 일로 말한다.
 
 ⚠️ *"그 결과 오히려 진도가 더 나갔다고 털어놓았습니다."*(07:31~07:33) 는 앞뒤 문맥과 맞지 않는다(영어 더빙 ASR도 *more progress*) — 글자 그대로 두었고 근거로 쓰지 않았다. *그 질문들* 의 내용은 무캡션 구간(07:03~07:24)에 있다.
+
+## 2026-11-26 — 이해하는 만큼만: 조건과 장치 ([[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+위 11-21 절에서 *업계가 이해에서 도망치고 있다* 던 [[armin-ronacher|Armin Ronacher]]가 Code Summit 발표에서는 이해를 **속도의 상한** 으로 둔다(한국어 해설 전달 · 원음 무캡션).
+
+- 조건: *"셋째 조건은 내가 이해하는 범위 안에서 일하도록 속도를 조절하라는 겁니다."*(06:43~06:47) → [[workshop-before-factory]](신규)
+- 본인의 사정: *"그 자신도 커밋이 폭발적으로 늘면서 코드를 다 읽을 수 없게 됐습니다."*(06:48~06:50)
+- 장치: *"작업의 70% 쯤 검증으로 넘어가기 직전에 끼어드는 겁니다. 코드를 한 줄씩 읽는 대신 요약을 읽고 방향을 판단합니다."*(07:25~07:31) → [[compressed-review-surface]]
+- 조직의 증상: *"중요한 자리에서 다들 질문을 에이전트에게 돌리고 정작 자기 시스템이 뭘 하는지는 모르는 장면입니다."*(06:36~06:42) — 위 *조직 단위의 증상* 절과 같은 그림을 회의실에서 본 것이다.
+
+위키의 읽기: 인지 부채를 갚는 방법으로 이 페이지가 모은 것은 *읽기*(리뷰) · *구역 정하기*(11-23 절)였다. 이 편은 **끼어드는 시점**(검증 직전)과 **읽는 대상**(요약)을 바꾼다. ⚠️ 요약만 읽어도 이해가 유지되는지에 대한 근거는 없다 — 방법의 설명(06:56~07:25)이 무캡션이고, 엿새 전 편에서 [[mario-zechner|Mario Zechner]]는 자동 수정의 변경 내역까지 *꽤 많이 읽는다* 고 했다. 두 사람의 방식이 다른지는 이 소스로 가릴 수 없다.

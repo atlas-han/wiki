@@ -6,9 +6,9 @@ tags: [durable-execution, workflow-engine, distributed-systems, fault-tolerance,
 aliases: [durable execution, 내구 실행, 내구성 있는 실행, durable workflow, workflow engine]
 related: [agent-distributed-systems, human-as-async-api, agent-harness-design, managed-agents, workflow-vs-agent, deterministic-agent-pipeline, agent-state-machine, brain-hands-decoupling, always-on-agent-architecture]
 first-seen: tech-bridge-human-is-async-api
-sources: [tech-bridge-human-is-async-api, tech-bridge-lee-robinson-always-on-agents]
+sources: [tech-bridge-human-is-async-api, tech-bridge-lee-robinson-always-on-agents, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-10-10
-updated: 2026-10-18
+updated: 2026-11-26
 ---
 
 # Durable Execution — 내구 실행
@@ -79,3 +79,14 @@ updated: 2026-10-18
 - [[tech-bridge-human-is-async-api]] — first-seen ([[temporal]] 직원 발표)
 - 관련: [[agent-distributed-systems]] · [[human-as-async-api]] · [[agent-harness-design]] · [[managed-agents]] · [[brain-hands-decoupling]] · [[workflow-vs-agent]] · [[deterministic-agent-pipeline]] · [[agent-state-machine]] · [[langchain]]
 - 외부: <https://temporal.io> · <https://github.com/temporalio/temporal> (⚠️ 열어 보지 않았다)
+
+## 세 번째 소스 — 코딩 에이전트 하네스가 갖춰야 할 것으로 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[pi-coding-agent|Pi]]를 만드는 [[armin-ronacher|Armin Ronacher]]가 Code Summit 발표에서 *하네스가 바뀌어야 할 것* 의 첫째로 꼽은 것이 이 페이지의 주제와 겹친다(한국어 해설 전달 · 원음 무캡션). ⚠️ 그가 *durable execution* 이라는 말을 썼는지는 캡션으로 알 수 없다 — 아래를 이 페이지에 잇는 것은 위키의 읽기다.
+
+- 짧은 작업은 필요 없다: *"2분 짜리 작업이라면 옆에서 지켜보다 끊겼을 때 다시 돌리면 됩니다."*(09:02~09:04)
+- 긴 작업은 다르다: *"하지만 밤새 이슈 수천 개를 처리하는 에이전트라면 스스로 멈췄다 다시 일어나야 합니다."*(09:05~09:09)
+- 사람을 기다린다: *"사람은 몇 시간 뒤에 답하니 기다림도 견뎌야 합니다."*(09:10~09:12) → [[human-as-async-api]]
+- 비용 때문에도 멈춘다: *"토큰을 할인받는 느린 일정에 맞춰 에이전트와 샌드박스를 잠시 재워 둘 줄도 알아야 하고요."*(09:13~09:17)
+
+앞의 두 소스가 장애 복구와 사람 승인을 동기로 들었다면 여기에는 **토큰 할인 일정** 이라는 세 번째 동기가 더해진다. 배경은 모델 쪽 변화다 — 같은 하네스에서 혼자 일하는 시간이 2.4분에서 14분으로 늘었다는 그의 계측. ⚠️ 구현(이벤트 히스토리 · replay 등)에 대한 말은 없다. 바람인지 Pi에 이미 있는 기능인지도 캡션에 없다.

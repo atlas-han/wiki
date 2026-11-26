@@ -4,11 +4,11 @@ type: concept
 category: theory
 tags: [ai-slop, design, quality, homogenization, generation, taste]
 aliases: [slop, 슬롭, AI slop]
-related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine, human-provenance-value, slopcodebench, compressed-review-surface, high-agency]
+related: [taste-vs-judgment, slop-probes, intentional-out-of-distribution, structured-brand-context, no-one-shot-design, signal-layer, generator-evaluator-pattern, cognitive-offloading, adjective-verb-steering, agent-state-machine, human-provenance-value, slopcodebench, compressed-review-surface, high-agency, no-ai-slop-manifesto]
 first-seen: tech-bridge-taste-labs-measuring-slop
-sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-peter-steinberger-2027-developer, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-all-code-is-slop]
+sources: [tech-bridge-taste-labs-measuring-slop, tech-bridge-impeccable-design-steering, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-one-designer-plus-ai, tech-bridge-brockman-agi-era-defender-window, tech-bridge-skill-engineering-dark-arts, tech-bridge-conductor-orchestras-not-factories, tech-bridge-death-of-code-review, tech-bridge-goodbye-slop-state-machines, tech-bridge-hassabis-fry-creativity-future, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-peter-steinberger-2027-developer, tech-bridge-theo-coding-is-gardening, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 created: 2026-09-12
-updated: 2026-11-17
+updated: 2026-11-26
 ---
 
 # AI 슬롭
@@ -231,3 +231,16 @@ Paul의 정의는 Thais의 *낮은 의도* 를 한 문장으로 압축한다.
 ## 2026-11-17 — *내 것만 빼고* ([[tech-bridge-lauren-tan-all-code-is-slop]])
 
 [[lauren-tan|Lauren Tan]]의 발표 제목 *All Code Is Slop (Except Mine)*. 첫 슬라이드의 농담: *"우리의 영웅적인 4,000줄짜리 PR, 저들의 야만적인 4,000줄짜리 PR."*(01:04~01:07) — 슬롭 판정이 물건이 아니라 *누구 것이냐* 에 달려 있다는 자기 풍자다. 발표의 답은 판정을 사람 눈에서 검사로 옮기는 것이고, 마지막 슬라이드는 *"모든 코드는 슬롭이다. 당신 것만 빼고."*(11:07~11:09)로 뒤집는다.
+
+## 2026-11-26 — 선언의 정의: 만든 노력보다 읽히는 노력이 클 때 ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]가 Code Summit 무대에서 공개한 [[no-ai-slop-manifesto|안티 슬롭 선언]](신규)이 슬롭을 정의한다(한국어 내레이션이 옮긴 문구 — 선언문 원문은 위키 미열람).
+
+- ⭐ 정의: *"만드는 데 들인 노력보다 받는 사람에게 이해하라고 요구하는 노력이 더 큰 것."*(09:29~09:32)
+- AI 사용 여부가 기준이 아니다: *"AI를 썼다고 다 슬롭은 아닙니다. 품질과 읽는 사람의 경험을 책임지지 않고 AI 출력을 넘길 때 슬롭이 됩니다."*(09:33~09:39)
+- 생기는 이유 셋: *"빼기보다 더하기에 쏠린 도구, 사람의 한계를 넘으라고 몰아붙이는 압박, 그리고 복리."*(10:13~10:17) 복리는 이 페이지의 *세대 간 슬롭* 절과 같은 기제다 — *"슬롭이 쌓일수록 다음 에이전트가 그걸 읽고 베낍니다."*(10:19~10:21) 그리고 사람 쪽의 결과: *"그러다 팀은 슬롭과 싸울 의지마저 잃습니다."*(10:23~10:24)
+- 언제 나쁜가: *"슬롭이 나쁜 건 결과를 망칠 때입니다. 쓸모 있는 제품, 유지보수할 수 있는 시스템, 서로의 시간을 아끼는 일을 망칠 때요."*(11:35~11:40)
+- 반대편 — 규칙 8: *"슬롭도 도구다."*(07:25) *"바이브 코딩이나 프로토타입처럼 사람들이 원하기는 하는지부터 알아봐야 할 땐 대충 만든 코드도 괜찮습니다."*(07:25~07:31)
+- 누적의 새 수치: [[slopcodebench|SlopCodeBench]]를 이끄는 Gabe Orlanski의 정리로 전해진 말 — *"슬롭은 사라진 게 아니라 설계 결정으로 자리를 옮겼다."*(04:14~04:16) Horthy 원음(en-orig 단일 트랙): *"the slop is amplifying over time."*(04:48)
+
+위키의 읽기: 이 페이지의 앞선 정의들이 물건의 성질(평균 쏠림 · 누적 · 주의 포획)을 말했다면 이것은 **관계의 정의** 다 — 같은 글 · 같은 PR이 누구에게 어떻게 넘겨지느냐에 따라 슬롭이 되기도 하고 아니기도 하다. 11-17 절의 *내 것만 빼고* 가 풍자한 자리에 기준을 하나 놓은 셈이다. ⚠️ 문구는 전부 내레이션의 한국어 옮김이다.

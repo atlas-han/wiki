@@ -3,11 +3,11 @@ title: "소프트웨어 팩토리 (Software Factory)"
 type: concept
 category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
-related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test, tactical-vs-strategic-programming]
+related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test, tactical-vs-strategic-programming, no-ai-slop-manifesto, workshop-before-factory]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-dex-horthy-twelve-rules-no-slop-factory, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-10-02
-updated: 2026-11-24
+updated: 2026-11-26
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -316,3 +316,27 @@ Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이�
 - 공장 전체는 아니다 — 불을 전부 끈 채 에이전트만 일하는 공장은 싫다고 했다는 전달(10:32~10:34, ASR *공장을 싫다고*)에 이어: *"대신 방마다 밝기를 조절하는 스위치를 달자는 겁니다."*(10:36~10:38)
 
 11-21 절(*돈이 되면 생길 것이고 아직 본 적은 없다*)이 다크 팩토리의 존재를 물었다면 여기서는 **단위** 가 바뀐다 — 켜고 끄는 것은 공장이 아니라 모듈이고, 끌 수 있는 조건은 좁은 입구와 그 입구로 도는 테스트다(위키의 읽기). 같은 대담의 틀로는 전술은 맡기되 전략은 사람이 쥔다는 말이다. → [[tactical-vs-strategic-programming]](신규)
+
+## 2026-11-26 — *그냥 좋은 엔지니어링* : 한 칸만 바뀐 공장의 규칙 12가지 ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]의 Code Summit 발표 해설(내레이션 전달 + en-orig에 잡힌 원음 조각). 10-15 절(반론 3)의 화자가 같은 그림을 다시 그리고 목록을 채웠다.
+
+- 정의: *"그는 결론부터 꺼냅니다. 소프트웨어 공장은 그냥 좋은 엔지니어링이라는 겁니다."*(01:21~01:24) *"에이전트 시대에 바뀌는 건 딱 한 칸입니다. 사람이 만든다가 에이전트가 만든다로 바뀌는 거죠."*(01:38~01:42) *"공장을 새로 짓는 게 아니라 원래 공장의 한 칸을 바꾸는 겁니다."*(01:45~01:48) (10-15의 원음은 *since 1968* 이었고 이 편의 내레이션은 *30년 전부터* 라고 한다 — 가리키는 것이 다를 수 있어 모순으로 올리지 않는다.)
+- 본인은 공장 반대자가 아니라고 한다(원음, 단일 트랙): *"I actually love software factories. I'm a huge fan"*(00:59~01:02)
+- 키우는 방향은 둘 — 일을 시작시키는 앞 압력과 걸러 내는 뒤 압력 → [[back-pressure]]. 목표: *"일은 자동으로 시작되고 사람 손에 닿을 때쯤엔 쉬운 문제는 이미 다 고쳐져 있어야 한다는 겁니다."*(02:44~02:49)
+- 공장의 목적: *"공장의 목적은 사람의 지렛대를 키우는 것, 우리 시간을 가장 값지게 쓰는 것이라고 했습니다."*(08:55~08:59)
+- 해설의 세 줄 정리: *"앞에서 밀고 뒤에서 거는 루프, 기계가 잡을 건 기계에게 맡기는 도구, 그리고 사람이 끝까지 쥐는 판단."*(11:58~12:04)
+- 근거 수치가 갱신됐다: [[slopcodebench|SlopCodeBench]] 엄격 기준 1등이 16.33%(10-15에는 GPT-5.5 14.8%). 그래서 결론은 *"사람이 시스템과 코드를 계속 이해하고 있어야 한다는 겁니다."*(05:14~05:17)
+
+위키의 읽기: 같은 행사의 [[tech-bridge-walden-yan-cognition-no-laptop-development]](기본값은 자율주행)와 [[tech-bridge-lauren-tan-all-code-is-slop]](판정을 검사로)에 견주면 Horthy는 여전히 사람 쪽에 무게를 두지만, 이번에는 *슬롭도 도구다*(시제품 · 수요 확인에는 대충 만든 코드도 괜찮다)와 *검토하지 않은 출력이 다 나쁜 것도 아니다* 를 함께 말한다 — 11-24 절의 *방마다 밝기 스위치* 와 같은 방향이다. 반론 3의 ⚠️ Contradiction(Lauren Tan의 수용과 반대)은 그대로 둔다. 선언은 → [[no-ai-slop-manifesto]](신규).
+
+## 2026-11-26 — 공장보다 공방을 먼저: 시작한 141개와 손보는 열 개 ([[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 [[ai-engineer|AI Engineer]] Code Summit 발표 *Build the Workshop Before the Software Factory*(한국어 해설 전달 · 원음 무캡션). 위 11-21 절에서 *다크 팩토리는 아직 본 적 없다* 던 사람이 엿새 뒤 편에서는 **순서** 를 말한다.
+
+- 첫 슬라이드(내레이션이 옮김): *"모두가 소프트웨어 공장을 지으려 한다. 그런데 자기를 포함한 대부분은 공방에서 이 도구를 잘 쓰는 법 조차 아직 못 배웠다."*(00:38~00:43)
+- 공장이 내놓는 것에 대한 평: *"그가 바라는 건 대량 생산된 슬롭, 그러니까 대충 찍어낸 결과물이 아니라 더 높이 겨누는 훌륭한 소프트웨어입니다."*(00:45~00:51)
+- 자기 숫자: *"여덟 달 동안 AI로 프로젝트를 141개 시작했습니다."*(00:06~00:07) *"그런데 한 달에 닷새 넘게 손본 건 매달 열 개 남짓입니다."*(00:09~00:12) — 에이전트 시간은 하루 여섯 시간에서 마흔세 시간으로 늘었는데 프롬프트 수는 그대로다.
+- 결론: *"완전히 자동화해도 사람이 관심이 떠나면 프로젝트는 멈춥니다."*(04:53~04:55) *"그래서 공장보다 공방을 먼저 짓자는 겁니다."*(05:01~05:02) → [[workshop-before-factory]](신규)
+
+위키의 읽기: 이 페이지의 벤더 보고들은 공장의 **산출**(머지 수 · PR 수)을 세는데 이 발표는 **생존**(한 달에 닷새 넘게 손본 프로젝트)을 센다. 11-21 절의 *공장은 돌아가는데 아무도 안 보고 토큰만 쓰고 있었던 거죠* 에 자기 숫자를 붙인 셈이다. 11-23 절의 [[thariq-shihipar|Thariq Shihipar]](*공장이면서 공방*)가 둘을 나란히 놓는다면 이쪽은 앞뒤로 놓는다. ⚠️ 한 사람의 자기 계측(n=1)이고 팀 단위 공장에 대한 자료는 아니다. 논증의 대부분은 무캡션.

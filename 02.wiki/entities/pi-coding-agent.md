@@ -6,9 +6,9 @@ tags: [coding-agent, open-source, earendil, issue-triage, auto-fix, mario-zechne
 aliases: [Pi, 파이, pi coding agent, Aider (더빙 ASR 오인식), Pie (더빙 ASR 오인식)]
 links:
   - https://github.com/earendil-works/pi
-sources: [tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-26
 ---
 
 # Pi (코딩 에이전트)
@@ -36,3 +36,20 @@ updated: 2026-11-21
 ## References
 
 - [[tech-bridge-zechner-ronacher-verification-is-overrated]] · [[mario-zechner]] · [[armin-ronacher]]
+
+## 두 번째 소스 — 하네스로서의 Pi와 세션 기록 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 Code Summit 발표 해설이 처음으로 Pi가 **무엇인지** 를 한 문장으로 말한다(위 *미해결* 의 첫 항목에 대한 부분적 답): *"근거는 그가 매일 쓰는 코딩 에이전트 파이의 기록입니다. 파이는 모델에게 파일 읽기, 편집, 터미널 같은 도구를 쥐여주는 틀, 하네스입니다."*(01:05~01:12) ⚠️ 해설 전달 — Ronacher 원음은 무캡션이다.
+
+Ronacher가 자기 Pi 세션을 모델별로 나눠 낸 숫자(n=1, 계측 방법은 캡션에 없다):
+
+| 지표 | 값 |
+|---|---|
+| 프롬프트 100개당 바로잡은 횟수 | *"프롬프트 100개당 그가 바로잡은 횟수는 8.5에서 3.9로 줄었습니다."*(02:12~02:16) |
+| ESC로 끈 횟수 | *"중간에 ESC를 눌러 끄는 횟수도 13번에서 일곱 번으로 줄었고요."*(02:16~02:20) (단위 미상) |
+| 프롬프트 하나로 혼자 일한 시간(상위 10% 기준) | *"오퍼스 4.6은 2.4분, 지금의 오퍼스 5.5는 14분입니다. 같은 하네스로 여섯 배 가까이 오래 일합니다."*(02:26~02:32) |
+| 도구 호출 구성 | *"오퍼스 5.5는 SED, CAT, GREP 같은 터미널 명령어에 호출의 43%를 씁니다."*(02:33~02:38) *"보라색 조각은 코드 모드입니다."*(02:39) |
+
+- 해설의 정리: *"하네스는 그대로인데 모델이 바뀌니 에이전트가 일하는 방식이 통째로 바뀐 겁니다."*(02:43~02:46) → [[harness-pruning]]
+- **하네스가 바뀌어야 할 것 둘**(Ronacher): 긴 작업(*"하지만 밤새 이슈 수천 개를 처리하는 에이전트라면 스스로 멈췄다 다시 일어나야 합니다."*(09:05~09:09) → [[durable-execution]])과 코드 모드(*"도구 수천 개를 컨텍스트에 밀어 넣는 대신 에이전트가 자바스크립트로 도구 줄을 엮어 한 번에 돌립니다."*(09:21~09:25)[=도구들을]). ⚠️ 이 둘이 Pi에 이미 있는 것인지 바람인지는 캡션으로 가릴 수 없다 — 다만 Pi 세션 그래프에 *코드 모드* 조각이 있다는 것은 내레이션이 말한다.
+- ⚠️ 영어 더빙 ASR은 이 편에서 이름을 *Pai* 로 적는다(11-20 편은 *Aider* · *Pie*).

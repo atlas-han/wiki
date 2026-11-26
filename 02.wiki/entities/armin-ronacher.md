@@ -8,9 +8,9 @@ links:
   - https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/
   - https://github.com/earendil-works/pi
   - https://www.youtube.com/watch?v=ZBTegd8DUZM
-sources: [tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-26
 ---
 
 # Armin Ronacher
@@ -37,3 +37,16 @@ Python 웹 프레임워크 Flask의 제작자이고 Earendil의 공동 창업자
 ## References
 
 - [[tech-bridge-zechner-ronacher-verification-is-overrated]] · [[pi-coding-agent]] · [[mario-zechner]] · [[named-human-accountability]] · [[ai-formal-verification]]
+
+## 두 번째 소스 — AI Engineer Code Summit 발표: 공장보다 공방, 그리고 자기 계측 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[ai-engineer|AI Engineer]] Code Summit 발표 *Build the Workshop Before the Software Factory*(제목은 설명란)의 한국어 해설. ⚠️ 이번에도 **본인 원음은 두 트랙 모두 무캡션**(열 곳 약 4분 4초)이라 아래는 전부 내레이션이 옮긴 것이다.
+
+- **직함.** *"무대는 11월 AI 엔지니어 코드 서밋. 아르민은 지금 이랜딜이라는 회사에 CTO입니다."*(00:31~00:35)[=Earendil] 위 본문의 *공동 창업자*(11-20 편 설명란)에 CTO가 더해진다 — 어긋나지 않는다. ⚠️ 영어 더빙은 같은 자리에서 회사를 *Sentry* 로 읽는다(tags는 `Earendil`).
+- **주장.** *"모두가 소프트웨어 공장을 지으려 한다. 그런데 자기를 포함한 대부분은 공방에서 이 도구를 잘 쓰는 법 조차 아직 못 배웠다."*(00:38~00:43) → [[workshop-before-factory]](신규)
+- **자기 계측.** 여덟 달 동안 프로젝트 141개를 시작했고 *"그런데 한 달에 닷새 넘게 손본 건 매달 열 개 남짓입니다."*(00:09~00:12) *"하루에 보내는 프롬프트는 100개에서 190개 사이로 거의 평평합니다."*(03:55~03:59) 에이전트가 일한 시간은 하루 여섯 시간에서 마흔세 시간으로 뛰었다 → [[agent-attention-management]]
+- **코드를 다 읽지 못한다.** *"그 자신도 커밋이 폭발적으로 늘면서 코드를 다 읽을 수 없게 됐습니다."*(06:48~06:50) 찾은 방법은 요약 — *"작업의 70% 쯤 검증으로 넘어가기 직전에 끼어드는 겁니다. 코드를 한 줄씩 읽는 대신 요약을 읽고 방향을 판단합니다."*(07:25~07:31) 위의 *사람은 기계가 낸 결과를 이해할 수 있어야 한다* 를 지키는 방식이 *전부 읽기* 가 아니라는 뜻이다. ⚠️ 방법의 설명(06:56~07:25)은 무캡션.
+- **취향.** *"그는 의존성을 줄이고 코드를 직접 짜는 쪽을 좋아합니다."*(07:38~07:40) 그러면서도 제멋대로 자라는 구현(독일어 *Wildwuchs* — 더빙 철자)을 경고하고 표준을 든다: *"표준이 어려운 건 기술이 아니라 사람끼리 합의하는 일이기 때문입니다."*(08:24~08:26) 오픈소스 출신으로서 놀란 것 — *"변경을 원래 프로젝트에 보내는 대신 포크가 수없이 생겨납니다. 그게 더 쉬우니까요."*(08:31~08:35)
+- **힘을 쓸 곳.** *"그의 답은 탁월함입니다."*(08:39) *"검증된 소프트웨어, 더 빠른 소프트웨어, 메모리 안전한 언어로 쓰는 소프트웨어."*(08:41~08:44)
+
+미해결: 도입부가 예고한 *아들과 같은 AI로 PR을 주고받은 이야기*(00:27~00:29)는 캡션 어디에도 없다. 위 *경험이 결과를 바꾼다*(11-20 편, David Cramer 일화)는 이 편의 조건 ② — *"차이를 만드는 건 도구가 아니라 쓰는 사람의 실력이라는 겁니다."*(06:29~06:33) — 와 같은 말이다. 위키는 원본 발표(`JNexz3Tbiu8`)를 열지 않았다.

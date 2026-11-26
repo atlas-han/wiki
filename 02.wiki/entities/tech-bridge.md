@@ -209,8 +209,10 @@ sources:
   - tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages
   - tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama
   - tech-bridge-grace-ableidinger-vibe-vs-agentic-coding
+  - tech-bridge-dex-horthy-twelve-rules-no-slop-factory
+  - tech-bridge-armin-ronacher-workshop-before-software-factory
 created: 2026-06-03
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 
 # Tech Bridge
@@ -1983,3 +1985,26 @@ updated: 2026-11-25
 - 게시 시각 **11-25 07:00 KST**(`upload_date` 20261124, UTC 기준). 설명란의 자료 셋(원본 영상 `h4tHDFCPmQE` · Karpathy X 2025.02.02 · IBM Think *What is agentic coding?* 2026.03.27)은 미열람.
 
 **멤버 전용**: 신규 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 stderr ERROR *members-only*). 대기 목록은 하나. 목록 20편 요청 → **20줄**(전부 `public`). ⚠️ 이 회차부터 `--skip-download --ignore-no-formats-error` 없이 목록을 조회하면 편마다 `ERROR: The page needs to be reloaded.` 로 줄이 하나도 나오지 않는다(20편 요청 → 0줄 + ERROR 20) — 두 옵션을 붙이면 정상.
+
+## 2026-11-25 업로드 — Dex Horthy(슬롭 없는 소프트웨어 공장 12가지 규칙) · Armin Ronacher(공장보다 공방) — 둘 다 AI Engineer Code Summit 발표 해설 (2026-11-26 ingest)
+
+[[tech-bridge-dex-horthy-twelve-rules-no-slop-factory|AI 코딩 공장이 슬롭을 안 내보내는 12가지 규칙 | Dex Horthy]](`4NqFB60bh1U`, 12:13, 공식 챕터 11) — 한국어 해설, [[dex-horthy|Dex Horthy]]의 AI Engineer Code Summit 발표(원본 `-NFMsM2y0Vk`)를 SlopCodeBench 수치 · 규칙 12가지 · 안티 슬롭 선언의 순서로 따라간다 ([[no-ai-slop-manifesto]](신규) · [[dex-horthy]] · [[software-factory]] · [[ai-slop]] · [[slopcodebench]] · [[back-pressure]] · [[expected-pain-planning]] · [[factory-ai]] · [[humanlayer]] · [[openai-astra]] · [[ai-engineer]] · [[hard-vs-soft-enforcement]] · [[agent-platform-layers]] · [[verification-bottleneck]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션. `en-orig`는 **섞여 있다** — 내레이션 자리는 영어 더빙의 ASR(인용하지 않음), 발췌 자리 아홉 곳은 Horthy의 원음. ⚠️ 영상 포맷 목록을 이 회차에도 받지 못해 오디오 트랙 구성은 info.json으로 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- ⚠️ **Horthy 원음은 en-orig 단일 트랙, 교차 확인 없음**(ko-orig의 같은 자리는 `[음악]`). 인용 199건 가운데 본인 원음은 src 기준 20건이고 나머지는 ko-orig 내레이션. 두 트랙 모두 무캡션은 다섯 곳 약 47초 — *그래도 검토하는 이유* 의 본론(10:51~11:04 · 11:15~11:21)이 여기에 든다.
+- ⭐ **Horthy의 두 번째 본인 발표 소스** — 10-15의 [[tech-bridge-horthy-state-of-software-factory]]에서 아홉 개였던 *12 factor factories* 가 번호 열둘로 채워졌고(새 번호: *슬롭도 도구다* · *과하게 계획하지 말라* · *적을 알라* · *포지 통합* · *전부 살 수는 없다*), SlopCodeBench 수치가 14.8%(GPT-5.5)에서 16.33%(GPT-6 Astra, 엄격 기준)로 이어진다.
+- ⭐ **소속 변경**: 내레이션 *휴먼 레이어를 공동 창업했고 최근 팩토리에 합류했습니다*, 설명란 *Factory, 전 HumanLayer CEO*. HumanLayer가 어떻게 됐는지는 소스에 없다.
+- ⚠️ 판독하지 못한 것: Faros 첫 수치가 증가율인지 비율인지(내레이션과 더빙이 갈림) · *엑스 하이*(04:03) · *프리율*(04:12) · *연구실 검증 시험*(03:44) · *에이전트 때는*(10:06) · *코드를 전부 밀라는*(10:44) · 12번째 규칙의 *하네스*(ko-orig에 낱말 없음). 원음 쪽 *page 3* · *per s* · *lters* 는 추정 판독.
+- 게시 시각 **11-25 18:00 KST**. 설명란의 자료 넷(원본 발표 · slopmanifesto.com · Orlanski *Slop Is Moving Up the Stack* · Faros AI *The Acceleration Whiplash*)은 미열람.
+
+[[tech-bridge-armin-ronacher-workshop-before-software-factory|소프트웨어 공장보다 공방을 먼저 지어라 | Armin Ronacher]](`CNiLnRpccLQ`, 10:22, 공식 챕터 10) — 한국어 해설, Flask를 만든 Armin Ronacher(Earendil CTO)의 AI Engineer Code Summit 발표 *Build the Workshop Before the Software Factory* 를 그의 Pi 세션 기록 숫자와 함께 따라간다 ([[workshop-before-factory]](신규) · [[armin-ronacher]] · [[pi-coding-agent]] · [[software-factory]] · [[claude-opus-5-5]] · [[claude-opus-4-6]] · [[agent-attention-management]] · [[cognitive-debt]] · [[compressed-review-surface]] · [[harness-pruning]] · [[standards-as-market-makers]] · [[durable-execution]] · [[cloudflare]] · [[ai-engineer]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션, `en-orig`는 영어 더빙의 ASR(인용하지 않음). ⚠️ 이 회차에도 영상 포맷 목록을 받지 못해(info.json `formats` 비어 있음) 오디오 트랙 구성 · 메타 `language`를 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- ⚠️ **Ronacher 원음은 두 트랙 모두 무캡션** — en-orig 열 곳 약 4분 4초(ko-orig는 `[음악]` 표시로 열여덟 조각). 인용 154건은 전부 ko-orig 내레이션이고 본인 인용은 0.
+- ⚠️ **캡션에 없는 것**: 도입부가 예고한 *아들과 같은 AI로 PR을 주고받은 이야기* · 챕터 제목과 설명란의 *각자 만든 포토샵(복제품)* · 코드 대신 요약을 읽는 방법의 설명 · *심슨 자동차* 가 나오는 대목 · 마지막 챕터의 머리.
+- ⚠️ **영어 더빙이 회사를 *Sentry* 로 읽는다**(00:34) — ko-orig는 *이랜딜*, tags는 `Earendil`. Earendil을 따랐다. 더빙은 Pi를 *Pai* 로 적고, 깨진 맺음 문장(10:10~10:12)을 그대로 옮겨 뜻이 뒤집힌다.
+- ⭐ 같은 사람의 두 번째 소스(11-20 Zechner × Ronacher 편에 이어 엿새 만). 앞 편의 말이 일화와 블로그 문장이었다면 이 편은 **자기 계측 숫자**(바로잡기 8.5 → 3.9 · 혼자 일한 시간 2.4분 → 14분 · 프롬프트 100~190개 · 에이전트 시간 6 → 43시간 · 손보는 프로젝트 6~13개)다. Pi가 무엇인지(*도구를 쥐여주는 틀, 하네스*)도 처음 한 문장으로 나왔다.
+- ⚠️ 숫자가 두 가지로 요약된다 — 도입부 *여덟 달 동안 141개 · 매달 열 개 남짓* 과 본문 *3월 24개에서 10월 141개까지 · 여섯 개에서 열세 개*. 141이 누적인지는 정하지 않았다. 판독하지 못한 것: *척도 내기*(05:10) · *그 AI 별 기록*(03:55) · ESC 횟수의 단위 · *상위 10% 기준* 의 뜻.
+- 게시 시각 **11-26 07:00 KST**(`upload_date` 20261125, UTC 기준). 설명란의 원본 발표(`JNexz3Tbiu8`)는 미열람.
+
+**멤버 전용**: 신규 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 대기 목록은 하나. 목록 20편 요청 → **20줄**(전부 `public`, stderr ERROR 없음 — 목록 조회에도 `--skip-download --ignore-no-formats-error`를 붙였다).

@@ -6,9 +6,9 @@ tags: [platform, compute, sandbox, dev-environment, harness, control-plane, disp
 aliases: [SDLC 4개 레이어, 네 층, control plane, software forge, system of record for sessions]
 related: [harness-as-platform, model-harness-knowledge-stack, multiplayer-agent-context, human-plumbing, harness-engineering, trace-to-memory-loop, software-factory]
 first-seen: tech-bridge-horthy-state-of-software-factory
-sources: [tech-bridge-horthy-state-of-software-factory]
+sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-11-26
 ---
 
 # 코딩 에이전트 플랫폼의 네 층
@@ -42,3 +42,17 @@ updated: 2026-10-16
 ## References
 
 - [[tech-bridge-horthy-state-of-software-factory]]
+
+## 2026-11-26 — *전부 살 수는 없다*: 층마다 다른 답, 그리고 검증 ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+10-15 소스에서 네 층은 한결같이 *buy or build* 였다. [[dex-horthy|Dex Horthy]]의 Code Summit 발표(한국어 해설)는 이것을 열두 번째 규칙으로 올리고 층마다 답을 달리한다: *"마지막 12번째 규칙은 전부 살 수는 없다."*(08:05~08:09)
+
+| 층 | 이번 발표의 답(내레이션) |
+|---|---|
+| 인프라 | *"샌드박스같은 인프라는 사거나 만들면 되고,"*(08:11~08:14) |
+| 하네스(ko-orig에는 낱말이 빠짐 — 더빙으로 추정) | *"클라우드 코드나 코덱스, 팩토리 같은 제품을 사거나 가볍게 직접 짤 수 있습니다."*(08:25~08:29)[=Claude Code · Codex · Factory] |
+| 개발 환경 | *"개발 환경은 팀마다 너무 달라서 직접 갖고 있지 않으면 마찰이 큽니다."*(08:30~08:32) |
+| ⭐ 검증 | Horthy 원음(en-orig 단일 트랙): *"Don't think anyone can sell you verification of your code."*(08:36~08:37) *"You know how to test your code."*(08:44~08:45) |
+
+- control plane은 이번 목록에 이름으로 나오지 않는다. 대신 열한 번째 규칙이 그 자리의 문제를 말한다 — 코드는 GitHub에 모였는데 계획과 결정은 흩어져 있다는 것. 원음: *"you should try to bring those things as close as possible together."*(08:12~08:15) (앞에서 Notion과 Google Docs를 든다.)
+- ⚠️ 위 *유보* 의 *벤더의 틀* 은 조건이 바뀌었다 — 화자는 이제 control plane을 팔던 [[humanlayer|HumanLayer]]가 아니라 하네스 제품을 파는 [[factory-ai|Factory]] 소속으로 소개된다. 그 자리에서 *살 수 없는 것* 을 따로 꼽았다.

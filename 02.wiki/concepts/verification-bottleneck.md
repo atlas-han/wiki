@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-review, verification, throughput, bottleneck, agents]
 aliases: [병목은 검증으로 옮겨갔다, 코드 리뷰 병목]
-related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review, greenfield-vs-brownfield-agent-risk]
+related: [mergeability-gap, automated-code-review, verification-cost-asymmetry, agent-verification-skill, behavior-validated-trust, trusted-throughput, agent-trust-curve, hard-vs-soft-enforcement, generator-evaluator-pattern, structure-sensitive-tests, agent-attention-management, agent-change-evidence, agent-plus-program-analysis, review-wip-limit, cross-model-prior-intersection, three-level-agent-review, greenfield-vs-brownfield-agent-risk, no-ai-slop-manifesto]
 first-seen: tech-bridge-mousepower-measuring-agents
-sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer, tech-bridge-anthropic-30k-merges-verification, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-mousepower-measuring-agents, tech-bridge-lauren-tan-trusting-agents, tech-bridge-ambitious-software-agent-era, tech-bridge-pstack-third-party-review, tech-bridge-graft-code-knowledge-graph, tech-bridge-shift-left-security-ai-code, tech-bridge-death-of-code-review, tech-bridge-dx-ai-impact-trends, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-kimchi-cost-per-task-harness, tech-bridge-agentcraft-strategy-game, tech-bridge-prompt-to-production, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-gitar-agentic-pr-validation, tech-bridge-horthy-state-of-software-factory, tech-bridge-g2i-generation-cheap-evaluation-expensive, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-just-in-time-ontology, tech-bridge-three-level-agent-review, tech-bridge-top-1-percent-ai-habits, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-laurie-voss-product-engineer, tech-bridge-anthropic-30k-merges-verification, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
 created: 2026-09-13
-updated: 2026-11-21
+updated: 2026-11-26
 ---
 
 # 검증 병목
@@ -304,3 +304,15 @@ Voss가 인용한 철회(*"Please please read the code"*)의 당사자 [[dex-hor
 - **처방은 검증 장치를 더하는 쪽이 아니라 읽는 양을 묶는 쪽이다** — *"에이전트가 하루에 만들 코드 양의 한도를 정하라. 내가 실제로 리뷰할 수 있는 만큼만."*(06:37~06:41) → [[review-wip-limit]]. 맺음: *"초록 불을 믿되 안심하지 않는다. 핵심 코드는 직접 읽는다. 그리고 이해를 놓치지 않는다."*(13:34~13:39)
 
 이 페이지의 소스 대부분은 *병목이 검증으로 옮겨갔으니 검증을 자동화 · 계층화하라* 로 간다. 이 소스는 같은 진단(생성은 싸졌다)에서 출발해 **검증 산출물의 양을 신뢰의 근거로 삼는 것** 을 문제 삼는다. 반박이라기보다 한계선이다 — Pi의 자동 수정 조건도 라벨 · 실패하는 테스트 · 통과로, 검증 장치다. ⚠️ 제목의 말을 Zechner가 직접 푼 답(06:55~07:31)은 캡션에 없고, 새 수치도 없다.
+
+## 2026-11-26 — *검증은 아무도 팔아 줄 수 없다* 와 Faros의 수치 ([[tech-bridge-dex-horthy-twelve-rules-no-slop-factory]])
+
+[[dex-horthy|Dex Horthy]]의 Code Summit 발표 해설(내레이션 전달 + en-orig에 잡힌 원음 조각).
+
+- 병목의 크기(Faros AI 보고서, 내레이션 전달 · 위키 미열람): *"개발자 22,000명을 분석한 파로스 보고서를 보면 리뷰 없이 넘어가는 PR이 31.3% 늘었습니다."*(00:41~00:48) *"PR 하나당 사고는 242%, 개발자 한 명당 버그는 54% 늘었습니다."*(00:48~00:52) ⚠️ 기준 기간 미상. 영어 더빙은 첫 수치를 증가율이 아니라 비율로 옮긴다 — 정하지 않았다.
+- 속도 차: *"이제 만드는 건 몇 분, 몇 시간이면 끝나는데 리뷰와 테스트는 여전히 며칠씩 걸립니다."*(02:22~02:27)
+- ⭐ 병목이 밖으로 넘겨지지 않는 이유(원음, 단일 트랙): *"Don't think anyone can sell you verification of your code."*(08:36~08:37) *"Not just a black box you can buy."*(08:47) — 인프라 · 하네스는 살 수 있어도 자기 코드를 어떻게 시험하는지는 그 팀만 안다는 것.
+- 선언의 첫 믿음도 같은 말을 한다: 에이전트는 *"한 사람이 평생 리뷰할 수 있는 양보다 많은 일을 하루만에 만들어냅니다."*(10:06~10:09) → [[no-ai-slop-manifesto]](신규)
+- 재는 것을 바꾸자는 제안: *"중요한 건 코드 줄수나 머지한 PR 수, 동시에 돌리는 에이전트 수가 아니라 무엇을 내보냈고 누가 쓰고 그게 어떻게 돕는가입니다."*(11:20~11:26)
+
+11-21 절(*검증은 과대평가됐다*)과 나란히 놓으면: 그쪽은 검증 산출물의 양을 신뢰의 근거로 삼는 것의 한계를, 이쪽은 검증을 밖에서 사 올 수 없다는 것을 말한다 — 둘 다 사람이 코드를 이해하고 있어야 한다는 데서 만난다(위키의 읽기). → [[review-wip-limit]]

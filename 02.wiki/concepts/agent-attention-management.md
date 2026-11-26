@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, visibility, game-design, accessibility]
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
-related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation, manager-bot-coding-agent-split]
+related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation, manager-bot-coding-agent-split, workshop-before-factory]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-10-09
-updated: 2026-11-17
+updated: 2026-11-26
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -99,3 +99,15 @@ updated: 2026-11-17
 ## 빌더 수의 상한은 사람 — 질문 하나 · 추천안 하나 · 음성 (2026-11-17 · [[tech-bridge-ryan-carson-managing-20-agents]])
 
 [[ryan-carson|Ryan Carson]]은 빌더 에이전트를 5~25개(보통 20개쯤) 돌리고 그 이상은 금방 통제를 잃는다고 한다. *"더 늘리지 못하는 이유는 에이전트가 아니라 사람입니다."*(02:46~02:48) *"매니저와 대화하며 상황을 파악하는 속도가 병목이라는 겁니다."*(02:49~02:51) 그의 인터페이스 답은 셋이다(해설 전달): 사람은 매니저 에이전트 **하나** 하고만 말한다 · 매니저는 **질문 하나에 추천안을 붙여** 올린다 · 대화는 주로 **음성**(글을 빨리 읽지 못해 듣는 쪽이 잘 들어온다는 개인 사정). 마지막 확인은 영상 — 요약을 읽고 영상을 본다.
+
+## 한 사람의 여덟 달 — 프롬프트는 평평하고 에이전트 시간만 뛴다 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 Code Summit 발표 해설이 이 페이지의 진단(*우리가 병목이다*)에 **한 사람의 시계열** 을 붙인다(해설 전달 · 원음 무캡션 · n=1).
+
+- 슬라이드: *"슬라이드 제목은 사람은 그러지 못했다."*(03:28~03:29) *"사람의 주의력은 한정돼 있고 사람을 더 늘릴 수도 없다."*(03:30~03:32)
+- 입력은 평평: *"하루에 보내는 프롬프트는 100개에서 190개 사이로 거의 평평합니다."*(03:55~03:59)
+- 기계 시간은 뛴다: *"그런데 에이전트가 일한 시간은 하루 여섯 시간에서 11월 첫 아흐레에는 마흔 세 시간으로 뛰었습니다."*(04:01~04:05) *"여러 에이전트를 동시에 돌리니 근무 시간에 몇 배가 된 겁니다."*(04:08~04:09)
+- 유지되는 것은 평평: *"하지만 한 달에 닷새 넘게 손본 프로젝트는 매달 여섯 개에서 열 세 개, 이쪽은 평평합니다."*(04:17~04:21) — *"완전히 자동화해도 사람이 관심이 떠나면 프로젝트는 멈춥니다."*(04:53~04:55)
+- 주의력의 바깥 비용: *"깃허브, NPM, 작은 웹사이트처럼 이런 부하를 겪어본 적 없는 곳에 우리가 짐을 지우고 있다고도 덧붙입니다."*(03:34~03:39)
+
+위키의 읽기: 위 11-17 절(빌더 수의 상한은 사람)이 *동시에 몇을 돌릴 수 있나* 를 물었다면 이 자료는 *몇 개가 살아남나* 를 센다 — 병렬 에이전트는 시간을 몇 배로 늘렸지만 한 사람이 꾸준히 손보는 프로젝트 수는 늘리지 못했다. 처방은 UI가 아니라 규모를 줄이는 쪽이다 → [[workshop-before-factory]](신규). ⚠️ *닷새 넘게 손봤다* 의 정의와 계측 방법은 캡션에 없다.

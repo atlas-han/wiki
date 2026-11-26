@@ -4,10 +4,10 @@ type: entity
 category: model
 tags: [anthropic, claude, opus]
 aliases: [Opus 4.6]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-harness-design-long-running-apps, anthropic-claude-code-auto-mode]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-harness-design-long-running-apps, anthropic-claude-code-auto-mode, tech-bridge-armin-ronacher-workshop-before-software-factory]
 links: []
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-11-26
 ---
 
 # Claude Opus 4.6
@@ -35,3 +35,9 @@ updated: 2026-05-25
 - [[anthropic-project-glasswing-update-2026-05]]
 - [[anthropic-harness-design-long-running-apps]]
 - [[anthropic-claude-code-auto-mode]]
+
+## 비교의 기준점으로 — 같은 하네스에서 2.4분 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 [[pi-coding-agent|Pi]] 세션 기록에서 Opus 4.6은 뒤 모델과 견주는 기준점으로 나온다(한국어 해설 전달, n=1): *"이 그래프는 프롬프트 하나를 받은 에이전트가 혼자 일한 시간을 상위 10% 기준으로 보여줍니다."*(02:21~02:25) *"오퍼스 4.6은 2.4분, 지금의 오퍼스 5.5는 14분입니다. 같은 하네스로 여섯 배 가까이 오래 일합니다."*(02:26~02:32) → [[claude-opus-5-5]]
+
+⚠️ 한 사람의 자기 계측이고 계측 방법은 캡션에 없다. 두 모델 사이의 모델들(4.7 등)이 그래프에 있었는지도 캡션으로 알 수 없다.

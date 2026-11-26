@@ -5,9 +5,9 @@ category: pattern
 tags: [harness, claude-code, model-capability, deletion, anthropic]
 related: [agent-harness-design, harness-engineering, self-harness, skill-self-improvement, tools-and-context-over-harness, human-readable-folder]
 first-seen: tech-bridge-claude-code-team-workflow
-sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-thariq-shihipar-human-folder-unacceptable]
+sources: [tech-bridge-claude-code-team-workflow, tech-bridge-bm25-agentic-search, tech-bridge-lopopolo-agent-harness, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-lee-robinson-always-on-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-09-05
-updated: 2026-11-23
+updated: 2026-11-26
 ---
 
 # Harness Pruning
@@ -150,3 +150,13 @@ pruning은 축소가 아니라 **재배치**다.
 - ⚠️ **해설이 두 번 단서를 단다.** *"이건 오비 까지나 그의 전망입니다."*(05:55~05:56)[=어디까지나] *"물론 하네스가 필요 없어진다는 건 그의 전망이고 휴먼 폴더도 본인 말로 아직 초기 실험입니다."*(11:09~11:13)
 - ⚠️ 위의 *지웠던 것을 다시 넣는다*([[tech-bridge-jediah-katz-harness-whats-left]])와 나란히 읽을 것. 보안 검사는 그쪽 분류로는 모델 능력이 아니라 **책임과 검증** 의 문제에 가깝고, *완벽한 모델이라면* 은 조건절이다.
 - 같은 발표에서 그는 하네스를 지우는 대신 **사람 쪽에 구조를 하나 더한다** — [[human-readable-folder]]. 모델을 위한 비계는 줄고 사람을 위한 비계가 생긴다는 점에서 지우기의 반대편 짝이다.
+
+## 2026-11-26 — 사용자 쪽의 계측: *대부분이 더 좋은 모델로 대체됐다*, 그런데 새로 넣을 것 둘 ([[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[pi-coding-agent|Pi]]를 만드는 [[armin-ronacher|Armin Ronacher]]의 Code Summit 발표 해설(해설 전달 · 원음 무캡션).
+
+- 지우기 쪽의 증언: *"프롬프트를 잘 쓰는 요령, 하네스에 거는 묘수. 지난 1년 반 동안 쏟아진 아이디어 대부분이 더 좋은 모델로 대체됐다는 겁니다."*(01:45~01:50)
+- 하네스를 고정하고 모델만 바꾼 숫자(n=1): *"오퍼스 4.6은 2.4분, 지금의 오퍼스 5.5는 14분입니다. 같은 하네스로 여섯 배 가까이 오래 일합니다."*(02:26~02:32) *"하네스는 그대로인데 모델이 바뀌니 에이전트가 일하는 방식이 통째로 바뀐 겁니다."*(02:43~02:46)
+- 그런데 넣을 것도 꼽는다: *"마지막으로 그는 하네스가 바뀌어야 할 것 두 가지를 꼽았습니다."*(08:57~08:58) — 긴 작업을 견디는 실행(스스로 멈췄다 다시 일어나기 · 사람의 늦은 답 기다리기 · 할인 일정에 맞춰 재우기 → [[durable-execution]])과 코드 모드 + 분류 모델.
+
+위키의 읽기: 위 10-24 절(*지웠던 것을 다시 넣는다*)과 같은 모양이다 — 모델이 흡수하는 것은 **모델이 일을 잘하게 돕는 요령** 이고, 새로 필요한 것은 **모델이 오래 · 싸게 · 많이 일하게 하는 실행 기반** 이다. 14분짜리 작업이 2분짜리와 다른 하네스를 요구한다는 것. ⚠️ *대체됐다* 의 예시(01:53~02:11)는 무캡션이라 어떤 요령이 사라졌는지는 모른다.

@@ -3,11 +3,11 @@ title: Cloudflare
 type: entity
 category: org
 tags: [cloud-infrastructure, security, glasswing-partner]
-sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-brockman-agi-era-defender-window]
+sources: [anthropic-project-glasswing-update-2026-05, tech-bridge-brockman-agi-era-defender-window, tech-bridge-armin-ronacher-workshop-before-software-factory]
 links:
   - https://www.cloudflare.com
 created: 2026-05-25
-updated: 2026-09-20
+updated: 2026-11-26
 ---
 
 # Cloudflare
@@ -41,3 +41,9 @@ updated: 2026-09-20
 > ⚠️ 지나가는 언급이다. 제품 자체에 대한 정보는 없고, 권한을 어떻게 줬는지도 소스에 없다.
 
 → [[tech-bridge-brockman-agi-era-defender-window]] · [[codex]] · [[greg-brockman]]
+
+## 코드 모드의 출처로 한 문장 (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 Code Summit 발표 해설에서 Cloudflare는 *코드 모드* 라는 생각의 출처로 나온다(한국어 해설 전달 · 원음 무캡션): *"도구 수천 개를 컨텍스트에 밀어 넣는 대신 에이전트가 자바스크립트로 도구 줄을 엮어 한 번에 돌립니다."*(09:21~09:25)[=도구들을] *"클라우드 플레어에서 나온 생각인데 호기심 수준이던 게 이제는 놀랄 만큼 쓸모 있어졌다고 합니다."*(09:27~09:30) → [[deferred-tool-context]](도구 정의를 컨텍스트에 싣지 않는 다른 방법)
+
+⚠️ 내레이션의 한 문장이다. Cloudflare의 어느 글 · 제품인지는 캡션에 없고 위키는 확인하지 않았다. 위키의 다른 소스들이 *코드 모드* 를 낱말로 쓴 적은 있으나([[tech-bridge-bm25-agentic-search]] 등) 출처를 Cloudflare로 든 것은 이 편이 처음이다.

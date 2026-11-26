@@ -6,9 +6,9 @@ tags: [standards, ecosystem, network-effects, adoption, protocol]
 aliases: [표준이 생태계를 만든다, 보편 채택]
 related: [model-context-protocol, agent-client-protocol, agent-skills, openclaw, agentic-stack-decomposition, intelligence-as-infrastructure]
 first-seen: tech-bridge-acp-universal-remote
-sources: [tech-bridge-acp-universal-remote, tech-bridge-agents-as-catalyst]
+sources: [tech-bridge-acp-universal-remote, tech-bridge-agents-as-catalyst, tech-bridge-armin-ronacher-workshop-before-software-factory]
 created: 2026-09-13
-updated: 2026-09-27
+updated: 2026-11-26
 ---
 
 # 시장을 만드는 표준
@@ -56,3 +56,16 @@ updated: 2026-09-27
 > **AI는 표준화를 이끌고 있습니다. 불일치는 실패 지점이 됩니다.** 팀들은 공통 패턴, 일관된 인터페이스, 공유된 관례를 가질수록 이득을 봅니다. (03:47~04:00)
 
 이 페이지의 논리는 *보편 채택 → 생태계·시장* (수요 쪽)이었다. 이 소스는 *에이전트가 불일치에서 실패한다 → 고칠 유인* (공급 쪽 압력)이다 — 사람은 불일치를 우회하지만 에이전트는 멈추기 때문이다. 둘은 양립한다. MCP·A2A는 그 결과로 *"기본값으로 시스템 간 연결"* 을 가능케 한 사례로 나온다(05:09~05:30). → [[agents-as-catalyst]] · [[model-context-protocol]]
+
+## 구현이 싸지면 해석이 갈라진다 — 포크와 *Wildwuchs* (2026-11-26 · [[tech-bridge-armin-ronacher-workshop-before-software-factory]])
+
+[[armin-ronacher|Armin Ronacher]]의 Code Summit 발표 해설이 표준에 **반대 방향의 압력** 을 보탠다(해설 전달 · 원음 무캡션). 위 09-27 절은 *AI는 표준화를 이끈다* 였는데, 이쪽은 에이전트가 표준을 **흩뜨리는** 쪽을 본다.
+
+- 경고: *"하지만 독일어로 빌트복스, 제멋대로 자라는 성장은 함께 돌아가야 할 소프트웨어를 망가뜨린다고 경고합니다."*(07:45~07:49)[=Wildwuchs — 영어 더빙의 철자]
+- 기제: *"이제 에이전트로 어떤 형식이든 구현할 수 있지만 구현이 늘수록 해석도 갈라집니다."*(07:56~07:59) 사례로 든 것 — *"최근에는 TAR 압축 파일 하나를 구현마다 다르게 읽도록 만든 사례가 화제가 됐습니다."*(07:51~07:55) ⚠️ 출처는 캡션에 없다.
+- 그래서: *"열린 프로토콜과 공동 파일 형식의 중요하다고 말합니다."*(08:21~08:23)[=공통 파일 형식이] *"표준이 어려운 건 기술이 아니라 사람끼리 합의하는 일이기 때문입니다."*(08:24~08:26)
+- 오픈소스에서 보이는 증상: *"변경을 원래 프로젝트에 보내는 대신 포크가 수없이 생겨납니다. 그게 더 쉬우니까요."*(08:31~08:35)
+
+> ⚠️ Contradiction(부분): 09-27 절의 [[tech-bridge-agents-as-catalyst]]는 에이전트의 실패가 표준화를 부른다고 보고, 이 편은 에이전트가 구현 비용을 낮춰 각자 만들고 포크하게 해 표준을 약하게 한다고 본다. 서로 다른 층(에이전트가 *쓰는* 인터페이스 vs 에이전트로 *만드는* 소프트웨어)을 말하고 있어 직접 충돌은 아니나 방향은 반대다.
+
+⚠️ 08:02~08:21은 무캡션 — 챕터 제목 *각자 만든 포토샵* 의 내용은 캡션에 없다. 수치 없음.
