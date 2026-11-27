@@ -211,8 +211,10 @@ sources:
   - tech-bridge-grace-ableidinger-vibe-vs-agentic-coding
   - tech-bridge-dex-horthy-twelve-rules-no-slop-factory
   - tech-bridge-armin-ronacher-workshop-before-software-factory
+  - tech-bridge-steve-yegge-software-factories-trash-mountain
+  - tech-bridge-chase-ai-mcp-2-0-biggest-upgrade
 created: 2026-06-03
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # Tech Bridge
@@ -2008,3 +2010,27 @@ updated: 2026-11-26
 - 게시 시각 **11-26 07:00 KST**(`upload_date` 20261125, UTC 기준). 설명란의 원본 발표(`JNexz3Tbiu8`)는 미열람.
 
 **멤버 전용**: 신규 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). 대기 목록은 하나. 목록 20편 요청 → **20줄**(전부 `public`, stderr ERROR 없음 — 목록 조회에도 `--skip-download --ignore-no-formats-error`를 붙였다).
+
+## 2026-11-26 업로드 — Steve Yegge(소프트웨어 공장과 쓰레기 산, AI Engineer Code Summit 발표 해설) · Chase AI(MCP 업그레이드 넷 — Skills · Tasks · Elicitation · File Uploads) (2026-11-27 ingest)
+
+[[tech-bridge-steve-yegge-software-factories-trash-mountain|AI 에이전트 공장은 왜 결국 쓰레기 산이 될까 | Steve Yegge]](`L8_-Oyn7kic`, 11:56, 공식 챕터 10) — 한국어 해설, Gas Town을 만든 Steve Yegge의 AI Engineer CODE Summit 발표 *Software Factories: Escape from Trash Mountain* 을 따라간다 ([[steve-yegge]](신규) · [[trash-mountain]](신규) · [[agent-attention-management]] · [[agent-manager-analogy]] · [[agent-memory]] · [[agent-platform-layers]] · [[agent-trust-curve]] · [[ai-engineer]] · [[back-pressure]] · [[fable-5-2]] · [[persistent-agent-teams]] · [[software-factory]] · [[token-roles]] · [[workshop-before-factory]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션, `en-orig`는 영어 더빙의 ASR(더빙 문장은 인용하지 않음). ⚠️ 이 회차에도 영상 포맷 목록을 받지 못해(info.json `formats` 비어 있음) 오디오 트랙 구성 · 메타 `language`를 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- ⭐ **Yegge 원음은 한 마디만 잡혔다** — *And then it just turns into garbage mountain. Every single time.*(00:10~00:15, ko-orig · en-orig 두 트랙 모두). 나머지 발췌 자리는 두 트랙 모두 무캡션: en-orig 여덟 곳 약 4분 2초(ko-orig는 `[음악]` 표시로 열 조각). 인용 191건 가운데 본인 인용은 이 한 마디(되풀이 인용 포함)이고 나머지는 전부 ko-orig 내레이션.
+- ⚠️ **캡션에 없는 것**: 공장이 처음엔 좋다가 *그 다음* 어떻게 되는지 · 플레이어들이 해 왔다는 부탁의 본문 · 커뮤니티 책임자 에이전트 Lark에게 무슨 일이 있었는지 · *겁먹은 공장은 어떻게 될까* 의 답 · 마지막 슬라이드 앞의 대목.
+- ⚠️ **소스 안에서 갈리는 것 둘**: 내레이션(과 더빙)은 *18년 동안* 공장을 여섯 번, 설명란은 *18개월 동안*. 내레이션의 다섯 기사는 *일 · 연료 · 컨텍스트 · 기술 부채 · 직원*, 설명란은 *일 · 연료 · 컨텍스트 · 직원 · 신뢰*. 둘 다 정하지 않았다. 기술 부채는 이름만 불린다.
+- ⭐ 사흘 사이 같은 행사의 소프트웨어 공장 발표 해설 셋째(11-25 Horthy · 11-26 Ronacher에 이어). 앞의 둘이 규칙과 순서였다면 이 편은 공장을 가장 크게 굴린 쪽의 운영 보고다(에이전트 50개 · 구독 계정 22개 · 하루 토큰 50억 개). Gas Town · Beads는 10-15 Horthy 편에서 이름으로만 나왔었다.
+- 판독하지 못한 것: 공장 이름 *바이브 코드* · *알라모스*(더빙 *Al Ramos*) · 01:58~02:00의 깨진 문장 · *컴퓨터는 노안 올 지경*(03:16~03:18) · 60년치의 환산 근거. *비짓* 은 tags · 설명란을 따라 Beads로 읽었다(더빙 *Visit*).
+- 게시 시각 **11-26 18:00 KST**(`upload_date` 20261126). 설명란의 원본 발표(`SRhXgeNluIk`) · Gas Town · Beads 저장소는 미열람.
+
+[[tech-bridge-chase-ai-mcp-2-0-biggest-upgrade|2년 만의 가장 큰 MCP 업그레이드가 나왔다 | Chase AI]](`3vgJQxYQBAg`, 8:38, 공식 챕터 10) — 한국어 해설, [[chase-ai|Chase AI]]의 영상을 따라 Anthropic이 MCP에 한꺼번에 더한 네 가지(Skills over MCP · Tasks · Elicitation · File Uploads)를 MCP가 남긴 구멍 넷과 짝지어 본다 ([[mcp-elicitation]](신규) · [[model-context-protocol]] · [[mcp-skill-distribution]] · [[agent-skills]] · [[deferred-tool-context]] · [[hard-vs-soft-enforcement]] · [[chase-ai]] · [[anthropic]] · [[claude-code]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션, `en-orig`는 영어 더빙의 ASR(내레이션 자리는 인용하지 않음). ⚠️ 이 회차에도 영상 포맷 목록을 받지 못해(info.json `formats` 비어 있음) 오디오 트랙 구성 · 메타 `language`를 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- **Chase 원음은 두 대목만 캡션에 있다**(00:22 *This is basically MCP 2.0.* · 08:05~08:21 CLI에서 MCP로 다시 생각해 볼 때라는 말) — 두 트랙 모두에 영어로 잡혀 교차 확인. ⚠️ 나머지 발췌 자리 일곱 곳(en-orig 기준 약 2분 26초, ko-orig는 열한 조각)은 두 트랙 모두 무캡션. 인용 134건 기계 대조 불일치 0.
+- ⚠️ **캡션에 없는 것**: 구멍 넷 가운데 둘째(*기다림* — 이름만 뒤에서 나온다)의 설명 · 열쇠 꾸러미 비유의 본론 · Tasks의 *번호표* 비유 · 되묻기 소개 직후의 설명 · 데모에서 스킬을 돌려 보는 장면 · *만드는 사람* 쪽 설명의 머리.
+- ⚠️ **3차 전달**: Anthropic 발표 글(2026-11-24, 설명란 표기) → Chase의 영상(`jVTyW6gosOE`) → 이 해설. 셋 다 원문은 미열람. *MCP 2.0* 은 Chase의 표현이고 공식 버전 이름이 아니다. 상태는 내레이션 기준으로 Skills over MCP 공개 베타 · File Uploads 미출시 · Tasks와 Elicitation은 발화 없음.
+- ⭐ 10-13 Runlayer 편에서 *워킹 그룹 · API 미확정* 이던 skills over MCP가 제품으로 나왔다는 첫 소스. 다만 운반되는 스킬의 주인이 다르다(회사의 스킬 vs 서버 제공자의 스킬) — [[mcp-skill-distribution]]에 적었다. *MCP → CLI + 스킬*(09-27) · 사망론 기각(10-13)에 이은 CLI 논쟁의 세 번째 자료이기도 하다.
+- ⚠️ 판독하지 못한 것: *에이전트 로봇 전체*(04:05~04:08 — *에이전트 루프* 로 보임) · *서버를 열었으면 … 85%*(06:07~06:11 — 조건과 출처 미상) · *그냥 대시를 쓰라더니*(07:51 — *배시* 로 보임) · *스캔 목록*(06:33~06:36 — *스킬 목록* 으로 읽음, 추정) · *주민 폼*(04:30 — 더빙 철자 ZoomInfo, 추정).
+- 게시 시각 **11-27 07:00 KST**(`upload_date` 20261126, UTC 기준). Chase AI는 11-12 편(자막 재게시)에 이은 두 번째 소스이고 이번은 해설 형식이다.
+
+**멤버 전용**: 신규 **`Axljw6ngT6A`**(*AI 시대의 병목은 토큰이 아니라 야망이다 | Thariq Shihipar*, 12:28, 목록 `upload_date` 20261126 — 목록 줄로 나옴, `subscriber_only`) — 건너뜀, 페이지 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). **대기 목록은 둘.** 목록 20편 요청 → **20줄**(stderr ERROR 없음, 19편 `public` + 1편 `subscriber_only`).

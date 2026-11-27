@@ -6,9 +6,9 @@ tags: [loops, feedback, verification, triggers, agents, software-factory, hill-c
 aliases: [back pressure, backpressure, forward pressure, 역압, 순방향 압력, 역방향 압력]
 related: [loop-is-the-product, agent-verification-skill, agent-visual-qa, scheduled-agent-automations, feedforward-feedback-steering, human-plumbing, verifiable-goals, software-factory, linear-vs-closed-loop-harness, hard-vs-soft-enforcement]
 first-seen: tech-bridge-horthy-state-of-software-factory
-sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
+sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-10-16
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # 백 프레셔 (Back Pressure)
@@ -53,3 +53,13 @@ updated: 2026-11-26
 - ⭐ 기준이 하나 붙었다: *"일은 자동으로 시작되고 사람 손에 닿을 때쯤엔 쉬운 문제는 이미 다 고쳐져 있어야 한다는 겁니다."*(02:44~02:49) — 뒤 압력의 몫은 *쉬운 문제* 까지이고 그다음은 사람이다.
 
 이 페이지 *유보* 에 적은 열린 문제(뒤 압력의 거짓 통과)에 대해서는 원음 조각 하나가 방향만 준다 — 에이전트 리뷰어 · 린터 · 검증기는 *"they are not sufficient."*(11:12) ⚠️ 이유를 말하는 자리는 무캡션이다.
+
+## 2026-11-27 — 이름이 닮은 다른 힘: 정리에만 쓰는 예산 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]의 공장 발표(한국어 해설 전달)에 *반대로 미는 힘* 이라는 말이 나온다. 더빙은 *counter-pressure* 로 옮긴다 — ⚠️ 원음은 무캡션이라 그가 *back pressure* 라는 낱말을 썼는지는 알 수 없다.
+
+- *"그래서 그는 반대로 미는 힘을 공장에 넣으라고 합니다."*(06:40~06:42) *"토큰 예산의 일정 비율은 정리에만 쓰고 뭔가 더하기 전에 먼저 지우거나 줄이게 합니다."*(06:44~06:48)
+- 겨누는 것은 에이전트들이 쌓는 기록이다: *"사장이 마음을 바꿀 때마다 기록은 계속 쌓입니다."*(05:55~05:57)
+- 일의 흐름 쪽에도 같은 모양이 있다 — 아침마다 *"너무 빨리 달린 쪽은 사람의 승인을 기다리게 늦춥니다."*(05:07~05:09)
+
+이 페이지의 back pressure는 에이전트가 결과를 스스로 고쳐 나가게 하는 **피드백 신호** 다. Yegge의 것은 쌓이는 **양** 을 줄이는 예산이고 신호가 아니다. 같은 개념으로 합치지 않고 이웃으로 적어 둔다 → [[trash-mountain]]

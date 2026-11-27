@@ -5,9 +5,9 @@ category: architecture
 tags: [software-factory, autonomy, sdlc, orchestrator-worker-validator, model-routing, verification, continuous-improvement, agent-org, factory-engineering, skill-loop, data-plane, open-source]
 related: [orchestras-not-factories, defense-factory, loop-is-the-product, automatic-model-routing, deferred-tool-context, agent-readiness, generator-evaluator-pattern, sprint-contract, agent-swarm, verifiable-goals, reward-hacking, agent-org-adoption, outcome-engineering, codebase-gardening, model-mixing-economics, verification-bottleneck, factory-engineering, build-in-the-open, skill-self-improvement, spec-driven-development, risk-proportional-human-review, slop-cannon, automated-code-review, inner-outer-meta-loops, agent-trust-curve, back-pressure, expected-pain-planning, agent-platform-layers, model-swap-acid-test, tactical-vs-strategic-programming, no-ai-slop-manifesto, workshop-before-factory]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-dex-horthy-twelve-rules-no-slop-factory, tech-bridge-armin-ronacher-workshop-before-software-factory]
+sources: [tech-bridge-factory-software-factory, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-pocock-pr-bottleneck, tech-bridge-kent-beck-craft-augmented-development, tech-bridge-agentcraft-strategy-game, tech-bridge-lauren-tan-pocock-podcast-full, tech-bridge-tessl-harness-engineering-factory, tech-bridge-cooking-with-codex, tech-bridge-horthy-state-of-software-factory, tech-bridge-factory-bug-report-to-production, tech-bridge-anthropic-30k-merges-verification, tech-bridge-lauren-tan-all-code-is-slop, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nadella-pragmatic-engineer-after-code-is-cheap, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-walden-yan-cognition-no-laptop-development, tech-bridge-thariq-shihipar-human-folder-unacceptable, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-dex-horthy-twelve-rules-no-slop-factory, tech-bridge-armin-ronacher-workshop-before-software-factory, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-10-02
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # 소프트웨어 팩토리 (Software Factory)
@@ -340,3 +340,18 @@ Lightcone 인터뷰 해설: *"진행자들은 이걸 소프트웨어 공장이�
 - 결론: *"완전히 자동화해도 사람이 관심이 떠나면 프로젝트는 멈춥니다."*(04:53~04:55) *"그래서 공장보다 공방을 먼저 짓자는 겁니다."*(05:01~05:02) → [[workshop-before-factory]](신규)
 
 위키의 읽기: 이 페이지의 벤더 보고들은 공장의 **산출**(머지 수 · PR 수)을 세는데 이 발표는 **생존**(한 달에 닷새 넘게 손본 프로젝트)을 센다. 11-21 절의 *공장은 돌아가는데 아무도 안 보고 토큰만 쓰고 있었던 거죠* 에 자기 숫자를 붙인 셈이다. 11-23 절의 [[thariq-shihipar|Thariq Shihipar]](*공장이면서 공방*)가 둘을 나란히 놓는다면 이쪽은 앞뒤로 놓는다. ⚠️ 한 사람의 자기 계측(n=1)이고 팀 단위 공장에 대한 자료는 아니다. 논증의 대부분은 무캡션.
+
+## 2026-11-27 — 공장은 매번 쓰레기 산이 된다: 여섯 번 지은 사람의 운영 보고 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]](신규)의 [[ai-engineer|AI Engineer]] CODE Summit 발표 *Software Factories: Escape from Trash Mountain*(한국어 해설 전달 · 원음은 한 마디만 캡션). 위 11-26 두 절과 같은 행사에서 나온 세 번째 공장 발표다.
+
+- 본인 발화: *"And then it just turns into garbage mountain. Every single time."*(00:10~00:15)
+- 해설의 정의: *"소프트웨어 공장은 AI 에이전트 여럿이 알아서 코드를 짜고 리뷰하고 배포하는 시스템입니다."*(00:39~00:43)
+- 이력: 공장을 여섯 번 지었다(내레이션 *18년 동안*, 설명란 *18개월 동안* — 정하지 않음). *"그중 게스타운은 올해 첫 날 공개한 그가 첫 번째 소프트웨어 공장이라 부르는 물건입니다."*(00:53~00:56)[=Gas Town]
+- 규모: *"이 공장은 에이전트 50개 정도가 동시에 돌아갑니다."*(03:26~03:28) *"토큰은 하루 50억 개쯤 씁니다."*(04:07)
+- 공장만 짓는 사람들에 대한 평: *"다들 공장을 만드는 공장만 만든다는 거죠."*(02:02~02:04) — 그의 공장은 30년 된 게임 Wyvern을 만든다.
+- 받는 쪽: *"그의 공장은 넉 달 만에 60년치 일을 해치웠습니다. 그런데 그 결과를 받은 사람들은 제발 늦춰달라고 했습니다."*(00:17~00:22)
+- 공장을 괴롭히는 것들(일 · 연료 · 컨텍스트 · 기술 부채 · 직원)과 *신뢰는 돈이다* → [[trash-mountain]](신규)
+- 결론(마지막 슬라이드, 내레이션이 옮김): *"그러니 사람은 여전히 많이 필요하다."*(11:31)
+
+위키의 읽기: 이 페이지의 회의론은 대개 공장 밖에서 나왔다. 이 절은 **가장 크게 굴려 본 쪽의 내부 보고** 다 — 그리고 결론이 회의론자들과 같은 곳(사람)에 닿는다. Horthy(규칙 열둘)가 공장을 고치는 법을, Ronacher(공방 먼저)가 순서를 말했다면 Yegge는 **허물고 다시 짓는 주기** 를 말한다: *"그래서 그는 오늘도 두 달마다 공장을 허물고 다시 짓습니다."*(11:51~11:53)(해설의 맺음) ⚠️ 한 사람의 공장 하나이고 수치는 자기 보고다. 구독 계정 스물두 개라는 전제는 본인도 회사에서는 못 한다고 한다. 발표 발췌 여덟 곳(약 4분 2초)은 무캡션.

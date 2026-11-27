@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes, tech-bridge-anthropic-founders-secret-making-of-anthropic]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes, tech-bridge-anthropic-founders-secret-making-of-anthropic, tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-24
+updated: 2026-11-27
 ---
 
 # Anthropic
@@ -277,3 +277,13 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - **Mythos.** *"미토스를 일반에 풀지 않고 방어하는 쪽에 먼저 줬습니다."*(08:44~08:47) → [[project-glasswing]] · [[claude-mythos-preview]]
 
 ⚠️ 당사자 진술이고 독립 확인이 없다. 회사 이름이 정해진 경위(챕터 *이름은 도메인 값으로*) · *헬리콥터 테스트* · 급여 · OpenAI를 떠난 이유는 무캡션 구간에 있거나 소스에 없다 — 적지 않는다. 제목의 Jack Clark 문장도 캡션에 없다.
+
+## 2026-11-27 — MCP 2년: 스킬 · Tasks · 되묻기 · 파일 업로드 ([[tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]])
+
+한국어 해설이 [[chase-ai|Chase AI]]의 영상을 거쳐 전한 것(발표 글 *MCP servers can now ship skills, run tasks, and more*, 2026-11-24 — 제목 · 날짜는 설명란, 위키 미열람).
+
+- *"엔트로픽이 2년 전에 내놓았습니다."*(00:38)[=Anthropic — MCP] *"엔트로픽이 한꺼번에 내놓은 변화는 네 가지. 스킬, 태스크 엘리시테이션, 그리고 파일 업로드입니다."*(00:15~00:20) → [[model-context-protocol]] · [[mcp-elicitation]](신규) · [[mcp-skill-distribution]]
+- 제품 쪽 조건: Skills over MCP는 공개 베타 — *"클라우드와 클라우드 코드의 프로, 맥스, 울트라 요금제에서는 기본으로 켜져 있습니다."*(03:27~03:31)[=Claude와 Claude Code]
+- 규격의 자리: *"네 기능 모두 열린 MCP 규격의 일부라 클라우드가 아닌 다른 호환 클라이언트에서도 돌아갑니다."*(07:35~07:40)
+
+⚠️ 3차 전달이고 발표 글의 문구는 대조하지 않았다. 사례로 든 회사(Shopify · HubSpot · Atlassian · Carta · ZoomInfo · Supabase · Railway)는 내레이션의 열거다.

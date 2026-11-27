@@ -6,9 +6,9 @@ tags: [platform, compute, sandbox, dev-environment, harness, control-plane, disp
 aliases: [SDLC 4개 레이어, 네 층, control plane, software forge, system of record for sessions]
 related: [harness-as-platform, model-harness-knowledge-stack, multiplayer-agent-context, human-plumbing, harness-engineering, trace-to-memory-loop, software-factory]
 first-seen: tech-bridge-horthy-state-of-software-factory
-sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory]
+sources: [tech-bridge-horthy-state-of-software-factory, tech-bridge-dex-horthy-twelve-rules-no-slop-factory, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-10-16
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # 코딩 에이전트 플랫폼의 네 층
@@ -56,3 +56,13 @@ updated: 2026-11-26
 
 - control plane은 이번 목록에 이름으로 나오지 않는다. 대신 열한 번째 규칙이 그 자리의 문제를 말한다 — 코드는 GitHub에 모였는데 계획과 결정은 흩어져 있다는 것. 원음: *"you should try to bring those things as close as possible together."*(08:12~08:15) (앞에서 Notion과 Google Docs를 든다.)
 - ⚠️ 위 *유보* 의 *벤더의 틀* 은 조건이 바뀌었다 — 화자는 이제 control plane을 팔던 [[humanlayer|HumanLayer]]가 아니라 하네스 제품을 파는 [[factory-ai|Factory]] 소속으로 소개된다. 그 자리에서 *살 수 없는 것* 을 따로 꼽았다.
+
+## 2026-11-27 — 두 층으로 본 공장: 아래층은 사지 말라 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]의 공장 발표(한국어 해설 전달)는 층을 넷이 아니라 둘로 자른다.
+
+- *"그는 소프트웨어 공장이 두 층으로 갈라지고 있다고 봅니다."*(10:34~10:36)
+- 아래층: *"아래층은 머지 큐, CICD, 리뷰 같은 기계적인 부분입니다."*(10:38~10:40)[=CI/CD] — *"오후 한 나절이면 만들어주니 돈 주고 사지 말라고 했습니다."*(10:42~10:44)(만들어 주는 것은 Claude)
+- 위층: *"진짜 어려운 건 위층입니다. 누구는 연구실처럼, 누구는 보헤미안 모임처럼 저마다 다른 방식으로 공장을 운영합니다."*(10:45~10:52) 공통점은 *"다들 에이전트 비서 실장을 두고 결국 측근 집단을 거느리게 된다는 겁니다."*(10:53~10:57)
+
+위 11-26 절과 견주면: Horthy는 층마다 *사거나 만든다* 고 하고 살 수 없는 것으로 검증을 꼽았다. Yegge는 기계적인 층 전체를 *사지 말라* 쪽에 놓고 어려운 것을 **운영 방식**(사람과 에이전트의 조직)에 둔다. 두 사람의 층 나누기가 서로 대응하는지는 소스로 정해지지 않는다 — Yegge의 아래층에는 compute · 샌드박스가 이름으로 나오지 않는다. ⚠️ 벤더의 말(Horthy는 Factory 소속으로 소개됨)과 혼자 공장을 굴리는 사람의 말이라는 차이도 있다.

@@ -5,9 +5,9 @@ category: technique
 tags: [tools, tool-bloat, progressive-disclosure, context-engineering, lazy-loading, mcp, tokens]
 related: [toolbox-pattern, context-engineering, agent-skills, context-rot, context-resets-and-compaction, model-context-protocol, agent-tool-design-practices, software-factory, push-vs-pull-context-retrieval, harness-as-platform, codex-app-server, embedded-agent-harness, prompt-caching, context-failure-modes, usage-based-tool-pruning]
 first-seen: tech-bridge-factory-software-factory
-sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-ai-labs-token-economizer]
+sources: [tech-bridge-factory-software-factory, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-codex-app-server, tech-bridge-lee-robinson-always-on-agents, tech-bridge-context-engineering-four-failure-modes, tech-bridge-ai-labs-token-economizer, tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]
 created: 2026-10-02
-updated: 2026-11-04
+updated: 2026-11-27
 ---
 
 # 지연 도구 컨텍스트 (Deferred Tool Context)
@@ -118,3 +118,13 @@ updated: 2026-11-04
 [[token-economizer|Token Economizer]]는 이 페이지의 답들과 달리 **지난 세션의 사용 기록**으로 고른다 → [[usage-based-tool-pruning]]. 뺀 도구는 *"A tool the plugin turned off stays off in that project"*(09:59~10:01)이고 사람이 복구 명령을 돌린다. Factory의 *숨겨져 있을 뿐*과 반대쪽이다. Uber의 정적 범위 지정처럼 실행 전에 정하지만, 기준이 플랫폼 설정이 아니라 사용 기록이다.
 
 ⚠️ 발표자 데모의 34,300 → 24,400 토큰 ÷ 276개는 도구당 약 36토큰이다(위키 계산, 276개가 측정 대상과 같다고 가정). 전체 스키마라기엔 작아 이미 지연 로딩된 환경의 이름 목록일 수 있다(추정). 발표자는 *"the list of every tool"*(01:54~01:56)이라고만 하고 지연 로딩을 말하지 않는다. 두 기법을 겹쳤을 때의 추가 이득은 측정되지 않았다.
+
+## 2026-11-27 — MCP 쪽의 답 셋: 스킬은 부를 때만 · 파일은 대화 밖으로 · 도구 검색 ([[tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]])
+
+MCP에 대한 올해의 불만을 해설은 이렇게 옮긴다: *"도구 설명을 컨텍스트를 잡아먹는다는 불만도 컸습니다."*(07:46~07:48)[=도구 설명이] [[anthropic|Anthropic]]이 MCP에 더한 것들 가운데 셋이 이 불만을 겨눈다(한국어 해설 전달).
+
+- 스킬: *"스킬을 전부 대화에 밀어넣지도 않습니다. 필요할 때만 부르니 컨텍스트를 적게 씁니다."*(03:02~03:05)
+- 파일: *"대화에는 파일 이름과 크기 같은 정보만 오가고 실제 파일 내용은 서버가 알려준 주소로 따로 올라갑니다."*(05:42~05:48) — 도구 **설명** 이 아니라 도구에 넘기는 **데이터** 를 미루는 것이라 이 페이지의 범위를 한 칸 넓힌다(File Uploads는 미출시).
+- 도구 검색: *"도구 검색은 도구 설명을 필요할 때만 불러와 서버를 열었으면 컨텍스트를 85% 넘게 줄입니다."*(06:07~06:11) ⚠️ *서버를 열었으면* 은 ASR 판독 불가이고 85%의 출처 · 측정 조건은 캡션에 없다. 위 10-14 · 10-18 절의 tool search와 같은 것으로 보이나 소스가 잇지 않는다.
+
+[[chase-ai|Chase]]가 CLI에서 MCP로 돌아설 근거로 드는 것도 이것이다 — *"just from sort of the context wins alone, it might be worth it to start transitioning from CLIs to MCPs"*(08:13~08:18).

@@ -6,9 +6,9 @@ tags: [memory, agent, experience, retrieval, cache]
 aliases: [에이전트 메모리, Memory]
 related: [retrieval-augmented-generation, agent-knowledge-sourcing, context-engineering, agent-distributed-systems, skill-self-improvement, no-silent-write, company-brain, sweeper-agent, files-vs-database-agent-memory, context-rot, agent-dreaming, production-memory-guardrails, trace-to-memory-loop, langsmith]
 first-seen: tech-bridge-agent-knowledge-four-ways
-sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-annie-wang-harness-four-designs, tech-bridge-nick-saraev-shortest-claude-code-course]
+sources: [tech-bridge-agent-knowledge-four-ways, tech-bridge-agents-as-distributed-systems, anthropic-managed-agents, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-tokens-should-have-jobs, tech-bridge-oracle-agent-memory-harness, tech-bridge-anthropic-dreaming-memory, tech-bridge-cooking-with-codex, tech-bridge-langchain-learning-agent-memory, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-context-engineering-four-failure-modes, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-annie-wang-harness-four-designs, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-09-08
-updated: 2026-11-05
+updated: 2026-11-27
 ---
 
 # Agent Memory
@@ -247,3 +247,15 @@ updated: 2026-11-05
 ## 입문자에게 주는 첫 메모리: `/init` (2026-11-05 · [[tech-bridge-nick-saraev-shortest-claude-code-course]])
 
 [[nick-saraev|Nick Saraev]](설명란 근거)는 메모리를 세션 사이의 공백으로 설명한다: *"a new session doesn't remember what you talked about in the last one unless you have some sort of memory."*(02:25~02:28) 처방은 *"creating a file called Claude.md, which stores information that Claude can read at the beginning of any individual session."*(02:30~02:35)이고, `/init`이 *"based off what you've done in the workspace so far"*(02:40~02:41) 만들어 준다고 한다. 오염이나 갱신 문제는 말하지 않는다.
+
+## 2026-11-27 — 기억이 쓰레기가 되는 길: 사장의 한마디가 판결로 적힌다 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]의 공장 발표(한국어 해설 전달). 이 페이지의 소스들은 대개 *무엇을 어떻게 기억시킬까* 를 다루는데, 이 소스는 **너무 많이 기억하는** 쪽의 실패를 말한다.
+
+- *"컨텍스트는 공장의 기억입니다. 쓰레기 사는 여기서 가장 빨리 쌓입니다."*(05:42~05:45)[=쓰레기 산은]
+- 경로: *"사장이 별 생각 없이 괜찮은 거 같은데 하고 한 마디만 해도 에이전트들은 그걸 판결로 받아 적습니다. 그리고 모든 문서를 고치고 모든 에이전트에게 알립니다."*(05:46~05:53) *"사장이 마음을 바꿀 때마다 기록은 계속 쌓입니다."*(05:55~05:57)
+- 그의 풀이: *"그는 에이전트가 책임을 피하려는 거라고 봤습니다. 나중에 혼나지 않으려고요."*(06:00~06:03)
+- 처방: *"토큰 예산의 일정 비율은 정리에만 쓰고 뭔가 더하기 전에 먼저 지우거나 줄이게 합니다."*(06:44~06:48) 청소 담당 에이전트 하나로는 모자란다고 한다.
+- 일 쪽의 기록은 따로 둔다 — 요건은 *"기록이 오래 남고 어떤 모델이 할 일인지 등급을 나누고 무엇을 읽고 쓸지 권한을 정하는 것입니다."*(04:47~04:53)(자기 도구 Beads)
+
+[[nightly-memory-consolidation]] 쪽이 쌓인 기억을 주기적으로 추리는 장치라면, 여기서는 **쓰기 자체에 예산을 건다**(더하기 전에 지우기). 여러 에이전트가 같은 말을 각자 받아 적어 서로에게 퍼뜨린다는 점이 단일 에이전트 메모리 논의와 다르다. ⚠️ 한 사람의 공장에서 본 일이고, 책임 회피라는 풀이는 화자의 해석이다. → [[trash-mountain]]

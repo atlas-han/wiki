@@ -1377,5 +1377,12 @@
   "02.wiki/sources/tech-bridge-dex-horthy-twelve-rules-no-slop-factory.md": "LiVideo",
   "02.wiki/sources/tech-bridge-armin-ronacher-workshop-before-software-factory.md": "LiVideo",
   "02.wiki/concepts/no-ai-slop-manifesto.md": "LiScrollText",
-  "02.wiki/concepts/workshop-before-factory.md": "LiHammer"
+  "02.wiki/concepts/workshop-before-factory.md": "LiHammer",
+  "01.raw/articles/2026-11-26_AI 에이전트 공장은 왜 결국 쓰레기 산이 될까 Steve Yegge.md": "LiNewspaper",
+  "01.raw/articles/2026-11-26_2년 만의 가장 큰 MCP 업그레이드가 나왔다 Chase AI.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-steve-yegge-software-factories-trash-mountain.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-chase-ai-mcp-2-0-biggest-upgrade.md": "LiVideo",
+  "02.wiki/entities/steve-yegge.md": "LiUser",
+  "02.wiki/concepts/trash-mountain.md": "LiTrash2",
+  "02.wiki/concepts/mcp-elicitation.md": "LiShieldCheck"
 }

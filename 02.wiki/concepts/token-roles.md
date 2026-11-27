@@ -5,9 +5,9 @@ category: pattern
 tags: [agent, token-economics, model-routing, evaluation, memory, anthropic]
 related: [generator-evaluator-pattern, self-harness, managed-agents, agent-harness-design, trusted-throughput, agent-distributed-systems, verifiable-goals, intelligence-as-infrastructure, compute-constrained-growth, fixed-budget-alpha, all-or-nothing-accuracy, true-cost-to-perfect-answer, strategy-primitives, agent-dreaming]
 first-seen: tech-bridge-claude-platform-agent-era
-sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-fable-5-2-announcement, tech-bridge-fable-5-2-start-with-opus]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-altman-g20-economic-boom, tech-bridge-jensen-huang-g20-agi, tech-bridge-mousepower-measuring-agents, tech-bridge-tokens-should-have-jobs, tech-bridge-anthropic-dreaming-memory, tech-bridge-claude-fable-5-2-announcement, tech-bridge-fable-5-2-start-with-opus, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-09-02
-updated: 2026-11-18
+updated: 2026-11-27
 ---
 
 # Token Roles
@@ -177,3 +177,15 @@ Angela 본인의 수동 버전도 대담에 나온다 — 마음에 안 드는 �
 - 효과가 난 규모: 소스 코드 2,200만 토큰 결함 탐색, Opus 지휘 + Sonnet 일꾼 → Opus 단독보다 1/3쯤 싸고 점수 비슷.
 - 한계: *"컨텍스트 창 하나에 들어가는 일이면 나누고 합치는 비용이 아끼는 것보다 큽니다."*(04:45~04:49)
 - 극단의 사례: *"페이블은 서브 에이전트 1,000개 이상을 지휘하며 8일 동안 쉬지 않고 일했습니다."*(03:43~03:47)
+
+## 2026-11-27 — 토큰의 또 다른 일: 정리 · 들여다보기 · 믿게 하기 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]는 공장의 토큰을 *연료* 라고 부르고 실행 말고 어디에 드는지를 늘어놓는다(한국어 해설 전달).
+
+- *"연료는 토큰입니다. 그는 모든 문제가 결국 연료 문제라고 말합니다."*(05:18~05:20)
+- 실행 밖의 쓰임: *"품질을 높이고 싶으면 토큰을 더 써야 하고 공장이 뭘 하는지 들여다보는 데도 토큰이 듭니다."*(05:20~05:25) *"에이전트를 더 깨우는 것도, 더 잘 대해 주는 것도 다 연료가 됩니다."*(05:27~05:28)
+- 정리라는 직무: *"토큰 예산의 일정 비율은 정리에만 쓰고 뭔가 더하기 전에 먼저 지우거나 줄이게 합니다."*(06:44~06:48)
+- 세션마다 치르는 값: *"그래서 새 세션마다 토큰을 써서 환경부터 확인합니다."*(08:51~08:53)
+- 양과 값: *"토큰은 하루 50억 개쯤 씁니다."*(04:07) *"API 요금으로 치면 1년에 150만 달러, 최대로 돌리면 300만 달러라고 합니다."*(04:09~04:13) 실제로는 구독 계정 스물두 개로 굴린다 — *"그는 200달러짜리 구독을 코스트코 핫도그에 빗댔습니다. 손해 보고 파는 미끼 상품이라는 거죠."*(05:31~05:35)
+
+이 페이지의 틀(토큰에 실행 말고 다른 역할을 준다)에 **관측 · 정리 · 신뢰** 라는 역할이 사용자 쪽에서 더해진다. 벤더의 구성(advisor · 지휘자)이 아니라 공장 운영자가 겪은 지출 항목이다. ⚠️ 수치는 자기 보고이고 비율(*일정 비율*)이 얼마인지는 캡션에 없다. 구독가와 API가의 차이에 기대는 구조라 본인도 *"회사에서는 이렇게 못 한다고도 했습니다."*(05:36~05:38) → [[trash-mountain]]

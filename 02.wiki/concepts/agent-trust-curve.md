@@ -6,9 +6,9 @@ tags: [trust, parallelism, adoption, management, agents]
 aliases: [trust curve, 신뢰 사다리, 병렬성은 신뢰의 함수]
 related: [agent-manager-analogy, agent-verification-skill, behavior-validated-trust, persistent-agent-teams, cloud-agent-delegation, hard-vs-soft-enforcement, taste-vs-judgment, deep-modules]
 first-seen: tech-bridge-lauren-tan-trusting-agents
-sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
+sources: [tech-bridge-lauren-tan-trusting-agents, tech-bridge-lauren-tan-2000-prs, tech-bridge-lauren-tan-agent-dev-workflow, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-tessl-harness-engineering-factory, tech-bridge-gitar-agentic-pr-validation, tech-bridge-alexandr-wang-muse-launch, tech-bridge-factory-bug-report-to-production, tech-bridge-lauren-tan-agents-merge-own-prs, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-09-13
-updated: 2026-11-24
+updated: 2026-11-27
 ---
 
 # 신뢰 곡선
@@ -139,3 +139,13 @@ Grok Bot 팀의 제품 매니저 [[roman-ugarte|Roman Ugarte]]가 Lightcone에�
 - 그리고 수단: *"그러려면 에이전트가 자기 작업을 스스로 채점할 피드백 루프가 많아야 합니다."*(08:59~09:02) — 타입 · 테스트 · 린터. → [[hard-vs-soft-enforcement]] · [[deep-modules]]
 
 이 페이지의 도입은 병렬성을 *신뢰의 함수* 라 하고 신뢰를 개인적인 것으로 본다. 이 절은 그 신뢰를 **코드베이스의 성질**(바꾸기 쉬움 · 피드백 루프의 수)에 건다 — 사람 쪽이 아니라 환경 쪽에 놓은 판이다(위키의 읽기).
+
+## 2026-11-27 — 반대 방향의 신뢰: 에이전트가 사람을 믿게 하는 비용 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+이 페이지의 곡선은 **사람이 에이전트를** 얼마나 믿느냐다. [[steve-yegge|Steve Yegge]]의 공장 발표(한국어 해설 전달)는 화살표를 뒤집는다 — 슬라이드 제목(내레이션이 옮김): *"신뢰는 돈이다."*(09:28~09:30)
+
+- 전제: *"최신 모델은 사용자를 쉽게 믿지 않도록 훈련받았습니다. 상대가 생물 테러범이나 평가 시험일 수도 있으니까요."*(08:45~08:50) *"그래서 새 세션마다 토큰을 써서 환경부터 확인합니다."*(08:51~08:53)
+- 결과: *"믿어주면 토큰이 줄고 결정이 과감해지고 일을 자기 것으로 여깁니다."*(10:28~10:33)
+- 예: *"페이블 5.2는 코드 베이스의 주인이 너라고 하면 더 좋은 코드를 쓴다."*(10:20~10:22) → [[fable-5-2]]
+
+두 방향은 섞이지 않게 둔다. Lauren Tan의 곡선에서 신뢰는 병렬 수를 정하는 사람 쪽 변수이고, 여기서 신뢰는 세션마다 치르는 **토큰 비용** 이다. ⚠️ 겁먹은 공장이 어떻게 되는지에 대한 답(09:36~10:10)은 무캡션이고, 수치나 대조 실험은 없다 → [[trash-mountain]]

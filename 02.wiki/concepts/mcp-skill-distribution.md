@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [mcp, agent-skills, distribution, governance, skills-over-mcp, enterprise-adoption, non-technical-users]
 aliases: [skills over MCP, MCP 스킬 배포, 원격 스킬 서버]
-related: [model-context-protocol, agent-skills, run-trace-skill-distillation, agent-org-adoption, prompt-injection, agent-governance-layers, deferred-tool-context]
+related: [model-context-protocol, agent-skills, run-trace-skill-distillation, agent-org-adoption, prompt-injection, agent-governance-layers, deferred-tool-context, mcp-elicitation]
 first-seen: tech-bridge-runlayer-self-improving-skills-mcp
-sources: [tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-matt-pocock-home-repo-pattern]
+sources: [tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-matt-pocock-home-repo-pattern, tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]
 created: 2026-10-16
-updated: 2026-11-16
+updated: 2026-11-27
 ---
 
 # MCP를 스킬의 배포 계층으로
@@ -56,3 +56,14 @@ updated: 2026-11-16
 ## 어디서부터 배포 인프라인가 — 홈 레포의 상한 (2026-11-16 · [[tech-bridge-matt-pocock-home-repo-pattern]])
 
 [[matt-pocock|Matt Pocock]]의 [[home-repo-pattern|홈 레포 패턴]]은 스킬 배포의 *가벼운 끝* 이다 — 집 저장소 하나에 스킬을 두고 다른 저장소는 경로 한 줄로 가리킨다. 그 글이 스스로 긋는 상한(해설 전달): ~20개 저장소는 포인터 한 줄씩, ~400개는 영역별 파일로 점진적 공개, **수천 개는 스킬을 쓰는 곳이 너무 많아 *스킬 마켓플레이스가 더 맞다*.** 이 페이지의 원격 MCP 배포 · 게이트웨이가 그 마지막 칸에 해당한다(위키의 연결) — 팀 규모와 조직 규모의 경계가 사용자 쪽에서 처음 그어진다.
+
+## 2026-11-27 — 워킹 그룹에서 공개 베타로: 서버가 자기 사용법을 싣는다 ([[tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]])
+
+위 *구조* 절에서 *API는 미확정* 이던 skills over MCP가 [[anthropic|Anthropic]]의 발표 글에 실려 나왔다고 한국어 해설이 전한다(3차 전달 · 발표 글 미열람).
+
+- *"첫 번째는 스킬 오버 MCP입니다."*(02:45) *"이제 MCP 서버가 도구와 함께 스킬을 직접 실어 보냅니다."*(02:49~02:53) *"서버가 클라우드에게 자기 사용법을 가르치는 겁니다."*(02:54~02:56)[=Claude에게]
+- 배포의 이점 둘: *"필요할 때만 부르니 컨텍스트를 적게 씁니다."*(03:03~03:05) *"서버가 업데이트되면 스킬도 같이 바뀌어서 사용자가 따로 설치할 것도 없습니다."*(03:07~03:10)
+- 상태: *"다만 스킬 오버 MCP는 아직 공개 베타입니다."*(03:25~03:27) *"클라우드와 클라우드 코드의 프로, 맥스, 울트라 요금제에서는 기본으로 켜져 있습니다."*(03:27~03:31)[=Claude와 Claude Code]
+- 데모(GitHub MCP): 슬래시 명령에 스킬이 뜬다 — *"이슈 작성, 릴리스 준비, 코드 베이스 탐색. 원래 MCP 서버에는 없던 것들입니다."*(06:36~06:40)
+
+위키의 읽기: **운반되는 스킬의 주인이 다르다.** Runlayer의 패턴은 *회사* 가 자기 스킬을 원격 서버에 모아 전사에 나눠 주는 것이고(source of truth · 역할별 정책), 이 편이 전하는 것은 *서버 제공자*(Shopify · HubSpot · Atlassian · GitHub)가 자기 서버의 사용법을 함께 싣는 것이다. 첫째 구멍(*"우리 팀은 이 일을 이런 순서로 한다는 요령은 담을 곳이 없었습니다."*(01:49~01:53))을 해설은 이것으로 막았다고 하지만, *우리 팀의* 요령은 벤더가 실어 보내는 스킬에 들어 있지 않다 — 그 자리는 여전히 Runlayer식 배포나 로컬 스킬의 몫이다. ⚠️ 규격이 resources 쪽인지 tools 쪽인지(위 10-13의 쟁점)는 이 편에 없다.

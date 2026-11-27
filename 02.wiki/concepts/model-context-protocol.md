@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [protocol, agent-tooling, interoperability, anthropic, open-standard]
 aliases: [MCP]
-related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure, mcp-skill-distribution]
+related: [agent-harness-design, brain-hands-decoupling, agent-knowledge-sourcing, agent-skills, secure-tool-evolution, mcp-toolbox-for-databases, ai-data-exposure, mcp-skill-distribution, mcp-elicitation]
 first-seen: anthropic-harness-design-long-running-apps
-sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-annie-wang-harness-four-designs]
+sources: [anthropic-harness-design-long-running-apps, anthropic-managed-agents, tech-bridge-multimodal-commerce-agent, tech-bridge-agent-knowledge-four-ways, tech-bridge-cursor-legacy-refactoring, tech-bridge-build-time-vs-runtime-tools, tech-bridge-acp-universal-remote, tech-bridge-graft-code-knowledge-graph, tech-bridge-brockman-agi-era-defender-window, tech-bridge-agents-as-catalyst, tech-bridge-sdd-full-course, tech-bridge-ai-data-exposure-hidden-risk, tech-bridge-uber-debug-assist, tech-bridge-composio-dashboard-is-dead, tech-bridge-runlayer-self-improving-skills-mcp, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-annie-wang-harness-four-designs, tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]
 created: 2026-05-25
-updated: 2026-10-26
+updated: 2026-11-27
 ---
 
 # Model Context Protocol (MCP)
@@ -237,3 +237,22 @@ MCP는 [[brain-hands-decoupling]]의 *hands* 쪽 구체적 구현체. `execute(n
 ## 입문자용 정의 — 결정은 파일을 바꾸지 않는다 (2026-10-26 · [[tech-bridge-annie-wang-harness-four-designs]])
 
 [[annie-wang|Annie Wang]](발췌): *"[The model] might decide, okay, I need to edit this file. But that decision doesn't change the file itself. A tool has to apply the edit (…) You can also connect tools through an MCP server (…) It gives your application a standard way to discover and call tools exposed by a server."*(01:48~02:13, 마지막 문장은 en-orig 기준)
+
+## 2026-11-27 — *MCP 2.0*: 설명서 · 번호표 · 되묻기 · 따로 내는 창구 ([[tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]])
+
+[[chase-ai|Chase AI]]의 영상을 따라간 한국어 해설(3차 전달 — Anthropic 발표 글과 원본 영상은 미열람). [[anthropic|Anthropic]]이 MCP에 네 가지를 한꺼번에 더했고 Chase는 그 묶음을 *"This is basically MCP 2.0."*(00:22) 이라 부른다. ⚠️ 공식 버전 이름이 아니다.
+
+해설은 MCP가 남긴 구멍 넷(*"설명서, 기다림, 안전장치, 채팅"*(02:39))에 넷을 하나씩 짝짓는다.
+
+| 더해진 것 | 내레이션의 설명 | 상태 |
+|---|---|---|
+| Skills over MCP | *"이제 MCP 서버가 도구와 함께 스킬을 직접 실어 보냅니다."*(02:49~02:53) | 공개 베타 → [[mcp-skill-distribution]] |
+| Tasks | *"오래 걸리는 일을 MCP 서버 뒤편에서 돌리는 기능입니다."*(03:33~03:36) 작업마다 상태(진행 중 · 입력 필요 · 완료 · 실패 · 취소)와 번호 — *"중간에 연결이 끊겨도 그 번호로 다시 상태를 물어볼 수 있습니다."*(04:25~04:29) | 발화 없음 |
+| Elicitation | *"서버가 호출 도중에 멈추고 묻습니다."*(05:11~05:14) | 발화 없음 → [[mcp-elicitation]](신규) |
+| File Uploads | *"PDF나 스프레드시트 이미지를 컨텍스트 창을 거치지 않고 서버로 바로 보냅니다."*(05:37~05:41) | *"넷 중 유일하게 아직 나오지 않았고 곧 배포됩니다."*(05:33~05:36) |
+
+- 같은 방향으로 함께 열거된 것: 도구 검색 · *"서버를 늘리기 쉬운 상태 없는 규격, 대화 옆에 화면을 띄우는 MCP 앱까지."*(06:13~06:17) ⚠️ 이름만 나온다.
+- 범위: *"네 기능 모두 열린 MCP 규격의 일부라 클라우드가 아닌 다른 호환 클라이언트에서도 돌아갑니다."*(07:35~07:40)[=Claude가 아닌] — 다만 *"네 기능 중 무엇을 쓸지는 서버마다 다릅니다."*(06:30~06:31) (데모의 GitHub MCP는 Tasks를 쓰지 않는다.)
+- **CLI 논쟁의 세 번째 자료.** 위 09-27 절(*MCP → CLI + 스킬*)과 10-13 절(사망론 기각)에 이어, CLI 쪽에 있던 사람이 물러서는 장면이다: *"why would I even use MCPs when CLIs exist? It may be time to kind of rethink that because these MCP servers are getting way more robust and just from sort of the context wins alone, it might be worth it to start transitioning from CLIs to MCPs, or at least think about it."*(08:05~08:18) 해설은 배경을 이렇게 적는다 — *"올해 개발자들 사이에선 MCP 대신 CLI를 쓰자는 말이 돌았습니다."*(07:42~07:44)
+
+⚠️ 구멍 넷 가운데 둘째(기다림)의 설명과 Tasks의 *번호표* 비유는 무캡션이다. 내레이션이 옮긴 발표 글 · 확장 문서 · 규격 문서의 문구는 원문과 대조하지 않았다. Chase의 근거(서버가 튼튼해졌다 · 컨텍스트 절약)에는 측정이 붙지 않는다.

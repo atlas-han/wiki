@@ -5,9 +5,9 @@ category: pattern
 tags: [agents, agent-ux, delegation, engineer-role, cost-efficiency]
 related: [agent-org-adoption, verifiable-goals, harness-engineering, self-harness, frontier-engineering, ai-privilege, goal-level-delegation, multiplayer-agent-context, agent-sandboxing, always-on-agent-architecture]
 first-seen: tech-bridge-grokbot-agent-teams
-sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama]
+sources: [tech-bridge-grokbot-agent-teams, tech-bridge-flutter-ai-workflow, tech-bridge-altman-astra-hardware, tech-bridge-altman-g20-economic-boom, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-altman-benioff-dreamforce, tech-bridge-altman-devday-dots, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-lee-robinson-always-on-agents, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-grok-bot-not-a-chatbot-ai-teammate-ama, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-09-01
-updated: 2026-11-25
+updated: 2026-11-27
 ---
 
 # Persistent Agent Teams (지속형 에이전트 팀)
@@ -237,3 +237,15 @@ Grok Bot 팀의 Lightcone 인터뷰 해설(⚠️ 해설 전달, 원음 무캡�
 - 한 스레드에 봇 여럿([[matt-palmer|Matt Palmer]]): *"카피 검토 봇에게 마케팅 문구를 보게 하고 그걸 출시 봇에게 넘기는 식입니다."*(04:12~04:16)
 
 위 10-31 절(chief of staff 아래 봇을 늘린다)과 11-06 절(인턴 무리를 관리하게 된다) 사이에서, 만든 사람의 경험은 **뒤쪽 진단에 가깝다** — 늘렸다가 관리 일만 늘어 합쳤다. 다만 0이나 1로 가지는 않았고 비서실장 자리는 남겼다. 몇 개가 적당한지의 기준은 캡션에 없다.
+
+## 2026-11-27 — 이름 붙은 동물들: 공장의 직원 명부와 비서실장 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]의 공장(한국어 해설 전달 · 원음 무캡션)은 에이전트 50개 정도가 도는데, 그 가운데 역할과 이름을 가진 것들이 소개된다(이솝 우화의 동물 이름, 철자는 더빙).
+
+- Mouse: *"그 중 마우스는 아무도 안 보는 곳에서 멈춘 일과 숨은 쓰레기를 찾는 담당입니다."*(06:53~06:57)
+- Lark: *"라크는 커뮤니티 책임자입니다. 디스코드에서 플레이어를 슬랙에서 운영진을 상대합니다. 연료가 모자라 지금은 마케팅까지 맡고 있습니다."*(07:14~07:19)
+- Swallow: 에이전트 비서실장. 사람 비서실장 이야기를 듣고 *"자기 반성 노트에 나는 비소실장이 아니었다고 적었습니다."*(08:13~08:15)[=비서실장] — 그래서 다시 말해 줬다: *"에런이 와서 에이전트를 관리하진 않잖아. 에이전트 비소실장은 너야."*(08:19~08:20)
+- 재무 담당 에이전트도 있다(회계사에게 메일을 스무 통 보냈다).
+- 일반화: *"다들 에이전트 비서 실장을 두고 결국 측근 집단을 거느리게 된다는 겁니다."*(10:53~10:57)
+
+위 11-25 절(Lauren Tan — 50개를 꾸리려다 합쳤고 비서실장 자리는 남겼다)과 견주면, Yegge는 50개를 그대로 굴리지만 **비서실장 자리가 남는다는 관찰은 같다.** 새로 붙는 것은 지속형 에이전트가 **자기 역할을 스스로 고쳐 적는다** 는 점이다(반성 노트 · 메모) — 사람이 역할을 다시 말해 줘야 했다. ⚠️ 일화 둘이고, Lark에게 무슨 일이 있었는지는 무캡션이다.

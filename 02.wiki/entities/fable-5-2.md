@@ -6,9 +6,9 @@ tags: [anthropic, frontier-model, coding, multi-agent, capability-limitation, my
 aliases: [Fable 5.2, 페이블 5.2, Claude Fable 5.2, Mythos 5.2, 미토스 5.2, Claude Mythos 5.2]
 links:
   - https://www.anthropic.com/claude-fable-and-mythos-5-2
-sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency]
+sources: [tech-bridge-claude-fable-5-2-announcement, tech-bridge-chase-ai-fable-5-2-prompting-rules, tech-bridge-addy-osmani-which-claude-model, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-fable-5-2-start-with-opus, tech-bridge-gpt-6-2-astra-launch-day-reactions, tech-bridge-theo-gemini-4-neon-capability-vs-coherency, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-11-11
-updated: 2026-11-24
+updated: 2026-11-27
 ---
 
 # Claude Fable 5.2
@@ -137,3 +137,13 @@ GPT-6.2 [[openai-astra|Astra]] 반응 모음 해설(⚠️ 2차 전달)에서 Fa
 - 코딩 에이전트 지수로는 Neon이 Fable보다도 근소하게 앞선다고 한다(00:54~00:55).
 - [[capability-vs-coherency|능력 · 일관성]] 그래프: *"네온은 페이블, 오퍼스와 나란히 오른쪽 위에 있습니다."*(06:00~06:01)
 - TS Rust 최적화에서 Opus에 Fable을 붙여 20%쯤 빨라졌다(06:54~06:58).
+
+## 2026-11-27 — *코드베이스의 주인이 너라고 하면*: 공장 운영자의 슬라이드 한 줄 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]의 공장 발표(한국어 해설 전달)에 이 모델이 이름으로 나온다.
+
+- 슬라이드의 한 줄(내레이션이 옮김): *"페이블 5.2는 코드 베이스의 주인이 너라고 하면 더 좋은 코드를 쓴다."*(10:20~10:22)
+- 맥락은 *신뢰는 돈이다* 라는 슬라이드다: *"최신 모델은 사용자를 쉽게 믿지 않도록 훈련받았습니다. 상대가 생물 테러범이나 평가 시험일 수도 있으니까요."*(08:45~08:50) *"그래서 새 세션마다 토큰을 써서 환경부터 확인합니다."*(08:51~08:53) — 어느 모델인지는 이 문장에서 특정하지 않는다. 위 발표문 절의 *평가 인식* 과 같은 쪽을 가리키는 사용자 측 관찰로 읽을 수 있으나 연결은 위키의 읽기다.
+- 그가 본 결과: *"믿어주면 토큰이 줄고 결정이 과감해지고 일을 자기 것으로 여깁니다."*(10:28~10:33) → [[trash-mountain]]
+
+⚠️ 한 사람의 공장에서 나온 일화이고 대조 실험 · 수치는 캡션에 없다. 슬라이드 원문은 보지 못했다. 그의 공장이 어떤 모델들로 도는지도 캡션에는 Claude Max 구독이라는 것뿐이다.

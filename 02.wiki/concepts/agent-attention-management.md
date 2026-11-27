@@ -6,9 +6,9 @@ tags: [human-attention, multi-agent, orchestration-ui, supervision, burnout, vis
 aliases: [주의 관리, 사람 주의가 병목, we are the bottleneck, raise the ceiling lower the floor, 천장 높이기 바닥 낮추기, 게임식 에이전트 감독]
 related: [verification-bottleneck, agent-manager-analogy, orchestras-not-factories, steering-altitude, agent-visual-qa, multiplayer-agent-context, software-factory, loop-is-the-product, capability-discovery-burden, minimizing-reader-load, persistent-agent-teams, goal-level-delegation, manager-bot-coding-agent-split, workshop-before-factory]
 first-seen: tech-bridge-agentcraft-strategy-game
-sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-armin-ronacher-workshop-before-software-factory]
+sources: [tech-bridge-agentcraft-strategy-game, tech-bridge-lee-robinson-always-on-agents, tech-bridge-claude-duet-proactive-assistant, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-mehul-mohan-herdr-app-vs-cmux, tech-bridge-sandeep-swadia-personal-ai-agent, tech-bridge-garry-tan-agents-two-years, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-ryan-carson-managing-20-agents, tech-bridge-armin-ronacher-workshop-before-software-factory, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-10-09
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # 에이전트 주의 관리 (Agent Attention Management)
@@ -111,3 +111,14 @@ updated: 2026-11-26
 - 주의력의 바깥 비용: *"깃허브, NPM, 작은 웹사이트처럼 이런 부하를 겪어본 적 없는 곳에 우리가 짐을 지우고 있다고도 덧붙입니다."*(03:34~03:39)
 
 위키의 읽기: 위 11-17 절(빌더 수의 상한은 사람)이 *동시에 몇을 돌릴 수 있나* 를 물었다면 이 자료는 *몇 개가 살아남나* 를 센다 — 병렬 에이전트는 시간을 몇 배로 늘렸지만 한 사람이 꾸준히 손보는 프로젝트 수는 늘리지 못했다. 처방은 UI가 아니라 규모를 줄이는 쪽이다 → [[workshop-before-factory]](신규). ⚠️ *닷새 넘게 손봤다* 의 정의와 계측 방법은 캡션에 없다.
+
+## 받는 쪽이 늦춰 달라고 한다 — 플레이어 · 회계사 · 공장장의 80% (2026-11-27 · [[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+[[steve-yegge|Steve Yegge]]의 공장 발표(한국어 해설 전달). 이 페이지가 모아 온 것은 에이전트를 **부리는** 사람의 주의인데, 여기서는 결과를 **받는** 사람이 먼저 지친다.
+
+- *"그의 공장은 넉 달 만에 60년치 일을 해치웠습니다. 그런데 그 결과를 받은 사람들은 제발 늦춰달라고 했습니다."*(00:17~00:22) 받는 사람은 그의 게임 Wyvern의 플레이어들이다. ⚠️ 부탁의 본문은 무캡션.
+- 해설의 풀이: *"공장의 속도를 사람이 따라갈 수 없었던 겁니다. 고객만 지친 게 아니었습니다."*(03:13~03:16) *"공장의 재무 담당 에이전트가 회계사에게 메일을 스무 통 보냈고 1,200달러짜리 청구서가 들어왔습니다."*(03:20~03:24)
+- 부리는 쪽: 에이전트 50개 정도를 Emacs 창 하나에 띄워 두고, *"그는 지금 자기 시간의 80%를 이 다섯 가지에 쓴다고 적었습니다."*(04:29~04:31)(다섯 가지 → [[trash-mountain]])
+- 결론: *"그러니 사람은 여전히 많이 필요하다."*(11:31)(마지막 슬라이드, 내레이션이 옮김)
+
+위 11-26 절(Ronacher — 프롬프트는 평평하고 에이전트 시간만 뛴다)과 같은 주에 같은 행사에서 나왔다. 그쪽은 한 사람의 시계열이고 이쪽은 공장 **바깥** 사람들(고객 · 거래처)의 반응이다 — 병목이 운영자를 지나 수요 쪽까지 간 사례로 적어 둔다. ⚠️ 일화이고 60년의 환산 근거는 없다.

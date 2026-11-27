@@ -6,9 +6,9 @@ tags: [software-factory, workshop, human-attention, craft, understanding, pacing
 aliases: [workshop before factory, Build the Workshop Before the Software Factory, 공장보다 공방, 공방 먼저, 공방의 조건 셋]
 related: [software-factory, orchestras-not-factories, agent-attention-management, cognitive-debt, compressed-review-surface, taste-vs-judgment, named-human-accountability, verification-bottleneck]
 first-seen: tech-bridge-armin-ronacher-workshop-before-software-factory
-sources: [tech-bridge-armin-ronacher-workshop-before-software-factory]
+sources: [tech-bridge-armin-ronacher-workshop-before-software-factory, tech-bridge-steve-yegge-software-factories-trash-mountain]
 created: 2026-11-26
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 
 # 공장보다 공방 먼저 (Workshop Before Factory)
@@ -58,3 +58,14 @@ updated: 2026-11-26
 ## References
 
 - [[tech-bridge-armin-ronacher-workshop-before-software-factory]] · [[armin-ronacher]] · [[pi-coding-agent]] · [[software-factory]]
+
+## 2026-11-27 — 공장을 먼저 지은 사람의 보고 ([[tech-bridge-steve-yegge-software-factories-trash-mountain]])
+
+같은 행사(AI Engineer Code Summit)에서 [[steve-yegge|Steve Yegge]]는 공방을 건너뛰고 공장을 여섯 번 지은 쪽의 이야기를 한다(한국어 해설 전달). 이 페이지의 주장을 반박하지도 인용하지도 않지만 옆에 놓으면 맞물린다.
+
+- 공장은 매번 무너진다: *"AI 에이전트 공장은 결국 쓰레기 산이 됩니다. 매번요."*(00:00~00:02) 그 이유로 든 슬라이드(내레이션이 옮김): *"모든 모델은 제 실력보다 크게 짓는다."*(01:32~01:34)
+- 받는 사람이 상한이다: *"공장의 속도를 사람이 따라갈 수 없었던 겁니다."*(03:13~03:14) — Ronacher의 *기계는 빨라지고 사람은 그대로* 와 같은 관찰이 고객 쪽에서 나온다.
+- 공장만 짓는 사람들에 대한 평: *"다들 공장을 만드는 공장만 만든다는 거죠."*(02:02~02:04)
+- 결론: *"그러니 사람은 여전히 많이 필요하다."*(11:31)
+
+다른 점: Ronacher의 처방은 *이해하는 만큼만* 속도를 내는 것이고, Yegge는 속도를 줄이기보다 **두 달마다 허물고 다시 짓는다.** 누가 옳은지 소스로 가릴 수 없다 — 한쪽은 한 사람의 세션 기록이고 한쪽은 한 사람의 공장이다. → [[trash-mountain]](신규)
