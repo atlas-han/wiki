@@ -213,8 +213,10 @@ sources:
   - tech-bridge-armin-ronacher-workshop-before-software-factory
   - tech-bridge-steve-yegge-software-factories-trash-mountain
   - tech-bridge-chase-ai-mcp-2-0-biggest-upgrade
+  - tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code
+  - tech-bridge-nick-saraev-claude-artifacts-install-as-app
 created: 2026-06-03
-updated: 2026-11-27
+updated: 2026-11-28
 ---
 
 # Tech Bridge
@@ -2034,3 +2036,27 @@ updated: 2026-11-27
 - 게시 시각 **11-27 07:00 KST**(`upload_date` 20261126, UTC 기준). Chase AI는 11-12 편(자막 재게시)에 이은 두 번째 소스이고 이번은 해설 형식이다.
 
 **멤버 전용**: 신규 **`Axljw6ngT6A`**(*AI 시대의 병목은 토큰이 아니라 야망이다 | Thariq Shihipar*, 12:28, 목록 `upload_date` 20261126 — 목록 줄로 나옴, `subscriber_only`) — 건너뜀, 페이지 없음. `Yhck-x6VuLs` 지속(목록 범위 밖, 단건 조회 `subscriber_only` 줄). **대기 목록은 둘.** 목록 20편 요청 → **20줄**(stderr ERROR 없음, 19편 `public` + 1편 `subscriber_only`).
+
+## 2026-11-27 업로드 — Katelyn Lesse(앤트로픽 API의 Rust 재작성 · 그림자 트래픽 검증 · 꼼꼼히 읽지 않는 PR, The Pragmatic Engineer 인터뷰 해설) · Claude 아티팩트 앱 설치(Nick Saraev 영상 해설 + 앤트로픽 공지 · 도움말) (2026-11-28 ingest)
+
+[[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code|앤트로픽 엔지니어는 이제 코드를 거의 읽지 않는다 | Katelyn Lesse]](`sBIBmGO1nl0`, 10:47, 공식 챕터 10) — 한국어 해설, Anthropic에서 Claude Platform 엔지니어링을 이끄는 Katelyn Lesse의 The Pragmatic Engineer 인터뷰를 따라간다 ([[katelyn-lesse]] · [[shadow-traffic-verification]](신규) · [[anthropic]] · [[rust]] · [[risk-proportional-human-review]] · [[automated-code-review]] · [[legacy-code-modernization]] · [[behavior-validated-trust]] · [[compute-constrained-growth]] · [[named-human-accountability]] · [[work-recording-hiring]] · [[credential-injection-outside-sandbox]] · [[ai-assisted-learning]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션, `en-orig`는 영어 더빙의 ASR(더빙 문장은 인용하지 않음). ⚠️ 이 회차에도 영상 포맷 목록을 받지 못해(info.json `formats` 비어 있음) 오디오 트랙 구성 · 메타 `language`를 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- ⭐ **Lesse와 진행자의 원음은 한 마디도 잡히지 않았다** — 본인 인용 0. 발췌 자리는 두 트랙 모두 무캡션: en-orig 다섯 곳 약 3분 57초(02:28~03:11 · 04:10~06:02 · 07:34~08:02 · 08:42~09:02 · 09:40~10:12). 인용 158건은 전부 ko-orig 내레이션.
+- ⚠️ **캡션에 없는 것**: 조각내기 대신 무엇을 택했는지의 말 · **진행자의 *코드는 별로 들여다보지 않았다는 건가요* 에 대한 답과 챕터 *PR 80%는 꼼꼼히 읽지 않았다* 의 본문 전체** · 중간에 버리고 다시 한 것이 무엇인지 · **코딩 면접을 없앤 이유** · 정체성 위기에 대한 글 또는 답의 본문. 80%는 도입부 요약 한 문장으로만 있다.
+- ⚠️ **문맥 미상의 대목**: 06:02에 캡션이 문장 중간에서 돌아온다(*는 일을 실행할 때만 띄우고 세션은 따로 저장 · 자격증명은 볼트에 · 프록시가 끼워넣는다 · 샌드박스에는 들어가지 않는다*). [[managed-agents]] 쪽 서술과 낱말이 겹치지만 같은 것이라고 적지 않았다. 뒤따르는 *CPU 사용량은 평균 1/3 정도로 줄었습니다* 도 무엇의 CPU인지 정하지 않았다.
+- ⭐ [[katelyn-lesse]]의 세 번째 소스(09-01 대담 · 09-18 AI Engineer 발표에 이어). 신규 개념은 [[shadow-traffic-verification]] 하나 — 읽기를 그만둔 이야기가 아니라 검증의 자리를 옮긴 이야기로 읽었다.
+- 판독하지 못한 것: *클라우드의 CPU*(Claude용인지 cloud인지) · *기준은 결국 영역입니다* 의 *영역* · 진행자 이름. *단건* 은 당번, *콜로 도와 주고받으며* 는 Claude와 주고받으며로 읽었다(둘 다 추정).
+- 게시 시각 **11-27 18:00 KST**(`upload_date` 20261127). 설명란의 원본 인터뷰(`9oNvKMd7xJo`) · 블로그 글(*The new set of problems for engineers to solve*, 2026.10.25)은 미열람.
+
+[[tech-bridge-nick-saraev-claude-artifacts-install-as-app|바이브코딩의 새 시대가 열렸다, 말로 만든 앱을 설치한다 | Claude]](`pFu9NGWZeIE`, 9:38, 공식 챕터 10) — 한국어 해설, [[nick-saraev|Nick Saraev]]의 영상과 Anthropic 공지 · 도움말을 바탕으로 Claude 아티팩트를 Mac · Windows 데스크톱 앱으로 설치하는 기능을 정리한다 ([[claude-artifact-apps]](신규) · [[agent-sandboxing]] · [[anthropic]] · [[disposable-vs-durable-software]] · [[least-privilege-connectors]] · [[nick-saraev]] · [[share-data-and-prompt-not-app]] · [[vibe-vs-agentic-coding]])
+
+- 구성: `ko` = `ko-orig`(`variant=gemini`)는 한국어 내레이션, `en-orig`는 영어 더빙의 ASR(인용하지 않음). ⚠️ 이 회차에도 영상 포맷 목록을 받지 못해(info.json `formats` 비어 있음) 오디오 트랙 구성 · 메타 `language`를 확인하지 못했다 — 트랙 성격은 자막 내용으로 판정.
+- ⚠️ **Nick 원음은 한 마디도 캡션에 없다.** 발췌 자리 열 곳(en-orig 기준 약 4분 37초 — 9분 38초의 48%)이 두 트랙 모두 무캡션이고, 내레이션이 돌아오는 두 곳(02:19 · 06:35)에 `>>` 표시만 있다. 인용 102건(전부 ko-orig 내레이션) 기계 대조 불일치 0.
+- ⚠️ **캡션에 없는 것**: 설명란이 *"SaaS는 망했다"는 닉의 주장* 이라 부른 대목의 논거(챕터 6의 2분 가운데 캡션은 30초쯤) · **챕터 *권한은 세 단계* 의 세 단계**(캡션에 이름이 나오는 것은 *전체 접근* 하나) · 이미지 편집기 시연과 설치 장면 · Nick의 사무실 도구 공유 장면 · Felix Rieseberg 글 뒤.
+- ⚠️ **2차 · 3차 전달**: 원본 영상(`F7QcpCl0Lg4`) · Anthropic 공지(*Turn artifacts into Mac and Windows apps*) · 도움말(*Install an artifact as an app*) 셋 다 미열람. 날짜(11월 24일) · 요금제 조건 · *최대 20분* 은 내레이션 발화다. 해설이 Nick의 전망과 문서를 스스로 가른다(*엔트로픽의 한 말은 아닙니다*).
+- ⭐ 11-08 편에서 같은 Nick이 전한 [[share-data-and-prompt-not-app]](앱을 주지 않는다)의 반대 방향 — 만든 것을 그대로 깔게 하고 원본 하나가 모두의 앱을 바꾼다. 심사가 없는 대신 전체 접근의 기본 범위 · 경고창 확인란 · 버전별 재허락이 남고, 해설은 바깥에서 불러오는 코드가 재허락을 비껴 간다는 점까지 짚는다.
+- ⚠️ 판독: *웹과 윈도우 앱*(00:21)은 **Mac과 Windows** 로 읽었다(설명란 · 08:54의 *맥이나 윈도우 용* — 더빙도 *web or Windows* 로 적는다). *클라우드* → Claude 여러 곳. 앱 다섯의 이름(리넷 · 퍼스퍼 · 쉬프트/시프트 · 터미널 턴 · 바이탈스)과 *펠릭스 리스버그* 는 설명란 · tags에 없어 철자를 정하지 않았다(더빙 표기만 병기). 둘째 앱의 설명 *영화 세트에 나올 법한 한 관리자* 는 낱말이 빠진 듯 — 미상.
+- 게시 시각 **11-28 07:00 KST**(`upload_date` 20261127, UTC 기준). Nick Saraev는 여덟 번째 소스이고 11-11 편에 이어 원음 인용이 없는 두 번째 편이다.
+
+**멤버 전용**: 신규 없음. `Axljw6ngT6A`(*AI 시대의 병목은 토큰이 아니라 야망이다 | Thariq Shihipar*, 12:28 — 목록 줄 · 단건 조회 모두 `subscriber_only`) · `Yhck-x6VuLs`(목록 범위 밖, 단건 조회 `subscriber_only` 줄) 지속. **대기 목록은 둘.** 목록 20편 요청 → **20줄**(stderr ERROR 없음, 19편 `public` + 1편 `subscriber_only`).

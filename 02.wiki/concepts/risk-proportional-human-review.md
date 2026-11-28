@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [human-in-the-loop, review, risk, automation, force-multiplier, migration, agents]
 aliases: [승수로서의 AI, 가장 위험한 결정 곁의 사람, force multiplier]
-related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review, human-loop-roles-relocation]
+related: [agent-trust-curve, named-human-accountability, verification-bottleneck, legacy-code-modernization, syntactically-correct-behaviorally-wrong, task-entropy-matrix, decision-quality, goal-level-delegation, model-calibration, system-1-model, action-reversibility, human-as-async-api, three-level-agent-review, human-loop-roles-relocation, shadow-traffic-verification]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-conductor-orchestras-not-factories, tech-bridge-warp-factory-engineering, tech-bridge-death-of-code-review, tech-bridge-jev-calibrated-decisions, tech-bridge-pocock-pr-bottleneck, tech-bridge-human-is-async-api, tech-bridge-gitar-agentic-pr-validation, tech-bridge-dental-clinic-ax-transformation, tech-bridge-three-level-agent-review, tech-bridge-pocock-skills-implement-spec-pr-retro, tech-bridge-laurie-voss-product-engineer, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-pocock-21k-lines-questions-before-code, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-18
-updated: 2026-11-25
+updated: 2026-11-28
 ---
 
 # 위험 비례 사람 검토
@@ -162,3 +162,14 @@ IBM Technology 영상([[grace-ableidinger|Grace Ableidinger]])의 한국어 해�
 - 자율과 함께 커진다: *"에이전트가 알아서 하는 일이 늘수록 테스트와 승인, 롤백, 감사 기록도 더 중요해집니다."*(08:03~08:07)
 
 → [[vibe-vs-agentic-coding]](신규)
+
+## 2026-11-28 — 사람이 봐야 하는지를 분류기가 정한다 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[anthropic|Anthropic]] 플랫폼 팀의 코드 리뷰([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달). 위험에 비례해 사람을 둔다는 원칙이 **장치** 로 나온 사례다.
+
+- *"모든 변경마다 클라우드 분류기가 돌면서 사람이 봐야 하는지 판단합니다. 봐야 한다면 몇 명이 어느 팀이 봐야 하는지까지 정하고 아니면 사람 없이 바로 병합합니다."*(06:37~06:47)[=Claude 분류기]
+- 사람 없이 가는 쪽: *"예를 들면 새 모델이 나올 때마다 SDK 버전을 올리는 일처럼 수없이 해본 기계적인 변경입니다."*(06:49~06:53) *"깨진 테스트 때문에 CI가 빨갛게 되면 에이전트가 알아서 고칩니다. 대부분 아무도 들여다보지 않습니다."*(06:55~06:59)
+- 사람이 남는 쪽과 방향: *"위험한 변경은 아직 사람이 봅니다. 다만 사람이 필요없는 비율을 조금씩 올리는 게 목표입니다."*(07:01~07:05)
+- 같은 꼴이 온콜에도 있다 — 알림을 Claude가 먼저 받아 잡음을 거르고, *"물론 진짜 장애에서 사람을 아예 안 깨우는 단계는 아직 아닙니다. 지금은 잡음을 거르는 첫 관문까지입니다."*(08:02~08:06)
+
+분류기가 정하는 것이 *볼지 말지* 만이 아니라 **몇 명이 어느 팀이** 까지라는 점이 이 페이지의 앞선 소스들보다 구체적이다. ⚠️ 분류 기준 · 오판율 · 사람 없이 병합되는 비율은 캡션에 없다. 도입부의 *PR의 80%는 꼼꼼히 읽지 않았습니다* 가 이 분류기의 결과인지도 캡션은 잇지 않는다(그 대목은 무캡션). → [[automated-code-review]]

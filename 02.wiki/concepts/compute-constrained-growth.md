@@ -5,9 +5,9 @@ category: theory
 tags: [compute, scaling, growth, efficiency, demand, data-center, bubble, openai]
 related: [intelligence-as-infrastructure, trusted-throughput, token-roles, sutton-bitter-lesson, training-time-risk, agi-definition, power-shortfall, intelligence-abundance]
 first-seen: tech-bridge-altman-agi-superintelligence
-sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-nadella-copilot-autopilot, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-musk-spacex-ai-compute-outlook]
+sources: [tech-bridge-altman-agi-superintelligence, tech-bridge-altman-astra-hardware, tech-bridge-jensen-huang-g20-agi, tech-bridge-altman-g20-economic-boom, tech-bridge-elon-musk-g20-ai-future, tech-bridge-brockman-agi-era-defender-window, tech-bridge-nadella-copilot-autopilot, tech-bridge-zuckerberg-wang-muse-wonder-cheeky-pint, tech-bridge-musk-spacex-ai-compute-outlook, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-06
-updated: 2026-10-31
+updated: 2026-11-28
 ---
 
 # Compute-Constrained Growth (성장은 컴퓨팅 배분의 함수)
@@ -142,3 +142,14 @@ G20에서 Altman이 *"효율은 수요가 삼킨다"* 에 **숫자를 붙였다.
 - **임대 초과 수요** — *"hounded relentlessly by (…) every hyperscaler and by (…) dozens of smaller companies (…) to rent more of our compute"*(05:43~05:56), *"we could rent out our compute several times over if we said yes to everyone"*(06:00~06:03). 화자는 이것을 **SpaceX ARR 2027년 말 5,000억~1조**(06:06~06:21)로 잇는다.
 
 ⚠️ 위 「판매자의 시각과 나란히」의 원칙이 그대로 적용된다. 화자는 컴퓨트를 **빌려 주는 쪽**이다. *"several times over"* 는 고객 이름 · 계약 · 가격이 없는 일화이고, ARR 전망에는 통화 단위 · 계산이 없다.
+
+## 2026-11-28 — GPU가 아니라 CPU가 모자랐다 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+이 페이지의 소스들은 추론용 컴퓨팅(GPU · 전력)을 말한다. [[anthropic|Anthropic]] 플랫폼 팀의 사례([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달)는 그 **앞단** — 인증 · 토큰화 · 과금 · 안전 검사를 하는 API 층의 CPU가 병목이 된 경우다.
+
+- *"케이틀린은 커리어 내내 CPU는 돈만 내면 얼마든지 늘릴 수 있는 자원이었다고 말합니다. 그런데 처음으로 클라우드의 CPU를 더 달라고 하는 일이 어려운 대화가 됐습니다."*(01:03~01:12) ⚠️ *클라우드의 CPU* 가 Claude용인지 cloud인지는 판독하지 못했다.
+- 수요의 출처: *"광고를 보고 바로 API를 붙이는 사람은 없겠지만 앱을 깔아보는 사람은 많고 그 요청도 전부 이 API를 지납니다."*(00:58~01:03)
+- 작은 최적화로는 모자랐다: *"다른 리전을 늘리고 작은 효율과 인프라 최적화도 찾았습니다. 그래도 부족했습니다."*(01:12~01:17)
+- 그래서 고른 것이 언어 교체였다: *"결국 한 엔지니어가 말을 꺼냈습니다. 완전히 다른 걸 해 보자고. 러스트를 써 보자고요."*(01:18~01:21)
+
+*효율 개선은 수요에 흡수된다* 는 이 페이지의 명제와 나란히 읽힌다 — 자원을 더 사는 길이 막히자 재작성이 선택지가 됐고, 구현이 싸져서 그 선택을 감당할 수 있었다는 설명이다. ⚠️ 한 회사의 한 층 이야기다. → [[rust]]

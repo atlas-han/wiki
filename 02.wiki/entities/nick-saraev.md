@@ -7,9 +7,9 @@ aliases: [Saraev, 닉 사라예프]
 links:
   - https://www.youtube.com/watch?v=FSXHk4hMrY8
   - https://www.youtube.com/watch?v=He-NyJjzWM0
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-claude-fable-5-2-announcement]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-top-1-percent-ai-habits, tech-bridge-nick-saraev-kimi-k3-1-vs-opus-5-5, tech-bridge-nick-saraev-gpt-6-1-terra-vs-opus-5-5, tech-bridge-nick-saraev-shortest-claude-code-course, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-claude-fable-5-2-announcement, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 created: 2026-10-09
-updated: 2026-11-11
+updated: 2026-11-28
 ---
 
 # Nick Saraev
@@ -88,3 +88,14 @@ updated: 2026-11-11
 - 해설자의 바로잡기: *"닉이 함께 언급한 단백질 구조 예측은 페이블이 아니라 미토스 5.2의 [음악] 성과입니다."*(05:47~05:53)
 
 앞 비교 편들처럼 **데모와 체감**으로 판단하는 리뷰어다. 해설은 그 판단을 벤치마크 표의 아래쪽(로봇 · Remote Labor Index)과 맞대어 *맞기도 하고 틀리기도 하다* 고 정리한다.
+
+## 여덟 번째 등장 — Claude 아티팩트 앱 설치, 그리고 시장 전망 (2026-11-28 · [[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+Tech Bridge가 그의 영상(*The NEW Era of Vibecoding Has Officially Started (Claude Massive Update)*, `F7QcpCl0Lg4`, 설명란 표기)을 Anthropic 공지 · 도움말과 나란히 놓고 따라간 해설. 11-11 편과 같은 구도이고 이번에도 **원음 발췌 열 곳이 두 트랙 모두 무캡션이라 Saraev 본인의 인용 가능한 발화는 없다.** 해설이 전하는 것:
+
+- 소개가 처음 붙었다: *"영상의 주인공은 닉 사라에프. AI로 회사에 영업 시스템을 만들어 주는 에이전시를 운영합니다."*(00:31~00:35) — 위키의 앞선 일곱 소스에는 직업 소개가 없었다.
+- 직접 만든 것: *"새 사무실을 3차원으로 그려 놓고 가구를 어디에 둘지 보는 도구입니다."*(02:56~02:58) 이것을 데스크톱 앱으로 열어 공유 메뉴에서 설치해 보인다 → [[claude-artifact-apps]](신규)
+- 주장: *"여기서부터는 닉의 생각입니다. 그는 이 기능이 소프트웨어 시장을 바꾼다고 봅니다."*(05:12~05:16) *"당장은 아니어도 3달에서 6달 뒤엔 소프트웨어를 이렇게 만드는 게 기본이 된다는 예측입니다. 엔트로픽의 한 말은 아닙니다."*(05:49~05:54) ⚠️ 설명란은 이 대목을 *"SaaS는 망했다"는 닉의 주장* 이라 부르지만 논거는 무캡션이다.
+- 시연 화면에 경고창이 찍혀 있었다는 것은 해설자의 관찰이다(*"닉의 시연 화면에 그 경고가 그대로 찍혀 있습니다."*(08:02~08:04)) — Saraev가 그 경고를 두고 무슨 말을 했는지는 알 수 없다.
+
+11-08 편에서 그가 전한 [[share-data-and-prompt-not-app|앱 대신 데이터와 프롬프트를 준다]]와는 방향이 반대인 기능을 *새 시대* 라 부른 셈인데, 두 말을 그가 어떻게 잇는지는 캡션에 없다(위키의 메모). 해설은 이번에도 그의 전망과 문서를 갈라 놓는다.

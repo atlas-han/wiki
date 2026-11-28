@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [testing, trust, evidence, observability, authorship]
 aliases: [행동 검증, 작성자 신뢰, evidence not authorship]
-related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability, agent-change-evidence]
+related: [decision-quality, executable-standards, agent-action-record, generator-evaluator-pattern, cloud-agent-delegation, trusted-throughput, verifiable-goals, named-human-accountability, agent-change-evidence, shadow-traffic-verification]
 first-seen: tech-bridge-ai-era-code-quality
-sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-prompt-to-production, tech-bridge-context-engineering-four-failure-modes]
+sources: [tech-bridge-ai-era-code-quality, tech-bridge-knowledge-work-agent-infrastructure, tech-bridge-company-brain-security, tech-bridge-lauren-tan-trusting-agents, tech-bridge-shift-left-security-ai-code, tech-bridge-legacy-code-modernization-ai, tech-bridge-prompt-to-production, tech-bridge-context-engineering-four-failure-modes, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-09
-updated: 2026-10-20
+updated: 2026-11-28
 ---
 
 # 행동 검증 기반 신뢰
@@ -120,3 +120,14 @@ updated: 2026-10-20
 ## 같은 계열이 다섯 번째로 — 검증을 컨텍스트에 쓰기 전에 (2026-10-20 · [[tech-bridge-context-engineering-four-failure-modes]])
 
 [[martin-keen|Martin Keen]]([[ibm|IBM Technology]])의 poisoning 처방은 같은 원리를 **에이전트가 자기 컨텍스트에 쓰는 결론**에 적용한다: *"Before a conclusion gets written down into this context window, check it against something real. So, one quick connection test and our agent would never have written this no retry code note."*(07:39~07:53) 오염의 원인은 *"its own notes, they look like the ground truth"*(05:08~05:13)다. 검증을 출력 쪽이 아니라 **기억에 쓰기 전**에 둔다는 점이 이전 IBM 편들과 다르다. ⚠️ 가상의 예시이고 효과 측정은 없다. → [[context-failure-modes]] · [[no-silent-write]]
+
+## 2026-11-28 — 읽지 않고 믿은 근거: 두 시스템의 결과 비교 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[anthropic|Anthropic]]의 Python → Rust 재작성([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달). *무엇을 하는 것이 확인됐는가* 로 믿는다는 이 페이지의 프레이밍에 가장 곧은 사례다.
+
+- 질문: *"코드를 다 읽지도 않고 무엇을 믿고 배포했을까요?"*(00:16~00:18)
+- 답: *"코드를 다 안 읽어도 됐던 건 결과를 비교하는 그림자 시스템을 사람이 먼저 만들었기 때문입니다."*(10:24~10:28)
+- 확인한 것은 내용이 아니라 두 대리 지표다: *"그래서 두 군데만 비교했습니다. 추론으로 내려가기 직전까지의 처리가 같은지, 그리고 돌아올 때 토큰 수가 같은지."*(03:31~03:36)
+- 믿음은 단계로 쌓았다: *"조금 느려도 응답이 아예 없는 것보다는 낫다는 판단이었습니다. 충분히 믿게 된 뒤에야 앞문을 뜯어냈습니다."*(03:55~04:00)
+
+⚠️ 확인된 행동의 범위가 좁다(추론 앞 처리 · 토큰 수). 그 밖의 동작은 컴파일러 검사와 일부 사람 리뷰에 기댄 것으로 읽히나 캡션이 그렇게 말하지는 않는다. → [[shadow-traffic-verification]]

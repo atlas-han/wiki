@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [security, permissions, connectors, least-privilege, agents]
 aliases: [읽기 전용으로 시작한다, least privilege]
-related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools, agent-sandboxing]
+related: [secure-tool-evolution, confused-deputy-attack, bound-parameters, credential-injection-outside-sandbox, sentinel-agent, build-time-vs-runtime-tools, agent-sandboxing, claude-artifact-apps]
 first-seen: tech-bridge-zuckerberg-muse-personal-agent
-sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-grok-bot-team-lightcone-ai-coworkers]
+sources: [tech-bridge-zuckerberg-muse-personal-agent, tech-bridge-zuckerberg-muse-in-daily-use, tech-bridge-jensen-huang-korea-society-gala, tech-bridge-alexandr-wang-muse-launch, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-jediah-katz-harness-whats-left, tech-bridge-claude-duet-proactive-assistant, tech-bridge-dan-martell-grokbot-daily-automation, tech-bridge-grok-bot-team-lightcone-ai-coworkers, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 created: 2026-09-14
-updated: 2026-11-19
+updated: 2026-11-28
 ---
 
 # 최소 권한 커넥터
@@ -106,3 +106,14 @@ Tech Bridge 해설이 Meta의 Muse 소개를 이렇게 요약한다. *"Muse is d
 Grok Bot 팀의 권한 계단([[agent-trust-curve]])에서 첫 칸이 이 원칙과 같은 자리다(⚠️ x.ai 공식 글의 한국어 해설 전달). 데이터 팀에 분석 요청이 하루 수십 건씩 오자 *"그래서 승인된 표를 읽기 전용으로만 조회하는 봇을 만들어 슬랙에 뒀습니다."*(04:27~04:30) — 범위가 둘로 좁혀져 있다: **승인된 표** 만, **읽기** 만. 데이터 팀 추정으로 지난 한 주에 약 70시간어치 일을 대신했다(ASR 판독 추정).
 
 쓰기 쪽의 대응물은 직무 분리다: *"영업 담당자는 견적 봇으로 자기 할인을 스스로 승인할 수 없다."*(04:39~04:42) 봇의 권한을 좁히는 것이 아니라 **봇을 거쳐 사람이 자기 권한을 넘는 길** 을 막는 규칙이다.
+
+## 2026-11-28 — 전체 접근을 묻는 창: 설치형 아티팩트의 권한 ([[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+[[claude-artifact-apps|Claude 아티팩트의 앱 설치]](신규) 해설(공지 · 도움말을 옮긴 내레이션). 설치된 앱은 커넥터도 쓴다 — *"메일이나 캘린더처럼 연결해 둔 서비스도 쓸 수 있습니다."*(03:50~03:51)
+
+- 기본값이 범위를 좁힌다: *"전체 접근은 원칙적으로 내가 만든 앱, 팀이나 기업 요금제라면 같은 조직 사람이 만든 앱에 줍니다."*(07:47~07:53) 팀 요금제는 기능이 켜져 있어도 전체 접근은 꺼져 있다고 한다.
+- 그 밖은 경고창: *"빨간 칸에는 이 앱이 조직 밖에서 왔다는 경고가 있습니다."*(08:10~08:11)
+- 허락의 단위가 버전이다: *"대신 허락은 그 버전 하나에만 적용됩니다."*(08:28~08:30) — 한 번 준 권한이 바뀐 코드로 넘어가지 않게 하는 장치다. ⭐ 단 *"앱이 다른 사이트에서 코드를 불러오면 그 코드는 다시 묻지 않고 바뀔 수 있습니다."*(08:35~08:39)
+- 거두기: 주인이 공유를 멈추면 앱이 실행한 프로그램도 멈추되 *"최대 20분 쯤 걸릴 수 있습니다."*(08:44~08:47)
+
+이 페이지의 앞선 사례들이 *읽기 전용으로 시작한다* 였다면 여기서는 가장 넓은 권한이 한 번의 확인으로 나간다. ⚠️ 설명란 · 챕터 제목은 권한이 *세 단계* 라고 하나 전체 접근보다 좁은 두 단계의 설명은 무캡션(07:12~07:47)이라 적지 못했다 — 최소 권한에 해당하는 칸이 있는지 이 소스로는 알 수 없다.

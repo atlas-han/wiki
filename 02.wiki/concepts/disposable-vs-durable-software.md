@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [code-quality, disposable-software, durable-software, engineering-rigor, change-cost, isolation, vibe-coding]
 aliases: [disposable software, durable software, 일회용 소프트웨어, 오래 쓰는 코드, 네 가지 기준, four factors]
-related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build]
+related: [decision-quality, technical-debt, agent-sandboxing, hard-vs-soft-enforcement, verification-bottleneck, risk-proportional-human-review, action-reversibility, codebase-gardening, shaping-the-build, claude-artifact-apps]
 first-seen: tech-bridge-kanat-alexander-disposable-vs-durable
-sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-jonathan-blow-30-years-zero-progress, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
+sources: [tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-andrew-ng-ai-engineering-skills-map, tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-jonathan-blow-30-years-zero-progress, tech-bridge-grace-ableidinger-vibe-vs-agentic-coding, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 created: 2026-10-25
-updated: 2026-11-25
+updated: 2026-11-28
 ---
 
 # 일회용 vs 오래 쓰는 소프트웨어
@@ -74,3 +74,13 @@ Karpathy의 10월 초 글의 결론으로 해설이 전한다(⚠️ 2차 전달
 - 맺음의 물음은 기준을 하나 더 얹는다: *"지금 AI에게 맡기고 있는 그 코드 버려도 되는 코드인가요? 아니면 누군가에게 설명해야 할 코드인가요?"*(08:44~08:47) — *설명해야 하는가* 는 이 페이지의 네 기준(피해 · 교체 비용 · 의존 · 유지 비용)에 없는 물음이다(대비는 위키의 읽기).
 
 이 페이지가 **위치를 정하는 기준** 이라면 [[vibe-vs-agentic-coding]](신규)은 위치가 정해진 뒤 **어떤 고리로 일할지** 를 말한다.
+
+## 2026-11-28 — 일회용이 설치물이 될 때 ([[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+[[claude-artifact-apps|Claude 아티팩트의 앱 설치]](신규)를 다룬 한국어 해설. 대화로 만든 결과물이 아이콘과 창을 얻고 동료 컴퓨터에 깔린다.
+
+- 위 *핵심 주장* 4번(위치는 움직인다 — 동료들이 매일 쓰기 시작하면 조건이 달라진다)이 버튼 하나로 일어난다: *"공유하면 여러 시 같은 앱을 쓰고 누가 고치면 모두의 앱이 같이 바뀝니다."*(09:19~09:23)[=여러 사람이(추정)]
+- 네 기준으로 보면 **교체 비용** 은 낮은 채로 **실패의 피해** 와 **의존 관계** 가 오른다. 전체 접근을 받은 앱이라면 피해의 범위가 컴퓨터 전체다 — *"어떤 프로그램이든 실행하고 파일을 고치거나 지울 수 있습니다."*(08:20~08:24)
+- 5번(일회용 지위는 환경으로 지킨다)의 반대 경우이기도 하다. 격리로 피해를 낮추는 대신 허락을 사람에게 묻는다: *"허락은 버전마다 다시 묻지만 설치 전에 앱을 검토해 주는 사람은 없습니다."*(09:25~09:29)
+
+⚠️ 네 기준에 대어 본 것은 위키의 읽기다. 소스는 이 틀을 쓰지 않는다.

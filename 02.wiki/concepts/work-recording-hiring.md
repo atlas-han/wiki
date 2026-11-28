@@ -6,9 +6,9 @@ tags: [hiring, work-sample, screen-recording, ranking-agent, paid-trial, agent-e
 aliases: [작업 녹화 채용, 영상 채용, work sample hiring, screen recording hiring]
 related: [agent-change-evidence, agent-manager-analogy, ai-jobs-impact, ai-engineering-skills-map]
 first-seen: tech-bridge-ryan-carson-managing-20-agents
-sources: [tech-bridge-ryan-carson-managing-20-agents]
+sources: [tech-bridge-ryan-carson-managing-20-agents, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-28
 ---
 
 # 작업 녹화 채용 (Work-Recording Hiring)
@@ -41,3 +41,14 @@ updated: 2026-11-17
 
 - [[tech-bridge-ryan-carson-managing-20-agents]] · [[ryan-carson]]
 - 채용 방식 글 https://x.com/ryancarson/status/2090551925552959536 (설명란, 위키 미열람)
+
+## 2026-11-28 — 다른 회사의 다른 답: 코딩 면접을 에이전트 면접으로 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[anthropic|Anthropic]]의 채용 변화([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달). 면접 자체를 없앤 [[ryan-carson|Ryan Carson]]의 방식과 달리 **면접은 두고 손코딩 자리만 바꿨다.**
+
+- *"엔트로픽은 제품과 플랫폼 조직 전반에서 코딩 면접을 단계적으로 없앴습니다."*(08:34~08:39)
+- *"대신 코딩 에이전트를 쓰는 면접을 시험하고 있습니다. 에이전트가 짠 코드나 설계를 리뷰하거나 에이전트로 직접 만들어 보는 식입니다."*(09:02~09:08)
+- *"설계 면접과 지난 프로젝트를 묻는 면접은 그대로입니다. 바뀐 건 손코딩을 보던 자리 하나입니다."*(09:09~09:12)
+- 레벨 기준도 흔들린다고 한다: *"예전에 2년 걸린 프로젝트를 이끌었다면 그 자체로 복잡한 일을 했다는 증거였습니다. 그런데 2년 짜리로 보이던 이번 이전은 다섯에서 여섯 달에 끝났습니다."*(09:15~09:25)
+
+공통점은 *손으로 코드를 치는 능력* 을 보던 자리가 *에이전트와 일한 결과를 보는* 자리로 바뀐다는 것. ⚠️ **없앤 이유(08:42~09:02)는 무캡션** 이라 두 회사의 근거를 견줄 수 없다. 에이전트 면접은 *시험하고 있습니다* — 확정된 절차가 아니다.

@@ -6,9 +6,9 @@ tags: [accountability, attribution, wiki, governance, audit, authorship]
 aliases: [사람 이름 규칙, human-backed changes]
 related: [no-silent-write, company-brain, behavior-validated-trust, agent-action-record, decision-quality, agentic-misbehavior, cognitive-debt]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-zechner-ronacher-verification-is-overrated]
+sources: [tech-bridge-company-brain-security, tech-bridge-three-level-agent-review, tech-bridge-anthropic-30k-merges-verification, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-zechner-ronacher-verification-is-overrated, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-10
-updated: 2026-11-21
+updated: 2026-11-28
 ---
 
 # 모든 변경에 사람의 이름
@@ -72,3 +72,12 @@ updated: 2026-11-21
 [[armin-ronacher|Armin Ronacher]](한국어 해설의 전달): *"일이 터지면 책임지는 건 에이전트가 아니라 나다."*(10:17~10:39) 2월 블로그 글에서는(내레이션이 옮김) *"지각 없는 기계는 결코 책임을 질 수 없다. 그러니 사람은 기계가 낸 결과를 이해할 수 있어야 한다고요."*(10:43~10:49)
 
 이 페이지의 규칙은 *변경에 사람의 이름을 붙인다* 였다. Ronacher는 한 단계를 더 요구한다 — 이름을 건 사람이 **결과를 이해할 수 있어야** 이름이 뜻을 가진다(→ [[cognitive-debt]]). ⚠️ 원음은 캡션에 없고 블로그 글은 미열람.
+
+## 2026-11-28 — 변경이 아니라 시스템에 사람이 붙는다 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[anthropic|Anthropic]] 플랫폼 팀([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달). PM이 직접 배포하고 일부 변경은 사람 없이 병합되는 곳에서 책임을 어디에 두는가.
+
+- *"문제가 생기면 누가 책임질까요? 답은 예전과 같습니다. 그 시스템을 맡은 팀이 호출을 받습니다."*(08:22~08:26)
+- *"PM이 만들었던 사람 없는 에이전트가 고쳤든 시스템을 지키는 건 결국 사람으로 된 팀이라는 겁니다."*(08:26~08:33)[=PM이 만들었든 사람 없이 에이전트가 고쳤든]
+
+이 페이지의 규칙은 *모든 변경은 사람의 이름으로* 였다. 여기서는 사람 없이 병합되는 변경이 있으므로 그 규칙을 따르지 않는다 — 대신 **시스템을 맡은 팀** 이 호출을 받는다. 변경 단위의 서명이 아니라 소유 단위의 책임이다. ⚠️ 지식 저장소와 프로덕션 코드라는 대상 차이가 있어 모순으로 적지 않는다.

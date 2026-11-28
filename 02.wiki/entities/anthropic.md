@@ -4,11 +4,11 @@ type: entity
 category: org
 tags: [ai-lab, frontier-lab, claude]
 aliases: [앤트로픽]
-sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes, tech-bridge-anthropic-founders-secret-making-of-anthropic, tech-bridge-chase-ai-mcp-2-0-biggest-upgrade]
+sources: [anthropic-project-glasswing-update-2026-05, anthropic-claude-code-auto-mode, anthropic-harness-design-long-running-apps, anthropic-managed-agents, anthropic-dynamic-workflows, tech-bridge-altman-frontier-rl-pause, tech-bridge-altman-astra-hardware, tech-bridge-cursor-legacy-refactoring, tech-bridge-company-brain-security, tech-bridge-agent-to-agent-as-search, tech-bridge-mousepower-measuring-agents, tech-bridge-dario-amodei-cbs-interview, tech-bridge-tokens-should-have-jobs, tech-bridge-musk-shotwell-cross-lab-peer-review, tech-bridge-anthropic-dreaming-memory, tech-bridge-death-of-code-review, tech-bridge-white-house-superintelligence-panel, tech-bridge-stigg-ai-companies-building-banks, tech-bridge-horthy-state-of-software-factory, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-claude-duet-proactive-assistant, tech-bridge-anthropic-fold-subagents-into-skills, tech-bridge-anthropic-30k-merges-verification, tech-bridge-better-stack-claude-code-agent-summary-cost, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-salesforce-claude-code-agentic-shift, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-claude-fable-5-2-announcement, tech-bridge-alex-karp-wealth-tax-surveillance, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-bill-gates-cbs-more-dangerous-than-nukes, tech-bridge-anthropic-founders-secret-making-of-anthropic, tech-bridge-chase-ai-mcp-2-0-biggest-upgrade, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 links:
   - "https://www.anthropic.com"
 created: 2026-05-25
-updated: 2026-11-27
+updated: 2026-11-28
 ---
 
 # Anthropic
@@ -287,3 +287,30 @@ ko는 20:48 *Anthropic's code reviewer* 를 **"인류는 확신할 수 있다"**
 - 규격의 자리: *"네 기능 모두 열린 MCP 규격의 일부라 클라우드가 아닌 다른 호환 클라이언트에서도 돌아갑니다."*(07:35~07:40)
 
 ⚠️ 3차 전달이고 발표 글의 문구는 대조하지 않았다. 사례로 든 회사(Shopify · HubSpot · Atlassian · Carta · ZoomInfo · Supabase · Railway)는 내레이션의 열거다.
+
+## 2026-11-28 — 메시지 API를 Python에서 Rust로, 그리고 사내 개발 방식 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[katelyn-lesse|Katelyn Lesse]]의 The Pragmatic Engineer 인터뷰를 따라간 한국어 해설(본인 원음 무캡션 — 전부 내레이션 전달, 자기 보고).
+
+- **API의 내력.** *"3년쯤 전 API를 처음 만든 건 연구 팀과 섞여 일하던 아주 작은 팀이었고 연구자들의 언어가 파이썬이었습니다."*(00:46~00:52) *"처음엔 Google Cloud 한 리전에서만 돌았습니다."*(00:45~00:46) *"문제는 이 층이 파이썬 모놀리스였다는 겁니다."*(00:42~00:44) 요청은 인증 → 코어 API(토큰화 · 과금 · 안전 검사) → GPU 순으로 내려가고, 자사 앱과 Claude Code도 외부 고객과 같은 API를 쓴다.
+- **CPU 부족.** *"그런데 요청이 폭증했습니다. 올해 초에는 슈퍼볼 광고까지 내보냈습니다."*(00:54~00:56) *"케이틀린은 커리어 내내 CPU는 돈만 내면 얼마든지 늘릴 수 있는 자원이었다고 말합니다. 그런데 처음으로 클라우드의 CPU를 더 달라고 하는 일이 어려운 대화가 됐습니다."*(01:03~01:12) → [[compute-constrained-growth]]
+- **언어.** *"사실 엔트로픽은 작년부터 새 서비스를 고 언어로 만들고 있었습니다. 효율과 개발 경험 사이의 절충이었습니다."*(01:24~01:30)[=Go] 그리고 올해 핵심 층을 [[rust|Rust]]로 — *"파이썬으로 된 핵심 층을 러스트로 옮기는 데 걸린 시간은 다섯에서 여섯 달. 핵심 팀은 몇 명 뿐이었습니다."*(00:10~00:14)
+- **검증.** [[shadow-traffic-verification]](신규). 전제 하나가 여기서 다시 확인된다: *"엔트로픽은 사용자의 프롬프트도, 모델의 응답도 들여다보지 않습니다. 결과가 달라도 무엇이 왜 다른지 원본 데이터를 열어볼 수가 없는 겁니다."*(03:23~03:29)
+- **리뷰.** *"모든 변경마다 클라우드 분류기가 돌면서 사람이 봐야 하는지 판단합니다. 봐야 한다면 몇 명이 어느 팀이 봐야 하는지까지 정하고 아니면 사람 없이 바로 병합합니다."*(06:37~06:47)[=Claude 분류기] *"위험한 변경은 아직 사람이 봅니다. 다만 사람이 필요없는 비율을 조금씩 올리는 게 목표입니다."*(07:01~07:05)
+- **온콜.** *"알림이 오면 클라우드가 먼저 받아서 잡음인지 진짜인지 가립니다. 잡음이면 아무도 깨우지 않습니다."*(07:26~07:31) *"물론 진짜 장애에서 사람을 아예 안 깨우는 단계는 아직 아닙니다. 지금은 잡음을 거르는 첫 관문까지입니다."*(08:02~08:06)
+- **PM의 배포.** *"제품 매니저도 직접 배포합니다. 최근 개발자 콘솔에 나온 프롬프트 캐시 진단 대시보드가 그 예입니다."*(08:09~08:13)
+- **채용.** *"엔트로픽은 제품과 플랫폼 조직 전반에서 코딩 면접을 단계적으로 없앴습니다."*(08:34~08:39) *"대신 코딩 에이전트를 쓰는 면접을 시험하고 있습니다. 에이전트가 짠 코드나 설계를 리뷰하거나 에이전트로 직접 만들어 보는 식입니다."*(09:02~09:08) ⚠️ 없앤 이유는 무캡션.
+
+[[tech-bridge-anthropic-30k-merges-verification]]이 병합 규모와 검증 층을 말했다면 이 소스는 한 프로젝트와 한 팀(다섯에서 열 명)의 일하는 방식을 말한다. ⚠️ *PR의 80%는 꼼꼼히 읽지 않았다* 는 도입부 요약 한 문장이고 본문은 무캡션이다.
+
+## 2026-11-28 — 아티팩트를 데스크톱 앱으로: 검토하지 않는 배포 ([[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+[[nick-saraev|Nick Saraev]]의 영상과 공지 · 도움말을 옮긴 한국어 해설(전부 내레이션 전달). 기능은 [[claude-artifact-apps]](신규)에 정리했다.
+
+- *"엔트로픽이 11월 24일에 내놓은 기능입니다."*(00:17~00:19) — 11-27 편의 MCP 발표 글과 같은 날짜다(둘 다 해설 · 설명란 표기).
+- 아티팩트의 자리: *"엔트로픽은 아티팩트가 공유하는 결과물로 시작했지만 요즘은 매일 쓰는 도구가 됐다고 씁니다."*(00:42~00:46)
+- 사내 사례: *"엔트로픽 사람들이 이걸로 만든 앱은 공지에 다섯 개 올라와 있습니다."*(03:53~03:55) 엔지니어 Felix Rieseberg(이름은 더빙 철자 — 추정)의 글로 *"코딩 실력은 필요 없다."*(04:16~04:18) 가 전해진다.
+- ⭐ 심사하지 않는다: *"엔트로픽은 설치 전에 앱을 검토하지 않습니다."*(07:54~07:56) 대신 전체 접근의 기본 범위를 나와 같은 조직으로 두고, 경고창의 확인란과 버전별 재허락을 둔다.
+- 요금제: 무료부터 기업까지 베타 · 팀은 기본 켜짐(전체 접근은 꺼짐) · 엔터프라이즈는 소유자가 켠다 · HIPAA에 맞춘 조직과 하이브리드 배포는 불가(08:48~09:08, 내레이션).
+
+⚠️ 공지 · 도움말의 문구는 대조하지 않았다. *SaaS* 시장 전망은 Saraev의 것이고 해설도 *"엔트로픽의 한 말은 아닙니다"*(05:52~05:54) 라고 떼어 놓는다.

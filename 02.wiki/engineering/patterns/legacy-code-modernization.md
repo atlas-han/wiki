@@ -4,11 +4,11 @@ type: engineering
 category: pattern
 tags: [legacy, modernization, migration, architecture, cicd, technical-debt, agents]
 aliases: [레거시 현대화, 현대화의 세 축]
-related: [technical-debt, legacy-skills-gap, syntactically-correct-behaviorally-wrong, risk-proportional-human-review, greenfield-vs-brownfield-agent-risk, refactoring, ai-native-sdlc]
+related: [technical-debt, legacy-skills-gap, syntactically-correct-behaviorally-wrong, risk-proportional-human-review, greenfield-vs-brownfield-agent-risk, refactoring, ai-native-sdlc, shadow-traffic-verification]
 first-seen: tech-bridge-legacy-code-modernization-ai
-sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-sourcegraph-codebase-visibility]
+sources: [tech-bridge-legacy-code-modernization-ai, tech-bridge-sdd-enterprise-lessons, tech-bridge-sourcegraph-codebase-visibility, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-18
-updated: 2026-10-09
+updated: 2026-11-28
 ---
 
 # 레거시 코드 현대화
@@ -105,3 +105,14 @@ updated: 2026-10-09
 
 - [[tech-bridge-legacy-code-modernization-ai]] · [[anna-gutowska]] · [[ibm]]
 - 관련: [[technical-debt]] · [[legacy-skills-gap]] · [[syntactically-correct-behaviorally-wrong]] · [[risk-proportional-human-review]] · [[greenfield-vs-brownfield-agent-risk]] · [[tech-bridge-cursor-legacy-refactoring]] · [[refactoring]] · [[ai-native-sdlc]]
+
+## 2026-11-28 — 반례에 가까운 사례: 조각내기를 버리고 통째로, 대신 그림자로 견준다 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+이 페이지의 정의는 현대화가 *새 언어로 번역하는 일이 아니라 점진적으로 바꾸는 일* 이라고 한다. [[anthropic|Anthropic]]의 메시지 API 재작성([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달)은 그 반대쪽으로 간 사례다.
+
+- 점진 계획을 버렸다: *"처음 계획은 시스템을 조각조각 내어 러스트로 옮기는 것이었습니다. 너무 느렸습니다."*(02:21~02:25) (챕터 제목 *한 번에 전부, 그림자로 검증* — ⚠️ 대안을 고른 말은 무캡션)
+- 대신 전환을 점진으로 했다: *"새 구조에서 요청은 얇은 파이썬 앞문으로 들어와 원래 파이썬 시스템에서 처리됩니다. 동시에 같은 요청이 러스트 시스템에도 그림자처럼 흘러가고 두 결과를 비교합니다."*(03:11~03:20) *"그 차이를 줄이고 줄이고 또 줄여서 거의 완벽해졌을 때 러스트를 실제로 켜기 시작했습니다."*(03:43~03:47) *"그 뒤에도 한 동안 파이썬 앞문을 남겨뒀습니다. 러스트가 에러를 내면 파이썬으로 돌아가게요."*(03:50~03:53)
+- 기간: *"예전에 2년 걸린 프로젝트를 이끌었다면 그 자체로 복잡한 일을 했다는 증거였습니다. 그런데 2년 짜리로 보이던 이번 이전은 다섯에서 여섯 달에 끝났습니다."*(09:15~09:25)
+- 도중에 갈아엎기도 했다: *"프로젝트 중간에 처음부터 다시 하자는 결정은 이전엔 하기 힘든 일이었습니다. 구현이 빨라지니 감당할 만한 선택이 된 겁니다."*(06:16~06:22)
+
+⚠️ Contradiction(범위 차이): 구현을 한 번에 옮긴 것은 이 페이지의 점진 원칙과 부딪히지만, **전환의 위험** 은 그림자 비교 · 폴백 앞문으로 점진적으로 걷어 냈다. 그리고 대상이 *아무도 이해하지 못하는* 오래된 시스템이 아니라 3년쯤 된 Python 모놀리스다. 미해소로 둔다. → [[shadow-traffic-verification]]

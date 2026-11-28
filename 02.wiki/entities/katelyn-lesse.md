@@ -6,9 +6,9 @@ tags: [anthropic, claude-platform, infrastructure, developer-platform]
 links:
   - https://x.com/katelyn_lesse
   - https://www.linkedin.com/in/katelynlesse/
-sources: [tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs]
+sources: [tech-bridge-claude-platform-agent-era, tech-bridge-tokens-should-have-jobs, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-02
-updated: 2026-10-01
+updated: 2026-11-28
 ---
 
 # Katelyn Lesse
@@ -47,3 +47,17 @@ updated: 2026-10-01
 ## ⚠️ Contradiction (범위 차이, 2026-10-01)
 
 [[tech-bridge-ai-data-exposure-hidden-risk]]의 [[jeff-crume|Jeff Crume]]은 공개 챗봇에 넣은 민감 데이터를 *"they can use that sensitive information to train their models, and then it's available to everyone"*(01:02~01:05)라고 일반화한다. 이 페이지의 *"고객 데이터로 학습하지 않는다"* 와 부딪히지만 **대상이 다를 수 있다**(소비자용 공개 챗봇 vs API 플랫폼) — Crume은 어떤 서비스·약관인지 말하지 않는다. 미해소. → [[ai-data-exposure]]
+
+## 세 번째 소스 — The Pragmatic Engineer 인터뷰 해설 (2026-11-28 ingest · [[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[tech-bridge]]의 10:47 한국어 해설. 앞의 두 소스가 본인 발화의 번역 · 자막이었다면 **이 소스에는 본인 원음이 한 마디도 캡션에 없다** — 아래는 전부 내레이션이 옮긴 말이다. 직함은 내레이션 *플랫폼 엔지니어링 총괄*(00:22), 설명란 *Claude Platform 엔지니어링을 이끄는*. ⚠️ ASR은 *케이틀린 · 케이트린*, 더빙은 *Caitlin*.
+
+- **맡은 것.** *"케이틀린의 팀은 클라우드의 모든 토큰이 지나가는 메시지 API를 맡고 있습니다."*(00:28~00:31)[=Claude의 · Messages API] 09-01 대담의 *퍼스트 파티 제품이 곧 저희 팀의 고객* 과 같은 말이 다시 나온다 — *"클라우드 앱도, 클라우드 코드도 전부 외부 고객과 같은 이 API 위에서 돌아갑니다."*(00:38~00:42)
+- **Python → Rust 재작성.** *"파이썬으로 된 핵심 층을 러스트로 옮기는 데 걸린 시간은 다섯에서 여섯 달. 핵심 팀은 몇 명 뿐이었습니다."*(00:10~00:14) 계기는 CPU다 — *"케이틀린은 커리어 내내 CPU는 돈만 내면 얼마든지 늘릴 수 있는 자원이었다고 말합니다. 그런데 처음으로 클라우드의 CPU를 더 달라고 하는 일이 어려운 대화가 됐습니다."*(01:03~01:12) 팀에 Rust를 써 본 사람이 거의 없었는데도 골랐고, 본인의 Rust 이해는 *75대 25* 라고 했다 → [[rust]]
+- **검증.** 실제 요청을 Rust 시스템에도 그림자처럼 흘려 결과를 견주었다 → [[shadow-traffic-verification]]. 해설의 요약으로는 *"클라우드의 모든 토큰이 지나가는 API를 통째로 새로 짰는데 에이전트가 올린 PR의 80%는 꼼꼼히 읽지 않았습니다."*(00:03~00:08)
+- **팀.** *"팀 크기는 여전히 다섯에서 열 명쯤인데 더 시니어 쪽으로 기울었습니다."*(06:24~06:28) *"테크 리드가 설계하고 여러 명이 구현하던 구조 대신 누구나 설계와 조율을 고민하고 클라우드들에게 구현을 맡깁니다."*(06:30~06:35)
+- **리뷰 · 온콜 · PM.** 변경마다 Claude 분류기가 사람 검토 여부를 정하고([[risk-proportional-human-review]]), 온콜 알림은 Claude가 먼저 받아 잡음을 거르며, PM이 직접 프로덕션에 올린다. 그래도 *"문제가 생기면 누가 책임질까요? 답은 예전과 같습니다. 그 시스템을 맡은 팀이 호출을 받습니다."*(08:22~08:26)
+- **채용.** *"엔트로픽은 제품과 플랫폼 조직 전반에서 코딩 면접을 단계적으로 없앴습니다."*(08:34~08:39) ⚠️ 이유는 무캡션.
+- **정체성 위기.** *"케이틀린은 지난 10월 블로그에 이렇게 썼습니다. 많은 소프트웨어 엔지니어가 정체성 위기를 겪고 있다고요."*(09:31~09:36) 설명란에 따르면 글은 *The new set of problems for engineers to solve*(2026.10.25, 위키 미열람). 내레이션이 옮긴 요지 — *"수천 개의 에이전트가 함께 일하는 시스템이 제대로 돌려면 사람이 먼저 풀어야 할 문제가 많다는 겁니다."*(10:12~10:16) *"케이트린의 표현으로는 야망의 수준을 올리라는 겁니다."*(10:36~10:38)
+
+09-01의 *정렬이 새 병목* 은 이 편에서 *"엔지니어의 시간은 구현에서 다른 팀과의 조율로 옮겨갔습니다."*(10:30~10:32) 로 되풀이된다. ⚠️ 무캡션 다섯 곳(약 3분 57초)에 80% 대목의 본문 · 중간에 버리고 다시 한 것 · 면접 폐지의 이유가 들어 있어 이 페이지에도 적지 못했다.

@@ -1384,5 +1384,11 @@
   "02.wiki/sources/tech-bridge-chase-ai-mcp-2-0-biggest-upgrade.md": "LiVideo",
   "02.wiki/entities/steve-yegge.md": "LiUser",
   "02.wiki/concepts/trash-mountain.md": "LiTrash2",
-  "02.wiki/concepts/mcp-elicitation.md": "LiShieldCheck"
+  "02.wiki/concepts/mcp-elicitation.md": "LiShieldCheck",
+  "01.raw/articles/2026-11-27_앤트로픽 엔지니어는 이제 코드를 거의 읽지 않는다 Katelyn Lesse.md": "LiNewspaper",
+  "01.raw/articles/2026-11-27_바이브코딩의 새 시대가 열렸다, 말로 만든 앱을 설치한다 Claude.md": "LiNewspaper",
+  "02.wiki/sources/tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code.md": "LiVideo",
+  "02.wiki/sources/tech-bridge-nick-saraev-claude-artifacts-install-as-app.md": "LiVideo",
+  "02.wiki/concepts/shadow-traffic-verification.md": "LiCopy",
+  "02.wiki/entities/claude-artifact-apps.md": "LiBoxes"
 }

@@ -4,11 +4,11 @@ type: concept
 category: framing
 tags: [vibe-coding, agentic-coding, coding-agents, human-review, context-engineering, subagents, guardrails, disposable-software, ibm, andrej-karpathy]
 aliases: [vibe coding, 바이브 코딩, agentic coding, 에이전틱 코딩, vibe vs agentic, 두 개의 루프, 짧은 고리와 긴 고리, accept all]
-related: [disposable-vs-durable-software, risk-proportional-human-review, action-reversibility, agent-governance-layers, context-engineering, cognitive-offloading, agentic-coding-maturity-curve, tactical-vs-strategic-programming]
+related: [disposable-vs-durable-software, risk-proportional-human-review, action-reversibility, agent-governance-layers, context-engineering, cognitive-offloading, agentic-coding-maturity-curve, tactical-vs-strategic-programming, claude-artifact-apps]
 first-seen: tech-bridge-grace-ableidinger-vibe-vs-agentic-coding
-sources: [tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]
+sources: [tech-bridge-grace-ableidinger-vibe-vs-agentic-coding, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 created: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-28
 ---
 
 # 바이브 코딩 vs 에이전틱 코딩 (Vibe Coding vs Agentic Coding)
@@ -60,3 +60,13 @@ updated: 2026-11-25
 ## References
 
 - [[tech-bridge-grace-ableidinger-vibe-vs-agentic-coding]] · [[grace-ableidinger]] · [[ibm]] · [[andrej-karpathy]] · [[disposable-vs-durable-software]]
+
+## 2026-11-28 — *바이브 코딩의 새 시대*: 짧은 고리에 배포 경로가 붙는다 ([[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+[[nick-saraev|Nick Saraev]]가 [[claude-artifact-apps|Claude 아티팩트의 앱 설치]](신규)에 붙인 이름이다(영상 제목 · 한국어 해설 전달): *"닉은 바이브 코딩의 새 시대라고 말합니다."*(09:30~09:31)
+
+- 고리는 그대로 짧다: *"원하는 앱을 말로 설명하고 아티팩트로 써본 다음 설치를 누르면 됩니다."*(05:06~05:10) 사내 엔지니어의 글로 전해진 말도 같다 — *"코딩 실력은 필요 없다."*(04:16~04:18)
+- 달라진 것은 결과물이 가는 곳이다. 위 정의에서 바이브 코딩에 맞는 일은 버려도 되는 것이었는데, 여기서는 그 결과물이 동료 컴퓨터에 깔리고 전체 접근을 받을 수 있다.
+- *작업을 가르는 질문 넷* 가운데 *결과를 얼마나 꼼꼼히 확인해야 하는지* 를 이 기능은 설치하는 사람에게 넘긴다: *"설치 버튼을 누르기 전에 경고창의 확인란부터 읽어봐야 합니다."*(09:31~09:34)
+
+⚠️ 소스는 *바이브 코딩* 을 정의하지 않고 에이전틱 코딩과 견주지도 않는다 — 이 절의 대조는 위키의 읽기다. Saraev가 왜 *새 시대* 라 하는지의 논거는 무캡션이다.

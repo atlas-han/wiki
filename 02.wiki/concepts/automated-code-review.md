@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [code-review, verification, multi-pass, false-positives, human-on-the-loop, prompt-injection, review-harness, agents]
 aliases: [AI 코드 리뷰, 리뷰 하네스, review harness, 기본 의심 리뷰어]
-related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis, review-model-inversion, model-temperament-routing]
+related: [verification-bottleneck, mergeability-gap, generator-evaluator-pattern, risk-proportional-human-review, named-human-accountability, prompt-injection, test-harness-vs-test-authoring, code-knowledge-graph, production-trace-eval-flywheel, harness-engineering, trusted-throughput, structure-sensitive-tests, deep-modules, agent-plus-program-analysis, review-model-inversion, model-temperament-routing, shadow-traffic-verification]
 first-seen: tech-bridge-death-of-code-review
-sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-theo-fable-vs-opus-when-to-use]
+sources: [tech-bridge-death-of-code-review, tech-bridge-pocock-pr-bottleneck, tech-bridge-rails-harness-engineering, tech-bridge-gitar-agentic-pr-validation, tech-bridge-sentry-stop-prompting-codify-linters, tech-bridge-atlassian-build-your-own-sdlc, tech-bridge-ai-labs-claude-code-verification-review-loop, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-greptile-daksh-gupta-build-review-agent, tech-bridge-anthropic-code-review-seven-layers, tech-bridge-theo-fable-vs-opus-when-to-use, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-10-03
-updated: 2026-11-16
+updated: 2026-11-28
 ---
 
 # 자동 코드 리뷰
@@ -164,3 +164,13 @@ Voss가 업계 수준에서 *"리뷰 하네스를 지어라"* 로 끝냈다면, 
 ## LGTM의 재해석 — 꼼꼼한 리뷰어와 빨리 보내는 리뷰어 (2026-11-16 · [[tech-bridge-theo-fable-vs-opus-when-to-use]])
 
 [[theo|Theo]]의 비유(해설 전달): 6년 넘게 이 코드를 본 **앨런**(작은 PR에도 댓글 여덟 개) = [[claude-opus-5-5|Opus]], 경력 20년+ · 온 지 석 달인 **브래드**(고치기 어려운 위험만 보고 *LGTM*) = [[fable-5-2|Fable]]. Theo 자체 평가판에서 Fable은 *조금 문제 있는 코드를 그냥 통과시키는 일* 이 잦았는데, 놓친 지적을 하나씩 보니 대부분 *안 고쳐도 되는 것* 이었고 Opus가 붙잡던 작업을 Fable은 *이대로 괜찮다* 며 머지했다. 리뷰 에이전트를 고를 때 *얼마나 많이 잡나* 만 재면 꼼꼼한 쪽이 이기지만, **변경의 위험도에 따라 리뷰어 기질을 고른다** 는 축이 따로 있다 → [[model-temperament-routing]] · [[risk-proportional-human-review]]. ⚠️ Theo 개인 평가 · *지금까지는 그랬다*.
+
+## 2026-11-28 — 리뷰어가 아니라 배정자: 변경마다 도는 분류기 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설(내레이션 전달). 이 페이지의 소스들은 대개 모델이 리뷰를 **하는** 경우를 다루는데, 여기서 모델이 하는 일은 리뷰를 **누구에게 맡길지 정하는** 것이다.
+
+- *"모든 변경마다 클라우드 분류기가 돌면서 사람이 봐야 하는지 판단합니다. 봐야 한다면 몇 명이 어느 팀이 봐야 하는지까지 정하고 아니면 사람 없이 바로 병합합니다."*(06:37~06:47)[=Claude 분류기]
+- CI 쪽: *"깨진 테스트 때문에 CI가 빨갛게 되면 에이전트가 알아서 고칩니다. 대부분 아무도 들여다보지 않습니다."*(06:55~06:59)
+- 큰 재작성에서는 리뷰 대신 결과 비교가 근거였다 — *"코드를 다 안 읽어도 됐던 건 결과를 비교하는 그림자 시스템을 사람이 먼저 만들었기 때문입니다."*(10:24~10:28) → [[shadow-traffic-verification]]
+
+⚠️ 분류기 뒤에 모델 리뷰가 따로 도는지는 캡션에 없다. → [[risk-proportional-human-review]]

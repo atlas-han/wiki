@@ -6,9 +6,9 @@ tags: [learning, ai-tutor, cognitive-offloading, prompting, verification, educat
 aliases: [AI로 공부하기, AI 학습 역할, AI tutor roles, 도움받기 vs 생각 맡기기]
 related: [sycophancy, retrieval-practice, cognitive-offloading, read-fluency-for-agent-output, generator-evaluator-pattern, verification-bottleneck, agent-memory, ai-flipped-classroom, ai-learning-polarization]
 first-seen: tech-bridge-learn-anything-with-ai
-sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages]
+sources: [tech-bridge-learn-anything-with-ai, tech-bridge-hassabis-fry-creativity-future, tech-bridge-top-1-percent-ai-habits, tech-bridge-lex-fridman-mathematicians-advice-ai-era, tech-bridge-lombrozo-learning-by-thinking-ai-tutor, tech-bridge-pocock-networkchuck-what-to-learn-instead-of-languages, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-10-09
-updated: 2026-11-24
+updated: 2026-11-28
 ---
 
 # AI 보조 학습 — 역할 분담
@@ -91,3 +91,13 @@ updated: 2026-11-24
 - 도구: *"모르는 보고서를 넘기면 내가 아는 것을 기억하면서 퀴즈와 HTML 수업을 만들어 줍니다."*(12:36~12:41) *"매트는 이걸로 루빅스 큐브도 배웠다고 했습니다."*(12:42~12:44) — 이 페이지의 역할로는 출제자 쪽이고, *내가 아는 것을 기억한다* 는 점이 더해진다. ⚠️ 스킬 이름 줄(12:34~12:36)은 ASR 불확실.
 
 ⚠️ 물음에 대한 본인의 답(11:35~12:13)은 무캡션이라 *이런 단어* 의 예는 캡션에 없다. 퀴즈가 인출 연습으로 설계됐는지도 소스가 말하지 않는다.
+
+## 2026-11-28 — 일하면서 배우는 쪽: 75대 25 ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[anthropic|Anthropic]] 플랫폼 팀이 써 본 사람이 거의 없는 [[rust|Rust]]로 핵심 시스템을 다시 쓰면서 언어를 어떻게 익혔나([[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설, 내레이션 전달).
+
+- *"케이틀린은 75대 25라고 답합니다. 75는 모델이 짜고 문법은 몰라도 되는 부분, 25는 궁금해서 모델에게 물어보며 배우는 부분입니다."*(02:06~02:14)
+- *"클로드가 코드를 짜주는 게 절반, 무슨 코드인지 가르쳐 주는 게 나머지 절반이라고 했습니다."*(02:15~02:19)
+- 온보딩도 같은 식: *"화이트보드 앞에 선배를 붙잡는 대신 클라우드에게 이 시스템이 어떻게 도는지 묻습니다. 그러면 클릭해 가며 볼 수 있는 인터랙티브 앱을 만들어 주기도 합니다."*(07:07~07:17)
+
+이 페이지의 기준선은 *떠올리고 푸는 일은 직접* 이다. 여기서는 75를 **몰라도 되는 부분** 으로 떼어 놓고 궁금한 25만 묻는다 — 학습 목표가 숙달이 아니라 일에 필요한 만큼의 이해다. ⚠️ 그 25가 충분했는지를 가릴 근거는 캡션에 없다. 같은 소스가 코드 리뷰를 결과 비교로 대신했다고 하므로([[shadow-traffic-verification]]) 문법 숙달이 덜 필요했던 사정은 있다.

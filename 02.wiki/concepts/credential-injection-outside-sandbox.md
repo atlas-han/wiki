@@ -6,9 +6,9 @@ tags: [credentials, sandbox, proxy, access-control, privilege-escalation, securi
 aliases: [사용자 자격증명 패스스루, 샌드박스에 자격증명 없음]
 related: [agent-governance-layers, prompt-injection, multiplayer-agent-context, company-brain, action-reversibility, black-box-agent-approach, bound-parameters, agent-identity-separation, agent-sandboxing]
 first-seen: tech-bridge-company-brain-security
-sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-lance-martin-old-prompts-make-claude-worse]
+sources: [tech-bridge-company-brain-security, anthropic-managed-agents, tech-bridge-build-time-vs-runtime-tools, tech-bridge-openai-huggingface-incident-black-hat, tech-bridge-unblocked-context-engine-structured-queries, tech-bridge-tailscale-aperture-ai-without-lock-in, tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-lance-martin-old-prompts-make-claude-worse, tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]
 created: 2026-09-10
-updated: 2026-11-09
+updated: 2026-11-28
 ---
 
 # 샌드박스 밖 자격증명 주입
@@ -115,3 +115,12 @@ updated: 2026-11-09
 - 프롬프트 인젝션이 env를 읽어 다른 도메인으로 보내도 placeholder만 나간다. [[lethal-trifecta]]의 외부 전송 다리를 **비밀별 도메인 허용 목록**으로 자른다.
 - 이 개념 본문의 동기(멀티플레이어 권한 상승)와는 축이 다르다. 워크숍은 **사용자별** 자격증명을 말하지 않는다 — vault ID를 세션에 붙이는 단위다.
 - ⚠️ 당사자 설명. 데모는 SEC 신원(이름·이메일)을 *"just inject that in the prompt"*(23:59~24:01)로 처리했고 vault는 시연하지 않았다(콘솔 화면만).
+
+## 2026-11-28 — 낱말이 같은 대목 하나(문맥 미상) ([[tech-bridge-katelyn-lesse-anthropic-engineers-barely-read-code]])
+
+[[katelyn-lesse|Katelyn Lesse]] 인터뷰의 한국어 해설에 이 패턴과 같은 낱말의 문장이 나온다.
+
+- *"자격증명은 볼트에 두고 요청이 밖으로 나가는 순간에만 프록시가 끼워넣습니다. 샌드박스에는 들어가지 않습니다."*(06:06~06:11)
+- 바로 앞 문장은 머리가 잘려 있다: *"는 일을 실행할 때만 띄우고 세션은 따로 저장합니다."*(06:02~06:04)
+
+⚠️ **무엇의 구조를 말하는지 알 수 없다.** 이 문장들은 무캡션 구간(04:10~06:02) 직후, 챕터 *중간에 다 버리고 다시* 안에 있고 주어가 그 구간에 들어 있다. [[managed-agents]]의 세션 · 하네스 · 샌드박스 분할과 겹쳐 보이지만 캡션은 그렇게 말하지 않는다. 볼트 + 나가는 순간의 프록시 주입 + 샌드박스 비진입이라는 세 요소가 한 문장에 있다는 것만 적는다.

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [software-distribution, data-over-apps, prompts, personal-software, model-generated-software, karpathy, disposable-software]
 aliases: [share the data not the app, 앱 대신 데이터, 데이터와 프롬프트 공유, data is the core truth, wrappers around the data]
-related: [disposable-vs-durable-software, model-rendered-interface, andrej-karpathy, hackertube]
+related: [disposable-vs-durable-software, model-rendered-interface, andrej-karpathy, hackertube, claude-artifact-apps]
 first-seen: tech-bridge-nick-saraev-karpathy-ai-habits
-sources: [tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words]
+sources: [tech-bridge-nick-saraev-karpathy-ai-habits, tech-bridge-karpathy-hackertube-two-hours-five-words, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 created: 2026-11-08
-updated: 2026-11-19
+updated: 2026-11-28
 ---
 
 # 앱 대신 데이터와 프롬프트를 공유한다
@@ -52,3 +52,18 @@ updated: 2026-11-19
 - 비용의 분포가 논리를 받친다: HackerTube에 든 입력 5억 400만 토큰의 90% 넘게가 댓글 선별이었고 앱 작업은 Opus 5.5 약 100만 토큰이었다. 해설의 결론: *"해커 튜브에서 진짜 귀한 건 20년치 댓글에서 걸러낸 영상 목록입니다. 카파시가 코드 대신 공개한 것도 바로 그 데이터였습니다."*(08:57~09:04)
 
 위 *한계* 에 한 줄을 보탠다 — 이 예에서 공유된 것은 **데이터** 이고, 프롬프트는 농담 반의 한 줄(*안녕 클로드, 좋은 아침이야 …*)이다. *데이터 + 프롬프트* 에서 무게는 거의 전부 데이터 쪽에 있다(위키의 읽기).
+
+## 2026-11-28 — 반대 방향: 앱을 그대로 깔게 한다 ([[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+이 페이지의 패턴을 전한 [[nick-saraev|Nick Saraev]]가 이번에는 [[claude-artifact-apps|Claude 아티팩트의 앱 설치]](신규)를 *바이브 코딩의 새 시대* 라고 부른다(한국어 해설 전달 — 본인 원음은 무캡션).
+
+- 받는 사람이 다시 만들지 않는다: *"도움말에 따르면 설치된 앱도 결국 같은 아티팩트입니다. 그래서 누가 원본을 고치면 나와 동료들 컴퓨터에 깔린 앱이 모두 같이 바뀝니다."*(03:39~03:44)
+- 위 *논리* 3번의 *원작자는 앱을 유지 · 배포하지 않아도 된다* 는 전제가 다른 식으로 풀린다 — 배포의 수고(패키징 · 서명)가 없어졌다고 한다: *"공지에는 패키징도 서명도 할 필요 없다고 적혀 있습니다."*(02:27~02:29)
+
+| | 데이터와 프롬프트를 준다 | 아티팩트를 앱으로 깔게 한다 |
+|---|---|---|
+| 받는 사람이 쥐는 것 | 자기 빌드 | 남의 원본을 가리키는 창 |
+| 원본이 바뀌면 | 영향 없음 | 모두의 앱이 같이 바뀐다 |
+| 믿어야 하는 것 | 데이터 | 만든 사람(전체 접근이면 내 컴퓨터까지) |
+
+표는 위키의 정리다. ⚠️ 두 소스가 서로를 언급하지 않고, Saraev가 두 방식을 어떻게 보는지는 캡션에 없다.

@@ -4,11 +4,11 @@ type: concept
 category: pattern
 tags: [security, least-privilege, blast-radius, isolation, cloud-agents, ephemeral-environments, kubernetes, docker, prompt-injection]
 aliases: [agent sandboxing, sandboxing coding agents, 샌드박스, 에이전트 격리, 실행 환경 격리, disposable sandbox, ephemeral sandbox, 일회용 샌드박스]
-related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue, human-loop-roles-relocation]
+related: [least-privilege-connectors, cloud-agent-delegation, credential-injection-outside-sandbox, brain-hands-decoupling, pets-vs-cattle, prompt-injection, agentic-misbehavior, lethal-trifecta, persistent-agent-teams, scheduled-agent-automations, action-reversibility, agent-identity-separation, deny-and-continue, human-loop-roles-relocation, claude-artifact-apps]
 first-seen: tech-bridge-openhands-sandboxing-coding-agents
-sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices]
+sources: [tech-bridge-openhands-sandboxing-coding-agents, tech-bridge-five-concepts-coding-with-ai-agents, tech-bridge-claude-managed-agents-workshop-1, tech-bridge-claude-managed-agents-workshop-2, tech-bridge-stripe-collison-cherny-ai-dev-workflow, tech-bridge-kanat-alexander-disposable-vs-durable, tech-bridge-annie-wang-harness-four-designs, tech-bridge-rob-shocks-grokbot-manager-coding-agents, tech-bridge-lydia-hallie-rethinking-claude-code-best-practices, tech-bridge-nick-saraev-claude-artifacts-install-as-app]
 created: 2026-10-17
-updated: 2026-11-13
+updated: 2026-11-28
 ---
 
 # 에이전트 샌드박싱 (Agent Sandboxing)
@@ -115,3 +115,13 @@ updated: 2026-11-13
 - 무엇을 하나: 기본으로 꺼져 있어 직접 켠다. 읽을 파일 · 쓸 폴더 · 접촉할 호스트를 운영체제가 강제한다 — *"그 명령이 띄운 자식 프로세스까지 전부요."*(05:06~05:08) 거절 규칙도 OS 수준으로 넘어간다.
 - ⚠️ **한계**: *"샌드박스가 덮는 건 쉘 명령뿐입니다."*(05:16~05:17) Claude의 파일 도구 · MCP 서버 · 훅은 여전히 바깥(내 컴퓨터)에서 돈다. 이 페이지에 처음 기록되는 경계다.
 - 그 바깥을 없애는 다음 단계가 클라우드 세션 — 세션마다 새 머신 · 새 저장소 복사본, git에 없는 비밀 파일은 아예 없고, 네트워크는 패키지 레지스트리 · GitHub 정도만, API 키는 값을 보지 못한 채 쓴다 → [[cloud-agent-delegation]] · [[credential-injection-outside-sandbox]].
+
+## 2026-11-28 — 격리 대신 확인란: 전체 접근을 받는 설치형 앱 ([[tech-bridge-nick-saraev-claude-artifacts-install-as-app]])
+
+[[claude-artifact-apps|Claude 아티팩트의 앱 설치]](신규) 해설. 이 페이지가 다뤄 온 것과 반대 방향의 사례다 — 모델이 만든 코드가 격리 환경이 아니라 사용자의 데스크톱에서, 허락을 받으면 전체 접근으로 돈다.
+
+- blast radius(도움말, 내레이션 전달): *"전체 접근을 받은 앱은 어떤 프로그램이든 실행하고 파일을 고치거나 지울 수 있습니다."*(08:18~08:24)
+- 통제는 환경이 아니라 사람에게 있다: *"그러니 앱을 만든 사람을 모두 믿을 때만 허락하라고 합니다."*(08:25~08:27) *"엔트로픽은 설치 전에 앱을 검토하지 않습니다."*(07:54~07:56)
+- 허락 뒤에 바뀌는 코드: *"다만 앱이 다른 사이트에서 코드를 불러오면 그 코드는 다시 묻지 않고 바뀔 수 있습니다."*(08:35~08:39)
+
+위 11-03 절의 *The controls have to live in the environment* 와 나란히 놓으면 차이가 선명하다(위키의 읽기). ⚠️ 전체 접근이 아닌 단계에서 앱이 어떻게 갇히는지는 무캡션 구간(07:12~07:47)에 있어 이 소스로는 알 수 없다 — 격리가 없다고 단정하지 않는다.
